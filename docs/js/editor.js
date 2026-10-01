@@ -5,8 +5,10 @@ import {
     currentSong,
     editMode, setEditMode,
     editingSongId, setEditingSongId,
-    editorNashvilleMode, setEditorNashvilleMode
+    editorNashvilleMode, setEditorNashvilleMode,
+    currentView, setCurrentView
 } from './state.js';
+import { registerReturnSource } from './auth-return.js';
 import { generateSlug, requireLogin } from './utils.js';
 import { getSongContent, primeSongContent } from './song-content.js';
 import { extractChords, detectKey, toNashville, transposeChord, getSemitonesBetweenKeys, isValidChord, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
@@ -52,8 +54,6 @@ let editorSaveBtnEl = null;
 let editorSubmitBtnEl = null;
 let editorStatusEl = null;
 let editorNashvilleEl = null;
-let editorCommentEl = null;
-let editCommentRowEl = null;
 let editSongBtnEl = null;
 let hintsBtnEl = null;
 let hintsPanelEl = null;
@@ -177,32 +177,31 @@ export async function enterEditMode(song, options = {}) {
     if (editorArtistEl) editorArtistEl.value = song.artist || '';
     if (editorWriterEl) editorWriterEl.value = song.composer || '';
     if (editorContentEl) editorContentEl.value = content || '';
-    if (editorCommentEl) editorCommentEl.value = '';
 
-    // Show comment field (visible when the metadata line is expanded)
-    if (editCommentRowEl) editCommentRowEl.classList.remove('hidden');
     updateMetadataSummary();
     setMetadataExpanded(false);
 
-    // Editing content that isn't yours forks instead of overwriting. Say so
-    // now, not after the fact.
-    const mine = ownsContent(song);
-    if (editorSubmitBtnEl) {
-        editorSubmitBtnEl.textContent = mine ? 'Submit Correction' : 'Save as My Arrangement';
-    }
-    renderForkNotice();
+    // Editing content that isn't yours forks instead of overwriting — unless
+    // you are trusted, which updates in place. Say which, now, not after the
+    // fact. Trust is an async RPC (cached after the first answer): paint with
+    // what is known, then correct it when the answer lands.
+    refreshOwnershipChrome();
+    refreshTrustedStatus();
 
-    // Switch to editor panel (update nav state)
-    [navSearchEl, navAddSongEl, navFavoritesEl].forEach(btn => {
-        if (btn) btn.classList.remove('active');
-    });
-    if (navAddSongEl) navAddSongEl.classList.add('active');
+    // What "unsaved" is measured against, taken before anything is restored
+    // over the top of it (a sign-in round trip puts the user's edits back).
+    markEditorClean();
+    // A sign-in round trip parked the user's edits of THIS song; put them back
+    // over the published text (the baseline above stays the published text, so
+    // they still count as unsaved).
+    applyStagedRestore(song.id);
 
-    const searchContainer = document.querySelector('.search-container');
-    if (searchContainer) searchContainer.classList.add('hidden');
-    if (resultsDivEl) resultsDivEl.classList.add('hidden');
-    if (songViewEl) songViewEl.classList.add('hidden');
-    if (editorPanelEl) editorPanelEl.classList.remove('hidden');
+    // Show the editor THROUGH the view state machine, like every other view.
+    // Hiding the song page by hand left app state saying "song page", so a
+    // later navigation to another song was a no-op for the state (same value)
+    // and the editor stayed on screen under the new URL. The currentView
+    // subscriber in main.js owns showing/hiding every panel.
+    setCurrentView('add-song');
 
     // Push history state (unless coming from history navigation or deep link)
     if (!fromHistory && !fromDeepLink) {
@@ -228,8 +227,6 @@ export function exitEditMode() {
     editingSongRecord = null;
     renderForkNotice();
     editorKeyPinned = false;
-    if (editCommentRowEl) editCommentRowEl.classList.add('hidden');
-    if (editorCommentEl) editorCommentEl.value = '';
     if (editorSubmitBtnEl) editorSubmitBtnEl.textContent = 'Submit to Songbook';
 }
 
@@ -251,8 +248,6 @@ export function resetEditorForNewSong() {
     if (editorArtistEl) editorArtistEl.value = '';
     if (editorWriterEl) editorWriterEl.value = '';
     if (editorContentEl) editorContentEl.value = '';
-    if (editorCommentEl) editorCommentEl.value = '';
-    if (editCommentRowEl) editCommentRowEl.classList.add('hidden');
     if (editorSubmitBtnEl) editorSubmitBtnEl.textContent = 'Submit to Songbook';
     if (editorStatusEl) {
         editorStatusEl.textContent = '';
@@ -262,9 +257,211 @@ export function resetEditorForNewSong() {
 
     updateMetadataSummary();
     setMetadataExpanded(false);
+    markEditorClean();
 
     updateEditorChrome();
     if (preview) preview.reset();
+}
+
+// ---------------------------------------------------------------------------
+// Unsaved changes
+// ---------------------------------------------------------------------------
+
+// What the editor held when it was opened (or last saved). "Unsaved" means
+// the fields differ from this.
+let editorBaseline = { title: '', artist: '', writer: '', content: '' };
+
+function readEditorFields() {
+    return {
+        title: (editorTitleEl?.value || '').trim(),
+        artist: (editorArtistEl?.value || '').trim(),
+        writer: (editorWriterEl?.value || '').trim(),
+        content: editorContentEl?.value || '',
+    };
+}
+
+/** Treat what is in the editor right now as saved (opened, reset, submitted). */
+function markEditorClean() {
+    editorBaseline = readEditorFields();
+}
+
+/** Does the editor hold edits that were neither submitted nor opened that way? */
+export function editorHasUnsavedChanges() {
+    const now = readEditorFields();
+    return now.title !== editorBaseline.title
+        || now.artist !== editorBaseline.artist
+        || now.writer !== editorBaseline.writer
+        || now.content !== editorBaseline.content;
+}
+
+/** Which session is open, for routing back to it: `{ isEdit, songId }`. */
+export function editorSessionInfo() {
+    return { isEdit: !!(editMode && editingSongId), songId: editingSongId || null };
+}
+
+// ---------------------------------------------------------------------------
+// Surviving a sign-in redirect (auth-return.js)
+// ---------------------------------------------------------------------------
+
+/**
+ * Sign-in is a full-page redirect and the lead-sheet editor has no draft
+ * store, so the text lives in the return record for the trip. Runs
+ * synchronously just before the redirect; null when the editor isn't on
+ * screen (another source, or the bare route, answers instead).
+ */
+function editorReturnSource() {
+    if (currentView !== 'add-song') return null;
+    const { isEdit, songId } = editorSessionInfo();
+    return {
+        kind: 'lead-sheet',
+        hash: isEdit ? `#edit/${songId}` : '#add',
+        state: { ...readEditorFields(), editingSongId: isEdit ? songId : null },
+    };
+}
+
+let stagedRestore = null;
+
+/**
+ * Hold a snapshot taken by `editorReturnSource` until the editor it belongs to
+ * is open. An edit of an existing song opens asynchronously (the published
+ * text is fetched first), so the snapshot waits for `enterEditMode` of that
+ * song; a new-song snapshot is applied by `applyEditorRestore()` once the
+ * `#add` route has been shown.
+ */
+export function stageEditorRestore(snapshot, { message = '' } = {}) {
+    stagedRestore = snapshot ? { snapshot, message, at: Date.now() } : null;
+}
+
+/** Apply a staged snapshot for the new-song editor (no-op for an edit's). */
+export function applyEditorRestore() {
+    return applyStagedRestore(null);
+}
+
+function applyStagedRestore(songId) {
+    const staged = stagedRestore;
+    if (!staged) return false;
+    // A snapshot whose song never opened (deleted, renamed) must not wait to
+    // ambush some later edit.
+    if (Date.now() - staged.at > 2 * 60 * 1000) { stagedRestore = null; return false; }
+    if ((staged.snapshot.editingSongId || null) !== (songId || null)) return false;
+    stagedRestore = null;
+
+    const { title, artist, writer, content } = staged.snapshot;
+    if (editorTitleEl) editorTitleEl.value = title || '';
+    if (editorArtistEl) editorArtistEl.value = artist || '';
+    if (editorWriterEl) editorWriterEl.value = writer || '';
+    if (editorContentEl) editorContentEl.value = content || '';
+    updateMetadataSummary();
+    updateEditorPreview();
+    if (staged.message && editorStatusEl) {
+        editorStatusEl.textContent = staged.message;
+        editorStatusEl.className = 'save-status success';
+    }
+    return true;
+}
+
+let unsavedPromptResolve = null;
+
+/** Is the leave-the-editor prompt on screen? */
+export function unsavedPromptOpen() {
+    return unsavedPromptResolve !== null;
+}
+
+/**
+ * Dismiss the leave prompt without choosing (something else already decided —
+ * the user came back to the editor by Back/Forward).
+ */
+export function closeUnsavedPrompt() {
+    if (unsavedPromptResolve) unsavedPromptResolve('cancelled');
+}
+
+/**
+ * Ask, in the page, whether to leave the editor with unsaved edits. Never
+ * window.confirm: a native dialog cannot be styled, is not in the DOM (so no
+ * test can drive it) and steals focus back from the textarea on iOS.
+ *
+ * The navigation has already happened by the time this runs (hash change,
+ * Back, a click on a link), so "Keep editing" routes back here; the editor's
+ * own state was left untouched while the prompt is up.
+ *
+ * Resolves `'keep' | 'discard' | 'cancelled'`. Exported for tests.
+ */
+export function promptUnsavedChanges() {
+    closeUnsavedPrompt();
+    return new Promise(resolve => {
+        const { isEdit } = editorSessionInfo();
+        const title = (editorTitleEl?.value || '').trim();
+
+        document.getElementById('editor-leave-modal')?.remove();
+        const modal = document.createElement('div');
+        modal.id = 'editor-leave-modal';
+        modal.className = 'modal';
+        modal.setAttribute('role', 'dialog');
+        modal.setAttribute('aria-modal', 'true');
+
+        const header = document.createElement('div');
+        header.className = 'modal-header';
+        const heading = document.createElement('h2');
+        heading.textContent = isEdit ? 'Discard your changes?' : 'Leave without submitting?';
+        header.appendChild(heading);
+
+        const body = document.createElement('div');
+        body.className = 'modal-body';
+        const lead = document.createElement('p');
+        lead.className = 'dedup-offramp-lead';
+        const name = title ? `\u201c${title}\u201d` : 'this song';
+        lead.textContent = isEdit
+            ? `You have edited ${name} but not submitted it. Leaving now throws those edits away.`
+            : `${name === 'this song' ? 'Your new song' : name} has not been submitted. `
+                + 'It stays here while this tab is open, but it will not survive a reload.';
+        body.appendChild(lead);
+
+        // The choice buttons borrow the dedup offramp's stacked-button styling.
+        const choices = document.createElement('div');
+        choices.className = 'dedup-offramp-choices';
+        const make = (id, label, primary) => {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'dedup-offramp-choice'
+                + (primary ? ' dedup-offramp-choice-primary' : '');
+            button.dataset.choice = id;
+            const text = document.createElement('span');
+            text.className = 'dedup-offramp-choice-label';
+            text.textContent = label;
+            button.appendChild(text);
+            return button;
+        };
+        choices.append(
+            make('keep', 'Keep editing', true),
+            make('discard', isEdit ? 'Discard changes' : 'Leave', false),
+        );
+        body.appendChild(choices);
+
+        const content = document.createElement('div');
+        content.className = 'modal-content dedup-offramp-content';
+        content.append(header, body);
+        modal.appendChild(content);
+        document.body.appendChild(modal);
+
+        const finish = (choice) => {
+            if (!unsavedPromptResolve) return;
+            unsavedPromptResolve = null;
+            document.removeEventListener('keydown', onKey);
+            modal.remove();
+            resolve(choice);
+        };
+        const onKey = (e) => { if (e.key === 'Escape') finish('keep'); };
+        unsavedPromptResolve = finish;
+
+        choices.addEventListener('click', (e) => {
+            const button = e.target.closest('[data-choice]');
+            if (button) finish(button.dataset.choice);
+        });
+        modal.addEventListener('click', (e) => { if (e.target === modal) finish('keep'); });
+        document.addEventListener('keydown', onKey);
+
+        choices.querySelector('[data-choice="keep"]')?.focus();
+    });
 }
 
 /**
@@ -523,8 +720,6 @@ export function initEditor(options) {
         editorSubmitBtn,
         editorStatus,
         editorNashville,
-        editorComment,
-        editCommentRow,
         editSongBtn,
         hintsBtn,
         hintsPanel,
@@ -558,8 +753,6 @@ export function initEditor(options) {
     editorSubmitBtnEl = editorSubmitBtn;
     editorStatusEl = editorStatus;
     editorNashvilleEl = editorNashville;
-    editorCommentEl = editorComment;
-    editCommentRowEl = editCommentRow;
     editSongBtnEl = editSongBtn;
     hintsBtnEl = hintsBtn;
     hintsPanelEl = hintsPanel;
@@ -581,6 +774,10 @@ export function initEditor(options) {
     editorUndoBtnEl = editorUndoBtn;
     editorRedoBtnEl = editorRedoBtn;
     editorTransposeGroupEl = editorTransposeGroup;
+
+    // Leave a return record for the sign-in redirect (same function every
+    // call, so a repeat init registers once)
+    registerReturnSource(editorReturnSource);
 
     // Compact metadata line: tap to expand/collapse the full fields
     if (metadataSummaryEl) {
@@ -861,9 +1058,70 @@ export function ownsContent(song) {
     return !!owner && owner === user.id;
 }
 
+// Last answer of is_trusted_user() for the signed-in user (false until asked).
+let editorTrusted = false;
+
 /**
- * Say plainly, before they hit submit, that editing someone else's chart
- * creates their own arrangement rather than changing the original.
+ * Will this edit change the song in place (true) or land as the editor's own
+ * arrangement (false)? Mirrors the server's classification in
+ * supabase/functions/_shared/pending-dispatch.ts: the submitter of the chart
+ * updates it, and so does a trusted user; everyone else forks.
+ */
+export function editsInPlace(song, trusted = editorTrusted) {
+    if (ownsContent(song)) return true;
+    return trusted === true && !!window.SupabaseAuth?.getUser?.()?.id;
+}
+
+/** The three things the fork notice can say. Exported for tests. */
+export const EDITOR_NOTICES = {
+    fork: 'This will be saved as your arrangement \u2014 the original stays untouched.',
+    trusted: 'As a trusted editor, your changes update this song in place for everyone.',
+    signedOut: 'Sign in to submit. Unless this chart is yours, your edit is saved as your own arrangement \u2014 the original stays untouched.',
+};
+
+/** Ask whether the signed-in user is trusted, then repaint what depends on it. */
+async function refreshTrustedStatus() {
+    const record = editingSongRecord;
+    let trusted = false;
+    try {
+        trusted = (await window.SupabaseAuth?.isTrustedUser?.()) === true;
+    } catch {
+        // Not trusted is the safe read: it only changes the wording.
+    }
+    editorTrusted = trusted;
+    if (editMode && editingSongRecord && editingSongRecord === record) {
+        refreshOwnershipChrome();
+    }
+}
+
+/**
+ * Sign-in state changed while the editor is open (the sign-in round trip
+ * lands back here): re-derive what the submit button and notice promise.
+ */
+export function refreshEditorOwnership() {
+    editorTrusted = false;
+    // Nothing on screen depends on it unless an edit is open — and this runs
+    // on every sign-in event, which must not cost a trust lookup at boot.
+    if (!editMode) return Promise.resolve();
+    refreshOwnershipChrome();
+    return refreshTrustedStatus();
+}
+
+/** Submit-button label and fork notice for the record being edited. */
+function refreshOwnershipChrome() {
+    if (editorSubmitBtnEl && editMode && editingSongRecord) {
+        editorSubmitBtnEl.textContent = editsInPlace(editingSongRecord)
+            ? 'Submit Correction'
+            : 'Save as My Arrangement';
+    }
+    renderForkNotice();
+}
+
+/**
+ * Say plainly, before they hit submit, what the server will do with the edit:
+ * nothing to say for your own chart; "updates in place" for a trusted user;
+ * otherwise that it becomes their own arrangement and the original is
+ * untouched.
  */
 function renderForkNotice() {
     if (!editorStatusEl?.parentNode) return;
@@ -882,8 +1140,10 @@ function renderForkNotice() {
         notice.className = 'editor-fork-notice';
         editorStatusEl.parentNode.insertBefore(notice, editorStatusEl);
     }
-    notice.textContent =
-        'This will be saved as your arrangement — the original stays untouched.';
+    const signedIn = !!window.SupabaseAuth?.getUser?.()?.id;
+    notice.textContent = !signedIn
+        ? EDITOR_NOTICES.signedOut
+        : editsInPlace(editingSongRecord) ? EDITOR_NOTICES.trusted : EDITOR_NOTICES.fork;
 }
 
 /**
@@ -1208,6 +1468,10 @@ async function submitSong(data) {
         if (pendingEntry.replaces_id) {
             primeSongContent(pendingEntry.replaces_id, pendingEntry.content || '');
         }
+
+        // Submitted: what is on screen is now what is saved, so leaving for
+        // the song page below must not ask "discard your changes?"
+        markEditorClean();
 
         // Refresh the song index to include our new pending song, then navigate
         if (window.refreshPendingSongs) {

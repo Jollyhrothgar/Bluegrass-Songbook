@@ -6,7 +6,7 @@
 // and `#new-tab`, reading the shape off the hash rather than a form, and
 // these tests exercise the logic in jsdom with nothing mounted.
 
-import { createMultiTrackOTF } from './actions.js';
+import { createMultiTrackOTF } from './new-otf.js';
 
 export const DRAFT_KEY = 'otf-editor-draft';
 

@@ -511,7 +511,8 @@ docs/js/otf-editor/
 │                      #   + ValuePromptPopover (see "No native dialogs")
 ├── context-menu.js    # Right-click menu
 ├── pitch.js           # Pure string+fret ↔ MIDI (ported from tab-player)
-├── actions.js         # Document-level helpers (validate, cleanup, download)
+├── actions.js         # Document-level helpers (validate, cleanup, download); re-exports new-otf.js
+├── new-otf.js         # createEmptyOTF / createMultiTrackOTF — pure, editor-state-free (the song page builds new takes from it)
 └── recorder.js        # Record/replay of edit events
 ```
 

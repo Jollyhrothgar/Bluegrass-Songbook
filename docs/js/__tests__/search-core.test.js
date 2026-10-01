@@ -1,5 +1,5 @@
 // Unit tests for search-core.js
-import { describe, it, expect, beforeEach, vi } from 'vitest';
+import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 
 // Mock dependencies
 vi.mock('../state.js', () => ({
@@ -47,8 +47,11 @@ vi.mock('../analytics.js', () => ({
 import {
     parseSearchQuery,
     songHasChords,
-    songHasProgression
+    songHasProgression,
+    prefetchResult
 } from '../search-core.js';
+import { allSongs, songGroups } from '../state.js';
+import { clearSongContentCache } from '../song-content.js';
 import { stemWord, buildStemSet } from '../stem.js';
 
 describe('parseSearchQuery', () => {
@@ -529,5 +532,65 @@ describe('stemmed search matching', () => {
         });
         expect(results[0].song.id).toBe('b');
         expect(results[1].song.id).toBe('a');
+    });
+});
+
+
+describe('prefetchResult (warm the chart a result would open)', () => {
+    const row = (dataset) => {
+        const el = document.createElement('div');
+        el.className = 'result-item';
+        Object.assign(el.dataset, dataset);
+        return el;
+    };
+    const lean = (id, extra = {}) => ({ id, title: id, has_content: true, ...extra });
+    let fetchMock;
+
+    beforeEach(() => {
+        clearSongContentCache();
+        allSongs.length = 0;
+        for (const k of Object.keys(songGroups)) delete songGroups[k];
+        fetchMock = vi.fn(() => Promise.resolve({ ok: true, status: 200, text: () => Promise.resolve('[G]x') }));
+        vi.stubGlobal('fetch', fetchMock);
+    });
+    afterEach(() => vi.unstubAllGlobals());
+
+    it('fetches the .pro for a plain result', () => {
+        allSongs.push(lean('old-home-place'));
+        prefetchResult(row({ id: 'old-home-place', groupId: '' }));
+        expect(fetchMock).toHaveBeenCalledWith('data/songs/old-home-place.pro');
+    });
+
+    it('fetches the group\'s representative — what a click would actually open', () => {
+        const plain = lean('blue-moon-1', { group_id: 'g1', chord_count: 5 });
+        const pinned = lean('blue-moon-2', { group_id: 'g1', canonical: true });
+        allSongs.push(plain, pinned);
+        songGroups.g1 = [plain, pinned];
+        prefetchResult(row({ id: 'blue-moon-1', groupId: 'g1' }));
+        expect(fetchMock).toHaveBeenCalledTimes(1);
+        expect(fetchMock).toHaveBeenCalledWith('data/songs/blue-moon-2.pro');
+    });
+
+    it('leaves part-qualified rows alone (they may open a tab)', () => {
+        allSongs.push(lean('angeline-baker'));
+        prefetchResult(row({ id: 'angeline-baker', partId: 'banjo' }));
+        expect(fetchMock).not.toHaveBeenCalled();
+    });
+
+    it('does nothing for a row with no lead sheet, an unknown id, or no row', () => {
+        allSongs.push({ id: 'tab-only', title: 'Tab only' });
+        prefetchResult(row({ id: 'tab-only' }));
+        prefetchResult(row({ id: 'not-a-song' }));
+        prefetchResult(null);
+        expect(fetchMock).not.toHaveBeenCalled();
+    });
+
+    it('does not re-request on every hover of the same row', () => {
+        allSongs.push(lean('old-home-place'));
+        const item = row({ id: 'old-home-place' });
+        prefetchResult(item);
+        prefetchResult(item);
+        prefetchResult(item);
+        expect(fetchMock).toHaveBeenCalledTimes(1);
     });
 });

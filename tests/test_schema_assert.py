@@ -277,6 +277,86 @@ class TestFailureModes:
             '\nCREATE OR REPLACE VIEW "public"."doc_staging" AS SELECT 1;\n')
         assert check(sa.parse_dump(broken), 'doc_staging.absent') is not None
 
+    # --- lists (A1 / A2) ----------------------------------------------------
+
+    def test_list_read_policy_open_to_everyone(self, dump_text):
+        """The state before 20260930000000: FOR SELECT USING (true)."""
+        broken = dump_text + (
+            '\nCREATE POLICY "Anyone can view lists by id" ON "public"."user_lists" '
+            'FOR SELECT USING (true);\n')
+        detail = check(sa.parse_dump(broken), 'lists.reads-closed')
+        assert detail is not None and 'Anyone can view lists by id' in detail
+
+    def test_list_read_policy_reaching_anon(self, dump_text):
+        broken = dump_text.replace(
+            'CREATE POLICY "Followers and owners can view followers" ON '
+            '"public"."list_followers" FOR SELECT TO "authenticated"',
+            'CREATE POLICY "Followers and owners can view followers" ON '
+            '"public"."list_followers" FOR SELECT TO "anon", "authenticated"')
+        assert broken != dump_text
+        detail = check(sa.parse_dump(broken), 'lists.reads-closed')
+        assert detail is not None and 'anon' in detail
+
+    def test_list_table_with_no_read_policy_locks_owners_out(self, dump_text):
+        broken = '\n'.join(
+            l for l in dump_text.split('\n')
+            if 'CREATE POLICY "Owners and followers can view lists"' not in l)
+        detail = check(sa.parse_dump(broken), 'lists.reads-closed')
+        assert detail is not None and 'no SELECT policy' in detail
+
+    def test_list_table_rls_off(self, dump_text):
+        broken = dump_text.replace(
+            'ALTER TABLE "public"."user_list_items" ENABLE ROW LEVEL SECURITY;', '')
+        detail = check(sa.parse_dump(broken), 'lists.reads-closed')
+        assert detail is not None and 'user_list_items' in detail
+
+    def test_add_list_owner_granted_to_authenticated(self, dump_text):
+        """The state before 20260930000000: any signed-in user could take over
+        any list."""
+        broken = dump_text + (
+            '\nGRANT ALL ON FUNCTION "public"."add_list_owner"("p_list_id" "uuid", '
+            '"p_user_id" "uuid") TO "authenticated";\n')
+        detail = check(sa.parse_dump(broken), 'add_list_owner.locked')
+        assert detail is not None and 'authenticated' in detail
+
+    def test_add_list_owner_not_revoked_from_public(self, dump_text):
+        broken = '\n'.join(
+            l for l in dump_text.split('\n')
+            if not (l.startswith('REVOKE') and 'add_list_owner' in l))
+        detail = check(sa.parse_dump(broken), 'add_list_owner.locked')
+        assert detail is not None and 'PUBLIC' in detail
+
+    def test_remove_list_owner_takes_a_user_id_again(self, dump_text):
+        broken = dump_text.replace(
+            'FUNCTION "public"."remove_list_owner"("p_list_id" "uuid") RETURNS',
+            'FUNCTION "public"."remove_list_owner"("p_list_id" "uuid", '
+            '"p_user_id" "uuid" DEFAULT "auth"."uid"()) RETURNS')
+        assert broken != dump_text
+        detail = check(sa.parse_dump(broken), 'remove_list_owner.self-only')
+        assert detail is not None and 'p_user_id' in detail
+
+    def test_remove_list_owner_granted_to_anon(self, dump_text):
+        broken = dump_text + (
+            '\nGRANT ALL ON FUNCTION "public"."remove_list_owner"("p_list_id" "uuid") '
+            'TO "anon";\n')
+        detail = check(sa.parse_dump(broken), 'remove_list_owner.self-only')
+        assert detail is not None and 'anon' in detail
+
+    def test_log_events_with_unqualified_table(self, dump_text):
+        """The 2026-01-07 bug: empty search_path, unqualified table name."""
+        broken = dump_text.replace('INSERT INTO public.analytics_events',
+                                   'INSERT INTO analytics_events')
+        assert broken != dump_text
+        detail = check(sa.parse_dump(broken), 'log_events.qualified')
+        assert detail is not None and '42P01' in detail
+
+    def test_log_events_loses_its_search_path_pin(self, dump_text):
+        start = dump_text.index('CREATE OR REPLACE FUNCTION "public"."log_events"')
+        head, tail = dump_text[:start], dump_text[start:]
+        tail = tail.replace('    SET "search_path" TO \'\'\n', '', 1)
+        detail = check(sa.parse_dump(head + tail), 'log_events.qualified')
+        assert detail is not None and 'search_path' in detail
+
 
 # ---------------------------------------------------------------------------
 # Reporting / CLI

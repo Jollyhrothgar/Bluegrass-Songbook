@@ -152,7 +152,14 @@ describe('registerServiceWorker', () => {
     it('registers sw.js as a module worker', async () => {
         const sw = fakeSW();
         await registerServiceWorker({ navigator: { serviceWorker: sw }, location: https });
-        expect(sw.register).toHaveBeenCalledWith('sw.js', { type: 'module' });
+        expect(sw.register).toHaveBeenCalledWith('sw.js', expect.objectContaining({ type: 'module' }));
+    });
+
+    it('never lets the HTTP cache serve the worker\'s imports on an update check', async () => {
+        // A new sw.js + a stale sw-strategy.js (max-age=600) would fail to install
+        const sw = fakeSW();
+        await registerServiceWorker({ navigator: { serviceWorker: sw }, location: https });
+        expect(sw.register.mock.calls[0][1].updateViaCache).toBe('none');
     });
 
     it('offers a reload when a NEW worker replaces the one this page loaded on', async () => {

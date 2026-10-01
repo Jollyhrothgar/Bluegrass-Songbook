@@ -1,9 +1,10 @@
 // Corpus assembly: how the three row sources become `allSongs`.
 //
 // - data/index.jsonl   — the searchable canon; fetched at startup, blocking
-// - data/archive.jsonl — everything the prune left off the shelf; fetched in
-//                        the background so deep links, lists and redirects to
-//                        archived works still resolve
+// - data/archive.jsonl — everything the prune left off the shelf; fetched ON
+//                        DEMAND (a deep link, a list, the Dungeon, a pending
+//                        or promoted row that names an archived work) — never
+//                        speculatively; see overlaysNeedArchive
 // - pending_songs      — Supabase overlay: every logged-in user's submission,
 //                        live in seconds while the git commit catches up.
 //                        A row is a SONG, a PART, or a METADATA edit
@@ -76,6 +77,43 @@ function asIdSet(value) {
 }
 
 /**
+ * Does a RAW `pending_songs` row have a body (ChordPro, or an OTF for a tab)?
+ *
+ * The overlay fetch leaves `content` out of its column list — a chart is up to
+ * 200 KB and a tab 2 MB, and every visitor would pay for every pending row —
+ * and learns which rows have one from a second, id-only query, which it
+ * records as `has_content`. A row that still carries `content` inline
+ * (my-submissions, tests, an older caller) answers for itself; a row that
+ * carries neither signal is assumed to have text unless its kind says it
+ * can't (a metadata edit, a placeholder request).
+ */
+export function rowHasContent(row) {
+    if (typeof row?.content === 'string') return row.content.length > 0;
+    if (typeof row?.has_content === 'boolean') return row.has_content;
+    return row?.part_type !== 'metadata' && row?.status !== 'placeholder';
+}
+
+/**
+ * Does a TRANSFORMED pending row (what mergeCorpus sees) have text, whether
+ * it is inline or still to be fetched when the song is opened?
+ */
+function pendingHasText(row) {
+    if (typeof row?.content === 'string') return row.content.length > 0;
+    return row?.deferred_content === true;
+}
+
+/**
+ * Pending rows are fetched WITHOUT `content` (see rowHasContent): just the
+ * columns the merge reads. Keep this list in step with
+ * transformPendingSongRow / TabRow / MetadataRow below.
+ */
+export const PENDING_OVERLAY_COLUMNS = [
+    'id', 'title', 'artist', 'composer', 'key', 'mode', 'tags', 'notes',
+    'status', 'replaces_id', 'created_by', 'created_at', 'part_type',
+    'instrument', 'part_file',
+].join(',');
+
+/**
  * The two takes a pending FORK puts on one work, or null when the pending
  * row isn't a fork.
  *
@@ -93,7 +131,7 @@ function asIdSet(value) {
  * ⇒ a fork, which is why most edits of imported charts land here.
  */
 export function pendingForkArrangements(base, pending) {
-    if (typeof pending?.content !== 'string' || !pending.content) return null;
+    if (!pendingHasText(pending)) return null;
     if (base.submitted_by && base.submitted_by === pending.created_by) {
         return null;   // your own chart — this is an update, not a fork
     }
@@ -111,7 +149,11 @@ export function pendingForkArrangements(base, pending) {
         slug: 'pending',
         label: 'Your arrangement',
         pending: true,
-        content: pending.content,
+        // The text rides along when the row carried it; otherwise the row id
+        // is the address song-content fetches it from when the take is opened.
+        ...(typeof pending.content === 'string'
+            ? { content: pending.content }
+            : { pending_id: pending.id }),
         ...(pending.key ? { key: pending.key } : {}),
         ...(pending.created_by ? { submitted_by: pending.created_by } : {}),
     }];
@@ -182,22 +224,38 @@ function extractLyrics(content) {
  * authoritatively.
  */
 function transformPendingSongRow(pending) {
+    const inline = typeof pending.content === 'string';
+    const hasContent = rowHasContent(pending);
     return {
         id: pending.id,
         title: pending.title,
         artist: pending.artist || '',
         composer: pending.composer || '',
-        content: pending.content,
+        // Inline when the row carried its text. Otherwise the row is a lean
+        // one: `has_content` makes it a lead sheet on the work page and
+        // `deferred_content` tells song-content to fetch the text from
+        // pending_songs when the song is opened. (No `content` key at all —
+        // an explicit undefined would overwrite a published row's field when
+        // the merge spreads this over it.) Search previews and the lyrics
+        // index are empty for such a row until the build publishes it.
+        ...(inline || !hasContent
+            ? { content: inline ? pending.content : '' }
+            : { has_content: true, deferred_content: true }),
         key: pending.key || '',
         mode: pending.mode || '',
         tags: pending.tags || {},
         notes: pending.notes || '',
-        status: pending.status || (pending.content ? undefined : 'placeholder'),
+        status: pending.status || (hasContent ? undefined : 'placeholder'),
         source: 'pending',
         replaces_id: pending.replaces_id,
         created_by: pending.created_by || null,
-        first_line: extractFirstLine(pending.content),
-        lyrics: extractLyrics(pending.content),
+        // Same rule as `content` above: a lean row omits these keys rather
+        // than setting them to '', because the merge spreads this row over a
+        // published work it edits, and '' would wipe that work's first line
+        // and lyrics out of search until the commit lands.
+        ...(inline
+            ? { first_line: extractFirstLine(pending.content), lyrics: extractLyrics(pending.content) }
+            : {}),
     };
 }
 
@@ -228,7 +286,11 @@ function transformPendingTabRow(pending) {
             // seconds after you submit a tab — which is precisely when a
             // tab-minted work still has no artist and wants one.
             ...(pending.created_by ? { submitted_by: pending.created_by } : {}),
-            content: pending.content || '',
+            // The OTF rides along when the row carried it; a lean row flags
+            // it instead and loadPartOtf fetches it when the take is opened.
+            ...(typeof pending.content === 'string'
+                ? { content: pending.content }
+                : rowHasContent(pending) ? { content_deferred: true } : { content: '' }),
             pending: true,
             pending_id: pending.id,
         },
@@ -286,7 +348,7 @@ export function overlayPendingTabParts(published = [], rows = []) {
     const parts = [...(published || [])];
     for (const row of rows || []) {
         const part = row?.pending_part;
-        if (!part?.content) continue;
+        if (!part?.content && !part?.content_deferred) continue;
         const at = part.src_file
             ? parts.findIndex(p => p.src_file === part.src_file)
             : -1;
@@ -423,6 +485,105 @@ export function applyPendingMetadata(songs, metaRows) {
 }
 
 /**
+ * Does this pending row NAME a work (`replaces_id`) that `knownIds` (a Set, or
+ * an object keyed by id) does not hold? That is an edit of, or a tab for, a
+ * work the row has nothing to merge onto yet.
+ *
+ * Two kinds of row are deliberately not asked. A tab that names no work mints
+ * one under the slug the server derives from its title: it is new by
+ * construction, and treating "the slug might be archived" as a reason to
+ * download the archive would make every visitor pay for it for as long as
+ * someone's brand-new tab is pending. A metadata row with a missing target is
+ * dropped by applyPendingMetadata, and the work page that would show it loads
+ * the archive on its own.
+ */
+function pendingTargetsMissing(row, knownIds) {
+    if (isPendingMetadata(row) || !row?.replaces_id) return false;
+    return !(knownIds instanceof Set ? knownIds.has(row.replaces_id) : knownIds[row.replaces_id]);
+}
+
+/**
+ * Must the archive be loaded for the overlays to mean what they say?
+ *
+ * The archive is no longer fetched speculatively, but two overlays are only
+ * meaningful with it:
+ *
+ *  - `promoted_songs` rescues ARCHIVED works into search. Until the next
+ *    index build folds a promotion into the canon, the promoted row exists
+ *    only in archive.jsonl — so a promoted id the canon doesn't hold means
+ *    the archive has to come in, or a fresh promotion would vanish.
+ *  - A pending edit or tab targeting a work the canon doesn't hold is an edit
+ *    of an archived work (or of nothing); mergeCorpus withholds it until the
+ *    archive is there to merge onto.
+ *
+ * @param {{canon: Array, pending?: Array, promoted?: Iterable|Set}} sources
+ *        `pending` rows in transformed (merge) shape
+ */
+export function overlaysNeedArchive({ canon = [], pending = [], promoted = null, deleted = null } = {}) {
+    const promotedIds = asIdSet(promoted);
+    if (!promotedIds.size && !(pending || []).length) return false;
+
+    const deletedIds = asIdSet(deleted);
+    const canonIds = new Set(canon.map(row => row.id));
+    for (const id of promotedIds) {
+        // Deletion wins over promotion (mergeCorpus), so a promoted id that is
+        // also deleted has nothing to rescue.
+        if (id && !canonIds.has(id) && !deletedIds.has(id)) return true;
+    }
+    const known = withPendingTargets(canonIds, pending, deletedIds);
+    return (pending || []).some(row => pendingTargetsMissing(row, known));
+}
+
+/**
+ * The ids a pending row's `replaces_id` can land on without the archive: the
+ * given static ids, the pending SONG rows themselves (a tab attaches to a
+ * pending song row — applyPendingTabs), and deleted ids (nothing to wait for:
+ * the archive cannot bring a deleted work back).
+ */
+function withPendingTargets(staticIds, pending, deletedIds) {
+    const known = new Set(staticIds);
+    for (const id of deletedIds) known.add(id);
+    for (const row of pending || []) {
+        // (a row that "replaces" its own id is an edit of a work it does not
+        // itself supply, so it is not a target either)
+        if (row?.id && row.replaces_id !== row.id
+            && !isPendingTablature(row) && !isPendingMetadata(row)) known.add(row.id);
+    }
+    return known;
+}
+
+// ============================================================
+// Last-known curation sets, so the first paint is already right
+// ============================================================
+
+const CURATION_CACHE_PREFIX = 'songbook-curation-';
+
+/**
+ * Read the id set a previous visit cached for a curation table
+ * ('deleted' | 'promoted'). Never throws: storage can be blocked, absent or
+ * hold garbage, and an empty set is exactly what a first visit has.
+ */
+export function readCachedIdSet(kind, storage) {
+    try {
+        storage ??= globalThis.localStorage;
+        const parsed = JSON.parse(storage?.getItem(CURATION_CACHE_PREFIX + kind) || '[]');
+        return new Set(Array.isArray(parsed) ? parsed.filter(id => typeof id === 'string') : []);
+    } catch {
+        return new Set();
+    }
+}
+
+/** Remember an id set for the next visit's first paint. Never throws. */
+export function writeCachedIdSet(kind, ids, storage) {
+    try {
+        storage ??= globalThis.localStorage;
+        storage?.setItem(CURATION_CACHE_PREFIX + kind, JSON.stringify([...ids]));
+    } catch {
+        // Quota or blocked storage: the cache is an optimisation, not state.
+    }
+}
+
+/**
  * Merge the row sources into the corpus the app runs on.
  *
  * Pending rows overlay static rows: a pending SONG row with `replaces_id`
@@ -444,6 +605,7 @@ export function applyPendingMetadata(songs, metaRows) {
  */
 export function mergeCorpus({
     canon = [], archive = [], pending = [], deleted = null, promoted = null,
+    archiveLoaded = true,
 } = {}) {
     const deletedIds = asIdSet(deleted);
     const promotedIds = asIdSet(promoted);
@@ -462,6 +624,20 @@ export function mergeCorpus({
         ));
     }
 
+    const staticMap = {};
+    for (const row of staticRows) staticMap[row.id] = row;
+
+    // The archive is loaded on demand, so a pending row that targets a work
+    // it alone holds has nothing to merge onto yet. Applied anyway, an edit
+    // would stand in search as a bare row (the archived base is what keeps it
+    // off the shelf) and a tab would mint a work that already exists. Hold
+    // those rows back; overlaysNeedArchive is what brings the archive in, and
+    // the next merge applies them properly.
+    if (!archiveLoaded) {
+        const known = withPendingTargets(Object.keys(staticMap), pendingRows, deletedIds);
+        pendingRows = pendingRows.filter(p => !pendingTargetsMissing(p, known));
+    }
+
     // Three kinds of pending row, three different jobs. Split before any of
     // the rules run so a tablature or metadata row can never be mistaken for a
     // song that replaces a work — both name a work in `replaces_id`, which is
@@ -470,9 +646,6 @@ export function mergeCorpus({
     const metaRows = pendingRows.filter(isPendingMetadata);
     const songRows = pendingRows.filter(
         p => !isPendingTablature(p) && !isPendingMetadata(p));
-
-    const staticMap = {};
-    for (const row of staticRows) staticMap[row.id] = row;
 
     const mergedPending = songRows.map(p => {
         const base = p.replaces_id ? staticMap[p.replaces_id] : null;
@@ -515,17 +688,4 @@ export function countDistinctTitles(songs) {
         (songs || []).filter(s => s.indexed !== false)
             .map(s => s.title?.toLowerCase())
     ).size;
-}
-
-/**
- * Run `fn` when the browser is idle, or after `delayMs` where
- * requestIdleCallback isn't available (Safari). Returns a cancel function.
- */
-export function whenIdle(fn, delayMs = 2000) {
-    if (typeof requestIdleCallback === 'function') {
-        const handle = requestIdleCallback(() => fn(), { timeout: delayMs * 2 });
-        return () => cancelIdleCallback?.(handle);
-    }
-    const timer = setTimeout(fn, delayMs);
-    return () => clearTimeout(timer);
 }

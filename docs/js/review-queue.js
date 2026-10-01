@@ -58,15 +58,10 @@ export const REVIEW_KINDS = {
 // PURE LOGIC (unit-tested)
 // ============================================
 
-/**
- * Which delete affordance a viewer gets on a song page.
- * Admins keep the instant path; trusted users get to ask; nobody else sees it.
- */
-export function deleteAffordance({ isAdmin = false, isTrusted = false } = {}) {
-    if (isAdmin) return 'instant';
-    if (isTrusted) return 'request';
-    return 'none';
-}
+// deleteAffordance lives in delete-affordance.js: the song page needs this
+// one-line rule at boot, and the queue (a Dungeon-only panel) is lazy-loaded.
+// Re-exported so the queue and the button still read as one rule.
+export { deleteAffordance } from './delete-affordance.js';
 
 /** Whether a viewer may decide requests (approve/reject). Admins only. */
 export function canReview({ isAdmin = false } = {}) {

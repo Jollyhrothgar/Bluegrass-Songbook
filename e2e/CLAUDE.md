@@ -90,6 +90,15 @@ sb.assertClean();          // nothing un-mocked, nothing off-box
 - **Signing in FAILING** is a route too: `signInWithOAuth` navigates to
   `/auth/v1/authorize`, and the mock serves a page carrying `#e2e-oauth-gate`.
   That is what "the login gate appeared" means in an assertion.
+- **Signing in SUCCEEDING** (`{ signedIn: false, oauthReturn: true }`): the
+  authorize route answers with a 302 back to `redirect_to` carrying
+  `#access_token=…` in the fragment, exactly as Google + Supabase do, and the
+  mock is signed in from then on. The browser really leaves and comes back, so
+  a test sees what a redirect destroys. **Never stub `signInWithGoogle` with a
+  no-op to test a sign-in flow** — the page never unloads and the lost-route /
+  lost-draft bug (A5) is invisible. (`editor.spec.js` keeps a stub for the
+  narrower "the gate fires and the draft stays" assertion only.)
+  `e2e/editor-lifecycle.spec.js` is the model.
 - **`assertClean()`** fails on two things: a Supabase path the mock does not
   understand (the app grew a call; teach the helper) and any request to a host
   that is not localhost or jsdelivr (a test was talking to production).
@@ -141,6 +150,7 @@ export dropdown markup, and the mobile bottom sheet. The suite targets:
 | `arrangement-pill.spec.js` | Multi-version groups: pill listing, navigation, vote gating (replaces the old version-picker modal tests) |
 | `navigation.spec.js` | Top-band nav links, deep links, `#song`→`#work` redirect, history |
 | `landing-page.spec.js` | Collection cards, landing search, URL routing |
+| `boot-data.spec.js` | What boot downloads and when: cards built only for the home view, archive fetched on demand (deep link, Dungeon, lists, promotion rescue), lean pending overlay + content read on open, cached deletions applied before the overlays land, legacy-ID map only for lists that need it |
 | `favorites.spec.js` | Empty state, adding/removing songs, viewing favorites |
 | `list-management.spec.js` | List CRUD via picker + Song Lists view, sharing buttons |
 | `editor.spec.js` | Add-song picker flow, `#add`/`#edit` deep links, editor fields, validation |
@@ -150,6 +160,8 @@ export dropdown markup, and the mobile bottom sheet. The suite targets:
 | `ui.spec.js` | Theme toggle (top band), auto-hiding chrome, overflow menu, pref persistence |
 | `abc-notation.spec.js` | ABC sheet music display, bottom-band playback controls |
 | `error-states.spec.js` | Not-found states, invalid URLs, graceful errors |
+| `render-counts.spec.js` | A lead sheet / tab is drawn ONCE per open (MutationObserver counters), incl. back/forward (popstate + hashchange de-dup) |
+| `sw-and-prefetch.spec.js` | Real service worker (registers, preload, cache sweep, `.pro` SWR, offline reload, network timeout and one-generation-per-load after a simulated deploy, against a delaying proxy) + chart prefetch on hover/pointerdown/next-in-list |
 | `otf-editor.spec.js` | OTF editor: the dev harness (`/editor-demo.html`), the in-app Go-to-measure / Tempo prompts, and the song page's authoring mode (`#new-tab`; `/create.html` is a redirect shim into it) |
 | `otf-editor-visual.spec.js` | OTF editor visual/screenshot checks |
 | `otf-editor-mobile.spec.js` | **mobile project.** Band collapses to ⚙; edit session's buttons stay on the band; menu bar collapses to ☰; `Press ? for help`; digits still enter notes; Cancel asks inline |

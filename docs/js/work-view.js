@@ -13,7 +13,7 @@ import {
     currentChordpro, setCurrentChordpro,
     loadedTablature, setLoadedTablature,
     tablaturePlayer, setTablaturePlayer,
-    setCurrentDetectedKey,
+    currentDetectedKey, setCurrentDetectedKey,
     setOriginalDetectedKey,
     setOriginalDetectedMode,
     listContext, setListContext,
@@ -23,7 +23,7 @@ import {
     subscribe
 } from './state.js';
 
-import { deleteAffordance } from './review-queue.js';
+import { deleteAffordance } from './delete-affordance.js';
 
 import {
     goBack,
@@ -34,7 +34,7 @@ import {
 } from './song-view.js';
 import {
     peekSongContent, songHasContent, songHasAbc,
-    getArrangementContent, peekArrangementContent,
+    getArrangementContent, peekArrangementContent, getPendingContent,
 } from './song-content.js';
 import { CHROMATIC_MAJOR_KEYS } from './chords.js';
 import {
@@ -53,25 +53,26 @@ import { buildNewTab, saveDraft, clearDraft, loadDraft } from './otf-editor/crea
 import {
     tabEntryPlan, renderExistingTabsPanel, partMatchesInstrument,
 } from './otf-editor/existing-tabs.js';
-import { bindBandToEditor } from './tab-edit-band.js';
+import { registerReturnSource } from './auth-return.js';
+// The pure timing/track helpers stay static (the page builds timings before
+// it draws). TabRenderer (~96 KB), TabPlayer (~42 KB) and the tab-only band
+// helpers (tab-controls-sheet, tab-playback-interactions) are NOT imported
+// statically any more: they load on the first tablature render
+// (loadTabRenderKit below), so chord-chart visitors never download them.
 import {
-    TabRenderer, TabPlayer,
     TimelineTiming, identityTimeline, readingListTimeline,
     expandNotation, makePlaybackToVisualMapper,
     maxMeasureIn, measureTimingFromOtf,
     analyzeReadingList, prepareCompactNotation, densifyNotation,
-    attachOtfDecorations, isPercussionTrack, pitchedTracks,
-} from './renderers/index.js';
+    attachOtfDecorations,
+} from './renderers/measure-timing.js';
+import { isPercussionTrack, pitchedTracks } from './renderers/otf-tracks.js';
 import { clearListView, openNotesSheet } from './lists.js';
 import { showListPicker, updateTriggerButton } from './list-picker.js';
 import { openFlagModal } from './flags.js';
 import { trackSongView } from './analytics.js';
 import { setTopBar, setBottomBand, pill, setChromeAutoHide } from './shell.js';
-import { attachTabControlsSheet } from './tab-controls-sheet.js';
-import { buildKeyPill, buildDisplayPill, buildInfoPill, buildExportPill, handleExport } from './song-controls.js';
-import {
-    attachTabPlaybackInteractions, playbackTickForPoint, playbackRangeForMeasures,
-} from './tab-playback-interactions.js';
+import { practiceLinks, buildKeyPill, buildDisplayPill, buildInfoPill, buildExportPill, handleExport } from './song-controls.js';
 import { showToast } from './toast.js';
 
 // ============================================
@@ -82,6 +83,7 @@ let currentWork = null;          // The full work object
 let activePart = null;           // Currently displayed part { type, format, file, ... }
 let availableParts = [];         // All parts for current work
 let trackRenderers = {};         // Map of trackId -> TabRenderer instance
+let tabRenderKit = null;         // tab modules (see loadTabRenderKit), once a tab has been shown
 let showRepeatsCompact = false;  // true = show repeat signs, false = unroll repeats
 let twoFeelMode = false;         // true = present 4/4 as cut time (2/2)
 let tempoOverride = null;        // { workId, quarterBpm } — user-set tempo;
@@ -93,6 +95,7 @@ let activeEditSession = null;    // live tab edit session (torn down on nav)
 let pendingTabEdit = null;       // parked "open this tab in the editor" ask
 let pendingDraft = null;         // {id, otf, …} a `?draft=` route asked for
 let activeEditBand = null;       // bottom band bound to the live editor
+let unregisterTabReturn = null;  // auth-return source for the live tab editor
 let tabAuthoring = null;         // {kind:'add'|'new', part, take, target, otf}
 let takeStatusLine = null;       // "Submitted — live now…" under the take header
 
@@ -166,6 +169,12 @@ export function initialArrangementSlug(song, arrangements) {
     if (typeof song?.content === 'string' && song.content) {
         const match = arrangements.find(a => a.content === song.content);
         if (match) return match.slug;
+    }
+    // A lean pending row carries no text to compare, but its own take is the
+    // arrangement flagged `pending` (see corpus.pendingForkArrangements).
+    if (song?.deferred_content) {
+        const pendingTake = arrangements.find(a => a.pending);
+        if (pendingTake) return pendingTake.slug;
     }
     return (arrangements.find(a => a.default) || arrangements[0]).slug;
 }
@@ -315,12 +324,15 @@ export function findTakeByRef(parts, ref) {
 /**
  * The OTF document for a tablature take.
  *
- * Two sources, one of which is new. A published take is FETCHED, exactly as
- * it always was — `cache: 'no-cache'` means revalidate with the server (304
- * if unchanged), because Chrome's heuristic freshness otherwise serves
- * long-unchanged tab files for WEEKS after they are re-published (a January
- * parse of cherokee-shuffle-a survived multiple hard reloads and rendered
- * 2/2 left-packed measures over the corrected data).
+ * Two sources, one of which is new. A published take is FETCHED with no
+ * `cache` override. Freshness is the service worker's job now: tab JSON is
+ * stale-while-revalidate there (sw-strategy.js) and its background refresh
+ * asks the server to revalidate (a 304 when unchanged), so a re-published tab
+ * lands one visit later without this request forcing a revalidation round
+ * trip on every open. (This used to say `cache: 'no-cache'`, added because
+ * Chrome's heuristic freshness served a long-unchanged tab for WEEKS after it
+ * was re-published — a header-less static server's behaviour. GitHub Pages
+ * sends `max-age=600`, which bounds the no-worker case to ten minutes.)
  *
  * A PENDING take has nothing to fetch: it was submitted seconds ago and its
  * document lives in the overlay row (corpus.overlayPendingTabParts), where
@@ -330,12 +342,18 @@ export function findTakeByRef(parts, ref) {
 export async function loadPartOtf(part, fetchImpl = fetch) {
     if (part?.pending) {
         try {
-            return JSON.parse(part.content);
+            // A lean overlay row holds no document; read it from pending_songs
+            // now that somebody is actually opening it.
+            const text = typeof part.content === 'string'
+                ? part.content
+                : await getPendingContent(part.pending_id);
+            if (typeof text !== 'string') throw new Error('gone');
+            return JSON.parse(text);
         } catch {
             throw new Error('This tab was just submitted and could not be read back.');
         }
     }
-    const response = await fetchImpl(part.file, { cache: 'no-cache' });
+    const response = await fetchImpl(part.file);
     if (!response.ok) throw new Error(`Failed to load ${part.file}`);
     return response.json();
 }
@@ -507,13 +525,21 @@ export async function openWork(workId, options = {}) {
 
     let song = allSongs.find(s => s.id === workId);
 
-    // A miss is not (yet) a 404: the archive (data/archive.jsonl) loads after
-    // first paint, and a brand-new pending row may not be merged. Show a
-    // loading state, then try each late source exactly once before giving up.
+    // A miss is not (yet) a 404: the archive (data/archive.jsonl) loads on
+    // demand — this is the demand — and a brand-new pending row may not be
+    // merged. Show a loading state, then try each late source exactly once
+    // before giving up.
     if (!song && !window.isArchiveLoaded?.()) {
         showWorkLoading();
-        await window.ensureArchiveLoaded?.();
+        // The Supabase overlays (a brand-new pending row, a fresh promotion)
+        // are already on their way from boot and far cheaper than the archive
+        // download, so a miss waits for them first.
+        await window.whenOverlaysSettled?.();
         song = allSongs.find(s => s.id === workId);
+        if (!song) {
+            await window.ensureArchiveLoaded?.();
+            song = allSongs.find(s => s.id === workId);
+        }
         // A redirect may only be resolvable once the archive is in
         if (!song) {
             const resolved = resolveWorkId(workId);
@@ -542,6 +568,18 @@ export async function openWork(workId, options = {}) {
     } = options;
 
     if (!song) {
+        // A work deleted as a duplicate may have a surviving twin. Loaded on
+        // demand (B7a): only the not-found page needs it, and it pulls in
+        // title-match.js.
+        const { findSurvivors, loadDeletedSongs } = await import('./work-suggest.js');
+        const { redirect, suggestions } = findSurvivors(
+            workId, allSongs, await loadDeletedSongs());
+        if (redirect) {
+            if (!fromList && !fromHistory) {
+                history.replaceState({ view: 'song', songId: redirect.id }, '', `#work/${redirect.id}`);
+            }
+            return openWork(redirect.id, { ...options, fromDeepLink: true, exact: true });
+        }
         // Real error state with a way out, not a dead-end spinner
         console.error(`Work not found: ${workId}`);
         teardownTablatureView();   // entering the song view owns its teardown
@@ -552,6 +590,10 @@ export async function openWork(workId, options = {}) {
                 <div class="not-found">
                     <p>Song not found: "${escapeHtml(workId)}"</p>
                     <p>It may have been renamed or removed.</p>
+                    ${suggestions.length ? `<p>Did you mean:</p>
+                    <ul class="not-found-suggestions">${suggestions.map(s => `
+                        <li><span>${escapeHtml(s.title)}${s.artist ? ` \u2014 ${escapeHtml(s.artist)}` : ''}</span>
+                        <a href="#work/${escapeHtml(s.id)}" class="not-found-open-btn">Open</a></li>`).join('')}</ul>` : ''}
                     <a href="#search" class="not-found-home-link">Browse all songs</a>
                 </div>`;
         }
@@ -900,6 +942,18 @@ function selectPart(part) {
 }
 
 /**
+ * Quiet "Practice:" line under the artist: Strum Machine (when matched) and
+ * a YouTube search. Shown for lead sheets and tab-only works alike.
+ */
+function practiceLineHtml() {
+    const links = practiceLinks(currentWork, currentDetectedKey);
+    if (!links.length) return '';
+    return `<div class="song-practice-line"><span class="song-practice-label">Practice:</span> ${
+        links.map(l => `<a href="${escapeAttr(l.href)}" target="_blank" rel="noopener" data-practice="${l.id}">${l.label}</a>`).join(' · ')
+    }</div>`;
+}
+
+/**
  * Title row: song title + small artist line.
  */
 function renderTitleHeader() {
@@ -957,8 +1011,20 @@ function renderTitleHeader() {
             ${artist
                 ? `<div class="song-artist-line">${escapeHtml(artist)}</div>`
                 : '<div class="song-artist-line song-artist-missing hidden">Artist unknown</div>'}
+            ${practiceLineHtml()}
         </div>
     `;
+    // Keep the Strum Machine link's ?key= in step with transposition, so a
+    // middle-click or "copy link" carries the key on screen, not the one at
+    // render. Self-unsubscribes once this header leaves the page.
+    const strumLink = header.querySelector('a[data-practice="strum"]');
+    if (strumLink) {
+        const unsub = subscribe('currentDetectedKey', (key) => {
+            if (!document.contains(header)) { unsub(); return; }
+            const href = practiceLinks(currentWork, key).find(l => l.id === 'strum')?.href;
+            if (href) strumLink.href = href;
+        });
+    }
     // #edit-song-btn is wired via main.js's songContent delegation; the
     // details button is wired here so the feature needs nothing from main.js.
     header.querySelector('#edit-meta-btn')
@@ -1542,11 +1608,17 @@ export function configureWorkPage(hooks = {}) {
         'currentDetectedKey',
     ];
     for (const key of displayPrefKeys) {
-        subscribe(key, () => {
+        subscribe(key, (value) => {
             if (currentView !== 'song' || !currentWork) return;
             if (activePart && activePart.type !== 'lead-sheet') return;
             const content = document.getElementById('work-part-content');
             const chordpro = currentChordpro || activePart?.content;
+            // A key notification is delivered a frame after the write, so a
+            // chart rendered in between has ALREADY used this key (openWork
+            // clears it and the render detects it again). Redrawing would
+            // repeat identical work.
+            if (key === 'currentDetectedKey' && content &&
+                content.dataset.renderedKey === String(value ?? '')) return;
             if (content && chordpro) {
                 renderLeadSheetContent(content, currentWork, chordpro, false);
             }
@@ -2311,6 +2383,32 @@ function renderDocumentPart(part, container) {
 }
 
 /**
+ * Load the tab drawing + playback modules (first tablature render, or first
+ * editor mount — the editor imports the renderer and player itself).
+ *
+ * They are needed together: the renderer draws the staves, and
+ * setupTablaturePlayer builds its TabPlayer up front — Play must be able to
+ * resume the audio context synchronously inside the tap (audio-unlock.js:
+ * never await before it), so the player cannot wait for the first click.
+ */
+function loadTabRenderKit() {
+    return Promise.all([
+        import('./renderers/tablature.js'),
+        import('./renderers/tab-player.js'),
+        import('./tab-controls-sheet.js'),
+        import('./tab-playback-interactions.js'),
+    ]).then(([{ TabRenderer }, { TabPlayer }, { attachTabControlsSheet }, interactions]) => {
+        tabRenderKit = {
+            TabRenderer, TabPlayer, attachTabControlsSheet,
+            attachTabPlaybackInteractions: interactions.attachTabPlaybackInteractions,
+            playbackTickForPoint: interactions.playbackTickForPoint,
+            playbackRangeForMeasures: interactions.playbackRangeForMeasures,
+        };
+        return tabRenderKit;
+    });
+}
+
+/**
  * Render tablature part
  */
 async function renderTablaturePart(part, container) {
@@ -2335,15 +2433,31 @@ async function renderTablaturePart(part, container) {
     }
 
     try {
+        // The renderer/player modules download alongside the document. When
+        // they are already in hand (every render after the first) this stays
+        // synchronous, exactly as before.
+        const kitLoading = tabRenderKit ? null : loadTabRenderKit();
+        kitLoading?.catch(() => {}); // surfaced below; don't double-report if the fetch fails first
+
         // Load the document (fetched, or read out of the pending overlay —
         // see loadPartOtf) unless the one in hand is already this take's.
         const cacheKey = otfCacheKey(part);
         let otf = loadedTablature;
         if (!otf || otf._partFile !== cacheKey) {
+            // The music font loads alongside the document, and the draw
+            // waits for it (briefly), so the staff is engraved once with
+            // its glyphs rather than twice.
+            // TabRenderer arrives with the lazily loaded kit (B7a); a failed
+            // kit download is reported where the kit is awaited below.
+            const fontReady = (kitLoading || Promise.resolve(tabRenderKit))
+                .then(kit => kit.TabRenderer.whenBravuraReady())
+                .catch(() => {});
             otf = await loadPartOtf(part);
             otf._partFile = cacheKey;
             setLoadedTablature(otf);
+            await fontReady;
         }
+        if (kitLoading) await kitLoading;
 
         // The page moved on while the document was in flight. `container` is
         // the check that catches every case: renderWorkView builds a FRESH
@@ -2465,7 +2579,7 @@ async function renderTablaturePart(part, container) {
 
             allTracksContainer.appendChild(trackSection);
 
-            const renderer = new TabRenderer(tabContainer);
+            const renderer = new tabRenderKit.TabRenderer(tabContainer);
             renderer.render(track, notation, ticksPerBeat, timeSignature, timings.visual);
             trackRenderers[track.id] = renderer;
             viewIds.push(track.id);
@@ -2710,16 +2824,23 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
     // Stop playback before handing the document to the editor
     if (tablaturePlayer?.isPlaying) tablaturePlayer.stop();
 
+    // createTablatureControls below needs the tab band helpers; the editor
+    // imports the renderer and player itself, so this adds no bytes.
+    const kitLoading = tabRenderKit ? null : loadTabRenderKit();
+
     const [
         { OTFEditor },
         { createTabEditSession, resolveEditTrackId },
         { submitTab },
-        { createAutosaver, getDraftStore },
+        { createAutosaver, getDraftStore, draftOpenHash },
+        { bindBandToEditor },
     ] = await Promise.all([
         import('./otf-editor/editor.js'),
         import('./otf-editor/work-edit.js'),
         import('./otf-editor/submit-tab.js'),
         import('./drafts.js'),
+        import('./tab-edit-band.js'),
+        kitLoading,
     ]);
 
     // The reader navigated while the editor was being fetched
@@ -2789,6 +2910,15 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
         }),
     }] : [];
 
+    // Submitting signed out sends the browser to Google and back, and the
+    // autosave's 1s trailing edge may not have fired yet. Write the draft NOW
+    // (the return record names it by id), before the gate starts the redirect.
+    const flushDraftBeforeSignIn = async (doc) => {
+        if (window.SupabaseAuth?.isLoggedIn?.()) return;
+        autosave.save(doc);
+        await autosave.flush();
+    };
+
     activeEditSession = createTabEditSession({
         mount: container,
         otf,
@@ -2844,8 +2974,14 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
             }
         },
         onSubmit: isNewTake
-            ? (doc) => submitAuthoredTake(doc, part)
-            : (doc, comment) => submitTabCorrection(doc, part, comment, submitTab),
+            ? async (doc) => {
+                await flushDraftBeforeSignIn(doc);
+                return submitAuthoredTake(doc, part);
+            }
+            : async (doc, comment) => {
+                await flushDraftBeforeSignIn(doc);
+                return submitTabCorrection(doc, part, comment, submitTab);
+            },
         onSubmitted: (result, doc) => {
             // Submitted: the draft has served its purpose.
             autosave.clear().catch(() => {});
@@ -2856,6 +2992,23 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
 
     activeEditBand = bindBandToEditor(controls, activeEditSession.editor, {
         actions: barHost,
+    });
+
+    // The sign-in redirect comes back to this take, on this draft (auth-return.js).
+    // Only while THIS session is the live one: a torn-down editor must not be
+    // what a later sign-in returns to.
+    const session = activeEditSession;
+    const returnWorkId = currentWork?.provisional ? null : (currentWork?.id || null);
+    const returnTakeRef = isNewTake ? null : takeEditRef(part);
+    unregisterTabReturn?.();
+    unregisterTabReturn = registerReturnSource(() => {
+        if (activeEditSession !== session) return null;
+        return {
+            kind: 'tab',
+            hash: autosave.draftId
+                ? draftOpenHash({ id: autosave.draftId, workId: returnWorkId, takeRef: returnTakeRef })
+                : window.location.hash,
+        };
     });
 
     // The editor is a URL, so a reload (or a link to a reviewer) comes back
@@ -3329,7 +3482,7 @@ function createTablatureControls(otf, part) {
     // Phone: everything but Play/Stop/tempo/loop moves into a ⚙ sheet. The
     // nodes stay descendants of `controls`, so the querySelector wiring in
     // setupTablaturePlayer (which runs after this) is unaffected.
-    attachTabControlsSheet(controls);
+    tabRenderKit.attachTabControlsSheet(controls);
 
     return controls;
 }
@@ -3338,8 +3491,11 @@ function createTablatureControls(otf, part) {
  * Set up tablature player with controls
  */
 function setupTablaturePlayer(otf, controls, renderer) {
+    const {
+        attachTabPlaybackInteractions, playbackTickForPoint, playbackRangeForMeasures,
+    } = tabRenderKit;
     if (!tablaturePlayer) {
-        setTablaturePlayer(new TabPlayer());
+        setTablaturePlayer(new tabRenderKit.TabPlayer());
     }
 
     const player = tablaturePlayer;

@@ -27,12 +27,14 @@ import {
     abcIsPlaying, setAbcIsPlaying,
     abcPlaybackSession, incrementAbcPlaybackSession,
     // Navigation state
-    listContext, setListContext
+    listContext, setListContext,
+    allSongs
 } from './state.js';
-import { escapeHtml, safeUrl } from './utils.js';
+import { escapeHtml, safeUrl, parseItemRef } from './utils.js';
+import { prefetchSongContent } from './song-content.js';
 import {
     extractChords, detectKey,
-    CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS
+    CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS, normalizeKeyForMode
 } from './chords.js';
 import { parseChordPro, renderSectionsHtml } from './renderers/chordpro.js';
 import { getSongMetadata, updateSongMetadata } from './lists.js';
@@ -63,31 +65,75 @@ export { parseChordPro };
 /**
  * Detect wrapped chord-lyrics lines and add a visual indicator.
  * A line is "wrapped" if its rendered height exceeds a single chord+lyrics pair.
+ * Exported for tests.
  */
-function markWrappedLines() {
+export function markWrappedLines() {
     const lines = document.querySelectorAll('.cl-line');
+    // Every layout READ first, then every class WRITE. Toggling a class
+    // between two measurements invalidates layout, so the old read-write-
+    // read-write loop forced a full reflow per line (hundreds per chart).
+    const wrapped = [];
     for (const line of lines) {
         // A single unwrapped line has one chord row + one lyrics row.
         // If the element is taller, it wrapped.
         const firstSeg = line.querySelector('.cl-segment');
         if (!firstSeg) continue;
         const singleLineHeight = firstSeg.offsetHeight;
-        line.classList.toggle('wrapped', line.scrollHeight > singleLineHeight + 2);
+        wrapped.push([line, line.scrollHeight > singleLineHeight + 2]);
+    }
+    for (const [line, isWrapped] of wrapped) {
+        line.classList.toggle('wrapped', isWrapped);
     }
 }
 
+const ABCJS_URL = 'https://cdn.jsdelivr.net/npm/abcjs@6/dist/abcjs-basic-min.js';
+let abcjsPromise = null;
+
 /**
- * Render ABC notation using ABCJS library
+ * Load abcjs on demand (only ~160 songs use ABC notation, and the library is
+ * ~500 KB). One cached promise: concurrent and repeat callers share a single
+ * script tag. A failed load clears the cache so the next call can retry.
+ * Resolves to the ABCJS global, or null if it could not be loaded.
  */
-function renderAbcNotation(abcContent, containerId) {
-    const container = document.getElementById(containerId);
-    if (!container) {
+export function loadAbcjs() {
+    if (typeof ABCJS !== 'undefined') return Promise.resolve(ABCJS);
+    if (abcjsPromise) return abcjsPromise;
+    abcjsPromise = new Promise((resolve) => {
+        const script = document.createElement('script');
+        script.src = ABCJS_URL;
+        script.async = true;
+        script.onload = () => {
+            if (typeof ABCJS === 'undefined') abcjsPromise = null;
+            resolve(typeof ABCJS === 'undefined' ? null : ABCJS);
+        };
+        script.onerror = () => {
+            abcjsPromise = null;
+            script.remove();
+            resolve(null);
+        };
+        document.head.appendChild(script);
+    });
+    return abcjsPromise;
+}
+
+/**
+ * Render ABC notation using ABCJS library (loaded on demand).
+ * Returns a promise so callers can run follow-up setup once it has rendered.
+ */
+async function renderAbcNotation(abcContent, containerId) {
+    if (!document.getElementById(containerId)) {
         console.warn('ABC container not found:', containerId);
         return;
     }
 
     // Store content for re-rendering when settings change
     setCurrentAbcContent(abcContent);
+
+    await loadAbcjs();
+
+    // The view may have changed while the library was loading
+    const container = document.getElementById(containerId);
+    if (!container) return;
 
     // Check if ABCJS is loaded
     if (typeof ABCJS === 'undefined') {
@@ -306,12 +352,10 @@ export function initKeyState(song, chordpro, isInitialRender = false) {
         if (listContext && listContext.listId && song?.id) {
             const songMetadata = getSongMetadata(listContext.listId, song.id);
             if (songMetadata?.key) {
-                // Map metadata key format ("C#/Db") to CHROMATIC_MAJOR_KEYS format
-                const keyMap = {
-                    'C#/Db': 'C#', 'D#/Eb': 'Eb', 'F#/Gb': 'F#',
-                    'G#/Ab': 'Ab', 'A#/Bb': 'Bb'
-                };
-                setCurrentDetectedKey(keyMap[songMetadata.key] || songMetadata.key);
+                // Stored spellings vary ("D#", "D#/Eb", "A"); map to the key
+                // list for this song's mode (minor songs get "Am" etc.)
+                const overrideKey = normalizeKeyForMode(songMetadata.key, detectedMode);
+                if (overrideKey) setCurrentDetectedKey(overrideKey);
             }
         }
     }
@@ -333,6 +377,10 @@ export function renderLeadSheetContent(container, song, chordpro, isInitialRende
 
     const { metadata, sections } = parseChordPro(chordpro);
     initKeyState(song, chordpro, isInitialRender);
+    // What this draw used, so work-view's key subscriber can tell a real
+    // transpose (key differs from the drawn one) from a late echo of the
+    // write this very render just made.
+    container.dataset.renderedKey = String(currentDetectedKey ?? '');
 
     // Separate ABC sections from chord sections
     const abcSections = sections.filter(s => s.type === 'abc');
@@ -449,8 +497,7 @@ export function renderLeadSheetContent(container, song, chordpro, isInitialRende
     if (showAbcView) {
         setBottomBand(buildAbcBandControls());
         setTimeout(() => {
-            renderAbcNotation(abcContent, 'abc-notation');
-            setupAbcPlayback();
+            renderAbcNotation(abcContent, 'abc-notation').then(setupAbcPlayback);
         }, 0);
     } else {
         stopAbcPlayback();
@@ -497,8 +544,7 @@ function buildAbcBandControls() {
     const sizeIncrease = el.querySelector('#abc-size-increase');
     const rerenderAbc = () => {
         if (currentAbcContent) {
-            renderAbcNotation(currentAbcContent, 'abc-notation');
-            setupAbcPlayback();
+            renderAbcNotation(currentAbcContent, 'abc-notation').then(setupAbcPlayback);
         }
     };
     const updateSizeButtons = () => {
@@ -608,6 +654,10 @@ export function updateNavBar() {
         // List context: the nav bar is the prev/next surface
         navBarEl.classList.remove('hidden');
         navBarEl.classList.add('has-list-context');
+
+        // The next song is the likeliest next tap: have its chart in memory
+        // by the time the reader gets there.
+        prefetchNextInList(listContext);
     } else {
         // No list context: no nav bar
         navBarEl.classList.remove('has-list-context');
@@ -619,6 +669,19 @@ export function updateNavBar() {
 
     // Keep the body-level list-context flag in sync
     updateListContextClass();
+}
+
+/**
+ * Warm the ChordPro of the song after the current one in a list. A
+ * part-qualified item ("work/banjo") may open a tab instead of the lead
+ * sheet, so it is left alone. Exported for tests.
+ */
+export function prefetchNextInList(context) {
+    const next = context?.songIds?.[context.currentIndex + 1];
+    if (!next) return;
+    const { workId, partId } = parseItemRef(next);
+    if (partId) return;
+    prefetchSongContent(allSongs.find(s => s.id === workId));
 }
 
 /**

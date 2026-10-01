@@ -11,13 +11,14 @@ import {
     FAVORITES_LIST_ID,
     clearSelectedSongs,
     setCurrentView,
-    subscribe, currentView,
+    subscribe, currentView, corpusLoadFailed,
     focusedListId, setFocusedListId
 } from './state.js';
 import { escapeHtml, generateLocalId, parseItemRef } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
 import { showRandomSongs, hideBatchOperationsBar } from './search-core.js';
 import { trackListAction } from './analytics.js';
+import { normalizeKeyForMode } from './chords.js';
 
 // Re-export FAVORITES_LIST_ID for backwards compatibility
 export { FAVORITES_LIST_ID };
@@ -886,16 +887,105 @@ export function loadLists() {
     }
 }
 
+// ============================================
+// LEGACY-ID MAP: WHEN IS IT WORTH DOWNLOADING?
+// ============================================
+//
+// data/legacy_id_mapping.json (~1 MB, 304 KB gzipped) translates the
+// pre-works song ids a very old list may still hold ('manofconstantsorrowlyrics
+// andchords') into today's slugs. Almost nobody has such a list, yet it used
+// to be downloaded by every first visit, and again by every signed-in session.
+//
+// A list needs it only if it holds an id that is not a work slug we know.
+// "Known" is the loaded corpus; ids a previous check already settled (not in
+// the map, so not legacy) are remembered so an archived or deleted song in a
+// list does not cost a download every session.
+//
+// (Lives here rather than in its own module on purpose: a new file under
+// lists.js would be one more level in the boot-time module waterfall.)
+
+const CHECKED_KEY = 'songbook-legacy-checked';
+const CHECKED_CAP = 5000;
+
+/** Every work id held by these lists (part-qualified refs reduced to their work). */
+export function listItemIds(lists) {
+    const ids = new Set();
+    for (const list of lists || []) {
+        for (const ref of list?.songs || []) {
+            if (typeof ref === 'string' && ref) ids.add(parseItemRef(ref).workId);
+        }
+    }
+    return ids;
+}
+
+/** Ids a previous run already found are not legacy. Never throws. */
+export function readCheckedIds(storage = globalThis.localStorage) {
+    try {
+        const parsed = JSON.parse(storage?.getItem(CHECKED_KEY) || '[]');
+        return new Set(Array.isArray(parsed) ? parsed : []);
+    } catch {
+        return new Set();
+    }
+}
+
+/** Remember ids that turned out not to be legacy. Never throws. */
+export function writeCheckedIds(ids, storage = globalThis.localStorage) {
+    try {
+        storage?.setItem(CHECKED_KEY, JSON.stringify([...ids].slice(-CHECKED_CAP)));
+    } catch {
+        // Storage full or blocked: the next session re-checks, nothing breaks.
+    }
+}
+
+/**
+ * Does any list hold an id that is neither a known work slug nor already
+ * checked? Only then is the map worth downloading.
+ *
+ * @param {Array} lists
+ * @param {Set<string>} knownIds  ids of the loaded corpus
+ * @param {Set<string>} [checkedIds]
+ */
+export function needsLegacyMapping(lists, knownIds, checkedIds = new Set()) {
+    for (const id of listItemIds(lists)) {
+        if (!knownIds.has(id) && !checkedIds.has(id)) return true;
+    }
+    return false;
+}
+
+/**
+ * After the map has been consulted: every unknown id it does not translate is
+ * settled. Returns the updated checked set (also persisted).
+ */
+export function recordLegacyChecked(lists, knownIds, mapping, checkedIds = readCheckedIds()) {
+    const next = new Set(checkedIds);
+    for (const id of listItemIds(lists)) {
+        if (!knownIds.has(id) && !(id in mapping)) next.add(id);
+    }
+    writeCheckedIds(next);
+    return next;
+}
+
 /**
  * Clean up legacy song IDs in lists (one-time migration)
  * Converts old IDs like 'manofconstantsorrowlyricsandchords' to 'man-of-constant-sorrow'
  */
-async function cleanupLegacySongIds() {
+export async function cleanupLegacySongIds() {
     // Check if cleanup already done (version 2 - uses mapping file properly)
     const cleanupDone = localStorage.getItem('songbook-legacy-cleanup-v2');
     if (cleanupDone) return;
 
     try {
+        // The mapping is a ~300 KB download that only a list holding an old
+        // id needs: nothing stored, nothing to do; every id a known work
+        // slug, nothing to do either.
+        if (!listItemIds(userLists).size) return;
+        if (!await whenCorpusLoaded()) return;
+        const known = knownWorkIds();
+        if (!needsLegacyMapping(userLists, known, readCheckedIds())) {
+            localStorage.setItem('songbook-legacy-cleanup-v2', '1');
+            return;
+        }
+
         // Load the legacy ID mapping
         const response = await fetch('data/legacy_id_mapping.json');
         if (!response.ok) {
@@ -903,6 +993,8 @@ async function cleanupLegacySongIds() {
             return;
         }
         const mapping = await response.json();
+        legacyIdMappingCache = mapping;
+        recordLegacyChecked(userLists, known, mapping);
 
         let changed = false;
 
@@ -950,17 +1042,65 @@ async function cleanupLegacySongIds() {
 // Cache the legacy ID mapping to avoid repeated fetches
 let legacyIdMappingCache = null;
 
+/** Ids of the loaded corpus (canon, plus the archive once it has loaded). */
+function knownWorkIds() {
+    return new Set(allSongs.map(s => s.id));
+}
+
+/**
+ * Load the archive if some of these list items are not in the corpus — they
+ * may be archived rows, which the app only fetches on demand. Resolves once
+ * the archive is in (immediately when nothing is missing or it already is).
+ * Until the corpus itself has loaded nothing counts as missing.
+ */
+export function ensureArchiveForRefs(refs) {
+    if (window.isArchiveLoaded?.() !== false || !allSongs.length || !refs?.length) {
+        return Promise.resolve();
+    }
+    const known = knownWorkIds();
+    if (!refs.some(ref => !known.has(parseItemRef(ref).workId))) return Promise.resolve();
+    return window.ensureArchiveLoaded?.() || Promise.resolve();
+}
+
+/**
+ * Resolves true once the corpus has rows, i.e. once "known slug" means
+ * something; false if the corpus failed to load or is still not there after
+ * `timeoutMs` — callers then leave the lists alone rather than wait forever
+ * (this sits on the cloud-sync path).
+ */
+function whenCorpusLoaded(timeoutMs = 15000) {
+    if (allSongs.length) return Promise.resolve(true);
+    return new Promise(resolve => {
+        let offSongs = () => {};
+        let offFailed = () => {};
+        let timer = null;
+        const done = (ok) => {
+            offSongs(); offFailed(); clearTimeout(timer);
+            resolve(ok);
+        };
+        offSongs = subscribe('allSongs', () => { if (allSongs.length) done(true); });
+        offFailed = subscribe('corpusLoadFailed', () => { if (corpusLoadFailed) done(false); });
+        timer = setTimeout(() => done(false), timeoutMs);
+    });
+}
+
 /**
  * Clean legacy song IDs from a list of lists (used after sync merge)
  * Returns the cleaned lists array
  */
-async function cleanLegacyIdsFromLists(lists) {
+export async function cleanLegacyIdsFromLists(lists) {
     try {
-        // Load mapping if not cached
+        // Load mapping if not cached — and only if some list holds an id the
+        // corpus doesn't know; most sessions never do.
         if (!legacyIdMappingCache) {
+            if (!listItemIds(lists).size) return lists;
+            if (!await whenCorpusLoaded()) return lists;
+            const known = knownWorkIds();
+            if (!needsLegacyMapping(lists, known, readCheckedIds())) return lists;
             const response = await fetch('data/legacy_id_mapping.json');
             if (!response.ok) return lists;
             legacyIdMappingCache = await response.json();
+            recordLegacyChecked(lists, known, legacyIdMappingCache);
         }
         const mapping = legacyIdMappingCache;
 
@@ -1623,7 +1763,7 @@ export function openNotesSheet(listId, songId, songTitle) {
     const tempoInput = document.getElementById('notes-tempo');
     const notesTextarea = document.getElementById('notes-text');
 
-    if (keySelect) keySelect.value = metadata.key || '';
+    if (keySelect) keySelect.value = normalizeKeyForMode(metadata.key, 'major') || '';
     if (tempoInput) tempoInput.value = metadata.tempo || '';
     if (notesTextarea) notesTextarea.value = metadata.notes || '';
 
@@ -1873,7 +2013,11 @@ export async function performFullListsSync() {
         let processedLists = processCloudLists(merged);
 
         // Step 3.5: Clean legacy song IDs from merged data
-        processedLists = await cleanLegacyIdsFromLists(processedLists);
+        // Deciding whether an id is legacy needs the corpus. When it is not
+        // loaded yet, do not hold the cloud lists (or widen the window in which
+        // a local edit can be overwritten) for up to 15 s: clean afterwards.
+        const cleanAfterSync = !legacyIdMappingCache && !allSongs.length;
+        if (!cleanAfterSync) processedLists = await cleanLegacyIdsFromLists(processedLists);
 
         // Step 4: Re-filter for any lists deleted DURING the sync (race condition fix)
         if (deletedListIds.size > 0 || deletedListNames.size > 0) {
@@ -1900,6 +2044,19 @@ export async function performFullListsSync() {
         // Update local lists with processed data
         setUserLists(processedLists);
         saveLists();
+
+        if (cleanAfterSync) {
+            const snapshot = () => JSON.stringify(userLists.map(l => l.songs));
+            const before = snapshot();
+            // Mutates the live lists in place, synchronously after its awaits,
+            // so it sees any edit made in the meantime.
+            cleanLegacyIdsFromLists(userLists).then(() => {
+                if (snapshot() !== before) {
+                    setUserLists([...userLists]);
+                    saveLists();
+                }
+            });
+        }
 
         // Also load followed lists
         await loadFollowedLists();
@@ -2101,7 +2258,8 @@ export async function showListView(listId) {
     const followedList = followedLists.find(l => l.id === listId);
     if (followedList) {
         setViewingListId(followedList.id);
-        renderListViewUI(followedList.name, followedList.songs || [], { isOwner: false, isFollower: true, isOrphaned: false, canClaim: false });
+        // A follower may claim a list whose owners have all left (server enforces the 30 days)
+        renderListViewUI(followedList.name, followedList.songs || [], { isOwner: false, isFollower: true, isOrphaned: !!followedList.isOrphaned, canClaim: !!followedList.isOrphaned });
         setCurrentView('list');
         if (pushHistoryStateFn) pushHistoryStateFn('list', { listId: followedList.id });
         return;
@@ -2122,10 +2280,10 @@ export async function showListView(listId) {
     // Show the public list
     setViewingListId(listId);
     setViewingPublicList(data);
-    renderListViewUI(data.list.name, data.list.songs || [], {
+    renderListViewUI(data.list.name, data.songs || [], {
         isOwner: data.isOwner || false,
         isFollower: data.isFollower || false,
-        isOrphaned: data.list.is_orphaned || false,
+        isOrphaned: data.isOrphaned || false,
         canClaim: data.canClaim || false
     });
     setCurrentView('list');
@@ -2158,6 +2316,9 @@ function showListNotFound() {
     if (printListBtnEl) printListBtnEl.classList.add('hidden');
 }
 
+// The list view drawn while the corpus was still empty, if that is the last draw.
+let drawnWithoutCorpus = null;
+
 /**
  * Render the list view UI (shared by local and public lists)
  * @param {string} listName - Display name of the list
@@ -2174,6 +2335,12 @@ function renderListViewUI(listName, songIds, status) {
         ? { isOwner: status, isFollower: false, isOrphaned: false, canClaim: false }
         : status;
 
+    // Remember a draw made before the corpus existed, so the corpus landing
+    // can draw it again (see the allSongs subscriber).
+    drawnWithoutCorpus = allSongs.length === 0
+        ? { listId: viewingListId, listName, songIds, status }
+        : null;
+
     // Show the list songs (preserve order from the list)
     // Handle part-qualified refs by extracting workId for lookup
     const listSongs = songIds
@@ -2185,6 +2352,26 @@ function renderListViewUI(listName, songIds, status) {
             return partId ? { ...song, _itemRef: ref, _partId: partId } : song;
         })
         .filter(Boolean);
+
+    // A song that only the archive holds is missing from `listSongs` until the
+    // archive loads (it is fetched on demand, not at boot). Load it now and
+    // draw the list again with those songs in — never silently drop them.
+    // Only when the corpus is there and the archive can actually land: with an
+    // empty corpus (still loading, or the index failed) ensureArchiveForRefs
+    // resolves at once, and redrawing then would loop forever.
+    if (listSongs.length < songIds.length && allSongs.length > 0
+        && window.isArchiveLoaded?.() === false) {
+        const drawnFor = viewingListId;
+        ensureArchiveForRefs(songIds).then(() => {
+            // currentView is read here, not at draw time: showListView draws
+            // before it sets the view. A user who opened a song while the
+            // archive downloaded must not be thrown back to the list.
+            if ((currentView === 'list' || currentView === 'favorites')
+                && viewingListId === drawnFor && window.isArchiveLoaded?.() !== false) {
+                renderListViewUI(listName, songIds, status);
+            }
+        });
+    }
 
     // Set list context for navigation
     setListContext({
@@ -2400,13 +2587,10 @@ export async function fetchListData(listId) {
         return null;
     }
 
-    const currentUser = SupabaseAuth.getUser();
-    const isOwner = currentUser && data.list.user_id === currentUser.id;
-
     return {
         name: data.list.name,
         songs: data.songs,
-        isOwner
+        isOwner: data.isOwner
     };
 }
 
@@ -2624,6 +2808,12 @@ subscribe('allSongs', () => {
     if (currentView === 'song-lists') {
         renderManageListsView();
     }
+    // A list opened while the corpus was loading was drawn with no songs in it
+    const pending = drawnWithoutCorpus;
+    if (pending && allSongs.length && currentView === 'list' && viewingListId === pending.listId) {
+        drawnWithoutCorpus = null;
+        renderListViewUI(pending.listName, pending.songIds, pending.status);
+    }
 });
 
 /**
@@ -2631,6 +2821,9 @@ subscribe('allSongs', () => {
  */
 function getListPreview(list, maxChars = 50) {
     if (!list.songs || list.songs.length === 0) return '';
+    // An archived song is 'Unknown' until the archive is in; the allSongs
+    // subscriber below redraws the Song Lists view when it lands.
+    ensureArchiveForRefs(list.songs.slice(0, 3));
     const titles = list.songs.slice(0, 3).map(ref => {
         const { workId } = parseItemRef(ref);
         const song = allSongs.find(s => s.id === workId);
@@ -3384,6 +3577,12 @@ function isLocalListId(listId) {
  */
 function openLocalShareModal(listId) {
     localShareListId = listId;
+
+    // "Copy Song List" is synchronous (the clipboard write needs the click's
+    // user gesture), so warm the archive now for any archived titles in it.
+    const sharedList = (listId === 'favorites' || listId === FAVORITES_LIST_ID)
+        ? getFavoritesList() : userLists.find(l => l.id === listId);
+    ensureArchiveForRefs(sharedList?.songs);
 
     const modal = document.getElementById('share-modal');
     const backdrop = document.getElementById('share-modal-backdrop');

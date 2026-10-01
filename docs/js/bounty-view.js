@@ -326,6 +326,13 @@ export function renderBountyView(container) {
     // Lazy-load the wanted list, then re-render once it lands
     if (!wantedFetchStarted) {
         wantedFetchStarted = true;
+        // Bounties and the wanted-list re-check look at every title, archived
+        // ones included, and the archive is only fetched on demand.
+        if (window.isArchiveLoaded?.() === false) {
+            window.ensureArchiveLoaded().then(() => {
+                if (container.isConnected) renderBountyView(container);
+            });
+        }
         Promise.all([
             fetch('data/wanted_songs.json', { cache: 'no-cache' })
                 .then(r => r.json()).then(d => d.songs || []),

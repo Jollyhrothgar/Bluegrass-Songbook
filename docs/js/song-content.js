@@ -21,6 +21,50 @@ const inFlight = new Map();
 const urlCache = new Map();
 const urlInFlight = new Map();
 
+// PENDING rows are fetched by the boot overlay WITHOUT their text (a chart is
+// up to 200 KB and a tab 2 MB, and every visitor would pay for every pending
+// row). The text is read from pending_songs when its song is opened:
+// `song.deferred_content`, an arrangement's / tab take's `pending_id`.
+// `fetcher` is installed by main.js (this module must not know about
+// Supabase); it resolves the row's text, or null once the row is gone.
+/** pending row id -> its text */
+const pendingCache = new Map();
+const pendingInFlight = new Map();
+let pendingFetcher = null;
+
+/** Install the function that reads one pending row's text (id -> string|null). */
+export function setPendingContentFetcher(fetcher) {
+    pendingFetcher = fetcher;
+}
+
+/**
+ * The text of one pending_songs row, cached and deduped. Resolves null when
+ * the row no longer exists (committed and cleaned up since the overlay was
+ * fetched) so the caller can fall back to the published file; rejects when
+ * the read fails, and a failure is not cached.
+ */
+export function getPendingContent(id) {
+    if (!id) return Promise.resolve(null);
+    if (pendingCache.has(id)) return Promise.resolve(pendingCache.get(id));
+    if (pendingInFlight.has(id)) return pendingInFlight.get(id);
+    if (!pendingFetcher) {
+        return Promise.reject(new Error('Could not load this submission right now'));
+    }
+
+    const promise = Promise.resolve(pendingFetcher(id))
+        .then(text => {
+            pendingInFlight.delete(id);
+            if (typeof text === 'string') pendingCache.set(id, text);
+            return typeof text === 'string' ? text : null;
+        })
+        .catch(error => {
+            pendingInFlight.delete(id);
+            throw error;
+        });
+    pendingInFlight.set(id, promise);
+    return promise;
+}
+
 /** Where a work's ChordPro lives. */
 export function songContentUrl(id) {
     return `data/songs/${encodeURIComponent(id)}.pro`;
@@ -63,6 +107,9 @@ export function songHasAbc(song) {
 export function peekSongContent(song) {
     if (!song) return null;
     if (hasInlineContent(song)) return song.content;
+    // A deferred pending row: its text is the pending text, never a published
+    // fetch of the same id (the overlay can land after the page did).
+    if (song.deferred_content) return pendingCache.has(song.id) ? pendingCache.get(song.id) : null;
     if (song.id && contentCache.has(song.id)) return contentCache.get(song.id);
     return null;
 }
@@ -80,6 +127,12 @@ export function getSongContent(song) {
 
     const id = song.id;
     if (!id) return Promise.resolve('');
+    if (song.deferred_content) {
+        // The published file is the fallback for a row that was committed and
+        // cleaned up between the overlay fetch and this click.
+        return getPendingContent(id).then(
+            text => (text !== null ? text : getSongContent({ id, has_content: true })));
+    }
     if (contentCache.has(id)) return Promise.resolve(contentCache.get(id));
     if (inFlight.has(id)) return inFlight.get(id);
     if (song.has_content !== true) return Promise.resolve('');
@@ -103,6 +156,29 @@ export function getSongContent(song) {
 
     inFlight.set(id, promise);
     return promise;
+}
+
+/**
+ * Warm a work's ChordPro before anyone has asked for it: the page that
+ * opens next is one the reader is already pointing at (pointerdown/hover on
+ * a result) or about to step to (the next song in a list). Goes through
+ * getSongContent, so it shares that function's cache and in-flight dedupe —
+ * the real open after a prefetch finds the text in memory and renders
+ * synchronously, or joins the request already in the air.
+ *
+ * Best-effort and silent: a failed prefetch is forgotten (getSongContent does
+ * not cache failures), so the real open simply fetches again and surfaces
+ * the error itself. Skipped on Save-Data connections, for rows that carry
+ * their own text, and for works with no lead sheet.
+ *
+ * @returns {Promise<void>|null} the in-flight warm-up, or null when nothing
+ *          needed fetching (resolves only for tests; callers ignore it)
+ */
+export function prefetchSongContent(song) {
+    if (!song?.id || hasInlineContent(song) || song.has_content !== true) return null;
+    if (contentCache.has(song.id) || inFlight.has(song.id)) return null;
+    if (globalThis.navigator?.connection?.saveData) return null;
+    return getSongContent(song).then(() => {}, () => {});
 }
 
 /** Fetch a .pro by URL, cached and deduped like getSongContent. */
@@ -146,9 +222,13 @@ export function getArrangementContent(song, arrangement) {
     if (typeof arrangement.content === 'string') {
         return Promise.resolve(arrangement.content);
     }
+    if (arrangement.pending && arrangement.pending_id && !arrangement.file) {
+        return getPendingContent(arrangement.pending_id).then(
+            text => (text !== null ? text : getSongContent(song)));
+    }
     if (!arrangement.file) return getSongContent(song);
     return fetchByUrl(arrangement.file).then(text => {
-        if (arrangement.default && song?.id && !hasInlineContent(song)) {
+        if (arrangement.default && song?.id && !hasInlineContent(song) && !song.deferred_content) {
             contentCache.set(song.id, text);
         }
         return text;
@@ -159,6 +239,10 @@ export function getArrangementContent(song, arrangement) {
 export function peekArrangementContent(song, arrangement) {
     if (!arrangement) return peekSongContent(song);
     if (typeof arrangement.content === 'string') return arrangement.content;
+    if (arrangement.pending && arrangement.pending_id && !arrangement.file) {
+        return pendingCache.has(arrangement.pending_id)
+            ? pendingCache.get(arrangement.pending_id) : null;
+    }
     // Mirrors getArrangementContent's order exactly: an entry with a file is
     // answered by that file and nothing else. Falling back to the row's own
     // `content` here would hand back a PENDING fork's text when the reader
@@ -187,6 +271,7 @@ export function getSongContents(songs) {
 export function primeSongContent(id, content) {
     if (!id || typeof content !== 'string') return;
     contentCache.set(id, content);
+    pendingCache.set(id, content);
     // Same text, either door: the primary arrangement addresses this work by
     // file, so a primed edit must be visible there too.
     urlCache.set(songContentUrl(id), content);
@@ -199,10 +284,14 @@ export function clearSongContentCache(id = null) {
         inFlight.clear();
         urlCache.clear();
         urlInFlight.clear();
+        pendingCache.clear();
+        pendingInFlight.clear();
         return;
     }
     contentCache.delete(id);
     inFlight.delete(id);
+    pendingCache.delete(id);
+    pendingInFlight.delete(id);
     urlCache.delete(songContentUrl(id));
     urlInFlight.delete(songContentUrl(id));
 }

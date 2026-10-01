@@ -27,7 +27,7 @@ import {
     fontSizeLevel,
     printFontPxForLevel,
     PRINT_BASE_FONT_PX, PRINT_FONT_PX_MIN, PRINT_FONT_PX_MAX,
-    setListContext,
+    setListContext, listContext,
     setWorkRedirects, resolveWorkId,
     setBountyIndex,
     setCorpusLoadFailed,
@@ -42,7 +42,8 @@ import {
     showListView, fetchListData, renderManageListsView, showSongListsView, startCreateListInView,
     // Favorites functions (favorites is now just a list)
     showFavorites, getFavoritesList, isFavorite, toggleFavorite,
-    updateSyncUI, reorderFavoriteItem, handleListsSignOut
+    updateSyncUI, reorderFavoriteItem, handleListsSignOut,
+    ensureArchiveForRefs
 } from './lists.js';
 import { initSongView, goBack, getCurrentSong, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';
 import {
@@ -50,34 +51,161 @@ import {
     handleEditAction, openNewTabPage,
 } from './work-view.js';
 import { parseTabRoute, partInstrumentFor } from './otf-editor/create-tab-entry.js';
-import { renderBountyView } from './bounty-view.js';
-import { renderMySubmissionsView } from './my-submissions.js';
-import { renderHighScoresView } from './high-scores.js';
 import { initSearch, search, showPopularSongs, renderResults, parseSearchQuery, searchableSongs } from './search-core.js';
-import { initEditor, updateEditorPreview, enterEditMode, exitEditMode, editorGenerateChordPro, closeHints, prepareAddSongView } from './editor.js';
 import { escapeHtml, escapeAttr, requireLogin, parseItemRef, buildDeleteCandidates, downloadFile } from './utils.js';
 import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
 import { initShell, setTopBar, setBottomBand, setOverflowBase, setChromeAutoHide, pill, setBanner } from './shell.js';
-import { buildListChordPro, buildListText, buildListZipFiles, listFileBase } from './list-export.js';
-import { createZip } from './zip.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink } from './analytics.js';
 import { initFlags, openFeedbackModal } from './flags.js';
 import { initSuperUserRequest } from './superuser-request.js';
-import { COLLECTIONS, COLLECTION_PINS } from './collections.js';
+import { COLLECTIONS, COLLECTION_PINS, collectionThumbnailHtml } from './collections.js';
 import { initAddSongPicker, openAddSongPicker } from './add-song-picker.js';
 import {
-    fetchJsonl, mergeCorpus, markArchived, countDistinctTitles, whenIdle,
-    transformPendingRow,
+    fetchJsonl, mergeCorpus, markArchived, countDistinctTitles,
+    transformPendingRow, overlaysNeedArchive, PENDING_OVERLAY_COLUMNS,
+    readCachedIdSet, writeCachedIdSet,
 } from './corpus.js';
-import { getSongContents } from './song-content.js';
+import { getSongContents, setPendingContentFetcher } from './song-content.js';
 import { showToast } from './toast.js';
+import { AUTH_REDIRECT, persistReturnRecord, takeReturnRecord, pruneReturnRecord } from './auth-return.js';
 import { initPWA, canInstall, promptInstall } from './pwa.js';
-import { renderDraftsView } from './drafts-view.js';
 import { getDraftStore, migrateLegacyDraft, parseHashParams } from './drafts.js';
-import {
-    configureReviewQueue, showReviewQueue, hideReviewQueue, submitReviewRequest,
-    showSuppressRequestDialog, showMergeRequestDialog, buildMergeRedirectPayload,
-} from './review-queue.js';
+
+// ============================================
+// LAZY MODULES
+// ============================================
+//
+// Route- or action-specific code is fetched with import() the first time it
+// is needed instead of riding along in the boot graph (B7a). The wrappers
+// below keep the names the rest of this file always used, so call sites read
+// as before. Nothing here has module-level side effects to preserve: the
+// modules only export functions, and the wiring that used to run at boot
+// (initEditor, configureReviewQueue) runs once, right after the first load.
+
+/** A failed download (offline, deploy in flight) must say so, not vanish. */
+function lazyLoadFailed(what, err) {
+    console.error(`Could not load ${what}:`, err);
+    showToast(`Couldn't load ${what}. Check your connection and try again.`,
+        { variant: 'warning', duration: 6000 });
+}
+
+// --- Song editor (editor.js and what only it uses: smart-paste, dedup-check, visual-editor/)
+
+let editorModule = null;
+let editorLoading = null;
+
+function loadEditor() {
+    editorLoading ||= import('./editor.js').then((mod) => {
+        mod.initEditor(editorInitOptions());
+        editorModule = mod;
+        return mod;
+    }).catch((err) => {
+        editorLoading = null; // let the next attempt retry
+        throw err;
+    });
+    return editorLoading;
+}
+
+/** Edit a song. Resolves once the editor is open (or the load failed). */
+async function enterEditMode(song, options) {
+    try {
+        const mod = await loadEditor();
+        return await mod.enterEditMode(song, options);
+    } catch (err) {
+        lazyLoadFailed('the editor', err);
+    }
+}
+
+// Until the editor has loaded there is nothing to reset, close or exit:
+// every one of these only undoes state enterEditMode/initEditor created.
+function exitEditMode() { editorModule?.exitEditMode(); }
+function closeHints() { editorModule?.closeHints(); }
+function prepareAddSongView() { editorModule?.prepareAddSongView(); }
+
+// The leave-without-submitting guard and ownership chrome (A7, A11) only
+// concern an editor that has been opened, i.e. loaded.
+function editorHasUnsavedChanges() { return editorModule?.editorHasUnsavedChanges() ?? false; }
+function editorSessionInfo() { return editorModule?.editorSessionInfo() ?? { isEdit: false, songId: null }; }
+function promptUnsavedChanges() { return editorModule ? editorModule.promptUnsavedChanges() : Promise.resolve('cancelled'); }
+function closeUnsavedPrompt() { editorModule?.closeUnsavedPrompt(); }
+function unsavedPromptOpen() { return editorModule?.unsavedPromptOpen() ?? false; }
+function refreshEditorOwnership() { return editorModule?.refreshEditorOwnership(); }
+
+// --- Review queue (Dungeon-only; review-queue.js)
+
+let reviewQueueModule = null;
+let reviewQueueLoading = null;
+
+function loadReviewQueue() {
+    reviewQueueLoading ||= import('./review-queue.js').then((mod) => {
+        mod.configureReviewQueue({
+            isAdmin: () => isAdminUser,
+            isTrusted: () => isTrustedFlag,
+            // An approved delete has already landed in deleted_songs; mirror it
+            // client-side so the corpus stops serving the song immediately.
+            onDeleteExecuted: (id) => {
+                deletedIds.add(id);
+                persistCuration();
+                rebuildCorpus();
+            },
+        });
+        reviewQueueModule = mod;
+        return mod;
+    }).catch((err) => {
+        reviewQueueLoading = null;
+        throw err;
+    });
+    return reviewQueueLoading;
+}
+
+function hideReviewQueue() { reviewQueueModule?.hideReviewQueue(); }
+
+/** The review-queue module for a request handler; null (after a toast) if it cannot load. */
+async function requireReviewQueue() {
+    try {
+        return await loadReviewQueue();
+    } catch (err) {
+        lazyLoadFailed('the review queue', err);
+        return null;
+    }
+}
+
+/**
+ * Show the Dungeon's review queue. Viewers who are neither trusted nor admin
+ * never see it, so they never download it either (the module would only hide
+ * its panel for them — canSeeQueue in review-queue.js).
+ */
+async function showReviewQueue() {
+    if (!isAdminUser && !isTrustedFlag) {
+        hideReviewQueue();
+        return;
+    }
+    const rq = await requireReviewQueue();
+    await rq?.showReviewQueue();
+}
+
+// --- Whole-page views rendered into the results panel
+
+/**
+ * Load a view's module, then render it — unless the reader has already
+ * moved on to another view while it downloaded.
+ */
+function renderLazyView(view, load, render) {
+    // Don't leave the previous view's results on screen during the download
+    // (each view replaces this as soon as it renders).
+    if (resultsDiv) resultsDiv.innerHTML = '<div class="loading">Loading…</div>';
+    load().then((mod) => {
+        if (currentView === view) render(mod);
+    }).catch((err) => lazyLoadFailed('this page', err));
+}
+const renderBountyView = (el) =>
+    renderLazyView('bounty', () => import('./bounty-view.js'), m => m.renderBountyView(el));
+const renderMySubmissionsView = (el) =>
+    renderLazyView('my-submissions', () => import('./my-submissions.js'), m => m.renderMySubmissionsView(el));
+const renderHighScoresView = (el) =>
+    renderLazyView('high-scores', () => import('./high-scores.js'), m => m.renderHighScoresView(el));
+const renderDraftsView = (el) =>
+    renderLazyView('drafts', () => import('./drafts-view.js'), m => m.renderDraftsView(el));
 
 // ============================================
 // DOM ELEMENTS
@@ -145,8 +273,6 @@ const editorSaveBtn = document.getElementById('editor-save');
 const editorSubmitBtn = document.getElementById('editor-submit');
 const editorStatus = document.getElementById('editor-status');
 const editorNashville = document.getElementById('editor-nashville');
-const editorComment = document.getElementById('editor-comment');
-const editCommentRow = document.getElementById('edit-comment-row');
 const hintsBtn = document.getElementById('chordpro-hints-btn');
 const hintsPanel = document.getElementById('chordpro-hints-panel');
 const hintsBackdrop = document.getElementById('chordpro-hints-backdrop');
@@ -174,15 +300,32 @@ const searchTipsDropdown = document.getElementById('search-tips-dropdown');
 // THEME HANDLING
 // ============================================
 
+// The inline script at the top of index.html <head> applies the theme before
+// first paint; these keep it in step afterwards. Saved choice wins, else the OS.
+function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', theme === 'dark' ? '#000000' : '#fafafa');
+}
+
+function savedTheme() {
+    try {
+        const saved = localStorage.getItem('theme');
+        return saved === 'dark' || saved === 'light' ? saved : null;
+    } catch { return null; }
+}
+
 function initTheme() {
-    const saved = localStorage.getItem('theme');
-    if (saved === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'dark');
-    }
+    const mq = window.matchMedia?.('(prefers-color-scheme: dark)');
+    applyTheme(savedTheme() || (mq?.matches ? 'dark' : 'light'));
+    // With no saved choice, follow OS changes live
+    mq?.addEventListener?.('change', (e) => {
+        if (!savedTheme()) applyTheme(e.matches ? 'dark' : 'light');
+    });
 }
 
 function setTheme(theme) {
-    document.documentElement.setAttribute('data-theme', theme);
+    applyTheme(theme);
     localStorage.setItem('theme', theme);
 }
 
@@ -191,6 +334,43 @@ function toggleTheme() {
     const newTheme = current === 'dark' ? 'light' : 'dark';
     setTheme(newTheme);
     trackThemeToggle(newTheme);
+}
+
+// ============================================
+// EDITOR WIRING
+// ============================================
+
+/** Options for initEditor: the editor panel's DOM + host callbacks. */
+function editorInitOptions() {
+    return {
+        editorPanel,
+        editorTitle,
+        editorArtist,
+        editorWriter,
+        editorContent,
+        editorCopyBtn,
+        editorSaveBtn,
+        editorSubmitBtn,
+        editorStatus,
+        editorNashville,
+        hintsBtn,
+        hintsPanel,
+        hintsBackdrop,
+        hintsClose,
+        autoDetectCheckbox,
+        editorTransposeUp,
+        editorTransposeDown,
+        editorKeySelect,
+        metadataSummary,
+        metadataFields,
+        onSongRequest: () => openAddSongPicker({ mode: 'request' }),
+        editorPreviewContainer,
+        editorUndoBtn,
+        editorRedoBtn,
+        editorTransposeGroup,
+        resultsDiv,
+        songView
+    };
 }
 
 // ============================================
@@ -379,11 +559,35 @@ function showView(mode) {
     setCurrentView(mode);
 }
 
+/**
+ * The editor was navigated away from with edits that were never submitted
+ * (hash change, Back, a link). The navigation has already happened, so the
+ * prompt sits over the new view; "Keep editing" routes straight back to the
+ * editor, whose state exitEditMode() has deliberately not been allowed to
+ * touch yet.
+ */
+async function guardEditorExit() {
+    const { isEdit, songId } = editorSessionInfo();
+    const choice = await promptUnsavedChanges();
+    if (choice === 'keep') {
+        if (isEdit) pushHistoryState('edit', { songId });
+        else pushHistoryState('add-song');
+        showView('add-song');
+    } else if (choice === 'discard') {
+        exitEditMode();
+    }
+    // 'cancelled': the user came back to the editor some other way
+}
+
 // Subscribe to view changes and update DOM accordingly
 function initViewSubscription() {
     const searchContainer = document.querySelector('.search-container');
+    let previousView = null;
 
     subscribe('currentView', (view) => {
+        const leftEditor = previousView === 'add-song' && view !== 'add-song';
+        previousView = view;
+
         // Tear down live tablature state when LEAVING the song page: stops
         // audio (including an in-flight soundfont load), destroys the edit
         // session and renderer observers.
@@ -392,7 +596,7 @@ function initViewSubscription() {
         // (state.js `scheduleRender`), so a teardown queued by *entering* the
         // song view lands a frame later — by which time work-view has already
         // built the very thing it then destroys. That is a coin flip decided
-        // by the module cache: with the editor's four dynamic imports cold the
+        // by the module cache: with the editor's five dynamic imports cold the
         // frame wins and the editor survives; warm, the mount resolves in a
         // microtask, finishes first, and gets deleted. `#drafts` → Open lost
         // that flip every time (warm), and a dropped `.tef` lost it about half
@@ -411,9 +615,17 @@ function initViewSubscription() {
         // Close any open editor hints panel
         closeHints();
 
-        // Exit edit mode when navigating away from the editor
+        // Exit edit mode when navigating away from the editor — unless there
+        // are unsubmitted edits, in which case ask first (and leave the
+        // editor's state alone until the answer).
         if (view !== 'add-song') {
-            exitEditMode();
+            if (leftEditor && editorHasUnsavedChanges()) {
+                guardEditorExit();
+            } else if (!unsavedPromptOpen()) {
+                exitEditMode();
+            }
+        } else {
+            closeUnsavedPrompt();
         }
 
         // The review queue sits above the results list, so it belongs to the
@@ -443,6 +655,7 @@ function initViewSubscription() {
         // Hide landing page when not on home view
         const isHome = view === 'home';
         landingPage?.classList.toggle('hidden', !isHome);
+        if (isHome) renderCollectionCardsIfHome();
 
         switch (view) {
             case 'home':
@@ -487,8 +700,19 @@ function initViewSubscription() {
                 searchContainer?.classList.add('hidden');
                 resultsDiv?.classList.add('hidden');
                 songView?.classList.add('hidden');
-                editorPanel?.classList.remove('hidden');
                 songListsView?.classList.add('hidden');
+                // The panel's listeners (paste conversion, preview, undo) are
+                // wired by initEditor, which runs when the editor module
+                // finishes loading. Showing the panel before that lets a
+                // fast paste or keystroke land in an unwired textarea, so on
+                // the first visit it appears only once the editor is ready.
+                if (editorModule) {
+                    editorPanel?.classList.remove('hidden');
+                } else {
+                    loadEditor().then(() => {
+                        if (currentView === 'add-song') editorPanel?.classList.remove('hidden');
+                    }).catch((err) => lazyLoadFailed('the editor', err));
+                }
                 break;
             case 'favorites':
                 searchContainer?.classList.remove('hidden');
@@ -562,15 +786,7 @@ function initViewSubscription() {
 // LANDING PAGE
 // ============================================
 
-// Collection images and fallback icons
-const COLLECTION_IMAGES = {
-    'bluegrass-standards': 'images/Scruggs.webp',
-    'all-bluegrass': 'images/billy.png',
-    'gospel': 'images/jimmy_martin_gospel.jpg',
-    'fiddle-tunes': 'images/fiddle_tunes.png',
-    'all-songs': 'images/jam_friendly.png',
-    'bluegrass-dungeon': 'images/bluegrass_dungeon.png'
-};
+// Collection fallback icons (thumbnails live in collections.js)
 
 const COLLECTION_ICONS = {
     'bluegrass-standards': '🎸',
@@ -592,6 +808,20 @@ function getDistinctSongCount() {
     return countDistinctTitles(allSongs);
 }
 
+// The landing cards are built only while the home view is showing. A visitor
+// who arrives on a song (a shared link, a bookmark) never sees them, and used
+// to download every card image into a hidden page. `Stale` = the corpus changed
+// since they were built (their counts come from it).
+let collectionCardsStale = true;
+let collectionCardsRendered = false;
+
+function renderCollectionCardsIfHome() {
+    if (currentView !== 'home' || !collectionCardsStale || !canonRows.length) return;
+    collectionCardsStale = false;
+    collectionCardsRendered = true;
+    renderCollectionCards();
+}
+
 /**
  * Render collection cards on the landing page
  */
@@ -602,12 +832,10 @@ function renderCollectionCards() {
         // Count songs matching the query (or distinct titles for "all songs", or skip for tools/dungeon)
         const count = (collection.isToolLink || collection.isDungeonLink) ? 0 : collection.isSearchLink ? getDistinctSongCount() : getCollectionSongCount(collection.query);
         const icon = COLLECTION_ICONS[collection.id] || '🎵';
-        const imageSrc = COLLECTION_IMAGES[collection.id];
+        const thumbHtml = collectionThumbnailHtml(collection.id, escapeAttr(collection.title));
 
         // Use image if available, otherwise fall back to emoji icon
-        const imageContent = imageSrc
-            ? `<img src="${imageSrc}" alt="${escapeAttr(collection.title)}">`
-            : icon;
+        const imageContent = thumbHtml || icon;
 
         // Determine href based on collection type
         const href = collection.isDungeonLink
@@ -620,7 +848,7 @@ function renderCollectionCards() {
 
         return `
             <a href="${href}"
-               class="collection-card${imageSrc ? ' has-image' : ''}${collection.isSearchLink ? ' search-all' : ''}${collection.isToolLink ? ' tool-link' : ''}${collection.isDungeonLink ? ' dungeon-card' : ''}"
+               class="collection-card${thumbHtml ? ' has-image' : ''}${collection.isSearchLink ? ' search-all' : ''}${collection.isToolLink ? ' tool-link' : ''}${collection.isDungeonLink ? ' dungeon-card' : ''}"
                data-collection="${collection.id}"
                style="--collection-color: ${collection.color}">
                 <div class="collection-image">
@@ -795,6 +1023,47 @@ async function openTabRoute(route, hash) {
         return;
     }
     openWork(workId, { fromDeepLink: true, editRef: route.partRef, draft });
+}
+
+/**
+ * The page just came back from the Google sign-in redirect. Put the user back
+ * where they were: route to the recorded hash and let the open editor restore
+ * its state (auth-return.js). Never submits anything on their behalf.
+ *
+ * @param {{signedIn: boolean}} options - false when the redirect came back with
+ *   an error (consent refused): the work is restored all the same.
+ */
+async function resumeAfterAuthRedirect({ signedIn }) {
+    const record = takeReturnRecord();
+    if (!record) return;
+    await bootRouted;
+
+    const message = signedIn
+        ? 'Signed in \u2014 ready to submit'
+        : 'Sign-in did not finish \u2014 your work is still here';
+    // The staged text lives in editor.js, which loads on demand (B7a): load it
+    // first, so the #add / #edit route below finds the snapshot waiting.
+    let editor = null;
+    if (record.kind === 'lead-sheet') {
+        try {
+            editor = await loadEditor();
+        } catch (err) {
+            lazyLoadFailed('the editor', err);
+        }
+        if (editor && record.state) editor.stageEditorRestore(record.state, { message });
+    }
+
+    // Replace the token-bearing URL with the route we left, then route it the
+    // way a fresh load of that URL would (#add, #edit/{id}, a tab route with
+    // its ?draft=, or any other page).
+    history.replaceState(null, '', window.location.pathname + record.hash);
+    handleDeepLink();
+
+    if (record.kind === 'lead-sheet') {
+        editor?.applyEditorRestore();   // the new-song editor; an edit's waits for enterEditMode
+    } else if (record.kind === 'tab') {
+        showToast(message, { duration: 6000 });
+    }
 }
 
 function handleDeepLink() {
@@ -1000,15 +1269,17 @@ function handleDeepLink() {
  * Open a song within the favorites context (for deep linking)
  * @param {string} itemRef - Work ID or part-qualified ref (e.g., "work-id/part-slug")
  */
-function openSongInFavorites(itemRef, fromDeepLink = false) {
+async function openSongInFavorites(itemRef, fromDeepLink = false) {
     const { workId, partId } = parseItemRef(itemRef);
 
-    // Get favorites song IDs that exist in allSongs
+    // Open the tapped song first; the prev/next context is refined once any
+    // favorite that only the archive holds has loaded (never block on it).
     const favList = getFavoritesList();
-    const favSongIds = favList ? favList.songs.filter(ref => {
+    const buildFavSongIds = () => favList ? favList.songs.filter(ref => {
         const { workId: wid } = parseItemRef(ref);
         return allSongs.find(s => s.id === wid);
     }) : [];
+    const favSongIds = buildFavSongIds();
     const songIndex = favSongIds.indexOf(itemRef);
 
     // Set up favorites context for prev/next navigation
@@ -1027,6 +1298,22 @@ function openSongInFavorites(itemRef, fromDeepLink = false) {
         listId: 'favorites',
         exact: true,
     });
+
+    // Refine the prev/next context with archived favorites, if any.
+    if (favList && window.isArchiveLoaded?.() === false) {
+        ensureArchiveForRefs(favList.songs).then(() => {
+            const ids = buildFavSongIds();
+            // Skip if nothing changed or the context has moved on meanwhile.
+            if (ids.length === favSongIds.length || listContext?.listId !== 'favorites') return;
+            const idx = ids.indexOf(itemRef);
+            setListContext({
+                listId: 'favorites',
+                listName: 'Favorites',
+                songIds: ids,
+                currentIndex: idx >= 0 ? idx : 0
+            });
+        });
+    }
 }
 
 /**
@@ -1214,15 +1501,29 @@ let pendingRows = [];
 // admin delete or a trusted-user promote is live now instead of after the
 // hourly sync and the next deploy. Also written in-session by the
 // promote/delete handlers below.
-const deletedIds = new Set();
-const promotedIds = new Set();
+//
+// The last-known sets are cached in localStorage and applied at boot, before
+// the network answers: a deleted song must not flash into the first paint just
+// because the overlay request is still in flight. The fetched sets replace them.
+const deletedIds = readCachedIdSet('deleted');
+const promotedIds = readCachedIdSet('promoted');
 
-// Archive load state. The promise resolves once the archive is merged (or has
-// definitively failed) and NEVER rejects, so awaiting it is always safe;
-// window.ensureArchiveLoaded() is the hook other modules use.
+/** Remember the curation sets for the next visit's first paint. */
+function persistCuration() {
+    writeCachedIdSet('deleted', deletedIds);
+    writeCachedIdSet('promoted', promotedIds);
+}
+
+// Archive load state. The archive is fetched ON DEMAND — nothing prefetches it
+// any more — by whatever needs an archived row: an unknown id on a song page,
+// the Dungeon, a list / favorites / export that names an archived song, the
+// bounty board and the add-song picker (they match against every title), an
+// overlay that targets an archived work (syncArchiveNeed). The promise
+// resolves once the archive is merged (or has definitively failed) and NEVER
+// rejects, so awaiting it is always safe; window.ensureArchiveLoaded() is the
+// hook other modules use.
 let archivePromise = null;
 let archiveLoaded = false;
-let cancelArchiveIdle = null;
 
 /**
  * Re-merge canon + archive + pending into allSongs/songGroups and refresh
@@ -1236,9 +1537,15 @@ function rebuildCorpus() {
         pending: pendingRows,
         deleted: deletedIds,
         promoted: promotedIds,
+        archiveLoaded,
     });
     setAllSongs(songs);
     setSongGroups(groups);
+    // The landing cards count the corpus; they are rebuilt from it the next
+    // time the home view shows (or right now if it is showing).
+    builtOverlayVersion = overlayVersion;
+    collectionCardsStale = true;
+    if (collectionCardsRendered) renderCollectionCardsIfHome();
     return songs;
 }
 
@@ -1256,20 +1563,21 @@ function updateSongbookCount(songs) {
 function loadArchive() {
     if (archivePromise) return archivePromise;
 
-    cancelArchiveIdle?.();
-    cancelArchiveIdle = null;
-
     archivePromise = fetchJsonl('data/archive.jsonl')
         .then(rows => {
             archiveRows = markArchived(rows);
-            rebuildCorpus();
+            // Flag first: the merge applies the pending rows it was holding
+            // back for this archive.
             archiveLoaded = true;
+            rebuildCorpus();
             console.log(`Archive loaded: ${archiveRows.length} rows off the shelf`);
         })
         .catch(error => {
             // No archive published (or offline): the canon still works, only
             // deep links to pruned works fail — mark it done so nothing waits.
+            // Re-merge so the pending rows held back for it apply as they are.
             archiveLoaded = true;
+            rebuildCorpus();
             console.warn('Archive not loaded:', error.message);
         });
 
@@ -1289,14 +1597,84 @@ window.ensureArchiveLoaded = ensureArchiveLoaded;
 window.isArchiveLoaded = () => archiveLoaded;
 
 /**
+ * Bring the archive in when the Supabase overlays only make sense with it (a
+ * promotion of an archived work the canon doesn't hold yet, a pending edit or
+ * tab for one) — see corpus.overlaysNeedArchive. Cheap and idempotent.
+ */
+function syncArchiveNeed() {
+    if (archiveLoaded || archivePromise) return;
+    if (overlaysNeedArchive({
+        canon: canonRows, pending: pendingRows, promoted: promotedIds, deleted: deletedIds,
+    })) {
+        loadArchive();
+    }
+}
+
+/**
+ * Fetch the pending overlay as merge-ready rows, WITHOUT `content`.
+ *
+ * `select('*')` shipped every pending row's whole body (up to 200 KB a chart,
+ * 2 MB a tab) to every visitor on every load. The merge needs the columns in
+ * PENDING_OVERLAY_COLUMNS and one bit more — does the row HAVE a body? — which
+ * a second, id-only query answers (rows with a non-empty `content`). The text
+ * itself is read from pending_songs when its song is opened (song-content's
+ * pending fetcher, registered below).
+ *
+ * @returns {Promise<Array|null>} transformed rows, or null when the read failed
+ */
+async function fetchPendingOverlayRows(supabase) {
+    // PostgREST builders are thenables, not promises — Promise.resolve gives
+    // us a .catch so one failing query can't take the other down.
+    const safe = query => Promise.resolve(query).catch(error => ({ data: null, error }));
+
+    const [rows, withText] = await Promise.all([
+        safe(supabase.from('pending_songs').select(PENDING_OVERLAY_COLUMNS)),
+        safe(supabase.from('pending_songs').select('id')
+            .not('content', 'is', null).neq('content', '')),
+    ]);
+    if (!rows.data || rows.error) {
+        console.warn('Could not fetch pending songs:', rows.error);
+        return null;
+    }
+    // If only the id query failed, rows go through with no `has_content`
+    // signal — the transform then assumes a body unless the row's kind says
+    // it has none, which errs toward showing the song.
+    const haveText = withText.data && !withText.error
+        ? new Set(withText.data.map(r => r.id)) : null;
+    return rows.data.map(row => transformPendingRow(
+        haveText ? { ...row, has_content: haveText.has(row.id) } : row));
+}
+
+// Reads one pending row's text for song-content (a song, a fork, or a tab
+// take that was opened). Null once the row is gone.
+setPendingContentFetcher(async (id) => {
+    const supabase = window.SupabaseAuth?.supabase;
+    if (!supabase) throw new Error('Not connected');
+    const { data, error } = await supabase
+        .from('pending_songs').select('content').eq('id', id).maybeSingle();
+    if (error) throw error;
+    return typeof data?.content === 'string' ? data.content : null;
+});
+
+// The overlay fetch starts WITH the index download (loadIndex) and is raced
+// against a short grace period rather than awaited: a slow or down Supabase
+// must not hold the first render hostage.
+const OVERLAY_GRACE_MS = 800;
+let overlayPromise = null;
+// Bumped when fetched overlay data lands; rebuildCorpus records the version it
+// merged, so a late arrival knows whether the corpus still needs a re-merge.
+let overlayVersion = 0;
+let builtOverlayVersion = 0;
+
+/**
  * Fetch the Supabase overlays: pending edits plus the two world-readable
- * curation tables. All three go out together so the deleted/promoted rules
- * land in the same first paint as the pending rows — a deleted song must
- * never flash into view before the overlay catches up.
+ * curation tables. All three go out together, in parallel with the index
+ * (the deleted/promoted sets are also cached from the last visit so a deleted
+ * song does not flash in while they are in flight).
  *
  * Fails soft in every direction: no client, a down backend, or a single
- * table erroring leaves the static index exactly as it was built. Callers
- * rebuild the corpus afterwards.
+ * table erroring leaves the static index exactly as it was built. Never
+ * rejects. The caller rebuilds the corpus afterwards.
  */
 async function fetchSupabaseOverlays() {
     const supabase = window.SupabaseAuth?.supabase;
@@ -1308,40 +1686,72 @@ async function fetchSupabaseOverlays() {
 
     try {
         const [pending, deleted, promoted] = await Promise.all([
-            safe(supabase.from('pending_songs').select('*')),
+            fetchPendingOverlayRows(supabase),
             safe(supabase.from('deleted_songs').select('song_id')),
             safe(supabase.from('promoted_songs').select('song_id')),
         ]);
 
-        if (pending.data && !pending.error) {
-            pendingRows = pending.data.map(transformPendingRow);
+        if (pending) {
+            pendingRows = pending;
             if (pendingRows.length > 0) {
                 console.log(`Merged ${pendingRows.length} pending row(s) — songs and tab parts`);
             }
         }
+        // The fetched sets REPLACE the cached ones: an un-delete or an
+        // un-promote has to be able to take effect.
         if (deleted.data && !deleted.error) {
+            deletedIds.clear();
             for (const row of deleted.data) deletedIds.add(row.song_id);
             if (deletedIds.size > 0) {
                 console.log(`Hiding ${deletedIds.size} deleted song(s)`);
             }
         }
         if (promoted.data && !promoted.error) {
+            promotedIds.clear();
             for (const row of promoted.data) promotedIds.add(row.song_id);
             if (promotedIds.size > 0) {
                 console.log(`Promoted ${promotedIds.size} song(s) into search`);
             }
         }
+        persistCuration();
     } catch (e) {
         console.warn('Could not fetch Supabase overlays:', e);
         // Static index still works - graceful degradation
     }
+    overlayVersion++;
 }
+
+/** Start the overlay fetch once; every caller shares the promise. */
+function startOverlayFetch() {
+    if (!overlayPromise) overlayPromise = fetchSupabaseOverlays();
+    return overlayPromise;
+}
+
+// Other modules (openWork) wait for the overlays before giving up on an id.
+// Bounded — a hung backend must not hold a deep link on "Loading song…" — and
+// merge-aware: overlays that land after the first render are folded into the
+// corpus BEFORE the caller looks again, so a brand-new pending song is found
+// without the archive. The cap is larger than OVERLAY_GRACE_MS on purpose.
+const OVERLAY_SETTLE_CAP_MS = 3000;
+window.whenOverlaysSettled = () => Promise.race([
+    (overlayPromise || Promise.resolve()).then(() => {
+        if (canonRows.length && builtOverlayVersion !== overlayVersion) rebuildCorpus();
+    }),
+    new Promise(resolve => setTimeout(resolve, OVERLAY_SETTLE_CAP_MS)),
+]);
 
 // Guards against a Retry click (or any other caller) overlapping an
 // in-flight loadIndex() — the function is otherwise re-entrant (it only
 // mutates state on success paths), so this just avoids a wasted duplicate
 // fetch rather than fixing a correctness bug.
 let indexLoadInFlight = false;
+
+// Settles once the boot URL has been routed (or the load gave up): from then
+// on it is safe to route somewhere ELSE on purpose. The sign-in return waits
+// for it, or the boot tail would route the token-bearing URL to home right
+// over the top of the route it restored.
+let resolveBootRouted;
+const bootRouted = new Promise(resolve => { resolveBootRouted = resolve; });
 
 async function loadIndex() {
     if (indexLoadInFlight) return;
@@ -1353,7 +1763,10 @@ async function loadIndex() {
 
     try {
         // Only the canon blocks first paint. Song content (data/songs/{id}.pro)
-        // is fetched per song page; the archive follows when the browser idles.
+        // is fetched per song page; the archive is fetched only when something
+        // asks for an archived row. The Supabase overlays start NOW, in
+        // parallel with the index, and are raced against a grace period below.
+        const overlays = startOverlayFetch();
         const [canon, redirectsResponse] = await Promise.all([
             fetchJsonl('data/index.jsonl'),
             fetch('data/redirects.json').catch(() => null),
@@ -1371,9 +1784,17 @@ async function loadIndex() {
             }
         }
 
-        await fetchSupabaseOverlays();
+        // Give the overlays a moment to land so a pending row or a deletion
+        // is in the first paint; a slow backend is merged in when it answers.
+        await Promise.race([
+            overlays,
+            new Promise(resolve => setTimeout(resolve, OVERLAY_GRACE_MS)),
+        ]);
 
         const songs = rebuildCorpus();
+        // Cached promoted ids count at once, not only after the overlay
+        // fetch settles (supabase-js retries a failing GET for several seconds).
+        syncArchiveNeed();
 
         // A retry that succeeds clears both the flag and the banner a
         // previous failure left up.
@@ -1385,8 +1806,8 @@ async function loadIndex() {
         }
         updateSongbookCount(songs);
 
-        // Render collection cards on landing page
-        renderCollectionCards();
+        // (The landing page's collection cards are built when the home view is
+        // shown — below for a plain load, never for a deep link.)
 
         // Boot is over: history is under normal control from here on, and
         // pushHistoryState stops claiming the boot route. Set before the
@@ -1404,15 +1825,35 @@ async function loadIndex() {
                 history.replaceState({ view: 'home' }, '', window.location.pathname);
             }
         }
+        // The cards belong to the home view: a visitor headed for a song never
+        // builds them (or downloads their images) because this returns early
+        // unless the view is 'home'. Not gated on the deep-link result: some
+        // handlers (#request-song, #invite/<token>) return true yet leave the
+        // landing page showing. The currentView subscriber builds them on the
+        // way home otherwise.
+        renderCollectionCardsIfHome();
 
         // Fetch bounties in background (non-blocking, not needed for initial render)
         refreshBounties();
 
-        // Archive: everything the prune left off the shelf. Loaded after the
-        // first render so it costs nothing on the way to the home screen.
-        cancelArchiveIdle = whenIdle(() => loadArchive());
+        // Overlays that missed the grace period: merge them in now, and pull
+        // the archive in if they only make sense with it (a promotion of an
+        // archived work, a pending edit of one). Runs at once if they landed.
+        overlays.then(() => {
+            if (builtOverlayVersion !== overlayVersion) {
+                rebuildCorpus();
+                // The result list already on screen was drawn without them (a
+                // deleted song still in it, a pending one missing): draw it
+                // again from the merged corpus.
+                if (currentView === 'search' && searchInput?.value?.trim()) {
+                    search(searchInput.value);
+                }
+            }
+            syncArchiveNeed();
+        });
     } catch (error) {
         console.error('Failed to load index:', error);
+        overlayPromise = null;   // a Retry starts the overlays over with the index
         if (resultsDiv) {
             resultsDiv.innerHTML = `<div class="loading">Error loading songs: ${error.message}</div>`;
         }
@@ -1427,6 +1868,7 @@ async function loadIndex() {
         );
     } finally {
         indexLoadInFlight = false;
+        resolveBootRouted();
     }
 }
 
@@ -1442,16 +1884,11 @@ async function refreshPendingSongs() {
     if (!supabase) return;
 
     try {
-        const { data, error } = await supabase
-            .from('pending_songs')
-            .select('*');
+        const rows = await fetchPendingOverlayRows(supabase);
+        if (!rows) return;
 
-        if (error || !data) {
-            console.warn('Could not refresh pending songs:', error);
-            return;
-        }
-
-        pendingRows = data.map(transformPendingRow);
+        pendingRows = rows;
+        syncArchiveNeed();
         rebuildCorpus();
 
         if (pendingRows.length > 0) {
@@ -1631,6 +2068,7 @@ async function handlePromoteSong() {
             return;
         }
         promotedIds.delete(song.id);
+        persistCuration();
         song.indexed = false;
         rebuildCorpus();
         alert(`Promotion of "${song.title}" undone.`);
@@ -1649,6 +2087,7 @@ async function handlePromoteSong() {
         return;
     }
     promotedIds.add(song.id);
+    persistCuration();
     song.indexed = true;
     rebuildCorpus();
     alert(`Promoted "${song.title}" to the songbook!\n\nIt is searchable right away — for you and for everyone who loads the site from now on.`);
@@ -1704,6 +2143,7 @@ async function confirmDeleteSelected(listEl, confirmBtn, statusEl) {
         statusEl.textContent = '';
         deleteModal?.classList.add('hidden');
         for (const id of ids) deletedIds.add(id);
+        persistCuration();
         rebuildCorpus();
         alert(`Deleted: ${ids.join(', ')}\n\nGone from the site right away; the next sync and rebuild make it permanent.`);
         goBack();
@@ -1730,7 +2170,9 @@ async function handleRequestDeleteSong() {
         return;
     }
 
-    const { error } = await submitReviewRequest({
+    const rq = await requireReviewQueue();
+    if (!rq) return;
+    const { error } = await rq.submitReviewRequest({
         kind: 'delete',
         targetId: song.id,
         payload: { title: song.title },
@@ -1752,10 +2194,12 @@ async function handleRequestSuppressSong() {
     const song = getCurrentSong();
     if (!song) return;
 
-    const reason = await showSuppressRequestDialog(song);
+    const rq = await requireReviewQueue();
+    if (!rq) return;
+    const reason = await rq.showSuppressRequestDialog(song);
     if (reason === null) return; // cancelled
 
-    const { error } = await submitReviewRequest({
+    const { error } = await rq.submitReviewRequest({
         kind: 'suppress',
         targetId: song.id,
         payload: {},
@@ -1773,13 +2217,18 @@ async function handleRequestMergeSong() {
     const song = getCurrentSong();
     if (!song) return;
 
-    const outcome = await showMergeRequestDialog(song, { songs: allSongs });
+    // The merge target can be any work, an archived one included.
+    await ensureArchiveLoaded();
+
+    const rq = await requireReviewQueue();
+    if (!rq) return;
+    const outcome = await rq.showMergeRequestDialog(song, { songs: allSongs });
     if (outcome === null) return; // cancelled
 
-    const { error } = await submitReviewRequest({
+    const { error } = await rq.submitReviewRequest({
         kind: 'merge-redirect',
         targetId: song.id,
-        payload: buildMergeRedirectPayload(outcome.targetId),
+        payload: rq.buildMergeRedirectPayload(outcome.targetId),
         reason: outcome.reason,
     });
     if (error) {
@@ -2042,6 +2491,7 @@ function initAuthModal() {
     // Google sign-in button within auth modal
     authGoogleBtn?.addEventListener('click', async () => {
         closeAuthModal();
+        persistReturnRecord();
         await SupabaseAuth.signInWithGoogle();
     });
 
@@ -2116,7 +2566,7 @@ function openListsModal() {
  * Shared by every Export action so print and download can't drift apart on
  * which songs they think are in the list.
  */
-function resolveViewingList() {
+async function resolveViewingList() {
     const listId = getViewingListId();
     if (!listId) return null;
 
@@ -2130,6 +2580,8 @@ function resolveViewingList() {
 
     if (!list) return null;
 
+    // Print / export name every song: an archived one has to be loaded first.
+    await ensureArchiveForRefs(list.songs);
     const listSongs = list.songs
         .map(id => allSongs.find(s => s.id === id))
         .filter(Boolean);
@@ -2138,7 +2590,7 @@ function resolveViewingList() {
 }
 
 async function openPrintListView() {
-    const resolved = resolveViewingList();
+    const resolved = await resolveViewingList();
     if (!resolved) return;
     const { list, listSongs } = resolved;
 
@@ -2183,7 +2635,7 @@ async function handleListExport(action) {
         return;
     }
 
-    const resolved = resolveViewingList();
+    const resolved = await resolveViewingList();
     if (!resolved) return;
     const { list, listSongs } = resolved;
 
@@ -2193,6 +2645,14 @@ async function handleListExport(action) {
     }
 
     const contents = await getSongContents(listSongs);
+    let exporter;
+    try {
+        exporter = await import('./list-export.js');
+    } catch (err) {
+        lazyLoadFailed('the export tools', err);
+        return;
+    }
+    const { buildListChordPro, buildListText, buildListZipFiles, listFileBase } = exporter;
     const base = listFileBase(list.name);
 
     if (action === 'download-chordpro') {
@@ -2204,6 +2664,13 @@ async function handleListExport(action) {
         const files = buildListZipFiles(listSongs, contents);
         if (!files.length) {
             alert('No song content available to export.');
+            return;
+        }
+        let createZip;
+        try {
+            ({ createZip } = await import('./zip.js'));
+        } catch (err) {
+            lazyLoadFailed('the export tools', err);
             return;
         }
         downloadFile(`${base}.zip`, createZip(files), 'application/zip');
@@ -2431,6 +2898,7 @@ function generatePrintListPage(listName, songs, prefs, contents = []) {
             font-family: system-ui, sans-serif;
         }
         .hide-labels .section-label { display: none; }
+        .section-comment { font-style: italic; margin: 0 0 0.5rem; font-family: system-ui, sans-serif; }
         .line-group { margin-bottom: 0.25rem; }
         .chord-line {
             font-weight: bold;
@@ -2665,17 +3133,6 @@ function init() {
         isPromoted: (id) => promotedIds.has(id),
     });
 
-    configureReviewQueue({
-        isAdmin: () => isAdminUser,
-        isTrusted: () => isTrustedFlag,
-        // An approved delete has already landed in deleted_songs; mirror it
-        // client-side so the corpus stops serving the song immediately.
-        onDeleteExecuted: (id) => {
-            deletedIds.add(id);
-            rebuildCorpus();
-        },
-    });
-
     initSearch({
         searchInput,
         searchStats,
@@ -2701,37 +3158,8 @@ function init() {
         parseSearchQuery
     });
 
-    initEditor({
-        editorPanel,
-        editorTitle,
-        editorArtist,
-        editorWriter,
-        editorContent,
-        editorCopyBtn,
-        editorSaveBtn,
-        editorSubmitBtn,
-        editorStatus,
-        editorNashville,
-        editorComment,
-        editCommentRow,
-        hintsBtn,
-        hintsPanel,
-        hintsBackdrop,
-        hintsClose,
-        autoDetectCheckbox,
-        editorTransposeUp,
-        editorTransposeDown,
-        editorKeySelect,
-        metadataSummary,
-        metadataFields,
-        onSongRequest: () => openAddSongPicker({ mode: 'request' }),
-        editorPreviewContainer,
-        editorUndoBtn,
-        editorRedoBtn,
-        editorTransposeGroup,
-        resultsDiv,
-        songView
-    });
+    // initEditor runs when the editor first loads (loadEditor above).
+
 
     // Setup event listeners
 
@@ -2863,13 +3291,42 @@ function init() {
         }
     });
 
-    // History navigation
+    // History navigation.
+    //
+    // One back/forward (or `location.hash = …`) step fires `popstate` AND
+    // `hashchange` whenever the fragment differs, popstate first. Routing
+    // both ran `openWork` twice per step, so the song page was built and
+    // drawn twice. The hash is the more trustworthy of the two (see the
+    // hashchange handler), so a popstate does not route immediately: it
+    // parks its work for one task, and a hashchange arriving in that window
+    // takes over and cancels it. With no hashchange (same fragment, only the
+    // state differs) the parked popstate runs as before. `handledHref` covers
+    // a browser that dispatches the two in separate tasks the other way
+    // round: a hashchange for the URL a popstate already routed is an echo.
+    let parkedPopstate = null;
+    let handled = { href: null, at: 0 };
+    const markHandled = () => { handled = { href: window.location.href, at: performance.now() }; };
+
     window.addEventListener('popstate', (e) => {
-        handleHistoryNavigation(e.state);
+        if (parkedPopstate) clearTimeout(parkedPopstate);
+        const state = e.state;
+        parkedPopstate = setTimeout(() => {
+            parkedPopstate = null;
+            markHandled();
+            handleHistoryNavigation(state);
+        }, 0);
     });
 
     // Handle hash changes that don't trigger popstate (e.g. manual URL edits)
     window.addEventListener('hashchange', () => {
+        if (parkedPopstate) {
+            clearTimeout(parkedPopstate);
+            parkedPopstate = null;
+        } else if (handled.href === window.location.href
+                   && performance.now() - handled.at < 100) {
+            return;   // the tail of a traversal popstate already routed
+        }
+        markHandled();
         // For hash changes, always try to handle the hash first since the hash
         // represents the current navigation target, not history.state which may be stale
         if (handleDeepLink()) {
@@ -2886,6 +3343,8 @@ function init() {
     });
 
     // Initialize Supabase auth
+    let authReturnHandled = false;
+    pruneReturnRecord();
     if (typeof SupabaseAuth !== 'undefined') {
         SupabaseAuth.init();
         SupabaseAuth.onAuthChange((event, user) => {
@@ -2897,6 +3356,17 @@ function init() {
             if (event === 'SIGNED_IN' && user) {
                 checkPendingInvite();
                 closeAuthModal();
+            }
+            // What the editor promises ("updates in place" vs "your own
+            // arrangement") depends on who is signed in
+            if (event === 'SIGNED_IN' || event === 'SIGNED_OUT') {
+                refreshEditorOwnership();
+            }
+            // This page load IS the return from the Google redirect: go back
+            // to what the user was doing (once — later events must not replay it)
+            if (user && AUTH_REDIRECT === 'signed-in' && !authReturnHandled) {
+                authReturnHandled = true;
+                resumeAfterAuthRedirect({ signedIn: true });
             }
             // Handle password recovery flow (user clicked reset link in email)
             if (event === 'PASSWORD_RECOVERY') {
@@ -2942,6 +3412,10 @@ function init() {
 
     // Load the index
     loadIndex();
+
+    // Came back from the redirect WITHOUT signing in (consent refused, error):
+    // the work is still worth restoring
+    if (AUTH_REDIRECT === 'error') resumeAfterAuthRedirect({ signedIn: false });
 }
 
 // Start the app

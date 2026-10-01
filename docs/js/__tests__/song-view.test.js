@@ -285,16 +285,17 @@ Test
             expect(result.sections).toHaveLength(1);
         });
 
-        it('ignores lines outside sections', () => {
+        it('keeps lines outside sections as implicit verses', () => {
             const content = `Orphan line before
 {start_of_verse}
 Inside section
 {end_of_verse}
 Orphan line after`;
             const result = parseChordPro(content);
-            expect(result.sections).toHaveLength(1);
-            expect(result.sections[0].lines).toHaveLength(1);
-            expect(result.sections[0].lines[0]).toBe('Inside section');
+            expect(result.sections).toHaveLength(3);
+            expect(result.sections[0].lines).toEqual(['Orphan line before']);
+            expect(result.sections[1].lines).toEqual(['Inside section']);
+            expect(result.sections[2].lines).toEqual(['Orphan line after']);
         });
 
         it('skips empty lines within sections', () => {

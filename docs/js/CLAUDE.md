@@ -14,7 +14,7 @@ docs/
 │   ├── main.js         # Entry point, initialization, event wiring, routing
 │   ├── shell.js        # App shell: top band, bottom band, pill primitive
 │   ├── state.js        # Shared state (allSongs, currentSong, etc.)
-│   ├── corpus.js       # Corpus assembly: canon + lazy archive + pending merge
+│   ├── corpus.js       # Corpus assembly: canon + on-demand archive + lean pending overlay
 │   ├── song-content.js # ChordPro on demand (data/songs/{id}.pro) + has_* flags
 │   ├── search-core.js  # Search logic, query parsing, filtering
 │   ├── work-view.js    # THE unified song page (openWork) — all routes land here
@@ -25,6 +25,7 @@ docs/
 │   ├── chords.js       # Transposition, Nashville numbers, key detection
 │   ├── tags.js         # Tag dropdown, filtering, virtual instrument tags/facets
 │   ├── title-match.js  # Song-title normalization (bounty board dedupe)
+│   ├── work-suggest.js # Not-found recovery: redirect deleted duplicates / suggest same-title works
 │   ├── lists.js        # User lists, favorites, multi-owner, Thunderdome
 │   ├── list-picker.js  # List picker popup component
 │   ├── editor.js       # Song editor (Raw tab), re-exports smart-paste pipeline
@@ -39,10 +40,13 @@ docs/
 │   ├── utils.js        # Shared utilities (escapeHtml, etc.)
 │   ├── pwa.js          # Service-worker registration, install prompt, .tef/.otf.json file open + drop
 │   ├── sw-strategy.js  # THE caching decisions (imported by ../sw.js and by its tests)
+│   ├── lazy-modules.js # URLs of every module NOT in the boot graph — precached by the SW (kept honest by a test)
+│   ├── delete-affordance.js # The one-line "instant / request / none" delete rule (split out of review-queue.js so the song page need not load the queue)
 │   ├── drafts.js       # IndexedDB drafts bucket + debounced editor autosave
 │   ├── drafts-view.js  # `#drafts` list (Open / Delete)
 │   ├── audio-unlock.js # iOS audio: SYNC resume inside the tap + ringer-switch escape (never await before calling it)
 │   ├── supabase-auth.js # Auth, cloud sync, voting
+│   ├── auth-return.js  # Return record: get back to the editor (route + text) after the Google redirect
 │   ├── renderers/      # Part renderers
 │   │   ├── index.js    # Renderer registry
 │   │   ├── chordpro.js # THE ChordPro renderer (parse + render, shared everywhere)
@@ -55,11 +59,11 @@ docs/
 │   ├── visual-editor/  # Two-pane editor: interactive preview + ChordPro model
 │   ├── otf-editor/     # Tablature editor
 │   └── __tests__/      # Vitest unit tests
-├── css/style.css       # Dark/light themes, responsive layout
+├── css/style.css       # Dark/light themes, responsive layout (theme is set pre-paint by an inline script in index.html head; initTheme/setTheme in main.js keep it and theme-color in step; abcjs is lazy-loaded by song-view.js loadAbcjs())
 ├── posts/              # Blog posts (markdown)
 └── data/
     ├── index.jsonl     # SEARCHABLE canon only, no ChordPro (`wc -l` it)
-    ├── archive.jsonl   # Pruned rows, same shape, lyrics truncated (lazy)
+    ├── archive.jsonl   # Pruned rows, same shape, lyrics truncated (ON DEMAND only)
     ├── songs/{id}.pro  # Full ChordPro per work — fetched when a page opens
     ├── posts.json      # Blog manifest (built by scripts/lib/build_posts.py)
     └── bounty_decisions.json  # Wanted-list verdicts (built from
@@ -198,8 +202,9 @@ let userLists = [];             // Custom user lists (via supabase-auth.js)
 
 | Function | Purpose |
 |----------|---------|
-| `loadIndex()` | Fetch/parse `data/index.jsonl` (canon only), merge, then schedule the archive |
-| `ensureArchiveLoaded()` | `window.` hook: await `archive.jsonl` once before declaring an id unknown |
+| `loadIndex()` | Fetch/parse `data/index.jsonl` (canon only) with the Supabase overlays started in parallel, render, route. The archive is NOT scheduled |
+| `ensureArchiveLoaded()` | `window.` hook: fetch `archive.jsonl` (once) — called by whatever needs an archived row |
+| `whenOverlaysSettled()` | `window.` hook: resolves when the boot overlay fetch has landed AND been merged into the corpus, or after 3 s, whichever is first (openWork waits for it before the archive; a hung backend cannot strand a deep link) |
 | `getSongContent(song)` | ChordPro for a work: cached fetch of `data/songs/{id}.pro` (song-content.js) |
 | `songHasContent(song)` / `songHasAbc(song)` | Cheap, sync "does this work have a lead sheet / ABC" |
 | `refreshPendingSongs()` | Re-fetch pending songs from Supabase, merge into allSongs |
@@ -289,7 +294,9 @@ artist:hank williams tag:honkytonk chord:VII
 ```
 ChordPro string
     ↓ parseChordPro()
-Sections array [{type, label, lines, repeatOf}]
+Sections array [{type, label, lines, preformatted?}]  (never drops lyric lines: untagged
+text = implicit verses split on blank lines; any start_of_X opens type X; {comment}
+= comment section; tab/grid = preformatted; repeats are detected at render time)
     ↓ renderSong()
 HTML with chord highlighting
     ↓ (if nashvilleMode)
@@ -389,9 +396,47 @@ drum track reliably but not yet which drum each line means, so drawing a
 stave would be fiction and hiding it would be a lie by omission. See
 `sources/banjo-hangout/CLAUDE.md` for what's known about the mapping.
 
+### Tablature draw count (Bravura, tab fetch)
+
+A tab draws **once** per open. `TabRenderer` engraves time signatures and
+rests with Bravura (SMuFL) when it is loaded, bold-serif digits otherwise.
+`renderTablaturePart` starts the font load alongside the tab JSON and waits for
+it (capped at 250ms, `TabRenderer.whenBravuraReady`) before drawing, so the
+first draw already has the glyphs; a renderer still re-draws when the font
+lands LATER than its draw, but only if that draw was made without it
+(`_drewWithBravura` — the font promise resolves on a microtask even when the
+font was ready long ago, which used to redraw every staff on every open). The
+font URL is pinned (`TabRenderer.BRAVURA_URL`, release tag `bravura-1.482`;
+`@latest` on jsDelivr's `gh` endpoint is the repo's HEAD). `loadPartOtf`
+fetches tab JSON with no `cache` override — freshness is the service worker's
+job (SWR, revalidating refresh; see Offline / PWA).
+
+### Chart prefetch
+
+The `.pro` for the song a reader is about to open is fetched early through
+`prefetchSongContent()` (`song-content.js`, which shares `getSongContent`'s
+cache and in-flight dedupe, so the real open finds the text in memory or joins
+the request already in the air): on `pointerdown` of a search result, on a
+mouse resting on one for 120ms (`search-core.js`, delegated on the results
+container; `prefetchResult` resolves the same target a click would, including a
+group's representative, and skips part-qualified rows), and for the NEXT song in
+a list when the nav bar updates (`song-view.js::prefetchNextInList`). It is
+best-effort and silent (failures are not cached, so the open retries and
+reports) and is skipped on Save-Data connections.
+
 ### Transposition
 
 - `currentDetectedKey` tracks the current key
+- `setCurrentDetectedKey()` is a **no-op when the key is unchanged** (like
+  `setCurrentView` / `setDungeonMode`). `initKeyState` writes the detected key
+  on every render, and the song page re-renders on every `currentDetectedKey`
+  notification, so an unconditional notify drew every chart twice. Nothing
+  relies on re-notification with an unchanged key; a caller that wants a redraw
+  calls the renderer.
+- Notifications are delivered a frame after the write, so a chart drawn in
+  between has already used the key: `renderLeadSheetContent` stamps
+  `container.dataset.renderedKey`, and work-view's key subscriber skips the
+  redraw when it matches.
 - Key selector dropdown triggers re-render
 - `transposeChord()` handles sharps/flats correctly
 - `getSemitonesBetweenKeys()` calculates interval
@@ -402,7 +447,7 @@ The song page's controls are pills in a single pill row, built by
 `song-controls.js`:
 
 - **Key pill** (`buildKeyPill`): −/+ transpose, key grid, Nashville toggle,
-  Strum Machine link when matched
+  (Strum Machine moved to the Practice line)
 - **Display pill** (`buildDisplayPill`): font size, two columns, section
   labels, compact, chord display mode ('all' | 'first' | 'none')
 - **Info pill** (`buildInfoPill`): metadata, covering artists, tags, source
@@ -440,10 +485,68 @@ Functions prefixed with `editor*`:
 - `enterEditMode(song)` - Open editor with existing song
 - `editorConvertToChordPro()` - Smart paste: chord-above-lyrics → ChordPro
 - `updateEditorPreview()` - Refresh chrome (key/toolbar) + re-render preview
+- **The editor is a view, entered through `currentView`.** `enterEditMode`
+  calls `setCurrentView('add-song')`; it does not hide the song page by hand
+  (that left state saying "song", so navigating to another song was a no-op
+  for state and the editor stayed on screen). Leaving with unsubmitted edits
+  (`editorHasUnsavedChanges()` — fields vs the baseline taken at open/reset/
+  submit) shows an in-page prompt (`promptUnsavedChanges`, `#editor-leave-modal`,
+  never `window.confirm`). The navigation has already happened by then, so the
+  `currentView` subscriber in main.js (`guardEditorExit`) defers
+  `exitEditMode()` until the answer: "Keep editing" pushes the editor route
+  back and re-shows the view with the editor state untouched.
+- Ownership wording mirrors the server (`pending-dispatch.ts`): the chart's
+  submitter AND trusted users update in place (button "Submit Correction";
+  trusted users see a one-line notice saying so), everyone else forks
+  ("Save as My Arrangement" + the fork notice; signed-out users get a hedged
+  "Sign in to submit. Unless this chart is yours…"). `editsInPlace()` is the
+  one place that decides; `refreshEditorOwnership()` re-derives it on an auth
+  change. There is deliberately **no Edit Comment field**: `pending_songs.notes`
+  is written to the *work's* `notes` when an edit lands on the primary chart
+  (`process_pending.py`), so a free-text comment would overwrite the song's
+  description. Only tab submissions carry a comment (as provenance).
 - Submitting writes a `pending_songs` row and then POSTs its id to the
   `auto-commit-song` edge function (see "Contributing" below). There is no
   `submitSongToGitHub()` any more — the GitHub-issue flow and its
   `create-song-issue` function are both deleted.
+
+### Surviving the sign-in redirect (`auth-return.js`)
+
+Google sign-in is a FULL-PAGE redirect: the page unloads, and the browser
+returns to `origin + pathname` with the session in the URL **fragment**
+(`#access_token=…`; the client uses the implicit flow). Two consequences that
+cost us work before: the route (`#add`, `#edit/{id}`, a tab route) was gone
+after sign-in, and the lead-sheet editor — which has no draft store — came
+back empty. The route can NOT ride in `redirectTo` (the fragment is
+Supabase's), so the page leaves a note for itself:
+
+- **Write** — `requireLogin()` (`utils.js`), the tab gate's default
+  (`otf-editor/create-tab-entry.js`) and the auth modal's Google button call
+  `persistReturnRecord()` right before `signInWithGoogle()`. The record
+  (`localStorage['bgb-auth-return']`, `{v, at, hash, kind, state?}`, 30 min TTL,
+  single use) holds the route plus whatever the open editor contributes through
+  `registerReturnSource(fn)`: the lead-sheet editor returns its textarea +
+  title/artist/writer (`kind: 'lead-sheet'`); the tab editor returns
+  `draftOpenHash(...)` — the IndexedDB draft's own route with `?draft=`
+  (`kind: 'tab'`), after `mountTabEditor`'s `onSubmit` has force-flushed the
+  autosave (it does NOT wait for the 1s trailing edge when signed out). With
+  no editor open the record is just the current route.
+- **Apply** — `AUTH_REDIRECT` is read at import time (before supabase-js strips
+  the fragment); only a page that actually came back from the redirect may
+  apply a record, so a record left by an abandoned attempt can't fire when the
+  user later signs in by email. `main.js::resumeAfterAuthRedirect` waits for the
+  boot route (`bootRouted`), replaces the token URL with the recorded hash,
+  runs `handleDeepLink()` and lets the editor restore: `stageEditorRestore`
+  parks the snapshot (an edit's waits for `enterEditMode` of that song, then
+  wins over the published text; a new song's is applied by
+  `applyEditorRestore()`). Message: "Signed in — ready to submit". It never
+  submits on the user's behalf. An error return (`#error=access_denied`) restores
+  the work too.
+- Tests: `e2e/editor-lifecycle.spec.js` runs the real SDK against a mock OAuth
+  endpoint that completes the redirect (`mockSupabase(page, { oauthReturn: true
+  })`). A stubbed `signInWithGoogle` cannot see this bug.
+- Known limits: the tab submit panel's comment is not carried over (retype it);
+  email/password sign-in never leaves the page, so it needs none of this.
 
 ### View Navigation
 
@@ -469,18 +572,24 @@ Lists, Add Song, etc., with the rest in the overflow (⋯) menu.
 Together those are what stopped `#new-tab?draft=…` from mounting its editor
 and then silently deleting it. The failure looked like a rendering bug — the
 page appeared, the band appeared, the editor did not — and it was decided by
-the module cache: with the editor's four dynamic imports warm the mount
+the module cache: with the editor's five dynamic imports warm the mount
 resolved in a microtask and lost the race; cold, it won. `#drafts` → Open
 lost every time; a dropped `.tef` lost about half. Covered by
 `e2e/otf-editor-drafts.spec.js` and `e2e/otf-editor-files.spec.js`.
 
-> ⚠️ Still open (deliberately not fixed here): a tab route is dispatched
-> **twice** for one navigation — `popstate` and `hashchange` both reach
-> `handleDeepLink`, so `openTabRoute` runs twice, reads the draft from
-> IndexedDB twice, and renders the work view twice (the second render is why
-> `mountTabEditor` and `renderTablaturePart` each carry a "the page moved on"
-> guard). Harmless now, but wasteful, and de-duplicating the router touches
-> every route — worth doing on its own.
+> **One navigation step, one route.** A back/forward step (or
+> `location.hash = …`) fires `popstate` AND `hashchange` whenever the
+> fragment differs, popstate first. Both used to reach `handleDeepLink`, so
+> `openWork` / `openTabRoute` ran twice per step — two builds of the song
+> page, two IndexedDB reads for a draft route, two lead-sheet draws (the
+> second render is why `mountTabEditor` and `renderTablaturePart` each carry a
+> "the page moved on" guard; the guards stay, they protect against ordinary
+> slow fetches too). `main.js` now PARKS the popstate work for one task; a
+> hashchange arriving in that window cancels it and routes by hash (the hash is
+> the more trustworthy of the two), and with no hashchange (same fragment,
+> only the state differs) the parked popstate runs. A hashchange for the URL a
+> popstate already routed within 100ms is dropped as an echo. Covered by
+> `e2e/render-counts.spec.js` (back/forward draws a chart once).
 
 ## Offline / PWA
 
@@ -499,22 +608,78 @@ mechanical shell around it, which is why the table is unit-tested
 
 | Request | Strategy | Cache | Why |
 |---|---|---|---|
-| Navigations, same-origin `.html` / `.js` / `.css` (and any other same-origin GET) | **network-first** | `bgb-shell-<ver>` | Nothing here is content-hashed. Network-first means a deploy is live on the next load and a stale module is impossible while online; the cache is the plane-mode fallback only. |
-| `docs/data/*.jsonl`, `docs/data/*.json` | **stale-while-revalidate** | `bgb-data-<ver>` | Rebuilt by every deploy (`build.yml` runs `build_works_index.py` then uploads `docs/`), and big. Paint instantly, refresh behind, fresh next visit. **Never** cached as immutable. |
+| Navigations, same-origin `.html` / `.js` / `.css` (and any other same-origin GET) | **network-first, ~1.8s timeout** | `bgb-shell-<ver>` | Nothing here is content-hashed. Network-first means a deploy is picked up on the next load (within the `max-age=600` HTTP-cache window GitHub Pages sends; a hard reload skips it) and, while the network is healthy, modules are not served stale. The cache answers when the network fails, or has not answered in `NETWORK_TIMEOUT_MS` **and a cached copy exists** (with nothing cached the request keeps waiting). Navigation preload is on. See below for why this is not stale-while-revalidate. |
+| `docs/data/*.jsonl`, `docs/data/**.json` (incl. `data/tabs/*.json`), `docs/data/songs/*.pro` | **stale-while-revalidate** | `bgb-data-<ver>` | Rebuilt by every deploy (`build.yml` runs `build_works_index.py` then uploads `docs/`), and big. Paint instantly, refresh behind, fresh next visit. **Never** cached as immutable. The background refresh sends `cache: 'no-cache'` (a conditional request, 304 when unchanged) so GitHub Pages' `max-age=600` cannot keep the cache a deploy behind. A song page blocks on its `.pro`, so this is what makes a repeat open instant. |
 | `surikov.github.io/*` (WebAudioFont player + soundfonts), `cdn.jsdelivr.net/**/bravura/**` | **cache-first** | `bgb-vendor-<ver>` | Immutable third-party assets. Opaque responses are cached deliberately — we only replay them. |
 | `*.supabase.co`, any non-GET, other third parties (analytics, the abcjs / supabase-js CDN bundles), non-http schemes | **bypass** | — | Not ours. No `respondWith`, so the request is untouched. |
 
 A navigation that misses the cache offline falls back to `./index.html` —
 every route is a hash route, so the shell can serve any of them.
 
+**Why the shell is network-first with a timeout, not stale-while-revalidate.**
+There is no build step and no content hashing, so one deploy changes dozens of
+ES modules at once. SWR would serve the old copy of each cached module and the
+new copy of the rest on the load after a deploy; a module importing a name its
+(old) sibling does not export is a hard failure — a blank app for a returning
+user. Network-first picks a deploy up on the next load (the worker's `fetch()` goes
+through the HTTP cache, and GitHub Pages sends `max-age=600`, so "next load"
+can be up to ten minutes after a deploy; this predates the timeout) and only
+gives that up on a link too slow to be getting anything done. The give-up is
+made **sticky in both directions** (`shellPolicy()`), so one page load is one
+generation of the app instead of a mix:
+
+- **Slow latch** (`slowSince`, `slowNetworkActive`): once one shell request has
+  timed out to the cache, every shell request prefers its cached copy
+  (refreshing behind) for `SLOW_NETWORK_WINDOW_MS` (15s), so the load stays on
+  the OLD generation instead of an old `main.js` with a new `work-view.js`.
+- **Fresh latch** (`freshSince`, `freshNetworkActive`): once any ES-module
+  request (`startsFreshWindow`: destination `script`, mode `cors`) has been
+  answered BY THE NETWORK, every shell request waits for the network (timeout
+  0; the cache answers only on a network error) for `FRESH_NETWORK_WINDOW_MS`
+  (15s), so a module that stalls after a deploy is waited for rather than
+  filled in from the old cache beside modules that arrived new (an export that
+  moved between modules would be a blank app). Requests already in flight
+  re-check it when their timer fires (`canAbandon`). The window is anchored at
+  the first answer, not slid, and a navigation resets it (a new page load);
+  stylesheets, classic scripts and the page itself do not start it, so a
+  stalled ENTRY module still times out to the cache.
+- The slow latch wins a tie: a request already served old means the rest of
+  the load must be old too.
+- **A hard reload waits** (`wantsFreshNetwork`): `cache: 'reload'` /
+  `'no-store'` requests (Shift-reload, "empty cache and hard reload") never
+  fall back on a timeout — the reader asked for the network. This is also the
+  escape hatch if a bad worker or stale cache ever misbehaves.
+
+The timeout logic is `networkFirstWithTimeout()` in `sw-strategy.js` (pure,
+unit-tested); `e2e/sw-and-prefetch.spec.js` exercises the real worker against a
+delaying proxy (`page.route` cannot: Playwright turns the HTTP cache off while
+a route is installed, which makes every request `cache: 'reload'`).
+
+**Updating the worker:** `pwa.js` registers with `updateViaCache: 'none'`, so an
+update check fetches `sw.js` AND its imports (`sw-strategy.js`) from the
+network. Otherwise GitHub Pages' `max-age=600` could pair a new `sw.js` with a
+ten-minute-old `sw-strategy.js` that lacks a name it imports; that fails to
+install (the old worker stays, nobody is stranded) but stalls the update.
+
+**Residual mix (unfixable without content hashing):** a module the cache has
+never held (a lazy import not yet visited, or a file a deploy ADDED) has to
+come from the network even during the slow latch, so it is new beside old
+siblings. Rare (lazy modules are leaf features), and a hard reload fixes it.
+
+**Gotcha:** the very first visit's own requests predate the worker's control
+(`clients.claim()` lands after they are issued), so they are not in its cache;
+the SECOND online load fills it. Offline support starts on the second visit.
+
 ### How a deploy invalidates the caches
 
 It doesn't have to, and that is the point. Network-first re-fetches app code
-on the next load, and stale-while-revalidate refreshes corpus data one visit
+on the next load (HTTP-cache `max-age` permitting), and stale-while-revalidate refreshes corpus data one visit
 behind — so shipping new JS, CSS or a rebuilt `index.jsonl` needs **no cache
 bump at all**.
 
-**Bump `CACHE_VERSION` in `js/sw-strategy.js` when the STRATEGY changes** —
+**Bump `CACHE_VERSION` in `js/sw-strategy.js` when the STRATEGY changes**
+(v2: `.pro` moved from the shell cache to the data cache, and shell requests
+gained the timeout) —
 a route moves between rows of the table above, a cache splits, the stored
 shape changes. Every cache name is stamped with it, and `activate` deletes
 every `bgb-`-prefixed cache that isn't the current generation (`staleCaches()`).
@@ -524,9 +689,54 @@ The new worker calls `skipWaiting()` + `clients.claim()` and posts
 already had a controller when it loaded (a first install has nothing to
 announce).
 
-`PRECACHE_URLS` is deliberately five entries: the app is dozens of unhashed
-ES modules and a hand-maintained precache list would rot. Everything else
-enters the shell cache the first time it is fetched online.
+`PRECACHE_URLS` is the five shell entries **plus `LAZY_MODULE_URLS`**
+(`js/lazy-modules.js`): every module that is *not* in the boot graph. Boot
+modules are requested on every online load, so the runtime cache always has
+them; a lazy module (the song editor, the tab renderer and player, the
+`#drafts` list — the PWA's offline surface) is requested only when its route
+first runs, so a reader who went offline before visiting it would find it
+missing. `__tests__/lazy-modules.test.js` derives the lazy set from the source
+(`import()` edges minus the static closure of `main.js`) and fails with the
+exact difference, so the list cannot rot the way a hand-kept module list would.
+Everything else enters the shell cache the first time it is fetched online.
+
+## Lazy modules (what loads at boot, and what doesn't)
+
+`index.html` loads `js/main.js`; whatever `main.js` imports **statically** is
+on the critical path of every cold load. Route- or action-specific code is
+reached with `import()` at the point of use instead (B7a took the boot graph
+from 65 modules / 1.47 MB raw to ~33 / 0.75 MB; see the test for the budget):
+
+| Loaded on demand | Trigger |
+|---|---|
+| `editor.js` (+ `smart-paste`, `dedup-check`, `visual-editor/*`, `chord-explorer/theory`) | `showView('add-song')` or any `enterEditMode` (`loadEditor()` in `main.js`, which also runs `initEditor` once, right after the first load) |
+| `review-queue.js` | Dungeon mode for a trusted/admin viewer, or a request handler (`loadReviewQueue()` runs `configureReviewQueue` once) |
+| `bounty-view`, `my-submissions`, `high-scores`, `drafts-view` | their `#` route (`renderLazyView` in `main.js` drops the result if the reader has already navigated on) |
+| `list-export`, `zip` | a list's Export pill → Download |
+| `renderers/tablature.js`, `renderers/tab-player.js`, `tab-controls-sheet.js`, `tab-playback-interactions.js` (+ `audio-unlock.js`) | the first tablature render or editor mount (`loadTabRenderKit()` in `work-view.js`, started in parallel with the OTF fetch) |
+| `otf-editor/{editor,work-edit,state,facade,cursor,actions,…}`, `tab-edit-band.js` | `mountTabEditor` (unchanged: it already used `import()`) |
+| `tef-import/*` | picking a `.tef` (unchanged) |
+| `work-suggest.js` (+ `title-match.js`) | the song page's not-found branch (A10's redirect / suggestions) |
+
+Rules that keep it that way:
+
+- **Don't add a static import of a lazy module to the boot graph.** The test
+  lists the ones that must stay out. If something boot-side needs one symbol
+  from a heavy module, move the symbol (as `positionFromSvgPoint` moved from
+  `otf-editor/cursor.js` to `renderers/tab-hit-test.js`, `deleteAffordance`
+  from `review-queue.js` to `delete-affordance.js`, and
+  `createEmptyOTF`/`createMultiTrackOTF` from `otf-editor/actions.js` to
+  `otf-editor/new-otf.js` — the old modules re-export them, so importers and
+  tests are unchanged).
+- **The lazy modules have no module-level side effects** (no `window.*`
+  assignments, no listeners at import). Keep it so: the wiring they need runs
+  explicitly after the load, never as a side effect of importing.
+- **New lazy module → add it to `LAZY_MODULE_URLS`;** new boot module → add a
+  `<link rel="modulepreload">` before the `main.js` script tag in
+  `index.html`. The test names the exact difference either way.
+- Audio must stay synchronous inside the tap (`audio-unlock.js`): never make
+  Play wait on an import — that is why `TabPlayer` loads with the renderer,
+  not on the first click.
 
 ### Drafts (`#drafts`)
 
@@ -638,8 +848,14 @@ mcp__chrome-devtools__list_console_messages({ types: ["error", "warn"] })
 - `editor.test.js` - Editor functionality, ChordPro conversion
 - `search-core.test.js` - Query parsing, chord/progression filtering
 - `song-view.test.js` - ChordPro parsing
-- `song-content.test.js` - Content on demand: cache, dedupe, legacy fallback
+- `song-content.test.js` - Content on demand: cache, dedupe, legacy fallback, prefetch
+- `sw-strategy.test.js` - Service-worker routing table, network-first timeout, slow/fresh latches (`shellPolicy`)
+- `tablature-bravura.test.js` - Pinned font, redraw-only-when-needed
+- `song-view-perf.test.js` - Batched wrapped-line measuring, next-in-list prefetch
 - `corpus.test.js` - Canon + archive + pending merge, archive gating
+- `corpus-lean-overlay.test.js` - Lean pending rows (no `content`), held-back rows, `overlaysNeedArchive`, cached curation sets
+- `song-content-pending.test.js` - Pending text read on open (`getPendingContent`), fork/tab takes
+- `lists-legacy-ids.test.js` - Legacy-ID map fetched only for a list that needs it
 - `tags.test.js` - Tag matching + virtual instrument tag derivation
 - `state.test.js` - State management, pub/sub system
 - `utils.test.js` - Utility functions
@@ -648,6 +864,7 @@ mcp__chrome-devtools__list_console_messages({ types: ["error", "warn"] })
 - `abc-notation.spec.js` - ABC notation rendering for fiddle tunes
 - `arrangement-pill.spec.js` - Arrangement pill (version switching/voting)
 - `editor.spec.js` - Song editor flows
+- `editor-lifecycle.spec.js` - Editor as a routed view (A7), leave prompt, and surviving the Google sign-in redirect (A5)
 - `error-states.spec.js` - Error handling and edge cases
 - `favorites.spec.js` - Favorites and lists
 - `landing-page.spec.js` - Homepage collections and navigation
@@ -706,7 +923,7 @@ data/index.jsonl      searchable canon rows              fetched at startup
                       (2,462 on 2026-08-19 — `wc -l` it
                        after a build rather than trusting
                        a number in this file)
-data/archive.jsonl    pruned rows, lyrics truncated      fetched when idle
+data/archive.jsonl    pruned rows, lyrics truncated      fetched on demand
 data/songs/{id}.pro   the work's full ChordPro           fetched per song page
 ```
 
@@ -755,13 +972,68 @@ for code that cannot await; a failed fetch is never cached, so the song
 page's Retry actually retries.
 
 **Corpus assembly** (`corpus.js` + `loadIndex`/`loadArchive` in main.js): the
-canon blocks first paint; `archive.jsonl` is fetched on
-`requestIdleCallback` (2s `setTimeout` fallback) and re-merged, which notifies
-`allSongs` subscribers so list views re-render with archived rows. Archive rows
-are forced to `indexed: false`, so search, collection counts and the songbook
-total ignore them while deep links, lists and redirects still resolve. Any path
-that fails to find an id awaits `window.ensureArchiveLoaded()` **once** before
-showing "not found" (openWork, `#song/` redirects, `#edit/` deep links).
+canon blocks first paint; `archive.jsonl` (16 MB raw / 3 MB gzip) is fetched
+**only when something needs an archived row** — nothing prefetches it. The
+on-demand callers: `openWork` on an id the canon doesn't hold (after waiting
+for the overlays, which are cheaper), `#edit/` deep links, the Dungeon, a list
+view / favorites / print-export / Song Lists preview / share-text that names
+an id the canon doesn't hold (`ensureArchiveForRefs` — the list view redraws
+when the archive lands instead of silently dropping the song), the bounty
+board and the add-song picker (both match against every title), My
+Submissions (only for a target the canon doesn't hold), a merge request, the
+editor's dedup check, and `syncArchiveNeed()` (below). The merge notifies
+`allSongs` subscribers. Archive rows are forced to `indexed: false`, so
+search, collection counts and the songbook total ignore them while deep
+links, lists and redirects still resolve. Any path that fails to find an id
+awaits `window.ensureArchiveLoaded()` **once** before showing "not found".
+
+**The overlays start with the index, not after it.** `loadIndex` kicks off
+`fetchSupabaseOverlays()` (pending + deleted + promoted) before awaiting the
+canon, then races it against `OVERLAY_GRACE_MS` (800 ms) so a slow backend
+can't hold first paint; when it lands later the corpus is re-merged
+(`overlayVersion` says whether it must be). The last-known deleted/promoted
+id sets are cached in `localStorage` (`songbook-curation-deleted|promoted`)
+and applied at module load, so a deleted song doesn't flash in; the fetched
+sets *replace* the cached ones (an un-delete has to take effect).
+**`promoted_songs` rescues ARCHIVED rows into search**, and until the next
+index build folds a promotion into the canon that row exists only in
+`archive.jsonl` — so `syncArchiveNeed()` loads the archive whenever a
+promoted id (or a pending edit/tab whose `replaces_id`) names a work the canon
+doesn't hold (`corpus.overlaysNeedArchive`). Until the archive is in,
+`mergeCorpus({ archiveLoaded: false })` *holds back* exactly those pending
+rows (they have nothing to merge onto and would otherwise appear as bare rows).
+A promoted id that is also deleted, a target that is deleted, and a target that
+is itself a pending SONG row do not count as "missing". **Accepted trade-off:**
+an archived sibling of a canon work (same `group_id`) is invisible to the
+"N versions" badge and the version pills until something loads the archive
+(46 of ~2,400 canon groups; PENDING OWNER DECISION — the build-side fix is a
+group size or sibling stubs in `index.jsonl` rows). A list view that redraws
+when the archive lands must check it is still the current view
+(`currentView === 'list'`), or it yanks the user back from a song they opened
+meanwhile.
+
+**The pending overlay is lean.** `pending_songs` is fetched with
+`PENDING_OVERLAY_COLUMNS` — no `content` (up to 200 KB a chart, 2 MB a tab,
+for every visitor) — plus a second id-only query for rows that have a body
+(`has_content`). A lean song row carries `has_content` + `deferred_content`;
+a lean tab part carries `content_deferred`; a fork's pending arrangement
+carries `pending_id`. The text is read from `pending_songs` when the song
+opens: `song-content.js` `getPendingContent(id)` (fetcher installed by
+main.js), which `getSongContent`, `getArrangementContent` and `loadPartOtf`
+use. Trade-off: a brand-new *pending* song has no `first_line` / `lyrics`
+until the build publishes it, so it is found by title/artist, not by lyrics.
+A pending EDIT of a published work is unaffected: the lean row omits those
+keys (never `''`), so the merge keeps the published work's values.
+
+**The landing cards belong to the home view.** `renderCollectionCardsIfHome()`
+builds them when the home view shows (and rebuilds them when the corpus
+changed since), never for a deep link — a visitor headed for a song downloads
+none of the card images.
+
+**The legacy-ID map** (`data/legacy_id_mapping.json`, 304 KB gzip) is fetched
+by `lists.js` only when a stored list holds an id that is not a known work
+slug (`needsLegacyMapping`); ids the map was checked against and did not
+translate are remembered (`songbook-legacy-checked`).
 
 **Version fields** (for alternate arrangements):
 - `group_id`: Links songs that are versions of each other (stable `grp:` ids
@@ -843,8 +1115,8 @@ yours only if a part there records you as its submitter.
 ## Dependencies
 
 - **Supabase JS** - CDN loaded for auth and database
-- Fetches `data/index.jsonl` at startup (canon only), `data/archive.jsonl` when
-  the browser idles, and `data/songs/{id}.pro` per song page
+- Fetches `data/index.jsonl` at startup (canon only), `data/archive.jsonl` only
+  when something needs an archived row, and `data/songs/{id}.pro` per song page
 - Never calls the GitHub API directly (`grep -r api.github.com docs/js/` is
   empty). Everything that reaches GitHub goes through a Supabase edge
   function, which holds the token server-side
@@ -950,11 +1222,14 @@ band keeps only back / logo / Lists / overflow.
 
 ### Strum Machine Integration
 
-Songs with matching Strum Machine backing tracks show a practice button.
+Songs with matching Strum Machine backing tracks get a link in the always-visible
+**Practice** line under the title/artist (`practiceLineHtml` in work-view.js,
+`practiceLinks` in song-controls.js); every song also gets a YouTube search link
+(`title + ' bluegrass'`). Not shown on provisional `#new-tab` pages.
 
 - Matching done via title normalization (handles "The", parenthetical suffixes)
 - Opens Strum Machine in new tab with current key
-- 605+ songs matched
+- 709 songs matched
 - Cache in `docs/data/strum_machine_cache.json`
 
 ### Covering Artists
@@ -1057,8 +1332,9 @@ the index build emits. The work itself is *not* flagged `source: 'pending'`
 — it is as durable as it was; only the part is pending.
 
 **Rendering a pending take** (`work-view.js`): `loadPartOtf(part)` parses
-the overlay's `content` instead of fetching `data/tabs/…otf.json` (which
-does not exist yet); the committed path is unchanged. `otfCacheKey(part)`
+the overlay's `content` (read from `pending_songs` when the take is opened,
+since the boot overlay is lean) instead of fetching `data/tabs/…otf.json`
+(which does not exist yet); the committed path is unchanged. `otfCacheKey(part)`
 keys a pending take by its overlay row, because a correction keeps the
 `file` of the take it fixes and would otherwise hit the cache and render
 the very version it corrects. The page says so out loud ("Just submitted —
@@ -1165,9 +1441,28 @@ See `sources/bounty-hunt/CLEANUP-PLAN.md` for the full evidence.
 Lists can have multiple owners for collaborative curation.
 
 - **Follow/Unfollow**: Follow someone else's list to see it with your lists
-- **Thunderdome**: Claim abandoned lists (owner inactive 1+ year)
-- **Shareable URLs**: `#list/{id}` URLs work for any public list
+- **Thunderdome**: when the last owner leaves a list that has followers it
+  becomes *orphaned*; any follower can claim it within 30 days
+  (`claim_orphaned_list`). The Claim button shows for a follower of an orphaned
+  list, whether they arrived by share link or through their followed lists.
+- **Shareable URLs**: `#list/{id}` URLs work for any list, signed in or not
 - Lists stored in the Supabase `user_lists` table with an `owners` uuid array
+- **Who can read the tables**: only a list's owners and followers, and only
+  signed in (RLS). Everyone else, including signed-out visitors, views a list
+  through the `get_public_list` RPC. See "Row-Level Security" in
+  `supabase/CLAUDE.md`. The client never calls `add_list_owner`;
+  `leaveList()` calls `remove_list_owner(p_list_id)`, which can only remove the
+  caller.
+- **`SupabaseAuth.fetchPublicList(id)` returns one shape**, normalized from the
+  RPC's snake_case in one place (`normalizePublicList` in `supabase-auth.js`):
+  `{ list, songs, isOwner, isFollower, isOrphaned, canClaim }`, with `songs`
+  top-level (there is no `list.songs`). That is also what `viewingPublicList`
+  holds. Read these keys, never `is_owner` / `can_claim`; a test feeds the real
+  RPC response through the real `supabase-auth.js` to keep it that way
+  (`__tests__/supabase-auth-public-list.test.js`, `lists-public-view.test.js`).
+- **Analytics** (`analytics.js`) batches events to the `log_events` RPC.
+  `supabase.rpc` resolves `{ error }` rather than throwing, so `flush()` checks
+  it and re-queues the batch on failure (one flush interval of back-off).
 
 ### Shareable Lists
 

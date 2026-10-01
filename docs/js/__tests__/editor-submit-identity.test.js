@@ -108,8 +108,12 @@ describe('the one submission path', () => {
         expect(submitPath).not.toContain('isTrustedUser');
         expect(submitPath).not.toContain('trusted');
 
-        // And only the offramp may read it, once.
-        expect(EDITOR_SOURCE.match(/isTrustedUser/g)).toHaveLength(1);
+        // And only two things may read it: the offramp (above) and the
+        // notice/label wording (refreshTrustedStatus) — both display-only.
+        expect(EDITOR_SOURCE.match(/isTrustedUser/g)).toHaveLength(2);
+        const wording = EDITOR_SOURCE.slice(
+            EDITOR_SOURCE.indexOf('async function refreshTrustedStatus'));
+        expect(wording.indexOf('isTrustedUser')).toBeLessThan(wording.indexOf('\n}\n'));
     });
 });
 

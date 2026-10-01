@@ -11,6 +11,7 @@
 // jsdom with everything injected.
 
 import { submitTab } from './submit-tab.js';
+import { persistReturnRecord } from '../auth-return.js';
 
 /**
  * Corpus part-instrument names, keyed by the editor's instrument preset.
@@ -254,10 +255,11 @@ export function targetBannerText(target = {}) {
         + 'replaced.';
 }
 
-/** Default login gate — the same three lines as utils.requireLogin. */
+/** Default login gate — the same lines as utils.requireLogin. */
 function defaultRequireLogin() {
     const auth = globalThis.window?.SupabaseAuth;
     if (auth?.isLoggedIn?.()) return true;
+    persistReturnRecord();
     auth?.signInWithGoogle?.();
     return false;
 }

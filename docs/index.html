@@ -3,15 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://ofmqlrnyldlmvggihogt.supabase.co" crossorigin>
     <title>Bluegrass Book</title>
-    <link rel="icon" type="image/png" href="images/banjo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <link rel="apple-touch-icon" href="images/icon-192.png">
     <!-- PWA: installable app + offline (js/pwa.js registers sw.js). The
          theme colour follows the theme's --bg so the OS window chrome does
          not fight the page. -->
     <link rel="manifest" href="manifest.webmanifest">
-    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#fafafa">
+    <!-- Theme before first paint: the saved choice wins, else the OS
+         preference. Keep in step with initTheme() in js/main.js. -->
+    <script>
+        (function () {
+            var t = null;
+            try { t = localStorage.getItem('theme'); } catch (e) {}
+            if (t !== 'dark' && t !== 'light') {
+                t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            document.documentElement.setAttribute('data-theme', t);
+            document.querySelector('meta[name="theme-color"]')
+                .setAttribute('content', t === 'dark' ? '#000000' : '#fafafa');
+        })();
+    </script>
     <meta name="mobile-web-app-capable" content="yes">
     <!-- The apple- prefix is deprecated in Chromium but is still what older
          iOS Safari reads for "add to home screen" — keep both. -->
@@ -27,9 +43,8 @@
         gtag('config', 'G-WZL02N7DQ8');
     </script>
     <!-- Supabase SDK -->
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <!-- ABCJS for ABC notation rendering -->
-    <script src="https://cdn.jsdelivr.net/npm/abcjs@6/dist/abcjs-basic-min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <!-- abcjs (ABC notation) is loaded on demand by song-view.js loadAbcjs() -->
 </head>
 <body>
     <!-- Auth UI: relocated into the app top band by shell.js at init -->
@@ -218,14 +233,14 @@
                             <option value="C">C</option>
                             <option value="C#">C#/Db</option>
                             <option value="D">D</option>
-                            <option value="D#">D#/Eb</option>
+                            <option value="Eb">D#/Eb</option>
                             <option value="E">E</option>
                             <option value="F">F</option>
                             <option value="F#">F#/Gb</option>
                             <option value="G">G</option>
-                            <option value="G#">G#/Ab</option>
+                            <option value="Ab">G#/Ab</option>
                             <option value="A">A</option>
-                            <option value="A#">A#/Bb</option>
+                            <option value="Bb">A#/Bb</option>
                             <option value="B">B</option>
                         </select>
                     </div>
@@ -246,7 +261,7 @@
             <div class="editor-header">
                 <button id="editor-back-btn" class="back-btn">&larr; Back</button>
                 <div class="editor-notice">
-                    Submissions are reviewed before being added to the songbook.
+                    Songs go live as soon as you submit them.
                 </div>
             </div>
 
@@ -266,10 +281,6 @@
                 <div class="field-row">
                     <label for="editor-writer">Writer:</label>
                     <input type="text" id="editor-writer" placeholder="Songwriter(s)">
-                </div>
-                <div id="edit-comment-row" class="field-row hidden">
-                    <label for="editor-comment">Edit Comment:</label>
-                    <input type="text" id="editor-comment" placeholder="Describe your changes (e.g., fixed chord alignment, added missing verse)">
                 </div>
             </div>
 
@@ -774,7 +785,44 @@ This is the [G]chorus [D]part
         </div>
     </div>
 
-    <script src="js/supabase-auth.js"></script>
+    <script defer src="js/supabase-auth.js"></script>
+    <!-- Boot graph: every module main.js imports statically, fetched in parallel
+         instead of discovered level by level. Route-specific modules are NOT
+         listed — they load on demand (js/CLAUDE.md "Lazy modules"). Kept in
+         sync by js/__tests__/lazy-modules.test.js. -->
+    <link rel="modulepreload" href="js/state.js">
+    <link rel="modulepreload" href="js/auth-return.js">
+    <link rel="modulepreload" href="js/search-query.js">
+    <link rel="modulepreload" href="js/song-content.js">
+    <link rel="modulepreload" href="js/utils.js">
+    <link rel="modulepreload" href="js/tags.js">
+    <link rel="modulepreload" href="js/analytics.js">
+    <link rel="modulepreload" href="js/otf-editor/submit-tab.js">
+    <link rel="modulepreload" href="js/otf-editor/create-tab-entry.js">
+    <link rel="modulepreload" href="js/otf-editor/existing-tabs.js">
+    <link rel="modulepreload" href="js/add-song-picker.js">
+    <link rel="modulepreload" href="js/shell.js">
+    <link rel="modulepreload" href="js/list-picker.js">
+    <link rel="modulepreload" href="js/delete-affordance.js">
+    <link rel="modulepreload" href="js/chords.js">
+    <link rel="modulepreload" href="js/renderers/chordpro.js">
+    <link rel="modulepreload" href="js/song-view.js">
+    <link rel="modulepreload" href="js/otf-editor/new-otf.js">
+    <link rel="modulepreload" href="js/otf-editor/create-tab.js">
+    <link rel="modulepreload" href="js/renderers/measure-timing.js">
+    <link rel="modulepreload" href="js/renderers/otf-tracks.js">
+    <link rel="modulepreload" href="js/flags.js">
+    <link rel="modulepreload" href="js/song-controls.js">
+    <link rel="modulepreload" href="js/toast.js">
+    <link rel="modulepreload" href="js/work-view.js">
+    <link rel="modulepreload" href="js/stem.js">
+    <link rel="modulepreload" href="js/search-core.js">
+    <link rel="modulepreload" href="js/lists.js">
+    <link rel="modulepreload" href="js/superuser-request.js">
+    <link rel="modulepreload" href="js/collections.js">
+    <link rel="modulepreload" href="js/corpus.js">
+    <link rel="modulepreload" href="js/drafts.js">
+    <link rel="modulepreload" href="js/pwa.js">
     <script type="module" src="js/main.js"></script>
 </body>
 </html>
