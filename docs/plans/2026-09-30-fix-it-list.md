@@ -24,36 +24,38 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 
 | ID | Item | Size | Branch | Status |
 |----|------|------|--------|--------|
-| A1 | List ownership RPCs + list read policies | M | `bug/list-security` | review passed — needs prod `db-push` |
-| A2 | Analytics `log_events` broken since 2026-01-07 | S | `bug/list-security` | review passed — needs prod `db-push` |
-| A3 | Shared list links show 0 songs | S | `bug/list-security` | review passed |
-| A4 | Lyrics outside section tags render blank | S | `bug/chordpro-untagged-lines` | review passed |
-| A5 | Sign-in at Submit loses the work (both editors) | S–M | `bug/editor-lifecycle` | review passed |
-| A6 | Setlist keys Eb/Ab/Bb and minor keys ignored | S | `bug/setlist-keys-not-found` | review passed |
-| A7 | Editor stays on screen after navigating away | S | `bug/editor-lifecycle` | review passed |
-| A8 | Practice line: Strum Machine + YouTube search | S | `feature/practice-line-contrast` | review passed |
-| A9 | Dark-mode contrast + undefined CSS variables | S | `feature/practice-line-contrast` | review passed |
-| A10 | Deleted-duplicate URLs say "Song not found" | S | `bug/setlist-keys-not-found` | review passed |
-| A11 | Stale / wrong editor copy | S | `bug/editor-lifecycle` | review passed |
-| B1 | Collection thumbnails 5.35 MB → ~50 KB | S | `feature/perf-thumbnails` (+ render gating in `feature/perf-boot-data`) | review passed |
-| B2 | Archive loads on every page | M | `feature/perf-boot-data` | review passed |
-| B3 | First render waits on Supabase, no timeout | M | `feature/perf-boot-data` | review passed |
-| B4 | Render-blocking third-party scripts | S | `feature/perf-boot-head` | review passed |
-| B5 | Theme flash; OS preference ignored | S | `feature/perf-boot-head` | review passed |
-| B6 | Legacy-ID map fetched for everyone | S | `feature/perf-boot-data` | review passed |
-| B7a | Route-specific modules loaded at boot | M | `feature/perf-lazy-modules` | review passed — rebase before merge |
-| B7b | Service worker, prefetch, double renders | M | `feature/perf-sw-render` | review passed |
+| A1 | List ownership RPCs + list read policies | M | `bug/list-security` | in PR — then prod `db-push` |
+| A2 | Analytics `log_events` broken since 2026-01-07 | S | `bug/list-security` | in PR — then prod `db-push` |
+| A3 | Shared list links show 0 songs | S | `bug/list-security` | in PR |
+| A4 | Lyrics outside section tags render blank | S | `bug/chordpro-untagged-lines` | in PR |
+| A5 | Sign-in at Submit loses the work (both editors) | S–M | `bug/editor-lifecycle` | in PR |
+| A6 | Setlist keys Eb/Ab/Bb and minor keys ignored | S | `bug/setlist-keys-not-found` | in PR |
+| A7 | Editor stays on screen after navigating away | S | `bug/editor-lifecycle` | in PR |
+| A8 | Practice line: Strum Machine + YouTube search | S | `feature/practice-line-contrast` | in PR |
+| A9 | Dark-mode contrast + undefined CSS variables | S | `feature/practice-line-contrast` | in PR |
+| A10 | Deleted-duplicate URLs say "Song not found" | S | `bug/setlist-keys-not-found` | in PR |
+| A11 | Stale / wrong editor copy | S | `bug/editor-lifecycle` | in PR |
+| B1 | Collection thumbnails 5.35 MB → ~50 KB | S | `feature/perf-thumbnails` (+ render gating in `feature/perf-boot-data`) | in PR |
+| B2 | Archive loads on every page | M | `feature/perf-boot-data` | in PR |
+| B3 | First render waits on Supabase, no timeout | M | `feature/perf-boot-data` | in PR |
+| B4 | Render-blocking third-party scripts | S | `feature/perf-boot-head` | in PR |
+| B5 | Theme flash; OS preference ignored | S | `feature/perf-boot-head` | in PR |
+| B6 | Legacy-ID map fetched for everyone | S | `feature/perf-boot-data` | in PR |
+| B7a | Route-specific modules loaded at boot | M | `feature/perf-lazy-modules` | in PR |
+| B7b | Service worker, prefetch, double renders | M | `feature/perf-sw-render` | in PR |
 | C1 | List store rework | L | — | not started |
 | C2 | Song index freshness | M | — | not started |
 | D1–D7 | Library building blocks | L | — | blocked on C1 |
 | E1–E6 | Editors | M–L each | — | not started |
 | F1–F6 | Visual design | M–L | — | not started |
 
-### Merge order for the in-flight branches
+### How it ships
 
-Several branches touch `docs/js/main.js`, `docs/index.html`,
-`docs/js/work-view.js` and `docs/css/style.css` in different regions. Merge in
-this order and rebase the rest after each merge:
+Solo project, so all of tier A and B ships as ONE pull request from
+`feature/fix-it-a-b`, which merges the ten item branches (and this plan) in
+the order below with merge commits. **Merge it with a merge commit, not a
+squash**: the ~40 item commits (`fix(A4)`, `perf(B2)`, …) are what make a
+later regression bisectable and revertable on its own.
 
 1. `bug/list-security` (needs a production `db push` — see "Production steps")
 2. `bug/chordpro-untagged-lines`
@@ -66,16 +68,24 @@ this order and rebase the rest after each merge:
 9. `feature/perf-sw-render`
 10. `feature/perf-lazy-modules` (largest import-graph change; last)
 
-Open PR #271 (`feature/responsive-toolbar`, top band) also edits `shell.js` and
-`style.css`; land it before or after the A8/A9 branch, not interleaved.
+Branches 1–9 merged without conflicts. B7a conflicted in five files, and
+the merge also needed integration fixes that no textual conflict showed:
+the editor-lifecycle calls made lazy, the removed Edit Comment field still
+passed to the lazy editor (a ReferenceError on first load),
+`TabRenderer.whenBravuraReady()` called outside the lazy tab kit (every tab
+page failed), the editor panel revealed before its listeners were wired,
+and two service-worker e2e tests that assumed `main.js` is the first module
+answered (with `modulepreload`, the fresh latch rightly waits for it). See
+the merge commit message for the full list. The combined branch passes
+vitest (3,171), Playwright (420/420) and pytest (863).
 
-Integration check (2026-09-30): branches 1–9 merge in this order with no
-conflicts, and the combined tree passes 127 vitest files / 3,129 tests and the
-full Playwright suite (402/402). `feature/perf-lazy-modules` conflicts with
-the combined tree in `docs/index.html`, `docs/js/main.js`,
-`docs/js/work-view.js`, `docs/js/sw-strategy.js` and its test, so rebase it
-onto main after the others land. Its unit test names the exact
-modulepreload / `LAZY_MODULE_URLS` differences to fix after the rebase.
+Open PR #271 (`feature/responsive-toolbar`, top band) also edits `shell.js` and
+`style.css`; rebase it after this lands.
+
+The production migration (A1/A2) can be applied before or after the deploy:
+the client's list writes already satisfy the new INSERT policy
+(`createCloudList` sets `owners`). Apply it from `main` after merging, so the
+migration ledger never shows an unmerged branch's migration as drift.
 
 ### Production steps
 
