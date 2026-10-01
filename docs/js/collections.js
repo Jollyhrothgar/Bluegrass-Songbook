@@ -112,3 +112,28 @@ export function getCollectionCount(allSongs, query, searchFn) {
     const results = searchFn(query, allSongs);
     return results?.length || 0;
 }
+
+/**
+ * 160px-wide WebP thumbnails (2x of the 80px card slot) for the landing-page
+ * cards. Originals stay in images/ for larger uses. w/h are the thumbnail's
+ * intrinsic size so the browser can reserve layout space.
+ */
+export const COLLECTION_THUMBNAILS = {
+    'bluegrass-standards': { src: 'images/Scruggs-160.webp', w: 160, h: 205 },
+    'all-bluegrass': { src: 'images/billy-160.webp', w: 160, h: 163 },
+    'gospel': { src: 'images/jimmy_martin_gospel-160.webp', w: 160, h: 160 },
+    'fiddle-tunes': { src: 'images/fiddle_tunes-160.webp', w: 160, h: 143 },
+    'all-songs': { src: 'images/jam_friendly-160.webp', w: 160, h: 162 },
+    'bluegrass-dungeon': { src: 'images/bluegrass_dungeon-160.webp', w: 160, h: 160 }
+};
+
+/**
+ * Build the <img> markup for a collection card thumbnail, or '' if none.
+ * @param {string} id - Collection id
+ * @param {string} alt - Already-escaped alt text
+ */
+export function collectionThumbnailHtml(id, alt) {
+    const t = COLLECTION_THUMBNAILS[id];
+    if (!t) return '';
+    return `<img src="${t.src}" alt="${alt}" width="${t.w}" height="${t.h}" loading="lazy" decoding="async">`;
+}
