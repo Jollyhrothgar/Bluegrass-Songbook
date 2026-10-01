@@ -34,12 +34,6 @@ const FEEDBACK_DURATION_SEC = 0.4;
 const FEEDBACK_VOLUME = 0.7;
 const DEFAULT_FEEDBACK_TUNING = ['D4', 'B3', 'G3', 'D3', 'G4'];
 
-// Editor-only renderer weights. The site's read view keeps TabRenderer's
-// defaults (1.5 / 3) — these are the "thicker stems" of plan
-// tab-editor-input-parity §7, and they apply while editing only.
-const EDITOR_STEM_WIDTH = 2.25;
-const EDITOR_BEAM_THICKNESS = 4;
-
 // Rows are FIXED in the editor, not reflowed (plan §7). We pin whatever
 // the read view computed for this container width; this is the fallback
 // when the container has no layout box yet to ask.
@@ -338,11 +332,10 @@ export class OTFEditor {
         // it still lands on the notes. The overlay is the only thing the
         // editor adds to the drawing.
 
-        // Thicker stems while editing ("thicker stems desires", §7):
-        // entry is close work, and 1.5px stems disappear under the
-        // cursor box. The read view keeps the site default.
-        this.renderer.options.stemWidth = EDITOR_STEM_WIDTH;
-        this.renderer.options.beamThickness = EDITOR_BEAM_THICKNESS;
+        // Stem and beam weights included: the editor once drew heavier
+        // stems (2.25px / 4px beams, §7 "thicker stems desires"); Mike
+        // preferred the read view's look (2026-10-01), so it now keeps
+        // TabRenderer's defaults like everything else.
 
         // Follow EVERY renderer layout pass — including its own async
         // re-renders (resize observer, Bravura arrival), which otherwise

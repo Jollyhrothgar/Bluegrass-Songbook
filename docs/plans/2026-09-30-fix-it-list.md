@@ -49,6 +49,7 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | E1–E6 | Editors | M–L each | — | not started |
 | F1–F6 | Visual design | M–L | — | not started |
 | F7 | Tab view rework (Mike wants to lead this) | L | — | not started |
+| F8 | List view rework + a way to read notes (Mike wants to lead this) | L | — | not started |
 
 ### How it ships
 
@@ -191,6 +192,20 @@ the plan item it belongs with.
   - Large unaudited images: `images/Mike.png` (4.4 MB), `images/waltz.png`.
 - **Navigation (D6)**: after going back from a song to search, Forward is
   lost because the search view pushes a new history entry.
+
+---
+
+### Next: UI state inventory (after this PR merges)
+
+Mike's plan (2026-10-01): merge tiers A+B, then take stock of the app's
+UI states so each one can be opened on its own and workshopped with Claude
+Design, starting with F7 (tab view) and F8 (list view). The inventory is a
+list of states, each with a stable URL, the seeded data it needs (e.g. a
+local list with notes), and screenshots at phone and desktop width in light
+and dark themes. States to cover: home, search results, song page (lead
+sheet), song page (tab, single and multi-track), tab editor, lead-sheet
+editor, list view, lists library, Bluegrass Dungeon, and the empty/error
+states.
 
 ---
 
@@ -730,3 +745,21 @@ Rule: **hide setup, show content and resources.**
     selected state, emoji icons (🥁 🔁 ✏️ 🔈), and a bottom band of ~15
     always-visible controls on desktop (F4: show only what you touch while
     playing; setup goes in one sheet).
+- **F8 List view rework** — *Mike, 2026-10-01: "the list view has no way to
+  look at notes", and "I'm displeased with all the boxes, the view should be
+  simpler". To be workshopped with F7 (see "Next: UI state inventory").*
+  - **The notes view was lost in the July redesign.** `66660a11e`
+    (2026-02-03) showed a resizable, collapsible notes panel on the song page
+    when it was opened from a list (`focus-notes-panel`). `7d2d17905`
+    (2026-07-23, "M2c: focus mode is the immersive shell") deleted it along
+    with focus mode. Since then a list item's notes are only reachable through
+    the editing sheet (📝 on a list row, ⋯ → Song notes): the text is never
+    shown beside the chart or in the list. Restoring a read view is the core
+    of D3 (notes beside the chart; on a phone, a pinned card).
+  - **Boxes**: the list header is a bordered card (title, count, Export,
+    Share, Duplicate, Request Song, Delete); every row is another bordered
+    card. A phone row carries ✓ / 📝 / + / ✕, and the 📝 is a faint emoji
+    that doesn't read as "notes".
+  - **It's a search page in disguise**: the search box and nine filter chips
+    sit above the list, and rows show tags, "Also by" and first lines, while
+    the setlist data (key, tempo, notes) is reduced to small badges.

@@ -3,11 +3,12 @@
 // Plan docs/plans/tab-editor-input-parity.md §8.1/§9.2: pressing Edit
 // used to re-space every measure (`centerNotes: false`) and sprinkle rest
 // glyphs (`showRests: true`, already the renderer default), so "the page
-// you edit is the page you publish" was false. The only things the editor
-// still changes are ENTRY affordances, not document shape: thicker stems
-// (§7 "thicker stems desires") and a pinned row count (§7 "horizontal
-// shifting / column mutation makes it non-deterministic where measures
-// run").
+// you edit is the page you publish" was false. The only thing the editor
+// still changes is an ENTRY affordance, not document shape: a pinned row
+// count (§7 "horizontal shifting / column mutation makes it
+// non-deterministic where measures run"). It used to draw thicker stems
+// too (§7 "thicker stems desires"); Mike preferred the read view's weights
+// (2026-10-01), so those match now.
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 
 import { OTFEditor } from '../../otf-editor/editor.js';
@@ -40,11 +41,10 @@ describe('editor renderer options', () => {
         expect(editor.renderer.options.showRests).toBe(readDefault.options.showRests);
     });
 
-    it('draws thicker stems and beams than the read view', () => {
+    it('draws stems and beams exactly as the read view does', () => {
         const readDefault = new TabRenderer(document.createElement('div'));
-        expect(editor.renderer.options.stemWidth).toBe(2.25);
-        expect(editor.renderer.options.beamThickness).toBe(4);
-        // the site's read view is untouched
+        expect(editor.renderer.options.stemWidth).toBe(readDefault.options.stemWidth);
+        expect(editor.renderer.options.beamThickness).toBe(readDefault.options.beamThickness);
         expect(readDefault.options.stemWidth).toBe(1.5);
         expect(readDefault.options.beamThickness).toBe(3);
     });
