@@ -1533,6 +1533,9 @@ async function loadIndex() {
         ]);
 
         const songs = rebuildCorpus();
+        // Cached promoted ids count at once, not only after the overlay
+        // fetch settles (supabase-js retries a failing GET for several seconds).
+        syncArchiveNeed();
 
         // A retry that succeeds clears both the flag and the banner a
         // previous failure left up.
@@ -1557,19 +1560,19 @@ async function loadIndex() {
         // corpus was loading: that navigation owns the view, and re-running
         // the boot URL here would steal it back (the hash still reads as the
         // boot hash for nav links that push state without a hashchange).
-        let bootDeepLinked = false;
         if (canRouteBootUrl()) {
-            if (handleDeepLink()) {
-                bootDeepLinked = true;
-            } else {
+            if (!handleDeepLink()) {
                 showView('home');
                 history.replaceState({ view: 'home' }, '', window.location.pathname);
             }
         }
         // The cards belong to the home view: a visitor headed for a song never
-        // builds them (or downloads their images). The currentView subscriber
-        // builds them on the way home.
-        if (!bootDeepLinked) renderCollectionCardsIfHome();
+        // builds them (or downloads their images) because this returns early
+        // unless the view is 'home'. Not gated on the deep-link result: some
+        // handlers (#request-song, #invite/<token>) return true yet leave the
+        // landing page showing. The currentView subscriber builds them on the
+        // way home otherwise.
+        renderCollectionCardsIfHome();
 
         // Fetch bounties in background (non-blocking, not needed for initial render)
         refreshBounties();

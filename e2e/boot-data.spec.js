@@ -117,6 +117,17 @@ test.describe('B1 — collection cards belong to the home view', () => {
         await page.goto('/');
         await expect(page.locator('.collection-card')).toHaveCount(6, { timeout: 20000 });
     });
+
+    // These deep links return "handled" but leave the landing page showing, so
+    // the cards must still be built.
+    for (const hash of ['#request-song', '#invite/abc123']) {
+        test(`${hash} (stays on the landing page) still shows the cards`, async ({ page }) => {
+            await mockSupabase(page, { signedIn: false });
+            page.on('dialog', dialog => dialog.dismiss().catch(() => {}));
+            await page.goto('/' + hash);
+            await expect(page.locator('.collection-card')).toHaveCount(6, { timeout: 20000 });
+        });
+    }
 });
 
 test.describe('B2 — the archive is fetched on demand', () => {
