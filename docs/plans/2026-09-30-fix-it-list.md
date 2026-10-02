@@ -60,7 +60,7 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | B8 | Slimmer index: move rarely-used fields off the startup path | M | — | not started (Mike: "return to this later") |
 | C1 | List store rework | L | — | not started |
 | C2 | Song index freshness | M | — | not started |
-| D1–D7 | Library building blocks | L | — | blocked on C1 |
+| D1–D7 | Library building blocks | L | `feature/ui-state-inventory` (design) | design first, as proposed states in the UI state inventory; build blocked on C1 |
 | E1–E6 | Editors | M–L each | — | not started |
 | F1–F6 | Visual design | M–L | — | not started |
 | F7 | Tab view rework (Mike wants to lead this) | L | — | not started |
@@ -220,7 +220,7 @@ the plan item it belongs with.
 
 ---
 
-### Next: UI state inventory (after this PR merges)
+### Next: UI state inventory
 
 Mike's plan (2026-10-01): merge tiers A+B, then take stock of the app's
 UI states so each one can be opened on its own and workshopped with Claude
@@ -231,6 +231,30 @@ and dark themes. States to cover: home, search results, song page (lead
 sheet), song page (tab, single and multi-track), tab editor, lead-sheet
 editor, list view, lists library, Bluegrass Dungeon, and the empty/error
 states.
+
+**Proposed states join the inventory too** (Mike, 2026-10-01: "the
+speculative list work should also join the UI state"). The D-tier library
+features don't exist yet, so they enter as mockup states, marked *proposed*,
+workshopped alongside F7/F8 instead of being built first:
+
+- **D1 Folders**: the library as nested folders, with a shared band list filed
+  in each member's own folder.
+- **D2 Items**: a list with dividers ("Set 1", "Week 2 goals") and the same
+  song twice.
+- **D3 Notes**: a list note, and a per-item note shown beside the chart (a side
+  panel on desktop, a pinned card on a phone), in the small Markdown subset,
+  with pasted YouTube / Strum Machine links rendered as buttons. This is also
+  the answer to F8's lost notes view.
+- **D4 Overrides**: an item's key, capo and tempo, visibly applied on the song
+  page ("Setlist key: A, capo 2").
+- **D5 Sharing**: the "Shared with me / Following" shelf and Leave.
+- **D6 Play-through**: a list played song to song (a performance mode).
+- **D7 Printable songbook**: a table of contents and setlist keys and notes
+  applied.
+
+Designing these before C1 is deliberate: the agreed screens decide what the
+list store must hold (item kinds and ids, where notes live, per-user folder
+placement), so C1 is built to the design rather than guessed ahead of it.
 
 ---
 
