@@ -13,6 +13,20 @@ backlog for making the app feel like **one book**:
 Every item has an ID. Refer to items by ID in branches, commits, PRs and
 issues (`fix(A4): ...`). Update the **Status** column when an item moves.
 
+**This file is the single source of truth for the backlog.** Anyone working
+here (Mike, or a Claude session on any machine) reads the Status table before
+proposing work, updates it in the same PR as the change, and records new
+findings in this file (the "Follow-ups" section or a new ID), not only in
+issues, chat or an assistant's memory. Working agreements (Mike):
+
+- **One PR per batch** of items (solo project), merged with a **merge
+  commit, not a squash**, so each item's commits stay bisectable and
+  revertable.
+- **Mike leads F7 (tab view) and F8 (list view).** Bring him options and
+  findings; don't redesign them unilaterally.
+- **Library features are generic building blocks**, not use-case types
+  (see D: "build the bones, not the use cases").
+
 **Order:** A first (A1 leads). B and F1–F2 can run alongside; F6 mockups any
 time. Then C, then D and E on top of C.
 
@@ -24,25 +38,26 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 
 | ID | Item | Size | Branch | Status |
 |----|------|------|--------|--------|
-| A1 | List ownership RPCs + list read policies | M | `bug/list-security` | in PR — then prod `db-push` |
-| A2 | Analytics `log_events` broken since 2026-01-07 | S | `bug/list-security` | in PR — then prod `db-push` |
-| A3 | Shared list links show 0 songs | S | `bug/list-security` | in PR |
-| A4 | Lyrics outside section tags render blank | S | `bug/chordpro-untagged-lines` | in PR |
-| A5 | Sign-in at Submit loses the work (both editors) | S–M | `bug/editor-lifecycle` | in PR |
-| A6 | Setlist keys Eb/Ab/Bb and minor keys ignored | S | `bug/setlist-keys-not-found` | in PR |
-| A7 | Editor stays on screen after navigating away | S | `bug/editor-lifecycle` | in PR |
-| A8 | Practice line: Strum Machine + YouTube search | S | `feature/practice-line-contrast` | in PR |
-| A9 | Dark-mode contrast + undefined CSS variables | S | `feature/practice-line-contrast` | in PR |
-| A10 | Deleted-duplicate URLs say "Song not found" | S | `bug/setlist-keys-not-found` | in PR |
-| A11 | Stale / wrong editor copy | S | `bug/editor-lifecycle` | in PR |
-| B1 | Collection thumbnails 5.35 MB → ~50 KB | S | `feature/perf-thumbnails` (+ render gating in `feature/perf-boot-data`) | in PR |
-| B2 | Archive loads on every page | M | `feature/perf-boot-data` | in PR |
-| B3 | First render waits on Supabase, no timeout | M | `feature/perf-boot-data` | in PR |
-| B4 | Render-blocking third-party scripts | S | `feature/perf-boot-head` | in PR |
-| B5 | Theme flash; OS preference ignored | S | `feature/perf-boot-head` | in PR |
-| B6 | Legacy-ID map fetched for everyone | S | `feature/perf-boot-data` | in PR |
-| B7a | Route-specific modules loaded at boot | M | `feature/perf-lazy-modules` | in PR |
-| B7b | Service worker, prefetch, double renders | M | `feature/perf-sw-render` | in PR |
+| A1 | List ownership RPCs + list read policies | M | `bug/list-security` | done — #274 + migration applied 2026-10-01 (`db-check` 17/17) |
+| A2 | Analytics `log_events` broken since 2026-01-07 | S | `bug/list-security` | done — #274 + migration applied 2026-10-01 (live `log_events` → 200) |
+| A3 | Shared list links show 0 songs | S | `bug/list-security` | done — #274 (2026-10-01) |
+| A4 | Lyrics outside section tags render blank | S | `bug/chordpro-untagged-lines` | done — #274 (2026-10-01) |
+| A5 | Sign-in at Submit loses the work (both editors) | S–M | `bug/editor-lifecycle` | done — #274 (2026-10-01) |
+| A6 | Setlist keys Eb/Ab/Bb and minor keys ignored | S | `bug/setlist-keys-not-found` | done — #274 (2026-10-01) |
+| A7 | Editor stays on screen after navigating away | S | `bug/editor-lifecycle` | done — #274 (2026-10-01) |
+| A8 | Practice line: Strum Machine + YouTube search | S | `feature/practice-line-contrast` | done — #274 (2026-10-01) |
+| A9 | Dark-mode contrast + undefined CSS variables | S | `feature/practice-line-contrast` | done — #274 (2026-10-01) |
+| A10 | Deleted-duplicate URLs say "Song not found" | S | `bug/setlist-keys-not-found` | done — #274 (2026-10-01) |
+| A11 | Stale / wrong editor copy | S | `bug/editor-lifecycle` | done — #274 (2026-10-01) |
+| B1 | Collection thumbnails 5.35 MB → ~50 KB | S | `feature/perf-thumbnails` (+ render gating in `feature/perf-boot-data`) | done — #274 (2026-10-01) |
+| B2 | Archive loads on every page | M | `feature/perf-boot-data` | done — #274 (2026-10-01) |
+| B3 | First render waits on Supabase, no timeout | M | `feature/perf-boot-data` | done — #274 (2026-10-01) |
+| B4 | Render-blocking third-party scripts | S | `feature/perf-boot-head` | done — #274 (2026-10-01) |
+| B5 | Theme flash; OS preference ignored | S | `feature/perf-boot-head` | done — #274 (2026-10-01) |
+| B6 | Legacy-ID map fetched for everyone | S | `feature/perf-boot-data` | done — #274 (2026-10-01) |
+| B7a | Route-specific modules loaded at boot | M | `feature/perf-lazy-modules` | done — #274 (2026-10-01) |
+| B7b | Service worker, prefetch, double renders | M | `feature/perf-sw-render` | done — #274 (2026-10-01) |
+| B8 | Slimmer index: move rarely-used fields off the startup path | M | — | not started (Mike: "return to this later") |
 | C1 | List store rework | L | — | not started |
 | C2 | Song index freshness | M | — | not started |
 | D1–D7 | Library building blocks | L | — | blocked on C1 |
@@ -53,8 +68,9 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 
 ### How it ships
 
-Solo project, so all of tier A and B ships as ONE pull request from
-`feature/fix-it-a-b`, which merges the ten item branches (and this plan) in
+**Shipped 2026-10-01 as PR #274** (merge commit `d02c260d3`). Solo
+project, so all of tier A and B went out as ONE pull request from
+`feature/fix-it-a-b`, which merged the ten item branches (and this plan) in
 the order below with merge commits. **Merge it with a merge commit, not a
 squash**: the ~40 item commits (`fix(A4)`, `perf(B2)`, …) are what make a
 later regression bisectable and revertable on its own.
@@ -90,6 +106,15 @@ the client's list writes already satisfy the new INSERT policy
 migration ledger never shows an unmerged branch's migration as drift.
 
 ### Production steps
+
+**Done 2026-10-01.** Both migrations applied (Mike ran `supabase db push`
+after the dry run listed exactly these two files); `./scripts/utility
+db-check` passed 17/17 including the four new invariants; a signed-out
+request to `user_lists` / `user_list_items` returns `[]`; `get_public_list`
+still answers; the live site's `log_events` call returns 200. Steps 3 and 4
+(the `psql` scripts) were not run: no production connection string was at
+hand. The steps below are kept as the record and as the pattern for the next
+migration.
 
 **A1/A2** — migrations `20260930000000_list_ownership_and_read_policies.sql`
 and `20260930010000_fix_log_events_search_path.sql` in `bug/list-security`.
@@ -585,6 +610,20 @@ still import what they import.
   loaded from `@latest` (`tablature.js:773`) — pin a version. Tab JSON is
   fetched with `cache: 'no-cache'` (`work-view.js:338`) — let the service
   worker / HTTP cache do their job.
+
+---
+
+### B8 — Slimmer index · M
+
+After tiers A+B (measured 2026-10-01, cold phone visit, 4× CPU, fast-4G-class
+network): collections on screen at 2.1 s (was ~4.1 s), 35 startup modules,
+~1.2 MB for the whole visit. `data/index.jsonl` (725 KB gzip, 3.1 MB raw,
+~0.8 s on 4G) is now the largest item on the critical path. By bytes its
+heaviest fields are `lyrics` (~37%), `progression` (~11%, read only by
+`prog:` searches) and the per-tag `{score, source}` objects (~7%). Direction:
+move `progression` (and anything else only some searches read) into a
+separate file loaded on first use, store tags as keys only, and measure
+again with the same harness. Mike, 2026-10-01: return to this later.
 
 ---
 
