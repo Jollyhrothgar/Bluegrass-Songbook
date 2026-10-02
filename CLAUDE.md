@@ -540,7 +540,10 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
   PDFs in `docs/data/docs/` still serve — this killed the intake, not the
   shelf.
 
-**What's next**: See GitHub milestones (`gh issue list --milestone "Milestone Name"`)
+**What's next**: `docs/plans/2026-09-30-fix-it-list.md` is the backlog and its single
+source of truth: a Status table by ID, the working agreements, and the follow-ups.
+Read it before proposing work and update its Status column in the same PR as the
+change. (Older GitHub milestones still exist: `gh issue list --milestone "..."`.)
 
 **Recent (Feb 2026):**
 - **BluegrassLyrics.com import**: 764 songs imported (494 with chords from UG enrichment, 270 lyrics-only). See `sources/bluegrass-lyrics/CLAUDE.md` and `sources/ultimate-guitar/CLAUDE.md`.
@@ -572,6 +575,7 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 | Write a blog post | `docs/posts/` (then run `./scripts/utility build-posts`) |
 | Analyze usage data | `analytics/dashboard.ipynb` |
 | Analyze grassiness data | `analytics/grassiness_analysis.ipynb` |
+| Decide what to work on next | `docs/plans/2026-09-30-fix-it-list.md` (Status table) |
 | See product vision | `ROADMAP.md` |
 | Run parser tests | `uv run pytest` |
 | Run frontend tests | `npm test` |
