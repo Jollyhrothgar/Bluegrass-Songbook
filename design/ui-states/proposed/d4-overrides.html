@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proposed D4: Overrides</title>
+<link rel="stylesheet" href="mock.css">
+<style>
+    .with-pop { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 48px; align-items: start; }
+    @media (max-width: 720px) {
+        .with-pop { display: block; }
+        .with-pop .pop { margin-top: 14px; }
+    }
+</style>
+</head>
+<body data-proposal="D4 Overrides" data-back="1">
+<main class="page wide">
+    <div class="with-pop">
+        <div>
+            <div class="crumbs">Friday Jam, Oct 3 / <b>2 of 9</b></div>
+            <h1 class="song-title">Wagon Wheel</h1>
+            <div class="meta">Old Crow Medicine Show</div>
+
+            <!-- One line says what the list changed, and what the song is on its own. -->
+            <div class="setline">
+                <span><b>Setlist key: A</b></span>
+                <span>Capo 2, play G shapes</span>
+                <span>92 bpm</span>
+                <span class="was">The song's own key is G</span>
+                <span class="act">Change</span>
+            </div>
+
+            <script type="text/chart">
+# Verse 1
+[G]Headin' down south to the [D]land of the pines
+I'm [Em]thumbin' my way into [C]North Caroline
+[G]Starin' up the road and [D]pray to God I see [C]headlights
+# Chorus
+So [G]rock me mama like a [D]wagon wheel
+[Em]Rock me mama any [C]way you feel
+[G]Hey, [D]mama [C]rock me
+            </script>
+        </div>
+
+        <!-- What "Change" opens: a popover on desktop, a bottom sheet on a phone. -->
+        <div class="pop">
+            <h3>In this list</h3>
+            <div class="field"><label>Key</label><span class="val">A</span><span class="hint">song's own: G</span></div>
+            <div class="field"><label>Capo</label><span class="val">2</span><span class="hint">shows G shapes</span></div>
+            <div class="field"><label>Tempo</label><span class="val">92 bpm</span></div>
+            <div class="field"><label>Shown as</label><span class="seg-ctl"><span class="on">Shapes</span><span>Sounding</span></span></div>
+            <p class="fine">Saved on this list item, so everyone who opens the list sees it, and print and export use it too. It doesn't change the song anywhere else.</p>
+            <div class="actions" style="margin-top:12px"><span class="quiet">Reset to the song's own</span></div>
+        </div>
+    </div>
+</main>
+<script src="mock.js"></script>
+</body>
+</html>

@@ -60,7 +60,7 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | B8 | Slimmer index: move rarely-used fields off the startup path | M | — | not started (Mike: "return to this later") |
 | C1 | List store rework | L | — | not started |
 | C2 | Song index freshness | M | — | not started |
-| D1–D7 | Library building blocks | L | `feature/ui-state-inventory` (design) | design first, as proposed states in the UI state inventory; build blocked on C1 |
+| D1–D7 | Library building blocks | L | `feature/ui-state-inventory` (design) | first mockups drawn (`design/ui-states/proposed/`), to be workshopped; build blocked on C1 |
 | E1–E6 | Editors | M–L each | — | not started |
 | F1–F6 | Visual design | M–L | — | not started |
 | F7 | Tab view rework (Mike wants to lead this) | L | — | not started |
@@ -251,6 +251,22 @@ workshopped alongside F7/F8 instead of being built first:
 - **D6 Play-through**: a list played song to song (a performance mode).
 - **D7 Printable songbook**: a table of contents and setlist keys and notes
   applied.
+
+**Built 2026-10-01** in `design/ui-states/` (branch
+`feature/ui-state-inventory`): 32 existing states and 7 proposed ones, each
+captured at phone and desktop width in light and dark. `README.md` there
+lists every state, how to open one live (`capture.js --open <id>`), and, for
+each proposed mockup, what it claims, what C1 would need, and the questions to
+settle. The D1 and D5 mockups disagree on purpose about where a shared list
+lives (in your folders, or in its own section). Screenshots are gitignored
+build output.
+
+Found while capturing (both belong with F2/F5):
+
+- On a phone the add-to-list picker on the song page is clipped off the left
+  edge of the screen.
+- On a phone two chords over a short syllable run together ("A" and "D" over
+  "to Charlottesville" read as "AD").
 
 Designing these before C1 is deliberate: the agreed screens decide what the
 list store must hold (item kinds and ids, where notes live, per-user folder

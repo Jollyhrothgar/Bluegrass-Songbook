@@ -6,6 +6,7 @@
 //   node design/ui-states/capture.js --group Lists
 //   node design/ui-states/capture.js --open list-view            # a real window
 //   node design/ui-states/capture.js --open list-view --phone --dark
+//   node design/ui-states/capture.js --list          # the table in README.md
 //
 // Output: design/ui-states/shots/<id>--<phone|desktop>-<light|dark>.png and
 // shots/index.html (a gallery). `shots/` is gitignored: it is build output,
@@ -168,7 +169,22 @@ ${groups.map(g => `<div id="g-${esc(g)}">${section(g)}</div>`).join('\n')}
 
 // ── main ───────────────────────────────────────────────────────────────
 
+/** `--list`: the inventory as a Markdown table, for README.md. */
+function printList() {
+    let group = null;
+    for (const s of STATES) {
+        if (s.group !== group) {
+            group = s.group;
+            console.log(`\n### ${group}\n\n| State | What it shows | Where | For |\n|---|---|---|---|`);
+        }
+        const where = s.proposed ? `[${s.url}](${s.url})` : `\`${s.url}\``;
+        const extra = [s.seed && 'seeded data', s.mock && 'mocked backend', s.setup && 'needs clicks'].filter(Boolean).join(', ');
+        console.log(`| \`${s.id}\` | ${s.title} | ${where}${extra ? ` (${extra})` : ''} | ${(s.workshop || []).join(', ')} |`);
+    }
+}
+
 async function main() {
+    if (flag('--list')) return printList();
     const states = selectStates();
     if (!states.length) {
         console.error(`No such state. Known ids:\n  ${STATES.map(s => s.id).join('\n  ')}`);

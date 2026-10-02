@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proposed D5: Sharing</title>
+<link rel="stylesheet" href="mock.css">
+<style>
+    .confirm { margin: 10px 0 2px; padding: 12px 14px; border-radius: 8px; background: var(--bg-tertiary); font-size: 14px; }
+    .confirm .actions { margin-top: 10px; }
+    .confirm .actions .btn { padding: 5px 12px; }
+</style>
+</head>
+<body data-proposal="D5 Sharing">
+<main class="page">
+    <div class="head">
+        <div class="grow">
+            <h1>Library</h1>
+            <div class="meta">9 lists of your own, 3 from other people</div>
+        </div>
+        <div class="actions"><span>New list</span><span>New folder</span></div>
+    </div>
+
+    <h2>Yours</h2>
+    <ul class="rows">
+        <li><span class="tw">&#9656;</span><span class="body"><span class="name">Band</span></span><span class="end">3 lists</span></li>
+        <li><span class="tw">&#9656;</span><span class="body"><span class="name">Practice</span></span><span class="end">2 lists</span></li>
+        <li><span class="tw"></span><span class="body"><span class="name">Favorites</span></span><span class="end">38 songs</span></li>
+    </ul>
+
+    <h2>Shared with me</h2>
+    <div class="meta">Lists you co-own. You can edit them; so can the other owners.</div>
+    <ul class="rows">
+        <li style="display:block">
+            <div style="display:flex;gap:12px;align-items:baseline">
+                <span class="tw"></span>
+                <span class="body"><span class="name">Tuesday Pickers jam list</span><div class="note">31 songs &middot; with Dana, Luis and 2 others &middot; Dana edited it yesterday</div></span>
+                <span class="end">Leave</span>
+            </div>
+            <div class="confirm">
+                <b>Leave Tuesday Pickers jam list?</b> It stays as it is for the other 4 owners. You can ask any of them to add you back.
+                <div class="actions"><span class="btn danger">Leave list</span><span class="quiet">Cancel</span></div>
+            </div>
+        </li>
+        <li><span class="tw"></span><span class="body"><span class="name">Friday Jam, Oct 3</span><div class="note">9 songs &middot; with Sarah, Tom and 2 others &middot; filed in Band</div></span><span class="end">Leave</span></li>
+    </ul>
+
+    <h2>Following</h2>
+    <div class="meta">Other people's lists. You see their changes; you can't edit.</div>
+    <ul class="rows">
+        <li><span class="tw"></span><span class="body"><span class="name">Festival jam standards</span><div class="note">64 songs &middot; by Walnut Valley Pickers &middot; 3 new since you looked</div></span><span class="end wrap">Copy to mine &middot; Unfollow</span></li>
+    </ul>
+</main>
+<script src="mock.js"></script>
+</body>
+</html>

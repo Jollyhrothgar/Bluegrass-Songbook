@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proposed D6: Play-through</title>
+<link rel="stylesheet" href="mock.css">
+<style>
+    /* Play-through hides the top band: the chart and the way forward are all that is left. */
+    .top { display: none; }
+    body { padding-bottom: 72px; }
+    .stage-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+    .stage-head .song-title { font-size: 30px; }
+    .stage-head .k { font-size: 18px; font-weight: 600; }
+    .oneline { margin-top: 6px; font-size: 15px; color: var(--text-secondary); }
+    .exit { position: fixed; top: 14px; left: 16px; font-size: 14px; color: var(--text-secondary); }
+    .page { padding-top: 44px; }
+</style>
+</head>
+<body data-proposal="D6 Play-through">
+<span class="exit">&larr; Friday Jam, Oct 3</span>
+<main class="page wide">
+    <div class="stage-head">
+        <h1 class="song-title">Wagon Wheel</h1>
+        <span class="k">A</span>
+        <span class="meta">capo 2, G shapes &middot; 92 bpm</span>
+    </div>
+    <div class="oneline">Sarah sings lead. Fiddle takes the turnaround.</div>
+
+    <div class="cols2">
+        <script type="text/chart" data-class="big">
+# Verse 1
+[G]Headin' down south to the [D]land of the pines
+I'm [Em]thumbin' my way into [C]North Caroline
+[G]Starin' up the road and [D]pray to God I see [C]headlights
+[G]I made it down the coast in [D]seventeen hours
+[Em]Pickin' me a bouquet of [C]dogwood flowers
+And I'm a-[G]hopin' for Raleigh, I can [D]see my baby to[C]night
+# Chorus
+So [G]rock me mama like a [D]wagon wheel
+[Em]Rock me mama any [C]way you feel
+[G]Hey, [D]mama [C]rock me
+[G]Rock me mama like the [D]wind and the rain
+[Em]Rock me mama like a [C]southbound train
+[G]Hey, [D]mama [C]rock me
+# Verse 2
+[G]Runnin' from the cold up in [D]New England
+I was [Em]born to be a fiddler in an [C]old-time string band
+My [G]baby plays the guitar, [D]I pick a banjo [C]now
+        </script>
+    </div>
+</main>
+
+<nav class="playbar">
+    <span class="prev">&larr; Old Home Place</span>
+    <span class="pos">2 of 9 &middot; Set 1</span>
+    <span class="next">Foggy Mountain Breakdown &middot; G &rarr;</span>
+</nav>
+<script src="mock.js"></script>
+</body>
+</html>
