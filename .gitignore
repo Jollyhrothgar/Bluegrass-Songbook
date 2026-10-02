@@ -93,3 +93,6 @@ docs/data/bounty_decisions.json
 # index build. curation/bounty_decisions.yaml and docs/data/bluegrass_catalogue.json
 # ARE tracked — they are the hand-authored and locally-produced inputs.
 docs/data/wanted_songs.json
+
+# UI state inventory screenshots (build output: node design/ui-states/capture.js)
+design/ui-states/shots/
