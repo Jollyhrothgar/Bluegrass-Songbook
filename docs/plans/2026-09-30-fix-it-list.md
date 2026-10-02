@@ -261,6 +261,20 @@ settle. The D1 and D5 mockups disagree on purpose about where a shared list
 lives (in your folders, or in its own section). Screenshots are gitignored
 build output.
 
+**Shared design surface (2026-10-02)**, in Claude Design, private to Mike's
+account:
+
+- Canvas, "Bluegrass Book Screens": https://claude.ai/artifact/B85EPrxxtGXXkg4UyCbs9p
+  One page each for List view (F8), Song in a list (D3), Library (D1, D5) and
+  Tab view (F7). Each page has today's screenshots; List view and Song in a
+  list also have the proposed boards (from `d2-items` and `d3-notes`), light
+  theme only. The other five mockups are still only HTML in the repo.
+- Design system, "Bluegrass Book": https://claude.ai/artifact/8c7rL3Gvbgmp3GyjGDCoC1
+  Colours in both themes, type, spacing and radii from `docs/css/style.css`
+  at `859e48125`, the BB logo, and usage rules. No components yet (that is F2).
+
+A decision made on the canvas is not in git until it is written here or built.
+
 Found while capturing (both belong with F2/F5):
 
 - On a phone the add-to-list picker on the song page is clipped off the left
