@@ -43,6 +43,7 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | B6 | Legacy-ID map fetched for everyone | S | `feature/perf-boot-data` | in PR |
 | B7a | Route-specific modules loaded at boot | M | `feature/perf-lazy-modules` | in PR |
 | B7b | Service worker, prefetch, double renders | M | `feature/perf-sw-render` | in PR |
+| B8 | Slimmer index: move rarely-used fields off the startup path | M | — | not started (Mike: "return to this later") |
 | C1 | List store rework | L | — | not started |
 | C2 | Song index freshness | M | — | not started |
 | D1–D7 | Library building blocks | L | — | blocked on C1 |
@@ -585,6 +586,20 @@ still import what they import.
   loaded from `@latest` (`tablature.js:773`) — pin a version. Tab JSON is
   fetched with `cache: 'no-cache'` (`work-view.js:338`) — let the service
   worker / HTTP cache do their job.
+
+---
+
+### B8 — Slimmer index · M
+
+After tiers A+B (measured 2026-10-01, cold phone visit, 4× CPU, fast-4G-class
+network): collections on screen at 2.1 s (was ~4.1 s), 35 startup modules,
+~1.2 MB for the whole visit. `data/index.jsonl` (725 KB gzip, 3.1 MB raw,
+~0.8 s on 4G) is now the largest item on the critical path. By bytes its
+heaviest fields are `lyrics` (~37%), `progression` (~11%, read only by
+`prog:` searches) and the per-tag `{score, source}` objects (~7%). Direction:
+move `progression` (and anything else only some searches read) into a
+separate file loaded on first use, store tags as keys only, and measure
+again with the same harness. Mike, 2026-10-01: return to this later.
 
 ---
 
