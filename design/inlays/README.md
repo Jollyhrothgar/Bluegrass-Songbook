@@ -7,6 +7,8 @@ Real inlays come in white pearl, gold pearl and abalone. Those three materials a
 
 Traced from a photo of a full set laid in ebony (an eBay listing image, 1600 px square, about 0.1 mm per pixel). Each shape is averaged with its mirror image, so it is exactly symmetric, and smoothed by about one source pixel; fine points and the notched teeth in 08 and 10 survive. Good to around 300 px wide; redraw by hand before printing one large.
 
+The flying eagle pattern is public domain (Mike, 2026-10-02), so these traces can ship on the site.
+
 Use them as ornaments with a meaning (where you are, where a section starts, an empty state), sparingly, and never as icons for actions.
 
 ## Re-tracing

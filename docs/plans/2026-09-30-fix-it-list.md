@@ -381,6 +381,7 @@ with small margins, and the board now matches that.
   and in the design system's Inlays group. Re-traced from a higher-resolution
   photo Mike found (each shape mirror-averaged, so exactly symmetric); good
   to about 300 px wide. Mike doesn't want the peghead set, so it's dropped.
+  The pattern is public domain (Mike), so the traces can ship on the site.
 - **The library must not be one big list of lists**; lists serve different
   purposes. Proposal (canvas, Library page): folders carry the purpose, each
   with a colour from a short palette. Folders sit in a sidebar on desktop and
