@@ -362,6 +362,23 @@ with small margins, and the board now matches that.
   collides with F8 here; the proposed list boards already drop it. The song
   boards (D3) still show it.
 
+**Look and library (Mike, 2026-10-02):**
+
+- **Black and white with a little colour.** Modern, and it must work in
+  light and dark. Proposal: neutral grounds, black/white text and primary
+  button (inverted per theme), no blue for actions; colour only as a splash
+  that means something (a folder's colour, the red heart, danger). Not yet
+  applied to the design system's tokens.
+- **Keep the BB plaque logo** (`docs/images/new_bb_logo.svg`). Its art is a
+  homage to the flying eagle banjo inlay. All proposed boards now use it
+  (inverted on dark). Mike would like the inlay theme used elsewhere.
+- **The library must not be one big list of lists**; lists serve different
+  purposes. Proposal (canvas, Library page): folders carry the purpose, each
+  with a colour from a short palette. Folders sit in a sidebar on desktop and
+  fold open in place on a phone. A list shared with you waits in "Shared with
+  me" until you file it. Open: should a list's purpose change its defaults,
+  or do folders and list sections cover it?
+
 Found while capturing (both belong with F2/F5):
 
 - On a phone the add-to-list picker on the song page is clipped off the left
