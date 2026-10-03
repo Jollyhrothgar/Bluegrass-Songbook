@@ -309,6 +309,23 @@ Open questions Mike raised, with Claude's proposal (not decided):
   never a copy, so it keeps receiving upstream fixes. A whole different chart
   is already a version (`x_version_*`) and goes back on the heap.
 
+Mike agreed (2026-10-02) and added three points:
+
+- **Personal notes are mostly a large-screen / overlay activity.** Proposal:
+  write them on desktop in a panel or overlay beside the chart; on a phone,
+  read them (folded to one line, "Your notes · 3") plus a one-line quick add.
+- **More than one note per song.** Proposal: a song holds any number of
+  personal notes, each a dated plain-text entry, newest first. Dated entries
+  cover practice logs and progress without a separate feature. Data: one row
+  per note (user, work, body, created/updated), not a single text field.
+- **A different version: just create one.** That path half exists. When a
+  user who doesn't own a chart edits it, the server already forks the edit
+  into a new arrangement (`pending-dispatch.ts`, "fork to a new
+  arrangement"). An owner or trusted user's edit lands in place, and the
+  editor has no "save as a new version" choice, so they can't make one on
+  purpose. The line between the two: key, capo and hidden sections are an
+  overlay; changed chords or lyrics are a version.
+
 Found while capturing (both belong with F2/F5):
 
 - On a phone the add-to-list picker on the song page is clipped off the left
