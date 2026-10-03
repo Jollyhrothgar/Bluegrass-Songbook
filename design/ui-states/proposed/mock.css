@@ -1,0 +1,243 @@
+/* Shared styles for the proposed-state mockups.
+ *
+ * The colour tokens are copied from docs/css/style.css (:root and
+ * [data-theme="dark"]) so a mockup sits beside a real screenshot without a
+ * colour shift. Everything else follows the fix-it list's F rule, "hide setup,
+ * show content and resources": hairlines and spacing instead of cards, one
+ * button style, no emoji icons. These are starting points to argue with, not
+ * a spec.
+ */
+:root {
+    --bg: #fafafa;
+    --bg-secondary: #f7f7f7;
+    --bg-tertiary: #eeeeee;
+    --text: #000000;
+    --text-secondary: #666666;
+    --border: #e0e0e0;
+    --accent: #2563eb;
+    --chord: #2563eb;
+    --danger: #dc2626;
+    --success: #16a34a;
+    --on-accent: #ffffff;
+    --paper: #ffffff;
+    --desk: #e9e9e6;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+[data-theme="dark"] {
+    --bg: #000000;
+    --bg-secondary: #111111;
+    --bg-tertiary: #1c1c1c;
+    --text: #ffffff;
+    --text-secondary: #999999;
+    --border: #333333;
+    --accent: #60a5fa;
+    --chord: #60a5fa;
+    --danger: #f87171;
+    --success: #4ade80;
+    --on-accent: #0a0a0a;
+    --paper: #ffffff;
+    --desk: #161616;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.45 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+a { color: inherit; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+
+/* ── top band (same slim band as the app) ─────────────────────────────── */
+.top {
+    display: flex; align-items: center; gap: 20px;
+    height: 48px; padding: 0 16px;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px; color: var(--text-secondary);
+}
+.top .brand { font: 700 20px/1 Georgia, 'Times New Roman', serif; color: var(--text); letter-spacing: -1px; }
+.top .here { color: var(--accent); }
+.top .spacer { flex: 1; }
+.top .who {
+    width: 28px; height: 28px; border-radius: 50%;
+    background: var(--bg-tertiary); color: var(--text);
+    display: grid; place-items: center; font-size: 12px; font-weight: 600;
+}
+
+/* ── page ─────────────────────────────────────────────────────────────── */
+.page { max-width: 760px; margin: 0 auto; padding: 28px 20px 0; }
+.page.wide { max-width: 1180px; }
+h1 { font-size: 28px; line-height: 1.15; margin: 0; letter-spacing: -0.01em; }
+h2 {
+    font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--text-secondary); margin: 32px 0 4px;
+}
+.crumbs { font-size: 14px; color: var(--text-secondary); margin-bottom: 6px; }
+.crumbs b { color: var(--text); font-weight: 500; }
+.meta { color: var(--text-secondary); font-size: 14px; }
+.head { display: flex; align-items: flex-end; gap: 16px; }
+.head .grow { flex: 1; min-width: 0; }
+.actions { display: flex; gap: 18px; font-size: 14px; color: var(--accent); white-space: nowrap; }
+.actions .quiet { color: var(--text-secondary); }
+.btn {
+    display: inline-block; padding: 7px 14px; border-radius: 6px;
+    background: var(--accent); color: var(--on-accent); font-size: 14px; font-weight: 600;
+}
+.btn.ghost { background: none; color: var(--accent); box-shadow: inset 0 0 0 1px var(--border); }
+.btn.danger { background: none; color: var(--danger); box-shadow: inset 0 0 0 1px var(--danger); }
+
+/* ── rows: a hairline between, nothing around ─────────────────────────── */
+.rows { list-style: none; margin: 0; padding: 0; }
+.rows > li {
+    display: flex; align-items: baseline; gap: 12px;
+    padding: 11px 0; border-bottom: 1px solid var(--border);
+}
+.rows > li.in1 { padding-left: 26px; }
+.rows > li.in2 { padding-left: 52px; }
+.rows .name { font-weight: 500; }
+.rows .sub { color: var(--text-secondary); font-size: 14px; }
+.rows .end { margin-left: auto; color: var(--text-secondary); font-size: 14px; white-space: nowrap; text-align: right; }
+.rows .tw { width: 14px; flex: none; color: var(--text-secondary); font-size: 15px; }
+.rows .body { min-width: 0; flex: 1; }
+.rows .note { color: var(--text-secondary); font-size: 14px; margin-top: 2px; }
+.rows .num { width: 20px; flex: none; color: var(--text-secondary); font-size: 14px; font-variant-numeric: tabular-nums; }
+.rows > li.section {
+    border-bottom: 1px solid var(--text);
+    padding: 26px 0 6px; font-size: 12px; font-weight: 700;
+    letter-spacing: 0.08em; text-transform: uppercase;
+}
+.rows > li.section .end { text-transform: none; letter-spacing: 0; font-weight: 400; }
+.rows > li.current { background: var(--bg-tertiary); margin: 0 -10px; padding-left: 10px; padding-right: 10px; border-radius: 6px; }
+.key { font-weight: 600; color: var(--text); }
+.tag { font-size: 12px; color: var(--text-secondary); border: 1px solid var(--border); border-radius: 999px; padding: 1px 8px; white-space: nowrap; }
+
+/* ── a rendered note (the small Markdown subset) ──────────────────────── */
+.md { font-size: 15px; line-height: 1.5; }
+.md p { margin: 0 0 8px; }
+.md ul { margin: 0 0 8px; padding-left: 20px; }
+.md ul.checks { list-style: none; padding-left: 0; }
+.md ul.checks li { display: flex; gap: 8px; align-items: baseline; }
+.md .box { width: 14px; height: 14px; flex: none; border: 1.5px solid var(--text-secondary); border-radius: 3px; position: relative; top: 2px; }
+.md .box.on { background: var(--accent); border-color: var(--accent); }
+.md .done { color: var(--text-secondary); text-decoration: line-through; }
+.links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.linkbtn {
+    font-size: 13px; font-weight: 600; padding: 5px 11px; border-radius: 999px;
+    box-shadow: inset 0 0 0 1px var(--border); color: var(--text);
+}
+.linkbtn::before { content: '\25B6'; font-size: 9px; margin-right: 6px; color: var(--accent); position: relative; top: -1px; }
+
+/* ── the chart ────────────────────────────────────────────────────────── */
+.song-title { font-size: 26px; font-weight: 700; margin: 0; }
+.chart { font-family: var(--mono); font-size: 15px; line-height: 1.25; margin-top: 18px; }
+.chart .sec { font: italic 13px/1 -apple-system, sans-serif; color: var(--text-secondary); margin: 20px 0 8px; }
+.chart .line { display: flex; flex-wrap: wrap; margin-bottom: 8px; }
+.chart .seg { display: inline-flex; flex-direction: column; white-space: pre; }
+.chart .ch { color: var(--chord); font-weight: 700; min-height: 1.25em; padding-right: 0.6em; }
+.chart.big { font-size: 19px; }
+.setline {
+    margin-top: 10px; padding: 8px 0; font-size: 14px;
+    border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+    display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: baseline;
+}
+.setline .was { color: var(--text-secondary); }
+.setline .act { color: var(--accent); margin-left: auto; }
+
+/* ── song page with a note beside it ──────────────────────────────────── */
+.split { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 48px; align-items: start; }
+.side { border-left: 1px solid var(--border); padding-left: 24px; position: sticky; top: 20px; }
+.side h2:first-child { margin-top: 0; }
+.pinned {
+    display: none; margin: 14px 0 0; padding: 10px 12px;
+    background: var(--bg-tertiary); border-radius: 8px;
+}
+.pinned .cap { display: flex; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 4px; }
+.pinned .cap span:last-child { margin-left: auto; letter-spacing: 0; text-transform: none; font-weight: 400; }
+
+/* ── popover / sheet ──────────────────────────────────────────────────── */
+.pop {
+    width: 300px; padding: 16px; border-radius: 10px; background: var(--bg);
+    box-shadow: 0 0 0 1px var(--border), 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+.pop h3 { margin: 0 0 10px; font-size: 15px; }
+.field { display: flex; align-items: center; padding: 8px 0; border-top: 1px solid var(--border); font-size: 15px; }
+.field label { width: 70px; color: var(--text-secondary); font-size: 14px; }
+.field .val { font-weight: 600; }
+.field .hint { margin-left: auto; color: var(--text-secondary); font-size: 13px; }
+.seg-ctl { display: inline-flex; border-radius: 6px; box-shadow: inset 0 0 0 1px var(--border); overflow: hidden; font-size: 14px; }
+.seg-ctl span { padding: 4px 10px; }
+.seg-ctl .on { background: var(--text); color: var(--bg); }
+.fine { font-size: 13px; color: var(--text-secondary); margin: 10px 0 0; }
+.check { display: flex; gap: 10px; align-items: center; padding: 8px 0; border-top: 1px solid var(--border); font-size: 15px; }
+.check .box { width: 16px; height: 16px; border-radius: 4px; border: 1.5px solid var(--text-secondary); flex: none; }
+.check .box.on { background: var(--accent); border-color: var(--accent); }
+
+/* ── play-through bar ─────────────────────────────────────────────────── */
+.playbar {
+    position: fixed; left: 0; right: 0; bottom: 0; height: 56px;
+    display: flex; align-items: center; padding: 0 16px; gap: 12px;
+    background: var(--bg); border-top: 1px solid var(--border); font-size: 14px;
+}
+.playbar .prev, .playbar .next { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.playbar .next { text-align: right; font-weight: 600; }
+.playbar .prev { color: var(--text-secondary); }
+.playbar .pos { color: var(--text-secondary); white-space: nowrap; text-align: center; }
+.cols2 { columns: 2; column-gap: 56px; }
+.cols2 .line, .cols2 .sec { break-inside: avoid; }
+
+/* ── printable songbook ───────────────────────────────────────────────── */
+.print { display: grid; grid-template-columns: 280px 1fr; gap: 32px; align-items: start; }
+.desk { background: var(--desk); border-radius: 8px; padding: 24px; display: flex; gap: 24px; justify-content: center; }
+.sheet {
+    background: var(--paper); color: #000; width: 380px; aspect-ratio: 8.5 / 11; padding: 34px 32px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25); font-size: 11px; line-height: 1.4; position: relative; overflow: hidden;
+}
+.sheet h3 { font: 700 20px/1.1 Georgia, serif; margin: 0 0 2px; }
+.sheet .when { color: #555; margin-bottom: 16px; }
+.sheet .toc { list-style: none; margin: 0; padding: 0; }
+.sheet .toc li { display: flex; gap: 6px; padding: 2.5px 0; }
+.sheet .toc .dots { flex: 1; border-bottom: 1px dotted #999; position: relative; top: -3px; }
+.sheet .toc .set { font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; font-size: 9px; padding-top: 10px; }
+.sheet .toc .k { width: 22px; font-weight: 700; }
+.sheet .pg { position: absolute; bottom: 16px; right: 32px; color: #555; }
+.sheet .chart { font-size: 9.5px; margin-top: 10px; }
+.sheet .chart .ch { color: #000; }
+.sheet .chart .sec { color: #555; font-size: 9px; margin: 10px 0 4px; }
+.sheet .chart .line { margin-bottom: 4px; }
+.sheet .strip { border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 4px 0; margin-top: 6px; font-weight: 700; }
+.sheet .pnote { margin-top: 6px; font-style: italic; color: #333; }
+
+/* ── the "this is a mockup" tab ───────────────────────────────────────── */
+.proposed-tab {
+    position: fixed; top: 0; right: 64px; z-index: 5;
+    font: 700 10px/1 -apple-system, sans-serif; letter-spacing: 0.08em; text-transform: uppercase;
+    background: #e7d9a8; color: #3b3210; padding: 4px 8px; border-radius: 0 0 4px 4px;
+}
+
+/* ── phone ────────────────────────────────────────────────────────────── */
+.phone-only { display: none; }
+@media (max-width: 720px) {
+    .phone-only { display: initial; }
+    .desk-only { display: none !important; }
+    .top { gap: 14px; padding: 0 12px; }
+    .top .nav { display: none; }
+    .page { padding: 18px 16px 0; }
+    h1 { font-size: 24px; }
+    .head { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .split { display: block; }
+    .side { display: none; }
+    .pinned { display: block; }
+    .chart { font-size: 14px; }
+    .chart.big { font-size: 16px; }
+    .cols2 { columns: 1; }
+    .print { display: block; }
+    .desk { margin-top: 20px; padding: 16px; }
+    .desk .sheet + .sheet { display: none; }
+    .sheet { width: 100%; }
+    .pop { width: auto; }
+    .rows .end.wrap { white-space: normal; }
+}

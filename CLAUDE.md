@@ -576,6 +576,7 @@ change. (Older GitHub milestones still exist: `gh issue list --milestone "..."`.
 | Analyze usage data | `analytics/dashboard.ipynb` |
 | Analyze grassiness data | `analytics/grassiness_analysis.ipynb` |
 | Decide what to work on next | `docs/plans/2026-09-30-fix-it-list.md` (Status table) |
+| Open or screenshot one UI state (design work) | `design/ui-states/README.md` |
 | See product vision | `ROADMAP.md` |
 | Run parser tests | `uv run pytest` |
 | Run frontend tests | `npm test` |

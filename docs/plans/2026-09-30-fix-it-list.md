@@ -60,11 +60,15 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | B8 | Slimmer index: move rarely-used fields off the startup path | M | — | not started (Mike: "return to this later") |
 | C1 | List store rework | L | — | not started |
 | C2 | Song index freshness | M | — | not started |
-| D1–D7 | Library building blocks | L | — | blocked on C1 |
+| D1–D7 | Library building blocks | L | `feature/ui-state-inventory` (design) | list, song-in-a-list, library and stage-sheet designs approved on the canvas (2026-10-02); playlist mode (D6) still to draw; build blocked on C1 |
 | E1–E6 | Editors | M–L each | — | not started |
 | F1–F6 | Visual design | M–L | — | not started |
 | F7 | Tab view rework (Mike wants to lead this) | L | — | not started |
-| F8 | List view rework + a way to read notes (Mike wants to lead this) | L | — | not started |
+| F8 | List view rework + a way to read notes (Mike wants to lead this) | L | `feature/ui-state-inventory` (design) | design approved on the canvas (2026-10-02); build after C1 |
+| D8 | Arrangement markup for stage notes (follow-up to D3) | M | — | idea, after D3 ships |
+| F9 | Stop presenting `artist` as the song's artist | M | — | idea; collides with F8 and the song page |
+| F10 | Redraw the remaining views in the new look (queue below) | M each | — | queued (Mike, 2026-10-02) |
+| F11 | Build the new look in `style.css` (tokens, links not buttons, chords, BB mark) | M | — | not started; the look is approved on the canvas |
 
 ### How it ships
 
@@ -220,7 +224,7 @@ the plan item it belongs with.
 
 ---
 
-### Next: UI state inventory (after this PR merges)
+### Next: UI state inventory
 
 Mike's plan (2026-10-01): merge tiers A+B, then take stock of the app's
 UI states so each one can be opened on its own and workshopped with Claude
@@ -231,6 +235,208 @@ and dark themes. States to cover: home, search results, song page (lead
 sheet), song page (tab, single and multi-track), tab editor, lead-sheet
 editor, list view, lists library, Bluegrass Dungeon, and the empty/error
 states.
+
+**Proposed states join the inventory too** (Mike, 2026-10-01: "the
+speculative list work should also join the UI state"). The D-tier library
+features don't exist yet, so they enter as mockup states, marked *proposed*,
+workshopped alongside F7/F8 instead of being built first:
+
+- **D1 Folders**: the library as nested folders, with a shared band list filed
+  in each member's own folder.
+- **D2 Items**: a list with list sections ("Set 1", "Week 2 goals") and the same
+  song twice.
+- **D3 Notes**: a list note, and a per-item note shown beside the chart (a side
+  panel on desktop, a pinned card on a phone), in the small Markdown subset,
+  with pasted YouTube / Strum Machine links rendered as buttons. This is also
+  the answer to F8's lost notes view.
+- **D4 Overrides**: an item's key, capo and tempo, visibly applied on the song
+  page ("Setlist key: A, capo 2").
+- **D5 Sharing**: the "Shared with me / Following" shelf and Leave.
+- **D6 Play-through**: a list played song to song (a performance mode).
+- **D7 Printable songbook**: a table of contents and setlist keys and notes
+  applied.
+
+**Built 2026-10-01** in `design/ui-states/` (branch
+`feature/ui-state-inventory`): 32 existing states and 7 proposed ones, each
+captured at phone and desktop width in light and dark. `README.md` there
+lists every state, how to open one live (`capture.js --open <id>`), and, for
+each proposed mockup, what it claims, what C1 would need, and the questions to
+settle. The D1 and D5 mockups disagree on purpose about where a shared list
+lives (in your folders, or in its own section). Screenshots are gitignored
+build output.
+
+**Shared design surface (2026-10-02)**, in Claude Design, private to Mike's
+account:
+
+- Canvas, "Bluegrass Book Screens": https://claude.ai/artifact/B85EPrxxtGXXkg4UyCbs9p
+  One page each for List view (F8), Song in a list (D3), Library (D1, D5) and
+  Tab view (F7). Each page has today's screenshots; List view and Song in a
+  list also have the proposed boards (from `d2-items` and `d3-notes`), light
+  theme only. The other five mockups are still only HTML in the repo.
+- Design system, "Bluegrass Book": https://claude.ai/artifact/8c7rL3Gvbgmp3GyjGDCoC1
+  Colours in both themes, type, spacing and radii from `docs/css/style.css`
+  at `859e48125`, the BB logo, and usage rules. No components yet (that is F2).
+
+A decision made on the canvas is not in git until it is written here or built.
+
+**Feedback on the first boards (Mike, 2026-10-02).** Keep D2's sets
+(list sections) and the phone/desktop split: the set is the right altitude for
+annotation. New idea from it: an **arrangement line**, the least text that
+says how a band plays a song. Mike's printed gig sheet
+(`design/ui-states/reference/stereo-setlist.html`, readable from six feet)
+uses it:
+
+    D - She
+    K: TC > MF(Walk) > V C V C > Solos: RW(V) MB(1/2C) MF(1/2C) > C > End(Stop)
+
+`K:` is the kickoff, initials are players, `>` is order, `V`/`C` are verse
+and chorus, `(...)` says how. Songs past the "extras" rule are played only if
+there is time (D2's "If they want one more" section). Plain text has to stay
+valid; anything the app recognises in it is a bonus.
+
+Open questions Mike raised, with Claude's proposal (not decided):
+
+- *What do people put in notes* (videos, Strum Machine charts, practice
+  notes, progress)? Unknown. Proposal: keep notes plain text with links
+  turned into buttons (D3 already says this); don't build embeds or typed
+  fields until real notes show what people write.
+- *How do notes follow a song?* Proposal, three layers:
+  1. **The song** (shared): chords, lyrics, sections. Fixes go back through
+     the existing edit pipeline, so everyone gets them.
+  2. **The arrangement** (shared with the list's members): key, tempo, capo
+     (D4) and the arrangement line. It lives on the list item; adding the
+     song to the band's next list offers the last one.
+  3. **Personal notes** (private): practice notes and progress. They follow
+     the user and the song into every list.
+- *Shared library plus derived views?* Proposal: a personal view is the
+  shared song plus a small overlay (key, capo, hidden sections, notes),
+  never a copy, so it keeps receiving upstream fixes. A whole different chart
+  is already a version (`x_version_*`) and goes back on the heap.
+
+Mike agreed (2026-10-02) and added three points:
+
+- **Personal notes are mostly a large-screen / overlay activity.** Proposal:
+  write them on desktop in a panel or overlay beside the chart; on a phone,
+  read them (folded to one line, "Your notes · 3") plus a one-line quick add.
+- **More than one note per song.** Proposal: a song holds any number of
+  personal notes, each a dated plain-text entry, newest first. Dated entries
+  cover practice logs and progress without a separate feature. Data: one row
+  per note (user, work, body, created/updated), not a single text field.
+- **A different version: just create one.** That path half exists. When a
+  user who doesn't own a chart edits it, the server already forks the edit
+  into a new arrangement (`pending-dispatch.ts`, "fork to a new
+  arrangement"). An owner or trusted user's edit lands in place, and the
+  editor has no "save as a new version" choice, so they can't make one on
+  purpose. The line between the two: key, capo and hidden sections are an
+  overlay; changed chords or lyrics are a version.
+
+The canvas's List view page now has a **stage sheet** board (D7): the Friday
+Jam list printed after Mike's gig sheet, with the key first and one
+arrangement line per song. Mike's gig sheet is meant for a landscape page
+with small margins, and the board now matches that.
+
+**Decided on the list boards (Mike, 2026-10-02):**
+
+- He likes both proposed list views (phone and desktop).
+- **No row numbers.**
+- **No artist on rows**, see F9.
+- **"List section", not "divider"**, in the UI and in code. A list
+  section may carry a short note (drawn under "Set 2").
+- "Play through" and "More" didn't say what they do. They are now:
+  - **"Playlist mode"** (D6): moves next and previous through the list in
+    order, keeping each item's key and note. The button starts at the top;
+    clicking any song in the list starts playlist mode from that song.
+  - On desktop, **Print** and **Edit** in place of More.
+  - On a phone, the `···` menu in the top bar holds rename, duplicate, print,
+    export, leave and delete; the second "More" link was a duplicate and is
+    gone.
+- **Arrangement markup is a follow-up to notes (D8), not part of D3.** It
+  must be opinionated: a fixed set of arrangement parts (kickoff, sections,
+  solos, endings, tempo/feel), so that a line can be checked like a type and
+  the front end knows how to draw each part. Until then the arrangement line
+  is plain text.
+- **F9, artists.** The corpus doesn't know which artist's recording a chart
+  came from: `artist` is whatever performer page a chart was scraped from
+  (see "Works Architecture" in `CLAUDE.md`). Mike's direction: assume we don't
+  know, drop the artist from rows, and treat the names we have as artists who
+  *may have covered* the song. That is its own redesign: the song page,
+  search results and the "Covering artists" line all show `artist` today. It
+  collides with F8 here; the proposed list boards already drop it. The song
+  boards (D3) still show it.
+
+**Look and library (Mike, 2026-10-02):**
+
+- **Black and white with a little colour.** Modern, and it must work in
+  light and dark. Proposal: neutral grounds, black/white text and primary
+  button (inverted per theme), no blue for actions; colour only as a splash
+  that means something (a folder's colour, the red heart, danger).
+  **Applied 2026-10-02** to the design system's tokens (a proposal;
+  `style.css` still has the blue accent): `accent` and `chord` = `text`
+  (#000 / #fff), `on-accent` inverted, `bg` #fff / #000, `text-secondary`
+  #6b6b6b / #a3a3a3, `border` #e5e5e5 / #262626, plus six `folder-*` mark
+  colours (rust, green, blue, gold, violet, teal). **Every action is an
+  underlined link** (weight 600, thin underline), with no filled buttons or
+  pills (Mike: "we don't need big button glyphs"); the main action comes
+  first in its row, and on a phone a link keeps a 44px touch area. All proposed list, song and
+  library boards are redrawn in it (phones dark, desktops light); the song
+  boards no longer show an artist (F9).
+- **Keep the BB plaque logo** (`docs/images/new_bb_logo.svg`). Its art is a
+  homage to the flying eagle banjo inlay. All proposed boards now use it
+  (inverted on dark). Mike would like the inlay theme used elsewhere.
+  Then (same day): **drop the plaque's black square**; the mark is the
+  letters and the inlays. `design/logo/bb-mark.svg` is that version in
+  `currentColor`; the boards use it inline. The app still ships
+  `new_bb_logo.svg` (`shell.js`).
+- **Inlays as assets.** The ten flying eagle fingerboard markers and the
+  peghead's small diamond, traced to single-colour SVGs in `design/inlays/`
+  and in the design system's Inlays group. Re-traced from a higher-resolution
+  photo Mike found (each shape mirror-averaged, so exactly symmetric); good
+  to about 300 px wide. Mike doesn't want the peghead set, so it's dropped.
+  The pattern is public domain (Mike), so the traces can ship on the site.
+- **The library must not be one big list of lists**; lists serve different
+  purposes. Proposal (canvas, Library page): folders carry the purpose, each
+  with a colour from a short palette. Folders sit in a sidebar on desktop and
+  fold open in place on a phone. A list shared with you waits in "Shared with
+  me" until you file it. Open: should a list's purpose change its defaults,
+  or do folders and list sections cover it?
+
+**Approved (Mike, 2026-10-02): "I love it. Ship it."** The look on the
+canvas (black and white with folder colours, underlined links, bold chords
+in the text colour, the BB mark without its square) is the direction for
+every view. Building it in the app is F11. Redrawing the rest of the app in
+it is F10; the queue, each as a canvas page with today's screenshot beside
+the redraw, phone dark and desktop light, from the `design/ui-states/`
+states:
+
+1. **Song page, standalone** (`song-lead-sheet`, the Key / Display / Info
+   pills, `song-add-to-list`, `song-abc`, `song-not-found`). Settles F9 (no
+   artist line) and the pill controls in the new look. Fix the clipped
+   add-to-list picker found during capture.
+2. **Search and home** (`home`, `search-results`, `search-browse-all`,
+   `search-no-results`). The most-seen page; collections, rows and tags in
+   the new look.
+3. **Playlist mode on the song page** (D6): how it shows it's on, next and
+   previous, leaving it.
+4. **Favorites and empty states** (`favorites`, `favorites-empty`,
+   `lists-library-empty`, `list-view-empty`, `list-not-found`,
+   `list-shared`). Candidate place for an inlay ornament.
+5. **Editors** (`editor-new-song`, `editor-existing-song`,
+   `add-song-picker`, `tab-editor`). Ties into tier E.
+6. **Bluegrass Dungeon and bounty** (`dungeon`, `bounty`).
+7. **Tab view (F7)**: Mike leads it. Claude prepares the page only (today's
+   five tab states, the tab tokens `tab-ink` / `tab-rule` in the new look)
+   and draws only when asked.
+
+Found while capturing (both belong with F2/F5):
+
+- On a phone the add-to-list picker on the song page is clipped off the left
+  edge of the screen.
+- On a phone two chords over a short syllable run together ("A" and "D" over
+  "to Charlottesville" read as "AD").
+
+Designing these before C1 is deliberate: the agreed screens decide what the
+list store must hold (item kinds and ids, where notes live, per-user folder
+placement), so C1 is built to the design rather than guessed ahead of it.
 
 ---
 
@@ -683,7 +889,7 @@ on them.
   a column on the shared list. The existing local-only folder code
   (`lists.js:459-590`, no creation UI) is the starting point.
 - **D2 Items** — each item has its own id and is either a song reference
-  (work, version or tab part) or a **divider** ("Set 1", "Week 2 goals"); the
+  (work, version or tab part) or a **list section** ("Set 1", "Week 2 goals"); the
   same song may appear twice.
 - **D3 Notes** — Markdown (small in-house subset: bold, italic, lists,
   checkboxes, links; never raw HTML) on folders, lists and items, shown beside
