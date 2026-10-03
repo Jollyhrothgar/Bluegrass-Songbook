@@ -372,8 +372,10 @@ with small margins, and the board now matches that.
   `style.css` still has the blue accent): `accent` and `chord` = `text`
   (#000 / #fff), `on-accent` inverted, `bg` #fff / #000, `text-secondary`
   #6b6b6b / #a3a3a3, `border` #e5e5e5 / #262626, plus six `folder-*` mark
-  colours (rust, green, blue, gold, violet, teal). Links and secondary
-  actions are weight 600 with a thin underline. All proposed list, song and
+  colours (rust, green, blue, gold, violet, teal). **Every action is an
+  underlined link** (weight 600, thin underline), with no filled buttons or
+  pills (Mike: "we don't need big button glyphs"); the main action comes
+  first in its row, and on a phone a link keeps a 44px touch area. All proposed list, song and
   library boards are redrawn in it (phones dark, desktops light); the song
   boards no longer show an artist (F9).
 - **Keep the BB plaque logo** (`docs/images/new_bb_logo.svg`). Its art is a
