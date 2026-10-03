@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<!-- Mike's gig setlist (2026-10-02), kept as reference for D2/D3/D7 and the
+     arrangement shorthand. Printed and read from about six feet away.
+     K: = kickoff, initials = players, > = order, V/C = verse/chorus,
+     (...) = how, "extra" = songs if there is time. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stereo Setlist</title>
+    <style>
+        :root {
+            /* Interactive variables controlled by the buttons */
+            --bg-color: #ffffff;
+            --text-color: #000000;
+            --stripe-color: #f0f0f0;
+            --border-color: #cccccc;
+
+            --col-count: 2;
+            --title-size: 18pt;
+            --arr-size: 12pt;
+            --song-padding: 6px;
+            --title-weight: bold;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.2;
+        }
+
+        /* --- CONTROL PANEL STYLES (Hidden during print) --- */
+        .control-panel {
+            background-color: #f8f9fa;
+            border: 2px solid #333;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #fff;
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        .control-group label {
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        button.tool-btn {
+            background-color: #e9ecef;
+            border: 1px solid #adb5bd;
+            padding: 5px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        button.tool-btn:hover { background-color: #dee2e6; }
+
+        .print-btn {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        .print-btn:hover { background-color: #333; }
+
+        /* --- SETLIST LAYOUT STYLES --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .setlist-wrapper {
+            column-count: var(--col-count);
+            column-gap: 40px;
+            column-rule: 2px dashed #ddd; /* Adds a line between columns */
+        }
+
+        .extras-divider {
+            column-span: all; /* Forces the divider to span across columns */
+            border: 0;
+            border-top: 4px double #888;
+            margin: 20px 0 15px 0;
+        }
+
+        .song {
+            padding: var(--song-padding) 5px;
+            border-bottom: 2px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            page-break-inside: avoid; /* Prevents song splitting across columns/pages */
+            break-inside: avoid;
+            margin-bottom: 5px;
+        }
+
+        .song:nth-child(even) {
+            background-color: var(--stripe-color);
+        }
+
+        .song-title {
+            font-size: var(--title-size);
+            font-weight: var(--title-weight);
+            letter-spacing: 0.5px;
+        }
+
+        .song-arrangement {
+            font-size: var(--arr-size);
+            font-weight: normal;
+            text-transform: uppercase;
+            color: #222;
+            word-spacing: 5px;
+        }
+
+        .song.extra {
+            border: 2px solid #555;
+            border-radius: 8px;
+            padding: calc(var(--song-padding) + 4px) 10px;
+            margin-bottom: 10px;
+            background-color: #fafafa;
+        }
+
+        /* Logic to hide extras completely */
+        body.no-extras .extra,
+        body.no-extras .extras-divider {
+            display: none !important;
+        }
+
+        /* --- PRINT ADJUSTMENTS --- */
+        @media print {
+            body { padding: 0; }
+            .no-print { display: none !important; }
+            .song { border-bottom: 1.5pt solid #aaa; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Interactive Toolbar -->
+        <div class="control-panel no-print">
+            <div class="control-group">
+                <label>Columns:</label>
+                <button class="tool-btn" onclick="toggleCols()" id="btn-cols">Switch to 1 Column</button>
+            </div>
+            <div class="control-group">
+                <label>Extras:</label>
+                <button class="tool-btn" onclick="toggleExtras()" id="btn-extras">Hide Extras</button>
+            </div>
+            <div class="control-group">
+                <label>Title Size:</label>
+                <button class="tool-btn" onclick="adjust('titleSize', -2)">-</button>
+                <button class="tool-btn" onclick="adjust('titleSize', 2)">+</button>
+                <button class="tool-btn" onclick="toggleBold()">B</button>
+            </div>
+            <div class="control-group">
+                <label>Details Size:</label>
+                <button class="tool-btn" onclick="adjust('arrSize', -1)">-</button>
+                <button class="tool-btn" onclick="adjust('arrSize', 1)">+</button>
+            </div>
+            <div class="control-group">
+                <label>Spacing:</label>
+                <button class="tool-btn" onclick="adjust('padding', -2)">-</button>
+                <button class="tool-btn" onclick="adjust('padding', 2)">+</button>
+            </div>
+            <button class="print-btn" onclick="window.print()">🖨️ Print</button>
+        </div>
+
+        <!-- Setlist Content -->
+        <div class="setlist-wrapper">
+            <div class="song">
+                <div class="song-title">D - Welcome To New York</div>
+                <div class="song-arrangement">K: MB &gt; TC &gt; RW &gt; MF &gt; MB(Slow Down) &gt; End(Stop)</div>
+            </div>
+
+            <div class="song">
+                <div class="song-title">D - She</div>
+                <div class="song-arrangement">K: TC &gt; MF(Walk) &gt; V C V C &gt; Solos: RW(V) MB(1/2C) MF(1/2C) &gt; C &gt; End(Stop)</div>
+            </div>
+
+            <div class="song">
+                <div class="song-title">B - If I Lose</div>
+                <div class="song-arrangement">K: Band &gt; V C &gt; TC(No MB/RW) &gt; V C &gt; MB(C)</div>
+            </div>
+
+            <div class="song">
+                <div class="song-title">A - Roustabout</div>
+                <div class="song-arrangement">K: Vocals(Strums) &gt; C V &gt; Solos: TC RW &gt; V C &gt; MB &gt; C &gt; Tag</div>
+            </div>
+
+            <div class="song">
+                <div class="song-title">D - Angeline the Baker</div>
+                <div class="song-arrangement">Round the Horn &gt; Space Jam &gt; Unison End</div>
+            </div>
+
+            <div class="song">
+                <div class="song-title">B - Brother to the Blues</div>
+                <div class="song-arrangement">K: MB &gt; RW(Calls Breaks)</div>
+            </div>
+
+            <div class="song">
+                <div class="song-title">A - Tennessee 1949</div>
+                <div class="song-arrangement">Swing(95bpm) K: MB &gt; V(A,B) C &gt; Solos: TC RW &gt; V(A,B) C &gt; Solos: MF MB &gt; V(B) C &gt; Outro(RW)</div>
+            </div>
+
+            <div class="song">
+                <div class="song-title">A - Theme Time</div>
+                <div class="song-arrangement">TBD</div>
+            </div>
+
+            <div class="song">
+                <div class="song-title">G - Act Naturally</div>
+                <div class="song-arrangement">K: Intro &gt; V C V &gt; Solos: TC RW MB MF(Melody) &gt; C V C &gt; MB(Walk) &gt; V &gt; End(MF drop 1/2 Tag, Walk Down)</div>
+            </div>
+
+            <div class="song">
+                <div class="song-title">Dm - Shady Grove</div>
+                <div class="song-arrangement">K: MF(1V) &gt; RW+MF(1V) &gt; Band In(F) &gt; V C &gt; Solos: TC RW MB TC &gt; Psych Break &gt; Unison Out</div>
+            </div>
+
+            <div class="song">
+                <div class="song-title">A - Blue Ridge Cabin Home</div>
+                <div class="song-arrangement">TBD</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script to handle dynamic layout changes -->
+    <script>
+        let state = {
+            colCount: 2,
+            titleSize: 18,
+            arrSize: 12,
+            padding: 6,
+            isBold: true,
+            showExtras: true
+        };
+
+        const root = document.documentElement;
+
+        function updateStyles() {
+            root.style.setProperty('--col-count', state.colCount);
+            root.style.setProperty('--title-size', state.titleSize + 'pt');
+            root.style.setProperty('--arr-size', state.arrSize + 'pt');
+            root.style.setProperty('--song-padding', state.padding + 'px');
+            root.style.setProperty('--title-weight', state.isBold ? 'bold' : 'normal');
+        }
+
+        function toggleCols() {
+            state.colCount = state.colCount === 1 ? 2 : 1;
+            document.getElementById('btn-cols').innerText = state.colCount === 1 ? 'Switch to 2 Columns' : 'Switch to 1 Column';
+            updateStyles();
+        }
+
+        function toggleExtras() {
+            state.showExtras = !state.showExtras;
+            if (!state.showExtras) {
+                document.body.classList.add('no-extras');
+                document.getElementById('btn-extras').innerText = 'Show Extras';
+            } else {
+                document.body.classList.remove('no-extras');
+                document.getElementById('btn-extras').innerText = 'Hide Extras';
+            }
+        }
+
+        function toggleBold() {
+            state.isBold = !state.isBold;
+            updateStyles();
+        }
+
+        function adjust(property, amount) {
+            if(state[property] + amount > 0) { // prevent negative sizes
+                state[property] += amount;
+                updateStyles();
+            }
+        }
+
+        // Initialize styles on load
+        updateStyles();
+    </script>
+</body>
+</html>

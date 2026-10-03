@@ -275,6 +275,40 @@ account:
 
 A decision made on the canvas is not in git until it is written here or built.
 
+**Feedback on the first boards (Mike, 2026-10-02).** Keep D2's sets
+(dividers) and the phone/desktop split: the set is the right altitude for
+annotation. New idea from it: an **arrangement line**, the least text that
+says how a band plays a song. Mike's printed gig sheet
+(`design/ui-states/reference/stereo-setlist.html`, readable from six feet)
+uses it:
+
+    D - She
+    K: TC > MF(Walk) > V C V C > Solos: RW(V) MB(1/2C) MF(1/2C) > C > End(Stop)
+
+`K:` is the kickoff, initials are players, `>` is order, `V`/`C` are verse
+and chorus, `(...)` says how. Songs past the "extras" rule are played only if
+there is time (D2's "If they want one more" divider). Plain text has to stay
+valid; anything the app recognises in it is a bonus.
+
+Open questions Mike raised, with Claude's proposal (not decided):
+
+- *What do people put in notes* (videos, Strum Machine charts, practice
+  notes, progress)? Unknown. Proposal: keep notes plain text with links
+  turned into buttons (D3 already says this); don't build embeds or typed
+  fields until real notes show what people write.
+- *How do notes follow a song?* Proposal, three layers:
+  1. **The song** (shared): chords, lyrics, sections. Fixes go back through
+     the existing edit pipeline, so everyone gets them.
+  2. **The arrangement** (shared with the list's members): key, tempo, capo
+     (D4) and the arrangement line. It lives on the list item; adding the
+     song to the band's next list offers the last one.
+  3. **Personal notes** (private): practice notes and progress. They follow
+     the user and the song into every list.
+- *Shared library plus derived views?* Proposal: a personal view is the
+  shared song plus a small overlay (key, capo, hidden sections, notes),
+  never a copy, so it keeps receiving upstream fixes. A whole different chart
+  is already a version (`x_version_*`) and goes back on the heap.
+
 Found while capturing (both belong with F2/F5):
 
 - On a phone the add-to-list picker on the song page is clipped off the left
