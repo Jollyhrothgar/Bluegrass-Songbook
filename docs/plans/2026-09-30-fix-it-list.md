@@ -60,11 +60,11 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | B8 | Slimmer index: move rarely-used fields off the startup path | M | — | not started (Mike: "return to this later") |
 | C1 | List store rework | L | — | not started |
 | C2 | Song index freshness | M | — | not started |
-| D1–D7 | Library building blocks | L | `feature/ui-state-inventory` (design) | first mockups drawn (`design/ui-states/proposed/`), to be workshopped; build blocked on C1 |
+| D1–D7 | Library building blocks | L | `feature/ui-state-inventory` (design) | list, song-in-a-list, library and stage-sheet designs approved on the canvas (2026-10-02); playlist mode (D6) still to draw; build blocked on C1 |
 | E1–E6 | Editors | M–L each | — | not started |
 | F1–F6 | Visual design | M–L | — | not started |
 | F7 | Tab view rework (Mike wants to lead this) | L | — | not started |
-| F8 | List view rework + a way to read notes (Mike wants to lead this) | L | — | not started |
+| F8 | List view rework + a way to read notes (Mike wants to lead this) | L | `feature/ui-state-inventory` (design) | design approved on the canvas (2026-10-02); build after C1 |
 | D8 | Arrangement markup for stage notes (follow-up to D3) | M | — | idea, after D3 ships |
 | F9 | Stop presenting `artist` as the song's artist | M | — | idea; collides with F8 and the song page |
 | F10 | Redraw the remaining views in the new look (queue below) | M each | — | queued (Mike, 2026-10-02) |
