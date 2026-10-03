@@ -372,6 +372,14 @@ with small margins, and the board now matches that.
 - **Keep the BB plaque logo** (`docs/images/new_bb_logo.svg`). Its art is a
   homage to the flying eagle banjo inlay. All proposed boards now use it
   (inverted on dark). Mike would like the inlay theme used elsewhere.
+  Then (same day): **drop the plaque's black square**; the mark is the
+  letters and the inlays. `design/logo/bb-mark.svg` is that version in
+  `currentColor`; the boards use it inline. The app still ships
+  `new_bb_logo.svg` (`shell.js`).
+- **Inlays as assets.** The flying eagle peghead set, its diamond and ten
+  fingerboard markers, traced to single-colour SVGs in `design/inlays/` and
+  in the design system's Inlays group. Traced from a supplier's photo, so
+  edges are approximate; redraw before using one large or in print.
 - **The library must not be one big list of lists**; lists serve different
   purposes. Proposal (canvas, Library page): folders carry the purpose, each
   with a colour from a short palette. Folders sit in a sidebar on desktop and
