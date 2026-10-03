@@ -67,6 +67,8 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | F8 | List view rework + a way to read notes (Mike wants to lead this) | L | — | not started |
 | D8 | Arrangement markup for stage notes (follow-up to D3) | M | — | idea, after D3 ships |
 | F9 | Stop presenting `artist` as the song's artist | M | — | idea; collides with F8 and the song page |
+| F10 | Redraw the remaining views in the new look (queue below) | M each | — | queued (Mike, 2026-10-02) |
+| F11 | Build the new look in `style.css` (tokens, links not buttons, chords, BB mark) | M | — | not started; the look is approved on the canvas |
 
 ### How it ships
 
@@ -397,6 +399,33 @@ with small margins, and the board now matches that.
   fold open in place on a phone. A list shared with you waits in "Shared with
   me" until you file it. Open: should a list's purpose change its defaults,
   or do folders and list sections cover it?
+
+**Approved (Mike, 2026-10-02): "I love it. Ship it."** The look on the
+canvas (black and white with folder colours, underlined links, bold chords
+in the text colour, the BB mark without its square) is the direction for
+every view. Building it in the app is F11. Redrawing the rest of the app in
+it is F10; the queue, each as a canvas page with today's screenshot beside
+the redraw, phone dark and desktop light, from the `design/ui-states/`
+states:
+
+1. **Song page, standalone** (`song-lead-sheet`, the Key / Display / Info
+   pills, `song-add-to-list`, `song-abc`, `song-not-found`). Settles F9 (no
+   artist line) and the pill controls in the new look. Fix the clipped
+   add-to-list picker found during capture.
+2. **Search and home** (`home`, `search-results`, `search-browse-all`,
+   `search-no-results`). The most-seen page; collections, rows and tags in
+   the new look.
+3. **Playlist mode on the song page** (D6): how it shows it's on, next and
+   previous, leaving it.
+4. **Favorites and empty states** (`favorites`, `favorites-empty`,
+   `lists-library-empty`, `list-view-empty`, `list-not-found`,
+   `list-shared`). Candidate place for an inlay ornament.
+5. **Editors** (`editor-new-song`, `editor-existing-song`,
+   `add-song-picker`, `tab-editor`). Ties into tier E.
+6. **Bluegrass Dungeon and bounty** (`dungeon`, `bounty`).
+7. **Tab view (F7)**: Mike leads it. Claude prepares the page only (today's
+   five tab states, the tab tokens `tab-ink` / `tab-rule` in the new look)
+   and draws only when asked.
 
 Found while capturing (both belong with F2/F5):
 
