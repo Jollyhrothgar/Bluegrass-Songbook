@@ -104,7 +104,7 @@ put it in `setup`.
 | State | What it shows | Where | For |
 |---|---|---|---|
 | `proposed-d1-folders` | D1 Folders: the library as nested folders | [proposed/d1-folders.html](proposed/d1-folders.html) | D1, D5 |
-| `proposed-d2-items` | D2 Items: dividers, and the same song twice | [proposed/d2-items.html](proposed/d2-items.html) | D2, D4, F8 |
+| `proposed-d2-items` | D2 Items: list sections, and the same song twice | [proposed/d2-items.html](proposed/d2-items.html) | D2, D4, F8 |
 | `proposed-d3-notes` | D3 Notes: a note beside the chart | [proposed/d3-notes.html](proposed/d3-notes.html) | D3, F8 |
 | `proposed-d4-overrides` | D4 Overrides: setlist key, capo and tempo applied | [proposed/d4-overrides.html](proposed/d4-overrides.html) | D4 |
 | `proposed-d5-sharing` | D5 Sharing: Shared with me, Following, Leave | [proposed/d5-sharing.html](proposed/d5-sharing.html) | D5 |
@@ -134,15 +134,15 @@ under "Not filed yet" and you file it where you like.
 
 ### D2 Items (`proposed/d2-items.html`)
 
-A list is a numbered run of items. An item is a song or a divider ("Set 1",
+A list is a numbered run of items. An item is a song or a list section ("Set 1",
 "If they want one more"). The same song appears twice (opener and reprise)
 with different notes and tempos. Each row shows what a player needs: title,
 key, tempo, the note's first line.
 
 - C1 needs: items with their own ids (today the song id is the key, so a song
-  cannot appear twice and each song has one note per list), and a divider item
+  cannot appear twice and each song has one note per list), and a list-section item
   kind.
-- Open: do dividers carry a note of their own? Does numbering restart per set?
+- Open: do list sections carry a note of their own? Does numbering restart per set?
   Is the list note above the items, or folded? What does a row lose on a phone
   when the title is long: the artist, or the note?
 
@@ -204,7 +204,7 @@ key.
 ### D7 Printable songbook (`proposed/d7-songbook.html`)
 
 A print screen with the choices on the left and real pages on the right: a
-contents page with set dividers, keys and page numbers, then each song in its
+contents page with list sections, keys and page numbers, then each song in its
 setlist key with its note.
 
 - C1 needs: nothing new beyond D2 to D4; it is the proof that overrides and

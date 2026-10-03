@@ -105,12 +105,12 @@ h2 {
 .rows .body { min-width: 0; flex: 1; }
 .rows .note { color: var(--text-secondary); font-size: 14px; margin-top: 2px; }
 .rows .num { width: 20px; flex: none; color: var(--text-secondary); font-size: 14px; font-variant-numeric: tabular-nums; }
-.rows > li.divider {
+.rows > li.section {
     border-bottom: 1px solid var(--text);
     padding: 26px 0 6px; font-size: 12px; font-weight: 700;
     letter-spacing: 0.08em; text-transform: uppercase;
 }
-.rows > li.divider .end { text-transform: none; letter-spacing: 0; font-weight: 400; }
+.rows > li.section .end { text-transform: none; letter-spacing: 0; font-weight: 400; }
 .rows > li.current { background: var(--bg-tertiary); margin: 0 -10px; padding-left: 10px; padding-right: 10px; border-radius: 6px; }
 .key { font-weight: 600; color: var(--text); }
 .tag { font-size: 12px; color: var(--text-secondary); border: 1px solid var(--border); border-radius: 999px; padding: 1px 8px; white-space: nowrap; }

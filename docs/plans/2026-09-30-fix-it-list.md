@@ -241,7 +241,7 @@ workshopped alongside F7/F8 instead of being built first:
 
 - **D1 Folders**: the library as nested folders, with a shared band list filed
   in each member's own folder.
-- **D2 Items**: a list with dividers ("Set 1", "Week 2 goals") and the same
+- **D2 Items**: a list with list sections ("Set 1", "Week 2 goals") and the same
   song twice.
 - **D3 Notes**: a list note, and a per-item note shown beside the chart (a side
   panel on desktop, a pinned card on a phone), in the small Markdown subset,
@@ -278,7 +278,7 @@ account:
 A decision made on the canvas is not in git until it is written here or built.
 
 **Feedback on the first boards (Mike, 2026-10-02).** Keep D2's sets
-(dividers) and the phone/desktop split: the set is the right altitude for
+(list sections) and the phone/desktop split: the set is the right altitude for
 annotation. New idea from it: an **arrangement line**, the least text that
 says how a band plays a song. Mike's printed gig sheet
 (`design/ui-states/reference/stereo-setlist.html`, readable from six feet)
@@ -289,7 +289,7 @@ uses it:
 
 `K:` is the kickoff, initials are players, `>` is order, `V`/`C` are verse
 and chorus, `(...)` says how. Songs past the "extras" rule are played only if
-there is time (D2's "If they want one more" divider). Plain text has to stay
+there is time (D2's "If they want one more" section). Plain text has to stay
 valid; anything the app recognises in it is a bonus.
 
 Open questions Mike raised, with Claude's proposal (not decided):
@@ -338,10 +338,12 @@ with small margins, and the board now matches that.
 - He likes both proposed list views (phone and desktop).
 - **No row numbers.**
 - **No artist on rows**, see F9.
-- **Dividers may carry a short note** (drawn under "Set 2").
+- **"List section", not "divider"**, in the UI and in code. A list
+  section may carry a short note (drawn under "Set 2").
 - "Play through" and "More" didn't say what they do. They are now:
-  - **"Open first song"** (D6): opens song 1, then moves next and previous
-    through the list, keeping each item's key and note.
+  - **"Playlist mode"** (D6): moves next and previous through the list in
+    order, keeping each item's key and note. The button starts at the top;
+    clicking any song in the list starts playlist mode from that song.
   - On desktop, **Print** and **Edit** in place of More.
   - On a phone, the `···` menu in the top bar holds rename, duplicate, print,
     export, leave and delete; the second "More" link was a duplicate and is
@@ -822,7 +824,7 @@ on them.
   a column on the shared list. The existing local-only folder code
   (`lists.js:459-590`, no creation UI) is the starting point.
 - **D2 Items** — each item has its own id and is either a song reference
-  (work, version or tab part) or a **divider** ("Set 1", "Week 2 goals"); the
+  (work, version or tab part) or a **list section** ("Set 1", "Week 2 goals"); the
   same song may appear twice.
 - **D3 Notes** — Markdown (small in-house subset: bold, italic, lists,
   checkboxes, links; never raw HTML) on folders, lists and items, shown beside
