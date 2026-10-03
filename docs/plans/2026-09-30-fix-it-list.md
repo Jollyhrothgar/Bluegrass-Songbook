@@ -367,8 +367,15 @@ with small margins, and the board now matches that.
 - **Black and white with a little colour.** Modern, and it must work in
   light and dark. Proposal: neutral grounds, black/white text and primary
   button (inverted per theme), no blue for actions; colour only as a splash
-  that means something (a folder's colour, the red heart, danger). Not yet
-  applied to the design system's tokens.
+  that means something (a folder's colour, the red heart, danger).
+  **Applied 2026-10-02** to the design system's tokens (a proposal;
+  `style.css` still has the blue accent): `accent` and `chord` = `text`
+  (#000 / #fff), `on-accent` inverted, `bg` #fff / #000, `text-secondary`
+  #6b6b6b / #a3a3a3, `border` #e5e5e5 / #262626, plus six `folder-*` mark
+  colours (rust, green, blue, gold, violet, teal). Links and secondary
+  actions are weight 600 with a thin underline. All proposed list, song and
+  library boards are redrawn in it (phones dark, desktops light); the song
+  boards no longer show an artist (F9).
 - **Keep the BB plaque logo** (`docs/images/new_bb_logo.svg`). Its art is a
   homage to the flying eagle banjo inlay. All proposed boards now use it
   (inverted on dark). Mike would like the inlay theme used elsewhere.
