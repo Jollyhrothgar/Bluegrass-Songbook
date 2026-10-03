@@ -65,6 +65,8 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | F1–F6 | Visual design | M–L | — | not started |
 | F7 | Tab view rework (Mike wants to lead this) | L | — | not started |
 | F8 | List view rework + a way to read notes (Mike wants to lead this) | L | — | not started |
+| D8 | Arrangement markup for stage notes (follow-up to D3) | M | — | idea, after D3 ships |
+| F9 | Stop presenting `artist` as the song's artist | M | — | idea; collides with F8 and the song page |
 
 ### How it ships
 
@@ -328,7 +330,35 @@ Mike agreed (2026-10-02) and added three points:
 
 The canvas's List view page now has a **stage sheet** board (D7): the Friday
 Jam list printed after Mike's gig sheet, with the key first and one
-arrangement line per song.
+arrangement line per song. Mike's gig sheet is meant for a landscape page
+with small margins, and the board now matches that.
+
+**Decided on the list boards (Mike, 2026-10-02):**
+
+- He likes both proposed list views (phone and desktop).
+- **No row numbers.**
+- **No artist on rows**, see F9.
+- **Dividers may carry a short note** (drawn under "Set 2").
+- "Play through" and "More" didn't say what they do. They are now:
+  - **"Open first song"** (D6): opens song 1, then moves next and previous
+    through the list, keeping each item's key and note.
+  - On desktop, **Print** and **Edit** in place of More.
+  - On a phone, the `···` menu in the top bar holds rename, duplicate, print,
+    export, leave and delete; the second "More" link was a duplicate and is
+    gone.
+- **Arrangement markup is a follow-up to notes (D8), not part of D3.** It
+  must be opinionated: a fixed set of arrangement parts (kickoff, sections,
+  solos, endings, tempo/feel), so that a line can be checked like a type and
+  the front end knows how to draw each part. Until then the arrangement line
+  is plain text.
+- **F9, artists.** The corpus doesn't know which artist's recording a chart
+  came from: `artist` is whatever performer page a chart was scraped from
+  (see "Works Architecture" in `CLAUDE.md`). Mike's direction: assume we don't
+  know, drop the artist from rows, and treat the names we have as artists who
+  *may have covered* the song. That is its own redesign: the song page,
+  search results and the "Covering artists" line all show `artist` today. It
+  collides with F8 here; the proposed list boards already drop it. The song
+  boards (D3) still show it.
 
 Found while capturing (both belong with F2/F5):
 
