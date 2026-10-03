@@ -326,6 +326,10 @@ Mike agreed (2026-10-02) and added three points:
   purpose. The line between the two: key, capo and hidden sections are an
   overlay; changed chords or lyrics are a version.
 
+The canvas's List view page now has a **stage sheet** board (D7): the Friday
+Jam list printed after Mike's gig sheet, with the key first and one
+arrangement line per song.
+
 Found while capturing (both belong with F2/F5):
 
 - On a phone the add-to-list picker on the song page is clipped off the left
