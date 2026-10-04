@@ -338,6 +338,10 @@ with small margins, and the board now matches that.
 **Decided on the list boards (Mike, 2026-10-02):**
 
 - He likes both proposed list views (phone and desktop).
+- **Prep first** (2026-10-04): each list row starts with the key, large,
+  with tempo and capo stacked under it, then the song and its performance
+  note. Playing through a list, you set up for the next song (capo,
+  count-off) before you play it. The capo is a field (D4), not note text.
 - **No row numbers.**
 - **No artist on rows**, see F9.
 - **"List section", not "divider"**, in the UI and in code. A list
