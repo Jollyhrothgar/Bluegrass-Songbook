@@ -2,7 +2,7 @@
 [D]Once in my youth, I [G]stood on a [D]mountain,
 And planted some [A]pines in the [D]sand.
 [D]Every day, I'd [G]look their [D]way,
-But I just coulnd't [A]under[D]stand...
+But I [D]just coulnd't [A]under[D]stand...
 {end_of_verse}
 
 {start_of_verse: Verse 1B}
