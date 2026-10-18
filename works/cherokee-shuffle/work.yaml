@@ -31,5 +31,17 @@ parts:
     source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=2169
     author: Live on What You Grow
     imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-26756.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '26756'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=26756
+    author: rdeanjordan
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-10-17'
 composers:
 - Traditional

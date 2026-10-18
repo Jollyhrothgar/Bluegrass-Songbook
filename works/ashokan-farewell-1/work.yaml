@@ -7,6 +7,7 @@ tags:
 - Instrumental
 - OldTime
 - Folk
+- Clawhammer
 parts:
 - type: lead-sheet
   format: chordpro
@@ -45,3 +46,15 @@ parts:
     source_url: https://www.mandohangout.com/tab/browse.asp?m=detail&v=3020
     author: MandoTom2
     imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-27756.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '27756'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=27756
+    author: dbrooks
+    difficulty: Intermediate
+    tuning: Double C (gCGCD)
+    imported_at: '2026-10-17'

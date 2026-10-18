@@ -88,5 +88,17 @@ parts:
     source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=18031
     author: Ricky Mier
     imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-28379.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '28379'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=28379
+    author: corcoran
+    difficulty: Expert
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-10-17'
 composers:
 - Traditional

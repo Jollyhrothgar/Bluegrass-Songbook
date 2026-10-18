@@ -7665,10 +7665,12 @@
       "tuning": "GDAE (Standard)",
       "key": "D",
       "difficulty": "Expert",
-      "status": "skipped",
-      "error": "Empty notation (0 events)",
+      "status": "imported",
       "discovered_at": "2026-07-26T21:57:43.367290",
-      "downloaded_at": "2026-07-26T22:10:44.559907"
+      "downloaded_at": "2026-07-26T22:10:44.559907",
+      "converted_at": "2026-10-17T22:20:46.573643",
+      "imported_at": "2026-10-17T22:20:46.599085",
+      "work_slug": "st-anne-s-reel"
     },
     "2956_tef": {
       "id": "2956_tef",

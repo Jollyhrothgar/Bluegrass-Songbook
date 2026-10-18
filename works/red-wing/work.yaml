@@ -60,5 +60,41 @@ parts:
     difficulty: Intermediate
     tuning: EADGBE (Standard)
     imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-25151.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '25151'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=25151
+    author: stratovarious520
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-10-17'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-27409.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '27409'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=27409
+    author: Yohansen
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-10-17'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-28928.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '28928'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=28928
+    author: RB3
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-10-17'
 composers:
 - Kerry Mills

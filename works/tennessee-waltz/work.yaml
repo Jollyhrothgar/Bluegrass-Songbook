@@ -10,6 +10,7 @@ tags:
 - NashvilleSound
 - HonkyTonk
 - JamFriendly
+- Instrumental
 external:
   musicbrainz: f6755b42-b1bd-4370-9b4f-b4731377dcda
 parts:
@@ -21,3 +22,15 @@ parts:
     source: classic-country
     source_file: tennesseewaltzlyricschords.pro
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '11721'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11721
+    author: mwblake
+    difficulty: Expert
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-10-17'

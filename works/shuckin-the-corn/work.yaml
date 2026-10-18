@@ -8,6 +8,7 @@ default_key: null
 tags:
 - Instrumental
 - Scruggs
+- Bluegrass
 parts:
 - type: tablature
   instrument: banjo
@@ -20,3 +21,15 @@ parts:
     source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=12123
     author: Mirek Tim Patek
     imported_at: '2026-07-08'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-25139.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '25139'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=25139
+    author: corcoran
+    difficulty: Expert
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-10-17'

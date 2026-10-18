@@ -63,3 +63,15 @@ parts:
     difficulty: Intermediate
     tuning: GDAE (Standard)
     imported_at: '2026-07-27'
+- type: tablature
+  instrument: guitar
+  format: otf
+  file: guitar-3433.otf.json
+  provenance:
+    source: flatpicker-hangout
+    source_id: '3433'
+    source_url: https://www.flatpickerhangout.com/tab/browse.asp?m=detail&v=3433
+    author: Bluegrass
+    difficulty: Beginner
+    tuning: EADGBE (Standard)
+    imported_at: '2026-10-17'

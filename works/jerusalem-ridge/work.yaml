@@ -11,5 +11,31 @@ parts:
     source_file: jerusalem-ridge-kenny-baker.txt
     source_url: https://tabs.ultimate-guitar.com/tab/kenny-baker-us-fiddler/jerusalem-ridge-tabs-2591301
     imported_at: '2026-07-31'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '20127'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=20127
+    author: mmuussiiccaall
+    difficulty: Expert
+    imported_at: '2026-10-17'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-21523.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '21523'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=21523
+    author: mmuussiiccaall
+    difficulty: Expert
+    imported_at: '2026-10-17'
 composers:
 - Bill Monroe
+tags:
+- Instrumental
+- Bluegrass
+- Scruggs

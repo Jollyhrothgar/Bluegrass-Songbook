@@ -9,6 +9,7 @@ tags:
 - Instrumental
 - Bluegrass
 - OldTime
+- Clawhammer
 parts:
 - type: lead-sheet
   format: chordpro
@@ -27,3 +28,15 @@ parts:
     source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=2275
     author: Live on What You Grow
     imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '26246'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=26246
+    author: janolov
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-10-17'

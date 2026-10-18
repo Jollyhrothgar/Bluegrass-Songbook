@@ -109,3 +109,27 @@ parts:
     difficulty: Beginner
     tuning: Standard Open G (gDGBD)
     imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-28452.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '28452'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=28452
+    author: corcoran
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-10-17'
+- type: tablature
+  instrument: guitar
+  format: otf
+  file: guitar.otf.json
+  provenance:
+    source: flatpicker-hangout
+    source_id: '3424'
+    source_url: https://www.flatpickerhangout.com/tab/browse.asp?m=detail&v=3424
+    author: Bluegrass
+    difficulty: Beginner
+    tuning: EADGBE (Standard)
+    imported_at: '2026-10-17'

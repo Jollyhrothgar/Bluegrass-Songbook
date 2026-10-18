@@ -20,5 +20,17 @@ parts:
     tef_time_sig: 4/4
     tef_tracks: 1
     tef_events: 633
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-27183.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '27183'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=27183
+    author: Yohansen
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-10-17'
 composers:
 - Earl Scruggs

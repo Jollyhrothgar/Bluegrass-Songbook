@@ -36,3 +36,15 @@ parts:
     source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=3009
     author: mmuussiiccaall
     imported_at: '2026-07-26'
+- type: tablature
+  instrument: guitar
+  format: otf
+  file: guitar.otf.json
+  provenance:
+    source: flatpicker-hangout
+    source_id: '878'
+    source_url: https://www.flatpickerhangout.com/tab/browse.asp?m=detail&v=878
+    author: KI4PRK
+    difficulty: Expert
+    tuning: EADGBE (Standard)
+    imported_at: '2026-10-17'

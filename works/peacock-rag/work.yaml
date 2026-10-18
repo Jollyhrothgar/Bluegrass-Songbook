@@ -6,6 +6,7 @@ default_key: D
 tags:
 - Instrumental
 - Scruggs
+- Bluegrass
 parts:
 - type: tablature
   instrument: banjo
@@ -20,3 +21,15 @@ parts:
     difficulty: Intermediate
     tuning: aDGBD
     imported_at: '2026-08-01'
+- type: tablature
+  instrument: guitar
+  format: otf
+  file: guitar.otf.json
+  provenance:
+    source: flatpicker-hangout
+    source_id: '787'
+    source_url: https://www.flatpickerhangout.com/tab/browse.asp?m=detail&v=787
+    author: KI4PRK
+    difficulty: Intermediate
+    tuning: EADGBE (Standard)
+    imported_at: '2026-10-17'
