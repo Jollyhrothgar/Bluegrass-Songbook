@@ -1,70 +1,49 @@
-{meta: title Tall Pines}
-{meta: artist Laurie Lewis}
-{meta: composer Damon Black}
-{meta: x_source classic-country}
-{meta: x_source_file tallpineslyricsandchords.pro}
-{meta: x_enriched 2025-12-26}
-
-{start_of_verse: Verse 1}
-[C]Once in my youth I stood [F]on a [C]mountain
-[G7]And planted some pines in the [C]sand
-[F]Every day I'd look their [C]way
-[G7]But I just couldn't [C]understand
+{start_of_verse: Verse 1A}
+[D]Once in my youth, I [G]stood on a [D]mountain,
+And planted some [A]pines in the [D]sand.
+[D]Every day, I'd [G]look their [D]way,
+But I just coulnd't [A]under[D]stand...
 {end_of_verse}
 
-{start_of_verse: Verse 2}
-[G7]Why they never grew like
-[F]I thought they [C]should
-[D7]I just couldn't understand [G7]why
-[C]Now I've rambled around
-[F]This whole world [C]through
-[G7]And today I just happened [C]by
+{start_of_verse: Verse 1B}
+Why they [A]never grew, like I [G]wanted them [D]to,
+I [E7]just coulnd't understand [A]why.
+Now I've [D]rambled around, this [G]whole world [D]through,
+And [D]today, I [A]just happened [D]by.
 {end_of_verse}
 
-{start_of_verse: Verse 3}
-[F]Tall pines tall pines
-[C]Reaching up for the [G7]sky
-[C]Tall pines tall [F]pines
-[C]I'll bet you wouldn't [G7]know me [C]now
+{start_of_chorus: Chorus}
+Tall [D]pines, tall [G]pines,
+[D]Reaching up to the [A]sky.
+Tall [D]pines, tall [G]pines,
+I'll [D]bet you wouldn't [A]know me [D]now.
+{end_of_chorus}
+
+{start_of_verse: Verse 2A}
+I'll  [D]never forget, the [G]morning I [D]left,
+The [D]hum of the [A]bees in the [D]hay.
+The [D]farther I walked, the [G]louder they [D]talked,
+How [D]silent, it [A]seems here [D]today.
 {end_of_verse}
 
-{start_of_verse: Verse 4}
-[F]I'll never forget the morning I [C]left
-[G7]The hum of the bees in the [C]hay
-{end_of_verse}
-
-{start_of_verse: Verse 5}
-The farther I walked
-[F]The louder they [C]talked
-[G7]How silent it seems there [C]today
-{end_of_verse}
-
-{start_of_verse: Verse 6}
-[G7]There's the old red fence
-[F]We built inch by [C]inch
-[D7]Surrounding the old family [G7]graves
-[C]And there's one red stone
-[F]Standing all [C]alone
-[G7]There waitin' to meet me in the [C]shade
-{end_of_verse}
-
-{start_of_verse: Verse 3}
-[F]Tall pines tall pines
-[C]Reaching up for the [G7]sky
-[C]Tall pines tall [F]pines
-[C]I'll bet you wouldn't [G7]know me [C]now
-{end_of_verse}
-
-{start_of_verse: Verse 7}
-[F]Tall pines tall pines
-[C]Reaching up for the [G7]sky
-[C]Tall pines tall [F]pines
-[C]I've come [G7]home to sleep beneath [F]your [C][G7]pines
+{start_of_verse: Verse 2B}
+There's that [A]old rail fence, we [G]built inch by [D]inch,
+Sur[E7]rounding the old family [A]grave.
+Now there's the [D]one great stone, [G]standing all [D]alone,
+There [D]waiting to [A]meet me in the [D]shade.
 {end_of_verse}
 
 
+{start_of_chorus: Chorus}
+Tall [D]pines, tall [G]pines,
+[D]Reaching up to the [A]sky.
+Tall [D]pines, tall [G]pines,
+I'll [D]bet you wouldn't [A]know me [D]now.
+{end_of_chorus}
 
-
-
-
-
+{start_of_chorus: Chorus}
+Tall [D]pines, tall [G]pines,
+[D]Reaching up to the [A]sky.
+Tall [D]pines, tall [G]pines,
+I'll [D]bet you wouldn't [A]know me [D]now.
+{end_of_chorus}
