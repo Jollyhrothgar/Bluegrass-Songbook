@@ -15,6 +15,8 @@ let actionsEl = null;
 let titleEl = null;
 let backBtn = null;
 let overflowMenu = null;
+let navEl = null;
+let navItems = [];
 let openPopover = null; // only one pill/overflow popover open at a time
 
 /**
@@ -74,7 +76,8 @@ export function initShell({ nav = [], onToggleTheme, onReportBug } = {}) {
     backBtn = topbarEl.querySelector('#topbar-back');
     overflowMenu = topbarEl.querySelector('#topbar-overflow-menu');
 
-    const navEl = topbarEl.querySelector('.topbar-nav');
+    navItems = nav;
+    navEl = topbarEl.querySelector('.topbar-nav');
     for (const item of nav) {
         const a = document.createElement('a');
         a.href = item.href;
@@ -114,6 +117,83 @@ export function initShell({ nav = [], onToggleTheme, onReportBug } = {}) {
     topbarEl.addEventListener('click', () => {
         document.body.classList.remove('chrome-hidden');
     });
+
+    // The band re-measures on width changes (the observer sees the viewport,
+    // since the band is full-width) and whenever supabase-auth swaps the
+    // sign-in button for an avatar + display name — that name is the usual
+    // reason a band that fit a moment ago no longer does.
+    if (typeof ResizeObserver !== 'undefined') {
+        new ResizeObserver(updateDensity).observe(topbarEl);
+    }
+    const authEl = topbarEl.querySelector('#auth-section');
+    if (authEl && typeof MutationObserver !== 'undefined') {
+        new MutationObserver(updateDensity).observe(authEl, {
+            subtree: true, childList: true, characterData: true, attributes: true,
+        });
+    }
+    updateDensity();
+}
+
+/**
+ * Responsive density — the band rolls itself up until it fits.
+ *
+ * A viewport breakpoint cannot answer "does this fit?", because the band's
+ * content width does not follow the viewport: the actions differ per view,
+ * the center title is whatever the song is called, and a signed-in name is
+ * as long as the person is. That mismatch is what let the nav spill out and
+ * paint on top of the actions at ~800-1000px. So the band measures itself
+ * instead, shedding one layer of detail at a time until the content fits.
+ *
+ * Steps are cumulative and ordered cheapest-loss-first. Each is a single
+ * `density-*` class handled in style.css, except the last, which re-homes
+ * the nav links into the ⋯ menu so they stay reachable rather than simply
+ * vanishing. The ladder bottoms out at roughly a 300px band (back · brand ·
+ * action icons · ⋯); below that the band overflows, which is deliberate —
+ * the phone rules at 640px have already trimmed it further by then.
+ */
+const DENSITY_STEPS = ['full', 'snug', 'no-name', 'no-title', 'icons', 'nav-icons', 'nav-overflow'];
+let navInOverflow = false;
+let densityPass = false;
+
+function bandFits() {
+    // 1px of slack: sub-pixel layout rounding reports phantom overflow, and a
+    // phantom overflow would collapse a band that is actually fine.
+    return topbarEl.scrollWidth <= topbarEl.clientWidth + 1;
+}
+
+function applyDensity(step) {
+    DENSITY_STEPS.forEach((name, i) => {
+        topbarEl.classList.toggle(`density-${name}`, i > 0 && i <= step);
+    });
+    topbarEl.dataset.density = DENSITY_STEPS[step];
+    const wantNavInOverflow = DENSITY_STEPS[step] === 'nav-overflow';
+    if (wantNavInOverflow !== navInOverflow) {
+        navInOverflow = wantNavInOverflow;
+        renderOverflow(lastViewOverflow);
+    }
+}
+
+/**
+ * Re-measure and pick the smallest density step the content fits in. Called
+ * on resize, on every setTopBar(), and when the auth chip changes.
+ */
+export function updateDensity() {
+    if (!topbarEl || densityPass) return;
+    densityPass = true;
+    try {
+        // Walk from the top every pass rather than nudging the current step:
+        // the previous answer is stale the moment the view's actions change,
+        // and only a full walk can climb back up when room is returned. Every
+        // step is applied inside this one synchronous task, so no
+        // intermediate state ever reaches the screen.
+        let step = 0;
+        applyDensity(step);
+        while (step < DENSITY_STEPS.length - 1 && !bandFits()) {
+            applyDensity(++step);
+        }
+    } finally {
+        densityPass = false;
+    }
 }
 
 /**
@@ -160,9 +240,14 @@ export function setTopBar({ back = null, title = null, actions = [], overflow = 
     topbarEl.querySelectorAll('.topbar-nav-link').forEach(a => {
         a.classList.toggle('active', a.dataset.nav === navActive);
     });
+
+    // Actions and title just changed, so the width that fit a moment ago
+    // tells us nothing — measure again.
+    updateDensity();
 }
 
 let overflowBase = [];
+let lastViewOverflow = [];
 
 /** Persistent overflow entries (About, Patreon, Feedback, …) seeded once by main.js. */
 export function setOverflowBase(items) {
@@ -172,8 +257,16 @@ export function setOverflowBase(items) {
 
 function renderOverflow(viewItems) {
     if (!overflowMenu) return;
+    lastViewOverflow = viewItems;
     overflowMenu.textContent = '';
-    const groups = viewItems.length ? [viewItems, overflowBase] : [overflowBase];
+    // At the last density step the nav links have left the band; they lead
+    // the ⋯ menu so navigation is still one tap away.
+    const navGroup = navInOverflow ? navItems.map(item => ({
+        id: item.id ? `overflow-nav-${item.id}` : null,
+        label: item.label,
+        onClick: item.onClick || (() => { location.href = item.href; }),
+    })) : [];
+    const groups = [navGroup, viewItems, overflowBase].filter(group => group.length);
     groups.forEach((group, i) => {
         if (i > 0 && group.length) {
             const hr = document.createElement('div');
