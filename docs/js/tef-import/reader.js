@@ -1,10 +1,7 @@
-// In-browser TEF binary reader — JavaScript port of the V2 read path from
-// sources/banjo-hangout/src/tef_parser/reader.py. Faithful, line-for-line where
-// it matters; verified byte-exact against the Python parser by the golden-diff
-// gate (docs/js/__tests__/tef-import-golden.test.js).
-//
-// V3 is not yet ported (2 of 42 corpus files; see tef-import/README or the
-// project plan). parse() throws TefVersionError for non-V2 input.
+// In-browser TEF binary reader — JavaScript port of the V2 and V3 read paths
+// from sources/banjo-hangout/src/tef_parser/reader.py. Faithful, line-for-line
+// where it matters; verified byte-exact against the Python parser by the
+// golden-diff gate (docs/js/__tests__/tef-import-golden.test.js).
 
 // --- Python-builtin shims --------------------------------------------------
 const u16 = (d, o) => d[o] | (d[o + 1] << 8);
@@ -18,23 +15,42 @@ const latin1 = (bytes) => {                            // latin-1 is a 1:1 map
 
 export class TefVersionError extends Error {}
 
+// V2/V3 routing and V3 layout, as TablEdit's own loaders read them — see the
+// matching constants in reader.py. The format byte at 205 picks the loader
+// (>= 10 is V3); the first byte can't, since an untitled V2 file starts with
+// 0x00 like a V3 one. V3 notes start at the u32 at 0x3C; the 'debt'/'tbed'
+// magic before it is never read by TablEdit. V3 positions are 64ths of a
+// whole note.
+const V3_FORMAT_BYTE = 205;
+const V3_MIN_FORMAT = 10;
+const V3_NOTES_PTR = 0x3c;
+const V3_HEADER_SIZE = 0x100;
+export const V3_UNITS_PER_WHOLE = 64;
+
+/** True when TablEdit would load these bytes with its V3 loader. */
+export function isV3Layout(data) {
+    return data.length > V3_FORMAT_BYTE && data[V3_FORMAT_BYTE] >= V3_MIN_FORMAT;
+}
+
 /** Port of reader.py TEFParseError — a decode that produced structurally
  *  impossible output (e.g. thousands of measures for a 62-measure tune).
  *  Deliberately loud: better a failed import than a plausible-looking
  *  garbage OTF. */
 export class TefParseError extends Error {}
 
+// TablEdit's own duration table (960 per whole), indexed by the 5-bit code —
+// see _TABLEDIT_DURATIONS in reader.py.
+const TABLEDIT_DURATIONS = [
+    960, 720, 640, 480, 360, 320, 240, 180, 160, 120, 90, 80, 60, 45, 40, 30,
+    22, 20, 15, 840, 48, 15, 420, 34, 15, 210, 26, 15, 105, 24, 240, 1440];
+
+/** Duration codes TablEdit plays as triplets (3 in the time of 2). */
+export const TRIPLET_DURATION_CODES = new Set([2, 5, 8, 11, 14, 17]);
+
 /** Written duration in ticks (480/quarter) from a TEF duration code.
- *  Port of decode_duration_code(). Oracle-validated corpus-wide. */
+ *  Port of decode_duration_code(). */
 export function decodeDurationCode(code) {
-    const doubleDot = code & 0x10;
-    code &= 0x0f;
-    let base = 1920 >> fdiv(code, 3);
-    const mod = code % 3;
-    if (mod === 1) base = fdiv(base * 3, 4);
-    else if (mod === 2) base = fdiv(base * 2, 3);
-    if (doubleDot) base = fdiv(base * 7, 4);
-    return base;
+    return 2 * TABLEDIT_DURATIONS[code & 0x1f];
 }
 
 // GM program -> display name (subset seen in the corpus; matches reader.py).
@@ -57,11 +73,11 @@ function programToName(program, numStrings) {
 // Mirror of TEFNoteEvent (the fields tef_to_otf consumes). `raw` is the 6-byte
 // V2 record. `extra` = 1-indexed local string; `pitchByte` = fret.
 export function isMelody(e) {
-    return e.extra >= 1 && e.extra <= 15 && e.pitchByte >= 0 && e.pitchByte <= 24;
+    return e.extra >= 1 && e.extra <= 15 && e.pitchByte >= 0 && e.pitchByte <= 25;
 }
 
 export function decodeStringFret(e) {
-    if (!(e.extra >= 1 && e.extra <= 15) || !(e.pitchByte >= 0 && e.pitchByte <= 24)) {
+    if (!(e.extra >= 1 && e.extra <= 15) || !(e.pitchByte >= 0 && e.pitchByte <= 25)) {
         return null;
     }
     return [e.extra, e.pitchByte];
@@ -69,8 +85,7 @@ export function decodeStringFret(e) {
 
 // --- header ----------------------------------------------------------------
 export function readHeader(data) {
-    // v2 files start with printable ASCII text; v3 with the 0x10 0x00 format id.
-    if (!(data[0] >= 0x20 && data[0] < 0x7f)) {
+    if (isV3Layout(data)) {
         const versionMajor = data[3];
         throw new TefVersionError(
             `TEF version ${versionMajor}.x is not supported by the browser parser (V2 only).`);
@@ -306,7 +321,8 @@ export function parseNoteEventsV2(data, h, instruments) {
 
         if (tsMove && positionInMeasure >= tsMove) positionInMeasure -= tsMove;
 
-        if (fretRaw >= 0x01 && fretRaw <= 0x19) {
+        // Fret field 0x1a is fret 25 unless the byte is a bare 0x1a (a special; 11056 m9).
+        if ((fretRaw >= 0x01 && fretRaw <= 0x19) || (fretRaw === 0x1a && fretByte !== 0x1a)) {
             const fret = fretRaw - 1;
             const durationByte = rec[3];
             const markerChar = (durationByte >= 0x40 && durationByte <= 0x5a)
@@ -405,9 +421,8 @@ export function parseV2(data, name) {
 
 // ===========================================================================
 // V3 path (binary container, 12-byte note records) — port of the reader.py V3
-// methods. Both corpus V3 files carry valid track records; the name-pattern
-// instrument fallback is not ported (a V3 file needing it, or lacking the
-// 'debt' marker entirely, throws TefVersionError — matching the Python skip).
+// methods. The name-pattern instrument fallback is not ported; a V3 file whose
+// note pointer is unusable throws TefVersionError (Python parses it empty).
 // ===========================================================================
 
 function bisectRight(arr, x) {
@@ -422,16 +437,6 @@ function bisectRight(arr, x) {
 function magicAt0x38(data) {
     const m = latin1(data.subarray(0x38, 0x3c));
     return m === 'debt' || m === 'tbed';
-}
-
-function hasDebtMarker(data) {
-    // data.indexOf on a Uint8Array only finds a single byte; scan for 'debt'.
-    for (let i = 0; i + 4 <= data.length; i++) {
-        if (data[i] === 0x64 && data[i + 1] === 0x65 && data[i + 2] === 0x62 && data[i + 3] === 0x74) {
-            return i;
-        }
-    }
-    return -1;
 }
 
 export function readV3Header(data) {
@@ -478,12 +483,15 @@ export function parseMeasureTableV3(data) {
     if (data.length < 0x64 || !magicAt0x38(data)) return [];
     const ptr = u32(data, 0x5c);
     if (!(ptr > 0 && ptr < data.length - 4)) return [];
+    // [u16 tag][u16 count][u32 pad], then count 8-byte records; record j is
+    // measure j+1 with byte 4 = denominator, byte 5 = numerator.
     const count = u16(data, ptr + 2);
-    if (!(count >= 1 && count <= 2048) || ptr + 4 + count * 8 > data.length) return [];
+    const first = ptr + 8;
+    if (!(count >= 1 && count <= 2048) || first + count * 8 > data.length) return [];
     const out = [];
-    for (let k = 1; k < count; k++) {
-        const o = ptr + 4 + k * 8;
-        const den = data[o], num = data[o + 1];
+    for (let j = 0; j < count; j++) {
+        const o = first + j * 8;
+        const den = data[o + 4], num = data[o + 5];
         if (![0, 1, 2, 4, 8, 16].includes(den) || num > 32) return [];
         out.push([num, den]);
     }
@@ -513,21 +521,24 @@ export function parseTrackRecordsV3(data) {
         if (nul >= 0) nameBytes = nameBytes.subarray(0, nul);
         const name = latin1(nameBytes).trim();
         cum += ns;
+        // V3 drum track: bit 7 of byte +4 (see reader.py).
+        const isPercussion = (data[o + 4] & 0x80) !== 0;
         instruments.push({
-            name: name || programToName(program, ns), tuning_name: '',
-            num_strings: ns, tuning_pitches: tuning.map(b => 96 - b),
-            capo: capo <= 12 ? capo : 0, midi_program: program,
+            name: isPercussion ? (name || 'Percussion') : (name || programToName(program, ns)),
+            tuning_name: '', num_strings: ns,
+            tuning_pitches: isPercussion ? [] : tuning.map(b => 96 - b),
+            capo: isPercussion ? 0 : (capo <= 12 ? capo : 0), midi_program: program,
+            is_percussion: isPercussion,
         });
     }
     return instruments;
 }
 
 function findComponentOffset(data) {
-    const debtPos = hasDebtMarker(data);
-    if (debtPos < 0) return -1;
-    const debtVal = u32(data, debtPos + 4);
-    if (debtVal >= data.length || debtVal < 100) return -1;
-    return debtVal;
+    if (data.length < V3_NOTES_PTR + 4) return -1;
+    const ptr = u32(data, V3_NOTES_PTR);
+    if (ptr < V3_HEADER_SIZE || ptr >= data.length) return -1;
+    return ptr;
 }
 
 function findReadingListOffset(data) {
@@ -587,8 +598,8 @@ export function parseTextTableV3(data) {
     return table;
 }
 
-const V3_NON_NOTE_TYPES = new Set([0x33, 0x35, 0x36, 0x37, 0x38, 0x39, 0x3d,
-    0x75, 0x78, 0x7d, 0x7e, 0xb6, 0xb7, 0xbd, 0xbe, 0xfd, 0xfe]);
+// Special (non-note) components: low 6 bits of the type byte >= 0x33.
+const V3_FIRST_SPECIAL_TYPE = 0x33;
 
 export function parseNoteEventsV3(data, instruments) {
     const events = [];
@@ -596,12 +607,14 @@ export function parseNoteEventsV3(data, instruments) {
     const startOffset = findComponentOffset(data);
     let globalTs = null;
     const tsChanges = [];
-    if (startOffset < 0) return { events, textRefs, tsChanges, globalTs };
+    if (startOffset < 0) return { events, textRefs, tsChanges, globalTs, slotStarts: [], slotCounts: [] };
 
     let totalStrings = instruments.reduce((s, i) => s + i.num_strings, 0);
     if (totalStrings === 0) totalStrings = 5;
+    // Location = 8 * (pos * totalStrings + string), pos in 64ths.
     const VALUE_PER_STRING = 8;
-    const VALUE_PER_POSITION = 32 * totalStrings;
+    const VALUE_PER_POSITION = VALUE_PER_STRING * totalStrings;
+    const UNITS = V3_UNITS_PER_WHOLE;
     let trackStringCounts = instruments.map(i => i.num_strings);
     if (trackStringCounts.length === 0) trackStringCounts = [5];
 
@@ -628,25 +641,16 @@ export function parseNoteEventsV3(data, instruments) {
     }
 
     const slotStarts = [], slotCounts = [];
-    if (measureTs && measureTs.some(([num, den]) => num && den && fdiv(16 * num, den) !== 16)) {
+    if (measureTs && measureTs.some(([num, den]) => num && den && fdiv(UNITS * num, den) !== UNITS)) {
         let start = 0;
         for (const [num, den] of measureTs) {
-            const slots = (num && den) ? fdiv(16 * num, den) : 16;
+            const slots = (num && den) ? fdiv(UNITS * num, den) : UNITS;
             slotStarts.push(start);
             slotCounts.push(slots);
             start += slots;
         }
     }
-    const mapSlot = (position) => {
-        if (slotStarts.length === 0) return position;
-        const idx = bisectRight(slotStarts, position) - 1;
-        const rel = position - slotStarts[idx];
-        if (rel >= slotCounts[idx] && idx === slotStarts.length - 1) {
-            const extra = rel - slotCounts[idx];
-            return (idx + 1 + fdiv(extra, 16)) * 16 + extra % 16;
-        }
-        return idx * 16 + rel;
-    };
+    // Positions stay continuous; v3Locate() maps them to measures (reader.py parity).
 
     let offset = startOffset;
     let consecutiveInvalid = 0;
@@ -655,10 +659,10 @@ export function parseNoteEventsV3(data, instruments) {
         const record = data.subarray(offset, offset + 12);
         const location = u32(record, 0);
         const componentType = record[4];
-        if (V3_NON_NOTE_TYPES.has(componentType)) {
+        if ((componentType & 0x3f) >= V3_FIRST_SPECIAL_TYPE) {
             if (componentType === 0x39) {
                 textRefs.push({
-                    position: mapSlot(fdiv(location, VALUE_PER_POSITION)),
+                    position: fdiv(location, VALUE_PER_POSITION),
                     stringRow: fdiv(location % VALUE_PER_POSITION, VALUE_PER_STRING),
                     index: record[5],
                 });
@@ -681,7 +685,7 @@ export function parseNoteEventsV3(data, instruments) {
             if (localString < trackStringCounts[idx]) { trackIdx = idx; break; }
             localString -= trackStringCounts[idx];
         }
-        const position = mapSlot(fdiv(location, VALUE_PER_POSITION));
+        const position = fdiv(location, VALUE_PER_POSITION);
         const mb = record[5];
         let marker;
         if (mb === 0x49) marker = 'I';
@@ -700,14 +704,27 @@ export function parseNoteEventsV3(data, instruments) {
         });
         offset += 12;
     }
-    return { events, textRefs, tsChanges, globalTs };
+    return { events, textRefs, tsChanges, globalTs, slotStarts, slotCounts };
+}
+
+/** Continuous V3 position -> [0-based measure, 64ths into it] (TEFFile.v3_locate). */
+export function v3Locate(tef, position) {
+    const starts = tef.v3_measure_starts || [], lengths = tef.v3_measure_lengths || [];
+    if (starts.length === 0) return [fdiv(position, V3_UNITS_PER_WHOLE), position % V3_UNITS_PER_WHOLE];
+    const idx = bisectRight(starts, position) - 1;
+    const rel = position - starts[idx];
+    if (rel >= lengths[idx] && idx === starts.length - 1) {
+        const extra = rel - lengths[idx];   // beyond the table: whole-note measures
+        return [idx + 1 + fdiv(extra, V3_UNITS_PER_WHOLE), extra % V3_UNITS_PER_WHOLE];
+    }
+    return [idx, rel];
 }
 
 export function parseV3(data, name) {
-    if (hasDebtMarker(data) < 0) {
-        // Rare old sub-variant with no component marker — nothing to read.
-        // Message stays internal; callers surface a format-agnostic error.
-        throw new TefVersionError('Unsupported TablEdit sub-variant (no component marker).');
+    if (findComponentOffset(data) < 0) {
+        // Note pointer outside the file — nothing to read. Message stays
+        // internal; callers surface a format-agnostic error.
+        throw new TefVersionError('Unreadable TablEdit file (no note records).');
     }
     const header = readV3Header(data);
     const strings = findStrings(data);
@@ -725,7 +742,7 @@ export function parseV3(data, name) {
         break;
     }
     const instruments = parseTrackRecordsV3(data);   // name-pattern fallback not ported
-    const { events, textRefs, tsChanges, globalTs } = parseNoteEventsV3(data, instruments);
+    const { events, textRefs, tsChanges, globalTs, slotStarts, slotCounts } = parseNoteEventsV3(data, instruments);
     const readingList = parseReadingListV3(data);
 
     // Resolve 0x39 text components against the text table; unresolvable
@@ -752,11 +769,11 @@ export function parseV3(data, name) {
         reading_list: readingList,
         time_signature_changes: tsChanges,
         v3_global_ts: globalTs,
+        v3_measure_starts: slotStarts,
+        v3_measure_lengths: slotCounts,
     };
 }
 
 export function parseTefBytes(data, name) {
-    // v2 files start with printable ASCII; v3 with the 0x10 0x00 format id.
-    if (data[0] >= 0x20 && data[0] < 0x7f) return parseV2(data, name);
-    return parseV3(data, name);
+    return isV3Layout(data) ? parseV3(data, name) : parseV2(data, name);
 }

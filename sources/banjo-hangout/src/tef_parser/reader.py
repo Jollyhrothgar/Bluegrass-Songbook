@@ -9,33 +9,58 @@ from pathlib import Path
 import struct
 
 
+# TablEdit's own duration table (TablEdit 3.06, 0x1000f38b8), indexed by
+# the 5-bit duration code, in its 960-per-whole units. Codes 0-15 run
+# whole -> 32nd as (straight, dotted, triplet) triples; 19/22/25/28 are
+# double-dotted half/quarter/eighth/16th; 15-17 continue the triples
+# (32nd, dotted 64th, 32nd triplet); 18/21/24/27 are 64ths, 20/29 16th/32nd
+# quintuplets, 23/26 septuplets, 30 a quarter and 31 a dotted whole. The old
+# formula matched codes 0-15 and the double dots but read code 18 — the
+# 64th mandolin chops in 19150 — as 2240 ticks instead of 30.
+_TABLEDIT_DURATIONS = (
+    960, 720, 640, 480, 360, 320, 240, 180, 160, 120, 90, 80, 60, 45, 40, 30,
+    22, 20, 15, 840, 48, 15, 420, 34, 15, 210, 26, 15, 105, 24, 240, 1440)
+
+#: Duration codes TablEdit plays as triplets (3 in the time of 2).
+TRIPLET_DURATION_CODES = frozenset({2, 5, 8, 11, 14, 17})
+
+
 def decode_duration_code(code: int) -> int:
     """Written duration in ticks (480/quarter) from a TEF duration code.
 
     The code lives in bits 0-4 of the duration byte — V2 byte3, V3
-    byte5 (upper bits are dynamics; V3 bit7 is the tie flag). Formula:
-    base = whole >> (code // 3); code % 3: 0 = straight (base),
-    1 = DOTTED OF THE NEXT-SHORTER VALUE (base * 3/4 — a naive
-    base * 3/2 verified 2x long on every dotted note in 23408/27165/
-    11245/11514/17713), 2 = triplet (base * 2/3). Oracle-validated
-    against TablEdit MusicXML durations corpus-wide (all duration
-    kinds incl. dotted and triplets).
-
-    Bit 4 (0x10) of the code is a DOUBLE-DOT flag over the low-nibble
-    code: 12574's 0x19 = eighth (code 9) x 7/4 = 420 ticks, matching
-    its oracle export exactly (the naive 5-bit read decoded 5 ticks).
+    byte5 (upper bits are dynamics; V3 bit7 is the tie flag). V2 files
+    load with the byte untouched, so the file code indexes TablEdit's
+    table directly (oracle-validated against TablEdit MusicXML corpus-wide
+    for codes 0-15 and the double dots).
     """
-    double_dot = code & 0x10
-    code &= 0x0f
-    base = 1920 >> (code // 3)
-    mod = code % 3
-    if mod == 1:
-        base = base * 3 // 4
-    elif mod == 2:
-        base = base * 2 // 3
-    if double_dot:
-        base = base * 7 // 4
-    return base
+    return 2 * _TABLEDIT_DURATIONS[code & 0x1f]
+
+
+# V2/V3 routing, as TablEdit itself does it. Its loader (FUN_10004632c in
+# TablEdit 3.06, read with REA/Ghidra) reads the V2 header at offset 200 for
+# EVERY file and hands the file to the V3 loader when the format byte at 205
+# is 10 or more. The first byte is not a usable signal: a V2 file with an
+# empty title starts with 0x00 exactly like a V3 file (22 corpus files, e.g.
+# 11775 Soldier's Joy, used to parse as V3 and come out empty).
+V3_FORMAT_BYTE = 205
+V3_MIN_FORMAT = 10
+
+# V3 header u32 holding the file offset of the note (component) records.
+# TablEdit's V3 loader (FUN_100047dbc) seeks straight to it. The 4 bytes
+# before it (0x38) are written as 'debt' but never read back — 77 of 88
+# corpus V3 files carry 'tbed' there instead and used to parse empty.
+V3_NOTES_PTR = 0x3C
+V3_HEADER_SIZE = 0x100
+
+# V3 note positions are in 64ths of a whole note, so one 4/4 measure (the
+# header meter every V3 file is converted under) is 64 units.
+V3_UNITS_PER_WHOLE = 64
+
+
+def is_v3_layout(data: bytes) -> bool:
+    """True when TablEdit would load this file with its V3 loader."""
+    return len(data) > V3_FORMAT_BYTE and data[V3_FORMAT_BYTE] >= V3_MIN_FORMAT
 
 
 class TEFVersionError(Exception):
@@ -274,7 +299,7 @@ class TEFNoteEvent:
         have specific byte patterns that need further analysis.
         """
         # Check if extra (string) and pitch_byte (fret) are valid
-        return 1 <= self.extra <= 15 and 0 <= self.pitch_byte <= 24
+        return 1 <= self.extra <= 15 and 0 <= self.pitch_byte <= 25
 
     def decode_string_fret(self) -> tuple[int, int] | None:
         """Decode string and fret from note record.
@@ -287,7 +312,7 @@ class TEFNoteEvent:
         - self.pitch_byte contains fret (0-indexed)
         """
         # Validate string and fret ranges
-        if not (1 <= self.extra <= 15) or not (0 <= self.pitch_byte <= 24):
+        if not (1 <= self.extra <= 15) or not (0 <= self.pitch_byte <= 25):
             return None
 
         return (self.extra, self.pitch_byte)
@@ -330,6 +355,24 @@ class TEFFile:
     # V3 only: (num, den) derived from the measure table — the table is
     # the authoritative meter (no known header signature field in V3).
     v3_global_ts: tuple | None = None
+    # V3 only: start and length (64ths) of each measure in the measure
+    # table, when any measure is not a whole note long. Note positions are
+    # continuous 64ths; v3_locate() turns one into (measure index, offset).
+    v3_measure_starts: list[int] = field(default_factory=list)
+    v3_measure_lengths: list[int] = field(default_factory=list)
+
+    def v3_locate(self, position: int) -> tuple[int, int]:
+        """Continuous V3 position -> (0-based measure, 64ths into it)."""
+        starts, lengths = self.v3_measure_starts, self.v3_measure_lengths
+        if not starts:
+            return divmod(position, V3_UNITS_PER_WHOLE)
+        idx = bisect.bisect_right(starts, position) - 1
+        rel = position - starts[idx]
+        if rel >= lengths[idx] and idx == len(starts) - 1:
+            # beyond the table: assume whole-note measures
+            extra = rel - lengths[idx]
+            return idx + 1 + extra // V3_UNITS_PER_WHOLE, extra % V3_UNITS_PER_WHOLE
+        return idx, rel
 
     def dump(self) -> str:
         """Return a human-readable dump of the file contents."""
@@ -418,12 +461,7 @@ class TEFReader:
         """
         raw = self.data[:64]
 
-        # Detect v2 files: they start with printable ASCII text, not binary header
-        # V3 format_id is 0x0010 (16) - first two bytes should be 0x10 0x00
-        first_two = raw[0:2]
-        if first_two[0] >= 0x20 and first_two[0] < 0x7F:
-            # First byte is printable ASCII - this is a v2 file
-            # Parse null-terminated strings at the start
+        if not is_v3_layout(self.data):
             return self._read_v2_header()
 
         format_id = struct.unpack("<H", raw[0:2])[0]
@@ -949,62 +987,22 @@ class TEFReader:
         return entries
 
     def find_component_offset(self) -> int:
-        """Find the component (note) region start using the 'debt' header marker.
+        """V3 component (note) region start, from the header pointer at 0x3C.
 
-        The 'debt' marker at offset 56 is followed by a 4-byte pointer to the
-        component section. Components use TuxGuitar format:
+        Components use TuxGuitar format:
         - Bytes 0-3: location (encodes measure + position + cumulative string)
         - Byte 4: component type (notes have fret in bits 0-4)
         - Bytes 5-11: component-specific data
 
-        Returns the component region start offset, or -1 if not found.
+        Returns the component region start offset, or -1 if the pointer
+        does not land inside the file past the 256-byte header.
         """
-        debt_pos = self.data.find(b'debt')
-        if debt_pos < 0:
+        if len(self.data) < V3_NOTES_PTR + 4:
             return -1
-
-        # Read the 4-byte pointer value after 'debt' - this points directly to components
-        debt_val = struct.unpack('<I', self.data[debt_pos + 4:debt_pos + 8])[0]
-
-        if debt_val >= len(self.data) or debt_val < 100:
+        ptr = struct.unpack_from('<I', self.data, V3_NOTES_PTR)[0]
+        if ptr < V3_HEADER_SIZE or ptr >= len(self.data):
             return -1
-
-        return debt_val
-
-    def find_debt_offset(self) -> int:
-        """Legacy method - calls find_component_offset for compatibility."""
-        return self.find_component_offset()
-
-    def find_note_region(self) -> tuple[int, str]:
-        """Find the start offset of the note event region and format type.
-
-        Uses the unified format discovered via the 'debt' header:
-        - All files use 12-byte records with marker at byte 11
-        - String encoded in bits 3-5 of position low byte (byte 6)
-        - Fret in byte 10 (value - 1)
-        - Position in bytes 6-7 (low bytes) or extended with 0-5 for larger positions
-
-        Returns (offset, 'unified') or (-1, '') if not found.
-        """
-        # Try the debt header approach first
-        offset = self.find_debt_offset()
-        if offset >= 0:
-            return (offset, 'unified')
-
-        # Fallback: search for marker pattern at byte 11
-        for start in range(0x400, len(self.data) - 24, 4):
-            rec1 = self.data[start:start+12]
-            rec2 = self.data[start+12:start+24]
-
-            if len(rec1) < 12 or len(rec2) < 12:
-                continue
-
-            # Check for valid markers at byte 11
-            if (rec1[11] in (0x49, 0x46, 0x4c) and
-                rec2[11] in (0x49, 0x46, 0x4c)):
-                return (start, 'unified')
-
-        return (-1, '')
+        return ptr
 
     def parse_note_events(self, start_offset: int = -1) -> list[TEFNoteEvent]:
         """Parse note events using TuxGuitar component format.
@@ -1033,15 +1031,20 @@ class TEFReader:
         if total_strings == 0:
             total_strings = 5  # Default to single 5-string instrument
 
+        # Location = 8 * (pos * total_strings + string), pos in 64ths of a
+        # whole note (TablEdit's V3 loader FUN_100047dbc). The old 16th-slot
+        # model (32 * total_strings) put every note on an odd 32nd onto a
+        # phantom string 2*total_strings higher.
         VALUE_PER_STRING = 8
-        VALUE_PER_POSITION = 32 * total_strings
+        VALUE_PER_POSITION = VALUE_PER_STRING * total_strings
+        UNITS = V3_UNITS_PER_WHOLE
         track_string_counts = [inst.num_strings for inst in instruments]
         if not track_string_counts:
             track_string_counts = [5]  # Default banjo
 
-        # V3 positions are CONTINUOUS 16th slots; a measure shorter than
-        # the header signature occupies proportionally fewer slots (2/4
-        # in a 4/4 tune = 8 slots — oracle-confirmed on 27493 m30/m49).
+        # V3 positions are CONTINUOUS 64th-note units; a measure shorter
+        # than the header signature occupies proportionally fewer units (2/4
+        # in a 4/4 tune = 32 units — oracle-confirmed on 27493 m30/m49).
         # Build cumulative slot boundaries from the measure table so
         # continuous slots map to (measure, slot-in-measure). Only
         # engaged when the table contains non-default measures.
@@ -1071,35 +1074,33 @@ class TEFReader:
         self._v3_ts_changes = ts_changes
 
         # Slot boundaries handle measures of DIFFERENT length (2/4 in a
-        # 4/4 tune = 8 continuous slots); same-length re-labels don't
+        # 4/4 tune = 32 continuous units); same-length re-labels don't
         # affect the slot math.
         slot_starts: list[int] = []
         slot_counts: list[int] = []
         if measure_ts and any(
-                num and den and 16 * num // den != 16
+                num and den and UNITS * num // den != UNITS
                 for num, den in measure_ts):
             start = 0
             for k, (num, den) in enumerate(measure_ts):
-                slots = 16 * num // den if (num and den) else 16
+                slots = UNITS * num // den if (num and den) else UNITS
                 slot_starts.append(start)
                 slot_counts.append(slots)
                 start += slots
 
-        def map_slot(position: int) -> int:
-            """Continuous slot -> measure*16 + slot_in_measure."""
-            if not slot_starts:
-                return position
-            idx = bisect.bisect_right(slot_starts, position) - 1
-            rel = position - slot_starts[idx]
-            if rel >= slot_counts[idx] and idx == len(slot_starts) - 1:
-                # beyond the table: assume header-default measures
-                extra = rel - slot_counts[idx]
-                return (idx + 1 + extra // 16) * 16 + extra % 16
-            return idx * 16 + rel
+        # Positions stay continuous; TEFFile.v3_locate() maps them to
+        # measures. (Re-encoding them as measure*UNITS + offset spilled
+        # offsets past UNITS — the second half of a 6/4 measure in 3404 —
+        # into the next measure, and stretched every short measure's
+        # barline gap for the articulation pairing.)
+        self._v3_measure_starts = slot_starts
+        self._v3_measure_lengths = slot_counts
 
-        # Non-note component types (from TuxGuitar TEInputStream.java)
-        NON_NOTE_TYPES = {0x33, 0x35, 0x36, 0x37, 0x38, 0x39, 0x3D,
-                         0x75, 0x78, 0x7D, 0x7E, 0xB6, 0xB7, 0xBD, 0xBE, 0xFD, 0xFE}
+        # Special (non-note) components: TablEdit tests the low 6 bits of
+        # the type byte, and 0x33-0x3F are specials whatever the top two
+        # bits say. The old explicit list (from TuxGuitar) missed 0xF5, so
+        # 28267's three `f5 70 10` records read as fret-20 notes.
+        FIRST_SPECIAL_TYPE = 0x33
 
         # Free-text components (type 0x39) collected during this same pass;
         # byte 5 is a 0-based index into the text table. Resolved to
@@ -1118,10 +1119,10 @@ class TEFReader:
             component_type = record[4]
 
             # Skip known non-note component types (capturing text anchors)
-            if component_type in NON_NOTE_TYPES:
+            if component_type & 0x3f >= FIRST_SPECIAL_TYPE:
                 if component_type == 0x39:
                     self._v3_text_refs.append((
-                        map_slot(location // VALUE_PER_POSITION),
+                        location // VALUE_PER_POSITION,
                         (location % VALUE_PER_POSITION) // VALUE_PER_STRING,
                         record[5],
                     ))
@@ -1155,8 +1156,8 @@ class TEFReader:
                     break
                 local_string -= num_strings
 
-            # Calculate position (in 16th note grid, measure-table aware)
-            position = map_slot(location // VALUE_PER_POSITION)
+            # Calculate position (64th-note units, measure-table aware)
+            position = location // VALUE_PER_POSITION
 
             # Read actual marker from record[5] (I=Initial, F=Fret, L=Legato, etc.)
             marker_byte = record[5]
@@ -1386,8 +1387,10 @@ class TEFReader:
             if ts_move and position_in_measure >= ts_move:
                 position_in_measure -= ts_move
 
-            # Check for note vs special component
-            if fret_raw >= 0x01 and fret_raw <= 0x19:
+            # Check for note vs special component. Fret field 0x1a is fret
+            # 25 unless the byte is a BARE 0x1a, which TablEdit's V2 upgrade
+            # (FUN_1000459c4) turns into a special (type 0x33); 11056 m9.
+            if 0x01 <= fret_raw <= 0x19 or (fret_raw == 0x1a and fret_byte != 0x1a):
                 # This is a note
                 fret = fret_raw - 1
 
@@ -1628,11 +1631,12 @@ class TEFReader:
     def parse_measure_table_v3(self) -> list[tuple[int, int]]:
         """Parse the V3 per-measure table via header pointer dword 0x5c.
 
-        Layout (oracle-derived from 27493, XML-confirmed 2/4 measures at
-        m30/m49): [u16 ?][u16 count] then count 8-byte records. Record k
-        (0-based) describes measure k (1-based measures; record 0 is a
-        stub): byte0 = denominator, byte1 = numerator. Zero bytes mean
-        "header default".
+        Layout (TablEdit V3 loader FUN_100047dbc; XML-confirmed 2/4 measures
+        at 27493 m30/m49): [u16 tag][u16 count][u32 pad] then count 8-byte
+        records. Record j (0-based) describes measure j+1: byte 4 =
+        denominator, byte 5 = numerator. Zero bytes mean "header default".
+        (The old reader started 4 bytes early and stopped one record short,
+        dropping the last measure — 27499/27500 lost a closing 3/4.)
 
         Returns [] if the magic/table is absent or implausible. Otherwise
         a list indexed by measure-1 of (numerator, denominator), with 0s
@@ -1645,12 +1649,13 @@ class TEFReader:
         if not (0 < ptr < len(data) - 4):
             return []
         _, count = struct.unpack("<HH", data[ptr:ptr + 4])
-        if not (1 <= count <= 2048) or ptr + 4 + count * 8 > len(data):
+        first = ptr + 8
+        if not (1 <= count <= 2048) or first + count * 8 > len(data):
             return []
         out = []
-        for k in range(1, count):
-            rec = data[ptr + 4 + k * 8:ptr + 4 + (k + 1) * 8]
-            den, num = rec[0], rec[1]
+        for j in range(count):
+            rec = data[first + j * 8:first + (j + 1) * 8]
+            den, num = rec[4], rec[5]
             if den not in (0, 1, 2, 4, 8, 16) or num > 32:
                 return []
             out.append((num, den))
@@ -1695,13 +1700,10 @@ class TEFReader:
             name = data[o + 32:o + 68].split(b"\x00")[0].decode(
                 "latin-1", errors="replace").strip()
             cum += ns
-            # Same percussion flag as V2 (the V3 record is a superset of the
-            # V2 layout). No V3 file in the corpus carries a drum track —
-            # all 170 V3 records read 0 here — so this branch is symmetric
-            # but currently unexercised.
-            is_percussion = (
-                struct.unpack("<H", data[o + 6:o + 8])[0]
-                == self._PERCUSSION_FLAG)
+            # V3 flags a drum track with bit 7 of byte +4 (TablEdit's V3
+            # loader turns it back into its in-memory 98). The V2 field at
+            # +6 reads 0 on every V3 record, which hid 25014's drum track.
+            is_percussion = bool(data[o + 4] & 0x80)
             instruments.append(TEFInstrument(
                 name=(name or "Percussion") if is_percussion
                      else (name or _program_to_name(program, ns)),
@@ -1986,4 +1988,6 @@ class TEFReader:
             reading_list=reading_list,
             time_signature_changes=getattr(self, "_v3_ts_changes", []),
             v3_global_ts=getattr(self, "_v3_global_ts", None),
+            v3_measure_starts=getattr(self, "_v3_measure_starts", []),
+            v3_measure_lengths=getattr(self, "_v3_measure_lengths", []),
         )

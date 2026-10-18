@@ -47,10 +47,12 @@ live with `batch_import.py priorities`:
 
 ### V3 format support
 
-The parser supports V2 and one V3 variant. Some V3 files lack the 'debt' marker and produce empty notation. To add support:
-1. Check `conversion_log.json` for skipped files
-2. Analyze the V3 binary structure in `tef_parser/reader.py`
-3. The V3 parser exists but needs the alternate variant handled
+V2 and V3 both parse (fix-it A12, 2026-10-17). Routing and the V3 note
+pointer follow TablEdit's own loaders: byte 205 >= 10 means V3, and V3 notes
+start at the u32 at 0x3C (the old 'debt' search missed 77 of 88 V3 files).
+Tabs skipped as "Empty notation" before that date can be re-converted.
+Known remaining mismatches with TablEdit are listed under A13 in
+`docs/plans/2026-09-30-fix-it-list.md`.
 
 ## Multi-Site (Hangout Network)
 
@@ -270,7 +272,7 @@ When creating work.yaml, use this priority:
 ```
 
 Skipped reasons:
-- Empty notation (V3 format variant without 'debt' marker - unsupported)
+- Empty notation (before 2026-10-17: V3 files without the 'debt' marker and untitled V2 files; both fixed)
 - Invalid title (nulls, just numbers, too short)
 
 ## Conversion Logs & Failure Tracking
@@ -422,8 +424,9 @@ Downloaded files use two naming patterns:
 ### Percussion (drum) tracks
 
 Many TablEdit arrangements — MandoTom2's especially — carry a drum track
-alongside the melodic ones. It is detected **structurally**, from `u16 @
-track_record+6 == 98` (`reader.py` `_PERCUSSION_FLAG`), never from the
+alongside the melodic ones. It is detected **structurally** — V2: `u16 @
+track_record+6 == 98` (`reader.py` `_PERCUSSION_FLAG`); V3: bit 7 of
+`track_record+4` (TablEdit's V3 loader, fix-it A13) — never from the
 track name: TablEdit lets the name lie, and mandolin-hangout 2613's drum
 track is literally named `Guitar Standard`.
 

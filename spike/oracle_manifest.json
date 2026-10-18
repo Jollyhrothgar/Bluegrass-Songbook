@@ -239,13 +239,54 @@
   "xml": "spike/oracle/batch/tab-red-haired-boy-14690-744122422011.xml",
   "tracks": 1,
   "result": {
-   "verdict": "VERIFIED",
+   "verdict": "DIVERGED",
    "tracks": {
     "tenor-banjo": {
-     "otf": 162,
+     "otf": 167,
      "oracle": 162,
      "exact": 162,
-     "otf_only": [],
+     "otf_only": [
+      [
+       4,
+       480,
+       3,
+       0,
+       240,
+       null
+      ],
+      [
+       8,
+       480,
+       3,
+       0,
+       240,
+       null
+      ],
+      [
+       9,
+       1440,
+       3,
+       0,
+       240,
+       null
+      ],
+      [
+       17,
+       480,
+       3,
+       0,
+       240,
+       null
+      ],
+      [
+       18,
+       1440,
+       3,
+       0,
+       240,
+       null
+      ]
+     ],
      "oracle_only": []
     }
    }
@@ -2237,6 +2278,312 @@
     }
    },
    "note": "single-part XML vs multi-track OTF (one module only, best-match paired)"
+  }
+ },
+ {
+  "pid": "27391_tef",
+  "otf": "sources/banjo-hangout/parsed/27391_tef.otf.json",
+  "xml": "spike/oracle/batch/27391.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 123,
+     "oracle": 123,
+     "exact": 123,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "25151_tef",
+  "otf": "sources/banjo-hangout/parsed/25151_tef.otf.json",
+  "xml": "spike/oracle/batch/25151.xml",
+  "tracks": 4,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 501,
+     "oracle": 501,
+     "exact": 501,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 525,
+     "oracle": 525,
+     "exact": 525,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "mandolin": {
+     "otf": 516,
+     "oracle": 516,
+     "exact": 516,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "bass": {
+     "otf": 139,
+     "oracle": 139,
+     "exact": 139,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "11775_tef",
+  "otf": "sources/banjo-hangout/parsed/11775_tef.otf.json",
+  "xml": "spike/oracle/batch/11775.xml",
+  "tracks": 3,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 263,
+     "oracle": 263,
+     "exact": 263,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 252,
+     "oracle": 252,
+     "exact": 252,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "bass": {
+     "otf": 69,
+     "oracle": 69,
+     "exact": 69,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "27161_tef",
+  "otf": "sources/banjo-hangout/parsed/27161_tef.otf.json",
+  "xml": "spike/oracle/batch/27161.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 482,
+     "oracle": 482,
+     "exact": 482,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "19150_tef",
+  "otf": "sources/banjo-hangout/parsed/19150_tef.otf.json",
+  "xml": "spike/oracle/batch/19150.xml",
+  "tracks": 3,
+  "result": {
+   "verdict": "DIVERGED",
+   "tracks": {
+    "banjo": {
+     "otf": 374,
+     "oracle": 374,
+     "exact": 373,
+     "otf_only": [
+      [
+       12,
+       1680,
+       2,
+       3,
+       240,
+       "/"
+      ]
+     ],
+     "oracle_only": [
+      [
+       12,
+       1680,
+       2,
+       3,
+       240,
+       null
+      ]
+     ]
+    },
+    "mandolin": {
+     "otf": 256,
+     "oracle": 256,
+     "exact": 256,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "bass": {
+     "otf": 86,
+     "oracle": 86,
+     "exact": 86,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "11721_tef",
+  "otf": "sources/banjo-hangout/parsed/11721_tef.otf.json",
+  "xml": "spike/oracle/batch/11721.xml",
+  "tracks": 2,
+  "result": {
+   "verdict": "DIVERGED",
+   "tracks": {
+    "banjo": {
+     "otf": 296,
+     "oracle": 296,
+     "exact": 292,
+     "otf_only": [
+      [
+       1,
+       720,
+       4,
+       0,
+       240,
+       null
+      ],
+      [
+       1,
+       960,
+       3,
+       0,
+       240,
+       null
+      ],
+      [
+       1,
+       1200,
+       3,
+       2,
+       240,
+       null
+      ],
+      [
+       20,
+       240,
+       1,
+       5,
+       240,
+       null
+      ]
+     ],
+     "oracle_only": [
+      [
+       1,
+       0,
+       4,
+       0,
+       240,
+       null
+      ],
+      [
+       1,
+       240,
+       3,
+       0,
+       240,
+       null
+      ],
+      [
+       1,
+       480,
+       3,
+       2,
+       240,
+       null
+      ],
+      [
+       20,
+       320,
+       1,
+       5,
+       240,
+       null
+      ]
+     ]
+    }
+   },
+   "note": "single-part XML vs multi-track OTF (one module only, best-match paired)"
+  }
+ },
+ {
+  "pid": "26030_tef",
+  "otf": "sources/banjo-hangout/parsed/26030_tef.otf.json",
+  "xml": "spike/oracle/batch/26030.xml",
+  "tracks": 1,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "banjo": {
+     "otf": 364,
+     "oracle": 364,
+     "exact": 364,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
+  }
+ },
+ {
+  "pid": "3419_tef",
+  "otf": "sources/mandolin-hangout/parsed/3419_tef.otf.json",
+  "xml": "spike/oracle/batch/3419.xml",
+  "tracks": 5,
+  "result": {
+   "verdict": "VERIFIED",
+   "tracks": {
+    "mandolin": {
+     "otf": 419,
+     "oracle": 419,
+     "exact": 419,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "bass": {
+     "otf": 127,
+     "oracle": 127,
+     "exact": 127,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "guitar": {
+     "otf": 512,
+     "oracle": 512,
+     "exact": 512,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "mandolin-2": {
+     "otf": 164,
+     "oracle": 164,
+     "exact": 164,
+     "otf_only": [],
+     "oracle_only": []
+    },
+    "mandolin-3": {
+     "otf": 164,
+     "oracle": 164,
+     "exact": 164,
+     "otf_only": [],
+     "oracle_only": []
+    }
+   }
   }
  }
 ]

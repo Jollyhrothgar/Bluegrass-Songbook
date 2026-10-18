@@ -3,7 +3,9 @@
 // that TabRenderer/TabPlayer consume (the works-view contract). Verified
 // byte-exact against the Python converter by the golden-diff gate.
 
-import { decodeDurationCode, isMelody, decodeStringFret } from './reader.js';
+import {
+    decodeDurationCode, isMelody, decodeStringFret, TRIPLET_DURATION_CODES, V3_UNITS_PER_WHOLE, v3Locate,
+} from './reader.js';
 
 const fdiv = (a, b) => Math.floor(a / b);
 
@@ -16,20 +18,21 @@ export function midiToPitchName(midi) {
     return `MIDI${midi}`;
 }
 
-const FINGERING_MAP = { 0x06: 'T', 0x0c: 'I', 0x12: 'M' };
-
-// V3 note byte 10 packs BOTH hands base-6: value = 6*pluck + lh_code.
+// Fingering byte (V3 note byte 10; V2 effect2 on 0x20-flagged notes) packs BOTH hands base-6: value = 6*pluck + lh_code.
 // pluck 1..5 -> picking finger T/I/M/R/P; lh_code 0 = none, else fretting
 // digit = lh_code - 1. Oracle-verified against TablEdit's MusicXML
 // <pluck>/<fingering> (see otf.py).
 const V3_PLUCK_LETTERS = { 1: 'T', 2: 'I', 3: 'M', 4: 'R', 5: 'P' };
 
-function v3Fingering(evt) {
-    const b10 = (evt.raw && evt.raw.length >= 12) ? evt.raw[10] : 0;
-    if (!(b10 > 0 && b10 <= 35)) return [null, null];
-    const pluck = V3_PLUCK_LETTERS[fdiv(b10, 6)] ?? null;
-    const lhCode = b10 % 6;
+function decodeFingering(code) {
+    if (!(code > 0 && code <= 35)) return [null, null];
+    const pluck = V3_PLUCK_LETTERS[fdiv(code, 6)] ?? null;
+    const lhCode = code % 6;
     return [pluck, lhCode ? lhCode - 1 : null];
+}
+
+function v3Fingering(evt) {
+    return decodeFingering((evt.raw && evt.raw.length >= 12) ? evt.raw[10] : 0);
 }
 
 // --- instrument identity -----------------------------------------------------
@@ -73,7 +76,7 @@ export function isTiedNote(e) {
     const r = e.raw;
     if (r && r.length >= 6) {
         if (r.length === 6) return ((r[3] >> 5) & 0x07) === 7;   // V2 dynamic-7 sentinel
-        return !!(r[5] & 0x80);                                   // V3 tie flag
+        return ((r[5] >> 5) & 0x07) === 7;                        // V3: same byte, same rule
     }
     return false;
 }
@@ -81,6 +84,18 @@ export function isTiedNote(e) {
 /** V2 techniques: effect1 (byte 4) is an enum on the SOURCE note, attributed to
  *  the destination (next note, same track+string). Port of compute_articulations.
  *  Returns Map keyed "track:position:string" -> tech. */
+/** The note's duration code when TablEdit plays it as a triplet, else null.
+ *  Port of triplet_duration_code(). */
+function tripletDurationCode(evt) {
+    const raw = evt.raw;
+    if (!raw) return null;
+    let code;
+    if (raw.length === 12) code = raw[5] & 0x1f;        // V3 duration byte
+    else if (raw.length >= 4) code = raw[3] & 0x1f;     // V2 duration byte
+    else return null;
+    return TRIPLET_DURATION_CODES.has(code) ? code : null;
+}
+
 export function computeArticulations(noteEvents, maxGap) {
     const V2_TECH = { 1: 'h', 2: 'p', 3: '/' };
     const out = new Map();
@@ -101,7 +116,7 @@ export function computeArticulations(noteEvents, maxGap) {
         notes.sort((a, b) => a.position - b.position);
         for (let i = 0; i < notes.length; i++) {
             const e = notes[i];
-            const tech = V2_TECH[e.raw[4] & 0x1f];           // mask off the 0x20 flag bit
+            const tech = V2_TECH[e.raw[4] & 0x0f];           // enum is the low nibble; bits 4-5 are flags
             if (!tech || i + 1 >= notes.length) continue;
             const next = notes[i + 1];
             if (maxGap && next.position - e.position > maxGap) continue;
@@ -121,8 +136,8 @@ export function computeArticulations(noteEvents, maxGap) {
 
 /** V3 articulations: byte 6 of the 12-byte record on the SOURCE note names the
  *  transition (1 h / 2 p / 3 slide), attributed to the destination note (next,
- *  same track+string, within maxGap slots). Port of compute_articulations_v3. */
-export function computeArticulationsV3(noteEvents, maxGap = 8) {
+ *  same track+string, within maxGap 64th-note units). Port of compute_articulations_v3. */
+export function computeArticulationsV3(noteEvents, maxGap = V3_UNITS_PER_WHOLE / 2) {
     const V3_TECH = { 1: 'h', 2: 'p', 3: '/' };
     const out = new Map();
     const byString = new Map();
@@ -152,8 +167,8 @@ export function computeArticulationsV3(noteEvents, maxGap = 8) {
 }
 
 function articulationMaxGap(header) {
-    // V2: half a measure in native grid units. V3: 8 slots (compute_articulations_v3).
-    return header.isV2 ? fdiv(header.v2_ts_size || 256, 2) : 8;
+    // Half a measure: native grid units for V2, 64th-note units for V3.
+    return header.isV2 ? fdiv(header.v2_ts_size || 256, 2) : V3_UNITS_PER_WHOLE / 2;
 }
 
 /** Keys "track:position:string" of BEND/CHOKE notes. Port of
@@ -333,14 +348,9 @@ export function tefToOtf(tef) {
     const bendKeys = bendDestinationKeys(tef.note_events, articulations);
 
     // ---- group events by track + measure ----
-    // V3 position grid: 16 slots/measure. ticks_per_measure uses the header
-    // meter (4/4 defaults for V3), matching tef_to_otf.
-    const POSITIONS_PER_MEASURE = 16;
-    const beatsPerMeasure = header.v2_time_num;
-    const denom = header.v2_time_denom || 4;
-    const ticksPerMeasure = fdiv(beatsPerMeasure * 480 * 4, denom);
-    const TICKS_PER_POSITION = fdiv(ticksPerMeasure, POSITIONS_PER_MEASURE);
-    const unitsPerMeasure = isV2 ? (header.v2_ts_size || 256) : POSITIONS_PER_MEASURE;
+    // V3 positions: continuous 64ths (30 ticks each), split by v3Locate.
+    const V3_TICKS_PER_UNIT = fdiv(1920, V3_UNITS_PER_WHOLE);
+    const unitsPerMeasure = header.v2_ts_size || 256;
     const trackEvents = new Map();   // trackId -> Map(measure -> [{tick, evt}])
 
     for (const event of tef.note_events) {
@@ -348,52 +358,31 @@ export function tefToOtf(tef) {
         const trackId = event.track < tracks.length ? tracks[event.track].id : 'unknown';
         if (!trackEvents.has(trackId)) trackEvents.set(trackId, new Map());
 
-        const measure = fdiv(event.position, unitsPerMeasure) + 1;
-        const positionInMeasure = event.position % unitsPerMeasure;
-        let tick = isV2 ? fdiv(positionInMeasure * 15, 2) : positionInMeasure * TICKS_PER_POSITION;
+        let measure, positionInMeasure;
+        if (isV2) {
+            measure = fdiv(event.position, unitsPerMeasure) + 1;
+            positionInMeasure = event.position % unitsPerMeasure;
+        } else {
+            const [index, offset] = v3Locate(tef, event.position);
+            measure = index + 1;
+            positionInMeasure = offset;
+        }
+        // V2: TablEdit's loader floors each record to the 64th grid ((loc << 1) & ~3).
+        let tick = isV2 ? fdiv((positionInMeasure & ~3) * 15, 2) : positionInMeasure * V3_TICKS_PER_UNIT;
 
-        // V2 triplet timing: duration code % 3 == 2 (3:2).
-        if (isV2 && event.raw && event.raw.length >= 4 && (event.raw[3] & 0x1f) % 3 === 2) {
-            const code = event.raw[3] & 0x1f;
+        // Triplet timing (V2 and V3): TRIPLET_DURATION_CODES are 3:2. Only a note
+        // on the straight storage step (3/4 of its triplet duration) is compressed.
+        const code = tripletDurationCode(event);
+        if (code !== null) {
             const span = 2 * (1920 >> fdiv(code, 3));
+            const step = fdiv(decodeDurationCode(code) * 3, 4);
             const inSpan = tick % span;
-            tick = tick - inSpan + fdiv(inSpan * 4, 3);
+            if (inSpan % step === 0) tick = tick - inSpan + fdiv(inSpan * 4, 3);
         }
 
         const measures = trackEvents.get(trackId);
         if (!measures.has(measure)) measures.set(measure, []);
         measures.get(measure).push({ tick, evt: event });
-    }
-
-    // V3-only: K-marker triplet group heuristic (groups of 3 consecutive 'K'
-    // notes within 2 positions retimed to 160-tick spacing). Skipped for V2,
-    // which handles triplets per-note above. Port of the tef_to_otf block.
-    if (!isV2) {
-        const TRIPLET_SPACING = fdiv(480, 3);   // 160
-        for (const measures of trackEvents.values()) {
-            for (const events of measures.values()) {
-                const triplets = events
-                    .filter(x => x.evt.marker === 'K')
-                    .sort((a, b) => a.tick - b.tick);
-                if (triplets.length >= 3) {
-                    let i = 0;
-                    while (i <= triplets.length - 3) {
-                        const [a, b, c] = [triplets[i], triplets[i + 1], triplets[i + 2]];
-                        if (b.evt.position - a.evt.position <= 2 && c.evt.position - b.evt.position <= 2) {
-                            const base = a.tick;
-                            const newTicks = [base, base + TRIPLET_SPACING, base + 2 * TRIPLET_SPACING];
-                            [a, b, c].forEach((grp, j) => {
-                                const k = events.findIndex(x => x.evt === grp.evt);
-                                if (k >= 0) events[k].tick = newTicks[j];
-                            });
-                            i += 3;
-                        } else {
-                            i += 1;
-                        }
-                    }
-                }
-            }
-        }
     }
 
     // ---- build notation ----
@@ -424,17 +413,13 @@ export function tefToOtf(tef) {
                         tie = false;
                         tech = 'b';
                     }
-                    // Fingering: V2 stores a bare pluck letter in effect2
-                    // (bit5-gated); V3 packs pluck + fretting digit base-6
-                    // in byte 10 (see v3Fingering).
+                    // Fingering: a V2 note whose fret-byte flags are exactly
+                    // 0x20 carries the same base-6 fingering byte in effect2
+                    // that V3 stores at byte 10 (see otf.py).
                     let finger = null, lh = null;
                     if (isV2) {
-                        if (evt.raw && evt.raw.length > 5) {
-                            const fretByte = evt.raw[2];
-                            const effect2 = evt.raw[5];
-                            if (((fretByte >> 5) & 0x01) && FINGERING_MAP[effect2]) {
-                                finger = FINGERING_MAP[effect2];
-                            }
+                        if (evt.raw && evt.raw.length > 5 && (evt.raw[2] & 0xe0) === 0x20) {
+                            [finger, lh] = decodeFingering(evt.raw[5]);
                         }
                     } else {
                         [finger, lh] = v3Fingering(evt);
@@ -450,11 +435,10 @@ export function tefToOtf(tef) {
 
     // Placed free-text annotations (V3 0x39 components: "Long Choke",
     // chord letters, section banners). Positions share the note grid.
-    const annotations = (tef.text_events || []).map(te => ({
-        measure: fdiv(te.position, POSITIONS_PER_MEASURE) + 1,
-        tick: (te.position % POSITIONS_PER_MEASURE) * TICKS_PER_POSITION,
-        text: te.text,
-    }));
+    const annotations = (tef.text_events || []).map(te => {
+        const [index, offset] = v3Locate(tef, te.position);
+        return { measure: index + 1, tick: offset * V3_TICKS_PER_UNIT, text: te.text };
+    });
 
     const doc = {
         otf_version: '1.0',
