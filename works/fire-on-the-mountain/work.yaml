@@ -68,5 +68,41 @@ parts:
     source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=10592
     author: schlange
     imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-26282.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '26282'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=26282
+    author: Bill H
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-10-17'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-26283.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '26283'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=26283
+    author: Bill H
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-10-17'
+- type: tablature
+  instrument: guitar
+  format: otf
+  file: guitar-756.otf.json
+  provenance:
+    source: flatpicker-hangout
+    source_id: '756'
+    source_url: https://www.flatpickerhangout.com/tab/browse.asp?m=detail&v=756
+    author: KI4PRK
+    difficulty: Intermediate
+    tuning: EADGBE (Standard)
+    imported_at: '2026-10-17'
 composers:
 - Traditional

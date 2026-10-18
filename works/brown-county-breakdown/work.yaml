@@ -7,6 +7,7 @@ default_key: G
 tags:
 - Instrumental
 - Bluegrass
+- Scruggs
 parts:
 - type: lead-sheet
   format: chordpro
@@ -15,3 +16,25 @@ parts:
   provenance:
     source: tunearch
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '19150'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=19150
+    author: Ricky Mier
+    imported_at: '2026-10-17'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-27771.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '27771'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=27771
+    author: nathane
+    difficulty: Intermediate
+    tuning: aDGBD
+    imported_at: '2026-10-17'

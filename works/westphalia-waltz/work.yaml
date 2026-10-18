@@ -7,6 +7,7 @@ default_key: G
 tags:
 - ClassicCountry
 - JamFriendly
+- Instrumental
 external:
   musicbrainz: 5d7075a8-ae08-3765-81ce-5dab07e8489b
 parts:
@@ -18,3 +19,15 @@ parts:
     source: classic-country
     source_file: westphaliawaltzlyricschords.pro
     imported_at: '2026-01-02'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '24588'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=24588
+    author: maurodanielrossi
+    difficulty: Beginner
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-10-17'

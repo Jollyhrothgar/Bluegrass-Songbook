@@ -36,3 +36,51 @@ parts:
     source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11122
     author: schlange
     imported_at: '2026-07-26'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-19907.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '19907'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=19907
+    author: BanjoNikopolis
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-10-17'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-27415.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '27415'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=27415
+    author: Yohansen
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-10-17'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-28747.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '28747'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=28747
+    author: RB3
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-10-17'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-28390.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '28390'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=28390
+    author: NickPug
+    difficulty: Expert
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-10-17'

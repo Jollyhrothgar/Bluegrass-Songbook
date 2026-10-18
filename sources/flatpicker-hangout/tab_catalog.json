@@ -204,10 +204,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "Empty notation (0 events)",
+      "status": "imported",
       "discovered_at": "2026-07-26T21:58:05.166684",
-      "downloaded_at": "2026-07-26T22:10:15.708709"
+      "downloaded_at": "2026-07-26T22:10:15.708709",
+      "converted_at": "2026-10-17T22:20:46.293299",
+      "imported_at": "2026-10-17T22:20:46.317026",
+      "work_slug": "beaumont-rag"
     },
     "1860_tef": {
       "id": "1860_tef",
@@ -284,10 +286,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "A",
       "difficulty": "Expert",
-      "status": "skipped",
-      "error": "Empty notation (0 events)",
+      "status": "imported",
       "discovered_at": "2026-07-26T21:58:05.166693",
-      "downloaded_at": "2026-07-26T22:10:03.647274"
+      "downloaded_at": "2026-07-26T22:10:03.647274",
+      "converted_at": "2026-10-17T22:20:46.325310",
+      "imported_at": "2026-10-17T22:20:46.351569",
+      "work_slug": "black-mountain-rag"
     },
     "967_tef": {
       "id": "967_tef",
@@ -497,10 +501,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "skipped",
-      "error": "Empty notation (0 events)",
+      "status": "imported",
       "discovered_at": "2026-07-26T21:58:05.166726",
-      "downloaded_at": "2026-07-26T22:10:12.704939"
+      "downloaded_at": "2026-07-26T22:10:12.704939",
+      "converted_at": "2026-10-17T22:20:46.356836",
+      "imported_at": "2026-10-17T22:20:46.381909",
+      "work_slug": "clinch-mountain-backstep"
     },
     "1870_tef": {
       "id": "1870_tef",
@@ -588,10 +594,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "Empty notation (0 events)",
+      "status": "imported",
       "discovered_at": "2026-07-26T21:58:05.166738",
-      "downloaded_at": "2026-07-26T22:10:26.252354"
+      "downloaded_at": "2026-07-26T22:10:26.252354",
+      "converted_at": "2026-10-17T22:20:46.383649",
+      "imported_at": "2026-10-17T22:20:46.409136",
+      "work_slug": "cumberland-gap"
     },
     "1540_tef": {
       "id": "1540_tef",
@@ -696,10 +704,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "C",
       "difficulty": "Expert",
-      "status": "skipped",
-      "error": "Empty notation (0 events)",
+      "status": "imported",
       "discovered_at": "2026-07-26T21:58:05.166755",
-      "downloaded_at": "2026-07-26T22:10:27.755838"
+      "downloaded_at": "2026-07-26T22:10:27.755838",
+      "converted_at": "2026-10-17T22:20:46.415794",
+      "imported_at": "2026-10-17T22:20:46.440154",
+      "work_slug": "east-tennessee-blues"
     },
     "3048_tef": {
       "id": "3048_tef",
@@ -776,10 +786,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "Empty notation (0 events)",
+      "status": "imported",
       "discovered_at": "2026-07-26T21:58:05.166769",
-      "downloaded_at": "2026-07-26T22:10:08.170134"
+      "downloaded_at": "2026-07-26T22:10:08.170134",
+      "converted_at": "2026-10-17T22:20:46.442548",
+      "imported_at": "2026-10-17T22:20:46.467028",
+      "work_slug": "fire-on-the-mountain"
     },
     "1519_tef": {
       "id": "1519_tef",
@@ -949,10 +961,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "G",
       "difficulty": "Beginner",
-      "status": "skipped",
-      "error": "Empty notation (0 events)",
+      "status": "imported",
       "discovered_at": "2026-07-26T21:58:05.166792",
-      "downloaded_at": "2026-07-26T22:10:21.733556"
+      "downloaded_at": "2026-07-26T22:10:21.733556",
+      "converted_at": "2026-10-17T22:20:46.469886",
+      "imported_at": "2026-10-17T22:20:46.492995",
+      "work_slug": "gold-rush"
     },
     "1043_tef": {
       "id": "1043_tef",
@@ -1584,10 +1598,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "Conversion failed",
+      "status": "imported",
       "discovered_at": "2026-07-26T21:58:05.166886",
-      "downloaded_at": "2026-08-01T11:10:38.024691"
+      "downloaded_at": "2026-08-01T11:10:38.024691",
+      "converted_at": "2026-10-17T22:20:46.498372",
+      "imported_at": "2026-10-17T22:20:46.521371",
+      "work_slug": "peacock-rag"
     },
     "1041_tef": {
       "id": "1041_tef",
@@ -2133,10 +2149,12 @@
       "tuning": "EADGBE (Standard)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "skipped",
-      "error": "Empty notation (0 events)",
+      "status": "imported",
       "discovered_at": "2026-07-26T21:58:05.166961",
-      "downloaded_at": "2026-07-26T22:09:50.087622"
+      "downloaded_at": "2026-07-26T22:09:50.087622",
+      "converted_at": "2026-10-17T22:20:46.529960",
+      "imported_at": "2026-10-17T22:20:46.559009",
+      "work_slug": "turkey-in-the-straw"
     },
     "820_tef": {
       "id": "820_tef",

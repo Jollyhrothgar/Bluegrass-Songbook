@@ -8,6 +8,7 @@ tags:
 - OldTime
 - Scruggs
 - Clawhammer
+- Bluegrass
 parts:
 - type: lead-sheet
   format: chordpro
@@ -38,3 +39,15 @@ parts:
     difficulty: Intermediate
     tuning: Sawmill (gDGCD)
     imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-25402.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '25402'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=25402
+    author: corcoran
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-10-17'

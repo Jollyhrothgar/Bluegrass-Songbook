@@ -15,8 +15,10 @@ Comparison semantics (validated against 23398 and wheel_hoss):
 - Tie continuations (<tie type="stop">) are excluded on the XML side;
   OTF notes with "tie": true are excluded on the parser side.
 - Multi-part XML maps parts to OTF tracks in order; single-part XML from a
-  multi-track TEF (TablEdit exports only the LAST module) compares against
-  the LAST OTF track and yields a PARTIAL verdict at best.
+  multi-track TEF compares against the best-matching OTF track and yields a
+  PARTIAL verdict at best. TablEdit exports only the modules whose display
+  bits (track-record byte 16, bits 4-6) are non-zero; set them in a scratch
+  copy of the .tef to export every module (fix-it A14).
 
 Usage:
   python3 spike/oracle_verify.py <parsed.otf.json> <oracle.xml> [--quiet]

@@ -150,3 +150,15 @@ parts:
     difficulty: Expert
     tuning: Standard
     imported_at: '2026-07-27'
+- type: tablature
+  instrument: banjo
+  format: otf
+  file: banjo-28081.otf.json
+  provenance:
+    source: banjo-hangout
+    source_id: '28081'
+    source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=28081
+    author: RB3
+    difficulty: Intermediate
+    tuning: Standard Open G (gDGBD)
+    imported_at: '2026-10-17'

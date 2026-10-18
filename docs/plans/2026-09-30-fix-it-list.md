@@ -49,6 +49,9 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | A9 | Dark-mode contrast + undefined CSS variables | S | `feature/practice-line-contrast` | done — #274 (2026-10-01) |
 | A10 | Deleted-duplicate URLs say "Song not found" | S | `bug/setlist-keys-not-found` | done — #274 (2026-10-01) |
 | A11 | Stale / wrong editor copy | S | `bug/editor-lifecycle` | done — #274 (2026-10-01) |
+| A12 | TEF import: 99 tabs parse empty, V3 32nds on phantom strings | S | `bug/tef-v3-routing` | done (#277): fixed + 98 tabs imported |
+| A13 | TEF import: remaining mismatches vs TablEdit's loader | M | `bug/tef-v3-routing` | done (#277): 7 fixed; 4 open + 3 follow-ups, see below |
+| A14 | TEF import: whole-corpus check against TablEdit's own MusicXML | M | `bug/tef-v3-routing` | done (#277): 4 fixed; 548/592 files exact, residue listed below |
 | B1 | Collection thumbnails 5.35 MB → ~50 KB | S | `feature/perf-thumbnails` (+ render gating in `feature/perf-boot-data`) | done — #274 (2026-10-01) |
 | B2 | Archive loads on every page | M | `feature/perf-boot-data` | done — #274 (2026-10-01) |
 | B3 | First render waits on Supabase, no timeout | M | `feature/perf-boot-data` | done — #274 (2026-10-01) |
@@ -684,6 +687,153 @@ change the data pipeline in this item.
   remove the field.
 
 **Fix.** Make every message say what the server will actually do.
+
+### A12 — TEF import: 99 tabs parse empty, V3 32nds on phantom strings · S · verified: TablEdit binary + corpus
+
+Found 2026-10-17 by decompiling TablEdit 3.06's loaders with REA/Ghidra
+(`FUN_10004632c` V2, `FUN_100047dbc` V3) and comparing them to
+`tef_parser/reader.py` over the 599 local `.tef` files.
+
+- **Routing.** TablEdit picks the loader from the format byte at offset 205
+  (10 or more = V3). We routed on "first byte printable", so 22 V2 files with
+  an empty title (first byte 0x00, e.g. 11775 Soldier's Joy) took the V3 path
+  and parsed to 0 notes.
+- **V3 note region.** TablEdit seeks to the u32 at header 0x3C. We searched
+  the file for `debt`, which TablEdit writes at 0x38 but never reads; 77 of
+  88 V3 files carry `tbed` there and parsed to 0 notes (e.g. 25151 Red Wing).
+- **V3 positions.** Locations are `8 * (pos * strings + string)` with `pos` in
+  64ths. We decoded 16th slots, so every note on an odd 32nd landed on a
+  phantom string (206 notes in 17 files; 109 in 21206 Cripple Creek).
+
+**Fix.** Route on byte 205, read the 0x3C pointer, carry V3 positions in
+64ths (`V3_UNITS_PER_WHOLE`), in both `reader.py` and the JS port. All 599
+files now parse with notes; the 500 that already parsed are byte-identical;
+JS matches Python on all 599. Tests: `tests/parser/test_tef_v3_layout.py`,
+three new golden fixtures. 98 of the 99 were converted and imported (all
+into existing works except new `metric-lips` and `tombstone-junction`);
+11773 stays skipped on purpose (bounty). The catalog's `convert` command
+can't find these files (`downloads/{id}.tef` vs `{id}_tef_{slug}.tef`), so
+the run called `TEFConverter.convert` + `import_tab` directly.
+
+### A13 — TEF import: remaining mismatches vs TablEdit's loader · M · verified: TablEdit binary + corpus
+
+From the same 2026-10-17 comparison. Observed in the decompiled loader unless
+marked inferred. Items marked **fixed** landed on `bug/tef-v3-routing`
+(tests: `tests/parser/test_tef_tabledit_tables.py`), and the 31 published
+tabs they changed were refreshed field by field — only where the published
+file still equalled the old parser output. After the refresh all 449
+published Hangout tabs equal the current parser's output. Fingering now
+matches TablEdit's MusicXML `<pluck>` counts on all 20 exports that have
+them (`main` missed 3).
+
+- **Durations — fixed.** `decode_duration_code` only matches TablEdit's table
+  (`0x1000f38b8`, 960/whole) for codes 0–15 plus the double dots. Codes
+  16–18, 20, 21, 23, 24, 26, 27, 29–31 are 64ths, 5- and 7-tuplets and a
+  dotted whole; we decode e.g. code 18 as 2240 ticks instead of 30. Live in
+  `works/blackberry-blossom` (7), `reuben` (4), `sailor-s-hornpipe` (2).
+- **V3 percussion — fixed.** It is bit 7 of track-record byte +4, not `u16@+6 == 98`
+  (that is V2 only). 25014 Blackberry Blossom's drum track becomes melodic.
+- **V3 measure table — fixed.** The loop started at 1 and drops the last measure (27499,
+  27500 lose a closing 3/4).
+- **V2 effects — enum fixed.** They are `e1 & 0x0f`; masking with `0x1f`
+  dropped h/p/slide when bit 4 is set (56 notes in 643). **Open:** bend,
+  choke, muted, tremolo, harmonics and release are still never surfaced
+  (renderer/player work, not a decode bug).
+- **V2 fingering — fixed.** Same base-6 byte as V3, on notes whose fret-byte
+  flags are exactly 0x20; the old map only knew `0x06/0x0c/0x12` (1,445
+  notes gained a finger or fretting digit, none changed or lost).
+- **V3 component type — fixed.** It is `cell[0] & 0x3F` (0x33–0x3F special); 3 records
+  in 28267 read as fret-20 notes.
+- **V3 triplets — fixed.** V3 now retimes by duration code (byte 5) like V2;
+  the old 'K'-marker group rule missed groups whose notes differ in dynamics.
+  TablEdit exports: 25151 / 3419 / 26030 go from DIVERGED to VERIFIED.
+- **Open — u16@244 is not an anacrusis flag** (inferred): any nonzero value means a
+  per-measure flag table follows the track records. The `== 1` rule fits some
+  files, not all (29 false positives, 19 misses).
+- **Open — capo** (inferred): TablEdit validates `rec[10] & 0xf` and recomputes the
+  5-string capo; we read `rec[12]` everywhere (161 records differ).
+- **Open — drum line → drum** (inferred, fits both MIDI exports exactly): GM note =
+  84 − line byte + fret. Answers the open question in
+  `sources/banjo-hangout/CLAUDE.md`.
+
+**Oracle check, 2026-10-17.** Eight recovered tabs were exported to MusicXML
+by driving TablEdit's menus with System Events (Accessibility granted to the
+terminal; recipe in `SESSION-HANDOFF.md` §5) and added to
+`spike/oracle_manifest.json`: 27391, 25151, 11775, 27161, 26030 and 3419
+VERIFIED; 19150 and 11721 DIVERGED on the follow-ups below. Re-running the
+batch also showed 14690's old VERIFIED verdict was stale.
+
+Follow-ups (not regressions — `main` and the branch decode them identically):
+- **V3 pickup measures.** 11721 m1 is a pickup TablEdit exports left-aligned
+  (0/240/480); we leave it right-aligned (720/960/1200). Needs the
+  u16@244 / per-measure flag table above.
+- **A straight note inside a triplet span** (11721 m20, 1 note): TablEdit
+  stretches it (240 → 320); we don't.
+- **19150 m12** has slide effect 0x03 in the file, but TablEdit's MusicXML
+  export shows no slide; timing matches. Exporter behaviour, not a decode error.
+- **14690** decodes 5 extra open-string notes on string 3 (167 vs TablEdit's
+  162; all 162 match). Was recorded VERIFIED against an older `parsed/`
+  file; the batch now records DIVERGED.
+
+
+### A14 — TEF import: whole-corpus check against TablEdit's own MusicXML · M · verified: TablEdit exports of all 592 corpus files
+
+2026-10-18. TablEdit's MusicXML exporter writes a module only when bits 4-6
+of its flag word (track-record byte 16, both formats) are non-zero
+(`FUN_1000982f0`); most multi-track tabs have 0 on every module but the
+first, which is why the old batch exports held one part and 20 verdicts
+were PARTIAL. Patching that byte in a scratch copy of each file and
+exporting through TablEdit's menus (accessibility actions only, no
+keystrokes; about 2 s a file) gave an all-modules export of every corpus
+TEF. Before the fixes below, 437 of 474 compared files matched note for
+note; after them, **548 of 592**. Fixed on `bug/tef-v3-routing`, tests in
+`tests/parser/test_tef_tabledit_tables.py`, JS mirrored (parity 599/599):
+
+- **V3 ties — fixed.** Cell byte 1 is the V2 duration byte copied
+  unchanged, so a tie is dynamic 7 (`byte >> 5 == 7`), not bit 7. The bit-7
+  test hid 4,528 played notes in 12 files as ties (25402 Kitchen Girl 810,
+  25139 714, 28474 658, 29041 649; 11721's guitar lost every beat-3 chord).
+- **V2 positions floor to the 64th grid — fixed.** The V2 loader places
+  records at `(loc << 1) & ~3`. Old files that stored triplets at true
+  positions (213/256) were retimed a second time; a triplet is now
+  compressed only when it sits on the straight storage step. 53 notes in 6
+  files (10545, 10666, 10985, 10986, 11165, 11398).
+- **V3 measures longer than a whole note — fixed.** Positions were
+  re-encoded as `measure*64 + offset`, so offsets 64-95 of 3404's 6/4
+  measures spilled into the next measure. V3 positions now stay continuous
+  and `TEFFile.v3_locate()` maps them through the measure table.
+- **Fret 25 — fixed.** A flagged fret field 0x1a is fret 25; only the bare
+  byte 0x1a is a special (`FUN_1000459c4`). One note in the corpus (11056).
+
+The 25 changed files refreshed 22 published tabs and 13 `parsed/` files by
+the same field-delta rule as A13. All 449 published Hangout tabs again equal
+the parser's notation and tracks. Also checked: no corpus V3 file uses the
+XOR-encrypted note cells the loader supports (u32@0x10 non-zero on files
+saved by 3.04 build 182 and later); the reader does not detect them yet.
+
+**Not ours (TablEdit's exporter):** a hammer/pull/slide start written with
+no matching stop (22 notes), slurs on one string of a double-stop (already
+allowed by `oracle_verify`), a dropped leading rest (10894 m24), and
+28267's export is not well-formed XML.
+
+Residue, 107 notes in 43 files:
+- **Pickup and short measures** (8 files: 11591, 11721, 18484, 20903,
+  25725, 28501, flatpicker 798, reso 19). TablEdit exports m1 as a short
+  bar from tick 0; we right-align it in a full bar. Same open item as A13's
+  u16@244 table. 18484 also has short bars mid-tune (m9, m10).
+- **Straight notes in a triplet span** (~8 notes in 6 files: 3098, 21206,
+  25273, 11721 m20, Dawg's Waltz, 2992). TablEdit retimes them; we don't.
+- **Technique pairing** (42 notes): 30 where TablEdit marks h/p/slide and we
+  don't, mostly into an open string across a gap, and 12 the reverse
+  (10985, 11398, 24418). No combination of gap, source duration and
+  fret-byte flags separates the ones TablEdit marks from the ones it
+  doesn't; it needs the exporter's slur logic, not another heuristic.
+- **14205**: fret byte 0xa5 (flags 0xa0) exports as fret 3; we read 4
+  (2 notes). **10591**: 3 extra guitar notes (4-byte V2 variant).
+- **29 published tabs have no TEF on disk** (12135 Daley's Reel, 20911,
+  18998, …): their OTFs predate A12-A14 and can't be re-checked until the
+  files are re-downloaded from hangoutstorage under their `source_file`
+  names.
 
 ---
 

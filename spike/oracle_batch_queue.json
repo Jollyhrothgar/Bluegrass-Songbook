@@ -854,5 +854,69 @@
   "otf": "sources/banjo-hangout/parsed/27493_tef.otf.json",
   "xml": "spike/oracle/batch/27493.xml",
   "tracks": 4
+ },
+ {
+  "pid": "27391_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/bug-tef-v3-routing/sources/banjo-hangout/downloads/27391_tef_katy_hill.tef",
+  "xml_name": "27391.xml",
+  "otf": "sources/banjo-hangout/parsed/27391_tef.otf.json",
+  "xml": "spike/oracle/batch/27391.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "25151_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/bug-tef-v3-routing/sources/banjo-hangout/downloads/25151_tef_red_wing.tef",
+  "xml_name": "25151.xml",
+  "otf": "sources/banjo-hangout/parsed/25151_tef.otf.json",
+  "xml": "spike/oracle/batch/25151.xml",
+  "tracks": 4
+ },
+ {
+  "pid": "11775_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/bug-tef-v3-routing/sources/banjo-hangout/downloads/11775_tef_soldier_s_joy.tef",
+  "xml_name": "11775.xml",
+  "otf": "sources/banjo-hangout/parsed/11775_tef.otf.json",
+  "xml": "spike/oracle/batch/11775.xml",
+  "tracks": 3
+ },
+ {
+  "pid": "27161_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/bug-tef-v3-routing/sources/banjo-hangout/downloads/27161_tef_dear_old_dixie.tef",
+  "xml_name": "27161.xml",
+  "otf": "sources/banjo-hangout/parsed/27161_tef.otf.json",
+  "xml": "spike/oracle/batch/27161.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "19150_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/bug-tef-v3-routing/sources/banjo-hangout/downloads/19150_tef_brown_county_breakdown.tef",
+  "xml_name": "19150.xml",
+  "otf": "sources/banjo-hangout/parsed/19150_tef.otf.json",
+  "xml": "spike/oracle/batch/19150.xml",
+  "tracks": 3
+ },
+ {
+  "pid": "11721_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/bug-tef-v3-routing/sources/banjo-hangout/downloads/11721_tef_the_tennessee_waltz.tef",
+  "xml_name": "11721.xml",
+  "otf": "sources/banjo-hangout/parsed/11721_tef.otf.json",
+  "xml": "spike/oracle/batch/11721.xml",
+  "tracks": 2
+ },
+ {
+  "pid": "26030_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/bug-tef-v3-routing/sources/banjo-hangout/downloads/26030_tef_lonesome_moonlight_waltz.tef",
+  "xml_name": "26030.xml",
+  "otf": "sources/banjo-hangout/parsed/26030_tef.otf.json",
+  "xml": "spike/oracle/batch/26030.xml",
+  "tracks": 1
+ },
+ {
+  "pid": "3419_tef",
+  "tef_host": "/Users/mike/workspace/bluegrassbook.com/bug-tef-v3-routing/sources/mandolin-hangout/downloads/3419_tef_st__anne_s_reel.tef",
+  "xml_name": "3419.xml",
+  "otf": "sources/mandolin-hangout/parsed/3419_tef.otf.json",
+  "xml": "spike/oracle/batch/3419.xml",
+  "tracks": 5
  }
 ]

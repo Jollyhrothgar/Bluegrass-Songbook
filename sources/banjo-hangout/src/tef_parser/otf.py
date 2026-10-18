@@ -7,7 +7,8 @@ import json
 from dataclasses import dataclass, field
 from typing import Any
 
-from .reader import TEFFile, TEFNoteEvent, TEFInstrument, decode_duration_code
+from .reader import (TEFFile, TEFNoteEvent, TEFInstrument, TRIPLET_DURATION_CODES,
+                     V3_UNITS_PER_WHOLE, decode_duration_code)
 
 
 # MIDI note to pitch name conversion
@@ -25,14 +26,7 @@ def midi_to_pitch_name(midi: int) -> str:
     return MIDI_TO_PITCH.get(midi, f"MIDI{midi}")
 
 
-# Fingering annotation codes from TEF format (multiples of 6)
-FINGERING_MAP = {
-    0x06: 'T',  # Thumb
-    0x0c: 'I',  # Index
-    0x12: 'M',  # Middle
-}
-
-# V3 note byte 10 packs BOTH hands base-6: value = 6*pluck + lh_code.
+# Fingering byte (V3 note byte 10; V2 effect2 on 0x20-flagged notes) packs BOTH hands base-6: value = 6*pluck + lh_code.
 # pluck 1..5 = picking finger (T I M R P; MusicXML pluck p i m a c),
 # lh_code 0 = none, else fretting digit = lh_code - 1 (so '3' -> 4).
 # Oracle-verified against TablEdit's MusicXML <pluck>/<fingering> on
@@ -41,16 +35,20 @@ FINGERING_MAP = {
 V3_PLUCK_LETTERS = {1: 'T', 2: 'I', 3: 'M', 4: 'R', 5: 'P'}
 
 
+def decode_fingering(code: int) -> tuple[str | None, int | None]:
+    """Decode (pluck_letter, left_hand_digit) from a fingering byte."""
+    if not 0 < code <= 35:
+        return None, None
+    pluck = V3_PLUCK_LETTERS.get(code // 6)
+    lh_code = code % 6
+    lh = lh_code - 1 if lh_code else None
+    return pluck, lh
+
+
 def v3_fingering(event: TEFNoteEvent) -> tuple[str | None, int | None]:
     """Decode (pluck_letter, left_hand_digit) from a V3 note's byte 10."""
     raw = event.raw_data
-    b10 = raw[10] if raw and len(raw) >= 12 else 0
-    if not 0 < b10 <= 35:
-        return None, None
-    pluck = V3_PLUCK_LETTERS.get(b10 // 6)
-    lh_code = b10 % 6
-    lh = lh_code - 1 if lh_code else None
-    return pluck, lh
+    return decode_fingering(raw[10] if raw and len(raw) >= 12 else 0)
 
 
 @dataclass
@@ -325,9 +323,12 @@ def is_tied_note(event: TEFNoteEvent) -> bool:
     if event.raw_data and len(event.raw_data) >= 6:
         if len(event.raw_data) == 6:  # V2
             return (event.raw_data[3] >> 5) & 0x07 == 7
-        # V3 (12-byte record): high bit of the marker byte (byte 5) —
-        # oracle-confirmed on 25635 m74 (0xe6 notes = XML tie stops).
-        return bool(event.raw_data[5] & 0x80)
+        # V3 (12-byte record): byte 5 is the V2 duration byte, copied
+        # unchanged by TablEdit's V2 upgrade (FUN_1000459c4), so the tie is
+        # the same dynamic-7 sentinel (25635 m74: 0xe6 = XML tie stops).
+        # Testing bit 7 alone also caught dynamics 4-6 and hid 4,528 played
+        # notes in 12 files (11721's guitar beat-3 chords are 0x86).
+        return (event.raw_data[5] >> 5) & 0x07 == 7
     return False
 
 
@@ -389,11 +390,25 @@ def articulation_max_gap(header) -> int:
     """Half a measure, in the units event.position carries for this format.
 
     V2 positions are native grid units (ts_size per measure); V3 positions
-    are 16 slots per measure.
+    are 64th-note units, 64 per 4/4 measure.
     """
     if header.is_v2:
         return (header.v2_ts_size or 256) // 2
-    return 8
+    return V3_UNITS_PER_WHOLE // 2
+
+
+def triplet_duration_code(event: TEFNoteEvent) -> int | None:
+    """The note's duration code when TablEdit plays it as a triplet."""
+    raw = event.raw_data
+    if not raw:
+        return None
+    if len(raw) == 12:
+        code = raw[5] & 0x1f          # V3 duration byte
+    elif len(raw) >= 4:
+        code = raw[3] & 0x1f          # V2 duration byte
+    else:
+        return None
+    return code if code in TRIPLET_DURATION_CODES else None
 
 
 def compute_articulations(
@@ -457,11 +472,11 @@ def compute_articulations(
     for (track, string), notes in notes_by_track_string.items():
         notes.sort(key=lambda e: e.position)
         for i, event in enumerate(notes):
-            # Bit 5 (0x20) is an independent flag riding the same byte
-            # (oracle: 22446/24093 carry 0x21 = flag+hammer, 12574 has
-            # 0x23 = flag+slide; 12124's bare 0x20 notes have no
-            # technique). Mask it off; the enum lives in the low bits.
-            tech = V2_TECH.get(event.raw_data[4] & 0x1f)
+            # The effect enum is the low nibble; bits 4-5 are independent
+            # flags riding the same byte (TablEdit FUN_10001f594 reads
+            # `effect1 & 0x0f`; oracle: 22446/24093 carry 0x21 = flag +
+            # hammer, 12574 has 0x23 = flag + slide, 643 has 0x31-0x33).
+            tech = V2_TECH.get(event.raw_data[4] & 0x0f)
             if not tech or i + 1 >= len(notes):
                 continue
             next_event = notes[i + 1]
@@ -488,12 +503,12 @@ def compute_articulations(
 
 def compute_articulations_v3(
     note_events: list[TEFNoteEvent],
-    max_gap: int = 8,
+    max_gap: int = V3_UNITS_PER_WHOLE // 2,
 ) -> dict[tuple[int, int, int], str]:
     """V3 articulations: byte 6 of the 12-byte record, on the SOURCE note,
     names the transition explicitly — 1 = hammer-on, 2 = pull-off,
     3 = slide. Attributed to the DESTINATION note (next note, same track
-    and string, within max_gap slots), matching OTF convention.
+    and string, within max_gap 64th-note units), matching OTF convention.
 
     Oracle-fit on 25635 vs TablEdit's MusicXML: byte6 counts (14 slides,
     5 hammers incl. the m9 chain, 3 pull-offs) match the export's
@@ -862,19 +877,11 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
     # meter whose real note grid doesn't sit on measure/16 slots (3/4,
     # 6/8 — oracle-confirmed on 13648/18136: slot 90 ticks vs true 120).
     #
-    # V3: positions remain in the 16-slots-per-measure grid emitted by
-    # parse_note_events(); ticks_per_measure = num * (whole/den) where a
-    # quarter is 480 ticks (the old `num * 480` was only correct for /4
-    # meters — oracle-confirmed on 13654, 2/2).
-    POSITIONS_PER_MEASURE = 16
-    beats_per_measure = tef.header.v2_time_num  # Time signature numerator
-    denom = tef.header.v2_time_denom or 4
-    ticks_per_measure = beats_per_measure * 480 * 4 // denom
-    TICKS_PER_POSITION = ticks_per_measure // POSITIONS_PER_MEASURE
-    if tef.header.is_v2:
-        units_per_measure = tef.header.v2_ts_size or 256
-    else:
-        units_per_measure = POSITIONS_PER_MEASURE
+    # V3: positions are continuous 64ths of a whole note (30 ticks each);
+    # TEFFile.v3_locate() splits them by the measure table, so measures of
+    # any length (2/4 in 27493, 6/4 in 3404) keep all their notes.
+    V3_TICKS_PER_UNIT = 1920 // V3_UNITS_PER_WHOLE
+    units_per_measure = tef.header.v2_ts_size or 256
 
     track_events: dict[str, dict[int, list[tuple[int, TEFNoteEvent]]]] = {}
 
@@ -892,83 +899,47 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
             track_events[track_id] = {}
 
         # Calculate measure and tick within measure
-        measure = (event.position // units_per_measure) + 1
-        position_in_measure = event.position % units_per_measure
         if tef.header.is_v2:
-            # Exact: 1 native unit = 1920/256 = 7.5 ticks. Positions are
-            # multiples of 2 in practice (finest TablEdit value = 64th
-            # note = 4 units), so the //2 never truncates.
-            tick = position_in_measure * 15 // 2
+            measure = (event.position // units_per_measure) + 1
+            position_in_measure = event.position % units_per_measure
         else:
-            tick = position_in_measure * TICKS_PER_POSITION
+            index, position_in_measure = tef.v3_locate(event.position)
+            measure = index + 1
+        if tef.header.is_v2:
+            # 1 native unit = 1920/256 = 7.5 ticks. TablEdit's V2 loader
+            # places each record at (loc << 1) & ~3, the V3 64th-note grid,
+            # so a position off that grid is floored to it (old files such
+            # as 10545 stored triplets at true positions like 213/256).
+            tick = (position_in_measure & ~3) * 15 // 2
+        else:
+            tick = position_in_measure * V3_TICKS_PER_UNIT
 
-        # V2 triplet timing (TuxGuitar TESongParser): the duration code
-        # (byte3 & 0x0f) encodes the division — code % 3 == 2 means triplet
-        # (3:2). The note's position is stored on the straight grid but
-        # belongs at x4/3 of its offset within the triplet SPAN, which
-        # depends on the note value: span = 2 x base duration, where
-        # base = whole >> (code // 3). code 11 = eighth triplet (span one
-        # beat, 480), code 8 = quarter triplet (span a half note, 960 —
-        # oracle-confirmed on 15313 m53/56: 1440 -> 1600), code 14 = 16th
-        # triplet (span 240). Per-note and authoritative; replaces the
-        # V3-style 'K'-marker group heuristic, which only matched one
-        # dynamic level by accident.
-        if (tef.header.is_v2 and event.raw_data and len(event.raw_data) >= 4
-                and (event.raw_data[3] & 0x1f) % 3 == 2):
-            code = event.raw_data[3] & 0x1f
+        # Triplet timing (TuxGuitar TESongParser): the duration code (V2
+        # byte3, V3 byte5, & 0x1f) encodes the division —
+        # TRIPLET_DURATION_CODES are 3:2. The note's position is stored on
+        # the straight grid but belongs at x4/3 of its offset within the
+        # triplet SPAN, which depends on the note value: span = 2 x base
+        # duration, where base = whole >> (code // 3). code 11 = eighth
+        # triplet (span one beat, 480), code 8 = quarter triplet (span a
+        # half note, 960 — oracle-confirmed on 15313 m53/56: 1440 -> 1600),
+        # code 14 = 16th triplet (span 240). Per-note and authoritative for
+        # both formats; it replaced a V3 'K'-marker group heuristic that
+        # only matched one dynamic level (25151 m15 has a '+' middle note).
+        # Only a note on the straight storage step (3/4 of its triplet
+        # duration) is compressed: 10545's true-position triplets sit at
+        # 150/300 of a 120-tick step, and TablEdit plays them unretimed.
+        code = triplet_duration_code(event)
+        if code is not None:
             span = 2 * (1920 >> (code // 3))
+            step = decode_duration_code(code) * 3 // 4
             in_span = tick % span
-            tick = tick - in_span + (in_span * 4) // 3
+            if in_span % step == 0:
+                tick = tick - in_span + (in_span * 4) // 3
 
         if measure not in track_events[track_id]:
             track_events[track_id][measure] = []
 
         track_events[track_id][measure].append((tick, event))
-
-    # Post-process to fix triplet timing
-    # Triplet notes have marker 'K' (0x4b) and need tick adjustment
-    # 8th note triplet: 3 notes span 2 eighths = 1 beat = 480 ticks
-    # Spacing between triplet notes = 480 / 3 = 160 ticks
-    TRIPLET_SPAN = 480  # 2 eighth notes = 1 beat
-    TRIPLET_SPACING = TRIPLET_SPAN // 3  # 160 ticks between notes
-
-    # V2 triplets are handled per-note from the duration code above; the
-    # K-marker group heuristic below is for V3 (12-byte records), where the
-    # marker byte is real. Running it on V2 would double-adjust.
-    for track_id, measures in ({} if tef.header.is_v2 else track_events).items():
-        for measure_num, events in measures.items():
-            # Find triplet groups (consecutive positions with 'K' marker)
-            triplet_notes = []
-            for tick, evt in sorted(events, key=lambda x: x[0]):
-                if evt.marker == 'K':
-                    triplet_notes.append((tick, evt))
-
-            # Process triplet groups (groups of 3 consecutive K notes)
-            if len(triplet_notes) >= 3:
-                # Group by starting beat (every 480 ticks = quarter note)
-                i = 0
-                while i <= len(triplet_notes) - 3:
-                    t1, e1 = triplet_notes[i]
-                    t2, e2 = triplet_notes[i + 1]
-                    t3, e3 = triplet_notes[i + 2]
-
-                    # Check if these 3 notes are consecutive (within 2 positions)
-                    if (e2.position - e1.position <= 2) and (e3.position - e2.position <= 2):
-                        # Calculate correct triplet ticks
-                        # 8th note triplet: 3 notes in 480 ticks (1 beat)
-                        base_tick = t1
-                        new_ticks = [base_tick, base_tick + TRIPLET_SPACING, base_tick + 2 * TRIPLET_SPACING]
-
-                        # Update the events list with new ticks
-                        for j, (old_tick, evt) in enumerate([(t1, e1), (t2, e2), (t3, e3)]):
-                            # Find and update in the original list
-                            for k, (tick, e) in enumerate(events):
-                                if e is evt:
-                                    events[k] = (new_ticks[j], e)
-                                    break
-                        i += 3
-                    else:
-                        i += 1
 
     # Build notation structure
     for track_id, measures in track_events.items():
@@ -1025,17 +996,17 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
                         if (evt.track, evt.position, string) in bend_keys:
                             tie = False
                             tech = 'b'
-                        # Fingering: V2 stores a bare pluck letter in effect2
-                        # (bit5-gated); V3 packs pluck + fretting digit
-                        # base-6 in byte 10 (see v3_fingering).
+                        # Fingering: when a V2 fret byte's flag bits are
+                        # exactly 0x20, TablEdit's V2 upgrade (FUN_1000459c4)
+                        # copies effect2 into the cell byte V3 stores at
+                        # record offset 10 — the same base-6 pluck + fretting
+                        # digit code (see v3_fingering).
                         finger = None
                         lh = None
                         if tef.header.is_v2:
-                            if evt.raw_data and len(evt.raw_data) > 5:
-                                fret_byte = evt.raw_data[2]
-                                effect2 = evt.raw_data[5]
-                                if (fret_byte >> 5) & 0x01 and effect2 in FINGERING_MAP:
-                                    finger = FINGERING_MAP[effect2]
+                            if (evt.raw_data and len(evt.raw_data) > 5
+                                    and evt.raw_data[2] & 0xe0 == 0x20):
+                                finger, lh = decode_fingering(evt.raw_data[5])
                         else:
                             finger, lh = v3_fingering(evt)
                         note = OTFNote(s=string, f=fret, tech=tech, finger=finger,
@@ -1054,11 +1025,12 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
 
     # Placed free-text annotations (V3 0x39 components: "Long Choke",
     # chord letters, section banners). Positions share the note grid, so
-    # the same 16-slots-per-measure math applies.
+    # the same 64-units-per-measure math applies.
     for te in tef.text_events:
+        index, offset = tef.v3_locate(te.position)
         doc.annotations.append(OTFAnnotation(
-            measure=(te.position // POSITIONS_PER_MEASURE) + 1,
-            tick=(te.position % POSITIONS_PER_MEASURE) * TICKS_PER_POSITION,
+            measure=index + 1,
+            tick=offset * V3_TICKS_PER_UNIT,
             text=te.text,
         ))
 

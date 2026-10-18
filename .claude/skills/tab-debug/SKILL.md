@@ -138,10 +138,11 @@ there under `{work}-{instrument}-{source_id}.otf.json` (see
 ### V2 vs V3 Detection
 
 ```python
-# V2: starts with printable ASCII, has fixed header structure
-# V3: binary format id; the component region is found by SCANNING for the
-#     b'debt' marker (reader.py does self.data.find(b'debt')), not by reading
-#     a fixed offset. Header pointer 60 holds the same value.
+# Routing is TablEdit's own (reader.is_v3_layout): byte 205 of the file is
+# the format version; 10 or more = V3. NOT the first byte — an untitled V2
+# file starts with 0x00 like a V3 one.
+# V3: the component region starts at the u32 at header offset 60 (0x3C).
+#     The 'debt'/'tbed' magic at 0x38 is never read by TablEdit.
 
 if tef.header.is_v2:
     # 6-byte note records (4-byte sub-variant exists),
@@ -156,7 +157,7 @@ else:
 
 | Offset | Points at |
 |--------|-----------|
-| 60 | Component (note) region — same value as the 'debt' pointer |
+| 60 | Component (note) region (TablEdit seeks here; ends with u32 0xFFFFFFFF) |
 | 64 / 68 / 72 | Title / subtitle / comments (each u16-len-prefixed) |
 | 84 | **Free-text table**: u16 count, then count × [u16 len][bytes, NUL-terminated] |
 | 88 | Chord diagram table: u16 entry_size (36), u16 count, then records (name inside) |
@@ -170,9 +171,9 @@ above the range's first measure. Parsed into `reading_list[].name` in OTF.
 
 | Bytes | Meaning |
 |-------|---------|
-| 0-3 | location (u32): `position = loc // (32*total_strings)`, `string_row = (loc % (32*total_strings)) // 8` |
+| 0-3 | location (u32) = `8 * (pos * total_strings + string_row)`, `pos` in 64ths of a whole note: `position = loc // (8*total_strings)`, `string_row = (loc // 8) % total_strings`. `pos` is continuous; `TEFFile.v3_locate(pos)` splits it by the measure table (a 6/4 measure is 96 units). |
 | 4 | component type. Notes: bits 0-4 = fret+1 (0x01-0x19); 0x40 = grace flag. Non-notes below. |
-| 5 | notes: duration code (bits 0-4) + dynamics (bits 5-6) + **tie/connect bit (bit 7)**. Text components: 0-based text-table index. |
+| 5 | notes: the V2 duration byte, copied unchanged: duration code (bits 0-4) + dynamic (bits 5-7); **dynamic 7 = tie/connect**. Bit 7 alone is NOT a tie (dynamics 4-6 set it too). Text components: 0-based text-table index. |
 | 6 | articulation: 1=hammer, 2=pull, 3=slide, **0x0c=bend/choke SOURCE**, 0x0f=dead/muted (chop ×) |
 | 10 | **fingering pack, base-6**: `6*pluck + lh_code`. pluck 1..5 = T/I/M/R/P; lh_code 0 = none, else fretting digit = lh_code-1. (0x0a = T + finger 3, 0x0b = T + finger 4.) |
 
@@ -265,8 +266,10 @@ def get_articulation(evt):
 
 ### Empty notation (0 events)
 
-**Cause**: V3 format variant without 'debt' chunk marker
-**Status**: Unsupported - these files use a different V3 sub-format
+**Cause (fixed 2026-10-17, fix-it A12)**: V3 files carrying 'tbed' instead
+of 'debt' at 0x38, and untitled V2 files misrouted to V3. Both parse now.
+If a file still comes out empty, check `data[205]` (routing) and the u32 at
+0x3C (note pointer) first.
 **Check**: after a `batch_convert.py` run, `sources/banjo-hangout/conversion_log.json`
 shows "Empty notation (0 events) - format: v3"
 
