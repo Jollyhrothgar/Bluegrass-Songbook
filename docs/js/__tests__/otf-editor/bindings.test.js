@@ -179,8 +179,16 @@ describe('the table is internally consistent', () => {
                 for (const entry of list) bound.add(entry.action);
             }
         }
-        const orphans = Object.keys(ACTIONS).filter(a => !bound.has(a));
+        // `menuOnly` actions are the effects TablEdit itself has no key
+        // for; they are reached from Note ▸ Effects instead (menu-bar.test
+        // and effects-editor.test hold them to that), and binding one
+        // anyway would make the flag a lie.
+        const orphans = Object.keys(ACTIONS)
+            .filter(a => !ACTIONS[a].menuOnly && !bound.has(a));
         expect(orphans).toEqual([]);
+        const boundMenuOnly = Object.keys(ACTIONS)
+            .filter(a => ACTIONS[a].menuOnly && bound.has(a));
+        expect(boundMenuOnly).toEqual([]);
     });
 
     it('defaults to TablEdit', () => {
@@ -308,7 +316,7 @@ describe('describe() / keyFor()', () => {
         expect(keyFor('effect.tie', 'tabledit')).toBe('l');
         expect(keyFor('effect.tie', 'vim')).toBe('a ~');
         expect(keyFor('duration.auto', 'tabledit')).toBe('=');
-        expect(keyFor('measure.repeatPrevious', 'tabledit')).toBe('r');
+        expect(keyFor('measure.repeatPrevious', 'tabledit')).toBe('Alt+r');
         expect(keyFor('measure.repeatPrevious', 'vim')).toBe('R');
     });
 

@@ -119,6 +119,12 @@ export function eventToKeyString(event) {
 
     const digit = /^Digit([0-9])$/.exec(event.code || '');
     if (digit) key = digit[1];
+    // Alt+letter is read off the PHYSICAL key too: macOS Option turns
+    // the letter into a symbol (Option+G types "©", Option+R "®"), which
+    // no table entry could ever match. Only with Alt — an unmodified
+    // letter follows the layout (AZERTY's `a` sits on QWERTY's KeyQ).
+    const letter = event.altKey && /^Key([A-Z])$/.exec(event.code || '');
+    if (letter) key = event.shiftKey ? letter[1] : letter[1].toLowerCase();
     if (key === ' ' || key === 'Spacebar') key = 'Space';
 
     if (event.metaKey && !META_MIRRORS.has(String(key).toLowerCase())) return null;
@@ -379,20 +385,21 @@ function selectSpan(ctx, start, end) {
 function applyTech(ctx, tech) {
     const { state } = ctx;
     const range = state.selection ? state.selectionRange() : null;
+    // Clearing clears EVERY effect — tech, tie, fx and grace (TablEdit's
+    // N) — and refuses with no history entry when nothing is set.
+    if (range && !tech) return state.clearEffectsInSelection();
     if (range) {
         const hits = state.facade.notesInRange(range.startAbs, range.endAbs,
             { strings: range.strings, trackId: state.trackId });
         if (!hits.length) return false;
-        state.facade.transact(tech ? 'Set technique' : 'Clear technique', () => {
+        state.facade.transact('Set technique', () => {
             for (const hit of hits) {
                 const pos = { measure: hit.measure, tick: hit.tick, string: hit.string };
                 state.facade.setArticulation(pos, tech, state.trackId);
-                // Clearing clears EVERY effect, tie included (TablEdit's N).
-                if (!tech) state.facade.setTie(pos, false, { trackId: state.trackId });
             }
             return true;
         });
-        if (tech) state.lastTech = tech;
+        state.lastTech = tech;
         return true;
     }
     ctx.record(tech ? 'addArticulation' : 'clearEffects',
@@ -470,6 +477,62 @@ function techAction(tech, label) {
         },
     };
 }
+
+/**
+ * Turn a TablEdit effect (`fx`) on, off or — what a key press means —
+ * TOGGLE it, on the selection (one undo step; "they all have it → off,
+ * else on") or the note at the cursor. `state.setEffect` remembers an
+ * effect it turned ON as `lastTech = 'fx:<name>'`, so F3 re-applies it.
+ */
+function applyFx(ctx, fx, on = 'toggle') {
+    const { state } = ctx;
+    ctx.record('setEffect', { ...posOf(state), fx, on });
+    return state.setEffect(fx, on);
+}
+
+/** The `fx` value F3 / `.` should re-apply, if the last effect was one. */
+function lastFx(state) {
+    const t = state.lastTech;
+    return typeof t === 'string' && t.startsWith('fx:') ? t.slice(3) : null;
+}
+
+/**
+ * One TablEdit effect as an action. `menuOnly` marks the effects TablEdit
+ * itself has no hotkey for (harmonics, vibrato, tremolo, tapping, let
+ * ring…): no preset binds them, the Note menu and the note popover's
+ * effects row reach them.
+ */
+function fxAction(fx, label, { menuOnly = false } = {}) {
+    return {
+        label,
+        group: 'Effects',
+        modes: ['normal', 'visual'],
+        fx,
+        ...(menuOnly ? { menuOnly: true } : {}),
+        run(ctx) {
+            applyFx(ctx, fx);
+            return true;
+        },
+    };
+}
+
+/** fx value → its action id. Menus, palettes and the popover read this. */
+export const FX_ACTIONS = {
+    brush: 'effect.brush',
+    roll: 'effect.roll',
+    choke: 'effect.choke',
+    ghost: 'effect.ghost',
+    staccato: 'effect.staccato',
+    'let-ring': 'effect.letRing',
+    muted: 'effect.muted',
+    harmonic: 'effect.harmonic',
+    'artificial-harmonic': 'effect.artificialHarmonic',
+    tap: 'effect.tap',
+    vibrato: 'effect.vibrato',
+    tremolo: 'effect.tremolo',
+    'bend-release': 'effect.bendRelease',
+    slap: 'effect.slap',
+};
 
 /** Duration ladder for the coarser/finer grid keys. */
 const GRID_LADDER = [
@@ -1167,8 +1230,37 @@ export const ACTIONS = {
     'effect.hammer': techAction('h', 'Hammer-on'),
     'effect.pull': techAction('p', 'Pull-off'),
     'effect.slide': techAction('/', 'Slide'),
-    'effect.dead': techAction('x', 'Dead / muted note'),
-    'effect.choke': techAction('b', 'Choke / bend'),
+    'effect.dead': techAction('x', 'Dead note'),
+    // `tech: 'b'` marks the TARGET of a bend. It used to sit on `c`, which
+    // is TablEdit's Choke — now the `choke` fx below. TablEdit has no key
+    // for a bend; vim keeps `a b`.
+    'effect.bend': techAction('b', 'Bend target'),
+
+    // TablEdit's note effects (`fx`, a set — DESIGN.md "interface Note").
+    // Each key is a TOGGLE: pressing it again takes the effect off.
+    'effect.brush': fxAction('brush', 'Brush'),
+    'effect.roll': fxAction('roll', 'Roll'),
+    'effect.choke': fxAction('choke', 'Choke'),
+    'effect.ghost': fxAction('ghost', 'Ghost note'),
+    'effect.staccato': fxAction('staccato', 'Staccato'),
+    'effect.letRing': fxAction('let-ring', 'Let ring', { menuOnly: true }),
+    'effect.muted': fxAction('muted', 'Muted (palm)', { menuOnly: true }),
+    'effect.harmonic': fxAction('harmonic', 'Harmonic', { menuOnly: true }),
+    'effect.artificialHarmonic': fxAction('artificial-harmonic', 'Artificial harmonic',
+        { menuOnly: true }),
+    'effect.tap': fxAction('tap', 'Tap', { menuOnly: true }),
+    'effect.vibrato': fxAction('vibrato', 'Vibrato', { menuOnly: true }),
+    'effect.tremolo': fxAction('tremolo', 'Tremolo', { menuOnly: true }),
+    'effect.bendRelease': fxAction('bend-release', 'Bend and release', { menuOnly: true }),
+    'effect.slap': fxAction('slap', 'Slap', { menuOnly: true }),
+    'effect.grace': {
+        label: 'Grace note…',
+        group: 'Effects',
+        // The note at the cursor only: one grace fret across a whole
+        // phrase is not something anyone means.
+        modes: ['normal'],
+        run(ctx) { ctx.hooks.onEditGrace?.(); return true; },
+    },
     'effect.tie': {
         label: 'Tie to the previous note',
         group: 'Effects',
@@ -1180,7 +1272,7 @@ export const ACTIONS = {
         },
     },
     'effect.clear': {
-        label: 'Clear the effect',
+        label: 'Clear the effects (tech, tie, fx, grace)',
         group: 'Effects',
         modes: ['normal', 'visual'],
         run(ctx) { applyTech(ctx, null); return true; },
@@ -1195,6 +1287,9 @@ export const ACTIONS = {
             if (state.lastTech === '~') {
                 ctx.record('toggleTie', posOf(state));
                 state.toggleTieAtCursor();
+            } else if (lastFx(state)) {
+                // TablEdit's F3 RE-APPLIES: on, never a toggle back off
+                applyFx(ctx, lastFx(state), true);
             } else {
                 applyTech(ctx, state.lastTech);
             }
@@ -1617,13 +1712,23 @@ const TABLEDIT = {
             { keys: 'p', action: 'effect.pull' },
             { keys: 's', action: 'effect.slide' },
             { keys: 'm', action: 'effect.dead' },
-            { keys: 'c', action: 'effect.choke' },
             { keys: 'l', action: 'effect.tie' },
             { keys: 'n', action: 'effect.clear' },
             { keys: 'F3', action: 'effect.repeatLast' },
             { keys: 'Ctrl+h', action: 'effect.pendingHammer' },
             { keys: 'Ctrl+p', action: 'effect.pendingPull' },
             { keys: 'Ctrl+/', action: 'effect.pendingSlide' },
+            // TablEdit's special-effect letters — toggles on the note
+            // (or the selection), the way its palette buttons are.
+            { keys: 'b', action: 'effect.brush' },
+            { keys: 'c', action: 'effect.choke' },
+            { keys: 'g', action: 'effect.ghost' },
+            { keys: 'r', action: 'effect.roll' },
+            // TablEdit's Shift+R is an ANTICIPATED roll; OTF has one roll
+            // (direction/timing are not decoded), so it is the same toggle
+            { keys: 'R', action: 'effect.roll', hidden: true },
+            { keys: '/', action: 'effect.staccato' },
+            { keys: 'Alt+g', action: 'effect.grace' },
 
             { keys: 't', action: 'text.edit' },
             { keys: 'T', action: 'text.delete' },
@@ -1653,7 +1758,8 @@ const TABLEDIT = {
             { keys: 'Alt+Delete', action: 'measure.rippleLeft' },
             { keys: 'Ctrl+Shift+ArrowRight', action: 'measure.rippleRight', hidden: true },
             { keys: 'Ctrl+Shift+ArrowLeft', action: 'measure.rippleLeft', hidden: true },
-            { keys: 'r', action: 'measure.repeatPrevious' },
+            // Was `r`, which TablEdit spends on the roll (see exceptions)
+            { keys: 'Alt+r', action: 'measure.repeatPrevious' },
 
             { keys: 'Ctrl+a', action: 'select.measureOrAll' },
             { keys: 'v', action: 'select.visual' },
@@ -1696,8 +1802,13 @@ const TABLEDIT = {
             { keys: 'p', action: 'effect.pull' },
             { keys: 's', action: 'effect.slide' },
             { keys: 'm', action: 'effect.dead' },
-            { keys: 'c', action: 'effect.choke' },
             { keys: 'n', action: 'effect.clear' },
+            { keys: 'b', action: 'effect.brush' },
+            { keys: 'c', action: 'effect.choke' },
+            { keys: 'g', action: 'effect.ghost' },
+            { keys: 'r', action: 'effect.roll' },
+            { keys: 'R', action: 'effect.roll', hidden: true },
+            { keys: '/', action: 'effect.staccato' },
         ],
         annotation: [
             { keys: 't', action: 'finger.thumb' },
@@ -1747,6 +1858,9 @@ const TABLEDIT = {
         'Ctrl+↑/↓ (first/last string) is Mission Control on macOS — Home/End reach the measure edges, and Alt+↑/↓ re-strings a note.',
         'Ctrl+Alt+F4 (automatic duration) is =.',
         'TablEdit’s Shift+A…J (frets 10–19) is not bound: A, H, J and T are needed elsewhere. Type the two digits instead — 1 then 2 gives fret 12 — or f then two digits.',
+        'Repeat the previous measure is Alt+R: r is TablEdit’s roll. Shift+R (anticipated roll) is the same roll here — OTF does not record roll timing.',
+        'TablEdit’s M is “muted note”; here m is the dead note (×, the chop). The palm mute is Note ▸ Effects ▸ Muted (palm).',
+        'Let ring, harmonics, tapping, vibrato, tremolo, bend and release and slap have no TablEdit key: Note ▸ Effects, or the note popover’s Effects row.',
     ],
 };
 
@@ -1813,9 +1927,20 @@ const VIM = {
             { keys: 'a /', action: 'effect.slide' },
             { keys: 'a ~', action: 'effect.tie' },
             { keys: 'a x', action: 'effect.dead' },
-            { keys: 'a b', action: 'effect.choke' },
+            { keys: 'a b', action: 'effect.bend' },
             { keys: 'a n', action: 'effect.clear' },
             { keys: 'a .', action: 'effect.repeatLast' },
+            // The fx set is the operator's SHIFTED letters — TablEdit's
+            // own letter where it has one (B C G R), S for staccato
+            // (TablEdit's `/` is vim's slide) — because the lowercase ones
+            // are already techs and fingering (`a b` bend, `a c` clear
+            // fingering, `a r` ring finger).
+            { keys: 'a B', action: 'effect.brush' },
+            { keys: 'a C', action: 'effect.choke' },
+            { keys: 'a G', action: 'effect.ghost' },
+            { keys: 'a R', action: 'effect.roll' },
+            { keys: 'a S', action: 'effect.staccato' },
+            { keys: 'a g', action: 'effect.grace' },
             { keys: 'F3', action: 'effect.repeatLast', hidden: true },
             { keys: 'a t', action: 'finger.thumb' },
             { keys: 'a i', action: 'finger.index' },
@@ -1907,8 +2032,13 @@ const VIM = {
             { keys: 'a p', action: 'effect.pull' },
             { keys: 'a /', action: 'effect.slide' },
             { keys: 'a x', action: 'effect.dead' },
-            { keys: 'a b', action: 'effect.choke' },
+            { keys: 'a b', action: 'effect.bend' },
             { keys: 'a n', action: 'effect.clear' },
+            { keys: 'a B', action: 'effect.brush' },
+            { keys: 'a C', action: 'effect.choke' },
+            { keys: 'a G', action: 'effect.ghost' },
+            { keys: 'a R', action: 'effect.roll' },
+            { keys: 'a S', action: 'effect.staccato' },
         ],
         annotation: [
             // No fret entry here, so the effect letters are plain — this
@@ -1957,6 +2087,7 @@ const VIM = {
     exceptions: [
         'A count is introduced by g: g12G goes to measure 12, g3w moves three beats, g4. repeats four times.',
         'Ctrl+T, Ctrl+W, Ctrl+N, F6 and F11 belong to the browser and are never bound.',
+        'Effects (fx) are the a operator’s capitals — aB brush, aC choke, aG ghost, aR roll, aS staccato — and ag is the grace note; ab marks a bend target. The rest are in Note ▸ Effects.',
     ],
 };
 
