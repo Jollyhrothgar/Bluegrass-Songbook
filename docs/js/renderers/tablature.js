@@ -96,6 +96,73 @@ export function restGlyphSequence(len) {
     return out;
 }
 
+/*
+ * TablEdit's per-note effects (note.fx, fix-it A15; the format is in
+ * otf-editor/DESIGN.md "interface Note"). Each one is drawn in one of four
+ * places, chosen so marks that stack never collide with each other or with
+ * the existing H/P/sl labels, tie arcs and finger letters:
+ *
+ *   inline   on the fret itself: ghost "(5)", harmonic "<12>"; staccato is
+ *            a dot just above the column's topmost note (nothing else of
+ *            the column can be there)
+ *   column   left of the chord column, once per column: brush, roll
+ *   stem     on the stem below the staff: tremolo slashes
+ *   band     a strip ABOVE the staff, reserved only when the tab uses it
+ *            (like the free-text band): POINT marks per column, and RUN
+ *            lanes that span consecutive notes ("let ring - - -┐")
+ *
+ * The staff itself has no room for per-note labels: strings are 14px apart
+ * and fret chips 14px tall, so anything above or below a fret in a chord
+ * lands on its neighbour's digit.
+ */
+
+/** Band point marks, in canonical FX order. Text, or a drawn glyph. */
+const FX_POINT_MARKS = [
+    ['choke', 'ch'],
+    ['artificial-harmonic', 'A.H.'],
+    ['tap', 'T'],
+    ['vibrato', null],           // short wavy line
+    ['bend-release', null],      // up-then-down arrow
+    ['slap', 'S'],
+];
+const FX_POINT = new Map(FX_POINT_MARKS);
+
+/** Band run marks: label once, then a dashed extender over the run. */
+const FX_RUN_MARKS = [['let-ring', 'let ring'], ['muted', 'P.M.']];
+const FX_RUN = new Map(FX_RUN_MARKS);
+
+/** Height of one band lane, and the band font. */
+const FX_LANE = 11;
+const FX_FONT = 8;
+/** Rough advance of one character at FX_FONT (no layout engine to ask). */
+const FX_CHAR_W = 4.6;
+
+/** Grace fret size (~2/3 of the fret font) and the smallest it may shrink to. */
+const GRACE_FONT = 8;
+const GRACE_MIN_FONT = 5;
+
+/**
+ * Which effects-band lanes a notation needs: one O(notes) scan per render.
+ * @returns {{point: boolean, runs: string[], band: number}}
+ */
+export function fxLanesFor(notation) {
+    let point = false;
+    const runSeen = new Set();
+    for (const m of notation || []) {
+        for (const e of m.events || []) {
+            for (const n of e.notes || []) {
+                if (!n.fx) continue;
+                for (const fx of n.fx) {
+                    if (FX_POINT.has(fx)) point = true;
+                    else if (FX_RUN.has(fx)) runSeen.add(fx);
+                }
+            }
+        }
+    }
+    const runs = FX_RUN_MARKS.map(([fx]) => fx).filter(fx => runSeen.has(fx));
+    return { point, runs, band: ((point ? 1 : 0) + runs.length) * FX_LANE };
+}
+
 // Common banjo tunings: pattern (strings 1-5, note letters) → name
 // Patterns use just the note letter, ignoring octave
 const BANJO_TUNINGS = {
@@ -270,6 +337,9 @@ export class TabRenderer {
         this._layoutWidth = 0;
         this._layoutDeferred = false;
         this._scale = 1;
+        //   _fxLanes        the effects band (note.fx) this notation needs —
+        //                   see fxLanesFor()
+        this._fxLanes = { point: false, runs: [], band: 0 };
         //   _drewWithBravura whether the current drawing used the Bravura
         //                   glyphs (time signatures, rests) — see the
         //                   font-ready redraw below.
@@ -629,7 +699,11 @@ export class TabRenderer {
             this._baseTopMargin = this.options.topMargin;
         }
         const hasTextBand = notation.some(m => (m.texts && m.texts.length) || m.section);
-        this.options.topMargin = this._baseTopMargin + (hasTextBand ? 32 : 0);
+        // Effects band (note.fx point/run marks), same rule: uniform, and
+        // only when the tab has something to put in it.
+        this._fxLanes = fxLanesFor(notation);
+        this.options.topMargin = this._baseTopMargin + (hasTextBand ? 32 : 0)
+            + this._fxLanes.band;
 
         // Calculate responsive layout (against the real width measured above)
         this._calculateLayout(layoutWidth);
@@ -1066,6 +1140,9 @@ export class TabRenderer {
         // barlines (split whole notes), so arcs are drawn at row scope
         // after all measures are laid out.
         const rowNotePositions = [];
+        // Every column of the row, in order, when the tab has run marks
+        // (let ring / P.M.): a column WITHOUT the effect is what ends a run.
+        const fxRunColumns = this._fxLanes.runs.length ? [] : null;
 
         // Annotation texts flow left-to-right across the row; when one
         // would start inside the previous one, it hops to a second lane
@@ -1147,7 +1224,9 @@ export class TabRenderer {
                     const lane = tx >= textLaneEnds[0] + 6 ? 0
                         : (tx >= textLaneEnds[1] + 6 ? 1 : 0);
                     textLaneEnds[lane] = tx + 5.5 * t.text.length;
-                    const annText = this.createText(tx, opt.topMargin - 34 - lane * 11, t.text, {
+                    // ...and above the effects band, when there is one
+                    const annY = opt.topMargin - 34 - this._fxLanes.band - lane * 11;
+                    const annText = this.createText(tx, annY, t.text, {
                         fontSize: '10px',
                         fill: opt.fretColor,
                     });
@@ -1218,15 +1297,7 @@ export class TabRenderer {
                         const stringIndex = note.s - 1;
                         const noteY = opt.topMargin + stringIndex * opt.stringSpacing;
 
-                        // Wrap tied notes in brackets [7] to indicate tie continuation
-                        // Dead/muted notes (chops) draw the standard ×
-                        // in place of the fret digit. Bend/choke TARGETS are
-                        // bracketed too (TablEdit style: the source note is
-                        // picked, the target is the choked pitch — the
-                        // tilted-up arrow is drawn in renderSlurs).
-                        const fretStr = note.tech === 'x' ? '×'
-                            : (note.tie || note.tech === 'b') ? `[${note.f}]` : note.f.toString();
-                        const bgWidth = (note.tie || note.tech === 'b') ? 22 : (fretStr.length > 1 ? 16 : 12);
+                        const { text: fretStr, width: bgWidth, cls: fretCls } = this._fretLabel(note);
                         const bg = this.createRect(noteX - bgWidth/2, noteY - 7, bgWidth, 14, opt.fretBgColor);
                         bg.setAttribute('class', 'note-bg');
                         bg.dataset.absTick = absTick;
@@ -1238,7 +1309,7 @@ export class TabRenderer {
                             fontWeight: '600',
                             textAnchor: 'middle'
                         });
-                        fretText.setAttribute('class', 'note-text');
+                        fretText.setAttribute('class', fretCls);
                         fretText.dataset.absTick = absTick;
                         svg.appendChild(fretText);
 
@@ -1298,6 +1369,13 @@ export class TabRenderer {
                         }
                     });
 
+                    // note.fx / note.grace marks for this column (after its
+                    // chips, so they draw on top of the chip backgrounds)
+                    if (event.notes.some(n => n.fx || n.grace)) {
+                        this._drawEventEffects(svg, event, noteX, measure.events, geom, stringsBottom);
+                    }
+                    if (fxRunColumns) fxRunColumns.push({ x: noteX, event });
+
                     // Store note elements for playback highlighting
                     this.noteElements.push({
                         measure: measure.measure,
@@ -1334,9 +1412,327 @@ export class TabRenderer {
         // (Cross-ROW ties still don't — half-arc into the margin is a
         // possible future nicety.)
         this.renderSlurs(svg, rowNotePositions, opt);
+        if (fxRunColumns) this._renderFxRuns(svg, fxRunColumns);
 
         rowDiv.appendChild(svg);
         this.container.appendChild(rowDiv);
+    }
+
+    /**
+     * What a fret prints as, its chip width and its classes.
+     *
+     * Dead notes (chops) draw the standard × in place of the digit. Tie
+     * continuations and bend/choke TARGETS are bracketed [7] (TablEdit
+     * style: the source note is picked, the target is the choked pitch —
+     * the tilted-up arrow is drawn in renderSlurs). note.fx wraps INSIDE
+     * the bracket: harmonic <12>, ghost (5), so a tied ghost reads [(5)].
+     */
+    _fretLabel(note) {
+        const fx = note.fx;
+        const harmonic = !!fx && (fx.includes('harmonic') || fx.includes('artificial-harmonic'));
+        const ghost = !!fx && fx.includes('ghost');
+        const bracket = note.tie || note.tech === 'b';
+        if (!harmonic && !ghost) {
+            const text = note.tech === 'x' ? '×' : bracket ? `[${note.f}]` : String(note.f);
+            return { text, width: bracket ? 22 : (text.length > 1 ? 16 : 12), cls: 'note-text' };
+        }
+        let text = note.tech === 'x' ? '×' : String(note.f);
+        if (harmonic) text = `<${text}>`;
+        if (ghost) text = `(${text})`;
+        if (bracket && note.tech !== 'x') text = `[${text}]`;
+        return {
+            text,
+            width: Math.max(16, 6 * text.length + 4),
+            cls: 'note-text' + (ghost ? ' fx-ghost' : '') + (harmonic ? ' fx-harmonic' : ''),
+        };
+    }
+
+    /** Baseline of the effects band's POINT lane (closest to the staff). */
+    _fxPointY() {
+        return this.options.topMargin - 30;
+    }
+
+    /** Baseline of run lane `i` (let ring, P.M.), above the point lane. */
+    _fxRunY(i) {
+        return this.options.topMargin - 30 - (this._fxLanes.point ? FX_LANE : 0) - i * FX_LANE;
+    }
+
+    /**
+     * Everything note.fx / note.grace draws for ONE event column except the
+     * run lanes (_renderFxRuns, row-scoped). Grace notes go first: the
+     * brush/roll mark sits left of whatever is leftmost in the column.
+     */
+    _drawEventEffects(svg, event, noteX, events, geom, stringsBottom) {
+        const opt = this.options;
+        const yOf = (s) => opt.topMargin + (s - 1) * opt.stringSpacing;
+        let left = noteX - Math.max(...event.notes.map(n => this._fretLabel(n).width)) / 2;
+
+        const graced = event.notes.filter(n => n.grace && Number.isFinite(n.grace.f));
+        if (graced.length) {
+            const limit = this._prevColumnRight(event, events, geom);
+            for (const n of graced) {
+                left = Math.min(left, this._drawGrace(svg, n, noteX, yOf(n.s), limit));
+            }
+        }
+
+        const fxSet = new Set();
+        for (const n of event.notes) if (n.fx) n.fx.forEach(f => fxSet.add(f));
+        if (!fxSet.size) return;
+
+        // Brush (strum) and roll (arpeggio): ONE vertical mark per column,
+        // spanning the strings that carry it. The brush arrow points toward
+        // string 1; TablEdit stores a direction (and speed) the importer
+        // does not decode yet, so a down/up distinction is not drawn.
+        for (const kind of ['brush', 'roll']) {
+            if (!fxSet.has(kind)) continue;
+            const strings = event.notes.filter(n => n.fx && n.fx.includes(kind)).map(n => n.s);
+            const top = yOf(Math.min(...strings)) - 5;
+            const bot = yOf(Math.max(...strings)) + 5;
+            const x = left - 3;
+            let d;
+            if (kind === 'brush') {
+                d = `M ${x} ${bot} L ${x} ${top} M ${x - 2.5} ${top + 4} L ${x} ${top} L ${x + 2.5} ${top + 4}`;
+            } else {
+                d = `M ${x} ${bot}`;
+                for (let y = bot, side = 1; y - 3 >= top - 0.01; y -= 3, side = -side) {
+                    d += ` Q ${x + 2.2 * side} ${y - 1.5} ${x} ${y - 3}`;
+                }
+            }
+            const mark = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            mark.setAttribute('d', d);
+            mark.setAttribute('fill', 'none');
+            mark.setAttribute('stroke', opt.mutedColor);
+            mark.setAttribute('stroke-width', '1.2');
+            mark.setAttribute('class', `fx-${kind}`);
+            svg.appendChild(mark);
+            left = x - 3;   // never both on one chord, but never on top of each other
+        }
+
+        // Staccato: a dot just above the column's topmost note
+        if (fxSet.has('staccato')) {
+            const top = Math.min(...event.notes.map(n => n.s));
+            const dot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            dot.setAttribute('cx', noteX);
+            dot.setAttribute('cy', yOf(top) - 10);
+            dot.setAttribute('r', 1.6);
+            dot.setAttribute('fill', opt.mutedColor);
+            dot.setAttribute('class', 'fx-staccato');
+            svg.appendChild(dot);
+        }
+
+        // Tremolo picking: three slashes across the stem, below the staff
+        if (fxSet.has('tremolo')) {
+            let d = '';
+            for (let k = 0; k < 3; k++) {
+                const y = stringsBottom + 10 + 3 * k;
+                d += `M ${noteX - 3} ${y + 1.2} L ${noteX + 3} ${y - 1.2} `;
+            }
+            const trem = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            trem.setAttribute('d', d.trim());
+            trem.setAttribute('fill', 'none');
+            trem.setAttribute('stroke', opt.stemColor);
+            trem.setAttribute('stroke-width', '1.4');
+            trem.setAttribute('class', 'fx-tremolo');
+            svg.appendChild(trem);
+        }
+
+        if (this._fxLanes.point) this._drawFxPoints(svg, fxSet, noteX);
+    }
+
+    /**
+     * Point marks for one column in the band above the staff, laid out
+     * left-to-right in canonical order and centred on the column — so a
+     * column carrying several never stacks them on one spot.
+     */
+    _drawFxPoints(svg, fxSet, x) {
+        const items = FX_POINT_MARKS.filter(([fx]) => fxSet.has(fx));
+        if (!items.length) return;
+        const ink = this.options.mutedColor;
+        const widthOf = ([fx, text]) => text ? text.length * FX_CHAR_W
+            : fx === 'vibrato' ? 10 : 9;
+        const gap = 2;
+        const total = items.reduce((sum, it) => sum + widthOf(it), 0) + gap * (items.length - 1);
+        const y = this._fxPointY();
+        const svgPath = (d, fx) => {
+            const p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            p.setAttribute('d', d);
+            p.setAttribute('fill', 'none');
+            p.setAttribute('stroke', ink);
+            p.setAttribute('stroke-width', '1');
+            p.setAttribute('class', `fx-${fx}`);
+            return p;
+        };
+        let cx = x - total / 2;
+        for (const item of items) {
+            const [fx, text] = item;
+            if (text) {
+                const t = this.createText(cx, y, text, {
+                    fontSize: `${FX_FONT}px`,
+                    fill: ink,
+                    fontWeight: '600',
+                    textAnchor: 'start'
+                });
+                t.setAttribute('class', `fx-${fx}`);
+                svg.appendChild(t);
+            } else if (fx === 'vibrato') {
+                svg.appendChild(svgPath(
+                    `M ${cx} ${y - 3} q 1.25 -2.5 2.5 0 t 2.5 0 t 2.5 0 t 2.5 0`, fx));
+            } else {
+                // bend-release: up, then back down, arrowhead at the end
+                const tipX = cx + 9, tipY = y;
+                const ang = Math.atan2(6, 4.5);
+                const h = (a) => `${tipX - 3 * Math.cos(a)} ${tipY - 3 * Math.sin(a)}`;
+                svg.appendChild(svgPath(
+                    `M ${cx} ${y} L ${cx + 4.5} ${y - 6} L ${tipX} ${tipY}`
+                    + ` M ${h(ang - 0.5)} L ${tipX} ${tipY} L ${h(ang + 0.5)}`, fx));
+            }
+            cx += widthOf(item) + gap;
+        }
+    }
+
+    /** Rough width of a fret's printed digits at the fret font size. */
+    _fretGlyphWidth(note) {
+        return this._fretLabel(note).text.length * 0.6 * this.options.fretFontSize;
+    }
+
+    /**
+     * Right edge of the column before `event` in its measure (its widest
+     * printed fret), or just right of the barline and any leading adornment. Only
+     * asked for a column that has a grace note, so the O(events-in-measure)
+     * scan never runs per note.
+     */
+    _prevColumnRight(event, events, geom) {
+        let prev = null;
+        for (const e of events) {
+            if (e.tick < event.tick && e.notes && e.notes.length
+                    && (!prev || e.tick > prev.tick)) prev = e;
+        }
+        const floor = geom.noteX0 - 13;
+        if (!prev) return floor;
+        const px = geom.noteX0 + geom.noteOffset + (prev.tick / geom.ticks) * geom.noteW;
+        const half = Math.max(...prev.notes.map(n => this._fretGlyphWidth(n))) / 2;
+        return Math.max(floor, px + half + 1);
+    }
+
+    /**
+     * A grace note (note.grace): a small fret just left of its main note on
+     * the same string, joined to it by a slur labelled by kind — h / p for
+     * "hp" (by direction: a lower grace hammers on, a higher one pulls off),
+     * "sl" for a slide, a bare arc otherwise. It has no tick of its own and
+     * moves nothing: it lives in the gap the layout already left, between
+     * the previous column's digits and its own. When that gap is too small
+     * it SHRINKS (down to GRACE_MIN_FONT) rather than run into the previous
+     * column. Below that it is centred in what room there is and drawn
+     * without its background chip, so a cramped grace may touch a
+     * neighbour's digits but never blanks them out.
+     *
+     * @returns {number} the grace's left edge
+     */
+    _drawGrace(svg, note, noteX, noteY, limit) {
+        const opt = this.options;
+        const g = note.grace;
+        const digits = String(g.f).length;
+        const mainLeft = noteX - this._fretGlyphWidth(note) / 2;
+        const right = mainLeft - 1;
+        let size = GRACE_FONT;
+        const room = right - limit;
+        if (room < digits * 0.6 * size) {
+            size = Math.max(GRACE_MIN_FONT, room / (digits * 0.6));
+        }
+        const w = digits * 0.6 * size;
+        const fits = w <= room + 0.01;
+        const gx = fits ? right - w / 2 : (limit + right) / 2;
+
+        if (fits) {
+            const bg = this.createRect(gx - w / 2 - 1, noteY - 5, w + 2, 10, opt.fretBgColor);
+            bg.setAttribute('class', 'grace-bg');
+            svg.appendChild(bg);
+        }
+        const text = this.createText(gx, noteY + size * 0.35, String(g.f), {
+            fontSize: `${Math.round(size * 100) / 100}px`,
+            fill: opt.fretColor,
+            fontWeight: '600',
+            textAnchor: 'middle'
+        });
+        text.setAttribute('class', 'grace-note');
+        svg.appendChild(text);
+
+        const y0 = noteY - 6;
+        const endX = mainLeft + 2;
+        const midX = (gx + endX) / 2;
+        const arc = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        arc.setAttribute('d', `M ${gx} ${y0} Q ${midX} ${y0 - 5} ${endX} ${y0}`);
+        arc.setAttribute('fill', 'none');
+        arc.setAttribute('stroke', opt.mutedColor);
+        arc.setAttribute('stroke-width', '1');
+        arc.setAttribute('class', 'grace-arc');
+        svg.appendChild(arc);
+
+        const label = g.kind === 'hp' ? (g.f < note.f ? 'h' : 'p')
+            : g.kind === 'slide' ? 'sl' : null;
+        if (label) {
+            const t = this.createText(midX, y0 - 4, label, {
+                fontSize: '7px',
+                fill: opt.mutedColor,
+                fontWeight: '600',
+                textAnchor: 'middle'
+            });
+            t.setAttribute('class', 'grace-label');
+            svg.appendChild(t);
+        }
+        return gx - w / 2 - 1;
+    }
+
+    /**
+     * Run marks (let ring, P.M.) for one row: the label once where a run
+     * starts, then a dashed extender with an end hook over the rest of it.
+     * A column WITHOUT the effect ends the run — except that a new run
+     * never starts under the previous label (it extends it instead), so
+     * labels cannot print over each other. Runs re-label on a new row.
+     */
+    _renderFxRuns(svg, columns) {
+        const ink = this.options.mutedColor;
+        const cols = [...columns].sort((a, b) => a.x - b.x);
+        this._fxLanes.runs.forEach((fx, lane) => {
+            const label = FX_RUN.get(fx);
+            const labelW = label.length * FX_CHAR_W;
+            const y = this._fxRunY(lane);
+            const runs = [];
+            let run = null;
+            for (const col of cols) {
+                const has = col.event.notes.some(n => n.fx && n.fx.includes(fx));
+                if (!has) {
+                    if (run) run.open = false;
+                    continue;
+                }
+                if (run && (run.open || col.x <= run.labelEnd + 4)) {
+                    run.endX = col.x;
+                    run.open = true;
+                } else {
+                    run = { startX: col.x, endX: col.x, labelEnd: col.x - 4 + labelW, open: true };
+                    runs.push(run);
+                }
+            }
+            for (const r of runs) {
+                const t = this.createText(r.startX - 4, y, label, {
+                    fontSize: `${FX_FONT}px`,
+                    fill: ink,
+                    fontStyle: 'italic',
+                    textAnchor: 'start'
+                });
+                t.setAttribute('class', `fx-${fx}`);
+                svg.appendChild(t);
+                if (r.endX > r.labelEnd + 4) {
+                    const line = this.createLine(r.labelEnd + 2, y - 3, r.endX + 3, y - 3, ink);
+                    line.setAttribute('stroke-dasharray', '2 2');
+                    line.setAttribute('class', `fx-${fx}-line`);
+                    svg.appendChild(line);
+                    const hook = this.createLine(r.endX + 3, y - 3, r.endX + 3, y + 1, ink);
+                    hook.setAttribute('class', 'fx-run-end');
+                    svg.appendChild(hook);
+                }
+            }
+        });
     }
 
     renderSlurs(svg, notePositions, opt) {

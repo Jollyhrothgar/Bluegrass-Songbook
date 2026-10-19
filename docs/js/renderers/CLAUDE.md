@@ -71,6 +71,36 @@ The renderer shows these articulation marks:
 | Slide | `/` | Slur arc + "sl" |
 | Bend/choke | `b` | Tilted arrow + "½", target fret bracketed `[7]` |
 | Tie | `tie: true` | Slur arc, continuation fret bracketed `[7]` |
+| Dead note | `x` | `×` in place of the fret |
+
+TablEdit's per-note effects (`note.fx`, `note.grace`; format in
+`otf-editor/DESIGN.md`) draw in four places, so stacked marks never land on
+each other, on H/P/sl labels, or on a chord neighbour's digit (strings are
+14px apart, chips 14px tall: there is no room for labels *inside* the staff):
+
+| `fx` / field | Rendered As | Where | Class |
+|---|---|---|---|
+| `ghost` | `(5)` | on the fret | `.note-text.fx-ghost` |
+| `harmonic` | `<12>` | on the fret | `.note-text.fx-harmonic` |
+| `artificial-harmonic` | `<12>` + "A.H." | fret + band | `.fx-artificial-harmonic` |
+| `staccato` | dot above the column's topmost note | on the staff | `.fx-staccato` |
+| `brush` | vertical arrow toward string 1 (direction not decoded yet) | left of the column, ONE per column | `.fx-brush` |
+| `roll` | vertical wavy line | left of the column, one per column | `.fx-roll` |
+| `tremolo` | three slashes across the stem | below the staff | `.fx-tremolo` |
+| `choke` / `tap` / `slap` | "ch" / "T" / "S" | band, point lane | `.fx-choke` … |
+| `vibrato` / `bend-release` | short wave / up-down arrow | band, point lane | `.fx-vibrato` … |
+| `let-ring` / `muted` | "let ring" / "P.M." once, then `- - -┐` over the run | band, one run lane each | `.fx-let-ring`, `.fx-let-ring-line` |
+| `grace: {f, kind}` | small fret left of the main fret + slur; "h"/"p" for `hp` (by direction), "sl" for `slide`, bare arc otherwise | on the string | `.grace-note`, `.grace-arc`, `.grace-label` |
+
+- **The band** sits above the staff (and above ending brackets), and is
+  reserved like the free-text band: uniformly, and only when the tab has a
+  point or run mark (`fxLanesFor()` — one scan per render). A tab without
+  them renders byte-identically to before.
+- **A grace moves nothing.** It has no tick; it sits in the gap the layout
+  already left, shrinking (to 5px) rather than running into the previous
+  column, and drops its background chip when even that does not fit, so it
+  never blanks a neighbour's digit.
+- A run breaks at a column without the effect and re-labels on a new row.
 
 **Cross-barline arcs work.** A row holds several measures in ONE SVG
 (`measuresPerRow`), and `renderSlurs()` runs once per row after every measure
