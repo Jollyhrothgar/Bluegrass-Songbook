@@ -191,7 +191,14 @@ class NoCacheHandler(http.server.SimpleHTTPRequestHandler):
             return io.BytesIO(body)
         return super().send_head()
 
-http.server.ThreadingHTTPServer(('', $PORT), NoCacheHandler).serve_forever()
+# socketserver's listen backlog is 5. A page asks for ~40 ES modules at once,
+# and the Playwright suite opens one page per worker, so the queue overflows
+# and macOS resets the extra connections (ERR_CONNECTION_RESET). 128 is the
+# macOS default somaxconn.
+class Server(http.server.ThreadingHTTPServer):
+    request_queue_size = 128
+
+Server(('', $PORT), NoCacheHandler).serve_forever()
 "
         ;;
     enrichment|enrichment-viewer|enrich)
