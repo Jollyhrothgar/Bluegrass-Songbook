@@ -97,6 +97,8 @@ These are already imported and match TablEdit:
 
 These are quick wins first, then features by reach. Every one needs TDD against TablEdit's export or a named byte from the decompile, like A12-A14.
 
+**Status 2026-10-18:** 1, 2, 3, 4, 6 and 7 are done on `feature/tef-import-gaps` (the schema decision for 6 is `note.fx`, see DESIGN.md). 5 is deferred: the reading guide (0xb7) also carries endings and codas, and expanding its start/end pairs by standard repeat rules reproduces only 14 of 71 real reading lists. 8 and 9 are open.
+
 1. **V2 dead notes → `x`** (S). The renderer and player already support it. Covers 65 published tabs.
 2. **V2 text → `annotations`** (S-M). The renderer already draws them. Covers 237 published tabs, most of them chord names over the tab. Splitting chord names from labels is a display decision for Mike.
 3. **Eighth/quarter triplet brackets** (S). This is a renderer fix, and it also helps tabs typed in the editor.
