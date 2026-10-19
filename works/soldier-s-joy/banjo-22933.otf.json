@@ -1225,5 +1225,17 @@
     "author": "AndyW",
     "converted_at": "2026-07-26T22:20:05.656127",
     "source_id": "22933"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 8,
+      "tick": 1560,
+      "text": "5 into B"
+    },
+    {
+      "measure": 16,
+      "tick": 1560,
+      "text": "2 into A"
+    }
+  ]
 }

@@ -6538,7 +6538,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -6568,7 +6571,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -6603,7 +6609,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -6633,7 +6642,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -6668,7 +6680,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -6698,7 +6713,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -6733,7 +6751,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -6763,7 +6784,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -6798,7 +6822,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -6828,7 +6855,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -6863,7 +6893,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -6893,7 +6926,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -6928,7 +6964,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -6958,7 +6997,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -6993,7 +7035,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -7023,7 +7068,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -7058,7 +7106,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -7088,7 +7139,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -7123,7 +7177,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -7153,7 +7210,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -7188,7 +7248,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -7218,7 +7281,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -7253,7 +7319,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -7283,7 +7352,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -7318,7 +7390,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -7348,7 +7423,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -7383,7 +7461,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -7413,7 +7494,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -7448,7 +7532,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -7478,7 +7565,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -7513,7 +7603,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -7543,7 +7636,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -7578,7 +7674,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -7608,7 +7707,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -7643,7 +7745,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -7688,7 +7793,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -7718,7 +7826,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -7753,7 +7864,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -7783,7 +7897,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -7818,7 +7935,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -7848,7 +7968,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -7883,7 +8006,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -7913,7 +8039,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -7948,7 +8077,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -7978,7 +8110,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -8013,7 +8148,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -8043,7 +8181,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -8078,7 +8219,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -8108,7 +8252,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -8143,7 +8290,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -8173,7 +8323,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -8208,7 +8361,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -8238,7 +8394,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -8273,7 +8432,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -8303,7 +8465,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -8338,7 +8503,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -8368,7 +8536,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -8403,7 +8574,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -8433,7 +8607,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -8468,7 +8645,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -8498,7 +8678,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -8533,7 +8716,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -8563,7 +8749,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -8598,7 +8787,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -8628,7 +8820,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -8663,7 +8858,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -8693,7 +8891,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -8728,7 +8929,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -8758,7 +8962,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -8793,7 +9000,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -16826,5 +17036,2812 @@
     "author": "MandoTom2",
     "converted_at": "2026-07-26T22:20:04.934375",
     "source_id": "2747"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "A: Part 1: MANDOLIN..."
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "A: Back-Up Banjo..."
+    },
+    {
+      "measure": 2,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 2,
+      "tick": 1680,
+      "text": "T"
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 2,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 2,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 2,
+      "tick": 720,
+      "text": "m"
+    },
+    {
+      "measure": 2,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 2,
+      "tick": 1440,
+      "text": "m"
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "A: Rhythm Banjo..."
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "A: Fretless Bass..."
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "A: Part 1: MANDOLIN..."
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "Percussion..."
+    },
+    {
+      "measure": 3,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 3,
+      "tick": 1200,
+      "text": "T"
+    },
+    {
+      "measure": 3,
+      "tick": 0,
+      "text": "i"
+    },
+    {
+      "measure": 3,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 3,
+      "tick": 720,
+      "text": "i"
+    },
+    {
+      "measure": 3,
+      "tick": 960,
+      "text": "m"
+    },
+    {
+      "measure": 3,
+      "tick": 1440,
+      "text": "i"
+    },
+    {
+      "measure": 3,
+      "tick": 1680,
+      "text": "m"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 4,
+      "tick": 720,
+      "text": "T"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 4,
+      "tick": 240,
+      "text": "i"
+    },
+    {
+      "measure": 4,
+      "tick": 480,
+      "text": "m"
+    },
+    {
+      "measure": 4,
+      "tick": 960,
+      "text": "m"
+    },
+    {
+      "measure": 4,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 4,
+      "tick": 1440,
+      "text": "T"
+    },
+    {
+      "measure": 4,
+      "tick": 1680,
+      "text": "m"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 5,
+      "tick": 720,
+      "text": "T"
+    },
+    {
+      "measure": 5,
+      "tick": 1440,
+      "text": "T"
+    },
+    {
+      "measure": 5,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 5,
+      "tick": 480,
+      "text": "i"
+    },
+    {
+      "measure": 5,
+      "tick": 960,
+      "text": "m"
+    },
+    {
+      "measure": 5,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 5,
+      "tick": 1680,
+      "text": "m"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 6,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 6,
+      "tick": 1680,
+      "text": "T"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 6,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 6,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 6,
+      "tick": 720,
+      "text": "m"
+    },
+    {
+      "measure": 6,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 6,
+      "tick": 1440,
+      "text": "m"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 7,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 7,
+      "tick": 1200,
+      "text": "T"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "i"
+    },
+    {
+      "measure": 7,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 7,
+      "tick": 720,
+      "text": "i"
+    },
+    {
+      "measure": 7,
+      "tick": 960,
+      "text": "m"
+    },
+    {
+      "measure": 7,
+      "tick": 1440,
+      "text": "i"
+    },
+    {
+      "measure": 7,
+      "tick": 1680,
+      "text": "m"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 720,
+      "text": "T"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 8,
+      "tick": 240,
+      "text": "i"
+    },
+    {
+      "measure": 8,
+      "tick": 480,
+      "text": "m"
+    },
+    {
+      "measure": 8,
+      "tick": 960,
+      "text": "m"
+    },
+    {
+      "measure": 8,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 8,
+      "tick": 1440,
+      "text": "T"
+    },
+    {
+      "measure": 8,
+      "tick": 1680,
+      "text": "m"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 9,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 9,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 9,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 9,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 9,
+      "tick": 720,
+      "text": "m"
+    },
+    {
+      "measure": 9,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 9,
+      "tick": 1440,
+      "text": "T"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 9,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 9,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 9,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 10,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 10,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 10,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 10,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 10,
+      "tick": 720,
+      "text": "m"
+    },
+    {
+      "measure": 10,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 10,
+      "tick": 1440,
+      "text": "T"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 10,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 10,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 10,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "A: Part 2: MANDOLIN..."
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "A: Back-Up Banjo..."
+    },
+    {
+      "measure": 11,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 11,
+      "tick": 1680,
+      "text": "T"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 11,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 11,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 11,
+      "tick": 720,
+      "text": "m"
+    },
+    {
+      "measure": 11,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 11,
+      "tick": 1440,
+      "text": "m"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "A: Rhythm Banjo..."
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "A: Fretless Bass..."
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "A: Part 2: MANDOLIN..."
+    },
+    {
+      "measure": 12,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 12,
+      "tick": 1200,
+      "text": "T"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "i"
+    },
+    {
+      "measure": 12,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 12,
+      "tick": 720,
+      "text": "i"
+    },
+    {
+      "measure": 12,
+      "tick": 960,
+      "text": "m"
+    },
+    {
+      "measure": 12,
+      "tick": 1440,
+      "text": "i"
+    },
+    {
+      "measure": 12,
+      "tick": 1680,
+      "text": "m"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 13,
+      "tick": 720,
+      "text": "T"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 13,
+      "tick": 240,
+      "text": "i"
+    },
+    {
+      "measure": 13,
+      "tick": 480,
+      "text": "m"
+    },
+    {
+      "measure": 13,
+      "tick": 960,
+      "text": "m"
+    },
+    {
+      "measure": 13,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 13,
+      "tick": 1440,
+      "text": "T"
+    },
+    {
+      "measure": 13,
+      "tick": 1680,
+      "text": "m"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 14,
+      "tick": 720,
+      "text": "T"
+    },
+    {
+      "measure": 14,
+      "tick": 1440,
+      "text": "T"
+    },
+    {
+      "measure": 14,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 14,
+      "tick": 480,
+      "text": "i"
+    },
+    {
+      "measure": 14,
+      "tick": 960,
+      "text": "m"
+    },
+    {
+      "measure": 14,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 14,
+      "tick": 1680,
+      "text": "m"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 15,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 15,
+      "tick": 1680,
+      "text": "T"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 15,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 15,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 15,
+      "tick": 720,
+      "text": "m"
+    },
+    {
+      "measure": 15,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 15,
+      "tick": 1440,
+      "text": "m"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 16,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 16,
+      "tick": 1200,
+      "text": "T"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "i"
+    },
+    {
+      "measure": 16,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 16,
+      "tick": 720,
+      "text": "i"
+    },
+    {
+      "measure": 16,
+      "tick": 960,
+      "text": "m"
+    },
+    {
+      "measure": 16,
+      "tick": 1440,
+      "text": "i"
+    },
+    {
+      "measure": 16,
+      "tick": 1680,
+      "text": "m"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 720,
+      "text": "T"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 17,
+      "tick": 240,
+      "text": "i"
+    },
+    {
+      "measure": 17,
+      "tick": 480,
+      "text": "m"
+    },
+    {
+      "measure": 17,
+      "tick": 960,
+      "text": "m"
+    },
+    {
+      "measure": 17,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 17,
+      "tick": 1440,
+      "text": "T"
+    },
+    {
+      "measure": 17,
+      "tick": 1680,
+      "text": "m"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 18,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 18,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 18,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 18,
+      "tick": 720,
+      "text": "m"
+    },
+    {
+      "measure": 18,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 18,
+      "tick": 1440,
+      "text": "T"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 18,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 19,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 19,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 19,
+      "tick": 720,
+      "text": "m"
+    },
+    {
+      "measure": 19,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 19,
+      "tick": 1440,
+      "text": "i"
+    },
+    {
+      "measure": 19,
+      "tick": 1680,
+      "text": "m"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 19,
+      "tick": 960,
+      "text": "(End)..."
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 19,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 19,
+      "tick": 1440,
+      "text": "i"
+    },
+    {
+      "measure": 19,
+      "tick": 1680,
+      "text": "m"
+    },
+    {
+      "measure": 20,
+      "tick": 0,
+      "text": "A: Part 1: MANDOLIN Back-Up..."
+    },
+    {
+      "measure": 20,
+      "tick": 0,
+      "text": "A: Part 1: BANJO SOLO..."
+    },
+    {
+      "measure": 20,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 20,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 20,
+      "tick": 240,
+      "text": "i"
+    },
+    {
+      "measure": 20,
+      "tick": 480,
+      "text": "m"
+    },
+    {
+      "measure": 20,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 20,
+      "tick": 1440,
+      "text": "m"
+    },
+    {
+      "measure": 20,
+      "tick": 0,
+      "text": "A: Rhythm Banjo..."
+    },
+    {
+      "measure": 20,
+      "tick": 0,
+      "text": "A: Fretless Bass..."
+    },
+    {
+      "measure": 20,
+      "tick": 0,
+      "text": "A: Part 1: MANDOLIN Back-Up..."
+    },
+    {
+      "measure": 20,
+      "tick": 0,
+      "text": "A: Part 1: BANJO SOLO..."
+    },
+    {
+      "measure": 20,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 20,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 20,
+      "tick": 240,
+      "text": "i"
+    },
+    {
+      "measure": 20,
+      "tick": 480,
+      "text": "m"
+    },
+    {
+      "measure": 20,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 20,
+      "tick": 1440,
+      "text": "m"
+    },
+    {
+      "measure": 21,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 21,
+      "tick": 240,
+      "text": "i"
+    },
+    {
+      "measure": 21,
+      "tick": 480,
+      "text": "m"
+    },
+    {
+      "measure": 21,
+      "tick": 720,
+      "text": "T"
+    },
+    {
+      "measure": 21,
+      "tick": 960,
+      "text": "i"
+    },
+    {
+      "measure": 21,
+      "tick": 1200,
+      "text": "T"
+    },
+    {
+      "measure": 21,
+      "tick": 1440,
+      "text": "i"
+    },
+    {
+      "measure": 21,
+      "tick": 1680,
+      "text": "m"
+    },
+    {
+      "measure": 21,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 21,
+      "tick": 240,
+      "text": "i"
+    },
+    {
+      "measure": 21,
+      "tick": 480,
+      "text": "m"
+    },
+    {
+      "measure": 21,
+      "tick": 720,
+      "text": "T"
+    },
+    {
+      "measure": 21,
+      "tick": 960,
+      "text": "i"
+    },
+    {
+      "measure": 21,
+      "tick": 1200,
+      "text": "T"
+    },
+    {
+      "measure": 21,
+      "tick": 1440,
+      "text": "i"
+    },
+    {
+      "measure": 21,
+      "tick": 1680,
+      "text": "m"
+    },
+    {
+      "measure": 22,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 22,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 22,
+      "tick": 0,
+      "text": "i"
+    },
+    {
+      "measure": 22,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 22,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 22,
+      "tick": 720,
+      "text": "i"
+    },
+    {
+      "measure": 22,
+      "tick": 960,
+      "text": "m"
+    },
+    {
+      "measure": 22,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 22,
+      "tick": 1440,
+      "text": "T"
+    },
+    {
+      "measure": 22,
+      "tick": 1680,
+      "text": "i"
+    },
+    {
+      "measure": 22,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 22,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 22,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 22,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 22,
+      "tick": 0,
+      "text": "i"
+    },
+    {
+      "measure": 22,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 22,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 22,
+      "tick": 720,
+      "text": "i"
+    },
+    {
+      "measure": 22,
+      "tick": 960,
+      "text": "m"
+    },
+    {
+      "measure": 22,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 22,
+      "tick": 1440,
+      "text": "T"
+    },
+    {
+      "measure": 22,
+      "tick": 1680,
+      "text": "i"
+    },
+    {
+      "measure": 23,
+      "tick": 0,
+      "text": "i"
+    },
+    {
+      "measure": 23,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 23,
+      "tick": 480,
+      "text": "i"
+    },
+    {
+      "measure": 23,
+      "tick": 720,
+      "text": "m"
+    },
+    {
+      "measure": 23,
+      "tick": 960,
+      "text": "i"
+    },
+    {
+      "measure": 23,
+      "tick": 1440,
+      "text": "i"
+    },
+    {
+      "measure": 23,
+      "tick": 1680,
+      "text": "m"
+    },
+    {
+      "measure": 23,
+      "tick": 0,
+      "text": "i"
+    },
+    {
+      "measure": 23,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 23,
+      "tick": 480,
+      "text": "i"
+    },
+    {
+      "measure": 23,
+      "tick": 720,
+      "text": "m"
+    },
+    {
+      "measure": 23,
+      "tick": 960,
+      "text": "i"
+    },
+    {
+      "measure": 23,
+      "tick": 1440,
+      "text": "i"
+    },
+    {
+      "measure": 23,
+      "tick": 1680,
+      "text": "m"
+    },
+    {
+      "measure": 24,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 24,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 24,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 24,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 24,
+      "tick": 240,
+      "text": "i"
+    },
+    {
+      "measure": 24,
+      "tick": 480,
+      "text": "m"
+    },
+    {
+      "measure": 24,
+      "tick": 720,
+      "text": "i"
+    },
+    {
+      "measure": 24,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 24,
+      "tick": 1440,
+      "text": "m"
+    },
+    {
+      "measure": 24,
+      "tick": 1680,
+      "text": "i"
+    },
+    {
+      "measure": 24,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 24,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 24,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 24,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 24,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 24,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 24,
+      "tick": 240,
+      "text": "i"
+    },
+    {
+      "measure": 24,
+      "tick": 480,
+      "text": "m"
+    },
+    {
+      "measure": 24,
+      "tick": 720,
+      "text": "i"
+    },
+    {
+      "measure": 24,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 24,
+      "tick": 1440,
+      "text": "m"
+    },
+    {
+      "measure": 24,
+      "tick": 1680,
+      "text": "i"
+    },
+    {
+      "measure": 25,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 25,
+      "tick": 240,
+      "text": "i"
+    },
+    {
+      "measure": 25,
+      "tick": 480,
+      "text": "m"
+    },
+    {
+      "measure": 25,
+      "tick": 720,
+      "text": "T"
+    },
+    {
+      "measure": 25,
+      "tick": 960,
+      "text": "i"
+    },
+    {
+      "measure": 25,
+      "tick": 1200,
+      "text": "T"
+    },
+    {
+      "measure": 25,
+      "tick": 1440,
+      "text": "i"
+    },
+    {
+      "measure": 25,
+      "tick": 1680,
+      "text": "m"
+    },
+    {
+      "measure": 25,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 25,
+      "tick": 240,
+      "text": "i"
+    },
+    {
+      "measure": 25,
+      "tick": 480,
+      "text": "m"
+    },
+    {
+      "measure": 25,
+      "tick": 720,
+      "text": "T"
+    },
+    {
+      "measure": 25,
+      "tick": 960,
+      "text": "i"
+    },
+    {
+      "measure": 25,
+      "tick": 1200,
+      "text": "T"
+    },
+    {
+      "measure": 25,
+      "tick": 1440,
+      "text": "i"
+    },
+    {
+      "measure": 25,
+      "tick": 1680,
+      "text": "m"
+    },
+    {
+      "measure": 26,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 26,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 26,
+      "tick": 0,
+      "text": "i"
+    },
+    {
+      "measure": 26,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 26,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 26,
+      "tick": 720,
+      "text": "i"
+    },
+    {
+      "measure": 26,
+      "tick": 960,
+      "text": "m"
+    },
+    {
+      "measure": 26,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 26,
+      "tick": 1440,
+      "text": "T"
+    },
+    {
+      "measure": 26,
+      "tick": 1680,
+      "text": "i"
+    },
+    {
+      "measure": 26,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 26,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 26,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 26,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 26,
+      "tick": 0,
+      "text": "i"
+    },
+    {
+      "measure": 26,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 26,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 26,
+      "tick": 720,
+      "text": "i"
+    },
+    {
+      "measure": 26,
+      "tick": 960,
+      "text": "m"
+    },
+    {
+      "measure": 26,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 26,
+      "tick": 1440,
+      "text": "T"
+    },
+    {
+      "measure": 26,
+      "tick": 1680,
+      "text": "i"
+    },
+    {
+      "measure": 27,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 27,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 27,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 27,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 27,
+      "tick": 0,
+      "text": "m"
+    },
+    {
+      "measure": 27,
+      "tick": 240,
+      "text": "i"
+    },
+    {
+      "measure": 27,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 27,
+      "tick": 720,
+      "text": "i"
+    },
+    {
+      "measure": 27,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 27,
+      "tick": 1440,
+      "text": "i"
+    },
+    {
+      "measure": 27,
+      "tick": 1680,
+      "text": "m"
+    },
+    {
+      "measure": 27,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 27,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 27,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 27,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 27,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 27,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 27,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 27,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 27,
+      "tick": 0,
+      "text": "m"
+    },
+    {
+      "measure": 27,
+      "tick": 240,
+      "text": "i"
+    },
+    {
+      "measure": 27,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 27,
+      "tick": 720,
+      "text": "i"
+    },
+    {
+      "measure": 27,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 27,
+      "tick": 1440,
+      "text": "i"
+    },
+    {
+      "measure": 27,
+      "tick": 1680,
+      "text": "m"
+    },
+    {
+      "measure": 28,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 28,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 28,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 28,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 28,
+      "tick": 240,
+      "text": "i"
+    },
+    {
+      "measure": 28,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 28,
+      "tick": 720,
+      "text": "i"
+    },
+    {
+      "measure": 28,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 28,
+      "tick": 1440,
+      "text": "m"
+    },
+    {
+      "measure": 28,
+      "tick": 1680,
+      "text": "T"
+    },
+    {
+      "measure": 28,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 28,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 28,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 28,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 28,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 28,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 28,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 28,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 28,
+      "tick": 240,
+      "text": "i"
+    },
+    {
+      "measure": 28,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 28,
+      "tick": 720,
+      "text": "i"
+    },
+    {
+      "measure": 28,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 28,
+      "tick": 1440,
+      "text": "m"
+    },
+    {
+      "measure": 28,
+      "tick": 1680,
+      "text": "T"
+    },
+    {
+      "measure": 29,
+      "tick": 0,
+      "text": "A: Part 2: MANDOLIN Back-Up..."
+    },
+    {
+      "measure": 29,
+      "tick": 0,
+      "text": "A: Part 2: BANJO SOLO..."
+    },
+    {
+      "measure": 29,
+      "tick": 0,
+      "text": "i"
+    },
+    {
+      "measure": 29,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 29,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 29,
+      "tick": 1440,
+      "text": "i"
+    },
+    {
+      "measure": 29,
+      "tick": 1680,
+      "text": "T"
+    },
+    {
+      "measure": 29,
+      "tick": 0,
+      "text": "A: Rhythm Banjo..."
+    },
+    {
+      "measure": 29,
+      "tick": 0,
+      "text": "A: Fretless Bass..."
+    },
+    {
+      "measure": 29,
+      "tick": 0,
+      "text": "A: Part 2: MANDOLIN Back-Up..."
+    },
+    {
+      "measure": 29,
+      "tick": 0,
+      "text": "A: Part 2: MANDOLIN..."
+    },
+    {
+      "measure": 29,
+      "tick": 0,
+      "text": "i"
+    },
+    {
+      "measure": 29,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 29,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 29,
+      "tick": 1440,
+      "text": "i"
+    },
+    {
+      "measure": 29,
+      "tick": 1680,
+      "text": "T"
+    },
+    {
+      "measure": 30,
+      "tick": 0,
+      "text": "i"
+    },
+    {
+      "measure": 30,
+      "tick": 240,
+      "text": "T"
+    },
+    {
+      "measure": 30,
+      "tick": 480,
+      "text": "i"
+    },
+    {
+      "measure": 30,
+      "tick": 720,
+      "text": "T"
+    },
+    {
+      "measure": 30,
+      "tick": 960,
+      "text": "m"
+    },
+    {
+      "measure": 30,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 30,
+      "tick": 1440,
+      "text": "m"
+    },
+    {
+      "measure": 30,
+      "tick": 1680,
+      "text": "i"
+    },
+    {
+      "measure": 30,
+      "tick": 0,
+      "text": "i"
+    },
+    {
+      "measure": 30,
+      "tick": 240,
+      "text": "T"
+    },
+    {
+      "measure": 30,
+      "tick": 480,
+      "text": "i"
+    },
+    {
+      "measure": 30,
+      "tick": 720,
+      "text": "T"
+    },
+    {
+      "measure": 30,
+      "tick": 960,
+      "text": "m"
+    },
+    {
+      "measure": 30,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 30,
+      "tick": 1440,
+      "text": "m"
+    },
+    {
+      "measure": 30,
+      "tick": 1680,
+      "text": "i"
+    },
+    {
+      "measure": 31,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 31,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 31,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 31,
+      "tick": 240,
+      "text": "i"
+    },
+    {
+      "measure": 31,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 31,
+      "tick": 720,
+      "text": "i"
+    },
+    {
+      "measure": 31,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 31,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 31,
+      "tick": 1440,
+      "text": "T"
+    },
+    {
+      "measure": 31,
+      "tick": 1680,
+      "text": "i"
+    },
+    {
+      "measure": 31,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 31,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 31,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 31,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 31,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 31,
+      "tick": 240,
+      "text": "i"
+    },
+    {
+      "measure": 31,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 31,
+      "tick": 720,
+      "text": "i"
+    },
+    {
+      "measure": 31,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 31,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 31,
+      "tick": 1440,
+      "text": "T"
+    },
+    {
+      "measure": 31,
+      "tick": 1680,
+      "text": "i"
+    },
+    {
+      "measure": 32,
+      "tick": 0,
+      "text": "m"
+    },
+    {
+      "measure": 32,
+      "tick": 240,
+      "text": "T"
+    },
+    {
+      "measure": 32,
+      "tick": 480,
+      "text": "i"
+    },
+    {
+      "measure": 32,
+      "tick": 720,
+      "text": "m"
+    },
+    {
+      "measure": 32,
+      "tick": 960,
+      "text": "i"
+    },
+    {
+      "measure": 32,
+      "tick": 1440,
+      "text": "m"
+    },
+    {
+      "measure": 32,
+      "tick": 1680,
+      "text": "T"
+    },
+    {
+      "measure": 32,
+      "tick": 0,
+      "text": "m"
+    },
+    {
+      "measure": 32,
+      "tick": 240,
+      "text": "T"
+    },
+    {
+      "measure": 32,
+      "tick": 480,
+      "text": "i"
+    },
+    {
+      "measure": 32,
+      "tick": 720,
+      "text": "m"
+    },
+    {
+      "measure": 32,
+      "tick": 960,
+      "text": "i"
+    },
+    {
+      "measure": 32,
+      "tick": 1440,
+      "text": "m"
+    },
+    {
+      "measure": 32,
+      "tick": 1680,
+      "text": "T"
+    },
+    {
+      "measure": 33,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 33,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 33,
+      "tick": 0,
+      "text": "i"
+    },
+    {
+      "measure": 33,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 33,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 33,
+      "tick": 1440,
+      "text": "i"
+    },
+    {
+      "measure": 33,
+      "tick": 1680,
+      "text": "T"
+    },
+    {
+      "measure": 33,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 33,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 33,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 33,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 33,
+      "tick": 0,
+      "text": "i"
+    },
+    {
+      "measure": 33,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 33,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 33,
+      "tick": 1440,
+      "text": "i"
+    },
+    {
+      "measure": 33,
+      "tick": 1680,
+      "text": "T"
+    },
+    {
+      "measure": 34,
+      "tick": 0,
+      "text": "i"
+    },
+    {
+      "measure": 34,
+      "tick": 240,
+      "text": "T"
+    },
+    {
+      "measure": 34,
+      "tick": 480,
+      "text": "i"
+    },
+    {
+      "measure": 34,
+      "tick": 720,
+      "text": "T"
+    },
+    {
+      "measure": 34,
+      "tick": 960,
+      "text": "m"
+    },
+    {
+      "measure": 34,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 34,
+      "tick": 1440,
+      "text": "m"
+    },
+    {
+      "measure": 34,
+      "tick": 1680,
+      "text": "i"
+    },
+    {
+      "measure": 34,
+      "tick": 0,
+      "text": "i"
+    },
+    {
+      "measure": 34,
+      "tick": 240,
+      "text": "T"
+    },
+    {
+      "measure": 34,
+      "tick": 480,
+      "text": "i"
+    },
+    {
+      "measure": 34,
+      "tick": 720,
+      "text": "T"
+    },
+    {
+      "measure": 34,
+      "tick": 960,
+      "text": "m"
+    },
+    {
+      "measure": 34,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 34,
+      "tick": 1440,
+      "text": "m"
+    },
+    {
+      "measure": 34,
+      "tick": 1680,
+      "text": "i"
+    },
+    {
+      "measure": 35,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 35,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 35,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 35,
+      "tick": 240,
+      "text": "i"
+    },
+    {
+      "measure": 35,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 35,
+      "tick": 720,
+      "text": "i"
+    },
+    {
+      "measure": 35,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 35,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 35,
+      "tick": 1440,
+      "text": "T"
+    },
+    {
+      "measure": 35,
+      "tick": 1680,
+      "text": "i"
+    },
+    {
+      "measure": 35,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 35,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 35,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 35,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 35,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 35,
+      "tick": 240,
+      "text": "i"
+    },
+    {
+      "measure": 35,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 35,
+      "tick": 720,
+      "text": "i"
+    },
+    {
+      "measure": 35,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 35,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 35,
+      "tick": 1440,
+      "text": "T"
+    },
+    {
+      "measure": 35,
+      "tick": 1680,
+      "text": "i"
+    },
+    {
+      "measure": 36,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 36,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 36,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 36,
+      "tick": 1680,
+      "text": "T"
+    },
+    {
+      "measure": 36,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 36,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 36,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 36,
+      "tick": 720,
+      "text": "m"
+    },
+    {
+      "measure": 36,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 36,
+      "tick": 1440,
+      "text": "m"
+    },
+    {
+      "measure": 36,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 36,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 36,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 36,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 36,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 36,
+      "tick": 960,
+      "text": "T"
+    },
+    {
+      "measure": 36,
+      "tick": 1680,
+      "text": "T"
+    },
+    {
+      "measure": 36,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 36,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 36,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 36,
+      "tick": 720,
+      "text": "m"
+    },
+    {
+      "measure": 36,
+      "tick": 1200,
+      "text": "i"
+    },
+    {
+      "measure": 36,
+      "tick": 1440,
+      "text": "m"
+    },
+    {
+      "measure": 37,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 37,
+      "tick": 960,
+      "text": "(End)..."
+    },
+    {
+      "measure": 37,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 37,
+      "tick": 960,
+      "text": "(End)..."
+    },
+    {
+      "measure": 37,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 37,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 37,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 37,
+      "tick": 720,
+      "text": "m"
+    },
+    {
+      "measure": 37,
+      "tick": 960,
+      "text": "i"
+    },
+    {
+      "measure": 37,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 37,
+      "tick": 960,
+      "text": "(End)..."
+    },
+    {
+      "measure": 37,
+      "tick": 0,
+      "text": "(G)"
+    },
+    {
+      "measure": 37,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 37,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 37,
+      "tick": 960,
+      "text": "(End)..."
+    },
+    {
+      "measure": 37,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 37,
+      "tick": 960,
+      "text": "(End)..."
+    },
+    {
+      "measure": 37,
+      "tick": 480,
+      "text": "T"
+    },
+    {
+      "measure": 37,
+      "tick": 0,
+      "text": "T"
+    },
+    {
+      "measure": 37,
+      "tick": 240,
+      "text": "m"
+    },
+    {
+      "measure": 37,
+      "tick": 720,
+      "text": "m"
+    },
+    {
+      "measure": 37,
+      "tick": 960,
+      "text": "i"
+    }
+  ]
 }

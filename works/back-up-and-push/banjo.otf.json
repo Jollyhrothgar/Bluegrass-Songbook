@@ -1748,5 +1748,77 @@
     "download_file": "11525_tef_back_up_and_push.tef",
     "author": "schlange",
     "converted_at": "2026-08-01T11:08:42.012299"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "(Intro)"
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 3,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "B PART"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "Back to beginning . . ."
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "C"
+    }
+  ]
 }

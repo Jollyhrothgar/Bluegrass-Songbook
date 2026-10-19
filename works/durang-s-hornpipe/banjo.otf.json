@@ -4691,5 +4691,332 @@
     "download_file": "10700_tef_durang_s_hornpipe.tef",
     "author": "schlange",
     "converted_at": "2026-08-01T11:11:07.975776"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "Intro"
+    },
+    {
+      "measure": 3,
+      "tick": 0,
+      "text": "Part A1"
+    },
+    {
+      "measure": 3,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "Part A2"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "Part B1"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 20,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 21,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 22,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 23,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 24,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 25,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 26,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 27,
+      "tick": 0,
+      "text": "Part B2"
+    },
+    {
+      "measure": 27,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 28,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 29,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 30,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 31,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 32,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 33,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 34,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 35,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 35,
+      "tick": 0,
+      "text": "Part C1"
+    },
+    {
+      "measure": 35,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 36,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 36,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 37,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 37,
+      "tick": 960,
+      "text": "G#"
+    },
+    {
+      "measure": 38,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 39,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 40,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 41,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 42,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 43,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 43,
+      "tick": 0,
+      "text": "Part C2"
+    },
+    {
+      "measure": 43,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 44,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 44,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 45,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 45,
+      "tick": 960,
+      "text": "G#"
+    },
+    {
+      "measure": 46,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 47,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 48,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 49,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 50,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 51,
+      "tick": 0,
+      "text": "Ending"
+    },
+    {
+      "measure": 51,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 54,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 54,
+      "tick": 960,
+      "text": "D"
+    }
+  ]
 }

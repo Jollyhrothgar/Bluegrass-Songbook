@@ -2617,5 +2617,37 @@
     "author": "Yohansen",
     "converted_at": "2026-07-26T22:20:05.375995",
     "source_id": "23402"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 120,
+      "text": "VERSE"
+    },
+    {
+      "measure": 1,
+      "tick": 300,
+      "text": "Part 1"
+    },
+    {
+      "measure": 9,
+      "tick": 120,
+      "text": "CHORUS"
+    },
+    {
+      "measure": 17,
+      "tick": 120,
+      "text": "VERSE"
+    },
+    {
+      "measure": 17,
+      "tick": 300,
+      "text": "Part 2"
+    },
+    {
+      "measure": 25,
+      "tick": 120,
+      "text": "CHORUS"
+    }
+  ]
 }

@@ -2937,5 +2937,22 @@
     "author": "b_kamper",
     "converted_at": "2026-07-26T22:20:05.617950",
     "source_id": "24068"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 120,
+      "text": "Intro"
+    },
+    {
+      "measure": 2,
+      "tick": 120,
+      "text": "Part A"
+    },
+    {
+      "measure": 10,
+      "tick": 120,
+      "text": "Part B"
+    }
+  ]
 }

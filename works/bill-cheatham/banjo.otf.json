@@ -2203,5 +2203,157 @@
     "download_file": "11591_tef_bill_cheatham.tef",
     "author": "schlange",
     "converted_at": "2026-08-01T11:08:54.863714"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "Intro"
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "A Part"
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 9,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 10,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "B Part"
+    },
+    {
+      "measure": 11,
+      "tick": 960,
+      "text": "C"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 12,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 13,
+      "tick": 960,
+      "text": "C"
+    },
+    {
+      "measure": 14,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 15,
+      "tick": 960,
+      "text": "C"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 16,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 960,
+      "text": "C"
+    },
+    {
+      "measure": 18,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 19,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 21,
+      "tick": 0,
+      "text": "B Part (Variation)"
+    },
+    {
+      "measure": 29,
+      "tick": 0,
+      "text": "To B Part"
+    }
+  ]
 }

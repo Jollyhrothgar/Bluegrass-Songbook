@@ -2244,17 +2244,26 @@
               {
                 "s": 1,
                 "f": 4,
-                "dur": 360
+                "dur": 360,
+                "fx": [
+                  "let-ring"
+                ]
               },
               {
                 "s": 2,
                 "f": 3,
-                "dur": 360
+                "dur": 360,
+                "fx": [
+                  "let-ring"
+                ]
               },
               {
                 "s": 5,
                 "f": 0,
-                "dur": 360
+                "dur": 360,
+                "fx": [
+                  "let-ring"
+                ]
               }
             ]
           }
@@ -4002,5 +4011,102 @@
     "author": "banjoman 1",
     "converted_at": "2026-07-26T22:20:06.111411",
     "source_id": "17815"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 11,
+      "tick": 480,
+      "text": "(part b)"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 18,
+      "tick": 1440,
+      "text": "D"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 19,
+      "tick": 1440,
+      "text": "D"
+    },
+    {
+      "measure": 22,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 23,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 26,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 27,
+      "tick": 0,
+      "text": "D"
+    }
+  ]
 }

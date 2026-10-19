@@ -2614,7 +2614,10 @@
               {
                 "s": 2,
                 "f": 6,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "choke"
+                ]
               }
             ]
           },
@@ -2743,5 +2746,12 @@
     "source_file": "14699.tef",
     "converted_at": "2026-07-12T08:06:13.882674",
     "source_id": "14699"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "TablEdit by www.davehum.com"
+    }
+  ]
 }

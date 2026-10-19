@@ -2635,5 +2635,62 @@
     "download_file": "10619_tef_flop_eared_mule.tef",
     "author": "schlange",
     "converted_at": "2026-10-17T22:20:45.091534"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 3,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "G"
+    }
+  ]
 }

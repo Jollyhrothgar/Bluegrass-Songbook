@@ -1995,7 +1995,11 @@
               {
                 "s": 1,
                 "f": 2,
-                "dur": 240
+                "dur": 240,
+                "grace": {
+                  "f": 3,
+                  "kind": "hp"
+                }
               }
             ]
           },
@@ -2015,7 +2019,11 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "grace": {
+                  "f": 3,
+                  "kind": "hp"
+                }
               }
             ]
           },
@@ -2049,5 +2057,82 @@
     "author": "schlange",
     "converted_at": "2026-07-26T22:20:07.582555",
     "source_id": "10551"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 2,
+      "tick": 1440,
+      "text": "F"
+    },
+    {
+      "measure": 3,
+      "tick": 1440,
+      "text": "C"
+    },
+    {
+      "measure": 5,
+      "tick": 1440,
+      "text": "D"
+    },
+    {
+      "measure": 7,
+      "tick": 1440,
+      "text": "G"
+    },
+    {
+      "measure": 9,
+      "tick": 1440,
+      "text": "D"
+    },
+    {
+      "measure": 11,
+      "tick": 1440,
+      "text": "G"
+    },
+    {
+      "measure": 13,
+      "tick": 1440,
+      "text": "D"
+    },
+    {
+      "measure": 15,
+      "tick": 1440,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 1440,
+      "text": "D"
+    },
+    {
+      "measure": 19,
+      "tick": 1440,
+      "text": "G"
+    },
+    {
+      "measure": 21,
+      "tick": 1440,
+      "text": "C"
+    },
+    {
+      "measure": 22,
+      "tick": 1440,
+      "text": "D"
+    },
+    {
+      "measure": 23,
+      "tick": 1440,
+      "text": "G"
+    },
+    {
+      "measure": 25,
+      "tick": 0,
+      "text": "Ending Lick"
+    }
+  ]
 }

@@ -2476,5 +2476,67 @@
     "author": "banjoman 1",
     "converted_at": "2026-07-26T22:20:06.202149",
     "source_id": "21420"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 2,
+      "tick": 480,
+      "text": "G"
+    },
+    {
+      "measure": 3,
+      "tick": 480,
+      "text": "A"
+    },
+    {
+      "measure": 4,
+      "tick": 480,
+      "text": "D"
+    },
+    {
+      "measure": 6,
+      "tick": 480,
+      "text": "G"
+    },
+    {
+      "measure": 7,
+      "tick": 480,
+      "text": "A"
+    },
+    {
+      "measure": 8,
+      "tick": 480,
+      "text": "D"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 12,
+      "tick": 240,
+      "text": "A"
+    },
+    {
+      "measure": 12,
+      "tick": 1440,
+      "text": "D"
+    },
+    {
+      "measure": 16,
+      "tick": 240,
+      "text": "A"
+    },
+    {
+      "measure": 16,
+      "tick": 1440,
+      "text": "D"
+    }
+  ]
 }
