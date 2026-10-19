@@ -1868,8 +1868,10 @@ class TEFReader:
         # — e.g. 0x47 'G' (23408), 0x41 'A' (21678), 0x40 '@' (12124),
         # and whole strummed chords in 10770. Only the chord-overlay skip
         # (effect2 == 0x07) applies — and NOT when the fret byte has bit
-        # 7 set: those are real accompaniment-pattern notes (oracle-
-        # confirmed on 11514/11245 bass modules, b2=0x81/0x83 e2=0x07).
+        # 7 set: that flag means effect2 is a note ATTRIBUTE, and 0x07 is
+        # staccato (TablEdit's V2 upgrade FUN_1000459c4 moves it to V3
+        # byte 8; fix-it A15). Oracle-confirmed on 11514/11245 bass
+        # modules, b2=0x81/0x83 e2=0x07.
         note_events = [
             e for e in note_events
             if not (len(e.raw_data) > 5 and e.raw_data[5] == 0x07
