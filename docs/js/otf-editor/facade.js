@@ -964,7 +964,9 @@ export class EditingFacade {
 
     /**
      * Move a note's fret by `delta`, clamped to 0..24 — the typo fixer
-     * (`+`/`-`), not a transposition of anything else.
+     * (`+`/`-`), not a transposition of anything else. A grace note moves
+     * with it (TablEdit hangs the grace on the main note, so the interval
+     * is part of the note), clamped the same way.
      * @returns {boolean} false when there is no note or it can't move
      */
     transposeFret(pos, delta, trackId = this.trackId) {
@@ -973,7 +975,9 @@ export class EditingFacade {
         const next = Math.max(0, Math.min(24, note.f + delta));
         if (next === note.f) return false;
         return this._mutate('Transpose note', () => {
-            this._findNote(pos, trackId).note.f = next;
+            const n = this._findNote(pos, trackId).note;
+            if (n.grace) n.grace.f = Math.max(0, Math.min(GRACE_MAX_FRET, n.grace.f + next - n.f));
+            n.f = next;
             return true;
         });
     }
@@ -1003,10 +1007,15 @@ export class EditingFacade {
             if (!Number.isFinite(note.f)) return false;
             const next = note.f + delta;
             if (next < 0 || next > 24) return false;
+            if (note.grace) {
+                const g = note.grace.f + delta;
+                if (g < 0 || g > GRACE_MAX_FRET) return false;
+            }
         }
         return this._mutate('Transpose block', () => {
             for (const { note } of this.notesInRange(startAbs, endAbs, { strings, trackId })) {
                 note.f += delta;
+                if (note.grace) note.grace.f += delta;
             }
             return true;
         });
@@ -1041,11 +1050,16 @@ export class EditingFacade {
         if (pitch == null) return false;
         const fret = fretForPitch(track, target, pitch);
         if (fret == null || fret < 0 || fret > 24) return false;
+        // A grace keeps its pitch interval to the main note: same string,
+        // so it moves by the same number of frets.
+        const graceFret = note.grace ? note.grace.f + fret - note.f : null;
+        if (graceFret != null && (graceFret < 0 || graceFret > GRACE_MAX_FRET)) return false;
         return this._mutate('Move note to string', () => {
             const found = this._findNote(pos, trackId);
             const moved = clone(found.note);
             moved.s = target;
             moved.f = fret;
+            if (moved.grace) moved.grace.f = graceFret;
             found.event.notes = found.event.notes.filter(n => n !== found.note);
             found.event.notes.push(moved);
             found.event.notes.sort((a, b) => a.s - b.s);

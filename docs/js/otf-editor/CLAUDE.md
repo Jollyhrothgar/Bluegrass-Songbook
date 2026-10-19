@@ -146,8 +146,10 @@ importer-free; `effects-facade.test.js` asserts the list equals
   (`POPOVER_FX`) and carries `grace` through an in-place edit; the status
   bar shows `Fx: brush · let-ring · grace 3 hp`. Drawing is
   `renderers/tablature.js`'s job, not the editor's.
-- Known gap: `transposeFret` / `moveNoteToString` move the main note and
-  leave `grace.f` where it was.
+- **A grace follows its main note**: `+`/`-` (`transposeFret`,
+  `transposeRange` — still all-or-nothing, grace included) move it by the
+  same frets, and `moveNoteToString` keeps its interval (same string, so the
+  same fret offset), refusing when the grace would leave 0..24.
 
 ### Tracks: the name IS the id, and the order IS the lead
 

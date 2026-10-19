@@ -310,3 +310,41 @@ describe('fx and grace travel with the note', () => {
         expect(f._findNote(pos).note.fx).toEqual(['brush', 'let-ring']);
     });
 });
+
+describe('a grace note follows its main note', () => {
+    // TablEdit's grace hangs on the main note, so the interval between them
+    // is part of the note: +/- and re-stringing move the grace with it.
+    let f;
+    const pos = { measure: 1, tick: 0, string: 3 };
+    const note = (p = pos) => f._findNote(p).note;
+
+    beforeEach(() => {
+        f = new EditingFacade(banjoDoc());
+        f.insertNote({ ...pos, fret: 4 });
+        f.setGrace(pos, { f: 2, kind: 'hp' });
+        f.clearHistory();
+    });
+
+    it('moves by the same frets on + / -', () => {
+        expect(f.transposeFret(pos, 1)).toBe(true);
+        expect(note()).toMatchObject({ f: 5, grace: { f: 3, kind: 'hp' } });
+    });
+
+    it('keeps the block transpose all-or-nothing, grace included', () => {
+        f.setGrace(pos, { f: 0, kind: 'hp' });
+        expect(f.transposeRange(0, 480, -1)).toBe(false);   // grace would go to -1
+        expect(note().f).toBe(4);
+        expect(f.transposeRange(0, 480, 2)).toBe(true);
+        expect(note()).toMatchObject({ f: 6, grace: { f: 2 } });
+    });
+
+    it('keeps its pitch interval when the main note is re-strung', () => {
+        // string 3 (G3) fret 4 = B3 -> string 2 (B3) fret 0; grace G3+2 -> B3-2 invalid,
+        // so move the other way: string 4 (D3) fret 9 = B3, grace A3 -> fret 7.
+        expect(f.moveNoteToString(pos, 1)).toBe(true);
+        expect(note({ ...pos, string: 4 })).toMatchObject({ f: 9, grace: { f: 7 } });
+        // and refuses when the grace would fall below the nut
+        expect(f.moveNoteToString({ ...pos, string: 4 }, -1)).toBe(true);
+        expect(f.moveNoteToString(pos, -1)).toBe(false);    // B3 f0, grace would be -2
+    });
+});
