@@ -31,7 +31,10 @@
 //                                       here, live on every cursor move
 
 import { DURATIONS, DOTTED_DURATIONS, EditorMode } from './state.js';
-import { keyFor, prettyKeys, getPreset, onPresetChange } from './bindings.js';
+import {
+    ACTIONS, FX_ACTIONS, keyFor, prettyKeys, getPreset, onPresetChange,
+} from './bindings.js';
+import { FX_ORDER } from './facade.js';
 
 /**
  * Duration button configuration
@@ -63,20 +66,59 @@ const GRID_BUTTONS = [
  * Articulation button configuration.
  *
  * `~` as a "technique" is gone: a tie is `tie: true` on the continuation
- * note, and `tech: '~'` was never rendered or played. Tie / dead / choke
- * / clear go through the binding actions (so they are one undo step and
- * behave exactly as the keys do); h / p / slide still ARM for the next
+ * note, and `tech: '~'` was never rendered or played. Tie / dead /
+ * bend / the fx effects / clear go through the binding actions (so they
+ * are one undo step and behave exactly as the keys do); h / p / slide
+ * still ARM for the next
  * note when the cursor is on empty space, which is the mouse user's only
  * way to say "the next one is hammered".
  */
+/**
+ * TablEdit's note effects (`fx`, a SET on the note — DESIGN.md
+ * "interface Note"), one button config per value in the facade's
+ * FX_ORDER. The label is the action's own, so the menu, the palette and
+ * the popover can never name one effect two ways.
+ */
+const FX_SYMBOLS = {
+    brush: '⇅',
+    roll: '≀',
+    choke: 'ch',
+    ghost: '( )',
+    staccato: '·',
+    'let-ring': 'LR',
+    muted: 'PM',
+    harmonic: '◇',
+    'artificial-harmonic': 'AH',
+    tap: 'T',
+    vibrato: '∿',
+    tremolo: '≡',
+    'bend-release': 'BR',
+    slap: 'S',
+};
+
+export const FX_BUTTONS = FX_ORDER.map(fx => ({
+    fx,
+    symbol: FX_SYMBOLS[fx] || fx,
+    label: ACTIONS[FX_ACTIONS[fx]].label,
+    action: FX_ACTIONS[fx],
+}));
+
+/**
+ * The effects that get a PALETTE button: the ones TablEdit has a hotkey
+ * for (B R C G /). The rest are Note ▸ Effects and the popover's row —
+ * TablEdit reaches them through a dialog too.
+ */
+const PALETTE_FX = ['brush', 'roll', 'choke', 'ghost', 'staccato'];
+
 export const ARTICULATION_BUTTONS = [
     { tech: 'h', symbol: 'h', label: 'Hammer-on', action: 'effect.hammer' },
     { tech: 'p', symbol: 'p', label: 'Pull-off', action: 'effect.pull' },
     { tech: '/', symbol: '/', label: 'Slide', action: 'effect.slide' },
-    { tech: 'x', symbol: 'x', label: 'Dead / muted note', action: 'effect.dead' },
-    { tech: 'b', symbol: 'b', label: 'Choke / bend', action: 'effect.choke' },
+    { tech: 'x', symbol: 'x', label: 'Dead note', action: 'effect.dead' },
+    { tech: 'b', symbol: 'b', label: 'Bend target', action: 'effect.bend' },
+    ...FX_BUTTONS.filter(cfg => PALETTE_FX.includes(cfg.fx)),
     { tie: true, symbol: '⌒', label: 'Tie to the previous note', action: 'effect.tie' },
-    { clear: true, symbol: '∅', label: 'Clear the effect', action: 'effect.clear' },
+    { clear: true, symbol: '∅', label: 'Clear the effects', action: 'effect.clear' },
 ];
 
 /**
@@ -708,7 +750,9 @@ export class EditorToolbar {
             dispatch();
             return;
         }
-        if (config.tie) {
+        // Tie needs a real predecessor; an fx has no "armed for the next
+        // note" state (only techs do) — both always go to the action.
+        if (config.tie || config.fx) {
             dispatch();
             return;
         }
@@ -959,11 +1003,16 @@ export class EditorToolbar {
         this.tripletButton?.classList.toggle('reflects-note',
             dur === DURATIONS.tripletEighth);
 
-        for (const [key, button] of this.articulationButtons) {
+        for (const config of ARTICULATION_BUTTONS) {
+            const button = this.articulationButtons.get(config.tech || config.action);
+            if (!button) continue;
             let on = false;
-            if (key === 'effect.tie') on = note?.tie === true;
-            else if (key === 'effect.clear') on = !!note && !note.tech && note.tie !== true;
-            else on = !!note && note.tech === key;
+            if (config.tie) on = note?.tie === true;
+            else if (config.clear) {
+                on = !!note && !note.tech && note.tie !== true
+                    && !note.fx?.length && note.grace == null;
+            } else if (config.fx) on = !!note?.fx?.includes(config.fx);
+            else on = !!note && note.tech === config.tech;
             button.classList.toggle('reflects-note', on);
         }
     }

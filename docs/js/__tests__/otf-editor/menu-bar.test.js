@@ -890,7 +890,9 @@ describe('EditorToolbar — the palettes reflect the note under the cursor', () 
         expect(toolbar.articulationButtons.has('~')).toBe(false);
         const symbols = [...toolbar.element.querySelectorAll('.articulation-button')]
             .map(b => b.textContent);
-        expect(symbols).toEqual(['h', 'p', '/', 'x', 'b', '⌒', '∅']);
+        // h p / x b are techniques; ⇅ ≀ ch ( ) · are TablEdit's keyed
+        // effects (brush roll choke ghost staccato — `fx`)
+        expect(symbols).toEqual(['h', 'p', '/', 'x', 'b', '⇅', '≀', 'ch', '( )', '·', '⌒', '∅']);
     });
 });
 

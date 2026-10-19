@@ -111,6 +111,83 @@ function assertLeftHand(digit) {
     return digit;
 }
 
+// ----------------------------------------------------------------------
+// TablEdit's note effects and grace notes — DESIGN.md "interface Note".
+//
+// Like the fingering alphabets, these are the TEF importer's vocabulary
+// (`docs/js/tef-import/otf.js` FX_ORDER / GRACE_KINDS, decoded from
+// TablEdit's own note model), not ours. The facade keeps its OWN copy so
+// it stays importer-free; `effects-facade.test.js` asserts the two lists
+// are identical.
+//
+//   fx     a SET of effects, stored in FX_ORDER, omitted when empty
+//          (never `[]`). `tech` keeps the transitions (h p / \ x b);
+//          `fx` is everything else — a note may be brush AND let-ring.
+//   grace  `{f, kind?}` — a quick note on the same string, fret `f`,
+//          played just before this one; `kind` is how it connects
+//          (absent = a plain grace note). It has no tick of its own.
+// ----------------------------------------------------------------------
+
+/** The effects, in the one order a note stores them. */
+export const FX_ORDER = ['brush', 'roll', 'choke', 'ghost', 'staccato', 'let-ring',
+    'muted', 'harmonic', 'artificial-harmonic', 'tap', 'vibrato', 'tremolo',
+    'bend-release', 'slap'];
+
+/** How a grace note connects to its main note (absent = plain). */
+export const GRACE_KINDS = ['hp', 'slide', 'bend', 'mordent', 'double', 'gruppetto', 'trill'];
+
+/** The highest fret a grace note may take — the same neck as a note. */
+export const GRACE_MAX_FRET = 24;
+
+function assertFx(fx) {
+    if (!FX_ORDER.includes(fx)) {
+        throw new RangeError(
+            `Unknown effect '${fx}' (expected one of ${FX_ORDER.join(' ')})`);
+    }
+    return fx;
+}
+
+/**
+ * Is this a grace value the document may hold? `{f: 0..24}` with an
+ * optional kind from GRACE_KINDS (null/undefined = plain).
+ */
+export function isGrace(grace) {
+    if (!grace || typeof grace !== 'object') return false;
+    if (!Number.isInteger(grace.f) || grace.f < 0 || grace.f > GRACE_MAX_FRET) return false;
+    return grace.kind == null || GRACE_KINDS.includes(grace.kind);
+}
+
+/** Validate and normalise a grace (null clears); throws otherwise. */
+function assertGrace(grace) {
+    if (grace == null) return null;
+    if (!isGrace(grace)) {
+        throw new RangeError(
+            `Invalid grace note ${JSON.stringify(grace)} (expected {f: 0..${GRACE_MAX_FRET}`
+            + `, kind?: ${GRACE_KINDS.join('|')}})`);
+    }
+    return grace.kind ? { f: grace.f, kind: grace.kind } : { f: grace.f };
+}
+
+/**
+ * Turn one effect on or off on a note, keeping the set canonical.
+ * @param {Object} note
+ * @param {string} fx
+ * @param {boolean|'toggle'} on
+ * @returns {boolean} whether the note changed
+ */
+function writeFx(note, fx, on) {
+    const had = Array.isArray(note.fx) && note.fx.includes(fx);
+    const want = on === 'toggle' ? !had : !!on;
+    if (want === had) return false;
+    const set = new Set(note.fx || []);
+    if (want) set.add(fx);
+    else set.delete(fx);
+    const next = FX_ORDER.filter(x => set.has(x));
+    if (next.length) note.fx = next;
+    else delete note.fx;
+    return true;
+}
+
 /**
  * Clean a typed track name into something safe to be a track id.
  *
@@ -1422,6 +1499,86 @@ export class EditingFacade {
                 }
                 return changed;
             });
+    }
+
+    // ------------------------------------------------------------------
+    // Effects (`fx`) and grace notes — TablEdit's note model
+    //
+    // Same contract as the fingering ops: the vocabulary is validated
+    // (throw), a no-op refuses (false, no history), and a range is one
+    // undo step. `fx` is written through `writeFx`, so the set is always
+    // in FX_ORDER and an emptied set loses its key.
+    // ------------------------------------------------------------------
+
+    /**
+     * Turn one effect on or off on one note.
+     * @param {Object} pos - {measure, tick, string}
+     * @param {string} fx - one of FX_ORDER
+     * @param {boolean|'toggle'} [on=true]
+     * @throws {RangeError} on an effect outside FX_ORDER
+     * @returns {boolean} false when there is no note, or nothing changed
+     */
+    setEffect(pos, fx, on = true, trackId = this.trackId) {
+        assertFx(fx);
+        return this._mutate(on === false ? 'Remove effect' : 'Set effect', () => {
+            const { note } = this._findNote(pos, trackId);
+            if (!note) return false;
+            return writeFx(note, fx, on);
+        });
+    }
+
+    /** Flip one effect on one note. @returns {boolean} false when no note */
+    toggleEffect(pos, fx, trackId = this.trackId) {
+        return this.setEffect(pos, fx, 'toggle', trackId);
+    }
+
+    /**
+     * setEffect over a tick range — one undo step for the phrase.
+     *
+     * `on: 'toggle'` is the selection rule a key press means: when EVERY
+     * note in range already carries the effect it comes off them all,
+     * otherwise it goes on them all (a half-marked phrase becomes fully
+     * marked, never half-flipped).
+     *
+     * @returns {boolean} false when no note in range changed
+     */
+    setRangeEffect(startAbs, endAbs, fx, on = true, { strings = null, trackId = this.trackId } = {}) {
+        assertFx(fx);
+        const hits = this.notesInRange(startAbs, endAbs, { strings, trackId });
+        let want = on;
+        if (on === 'toggle') {
+            want = !(hits.length && hits.every(({ note }) => note.fx?.includes(fx)));
+        }
+        return this._mutate(want ? 'Set effect' : 'Remove effect', () => {
+            let changed = false;
+            for (const { note } of this.notesInRange(startAbs, endAbs, { strings, trackId })) {
+                if (writeFx(note, fx, want)) changed = true;
+            }
+            return changed;
+        });
+    }
+
+    /**
+     * Set (or clear with null) the grace note hung on one note.
+     * @param {Object} pos - {measure, tick, string}
+     * @param {{f: number, kind?: string}|null} grace
+     * @throws {RangeError} on a fret outside 0..24 or an unknown kind
+     * @returns {boolean} false when there is no note, or it already reads that
+     */
+    setGrace(pos, grace, trackId = this.trackId) {
+        const next = assertGrace(grace);
+        return this._mutate(next ? 'Set grace note' : 'Remove grace note', () => {
+            const { note } = this._findNote(pos, trackId);
+            if (!note) return false;
+            const cur = note.grace || null;
+            if (!cur && !next) return false;
+            if (cur && next && cur.f === next.f && (cur.kind ?? null) === (next.kind ?? null)) {
+                return false;
+            }
+            if (next) note.grace = next;
+            else delete note.grace;
+            return true;
+        });
     }
 
     // ------------------------------------------------------------------
