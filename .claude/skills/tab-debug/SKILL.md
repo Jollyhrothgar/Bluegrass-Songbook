@@ -92,9 +92,12 @@ Bytes 0-1: location, u16 little-endian. reader.py derives all three of
            position_in_measure = location % ts_size
            cumulative_string   = (location // ts_size) % num_strings
            measure             = location // (ts_size * num_strings)
-Byte 2:    fret byte. fret = (byte2 & 0x1f) - 1. Bit 5 means "effect2 holds
-           an annotation" (NOT a fret extension). Bit 7 (0x80) is the chord-
-           overlay guard used alongside effect2 == 0x07.
+Byte 2:    fret byte. fret = (byte2 & 0x1f) - 1. Flags (byte2 & 0xe0) say
+           what effect2 holds: 0x20 fingering, 0x40 grace note (effect2 =
+           grace fret bits 0-4 + kind bits 5-7), 0x80 note attribute
+           (staccato 0x07, ringing 0x01, ghost 0x04, ...). NOT a fret
+           extension. Fret field 0x1b-0x1f / bare 0x1a = special
+           component (text 0x1d, rest 0x1a, chord diagram 0x1c, ...).
 Byte 3:    duration byte: bits 0-4 duration code, bits 5-7 dynamic.
            When 0x40 <= byte3 <= 0x5A it also reads as the marker CHARACTER
            ('I', 'F', 'L', 'K', ...). Dynamic 7 is the tie sentinel.
@@ -190,6 +193,39 @@ All of the above oracle-verified against TablEdit's own MusicXML export
 (`<words>`, `<pluck>`, `<fingering>`, `<harmony>`): 35/35 text placements and
 37/37 fingerings match on Welcome to New York.
 
+### TablEdit's own names (2026-10, fix-it A15)
+
+Read from TablEdit 3.06 with REA/Ghidra. Prefer these over guessing from
+byte patterns. The census that counts them is
+`spike/tabledit_export/feature_census.py`, and the full survey is
+`docs/plans/2026-10-18-tef-feature-survey.md`.
+
+- **Note effect** = V3 byte 6 `& 0x0f` = V2 effect1 `& 0x0f` (string table at
+  0x1000f57e0): 0 none, 1 hammer-on, 2 pull-off, 3 slide, 4 choke, 5 brush,
+  6 natural harmonic, 7 artificial harmonic, 8 muted, 9 tapping, 10 vibrato,
+  11 tremolo, 12 bend, 13 bend and release, 14 roll, 15 dead note. Bits 4-5
+  are the voice (0x20 upper, 0x30 lower). Bits 6-7 are the enharmonic
+  spelling.
+- **Dynamics** (byte 5 / V2 byte 3, bits 5-7): ppp, pp, p, mp, mf, f, ff,
+  and 7 = tie.
+- **Note attribute** (V3 byte 8; V2 effect2 under fret flag 0x80): the low
+  nibble is 1 ringing, 2 slap, 3 rasgueado, 4 ghost, 5/6 tremolo bar,
+  7 staccato, 8/9 fade. The high nibble is a second effect (1 h, 2 p,
+  3 roll, 5 brush, 6/7 harmonic, 8 ringing, 9 ghost, 10 dead).
+- **Grace**: V3 type bit 0x40 / V2 fret flag 0x40 on the MAIN note. The
+  grace's fret is in bits 0-4 of V3 byte 7 / V2 effect2, and its kind in
+  bits 5-7 (1 hammer/pull, 2 slide, 3 bend, 4 mordent, ...).
+- **Special types** (full byte, table at 0x1000f3cbc): 0x33 rest, 0x35 chord
+  diagram, 0x36 line break, 0x37 accent, 0x38 crescendo, 0x39 text,
+  0x3d slur/bracket, 0x3e stroke/fingering, 0x75 scale diagram,
+  0x78 percussion, 0x7e MIDI patch, 0xb7 reading guide (repeat barlines:
+  flag 0x40 start, 0x80 end), 0xfe tempo change, 0xf5 special character.
+- **V2 → V3** (the V2 upgrade FUN_1000459c4) maps by the whole fret byte:
+  0x1d text, 0x3d slur, 0x5d special char, 0x7d spacing, 0x9d line break,
+  0xdd musical sign, 0x1e accent, 0x3e stroke/fingering, 0x5e reading
+  guide, 0xde percussion, 0x9e crescendo, 0x1a rest, 0x1c/0x5c/0x9c chord
+  diagram.
+
 ### Marker Types (V2 byte 3)
 
 ⚠️ Byte 3 is really the **duration byte** (bits 0-4 duration code, bits 5-7
@@ -226,7 +262,7 @@ useful for triage, but never derive duration, dynamics or ties from the
 
 | Value | Meaning |
 |-------|---------|
-| 0x07 | Chord overlay - **SKIP this note** |
+| 0x07 | With fret flag 0x00: chord overlay - **SKIP this note**. With flag 0x80 it is staccato (keep). |
 
 ### Tie Detection
 

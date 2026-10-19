@@ -379,8 +379,9 @@ export function parseV2(data, name) {
     let { events: noteEvents, tsChanges } = parseNoteEventsV2(data, header, instruments);
     let timeSignatureChanges = tsChanges;
 
-    // effect2 == 0x07 chord-overlay filter — but keep real accompaniment
-    // notes whose fret byte has bit 7 set (11514/11245 bass modules).
+    // effect2 == 0x07 chord-overlay filter — but keep notes whose fret byte
+    // has bit 7 set: there effect2 is a note attribute and 0x07 is staccato
+    // (TablEdit's V2 upgrade; fix-it A15; 11514/11245 bass modules).
     noteEvents = noteEvents.filter(e =>
         !(e.raw.length > 5 && e.raw[5] === 0x07 && !(e.raw[2] & 0x80)));
 

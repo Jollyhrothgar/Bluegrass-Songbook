@@ -52,6 +52,7 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | A12 | TEF import: 99 tabs parse empty, V3 32nds on phantom strings | S | `bug/tef-v3-routing` | done (#277): fixed + 98 tabs imported |
 | A13 | TEF import: remaining mismatches vs TablEdit's loader | M | `bug/tef-v3-routing` | done (#277): 7 fixed; 4 open + 3 follow-ups, see below |
 | A14 | TEF import: whole-corpus check against TablEdit's own MusicXML | M | `bug/tef-v3-routing` | done (#277): 4 fixed; 548/592 files exact, residue listed below |
+| A15 | TEF feature survey: what TablEdit files hold that never reaches the reader | M | `feature/tef-feature-survey` | survey done (2026-10-18); 9 follow-ups proposed, none started |
 | B1 | Collection thumbnails 5.35 MB → ~50 KB | S | `feature/perf-thumbnails` (+ render gating in `feature/perf-boot-data`) | done — #274 (2026-10-01) |
 | B2 | Archive loads on every page | M | `feature/perf-boot-data` | done — #274 (2026-10-01) |
 | B3 | First render waits on Supabase, no timeout | M | `feature/perf-boot-data` | done — #274 (2026-10-01) |
@@ -836,6 +837,33 @@ Residue, 107 notes in 43 files:
   names.
 
 ---
+
+### A15 — TEF feature survey: what TablEdit files hold that never reaches the reader · M · verified: TablEdit binary + census of all 592 corpus files
+
+2026-10-18. A12-A14 asked whether the notes we import are right; this asks
+which TablEdit features the corpus uses that we drop. Full matrix, method
+and corrections: `docs/plans/2026-10-18-tef-feature-survey.md`. The
+TablEdit export harness now lives in `spike/tabledit_export/` (export,
+note-for-note compare, byte-level census); exports stay out of git.
+
+Biggest gaps, by published tabs (458 of the 592 corpus files are published):
+
+- **V2 free text** — 22,330 items in 237 published tabs, mostly chord names
+  over the tab; only V3 text (64 files) is imported, and the renderer already
+  draws `annotations`.
+- **Brush/strum** — 20,199 notes, 174 published tabs; no OTF field.
+- **V2 dead notes** — 20,029 notes, 65 published tabs import as ringing
+  notes; `tech: 'x'` already renders and plays (V3 is done).
+- Ringing 77 tabs, grace notes 54 (the grace itself is lost), choke 50,
+  chord diagrams 46, roll 37, staccato 35, ghost 23; dynamics vary in 200.
+- Site side: eighth/quarter triplets never get a bracket (the detector only
+  matches 16th-triplet spacing); hammer-ons/pull-offs play as fresh picks;
+  editing repeats drops `reading_list` section names; whether `capo` should
+  shift playback is unresolved.
+
+Corrections: V2 fret-byte flag 0x80 means "effect2 is a note attribute"
+(staccato, ringing, ghost…), not accompaniment notes; effect2 0x07 is
+staccato under that flag. Proposed order is in the survey doc, §5.
 
 ## B. Speed
 
