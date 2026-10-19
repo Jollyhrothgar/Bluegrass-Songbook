@@ -214,6 +214,270 @@ export function bendWaypoints(semitones, noteDurSec) {
     ];
 }
 
+// ---------------------------------------------------------------------------
+// TablEdit note effects (`note.fx`) and grace notes (`note.grace`), fix-it A15.
+// The format is docs/js/otf-editor/DESIGN.md "interface Note". Every helper
+// below is pure; play() only collects, calls them, and queues the result.
+// ---------------------------------------------------------------------------
+
+// brush: a strummed chord. The stroke crosses the strings low (highest s) to
+// high: ~15ms a string, never more than ~70ms for the whole chord.
+export const BRUSH_STEP_SEC = 0.015;
+export const BRUSH_MAX_SEC = 0.07;
+// roll: an arpeggiated chord — audibly one string at a time.
+export const ROLL_STEP_SEC = 0.05;
+export const ROLL_MAX_SEC = 0.25;
+// staccato: TablEdit halves the playback duration.
+export const STACCATO_FACTOR = 0.5;
+// ghost: a barely-there note.
+export const GHOST_GAIN = 0.4;
+// let-ring: ring until the next note on the same string, but not forever.
+export const LET_RING_MAX_SEC = 4;
+// muted (palm mute): pitched, damped, a little softer. Not tech 'x' (the
+// pitchless dead-note chop, 0.09s at 0.55x).
+export const MUTED_SEC = 0.13;
+export const MUTED_GAIN = 0.7;
+// choke: attack, bend up a semitone quickly, then stopped.
+export const CHOKE_SEMITONES = 1;
+export const CHOKE_RISE_SEC = 0.08;
+export const CHOKE_MAX_SEC = 0.3;
+// harmonics: a touch softer, and they ring a little longer.
+export const HARMONIC_GAIN = 0.85;
+export const HARMONIC_RING_FACTOR = 1.5;
+// slap: slightly accented.
+export const SLAP_GAIN = 1.15;
+// vibrato: ±a quarter semitone at ~5.5 Hz.
+export const VIBRATO_DEPTH = 0.25;
+export const VIBRATO_HZ = 5.5;
+// bend-release: a whole step up and back.
+export const BEND_RELEASE_SEMITONES = 2;
+// tremolo: re-picked every 1/32 note; the repeats slightly quieter.
+export const TREMOLO_REPEAT_GAIN = 0.8;
+const TREMOLO_MAX_ATTACKS = 128;
+// grace: sounds a 1/32 note (or this, if shorter) before the main note.
+export const GRACE_MAX_LEAD_SEC = 0.045;
+export const GRACE_GAIN = 0.8;
+const LEGATO_GRACE_KINDS = new Set(['hp', 'slide']);
+
+// Natural harmonic nodes: fret -> semitones above the OPEN string.
+const HARMONIC_NODES = { 12: 12, 7: 19, 19: 19, 5: 24, 24: 24, 4: 28, 9: 28, 16: 28, 3: 31 };
+
+const hasFx = (fx, name) => !!fx && fx.includes(name);
+
+/**
+ * Sounding pitch of a natural harmonic touched at `fret`. Off the nodes it
+ * falls back to the fretted pitch an octave up. Pure.
+ */
+export function harmonicPitch(openMidi, fret) {
+    const node = HARMONIC_NODES[fret];
+    return openMidi + (node ?? fret + 12);
+}
+
+/**
+ * The pitch a note sounds: fretted, or its harmonic (`harmonic` from the
+ * node table; `artificial-harmonic` is the fretted pitch +12). Pure.
+ */
+export function soundingMidi(openMidi, fret, fx) {
+    if (hasFx(fx, 'harmonic')) return harmonicPitch(openMidi, fret);
+    if (hasFx(fx, 'artificial-harmonic')) return openMidi + fret + 12;
+    return openMidi + fret;
+}
+
+/** Vibrato waypoints (WebAudioFont `slides`): a ±VIBRATO_DEPTH triangle at
+ *  VIBRATO_HZ through the whole note. Pure. */
+export function vibratoWaypoints(noteDurSec) {
+    const quarter = 1 / VIBRATO_HZ / 4;
+    const shape = [0, VIBRATO_DEPTH, 0, -VIBRATO_DEPTH];
+    const wp = [];
+    for (let k = 0; k * quarter <= noteDurSec; k++) {
+        wp.push({ delta: shape[k % 4], when: k * quarter });
+    }
+    return wp;
+}
+
+/** Bend-release: up a whole step over the first third, hold, back down over
+ *  the last third. Pure. */
+export function bendReleaseWaypoints(noteDurSec) {
+    return [
+        { delta: 0, when: 0 },
+        { delta: BEND_RELEASE_SEMITONES, when: noteDurSec / 3 },
+        { delta: BEND_RELEASE_SEMITONES, when: noteDurSec * 2 / 3 },
+        { delta: 0, when: noteDurSec },
+    ];
+}
+
+/** Choke: a quick semitone bend (the stop is the shortened duration). Pure. */
+export function chokeWaypoints(noteDurSec) {
+    return [
+        { delta: 0, when: 0 },
+        { delta: CHOKE_SEMITONES, when: Math.min(CHOKE_RISE_SEC, noteDurSec * 0.4) },
+    ];
+}
+
+/**
+ * Attack offsets (seconds) for a strummed chord column, by string: the stroke
+ * starts on the lowest string (highest s) AT the written tick and crosses to
+ * the highest. `kind` is 'brush' or 'roll'. Pure.
+ */
+export function strumOffsets(strings, kind) {
+    const order = [...new Set(strings)].sort((a, b) => b - a);
+    const [step, max] = kind === 'roll'
+        ? [ROLL_STEP_SEC, ROLL_MAX_SEC] : [BRUSH_STEP_SEC, BRUSH_MAX_SEC];
+    const gap = order.length > 1 ? Math.min(step, max / (order.length - 1)) : 0;
+    const out = {};
+    order.forEach((s, i) => { out[s] = i * gap; });
+    return out;
+}
+
+/**
+ * Tremolo: one attack every `stepSec` across the note; repeats a little
+ * quieter, the last one trimmed to the note's end. Pure.
+ */
+export function tremoloAttacks(noteDurSec, stepSec) {
+    const out = [];
+    for (let k = 0; k < TREMOLO_MAX_ATTACKS; k++) {
+        const offset = k * stepSec;
+        if (offset >= noteDurSec - 1e-9) break;
+        out.push({
+            offset,
+            duration: Math.min(stepSec, noteDurSec - offset),
+            gain: k === 0 ? 1 : TREMOLO_REPEAT_GAIN,
+        });
+    }
+    return out;
+}
+
+/** How far ahead of its main note a grace note sounds: a 1/32 note, or
+ *  GRACE_MAX_LEAD_SEC if that is shorter. Pure. */
+export function graceLeadSeconds(secondsPerTick, ticksPerBeat) {
+    return Math.min(ticksPerBeat / 8 * secondsPerTick, GRACE_MAX_LEAD_SEC);
+}
+
+/**
+ * Apply the duration/volume fx to a note whose ring-model or explicit
+ * duration is already computed. Order matters and is deliberate: let-ring
+ * sets the length first, so a damping effect (muted, staccato, choke) still
+ * wins over it, and the gains multiply. Notes without fx pass through. Pure.
+ *
+ * @param {string[]|undefined} fx
+ * @param {{duration:number, volume:number, stringGap:number, sustain:number}} n
+ *   stringGap = seconds to the next attack on this string (Infinity if none)
+ */
+export function fxDurationVolume(fx, { duration, volume, stringGap, sustain }) {
+    if (!fx || fx.length === 0) return { duration, volume };
+    if (hasFx(fx, 'let-ring')) {
+        duration = Math.min(stringGap, LET_RING_MAX_SEC) * sustain;
+    } else if (hasFx(fx, 'harmonic') || hasFx(fx, 'artificial-harmonic')) {
+        duration = Math.min(duration * HARMONIC_RING_FACTOR, stringGap);
+    }
+    if (hasFx(fx, 'harmonic') || hasFx(fx, 'artificial-harmonic')) volume *= HARMONIC_GAIN;
+    if (hasFx(fx, 'muted')) {
+        duration = Math.min(duration, MUTED_SEC);
+        volume *= MUTED_GAIN;
+    }
+    if (hasFx(fx, 'choke')) duration = Math.min(duration, CHOKE_MAX_SEC);
+    if (hasFx(fx, 'staccato')) duration *= STACCATO_FACTOR;
+    if (hasFx(fx, 'ghost')) volume *= GHOST_GAIN;
+    if (hasFx(fx, 'slap')) volume *= SLAP_GAIN;
+    return { duration, volume };
+}
+
+/**
+ * Brush/roll: give every strummed note in a chord column (same track, same
+ * tick) its stroke offset, shortening it by that much so it still stops where
+ * it would have (a re-attack on its string). Mutates `notes`; returns nothing.
+ */
+export function applyStrumOffsets(notes) {
+    const columns = new Map();
+    for (const n of notes) {
+        if (!hasFx(n.fx, 'brush') && !hasFx(n.fx, 'roll')) continue;
+        const key = `${n.trackId}@${n.absTick}`;
+        if (!columns.has(key)) columns.set(key, []);
+        columns.get(key).push(n);
+    }
+    for (const col of columns.values()) {
+        const kind = col.some(n => hasFx(n.fx, 'roll')) ? 'roll' : 'brush';
+        const off = strumOffsets(col.map(n => n.string), kind);
+        for (const n of col) {
+            const o = off[n.string];
+            if (!o) continue;
+            n.strumOffsetSec = o;
+            n.duration = Math.max(0.03, n.duration - o);
+        }
+    }
+}
+
+/** Pitch waypoints for a single picked note (no grace): legato legs win,
+ *  then bend-release, choke, the tech-b bend, vibrato. Pure. */
+function pitchWaypoints(note, secondsPerTick) {
+    if (note.legs) {
+        return legatoWaypoints(note.midi, legSeconds(note, secondsPerTick, 0), note.duration);
+    }
+    if (hasFx(note.fx, 'bend-release')) return bendReleaseWaypoints(note.duration);
+    if (hasFx(note.fx, 'choke')) return chokeWaypoints(note.duration);
+    // Choke (tech b): the note attacks, then its pitch bends up a quarter tone.
+    if (note.bend) return bendWaypoints(BEND_SEMITONES, note.duration);
+    if (hasFx(note.fx, 'vibrato')) return vibratoWaypoints(note.duration);
+    return undefined;
+}
+
+function legSeconds(note, secondsPerTick, offsetSec) {
+    return (note.legs || []).map(leg => ({
+        ...leg,
+        atSec: Math.max(0, (leg.atTick - note.absTick) * secondsPerTick) + offsetSec,
+    }));
+}
+
+/**
+ * Everything one scheduled note actually sounds, as attacks relative to the
+ * note's written onset: [{offset (s), midi, duration, volume, slides}].
+ * A plain note is exactly one attack at offset 0 with its legato/bend
+ * waypoints — what play() queued before fx existed. Pure.
+ *
+ * - strumOffsetSec (brush/roll) shifts every attack
+ * - tremolo re-picks every 1/32 (`thirtySecondSec`)
+ * - grace kind 'hp'/'slide': ONE pick from the grace pitch, stepping or
+ *   gliding into the main pitch at the main onset (the main note is not
+ *   attacked again); any other kind (or none): a short separate attack
+ *
+ * @param {Object} note - scheduled note (midi, duration, volume, absTick,
+ *   fx?, legs?, bend?, grace? {midi, kind?}, strumOffsetSec?)
+ * @param {{secondsPerTick:number, thirtySecondSec:number}} o
+ */
+export function noteAttacks(note, { secondsPerTick, thirtySecondSec }) {
+    const base = note.strumOffsetSec || 0;
+    const attacks = [];
+    const tremolo = hasFx(note.fx, 'tremolo');
+    const grace = note.grace;
+    const lead = grace ? Math.min(thirtySecondSec, GRACE_MAX_LEAD_SEC) : 0;
+    const legatoGrace = grace && LEGATO_GRACE_KINDS.has(grace.kind) && !tremolo;
+
+    if (grace && legatoGrace) {
+        const duration = note.duration + lead;
+        const legs = [{ toMidi: note.midi, atSec: lead, glide: grace.kind === 'slide' },
+            ...legSeconds(note, secondsPerTick, lead)];
+        attacks.push({
+            offset: base - lead, midi: grace.midi, duration, volume: note.volume,
+            slides: legatoWaypoints(grace.midi, legs, duration),
+        });
+        return attacks;
+    }
+    if (grace) {
+        attacks.push({ offset: base - lead, midi: grace.midi, duration: lead,
+            volume: note.volume * GRACE_GAIN, slides: undefined });
+    }
+    if (tremolo) {
+        for (const t of tremoloAttacks(note.duration, thirtySecondSec)) {
+            attacks.push({ offset: base + t.offset, midi: note.midi, duration: t.duration,
+                volume: note.volume * t.gain, slides: undefined });
+        }
+        return attacks;
+    }
+    attacks.push({ offset: base, midi: note.midi, duration: note.duration,
+        volume: note.volume, slides: pitchWaypoints(note, secondsPerTick) });
+    return attacks;
+}
+
 export function effectiveDurationSeconds(note, stringGap, rhythmicGap) {
     let duration;
     if (note.explicitDurSec != null) {
@@ -622,7 +886,9 @@ export class TabPlayer {
 
                         const stringIdx = note.s - 1;
                         if (stringIdx < 0 || stringIdx >= tuning.length) return;
-                        const midi = tuning[stringIdx] + note.f + transpose;
+                        const openMidi = tuning[stringIdx] + transpose;
+                        const fx = note.fx?.length ? note.fx : undefined;
+                        const midi = soundingMidi(openMidi, note.f, fx);
 
                         // Hammer-on / pull-off / slide DESTINATION: one pick.
                         // The source rings through it and its pitch steps or
@@ -647,7 +913,12 @@ export class TabPlayer {
                             trackId: track.id,
                             instrument: track.instrument,
                             muted: note.tech === 'x',  // dead note (chop)
-                            bend: note.tech === 'b'    // choke: pitch rises a quarter tone
+                            bend: note.tech === 'b',   // choke: pitch rises a quarter tone
+                            // TablEdit effects + grace note (noteAttacks)
+                            fx,
+                            grace: note.grace
+                                ? { midi: openMidi + note.grace.f, kind: note.grace.kind }
+                                : undefined,
                         };
                         trackNotes.push(tn);
                         lastByString[note.s] = tn;
@@ -748,6 +1019,11 @@ export class TabPlayer {
                         duration = Math.min(duration, 0.09);
                         note.volume *= 0.55;
                     }
+                    // TablEdit effects: let-ring, staccato, ghost, palm
+                    // mute, choke, harmonics, slap (no-op without fx)
+                    ({ duration, volume: note.volume } = fxDurationVolume(note.fx, {
+                        duration, volume: note.volume, stringGap, sustain: note.sustain,
+                    }));
                     note.duration = duration;
                     notes.push(note);
                 }
@@ -755,6 +1031,9 @@ export class TabPlayer {
         }
 
         notes.sort((a, b) => a.time - b.time);
+
+        // Brushed / rolled chords: stagger the column's attacks
+        applyStrumOffsets(notes);
 
         // Optional tick range (play-from-cursor / loop-a-phrase): clip
         // AFTER durations are computed so edge notes keep their gap-based
@@ -803,37 +1082,32 @@ export class TabPlayer {
 
         // Schedule notes and track for visualization
         this._scheduledNotes = [];
+        const attackOpts = { secondsPerTick, thirtySecondSec: ticksPerBeat / 8 * secondsPerTick };
         playNotes.forEach(note => {
             const startTime = this.playbackStartTime + note.time;
             try {
-                // Legato (one pick): the source note rings for its written
-                // length, then its pitch steps (hammer/pull) or glides (slide)
-                // into each target in turn, holding through the extended note.
-                // Uses WebAudioFont's native `slides` param — an array of
-                // {delta (semitones), when (s from note start)} pitch waypoints.
-                let slides;
-                if (note.legs) {
-                    slides = legatoWaypoints(note.midi, note.legs.map(leg => ({
-                        ...leg,
-                        atSec: Math.max(0, (leg.atTick - note.absTick) * secondsPerTick),
-                    })), note.duration);
-                } else if (note.bend) {
-                    // Choke: the note attacks, then its pitch bends up a quarter tone.
-                    slides = bendWaypoints(BEND_SEMITONES, note.duration);
+                // One note may sound as several attacks (grace, tremolo) at
+                // offsets from its onset (brush/roll). Pitch moves — legato
+                // (one pick: the source steps or glides into each target),
+                // bends, vibrato — use WebAudioFont's native `slides` param:
+                // {delta (semitones), when (s from attack start)} waypoints,
+                // undefined for a plain note (no-op).
+                for (const a of noteAttacks(note, attackOpts)) {
+                    const envelope = this.player.queueWaveTable(
+                        this.audioContext,
+                        this.trackGains[note.trackId] ?? this.audioContext.destination,
+                        note.instrumentData,
+                        startTime + a.offset,
+                        a.midi,
+                        a.duration,
+                        a.volume,
+                        a.slides
+                    );
+                    this.scheduledNodes.push(envelope);
                 }
-                const envelope = this.player.queueWaveTable(
-                    this.audioContext,
-                    this.trackGains[note.trackId] ?? this.audioContext.destination,
-                    note.instrumentData,
-                    startTime,
-                    note.midi,
-                    note.duration,
-                    note.volume,
-                    slides   // 8th arg; undefined for non-slide notes (no-op)
-                );
-                this.scheduledNodes.push(envelope);
 
-                // Track note timing for visualization callbacks
+                // Track note timing for visualization callbacks (keyed by
+                // the MAIN note's tick, even when a grace sounds first)
                 this._scheduledNotes.push({
                     time: note.time,
                     absTick: note.absTick,
@@ -863,10 +1137,15 @@ export class TabPlayer {
         }
 
         // A bounded range plays for EXACTLY its musical length (so loops
-        // repeat in time); open-ended playback keeps the old +1s tail.
+        // repeat in time); open-ended playback keeps the old +1s tail, longer
+        // only when an effect (let-ring, harmonic) rings past it — stop()
+        // would otherwise cut a ringing final chord.
+        const fxTail = playNotes.reduce((mx, n) => (n.fx
+            ? Math.max(mx, n.time + (n.strumOffsetSec || 0) + n.duration) : mx), 0);
         const totalDuration = rangeEnd !== Infinity
             ? (rangeEnd - rangeStart) * secondsPerTick
-            : (playNotes.length > 0 ? playNotes[playNotes.length - 1].time + 1 : 0);
+            : (playNotes.length > 0
+                ? Math.max(playNotes[playNotes.length - 1].time + 1, fxTail) : 0);
         this._startPositionUpdate(totalDuration, options);
     }
 
