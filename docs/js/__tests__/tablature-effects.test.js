@@ -367,6 +367,10 @@ describe('a real corpus tab', () => {
                 }
                 const n = e.notes[0];
                 if (!n) continue;
+                // The published tab carries its own fx/graces now (A15
+                // refresh); replace them so the expected counts are ours.
+                delete n.fx;
+                delete n.grace;
                 if (i % 7 === 0) n.fx = [single[(i / 7) % single.length]];
                 if (i % 5 === 0) n.grace = { f: n.f + 2, kind: 'hp' };
                 i++;
