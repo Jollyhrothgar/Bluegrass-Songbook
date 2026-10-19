@@ -72,6 +72,62 @@ export function instrumentToType(inst) {
 }
 
 // --- articulation / tie helpers ---------------------------------------------
+// TablEdit's per-note effects (fix-it A15) — a port of otf.py note_fx /
+// note_grace / is_dead_note; see there for the bytes and the evidence.
+const EFFECT_FX = { 4: 'choke', 5: 'brush', 6: 'harmonic', 7: 'artificial-harmonic',
+    8: 'muted', 9: 'tap', 10: 'vibrato', 11: 'tremolo', 13: 'bend-release', 14: 'roll' };
+const ATTRIBUTE_FX = { 1: 'let-ring', 2: 'slap', 4: 'ghost', 7: 'staccato' };
+const SECOND_FX = { 3: 'roll', 5: 'brush', 6: 'harmonic', 7: 'artificial-harmonic',
+    8: 'let-ring', 9: 'ghost' };
+const SECOND_DEAD = 10;
+const V2_LAYOUT_CODES = new Set([0x0b, 0x0c, 0x0d, 0x0e, 0xc0, 0xd0]);
+export const FX_ORDER = ['brush', 'roll', 'choke', 'ghost', 'staccato', 'let-ring', 'muted',
+    'harmonic', 'artificial-harmonic', 'tap', 'vibrato', 'tremolo', 'bend-release', 'slap'];
+const GRACE_KINDS = [null, 'hp', 'slide', 'bend', 'mordent', 'double', 'gruppetto', 'trill'];
+
+function attributeByte(e) {
+    const r = e.raw;
+    if (!r) return 0;
+    if (r.length >= 12) return r[8];
+    if (r.length >= 6 && (r[2] & 0xe0) === 0x80 && !V2_LAYOUT_CODES.has(r[5])) return r[5];
+    return 0;
+}
+
+export function noteFx(e) {
+    const r = e.raw;
+    if (!r || r.length < 6) return [];
+    const effect = r.length >= 12 ? r[6] & 0x0f : r[4] & 0x0f;
+    const fx = new Set();
+    if (EFFECT_FX[effect]) fx.add(EFFECT_FX[effect]);
+    const attr = attributeByte(e);
+    const hi = attr >> 4, lo = attr & 0x0f;
+    if (hi !== 3 && ATTRIBUTE_FX[lo]) fx.add(ATTRIBUTE_FX[lo]);
+    if (SECOND_FX[hi]) fx.add(SECOND_FX[hi]);
+    return FX_ORDER.filter(f => fx.has(f));
+}
+
+export function noteGrace(e) {
+    const r = e.raw;
+    if (!r) return null;
+    let g;
+    if (r.length >= 12 && (r[4] & 0x40)) g = r[7];
+    else if (r.length >= 6 && r.length < 12 && (r[2] & 0xe0) === 0x40) g = r[5];
+    else return null;
+    const grace = { f: g & 0x1f };
+    if (GRACE_KINDS[g >> 5]) grace.kind = GRACE_KINDS[g >> 5];
+    return grace;
+}
+
+// The note effect is the low nibble of V3 byte 6 / V2 effect1 (bits 4-5 are
+// the voice); 15 is 'Dead note', and so is second effect 10.
+export function isDeadNote(e) {
+    const r = e.raw;
+    if (!r) return false;
+    if ((attributeByte(e) >> 4) === SECOND_DEAD) return true;
+    if (r.length >= 12) return (r[6] & 0x0f) === 0x0f;
+    return r.length >= 6 && (r[4] & 0x0f) === 0x0f;
+}
+
 export function isTiedNote(e) {
     const r = e.raw;
     if (r && r.length >= 6) {
@@ -405,7 +461,7 @@ export function tefToOtf(tef) {
                     const [string, fret] = r;
                     let tech = articulations.get(evt.track + ':' + evt.position + ':' + string) ?? null;
                     // technique_from_event is a retired no-op (returns null).
-                    if (evt.raw && evt.raw.length >= 12 && evt.raw[6] === 0x0f) tech = 'x';
+                    if (isDeadNote(evt)) tech = 'x';
                     let tie = isTiedNote(evt);
                     // ...unless it's a bend/choke (connect bit but a fret change,
                     // no h/p/slide): render 'b', not a tie.
@@ -424,7 +480,9 @@ export function tefToOtf(tef) {
                     } else {
                         [finger, lh] = v3Fingering(evt);
                     }
-                    notes.push({ s: string, f: fret, tech, finger, lh, tie, dur: evt.durationTicks });
+                    const fx = noteFx(evt);
+                    notes.push({ s: string, f: fret, tech, finger, lh, tie, dur: evt.durationTicks,
+                        fx: fx.length ? fx : null, grace: noteGrace(evt) });
                 }
                 if (notes.length) outEvents.push({ tick, notes });
             }
@@ -436,6 +494,11 @@ export function tefToOtf(tef) {
     // Placed free-text annotations (V3 0x39 components: "Long Choke",
     // chord letters, section banners). Positions share the note grid.
     const annotations = (tef.text_events || []).map(te => {
+        if (isV2) {
+            const index = fdiv(te.position, unitsPerMeasure);
+            const offset = te.position % unitsPerMeasure;
+            return { measure: index + 1, tick: fdiv((offset & ~3) * 15, 2), text: te.text };
+        }
         const [index, offset] = v3Locate(tef, te.position);
         return { measure: index + 1, tick: offset * V3_TICKS_PER_UNIT, text: te.text };
     });
@@ -495,6 +558,8 @@ export function toOtfDict(doc) {
                     if (n.lh !== null && n.lh !== undefined) out.lh = n.lh;
                     if (n.dur) out.dur = n.dur;
                     if (n.tie) out.tie = true;
+                    if (n.fx) out.fx = [...n.fx];
+                    if (n.grace) out.grace = { ...n.grace };
                     return out;
                 }),
             })),

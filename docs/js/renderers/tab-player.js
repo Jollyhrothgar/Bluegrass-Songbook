@@ -154,6 +154,47 @@ export function slideWaypoints(deltaSemitones, holdSec, noteDurSec) {
     ];
 }
 
+const LEGATO_TECHS = new Set(['h', 'p', '/', '\\']);
+const GLIDE_TECHS = new Set(['/', '\\']);
+
+/**
+ * Fold a legato target into the note it continues: a hammer-on, pull-off or
+ * slide is ONE pick, so the target is not attacked; the preceding note on
+ * its string rings on and steps (h/p) or glides (slide) to the target pitch
+ * at the target's onset. Chains (0h2p0) keep extending the same source.
+ * Returns true when the note was absorbed. Before fix-it A15 only slides did
+ * this; h/p targets were re-picked at full volume.
+ */
+export function absorbLegato(lastByString, note, midi, absTick) {
+    if (!LEGATO_TECHS.has(note.tech)) return false;
+    const source = lastByString[note.s];
+    if (!source) return false;
+    source.explicitEndTick = absTick + (note.dur || 0);
+    (source.legs ||= []).push({ toMidi: midi, atTick: absTick, glide: GLIDE_TECHS.has(note.tech) });
+    return true;
+}
+
+/**
+ * Pitch waypoints (WebAudioFont `slides`) for a source note and its legato
+ * legs: hold, then a near-instant step (hammer/pull) or a ~45ms glide
+ * (slide, as slideWaypoints) into each target, relative to the source
+ * pitch. `legs[].atSec` is seconds from the note start. Pure.
+ */
+export function legatoWaypoints(sourceMidi, legs, noteDurSec) {
+    const STEP_SEC = 0.008;
+    const GLIDE_SEC = 0.045;
+    const wp = [];
+    let prev = 0;
+    for (const leg of legs) {
+        const move = Math.min(leg.glide ? GLIDE_SEC : STEP_SEC, noteDurSec * 0.3,
+            leg.atSec > 0 ? leg.atSec : GLIDE_SEC);
+        wp.push({ delta: prev, when: Math.max(0, leg.atSec - move) });
+        prev = leg.toMidi - sourceMidi;
+        wp.push({ delta: prev, when: leg.atSec });
+    }
+    return wp;
+}
+
 // A bend/choke (OTF tech "b") rises a QUARTER TONE above the fretted note.
 // Banjo chokes typically bend a half step to a full step; a quarter tone is a
 // subtle, expressive micro-bend. Adjust here to taste.
@@ -583,20 +624,11 @@ export class TabPlayer {
                         if (stringIdx < 0 || stringIdx >= tuning.length) return;
                         const midi = tuning[stringIdx] + note.f + transpose;
 
-                        // Slide: a "/" (or "\") note is the slide DESTINATION.
-                        // A banjo slide is one pick — the source note rings and
-                        // its pitch glides up into the target, which then hangs.
-                        // So we DON'T re-attack the target: we extend the source
-                        // through it and ramp the source's pitch at schedule
-                        // time (see below). Falls back to a normal attack if
-                        // there is no preceding note on the string.
-                        const source = (note.tech === '/' || note.tech === '\\')
-                            ? lastByString[note.s] : null;
-                        if (source) {
-                            source.explicitEndTick = absTick + (note.dur || 0);
-                            source.slide = { toMidi: midi, atTick: absTick };
-                            return;  // suppress the target's independent attack
-                        }
+                        // Hammer-on / pull-off / slide DESTINATION: one pick.
+                        // The source rings through it and its pitch steps or
+                        // glides at schedule time (see below). Falls back to a
+                        // normal attack if there is no preceding note.
+                        if (absorbLegato(lastByString, note, midi, absTick)) return;
 
                         const tn = {
                             time: absTick * secondsPerTick,
@@ -774,17 +806,17 @@ export class TabPlayer {
         playNotes.forEach(note => {
             const startTime = this.playbackStartTime + note.time;
             try {
-                // Slide articulation (one pick): the source note rings for its
-                // written length, then its pitch bends up into the target,
-                // which hangs for the rest of the (extended) note. Uses
-                // WebAudioFont's native `slides` param — an array of
+                // Legato (one pick): the source note rings for its written
+                // length, then its pitch steps (hammer/pull) or glides (slide)
+                // into each target in turn, holding through the extended note.
+                // Uses WebAudioFont's native `slides` param — an array of
                 // {delta (semitones), when (s from note start)} pitch waypoints.
                 let slides;
-                if (note.slide) {
-                    const holdSec = Math.max(0,
-                        (note.slide.atTick - note.absTick) * secondsPerTick);
-                    slides = slideWaypoints(
-                        note.slide.toMidi - note.midi, holdSec, note.duration);
+                if (note.legs) {
+                    slides = legatoWaypoints(note.midi, note.legs.map(leg => ({
+                        ...leg,
+                        atSec: Math.max(0, (leg.atTick - note.absTick) * secondsPerTick),
+                    })), note.duration);
                 } else if (note.bend) {
                     // Choke: the note attacks, then its pitch bends up a quarter tone.
                     slides = bendWaypoints(BEND_SEMITONES, note.duration);

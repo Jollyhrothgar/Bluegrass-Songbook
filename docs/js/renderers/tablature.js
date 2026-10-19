@@ -1843,51 +1843,38 @@ export class TabRenderer {
     }
 
     /**
-     * Detect triplet groups based on tick spacing
-     * Triplet 8ths have ~80 tick spacing (3 notes in 160 ticks)
+     * Detect triplet groups: three onsets an equal triplet step apart (80 =
+     * 16th, 160 = eighth, 320 = quarter triplet at 480 ticks/beat) whose
+     * first note starts its triplet span (3 x step). Spacing, not `dur`, is
+     * the signal: OTF has no tuplet flag, the converter places TablEdit's
+     * triplets by duration code, and the editor types them 160 apart. The old
+     * detector knew only 80 (its comment called that an eighth triplet), so
+     * eighth and quarter triplets never got a bracket (fix-it A15).
      */
     detectTripletGroups(notePositions, events) {
         const tripletGroups = [];
         if (!events || events.length < 3) return tripletGroups;
+        const scale = (this._ticksPerBeat || 480) / 480;
+        const steps = [80, 160, 320].map(t => t * scale);
+        const tol = 10 * scale;
+        const near = (a, b) => Math.abs(a - b) <= tol;
 
-        // Build a map of x position to tick for more accurate spacing detection
-        const xToTick = new Map();
-        const xToNp = new Map();
-        notePositions.forEach(np => {
-            const event = events.find(e => e.tick === np.event?.tick);
-            if (event) {
-                xToTick.set(np.x, event.tick);
-                xToNp.set(np.x, np);
-            }
-        });
-
-        // Sort notes by x position
         const sortedNotes = [...notePositions].sort((a, b) => a.x - b.x);
-
-        // Look for groups of 3 notes with ~80 tick spacing
         let i = 0;
         while (i <= sortedNotes.length - 3) {
-            const n1 = sortedNotes[i];
-            const n2 = sortedNotes[i + 1];
-            const n3 = sortedNotes[i + 2];
-
+            const [n1, n2, n3] = sortedNotes.slice(i, i + 3);
             const t1 = n1.event?.tick ?? 0;
-            const t2 = n2.event?.tick ?? 0;
-            const t3 = n3.event?.tick ?? 0;
-
-            const gap1 = t2 - t1;
-            const gap2 = t3 - t2;
-
-            // Triplet 8ths: 3 notes spanning 160 ticks with ~80 tick spacing
-            // Allow some tolerance for rounding
-            if (gap1 >= 70 && gap1 <= 90 && gap2 >= 70 && gap2 <= 90) {
-                tripletGroups.push([n1, n2, n3]);
-                i += 3;  // Skip past this triplet
+            const gap1 = (n2.event?.tick ?? 0) - t1;
+            const gap2 = (n3.event?.tick ?? 0) - (n2.event?.tick ?? 0);
+            const step = steps.find(st => near(gap1, st) && near(gap2, st));
+            const span = step * 3;
+            if (step && (near(t1 % span, 0) || near(t1 % span, span))) {
+                tripletGroups.push(Object.assign([n1, n2, n3], { step: step / scale }));
+                i += 3;
             } else {
                 i++;
             }
         }
-
         return tripletGroups;
     }
 
@@ -1905,13 +1892,13 @@ export class TabRenderer {
             const firstX = n1.x - halfStem;
             const lastX = n3.x + halfStem;
 
-            // Draw single primary beam (8th note triplets have one beam)
-            const beam = this.createRect(
-                firstX, beamY - opt.beamThickness,
-                Math.max(lastX - firstX, 1), opt.beamThickness,
-                opt.beamColor
-            );
-            svg.appendChild(beam);
+            // Beams: none for a quarter triplet, one for eighths, two for 16ths.
+            const beams = group.step >= 320 ? 0 : group.step >= 160 ? 1 : 2;
+            for (let b = 0; b < beams; b++) {
+                const y = beamY - opt.beamThickness - b * (opt.beamThickness + 4);
+                svg.appendChild(this.createRect(
+                    firstX, y, Math.max(lastX - firstX, 1), opt.beamThickness, opt.beamColor));
+            }
 
             // Draw stems for each note
             [n1, n2, n3].forEach(np => {
@@ -1962,6 +1949,7 @@ export class TabRenderer {
                 fontWeight: '600',
                 textAnchor: 'middle'
             });
+            label.classList.add('triplet-label');
             svg.appendChild(label);
         });
     }
