@@ -2611,5 +2611,22 @@
     "download_file": "23608_tef_old_dangerfield.tef",
     "author": "Yohansen",
     "converted_at": "2026-08-01T11:14:55.293626"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 120,
+      "text": "PART 1"
+    },
+    {
+      "measure": 9,
+      "tick": 120,
+      "text": "PART 2"
+    },
+    {
+      "measure": 17,
+      "tick": 120,
+      "text": "PART 3"
+    }
+  ]
 }

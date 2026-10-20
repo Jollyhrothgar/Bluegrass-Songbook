@@ -101,7 +101,10 @@
               {
                 "s": 3,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "roll"
+                ]
               }
             ]
           },
@@ -167,7 +170,10 @@
               {
                 "s": 3,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "roll"
+                ]
               }
             ]
           },
@@ -448,7 +454,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 720
+                "dur": 720,
+                "fx": [
+                  "roll"
+                ]
               }
             ]
           },
@@ -589,7 +598,10 @@
               {
                 "s": 3,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "roll"
+                ]
               }
             ]
           }
@@ -655,7 +667,10 @@
               {
                 "s": 3,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "roll"
+                ]
               }
             ]
           }
@@ -936,7 +951,10 @@
               {
                 "s": 3,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "roll"
+                ]
               }
             ]
           },
@@ -1056,7 +1074,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "roll"
+                ]
               }
             ]
           },
@@ -1121,7 +1142,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "roll"
+                ]
               }
             ]
           }
@@ -1166,7 +1190,10 @@
               {
                 "s": 3,
                 "f": 5,
-                "dur": 720
+                "dur": 720,
+                "fx": [
+                  "roll"
+                ]
               }
             ]
           },
@@ -1347,7 +1374,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "roll"
+                ]
               }
             ]
           },
@@ -1402,7 +1432,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "roll"
+                ]
               }
             ]
           },
@@ -1543,7 +1576,10 @@
               {
                 "s": 3,
                 "f": 0,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "roll"
+                ]
               }
             ]
           }
@@ -1609,7 +1645,10 @@
               {
                 "s": 3,
                 "f": 0,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "roll"
+                ]
               }
             ]
           }
@@ -1654,7 +1693,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "roll"
+                ]
               }
             ]
           },
@@ -1744,7 +1786,10 @@
               {
                 "s": 3,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "roll"
+                ]
               }
             ]
           }
@@ -1931,7 +1976,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 720
+                "dur": 720,
+                "fx": [
+                  "roll"
+                ]
               },
               {
                 "s": 4,
@@ -2043,7 +2091,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 720
+                "dur": 720,
+                "fx": [
+                  "roll"
+                ]
               }
             ]
           }
@@ -2068,7 +2119,10 @@
               {
                 "s": 3,
                 "f": 0,
-                "dur": 720
+                "dur": 720,
+                "fx": [
+                  "roll"
+                ]
               }
             ]
           },
@@ -2088,7 +2142,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 720
+                "dur": 720,
+                "fx": [
+                  "roll"
+                ]
               }
             ]
           }
@@ -2113,7 +2170,10 @@
               {
                 "s": 3,
                 "f": 4,
-                "dur": 720
+                "dur": 720,
+                "fx": [
+                  "roll"
+                ]
               }
             ]
           },
@@ -2241,5 +2301,587 @@
     "author": "tom nelson",
     "converted_at": "2026-07-26T22:20:07.178756",
     "source_id": "15127"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 1200,
+      "text": "I"
+    },
+    {
+      "measure": 2,
+      "tick": 240,
+      "text": "G"
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "was"
+    },
+    {
+      "measure": 2,
+      "tick": 1200,
+      "text": "with"
+    },
+    {
+      "measure": 2,
+      "tick": 240,
+      "text": "dance-"
+    },
+    {
+      "measure": 2,
+      "tick": 720,
+      "text": "ing"
+    },
+    {
+      "measure": 3,
+      "tick": 0,
+      "text": "my"
+    },
+    {
+      "measure": 3,
+      "tick": 240,
+      "text": "dar-"
+    },
+    {
+      "measure": 3,
+      "tick": 720,
+      "text": "ling"
+    },
+    {
+      "measure": 3,
+      "tick": 1200,
+      "text": "to"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "the"
+    },
+    {
+      "measure": 4,
+      "tick": 240,
+      "text": "Tenn-"
+    },
+    {
+      "measure": 4,
+      "tick": 720,
+      "text": "nes-"
+    },
+    {
+      "measure": 4,
+      "tick": 1200,
+      "text": "see"
+    },
+    {
+      "measure": 5,
+      "tick": 240,
+      "text": "C"
+    },
+    {
+      "measure": 5,
+      "tick": 720,
+      "text": "tz"
+    },
+    {
+      "measure": 5,
+      "tick": 1080,
+      "text": "When"
+    },
+    {
+      "measure": 5,
+      "tick": 240,
+      "text": "Wal-"
+    },
+    {
+      "measure": 6,
+      "tick": 240,
+      "text": "G"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "an"
+    },
+    {
+      "measure": 6,
+      "tick": 240,
+      "text": "old"
+    },
+    {
+      "measure": 6,
+      "tick": 720,
+      "text": "friend"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "I"
+    },
+    {
+      "measure": 7,
+      "tick": 240,
+      "text": "Em"
+    },
+    {
+      "measure": 7,
+      "tick": 600,
+      "text": "pened"
+    },
+    {
+      "measure": 7,
+      "tick": 1200,
+      "text": "to"
+    },
+    {
+      "measure": 7,
+      "tick": 240,
+      "text": "hap-"
+    },
+    {
+      "measure": 8,
+      "tick": 240,
+      "text": "A"
+    },
+    {
+      "measure": 8,
+      "tick": 240,
+      "text": "see"
+    },
+    {
+      "measure": 10,
+      "tick": 240,
+      "text": "G"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "I"
+    },
+    {
+      "measure": 10,
+      "tick": 240,
+      "text": "intro-"
+    },
+    {
+      "measure": 10,
+      "tick": 960,
+      "text": "him"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "to"
+    },
+    {
+      "measure": 11,
+      "tick": 240,
+      "text": "my"
+    },
+    {
+      "measure": 11,
+      "tick": 480,
+      "text": "dar-"
+    },
+    {
+      "measure": 11,
+      "tick": 960,
+      "text": "ling"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "and"
+    },
+    {
+      "measure": 12,
+      "tick": 480,
+      "text": "while"
+    },
+    {
+      "measure": 12,
+      "tick": 960,
+      "text": "they"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "were"
+    },
+    {
+      "measure": 13,
+      "tick": 480,
+      "text": "C"
+    },
+    {
+      "measure": 13,
+      "tick": 960,
+      "text": "ing"
+    },
+    {
+      "measure": 13,
+      "tick": 480,
+      "text": "dance-"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "my"
+    },
+    {
+      "measure": 14,
+      "tick": 480,
+      "text": "friend"
+    },
+    {
+      "measure": 14,
+      "tick": 960,
+      "text": "stole"
+    },
+    {
+      "measure": 15,
+      "tick": 960,
+      "text": "heart"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "my"
+    },
+    {
+      "measure": 15,
+      "tick": 480,
+      "text": "sweet-"
+    },
+    {
+      "measure": 16,
+      "tick": 480,
+      "text": "G"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "from"
+    },
+    {
+      "measure": 16,
+      "tick": 480,
+      "text": "me"
+    },
+    {
+      "measure": 18,
+      "tick": 240,
+      "text": "I"
+    },
+    {
+      "measure": 18,
+      "tick": 480,
+      "text": "re-"
+    },
+    {
+      "measure": 18,
+      "tick": 720,
+      "text": "mem-"
+    },
+    {
+      "measure": 18,
+      "tick": 1200,
+      "text": "ber"
+    },
+    {
+      "measure": 19,
+      "tick": 240,
+      "text": "that"
+    },
+    {
+      "measure": 19,
+      "tick": 720,
+      "text": "D"
+    },
+    {
+      "measure": 19,
+      "tick": 720,
+      "text": "night"
+    },
+    {
+      "measure": 20,
+      "tick": 0,
+      "text": "and"
+    },
+    {
+      "measure": 20,
+      "tick": 240,
+      "text": "the"
+    },
+    {
+      "measure": 20,
+      "tick": 480,
+      "text": "C"
+    },
+    {
+      "measure": 20,
+      "tick": 960,
+      "text": "nes-"
+    },
+    {
+      "measure": 20,
+      "tick": 480,
+      "text": "Ten-"
+    },
+    {
+      "measure": 21,
+      "tick": 0,
+      "text": "see"
+    },
+    {
+      "measure": 21,
+      "tick": 480,
+      "text": "waltz"
+    },
+    {
+      "measure": 22,
+      "tick": 480,
+      "text": "G"
+    },
+    {
+      "measure": 22,
+      "tick": 0,
+      "text": "Only"
+    },
+    {
+      "measure": 22,
+      "tick": 480,
+      "text": "you"
+    },
+    {
+      "measure": 22,
+      "tick": 840,
+      "text": "know"
+    },
+    {
+      "measure": 23,
+      "tick": 0,
+      "text": "how"
+    },
+    {
+      "measure": 23,
+      "tick": 480,
+      "text": "Em"
+    },
+    {
+      "measure": 23,
+      "tick": 960,
+      "text": "I"
+    },
+    {
+      "measure": 23,
+      "tick": 480,
+      "text": "much"
+    },
+    {
+      "measure": 24,
+      "tick": 0,
+      "text": "have"
+    },
+    {
+      "measure": 24,
+      "tick": 480,
+      "text": "D"
+    },
+    {
+      "measure": 24,
+      "tick": 480,
+      "text": "lost"
+    },
+    {
+      "measure": 26,
+      "tick": 720,
+      "text": "G"
+    },
+    {
+      "measure": 26,
+      "tick": 240,
+      "text": "Yes"
+    },
+    {
+      "measure": 26,
+      "tick": 480,
+      "text": "I"
+    },
+    {
+      "measure": 26,
+      "tick": 720,
+      "text": "lost"
+    },
+    {
+      "measure": 26,
+      "tick": 1200,
+      "text": "my"
+    },
+    {
+      "measure": 27,
+      "tick": 240,
+      "text": "lit-"
+    },
+    {
+      "measure": 27,
+      "tick": 480,
+      "text": "til"
+    },
+    {
+      "measure": 27,
+      "tick": 720,
+      "text": "dar-"
+    },
+    {
+      "measure": 27,
+      "tick": 1200,
+      "text": "ling"
+    },
+    {
+      "measure": 28,
+      "tick": 240,
+      "text": "the"
+    },
+    {
+      "measure": 28,
+      "tick": 1200,
+      "text": "they"
+    },
+    {
+      "measure": 28,
+      "tick": 720,
+      "text": "night"
+    },
+    {
+      "measure": 29,
+      "tick": 720,
+      "text": "C"
+    },
+    {
+      "measure": 29,
+      "tick": 240,
+      "text": "were"
+    },
+    {
+      "measure": 29,
+      "tick": 720,
+      "text": "play-"
+    },
+    {
+      "measure": 29,
+      "tick": 1200,
+      "text": "ing"
+    },
+    {
+      "measure": 30,
+      "tick": 720,
+      "text": "G"
+    },
+    {
+      "measure": 30,
+      "tick": 240,
+      "text": "that"
+    },
+    {
+      "measure": 30,
+      "tick": 720,
+      "text": "beau-"
+    },
+    {
+      "measure": 30,
+      "tick": 1200,
+      "text": "ti-"
+    },
+    {
+      "measure": 31,
+      "tick": 240,
+      "text": "ful"
+    },
+    {
+      "measure": 31,
+      "tick": 720,
+      "text": "Ten-"
+    },
+    {
+      "measure": 31,
+      "tick": 1200,
+      "text": "nes"
+    },
+    {
+      "measure": 32,
+      "tick": 600,
+      "text": "G"
+    },
+    {
+      "measure": 32,
+      "tick": 240,
+      "text": "see"
+    },
+    {
+      "measure": 32,
+      "tick": 600,
+      "text": "waltz"
+    },
+    {
+      "measure": 33,
+      "tick": 240,
+      "text": "that"
+    },
+    {
+      "measure": 33,
+      "tick": 720,
+      "text": "beau-"
+    },
+    {
+      "measure": 33,
+      "tick": 1200,
+      "text": "ti-"
+    },
+    {
+      "measure": 34,
+      "tick": 240,
+      "text": "ful"
+    },
+    {
+      "measure": 34,
+      "tick": 720,
+      "text": "Am"
+    },
+    {
+      "measure": 34,
+      "tick": 720,
+      "text": "Ten-"
+    },
+    {
+      "measure": 35,
+      "tick": 0,
+      "text": "Gsus4"
+    },
+    {
+      "measure": 35,
+      "tick": 720,
+      "text": "D7"
+    },
+    {
+      "measure": 35,
+      "tick": 0,
+      "text": "nes"
+    },
+    {
+      "measure": 35,
+      "tick": 720,
+      "text": "see"
+    },
+    {
+      "measure": 36,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 36,
+      "tick": 0,
+      "text": "waltz"
+    }
+  ]
 }

@@ -80,7 +80,8 @@ wrote and no renderer draws.
 - **`c` clears the FINGERING; `x` / `n` still clear the EFFECTS.** They
   are different marks on the same note and people fix them separately —
   `clearEffectsAtCursor` never touched `finger`, and `clearFingerings`
-  never touches `tech`/`tie`. `clearFingerings` is one `transact` over
+  never touches `tech`/`tie`/`fx`/`grace`. (In ANNOTATION; NORMAL `c` is
+  TablEdit's Choke — see Effects below.) `clearFingerings` is one `transact` over
   both hands, and refuses (no history entry) when there is nothing set.
 - **The keys are TOGGLES at the cursor and plain SETs over a selection.**
   Pressing the letter a note already reads clears that hand, which is how
@@ -102,6 +103,53 @@ wrote and no renderer draws.
   (`facade._placeNote` replaces whatever was on the string, so the
   fingering has to be re-applied in the same step or `u` costs two
   presses). An edit does not auto-advance; entry still does.
+
+### Effects (`fx`) and grace notes: TablEdit's note model, TablEdit's keys
+
+`note.fx` (a SET, stored in `FX_ORDER`, omitted when empty, never `[]`)
+and `note.grace` (`{f: 0..24, kind?}`) are what the TEF importer decodes
+out of TablEdit's own note model (DESIGN.md "interface Note"). `tech` keeps
+the transitions (h p / \ x, and `b` = bend TARGET); everything else is `fx`.
+`facade.js` exports its own `FX_ORDER` / `GRACE_KINDS` / `isGrace` (it stays
+importer-free; `effects-facade.test.js` asserts the list equals
+`tef-import/otf.js`'s) and **throws** on anything outside them.
+
+| | TablEdit NORMAL / VISUAL | vim NORMAL / VISUAL | facade |
+|---|---|---|---|
+| brush · roll · choke · ghost · staccato | `b` · `r` · `c` · `g` · `/` (`Shift+R` = roll, hidden) | `aB` · `aR` · `aC` · `aG` · `aS` | `setEffect(pos, fx, on\|'toggle')`, `toggleEffect`, `setRangeEffect(start, end, fx, on, {strings})` |
+| let-ring, muted (palm), harmonic, artificial-harmonic, tap, vibrato, tremolo, bend-release, slap | — (`menuOnly`: Note ▸ Effects, popover row) | — | same |
+| grace note | `Alt+G` (NORMAL) → `GracePopover` | `ag` | `setGrace(pos, {f, kind?}\|null)` |
+| bend target (`tech: 'b'`) | — (Note ▸ Bend (target), popover `b`) | `ab` | `setArticulation` |
+| clear (tech + tie + fx + grace, not fingering) | `n` | `an` | `state.clearEffectsAtCursor` / `clearEffectsInSelection` |
+| repeat last effect | `F3` | `a.` | `state.lastTech = 'fx:<name>'` |
+
+- **Every fx key is a TOGGLE.** Over a selection it is one undo step and
+  TablEdit's rule: every note already has it → off, else on for all
+  (`setRangeEffect(…, 'toggle')`). `F3` / vim `.` RE-APPLY (on, never
+  off), and only an effect that was turned ON is remembered.
+- **Moved keys** (each in the preset's `exceptions`): `c` was `tech: 'b'`
+  and is now TablEdit's Choke fx; `r` was repeat-previous-measure, now
+  `Alt+R` (TablEdit's R is the roll); `m` stays the dead note `x` — the
+  chop is what a bluegrass tabber means by "muted"; TablEdit's palm-mute M
+  is `fx: 'muted'`, menu-only.
+- **`menuOnly: true`** on an action means TablEdit has no hotkey for it.
+  The fence in `bindings.test.js` exempts it from "reachable from a
+  preset" and refuses it a binding; `effects-editor.test.js` requires it
+  to be in a menu.
+- **Alt+letter is read off `event.code`** (`eventToKeyString`): macOS
+  Option+G types `©`, which no table entry could match.
+- **UI**: Note ▸ Effects is generated from `FX_ORDER` with a ✓ for what the
+  note carries (`checked(state)` on an action item); the toolbar's
+  articulation palette gains ⇅ ≀ ch ( ) · (the keyed five, from
+  `FX_BUTTONS`, `.reflects-note` like h/p) — always the action, never
+  armed; the note popover gets an **Effects** row of 14 toggles
+  (`POPOVER_FX`) and carries `grace` through an in-place edit; the status
+  bar shows `Fx: brush · let-ring · grace 3 hp`. Drawing is
+  `renderers/tablature.js`'s job, not the editor's.
+- **A grace follows its main note**: `+`/`-` (`transposeFret`,
+  `transposeRange` — still all-or-nothing, grace included) move it by the
+  same frets, and `moveNoteToString` keeps its interval (same string, so the
+  same fret offset), refusing when the grace would leave 0..24.
 
 ### Tracks: the name IS the id, and the order IS the lead
 
@@ -331,7 +379,7 @@ thing:
   already is, recomputed on `cursorMove` and `change`. A dotted value
   outlines its base button *and* `Dot` (`durationReflects`, exported);
   160 ticks outlines the triplet button; `tech`/`tie` outline their
-  articulation button. An outline, never a border width — nothing moves
+  articulation button, and so does each `fx` the note carries. An outline, never a border width — nothing moves
   when the cursor does.
 - `.predicts-next` (dashed outline) = **under `Auto` only**, the live
   prediction: the value `state.effectiveDuration()` maps to for the slot
@@ -380,7 +428,9 @@ position. Plan: `docs/plans/tab-editor-input-parity.md` §3, §6.
 | `transposeRange(start, end, delta, {strings})` | `transposeSelection(d)` — what `+`/`-` run when there IS a selection | the block is empty; delta 0; **any** note would leave 0..24 (ATOMIC: a single 24 refuses the whole `+1`, no partial move) | yes (one step) |
 | `moveNoteToString(pos, ±1)` | `moveNoteAcrossStrings(d)` (moves the cursor too, and emits `cursorMove` so the status bar's `String:` follows) | no such string; slot occupied; fret would leave 0..24; untuned track | yes |
 | `setTie(pos, on)` | `toggleTieAtCursor()` | turning ON with no same-string predecessor; clearing a tie that isn't set | yes |
-| `setArticulation(pos, null)` + `setTie(pos, false)` in one `transact` | `clearEffectsAtCursor()` — what `n` runs, TablEdit's N: `tech` AND `tie`, since neither op clears the other's field | the note carries neither | yes (one step) |
+| `setArticulation(pos, null)` + `setTie(pos, false)` + `setEffect(…, false)` per fx + `setGrace(pos, null)` in one `transact` | `clearEffectsAtCursor()` / `clearEffectsInSelection()` — what `n` runs, TablEdit's N: `tech`, `tie`, `fx` AND `grace`, since no op clears another's field | the note (range) carries none of them | yes (one step) |
+| `setEffect(pos, fx, on\|'toggle')` / `toggleEffect` / `setRangeEffect(start, end, fx, on, {strings})` — FX_ORDER, **throws** otherwise | `setEffect(fx, on = 'toggle')` (selection or cursor) | no note; nothing changes | yes (range: one step) |
+| `setGrace(pos, {f, kind?}\|null)` — f 0..24, kind in GRACE_KINDS, **throws** otherwise | `setGraceAtCursor(g)` | no note; same grace; nothing to clear | yes |
 | `setFingering(pos, finger\|null)` — T I M R P, **throws** otherwise | `setFingering(f)` (selection or cursor) | no note there; already that letter | yes |
 | `setLeftHand(pos, digit\|null)` — 0..4, **throws** otherwise | `setLeftHand(d)` | no note there; already that digit | yes |
 | `setRangeFingering(start, end, finger\|null, {strings})` / `setRangeLeftHand(…)` | the same two wrappers, when a selection exists | no note in range changes | yes (one step) |
@@ -466,8 +516,8 @@ native alert: see "No native dialogs" below.
 
 Entry-state flags the keyboard layer reads: `state.autoAdvance`
 (`toggleAutoAdvance()`, emits `autoAdvanceChange`), `state.lastTech`
-(TablEdit's F3 — `repeatLastAction()` re-applies it, and `'~'` there
-means tie).
+(TablEdit's F3 — `repeatLastAction()` re-applies it, `'~'` there
+means tie and `'fx:<name>'` an effect turned on).
 
 `pitch.js` is the pure string+fret↔MIDI module the re-string op needs; it
 is a port of `tab-player.js`'s two lines, not an import of it (the facade
@@ -508,7 +558,7 @@ docs/js/otf-editor/
 ├── menu-bar.js        # File/Edit/Note/Play/Score/View/Help, generated from bindings.js
 ├── toolbar.js         # Duration / grid / articulation / text / edit / track palettes
 ├── popover.js         # NoteEntryPopover + AnnotationPopover + TrackNamePopover
-│                      #   + ValuePromptPopover (see "No native dialogs")
+│                      #   + ValuePromptPopover + GracePopover (see "No native dialogs")
 ├── context-menu.js    # Right-click menu
 ├── pitch.js           # Pure string+fret ↔ MIDI (ported from tab-player)
 ├── actions.js         # Document-level helpers (validate, cleanup, download); re-exports new-otf.js
@@ -529,7 +579,7 @@ by the BROWSER, which means: not in the DOM (so no Playwright test can drive
 them, and the owner's rule is that everything a human can do must be), not in
 the theme, and on iOS they take focus in a way the canvas never gets back.
 
-Four panels cover everything the editor needs to ask, and they are siblings
+Five panels cover everything the editor needs to ask, and they are siblings
 on purpose — same overlay/panel chrome, Enter commits, Escape cancels, keys
 are swallowed so the vim bindings never see what you typed:
 
@@ -539,6 +589,7 @@ are swallowed so the vim bindings never see what you typed:
 | placed text (`c`) | `AnnotationPopover` |
 | a track's name (✏️) | `TrackNamePopover` |
 | **one number** — Go to measure (`Ctrl+G`), Play ▸ Tempo… | `ValuePromptPopover` |
+| a grace note (`Alt+G`) — fret by `FretEntry` + connection | `GracePopover` |
 
 `ValuePromptPopover` is where the last two `prompt()` calls went. Its answer
 arrives LATER (on Enter or a click), which is why `_promptForMeasure` returns

@@ -2194,5 +2194,82 @@
     "author": "Mirek Tim Patek",
     "converted_at": "2026-07-26T22:20:07.077381",
     "source_id": "14695"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "B"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 15,
+      "tick": 960,
+      "text": "E7"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 15,
+      "tick": 480,
+      "text": "B7"
+    },
+    {
+      "measure": 16,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "G"
+    }
+  ]
 }

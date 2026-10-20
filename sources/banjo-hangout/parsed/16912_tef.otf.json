@@ -1266,5 +1266,82 @@
     "download_file": "16912_tef_chicken_reel.tef",
     "author": "banjoman 1",
     "converted_at": "2026-08-01T11:14:51.693962"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "Hammer and pull off workout"
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 5,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 6,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 10,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 12,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 14,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "D"
+    }
+  ]
 }

@@ -2926,5 +2926,27 @@
     "author": "Yohansen",
     "converted_at": "2026-07-26T22:20:07.166655",
     "source_id": "23599"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 60,
+      "text": "VERSE"
+    },
+    {
+      "measure": 9,
+      "tick": 60,
+      "text": "CHORUS"
+    },
+    {
+      "measure": 17,
+      "tick": 60,
+      "text": "VERSE"
+    },
+    {
+      "measure": 25,
+      "tick": 60,
+      "text": "CHORUS"
+    }
+  ]
 }

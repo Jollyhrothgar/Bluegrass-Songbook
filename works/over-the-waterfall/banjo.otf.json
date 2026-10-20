@@ -4475,5 +4475,142 @@
     "author": "dholland",
     "converted_at": "2026-07-26T22:20:06.126983",
     "source_id": "18299"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 2,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 3,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 4,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 6,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 11,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 13,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 15,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 17,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 19,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 20,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 21,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 22,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 23,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 24,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 25,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 26,
+      "tick": 0,
+      "text": "D"
+    }
+  ]
 }

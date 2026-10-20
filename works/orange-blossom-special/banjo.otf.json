@@ -13269,12 +13269,18 @@
               {
                 "s": 1,
                 "f": 6,
-                "dur": 1440
+                "dur": 1440,
+                "fx": [
+                  "choke"
+                ]
               },
               {
                 "s": 2,
                 "f": 6,
-                "dur": 1440
+                "dur": 1440,
+                "fx": [
+                  "choke"
+                ]
               }
             ]
           },
@@ -13299,12 +13305,18 @@
               {
                 "s": 1,
                 "f": 6,
-                "dur": 960
+                "dur": 960,
+                "fx": [
+                  "choke"
+                ]
               },
               {
                 "s": 2,
                 "f": 6,
-                "dur": 960
+                "dur": 960,
+                "fx": [
+                  "choke"
+                ]
               }
             ]
           },
@@ -13314,12 +13326,18 @@
               {
                 "s": 1,
                 "f": 6,
-                "dur": 960
+                "dur": 960,
+                "fx": [
+                  "choke"
+                ]
               },
               {
                 "s": 2,
                 "f": 6,
-                "dur": 960
+                "dur": 960,
+                "fx": [
+                  "choke"
+                ]
               }
             ]
           }
@@ -13334,12 +13352,18 @@
               {
                 "s": 1,
                 "f": 6,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "bend-release"
+                ]
               },
               {
                 "s": 2,
                 "f": 6,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "bend-release"
+                ]
               }
             ]
           },
@@ -13384,12 +13408,18 @@
               {
                 "s": 1,
                 "f": 6,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "bend-release"
+                ]
               },
               {
                 "s": 2,
                 "f": 6,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "bend-release"
+                ]
               }
             ]
           },
@@ -17474,22 +17504,34 @@
               {
                 "s": 1,
                 "f": 0,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               },
               {
                 "s": 2,
                 "f": 0,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               },
               {
                 "s": 3,
                 "f": 0,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               },
               {
                 "s": 4,
                 "f": 0,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -17564,7 +17606,10 @@
               {
                 "s": 4,
                 "f": 0,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -17639,7 +17684,10 @@
               {
                 "s": 4,
                 "f": 0,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -17719,7 +17767,10 @@
               {
                 "s": 4,
                 "f": 0,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -17794,7 +17845,10 @@
               {
                 "s": 4,
                 "f": 0,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -17819,7 +17873,10 @@
               {
                 "s": 4,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -17849,7 +17906,10 @@
               {
                 "s": 4,
                 "f": 2,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -17924,7 +17984,10 @@
               {
                 "s": 4,
                 "f": 2,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -17999,7 +18062,10 @@
               {
                 "s": 4,
                 "f": 2,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -18079,7 +18145,10 @@
               {
                 "s": 4,
                 "f": 2,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -18154,7 +18223,10 @@
               {
                 "s": 4,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -18179,7 +18251,10 @@
               {
                 "s": 4,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -18209,7 +18284,10 @@
               {
                 "s": 4,
                 "f": 0,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -18284,7 +18362,10 @@
               {
                 "s": 4,
                 "f": 0,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -18359,7 +18440,10 @@
               {
                 "s": 4,
                 "f": 0,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -18439,7 +18523,10 @@
               {
                 "s": 4,
                 "f": 0,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -18514,7 +18601,10 @@
               {
                 "s": 4,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -18539,7 +18629,10 @@
               {
                 "s": 4,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -18569,7 +18662,10 @@
               {
                 "s": 4,
                 "f": 5,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -18644,7 +18740,10 @@
               {
                 "s": 4,
                 "f": 5,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -18719,7 +18818,10 @@
               {
                 "s": 4,
                 "f": 5,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -18799,7 +18901,10 @@
               {
                 "s": 4,
                 "f": 5,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -18874,7 +18979,10 @@
               {
                 "s": 4,
                 "f": 5,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -18899,7 +19007,10 @@
               {
                 "s": 4,
                 "f": 5,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -22711,12 +22822,18 @@
               {
                 "s": 1,
                 "f": 6,
-                "dur": 1920
+                "dur": 1920,
+                "fx": [
+                  "choke"
+                ]
               },
               {
                 "s": 2,
                 "f": 6,
-                "dur": 1920
+                "dur": 1920,
+                "fx": [
+                  "choke"
+                ]
               }
             ]
           }
@@ -22731,12 +22848,18 @@
               {
                 "s": 1,
                 "f": 6,
-                "dur": 960
+                "dur": 960,
+                "fx": [
+                  "choke"
+                ]
               },
               {
                 "s": 2,
                 "f": 6,
-                "dur": 960
+                "dur": 960,
+                "fx": [
+                  "choke"
+                ]
               }
             ]
           },
@@ -22746,12 +22869,18 @@
               {
                 "s": 1,
                 "f": 6,
-                "dur": 960
+                "dur": 960,
+                "fx": [
+                  "choke"
+                ]
               },
               {
                 "s": 2,
                 "f": 6,
-                "dur": 960
+                "dur": 960,
+                "fx": [
+                  "choke"
+                ]
               }
             ]
           }
@@ -22766,12 +22895,18 @@
               {
                 "s": 1,
                 "f": 6,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "bend-release"
+                ]
               },
               {
                 "s": 2,
                 "f": 6,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "bend-release"
+                ]
               }
             ]
           },
@@ -22816,12 +22951,18 @@
               {
                 "s": 1,
                 "f": 6,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "bend-release"
+                ]
               },
               {
                 "s": 2,
                 "f": 6,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "bend-release"
+                ]
               }
             ]
           },
@@ -23992,12 +24133,18 @@
               {
                 "s": 1,
                 "f": 6,
-                "dur": 1440
+                "dur": 1440,
+                "fx": [
+                  "choke"
+                ]
               },
               {
                 "s": 2,
                 "f": 6,
-                "dur": 1440
+                "dur": 1440,
+                "fx": [
+                  "choke"
+                ]
               }
             ]
           },
@@ -24022,12 +24169,18 @@
               {
                 "s": 1,
                 "f": 6,
-                "dur": 960
+                "dur": 960,
+                "fx": [
+                  "choke"
+                ]
               },
               {
                 "s": 2,
                 "f": 6,
-                "dur": 960
+                "dur": 960,
+                "fx": [
+                  "choke"
+                ]
               }
             ]
           },
@@ -24037,12 +24190,18 @@
               {
                 "s": 1,
                 "f": 6,
-                "dur": 960
+                "dur": 960,
+                "fx": [
+                  "choke"
+                ]
               },
               {
                 "s": 2,
                 "f": 6,
-                "dur": 960
+                "dur": 960,
+                "fx": [
+                  "choke"
+                ]
               }
             ]
           }
@@ -24057,12 +24216,18 @@
               {
                 "s": 1,
                 "f": 6,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "bend-release"
+                ]
               },
               {
                 "s": 2,
                 "f": 6,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "bend-release"
+                ]
               }
             ]
           },
@@ -24107,12 +24272,18 @@
               {
                 "s": 1,
                 "f": 6,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "bend-release"
+                ]
               },
               {
                 "s": 2,
                 "f": 6,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "bend-release"
+                ]
               }
             ]
           },
@@ -24266,5 +24437,517 @@
     "author": "janolov",
     "converted_at": "2026-07-26T22:20:06.428328",
     "source_id": "20018"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "A part (train effects)"
+    },
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "Tuning: aEAC#E or G tuning gDGBD capo 2)"
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "B part (shuffle)"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "C part melody"
+    },
+    {
+      "measure": 21,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 25,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 29,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 31,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 32,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 33,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 34,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 34,
+      "tick": 0,
+      "text": "A part variation 1"
+    },
+    {
+      "measure": 42,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 42,
+      "tick": 0,
+      "text": "B part variation 1"
+    },
+    {
+      "measure": 44,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 46,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 48,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 50,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 50,
+      "tick": 0,
+      "text": "C part. Melodic break"
+    },
+    {
+      "measure": 53,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 57,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 61,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 63,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 65,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 66,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 68,
+      "tick": 0,
+      "text": "D part - song - key of E"
+    },
+    {
+      "measure": 68,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 68,
+      "tick": 0,
+      "text": "Look a -yon         -          der"
+    },
+    {
+      "measure": 69,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 69,
+      "tick": 0,
+      "text": "com  -    ing"
+    },
+    {
+      "measure": 70,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 71,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 71,
+      "tick": 0,
+      "text": "com-ing down                 the"
+    },
+    {
+      "measure": 72,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 72,
+      "tick": 0,
+      "text": "rails         -         road"
+    },
+    {
+      "measure": 73,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 73,
+      "tick": 0,
+      "text": "track___________________"
+    },
+    {
+      "measure": 75,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 75,
+      "tick": 0,
+      "text": "Look a -yon         -          der"
+    },
+    {
+      "measure": 76,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 76,
+      "tick": 0,
+      "text": "com  -    ing"
+    },
+    {
+      "measure": 78,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 78,
+      "tick": 0,
+      "text": "com-ing down                 the"
+    },
+    {
+      "measure": 79,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 79,
+      "tick": 0,
+      "text": "rail         -         road"
+    },
+    {
+      "measure": 80,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 80,
+      "tick": 0,
+      "text": "track___________________"
+    },
+    {
+      "measure": 81,
+      "tick": 1440,
+      "text": "It's  the"
+    },
+    {
+      "measure": 82,
+      "tick": 0,
+      "text": "B"
+    },
+    {
+      "measure": 82,
+      "tick": 0,
+      "text": "O  -   range       Blos   -     som"
+    },
+    {
+      "measure": 83,
+      "tick": 0,
+      "text": "B"
+    },
+    {
+      "measure": 83,
+      "tick": 0,
+      "text": "Spe   -   cial"
+    },
+    {
+      "measure": 85,
+      "tick": 0,
+      "text": "B"
+    },
+    {
+      "measure": 85,
+      "tick": 0,
+      "text": "Bring  -  in'                     my"
+    },
+    {
+      "measure": 86,
+      "tick": 0,
+      "text": "B"
+    },
+    {
+      "measure": 86,
+      "tick": 0,
+      "text": "Ba          -           by"
+    },
+    {
+      "measure": 87,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 87,
+      "tick": 0,
+      "text": "back_______________"
+    },
+    {
+      "measure": 88,
+      "tick": 1800,
+      "text": "A"
+    },
+    {
+      "measure": 89,
+      "tick": 0,
+      "text": "Alternative B part. (Emphasize the M down brushes! Brush down with middle finger or whole hand, brush down with thumb, brush up with index)"
+    },
+    {
+      "measure": 90,
+      "tick": 1800,
+      "text": "D"
+    },
+    {
+      "measure": 92,
+      "tick": 1800,
+      "text": "E"
+    },
+    {
+      "measure": 94,
+      "tick": 1800,
+      "text": "A"
+    },
+    {
+      "measure": 97,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 97,
+      "tick": 0,
+      "text": "C part solo break, variation,"
+    },
+    {
+      "measure": 100,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 104,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 108,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 110,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 111,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 112,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 113,
+      "tick": 0,
+      "text": "Vocal, alternative in key of A"
+    },
+    {
+      "measure": 113,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 113,
+      "tick": 0,
+      "text": "Look a -yon         -            der"
+    },
+    {
+      "measure": 114,
+      "tick": 0,
+      "text": "com  -    ing"
+    },
+    {
+      "measure": 116,
+      "tick": 0,
+      "text": "com-ing down                 the"
+    },
+    {
+      "measure": 117,
+      "tick": 0,
+      "text": "rail         -         road"
+    },
+    {
+      "measure": 118,
+      "tick": 0,
+      "text": "track___________________"
+    },
+    {
+      "measure": 120,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 120,
+      "tick": 0,
+      "text": "Look a -yon         -          der"
+    },
+    {
+      "measure": 121,
+      "tick": 0,
+      "text": "com  -    ing"
+    },
+    {
+      "measure": 123,
+      "tick": 0,
+      "text": "com-ing down                 the"
+    },
+    {
+      "measure": 124,
+      "tick": 0,
+      "text": "rails         -         road"
+    },
+    {
+      "measure": 125,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 125,
+      "tick": 0,
+      "text": "track___________________"
+    },
+    {
+      "measure": 126,
+      "tick": 1440,
+      "text": "It's  the"
+    },
+    {
+      "measure": 127,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 127,
+      "tick": 0,
+      "text": "O  -   range       Blos   -     som"
+    },
+    {
+      "measure": 128,
+      "tick": 0,
+      "text": "Spe   -   cial"
+    },
+    {
+      "measure": 130,
+      "tick": 0,
+      "text": "Bring  -  in'                     my"
+    },
+    {
+      "measure": 131,
+      "tick": 0,
+      "text": "Ba          -           by"
+    },
+    {
+      "measure": 132,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 132,
+      "tick": 0,
+      "text": "back_______________"
+    },
+    {
+      "measure": 134,
+      "tick": 0,
+      "text": "Ending, play slower and slower"
+    },
+    {
+      "measure": 134,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 142,
+      "tick": 0,
+      "text": "A"
+    }
+  ]
 }

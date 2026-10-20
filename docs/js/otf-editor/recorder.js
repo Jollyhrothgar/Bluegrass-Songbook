@@ -265,6 +265,23 @@ export function dispatchEditorEvent(editor, event) {
             state.clearEffectsAtCursor();
             break;
 
+        // TablEdit's note effects (`fx`) and grace notes. `on` is
+        // true / false / 'toggle' exactly as the key sent it, so a
+        // toggle replays as a toggle.
+        case 'setEffect':
+            state.cursor.measure = params.measure;
+            state.cursor.tick = params.tick;
+            state.cursor.string = params.string;
+            state.setEffect(params.fx, params.on ?? 'toggle');
+            break;
+
+        case 'setGrace':
+            state.cursor.measure = params.measure;
+            state.cursor.tick = params.tick;
+            state.cursor.string = params.string;
+            state.setGraceAtCursor(params.grace ?? null);
+            break;
+
         case 'setPendingArticulation':
             state.setPendingArticulation(params.tech);
             break;

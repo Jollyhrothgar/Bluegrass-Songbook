@@ -1377,16 +1377,21 @@ describe('KeyboardHandler (tabledit preset)', () => {
             expect(state.getNoteAtCursor().tech).toBe('h');
         });
 
-        it('m is a dead note and c a choke — techs the corpus has and we could not type', () => {
+        // `c` used to write `tech: 'b'` (the bend TARGET). It is now
+        // TablEdit's own C, the Choke effect (`fx`); the bend target is
+        // Note ▸ Bend (target) / the popover's `b` / vim's `a b`.
+        it('m is a dead note and c a choke (fx) — marks the corpus has', () => {
             const { state, press } = setup();
             state.cursor.tick = 0;
             state.insertNote(5);
             press('m');
             expect(state.getNoteAtCursor().tech).toBe('x');
             press('c');
-            expect(state.getNoteAtCursor().tech).toBe('b');
+            expect(state.getNoteAtCursor().tech).toBe('x');
+            expect(state.getNoteAtCursor().fx).toEqual(['choke']);
             press('n');
             expect(state.getNoteAtCursor().tech).toBeUndefined();
+            expect(state.getNoteAtCursor().fx).toBeUndefined();
         });
 
         // D5: TablEdit's N clears the note's effects — every one of them.
@@ -1508,14 +1513,15 @@ describe('KeyboardHandler (tabledit preset)', () => {
             expect(state.getMeasureCount()).toBe(3);
         });
 
-        it('r repeats the previous measure and lands at its start', () => {
+        // Was `r` — TablEdit's R is the roll, so the measure repeat moved.
+        it('Alt+R repeats the previous measure and lands at its start', () => {
             const { state, press } = setup();
             state.cursor.measure = 1;
             state.cursor.tick = 0;
             state.insertNote(5);
             state.cursor.measure = 2;
             state.cursor.tick = 480;
-            press('r');
+            press('r', { alt: true, code: 'KeyR' });
             expect(state.cursor).toMatchObject({ measure: 2, tick: 0 });
             expect(state.getNoteAtCursor().f).toBe(5);
         });

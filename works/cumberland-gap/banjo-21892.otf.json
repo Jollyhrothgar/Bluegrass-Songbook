@@ -3302,5 +3302,37 @@
     "author": "HOWDYDOODY",
     "converted_at": "2026-07-26T22:20:07.548327",
     "source_id": "21892"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "G"
+    }
+  ]
 }

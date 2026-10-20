@@ -1496,5 +1496,62 @@
     "author": "schlange",
     "converted_at": "2026-07-26T22:20:06.506419",
     "source_id": "11016"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 4,
+      "tick": 960,
+      "text": "D7"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 960,
+      "text": "C"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 16,
+      "tick": 960,
+      "text": "D7"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "G"
+    }
+  ]
 }

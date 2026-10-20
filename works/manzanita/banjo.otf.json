@@ -2471,5 +2471,27 @@
     "download_file": "24654_tef_manzanita.tef",
     "author": "banjoy",
     "converted_at": "2026-08-01T11:09:06.559319"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "PART A -- LEAD"
+    },
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "PART A -- BACKUP"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "PART B -- LEAD"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "PART B -- BACKUP"
+    }
+  ]
 }

@@ -1389,7 +1389,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -1419,7 +1422,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -1454,7 +1460,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -1484,7 +1493,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -1519,7 +1531,10 @@
               {
                 "s": 3,
                 "f": 0,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -1549,7 +1564,10 @@
               {
                 "s": 3,
                 "f": 0,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -1584,7 +1602,10 @@
               {
                 "s": 3,
                 "f": 0,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -1614,7 +1635,10 @@
               {
                 "s": 3,
                 "f": 0,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -1649,7 +1673,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -1679,7 +1706,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -1714,7 +1744,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -1744,7 +1777,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -1779,7 +1815,10 @@
               {
                 "s": 3,
                 "f": 0,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -1809,7 +1848,10 @@
               {
                 "s": 3,
                 "f": 5,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -1844,7 +1886,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -1874,7 +1919,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -1909,7 +1957,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -1939,7 +1990,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -1974,7 +2028,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -2004,7 +2061,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -2039,7 +2099,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -2069,7 +2132,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -2104,7 +2170,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -2134,7 +2203,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -2169,7 +2241,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -2199,7 +2274,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -2234,7 +2312,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -2264,7 +2345,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -2299,7 +2383,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -2329,7 +2416,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -2364,7 +2454,10 @@
               {
                 "s": 3,
                 "f": 0,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -2394,7 +2487,10 @@
               {
                 "s": 3,
                 "f": 5,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -2429,7 +2525,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -2459,7 +2558,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -2494,7 +2596,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -6163,5 +6268,317 @@
     "author": "MandoTom2",
     "converted_at": "2026-07-26T22:20:05.121690",
     "source_id": "2850"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "D: Part 1..."
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "D: Rhythm Mandolin..."
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "D: Fretless Bass..."
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "Percussion..."
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "D: Back-Up Fiddle..."
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 8,
+      "tick": 960,
+      "text": "A(7)"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 960,
+      "text": "A(7)"
+    },
+    {
+      "measure": 8,
+      "tick": 960,
+      "text": "A(7)"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 960,
+      "text": "A(7)"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 9,
+      "tick": 1440,
+      "text": "(Repeat)..."
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "D: Part 2..."
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "D: Part 2..."
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "D: Part 2..."
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "D: Back-Up Fiddle..."
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "A(7)"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "A(7)"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "A(7)"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "A(7)"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 17,
+      "tick": 960,
+      "text": "A(7)"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 960,
+      "text": "A(7)"
+    },
+    {
+      "measure": 17,
+      "tick": 960,
+      "text": "A(7)"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 960,
+      "text": "A(7)"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 18,
+      "tick": 1440,
+      "text": "(Repeat)..."
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 19,
+      "tick": 960,
+      "text": "(End)..."
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 19,
+      "tick": 960,
+      "text": "(End)..."
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 19,
+      "tick": 960,
+      "text": "(End)..."
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "D"
+    }
+  ]
 }

@@ -3050,5 +3050,92 @@
     "download_file": "20966_tef_nail_that_catfish_to_a_tree.tef",
     "author": "dholland",
     "converted_at": "2026-08-01T11:09:08.232260"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 3,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 3,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 7,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 18,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 19,
+      "tick": 960,
+      "text": "G"
+    }
+  ]
 }

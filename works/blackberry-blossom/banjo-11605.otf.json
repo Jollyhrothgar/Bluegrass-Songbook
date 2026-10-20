@@ -1988,5 +1988,162 @@
     "author": "schlange",
     "converted_at": "2026-07-26T22:20:05.349738",
     "source_id": "11605"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 1,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 2,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 3,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 3,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 4,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 5,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 6,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 7,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 8,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 9,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "B7"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 16,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 17,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 21,
+      "tick": 0,
+      "text": "B7"
+    },
+    {
+      "measure": 22,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 24,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 24,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 25,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 25,
+      "tick": 960,
+      "text": "G"
+    }
+  ]
 }

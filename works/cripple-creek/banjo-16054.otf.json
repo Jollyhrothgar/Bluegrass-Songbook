@@ -2722,5 +2722,17 @@
     "author": "janolov",
     "converted_at": "2026-07-26T22:20:05.597291",
     "source_id": "16054"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "I. Stright thumb lead"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "II. Mixed thumb lead and index lead"
+    }
+  ]
 }

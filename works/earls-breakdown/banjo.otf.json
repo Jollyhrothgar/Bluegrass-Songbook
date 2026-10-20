@@ -2627,5 +2627,17 @@
     "source_file": "27168.tef",
     "converted_at": "2026-07-12T08:06:06.981079",
     "source_id": "27168"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 120,
+      "text": "VERSE"
+    },
+    {
+      "measure": 18,
+      "tick": 150,
+      "text": "CHORUS"
+    }
+  ]
 }

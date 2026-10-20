@@ -4392,17 +4392,26 @@
               {
                 "s": 2,
                 "f": 12,
-                "dur": 960
+                "dur": 960,
+                "fx": [
+                  "harmonic"
+                ]
               },
               {
                 "s": 3,
                 "f": 12,
-                "dur": 960
+                "dur": 960,
+                "fx": [
+                  "harmonic"
+                ]
               },
               {
                 "s": 4,
                 "f": 12,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "harmonic"
+                ]
               }
             ]
           },
@@ -6085,5 +6094,477 @@
     "author": "jameypittman",
     "converted_at": "2026-07-26T22:20:04.578990",
     "source_id": "967"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "Kickoff"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 5,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 6,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 7,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "A7"
+    },
+    {
+      "measure": 8,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 9,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 10,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 11,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 12,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 13,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 14,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 15,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "A7"
+    },
+    {
+      "measure": 16,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 18,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 19,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 20,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 20,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 21,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 24,
+      "tick": 0,
+      "text": "B7"
+    },
+    {
+      "measure": 25,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 27,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 27,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 28,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 28,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 29,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 32,
+      "tick": 0,
+      "text": "B7"
+    },
+    {
+      "measure": 33,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 35,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 35,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 36,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 36,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 37,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 37,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 38,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 38,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 39,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 39,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 40,
+      "tick": 0,
+      "text": "A7"
+    },
+    {
+      "measure": 40,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 41,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 41,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 42,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 42,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 43,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 43,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 44,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 44,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 45,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 45,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 46,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 46,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 47,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 47,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 48,
+      "tick": 0,
+      "text": "A7"
+    },
+    {
+      "measure": 48,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 49,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 49,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 50,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 50,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 51,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 51,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 52,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 52,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 53,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 56,
+      "tick": 0,
+      "text": "B7"
+    },
+    {
+      "measure": 57,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 59,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 59,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 60,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 60,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 61,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 64,
+      "tick": 0,
+      "text": "B7"
+    },
+    {
+      "measure": 65,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 67,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 67,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 68,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 68,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 69,
+      "tick": 0,
+      "text": "Tag"
+    }
+  ]
 }

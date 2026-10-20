@@ -6862,5 +6862,87 @@
     "author": "HOWDYDOODY",
     "converted_at": "2026-07-26T22:20:05.712585",
     "source_id": "22352"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 22,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 24,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 26,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 28,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 30,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 31,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 32,
+      "tick": 0,
+      "text": "G"
+    }
+  ]
 }

@@ -4985,5 +4985,217 @@
     "download_file": "23183_tef_bluegrass_in_the_backwoods.tef",
     "author": "ashurman",
     "converted_at": "2026-08-01T11:11:06.215695"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "Dm"
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "Dm"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "Dm"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "Gm"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "Dm"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "Dm"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "Gm"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "Dm"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "Dm"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 21,
+      "tick": 0,
+      "text": "Dm"
+    },
+    {
+      "measure": 22,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 23,
+      "tick": 0,
+      "text": "Dm"
+    },
+    {
+      "measure": 25,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 27,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 29,
+      "tick": 0,
+      "text": "Dm"
+    },
+    {
+      "measure": 30,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 31,
+      "tick": 0,
+      "text": "Dm"
+    },
+    {
+      "measure": 37,
+      "tick": 0,
+      "text": "Gm"
+    },
+    {
+      "measure": 39,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 42,
+      "tick": 0,
+      "text": "Dm"
+    },
+    {
+      "measure": 43,
+      "tick": 960,
+      "text": "C"
+    },
+    {
+      "measure": 43,
+      "tick": 0,
+      "text": "Dm"
+    },
+    {
+      "measure": 44,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 44,
+      "tick": 960,
+      "text": "Dm"
+    },
+    {
+      "measure": 45,
+      "tick": 0,
+      "text": "Gm"
+    },
+    {
+      "measure": 47,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 50,
+      "tick": 0,
+      "text": "Dm"
+    },
+    {
+      "measure": 51,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 53,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 55,
+      "tick": 0,
+      "text": "C7"
+    },
+    {
+      "measure": 57,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 59,
+      "tick": 0,
+      "text": "Dm"
+    },
+    {
+      "measure": 61,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 61,
+      "tick": 0,
+      "text": "Dm"
+    },
+    {
+      "measure": 62,
+      "tick": 0,
+      "text": "Dm"
+    }
+  ]
 }

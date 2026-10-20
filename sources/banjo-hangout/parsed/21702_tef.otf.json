@@ -2754,7 +2754,10 @@
               {
                 "s": 2,
                 "f": 6,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "bend-release"
+                ]
               }
             ]
           },
@@ -3341,7 +3344,10 @@
               {
                 "s": 2,
                 "f": 5,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "choke"
+                ]
               }
             ]
           },
@@ -3351,7 +3357,10 @@
               {
                 "s": 2,
                 "f": 5,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "choke"
+                ]
               }
             ]
           },
@@ -4591,7 +4600,10 @@
               {
                 "s": 2,
                 "f": 5,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "choke"
+                ]
               }
             ]
           },
@@ -4601,7 +4613,10 @@
               {
                 "s": 2,
                 "f": 5,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "choke"
+                ]
               }
             ]
           },
@@ -5009,5 +5024,27 @@
     "download_file": "21702_tef_southern_flavor.tef",
     "author": "Cwiiis",
     "converted_at": "2026-08-01T11:11:14.858851"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "1st break - A part"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "B part"
+    },
+    {
+      "measure": 35,
+      "tick": 0,
+      "text": "2nd break - A part"
+    },
+    {
+      "measure": 52,
+      "tick": 0,
+      "text": "B part"
+    }
+  ]
 }

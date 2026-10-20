@@ -1976,7 +1976,11 @@
               {
                 "s": 4,
                 "f": 5,
-                "dur": 240
+                "dur": 240,
+                "grace": {
+                  "f": 2,
+                  "kind": "slide"
+                }
               }
             ]
           },
@@ -2213,7 +2217,11 @@
               {
                 "s": 3,
                 "f": 5,
-                "dur": 240
+                "dur": 240,
+                "grace": {
+                  "f": 3,
+                  "kind": "slide"
+                }
               }
             ]
           },
@@ -2625,7 +2633,10 @@
               {
                 "s": 3,
                 "f": 3,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "choke"
+                ]
               }
             ]
           }
@@ -5309,5 +5320,137 @@
     "download_file": "11688_tef_old_dangerfield.tef",
     "author": "schlange",
     "converted_at": "2026-08-01T11:09:09.884397"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "Capo II"
+    },
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "(Guitar & Banjo)"
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "Part A"
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "Part B"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 18,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 19,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 21,
+      "tick": 0,
+      "text": "Part C"
+    },
+    {
+      "measure": 21,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 23,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 25,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 27,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 29,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 31,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 33,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 34,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 35,
+      "tick": 0,
+      "text": "G"
+    }
+  ]
 }

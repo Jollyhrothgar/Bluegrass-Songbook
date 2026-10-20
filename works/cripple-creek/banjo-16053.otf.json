@@ -721,5 +721,17 @@
     "author": "janolov",
     "converted_at": "2026-07-26T22:20:05.598827",
     "source_id": "16053"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "Emphasize this note"
+    },
+    {
+      "measure": 3,
+      "tick": 0,
+      "text": "Emphasize this note"
+    }
+  ]
 }

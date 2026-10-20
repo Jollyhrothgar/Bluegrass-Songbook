@@ -1315,5 +1315,47 @@
     "author": "janolov",
     "converted_at": "2026-07-26T22:20:06.852594",
     "source_id": "16051"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "A part"
+    },
+    {
+      "measure": 2,
+      "tick": 480,
+      "text": ">"
+    },
+    {
+      "measure": 3,
+      "tick": 480,
+      "text": ">"
+    },
+    {
+      "measure": 4,
+      "tick": 480,
+      "text": ">"
+    },
+    {
+      "measure": 6,
+      "tick": 480,
+      "text": ">"
+    },
+    {
+      "measure": 7,
+      "tick": 480,
+      "text": ">"
+    },
+    {
+      "measure": 8,
+      "tick": 480,
+      "text": ">"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "B part"
+    }
+  ]
 }

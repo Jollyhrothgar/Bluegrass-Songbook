@@ -3829,5 +3829,27 @@
     "author": "hannes fehringer",
     "converted_at": "2026-07-26T22:20:05.154029",
     "source_id": "3366"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 41,
+      "tick": 0,
+      "text": "OUTRO"
+    },
+    {
+      "measure": 45,
+      "tick": 0,
+      "text": "INTRO Lick 1"
+    },
+    {
+      "measure": 46,
+      "tick": 0,
+      "text": "Lick 2"
+    },
+    {
+      "measure": 47,
+      "tick": 0,
+      "text": "Lick 3"
+    }
+  ]
 }

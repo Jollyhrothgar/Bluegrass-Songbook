@@ -17,8 +17,9 @@ import { EditorToolbar } from './toolbar.js';
 import { EditorMenuBar } from './menu-bar.js';
 import {
     NoteEntryPopover, AnnotationPopover, TrackNamePopover, ValuePromptPopover,
+    GracePopover,
 } from './popover.js';
-import { sanitizeTrackId } from './facade.js';
+import { sanitizeTrackId, FX_ORDER, isGrace } from './facade.js';
 import { downloadOTF, cleanupOTF, validateOTF } from './actions.js';
 import { ContextMenu } from './context-menu.js';
 import {
@@ -111,6 +112,7 @@ export class OTFEditor {
             onLoopSelection: () => this.loopSelection(),
             onEditAnnotation: () => this.editAnnotationAtCursor(),
             onGoToMeasure: () => this._promptForMeasure(),
+            onEditGrace: () => this.editGraceAtCursor(),
             onStatus: (msg) => this.flashStatus(msg),
             recorder: this.recorder,
         });
@@ -227,6 +229,12 @@ export class OTFEditor {
         // two `window.prompt` calls: a native dialog is not in the DOM, so
         // no test can drive it and no theme can style it.
         this.valuePopover = new ValuePromptPopover({
+            onCancel: () => this.editorRoot?.focus(),
+        });
+        // TablEdit's Alt+G Grace Note dialog: a fret and a connection for
+        // the grace note hung on the note at the cursor.
+        this.gracePopover = new GracePopover({
+            onCommit: (grace) => this._commitGrace(grace),
             onCancel: () => this.editorRoot?.focus(),
         });
 
@@ -354,6 +362,7 @@ export class OTFEditor {
         this.annotationPopover.init(this.container);
         this.trackNamePopover.init(this.container);
         this.valuePopover.init(this.container);
+        this.gracePopover.init(this.container);
 
         // Attach keyboard handler
         this.keyboard.attach(this.editorRoot);
@@ -1043,6 +1052,8 @@ export class OTFEditor {
             tech: existing?.tie ? '~' : (existing?.tech || null),
             finger: existing?.finger || null,
             lh: existing?.lh ?? null,
+            fx: existing?.fx || [],
+            grace: existing?.grace || null,
             editing: !!existing,
         });
     }
@@ -1066,6 +1077,15 @@ export class OTFEditor {
             };
             this.state.facade.setFingering(pos, note.finger ?? null, this.state.trackId);
             this.state.facade.setLeftHand(pos, note.lh ?? null, this.state.trackId);
+            // The effects row is the note's whole fx set; the grace is not
+            // edited here (Alt+G is) but rides along so an edit keeps it.
+            const fx = note.fx || [];
+            for (const name of FX_ORDER) {
+                this.state.facade.setEffect(pos, name, fx.includes(name), this.state.trackId);
+            }
+            if (isGrace(note.grace)) {
+                this.state.facade.setGrace(pos, note.grace, this.state.trackId);
+            }
             return true;
         });
 
@@ -1081,6 +1101,39 @@ export class OTFEditor {
 
         // Focus editor
         this.editorRoot.focus();
+    }
+
+    // ------------------------------------------------------------------
+    // Grace notes — TablEdit's Alt+G dialog
+    // ------------------------------------------------------------------
+
+    /**
+     * Open the grace-note panel over the note at the cursor, pre-filled
+     * with its grace if it has one. A grace hangs on a note, so on an
+     * empty slot this SAYS so rather than opening an answer nothing could
+     * be stored on.
+     * @returns {boolean} whether the panel opened
+     */
+    editGraceAtCursor() {
+        const note = this.state.getNoteAtCursor();
+        if (!note) {
+            this.flashStatus('Grace note: put the cursor on a note first');
+            return false;
+        }
+        this.gracePopover.open({ existing: note.grace || null });
+        return true;
+    }
+
+    /** Commit the panel's answer (`null` = Remove). Undoable. */
+    _commitGrace(grace) {
+        this.keyboard.recorder?.record('setGrace', {
+            measure: this.state.cursor.measure,
+            tick: this.state.cursor.tick,
+            string: this.state.cursor.string,
+            grace,
+        });
+        this.state.setGraceAtCursor(grace);
+        this.editorRoot?.focus();
     }
 
     // ------------------------------------------------------------------
@@ -1599,6 +1652,11 @@ export class OTFEditor {
                 <span class="status-value" data-field="fingering">—</span>
             </span>
             <span class="status-separator">|</span>
+            <span class="status-item" title="Effects and grace note on the note at the cursor (Note ▸ Effects; n clears them)">
+                <span class="status-label">Fx:</span>
+                <span class="status-value" data-field="effects">—</span>
+            </span>
+            <span class="status-separator">|</span>
             <span class="status-item" title="Placed text at the cursor — c to add or edit, Shift+C to delete">
                 <span class="status-label">Text:</span>
                 <span class="status-value" data-field="annotation">—</span>
@@ -1697,6 +1755,20 @@ export class OTFEditor {
             if (note?.finger) parts.push(note.finger);
             if (note && note.lh != null) parts.push(`lh ${note.lh}`);
             fingEl.textContent = parts.length ? parts.join(' · ') : '—';
+        }
+
+        // Effects (`fx`) and the grace note, the same way: the stave draws
+        // them, this line says what is SET on the note under the cursor.
+        const fxEl = this.statusBar.querySelector('[data-field="effects"]');
+        if (fxEl) {
+            const note = this.state.getNoteAtCursor();
+            const parts = [...(note?.fx || [])];
+            if (note?.grace) {
+                parts.push(`grace ${note.grace.f}${note.grace.kind ? ' ' + note.grace.kind : ''}`);
+            }
+            const text = parts.join(' · ');
+            fxEl.textContent = text.length > 40 ? text.slice(0, 39) + '…' : (text || '—');
+            fxEl.title = text;
         }
 
         // Placed text at the cursor — the editor's only way to know which
@@ -2245,6 +2317,7 @@ export class OTFEditor {
         this.annotationPopover?.destroy();
         this.trackNamePopover?.destroy();
         this.valuePopover?.destroy();
+        this.gracePopover?.destroy();
         this.renderer?.destroy();
 
         // Clear container
@@ -2261,6 +2334,7 @@ export class OTFEditor {
         this.annotationPopover = null;
         this.trackNamePopover = null;
         this.valuePopover = null;
+        this.gracePopover = null;
         this.renderer = null;
         this.player = null;
     }

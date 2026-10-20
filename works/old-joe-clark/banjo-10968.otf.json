@@ -1714,5 +1714,87 @@
     "author": "schlange",
     "converted_at": "2026-07-26T22:20:05.628299",
     "source_id": "10968"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "pick-up"
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "Part A"
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "Part B"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "G"
+    }
+  ]
 }

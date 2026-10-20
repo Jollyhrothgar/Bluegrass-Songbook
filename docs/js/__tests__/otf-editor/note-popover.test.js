@@ -51,9 +51,12 @@ describe('NoteEntryPopover — the technique row', () => {
     it('is the toolbar’s articulation group, minus the clear latch', () => {
         expect(POPOVER_TECHS.map(t => t.tech))
             .toEqual(['h', 'p', '/', 'x', 'b', '~']);
-        // Same source, same wording — not a parallel list to keep in step
+        // Same source, same wording — not a parallel list to keep in step.
+        // The palette's fx buttons (brush, roll, …) are NOT techniques: a
+        // note carries a set of them, so the popover gives them their own
+        // row of toggles (POPOVER_FX).
         expect(POPOVER_TECHS.map(t => t.label))
-            .toEqual(ARTICULATION_BUTTONS.filter(c => !c.clear).map(c => c.label));
+            .toEqual(ARTICULATION_BUTTONS.filter(c => !c.clear && !c.fx).map(c => c.label));
     });
 
     it('offers h · p · / · x · b · ⌒, then none — and no bare `~`', () => {

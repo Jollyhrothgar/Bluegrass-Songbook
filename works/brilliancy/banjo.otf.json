@@ -4090,5 +4090,287 @@
     "source_file": "11655_tef_brilliancy.tef",
     "converted_at": "2026-07-26T23:03:39.120982",
     "source_id": "11655"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "Part A:"
+    },
+    {
+      "measure": 3,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 3,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 7,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 9,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 11,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 15,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 17,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "Part B:"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 20,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 22,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 22,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 23,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 24,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 25,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 26,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 27,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 28,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 30,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 30,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 31,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 32,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 33,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 34,
+      "tick": 0,
+      "text": "Part C:"
+    },
+    {
+      "measure": 35,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 36,
+      "tick": 0,
+      "text": "Am"
+    },
+    {
+      "measure": 37,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 38,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 39,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 40,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 40,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 41,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 43,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 44,
+      "tick": 0,
+      "text": "Am"
+    },
+    {
+      "measure": 45,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 46,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 47,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 48,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 48,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 49,
+      "tick": 0,
+      "text": "G"
+    }
+  ]
 }

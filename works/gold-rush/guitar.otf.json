@@ -2026,7 +2026,10 @@
               {
                 "s": 1,
                 "f": 3,
-                "dur": 960
+                "dur": 960,
+                "fx": [
+                  "roll"
+                ]
               },
               {
                 "s": 2,
@@ -2051,7 +2054,10 @@
               {
                 "s": 6,
                 "f": 3,
-                "dur": 960
+                "dur": 960,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -2087,5 +2093,12 @@
     "author": "Duffy",
     "converted_at": "2026-07-26T22:20:04.739526",
     "source_id": "1042"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "put your ( Idaho & P.E.I.) spuds here"
+    }
+  ]
 }

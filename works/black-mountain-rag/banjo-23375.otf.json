@@ -2043,5 +2043,22 @@
     "author": "Yohansen",
     "converted_at": "2026-07-26T22:20:06.034746",
     "source_id": "23375"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 120,
+      "text": "PART 1"
+    },
+    {
+      "measure": 5,
+      "tick": 120,
+      "text": "PART 2"
+    },
+    {
+      "measure": 9,
+      "tick": 120,
+      "text": "PART 3"
+    }
+  ]
 }

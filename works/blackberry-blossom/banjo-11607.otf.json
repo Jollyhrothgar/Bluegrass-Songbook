@@ -1614,5 +1614,157 @@
     "author": "schlange",
     "converted_at": "2026-07-26T22:20:05.351863",
     "source_id": "11607"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "pick-up"
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "Part A"
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 2,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 3,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 3,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 4,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 5,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 6,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 7,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 8,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 9,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 10,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "Part B"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "B7"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 17,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 18,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 19,
+      "tick": 960,
+      "text": "G"
+    }
+  ]
 }

@@ -2746,5 +2746,22 @@
     "author": "schlange",
     "converted_at": "2026-07-26T22:20:05.666151",
     "source_id": "11398"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "Part A"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "Part B"
+    },
+    {
+      "measure": 34,
+      "tick": 0,
+      "text": "Ending"
+    }
+  ]
 }

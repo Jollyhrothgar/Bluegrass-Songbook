@@ -1343,5 +1343,17 @@
     "download_file": "23377_tef_billy_in_the_low_ground.tef",
     "author": "Yohansen",
     "converted_at": "2026-08-01T11:11:06.153045"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 120,
+      "text": "VERSE"
+    },
+    {
+      "measure": 9,
+      "tick": 120,
+      "text": "CHORUS"
+    }
+  ]
 }

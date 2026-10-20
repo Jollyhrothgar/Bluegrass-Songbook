@@ -1332,7 +1332,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -1362,7 +1365,10 @@
               {
                 "s": 3,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -1397,7 +1403,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -1427,7 +1436,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -1462,7 +1474,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -1492,7 +1507,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -1527,7 +1545,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -1557,7 +1578,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -1592,7 +1616,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -1622,7 +1649,10 @@
               {
                 "s": 3,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -1657,7 +1687,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -1687,7 +1720,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -1722,7 +1758,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -1752,7 +1791,10 @@
               {
                 "s": 3,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -1787,7 +1829,10 @@
               {
                 "s": 3,
                 "f": 5,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -1817,7 +1862,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -1852,7 +1900,10 @@
               {
                 "s": 3,
                 "f": 5,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -1882,7 +1933,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -1917,7 +1971,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -1947,7 +2004,10 @@
               {
                 "s": 3,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -1982,7 +2042,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -2012,7 +2075,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -2047,7 +2113,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -2077,7 +2146,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -2112,7 +2184,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -2142,7 +2217,10 @@
               {
                 "s": 3,
                 "f": 5,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -2177,7 +2255,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -2207,7 +2288,10 @@
               {
                 "s": 3,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -2242,7 +2326,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -2272,7 +2359,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -2307,7 +2397,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -2337,7 +2430,10 @@
               {
                 "s": 3,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -2372,7 +2468,10 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -2402,7 +2501,10 @@
               {
                 "s": 3,
                 "f": 7,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           }
@@ -2437,7 +2539,10 @@
               {
                 "s": 3,
                 "f": 5,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "brush"
+                ]
               }
             ]
           },
@@ -2935,5 +3040,517 @@
     "author": "MandoTom2",
     "converted_at": "2026-07-26T22:20:04.973000",
     "source_id": "2580"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "D: Part 1..."
+    },
+    {
+      "measure": 2,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "D: Rhyth. Mando..."
+    },
+    {
+      "measure": 2,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "D: Mando Bass..."
+    },
+    {
+      "measure": 2,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 3,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 3,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 3,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 3,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 3,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 3,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "A(7)"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "A(7)"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "A(7)"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 6,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 6,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 6,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 7,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 7,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 7,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "(D)"
+    },
+    {
+      "measure": 8,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "(D)"
+    },
+    {
+      "measure": 8,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "(D)"
+    },
+    {
+      "measure": 8,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "A(7)"
+    },
+    {
+      "measure": 9,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "A(7)"
+    },
+    {
+      "measure": 9,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "A(7)"
+    },
+    {
+      "measure": 9,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "A(7)"
+    },
+    {
+      "measure": 10,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "A(7)"
+    },
+    {
+      "measure": 10,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "A(7)"
+    },
+    {
+      "measure": 10,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "D: Part 2..."
+    },
+    {
+      "measure": 11,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "D: Part 2..."
+    },
+    {
+      "measure": 11,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "D: Part 2..."
+    },
+    {
+      "measure": 11,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 12,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 12,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 12,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 13,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 13,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 13,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 14,
+      "tick": 960,
+      "text": "A(7)"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 14,
+      "tick": 960,
+      "text": "A(7)"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 14,
+      "tick": 960,
+      "text": "A(7)"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 15,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 15,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 15,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 16,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 16,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 16,
+      "tick": 960,
+      "text": "A"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 17,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 17,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 17,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 18,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 18,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 18,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "A(7)"
+    },
+    {
+      "measure": 19,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "A(7)"
+    },
+    {
+      "measure": 19,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "A(7)"
+    },
+    {
+      "measure": 19,
+      "tick": 960,
+      "text": "D"
+    }
+  ]
 }

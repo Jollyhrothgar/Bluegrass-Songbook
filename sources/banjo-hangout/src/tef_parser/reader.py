@@ -1307,6 +1307,11 @@ class TEFReader:
         ts_move = 0
         ts_changes: list[TEFTimeSignatureChange] = []
 
+        # Text components (fret byte 0x1d -> TablEdit type 0x39 in the V2
+        # upgrade FUN_1000459c4): byte 3 indexes the text table that follows
+        # the reading list. Resolved by _parse_v2.
+        self._v2_text_refs: list[tuple[int, int, int]] = []  # (position, string_row, index)
+
         # Loud-failure backstop. A component stream read at the wrong
         # stride still decodes into "notes" — just at impossible measure
         # numbers (10591 read as 6-byte records reported 324 notes across
@@ -1386,6 +1391,13 @@ class TEFReader:
 
             if ts_move and position_in_measure >= ts_move:
                 position_in_measure -= ts_move
+
+            if fret_byte == 0x1d:
+                self._v2_text_refs.append((
+                    (measure * ts_size + position_in_measure) * pos_scale,
+                    cumulative_string, rec[3]))
+                offset += stride
+                continue
 
             # Check for note vs special component. Fret field 0x1a is fret
             # 25 unless the byte is a BARE 0x1a, which TablEdit's V2 upgrade
@@ -1770,6 +1782,30 @@ class TEFReader:
 
         return entries
 
+    def parse_text_table_v2(self, header: TEFHeader) -> list[str]:
+        """V2 free-text table: u16 count at header offset 228, entries right
+        after the reading list, each a u16 length then that many bytes
+        (NUL-terminated). Rawhide (11051): 6 entries "G" "C" "D" "B" "E"
+        "A"; the count matches TablEdit's exported text in 278 of 298 files
+        (the rest differ only by XML escaping or texts TablEdit does not
+        export, such as "Capo II")."""
+        data = self.data
+        count = struct.unpack("<H", data[228:230])[0] if len(data) >= 230 else 0
+        offset = (header.v2_component_offset
+                  + header.v2_component_count * self.v2_component_stride(header)
+                  + 2 * header.v2_repeats_count)
+        texts = []
+        for _ in range(count):
+            if offset + 2 > len(data):
+                break
+            length = struct.unpack("<H", data[offset:offset + 2])[0]
+            if offset + 2 + length > len(data):
+                break
+            texts.append(data[offset + 2:offset + 2 + length].split(b"\x00")[0]
+                         .decode("latin-1").strip())
+            offset += 2 + length
+        return texts
+
     def parse(self) -> TEFFile:
         """Parse the entire TEF file.
 
@@ -1884,6 +1920,12 @@ class TEFReader:
         # measure end. Shift measure-1 notes left and record the
         # shortened signature (oracle-verified on 22456/18926: parser
         # notes sat exactly first_note_position too late).
+        text_table = self.parse_text_table_v2(header)
+        text_events = [
+            TEFTextEvent(position=pos, string_row=row, text=text_table[idx])
+            for pos, row, idx in getattr(self, "_v2_text_refs", [])
+            if idx < len(text_table) and text_table[idx]]
+
         if header.v2_anacrusis and not any(
                 c.measure == 1 for c in time_signature_changes):
             ts_size = header.v2_ts_size
@@ -1892,6 +1934,9 @@ class TEFReader:
             if shift > 0:
                 for e in m0:
                     e.position -= shift
+                for te in text_events:
+                    if te.position < ts_size:
+                        te.position = max(0, te.position - shift)
                 den = header.v2_time_denom or 4
                 grid = ts_size - shift
                 num = grid * den // 256
@@ -1921,6 +1966,7 @@ class TEFReader:
             chords=chords,
             sections=sections,
             note_events=note_events,
+            text_events=text_events,
             reading_list=reading_list,
             time_signature_changes=time_signature_changes,
         )

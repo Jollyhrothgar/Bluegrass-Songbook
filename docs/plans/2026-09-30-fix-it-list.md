@@ -52,7 +52,7 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | A12 | TEF import: 99 tabs parse empty, V3 32nds on phantom strings | S | `bug/tef-v3-routing` | done (#277): fixed + 98 tabs imported |
 | A13 | TEF import: remaining mismatches vs TablEdit's loader | M | `bug/tef-v3-routing` | done (#277): 7 fixed; 4 open + 3 follow-ups, see below |
 | A14 | TEF import: whole-corpus check against TablEdit's own MusicXML | M | `bug/tef-v3-routing` | done (#277): 4 fixed; 548/592 files exact, residue listed below |
-| A15 | TEF feature survey: what TablEdit files hold that never reaches the reader | M | `feature/tef-feature-survey` | survey done (2026-10-18); 9 follow-ups proposed, none started |
+| A15 | TEF feature survey: what TablEdit files hold that never reaches the reader | M | `feature/tef-import-gaps` | survey #278; 7 of 9 follow-ups done — #279 (2026-10-19): import, draw, play and edit with TablEdit's keys; open: repeat barlines, chord diagrams, dynamics, tempo changes |
 | A16 | Local E2E: random failures with ERR_CONNECTION_RESET from the test server | S | `bug/dev-server-backlog` | done — #280 (2026-10-19): listen backlog 5 → 128 in `scripts/server`; 171/171 editor + tab specs pass twice at 7 workers |
 | B1 | Collection thumbnails 5.35 MB → ~50 KB | S | `feature/perf-thumbnails` (+ render gating in `feature/perf-boot-data`) | done — #274 (2026-10-01) |
 | B2 | Archive loads on every page | M | `feature/perf-boot-data` | done — #274 (2026-10-01) |
@@ -865,6 +865,27 @@ Biggest gaps, by published tabs (458 of the 592 corpus files are published):
 Corrections: V2 fret-byte flag 0x80 means "effect2 is a note attribute"
 (staccato, ringing, ghost…), not accompaniment notes; effect2 0x07 is
 staccato under that flag. Proposed order is in the survey doc, §5.
+
+**Follow-ups done (2026-10-18, `feature/tef-import-gaps`).** One note model
+end to end — importer (Python + JS, parity 599/599), renderer, player and
+editor — taken from TablEdit's own:
+
+- `note.fx`: brush, roll, choke, ghost, staccato, let-ring, muted, harmonics,
+  tap, vibrato, tremolo, bend-release, slap; `note.grace {f, kind}` (format in
+  `docs/js/otf-editor/DESIGN.md`). V2 dead notes → `x`; V2 text →
+  `annotations` (22,091 of 22,106 in TablEdit's own measure).
+- Site: every triplet gets its bracket; hammer/pull play as one pick; each
+  fx/grace is drawn (`renderers/CLAUDE.md` marks table) and played
+  (`renderers/CLAUDE.md` TabPlayer fx table).
+- Editor, TablEdit keys: `b` brush, `r` roll, `c` choke, `g` ghost, `/`
+  staccato, `Alt+G` grace, `n` clears, `F3` repeats; the rest in Note ▸
+  Effects (TablEdit has no keys for them). Moved: repeat-previous-measure
+  `r` → `Alt+R`; bend target `c` → Note ▸ Bend (target).
+- 355 published tabs refreshed; all 461 with a TEF on disk equal the parser.
+
+Still open: repeat barlines (the "reading guide" also encodes endings/codas;
+naive expansion matches only 14 of 71 real reading lists), chord diagrams,
+dynamics, tempo changes; brush direction is not decoded.
 
 ## B. Speed
 

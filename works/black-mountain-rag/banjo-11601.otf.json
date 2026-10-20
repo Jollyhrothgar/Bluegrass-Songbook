@@ -2436,5 +2436,122 @@
     "author": "schlange",
     "converted_at": "2026-07-26T22:20:06.018612",
     "source_id": "11601"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "A Part"
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 5,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 6,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "B Part"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 10,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "C Part"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 21,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 23,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 24,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 25,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 27,
+      "tick": 0,
+      "text": "B Part Variation (x=harmonics)"
+    },
+    {
+      "measure": 27,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 30,
+      "tick": 0,
+      "text": "D"
+    }
+  ]
 }

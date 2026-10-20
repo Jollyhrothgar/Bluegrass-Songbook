@@ -10030,32 +10030,50 @@
               {
                 "s": 1,
                 "f": 3,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "let-ring"
+                ]
               },
               {
                 "s": 2,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "let-ring"
+                ]
               },
               {
                 "s": 3,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "let-ring"
+                ]
               },
               {
                 "s": 4,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "let-ring"
+                ]
               },
               {
                 "s": 5,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "let-ring"
+                ]
               },
               {
                 "s": 6,
                 "f": 3,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "let-ring"
+                ]
               }
             ]
           }
@@ -10070,5 +10088,232 @@
     "download_file": "15990_tef_sandy_boys.tef",
     "author": "corcoran",
     "converted_at": "2026-08-01T11:11:13.203476"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 360,
+      "text": "A Part"
+    },
+    {
+      "measure": 1,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 16,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 480,
+      "text": "B Part"
+    },
+    {
+      "measure": 21,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 22,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 24,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 25,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 29,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 30,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 32,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 32,
+      "tick": 0,
+      "text": "I"
+    },
+    {
+      "measure": 32,
+      "tick": 240,
+      "text": "T"
+    },
+    {
+      "measure": 32,
+      "tick": 480,
+      "text": "M"
+    },
+    {
+      "measure": 32,
+      "tick": 720,
+      "text": "T"
+    },
+    {
+      "measure": 32,
+      "tick": 960,
+      "text": "I"
+    },
+    {
+      "measure": 32,
+      "tick": 1200,
+      "text": "T"
+    },
+    {
+      "measure": 32,
+      "tick": 1440,
+      "text": "I"
+    },
+    {
+      "measure": 32,
+      "tick": 1680,
+      "text": "T"
+    },
+    {
+      "measure": 33,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 33,
+      "tick": 720,
+      "text": "Second break"
+    },
+    {
+      "measure": 33,
+      "tick": 0,
+      "text": "I"
+    },
+    {
+      "measure": 40,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 41,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 48,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 49,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 53,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 54,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 56,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 57,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 61,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 62,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 64,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 64,
+      "tick": 0,
+      "text": "I"
+    },
+    {
+      "measure": 64,
+      "tick": 240,
+      "text": "T"
+    },
+    {
+      "measure": 64,
+      "tick": 480,
+      "text": "M"
+    },
+    {
+      "measure": 64,
+      "tick": 720,
+      "text": "T"
+    },
+    {
+      "measure": 64,
+      "tick": 960,
+      "text": "I"
+    },
+    {
+      "measure": 64,
+      "tick": 1200,
+      "text": "T"
+    },
+    {
+      "measure": 64,
+      "tick": 1440,
+      "text": "I"
+    },
+    {
+      "measure": 64,
+      "tick": 1680,
+      "text": "T"
+    }
+  ]
 }
