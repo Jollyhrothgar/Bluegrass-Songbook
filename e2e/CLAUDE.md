@@ -39,6 +39,19 @@ npm run test:e2e       # Run all E2E tests
 npm run test:all       # Run unit tests + E2E tests
 ```
 
+### When it fails on one machine only
+
+- **Random tests fail, a different set each run, and the trace shows
+  `net::ERR_CONNECTION_RESET` on `localhost`**: the test server's listen
+  backlog overflowed. Every page asks for ~40 ES modules at once, one page per
+  worker. `scripts/server` sets `request_queue_size = 128` for this (Python's
+  default is 5). If it ever comes back, `--workers=1` passing is the tell.
+- **`npx playwright install` hangs** after writing `ABOUT` and `LICENSE*` into
+  the browser folder, at 0% CPU: Playwright's zip extractor stalls under
+  Node 24.16.0 (24.7.0 and 24.22.0 are fine). Install with another Node, e.g.
+  `mise x node@24.22.0 -- npx playwright install chromium chromium-headless-shell`.
+  Only the install needs it; the tests run on any Node.
+
 ## Configuration
 
 - **Config**: `playwright.config.js` (project root)

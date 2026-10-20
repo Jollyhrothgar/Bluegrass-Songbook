@@ -53,6 +53,7 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | A13 | TEF import: remaining mismatches vs TablEdit's loader | M | `bug/tef-v3-routing` | done (#277): 7 fixed; 4 open + 3 follow-ups, see below |
 | A14 | TEF import: whole-corpus check against TablEdit's own MusicXML | M | `bug/tef-v3-routing` | done (#277): 4 fixed; 548/592 files exact, residue listed below |
 | A15 | TEF feature survey: what TablEdit files hold that never reaches the reader | M | `feature/tef-import-gaps` | survey #278; 7 of 9 follow-ups done — #279 (2026-10-19): import, draw, play and edit with TablEdit's keys; open: repeat barlines, chord diagrams, dynamics, tempo changes |
+| A16 | Local E2E: random failures with ERR_CONNECTION_RESET from the test server | S | `bug/dev-server-backlog` | done — #280 (2026-10-19): listen backlog 5 → 128 in `scripts/server`; 171/171 editor + tab specs pass twice at 7 workers |
 | B1 | Collection thumbnails 5.35 MB → ~50 KB | S | `feature/perf-thumbnails` (+ render gating in `feature/perf-boot-data`) | done — #274 (2026-10-01) |
 | B2 | Archive loads on every page | M | `feature/perf-boot-data` | done — #274 (2026-10-01) |
 | B3 | First render waits on Supabase, no timeout | M | `feature/perf-boot-data` | done — #274 (2026-10-01) |
