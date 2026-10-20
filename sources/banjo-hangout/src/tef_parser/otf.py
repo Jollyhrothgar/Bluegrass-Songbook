@@ -61,6 +61,8 @@ class OTFNote:
     lh: int | None = None      # Fretting-hand digit (0-4), circled in display
     dur: int | None = None     # Duration in ticks (for sustained notes)
     tie: bool = False          # True if tied to previous note (no re-articulation)
+    fx: list[str] | None = None    # TablEdit per-note effects (FX_ORDER)
+    grace: dict | None = None      # {"f": fret, "kind"?: GRACE_KINDS}
 
 
 @dataclass
@@ -199,6 +201,10 @@ class OTFDocument:
                             n["dur"] = note.dur
                         if note.tie:
                             n["tie"] = True
+                        if note.fx:
+                            n["fx"] = list(note.fx)
+                        if note.grace:
+                            n["grace"] = dict(note.grace)
                         e["notes"].append(n)
                     m["events"].append(e)
                 result["notation"][track_id].append(m)
@@ -330,6 +336,91 @@ def is_tied_note(event: TEFNoteEvent) -> bool:
         # notes in 12 files (11721's guitar beat-3 chords are 0x86).
         return (event.raw_data[5] >> 5) & 0x07 == 7
     return False
+
+
+# TablEdit's per-note effects, in its own vocabulary (fix-it A15). The note
+# effect enum is V3 byte 6 / V2 effect1 & 0x0f (string table at 0x1000f57e0);
+# 1-3 are transitions (tech h/p/slide), 12 is the bend the connect-bit
+# heuristic already marks 'b', 15 is the dead note 'x'. The rest are `fx`.
+EFFECT_FX = {4: "choke", 5: "brush", 6: "harmonic", 7: "artificial-harmonic",
+             8: "muted", 9: "tap", 10: "vibrato", 11: "tremolo",
+             13: "bend-release", 14: "roll"}
+# Attribute byte (V3 byte 8; V2 effect2 under fret-byte flag 0x80), read by
+# FUN_10001f594: low nibble = attribute, high nibble = a second effect.
+ATTRIBUTE_FX = {1: "let-ring", 2: "slap", 4: "ghost", 7: "staccato"}
+SECOND_FX = {3: "roll", 5: "brush", 6: "harmonic", 7: "artificial-harmonic",
+             8: "let-ring", 9: "ghost"}
+SECOND_DEAD = 10
+# V2 effect2 values under flag 0x80 that TablEdit turns into layout flags.
+V2_LAYOUT_CODES = {0x0b, 0x0c, 0x0d, 0x0e, 0xc0, 0xd0}
+# Canonical order of `fx`: the order the vocabulary is listed in the format doc.
+FX_ORDER = ["brush", "roll", "choke", "ghost", "staccato", "let-ring", "muted",
+            "harmonic", "artificial-harmonic", "tap", "vibrato", "tremolo",
+            "bend-release", "slap"]
+GRACE_KINDS = [None, "hp", "slide", "bend", "mordent", "double", "gruppetto", "trill"]
+
+
+def _attribute_byte(event: TEFNoteEvent) -> int:
+    raw = event.raw_data or b""
+    if len(raw) >= 12:
+        return raw[8]
+    if len(raw) >= 6 and raw[2] & 0xe0 == 0x80 and raw[5] not in V2_LAYOUT_CODES:
+        return raw[5]
+    return 0
+
+
+def note_fx(event: TEFNoteEvent) -> list[str]:
+    """`fx` for one note: its effect plus its attribute and second effect."""
+    raw = event.raw_data or b""
+    if len(raw) >= 12:
+        effect = raw[6] & 0x0f
+    elif len(raw) >= 6:
+        effect = raw[4] & 0x0f
+    else:
+        return []
+    fx = set()
+    if effect in EFFECT_FX:
+        fx.add(EFFECT_FX[effect])
+    attr = _attribute_byte(event)
+    hi, lo = attr >> 4, attr & 0x0f
+    if hi != 3 and lo in ATTRIBUTE_FX:
+        fx.add(ATTRIBUTE_FX[lo])
+    if hi in SECOND_FX:
+        fx.add(SECOND_FX[hi])
+    return [f for f in FX_ORDER if f in fx]
+
+
+def note_grace(event: TEFNoteEvent) -> dict | None:
+    """The grace note TablEdit hangs on a MAIN note: flag 0x40 on the V3
+    type byte / V2 fret byte, fret in bits 0-4 and kind in bits 5-7 of V3
+    byte 7 / V2 effect2 (GraceNote dialog, FUN_10001d130). Checked against
+    TablEdit's export: grace and main pitches match in every file tried."""
+    raw = event.raw_data or b""
+    if len(raw) >= 12 and raw[4] & 0x40:
+        g = raw[7]
+    elif len(raw) >= 6 and len(raw) < 12 and raw[2] & 0xe0 == 0x40:
+        g = raw[5]
+    else:
+        return None
+    grace = {"f": g & 0x1f}
+    if GRACE_KINDS[g >> 5]:
+        grace["kind"] = GRACE_KINDS[g >> 5]
+    return grace
+
+
+def is_dead_note(event: TEFNoteEvent) -> bool:
+    """TablEdit's note effect is the low nibble of V3 byte 6 / V2 effect1
+    (bits 4-5 are the voice), and 15 is 'Dead note' (string table at
+    0x1000f57e0). The V2 path used to ignore it, so 20,029 V2 dead notes
+    in 84 files imported as ringing notes (fix-it A15)."""
+    raw = event.raw_data
+    if not raw:
+        return False
+    if _attribute_byte(event) >> 4 == SECOND_DEAD:
+        return True
+    if len(raw) >= 12:
+        return raw[6] & 0x0f == 0x0f
+    return len(raw) >= 6 and raw[4] & 0x0f == 0x0f
 
 
 def has_legato_effect(event: TEFNoteEvent) -> bool:
@@ -986,8 +1077,7 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
                         # strings before (Mike caught the missing
                         # note-type). Takes precedence over any paired
                         # transition tech.
-                        if (evt.raw_data and len(evt.raw_data) >= 12
-                                and evt.raw_data[6] == 0x0f):
+                        if is_dead_note(evt):
                             tech = 'x'
                         # Check if this note is tied to the previous note
                         tie = is_tied_note(evt)
@@ -1010,7 +1100,9 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
                         else:
                             finger, lh = v3_fingering(evt)
                         note = OTFNote(s=string, f=fret, tech=tech, finger=finger,
-                                       lh=lh, tie=tie, dur=evt.duration_ticks)
+                                       lh=lh, tie=tie, dur=evt.duration_ticks,
+                                       fx=note_fx(evt) or None,
+                                       grace=note_grace(evt))
                         otf_event.notes.append(note)
 
                 if otf_event.notes:
@@ -1027,10 +1119,15 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
     # chord letters, section banners). Positions share the note grid, so
     # the same 64-units-per-measure math applies.
     for te in tef.text_events:
-        index, offset = tef.v3_locate(te.position)
+        if tef.header.is_v2:
+            index, offset = divmod(te.position, units_per_measure)
+            tick = (offset & ~3) * 15 // 2
+        else:
+            index, offset = tef.v3_locate(te.position)
+            tick = offset * V3_TICKS_PER_UNIT
         doc.annotations.append(OTFAnnotation(
             measure=index + 1,
-            tick=offset * V3_TICKS_PER_UNIT,
+            tick=tick,
             text=te.text,
         ))
 

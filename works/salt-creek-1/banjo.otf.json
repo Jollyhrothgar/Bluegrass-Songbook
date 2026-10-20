@@ -1413,5 +1413,87 @@
     "source_file": "20627.tef",
     "converted_at": "2026-07-19T11:46:04.294996",
     "source_id": "20627"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 2,
+      "tick": 960,
+      "text": "C"
+    },
+    {
+      "measure": 3,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 4,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 6,
+      "tick": 960,
+      "text": "C"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 8,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 15,
+      "tick": 960,
+      "text": "C"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 16,
+      "tick": 960,
+      "text": "G"
+    }
+  ]
 }

@@ -58,7 +58,7 @@ export class ContextMenu {
             // produce dead notes, chokes or ties until the table landed)
             { id: 'tie', label: 'Tie to previous note', kbd: kbd('effect.tie'), disabled: !hasNote && !hasSelection },
             { id: 'dead', label: 'Dead note', kbd: kbd('effect.dead'), disabled: !hasNote && !hasSelection },
-            { id: 'choke', label: 'Choke / bend', kbd: kbd('effect.choke'), disabled: !hasNote && !hasSelection },
+            { id: 'choke', label: 'Choke', kbd: kbd('effect.choke'), disabled: !hasNote && !hasSelection },
             { id: 'clearTech', label: 'Clear effect', kbd: kbd('effect.clear'), disabled: !hasNote && !hasSelection },
             { id: 'restringUp', label: 'Move up a string (same pitch)', kbd: kbd('note.restringUp'), disabled: !hasNote },
             { id: 'restringDown', label: 'Move down a string (same pitch)', kbd: kbd('note.restringDown'), disabled: !hasNote },

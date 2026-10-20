@@ -2635,5 +2635,207 @@
     "author": "Mirek Tim Patek",
     "converted_at": "2026-07-26T22:20:05.373273",
     "source_id": "14677"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 1,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 2,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 3,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 3,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 4,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 5,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 6,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 7,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 8,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 9,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 10,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 11,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 12,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 13,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 14,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 15,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 16,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 20,
+      "tick": 0,
+      "text": "B7"
+    },
+    {
+      "measure": 21,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 24,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 24,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 25,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 28,
+      "tick": 0,
+      "text": "B7"
+    },
+    {
+      "measure": 29,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 32,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 32,
+      "tick": 960,
+      "text": "G"
+    }
+  ]
 }

@@ -2882,7 +2882,11 @@
               {
                 "s": 2,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "grace": {
+                  "f": 5,
+                  "kind": "slide"
+                }
               }
             ]
           },
@@ -3232,7 +3236,11 @@
               {
                 "s": 2,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "grace": {
+                  "f": 5,
+                  "kind": "slide"
+                }
               }
             ]
           },
@@ -3522,7 +3530,11 @@
               {
                 "s": 2,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "grace": {
+                  "f": 5,
+                  "kind": "slide"
+                }
               }
             ]
           },
@@ -4203,7 +4215,11 @@
               {
                 "s": 4,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "grace": {
+                  "f": 5,
+                  "kind": "slide"
+                }
               }
             ]
           },
@@ -4563,7 +4579,11 @@
               {
                 "s": 4,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "grace": {
+                  "f": 5,
+                  "kind": "slide"
+                }
               }
             ]
           },
@@ -4864,7 +4884,11 @@
               {
                 "s": 2,
                 "f": 7,
-                "dur": 240
+                "dur": 240,
+                "grace": {
+                  "f": 5,
+                  "kind": "slide"
+                }
               }
             ]
           },
@@ -7681,5 +7705,172 @@
     "download_file": "22562_tef_southern_flavor.tef",
     "author": "janolov",
     "converted_at": "2026-08-01T11:14:58.552583"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 3,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "B7"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "B7"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "F#m"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 20,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 21,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 22,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 23,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 24,
+      "tick": 0,
+      "text": "B7"
+    },
+    {
+      "measure": 25,
+      "tick": 0,
+      "text": "B7"
+    },
+    {
+      "measure": 26,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 27,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 28,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 29,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 30,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 31,
+      "tick": 0,
+      "text": "F#m"
+    },
+    {
+      "measure": 31,
+      "tick": 960,
+      "text": "B7"
+    },
+    {
+      "measure": 32,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 33,
+      "tick": 0,
+      "text": "Em"
+    }
+  ]
 }

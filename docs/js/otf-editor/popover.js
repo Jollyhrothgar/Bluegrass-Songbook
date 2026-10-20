@@ -2,7 +2,8 @@
 // UI for entering notes and placed text via click/tap
 //
 import { FretEntry } from './bindings.js';
-import { ARTICULATION_BUTTONS } from './toolbar.js';
+import { ARTICULATION_BUTTONS, FX_BUTTONS } from './toolbar.js';
+import { FX_ORDER, GRACE_KINDS, GRACE_MAX_FRET } from './facade.js';
 
 /**
  * The note popover's TECHNIQUE row — the toolbar's articulation group,
@@ -16,7 +17,7 @@ import { ARTICULATION_BUTTONS } from './toolbar.js';
  * reads as "tie this to its same-string predecessor", never as a tech.
  */
 export const POPOVER_TECHS = ARTICULATION_BUTTONS
-    .filter(cfg => !cfg.clear)
+    .filter(cfg => !cfg.clear && !cfg.fx)
     .map(cfg => ({
         tech: cfg.tie ? '~' : cfg.tech,
         symbol: cfg.symbol,
@@ -36,6 +37,15 @@ export const POPOVER_TECHS = ARTICULATION_BUTTONS
  */
 export const POPOVER_FINGERS = ['T', 'I', 'M', 'R', 'P'];
 export const POPOVER_LH = [0, 1, 2, 3, 4];
+
+/**
+ * The note popover's EFFECTS row — every TablEdit note effect (`fx`),
+ * including the ones no key reaches (harmonics, vibrato, let ring…), so
+ * a phone can set all of them. Unlike the technique row these are
+ * TOGGLES: `fx` is a set, a note may be brush AND let-ring. Same configs
+ * as the toolbar's fx buttons (`FX_BUTTONS`), in canonical order.
+ */
+export const POPOVER_FX = FX_BUTTONS;
 
 /** Why the tie button is off when it is. */
 const NO_TIE_REASON =
@@ -70,6 +80,11 @@ export class NoteEntryPopover {
         this.selectedTech = null;
         this.selectedFinger = null;
         this.selectedLh = null;
+        // The note's effects — a SET (see POPOVER_FX) — and its grace,
+        // which this panel does not edit (Alt+G does) but must hand back
+        // so an in-place edit doesn't drop it.
+        this.selectedFx = new Set();
+        this.grace = null;
         this.highFretOffset = 0;
         // True when the popover was opened OVER a note: Insert then
         // rewrites that note in place instead of adding a second one.
@@ -183,6 +198,12 @@ export class NoteEntryPopover {
                         <button class="tech-button tech-none${!this.selectedTech ? ' selected' : ''}" data-tech="">none</button>
                     </div>
                 </div>
+                <div class="popover-section effects-section">
+                    <label class="section-label">Effects</label>
+                    <div class="fx-selector button-row">
+                        ${this._renderFxButtons()}
+                    </div>
+                </div>
                 <div class="popover-section fingering-section">
                     <label class="section-label">Fingering</label>
                     <div class="finger-selector button-row">
@@ -283,7 +304,7 @@ export class NoteEntryPopover {
                 flex-wrap: wrap;
             }
 
-            .string-button, .tech-button, .finger-button, .lh-button {
+            .string-button, .tech-button, .finger-button, .lh-button, .fx-button {
                 min-width: 36px;
                 height: 36px;
                 border: 2px solid var(--border, #ddd);
@@ -296,19 +317,19 @@ export class NoteEntryPopover {
             }
 
             .string-button:hover, .tech-button:hover,
-            .finger-button:hover, .lh-button:hover {
+            .finger-button:hover, .lh-button:hover, .fx-button:hover {
                 border-color: var(--accent, #007bff);
             }
 
             .string-button.selected, .tech-button.selected,
-            .finger-button.selected, .lh-button.selected {
+            .finger-button.selected, .lh-button.selected, .fx-button.selected {
                 background: var(--accent, #007bff);
                 border-color: var(--accent, #007bff);
                 color: var(--on-accent, #fff);
             }
 
-            /* Compact: two short rows, not eleven full-size keys */
-            .finger-button, .lh-button {
+            /* Compact: short rows, not dozens of full-size keys */
+            .finger-button, .lh-button, .fx-button {
                 min-width: 30px;
                 height: 30px;
                 font-size: 13px;
@@ -505,6 +526,16 @@ export class NoteEntryPopover {
             });
         });
 
+        // Effect toggles — fx is a set, so each one flips on its own
+        this.element.querySelectorAll('.fx-button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const fx = btn.dataset.fx;
+                if (this.selectedFx.has(fx)) this.selectedFx.delete(fx);
+                else this.selectedFx.add(fx);
+                btn.classList.toggle('selected', this.selectedFx.has(fx));
+            });
+        });
+
         // Fingering toggles — tapping the lit one clears that hand
         this.element.querySelectorAll('.finger-button').forEach(btn => {
             btn.addEventListener('click', () => {
@@ -535,6 +566,15 @@ export class NoteEntryPopover {
         this.element.querySelector('.insert-btn').addEventListener('click', () => {
             this._handleInsert();
         });
+    }
+
+    /** The effect toggles, one per fx, canonical order. */
+    _renderFxButtons() {
+        return POPOVER_FX.map((cfg) => {
+            const on = this.selectedFx.has(cfg.fx);
+            return `<button class="fx-button${on ? ' selected' : ''}"`
+                + ` data-fx="${cfg.fx}" title="${cfg.label}">${cfg.symbol}</button>`;
+        }).join('');
     }
 
     /** The picking-hand toggles (T I M R P). */
@@ -681,6 +721,8 @@ export class NoteEntryPopover {
             tech: this.selectedTech,
             finger: this.selectedFinger,
             lh: this.selectedLh,
+            fx: FX_ORDER.filter(fx => this.selectedFx.has(fx)),
+            grace: this.grace,
             editing: this.editing,
         });
         this.close();
@@ -777,6 +819,8 @@ export class NoteEntryPopover {
         this.selectedTech = defaults.tech || null;
         this.selectedFinger = defaults.finger || null;
         this.selectedLh = defaults.lh ?? null;
+        this.selectedFx = new Set(defaults.fx || []);
+        this.grace = defaults.grace ? { ...defaults.grace } : null;
         this.editing = !!defaults.editing;
         this.highFretOffset = 0;
         this.fretEntry.reset();
@@ -1574,6 +1618,258 @@ export class ValuePromptPopover {
         this.input = null;
         this.saveButton = null;
         this.errorEl = null;
+    }
+}
+
+/** How each grace connection reads on its button ('' = a plain grace). */
+const GRACE_KIND_LABELS = {
+    '': 'plain',
+    hp: 'h/p',
+    slide: 'slide',
+    bend: 'bend',
+    mordent: 'mordent',
+    double: 'double',
+    gruppetto: 'gruppetto',
+    trill: 'trill',
+};
+
+/**
+ * Grace Note Popover — TablEdit's Alt+G "Grace Note" dialog.
+ *
+ * A grace note hangs on the MAIN note (`note.grace = {f, kind?}`, DESIGN
+ * "interface Note"): a quick note on the same string, fret `f`, played
+ * just before it, connected by `kind` (hammer/pull, slide, …; none = a
+ * plain grace). So the panel asks two things — a fret and a connection —
+ * and answers `onCommit({f, kind?})`, or `onCommit(null)` from Remove.
+ *
+ * The fret is typed with the SAME `FretEntry` rule as the canvas and the
+ * note popover (1 then 2 is 12; `f` + two digits), never a second
+ * algorithm. Keys stop here, like its siblings, so the editor's bindings
+ * never see what you typed; Enter saves, Escape cancels.
+ */
+export class GracePopover {
+    constructor(options = {}) {
+        this.options = {
+            onCommit: null,   // ({f, kind?} | null) => void
+            onCancel: null,
+            ...options,
+        };
+        this.element = null;
+        this.overlay = null;
+        this.isOpen = false;
+        this.fret = 0;
+        this.kind = '';
+        this.existing = null;
+        this.fretEntry = new FretEntry({ maxFret: GRACE_MAX_FRET, refineMs: Infinity });
+        this._onKeyDown = this._onKeyDown.bind(this);
+    }
+
+    init(container) {
+        this._applyStyles();
+        this.overlay = document.createElement('div');
+        this.overlay.className = 'otf-popover-overlay otf-grace-overlay';
+        this.overlay.addEventListener('click', (e) => {
+            if (e.target === this.overlay) this.close();
+        });
+        this.element = document.createElement('div');
+        this.element.className = 'otf-note-popover otf-grace-popover';
+        this.element.tabIndex = -1;
+        this.element.addEventListener('keydown', this._onKeyDown);
+        this.overlay.appendChild(this.element);
+        container.appendChild(this.overlay);
+        this.overlay.style.display = 'none';
+    }
+
+    _applyStyles() {
+        if (document.querySelector('style[data-otf-grace]')) return;
+        const style = document.createElement('style');
+        style.setAttribute('data-otf-grace', '');
+        style.textContent = `
+            .otf-grace-popover:focus { outline: none; }
+            .otf-grace-popover .grace-fret-pad {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                gap: 4px;
+            }
+            .otf-grace-popover .grace-fret-btn,
+            .otf-grace-popover .grace-fret-back,
+            .otf-grace-popover .grace-kind {
+                height: 34px;
+                border: 1px solid var(--border, #ddd);
+                border-radius: 6px;
+                background: var(--bg, #fff);
+                color: var(--text, #333);
+                font-weight: 600;
+                cursor: pointer;
+            }
+            .otf-grace-popover .grace-kind { padding: 0 8px; font-size: 12px; }
+            .otf-grace-popover .grace-kind.selected {
+                background: var(--accent, #007bff);
+                border-color: var(--accent, #007bff);
+                color: var(--on-accent, #fff);
+            }
+            .otf-grace-popover .grace-fret-value {
+                font-size: 24px;
+                font-weight: 700;
+            }
+            .otf-grace-popover .grace-hint {
+                font-size: 11px;
+                color: var(--text-muted, #888);
+                margin-top: 8px;
+            }
+            .otf-grace-popover .grace-remove {
+                color: var(--danger, #dc3545);
+            }
+        `;
+        document.head.appendChild(style);
+    }
+
+    _renderContent() {
+        const digits = Array.from({ length: 10 }, (_, d) =>
+            `<button class="grace-fret-btn" data-digit="${d}">${d}</button>`).join('');
+        const kinds = ['', ...GRACE_KINDS].map(k =>
+            `<button class="grace-kind${k === this.kind ? ' selected' : ''}" data-kind="${k}">`
+            + `${GRACE_KIND_LABELS[k] || k}</button>`).join('');
+        return `
+            <div class="popover-header">
+                <span class="popover-title">${this.existing ? 'Edit grace note' : 'Grace note'}</span>
+                <button class="popover-close" title="Close (Escape)">&times;</button>
+            </div>
+            <div class="popover-body">
+                <div class="popover-section">
+                    <label class="section-label">Grace fret</label>
+                    <div class="fret-display">
+                        <span class="grace-fret-value">${this.fret}</span>
+                    </div>
+                    <div class="grace-fret-pad">
+                        ${digits}
+                        <button class="grace-fret-back" title="Drop the last digit">&#x232B;</button>
+                    </div>
+                    <div class="grace-hint">Same string, played just before this note.
+                        Type the fret: 1 then 2 is 12 (0–${GRACE_MAX_FRET}).</div>
+                </div>
+                <div class="popover-section">
+                    <label class="section-label">Connection</label>
+                    <div class="button-row grace-kinds">${kinds}</div>
+                </div>
+            </div>
+            <div class="popover-footer">
+                ${this.existing ? '<button class="popover-btn grace-remove">Remove</button>' : ''}
+                <button class="popover-btn cancel-btn">Cancel</button>
+                <button class="popover-btn save-btn primary">Save</button>
+            </div>
+        `;
+    }
+
+    _setupEventListeners() {
+        const el = this.element;
+        el.querySelector('.popover-close').addEventListener('click', () => this.close());
+        el.querySelector('.cancel-btn').addEventListener('click', () => this.close());
+        el.querySelector('.save-btn').addEventListener('click', () => this._commit());
+        el.querySelector('.grace-remove')?.addEventListener('click', () => this._remove());
+        el.querySelector('.grace-fret-back').addEventListener('click', () => this._backspace());
+        el.querySelectorAll('.grace-fret-btn').forEach(btn => {
+            btn.addEventListener('click', () => this._digit(parseInt(btn.dataset.digit, 10)));
+        });
+        el.querySelectorAll('.grace-kind').forEach(btn => {
+            btn.addEventListener('click', () => {
+                this.kind = btn.dataset.kind || '';
+                el.querySelectorAll('.grace-kind').forEach(b =>
+                    b.classList.toggle('selected', (b.dataset.kind || '') === this.kind));
+            });
+        });
+    }
+
+    /** One digit, through the shared FretEntry rule. */
+    _digit(d) {
+        const result = this.fretEntry.digit(d);
+        if (result.kind === 'pending') return;
+        this.fret = Math.min(GRACE_MAX_FRET, result.fret);
+        if (result.kind === 'insert' && result.refinable) {
+            this.fretEntry.remember({ fret: this.fret });
+        }
+        this._paintFret();
+    }
+
+    _backspace() {
+        this.fret = Math.floor(this.fret / 10);
+        this.fretEntry.reset();
+        if (this.fret > 0) this.fretEntry.remember({ fret: this.fret });
+        this._paintFret();
+    }
+
+    _paintFret() {
+        const v = this.element?.querySelector('.grace-fret-value');
+        if (v) v.textContent = String(this.fret);
+    }
+
+    _onKeyDown(event) {
+        // Nothing typed here reaches the editor's bindings
+        event.stopPropagation();
+        const { key } = event;
+        if (key === 'Escape') { event.preventDefault(); this.close(); return; }
+        if (key === 'Enter') { event.preventDefault(); this._commit(); return; }
+        if (/^[0-9]$/.test(key) && !event.ctrlKey && !event.metaKey) {
+            event.preventDefault();
+            this._digit(parseInt(key, 10));
+            return;
+        }
+        if (key === 'f') { event.preventDefault(); this.fretEntry.armHighFret(); return; }
+        if (key === 'Backspace') { event.preventDefault(); this._backspace(); }
+    }
+
+    _commit() {
+        const grace = this.kind ? { f: this.fret, kind: this.kind } : { f: this.fret };
+        this._closeQuietly();
+        this.options.onCommit?.(grace);
+    }
+
+    _remove() {
+        this._closeQuietly();
+        this.options.onCommit?.(null);
+    }
+
+    /**
+     * @param {Object} [context]
+     * @param {{f: number, kind?: string}|null} [context.existing] - the
+     *   note's grace, if it has one (pre-fills, and offers Remove)
+     */
+    open(context = {}) {
+        this.existing = context.existing || null;
+        this.fret = this.existing?.f ?? 0;
+        this.kind = this.existing?.kind || '';
+        // The first digit REPLACES the shown fret: editing a grace on
+        // fret 1 and typing 2 means 2, not 12.
+        this.fretEntry.reset();
+        this.element.innerHTML = this._renderContent();
+        this._setupEventListeners();
+        this.overlay.style.display = 'flex';
+        this.isOpen = true;
+        this.element.focus?.();
+    }
+
+    _closeQuietly() {
+        if (this.overlay) this.overlay.style.display = 'none';
+        this.isOpen = false;
+    }
+
+    close() {
+        const wasOpen = this.isOpen;
+        this._closeQuietly();
+        if (wasOpen) this.options.onCancel?.();
+    }
+
+    get opened() {
+        return this.isOpen;
+    }
+
+    destroy() {
+        this.element?.removeEventListener('keydown', this._onKeyDown);
+        if (this.overlay && this.overlay.parentNode) {
+            this.overlay.parentNode.removeChild(this.overlay);
+        }
+        this.overlay = null;
+        this.element = null;
     }
 }
 

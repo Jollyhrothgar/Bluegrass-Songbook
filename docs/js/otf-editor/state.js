@@ -15,6 +15,17 @@ import {
 } from './facade.js';
 
 /**
+ * Does this note carry anything `n` (TablEdit's N) would clear — a
+ * technique, a tie, an effect or a grace note? Fingering is not an
+ * effect; it has its own clear.
+ */
+function hasEffects(note) {
+    if (!note) return false;
+    return note.tech !== undefined || note.tie === true
+        || (Array.isArray(note.fx) && note.fx.length > 0) || note.grace != null;
+}
+
+/**
  * Duration constants (in ticks)
  * Based on 480 ticks per beat
  */
@@ -201,7 +212,8 @@ export class EditorState {
 
         // Last technique applied — TablEdit's F3 "repeat last effect".
         // '~' is stored as the string '~' meaning TIE, which is not a
-        // tech at all (see toggleTieAtCursor).
+        // tech at all (see toggleTieAtCursor); 'fx:<name>' is a TablEdit
+        // note effect (`fx`) that was turned ON (see setEffect).
         this.lastTech = null;
 
         // Triplet entry state
@@ -778,18 +790,90 @@ export class EditorState {
      */
     clearEffectsAtCursor() {
         const note = this.getNoteAtCursor();
-        if (!note) return false;
-        if (note.tech === undefined && note.tie !== true) return false;
+        if (!hasEffects(note)) return false;
         const pos = {
             measure: this.cursor.measure,
             tick: this.cursor.tick,
             string: this.cursor.string,
         };
+        return this.facade.transact('Clear effects', () => this._clearEffectsAt(pos)) !== false;
+    }
+
+    /**
+     * `clearEffectsAtCursor` over the selection rectangle — one undo
+     * step, refused (no history entry) when no note in it carries
+     * anything to clear. Fingering is never touched.
+     * @returns {boolean} true when something was cleared
+     */
+    clearEffectsInSelection() {
+        if (!this.selection) return this.clearEffectsAtCursor();
+        const range = this.selectionRange();
+        const hits = this.facade.notesInRange(range.startAbs, range.endAbs,
+            { strings: range.strings, trackId: this.trackId })
+            .filter(hit => hasEffects(hit.note));
+        if (!hits.length) return false;
         return this.facade.transact('Clear effects', () => {
-            const tech = this.facade.setArticulation(pos, null, this.trackId) !== false;
-            const tie = this.facade.setTie(pos, false, { trackId: this.trackId }) !== false;
-            return tech || tie;
+            for (const hit of hits) {
+                this._clearEffectsAt({ measure: hit.measure, tick: hit.tick, string: hit.string });
+            }
+            return true;
         }) !== false;
+    }
+
+    /** Clear tech, tie, every fx and the grace on one note (inside a transact). */
+    _clearEffectsAt(pos) {
+        const f = this.facade;
+        const opts = { trackId: this.trackId };
+        let changed = f.setArticulation(pos, null, this.trackId) !== false;
+        changed = (f.setTie(pos, false, opts) !== false) || changed;
+        const fx = f._findNote(pos, this.trackId).note?.fx || [];
+        for (const name of [...fx]) {
+            changed = (f.setEffect(pos, name, false, this.trackId) !== false) || changed;
+        }
+        changed = (f.setGrace(pos, null, this.trackId) !== false) || changed;
+        return changed;
+    }
+
+    /**
+     * Turn a TablEdit note effect (`fx`) on, off or — the default, what a
+     * key press means — toggle it. On the SELECTION when there is one
+     * (one undo step; a toggle there turns it off only when every note
+     * already has it), else on the note at the cursor.
+     *
+     * An effect this turned ON is remembered as `lastTech = 'fx:<name>'`
+     * (TablEdit's F3, vim's `.`); turning one off is not "applying" it.
+     *
+     * @param {string} fx - one of facade FX_ORDER
+     * @param {boolean|'toggle'} [on='toggle']
+     * @returns {boolean} false when nothing changed
+     */
+    setEffect(fx, on = 'toggle') {
+        const range = this.selection ? this.selectionRange() : null;
+        let ok;
+        let nowOn;
+        if (range) {
+            const opts = { strings: range.strings, trackId: this.trackId };
+            ok = this.facade.setRangeEffect(range.startAbs, range.endAbs, fx, on, opts) !== false;
+            nowOn = ok && this.facade.notesInRange(range.startAbs, range.endAbs, opts)
+                .every(hit => hit.note.fx?.includes(fx));
+        } else {
+            ok = this.facade.setEffect(this._cursorPos(), fx, on, this.trackId) !== false;
+            nowOn = ok && !!this.getNoteAtCursor()?.fx?.includes(fx);
+        }
+        if (nowOn) {
+            this.lastTech = `fx:${fx}`;
+            this.lastAction = { type: 'addArticulation', tech: this.lastTech };
+        }
+        return ok;
+    }
+
+    /**
+     * Set (or clear with null) the grace note on the note at the cursor.
+     * @param {{f: number, kind?: string}|null} grace
+     * @returns {boolean} false when there is no note, or nothing changed
+     */
+    setGraceAtCursor(grace) {
+        return this.facade.setGrace(this._cursorPos(), grace, this.trackId) !== false;
     }
 
     /**
@@ -1388,6 +1472,9 @@ export class EditorState {
                 // you are parked on now. '~' means tie, not a tech.
                 if (!this.lastTech) return false;
                 if (this.lastTech === '~') return this.toggleTieAtCursor();
+                if (this.lastTech.startsWith('fx:')) {
+                    return this.setEffect(this.lastTech.slice(3), true);
+                }
                 return this.addArticulation(this.lastTech) !== false;
             default:
                 return false;

@@ -3640,5 +3640,17 @@
     "author": "Thommybear",
     "converted_at": "2026-07-26T22:20:04.384083",
     "source_id": "307"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 28,
+      "tick": 0,
+      "text": "X"
+    },
+    {
+      "measure": 40,
+      "tick": 0,
+      "text": "X"
+    }
+  ]
 }

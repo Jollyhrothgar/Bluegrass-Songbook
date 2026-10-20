@@ -2420,5 +2420,37 @@
     "source_file": "27154.tef",
     "converted_at": "2026-07-18T09:43:20.703131",
     "source_id": "27154"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 120,
+      "text": "VERSE"
+    },
+    {
+      "measure": 1,
+      "tick": 360,
+      "text": "Part 1"
+    },
+    {
+      "measure": 9,
+      "tick": 120,
+      "text": "CHORUS"
+    },
+    {
+      "measure": 17,
+      "tick": 120,
+      "text": "VERSE"
+    },
+    {
+      "measure": 17,
+      "tick": 360,
+      "text": "Part 2"
+    },
+    {
+      "measure": 25,
+      "tick": 120,
+      "text": "CHORUS"
+    }
+  ]
 }

@@ -733,7 +733,11 @@
               {
                 "s": 3,
                 "f": 3,
-                "dur": 120
+                "dur": 120,
+                "grace": {
+                  "f": 2,
+                  "kind": "hp"
+                }
               }
             ]
           },
@@ -1053,7 +1057,11 @@
               {
                 "s": 3,
                 "f": 3,
-                "dur": 120
+                "dur": 120,
+                "grace": {
+                  "f": 2,
+                  "kind": "hp"
+                }
               }
             ]
           },
@@ -1386,5 +1394,72 @@
     "author": "schlange",
     "converted_at": "2026-07-26T22:20:05.981604",
     "source_id": "11596"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "Key: G / G-Tuning"
+    },
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 3,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 8,
+      "tick": 480,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "Em"
+    },
+    {
+      "measure": 16,
+      "tick": 480,
+      "text": "G"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "D"
+    }
+  ]
 }

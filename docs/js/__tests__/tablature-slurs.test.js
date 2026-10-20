@@ -82,7 +82,8 @@ describe('technique slurs on the real Foggy Mountain Breakdown banjo tab', () =>
     it('draws an arc for EVERY slide, including the long ones', () => {
         const c = renderTrack(track, banjo, tpb);
         // 'sl' labels are emitted once per drawn slide arc.
-        const slLabels = [...c.querySelectorAll('text')]
+        // (Grace-note labels are not technique labels; FMB has two slide graces.)
+        const slLabels = [...c.querySelectorAll('text:not(.grace-label)')]
             .filter(t => t.textContent === 'sl');
         expect(slLabels).toHaveLength(27);
     });
@@ -95,7 +96,7 @@ describe('technique slurs on the real Foggy Mountain Breakdown banjo tab', () =>
         // Total arcs must EQUAL the technique count: a missing arc is the bug
         // we fixed, a surplus arc would mean we started pairing unrelated notes.
         expect(c.querySelectorAll('.tech-slur')).toHaveLength(drawable);
-        const labels = [...c.querySelectorAll('text')]
+        const labels = [...c.querySelectorAll('text:not(.grace-label)')]
             .filter(t => ['sl', 'H', 'P'].includes(t.textContent));
         expect(labels).toHaveLength(drawable);
     });

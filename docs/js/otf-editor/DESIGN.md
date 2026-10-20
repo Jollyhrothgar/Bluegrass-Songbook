@@ -191,12 +191,44 @@ interface NoteEvent {
 interface Note {
   s: number                   // String (1-indexed)
   f: number                   // Fret (0 = open)
-  tech?: "h" | "p" | "/" | "\\" | "x" | "b"  // Technique
-  finger?: "T" | "I" | "M"    // Fingering annotation
+  tech?: "h" | "p" | "/" | "\\" | "x" | "b"  // Transition / dead note
+  finger?: "T" | "I" | "M" | "R" | "P"  // Picking-hand fingering
+  lh?: 0 | 1 | 2 | 3 | 4      // Fretting-hand digit
   tie?: boolean               // Tied from the previous note on this string
   dur?: number                // Duration in ticks
+  fx?: Fx[]                   // TablEdit per-note effects, canonical order
+  grace?: { f: number, kind?: GraceKind }  // grace note before this one
 }
+
+// In this order (FX_ORDER, docs/js/tef-import/otf.js and otf.py):
+type Fx = "brush" | "roll" | "choke" | "ghost" | "staccato" | "let-ring"
+        | "muted" | "harmonic" | "artificial-harmonic" | "tap" | "vibrato"
+        | "tremolo" | "bend-release" | "slap"
+type GraceKind = "hp" | "slide" | "bend" | "mordent" | "double"
+               | "gruppetto" | "trill"   // absent = a plain grace note
 ```
+
+**`fx` and `grace` are TablEdit's own note model** (fix-it A15, from
+TablEdit 3.06 decompiled; full byte layout in
+`docs/plans/2026-10-18-tef-feature-survey.md` and the tab-debug skill).
+TablEdit gives each note one *effect* (a 16-value enum), one *attribute*
+and one *second effect*; `tech` already holds the transitions (h, p,
+slide, bend target `b`, dead note `x`), and `fx` holds everything else as
+an unordered SET stored in `FX_ORDER` — a note may be both `brush` and
+`let-ring`. An empty set is omitted, never `[]`.
+
+- `brush` — strummed chord (every note of the chord carries it); `roll` —
+  arpeggiated chord. Direction/speed are not decoded yet.
+- `choke` — TablEdit's Choke effect on THIS note (bend up and stop).
+  Distinct from `tech: 'b'`, which marks the TARGET of a bend.
+- `muted` — TablEdit's "Muted note" (pitched, damped: palm mute).
+  Distinct from `tech: 'x'`, the dead note (no pitch, the chop).
+- `ghost`, `staccato`, `let-ring` (TablEdit "Ringing note"), `harmonic`,
+  `artificial-harmonic`, `tap`, `vibrato`, `tremolo`, `bend-release`, `slap`.
+
+`grace` hangs on the MAIN note, as in TablEdit: it is a quick note on the
+same string, fret `grace.f`, played just before this one, connected by
+`kind` (hammer/pull, slide, …). It has no tick and no duration of its own.
 
 **`~` is not a technique.** A tie is `tie: true` on the CONTINUATION note
 — that is what the corpus contains (1,785 in a 400-file sample), what

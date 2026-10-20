@@ -71,6 +71,36 @@ The renderer shows these articulation marks:
 | Slide | `/` | Slur arc + "sl" |
 | Bend/choke | `b` | Tilted arrow + "½", target fret bracketed `[7]` |
 | Tie | `tie: true` | Slur arc, continuation fret bracketed `[7]` |
+| Dead note | `x` | `×` in place of the fret |
+
+TablEdit's per-note effects (`note.fx`, `note.grace`; format in
+`otf-editor/DESIGN.md`) draw in four places, so stacked marks never land on
+each other, on H/P/sl labels, or on a chord neighbour's digit (strings are
+14px apart, chips 14px tall: there is no room for labels *inside* the staff):
+
+| `fx` / field | Rendered As | Where | Class |
+|---|---|---|---|
+| `ghost` | `(5)` | on the fret | `.note-text.fx-ghost` |
+| `harmonic` | `<12>` | on the fret | `.note-text.fx-harmonic` |
+| `artificial-harmonic` | `<12>` + "A.H." | fret + band | `.fx-artificial-harmonic` |
+| `staccato` | dot above the column's topmost note | on the staff | `.fx-staccato` |
+| `brush` | vertical arrow toward string 1 (direction not decoded yet) | left of the column, ONE per column | `.fx-brush` |
+| `roll` | vertical wavy line | left of the column, one per column | `.fx-roll` |
+| `tremolo` | three slashes across the stem | below the staff | `.fx-tremolo` |
+| `choke` / `tap` / `slap` | "ch" / "T" / "S" | band, point lane | `.fx-choke` … |
+| `vibrato` / `bend-release` | short wave / up-down arrow | band, point lane | `.fx-vibrato` … |
+| `let-ring` / `muted` | "let ring" / "P.M." once, then `- - -┐` over the run | band, one run lane each | `.fx-let-ring`, `.fx-let-ring-line` |
+| `grace: {f, kind}` | small fret left of the main fret + slur; "h"/"p" for `hp` (by direction), "sl" for `slide`, bare arc otherwise | on the string | `.grace-note`, `.grace-arc`, `.grace-label` |
+
+- **The band** sits above the staff (and above ending brackets), and is
+  reserved like the free-text band: uniformly, and only when the tab has a
+  point or run mark (`fxLanesFor()` — one scan per render). A tab without
+  them renders byte-identically to before.
+- **A grace moves nothing.** It has no tick; it sits in the gap the layout
+  already left, shrinking (to 5px) rather than running into the previous
+  column, and drops its background chip when even that does not fit, so it
+  never blanks a neighbour's digit.
+- A run breaks at a column without the effect and re-labels on a new row.
 
 **Cross-barline arcs work.** A row holds several measures in ONE SVG
 (`measuresPerRow`), and `renderSlurs()` runs once per row after every measure
@@ -150,6 +180,57 @@ patches, loaded from the `WEBAUDIOFONT_URLS` CDN by `loadInstruments()`.
 `getInstrumentKey(instrumentType)` picks the patch from the OTF track's
 instrument name. The only raw oscillator in the file is the metronome click
 (a short sine with a quick decay, `playMetronomeClick`).
+
+### Techniques, effects and grace notes
+
+`tech` transitions: a tie continuation never re-attacks (`applyTieExtensions`);
+`h`/`p`/slide targets are ONE pick — the source rings on and its pitch steps or
+glides (`absorbLegato` + `legatoWaypoints`); `x` is a short damped chop; `b`
+bends a quarter tone. Pitch moves all go through WebAudioFont's `slides`
+waypoints (8th arg of `queueWaveTable`).
+
+TablEdit's `note.fx` / `note.grace` (fix-it A15, format in
+`otf-editor/DESIGN.md` "interface Note") are played the way TablEdit plays
+them. All of it is pure exported helpers — `fxDurationVolume` (length and
+gain), `applyStrumOffsets`/`strumOffsets` (brush/roll), `soundingMidi`
+(harmonics) and `noteAttacks` (everything one note sounds, as attacks at
+offsets from its onset) — so `play()` only queues what they return. The
+constants are named and exported at the top of the fx block in
+`tab-player.js`; tune there.
+
+| fx | Playback |
+|----|----------|
+| `brush` | chord column (same track + tick) strummed low string (highest `s`) to high, 15ms a string, ≤70ms total; first attack on the written tick |
+| `roll` | same, 50ms a string, ≤250ms total |
+| `staccato` | sounded duration halved (TablEdit's rule) |
+| `ghost` | 0.4× volume |
+| `let-ring` | rings to the next note on the SAME string (ignores the rhythmic cut-off and the bass/guitar chop rules), max 4s |
+| `muted` | palm mute: pitched, ≤0.13s, 0.7× volume (not `tech: 'x'`, the pitchless chop) |
+| `choke` | attack, bend up 1 semitone over ≤80ms, cut at 0.3s |
+| `harmonic` | natural harmonic above the OPEN string: 12→+12, 7/19→+19, 5/24→+24, 4/9/16→+28, 3→+31; other frets fretted +12. 0.85× volume, rings 1.5× (to the next note on the string) |
+| `artificial-harmonic` | fretted pitch +12, same softer/longer ring |
+| `vibrato` | ±0.25 semitone triangle at 5.5 Hz through the note |
+| `tremolo` | re-picked every 1/32 note for the note's length; repeats 0.8× |
+| `bend-release` | up a whole step over the first third, hold, back over the last third |
+| `slap` | 1.15× volume |
+| `tap` | played as written |
+
+**Grace** (`note.grace = {f, kind}`, on the MAIN note) sounds a 1/32 note or
+45ms (whichever is shorter) BEFORE the main note, on the same string; the main
+note never moves. `kind: 'hp' | 'slide'` (every grace in the Banjo Hangout
+corpus) is ONE pick: the grace attacks and steps/glides into the main pitch at
+the main onset, and the main note is not re-attacked. Any other kind (or none)
+is two attacks: a short grace at 0.8× then the main note. Grace pitch takes the
+`transpose` option; it rides on the main note's record, so play-from-cursor
+clipping keeps or drops both together, and highlight callbacks fire on the
+main note's `absTick`.
+
+**Combining**: gains multiply; let-ring sets the length first, then
+muted/choke/staccato can still shorten it. One pitch shape per attack, in
+precedence order: legato legs > bend-release > choke > `tech: 'b'` > vibrato.
+Tremolo re-picks carry no pitch shape. Open-ended playback extends its end
+(normally last note + 1s) to cover a ringing fx note, so a let-ring final
+chord is not cut off by `stop()`.
 
 ### Timing
 

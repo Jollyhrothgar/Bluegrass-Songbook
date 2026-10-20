@@ -241,6 +241,9 @@ export function v2ComponentStride(data, h) {
 export function parseNoteEventsV2(data, h, instruments) {
     const events = [];
     const tsChanges = [];
+    // Text components (fret byte 0x1d = TablEdit type 0x39): byte 3 indexes
+    // the text table after the reading list. Resolved by parseV2.
+    const textRefs = [];
     const numStrings = h.v2_strings;
 
     const stride = v2ComponentStride(data, h);
@@ -257,7 +260,7 @@ export function parseNoteEventsV2(data, h, instruments) {
     // yields zero overruns. See reader.py for the full evidence.
     const durationMask = stride === 6 ? 0x1f : 0x0f;
 
-    if (tsSize === 0 || numStrings === 0) return { events, tsChanges };
+    if (tsSize === 0 || numStrings === 0) return { events, tsChanges, textRefs };
 
     let trackStringCounts = instruments.map(i => i.num_strings);
     if (trackStringCounts.length === 0) trackStringCounts = [numStrings];
@@ -321,6 +324,13 @@ export function parseNoteEventsV2(data, h, instruments) {
 
         if (tsMove && positionInMeasure >= tsMove) positionInMeasure -= tsMove;
 
+        if (fretByte === 0x1d) {
+            textRefs.push({ position: (measure * tsSize + positionInMeasure) * posScale,
+                            stringRow: cumulativeString, index: rec[3] });
+            offset += stride;
+            continue;
+        }
+
         // Fret field 0x1a is fret 25 unless the byte is a bare 0x1a (a special; 11056 m9).
         if ((fretRaw >= 0x01 && fretRaw <= 0x19) || (fretRaw === 0x1a && fretByte !== 0x1a)) {
             const fret = fretRaw - 1;
@@ -352,7 +362,28 @@ export function parseNoteEventsV2(data, h, instruments) {
         }
         offset += stride;
     }
-    return { events, tsChanges };
+    return { events, tsChanges, textRefs };
+}
+
+// V2 free-text table: u16 count at header 228, entries right after the
+// reading list (u16 length + NUL-terminated latin-1 bytes). See reader.py.
+export function parseTextTableV2(data, h) {
+    const count = data.length >= 230 ? u16(data, 228) : 0;
+    let off = h.v2_component_offset + h.v2_component_count * v2ComponentStride(data, h)
+        + 2 * h.v2_repeats_count;
+    const table = [];
+    for (let i = 0; i < count; i++) {
+        if (off + 2 > data.length) break;
+        const len = u16(data, off);
+        if (off + 2 + len > data.length) break;
+        let s = '';
+        for (let j = off + 2; j < off + 2 + len && data[j] !== 0; j++) {
+            s += String.fromCharCode(data[j]);      // latin1 parity with Python
+        }
+        table.push(s.trim());
+        off += 2 + len;
+    }
+    return table;
 }
 
 // --- reading list ----------------------------------------------------------
@@ -376,8 +407,12 @@ export function parseReadingListV2(data, h) {
 export function parseV2(data, name) {
     const header = readV2Header(data);
     const instruments = parseInstrumentsV2(data, header);
-    let { events: noteEvents, tsChanges } = parseNoteEventsV2(data, header, instruments);
+    let { events: noteEvents, tsChanges, textRefs } = parseNoteEventsV2(data, header, instruments);
     let timeSignatureChanges = tsChanges;
+    const textTable = parseTextTableV2(data, header);
+    const textEvents = textRefs
+        .filter(r => r.index < textTable.length && textTable[r.index])
+        .map(r => ({ position: r.position, string_row: r.stringRow, text: textTable[r.index] }));
 
     // effect2 == 0x07 chord-overlay filter — but keep notes whose fret byte
     // has bit 7 set: there effect2 is a note attribute and 0x07 is staccato
@@ -392,6 +427,9 @@ export function parseV2(data, name) {
         const shift = m0.length ? Math.min(...m0.map(e => e.position)) : 0;
         if (shift > 0) {
             for (const e of m0) e.position -= shift;
+            for (const te of textEvents) {
+                if (te.position < tsSize) te.position = Math.max(0, te.position - shift);
+            }
             let den = header.v2_time_denom || 4;
             const grid = tsSize - shift;
             let num = fdiv(grid * den, 256);
@@ -414,6 +452,7 @@ export function parseV2(data, name) {
         title: header.v2_title,
         instruments,
         note_events: noteEvents,
+        text_events: textEvents,
         reading_list: readingList,
         time_signature_changes: timeSignatureChanges,
         v3_global_ts: null,

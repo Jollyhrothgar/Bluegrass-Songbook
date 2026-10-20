@@ -20,9 +20,10 @@
 // eats several of them; menus open on click and are then arrow-driven.
 
 import {
-    ACTIONS, PRESETS, menuKeyFor, prettyKeys,
+    ACTIONS, PRESETS, FX_ACTIONS, menuKeyFor, prettyKeys,
     getPreset, setPreset, onPresetChange,
 } from './bindings.js';
+import { FX_ORDER } from './facade.js';
 
 /** Below this width the bar collapses to a single ☰ sheet. */
 export const NARROW_WIDTH = 720;
@@ -45,6 +46,22 @@ const hasText = (s) => !!s?.getAnnotationAtCursor?.();
 const canUndo = (s) => !!s?.history?.canUndo?.();
 const canRedo = (s) => !!s?.history?.canRedo?.();
 const manyMeasures = (s) => (s?.getMeasureCount?.() || 1) > 1;
+/** Does the note at the cursor carry this effect? (the item's ✓) */
+const noteHasFx = (fx) => (s) => !!s?.getNoteAtCursor?.()?.fx?.includes(fx);
+
+/**
+ * Note ▸ Effects: one item per TablEdit note effect, GENERATED from the
+ * facade's FX_ORDER so a new effect cannot be left out of the menu. The
+ * key column is the table's like everywhere else — the keyed ones (b r
+ * c g /) print their key, the menu-only ones print none, exactly as
+ * TablEdit reaches them through a dialog. The ✓ is the note at the
+ * cursor (TablEdit's "palettes reflect the current note").
+ */
+const FX_ITEMS = FX_ORDER.map(fx => ({
+    action: FX_ACTIONS[fx],
+    when: hasNoteOrSelection,
+    checked: noteHasFx(fx),
+}));
 
 /**
  * THE menu tree. Items:
@@ -57,6 +74,7 @@ const manyMeasures = (s) => (s?.getMeasureCount?.() || 1) > 1;
  *   {separator: true}         a rule
  *   {heading}                 a group label (our flat stand-in for a ▸ submenu)
  *   when(state)               enabled only when this returns true
+ *   checked(state)            on an {action} item: drawn as a ✓ latch
  */
 export const MENUS = [
     {
@@ -117,9 +135,13 @@ export const MENUS = [
             { action: 'effect.pull', label: 'Pull-off' },
             { action: 'effect.slide', label: 'Slide' },
             { action: 'effect.dead', label: 'Dead' },
-            { action: 'effect.choke', label: 'Choke' },
+            { action: 'effect.bend', label: 'Bend (target)' },
             { action: 'effect.clear', label: 'Clear' },
             { action: 'effect.repeatLast', label: 'Repeat last effect' },
+            { separator: true },
+            { heading: 'Effects' },
+            ...FX_ITEMS,
+            { action: 'effect.grace', label: 'Grace note…', when: hasNote },
             { separator: true },
             { heading: 'Fingering' },
             { action: 'finger.thumb', label: 'Thumb', when: hasNote },
@@ -486,6 +508,8 @@ export class EditorMenuBar {
                 label: item.label || action.label,
                 keys: menuKeyFor(item.action, getPreset(), this._mode()),
                 disabled: item.when ? !item.when(this.state) : false,
+                checked: item.checked ? !!item.checked(this.state) : undefined,
+                role: item.checked ? 'menuitemcheckbox' : 'menuitem',
                 run: () => this.dispatch(item.action),
                 actionId: item.action,
             }));

@@ -1035,7 +1035,10 @@
               {
                 "s": 2,
                 "f": 12,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "artificial-harmonic"
+                ]
               }
             ]
           },
@@ -1045,7 +1048,10 @@
               {
                 "s": 3,
                 "f": 12,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "artificial-harmonic"
+                ]
               }
             ]
           },
@@ -1055,7 +1061,10 @@
               {
                 "s": 2,
                 "f": 12,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "artificial-harmonic"
+                ]
               }
             ]
           },
@@ -1065,7 +1074,10 @@
               {
                 "s": 3,
                 "f": 12,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "artificial-harmonic"
+                ]
               }
             ]
           }
@@ -1165,7 +1177,10 @@
               {
                 "s": 2,
                 "f": 12,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "artificial-harmonic"
+                ]
               }
             ]
           },
@@ -1175,7 +1190,10 @@
               {
                 "s": 3,
                 "f": 12,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "artificial-harmonic"
+                ]
               }
             ]
           },
@@ -1185,7 +1203,10 @@
               {
                 "s": 2,
                 "f": 12,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "artificial-harmonic"
+                ]
               }
             ]
           },
@@ -1195,7 +1216,10 @@
               {
                 "s": 3,
                 "f": 12,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "artificial-harmonic"
+                ]
               }
             ]
           }
@@ -2953,12 +2977,18 @@
               {
                 "s": 1,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "let-ring"
+                ]
               },
               {
                 "s": 3,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "let-ring"
+                ]
               }
             ]
           }
@@ -4995,17 +5025,26 @@
               {
                 "s": 1,
                 "f": 3,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "let-ring"
+                ]
               },
               {
                 "s": 2,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "let-ring"
+                ]
               },
               {
                 "s": 3,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "let-ring"
+                ]
               }
             ]
           }
@@ -5057,5 +5096,82 @@
     "author": "banjoman 1",
     "converted_at": "2026-07-26T22:20:06.022148",
     "source_id": "17966"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 3,
+      "tick": 240,
+      "text": "(part a)"
+    },
+    {
+      "measure": 6,
+      "tick": 960,
+      "text": "A(G)"
+    },
+    {
+      "measure": 7,
+      "tick": 240,
+      "text": "(part a)"
+    },
+    {
+      "measure": 10,
+      "tick": 240,
+      "text": "E(D)"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "Chimes"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "Chimes"
+    },
+    {
+      "measure": 15,
+      "tick": 960,
+      "text": "A(G)"
+    },
+    {
+      "measure": 16,
+      "tick": 240,
+      "text": "(part c)"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "D(C)"
+    },
+    {
+      "measure": 20,
+      "tick": 0,
+      "text": "A(G)"
+    },
+    {
+      "measure": 22,
+      "tick": 0,
+      "text": "E(D)"
+    },
+    {
+      "measure": 23,
+      "tick": 1440,
+      "text": "A(G)"
+    },
+    {
+      "measure": 26,
+      "tick": 0,
+      "text": "D(C)"
+    },
+    {
+      "measure": 27,
+      "tick": 1440,
+      "text": "A(G)"
+    },
+    {
+      "measure": 28,
+      "tick": 1680,
+      "text": "E(D)"
+    }
+  ]
 }

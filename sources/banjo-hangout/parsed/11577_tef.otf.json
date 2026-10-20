@@ -2898,7 +2898,10 @@
               {
                 "s": 3,
                 "f": 3,
-                "dur": 120
+                "dur": 120,
+                "fx": [
+                  "choke"
+                ]
               }
             ]
           },
@@ -5472,7 +5475,10 @@
               {
                 "s": 3,
                 "f": 3,
-                "dur": 120
+                "dur": 120,
+                "fx": [
+                  "choke"
+                ]
               }
             ]
           },
@@ -7557,7 +7563,10 @@
               {
                 "s": 3,
                 "f": 3,
-                "dur": 120
+                "dur": 120,
+                "fx": [
+                  "choke"
+                ]
               }
             ]
           },
@@ -23349,5 +23358,22 @@
     "download_file": "11577_tef_big_foot.tef",
     "author": "schlange",
     "converted_at": "2026-08-01T11:10:53.465444"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 63,
+      "tick": 1200,
+      "text": "Guitar Solo"
+    },
+    {
+      "measure": 68,
+      "tick": 1440,
+      "text": "Guitar Solo"
+    },
+    {
+      "measure": 73,
+      "tick": 1680,
+      "text": "Guitar Solo"
+    }
+  ]
 }

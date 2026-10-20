@@ -2049,5 +2049,72 @@
     "author": "schlange",
     "converted_at": "2026-07-26T22:20:05.624876",
     "source_id": "10942"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "Intro"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "Part A"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 11,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "Part B"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 20,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 21,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 22,
+      "tick": 0,
+      "text": "G"
+    }
+  ]
 }

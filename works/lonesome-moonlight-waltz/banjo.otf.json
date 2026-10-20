@@ -884,7 +884,11 @@
               {
                 "s": 3,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "grace": {
+                  "f": 0,
+                  "kind": "hp"
+                }
               }
             ]
           },
@@ -1055,7 +1059,11 @@
               {
                 "s": 4,
                 "f": 8,
-                "dur": 480
+                "dur": 480,
+                "grace": {
+                  "f": 3,
+                  "kind": "slide"
+                }
               }
             ]
           },
@@ -1181,7 +1189,10 @@
               {
                 "s": 2,
                 "f": 6,
-                "dur": 240
+                "dur": 240,
+                "fx": [
+                  "staccato"
+                ]
               }
             ]
           },
@@ -4518,5 +4529,107 @@
     "author": "mwblake",
     "converted_at": "2026-07-26T22:20:06.701492",
     "source_id": "18215"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "Dm"
+    },
+    {
+      "measure": 3,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "Dm"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "Dm"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "Dm"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "Bb"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 21,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 23,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 24,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 25,
+      "tick": 0,
+      "text": "Dm"
+    },
+    {
+      "measure": 27,
+      "tick": 0,
+      "text": "F"
+    },
+    {
+      "measure": 28,
+      "tick": 0,
+      "text": "Dm"
+    },
+    {
+      "measure": 29,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 31,
+      "tick": 0,
+      "text": "F"
+    }
+  ]
 }

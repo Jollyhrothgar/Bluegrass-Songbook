@@ -1528,7 +1528,10 @@
               {
                 "s": 2,
                 "f": 10,
-                "dur": 120
+                "dur": 120,
+                "fx": [
+                  "choke"
+                ]
               }
             ]
           },
@@ -1573,7 +1576,10 @@
               {
                 "s": 2,
                 "f": 10,
-                "dur": 120
+                "dur": 120,
+                "fx": [
+                  "choke"
+                ]
               }
             ]
           },
@@ -2537,5 +2543,17 @@
     "author": "Yohansen",
     "converted_at": "2026-07-26T22:20:07.326119",
     "source_id": "23403"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 120,
+      "text": "Part 1"
+    },
+    {
+      "measure": 17,
+      "tick": 120,
+      "text": "Part 2"
+    }
+  ]
 }

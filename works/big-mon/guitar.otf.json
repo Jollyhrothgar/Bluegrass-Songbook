@@ -1370,5 +1370,12 @@
     "author": "novaraandy",
     "converted_at": "2026-07-26T22:20:04.746994",
     "source_id": "1860"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "Capo 2nd Fret"
+    }
+  ]
 }

@@ -1550,5 +1550,102 @@
     "author": "banjoman 1",
     "converted_at": "2026-07-26T22:20:05.654842",
     "source_id": "17670"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 480,
+      "text": "(part a)"
+    },
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 4,
+      "tick": 480,
+      "text": "A"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 7,
+      "tick": 1440,
+      "text": "A"
+    },
+    {
+      "measure": 8,
+      "tick": 480,
+      "text": "D"
+    },
+    {
+      "measure": 9,
+      "tick": 960,
+      "text": "(part b)"
+    },
+    {
+      "measure": 9,
+      "tick": 480,
+      "text": "D"
+    },
+    {
+      "measure": 10,
+      "tick": 480,
+      "text": "G"
+    },
+    {
+      "measure": 11,
+      "tick": 480,
+      "text": "D"
+    },
+    {
+      "measure": 12,
+      "tick": 480,
+      "text": "A"
+    },
+    {
+      "measure": 13,
+      "tick": 480,
+      "text": "D"
+    },
+    {
+      "measure": 14,
+      "tick": 480,
+      "text": "G"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 15,
+      "tick": 1440,
+      "text": "A"
+    },
+    {
+      "measure": 16,
+      "tick": 480,
+      "text": "D"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 17,
+      "tick": 480,
+      "text": "D"
+    }
+  ]
 }

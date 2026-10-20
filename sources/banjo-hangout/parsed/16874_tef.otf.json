@@ -1635,5 +1635,62 @@
     "download_file": "16874_tef_peacock_rag.tef",
     "author": "banjoman 1",
     "converted_at": "2026-08-01T11:11:11.452360"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 2,
+      "tick": 480,
+      "text": "(part a)"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "B7"
+    },
+    {
+      "measure": 12,
+      "tick": 480,
+      "text": "(part b)"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "E"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "A"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "D"
+    }
+  ]
 }

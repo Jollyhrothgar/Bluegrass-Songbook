@@ -184,7 +184,11 @@
               {
                 "s": 3,
                 "f": 9,
-                "dur": 480
+                "dur": 480,
+                "grace": {
+                  "f": 5,
+                  "kind": "slide"
+                }
               }
             ]
           },
@@ -484,7 +488,11 @@
               {
                 "s": 3,
                 "f": 9,
-                "dur": 480
+                "dur": 480,
+                "grace": {
+                  "f": 5,
+                  "kind": "slide"
+                }
               }
             ]
           },
@@ -2689,5 +2697,92 @@
     "author": "schlange",
     "converted_at": "2026-07-26T22:20:05.638195",
     "source_id": "11684"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 2,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "A7"
+    },
+    {
+      "measure": 6,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 8,
+      "tick": 960,
+      "text": "A7"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 11,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 12,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "A7"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 17,
+      "tick": 960,
+      "text": "A7"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "D"
+    }
+  ]
 }

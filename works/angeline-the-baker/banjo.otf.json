@@ -220,7 +220,11 @@
               {
                 "s": 4,
                 "f": 5,
-                "dur": 960
+                "dur": 960,
+                "grace": {
+                  "f": 3,
+                  "kind": "slide"
+                }
               }
             ]
           },
@@ -789,7 +793,11 @@
               {
                 "s": 4,
                 "f": 5,
-                "dur": 960
+                "dur": 960,
+                "grace": {
+                  "f": 3,
+                  "kind": "slide"
+                }
               }
             ]
           },
@@ -2469,5 +2477,77 @@
     "author": "mwblake",
     "converted_at": "2026-07-26T22:20:06.071593",
     "source_id": "11831"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 4,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 5,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 7,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 8,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 9,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 13,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 14,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 16,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 16,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 17,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "D"
+    }
+  ]
 }

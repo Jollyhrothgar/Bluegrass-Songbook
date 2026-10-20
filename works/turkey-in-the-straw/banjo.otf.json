@@ -2915,7 +2915,10 @@
               {
                 "s": 1,
                 "f": 17,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "let-ring"
+                ]
               }
             ]
           }
@@ -5517,32 +5520,50 @@
               {
                 "s": 1,
                 "f": 3,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "let-ring"
+                ]
               },
               {
                 "s": 2,
                 "f": 3,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "let-ring"
+                ]
               },
               {
                 "s": 3,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "let-ring"
+                ]
               },
               {
                 "s": 4,
                 "f": 0,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "let-ring"
+                ]
               },
               {
                 "s": 5,
                 "f": 2,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "let-ring"
+                ]
               },
               {
                 "s": 6,
                 "f": 3,
-                "dur": 480
+                "dur": 480,
+                "fx": [
+                  "let-ring"
+                ]
               }
             ]
           }
@@ -5556,5 +5577,122 @@
     "author": "corcoran",
     "converted_at": "2026-07-26T22:20:05.679892",
     "source_id": "20409"
-  }
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "Capo up 2"
+    },
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 2,
+      "tick": 1440,
+      "text": "Part A"
+    },
+    {
+      "measure": 6,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 7,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 10,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 10,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 14,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 15,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 18,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 18,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 19,
+      "tick": 0,
+      "text": "Part B"
+    },
+    {
+      "measure": 23,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 24,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 25,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 26,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 26,
+      "tick": 0,
+      "text": "D"
+    },
+    {
+      "measure": 29,
+      "tick": 0,
+      "text": "C"
+    },
+    {
+      "measure": 31,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 32,
+      "tick": 960,
+      "text": "D"
+    },
+    {
+      "measure": 33,
+      "tick": 0,
+      "text": "G"
+    },
+    {
+      "measure": 34,
+      "tick": 960,
+      "text": "G"
+    },
+    {
+      "measure": 34,
+      "tick": 0,
+      "text": "D"
+    }
+  ]
 }
