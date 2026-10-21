@@ -8,6 +8,8 @@ Single-page search application for the Bluegrass Songbook. Modularized into ES m
 docs/
 ├── index.html          # Page structure, modals (chrome is built by js/shell.js)
 ├── blog.html           # Redirect: the dev blog moved to mikebeaumier.com (G1)
+├── robots.txt / sitemap.xml # sitemap is GENERATED with songs/ (scripts/lib/build_song_pages.py)
+├── songs/{id}/         # GENERATED static, indexable page per searchable song (links into #work/{id})
 ├── manifest.webmanifest # PWA manifest (install, shortcuts, .tef/.otf.json file handlers)
 ├── sw.js               # Service worker — a shell around js/sw-strategy.js
 ├── js/
@@ -1248,6 +1250,10 @@ bug reports, and general feedback — no GitHub account needed.
 
 - `openFeedbackModal({ type, song })` with a type selector
   (`song-issue`, `song-correction`, `bug-report`, `general-feedback`)
+- Copyright: every song's overflow also has `© Copyright concern`
+  (`#copyright-btn`, all visitors), a mailto to hello@bluegrassbook.com
+  built by `utils.copyrightMailto`. The trusted-only "Request suppression"
+  is the internal path; this is the one a rights holder can reach.
 - Entry points: "🚩 Report issue" in the song page's overflow menu,
   "Send Feedback" in the shell's overflow menu, homepage report-bug link
 - Creates GitHub issues via the `create-flag-issue` Supabase edge function

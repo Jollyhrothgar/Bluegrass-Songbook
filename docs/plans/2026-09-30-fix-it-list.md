@@ -77,8 +77,8 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | F10 | Redraw the remaining views in the new look (queue below) | M each | — | queued (Mike, 2026-10-02) |
 | F11 | Build the new look in `style.css` (tokens, links not buttons, chords, BB mark) | M | — | not started; the look is approved on the canvas |
 | G1 | Dev blog moved to mikebeaumier.com: point the Dev Blog links and old post URLs at it | S | `feature/blog-redirect` | done — #283 (2026-10-21), after mikebeaumier.com went live; open: whether to delete `docs/posts/` (Mike) |
-| G2 | Search engines: no robots.txt or sitemap.xml, and every song is a `#work/` hash route Google can't index on its own | S (files) / L (song URLs) | `feature/search-discovery` | robots.txt + a 4-page sitemap done; **open: songs need real URLs** (see G2 below) |
-| G3 | One contact address: `hello@bluegrassbook.com` (Porkbun forward) replaces the Gmail address on About and in the feedback modal | S | `feature/search-discovery` | site text done; the forward itself is created on Mike's go-ahead |
+| G2 | Search engines: no robots.txt or sitemap.xml, and every song is a `#work/` hash route Google can't index on its own | M | `feature/search-discovery`, `feature/song-pages` | done — robots.txt (#285); a static page per searchable song at `/songs/{id}/` + a generated sitemap, rebuilt on every deploy (`scripts/lib/build_song_pages.py`) |
+| G3 | One contact address: `hello@bluegrassbook.com` (Porkbun forward) replaces the Gmail address; rights holders get a way to reach it | S | `feature/search-discovery`, `feature/song-pages` | done — forward created 2026-10-21 (the domain had no other forwards); About + feedback modal (#285); `© Copyright concern` in every song's ⋯ menu and on every static song page (mailto, no account) |
 
 ### How it ships
 
@@ -1249,7 +1249,28 @@ four real pages: `/`, `about.html`, `chord-explorer.html`,
 `editor-demo.html`, `tab-test.html`. `__tests__/search-discovery.test.js`
 checks every listed page exists and is neither a redirect nor noindex.
 
-**The bigger problem:** every song lives at `index.html#work/{slug}`.
+**Song pages (2026-10-21, Mike: "make it all searchable", the searchable
+songs only, "as long as this gets re-curated later automatically").**
+`scripts/lib/build_song_pages.py` runs at the end of every
+`build_works_index` (deploy, CI dry-run, bootstrap) and writes
+`docs/songs/{id}/index.html` for every row in `index.jsonl` that has a chart
+or a tab, plus `docs/sitemap.xml` (the four pages above + every song page).
+Both outputs are gitignored build products. A song promoted into search gets
+a page on the next deploy; a pruned, deleted or suppressed one loses it
+(orphan directories are removed). Variants (`variant_of`) get a page whose
+canonical names the main version and stay out of the sitemap. Placeholders
+and empty rows get none. First build: 2,581 pages, 2,565 sitemap URLs.
+Each page: title, artist, writer, key, Nashville chords, the chart as chords
+over lyrics, tab instruments, a link into the app, and a "Copyright concern"
+mailto. No redirect into the app (crawler and reader see the same page).
+Tests: `tests/test_song_pages.py`.
+
+Copyright: Mike decided to index full charts for every searchable song, with
+a low-key takedown route instead of a rights field. "Request suppression"
+stays trusted-only (it files into the review queue, which rights holders
+can't reach), so rights holders get the `© Copyright concern` email instead.
+
+**The original problem:** every song lives at `index.html#work/{slug}`.
 Google treats everything after `#` as the same URL, so the whole songbook is
 one page to it and no song can be listed in a sitemap. Generating the sitemap
 at build time only helps once each song has its own path. Options, roughly

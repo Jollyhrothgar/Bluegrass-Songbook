@@ -331,6 +331,26 @@ export function generateSlug(title, artist) {
 }
 
 /**
+ * mailto: for a rights holder's copyright concern about one song (G3). Goes
+ * to hello@bluegrassbook.com with the song named and both of its URLs (the
+ * static page Google indexes, and the app page), so the request needs no
+ * account and no form.
+ */
+export function copyrightMailto(song) {
+    const id = encodeURIComponent(String(song.id));
+    const body = [
+        `Song: ${song.title || song.id}`,
+        `https://bluegrassbook.com/songs/${id}/`,
+        `https://bluegrassbook.com/#work/${id}`,
+        '',
+        'What is the concern, and what would you like done?',
+    ].join('\n');
+    return 'mailto:hello@bluegrassbook.com'
+        + `?subject=${encodeURIComponent(`Copyright concern: ${song.title || song.id}`)}`
+        + `&body=${encodeURIComponent(body)}`;
+}
+
+/**
  * Parse a list item reference into workId and optional partId.
  * References are either "work-slug" (whole work) or "work-slug/part-slug" (specific part).
  */
