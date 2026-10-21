@@ -2,6 +2,8 @@
 
 /* Theme variables */
 :root {
+    /* Native controls, scrollbars and unstyled buttons follow the theme. */
+    color-scheme: light;
     /* Colors - light mode */
     --bg: #fafafa;
     --bg-secondary: #f7f7f7;
@@ -80,6 +82,7 @@
 }
 
 [data-theme="dark"] {
+    color-scheme: dark;
     --bg: #000000;
     --bg-secondary: #111111;
     --text: #ffffff;

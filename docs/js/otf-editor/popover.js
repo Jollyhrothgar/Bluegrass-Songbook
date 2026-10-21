@@ -449,6 +449,9 @@ export class NoteEntryPopover {
                 border: 1px solid var(--border, #ddd);
                 border-radius: 6px;
                 background: var(--bg, #fff);
+                /* A <button> doesn't inherit color: without this it is the
+                   browser's black, invisible on the dark theme. */
+                color: var(--text, #333);
                 font-weight: 600;
                 cursor: pointer;
                 transition: all 0.15s ease;
