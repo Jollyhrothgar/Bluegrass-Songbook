@@ -128,6 +128,22 @@ test.describe('Overflow Menu', () => {
         await expect(page.locator('#flag-song-context')).toContainText(/old home place/i);
     });
 
+    test('song page overflow offers every visitor a copyright concern email', async ({ page }) => {
+        await gotoSearch(page);
+        await searchAndOpen(page, 'old home place', /old home place/i);
+
+        await page.locator('#topbar-overflow-btn').click();
+        const item = page.locator('#copyright-btn');
+        await expect(item).toBeVisible();
+        await expect(item).toContainText('Copyright concern');
+        // Clicking hands a mailto: to the browser; capture it instead of leaving the page.
+        const href = await page.evaluate(() => new Promise(resolve => {
+            window.open = (url) => resolve(url);
+            document.getElementById('copyright-btn').click();
+        }));
+        expect(href).toMatch(/^mailto:hello@bluegrassbook\.com\?subject=Copyright%20concern%3A%20/);
+    });
+
     test('overflow menu closes on outside click', async ({ page }) => {
         await page.goto('/#search');
         await page.waitForSelector('#search-input');

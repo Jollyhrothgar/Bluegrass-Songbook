@@ -79,6 +79,10 @@ curation/lint_report.csv
 docs/data/index.jsonl
 docs/data/archive.jsonl
 docs/data/songs/
+# Static per-song pages + the sitemap that lists them, generated from the
+# index by scripts/lib/build_song_pages.py on every build (G2).
+docs/songs/
+docs/sitemap.xml
 docs/data/tabs/*.otf.json
 # ...but NOT the hand-placed OTF test fixtures. These are authored, not
 # generated: build_works_index's orphan prune deliberately spares them and

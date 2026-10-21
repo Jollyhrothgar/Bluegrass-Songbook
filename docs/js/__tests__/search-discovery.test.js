@@ -1,17 +1,12 @@
 /**
- * robots.txt + sitemap.xml (G2) and the one published contact address (G3).
- *
- * Songs are hash routes (#work/{slug}), which Google treats as one URL, so
- * the sitemap can only list the real pages. Every page it lists must exist
- * and must not be a redirect or noindex page.
+ * robots.txt (G2) and the one published contact address (G3).
  */
 import { describe, it, expect } from 'vitest';
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const DOCS = resolve(__dirname, '../..');
 const read = (p) => readFileSync(resolve(DOCS, p), 'utf8');
-const ORIGIN = 'https://bluegrassbook.com/';
 
 describe('robots.txt', () => {
     it('allows crawling and names the sitemap', () => {
@@ -22,38 +17,7 @@ describe('robots.txt', () => {
     });
 });
 
-describe('sitemap.xml', () => {
-    const xml = read('sitemap.xml');
-    const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
-
-    it('is a urlset of absolute bluegrassbook.com URLs with no fragments', () => {
-        expect(xml).toMatch(/^<\?xml version="1.0" encoding="UTF-8"\?>/);
-        expect(xml).toContain('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">');
-        expect(locs.length).toBeGreaterThan(0);
-        for (const loc of locs) {
-            expect(loc.startsWith(ORIGIN)).toBe(true);
-            expect(loc).not.toContain('#');
-        }
-        expect(new Set(locs).size).toBe(locs.length);
-    });
-
-    it('lists the home page and only real, indexable pages', () => {
-        expect(locs).toContain(ORIGIN);
-        for (const loc of locs) {
-            const file = loc === ORIGIN ? 'index.html' : loc.slice(ORIGIN.length);
-            expect(existsSync(resolve(DOCS, file)), file).toBe(true);
-            const html = read(file);
-            expect(html, file).not.toMatch(/<meta name="robots" content="noindex">/);
-            expect(html, file).not.toMatch(/location\.replace\(/);
-        }
-    });
-
-    it('leaves out the redirect, the noindex shim and the dev pages', () => {
-        for (const page of ['blog.html', 'create.html', 'editor.html', 'editor-demo.html', 'tab-test.html']) {
-            expect(locs).not.toContain(ORIGIN + page);
-        }
-    });
-});
+// sitemap.xml is generated with the song pages: tests/test_song_pages.py.
 
 describe('contact address', () => {
     it('is hello@bluegrassbook.com wherever the site publishes one', () => {
@@ -63,5 +27,26 @@ describe('contact address', () => {
             expect(html, page).toContain('hello@bluegrassbook.com');
         }
         expect(read('index.html')).toContain('href="mailto:hello@bluegrassbook.com"');
+    });
+});
+
+describe('copyright concern (rights holders)', () => {
+    it('builds a mailto to hello@ naming the song and its page', async () => {
+        const { copyrightMailto } = await import('../utils.js');
+        const url = copyrightMailto({ id: 'rocky-top', title: 'Rocky Top & Friends' });
+        expect(url.startsWith('mailto:hello@bluegrassbook.com?')).toBe(true);
+        const params = new URLSearchParams(url.split('?')[1]);
+        expect(params.get('subject')).toBe('Copyright concern: Rocky Top & Friends');
+        expect(params.get('body')).toContain('https://bluegrassbook.com/songs/rocky-top/');
+        expect(params.get('body')).toContain('https://bluegrassbook.com/#work/rocky-top');
+    });
+
+    it('is in every song page overflow, for every visitor', () => {
+        const src = read('js/work-view.js');
+        const item = src.indexOf("id: 'copyright-btn'");
+        expect(item).toBeGreaterThan(-1);
+        // Not inside a role gate: it is pushed before the trusted-only items.
+        expect(item).toBeLessThan(src.indexOf("id: 'request-suppress-song-btn'"));
+        expect(item).toBeGreaterThan(src.indexOf("id: 'flag-btn'"));
     });
 });

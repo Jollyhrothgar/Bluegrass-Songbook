@@ -1369,6 +1369,15 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
         from scripts.lib.bounty_decisions import build_bounty_decisions
     build_bounty_decisions(output_file.parent)
 
+    # One static page per searchable song + sitemap.xml (G2). Reads the
+    # index and .pro files just written, so pages follow curation: a song
+    # that joins or leaves search gains or loses its page on this build.
+    try:
+        from build_song_pages import build_song_pages
+    except ImportError:
+        from scripts.lib.build_song_pages import build_song_pages
+    build_song_pages(output_file.parent.parent)
+
     # Lightweight dedup check: warn about potential duplicates
     _check_duplicates(songs)
 

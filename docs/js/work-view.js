@@ -39,7 +39,7 @@ import {
 import { CHROMATIC_MAJOR_KEYS } from './chords.js';
 import {
     escapeHtml, escapeAttr, safeUrl, partUsesSongActions, isPlaceholder,
-    requireLogin, slugify, tabLabel, canEditWorkMetadata,
+    requireLogin, slugify, tabLabel, canEditWorkMetadata, copyrightMailto,
 } from './utils.js';
 import {
     accessToken, namespacedRowId, requestDurableWrite,
@@ -1762,6 +1762,13 @@ export function updateWorkTopBar() {
             onClick: () => workPageHooks.onPromote?.(),
         });
     }
+    // For rights holders, so it is shown to every visitor (the suppression
+    // request below is trusted-only). An email, not a form: no account needed.
+    overflow.push({
+        id: 'copyright-btn',
+        label: '© Copyright concern',
+        onClick: () => window.open(copyrightMailto(currentWork), '_self'),
+    });
     // One slot, two meanings: admins delete on the spot, trusted users ask.
     // Deletion is the destructive residue phase 2d keeps reviewed — the rule
     // itself lives in review-queue.js so the queue and the button agree.

@@ -328,6 +328,23 @@ uv run python scripts/lib/search_index.py --archive "artist:hank williams"
 for clients that send `Accept-Encoding: gzip`, so a local (or tailnet/phone)
 page load measures roughly what GitHub Pages serves.
 
+### Static song pages + sitemap (`build_song_pages.py`)
+
+The last step of `build_works_index` (and runnable alone:
+`uv run python scripts/lib/build_song_pages.py`). It reads the `index.jsonl`
+and `songs/{id}.pro` just written and emits, both gitignored:
+
+- `docs/songs/{id}/index.html`: one indexable page per canon row that has a
+  chart or a tab (no placeholders, no empty rows). Chords over lyrics in
+  `<pre>`, ABC skipped, a link to `/#work/{id}`, a copyright mailto.
+- `docs/sitemap.xml`: `STATIC_PAGES` + every song page except variants,
+  whose canonical link points at their `variant_of` page.
+
+Songs are hash routes in the app, which Google indexes as one URL; these
+pages are how songs reach search (G2). Pages are rewritten only when their
+text changes, and directories for songs that left the index are removed, so
+curation flows through on the next build with no manual step.
+
 ### Version Grouping
 
 Songs are grouped by `group_id` for the version picker. The grouping algorithm:
