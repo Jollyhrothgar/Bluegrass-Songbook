@@ -211,12 +211,12 @@ describe('adding a take to a song we have', () => {
         const part = availableParts.find(p => p.type === 'tablature');
         expect(part.arrangements).toHaveLength(2);
         const take = part.arrangements[1];
-        expect(take.label).toBe('Banjo — new take (unsaved)');
+        expect(take.label).toBe('Banjo — new take');
         expect(take.provisional).toBe(true);
         // …and it is the one selected
         expect(part.arrangementIndex).toBe(1);
         expect(document.querySelector('.arr-who').textContent)
-            .toBe('Banjo — new take (unsaved)');
+            .toBe('Banjo — new take');
         expect(document.querySelector('.arr-meta').textContent).toContain('unsaved');
     });
 
@@ -312,7 +312,7 @@ describe('a tab for a song the songbook does not have', () => {
         await untilEditor();
         expect(band().querySelector('.tab-play-btn')).not.toBeNull();
         expect(document.querySelector('.arr-who').textContent)
-            .toBe('Banjo — new take (unsaved)');
+            .toBe('Banjo — new take');
         expect(band().querySelector('.tab-edit-submit').textContent).toBe('🚀 Submit tab');
     });
 

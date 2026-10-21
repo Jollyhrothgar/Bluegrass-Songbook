@@ -100,22 +100,18 @@ test.describe('automatic duration — the manual, by keyboard', () => {
             await expect.poll(() => measure(page)).toEqual([[0, [1920]]]);
         });
 
-    test('STEP and LENGTH are two captioned rows, with Rest on STEP',
+    test('Note length and Cursor step are labelled; the explanations are tooltips',
         async ({ page }) => {
             await openDemo(page);
-            await expect(page.locator('.toolbar-row.step-row .toolbar-label'))
-                .toHaveText('Step');
-            await expect(page.locator('.toolbar-row.length-row .toolbar-label'))
-                .toHaveText('Length');
-            await expect(page.locator('.toolbar-row.step-row .toolbar-caption'))
-                .toHaveText('how far the cursor moves; what the ruler draws');
-            await expect(page.locator('.toolbar-row.length-row .toolbar-caption'))
-                .toHaveText('what a typed note gets');
-            await expect(page.locator('.toolbar-row.step-row .rest-button'))
-                .toBeVisible();
-            await expect(page.locator('.toolbar-row.step-row .grid-buttons'))
-                .toBeVisible();
-            await expect(page.locator('.toolbar-row.length-row .duration-buttons'))
-                .toBeVisible();
+            const length = page.locator('.duration-section > .toolbar-label');
+            const step = page.locator('.grid-section > .toolbar-label');
+            await expect(length).toHaveText('Note length');
+            await expect(step).toHaveText('Cursor step');
+            await expect(length).toHaveAttribute('title', /what a typed note gets/i);
+            await expect(step).toHaveAttribute('title', /how far the cursor moves/i);
+            await expect(page.locator('.toolbar-caption')).toHaveCount(0);
+            await expect(page.locator('.grid-section .rest-button')).toBeVisible();
+            await expect(page.locator('.grid-section .grid-buttons')).toBeVisible();
+            await expect(page.locator('.duration-section .duration-buttons')).toBeVisible();
         });
 });

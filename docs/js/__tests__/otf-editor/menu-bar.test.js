@@ -14,7 +14,7 @@ import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 
 import { EditorMenuBar, MENUS } from '../../otf-editor/menu-bar.js';
 import { EditorToolbar, durationReflects } from '../../otf-editor/toolbar.js';
-import { EditorState, DURATIONS } from '../../otf-editor/state.js';
+import { EditorState, DURATIONS, EditorMode } from '../../otf-editor/state.js';
 import { OTFEditor } from '../../otf-editor/editor.js';
 import {
     ACTIONS, PRESETS, keyFor, menuKeyFor, prettyKeys,
@@ -546,13 +546,14 @@ describe('EditorToolbar — tooltips come from the binding table', () => {
         expect(toolbar.undoButton.title).toBe('Undo (Ctrl+z)');
     });
 
-    it('the duration buttons print their key inline too', () => {
+    it('keys live in the tooltips, not printed inside the buttons', () => {
+        // The inline F4 / F5 / q / F7 hints crowded the LENGTH palette and
+        // read like a bug (1/4 says `q` because F6 is the browser's).
         mount();
-        const keyText = (d) => toolbar.durationButtons.get(d)
-            .querySelector('.button-key').textContent;
-        expect(keyText(DURATIONS.eighth)).toBe('F7');
+        expect(toolbar.element.querySelector('.button-key')).toBeNull();
+        expect(toolbar.durationButtons.get(DURATIONS.eighth).title).toBe('Eighth (F7)');
         setPreset('vim');
-        expect(keyText(DURATIONS.eighth)).toBe('e');
+        expect(toolbar.durationButtons.get(DURATIONS.eighth).title).toBe('Eighth (e)');
     });
 });
 
@@ -609,24 +610,24 @@ describe('EditorToolbar — entry latches', () => {
         expect(toolbar.autoAdvanceButton.classList.contains('active')).toBe(false);
     });
 
-    it('mode leads, STEP over LENGTH, and the track group comes LAST', () => {
+    it('history, then LENGTH, STEP, techniques, text; the mode chip sits LAST', () => {
         const sections = [...toolbar.element.querySelectorAll('.toolbar-section')]
             .map(s => s.className.replace('toolbar-section ', ''));
-        expect(sections[0]).toBe('mode-section');
-        // STEP first, LENGTH under it — you choose where the cursor goes
-        // before you care what lands there.
-        expect(sections[1]).toBe('grid-section');
-        expect(sections[2]).toBe('duration-section');
-        // once-per-document edits do not lead
-        expect(sections[sections.length - 1]).toBe('track-section');
+        expect(sections.slice(0, 5)).toEqual([
+            'history-section', 'duration-section', 'grid-section',
+            'articulation-section', 'text-section',
+        ]);
+        // The chip appears and disappears with the mode; at the end of the
+        // row that moves nothing the user is reaching for.
+        expect(sections[sections.length - 1]).toBe('mode-section');
     });
 });
 
 // ======================================================================
-// STEP over LENGTH: two captioned rows, and the live prediction
+// LENGTH and STEP: labelled sections, and the live prediction
 // ======================================================================
 
-describe('EditorToolbar — the STEP and LENGTH rows', () => {
+describe('EditorToolbar — the LENGTH and STEP sections', () => {
     let state;
     let toolbar;
 
@@ -648,36 +649,46 @@ describe('EditorToolbar — the STEP and LENGTH rows', () => {
 
     afterEach(() => toolbar?.destroy());
 
-    it('there are two rows, each with its caption', () => {
+    it('no caption sentences: the labels say it, the tooltips explain it', () => {
         mount();
-        expect(row('step-row')).not.toBeNull();
-        expect(row('length-row')).not.toBeNull();
-        expect(row('step-row').querySelector('.toolbar-caption').textContent.trim())
-            .toBe('how far the cursor moves; what the ruler draws');
-        expect(row('length-row').querySelector('.toolbar-caption').textContent.trim())
-            .toBe('what a typed note gets');
-        expect(row('step-row').querySelector('.toolbar-label').textContent).toBe('Step');
-        expect(row('length-row').querySelector('.toolbar-label').textContent)
-            .toBe('Length');
+        expect(toolbar.element.querySelector('.toolbar-caption')).toBeNull();
+        const label = (cls) => toolbar.element.querySelector(`.${cls} > .toolbar-label`);
+        expect(label('duration-section').textContent).toBe('Note length');
+        expect(label('grid-section').textContent).toBe('Cursor step');
+        expect(label('duration-section').title).toMatch(/what a typed note gets/i);
+        expect(label('grid-section').title).toMatch(/how far the cursor moves/i);
     });
 
-    it('Rest sits with STEP — it advances one step, it is not a length', () => {
+    it('Rest, the ruler and auto-advance sit with the cursor STEP', () => {
         mount();
-        expect(row('step-row').contains(toolbar.restButton)).toBe(true);
-        expect(row('length-row').contains(toolbar.restButton)).toBe(false);
-        // and the grid palette + its toggle are on that row too
-        expect(row('step-row').querySelector('.grid-buttons')).not.toBeNull();
-        expect(row('step-row').contains(toolbar.gridToggleButton)).toBe(true);
-    });
-
-    it('LENGTH holds Auto, the values, and the Dot / triplet / advance latches', () => {
-        mount();
-        const length = row('length-row');
-        expect(length.contains(toolbar.autoDurationButton)).toBe(true);
-        expect(length.querySelector('.duration-buttons')).not.toBeNull();
-        for (const b of [toolbar.dottedButton, toolbar.tripletButton,
+        const step = toolbar.element.querySelector('.grid-section');
+        for (const b of [toolbar.restButton, toolbar.gridToggleButton,
             toolbar.autoAdvanceButton]) {
+            expect(step.contains(b)).toBe(true);
+        }
+        expect(step.querySelector('.grid-buttons')).not.toBeNull();
+    });
+
+    it('LENGTH holds Auto, the values, Dot and the triplet latch', () => {
+        mount();
+        const length = toolbar.element.querySelector('.duration-section');
+        for (const b of [toolbar.autoDurationButton, toolbar.dottedButton,
+            toolbar.tripletButton]) {
             expect(length.contains(b)).toBe(true);
+        }
+        expect(length.querySelector('.duration-buttons')).not.toBeNull();
+    });
+
+    it('the two toggles say what they toggle', () => {
+        mount();
+        expect(toolbar.gridToggleButton.textContent.trim()).toBe('Ruler');
+        expect(toolbar.autoAdvanceButton.textContent.trim()).toBe('Advance');
+    });
+
+    it('clipboard and loop are menu items, not toolbar buttons', () => {
+        mount();
+        for (const cls of ['copy-button', 'cut-button', 'paste-button', 'loop-button']) {
+            expect(toolbar.element.querySelector(`.${cls}`)).toBeNull();
         }
     });
 
@@ -771,6 +782,101 @@ describe('EditorToolbar — the STEP and LENGTH rows', () => {
             .classList.contains('reflects-note')).toBe(true);
         expect(toolbar.durationButtons.get(DURATIONS.whole)
             .classList.contains('predicts-next')).toBe(true);
+    });
+});
+
+describe('EditorToolbar — what only shows when it means something', () => {
+    let state;
+    let toolbar;
+    let onAction;
+
+    function mount(otf) {
+        state = new EditorState({ otf: otf || doc(), trackId: 'banjo' });
+        onAction = vi.fn();
+        toolbar = new EditorToolbar(state, { onAction });
+        const container = document.createElement('div');
+        document.body.appendChild(container);
+        toolbar.render(container);
+    }
+
+    beforeEach(() => {
+        document.body.innerHTML = '';
+        resetPreset();
+    });
+
+    afterEach(() => toolbar?.destroy());
+
+    it('the mode chip hides in NORMAL and names VISUAL / ANNOTATION', () => {
+        // NORMAL is where you always are; the status bar already says it.
+        mount();
+        const chip = toolbar.modeIndicator;
+        expect(chip.hidden).toBe(true);
+        expect(chip.textContent).not.toContain('--');
+        state.setMode(EditorMode.VISUAL);
+        expect(chip.hidden).toBe(false);
+        expect(chip.textContent).toContain('VISUAL');
+        expect(chip.textContent).toContain('Esc');
+        state.setMode(EditorMode.ANNOTATION);
+        expect(chip.textContent).toContain('ANNOTATION');
+        state.setMode(EditorMode.NORMAL);
+        expect(chip.hidden).toBe(true);
+    });
+
+    it('the track group appears only when there is a second track', () => {
+        // One track is renamed from Score ▸ Rename track…; a lone "banjo"
+        // button with greyed arrows was four slots of nothing to do.
+        mount();
+        const section = toolbar.element.querySelector('.track-section');
+        expect(section.style.display).toBe('none');
+        const two = doc();
+        two.tracks.push({ ...two.tracks[0], id: 'guitar', instrument: '6-string-guitar',
+            tuning: ['E4', 'B3', 'G3', 'D3', 'A2', 'E2'] });
+        two.notation.guitar = [{ measure: 1, events: [] }];
+        toolbar.destroy();
+        mount(two);
+        expect(toolbar.element.querySelector('.track-section').style.display).toBe('');
+    });
+
+    it('the palette keeps the transitions; effects open from one ▾ button', () => {
+        mount();
+        const symbols = [...toolbar.element.querySelectorAll('.articulation-buttons > .articulation-button')]
+            .map(b => b.textContent.trim());
+        expect(symbols).toEqual(['h', 'p', '/', 'x', 'b', '⌒', '∅']);
+        expect(toolbar.effectsButton.textContent).toMatch(/Effects/);
+    });
+
+    it('Effects ▾ lists every effect by name and runs its action', () => {
+        mount(doc({ s: 3, f: 0, dur: 480, fx: ['roll'] }));
+        toolbar.effectsButton.click();
+        const popup = document.querySelector('.otf-fx-popup');
+        expect(popup && !popup.hidden).toBe(true);
+        const items = [...popup.querySelectorAll('[role="menuitemcheckbox"]')];
+        expect(items).toHaveLength(14);
+        const roll = items.find(i => i.dataset.action === 'effect.roll');
+        expect(roll.getAttribute('aria-checked')).toBe('true');   // the note has it
+        expect(roll.textContent).toMatch(/roll/i);
+        items.find(i => i.dataset.action === 'effect.brush').click();
+        expect(onAction).toHaveBeenCalledWith('effect.brush');
+        expect(popup.hidden).toBe(true);
+    });
+
+    it('Escape and an outside click close the effects list', () => {
+        mount();
+        toolbar.effectsButton.click();
+        const popup = document.querySelector('.otf-fx-popup');
+        popup.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
+        expect(popup.hidden).toBe(true);
+        toolbar.effectsButton.click();
+        document.body.dispatchEvent(new MouseEvent('mousedown', { bubbles: true }));
+        expect(popup.hidden).toBe(true);
+    });
+
+    it('destroy() takes the popup with it', () => {
+        mount();
+        toolbar.effectsButton.click();
+        toolbar.destroy();
+        toolbar = null;
+        expect(document.querySelector('.otf-fx-popup')).toBeNull();
     });
 });
 
@@ -890,9 +996,8 @@ describe('EditorToolbar — the palettes reflect the note under the cursor', () 
         expect(toolbar.articulationButtons.has('~')).toBe(false);
         const symbols = [...toolbar.element.querySelectorAll('.articulation-button')]
             .map(b => b.textContent);
-        // h p / x b are techniques; ⇅ ≀ ch ( ) · are TablEdit's keyed
-        // effects (brush roll choke ghost staccato — `fx`)
-        expect(symbols).toEqual(['h', 'p', '/', 'x', 'b', '⇅', '≀', 'ch', '( )', '·', '⌒', '∅']);
+        // h p / x b are techniques; the effects (`fx`) are in Effects ▾
+        expect(symbols).toEqual(['h', 'p', '/', 'x', 'b', '⌒', '∅']);
     });
 });
 

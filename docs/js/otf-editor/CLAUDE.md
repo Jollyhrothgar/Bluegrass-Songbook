@@ -142,7 +142,10 @@ importer-free; `effects-facade.test.js` asserts the list equals
   note carries (`checked(state)` on an action item); the toolbar's
   articulation palette gains ⇅ ≀ ch ( ) · (the keyed five, from
   `FX_BUTTONS`, `.reflects-note` like h/p) — always the action, never
-  armed; the note popover gets an **Effects** row of 14 toggles
+  armed — **superseded 2026-10-21: the palette keeps only the transitions,
+  and all 14 effects (the keyed five included) are one `Effects ▾` list,
+  by name, with ✓ and keys** (see "The menu bar and the palettes"); the
+  note popover gets an **Effects** row of 14 toggles
   (`POPOVER_FX`) and carries `grace` through an in-place edit; the status
   bar shows `Fx: brush · let-ring · grace 3 hp`. Drawing is
   `renderers/tablature.js`'s job, not the editor's.
@@ -381,25 +384,44 @@ Two editor options carry a wrapper's answer into the shared component:
 | `fileActions: [{label, run, disabled?, action?}]` | Download OTF alone (`action: 'edit.save'` prints its key) | whoever owns the session's buttons — the song page's Submit / Download / Cancel / Done group belongs here |
 | `hostTransport: true` | `false` | a wrapper that already shows ▶/⏹/BPM for this document (the song page's bottom band, `tab-edit-band.js`). It drops the status bar's transport so one tab doesn't get three sets of playback controls; Mode/M/Beat/String/Duration/Text and the help button stay |
 
-**STEP and LENGTH are two captioned rows** (`.toolbar-row.step-row` and
-`.toolbar-row.length-row`), not the old side-by-side "Duration" and
-"Grid" groups. Nothing on screen used to say which knob moved the cursor
-and which sized the note — the commonest first-session confusion, and
-under automatic duration they really are different inputs (plan §6: the
-grid IS the rhythm input):
+**One flowing toolbar, labelled — no caption sentences** (2026-10-21,
+owner: the captions read as documentation left hanging, and the toolbar
+took three crowded rows). Left to right, wrapping as the width asks:
 
-| row | holds | caption |
-|---|---|---|
-| **STEP** (`.grid-section`) | `.grid-buttons` (1/4 · 1/8 · 1/16 · 1/32 · Trip), `▦` grid toggle, **`Rest`** | "how far the cursor moves; what the ruler draws" |
-| **LENGTH** (`.duration-section`) | `Auto`, `.duration-buttons` (1 · 1/2 · 1/4 · 1/8 · 1/16 · 1/32), `Dot`, `³`, `⇥` | "what a typed note gets" |
+| section | holds |
+|---|---|
+| `.history-section` | ↩ ↪ |
+| `.duration-section` — label **Note length** | `Auto`, `.duration-buttons` (1 · 1/2 · 1/4 · 1/8 · 1/16 · 1/32), `Dot`, `³` |
+| `.grid-section` — label **Cursor step** | `.grid-buttons` (1/4 · 1/8 · 1/16 · 1/32 · Trip), `Rest`, `Advance`, `Ruler` |
+| `.articulation-section` | h p / x b ⌒ ∅ + **`Effects ▾`** (`.effects-button` → `.otf-fx-popup`, all of `FX_BUTTONS` by name, ✓ for what the note carries, the preset's key) |
+| `.text-section` | `Text` (placed text), ⌫ |
+| `.track-section` | **only with two or more tracks**; a lone track is renamed from Score ▸ Rename track… |
+| `.mode-section` (last, `margin-left: auto`) | `.mode-indicator`, **hidden in NORMAL**; `VISUAL · Esc to leave` / `ANNOTATION · …` otherwise |
 
-`Rest` lives with STEP because that is what it does — advance one step
-without a note. Captions are `.toolbar-caption` (small, muted, hidden on
-phones; the STEP / LENGTH labels stay, they are what tells the rows
-apart). Every class the e2e suite names is unchanged:
-`.duration-buttons .button-symbol` is still `1 1/2 1/4 1/8 1/16 1/32` in
-that order, `.rest-button`, `.grid-buttons`, `.grid-btn[data-subdivision]`,
-`.toolbar-section`, `.mode-indicator`.
+- **The labels say which knob is which; the tooltips explain.** "Note
+  length" / "Cursor step" carry the old captions' sentences in `title`
+  (`LENGTH_HINT`, `STEP_HINT`). The confusion they answer is real — under
+  automatic duration the STEP is the rhythm input — so the words stay on
+  screen, just not as a sentence.
+- **Keys are in tooltips only.** The inline F4 · F5 · q · F7 hints are gone
+  (`q` because F6 is the browser's read like a typo).
+- **On/off switches are not choices.** `Advance` and `Ruler` are
+  `.toolbar-toggle`: on is a tinted outline with `aria-pressed`, never the
+  solid fill that marks the selected value next to them.
+- **Copy / cut / paste / loop left the toolbar** — they are Edit ▸ and
+  Play ▸ items with their keys, and four more slots was most of a row.
+- `Effects ▾` hangs its list off `<body>` (fixed, like the menu bar's
+  popup, because `.otf-editor` clips), closes on pick / Escape / outside
+  click, and is outlined `.reflects-note` when the note carries any `fx`.
+  Entries are never disabled on an empty slot: in VISUAL the action takes
+  the selection.
+- Under 600px the sections wrap internally and separators hide, so no
+  palette runs off a phone screen.
+
+Selectors the e2e suite names: `.duration-buttons .button-symbol` (still
+`1 1/2 1/4 1/8 1/16 1/32`), `.rest-button`, `.grid-buttons`,
+`.grid-btn[data-subdivision]`, `.toolbar-section`, `.mode-indicator`
+(its text is set even while hidden), `.effects-button`, `.otf-fx-popup`.
 
 **The palettes reflect the note under the cursor** — TablEdit's purple
 border, and the reason post-hoc duration/effect editing is usable at all.
@@ -439,9 +461,9 @@ thing:
   in its tooltip when `facade.tiePredecessor` finds none, rather than
   being dropped in silence at Insert.
 
-The Track group sits at the END of the toolbar: rename and reorder are
-once-per-document edits and used to spend four slots ahead of the buttons
-you press every few seconds.
+The Track group sits near the END of the toolbar, and only with a second
+track: rename and reorder are once-per-document edits and used to spend
+four slots ahead of the buttons you press every few seconds.
 
 ### Document ops added for TablEdit input parity
 

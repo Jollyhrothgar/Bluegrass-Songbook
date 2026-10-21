@@ -474,22 +474,32 @@ describe('toolbar — the keyed effects reflect the note', () => {
     beforeEach(() => { document.body.innerHTML = ''; resetPreset(); });
     afterEach(() => toolbar?.destroy());
 
-    it('has a button for each keyed effect, in the shared articulation config', () => {
-        const fx = ARTICULATION_BUTTONS.filter(c => c.fx).map(c => c.fx);
-        expect(fx).toEqual(['brush', 'roll', 'choke', 'ghost', 'staccato']);
+    it('every effect is one Effects ▾ entry away — the keyed five included', () => {
+        // The palette used to carry the five keyed effects as cryptic
+        // glyphs (⇅ ≀ ch ( ) ·); they now sit, named, in one list with the
+        // other nine, so the toolbar keeps only the transitions.
+        expect(ARTICULATION_BUTTONS.filter(c => c.fx)).toEqual([]);
         mount(null);
-        for (const f of fx) {
-            expect(toolbar.articulationButtons.get(FX_ACTIONS[f]), f).toBeTruthy();
+        toolbar.effectsButton.click();
+        const listed = [...document.querySelectorAll('.otf-fx-popup [role="menuitemcheckbox"]')]
+            .map(i => i.dataset.action);
+        expect(listed).toEqual(FX_BUTTONS.map(c => c.action));
+        for (const f of ['brush', 'roll', 'choke', 'ghost', 'staccato']) {
+            expect(listed).toContain(FX_ACTIONS[f]);
         }
     });
 
-    it('outlines brush and ghost on a note that carries them', () => {
+    it('outlines Effects ▾ and checks brush and ghost on a note that carries them', () => {
         mount({ s: 2, f: 0, dur: 480, fx: ['brush', 'ghost'] });
-        const lit = (id) => toolbar.articulationButtons.get(id).classList.contains('reflects-note');
-        expect(lit('effect.brush')).toBe(true);
-        expect(lit('effect.ghost')).toBe(true);
-        expect(lit('effect.roll')).toBe(false);
-        expect(lit('effect.clear')).toBe(false);
+        expect(toolbar.effectsButton.classList.contains('reflects-note')).toBe(true);
+        toolbar.effectsButton.click();
+        const checked = (id) => document
+            .querySelector(`.otf-fx-popup [data-action="${id}"]`).getAttribute('aria-checked');
+        expect(checked('effect.brush')).toBe('true');
+        expect(checked('effect.ghost')).toBe('true');
+        expect(checked('effect.roll')).toBe('false');
+        expect(toolbar.articulationButtons.get('effect.clear')
+            .classList.contains('reflects-note')).toBe(false);
     });
 
     it('Clear only reads "nothing set" when there is no fx and no grace either', () => {
@@ -498,18 +508,27 @@ describe('toolbar — the keyed effects reflect the note', () => {
             .classList.contains('reflects-note')).toBe(false);
     });
 
-    it('an effect button runs its binding action, even on an empty slot', () => {
+    const fxItem = (id) => document.querySelector(`.otf-fx-popup [data-action="${id}"]`);
+
+    it('an Effects ▾ entry runs its binding action, even on an empty slot', () => {
+        // never ARMED for the next note (only techs arm); and not disabled
+        // either — in VISUAL the action takes the selection
         mount(null);
-        toolbar.articulationButtons.get('effect.roll').click();
+        toolbar.effectsButton.click();
+        expect(fxItem('effect.roll').disabled).toBe(false);
+        fxItem('effect.roll').click();
         expect(actions).toEqual(['effect.roll']);
         expect(state.pendingArticulation).toBe(null);
     });
 
-    it('its tooltip prints the preset’s key', () => {
+    it('each entry prints the preset’s key', () => {
         mount(null);
-        expect(toolbar.articulationButtons.get('effect.brush').title).toMatch(/\(b\)/);
+        toolbar.effectsButton.click();
+        expect(fxItem('effect.brush').querySelector('kbd').textContent).toBe('b');
+        toolbar.effectsButton.click();
         setPreset('vim');
-        expect(toolbar.articulationButtons.get('effect.brush').title).toMatch(/aB/);
+        toolbar.effectsButton.click();
+        expect(fxItem('effect.brush').querySelector('kbd').textContent).toBe('aB');
     });
 });
 

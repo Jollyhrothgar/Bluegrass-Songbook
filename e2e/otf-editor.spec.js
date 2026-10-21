@@ -168,12 +168,17 @@ test.describe('selection, clipboard, phrases', () => {
         await expect(page.locator('.editor-selection-rect').first()).toBeVisible();
         await expect(page.locator('.mode-indicator')).toContainText('VISUAL');
 
-        await page.locator('.copy-button').click();
+        // the mouse path is the Edit menu (copy/paste left the toolbar)
+        const editMenu = async (label) => {
+            await page.locator('.menu-trigger[data-menu="edit"]').click();
+            await page.locator('.menu-popup [role="menuitem"]', { hasText: label }).first().click();
+        };
+        await editMenu('Copy');
         await page.keyboard.press('Escape');
         // place cursor in measure 3 and paste
         await page.keyboard.press('Enter'); // next measure
         await page.keyboard.press('Enter');
-        await page.locator('.paste-button').click();
+        await editMenu('Paste');
         await expect(async () => {
             expect(await page.locator('.note-text').count()).toBeGreaterThanOrEqual(6);
         }).toPass();
@@ -286,7 +291,7 @@ test.describe('new-tab flow (the song page in #new-tab mode)', () => {
         await expect(page.locator('#new-tab-title')).toHaveValue('E2E Breakdown');
         await expect(page.locator('#new-tab-artist')).toHaveValue('');
         // The take header the read view draws, on an unsaved take
-        await expect(page.locator('.arr-who')).toHaveText('Guitar — new take (unsaved)');
+        await expect(page.locator('.arr-who')).toHaveText('Guitar — new take');
         // The band survived: play/tempo are still there, and the session's
         // buttons took the ✏️ Edit slot
         await expect(page.locator('#app-bottomband .tab-play-btn')).toBeVisible();

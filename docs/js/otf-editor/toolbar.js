@@ -15,14 +15,16 @@
 //    get. Two classes, no layout change — an outline, never a border
 //    width, so nothing moves when the cursor does.
 //
-// 3. **STEP and LENGTH are two captioned rows, not one flat palette.**
-//    They were "Duration" and "Grid", side by side, and nothing on
-//    screen said which one moved the cursor and which one sized the
-//    note — the single most common confusion in the first session with
-//    automatic duration on, where the two really are different inputs
-//    (plan §6: under auto the GRID is the rhythm input). Three outline
-//    states now live on the LENGTH row, and they never mean the same
-//    thing:
+// 3. **"Note length" and "Cursor step" say which knob is which.** They
+//    were "Duration" and "Grid", side by side, and nothing on screen said
+//    which one moved the cursor and which one sized the note — the single
+//    most common confusion in the first session with automatic duration
+//    on, where the two really are different inputs (plan §6: under auto
+//    the GRID is the rhythm input). Caption sentences under each row
+//    answered that for a while and read as stray documentation (owner,
+//    2026-10-21); the labels now carry it and the tooltips explain it.
+//    Three outline states live on the LENGTH buttons, and they never
+//    mean the same thing:
 //
 //      .active        (filled)          what the next typed note gets
 //      .reflects-note (solid outline)   what the note under the cursor IS
@@ -104,19 +106,17 @@ export const FX_BUTTONS = FX_ORDER.map(fx => ({
 }));
 
 /**
- * The effects that get a PALETTE button: the ones TablEdit has a hotkey
- * for (B R C G /). The rest are Note ▸ Effects and the popover's row —
- * TablEdit reaches them through a dialog too.
+ * The palette keeps the TRANSITIONS (h p / x b, the tie) and the clear.
+ * The effects — all fourteen, the keyed five (B R C G /) included — are
+ * one `Effects ▾` list away, by name: as palette glyphs (⇅ ≀ ch ( ) ·)
+ * they were five cryptic buttons, one of them nearly invisible.
  */
-const PALETTE_FX = ['brush', 'roll', 'choke', 'ghost', 'staccato'];
-
 export const ARTICULATION_BUTTONS = [
     { tech: 'h', symbol: 'h', label: 'Hammer-on', action: 'effect.hammer' },
     { tech: 'p', symbol: 'p', label: 'Pull-off', action: 'effect.pull' },
     { tech: '/', symbol: '/', label: 'Slide', action: 'effect.slide' },
     { tech: 'x', symbol: 'x', label: 'Dead note', action: 'effect.dead' },
     { tech: 'b', symbol: 'b', label: 'Bend target', action: 'effect.bend' },
-    ...FX_BUTTONS.filter(cfg => PALETTE_FX.includes(cfg.fx)),
     { tie: true, symbol: '⌒', label: 'Tie to the previous note', action: 'effect.tie' },
     { clear: true, symbol: '∅', label: 'Clear the effects', action: 'effect.clear' },
 ];
@@ -130,6 +130,10 @@ const MODE_STYLES = {
     [EditorMode.VISUAL]: { label: 'VISUAL', color: '#fff', bg: '#007bff' },
     [EditorMode.ANNOTATION]: { label: 'ANNOTATION', color: '#fff', bg: '#6f42c1' },
 };
+
+/** What each label's tooltip explains — the old caption sentences. */
+const LENGTH_HINT = 'Note length: what a typed note gets';
+const STEP_HINT = 'Cursor step: how far the cursor moves, and what the ruler draws';
 
 /**
  * Does a duration button describe the note under the cursor?
@@ -198,84 +202,57 @@ export class EditorToolbar {
         // edits and used to spend four slots at the head of the row, ahead
         // of the things you press every few seconds (plan §8.2).
         this.element.innerHTML = `
-            <div class="toolbar-section mode-section">
-                <div class="mode-indicator"></div>
-            </div>
-            <div class="toolbar-separator"></div>
-            <div class="toolbar-rows">
-                <div class="toolbar-row step-row">
-                    <div class="toolbar-section grid-section">
-                        <span class="toolbar-label">Step</span>
-                        <div class="button-group grid-buttons"></div>
-                        <button class="toolbar-button grid-toggle-button">
-                            <span class="button-icon">▦</span>
-                        </button>
-                        <button class="toolbar-button rest-button">
-                            <span class="button-content">Rest</span>
-                        </button>
-                    </div>
-                    <span class="toolbar-caption step-caption"
-                        >how far the cursor moves; what the ruler draws</span>
-                </div>
-                <div class="toolbar-row length-row">
-                    <div class="toolbar-section duration-section">
-                        <span class="toolbar-label">Length</span>
-                        <button class="toolbar-button auto-duration-button">
-                            <span class="button-content">Auto</span>
-                        </button>
-                        <span class="toolbar-divider"></span>
-                        <div class="button-group duration-buttons"></div>
-                        <button class="toolbar-button dotted-button">
-                            <span class="button-content">Dot</span>
-                        </button>
-                        <button class="toolbar-button triplet-button">
-                            <span class="button-content">³</span>
-                        </button>
-                        <button class="toolbar-button auto-advance-button">
-                            <span class="button-icon">⇥</span>
-                        </button>
-                    </div>
-                    <span class="toolbar-caption length-caption"
-                        >what a typed note gets</span>
-                </div>
-            </div>
-            <div class="toolbar-separator"></div>
-            <div class="toolbar-section articulation-section">
-                <span class="toolbar-label">Articulation</span>
-                <div class="button-group articulation-buttons"></div>
-            </div>
-            <div class="toolbar-separator"></div>
-            <div class="toolbar-section text-section">
-                <span class="toolbar-label">Text</span>
-                <button class="toolbar-button annotation-button">
-                    <span class="button-content">Aa</span>
-                </button>
-                <button class="toolbar-button annotation-delete-button">
-                    <span class="button-icon">⌫</span>
-                </button>
-            </div>
-            <div class="toolbar-separator"></div>
-            <div class="toolbar-section edit-section">
-                <button class="toolbar-button copy-button">
-                    <span class="button-icon">⧉</span>
-                </button>
-                <button class="toolbar-button cut-button">
-                    <span class="button-icon">✂</span>
-                </button>
-                <button class="toolbar-button paste-button">
-                    <span class="button-icon">📋</span>
-                </button>
-                <button class="toolbar-button loop-button">
-                    <span class="button-icon">🔁</span>
-                </button>
-            </div>
-            <div class="toolbar-separator"></div>
             <div class="toolbar-section history-section">
                 <button class="toolbar-button undo-button">
                     <span class="button-icon">↩</span>
                 </button>
                 <button class="toolbar-button redo-button">
                     <span class="button-icon">↪</span>
+                </button>
+            </div>
+            <div class="toolbar-separator"></div>
+            <div class="toolbar-section duration-section">
+                <span class="toolbar-label" title="${LENGTH_HINT}">Note length</span>
+                <button class="toolbar-button auto-duration-button">
+                    <span class="button-content">Auto</span>
+                </button>
+                <div class="button-group duration-buttons"></div>
+                <button class="toolbar-button dotted-button">
+                    <span class="button-content">Dot</span>
+                </button>
+                <button class="toolbar-button triplet-button">
+                    <span class="button-content">³</span>
+                </button>
+            </div>
+            <div class="toolbar-separator"></div>
+            <div class="toolbar-section grid-section">
+                <span class="toolbar-label" title="${STEP_HINT}">Cursor step</span>
+                <div class="button-group grid-buttons"></div>
+                <button class="toolbar-button rest-button">
+                    <span class="button-content">Rest</span>
+                </button>
+                <button class="toolbar-button toolbar-toggle auto-advance-button" aria-pressed="false">
+                    <span class="button-content">Advance</span>
+                </button>
+                <button class="toolbar-button toolbar-toggle grid-toggle-button" aria-pressed="false">
+                    <span class="button-content">Ruler</span>
+                </button>
+            </div>
+            <div class="toolbar-separator"></div>
+            <div class="toolbar-section articulation-section">
+                <span class="toolbar-label">Technique</span>
+                <div class="button-group articulation-buttons"></div>
+                <button class="toolbar-button effects-button" aria-haspopup="menu" aria-expanded="false">
+                    <span class="button-content">Effects ▾</span>
+                </button>
+            </div>
+            <div class="toolbar-separator"></div>
+            <div class="toolbar-section text-section">
+                <button class="toolbar-button annotation-button">
+                    <span class="button-content">Text</span>
+                </button>
+                <button class="toolbar-button annotation-delete-button">
+                    <span class="button-icon">⌫</span>
                 </button>
             </div>
             <div class="toolbar-separator track-section-sep" style="display:none"></div>
@@ -291,6 +268,9 @@ export class EditorToolbar {
                 <button class="toolbar-button track-rename-button" title="Rename this track">
                     <span class="button-icon">✏️</span>
                 </button>
+            </div>
+            <div class="toolbar-section mode-section">
+                <div class="mode-indicator" role="status" hidden></div>
             </div>
         `;
 
@@ -321,10 +301,7 @@ export class EditorToolbar {
         this.undoButton = this.element.querySelector('.undo-button');
         this.redoButton = this.element.querySelector('.redo-button');
         this.restButton = this.element.querySelector('.rest-button');
-        this.copyButton = this.element.querySelector('.copy-button');
-        this.cutButton = this.element.querySelector('.cut-button');
-        this.pasteButton = this.element.querySelector('.paste-button');
-        this.loopButton = this.element.querySelector('.loop-button');
+        this.effectsButton = this.element.querySelector('.effects-button');
         this.annotationButton = this.element.querySelector('.annotation-button');
         this.annotationDeleteButton = this.element.querySelector('.annotation-delete-button');
 
@@ -334,15 +311,13 @@ export class EditorToolbar {
         this._title(this.tripletButton, 'Triplet', 'duration.triplet');
         this._title(this.autoAdvanceButton, 'Auto-advance after entry', 'entry.autoAdvance');
         this._title(this.restButton, 'Rest — advance one duration without a note', 'nav.advance');
-        this._title(this.gridToggleButton, 'Show/hide the grid', 'grid.toggle');
+        this._title(this.gridToggleButton, 'Show/hide the ruler', 'grid.toggle');
+        this._title(this.effectsButton,
+            'Effects on the note at the cursor — brush, roll, choke, ghost, let ring…', null);
         this._title(this.annotationButton,
             'Add or edit the placed text at the cursor — section labels, playing notes, chord names',
             'text.edit');
         this._title(this.annotationDeleteButton, 'Delete the placed text at the cursor', 'text.delete');
-        this._title(this.copyButton, 'Copy', 'clip.copy');
-        this._title(this.cutButton, 'Cut', 'clip.cut');
-        this._title(this.pasteButton, 'Paste at the cursor', 'clip.paste');
-        this._title(this.loopButton, 'Loop the selection', 'play.loop');
         this._title(this.undoButton, 'Undo', 'edit.undo');
         this._title(this.redoButton, 'Redo', 'edit.redo');
 
@@ -439,11 +414,11 @@ export class EditorToolbar {
             this.trackButtons.appendChild(btn);
         }
 
-        // One track still gets the row: it names what you are editing,
-        // and a lone track can be misnamed too (a tab-minted work whose
-        // only track says "banjo" when it is a guitar). The move buttons
-        // are what has nothing to do.
-        const show = tracks.length >= 1;
+        // Only a second track gives this row something to do: switching
+        // and reordering need two. A lone track is renamed from Score ▸
+        // Rename track… (it used to hold four slots here — a "banjo"
+        // button, two greyed arrows and ✏️ — on every one-track tab).
+        const show = tracks.length >= 2;
         if (this.trackSection) this.trackSection.style.display = show ? '' : 'none';
         if (this.trackSectionSep) this.trackSectionSep.style.display = show ? '' : 'none';
 
@@ -500,34 +475,15 @@ export class EditorToolbar {
                 min-width: 46px;
             }
 
-            /* STEP over LENGTH: two rows, each captioned, because the
-               two answer different questions and used to sit side by
-               side answering neither out loud. */
-            .toolbar-rows {
-                display: flex;
-                flex-direction: column;
-                gap: 4px;
+            /* The labels carry an explanation in their tooltip */
+            .toolbar-label[title] {
+                cursor: help;
             }
 
-            .toolbar-row {
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                flex-wrap: wrap;
-            }
-
-            .toolbar-caption {
-                font-size: 10px;
-                line-height: 1.2;
-                color: var(--text-muted, #888);
-                opacity: 0.85;
-            }
-
-            .toolbar-divider {
-                width: 1px;
-                height: 18px;
-                background: var(--border, #ddd);
-                margin: 0 2px;
+            /* The mode chip sits at the far end: it comes and goes with
+               VISUAL / ANNOTATION, and nothing you reach for may move. */
+            .mode-section {
+                margin-left: auto;
             }
 
             .button-group {
@@ -562,6 +518,15 @@ export class EditorToolbar {
                 color: var(--on-accent, #fff);
             }
 
+            /* An ON/OFF switch (Advance, Ruler) is not a CHOICE like the
+               step value beside it: on reads as a tinted outline, never
+               the solid fill that marks the selected value. */
+            .toolbar-toggle.active {
+                background: var(--accent-soft, rgba(0, 123, 255, 0.12));
+                border-color: var(--accent, #007bff);
+                color: var(--accent, #007bff);
+            }
+
             .toolbar-button.pending {
                 background: var(--warning, #fd7e14);
                 border-color: var(--warning, #fd7e14);
@@ -594,20 +559,6 @@ export class EditorToolbar {
                 line-height: 1;
             }
 
-            .duration-button .button-key {
-                font-size: 9px;
-                color: var(--text-muted, #888);
-                margin-left: 2px;
-            }
-
-            .duration-button .button-key:empty {
-                margin-left: 0;
-            }
-
-            .duration-button.active .button-key {
-                color: rgba(255, 255, 255, 0.7);
-            }
-
             .articulation-button {
                 font-weight: 600;
                 min-width: 28px;
@@ -633,10 +584,57 @@ export class EditorToolbar {
                 border-radius: 4px;
                 font-size: 11px;
                 font-weight: 700;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-                min-width: 80px;
+                letter-spacing: 0.5px;
                 text-align: center;
+            }
+
+            .mode-indicator[hidden] {
+                display: none;
+            }
+
+            .otf-fx-popup {
+                position: fixed;
+                z-index: 1000;
+                min-width: 220px;
+                padding: 4px;
+                background: var(--bg, #fff);
+                color: var(--text, #333);
+                border: 1px solid var(--border, #ddd);
+                border-radius: 6px;
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+            }
+
+            .otf-fx-popup[hidden] {
+                display: none;
+            }
+
+            .otf-fx-item {
+                display: grid;
+                grid-template-columns: 16px 1fr auto;
+                align-items: center;
+                gap: 8px;
+                width: 100%;
+                padding: 5px 8px;
+                border: 0;
+                border-radius: 4px;
+                background: none;
+                color: inherit;
+                font: inherit;
+                font-size: 13px;
+                text-align: left;
+                cursor: pointer;
+            }
+
+            .otf-fx-item:hover,
+            .otf-fx-item:focus-visible {
+                background: var(--bg-hover, #e9e9e9);
+                outline: none;
+            }
+
+            .otf-fx-key {
+                font-size: 11px;
+                color: var(--text-muted, #888);
+                font-family: inherit;
             }
 
             .button-icon {
@@ -648,10 +646,8 @@ export class EditorToolbar {
                     padding: 6px 8px;
                 }
 
-                /* The captions go, and so do the labels that were only
-                   ever decoration. STEP / LENGTH STAY — they are the
-                   only thing telling the two rows apart. */
-                .toolbar-caption,
+                /* Labels that were only decoration go. Note length /
+                   Cursor step STAY — they tell the two palettes apart. */
                 .toolbar-section:not(.grid-section):not(.duration-section)
                     .toolbar-label {
                     display: none;
@@ -666,6 +662,21 @@ export class EditorToolbar {
                 .toolbar-button {
                     min-width: 28px;
                     height: 28px;
+                }
+
+                /* Wrap INSIDE a section so a palette never runs off the
+                   screen; separators would only strand at line starts. */
+                .toolbar-section,
+                .button-group {
+                    flex-wrap: wrap;
+                }
+
+                .toolbar-separator {
+                    display: none;
+                }
+
+                .toolbar-label {
+                    white-space: nowrap;
                 }
             }
         `;
@@ -682,10 +693,9 @@ export class EditorToolbar {
         const button = document.createElement('button');
         button.className = 'toolbar-button duration-button';
         button.dataset.duration = config.duration;
-        button.innerHTML = `
-            <span class="button-symbol">${config.symbol}</span>
-            <span class="button-key"></span>
-        `;
+        // The key is in the tooltip only: printed inline (F4, F5, q, F7…)
+        // it crowded the palette and `q` read like a typo.
+        button.innerHTML = `<span class="button-symbol">${config.symbol}</span>`;
         this._title(button, config.label, config.action);
 
         button.addEventListener('click', () => {
@@ -839,27 +849,12 @@ export class EditorToolbar {
             this.options.onRest?.();
         });
 
-        // Edit buttons (mouse path to the phrase workflow)
-        this.copyButton.addEventListener('click', () => {
-            this.state.copy();
-        });
+        // Copy / cut / paste / loop are Edit ▸ and Play ▸ items (and
+        // their keys) — they used to be four more toolbar slots.
 
-        this.cutButton.addEventListener('click', () => {
-            this.state.copy();
-            if (this.state.selection) {
-                this.state.deleteSelection();
-                this.state.setMode(EditorMode.NORMAL);
-            } else {
-                this.state.deleteTick();
-            }
-        });
-
-        this.pasteButton.addEventListener('click', () => {
-            this.state.paste();
-        });
-
-        this.loopButton.addEventListener('click', () => {
-            this.options.onLoop?.();
+        this.effectsButton.addEventListener('click', () => {
+            if (this._fxPopup && !this._fxPopup.hidden) this._closeEffects();
+            else this._openEffects();
         });
 
         // Placed text: the mouse path to the same prompt `c` opens
@@ -982,6 +977,7 @@ export class EditorToolbar {
             current != null && DOTTED_DURATIONS.has(current));
         this.tripletButton?.classList.toggle('active', !!this.state.tripletMode);
         this.autoAdvanceButton?.classList.toggle('active', !!this.state.autoAdvance);
+        this.autoAdvanceButton?.setAttribute('aria-pressed', String(!!this.state.autoAdvance));
     }
 
     /**
@@ -1002,6 +998,11 @@ export class EditorToolbar {
             dur != null && DOTTED_DURATIONS.has(dur));
         this.tripletButton?.classList.toggle('reflects-note',
             dur === DURATIONS.tripletEighth);
+
+        // Effects ▾ is outlined when the note carries any effect — the
+        // only sign of it once the effects left the palette
+        this.effectsButton?.classList.toggle('reflects-note', !!note?.fx?.length);
+        if (this._fxPopup && !this._fxPopup.hidden) this._renderEffects();
 
         for (const config of ARTICULATION_BUTTONS) {
             const button = this.articulationButtons.get(config.tech || config.action);
@@ -1032,6 +1033,7 @@ export class EditorToolbar {
      */
     _updateGridToggle() {
         this.gridToggleButton.classList.toggle('active', this.state.showGrid);
+        this.gridToggleButton.setAttribute('aria-pressed', String(!!this.state.showGrid));
     }
 
     /**
@@ -1041,9 +1043,79 @@ export class EditorToolbar {
         const mode = this.state.mode;
         const style = MODE_STYLES[mode] || MODE_STYLES[EditorMode.NORMAL];
 
-        this.modeIndicator.textContent = `-- ${style.label} --`;
+        // NORMAL is where you always are, and the status bar says so; the
+        // chip only speaks up for the modes you have to know you are in.
+        const normal = mode === EditorMode.NORMAL || !MODE_STYLES[mode];
+        this.modeIndicator.hidden = normal;
+        this.modeIndicator.textContent = normal ? style.label : `${style.label} · Esc to leave`;
         this.modeIndicator.style.backgroundColor = style.bg;
         this.modeIndicator.style.color = style.color;
+    }
+
+    /**
+     * The Effects ▾ list: every TablEdit effect by name, a ✓ for what the
+     * note at the cursor carries, the key where there is one. Hangs off
+     * <body> and is fixed-positioned for the reason the menu bar's popup
+     * is: `.otf-editor` clips its overflow.
+     */
+    _openEffects() {
+        if (!this._fxPopup) {
+            const popup = document.createElement('div');
+            popup.className = 'otf-fx-popup';
+            popup.setAttribute('role', 'menu');
+            popup.hidden = true;
+            popup.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') { e.preventDefault(); this._closeEffects(true); }
+            });
+            document.body.appendChild(popup);
+            this._fxPopup = popup;
+            this._onFxOutside = (e) => {
+                if (!popup.contains(e.target) && !this.effectsButton.contains(e.target)) {
+                    this._closeEffects();
+                }
+            };
+        }
+        this._renderEffects();
+        const r = this.effectsButton.getBoundingClientRect();
+        Object.assign(this._fxPopup.style, { left: `${r.left}px`, top: `${r.bottom + 4}px` });
+        this._fxPopup.hidden = false;
+        this.effectsButton.setAttribute('aria-expanded', 'true');
+        document.addEventListener('mousedown', this._onFxOutside, true);
+        this._fxPopup.querySelector('[role="menuitemcheckbox"]')?.focus();
+    }
+
+    _renderEffects() {
+        const note = this.state.getNoteAtCursor?.() || null;
+        const preset = getPreset();
+        this._fxPopup.innerHTML = '';
+        for (const cfg of FX_BUTTONS) {
+            const on = !!note?.fx?.includes(cfg.fx);
+            const item = document.createElement('button');
+            item.className = 'otf-fx-item';
+            item.setAttribute('role', 'menuitemcheckbox');
+            item.setAttribute('aria-checked', on ? 'true' : 'false');
+            item.dataset.action = cfg.action;
+            // Never disabled for an empty slot: in VISUAL the action takes
+            // the selection, and elsewhere it says why it refused.
+            const keys = keyFor(cfg.action, preset);
+            item.innerHTML = `<span class="otf-fx-check">${on ? '✓' : ''}</span>`
+                + `<span class="otf-fx-label"></span><kbd class="otf-fx-key"></kbd>`;
+            item.querySelector('.otf-fx-label').textContent = cfg.label;
+            item.querySelector('.otf-fx-key').textContent = keys ? prettyKeys(keys) : '';
+            item.addEventListener('click', () => {
+                this.options.onAction?.(cfg.action);
+                this._closeEffects(true);
+            });
+            this._fxPopup.appendChild(item);
+        }
+    }
+
+    _closeEffects(refocus = false) {
+        if (!this._fxPopup || this._fxPopup.hidden) return;
+        this._fxPopup.hidden = true;
+        this.effectsButton?.setAttribute('aria-expanded', 'false');
+        document.removeEventListener('mousedown', this._onFxOutside, true);
+        if (refocus) this.options.onRefocus?.();
     }
 
     /**
@@ -1076,6 +1148,9 @@ export class EditorToolbar {
         this._unsubPreset?.();
         this._unsubPreset = null;
         this._titled = [];
+        this._closeEffects();
+        this._fxPopup?.remove();
+        this._fxPopup = null;
 
         if (this.element && this.element.parentNode) {
             this.element.parentNode.removeChild(this.element);
