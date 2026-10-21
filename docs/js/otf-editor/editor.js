@@ -118,7 +118,7 @@ export class OTFEditor {
             recorder: this.recorder,
         });
         this.toolbar = new EditorToolbar(this.state, {
-            onLoop: () => this.loopSelection(),
+            onRefocus: () => this.editorRoot?.focus(),
             onRest: () => this.cursor.moveByDuration(1),
             onEditAnnotation: () => this.editAnnotationAtCursor(),
             onDeleteAnnotation: () => this.deleteAnnotationAtCursor(),

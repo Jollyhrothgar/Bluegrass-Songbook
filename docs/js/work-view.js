@@ -3092,7 +3092,7 @@ function makeProvisionalTake(instrument, title) {
     const name = tabLabel(instrument).replace(/ Tab$/, '');
     return {
         instrument,
-        label: `${name} — new take (unsaved)`,
+        label: `${name} — new take`,   // the "unsaved" tag beside it says the rest
         provisional: true,
         file: null,
         src_file: null,
