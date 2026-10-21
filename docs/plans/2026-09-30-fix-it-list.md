@@ -77,6 +77,8 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | F10 | Redraw the remaining views in the new look (queue below) | M each | — | queued (Mike, 2026-10-02) |
 | F11 | Build the new look in `style.css` (tokens, links not buttons, chords, BB mark) | M | — | not started; the look is approved on the canvas |
 | G1 | Dev blog moved to mikebeaumier.com: point the Dev Blog links and old post URLs at it | S | `feature/blog-redirect` | done — #283 (2026-10-21), after mikebeaumier.com went live; open: whether to delete `docs/posts/` (Mike) |
+| G2 | Search engines: no robots.txt or sitemap.xml, and every song is a `#work/` hash route Google can't index on its own | S (files) / L (song URLs) | `feature/search-discovery` | robots.txt + a 4-page sitemap done; **open: songs need real URLs** (see G2 below) |
+| G3 | One contact address: `hello@bluegrassbook.com` (Porkbun forward) replaces the Gmail address on About and in the feedback modal | S | `feature/search-discovery` | site text done; the forward itself is created on Mike's go-ahead |
 
 ### How it ships
 
@@ -1236,3 +1238,22 @@ Left for Mike to decide: deleting `docs/posts/`, `docs/data/posts.json` and
 `scripts/lib/build_posts.py` / `utility build-posts`, which nothing reads
 once `blog.html` redirects. The raw `posts/<slug>.md` URLs keep serving
 until then.
+
+### G2 — Search engines can't see the songs · S now, L for the real fix
+
+2026-10-21. `robots.txt` and `sitemap.xml` both 404'd. Added `docs/robots.txt`
+(allow all, `Sitemap:` line) and a hand-written `docs/sitemap.xml` with the
+four real pages: `/`, `about.html`, `chord-explorer.html`,
+`bluegrass-standards-board.html`. Left out: `blog.html` (redirect, G1),
+`create.html` (noindex shim), and the dev pages `editor.html`,
+`editor-demo.html`, `tab-test.html`. `__tests__/search-discovery.test.js`
+checks every listed page exists and is neither a redirect nor noindex.
+
+**The bigger problem:** every song lives at `index.html#work/{slug}`.
+Google treats everything after `#` as the same URL, so the whole songbook is
+one page to it and no song can be listed in a sitemap. Generating the sitemap
+at build time only helps once each song has its own path. Options, roughly
+in order of effort: a static page per work generated at build time (e.g.
+`/songs/{slug}/` with the title, artist, lyrics and a link into the app;
+~2.5k canon pages, or all ~19k), or moving the app to path routing with a
+404.html fallback (GitHub Pages has no rewrites). Mike's call.
