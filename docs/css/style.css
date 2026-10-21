@@ -7707,13 +7707,14 @@ body.dungeon-mode #search-stats {
  * this rule is exactly what made that bug invisible until someone zoomed
  * in far enough to notice the right-hand side was gone.
  *
- * Three cases genuinely still need it, all "one measure is wider than the
+ * Two cases genuinely still need it, both "one measure is wider than the
  * container", which no reflow can fix because a measure cannot be split:
- *   1. the OTF editor's `measureWidthFloor` — a 1/32 entry grid is given a
- *      minimum pixel width on purpose and rows are expected to scroll;
- *   2. extreme browser zoom, where the container falls below the
+ *   1. extreme browser zoom, where the container falls below the
  *      renderer's `minMeasureWidth` (138px) + margins;
- *   3. the reader's size control at its top setting on a narrow phone.
+ *   2. the reader's size control at its top setting on a narrow phone.
+ * (The OTF editor's cursor step used to be a third, via a ratcheted
+ * `measureWidthFloor`; with `max-width: 100%` below, its rows were shrunk,
+ * not scrolled. Removed, fix-it A20.)
  */
 .stave-row {
     margin-bottom: 1.5rem;

@@ -87,19 +87,25 @@ describe('editor row layout is deterministic', () => {
         expect(editor.renderer.options.measuresPerRow).toBe(4);
     });
 
-    it('a finer entry grid widens measures instead of reflowing rows', () => {
+    it('the cursor step changes neither the measure width nor the rows (A20)', () => {
+        // It used to: a finer step set a ratcheted minimum measure width,
+        // rows outgrew the container and CSS shrank the whole tab.
         editor.state.getOrCreateMeasure(8);
         editor.state.setGridSubdivision(DURATIONS.quarter);
+        editor._render();   // a step change no longer re-renders on its own
         const rowsBefore = editor.renderer.rowData.length;
         expect(rowsBefore).toBe(2);              // 8 measures, 4 per row
         const perRowBefore = editor.renderer.options.measuresPerRow;
         const widthBefore = editor.renderer._computedMeasureWidth;
 
-        editor.state.setGridSubdivision(DURATIONS.thirtySecond);
-
-        expect(editor.renderer.options.measuresPerRow).toBe(perRowBefore);
-        expect(editor.renderer.rowData.length).toBe(rowsBefore);
-        expect(editor.renderer._computedMeasureWidth).toBeGreaterThan(widthBefore);
+        for (const step of [DURATIONS.eighth, DURATIONS.sixteenth, DURATIONS.thirtySecond,
+            DURATIONS.tripletEighth, DURATIONS.quarter]) {
+            editor.state.setGridSubdivision(step);
+            expect(editor.renderer.options.measuresPerRow).toBe(perRowBefore);
+            expect(editor.renderer.rowData.length).toBe(rowsBefore);
+            expect(editor.renderer._computedMeasureWidth).toBe(widthBefore);
+            expect(editor.renderer.options.measureWidthFloor).toBe(0);
+        }
     });
 
     it('honours an explicit measuresPerRow option', () => {

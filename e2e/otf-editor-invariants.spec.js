@@ -49,6 +49,25 @@ test.describe('tab editor layout invariants', () => {
         expect(errors).toEqual([]);
     });
 
+    test('changing the cursor step never resizes or reflows the tab', async ({ page }) => {
+        // Mike, 2026-10-21: 1/8 → 1/16 → 1/32 shrank the whole tab to ~0.58x
+        // and it never came back. The step had set a minimum measure width
+        // (and ratcheted it); with the row count pinned, rows outgrew the
+        // container and CSS scaled them down.
+        await page.setViewportSize({ width: 1700, height: 1000 });
+        const errors = await openDemo(page);
+        const shape = () => auto(page, api => api.layout().measures
+            .map(m => [m.measure, m.row, Math.round(m.left), Math.round(m.right)]));
+        const before = await shape();
+        for (const sub of ['240', '120', '60', '160', '480']) {
+            await page.locator(`.grid-btn[data-subdivision="${sub}"]`).click();
+            await settle(page);
+            expect(await shape(), `step ${sub}`).toEqual(before);
+            expect(await violations(page), `step ${sub}`).toEqual([]);
+        }
+        expect(errors).toEqual([]);
+    });
+
     test('an empty measure\'s ruler starts at its left barline', async ({ page }) => {
         await openDemo(page);
         const { m, first } = await auto(page, api => {

@@ -168,6 +168,26 @@ describe('gridLinesForRow', () => {
             .toEqual([0, 480]);
     });
 
+    // A finer cursor step must never widen the measures (that was the
+    // "zoom" bug): when its lines would crowd closer than `minSpacing`
+    // on screen, the in-between ones are kept (the cursor still lands on
+    // them) but drawn hidden, so the ruler shows the finest step that fits.
+    it('hides lines that would crowd closer than minSpacing, never beats', () => {
+        // m29: 370 units over 1920 ticks; 1/32 = 60 ticks ≈ 11.6 units
+        const lines = gridLinesForRow(geoms, 60, beatTicksFor, { pxPerUnit: 0.5, minSpacing: 12 });
+        const m29 = lines.filter(l => l.display === 29);
+        expect(m29).toHaveLength(32);                       // every step is still there
+        const shown = m29.filter(l => !l.hidden).map(l => l.tick);
+        expect(shown).toEqual([0, 240, 480, 720, 960, 1200, 1440, 1680]); // 23px apart
+        expect(m29.filter(l => l.isBeat).every(l => !l.hidden)).toBe(true);
+    });
+
+    it('hides nothing when the step already has room', () => {
+        const lines = gridLinesForRow(geoms, 240, beatTicksFor, { pxPerUnit: 1, minSpacing: 12 });
+        expect(lines.some(l => l.hidden)).toBe(false);
+        expect(gridLinesForRow(geoms, 60, beatTicksFor).some(l => l.hidden)).toBe(false);
+    });
+
     it('handles empty geometry', () => {
         expect(gridLinesForRow([], 240, beatTicksFor)).toEqual([]);
         expect(gridLinesForRow(null, 240, beatTicksFor)).toEqual([]);

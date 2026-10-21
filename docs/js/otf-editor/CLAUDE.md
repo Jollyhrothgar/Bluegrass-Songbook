@@ -268,7 +268,7 @@ live site (Claude in Chrome), so "the ruler looks wrong" becomes a list.
 | `exec('edit.undo')`, `actions()` | run an action by id, exactly as a menu item does |
 | `doc()`, `cursor()`, `setCursor({measure, tick, string})`, `history()` | read the document (a copy), the cursor, the undo stack |
 | `layout()` | what is DRAWN, in client px: each bar's barlines and string y's, every ruler line (`data-measure`/`data-tick` on `.editor-grid-overlay line`), fret digit (`data-abs-tick`/`data-string`), rest glyph (`data-measure`) and the cursor box |
-| `check()` | `layoutViolations(layout())`: ruler periodic and inside its bar, notes and cursor on their tick's ruler line and inside the bar, rests inside the bar. `[]` when sane |
+| `check()` | `layoutViolations(layout())`: ruler periodic and inside its bar, notes and cursor on their tick's ruler line and inside the bar, rests inside the bar, every row drawn at the zoom (`row-squeezed`). `[]` when sane |
 
 Measured against the BARLINES on purpose: notes, ruler and cursor share
 one tick→x mapping, so they always agree with each other; the bug class is
@@ -405,6 +405,16 @@ took three crowded rows). Left to right, wrapping as the width asks:
   screen, just not as a sentence.
 - **Keys are in tooltips only.** The inline F4 · F5 · q · F7 hints are gone
   (`q` because F6 is the browser's read like a typo).
+- **The cursor step is not a zoom** (fix-it A20). It sets where the cursor
+  and clicks land and what the ruler draws; it never changes measure width
+  or rows. `gridSubdivisionChange` redraws the ruler and the cursor box,
+  not the tab. A step too fine to see (lines closer than
+  `MIN_RULER_SPACING_PX`, 8px, in `cursor.js`) keeps every line in the DOM
+  but draws only the coarsest multiple that fits (`hidden` in
+  `gridLinesForRow`); beats always draw. For bigger targets, use the Aa zoom.
+  It used to set a ratcheted `measureWidthFloor` from the step: 1/32 made
+  rows wider than the container, CSS shrank the whole tab to ~0.58x, and
+  going back to 1/4 didn't undo it.
 - **On/off switches are not choices.** `Advance` and `Ruler` are
   `.toolbar-toggle`: on is a tinted outline with `aria-pressed`, never the
   solid fill that marks the selected value next to them.
