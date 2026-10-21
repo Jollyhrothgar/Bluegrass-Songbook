@@ -603,6 +603,10 @@ export class EditorCursor {
                 line.setAttribute('x2', x);
                 line.setAttribute('y2', yBottom);
                 line.setAttribute('stroke', GRID_STROKE);
+                // Which bar and tick this line marks — what automation.js
+                // measures it against
+                line.dataset.measure = l.display;
+                line.dataset.tick = l.tick;
                 if (l.isBeat) {
                     line.setAttribute('stroke-opacity', GRID_BEAT_OPACITY);
                     line.setAttribute('stroke-width', '1.5');

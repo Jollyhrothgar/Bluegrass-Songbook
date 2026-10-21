@@ -320,29 +320,39 @@ describe('TabRenderer uniformMeasureWidth (barline alignment, plan §7)', () => 
     });
 });
 
-describe('TabRenderer centerNotes option (editor coordinate stability)', () => {
-    // A measure whose last event sits early gets a big centering offset —
-    // grid rulers derived from it break period at barlines.
+describe('tick 0 sits at the start of every measure (no centering)', () => {
+    // Notes used to be "centered": each measure shifted its notes right by
+    // half the space after its last onset. An EMPTY measure therefore put
+    // tick 0 in its middle — the editor's ruler and cursor started
+    // mid-bar and ran half a measure past the barline, notes slid left as
+    // more were typed, and rests (drawn in that very space since Jul 2026)
+    // landed in the NEXT measure: 1,622 measures across 82 published tabs.
     const notation = [
-        { measure: 1, events: [note(0)] },                 // lastTick 0 → max offset
-        { measure: 2, events: [note(0), note(1440)] },     // lastTick 1440 → small offset
+        { measure: 1, events: [] },                              // empty
+        { measure: 2, events: [note(0)] },                       // sparse
+        { measure: 3, events: [note(0), note(1440)] },           // fuller
     ];
 
-    it('centers by default (reading mode): offsets vary per measure', () => {
+    it('a full-length measure maps tick 0 to its note-area start', () => {
         const r = makeRenderer();
-        r.render(TRACK, notation, 480, '4/4');
-        const [g1, g2] = r.rowData[0].measures;
-        expect(g1.noteOffset).toBeGreaterThan(0);
-        expect(g1.noteOffset).not.toBeCloseTo(g2.noteOffset);
-    });
-
-    it('centerNotes:false pins tick→x: zero offset everywhere', () => {
-        const r = makeRenderer();
-        r.options.centerNotes = false;
         r.render(TRACK, notation, 480, '4/4');
         for (const g of r.rowData[0].measures) {
             expect(g.noteOffset).toBe(0);
         }
+    });
+
+    it('typing a later note does not move an earlier one', () => {
+        const a = makeRenderer();
+        a.render(TRACK, [{ measure: 1, events: [note(0)] }], 480, '4/4');
+        const b = makeRenderer();
+        b.render(TRACK, [{ measure: 1, events: [note(0), note(240)] }], 480, '4/4');
+        const [ga] = a.rowData[0].measures;
+        const [gb] = b.rowData[0].measures;
+        expect(gb.noteX0 + gb.noteOffset).toBe(ga.noteX0 + ga.noteOffset);
+    });
+
+    it('the centering option is gone — there is nothing to opt into', () => {
+        expect('centerNotes' in makeRenderer().options).toBe(false);
     });
 });
 

@@ -696,6 +696,34 @@ describe('multi-key sequences', () => {
             expect(state.getNoteAtCursor()).toBeFalsy(); // no stray second note
         });
 
+        it('ONE undo takes back a two-digit fret — not just its second digit', () => {
+            // Typing `1` `2` is one intent (fret 12). It used to be two
+            // history entries, so Cmd+Z left a stray fret 1 behind.
+            state.cursor.tick = 0;
+            keyboard.handleKeyDown(createKeyEvent('1'));
+            keyboard.handleKeyDown(createKeyEvent('2'));
+            state.undo();
+            state.cursor.tick = 0;
+            expect(state.getNoteAtCursor()).toBeFalsy();
+            state.redo();
+            state.cursor.tick = 0;
+            expect(state.getNoteAtCursor()?.f).toBe(12);
+        });
+
+        it('one undo also covers the measure the first digit\'s advance appended', () => {
+            // Auto-advance off the last tick of the last bar appends a
+            // measure between the seed and the refine; still one gesture.
+            const last = state.getMeasureCount();
+            const before = JSON.stringify(state.export());
+            state.cursor.measure = last;
+            state.cursor.tick = state.ticksPerMeasure - state.gridSubdivision;
+            keyboard.handleKeyDown(createKeyEvent('1'));
+            keyboard.handleKeyDown(createKeyEvent('2'));
+            expect(state.getMeasureCount()).toBe(last + 1);
+            state.undo();
+            expect(JSON.stringify(state.export())).toBe(before);
+        });
+
         it('after the refine window, digits are separate notes', () => {
             state.cursor.tick = 0;
             keyboard.handleKeyDown(createKeyEvent('1'));
@@ -1727,4 +1755,27 @@ describe('KeyboardHandler — the table drives the actions', () => {
         expect(keyFor('note.delete', 'vim')).toBe('x');
         expect(ACTIONS['note.delete']).toBeTruthy();
     });
+});
+
+describe('Tab never takes focus out of the editor', () => {
+    // Found by e2e/otf-editor-invariants.spec.js's random walk: VISUAL and
+    // ANNOTATION bind no Tab, so Shift+Tab with a selection let the browser
+    // move focus to the previous control — and every key after that went
+    // to it. The editor looked frozen.
+    for (const preset of ['tabledit', 'vim']) {
+        for (const mode of [EditorMode.NORMAL, EditorMode.VISUAL, EditorMode.ANNOTATION]) {
+            for (const shift of [false, true]) {
+                it(`${preset} ${mode}: ${shift ? 'Shift+' : ''}Tab is swallowed`, () => {
+                    const rig = makeRig(preset);
+                    if (mode === EditorMode.VISUAL) rig.press('ArrowRight', { shift: true });
+                    else rig.state.setMode(mode);
+                    expect(rig.state.mode).toBe(mode);
+                    const ev = createKeyEvent('Tab', { shift });
+                    rig.keyboard.handleKeyDown(ev);
+                    expect(ev.defaultPrevented).toBe(true);
+                    rig.teardown();
+                });
+            }
+        }
+    }
 });

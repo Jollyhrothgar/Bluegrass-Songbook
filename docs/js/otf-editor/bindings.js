@@ -628,16 +628,19 @@ export const ACTIONS = {
             const result = ctx.fret.digit(d);
             if (result.kind === 'pending') return true;
             if (result.kind === 'refine') {
-                const r = result.seed;
+                const { historyMark, ...r } = result.seed;
                 ctx.record('insertNote', { ...r, fret: result.fret });
-                ctx.state.facade.insertNote({
+                // One gesture, one undo step: fold this into the step the
+                // first digit pushed (and its auto-advance's new measure).
+                const facade = ctx.state.facade;
+                facade.amendSince(historyMark, () => facade.insertNote({
                     measure: r.measure, tick: r.tick, string: r.string,
                     fret: result.fret, duration: r.duration, tech: r.tech,
                     trackId: ctx.state.trackId,
                     autoDuration: r.duration == null,
                     pins: ctx.state.pinnedDurations,
                     autoEntered: ctx.state.autoEnteredDurations,
-                });
+                }));
                 ctx.cursor.update();
                 return true;
             }

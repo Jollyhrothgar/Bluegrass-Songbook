@@ -136,7 +136,12 @@ export class KeyboardHandler {
         // `null` means a Cmd chord we don't mirror: it belongs to the OS
         // or the browser (Cmd+F find, Cmd+L address bar, Cmd+digit …).
         if (chord == null) return;
-        if (this.dispatch(chord, event)) event.preventDefault();
+        const handled = this.dispatch(chord, event);
+        // Tab is the editor's own step key, in EVERY mode — even where no
+        // binding takes it (VISUAL, ANNOTATION) or the action declines.
+        // Left to the browser it moves focus to the previous/next control,
+        // and every key after that goes there: the editor looks frozen.
+        if (handled || chord === 'Tab' || chord === 'Shift+Tab') event.preventDefault();
     }
 
     /**
@@ -273,6 +278,9 @@ export class KeyboardHandler {
             tech: state.pendingArticulation || null,
         };
         this._record('insertNote', seed);
+        // Where a two-digit refine folds its undo step back to (not
+        // part of the recorded event — `seed` is spread into it above)
+        const historyMark = state.facade.historyMark();
         state.insertNote(fret);
 
         // Brief visual feedback
@@ -283,7 +291,7 @@ export class KeyboardHandler {
             this._ghostTimeout = null;
         }, GHOST_MS);
 
-        if (refinable) this.fret.remember(seed);
+        if (refinable) this.fret.remember({ ...seed, historyMark });
         if (advance && state.autoAdvance) {
             stepTicks(this.ctx, entryAdvanceTicks(state));
         }

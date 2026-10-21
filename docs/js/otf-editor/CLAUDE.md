@@ -253,6 +253,38 @@ the block, and no op may touch them.
   which is the same picture for every selection and therefore told you
   nothing about what was about to be deleted.
 
+### Driving and measuring it from a script — `editor.automation`
+
+`automation.js`, reached from the element: `document.querySelector('.otf-editor').__otfEditor.automation`.
+The same object serves Playwright, a unit test, and a browser session on the
+live site (Claude in Chrome), so "the ruler looks wrong" becomes a list.
+
+| call | what |
+|---|---|
+| `press('1 2')`, `press('Ctrl+z')` | real keydowns through the binding table (two-digit refine, sequences, counts behave as typed) |
+| `exec('edit.undo')`, `actions()` | run an action by id, exactly as a menu item does |
+| `doc()`, `cursor()`, `setCursor({measure, tick, string})`, `history()` | read the document (a copy), the cursor, the undo stack |
+| `layout()` | what is DRAWN, in client px: each bar's barlines and string y's, every ruler line (`data-measure`/`data-tick` on `.editor-grid-overlay line`), fret digit (`data-abs-tick`/`data-string`), rest glyph (`data-measure`) and the cursor box |
+| `check()` | `layoutViolations(layout())`: ruler periodic and inside its bar, notes and cursor on their tick's ruler line and inside the bar, rests inside the bar. `[]` when sane |
+
+Measured against the BARLINES on purpose: notes, ruler and cursor share
+one tick→x mapping, so they always agree with each other; the bug class is
+the mapping drifting off the bar (A17: per-measure centering put an empty
+bar's tick 0 mid-measure). `e2e/otf-editor-invariants.spec.js` runs
+`check()` after every key of a seeded random walk.
+
+Two input rules that walk pinned down:
+
+- **A two-digit fret is ONE undo step.** `1` places fret 1 (one history
+  entry, plus an "Add measures" one if auto-advance walked off the end);
+  `2` inside the refine window rewrites it to 12 through
+  `facade.amendSince(mark, fn)`, which folds everything since the seed's
+  `historyMark()` into one entry. It used to leave a stray fret 1 on undo.
+- **Tab never leaves the editor**, in any mode: `handleKeyDown`
+  preventDefaults `Tab`/`Shift+Tab` even when no binding takes it. VISUAL
+  and ANNOTATION bind none, and Shift+Tab with a selection used to hand
+  focus to the previous control, after which every key went there.
+
 ### The binding table — `bindings.js` is the only place keys live
 
 `keyboard.js` is a **matcher**, not a switch statement: every behaviour is

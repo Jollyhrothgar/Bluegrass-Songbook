@@ -502,6 +502,12 @@ sprinkles rest glyphs; leaving it takes them away. For "the page you edit
 is the page you publish" this has to go: the editor should render exactly
 what the reader sees, with the grid overlay as the only addition.
 
+> **2026-10-21 (A17):** done, and then some. The override went in
+> d5391f7d5, but the read view had drawn rests since 2026-07-12, so
+> "centring" was pushing those rests past the barline on both views and,
+> in the editor, put an empty bar's tick 0 (and its ruler) mid-measure.
+> The renderer no longer centres at all; `centerNotes` is gone.
+
 **After submit, neither flow lands you anywhere.** A new tab on
 `create.html` prints `Submitted — your tab is live now` and a `View it`
 link you must click; a correction prints its status inside the editor
