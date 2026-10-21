@@ -118,6 +118,16 @@ export function layoutViolations(layout, { tol = 1.5 } = {}) {
         }
     }
 
+    // Every row is drawn at the zoom the reader chose. A row laid out wider
+    // than its container gets shrunk by CSS (max-width) and draws small:
+    // what a 1/32 cursor step did before A20.
+    for (const r of layout.rows || []) {
+        if (Math.abs(r.scale - (layout.zoom ?? 1)) > 0.02) {
+            out.push({ rule: 'row-squeezed',
+                detail: `row ${r.row} drawn at ${r.scale.toFixed(3)}x, zoom ${(layout.zoom ?? 1).toFixed(3)}` });
+        }
+    }
+
     const c = layout.cursor;
     if (c) {
         const m = byMeasure.get(c.measure);
@@ -206,6 +216,7 @@ export function createAutomation(editor) {
             const ed = live();
             const rows = ed.renderer?.rowData || [];
             const measures = [];
+            const rowScales = [];
             const startToMeasure = [];
             const opt = ed.renderer?.options || {};
             const stringCount = ed.state.getStringCount();
@@ -214,6 +225,7 @@ export function createAutomation(editor) {
                 const vb = row.svg.viewBox?.baseVal;
                 const sx = vb?.width ? r.width / vb.width : 1;
                 const sy = vb?.height ? r.height / vb.height : 1;
+                rowScales.push({ row: row.rowIndex, scale: sx });
                 // client y of each string line, string 1 first — where to
                 // click to land on a string
                 const strings = Array.from({ length: stringCount }, (_, i) =>
@@ -251,7 +263,8 @@ export function createAutomation(editor) {
                 const { measure, tick, string } = ed.state.cursor;
                 cursor = { measure, tick, string, x: centerX(box) };
             }
-            return { measures, ruler, notes, rests, cursor };
+            const zoom = ed.renderer?._scale || 1;
+            return { measures, ruler, notes, rests, cursor, rows: rowScales, zoom };
         },
 
         /** `layoutViolations(layout())` — empty when the screen is sane. */

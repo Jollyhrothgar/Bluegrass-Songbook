@@ -713,9 +713,10 @@ export class OTFEditor {
             this.options.onChange?.(this.state.otf);
         });
 
-        // Grid density changes measure width (auto-expand) — re-render
+        // The cursor step is NOT a zoom: it redraws the ruler (cursor.js
+        // listens for that) and resizes the cursor box, never the tab.
         this.state.on('gridSubdivisionChange', () => {
-            this._render();
+            this.cursor.update();
         });
 
         this.state.on('cursorMove', () => {
@@ -1504,20 +1505,14 @@ export class OTFEditor {
 
         this._pinMeasuresPerRow();
 
-        // Auto-expand for fine entry grids: guarantee each grid slot a
-        // minimum pixel width so 1/16 and 1/32 grids stay usable
-        // (measureWidthFloor beats maxMeasureWidth; rows scroll if
-        // needed). RATCHET within a session: the layout grows when a
-        // finer grid needs room but never yanks back when you coarsen —
-        // predictable zoom instead of surprise reflows. With the row
-        // count pinned below, this only ever WIDENS measures; it can no
-        // longer move measure 5 onto another row.
-        const MIN_PX_PER_GRID_SLOT = 9;
-        const defaultTicks = this.state.facade.measureTiming.defaultTicks;
-        const slots = defaultTicks / this.state.gridSubdivision;
-        const floor = Math.ceil(slots * MIN_PX_PER_GRID_SLOT + 30); // +30 margins
-        this._measureWidthFloorMax = Math.max(this._measureWidthFloorMax || 0, floor);
-        this.renderer.options.measureWidthFloor = this._measureWidthFloorMax;
+        // Measure width comes from the container and the pinned row count
+        // (plus the Aa zoom), never from the cursor step. A step-derived
+        // minimum width used to live here, ratcheted so it never shrank:
+        // 1/32 made rows wider than the container, CSS scaled them down to
+        // ~0.58x, and going back to 1/4 didn't undo it (fix-it A20). A step
+        // too fine to show is thinned by the ruler instead (cursor.js
+        // gridLinesForRow), and the cursor still lands on every step.
+        this.renderer.options.measureWidthFloor = 0;
 
         // Overlays refresh via renderer.onAfterRender (fires for THIS
         // call and for the renderer's own async re-renders)

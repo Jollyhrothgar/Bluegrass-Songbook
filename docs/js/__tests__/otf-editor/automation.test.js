@@ -55,6 +55,19 @@ describe('layoutViolations', () => {
         expect(rules(l)).toEqual(expect.arrayContaining(['note-on-ruler', 'cursor-on-ruler']));
     });
 
+    it('flags a row drawn smaller than the zoom asks for', () => {
+        // the cursor-step bug: rows laid out too wide, then shrunk by
+        // max-width to fit, so everything drew at ~0.58x
+        const l = sane();
+        l.zoom = 1;
+        l.rows = [{ row: 0, scale: 1 }];
+        expect(rules(l)).not.toContain('row-squeezed');
+        l.rows = [{ row: 0, scale: 0.577 }];
+        expect(rules(l)).toContain('row-squeezed');
+        l.zoom = 0.577;
+        expect(rules(l)).not.toContain('row-squeezed');
+    });
+
     it('flags a rest drawn in the next measure', () => {
         const l = sane();
         l.rests.push({ measure: 1, left: 410, right: 422 });

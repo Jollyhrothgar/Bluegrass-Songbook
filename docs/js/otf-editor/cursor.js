@@ -21,6 +21,10 @@ import { DURATIONS, TICKS_PER_BEAT } from './state.js';
 const GRID_STROKE = 'var(--tab-rule, #8a8a8a)';
 const GRID_BEAT_OPACITY = '0.55';
 const GRID_OFFBEAT_OPACITY = '0.25';
+// Closest two ruler lines may sit on screen. A finer step keeps every line
+// (the cursor and clicks still land on each one) but draws only the
+// coarsest multiple of it that fits; beats always draw.
+export const MIN_RULER_SPACING_PX = 8;
 
 // positionFromSvgPoint moved to renderers/tab-hit-test.js so reading-view
 // playback does not load the editor; re-exported here for the editor's own use.
@@ -147,24 +151,36 @@ export function selectionBand(strings, {
  * short 2/4 measure gets half the lines of its 2/2 neighbors and every
  * line sits exactly where the renderer puts that tick's notes.
  *
+ * With `minSpacing`, lines that would sit closer than that on screen
+ * (`pxPerUnit` = screen px per SVG unit) are marked `hidden`: the drawn
+ * step doubles until it fits, beats always show. They stay in the list,
+ * because the cursor and clicks still use every step.
+ *
  * @param {Array} geoms - rowData.measures
  * @param {number} gridSubdivision - ticks between lines
  * @param {Function} beatTicksFor - (measure) => ticks per felt beat
- * @returns {Array<{x: number, tick: number, display: number, isBeat: boolean}>}
+ * @param {{pxPerUnit?: number, minSpacing?: number}} [fit]
+ * @returns {Array<{x: number, tick: number, display: number, isBeat: boolean, hidden: boolean}>}
  */
-export function gridLinesForRow(geoms, gridSubdivision, beatTicksFor) {
+export function gridLinesForRow(geoms, gridSubdivision, beatTicksFor,
+    { pxPerUnit = 1, minSpacing = 0 } = {}) {
     if (!geoms || geoms.length === 0) return [];
     const lines = [];
     for (const geom of geoms) {
         const noteX0 = (geom.noteX0 ?? geom.x + 15) + (geom.noteOffset ?? 0);
         const noteW = geom.noteW ?? geom.width - 30;
         const beatTicks = beatTicksFor(geom.display);
+        const pxPerTick = (noteW / geom.ticks) * pxPerUnit;
+        let shownStep = gridSubdivision;
+        while (shownStep * pxPerTick < minSpacing && shownStep < beatTicks) shownStep *= 2;
         for (let tick = 0; tick < geom.ticks; tick += gridSubdivision) {
+            const isBeat = tick % beatTicks === 0;
             lines.push({
                 x: noteX0 + (tick / geom.ticks) * noteW,
                 tick,
                 display: geom.display,
-                isBeat: tick % beatTicks === 0,
+                isBeat,
+                hidden: !isBeat && tick % shownStep !== 0,
             });
         }
     }
@@ -590,7 +606,8 @@ export class EditorCursor {
         for (const row of rowData) {
             const origin = this._svgToOverlay(row, 0, 0);
             if (!origin) continue;
-            const lines = gridLinesForRow(row.measures, subdivision, beatTicksFor);
+            const lines = gridLinesForRow(row.measures, subdivision, beatTicksFor,
+                { pxPerUnit: origin.scaleX, minSpacing: MIN_RULER_SPACING_PX });
             const yTop = origin.y + (topMargin - 4) * origin.scaleY;
             const yBottom = origin.y +
                 (topMargin + (stringCount - 1) * stringSpacing + 4) * origin.scaleY;
@@ -610,6 +627,11 @@ export class EditorCursor {
                 if (l.isBeat) {
                     line.setAttribute('stroke-opacity', GRID_BEAT_OPACITY);
                     line.setAttribute('stroke-width', '1.5');
+                } else if (l.hidden) {
+                    // kept for automation.layout(); too dense to draw
+                    line.dataset.hidden = '';
+                    line.setAttribute('stroke-opacity', '0');
+                    line.setAttribute('stroke-width', '0.75');
                 } else {
                     line.setAttribute('stroke-opacity', GRID_OFFBEAT_OPACITY);
                     line.setAttribute('stroke-width', '0.75');
