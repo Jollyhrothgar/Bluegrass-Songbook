@@ -226,6 +226,33 @@ describe('TabRenderer rest drawing', () => {
         expect(c.querySelectorAll('.rest-glyph')).toHaveLength(1);
     });
 
+    it('every rest sits inside its own measure\'s barlines', () => {
+        // Two eighths then 1440 ticks of silence, in a row with an empty
+        // bar after it: the half and quarter rests belong to measure 1.
+        TabRenderer._bravuraReady = true;
+        const container = document.createElement('div');
+        document.body.appendChild(container);
+        const r = new TabRenderer(container);
+        r.render(TRACK, [
+            { measure: 1, events: [
+                { tick: 0, notes: [{ s: 1, f: 0, dur: 240 }] },
+                { tick: 240, notes: [{ s: 2, f: 1, dur: 240 }] },
+            ] },
+            { measure: 2, events: [] },
+        ], 480, '4/4');
+        const geoms = r.rowData[0].measures;
+        const rests = [...container.querySelectorAll('.rest-glyph')];
+        expect(rests.length).toBeGreaterThan(0);
+        for (const rest of rests) {
+            const m = Number(rest.dataset.measure);
+            const g = geoms.find(x => x.display === m);
+            const x = Number(rest.getAttribute('x'));
+            expect(m).toBe(1);
+            expect(x).toBeGreaterThan(g.x);
+            expect(x).toBeLessThan(g.x + g.width);
+        }
+    });
+
     it('showLeadingRests: false keeps only the gaps that follow a note', () => {
         TabRenderer._bravuraReady = true;
         const c = render([{ tick: 480, notes: [{ s: 1, f: 0, dur: 1440 }] }],

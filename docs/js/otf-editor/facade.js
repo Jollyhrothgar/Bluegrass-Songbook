@@ -559,6 +559,41 @@ export class EditingFacade {
         return result;
     }
 
+    /**
+     * A bookmark in the undo history, for `amendSince`: the entry on top
+     * right now (by identity, so a `_maxHistory` shift can't skew it).
+     */
+    historyMark() {
+        return { entry: this._history[this._historyIndex] ?? null };
+    }
+
+    /**
+     * Run `fn` (ordinary mutations) and fold everything pushed since `mark`
+     * into ONE undo step. For a gesture the user makes in pieces: the
+     * second digit of fret 12 refines the note the first digit placed (and
+     * whatever measure that digit's auto-advance appended), and one `u`
+     * must take all of it back. Falls back to the plain entries when the
+     * history moved underneath the mark (an undo, or the mark scrolled
+     * out of `_maxHistory`).
+     */
+    amendSince(mark, fn) {
+        const result = fn();
+        if (result === false) return result;
+        const first = mark?.entry ? this._history.indexOf(mark.entry) + 1 : 0;
+        if (mark?.entry && first === 0) return result;
+        if (this._historyIndex !== this._history.length - 1) return result;
+        const entries = this._history.slice(first);
+        if (entries.length < 2) return result;
+        this._history = this._history.slice(0, first).concat({
+            description: entries[0].description,
+            before: entries[0].before,
+            after: entries[entries.length - 1].after,
+            timestamp: Date.now(),
+        });
+        this._historyIndex = first;
+        return result;
+    }
+
     _pushHistory(description, beforeState) {
         if (this._historyIndex < this._history.length - 1) {
             this._history = this._history.slice(0, this._historyIndex + 1);

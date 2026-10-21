@@ -260,8 +260,6 @@ export class TabRenderer {
             measureWidthFloor: 0,     // Hard lower bound that OVERRIDES maxMeasureWidth
                                       // (editor sets this so fine entry grids get room;
                                       // rows may exceed the container and scroll)
-            centerNotes: true,        // Center notes in their measure (reading nicety);
-                                      // the editor sets false for a stable tick→x mapping
             showRests: true,          // Rest glyphs in duration gaps. TablEdit's
                                       // tab staff hides these, but that leaves the
                                       // rhythm implicit (Mike: 'author laziness') —
@@ -1033,18 +1031,16 @@ export class TabRenderer {
                 ? ticks / defaultTicks
                 : 1;
             const noteW = slotW * shortFactor;
-            const rightAlign = slotW - noteW;
 
-            // Visual centering: proportional layout leaves the last note's
-            // remaining duration as empty space on the right; split that
-            // leftover across both sides so the notes sit centered.
-            // Skipped for a right-aligned short measure — its position in
-            // the slot IS the information, and centering would undo it.
-            const lastTick = (m.events || []).reduce((mx, e) => Math.max(mx, e.tick), 0);
-            const centering = opt.centerNotes === false || shortFactor !== 1
-                ? 0
-                : noteW * Math.max(0, 1 - lastTick / ticks) / 2;
-            const noteOffset = rightAlign + centering;
+            // Tick 0 is the start of the note area, in every measure and
+            // every view. There used to be a "visual centering" term here
+            // (half the space after the last onset), which put an empty
+            // bar's tick 0 in its MIDDLE: the editor's ruler and cursor
+            // ran half a bar past the barline, notes slid as you typed,
+            // and the rests drawn in that space (since Jul 2026) landed
+            // in the next measure. The space after the last note is the
+            // rhythm now, not slack to share out.
+            const noteOffset = slotW - noteW;
             const geom = {
                 display: m.measure,
                 x: xCursor,
@@ -1259,6 +1255,7 @@ export class TabRenderer {
                             textAnchor: 'start',
                         });
                         rest.setAttribute('class', 'rest-glyph');
+                        rest.dataset.measure = measure.measure;
                         rest.setAttribute('font-family', 'Bravura');
                         svg.appendChild(rest);
                         t += g.ticks;
@@ -1311,6 +1308,7 @@ export class TabRenderer {
                         });
                         fretText.setAttribute('class', fretCls);
                         fretText.dataset.absTick = absTick;
+                        fretText.dataset.string = note.s;
                         svg.appendChild(fretText);
 
                         // Store elements for highlighting

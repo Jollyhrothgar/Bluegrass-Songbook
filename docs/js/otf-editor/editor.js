@@ -27,6 +27,7 @@ import {
     PRESETS, entryAdvanceTicks, stepTicks,
 } from './bindings.js';
 import { EditEventRecorder } from './recorder.js';
+import { createAutomation } from './automation.js';
 
 // Note-entry feedback: a short pluck of the SAME sampled voice playback
 // uses. Volume matches TabPlayer's default mixer so typing a note and
@@ -278,6 +279,9 @@ export class OTFEditor {
         // Debug/QA handle: lets a browser session reach the live instance
         // (document, facade, state) without a global. Not an API.
         this.editorRoot.__otfEditor = this;
+        // Script-facing handle: drive by key or action id, read the
+        // document, measure what is drawn (automation.js)
+        this.automation = createAutomation(this);
         this.editorRoot.className = 'otf-editor';
         this.editorRoot.tabIndex = 0; // Make focusable
 
@@ -333,12 +337,11 @@ export class OTFEditor {
         // the editor overrides nothing about how the document is drawn
         // (plan tab-editor-input-parity §8.1/§9.2). It used to force
         // `centerNotes: false, showRests: true`, which re-spaced every
-        // measure the moment you pressed Edit and put it back when you
-        // left. `showRests: true` was the renderer default anyway; note
-        // centering is now the ONE coordinate difference we accept — the
-        // grid overlay is drawn from the same per-measure geometry, so
-        // it still lands on the notes. The overlay is the only thing the
-        // editor adds to the drawing.
+        // measure the moment you pressed Edit. The renderer no longer
+        // centers at all (it put an empty bar's tick 0 mid-measure, so the
+        // ruler overran the barline), so there is nothing left to
+        // override: both views anchor tick 0 at the measure start. The
+        // overlay is the only thing the editor adds to the drawing.
 
         // Stem and beam weights included: the editor once drew heavier
         // stems (2.25px / 4px beams, §7 "thicker stems desires"); Mike

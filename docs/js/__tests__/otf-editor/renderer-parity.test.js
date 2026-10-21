@@ -1,9 +1,10 @@
 // The editor draws the SAME document the reader sees.
 //
 // Plan docs/plans/tab-editor-input-parity.md §8.1/§9.2: pressing Edit
-// used to re-space every measure (`centerNotes: false`) and sprinkle rest
-// glyphs (`showRests: true`, already the renderer default), so "the page
-// you edit is the page you publish" was false. The only thing the editor
+// used to re-space every measure (`centerNotes: false`, an option that is
+// now gone along with the centering) and sprinkle rest glyphs
+// (`showRests: true`, already the renderer default), so "the page you
+// edit is the page you publish" was false. The only thing the editor
 // still changes is an ENTRY affordance, not document shape: a pinned row
 // count (§7 "horizontal shifting / column mutation makes it
 // non-deterministic where measures run"). It used to draw thicker stems
@@ -30,10 +31,18 @@ describe('editor renderer options', () => {
         container.remove();
     });
 
-    it('does not override centerNotes — the reader\'s spacing survives', () => {
+    it('spaces measures exactly as the reader does — no option differs', () => {
+        // The editor used to force `centerNotes: false` (and later
+        // re-enabled centering for parity, which broke the ruler). The
+        // option is gone: both views anchor tick 0 at the measure start.
         const readDefault = new TabRenderer(document.createElement('div'));
-        expect(editor.renderer.options.centerNotes).toBe(readDefault.options.centerNotes);
-        expect(editor.renderer.options.centerNotes).not.toBe(false);
+        const ed = editor.renderer.options;
+        for (const [k, v] of Object.entries(readDefault.options)) {
+            // the two ENTRY affordances this file's header names: the grid
+            // floor and the pinned row count
+            if (k === 'measureWidthFloor' || k === 'measuresPerRow') continue;
+            expect([k, ed[k]]).toEqual([k, v]);
+        }
     });
 
     it('does not override showRests either (it was already the default)', () => {

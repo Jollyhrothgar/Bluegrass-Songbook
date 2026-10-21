@@ -54,6 +54,14 @@ SVG rows (several measures per row — `measuresPerRow`, 'auto' by default)
       (pickup, mid-tune 2/4) uses its own fraction of the slot, pushed
       right so its last tick lands on the barline. `false` restores the
       old proportional widths.
+    ↓ tick 0 is the START of the note area in every full measure — there
+      is no per-measure centering (removed 2026-10-21, fix-it A17). It
+      split the space after the last onset across both sides, which put an
+      empty bar's tick 0 mid-measure; since rests are drawn in that space
+      it pushed them past the barline (1,622 measures, 82 tabs), and the
+      editor's ruler/cursor, which share the mapping, overran the bar. Every
+      consumer reads `noteX0 + noteOffset + tick / ticks * noteW`;
+      `noteOffset` is now only a short measure's right-alignment.
     ↓ renderRow() → per-measure geometry
 Note positions, fret numbers, articulations
     ↓ renderSlurs() (row-scoped, after all measures in the row are laid out)
