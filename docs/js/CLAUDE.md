@@ -7,7 +7,7 @@ Single-page search application for the Bluegrass Songbook. Modularized into ES m
 ```
 docs/
 ├── index.html          # Page structure, modals (chrome is built by js/shell.js)
-├── blog.html           # Dev blog
+├── blog.html           # Redirect: the dev blog moved to mikebeaumier.com (G1)
 ├── manifest.webmanifest # PWA manifest (install, shortcuts, .tef/.otf.json file handlers)
 ├── sw.js               # Service worker — a shell around js/sw-strategy.js
 ├── js/

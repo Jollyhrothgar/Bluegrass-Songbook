@@ -3005,7 +3005,7 @@ function seedOverflowBase() {
         { label: 'Drafts', onClick: () => { showView('drafts'); pushHistoryState('drafts'); } },
         { label: 'High Scores', onClick: () => { showView('high-scores'); pushHistoryState('high-scores'); } },
         { label: 'About', onClick: () => { location.href = 'about.html'; } },
-        { label: 'Dev Blog', onClick: () => { location.href = 'blog.html'; } },
+        { label: 'Dev Blog', onClick: () => { location.href = 'https://mikebeaumier.com/blog/series/bluegrass-book-dev-log/'; } },
         { label: 'Standards Board', onClick: () => { location.href = 'bluegrass-standards-board.html'; } },
         { label: 'Support on Patreon', onClick: () => window.open('https://www.patreon.com/c/bluegrassbook', '_blank', 'noopener') },
         { label: 'Buy me a coffee', onClick: () => window.open('https://buymeacoffee.com/michaelbeav', '_blank', 'noopener') },
