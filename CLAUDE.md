@@ -133,7 +133,7 @@ Bluegrass-Songbook/
 │
 ├── docs/                    # Frontend (GitHub Pages)
 │   ├── index.html           # Search UI + song editor
-│   ├── blog.html            # Dev blog
+│   ├── blog.html            # Redirect to the dev blog on mikebeaumier.com
 │   ├── js/                  # ES modules
 │   │   ├── main.js          # Entry point, initialization, routing
 │   │   ├── shell.js         # App shell: top band, bottom band, pill primitive
@@ -572,7 +572,7 @@ change. (Older GitHub milestones still exist: `gh issue list --milestone "..."`.
 | Review a delete/suppress/merge request | `docs/js/review-queue.js` + `supabase/CLAUDE.md` |
 | Add a database migration | `supabase/migrations/` |
 | Manage issues/milestones | `.claude/skills/github-project/SKILL.md` |
-| Write a blog post | `docs/posts/` (then run `./scripts/utility build-posts`) |
+| Write a blog post | mikebeaumier.com, in the Bluegrass Book dev log series (`docs/posts/` is the pre-move copy; `blog.html` only redirects) |
 | Analyze usage data | `analytics/dashboard.ipynb` |
 | Analyze grassiness data | `analytics/grassiness_analysis.ipynb` |
 | Decide what to work on next | `docs/plans/2026-09-30-fix-it-list.md` (Status table) |

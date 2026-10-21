@@ -76,6 +76,7 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | F9 | Stop presenting `artist` as the song's artist | M | — | idea; collides with F8 and the song page |
 | F10 | Redraw the remaining views in the new look (queue below) | M each | — | queued (Mike, 2026-10-02) |
 | F11 | Build the new look in `style.css` (tokens, links not buttons, chords, BB mark) | M | — | not started; the look is approved on the canvas |
+| G1 | Dev blog moved to mikebeaumier.com: point the Dev Blog links and old post URLs at it | S | `feature/blog-redirect` | ready, NOT merged — waits on the new site going live (see G1 below) |
 
 ### How it ships
 
@@ -1211,3 +1212,27 @@ Rule: **hide setup, show content and resources.**
   - **It's a search page in disguise**: the search box and nine filter chips
     sit above the list, and rows show tags, "Also by" and first lines, while
     the setlist data (key, tempo, notes) is reduced to small badges.
+
+## G. Site
+
+### G1 — Dev blog moved to mikebeaumier.com · S
+
+2026-10-21. The dev blog now lives in the Bluegrass Book dev log series on
+mikebeaumier.com (series page
+`https://mikebeaumier.com/blog/series/bluegrass-book-dev-log/`, each post at
+`https://mikebeaumier.com/blog/<slug>/` with the old slug). This change:
+
+- points both Dev Blog links (the ⋯ menu in `main.js`, `about.html`) at the
+  series page;
+- turns `blog.html` into a redirect. Old post links were `blog.html#<slug>`,
+  and the fragment never reaches GitHub Pages, so a script maps a known slug
+  to its new URL and sends everything else to the series page; a
+  `<noscript>` meta refresh and a canonical link cover readers and crawlers
+  without JavaScript. Tested by `__tests__/blog-redirect.test.js`.
+
+**Do not merge until the new site is live** (it sits on mikebeaumier.com's
+unmerged `redesign` branch; until Pages switches over every target 404s).
+Left for Mike to decide: deleting `docs/posts/`, `docs/data/posts.json` and
+`scripts/lib/build_posts.py` / `utility build-posts`, which nothing reads
+once `blog.html` redirects. The raw `posts/<slug>.md` URLs keep serving
+until then.
