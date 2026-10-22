@@ -81,12 +81,35 @@ const REST_GLYPHS = [
 ];
 
 /**
- * Decompose a silent span into rest values, largest first.
+ * Decompose a silent span into rest values.
+ *
+ * With `start` (the span's tick within its measure) each rest is the
+ * largest value that fits AND starts on a multiple of itself, so the
+ * small values fill out the beat before the large ones begin: a 32nd on
+ * beat 1 leaves a 32nd, 16th, 8th, quarter, half — not a half rest
+ * straddling beats 1-3. That is also TablEdit's own order ("a 1/4 rest
+ * and a 1/2 rest" after two eighths). Without `start`, largest first.
+ *
+ * @param {number} len - ticks of silence
+ * @param {number} [start] - where the silence starts, in measure ticks
  * @returns {Array<{ticks: number, glyph: string}>}
  */
-export function restGlyphSequence(len) {
+export function restGlyphSequence(len, start = null) {
     const out = [];
     let remaining = len;
+    if (start != null) {
+        let t = start;
+        while (remaining > 0) {
+            const fit = REST_GLYPHS.find(([ticks]) => ticks <= remaining && t % ticks === 0);
+            if (!fit) break;               // off the 32nd grid: nothing standard fits
+            out.push({ ticks: fit[0], glyph: fit[1] });
+            remaining -= fit[0];
+            t += fit[0];
+        }
+        if (remaining <= 0) return out;
+        // a span that starts off the 32nd grid: fall back to largest-first
+        // for what is left, as before
+    }
     for (const [ticks, glyph] of REST_GLYPHS) {
         while (remaining >= ticks) {
             out.push({ ticks, glyph });
@@ -1247,8 +1270,13 @@ export class TabRenderer {
                     { leading: opt.showLeadingRests !== false });
                 for (const span of spans) {
                     let t = span.start;
-                    for (const g of restGlyphSequence(span.len)) {
-                        const rx = restAreaStart + (t / geom.ticks) * geom.noteW + 6;
+                    for (const g of restGlyphSequence(span.len, span.start)) {
+                        // 6 units right of its tick, or less when the rest's
+                        // own span is narrower than that (a 32nd rest at
+                        // ordinary zoom), so it never reaches the next onset
+                        const spanW = (g.ticks / geom.ticks) * geom.noteW;
+                        const rx = restAreaStart + (t / geom.ticks) * geom.noteW
+                            + Math.min(6, spanW / 2);
                         const rest = this.createText(rx, restY, g.glyph, {
                             fontSize: `${Math.round(2.2 * opt.stringSpacing)}px`,
                             fill: opt.mutedColor,
@@ -1971,12 +1999,18 @@ export class TabRenderer {
         const groupCount = Math.max(1, Math.ceil(totalSlots / slotsPerGroup));
 
         // Duration in slots = gap to the next event (end of measure for
-        // the last one) — OTF events carry no explicit durations.
-        const sorted = [...notePositions].sort((a, b) => a.pos16th - b.pos16th);
+        // the last one), or the WRITTEN duration when that is shorter: a
+        // beat's last 16th followed by a rest is still a 16th and beams
+        // with its beat. Never longer — banjo notes are routinely written
+        // to ring past the next onset, and that doesn't make them quarters.
+        const sorted = [...notePositions].sort((a, b) =>
+            (a.event?.tick ?? a.pos16th * slotTicks) - (b.event?.tick ?? b.pos16th * slotTicks));
         const durSlots = new Map();
         sorted.forEach((np, i) => {
             const nextPos = i + 1 < sorted.length ? sorted[i + 1].pos16th : totalSlots;
-            durSlots.set(np, nextPos - np.pos16th);
+            const durs = (np.event?.notes || []).map(n => n.dur).filter(Boolean);
+            const written = durs.length ? Math.max(...durs) / slotTicks : Infinity;
+            durSlots.set(np, Math.min(nextPos - np.pos16th, written));
         });
 
         const runs = [];
@@ -2029,107 +2063,132 @@ export class TabRenderer {
             const d = writtenDur(np);
             return d !== null && d < 240;
         };
-        const is16thNote = (note, nextNote) => {
-            if (note.pos16th % 2 === 1) return true;
-            if (nextNote && nextNote.pos16th - note.pos16th === 1) return true;
-            return is16thByDur(note);
+
+        // Beam LEVELS: 1 = eighth (the primary beam every beamed note has),
+        // 2 = sixteenth, 3 = thirty-second. Level 2 keeps the 16th-grid
+        // rules this renderer always had (odd 16th slot, a 16th-slot gap to
+        // the next note, or a written duration under an eighth), now read in
+        // ticks; level 3 is the same reading one grid finer. Positions only
+        // count on a REAL 32nd grid point (tick % 60): a triplet that
+        // detection missed sits at 160/320 and must not grow a third beam.
+        const unit = (level) => this.ticksPerBeat / (2 ** level);  // 240, 120, 60
+        const tickOf = (np) => np.event?.tick ?? np.pos16th * unit(2);
+        const noteLevel = (note, nextNote) => {
+            let level = 1;
+            const t = tickOf(note);
+            const d = writtenDur(note);
+            if (d !== null) {
+                if (d <= unit(3)) level = 3;
+                else if (d < 240) level = 2;
+            }
+            if (note.pos16th % 2 === 1) level = Math.max(level, 2);
+            if (t % unit(3) === 0 && t % unit(2) !== 0) level = 3;
+            if (nextNote) {
+                const gap = tickOf(nextNote) - t;
+                if (gap > 0 && gap <= unit(3)) level = 3;
+                else if (gap > 0 && gap <= unit(2)) level = Math.max(level, 2);
+            }
+            return level;
+        };
+        const is16thNote = (note, nextNote) => noteLevel(note, nextNote) >= 2;
+        // The level a WRITTEN duration alone asks for (0: none written)
+        const durLevel = (np) => {
+            const d = writtenDur(np);
+            return d === null ? 0 : d <= unit(3) ? 3 : d < 240 ? 2 : 1;
         };
 
         beats.forEach(beatNotes => {
             if (beatNotes.length >= 2) {
-                beatNotes.sort((a, b) => a.pos16th - b.pos16th);
+                beatNotes.sort((a, b) => tickOf(a) - tickOf(b));
 
                 const halfStem = opt.stemWidth / 2;
                 const firstX = beatNotes[0].x - halfStem;
                 const lastX = beatNotes[beatNotes.length - 1].x + halfStem;
+                const levels = beatNotes.map((np, i) => noteLevel(np, beatNotes[i + 1]));
+                // The y of each beam level's line (the rect hangs above it)
+                const levelY = (level) => beamY - (level - 1) * (opt.beamThickness + 4);
+                const beamRect = (x, level, w) => {
+                    const r = this.createRect(x, levelY(level) - opt.beamThickness,
+                        Math.max(w, 1), opt.beamThickness, opt.beamColor);
+                    r.dataset.beam = String(level);
+                    return r;
+                };
 
                 // Primary beam
-                const beam = this.createRect(firstX, beamY - opt.beamThickness, Math.max(lastX - firstX, 1), opt.beamThickness, opt.beamColor);
-                svg.appendChild(beam);
+                svg.appendChild(beamRect(firstX, 1, lastX - firstX));
 
                 // Beam caps
                 svg.appendChild(this.createRect(firstX, beamY - opt.beamThickness, opt.stemWidth, opt.beamThickness, opt.beamColor));
                 svg.appendChild(this.createRect(lastX - opt.stemWidth, beamY - opt.beamThickness, opt.stemWidth, opt.beamThickness, opt.beamColor));
 
-                // Secondary beams for 16th notes
-                const secondBeamY = beamY - opt.beamThickness - 4;
+                // Secondary (16th) and tertiary (32nd) beams join two
+                // neighbours that both carry the level and have no silence
+                // between them: one unit apart, or the first one's written
+                // duration reaching the second (a dotted 16th + 32nd shares
+                // its 16th beam). `top` records the highest beam each
+                // note's stem must reach.
+                const top = levels.map(() => 1);
+                const joined = (i, level) => {
+                    if (i < 0 || i + 1 >= beatNotes.length) return false;
+                    if (levels[i] < level || levels[i + 1] < level) return false;
+                    const t0 = tickOf(beatNotes[i]);
+                    const t1 = tickOf(beatNotes[i + 1]);
+                    if (t1 - t0 <= unit(level)) return true;
+                    // Contiguous by WRITTEN duration, and both written at
+                    // this level: position heuristics must not join a
+                    // syncopated 8th's neighbours across it
+                    const d = writtenDur(beatNotes[i]);
+                    return d !== null && t0 + d >= t1
+                        && durLevel(beatNotes[i]) >= level && durLevel(beatNotes[i + 1]) >= level;
+                };
 
-                for (let i = 0; i < beatNotes.length - 1; i++) {
-                    const curr = beatNotes[i];
-                    const next = beatNotes[i + 1];
-                    const afterNext = beatNotes[i + 2];
-                    const gap = next.pos16th - curr.pos16th;
-
-                    if (gap === 1) {
-                        const currIs16th = is16thNote(curr, next);
-                        const nextIs16th = is16thNote(next, afterNext);
-
-                        if (currIs16th && nextIs16th) {
-                            const secondBeam = this.createRect(
-                                curr.x - halfStem, secondBeamY - opt.beamThickness,
-                                Math.max(next.x - curr.x + opt.stemWidth, 1), opt.beamThickness,
-                                opt.beamColor
-                            );
-                            svg.appendChild(secondBeam);
-
-                            // Caps
-                            const prevNote = beatNotes[i - 1];
-                            const needsLeftCap = !prevNote || (curr.pos16th - prevNote.pos16th !== 1);
-                            if (needsLeftCap) {
-                                svg.appendChild(this.createRect(curr.x - halfStem, secondBeamY - opt.beamThickness, opt.stemWidth, beamY - secondBeamY + opt.beamThickness, opt.beamColor));
+                for (const level of [2, 3]) {
+                    const lineY = levelY(level);
+                    for (let i = 0; i < beatNotes.length - 1; i++) {
+                        if (!joined(i, level)) continue;
+                        const curr = beatNotes[i];
+                        const next = beatNotes[i + 1];
+                        svg.appendChild(beamRect(curr.x - halfStem, level,
+                            next.x - curr.x + opt.stemWidth));
+                        top[i] = Math.max(top[i], level);
+                        top[i + 1] = Math.max(top[i + 1], level);
+                        if (level === 2) {
+                            // Caps, by ADJACENCY as the 16th-only engine
+                            // drew them, so a 16th-grid tab renders as it
+                            // always did
+                            const prev = beatNotes[i - 1];
+                            const afterNext = beatNotes[i + 2];
+                            if (!prev || tickOf(curr) - tickOf(prev) > unit(2)) {
+                                svg.appendChild(this.createRect(curr.x - halfStem, lineY - opt.beamThickness, opt.stemWidth, beamY - lineY + opt.beamThickness, opt.beamColor));
                             }
-
-                            const afterAfterNext = beatNotes[i + 3];
-                            const needsRightCap = !afterNext || (afterNext.pos16th - next.pos16th !== 1);
-                            if (needsRightCap) {
-                                svg.appendChild(this.createRect(next.x - halfStem, secondBeamY - opt.beamThickness, opt.stemWidth, beamY - secondBeamY + opt.beamThickness, opt.beamColor));
+                            if (!afterNext || tickOf(afterNext) - tickOf(next) > unit(2)) {
+                                svg.appendChild(this.createRect(next.x - halfStem, lineY - opt.beamThickness, opt.stemWidth, beamY - lineY + opt.beamThickness, opt.beamColor));
                             }
                         }
                     }
+
+                    // Fractional stubs: a note that carries the level but
+                    // joins neither neighbour at it (a 16th + 16th rest in
+                    // a beamed beat; the 32nd after a dotted 16th) gets a
+                    // short stub, pointing in unless it ends the group —
+                    // the way TablEdit engraves it. Level 2 stubs only a
+                    // WRITTEN 16th, as it always has.
+                    beatNotes.forEach((np, i) => {
+                        const carries = level === 2 ? is16thByDur(np) : levels[i] >= 3;
+                        if (!carries || joined(i - 1, level) || joined(i, level)) return;
+                        const stubLen = 7;
+                        const pointsLeft = i === beatNotes.length - 1;
+                        const x0 = pointsLeft ? np.x + halfStem - stubLen : np.x - halfStem;
+                        svg.appendChild(beamRect(x0, level, stubLen));
+                        top[i] = Math.max(top[i], level);
+                    });
                 }
 
-                // Fractional secondary-beam stubs: a written 16th with no
-                // gap-1 neighbour (16th + 16th rest inside a beamed beat)
-                // still needs its second beam — drawn as a short stub, the
-                // way TablEdit engraves it.
-                const stubbed = new Set();
-                beatNotes.forEach((np, i) => {
-                    if (!is16thByDur(np)) return;
-                    const prev = beatNotes[i - 1];
-                    const next = beatNotes[i + 1];
-                    const afterNext = beatNotes[i + 2];
-                    const joinsPrev = prev && np.pos16th - prev.pos16th === 1 &&
-                        is16thNote(prev, np) && is16thNote(np, next);
-                    const joinsNext = next && next.pos16th - np.pos16th === 1 &&
-                        is16thNote(np, next) && is16thNote(next, afterNext);
-                    if (joinsPrev || joinsNext) return; // full secondary beam covers it
-                    stubbed.add(np);
-                    const stubLen = 7;
-                    const pointsLeft = i === beatNotes.length - 1;
-                    const x0 = pointsLeft ? np.x + halfStem - stubLen : np.x - halfStem;
-                    svg.appendChild(this.createRect(
-                        x0, secondBeamY - opt.beamThickness,
-                        stubLen, opt.beamThickness, opt.beamColor));
-                });
-
-                // Draw stems
+                // Draw stems, each to the highest beam it carries
                 beatNotes.forEach((np, i) => {
                     beamedNotes.add(np);
                     const stemStartY = opt.topMargin + (np.lowestString - 1) * opt.stringSpacing + 7;
-
-                    const prev = beatNotes[i - 1];
-                    const next = beatNotes[i + 1];
-                    const afterNext = beatNotes[i + 2];
-
-                    let hasSecondaryBeam = stubbed.has(np);
-                    if (prev && np.pos16th - prev.pos16th === 1 && is16thNote(prev, np) && is16thNote(np, next)) {
-                        hasSecondaryBeam = true;
-                    }
-                    if (next && !hasSecondaryBeam && next.pos16th - np.pos16th === 1 && is16thNote(np, next) && is16thNote(next, afterNext)) {
-                        hasSecondaryBeam = true;
-                    }
-
-                    const stemEndY = hasSecondaryBeam ? secondBeamY : beamY;
+                    const stemEndY = levelY(top[i]);
                     const stem = this.createLine(np.x, stemStartY, np.x, stemEndY, opt.stemColor);
                     stem.setAttribute('stroke-width', opt.stemWidth);
                     svg.appendChild(stem);
@@ -2141,15 +2200,19 @@ export class TabRenderer {
         this.renderTripletGroups(svg, tripletGroups, numStrings, opt, beamY, beamedNotes);
 
         // Single notes with flags
-        const sortedByPos = [...notePositions].sort((a, b) => a.pos16th - b.pos16th);
+        const sortedByPos = [...notePositions].sort((a, b) =>
+            (a.event?.tick ?? a.pos16th) - (b.event?.tick ?? b.pos16th));
 
         notePositions.forEach((np, idx) => {
             if (beamedNotes.has(np) || tripletNotes.has(np)) return;
 
             const sortedIdx = sortedByPos.findIndex(n => n === np);
             let gapPositions = 4;
+            let thirtySecond = false;
             if (sortedIdx < sortedByPos.length - 1) {
                 gapPositions = sortedByPos[sortedIdx + 1].pos16th - np.pos16th;
+                const gapTicks = (sortedByPos[sortedIdx + 1].event?.tick ?? 0) - (np.event?.tick ?? 0);
+                thirtySecond = gapTicks > 0 && gapTicks <= this.ticksPerBeat / 8;
             }
             // Explicit written durations take precedence over gap
             // inference: a chop eighth followed by an eighth REST was
@@ -2163,6 +2226,7 @@ export class TabRenderer {
                 const d = Math.max(...durs);
                 gapPositions = d >= 1920 ? 16 : d >= 960 ? 8
                     : d >= 480 ? 4 : d >= 240 ? 2 : 1;
+                thirtySecond = d <= this.ticksPerBeat / 8;
             }
 
             const stemStartY = opt.topMargin + (np.lowestString - 1) * opt.stringSpacing + 7;
@@ -2197,25 +2261,20 @@ export class TabRenderer {
                 flag.setAttribute('fill', opt.stemColor);
                 svg.appendChild(flag);
             } else {
-                // Sixteenth note with two flags
+                // Sixteenth note with two flags; a 32nd with three
                 const stemX = np.x;
                 const flagStartX = stemX + opt.stemWidth / 2;
-                const flag1Y = stemEndY;
-                const flag2Y = stemEndY - 7;
 
                 const stem = this.createLine(stemX, stemStartY, stemX, stemEndY, opt.stemColor);
                 stem.setAttribute('stroke-width', opt.stemWidth);
                 svg.appendChild(stem);
 
-                const flag1 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-                flag1.setAttribute('d', this._flagPath(flagStartX, flag1Y));
-                flag1.setAttribute('fill', opt.stemColor);
-                svg.appendChild(flag1);
-
-                const flag2 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-                flag2.setAttribute('d', this._flagPath(flagStartX, flag2Y));
-                flag2.setAttribute('fill', opt.stemColor);
-                svg.appendChild(flag2);
+                for (let k = 0; k < (thirtySecond ? 3 : 2); k++) {
+                    const flag = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                    flag.setAttribute('d', this._flagPath(flagStartX, stemEndY - 7 * k));
+                    flag.setAttribute('fill', opt.stemColor);
+                    svg.appendChild(flag);
+                }
             }
         });
     }
