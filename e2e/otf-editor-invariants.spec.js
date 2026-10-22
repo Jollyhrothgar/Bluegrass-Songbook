@@ -68,6 +68,66 @@ test.describe('tab editor layout invariants', () => {
         expect(errors).toEqual([]);
     });
 
+    test('zooming in makes every 1/32 step visible and clickable (A21)', async ({ page }) => {
+        // Mike, 2026-10-21: cursor step and note length both 1/32, and the
+        // 32nds landed a 16th apart. At 1/32 a desktop slot was 4.7px, so
+        // the ruler drew every OTHER line and clicking the drawn lines
+        // skipped a step each time. Horizontal zoom gives the step room.
+        await page.setViewportSize({ width: 1440, height: 900 });
+        const errors = await openDemo(page);
+        await page.locator('.duration-button[data-duration="60"]').click();
+        await page.locator('.grid-btn[data-subdivision="60"]').click();
+        await settle(page);
+        const m2Lines = () => auto(page, api => api.layout().ruler.filter(r => r.measure === 2));
+        expect((await m2Lines()).some(l => l.hidden), 'zoom 1 thins the 1/32 ruler').toBe(true);
+
+        for (let i = 0; i < 6 && (await m2Lines()).some(l => l.hidden); i++) {
+            await page.locator('.zoom-in-button').click();
+            await settle(page);
+        }
+        expect((await m2Lines()).some(l => l.hidden), 'zoomed in, every line draws').toBe(false);
+        expect(await violations(page)).toEqual([]);
+
+        // Click the first four drawn lines of bar 2 and type a 0 at each
+        for (const tick of [0, 60, 120, 180]) {
+            const t = await auto(page, (api, tick) => {
+                const l = api.layout();
+                const m = l.measures.find(x => x.measure === 2);
+                const line = l.ruler.find(r => r.measure === 2 && r.tick === tick);
+                return { x: line.x, y: m.strings[2] };
+            }, tick);
+            await page.mouse.click(t.x, t.y);
+            await page.keyboard.press('0');
+            await settle(page);
+        }
+        const ticks = await auto(page, api => api.doc().notation[Object.keys(api.doc().notation)[0]]
+            .find(m => m.measure === 2).events.map(e => [e.tick, e.notes[0].dur]));
+        expect(ticks).toEqual([[0, 60], [60, 60], [120, 60], [180, 60]]);
+        expect(await violations(page)).toEqual([]);
+        expect(errors).toEqual([]);
+    });
+
+    test('a row zoomed wider than the canvas scrolls, and stays measurable', async ({ page }) => {
+        await page.setViewportSize({ width: 1024, height: 800 });
+        const errors = await openDemo(page);
+        const zoomIn = page.locator('.zoom-in-button');
+        while (await zoomIn.isEnabled()) await zoomIn.click();   // to the top level
+        await settle(page);
+        const { scrollW, clientW } = await page.evaluate(() => {
+            const c = document.querySelector('.editor-canvas-container');
+            return { scrollW: c.scrollWidth, clientW: c.clientWidth };
+        });
+        expect(scrollW).toBeGreaterThan(clientW);
+        // walk to the far end of bar 1: the canvas scrolls to keep the
+        // cursor in view, and ruler/notes/cursor still agree
+        await auto(page, api => api.setCursor({ measure: 1, tick: 1860, string: 3 }));
+        await settle(page);
+        expect(await page.evaluate(() =>
+            document.querySelector('.editor-canvas-container').scrollLeft)).toBeGreaterThan(0);
+        expect(await violations(page)).toEqual([]);
+        expect(errors).toEqual([]);
+    });
+
     test('an empty measure\'s ruler starts at its left barline', async ({ page }) => {
         await openDemo(page);
         const { m, first } = await auto(page, api => {

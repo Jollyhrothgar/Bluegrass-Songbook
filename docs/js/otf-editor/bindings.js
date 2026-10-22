@@ -1519,6 +1519,39 @@ export const ACTIONS = {
             return true;
         },
     },
+    // Horizontal zoom (fix-it A21): the room a tick gets. View state —
+    // nothing recorded, nothing in history. `{` `}` sit beside the
+    // cursor step's `[` `]` because they are what makes a fine step usable.
+    'view.zoomIn': {
+        label: 'Zoom in',
+        group: 'Grid',
+        modes: ['normal', 'visual'],
+        repeatable: true,
+        run(ctx) {
+            ctx.state.zoomHorizontally(1);
+            return true;
+        },
+    },
+    'view.zoomOut': {
+        label: 'Zoom out',
+        group: 'Grid',
+        modes: ['normal', 'visual'],
+        repeatable: true,
+        run(ctx) {
+            ctx.state.zoomHorizontally(-1);
+            return true;
+        },
+    },
+    'view.zoomReset': {
+        label: 'Reset zoom',
+        group: 'Grid',
+        modes: ['normal', 'visual'],
+        menuOnly: true,
+        run(ctx) {
+            ctx.state.setHorizontalZoom(1);
+            return true;
+        },
+    },
     'grid.toggle': {
         label: 'Show/hide the grid',
         group: 'Grid',
@@ -1776,6 +1809,8 @@ const TABLEDIT = {
             { keys: ']', action: 'grid.finer' },
             { keys: '#', action: 'grid.triplet' },
             { keys: '\\', action: 'grid.toggle' },
+            { keys: '{', action: 'view.zoomOut' },
+            { keys: '}', action: 'view.zoomIn' },
 
             { keys: 'A', action: 'mode.annotation' },
         ],
@@ -2001,6 +2036,8 @@ const VIM = {
             { keys: '#', action: 'grid.triplet' },
             { keys: '[', action: 'grid.coarser' },
             { keys: ']', action: 'grid.finer' },
+            { keys: '{', action: 'view.zoomOut' },
+            { keys: '}', action: 'view.zoomIn' },
 
             { keys: 'A', action: 'mode.annotation' },
         ],

@@ -48,6 +48,15 @@ export const DURATIONS = {
     dottedSixteenth: 180,
 };
 
+/**
+ * Horizontal zoom levels: how much room a TICK gets, relative to the
+ * pinned layout (1 = the read view's measures per row). Not the cursor
+ * step (A20: the step must never resize the tab) and not the Aa size
+ * (that scales digits along with the spacing, so a 32nd slot stays
+ * narrower than a digit at every size). Fix-it A21.
+ */
+export const H_ZOOM_LEVELS = [0.75, 1, 1.5, 2, 3, 4, 6, 8];
+
 export const DURATION_NAMES = {
     [DURATIONS.whole]: 'whole',
     [DURATIONS.half]: 'half',
@@ -225,6 +234,9 @@ export class EditorState {
 
         // Grid visibility
         this.showGrid = true;
+
+        // Horizontal zoom (view state, never in the document or history)
+        this.horizontalZoom = 1;
 
         // Undo history view (facade owns the real history)
         this.history = {
@@ -1382,6 +1394,27 @@ export class EditorState {
     setGridSubdivision(subdivision) {
         this.gridSubdivision = subdivision;
         this._emit('gridSubdivisionChange', subdivision);
+    }
+
+    /**
+     * Set the horizontal zoom (one of H_ZOOM_LEVELS; anything else snaps
+     * to the nearest). View state: no history entry, no document change.
+     */
+    setHorizontalZoom(zoom) {
+        const z = Number(zoom) || 1;
+        const next = H_ZOOM_LEVELS.reduce((best, l) =>
+            Math.abs(l - z) < Math.abs(best - z) ? l : best, 1);
+        if (next === this.horizontalZoom) return;
+        this.horizontalZoom = next;
+        this._emit('horizontalZoomChange', next);
+    }
+
+    /** Step the horizontal zoom one level in (+1) or out (-1). */
+    zoomHorizontally(direction) {
+        const i = H_ZOOM_LEVELS.indexOf(this.horizontalZoom);
+        const j = Math.max(0, Math.min(H_ZOOM_LEVELS.length - 1,
+            (i < 0 ? H_ZOOM_LEVELS.indexOf(1) : i) + Math.sign(direction)));
+        this.setHorizontalZoom(H_ZOOM_LEVELS[j]);
     }
 
     /**
