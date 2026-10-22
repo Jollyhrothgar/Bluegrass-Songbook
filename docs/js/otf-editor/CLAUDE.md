@@ -267,7 +267,7 @@ live site (Claude in Chrome), so "the ruler looks wrong" becomes a list.
 | `press('1 2')`, `press('Ctrl+z')` | real keydowns through the binding table (two-digit refine, sequences, counts behave as typed) |
 | `exec('edit.undo')`, `actions()` | run an action by id, exactly as a menu item does |
 | `doc()`, `cursor()`, `setCursor({measure, tick, string})`, `history()` | read the document (a copy), the cursor, the undo stack |
-| `layout()` | what is DRAWN, in client px: each bar's barlines and string y's, every ruler line (`data-measure`/`data-tick` on `.editor-grid-overlay line`), fret digit (`data-abs-tick`/`data-string`), rest glyph (`data-measure`) and the cursor box |
+| `layout()` | what is DRAWN, in client px: each bar's barlines and string y's, every ruler line (`data-measure`/`data-tick` on `.editor-grid-overlay line`; `hidden` when too dense to draw), fret digit (`data-abs-tick`/`data-string`), rest glyph (`data-measure`) and the cursor box; `zoom` (Aa) and `hZoom` (horizontal) |
 | `check()` | `layoutViolations(layout())`: ruler periodic and inside its bar, notes and cursor on their tick's ruler line and inside the bar, rests inside the bar, every row drawn at the zoom (`row-squeezed`). `[]` when sane |
 
 Measured against the BARLINES on purpose: notes, ruler and cursor share
@@ -411,10 +411,30 @@ took three crowded rows). Left to right, wrapping as the width asks:
   not the tab. A step too fine to see (lines closer than
   `MIN_RULER_SPACING_PX`, 8px, in `cursor.js`) keeps every line in the DOM
   but draws only the coarsest multiple that fits (`hidden` in
-  `gridLinesForRow`); beats always draw. For bigger targets, use the Aa zoom.
+  `gridLinesForRow`); beats always draw. To see and click every step,
+  zoom in (below).
   It used to set a ratcheted `measureWidthFloor` from the step: 1/32 made
   rows wider than the container, CSS shrank the whole tab to ~0.58x, and
   going back to 1/4 didn't undo it.
+- **Horizontal zoom is the room a tick gets** (fix-it A21). `state.horizontalZoom`
+  (one of `H_ZOOM_LEVELS`, 0.75–8; view state, no history) is set by the
+  status bar's `− 100% +` (bottom right, where score editors keep it), View ▸
+  Zoom in/out/Reset and `{` / `}` (beside the step's `[` `]`). The editor
+  derives the row shape from the pinned zoom-1 count (`_baseMeasuresPerRow`,
+  which View ▸ Measures per row sets, resetting the zoom): each measure is at
+  least `zoom ×` its zoom-1 width, as many as fit share a row and fill it
+  (`measureWidthFloor`), and one measure wider than the canvas is kept at
+  size: `.editor-renderer .stave-row svg { max-width: none }`, and the
+  CANVAS scrolls (the overlays use its `scrollLeft`). Not the Aa size: Aa
+  scales digits with the spacing, so a 32nd slot stays narrower than a digit
+  at every size. Entry never reads the zoom: clicks, arrows and the entry
+  advance stay on `gridSubdivision` / `effectiveDuration()`. While the ruler
+  is thinning the step, the zoom readout is outlined (`.needs-zoom`) and its
+  tooltip says why: at 1/32 and 100% you would otherwise aim at the drawn
+  1/16 lines, which is how Mike's 32nds landed a 16th apart.
+- **A click closes the two-digit fret window** (`_setCursorFromPoint` calls
+  `fret.cancelRefine()`): `2`, click elsewhere, `0` used to make fret 20 at
+  the first slot.
 - **On/off switches are not choices.** `Advance` and `Ruler` are
   `.toolbar-toggle`: on is a tinted outline with `aria-pressed`, never the
   solid fill that marks the selected value next to them.

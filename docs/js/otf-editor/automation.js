@@ -118,9 +118,10 @@ export function layoutViolations(layout, { tol = 1.5 } = {}) {
         }
     }
 
-    // Every row is drawn at the zoom the reader chose. A row laid out wider
-    // than its container gets shrunk by CSS (max-width) and draws small:
-    // what a 1/32 cursor step did before A20.
+    // Every row is drawn at the Aa size the reader chose. A row laid out
+    // wider than its container used to be shrunk by CSS (max-width) and
+    // draw small: what a 1/32 cursor step did before A20. A horizontally
+    // zoomed row is wide on purpose and must scroll, not shrink.
     for (const r of layout.rows || []) {
         if (Math.abs(r.scale - (layout.zoom ?? 1)) > 0.02) {
             out.push({ rule: 'row-squeezed',
@@ -247,7 +248,9 @@ export function createAutomation(editor) {
 
             const root = ed.canvasContainer;
             const ruler = [...root.querySelectorAll('.editor-grid-overlay line[data-measure]')]
-                .map(l => ({ measure: +l.dataset.measure, tick: +l.dataset.tick, x: centerX(l) }));
+                .map(l => ({ measure: +l.dataset.measure, tick: +l.dataset.tick, x: centerX(l),
+                    // in the DOM but too dense to draw at this zoom
+                    hidden: 'hidden' in l.dataset }));
             const notes = [...root.querySelectorAll('.editor-renderer text.note-text[data-abs-tick]')]
                 .map(t => ({ ...measureAt(+t.dataset.absTick), string: +t.dataset.string, x: centerX(t) }))
                 .filter(n => n.measure != null);
@@ -263,8 +266,11 @@ export function createAutomation(editor) {
                 const { measure, tick, string } = ed.state.cursor;
                 cursor = { measure, tick, string, x: centerX(box) };
             }
+            // zoom = the Aa size (what a row's px/unit must equal);
+            // hZoom = the horizontal zoom (room per tick, A21)
             const zoom = ed.renderer?._scale || 1;
-            return { measures, ruler, notes, rests, cursor, rows: rowScales, zoom };
+            const hZoom = ed.state.horizontalZoom || 1;
+            return { measures, ruler, notes, rests, cursor, rows: rowScales, zoom, hZoom };
         },
 
         /** `layoutViolations(layout())` — empty when the screen is sane. */

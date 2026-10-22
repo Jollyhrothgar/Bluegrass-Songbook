@@ -10,7 +10,7 @@
 //
 // It is also the home for the rarely-used-but-real commands that had
 // nowhere to live: insert/delete measure, ripple, repeats, tempo,
-// measures-per-row, zoom, track rename/reorder. Those are not key
+// measures-per-row, track rename/reorder. Those are not key
 // bindings, so they arrive as `hooks` from the editor; an item whose
 // hook is missing is simply not rendered (that is how a wrapper that
 // can't do something says so — by not offering it).
@@ -207,9 +207,9 @@ export const MENUS = [
             { heading: 'Measures per row' },
             { dynamic: 'measuresPerRow' },
             { separator: true },
-            { hook: 'zoomIn', label: 'Zoom in' },
-            { hook: 'zoomOut', label: 'Zoom out' },
-            { hook: 'zoomReset', label: 'Reset zoom' },
+            { action: 'view.zoomIn', label: 'Zoom in' },
+            { action: 'view.zoomOut', label: 'Zoom out' },
+            { action: 'view.zoomReset', label: 'Reset zoom' },
         ],
     },
     {

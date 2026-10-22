@@ -5,7 +5,7 @@ import { TabRenderer } from '../renderers/tablature.js';
 import {
     TabPlayer, PITCH_TO_MIDI, INSTRUMENTS, getInstrumentKey,
 } from '../renderers/tab-player.js';
-import { EditorState, EditorMode, DURATIONS, TICKS_PER_BEAT } from './state.js';
+import { EditorState, EditorMode, DURATIONS, TICKS_PER_BEAT, H_ZOOM_LEVELS } from './state.js';
 import { EditorCursor, positionFromSvgPoint } from './cursor.js';
 import {
     prepareCompactNotation, readingListTimeline, TimelineTiming,
@@ -24,10 +24,12 @@ import { downloadOTF, cleanupOTF, validateOTF } from './actions.js';
 import { ContextMenu } from './context-menu.js';
 import {
     describe as describeBindings, getPreset, setPreset,
-    PRESETS, entryAdvanceTicks, stepTicks,
+    PRESETS, entryAdvanceTicks, stepTicks, keyFor,
 } from './bindings.js';
 import { EditEventRecorder } from './recorder.js';
 import { createAutomation } from './automation.js';
+
+const ZOOM_HINT = 'Zoom: how much room each beat gets. Zoom in to see and click a fine cursor step.';
 
 // Note-entry feedback: a short pluck of the SAME sampled voice playback
 // uses. Volume matches TabPlayer's default mixer so typing a note and
@@ -200,12 +202,9 @@ export class OTFEditor {
                 moveTrackLater: () => this.moveCurrentTrack(1),
                 measuresPerRow: () => [2, 3, 4, 5, 6].map(n => ({
                     label: String(n),
-                    checked: this.renderer?.options.measuresPerRow === n,
+                    checked: this._baseMeasuresPerRow === n,
                     run: () => this.setMeasuresPerRow(n),
                 })),
-                zoomIn: () => this.zoomBy(0.1),
-                zoomOut: () => this.zoomBy(-0.1),
-                zoomReset: () => this.zoomBy(0, 1),
             },
         });
         this.popover = new NoteEntryPopover(this.state, {
@@ -427,6 +426,18 @@ export class OTFEditor {
                 min-height: 200px;
             }
 
+            /* A zoomed-in row may be wider than the canvas. It scrolls WITH
+               the canvas (the cursor/ruler overlays live there and use its
+               scrollLeft), and is never shrunk to fit: style.css's
+               max-width: 100% is what turned a wide row into a 0.58x tab
+               (fix-it A20). */
+            .editor-renderer .stave-row {
+                overflow-x: visible;
+            }
+            .editor-renderer .stave-row svg {
+                max-width: none;
+            }
+
             .editor-status-bar {
                 display: flex;
                 align-items: center;
@@ -522,6 +533,42 @@ export class OTFEditor {
                layout must not shift just because a flash exists. */
             .status-flash:not(.is-showing) { display: none; }
             .status-flash.is-showing { opacity: 1; }
+            .status-zoom {
+                margin-left: auto;
+                display: inline-flex;
+                align-items: center;
+                gap: 2px;
+                border-radius: 6px;
+                padding: 0 2px;
+            }
+            .status-zoom + .status-hint { margin-left: 8px; }
+            .status-zoom .zoom-level {
+                min-width: 38px;
+                text-align: center;
+                font-variant-numeric: tabular-nums;
+                color: var(--text, #333);
+            }
+            .status-zoom-btn {
+                width: 22px;
+                height: 22px;
+                padding: 0;
+                border: 1px solid var(--border, #ddd);
+                border-radius: 4px;
+                background: var(--bg, #fff);
+                color: var(--text, #333);
+                font: inherit;
+                line-height: 1;
+                cursor: pointer;
+            }
+            .status-zoom-btn:disabled { opacity: 0.4; cursor: default; }
+            /* The step is finer than the ruler can draw: point at the fix */
+            .status-zoom.needs-zoom {
+                outline: 1px dashed var(--accent, #007bff);
+            }
+            .status-zoom.needs-zoom .zoom-in-button {
+                border-color: var(--accent, #007bff);
+                color: var(--accent, #007bff);
+            }
             .status-hint {
                 margin-left: auto;
                 color: var(--text-muted, #888);
@@ -717,6 +764,14 @@ export class OTFEditor {
         // listens for that) and resizes the cursor box, never the tab.
         this.state.on('gridSubdivisionChange', () => {
             this.cursor.update();
+            this._updateZoomControls();   // the ruler may now be thinned
+        });
+
+        // The horizontal zoom IS a layout input: re-lay out, keep the
+        // cursor in view.
+        this.state.on('horizontalZoomChange', () => {
+            this._render();
+            this._updateStatusBar();
         });
 
         this.state.on('cursorMove', () => {
@@ -866,6 +921,10 @@ export class OTFEditor {
     _setCursorFromPoint(clientX, clientY) {
         const pos = this._positionFromPoint(clientX, clientY);
         if (!pos) return false;
+        // A click is navigation, and navigation closes the two-digit fret
+        // window: `2`, click, `0` must be two notes, not fret 20 back at
+        // the first slot.
+        this.keyboard?.fret?.cancelRefine();
         this.state.cursor.measure = pos.measure;
         this.state.cursor.tick = pos.tick;
         this.state.cursor.string = pos.string;
@@ -1428,47 +1487,72 @@ export class OTFEditor {
 
     /**
      * View ▸ Measures per row. Rows are FIXED in the editor (plan §7);
-     * this is how you change the number they are fixed AT.
+     * this is how you change the number they are fixed AT — the zoom-1
+     * layout — so it also resets the horizontal zoom.
      */
     setMeasuresPerRow(n) {
         if (!this.renderer || !(n > 0)) return false;
-        this.renderer.options.measuresPerRow = n;
-        this._render();
+        this._baseMeasuresPerRow = n;
+        if (this.state.horizontalZoom !== 1) {
+            this.state.setHorizontalZoom(1);   // re-renders via the listener
+        } else {
+            this._render();
+        }
         this.editorRoot?.focus();
         return true;
-    }
-
-    /**
-     * View ▸ Zoom. `delta` steps the current scale; pass `absolute` to
-     * set it outright (Reset).
-     */
-    zoomBy(delta, absolute = null) {
-        const next = absolute != null
-            ? absolute
-            : Math.round(((this._zoom || 1) + delta) * 10) / 10;
-        this._zoom = Math.max(0.6, Math.min(1.6, next));
-        this.renderer?.setScale?.(this._zoom);
-        this.editorRoot?.focus();
-        return this._zoom;
     }
 
     /**
      * Pin measures-per-row ONCE, to the number the read view computed
      * for this container width (`measuresPerRow` option to override,
      * DEFAULT_MEASURES_PER_ROW when the container isn't laid out yet).
+     * That is the zoom-1 layout; `_applyHorizontalZoom` derives the row
+     * shape at any other zoom from it.
      *
      * "Horizontal shifting / column mutation makes it non-deterministic
      * where measures run" (plan tab-editor-input-parity §7): with the
-     * count fixed, "go to measure 12" is a place you can see, entering
-     * edit mode doesn't reflow the page, and a finer entry grid widens
-     * measures (horizontal scroll) instead of rearranging them.
+     * count fixed, "go to measure 12" is a place you can see and entering
+     * edit mode doesn't reflow the page. Only an explicit zoom moves bars
+     * between rows — never the cursor step, never an edit.
      */
     _pinMeasuresPerRow() {
-        if (this.renderer.options.measuresPerRow !== 'auto') return;
-        this.renderer.options.measuresPerRow =
-            this.options.measuresPerRow
+        if (this._baseMeasuresPerRow) return;
+        const opt = this.renderer.options.measuresPerRow;
+        this._baseMeasuresPerRow =
+            (opt !== 'auto' && opt > 0 ? opt : null)
+            || this.options.measuresPerRow
             || this.renderer.autoMeasuresPerRow()
             || DEFAULT_MEASURES_PER_ROW;
+    }
+
+    /**
+     * Horizontal zoom (fix-it A21): the room a tick gets. At zoom z each
+     * measure is at least z times its zoom-1 width; as many measures as
+     * fit share a row (and fill it), and one measure wider than the row
+     * is kept at its size — the canvas scrolls, it is never shrunk
+     * (`.editor-renderer .stave-row svg { max-width: none }`). Fonts and
+     * string spacing don't change: that is the Aa size's job, and why Aa
+     * can't make a 32nd slot wider than a digit.
+     */
+    _applyHorizontalZoom() {
+        const opt = this.renderer.options;
+        const base = this._baseMeasuresPerRow;
+        const zoom = this.state.horizontalZoom || 1;
+        const layoutWidth = zoom === 1 ? 0 : this.renderer._availableWidth();
+        if (!layoutWidth) {
+            opt.measuresPerRow = base;
+            opt.measureWidthFloor = 0;
+            return;
+        }
+        const available = layoutWidth - opt.leftMargin - 30;   // _calculateLayout's margins
+        const width1 = Math.max(opt.minMeasureWidth,
+            Math.min(opt.maxMeasureWidth, available / base));
+        const wanted = width1 * zoom;
+        const perRow = Math.max(1, Math.min(8, Math.floor(available / wanted)));
+        opt.measuresPerRow = perRow;
+        // The floor beats maxMeasureWidth, which is what lets a zoomed
+        // measure be wide at all; filling the row keeps barlines flush right.
+        opt.measureWidthFloor = Math.max(wanted, available / perRow);
     }
 
     /**
@@ -1505,14 +1589,14 @@ export class OTFEditor {
 
         this._pinMeasuresPerRow();
 
-        // Measure width comes from the container and the pinned row count
-        // (plus the Aa zoom), never from the cursor step. A step-derived
+        // Measure width comes from the container, the pinned row count and
+        // the horizontal zoom — never from the cursor step. A step-derived
         // minimum width used to live here, ratcheted so it never shrank:
         // 1/32 made rows wider than the container, CSS scaled them down to
         // ~0.58x, and going back to 1/4 didn't undo it (fix-it A20). A step
-        // too fine to show is thinned by the ruler instead (cursor.js
-        // gridLinesForRow), and the cursor still lands on every step.
-        this.renderer.options.measureWidthFloor = 0;
+        // too fine to show is thinned by the ruler (cursor.js
+        // gridLinesForRow) until you zoom in; the cursor lands on every step.
+        this._applyHorizontalZoom();
 
         // Overlays refresh via renderer.onAfterRender (fires for THIS
         // call and for the renderer's own async re-renders)
@@ -1525,6 +1609,7 @@ export class OTFEditor {
             requestAnimationFrame(() => {
                 if (!this.cursor) return; // destroyed while queued
                 this._updateCursorLayout();
+                this._updateZoomControls();   // the ruler was just redrawn
             });
         });
     }
@@ -1660,6 +1745,11 @@ export class OTFEditor {
                 <span class="status-value" data-field="annotation">—</span>
             </span>
             <span class="status-flash" data-field="flash" role="status" aria-live="polite"></span>
+            <span class="status-zoom zoom-section">
+                <button type="button" class="status-zoom-btn zoom-out-button" aria-label="Zoom out">−</button>
+                <span class="zoom-level" aria-live="polite">100%</span>
+                <button type="button" class="status-zoom-btn zoom-in-button" aria-label="Zoom in">+</button>
+            </span>
             <button type="button" class="status-hint status-help-btn"
                     title="Keyboard shortcuts">
                 Press <kbd>?</kbd> for help
@@ -1677,8 +1767,43 @@ export class OTFEditor {
             this.editorRoot?.focus();
         });
 
+        // Horizontal zoom (A21): bottom right, where score editors keep
+        // it, and through the binding table like `{` / `}`
+        for (const [cls, action] of [['.zoom-in-button', 'view.zoomIn'],
+            ['.zoom-out-button', 'view.zoomOut']]) {
+            const btn = this.statusBar.querySelector(cls);
+            const key = keyFor(action, getPreset());
+            btn.title = `${action === 'view.zoomIn' ? 'Zoom in' : 'Zoom out'}${key ? ` (${key})` : ''}`;
+            btn.addEventListener('click', () => {
+                this.keyboard.dispatchAction(action);
+                this.editorRoot?.focus();
+            });
+        }
+
         // Initial update
         this._updateStatusBar();
+    }
+
+    /**
+     * The zoom readout, the ends of its range, and the one hint the
+     * ruler needs: when the cursor step is finer than the lines it can
+     * draw at this zoom (it draws every other one, A20), say so HERE —
+     * clicking the drawn lines would otherwise skip a step each time,
+     * which is how 32nds ended up a 16th apart.
+     */
+    _updateZoomControls() {
+        const group = this.statusBar?.querySelector('.status-zoom');
+        if (!group) return;
+        const z = this.state.horizontalZoom || 1;
+        group.querySelector('.zoom-level').textContent = `${Math.round(z * 100)}%`;
+        group.querySelector('.zoom-in-button').disabled = z >= H_ZOOM_LEVELS.at(-1);
+        group.querySelector('.zoom-out-button').disabled = z <= H_ZOOM_LEVELS[0];
+        const thinned = this.state.showGrid
+            && !!this.canvasContainer?.querySelector('.editor-grid-overlay line[data-hidden]');
+        group.classList.toggle('needs-zoom', thinned);
+        group.title = thinned
+            ? 'The ruler is drawing every other line of this cursor step. Zoom in to see and click each one.'
+            : ZOOM_HINT;
     }
 
     /**
@@ -1712,6 +1837,7 @@ export class OTFEditor {
      * Update status bar values (called on state changes)
      */
     _updateStatusBar() {
+        this._updateZoomControls();
         const { cursor, mode, currentDuration } = this.state;
         const ticksPerBeat = this.state.otf.timing?.ticks_per_beat || TICKS_PER_BEAT;
 
