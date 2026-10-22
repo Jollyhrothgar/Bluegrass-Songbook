@@ -556,9 +556,11 @@ position. Plan: `docs/plans/tab-editor-input-parity.md` §3, §6.
   1440 ticks of silence — not an eighth and a dotted half. The silence is
   real, and the renderer draws it: `restSpansForMeasure` +
   `restGlyphSequence` in `renderers/tablature.js` decompose every gap
-  into standard rest values largest-first (1440 → a half rest then a
-  quarter rest) and now draw the LEADING silence of a measure too, which
-  is TablEdit's "Automatic rests". Chords in a column share the value.
+  into standard rest values that each start on a multiple of themselves
+  (1440 from beat 2 → a quarter rest then a half rest, the manual's own
+  order; a 32nd on beat 1 leaves 32nd, 16th, 8th, quarter, half) and draw
+  the LEADING silence of a measure too, which is TablEdit's "Automatic
+  rests". Chords in a column share the value.
 
 - **Never recompute from the keyboard layer.** The facade does it inside
   the same `_mutate`, so one `u` takes back the note *and* the neighbour's

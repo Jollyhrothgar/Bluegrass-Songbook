@@ -68,6 +68,42 @@ Note positions, fret numbers, articulations
 Slur/tie arcs, including across barlines
 ```
 
+### Rhythm: stems, beams, flags, rests
+
+Three beam levels, read in ticks (`renderStemsAndBeams`): 1 = eighth (the
+primary beam), 2 = sixteenth, 3 = thirty-second (fix-it A21 follow-up;
+the engine used to stop at 16ths, so two 32nds in one 16th slot shared no
+beam and a lone 32nd got two flags).
+
+- **A note's level** is the max of what its WRITTEN duration says
+  (≤ 60 → 3, < 240 → 2), its position (an odd 16th slot → 2; a 32nd grid
+  point off the 16th grid → 3) and the gap to the next note (≤ 60 → 3,
+  ≤ 120 → 2). Positions count only on real 32nd grid points, so an
+  undetected triplet at 160/320 never grows a third beam.
+- **Two neighbours are joined at a level** when both carry it and nothing
+  silent lies between them: one unit apart, or the first one's written
+  duration (at that level) reaching the second — a dotted 16th + 32nd
+  share the 16th beam, and the 32nd gets a third-beam stub.
+- **Stubs**: a note carrying the level but joined at it on neither side.
+  Level 2 stubs only a WRITTEN 16th (as it always has); level 3 any 32nd.
+- **Beamable** (`_beamRuns`): the gap to the next onset, or the written
+  duration when that is SHORTER — a beat's last note before a rest still
+  beams with its beat. Never longer: banjo notes are routinely written to
+  ring past the next onset.
+- Unbeamed: no stem (whole), stem (half, quarter), 1 / 2 / 3 flags for an
+  8th / 16th / 32nd.
+- Beam rects carry `data-beam="<level>"`.
+- **Rests** (`restGlyphSequence(len, start)`): each rest is the largest
+  value that fits and starts on a multiple of itself, so small values fill
+  out the beat first. Drawn 6 units right of their tick, or half their own
+  span when that is narrower (a 32nd rest at ordinary zoom).
+
+A corpus diff (all 1,186 tracks, jsdom, old vs new) on the change: 804
+identical; the rest were rest ORDER (quarter-then-half instead of
+half-then-quarter), eighth pairs before a rest or a triplet that were
+flagged separately and now beam, 32nd content, and a handful of stub-vs-
+beam calls on overlapping durations.
+
 ### Articulations
 
 The renderer shows these articulation marks:
