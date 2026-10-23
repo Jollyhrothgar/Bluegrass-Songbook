@@ -82,6 +82,7 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | G1 | Dev blog moved to mikebeaumier.com: point the Dev Blog links and old post URLs at it | S | `feature/blog-redirect` | done — #283 (2026-10-21), after mikebeaumier.com went live; open: whether to delete `docs/posts/` (Mike) |
 | G2 | Search engines: no robots.txt or sitemap.xml, and every song is a `#work/` hash route Google can't index on its own | M | `feature/search-discovery`, `feature/song-pages` | done — robots.txt (#285); a static page per searchable song at `/songs/{id}/` + a generated sitemap, rebuilt on every deploy (`scripts/lib/build_song_pages.py`) |
 | G3 | One contact address: `hello@bluegrassbook.com` (Porkbun forward) replaces the Gmail address; rights holders get a way to reach it | S | `feature/search-discovery`, `feature/song-pages` | done — forward created 2026-10-21 (the domain had no other forwards); About + feedback modal (#285); `© Copyright concern` in every song's ⋯ menu and on every static song page (mailto, no account) |
+| G4 | Security policy: no `SECURITY.md`, no private way to report a vulnerability, no Dependabot | S | `feature/security-policy` | done — `SECURITY.md` names Mike as maintainer; private vulnerability reporting, Dependabot alerts and security updates turned on (2026-10-23) |
 
 ### How it ships
 
