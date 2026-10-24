@@ -30,7 +30,7 @@ def connect(what: str):
         print(f"Error: cannot fetch {what} — Supabase credentials are not set.")
         print("  Needs SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY.")
         print("  Locally these are injected from 1Password; if that is failing:")
-        print("    op signin")
+        print("    unlock the 1Password app (Settings → Developer → Integrate with 1Password CLI)")
         print("  or fall back to a file:  op inject -i .env.tpl -o .env")
         sys.exit(1)
 

@@ -34,8 +34,9 @@ which nothing reads, and print "Added:".
 
 Never written to disk. `.env.tpl` holds 1Password `op://` references (committed);
 values are injected per-command by `scripts/lib/with-secrets`, which
-`./scripts/utility` already uses for everything needing them. Run `op signin`
-once per session. Details in `scripts/lib/CLAUDE.md`.
+`./scripts/utility` already uses for everything needing them. Keep the
+1Password app unlocked (no `op signin` needed; `op whoami` lies under the app
+integration, so don't use it as a check). Details in `scripts/lib/CLAUDE.md`.
 
 ## CRITICAL: Cost Controls
 

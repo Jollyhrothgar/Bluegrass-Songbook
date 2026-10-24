@@ -83,6 +83,7 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | G2 | Search engines: no robots.txt or sitemap.xml, and every song is a `#work/` hash route Google can't index on its own | M | `feature/search-discovery`, `feature/song-pages` | done — robots.txt (#285); a static page per searchable song at `/songs/{id}/` + a generated sitemap, rebuilt on every deploy (`scripts/lib/build_song_pages.py`) |
 | G3 | One contact address: `hello@bluegrassbook.com` (Porkbun forward) replaces the Gmail address; rights holders get a way to reach it | S | `feature/search-discovery`, `feature/song-pages` | done — forward created 2026-10-21 (the domain had no other forwards); About + feedback modal (#285); `© Copyright concern` in every song's ⋯ menu and on every static song page (mailto, no account) |
 | G4 | Security policy: no `SECURITY.md`, no private way to report a vulnerability, no Dependabot | S | `feature/security-policy` | done — `SECURITY.md` names Mike as maintainer; private vulnerability reporting, Dependabot alerts and security updates turned on (2026-10-23) |
+| G5 | `with-secrets` and `bootstrap` probed 1Password with `op whoami`, which says "not signed in" under the app integration even when reads work, so every command fell back to a plaintext `analytics/.env` | S | `bug/op-probe` | done — probe resolves the template (`op inject` to /dev/null); `analytics/.env` deleted after confirming 1Password holds the same values (2026-10-23); `tests/test_with_secrets.py` |
 
 ### How it ships
 

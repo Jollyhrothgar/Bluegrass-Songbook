@@ -49,7 +49,7 @@ worktrees, five copies at rest, none of them expiring. Injection at run time
 means it exists only for the life of the process, and 1Password decides whether
 to hand it over.
 
-`with-secrets` falls back in order: 1Password if signed in, then an existing
+`with-secrets` falls back in order: 1Password if it can resolve the template, then an existing
 `.env` (machines without `op`, and CI, where secrets arrive as real environment
 variables), then whatever is already exported. `scripts/bootstrap` **does not
 delete** a redundant `.env` — it only prints that you may remove it yourself
@@ -58,7 +58,15 @@ succeeded, which stranded this very worktree: a 1Password session is per-shell
 and short-lived, so signing in in one terminal removed the fallback for every
 other one. Regenerate one any time with `op inject -i .env.tpl -o .env`.
 
-Sign in once per session with `op signin`.
+**Never probe 1Password with `op whoami`.** Under the desktop app's CLI
+integration (how Mike's machine is set up) `whoami` prints "account is not
+signed in" in every fresh shell, even right after `op signin`, while `op read`
+/ `op run` work: the app authorizes them on demand. `with-secrets` and
+`bootstrap` used `whoami`, so every command quietly fell back to
+`analytics/.env`, a plaintext service-role key from 2025-12-29, deleted
+2026-10-23. Both now probe with `op inject -i <tpl> >/dev/null`, which resolves
+every reference and discards the values; `tests/test_with_secrets.py` pins it.
+`op signin` is not needed: keep the 1Password app unlocked.
 
 ## Local vs CI Operations
 
