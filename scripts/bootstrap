@@ -64,8 +64,10 @@ if command -v op >/dev/null 2>&1; then
         echo "Note: .env is no longer needed — secrets are injected per command."
         echo "  Remove it when you're happy: rm -f .env analytics/.env"
         echo "  Restore any time:            op inject -i .env.tpl -o .env"
-    elif ! op whoami >/dev/null 2>&1; then
-        echo "⚠ 1Password is locked. Run 'op signin' before commands that need secrets."
+    elif ! op inject -i .env.tpl >/dev/null 2>&1; then
+        # Resolve the template rather than asking `op whoami`, which says "not
+        # signed in" under the desktop app integration even when reads work.
+        echo "⚠ 1Password can't resolve .env.tpl. Unlock the 1Password app before commands that need secrets."
     fi
     echo ""
 elif [ ! -f .env ]; then
