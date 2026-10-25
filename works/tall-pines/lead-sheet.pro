@@ -33,7 +33,6 @@ Now there's the [D]one great stone, [G]standing all [D]alone,
 There [D]waiting to [A]meet me in the [D]shade.
 {end_of_verse}
 
-
 {start_of_chorus: Chorus}
 Tall [D]pines, tall [G]pines,
 [D]Reaching up to the [A]sky.
@@ -45,5 +44,5 @@ I'll [D]bet you wouldn't [A]know me [D]now.
 Tall [D]pines, tall [G]pines,
 [D]Reaching up to the [A]sky.
 Tall [D]pines, tall [G]pines,
-I'll [D]bet you wouldn't [A]know me [D]now.
+I've come [D]home to [A]sleep beneath your [A]boughs.
 {end_of_chorus}
