@@ -8,13 +8,13 @@ But I [D]just coulnd't [A]under[D]stand...
 {start_of_verse: Verse 1B}
 Why they [A]never grew, like I [G]wanted them [D]to,
 I [E7]just coulnd't understand [A]why.
-Now I've [D]rambled around, this [G]whole world [D]through,
+Now I've [D]rambled round, this [G]whole world [D]through,
 And [D]today, I [A]just happened [D]by.
 {end_of_verse}
 
 {start_of_chorus: Chorus}
 Tall [D]pines, tall [G]pines,
-[D]Reaching up to the [A]sky.
+[D]Reaching up to for the [A]clouds.
 Tall [D]pines, tall [G]pines,
 I'll [D]bet you wouldn't [A]know me [D]now.
 {end_of_chorus}
@@ -35,14 +35,14 @@ There [D]waiting to [A]meet me in the [D]shade.
 
 {start_of_chorus: Chorus}
 Tall [D]pines, tall [G]pines,
-[D]Reaching up to the [A]sky.
+[D]Reaching up to for the [A]clouds.
 Tall [D]pines, tall [G]pines,
 I'll [D]bet you wouldn't [A]know me [D]now.
 {end_of_chorus}
 
-{start_of_chorus: Chorus}
+{start_of_verse: Outro}
 Tall [D]pines, tall [G]pines,
-[D]Reaching up to the [A]sky.
+[D]Reaching up to for the [A]clouds.
 Tall [D]pines, tall [G]pines,
-I've come [D]home to [A]sleep beneath your [A]boughs.
-{end_of_chorus}
+I've come [D]home to [A]sleep beneath your [D]boughs.
+{end_of_verse}
