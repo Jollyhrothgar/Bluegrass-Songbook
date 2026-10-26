@@ -6,9 +6,6 @@
 {meta: x_submission_issue 33}
 {meta: x_book The Golden Standard by Ryan Schindler}
 {meta: x_book_url https://www.guesthousetheband.com/store/p/book-version-the-golden-standard}
-{meta: x_version_label Fred Moss's arrangement}
-{meta: x_version_type alternate}
-{meta: x_arrangement_by Fred Moss}
 {key: D}
 
 {start_of_verse: Verse 1}
@@ -30,4 +27,5 @@
 [G]Honey c’mon I’m [Gm]bound to [D]ride
 [G]Honey c’mon I’m [Gm]bound to [D]ride
 [D]Don’t you want to [A]go
+Drop D capo5
 {end_of_verse}
