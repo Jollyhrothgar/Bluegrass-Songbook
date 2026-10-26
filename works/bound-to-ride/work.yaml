@@ -1,6 +1,8 @@
 id: bound-to-ride
 title: Bound To Ride
 artist: Peter Rowan
+composers:
+- Traditional
 default_key: G
 tags:
 - JamFriendly
@@ -12,5 +14,14 @@ parts:
   provenance:
     source: golden-standard
     imported_at: '2026-01-02'
-composers:
-- Traditional
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet-fred-moss-s-arrangement.pro
+  label: Fred Moss's arrangement
+  version_type: alternate
+  arrangement_by: Fred Moss
+  provenance:
+    source: user-submission
+    source_id: pending:bound-to-ride:bd19f4e51d92
+    submitted_by: 71136cce-1556-4c09-a041-279afd1120d4
+    submitted_at: '2026-10-26'
