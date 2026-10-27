@@ -1,8 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1128 1128">
   <!-- Favicon: the BB monogram (images/new_bb_logo.svg) on a square plaque.
-       White on black reads on light and dark tab strips alike. -->
+       White on black reads on light and dark tab strips alike. The artwork
+       is stretched horizontally (1.22x the logo's own proportions) so it is
+       square, with the same 54-unit black border on all four sides.
+       scripts/lib/make_icons.py renders every PNG/ICO icon from this file. -->
   <rect width="1128" height="1128" rx="200" fill="#000000"/>
-  <g transform="translate(134.4,45.1) scale(0.92)">
+  <g transform="translate(38.6,46.1) scale(1.1225,0.92)">
     <g transform="translate(0.000000,1128.000000) scale(0.100000,-0.100000)" fill="#ffffff" stroke="none">
 <path d="M3422 11132 c-138 -299 -154 -586 -51 -905 60 -187 196 -427 339
 -602 92 -111 292 -301 460 -436 85 -68 214 -181 286 -251 l130 -127 125 122
