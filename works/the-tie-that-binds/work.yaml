@@ -1,7 +1,12 @@
 id: the-tie-that-binds
 title: The Tie That Binds
+song: tie-that-binds
+version: '2'
 artist: Jim Reeves
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

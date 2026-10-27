@@ -1,9 +1,14 @@
 id: the-brakeman-s-blues
 title: The Brakeman's Blues
+song: the-brakemans-blues
+version: '2'
 artist: Lefty Frizzell
 composers:
 - Jimmie Rogers
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

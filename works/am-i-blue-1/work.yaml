@@ -1,11 +1,15 @@
 id: am-i-blue-1
 title: Am I Blue
+slug: am-i-blue
 artist: Ricky Nelson
 composers:
 - Harry Akst and Grant Clarke
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

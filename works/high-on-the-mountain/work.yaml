@@ -1,6 +1,13 @@
 id: high-on-the-mountain
 title: High on the Mountain
+song: high-on-a-mountain
+version: '2'
 artist: The Del Mccoury Band
+composers:
+- Ola Belle Reed
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -11,5 +18,3 @@ parts:
     source_file: high-on-the-mountain.txt
     source_url: https://tabs.ultimate-guitar.com/tab/the-del-mccoury-band/high-on-a-mountain-chords-1034301
     imported_at: '2026-07-31'
-composers:
-- Ola Belle Reed

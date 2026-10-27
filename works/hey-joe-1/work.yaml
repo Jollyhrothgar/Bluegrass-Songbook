@@ -1,11 +1,16 @@
 id: hey-joe-1
 title: Hey Joe
+song: hey-joe
+version: '2'
 artist: Moe Bandy
 composers:
 - Boudleaux Bryant
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

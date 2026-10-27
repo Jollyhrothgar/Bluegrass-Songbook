@@ -1,7 +1,14 @@
 id: the-church-in-the-wildwood
 title: The Church In The Wildwood
+song: church-in-the-wildwood-the
+version: '2'
 artist: Tennessee Ernie Ford
+composers:
+- William S. Pitts
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -11,5 +18,3 @@ parts:
     source: classic-country
     source_file: thechurchinthewildwoodlyricschords.pro
     imported_at: '2026-07-26'
-composers:
-- William S. Pitts

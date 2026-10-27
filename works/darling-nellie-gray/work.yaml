@@ -1,6 +1,13 @@
 id: darling-nellie-gray
 title: Darling Nellie Gray
+song: darling-nelly-gray
+version: '2'
 artist: Louis Armstrong
+composers:
+- Benjamin Hanby
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -11,5 +18,3 @@ parts:
     source_file: darling-nellie-gray.txt
     source_url: https://tabs.ultimate-guitar.com/tab/louis-armstrong/darling-nelly-gray-chords-3278963
     imported_at: '2026-07-31'
-composers:
-- Benjamin Hanby

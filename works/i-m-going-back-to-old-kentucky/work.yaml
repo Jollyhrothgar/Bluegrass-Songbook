@@ -1,9 +1,16 @@
 id: i-m-going-back-to-old-kentucky
 title: I'm Going Back To Old Kentucky
+song: im-going-back-to-old-kentucky
+version: '2'
 artist: Bill Monroe
+composers:
+- Bill Monroe
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -13,5 +20,3 @@ parts:
     source: classic-country
     source_file: imgoingbacktooldkentuckylyricschords.pro
     imported_at: '2026-01-02'
-composers:
-- Bill Monroe

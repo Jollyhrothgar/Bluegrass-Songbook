@@ -1,7 +1,14 @@
 id: wayfaring-stranger
 title: Wayfaring Stranger
+song: wayfaring-stranger-1
+version: '2'
 artist: Don Edwards
+composers:
+- Traditional
 default_key: Am
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -11,5 +18,3 @@ parts:
     source: classic-country
     source_file: wayfaringstrangerlyricsandchords.pro
     imported_at: '2026-01-02'
-composers:
-- Traditional

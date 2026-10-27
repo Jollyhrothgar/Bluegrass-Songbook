@@ -1,9 +1,14 @@
 id: it-s-good-to-see-you
 title: It's Good To See You
+song: its-good-to-see-you
+version: '2'
 artist: Don Williams
 composers:
 - Alan Taylor
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

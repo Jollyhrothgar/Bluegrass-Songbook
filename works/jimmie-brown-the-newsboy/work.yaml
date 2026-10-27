@@ -1,5 +1,12 @@
 id: jimmie-brown-the-newsboy
 title: Jimmie Brown The Newsboy
+song: jimmy-brown-the-newsboy
+version: '2'
+composers:
+- A.P. Carter
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -9,5 +16,3 @@ parts:
     source: bluegrass-lyrics
     source_url: https://www.bluegrasslyrics.com/song/jimmie-brown-the-newsboy/
     imported_at: '2026-02-08'
-composers:
-- A.P. Carter

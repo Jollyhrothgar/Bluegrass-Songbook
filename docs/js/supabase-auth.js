@@ -1193,15 +1193,19 @@ async function syncListsToCloud(localLists) {
 // ============================================
 
 // Fetch vote counts for all songs in a group
-async function fetchGroupVotes(groupId) {
-    if (!supabaseClient) {
-        return { data: [], error: null };
+// Vote counts for a song's versions, by work id. Counted by song_id, not
+// group_id: a vote row records the group its version belonged to WHEN it was
+// cast, and groups follow the song structure (work.yaml `song:`), which can
+// change. A version's votes cast under several groups are summed.
+async function fetchGroupVotes(songIds) {
+    if (!supabaseClient || !songIds?.length) {
+        return { data: {}, error: null };
     }
 
     const { data, error } = await supabaseClient
         .from('song_vote_counts')
         .select('song_id, vote_count')
-        .eq('group_id', groupId);
+        .in('song_id', songIds);
 
     if (error) {
         console.error('Error fetching group votes:', error);
@@ -1211,7 +1215,7 @@ async function fetchGroupVotes(groupId) {
     // Convert to a map for easy lookup
     const voteMap = {};
     data.forEach(row => {
-        voteMap[row.song_id] = row.vote_count;
+        voteMap[row.song_id] = (voteMap[row.song_id] || 0) + row.vote_count;
     });
 
     return { data: voteMap, error: null };

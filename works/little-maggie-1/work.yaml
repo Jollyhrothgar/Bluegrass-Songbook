@@ -1,10 +1,17 @@
 id: little-maggie-1
 title: Little Maggie
+song: little-maggie
+version: '2'
 artist: Traditional
+composers:
+- Traditional
 default_key: G
 tags:
 - JamFriendly
 - Modal
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -13,5 +20,3 @@ parts:
   provenance:
     source: golden-standard
     imported_at: '2026-01-02'
-composers:
-- Traditional

@@ -1,6 +1,11 @@
 id: my-little-girl-from-tennessee
 title: My Little Girl From Tennessee
+song: my-little-girl-in-tennessee
+version: '2'
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

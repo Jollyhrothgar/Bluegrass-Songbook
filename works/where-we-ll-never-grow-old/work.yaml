@@ -1,11 +1,16 @@
 id: where-we-ll-never-grow-old
 title: Where We'll Never Grow Old
+song: where-well-never-grow-old
+version: '2'
 artist: Eddy Arnold
 composers:
 - James C. Moore
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

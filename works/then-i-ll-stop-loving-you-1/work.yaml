@@ -1,9 +1,14 @@
 id: then-i-ll-stop-loving-you-1
 title: Then I'll Stop Loving You
+song: then-i-ll-stop-loving-you
+version: '2'
 artist: Jim Reeves
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

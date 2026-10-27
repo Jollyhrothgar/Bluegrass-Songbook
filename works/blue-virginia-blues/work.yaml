@@ -1,5 +1,7 @@
 id: blue-virginia-blues
 title: Blue Virginia Blues
+song: blue-virginia-blue
+version: '2'
 artist: Larry Sparks
 composers:
 - Pete Gobel and Larry Drumm
@@ -8,6 +10,9 @@ tags:
 - Bluegrass
 - Folk
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

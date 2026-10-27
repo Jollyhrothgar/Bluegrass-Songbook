@@ -1,9 +1,14 @@
 id: crying-in-the-rain-1
 title: Crying In The Rain
+song: crying-in-the-rain
+version: '2'
 artist: Everly Brothers
 composers:
 - Howard Greenfield and Carole King
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

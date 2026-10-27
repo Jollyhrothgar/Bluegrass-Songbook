@@ -1,11 +1,15 @@
 id: 2393
 title: The Key to Heaven
+slug: the-key-to-heaven
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/2393/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/2393/
+    imported_at: '2026-02-08'

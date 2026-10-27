@@ -1,7 +1,15 @@
 id: we-ll-meet-again-sweetheart
 title: We'll Meet Again Sweetheart
+song: well-meet-again-sweetheart
+version: '2'
 artist: Lester Flatt
+composers:
+- Lester Flatt
+- Earl Scruggs
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -11,6 +19,3 @@ parts:
     source: classic-country
     source_file: wellmeetagainsweetheartlyricschords.pro
     imported_at: '2026-07-26'
-composers:
-- Lester Flatt
-- Earl Scruggs

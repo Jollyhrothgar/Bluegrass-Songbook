@@ -1,7 +1,12 @@
 id: the-shelter-of-your-eyes
 title: The Shelter Of Your Eyes
+song: shelter-of-your-eyes
+version: '2'
 artist: Don Williams
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

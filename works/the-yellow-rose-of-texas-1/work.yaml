@@ -1,5 +1,7 @@
 id: the-yellow-rose-of-texas-1
 title: The Yellow Rose of Texas
+song: the-yellow-rose-of-texas
+version: '2'
 artist: Michael Martin Murphey
 composers:
 - Traditional
@@ -7,6 +9,9 @@ default_key: G
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

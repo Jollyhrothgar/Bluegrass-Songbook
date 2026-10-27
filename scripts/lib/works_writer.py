@@ -82,7 +82,7 @@ WORK_YAML = 'work.yaml'
 # appended `composers` AFTER `parts`); this is the order work_schema.Work
 # serializes in, so hand-edited and machine-written works look alike.
 _FIELD_ORDER = [
-    'id', 'title', 'artist', 'composers', 'default_key', 'default_tempo',
+    'id', 'title', 'song', 'version', 'slug', 'artist', 'composers', 'default_key', 'default_tempo',
     'time_signature', 'tags', 'exclude_tags', 'status', 'notes', 'external',
     'metadata_provenance', 'parts',
 ]
@@ -91,9 +91,14 @@ _FIELD_ORDER = [
 #: metadata edit is *for*, and nothing else — most importantly not ``parts``
 #: and not ``id``, so "a metadata edit touches no part" is a property of the
 #: function rather than a promise made by its callers.
+#:
+#: ``song`` / ``version`` / ``slug`` place a work in the URL scheme
+#: (``/songs/{song}/{version}/``; see scripts/lib/seed_songs.py): ``song`` is
+#: the root work this one is a version of, ``version`` its slug under that
+#: song, ``slug`` a song root's own URL slug when its work id would mislead.
 METADATA_FIELDS = (
     'title', 'artist', 'composers', 'default_key', 'default_tempo',
-    'time_signature', 'notes',
+    'time_signature', 'notes', 'song', 'version', 'slug',
 )
 
 _PART_FIELD_ORDER = [
@@ -203,7 +208,8 @@ def write_work_yaml(repo_root, work: dict) -> Path:
 
 
 def work_path(repo_root, work_id: str) -> Path:
-    return Path(repo_root) / 'works' / work_id
+    # str(): a numeric id (`id: 2393`) loads from YAML as an int.
+    return Path(repo_root) / 'works' / str(work_id)
 
 
 # ============================================
@@ -220,6 +226,30 @@ def load_redirects(repo_root) -> dict:
         return json.loads(path.read_text()) or {}
     except (json.JSONDecodeError, OSError):
         return {}
+
+
+def redirect_violations(repo_root) -> list:
+    """Ways redirects.json disagrees with works/; [] when consistent.
+
+    A redirect says "this id was merged away": its source must have no
+    ``works/`` directory, and its target must be a live work (not itself a
+    redirect). The build fails on any violation. It exists because July
+    2026 backfill imports wrote straight into works/, re-created 79 merged
+    ids, and the build — which doesn't read redirects — kept publishing them
+    while the app silently opened their targets instead.
+    """
+    redirects = load_redirects(repo_root)
+    works = Path(repo_root) / 'works'
+    problems = []
+    for source, target in sorted(redirects.items()):
+        if (works / source).is_dir():
+            problems.append(f"{source}: merged away (redirects to {target}) but "
+                            f"works/{source}/ exists again")
+        if target in redirects:
+            problems.append(f"{source}: redirects to {target}, which is itself redirected")
+        elif not (works / target).is_dir():
+            problems.append(f"{source}: redirects to {target}, which has no works/ dir")
+    return problems
 
 
 @dataclass
@@ -260,10 +290,12 @@ class Guards:
         soft-deleted, and refused it identically every hour thereafter.
 
         A work whose OWN id is suppressed or redirected is still refused,
-        and that is the deliberate half: the next build drops it from both
-        indexes (``curation.filter_suppressed`` asks exactly this question),
-        so a part added to it would be published nowhere. The rule reads
-        "if the build still publishes it, you may add to it".
+        and that is the deliberate half. A suppressed id: the next build
+        drops it from both indexes (``curation.filter_suppressed`` asks
+        exactly this question), so a part added to it would be published
+        nowhere. A redirected id can't have a work at all — the build fails
+        if one does (``redirect_violations``). The rule reads "if the build
+        still publishes it, you may add to it".
         """
         if is_suppressed_exact(work_id, self.registry, self.deleted_songs):
             return 'suppressed'

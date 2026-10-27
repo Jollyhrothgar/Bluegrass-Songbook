@@ -1,11 +1,16 @@
 id: a-distant-land-to-roam
 title: A Distant Land To Roam
+song: distant-land-to-roam
+version: '2'
 artist: Ralph Stanley
 composers:
 - A.P. Carter
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

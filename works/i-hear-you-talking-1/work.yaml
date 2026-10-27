@@ -1,9 +1,13 @@
 id: i-hear-you-talking-1
 title: I Hear You Talking
+slug: i-hear-you-talking
 artist: Bob Wills
 composers:
 - Cindy Walker
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

@@ -1,17 +1,21 @@
 """Static per-song pages + sitemap (G2).
 
 Songs live at `/#work/{id}`, and Google treats everything after `#` as one
-URL, so no song could be indexed. `build_song_pages` writes a plain HTML page
-per searchable song at `docs/songs/{id}/index.html` and regenerates
-`docs/sitemap.xml` from the same rows, on every index build. Curation is
+URL, so no song could be indexed. `build_song_pages` writes a page per
+searchable song at `docs/songs/{id}/index.html` -- the app's own index.html
+with the song's head tags and its chart pre-rendered in the song view -- and
+regenerates `docs/sitemap.xml` from the same rows, on every index build. Curation is
 therefore automatic: a song promoted into search gets a page at the next
 deploy, a pruned or deleted one loses it.
 """
 
 import json
 import re
+import shutil
 import sys
 from pathlib import Path
+
+import pytest
 
 REPO_ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(REPO_ROOT / "scripts" / "lib"))
@@ -21,12 +25,16 @@ from build_song_pages import (  # noqa: E402
     STATIC_PAGES,
     build_song_pages,
     render_chart,
+    render_page,
 )
+
+APP_TEMPLATE = REPO_ROOT / "docs" / "index.html"
 
 
 def make_docs(tmp_path, rows, charts):
     data = tmp_path / "data"
     (data / "songs").mkdir(parents=True)
+    shutil.copy(APP_TEMPLATE, tmp_path / "index.html")   # the real app is the template
     with open(data / "index.jsonl", "w") as f:
         for r in rows:
             f.write(json.dumps(r) + "\n")
@@ -100,10 +108,16 @@ def test_page_is_indexable_and_links_into_the_app(tmp_path):
     assert '"@type": "MusicComposition"' in html
 
 
+def prerendered(docs, work_id):
+    """The song's own pre-rendered chart, without the app template around it."""
+    html = (docs / "songs" / work_id / "index.html").read_text()
+    return html.split('<article class="prerender">', 1)[1].split("</article>", 1)[0]
+
+
 def test_chart_is_chords_over_lyrics_and_escaped(tmp_path):
     docs = make_docs(tmp_path, ROWS, CHARTS)
     build_song_pages(docs)
-    html = (docs / "songs" / "blue-moon-of-kentucky" / "index.html").read_text()
+    html = prerendered(docs, "blue-moon-of-kentucky")
     assert "<h2>Verse 1</h2>" in html
     assert "<h2>Chorus</h2>" in html
     assert "Blue moon of Kentucky keep on shining" in html
@@ -137,11 +151,13 @@ def test_traditional_is_not_written_by(tmp_path):
 
 
 def page_parts(html):
-    """(head, main, footer) of a rendered page."""
+    """(head, main, footer) of a rendered page: the head, the pre-rendered
+    chart, and the credits that close it ("Recorded by" + copyright line)."""
     head = html.split("</head>")[0]
-    main = html.split("<main>")[1].split("</main>")[0]
-    footer = html.split("<footer>")[1].split("</footer>")[0]
-    return head, main, footer
+    article = html.split('<article class="prerender">')[1].split("</article>")[0]
+    cut = min(i for i in (article.find('<div class="artists">'),
+                          article.find('<p class="rights">')) if i >= 0)
+    return head, article[:cut], article[cut:]
 
 
 # F9: `artist` is whichever performer page a chart was scraped from, not whose
@@ -290,3 +306,119 @@ def test_rebuild_is_byte_stable_and_quiet(tmp_path):
 def test_static_pages_exist_in_the_real_site():
     for page in STATIC_PAGES:
         assert (REPO_ROOT / "docs" / (page or "index.html")).is_file(), page
+
+
+def test_page_is_the_app_with_the_song_already_showing(tmp_path):
+    docs = make_docs(tmp_path, ROWS, CHARTS)
+    build_song_pages(docs)
+    html = (docs / "songs" / "blue-moon-of-kentucky" / "index.html").read_text()
+    # Relative URLs (js/, css/, data/, images/) resolve from the root, and the
+    # base comes before anything in the head that uses one.
+    assert html.index('<base href="/">') < html.index('href="css/style.css"')
+    assert html.index('<base href="/">') < html.index('href="images/favicon-16.png"')
+    assert '<script type="module" src="js/main.js"></script>' in html
+    # First paint is the song, not the homepage.
+    assert '<div id="landing-page" class="landing-page hidden">' in html
+    assert '<div id="song-view" class="song-view">' in html
+    content = html.split('<div id="song-content" class="song-content">', 1)[1]
+    assert content.startswith('<article class="prerender">')
+    assert "Blue moon of Kentucky keep on shining" in content.split("</article>")[0]
+    # One title, and it is the song's.
+    assert html.count("<title>") == 1
+    assert "Copyright concern" in html
+
+
+def test_template_drift_fails_loudly():
+    row = {"id": "x", "title": "X", "has_content": True}
+    with pytest.raises(ValueError, match="song-view"):
+        render_page(row, "[G]Hi\n", ORIGIN + "songs/x/",
+                    APP_TEMPLATE.read_text().replace('id="song-view"', 'id="renamed"'))
+
+
+# Songs and versions (work.yaml `song:`; build_works_index.apply_songs sets
+# each row's path). One indexed page per song; versions live under it.
+SONG_ROWS = [
+    {"id": "house-of-gold", "title": "House Of Gold", "path": "songs/house-of-gold/",
+     "canonical": True, "has_content": True},
+    {"id": "a-house-of-gold", "title": "A House of Gold", "path": "songs/house-of-gold/2/",
+     "variant_of": "house-of-gold", "version": "2", "has_content": True},
+    {"id": "hog-banjo", "title": "House of Gold", "path": "songs/house-of-gold/banjo-tab/",
+     "variant_of": "house-of-gold", "version": "banjo-tab",
+     "tablature_parts": [{"instrument": "banjo", "file": "data/tabs/x.otf.json"}]},
+]
+SONG_CHARTS = {"house-of-gold.pro": "[C]People steal\n", "a-house-of-gold.pro": "[G]People steal\n"}
+
+
+def test_versions_live_under_their_song_and_point_at_it(tmp_path):
+    docs = make_docs(tmp_path, SONG_ROWS, SONG_CHARTS)
+    build_song_pages(docs)
+    song = (docs / "songs" / "house-of-gold" / "index.html").read_text()
+    version = (docs / "songs" / "house-of-gold" / "2" / "index.html").read_text()
+    tab = (docs / "songs" / "house-of-gold" / "banjo-tab" / "index.html").read_text()
+    assert ('Versions: <a href="/songs/house-of-gold/2/">Version 2</a> · '
+            '<a href="/songs/house-of-gold/banjo-tab/">Banjo tab</a>') in song
+    for page in (version, tab):
+        assert f'<link rel="canonical" href="{ORIGIN}songs/house-of-gold/">' in page
+    assert 'Version 2 of <a href="/songs/house-of-gold/">House Of Gold</a>' in version
+    assert sitemap_locs(docs)[len(STATIC_PAGES):] == [f"{ORIGIN}songs/house-of-gold/"]
+
+
+def test_404_is_the_app_rooted_at_slash(tmp_path):
+    docs = make_docs(tmp_path, SONG_ROWS, SONG_CHARTS)
+    build_song_pages(docs)
+    page = (docs / "404.html").read_text()
+    assert '<base href="/">' in page and 'src="js/main.js"' in page
+    assert "prerender" not in page
+
+
+def test_rebuild_prunes_version_pages_and_their_folders(tmp_path):
+    docs = make_docs(tmp_path, SONG_ROWS, SONG_CHARTS)
+    build_song_pages(docs)
+    rows = [r for r in SONG_ROWS if r["id"] != "a-house-of-gold"]
+    (docs / "data" / "index.jsonl").write_text("".join(json.dumps(r) + "\n" for r in rows))
+    build_song_pages(docs)
+    assert not (docs / "songs" / "house-of-gold" / "2").exists()
+    assert (docs / "songs" / "house-of-gold" / "banjo-tab" / "index.html").exists()
+
+
+def test_sitemap_dates_a_song_by_its_newest_version(tmp_path):
+    docs = make_docs(tmp_path, SONG_ROWS, SONG_CHARTS)
+    build_song_pages(docs, work_dates={"house-of-gold": "2026-07-31", "a-house-of-gold": "2026-10-26"},
+                     page_dates={"docs/index.html": "2026-10-20"})
+    xml = (docs / "sitemap.xml").read_text()
+    assert f"<loc>{ORIGIN}songs/house-of-gold/</loc><lastmod>2026-10-26</lastmod>" in xml
+    assert f"<loc>{ORIGIN}</loc><lastmod>2026-10-20</lastmod>" in xml
+    assert f"<loc>{ORIGIN}about.html</loc></url>" in xml        # no date known: no <lastmod>
+
+
+def git_repo(path):
+    import subprocess
+    def git(*args, env=None):
+        subprocess.run(["git", "-C", str(path), *args], check=True, capture_output=True, env=env)
+    path.mkdir()
+    git("init", "-q")
+    for when, work in (("2026-01-02T00:00:00", "a"), ("2026-03-04T00:00:00", "b"), ("2026-05-06T00:00:00", "a")):
+        (path / "works" / work).mkdir(parents=True, exist_ok=True)
+        (path / "works" / work / "work.yaml").write_text(f"title: {when}\n")
+        git("add", "-A")
+        env = {"GIT_AUTHOR_DATE": when, "GIT_COMMITTER_DATE": when, "PATH": __import__("os").environ["PATH"],
+               "GIT_AUTHOR_NAME": "t", "GIT_AUTHOR_EMAIL": "t@t", "GIT_COMMITTER_NAME": "t",
+               "GIT_COMMITTER_EMAIL": "t@t", "HOME": str(path)}
+        git("commit", "-q", "-m", work, env=env)
+    return git
+
+
+def test_git_dates_are_each_works_last_commit(tmp_path):
+    from build_song_pages import git_dates
+    git_repo(tmp_path / "repo")
+    assert git_dates(tmp_path / "repo", ["works"]) == {"a": "2026-05-06", "b": "2026-03-04"}
+
+
+def test_git_dates_refuse_a_shallow_clone(tmp_path):
+    import subprocess
+    from build_song_pages import git_dates
+    git_repo(tmp_path / "repo")
+    subprocess.run(["git", "clone", "-q", "--depth", "1", f"file://{tmp_path / 'repo'}", str(tmp_path / "shallow")],
+                   check=True, capture_output=True)
+    assert git_dates(tmp_path / "shallow", ["works"]) == {}
+    assert git_dates(tmp_path / "not-a-repo", ["works"]) == {}

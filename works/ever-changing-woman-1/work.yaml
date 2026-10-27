@@ -1,11 +1,16 @@
 id: ever-changing-woman-1
 title: Ever Changing Woman
+song: ever-changing-woman
+version: '2'
 artist: J.D. Crowe
 composers:
 - Dave Kirby
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

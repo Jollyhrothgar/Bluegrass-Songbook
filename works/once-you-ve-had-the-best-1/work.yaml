@@ -1,9 +1,14 @@
 id: once-you-ve-had-the-best-1
 title: Once You've Had The Best
+song: once-you-ve-had-the-best
+version: '2'
 artist: Johnny Paycheck
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

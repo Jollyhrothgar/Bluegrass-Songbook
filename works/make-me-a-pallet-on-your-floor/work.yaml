@@ -1,6 +1,13 @@
 id: make-me-a-pallet-on-your-floor
 title: Make Me a Pallet on Your Floor
+song: make-me-a-pallet-on-the-floor
+version: '2'
 artist: Gillian Welch
+composers:
+- Traditional
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -11,5 +18,3 @@ parts:
     source_file: make-me-a-pallet-on-your-floor.txt
     source_url: https://tabs.ultimate-guitar.com/tab/gillian-welch/make-me-a-pallet-on-your-floor-chords-650471
     imported_at: '2026-07-31'
-composers:
-- Traditional

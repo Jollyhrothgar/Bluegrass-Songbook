@@ -1,5 +1,7 @@
 id: tennessee-waltz-2-the
 title: Tennessee Waltz (2) (The)
+song: tennessee-waltz
+version: '2'
 artist: Traditional
 composers:
 - Redd Stewart
@@ -8,6 +10,9 @@ default_key: G
 tags:
 - Instrumental
 - Bluegrass
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

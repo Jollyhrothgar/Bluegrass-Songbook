@@ -1,11 +1,18 @@
 id: ragtime-annie-1
 title: Ragtime Annie
+song: ragtime-annie
+version: '2'
 artist: Traditional
+composers:
+- Traditional
 default_key: G
 tags:
 - Instrumental
 - Bluegrass
 - Scruggs
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -15,10 +22,10 @@ parts:
     source: tunearch
     imported_at: '2026-01-02'
 - type: tablature
-  instrument: banjo
   format: otf
   file: banjo.otf.json
   default: true
+  instrument: banjo
   provenance:
     source: banjo-hangout
     source_id: '17713'
@@ -29,5 +36,3 @@ parts:
     tef_time_sig: 4/4
     tef_tracks: 2
     tef_events: 587
-composers:
-- Traditional

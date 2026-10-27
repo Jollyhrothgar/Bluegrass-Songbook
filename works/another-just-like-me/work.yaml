@@ -1,11 +1,16 @@
 id: another-just-like-me
 title: Another (Just Like Me)
+song: another
+version: '2'
 artist: Jean Shepard
 composers:
 - Vic McAlpin and Roy Drusky
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

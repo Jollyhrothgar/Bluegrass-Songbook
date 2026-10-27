@@ -1,11 +1,16 @@
 id: you-re-not-easy-to-forget
 title: You're Not Easy to Forget
+song: youre-not-easy-to-forget
+version: '2'
 artist: J.D. Crowe
 composers:
 - Henry Davis and Cynthia Weil
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

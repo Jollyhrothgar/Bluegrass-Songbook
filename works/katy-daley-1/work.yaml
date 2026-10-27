@@ -1,9 +1,14 @@
 id: katy-daley-1
 title: Katy Daley
+song: katy-daley
+version: '2'
 artist: Eamon O'Shea
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

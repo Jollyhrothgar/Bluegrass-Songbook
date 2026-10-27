@@ -1,11 +1,16 @@
 id: lone-gone-lonesome-blues
 title: Lone Gone Lonesome Blues
+song: long-gone-lonesome-blues
+version: '2'
 artist: Hank Williams
 default_key: C
 tags:
 - HonkyTonk
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

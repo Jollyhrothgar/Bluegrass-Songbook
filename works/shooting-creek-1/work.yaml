@@ -1,5 +1,7 @@
 id: shooting-creek-1
 title: Shooting Creek
+song: shooting-creek
+version: '2'
 artist: Traditional
 composers:
 - Biography:Charlie Poole and the North Carolina Ramblers
@@ -8,6 +10,9 @@ tags:
 - Instrumental
 - OldTime
 - Clawhammer
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -17,9 +22,9 @@ parts:
     source: tunearch
     imported_at: '2026-01-02'
 - type: tablature
-  instrument: banjo
   format: otf
   file: banjo.otf.json
+  instrument: banjo
   provenance:
     source: banjo-hangout
     source_id: '17003'

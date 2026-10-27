@@ -1,5 +1,7 @@
 id: save-the-last-dance-for-me-1
 title: Save The Last Dance For Me
+song: save-the-last-dance-for-me
+version: '2'
 artist: Emmylou Harris
 composers:
 - Doc Pomus and Mort Shuman
@@ -7,6 +9,9 @@ default_key: G
 tags:
 - Folk
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

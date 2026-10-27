@@ -1,5 +1,12 @@
 id: the-last-thing-on-my-mind
 title: The Last Thing On My Mind
+song: last-thing-on-my-mind
+version: '3'
+composers:
+- Tom Paxton
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -9,5 +16,3 @@ parts:
     source: bluegrass-lyrics
     source_url: https://www.bluegrasslyrics.com/song/the-last-thing-on-my-mind/
     imported_at: '2026-02-08'
-composers:
-- Tom Paxton

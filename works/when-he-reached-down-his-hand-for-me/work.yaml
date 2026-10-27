@@ -1,5 +1,7 @@
 id: when-he-reached-down-his-hand-for-me
 title: When He Reached Down His Hand For Me
+song: when-he-reached-down-his-hand
+version: '2'
 artist: Johnny Cash
 composers:
 - G.E. Wright
@@ -11,6 +13,9 @@ tags:
 - Gospel
 - Outlaw
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

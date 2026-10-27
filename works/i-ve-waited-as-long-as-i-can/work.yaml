@@ -1,9 +1,14 @@
 id: i-ve-waited-as-long-as-i-can
 title: I've Waited As Long As I Can
+song: ive-waited-as-long-as-i-can
+version: '2'
 artist: Tony Rice
 composers:
 - Hylo Brown
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

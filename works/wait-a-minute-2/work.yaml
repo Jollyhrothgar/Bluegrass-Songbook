@@ -1,5 +1,12 @@
 id: wait-a-minute-2
 title: Wait A Minute
+song: wait-a-minute
+version: '2'
+composers:
+- Herb Pedersen
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -9,5 +16,3 @@ parts:
     source: bluegrass-lyrics
     source_url: https://www.bluegrasslyrics.com/song/wait-a-minute-2/
     imported_at: '2026-02-08'
-composers:
-- Herb Pedersen

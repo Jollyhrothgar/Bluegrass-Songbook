@@ -1,9 +1,14 @@
 id: over-in-the-glory-land
 title: Over In The Glory Land
+song: over-in-the-gloryland
+version: '2'
 artist: The Stanley Brothers
 composers:
 - James W. Acuff and Emmett S. Dean
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

@@ -1,11 +1,16 @@
 id: before-i-met-you
 title: Before I Met You
+song: before-i-met-you-1
+version: '2'
 artist: Carl Smith
 composers:
-- Charles L. Seitz, Joe Lewis, Elmar Rader
+- 'Charles L. Seitz, Joe Lewis, Elmar Rader'
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

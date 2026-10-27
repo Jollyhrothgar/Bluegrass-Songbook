@@ -1,11 +1,16 @@
 id: walk-right-back-1
 title: Walk Right Back
+song: walk-right-back
+version: '2'
 artist: Nanci Griffith
 composers:
 - Sonny Curtis
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

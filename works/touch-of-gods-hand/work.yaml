@@ -1,5 +1,14 @@
 id: touch-of-gods-hand
 title: Touch Of God’s Hand
+song: touch-of-god-s-hand
+version: '2'
+artist: Vernon Oxford
+default_key: C
+tags:
+- JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -9,7 +18,3 @@ parts:
     source: bluegrass-lyrics
     source_url: https://www.bluegrasslyrics.com/song/touch-of-gods-hand/
     imported_at: '2026-02-08'
-tags:
-- JamFriendly
-default_key: C
-artist: Vernon Oxford

@@ -216,6 +216,12 @@ jobs:
         with:
           # For workflow_run, checkout main at HEAD to get the newly pushed commit
           ref: ${{ github.event_name == 'workflow_run' && 'main' || '' }}
+          # Full history, commits and trees only (no old file contents): the
+          # sitemap dates each song by the last commit to its works/ dir
+          # (build_song_pages.git_dates). A shallow clone has one commit, so
+          # the sitemap would ship with no <lastmod> at all.
+          fetch-depth: 0
+          filter: blob:none
 
       - name: Install uv
         uses: astral-sh/setup-uv@v4

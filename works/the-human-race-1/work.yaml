@@ -1,11 +1,15 @@
 id: the-human-race-1
 title: The Human Race
+slug: the-human-race
 artist: Doyle Lawson
 composers:
-- James Dawson Phillips, Eugene Dobbins, Timothy Ray Menzies
+- 'James Dawson Phillips, Eugene Dobbins, Timothy Ray Menzies'
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

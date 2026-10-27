@@ -1,11 +1,16 @@
 id: only-you-2
 title: Only You
+song: only-you-and-you-alone
+version: '2'
 artist: The Platters
 composers:
 - Buck Ram and Andre Rand
 default_key: C
 tags:
 - Pop
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

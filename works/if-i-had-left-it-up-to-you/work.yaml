@@ -1,10 +1,15 @@
 id: if-i-had-left-it-up-to-you
 title: If I Had Left It Up To You
+song: if-i-d-left-it-up-to-you
+version: '2'
 artist: Merle Haggard
 default_key: C
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

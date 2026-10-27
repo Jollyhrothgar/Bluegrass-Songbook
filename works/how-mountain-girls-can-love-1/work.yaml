@@ -1,9 +1,16 @@
 id: how-mountain-girls-can-love-1
 title: How Mountain Girls Can Love
+song: how-mountain-girls-can-love
+version: '2'
 artist: Carter Stanley
+composers:
+- Ruby Rakes
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -12,5 +19,3 @@ parts:
   provenance:
     source: golden-standard
     imported_at: '2026-01-02'
-composers:
-- Ruby Rakes

@@ -1,11 +1,16 @@
 id: forever-1
 title: Forever
+song: forever-2
+version: '2'
 artist: Billy Walker
 composers:
 - Buddy Killen
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

@@ -1,11 +1,15 @@
 id: i-m-waiting-just-for-you-1
 title: I'm Waiting Just For You
+slug: i-m-waiting-just-for-you
 artist: Hawkshaw Hawkins
 composers:
-- Henry Glover, Carolyn Leigh, Lucky Millinder
+- 'Henry Glover, Carolyn Leigh, Lucky Millinder'
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

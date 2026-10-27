@@ -1,11 +1,16 @@
 id: ashamed-to-own-the-blessed-savior-1
 title: Ashamed To Own The Blessed Savior
+song: ashamed-to-own-the-blessed-savior
+version: '2'
 artist: Jim and Jesse
 composers:
 - John Bailes and Walter Bailes
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

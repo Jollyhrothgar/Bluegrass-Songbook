@@ -1,5 +1,7 @@
 id: i-m-counting-on-you-1
 title: I'm Counting on you
+song: i-m-counting-on-you
+version: '2'
 artist: Elvis Presley
 composers:
 - Don Robertson
@@ -10,6 +12,9 @@ tags:
 - Pop
 - Gospel
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

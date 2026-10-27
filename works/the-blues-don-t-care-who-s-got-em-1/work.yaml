@@ -1,5 +1,7 @@
 id: the-blues-don-t-care-who-s-got-em-1
 title: The Blues Don't Care Who's Got 'Em
+song: the-blues-don-t-care-who-s-got-em
+version: '2'
 artist: Reba McEntire
 composers:
 - Wayland D. Holyfield and Dickey Lee
@@ -7,6 +9,9 @@ default_key: C
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

@@ -1,8 +1,13 @@
 id: worried-man-blues-1
 title: Worried Man Blues
+song: worried-man-blues
+version: '2'
 artist: Pete Seeger
 default_key: G
 tags: []
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

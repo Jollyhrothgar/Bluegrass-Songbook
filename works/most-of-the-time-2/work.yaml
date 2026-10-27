@@ -1,5 +1,7 @@
 id: most-of-the-time-2
 title: Most Of The Time
+song: most-of-the-time
+version: '2'
 artist: Marty Robbins
 composers:
 - Lee Emerson
@@ -7,6 +9,9 @@ default_key: C
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

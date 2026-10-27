@@ -1,11 +1,16 @@
 id: a-precious-jewel
 title: A Precious Jewel
+song: precious-jewel
+version: '2'
 artist: Hank Locklin
 composers:
 - Roy Acuff
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

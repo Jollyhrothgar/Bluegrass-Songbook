@@ -135,7 +135,7 @@ Bluegrass-Songbook/
 ├── docs/                    # Frontend (GitHub Pages)
 │   ├── index.html           # Search UI + song editor
 │   ├── blog.html            # Redirect to the dev blog on mikebeaumier.com
-│   ├── songs/{id}/          # GENERATED static page per searchable song (+ sitemap.xml)
+│   ├── songs/{song}/        # GENERATED per-song (and /{version}/) app page, chart pre-rendered (+ sitemap.xml, 404.html)
 │   ├── js/                  # ES modules
 │   │   ├── main.js          # Entry point, initialization, routing
 │   │   ├── shell.js         # App shell: top band, bottom band, pill primitive
@@ -294,6 +294,20 @@ parts:
       source_file: bluemoonofkentuckylyricschords.pro
       imported_at: '2026-01-02'
 ```
+
+**Songs and versions.** A work is its own song unless it says otherwise:
+
+```yaml
+song: a-hundred-years-from-now   # this work is a version of that song (its root work id)
+version: '2'                     # its URL: /songs/a-hundred-years-from-now/2/
+slug: blue-moon-of-kentucky      # (on a song's root only) its URL name, when the work id would mislead
+```
+
+Recorded once, never recomputed: `scripts/lib/seed_songs.py` seeded them
+(2026-10-26) on evidence only — matching lyrics, curation pins, merge
+redirects; a version is named for what it provably is (`2`, `banjo-tab`),
+**never** the scraped `artist`. Fix one by editing the work.yaml. The build
+turns them into URLs and version groups (`build_works_index.apply_songs`).
 
 **Part types** in the corpus today: `lead-sheet` (the overwhelming majority),
 `tablature`, and a single legacy `document`. There is no `abc-notation` part
@@ -506,7 +520,7 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 - **Tags**: Genre (Bluegrass, ClassicCountry, etc.), Vibe (JamFriendly, Modal), Instrument (tag:fiddle, tag:banjo) - primary source is LLM tagging, with MusicBrainz and grassiness scoring as fallbacks
 - **User accounts**: Google OAuth via Supabase, cloud-synced lists
 - **Song versions**: Multiple arrangements with voting via the Arrangement pill; editorial curation (canonical/variant pins) in `curation/registry.yaml`
-- **URL stability**: Work URLs (`#work/{slug}`) are permanent; legacy `#song/{id}` URLs redirect
+- **Song URLs**: a song lives at `/songs/{song}/`, its versions at `/songs/{song}/{version}/` (work.yaml `song:` / `version:` / `slug:`; see "Song paths" in `docs/js/CLAUDE.md`). Work ids stay permanent as data keys (lists, votes, pending edits); `#work/{slug}` still routes
 - **App shell UI**: slim top band + bottom band + pill controls (`docs/js/shell.js`); one unified song page (`work-view.js` / `openWork`); auto-hiding chrome (`body.chrome-hidden`) instead of a focus mode
 
 **Recent additions (Jan-Feb 2026):**

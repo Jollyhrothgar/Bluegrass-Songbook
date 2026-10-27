@@ -1,7 +1,12 @@
 id: the-burden-of-freedom
 title: The Burden of Freedom
+song: burden-of-freedom
+version: '2'
 artist: Kris Kristofferson
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

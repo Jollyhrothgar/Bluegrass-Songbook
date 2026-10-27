@@ -1,11 +1,16 @@
 id: mother-s-prayer
 title: Mother's Prayer
+song: mothers-prayer
+version: '2'
 artist: Eddy Arnold
 composers:
 - Wally Fowler
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

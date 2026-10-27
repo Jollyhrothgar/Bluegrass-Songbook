@@ -1,11 +1,16 @@
 id: beyond-the-last-mile-1
 title: Beyond The Last Mile
+song: beyond-the-last-mile
+version: '2'
 artist: Johnny Paycheck
 composers:
 - Rex Griffin
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

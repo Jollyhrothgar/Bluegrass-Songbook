@@ -1,9 +1,14 @@
 id: i-do-my-swinging-at-home-1
 title: I Do My Swinging At Home
+song: i-do-my-swinging-at-home
+version: '2'
 artist: David Houston
 composers:
 - Billy Sherrill
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

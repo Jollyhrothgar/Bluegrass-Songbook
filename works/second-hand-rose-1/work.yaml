@@ -1,11 +1,16 @@
 id: second-hand-rose-1
 title: Second Hand Rose
+song: second-hand-rose
+version: '2'
 artist: Roy Drusky
 composers:
-- Grant Clarke, James Hanley & Harlan Howard
+- 'Grant Clarke, James Hanley & Harlan Howard'
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

@@ -1,7 +1,15 @@
 id: don-t-this-road-look-rough-and-rocky
 title: Don't This Road Look Rough And Rocky
+song: dont-this-road-look-rough-and-rocky
+version: '2'
 artist: Earl Scruggs and Lester Flatt
+composers:
+- Lester Flatt
+- Earl Scruggs
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -11,6 +19,3 @@ parts:
     source: classic-country
     source_file: dontthisroadlookroughandrockylyricschords.pro
     imported_at: '2026-07-26'
-composers:
-- Lester Flatt
-- Earl Scruggs

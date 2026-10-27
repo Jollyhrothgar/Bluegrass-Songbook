@@ -1,9 +1,14 @@
 id: the-band-keeps-playing
 title: The Band Keeps Playing
+song: band-keeps-playing-on
+version: '2'
 artist: Buck Owens
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

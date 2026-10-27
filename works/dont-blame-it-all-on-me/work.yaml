@@ -1,5 +1,17 @@
 id: dont-blame-it-all-on-me
 title: Don’t Blame It All On Me
+song: don-t-blame-it-all-on-me
+version: '2'
+artist: Mac Wiseman
+composers:
+- Curt Barrett and Charles Wilkens
+default_key: D
+tags:
+- JamFriendly
+- Modal
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -9,10 +21,3 @@ parts:
     source: bluegrass-lyrics
     source_url: https://www.bluegrasslyrics.com/song/dont-blame-it-all-on-me/
     imported_at: '2026-02-08'
-tags:
-- JamFriendly
-- Modal
-default_key: D
-artist: Mac Wiseman
-composers:
-- Curt Barrett and Charles Wilkens

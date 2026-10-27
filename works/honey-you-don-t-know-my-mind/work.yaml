@@ -1,10 +1,15 @@
 id: honey-you-don-t-know-my-mind
 title: Honey You Don't Know My Mind
+song: honey-you-dont-know-my-mind
+version: '2'
 artist: Jimmy Martin
 default_key: G
 tags:
 - Bluegrass
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

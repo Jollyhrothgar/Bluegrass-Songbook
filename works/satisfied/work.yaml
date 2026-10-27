@@ -1,11 +1,16 @@
 id: satisfied
 title: Satisfied
+song: satisfied-1
+version: '2'
 artist: Gene Watson
 composers:
 - Martha Carson
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

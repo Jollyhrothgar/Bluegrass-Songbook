@@ -1,9 +1,17 @@
 id: big-spike-hammer-1
 title: Big Spike Hammer
-artist: Bobby Osborne, Pete Goble
+song: big-spike-hammer
+version: '2'
+artist: 'Bobby Osborne, Pete Goble'
+composers:
+- Bobby Osborne
+- Pete Goble
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -12,6 +20,3 @@ parts:
   provenance:
     source: golden-standard
     imported_at: '2026-01-02'
-composers:
-- Bobby Osborne
-- Pete Goble

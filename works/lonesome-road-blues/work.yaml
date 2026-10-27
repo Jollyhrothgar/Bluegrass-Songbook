@@ -1,5 +1,12 @@
 id: lonesome-road-blues
 title: Lonesome Road Blues
+song: lonesome-road-blues-1
+version: '2'
+composers:
+- Traditional
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -9,5 +16,3 @@ parts:
     source: bluegrass-lyrics
     source_url: https://www.bluegrasslyrics.com/song/lonesome-road-blues/
     imported_at: '2026-02-08'
-composers:
-- Traditional

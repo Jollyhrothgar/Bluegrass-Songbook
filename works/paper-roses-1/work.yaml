@@ -1,9 +1,14 @@
 id: paper-roses-1
 title: Paper Roses
+song: paper-roses
+version: '2'
 artist: Marie Osmond
 composers:
 - Janice Torre and Frd Spielman
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

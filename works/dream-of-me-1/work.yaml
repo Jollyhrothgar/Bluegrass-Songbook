@@ -1,12 +1,17 @@
 id: dream-of-me-1
 title: Dream Of Me
+song: dream-of-me
+version: '2'
 artist: The Oak Ridge Boys
 composers:
-- Buddy Cannon, Jimmy D Null, Raleigh J Squires
+- 'Buddy Cannon, Jimmy D Null, Raleigh J Squires'
 default_key: G
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

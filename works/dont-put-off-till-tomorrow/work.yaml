@@ -1,11 +1,16 @@
 id: dont-put-off-till-tomorrow
 title: Don’t Put Off Till Tomorrow
+song: dont-put-off-til-tomorrow
+version: '2'
 artist: The Shady Grove Band
 composers:
 - Bill Monroe and Pete Pyle
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

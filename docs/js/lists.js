@@ -3432,7 +3432,7 @@ function openShareModal(shareId) {
     localContent?.classList.add('hidden');
 
     // Set the view link
-    const shareUrl = `${window.location.origin}${window.location.pathname}#list/${shareId}`;
+    const shareUrl = `${window.location.origin}/#list/${shareId}`;
     if (viewLinkInput) viewLinkInput.value = shareUrl;
 
     // Determine if user is owner (can generate invites)
@@ -3518,7 +3518,7 @@ function initShareModal() {
             }
 
             // Build invite URL (data contains { status, token, invite_id, expires_at })
-            const inviteUrl = `${window.location.origin}${window.location.pathname}#invite/${result.data.token}`;
+            const inviteUrl = `${window.location.origin}/#invite/${result.data.token}`;
 
             // Show the invite link
             const inviteActions = document.getElementById('share-invite-actions');

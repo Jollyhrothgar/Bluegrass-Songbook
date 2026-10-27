@@ -1,5 +1,7 @@
 id: it-hurt-me-so-1
 title: It Hurt Me So
+song: it-hurt-me-so
+version: '2'
 artist: Charlie Rich
 composers:
 - Charlie Rich and William E. Justis Jr.
@@ -8,6 +10,9 @@ tags:
 - ClassicCountry
 - Rockabilly
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

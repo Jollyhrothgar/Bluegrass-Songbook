@@ -1,11 +1,16 @@
 id: little-old-log-cabin-in-the-lane
 title: Little Old Log Cabin In The Lane
+song: little-log-cabin-in-the-lane
+version: '2'
 artist: Jim and Jesse
 composers:
 - Will S. Hays
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

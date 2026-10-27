@@ -1,9 +1,14 @@
 id: i-ll-meet-you-in-the-morning
 title: I'll Meet You In The Morning
+song: ill-meet-you-in-the-morning
+version: '2'
 artist: Webb Pierce
 composers:
 - Albert E. Brumley
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

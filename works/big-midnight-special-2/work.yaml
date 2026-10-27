@@ -1,11 +1,16 @@
 id: big-midnight-special-2
 title: Big Midnight Special
+song: big-midnight-special
+version: '2'
 artist: Jean Shepard
 composers:
 - Wilma Lee Cooper
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

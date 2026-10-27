@@ -1,9 +1,14 @@
 id: tall-oak-tree-1
 title: Tall Oak Tree
+song: tall-oak-tree
+version: '2'
 artist: Dorsey Burnette
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

@@ -1,5 +1,7 @@
 id: good-imitation-of-the-blues-1
 title: Good Imitation Of The Blues
+song: good-imitation-of-the-blues
+version: '2'
 artist: Larry Sparks
 composers:
 - Patrick Brayer
@@ -8,6 +10,9 @@ tags:
 - Bluegrass
 - Folk
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

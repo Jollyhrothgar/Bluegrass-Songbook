@@ -1,5 +1,7 @@
 id: ducks-on-millpond
 title: Ducks on Millpond
+song: ducks-on-the-millpond
+version: banjo-tab
 artist: null
 composers:
 - Traditional
@@ -7,12 +9,15 @@ default_key: null
 tags:
 - Instrumental
 - Clawhammer
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: tablature
-  instrument: banjo
   format: otf
   file: banjo.otf.json
   default: true
+  instrument: banjo
   provenance:
     source: banjo-hangout
     source_id: '13654'

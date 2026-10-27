@@ -1,11 +1,15 @@
 id: i-won-t-be-back-tonight-1
 title: I Won't Be Back Tonight
+slug: i-won-t-be-back-tonight
 artist: Jody Nix
 composers:
 - Artie Glenn
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

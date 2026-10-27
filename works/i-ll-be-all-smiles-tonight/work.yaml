@@ -1,11 +1,16 @@
 id: i-ll-be-all-smiles-tonight
 title: I'll Be All Smiles Tonight
+song: ill-be-all-smiles-tonight
+version: '2'
 artist: The Cox Family
 composers:
 - A.P. Carter
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

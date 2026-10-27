@@ -1,9 +1,17 @@
 id: sitting-on-top-of-the-world
 title: Sitting On Top Of The World
-artist: Walter Vinson, Lonnie Chatmon
+song: sittin-on-top-of-the-world
+version: '2'
+artist: 'Walter Vinson, Lonnie Chatmon'
+composers:
+- Walter Vinson
+- Lonnie Chatmon
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -12,6 +20,3 @@ parts:
   provenance:
     source: golden-standard
     imported_at: '2026-01-02'
-composers:
-- Walter Vinson
-- Lonnie Chatmon

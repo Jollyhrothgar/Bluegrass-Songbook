@@ -1,12 +1,17 @@
 id: you-were-only-fooling-1
 title: You Were Only Fooling
+song: you-were-only-fooling
+version: '2'
 artist: Connie Francis
 composers:
-- Larry Fotine, Billy Faber, Fred Meadows
+- 'Larry Fotine, Billy Faber, Fred Meadows'
 default_key: G
 tags:
 - Pop
 - Modal
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

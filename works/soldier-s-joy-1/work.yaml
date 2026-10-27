@@ -1,12 +1,19 @@
 id: soldier-s-joy-1
 title: Soldier's Joy
+song: soldier-s-joy
+version: '2'
 artist: Traditional
+composers:
+- Traditional
 default_key: A
 tags:
 - Instrumental
 - OldTime
 - Bluegrass
 - Scruggs
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -16,10 +23,10 @@ parts:
     source: tunearch
     imported_at: '2026-01-02'
 - type: tablature
-  instrument: tenor-banjo
   format: otf
   file: tenor-banjo.otf.json
   default: true
+  instrument: tenor-banjo
   provenance:
     source: banjo-hangout
     source_id: '12124'
@@ -30,5 +37,3 @@ parts:
     tef_time_sig: 4/4
     tef_tracks: 2
     tef_events: 126
-composers:
-- Traditional

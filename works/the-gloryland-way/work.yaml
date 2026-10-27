@@ -1,9 +1,14 @@
 id: the-gloryland-way
 title: The Gloryland Way
+song: gloryland-way
+version: '2'
 artist: Doyle Lawson
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

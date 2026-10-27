@@ -1,11 +1,16 @@
 id: dark-moon-1
 title: Dark Moon
+song: dark-moon
+version: '2'
 artist: Jim Reeves
 composers:
 - Ned Miller
 default_key: D
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

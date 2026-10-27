@@ -1,11 +1,16 @@
 id: i-just-lost-my-favorite-girl-1
 title: I Just Lost My Favorite Girl
+song: i-just-lost-my-favorite-girl
+version: '2'
 artist: Darrell McCall
 composers:
 - Don Adams
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

@@ -1,5 +1,7 @@
 id: stranger-2
 title: Stranger
+song: stranger
+version: '2'
 artist: Kris Kristofferson
 default_key: G
 tags:
@@ -7,6 +9,9 @@ tags:
 - Outlaw
 - Folk
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

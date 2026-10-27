@@ -1,9 +1,14 @@
 id: blue-velvet-1
 title: Blue Velvet
+song: blue-velvet
+version: '2'
 artist: Bobby Vinton
 composers:
 - Bernie Wayne/Lee Morris
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

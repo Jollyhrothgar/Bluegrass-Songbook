@@ -1,11 +1,16 @@
 id: don-t-let-smokey-mountain-smoke-get-in-your-eyes
 title: Don't Let Smokey Mountain Smoke Get In Your Eyes
+song: dont-let-smokey-mountain-smoke-get-in-your-eyes
+version: '2'
 artist: The Osborne Brothers
 composers:
 - Cecil Allen Null
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

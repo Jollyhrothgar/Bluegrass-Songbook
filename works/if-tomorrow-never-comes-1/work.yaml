@@ -1,11 +1,15 @@
 id: if-tomorrow-never-comes-1
 title: If Tomorrow Never Comes
+slug: if-tomorrow-never-comes
 artist: Charley Pride
 composers:
 - Garth Brooks and Kent Biazy
 default_key: C
 tags:
 - ClassicCountry
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

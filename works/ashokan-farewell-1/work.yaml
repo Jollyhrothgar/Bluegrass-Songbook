@@ -1,5 +1,6 @@
 id: ashokan-farewell-1
 title: Ashokan Farewell
+slug: ashokan-farewell
 artist: Traditional
 composers:
 - Jay Ungar
@@ -8,6 +9,9 @@ tags:
 - OldTime
 - Folk
 - Clawhammer
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -17,9 +21,9 @@ parts:
     source: tunearch
     imported_at: '2026-01-02'
 - type: tablature
-  instrument: banjo
   format: otf
   file: banjo.otf.json
+  instrument: banjo
   provenance:
     source: banjo-hangout
     source_id: '13648'
@@ -27,9 +31,9 @@ parts:
     author: Ian_banjo
     imported_at: '2026-07-08'
 - type: tablature
-  instrument: guitar
   format: otf
   file: guitar.otf.json
+  instrument: guitar
   provenance:
     source: flatpicker-hangout
     source_id: '3145'
@@ -37,9 +41,9 @@ parts:
     author: Live on What You Grow
     imported_at: '2026-07-26'
 - type: tablature
-  instrument: mandolin
   format: otf
   file: mandolin.otf.json
+  instrument: mandolin
   provenance:
     source: mandolin-hangout
     source_id: '3020'
@@ -47,9 +51,9 @@ parts:
     author: MandoTom2
     imported_at: '2026-07-26'
 - type: tablature
-  instrument: banjo
   format: otf
   file: banjo-27756.otf.json
+  instrument: banjo
   provenance:
     source: banjo-hangout
     source_id: '27756'

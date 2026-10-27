@@ -1,9 +1,14 @@
 id: it-s-not-for-me-to-understand-1
 title: It's Not For Me To Understand
+song: it-s-not-for-me-to-understand
+version: '2'
 artist: Jack Greene
 composers:
 - Willie Nelson
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

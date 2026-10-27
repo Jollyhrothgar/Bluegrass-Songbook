@@ -1,11 +1,16 @@
 id: softly-and-tenderly-1
 title: Softly And Tenderly
+song: softly-and-tenderly
+version: '2'
 artist: Jim Reeves
 composers:
 - Will L. Thompson
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

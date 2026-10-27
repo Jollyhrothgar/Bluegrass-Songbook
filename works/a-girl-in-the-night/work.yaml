@@ -1,10 +1,15 @@
 id: a-girl-in-the-night
 title: A Girl In The Night
+song: girl-in-the-night
+version: '2'
 artist: Hank Thompson
 default_key: C
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

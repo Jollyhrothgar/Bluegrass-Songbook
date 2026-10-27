@@ -1,5 +1,7 @@
 id: put-it-off-until-tomorrow-1
 title: Put It Off Until Tomorrow
+song: put-it-off-until-tomorrow
+version: '2'
 artist: Dolly Parton
 composers:
 - Dolly Parton and Bill Owens
@@ -9,6 +11,9 @@ tags:
 - Bluegrass
 - Pop
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
