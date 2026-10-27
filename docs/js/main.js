@@ -17,6 +17,7 @@ import {
     historyInitialized,
     setBootRouteClaimed,
     canRouteBootUrl,
+    SONG_PATH, songHref, songIdForPath, currentHref,
     loadViewPrefs,
     userLists,
     compactMode,
@@ -396,7 +397,7 @@ function pushHistoryState(view, data = {}, replace = false) {
             if (data.listId) {
                 hash = `#list/${data.listId}/${data.songId}`;
             } else {
-                hash = `#work/${data.songId}`;
+                hash = songHref(data.songId);
             }
             break;
         case 'edit':
@@ -442,7 +443,8 @@ function pushHistoryState(view, data = {}, replace = false) {
             break;
     }
 
-    const url = hash || window.location.pathname;
+    // Absolute: a hash route written from a song's path must land on the root.
+    const url = hash.startsWith('/') ? hash : `/${hash}`;
     if (replace) {
         history.replaceState(state, '', url);
     } else {
@@ -587,6 +589,12 @@ function initViewSubscription() {
     subscribe('currentView', (view) => {
         const leftEditor = previousView === 'add-song' && view !== 'add-song';
         previousView = view;
+
+        // Off a song page the URL belongs to the root: a hash route set while
+        // on a song's path (/songs/x/#search) becomes /#search.
+        if (view !== 'song' && SONG_PATH.test(window.location.pathname)) {
+            history.replaceState(history.state, '', `/${window.location.hash}`);
+        }
 
         // Tear down live tablature state when LEAVING the song page: stops
         // audio (including an in-flight soundfont load), destroys the edit
@@ -1066,9 +1074,36 @@ async function resumeAfterAuthRedirect({ signedIn }) {
     }
 }
 
+/**
+ * A song's own address: /songs/{song}/ or /songs/{song}/{version}/. The
+ * static page there (scripts/lib/build_song_pages.py) is this app with the
+ * chart pre-rendered; 404.html is the same app for an archived song, which
+ * has no page. The path names a row's `path`, so the corpus has to be in to
+ * resolve it — the archive too, when the song isn't in the canon.
+ */
+function routeSongPath() {
+    const pathname = window.location.pathname;
+    if (!SONG_PATH.test(pathname)) return false;
+    trackDeepLink('song-path', pathname);
+    (async () => {
+        let workId = songIdForPath(pathname);
+        if (!workId && window.ensureArchiveLoaded) {
+            await window.ensureArchiveLoaded();
+            workId = songIdForPath(pathname);
+        }
+        if (window.location.pathname !== pathname) return;   // moved on meanwhile
+        // No such song: the not-found page (with its same-title suggestions)
+        // for the slug the path named.
+        workId = workId || pathname.split('/')[2];
+        history.replaceState({ view: 'song', songId: workId }, '', pathname);
+        openWork(workId, { fromDeepLink: true });
+    })();
+    return true;
+}
+
 function handleDeepLink() {
     const hash = window.location.hash;
-    if (!hash) return false;
+    if (!hash) return routeSongPath();
 
     // Dungeon chrome persists only on dungeon and song URLs — every other
     // destination drops back to the canon scope
@@ -1113,16 +1148,17 @@ function handleDeepLink() {
         if (pathParts[1] === 'parts' && pathParts[2]) {
             // Legacy URL: #work/{id}/parts/{partId} → redirect to #work/{id}/{partId}
             partId = pathParts[2];
-            history.replaceState(null, '', `#work/${workId}/${partId}`);
+            history.replaceState(null, '', `/#work/${workId}/${partId}`);
         } else {
             partId = pathParts[1]; // undefined if just #work/{id}
         }
 
         // Update URL if redirected to canonical slug
-        if (workId !== pathParts[0] && !partId) {
-            history.replaceState(null, '', `#work/${workId}`);
-        } else if (workId !== pathParts[0] && partId) {
-            history.replaceState(null, '', `#work/${workId}/${partId}`);
+        // and show a song at its own path (/songs/…) when it has one.
+        if (!partId) {
+            history.replaceState({ view: 'song', songId: workId }, '', songHref(workId));
+        } else if (workId !== pathParts[0]) {
+            history.replaceState(null, '', `/#work/${workId}/${partId}`);
         }
         trackDeepLink('work', hash);
         // #work/ URLs always show the work dashboard — it's an explicit request
@@ -1132,7 +1168,7 @@ function handleDeepLink() {
         // Legacy song URLs: #song/{id} → resolve to the work and rewrite
         // the URL to the canonical #work/{slug} form (page is unified).
         const songId = resolveWorkId(hash.slice(6));
-        history.replaceState({ view: 'song', songId }, '', `#work/${songId}`);
+        history.replaceState({ view: 'song', songId }, '', songHref(songId));
         trackDeepLink('song', hash);
         openWork(songId, { fromDeepLink: true, exact: true });
         return true;
@@ -1822,7 +1858,7 @@ async function loadIndex() {
         if (canRouteBootUrl()) {
             if (!handleDeepLink()) {
                 showView('home');
-                history.replaceState({ view: 'home' }, '', window.location.pathname);
+                history.replaceState({ view: 'home' }, '', '/');
             }
         }
         // The cards belong to the home view: a visitor headed for a song never
@@ -3315,6 +3351,20 @@ function init() {
             markHandled();
             handleHistoryNavigation(state);
         }, 0);
+    });
+
+    // On a song's path, the page's <base href="/"> turns every `#…` link
+    // into a link to the root ('/#search'), which the browser would load as
+    // a new page. Navigate in place instead: same URL, no reload. Links
+    // whose own handler already acted (preventDefault) are left alone.
+    document.addEventListener('click', (e) => {
+        if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey
+            || e.shiftKey || e.altKey || window.location.pathname === '/') return;
+        const link = e.target.closest?.('a[href^="#"]');
+        if (!link || link.target === '_blank') return;
+        e.preventDefault();
+        history.pushState(null, '', `/${link.getAttribute('href')}`);
+        window.dispatchEvent(new HashChangeEvent('hashchange'));
     });
 
     // Handle hash changes that don't trigger popstate (e.g. manual URL edits)

@@ -9,7 +9,8 @@ docs/
 ├── index.html          # Page structure, modals (chrome is built by js/shell.js)
 ├── blog.html           # Redirect: the dev blog moved to mikebeaumier.com (G1)
 ├── robots.txt / sitemap.xml # sitemap is GENERATED with songs/ (scripts/lib/build_song_pages.py)
-├── songs/{id}/         # GENERATED static, indexable page per searchable song (links into #work/{id})
+├── songs/{song}/[{version}/] # GENERATED: index.html + the pre-rendered chart (scripts/lib/build_song_pages.py)
+├── 404.html            # GENERATED: index.html as is — boots the app for a song path with no page (archived)
 ├── manifest.webmanifest # PWA manifest (install, shortcuts, .tef/.otf.json file handlers)
 ├── sw.js               # Service worker — a shell around js/sw-strategy.js
 ├── js/
@@ -141,9 +142,11 @@ content, and the shell's top/bottom bands for actions and playback.
 - **One renderer**: ChordPro parsing/rendering is shared from
   `renderers/chordpro.js` (`parseChordPro` is re-exported by song-view.js for
   compatibility).
-- **Routing**: `#work/{slug}` (optionally `#work/{slug}/{partId}`) is the
-  canonical URL. Legacy `#song/{id}` URLs resolve to the work and are
-  rewritten with `history.replaceState`. List-context pages keep
+- **Routing**: a song's address is its PATH, `/songs/{song}/` or
+  `/songs/{song}/{version}/` (the row's `path`; see "Song paths" below).
+  `#work/{slug}` still routes (and is rewritten to the path); a part
+  (`#work/{slug}/{partId}`) and the editor modes stay hash routes. Legacy
+  `#song/{id}` URLs resolve to the work. List-context pages keep
   `#list/{listId}/{workId}` URLs.
 - **The tab editor is a MODE of this page, addressed by URL** (plan §9):
   `#work/{slug}/edit/{take}`, `#work/{slug}/add-tab?instrument=`, and
@@ -338,7 +341,10 @@ instead of the group representative.
 
 URL forms:
 
-- `#work/{slug}` — canonical song URL (`#work/{slug}/{partId}` for a part)
+- `/songs/{song}/` and `/songs/{song}/{version}/` — a song and one of its
+  versions (see "Song paths" below)
+- `#work/{slug}` — routes to the work and is rewritten to its path
+  (`/#work/{slug}/{partId}` for a part, which stays a hash route)
 - `#work/{slug}/edit/{take}` — that take open in the editor. `{take}` is the
   take's own NAME (its `src_file` stem, e.g. `banjo-18967`), never an index:
   curation pins re-sort takes between builds. `takeRefs` accepts the
@@ -349,8 +355,41 @@ URL forms:
   page (title/artist are inputs in the title slot); submitting mints the work
   and the hash becomes `#work/{id}` without a reload
 - `#song/{id}` — legacy; resolved via `resolveWorkId()` and rewritten to
-  `#work/{slug}` with `history.replaceState`
+  the song's path with `history.replaceState`
 - `#list/{listId}/{workId}` — list-context pages keep list URLs
+
+### Song paths
+
+Every work is a song (`/songs/{work id}/`) unless its `work.yaml` names
+another work as its song (`song:` + `version:`), which makes it a version
+(`/songs/{song}/{version}/`); a song root may carry `slug:` when its id would
+mislead (`2402`, an orphaned `-1`). The build turns that into each row's
+`path` (`build_works_index.apply_songs`) and makes the row's version group
+its song (`group_id: song:{root}`, `canonical` / `variant_of`), so the
+Arrangement pill lists exactly the song's versions. Votes are counted by
+work id (`fetchGroupVotes(songIds)`) so regrouping never strands them.
+
+How the app does it, all in `main.js` + `state.js` (`SONG_PATH`,
+`songHref`, `songIdForPath`, `currentHref`):
+
+- **`<base href="/">` in index.html** — every relative URL and every
+  `fetch('data/…')` resolves from the root whatever path is showing. Without
+  it, opening a song at `/songs/x/` fetched `/songs/x/data/songs/x.pro`.
+- **Booting on a path**: `handleDeepLink` → `routeSongPath()` resolves the
+  path against row `path`s (loading the archive if the canon lacks it) and
+  calls `openWork`. A path nothing matches gets the not-found page.
+- **Writing URLs**: a song is shown at `songHref(id)` (its path, else
+  `/#work/{id}`); every other history entry is written ABSOLUTE (`/#search`),
+  so a hash route never inherits a song's path. Compare with
+  `currentHref()` (path + hash), not `location.hash`.
+- **Leaving a song**: the `currentView` subscriber normalizes
+  `/songs/x/#search` to `/#search`, and a document click handler turns a `#…`
+  link on a song path into an in-place navigation (the base would otherwise
+  make it a full load of `/`).
+- **Pages**: `scripts/lib/build_song_pages.py` writes each song and version
+  as `index.html` at its path (song pages indexed, version pages canonical
+  to their song) and `404.html` for everything else; `scripts/server` serves
+  `404.html` for unknown paths like GitHub Pages does.
 
 **`create.html` is a redirect shim** (`?work=x&instrument=y` →
 `index.html#work/x/add-tab?instrument=y`; bare → `#new-tab`; `?draft=d-1`
@@ -616,7 +655,8 @@ mechanical shell around it, which is why the table is unit-tested
 | `*.supabase.co`, any non-GET, other third parties (analytics, the abcjs / supabase-js CDN bundles), non-http schemes | **bypass** | — | Not ours. No `respondWith`, so the request is untouched. |
 
 A navigation that misses the cache offline falls back to `./index.html` —
-every route is a hash route, so the shell can serve any of them.
+its `<base href="/">` and path routing let the shell serve any route,
+`/songs/…` included.
 
 **Why the shell is network-first with a timeout, not stale-while-revalidate.**
 There is no build step and no content hashing, so one deploy changes dozens of
@@ -794,10 +834,20 @@ drop zone opt out with `data-file-drop`.
 
 ### Icons
 
-`scripts/lib/make_pwa_icons.py` (Pillow, `uv run python …`) flattens
-`images/banjo.png` onto the light `--bg` and writes `icon-192.png`,
-`icon-512.png` and `icon-maskable-512.png` (art inset to the 80% safe zone).
-Re-run it when the logo changes; nothing in the build calls it.
+Every icon (favicons, `favicon.ico`, `apple-touch-icon.png`, and the PWA
+manifest's `icon-192.png` / `icon-512.png` / `icon-maskable-512.png`) is
+rendered from the BB monogram in `images/favicon.svg` by
+`scripts/lib/make_icons.py` (`uv run --with resvg-py python …`). The maskable
+icon is full-bleed black with the art inset to the 80% safe zone. Re-run it
+when the logo changes; nothing in the build calls it.
+
+Pages link the PNGs, never `favicon.svg`: a browser rasterizes an SVG favicon
+itself, plainly, and white-on-black detail goes muddy at tab size. The
+script's docstring explains how it renders the small sizes (linear-light
+averaging, slight boldening, grid fitting). Every page also needs a 48px
+multiple and an `apple-touch-icon` — Google Search picks its result icon
+from those, and once chose the old banjo app icon over the favicon
+(`tests/test_favicons.py`).
 
 ## Testing
 
@@ -1038,8 +1088,10 @@ slug (`needsLegacyMapping`); ids the map was checked against and did not
 translate are remembered (`songbook-legacy-checked`).
 
 **Version fields** (for alternate arrangements):
-- `group_id`: Links songs that are versions of each other (stable `grp:` ids
-  for curated groups)
+- `group_id`: the work's song, `song:{root work id}` (from work.yaml
+  `song:`; see "Song paths"). Versions of one song share it
+- `path`: the work's URL path, `songs/{song}/` or `songs/{song}/{version}/`
+- `version` / `version_of`: on a version, its slug and its song's root work
 - `version_label`: Display name ("Simplified", "Original", etc.)
 - `version_type`: Category (alternate, cover, simplified, live)
 - `arrangement_by`: Who created this arrangement

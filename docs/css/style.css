@@ -1582,6 +1582,32 @@ h1 {
     padding: 1.25rem;
 }
 
+/* The chart a song's search-engine page (/songs/{id}/) carries in its HTML,
+   built by scripts/lib/build_song_pages.py. Shown until the app boots and
+   openWork() replaces it, so it borrows the song page's look. */
+.prerender h1 { font-size: 1.5rem; font-weight: 600; margin: 0 0 0.5rem; }
+.prerender .by,
+.prerender .facts,
+.prerender .rights { color: var(--text-secondary); font-size: 0.9rem; margin: 0 0 0.25rem; }
+.prerender .open { display: inline-block; margin: 0.75rem 0 0.5rem; color: var(--accent); }
+.prerender h2 {
+    color: var(--text-secondary); font-size: 0.85rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.04em; margin: 1.25rem 0 0.25rem;
+}
+.prerender pre {
+    font-family: 'SF Mono', Menlo, Consolas, monospace; font-size: 0.95rem;
+    line-height: 1.45; white-space: pre; overflow-x: auto; margin: 0;
+}
+.prerender .ch { color: var(--chord); font-weight: 600; }
+.prerender .note { font-style: italic; color: var(--text-secondary); margin: 0.5rem 0; }
+.prerender .rights { margin-top: 1.5rem; }
+.prerender .artists { color: var(--text-secondary); font-size: 0.9rem; margin: 1.5rem 0 0; }
+.prerender .artists a { color: var(--text-secondary); }
+.prerender .artists details { display: inline; }
+.prerender .artists summary { display: inline; cursor: pointer; text-decoration: underline dotted; }
+.prerender .artists details[open] summary { display: none; }
+.prerender .artists details::details-content { display: inline; }
+
 .song-header {
     display: flex;
     justify-content: space-between;

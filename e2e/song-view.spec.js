@@ -138,11 +138,12 @@ test.describe('Song View', () => {
 });
 
 test.describe('Song Navigation', () => {
-    test('deep link to song redirects to the work URL and renders', async ({ page }) => {
+    test('deep link to song redirects to the song\'s path and renders', async ({ page }) => {
         await page.goto('/#song/blue-moon-of-kentucky-1');
 
         await expect(page.locator('#song-view')).toBeVisible({ timeout: 15000 });
-        await expect(page).toHaveURL(/#work\//);
+        // blue-moon-of-kentucky-1's song is named by its work.yaml `slug:`
+        await expect(page).toHaveURL(/\/songs\/blue-moon-of-kentucky\/$/);
     });
 
     test('back button returns to search', async ({ page }) => {

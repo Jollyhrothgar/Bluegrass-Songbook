@@ -20,7 +20,8 @@ import {
     currentView, setCurrentView,
     resolveWorkId,
     getBountiesForWork,
-    subscribe
+    subscribe,
+    songHref, currentHref,
 } from './state.js';
 
 import { deleteAffordance } from './delete-affordance.js';
@@ -577,7 +578,7 @@ export async function openWork(workId, options = {}) {
             workId, allSongs, await loadDeletedSongs());
         if (redirect) {
             if (!fromList && !fromHistory) {
-                history.replaceState({ view: 'song', songId: redirect.id }, '', `#work/${redirect.id}`);
+                history.replaceState({ view: 'song', songId: redirect.id }, '', songHref(redirect.id));
             }
             return openWork(redirect.id, { ...options, fromDeepLink: true, exact: true });
         }
@@ -748,10 +749,10 @@ export async function openWork(workId, options = {}) {
     const partSeg = requestedPartId ? `/${requestedPartId}` : '';
     const effectiveListId = listId || (fromList && listContext ? listContext.listId : null);
     const hash = effectiveListId
-        ? `#list/${effectiveListId}/${workId}${partSeg}`
-        : `#work/${workId}${partSeg}`;
+        ? `/#list/${effectiveListId}/${workId}${partSeg}`
+        : songHref(workId, partSeg);
 
-    if (!fromDeepLink && !fromHistory && window.location.hash !== hash) {
+    if (!fromDeepLink && !fromHistory && currentHref() !== hash) {
         history.pushState(
             { view: 'song', songId: workId, partId: requestedPartId, listId: effectiveListId },
             '', hash);
@@ -936,8 +937,8 @@ function selectPart(part) {
     // Edit/Export applicability can change with the part type
     updateWorkTopBar();
 
-    const hash = `#work/${currentWork.id}/${part.partId}`;
-    if (window.location.hash !== hash) {
+    const hash = `/#work/${currentWork.id}/${part.partId}`;
+    if (currentHref() !== hash) {
         history.pushState({ view: 'song', songId: currentWork.id, partId: part.partId }, '', hash);
     }
 }
@@ -1366,7 +1367,7 @@ async function renderArrangementList(container, versions, voteData = null) {
     if (voteData === null && typeof SupabaseAuth !== 'undefined' && groupId) {
         (async () => {
             try {
-                const { data } = await SupabaseAuth.fetchGroupVotes(groupId);
+                const { data } = await SupabaseAuth.fetchGroupVotes(versions.map(v => v.id));
                 const counts = data || {};
                 const loggedIn = SupabaseAuth.isLoggedIn();
                 let uv = {};
@@ -1957,8 +1958,8 @@ function importTefAsNewTake(instrument, existingCount = 0) {
         startAddTabMode({
             instrument, title: currentWork.title, existingCount, otf,
         });
-        const hash = createTabHref({ workId: currentWork.id, instrument });
-        if (window.location.hash !== hash) {
+        const hash = createTabHref({ workId: currentWork.id, instrument }, '/');
+        if (currentHref() !== hash) {
             history.replaceState(
                 { view: 'song', songId: currentWork.id }, '', hash);
         }
@@ -3023,8 +3024,8 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
         // must come back to the correction in progress, not to the published
         // take it corrects.
         const suffix = draft?.id ? `?draft=${encodeURIComponent(draft.id)}` : '';
-        const hash = `${editTabHref(currentWork.id, ref)}${suffix}`;
-        if (ref && window.location.hash !== hash) {
+        const hash = `${editTabHref(currentWork.id, ref, '/')}${suffix}`;
+        if (ref && currentHref() !== hash) {
             history.replaceState({ view: 'song', songId: currentWork.id, edit: ref }, '', hash);
         }
     }
@@ -3039,8 +3040,8 @@ async function enterTabEditMode(otf, part, container) {
 function restoreWorkHash() {
     if (!currentWork?.id || currentWork.provisional) return;
     const partSeg = activePart?.partId && !activePart.default ? `/${activePart.partId}` : '';
-    const hash = `#work/${currentWork.id}${partSeg}`;
-    if (window.location.hash !== hash) {
+    const hash = songHref(currentWork.id, partSeg);
+    if (currentHref() !== hash) {
         history.replaceState({ view: 'song', songId: currentWork.id }, '', hash);
     }
 }
@@ -3331,7 +3332,7 @@ function landSubmittedTake(result, part, container) {
         currentWork.id = result.workId;
         currentWork.provisional = false;
         history.replaceState(
-            { view: 'song', songId: result.workId }, '', `#work/${result.workId}`);
+            { view: 'song', songId: result.workId }, '', songHref(result.workId));
     } else {
         restoreWorkHash();
     }

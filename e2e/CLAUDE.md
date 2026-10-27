@@ -136,8 +136,9 @@ export dropdown markup, and the mobile bottom sheet. The suite targets:
   `#topbar-overflow-btn` + `#topbar-overflow-menu`. Song pages add
   `#topbar-back`, `#edit-song-btn`, `#list-picker-btn` and the Export pill
   (`#export-pill`).
-- **Unified song page** (`work-view.js`): canonical URL `#work/{slug}`
-  (+ `#work/{slug}/{partId}`); `#song/{id}` permanently redirects via
+- **Unified song page** (`work-view.js`): a song's URL is its path,
+  `/songs/{song}/[{version}/]`; `#work/{slug}` routes there (a part,
+  `/#work/{slug}/{partId}`, stays a hash route); `#song/{id}` permanently redirects via
   `history.replaceState`. Structure: title row (`.song-title`, `#edit-song-btn`),
   `.song-artist-line`, pill row `#song-pill-row` (`#key-pill`, `#display-pill`,
   `#info-pill`, `#arrangement-pill` when the group has >1 version), part tabs
@@ -162,6 +163,7 @@ export dropdown markup, and the mobile bottom sheet. The suite targets:
 | `work-view.spec.js` | Work URL routing, tablature in bottom band, part tabs, playback, and the band collapsing on its own width (container pinned, viewport left wide) |
 | `arrangement-pill.spec.js` | Multi-version groups: pill listing, navigation, vote gating (replaces the old version-picker modal tests) |
 | `navigation.spec.js` | Top-band nav links, deep links, `#song`→`#work` redirect, history |
+| `song-paths.spec.js` | `/songs/{song}/[{version}/]`: boot on a song or version, leave for search without a reload, back/forward, an archived song via 404.html, `#work/` rewritten to the path, unknown song |
 | `landing-page.spec.js` | Collection cards, landing search, URL routing |
 | `boot-data.spec.js` | What boot downloads and when: cards built only for the home view, archive fetched on demand (deep link, Dungeon, lists, promotion rescue), lean pending overlay + content read on open, cached deletions applied before the overlays land, legacy-ID map only for lists that need it |
 | `favorites.spec.js` | Empty state, adding/removing songs, viewing favorites |
@@ -190,7 +192,9 @@ export dropdown markup, and the mobile bottom sheet. The suite targets:
 
 ## Conventions
 
-- Tests use hash-based routing: `/#search`, `/#work/slug`, `/#add`, `/#edit/slug`
+- Tests use hash-based routing (`/#search`, `/#work/slug`, `/#add`,
+  `/#edit/slug`); a song then shows at its path, `/songs/{song}/…`
+  (`song-paths.spec.js`). Assert a song by path or `history.state.songId`
 - Shared helpers live in `e2e/helpers.js`:
   - `gotoSearch(page)` — go to `#search` and wait for the index to load
   - `searchFor(page, q)` / `searchAndOpen(page, q)` — query + open first result
@@ -222,7 +226,9 @@ export dropdown markup, and the mobile bottom sheet. The suite targets:
   `wagon-wheel` (2-version group → arrangement pill),
   `arkansas-traveler-1` (lead sheet + banjo tab → part tabs),
   `foggy-mountain-breakdown` (tab-only, mandolin part),
-  `angeline-the-baker` → `angeline-baker` (legacy slug redirect),
+  `cripple-creek-1` → `cripple-creek` (legacy slug redirect),
+  `house-of-gold` (a song with a version, `/songs/house-of-gold/2/`),
+  `1-1-love` (archived: its path is served by 404.html),
   `abbey-reel-the` (ABC notation),
   `foggy-mountain-breakdown/mandolin` (a published tab to correct),
   `red-haired-boy/ensemble-tab` (six tracks — the multi-track fixture)

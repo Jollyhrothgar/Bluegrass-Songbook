@@ -108,6 +108,33 @@ export function setAllSongs(songs) {
     notifyChange('allSongs');
 }
 
+// ============================================
+// SONG URLS
+// ============================================
+// A song's address is its path: /songs/{song}/ or /songs/{song}/{version}/
+// (the row's `path`, from build_works_index.apply_songs). Everything else —
+// search, lists, a song's parts and editor modes — is a hash route on the
+// root, written absolute ('/#…') so it never inherits a song's path.
+
+export const SONG_PATH = /^\/songs\/[^/]+\/(?:[^/]+\/)?$/;
+
+/** The URL to show for a work: its song path, or `/#work/{id}{suffix}`. */
+export function songHref(workId, suffix = '') {
+    const path = !suffix && allSongs.find(s => s.id === workId)?.path;
+    return path ? `/${path}` : `/#work/${workId}${suffix}`;
+}
+
+/** The work whose song path is `pathname`, if the loaded corpus has it. */
+export function songIdForPath(pathname) {
+    const path = pathname.replace(/^\//, '');
+    return allSongs.find(s => s.path === path)?.id ?? null;
+}
+
+/** Path + hash, comparable with songHref() and other absolute hrefs. */
+export function currentHref() {
+    return window.location.pathname + window.location.hash;
+}
+
 // True when loadIndex()'s fetch/parse of data/index.jsonl threw, leaving
 // allSongs empty. Consumers (search, add-song picker, review-queue merge
 // dialog) read this to tell "corpus failed to load" apart from a genuine

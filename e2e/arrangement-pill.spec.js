@@ -55,8 +55,9 @@ test.describe('Arrangement Pill', () => {
         const otherId = await otherItem.getAttribute('data-song-id');
         await otherItem.click();
 
-        // URL moves to the selected arrangement and the page re-renders
-        await expect(page).toHaveURL(new RegExp(`#work/${otherId}`));
+        // The selected arrangement opens, at its own song path, and re-renders
+        await expect.poll(() => page.evaluate(() => history.state?.songId)).toBe(otherId);
+        await expect(page).toHaveURL(/\/songs\/[^/]+\/(?:[^/]+\/)?$/);
         await expect(page.locator('#song-view')).toBeVisible();
 
         // Reopening the pill now marks the new arrangement as current
