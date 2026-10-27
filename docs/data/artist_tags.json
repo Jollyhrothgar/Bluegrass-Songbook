@@ -11,11 +11,11 @@
       4
     ],
     [
-      "country",
+      "contemporary country",
       2
     ],
     [
-      "contemporary country",
+      "country",
       2
     ]
   ],
@@ -29,11 +29,11 @@
       4
     ],
     [
-      "classic pop and rock",
+      "ccm",
       2
     ],
     [
-      "ccm",
+      "classic pop and rock",
       2
     ],
     [
@@ -63,21 +63,49 @@
   ],
   "Asleep at the Wheel": [
     [
-      "western swing",
+      "country",
       2
     ],
     [
-      "country",
+      "western swing",
       2
+    ]
+  ],
+  "Authentic Unlimited": [
+    [
+      "bluegrass",
+      3
+    ]
+  ],
+  "Avicii": [
+    [
+      "progressive house",
+      13
+    ],
+    [
+      "edm",
+      8
+    ],
+    [
+      "electro house",
+      7
+    ],
+    [
+      "electropop",
+      4
+    ],
+    [
+      "dance-pop",
+      4
     ]
   ],
   "B.J. Thomas": [
     [
-      "pop",
+      "contemporary christian",
       2
     ],
     [
-      "contemporary christian",
+      "pop",
       2
     ],
     [
@@ -109,11 +137,55 @@
       4
     ],
     [
-      "vocal jazz",
+      "pop",
       2
     ],
     [
-      "pop",
+      "vocal jazz",
+      2
+    ]
+  ],
+  "Black Sabbath": [
+    [
+      "heavy metal",
+      49
+    ],
+    [
+      "hard rock",
+      21
+    ],
+    [
+      "metal",
+      13
+    ],
+    [
+      "traditional doom metal",
+      13
+    ],
+    [
+      "proto doom",
+      9
+    ],
+    [
+      "doom metal",
+      6
+    ],
+    [
+      "rock",
+      5
+    ],
+    [
+      "british",
+      4
+    ],
+    [
+      "classic rock",
+      4
+    ]
+  ],
+  "Blackhawk": [
+    [
+      "country",
       2
     ]
   ],
@@ -123,11 +195,11 @@
       12
     ],
     [
-      "folk",
+      "rock",
       8
     ],
     [
-      "rock",
+      "folk",
       8
     ],
     [
@@ -147,11 +219,11 @@
       4
     ],
     [
-      "pop rock",
+      "blues",
       3
     ],
     [
-      "blues",
+      "pop rock",
       3
     ],
     [
@@ -163,6 +235,12 @@
     [
       "rock",
       3
+    ]
+  ],
+  "Bob Wills and His Texas Playboys": [
+    [
+      "western swing",
+      2
     ]
   ],
   "Bobby Darin": [
@@ -197,17 +275,31 @@
       2
     ]
   ],
+  "Bonnie Raitt": [
+    [
+      "blues rock",
+      5
+    ],
+    [
+      "adult contemporary",
+      2
+    ],
+    [
+      "rock",
+      2
+    ]
+  ],
   "Brad Paisley": [
     [
       "country",
       8
     ],
     [
-      "contemporary country",
+      "country rock",
       2
     ],
     [
-      "country rock",
+      "contemporary country",
       2
     ]
   ],
@@ -218,6 +310,48 @@
     ],
     [
       "country",
+      2
+    ]
+  ],
+  "Bruce Springsteen": [
+    [
+      "rock",
+      16
+    ],
+    [
+      "heartland rock",
+      11
+    ],
+    [
+      "americana",
+      7
+    ],
+    [
+      "singer-songwriter",
+      6
+    ],
+    [
+      "american",
+      3
+    ],
+    [
+      "pop rock",
+      3
+    ],
+    [
+      "folk",
+      3
+    ],
+    [
+      "contemporary folk",
+      2
+    ],
+    [
+      "usa",
+      2
+    ],
+    [
+      "rock and roll",
       2
     ]
   ],
@@ -233,6 +367,28 @@
     [
       "rockabilly",
       3
+    ]
+  ],
+  "Buffalo Springfield": [
+    [
+      "folk rock",
+      6
+    ],
+    [
+      "country rock",
+      4
+    ],
+    [
+      "rock",
+      4
+    ],
+    [
+      "psychedelic rock",
+      3
+    ],
+    [
+      "psychedelic folk",
+      2
     ]
   ],
   "Burl Ives": [
@@ -252,6 +408,12 @@
     ],
     [
       "country",
+      2
+    ]
+  ],
+  "Carolina Chocolate Drops": [
+    [
+      "old-time",
       2
     ]
   ],
@@ -281,15 +443,25 @@
   ],
   "Charlie Rich": [
     [
-      "rockabilly",
-      2
-    ],
-    [
       "traditional country",
       2
     ],
     [
+      "rockabilly",
+      2
+    ],
+    [
       "country",
+      2
+    ]
+  ],
+  "Chatham County Line": [
+    [
+      "bluegrass",
+      4
+    ],
+    [
+      "folk",
       2
     ]
   ],
@@ -309,11 +481,11 @@
   ],
   "Chris Isaak": [
     [
-      "pop rock",
+      "rock",
       2
     ],
     [
-      "rock",
+      "pop rock",
       2
     ]
   ],
@@ -321,6 +493,12 @@
     [
       "country",
       2
+    ]
+  ],
+  "Chris Stapleton": [
+    [
+      "country",
+      3
     ]
   ],
   "Chuck Berry": [
@@ -333,6 +511,10 @@
       4
     ],
     [
+      "blues rock",
+      3
+    ],
+    [
       "rhythm & blues",
       3
     ],
@@ -341,15 +523,11 @@
       3
     ],
     [
-      "blues rock",
-      3
-    ],
-    [
-      "rock & roll",
+      "rockabilly",
       2
     ],
     [
-      "rockabilly",
+      "rock & roll",
       2
     ]
   ],
@@ -397,6 +575,48 @@
       3
     ]
   ],
+  "Creedence Clearwater Revival": [
+    [
+      "swamp rock",
+      13
+    ],
+    [
+      "blues rock",
+      8
+    ],
+    [
+      "country rock",
+      8
+    ],
+    [
+      "rock",
+      8
+    ],
+    [
+      "roots rock",
+      7
+    ],
+    [
+      "southern rock",
+      4
+    ],
+    [
+      "american",
+      3
+    ],
+    [
+      "classic rock",
+      3
+    ],
+    [
+      "rock & roll",
+      2
+    ],
+    [
+      "rock and roll",
+      2
+    ]
+  ],
   "Cristy Lane": [
     [
       "country",
@@ -417,15 +637,15 @@
   ],
   "David Allan Coe": [
     [
-      "outlaw country",
-      3
-    ],
-    [
       "singer-songwriter",
       3
     ],
     [
       "country",
+      3
+    ],
+    [
+      "outlaw country",
       3
     ]
   ],
@@ -437,11 +657,11 @@
   ],
   "Delbert McClinton": [
     [
-      "blues rock",
+      "electric blues",
       2
     ],
     [
-      "electric blues",
+      "blues rock",
       2
     ]
   ],
@@ -454,6 +674,20 @@
   "Dick Curless": [
     [
       "truck driving country",
+      2
+    ]
+  ],
+  "Django Reinhardt": [
+    [
+      "gypsy jazz",
+      5
+    ],
+    [
+      "jazz",
+      5
+    ],
+    [
+      "roma",
       2
     ]
   ],
@@ -485,11 +719,11 @@
       3
     ],
     [
-      "singer-songwriter",
+      "folk",
       2
     ],
     [
-      "folk",
+      "singer-songwriter",
       2
     ]
   ],
@@ -501,15 +735,15 @@
   ],
   "Doris Day": [
     [
-      "traditional pop",
-      2
-    ],
-    [
       "show tunes",
       2
     ],
     [
       "pop",
+      2
+    ],
+    [
+      "traditional pop",
       2
     ]
   ],
@@ -559,6 +793,30 @@
       3
     ]
   ],
+  "Ella Fitzgerald": [
+    [
+      "jazz",
+      11
+    ],
+    [
+      "vocal jazz",
+      5
+    ],
+    [
+      "swing",
+      4
+    ],
+    [
+      "big band",
+      2
+    ]
+  ],
+  "Elliott Brood": [
+    [
+      "alternative country",
+      2
+    ]
+  ],
   "Elvis Presley": [
     [
       "rockabilly",
@@ -569,15 +827,15 @@
       8
     ],
     [
-      "pop",
-      6
-    ],
-    [
       "rock",
       6
     ],
     [
       "country",
+      6
+    ],
+    [
+      "pop",
       6
     ],
     [
@@ -597,7 +855,7 @@
       3
     ],
     [
-      "christmas music",
+      "actors",
       2
     ]
   ],
@@ -609,11 +867,11 @@
   ],
   "Ernest Tubb": [
     [
-      "honky tonk",
+      "country",
       2
     ],
     [
-      "country",
+      "honky tonk",
       2
     ]
   ],
@@ -631,15 +889,63 @@
       3
     ],
     [
-      "boogie-woogie",
-      2
-    ],
-    [
       "rock & roll",
       2
     ],
     [
+      "boogie-woogie",
+      2
+    ],
+    [
       "blues",
+      2
+    ]
+  ],
+  "Fever Ray": [
+    [
+      "electronic",
+      7
+    ],
+    [
+      "art pop",
+      5
+    ],
+    [
+      "trip hop",
+      4
+    ],
+    [
+      "electropop",
+      4
+    ],
+    [
+      "idm",
+      3
+    ],
+    [
+      "avant-garde pop",
+      3
+    ],
+    [
+      "indie dance",
+      2
+    ],
+    [
+      "bass house",
+      2
+    ],
+    [
+      "elektroniskt",
+      2
+    ],
+    [
+      "progressive house",
+      2
+    ]
+  ],
+  "Foghorn Stringband": [
+    [
+      "old-time",
       2
     ]
   ],
@@ -677,15 +983,47 @@
       3
     ],
     [
-      "singer-songwriter",
-      2
-    ],
-    [
       "canadian",
       2
     ],
     [
+      "singer-songwriter",
+      2
+    ],
+    [
       "country",
+      2
+    ]
+  ],
+  "Gram Parsons": [
+    [
+      "rock",
+      2
+    ],
+    [
+      "country rock",
+      2
+    ]
+  ],
+  "Grateful Dead": [
+    [
+      "rock",
+      10
+    ],
+    [
+      "psychedelic rock",
+      7
+    ],
+    [
+      "folk rock",
+      6
+    ],
+    [
+      "jam band",
+      4
+    ],
+    [
+      "roots rock",
       2
     ]
   ],
@@ -711,16 +1049,22 @@
       6
     ],
     [
-      "queer",
+      "power pop",
       4
     ],
     [
-      "power pop",
+      "queer",
       4
     ],
     [
       "american",
       3
+    ]
+  ],
+  "Greensky Bluegrass": [
+    [
+      "progressive bluegrass",
+      2
     ]
   ],
   "Hal Ketchum": [
@@ -775,13 +1119,43 @@
       2
     ]
   ],
+  "Jeff Buckley": [
+    [
+      "alternative rock",
+      9
+    ],
+    [
+      "folk rock",
+      3
+    ],
+    [
+      "singer-songwriter",
+      3
+    ],
+    [
+      "american",
+      2
+    ],
+    [
+      "rock",
+      2
+    ]
+  ],
   "Jerry Lee Lewis": [
     [
       "rockabilly",
       6
     ],
     [
+      "rock and roll",
+      2
+    ],
+    [
       "honky tonk",
+      2
+    ],
+    [
+      "country",
       2
     ],
     [
@@ -790,14 +1164,6 @@
     ],
     [
       "rock",
-      2
-    ],
-    [
-      "rock and roll",
-      2
-    ],
-    [
-      "country",
       2
     ]
   ],
@@ -869,6 +1235,10 @@
       5
     ],
     [
+      "folk rock",
+      2
+    ],
+    [
       "singer-songwriter",
       2
     ],
@@ -878,10 +1248,6 @@
     ],
     [
       "country folk",
-      2
-    ],
-    [
-      "folk rock",
       2
     ]
   ],
@@ -911,11 +1277,11 @@
       25
     ],
     [
-      "rockabilly",
+      "folk",
       7
     ],
     [
-      "folk",
+      "rockabilly",
       7
     ],
     [
@@ -961,11 +1327,17 @@
       3
     ],
     [
-      "pop",
+      "easy listening",
       2
     ],
     [
-      "easy listening",
+      "pop",
+      2
+    ]
+  ],
+  "Johnny Rivers": [
+    [
+      "pop rock",
       2
     ]
   ],
@@ -1083,17 +1455,37 @@
       3
     ],
     [
-      "sunshine pop",
+      "bubblegum pop",
       2
     ],
     [
-      "bubblegum pop",
+      "sunshine pop",
       2
     ]
   ],
   "Lester Flatt": [
     [
       "bluegrass",
+      2
+    ]
+  ],
+  "Levellers": [
+    [
+      "folk rock",
+      4
+    ],
+    [
+      "folk punk",
+      2
+    ]
+  ],
+  "Little Feat": [
+    [
+      "southern rock",
+      3
+    ],
+    [
+      "blues rock",
       2
     ]
   ],
@@ -1134,6 +1526,32 @@
     ],
     [
       "country pop",
+      2
+    ]
+  ],
+  "Louis Armstrong": [
+    [
+      "jazz",
+      11
+    ],
+    [
+      "dixieland",
+      5
+    ],
+    [
+      "swing",
+      4
+    ],
+    [
+      "vocal jazz",
+      3
+    ],
+    [
+      "traditional pop",
+      2
+    ],
+    [
+      "gospel",
       2
     ]
   ],
@@ -1183,11 +1601,11 @@
   ],
   "Mel Tillis": [
     [
-      "country",
+      "outlaw country",
       2
     ],
     [
-      "outlaw country",
+      "country",
       2
     ]
   ],
@@ -1195,6 +1613,28 @@
     [
       "country",
       4
+    ]
+  ],
+  "Metallica": [
+    [
+      "thrash metal",
+      62
+    ],
+    [
+      "heavy metal",
+      40
+    ],
+    [
+      "metal",
+      31
+    ],
+    [
+      "hard rock",
+      21
+    ],
+    [
+      "american",
+      7
     ]
   ],
   "Michael Martin Murphey": [
@@ -1205,11 +1645,45 @@
   ],
   "Mickey Gilley": [
     [
-      "nashville sound",
+      "country",
       2
     ],
     [
-      "country",
+      "nashville sound",
+      2
+    ]
+  ],
+  "Motorhead": [
+    [
+      "heavy metal",
+      19
+    ],
+    [
+      "hard rock",
+      15
+    ],
+    [
+      "rock",
+      9
+    ],
+    [
+      "metal",
+      8
+    ],
+    [
+      "speed metal",
+      5
+    ],
+    [
+      "british",
+      3
+    ],
+    [
+      "gratuitous heavy metal umlaut",
+      2
+    ],
+    [
+      "rock'n roll",
       2
     ]
   ],
@@ -1223,19 +1697,19 @@
       5
     ],
     [
-      "swing",
-      3
-    ],
-    [
       "easy listening",
       3
     ],
     [
-      "traditional pop",
-      2
+      "swing",
+      3
     ],
     [
       "standards",
+      2
+    ],
+    [
+      "traditional pop",
       2
     ],
     [
@@ -1259,19 +1733,19 @@
       8
     ],
     [
-      "baroque pop",
-      6
-    ],
-    [
       "pop rock",
       6
     ],
     [
-      "soft rock",
+      "baroque pop",
       6
     ],
     [
       "adult contemporary",
+      6
+    ],
+    [
+      "soft rock",
       6
     ],
     [
@@ -1285,11 +1759,11 @@
   ],
   "Neil Young": [
     [
-      "rock",
+      "folk rock",
       9
     ],
     [
-      "folk rock",
+      "rock",
       9
     ],
     [
@@ -1313,16 +1787,40 @@
       2
     ],
     [
-      "country",
-      2
-    ],
-    [
       "classic rock",
       2
     ],
     [
       "contemporary folk",
       2
+    ],
+    [
+      "country",
+      2
+    ]
+  ],
+  "New Riders of the Purple Sage": [
+    [
+      "country rock",
+      2
+    ]
+  ],
+  "Nickelback": [
+    [
+      "hard rock",
+      6
+    ],
+    [
+      "rock",
+      4
+    ],
+    [
+      "post-grunge",
+      4
+    ],
+    [
+      "pop rock",
+      3
     ]
   ],
   "Nitty Gritty Dirt Band": [
@@ -1353,6 +1851,12 @@
       2
     ]
   ],
+  "Orleans": [
+    [
+      "rock",
+      2
+    ]
+  ],
   "Pam Tillis": [
     [
       "country",
@@ -1367,19 +1871,19 @@
   ],
   "Patsy Cline": [
     [
-      "country",
-      2
-    ],
-    [
       "honky tonk",
       2
     ],
     [
-      "traditional country",
+      "nashville sound",
       2
     ],
     [
-      "nashville sound",
+      "country",
+      2
+    ],
+    [
+      "traditional country",
       2
     ]
   ],
@@ -1395,17 +1899,65 @@
   ],
   "Paul Anka": [
     [
-      "jazz",
+      "pop",
       2
     ],
     [
-      "pop",
+      "jazz",
       2
+    ]
+  ],
+  "Pentatonix": [
+    [
+      "a cappella",
+      5
+    ],
+    [
+      "pop",
+      3
     ]
   ],
   "Perry Como": [
     [
       "easy listening",
+      2
+    ]
+  ],
+  "Pete Seeger": [
+    [
+      "folk",
+      3
+    ]
+  ],
+  "Phish": [
+    [
+      "jam band",
+      12
+    ],
+    [
+      "rock",
+      10
+    ],
+    [
+      "progressive rock",
+      6
+    ],
+    [
+      "funk rock",
+      3
+    ],
+    [
+      "psychedelic rock",
+      2
+    ],
+    [
+      "jazz rock",
+      2
+    ]
+  ],
+  "Pure Prairie League": [
+    [
+      "country rock",
       2
     ]
   ],
@@ -1455,11 +2007,11 @@
       5
     ],
     [
-      "classic pop and rock",
+      "contemporary country",
       2
     ],
     [
-      "traditional country",
+      "classic pop and rock",
       2
     ],
     [
@@ -1467,7 +2019,7 @@
       2
     ],
     [
-      "contemporary country",
+      "traditional country",
       2
     ]
   ],
@@ -1531,11 +2083,11 @@
       6
     ],
     [
-      "pop rock",
+      "pop",
       4
     ],
     [
-      "pop",
+      "pop rock",
       4
     ],
     [
@@ -1545,6 +2097,20 @@
     [
       "rock & roll",
       3
+    ]
+  ],
+  "Sam Cooke": [
+    [
+      "soul",
+      8
+    ],
+    [
+      "gospel",
+      3
+    ],
+    [
+      "rhythm & blues",
+      2
     ]
   ],
   "Sammy Kershaw": [
@@ -1575,6 +2141,24 @@
       2
     ]
   ],
+  "Stevie Nicks": [
+    [
+      "rock",
+      5
+    ],
+    [
+      "pop rock",
+      4
+    ],
+    [
+      "pop",
+      3
+    ],
+    [
+      "country rock",
+      2
+    ]
+  ],
   "Suzy Bogguss": [
     [
       "country",
@@ -1595,11 +2179,11 @@
   ],
   "Tennessee Ernie Ford": [
     [
-      "country gospel",
+      "country",
       2
     ],
     [
-      "country",
+      "country gospel",
       2
     ]
   ],
@@ -1607,6 +2191,12 @@
     [
       "country",
       2
+    ]
+  ],
+  "The BE Good Tanyas": [
+    [
+      "folk",
+      3
     ]
   ],
   "The Bluegrass Cardinals": [
@@ -1627,13 +2217,41 @@
       2
     ]
   ],
-  "The Dubliners": [
+  "The Charlie Daniels Band": [
+    [
+      "country",
+      3
+    ],
+    [
+      "southern rock",
+      2
+    ]
+  ],
+  "The Dead South": [
+    [
+      "bluegrass",
+      3
+    ],
+    [
+      "folk rock",
+      3
+    ],
     [
       "folk",
+      2
+    ],
+    [
+      "americana",
+      2
+    ]
+  ],
+  "The Dubliners": [
+    [
+      "irish folk",
       4
     ],
     [
-      "irish folk",
+      "folk",
       4
     ],
     [
@@ -1643,15 +2261,39 @@
   ],
   "The Everly Brothers": [
     [
-      "pop",
-      2
-    ],
-    [
       "rock & roll",
       2
     ],
     [
       "rockabilly",
+      2
+    ],
+    [
+      "pop",
+      2
+    ]
+  ],
+  "The Flying Burrito Brothers": [
+    [
+      "country",
+      3
+    ],
+    [
+      "country rock",
+      2
+    ]
+  ],
+  "The Four Seasons": [
+    [
+      "classic pop and rock",
+      2
+    ],
+    [
+      "rock",
+      2
+    ],
+    [
+      "pop rock",
       2
     ]
   ],
@@ -1691,17 +2333,23 @@
       2
     ]
   ],
+  "The Kingston Trio": [
+    [
+      "folk",
+      2
+    ]
+  ],
   "The Louvin Brothers": [
+    [
+      "country",
+      2
+    ],
     [
       "bluegrass",
       2
     ],
     [
       "gospel",
-      2
-    ],
-    [
-      "country",
       2
     ]
   ],
@@ -1711,17 +2359,23 @@
       4
     ],
     [
-      "neo-traditional country",
+      "americana",
       2
     ],
     [
-      "americana",
+      "neo-traditional country",
       2
     ]
   ],
   "The Oak Ridge Boys": [
     [
       "country",
+      2
+    ]
+  ],
+  "The Petersens": [
+    [
+      "bluegrass",
       2
     ]
   ],
@@ -1735,11 +2389,11 @@
       3
     ],
     [
-      "pop soul",
+      "pop",
       2
     ],
     [
-      "pop",
+      "pop soul",
       2
     ],
     [
@@ -1757,6 +2411,12 @@
     [
       "bluegrass",
       3
+    ]
+  ],
+  "The Slocan Ramblers": [
+    [
+      "bluegrass",
+      2
     ]
   ],
   "The Stanley Brothers": [
@@ -1777,6 +2437,60 @@
       2
     ]
   ],
+  "The Tragically Hip": [
+    [
+      "rock",
+      6
+    ],
+    [
+      "roots rock",
+      3
+    ],
+    [
+      "folk rock",
+      3
+    ],
+    [
+      "blues rock",
+      3
+    ],
+    [
+      "canadian",
+      2
+    ],
+    [
+      "alternative rock",
+      2
+    ]
+  ],
+  "Thin Lizzy": [
+    [
+      "hard rock",
+      7
+    ],
+    [
+      "rock",
+      3
+    ]
+  ],
+  "Tim McGraw": [
+    [
+      "country",
+      7
+    ],
+    [
+      "contemporary country",
+      3
+    ],
+    [
+      "country pop",
+      2
+    ],
+    [
+      "adult contemporary",
+      2
+    ]
+  ],
   "Toby Keith": [
     [
       "country",
@@ -1787,9 +2501,29 @@
       2
     ]
   ],
+  "Todd Snider": [
+    [
+      "alternative country",
+      2
+    ],
+    [
+      "americana",
+      2
+    ]
+  ],
   "Tom Paxton": [
     [
       "folk",
+      2
+    ]
+  ],
+  "Tom Petty": [
+    [
+      "rock",
+      3
+    ],
+    [
+      "singer/songwriter",
       2
     ]
   ],
@@ -1801,11 +2535,11 @@
   ],
   "Townes Van Zandt": [
     [
-      "singer-songwriter",
+      "folk",
       3
     ],
     [
-      "folk",
+      "singer-songwriter",
       3
     ],
     [
@@ -1837,17 +2571,31 @@
       3
     ]
   ],
+  "Tyler Childers": [
+    [
+      "americana",
+      4
+    ],
+    [
+      "country",
+      3
+    ],
+    [
+      "alternative country",
+      3
+    ]
+  ],
   "Vince Gill": [
     [
       "country",
       4
     ],
     [
-      "contemporary country",
+      "bluegrass",
       2
     ],
     [
-      "bluegrass",
+      "contemporary country",
       2
     ]
   ],
@@ -1879,6 +2627,32 @@
       2
     ]
   ],
+  "Weezer": [
+    [
+      "alternative rock",
+      29
+    ],
+    [
+      "power pop",
+      12
+    ],
+    [
+      "geek rock",
+      10
+    ],
+    [
+      "pop rock",
+      9
+    ],
+    [
+      "rock",
+      9
+    ],
+    [
+      "alternative pop",
+      3
+    ]
+  ],
   "Wilf Carter": [
     [
       "country",
@@ -1905,17 +2679,23 @@
       2
     ]
   ],
+  "Zach Bryan": [
+    [
+      "country",
+      5
+    ]
+  ],
   "the Everly Brothers": [
+    [
+      "rockabilly",
+      2
+    ],
     [
       "rock & roll",
       2
     ],
     [
       "pop",
-      2
-    ],
-    [
-      "rockabilly",
       2
     ]
   ],

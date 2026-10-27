@@ -1,6 +1,10 @@
 // Unit tests for utils.js
 import { describe, it, expect } from 'vitest';
-import { escapeHtml, escapeRegex, highlightMatch, partUsesSongActions, buildDeleteCandidates } from '../utils.js';
+import {
+    escapeHtml, escapeRegex, highlightMatch, partUsesSongActions, buildDeleteCandidates,
+    songWriter, writtenByLabel, associatedArtists, matchedArtists,
+    recordedBy, recorderLabel, recordingSearchUrl,
+} from '../utils.js';
 
 describe('buildDeleteCandidates', () => {
     const flatt = {
@@ -180,6 +184,77 @@ describe('highlightMatch', () => {
             const result = highlightMatch('Sons of the Pioneers', 'on');
             const stripped = result.replace(/<\/?mark>/g, '');
             expect(stripped).toBe('Sons of the Pioneers');
+        });
+    });
+});
+
+// F9: `artist` is whichever performer page a chart was scraped from, so it
+// is never shown. The writer is the credit; covering artists (MusicBrainz)
+// are listed only where someone looks for them. Mirrors build_song_pages.py
+// (_writer / associated_artists).
+describe('song credits (F9)', () => {
+    const sunshine = {
+        artist: 'Johnny Cash', composer: 'Jimmie Davis, Charles Mitchell',
+        covering_artists: ['Mac Wiseman', 'johnny cash', 'Norman Blake'],
+    };
+
+    it('the writer is the composer, else "Traditional" when the artist says so, else nothing', () => {
+        expect(songWriter(sunshine)).toBe('Jimmie Davis, Charles Mitchell');
+        expect(songWriter({ artist: 'Traditional' })).toBe('Traditional');
+        expect(songWriter({ artist: 'Johnny Cash' })).toBe('');
+        expect(songWriter({})).toBe('');
+    });
+
+    it('labels the writer, and never says "Written by Traditional"', () => {
+        expect(writtenByLabel('Bill Monroe')).toBe('Written by Bill Monroe');
+        expect(writtenByLabel('traditional')).toBe('Traditional');
+        expect(writtenByLabel('')).toBe('');
+    });
+
+    it('lists covering artists only, once each, no "Traditional" — never the scraped artist', () => {
+        expect(associatedArtists({ ...sunshine, covering_artists: ['Mac Wiseman', 'mac wiseman', 'Norman Blake'] }))
+            .toEqual(['Mac Wiseman', 'Norman Blake']);
+        expect(associatedArtists({ artist: 'Lester Flatt', covering_artists: ['Mac Wiseman'] }))
+            .toEqual(['Mac Wiseman']);
+        expect(associatedArtists({ artist: 'Lester Flatt' })).toEqual([]);
+        expect(associatedArtists({ covering_artists: ['Traditional'] })).toEqual([]);
+        expect(associatedArtists({})).toEqual([]);
+    });
+
+    it('recordedBy pairs each covering artist with its year, null when unknown', () => {
+        expect(recordedBy({ covering_artists: ['Bill Monroe', 'Doug Dillard', 'Traditional', 'bill monroe'],
+            covering_years: [1947, null, 1900, 1950] }))
+            .toEqual([{ name: 'Bill Monroe', year: 1947 }, { name: 'Doug Dillard', year: null }]);
+        expect(recordedBy({ covering_artists: ['Bill Monroe'] })).toEqual([{ name: 'Bill Monroe', year: null }]);
+        expect(recordedBy({ artist: 'Johnny Cash' })).toEqual([]);
+    });
+
+    it('labels and links a recording: "Name (year)" and a YouTube search for it', () => {
+        expect(recorderLabel({ name: 'Bill Monroe', year: 1947 })).toBe('Bill Monroe (1947)');
+        expect(recorderLabel({ name: 'Bill Monroe', year: null })).toBe('Bill Monroe');
+        expect(recordingSearchUrl('Blue Moon of Kentucky', { name: 'Bill Monroe', year: 1947 }))
+            .toBe('https://www.youtube.com/results?search_query=Blue+Moon+of+Kentucky+Bill+Monroe+1947');
+        expect(recordingSearchUrl("Roll in My Sweet Baby's Arms", { name: 'Flatt & Scruggs', year: null }))
+            .toBe("https://www.youtube.com/results?search_query=Roll+in+My+Sweet+Baby's+Arms+Flatt+%26+Scruggs");
+    });
+
+    describe('matchedArtists: only the artists a search actually asked for', () => {
+        it('matches an artist: filter', () => {
+            expect(matchedArtists(sunshine, { textTerms: [], artistFilter: 'blake' })).toEqual(['Norman Blake']);
+        });
+        it('never names the scraped artist, even when the search matched it', () => {
+            const scrapedOnly = { artist: 'Johnny Cash', covering_artists: ['Mac Wiseman'] };
+            expect(matchedArtists(scrapedOnly, { textTerms: [], artistFilter: 'cash' })).toEqual([]);
+        });
+        it('matches free text only when every term is in the one name', () => {
+            expect(matchedArtists(sunshine, { textTerms: ['mac', 'wiseman'] })).toEqual(['Mac Wiseman']);
+            // "sunshine" is a title word — no artist line for a title search.
+            expect(matchedArtists(sunshine, { textTerms: ['sunshine'] })).toEqual([]);
+            expect(matchedArtists(sunshine, { textTerms: ['wiseman', 'sunshine'] })).toEqual([]);
+        });
+        it('is empty for an empty query', () => {
+            expect(matchedArtists(sunshine, { textTerms: [] })).toEqual([]);
+            expect(matchedArtists(sunshine, {})).toEqual([]);
         });
     });
 });

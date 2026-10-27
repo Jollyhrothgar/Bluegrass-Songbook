@@ -78,6 +78,7 @@ Some operations require external APIs/databases and only run locally. Others run
 | **Harmonic analysis** | Everywhere | - | Computes JamFriendly, Modal tags from chords |
 | **MusicBrainz tags** | Local only | `artist_tags.json` | Requires local MB database on port 5440 |
 | **Grassiness scores** | Local only | `bluegrass_recordings.json`, `bluegrass_tagged.json` | Song-level bluegrass detection |
+| **Verified artists** | Local only | `verified_artists.json` | `./scripts/utility refresh-musicbrainz`: confirms each work's scraped `artist` recorded the title (MusicBrainz); confirmed ones join `covering_artists` ("Recorded by", F9) |
 | **Strum Machine URLs** | Local only | `strum_machine_cache.json` | API rate limited (10 req/sec) |
 | **Deleted songs sync** | Scheduled CI + local | `deleted_songs.json` | `.github/workflows/sync-deleted-songs.yml` (hourly cron + manual dispatch) or `./scripts/utility sync-deleted-songs` |
 | **Promoted songs sync** | Scheduled CI + local | `promoted_songs.json` | same workflow as deleted songs, or `./scripts/utility sync-promoted-songs`. Any signed-in user can promote (was trusted-only) |
@@ -93,7 +94,7 @@ holds the shared connect/fail logic, including telling a genuinely missing
 `supabase` package apart from a broken dependency inside it.
 
 **How caching works:**
-1. Run local command to populate cache (e.g., `refresh-tags`, `strum-machine-match`)
+1. Run local command to populate cache (e.g., `refresh-musicbrainz`, `strum-machine-match`)
 2. Commit the cache file to git
 3. CI reads cache during build - no external API calls
 
@@ -103,6 +104,7 @@ holds the shared connect/fail logic, including telling a genuinely missing
 - `docs/data/bluegrass_recordings.json` - Recordings by curated bluegrass artists
 - `docs/data/bluegrass_tagged.json` - Recordings with MusicBrainz bluegrass tags
 - `docs/data/grassiness_scores.json` - Computed grassiness scores per song
+- `docs/data/verified_artists.json` - Scraped artists MusicBrainz confirms recorded the song, with earliest release year (`tagging/verify_artists.py`)
 - `docs/data/deleted_songs.json` - Soft-deleted song IDs (synced from Supabase via `fetch_deleted_songs.py`; suppressed at index build)
 - `docs/data/promoted_songs.json` - Promotions from the Bluegrass Dungeon (any signed-in user) (synced from Supabase via `fetch_promoted_songs.py`; unioned with the registry `keep:` map at index build)
 
@@ -154,17 +156,14 @@ list — a few utilities (`check_index_outputs.py`, `coverage_report.py`,
 # Full pipeline: build index from works/
 ./scripts/bootstrap --quick
 
-# Build index with tag refresh (local only, requires MusicBrainz)
-./scripts/bootstrap --quick --refresh-tags
-
 # Add a song manually
 ./scripts/utility add-song /path/to/song.pro
 
 # Count chord usage across all songs
 ./scripts/utility count-chords
 
-# Refresh tags from MusicBrainz (LOCAL ONLY - requires MB database)
-./scripts/utility refresh-tags
+# Rebuild every MusicBrainz cache + the index (LOCAL ONLY - needs the MB database)
+./scripts/utility refresh-musicbrainz
 
 # Match songs to Strum Machine (LOCAL ONLY - ~30 min for 17k songs)
 ./scripts/utility strum-machine-match

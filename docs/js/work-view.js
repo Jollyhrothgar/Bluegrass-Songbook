@@ -1,4 +1,4 @@
-// WorkView — the unified song page. ONE page per song: title + artist,
+// WorkView — the unified song page. ONE page per song: title + writer,
 // a pill row (Key / Display / Info / Arrangement), part tabs when a work
 // has multiple parts, the active part's content, and the app shell's
 // top/bottom bands for actions and playback controls.
@@ -40,6 +40,7 @@ import { CHROMATIC_MAJOR_KEYS } from './chords.js';
 import {
     escapeHtml, escapeAttr, safeUrl, partUsesSongActions, isPlaceholder,
     requireLogin, slugify, tabLabel, canEditWorkMetadata, copyrightMailto,
+    songWriter, writtenByLabel,
 } from './utils.js';
 import {
     accessToken, namespacedRowId, requestDurableWrite,
@@ -773,7 +774,7 @@ export function renderWorkView() {
 
     container.innerHTML = '';
 
-    // Title row: song title + small artist line
+    // Title row: song title + small writer line
     container.appendChild(renderTitleHeader());
 
     // Pill row: Key / Display / Info / Arrangement
@@ -942,7 +943,7 @@ function selectPart(part) {
 }
 
 /**
- * Quiet "Practice:" line under the artist: Strum Machine (when matched) and
+ * Quiet "Practice:" line under the writer: Strum Machine (when matched) and
  * a YouTube search. Shown for lead sheets and tab-only works alike.
  */
 function practiceLineHtml() {
@@ -954,13 +955,14 @@ function practiceLineHtml() {
 }
 
 /**
- * Title row: song title + small artist line.
+ * Title row: song title + small writer line. Never the artist (F9): `artist`
+ * is whichever page a chart was scraped from, so it is not shown anywhere.
  */
 function renderTitleHeader() {
     const header = document.createElement('div');
     header.className = 'song-header';
     const title = currentWork.title || 'Untitled';
-    const artist = currentWork.artist || '';
+    const writer = writtenByLabel(songWriter(currentWork));
 
     // A PROVISIONAL work (#new-tab) has no title yet — the two fields that
     // decide what gets minted are the title slot itself, not a form on
@@ -1008,9 +1010,7 @@ function renderTitleHeader() {
                 <button id="edit-song-btn" class="focus-btn" title="Edit this song">&#x270F;&#xFE0F; Edit</button>
                 <button id="edit-meta-btn" class="focus-btn hidden" title="Edit this song's title, artist, key and notes">&#x1F3F7;&#xFE0F; Details</button>
             </div>
-            ${artist
-                ? `<div class="song-artist-line">${escapeHtml(artist)}</div>`
-                : '<div class="song-artist-line song-artist-missing hidden">Artist unknown</div>'}
+            ${writer ? `<div class="song-writer-line">${escapeHtml(writer)}</div>` : ''}
             ${practiceLineHtml()}
         </div>
     `;
@@ -1693,9 +1693,6 @@ export function updateWorkTopBar() {
     const metaBtn = document.getElementById('edit-meta-btn');
     const mayEditMeta = canEditMetadataHere();
     if (metaBtn) metaBtn.classList.toggle('hidden', !mayEditMeta);
-    // The "Artist unknown" nudge only appears to someone who can act on it.
-    document.querySelector('#song-content .song-artist-missing')
-        ?.classList.toggle('hidden', !mayEditMeta);
 
     actions.push({
         id: 'list-picker-btn',

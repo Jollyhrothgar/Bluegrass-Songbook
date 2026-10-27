@@ -89,7 +89,7 @@ def test_page_is_indexable_and_links_into_the_app(tmp_path):
     docs = make_docs(tmp_path, ROWS, CHARTS)
     build_song_pages(docs)
     html = (docs / "songs" / "blue-moon-of-kentucky" / "index.html").read_text()
-    assert "<title>Blue Moon of Kentucky (Bill Monroe) chords and lyrics | Bluegrass Book</title>" in html
+    assert "<title>Blue Moon of Kentucky chords and lyrics | Bluegrass Book</title>" in html
     assert f'<link rel="canonical" href="{ORIGIN}songs/blue-moon-of-kentucky/">' in html
     assert '<meta name="description" content="' in html
     assert 'href="/#work/blue-moon-of-kentucky"' in html
@@ -134,6 +134,105 @@ def test_traditional_is_not_written_by(tmp_path):
     html = (docs / "songs" / "trad" / "index.html").read_text()
     assert '<p class="by">Traditional</p>' in html
     assert "Written by Traditional" not in html
+
+
+def page_parts(html):
+    """(head, main, footer) of a rendered page."""
+    head = html.split("</head>")[0]
+    main = html.split("<main>")[1].split("</main>")[0]
+    footer = html.split("<footer>")[1].split("</footer>")[0]
+    return head, main, footer
+
+
+# F9: `artist` is whichever performer page a chart was scraped from, not whose
+# version it is, so a page never shows it. The writer is the credit up top;
+# the footer's "Recorded by" names covering_artists (MusicBrainz) with years.
+SUNSHINE = {"id": "you-are-my-sunshine", "title": "You Are My Sunshine",
+            "artist": "Johnny Cash", "composer": "Jimmie Davis, Charles Mitchell",
+            "covering_artists": ["Richard Greene", "Mac Wiseman", "mac wiseman"],
+            "covering_years": [1979, 2008, 2008],
+            "key": "G", "first_line": "The other night dear as I lay sleeping",
+            "has_content": True}
+
+
+def render_one(tmp_path, row):
+    docs = make_docs(tmp_path, [row], {f"{row['id']}.pro": "[G]Hi\n"})
+    build_song_pages(docs)
+    return (docs / "songs" / row["id"] / "index.html").read_text()
+
+
+def test_scraped_artist_is_never_shown(tmp_path):
+    html = render_one(tmp_path, SUNSHINE)
+    head, main, _ = page_parts(html)
+    assert "<title>You Are My Sunshine chords and lyrics | Bluegrass Book</title>" in head
+    assert "played by" not in head
+    assert "Johnny Cash" not in html          # not in head, body or footer
+    assert '<p class="by">Written by Jimmie Davis, Charles Mitchell</p>' in main
+
+
+def test_description_credits_the_writer(tmp_path):
+    head, _, _ = page_parts(render_one(tmp_path, SUNSHINE))
+    desc = re.search(r'<meta name="description" content="([^"]*)"', head).group(1)
+    assert desc.startswith("You Are My Sunshine chords and lyrics. "
+                           "Written by Jimmie Davis, Charles Mitchell. Key of G.")
+
+
+def test_footer_credits_recorders_with_years_once_each(tmp_path):
+    _, _, footer = page_parts(render_one(tmp_path, SUNSHINE))
+    assert footer.count("Mac Wiseman") == 1
+    text = re.sub(r"<[^>]+>", "", footer)
+    assert "Recorded by: Richard Greene (1979), Mac Wiseman (2008)" in text
+
+
+def test_each_recorder_links_to_a_youtube_search_for_that_recording(tmp_path):
+    _, _, footer = page_parts(render_one(tmp_path, SUNSHINE))
+    assert ('<a href="https://www.youtube.com/results?search_query='
+            'You+Are+My+Sunshine+Richard+Greene+1979" rel="nofollow noopener" '
+            'target="_blank">Richard Greene (1979)</a>') in footer
+
+
+def test_recorder_without_a_year_has_no_parentheses(tmp_path):
+    row = {**SUNSHINE, "covering_artists": ["Tom Adams"], "covering_years": [None]}
+    _, _, footer = page_parts(render_one(tmp_path, row))
+    assert ">Tom Adams</a>" in footer
+    assert "search_query=You+Are+My+Sunshine+Tom+Adams\"" in footer
+
+
+def test_scraped_artist_alone_gets_no_footer(tmp_path):
+    row = {"id": "solo", "title": "Solo", "artist": "Richard Thompson", "has_content": True}
+    html = render_one(tmp_path, row)
+    assert 'class="artists"' not in html
+    assert "Richard Thompson" not in html
+
+
+def test_footer_list_expands_for_famous_songs(tmp_path):
+    row = {**SUNSHINE, "artist": "Scraped Singer",
+           "covering_artists": [f"Band {i}" for i in range(1, 13)],
+           "covering_years": list(range(1950, 1962))}
+    _, _, footer = page_parts(render_one(tmp_path, row))
+    visible = footer.split("<details>")[0]
+    assert ">Band 5 (1954)</a>" in visible and "Band 6" not in visible
+    assert "<details><summary> and 7 more</summary>, " in footer
+    assert ">Band 12 (1961)</a></details>" in footer
+    assert "Scraped Singer" not in footer
+
+
+def test_traditional_is_a_writer_never_an_artist(tmp_path):
+    row = {"id": "trad", "title": "Trad", "artist": "Traditional",
+           "covering_artists": ["Ralph Stanley"], "has_content": True}
+    head, main, footer = page_parts(render_one(tmp_path, row))
+    assert '<p class="by">Traditional</p>' in main
+    assert "Trad chords and lyrics. Traditional song." in head
+    assert ">Ralph Stanley</a></div>" in footer
+    # No Person called "Traditional" in the structured data.
+    assert '"composer"' not in head
+
+
+def test_no_writer_and_no_artists_says_nothing(tmp_path):
+    row = {"id": "bare", "title": "Bare", "has_content": True}
+    _, main, footer = page_parts(render_one(tmp_path, row))
+    assert 'class="by"' not in main
+    assert 'class="artists"' not in footer
 
 
 def test_tab_only_work_gets_a_page_naming_its_instruments(tmp_path):

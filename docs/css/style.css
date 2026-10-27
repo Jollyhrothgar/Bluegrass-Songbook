@@ -761,7 +761,7 @@ h1 {
     margin-bottom: 0.2rem;
 }
 
-.result-artist {
+.result-writer {
     font-size: 0.8rem;
     color: var(--text-secondary);
     margin-bottom: 0.3rem;
@@ -863,7 +863,7 @@ h1 {
     color: #4ade80;
 }
 
-/* Covering artists line */
+/* Associated-artist line: only when the search named one (F9) */
 .result-covering {
     font-size: 0.75rem;
     color: var(--text-secondary);
@@ -1183,13 +1183,17 @@ h1 {
     font-size: 0.8rem;
 }
 
-.artists-hidden {
-    display: none;
+/* "Recorded by" names: each a YouTube search for that recording (F9) */
+.recorded-by-link {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
-.artists-hidden.visible {
-    display: inline;
+.recorded-by-link:hover {
+    color: var(--accent);
 }
+
 
 /* Info tags section */
 .info-tags {
@@ -10255,6 +10259,7 @@ body.has-bottomband .container {
    bottom-band playback controls. See work-view.js + song-controls.js.
    ============================================ */
 
+.song-writer-line,
 .song-artist-line {
     color: var(--text-secondary);
     font-size: var(--font-sm);
@@ -10275,14 +10280,6 @@ body.has-bottomband .container {
 
 .song-practice-line a:hover {
     color: var(--accent);
-}
-
-/* The nudge in the artist's place on a work that has none. Shown only to
-   someone who can fix it (work-view.js updateWorkTopBar), so it reads as an
-   invitation rather than a complaint. */
-.song-artist-missing {
-    font-style: italic;
-    opacity: 0.7;
 }
 
 .song-pill-row {

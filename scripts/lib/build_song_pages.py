@@ -5,8 +5,9 @@ The app routes songs by hash (`/#work/{id}`), and Google treats everything
 after `#` as the same URL, so the whole songbook was one page to it. This
 writes one plain HTML page per searchable song:
 
-    docs/songs/{id}/index.html   title, artist, key, chords over lyrics,
-                                 tab instruments, a link into the app
+    docs/songs/{id}/index.html   title, writer, key, chords over lyrics,
+                                 tab instruments, a link into the app,
+                                 "Recorded by" in the footer
     docs/sitemap.xml             the static pages + every song page
 
 Inputs are what `build_works_index.write_outputs` just wrote
@@ -22,6 +23,13 @@ Rules:
   version, and is left out of the sitemap, so Google indexes one page per
   song rather than near-duplicates.
 - No redirect into the app: crawler and reader see the same page.
+- No scraped artist (F9). `artist` is whichever performer page a chart was
+  scraped from, not whose version it is, so it is never shown (it stays in
+  the data). The title, description and top of the page credit the
+  writer; the footer's "Recorded by" lists `covering_artists` — artists
+  MusicBrainz shows recording the song — by first recording year, each a
+  YouTube search for that recording. A credit for the song, never a label
+  on this chart.
 
 Run standalone with `uv run python scripts/lib/build_song_pages.py`.
 """
@@ -31,6 +39,7 @@ import json
 import re
 import shutil
 from pathlib import Path
+from urllib.parse import quote_plus
 
 ORIGIN = 'https://bluegrassbook.com/'
 
@@ -42,6 +51,10 @@ STATIC_PAGES = ['', 'about.html', 'chord-explorer.html',
 
 SONGS_DIR = 'songs'
 DESCRIPTION_CHARS = 155
+# Footer credit: the first few recorders, the rest behind "and N more". A
+# famous song has dozens; a page-long roll call is the slop look F9 removes.
+FOOTER_ARTISTS = 5
+YOUTUBE_SEARCH = 'https://www.youtube.com/results?search_query='
 
 SECTION_START = re.compile(r'^\{(?:start_of_|so)(\w+)(?::\s*(.*?))?\}$')
 SECTION_END = re.compile(r'^\{(?:end_of_|eo)(\w+)\}$')
@@ -62,6 +75,11 @@ header { padding-top: 16px; }
 header a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
 h1 { font-size: 2rem; line-height: 1.2; margin: 24px 0 4px; }
 .by, .facts { color: var(--muted); margin: 0 0 4px; }
+.artists { margin: 0 0 8px; }
+.artists summary { display: inline; cursor: pointer; text-decoration: underline dotted; }
+.artists details { display: inline; }
+.artists details[open] summary { display: none; }
+.artists details::details-content { display: inline; }
 .open { display: inline-block; margin: 16px 0 8px; padding: 8px 16px;
   border: 1px solid var(--accent); border-radius: 6px; color: var(--accent);
   text-decoration: none; font-family: system-ui, sans-serif; font-size: 0.95rem; }
@@ -177,10 +195,63 @@ def _instrument_name(instrument: str) -> str:
     return (instrument or 'tab').replace('5-string-', '').replace('-', ' ').capitalize()
 
 
+def _is_traditional(name: str) -> bool:
+    return (name or '').strip().lower() == 'traditional'
+
+
+def _writer(row: dict) -> str:
+    """Who wrote it: `composer`, or "Traditional" when that is all the
+    artist field says (a scrape that names no performer). '' when unknown —
+    no guessing."""
+    composer = (row.get('composer') or '').strip()
+    if composer:
+        return composer
+    return 'Traditional' if _is_traditional(row.get('artist')) else ''
+
+
+def _written_by(writer: str) -> str:
+    if not writer:
+        return ''
+    return 'Traditional' if _is_traditional(writer) else f'Written by {writer}'
+
+
+def recorded_by(row: dict) -> list:
+    """[(name, year or None)] — the artists a page may name: `covering_artists`
+    with their parallel `covering_years`, in the index's order (first
+    recording year first), once each, "Traditional" left out. Never the
+    scraped `artist` unless the build confirmed it into covering_artists
+    (Mike, 2026-10-26). Mirrors recordedBy() in docs/js/utils.js."""
+    names = row.get('covering_artists') or []
+    years = row.get('covering_years') or []
+    out, seen = [], set()
+    for i, name in enumerate(names):
+        name = (name or '').strip()
+        if not name or _is_traditional(name) or name.lower() in seen:
+            continue
+        seen.add(name.lower())
+        year = years[i] if i < len(years) and years[i] else None
+        out.append((name, year))
+    return out
+
+
+def associated_artists(row: dict) -> list:
+    return [name for name, _ in recorded_by(row)]
+
+
+def _recording_link(title: str, name: str, year) -> str:
+    """`Bill Monroe (1947)` linking to a YouTube search for that recording."""
+    query = ' '.join(str(x) for x in (title, name, year) if x)
+    label = f'{name} ({year})' if year else name
+    href = YOUTUBE_SEARCH + quote_plus(query)
+    return (f'<a href="{html.escape(href, quote=True)}" rel="nofollow noopener" '
+            f'target="_blank">{html.escape(label)}</a>')
+
+
 def _description(row: dict) -> str:
     bits = [f"{row.get('title', '')} chords and lyrics"]
-    if row.get('artist'):
-        bits[0] += f", as played by {row['artist']}"
+    writer = _writer(row)
+    if writer:
+        bits.append('Traditional song' if _is_traditional(writer) else f'Written by {writer}')
     if row.get('key'):
         bits.append(f"Key of {row['key']}")
     if row.get('first_line'):
@@ -194,14 +265,14 @@ def _description(row: dict) -> str:
 def render_page(row: dict, chordpro: str, canonical: str) -> str:
     work_id = str(row['id'])
     title = row.get('title') or work_id
-    artist = row.get('artist') or ''
-    composer = row.get('composer') or ''
+    writer = _writer(row)
+    recorders = recorded_by(row)
     esc = html.escape
     app_link = f'/#work/{work_id}'
 
-    head_title = f'{title} ({artist}) chords and lyrics' if artist else f'{title} chords and lyrics'
+    head_title = f'{title} chords and lyrics'
     if not chordpro and row.get('tablature_parts'):
-        head_title = f'{title} ({artist}) tab' if artist else f'{title} tab'
+        head_title = f'{title} tab'
 
     facts = []
     if row.get('key'):
@@ -217,17 +288,14 @@ def render_page(row: dict, chordpro: str, canonical: str) -> str:
 
     ld = {'@context': 'https://schema.org', '@type': 'MusicComposition',
           'name': title, 'url': canonical}
-    if composer:
-        ld['composer'] = {'@type': 'Person', 'name': composer}
+    if writer and not _is_traditional(writer):
+        ld['composer'] = {'@type': 'Person', 'name': writer}
     ld_json = json.dumps(ld, ensure_ascii=False, indent=2).replace('</', '<\\/')
 
     body = []
     body.append(f'<h1>{esc(title)}</h1>')
-    if artist:
-        body.append(f'<p class="by">{esc(artist)}</p>')
-    if composer and composer != artist:
-        written = composer if composer.lower() == 'traditional' else f'Written by {composer}'
-        body.append(f'<p class="by">{esc(written)}</p>')
+    if writer:
+        body.append(f'<p class="by">{esc(_written_by(writer))}</p>')
     if facts:
         body.append(f'<p class="facts">{esc(" · ".join(facts))}</p>')
     if instruments:
@@ -241,6 +309,17 @@ def render_page(row: dict, chordpro: str, canonical: str) -> str:
     mail = ('mailto:hello@bluegrassbook.com?subject='
             + re.sub(r'\s', '%20', esc(subject, quote=True))
             + '&amp;body=' + esc(_page_url(work_id)))
+
+    credits = ''
+    if recorders:
+        links = [_recording_link(title, name, year) for name, year in recorders]
+        shown = ', '.join(links[:FOOTER_ARTISTS])
+        rest = links[FOOTER_ARTISTS:]
+        if rest:
+            # Opened, the rest continues the same line (::details-content).
+            shown += (f'<details><summary> and {len(rest)} more</summary>, '
+                      + ', '.join(rest) + '</details>')
+        credits = f'<div class="artists">Recorded by: {shown}</div>\n'
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -262,7 +341,7 @@ def render_page(row: dict, chordpro: str, canonical: str) -> str:
 {chr(10).join(body)}
 </main>
 <footer>
-<p>From <a href="/">Bluegrass Book</a>, a free songbook for bluegrass jams. Rights holder? <a href="{mail}">Copyright concern</a></p>
+{credits}<p>From <a href="/">Bluegrass Book</a>, a free songbook for bluegrass jams. Rights holder? <a href="{mail}">Copyright concern</a></p>
 </footer>
 </body>
 </html>

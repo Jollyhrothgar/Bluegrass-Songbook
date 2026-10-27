@@ -369,3 +369,77 @@ export function slugify(text) {
         .replace(/[^a-z0-9]+/g, '-')
         .replace(/^-|-$/g, '');
 }
+
+// ---------------------------------------------------------------------------
+// Song credits (F9). `artist` is whichever performer page a chart was scraped
+// from, not whose version it is, so it is never shown — it stays in the data
+// and in search (Mike, 2026-10-26: "too noisy of a label"). The writer is the
+// credit; the MusicBrainz-backed covering artists are shown where someone
+// looks for them (Info pill, a search that names them, the static footer).
+// Mirrors _writer / associated_artists in scripts/lib/build_song_pages.py.
+
+function isTraditional(name) {
+    return String(name || '').trim().toLowerCase() === 'traditional';
+}
+
+/** Who wrote it: `composer`, else "Traditional" when that is all the artist
+ *  field says; '' when unknown — no guessing. */
+export function songWriter(song) {
+    const composer = String(song?.composer || '').trim();
+    if (composer) return composer;
+    return isTraditional(song?.artist) ? 'Traditional' : '';
+}
+
+/** "Written by X", "Traditional", or ''. */
+export function writtenByLabel(writer) {
+    if (!writer) return '';
+    return isTraditional(writer) ? 'Traditional' : `Written by ${writer}`;
+}
+
+/** The song's "Recorded by" list: [{ name, year }] from covering_artists and
+ *  its parallel covering_years (year null when unknown), in index order —
+ *  first recording year first — once each, never "Traditional". Never the
+ *  scraped `artist` unless the build confirmed it against MusicBrainz. A
+ *  credit for recording the SONG, not a label on any chart. */
+export function recordedBy(song) {
+    const years = song?.covering_years || [];
+    const out = [];
+    const seen = new Set();
+    (song?.covering_artists || []).forEach((raw, i) => {
+        const name = String(raw || '').trim();
+        const key = name.toLowerCase();
+        if (!name || isTraditional(name) || seen.has(key)) return;
+        seen.add(key);
+        out.push({ name, year: years[i] || null });
+    });
+    return out;
+}
+
+/** Just the names of recordedBy(). */
+export function associatedArtists(song) {
+    return recordedBy(song).map(r => r.name);
+}
+
+/** "Bill Monroe (1947)", or just the name when the year is unknown. */
+export function recorderLabel({ name, year }) {
+    return year ? `${name} (${year})` : name;
+}
+
+/** YouTube search for one recording: "Song Title Bill Monroe 1947". */
+export function recordingSearchUrl(title, { name, year }) {
+    const q = [title, name, year].filter(Boolean).join(' ');
+    return `https://www.youtube.com/results?search_query=${encodeURIComponent(q).replace(/%20/g, '+')}`;
+}
+
+/** The associated artists a parsed search asked for: an `artist:` filter, or
+ *  free text whose every term is in that one name. */
+export function matchedArtists(song, { textTerms = [], artistFilter = null } = {}) {
+    const terms = textTerms.map(t => String(t).toLowerCase()).filter(Boolean);
+    const filter = String(artistFilter || '').toLowerCase();
+    if (!filter && terms.length === 0) return [];
+    return associatedArtists(song).filter(name => {
+        const n = name.toLowerCase();
+        return (filter && n.includes(filter))
+            || (terms.length > 0 && terms.every(t => n.includes(t)));
+    });
+}

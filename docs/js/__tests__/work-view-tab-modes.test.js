@@ -152,9 +152,9 @@ describe('editing an existing take from its URL', () => {
 
         expect(editors).toHaveLength(1);
         expect(document.querySelector('#work-part-content .otf-editor')).not.toBeNull();
-        // The page is still the song page: title, artist and all
+        // The page is still the song page: title, pills and all
         expect(document.querySelector('.song-title').textContent).toBe('Gold Rush');
-        expect(document.querySelector('.song-artist-line').textContent).toBe('Bill Monroe');
+        expect(document.querySelector('#info-pill')).not.toBeNull();
     });
 
     it('keeps the bottom band, with the session buttons in the ✏️ Edit slot', async () => {

@@ -28,6 +28,10 @@ ARTIST_TAGS_FILE = Path(__file__).parent.parent.parent / 'docs' / 'data' / 'arti
 GRASSINESS_FILE = Path(__file__).parent.parent.parent / 'docs' / 'data' / 'grassiness_scores.json'
 TAG_OVERRIDES_FILE = Path(__file__).parent.parent.parent / 'docs' / 'data' / 'tag_overrides.json'
 LLM_TAGS_FILE = Path(__file__).parent.parent.parent / 'docs' / 'data' / 'llm_tags.json'
+VERIFIED_ARTISTS_FILE = Path(__file__).parent.parent.parent / 'docs' / 'data' / 'verified_artists.json'
+
+# Grassiness's "no known year" sentinel (sorts last; never shown as a date).
+UNKNOWN_YEAR = 9999
 
 
 # =============================================================================
@@ -249,6 +253,69 @@ def load_grassiness_scores() -> dict:
     return _grassiness_cache
 
 
+def load_verified_artists() -> dict:
+    """work_id -> {artist, name, year}: each work's scraped `artist` as checked
+    against MusicBrainz, `name` the credit MusicBrainz shows (null when not
+    confirmed). Built locally by tagging/verify_artists.py (F9)."""
+    if VERIFIED_ARTISTS_FILE.exists():
+        try:
+            with open(VERIFIED_ARTISTS_FILE, 'r') as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"Warning: Could not load verified artists: {e}")
+    return {}
+
+
+def _checked_artist(verified: Optional[dict]) -> str:
+    """The work artist a verified_artists entry was checked against."""
+    if not verified:
+        return ''
+    return str(verified.get('artist') or verified.get('name') or '').strip().lower()
+
+
+def merge_covering_artists(covering_raw: list, verified: Optional[dict],
+                           song_artist: str, sort_key) -> tuple[list, list]:
+    """The song's "Recorded by" list: grassiness covering artists plus the
+    credit MusicBrainz confirmed for the scraped artist (`verified`, used only
+    while it was checked against the work's current artist), once each — the
+    earliest year when a name comes twice — ordered by `sort_key` (first
+    recording year first).
+
+    Returns (names, years): parallel lists; a year is None when unknown.
+    """
+    def real(year):
+        return year if year and year != UNKNOWN_YEAR else None
+
+    entries = {}
+    def add(name, year):
+        if not name:
+            return
+        e = entries.setdefault(name.lower(), {'name': name, 'year': None})
+        if real(year) and (not e['year'] or real(year) < e['year']):
+            e['year'] = real(year)
+
+    for a in covering_raw or []:
+        name, year = (a.get('name'), a.get('year')) if isinstance(a, dict) else (a, None)
+        add(name, year)
+    if (verified and verified.get('name')
+            and _checked_artist(verified) == (song_artist or '').strip().lower()):
+        add(verified['name'], verified.get('year'))
+    entries = sorted(entries.values(), key=sort_key)
+    return [e['name'] for e in entries], [e['year'] for e in entries]
+
+
+def unchecked_artist_count(songs: list, verified: dict) -> int:
+    """Works whose artist was never checked against MusicBrainz (new works,
+    or an artist changed since): what `refresh-musicbrainz` would catch up."""
+    n = 0
+    for song in songs:
+        artist = (song.get('artist') or '').strip().lower()
+        if artist and artist != 'traditional' and \
+                _checked_artist(verified.get(song.get('id', ''))) != artist:
+            n += 1
+    return n
+
+
 # =============================================================================
 # Tag Overrides (Trusted User Votes)
 # =============================================================================
@@ -417,6 +484,11 @@ def enrich_songs_with_tags(songs: list[dict], use_musicbrainz: bool = True) -> l
 
     # Pre-load grassiness scores for covering_artists data (display only, not for tagging)
     scores = load_grassiness_scores()
+    verified_artists = load_verified_artists()
+    stale = unchecked_artist_count(songs, verified_artists)
+    if stale:
+        print(f"  MusicBrainz: {stale} works' artists never checked — "
+              f"run ./scripts/utility refresh-musicbrainz (local)")
     from tagging.grassiness import normalize_title, get_bluegrass_artists
     artist_tier_weights = get_bluegrass_artists()
 
@@ -443,7 +515,7 @@ def enrich_songs_with_tags(songs: list[dict], use_musicbrainz: bool = True) -> l
         """
         if isinstance(artist_data, dict):
             name = artist_data.get('name', '')
-            year = artist_data.get('year', 9999)
+            year = artist_data.get('year') or UNKNOWN_YEAR
         else:
             name = artist_data
             year = 9999
@@ -561,25 +633,18 @@ def enrich_songs_with_tags(songs: list[dict], use_musicbrainz: bool = True) -> l
                 if normalized in scores_by_title:
                     covering_artists_raw = scores_by_title[normalized].get('artists', [])
 
-        if covering_artists_raw:
-            # Deduplicate by artist name
-            seen = set()
-            unique_artists = []
-            for a in covering_artists_raw:
-                # Handle both new format (dict) and old format (string)
-                name = a.get('name') if isinstance(a, dict) else a
-                if name and name not in seen:
-                    seen.add(name)
-                    unique_artists.append(a)
-
-            # Sort by: earliest year, tier weight (desc), prominence, alphabetically
-            unique_artists.sort(key=artist_sort_key)
-
-            # Extract just names for the index (frontend expects list of strings)
-            song['covering_artists'] = [
-                a.get('name') if isinstance(a, dict) else a
-                for a in unique_artists
-            ]
+        # Plus the scraped artist when MusicBrainz confirmed it recorded the
+        # song (F9) — a credit for recording the SONG, never a label on the
+        # chart. Not subject to the ambiguous-title skip: it is keyed by work.
+        names, years = merge_covering_artists(
+            covering_artists_raw, verified_artists.get(song_id),
+            song.get('artist', ''), artist_sort_key)
+        if names:
+            # Sorted by: earliest year, tier weight (desc), prominence, name.
+            # covering_artists stays a list of strings; covering_years is
+            # parallel (int or null) for the "Recorded by" display.
+            song['covering_artists'] = names
+            song['covering_years'] = years
 
         # Remove excluded tags (from work.yaml exclude_tags field)
         exclude_tags = song.get('exclude_tags', [])

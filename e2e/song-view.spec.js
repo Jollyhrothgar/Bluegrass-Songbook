@@ -10,10 +10,11 @@ test.describe('Song View', () => {
         await searchAndOpen(page, 'old home place', /old home place/i);
     });
 
-    test('displays song title and artist line', async ({ page }) => {
+    test('displays song title and writer line, no artist (F9)', async ({ page }) => {
         await expect(page.locator('.song-title')).toBeVisible();
         await expect(page.locator('.song-title')).toContainText(/old home place/i);
-        await expect(page.locator('.song-artist-line')).toBeVisible();
+        await expect(page.locator('.song-writer-line')).toContainText(/Written by Dean Webb/);
+        await expect(page.locator('.song-header')).not.toContainText(/New South/);
     });
 
     test('Info pill discloses song details and tags', async ({ page }) => {
