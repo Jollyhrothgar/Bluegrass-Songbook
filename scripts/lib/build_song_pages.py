@@ -44,6 +44,7 @@ import html
 import json
 import re
 import shutil
+import subprocess
 from pathlib import Path
 from urllib.parse import quote_plus
 
@@ -364,11 +365,46 @@ def _write_if_changed(path: Path, text: str) -> bool:
 
 
 def _sitemap(urls: list) -> str:
+    """urls: [(url, lastmod 'YYYY-MM-DD' or None)]."""
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    lines += [f'  <url><loc>{html.escape(u)}</loc></url>' for u in urls]
+    for url, lastmod in urls:
+        mod = f'<lastmod>{lastmod}</lastmod>' if lastmod else ''
+        lines.append(f'  <url><loc>{html.escape(url)}</loc>{mod}</url>')
     lines.append('</urlset>')
     return '\n'.join(lines) + '\n'
+
+
+def git_dates(repo: Path, paths: list) -> dict:
+    """{path's first segment below its root: date of the last commit touching it}.
+
+    For `paths=['works']` that is {work id: 'YYYY-MM-DD'}; for a list of
+    files it is {file name: date}. The sitemap's <lastmod> comes from here,
+    because Google only uses lastmod when it is consistently accurate: a page
+    is dated by the last commit that changed its content, never by the build.
+    Returns {} without full history (CI's default shallow clone dates every
+    file to the one commit it has) or outside a git checkout — the sitemap
+    then simply has no <lastmod>.
+    """
+    def git(*args):
+        return subprocess.run(['git', '-C', str(repo), *args], capture_output=True,
+                              text=True, check=True).stdout
+    try:
+        if git('rev-parse', '--is-shallow-repository').strip() != 'false':
+            return {}
+        log = git('log', '--format=%x00%cs', '--name-only', '--no-renames', '--', *paths)
+    except (OSError, subprocess.CalledProcessError):
+        return {}
+    dates, current = {}, None
+    for line in log.splitlines():
+        if line.startswith('\x00'):
+            current = line[1:]
+        elif line:
+            for root in paths:
+                if line == root or line.startswith(root.rstrip('/') + '/'):
+                    key = line[len(root):].lstrip('/').split('/')[0] or root
+                    dates.setdefault(key, current)      # newest first: keep the first
+    return dates
 
 
 def _read_jsonl(path: Path) -> list:
@@ -378,7 +414,7 @@ def _read_jsonl(path: Path) -> list:
         return [json.loads(line) for line in f if line.strip()]
 
 
-def build_song_pages(docs_dir: Path) -> dict:
+def build_song_pages(docs_dir: Path, work_dates: dict = None, page_dates: dict = None) -> dict:
     """Write a page per song and version, docs/404.html and docs/sitemap.xml.
 
     A song's page (`songs/{song}/`) is indexed and listed in the sitemap, and
@@ -387,10 +423,18 @@ def build_song_pages(docs_dir: Path) -> dict:
     404.html is the app as is (index.html carries `<base href="/">`): GitHub
     Pages serves it for any path without a page (an archived song), and
     main.js routes that path.
+
+    Each sitemap URL carries <lastmod>: a song's is the newest commit to its
+    own work or any of its versions (its page lists them); a static page's is
+    its file's. `work_dates` / `page_dates` default to git (see git_dates).
     """
     docs_dir = Path(docs_dir)
     data_dir = docs_dir / 'data'
     template = (docs_dir / 'index.html').read_text(encoding='utf-8')
+    if work_dates is None:
+        work_dates = git_dates(docs_dir.parent, ['works'])
+    if page_dates is None:
+        page_dates = git_dates(docs_dir.parent, [f'docs/{p or "index.html"}' for p in STATIC_PAGES])
     out_dir = docs_dir / SONGS_DIR
     rows = _read_jsonl(data_dir / 'index.jsonl')
     everything = rows + _read_jsonl(data_dir / 'archive.jsonl')
@@ -432,8 +476,9 @@ def build_song_pages(docs_dir: Path) -> dict:
                        f'{link(song, song.get("title") or root)}</p>') if song else ''
         else:
             canonical = _page_url(row)
-            song_urls.append(canonical)
             versions = sorted(versions_of.get(work_id, []), key=_version_order)
+            dated = [work_dates.get(str(r['id'])) for r in [row] + versions]
+            song_urls.append((canonical, max((d for d in dated if d), default=None)))
             related = ('<p class="facts">Versions: '
                        + ' · '.join(link(v, _version_name(v)) for v in versions)
                        + '</p>') if versions else ''
@@ -458,7 +503,7 @@ def build_song_pages(docs_dir: Path) -> dict:
     _fill(template, '<base href="/">', '<base href="/">')   # fails loudly if it's gone
     _write_if_changed(docs_dir / '404.html', template)
 
-    urls = [ORIGIN + p for p in STATIC_PAGES] + song_urls
+    urls = [(ORIGIN + p, page_dates.get(f'docs/{p or "index.html"}')) for p in STATIC_PAGES] + song_urls
     _write_if_changed(docs_dir / 'sitemap.xml', _sitemap(urls))
     print(f"Song pages: {len(pages)} in {out_dir} ({written} written, {pruned} pruned); "
           f"sitemap.xml lists {len(urls)} URLs")

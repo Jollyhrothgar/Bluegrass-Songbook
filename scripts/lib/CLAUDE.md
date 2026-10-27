@@ -357,7 +357,13 @@ and `songs/{id}.pro` just written and emits, both gitignored:
 - `docs/404.html`: `index.html` as is. GitHub Pages (and `scripts/server`)
   serve it for a path with no page — an archived song — and the app routes it.
 - `docs/sitemap.xml`: `STATIC_PAGES` + every SONG page (one per song;
-  versions are left out).
+  versions are left out), each with `<lastmod>`: the date of the last commit
+  to the song's work or any of its versions (a static page: its file's).
+  Google uses lastmod only when it is consistently accurate, so it is never
+  the build date. `git_dates()` needs full history — the deploy job checks
+  out with `fetch-depth: 0` + `filter: blob:none` — and returns nothing on
+  a shallow clone, which leaves the sitemap undated rather than wrong.
+  Nothing pings Google: it re-reads the sitemap named in `robots.txt`.
 
 Songs are hash routes in the app, which Google indexes as one URL; these
 pages are how songs reach search (G2). Until 2026-10-26 they were a separate,

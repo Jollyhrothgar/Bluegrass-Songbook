@@ -379,3 +379,46 @@ def test_rebuild_prunes_version_pages_and_their_folders(tmp_path):
     build_song_pages(docs)
     assert not (docs / "songs" / "house-of-gold" / "2").exists()
     assert (docs / "songs" / "house-of-gold" / "banjo-tab" / "index.html").exists()
+
+
+def test_sitemap_dates_a_song_by_its_newest_version(tmp_path):
+    docs = make_docs(tmp_path, SONG_ROWS, SONG_CHARTS)
+    build_song_pages(docs, work_dates={"house-of-gold": "2026-07-31", "a-house-of-gold": "2026-10-26"},
+                     page_dates={"docs/index.html": "2026-10-20"})
+    xml = (docs / "sitemap.xml").read_text()
+    assert f"<loc>{ORIGIN}songs/house-of-gold/</loc><lastmod>2026-10-26</lastmod>" in xml
+    assert f"<loc>{ORIGIN}</loc><lastmod>2026-10-20</lastmod>" in xml
+    assert f"<loc>{ORIGIN}about.html</loc></url>" in xml        # no date known: no <lastmod>
+
+
+def git_repo(path):
+    import subprocess
+    def git(*args, env=None):
+        subprocess.run(["git", "-C", str(path), *args], check=True, capture_output=True, env=env)
+    path.mkdir()
+    git("init", "-q")
+    for when, work in (("2026-01-02T00:00:00", "a"), ("2026-03-04T00:00:00", "b"), ("2026-05-06T00:00:00", "a")):
+        (path / "works" / work).mkdir(parents=True, exist_ok=True)
+        (path / "works" / work / "work.yaml").write_text(f"title: {when}\n")
+        git("add", "-A")
+        env = {"GIT_AUTHOR_DATE": when, "GIT_COMMITTER_DATE": when, "PATH": __import__("os").environ["PATH"],
+               "GIT_AUTHOR_NAME": "t", "GIT_AUTHOR_EMAIL": "t@t", "GIT_COMMITTER_NAME": "t",
+               "GIT_COMMITTER_EMAIL": "t@t", "HOME": str(path)}
+        git("commit", "-q", "-m", work, env=env)
+    return git
+
+
+def test_git_dates_are_each_works_last_commit(tmp_path):
+    from build_song_pages import git_dates
+    git_repo(tmp_path / "repo")
+    assert git_dates(tmp_path / "repo", ["works"]) == {"a": "2026-05-06", "b": "2026-03-04"}
+
+
+def test_git_dates_refuse_a_shallow_clone(tmp_path):
+    import subprocess
+    from build_song_pages import git_dates
+    git_repo(tmp_path / "repo")
+    subprocess.run(["git", "clone", "-q", "--depth", "1", f"file://{tmp_path / 'repo'}", str(tmp_path / "shallow")],
+                   check=True, capture_output=True)
+    assert git_dates(tmp_path / "shallow", ["works"]) == {}
+    assert git_dates(tmp_path / "not-a-repo", ["works"]) == {}
