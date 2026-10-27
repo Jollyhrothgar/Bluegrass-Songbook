@@ -1,0 +1,74 @@
+#!/usr/bin/env bash
+#
+# refresh-musicbrainz — rebuild every cache that needs the local MusicBrainz
+# database, in dependency order, then rebuild the index with them.
+#
+#   ./scripts/utility refresh-musicbrainz
+#
+# The caches it writes are committed (CI never has MusicBrainz):
+#   docs/data/artist_tags.json        query_artist_tags.py --refresh
+#   docs/data/bluegrass_*.json        grassiness.py --build-all
+#   docs/data/grassiness_scores.json  grassiness.py --score-index
+#   docs/data/verified_artists.json   tagging/verify_artists.py
+#
+# Starts Colima and the musicbrainz-db container if they are down, and stops
+# whatever it started. Every index build prints how many works' artists were
+# never checked — that number is what this command brings back to zero.
+#
+set -euo pipefail
+
+REPO_ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
+cd "$REPO_ROOT"
+
+MB_DB_DIR="${MB_DB_DIR:-$HOME/workspace/music_brainz/mb-db}"
+export MB_PORT="${MB_PORT:-5440}"
+
+started_colima=false
+started_db=false
+cleanup() {
+    if $started_db; then (cd "$MB_DB_DIR" && ./scripts/db stop) || true; fi
+    if $started_colima; then colima stop || true; fi
+}
+trap cleanup EXIT
+
+step() { echo ""; echo "=== $* ==="; }
+
+step "MusicBrainz database"
+if command -v colima >/dev/null 2>&1 && ! colima status >/dev/null 2>&1; then
+    colima start
+    started_colima=true
+fi
+if ! docker ps --format '{{.Names}}' | grep -qx musicbrainz-db; then
+    if [ ! -x "$MB_DB_DIR/scripts/db" ]; then
+        echo "No MusicBrainz setup at $MB_DB_DIR (set MB_DB_DIR)." >&2
+        exit 1
+    fi
+    (cd "$MB_DB_DIR" && ./scripts/db start)
+    started_db=true
+fi
+echo "Up on port $MB_PORT."
+
+# The artist-tag and grassiness steps read the built index, so build it first.
+# build_works_index.py directly, not bootstrap (the same build with --quick):
+# bootstrap probes 1Password for secrets this never needs, and each probe
+# pops an authorization dialog.
+build_index() { uv run python3 scripts/lib/build_works_index.py; }
+step "Index (input to the caches)"
+build_index
+
+step "Artist tags"
+uv run python3 scripts/lib/query_artist_tags.py --refresh
+
+step "Grassiness (covering artists + years)"
+uv run python3 scripts/lib/tagging/grassiness.py --build-all
+uv run python3 scripts/lib/tagging/grassiness.py --score-index > /dev/null
+
+step "Scraped artists confirmed against MusicBrainz"
+uv run python3 scripts/lib/tagging/verify_artists.py
+
+step "Index (with the fresh caches)"
+build_index
+
+step "Changed caches — commit these"
+git status --short -- docs/data/artist_tags.json docs/data/bluegrass_*.json \
+    docs/data/grassiness_scores.json docs/data/verified_artists.json

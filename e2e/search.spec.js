@@ -41,12 +41,13 @@ test.describe('Search', () => {
         await input.pressSequentially('artist:hank williams', { delay: 30 });
         await page.waitForTimeout(500);
 
-        // Results match on song.artist OR covering artists, but the
-        // displayed .result-artist is the first COVERING artist by design
-        // (bluegrass legends first), so don't assert on its text.
+        // artist: matches "Recorded by" (MusicBrainz-confirmed recorders) or
+        // the writer — only what a row shows (F9). Hank Williams is confirmed
+        // on his own songs, so the row says why it matched.
         const results = page.locator('.result-item');
         const count = await results.count();
         expect(count).toBeGreaterThan(0);
+        await expect(results.first()).toContainText(/hank williams/i);
 
         // The stats line reflects the artist filter
         await expect(page.locator('#search-stats')).toContainText(/hank williams/i);

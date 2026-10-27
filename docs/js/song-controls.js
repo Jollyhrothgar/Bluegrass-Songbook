@@ -17,7 +17,7 @@ import {
     subscribe
 } from './state.js';
 import { CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
-import { escapeHtml, escapeAttr, safeUrl, downloadFile } from './utils.js';
+import { escapeHtml, escapeAttr, safeUrl, downloadFile, songWriter, recordedBy, recorderLabel, recordingSearchUrl } from './utils.js';
 import { getSongContent } from './song-content.js';
 import { pill } from './shell.js';
 import { trackTranspose, trackExport } from './analytics.js';
@@ -240,34 +240,37 @@ const SOURCE_DISPLAY_NAMES = {
 };
 
 /**
- * Info pill: artists, composers, tags (+ suggest form), covering artists —
- * the content the old collapsible Info bar showed.
+ * Info pill: writer, associated artists, tags (+ suggest form) — the content
+ * the old collapsible Info bar showed. Since F9 this is the only place on the
+ * song page that names performers: "Recorded by", the MusicBrainz-backed
+ * covering artists with years. `artist` is whichever page a chart was scraped
+ * from; it is never shown as such.
  */
 export function buildInfoPill(song, versions = []) {
     return pill('Info', (container) => {
-        const artist = song?.artist || '';
-        const composer = song?.composer || '';
+        const writer = songWriter(song);
 
-        // Build artists list: primary + covering artists + other version artists
-        const allArtists = new Set();
-        if (artist) allArtists.add(artist);
-        (song?.covering_artists || []).forEach(a => allArtists.add(a));
-        versions.forEach(v => { if (v.artist) allArtists.add(v.artist); });
-        const artistsList = Array.from(allArtists);
+        // "Recorded by", first recording first: MusicBrainz-backed covering
+        // artists (incl. a confirmed scraped artist). Never an unconfirmed
+        // scraped `artist`, this song's or its versions' (F9).
+        const artistsList = recordedBy(song);
 
         const infoItems = [];
-        if (composer) {
-            infoItems.push(`<div class="info-item"><span class="info-label">Written by:</span> ${escapeHtml(composer)}</div>`);
+        if (writer) {
+            infoItems.push(`<div class="info-item"><span class="info-label">Written by:</span> ${escapeHtml(writer)}</div>`);
         }
         if (artistsList.length > 0) {
+            // Each recorder links to a YouTube search for that recording
+            // ("Song Title Bill Monroe 1947").
+            const link = (r) => `<a class="recorded-by-link" href="${escapeAttr(recordingSearchUrl(song?.title || '', r))}" target="_blank" rel="noopener">${escapeHtml(recorderLabel(r))}</a>`;
             const maxVisible = 3;
             const hasMore = artistsList.length > maxVisible;
             const visibleArtists = hasMore ? artistsList.slice(0, maxVisible) : artistsList;
             const hiddenArtists = hasMore ? artistsList.slice(maxVisible) : [];
             const artistsHtml = hasMore
-                ? `<span class="artists-visible">${visibleArtists.map(a => escapeHtml(a)).join(', ')}</span><button class="artists-toggle" data-artists="expand" type="button">… <span class="artists-more">(+${hiddenArtists.length})</span></button><span class="artists-hidden hidden" data-artists="full">, ${hiddenArtists.map(a => escapeHtml(a)).join(', ')}</span><button class="artists-toggle hidden" data-artists="collapse" type="button">(collapse)</button>`
-                : visibleArtists.map(a => escapeHtml(a)).join(', ');
-            infoItems.push(`<div class="info-item"><span class="info-label">Artists:</span> <span class="artists-list">${artistsHtml}</span></div>`);
+                ? `<span class="artists-visible">${visibleArtists.map(link).join(', ')}</span><button class="artists-toggle" data-artists="expand" type="button">… <span class="artists-more">(+${hiddenArtists.length})</span></button><span class="artists-hidden hidden" data-artists="full">, ${hiddenArtists.map(link).join(', ')}</span> <button class="artists-toggle hidden" data-artists="collapse" type="button">(collapse)</button>`
+                : visibleArtists.map(link).join(', ');
+            infoItems.push(`<div class="info-item"><span class="info-label">Recorded by:</span> <span class="artists-list">${artistsHtml}</span></div>`);
         }
         const bookDisplay = song?.book || null;
         const bookUrl = song?.book_url || null;

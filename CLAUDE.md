@@ -17,7 +17,7 @@ Corpus size drifts constantly, so count it rather than quoting this file:
 ./scripts/bootstrap          # First-time setup (install deps + build index)
 ./scripts/server             # Start frontend (walks 8080-8090; --exact to pin)
 ./scripts/utility help               # THE list of subcommands (~30 of them)
-./scripts/utility refresh-tags       # Refresh tags from MusicBrainz (local only)
+./scripts/utility refresh-musicbrainz  # Rebuild every MusicBrainz cache (local only)
 ./scripts/utility build-posts        # Build blog posts manifest
 ./scripts/bootstrap --quick          # Rebuild docs/data/ from works/
 ```
@@ -181,7 +181,7 @@ Bluegrass-Songbook/
 ├── scripts/                 # CLI tools
 │   ├── bootstrap            # Setup + build index
 │   ├── server               # Start dev server
-│   ├── utility              # add-song, count-chords, refresh-tags
+│   ├── utility              # add-song, count-chords, refresh-musicbrainz
 │   └── lib/                 # Python implementations
 │       ├── build_works_index.py  # PRIMARY: Build index from works/
 │       ├── work_schema.py        # work.yaml schema
@@ -400,26 +400,24 @@ rebuilds `docs/data/`.
 
 This runs `build_works_index.py`, which reads all `works/*/work.yaml` files and builds the search index.
 
-### Refreshing MusicBrainz Tags (Local Only)
+### Refreshing MusicBrainz Data (Local Only)
 
-MusicBrainz tag enrichment requires a local PostgreSQL database with the MusicBrainz dump. This cannot run in CI.
+Four caches need a local PostgreSQL copy of the MusicBrainz dump
+(`~/workspace/music_brainz/mb-db`, Docker container `musicbrainz-db`, port
+5440; on Mike's M4 laptop it runs under Colima). CI never has it, so the
+caches are committed and CI reads them. One command rebuilds all of them in
+order and rebuilds the index:
 
 ```bash
-# 1. Start the MusicBrainz database (separate repo)
-/Users/mike/workspace/music_brainz/mb-db/scripts/db start
-
-# 2. Install psycopg2 if needed
-uv pip install psycopg2-binary
-
-# 3. Refresh artist tags and rebuild index
-./scripts/utility refresh-tags
-
-# 4. Commit the updated cache (CI uses this)
-git add docs/data/artist_tags.json
-git commit -m "Refresh MusicBrainz artist tags"
+uv sync --extra analytics                 # psycopg2 lives in this extra
+./scripts/utility refresh-musicbrainz     # starts/stops Colima + the DB itself
+git add docs/data/artist_tags.json docs/data/bluegrass_*.json \
+        docs/data/grassiness_scores.json docs/data/verified_artists.json
 ```
 
-The `artist_tags.json` cache is checked into git so CI builds can apply tags without the MusicBrainz database.
+Every index build prints `MusicBrainz: N works' artists never checked` when
+works arrived (or artists changed) since the last refresh — that is the
+signal to run it. Details: `scripts/lib/refresh-musicbrainz`.
 
 ## Format: ChordPro + Extensions
 
@@ -523,7 +521,7 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 - **Strum Machine integration**: 605+ songs with practice backing tracks
 - **UI redesign (Jul 2026)**: app shell with top/bottom bands, pill controls (Key/Display/Info/Export/Arrangement) replacing the old quick-controls bar, sidebar, and version-picker modal
 - **Auto-hiding chrome**: the top band hides while you scroll through a song (replaced focus mode)
-- **Covering artists**: Shows which bluegrass legends recorded each song
+- **Covering artists**: which bluegrass legends recorded each song. Since F9 (Oct 2026) the scraped `artist` is never a label on a chart: the writer is the credit, and "Recorded by: Bill Monroe (1947), …" lists MusicBrainz-confirmed recorders (covering artists + confirmed scraped artists, `./scripts/utility refresh-musicbrainz`), each a YouTube search, in the Info pill and static footer
 - **Multi-owner lists**: Collaborative list curation with follow/unfollow
 - **Thunderdome**: Claim abandoned lists (now 1 year inactivity threshold)
 - **Frictionless feedback**: Report issues and request songs with no account at all

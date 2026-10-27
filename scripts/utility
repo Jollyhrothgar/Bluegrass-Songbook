@@ -29,9 +29,11 @@ show_help() {
     echo "  count-chords [path]"
     echo "      Count chord usage in .pro files"
     echo ""
-    echo "  refresh-tags"
-    echo "      Refresh artist tags from MusicBrainz (requires local MB database)"
-    echo "      and rebuild the index"
+    echo "  refresh-musicbrainz   (alias: refresh-tags)"
+    echo "      Rebuild every cache that needs the local MusicBrainz database —"
+    echo "      artist tags, grassiness / covering artists + years, scraped artists"
+    echo "      confirmed for \"Recorded by\" — then rebuild the index. Starts and"
+    echo "      stops Colima + the DB as needed. Commit the caches it lists."
     echo ""
     echo "  sync-tag-votes"
     echo "      Sync tag overrides from trusted user votes in Supabase"
@@ -136,14 +138,10 @@ case "$COMMAND" in
     count-chords)
         uv run python3 scripts/lib/chord_counter.py "$@"
         ;;
-    refresh-tags)
-        echo "Refreshing artist tags from MusicBrainz..."
-        MB_PORT=5440 uv run python3 scripts/lib/query_artist_tags.py --refresh
-        echo ""
-        echo "Rebuilding index with updated tags..."
-        uv run python3 scripts/lib/build_index.py
-        echo ""
-        echo "Done! Tags refreshed and index rebuilt."
+    refresh-musicbrainz|refresh-tags)
+        # refresh-tags used to refresh artist tags only, then rebuild with the
+        # LEGACY build_index.py; it now does every MusicBrainz cache.
+        ./scripts/lib/refresh-musicbrainz
         ;;
     sync-tag-votes)
         echo "Fetching tag overrides from trusted user votes..."
