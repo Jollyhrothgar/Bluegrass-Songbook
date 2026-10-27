@@ -1,11 +1,16 @@
 id: turn-around-1
 title: Turn Around
+song: turn-around
+version: '2'
 artist: Carl Perkins
 default_key: C
 tags:
 - Rockabilly
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

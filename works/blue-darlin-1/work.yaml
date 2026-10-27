@@ -1,11 +1,16 @@
 id: blue-darlin-1
 title: Blue Darlin'
+song: blue-darlin
+version: '2'
 artist: Leona Williams
 composers:
 - Leslie Lyle
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

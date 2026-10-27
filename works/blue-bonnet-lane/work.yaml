@@ -1,11 +1,16 @@
 id: blue-bonnet-lane
 title: Blue Bonnet Lane
+song: bluebonnet-lane
+version: '2'
 artist: J.D. Crowe
 composers:
 - Cindy Walker
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

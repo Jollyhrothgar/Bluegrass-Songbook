@@ -1,11 +1,16 @@
 id: i-got-a-hole-in-my-pocket-1
 title: I Got A Hole In My Pocket
+song: i-got-a-hole-in-my-pocket
+version: '2'
 artist: Little Jimmy Dickens
 composers:
 - Boudleaux Bryant and Felice Bryant
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

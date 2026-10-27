@@ -1,5 +1,7 @@
 id: don-t-cheat-in-our-home-town
 title: Don't Cheat In Our Home Town
+song: dont-cheat-in-our-hometown
+version: '2'
 artist: Ricky Skaggs
 composers:
 - Ray Pennington and Roy Marcum
@@ -10,6 +12,9 @@ tags:
 - Gospel
 - Folk
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

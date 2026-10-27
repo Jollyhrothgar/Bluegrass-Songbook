@@ -1,11 +1,15 @@
 id: someday-soon-1
 title: Someday Soon
+slug: someday-soon
 artist: Suzy Bogguss
 composers:
 - Ian Tyson
 default_key: C
 tags:
 - ClassicCountry
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

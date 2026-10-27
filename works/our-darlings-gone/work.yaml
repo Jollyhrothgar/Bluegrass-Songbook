@@ -1,6 +1,11 @@
 id: our-darlings-gone
 title: Our Darling’s Gone
+song: our-darlins-gone
+version: '2'
 tags: []
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

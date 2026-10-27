@@ -1,9 +1,14 @@
 id: my-baby-s-gone-1
 title: My Baby's Gone
+song: my-babys-gone
+version: '3'
 artist: Jim Ed Brown
 composers:
 - Hazel Houser
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

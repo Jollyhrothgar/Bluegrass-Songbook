@@ -1,9 +1,14 @@
 id: you-never-cross-my-mind-1
 title: You Never Cross My Mind
+song: you-never-cross-my-mind
+version: '2'
 artist: Vern Gosdin
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

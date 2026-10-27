@@ -223,6 +223,9 @@ class TestFullBuild:
     def repo(self, tmp_path, monkeypatch):
         works = tmp_path / 'works'
         (tmp_path / 'docs' / 'data').mkdir(parents=True)
+        # Song pages are built from the app's own index.html.
+        (tmp_path / 'docs' / 'index.html').write_text(
+            (REPO_ROOT / 'docs' / 'index.html').read_text(encoding='utf-8'), encoding='utf-8')
 
         sheet = works / 'canon-tune'
         sheet.mkdir(parents=True)

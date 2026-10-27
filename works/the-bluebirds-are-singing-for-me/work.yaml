@@ -1,5 +1,12 @@
 id: the-bluebirds-are-singing-for-me
 title: The Bluebirds Are Singing For Me
+song: bluebirds-are-singing-for-me
+version: '2'
+composers:
+- Lester Flatt
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -9,5 +16,3 @@ parts:
     source: bluegrass-lyrics
     source_url: https://www.bluegrasslyrics.com/song/the-bluebirds-are-singing-for-me/
     imported_at: '2026-02-08'
-composers:
-- Lester Flatt

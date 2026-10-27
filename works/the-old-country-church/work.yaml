@@ -1,10 +1,15 @@
 id: the-old-country-church
 title: The Old Country Church
+song: old-country-church
+version: '2'
 artist: The Statler Brothers
 default_key: G
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

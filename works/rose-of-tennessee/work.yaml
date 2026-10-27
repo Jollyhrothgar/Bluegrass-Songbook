@@ -1,5 +1,7 @@
 id: rose-of-tennessee
 title: Rose Of Tennessee
+song: rose-of-tennessee-the
+version: '2'
 artist: Cowboy Copas
 composers:
 - Robert Foster and Lloyd Copas
@@ -9,6 +11,9 @@ tags:
 - JamFriendly
 - Jazzy
 - Instrumental
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

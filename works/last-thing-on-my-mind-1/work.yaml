@@ -1,10 +1,17 @@
 id: last-thing-on-my-mind-1
 title: Last Thing On My Mind
+song: last-thing-on-my-mind
+version: '2'
 artist: Tom Paxton
+composers:
+- Tom Paxton
 default_key: G
 tags:
 - Folk
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -13,5 +20,3 @@ parts:
   provenance:
     source: golden-standard
     imported_at: '2026-01-02'
-composers:
-- Tom Paxton

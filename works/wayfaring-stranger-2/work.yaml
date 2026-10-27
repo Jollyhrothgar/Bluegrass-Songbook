@@ -1,9 +1,16 @@
 id: wayfaring-stranger-2
 title: Wayfaring Stranger
+song: wayfaring-stranger-1
+version: '3'
 artist: Traditional
+composers:
+- Traditional
 default_key: Em
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -12,5 +19,3 @@ parts:
   provenance:
     source: golden-standard
     imported_at: '2026-01-02'
-composers:
-- Traditional

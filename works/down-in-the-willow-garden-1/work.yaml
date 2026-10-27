@@ -1,11 +1,16 @@
 id: down-in-the-willow-garden-1
 title: Down In The Willow Garden
+song: down-in-the-willow-garden
+version: '2'
 artist: The Osborne Brothers
 composers:
 - Traditional
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

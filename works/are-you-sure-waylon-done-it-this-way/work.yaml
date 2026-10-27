@@ -1,5 +1,7 @@
 id: are-you-sure-waylon-done-it-this-way
 title: Are You Sure Waylon Done It This Way
+song: are-you-sure-hank-done-it-this-way
+version: '2'
 artist: Clint Black
 composers:
 - Waylon Jennings
@@ -7,6 +9,9 @@ default_key: G
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

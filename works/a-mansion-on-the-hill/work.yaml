@@ -1,9 +1,14 @@
 id: a-mansion-on-the-hill
 title: A Mansion on the Hill
+song: mansion-on-the-hill
+version: '2'
 artist: Hank Williams
 composers:
 - Fred Rose and Hank Williams
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

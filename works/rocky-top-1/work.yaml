@@ -1,10 +1,18 @@
 id: rocky-top-1
 title: Rocky Top
-artist: Boudleaux Bryant, Felice Bryant
+song: rocky-top
+version: '2'
+artist: 'Boudleaux Bryant, Felice Bryant'
+composers:
+- Boudleaux Bryant
+- Felice Bryant
 default_key: G
 tags:
 - JamFriendly
 - Modal
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -13,6 +21,3 @@ parts:
   provenance:
     source: golden-standard
     imported_at: '2026-01-02'
-composers:
-- Boudleaux Bryant
-- Felice Bryant

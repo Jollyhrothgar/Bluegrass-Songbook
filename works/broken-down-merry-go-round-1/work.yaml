@@ -1,11 +1,16 @@
 id: broken-down-merry-go-round-1
 title: Broken Down Merry Go Round
+song: broken-down-merry-go-round
+version: '2'
 artist: Jimmy Wakely
 composers:
 - Arthur Herbert and Fred Stryker
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

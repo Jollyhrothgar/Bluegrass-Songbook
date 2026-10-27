@@ -1,8 +1,10 @@
 id: kneeling-drunkard-s-plea-1
 title: Kneeling Drunkard's Plea
+song: kneeling-drunkard-s-plea
+version: '2'
 artist: Johnny Cash
 composers:
-- June, Helen and Anita Carter
+- 'June, Helen and Anita Carter'
 default_key: C
 tags:
 - ClassicCountry
@@ -11,6 +13,9 @@ tags:
 - Gospel
 - Outlaw
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

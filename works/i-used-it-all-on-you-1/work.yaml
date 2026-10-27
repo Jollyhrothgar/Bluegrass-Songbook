@@ -1,11 +1,16 @@
 id: i-used-it-all-on-you-1
 title: I Used It All On You
+song: i-used-it-all-on-you
+version: '2'
 artist: Nat Stuckey
 composers:
 - Tom Crum
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

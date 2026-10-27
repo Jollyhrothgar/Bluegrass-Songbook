@@ -1,5 +1,7 @@
 id: a-way-to-survive-1
 title: A Way to Survive
+song: a-way-to-survive
+version: '2'
 artist: Ray Price
 composers:
 - Hank Cochran and Moneen Carpenter
@@ -7,6 +9,9 @@ default_key: G
 tags:
 - JamFriendly
 - Modal
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

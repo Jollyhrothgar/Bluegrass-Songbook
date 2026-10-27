@@ -1,11 +1,16 @@
 id: if-you-think-you-re-lonely-1
 title: If You Think You're Lonely
+song: if-you-think-you-re-lonely
+version: '2'
 artist: Ray Price
 composers:
-- Linda Buell, Carl Rupp, Larry Johnson
+- 'Linda Buell, Carl Rupp, Larry Johnson'
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

@@ -1,9 +1,14 @@
 id: you-ve-been-a-friend-to-me
 title: You've Been A Friend To Me
+song: youve-been-a-friend-to-me
+version: '2'
 artist: The Price Sisters
 composers:
 - A.P. Carter
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

@@ -1,11 +1,16 @@
 id: i-am-a-pilgrim-1
 title: I Am A Pilgrim
+song: i-am-a-pilgrim
+version: '2'
 artist: Alabama
 composers:
 - Merle Travis
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

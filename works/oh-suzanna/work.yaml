@@ -1,6 +1,11 @@
 id: oh-suzanna
 title: Oh Suzanna
+song: oh-susanna
+version: '2'
 tags: []
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

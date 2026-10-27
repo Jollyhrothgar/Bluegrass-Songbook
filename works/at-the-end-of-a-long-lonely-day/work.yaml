@@ -1,11 +1,16 @@
 id: at-the-end-of-a-long-lonely-day
 title: At The End Of A Long Lonely Day
+song: at-the-end-of-long-lonely-day
+version: '2'
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: bluegrass-lyrics
-      source_url: https://www.bluegrasslyrics.com/song/at-the-end-of-a-long-lonely-day/
-      imported_at: '2026-02-08'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: bluegrass-lyrics
+    source_url: https://www.bluegrasslyrics.com/song/at-the-end-of-a-long-lonely-day/
+    imported_at: '2026-02-08'

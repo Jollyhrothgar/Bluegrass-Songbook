@@ -1,5 +1,7 @@
 id: what-a-way-to-live-1
 title: What A Way To Live
+song: what-a-way-to-live
+version: '2'
 artist: Willie Nelson
 composers:
 - Willie Nelson and Hank Craig
@@ -8,6 +10,9 @@ tags:
 - ClassicCountry
 - Outlaw
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

@@ -1,11 +1,16 @@
 id: i-ll-meet-you-in-church-sunday-morning
 title: I'll Meet You In Church Sunday Morning
+song: ill-meet-you-in-church-sunday-morning
+version: '3'
 artist: Porter Wagoner
 composers:
 - Bill Monroe
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

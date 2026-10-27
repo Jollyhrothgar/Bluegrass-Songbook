@@ -1,10 +1,18 @@
 id: walk-on-boy-1
 title: Walk On Boy
+song: walk-on-boy
+version: '2'
 artist: Traditional
+composers:
+- Wayne P. Walker
+- Mel Tillis
 default_key: Em
 tags:
 - JamFriendly
 - Modal
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -13,6 +21,3 @@ parts:
   provenance:
     source: golden-standard
     imported_at: '2026-01-02'
-composers:
-- Wayne P. Walker
-- Mel Tillis

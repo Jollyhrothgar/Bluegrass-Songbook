@@ -468,6 +468,55 @@ def write_outputs(songs: list, index_file: Path):
               f"{len(forked_works)} work(s)")
 
 
+def apply_songs(songs: list) -> list:
+    """Give every row its URL `path` and make its version group its song.
+
+    A work is its own song (`songs/{slug or id}/`) unless work.yaml names
+    another as its song (`version_of`), in which case it is a version
+    (`songs/{song}/{version}/`). The song structure is recorded data, so it
+    also replaces the fuzzy title groups: `group_id` is `song:{root}`, the
+    root of a song with versions is `canonical`, each version is
+    `variant_of` it — the fields the app's Arrangement pill already reads.
+    A version whose song no longer builds (deleted, suppressed) stands as a
+    song of its own.
+    """
+    by_id = {str(s['id']): s for s in songs}
+
+    def root_of(s):
+        root = str(s.get('version_of') or '')
+        if root and root in by_id and not by_id[root].get('version_of'):
+            return root
+        return None
+
+    with_versions = {root_of(s) for s in songs} - {None}
+    for s in songs:
+        sid, root = str(s['id']), root_of(s)
+        if root:
+            slug = by_id[root].get('song_slug') or root
+            s['path'] = f"songs/{slug}/{s.get('version') or sid}/"
+            s['group_id'] = f'song:{root}'
+            s['variant_of'] = root
+            s.pop('canonical', None)
+        else:
+            s.pop('version_of', None)
+            s.pop('version', None)
+            s['path'] = f"songs/{s.get('song_slug') or sid}/"
+            s['group_id'] = f'song:{sid}'
+            s.pop('variant_of', None)
+            s.pop('variant_label', None)
+            if sid in with_versions:
+                s['canonical'] = True
+            else:
+                s.pop('canonical', None)
+
+    seen = {}
+    for s in songs:
+        other = seen.setdefault(s['path'], s['id'])
+        if other != s['id']:
+            print(f"  WARNING: {s['id']} and {other} both claim /{s['path']}", file=sys.stderr)
+    return songs
+
+
 def build_song_from_work(work_dir: Path) -> dict:
     """Build a song record from a work directory."""
     work_yaml_path = work_dir / 'work.yaml'
@@ -588,6 +637,13 @@ def build_song_from_work(work_dir: Path) -> dict:
         song['status'] = 'placeholder'
     if work.get('notes'):
         song['notes'] = work['notes']
+    # Song structure (work.yaml song / version / slug; see seed_songs.py).
+    # apply_songs() turns these into each row's `path`.
+    if work.get('song'):
+        song['version_of'] = str(work['song'])
+        song['version'] = str(work.get('version') or '')
+    if work.get('slug'):
+        song['song_slug'] = str(work['slug'])
 
     # Who submitted the lead sheet, when the pipeline knows. This is the
     # verified auth.uid() stamped by process_pending.py, and it is what lets
@@ -1074,6 +1130,17 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
         for work_id, error in errors:
             print(f"  {work_id}: {error}")
 
+    # A merged-away id must stay merged away (see redirect_violations).
+    from works_writer import redirect_violations
+    violations = redirect_violations(Path('.'))
+    if violations:
+        print("\nERROR: docs/data/redirects.json disagrees with works/:")
+        for problem in violations:
+            print(f"  {problem}")
+        print("Make each pair versions of one song (scripts/lib/seed_songs.py) "
+              "or remove the re-created work.")
+        raise SystemExit(1)
+
     # Filter out suppressed songs (curation registry ∪ soft-deleted list)
     registry = load_registry(Path('.'))
     deleted_songs = {}
@@ -1286,6 +1353,10 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
     # stable grp:<canonical-id> ids and mark canonical/variant rows.
     # Runs unconditionally — even with --skip-fuzzy — so pins always apply.
     songs = apply_curation(songs, registry)
+
+    # Songs and their versions (work.yaml `song:`) decide each row's URL path
+    # and its version group, replacing the fuzzy title grouping above.
+    songs = apply_songs(songs)
 
     # Jam-repertoire prune (curation/index_prune.csv): stamp indexed:false
     # on non-bluegrass rows so search/collections skip them. Non-destructive:

@@ -1,5 +1,12 @@
 id: the-precious-jewel
 title: The Precious Jewel
+song: precious-jewel
+version: '3'
+composers:
+- Roy Acuff
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -9,5 +16,3 @@ parts:
     source: bluegrass-lyrics
     source_url: https://www.bluegrasslyrics.com/song/the-precious-jewel/
     imported_at: '2026-02-08'
-composers:
-- Roy Acuff

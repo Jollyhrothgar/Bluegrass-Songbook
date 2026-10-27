@@ -1,5 +1,7 @@
 id: lost-his-love-on-our-last-date
 title: Lost His Love On Our Last Date
+song: lost-her-love-on-our-last-date
+version: '2'
 artist: Emmylou Harris
 composers:
 - Conway Twitty and Floyd Cramer
@@ -7,6 +9,9 @@ default_key: G
 tags:
 - Folk
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

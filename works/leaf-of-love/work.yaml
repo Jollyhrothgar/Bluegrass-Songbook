@@ -1,5 +1,15 @@
 id: leaf-of-love
 title: Leaf Of Love
+song: the-leaf-of-love
+version: '2'
+artist: Gene Autry
+default_key: C
+tags:
+- ClassicCountry
+- JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -9,8 +19,3 @@ parts:
     source: bluegrass-lyrics
     source_url: https://www.bluegrasslyrics.com/song/leaf-of-love/
     imported_at: '2026-02-08'
-tags:
-- ClassicCountry
-- JamFriendly
-default_key: C
-artist: Gene Autry

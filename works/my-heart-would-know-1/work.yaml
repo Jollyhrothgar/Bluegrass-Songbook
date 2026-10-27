@@ -1,5 +1,7 @@
 id: my-heart-would-know-1
 title: My Heart Would Know
+song: my-heart-would-know
+version: '2'
 artist: Merle Haggard
 composers:
 - Hank Williams
@@ -7,6 +9,9 @@ default_key: C
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

@@ -1,5 +1,7 @@
 id: i-ain-t-broke-but-i-m-badly-bent
 title: I Ain't Broke But I'm Badly Bent
+song: i-aint-broke-but-im-badly-bent
+version: '2'
 artist: Dan Tyminski
 composers:
 - Fred Carter
@@ -7,6 +9,9 @@ default_key: G
 tags:
 - Bluegrass
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

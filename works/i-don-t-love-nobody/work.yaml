@@ -1,5 +1,7 @@
 id: i-don-t-love-nobody
 title: I Don't Love Nobody
+song: i-dont-love-nobody
+version: banjo-tab
 artist: null
 composers:
 - Traditional
@@ -7,12 +9,15 @@ default_key: null
 tags:
 - Instrumental
 - Scruggs
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: tablature
-  instrument: banjo
   format: otf
   file: banjo.otf.json
   default: true
+  instrument: banjo
   provenance:
     source: banjo-hangout
     source_id: '24231'

@@ -1,10 +1,15 @@
 id: my-heart-has-a-mind-of-its-own-1
 title: My Heart Has a Mind of Its Own
+song: my-heart-has-a-mind-of-its-own
+version: '2'
 artist: Connie Francis
 default_key: C
 tags:
 - Pop
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

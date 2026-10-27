@@ -1,5 +1,12 @@
 id: sweetest-gift-the
-title: Sweetest Gift, The
+title: 'Sweetest Gift, The'
+song: the-sweetest-gift
+version: '2'
+composers:
+- James B. Coats
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -9,5 +16,3 @@ parts:
     source: bluegrass-lyrics
     source_url: https://www.bluegrasslyrics.com/song/sweetest-gift-the/
     imported_at: '2026-02-08'
-composers:
-- James B. Coats

@@ -1,11 +1,16 @@
 id: you-re-still-on-my-mind
 title: You're Still On My Mind
+song: youre-still-on-my-mind
+version: '2'
 artist: Johnny Paycheck
 composers:
 - Luke McDaniel
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

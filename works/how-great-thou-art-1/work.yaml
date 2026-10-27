@@ -1,5 +1,7 @@
 id: how-great-thou-art-1
 title: How Great Thou Art
+song: how-great-thou-art
+version: '2'
 artist: Tammy Wynette
 composers:
 - Stuart K. Hine
@@ -7,6 +9,9 @@ default_key: C
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

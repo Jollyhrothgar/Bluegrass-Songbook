@@ -1,11 +1,16 @@
 id: where-were-you
 title: Where Were You
+song: where-were-you-when-the-world-stopped-turning
+version: '2'
 artist: Loretta Lynn
 default_key: C
 tags:
 - ClassicCountry
 - HonkyTonk
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

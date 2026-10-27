@@ -1,5 +1,7 @@
 id: don-t-you-believe-him
 title: Don't You Believe Him
+song: don-t-you-believe-her
+version: '2'
 artist: Reba McEntire
 composers:
 - Nat Stuckey
@@ -7,6 +9,9 @@ default_key: G
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

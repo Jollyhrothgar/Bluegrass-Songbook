@@ -1,5 +1,16 @@
 id: dont-close-your-eyes
 title: Don’t Close Your Eyes
+song: don-t-close-your-eyes
+version: '2'
+artist: Keith Whitley
+composers:
+- Bob McDill
+default_key: G
+tags:
+- JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -9,9 +20,3 @@ parts:
     source: bluegrass-lyrics
     source_url: https://www.bluegrasslyrics.com/song/dont-close-your-eyes/
     imported_at: '2026-02-08'
-tags:
-- JamFriendly
-default_key: G
-artist: Keith Whitley
-composers:
-- Bob McDill

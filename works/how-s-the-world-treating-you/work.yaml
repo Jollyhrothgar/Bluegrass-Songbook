@@ -1,9 +1,14 @@
 id: how-s-the-world-treating-you
 title: How's The World Treating You
+song: hows-the-world-treating-you
+version: '2'
 artist: Elvis Presley
 composers:
 - Chet Atkins and Boudleaux Bryant
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

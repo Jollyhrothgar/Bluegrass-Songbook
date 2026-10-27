@@ -1,7 +1,14 @@
 id: my-baby-s-gone
 title: My Baby's Gone
+song: my-babys-gone
+version: '2'
 artist: The Louvin Brothers
+composers:
+- Hazel Houser
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -11,5 +18,3 @@ parts:
     source: classic-country
     source_file: mybabysgonelyricsandchords.pro
     imported_at: '2026-07-26'
-composers:
-- Hazel Houser

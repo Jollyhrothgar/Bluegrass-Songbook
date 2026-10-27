@@ -1,11 +1,16 @@
 id: once-more-1
 title: Once More
+song: once-more
+version: '2'
 artist: The Osborne Brothers
 composers:
 - Dusty Owens
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

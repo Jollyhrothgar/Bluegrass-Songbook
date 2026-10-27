@@ -1,5 +1,16 @@
 id: alabama-waltz
 title: Alabama Waltz
+song: the-alabama-waltz
+version: '2'
+artist: Hank Williams
+default_key: G
+tags:
+- HonkyTonk
+- ClassicCountry
+- JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -9,9 +20,3 @@ parts:
     source: bluegrass-lyrics
     source_url: https://www.bluegrasslyrics.com/song/alabama-waltz/
     imported_at: '2026-02-08'
-tags:
-- HonkyTonk
-- ClassicCountry
-- JamFriendly
-default_key: G
-artist: Hank Williams

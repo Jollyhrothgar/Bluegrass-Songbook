@@ -1,10 +1,15 @@
 id: am-i-blue
 title: Am I Blue
+song: am-i-blue-1
+version: '2'
 artist: George Strait
 default_key: C
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

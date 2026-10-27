@@ -1,5 +1,7 @@
 id: raining-in-my-heart-1
 title: Raining in My Heart
+song: raining-in-my-heart-2
+version: '2'
 artist: Buddy Holly
 composers:
 - Boudleaux Bryant and Felice Bryant
@@ -7,6 +9,9 @@ default_key: G
 tags:
 - Rockabilly
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

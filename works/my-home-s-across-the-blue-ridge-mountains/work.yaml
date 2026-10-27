@@ -1,11 +1,16 @@
 id: my-home-s-across-the-blue-ridge-mountains
 title: My Home's Across The Blue Ridge Mountains
+song: my-homes-across-the-blue-ridge-mountain
+version: '2'
 artist: Doc Watson
 composers:
 - Traditional
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

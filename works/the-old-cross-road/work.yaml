@@ -1,5 +1,7 @@
 id: the-old-cross-road
 title: The Old Cross Road
+song: old-crossroads-the
+version: '2'
 artist: Ricky Skaggs
 composers:
 - Bill Monroe
@@ -10,6 +12,9 @@ tags:
 - Gospel
 - Folk
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

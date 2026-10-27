@@ -1,5 +1,7 @@
 id: tennessee-girl
 title: Tennessee Girl
+song: tennessee-girls
+version: '2'
 artist: Charlie Pride
 composers:
 - Ben Peters
@@ -8,6 +10,9 @@ tags:
 - JamFriendly
 - Instrumental
 - OldTime
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

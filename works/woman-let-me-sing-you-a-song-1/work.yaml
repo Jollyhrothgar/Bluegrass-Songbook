@@ -1,11 +1,16 @@
 id: woman-let-me-sing-you-a-song-1
 title: Woman Let Me Sing You A Song
+song: woman-let-me-sing-you-a-song
+version: '2'
 artist: Lefty Frizzel
 composers:
 - Harland Howard
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

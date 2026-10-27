@@ -1,9 +1,17 @@
 id: old-home-place-1
 title: Old Home Place
-artist: Mitch Jayne, Dean Webb
+song: old-home-place
+version: '2'
+artist: 'Mitch Jayne, Dean Webb'
+composers:
+- Dean Webb
+- Mitch Jayne
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -12,6 +20,3 @@ parts:
   provenance:
     source: golden-standard
     imported_at: '2026-01-02'
-composers:
-- Dean Webb
-- Mitch Jayne

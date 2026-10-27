@@ -1,15 +1,22 @@
 id: jerusalem-ridge-ensemble
 title: Jerusalem Ridge (ensemble)
+song: jerusalem-ridge
+version: '2'
+composers:
+- Bill Monroe
 tags:
 - Instrumental
 - Bluegrass
 - Scruggs
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: tablature
-  instrument: ensemble
   format: otf
   file: ensemble.otf.json
   default: true
+  instrument: ensemble
   provenance:
     source: banjo-hangout
     source_id: '27493'
@@ -21,10 +28,10 @@ parts:
     tef_tracks: 4
     tef_events: 1292
 - type: tablature
-  instrument: banjo
   format: otf
   file: banjo.otf.json
   default: true
+  instrument: banjo
   provenance:
     source: banjo-hangout
     source_id: '13248'
@@ -36,14 +43,12 @@ parts:
     tef_tracks: 2
     tef_events: 1016
 - type: tablature
-  instrument: fiddle
   format: otf
   file: fiddle.otf.json
+  instrument: fiddle
   provenance:
     source: fiddle-hangout
     source_id: '3098'
     source_url: https://www.fiddlehangout.com/tab/browse.asp?m=detail&v=3098
     author: mmuussiiccaall
     imported_at: '2026-07-26'
-composers:
-- Bill Monroe

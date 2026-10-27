@@ -1,9 +1,14 @@
 id: tumbling-tumbleweed
 title: Tumbling Tumbleweed
+song: tumbling-tumbleweeds
+version: '2'
 artist: Bob Nolan
 composers:
 - Bob Nolan
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

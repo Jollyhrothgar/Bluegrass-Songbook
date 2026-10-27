@@ -1,11 +1,16 @@
 id: one-has-my-name-the-other-has-my-heart
 title: One Has My Name (The Other Has My Heart)
+song: one-has-my-name
+version: '2'
 artist: Cal Smith
 composers:
-- Eddie Dean, Dixie Dean, Hal Blair
+- 'Eddie Dean, Dixie Dean, Hal Blair'
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

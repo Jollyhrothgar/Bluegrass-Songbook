@@ -1,9 +1,17 @@
 id: stone-walls-and-steel-bars-1
 title: Stone Walls And Steel Bars
-artist: Ray Pennington, Roy Marcum
+song: stone-walls-and-steel-bars
+version: '2'
+artist: 'Ray Pennington, Roy Marcum'
+composers:
+- Ray Pennington
+- Roy Marcum
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -12,6 +20,3 @@ parts:
   provenance:
     source: golden-standard
     imported_at: '2026-01-02'
-composers:
-- Ray Pennington
-- Roy Marcum

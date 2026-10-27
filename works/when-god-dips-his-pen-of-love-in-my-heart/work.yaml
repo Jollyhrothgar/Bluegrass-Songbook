@@ -1,9 +1,14 @@
 id: when-god-dips-his-pen-of-love-in-my-heart
 title: When God Dips His Pen of Love in My Heart
+song: when-god-dips-his-love-in-my-heart
+version: '2'
 artist: Allison Krause
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

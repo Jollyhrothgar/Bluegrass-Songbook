@@ -1,12 +1,16 @@
 id: before-i-met-you-1
 title: Before I Met You
+slug: before-i-met-you
 artist: Reba McEntire
 composers:
-- Charles Seitz, Joe Lewis, Elmar Rader
+- 'Charles Seitz, Joe Lewis, Elmar Rader'
 default_key: C
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

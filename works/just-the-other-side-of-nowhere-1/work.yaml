@@ -1,5 +1,7 @@
 id: just-the-other-side-of-nowhere-1
 title: Just The Other Side Of Nowhere
+song: just-the-other-side-of-nowhere
+version: '2'
 artist: Johnny Cash
 composers:
 - Kris Kristofferson
@@ -10,6 +12,9 @@ tags:
 - Folk
 - Gospel
 - Outlaw
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

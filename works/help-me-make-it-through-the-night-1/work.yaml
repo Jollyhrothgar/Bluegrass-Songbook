@@ -1,7 +1,12 @@
 id: help-me-make-it-through-the-night-1
 title: Help Me Make It Through The Night
+song: help-me-make-it-through-the-night
+version: '2'
 artist: Sammi Smith
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

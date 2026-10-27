@@ -1,11 +1,16 @@
 id: wreck-of-the-number-nine
 title: Wreck Of The Number Nine
+song: the-wreck-of-the-number-nine
+version: '2'
 artist: Jim Reeves
 composers:
 - Carson Robison
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

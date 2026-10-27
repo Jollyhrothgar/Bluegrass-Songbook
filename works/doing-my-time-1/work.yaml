@@ -1,5 +1,7 @@
 id: doing-my-time-1
 title: Doing My Time
+song: doin-my-time
+version: '3'
 artist: Johnny Cash
 composers:
 - Jimmie Skinner
@@ -11,6 +13,9 @@ tags:
 - Gospel
 - Outlaw
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

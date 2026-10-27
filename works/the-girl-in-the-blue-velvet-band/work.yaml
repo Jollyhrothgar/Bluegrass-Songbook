@@ -1,9 +1,14 @@
 id: the-girl-in-the-blue-velvet-band
 title: The Girl in the Blue Velvet Band
+song: girl-in-the-blue-velvet-band
+version: '2'
 artist: Mac Wiseman
 composers:
 - Mel Foree and Cliff Carlisle
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

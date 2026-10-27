@@ -1,9 +1,14 @@
 id: best-of-all-possible-worlds-1
 title: Best Of All Possible Worlds
+song: best-of-all-possible-worlds
+version: '2'
 artist: Roger Miller
 composers:
 - Kris Kristofferson
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

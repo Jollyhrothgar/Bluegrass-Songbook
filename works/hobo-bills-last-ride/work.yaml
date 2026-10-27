@@ -1,5 +1,18 @@
 id: hobo-bills-last-ride
 title: Hobo Bill’s Last Ride
+song: hobo-bill-s-last-ride
+version: '2'
+artist: Hank Snow
+composers:
+- Waldo LaFayette O'Neal
+default_key: G
+tags:
+- NashvilleSound
+- ClassicCountry
+- JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -9,11 +22,3 @@ parts:
     source: bluegrass-lyrics
     source_url: https://www.bluegrasslyrics.com/song/hobo-bills-last-ride/
     imported_at: '2026-02-08'
-tags:
-- NashvilleSound
-- ClassicCountry
-- JamFriendly
-default_key: G
-artist: Hank Snow
-composers:
-- Waldo LaFayette O'Neal

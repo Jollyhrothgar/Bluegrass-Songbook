@@ -1,17 +1,24 @@
 id: angeline-baker
 title: Angeline Baker
+song: angeline-the-baker
+version: banjo-tab
+composers:
+- Stephen Foster
 tags:
 - Instrumental
 - OldTime
 - Clawhammer
 - Bluegrass
 - Scruggs
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: tablature
-  instrument: banjo
   format: otf
   file: banjo.otf.json
   default: true
+  instrument: banjo
   provenance:
     source: banjo-hangout
     source_id: '23439'
@@ -22,5 +29,3 @@ parts:
     tef_time_sig: 2/4
     tef_tracks: 1
     tef_events: 142
-composers:
-- Stephen Foster

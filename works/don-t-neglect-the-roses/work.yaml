@@ -1,9 +1,14 @@
 id: don-t-neglect-the-roses
 title: Don't Neglect The Roses
+song: dont-neglect-the-rose
+version: '2'
 artist: Larry Sparks
 composers:
 - Emma Smith
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

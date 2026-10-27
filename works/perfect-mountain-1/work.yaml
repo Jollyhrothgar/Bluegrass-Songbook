@@ -1,5 +1,7 @@
 id: perfect-mountain-1
 title: Perfect Mountain
+song: perfect-mountain
+version: '2'
 artist: Dean Martin
 composers:
 - Gene Thomas
@@ -7,6 +9,9 @@ default_key: C
 tags:
 - Pop
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

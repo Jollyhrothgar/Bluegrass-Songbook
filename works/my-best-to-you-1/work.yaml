@@ -1,11 +1,16 @@
 id: my-best-to-you-1
 title: My Best To You
+song: my-best-to-you
+version: '2'
 artist: Slim Whitman
 composers:
 - Gene Willadsen and Isham Jones
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

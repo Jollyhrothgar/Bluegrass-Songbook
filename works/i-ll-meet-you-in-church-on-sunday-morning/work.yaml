@@ -1,9 +1,14 @@
 id: i-ll-meet-you-in-church-on-sunday-morning
 title: I'll Meet You In Church On Sunday Morning
+song: ill-meet-you-in-church-sunday-morning
+version: '2'
 artist: Bill Monroe
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

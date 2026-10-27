@@ -1,9 +1,14 @@
 id: if-that-s-the-way-you-feel
 title: If That's The Way You Feel
+song: if-thats-the-way-you-feel
+version: '2'
 artist: Ricky Skaggs
 composers:
 - Carter Stanley and Ralph Stanley
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

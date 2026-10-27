@@ -1,11 +1,16 @@
 id: when-it-s-your-turn-to-fall-1
 title: When It's Your Turn To Fall
+song: when-it-s-your-turn-to-fall
+version: '2'
 artist: Johnny Bush
 composers:
-- Maryland Welch Francis, Sanger D. Shafer
+- 'Maryland Welch Francis, Sanger D. Shafer'
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

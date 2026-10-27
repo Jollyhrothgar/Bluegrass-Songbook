@@ -1,10 +1,17 @@
 id: my-little-girl-in-tennessee-1
 title: My Little Girl In Tennessee
+song: my-little-girl-in-tennessee
+version: '3'
 artist: Lester Flatt
+composers:
+- Lester Flatt
 default_key: G
 tags:
 - Bluegrass
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -13,5 +20,3 @@ parts:
   provenance:
     source: golden-standard
     imported_at: '2026-01-02'
-composers:
-- Lester Flatt

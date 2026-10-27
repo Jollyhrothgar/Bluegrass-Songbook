@@ -1,10 +1,14 @@
 id: how-long-blues-1
 title: How Long Blues
+slug: how-long-blues
 artist: Del McCoury
 composers:
 - Leroy Carr
 default_key: E
 tags: []
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

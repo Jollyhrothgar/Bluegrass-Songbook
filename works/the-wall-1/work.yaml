@@ -1,5 +1,7 @@
 id: the-wall-1
 title: The Wall
+song: the-wall
+version: '2'
 artist: Johnny Cash
 composers:
 - Harlan Howard
@@ -11,6 +13,9 @@ tags:
 - Gospel
 - Outlaw
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

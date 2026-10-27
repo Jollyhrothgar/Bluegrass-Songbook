@@ -1,9 +1,14 @@
 id: i-m-gonna-sleep-with-one-eye-open
 title: I'm Gonna Sleep With One Eye Open
+song: im-gonna-sleep-with-one-eye-open
+version: '2'
 artist: Dolly Parton
 composers:
 - Lester Flatt
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

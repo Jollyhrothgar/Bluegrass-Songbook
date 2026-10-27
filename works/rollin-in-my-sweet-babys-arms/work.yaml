@@ -1,6 +1,11 @@
 id: rollin-in-my-sweet-babys-arms
 title: Rollin’ in My Sweet Baby’s Arms
+song: roll-in-my-sweet-baby-s-arms
+version: '2'
 artist: Buck Owens
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

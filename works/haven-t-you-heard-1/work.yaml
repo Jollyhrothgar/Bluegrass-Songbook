@@ -1,5 +1,7 @@
 id: haven-t-you-heard-1
 title: Haven't You Heard
+song: haven-t-you-heard
+version: '2'
 artist: Jeannie C. Riley
 composers:
 - Red Lane and Wayne Kemp
@@ -7,6 +9,9 @@ default_key: C
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

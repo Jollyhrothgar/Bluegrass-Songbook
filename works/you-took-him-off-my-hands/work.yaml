@@ -1,14 +1,19 @@
 id: you-took-him-off-my-hands
 title: You Took Him Off My Hands
+song: you-took-her-off-my-hands
+version: '2'
 artist: Patsy Cline
 composers:
-- Harlan Howard, Wynn Stewart, Skeets McDonald
+- 'Harlan Howard, Wynn Stewart, Skeets McDonald'
 default_key: G
 tags:
 - ClassicCountry
 - NashvilleSound
 - HonkyTonk
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

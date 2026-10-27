@@ -1,11 +1,16 @@
 id: i-know-you-re-married-but-i-love-you-still
 title: I Know You're Married (But I Love You Still)
+song: i-know-youre-married
+version: '2'
 artist: Reno and Smiley
 composers:
 - Mack Magaha and Don Reno
 default_key: D
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

@@ -1,9 +1,14 @@
 id: i-ll-go-stepping-too
 title: I'll Go Stepping Too
+song: ill-go-stepping-too
+version: '2'
 artist: Emmylou Harris
 composers:
 - Jerry Organ and Tommy James
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

@@ -1,5 +1,7 @@
 id: it-turns-me-inside-out-1
 title: It Turns Me Inside Out
+song: it-turns-me-inside-out
+version: '2'
 artist: Willie Nelson
 composers:
 - Jan Crutchfield
@@ -8,6 +10,9 @@ tags:
 - ClassicCountry
 - Outlaw
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

@@ -1,11 +1,15 @@
 id: i-d-fight-the-world-1
 title: I'd Fight The World
+slug: i-d-fight-the-world
 artist: Jim Reeves
 composers:
 - Hank Cochran and Joe Allison
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

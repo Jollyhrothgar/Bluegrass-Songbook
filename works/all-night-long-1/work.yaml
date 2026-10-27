@@ -1,5 +1,7 @@
 id: all-night-long-1
 title: All Night Long
+song: all-night-long
+version: '2'
 artist: Tammy Wynette
 composers:
 - Don Chapel
@@ -7,6 +9,9 @@ default_key: G
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

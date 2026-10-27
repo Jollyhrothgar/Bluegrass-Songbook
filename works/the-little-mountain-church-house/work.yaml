@@ -1,11 +1,16 @@
 id: the-little-mountain-church-house
 title: The Little Mountain Church House
+song: little-mountain-church-house
+version: '2'
 artist: Doyle Lawson
 composers:
 - Carl E. Jackson and Jim Rushing
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

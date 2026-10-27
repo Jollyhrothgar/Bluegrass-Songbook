@@ -1,11 +1,16 @@
 id: not-that-i-care-1
 title: Not That I Care
+song: not-that-i-care
+version: '2'
 artist: Wilburn Brothers
 composers:
 - Cindy Walker
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

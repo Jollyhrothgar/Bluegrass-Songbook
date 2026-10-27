@@ -1,5 +1,7 @@
 id: poison-love-1
 title: Poison Love
+song: poison-love
+version: '2'
 artist: Mel Tillis
 composers:
 - Elmer Laird
@@ -8,6 +10,9 @@ tags:
 - ClassicCountry
 - Outlaw
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

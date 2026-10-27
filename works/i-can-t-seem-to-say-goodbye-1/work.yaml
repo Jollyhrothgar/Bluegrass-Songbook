@@ -1,5 +1,7 @@
 id: i-can-t-seem-to-say-goodbye-1
 title: I Can't Seem To Say Goodbye
+song: i-can-t-seem-to-say-goodbye
+version: '2'
 artist: Jerry Lee Lewis
 composers:
 - Don Robertson
@@ -9,6 +11,9 @@ tags:
 - HonkyTonk
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

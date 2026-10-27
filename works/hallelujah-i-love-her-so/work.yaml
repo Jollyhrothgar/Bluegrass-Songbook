@@ -1,5 +1,7 @@
 id: hallelujah-i-love-her-so
 title: Hallelujah I Love Her So
+song: hallelujah-i-love-him-so
+version: '2'
 artist: Conway Twitty
 composers:
 - Ray Charles
@@ -7,6 +9,9 @@ default_key: G
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

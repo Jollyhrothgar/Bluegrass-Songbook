@@ -1,5 +1,7 @@
 id: trying-to-get-to-you-1
 title: Trying To Get To You
+song: trying-to-get-to-you
+version: '2'
 artist: Roy Orbison
 composers:
 - Rose Marie McCoy and Charlie Singleton
@@ -8,6 +10,9 @@ tags:
 - Rockabilly
 - Pop
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

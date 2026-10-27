@@ -1,5 +1,7 @@
 id: he-set-me-free-1
 title: He Set Me Free
+song: he-set-me-free
+version: '2'
 artist: The Louvin Brothers
 composers:
 - Albert E. Brumley
@@ -9,6 +11,9 @@ tags:
 - Gospel
 - Bluegrass
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

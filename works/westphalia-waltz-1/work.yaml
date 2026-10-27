@@ -1,5 +1,7 @@
 id: westphalia-waltz-1
 title: Westphalia Waltz
+song: westphalia-waltz
+version: '2'
 artist: Traditional
 composers:
 - Traditional
@@ -7,6 +9,9 @@ tags:
 - Instrumental
 - OldTime
 - Scruggs
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -16,9 +21,9 @@ parts:
     source: tunearch
     imported_at: '2026-01-02'
 - type: tablature
-  instrument: banjo
   format: otf
   file: banjo.otf.json
+  instrument: banjo
   provenance:
     source: banjo-hangout
     source_id: '18835'

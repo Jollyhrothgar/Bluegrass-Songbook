@@ -1,11 +1,16 @@
 id: there-s-a-song-on-the-juke-box
 title: There's A Song On The Juke Box
+song: there-s-a-song-on-the-jukebox
+version: '2'
 artist: David Wills
 composers:
 - Billy Sherrill and Carmol Taylor
 default_key: G
 tags:
 - Modal
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

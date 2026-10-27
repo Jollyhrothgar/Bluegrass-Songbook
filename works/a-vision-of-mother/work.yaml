@@ -1,9 +1,14 @@
 id: a-vision-of-mother
 title: A Vision Of Mother
+song: vision-of-mother
+version: '2'
 artist: Ricky Skaggs
 composers:
 - Ralph Stanley and Carter Stanley
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

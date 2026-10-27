@@ -1,11 +1,16 @@
 id: i-met-a-friend-of-yours-today-1
 title: I Met A Friend Of Yours Today
+song: i-met-a-friend-of-yours-today
+version: '2'
 artist: Mel Street
 composers:
 - Bob McDill and Wayland Holyfield
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

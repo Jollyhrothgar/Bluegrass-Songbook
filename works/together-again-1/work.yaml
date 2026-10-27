@@ -1,11 +1,16 @@
 id: together-again-1
 title: Together Again
+song: together-again
+version: '2'
 artist: Ray Price
 composers:
 - Buck Owens
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

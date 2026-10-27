@@ -1,11 +1,16 @@
 id: satisfied-mind-1
 title: Satisfied Mind
+song: a-satisfied-mind
+version: '2'
 artist: Porter Wagoner
 composers:
 - Red Hayes and Jack Rhodes
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

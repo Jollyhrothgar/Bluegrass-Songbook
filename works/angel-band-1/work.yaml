@@ -1,9 +1,17 @@
 id: angel-band-1
 title: Angel Band
+song: angel-band
+version: '2'
 artist: Traditional
+composers:
+- Jefferson Hascall
+- William B. Bradbury
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -12,6 +20,3 @@ parts:
   provenance:
     source: golden-standard
     imported_at: '2026-01-02'
-composers:
-- Jefferson Hascall
-- William B. Bradbury

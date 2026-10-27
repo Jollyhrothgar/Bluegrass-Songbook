@@ -1,9 +1,16 @@
 id: my-little-georgia-rose-1
 title: My Little Georgia Rose
+song: my-little-georgia-rose
+version: '2'
 artist: Bill Monroe
+composers:
+- Bill Monroe
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -12,5 +19,3 @@ parts:
   provenance:
     source: golden-standard
     imported_at: '2026-01-02'
-composers:
-- Bill Monroe

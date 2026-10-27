@@ -1,11 +1,16 @@
 id: come-sundown-1
 title: Come Sundown
+song: come-sundown
+version: '2'
 artist: Bobby Bare
 composers:
 - Kris Kristofferson
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

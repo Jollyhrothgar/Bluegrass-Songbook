@@ -1,5 +1,7 @@
 id: that-s-my-desire
 title: That's My Desire
+song: thats-my-desire
+version: '2'
 artist: Patsy Cline
 composers:
 - Carroll Loveday and Helmy Kresa
@@ -9,6 +11,9 @@ tags:
 - NashvilleSound
 - HonkyTonk
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

@@ -1,11 +1,16 @@
 id: jimmy-brown-the-news-boy
 title: Jimmy Brown The News Boy
+song: jimmy-brown-the-newsboy
+version: '3'
 artist: Lester Flatt and Earl Scuggs
 composers:
 - A.P. Carter
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

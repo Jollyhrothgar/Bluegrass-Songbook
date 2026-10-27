@@ -1,9 +1,14 @@
 id: till-the-end-of-the-world-rolls-round
 title: Till The End Of The World Rolls Round
+song: til-the-end-of-the-world-rolls-round
+version: '2'
 artist: Ricky Skaggs
 composers:
 - Newton S. Thomas Jr.
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
