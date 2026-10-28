@@ -1043,6 +1043,25 @@ test.describe('the section label menu on a phone', () => {
             expect(await leadText(page)).toMatch(/Line one of verse 3[\s\S]*Line one of verse 3/);
         });
     }
+    test('opened with the keyboard up, the menu grows to its full height when the keyboard goes away', async ({ page }) => {
+        // iPhone, 2026-10-28: tapping a label while typing, the keyboard closes AFTER the menu was measured, so the menu
+        // kept the small space that was above the keyboard ("Remove label" cut in half, "Delete section" out of sight)
+        await openEditor(page);
+        const verses = Array.from({ length: 8 }, (_, i) => `{start_of_verse: Verse ${i + 1}}\nLine one of verse ${i + 1}\nLine two\n{end_of_verse}`);
+        await setLead(page, verses.join('\n\n'));
+        await setMode(page, 'lyrics');
+        await page.setViewportSize({ width: 390, height: 330 });           // the screen with the keyboard up
+        const label = page.locator('#editor-lead .section-label', { hasText: 'Verse 3' });
+        await label.evaluate((el) => window.scrollBy(0, el.getBoundingClientRect().top - 120));
+        await label.tap();
+        const menu = page.locator('.le-labelmenu');
+        await expect(menu).toBeVisible();
+        const squeezed = await menu.evaluate((m) => m.scrollHeight > m.clientHeight + 1);
+        expect(squeezed).toBe(true);                                       // it did not fit while the keyboard was up
+        await page.setViewportSize({ width: 390, height: 844 });           // the keyboard goes away
+        await expect.poll(() => menu.evaluate((m) => m.scrollHeight <= m.clientHeight + 1)).toBe(true);
+        await expect(menu.getByRole('menuitem', { name: 'Delete section' })).toBeInViewport();
+    });
 });
 
 
