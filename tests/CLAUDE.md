@@ -49,5 +49,5 @@ Defined in `conftest.py`:
 
 ## See Also
 
-- Frontend unit tests: `docs/js/__tests__/` (Vitest, run with `npm test`)
+- Frontend unit tests: `docs/js/__tests__/` (Vitest, run once with `npm test`; `npm run test:watch` to keep it running)
 - E2E tests: `e2e/` (Playwright, run with `npm run test:e2e`)
