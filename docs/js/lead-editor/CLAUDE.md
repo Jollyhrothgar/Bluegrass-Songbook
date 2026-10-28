@@ -135,6 +135,9 @@ override: with it, iOS drew a second selection and handles over the native one.
   in the sheet (`focusIfEmpty`, called by `main.js` when the Add Song view shows, via `editor.js::focusEmptyEditor`);
   never on a phone (it would pop the keyboard). Before this, a ⌘V right after opening `#add` went to `<body>` and
   nothing happened, while the hint said "Press ⌘V to paste". e2e: `editor.spec.js` "Paste just works".
+- **Line endings** (2026-10-28): clipboard text is normalized to `\n` (`clipText`, and `convertPastedText` itself) before
+  anything measures it. CodeMirror drops every `\r` on insert, so an Ultimate Guitar copy (`\r\n`) set the cursor 36
+  characters past the end: `RangeError: Selection points outside of document`, and the whole paste was lost.
 
 ## Chords mode
 

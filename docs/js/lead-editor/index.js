@@ -945,19 +945,21 @@ export function mountLeadEditor({ host, hooks = {} }) {
         if (cut) view.dispatch({ changes: { from: clip.from, to: clip.to }, userEvent: 'delete.cut', scrollIntoView: true });
         return true;
     }
-    function handlePaste(e) {
-        const raw = e.clipboardData?.getData('text/plain');
-        if (!raw) return false;
-        if (!hooks.autoDetect?.()) {
-            // Auto-detect off: the text goes in as it is, but sections still
-            // land between sections in Lyrics mode, never nested in one.
-            if (mode !== 'lyrics' || !holdsSections(raw)) return false;
-            e.preventDefault();
-            insertConverted({ kind: 'chordpro', text: raw, raw: true });
-            return true;
-        }
+    /** The clipboard's text with `\n` line endings: the editor drops every `\r`, so a length taken before that is wrong. */
+    const clipText = (raw) => (raw ? raw.replace(/\r\n?/g, '\n') : raw);
+    /**
+     * What a paste of `raw` inserts as ChordPro, or null for plain text. Auto-detect off: the text goes in as it is, but
+     * sections still land between sections in Lyrics mode, never nested in one.
+     */
+    function pasteResult(raw) {
+        if (!hooks.autoDetect?.()) return mode === 'lyrics' && holdsSections(raw) ? { kind: 'chordpro', text: raw, raw: true } : null;
         const res = convertPastedText(raw);
-        if (res.kind !== 'chordpro') return false;
+        return res.kind === 'chordpro' ? res : null;
+    }
+    function handlePaste(e) {
+        const raw = clipText(e.clipboardData?.getData('text/plain'));
+        const res = raw && pasteResult(raw);
+        if (!res) return false;
         e.preventDefault();
         insertConverted(res);
         return true;
@@ -993,8 +995,8 @@ export function mountLeadEditor({ host, hooks = {} }) {
     }
     /** Put pasted text where the cursor is: converted to ChordPro when it is a chord sheet (and auto-detect is on), else as is. */
     function insertPasted(raw) {
-        const res = hooks.autoDetect?.() === false ? { kind: 'plain' } : convertPastedText(raw);
-        if (res.kind === 'chordpro') { insertConverted(res); return; }
+        const res = pasteResult(raw);
+        if (res) { insertConverted(res); return; }
         const s = view.state.selection.main;
         editor.change({ changes: { from: s.from, to: s.to, insert: raw }, selection: { anchor: s.from + raw.length } }, { userEvent: 'input.paste' });
     }
@@ -1002,7 +1004,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
     async function pasteFromClipboard() {
         if (!canReadClipboard()) { view.focus(); showPasteHint(); return; }
         try {
-            const raw = await navigator.clipboard.readText();
+            const raw = clipText(await navigator.clipboard.readText());
             if (!raw) return;
             insertPasted(raw);
             view.focus();
@@ -1018,7 +1020,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
         if (e.defaultPrevented || !host.isConnected || host.offsetParent === null) return;   // the editor is not on screen
         const t = e.target instanceof Element ? e.target : null;
         if (t && (view.dom.contains(t) || t.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"])'))) return;
-        const raw = e.clipboardData?.getData('text/plain');
+        const raw = clipText(e.clipboardData?.getData('text/plain'));
         if (!raw) return;
         e.preventDefault();
         if (mode === 'chords') setMode('lyrics', { persist: false });

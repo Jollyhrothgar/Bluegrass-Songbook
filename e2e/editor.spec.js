@@ -279,6 +279,26 @@ test.describe('Paste just works (no click first)', () => {
         expect(await page.evaluate(() => !!document.activeElement?.closest('#editor-lead .cm-content'))).toBe(true);
     });
 
+    test('a chord sheet with Windows line endings (\\r\\n, as Ultimate Guitar copies) pastes whole', async ({ page, context }) => {
+        const errors = [];
+        page.on('pageerror', (e) => errors.push(e.message));
+        await openWithClipboard(page, context, SHEET.replace(/\n/g, '\r\n'));
+        await page.keyboard.press('ControlOrMeta+V');
+        await expect.poll(() => leadText(page)).toContain('[D]That');
+        expect(await leadText(page)).not.toMatch(/\r/);
+        expect(errors).toEqual([]);
+    });
+
+    test('plain text with Windows line endings pastes whole too', async ({ page, context }) => {
+        const errors = [];
+        page.on('pageerror', (e) => errors.push(e.message));
+        await openWithClipboard(page, context, 'Just some words\r\nand a second line');
+        await page.evaluate(() => { document.activeElement?.blur(); document.querySelector('#metadata-summary')?.focus(); });
+        await page.keyboard.press('ControlOrMeta+V');
+        await expect.poll(() => leadText(page)).toBe('Just some words\nand a second line');
+        expect(errors).toEqual([]);
+    });
+
     test('a paste into the title field stays in the title', async ({ page, context }) => {
         await openWithClipboard(page, context, 'Amazing Grace');
         await page.locator('#metadata-summary').click();

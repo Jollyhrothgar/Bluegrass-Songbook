@@ -207,3 +207,13 @@ second placeholder lyric line`;
         expect(res.text).toContain('second placeholder lyric line');
     });
 });
+
+describe('convertPastedText: Windows line endings', () => {
+    it('returns no \r: the editor drops them on insert, so text measured with them lands shorter (the paste was lost)', () => {
+        const lf = 'G       C       G\nAmazing grace how sweet the sound\nD       G\nThat saved a wretch like me';
+        const crlf = convertPastedText(lf.replace(/\n/g, '\r\n'));
+        expect(crlf.kind).toBe('chordpro');
+        expect(crlf.text).not.toMatch(/\r/);
+        expect(crlf.text).toBe(convertPastedText(lf).text);
+    });
+});
