@@ -723,10 +723,12 @@ export const showRandomSongs = showPopularSongs;
  * @param {string} query - Search query
  * @param {Object} options - Options
  * @param {boolean} options.skipRender - If true, skip rendering (caller will handle it)
+ * @param {boolean} options.track - False for a search the reader didn't type
+ *   (the tour's demo): it is not recorded as a visitor's search
  * @returns {Array} Filtered and sorted results (deduped)
  */
 export function search(query, options = {}) {
-    const { skipRender = false } = options;
+    const { skipRender = false, track = true } = options;
 
     // Clear any list view state when searching
     clearListView();
@@ -901,24 +903,28 @@ export function search(query, options = {}) {
         searchStatsEl.textContent = statsText;
     }
 
-    // Track search in our analytics (debounced to capture final query, not keystrokes)
-    if (analyticsDebounceTimer) clearTimeout(analyticsDebounceTimer);
-    pendingSearchData = {
-        query,
-        resultCount: dedupedResults.length,
-        scope: searchScope(),
-        filters: {
-            has_artist: !!artistFilter,
-            has_title: !!titleFilter,
-            has_tag: tagFilters.length > 0,
-            has_chord: chordFilters.length > 0,
-            has_progression: !!progressionFilter,
-            has_lyrics: !!lyricsFilter
-        }
-    };
-    analyticsDebounceTimer = setTimeout(() => {
-        flushPendingSearch();
-    }, ANALYTICS_DEBOUNCE_MS);
+    // Track search in our analytics (debounced to capture final query, not keystrokes).
+    // An untracked search leaves a pending one alone, so the reader's own
+    // query is still recorded.
+    if (track) {
+        if (analyticsDebounceTimer) clearTimeout(analyticsDebounceTimer);
+        pendingSearchData = {
+            query,
+            resultCount: dedupedResults.length,
+            scope: searchScope(),
+            filters: {
+                has_artist: !!artistFilter,
+                has_title: !!titleFilter,
+                has_tag: tagFilters.length > 0,
+                has_chord: chordFilters.length > 0,
+                has_progression: !!progressionFilter,
+                has_lyrics: !!lyricsFilter
+            }
+        };
+        analyticsDebounceTimer = setTimeout(() => {
+            flushPendingSearch();
+        }, ANALYTICS_DEBOUNCE_MS);
+    }
 
     if (!skipRender) {
         renderResults(dedupedResults, textQuery, { artistMatch: { textTerms, artistFilter } });

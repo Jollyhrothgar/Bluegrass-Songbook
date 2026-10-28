@@ -2,7 +2,7 @@
 // search asked for one. Search matches only what a row can show, so the
 // scraped `artist` neither matches nor appears. Drives the real search() → renderResults() hand-off, which is
 // where an `artist:` filter used to get lost (only free text reached the row).
-import { describe, it, expect, beforeEach, vi } from 'vitest';
+import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 
 // Spread the real module so a new util export never silently arrives as
 // `undefined` here; override only the few this test deliberately neutralizes.
@@ -58,7 +58,7 @@ vi.mock('../shell.js', () => ({ pill: vi.fn() }));
 
 import { initSearch, search, renderResults } from '../search-core.js';
 import { setAllSongs, setDungeonMode } from '../state.js';
-import { trackSearchResultClick } from '../analytics.js';
+import { trackSearch, trackSearchResultClick } from '../analytics.js';
 import { getViewingListId } from '../lists.js';
 
 const CORPUS = [
@@ -148,5 +148,36 @@ describe('result click analytics', () => {
         row('you-are-my-sunshine').click();
         const [songId, , , fromList] = trackSearchResultClick.mock.calls[0];
         expect([songId, fromList]).toEqual(['you-are-my-sunshine', true]);
+    });
+});
+
+// The tour types a search to show it off (tour.js); the reader didn't, so
+// search-gaps and the dashboard must not count it as theirs.
+describe('search analytics', () => {
+    beforeEach(() => {
+        vi.useFakeTimers();
+        trackSearch.mockClear();
+    });
+    afterEach(() => vi.useRealTimers());
+
+    // Each test searches for something new: a query is never recorded twice in a row.
+    it('records a search once the typing stops', () => {
+        search('jambalaya');
+        vi.advanceTimersByTime(1100);
+        expect(trackSearch).toHaveBeenCalledTimes(1);
+        expect(trackSearch.mock.calls[0][0]).toBe('jambalaya');
+    });
+
+    it('leaves out a search run with track: false', () => {
+        search('cold cold heart', { track: false });
+        vi.advanceTimersByTime(1100);
+        expect(trackSearch).not.toHaveBeenCalled();
+    });
+
+    it("still records the reader's own search when an untracked one follows it", () => {
+        search('hey good');
+        search('cold cold heart', { track: false });
+        vi.advanceTimersByTime(1100);
+        expect(trackSearch.mock.calls.map(([q]) => q)).toEqual(['hey good']);
     });
 });

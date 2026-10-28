@@ -1,8 +1,10 @@
 // The feature tour (G14): a first-time visitor's top band carries a glowing
-// Tour button; the tour rings the real controls one at a time (Key, Lists,
-// Edit), plays a song into the real lyrics & chords editor (typed in, sorted
-// into sections, chorded), then the tab (Play, Edit, the page itself as a
-// drop zone for your own .tef files), and stays out of the way. After the
+// Tour button; the tour starts at search (what you can search for, then a
+// line of Old Home Place typed into the real box finds it), rings the song's
+// controls one at a time (Key, Lists, Edit), plays a song into the real
+// lyrics & chords editor (typed in, sorted into sections, chorded), then the
+// tab (Play, Edit, the page itself as a drop zone for your own .tef files),
+// and stays out of the way. After the
 // first time it lives in the ⋯ menu. The phone walk is tour-mobile.spec.js.
 import { test, expect } from './fixtures.js';
 import { songReady, here, ringAround, cardClear, arrowAt, next, leadText } from './helpers/tour.js';
@@ -12,7 +14,7 @@ const card = (page) => page.locator('.tour-card');
 const count = (page) => page.locator('.tour-count');
 
 test.describe('Feature tour', () => {
-    test('a first visit: the glowing button walks all nine steps and brings you back', async ({ page }) => {
+    test('a first visit: the glowing button walks all eleven steps and brings you back', async ({ page }) => {
         test.setTimeout(120000);
         await page.goto('/');
         await expect(tourBtn(page)).toBeVisible();
@@ -26,9 +28,27 @@ test.describe('Feature tour', () => {
         await tourBtn(page).click();
         await expect(tourBtn(page)).toBeHidden();
 
-        // 1-3 on the demo song (the reader started on the home page)
-        await expect(count(page)).toHaveText('1 of 9');
+        // 1-2 at search: what you can search for, then a line of the words
+        // typed into the real box finds the demo song
+        await expect(count(page)).toHaveText('1 of 11');
         await expect(page.locator('.tour-label')).toContainText('Tour');
+        await expect.poll(() => here(page)).toBe('/#search');
+        await ringAround(page, '#search-input');
+        await cardClear(page, '#search-input');
+        await expect(page.locator('.tour-body')).toContainText('prog:I-IV-V');
+
+        await next(page);
+        await expect(count(page)).toHaveText('2 of 11');
+        await expect(page.locator('#search-input'))
+            .toHaveValue('ten long years since I left my home', { timeout: 20000 });
+        await ringAround(page, '#results .result-item');
+        await expect(page.locator('#results .result-item').first()).toContainText('Old Home Place');
+        await cardClear(page, '#results .result-item');            // the card is off the song it found
+        expect(await here(page)).toBe('/#search');                  // the tour's search, not the reader's: no URL
+
+        // 3-5 on the song it found
+        await next(page);
+        await expect(count(page)).toHaveText('3 of 11');
         await expect.poll(() => here(page)).toBe('/songs/old-home-place/');
         await songReady(page);
         await ringAround(page, '#key-pill');
@@ -36,14 +56,14 @@ test.describe('Feature tour', () => {
         await arrowAt(page, '#key-pill');
 
         await next(page);
-        await expect(count(page)).toHaveText('2 of 9');
+        await expect(count(page)).toHaveText('4 of 11');
         await ringAround(page, '#list-picker-btn');
         await cardClear(page, '#list-picker-btn');
 
         await next(page);
         await ringAround(page, '#edit-song-btn');
 
-        // 4-6: the song played into the real editor. Add Song is ringed first.
+        // 6-8: the song played into the real editor. Add Song is ringed first.
         await next(page);
         await expect.poll(() => here(page)).toBe('/#add');
         await ringAround(page, '.topbar-nav-link[data-nav="add"]');
@@ -65,9 +85,9 @@ test.describe('Feature tour', () => {
         // the demo's mode change is not the reader's: nothing remembered
         expect(await page.evaluate(() => localStorage.getItem('bgb-lead-mode'))).toBeNull();
 
-        // 7-9 on the demo tab — leaving the editor asks nothing and keeps nothing
+        // 9-11 on the demo tab — leaving the editor asks nothing and keeps nothing
         await next(page);
-        await expect(count(page)).toHaveText('7 of 9');
+        await expect(count(page)).toHaveText('9 of 11');
         await ringAround(page, '.tab-play-btn');               // the tab page is up...
         await expect(page.locator('#editor-leave-modal')).toHaveCount(0);   // ...and nothing asked
         expect(await leadText(page)).toBe('');
@@ -78,7 +98,7 @@ test.describe('Feature tour', () => {
         await next(page);
         await ringAround(page, '.tab-edit-btn');
 
-        // 9: your own .tef — the page itself is the drop zone, outlined
+        // 11: your own .tef — the page itself is the drop zone, outlined
         await next(page);
         await expect(page.locator('.tour-ring.tour-ring-zone')).toBeVisible();
         await expect(page.locator('.tour-body')).toContainText('Drag a .tef file onto any page');
@@ -106,20 +126,24 @@ test.describe('Feature tour', () => {
         await page.click('#topbar-overflow-btn');
         await expect(page.locator('#topbar-overflow-menu .pill-popover-item').first())
             .toHaveText('✨ Take the tour');
-        // ...and the page's own items are still there after the menu is re-seeded
+        // ...and the song's own items are still there after the menu is
+        // re-seeded (the tour starts at search, so come back to the song)
         await page.click('#overflow-tour');
         await expect(card(page)).toBeVisible();
         await page.click('.tour-close');
+        await page.goBack();
+        await songReady(page);
         await page.click('#topbar-overflow-btn');
+        await expect(page.locator('#topbar-overflow-menu .pill-popover-item').first())
+            .toHaveText('✨ Take the tour');
         await expect(page.locator('#flag-btn')).toBeVisible();
     });
 
-    test('a ?tour link starts the tour on the page it names, and leaves the URL', async ({ page }) => {
+    test('a ?tour link starts the tour, and leaves the URL', async ({ page }) => {
         await page.addInitScript(() => localStorage.setItem('songbook-tour-seen', '1'));
         await page.goto('/songs/house-of-gold/?tour');
         await expect(card(page)).toBeVisible({ timeout: 20000 });
-        await ringAround(page, '#key-pill');            // their song, not the demo one
-        expect(await here(page)).toBe('/songs/house-of-gold/');
+        await ringAround(page, '#search-input');
         expect(await page.evaluate(() => location.search)).toBe('');
     });
 
@@ -136,13 +160,18 @@ test.describe('Feature tour', () => {
         await expect(page.locator('#overflow-tour')).toHaveCount(0);   // one invitation, not two
     });
 
-    test("started on a song, the song steps use that song and Done goes back to it", async ({ page }) => {
+    test("started on a song, the tour still searches and shows Old Home Place, and Done goes back to the reader's song", async ({ page }) => {
         await page.goto('/songs/house-of-gold/');
         await songReady(page);
         await tourBtn(page).click();
+        await ringAround(page, '#search-input');
+        expect(await here(page)).toBe('/#search');
+        await next(page);                               // find
+        await next(page);                               // key: the song the search found
+        await expect.poll(() => here(page)).toBe('/songs/old-home-place/');
         await ringAround(page, '#key-pill');
         for (let i = 0; i < 2; i++) await next(page);   // lists, edit
-        expect(await here(page)).toBe('/songs/house-of-gold/');
+        expect(await here(page)).toBe('/songs/old-home-place/');
 
         for (let i = 0; i < 3; i++) await next(page);   // the editor demo, skipped through
         await next(page);                               // play: the demo tab
@@ -159,7 +188,7 @@ test.describe('Feature tour', () => {
         await page.addInitScript(() => localStorage.setItem('songbook-tour-seen', '1'));
         await page.goto('/songs/house-of-gold/?tour');
         await expect(card(page)).toBeVisible({ timeout: 20000 });
-        for (let i = 0; i < 3; i++) await next(page);   // write
+        for (let i = 0; i < 5; i++) await next(page);   // write
         await expect.poll(() => leadText(page), { timeout: 20000 }).toContain('loved ones');
 
         await page.click('#editor-lead .cm-content');   // the reader's own press
@@ -177,10 +206,29 @@ test.describe('Feature tour', () => {
         await expect(page.locator('#editor-leave-modal')).toHaveCount(0);
     });
 
+    test('the reader takes over the search demo by pressing in the box', async ({ page }) => {
+        await page.addInitScript(() => localStorage.setItem('songbook-tour-seen', '1'));
+        await page.goto('/?tour');
+        await expect(card(page)).toBeVisible({ timeout: 20000 });
+        await next(page);                               // find: the demo starts typing
+        const box = page.locator('#search-input');
+        await expect.poll(() => box.inputValue()).toMatch(/^ten/);
+        await box.click();                              // the reader's own press
+        const stopped = await box.inputValue();
+        await page.waitForTimeout(800);
+        expect(await box.inputValue()).toBe(stopped);   // no more typing
+        expect(stopped).not.toBe('ten long years since I left my home');
+        await expect(card(page)).toBeVisible();         // the tour is still there
+    });
+
     test('whatever the reader opens covers the card; the ring steps aside', async ({ page }) => {
         await page.goto('/songs/house-of-gold/');
         await songReady(page);
         await tourBtn(page).click();
+        await ringAround(page, '#search-input');
+        await next(page);                               // find
+        await next(page);                               // key, on the song the search found
+        await songReady(page);
         await ringAround(page, '#key-pill');
 
         await page.click('#key-pill .pill-btn');
@@ -204,7 +252,7 @@ test.describe('Feature tour', () => {
         await songReady(page);
 
         await tourBtn(page).click();
-        await ringAround(page, '#key-pill');
+        await ringAround(page, '#search-input');
         await page.click('#topbar-brand');                    // they went home
         await expect(card(page)).toHaveCount(0, { timeout: 5000 });
 
@@ -213,9 +261,10 @@ test.describe('Feature tour', () => {
         await page.click('#topbar-overflow-btn');
         await page.click('#overflow-tour');
         await expect(card(page)).toBeVisible();
+        await ringAround(page, '#search-input');
         await page.click('.tour-close');
         await expect(card(page)).toHaveCount(0);
-        expect(await here(page)).toBe('/songs/house-of-gold/');
+        expect(await here(page)).toBe('/#search');            // × ends it where it is
 
         await page.click('#topbar-overflow-btn');
         await page.click('#overflow-tour');

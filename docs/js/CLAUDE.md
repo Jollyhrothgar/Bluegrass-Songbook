@@ -1306,8 +1306,9 @@ picker's Upload card, the editor's "Upload a photo instead" hatch). Document
 
 ### Feature tour (`tour.js`, G14)
 
-Nine steps: Key (`#key-pill`), Lists (`#list-picker-btn`), Edit
-(`#edit-song-btn`); then three that play a song into the real lyrics & chords
+Eleven steps. Two at `/#search`: what you can search for (ringing
+`#search-input`), then the search demo (below); then on the song it found,
+Key (`#key-pill`), Lists (`#list-picker-btn`), Edit (`#edit-song-btn`); then three that play a song into the real lyrics & chords
 editor (`tour-editor-demo.js`, below); then tab Play (`.tab-play-btn`), tab
 Edit (`.tab-edit-btn`, or `.tab-more-btn` when a phone band has moved Edit
 into the ⚙ sheet), and your own TablEdit files. That last one is a `dropZone` step: there is no single `.tef` control
@@ -1320,6 +1321,16 @@ file going in through 📂 Import .tef… — so the card says "sign in" for the
 phone path and for Submit. Re-check it if either flow changes. The steps are data (`TOUR_STEPS`); a step's `targets`
 are tried in order and the first visible one is ringed.
 
+- **The search demo** (`searchByWords` in `tour.js`) types "ten long years
+  since I left my home", the first line of Old Home Place and of no other
+  song, into the real box a letter at a time, searching at each word, then
+  rings the top result and keeps the ring there; Next opens the song. The
+  step's target is `#results`, not the box, so the card rests off the song
+  it rings. It searches through main.js's `search: { fill, run }` hooks:
+  `run` calls `search(text, { track: false })`, so the tour's query is never
+  recorded as a visitor's search (search-gaps, the dashboard), and no input
+  event fires (no URL change, no Google Analytics). A trusted press or key
+  in the box stops it (`takeOver`).
 - **The editor demo** (`tour-editor-demo.js`, `/#add`): *Write in a song*
   types "Will the Circle Be Unbroken" (the 1907 Habershon/Gabriel hymn,
   public domain; not A.P. Carter's 1935 words the book also carries, which
@@ -1354,14 +1365,14 @@ are tried in order and the first visible one is ringed.
   the tour is `⋯ ▸ ✨ Take the tour` (`#overflow-tour`), the FIRST item of
   the ⋯ menu on every page (`setOverflowLead` in `shell.js`: under a phone
   song page's own five items it was not found). It never opens itself.
-- **Links.** `?tour` starts it (on the linked song when the path is one);
+- **Links.** `?tour` starts it;
   `?tour=reset` forgets the visit so the glowing button is back (testing on
   a phone). `handleTourLink` in `main.js` takes the parameter out of the URL
   at once.
   No animation anywhere in the tour under `prefers-reduced-motion`.
-- **Pages.** Song-page steps run on the reader's own song when they started
-  on one (Key + Edit visible), otherwise on `old-home-place`; tab steps on
-  their own tab, otherwise `foggy-mountain-breakdown/banjo-tab`. Add Song
+- **Pages.** Song-page steps always run on `old-home-place`, the song the
+  search demo finds (Mike, 2026-10-28); tab steps on the reader's own tab
+  when they started on one, otherwise `foggy-mountain-breakdown/banjo-tab`. Add Song
   stays wherever its nav link is showing and goes home when it isn't (a
   phone song page hides the nav). Done returns to the starting URL.
   Navigation is the in-page link mechanism: `pushState` + a synthetic
