@@ -1,6 +1,8 @@
 // Analytics module for Bluegrass Songbook
 // Privacy-respecting behavioral analytics with batched event queue
 
+import { telemetryEnabled } from './telemetry.js';
+
 // ============================================
 // CONFIGURATION
 // ============================================
@@ -153,10 +155,11 @@ export function endSongView() {
 // ============================================
 
 /**
- * Initialize analytics module
+ * Initialize analytics module. Off the production site (telemetry.js) it stays
+ * uninitialized, so track() is a no-op and nothing is ever sent.
  */
-export function initAnalytics() {
-    if (isInitialized) return;
+export function initAnalytics({ enabled = telemetryEnabled() } = {}) {
+    if (isInitialized || !enabled) return;
     isInitialized = true;
 
     startFlushTimer();

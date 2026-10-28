@@ -1,5 +1,5 @@
 // E2E tests for Search edge cases and advanced features
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 
 test.describe('Advanced Search Filters', () => {
     test.beforeEach(async ({ page }) => {

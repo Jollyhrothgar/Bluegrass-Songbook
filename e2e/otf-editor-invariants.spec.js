@@ -12,7 +12,7 @@
 // tick 0 in its middle, so the ruler started mid-bar and ran half a bar
 // past the barline, notes slid left as you typed, and rests landed in the
 // next measure. Every check below failed on that build.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 
 async function openDemo(page) {
     const errors = [];

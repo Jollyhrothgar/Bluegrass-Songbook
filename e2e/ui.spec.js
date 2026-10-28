@@ -2,7 +2,7 @@
 // (auto-hiding chrome), overflow menu, and view preference persistence.
 // The old sidebar/hamburger and fullscreen-header tests died with those
 // surfaces in the redesign.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import { gotoSearch, searchAndOpen, openPill } from './helpers.js';
 
 test.describe('Theme', () => {

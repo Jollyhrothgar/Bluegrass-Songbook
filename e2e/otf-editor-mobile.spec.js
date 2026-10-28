@@ -11,7 +11,7 @@
 // No audio assertions (WebAudioFont's CDN is blocked in the sandbox) and no
 // submission here — submissions live in otf-editor-submit.spec.js, which
 // needs the Supabase mock.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 
 /** A tab-only work: the band is the tablature band from the first paint. */
 const TAB_WORK = '/#work/foggy-mountain-breakdown/mandolin';

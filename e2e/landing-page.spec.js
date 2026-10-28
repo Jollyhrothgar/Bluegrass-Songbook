@@ -1,5 +1,5 @@
 // E2E tests for landing page / homepage
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 
 test.describe('Landing Page', () => {
     test('landing page loads with collection cards', async ({ page }) => {

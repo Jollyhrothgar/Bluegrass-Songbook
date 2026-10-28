@@ -9,7 +9,7 @@
 // Where a claim is about the DOCUMENT rather than the UI, the assertion goes
 // through ⬇ Download and reads the file: `tracks[]` order is not something
 // the canvas shows.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 
 const WORK = '/#work/red-haired-boy/ensemble-tab';
 

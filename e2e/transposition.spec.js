@@ -2,7 +2,7 @@
 // live in the Key pill (#key-pill): chromatic +/- steps, the key grid,
 // and the Nashville toggle. The old #key-select dropdown and quick-controls
 // bar are gone.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import { gotoSearch, searchAndOpen, openPill, chords } from './helpers.js';
 
 test.describe('Key Detection and Display', () => {

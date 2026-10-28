@@ -1,5 +1,5 @@
 // Practice line under the title: Strum Machine (when matched) + YouTube search.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 
 test.describe('Practice line', () => {
     test('lead sheet shows YouTube and Strum Machine links, none in the Key pill', async ({ page }) => {

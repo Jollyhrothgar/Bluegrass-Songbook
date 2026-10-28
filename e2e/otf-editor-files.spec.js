@@ -4,7 +4,7 @@
 // These are the paths a QA pass could not reach: a download is a browser
 // event rather than a DOM change, and a file picker is a native dialog until
 // a test drives the chooser. Both are drivable — they just needed a spec.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import { tefFixture } from './helpers/tef-fixture.js';
 
 const TAB_WORK = '/#work/foggy-mountain-breakdown/mandolin';

@@ -25,7 +25,10 @@ on-disk `.env` is only what `bootstrap` validates.
 ### dashboard.ipynb
 
 Product analytics from Supabase:
-- Visitor statistics (daily traffic, unique visitors, page views)
+- Visitor statistics (daily page views, new visitors — `visitor_stats.unique_visitors`
+  only counts first-ever visits, so the notebook renames it `new_visitors`)
+- Weekly active users: app visitors (first-time vs returning) beside signed-in
+  contributors
 - User engagement (song votes, genre suggestions, tag votes)
 - Behavioral analytics from `analytics_events` (song views, searches, exports).
   The event total lives in Supabase and only grows — read it off the notebook,
@@ -76,9 +79,15 @@ than trusting the ranking.
 
 ## Data Sources
 
-- **Supabase tables** (the eight `dashboard.ipynb` actually queries):
+- **Supabase tables** (the nine `dashboard.ipynb` actually queries):
   `visitor_stats`, `visitors`, `song_votes`, `genre_suggestions`, `tag_votes`,
-  `user_lists`, `list_songs`, `analytics_events`
+  `user_lists`, `user_list_items`, `user_favorites`, `analytics_events`.
+  Every query pages through `fetch_all` — PostgREST caps a request at 1,000
+  rows, and `visitors` alone is ~39k
+- **WAU caveat**: `analytics_events` has only an anonymous `visitor_id`, so
+  "signed-in" weekly activity is inferred from contributor tables (votes,
+  tags, lists, favorites) — a floor, not a split of one total. Events are
+  missing 2026-01-07 → 2026-10-01 (`log_events` outage, fix-it list A2)
 - **Local files**: `docs/data/grassiness_scores.json`, `docs/data/bluegrass_artist_database.json`
 - **MusicBrainz**: Local PostgreSQL on port 5440 (for grassiness analysis)
 

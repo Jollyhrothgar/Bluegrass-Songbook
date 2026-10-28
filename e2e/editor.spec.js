@@ -1,7 +1,7 @@
 // E2E tests for Song Editor functionality. The Add Song entry point is the
 // top-band nav item (opens the add-song picker; Lyrics & Chords lands in the
 // editor) or the #add deep link (straight to the editor).
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import { gotoSearch, navClick } from './helpers.js';
 import { CM, setLead, leadText, leadReady } from './helpers/lead-editor.js';
 

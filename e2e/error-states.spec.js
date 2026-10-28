@@ -1,5 +1,5 @@
 // E2E tests for Error States and Edge Cases
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 
 test.describe('Invalid URLs', () => {
     test('invalid song URL shows a not-found state with a way out', async ({ page }) => {

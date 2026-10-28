@@ -1,7 +1,7 @@
 // E2E tests for the unified song page (work-view.js). Transpose/display/
 // info controls live in pill popovers on the #song-pill-row; export actions
 // live in the top band's Export pill.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import { gotoSearch, searchAndOpen, openPill, chords } from './helpers.js';
 
 test.describe('Song View', () => {
