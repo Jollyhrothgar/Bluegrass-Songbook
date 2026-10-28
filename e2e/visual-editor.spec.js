@@ -115,7 +115,7 @@ test.describe('Lyrics mode: sections', () => {
         await page.mouse.up();
         const bar = page.locator('.le-selbar');
         await expect(bar).toBeVisible();
-        await expect(bar.locator('button')).toHaveText(['Verse', 'Chorus', 'Bridge', 'Intro', 'Outro', 'Tag', 'Other…']);
+        await expect(bar.locator('button')).toHaveText(['Verse', 'Chorus', 'Bridge', 'Intro', 'Outro', 'Tag', 'Other…', 'Note']);
         await bar.locator('[data-wrap="chorus"]').click();
         const text = await leadText(page);
         expect(text).toContain('{start_of_chorus: Chorus}\nLine one\nLine two\n{end_of_chorus}');
@@ -1135,6 +1135,35 @@ test.describe('a note row ({comment}, e.g. "Interlude" from a pasted chord sheet
         expect(await leadText(page)).not.toContain('Interlude');
         expect(await leadText(page)).toContain('Well the girl ran off');
         await expect(page.locator(`${CM} .cl-comment`)).toHaveCount(0);
+        await page.locator('#editor-undo').click();
+        expect(await leadText(page)).toBe(SONG);
+    });
+
+    test('make one: select a line, Note on the section bar; it stays inside its verse and reads as a note', async ({ page }) => {
+        await openNew(page);
+        await setLead(page, '{start_of_verse: Verse 1}\n[G]Hello there\nslow down here\n[D]last line\n{end_of_verse}');
+        // a new song is in Lyrics already; setLead leaves the focus in the sheet, which the section bar needs
+        await page.evaluate(() => {
+            const { editor } = document.querySelector('#editor-lead').__lead;
+            const t = editor.getText();
+            editor.view.focus();
+            editor.view.dispatch({ selection: { anchor: t.indexOf('slow'), head: t.indexOf('slow down here') + 14 } });
+        });
+        await page.locator('.le-selbar [data-wrap="note"]').click();
+        expect(await leadText(page)).toBe('{start_of_verse: Verse 1}\n[G]Hello there\n{comment: slow down here}\n[D]last line\n{end_of_verse}');
+        await expect(page.locator(`${CM} .cl-comment`)).toHaveText('slow down here');
+    });
+
+    test('edit one: tap it, change the words, Save (one undo step)', async ({ page }) => {
+        await openNew(page);
+        await setLead(page, SONG);
+        await setMode(page, 'lyrics');
+        await page.locator(`${CM} .cl-comment`, { hasText: 'Interlude' }).click();
+        const field = page.locator('.le-commentmenu input');
+        await field.fill('Banjo break');
+        await page.locator('.le-commentmenu button[type="submit"]').click();
+        expect(await leadText(page)).toContain('{comment: Banjo break}');
+        await expect(page.locator(`${CM} .cl-comment`)).toHaveText('Banjo break');
         await page.locator('#editor-undo').click();
         expect(await leadText(page)).toBe(SONG);
     });
