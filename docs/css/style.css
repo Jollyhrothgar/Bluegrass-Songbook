@@ -11139,13 +11139,13 @@ body.file-dragover {
     position: absolute; left: 0.45em; bottom: -0.28em; width: calc(1.6em + 10px); height: 1.2em; box-sizing: border-box;
     outline: 2px solid var(--accent); outline-offset: 1px; border-radius: 3px; pointer-events: none;
 }
-/* the cursor between two words (a GAP stop): a slim bar over the chord row and the lyric row, no text outline */
-.le-cm .cl-gap-bar, .chm-strip .cl-gap-bar, .le-loupe .cl-gap-bar {
-    position: absolute; left: -2px; bottom: -0.3em; width: 4px; height: 2.9em; border-radius: 2px;
-    background: var(--accent); pointer-events: none;
+/* the cursor between two words (a GAP stop): the same box as the slot after the words, centred on the space - the dashed
+   pill on the chord row (while the gap holds no chord) and an outline on the lyric row. Absolute, no width (see above). */
+.le-cm .cl-slot-gap .cl-slot-pill, .chm-strip .cl-slot-gap .cl-slot-pill, .le-loupe .cl-slot-gap .cl-slot-pill { left: 0.5ch; transform: translateX(-50%); }
+.le-cm .cl-slot-gap .cl-slot-text, .chm-strip .cl-slot-gap .cl-slot-text, .le-loupe .cl-slot-gap .cl-slot-text {
+    position: absolute; left: 0.5ch; bottom: -0.28em; width: 1ch; height: 1.2em; transform: translateX(-50%);
+    box-sizing: border-box; outline: 2px solid var(--accent); outline-offset: -1px; border-radius: 3px; pointer-events: none;
 }
-.le-cm .cl-slot-gap .cl-slot-pill:empty, .chm-strip .cl-slot-gap .cl-slot-pill:empty, .le-loupe .cl-slot-gap .cl-slot-pill:empty { display: none; }
-.le-cm .cl-slot-gap .cl-slot-pill, .chm-strip .cl-slot-gap .cl-slot-pill, .le-loupe .cl-slot-gap .cl-slot-pill { left: 5px; }
 .chm-enter { font-weight: 600; white-space: nowrap; }
 /* an empty chord line the cursor is on: space is PADDING (the height map ignores margins) */
 .le-cm .cl-newline { margin: 0; padding-bottom: 0.25rem; display: flow-root; }
