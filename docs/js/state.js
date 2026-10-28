@@ -447,6 +447,15 @@ export let currentSearchQuery = '';
 // Dungeon mode: search scope flips to archived-only rows (indexed === false)
 export let dungeonMode = false;
 
+// "Include the dungeon": the reader's standing choice to search the archive
+// alongside the canon. Off by default, remembered in localStorage. Dungeon
+// mode (archive only) overrides it while it's on.
+const INCLUDE_DUNGEON_KEY = 'songbook-include-dungeon';
+export let includeDungeon = (() => {
+    try { return globalThis.localStorage?.getItem(INCLUDE_DUNGEON_KEY) === '1'; }
+    catch { return false; }
+})();
+
 /**
  * The view changed — which is NOT the same as "someone said the view".
  *
@@ -478,6 +487,16 @@ export function setDungeonMode(value) {
     if (dungeonMode === value) return;
     dungeonMode = value;
     notifyChange('dungeonMode');
+}
+export function setIncludeDungeon(value) {
+    value = !!value;
+    if (includeDungeon === value) return;
+    includeDungeon = value;
+    try {
+        if (value) localStorage.setItem(INCLUDE_DUNGEON_KEY, '1');
+        else localStorage.removeItem(INCLUDE_DUNGEON_KEY);
+    } catch { /* private mode: the choice lasts the session */ }
+    notifyChange('includeDungeon');
 }
 
 // ============================================
@@ -565,6 +584,7 @@ const stateGetters = {
     activeModal: () => activeModal,
     currentSearchQuery: () => currentSearchQuery,
     dungeonMode: () => dungeonMode,
+    includeDungeon: () => includeDungeon,
 };
 
 const stateSetters = {
@@ -632,6 +652,7 @@ const stateSetters = {
     // UI view state
     currentView: setCurrentView,
     dungeonMode: setDungeonMode,
+    includeDungeon: setIncludeDungeon,
     activeModal: setActiveModal,
     currentSearchQuery: setCurrentSearchQuery,
 };

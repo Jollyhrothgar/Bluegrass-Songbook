@@ -45,6 +45,13 @@ vi.mock('../lists.js', () => ({
     openNotesSheet: vi.fn()
 }));
 
+const store = {};
+vi.stubGlobal('localStorage', {
+    getItem: k => (k in store ? store[k] : null),
+    setItem: (k, v) => { store[k] = String(v); },
+    removeItem: k => { delete store[k]; },
+});
+
 vi.mock('../list-picker.js', () => ({ showListPicker: vi.fn() }));
 vi.mock('../work-view.js', () => ({ openWork: vi.fn() }));
 vi.mock('../analytics.js', () => ({
@@ -56,7 +63,7 @@ vi.mock('../song-content.js', () => ({ songHasContent: vi.fn(() => true) }));
 vi.mock('../shell.js', () => ({ pill: vi.fn() }));
 
 import { searchableSongs, search } from '../search-core.js';
-import { setAllSongs, setDungeonMode, dungeonMode } from '../state.js';
+import { setAllSongs, setDungeonMode, dungeonMode, setIncludeDungeon, includeDungeon } from '../state.js';
 import { countDistinctTitles } from '../corpus.js';
 
 const CORPUS = [
@@ -68,6 +75,7 @@ const CORPUS = [
 
 beforeEach(() => {
     setDungeonMode(false);
+    setIncludeDungeon(false);
     setAllSongs(CORPUS.map(s => ({ ...s })));
 });
 
@@ -119,5 +127,42 @@ describe('setDungeonMode', () => {
         expect(dungeonMode).toBe(false);
         setDungeonMode(true);
         expect(dungeonMode).toBe(true);
+    });
+});
+
+describe('Include the dungeon', () => {
+    it('searches canon and archive together', () => {
+        setIncludeDungeon(true);
+        expect(searchableSongs().map(s => s.id).sort())
+            .toEqual(['canon-song', 'canon-song-2', 'dungeon-song', 'dungeon-song-2']);
+    });
+
+    it('ranks the canon above an equally relevant archive row', () => {
+        setIncludeDungeon(true);
+        // Every "song" title is in the same relevance tier (contains the
+        // query); within a tier the canon comes first.
+        const ids = search('song', { skipRender: true }).map(s => s.id);
+        expect(ids.indexOf('canon-song')).toBeLessThan(ids.indexOf('dungeon-song'));
+        expect(ids.indexOf('canon-song-2')).toBeLessThan(ids.indexOf('dungeon-song'));
+    });
+
+    it('still lets a better match from the dungeon outrank the canon', () => {
+        setIncludeDungeon(true);
+        const ids = search('dungeon song', { skipRender: true }).map(s => s.id);
+        expect(ids[0]).toBe('dungeon-song');
+    });
+
+    it('dungeon mode stays archive-only while it is on', () => {
+        setIncludeDungeon(true);
+        setDungeonMode(true);
+        expect(searchableSongs().map(s => s.id)).toEqual(['dungeon-song', 'dungeon-song-2']);
+    });
+
+    it('is remembered in localStorage, and forgotten when unticked', () => {
+        setIncludeDungeon(true);
+        expect(includeDungeon).toBe(true);
+        expect(localStorage.getItem('songbook-include-dungeon')).toBe('1');
+        setIncludeDungeon(false);
+        expect(localStorage.getItem('songbook-include-dungeon')).toBeNull();
     });
 });

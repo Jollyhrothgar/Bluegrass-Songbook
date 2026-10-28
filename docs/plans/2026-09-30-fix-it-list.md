@@ -88,6 +88,7 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | G7 | Song URLs that don't lie: `angel-band-1` could be a version or a different song | L | `feature/song-urls` | done (2026-10-26): `/songs/{song}/` (indexed, one per song) + `/songs/{song}/{version}/`; work.yaml `song:`/`version:`/`slug:` seeded on evidence only (`scripts/lib/seed_songs.py`); the app routes paths; versions follow songs |
 | G8 | 79 merged-away works re-created by July backfills: searchable, but the app opened their redirect target, so their tabs and edits were unreachable | M | `feature/song-urls` | done (2026-10-26): each pair is now one song with both as versions, redirects dropped; the build fails if a redirect source exists again (`works_writer.redirect_violations`) |
 | G9 | One metadata editor for every song: Song (which song this is a version of), Version label, Performer (the intended artist); its Artist field edits the scraped field we never show | M | — | not started — next after G7 (touches `pending_songs`, `auto-commit-song`, `works_writer.METADATA_FIELDS`, the Details editor) |
+| G10 | Searching the dungeon meant leaving the canon: no way to search both at once | S | `feature/include-dungeon` | done (2026-10-27): a remembered "Include the dungeon" checkbox beside the search count (off by default); archived results badged, canon first at equal relevance, archive loaded on demand. Dungeon song pages for Google deferred (Pages 1 GB limit, thin-content risk) |
 
 ### How it ships
 

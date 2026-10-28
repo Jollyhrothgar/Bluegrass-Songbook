@@ -1,6 +1,6 @@
 // Core search functionality for Bluegrass Songbook
 
-import { allSongs, songGroups, userLists, selectedSongIds, toggleSongSelection, clearSelectedSongs, selectAllSongs, getBountiesForWork, dungeonMode } from './state.js';
+import { allSongs, songGroups, userLists, selectedSongIds, toggleSongSelection, clearSelectedSongs, selectAllSongs, getBountiesForWork, dungeonMode, includeDungeon } from './state.js';
 import { highlightMatch, escapeHtml, escapeAttr, songWriter, writtenByLabel, matchedArtists, recordedBy, recorderLabel } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
 import {
@@ -667,11 +667,24 @@ function formatMatchedArtists(song, names) {
  * and arrangement groups still resolve — but search, browse, and counts
  * never surface them.
  * In dungeon mode the scope inverts: only archived rows are searchable.
+ * With "Include the dungeon" on, both are (whatever of the archive has
+ * loaded — main.js loads it when the box is ticked).
  */
 export function searchableSongs() {
-    return dungeonMode
-        ? allSongs.filter(s => s.indexed === false)
-        : allSongs.filter(s => s.indexed !== false);
+    if (dungeonMode) return allSongs.filter(s => s.indexed === false);
+    if (includeDungeon) return allSongs.slice();
+    return allSongs.filter(s => s.indexed !== false);
+}
+
+/** How the stats line names the scope: '', ' in the dungeon', or ' incl. the dungeon'. */
+function scopeSuffix() {
+    if (dungeonMode) return ' in the dungeon';
+    return includeDungeon ? ' incl. the dungeon' : '';
+}
+
+/** Canon before archive: -1 when only `a` is canon, 1 when only `b` is, else 0. */
+function canonFirst(a, b) {
+    return (a.indexed === false) - (b.indexed === false);
 }
 
 /**
@@ -680,6 +693,8 @@ export function searchableSongs() {
 export function showPopularSongs() {
     // Sort by canonical_rank (higher = more popular)
     const sorted = searchableSongs().sort((a, b) => {
+        const scope = canonFirst(a, b);
+        if (scope) return scope;
         const aRank = a.canonical_rank || 0;
         const bRank = b.canonical_rank || 0;
         return bRank - aRank;
@@ -687,7 +702,7 @@ export function showPopularSongs() {
     // Use distinct title count to match subtitle
     const distinctCount = new Set(searchableSongs().map(s => s.title?.toLowerCase())).size;
     if (searchStatsEl) {
-        searchStatsEl.textContent = `${distinctCount.toLocaleString()} songs${dungeonMode ? ' in the dungeon' : ''}`;
+        searchStatsEl.textContent = `${distinctCount.toLocaleString()} songs${scopeSuffix()}`;
     }
     // Pass all results - renderResults handles pagination via infinite scroll
     renderResults(sorted, '');
@@ -827,7 +842,10 @@ export function search(query, options = {}) {
             if (bCredits.includes(textQuery) && !aCredits.includes(textQuery)) return 1;
         }
 
-        // Tie-breaker: sort by canonical_rank (higher = more popular = first)
+        // Equally relevant: the canon outranks the dungeon, then
+        // canonical_rank (higher = more popular = first)
+        const scope = canonFirst(a, b);
+        if (scope) return scope;
         const aRank = a.canonical_rank || 0;
         const bRank = b.canonical_rank || 0;
         return bRank - aRank;
@@ -857,7 +875,7 @@ export function search(query, options = {}) {
     }
 
     // Update stats with search info
-    let statsText = `${dedupedResults.length.toLocaleString()} songs${dungeonMode ? ' in the dungeon' : ''}`;
+    let statsText = `${dedupedResults.length.toLocaleString()} songs${scopeSuffix()}`;
     const filters = [];
     // Inclusion filters
     if (artistFilter) filters.push(`artist: "${artistFilter}"`);
@@ -1043,6 +1061,12 @@ function renderResultItem(song, index, query, isDraggable, canReorder, viewingLi
         ? '<span class="placeholder-badge">Placeholder</span>'
         : '';
 
+    // Dungeon badge: an archived song outside the dungeon itself (searched
+    // in with "Include the dungeon", or kept in a list)
+    const dungeonBadge = song.indexed === false && !dungeonMode
+        ? '<span class="dungeon-badge" title="From the Bluegrass Dungeon, not in the curated songbook">Dungeon</span>'
+        : '';
+
     // Document parts badge (PDF)
     const docParts = song.document_parts || [];
     const docBadge = docParts.length > 0
@@ -1110,7 +1134,7 @@ function renderResultItem(song, index, query, isDraggable, canReorder, viewingLi
             ${dragHandle}
             <div class="result-main">
                 <div class="result-title-artist">
-                    <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}${partLabel}${versionBadge}${placeholderBadge}${bountyBadge}${docBadge}${instrumentBadges}${grassinessBadge}</div>
+                    <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}${partLabel}${versionBadge}${dungeonBadge}${placeholderBadge}${bountyBadge}${docBadge}${instrumentBadges}${grassinessBadge}</div>
                     ${metadataBadges}
                 </div>
                 ${writerLine}
