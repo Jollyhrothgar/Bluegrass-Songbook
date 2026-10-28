@@ -299,6 +299,10 @@
                 <button id="editor-undo" class="editor-toolbar-btn" type="button" title="Undo" disabled>&#8617; Undo</button>
                 <button id="editor-redo" class="editor-toolbar-btn" type="button" title="Redo" disabled>&#8618; Redo</button>
                 <span class="editor-toolbar-spacer"></span>
+                <span class="editor-zoom" role="group" aria-label="Text size">
+                    <button id="editor-font-down" class="editor-toolbar-btn" type="button" title="Smaller text" aria-label="Smaller text">A&minus;</button>
+                    <button id="editor-font-up" class="editor-toolbar-btn" type="button" title="Larger text" aria-label="Larger text">A+</button>
+                </span>
                 <span id="editor-transpose-group" class="ve-transpose-group ve-gone">
                     <button id="editor-transpose-down" class="transpose-btn" type="button" title="Transpose down one semitone">&minus;</button>
                     <select id="editor-key-select" class="editor-key-select" title="Detected key (change to override)">
@@ -312,53 +316,39 @@
                 </span>
             </div>
 
-            <p class="editor-sync-note">Edit from either side &mdash; changes sync.</p>
+            <div id="editor-modebar" class="editor-modebar">
+                <div class="le-modeswitch" role="group" aria-label="Editor mode">
+                    <button type="button" id="editor-mode-lyrics" class="on" data-lead-mode="lyrics" aria-pressed="true">Lyrics</button>
+                    <button type="button" id="editor-mode-chords" data-lead-mode="chords" aria-pressed="false">Chords</button>
+                    <button type="button" id="editor-mode-chordpro" data-lead-mode="chordpro" aria-pressed="false">ChordPro</button>
+                </div>
+                <div id="editor-pane-toggle" class="le-modeswitch le-pane-toggle hidden" role="group" aria-label="Source or preview">
+                    <button type="button" class="on" data-lead-pane="source" aria-pressed="true">Source</button>
+                    <button type="button" data-lead-pane="preview" aria-pressed="false">Preview</button>
+                </div>
+                <span class="editor-toolbar-spacer"></span>
+                <label class="auto-detect-label" title="Automatically clean up pasted content from chord sites like Ultimate Guitar or ChordU">
+                    <input type="checkbox" id="editor-auto-detect" checked>
+                    Auto-detect format
+                </label>
+            </div>
 
             <div id="editor-workspace" class="editor-workspace">
-                <div class="editor-pane editor-pane-raw">
-                    <div class="editor-content-header">
-                        <label for="editor-content" class="editor-pane-title">Raw</label>
-                        <span id="editor-selection-toolbar" class="editor-selection-toolbar hidden">
-                            <button type="button" class="est-btn" data-wrap="verse">Make verse</button>
-                            <button type="button" class="est-btn" data-wrap="chorus">Make chorus</button>
-                            <button type="button" class="est-btn" data-wrap="bridge">Make bridge</button>
-                        </span>
-                        <label class="auto-detect-label" title="Automatically clean up pasted content from chord sites like Ultimate Guitar or ChordU">
-                            <input type="checkbox" id="editor-auto-detect" checked>
-                            Auto-detect format
-                        </label>
-                    </div>
-                    <textarea id="editor-content" placeholder="Paste or type your song &mdash; lyrics, chord sheets, anything.
+                <div id="editor-lead" class="editor-lead"></div>
+                <textarea id="editor-content" hidden placeholder="Paste or type your song &mdash; lyrics, chord sheets, anything."></textarea>
+            </div>
 
-Chord sheets from the web convert automatically:
-
-G                    C              G
-Amazing grace how sweet the sound
-
-Inline ChordPro works too:
-[G]Amazing [C]grace how [G]sweet the sound
-
-A blank line starts a new verse."></textarea>
-                    <div class="editor-help-row">
-                        <details class="format-help">
-                            <summary>Format Help</summary>
-                            <ul>
-                                <li><strong>Paste chord sheets</strong> - Chords above lyrics are auto-converted</li>
-                                <li><code>[G]</code> - Inline chord before syllable</li>
-                                <li><code>[Verse 1]</code> or <code>[Chorus]</code> - Section markers (in pasted text)</li>
-                                <li>Blank line = new verse/section</li>
-                            </ul>
-                        </details>
-                        <button id="chordpro-hints-btn" class="hints-btn" type="button">? ChordPro</button>
-                    </div>
-                </div>
-
-                <div class="editor-pane editor-pane-preview">
-                    <div class="editor-preview-header">
-                        <span class="editor-pane-title">Visual editor</span>
-                    </div>
-                    <div id="editor-preview-container" class="editor-preview-container"></div>
-                </div>
+            <div class="editor-help-row">
+                <details class="format-help">
+                    <summary>Format Help</summary>
+                    <ul>
+                        <li><strong>Paste chord sheets</strong> - Chords above lyrics are auto-converted</li>
+                        <li><strong>Chords mode</strong> - tap a lyric, then a chord (on a computer, double-click a word in Lyrics mode)</li>
+                        <li><strong>Select lines</strong> to make them a verse, chorus or bridge</li>
+                        <li>Blank line = new verse</li>
+                    </ul>
+                </details>
+                <button id="chordpro-hints-btn" class="hints-btn" type="button">? ChordPro</button>
             </div>
 
             <div class="editor-actions">

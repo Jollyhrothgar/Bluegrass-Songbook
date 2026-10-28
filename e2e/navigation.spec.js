@@ -72,7 +72,7 @@ test.describe('Top Band Navigation', () => {
         // Choosing Lyrics & Chords goes to the new-song editor
         await page.locator('.picker-card[data-type="chordpro"]').click();
         await expect(page.locator('#editor-panel')).toBeVisible();
-        await expect(page.locator('#editor-content')).toBeVisible();
+        await expect(page.locator('#editor-lead .cm-content')).toBeVisible();
     });
 
     test('brand link returns home', async ({ page }) => {

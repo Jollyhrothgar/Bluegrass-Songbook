@@ -1,1086 +1,1143 @@
-// E2E tests for the two-pane song editor: raw ChordPro textarea (left) +
-// live interactive preview (right). The textarea is THE document; every
-// preview-side edit (chord-row taps, ghost typing, chip delete, in-preview
-// lyric edits) writes serialized ChordPro back into it.
-//
-// Vertical position is the mode: the chord STRIP above each line places
-// and edits chords; the lyric text below swaps to an input on click.
+// E2E for the lead-sheet editor (docs/js/lead-editor/): ONE CodeMirror view, three modes,
+// Lyrics | Chords | ChordPro, over the ChordPro text. Lyrics and Chords are decorations drawn
+// with the song page's own classes. See docs/plans/2026-10-26-lyrics-editor-redesign.md.
 import { test, expect } from '@playwright/test';
+import {
+    CM, SHEET, setLead, leadText, leadReady, setMode, chordsOn, boxAt, boxPos, openEditor, pointOnWord,
+    boxState, lineEndPoint, centreOf, mouseDrag, along, segmentRects, syllableCentres, boxStopKind, stepKinds,
+} from './helpers/lead-editor.js';
 
-const SONG = `{start_of_verse: Verse 1}
-hello world friend
-{end_of_verse}
-`;
+const LEAD = '#editor-lead';
 
-const SONG_WITH_CHORD = `{start_of_verse: Verse 1}
-[G]hello world friend
-{end_of_verse}
-`;
+// The top magnifier is OFF by default (per-device setting `bgb-chord-magnifier`); the tests that
+// exercise the strip turn it on. The default-off tests live in visual-editor-mobile.spec.js.
+test.beforeEach(async ({ page }) => {
+    await page.addInitScript(() => localStorage.setItem('bgb-chord-magnifier', '1'));
+});
+const CHORDS = `${CM} .cl-chord:not(.cl-chord-gap)`;
+const LABELS = `${CM} .section-label`;
 
-async function openNewSongEditor(page) {
-    // #add deep link goes straight to the new-song editor (the top-band
-    // Add Song nav item opens the picker modal first — covered elsewhere)
-    await page.goto('/#add');
-    await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
+async function openNew(page, query = '') {
+    await openEditor(page, '#add', query);
 }
 
-// fill() fires an input event; the preview re-renders ~200ms later
-async function setSong(page, text) {
-    await page.locator('#editor-content').fill(text);
-}
-
-// The chord strip above the syllable whose text starts with `text` —
-// chord placement happens on the chord ROW, not the lyric text.
-function stripFor(page, text) {
-    return page
-        .locator('.ve-seg', { has: page.locator('.ve-syl', { hasText: text }) })
-        .locator('.ve-strip')
-        .first();
-}
-
-test.describe('Two-pane editor basics', () => {
-    test('textarea and interactive preview are both visible; no tab UI', async ({ page }) => {
-        await openNewSongEditor(page);
-        await expect(page.locator('#editor-content')).toBeVisible();
-        await expect(page.locator('#editor-preview-container')).toBeVisible();
-        // empty state: guidance lives in the textarea placeholder + preview hint
-        await expect(page.locator('.ve-preview-empty')).toBeVisible();
-        expect(await page.locator('#editor-content').getAttribute('placeholder'))
-            .toMatch(/Paste or type your song/);
-        // the Visual|Raw toggle is gone — both panes always coexist
-        await expect(page.locator('#editor-tab-raw')).toHaveCount(0);
-        await expect(page.locator('#editor-tab-visual')).toHaveCount(0);
+test.describe('Lyrics mode: writing', () => {
+    test('typing is plain text on the chart; a blank line starts a new verse', async ({ page }) => {
+        await openNew(page);
+        await page.locator(CM).click();
+        await page.keyboard.type('Amazing grace\nhow sweet\n\nSecond verse');
+        expect(await leadText(page)).toBe('Amazing grace\nhow sweet\n\nSecond verse');
+        // the book labels untagged verses; so does the editor
+        await expect(page.locator(LABELS)).toHaveText(['Verse 1', 'Verse 2']);
     });
 
-    test('panes are labeled Raw / Visual editor with a shared sync note', async ({ page }) => {
-        await openNewSongEditor(page);
-        await expect(page.locator('.editor-pane-raw .editor-pane-title')).toHaveText('Raw');
-        await expect(page.locator('.editor-pane-preview .editor-pane-title')).toHaveText('Visual editor');
-        await expect(page.locator('.editor-sync-note')).toHaveText(/Edit from either side/);
-        // the label row still hosts the make-verse mini-bar (one row, not two)
-        await expect(page.locator('.editor-content-header #editor-selection-toolbar')).toHaveCount(1);
+    test('Backspace deletes the letter beside a chord, never the chord', async ({ page }) => {
+        await openNew(page);
+        await setLead(page, 'Ama[G]zing');
+        // caret right before the "z" (after the hidden chord)
+        await page.locator(CM).click();
+        await page.keyboard.press('ControlOrMeta+Home');
+        await page.keyboard.press('ArrowRight');
+        await page.keyboard.press('ArrowRight');
+        await page.keyboard.press('ArrowRight');
+        await page.keyboard.press('ArrowRight');   // steps over the chord as one unit
+        await page.keyboard.press('Backspace');
+        expect(await leadText(page)).toBe('Am[G]zing');
     });
 
-    test('typing ChordPro in the textarea renders the live preview', async ({ page }) => {
-        await openNewSongEditor(page);
-        await setSong(page, SONG_WITH_CHORD);
-        await expect(page.locator('.ve-section-label')).toHaveText('Verse 1');
-        await expect(page.locator('.ve-chip')).toHaveText('G');
-        const syls = page.locator('.ve-syl');
-        await expect(syls.first()).toContainText('hel');
+    test('text typed where a chord sits goes before the chord', async ({ page }) => {
+        await openNew(page);
+        await setLead(page, 'Ama[G]zing');
+        await page.locator(CM).click();
+        await page.keyboard.press('ControlOrMeta+Home');
+        for (let i = 0; i < 4; i++) await page.keyboard.press('ArrowRight');
+        await page.keyboard.type('X');
+        expect(await leadText(page)).toBe('AmaX[G]zing');
     });
 
-    test('tap the chord row, pick a chord — it lands in the textarea', async ({ page }) => {
-        await openNewSongEditor(page);
-        await setSong(page, SONG);
-        await expect(page.locator('.ve-syl').first()).toBeVisible();
+    test('deleting a range with chords removes them, says so, and Undo brings them back', async ({ page }) => {
+        await openNew(page);
+        await setLead(page, '[G]One [C]two [D]three');
+        await page.locator(CM).click();
+        await page.keyboard.press('ControlOrMeta+a');
+        await page.keyboard.press('Backspace');
+        const toast = page.locator('.le-toast');
+        await expect(toast).toContainText('Removed 3 chords');
+        await toast.locator('.le-toast-undo').click();
+        expect(await leadText(page)).toBe('[G]One [C]two [D]three');
+    });
 
-        await page.locator('.ve-strip').first().click();
-        await expect(page.locator('.ve-palette')).toBeVisible();
-        await page.locator('.ve-palette .ve-chip-btn').first().click();
-        await expect(page.locator('.ve-chip').first()).toBeVisible();
-
-        const raw = await page.locator('#editor-content').inputValue();
-        expect(raw).toMatch(/\[[A-G][#b]?m?7?\]hello world friend/);
-        expect(raw).toContain('{start_of_verse: Verse 1}');
-
-        // toolbar undo takes it back out of the textarea
+    test('Undo and Redo buttons drive one history', async ({ page }) => {
+        await openNew(page);
+        await page.locator(CM).click();
+        await page.keyboard.type('hello');
+        await expect(page.locator('#editor-undo')).toBeEnabled();
         await page.locator('#editor-undo').click();
-        expect(await page.locator('#editor-content').inputValue()).not.toMatch(/\[[A-G]/);
+        expect(await leadText(page)).toBe('');
+        await expect(page.locator('#editor-redo')).toBeEnabled();
+        await page.locator('#editor-redo').click();
+        expect(await leadText(page)).toBe('hello');
     });
 
-    test('picker picks insert immediately and consecutive picks refine', async ({ page }) => {
-        await openNewSongEditor(page);
-        await setSong(page, SONG);
-        await page.locator('.ve-strip').first().click();
-        await page.locator('.ve-palette-more').click();
-        await expect(page.locator('.ve-picker')).toBeVisible();
-
-        // first pick inserts and selects the new chip
-        await page.locator('.ve-picker-quality', { hasText: /^Gm$/ }).click();
-        await expect(page.locator('.ve-chip')).toHaveText('Gm');
-        await expect(page.locator('.ve-chip')).toHaveClass(/ve-chip-selected/);
-
-        // picker stays open with its root intact; the next pick refines
-        await expect(page.locator('.ve-picker')).toBeVisible();
-        await expect(page.locator('.ve-picker-root.selected')).toHaveText('G');
-        await page.locator('.ve-picker-quality', { hasText: /^G7$/ }).click();
-        await expect(page.locator('.ve-chip')).toHaveText('G7');
-        await expect(page.locator('.ve-chip')).toHaveCount(1);
-
-        // tapping another seam on the chord row moves on; the next pick
-        // inserts there
-        await stripFor(page, 'world').click();
-        await page.locator('.ve-picker-quality', { hasText: /^Gm7$/ }).click();
-        await expect(page.locator('.ve-chip')).toHaveCount(2);
-
-        const raw = await page.locator('#editor-content').inputValue();
-        expect(raw).toContain('[G7]hello [Gm7]world friend');
-        expect(raw).not.toContain('[Gm]hello');
-    });
-
-    test('editing an existing song renders its sections and chords', async ({ page }) => {
-        await page.goto('/#work/your-cheating-heart');
-        await page.waitForTimeout(1000);
-        await expect(page.locator('#song-view')).toBeVisible();
-        const editBtn = page.locator('#edit-song-btn');
-        if (await editBtn.isVisible()) {
-            await editBtn.click();
-            await expect(page.locator('#editor-panel')).toBeVisible();
-            await expect(page.locator('.ve-psec').first()).toBeVisible();
-            await expect(page.locator('.ve-chip').first()).toBeVisible();
-            // and the raw text is right there beside it
-            expect(await page.locator('#editor-content').inputValue()).toContain('[');
-        }
-    });
-
-    test('progressive toolbar: transpose/key appear once the song has a chord', async ({ page }) => {
-        await openNewSongEditor(page);
-        await expect(page.locator('#editor-transpose-group')).toBeHidden();
-        await setSong(page, SONG);
-        await expect(page.locator('.ve-syl').first()).toBeVisible();
-        await expect(page.locator('#editor-transpose-group')).toBeHidden();
-
-        await page.locator('.ve-strip').first().click();
-        await page.locator('.ve-palette .ve-chip-btn').first().click();
-        await expect(page.locator('#editor-transpose-group')).toBeVisible();
-        await expect(page.locator('#editor-key-select')).toBeVisible();
-    });
-
-    test('metadata directives ride through preview edits untouched', async ({ page }) => {
-        await openNewSongEditor(page);
-        await setSong(page, '{meta: title Keep Me}\n{meta: x_source e2e}\n\n' + SONG);
-        await stripFor(page, 'world').click();
-        await page.locator('.ve-palette .ve-chip-btn').first().click();
-        const raw = await page.locator('#editor-content').inputValue();
-        expect(raw).toContain('{meta: title Keep Me}');
-        expect(raw).toContain('{meta: x_source e2e}');
-    });
-});
-
-test.describe('Keyboard interactions', () => {
-    async function placeReadyLine(page) {
-        await openNewSongEditor(page);
-        await setSong(page, SONG);
-        await expect(page.locator('.ve-syl').first()).toBeVisible();
-    }
-
-    test('ghost entry: select a chord-row seam, type Eb7, chord commits after idle', async ({ page }) => {
-        await placeReadyLine(page);
-        await page.locator('.ve-strip').first().click();
-        await expect(page.locator('.ve-palette')).toBeVisible();
-        // pauses shorter than the idle-commit debounce: stays one ghost
-        await page.keyboard.type('Eb7', { delay: 150 });
-        await expect(page.locator('.ve-ghost-chip')).toHaveText('Eb7');
-        // typing does NOT open the picker or focus the custom input
-        await expect(page.locator('.ve-picker')).toBeHidden();
-        // after the idle delay the ghost becomes a real chip — in both panes
-        await expect(page.locator('.ve-chip').first()).toHaveText('Eb7');
-        await expect(page.locator('.ve-ghost-chip')).toHaveCount(0);
-        expect(await page.locator('#editor-content').inputValue()).toContain('[Eb7]hello');
-    });
-
-    test('Space spams across syllables, then typed chord + Space commits and advances', async ({ page }) => {
-        await placeReadyLine(page);
-        await page.locator('.ve-strip').first().click();     // seam at "hel"
-        await page.keyboard.press('Space');                   // → "lo"
-        await page.keyboard.press('Space');                   // → "world"
-        await page.keyboard.type('C');
-        await page.keyboard.press('Space');                   // commit C, → "friend"
-        await expect(page.locator('.ve-chip')).toHaveText('C');
-        await expect(page.locator('.ve-syl-selected')).toHaveText(/friend/);
-        expect(await page.locator('#editor-content').inputValue()).toContain('[C]world');
-    });
-
-    test('hovering a chip reveals an × that removes the chord from the text', async ({ page }) => {
-        await placeReadyLine(page);
-        await page.locator('.ve-strip').first().click();
-        await page.locator('.ve-palette .ve-chip-btn').first().click();
-        await expect(page.locator('.ve-chip')).toHaveCount(1);
-        await page.locator('.ve-chip-wrap').hover();
-        await expect(page.locator('.ve-chip-x')).toBeVisible();
-        await page.locator('.ve-chip-x').click();
-        await expect(page.locator('.ve-chip')).toHaveCount(0);
-        expect(await page.locator('#editor-content').inputValue()).not.toMatch(/\[[A-G]/);
-    });
-
-    test('Cmd/Ctrl+Z undoes a chord placement', async ({ page }) => {
-        await placeReadyLine(page);
-        await page.locator('.ve-strip').first().click();
-        await page.locator('.ve-palette .ve-chip-btn').first().click();
-        await expect(page.locator('.ve-chip')).toHaveCount(1);
-        await page.keyboard.press('ControlOrMeta+z');
-        await expect(page.locator('.ve-chip')).toHaveCount(0);
-    });
-
-    test('clicking a chip then pressing Delete removes the chord', async ({ page }) => {
-        await placeReadyLine(page);
-        await page.locator('.ve-strip').first().click();
-        await page.locator('.ve-palette .ve-chip-btn').first().click();
-        await expect(page.locator('.ve-chip')).toHaveCount(1);
-
-        await page.locator('.ve-chip').first().click();
-        await page.keyboard.press('Delete');
-        await expect(page.locator('.ve-chip')).toHaveCount(0);
-        await expect(page.locator('.ve-palette')).toBeHidden();
-    });
-
-    test('clicking a chip then the ✕ Remove button removes the chord', async ({ page }) => {
-        await placeReadyLine(page);
-        await page.locator('.ve-strip').first().click();
-        await page.locator('.ve-palette .ve-chip-btn').first().click();
-        await expect(page.locator('.ve-chip')).toHaveCount(1);
-
-        await page.locator('.ve-chip').first().click();
-        await expect(page.locator('.ve-palette-delete')).toBeVisible();
-        await page.locator('.ve-palette-delete').click();
-        await expect(page.locator('.ve-chip')).toHaveCount(0);
-    });
-
-    test('typing in the textarea never triggers ghost entry', async ({ page }) => {
-        await placeReadyLine(page);
-        await page.locator('.ve-strip').first().click();     // selection alive
-        await page.locator('#editor-content').click();
-        await page.keyboard.type('G', { delay: 50 });
-        await expect(page.locator('.ve-ghost-chip')).toHaveCount(0);
-        expect(await page.locator('#editor-content').inputValue()).toContain('G');
-    });
-});
-
-test.describe('Smart paste into the textarea', () => {
-    const CHORD_SHEET = `G              C        G
-Way down upon the Swanee River
-D7                 G
-Far, far away
-
-G                C       G
-All up and down the whole creation
-D7                G
-Sadly I roam`;
-
-    // The raw paste handler reads textarea.value on a setTimeout(0) after
-    // the paste event, so setting the value + dispatching paste matches the
-    // real flow (Playwright can't put multi-line text on the clipboard
-    // cross-browser reliably).
-    async function pasteIntoTextarea(page, text) {
-        await page.locator('#editor-content').evaluate((el, t) => {
-            el.focus();
-            el.value = t;
-            el.dispatchEvent(new ClipboardEvent('paste', { bubbles: true, cancelable: true }));
-            // a real paste also fires input, which drives the preview refresh
-            el.dispatchEvent(new Event('input', { bubbles: true }));
-        }, text);
-    }
-
-    test('chords-over-lyrics paste converts to ChordPro and builds the preview', async ({ page }) => {
-        await openNewSongEditor(page);
-        await pasteIntoTextarea(page, CHORD_SHEET);
-
-        // converted in place
-        await expect
-            .poll(async () => page.locator('#editor-content').inputValue())
-            .toContain('[G]Way down upon');
-
-        // preview shows two implicit verses with chips
-        await expect(page.locator('.ve-psec')).toHaveCount(2);
-        await expect(page.locator('.ve-section-label').nth(0)).toHaveText('Verse 1');
-        await expect(page.locator('.ve-section-label').nth(1)).toHaveText('Verse 2');
-        await expect(page.locator('.ve-chip', { hasText: 'D7' }).first()).toBeVisible();
-        await expect(page.locator('.ve-syl').first()).toContainText('Way');
-    });
-
-    test('pasted full ChordPro keeps metadata and renders sections', async ({ page }) => {
-        await openNewSongEditor(page);
-        await pasteIntoTextarea(page,
-            '{meta: title Pasted Song}\n{key: D}\n\n[D]hello [G]there friend');
-
-        await expect(page.locator('.ve-psec')).toHaveCount(1);
-        const raw = await page.locator('#editor-content').inputValue();
-        expect(raw).toContain('{meta: title Pasted Song}');
-        expect(raw).toContain('{key: D}');
-        // palette follows the pasted key directive
-        await page.locator('.ve-strip').first().click();
-        await expect(page.locator('.ve-palette-diatonic .ve-chip-btn').first()).toHaveText('D');
-    });
-});
-
-
-test.describe('Chord row hover + in-preview lyric editing', () => {
-    const CHORDED = `{start_of_verse: Verse 1}
-[G]hello world friend
-{end_of_verse}
-`;
-
-    async function openSong(page, text) {
-        await openNewSongEditor(page);
-        await setSong(page, text);
-        await expect(page.locator('.ve-syl').first()).toBeVisible();
-    }
-
-    const lyricInput = (page) => page.locator('.ve-lyric-input');
-
-    // The ghost caret's center must sit on the target syllable's left
-    // edge (the seam it will commit to), same visual row, within 2px.
-    async function ghostAlignment(page) {
-        return page.evaluate(() => {
-            const slot = document.querySelector('.ve-slot-ghost');
-            if (!slot) return null;
-            const line = slot.closest('.ve-line');
-            const target = line.querySelector(`.ve-syl[data-start="${slot.dataset.pos}"]`);
-            const sr = slot.getBoundingClientRect();
-            const tr = target.getBoundingClientRect();
-            return {
-                pos: slot.dataset.pos,
-                dx: (sr.left + sr.width / 2) - tr.left,
-                sameRow: Math.abs(sr.bottom - tr.top) < 30
-            };
+    test('paste in Lyrics mode converts a chords-over-lyrics sheet and backfills the title', async ({ page }) => {
+        await openNew(page);
+        await page.locator(CM).click();
+        await page.evaluate(() => {
+            const dt = new DataTransfer();
+            dt.setData('text/plain', 'Title: Pasted Song\nArtist: Some Band\n\nG       C\nAmazing grace how sweet\nD       G\nThat saved a wretch');
+            document.querySelector('#editor-lead .cm-content').dispatchEvent(
+                new ClipboardEvent('paste', { clipboardData: dt, bubbles: true, cancelable: true }));
         });
-    }
-
-    test('hovering the chord row shows a ghost caret on the nearest seam', async ({ page }) => {
-        await openSong(page, SONG);
-        const strip = stripFor(page, 'world');
-        const box = await strip.boundingBox();
-
-        // near the left edge: the caret sits on this token's own seam,
-        // centered on "world"'s left edge
-        await page.mouse.move(box.x + 2, box.y + box.height / 2);
-        const slot = page.locator('.ve-slot-ghost');
-        await expect(slot).toBeVisible();
-        let a = await ghostAlignment(page);
-        expect(a.pos).toBe('6');                            // "world" start
-        expect(Math.abs(a.dx)).toBeLessThanOrEqual(2);
-        expect(a.sameRow).toBe(true);
-
-        // near the right edge: snapped to the NEXT seam ("friend"),
-        // centered on "friend"'s left edge
-        await page.mouse.move(box.x + box.width - 2, box.y + box.height / 2);
-        a = await ghostAlignment(page);
-        expect(a.pos).toBe('12');
-        expect(Math.abs(a.dx)).toBeLessThanOrEqual(2);
-        expect(a.sameRow).toBe(true);
-
-        // leaving the strip hides the slot
-        await page.mouse.move(box.x + box.width / 2, box.y + box.height + 40);
-        await expect(page.locator('.ve-slot-ghost')).toHaveCount(0);
+        await expect(page.locator(CHORDS).first()).toBeVisible();
+        const text = await leadText(page);
+        expect(text).toMatch(/\[G\]Amazing/);
+        expect(text).toMatch(/\[D\]/);
     });
 
-    test('ghost caret stays aligned across a wrapped line', async ({ page }) => {
-        const words = Array.from({ length: 24 }, () => 'wonderful mountain morning');
-        await openSong(page, `{start_of_verse: Verse 1}\n${words.join(' ')}\n{end_of_verse}\n`);
-
-        // find the last seg on the first visual row (the wrap boundary)
-        const boundary = await page.evaluate(() => {
-            const segs = [...document.querySelectorAll(
-                '.ve-line .ve-seg:not(.ve-seg-end)')];
-            const firstTop = Math.round(segs[0].getBoundingClientRect().top);
-            const i = segs.findIndex(
-                s => Math.round(s.getBoundingClientRect().top) !== firstTop);
-            if (i < 1) return null;
-            const r = segs[i - 1].querySelector('.ve-strip').getBoundingClientRect();
-            return { x: r.right - 2, y: r.top + r.height / 2 };
-        });
-        expect(boundary).not.toBeNull();   // the line must actually wrap
-
-        // right half of the boundary seg targets the first syllable of the
-        // NEXT visual row: the caret must render there, not at the row end
-        await page.mouse.move(boundary.x, boundary.y);
-        await expect(page.locator('.ve-slot-ghost')).toBeVisible();
-        const a = await ghostAlignment(page);
-        expect(Math.abs(a.dx)).toBeLessThanOrEqual(2);
-        expect(a.sameRow).toBe(true);
-    });
-
-    test('hover and selection are the same caret: translucent ghost becomes solid', async ({ page }) => {
-        await openSong(page, SONG);
-        const strip = stripFor(page, 'world');
-        const box = await strip.boundingBox();
-
-        await page.mouse.move(box.x + 2, box.y + box.height / 2);
-        await expect(page.locator('.ve-slot-ghost')).toBeVisible();
-        const ghost = await page.evaluate(() => {
-            const g = document.querySelector('.ve-slot-ghost');
-            const r = g.getBoundingClientRect();
-            return { left: r.left, top: r.top, width: r.width, height: r.height,
-                     opacity: parseFloat(getComputedStyle(g).opacity) };
-        });
-        expect(ghost.opacity).toBeLessThan(1);      // translucent ghost
-        expect(ghost.width).toBeLessThanOrEqual(4); // thin caret, not a box
-
-        // click the same spot: same shape, same place, solid
-        await page.mouse.click(box.x + 2, box.y + box.height / 2);
-        await expect(page.locator('.ve-slot-selected')).toBeVisible();
-        await expect(page.locator('.ve-slot-ghost')).toHaveCount(0);
-        const sel = await page.evaluate(() => {
-            const el = document.querySelector('.ve-slot-selected');
-            const r = el.getBoundingClientRect();
-            return { left: r.left, top: r.top, width: r.width, height: r.height,
-                     opacity: parseFloat(getComputedStyle(el).opacity) };
-        });
-        expect(sel.opacity).toBe(1);
-        expect(Math.abs(sel.left - ghost.left)).toBeLessThanOrEqual(2);
-        expect(Math.abs(sel.top - ghost.top)).toBeLessThanOrEqual(2);
-        expect(Math.abs(sel.width - ghost.width)).toBeLessThanOrEqual(1);  // same shape
-        expect(Math.abs(sel.height - ghost.height)).toBeLessThanOrEqual(1);
-
-        // the syllable beneath is a subtle secondary cue, not a heavy
-        // outline (the slot in the strip is the primary indicator)
-        const syl = await page.evaluate(() => {
-            const el = document.querySelector('.ve-syl-selected');
-            const cs = getComputedStyle(el);
-            return { outline: cs.outlineStyle, shadow: cs.boxShadow };
-        });
-        expect(syl.outline).toBe('none');
-        expect(syl.shadow).toContain('inset');
-    });
-
-    test('hover and selection carets on adjacent short words stay distinct', async ({ page }) => {
-        // The screenshot scenario: seam selected at "big", seam hovered at
-        // "a" right beside it. The old fixed-width slot boxes were wider
-        // than "a " and overlapped into visual mush; carets mark points,
-        // so each must sit on its own seam with clear air between them.
-        await openSong(page, '{start_of_verse: Verse 1}\ncome ride on a big blue train\n{end_of_verse}\n');
-
-        const bigStrip = stripFor(page, 'big');
-        let box = await bigStrip.boundingBox();
-        await page.mouse.click(box.x + 2, box.y + box.height / 2);   // select seam at "big"
-        await expect(page.locator('.ve-slot-selected')).toBeVisible();
-
-        const aStrip = stripFor(page, /^a\s*$/);
-        box = await aStrip.boundingBox();
-        await page.mouse.move(box.x + 2, box.y + box.height / 2);    // hover seam at "a"
-        await expect(page.locator('.ve-slot-ghost')).toBeVisible();
-
-        const g = await page.evaluate(() => {
-            const m = (sel) => {
-                const el = document.querySelector(sel);
-                const r = el.getBoundingClientRect();
-                const target = el.closest('.ve-line')
-                    .querySelector(`.ve-syl[data-start="${el.dataset.pos}"]`);
-                return { center: r.left + r.width / 2, left: r.left, right: r.right,
-                         seam: target.getBoundingClientRect().left };
-            };
-            return { ghost: m('.ve-slot-ghost'), sel: m('.ve-slot-selected') };
-        });
-        // each caret centered on its own seam...
-        expect(Math.abs(g.ghost.center - g.ghost.seam)).toBeLessThanOrEqual(2);
-        expect(Math.abs(g.sel.center - g.sel.seam)).toBeLessThanOrEqual(2);
-        // ...with clear air between them (the old boxes overlapped here)
-        expect(g.sel.left - g.ghost.right).toBeGreaterThanOrEqual(4);
-    });
-
-    test('no hover caret inside the dead zone around the selected seam', async ({ page }) => {
-        // "imagine" tokenizes as i·ma·gi·ne, so the "i" and "ma" seams sit
-        // only a one-letter glyph apart. With "ma" selected, hovering the
-        // "i" seam would put a second caret nearly on top of the selected
-        // one — the ~0.5em dead zone suppresses it.
-        await openSong(page, '{start_of_verse: Verse 1}\nwe imagine home\n{end_of_verse}\n');
-
-        const maStrip = stripFor(page, 'ma');
-        let box = await maStrip.boundingBox();
-        await page.mouse.click(box.x + 2, box.y + box.height / 2);   // select seam at "ma"
-        await expect(page.locator('.ve-slot-selected')).toBeVisible();
-
-        const iStrip = stripFor(page, /^i$/);
-        box = await iStrip.boundingBox();
-        await page.mouse.move(box.x + 1, box.y + box.height / 2);    // hover seam at "i"
-        await page.waitForTimeout(100);
-        await expect(page.locator('.ve-slot-ghost')).toHaveCount(0); // dead zone
-        await expect(page.locator('.ve-slot-selected')).toHaveCount(1);
-
-        // a seam outside the dead zone still gets its hover caret
-        const homeStrip = stripFor(page, 'ho');
-        box = await homeStrip.boundingBox();
-        await page.mouse.move(box.x + 2, box.y + box.height / 2);
-        await expect(page.locator('.ve-slot-ghost')).toBeVisible();
-    });
-
-    test('hovering an occupied seam highlights the chip; the end seam highlights the + slot', async ({ page }) => {
-        await openSong(page, '{start_of_verse: Verse 1}\nhello [C]world friend\n{end_of_verse}\n');
-
-        // right half of the "lo " strip snaps to the C-chip seam ("world"):
-        // the chip is the indicator — no ghost slot beside it
-        const helloStrip = stripFor(page, 'lo');
-        let box = await helloStrip.boundingBox();
-        await page.mouse.move(box.x + box.width - 2, box.y + box.height / 2);
-        await expect(page.locator('.ve-chip-hover')).toHaveText('C');
-        await expect(page.locator('.ve-slot-ghost')).toHaveCount(0);
-
-        // right half of the last token snaps to the end seam: the existing
-        // "+" end slot is the indicator
-        const friendStrip = stripFor(page, 'friend');
-        box = await friendStrip.boundingBox();
-        await page.mouse.move(box.x + box.width - 2, box.y + box.height / 2);
-        await expect(page.locator('.ve-end-slot-hover')).toHaveCount(1);
-        await expect(page.locator('.ve-slot-ghost')).toHaveCount(0);
-        await expect(page.locator('.ve-chip-hover')).toHaveCount(0);
-    });
-
-    test('caret indicator has usable contrast in both themes', async ({ page }) => {
-        await openSong(page, SONG);
-        await stripFor(page, 'world').click();
-        await expect(page.locator('.ve-slot-selected')).toBeVisible();
-
-        for (const theme of ['dark', 'light']) {
-            const c = await page.evaluate((t) => {
-                document.documentElement.setAttribute('data-theme', t);
-                const slot = document.querySelector('.ve-slot-selected');
-                const parse = (str) => (str.match(/[\d.]+/g) || []).map(Number);
-                const lum = (rgb) => {
-                    const [r, g, b] = rgb.slice(0, 3).map((v) => {
-                        v /= 255;
-                        return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4;
-                    });
-                    return 0.2126 * r + 0.7152 * g + 0.0722 * b;
-                };
-                let el = slot.parentElement;
-                let bg = [255, 255, 255];
-                while (el) {
-                    const v = parse(getComputedStyle(el).backgroundColor);
-                    if (v.length >= 3 && (v.length < 4 || v[3] > 0)) { bg = v; break; }
-                    el = el.parentElement;
-                }
-                const bar = getComputedStyle(slot).backgroundColor;
-                const l1 = lum(parse(bar));
-                const l2 = lum(bg);
-                return +(((Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05)).toFixed(2));
-            }, theme);
-            expect(c, `${theme} theme caret contrast`).toBeGreaterThanOrEqual(3);
-        }
-        await page.evaluate(() => document.documentElement.removeAttribute('data-theme'));
-    });
-
-    test('clicking a lyric swaps the line for an input with the caret at the click', async ({ page }) => {
-        await openSong(page, SONG);
-        const world = page.locator('.ve-syl', { hasText: 'world' }).first();
-        await world.click({ position: { x: 2, y: 8 } });   // left edge of "world"
-        const inp = lyricInput(page);
-        await expect(inp).toBeVisible();
-        await expect(inp).toHaveValue('hello world friend');
-        expect(await inp.evaluate(el => el.selectionStart)).toBe(6);
-        // no chord selection, no palette — lyric editing is text territory
-        await expect(page.locator('.ve-palette')).toBeHidden();
-    });
-
-    test('typing + blur commits; chords re-anchor around the edit (word-LCS)', async ({ page }) => {
-        await openSong(page, CHORDED);
-        const hel = page.locator('.ve-syl').first();       // "hel", starts at 0
-        await hel.click({ position: { x: 2, y: 8 } });
-        const inp = lyricInput(page);
-        await expect(inp).toBeVisible();
-        await page.keyboard.type('well ');
-        await page.locator('#editor-content').click();     // click elsewhere = commit
-        await expect(lyricInput(page)).toHaveCount(0);
-        // the [G] stays glued to "hello" even though text was inserted before it
-        expect(await page.locator('#editor-content').inputValue())
-            .toContain('well [G]hello world friend');
-        // one undo step takes the whole edit back
-        await page.locator('#editor-undo').click();
-        expect(await page.locator('#editor-content').inputValue())
-            .toContain('[G]hello world friend');
-    });
-
-    test('Enter splits the line at the caret; Backspace at 0 merges it back', async ({ page }) => {
-        await openSong(page, CHORDED);
-        const world = page.locator('.ve-syl', { hasText: 'world' }).first();
-        await world.click({ position: { x: 2, y: 8 } });   // caret at "world"
-        await page.keyboard.press('Enter');
-
-        // split landed in the textarea; editing continues on the new line
-        expect(await page.locator('#editor-content').inputValue())
-            .toMatch(/\[G\]hello \nworld friend/);
-        const inp = lyricInput(page);
-        await expect(inp).toHaveValue('world friend');
-        expect(await inp.evaluate(el => el.selectionStart)).toBe(0);
-
-        // Backspace at 0 merges back into the previous line, caret at the join
-        await page.keyboard.press('Backspace');
-        expect(await page.locator('#editor-content').inputValue())
-            .toContain('[G]hello world friend');
-        const merged = lyricInput(page);
-        await expect(merged).toHaveValue('hello world friend');
-        expect(await merged.evaluate(el => el.selectionStart)).toBe(6);
-    });
-
-    test('Escape reverts the line', async ({ page }) => {
-        await openSong(page, CHORDED);
-        const before = await page.locator('#editor-content').inputValue();
-        await page.locator('.ve-syl', { hasText: 'world' }).first().click();
-        await page.keyboard.type('scrambled');
-        await page.keyboard.press('Escape');
-        await expect(lyricInput(page)).toHaveCount(0);
-        expect(await page.locator('#editor-content').inputValue()).toBe(before);
-    });
-
-    test('a rewrite that orphans a chord shows the dropped-chords toast; Undo restores', async ({ page }) => {
-        await openSong(page, CHORDED);
-        await page.locator('.ve-syl').first().click();
-        await page.keyboard.press('ControlOrMeta+a');
-        await page.keyboard.type('completely different words');
-        await page.locator('#editor-content').click();
-
-        expect(await page.locator('#editor-content').inputValue())
-            .toContain('completely different words');
-        const toast = page.locator('.ve-toast');
-        await expect(toast).toBeVisible();
-        await expect(toast).toContainText('1 chord dropped');
-        await toast.locator('.ve-toast-undo').click();
-        expect(await page.locator('#editor-content').inputValue())
-            .toContain('[G]hello world friend');
-    });
-
-    test('typing chord letters in the lyric input never places chords', async ({ page }) => {
-        await openSong(page, SONG);
-        await page.locator('.ve-syl').first().click({ position: { x: 2, y: 8 } });
-        await page.keyboard.type('G A B ');
-        await expect(page.locator('.ve-ghost-chip')).toHaveCount(0);
-        await page.locator('#editor-content').click();
-        const raw = await page.locator('#editor-content').inputValue();
-        expect(raw).toContain('G A B hello world friend');
-        expect(raw).not.toMatch(/\[[A-G]/);
-    });
-
-    test('selecting all text in a line and deleting removes the line', async ({ page }) => {
-        await openSong(page,
-            '{start_of_verse: Verse 1}\nfirst line here\nsecond line here\nthird line here\n{end_of_verse}\n');
-        await page.locator('.ve-syl', { hasText: 'cond' }).first().click();
-        await page.keyboard.press('ControlOrMeta+a');
-        await page.keyboard.press('Backspace');
-        await page.locator('#editor-content').click();     // blur = commit
-        await expect(lyricInput(page)).toHaveCount(0);
-        const raw = await page.locator('#editor-content').inputValue();
-        expect(raw).toContain('first line here\nthird line here');
-        expect(raw).not.toContain('second line here');
-        // the preview reflects it too: two lyric lines remain
-        await expect(page.locator('.ve-line')).toHaveCount(2);
-    });
-
-    test('emptying a chorded line drops its chords with an Undo toast', async ({ page }) => {
-        await openSong(page,
-            '{start_of_verse: Verse 1}\n[G]first line here\n[C]second line here\n{end_of_verse}\n');
-        await page.locator('.ve-syl', { hasText: 'cond' }).first().click();
-        await page.keyboard.press('ControlOrMeta+a');
-        await page.keyboard.press('Backspace');
-        await page.locator('#editor-content').click();
-
-        expect(await page.locator('#editor-content').inputValue())
-            .not.toContain('second line here');
-        const toast = page.locator('.ve-toast');
-        await expect(toast).toBeVisible();
-        await expect(toast).toContainText('1 chord dropped');
-        await toast.locator('.ve-toast-undo').click();
-        expect(await page.locator('#editor-content').inputValue())
-            .toContain('[C]second line here');
-    });
-
-    test('+ Add line starts a new line at the end of the section', async ({ page }) => {
-        await openSong(page, SONG);
-        await page.locator('.ve-add-line').click();
-        const inp = lyricInput(page);
-        await expect(inp).toHaveValue('');
-        await page.keyboard.type('one more line');
-        await page.locator('#editor-content').click();
-        expect(await page.locator('#editor-content').inputValue())
-            .toContain('hello world friend\none more line\n{end_of_verse}');
-    });
-
-    test('a chord-row tap mid-edit commits the lyric edit, then selects the seam', async ({ page }) => {
-        await openSong(page,
-            '{start_of_verse: Verse 1}\nhello world friend\nsinging all night\n{end_of_verse}\n');
-        await page.locator('.ve-syl').first().click({ position: { x: 2, y: 8 } });
-        await page.keyboard.type('oh ');
-        // without blurring first, tap the chord row of the OTHER line
-        await stripFor(page, 'night').click();
-        await expect(lyricInput(page)).toHaveCount(0);
-        expect(await page.locator('#editor-content').inputValue())
-            .toContain('oh hello world friend');
-        await expect(page.locator('.ve-syl-selected')).toBeVisible();
-        await expect(page.locator('.ve-palette')).toBeVisible();
+    test('plain pasted text stays plain (browser default)', async ({ page }) => {
+        await openNew(page);
+        await page.locator(CM).click();
+        await page.keyboard.insertText('just some words\nand more');
+        expect(await leadText(page)).toBe('just some words\nand more');
+        await expect(page.locator(CHORDS)).toHaveCount(0);
     });
 });
 
-test.describe('Two-pane editor on mobile viewport', () => {
-    test.use({ viewport: { width: 390, height: 844 } });
-
-    test('stacked layout: core placement flow works at phone size', async ({ page }) => {
-        await page.goto('/#add');
-        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
-
-        await setSong(page, '{start_of_verse: Verse 1}\nmountain morning light\n{end_of_verse}\n');
-        const strip = page.locator('.ve-strip').first();
-        await strip.scrollIntoViewIfNeeded();
-        await strip.click();
-        await expect(page.locator('.ve-palette')).toBeVisible();
-        await page.locator('.ve-palette .ve-chip-btn').first().click();
-        await expect(page.locator('.ve-chip').first()).toBeVisible();
-        expect(await page.locator('#editor-content').inputValue()).toMatch(/\[[A-G]/);
-    });
-
-    test('stacked layout: tapping lyrics opens the line input at phone size', async ({ page }) => {
-        await page.goto('/#add');
-        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
-
-        await setSong(page, '{start_of_verse: Verse 1}\nmountain morning light\n{end_of_verse}\n');
-        const syl = page.locator('.ve-syl').first();
-        await syl.scrollIntoViewIfNeeded();
-        await syl.click();
-        const inp = page.locator('.ve-lyric-input');
-        await expect(inp).toBeVisible();
-        await expect(inp).toHaveValue('mountain morning light');
-        await page.keyboard.type('misty ');
-        await page.locator('#editor-content').click();
-        expect(await page.locator('#editor-content').inputValue()).toContain('misty');
-    });
-});
-
-test.describe('Popover palette on desktop', () => {
-    // default viewport (1440x900) is the wide side-by-side layout: the
-    // palette floats as a popover anchored to the selection instead of
-    // docking at the bottom of the preview pane
-    const LONG_SONG = '{start_of_verse: Verse 1}\n' + Array.from(
-        { length: 30 }, (_, i) => `line number ${i + 1} of the song`).join('\n') + '\n{end_of_verse}\n';
-
-    async function openLongSong(page) {
-        await page.emulateMedia({ reducedMotion: 'reduce' });
-        await openNewSongEditor(page);
-        await setSong(page, LONG_SONG);
-        await expect(page.locator('.ve-line')).toHaveCount(30);
-    }
-
-    test('tapping the chord row opens the palette as a popover below the line', async ({ page }) => {
-        await openNewSongEditor(page);
-        await setSong(page, SONG);
-        const syl = page.locator('.ve-syl').first();
-        await page.locator('.ve-strip').first().click();
-        const pal = page.locator('.ve-palette');
-        await expect(pal).toBeVisible();
-        await expect(pal).toHaveClass(/ve-palette-popover/);
-
-        const palBox = await pal.boundingBox();
-        const sylBox = await syl.boundingBox();
-        // width capped so the Strum Machine picker fits without dominating
-        expect(palBox.width).toBeLessThanOrEqual(420);
-        // anchored below the target, fully inside the viewport
-        expect(palBox.y).toBeGreaterThanOrEqual(sylBox.y + sylBox.height);
-        expect(palBox.y + palBox.height).toBeLessThanOrEqual(900);
-
-        // picking from the popover works exactly like the dock
-        await pal.locator('.ve-chip-btn').first().click();
-        await expect(page.locator('.ve-chip').first()).toBeVisible();
-    });
-
-    test('palette is visible in the viewport after selecting a low syllable', async ({ page }) => {
-        await openLongSong(page);
-        const low = page.locator('.ve-line').nth(28).locator('.ve-syl').first();
-        await low.scrollIntoViewIfNeeded();
-        await page.locator('.ve-line').nth(28).locator('.ve-strip').first().click();
-
-        const pal = page.locator('.ve-palette');
-        await expect(pal).toBeVisible();
-        await expect.poll(async () => {
-            const box = await pal.boundingBox();
-            return box && box.y >= 0 && box.y + box.height <= 900;
-        }).toBe(true);
-        // and it never covers the syllable it is anchored to
-        const palBox = await pal.boundingBox();
-        const sylBox = await low.boundingBox();
-        const overlaps = palBox.y < sylBox.y + sylBox.height &&
-            palBox.y + palBox.height > sylBox.y;
-        expect(overlaps).toBe(false);
-    });
-
-    test('the popover follows its anchor when the preview pane scrolls', async ({ page }) => {
-        await openLongSong(page);
-        const syl = page.locator('.ve-line').nth(10).locator('.ve-syl').first();
-        await syl.scrollIntoViewIfNeeded();
-        await page.locator('.ve-line').nth(10).locator('.ve-strip').first().click();
-        const pal = page.locator('.ve-palette');
-        await expect(pal).toHaveClass(/ve-palette-popover/);
-
-        const gap = async () => {
-            const p = await pal.boundingBox();
-            const t = await syl.boundingBox();
-            return Math.round(p.y - t.y);
-        };
-        const before = await gap();
-        await page.locator('.editor-pane-preview').evaluate(el => el.scrollBy(0, 80));
-        await expect.poll(gap).toBe(before);
-    });
-
-    test('More… picker expands inside the popover and stays usable', async ({ page }) => {
-        await openLongSong(page);
-        const low = page.locator('.ve-line').nth(28).locator('.ve-syl').first();
-        await low.scrollIntoViewIfNeeded();
-        await page.locator('.ve-line').nth(28).locator('.ve-strip').first().click();
-        await page.locator('.ve-palette-more').click();
-        await expect(page.locator('.ve-picker')).toBeVisible();
-
-        const pal = page.locator('.ve-palette');
-        await expect.poll(async () => {
-            const box = await pal.boundingBox();
-            return box && box.y >= 0 && box.y + box.height <= 900;
-        }).toBe(true);
-        // the picker inside the popover still places chords
-        await page.locator('.ve-picker-quality', { hasText: /^Gm$/ }).click();
-        await expect(page.locator('.ve-chip', { hasText: 'Gm' })).toBeVisible();
-    });
-});
-
-test.describe('Palette auto-scroll', () => {
-    // mobile-ish viewport: the docked palette (fixed at 390px) plus the open
-    // picker covers most of the screen — the worst occlusion case
-    test.use({ viewport: { width: 390, height: 700 } });
-
-    const LONG_SONG = '{start_of_verse: Verse 1}\n' + Array.from(
-        { length: 30 }, (_, i) => `line number ${i + 1} of the song`).join('\n') + '\n{end_of_verse}\n';
-
-    async function openLongSong(page) {
-        // reduced motion → instant scrolling, so measurements are stable
-        await page.emulateMedia({ reducedMotion: 'reduce' });
-        await openNewSongEditor(page);
-        await setSong(page, LONG_SONG);
-        await expect(page.locator('.ve-line')).toHaveCount(30);
-    }
-
-    const measure = (page) => page.evaluate(() => {
-        const sel = document.querySelector('.ve-syl-selected, .ve-chip-selected');
-        const pal = document.querySelector('.ve-palette');
-        return {
-            scrollY: window.scrollY,
-            selBottom: sel ? sel.getBoundingClientRect().bottom : null,
-            selTop: sel ? sel.getBoundingClientRect().top : null,
-            palTop: pal.getBoundingClientRect().top
-        };
-    });
-
-    test('expanding More… scrolls a low selection clear of the picker', async ({ page }) => {
-        await openLongSong(page);
-
-        const lowStrip = page.locator('.ve-line').nth(25).locator('.ve-strip').first();
-        await lowStrip.scrollIntoViewIfNeeded();
-        await lowStrip.click();
-        await expect(page.locator('.ve-palette')).toBeVisible();
-
-        await page.locator('.ve-palette-more').click();
-        await expect(page.locator('.ve-picker')).toBeVisible();
-        await expect.poll(async () => {
-            const m = await measure(page);
-            return m.selBottom < m.palTop;
-        }).toBe(true);
-        const m = await measure(page);
-        expect(m.palTop - m.selBottom).toBeGreaterThanOrEqual(8);
-        expect(m.selTop).toBeGreaterThan(0);
-    });
-
-    test('consecutive picks on the same line do not move the page', async ({ page }) => {
-        await openLongSong(page);
-
-        const lowStrip = page.locator('.ve-line').nth(25).locator('.ve-strip').first();
-        await lowStrip.scrollIntoViewIfNeeded();
-        await lowStrip.click();
-        await page.locator('.ve-palette-more').click();
-
-        await expect.poll(async () => {
-            const m = await measure(page);
-            return m.selBottom < m.palTop;
-        }).toBe(true);
-        const before = await measure(page);
-
-        await page.locator('.ve-palette-diatonic .ve-chip-btn').first().click();
-        await expect(page.locator('.ve-chip-selected')).toBeVisible();
-        const afterFirst = await measure(page);
-        expect(Math.abs(afterFirst.scrollY - before.scrollY)).toBeLessThanOrEqual(2);
-
-        await page.locator('.ve-palette-diatonic .ve-chip-btn').nth(1).click();
-        const afterSecond = await measure(page);
-        expect(Math.abs(afterSecond.scrollY - before.scrollY)).toBeLessThanOrEqual(2);
-
-        expect(afterSecond.selBottom).toBeLessThan(afterSecond.palTop);
-    });
-
-    test('even the last line can scroll clear of the open picker', async ({ page }) => {
-        await openLongSong(page);
-
-        const lastStrip = page.locator('.ve-line').nth(29).locator('.ve-strip').first();
-        await lastStrip.scrollIntoViewIfNeeded();
-        await lastStrip.click();
-        await page.locator('.ve-palette-more').click();
-
-        await expect.poll(async () => {
-            const m = await measure(page);
-            return m.selBottom < m.palTop;
-        }).toBe(true);
-    });
-});
-
-test.describe('Section drag reorder on the preview', () => {
-    const TWO_SECTIONS = `{start_of_verse: Verse 1}
-first section words
-{end_of_verse}
-
-{start_of_chorus: Chorus}
-second section words
-{end_of_chorus}
-`;
-
-    async function setupTwoSections(page) {
-        await openNewSongEditor(page);
-        await setSong(page, TWO_SECTIONS);
-        await expect(page.locator('.ve-psec')).toHaveCount(2);
-    }
-
-    async function startHandleDrag(page) {
-        const handle = page.locator('.ve-psec').nth(0).locator('.ve-drag-handle');
-        const hb = await handle.boundingBox();
-        const target = await page.locator('.ve-psec').nth(1).boundingBox();
-        await page.mouse.move(hb.x + hb.width / 2, hb.y + hb.height / 2);
+test.describe('Lyrics mode: sections', () => {
+    test('selecting lines floats a section bar; Chorus wraps and indents them', async ({ page }) => {
+        await openNew(page);
+        await setLead(page, 'Line one\nLine two\n\nLine three');
+        const first = page.locator(`${LEAD} .cm-line`, { hasText: 'Line one' });
+        const box = await first.boundingBox();
+        await page.mouse.move(box.x + 4, box.y + 6);
         await page.mouse.down();
-        // drag past the second section's midpoint, in steps like a real drag
-        await page.mouse.move(hb.x + hb.width / 2, target.y + target.height - 5, { steps: 8 });
-    }
-
-    test('dragging section 0 below section 1 reorders the song', async ({ page }) => {
-        await setupTwoSections(page);
-        await startHandleDrag(page);
-
-        // mid-drag: lifted section + drop indicator are visible
-        await expect(page.locator('.ve-psec-dragging')).toHaveCount(1);
-        await expect(page.locator('.ve-drop-indicator')).toBeVisible();
+        await page.mouse.move(box.x + 60, box.y + box.height + 12);
         await page.mouse.up();
-
-        // sections swapped in the preview
-        await expect(page.locator('.ve-section-label').nth(0)).toHaveText('Chorus');
-        await expect(page.locator('.ve-section-label').nth(1)).toHaveText('Verse 1');
-        await expect(page.locator('.ve-psec-dragging')).toHaveCount(0);
-        await expect(page.locator('.ve-drop-indicator')).toHaveCount(0);
-
-        // serialized order flipped in the textarea (the document)
-        const raw = await page.locator('#editor-content').inputValue();
-        expect(raw.indexOf('{start_of_chorus')).toBeLessThan(raw.indexOf('{start_of_verse'));
-        expect(raw.indexOf('second section words')).toBeLessThan(raw.indexOf('first section words'));
-
-        // one undo step restores the original order
-        await page.locator('#editor-undo').click();
-        const undone = await page.locator('#editor-content').inputValue();
-        expect(undone.indexOf('{start_of_verse')).toBeLessThan(undone.indexOf('{start_of_chorus'));
+        const bar = page.locator('.le-selbar');
+        await expect(bar).toBeVisible();
+        await expect(bar.locator('button')).toHaveText(['Verse', 'Chorus', 'Bridge', 'Intro', 'Outro', 'Tag', 'Other…']);
+        await bar.locator('[data-wrap="chorus"]').click();
+        const text = await leadText(page);
+        expect(text).toContain('{start_of_chorus: Chorus}\nLine one\nLine two\n{end_of_chorus}');
+        await expect(page.locator(LABELS).first()).toHaveText('Chorus');
+        await expect(page.locator(`${LEAD} .cm-line.section-indent`).first()).toBeVisible();
     });
 
-    test('Escape aborts the drag and keeps the original order', async ({ page }) => {
-        await setupTwoSections(page);
-        await startHandleDrag(page);
-        await expect(page.locator('.ve-psec-dragging')).toHaveCount(1);
+    test('tapping a section label: change type, duplicate, move, remove label, delete', async ({ page }) => {
+        await openNew(page);
+        await setLead(page, '{start_of_verse: Verse 1}\nOne\n{end_of_verse}\n\n{start_of_chorus: Chorus}\nTwo\n{end_of_chorus}');
+        await page.locator(LABELS, { hasText: 'Verse 1' }).click();
+        const menu = page.locator('.le-labelmenu');
+        await expect(menu).toBeVisible();
+        await menu.getByRole('menuitem', { name: 'Move down' }).click();
+        expect(await leadText(page)).toMatch(/^\{start_of_chorus: Chorus\}\nTwo\n\{end_of_chorus\}\n\n\{start_of_verse: Verse 1\}\nOne/);
 
+        await page.locator(LABELS, { hasText: 'Chorus' }).click();
+        await page.locator('.le-labelmenu-types button', { hasText: 'Bridge' }).click();
+        expect(await leadText(page)).toContain('{start_of_bridge: Bridge}');
+
+        await page.locator(LABELS, { hasText: 'Bridge' }).click();
+        await page.locator('.le-labelmenu').getByRole('menuitem', { name: 'Delete section' }).click();
+        expect(await leadText(page)).not.toContain('Two');
+        await expect(page.locator('.le-toast')).toContainText('Deleted Bridge');
+    });
+});
+
+test.describe('Lyrics mode: selection and sections across boundaries', () => {
+    test('a cross-line selection has exactly one highlight: the native one', async ({ page }) => {
+        await openNew(page);
+        await setLead(page, 'Line one here\nLine two here\n\nLine three');
+        const a = await page.locator(`${LEAD} .cm-line`, { hasText: 'Line one' }).boundingBox();
+        const b = await page.locator(`${LEAD} .cm-line`, { hasText: 'Line two' }).boundingBox();
+        await page.mouse.move(a.x + 20, a.y + 6);
+        await page.mouse.down();
+        await page.mouse.move(b.x + 60, b.y + 6, { steps: 5 });
+        await page.mouse.up();
+        await expect(page.locator('.le-selbar')).toBeVisible();
+        // no second, drawn selection (CodeMirror's drawSelection layers and iOS handles)
+        await expect(page.locator(`${LEAD} .cm-selectionBackground`)).toHaveCount(0);
+        await expect(page.locator(`${LEAD} .cm-selectionHandle`)).toHaveCount(0);
+        await expect(page.locator(`${LEAD} .cm-selectionLayer`)).toHaveCount(0);
+        const selected = await page.evaluate(() => window.getSelection().toString());
+        expect(selected).toContain('ne one here\nLine t');
+    });
+
+    test('selecting from the end of Verse 2 into the Chorus re-sections cleanly', async ({ page }) => {
+        await openEditor(page, '#edit/old-home-place');
+        const range = await page.evaluate(() => {
+            const { editor } = document.querySelector('#editor-lead').__lead;
+            const t = editor.getText();
+            return { from: t.indexOf('sawmill'), to: t.indexOf('What have') + 'What have'.length };
+        });
+        await page.evaluate(({ from, to }) => {
+            const { editor } = document.querySelector('#editor-lead').__lead;
+            editor.view.focus();
+            editor.view.dispatch({ selection: { anchor: from, head: to } });
+        }, range);
+        await page.locator('.le-selbar [data-wrap="bridge"]').click();
+        const lines = (await leadText(page)).split('\n');
+        const starts = lines.filter((l) => l.startsWith('{start_of_'));
+        const ends = lines.filter((l) => l.startsWith('{end_of_'));
+        expect(ends.length).toBe(starts.length);
+        const v2 = lines.indexOf('{start_of_verse: Verse 2}');
+        expect(lines[v2 + 4]).toBe('{end_of_verse}');
+        expect(lines).toContain('{start_of_bridge: Bridge}');
+        const labels = starts.map((l) => l.replace(/^\{start_of_\w+:?\s*/, '').replace(/\}$/, ''));
+        const verses = labels.filter((l) => /^Verse/.test(l));
+        expect(new Set(verses).size).toBe(verses.length);
+        // the lyric lines are all still there
+        expect(lines.join('\n')).toContain('Why did they tear it [E7]down');
+        expect(lines.join('\n')).toContain('And worked in a [E7]sawmill [A]too');
+    });
+});
+
+test.describe('Lyrics mode: chords are inert', () => {
+    test('a chord label is not clickable: no box, no sheet', async ({ page }) => {
+        await openNew(page);
+        await setLead(page, '[G]Hello [C]there');
+        await page.locator(CHORDS).first().click();
+        await expect(page.locator(SHEET)).toBeHidden();
+        await expect(page.locator(`${CM} .cl-box-chord, ${CM} .cl-slot`)).toHaveCount(0);
+        expect(await boxPos(page)).toBe(null);
+    });
+
+    test('double-click a word stays in Lyrics mode: the browser selects the word', async ({ page }) => {
+        await openNew(page);
+        await setLead(page, 'Amazing grace how sweet');
+        const how = await pointOnWord(page, 'how');
+        await page.mouse.dblclick(how.x, how.y);
+        await expect(page.locator('#editor-mode-lyrics')).toHaveAttribute('aria-pressed', 'true');
+        await expect(page.locator('#editor-mode-chords')).toHaveAttribute('aria-pressed', 'false');
+        await expect(page.locator(SHEET)).toBeHidden();
+        expect(await page.evaluate(() => window.getSelection().toString().trim())).toBe('how');
+    });
+
+    test('chords are greyed out in Lyrics mode (colour and opacity only, same layout) and normal in Chords mode', async ({ page }) => {
+        await openEditor(page, '#edit/old-home-place');
+        await setMode(page, 'lyrics');
+        const measure = () => page.evaluate(() => {
+            const g = document.querySelector('#editor-lead .cl-chord-glyph');
+            const cs = getComputedStyle(g);
+            const line = document.querySelector('#editor-lead .cl-line');
+            const base = line.getBoundingClientRect();
+            return {
+                color: cs.color, opacity: cs.opacity, cursor: cs.cursor, weight: cs.fontWeight, size: cs.fontSize,
+                rects: [...line.querySelectorAll('.cl-segment')].map((s) => { const r = s.getBoundingClientRect(); return [r.left - base.left, r.width, r.height]; }),
+            };
+        });
+        const lyrics = await measure();
+        await setMode(page, 'chords');
+        const chords = await measure();
+        expect(Number(lyrics.opacity)).toBeLessThanOrEqual(0.6);
+        expect(chords.opacity).toBe('1');
+        expect(lyrics.color).not.toBe(chords.color);
+        expect(lyrics.cursor).not.toBe('pointer');
+        expect(chords.cursor).toBe('pointer');
+        expect(lyrics.weight).toBe(chords.weight);
+        expect(lyrics.size).toBe(chords.size);
+        expect(lyrics.rects).toEqual(chords.rects);
+    });
+
+    test('select-all + Delete removes whole sections, labels included; the metadata stays', async ({ page }) => {
+        await openEditor(page, '#edit/old-home-place');
+        await setMode(page, 'lyrics');
+        await page.locator(CM).click();
+        await page.keyboard.press('ControlOrMeta+a');
+        await page.keyboard.press('Delete');
+        const text = await leadText(page);
+        expect(text).not.toContain('{start_of_');
+        expect(text).not.toContain('{end_of_');
+        expect(text).toContain('{meta:');
+        expect(text.split('\n').every((l) => l.startsWith('{meta:') || l.startsWith('{key:'))).toBe(true);
+        expect(text).not.toMatch(/\n{2,}|\n$/);
+        await expect(page.locator(LABELS)).toHaveCount(0);
+    });
+
+    test('select-all + Delete on a new song leaves an empty song', async ({ page }) => {
+        await openNew(page);
+        await setLead(page, '{start_of_verse: Verse 1}\nhello\n{end_of_verse}');
+        await page.locator(CM).click();
+        await page.keyboard.press('ControlOrMeta+a');
+        await page.keyboard.press('Delete');
+        expect(await leadText(page)).toBe('');
+    });
+});
+
+test.describe('Chords mode on desktop', () => {
+    test('the chart is locked: not editable, no text selection, no keyboard', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'Amazing grace how sweet');
+        await expect(page.locator(CM)).toHaveAttribute('contenteditable', 'false');
+        const style = await page.locator(CM).evaluate((el) => getComputedStyle(el).userSelect);
+        expect(style).toBe('none');
+        await page.keyboard.insertText('zzz');
+        expect(await leadText(page)).toBe('Amazing grace how sweet');
+    });
+
+    test('click a lyric, tap a chord in the sheet; change it with a decoration; delete it', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'Amazing grace how sweet');
+        const sheet = page.locator(SHEET);
+        await expect(sheet).toContainText('Key of G');
+        // the decorations row is always there (the sheet keeps its height) but dimmed and inert until the box holds a chord
+        await expect(sheet.locator('.chm-decos.idle')).toHaveCount(1);
+        await expect(sheet.locator('.chm-deco:not([disabled])')).toHaveCount(0);
+        const how = await pointOnWord(page, 'how');
+        await page.mouse.click(how.x, how.y);
+        expect((await boxAt(page)).lyricsBefore).toBe('Amazing grace ');
+        await sheet.locator('.chm-cell[data-chord="D"]').click();
+        await expect(page.locator(CHORDS)).toHaveText('D');
+        await expect(page.locator(`${CM} .cl-box-chord`)).toHaveText('D');
+        // a decoration composes with the chord in the box
+        await sheet.locator('.chm-deco[data-id="7"]').click();
+        await expect(page.locator(CHORDS)).toHaveText('D7');
+        await sheet.locator('.chm-deco[data-id="7"]').click();   // again: back to the plain triad
+        await expect(page.locator(CHORDS)).toHaveText('D');
+        // Delete removes the chord in the box; Esc closes the sheet
+        await page.keyboard.press('Backspace');
+        await expect(page.locator(CHORDS)).toHaveCount(0);
         await page.keyboard.press('Escape');
-        await expect(page.locator('.ve-psec-dragging')).toHaveCount(0);
-        await expect(page.locator('.ve-drop-indicator')).toHaveCount(0);
+        await expect(sheet).toBeHidden();
+        expect(await leadText(page)).toBe('Amazing grace how sweet');
+    });
+
+    test('typing a chord letter starts ghost entry: E then b7 gives Eb7', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'Amazing grace');
+        await page.keyboard.type('E');
+        await page.keyboard.type('b7');
+        await page.keyboard.press('Enter');
+        expect(await leadText(page)).toMatch(/^\[Eb7\]Amazing grace/);
+    });
+
+    test('arrows move the box seam to seam; Space advances', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'Amazing grace\nhow sweet');
+        await page.keyboard.press('ArrowRight');   // Ama|zing
+        await page.keyboard.press('ArrowDown');    // line two
+        await page.locator(`${SHEET} .chm-cell[data-chord="C"]`).click();
+        const text = (await leadText(page)).split('\n');
+        expect(text[1]).toMatch(/\[C\]/);
+        expect(text[0]).toBe('Amazing grace');
+        await page.keyboard.press('Space');
+        const at = await boxAt(page);
+        expect(at.line).toBe(2);
+    });
+
+    test('the trackpad strip: dragging steps the box seam by seam; the buttons step too', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'Amazing grace how sweet\nsecond line');
+        const strip = page.locator(`${SHEET} .chm-strip-view`);
+        await expect(strip.locator('.cm-line')).toContainText('Amazing');
+        await expect(strip.locator('.cl-slot, .cl-box-text').first()).toBeAttached();
+        const start = await boxPos(page);
+        const b = await strip.boundingBox();
+        await page.mouse.move(b.x + 30, b.y + b.height / 2);
+        await page.mouse.down();
+        await page.mouse.move(b.x + 30 + 50, b.y + b.height / 2, { steps: 10 });   // ~2 seams at 22px each
         await page.mouse.up();
-
-        await expect(page.locator('.ve-section-label').nth(0)).toHaveText('Verse 1');
-        await expect(page.locator('.ve-section-label').nth(1)).toHaveText('Chorus');
-        const raw = await page.locator('#editor-content').inputValue();
-        expect(raw.indexOf('{start_of_verse')).toBeLessThan(raw.indexOf('{start_of_chorus'));
-    });
-});
-
-test.describe('Section header menu', () => {
-    const TWO_SECTIONS = `{start_of_verse: Verse 1}
-first section words
-{end_of_verse}
-
-{start_of_chorus: Chorus}
-second section words
-{end_of_chorus}
-`;
-
-    test('Delete removes the section; the toast Undo restores it', async ({ page }) => {
-        await openNewSongEditor(page);
-        await setSong(page, TWO_SECTIONS);
-        await expect(page.locator('.ve-psec')).toHaveCount(2);
-
-        await page.locator('.ve-psec').nth(1).locator('.ve-psec-menu-btn').click();
-        await page.locator('.ve-psec').nth(1).locator('[data-action="delete"]').click();
-
-        await expect(page.locator('.ve-psec')).toHaveCount(1);
-        expect(await page.locator('#editor-content').inputValue())
-            .not.toContain('second section words');
-
-        const toast = page.locator('.ve-toast');
-        await expect(toast).toBeVisible();
-        await expect(toast).toContainText('Deleted Chorus');
-        await toast.locator('.ve-toast-undo').click();
-
-        await expect(page.locator('.ve-psec')).toHaveCount(2);
-        expect(await page.locator('#editor-content').inputValue())
-            .toContain('second section words');
+        const after = await boxPos(page);
+        expect(after).toBeGreaterThan(start);
+        expect((await boxAt(page)).lyricsBefore.length).toBeGreaterThan(0);
+        const dragged = (await boxAt(page)).lyricsBefore;
+        // drag back the other way
+        await page.mouse.move(b.x + 100, b.y + b.height / 2);
+        await page.mouse.down();
+        await page.mouse.move(b.x + 100 - 200, b.y + b.height / 2, { steps: 10 });
+        await page.mouse.up();
+        expect((await boxAt(page)).lyricsBefore.length).toBeLessThan(dragged.length);
+        // buttons: ▶ one seam, ▼ one line
+        const p0 = await boxPos(page);
+        await page.locator(`${SHEET} .chm-next`).click();
+        expect(await boxPos(page)).toBeGreaterThan(p0);
+        await page.locator(`${SHEET} .chm-down`).click();
+        expect((await boxAt(page)).line).toBe(2);
+        await page.locator(`${SHEET} .chm-up`).click();
+        expect((await boxAt(page)).line).toBe(1);
+        await page.locator(`${SHEET} .chm-prev`).click();
     });
 
-    test('Rename edits the label inline and lands in the directive', async ({ page }) => {
-        await openNewSongEditor(page);
-        await setSong(page, TWO_SECTIONS);
-        await expect(page.locator('.ve-psec')).toHaveCount(2);
-
-        await page.locator('.ve-psec').nth(0).locator('.ve-psec-menu-btn').click();
-        await page.locator('.ve-psec').nth(0).locator('[data-action="rename"]').click();
-        const input = page.locator('.ve-rename-input');
-        await expect(input).toBeVisible();
-        await input.fill('Opening Verse');
-        await input.press('Enter');
-
-        await expect(page.locator('.ve-section-label').nth(0)).toHaveText('Opening Verse');
-        expect(await page.locator('#editor-content').inputValue())
-            .toContain('{start_of_verse: Opening Verse}');
-    });
-});
-
-test.describe('Make-verse/chorus from the textarea selection', () => {
-    test('selecting lines shows the mini-bar; Make chorus wraps them', async ({ page }) => {
-        await openNewSongEditor(page);
-        await setSong(page, 'first line here\nsecond line here\nthird line here\n');
-        await expect(page.locator('.ve-syl').first()).toBeVisible();
-
-        // mini-bar hidden until a selection exists
-        await expect(page.locator('#editor-selection-toolbar')).toBeHidden();
-
-        await page.locator('#editor-content').evaluate((el) => {
-            el.focus();
-            const a = el.value.indexOf('second');
-            el.setSelectionRange(a + 2, a + 8);   // partial-line selection
-            el.dispatchEvent(new Event('select', { bubbles: true }));
-        });
-        await expect(page.locator('#editor-selection-toolbar')).toBeVisible();
-
-        await page.locator('[data-wrap="chorus"]').click();
-        const raw = await page.locator('#editor-content').inputValue();
-        expect(raw).toContain('{start_of_chorus: Chorus}\nsecond line here\n{end_of_chorus}');
-
-        // preview reflects the new structure
-        await expect(page.locator('.ve-section-label', { hasText: 'Chorus' })).toBeVisible();
-        await expect(page.locator('.ve-psec-chorus')).toHaveCount(1);
-
-        // one undo step takes the wrap back out
+    test('tapping a chord on the chart selects it; Move carries it; Remove deletes it (one undo step)', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, '[G]Amazing grace how sweet');
+        const sheet = page.locator(SHEET);
+        await page.locator(`${CM} .cl-chord-glyph`).first().click();
+        await expect(sheet.locator('.chm-move')).toBeVisible();
+        await expect(sheet.locator('.chm-remove')).toBeVisible();
+        // Move: the chord travels with the strip / buttons
+        await sheet.locator('.chm-move').click();
+        await expect(sheet.locator('.chm-move')).toHaveAttribute('aria-pressed', 'true');
+        await sheet.locator('.chm-next').click();
+        let text = await leadText(page);
+        expect(text).toMatch(/^Ama\[G\]zing|^Amazing \[G\]grace|^A\[G\]mazing/);
+        expect(text.match(/\[G\]/g)).toHaveLength(1);
+        await sheet.locator('.chm-next').click();
+        const moved = await leadText(page);
+        expect(moved).not.toBe(text);
+        expect(moved.match(/\[G\]/g)).toHaveLength(1);
+        // tap Move again: it drops; the next step moves the box alone
+        await sheet.locator('.chm-move').click();
+        await expect(sheet.locator('.chm-move')).toHaveAttribute('aria-pressed', 'false');
+        await sheet.locator('.chm-next').click();
+        expect(await leadText(page)).toBe(moved);
+        // Remove deletes the chord under the box: select it, remove, undo brings it back
+        await page.locator(`${CM} .cl-chord-glyph`).first().click();
+        await sheet.locator('.chm-remove').click();
+        expect(await leadText(page)).not.toContain('[G]');
         await page.locator('#editor-undo').click();
-        expect(await page.locator('#editor-content').inputValue())
-            .not.toContain('{start_of_chorus');
+        expect(await leadText(page)).toBe(moved);
     });
 
-    test('wrapping across existing sections yields one clean section', async ({ page }) => {
-        await openNewSongEditor(page);
-        await setSong(page,
-            '{start_of_verse: Verse 1}\nline a\n{end_of_verse}\n\n' +
-            '{start_of_chorus: Chorus}\nline b\n{end_of_chorus}\n');
-        await expect(page.locator('.ve-psec')).toHaveCount(2);
+    test('the picker\'s Lyrics switch goes back to Lyrics (there is no Done); Esc closes only the sheet', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'Amazing grace');
+        await expect(page.locator(`${SHEET} .chm-done`)).toHaveCount(0);
+        await page.locator(`${SHEET} [data-picker-mode="lyrics"]`).click();
+        await expect(page.locator('#editor-mode-lyrics')).toHaveAttribute('aria-pressed', 'true');
+        await expect(page.locator(SHEET)).toBeHidden();
+        await expect(page.locator(CM)).toHaveAttribute('contenteditable', 'true');
+    });
 
-        await page.locator('#editor-content').evaluate((el) => {
-            el.focus();
-            el.setSelectionRange(0, el.value.length);
-            el.dispatchEvent(new Event('select', { bubbles: true }));
+    test('the sheet shows the key, dots chords in use, and "More roots" is the last resort (no "Also in this song")', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, '{key: D}\n[D]Hello [A]there [D/F#]friend');
+        const menu = page.locator(SHEET);
+        await expect(menu.locator('.chm-key')).toHaveValue('D');
+        await expect(menu.locator('.chm-cell.used')).toHaveCount(2);
+        await expect(menu).not.toContainText('Also in this song');
+        await expect(menu.locator('.chm-chip')).toHaveCount(0);
+        await menu.locator('.chm-more').click();
+        await expect(menu).not.toContainText('More chords');
+        await expect(menu.locator('.chm-row-more .chm-cell').first()).toHaveClass(/chm-outside/);
+        await menu.locator('.chm-free input').fill('Bb7');
+        await menu.locator('.chm-free .chm-go').click();
+        expect(await leadText(page)).toContain('Bb7');
+    });
+
+    test('every chord appears once; in key is solid and outside is dashed', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'Hello there');
+        const menu = page.locator(SHEET);
+        const how = await pointOnWord(page, 'there');
+        await page.mouse.click(how.x, how.y);
+        await menu.locator('.chm-cell[data-chord="D"]').click();
+        await menu.locator('.chm-more').click();
+        const chords = await menu.locator('[data-chord]').evaluateAll((els) => els.map((e) => e.dataset.chord));
+        expect(new Set(chords).size).toBe(chords.length);
+        const style = (sel) => menu.locator(sel).first().evaluate((e) => { const s = getComputedStyle(e); return { outline: s.outlineStyle, bg: s.backgroundColor }; });
+        const inKey = await style('.chm-row-diatonic .chm-cell');
+        const outside = await style('.chm-row-flipped .chm-cell');
+        expect(outside.outline).toBe('dashed');
+        expect(inKey.outline).not.toBe('dashed');
+        expect(inKey.bg).not.toBe(outside.bg);
+        await expect(menu.locator('.chm-rowlabel')).toHaveCount(0);   // no captions: the styling carries it
+        await expect(menu.locator('.chm-func')).toHaveCount(1);       // the chord in the box says what it does, once, in the header
+        await expect(menu.locator('.chm-head .chm-func')).toContainText('D');
+    });
+
+    test('one layout: a flipped row above the diatonic row, no extension cells', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'Hello there');
+        const menu = page.locator(SHEET);
+        await expect(menu.locator('.chm-row-diatonic .chm-cell')).toHaveCount(7);
+        await expect(menu.locator('.chm-row-flipped .chm-cell')).toHaveCount(7);
+        await expect(menu.locator('.chm-row-diatonic .chm-cell').first()).toHaveAttribute('data-chord', 'G');
+        await expect(menu.locator('.chm-row-flipped .chm-cell').first()).toHaveAttribute('data-chord', 'Gm');
+        await expect(menu.locator('.chm-cell[data-chord="G7"], .chm-cell[data-chord="Gsus2"]')).toHaveCount(0);
+    });
+
+    test('the key: the sheet, the toolbar and the submitted key are one value', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, '[G]Hello there');
+        await page.locator(`${SHEET} .chm-key`).selectOption('A');
+        expect(await leadText(page)).toMatch(/^\{key: A\}\n/);
+        await expect(page.locator(`${SHEET} .chm-key`)).toHaveValue('A');
+        await expect(page.locator('#editor-key-select')).toHaveValue('A');
+        const key = await page.evaluate(async () => {
+            const { currentSongKey } = await import('/js/lead-editor/doc-model.js');
+            return currentSongKey(document.querySelector('#editor-lead').__lead.getText()).key;
         });
-        await expect(page.locator('#editor-selection-toolbar')).toBeVisible();
-        await page.locator('[data-wrap="verse"]').click();
+        expect(key).toBe('A');
+    });
+});
 
-        const raw = await page.locator('#editor-content').inputValue();
-        expect(raw).toContain('{start_of_verse: Verse 1}\nline a\n\nline b\n{end_of_verse}');
-        expect(raw).not.toContain('start_of_chorus');
-        await expect(page.locator('.ve-psec')).toHaveCount(1);
+test.describe('modes: Lyrics | Chords | ChordPro', () => {
+    test('a new empty song opens in Lyrics', async ({ page }) => {
+        await openNew(page);
+        await expect(page.locator('#editor-mode-lyrics')).toHaveAttribute('aria-pressed', 'true');
+        await expect(page.locator('#editor-mode-chords')).toBeVisible();
+        await expect(page.locator('#editor-mode-chordpro')).toBeVisible();
+    });
+
+    test('switching is lossless and keeps one undo history', async ({ page }) => {
+        await openNew(page);
+        const doc = '{meta: title X}\n{start_of_verse: Verse 1}\nAma[G]zing [D]grace\n{end_of_verse}';
+        await setLead(page, doc);
+        await setMode(page, 'chordpro');
+        await expect(page.locator(`${LEAD} .le-preview-pane`)).toBeVisible();
+        await expect(page.locator(`${LEAD} .le-preview-body .cl-segment`).first()).toBeVisible();
+        await expect(page.locator(`${LEAD} .cm-chordtok`)).toHaveCount(2);
+        await expect(page.locator(CM)).toContainText('Ama[G]zing [D]grace');
+        await setMode(page, 'chords');
+        await expect(page.locator(CHORDS)).toHaveCount(2);
+        await setMode(page, 'lyrics');
+        await expect(page.locator(CHORDS)).toHaveCount(2);
+        expect(await leadText(page)).toBe(doc);
+        await page.locator('#editor-undo').click();
+        expect(await leadText(page)).toBe('');
+    });
+
+    test('the mode is remembered per device (a song opened gets it; a new empty song still opens in Lyrics)', async ({ page }) => {
+        await openEditor(page, '#edit/old-home-place');
+        await expect(page.locator('#editor-mode-lyrics')).toHaveAttribute('aria-pressed', 'true');
+        await setMode(page, 'chords');
+        await page.reload();
+        await leadReady(page);
+        await expect(page.locator('#editor-mode-chords')).toHaveAttribute('aria-pressed', 'true');
+        await expect(page.locator(SHEET)).toBeVisible();
+        await page.goto('/#add');
+        await expect(page.locator('#editor-panel')).toBeVisible();
+        await expect(page.locator('#editor-mode-lyrics')).toHaveAttribute('aria-pressed', 'true');
+        await page.evaluate(() => localStorage.removeItem('bgb-lead-mode'));
+    });
+
+    test('a first-build "visual" setting means Lyrics', async ({ page }) => {
+        await page.addInitScript(() => localStorage.setItem('bgb-lead-mode', 'visual'));
+        await openEditor(page, '#edit/old-home-place');
+        await expect(page.locator('#editor-mode-lyrics')).toHaveAttribute('aria-pressed', 'true');
+    });
+
+    test('ChordPro mode: the section bar still works and the preview is read-only', async ({ page }) => {
+        await openNew(page);
+        await setMode(page, 'chordpro');
+        await setLead(page, 'Line one\nLine two');
+        await expect(page.locator(`${LEAD} .le-preview-body`)).toContainText('Line one');
+        await expect(page.locator(`${LEAD} .le-preview-body [contenteditable]`)).toHaveCount(0);
+        await page.locator(CM).click();
+        await page.keyboard.press('ControlOrMeta+a');
+        await page.locator('.le-selbar [data-wrap="verse"]').click();
+        await expect(page.locator(CM)).toContainText('{start_of_verse: Verse 1}');
+        await page.evaluate(() => localStorage.removeItem('bgb-lead-mode'));
+    });
+});
+
+test.describe('the empty sheet', () => {
+    test('the Paste button is a real button: clicking it pastes (smart-pasted) from the clipboard', async ({ page }) => {
+        await openNew(page);
+        await page.evaluate(() => {
+            Object.defineProperty(navigator, 'clipboard', {
+                configurable: true,
+                value: { readText: async () => 'Title: Pasted\n\nG       C\nAmazing grace how sweet\nD       G\nThat saved a wretch' },
+            });
+        });
+        const btn = page.locator(`${LEAD} .le-paste-btn`);
+        await expect(btn).toBeVisible();
+        const hit = await btn.evaluate((el) => {
+            const r = el.getBoundingClientRect();
+            return document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2) === el;
+        });
+        expect(hit).toBe(true);
+        await btn.click();
+        await expect(page.locator(CHORDS).first()).toBeVisible();
+        expect(await leadText(page)).toMatch(/\[G\]Amazing/);
+        await expect(page.locator(`${LEAD} .le-empty`)).toBeHidden();
+    });
+
+    test('a page that cannot read the clipboard offers no Paste button, and says the keyboard shortcut', async ({ page }) => {
+        await page.addInitScript(() => Object.defineProperty(navigator, 'clipboard', { configurable: true, value: undefined }));
+        await openNew(page);
+        await expect(page.locator(`${LEAD} .le-paste-btn`)).toHaveCount(0);
+        await expect(page.locator(`${LEAD} .le-paste-hint`)).toBeVisible();
+        await expect(page.locator(`${LEAD} .le-paste-hint`)).toHaveText(/Press (⌘|Ctrl\+)V to paste/);
+    });
+
+    test('where the clipboard cannot be read, the button says how to paste', async ({ page }) => {
+        await openNew(page);
+        await page.evaluate(() => Object.defineProperty(navigator, 'clipboard', { configurable: true, value: undefined }));
+        await page.locator(`${LEAD} .le-paste-btn`).click();
+        await expect(page.locator(`${LEAD} .le-paste-hint`)).toBeVisible();
+        await expect(page.locator(`${LEAD} .le-paste-hint`)).toHaveText('Press and hold, then Paste');
+    });
+
+    test('"Request a song instead" works', async ({ page }) => {
+        await openNew(page);
+        const link = page.locator(`${LEAD} .le-link-request`);
+        await expect(link).toBeVisible();
+        const hit = await link.evaluate((el) => {
+            const r = el.getBoundingClientRect();
+            return document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2) === el;
+        });
+        expect(hit).toBe(true);
+        await link.click();
+        await expect(page.locator('#editor-panel')).toBeHidden({ timeout: 5000 }).catch(() => {});
+        await expect(page.locator('.add-song-picker, #add-song-picker, [id*="picker"]').first()).toBeVisible({ timeout: 5000 });
+    });
+});
+
+test.describe('rows are where the pointer says they are (the height map has no margin drift)', () => {
+    test('posAtCoords at the middle of every line of old-home-place returns that line', async ({ page }) => {
+        await openEditor(page, '#edit/old-home-place');
+        const bad = await page.evaluate(() => {
+            const { editor } = document.querySelector('#editor-lead').__lead;
+            const view = editor.view;
+            const wrong = [];
+            let checked = 0;
+            for (const el of document.querySelectorAll('#editor-lead .cm-line')) {
+                const r = el.getBoundingClientRect();
+                if (r.height < 4) continue;
+                const lineStart = view.posAtDOM(el, 0);
+                const want = view.state.doc.lineAt(lineStart).number;
+                const pos = view.posAtCoords({ x: r.left + 40, y: r.top + r.height / 2 }, false);
+                checked++;
+                const got = pos == null ? -1 : view.state.doc.lineAt(pos).number;
+                if (got !== want) wrong.push({ want, got });
+            }
+            return { wrong, checked };
+        });
+        expect(bad.checked).toBeGreaterThan(15);
+        expect(bad.wrong).toEqual([]);
+    });
+});
+
+test.describe('the chord highlight', () => {
+    test('the selected chord is highlighted as wide as its letters, not the whole segment', async ({ page }) => {
+        await openEditor(page, '#edit/old-home-place');
+        await setMode(page, 'chords');
+        await page.locator(`${CM} .cl-chord-glyph`).first().click();
+        const m = await page.evaluate(() => {
+            const g = document.querySelector('#editor-lead .cl-box-chord .cl-chord-glyph');
+            const block = g.parentElement;
+            const range = document.createRange();
+            range.selectNodeContents(g);
+            const cs = getComputedStyle(g);
+            return { glyph: g.getBoundingClientRect().width, text: range.getBoundingClientRect().width, block: block.getBoundingClientRect().width, bg: cs.backgroundColor };
+        });
+        expect(m.glyph).toBeLessThanOrEqual(m.text + 8);
+        expect(m.bg).not.toBe('rgba(0, 0, 0, 0)');
+        expect(m.block).toBeGreaterThan(m.glyph);   // the book's block layout is untouched
+    });
+});
+
+test.describe('Lyrics and Chords modes look like the song page', () => {
+    test('the same line has the same segment layout in the editor and on #work/old-home-place', async ({ page }) => {
+        await page.goto('/#work/old-home-place');
+        await page.waitForSelector('.song-section .cl-segment', { timeout: 20000 });
+        const bookRects = await page.evaluate(() => {
+            const line = [...document.querySelectorAll('.song-section .cl-line')][0];
+            const base = line.getBoundingClientRect();
+            return [...line.querySelectorAll('.cl-segment')].map((s) => {
+                const r = s.getBoundingClientRect();
+                return { x: Math.round(r.left - base.left), w: Math.round(r.width), h: Math.round(r.height), chord: s.querySelector('.cl-chord')?.textContent };
+            });
+        });
+        // same viewport, same content width: open the editor for the same work
+        await page.goto('/#edit/old-home-place');
+        await leadReady(page);
+        await page.waitForSelector(`${LEAD} .cl-line .cl-segment`);
+        const editorRects = await page.evaluate(() => {
+            const line = document.querySelector('#editor-lead .cl-line');
+            const base = line.getBoundingClientRect();
+            return [...line.querySelectorAll('.cl-segment')].map((s) => {
+                const r = s.getBoundingClientRect();
+                return { x: Math.round(r.left - base.left), w: Math.round(r.width), h: Math.round(r.height), chord: s.querySelector('.cl-chord')?.textContent };
+            });
+        });
+        expect(editorRects.length).toBe(bookRects.length);
+        // identical widths and relative positions, segment by segment (1px for rounding)
+        editorRects.forEach((r, i) => {
+            expect(Math.abs(r.w - bookRects[i].w), `segment ${i} width`).toBeLessThanOrEqual(1);
+            expect(Math.abs(r.x - bookRects[i].x), `segment ${i} x`).toBeLessThanOrEqual(1);
+            expect(Math.abs(r.h - bookRects[i].h), `segment ${i} height`).toBeLessThanOrEqual(1);
+            expect(r.chord).toBe(bookRects[i].chord);
+        });
+    });
+
+    test('a song with an ABC block shows it locked, and the text keeps it', async ({ page }) => {
+        await openNew(page);
+        const doc = '{start_of_abc}\nX:1\nK:G\nGABc|\n{end_of_abc}\n\nSome words';
+        await setLead(page, doc);
+        await expect(page.locator(`${LEAD} .cl-locked-title`)).toContainText('edit in ChordPro');
+        expect(await leadText(page)).toBe(doc);
+    });
+
+    test('dark theme: the editor uses the theme variables', async ({ page }) => {
+        await page.goto('/#edit/old-home-place');
+        await leadReady(page);
+        await page.evaluate(() => document.documentElement.setAttribute('data-theme', 'dark'));
+        const colors = await page.evaluate(() => {
+            const ed = document.querySelector('#editor-lead .cm-editor');
+            const ch = document.querySelector('#editor-lead .cl-chord');
+            return { bg: getComputedStyle(ed).backgroundColor, chord: getComputedStyle(ch).color };
+        });
+        expect(colors.bg).not.toBe('rgb(247, 247, 247)');
+    });
+});
+
+// ---------------------------------------------------------------------------------------------
+// Gliding the chord cursor, and chords after the words (spec: "Moving the chord cursor" and
+// "Chords after the words" in docs/plans/2026-10-26-lyrics-editor-redesign.md)
+// ---------------------------------------------------------------------------------------------
+test.describe('gliding the cursor (desktop, mouse)', () => {
+    test('grab the cursor and drag slowly: it moves one letter per ~11px; a press without movement is the old tap', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'Amazing grace how sweet\nsecond line here');
+        const how = (await syllableCentres(page, 'Amazing')).find((c) => c.text.startsWith('how'));
+        await page.mouse.click(how.x, how.y);
+        const start = await boxPos(page);
+        expect(start).toBe(how.seam);
+        const pill = page.locator(`${CM} .cl-slot-pill`);
+        await expect(pill).toBeVisible();
+        // a press and release on the cursor without moving changes nothing
+        const c0 = await centreOf(pill);
+        await page.mouse.click(c0.x, c0.y);
+        expect(await boxPos(page)).toBe(start);
+        // 55px, slow: the point follows the finger about 1:1, so about six letters (the gain is a tuning constant)
+        await mouseDrag(page, await centreOf(pill), along(11, 5));
+        const moved = (await boxPos(page)) - start;
+        expect(moved).toBeGreaterThanOrEqual(4);
+        expect(moved).toBeLessThanOrEqual(8);
+        expect(await leadText(page)).toBe('Amazing grace how sweet\nsecond line here');   // moving the cursor writes nothing
+        // and back, slowly
+        await mouseDrag(page, await centreOf(page.locator(`${CM} .cl-slot-pill`)), along(11, -5));
+        expect(Math.abs((await boxPos(page)) - start)).toBeLessThanOrEqual(2);
+    });
+
+    test('vertical travel of about a line moves to the line below, keeping x', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'abcdefghij klmn\nabcdefghij klmn');
+        const first = (await syllableCentres(page, 'abcdefghij'))[0];
+        await page.mouse.click(first.x + 1, first.y);
+        const pill = page.locator(`${CM} .cl-slot-pill`);
+        const lh = await page.evaluate(() => document.querySelector('#editor-lead .cm-line.cl-line, #editor-lead .cm-line').getBoundingClientRect().height);
+        const pb = await pill.boundingBox();                                   // the chart glide is 1:1: start at the stop's left edge to keep x
+        await mouseDrag(page, { x: pb.x + 1, y: pb.y + pb.height / 2 }, Array.from({ length: 8 }, () => [0, Math.ceil(lh / 6)]));
+        expect((await boxAt(page)).line).toBe(2);
+        expect((await boxAt(page)).lyricsBefore).toBe('');
+    });
+
+    test('dragging a chord carries it, as Move does, and the whole drag is one undo step', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'Amazing [G]grace how sweet');
+        await mouseDrag(page, await centreOf(page.locator(`${CM} .cl-chord-glyph`).first()), along(11, 5));
+        const text = await leadText(page);
+        expect(text.match(/\[G\]/g)).toHaveLength(1);
+        expect(text.replace('[G]', '')).toBe('Amazing grace how sweet');
+        expect(text.indexOf('[G]')).toBeGreaterThan('Amazing '.length + 1);   // it travelled on from "grace"
+        // it was let go on lift: Move is off
+        await expect(page.locator(`${SHEET} .chm-move`)).toHaveAttribute('aria-pressed', 'false');
+        await page.locator('#editor-undo').click();
+        expect(await leadText(page)).toBe('Amazing [G]grace how sweet');
+    });
+
+    test('a carried chord hops over the chords in its way', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, '[G]Amazing gr[C]ace how');
+        await mouseDrag(page, await centreOf(page.locator(`${CM} .cl-chord-glyph`).first()), along(30, 6));
+        const text = await leadText(page);
+        expect(text.match(/\[C\]/g)).toHaveLength(1);
+        expect(text.match(/\[G\]/g)).toHaveLength(1);
+    });
+
+    test('a fast drag ends on the stop under the pointer: 1:1, the same stop a click there picks', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'Amazing grace how sweet is the sound');
+        const pill = page.locator(`${CM} .cl-slot-pill`);
+        const c = await centreOf(pill);
+        await page.mouse.move(c.x, c.y);
+        await page.mouse.down();
+        for (let i = 1; i <= 12; i++) await page.mouse.move(c.x + i * 20, c.y);   // no waiting: very fast (no gain any more)
+        await page.mouse.up();
+        const glided = await boxPos(page);
+        expect(await boxStopKind(page)).not.toBeNull();                           // a STOP (a syllable or a gap)
+        expect((await boxAt(page)).lyricsBefore.length).toBeGreaterThan(10);      // it really travelled
+        // a click on that same point picks the same stop: a glide and a tap agree
+        const y = await page.evaluate((pos) => { const v = document.querySelector('#editor-lead').__lead.editor.view; const r = v.coordsAtPos(pos, 1); return (r.top + r.bottom) / 2; }, glided);
+        await page.mouse.click(c.x + 240, y);
+        expect(await boxPos(page)).toBe(glided);
+    });
+
+    test('the strip keeps the cursor fully in view', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'Amazing grace how sweet the sound that saved a wretch like me');
+        const inView = async () => { await page.waitForTimeout(250); return page.evaluate(() => {
+            const v = document.querySelector('.chm-strip-view').getBoundingClientRect();
+            const t = document.querySelector('.chm-strip-view .cl-gap-bar, .chm-strip-view .cl-slot-pill, .chm-strip-view .cl-box-chord .cl-chord-glyph').getBoundingClientRect();
+            return t.left >= v.left && t.right <= v.right && t.width > 0;
+        }); };
+        expect(await inView()).toBe(true);                       // at the very start of the line
+        for (let i = 0; i < 6; i++) await page.locator(`${SHEET} .chm-next`).click();
+        expect(await inView()).toBe(true);
+        for (let i = 0; i < 40; i++) await page.locator(`${SHEET} .chm-next`).click();
+        expect(await inView()).toBe(true);                       // and near the end
+    });
+
+    test('the decoration marks are readable in the sheet (and only there)', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'Amazing grace');
+        await page.locator(`${SHEET} .chm-cell[data-chord="D"]`).click();
+        const seven = page.locator(`${SHEET} .chm-deco[data-id="7"]`);
+        await expect(seven).toHaveText('7');
+        const size = await seven.evaluate((e) => parseFloat(getComputedStyle(e).fontSize));
+        expect(size).toBeGreaterThanOrEqual(16);
+        await expect(page.locator(`${SHEET} .chm-deco[data-id="maj7"]`)).toHaveText('maj7');
+        // the chord glyphs keep their superscripts
+        expect(await page.locator(`${CM} .cl-box-chord sup`).count() + await page.locator(`${CM} .cl-chord-glyph`).count()).toBeGreaterThan(0);
+        await seven.click();
+        await expect(page.locator(`${CM} .cl-box-chord sup`)).toHaveText('7');
+    });
+
+    test('the rarer extensions open a second row behind the dots; / bass is its last item', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'Amazing grace');
+        await page.locator(`${SHEET} .chm-cell[data-chord="D"]`).click();
+        const main = page.locator(`${SHEET} .chm-decos:not(.chm-decos2)`);
+        const row = page.locator(`${SHEET} .chm-decos2`);
+        await expect(main.locator('.chm-deco')).toHaveCount(8);          // 7 marks and the dots
+        await expect(row).toHaveCount(0);
+        await main.locator('.chm-extra').click();
+        await expect(row.locator('[data-id="11"]')).toBeVisible();
+        await expect(row.locator('[data-id="m7b5"]')).toBeVisible();
+        await expect(row.locator('[data-id="mmaj7"]')).toHaveCount(0);   // D is major: m(maj7) does not apply
+        await expect(row.locator('.chm-deco').last()).toHaveText('/ bass');
+        await row.locator('[data-id="11"]').click();
+        await expect(page.locator(CHORDS)).toHaveText('D11');
+        // bass: one row of 12 notes, the key's tones solid, the rest dashed
+        await row.locator('.chm-bass').click();
+        await expect(page.locator(`${SHEET} [data-bass]`)).toHaveCount(12);
+        await page.locator(`${SHEET} [data-bass="F#"]`).click();
+        await expect(page.locator(CHORDS)).toHaveText('D11/F♯');
+        await page.locator(`${SHEET} [data-bass="F#"]`).click();         // again: cleared
+        await expect(page.locator(CHORDS)).toHaveText('D11');
+    });
+});
+
+test.describe('chords after the words', () => {
+    test('stepping right past the last letter enters an empty slot; D then A gives `home  [D]   [A]` (evenly spaced: every drawn gap 2)', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'We left our old home');
+        await page.evaluate(() => {
+            const { editor } = document.querySelector('#editor-lead').__lead;
+            editor.setBox({ pos: 19, active: true });                    // before the last letter
+        });
+        await page.keyboard.press('ArrowRight');
+        expect(await boxState(page)).toEqual({ pos: 20, after: 1, newLine: false });
+        await expect(page.locator(`${CM} .cl-slot-after .cl-slot-pill`)).toBeVisible();
+        expect(await leadText(page)).toBe('We left our old home');         // nothing written yet
+        await page.locator(`${SHEET} .chm-cell[data-chord="D"]`).click();
+        expect(await leadText(page)).toBe('We left our old home  [D]');
+        expect(await boxState(page)).toEqual({ pos: 'We left our old home  [D]'.length, after: 1, newLine: false });   // jumped to the next new slot
+        await page.locator(`${SHEET} .chm-cell[data-chord="A"]`).click();
+        expect(await leadText(page)).toBe('We left our old home  [D]   [A]');
+    });
+
+    test('an empty slot you leave writes nothing', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'one\ntwo');
+        await page.evaluate(() => document.querySelector('#editor-lead').__lead.editor.setBox({ pos: 2, active: true }));
+        await page.keyboard.press('ArrowRight');
+        expect((await boxState(page)).after).toBe(1);
+        await page.keyboard.press('ArrowLeft');
+        await page.keyboard.press('ArrowRight');
+        await page.keyboard.press('ArrowRight');                        // on to line two
+        expect((await boxAt(page)).line).toBe(2);
+        expect(await leadText(page)).toBe('one\ntwo');
+    });
+
+    test('a click to the RIGHT of the last word puts the cursor in the first empty slot after any trailing chords', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'We [G]left our old home [D]');
+        const end = await lineEndPoint(page, 'left our');
+        await page.mouse.click(end.farX, end.y);
+        expect(await boxState(page)).toMatchObject({ after: 1, newLine: false });
+        await page.locator(`${SHEET} .chm-cell[data-chord="A"]`).click();
+        expect(await leadText(page)).toBe('We [G]left our old home  [D]   [A]');
+        // a click on a trailing chord still selects THAT chord
+        await page.locator(`${CM} .cl-chord-glyph`).filter({ hasText: 'D' }).click();
+        expect(await boxState(page)).toMatchObject({ after: 0 });
+        await expect(page.locator(`${SHEET} .chm-remove`)).toBeVisible();
+    });
+
+    test('the trailing chords share the chord row of the line (editor and preview), as the book draws it', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'We [G]left our old home');
+        const end = await lineEndPoint(page, 'left our');
+        await page.mouse.click(end.farX, end.y);
+        await page.locator(`${SHEET} .chm-cell[data-chord="D"]`).click();
+        await page.locator(`${SHEET} .chm-cell[data-chord="A"]`).click();
+        expect(await leadText(page)).toBe('We [G]left our old home  [D]   [A]');
+        const editorTops = await page.evaluate((q) => [...document.querySelector(q).querySelectorAll('.cl-chord:not(.cl-chord-gap)')].map((e) => Math.round(e.getBoundingClientRect().top)), `${CM} .cl-line`);
+        await setMode(page, 'chordpro');
+        const bookTops = await page.evaluate(() => [...document.querySelector('#editor-lead .le-preview-body .cl-line').querySelectorAll('.cl-chord')].map((e) => Math.round(e.getBoundingClientRect().top)));
+        for (const t of [editorTops, bookTops]) {
+            expect(t.length).toBeGreaterThanOrEqual(3);
+            expect(new Set(t).size, `chord rows: ${t}`).toBe(1);        // G, D and A all on ONE row
+        }
+    });
+
+    test('Add chord line: G, C, D7, G; the line appears on the first pick and stays in its section', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, '{start_of_verse: Verse 1}\nWe left our old home\nand never came back\n{end_of_verse}');
+        await page.evaluate(() => document.querySelector('#editor-lead').__lead.editor.setBox({ pos: 30, active: true }));
+        await page.locator(`${SHEET} .chm-addline`).click();
+        expect(await boxState(page)).toMatchObject({ newLine: true });
+        await expect(page.locator(`${CM} .cl-newline .cl-slot-pill`)).toBeVisible();
+        expect(await leadText(page)).toContain('We left our old home\nand never came back');   // virtual: nothing written yet
+        const cell = (c) => page.locator(`${SHEET} .chm-cell[data-chord="${c}"]`);
+        await cell('G').click();
+        await cell('C').click();
+        // D7 is not a grid cell (extensions live in the decoration row, which needs a chord under the cursor): type it
+        await page.locator(`${SHEET} .chm-more`).click();
+        await page.locator(`${SHEET} .chm-free input`).fill('D7');
+        await page.locator(`${SHEET} .chm-free .chm-go`).click();
+        await cell('G').click();
+        const text = await leadText(page);
+        expect(text).toBe('{start_of_verse: Verse 1}\nWe left our old home\n[G]   [C]   [D7]    [G]\nand never came back\n{end_of_verse}');
+    });
+
+    test('an empty chord line is removed when the cursor leaves it, and when its last chord is removed', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'one\ntwo');
+        await page.evaluate(() => document.querySelector('#editor-lead').__lead.editor.setBox({ pos: 1, active: true }));
+        await page.locator(`${SHEET} .chm-addline`).click();
+        await page.keyboard.press('ArrowDown');                          // leaves it: nothing was written
+        expect(await leadText(page)).toBe('one\ntwo');
+        await expect(page.locator(`${CM} .cl-newline`)).toHaveCount(0);
+        // write one chord, then remove it: the line goes
+        await page.evaluate(() => document.querySelector('#editor-lead').__lead.editor.setBox({ pos: 1, active: true }));
+        await page.locator(`${SHEET} .chm-addline`).click();
+        await page.locator(`${SHEET} .chm-cell[data-chord="G"]`).click();
+        expect(await leadText(page)).toBe('one\n[G]\ntwo');
+        await page.locator(`${CM} .cl-chord-glyph`).filter({ hasText: 'G' }).click();
+        await page.locator(`${SHEET} .chm-remove`).click();
+        expect(await leadText(page)).toBe('one\ntwo');
+    });
+});
+
+test.describe('the book and the editor draw the same chord-only and trailing segments', () => {
+    const FIXTURE = '{start_of_verse: Verse 1}\nWe left our [G]old home [D] [A]\n[G] [C] [D7] [G]\n{end_of_verse}';
+    test('segment geometry matches the ChordPro preview (drawn by the book renderer)', async ({ page }) => {
+        await openNew(page);
+        await setLead(page, FIXTURE);
+        const editor = [await segmentRects(page, `${CM} .cl-line`, 0), await segmentRects(page, `${CM} .cl-line`, 1)];
+        await setMode(page, 'chordpro');
+        const book = [await segmentRects(page, '#editor-lead .le-preview-body .cl-line', 0), await segmentRects(page, '#editor-lead .le-preview-body .cl-line', 1)];
+        expect(editor[0].length).toBe(4);   // prefix, G, D, A
+        expect(editor[1].length).toBe(4);
+        for (const i of [0, 1]) {
+            expect(editor[i].length).toBe(book[i].length);
+            editor[i].forEach((r, k) => {
+                const b = book[i][k];
+                expect(Math.abs(r.w - b.w), `line ${i} segment ${k} width`).toBeLessThanOrEqual(1);
+                expect(Math.abs(r.x - b.x), `line ${i} segment ${k} x`).toBeLessThanOrEqual(1);
+                expect(Math.abs(r.h - b.h), `line ${i} segment ${k} height`).toBeLessThanOrEqual(1);
+                expect(Math.abs(r.top - b.top), `line ${i} segment ${k} top`).toBeLessThanOrEqual(1);
+                expect(r.chord).toBe(b.chord);
+            });
+        }
+    });
+});
+
+// ---------------------------------------------------------------------------------------------
+// The chord panel is docked, never floating: on a wide desktop it is ONE sticky panel to the right
+// of the chart (magnifier above picker).
+// ---------------------------------------------------------------------------------------------
+test.describe('Chords mode: the docked side panel (desktop)', () => {
+    const LONG = Array.from({ length: 60 }, (_, i) => `Line number ${i + 1} of the song`).join('\n');
+    test('sits to the right of the chart, sticky while the chart scrolls; no popover', async ({ page }) => {
+        await openNew(page);
+        await setLead(page, LONG);
+        await setMode(page, 'chords');
+        const panel = page.locator(SHEET);
+        await expect(panel).toHaveClass(/chm-side/);
+        await expect(panel).toBeVisible();
+        expect(await page.locator('.chm-popover, .chm-sheet').count()).toBe(0);
+        const geo = () => page.evaluate(() => {
+            const p = document.querySelector('.chm-menu').getBoundingClientRect();
+            const c = document.querySelector('#editor-lead').getBoundingClientRect();
+            const strip = document.querySelector('.chm-strip').getBoundingClientRect();
+            const body = document.querySelector('.chm-body').getBoundingClientRect();
+            return { pl: p.left, pt: p.top, pb: p.bottom, cr: c.right, sy: window.scrollY, position: getComputedStyle(document.querySelector('.chm-menu')).position, stripBottom: strip.bottom, bodyTop: body.top, vh: window.innerHeight };
+        });
+        const before = await geo();
+        expect(before.position).toBe('sticky');
+        expect(before.pl).toBeGreaterThanOrEqual(before.cr - 1);            // to the right of the chart
+        expect(before.stripBottom).toBeLessThanOrEqual(before.bodyTop + 1); // magnifier above picker
+        await page.evaluate(() => window.scrollBy(0, 900));
+        await page.waitForTimeout(150);
+        const after = await geo();
+        expect(after.sy).toBeGreaterThan(before.sy + 500);
+        await expect(panel).toBeInViewport();
+        expect(after.pt).toBeGreaterThanOrEqual(0);
+        expect(after.pt).toBeLessThan(120);                                 // it followed the scroll
+        expect(after.pb).toBeLessThanOrEqual(after.vh);
+        // and it still works: step to the next line and place a chord from the picker
+        await page.locator(`${SHEET} .chm-cell[data-chord="G"]`).first().click();
+        expect(await leadText(page)).toContain('[G]');
+    });
+
+    test('a narrower window (not a phone) docks it split, top and bottom', async ({ page }) => {
+        await page.setViewportSize({ width: 1000, height: 800 });
+        await openNew(page);
+        await setLead(page, 'Amazing grace how sweet');
+        await setMode(page, 'chords');
+        await expect(page.locator(SHEET)).toHaveClass(/chm-split/);
+        const m = await page.evaluate(() => ({ body: document.querySelector('.chm-body').getBoundingClientRect().bottom, vh: innerHeight, strip: getComputedStyle(document.querySelector('.chm-strip')).position }));
+        expect(Math.round(m.body)).toBe(m.vh);
+        expect(m.strip).toBe('fixed');
+    });
+});
+
+test.describe('Lyrics mode: the section bar Other... (desktop)', () => {
+    for (const how of ['Enter', 'blur', 'Add']) {
+        test(`Other... > type Solo > ${how} makes a solo section, with no page error`, async ({ page }) => {
+            const errors = [];
+            page.on('pageerror', (e) => errors.push(e.message));
+            await openNew(page);
+            await setLead(page, 'Line one\nLine two\n\nLine three');
+            await page.evaluate(() => {
+                const { editor } = document.querySelector('#editor-lead').__lead;
+                editor.view.focus();
+                editor.view.dispatch({ selection: { anchor: 2, head: 14 } });
+            });
+            await page.locator('.le-selbar [data-wrap="*"]').click();
+            const field = page.locator('.le-selbar-field');
+            await expect(field).toBeFocused();
+            await field.pressSequentially('Solo');
+            if (how === 'Enter') await page.keyboard.press('Enter');
+            else if (how === 'Add') await page.locator('.le-selbar-add').click();
+            else await page.evaluate(() => document.querySelector('.le-selbar-field').blur());
+            await expect.poll(() => leadText(page)).toContain('{start_of_solo: Solo}');
+            await expect(page.locator('.le-selbar-field')).toHaveCount(0);
+            expect(errors).toEqual([]);
+        });
+    }
+    test('Escape and an empty field cancel', async ({ page }) => {
+        await openNew(page);
+        await setLead(page, 'Line one\nLine two');
+        await page.evaluate(() => {
+            const { editor } = document.querySelector('#editor-lead').__lead;
+            editor.view.focus();
+            editor.view.dispatch({ selection: { anchor: 2, head: 12 } });
+        });
+        await page.locator('.le-selbar [data-wrap="*"]').click();
+        await page.locator('.le-selbar-field').pressSequentially('Solo');
+        await page.keyboard.press('Escape');
+        await expect(page.locator('.le-selbar-field')).toHaveCount(0);
+        expect(await leadText(page)).not.toContain('start_of_solo');
+    });
+});
+
+// ---------------------------------------------------------------------------------------------
+// Where the cursor stops: syllables, the gap between two words, the slots after the words.
+// ---------------------------------------------------------------------------------------------
+test.describe('where the cursor stops (desktop)', () => {
+    test('after any slow glide the cursor is a stop (never mid-syllable, never a non-gap space)', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'Many long years since I left my old home  now\nsecond line here');
+        for (const deltas of [along(5, 3), along(11, 4), along(17, 5), along(24, 3), along(9, -4)]) {
+            await page.evaluate(() => document.querySelector('#editor-lead').__lead.editor.setBox({ pos: 6, active: true }));
+            await page.keyboard.press('ArrowLeft');
+            const cur = await page.evaluate(() => { const { editor } = document.querySelector('#editor-lead').__lead; const c = editor.view.coordsAtPos(editor.getBox().pos, 1); return { x: c.left + 2, y: (c.top + c.bottom) / 2 }; });
+            await mouseDrag(page, cur, deltas, { stepMs: 40 });
+            expect(await boxStopKind(page), JSON.stringify(await boxState(page))).not.toBeNull();
+        }
+        expect(await leadText(page)).toBe('Many long years since I left my old home  now\nsecond line here');
+    });
+
+    test('a gap stop shows the slim bar and no text outline; D there is written `years[D] since`', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'Many long years since home');
+        const t = await leadText(page);
+        await page.evaluate((p) => document.querySelector('#editor-lead').__lead.editor.setBox({ pos: p, active: true }), t.indexOf('years'));
+        await page.keyboard.press('ArrowRight');
+        expect(await boxStopKind(page)).toBe('gap');
+        await expect(page.locator(`${CM} .cl-gap-bar`)).toBeVisible();
+        await expect(page.locator(`${CM} .cl-box-text`)).toHaveCount(0);
+        await page.locator(`${SHEET} .chm-cell[data-chord="D"]`).click();
+        expect(await leadText(page)).toBe('Many long years[D] since home');
+    });
+
+    test('▶ walks syllable, gap, next word ... then the slots after the words', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'Amazing grace\nsecond');
+        await page.evaluate(() => document.querySelector('#editor-lead').__lead.editor.setBox({ pos: 0, active: true }));
+        const kinds = await stepKinds(page, () => page.keyboard.press('ArrowRight'));
+        expect(kinds).toEqual(['syllable', 'syllable', 'gap', 'syllable', 'after']);   // A|maz|ing  gap  grace (silent e: one syllable)  slot
+    });
+
+    test('back-to-back chords on one syllable keep a gap, drawn the same in the editor and the preview', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'I ran away to [A][D]Charlottesville');
+        const gapAD = (sel) => page.evaluate((q) => {
+            const line = document.querySelector(q);
+            const g = [...line.querySelectorAll('.cl-chord')].filter((c) => /^(A|D)$/.test(c.textContent.trim()));
+            const ch = parseFloat(getComputedStyle(line).fontSize) * 0.6;
+            return (g[1].getBoundingClientRect().left - (g[0].querySelector('.cl-chord-glyph') || g[0].firstChild.parentElement).getBoundingClientRect().left) / ch;
+        }, sel);
+        const editor = await segmentRects(page, `${CM} .cl-line`, 0);
+        const editorGap = await gapAD(`${CM} .cl-line`);
+        await setMode(page, 'chordpro');
+        const book = await segmentRects(page, '#editor-lead .le-preview-body .cl-line', 0);
+        const bookGap = await gapAD('#editor-lead .le-preview-body .cl-line');
+        expect(editor.length).toBe(book.length);
+        editor.forEach((r, k) => expect(Math.abs(r.x - book[k].x), `segment ${k}`).toBeLessThanOrEqual(1));
+        // D starts at least ~2 characters after A starts: A's own width plus a gap (it used to be exactly A's width: "AD")
+        expect(editorGap).toBeGreaterThanOrEqual(1.8);
+        expect(Math.abs(editorGap - bookGap)).toBeLessThan(0.1);
+    });
+
+    test('D, A, E7 after the words are evenly spaced; the editor and the ChordPro preview agree on every segment', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'We left our old home');
+        const end = await lineEndPoint(page, 'left our');
+        await page.mouse.click(end.farX, end.y);
+        for (const c of ['D', 'A', 'E']) await page.locator(`${SHEET} .chm-cell[data-chord="${c}"]`).click();
+        await page.locator(`${CM} .cl-chord-glyph`).filter({ hasText: 'E' }).click();
+        await page.locator(`${SHEET} .chm-deco[data-id="7"]`).click();
+        expect(await leadText(page)).toBe('We left our old home  [D]   [A]   [E7]');
+        const editor = await segmentRects(page, `${CM} .cl-line`, 0);
+        await setMode(page, 'chordpro');
+        const book = await segmentRects(page, '#editor-lead .le-preview-body .cl-line', 0);
+        expect(editor.length).toBe(book.length);
+        editor.forEach((r, k) => expect(Math.abs(r.x - book[k].x), `segment ${k}`).toBeLessThanOrEqual(1));
+        // removing one takes its gap with it
+        await setMode(page, 'chords');
+    });
+
+    test('↵ Chord line, then G C D7 G, is an evenly spaced chords-only line', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, 'Old home\nroad');
+        await page.evaluate(() => document.querySelector('#editor-lead').__lead.editor.setBox({ pos: 2, active: true }));
+        await expect(page.locator(`${SHEET} .chm-enter`)).toHaveText('↵ Chord line');
+        await page.locator(`${SHEET} .chm-enter`).click();
+        for (const c of ['G', 'C']) await page.locator(`${SHEET} .chm-cell[data-chord="${c}"]`).click();
+        await page.locator(`${SHEET} .chm-more`).click();
+        await page.locator(`${SHEET} .chm-free input`).fill('D7');
+        await page.locator(`${SHEET} .chm-free .chm-go`).click();
+        await page.locator(`${SHEET} .chm-cell[data-chord="G"]`).click();
+        expect(await leadText(page)).toBe('Old home\n[G]   [C]   [D7]    [G]\nroad');
+        const editor = await segmentRects(page, `${CM} .cl-line`, 0);
+        await setMode(page, 'chordpro');
+        const book = await segmentRects(page, '#editor-lead .le-preview-body .cl-line', 0);
+        editor.forEach((r, k) => expect(Math.abs(r.x - book[k].x), `segment ${k}`).toBeLessThanOrEqual(1));
+    });
+});
+
+test.describe('desktop side panel: magnifier off by default, one nav row', () => {
+    test('no magnifier bar until the toggle is pressed; the arrows live in the nav row only', async ({ page }) => {
+        await page.addInitScript(() => localStorage.removeItem('bgb-chord-magnifier'));   // runs after the file-level seed
+        await openNew(page);
+        await chordsOn(page, 'Amazing river how sweet');
+        await page.evaluate(() => document.querySelector('#editor-lead').__lead.editor.setBox({ pos: 0, active: true }));
+        await expect(page.locator('.chm-strip')).toHaveCount(0);
+        const nav = page.locator(`${SHEET} .chm-row3`);
+        await expect(nav.locator('.chm-prev, .chm-up, .chm-down, .chm-next, .chm-undo, .chm-redo, .chm-mag')).toHaveCount(7);
+        await nav.locator('.chm-next').click();
+        expect(await boxPos(page)).toBeGreaterThan(0);
+        await nav.locator('.chm-mag').click();
+        await expect(page.locator('.chm-strip')).toHaveCount(1);
+        await expect(page.locator('.chm-strip .chm-step')).toHaveCount(0);
+        await nav.locator('.chm-mag').click();
+        await expect(page.locator('.chm-strip')).toHaveCount(0);
     });
 });

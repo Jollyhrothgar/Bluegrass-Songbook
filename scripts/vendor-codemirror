@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+# Rebuild docs/vendor/codemirror.js: CodeMirror 6 (state + view + commands),
+# pinned, bundled by esbuild into ONE ES module. The site has no build step and
+# no runtime dependencies; this runs in a temp dir and only the output is kept.
+#
+#   ./scripts/vendor-codemirror
+set -euo pipefail
+
+STATE_VERSION=6.7.6
+VIEW_VERSION=6.43.15
+COMMANDS_VERSION=6.11.1
+ESBUILD_VERSION=0.25.10
+
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+OUT="$ROOT/docs/vendor/codemirror.js"
+TMP="$(mktemp -d)"
+trap 'rm -rf "$TMP"' EXIT
+
+cd "$TMP"
+npm init -y >/dev/null
+npm install --silent --no-audit --no-fund --save-exact \
+    "@codemirror/state@$STATE_VERSION" "@codemirror/view@$VIEW_VERSION" \
+    "@codemirror/commands@$COMMANDS_VERSION" "esbuild@$ESBUILD_VERSION"
+
+cat > entry.js <<'JS'
+export {
+    EditorState, EditorSelection, Compartment, StateField, StateEffect,
+    Transaction, Annotation, RangeSet, RangeSetBuilder, Prec, Facet, ChangeSet,
+} from '@codemirror/state';
+export {
+    EditorView, Decoration, WidgetType, ViewPlugin, keymap, drawSelection,
+    placeholder, ViewUpdate,
+} from '@codemirror/view';
+export {
+    history, historyKeymap, defaultKeymap, undo, redo, undoDepth, redoDepth,
+    selectAll,
+} from '@codemirror/commands';
+JS
+
+mkdir -p "$ROOT/docs/vendor"
+npx esbuild entry.js --bundle --format=esm --minify --legal-comments=none \
+    --target=es2020 --outfile=bundle.js >/dev/null
+
+{
+    echo "/*! CodeMirror 6 — @codemirror/state $STATE_VERSION, @codemirror/view $VIEW_VERSION, @codemirror/commands $COMMANDS_VERSION"
+    echo " * Bundled by scripts/vendor-codemirror (esbuild $ESBUILD_VERSION). Do not edit by hand."
+    echo " * Also bundles @marijn/find-cluster-break, crelt, style-mod, w3c-keyname, @lezer/common (all MIT)."
+    echo " *"
+    for pkg in state view commands; do
+        echo " * ---- @codemirror/$pkg ----"
+        sed 's/^/ * /' "node_modules/@codemirror/$pkg/LICENSE"
+        echo " *"
+    done
+    echo " */"
+    cat bundle.js
+} > "$OUT"
+echo "wrote $OUT ($(wc -c < "$OUT") bytes, $(gzip -c "$OUT" | wc -c) gzip)"

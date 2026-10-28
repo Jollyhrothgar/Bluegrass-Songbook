@@ -47,6 +47,13 @@ const REPEAT_SONG = `{start_of_verse: Verse 1}
 const sectionsOf = (src) => parseChordPro(src).sections;
 
 describe('renderSectionsHtml', () => {
+    it('back-to-back chords on one syllable get a gap: the chord with no lyric of its own before another chord is marked', () => {
+        const html = renderSectionsHtml(parseChordPro('{start_of_verse}\nI ran away to [A][D]Charlottesville\nold home  [D]   [A]\n{end_of_verse}').sections, {});
+        const segs = [...html.matchAll(/<span class="(cl-segment[^"]*)"><span class="cl-chord">([^<]*(?:<[^>]+>[^<]*)*?)<\/span>/g)].map((m) => ({ cls: m[1], chord: m[2].replace(/<[^>]+>/g, '') }));
+        const a = segs.find((x) => x.chord === 'A');
+        expect(a.cls).toBe('cl-segment cl-before-chord');                   // [A] then [D] at once: A gets the gap
+        expect(segs.filter((x) => x.cls.includes('cl-before-chord'))).toHaveLength(1);   // a chord with text, or the last chord, does not
+    });
     it('renders a normal song to the exact screen DOM structure', () => {
         const html = renderSectionsHtml(sectionsOf(MINI_SONG), { key: 'G' });
         expect(html).toBe(`

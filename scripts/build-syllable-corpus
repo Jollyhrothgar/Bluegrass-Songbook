@@ -1,0 +1,45 @@
+#!/usr/bin/env node
+// Rebuilds docs/js/__tests__/fixtures/syllable-corpus.json from works/*/lead-sheet.pro:
+//   placements: where charts put a chord INSIDE a word -> [word, offset, count], top 2000
+//   words:      the 400 most frequent lyric words
+// The syllable regression test scores syllabify() against it.
+//
+//   ./scripts/build-syllable-corpus
+import { readFileSync, readdirSync, existsSync, writeFileSync, mkdirSync } from 'node:fs';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
+const W = join(ROOT, 'works');
+const OUT = join(ROOT, 'docs/js/__tests__/fixtures/syllable-corpus.json');
+const isL = (c) => /[A-Za-z']/.test(c || '');
+const freq = new Map();
+const place = new Map();
+for (const d of readdirSync(W).sort()) {
+    const f = join(W, d, 'lead-sheet.pro');
+    if (!existsSync(f)) continue;
+    for (const raw of readFileSync(f, 'utf8').split('\n')) {
+        if (raw.trim().startsWith('{')) continue;
+        let lyr = '';
+        const pos = [];
+        raw.replace(/\[([^\]]*)\]|([^[]+)/g, (m, ch, txt) => {
+            if (ch !== undefined) pos.push(lyr.length); else lyr += txt;
+            return '';
+        });
+        for (const w of lyr.toLowerCase().match(/[a-z']+/g) || []) freq.set(w, (freq.get(w) || 0) + 1);
+        for (const p of pos) {
+            if (!(isL(lyr[p - 1]) && isL(lyr[p]))) continue;
+            let s = p; while (isL(lyr[s - 1])) s--;
+            let e = p; while (isL(lyr[e])) e++;
+            const key = lyr.slice(s, e).toLowerCase() + '\t' + (p - s);
+            place.set(key, (place.get(key) || 0) + 1);
+        }
+    }
+}
+const cmp = (a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : 1);
+const placements = [...place].sort(cmp).slice(0, 2000)
+    .map(([k, n]) => { const [w, o] = k.split('\t'); return [w, +o, n]; });
+const words = [...freq].sort(cmp).slice(0, 400).map(([w]) => w);
+mkdirSync(dirname(OUT), { recursive: true });
+writeFileSync(OUT, JSON.stringify({ placements, words }) + '\n');
+console.log(`wrote ${OUT}: ${placements.length} placements (${placements.reduce((a, p) => a + p[2], 0)} chords), ${words.length} words`);

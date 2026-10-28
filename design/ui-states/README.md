@@ -111,6 +111,13 @@ put it in `setup`.
 | `proposed-d6-play-through` | D6 Play-through: a list played song to song | [proposed/d6-play-through.html](proposed/d6-play-through.html) | D6 |
 | `proposed-d7-songbook` | D7 Printable songbook: contents, keys and notes applied | [proposed/d7-songbook.html](proposed/d7-songbook.html) | D7 |
 
+### Proposed: editor
+
+| State | What it shows | Where | For |
+|---|---|---|---|
+| `proposed-e3-chord-menu` | E3 Chord menu: three layouts, a minor key, chord glyphs | [proposed/e3-chord-menu.html](proposed/e3-chord-menu.html) | E3 |
+| `proposed-e4-thumb-aim` | E4 Thumb aim: five ways to place a chord without hiding the lyric | [proposed/e4-thumb-aim.html](proposed/e4-thumb-aim.html) | E4 |
+
 ## Proposed states: what each mockup claims
 
 Each of these is a first position, drawn to the fix-it list's rule "hide
@@ -211,6 +218,39 @@ setlist key with its note.
   notes are applied everywhere.
 - Open: one song per page, or flow them to save paper? Do tab parts print?
   Is the list note the cover text? Is this a browser print, or a PDF we build?
+
+### E3 Chord menu (`proposed/e3-chord-menu.html`)
+
+The lead-sheet editor's chord menu, drawn where the phone keyboard would be
+(a "chord keyboard" you switch to the way you switch to emoji). Bottom row:
+the key's own chords with Roman numerals. Above it: chords from outside the
+key, each in its scale degree's column. Top: decorations (7, maj7, sus2, …)
+that change the chord in the box. Three layouts of the middle band: A, the
+non-diatonic triads; B, each degree's 7th (what the corpus uses: V7 in 67% of
+major-key songs, II7 three times as often as II); C, both. A checkbox
+overlays how many songs use each chord. Context and the rest of the editor:
+`docs/plans/2026-10-26-lyrics-editor-redesign.md`.
+
+- Needs: nothing from C1; it is a pure editor feature.
+- Open: A, B or C? Keep vii° (0% of songs)? Decorations as the result with a
+  faint root, or the bare mark? Glyphs spelled out (maj7) or jazz style (Δ7)?
+  If the menu draws glyphs, the song page must too.
+
+### E4 Thumb aim (`proposed/e4-thumb-aim.html`)
+
+Chords mode on a phone: the thumb covers the syllable it is placing a chord
+on. Five answers, switchable at the top, all interactive (open it on a
+phone): A, a pop-up above the thumb showing the line magnified (the iPhone
+keyboard's key pop); B, a crosshair a fixed distance above the fingertip, so
+you press below the line you mean; C, a knob hanging under the cursor that
+you drag from below the line; D, the held line hops up above the thumb and
+you scrub along it; E, a scrub bar in the panel whose left-right is the
+chart's own left-right. Every one maps the finger 1:1 to a spot on screen (no
+trackpad gain), and a plain tap always means "here".
+
+- Needs: nothing; replaces the magnifier strip as the default aid.
+- Open: which one, or which pair (a tap-and-knob for fine moves plus one
+  hold gesture)? How far above the thumb (A: 56px gap, B: 60px, D: 66px)?
 
 ## Found while building this
 

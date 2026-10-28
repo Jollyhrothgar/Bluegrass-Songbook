@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+# Rebuild docs/vendor/hyph-en-us.js: the US-English Liang hyphenation patterns
+# (TeX hyph-utf8 hyph-en-us.tex, Gerard D.C. Kuiken) as a plain ES module of
+# two strings. The algorithm itself is in docs/js/visual-editor/syllables.js.
+# Pinned to a commit so the output is reproducible.
+#
+#   ./scripts/vendor-hyphenation
+set -euo pipefail
+
+COMMIT=master   # pin to a commit sha to freeze; the file has not changed since 2005
+URL="https://raw.githubusercontent.com/hyphenation/tex-hyphen/$COMMIT/hyph-utf8/tex/generic/hyph-utf8/patterns/tex/hyph-en-us.tex"
+
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+OUT="$ROOT/docs/vendor/hyph-en-us.js"
+TMP="$(mktemp -d)"
+trap 'rm -rf "$TMP"' EXIT
+
+curl -sSfL -o "$TMP/hyph-en-us.tex" "$URL"
+mkdir -p "$ROOT/docs/vendor"
+
+node - "$TMP/hyph-en-us.tex" "$OUT" <<'JS'
+const fs = require('fs');
+const [src, out] = process.argv.slice(2);
+const lines = fs.readFileSync(src, 'utf8').split('\n');
+// The header comment (title, copyright, licence) is kept verbatim.
+const headerEnd = lines.findIndex((l) => l.startsWith('% =====')) ;
+const header = lines.slice(0, headerEnd).map((l) => ' * ' + l.replace(/^% ?/, '')).join('\n');
+const body = lines.slice(headerEnd).join('\n');
+const patBlock = /\\patterns\{([\s\S]*?)\n\}/.exec(body)[1];
+const patterns = patBlock.split('\n').map((l) => l.replace(/%.*/, '').trim()).filter(Boolean).join(' ').split(/\s+/);
+const excBlock = /\\hyphenation\{([\s\S]*?)\n\}\s*$/.exec(body.slice(body.lastIndexOf('\\hyphenation{') - 0))[1];
+const exceptions = excBlock.split('\n').map((l) => l.replace(/%.*/, '').trim()).filter(Boolean);
+if (patterns.some((p) => !/^[a-z.0-9]+$/.test(p))) throw new Error('unexpected pattern characters');
+const text = `/*! Hyphenation patterns for American English (hyph-en-us.tex), vendored by
+ * scripts/vendor-hyphenation as an ES module of two strings. Do not edit by hand.
+ *
+ * Original notice, preserved as the licence requires:
+ *
+${header}
+ *
+ * Source: https://github.com/hyphenation/tex-hyphen (hyph-utf8)
+ * The \\patterns{} list is PATTERNS (space separated); Knuth's \\hyphenation{}
+ * exception list is EXCEPTIONS (hyphens mark the breaks).
+ *
+ * The packaging idea was checked against the "hyphen" npm package
+ * (ISC License, Copyright (c) 2026, Yevhen Tiurin <yevhentiurin@gmail.com>:
+ * "Permission to use, copy, modify, and/or distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies."). No code
+ * from it is included; the algorithm in syllables.js is written in-house.
+ */
+export const PATTERNS = ${JSON.stringify(patterns.join(' '))};
+export const EXCEPTIONS = ${JSON.stringify(exceptions.join(' '))};
+`;
+fs.writeFileSync(out, text);
+console.log(`wrote ${out} (${text.length} bytes, ${patterns.length} patterns, ${exceptions.length} exceptions)`);
+JS

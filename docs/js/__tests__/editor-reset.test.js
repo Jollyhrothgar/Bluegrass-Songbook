@@ -40,9 +40,6 @@ function buildDom() {
                 <div class="editor-pane editor-pane-raw">
                     <textarea id="editor-content"></textarea>
                 </div>
-                <div class="editor-pane editor-pane-preview">
-                    <div id="editor-preview-container"></div>
-                </div>
             </div>
             <div id="editor-status" class="save-status"></div>
             <button id="editor-submit-btn">Submit to Songbook</button>
@@ -57,8 +54,7 @@ function buildDom() {
         editorStatus: document.getElementById('editor-status'),
         editorSubmitBtn: document.getElementById('editor-submit-btn'),
         metadataSummary: document.getElementById('metadata-summary'),
-        metadataFields: document.getElementById('metadata-fields'),
-        editorPreviewContainer: document.getElementById('editor-preview-container')
+        metadataFields: document.getElementById('metadata-fields')
     };
 }
 
@@ -80,9 +76,6 @@ function expectFreshNewSongEditor() {
     expect(refs.editorSubmitBtn.textContent).toBe('Submit to Songbook');
     expect(editMode).toBe(false);
     expect(editingSongId).toBe(null);
-    // preview shows the empty state (no stale sections)
-    expect(refs.editorPreviewContainer.querySelector('.ve-preview-empty')).not.toBe(null);
-    expect(refs.editorPreviewContainer.querySelectorAll('.ve-psec').length).toBe(0);
 }
 
 describe('prepareAddSongView', () => {
@@ -135,10 +128,8 @@ describe('sequential edit sessions and reverse leak', () => {
         expect(refs.editorTitle.value).toBe('Blue Moon of Kentucky');
         expect(refs.editorContent.value).toBe(SONG_B.content);
         expect(editingSongId).toBe('blue-moon-of-kentucky');
-        // the preview shows B's lyrics, not A's
-        const text = refs.editorPreviewContainer.textContent;
-        expect(text).toContain('Kentucky');
-        expect(text).not.toContain('cheatin');
+        // the text is B's, not A's
+        expect(refs.editorContent.value).not.toContain('cheatin');
     });
 
     it('opening Edit after abandoning a new-song draft fully loads the song', async () => {
@@ -148,9 +139,7 @@ describe('sequential edit sessions and reverse leak', () => {
         await enterEditMode(SONG_A);
         expect(refs.editorTitle.value).toBe('Your Cheatin Heart');
         expect(refs.editorContent.value).toBe(SONG_A.content);
-        const text = refs.editorPreviewContainer.textContent;
-        expect(text).toContain('cheatin');
-        expect(text).not.toContain('Half-finished');
+        expect(refs.editorContent.value).not.toContain('Half-finished');
     });
 
     it('a reset session submits as a new song, and a later edit is unaffected', async () => {

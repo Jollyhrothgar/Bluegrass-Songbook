@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>Proposed E4: Placing a chord without your thumb hiding the lyric</title>
+<link rel="stylesheet" href="mock.css">
+<style>
+/* Five ways to keep the lyric visible while a thumb places the chord cursor.
+ * Interactive: open it on a phone. Every idea maps the finger ABSOLUTELY (the
+ * cursor goes to the stop under a point, never trackpad-style), and a plain
+ * tap always means "put the cursor here". Stops are the editor's: a syllable,
+ * the gap between words, the slots after the words. */
+html, body { height: 100%; overflow: hidden; overscroll-behavior: none; }
+body { padding: 0; min-height: 0; }
+.app {
+    position: relative; display: flex; flex-direction: column;
+    height: 100dvh; max-width: 430px; margin: 0 auto; background: var(--bg);
+}
+@media (min-width: 600px) {
+    body { background: var(--desk); }
+    .app {
+        width: 390px; height: min(820px, calc(100dvh - 40px)); margin: 20px auto;
+        border-radius: 28px; overflow: hidden;
+        box-shadow: 0 0 0 1px var(--border), 0 10px 30px rgba(0, 0, 0, 0.25);
+    }
+}
+
+/* ── which idea ──────────────────────────────────────────────────────── */
+.ideas { display: flex; gap: 4px; padding: 8px 8px 0; flex: none; }
+.ideas button {
+    flex: 1; padding: 5px 0; border-radius: 9px; font-size: 12px; line-height: 1.2;
+    color: var(--text-secondary); background: var(--bg-secondary); border: 1px solid var(--border);
+}
+.ideas button b { display: block; font-size: 15px; color: var(--text); }
+.ideas button.here { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.ideas button.here b { color: var(--on-accent); }
+.hint { flex: none; margin: 0; padding: 6px 14px 2px; font-size: 13px; line-height: 1.35; color: var(--text-secondary); min-height: 3.2em; }
+
+/* ── the chart: the book's look ─────────────────────────────────────── */
+.wrap {
+    flex: 1; min-height: 0; overflow-y: auto; touch-action: pan-y; position: relative;
+    -webkit-user-select: none; user-select: none; -webkit-touch-callout: none;
+}
+.chart { position: relative; z-index: 0; padding: 2px 18px 40px; font-family: var(--mono); font-size: 15px; }
+.ttl { font: 700 19px/1.2 -apple-system, sans-serif; margin: 4px 0 0; }
+.lbl { font: italic 13px/1 -apple-system, sans-serif; color: var(--text-secondary); margin: 14px 0 6px; }
+.ln { margin: 0 0 8px; }
+.w { display: inline-block; white-space: nowrap; vertical-align: bottom; }
+.seg { display: inline-block; vertical-align: bottom; }
+.ch { display: block; height: 1.35em; line-height: 1.35; padding-right: 0.45em; color: var(--chord); font-weight: 700; white-space: pre; }
+.ly { display: block; line-height: 1.45; white-space: pre; }
+.cg sup { font-size: 0.68em; position: relative; top: -0.5em; vertical-align: 0; margin-left: 0.03em; }
+
+/* the cursor: the stop outlined, its chord lit (or an empty dashed box where one would go) */
+.u { position: relative; border-radius: 4px; }
+.u.tgt { outline: 2px solid var(--accent); outline-offset: 1px; }
+.u.empty::before {
+    content: ''; position: absolute; left: -3px; bottom: calc(100% + 0.16em);
+    width: max(1.5em, calc(100% + 6px)); height: 1.2em; box-sizing: border-box;
+    border: 2px dashed var(--accent); border-radius: 6px;
+    background: color-mix(in srgb, var(--accent) 14%, transparent);
+}
+.ch.on .cg { background: var(--accent); color: var(--on-accent); border-radius: 4px; box-shadow: 0 0 0 3px var(--accent); }
+
+/* D/E: the line being steered */
+.band {
+    position: absolute; left: 6px; right: 6px; z-index: -1; display: none; pointer-events: none;
+    border-radius: 8px; background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+/* C: the knob hanging under the cursor */
+.knob { position: absolute; left: 0; top: 0; width: 0; height: 0; z-index: 3; display: none; touch-action: none; }
+.knob::before { content: ''; position: absolute; left: -26px; top: -4px; width: 52px; height: 52px; }
+.kstem { position: absolute; left: -1px; top: 1px; width: 2px; height: 12px; background: var(--accent); }
+.kdot {
+    position: absolute; left: -10px; top: 12px; width: 20px; height: 20px; border-radius: 50%;
+    background: var(--accent); box-shadow: 0 1px 5px rgba(0, 0, 0, 0.55); transition: transform 80ms;
+}
+.knob.drag .kdot { transform: scale(1.3); }
+
+/* ── the chord panel (stub: enough to place chords and feel the reach) ─ */
+.panel {
+    flex: none; border-top: 1px solid var(--border); background: var(--bg-secondary);
+    padding: 8px 6px calc(8px + env(safe-area-inset-bottom)); touch-action: manipulation;
+    -webkit-user-select: none; user-select: none;
+}
+.ptop { display: flex; align-items: center; gap: 8px; padding: 0 4px 6px; font-size: 14px; }
+.ptop .key { font-weight: 600; margin-right: auto; }
+.pbtn { padding: 5px 12px; border: 1px solid var(--border); border-radius: 9px; background: var(--bg); font-size: 14px; }
+.pbtn.on { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+.crow { display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; margin-top: 5px; }
+.ck {
+    height: 46px; border-radius: 10px; border: 1.5px solid var(--border); background: var(--bg);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 1.1;
+}
+.ck b { font-size: 16px; font-weight: 700; }
+.ck i { font-style: normal; font-size: 11px; color: var(--text-secondary); }
+.crow.out .ck { border-style: dashed; background: transparent; }
+.crow.out .ck b { font-weight: 500; color: var(--text-secondary); }
+.crow.in .ck { border-color: color-mix(in srgb, var(--accent) 55%, var(--border)); }
+
+/* E: the scrub bar */
+.strip {
+    display: none; position: relative; height: 46px; margin: 0 0 8px; overflow: hidden;
+    border-radius: 10px; background: var(--bg-tertiary); border: 1px solid var(--border); touch-action: none;
+}
+body[data-idea="strip"] .strip { display: block; }
+.strip .tick { position: absolute; top: 13px; bottom: 13px; width: 2px; margin-left: -1px; border-radius: 1px; background: var(--text-secondary); opacity: 0.5; }
+.strip .tick.gap { top: 18px; bottom: 18px; }
+.strip .tick.cur { top: 5px; bottom: 5px; width: 3px; background: var(--accent); opacity: 1; }
+.strip .fing { position: absolute; top: 0; bottom: 0; width: 34px; margin-left: -17px; border-radius: 9px; display: none; background: color-mix(in srgb, var(--accent) 22%, transparent); }
+
+/* ── A: the pop-up above the thumb ──────────────────────────────────── */
+.bubble {
+    position: fixed; left: 0; top: 0; width: 250px; height: 92px; z-index: 30; pointer-events: none;
+    border-radius: 18px; background: var(--bg-tertiary); border: 1px solid var(--border);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.5);
+    opacity: 0; transform: scale(0.85); transform-origin: 50% 100%; transition: opacity 90ms, transform 90ms;
+}
+.bubble.show { opacity: 1; transform: none; }
+.bin { position: absolute; inset: 0; overflow: hidden; border-radius: 18px; }
+.bin .ln { position: absolute; left: 0; bottom: 9px; margin: 0; font-family: var(--mono); font-size: 24px; white-space: nowrap; }
+.tail {
+    position: absolute; bottom: -9px; width: 16px; height: 16px; background: var(--bg-tertiary);
+    border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); transform: rotate(45deg);
+}
+
+/* ── B: the crosshair above the thumb ───────────────────────────────── */
+.ret, .stem { position: fixed; left: 0; top: 0; z-index: 30; pointer-events: none; display: none; }
+.ret { width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--accent); box-sizing: border-box; }
+.ret::after { content: ''; position: absolute; left: 50%; top: 50%; width: 4px; height: 4px; margin: -2px; border-radius: 50%; background: var(--accent); }
+.stem { width: 0; border-left: 2px dotted var(--accent); opacity: 0.75; }
+.ret.show, .stem.show { display: block; }
+</style>
+</head>
+<body data-idea="pop">
+<div class="app">
+    <nav class="ideas" id="ideas"></nav>
+    <p class="hint" id="hint"></p>
+    <div class="wrap" id="wrap">
+        <div class="chart" id="chart">
+            <div class="band" id="band"></div>
+            <div class="knob" id="knob"><i class="kstem"></i><i class="kdot"></i></div>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="strip" id="strip"><i class="fing" id="fing"></i></div>
+        <div class="ptop"><span class="key">Key of A</span><button class="pbtn" id="seven">7</button><button class="pbtn" id="remove">Remove</button></div>
+        <div class="crow out" id="out"></div>
+        <div class="crow in" id="in"></div>
+    </div>
+</div>
+<div class="bubble" id="bubble"><div class="bin" id="bin"></div><i class="tail" id="tail"></i></div>
+<i class="ret" id="ret"></i><i class="stem" id="stem"></i>
+<script>
+(() => {
+const params = new URLSearchParams(location.search);
+document.documentElement.dataset.theme = params.get('theme') === 'light' ? 'light' : 'dark';
+
+const HOLD_MS = 230;   // hold this long (without moving SLOP) to start steering; moving first = scrolling
+const SLOP = 10;
+const SETTLE_MS = 80;  // a lift commits the stop shown this long before it: a thumb's contact point slides as it lifts
+const HYST = 4;        // px past a stop's edge before the cursor moves to it (no flicker on a boundary)
+const AIM = 60;        // B: the crosshair sits this far above the fingertip
+const LIFT = 66;       // D: the steered line's middle sits this far above the fingertip
+const PITCH = 38;      // D, E: finger travel per line
+const BUBBLE = { w: 250, h: 92, gap: 56, scale: 24 / 15 };
+
+const IDEAS = [
+    { id: 'pop', name: 'A', label: 'Pop-up', hint: 'Hold a syllable, then slide. A bubble above your thumb shows what is under it, like the iPhone keyboard’s key pop.' },
+    { id: 'aim', name: 'B', label: 'Aim', hint: 'Hold just BELOW the line you want, then slide. The crosshair above your thumb does the aiming, so the lyric stays in view.' },
+    { id: 'handle', name: 'C', label: 'Knob', hint: 'Tap a syllable to put the cursor there. Fine-tune by dragging the knob under it: your thumb sits below the line, not on it.' },
+    { id: 'lift', name: 'D', label: 'Lift', hint: 'Hold a lyric: its line hops up above your thumb. Slide sideways to pick the spot, up or down to change lines.' },
+    { id: 'strip', name: 'E', label: 'Scrub', hint: 'Drag along the bar above the chords: the cursor follows your finger’s left–right on the highlighted line. Swipe up or down on the bar to change lines.' },
+];
+
+// Old Home Place, verses 3 and 4. `|` splits a word into syllables (the editor's syllable stops).
+const SONG = [
+    { label: 'Verse 3' },
+    'Well the girl ran [C#7]off with [D]some|body [A]else',
+    'The tar|iffs took all my [E7]pay',
+    '[A]And here I [C#7]stand where the old [D]home [A]stood',
+    'Be|fore they [E7]took it [A]a|way',
+    { label: 'Verse 4' },
+    'Now the geese fly [C#7]south and the cold [D]wind [A]moans',
+    'As I stand here and hang my [E7]head',
+    '[A]I’ve lost my [C#7]love I’ve [D]lost my [A]home',
+    'And now I [E7]wish that I was [A]dead',
+];
+const IN_KEY = [['A', 'I'], ['Bm', 'ii'], ['C#m', 'iii'], ['D', 'IV'], ['E', 'V'], ['F#m', 'vi'], ['G#dim', 'vii°']];
+const OUTSIDE = [['Am', 'i'], ['B', 'II'], ['C#', 'III'], ['Dm', 'iv'], ['Em', 'v'], ['F#', 'VI'], ['G', '♭VII']];
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const chart = $('chart'), wrap = $('wrap'), bubble = $('bubble'), bin = $('bin'), tail = $('tail');
+const ret = $('ret'), stem = $('stem'), knob = $('knob'), band = $('band'), strip = $('strip'), fing = $('fing');
+
+function glyph(c) {
+    const m = /^([A-G])([#b]?)(.*)$/.exec(c);
+    if (!m) return esc(c);
+    let rest = m[3], base = '';
+    if (/^m(?!aj)/.test(rest)) { base = 'm'; rest = rest.slice(1); }
+    rest = rest.replace(/^dim/, '°');
+    const acc = m[2] === '#' ? '♯' : m[2] === 'b' ? '♭' : '';
+    return `${m[1]}${acc}${base}${rest ? `<sup>${esc(rest)}</sup>` : ''}`;
+}
+
+// a line = units: { t: 'syl' | 'gap' | 'aft', text, chord, w0 (first syllable of a word) }; it ends with the empty after-slot
+function parse(src) {
+    const units = [];
+    let chord = null;
+    const re = /\[([^\]]+)\]|( +)|([^\s[]+)/g;
+    let m;
+    while ((m = re.exec(src))) {
+        if (m[1]) { chord = m[1]; continue; }
+        if (m[2]) { units.push({ t: 'gap', text: m[2], chord }); chord = null; continue; }
+        m[3].split('|').forEach((s, j) => { units.push({ t: 'syl', text: s, chord: j === 0 ? chord : null, w0: j === 0 }); });
+        chord = null;
+    }
+    if (chord) units.push({ t: 'aft', text: '   ', chord });
+    units.push({ t: 'aft', text: '   ', chord: null });
+    return units;
+}
+const LINES = [];
+const ITEMS = SONG.map((s) => (typeof s === 'string' ? { li: LINES.push(parse(s)) - 1 } : s));
+const unitOf = (k) => { const [l, i] = k.split(':').map(Number); return LINES[l][i]; };
+
+// segments as the book draws them (a chord starts one), grouped per word so a line only wraps between words
+function lineHTML(li) {
+    const words = [];
+    let word = null, seg = null;
+    LINES[li].forEach((u, ui) => {
+        if (!word || u.t === 'aft' || (u.t === 'syl' && u.w0)) { word = []; words.push(word); seg = null; }
+        if (!seg || u.chord) { seg = { chord: u.chord, units: [] }; word.push(seg); }
+        seg.units.push(`<span class="u ${u.t}" data-k="${li}:${ui}">${esc(u.text)}</span>`);
+    });
+    return words.map((w) => `<span class="w">${w.map((s) =>
+        `<span class="seg"><span class="ch">${s.chord ? `<span class="cg">${glyph(s.chord)}</span>` : ''}</span><span class="ly">${s.units.join('')}</span></span>`).join('')}</span>`).join('');
+}
+
+let idea = IDEAS.some((i) => i.id === params.get('idea')) ? params.get('idea') : 'pop';
+let cursor = '0:0';
+let seven = false;
+
+function render() {
+    chart.querySelectorAll('.ttl, .lbl, .ln').forEach((n) => n.remove());
+    chart.insertAdjacentHTML('afterbegin', '<div class="ttl">Old Home Place</div>' + ITEMS.map((it) => (it.label
+        ? `<div class="lbl">${esc(it.label)}</div>`
+        : `<div class="ln" data-l="${it.li}">${lineHTML(it.li)}</div>`)).join(''));
+    applyCursor(chart, cursor);
+    refresh();
+}
+function applyCursor(root, key) {
+    root.querySelectorAll('.u.tgt, .u.empty, .ch.on').forEach((n) => n.classList.remove('tgt', 'empty', 'on'));
+    const el = root.querySelector(`.u[data-k="${key}"]`);
+    if (!el) return;
+    el.classList.add('tgt');
+    if (unitOf(key).chord) el.closest('.seg').querySelector('.ch').classList.add('on');
+    else el.classList.add('empty');
+}
+function setCursor(k) { if (k !== cursor) { cursor = k; applyCursor(chart, k); } }
+
+// ── where things are on screen ──────────────────────────────────────────
+function rows() {
+    const out = [];
+    chart.querySelectorAll('.ln').forEach((ln) => {
+        const rs = [];
+        ln.querySelectorAll('.u').forEach((el) => {
+            const r = el.getBoundingClientRect();
+            let row = rs.find((q) => Math.abs(q.top - r.top) < 4);
+            if (!row) { row = { top: r.top, bottom: r.bottom, units: [] }; rs.push(row); }
+            row.units.push({ el, k: el.dataset.k, left: r.left, top: r.top, bottom: r.bottom, gap: el.classList.contains('gap') });
+        });
+        rs.forEach((q) => q.units.sort((a, b) => a.left - b.left));
+        out.push(...rs);
+    });
+    return out;
+}
+const chordH = () => chart.querySelector('.ch').getBoundingClientRect().height;
+const pick = (row, x) => row.units.reduce((at, u) => (u.left <= x + 0.5 ? u : at), row.units[0]);
+/** The stop under a viewport point: the visual row whose chord row + lyric row hold y (nearest, if `nearest`). */
+function hitAt(x, y, nearest) {
+    const rs = rows(), ch = chordH();
+    let best = null;
+    rs.forEach((r, i) => {
+        const top = r.top - ch;
+        const d = y < top ? top - y : y > r.bottom ? y - r.bottom : 0;
+        if (!best || d < best.d) best = { d, i };
+    });
+    if (!best || (!nearest && best.d > 10)) return null;
+    return { ri: best.i, row: rs[best.i], u: pick(rs[best.i], x) };
+}
+const rowIndexOfCursor = (rs) => Math.max(0, rs.findIndex((r) => r.units.some((u) => u.k === cursor)));
+function showBand(row) {
+    if (!row) { band.style.display = 'none'; return; }
+    const c = chart.getBoundingClientRect(), ch = chordH();
+    band.style.display = 'block';
+    band.style.top = `${row.top - ch - c.top - 3}px`;
+    band.style.height = `${row.bottom - row.top + ch + 6}px`;
+}
+
+// ── per-idea furniture that follows the cursor ──────────────────────────
+function refresh() {
+    placeKnob();
+    if (idea === 'strip') drawStrip(); else if (!lift) showBand(null);
+}
+function placeKnob() {
+    if (idea !== 'handle') { knob.style.display = 'none'; return; }
+    const el = chart.querySelector(`.u[data-k="${cursor}"]`);
+    if (!el) return;
+    const r = el.getBoundingClientRect(), c = chart.getBoundingClientRect();
+    knob.style.display = 'block';
+    knob.style.transform = `translate(${r.left - c.left}px, ${r.bottom - c.top}px)`;
+}
+function drawStrip() {
+    const rs = rows();
+    const row = rs[rowIndexOfCursor(rs)];
+    const s = strip.getBoundingClientRect();
+    strip.querySelectorAll('.tick').forEach((n) => n.remove());
+    for (const u of row.units) {
+        const t = document.createElement('i');
+        t.className = `tick${u.gap ? ' gap' : ''}${u.k === cursor ? ' cur' : ''}`;
+        t.style.left = `${u.left - s.left}px`;
+        strip.appendChild(t);
+    }
+    showBand(row);
+}
+function popAt(x, y, hit) {
+    const { w, h, gap, scale } = BUBBLE;
+    // drawn from the live line every time: a cached copy goes stale after a chord is placed
+    bin.innerHTML = `<div class="ln">${lineHTML(+cursor.split(':')[0])}</div>`;
+    applyCursor(bin, cursor);
+    const ln = bin.firstChild, el = bin.querySelector(`.u[data-k="${cursor}"]`);
+    const cur = hit.row.units.find((u) => u.k === cursor) || hit.u;
+    // the finger's spot (not just the stop) sits right over the tail, so the bubble slides smoothly
+    // and the slot drawn above the finger is the slot under it, even when the bubble is pinned to an edge
+    const left = Math.max(6, Math.min(innerWidth - w - 6, x - w / 2));
+    const tailX = Math.max(16, Math.min(w - 16, x - left));
+    const at = el.getBoundingClientRect().left - ln.getBoundingClientRect().left + (x - cur.left) * scale;
+    ln.style.transform = `translateX(${tailX - at}px)`;
+    bubble.style.left = `${left}px`;
+    bubble.style.top = `${Math.max(6, y - gap - h)}px`;
+    tail.style.left = `${tailX - 8}px`;
+    bubble.classList.add('show');
+}
+function aimAt(x, y) {
+    ret.style.transform = `translate(${x - 10}px, ${y - AIM - 10}px)`;
+    stem.style.transform = `translate(${x - 1}px, ${y - AIM + 12}px)`;
+    stem.style.height = `${AIM - 34}px`;
+    ret.classList.add('show');
+    stem.classList.add('show');
+}
+
+// D: the line rides above the thumb
+let lift = null;
+function liftBegin(x, y) {
+    chart.style.transition = 'none';
+    chart.style.transform = '';
+    const rs = rows();
+    const h = hitAt(x, y, true);
+    lift = { rs, ri0: h ? h.ri : 0, y0: y, ri: -1, top0: chart.getBoundingClientRect().top };
+    void chart.offsetHeight;
+    chart.style.transition = 'transform 140ms cubic-bezier(.2,.8,.2,1)';
+}
+function liftMove(x, y) {
+    const ri = Math.max(0, Math.min(lift.rs.length - 1, lift.ri0 + Math.round((y - lift.y0) / PITCH)));
+    const row = lift.rs[ri];
+    setCursor(pick(row, x).k);
+    if (ri === lift.ri) return;
+    lift.ri = ri;
+    const ty = (y - LIFT) - (row.top + row.bottom) / 2;
+    chart.style.transform = `translateY(${ty}px)`;
+    const ch = chordH();
+    band.style.display = 'block';
+    band.style.top = `${row.top - ch - lift.top0 - 3}px`;
+    band.style.height = `${row.bottom - row.top + ch + 6}px`;
+}
+function liftEnd() {
+    lift = null;
+    chart.style.transition = 'transform 180ms ease-out';
+    chart.style.transform = '';
+    showBand(null);
+}
+
+// ── the chart's gestures: tap = here; hold, then slide = steer ──────────
+let press = null;
+function begin() {
+    press.on = true;
+    try { wrap.setPointerCapture(press.id); } catch { /* the pointer is gone */ }
+    if (idea === 'lift') liftBegin(press.x, press.y);
+    steer(press.x, press.y);
+}
+/** The stop to show for a hit: the new one, unless the point is within HYST px of the edge it just crossed. */
+function settle(h, x) {
+    const at = h.row.units.findIndex((u) => u.k === cursor);
+    const to = h.row.units.indexOf(h.u);
+    if (at < 0 || Math.abs(to - at) !== 1) return h.u.k;
+    const edge = to > at ? h.row.units[to].left : h.row.units[at].left;
+    return Math.abs(x - edge) < HYST ? cursor : h.u.k;
+}
+function steer(x, y) {
+    if (idea === 'lift') { liftMove(x, y); return; }
+    const h = hitAt(x, idea === 'aim' ? y - AIM : y, true);
+    if (h) {
+        const k = settle(h, x);
+        if (k !== cursor) press.seen.push({ t: performance.now(), k });
+        setCursor(k);
+    }
+    if (idea === 'pop' && h) popAt(x, y, h);
+    if (idea === 'aim') aimAt(x, y);
+}
+function finish() {
+    bubble.classList.remove('show');
+    ret.classList.remove('show');
+    stem.classList.remove('show');
+    if (lift) liftEnd();
+    refresh();
+}
+wrap.addEventListener('pointerdown', (e) => {
+    if (press || e.button > 0 || e.target.closest('.knob')) return;
+    press = { id: e.pointerId, x0: e.clientX, y0: e.clientY, x: e.clientX, y: e.clientY, on: false, seen: [] };
+    press.timer = setTimeout(() => { if (press && !press.on) begin(); }, HOLD_MS);
+});
+wrap.addEventListener('pointermove', (e) => {
+    if (!press || e.pointerId !== press.id) return;
+    press.x = e.clientX;
+    press.y = e.clientY;
+    if (press.on) steer(press.x, press.y);
+    else if (Math.hypot(press.x - press.x0, press.y - press.y0) > SLOP) { clearTimeout(press.timer); press = null; }
+});
+const pressEnd = (e, lifted) => {
+    if (!press || e.pointerId !== press.id) return;
+    clearTimeout(press.timer);
+    if (press.on && lifted) {
+        // commit what the bubble showed SETTLE_MS ago, not what the lifting thumb slid onto
+        const cutoff = performance.now() - SETTLE_MS;
+        const shown = press.seen.filter((s) => s.t <= cutoff).pop();
+        if (shown && press.seen[press.seen.length - 1].t > cutoff) setCursor(shown.k);
+    }
+    if (press.on) finish();
+    else if (lifted) { const h = hitAt(press.x, press.y, false); if (h) { setCursor(h.u.k); refresh(); } }
+    press = null;
+};
+wrap.addEventListener('pointerup', (e) => pressEnd(e, true));
+wrap.addEventListener('pointercancel', (e) => pressEnd(e, false));
+wrap.addEventListener('touchmove', (e) => { if (press && press.on) e.preventDefault(); }, { passive: false });
+wrap.addEventListener('contextmenu', (e) => e.preventDefault());
+wrap.addEventListener('scroll', () => { if (!press) refresh(); }, { passive: true });
+
+// C: drag the knob; the point steered is the stop's spot above it, so the thumb stays below the line
+let kdrag = null;
+knob.addEventListener('pointerdown', (e) => {
+    const el = chart.querySelector(`.u[data-k="${cursor}"]`);
+    if (!el) return;
+    e.preventDefault();
+    knob.setPointerCapture(e.pointerId);
+    const r = el.getBoundingClientRect();
+    kdrag = { id: e.pointerId, gx: e.clientX - r.left, gy: e.clientY - r.bottom, lh: r.height };
+    knob.classList.add('drag');
+});
+knob.addEventListener('pointermove', (e) => {
+    if (!kdrag || e.pointerId !== kdrag.id) return;
+    const ax = e.clientX - kdrag.gx, ay = e.clientY - kdrag.gy;
+    const h = hitAt(ax, ay - kdrag.lh / 2, true);
+    if (h) setCursor(h.u.k);
+    const c = chart.getBoundingClientRect();
+    knob.style.transform = `translate(${ax - c.left}px, ${ay - c.top}px)`;
+});
+const knobEnd = (e) => {
+    if (!kdrag || e.pointerId !== kdrag.id) return;
+    kdrag = null;
+    knob.classList.remove('drag');
+    placeKnob();
+};
+knob.addEventListener('pointerup', knobEnd);
+knob.addEventListener('pointercancel', knobEnd);
+
+// E: the scrub bar. x is the chart's own x (the ticks sit under the stops); y steps lines
+let sdrag = null;
+function stripMove(x, y) {
+    const rs = rows();
+    const ri = Math.max(0, Math.min(rs.length - 1, sdrag.ri0 + Math.round((y - sdrag.y0) / PITCH)));
+    if (ri !== sdrag.ri) { sdrag.ri = ri; rs[ri].units[0].el.scrollIntoView({ block: 'nearest' }); }
+    setCursor(pick(rows()[ri], x).k);
+    drawStrip();
+    fing.style.left = `${x - strip.getBoundingClientRect().left}px`;
+    fing.style.display = 'block';
+}
+strip.addEventListener('pointerdown', (e) => {
+    strip.setPointerCapture(e.pointerId);
+    sdrag = { id: e.pointerId, y0: e.clientY, ri0: rowIndexOfCursor(rows()), ri: -1 };
+    stripMove(e.clientX, e.clientY);
+});
+strip.addEventListener('pointermove', (e) => { if (sdrag && e.pointerId === sdrag.id) stripMove(e.clientX, e.clientY); });
+const stripEnd = (e) => { if (!sdrag || e.pointerId !== sdrag.id) return; sdrag = null; fing.style.display = 'none'; };
+strip.addEventListener('pointerup', stripEnd);
+strip.addEventListener('pointercancel', stripEnd);
+
+// ── the panel: enough of the chord sheet to place and remove ────────────
+const chordRow = (id, list) => {
+    $(id).innerHTML = list.map(([c, f]) => `<button class="ck" data-c="${esc(c)}"><b class="cg">${glyph(c)}</b><i>${esc(f)}</i></button>`).join('');
+};
+chordRow('out', OUTSIDE);
+chordRow('in', IN_KEY);
+document.querySelectorAll('.ck').forEach((b) => b.addEventListener('click', () => {
+    const c = b.dataset.c + (seven ? '7' : '');
+    const [l, i] = cursor.split(':').map(Number);
+    const u = LINES[l][i];
+    if (u.t === 'aft' && !u.chord) LINES[l].splice(i, 0, { t: 'aft', text: '   ', chord: c });
+    else u.chord = c;
+    render();
+}));
+$('seven').addEventListener('click', () => { seven = !seven; $('seven').classList.toggle('on', seven); });
+$('remove').addEventListener('click', () => {
+    const [l, i] = cursor.split(':').map(Number);
+    const u = LINES[l][i];
+    if (!u.chord) return;
+    if (u.t === 'aft') LINES[l].splice(i, 1); else u.chord = null;
+    render();
+});
+
+// ── which idea ──────────────────────────────────────────────────────────
+function choose(id) {
+    idea = id;
+    document.body.dataset.idea = id;
+    document.querySelectorAll('.ideas button').forEach((b) => b.classList.toggle('here', b.dataset.id === id));
+    $('hint').textContent = IDEAS.find((i) => i.id === id).hint;
+    const u = new URL(location.href);
+    u.searchParams.set('idea', id);
+    history.replaceState(null, '', u);
+    refresh();
+}
+$('ideas').innerHTML = IDEAS.map((i) => `<button data-id="${i.id}"><b>${i.name}</b>${i.label}</button>`).join('');
+$('ideas').addEventListener('click', (e) => { const b = e.target.closest('button'); if (b) choose(b.dataset.id); });
+render();
+choose(idea);
+})();
+</script>
+</body>
+</html>

@@ -493,6 +493,24 @@ export const STATES = [
         proposed: true,
         workshop: ['D7'],
     },
+
+    // Proposed (fix-it list tier E): docs/plans/2026-10-26-lyrics-editor-redesign.md
+    {
+        id: 'proposed-e3-chord-menu',
+        group: 'Proposed: editor',
+        title: 'E3 Chord menu: three layouts, a minor key, chord glyphs',
+        url: 'proposed/e3-chord-menu.html',
+        proposed: true,
+        workshop: ['E3'],
+    },
+    {
+        id: 'proposed-e4-thumb-aim',
+        group: 'Proposed: editor',
+        title: 'E4 Thumb aim: five ways to place a chord without hiding the lyric',
+        url: 'proposed/e4-thumb-aim.html',
+        proposed: true,
+        workshop: ['E4'],
+    },
 ];
 
 export const VIEWPORTS = {

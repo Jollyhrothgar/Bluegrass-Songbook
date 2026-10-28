@@ -5,6 +5,7 @@
 // modules really are absent from a cold load, and every route/action that
 // needs one still works once it is fetched — the behaviour must be identical,
 // only later.
+import { setLead } from './helpers/lead-editor.js';
 import { test, expect } from '@playwright/test';
 import { gotoSearch, searchAndOpen, searchFor, navClick, openPill } from './helpers.js';
 import { mockSupabase } from './helpers/supabase-mock.js';
@@ -23,7 +24,7 @@ function trackModules(page) {
     const seen = [];
     page.on('request', (req) => {
         const { pathname } = new URL(req.url());
-        if (pathname.startsWith('/js/')) seen.push(pathname);
+        if (pathname.startsWith('/js/') || pathname.startsWith('/vendor/')) seen.push(pathname);
     });
     return {
         all: () => [...seen],
@@ -101,15 +102,17 @@ test.describe('tablature', () => {
 });
 
 test.describe('song editor', () => {
-    test('#add loads the editor and wires the textarea and preview', async ({ page }) => {
+    test('#add loads the editor and mounts the CodeMirror editor', async ({ page }) => {
         const mods = trackModules(page);
         await page.goto('/#add');
         await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
-        await expect(page.locator('.ve-preview-empty')).toBeVisible({ timeout: 15000 });
+        await expect(page.locator('#editor-lead .cm-content')).toBeVisible({ timeout: 15000 });
         expect(mods.matching(/\/js\/editor\.js/)).toHaveLength(1);
 
-        await page.locator('#editor-content').fill('{title: Lazy}\n[G]Hello [C]world');
-        await expect(page.locator('.ve-chip').first()).toHaveText('G', { timeout: 5000 });
+        await setLead(page, '{title: Lazy}\n[G]Hello [C]world');
+        await expect(page.locator('#editor-lead .cl-chord').first()).toHaveText('G', { timeout: 5000 });
+        // CodeMirror is vendored and only reached through the editor
+        expect(mods.matching(/\/vendor\/codemirror\.js/)).toHaveLength(1);
     });
 
     test('the Edit pill on a song page fills the editor from that song', async ({ page }) => {

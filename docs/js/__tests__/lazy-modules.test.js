@@ -64,7 +64,7 @@ describe('boot graph (static imports from main.js)', () => {
     const MUST_BE_LAZY = [
         // the song editor and everything only it uses
         'editor.js', 'smart-paste.js', 'dedup-check.js',
-        'visual-editor/preview.js', 'visual-editor/model.js', 'chord-explorer/theory.js',
+        'lead-editor/index.js', 'lead-editor/cm-editor.js', 'visual-editor/model.js',
         // the tab editor's engine, and the tab drawing/playback modules
         'otf-editor/editor.js', 'otf-editor/state.js', 'otf-editor/facade.js',
         'otf-editor/cursor.js', 'otf-editor/actions.js', 'otf-editor/work-edit.js',

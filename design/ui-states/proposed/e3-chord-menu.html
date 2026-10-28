@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proposed E3: Chord menu options</title>
+<link rel="stylesheet" href="mock.css">
+<style>
+/* ── chord glyphs: display only, the ChordPro file stays ASCII ───────── */
+.cg { white-space: nowrap; }
+.cg sup {
+    font-size: 0.66em; vertical-align: 0; position: relative; top: -0.55em;
+    margin-left: 0.03em; letter-spacing: -0.01em;
+}
+.cg .bass { font-size: 0.85em; }
+/* the system fallback for ♯/♭ has a wide right bearing: pull the next glyph in */
+.acc { letter-spacing: -0.14em; padding-right: 0.06em; }
+.acc.flat { margin-left: -0.1em; }
+.cg .faint { opacity: 0.35; }
+
+/* ── the options laid out side by side ───────────────────────────────── */
+.intro { max-width: 760px; color: var(--text-secondary); font-size: 15px; margin: 8px 0 0; }
+.intro b { color: var(--text); font-weight: 600; }
+.toggles { display: flex; gap: 20px; margin: 16px 0 8px; font-size: 14px; }
+.toggles label { display: flex; gap: 6px; align-items: center; cursor: pointer; }
+main.page.wide { max-width: 1340px; }
+.opts { display: flex; flex-wrap: wrap; gap: 32px; margin-top: 18px; align-items: flex-start; }
+.opt { width: 390px; }
+.opt h2 { margin: 0 0 4px; }
+.opt .why { font-size: 14px; color: var(--text-secondary); margin: 0 0 6px; min-height: 60px; }
+.opt .taps { font-size: 13px; margin: 0 0 12px; line-height: 1.5; }
+.opt .taps b { font-weight: 600; }
+
+/* ── a phone ─────────────────────────────────────────────────────────── */
+.phone {
+    width: 390px; height: 720px; border-radius: 32px; overflow: hidden;
+    box-shadow: 0 0 0 1px var(--border), 0 10px 30px rgba(0, 0, 0, 0.12);
+    display: flex; flex-direction: column; background: var(--bg);
+}
+.phone .bar {
+    display: flex; align-items: center; gap: 10px; height: 46px; padding: 0 16px;
+    border-bottom: 1px solid var(--border); font-size: 14px; color: var(--text-secondary);
+}
+.phone .bar b { color: var(--text); font-weight: 600; }
+.phone .bar .modes { margin-left: auto; }
+.song { flex: 1; overflow: hidden; padding: 14px 18px; }
+.song .t { font: 700 20px/1.2 -apple-system, sans-serif; margin: 0 0 2px; }
+
+/* the book's own look: monospace body, inline-block segments, chord on top */
+.book { font-family: 'SF Mono', 'Fira Code', Consolas, monospace; font-size: 15px; margin-top: 10px; }
+.book .label { font: italic 13px/1 -apple-system, sans-serif; color: var(--text-secondary); margin: 10px 0 8px; }
+.book .ln { line-height: 1.4; margin-bottom: 4px; }
+.book .seg { display: inline-block; vertical-align: bottom; white-space: pre; position: relative; }
+.book .ch { display: block; color: var(--chord); font-weight: 600; line-height: 1.3; min-height: 1.3em; }
+.book .seg.box { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.book .seg.box .ch { background: var(--accent); color: var(--on-accent); border-radius: 3px; padding: 0 3px; margin: 0 -3px; }
+
+/* ── the chord sheet (sits where the keyboard would) ─────────────────── */
+.sheet-c {
+    border-top: 1px solid var(--border); background: var(--bg-secondary);
+    padding: 6px 10px 14px; box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.06);
+}
+.sheet-c .grab { width: 36px; height: 4px; border-radius: 2px; background: var(--border); margin: 0 auto 6px; }
+.sheet-c .hd { display: flex; align-items: center; gap: 12px; font-size: 14px; padding: 2px 4px 8px; }
+.sheet-c .hd .key { font-weight: 600; color: var(--text); }
+.sheet-c .hd .key::after { content: ' \25BE'; color: var(--text-secondary); font-size: 11px; }
+.sheet-c .hd .sp { flex: 1; }
+.sheet-c .hd .kb {
+    font-weight: 600; padding: 3px 9px; border-radius: 6px; box-shadow: inset 0 0 0 1px var(--border);
+}
+.sheet-c .hd .done { color: var(--accent); font-weight: 600; }
+
+.grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; margin-bottom: 4px; }
+.cell {
+    position: relative; min-height: 48px; border-radius: 8px; background: var(--bg);
+    box-shadow: inset 0 0 0 1px var(--border);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px;
+}
+.cell .c { font: 600 17px/1.1 -apple-system, sans-serif; color: var(--text); }
+.cell .n { font: 11px/1 -apple-system, sans-serif; color: var(--text-secondary); }
+.cell.empty { background: none; box-shadow: inset 0 0 0 1px var(--border); opacity: 0.35; }
+.cell.sel { box-shadow: inset 0 0 0 2px var(--accent); background: color-mix(in srgb, var(--accent) 10%, var(--bg)); }
+.cell.used::after {
+    content: ''; position: absolute; top: 5px; right: 5px; width: 5px; height: 5px; border-radius: 50%;
+    background: var(--chord);
+}
+.cell.quiet .c { color: var(--text-secondary); font-weight: 400; }
+.cell .pct {
+    display: none; position: absolute; bottom: 2px; right: 4px;
+    font: 600 9px/1 -apple-system, sans-serif; color: var(--success);
+}
+body.show-usage .cell .pct { display: block; }
+body.show-usage .cell .n { visibility: hidden; }
+
+/* decorations: one scrolling row; root faint, the decoration strong */
+.decos { display: flex; gap: 4px; overflow-x: auto; margin-bottom: 8px; padding-bottom: 2px;
+    mask-image: linear-gradient(to right, #000 85%, transparent); }
+.deco {
+    flex: none; min-width: 50px; min-height: 44px; border-radius: 8px; padding: 0 6px;
+    background: var(--bg); box-shadow: inset 0 0 0 1px var(--border);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px;
+}
+.deco .c { font: 600 16px/1.1 -apple-system, sans-serif; }
+.deco .n { font: 10px/1 -apple-system, sans-serif; color: var(--text-secondary); }
+.deco.on { box-shadow: inset 0 0 0 2px var(--accent); }
+
+.foot { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-secondary); padding: 4px 2px 0; }
+.foot .chip { padding: 3px 9px; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--border); color: var(--text); font-weight: 600; }
+.foot .sp { flex: 1; }
+.foot .more { color: var(--accent); font-weight: 600; }
+
+/* ── glyph table ─────────────────────────────────────────────────────── */
+table.gly { border-collapse: collapse; margin-top: 8px; font-size: 15px; }
+table.gly th { text-align: left; font-size: 12px; font-weight: 600; color: var(--text-secondary); padding: 6px 18px 6px 0; border-bottom: 1px solid var(--border); }
+table.gly td { padding: 7px 18px 7px 0; border-bottom: 1px solid var(--border); }
+table.gly td.ascii { font-family: var(--mono); color: var(--text-secondary); }
+table.gly td.big { font: 600 20px/1 -apple-system, sans-serif; color: var(--chord); }
+.qs { max-width: 760px; font-size: 15px; }
+.qs li { margin-bottom: 6px; }
+
+@media (max-width: 720px) {
+    .opt, .phone { width: 100%; }
+    .phone { border-radius: 0; }
+}
+</style>
+</head>
+<body data-proposal="E3 Chord menu">
+<main class="page wide">
+    <h1>Chord menu: three options</h1>
+    <p class="intro">
+        The box is on <b>“me”</b> and you just tapped <b>D</b>, so D sits in the box and the
+        decorations row offers D’s other flavours. The sheet takes the keyboard’s place: you
+        switch between the letter keyboard and this “chord keyboard” the way you switch to emoji.
+        Bottom row: the key’s own chords. Middle row(s): chords from outside the key, each in its
+        scale degree’s column. Top row: decorations, which change the chord in the box.
+        A dot marks a chord the song already uses.
+    </p>
+    <div class="toggles">
+        <label><input type="checkbox" id="usage"> Show how many songs use each chord (1,811 major-key songs in the curated index)</label>
+    </div>
+
+    <div class="opts">
+        <section class="opt">
+            <h2>A · As sketched</h2>
+            <p class="why">Middle row holds the non-diatonic <i>triads</i>: II, III, iv, VI, ♭VII. Every 7th is a decoration.</p>
+            <p class="taps"><b>One tap:</b> G C D Em Am F A&nbsp;&nbsp;<b>Two taps:</b> D⁷ G⁷ A⁷ E⁷ B⁷</p>
+            <div class="phone" data-option="A"></div>
+        </section>
+        <section class="opt">
+            <h2>B · Dominant row</h2>
+            <p class="why">Middle row holds each degree’s <i>7th</i>, the way bluegrass uses them (II⁷ is three times as common as II; V⁷ twice as common as V).</p>
+            <p class="taps"><b>One tap:</b> G C D D⁷ Em Am G⁷ A⁷ E⁷ F&nbsp;&nbsp;<b>Two taps:</b> A (A⁷, then plain)</p>
+            <div class="phone" data-option="B"></div>
+        </section>
+        <section class="opt">
+            <h2>C · Both</h2>
+            <p class="why">Two middle rows: triads, then 7ths above them. Everything common is one tap; the sheet is one row taller, so the song above it is one line shorter.</p>
+            <p class="taps"><b>One tap:</b> all of the above&nbsp;&nbsp;<b>Cost:</b> 4 rows instead of 3</p>
+            <div class="phone" data-option="C"></div>
+        </section>
+    </div>
+
+    <h2 style="margin-top:48px">The same idea in a minor key (option B, Em)</h2>
+    <p class="intro">Only 64 curated songs are in minor, but their profile differs: VII (73% of them), III (64%) and a <b>major</b> V (56%) are staples, so V⁷ sits above v and IV above iv.</p>
+    <div class="opts">
+        <section class="opt"><div class="phone" data-option="minor"></div></section>
+    </div>
+
+    <h2 style="margin-top:48px">Chord glyphs</h2>
+    <p class="intro">Display only: the ChordPro file keeps <code>F#m7b5</code>. If the menu draws glyphs, the
+        song page (and so the editor) should too, or the menu and the chart disagree.</p>
+    <table class="gly" id="glyphs">
+        <thead><tr><th>In the file</th><th>Drawn</th><th>Jazz-style alternative</th><th>Name</th></tr></thead>
+        <tbody></tbody>
+    </table>
+
+    <h2 style="margin-top:48px">To decide</h2>
+    <ol class="qs">
+        <li>A, B or C?</li>
+        <li>vii° (F♯° in G) is in 0% of songs. Keep it in the bottom row (drawn quieter, as here), or drop it?</li>
+        <li>Decorations: show the result with a faint root (D<sup>7</sup>, as here) or the bare mark (<sup>7</sup>)?</li>
+        <li>Glyphs: spelled out (maj⁷, m⁷) or jazz style (Δ⁷, −⁷)?</li>
+    </ol>
+</main>
+
+<script src="mock.js"></script>
+<script>
+(() => {
+const esc = (s) => String(s).replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+const accidental = (a) => a === '#' ? '<span class="acc">♯</span>' : a === 'b' ? '<span class="acc flat">♭</span>' : '';
+
+// ASCII chord symbol → glyph HTML. jazz: Δ for maj7, − for minor.
+function chordHtml(sym, { faintRoot = false, jazz = false } = {}) {
+    const m = sym.match(/^([A-G])([#b]?)([^/]*)(?:\/([A-G])([#b]?))?$/);
+    if (!m) return esc(sym);
+    let [, r, a, q, br, ba] = m;
+    let root = r + accidental(a);
+    let minor = '';
+    if (/^m(?!aj)/.test(q)) { minor = jazz ? '−' : 'm'; q = q.slice(1); }
+    let sup = q;
+    let base = '';
+    if (minor && sup === '7b5') { minor = ''; sup = 'ø7'; }
+    if (sup === 'dim') sup = '°';
+    else if (sup === 'dim7') sup = '°7';
+    else if (sup === 'aug') { sup = ''; base = '+'; }
+    else if (jazz && sup.startsWith('maj')) sup = 'Δ' + sup.slice(3);
+    sup = sup.replace(/b(\d)/g, `${accidental('b')}$1`).replace(/#(\d)/g, `${accidental('#')}$1`);
+    const rootHtml = faintRoot ? `<span class="faint">${root}</span>` : root;
+    return `<span class="cg">${rootHtml}${minor}${base}${sup ? `<sup>${sup}</sup>` : ''}` +
+        `${br ? `<span class="bass">/${br}${accidental(ba)}</span>` : ''}</span>`;
+}
+
+// Roman numeral → glyph HTML ('bVII' → ♭VII, 'V7' → V⁷, 'vii°' → vii°)
+function numeralHtml(n) {
+    const m = n.match(/^([b#]?)([ivIV]+)(°?)(7?)$/);
+    if (!m) return esc(n);
+    const [, a, rn, dim, sev] = m;
+    return `${accidental(a)}${rn}${dim || sev ? `<sup>${dim}${sev}</sup>` : ''}`;
+}
+
+// [chord, numeral, % of songs] — null is an empty slot in that column
+const G = {
+    diatonic: [['G', 'I', 96], ['Am', 'ii', 10], ['Bm', 'iii', 5], ['C', 'IV', 91], ['D', 'V', 34], ['Em', 'vi', 17], ['F#dim', 'vii°', 0]],
+    triads:   [null, ['A', 'II', 5], ['B', 'III', 1], ['Cm', 'iv', 1], null, ['E', 'VI', 2], ['F', 'bVII', 7]],
+    sevenths: [['G7', 'I7', 16], ['A7', 'II7', 16], ['B7', 'III7', 3], null, ['D7', 'V7', 67], ['E7', 'VI7', 2], null],
+    dominant: [['G7', 'I7', 16], ['A7', 'II7', 16], ['B7', 'III7', 3], ['Cm', 'iv', 1], ['D7', 'V7', 67], ['E7', 'VI7', 2], ['F', 'bVII', 7]],
+};
+const EM = {
+    diatonic: [['Em', 'i', 98], ['F#dim', 'ii°', 2], ['G', 'III', 64], ['Am', 'iv', 52], ['Bm', 'v', 30], ['C', 'VI', 55], ['D', 'VII', 73]],
+    dominant: [['E', 'I', 9], null, null, ['A', 'IV', 22], ['B7', 'V7', 56], null, null],
+};
+const QUIET = new Set(['vii°', 'ii°']);
+
+function gridHtml(row, { selected, used }) {
+    return `<div class="grid">${row.map((cell) => {
+        if (!cell) return `<div class="cell empty"></div>`;
+        const [c, n, pct] = cell;
+        const cls = ['cell'];
+        if (c === selected) cls.push('sel');
+        if (used.has(c)) cls.push('used');
+        if (QUIET.has(n)) cls.push('quiet');
+        return `<div class="${cls.join(' ')}"><span class="c">${chordHtml(c)}</span>` +
+            `<span class="n">${numeralHtml(n)}</span><span class="pct">${pct}%</span></div>`;
+    }).join('')}</div>`;
+}
+
+const DECOS = [['', 'plain'], ['m', 'minor'], ['7', 'dom 7'], ['maj7', 'maj 7'], ['m7', 'min 7'],
+    ['6', 'sixth'], ['sus2', 'sus 2'], ['sus4', 'sus 4'], ['dim', 'dim'], ['m7b5', 'half-dim'],
+    ['aug', 'aug'], ['add9', 'add 9'], ['9', 'ninth']];
+function decosHtml(root, active) {
+    return `<div class="decos">${DECOS.map(([q, name]) =>
+        `<div class="deco${q === active ? ' on' : ''}"><span class="c">${chordHtml(root + q, { faintRoot: true })}</span>` +
+        `<span class="n">${name}</span></div>`).join('')}` +
+        `<div class="deco"><span class="c"><span class="cg"><span class="faint">${root}</span>/…</span></span><span class="n">bass</span></div></div>`;
+}
+
+// one line of the book: [chord]lyric segments; '{box}' marks the boxed segment
+function bookLine(src) {
+    const parts = src.split(/(\[[^\]]+\])/).filter(Boolean);
+    const segs = [];
+    let chord = null;
+    for (const p of parts) {
+        if (p.startsWith('[')) { if (chord !== null) segs.push([chord, '']); chord = p.slice(1, -1); }
+        else { segs.push([chord ?? '', p]); chord = null; }
+    }
+    if (chord !== null) segs.push([chord, '']);
+    return `<div class="ln">${segs.map(([c, t]) => {
+        const box = t.includes('{box}');
+        const text = t.replace('{box}', '');
+        return `<span class="seg${box ? ' box' : ''}"><span class="ch">${c ? chordHtml(c) : '&nbsp;'}</span>${esc(text) || '&nbsp;'}</span>`;
+    }).join('')}</div>`;
+}
+
+const SONGS = {
+    major: {
+        title: 'Amazing Grace', key: 'Key of G',
+        lines: ['# Verse 1', 'A[G]mazing [G7]grace how [C]sweet the [G]sound', 'That [G]saved a wretch like [D]{box}me',
+            'I [G]once was [G7]lost but [C]now am [G]found', 'Was [G]blind but [D]now I [G]see',
+            '# Verse 2', '’Twas grace that taught my heart to fear'],
+        used: new Set(['G', 'G7', 'C', 'D']), selected: 'D', root: 'D', active: '', also: 'D/F#',
+    },
+    minor: {
+        title: 'Wayfaring Stranger', key: 'Key of Em',
+        lines: ['# Verse 1', 'I am a [Em]poor wayfaring [Am]stranger', 'Travelling [Em]through this world of [B7]{box}woe',
+            'Yet there’s no [Em]sickness, toil or [Am]danger', 'In that bright [Em]land to [B7]which I [Em]go'],
+        used: new Set(['Em', 'Am', 'B7']), selected: 'B7', root: 'B', active: '7', also: null,
+    },
+};
+
+function phoneHtml(option) {
+    const song = option === 'minor' ? SONGS.minor : SONGS.major;
+    const set = option === 'minor' ? EM : G;
+    const ctx = { selected: song.selected, used: song.used };
+    let rows;
+    if (option === 'A') rows = [set.triads, set.diatonic];
+    else if (option === 'C') rows = [set.sevenths, set.triads, set.diatonic];
+    else rows = [set.dominant, set.diatonic];
+    const book = song.lines.map(l => l.startsWith('#')
+        ? `<div class="label">${esc(l.slice(1).trim())}</div>` : bookLine(l)).join('');
+    return `
+        <div class="bar"><span>&larr;</span><b>Edit song</b><span class="modes seg-ctl"><span class="on">Visual</span><span>ChordPro</span></span></div>
+        <div class="song"><p class="t">${song.title}</p><div class="book">${book}</div></div>
+        <div class="sheet-c">
+            <div class="grab"></div>
+            <div class="hd"><span class="key">${song.key}</span><span class="sp"></span><span class="kb">Aa</span><span class="done">Done</span></div>
+            ${decosHtml(song.root, song.active)}
+            ${rows.map(r => gridHtml(r, ctx)).join('')}
+            <div class="foot">${song.also ? `<span>Also in this song:</span><span class="chip">${chordHtml(song.also)}</span>` : ''}<span class="sp"></span><span class="more">More chords ▸</span></div>
+        </div>`;
+}
+
+for (const el of document.querySelectorAll('.phone')) el.innerHTML = phoneHtml(el.dataset.option);
+
+const GLYPHS = [['G7', 'dominant 7th'], ['Am7', 'minor 7th'], ['Cmaj7', 'major 7th'], ['D6', 'sixth'],
+    ['Gsus4', 'suspended 4th'], ['Asus2', 'suspended 2nd'], ['F#dim', 'diminished'], ['F#m7b5', 'half-diminished'],
+    ['Caug', 'augmented'], ['Cadd9', 'added 9th'], ['Bb', 'B flat'], ['Eb7', 'E flat 7th'], ['D/F#', 'D over F sharp bass']];
+document.querySelector('#glyphs tbody').innerHTML = GLYPHS.map(([s, name]) =>
+    `<tr><td class="ascii">${esc(s)}</td><td class="big">${chordHtml(s)}</td><td class="big">${chordHtml(s, { jazz: true })}</td><td>${name}</td></tr>`).join('');
+
+// this is an editor page: light up Add Song, not the mock band's default
+for (const n of document.querySelectorAll('.top .nav')) n.classList.toggle('here', n.textContent === 'Add Song');
+
+document.getElementById('usage').addEventListener('change', (e) => document.body.classList.toggle('show-usage', e.target.checked));
+})();
+</script>
+</body>
+</html>

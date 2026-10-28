@@ -3,6 +3,7 @@
 // editor) or the #add deep link (straight to the editor).
 import { test, expect } from '@playwright/test';
 import { gotoSearch, navClick } from './helpers.js';
+import { CM, setLead, leadText, leadReady } from './helpers/lead-editor.js';
 
 // Open a fresh new-song editor via the top-band flow
 async function openAddSongEditor(page) {
@@ -43,20 +44,20 @@ test.describe('Editor Access', () => {
 
         await page.locator('.picker-card[data-type="chordpro"]').click();
 
-        // Editor: textarea + live preview
+        // Editor: one empty chart, Lyrics mode by default
         await expect(page.locator('#editor-panel')).toBeVisible();
-        await expect(page.locator('#editor-content')).toBeVisible();
-        await expect(page.locator('#editor-content')).toHaveValue('');
-        await expect(page.locator('.ve-preview-empty')).toBeVisible();
+        await leadReady(page);
+        expect(await leadText(page)).toBe('');
         await expect(page.locator('#add-song-picker')).toBeHidden();
+        await expect(page.locator('#editor-mode-lyrics')).toHaveAttribute('aria-pressed', 'true');
 
-        // guidance lives in the textarea placeholder
-        expect(await page.locator('#editor-content').getAttribute('placeholder'))
-            .toMatch(/Paste or type your song/);
+        // guidance lives in the empty chart's hint, with a Paste button
+        await expect(page.locator('#editor-lead .cl-empty')).toContainText('Type or paste your song');
+        await expect(page.locator('#editor-lead .le-paste-btn')).toBeVisible();
 
-        // quiet escape hatch in the preview empty state (photo upload is gone)
+        // quiet escape hatch in the empty state (photo upload is gone)
         await expect(page.locator('.ve-link-upload')).toHaveCount(0);
-        await expect(page.locator('.ve-link-request')).toBeVisible();
+        await expect(page.locator('.le-link-request')).toBeVisible();
 
         // metadata is deferred to a compact line
         await expect(page.locator('#metadata-summary')).toContainText('Untitled song');
@@ -68,7 +69,7 @@ test.describe('Editor Access', () => {
 
         await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
         await expect(page.locator('#add-song-picker')).toBeHidden();
-        await expect(page.locator('#editor-content')).toBeVisible();
+        await leadReady(page);
     });
 
     test('Tablature card asks which song the tab is for', async ({ page }) => {
@@ -110,7 +111,7 @@ test.describe('Editor Access', () => {
 
         await page.locator('#metadata-summary').click();
         await page.locator('#editor-title').fill('Gate Test Song');
-        await page.locator('#editor-content').fill('[G]Some words to sing');
+        await setLead(page, '[G]Some words to sing');
 
         await page.locator('#editor-submit').click();
 
@@ -119,7 +120,7 @@ test.describe('Editor Access', () => {
         await expect(page.locator('#editor-status')).toHaveClass(/error/);
         // "your draft stays here" has to be true, not just claimed
         await expect(page.locator('#editor-panel')).toBeVisible();
-        await expect(page.locator('#editor-content')).toHaveValue('[G]Some words to sing');
+        expect(await leadText(page)).toBe('[G]Some words to sing');
         await expect(page.locator('#editor-title')).toHaveValue('Gate Test Song');
     });
 
@@ -131,7 +132,7 @@ test.describe('Editor Access', () => {
         await page.locator('#metadata-summary').click();
         await expect(page.locator('#editor-title')).toBeVisible();
         await expect(page.locator('#editor-artist')).toBeVisible();
-        await expect(page.locator('#editor-content')).toBeVisible();
+        await leadReady(page);
     });
 
     test('edit button on song view opens editor with song data', async ({ page }) => {
@@ -161,11 +162,11 @@ test.describe('Editor State Reset', () => {
 
         await openAddSongEditor(page);
 
-        // Fresh new-song editor: empty panes, no stale content
-        await expect(page.locator('.ve-preview-empty')).toBeVisible();
+        // Fresh new-song editor: empty chart, no stale content
+        await expect(page.locator('#editor-lead .cl-empty')).toBeVisible();
         await expect(page.locator('#metadata-summary')).toContainText('Untitled song');
         await expect(page.locator('#editor-title')).toHaveValue('');
-        await expect(page.locator('#editor-content')).toHaveValue('');
+        expect(await leadText(page)).toBe('');
         await expect(page.locator('#editor-submit')).toHaveText('Submit to Songbook');
     });
 
@@ -174,7 +175,7 @@ test.describe('Editor State Reset', () => {
         await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
 
         // Type a draft into the textarea
-        await page.locator('#editor-content').fill('[G]Working on my draft');
+        await setLead(page, '[G]Working on my draft');
 
         // Leave for home (the unsaved-draft prompt asks first; leaving keeps
         // the draft in this tab), then come back via Add Song
@@ -184,7 +185,7 @@ test.describe('Editor State Reset', () => {
 
         await openAddSongEditor(page);
 
-        await expect(page.locator('#editor-content')).toHaveValue('[G]Working on my draft');
+        expect(await leadText(page)).toBe('[G]Working on my draft');
     });
 
     test('editing song B after abandoning an edit of song A shows B', async ({ page }) => {
@@ -200,7 +201,7 @@ test.describe('Editor State Reset', () => {
         await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
         await expect(page.locator('#editor-title')).toHaveValue(/Cold/i);
         await expect(page.locator('#editor-title')).not.toHaveValue(/Cheat/i);
-        await expect(page.locator('#editor-content')).not.toHaveValue('');
+        expect(await leadText(page)).not.toBe('');
     });
 });
 
@@ -226,36 +227,30 @@ test.describe('Editor Content Input', () => {
     });
 
     test('can enter song content', async ({ page }) => {
-        const contentArea = page.locator('#editor-content');
         const testContent = '[G]Amazing [C]Grace how [G]sweet the sound';
-        await contentArea.fill(testContent);
-        await expect(contentArea).toHaveValue(testContent);
+        await setLead(page, testContent);
+        expect(await leadText(page)).toBe(testContent);
     });
 });
 
-test.describe('Editor Preview', () => {
+test.describe('Editor Lyrics mode', () => {
     test.beforeEach(async ({ page }) => {
         await page.goto('/#add');
         await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
     });
 
-    test('preview updates when content changes', async ({ page }) => {
-        const contentArea = page.locator('#editor-content');
-        const previewArea = page.locator('#editor-preview-container');
-
-        // Enter ChordPro content (preview re-renders ~200ms after typing)
-        await contentArea.fill('[G]Test [C]line with [D]chords');
-
-        // Interactive preview shows the rendered lyrics
-        await expect(previewArea).toContainText('Test');
+    test('the chart draws what was typed, with chords as the book draws them', async ({ page }) => {
+        await setLead(page, '[G]Test [C]line with [D]chords');
+        await expect(page.locator('#editor-lead .cl-line .cl-segment')).toHaveCount(3);
+        await expect(page.locator('#editor-lead .cl-chord').first()).toHaveText('G');
+        // the [G] brackets are not on screen
+        await expect(page.locator(CM)).not.toContainText('[G]');
     });
 
-    test('chords render as interactive chips in the preview', async ({ page }) => {
-        const contentArea = page.locator('#editor-content');
-        await contentArea.fill('[G]Amazing [C]Grace');
-
-        await expect(page.locator('#editor-preview-container .ve-chip')).toHaveCount(2);
-        await expect(page.locator('#editor-preview-container .ve-chip').first()).toHaveText('G');
+    test('chords render as the book\'s chord labels', async ({ page }) => {
+        await setLead(page, '[G]Amazing [C]Grace');
+        await expect(page.locator('#editor-lead .cl-chord')).toHaveCount(2);
+        await expect(page.locator('#editor-lead .cl-chord').nth(1)).toHaveText('C');
     });
 });
 
@@ -264,19 +259,24 @@ test.describe('ChordPro Conversion', () => {
         await page.goto('/#add');
         await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
 
-        const contentArea = page.locator('#editor-content');
-
         // Simulate chord-above-lyrics format (typical from guitar sites)
         const chordAboveLyrics = `G       C       G
 Amazing grace how sweet the sound
 D       G
 That saved a wretch like me`;
 
-        await contentArea.fill(chordAboveLyrics);
-        await page.waitForTimeout(500);
-
-        const content = await contentArea.inputValue();
-        expect(content.length).toBeGreaterThan(0);
+        // a real paste: Lyrics mode runs the smart-paste converter on it
+        await page.locator(CM).click();
+        await page.evaluate(async (text) => {
+            const dt = new DataTransfer();
+            dt.setData('text/plain', text);
+            document.querySelector('#editor-lead .cm-content').dispatchEvent(
+                new ClipboardEvent('paste', { clipboardData: dt, bubbles: true, cancelable: true }));
+        }, chordAboveLyrics);
+        await expect(page.locator('#editor-lead .cl-chord').first()).toBeVisible();
+        const content = await leadText(page);
+        expect(content).toContain('[G]Amazing');
+        expect(content).toContain('[D]');
     });
 });
 
@@ -332,8 +332,7 @@ test.describe('Editor Copy Function', () => {
         await page.goto('/#add');
         await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
 
-        const contentArea = page.locator('#editor-content');
-        await contentArea.fill('[G]Test song content');
+        await setLead(page, '[G]Test song content');
 
         await page.locator('#editor-copy').click();
 
@@ -347,8 +346,7 @@ test.describe('Editor Nashville Mode', () => {
         await page.goto('/#add');
         await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
 
-        const contentArea = page.locator('#editor-content');
-        await contentArea.fill('{key: G}\n[G]Test [C]line [D]here');
+        await setLead(page, '{key: G}\n[G]Test [C]line [D]here');
         await page.waitForTimeout(300);
 
         const toggle = page.locator('#editor-nashville');
@@ -356,8 +354,9 @@ test.describe('Editor Nashville Mode', () => {
         await toggle.click();
         await page.waitForTimeout(300);
 
-        // Preview chips show Nashville numbers (I, IV, V)
-        await expect(page.locator('#editor-preview-container .ve-chip').first()).toHaveText(/I|IV|V/);
+        // Chord labels show Nashville numbers (I, IV, V); the text keeps its chords
+        await expect(page.locator('#editor-lead .cl-chord').first()).toHaveText(/^(I|IV|V)$/);
+        expect(await leadText(page)).toContain('[G]Test');
     });
 });
 
@@ -367,7 +366,7 @@ test.describe('Editor Validation', () => {
         await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
 
         // Enter content but no title
-        await page.locator('#editor-content').fill('[G]Some content here');
+        await setLead(page, '[G]Some content here');
 
         const submitBtn = page.locator('#editor-submit');
         await expect(submitBtn).toBeVisible();
