@@ -84,6 +84,10 @@ than trusting the ranking.
   `user_lists`, `user_list_items`, `user_favorites`, `analytics_events`.
   Every query pages through `fetch_all` — PostgREST caps a request at 1,000
   rows, and `visitors` was ~39k before the G13 cleanup (~4k after)
+- **Mike's own traffic**: open `https://bluegrassbook.com/?internal=1` once per
+  browser to stop it counting; add the visitor id the toast shows to
+  `INTERNAL_VISITORS` in the dashboard's setup cell to drop its history too.
+  Per browser: clearing site data unmarks it
 - **WAU caveat**: `analytics_events` has only an anonymous `visitor_id`, so
   "signed-in" weekly activity is inferred from contributor tables (votes,
   tags, lists, favorites) — a floor, not a split of one total. Events are
