@@ -115,7 +115,7 @@ test.describe('Lyrics mode: sections', () => {
         await page.mouse.up();
         const bar = page.locator('.le-selbar');
         await expect(bar).toBeVisible();
-        await expect(bar.locator('button')).toHaveText(['Verse', 'Chorus', 'Bridge', 'Intro', 'Outro', 'Tag', 'Other…']);
+        await expect(bar.locator('button')).toHaveText(['Verse', 'Chorus', 'Bridge', 'Intro', 'Outro', 'Tag', 'Other…', 'Note']);
         await bar.locator('[data-wrap="chorus"]').click();
         const text = await leadText(page);
         expect(text).toContain('{start_of_chorus: Chorus}\nLine one\nLine two\n{end_of_chorus}');
