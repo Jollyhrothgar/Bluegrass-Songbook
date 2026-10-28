@@ -1164,7 +1164,16 @@ export function mountLeadEditor({ host, hooks = {} }) {
     window.addEventListener('scroll', () => { if (!sel.classList.contains('hidden')) updateSelectionBar(); }, { passive: true });
     window.addEventListener('resize', () => { if (menu.isOpen) padForSheet(); });
 
-    function closeLabelMenu() { labelMenu?.remove(); labelMenu = null; }
+    let labelAnchor = null;
+    function closeLabelMenu() { labelMenu?.remove(); labelMenu = null; labelAnchor = null; }
+    /**
+     * Re-place an open label menu when the visible screen changes size. On a phone the keyboard goes away right after the
+     * label is tapped (the tap leaves the text), so a menu measured at the tap was sized to the space ABOVE the keyboard and
+     * stayed that small: "Remove label" cut in half and "Delete section" out of sight (2026-10-28, iPhone).
+     */
+    const onViewportForLabelMenu = () => { if (labelMenu && labelAnchor?.isConnected) placeLabelMenu(labelMenu, labelAnchor); };
+    window.visualViewport?.addEventListener('resize', onViewportForLabelMenu);
+    window.addEventListener('resize', onViewportForLabelMenu);
     function applyText(next) {
         if (next == null) return;
         const text = editor.getText();
@@ -1179,6 +1188,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
      */
     function placeLabelMenu(menuEl, anchorEl) {
         const GAP = 6;
+        menuEl.style.maxHeight = '';            // measure the menu's own height, not the limit an earlier placement set
         const w = menuEl.offsetWidth;
         const h = menuEl.offsetHeight;
         let { top, bottom } = visibleArea();
@@ -1246,6 +1256,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
         document.body.appendChild(menuEl);
         placeLabelMenu(menuEl, anchorEl);
         labelMenu = menuEl;
+        labelAnchor = anchorEl;
         setTimeout(() => {
             const off = (ev) => { if (!menuEl.contains(ev.target)) { closeLabelMenu(); document.removeEventListener('pointerdown', off, true); } };
             document.addEventListener('pointerdown', off, true);
@@ -1291,7 +1302,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
             end() { presenting = false; updateSelectionBar(); },
         },
         focus: () => view.focus(),
-        destroy() { fontDownBtn?.removeEventListener('click', onFontDown); fontUpBtn?.removeEventListener('click', onFontUp); document.removeEventListener('keydown', onDocKey, true); resetGestures(); window.removeEventListener('pointermove', onPressMove); window.removeEventListener('pointerup', endPress); window.removeEventListener('pointercancel', endPress); window.removeEventListener('lostpointercapture', onLostCapture, true); window.removeEventListener('blur', resetGestures); document.removeEventListener('visibilitychange', onVisibility); window.removeEventListener('scroll', onScrollRing); window.visualViewport?.removeEventListener('resize', onViewportForBar); window.visualViewport?.removeEventListener('scroll', onViewportForBar); ring.remove(); loupe.destroy(); menu.destroy(); menuResizeObserver?.disconnect(); sel.remove(); emptyHint.remove(); closeLabelMenu(); editor.destroy(); },
+        destroy() { fontDownBtn?.removeEventListener('click', onFontDown); fontUpBtn?.removeEventListener('click', onFontUp); document.removeEventListener('keydown', onDocKey, true); resetGestures(); window.removeEventListener('pointermove', onPressMove); window.removeEventListener('pointerup', endPress); window.removeEventListener('pointercancel', endPress); window.removeEventListener('lostpointercapture', onLostCapture, true); window.removeEventListener('blur', resetGestures); document.removeEventListener('visibilitychange', onVisibility); window.removeEventListener('scroll', onScrollRing); window.visualViewport?.removeEventListener('resize', onViewportForBar); window.visualViewport?.removeEventListener('scroll', onViewportForBar); window.visualViewport?.removeEventListener('resize', onViewportForLabelMenu); window.removeEventListener('resize', onViewportForLabelMenu); ring.remove(); loupe.destroy(); menu.destroy(); menuResizeObserver?.disconnect(); sel.remove(); emptyHint.remove(); closeLabelMenu(); editor.destroy(); },
     };
     host.__lead = api;   // test hook (e2e reads the CodeMirror view through it)
     return api;
