@@ -1,0 +1,14 @@
+{
+  "worktree": {
+    "setup": "./scripts/bootstrap"
+  },
+  "scripts": {
+    "web": {
+      "type": "service",
+      "command": "./scripts/server \"$PASEO_PORT\" --exact"
+    },
+    "test": {
+      "command": "npm test && uv run pytest -q"
+    }
+  }
+}

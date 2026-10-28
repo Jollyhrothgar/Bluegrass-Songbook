@@ -1,48 +1,40 @@
 # Bluegrass Songbook
 
-A curated, searchable bluegrass songbook (~2,400 songs in the search index),
-backed by a 19,000+ work archive. Archived works are not deleted — they still
-resolve by direct URL and can be restored to search.
+A songbook for bluegrass jams at [bluegrassbook.com](https://bluegrassbook.com).
+Search shows a few thousand songs from the bluegrass canon. Another 16,000+
+are archived in what the site calls the dungeon: they keep their URLs, and
+the "Include the dungeon" checkbox next to the search results searches them
+too.
 
-**Live site**: [bluegrassbook.com](https://bluegrassbook.com)
+## What it does
 
-Counts move. To check them yourself after `./scripts/bootstrap`:
-`ls works | wc -l`, `wc -l < docs/data/index.jsonl`, `wc -l < docs/data/archive.jsonl`.
+- **Search** by title, artist, writer or lyrics, plus chord and progression
+  search in Nashville numbers (`chord:VII`, `prog:I-IV-V`) and tags
+  (`tag:Gospel`).
+- **Song pages** at `/songs/{song}/`, with each version of a song at
+  `/songs/{song}/{version}/`. Every page can transpose, switch display modes,
+  and export.
+- **Credits you can trust.** The writer is the credit. "Recorded by" lists only
+  recordings MusicBrainz confirms, each linked to a YouTube search.
+- **Practice:** Strum Machine backing tracks where one exists.
+- **Tablature:** banjo, fiddle, guitar, mandolin and dobro tabs imported from
+  TablEdit (`.tef`) files, with playback, a track mixer, and an in-browser tab
+  editor.
+- **Lyrics & chords editor** with Lyrics, Chords and ChordPro modes.
+- **Lists** you can sync across devices with a Google sign-in, share, print,
+  and co-own with other people.
+- **Contributing:** signed-in users add and correct songs and tabs in the app.
+  Anyone can report a problem with a song, no account needed.
+- **Works offline** once loaded (service worker), with dark and light themes.
+- A **feature tour** for first-time visitors.
 
-## Features
+## Songs
 
-- **19,000+ works** in ChordPro format (~2,400 surfaced in search)
-- **Keyword search** - title, artist, lyrics
-- **Chord search** - find songs by Nashville numbers (`chord:VII`)
-- **Progression search** - find songs by chord patterns (`prog:I-IV-V`)
-- **Key detection** - automatic with transposition
-- **User accounts** - Google sign-in via Supabase
-- **Song lists** - create and manage multiple lists (synced to cloud)
-- **Multiple versions** - support for alternate arrangements with voting
-- **Favorites** - save songs locally or sync with account
-- **Song editor** - create and submit new songs
-- **Dark/light theme**
-
-## Quick Start
-
-```bash
-# Clone and setup
-git clone https://github.com/Jollyhrothgar/Bluegrass-Songbook.git
-cd Bluegrass-Songbook
-./scripts/bootstrap
-
-# Start local server
-./scripts/server
-# Visit http://localhost:8080
-```
-
-## Using the Songs
-
-Songs are in `works/{work-slug}/lead-sheet.pro` as ChordPro files:
+Each song is a directory in `works/`: a `work.yaml` with its metadata, plus
+one or more parts, usually a ChordPro lead sheet:
 
 ```chordpro
 {meta: title Your Cheatin Heart}
-{meta: artist Hank Williams}
 {meta: composer Hank Williams}
 
 {start_of_verse: Verse 1}
@@ -51,68 +43,28 @@ You'll cry and [C]cry and try to [G7]sleep
 {end_of_verse}
 ```
 
-These files work with ChordPro apps like OnSong, SongbookPro, MobileSheets, etc.
+These files open in ChordPro apps such as OnSong, SongbookPro and
+MobileSheets. The song lyrics and chords belong to their songwriters and
+publishers (see [License](#license)).
 
 ## Contributing
 
-### Submit a Song
+- **Add or correct a song:** sign in on the site and use **Add Song** or
+  **Edit**. Your change is live within seconds, then a GitHub Actions
+  workflow commits it to this repository's `works/` directory.
+- **Report a problem with a song:** use **🚩 Report issue** on its page.
+- **Code:** open a pull request against `main`. To work on one:
 
-1. Sign in, then use the **Add Song** feature in the web UI
-2. Click **Submit to Songbook**
+  ```bash
+  ./scripts/bootstrap   # install Python (uv) and JS (npm) deps, build the index
+  ./scripts/server      # serve docs/ at http://localhost:8080
+  ```
 
-Submissions no longer travel as GitHub issues. The submission is written
-straight to the `pending_songs` table (live on the site within seconds) and is
-then committed into `works/` by the `Process Pending Submission` workflow.
-
-### Report Issues
-
-Use the **🚩 Report issue** action on any song page, or open an issue on GitHub.
-Reports need no account; they open a `song-flag` issue.
-
-### Development
-
-See [CLAUDE.md](CLAUDE.md) for architecture and development workflows.
-
-```bash
-./scripts/server                    # Frontend at :8080 (auto-increments to 8090 if busy)
-./scripts/utility help              # List every utility subcommand
-./scripts/bootstrap --quick         # Rebuild the search index from works/
-uv run pytest                       # Run Python tests
-npm test                            # Run frontend (vitest) tests
-```
-
-`./scripts/utility add-song FILE.pro` adds a local chart to the corpus: it
-creates `works/{slug}/` through `works_writer` (the one writer of `works/`),
-taking title/artist/composer/key from the file's own `{meta: ...}` directives,
-then rebuilds the index. It refuses rather than overwrite an existing work —
-pass `--on-collision suffix` if a second arrangement really is intended.
-(Until 2026-08-19 it copied the file into `songs/manual/parsed/`, which no
-build has ever read, and reported success.)
-
-## Project Structure
-
-```
-├── works/                          # PRIMARY: Song collection (19,000+ works)
-│   └── {work-slug}/
-│       ├── work.yaml               # Metadata: title, artist, tags, parts
-│       └── lead-sheet.pro          # ChordPro content
-├── docs/                           # Frontend (GitHub Pages)
-│   ├── js/                         # ES modules
-│   │   ├── main.js                 # Entry point, initialization, routing
-│   │   ├── search-core.js          # Search logic
-│   │   ├── work-view.js            # THE unified song page (openWork)
-│   │   ├── song-view.js            # Lead-sheet helpers, ABC, list nav
-│   │   └── supabase-auth.js        # Auth & cloud sync
-│   └── data/index.jsonl            # Search index (generated; not in git)
-├── sources/                        # Original song sources (used for migration)
-│   ├── classic-country/            # ~17,000 parsed songs
-│   └── manual/                     # User-contributed songs
-├── supabase/                       # Backend (Supabase)
-│   ├── migrations/                 # Database migrations
-│   └── functions/                  # Edge functions
-├── scripts/                        # CLI tools
-└── ROADMAP.md                      # Product vision
-```
+  Test commands and project conventions are in [CLAUDE.md](CLAUDE.md). The
+  backlog is
+  [`docs/plans/2026-09-30-fix-it-list.md`](docs/plans/2026-09-30-fix-it-list.md).
+- **Security problems:** report them privately, as [SECURITY.md](SECURITY.md)
+  describes.
 
 ## License
 

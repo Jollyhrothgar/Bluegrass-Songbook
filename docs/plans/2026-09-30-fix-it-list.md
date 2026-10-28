@@ -71,7 +71,7 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | C1 | List store rework | L | — | not started |
 | C2 | Song index freshness | M | — | not started |
 | D1–D7 | Library building blocks | L | `feature/ui-state-inventory` (design) | list, song-in-a-list, library and stage-sheet designs approved on the canvas (2026-10-02); playlist mode (D6) still to draw; build blocked on C1 |
-| E1–E6 | Editors | M–L each | — | not started, except E3's copy/paste of whole sections: fixed 2026-10-27 with G14 (`feature/feature-tour`) |
+| E1–E6 | Editors | M–L each | — | not started, except E3's copy/paste of whole sections: fixed with G14 (#312, 2026-10-28) |
 | F1–F6 | Visual design | M–L | — | not started |
 | F7 | Tab view rework (Mike wants to lead this) | L | — | not started |
 | F8 | List view rework + a way to read notes (Mike wants to lead this) | L | `feature/ui-state-inventory` (design) | design approved on the canvas (2026-10-02); build after C1 |
@@ -92,8 +92,9 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | G11 | Google's SEO starter guide: no page linked to any song page (Search Console: "Referring page: None detected", "Discovered – currently not indexed"); the homepage and three other pages had no description; dev pages were indexable | S | `feature/seo-starter-guide` | done (2026-10-27): generated A–Z page at `/songs/` linking every song, linked from the homepage; titles + descriptions on the four listed pages; `noindex` on `editor.html`, `editor-demo.html`, `tab-test.html` |
 | G12 | What can't visitors find? Zero-result searches were logged but only readable as a raw list in the dashboard | S | `feature/log-failed-search-journeys` | done (2026-10-27): `./scripts/utility search-gaps` stitches search journeys and sorts each failed search against the local index (missing / dungeon / missing take / misspelled / artist / filters), printing the add-placeholder / unprune command; `search` gains `scope`, result clicks `from_list`, not-found song pages log `song_not_found`. `search_index.py` brought in line with F9 |
 | G13 | Home page "visitors" counter was mostly our own test runs: 37k of 40.6k visitors were one-shot E2E/bot arrivals in bursts of 70–170/min that line up with E2E sessions (Jan, Jul–Oct) | S | `bug/telemetry-prod-only` | done — #307 (2026-10-27): `log_visit` + `log_events` only on bluegrassbook.com and never under automation (`docs/js/telemetry.js`); every E2E spec imports `test` from `e2e/fixtures.js` (Supabase mock per context, `assertClean()` after; 35 of 40 specs used to hit production; `tests/test_e2e_specs_use_fixtures.py`); `*.supabase.co` unresolvable under Playwright. Production cleaned the same night: 37,016 one-shot visitors in 61 burst hours (13,233 + 23,783) deleted and `visitor_stats` reduced to match (home page 46,158 views · 40,634 visitors → 9,645 · 4,097); backups in `~/workspace/bluegrassbook.com/backups/visitor-cleanup-*.json`. Two hours kept as possibly real (2026-01-02 07:00, 2026-02-08 06:00 UTC: no dev activity). Open: worktrees still on pre-#307 code keep adding bursts when they run E2E (468 at 2026-10-28 05:00 UTC) — rebase them, then re-run the same rule. No foreign keys or triggers reference `visitors` (live schema dump), so deleting rows touches nothing else |
-| G14 | Visitors from Google can't tell what the book does beyond the page they landed on: nothing points at lists, adding or editing songs, or tab playback and editing | M | `feature/feature-tour` | built (2026-10-27): a glowing ✨ Tour button for first-time visitors (gone once opened; then ⋯ ▸ Take the tour) starts a nine-step walk over the real controls (Key, Lists, Edit; a song played into the real lyrics & chords editor — typed in, sorted into sections, chorded — using the 1907 public-domain "Will the Circle Be Unbroken"; tab Play, tab Edit, then the page outlined as a drop zone for your own `.tef` files: open, edit in the browser, submit to the book). Cards are framed in the accent colour, labelled "Tour", point at their control and animate in; `?tour` links start it, `?tour=reset` brings the glow back; once seen it leads the ⋯ menu. No backdrop; the reader's own song when they're on one, else Old Home Place / Foggy Mountain Breakdown's banjo tab; Done goes back. `docs/js/tour.js`; `tour_*` analytics events |
+| G14 | Visitors from Google can't tell what the book does beyond the page they landed on: nothing points at lists, adding or editing songs, or tab playback and editing | M | `feature/feature-tour` | done — #312 (2026-10-28): a glowing ✨ Tour button for first-time visitors (gone once opened; then ⋯ ▸ Take the tour) starts a nine-step walk over the real controls (Key, Lists, Edit; a song played into the real lyrics & chords editor — typed in, sorted into sections, chorded — using the 1907 public-domain "Will the Circle Be Unbroken"; tab Play, tab Edit, then the page outlined as a drop zone for your own `.tef` files: open, edit in the browser, submit to the book). Cards are framed in the accent colour, labelled "Tour", point at their control and animate in; `?tour` links start it, `?tour=reset` brings the glow back; once seen it leads the ⋯ menu. No backdrop; the reader's own song when they're on one, else Old Home Place / Foggy Mountain Breakdown's banjo tab; Done goes back. `docs/js/tour.js`; `tour_*` analytics events |
 | G15 | Your own tab files have no private round trip: open (no Open dialog; drag-drop or the installed app's file handler only — the one 📂 Import .tef button is behind sign-in in Add Song ▸ Tablature, so a signed-out phone cannot open a file at all), work on it (autosaved to a local draft, ⋯ ▸ Drafts — this part exists), save it (⬇ Download writes `.otf.json`; nothing writes `.tef` back). Submitting to the book is the only end anyone finds, which risks filling the index with personal files, and storing people's files is its own worry | M–L | — | open question (Mike, 2026-10-27): no design yet. Found while checking the G14 tour's `.tef` card, whose copy currently ends at Submit |
+| G16 | Agent docs outgrew their use: the root `CLAUDE.md` was 601 lines (Anthropic's guidance is under 200 per file), half of it architecture an agent reads from the code; every new paseo worktree started with no deps and no index; the `add-issue` skill didn't know this backlog, and `github-project` said to squash-merge | S | `docs/refresh-agent-docs-paseo-workflow` | in review: `paseo.json` (setup runs `./scripts/bootstrap`, ~25 s; `web` service on its own port; `test` script); root `CLAUDE.md` cut to commands, the worktree → PR → merge loop, rules and gotchas; works and generated-data detail moved to path-scoped `.claude/rules/`; README, ROADMAP, `add-issue`, `github-project` refreshed. Follow-ups below |
 
 ### How it ships
 
@@ -848,7 +849,7 @@ them (`main` missed 3).
 
 **Oracle check, 2026-10-17.** Eight recovered tabs were exported to MusicXML
 by driving TablEdit's menus with System Events (Accessibility granted to the
-terminal; recipe in `SESSION-HANDOFF.md` §5) and added to
+terminal; recipe in `docs/plans/archive/2026-07-otf-session-handoff.md` §5) and added to
 `spike/oracle_manifest.json`: 27391, 25151, 11775, 27161, 26030 and 3419
 VERIFIED; 19150 and 11721 DIVERGED on the follow-ups below. Re-running the
 batch also showed 14690's old VERIFIED verdict was stale.
@@ -1425,3 +1426,72 @@ Hangout). Seen while building the A–Z page: "A Hundred Years From Now" by
 Flatt & Scruggs is three separate songs (`a-hundred-years-from-now`, `-2`,
 `-3`, same first line), not versions — three near-duplicate pages to Google.
 Tests: `tests/test_song_pages.py`.
+
+### G16 — Agent docs and the paseo worktree loop · S
+
+2026-10-28. Checked against Anthropic's current guidance for agent docs
+(https://code.claude.com/docs/en/memory and
+https://code.claude.com/docs/en/best-practices): keep each `CLAUDE.md` under
+about 200 lines; write down only what an agent can't learn from the code;
+put rules for one part of the tree in path-scoped `.claude/rules/` and
+procedures in skills; drop IMPORTANT and capitals, which current models
+over-apply; make any rule that has no exceptions a hook or a test.
+
+Done on `docs/refresh-agent-docs-paseo-workflow`:
+
+- `paseo.json`: new worktrees run `./scripts/bootstrap` (about 25 s with warm
+  caches: `.venv`, `node_modules`, Supabase link, index and song pages). A
+  `web` service serves the worktree on its own port with a paseo proxy URL; a
+  `test` script runs Vitest and pytest. Paseo reads the file from `main`, so
+  it takes effect once this merges.
+- Root `CLAUDE.md` 601 → about 150 lines: commands, the worktree → PR → merge
+  loop, rules, gotchas, and where to read more. The architecture tour and
+  feature history are gone (the code and README cover them). The works
+  schema and the generated-data tiers moved to `.claude/rules/works.md` and
+  `.claude/rules/generated-data.md`, which load only when an agent touches
+  those files. Its part-type recount command matched only indented lines and
+  reported 462 lead sheets and no tabs; the moved copy is fixed.
+- `add-issue`: searches the fix-it list as well as GitHub, links fix-it IDs
+  both ways, keeps off the labels the site's 🚩 Report issue flow sets
+  (`song-flag` plus a sub-type such as `bug-report`), adds a `P0`–`P3`
+  priority label only when Mike gives one, and uses `argument-hint` (the
+  `arguments` field it had declares named parameters).
+  `github-project`: merge with `--merge`, not `--squash`; the copied
+  workflow table (already missing `schema-check.yml`) replaced by the command
+  that lists them.
+- README rewritten for readers, and ROADMAP points at this file.
+  `SESSION-HANDOFF.md` and `TEF-LOOP-FEASIBILITY.md` moved from the root to
+  `docs/plans/archive/`.
+- `.mcp.json`: the Chrome DevTools servers looked for `npx` only in an nvm
+  Node that no longer exists, so they failed to start. Homebrew's bin now
+  comes first in their PATH.
+
+Follow-ups:
+
+- **Nested `CLAUDE.md` files are still 2–8× the guidance.** Line counts on
+  2026-10-28: `docs/js` 1,670; `scripts/lib` 1,162; `supabase` 772;
+  `docs/js/otf-editor` 714; `sources/banjo-hangout` 529;
+  `docs/js/lead-editor` 410; `docs/js/renderers` 328; `e2e` 264;
+  `scripts/lib/tagging` 216. Each loads only when an agent works in its
+  directory, but then stays in context for the rest of the session. Cut each
+  to what the code can't say (decisions, gotchas, commands), one directory per
+  PR. `/doctor prompt-audit <path>` lists stale references and contradictions
+  to start from.
+- **The issue tracker has drifted.** 72 issues were open on 2026-10-28, 21 of
+  them with no milestone. A quick audit (greps and git history, not
+  reproductions) found these done or obsolete: #9, #10, #30, #43, #61, #75,
+  #94, #115, #119, #123, #124, #150, #169, #243. These need a check before
+  closing: #32, #36, #76, #125, #146, #164, #165, #176, #184, #236. #210 and
+  #211 are app bugs that came in through 🚩 Report issue (their Song ID
+  field reads `app`, meaning the report is about the app, not a song) and
+  should be relabelled `bug`. The GitHub milestone "Contribution pipeline"
+  has no open issues left (18 closed) and could be closed. Nothing has been
+  closed yet; Mike decides.
+- **E2E can't run in two worktrees at once.** It binds port 8137 exactly, so
+  the second run fails until it is given `PW_PORT`. If that gets in the way,
+  paseo can assign each worktree a port.
+- **`APP_SPEC.md`** at the root is a full app spec with January numbers
+  (18,300+ songs). Only A10 above cites it. Update it, archive it, or keep it
+  as is: Mike's call.
+- The container repo (`Bluegrass-Songbook-workspace`: its `CLAUDE.md` and
+  `WORKTREES.md`) still describes only the manual `.bare` worktree flow.

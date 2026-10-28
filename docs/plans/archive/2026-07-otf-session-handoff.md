@@ -1,5 +1,10 @@
 # Session Handoff — TEF↔OTF Fidelity Loop
 
+> **Archived 2026-10-28.** A July 2026 handoff for the OTF editor work, moved
+> here from the repo root. Its resume prompt names worktrees and sandbox
+> workarounds that no longer exist: do not follow it. Kept for the TablEdit
+> oracle recipe (§5) and the history.
+
 ## RESUME PROMPT (paste into a new session)
 
 ```
