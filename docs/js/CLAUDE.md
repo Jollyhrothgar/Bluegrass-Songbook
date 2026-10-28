@@ -263,6 +263,15 @@ dimension (removed 2026-07-31 at Mike's direction). `status:`/`has:` and
 all negations except `-tag:` were removed at the same time; typing any of
 them degrades to plain text.
 
+**Search scope**: the canon by default. The Bluegrass Dungeon (`#dungeon`,
+`dungeonMode`) searches the archive only. The "Include the dungeon" checkbox
+(`#include-dungeon`, state.js `includeDungeon`, localStorage
+`songbook-include-dungeon`, off by default) searches both: archived rows get
+a `Dungeon` badge and rank below canon rows of equal relevance (relevance
+tiers still come first), and `main.js applySearchScope()` loads the archive
+when the search view needs it. `searchableSongs()` is the one place that
+decides. The box is hidden inside the dungeon and on lists.
+
 **Negative filter** (`-tag:` is the only negation)
 ```
 tag:bluegrass -tag:instrumental    # Bluegrass but not instrumentals

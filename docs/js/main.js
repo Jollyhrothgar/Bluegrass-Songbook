@@ -34,7 +34,8 @@ import {
     setCorpusLoadFailed,
     // Reactive state system
     subscribe, setCurrentView, currentView,
-    dungeonMode, setDungeonMode
+    dungeonMode, setDungeonMode,
+    includeDungeon, setIncludeDungeon
 } from './state.js';
 import { initTagDropdown, syncTagCheckboxes } from './tags.js';
 import {
@@ -616,6 +617,11 @@ function initViewSubscription() {
         // states below them). Leaving is the case with no other owner, and
         // that is the case this keeps.
         if (view !== 'song') teardownTablatureView();
+
+        // Searching with the dungeon included needs the archive in.
+        if (view === 'search' && includeDungeon && !window.isArchiveLoaded()) {
+            applySearchScope();
+        }
 
         // Chrome auto-hide only lives on the song page
         setChromeAutoHide(view === 'song');
@@ -1490,6 +1496,29 @@ async function enterDungeon(query = '', { fromHistory = false, replace = false }
     // the review queue for the destructive asks hangs here too. It renders
     // itself away for anyone who is neither trusted nor admin.
     showReviewQueue();
+}
+
+/**
+ * Re-run the search on screen under the current scope. With "Include the
+ * dungeon" on, the archive is loaded first (on demand, once) and the results
+ * re-run when it lands. Only for the search view itself: a list, favorites
+ * or the dungeon keep their own scope.
+ */
+async function applySearchScope() {
+    const searching = () => currentView === 'search' && !dungeonMode && !getViewingListId();
+    if (!searching()) return;
+    const rerun = () => {
+        const query = searchInput?.value || '';
+        if (query.trim()) search(query);
+        else showPopularSongs();
+    };
+    rerun();
+    if (includeDungeon && !window.isArchiveLoaded()) {
+        // Canon results show meanwhile; say the rest is coming
+        if (searchStats) searchStats.textContent += ' (opening the dungeon…)';
+        await ensureArchiveLoaded();
+        if (includeDungeon && searching()) rerun();
+    }
 }
 
 function navigateTo(mode) {
@@ -3174,6 +3203,15 @@ function init() {
         searchStats,
         resultsDiv
     });
+
+    const includeDungeonBox = document.getElementById('include-dungeon');
+    if (includeDungeonBox) {
+        includeDungeonBox.checked = includeDungeon;
+        includeDungeonBox.addEventListener('change', () => {
+            setIncludeDungeon(includeDungeonBox.checked);
+            applySearchScope();
+        });
+    }
 
     // Update URL when user types in search (debounced, uses replaceState to avoid history spam)
     let urlUpdateTimeout = null;

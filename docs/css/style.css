@@ -459,6 +459,38 @@ h1 {
     flex: 1;
 }
 
+/* "Include the dungeon" (search scope preference). Not offered inside the
+   dungeon (already archive-only) or on a list (lists aren't searches). */
+.include-dungeon {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+body.dungeon-mode .include-dungeon,
+.search-container:has(~ #list-header:not(.hidden)) .include-dungeon {
+    display: none;
+}
+
+/* An archived song in canon-scope results (search with the dungeon
+   included, or a list) */
+.dungeon-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 500;
+    padding: 0.1rem 0.35rem;
+    border-radius: 3px;
+    background: rgba(185, 28, 28, 0.1);
+    color: #b91c1c;
+    border: 1px solid rgba(185, 28, 28, 0.3);
+    margin-left: 0.4rem;
+    vertical-align: middle;
+}
+
 .list-action-btn {
     padding: 0.4rem 0.75rem;
     font-size: 0.8rem;
