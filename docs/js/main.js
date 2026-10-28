@@ -56,7 +56,7 @@ import { parseTabRoute, partInstrumentFor } from './otf-editor/create-tab-entry.
 import { initSearch, search, showPopularSongs, renderResults, parseSearchQuery, searchableSongs } from './search-core.js';
 import { escapeHtml, escapeAttr, requireLogin, parseItemRef, buildDeleteCandidates, downloadFile } from './utils.js';
 import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
-import { initShell, setTopBar, setBottomBand, setOverflowBase, setChromeAutoHide, pill, setBanner } from './shell.js';
+import { initShell, setTopBar, setBottomBand, setOverflowBase, setOverflowLead, setChromeAutoHide, pill, setBanner, setTourInvite } from './shell.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink } from './analytics.js';
 import { telemetryEnabled } from './telemetry.js';
 import { initFlags, openFeedbackModal } from './flags.js';
@@ -3050,6 +3050,95 @@ function generatePrintListPage(listName, songs, prefs, contents = []) {
 }
 
 // ============================================
+// FEATURE TOUR (G14)
+// ============================================
+
+// A first-time visitor gets a glowing Tour button in the band. Once they have
+// opened it, it leaves the band and the tour lives in the ⋯ menu instead.
+const TOUR_SEEN_KEY = 'songbook-tour-seen';
+
+function tourSeen() {
+    // Storage that throws (some private modes) could never remember the
+    // visit, so the band button would glow forever: offer the ⋯ entry only.
+    try { return localStorage.getItem(TOUR_SEEN_KEY) === '1'; } catch { return true; }
+}
+
+let tourOpen = false;   // set before the import, so a double click starts one tour
+
+async function startFeatureTour(source) {
+    if (tourOpen) return;
+    // The tour visits other pages; leaving an editor mid-edit is not its call.
+    if (currentView === 'add-song' || parseTabRoute(window.location.hash)) {
+        showToast('Finish or close the editor first: the tour visits other pages.');
+        return;
+    }
+    try { localStorage.setItem(TOUR_SEEN_KEY, '1'); } catch { /* see tourSeen */ }
+    setTourInvite(false);
+    seedOverflowBase();
+
+    tourOpen = true;
+    let tour;
+    try {
+        tour = await import('./tour.js');
+    } catch (err) {
+        tourOpen = false;
+        lazyLoadFailed('the tour', err);
+        return;
+    }
+    track('tour_start', { source });
+    tour.startTour({
+        // The editor demo plays a song into the real editor; the tour resets
+        // it whenever it leaves, so nothing is kept and nothing asks to be saved.
+        editor: {
+            lead: async () => {
+                try { return (await loadEditor()).getLeadEditor(); } catch { return null; }
+            },
+            reset: () => editorModule?.resetEditorForNewSong(),
+        },
+        onStep: (step, index) => track('tour_step', { step: step.id, index }),
+        onClose: ({ finished, step, index }) => {
+            tourOpen = false;
+            track('tour_end', { finished, step: step?.id ?? null, index });
+            showToast('Take the tour again any time from the ⋯ menu.');
+        },
+    });
+}
+
+/**
+ * `?tour` in a link starts the tour (a "new here? take the tour" link to
+ * share); `?tour=reset` forgets this browser has seen it, so the glowing
+ * button is back (testing on a phone, where there is no console). Either
+ * way the parameter leaves the URL at once, so a reload or a copied link
+ * does not repeat it.
+ */
+async function handleTourLink() {
+    const params = new URLSearchParams(window.location.search);
+    if (!params.has('tour')) return;
+    const value = params.get('tour');
+    params.delete('tour');
+    const query = params.toString();
+    history.replaceState(history.state, '',
+        `${window.location.pathname}${query ? `?${query}` : ''}${window.location.hash}`);
+
+    if (value === 'reset') {
+        try { localStorage.removeItem(TOUR_SEEN_KEY); } catch { /* see tourSeen */ }
+        setTourInvite(true);
+        seedOverflowBase();
+        return;
+    }
+    await bootRouted;
+    // A song path draws after routing (its chart is fetched): wait for it, so
+    // the tour runs on the reader's own song rather than the demo one.
+    const started = performance.now();
+    while (SONG_PATH.test(window.location.pathname)
+        && !document.querySelector('#key-pill, .tab-play-btn')
+        && performance.now() - started < 5000) {
+        await new Promise(resolve => setTimeout(resolve, 100));
+    }
+    startFeatureTour('link');
+}
+
+// ============================================
 // INITIALIZATION
 // ============================================
 
@@ -3060,6 +3149,10 @@ function generatePrintListPage(listName, songs, prefs, contents = []) {
  * again the moment the app is installed.
  */
 function seedOverflowBase() {
+    // First in ⋯ on every page once the band button has gone (G14).
+    setOverflowLead(tourSeen()
+        ? [{ id: 'overflow-tour', label: '✨ Take the tour', onClick: () => startFeatureTour('menu') }]
+        : []);
     setOverflowBase([
         ...(canInstall() ? [{
             label: 'Install app',
@@ -3098,8 +3191,11 @@ function init() {
         // Bug reports get a first-class top-band button (the old homepage
         // "Report Bugs" sign is gone with the banner hero)
         onReportBug: () => openFeedbackModal({ type: 'bug-report' }),
+        onTour: () => startFeatureTour('band'),
     });
     seedOverflowBase();
+    setTourInvite(!tourSeen());
+    handleTourLink();
     document.getElementById('topbar-brand')?.addEventListener('click', (e) => {
         e.preventDefault();
         setDungeonMode(false);

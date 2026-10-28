@@ -29,7 +29,7 @@ async function signInChip(page, name = 'Mike Beaumier') {
 }
 
 /** Every visible control in the band, left to right, with its box. */
-const BAND_CONTROLS = '.topbar-back, .topbar-brand, .topbar-nav-link, .topbar-action-btn, .pill, .topbar-icon-btn, #auth-section';
+const BAND_CONTROLS = '.topbar-back, .topbar-brand, .topbar-nav-link, .topbar-action-btn, .pill, .topbar-tour-btn, .topbar-icon-btn, #auth-section';
 
 async function bandGeometry(page) {
     return page.evaluate((sel) => {

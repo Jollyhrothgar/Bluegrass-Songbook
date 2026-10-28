@@ -97,6 +97,11 @@ let songViewEl = null;
 // The text adapter: every read/write of the song text goes through these two.
 // ---------------------------------------------------------------------------
 
+/** The lead-sheet editor's controller (lead-editor/index.js), or null if it could not mount. The feature tour's demo drives it. */
+export function getLeadEditor() {
+    return lead;
+}
+
 /** The ChordPro text of the song being edited. */
 export function getText() {
     return lead ? lead.getText() : (editorContentEl?.value || '');

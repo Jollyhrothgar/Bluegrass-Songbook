@@ -1141,3 +1141,99 @@ test.describe('desktop side panel: magnifier off by default, one nav row', () =>
         await expect(page.locator('.chm-strip')).toHaveCount(0);
     });
 });
+
+// Copy / cut / paste of whole sections (Mike, 2026-10-27: "when I copy /
+// paste a section, it gets copied as a verse - even if it's a chorus"). The
+// section markers are hidden widgets in Lyrics mode, so a selection of the
+// lyrics never held them. The selection here is a real mouse drag (that is
+// where the markers were lost); the clipboard is a DataTransfer handed to the
+// editor's own copy / cut / paste handlers, as the browser does, so this runs
+// the same on a CI runner with no system clipboard.
+test.describe('Lyrics mode: copy and paste of whole sections', () => {
+    const SONG = [
+        '{start_of_verse: Verse 1}', 'One two three', 'Four five six', '{end_of_verse}', '',
+        '{start_of_chorus: Chorus}', '[G]Sing it loud', 'Sing it proud', '{end_of_chorus}', '',
+    ].join('\n');
+
+    async function openSong(page) {
+        await openEditor(page);
+        await page.evaluate((t) => document.querySelector('#editor-lead').__lead.setText(t, { reset: true }), SONG);
+        await setMode(page, 'lyrics');
+    }
+
+    /** Drag from the start of the line holding `firstText` to the end of the one holding `lastText`. */
+    async function dragLines(page, firstText, lastText) {
+        const a = await page.locator('.cm-line', { hasText: firstText }).boundingBox();
+        const b = await page.locator('.cm-line', { hasText: lastText }).boundingBox();
+        await page.mouse.move(a.x + 1, a.y + a.height / 2);
+        await page.mouse.down();
+        await page.mouse.move(b.x + b.width - 2, b.y + b.height / 2, { steps: 8 });
+        await page.mouse.up();
+    }
+
+    /** Fire the browser's copy (or cut) at the editor; returns what it put on the clipboard. */
+    const clipboardEvent = (page, type) => page.locator(CM).evaluate((el, t) => {
+        const dt = new DataTransfer();
+        el.dispatchEvent(new ClipboardEvent(t, { clipboardData: dt, bubbles: true, cancelable: true }));
+        return dt.getData('text/plain');
+    }, type);
+
+    const paste = (page, text) => page.locator(CM).evaluate((el, t) => {
+        const dt = new DataTransfer();
+        dt.setData('text/plain', t);
+        el.dispatchEvent(new ClipboardEvent('paste', { clipboardData: dt, bubbles: true, cancelable: true }));
+    }, text);
+
+    /** Put the caret after `needle` (or at the end), as a click there would. */
+    const caretAfter = (page, needle = null) => page.evaluate((n) => {
+        const { view } = document.querySelector('#editor-lead').__lead.editor;
+        const text = view.state.doc.toString();
+        const pos = n == null ? text.length : text.indexOf(n) + n.length;
+        view.focus();
+        view.dispatch({ selection: { anchor: pos } });
+    }, needle);
+
+    const labels = (page) => page.locator('#editor-lead .section-label').allTextContents();
+
+    test('a copied chorus pastes back as a chorus, never as a verse', async ({ page }) => {
+        await openSong(page);
+        await dragLines(page, 'Sing it loud', 'Sing it proud');
+        const clip = await clipboardEvent(page, 'copy');
+        expect(clip).toBe('{start_of_chorus: Chorus}\n[G]Sing it loud\nSing it proud\n{end_of_chorus}');
+
+        await caretAfter(page);
+        await paste(page, clip);
+        expect(await labels(page)).toEqual(['Verse 1', 'Chorus', 'Chorus']);
+        expect((await leadText(page)).match(/\{start_of_chorus/g)).toHaveLength(2);
+    });
+
+    test('a chorus pasted into the middle of a verse lands after the verse, not inside it', async ({ page }) => {
+        await openSong(page);
+        await caretAfter(page, 'Four five');
+        await paste(page, '{start_of_chorus: Chorus}\nSing it loud\n{end_of_chorus}');
+        expect(await leadText(page)).toBe([
+            '{start_of_verse: Verse 1}', 'One two three', 'Four five six', '{end_of_verse}', '',
+            '{start_of_chorus: Chorus}', 'Sing it loud', '{end_of_chorus}', '',
+            '{start_of_chorus: Chorus}', '[G]Sing it loud', 'Sing it proud', '{end_of_chorus}', '',
+        ].join('\n'));
+    });
+
+    test('cutting a whole chorus takes its label with it, and pasting puts the chorus back', async ({ page }) => {
+        await openSong(page);
+        await dragLines(page, 'Sing it loud', 'Sing it proud');
+        const clip = await clipboardEvent(page, 'cut');
+        expect(clip).toContain('{start_of_chorus: Chorus}');
+        expect(await labels(page)).toEqual(['Verse 1']);
+        expect(await leadText(page)).not.toContain('chorus');
+
+        await caretAfter(page, 'One two');
+        await paste(page, clip);
+        expect(await labels(page)).toEqual(['Verse 1', 'Chorus']);
+    });
+
+    test('a line copied from inside a verse is still just a line', async ({ page }) => {
+        await openSong(page);
+        await dragLines(page, 'One two three', 'One two three');
+        expect(await clipboardEvent(page, 'copy')).toBe('One two three');
+    });
+});
