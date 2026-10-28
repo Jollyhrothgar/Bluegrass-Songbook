@@ -11009,6 +11009,7 @@ body.file-dragover {
     position: fixed; z-index: 62; display: flex; flex-direction: column; gap: 2px; padding: 6px; min-width: 200px;
     background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 10px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
 }
+.le-labelmenu { overflow-y: auto; overscroll-behavior: contain; }   /* max-height is set by index.js::openLabelMenu */
 .le-labelmenu button { text-align: left; }
 .le-labelmenu button.danger { color: #dc2626; }
 .le-labelmenu-types { display: flex; flex-wrap: wrap; gap: 2px; }
@@ -11119,7 +11120,10 @@ body.file-dragover {
 .cl-empty-actions { display: flex; gap: 0.75rem; align-items: center; margin-top: 0.4rem; }
 .cl-empty-actions .le-paste-btn { border: 1px solid var(--border); background: var(--bg); color: var(--text); border-radius: 8px; padding: 0.4rem 0.9rem; font: inherit; cursor: pointer; min-height: 36px; }
 .cl-empty-actions .le-link-request { color: var(--text-secondary); font-size: 0.85rem; }
-.le-toast { pointer-events: auto; z-index: 90; }
+/* bottom is set by index.js::undoToast, above the docked picker; only Undo takes taps, so the chart under the toast stays
+   tappable while it shows */
+.le-toast { pointer-events: none; z-index: 90; }
+.le-toast .le-toast-undo { pointer-events: auto; }
 
 /* ---- Chords mode: gliding the cursor, the slot after the words, chord lines ---- */
 /* what a finger can grab must not scroll the page: the boxed chord's row and the slot pill */
