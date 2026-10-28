@@ -63,19 +63,14 @@ export function menuKey(text) {
     return currentSongKey(text).key || 'G';
 }
 
-/** The text with `{key: k}` written (replacing the declaration, else a new first line). */
-export function withKey(text, k) {
-    const re = /^(\s*)\{(?:key:\s*|meta:\s*key\s+)([A-G][#b]?(?:m|min)?)\s*\}/im;
-    if (re.test(text)) return text.replace(re, (_, ws) => `${ws}{key: ${k}}`);
-    return `{key: ${k}}\n${text}`;
-}
+export { withKey } from './doc-model.js';
 
 /**
  * @param {object} o
  * @param {HTMLElement} o.host        #editor-lead (holds the workspace)
  * @param {HTMLElement[]} o.modeButtons
  * @param {HTMLElement} o.paneToggle  phone Source|Preview toggle
- * @param {object} o.hooks            { onChange(), onHistory({undo, redo}), onPaste({title, artist, converted}), getDisplay(), onKey(k) }
+ * @param {object} o.hooks            { onChange(), onHistory({undo, redo}), onPaste({title, artist, converted}), getDisplay() }
  */
 export function mountLeadEditor({ host, hooks = {} }) {
     const sideMq = window.matchMedia ? window.matchMedia(SIDE_QUERY) : { matches: false, addEventListener() {} };
@@ -291,6 +286,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
             const a = boxChord(text, box);
             return {
                 key: menuKey(text),
+                keySet: !!currentSongKey(text).key,     // false: no key yet, the rows show G's chords until one is chosen
                 used: [...new Set(extractChords(text))],
                 current: a?.chord || '',
                 moving: moving && !!a,
@@ -308,14 +304,6 @@ export function mountLeadEditor({ host, hooks = {} }) {
         onGlide: (moves, phase) => onGlide(moves, phase),
         onAddChordLine: () => addChordLine(),
         getStrip: () => stripClone(),
-        onKeyChange: (k) => {
-            // the sheet's key DECLARES `{key: k}` (the owner has not decided whether it should transpose)
-            const text = editor.getText();
-            const next = withKey(text, k);
-            editor.change({ changes: diffChange(text, next) }, { userEvent: 'input.key', scroll: false });
-            hooks.onKey?.(k);
-            refreshMenu();
-        },
     });
     document.body.appendChild(menu.el);
     let menuResizeObserver = null;

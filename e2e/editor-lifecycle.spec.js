@@ -326,7 +326,7 @@ test.describe('A5: sign-in at Submit keeps the work (tab editor)', () => {
 });
 
 test.describe('one key owner: the chord sheet, the toolbar and the submitted key', () => {
-    test('a key set in the chord sheet is the toolbar\'s key and the key that is submitted', async ({ page }) => {
+    test('the key set in the toolbar moves the song, the chord sheet shows it, and it is the key submitted', async ({ page }) => {
         const sb = await mockSupabase(page);   // signed in
         await page.goto('/#add');
         await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
@@ -337,9 +337,10 @@ test.describe('one key owner: the chord sheet, the toolbar and the submitted key
         // detected: the toolbar already says G
         await expect(page.locator('#editor-key-select')).toHaveValue('G');
         await page.locator('#editor-mode-chords').click();
-        await page.locator('.chm-menu .chm-key').selectOption('A');
+        await page.locator('#editor-key-select').selectOption('A');
         await expect(page.locator('#editor-key-select')).toHaveValue('A');
-        await expect(page.locator('.chm-menu .chm-key')).toHaveValue('A');
+        await expect(page.locator('.chm-menu .chm-key')).toHaveText('Key of A');
+        expect(await page.evaluate(() => document.querySelector('#editor-lead').__lead.getText())).toContain('[A]Out to Google and [D]back again');
         await page.locator('#editor-submit').click();
         await expect.poll(() => sb.rows('pending_songs').length, { timeout: 20000 }).toBe(1);
         expect(sb.row('pending_songs').key).toBe('A');

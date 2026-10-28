@@ -9,7 +9,7 @@
 // layout 'side'   (wide desktop): one sticky panel beside the chart, magnifier above picker.
 // ONE content layout (chord-menu-model.js). This file is only drawing and events.
 
-import { chordGlyphHtml, isValidChord, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from '../chords.js';
+import { chordGlyphHtml, isValidChord } from '../chords.js';
 import { chordMenuModel, applyBass } from './chord-menu-model.js';
 import { HOLD_MS, HOLD_SLOP_PX } from './chord-motion.js';
 
@@ -27,12 +27,11 @@ const el = (tag, cls, html) => {
 
 /**
  * @param {object} o
- * @param {() => {key:string, used:string[], current:string, moving:boolean}} o.getContext  read fresh on every update
+ * @param {() => {key:string, keySet?:boolean, used:string[], current:string, moving:boolean}} o.getContext  read fresh on every update
  * @param {(chord:string)=>void} o.onPick       a cell, a decoration, "any chord"
  * @param {()=>void} o.onRemove
  * @param {()=>void} o.onMove                    toggles carry mode
  * @param {()=>void} o.onClose
- * @param {(key:string)=>void} o.onKeyChange
  * @param {(dir:'next'|'prev'|'up'|'down')=>void} o.onStep   the arrow buttons
  * @param {() => HTMLElement|null} o.getStrip    a clone of the current line
  * @param {(d:{dx:number,dy:number,dt:number}|null, phase:'start'|'move'|'end')=>void} o.onGlide  the strip drag and the hold-to-trackpad drag: RAW pointer movement (the controller owns the glide point)
@@ -44,7 +43,7 @@ const el = (tag, cls, html) => {
  * @param {()=>void} [o.onRedo]
  * @param {() => {undo:number, redo:number}} [o.getHistory]        drives the disabled state of the two buttons
  */
-export function createChordMenu({ getContext, onPick, onRemove, onMove, onClose, onKeyChange, onStep, getStrip, onGlide, onAddChordLine, onMode, onUndo, onRedo, getHistory, getMagnifier, onMagnifier }) {
+export function createChordMenu({ getContext, onPick, onRemove, onMove, onClose, onStep, getStrip, onGlide, onAddChordLine, onMode, onUndo, onRedo, getHistory, getMagnifier, onMagnifier }) {
     const root = el('div', 'chm-menu hidden');
     root.setAttribute('role', 'dialog');
     root.setAttribute('aria-label', 'Chords');
@@ -202,14 +201,11 @@ export function createChordMenu({ getContext, onPick, onRemove, onMove, onClose,
         //   row 3: the nav row (◀ ▲ ▼ ▶ ... ↶ ↷ magnifier)
         const head = el('div', 'chm-head');
         const row1 = el('div', 'chm-row chm-row1');
-        const keySel = el('select', 'chm-key');
-        keySel.setAttribute('aria-label', 'Key');
-        for (const k of [...CHROMATIC_MAJOR_KEYS, ...CHROMATIC_MINOR_KEYS]) {
-            const o = el('option'); o.value = k; o.textContent = `Key of ${k}`;
-            if (k === model.key) o.selected = true;
-            keySel.appendChild(o);
-        }
-        keySel.addEventListener('change', () => onKeyChange(keySel.value));
+        // the song's key, shown, not chosen here: one key per song, changed in ONE place (the editor toolbar), and that
+        // moves the whole song. Any chord is still reachable (More roots, typing), so a real key change mid-song can be charted
+        const keySel = el('span', 'chm-key');
+        keySel.textContent = ctx.keySet === false ? 'Key: not set' : `Key of ${model.key}`;
+        keySel.title = 'The song\u2019s key. Change it in the toolbar: that moves every chord.';
         row1.append(keySel, el('span', 'chm-sp'));
         if (onMode) {
             const sw = el('div', 'le-modeswitch chm-modeswitch');
