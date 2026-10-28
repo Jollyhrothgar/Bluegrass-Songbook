@@ -483,7 +483,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
     function syncRing() {
         if (ring.classList.contains('dragging')) return;        // the glide overlay is drawing it
         const target = mode === 'chords' && editor.getBox()
-            ? (view.contentDOM.querySelector('.cl-gap-bar') || view.contentDOM.querySelector('.cl-box-chord .cl-chord-glyph, .cl-slot-pill')) : null;
+            ? view.contentDOM.querySelector('.cl-box-chord .cl-chord-glyph, .cl-slot-pill') : null;
         if (!target) { ring.classList.add('hidden'); return; }
         const first = ring.classList.contains('hidden');
         ring.classList.toggle('settle', !first);
