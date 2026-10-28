@@ -1008,6 +1008,24 @@ test.describe('the picker carries the mode switch and undo / redo', () => {
     });
 });
 
+test.describe('notes on a phone', () => {
+    test('the docked section bar has Note, and it turns the selected line into a note', async ({ page }) => {
+        await openEditor(page);
+        await setLead(page, 'Hello there\nInterlude\nlast line');
+        // a new song is in Lyrics already; setLead leaves the focus in the sheet, which the section bar needs
+        await page.evaluate(() => {
+            const { editor } = document.querySelector('#editor-lead').__lead;
+            const t = editor.getText();
+            editor.view.focus();
+            editor.view.dispatch({ selection: { anchor: t.indexOf('Interlude'), head: t.indexOf('Interlude') + 9 } });
+        });
+        const note = page.locator('.le-selbar [data-wrap="note"]');
+        await expect(note).toBeInViewport();
+        await note.tap();
+        expect(await leadText(page)).toContain('{comment: Interlude}');
+    });
+});
+
 test.describe('the section label menu on a phone', () => {
     // The menu (~265px) did not fit below a label in the middle of a short screen (a phone with Safari's bars or the
     // keyboard up), so it flipped above, clamped to the top of the WINDOW: under the top band, which hid the section

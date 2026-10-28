@@ -113,6 +113,10 @@ override: with it, iOS drew a second selection and handles over the native one.
   it in Lyrics mode (`LockedWidget` -> `hooks.onComment` -> `index.js::openCommentMenu`) offers **Delete note**, one
   undo step. The row's line is read with `posAtDOM` at the tap (the widget is reused when text above it moves). Tab /
   ABC / grid blocks are still never deleted from Lyrics. e2e: "a note row" (`visual-editor.spec.js`).
+- **Making and editing notes** (2026-10-28): the section bar's **Note** (after Other…) turns every lyric line the
+  selection touches into `{comment: words}` IN PLACE (`section-ops.js::noteSelection`; chords dropped, braces stripped;
+  inside a section it stays there, as the song page draws it). The note's menu has an **Edit** field + Save
+  (`setNoteText`) above Delete note. Both are one undo step. Before this a note could only be typed in ChordPro mode.
 - **Only the mode switch enters Chords** (2026-10-27): no double-click shortcut on any device; a double-click in Lyrics is the browser's word selection.
 - **Chords are greyed in Lyrics** (2026-10-27): `.le-mode-lyrics .le-cm .cl-chord-glyph` is secondary colour, opacity 0.5, default cursor; colour / opacity only, so the layout is the book's.
 - **Protected text** (2026-10-27): `protectDirectivesFilter` clips a USER delete / replace to the unprotected pieces (`doc-model.js::clipDeletion`), EXCEPT a section lying wholly inside the range: its `{start_of_*}` .. `{end_of_*}` lines go too (`freedSectionLines`), then the blank lines it leaves are tidied (no run of blank lines, none at an end the deletion reached) as one change. `{meta:}` / `{key:}` / other header directives and locked blocks (ABC / tab / grid) always stay. Partial deletes (held Backspace, all lyric lines but not the label line) keep labels. Select-all + Delete = just the metadata lines (`''` when there are none); select-all + paste puts the new text after the metadata.

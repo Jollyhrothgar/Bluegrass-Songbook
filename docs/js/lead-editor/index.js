@@ -16,7 +16,7 @@ import { createChordMenu } from './chord-menu.js';
 import { createSusMemory } from './chord-menu-model.js';
 import { chordAt, declaredKey, currentSongKey, clipDeletion } from './doc-model.js';
 import {
-    SECTION_TYPES, markSelection, renameSection, setSectionTypeText, duplicateSectionText,
+    SECTION_TYPES, markSelection, noteSelection, setNoteText, renameSection, setSectionTypeText, duplicateSectionText,
     moveSectionText, unlabelSection, deleteSectionText, diffChange,
     sectionsForClipboard, placeSectionPaste, holdsSections,
 } from './section-ops.js';
@@ -1063,6 +1063,14 @@ export function mountLeadEditor({ host, hooks = {} }) {
     other.dataset.wrap = '*';
     other.textContent = 'Other…';
     sel.appendChild(other);
+    // a NOTE, not a section: the selected lines become `{comment: ...}` rows, drawn in italics where they stand
+    const noteBtn = document.createElement('button');
+    noteBtn.type = 'button';
+    noteBtn.dataset.wrap = 'note';
+    noteBtn.className = 'le-selbar-note';
+    noteBtn.textContent = 'Note';
+    noteBtn.title = 'Make the selected lines a note (like "Interlude" or "slow down here")';
+    sel.appendChild(noteBtn);
     // keep focus (and the selection) in the editor through a press
     // (not the name field: a tap in it must place the caret, which is what raises the iOS keyboard)
     sel.addEventListener('pointerdown', (e) => { if (!e.target.closest('input')) e.preventDefault(); });
@@ -1075,6 +1083,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
             askType().then((t) => t && wrapSelection(t));
             return;
         }
+        if (type === 'note') { makeNote(); return; }
         wrapSelection(type);
     });
     document.body.appendChild(sel);
@@ -1117,6 +1126,14 @@ export function mountLeadEditor({ host, hooks = {} }) {
             sel.append(input, add);
             input.focus();
         });
+    }
+    function makeNote() {
+        const s = view.state.selection.main;
+        const text = editor.getText();
+        const res = noteSelection(text, s.from, s.to);
+        if (!res) { showToast('Select a line with words on it first.', { variant: 'warning' }); return; }
+        editor.change({ changes: diffChange(text, res.text), selection: { anchor: Math.min(res.selStart, res.text.length) } }, { userEvent: 'input.section' });
+        if (!presenting) view.focus();
     }
     function wrapSelection(type) {
         const s = view.state.selection.main;
@@ -1198,7 +1215,8 @@ export function mountLeadEditor({ host, hooks = {} }) {
         menuEl.style.top = `${Math.round(below >= h || below >= above ? r.bottom + GAP : r.top - GAP - shown)}px`;
     }
     /**
-     * The menu of a `{comment}` row ("Interlude" from a pasted chord sheet): Delete. Before 2026-10-28 such a row could
+     * The menu of a `{comment}` row (a note: "Interlude" from a pasted chord sheet, or one made with the section bar's
+     * Note): Edit its words, or Delete. Before 2026-10-28 such a row could
      * not be removed outside ChordPro mode (it is protected like a tab, and had no menu). The row's line is read from the
      * DOM at the tap (`posAtDOM`): the widget is reused when text above it moves, so its own positions go stale.
      */
@@ -1210,6 +1228,25 @@ export function mountLeadEditor({ host, hooks = {} }) {
         const menuEl = document.createElement('div');
         menuEl.className = 'le-labelmenu le-commentmenu';
         menuEl.setAttribute('role', 'menu');
+        // Edit: the note's words, in place (like a section label's Rename)
+        const edit = document.createElement('form');
+        edit.className = 'le-labelmenu-rename';
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.value = note;
+        input.setAttribute('aria-label', 'Note');
+        const ok = document.createElement('button');
+        ok.type = 'submit';
+        ok.textContent = 'Save';
+        edit.append(input, ok);
+        edit.addEventListener('submit', (e) => {
+            e.preventDefault();
+            closeLabelMenu();
+            const text = editor.getText();
+            const next = setNoteText(text, line.from, line.to, input.value);
+            if (next != null) editor.change({ changes: diffChange(text, next) }, { userEvent: 'input.section' });
+        });
+        menuEl.appendChild(edit);
         const b = document.createElement('button');
         b.type = 'button';
         b.className = 'danger';
