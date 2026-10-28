@@ -761,7 +761,7 @@ test.describe('gliding the cursor (desktop, mouse)', () => {
         await chordsOn(page, 'Amazing grace how sweet the sound that saved a wretch like me');
         const inView = async () => { await page.waitForTimeout(250); return page.evaluate(() => {
             const v = document.querySelector('.chm-strip-view').getBoundingClientRect();
-            const t = document.querySelector('.chm-strip-view .cl-gap-bar, .chm-strip-view .cl-slot-pill, .chm-strip-view .cl-box-chord .cl-chord-glyph').getBoundingClientRect();
+            const t = document.querySelector('.chm-strip-view .cl-slot-pill, .chm-strip-view .cl-box-chord .cl-chord-glyph').getBoundingClientRect();
             return t.left >= v.left && t.right <= v.right && t.width > 0;
         }); };
         expect(await inView()).toBe(true);                       // at the very start of the line
@@ -1044,14 +1044,15 @@ test.describe('where the cursor stops (desktop)', () => {
         expect(await leadText(page)).toBe('Many long years since I left my old home  now\nsecond line here');
     });
 
-    test('a gap stop shows the slim bar and no text outline; D there is written `years[D] since`', async ({ page }) => {
+    test('a gap stop is boxed like the slot after the words; D there is written `years[D] since`', async ({ page }) => {
         await openNew(page);
         await chordsOn(page, 'Many long years since home');
         const t = await leadText(page);
         await page.evaluate((p) => document.querySelector('#editor-lead').__lead.editor.setBox({ pos: p, active: true }), t.indexOf('years'));
         await page.keyboard.press('ArrowRight');
         expect(await boxStopKind(page)).toBe('gap');
-        await expect(page.locator(`${CM} .cl-gap-bar`)).toBeVisible();
+        await expect(page.locator(`${CM} .cl-slot-gap .cl-slot-text`)).toBeVisible();
+        await expect(page.locator(`${CM} .cl-slot-gap .cl-slot-pill`)).toBeVisible();
         await expect(page.locator(`${CM} .cl-box-text`)).toHaveCount(0);
         await page.locator(`${SHEET} .chm-cell[data-chord="D"]`).click();
         expect(await leadText(page)).toBe('Many long years[D] since home');

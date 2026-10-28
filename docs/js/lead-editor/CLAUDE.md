@@ -170,13 +170,18 @@ The cursor stands on STOPS, never on a letter (decided 2026-10-27; plan: "Where 
 | kind | where | cursor shape | placing D writes |
 |---|---|---|---|
 | `syllable` | a syllable start (`tokenizeLine` seams, incl. a chord already mid-word) | outline box `.cl-box-text` (the dashed pill only while there is no chord) | `[D]hollow` |
-| `gap` | ONE per whitespace run between two words, at the offset of its first space (or just after a chord already in the run) | slim bar `.cl-gap-bar` over the chord row and the lyric row; NO text outline | `years[D] since` |
+| `gap` | ONE per whitespace run between two words, at the offset of its first space (or just after a chord already in the run) | the empty slot's box, centred on the space: the dashed pill (only while the gap holds no chord; otherwise the chord's glyph is boxed) AND `.cl-slot-text` on the lyric row (`.cl-slot-gap`; absolute, takes no width). Was a 4px bar until 2026-10-27: it read as a text caret, not a place | `years[D] since` |
 | `after` | each chord already trailing the words (`after: 0`), then ONE virtual empty slot (`after: 1`, pos = line end) | the boxed chord / for the empty slot: the dashed pill AND an outline on the lyric row below it (`.cl-slot-text`, like a syllable; absolute, takes no width) | `home   [D]` |
 
 - `snapCursor(text, pos)` -> `{pos, after}` is the single normalisation step (`normalizeCursor` is its `.pos`; `fixBox` in
   `cm-editor.js` applies it to every box set and every box mapped through an edit or undo). First the one-place-per-letter
   rule (a position at or inside chord tokens moves to the end of the run), then the nearest stop on a lyric line (ties go
   earlier; at or past the last word's end = the slot after the words). Non-lyric lines only get the first rule.
+- **Hit spans** (`rowSpans` in `chords-touch.js`, used by `pickItem` and `pickStop`): a stop's span is its left edge to
+  the next stop's, but one narrower than `MIN_HIT_PX` (24) grows by up to half the shortfall on each side, taken from a
+  neighbour only while that neighbour stays at least `MIN_HIT_PX` wide. A one-space gap was ~5px wide (a tap 3px off
+  boxed the word) while the slot after the words reached the chart's edge; a narrow stop never takes from another narrow
+  one ("a" keeps its letter) and no word loses its centre. The returned `left/right` (ring, strip centring) are the span.
 - **Arrows**: ◀ ▶ (`moveCursor` kind `'stop'`) walk the stops: syllable, gap, next word ... last word, trailing chords,
   the slot, then the next line. ▲ ▼ move by line and land on the stop whose DRAWN x (`coordsAtPos`) is nearest the kept x.
   Every step ticks.
@@ -384,5 +389,5 @@ Magnifier default / nav row / zoom: `visual-editor-mobile.spec.js` "magnifier de
 ON for every other test; that describe starts clean) and a desktop test in `visual-editor.spec.js`. Syllables: `syllable-corpus.test.js`.
 
 NOT verifiable without a real phone: iOS autocorrect/dictation next to hidden
-chords in Lyrics mode, the feel of the glide tuning constants (`chord-motion.js`: gain, smoothing, hold, `HYSTERESIS`), whether the gap bar is easy to land on with a thumb, whether the 2-space `AFTER_GAP` reads right on a real phone, whether a carried chord's own width shifts the letters under a still finger enough to flicker, haptics, whether a held touch on the sheet beats iOS's own long-press behaviour, whether iOS really
+chords in Lyrics mode, the feel of the glide tuning constants (`chord-motion.js`: gain, smoothing, hold, `HYSTERESIS`), whether `MIN_HIT_PX` makes a gap easy to land on with a thumb, whether the 2-space `AFTER_GAP` reads right on a real phone, whether a carried chord's own width shifts the letters under a still finger enough to flicker, haptics, whether a held touch on the sheet beats iOS's own long-press behaviour, whether iOS really
 shows no callout/handles on the locked chart, and how the fixed top bar and the bottom picker behave with iOS Safari's collapsing address bar and the visual viewport (`position: fixed` offsets and `window.innerHeight` can differ there).
