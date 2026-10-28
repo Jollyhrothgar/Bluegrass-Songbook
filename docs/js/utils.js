@@ -78,8 +78,18 @@ export function escapeRegex(string) {
     return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
+/** "1 song", "2,468 songs". */
+export function songCount(n) {
+    return `${n.toLocaleString()} ${n === 1 ? 'song' : 'songs'}`;
+}
+
 /**
  * Highlight search term matches in text
+ *
+ * Marks words, not fragments: a term marks a word it starts, and a term of
+ * one or two letters ("I", "a", "on") only a whole word. Search itself
+ * matches substrings, so without this a query holding "I" or "ten" lit up
+ * letters inside unrelated words ("Wr[i]t[ten]", "M[i]tchell").
  *
  * Finds all matches first, then builds result in a single pass to avoid
  * corrupting <mark> tags when a search term contains 'm', 'a', 'r', or 'k'.
@@ -93,7 +103,8 @@ export function highlightMatch(text, query) {
     // Find all match positions in the original text
     const matches = [];
     terms.forEach(term => {
-        const regex = new RegExp(escapeRegex(term), 'gi');
+        const end = term.length <= 2 ? '(?![\\p{L}\\p{N}])' : '';
+        const regex = new RegExp(`(?<![\\p{L}\\p{N}])${escapeRegex(term)}${end}`, 'giu');
         let match;
         while ((match = regex.exec(text)) !== null) {
             matches.push({

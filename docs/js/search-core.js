@@ -1,7 +1,7 @@
 // Core search functionality for Bluegrass Songbook
 
 import { allSongs, songGroups, userLists, selectedSongIds, toggleSongSelection, clearSelectedSongs, selectAllSongs, getBountiesForWork, dungeonMode, includeDungeon } from './state.js';
-import { highlightMatch, escapeHtml, escapeAttr, songWriter, writtenByLabel, matchedArtists, recordedBy, recorderLabel } from './utils.js';
+import { highlightMatch, songCount, escapeHtml, escapeAttr, songWriter, writtenByLabel, matchedArtists, recordedBy, recorderLabel } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
 import {
     songHasTags, getTagCategory, formatTagName, syncTagControls,
@@ -709,7 +709,7 @@ export function showPopularSongs() {
     // Use distinct title count to match subtitle
     const distinctCount = new Set(searchableSongs().map(s => s.title?.toLowerCase())).size;
     if (searchStatsEl) {
-        searchStatsEl.textContent = `${distinctCount.toLocaleString()} songs${scopeSuffix()}`;
+        searchStatsEl.textContent = `${songCount(distinctCount)}${scopeSuffix()}`;
     }
     // Pass all results - renderResults handles pagination via infinite scroll
     renderResults(sorted, '');
@@ -884,7 +884,7 @@ export function search(query, options = {}) {
     }
 
     // Update stats with search info
-    let statsText = `${dedupedResults.length.toLocaleString()} songs${scopeSuffix()}`;
+    let statsText = `${songCount(dedupedResults.length)}${scopeSuffix()}`;
     const filters = [];
     // Inclusion filters
     if (artistFilter) filters.push(`artist: "${artistFilter}"`);

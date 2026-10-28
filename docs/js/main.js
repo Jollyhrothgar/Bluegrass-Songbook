@@ -54,7 +54,7 @@ import {
 } from './work-view.js';
 import { parseTabRoute, partInstrumentFor } from './otf-editor/create-tab-entry.js';
 import { initSearch, search, showPopularSongs, renderResults, parseSearchQuery, searchableSongs } from './search-core.js';
-import { escapeHtml, escapeAttr, requireLogin, parseItemRef, buildDeleteCandidates, downloadFile } from './utils.js';
+import { escapeHtml, escapeAttr, songCount, requireLogin, parseItemRef, buildDeleteCandidates, downloadFile } from './utils.js';
 import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
 import { initShell, setTopBar, setBottomBand, setOverflowBase, setOverflowLead, setChromeAutoHide, pill, setBanner, setTourInvite } from './shell.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink } from './analytics.js';
@@ -872,7 +872,7 @@ function renderCollectionCards() {
                 <div class="collection-content">
                     <h3 class="collection-title">${escapeHtml(collection.title)}</h3>
                     <p class="collection-description">${escapeHtml(collection.description)}</p>
-                    ${(collection.isToolLink || collection.isDungeonLink) ? '' : `<span class="collection-count">${count.toLocaleString()} songs</span>`}
+                    ${(collection.isToolLink || collection.isDungeonLink) ? '' : `<span class="collection-count">${songCount(count)}</span>`}
                 </div>
             </a>
         `;
@@ -1618,7 +1618,7 @@ function rebuildCorpus() {
 /** The searchable-title count shown next to the search box. */
 function updateSongbookCount(songs) {
     if (!searchStats) return;
-    searchStats.textContent = `${countDistinctTitles(songs).toLocaleString()} songs`;
+    searchStats.textContent = songCount(countDistinctTitles(songs));
 }
 
 /**
