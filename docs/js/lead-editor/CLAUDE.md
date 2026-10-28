@@ -128,6 +128,16 @@ override: with it, iOS drew a second selection and handles over the native one.
   Paste button: it says how to paste up front ("Tap and hold here, then Paste" / "Press ⌘V to paste"), since a button
   there could only show a hint and read as broken (2026-10-27). A refused permission at runtime still shows the hint.
   Real paste events run smart paste.
+- **Paste just works** (2026-10-27): ⌘V / Ctrl+V ANYWHERE on the editor page pastes into the song (`onDocPaste`, a
+  document `paste` listener while `host` is on screen). Only a field that takes text itself (`input`, `textarea`,
+  `select`, `contenteditable`: the title, the section bar's Other…) keeps its own paste; CodeMirror handles one inside
+  it; in Chords mode (locked) it switches to Lyrics first. A new empty song on a fine pointer also opens with the caret
+  in the sheet (`focusIfEmpty`, called by `main.js` when the Add Song view shows, via `editor.js::focusEmptyEditor`);
+  never on a phone (it would pop the keyboard). Before this, a ⌘V right after opening `#add` went to `<body>` and
+  nothing happened, while the hint said "Press ⌘V to paste". e2e: `editor.spec.js` "Paste just works".
+- **Line endings** (2026-10-28): clipboard text is normalized to `\n` (`clipText`, and `convertPastedText` itself) before
+  anything measures it. CodeMirror drops every `\r` on insert, so an Ultimate Guitar copy (`\r\n`) set the cursor 36
+  characters past the end: `RangeError: Selection points outside of document`, and the whole paste was lost.
 
 ## Chords mode
 
