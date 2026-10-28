@@ -83,7 +83,7 @@ than trusting the ranking.
   `visitor_stats`, `visitors`, `song_votes`, `genre_suggestions`, `tag_votes`,
   `user_lists`, `user_list_items`, `user_favorites`, `analytics_events`.
   Every query pages through `fetch_all` — PostgREST caps a request at 1,000
-  rows, and `visitors` alone is ~39k
+  rows, and `visitors` was ~39k before the G13 cleanup (~4k after)
 - **WAU caveat**: `analytics_events` has only an anonymous `visitor_id`, so
   "signed-in" weekly activity is inferred from contributor tables (votes,
   tags, lists, favorites) — a floor, not a split of one total. Events are
