@@ -319,6 +319,30 @@ test.describe('Paste just works (no click first)', () => {
     });
 });
 
+test.describe('Pasted played sections ([Intro], [Interlude], ...)', () => {
+    test('arrive as real sections with visible chord lines, which the section menu can delete', async ({ page }) => {
+        await page.goto('/#add');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
+        await leadReady(page);
+        const sheet = '[Verse 1]\nG                B7\nIt\'s been ten long years\n\n[Interlude]\nG B7 C G\nG    D\n\n[Verse 2]\nG\nI fell in love';
+        await page.locator(CM).click();
+        await page.evaluate((text) => {
+            const dt = new DataTransfer();
+            dt.setData('text/plain', text);
+            document.querySelector('#editor-lead .cm-content').dispatchEvent(new ClipboardEvent('paste', { clipboardData: dt, bubbles: true, cancelable: true }));
+        }, sheet);
+        await expect.poll(() => leadText(page)).toContain('{start_of_interlude: Interlude}');
+        const label = page.locator('#editor-lead .section-label', { hasText: 'Interlude' });
+        await expect(label).toBeVisible();
+        await expect(page.locator('#editor-lead .cm-line', { hasText: 'B7' }).first()).toBeVisible();   // its chords show
+        expect(await page.locator('#editor-lead .cl-chord').allTextContents()).toEqual(expect.arrayContaining(['G', 'B7', 'C', 'D']));
+        await label.click();
+        await page.locator('.le-labelmenu').getByRole('menuitem', { name: 'Delete section' }).click();
+        expect(await leadText(page)).not.toContain('Interlude');
+        expect(await leadText(page)).toContain('I fell in love');
+    });
+});
+
 test.describe('ChordPro Conversion', () => {
     test('paste with chord-above-lyrics format converts to ChordPro', async ({ page }) => {
         await page.goto('/#add');
