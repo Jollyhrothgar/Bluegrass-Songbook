@@ -46,17 +46,22 @@ PORT=$(find_available_port "$PORT")
 
 echo ""
 echo "Starting Jupyter notebook server..."
-echo "Dashboard will open at: http://localhost:$PORT/notebooks/dashboard.ipynb"
+echo "Dashboard will open at: http://localhost:$PORT/lab/tree/dashboard.ipynb"
 echo ""
+
+# Notebooks are committed as percent-format .py (jupytext.toml). Create any
+# missing .ipynb from its .py, or bring an older side up to date; outputs in an
+# existing .ipynb are kept.
+(cd "$ANALYTICS_ROOT" && uv run --project "$REPO_ROOT" --extra analytics jupytext --sync ./*.py)
 
 cd "$REPO_ROOT"
 # Secrets reach the notebook through the environment (1Password injection),
 # not through analytics/.env — the dashboard reads a service-role key, and a
 # plaintext copy per worktree is the exposure this avoids.
 ./scripts/lib/with-secrets --tpl analytics/.env.tpl -- \
-    uv run --extra analytics jupyter notebook \
+    uv run --extra analytics jupyter lab \
     --notebook-dir="$ANALYTICS_ROOT" \
     --port="$PORT" \
     --no-browser \
-    --NotebookApp.token='' \
-    --NotebookApp.password=''
+    --ServerApp.token='' \
+    --ServerApp.password=''
