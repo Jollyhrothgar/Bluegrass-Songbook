@@ -363,6 +363,17 @@ at 18px inside those buttons only; `chordGlyphHtml` elsewhere is untouched.
   decided whether it should transpose). `currentSongKey` feeds the sheet, the
   toolbar `#editor-key-select` and the submitted `key`/`mode`, so they cannot disagree.
 
+## The tour's hooks (`present`)
+
+The feature tour plays a song into this editor (`../tour-editor-demo.js`) by
+pressing the real buttons. `api.present` holds the only two things a pointer
+does that code cannot: `select(from, to)` shows the section bar for a
+selection WITHOUT focusing the editor (`presenting` stands in for
+`view.hasFocus` in `updateSelectionBar`, and `wrapSelection` skips its
+`view.focus()` while it is set: on a phone, focus raises the keyboard), and
+`boxAt(pos)` puts the chord box on a syllable as a tap would (Chords mode).
+`end()` clears `presenting`; `setText(…, {reset: true})` does too.
+
 ## Text adapter
 
 `editor.js` exports `getText()` / `setText()`; every reader (submit, copy,

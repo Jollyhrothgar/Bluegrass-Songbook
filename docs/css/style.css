@@ -9497,6 +9497,219 @@ body.dungeon-mode .topbar-brand .brand-dungeon-face {
 
 .topbar-icon-btn:hover { color: var(--text); background: var(--bg-secondary); }
 
+/* ---- Feature tour (G14, js/tour.js) ----
+   The invitation: a first-time visitor's band carries a Tour button that
+   pulses three times, then keeps a soft steady glow. main.js removes it once
+   the tour has been opened (it moves to the ⋯ menu). */
+.topbar-tour-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: color-mix(in srgb, var(--accent) 10%, transparent);
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    color: var(--accent);
+    font-size: var(--font-sm);
+    font-weight: 600;
+    padding: 0.25rem 0.65rem;
+    cursor: pointer;
+    white-space: nowrap;
+    box-shadow: 0 0 8px 1px color-mix(in srgb, var(--accent) 40%, transparent);
+    animation: tour-glow 2.4s ease-in-out 3;
+}
+
+.topbar-tour-btn:hover { background: color-mix(in srgb, var(--accent) 18%, transparent); }
+
+@keyframes tour-glow {
+    0%, 100% { box-shadow: 0 0 8px 1px color-mix(in srgb, var(--accent) 40%, transparent); }
+    50% { box-shadow: 0 0 18px 5px color-mix(in srgb, var(--accent) 65%, transparent); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .topbar-tour-btn { animation: none; }
+}
+
+/* The card. Under the bands (900) and everything that opens from them, so
+   whatever the reader opens covers the card, never the reverse; tour.js
+   keeps it clear of both bands. No backdrop: the page stays usable — so the
+   card has to stand out on its own: an accent frame and halo, a "Tour"
+   label, an arrow at the control, and an arrival animation. */
+.tour-card {
+    position: fixed;
+    z-index: 899;
+    width: min(320px, calc(100vw - 16px));
+    background: var(--bg);
+    color: var(--text);
+    border: 2px solid var(--accent);
+    border-radius: var(--radius-lg);
+    box-shadow:
+        0 0 0 4px color-mix(in srgb, var(--accent) 20%, transparent),
+        0 12px 32px rgba(0, 0, 0, 0.35);
+    padding: var(--space-sm) var(--space-md) var(--space-md);
+}
+
+/* The arrow: a square turned 45°, two of its borders showing, set on the
+   edge facing the control at --tour-arrow-x (tour.js placeCard). */
+.tour-card::before {
+    content: '';
+    display: none;
+    position: absolute;
+    left: calc(var(--tour-arrow-x, 50%) - 8px);
+    width: 14px;
+    height: 14px;
+    background: var(--bg);
+    border: 2px solid var(--accent);
+    transform: rotate(45deg);
+}
+
+.tour-card[data-placement="below"]::before {
+    display: block;
+    top: -9px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.tour-card[data-placement="above"]::before {
+    display: block;
+    bottom: -9px;
+    border-left: none;
+    border-top: none;
+}
+
+/* Arrives from the control's side: down from a control above it, up from
+   one below it (or from the bottom when it rests). */
+.tour-card { --tour-from: 12px; }
+.tour-card[data-placement="below"] { --tour-from: -12px; }
+.tour-card.tour-arrive { animation: tour-arrive 0.4s cubic-bezier(0.2, 0.9, 0.3, 1.2); }
+
+@keyframes tour-arrive {
+    from { opacity: 0; transform: translateY(var(--tour-from)) scale(0.96); }
+    to { opacity: 1; transform: none; }
+}
+
+.tour-card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* "✨ Tour · 3 of 7": says what this card is, so it never reads as one of
+   the app's own popups. */
+.tour-label {
+    color: var(--accent);
+    font-size: var(--font-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.tour-count {
+    color: var(--text-secondary);
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: normal;
+    margin-left: 0.3em;
+}
+
+.tour-count::before { content: '· '; }
+
+.tour-close {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: var(--font-lg);
+    line-height: 1;
+    padding: 0.1rem 0.35rem;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+}
+
+.tour-close:hover { color: var(--text); background: var(--bg-secondary); }
+
+.tour-title {
+    font-size: var(--font-md);
+    margin: var(--space-xs) 0;
+}
+
+.tour-body {
+    color: var(--text-secondary);
+    font-size: var(--font-sm);
+    line-height: 1.45;
+    margin: 0 0 var(--space-sm);
+}
+
+.tour-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-xs);
+}
+
+.tour-back,
+.tour-next {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    color: var(--text);
+    font-size: var(--font-sm);
+    padding: 0.35rem 0.85rem;
+    cursor: pointer;
+}
+
+.tour-back:disabled { visibility: hidden; }
+
+.tour-next {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--on-accent);
+}
+
+.tour-next:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+
+/* The ring around the control a step is about. Above the bands so a band
+   control is visibly ringed; it never takes a click. On arrival it sends out
+   three ripples (.tour-ping). */
+.tour-ring {
+    position: fixed;
+    z-index: 901;
+    pointer-events: none;
+    border: 3px solid var(--accent);
+    border-radius: 10px;
+    box-shadow:
+        0 0 0 4px color-mix(in srgb, var(--accent) 30%, transparent),
+        0 0 18px 4px color-mix(in srgb, var(--accent) 40%, transparent);
+}
+
+.tour-ring::after {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border: 3px solid var(--accent);
+    border-radius: inherit;
+    opacity: 0;
+}
+
+.tour-ring.tour-ping::after { animation: tour-ping 1s ease-out 3; }
+
+@keyframes tour-ping {
+    from { opacity: 0.8; transform: scale(1); }
+    to { opacity: 0; transform: scale(1.3); }
+}
+
+/* A drop-zone step rings the page itself, dashed like body.file-dragover
+   (what a real drag over the window shows). */
+.tour-ring.tour-ring-zone {
+    border-style: dashed;
+    border-radius: var(--radius-lg);
+    box-shadow: none;
+}
+
+.tour-ring.tour-ring-zone::after { display: none; }   /* no page-sized ripple */
+
+@media (prefers-reduced-motion: reduce) {
+    .tour-card.tour-arrive,
+    .tour-ring.tour-ping::after { animation: none; }
+}
+
 .topbar-overflow { position: relative; }
 
 .app-bottomband {
@@ -9605,6 +9818,7 @@ body.has-bottomband .container {
 
 /* 4. Actions become icons — the label survives as the button's tooltip. */
 .app-topbar.density-icons .topbar-action-label,
+.app-topbar.density-icons .topbar-tour-label,
 .app-topbar.density-icons .auth-text { display: none; }
 
 /* 5. Nav becomes icons. */

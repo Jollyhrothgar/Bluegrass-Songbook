@@ -104,6 +104,9 @@ export function mountLeadEditor({ host, hooks = {} }) {
     let mode = 'lyrics';
     let showPreview = false;      // phone Source | Preview
     let sel = null;               // selection bar
+    // The feature tour (../tour-editor-demo.js) shows the bar for a selection it
+    // made without focusing the editor: on a phone, focus raises the keyboard.
+    let presenting = false;
     let labelMenu = null;
     let previewTimer = null;
     let moving = false;           // Chords mode: Move is on, the chord travels with the box
@@ -1055,7 +1058,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
         const res = markSelection(text, s.from, s.to, type);
         if (!res) { showToast('Select some lyric lines first.', { variant: 'warning' }); return; }
         editor.change({ changes: diffChange(text, res.text), selection: { anchor: res.selStart } }, { userEvent: 'input.section' });
-        view.focus();
+        if (!presenting) view.focus();
     }
     /**
      * Phones (a coarse pointer) DOCK the bar at the bottom of the visual viewport, above the keyboard: iOS draws its own
@@ -1075,7 +1078,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
     window.visualViewport?.addEventListener('scroll', onViewportForBar);
     function updateSelectionBar() {
         const s = view.state.selection.main;
-        const show = !s.empty && mode !== 'chords' && view.hasFocus && !sel.classList.contains('le-selbar-input');
+        const show = !s.empty && mode !== 'chords' && (view.hasFocus || presenting) && !sel.classList.contains('le-selbar-input');
         if (!show && !sel.classList.contains('le-selbar-input')) { sel.classList.add('hidden'); return; }
         if (!show) return;
         sel.classList.remove('hidden');
@@ -1173,6 +1176,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
         get showPreview() { return showPreview; },
         getText: () => editor.getText(),
         setText: (t, o) => {
+            if (o?.reset) presenting = false;
             closeBox();
             editor.setText(t, o);
             // a song opened gets the remembered mode; a new empty song always opens in Lyrics
@@ -1185,6 +1189,21 @@ export function mountLeadEditor({ host, hooks = {} }) {
         setDisplay: (fn) => editor.setDisplay(fn),
         pasteFromClipboard,
         refreshPreview: renderPreview,
+        /**
+         * For the feature tour's demo (../tour-editor-demo.js), which presses the real buttons (section bar, mode
+         * switch, chord cells) and needs only the two things a pointer does that code cannot.
+         */
+        present: {
+            /** Select [from, to) and show the section bar, as a drag over the lines would, without focusing the editor. */
+            select(from, to) {
+                presenting = true;
+                view.dispatch({ selection: { anchor: from, head: to }, scrollIntoView: true });
+                updateSelectionBar();
+            },
+            /** Chords mode: put the chord box on `pos`, as a tap on that syllable would. */
+            boxAt(pos) { if (mode === 'chords') openBox(pos); },
+            end() { presenting = false; updateSelectionBar(); },
+        },
         focus: () => view.focus(),
         destroy() { fontDownBtn?.removeEventListener('click', onFontDown); fontUpBtn?.removeEventListener('click', onFontUp); document.removeEventListener('keydown', onDocKey, true); resetGestures(); window.removeEventListener('pointermove', onPressMove); window.removeEventListener('pointerup', endPress); window.removeEventListener('pointercancel', endPress); window.removeEventListener('lostpointercapture', onLostCapture, true); window.removeEventListener('blur', resetGestures); document.removeEventListener('visibilitychange', onVisibility); window.removeEventListener('scroll', onScrollRing); window.visualViewport?.removeEventListener('resize', onViewportForBar); window.visualViewport?.removeEventListener('scroll', onViewportForBar); ring.remove(); loupe.destroy(); menu.destroy(); menuResizeObserver?.disconnect(); sel.remove(); emptyHint.remove(); closeLabelMenu(); editor.destroy(); },
     };
