@@ -1,14 +1,18 @@
 id: old-home-place
-title: "Old Home Place"
-artist: "J.D. Crowe and the New South"
-composers: [Dean Webb and Mitchell Jayne]
+title: Old Home Place
+artist: J.D. Crowe and the New South
+composers:
+- Dean Webb and Mitchell Jayne
 default_key: A
 tags: []
 parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: trusted-user
-      imported_at: '2026-02-01'
+- type: lead-sheet
+  format: chordpro
+  file: lead-sheet.pro
+  default: true
+  provenance:
+    source: user-submission
+    imported_at: '2026-02-01'
+    source_id: pending:old-home-place:64fb7f1e5144
+    submitted_by: 4bcc2445-5661-4569-b55d-c29e0c101215
+    submitted_at: '2026-10-28'
