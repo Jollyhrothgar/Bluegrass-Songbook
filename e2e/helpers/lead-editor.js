@@ -1,3 +1,4 @@
+import { readFileSync } from 'node:fs';
 // Helpers for the lead-sheet editor (CodeMirror, js/lead-editor/). The
 // document is the ChordPro text; these read and write it through the editor
 // itself, so the tests exercise what a person can do. Three modes:
@@ -14,6 +15,19 @@ export async function openDisplay(page) {
     const pop = page.locator('#editor-display-pill .pill-popover');
     if (!(await pop.isVisible())) await page.locator('#editor-display-pill .pill-btn').click();
     await pop.waitFor({ state: 'visible' });
+}
+
+/**
+ * Old Home Place as the tests were written against it: a FROZEN copy (docs/js/__tests__/fixtures/old-home-place.pro).
+ * works/ is editable from the site, so a test that asserts the live song's chords breaks on the next correction
+ * (2026-10-28: one did, and CI & Deploy stopped). Open the editor with this text instead of `#edit/old-home-place`
+ * whenever an assertion depends on what the chart says.
+ */
+export const OLD_HOME_PLACE = readFileSync(new URL('../../docs/js/__tests__/fixtures/old-home-place.pro', import.meta.url), 'utf8');
+export async function openFrozenOldHomePlace(page) {
+    await openEditor(page);
+    await setLead(page, OLD_HOME_PLACE);
+    await page.evaluate(() => window.scrollTo(0, 0));     // typing it left the page at the end; opening a song starts at the top
 }
 
 /** Wait for the editor to be mounted and typeable. */

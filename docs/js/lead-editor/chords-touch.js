@@ -15,6 +15,7 @@ const CHORD_ROW_EM = 1.5;   // how far above the lyric text a chord row reaches,
 const ROW_TOLERANCE = 3;    // px: items on one visual row share a top within this
 const NEAREST_PROBE_PX = 6; // glide: step this far (up / down alternately) to find a lyric line near a point
 const NEAREST_PROBES = 10;
+export const MIN_HIT_PX = 24; // a stop narrower than this (a one-space gap, a one-letter word) grows into wider neighbours
 
 /**
  * The places a point on a line can mean = the line's STOPS (doc-model `lineStops`: syllable starts, the gap
@@ -50,25 +51,47 @@ function rowAt(items, y) {
     return best.row.items.slice().sort((a, b) => a.left - b.left);
 }
 
-const hitOf = (it, next) => ({
+/**
+ * PURE. Each item's span along its row, [lo, hi): from its own left edge to the next one's, the last open to the right.
+ * A span narrower than MIN_HIT_PX grows by up to half the shortfall on each side, taken from a neighbour only while that
+ * neighbour stays at least MIN_HIT_PX wide, so a one-space gap is as easy to hit as a word and no neighbour that was
+ * hittable stops being so (a syllable's centre is never given away: at most MIN_HIT_PX / 2 goes from each side).
+ */
+export function rowSpans(row) {
+    const lo = row.map((it) => it.left);
+    const hi = row.map((it, i) => (row[i + 1] ? row[i + 1].left : Infinity));
+    const room = (j) => Math.max(0, hi[j] - lo[j] - MIN_HIT_PX);
+    for (let i = 0; i < row.length; i++) {
+        const need = (MIN_HIT_PX - (hi[i] - lo[i])) / 2;
+        if (need <= 0) continue;
+        if (i > 0) { const t = Math.min(need, room(i - 1)); lo[i] -= t; hi[i - 1] -= t; }
+        if (i + 1 < row.length) { const t = Math.min(need, room(i + 1)); hi[i] += t; lo[i + 1] += t; }
+    }
+    return row.map((_, i) => ({ lo: lo[i], hi: hi[i] }));
+}
+
+/** The index of the span containing x (the first for a point left of everything). */
+const spanIndex = (spans, x) => { let at = 0; spans.forEach((sp, i) => { if (sp.lo <= x) at = i; }); return at; };
+
+const hitOf = (it, span) => ({
     pos: it.s, after: it.after ? 1 : 0, kind: it.kind || 'syllable', seam: it.kind !== 'gap',
-    left: it.left, right: next ? next.left : it.left + 10, top: it.top, bottom: it.bottom,
+    left: span.lo, right: Number.isFinite(span.hi) ? span.hi : span.lo + 10, top: it.top, bottom: it.bottom,
 });
 
 /**
  * PURE. Which item does the point (x, y) mean? `items` are one line's places as drawn:
  * [{ s, after, kind, left, top, bottom }]. The visual row is the one whose chord row + lyric row the y
- * falls in (a wrapped line has several rows); along the row, the item whose span contains x, the first for a
- * point left of everything and the after-the-words slot for a point past the end of the LAST row. For a TAP the
+ * falls in (a wrapped line has several rows); along the row, the item whose span (`rowSpans`) contains x, the first
+ * for a point left of everything and the after-the-words slot for a point past the end of the LAST row. For a TAP the
  * items are the line's stops; the glide's ring passes letters here (only to draw smoothly, never to commit).
  * Returns { pos, after, kind, seam, left, right, top, bottom } or null.
  */
 export function pickItem(items, x, y) {
     const row = rowAt(items, y);
     if (!row) return null;
-    let at = 0;
-    row.forEach((it, i) => { if (it.left <= x) at = i; });
-    return hitOf(row[at], row[at + 1]);
+    const spans = rowSpans(row);
+    const at = spanIndex(spans, x);
+    return hitOf(row[at], spans[at]);
 }
 
 /**
@@ -81,16 +104,16 @@ export function pickItem(items, x, y) {
 export function pickStop(items, x, y, prev = null) {
     const row = rowAt(items, y);
     if (!row) return null;
-    let at = 0;
-    row.forEach((it, i) => { if (it.left <= x) at = i; });
+    const spans = rowSpans(row);
+    let at = spanIndex(spans, x);
     const pi = prev ? row.findIndex((it) => it.s === prev.pos && !!it.after === !!prev.after) : -1;
     if (pi >= 0 && Math.abs(at - pi) === 1) {
-        const width = (i) => (row[i + 1] ? row[i + 1].left - row[i].left : 10);
-        const edge = at > pi ? row[at].left : row[pi].left;
+        const width = (i) => (Number.isFinite(spans[i].hi) ? spans[i].hi - spans[i].lo : 10);
+        const edge = at > pi ? spans[at].lo : spans[pi].lo;
         const margin = HYSTERESIS * width(at) / 2;
         if (at > pi ? x < edge + margin : x > edge - margin) at = pi;
     }
-    return hitOf(row[at], row[at + 1]);
+    return hitOf(row[at], spans[at]);
 }
 
 /**

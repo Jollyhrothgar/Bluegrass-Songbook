@@ -111,6 +111,11 @@ export function getText() {
  * Replace the whole text. `reset` is for opening a different song (it also
  * drops the undo history); without it the replacement is one undo step.
  */
+/** On a desktop, put the caret in a new, empty song's sheet (called when the Add Song view is shown). */
+export function focusEmptyEditor() {
+    lead?.focusIfEmpty?.();
+}
+
 export function setText(text, { reset = false } = {}) {
     if (lead) lead.setText(text || '', { reset });
     else if (editorContentEl) editorContentEl.value = text || '';
