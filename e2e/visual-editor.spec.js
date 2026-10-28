@@ -543,6 +543,14 @@ test.describe('the empty sheet', () => {
         await expect(page.locator(`${LEAD} .le-empty`)).toBeHidden();
     });
 
+    test('a page that cannot read the clipboard offers no Paste button, and says the keyboard shortcut', async ({ page }) => {
+        await page.addInitScript(() => Object.defineProperty(navigator, 'clipboard', { configurable: true, value: undefined }));
+        await openNew(page);
+        await expect(page.locator(`${LEAD} .le-paste-btn`)).toHaveCount(0);
+        await expect(page.locator(`${LEAD} .le-paste-hint`)).toBeVisible();
+        await expect(page.locator(`${LEAD} .le-paste-hint`)).toHaveText(/Press (⌘|Ctrl\+)V to paste/);
+    });
+
     test('where the clipboard cannot be read, the button says how to paste', async ({ page }) => {
         await openNew(page);
         await page.evaluate(() => Object.defineProperty(navigator, 'clipboard', { configurable: true, value: undefined }));

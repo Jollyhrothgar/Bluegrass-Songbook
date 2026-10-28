@@ -55,6 +55,17 @@ test.describe('Lyrics mode on a phone', () => {
         expect(await leadText(page)).toMatch(/\[G\]Amazing/);
     });
 
+    // On a plain-http page (the tailnet dev URL) the browser will not let a button read the clipboard: a Paste button
+    // there did nothing but show a small hint. No dead button: the instruction is shown up front instead.
+    test('where the page cannot read the clipboard there is no Paste button, just how to paste', async ({ page }) => {
+        await page.addInitScript(() => Object.defineProperty(navigator, 'clipboard', { configurable: true, value: undefined }));
+        await openEditor(page);
+        await expect(page.locator(`${LEAD} .le-empty`)).toBeVisible();
+        await expect(page.locator(`${LEAD} .le-paste-btn`)).toHaveCount(0);
+        await expect(page.locator(`${LEAD} .le-paste-hint`)).toBeVisible();
+        await expect(page.locator(`${LEAD} .le-paste-hint`)).toHaveText('Tap and hold here, then Paste');
+    });
+
     test('selecting lines shows the section bar and there is one selection highlight', async ({ page }) => {
         await openEditor(page);
         await setLead(page, 'Line one\nLine two\n\nLine three');

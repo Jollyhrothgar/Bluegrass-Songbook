@@ -106,8 +106,10 @@ override: with it, iOS drew a second selection and handles over the native one.
 - The empty-sheet hint (`.le-empty`) is a SIBLING overlay of CodeMirror's
   content, not a `placeholder()` (CodeMirror clones the node and makes it inert,
   which killed the Paste button). Paste reads the clipboard only where
-  `isSecureContext && navigator.clipboard.readText`; otherwise the button focuses
-  the editor and shows "Press and hold, then Paste". Real paste events run smart paste.
+  `isSecureContext && navigator.clipboard.readText`. A page that cannot (plain http, like the tailnet dev URL) gets NO
+  Paste button: it says how to paste up front ("Tap and hold here, then Paste" / "Press ⌘V to paste"), since a button
+  there could only show a hint and read as broken (2026-10-27). A refused permission at runtime still shows the hint.
+  Real paste events run smart paste.
 
 ## Chords mode
 

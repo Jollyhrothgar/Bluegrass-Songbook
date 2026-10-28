@@ -112,15 +112,20 @@ export function mountLeadEditor({ host, hooks = {} }) {
     // the empty-sheet hint: a SIBLING overlay of CodeMirror's content (a CodeMirror placeholder
     // is cloned and made inert, which killed the Paste button and the request link)
     const canReadClipboard = () => !!(window.isSecureContext && navigator.clipboard?.readText);
+    // A page that cannot read the clipboard (plain http, e.g. the tailnet dev URL) gets NO Paste button: there it could
+    // only show a small hint, and a button that does nothing reads as broken. It says how to paste up front instead.
+    const pasteButton = canReadClipboard();
+    const isMac = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent || '');
+    const howToPaste = window.matchMedia?.('(pointer: coarse)').matches ? 'Tap and hold here, then Paste' : `Press ${isMac ? '⌘' : 'Ctrl+'}V to paste`;
     const emptyHint = document.createElement('div');
     emptyHint.className = 'cl-empty le-empty hidden';
     emptyHint.innerHTML = '<strong>Type or paste your song</strong>'
         + '<span>Lyrics, a chord sheet from the web, or ChordPro. A blank line starts a new verse.</span>'
-        + '<span class="cl-empty-actions"><button type="button" class="le-paste-btn">Paste</button>'
+        + '<span class="cl-empty-actions">' + (pasteButton ? '<button type="button" class="le-paste-btn">Paste</button>' : '')
         + (hooks.onSongRequest ? '<a href="#request-song" class="le-link-request">Request a song instead</a>' : '')
-        + '</span><span class="le-paste-hint" role="status" hidden>Press and hold, then Paste</span>';
+        + `</span><span class="le-paste-hint" role="status"${pasteButton ? ' hidden' : ''}>${pasteButton ? 'Press and hold, then Paste' : howToPaste}</span>`;
     sourcePane.appendChild(emptyHint);
-    emptyHint.querySelector('.le-paste-btn').addEventListener('click', (e) => { e.stopPropagation(); pasteFromClipboard(); });
+    emptyHint.querySelector('.le-paste-btn')?.addEventListener('click', (e) => { e.stopPropagation(); pasteFromClipboard(); });
     emptyHint.querySelector('.le-link-request')?.addEventListener('click', (e) => { e.preventDefault(); e.stopPropagation(); hooks.onSongRequest(); });
     // tapping the words themselves just starts writing (and, where Paste can't be offered, says how to paste)
     emptyHint.addEventListener('click', () => { view.focus(); if (!canReadClipboard()) showPasteHint(); });
@@ -128,7 +133,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
     function syncEmpty() {
         const empty = view.state.doc.length === 0 && mode === 'lyrics';
         emptyHint.classList.toggle('hidden', !empty);
-        if (!empty) emptyHint.querySelector('.le-paste-hint').hidden = true;
+        if (!empty && pasteButton) emptyHint.querySelector('.le-paste-hint').hidden = true;   // with no button the hint IS the instruction
     }
 
     // ---- the editor --------------------------------------------------------
