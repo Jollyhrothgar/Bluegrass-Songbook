@@ -254,7 +254,8 @@ export function protectedSpans(text, free = null, analysis = analyzeDocument(tex
 /**
  * The `{start_of_*}` / `{end_of_*}` line indexes of every explicit (non tab / ABC / grid) section whose WHOLE
  * extent, from its start line's first character to its last line's last character, lies inside [from, to).
- * Those directives go with the lyrics when a user deletes the whole section; metadata and locked blocks never.
+ * Those directives go with the lyrics when a user deletes the whole section; so does a `{comment}` row wholly inside.
+ * Metadata and the other locked blocks (tab / ABC / grid) never.
  */
 export function freedSectionLines(text, from, to, analysis = analyzeDocument(text)) {
     const free = new Set();
@@ -265,6 +266,13 @@ export function freedSectionLines(text, from, to, analysis = analyzeDocument(tex
         if (!a || !b || a.from < from || b.to > to) continue;
         free.add(s.startLine);
         if (b.kind === 'hidden' && SECTION_END_RE.test(b.text.trim())) free.add(b.index);
+    }
+    // a `{comment}` row ("Interlude", from a pasted chord sheet) wholly inside the range goes too: it is a note, not
+    // metadata, and it had no other way out of Lyrics mode (2026-10-28)
+    for (const blk of analysis.blocks) {
+        if (blk.type !== 'comment' || blk.from < from || blk.to > to) continue;
+        const l = analysis.lines.find((x) => x.from === blk.from);
+        if (l) free.add(l.index);
     }
     return free;
 }

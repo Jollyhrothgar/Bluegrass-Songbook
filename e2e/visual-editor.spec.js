@@ -1124,6 +1124,36 @@ test.describe('where the cursor stops (desktop)', () => {
     });
 });
 
+test.describe('a note row ({comment}, e.g. "Interlude" from a pasted chord sheet)', () => {
+    const SONG = '{start_of_verse: Verse 1}\nAnd look for a job in the town\n{end_of_verse}\n{comment: Interlude}\n\n{start_of_verse: Verse 2}\nWell the girl ran off\n{end_of_verse}';
+    test('tap it in Lyrics: Delete note removes it, and one undo brings it back', async ({ page }) => {
+        await openNew(page);
+        await setLead(page, SONG);
+        await setMode(page, 'lyrics');
+        await page.locator(`${CM} .cl-comment`, { hasText: 'Interlude' }).click();
+        await page.locator('.le-commentmenu').getByRole('menuitem', { name: 'Delete note' }).click();
+        expect(await leadText(page)).not.toContain('Interlude');
+        expect(await leadText(page)).toContain('Well the girl ran off');
+        await expect(page.locator(`${CM} .cl-comment`)).toHaveCount(0);
+        await page.locator('#editor-undo').click();
+        expect(await leadText(page)).toBe(SONG);
+    });
+
+    test('select across it and Backspace: it goes with the selection', async ({ page }) => {
+        await openNew(page);
+        await setLead(page, SONG);
+        await setMode(page, 'lyrics');
+        await page.evaluate(() => {
+            const { editor } = document.querySelector('#editor-lead').__lead;
+            const t = editor.getText();
+            editor.view.focus();
+            editor.view.dispatch({ selection: { anchor: t.indexOf('town') + 4, head: t.indexOf('Well') } });
+        });
+        await page.keyboard.press('Backspace');
+        expect(await leadText(page)).not.toContain('Interlude');
+    });
+});
+
 test.describe('desktop side panel: magnifier off by default, one nav row', () => {
     test('no magnifier bar until the toggle is pressed; the arrows live in the nav row only', async ({ page }) => {
         await page.addInitScript(() => localStorage.removeItem('bgb-chord-magnifier'));   // runs after the file-level seed

@@ -14,7 +14,7 @@
 import { createLeadEditor, DRAG_EVENT } from './cm-editor.js';
 import { createChordMenu } from './chord-menu.js';
 import { createSusMemory } from './chord-menu-model.js';
-import { chordAt, declaredKey, currentSongKey } from './doc-model.js';
+import { chordAt, declaredKey, currentSongKey, clipDeletion } from './doc-model.js';
 import {
     SECTION_TYPES, markSelection, renameSection, setSectionTypeText, duplicateSectionText,
     moveSectionText, unlabelSection, deleteSectionText, diffChange,
@@ -151,6 +151,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
             onHistory(h) { hooks.onHistory?.(h); },
             onChordsRemoved(n) { undoToast(`Removed ${n} chord${n === 1 ? '' : 's'}`); },
             onSectionLabel: (section, el) => openLabelMenu(section, el),
+            onComment: (_block, el) => openCommentMenu(el),
             onMouseDown: (e, v) => handleMouseDown(e, v),
             onClick: (e, v) => handleClick(e, v),
             onPaste: (e, v) => handlePaste(e, v),
@@ -1233,6 +1234,40 @@ export function mountLeadEditor({ host, hooks = {} }) {
         const shown = Math.min(h, room);
         menuEl.style.left = `${Math.max(8, Math.min(r.left, window.innerWidth - w - 8))}px`;
         menuEl.style.top = `${Math.round(below >= h || below >= above ? r.bottom + GAP : r.top - GAP - shown)}px`;
+    }
+    /**
+     * The menu of a `{comment}` row ("Interlude" from a pasted chord sheet): Delete. Before 2026-10-28 such a row could
+     * not be removed outside ChordPro mode (it is protected like a tab, and had no menu). The row's line is read from the
+     * DOM at the tap (`posAtDOM`): the widget is reused when text above it moves, so its own positions go stale.
+     */
+    function openCommentMenu(anchorEl) {
+        closeLabelMenu();
+        if (mode !== 'lyrics') return;
+        const line = view.state.doc.lineAt(view.posAtDOM(anchorEl));
+        const note = anchorEl.textContent;
+        const menuEl = document.createElement('div');
+        menuEl.className = 'le-labelmenu le-commentmenu';
+        menuEl.setAttribute('role', 'menu');
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'danger';
+        b.textContent = 'Delete note';
+        b.setAttribute('role', 'menuitem');
+        b.addEventListener('click', () => {
+            closeLabelMenu();
+            const text = editor.getText();
+            const to = Math.min(text.length, line.to + 1);    // the row and its newline: clipDeletion frees the row, tidies the blanks
+            editor.change({ changes: clipDeletion(text, line.from, to) }, { userEvent: 'input.section' });
+            undoToast(`Deleted \u201c${note}\u201d`);
+        });
+        menuEl.appendChild(b);
+        document.body.appendChild(menuEl);
+        placeLabelMenu(menuEl, anchorEl);
+        labelMenu = menuEl;
+        setTimeout(() => {
+            const off = (ev) => { if (!menuEl.contains(ev.target)) { closeLabelMenu(); document.removeEventListener('pointerdown', off, true); } };
+            document.addEventListener('pointerdown', off, true);
+        }, 0);
     }
     function openLabelMenu(section, anchorEl) {
         closeLabelMenu();

@@ -135,6 +135,36 @@ describe('user edits are clipped to the unprotected text', () => {
     });
 });
 
+describe('a {comment} row (e.g. "Interlude" from a pasted chord sheet) can be deleted', () => {
+    const d = '{start_of_verse: Verse 1}\nline one\n{end_of_verse}\n{comment: Interlude}\n\n{start_of_verse: Verse 2}\nline two\n{end_of_verse}';
+    it('a selection over the whole row deletes it, and leaves no pile of blank lines', () => {
+        const from = d.indexOf('{comment');
+        const to = d.indexOf('{start_of_verse: Verse 2}');
+        const t = send(make(d), { changes: { from, to } }, 'delete.selection').doc.toString();
+        expect(t).not.toContain('Interlude');
+        expect(t).toContain('{end_of_verse}\n\n{start_of_verse: Verse 2}');       // one blank line between sections, as usual
+        expect(t).not.toMatch(/\n{3,}/);
+    });
+    it('a selection from inside the verse across the row takes the row and the lyric, keeps the verse\'s end', () => {
+        const from = d.indexOf('one');
+        const to = d.indexOf('{start_of_verse: Verse 2}');
+        const t = send(make(d), { changes: { from, to } }, 'delete.selection').doc.toString();
+        expect(t).not.toContain('Interlude');
+        expect(t).toContain('{end_of_verse}');
+    });
+    it('a selection over only part of the row leaves it alone', () => {
+        const from = d.indexOf('Interlude');
+        const t = send(make(d), { changes: { from, to: from + 4 } }, 'delete.selection').doc.toString();
+        expect(t).toBe(d);
+    });
+    it('a tab block is still never deleted from Lyrics mode', () => {
+        const t2 = '{start_of_tab}\ne|---|\n{end_of_tab}\n{comment: Interlude}';
+        const t = send(make(t2), { changes: { from: 0, to: t2.length } }, 'delete.selection').doc.toString();
+        expect(t).toContain('{start_of_tab}');
+        expect(t).not.toContain('Interlude');
+    });
+});
+
 describe('one place per letter: the box never stands just before a chord', () => {
     // a seeded fuzz over place / move / remove / undo / redo / jump
     let seed = 12345;

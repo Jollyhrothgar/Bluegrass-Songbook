@@ -111,6 +111,12 @@ override: with it, iOS drew a second selection and handles over the native one.
   while the menu is open (`onViewportForLabelMenu`), measuring the menu's own height (its `max-height` cleared first). On
   an iPhone the keyboard closes AFTER a label is tapped, so a menu measured at the tap kept the space above the keyboard:
   "Remove label" cut in half, "Delete section" out of sight. e2e: "the section label menu on a phone".
+- **Note rows can go** (2026-10-28): a `{comment}` row (smart paste turns UG's `[Interlude]` / `[Intro]` / `[Break]`
+  headings into one) is a locked block, so it was protected like a tab and could only be removed in ChordPro mode.
+  `freedSectionLines` now frees a comment row lying wholly inside a deletion (select across it + Backspace), and tapping
+  it in Lyrics mode (`LockedWidget` -> `hooks.onComment` -> `index.js::openCommentMenu`) offers **Delete note**, one
+  undo step. The row's line is read with `posAtDOM` at the tap (the widget is reused when text above it moves). Tab /
+  ABC / grid blocks are still never deleted from Lyrics. e2e: "a note row" (`visual-editor.spec.js`).
 - **Only the mode switch enters Chords** (2026-10-27): no double-click shortcut on any device; a double-click in Lyrics is the browser's word selection.
 - **Chords are greyed in Lyrics** (2026-10-27): `.le-mode-lyrics .le-cm .cl-chord-glyph` is secondary colour, opacity 0.5, default cursor; colour / opacity only, so the layout is the book's.
 - **Protected text** (2026-10-27): `protectDirectivesFilter` clips a USER delete / replace to the unprotected pieces (`doc-model.js::clipDeletion`), EXCEPT a section lying wholly inside the range: its `{start_of_*}` .. `{end_of_*}` lines go too (`freedSectionLines`), then the blank lines it leaves are tidied (no run of blank lines, none at an end the deletion reached) as one change. `{meta:}` / `{key:}` / other header directives and locked blocks (ABC / tab / grid) always stay. Partial deletes (held Backspace, all lyric lines but not the label line) keep labels. Select-all + Delete = just the metadata lines (`''` when there are none); select-all + paste puts the new text after the metadata.
