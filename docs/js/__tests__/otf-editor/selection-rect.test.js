@@ -387,3 +387,55 @@ describe('selectionBand — the highlight is clipped vertically', () => {
         expect(selectionBand([4, 5, 6, 7], geom)).toEqual(selectionBand([4, 5], geom));
     });
 });
+
+describe('Ctrl+A + Delete clears the whole tab (this track)', () => {
+    // The bug: Ctrl+A took ONE measure (the tab only on a second press),
+    // and a selection ended one tick past its last slot — so a note typed
+    // at a finer step than the current one (beat 4.3 / 4.4 under a 1/8
+    // step) was outside every selection, and the cursor could not land
+    // on it either. Nothing could delete it.
+    function tailDoc() {
+        const state = docWith([]);
+        state.setDuration(DURATIONS.thirtySecond);   // grid follows: 1/32
+        for (const [measure, tick, string] of [
+            [1, 0, 3], [2, 1800, 3], [2, 1860, 2], [4, 1860, 1],
+        ]) {
+            Object.assign(state.cursor, { measure, tick, string });
+            state.insertNote(0);
+        }
+        state.setGridSubdivision(DURATIONS.eighth);  // back to 1/8
+        Object.assign(state.cursor, { measure: 2, tick: 0, string: 3 });
+        return state;
+    }
+
+    it('one press selects every measure, every string', () => {
+        const rig = makeRig(tailDoc());
+        rig.press('a', { ctrl: true });
+        const range = rig.state.selectionRange();
+        expect(range.startAbs).toBe(0);
+        expect(range.endAbs).toBe(rig.state.facade.toAbs(4, 1920));
+        expect(range.strings).toEqual([1, 2, 3, 4, 5]);
+        rig.teardown();
+    });
+
+    it('then Delete leaves nothing — the off-grid tail notes included', () => {
+        const rig = makeRig(tailDoc());
+        expect(notesOf(rig.state)).toHaveLength(4);
+        rig.press('a', { ctrl: true });
+        rig.press('Delete');
+        expect(notesOf(rig.state)).toEqual([]);
+        rig.teardown();
+    });
+
+    it('a selection ending on the last slot runs to the barline', () => {
+        const state = tailDoc();
+        const range = select(state, [2, 0, 1], [2, 1680, 5]);
+        expect(range.endAbs).toBe(state.facade.toAbs(3, 0));
+    });
+
+    it('a mid-measure end slot runs to the next grid line, not past it', () => {
+        const state = tailDoc();
+        const range = select(state, [2, 0, 1], [2, 960, 5]);
+        expect(range.endAbs).toBe(state.facade.toAbs(2, 960 + DURATIONS.eighth));
+    });
+});

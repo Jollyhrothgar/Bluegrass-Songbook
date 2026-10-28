@@ -248,14 +248,71 @@ test.describe('the keyboard grows the same rectangle', () => {
         )).toEqual([3, 4, 5]);
     });
 
-    test('Ctrl+A is still the whole column of the measure', async ({ page }) => {
+    test('Ctrl+A is the whole tab, every string, in one press', async ({ page }) => {
         await openBanjoEditor(page);
         const start = await pointFor(page, 2, 3, 0.1);
         await page.mouse.click(start.x, start.y);
         await page.keyboard.press('Control+a');
 
-        expect(await page.evaluate(
-            () => document.querySelector('.otf-editor').__otfEditor.state.selectionStrings()
-        )).toEqual([1, 2, 3, 4, 5]);
+        const sel = await page.evaluate(() => {
+            const { state } = document.querySelector('.otf-editor').__otfEditor;
+            const f = state.facade;
+            const n = state.getMeasureCount();
+            return {
+                strings: state.selectionStrings(),
+                range: state.selectionRange(),
+                tabEnd: f.toAbs(n, f.ticksFor(n)),
+            };
+        });
+        expect(sel.strings).toEqual([1, 2, 3, 4, 5]);
+        expect(sel.range.startAbs).toBe(0);
+        expect(sel.range.endAbs).toBe(sel.tabEnd);
+    });
+});
+
+test.describe('placed text is reached by clicking it', () => {
+    // It used to be reachable only by putting the cursor within a beat of
+    // where the text STARTS and pressing `t` — clicking the words did
+    // nothing, and the cursor rarely landed in reach.
+    async function addText(page, measure, tick, text) {
+        await page.evaluate(([m, t, s]) => {
+            const ed = document.querySelector('.otf-editor').__otfEditor;
+            ed.state.facade.addAnnotation({ measure: m, tick: t, text: s });
+            ed.state.cursor.measure = 4;
+            ed.state.cursor.tick = 0;
+        }, [measure, tick, text]);
+        const label = page.locator('.editor-renderer .annotation-text', { hasText: text });
+        await label.waitFor();
+        return label;
+    }
+
+    const cursorOf = (page) => page.evaluate(() => {
+        const { cursor } = document.querySelector('.otf-editor').__otfEditor.state;
+        return { measure: cursor.measure, tick: cursor.tick };
+    });
+
+    test('a click puts the cursor on it; Shift+T then deletes it', async ({ page }) => {
+        await openBanjoEditor(page);
+        const label = await addText(page, 3, 240, 'Click me text');
+        // the right end of the words — well over a beat from where they start
+        const box = await label.boundingBox();
+        await page.mouse.click(box.x + box.width - 3, box.y + box.height / 2);
+
+        expect(await cursorOf(page)).toEqual({ measure: 3, tick: 240 });
+        await page.keyboard.press('Shift+T');
+        await expect(label).toHaveCount(0);
+    });
+
+    test('a double-click opens it for editing, pre-filled', async ({ page }) => {
+        await openBanjoEditor(page);
+        const label = await addText(page, 3, 240, 'Edit me text');
+        await label.dblclick();
+
+        const input = page.locator('.otf-annotation-popover .annotation-input');
+        await expect(input).toBeVisible();
+        await expect(input).toHaveValue('Edit me text');
+        // and no note popover opened behind it
+        await expect(page.locator('.otf-note-popover:not(.otf-annotation-popover)')
+            .filter({ visible: true })).toHaveCount(0);
     });
 });

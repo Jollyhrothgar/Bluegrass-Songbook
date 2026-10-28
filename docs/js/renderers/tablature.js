@@ -1250,6 +1250,10 @@ export class TabRenderer {
                         fill: opt.fretColor,
                     });
                     annText.setAttribute('class', 'annotation-text');
+                    // Its address, so the editor can take a click on the
+                    // text itself to the annotation it draws.
+                    annText.setAttribute('data-measure', measure.measure);
+                    annText.setAttribute('data-tick', t.tick || 0);
                     svg.appendChild(annText);
                 }
             }

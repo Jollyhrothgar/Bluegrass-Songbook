@@ -379,6 +379,21 @@ function selectSpan(ctx, start, end) {
 }
 
 /**
+ * Select measures `first`..`last` whole: every string, barline to
+ * barline. The end is the last grid slot, which `selectionRange()` runs
+ * on to the barline — so a note typed at a finer step is still in it.
+ */
+function selectMeasures(ctx, first, last) {
+    const { state } = ctx;
+    selectSpan(ctx, { measure: first, tick: 0, string: 1 }, {
+        measure: last,
+        tick: Math.max(0, Math.floor((state.facade.ticksFor(last) - 1)
+            / state.gridSubdivision) * state.gridSubdivision),
+        string: state.getStringCount(),
+    });
+}
+
+/**
  * Apply a technique to the note at the cursor, or to every note in the
  * selection, as ONE undo step. `'~'` means TIE — the facade routes it.
  */
@@ -1030,32 +1045,24 @@ export const ACTIONS = {
         modes: ['normal', 'visual'],
         run(ctx) { extend(ctx, () => ctx.cursor.moveString(1)); return true; },
     },
-    'select.measureOrAll': {
-        label: 'Select the measure, every string — again, the whole tab',
+    'select.all': {
+        label: 'Select the whole tab (this track, every string)',
         group: 'Select',
         modes: ['normal', 'visual'],
         run(ctx) {
             const { state } = ctx;
-            const m = state.cursor.measure;
-            const lastTick = Math.max(0,
-                state.facade.ticksFor(m) - state.gridSubdivision);
-            const measureSelected = state.selection
-                && state.selection.start.measure === m
-                && state.selection.start.tick === 0
-                && state.selection.end.measure === m
-                && state.selection.end.tick === lastTick;
-            if (measureSelected) {
-                const n = state.getMeasureCount();
-                selectSpan(ctx, { measure: 1, tick: 0, string: 1 },
-                    {
-                        measure: n,
-                        tick: Math.max(0, state.facade.ticksFor(n) - state.gridSubdivision),
-                        string: state.getStringCount(),
-                    });
-            } else {
-                selectSpan(ctx, { measure: m, tick: 0, string: 1 },
-                    { measure: m, tick: lastTick, string: state.getStringCount() });
-            }
+            selectMeasures(ctx, 1, state.getMeasureCount());
+            return true;
+        },
+    },
+    'select.measure': {
+        label: 'Select the measure, every string',
+        group: 'Select',
+        modes: ['normal', 'visual'],
+        menuOnly: true,
+        run(ctx) {
+            const m = ctx.state.cursor.measure;
+            selectMeasures(ctx, m, m);
             return true;
         },
     },
@@ -1797,7 +1804,7 @@ const TABLEDIT = {
             // Was `r`, which TablEdit spends on the roll (see exceptions)
             { keys: 'Alt+r', action: 'measure.repeatPrevious' },
 
-            { keys: 'Ctrl+a', action: 'select.measureOrAll' },
+            { keys: 'Ctrl+a', action: 'select.all' },
             { keys: 'v', action: 'select.visual' },
             { keys: 'Ctrl+c', action: 'clip.copy' },
             { keys: 'Ctrl+x', action: 'clip.cut' },
@@ -1823,7 +1830,7 @@ const TABLEDIT = {
             { keys: 'Shift+ArrowRight', action: 'select.extendRight' },
             { keys: 'Shift+ArrowUp', action: 'select.extendUp' },
             { keys: 'Shift+ArrowDown', action: 'select.extendDown' },
-            { keys: 'Ctrl+a', action: 'select.measureOrAll' },
+            { keys: 'Ctrl+a', action: 'select.all' },
             { keys: 'Delete', action: 'select.delete' },
             { keys: 'Backspace', action: 'select.delete' },
             { keys: 'Ctrl+c', action: 'clip.copyExit', hidden: true },
@@ -2016,7 +2023,7 @@ const VIM = {
             { keys: 'Alt+Delete', action: 'measure.rippleLeft' },
 
             { keys: 'v', action: 'select.visual' },
-            { keys: 'Ctrl+a', action: 'select.measureOrAll' },
+            { keys: 'Ctrl+a', action: 'select.all' },
             { keys: 'y', action: 'clip.copy' },
             { keys: 'p', action: 'clip.paste' },
             { keys: 'P', action: 'clip.pasteBefore' },
@@ -2054,7 +2061,7 @@ const VIM = {
             { keys: 'Shift+ArrowRight', action: 'select.extendRight' },
             { keys: 'Shift+ArrowUp', action: 'select.extendUp' },
             { keys: 'Shift+ArrowDown', action: 'select.extendDown' },
-            { keys: 'Ctrl+a', action: 'select.measureOrAll' },
+            { keys: 'Ctrl+a', action: 'select.all' },
             { keys: 'y', action: 'clip.copyExit', hidden: true },
             { keys: 'd', action: 'select.delete' },
             { keys: 'Delete', action: 'select.delete' },
