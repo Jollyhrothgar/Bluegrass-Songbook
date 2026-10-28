@@ -58,6 +58,8 @@ vi.mock('../shell.js', () => ({ pill: vi.fn() }));
 
 import { initSearch, search, renderResults } from '../search-core.js';
 import { setAllSongs, setDungeonMode } from '../state.js';
+import { trackSearchResultClick } from '../analytics.js';
+import { getViewingListId } from '../lists.js';
 
 const CORPUS = [
     { id: 'you-are-my-sunshine', title: 'You Are My Sunshine', artist: 'Johnny Cash',
@@ -121,5 +123,30 @@ describe('search rows (F9)', () => {
         search('artist:hank williams');
         renderResults(CORPUS, '');
         expect(results.querySelector('.result-covering')).toBeNull();
+    });
+});
+
+// search-gaps reads result clicks back as "found it". A list view renders its
+// rows into the same container and logs the same event, with whatever is
+// still in the search box — so the click says which it was.
+describe('result click analytics', () => {
+    beforeEach(() => {
+        trackSearchResultClick.mockClear();
+        getViewingListId.mockReturnValue(null);
+    });
+
+    it('says a click on a search result came from search', () => {
+        search('sunshine');
+        row('you-are-my-sunshine').click();
+        const [songId, , , fromList] = trackSearchResultClick.mock.calls[0];
+        expect([songId, fromList]).toEqual(['you-are-my-sunshine', false]);
+    });
+
+    it('says a click in a list view came from a list', () => {
+        renderResults([CORPUS[0]], '');
+        getViewingListId.mockReturnValue('list-1');
+        row('you-are-my-sunshine').click();
+        const [songId, , , fromList] = trackSearchResultClick.mock.calls[0];
+        expect([songId, fromList]).toEqual(['you-are-my-sunshine', true]);
     });
 });

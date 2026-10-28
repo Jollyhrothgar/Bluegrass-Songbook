@@ -8,7 +8,7 @@ Usage:
     uv run python scripts/lib/search_index.py "artist:ralph stanley key:G"
 
 Supports the same query syntax as the web app:
-    artist:NAME or a:NAME     - Filter by artist
+    artist:NAME or a:NAME     - Filter by a covering artist or writer
     title:TEXT                - Filter by title
     lyrics:TEXT or l:TEXT     - Filter by lyrics
     composer:NAME             - Filter by composer/writer
@@ -17,7 +17,12 @@ Supports the same query syntax as the web app:
     prog:PROG or p:PROG       - Filter by progression (e.g., I-IV-V)
     tag:TAG or t:TAG          - Filter by tag (e.g., bluegrass, jamfriendly)
     -prefix:VALUE             - Exclude (e.g., -tag:classiccountry)
-    plain text                - Search all fields
+    plain text                - Search title, covering artists, writer, lyrics
+
+Matches what the site matches (docs/js/search-core.js `search`) minus its
+stemmed-word fallback, so it can find less than the site, never more. Since
+F9 neither side matches the scraped `artist`: it is never shown, so it never
+matches. search-gaps relies on this to re-run real visitors' searches.
 
 Searches the canon index (docs/data/index.jsonl) — the same rows the site
 searches. Pass --archive to also include the pruned works in
@@ -221,25 +226,35 @@ def song_has_progression(song: dict, progression: list[str]) -> bool:
 
 def search(songs: list[dict], query: str) -> list[dict]:
     """Search songs using query string."""
-    parsed = parse_query(query)
+    return search_parsed(songs, parse_query(query))
 
+
+def search_parsed(songs: list[dict], parsed: dict) -> list[dict]:
+    """Search songs with a query `parse_query` already parsed.
+
+    Separate so a caller can loosen a query (drop its tag filters, say) without
+    re-serializing it.
+    """
     results = []
     for song in songs:
-        # Text search (all fields)
+        # Text search: what a result row shows (F9 — never the scraped artist)
         if parsed['text_terms']:
             search_text = ' '.join([
-                song.get('title', ''),
-                song.get('artist', ''),
-                song.get('composer', ''),
-                song.get('lyrics', ''),
-                song.get('first_line', ''),
+                song.get('title') or '',
+                ' '.join(song.get('covering_artists') or []),
+                song.get('composer') or '',
+                song.get('lyrics') or '',
+                song.get('first_line') or '',
             ]).lower()
             if not all(term in search_text for term in parsed['text_terms']):
                 continue
 
-        # Field filters (inclusion)
+        # Field filters (inclusion). artist: is a covering artist or the
+        # writer, as on the site — both are shown on the row.
         if parsed['artist_filter']:
-            if parsed['artist_filter'] not in (song.get('artist') or '').lower():
+            names = [a.lower() for a in song.get('covering_artists') or []]
+            names.append((song.get('composer') or '').lower())
+            if not any(parsed['artist_filter'] in n for n in names):
                 continue
         if parsed['title_filter']:
             if parsed['title_filter'] not in (song.get('title') or '').lower():

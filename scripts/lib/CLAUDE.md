@@ -125,7 +125,8 @@ scripts/lib/
 ├── query_artist_tags.py  # Optimized MusicBrainz artist tag queries
 ├── strum_machine.py      # Strum Machine API integration
 ├── fetch_tune.py         # Fetch tunes from TuneArch by URL
-├── search_index.py       # Search index utilities and testing
+├── search_index.py       # CLI search — matches the site (F9 fields), canon only
+├── search_gaps.py        # What visitors searched for and could not find (analytics → report)
 ├── add_song.py           # Add a song to manual/parsed/
 ├── process_pending.py    # GitHub Action: land one pending_songs row in works/
 ├── works_writer.py       # THE one writer of works/ (create/update/fork/add/metadata)
@@ -318,6 +319,14 @@ so repeat builds are byte-stable and quiet in `git status`. Stale
 `docs/data/songs/*.pro` (renames, deletions, suppressions, a lead sheet that
 went away) are pruned each build, the same way `docs/data/tabs/` is — after
 the tab provenance gate, so a failed build never mutates `docs/data/`.
+
+**`search_index.py` must match the site's search** — `search_gaps.py` re-runs
+real visitors' failed searches through it to classify them. Since F9 neither
+matches the scraped `artist` (free text and `artist:` use covering artists and
+the writer); it has no stemmed-word fallback and no virtual instrument tags,
+so it can find less than the site, never more. Change `search()` in
+`docs/js/search-core.js` and `search_parsed()` here together
+(`tests/test_search_index.py`).
 
 **Reading the corpus from Python**: `index.jsonl` alone is the canon slice.
 Tools that reason about the whole corpus (`curate`, `batch_tag_songs`,

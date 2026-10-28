@@ -19,6 +19,7 @@ Corpus size drifts constantly, so count it rather than quoting this file:
 ./scripts/utility help               # THE list of subcommands (~30 of them)
 ./scripts/utility refresh-musicbrainz  # Rebuild every MusicBrainz cache (local only)
 ./scripts/utility build-posts        # Build blog posts manifest
+./scripts/utility search-gaps        # What visitors searched for and couldn't find
 ./scripts/bootstrap --quick          # Rebuild docs/data/ from works/
 ```
 
@@ -589,6 +590,7 @@ change. (Older GitHub milestones still exist: `gh issue list --milestone "..."`.
 | Manage issues/milestones | `.claude/skills/github-project/SKILL.md` |
 | Write a blog post | mikebeaumier.com, in the Bluegrass Book dev log series (`docs/posts/` is the pre-move copy; `blog.html` only redirects) |
 | Analyze usage data | `analytics/dashboard.ipynb` |
+| See what visitors searched for and couldn't find | `./scripts/utility search-gaps` (`analytics/CLAUDE.md`) |
 | Analyze grassiness data | `analytics/grassiness_analysis.ipynb` |
 | Decide what to work on next | `docs/plans/2026-09-30-fix-it-list.md` (Status table) |
 | Open or screenshot one UI state (design work) | `design/ui-states/README.md` |

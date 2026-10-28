@@ -1554,6 +1554,9 @@ Lists can have multiple owners for collaborative curation.
 - **Analytics** (`analytics.js`) batches events to the `log_events` RPC.
   `supabase.rpc` resolves `{ error }` rather than throwing, so `flush()` checks
   it and re-queues the batch on failure (one flush interval of back-off).
+  `search` carries its `scope`, `search_result_click` says `from_list`, and
+  `openWork`'s not-found page logs `song_not_found`: `./scripts/utility
+  search-gaps` reads them back (see `analytics/CLAUDE.md`).
 
 ### Shareable Lists
 
