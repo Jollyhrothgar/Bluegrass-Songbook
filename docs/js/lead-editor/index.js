@@ -18,6 +18,7 @@ import { chordAt, declaredKey, currentSongKey } from './doc-model.js';
 import {
     SECTION_TYPES, markSelection, renameSection, setSectionTypeText, duplicateSectionText,
     moveSectionText, unlabelSection, deleteSectionText, diffChange,
+    sectionsForClipboard, placeSectionPaste, holdsSections,
 } from './section-ops.js';
 import { extractChords, isValidChord } from '../chords.js';
 import { parseChordPro, renderSectionsHtml } from '../renderers/chordpro.js';
@@ -153,6 +154,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
             onMouseDown: (e, v) => handleMouseDown(e, v),
             onClick: (e, v) => handleClick(e, v),
             onPaste: (e, v) => handlePaste(e, v),
+            onCopy: (e, v, cut) => handleCopy(e, cut),
         },
     });
     const view = editor.view;
@@ -922,11 +924,38 @@ export function mountLeadEditor({ host, hooks = {} }) {
         return true;
     }
 
-    // ---- paste -------------------------------------------------------------
+    // ---- copy / cut / paste -------------------------------------------------
+    /**
+     * Lyrics mode hides the section markers, so a selection of whole sections
+     * never holds them: put them on the clipboard (section-ops.js
+     * sectionsForClipboard), or a copied chorus pastes back as a verse. Lines
+     * from inside one section stay the browser's own copy.
+     */
+    function handleCopy(e, cut) {
+        if (mode !== 'lyrics' || !e.clipboardData) return false;
+        const s = view.state.selection;
+        if (s.ranges.length > 1 || s.main.empty) return false;
+        const clip = sectionsForClipboard(editor.getText(), s.main.from, s.main.to);
+        if (!clip) return false;
+        e.preventDefault();
+        e.clipboardData.setData('text/plain', clip.text);
+        // A user deletion, not a programmatic one, so the protect rules see it:
+        // a section wholly inside the range goes label and all, and the blank
+        // lines it leaves are tidied (doc-model.js clipDeletion).
+        if (cut) view.dispatch({ changes: { from: clip.from, to: clip.to }, userEvent: 'delete.cut', scrollIntoView: true });
+        return true;
+    }
     function handlePaste(e) {
-        if (!hooks.autoDetect?.()) return false;
         const raw = e.clipboardData?.getData('text/plain');
         if (!raw) return false;
+        if (!hooks.autoDetect?.()) {
+            // Auto-detect off: the text goes in as it is, but sections still
+            // land between sections in Lyrics mode, never nested in one.
+            if (mode !== 'lyrics' || !holdsSections(raw)) return false;
+            e.preventDefault();
+            insertConverted({ kind: 'chordpro', text: raw, raw: true });
+            return true;
+        }
         const res = convertPastedText(raw);
         if (res.kind !== 'chordpro') return false;
         e.preventDefault();
@@ -934,15 +963,33 @@ export function mountLeadEditor({ host, hooks = {} }) {
         return true;
     }
     function insertConverted(res) {
-        const sel0 = view.state.selection.main;
-        const empty = view.state.doc.length === 0;
-        const head = sel0.from;
-        const body = empty ? res.text.replace(/\n+$/, '\n') : res.text;
-        editor.change({
-            changes: { from: sel0.from, to: sel0.to, insert: body },
-            selection: { anchor: head + body.length },
-        }, { userEvent: 'input.paste' });
-        hooks.onPaste?.(res);
+        let sel0 = view.state.selection.main;
+        // In Lyrics mode pasted sections land between sections (section-ops.js
+        // placeSectionPaste). ChordPro mode shows the markers: a paste goes
+        // exactly where the caret is, as typed.
+        const sectioned = mode === 'lyrics' && holdsSections(res.text);
+        if (sectioned && !sel0.empty) {
+            // pasted over a selection: the selection goes first, as a user
+            // deletion so the protect rules apply, then the sections land
+            view.dispatch({ changes: { from: sel0.from, to: sel0.to }, userEvent: 'delete' });
+            sel0 = view.state.selection.main;
+        }
+        const placed = sectioned && placeSectionPaste(editor.getText(), sel0.from, res.text);
+        if (placed) {
+            editor.change({
+                changes: placed,
+                selection: { anchor: placed.from + placed.insert.replace(/\n+$/, '').length },
+            }, { userEvent: 'input.paste' });
+        } else {
+            const empty = view.state.doc.length === 0;
+            const head = sel0.from;
+            const body = empty ? res.text.replace(/\n+$/, '\n') : res.text;
+            editor.change({
+                changes: { from: sel0.from, to: sel0.to, insert: body },
+                selection: { anchor: head + body.length },
+            }, { userEvent: 'input.paste' });
+        }
+        if (!res.raw) hooks.onPaste?.(res);
     }
     /** The empty-sheet Paste button. Pages may only read the clipboard over HTTPS (or on localhost). */
     async function pasteFromClipboard() {

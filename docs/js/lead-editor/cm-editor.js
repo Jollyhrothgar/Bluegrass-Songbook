@@ -497,6 +497,8 @@ export function createLeadEditor({ parent, doc = '', mode = 'visual', displayCho
             mousedown: (e, view) => hooks.onMouseDown?.(e, view) || false,
             click: (e, view) => hooks.onClick?.(e, view) || false,
             paste: (e, view) => hooks.onPaste?.(e, view) || false,
+            copy: (e, view) => hooks.onCopy?.(e, view, false) || false,
+            cut: (e, view) => hooks.onCopy?.(e, view, true) || false,
         })),
     ];
 

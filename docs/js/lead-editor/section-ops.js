@@ -114,6 +114,141 @@ export function markSelection(text, from, to, type) {
     return wrapSelectionAsSection(text, from, to, type);
 }
 
+// ---------------------------------------------------------------------------
+// Copy / cut / paste of whole sections (Lyrics mode)
+// ---------------------------------------------------------------------------
+// In Lyrics mode the {start_of_*} / {end_of_*} lines are hidden widgets, so a
+// selection of the lyrics never holds them and the browser's copy took the
+// words alone: a copied chorus pasted back as a verse (Mike, 2026-10-27).
+
+const END_LINE = /^\s*\{(?:end_of_\w+|eo[vcbtg])\s*\}\s*$/i;
+const START_LINE = /^\s*\{(?:start_of_\w+|so[vcbtg])\b/im;
+const LEADING_CHORDS = /^(?:\[[^\]\n]*\])+/;
+const TRAILING_CHORDS = /(?:\[[^\]\n]*\])+$/;
+
+/** The index of the line holding `pos`. */
+function lineIndexAt(lines, pos) {
+    const i = lines.findIndex((l) => pos <= l.to);
+    return i < 0 ? lines.length - 1 : i;
+}
+
+/** An explicit lyric section's line extent: [start, end] (end is its {end_of_*} line when it has one). */
+function extentOf(section, lines) {
+    const end = section.endLine ?? lines.length - 1;
+    return { start: section.startLine, end, hasEnd: END_LINE.test(lines[end]?.text || '') };
+}
+
+/**
+ * What a copy of [from, to) puts on the clipboard, when it is a copy of SECTIONS:
+ * `{ text, from, to }`, where `from`/`to` is what a cut removes. Null when it is
+ * a copy of LINES, which the browser does as it always did.
+ *
+ *  - Lines from inside one section (or plain, untagged lines) are LINES: a line
+ *    repeated in a verse must not become a section of its own.
+ *  - A selection that covers every lyric line of a section, or crosses from one
+ *    section into another, is SECTIONS: every section it touches comes with its
+ *    own start and end lines, balanced (an end line is written when the
+ *    section had none), and a fully covered one is cut whole, label and all.
+ */
+export function sectionsForClipboard(text, from, to) {
+    if (from >= to) return null;
+    const { lines, sections } = analyzeDocument(text);
+    let first = lineIndexAt(lines, from);
+    let last = lineIndexAt(lines, to);
+    // a selection that starts at the very end of a line, or ends at the very
+    // start of one (a triple click), does not hold that line
+    if (from === lines[first].to && first < last) { first++; from = lines[first].from; }
+    if (to === lines[last].from && last > first) { last--; to = lines[last].to; }
+    // a chord at the edge of a line is part of the line
+    const lead = (l) => l.from + (l.text.match(LEADING_CHORDS)?.[0].length || 0);
+    const trail = (l) => l.to - (l.text.match(TRAILING_CHORDS)?.[0].length || 0);
+    if (from <= lead(lines[first])) from = lines[first].from;
+    if (to >= trail(lines[last])) to = lines[last].to;
+
+    const lyricSections = sections.filter((s) => s.explicit && !s.preformatted);
+    const inSection = new Map();     // line index -> the explicit section whose content it is
+    for (const s of lyricSections) {
+        const { start, end, hasEnd } = extentOf(s, lines);
+        for (let i = start + 1; i <= (hasEnd ? end - 1 : end); i++) inSection.set(i, s);
+    }
+    const selected = (l) => l.from < to && l.to > from;
+    const lyricsOf = (s) => lines.filter((l) => l.kind === 'lyric' && l.section === s);
+    const touched = lyricSections.filter((s) => lyricsOf(s).some(selected));
+    if (!touched.length) return null;
+    const covered = (s) => {
+        const ly = lyricsOf(s);
+        return ly.length > 0 && from <= ly[0].from && to >= ly[ly.length - 1].to;
+    };
+    const outside = lines.some((l) => l.kind === 'lyric' && selected(l) && !touched.includes(inSection.get(l.index)));
+    if (touched.length === 1 && !covered(touched[0]) && !outside) return null;
+
+    const out = [];
+    let open = null;
+    const close = () => {
+        if (!open) return;
+        const { end, hasEnd } = extentOf(open, lines);
+        out.push(hasEnd ? lines[end].text : `{end_of_${open.type}}`);
+        open = null;
+    };
+    for (let i = first; i <= last; i++) {
+        const l = lines[i];
+        // the markers of lyric sections are written fresh, balanced
+        if ((l.kind === 'label' && l.section && !l.section.preformatted) || (l.kind === 'hidden' && END_LINE.test(l.text))) continue;
+        const s = inSection.get(i) || null;
+        if (s !== open) {
+            close();
+            if (s) { out.push(lines[s.startLine].text); open = s; }
+        }
+        out.push(text.slice(Math.max(l.from, from), Math.min(l.to, to)));
+    }
+    close();
+
+    let cutFrom = from;
+    let cutTo = to;
+    for (const s of touched.filter(covered)) {
+        const { end, hasEnd } = extentOf(s, lines);
+        cutFrom = Math.min(cutFrom, lines[s.startLine].from);
+        if (hasEnd) cutTo = Math.max(cutTo, lines[end].to);
+    }
+    return { text: out.join('\n'), from: cutFrom, to: cutTo };
+}
+
+/** Does pasted text hold a section (a `{start_of_*}` line)? */
+export function holdsSections(insert) {
+    return START_LINE.test(insert);
+}
+
+/**
+ * Where pasted text that holds sections lands, as one change `{ from, to, insert }`
+ * (null when it holds none: an ordinary paste). Never inside a section, which
+ * would nest one in another: a caret inside a section (or a plain paragraph)
+ * pastes after it, a caret between sections pastes right there, always with
+ * one blank line either side.
+ */
+export function placeSectionPaste(text, pos, insert) {
+    if (!holdsSections(insert)) return null;
+    const body = insert.replace(/^\n+|\n+$/g, '');
+    const { lines, sections } = analyzeDocument(text);
+    const i = lineIndexAt(lines, pos);
+    const holder = sections.find((s) => {
+        if (s.preformatted) return false;
+        if (s.explicit) {
+            const { start, end } = extentOf(s, lines);
+            return i >= start && i <= end;
+        }
+        return i >= s.startLine && i <= (s.lastLyric ?? s.startLine);
+    });
+    let at;
+    if (holder?.explicit) at = lines[extentOf(holder, lines).end].to;
+    else if (holder) at = lines[holder.lastLyric ?? holder.startLine].to;
+    else at = lines[i].to;
+    let a = at;
+    while (a > 0 && text[a - 1] === '\n') a--;
+    let b = at;
+    while (b < text.length && text[b] === '\n') b++;
+    return { from: a, to: b, insert: `${a > 0 ? '\n\n' : ''}${body}${b < text.length ? '\n\n' : '\n'}` };
+}
+
 /** The smallest single replacement that turns `oldText` into `newText`. */
 export function diffChange(oldText, newText) {
     let start = 0;

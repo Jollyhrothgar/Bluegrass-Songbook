@@ -71,7 +71,7 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | C1 | List store rework | L | — | not started |
 | C2 | Song index freshness | M | — | not started |
 | D1–D7 | Library building blocks | L | `feature/ui-state-inventory` (design) | list, song-in-a-list, library and stage-sheet designs approved on the canvas (2026-10-02); playlist mode (D6) still to draw; build blocked on C1 |
-| E1–E6 | Editors | M–L each | — | not started |
+| E1–E6 | Editors | M–L each | — | not started, except E3's copy/paste of whole sections: fixed 2026-10-27 with G14 (`feature/feature-tour`) |
 | F1–F6 | Visual design | M–L | — | not started |
 | F7 | Tab view rework (Mike wants to lead this) | L | — | not started |
 | F8 | List view rework + a way to read notes (Mike wants to lead this) | L | `feature/ui-state-inventory` (design) | design approved on the canvas (2026-10-02); build after C1 |
@@ -1198,6 +1198,24 @@ on them.
   (`style.css:9170-9176`); no mid-word gaps where a chord chip is wider than
   its syllable ("go ne", "shi ning"); keyboard chord entry (arrows between
   slots, Up/Down between lines, Nashville digits); one undo stack.
+  - **Copy/paste drops a section's type** — **fixed 2026-10-27**
+    (`feature/feature-tour`, with G14): the root fix below, as
+    `section-ops.js` `sectionsForClipboard` / `placeSectionPaste` and the
+    editor's `copy` / `cut` handlers. (Mike, 2026-10-27; triaged, and
+    reproduced in Chromium the same day): copy a chorus in Lyrics mode and
+    paste it, and it comes back a verse. The section markers are hidden
+    atomic widgets there, so the browser's copy takes only the lyric lines
+    (clipboard: `"Sing it loud\nSing it proud"`), and untagged text is an
+    implicit verse. Duplicate keeps the type because it copies the marker
+    lines too (`section-ops.js` `duplicateSectionText`). ROOT FIX: a
+    `copy`/`cut` handler in `lead-editor/cm-editor.js` (Lyrics mode) that
+    writes the covered sections WITH their `{start_of_*}`/`{end_of_*}` lines
+    (sharing the section spans `doc-model.js` already has), and a paste that
+    lands inside a section moves to its boundary. Paste and smart paste stay
+    as they are: text with markers already passes through unchanged. Not a
+    fix: guessing the type on paste.
+  - **Drag a section up or down** with the mouse or a press-and-drag, in
+    addition to the label menu's Move (Mike, 2026-10-27): issue #309.
 - **E4 Tab editor traps** — Import .tef is undoable and confirms over unsaved
   edits (`work-view.js:2780-2789`, `facade.js:234-245`); "Done" becomes
   "Close" plus an "Unsubmitted changes" marker (`work-view.js:2821-2844`);

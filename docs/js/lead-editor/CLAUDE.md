@@ -40,7 +40,7 @@ enforces it; new modules go in `LAZY_MODULE_URLS`).
 | `chords-touch.js` | Chords-mode pointing: `cursorAtPoint` (tap / glide point -> a STOP hit `{pos, after, kind, rect, ring?}`), pure `pickItem` (taps, the ring) and `pickStop` (sticky glide), `tapTargets`, `seamAtPoint`, `seamOfChordEl`, `seamForPos`, `firstSeam` |
 | `chord-menu-model.js` | PURE sheet contents for a key: outside row, in-key row, More roots, decorations that compose (`applyDecoration`, `applyBass`), the bass row |
 | `chord-menu.js` | The chord panel DOM, always docked: the magnifier (`.chm-strip`) and the picker (`.chm-body`) in one root; the strip and hold-to-trackpad gestures (both feed `onGlide`) |
-| `section-ops.js` | PURE text transforms: mark selection, rename, retype, duplicate, move, unlabel, delete, `diffChange` |
+| `section-ops.js` | PURE text transforms: mark selection, rename, retype, duplicate, move, unlabel, delete, `diffChange`; what a copy of whole sections puts on the clipboard (`sectionsForClipboard`) and where pasted sections land (`placeSectionPaste`) |
 
 Shared: `chordGlyphHtml` in `../chords.js` (display only, the file stays ASCII,
 ALWAYS escapes the chord text - never pass chord text to innerHTML any other
@@ -103,6 +103,17 @@ override: with it, iOS drew a second selection and handles over the native one.
 - **Only the mode switch enters Chords** (2026-10-27): no double-click shortcut on any device; a double-click in Lyrics is the browser's word selection.
 - **Chords are greyed in Lyrics** (2026-10-27): `.le-mode-lyrics .le-cm .cl-chord-glyph` is secondary colour, opacity 0.5, default cursor; colour / opacity only, so the layout is the book's.
 - **Protected text** (2026-10-27): `protectDirectivesFilter` clips a USER delete / replace to the unprotected pieces (`doc-model.js::clipDeletion`), EXCEPT a section lying wholly inside the range: its `{start_of_*}` .. `{end_of_*}` lines go too (`freedSectionLines`), then the blank lines it leaves are tidied (no run of blank lines, none at an end the deletion reached) as one change. `{meta:}` / `{key:}` / other header directives and locked blocks (ABC / tab / grid) always stay. Partial deletes (held Backspace, all lyric lines but not the label line) keep labels. Select-all + Delete = just the metadata lines (`''` when there are none); select-all + paste puts the new text after the metadata.
+- **Copy / cut / paste of whole sections** (2026-10-27): the section markers are hidden widgets here, so a selection
+  of the lyrics never holds them and the browser's copy took the words alone: a copied chorus pasted back as a verse.
+  `handleCopy` (the `copy` / `cut` DOM handlers in `cm-editor.js`) asks `section-ops.js::sectionsForClipboard`: lines
+  from inside ONE section (or plain lines) stay the browser's copy, untouched, so a line repeated in a verse never
+  becomes a section; a selection covering a whole section, or crossing from one section into another, puts every
+  section it touches on the clipboard with its own start and end lines, balanced (an end line is written when the
+  section had none; select-all copies the song exactly). A cut of whole sections is dispatched as a USER deletion of
+  the widened range, so the protect rules take the label and tidy the blank lines. Pasted text holding a section
+  (`holdsSections`) lands between sections in Lyrics mode (`placeSectionPaste`: after the section or plain paragraph
+  the caret is in, a blank line either side, never nested), with auto-detect on or off; ChordPro mode pastes at the
+  caret as typed. e2e: `visual-editor.spec.js` "copy and paste of whole sections".
 - The empty-sheet hint (`.le-empty`) is a SIBLING overlay of CodeMirror's
   content, not a `placeholder()` (CodeMirror clones the node and makes it inert,
   which killed the Paste button). Paste reads the clipboard only where
