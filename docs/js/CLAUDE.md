@@ -878,9 +878,15 @@ from those, and once chose the old banjo app icon over the favicon
 ## Testing
 
 ```bash
-npm test              # Run unit tests (Vitest)
+npm test              # Run unit tests once (Vitest) and exit
+npm run test:watch    # Unit tests in watch mode (re-runs on save; never exits)
 npm run test:e2e      # Run E2E tests (Playwright, requires server)
 ```
+
+`npm test` was plain `vitest` until 2026-10-27, which is watch mode outside
+CI: from an agent or script it never exited and looked like a hang. Unit
+tests pass on any Node: since Node 25, Node's own empty global
+`localStorage` hid jsdom's, which `__tests__/setup-webstorage.js` undoes.
 
 ### Chrome DevTools MCP
 
