@@ -1,7 +1,7 @@
 // The glide's point -> position mapping (pure: a fake layout), the driver's synchronous overlay,
 // and the one-place-per-letter invariant.
 import { describe, it, expect } from 'vitest';
-import { pickItem, pickStop } from '../lead-editor/chords-touch.js';
+import { pickItem, pickStop, rowSpans, MIN_HIT_PX } from '../lead-editor/chords-touch.js';
 import { createGlideDriver } from '../lead-editor/glide-driver.js';
 import { normalizeCursor, snapCursor } from '../lead-editor/doc-model.js';
 import { HYSTERESIS, SETTLE_MS } from '../lead-editor/chord-motion.js';
@@ -53,6 +53,36 @@ describe('pickItem: a point on a drawn line', () => {
     });
     it('an empty layout is null', () => {
         expect(pickItem([], 1, 1)).toBe(null);
+    });
+});
+
+describe('rowSpans: a narrow stop is as easy to hit as a word', () => {
+    // "There's a land" with 10px letters: There's 0, gap 70, a 80, gap 90, land 100, the slot after the words 140
+    const kinds = [['syllable', 0], ['gap', 70], ['syllable', 80], ['gap', 90], ['syllable', 100]];
+    const line = [...kinds.map(([kind, left], i) => ({ s: i, after: 0, kind, left, top: 0, bottom: 20 })),
+        { s: 9, after: 1, kind: 'after', left: 140, top: 0, bottom: 20 }];
+    const spans = rowSpans(line);
+    it('a one-space gap grows to MIN_HIT_PX where its neighbours have room', () => {
+        expect(spans[3].hi - spans[3].lo).toBe(10 + (MIN_HIT_PX - 10) / 2);   // left neighbour "a" has no room, so one side only
+        expect(spans[1].hi - spans[1].lo).toBe(10 + (MIN_HIT_PX - 10) / 2);   // right neighbour "a" has no room
+        expect(pickItem(line, 66, 10).kind).toBe('gap');                         // 4px into "There's" now means the gap after it
+        expect(pickItem(line, 104, 10).pos).toBe(3);                             // and 4px into "land" the gap before it
+    });
+    it('never takes width from a stop that is already narrow, nor a word\'s centre', () => {
+        expect(spans[2]).toEqual({ lo: 80, hi: 90 });                            // "a" keeps its whole letter
+        expect(pickItem(line, 35, 10).pos).toBe(0);                              // the middle of There's
+        expect(pickItem(line, 120, 10).pos).toBe(4);                             // the middle of land
+        expect(pickItem(line, 400, 10).after).toBe(1);                           // past the words: the slot
+    });
+    it('stops that are wide enough keep their drawn edges', () => {
+        const wide = [0, 100, 200].map((left, i) => ({ s: i, after: 0, kind: 'syllable', left, top: 0, bottom: 20 }));
+        expect(rowSpans(wide).map((sp) => sp.lo)).toEqual([0, 100, 200]);
+    });
+    it('the glide is sticky on a grown gap, by its grown width', () => {
+        const prev = { pos: 1, after: 0 };                                      // on the gap after There's [63, 80)
+        expect(pickStop(line, 81, 10, prev).pos).toBe(1);                       // just into "a": not yet
+        expect(pickStop(line, 62, 10, prev).pos).toBe(1);                       // just into There's: not yet
+        expect(pickStop(line, 50, 10, prev).pos).toBe(0);                       // past the edge by HYSTERESIS x half of There's
     });
 });
 

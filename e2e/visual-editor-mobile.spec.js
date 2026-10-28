@@ -8,7 +8,7 @@
 // synthetic pointer events.
 import { test, expect } from './fixtures.js';
 import {
-    CM, SHEET, setLead, leadText, leadReady, setMode, openEditor, boxPos, boxAt, syllableCentres, scrollLineToTop,
+    CM, SHEET, openFrozenOldHomePlace, setLead, leadText, leadReady, setMode, openEditor, boxPos, boxAt, syllableCentres, scrollLineToTop,
     boxState, lineEndPoint, centreOf, touchDrag, along, boxStopKind, stepKinds, segmentRects,
 } from './helpers/lead-editor.js';
 
@@ -316,7 +316,7 @@ test.describe('Chords mode: tap to seam', () => {
     ];
 
     test('tapping the centre of a syllable lands the box on that syllable (>= 94%)', async ({ page }) => {
-        await openEditor(page, '#edit/old-home-place');
+        await openFrozenOldHomePlace(page);
         await setMode(page, 'chords');
         let total = 0;
         const misses = [];
@@ -553,7 +553,7 @@ test.describe('long-press on the chart glides the cursor (touch)', () => {
             const kind = await boxStopKind(page);
             expect(kind, JSON.stringify(await boxState(page))).not.toBeNull();
             if (kind === 'syllable') await expect(page.locator(`${CM} .cl-box-text`)).toHaveCount(1);
-            if (kind === 'gap') await expect(page.locator(`${CM} .cl-gap-bar`)).toHaveCount(1);
+            if (kind === 'gap') await expect(page.locator(`${CM} .cl-slot-gap .cl-slot-text`)).toHaveCount(1);
             expect(await leadText(page)).toBe('Many long years since I left my old home  now');
         }
         void first;
@@ -674,7 +674,7 @@ test.describe('chart glide: 1:1 with the finger, settle on lift, loupe', () => {
                 seen = await page.evaluate((fy) => {
                     const l = document.querySelector('.le-loupe');
                     const r = l.getBoundingClientRect();
-                    const boxSel = '.cl-gap-bar, .cl-box-chord .cl-chord-glyph, .cl-slot-pill, .cl-box-text';
+                    const boxSel = '.cl-box-chord .cl-chord-glyph, .cl-slot-pill, .cl-box-text';
                     const inL = l.querySelector(boxSel);
                     const inC = document.querySelector(`#editor-lead .cm-content ${boxSel.split(', ').join(', #editor-lead .cm-content ')}`);
                     // the cursor is DRAWN in the bubble (the marker CSS reaches the clone), in the chart's own font
@@ -1237,7 +1237,7 @@ test.describe('holding Backspace in Lyrics mode', () => {
 // after the words. Never a letter; never a non-gap space.
 // ---------------------------------------------------------------------------------------------
 test.describe('where the cursor stops (phone)', () => {
-    test('a gap stop shows the slim bar (no text outline), and D there is written `years[D] since`', async ({ page }) => {
+    test('a gap stop is boxed like the slot after the words, and D there is written `years[D] since`', async ({ page }) => {
         await openEditor(page);
         await setLead(page, 'Many long years since home');
         await setMode(page, 'chords');
@@ -1247,23 +1247,54 @@ test.describe('where the cursor stops (phone)', () => {
         await page.locator(`${SHEET} .chm-next`).tap();                  // years -> the gap after it
         expect(await boxStopKind(page)).toBe('gap');
         expect((await boxState(page)).pos).toBe(text0.indexOf('years') + 5);
-        await expect(page.locator(`${CM} .cl-gap-bar`)).toHaveCount(1);
-        await expect(page.locator(`${CM} .cl-gap-bar`)).toBeVisible();
+        await expect(page.locator(`${CM} .cl-slot-gap .cl-slot-text`)).toHaveCount(1);
+        await expect(page.locator(`${CM} .cl-slot-gap .cl-slot-text`)).toBeVisible();
+        await expect(page.locator(`${CM} .cl-slot-gap .cl-slot-pill`)).toBeVisible();
         await expect(page.locator(`${CM} .cl-box-text`)).toHaveCount(0);
         await page.locator(`${SHEET} .chm-cell[data-chord="D"]`).tap();
         expect(await leadText(page)).toBe('Many long years[D] since home');
         expect(await boxStopKind(page)).toBe('gap');                     // the cursor stays on the gap, now holding D
-        await expect(page.locator(`${CM} .cl-gap-bar`)).toHaveCount(1);
+        await expect(page.locator(`${CM} .cl-slot-gap .cl-slot-text`)).toHaveCount(1);
+        await expect(page.locator(`${CM} .cl-slot-gap .cl-slot-pill`)).toHaveCount(0);   // D's own glyph is boxed instead
     });
 
-    test('the magnifier strip mirrors the gap bar', async ({ page }) => {
+    test('a gap is boxed like the slot after the words, and a tap near it lands on it', async ({ page }) => {
+        await openEditor(page);
+        await setLead(page, 'Many long years since home');
+        await setMode(page, 'chords');
+        await scrollLineToTop(page, 'Many long');
+        const text0 = await leadText(page);
+        const gapPos = text0.indexOf('years') + 5;
+        const boxOf = (sel) => page.evaluate((q) => {
+            const t = document.querySelector(q);
+            if (!t) return null;
+            const r = t.getBoundingClientRect();
+            return { outline: getComputedStyle(t).outlineStyle, h: Math.round(r.height), w: r.width, cx: (r.left + r.right) / 2, cy: (r.top + r.bottom) / 2 };
+        }, sel);
+        await page.evaluate((p) => document.querySelector('#editor-lead').__lead.editor.setBox({ pos: p, active: true }), gapPos);
+        const gap = await boxOf('#editor-lead .cl-slot-gap .cl-slot-text');
+        await page.evaluate((p) => document.querySelector('#editor-lead').__lead.editor.setBox({ pos: p, after: 1, active: true }), text0.length);
+        const slot = await boxOf('#editor-lead .cl-slot-after .cl-slot-text');
+        expect(gap).not.toBeNull();
+        expect(gap.outline).toBe(slot.outline);
+        expect(gap.h).toBe(slot.h);                                       // the same box on the lyric row
+        expect(gap.w).toBeGreaterThan(6);
+        // a tap a few px either side of the space (on the end of "years" / the start of "since") still means the gap
+        for (const dx of [-6, 0, 6]) {
+            await page.evaluate(() => document.querySelector('#editor-lead').__lead.editor.setBox({ pos: 0, active: true }));
+            await page.touchscreen.tap(gap.cx + dx, gap.cy);
+            expect(await boxState(page), `dx ${dx}`).toMatchObject({ pos: gapPos });
+        }
+    });
+
+    test('the magnifier strip mirrors the gap box', async ({ page }) => {
         await openEditor(page);
         await setLead(page, 'Many long years since home');
         await setMode(page, 'chords');
         const text0 = await leadText(page);
         await page.evaluate((p) => document.querySelector('#editor-lead').__lead.editor.setBox({ pos: p, active: true }), text0.indexOf('years'));
         await page.locator(`${SHEET} .chm-next`).tap();
-        await expect(page.locator('.chm-strip-view .cl-gap-bar')).toHaveCount(1);
+        await expect(page.locator('.chm-strip-view .cl-slot-gap .cl-slot-text')).toHaveCount(1);
         await expect(page.locator('.chm-strip-view .cl-box-text')).toHaveCount(0);
     });
 
