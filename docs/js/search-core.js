@@ -406,7 +406,8 @@ function flushPendingSearch() {
         analyticsDebounceTimer = null;
     }
     if (pendingSearchData && pendingSearchData.query !== lastRecordedQuery) {
-        analyticsTrackSearch(pendingSearchData.query, pendingSearchData.resultCount, pendingSearchData.filters);
+        analyticsTrackSearch(pendingSearchData.query, pendingSearchData.resultCount,
+            pendingSearchData.filters, pendingSearchData.scope);
         lastRecordedQuery = pendingSearchData.query;
     }
     pendingSearchData = null;
@@ -676,6 +677,12 @@ export function searchableSongs() {
     return allSongs.filter(s => s.indexed !== false);
 }
 
+/** What a search covers, for analytics: 'canon', 'canon+dungeon' or 'dungeon'. */
+function searchScope() {
+    if (dungeonMode) return 'dungeon';
+    return includeDungeon ? 'canon+dungeon' : 'canon';
+}
+
 /** How the stats line names the scope: '', ' in the dungeon', or ' incl. the dungeon'. */
 function scopeSuffix() {
     if (dungeonMode) return ' in the dungeon';
@@ -899,6 +906,7 @@ export function search(query, options = {}) {
     pendingSearchData = {
         query,
         resultCount: dedupedResults.length,
+        scope: searchScope(),
         filters: {
             has_artist: !!artistFilter,
             has_title: !!titleFilter,
@@ -1368,12 +1376,13 @@ function setupResultEventListeners(resultsDiv) {
             const versions = groupId ? (songGroups[groupId] || []) : [];
             const index = parseInt(resultItem.dataset.index, 10);
 
-            // Flush pending search before recording click
-            flushPendingSearch();
-            trackSearchResultClick(resultItem.dataset.id, index, searchInputEl?.value || '');
-
             // Open song - auto-fullscreen if coming from a list/favorites view
             const fromList = !!getViewingListId();
+
+            // Flush pending search before recording click. A list view's rows
+            // log here too, so the click says which it was (search-gaps).
+            flushPendingSearch();
+            trackSearchResultClick(resultItem.dataset.id, index, searchInputEl?.value || '', fromList);
 
             // Check for part-qualified item ref (from list view)
             const partId = resultItem.dataset.partId;

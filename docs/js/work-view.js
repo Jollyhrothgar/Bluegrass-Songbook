@@ -72,7 +72,7 @@ import { isPercussionTrack, pitchedTracks } from './renderers/otf-tracks.js';
 import { clearListView, openNotesSheet } from './lists.js';
 import { showListPicker, updateTriggerButton } from './list-picker.js';
 import { openFlagModal } from './flags.js';
-import { trackSongView } from './analytics.js';
+import { trackSongView, trackSongNotFound } from './analytics.js';
 import { setTopBar, setBottomBand, pill, setChromeAutoHide } from './shell.js';
 import { practiceLinks, buildKeyPill, buildDisplayPill, buildInfoPill, buildExportPill, handleExport } from './song-controls.js';
 import { showToast } from './toast.js';
@@ -584,6 +584,9 @@ export async function openWork(workId, options = {}) {
         }
         // Real error state with a way out, not a dead-end spinner
         console.error(`Work not found: ${workId}`);
+        trackSongNotFound(workId,
+            fromDeepLink ? 'deep_link' : fromList ? 'list' : fromHistory ? 'history' : 'app',
+            suggestions.length);
         teardownTablatureView();   // entering the song view owns its teardown
         setCurrentView('song');
         const container = document.getElementById('song-content');

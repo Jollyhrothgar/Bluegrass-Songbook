@@ -188,28 +188,48 @@ export function initAnalytics() {
 // CONVENIENCE WRAPPERS
 // ============================================
 
-// Search tracking
-export function trackSearch(query, resultCount, filters) {
+// Search tracking. `scope` is what was searched — 'canon', 'canon+dungeon'
+// ("Include the dungeon") or 'dungeon' (dungeon mode) — so a result count can
+// be read: `./scripts/utility search-gaps` reads these back.
+export function trackSearch(query, resultCount, filters, scope = 'canon') {
     track('search', {
         query: query.slice(0, 200),  // Limit query length
         result_count: resultCount,
         filters: filters,
-        has_results: resultCount > 0
+        has_results: resultCount > 0,
+        scope: scope
     });
 
     if (resultCount === 0 && query.trim().length > 0) {
         track('zero_results', {
             query: query.slice(0, 200),
-            filters: filters
+            filters: filters,
+            scope: scope
         });
     }
 }
 
-export function trackSearchResultClick(songId, position, query) {
+// `fromList`: a row in a list view, which renders into the same container
+// and lands here too — not a search result being found.
+export function trackSearchResultClick(songId, position, query, fromList = false) {
     track('search_result_click', {
         song_id: songId,
         position: position,
-        query: (query || '').slice(0, 100)
+        query: (query || '').slice(0, 100),
+        from_list: fromList
+    });
+}
+
+// A song page that does not exist. `source` is how the visitor got there
+// ('deep_link' | 'list' | 'history' | 'app'); the referrer only means
+// something for a deep link — it is where the whole visit began.
+export function trackSongNotFound(songId, source, suggestionCount) {
+    track('song_not_found', {
+        song_id: (songId || '').slice(0, 200),
+        source: source,
+        suggestions: suggestionCount,
+        path: (window.location.pathname + window.location.hash).slice(0, 200),
+        referrer: source === 'deep_link' ? (document.referrer || null) : null
     });
 }
 
