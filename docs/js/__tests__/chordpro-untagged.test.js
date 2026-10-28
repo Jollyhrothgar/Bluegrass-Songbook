@@ -121,20 +121,13 @@ describe('parseChordPro: ABC untouched', () => {
 });
 
 describe('corpus regression', () => {
-    const worksDir = path.resolve(__dirname, '../../../works');
-    const files = fs.existsSync(worksDir)
-        ? fs.readdirSync(worksDir).flatMap(d => {
-            const dir = path.join(worksDir, d);
-            return fs.statSync(dir).isDirectory()
-                ? fs.readdirSync(dir).filter(f => f.endsWith('.pro')).map(f => path.join(dir, f))
-                : [];
-        })
-        : [];
+    // 300 real charts pinned on 2026-10-28 (fixtures/roundtrip-corpus.json):
+    // the live works/ can be edited in the app, and a test must not break when it is.
+    const corpus = JSON.parse(fs.readFileSync(path.join(__dirname, 'fixtures/roundtrip-corpus.json'), 'utf8'));
 
     it('no lead sheet renders fewer lyric lines than it contains', () => {
         const bad = [];
-        for (const f of files) {
-            const text = fs.readFileSync(f, 'utf8');
+        for (const { id, text } of corpus) {
             const stripped = text.replace(/\{start_of_abc\}[\s\S]*?\{end_of_abc\}/gi, '');
             const expected = stripped.split('\n')
                 .filter(l => l.trim() && !/^\s*\{.*\}\s*$/.test(l)).length;
@@ -142,8 +135,9 @@ describe('corpus regression', () => {
             const got = sections
                 .filter(s => s.type !== 'abc' && s.type !== 'comment')
                 .reduce((n, s) => n + s.lines.filter(l => l.charCodeAt(0) !== 1 && l.trim()).length, 0);
-            if (got < expected) bad.push(`${path.relative(worksDir, f)}: ${got} < ${expected}`);
+            if (got < expected) bad.push(`${id}: ${got} < ${expected}`);
         }
         expect(bad).toEqual([]);
+        expect(corpus).toHaveLength(300);
     });
 });

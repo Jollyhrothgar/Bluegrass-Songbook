@@ -20,14 +20,16 @@ import { TabRenderer } from '../renderers/tablature.js';
 // repo root instead of resolving relative to this module.
 const REPO_ROOT = (() => {
     let dir = process.cwd();
-    while (!fs.existsSync(path.join(dir, 'works')) && path.dirname(dir) !== dir) {
+    while (!fs.existsSync(path.join(dir, 'package.json')) && path.dirname(dir) !== dir) {
         dir = path.dirname(dir);
     }
     return dir;
 })();
 
+// A pinned copy of works/foggy-mountain-breakdown/banjo.otf.json
+// (2026-10-28): the live tab can be corrected in the app.
 const FMB = JSON.parse(fs.readFileSync(path.join(
-    REPO_ROOT, 'works/foggy-mountain-breakdown/banjo.otf.json'), 'utf8'));
+    REPO_ROOT, 'docs/js/__tests__/fixtures/foggy-mountain-breakdown-banjo.otf.json'), 'utf8'));
 
 const TECH = new Set(['h', 'p', '/']);
 

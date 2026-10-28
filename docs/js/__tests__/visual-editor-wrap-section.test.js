@@ -180,8 +180,10 @@ describe('metadata stays put', () => {
 });
 
 describe('a selection that crosses a section boundary re-sections the document', () => {
-    // "sawmill" at the end of Verse 2 through "What have" in the Chorus after it
-    const real = readFileSync(resolve(process.cwd(), 'works/old-home-place/lead-sheet.pro'), 'utf8');
+    // "sawmill" at the end of Verse 2 through "What have" in the Chorus after it.
+    // A pinned copy of Old Home Place's chart (as of 2026-10-27): the live one
+    // can be edited in the app, and this test broke CI when it was.
+    const real = readFileSync(resolve(process.cwd(), 'docs/js/__tests__/fixtures/old-home-place.pro'), 'utf8');
     const labels = (t) => analyzeDocument(t).sections.filter((s) => s.explicit).map((s) => s.label);
     const lyricLines = (t) => parseChordPro(t).sections.flatMap((s) => s.lines).filter((l) => l.trim() && !l.startsWith('{'));
 

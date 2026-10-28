@@ -178,18 +178,14 @@ describe('round-trip', () => {
 });
 
 describe('corpus round-trip (property test)', () => {
-    it('round-trips 300 sampled works after normalization', () => {
-        const worksDir = path.resolve(__dirname, '../../../works');
-        const dirs = fs.readdirSync(worksDir).sort().slice(0, 400);
-        let tested = 0;
-        for (const d of dirs) {
-            const f = path.join(worksDir, d, 'lead-sheet.pro');
-            if (!fs.existsSync(f)) continue;
-            const src = fs.readFileSync(f, 'utf8');
-            const out = serializeSong(parseSong(src));
-            expect(normalize(out), `round-trip failed for works/${d}`).toBe(normalize(src));
-            if (++tested >= 300) break;
+    // A snapshot of the first 300 lead sheets in works/ (alphabetical, taken
+    // 2026-10-28), so an edit to a song in the app can't fail this test.
+    it('round-trips 300 real charts after normalization', () => {
+        const corpus = JSON.parse(fs.readFileSync(path.join(__dirname, 'fixtures/roundtrip-corpus.json'), 'utf8'));
+        for (const { id, text } of corpus) {
+            const out = serializeSong(parseSong(text));
+            expect(normalize(out), `round-trip failed for ${id}`).toBe(normalize(text));
         }
-        expect(tested).toBeGreaterThan(100);
+        expect(corpus).toHaveLength(300);
     });
 });
