@@ -549,7 +549,13 @@ Lyrics. Each mode does one job:
 changes (one undo step each). `#editor-content` is a hidden fallback textarea
 that only shows if the CodeMirror editor cannot mount. Smart paste
 (`convertPastedText`) runs on paste in Lyrics mode and fills empty
-title/artist; the auto-detect checkbox still gates it.
+title/artist; the auto-detect checkbox still gates it. A heading for a played
+part (`[Intro]`, `[Interlude]`, `[Instrumental]`, `[Break]`, `[Solo]`,
+`[Outro]`, `[Tag]`, `[Ending]`) becomes a real section with that name, and a
+line of chords with no words under it becomes a chords-only line spaced as the
+editor writes one (`[G]   [B7]    [C]   [G]`); both were `{comment: …}` notes
+until 2026-10-28, which hid the chords and kept them out of transposition.
+Other headings (`[Capo 2]`) are still notes.
 
 Functions prefixed with `editor*`:
 - `enterEditMode(song)` - Open editor with existing song

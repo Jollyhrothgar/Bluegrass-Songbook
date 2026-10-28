@@ -254,6 +254,95 @@ test.describe('Editor Lyrics mode', () => {
     });
 });
 
+test.describe('Paste just works (no click first)', () => {
+    const SHEET = 'G       C       G\nAmazing grace how sweet the sound\nD       G\nThat saved a wretch like me';
+    async function openWithClipboard(page, context, text) {
+        await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+        await page.goto('/#add');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
+        await leadReady(page);
+        await page.evaluate((t) => navigator.clipboard.writeText(t), text);
+    }
+
+    test('a new song opens with the caret in the sheet, and ⌘V straight away pastes the song', async ({ page, context }) => {
+        await openWithClipboard(page, context, SHEET);
+        expect(await page.evaluate(() => !!document.activeElement?.closest('#editor-lead .cm-content'))).toBe(true);
+        await page.keyboard.press('ControlOrMeta+V');
+        await expect.poll(() => leadText(page)).toContain('[G]Amazing');
+    });
+
+    test('⌘V pastes into the song even when focus is somewhere else on the page', async ({ page, context }) => {
+        await openWithClipboard(page, context, SHEET);
+        await page.evaluate(() => { document.activeElement?.blur(); document.querySelector('#metadata-summary')?.focus(); });
+        await page.keyboard.press('ControlOrMeta+V');
+        await expect.poll(() => leadText(page)).toContain('[D]That');
+        expect(await page.evaluate(() => !!document.activeElement?.closest('#editor-lead .cm-content'))).toBe(true);
+    });
+
+    test('a chord sheet with Windows line endings (\\r\\n, as Ultimate Guitar copies) pastes whole', async ({ page, context }) => {
+        const errors = [];
+        page.on('pageerror', (e) => errors.push(e.message));
+        await openWithClipboard(page, context, SHEET.replace(/\n/g, '\r\n'));
+        await page.keyboard.press('ControlOrMeta+V');
+        await expect.poll(() => leadText(page)).toContain('[D]That');
+        expect(await leadText(page)).not.toMatch(/\r/);
+        expect(errors).toEqual([]);
+    });
+
+    test('plain text with Windows line endings pastes whole too', async ({ page, context }) => {
+        const errors = [];
+        page.on('pageerror', (e) => errors.push(e.message));
+        await openWithClipboard(page, context, 'Just some words\r\nand a second line');
+        await page.evaluate(() => { document.activeElement?.blur(); document.querySelector('#metadata-summary')?.focus(); });
+        await page.keyboard.press('ControlOrMeta+V');
+        await expect.poll(() => leadText(page)).toBe('Just some words\nand a second line');
+        expect(errors).toEqual([]);
+    });
+
+    test('a paste into the title field stays in the title', async ({ page, context }) => {
+        await openWithClipboard(page, context, 'Amazing Grace');
+        await page.locator('#metadata-summary').click();
+        await page.locator('#editor-title').focus();
+        await page.keyboard.press('ControlOrMeta+V');
+        await expect(page.locator('#editor-title')).toHaveValue('Amazing Grace');
+        expect(await leadText(page)).toBe('');
+    });
+
+    test('⌘V in Chords mode goes back to Lyrics and pastes', async ({ page, context }) => {
+        await openWithClipboard(page, context, SHEET);
+        await setLead(page, 'Some words here');
+        await page.locator('#editor-mode-chords').click();
+        await page.evaluate(() => document.activeElement?.blur());
+        await page.keyboard.press('ControlOrMeta+V');
+        await expect.poll(() => leadText(page)).toContain('[G]Amazing');
+        await expect(page.locator('#editor-mode-lyrics')).toHaveAttribute('aria-pressed', 'true');
+    });
+});
+
+test.describe('Pasted played sections ([Intro], [Interlude], ...)', () => {
+    test('arrive as real sections with visible chord lines, which the section menu can delete', async ({ page }) => {
+        await page.goto('/#add');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
+        await leadReady(page);
+        const sheet = '[Verse 1]\nG                B7\nIt\'s been ten long years\n\n[Interlude]\nG B7 C G\nG    D\n\n[Verse 2]\nG\nI fell in love';
+        await page.locator(CM).click();
+        await page.evaluate((text) => {
+            const dt = new DataTransfer();
+            dt.setData('text/plain', text);
+            document.querySelector('#editor-lead .cm-content').dispatchEvent(new ClipboardEvent('paste', { clipboardData: dt, bubbles: true, cancelable: true }));
+        }, sheet);
+        await expect.poll(() => leadText(page)).toContain('{start_of_interlude: Interlude}');
+        const label = page.locator('#editor-lead .section-label', { hasText: 'Interlude' });
+        await expect(label).toBeVisible();
+        await expect(page.locator('#editor-lead .cm-line', { hasText: 'B7' }).first()).toBeVisible();   // its chords show
+        expect(await page.locator('#editor-lead .cl-chord').allTextContents()).toEqual(expect.arrayContaining(['G', 'B7', 'C', 'D']));
+        await label.click();
+        await page.locator('.le-labelmenu').getByRole('menuitem', { name: 'Delete section' }).click();
+        expect(await leadText(page)).not.toContain('Interlude');
+        expect(await leadText(page)).toContain('I fell in love');
+    });
+});
+
 test.describe('ChordPro Conversion', () => {
     test('paste with chord-above-lyrics format converts to ChordPro', async ({ page }) => {
         await page.goto('/#add');

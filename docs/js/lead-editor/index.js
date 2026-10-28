@@ -14,9 +14,9 @@
 import { createLeadEditor, DRAG_EVENT } from './cm-editor.js';
 import { createChordMenu } from './chord-menu.js';
 import { createSusMemory } from './chord-menu-model.js';
-import { chordAt, declaredKey, currentSongKey } from './doc-model.js';
+import { chordAt, declaredKey, currentSongKey, clipDeletion } from './doc-model.js';
 import {
-    SECTION_TYPES, markSelection, renameSection, setSectionTypeText, duplicateSectionText,
+    SECTION_TYPES, markSelection, noteSelection, setNoteText, renameSection, setSectionTypeText, duplicateSectionText,
     moveSectionText, unlabelSection, deleteSectionText, diffChange,
     sectionsForClipboard, placeSectionPaste, holdsSections,
 } from './section-ops.js';
@@ -146,6 +146,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
             onHistory(h) { hooks.onHistory?.(h); },
             onChordsRemoved(n) { undoToast(`Removed ${n} chord${n === 1 ? '' : 's'}`); },
             onSectionLabel: (section, el) => openLabelMenu(section, el),
+            onComment: (_block, el) => openCommentMenu(el),
             onMouseDown: (e, v) => handleMouseDown(e, v),
             onClick: (e, v) => handleClick(e, v),
             onPaste: (e, v) => handlePaste(e, v),
@@ -471,7 +472,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
     function syncRing() {
         if (ring.classList.contains('dragging')) return;        // the glide overlay is drawing it
         const target = mode === 'chords' && editor.getBox()
-            ? (view.contentDOM.querySelector('.cl-gap-bar') || view.contentDOM.querySelector('.cl-box-chord .cl-chord-glyph, .cl-slot-pill')) : null;
+            ? view.contentDOM.querySelector('.cl-box-chord .cl-chord-glyph, .cl-slot-pill') : null;
         if (!target) { ring.classList.add('hidden'); return; }
         const first = ring.classList.contains('hidden');
         ring.classList.toggle('settle', !first);
@@ -933,19 +934,21 @@ export function mountLeadEditor({ host, hooks = {} }) {
         if (cut) view.dispatch({ changes: { from: clip.from, to: clip.to }, userEvent: 'delete.cut', scrollIntoView: true });
         return true;
     }
-    function handlePaste(e) {
-        const raw = e.clipboardData?.getData('text/plain');
-        if (!raw) return false;
-        if (!hooks.autoDetect?.()) {
-            // Auto-detect off: the text goes in as it is, but sections still
-            // land between sections in Lyrics mode, never nested in one.
-            if (mode !== 'lyrics' || !holdsSections(raw)) return false;
-            e.preventDefault();
-            insertConverted({ kind: 'chordpro', text: raw, raw: true });
-            return true;
-        }
+    /** The clipboard's text with `\n` line endings: the editor drops every `\r`, so a length taken before that is wrong. */
+    const clipText = (raw) => (raw ? raw.replace(/\r\n?/g, '\n') : raw);
+    /**
+     * What a paste of `raw` inserts as ChordPro, or null for plain text. Auto-detect off: the text goes in as it is, but
+     * sections still land between sections in Lyrics mode, never nested in one.
+     */
+    function pasteResult(raw) {
+        if (!hooks.autoDetect?.()) return mode === 'lyrics' && holdsSections(raw) ? { kind: 'chordpro', text: raw, raw: true } : null;
         const res = convertPastedText(raw);
-        if (res.kind !== 'chordpro') return false;
+        return res.kind === 'chordpro' ? res : null;
+    }
+    function handlePaste(e) {
+        const raw = clipText(e.clipboardData?.getData('text/plain'));
+        const res = raw && pasteResult(raw);
+        if (!res) return false;
         e.preventDefault();
         insertConverted(res);
         return true;
@@ -979,20 +982,46 @@ export function mountLeadEditor({ host, hooks = {} }) {
         }
         if (!res.raw) hooks.onPaste?.(res);
     }
+    /** Put pasted text where the cursor is: converted to ChordPro when it is a chord sheet (and auto-detect is on), else as is. */
+    function insertPasted(raw) {
+        const res = pasteResult(raw);
+        if (res) { insertConverted(res); return; }
+        const s = view.state.selection.main;
+        editor.change({ changes: { from: s.from, to: s.to, insert: raw }, selection: { anchor: s.from + raw.length } }, { userEvent: 'input.paste' });
+    }
     /** The empty-sheet Paste button. Pages may only read the clipboard over HTTPS (or on localhost). */
     async function pasteFromClipboard() {
         if (!canReadClipboard()) { view.focus(); showPasteHint(); return; }
         try {
-            const raw = await navigator.clipboard.readText();
+            const raw = clipText(await navigator.clipboard.readText());
             if (!raw) return;
-            const res = hooks.autoDetect?.() === false ? { kind: 'plain' } : convertPastedText(raw);
-            if (res.kind === 'chordpro') insertConverted(res);
-            else {
-                const s = view.state.selection.main;
-                editor.change({ changes: { from: s.from, to: s.to, insert: raw }, selection: { anchor: s.from + raw.length } }, { userEvent: 'input.paste' });
-            }
+            insertPasted(raw);
             view.focus();
         } catch { view.focus(); showPasteHint(); }   // permission refused: the keyboard's own Paste still works
+    }
+    /**
+     * ⌘V / Ctrl+V anywhere on the editor page pastes into the song, whatever has focus: nobody should have to click
+     * into the sheet first (2026-10-27: a ⌘V right after opening Add Song went to <body> and nothing happened). Only a
+     * field that takes text itself (the title, the section bar's Other…) keeps its own paste, and CodeMirror handles a
+     * paste inside it. Chords mode is locked, so a paste there goes back to Lyrics first.
+     */
+    function onDocPaste(e) {
+        if (e.defaultPrevented || !host.isConnected || host.offsetParent === null) return;   // the editor is not on screen
+        const t = e.target instanceof Element ? e.target : null;
+        if (t && (view.dom.contains(t) || t.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"])'))) return;
+        const raw = clipText(e.clipboardData?.getData('text/plain'));
+        if (!raw) return;
+        e.preventDefault();
+        if (mode === 'chords') setMode('lyrics', { persist: false });
+        insertPasted(raw);
+        view.focus();
+    }
+    document.addEventListener('paste', onDocPaste);
+    /** A new, empty song on a desktop opens with the caret in the sheet, ready to type (a phone would pop its keyboard). */
+    function focusIfEmpty() {
+        if (view.state.doc.length || mode !== 'lyrics' || !window.matchMedia?.('(pointer: fine)').matches) return;
+        if (document.activeElement && document.activeElement !== document.body && !view.dom.contains(document.activeElement)) return;
+        view.focus();
     }
 
     /**
@@ -1050,6 +1079,14 @@ export function mountLeadEditor({ host, hooks = {} }) {
     other.dataset.wrap = '*';
     other.textContent = 'Other…';
     sel.appendChild(other);
+    // a NOTE, not a section: the selected lines become `{comment: ...}` rows, drawn in italics where they stand
+    const noteBtn = document.createElement('button');
+    noteBtn.type = 'button';
+    noteBtn.dataset.wrap = 'note';
+    noteBtn.className = 'le-selbar-note';
+    noteBtn.textContent = 'Note';
+    noteBtn.title = 'Make the selected lines a note (like "Interlude" or "slow down here")';
+    sel.appendChild(noteBtn);
     // keep focus (and the selection) in the editor through a press
     // (not the name field: a tap in it must place the caret, which is what raises the iOS keyboard)
     sel.addEventListener('pointerdown', (e) => { if (!e.target.closest('input')) e.preventDefault(); });
@@ -1062,6 +1099,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
             askType().then((t) => t && wrapSelection(t));
             return;
         }
+        if (type === 'note') { makeNote(); return; }
         wrapSelection(type);
     });
     document.body.appendChild(sel);
@@ -1104,6 +1142,14 @@ export function mountLeadEditor({ host, hooks = {} }) {
             sel.append(input, add);
             input.focus();
         });
+    }
+    function makeNote() {
+        const s = view.state.selection.main;
+        const text = editor.getText();
+        const res = noteSelection(text, s.from, s.to);
+        if (!res) { showToast('Select a line with words on it first.', { variant: 'warning' }); return; }
+        editor.change({ changes: diffChange(text, res.text), selection: { anchor: Math.min(res.selStart, res.text.length) } }, { userEvent: 'input.section' });
+        if (!presenting) view.focus();
     }
     function wrapSelection(type) {
         const s = view.state.selection.main;
@@ -1152,7 +1198,16 @@ export function mountLeadEditor({ host, hooks = {} }) {
     window.addEventListener('scroll', () => { if (!sel.classList.contains('hidden')) updateSelectionBar(); }, { passive: true });
     window.addEventListener('resize', () => { if (menu.isOpen) padForSheet(); });
 
-    function closeLabelMenu() { labelMenu?.remove(); labelMenu = null; }
+    let labelAnchor = null;
+    function closeLabelMenu() { labelMenu?.remove(); labelMenu = null; labelAnchor = null; }
+    /**
+     * Re-place an open label menu when the visible screen changes size. On a phone the keyboard goes away right after the
+     * label is tapped (the tap leaves the text), so a menu measured at the tap was sized to the space ABOVE the keyboard and
+     * stayed that small: "Remove label" cut in half and "Delete section" out of sight (2026-10-28, iPhone).
+     */
+    const onViewportForLabelMenu = () => { if (labelMenu && labelAnchor?.isConnected) placeLabelMenu(labelMenu, labelAnchor); };
+    window.visualViewport?.addEventListener('resize', onViewportForLabelMenu);
+    window.addEventListener('resize', onViewportForLabelMenu);
     function applyText(next) {
         if (next == null) return;
         const text = editor.getText();
@@ -1167,6 +1222,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
      */
     function placeLabelMenu(menuEl, anchorEl) {
         const GAP = 6;
+        menuEl.style.maxHeight = '';            // measure the menu's own height, not the limit an earlier placement set
         const w = menuEl.offsetWidth;
         const h = menuEl.offsetHeight;
         let { top, bottom } = visibleArea();
@@ -1183,6 +1239,60 @@ export function mountLeadEditor({ host, hooks = {} }) {
         const shown = Math.min(h, room);
         menuEl.style.left = `${Math.max(8, Math.min(r.left, window.innerWidth - w - 8))}px`;
         menuEl.style.top = `${Math.round(below >= h || below >= above ? r.bottom + GAP : r.top - GAP - shown)}px`;
+    }
+    /**
+     * The menu of a `{comment}` row (a note: "Interlude" from a pasted chord sheet, or one made with the section bar's
+     * Note): Edit its words, or Delete. Before 2026-10-28 such a row could
+     * not be removed outside ChordPro mode (it is protected like a tab, and had no menu). The row's line is read from the
+     * DOM at the tap (`posAtDOM`): the widget is reused when text above it moves, so its own positions go stale.
+     */
+    function openCommentMenu(anchorEl) {
+        closeLabelMenu();
+        if (mode !== 'lyrics') return;
+        const line = view.state.doc.lineAt(view.posAtDOM(anchorEl));
+        const note = anchorEl.textContent;
+        const menuEl = document.createElement('div');
+        menuEl.className = 'le-labelmenu le-commentmenu';
+        menuEl.setAttribute('role', 'menu');
+        // Edit: the note's words, in place (like a section label's Rename)
+        const edit = document.createElement('form');
+        edit.className = 'le-labelmenu-rename';
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.value = note;
+        input.setAttribute('aria-label', 'Note');
+        const ok = document.createElement('button');
+        ok.type = 'submit';
+        ok.textContent = 'Save';
+        edit.append(input, ok);
+        edit.addEventListener('submit', (e) => {
+            e.preventDefault();
+            closeLabelMenu();
+            const text = editor.getText();
+            const next = setNoteText(text, line.from, line.to, input.value);
+            if (next != null) editor.change({ changes: diffChange(text, next) }, { userEvent: 'input.section' });
+        });
+        menuEl.appendChild(edit);
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'danger';
+        b.textContent = 'Delete note';
+        b.setAttribute('role', 'menuitem');
+        b.addEventListener('click', () => {
+            closeLabelMenu();
+            const text = editor.getText();
+            const to = Math.min(text.length, line.to + 1);    // the row and its newline: clipDeletion frees the row, tidies the blanks
+            editor.change({ changes: clipDeletion(text, line.from, to) }, { userEvent: 'input.section' });
+            undoToast(`Deleted \u201c${note}\u201d`);
+        });
+        menuEl.appendChild(b);
+        document.body.appendChild(menuEl);
+        placeLabelMenu(menuEl, anchorEl);
+        labelMenu = menuEl;
+        setTimeout(() => {
+            const off = (ev) => { if (!menuEl.contains(ev.target)) { closeLabelMenu(); document.removeEventListener('pointerdown', off, true); } };
+            document.addEventListener('pointerdown', off, true);
+        }, 0);
     }
     function openLabelMenu(section, anchorEl) {
         closeLabelMenu();
@@ -1234,6 +1344,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
         document.body.appendChild(menuEl);
         placeLabelMenu(menuEl, anchorEl);
         labelMenu = menuEl;
+        labelAnchor = anchorEl;
         setTimeout(() => {
             const off = (ev) => { if (!menuEl.contains(ev.target)) { closeLabelMenu(); document.removeEventListener('pointerdown', off, true); } };
             document.addEventListener('pointerdown', off, true);
@@ -1279,7 +1390,8 @@ export function mountLeadEditor({ host, hooks = {} }) {
             end() { presenting = false; updateSelectionBar(); },
         },
         focus: () => view.focus(),
-        destroy() { fontDownBtn?.removeEventListener('click', onFontDown); fontUpBtn?.removeEventListener('click', onFontUp); document.removeEventListener('keydown', onDocKey, true); resetGestures(); window.removeEventListener('pointermove', onPressMove); window.removeEventListener('pointerup', endPress); window.removeEventListener('pointercancel', endPress); window.removeEventListener('lostpointercapture', onLostCapture, true); window.removeEventListener('blur', resetGestures); document.removeEventListener('visibilitychange', onVisibility); window.removeEventListener('scroll', onScrollRing); window.visualViewport?.removeEventListener('resize', onViewportForBar); window.visualViewport?.removeEventListener('scroll', onViewportForBar); ring.remove(); loupe.destroy(); menu.destroy(); menuResizeObserver?.disconnect(); sel.remove(); emptyHint.remove(); closeLabelMenu(); editor.destroy(); },
+        focusIfEmpty,
+        destroy() { document.removeEventListener('paste', onDocPaste); fontDownBtn?.removeEventListener('click', onFontDown); fontUpBtn?.removeEventListener('click', onFontUp); document.removeEventListener('keydown', onDocKey, true); resetGestures(); window.removeEventListener('pointermove', onPressMove); window.removeEventListener('pointerup', endPress); window.removeEventListener('pointercancel', endPress); window.removeEventListener('lostpointercapture', onLostCapture, true); window.removeEventListener('blur', resetGestures); document.removeEventListener('visibilitychange', onVisibility); window.removeEventListener('scroll', onScrollRing); window.visualViewport?.removeEventListener('resize', onViewportForBar); window.visualViewport?.removeEventListener('scroll', onViewportForBar); window.visualViewport?.removeEventListener('resize', onViewportForLabelMenu); window.removeEventListener('resize', onViewportForLabelMenu); ring.remove(); loupe.destroy(); menu.destroy(); menuResizeObserver?.disconnect(); sel.remove(); emptyHint.remove(); closeLabelMenu(); editor.destroy(); },
     };
     host.__lead = api;   // test hook (e2e reads the CodeMirror view through it)
     return api;
