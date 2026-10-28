@@ -461,7 +461,9 @@ export function looksLikeChordPro(text) {
  */
 export function convertPastedText(raw) {
     if (!raw || !raw.trim()) return { kind: 'plain' };
-    let text = raw;
+    // Windows / web clipboards hand over \r\n. The editor drops every \r on insert, so text measured with them is
+    // longer than what lands (Ultimate Guitar: 36 left over put the cursor past the end and the whole paste was lost)
+    let text = raw.replace(/\r\n?/g, '\n');
     let title = null;
     let artist = null;
     let cleaned = false;

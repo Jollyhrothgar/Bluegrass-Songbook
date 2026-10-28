@@ -3,7 +3,7 @@
 // with the song page's own classes. See docs/plans/2026-10-26-lyrics-editor-redesign.md.
 import { test, expect } from './fixtures.js';
 import {
-    CM, SHEET, setLead, leadText, leadReady, setMode, chordsOn, boxAt, boxPos, openEditor, pointOnWord,
+    CM, SHEET, openFrozenOldHomePlace, setLead, leadText, leadReady, setMode, chordsOn, boxAt, boxPos, openEditor, pointOnWord,
     boxState, lineEndPoint, centreOf, mouseDrag, along, segmentRects, syllableCentres, boxStopKind, stepKinds,
 } from './helpers/lead-editor.js';
 
@@ -115,7 +115,7 @@ test.describe('Lyrics mode: sections', () => {
         await page.mouse.up();
         const bar = page.locator('.le-selbar');
         await expect(bar).toBeVisible();
-        await expect(bar.locator('button')).toHaveText(['Verse', 'Chorus', 'Bridge', 'Intro', 'Outro', 'Tag', 'Other…']);
+        await expect(bar.locator('button')).toHaveText(['Verse', 'Chorus', 'Bridge', 'Intro', 'Outro', 'Tag', 'Other…', 'Note']);
         await bar.locator('[data-wrap="chorus"]').click();
         const text = await leadText(page);
         expect(text).toContain('{start_of_chorus: Chorus}\nLine one\nLine two\n{end_of_chorus}');
@@ -163,7 +163,7 @@ test.describe('Lyrics mode: selection and sections across boundaries', () => {
     });
 
     test('selecting from the end of Verse 2 into the Chorus re-sections cleanly', async ({ page }) => {
-        await openEditor(page, '#edit/old-home-place');
+        await openFrozenOldHomePlace(page);
         const range = await page.evaluate(() => {
             const { editor } = document.querySelector('#editor-lead').__lead;
             const t = editor.getText();
@@ -761,7 +761,7 @@ test.describe('gliding the cursor (desktop, mouse)', () => {
         await chordsOn(page, 'Amazing grace how sweet the sound that saved a wretch like me');
         const inView = async () => { await page.waitForTimeout(250); return page.evaluate(() => {
             const v = document.querySelector('.chm-strip-view').getBoundingClientRect();
-            const t = document.querySelector('.chm-strip-view .cl-gap-bar, .chm-strip-view .cl-slot-pill, .chm-strip-view .cl-box-chord .cl-chord-glyph').getBoundingClientRect();
+            const t = document.querySelector('.chm-strip-view .cl-slot-pill, .chm-strip-view .cl-box-chord .cl-chord-glyph').getBoundingClientRect();
             return t.left >= v.left && t.right <= v.right && t.width > 0;
         }); };
         expect(await inView()).toBe(true);                       // at the very start of the line
@@ -1044,14 +1044,15 @@ test.describe('where the cursor stops (desktop)', () => {
         expect(await leadText(page)).toBe('Many long years since I left my old home  now\nsecond line here');
     });
 
-    test('a gap stop shows the slim bar and no text outline; D there is written `years[D] since`', async ({ page }) => {
+    test('a gap stop is boxed like the slot after the words; D there is written `years[D] since`', async ({ page }) => {
         await openNew(page);
         await chordsOn(page, 'Many long years since home');
         const t = await leadText(page);
         await page.evaluate((p) => document.querySelector('#editor-lead').__lead.editor.setBox({ pos: p, active: true }), t.indexOf('years'));
         await page.keyboard.press('ArrowRight');
         expect(await boxStopKind(page)).toBe('gap');
-        await expect(page.locator(`${CM} .cl-gap-bar`)).toBeVisible();
+        await expect(page.locator(`${CM} .cl-slot-gap .cl-slot-text`)).toBeVisible();
+        await expect(page.locator(`${CM} .cl-slot-gap .cl-slot-pill`)).toBeVisible();
         await expect(page.locator(`${CM} .cl-box-text`)).toHaveCount(0);
         await page.locator(`${SHEET} .chm-cell[data-chord="D"]`).click();
         expect(await leadText(page)).toBe('Many long years[D] since home');
@@ -1120,6 +1121,65 @@ test.describe('where the cursor stops (desktop)', () => {
         await setMode(page, 'chordpro');
         const book = await segmentRects(page, '#editor-lead .le-preview-body .cl-line', 0);
         editor.forEach((r, k) => expect(Math.abs(r.x - book[k].x), `segment ${k}`).toBeLessThanOrEqual(1));
+    });
+});
+
+test.describe('a note row ({comment}, e.g. "Interlude" from a pasted chord sheet)', () => {
+    const SONG = '{start_of_verse: Verse 1}\nAnd look for a job in the town\n{end_of_verse}\n{comment: Interlude}\n\n{start_of_verse: Verse 2}\nWell the girl ran off\n{end_of_verse}';
+    test('tap it in Lyrics: Delete note removes it, and one undo brings it back', async ({ page }) => {
+        await openNew(page);
+        await setLead(page, SONG);
+        await setMode(page, 'lyrics');
+        await page.locator(`${CM} .cl-comment`, { hasText: 'Interlude' }).click();
+        await page.locator('.le-commentmenu').getByRole('menuitem', { name: 'Delete note' }).click();
+        expect(await leadText(page)).not.toContain('Interlude');
+        expect(await leadText(page)).toContain('Well the girl ran off');
+        await expect(page.locator(`${CM} .cl-comment`)).toHaveCount(0);
+        await page.locator('#editor-undo').click();
+        expect(await leadText(page)).toBe(SONG);
+    });
+
+    test('make one: select a line, Note on the section bar; it stays inside its verse and reads as a note', async ({ page }) => {
+        await openNew(page);
+        await setLead(page, '{start_of_verse: Verse 1}\n[G]Hello there\nslow down here\n[D]last line\n{end_of_verse}');
+        // a new song is in Lyrics already; setLead leaves the focus in the sheet, which the section bar needs
+        await page.evaluate(() => {
+            const { editor } = document.querySelector('#editor-lead').__lead;
+            const t = editor.getText();
+            editor.view.focus();
+            editor.view.dispatch({ selection: { anchor: t.indexOf('slow'), head: t.indexOf('slow down here') + 14 } });
+        });
+        await page.locator('.le-selbar [data-wrap="note"]').click();
+        expect(await leadText(page)).toBe('{start_of_verse: Verse 1}\n[G]Hello there\n{comment: slow down here}\n[D]last line\n{end_of_verse}');
+        await expect(page.locator(`${CM} .cl-comment`)).toHaveText('slow down here');
+    });
+
+    test('edit one: tap it, change the words, Save (one undo step)', async ({ page }) => {
+        await openNew(page);
+        await setLead(page, SONG);
+        await setMode(page, 'lyrics');
+        await page.locator(`${CM} .cl-comment`, { hasText: 'Interlude' }).click();
+        const field = page.locator('.le-commentmenu input');
+        await field.fill('Banjo break');
+        await page.locator('.le-commentmenu button[type="submit"]').click();
+        expect(await leadText(page)).toContain('{comment: Banjo break}');
+        await expect(page.locator(`${CM} .cl-comment`)).toHaveText('Banjo break');
+        await page.locator('#editor-undo').click();
+        expect(await leadText(page)).toBe(SONG);
+    });
+
+    test('select across it and Backspace: it goes with the selection', async ({ page }) => {
+        await openNew(page);
+        await setLead(page, SONG);
+        await setMode(page, 'lyrics');
+        await page.evaluate(() => {
+            const { editor } = document.querySelector('#editor-lead').__lead;
+            const t = editor.getText();
+            editor.view.focus();
+            editor.view.dispatch({ selection: { anchor: t.indexOf('town') + 4, head: t.indexOf('Well') } });
+        });
+        await page.keyboard.press('Backspace');
+        expect(await leadText(page)).not.toContain('Interlude');
     });
 });
 
