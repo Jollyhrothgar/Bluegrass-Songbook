@@ -9,7 +9,7 @@
 // The document is read through the editor's debug handle
 // (`.otf-editor.__otfEditor.state.facade`) rather than inferred from
 // pixels, so a failure names the wrong tick, not a wrong screenshot.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 
 async function openDemo(page) {
     await page.goto('/editor-demo.html');

@@ -1,7 +1,7 @@
 // E2E tests for export actions. The old #export-btn/#export-dropdown,
 // #copy-btn and #download-btn are gone — all export actions (print, copy,
 // download) live in the top band's Export pill (#export-pill).
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import { gotoSearch, searchAndOpen, searchFor, navClick, openPill } from './helpers.js';
 
 test.describe('Export Pill', () => {

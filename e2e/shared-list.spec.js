@@ -5,7 +5,7 @@
 // response shape (snake_case flags, top-level `songs`). The list page used to
 // read list.songs / data.isOwner / data.canClaim, so every share link showed
 // "0 songs".
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import { mockSupabase } from './helpers/supabase-mock.js';
 
 const LIST_ID = '11111111-1111-4111-8111-111111111111';

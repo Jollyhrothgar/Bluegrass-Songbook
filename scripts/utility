@@ -39,6 +39,13 @@ show_help() {
     echo "      Sync tag overrides from trusted user votes in Supabase"
     echo "      (requires SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY env vars)"
     echo ""
+    echo "  search-gaps [--since YYYY-MM-DD]"
+    echo "      What visitors searched for and could not find (default: last 30"
+    echo "      days), each failed search classified against the local index:"
+    echo "      missing / in the dungeon / misspelled / missing take — with the"
+    echo "      add-placeholder / curate unprune command to fix it. Printed only;"
+    echo "      run ./scripts/bootstrap --quick first for fresh verdicts."
+    echo ""
     echo "  sync-deleted-songs"
     echo "  sync-promoted-songs"
     echo "  db-push                 apply pending Supabase migrations (dry-run first)"
@@ -209,6 +216,12 @@ case "$COMMAND" in
         # login (same credential db-push uses) but no database password, and it
         # writes nothing.
         uv run python3 scripts/lib/schema_assert.py "$@"
+        ;;
+
+    search-gaps)
+        # Read-only: analytics_events in, a report on stdout. supabase is not a
+        # base dependency (CI's sync workflows add it the same way).
+        ./scripts/lib/with-secrets -- uv run --with supabase python3 scripts/lib/search_gaps.py "$@"
         ;;
 
     sync-promoted-songs)

@@ -34,17 +34,24 @@ The word is overloaded, and getting it wrong sends you to the wrong file:
 |---|---|---|
 | **what** | fingering (`finger` T I M R P, `lh` 0–4), technique | "PART A", "Long Choke", "Bb6+9" |
 | **stored** | on the note (`finger`, `lh`, `tech`) | `otf.annotations[]` — top level, `{measure, tick, text}` |
-| **reached by** | `A` (ANNOTATION mode) | `c` / `C` in NORMAL mode |
+| **reached by** | `A` (ANNOTATION mode) | clicking the text; `t` / `T` in NORMAL (vim preset: `c` / `C`) |
 | **facade ops** | `setFingering`, `setLeftHand`, `setArticulation` | `addAnnotation` / `setAnnotationText` / `deleteAnnotation` / `findAnnotationIndex` |
 
 Placed text is score-level, not track-level: one array for the whole
 document, positioned by written measure + tick, drawn above the staff by
-`renderers/tablature.js`. Chord names live there too, so `c` is also how
+`renderers/tablature.js`. Chord names live there too, so `t` is also how
 you write chords over a tab.
 
-- `c` opens the prompt (`AnnotationPopover` in `popover.js`), pre-filled
-  with whatever is within a beat of the cursor; `C` deletes it; the
-  toolbar's **Text** section (Aa / ⌫) is the mouse path to both.
+- `t` (vim: `c`) opens the prompt (`AnnotationPopover` in `popover.js`),
+  pre-filled with whatever is within a beat of the cursor; `T` (vim: `C`)
+  deletes it; the toolbar's **Text** button and ⌫ do the same. In the
+  TablEdit preset `c` is the Choke effect, not text.
+- **The text itself is a click target.** The renderer stamps each
+  `.annotation-text` with `data-measure` / `data-tick`; a click puts the
+  cursor exactly there (the drawn words run well past the one-beat reach,
+  so mapping the click's x to a tick often missed), a double-click opens
+  the prompt on it, and a mousedown on it never starts a drag
+  (`_annotationFromEvent` in `editor.js`).
 - **Empty text deletes** — text is trimmed, and a blank one is never
   stored (you could never click or find it again).
 - Two annotations may share one `(measure, tick)`, so they are addressed
@@ -239,9 +246,20 @@ the block, and no op may touch them.
   re-timing "only strings 3–5" would compute durations from a phantom
   document. `fixDurationsInSelection` honours the ticks and ignores the
   height, deliberately.
-- **`Ctrl+A` is still the whole column** — it asks for the MEASURE, so
-  `select.measureOrAll` sets its own endpoints to string 1 and the last
-  string. Pressing it again takes the whole tab, all strings.
+- **`Ctrl+A` is the whole tab, in one press** (`select.all`): every
+  measure, every string, the CURRENT track only — the track you are
+  looking at, not the others (owner, 2026-10-27). Edit ▸ Select measure
+  (`select.measure`, menu-only) is the one-measure column. It used to be
+  one action that took the measure first and the tab on a second press,
+  which nothing on screen announced. Placed text is score-level and is
+  not in any selection.
+- **A selection's end slot runs to the next grid line**, or to the
+  barline in a measure's last slot (`state.slotEndAbs`). It used to end
+  one tick past the slot's start, so a note typed at a finer step than
+  the current one (a 16th at beat 4.3 under a 1/8 step) was outside
+  every selection, Ctrl+A included — and the cursor can't land on it
+  either, so nothing could delete it. `selectionRange()` is the one
+  range: the highlight and the editor's drag-move read it too.
 - **Growing it**: `Shift+←/→` moves the end tick, `Shift+↑/↓` (and vim's
   `j`/`k` in VISUAL) moves the end string. `cursor.moveString` drags the
   selection end exactly the way `moveByTicks` always has — without that,

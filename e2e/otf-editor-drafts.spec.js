@@ -5,7 +5,7 @@
 // find it in the list, open it back on the route it was written on, with the
 // note still in it. Nothing here mocks anything — drafts are IndexedDB and
 // nothing else, which is the point of them.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 
 const band = (page) => page.locator('#app-bottomband');
 

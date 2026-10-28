@@ -1,7 +1,7 @@
 // Dungeon mode: the search scope flips to archived-only rows.
 // Uses the REAL state.js (live dungeonMode binding) and mocks the rest of
 // search-core's dependencies like search-core.test.js does.
-import { describe, it, expect, beforeEach, vi } from 'vitest';
+import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 
 // Spread the real module so a new util export never silently arrives as
 // `undefined` here; override only the few this test deliberately neutralizes.
@@ -65,6 +65,7 @@ vi.mock('../shell.js', () => ({ pill: vi.fn() }));
 import { searchableSongs, search } from '../search-core.js';
 import { setAllSongs, setDungeonMode, dungeonMode, setIncludeDungeon, includeDungeon } from '../state.js';
 import { countDistinctTitles } from '../corpus.js';
+import { trackSearch } from '../analytics.js';
 
 const CORPUS = [
     { id: 'canon-song', title: 'Canon Song', artist: 'Bill Monroe' },
@@ -164,5 +165,26 @@ describe('Include the dungeon', () => {
         expect(localStorage.getItem('songbook-include-dungeon')).toBe('1');
         setIncludeDungeon(false);
         expect(localStorage.getItem('songbook-include-dungeon')).toBeNull();
+    });
+});
+
+describe('search analytics record the scope', () => {
+    // The debounced flush (1s) is what calls analytics; a distinct query per
+    // test, because the same query twice in a row is recorded once.
+    beforeEach(() => {
+        vi.useFakeTimers();
+        trackSearch.mockClear();
+    });
+    afterEach(() => vi.useRealTimers());
+
+    it.each([
+        ['canon', 'canon song a', () => {}],
+        ['canon+dungeon', 'canon song b', () => setIncludeDungeon(true)],
+        ['dungeon', 'dungeon song c', () => setDungeonMode(true)],
+    ])('%s', (scope, query, arrange) => {
+        arrange();
+        search(query, { skipRender: true });
+        vi.advanceTimersByTime(1000);
+        expect(trackSearch).toHaveBeenCalledWith(query, expect.any(Number), expect.any(Object), scope);
     });
 });

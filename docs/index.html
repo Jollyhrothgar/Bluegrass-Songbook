@@ -10,7 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="preconnect" href="https://ofmqlrnyldlmvggihogt.supabase.co" crossorigin>
-    <title>Bluegrass Book</title>
+    <!-- A song page swaps these two for its own (build_song_pages.HOME_HEAD):
+         keep the description right after the title. -->
+    <title>Bluegrass Book: chords, lyrics and tabs for bluegrass jams</title>
+    <meta name="description" content="A free songbook for pickers: bluegrass, old-time and gospel songs with chords you can transpose to any key, lyrics, and tabs you can play along with.">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
     <link rel="icon" type="image/png" sizes="48x48" href="images/favicon-48.png">
@@ -101,6 +104,9 @@
                 <div class="loading">Loading collections...</div>
             </div>
             <div class="landing-footer">
+                <!-- A real link, not a hash route: the A–Z page is how Google
+                     finds every song page (build_song_pages.render_all_songs). -->
+                <a href="songs/" class="browse-link">All songs, A to Z</a>
                 <a href="#bounty" class="bounty-link">
                     <span class="bounty-icon">🎯</span>
                     <span class="bounty-text">Help us grow! See songs we're looking for</span>
@@ -798,6 +804,7 @@ This is the [G]chorus [D]part
     <link rel="modulepreload" href="js/utils.js">
     <link rel="modulepreload" href="js/tags.js">
     <link rel="modulepreload" href="js/analytics.js">
+    <link rel="modulepreload" href="js/telemetry.js">
     <link rel="modulepreload" href="js/otf-editor/submit-tab.js">
     <link rel="modulepreload" href="js/otf-editor/create-tab-entry.js">
     <link rel="modulepreload" href="js/otf-editor/existing-tabs.js">

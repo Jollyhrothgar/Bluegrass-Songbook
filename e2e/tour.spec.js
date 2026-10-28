@@ -4,7 +4,7 @@
 // into sections, chorded), then the tab (Play, Edit, the page itself as a
 // drop zone for your own .tef files), and stays out of the way. After the
 // first time it lives in the ⋯ menu. The phone walk is tour-mobile.spec.js.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import { songReady, here, ringAround, cardClear, arrowAt, next, leadText } from './helpers/tour.js';
 
 const tourBtn = (page) => page.locator('#topbar-tour');

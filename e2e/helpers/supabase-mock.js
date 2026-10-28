@@ -60,13 +60,18 @@ export const FAKE_USER = {
 /** Hosts the browser is allowed to talk to for real. */
 const ALLOWED_HOSTS = [/^localhost$/, /^127\.0\.0\.1$/, /(^|\.)jsdelivr\.net$/];
 
+/** Google Analytics fires on every page load: always aborted, never counted. */
+const ANALYTICS = /google-analytics\.com|googletagmanager\.com|analytics\.google\.com/;
+
 /**
- * Third-party fetches these tests neither need nor assert, blocked so a run
- * is hermetic: Google Analytics (fires on every page load) and WebAudioFont
- * (the soundfont the tab player streams — no test here listens to anything,
- * and the sandbox blocks that CDN anyway).
+ * Soundfont CDNs: WebAudioFont (the tab player) and abcjs's midi-js
+ * soundfonts (ABC playback). A spec's own mock aborts them so its run is
+ * hermetic (no test here listens to anything, and the sandbox blocks that CDN
+ * anyway); the e2e/fixtures.js backstop lets them through
+ * (`blockAudio: false`), because the playback specs that never mocked
+ * Supabase need Play to actually start.
  */
-const BLOCKED = /google-analytics\.com|googletagmanager\.com|analytics\.google\.com|surikov\.github\.io/;
+const AUDIO_CDN = /surikov\.github\.io|paulrosen\.github\.io/;
 
 const b64url = (obj) => Buffer.from(JSON.stringify(obj))
     .toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
@@ -117,7 +122,9 @@ accounts.google.com by now.</p></main></body></html>`;
 /**
  * Route every Supabase call to an in-test fake.
  *
- * @param {import('@playwright/test').Page} page
+ * @param {import('@playwright/test').Page | import('@playwright/test').BrowserContext} page
+ *   a page, or a whole context (e2e/fixtures.js installs one per context as
+ *   the signed-out backstop; a page-level mock overrides it)
  * @param {Object} [options]
  * @param {boolean} [options.signedIn=true] - seed a session in localStorage
  * @param {boolean} [options.oauthReturn=false] - make the OAuth hand-off
@@ -129,6 +136,7 @@ accounts.google.com by now.</p></main></body></html>`;
  * @param {Object} [options.rpc] - `{name: value}` results for `rpc/<name>`
  * @param {Object} [options.commit] - body for `functions/v1/auto-commit-song`
  * @param {Object} [options.tables] - `{table: rows}` seed for GET /rest/v1
+ * @param {boolean} [options.blockAudio=true] - abort the soundfont CDNs
  * @returns {Promise<Object>} the mock handle (see the methods at the bottom)
  */
 export async function mockSupabase(page, {
@@ -138,6 +146,7 @@ export async function mockSupabase(page, {
     rpc = {},
     commit = { success: true, mode: 'create', workId: 'e2e-mocked-work' },
     tables = {},
+    blockAudio = true,
 } = {}) {
     const session = fakeSession(user);
     // Whether the SERVER considers the caller signed in. Starts as the seeded
@@ -178,11 +187,13 @@ export async function mockSupabase(page, {
         const host = new URL(request.url()).hostname;
         if (ALLOWED_HOSTS.some(re => re.test(host))) return;
         if (host.endsWith('supabase.co')) return;   // routed below
-        if (BLOCKED.test(request.url())) return;    // aborted below
+        if (ANALYTICS.test(request.url())) return;  // aborted below
+        if (AUDIO_CDN.test(request.url())) return;  // aborted below, or allowed
         state.external.push(request.url());
     });
 
-    await page.route(BLOCKED, route => route.abort());
+    await page.route(ANALYTICS, route => route.abort());
+    if (blockAudio) await page.route(AUDIO_CDN, route => route.abort());
 
     await page.route('**/*.supabase.co/**', async (route) => {
         const request = route.request();

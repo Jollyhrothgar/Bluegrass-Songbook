@@ -1,7 +1,7 @@
 // E2E for the lead-sheet editor (docs/js/lead-editor/): ONE CodeMirror view, three modes,
 // Lyrics | Chords | ChordPro, over the ChordPro text. Lyrics and Chords are decorations drawn
 // with the song page's own classes. See docs/plans/2026-10-26-lyrics-editor-redesign.md.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import {
     CM, SHEET, setLead, leadText, leadReady, setMode, chordsOn, boxAt, boxPos, openEditor, pointOnWord,
     boxState, lineEndPoint, centreOf, mouseDrag, along, segmentRects, syllableCentres, boxStopKind, stepKinds,

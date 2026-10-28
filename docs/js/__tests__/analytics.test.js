@@ -13,7 +13,8 @@ let rpc;
 async function load() {
     vi.resetModules();
     analytics = await import('../analytics.js');
-    analytics.initAnalytics(); // tracks session_start, starts the 30s flush timer
+    // jsdom is localhost, where telemetry is off; these tests are about flush()
+    analytics.initAnalytics({ enabled: true }); // tracks session_start, starts the 30s flush timer
 }
 
 function sentEventNames(callIndex) {
@@ -159,5 +160,85 @@ describe('flush', () => {
         await load();
         await expect(vi.advanceTimersByTimeAsync(FLUSH_INTERVAL_MS)).resolves.not.toThrow();
         expect(rpc).not.toHaveBeenCalled();
+    });
+});
+
+describe('off the production site', () => {
+    it('never initializes, so nothing is queued or sent', async () => {
+        vi.resetModules();
+        analytics = await import('../analytics.js');
+        analytics.initAnalytics(); // jsdom: localhost
+        analytics.track('a');
+
+        await vi.advanceTimersByTimeAsync(FLUSH_INTERVAL_MS * 3);
+        window.dispatchEvent(new Event('beforeunload'));
+
+        expect(rpc).not.toHaveBeenCalled();
+    });
+});
+
+// search-gaps (scripts/lib/search_gaps.py) reads these events back to find
+// what visitors could not find.
+describe('search-gap events', () => {
+    function sentEvents() {
+        return rpc.mock.calls[0][1].p_events;
+    }
+
+    beforeEach(() => {
+        rpc.mockResolvedValue({ data: 1, error: null });
+    });
+
+    it('records the search scope, so a count that included the dungeon reads as one', async () => {
+        await load();
+        analytics.trackSearch('salt spring', 0, { has_tag: false }, 'canon+dungeon');
+        await vi.advanceTimersByTimeAsync(FLUSH_INTERVAL_MS);
+
+        const [search, zero] = sentEvents().filter(e => e.event_name !== 'session_start');
+        expect(search.event_name).toBe('search');
+        expect(search.properties).toMatchObject({
+            query: 'salt spring', result_count: 0, scope: 'canon+dungeon'
+        });
+        expect(zero.event_name).toBe('zero_results');
+        expect(zero.properties.scope).toBe('canon+dungeon');
+    });
+
+    it('defaults the scope to the canon', async () => {
+        await load();
+        analytics.trackSearch('tall pines', 1, {});
+        await vi.advanceTimersByTimeAsync(FLUSH_INTERVAL_MS);
+        expect(sentEvents().find(e => e.event_name === 'search').properties.scope).toBe('canon');
+    });
+
+    it('logs a song page that was not found, with where the visitor came from', async () => {
+        Object.defineProperty(document, 'referrer', { value: 'https://www.google.com/', configurable: true });
+        try {
+            await load();
+            analytics.trackSongNotFound('gone-song', 'deep_link', 2);
+        } finally {
+            delete document.referrer;
+        }
+        await vi.advanceTimersByTimeAsync(FLUSH_INTERVAL_MS);
+
+        const event = sentEvents().find(e => e.event_name === 'song_not_found');
+        expect(event.properties).toEqual({
+            song_id: 'gone-song',
+            source: 'deep_link',
+            suggestions: 2,
+            path: expect.any(String),
+            referrer: 'https://www.google.com/'
+        });
+    });
+
+    it('leaves the referrer off an in-app miss: the page was not where the visit began', async () => {
+        Object.defineProperty(document, 'referrer', { value: 'https://www.google.com/', configurable: true });
+        try {
+            await load();
+            analytics.trackSongNotFound('gone-song', 'list', 0);
+        } finally {
+            delete document.referrer;
+        }
+        await vi.advanceTimersByTimeAsync(FLUSH_INTERVAL_MS);
+
+        expect(sentEvents().find(e => e.event_name === 'song_not_found').properties.referrer).toBeNull();
     });
 });

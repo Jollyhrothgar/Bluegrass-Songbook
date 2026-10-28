@@ -1,7 +1,7 @@
 // E2E tests for List Management (create, delete, add/remove songs).
 // Lists are reached through the top band: Favorites and Lists nav links
 // (the sidebar and its count badge are gone).
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import { gotoSearch, searchFor, navClick } from './helpers.js';
 
 test.describe('List Creation', () => {

@@ -10,7 +10,7 @@
 //   tab         TabRenderer._renderInternal empties `.tablature-container`
 //               before drawing, so draws = (emptyings that removed stave
 //               rows) + 1.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import { gotoSearch, searchAndOpen } from './helpers.js';
 
 /** Install the counters before any app code runs. */

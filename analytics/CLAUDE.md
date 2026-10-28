@@ -25,7 +25,10 @@ on-disk `.env` is only what `bootstrap` validates.
 ### dashboard.ipynb
 
 Product analytics from Supabase:
-- Visitor statistics (daily traffic, unique visitors, page views)
+- Visitor statistics (daily page views, new visitors — `visitor_stats.unique_visitors`
+  only counts first-ever visits, so the notebook renames it `new_visitors`)
+- Weekly active users: app visitors (first-time vs returning) beside signed-in
+  contributors
 - User engagement (song votes, genre suggestions, tag votes)
 - Behavioral analytics from `analytics_events` (song views, searches, exports).
   The event total lives in Supabase and only grows — read it off the notebook,
@@ -43,11 +46,48 @@ Bluegrass scoring methodology validation:
 - Artist era distribution (Founding/Classic/Modern)
 - Cover count vs score correlation
 
+## Search gaps — what visitors could not find
+
+```bash
+./scripts/bootstrap --quick                   # verdicts are only as fresh as docs/data/
+./scripts/utility search-gaps                 # last 30 days
+./scripts/utility search-gaps --since 2026-10-01
+```
+
+`scripts/lib/search_gaps.py` stitches each visitor's `search` and
+`search_result_click` events into journeys (a 30-minute pause starts a new
+one; keystroke pauses are collapsed), then re-runs every failed search against
+the LOCAL index and sorts it: **not in the songbook** (with an
+`add-placeholder` line), **in the dungeon** (by archived work, with a
+`curate unprune` line), **here but not with those filters** (a missing take),
+**spelled differently**, **artists**, **filters only**, and **found since**.
+It also lists searches that had results nobody opened, and song pages that
+were not found (`song_not_found`). It prints and suggests; it never writes,
+commits or runs anything — the queries are visitors' words and the repo is
+public. The dashboard's "Zero results" cell is the raw list this replaces.
+
+Events it reads (all sent by `docs/js/analytics.js`):
+
+| Event | Properties it relies on |
+|-------|-------------------------|
+| `search` | `query`, `result_count`, `scope` (`canon` / `canon+dungeon` / `dungeon`; absent before 2026-10-27 = canon) |
+| `search_result_click` | `song_id`, `query`, `from_list` (a list view's row, not a search result; absent before 2026-10-27). `position` is always null for search rows: `data-index` only exists on draggable list rows |
+| `song_not_found` | `song_id`, `source` (`deep_link` / `list` / `history` / `app`), `path`, `suggestions`, `referrer` (deep links only). Since 2026-10-27 |
+
+Data is thin (~350 searches a month in Oct 2026), so read every line rather
+than trusting the ranking.
+
 ## Data Sources
 
-- **Supabase tables** (the eight `dashboard.ipynb` actually queries):
+- **Supabase tables** (the nine `dashboard.ipynb` actually queries):
   `visitor_stats`, `visitors`, `song_votes`, `genre_suggestions`, `tag_votes`,
-  `user_lists`, `list_songs`, `analytics_events`
+  `user_lists`, `user_list_items`, `user_favorites`, `analytics_events`.
+  Every query pages through `fetch_all` — PostgREST caps a request at 1,000
+  rows, and `visitors` alone is ~39k
+- **WAU caveat**: `analytics_events` has only an anonymous `visitor_id`, so
+  "signed-in" weekly activity is inferred from contributor tables (votes,
+  tags, lists, favorites) — a floor, not a split of one total. Events are
+  missing 2026-01-07 → 2026-10-01 (`log_events` outage, fix-it list A2)
 - **Local files**: `docs/data/grassiness_scores.json`, `docs/data/bluegrass_artist_database.json`
 - **MusicBrainz**: Local PostgreSQL on port 5440 (for grassiness analysis)
 

@@ -58,6 +58,7 @@ import { escapeHtml, escapeAttr, requireLogin, parseItemRef, buildDeleteCandidat
 import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
 import { initShell, setTopBar, setBottomBand, setOverflowBase, setOverflowLead, setChromeAutoHide, pill, setBanner, setTourInvite } from './shell.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink } from './analytics.js';
+import { telemetryEnabled } from './telemetry.js';
 import { initFlags, openFeedbackModal } from './flags.js';
 import { initSuperUserRequest } from './superuser-request.js';
 import { COLLECTIONS, COLLECTION_PINS, collectionThumbnailHtml } from './collections.js';
@@ -3576,8 +3577,12 @@ function init() {
         // Wire up auth modal
         initAuthModal();
 
-        // Log visit and update visitor stats
-        SupabaseAuth.logVisit().then(({ data }) => {
+        // Count the visit on the production site only (telemetry.js);
+        // anywhere else just read the totals
+        const visitStats = telemetryEnabled()
+            ? SupabaseAuth.logVisit()
+            : SupabaseAuth.getVisitorStats();
+        visitStats.then(({ data }) => {
             if (data) {
                 updateVisitorStats(data.total_views, data.total_visitors);
             }

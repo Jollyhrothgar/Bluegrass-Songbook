@@ -10,6 +10,7 @@ docs/
 ├── blog.html           # Redirect: the dev blog moved to mikebeaumier.com (G1)
 ├── robots.txt / sitemap.xml # sitemap is GENERATED with songs/ (scripts/lib/build_song_pages.py)
 ├── songs/{song}/[{version}/] # GENERATED: index.html + the pre-rendered chart (scripts/lib/build_song_pages.py)
+├── songs/index.html    # GENERATED: every song A–Z, the page that links Google to each one (G11)
 ├── 404.html            # GENERATED: index.html as is — boots the app for a song path with no page (archived)
 ├── manifest.webmanifest # PWA manifest (install, shortcuts, .tef/.otf.json file handlers)
 ├── sw.js               # Service worker — a shell around js/sw-strategy.js
@@ -42,6 +43,7 @@ docs/
 │   ├── high-scores.js  # `#high-scores` leaderboard — renders `get_leaderboard()`; identities are resolved SERVER-side (no email/uuid ever reaches this file)
 │   ├── collections.js  # Landing page collection definitions
 │   ├── analytics.js    # Behavioral analytics tracking
+│   ├── telemetry.js    # telemetryEnabled(): visits/events are written only on bluegrassbook.com, never by automation
 │   ├── utils.js        # Shared utilities (escapeHtml, etc.)
 │   ├── pwa.js          # Service-worker registration, install prompt, .tef/.otf.json file open + drop
 │   ├── sw-strategy.js  # THE caching decisions (imported by ../sw.js and by its tests)
@@ -881,9 +883,15 @@ from those, and once chose the old banjo app icon over the favicon
 ## Testing
 
 ```bash
-npm test              # Run unit tests (Vitest)
+npm test              # Run unit tests once (Vitest) and exit
+npm run test:watch    # Unit tests in watch mode (re-runs on save; never exits)
 npm run test:e2e      # Run E2E tests (Playwright, requires server)
 ```
+
+`npm test` was plain `vitest` until 2026-10-27, which is watch mode outside
+CI: from an agent or script it never exited and looked like a hang. Unit
+tests pass on any Node: since Node 25, Node's own empty global
+`localStorage` hid jsdom's, which `__tests__/setup-webstorage.js` undoes.
 
 ### Chrome DevTools MCP
 
@@ -1622,9 +1630,18 @@ Lists can have multiple owners for collaborative curation.
   holds. Read these keys, never `is_owner` / `can_claim`; a test feeds the real
   RPC response through the real `supabase-auth.js` to keep it that way
   (`__tests__/supabase-auth-public-list.test.js`, `lists-public-view.test.js`).
-- **Analytics** (`analytics.js`) batches events to the `log_events` RPC.
+- **Analytics** (`analytics.js`) batches events to the `log_events` RPC,
+  and `main.js` counts the visit with `log_visit` — both ONLY when
+  `telemetry.js telemetryEnabled()` (production host, `navigator.webdriver`
+  false). Elsewhere `initAnalytics` stays off and the home page reads totals
+  with `get_visitor_stats`. The Supabase project is production everywhere, so
+  without the gate local servers, phone tests, Playwright and crawlers each
+  counted as new visitors (Oct 2026).
   `supabase.rpc` resolves `{ error }` rather than throwing, so `flush()` checks
   it and re-queues the batch on failure (one flush interval of back-off).
+  `search` carries its `scope`, `search_result_click` says `from_list`, and
+  `openWork`'s not-found page logs `song_not_found`: `./scripts/utility
+  search-gaps` reads them back (see `analytics/CLAUDE.md`).
 
 ### Shareable Lists
 

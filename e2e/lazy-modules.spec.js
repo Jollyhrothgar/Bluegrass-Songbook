@@ -6,7 +6,7 @@
 // needs one still works once it is fetched — the behaviour must be identical,
 // only later.
 import { setLead } from './helpers/lead-editor.js';
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import { gotoSearch, searchAndOpen, searchFor, navClick, openPill } from './helpers.js';
 import { mockSupabase } from './helpers/supabase-mock.js';
 

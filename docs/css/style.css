@@ -7447,13 +7447,17 @@ body.dungeon-mode #search-stats {
     line-height: 1.5;
 }
 
-/* Landing footer with bounty link */
+/* Landing footer: the A–Z link and the bounty link */
 .landing-footer {
     margin-top: 1.5rem;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
 }
 
-.bounty-link {
+.bounty-link,
+.browse-link {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -7467,7 +7471,8 @@ body.dungeon-mode #search-stats {
     transition: all 0.2s;
 }
 
-.bounty-link:hover {
+.bounty-link:hover,
+.browse-link:hover {
     border-color: var(--accent);
     color: var(--accent);
     background: var(--bg);
@@ -7475,6 +7480,70 @@ body.dungeon-mode #search-stats {
 
 .bounty-icon {
     font-size: 1.25rem;
+}
+
+/* All songs A–Z: docs/songs/index.html, written by
+   scripts/lib/build_song_pages.py (render_all_songs). A plain page, not the app. */
+.all-songs {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 3rem;
+}
+
+.all-songs a {
+    color: var(--text);
+}
+
+.all-songs a:hover {
+    color: var(--accent);
+}
+
+.all-songs .all-songs-home {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.all-songs h1 {
+    margin: 1.25rem 0 0.25rem;
+}
+
+.all-songs-intro {
+    color: var(--text-secondary);
+}
+
+.all-songs-letters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.85rem;
+    margin: 1rem 0 0.5rem;
+    font-weight: 600;
+}
+
+.all-songs-letters a {
+    text-decoration: none;
+}
+
+.all-songs h2 {
+    margin: 1.5rem 0 0.5rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.all-songs ul {
+    list-style: none;
+    columns: 18rem;
+    column-gap: 2rem;
+}
+
+.all-songs li {
+    break-inside: avoid;
+    padding: 0.15rem 0;
+}
+
+.all-songs .by {
+    color: var(--text-secondary);
+    font-size: 0.85em;
 }
 
 /* Mobile: single column */

@@ -4,7 +4,7 @@
 // elsewhere on a phone have to find it (tab Edit: the ⚙ sheet). The editor
 // demo has to work with the editor's DOCKED parts — the section bar and the
 // chord picker sit at the bottom of the screen — and never raise a keyboard.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import { songReady, here, ringAround, cardClear, next, leadText } from './helpers/tour.js';
 
 /** Once the card has settled, its bottom is above the top of `selector`. */

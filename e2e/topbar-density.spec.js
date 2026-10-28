@@ -9,7 +9,7 @@
 // display name is as long as the person is. So these tests drive real widths
 // with a real name in the band and assert on measured geometry, not on the
 // breakpoint that happens to implement it.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import { searchAndOpen } from './helpers.js';
 
 /** The DOM supabase-auth produces on sign-in. Signing in for real would need
