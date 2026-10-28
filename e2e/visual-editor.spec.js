@@ -278,7 +278,7 @@ test.describe('Chords mode on desktop', () => {
         await openNew(page);
         await chordsOn(page, 'Amazing grace how sweet');
         const sheet = page.locator(SHEET);
-        await expect(sheet).toContainText('Key of G');
+        await expect(sheet).toContainText('Key: not set');               // no chord and no {key:} yet: the rows show G's chords
         // the decorations row is always there (the sheet keeps its height) but dimmed and inert until the box holds a chord
         await expect(sheet.locator('.chm-decos.idle')).toHaveCount(1);
         await expect(sheet.locator('.chm-deco:not([disabled])')).toHaveCount(0);
@@ -402,7 +402,7 @@ test.describe('Chords mode on desktop', () => {
         await openNew(page);
         await chordsOn(page, '{key: D}\n[D]Hello [A]there [D/F#]friend');
         const menu = page.locator(SHEET);
-        await expect(menu.locator('.chm-key')).toHaveValue('D');
+        await expect(menu.locator('.chm-key')).toHaveText('Key of D');
         await expect(menu.locator('.chm-cell.used')).toHaveCount(2);
         await expect(menu).not.toContainText('Also in this song');
         await expect(menu.locator('.chm-chip')).toHaveCount(0);
@@ -446,18 +446,42 @@ test.describe('Chords mode on desktop', () => {
         await expect(menu.locator('.chm-cell[data-chord="G7"], .chm-cell[data-chord="Gsus2"]')).toHaveCount(0);
     });
 
-    test('the key: the sheet, the toolbar and the submitted key are one value', async ({ page }) => {
+    test('one key, changed in one place: the toolbar moves every chord and the sheet follows', async ({ page }) => {
         await openNew(page);
-        await chordsOn(page, '[G]Hello there');
-        await page.locator(`${SHEET} .chm-key`).selectOption('A');
-        expect(await leadText(page)).toMatch(/^\{key: A\}\n/);
-        await expect(page.locator(`${SHEET} .chm-key`)).toHaveValue('A');
-        await expect(page.locator('#editor-key-select')).toHaveValue('A');
+        await chordsOn(page, '[G]Hello [C]there [D]friend');
+        await expect(page.locator(`${SHEET} .chm-key`)).toHaveText('Key of G');
+        await expect(page.locator(`${SHEET} select`)).toHaveCount(0);           // the sheet shows the key, it does not change it
+        await page.locator('#editor-key-select').selectOption('A');
+        expect(await leadText(page)).toBe('{key: A}\n[A]Hello [D]there [E]friend');
+        await expect(page.locator(`${SHEET} .chm-key`)).toHaveText('Key of A');
+        await expect(page.locator(`${SHEET} .chm-row-diatonic .chm-cell`).first()).toHaveAttribute('data-chord', 'A');
         const key = await page.evaluate(async () => {
             const { currentSongKey } = await import('/js/lead-editor/doc-model.js');
             return currentSongKey(document.querySelector('#editor-lead').__lead.getText()).key;
         });
         expect(key).toBe('A');
+        await page.locator('#editor-undo').click();                              // one undo step
+        expect(await leadText(page)).toBe('[G]Hello [C]there [D]friend');
+    });
+
+    test('the relative minor renames the key and moves nothing', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, '[G]Hello [Em]there [C]friend');
+        await page.locator('#editor-key-select').selectOption('Em');
+        expect(await leadText(page)).toBe('{key: Em}\n[G]Hello [Em]there [C]friend');
+        await expect(page.locator(`${SHEET} .chm-key`)).toHaveText('Key of Em');
+    });
+
+    test('a song with no chords yet can be given its key first, and the sheet offers that key\'s chords', async ({ page }) => {
+        await openNew(page);
+        await setLead(page, 'Hello there');
+        await expect(page.locator('#editor-key-select')).toBeVisible();          // before the first chord
+        await expect(page.locator('#editor-key-select')).toHaveValue('');
+        await page.locator('#editor-mode-chords').click();
+        await expect(page.locator(`${SHEET} .chm-key`)).toHaveText('Key: not set');
+        await page.locator('#editor-key-select').selectOption('D');
+        expect(await leadText(page)).toBe('{key: D}\nHello there');
+        await expect(page.locator(`${SHEET} .chm-row-diatonic .chm-cell`).first()).toHaveAttribute('data-chord', 'D');
     });
 });
 

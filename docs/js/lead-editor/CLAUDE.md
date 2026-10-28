@@ -164,7 +164,7 @@ override: with it, iOS drew a second selection and handles over the native one.
     below the magnifier and above the picker. Used by taps, the arrows, a glide, placing a chord and Add chord line.
   - Hold-to-trackpad works on the picker AND on the magnifier (the arrows; dragging the strip itself is a trackpad at once).
   - `Esc` closes it. There is no Done: the picker's mode switch (below) returns to Lyrics.
-  - **Picker header, three rows of fixed height** (`.chm-row1` / `.chm-row2` / `.chm-row3`, 40px each, same in split and side): row 1 = `Key` select
+  - **Picker header, three rows of fixed height** (`.chm-row1` / `.chm-row2` / `.chm-row3`, 40px each, same in split and side): row 1 = the key LABEL (`.chm-key`)
     left, a compact `Lyrics | Chords | ChordPro` segmented control right (`[data-picker-mode]`; calls the SAME `setMode` as the editor
     header's `#editor-mode-*`; `applyMode` -> `syncModeChrome` keeps the header in sync, and the picker is only on screen in Chords);
     row 2 = the function line, then Move / ✕ Remove when the cursor is on a chord;
@@ -377,9 +377,14 @@ at 18px inside those buttons only; `chordGlyphHtml` elsewhere is untouched.
   is visible (the locked chart can't take focus): arrows move the box; a chord letter
   starts typed entry (ghost chip: ~800ms idle commit, Enter commits, 1.5s resume grace
   so `E` then `b7` is `Eb7`); Space/Tab advance; Delete/Backspace remove; Esc closes the sheet.
-- **The key**: the sheet's select writes `{key: X}` (declares; the owner has not
-  decided whether it should transpose). `currentSongKey` feeds the sheet, the
-  toolbar `#editor-key-select` and the submitted `key`/`mode`, so they cannot disagree.
+- **The key: one per song, changed in ONE place** (decided by Mike 2026-10-28): the toolbar's `#editor-key-select` (every
+  major and minor key). Choosing one moves the WHOLE song, `editor.js::songInKey`: every chord shifts by
+  `doc-model.js::keyShift(from, to)` (the nearer way, keys compared through their relative major, so G -> A is +2 and
+  G -> Em is 0: only the name changes, which is how a mis-detected mode is fixed) and `{key: to}` is written, ONE undo
+  step. A song with no chords only gets the declaration; the key control shows as soon as the song has text. The chord
+  sheet's `.chm-key` is a LABEL ("Key of G", "Key: not set" while nothing is declared or detected; the rows show G until
+  then). Songs that really change key are not blocked: More roots and typed entry reach any chord, and a key change
+  moves both keys together. `currentSongKey` feeds the sheet, the toolbar and the submitted `key`/`mode`.
 
 ## The tour's hooks (`present`)
 

@@ -16,7 +16,7 @@ import { trackEditor, trackSubmission } from './analytics.js';
 import { showToast } from './toast.js';
 // Note: refreshPendingSongs is accessed via window.refreshPendingSongs to avoid circular import
 import { mountLeadEditor } from './lead-editor/index.js';
-import { currentSongKey } from './lead-editor/doc-model.js';
+import { currentSongKey, keyShift, withKey } from './lead-editor/doc-model.js';
 import { diffChange } from './lead-editor/section-ops.js';
 import { parseSong, serializeSong } from './visual-editor/model.js';
 import {
@@ -41,7 +41,6 @@ const SUPABASE_URL = 'https://ofmqlrnyldlmvggihogt.supabase.co';
 
 // Module-level state
 let editorDetectedKey = null;
-let editorKeyPinned = false; // Whether the user manually set the key
 let autoDetectFormat = true; // Whether to auto-clean pasted content
 
 // DOM element references (set by init)
@@ -208,7 +207,6 @@ export async function enterEditMode(song, options = {}) {
     trackEditor('edit', song.id);
 
     // Reset key pin state for new edit session
-    editorKeyPinned = false;
 
     // Populate editor with song data
     if (editorTitleEl) editorTitleEl.value = song.title || '';
@@ -263,7 +261,6 @@ export function exitEditMode() {
     setEditingSongId(null);
     editingSongRecord = null;
     renderForkNotice();
-    editorKeyPinned = false;
     if (editorSubmitBtnEl) editorSubmitBtnEl.textContent = 'Submit to Songbook';
 }
 
@@ -278,7 +275,6 @@ export function resetEditorForNewSong() {
     editingSongRecord = null;
     renderForkNotice();
     lastSessionWasEdit = false;
-    editorKeyPinned = false;
     editorDetectedKey = null;
 
     if (editorTitleEl) editorTitleEl.value = '';
@@ -538,28 +534,36 @@ export function editorTransposeContent(content, semitones) {
 }
 
 /**
+ * Put the song in key `to`: every chord moves by the shift between the song's key and `to` (G -> A: +2; G -> Em: 0,
+ * only the name), and `{key: to}` is written. ONE undo step. With no chords yet it only declares the key.
+ */
+export function songInKey(text, to) {
+    const from = currentSongKey(text).key;
+    return withKey(editorTransposeContent(text, keyShift(from, to)), to);
+}
+function setSongKey(to) {
+    const text = getText();
+    const next = songInKey(text, to);
+    if (next !== text) applyText(next, 'input.key');
+    updateEditorPreview();
+}
+
+/**
  * Update the editor key select dropdown
  */
-function updateEditorKeySelect(detectedKey, detectedMode) {
+function updateEditorKeySelect(detectedKey) {
     if (!editorKeySelectEl) return;
-
-    const keyList = detectedMode === 'minor' ? CHROMATIC_MINOR_KEYS : CHROMATIC_MAJOR_KEYS;
-
-    // Rebuild options only if key list type changed
-    const currentOptionCount = editorKeySelectEl.options.length;
-    const needsRebuild = currentOptionCount !== keyList.length + 1; // +1 for "Key: ?" option
-
-    if (needsRebuild) {
+    // every key, major and minor: G -> Em only renames the key (the same chords), so a mis-detected mode is fixed here too
+    if (editorKeySelectEl.options.length !== CHROMATIC_MAJOR_KEYS.length + CHROMATIC_MINOR_KEYS.length + 1) {
         editorKeySelectEl.innerHTML = '';
         const placeholder = document.createElement('option');
         placeholder.value = '';
-        placeholder.textContent = 'Key: ?';
+        placeholder.textContent = 'Key: not set';
         editorKeySelectEl.appendChild(placeholder);
-
-        for (const k of keyList) {
+        for (const k of [...CHROMATIC_MAJOR_KEYS, ...CHROMATIC_MINOR_KEYS]) {
             const opt = document.createElement('option');
             opt.value = k;
-            opt.textContent = k;
+            opt.textContent = `Key: ${k}`;
             editorKeySelectEl.appendChild(opt);
         }
     }
@@ -579,17 +583,16 @@ function updateEditorChrome() {
     const chords = extractChords(content);
     const detected = currentSongKey(content);   // declared {key:}, else detected: the same answer everywhere
 
-    // Only update key if user hasn't manually pinned it
-    if (!editorKeyPinned) {
-        editorDetectedKey = detected.key;
-        updateEditorKeySelect(detected.key, detected.mode);
-    }
+    editorDetectedKey = detected.key;
+    updateEditorKeySelect(detected.key);
 
-    // progressive toolbar: transpose/key stay out of the way until the
-    // document actually has a chord (space is reserved — no layout jump)
+    // progressive toolbar: the key stays out of the way until there is a song to put in a key (space is reserved, no
+    // layout jump); it is there before the first chord, so the chord sheet offers the right chords from the start
     if (editorTransposeGroupEl) {
-        editorTransposeGroupEl.classList.toggle('ve-gone', chords.length === 0);
+        editorTransposeGroupEl.classList.toggle('ve-gone', !content.trim());
     }
+    if (editorTransposeUpEl) editorTransposeUpEl.disabled = chords.length === 0;
+    if (editorTransposeDownEl) editorTransposeDownEl.disabled = chords.length === 0;
 }
 
 /**
@@ -670,7 +673,6 @@ function initLeadEditor() {
                 autoDetect: () => autoDetectFormat,
                 onSongRequest: onSongRequestCb ? () => onSongRequestCb() : null,
                 onChange() { updateEditorChrome(); },
-                onKey() { editorKeyPinned = false; updateEditorChrome(); },
                 onHistory({ undo, redo }) {
                     if (editorUndoBtnEl) editorUndoBtnEl.disabled = undo === 0;
                     if (editorRedoBtnEl) editorRedoBtnEl.disabled = redo === 0;
@@ -909,17 +911,12 @@ export function initEditor(options) {
         });
     }
 
-    // Key select - transpose content to the selected key
+    // THE key: one per song, changed only here, and it moves the whole song (chords + `{key:}`) as one undo step.
     if (editorKeySelectEl) {
         editorKeySelectEl.addEventListener('change', () => {
-            const selected = editorKeySelectEl.value;
-            if (selected && editorDetectedKey && selected !== editorDetectedKey) {
-                const semitones = getSemitonesBetweenKeys(editorDetectedKey, selected);
-                if (semitones !== 0) applyText(editorTransposeContent(getText(), semitones));
-            }
-            // After transposing, let key re-detect from new chords
-            editorKeyPinned = false;
-            updateEditorPreview();
+            const to = editorKeySelectEl.value;
+            if (to) setSongKey(to);
+            else updateEditorChrome();          // "not set" is not a choice: show the song's key again
         });
     }
 
@@ -933,7 +930,6 @@ export function initEditor(options) {
     // Transpose buttons - these modify actual chords, so let key re-detect
     if (editorTransposeUpEl) {
         editorTransposeUpEl.addEventListener('click', () => {
-            editorKeyPinned = false;
             applyText(editorTransposeContent(getText(), 1));
             updateEditorPreview();
         });
@@ -941,7 +937,6 @@ export function initEditor(options) {
 
     if (editorTransposeDownEl) {
         editorTransposeDownEl.addEventListener('click', () => {
-            editorKeyPinned = false;
             applyText(editorTransposeContent(getText(), -1));
             updateEditorPreview();
         });
