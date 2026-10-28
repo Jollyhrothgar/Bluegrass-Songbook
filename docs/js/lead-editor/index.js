@@ -991,20 +991,46 @@ export function mountLeadEditor({ host, hooks = {} }) {
         }
         if (!res.raw) hooks.onPaste?.(res);
     }
+    /** Put pasted text where the cursor is: converted to ChordPro when it is a chord sheet (and auto-detect is on), else as is. */
+    function insertPasted(raw) {
+        const res = hooks.autoDetect?.() === false ? { kind: 'plain' } : convertPastedText(raw);
+        if (res.kind === 'chordpro') { insertConverted(res); return; }
+        const s = view.state.selection.main;
+        editor.change({ changes: { from: s.from, to: s.to, insert: raw }, selection: { anchor: s.from + raw.length } }, { userEvent: 'input.paste' });
+    }
     /** The empty-sheet Paste button. Pages may only read the clipboard over HTTPS (or on localhost). */
     async function pasteFromClipboard() {
         if (!canReadClipboard()) { view.focus(); showPasteHint(); return; }
         try {
             const raw = await navigator.clipboard.readText();
             if (!raw) return;
-            const res = hooks.autoDetect?.() === false ? { kind: 'plain' } : convertPastedText(raw);
-            if (res.kind === 'chordpro') insertConverted(res);
-            else {
-                const s = view.state.selection.main;
-                editor.change({ changes: { from: s.from, to: s.to, insert: raw }, selection: { anchor: s.from + raw.length } }, { userEvent: 'input.paste' });
-            }
+            insertPasted(raw);
             view.focus();
         } catch { view.focus(); showPasteHint(); }   // permission refused: the keyboard's own Paste still works
+    }
+    /**
+     * ⌘V / Ctrl+V anywhere on the editor page pastes into the song, whatever has focus: nobody should have to click
+     * into the sheet first (2026-10-27: a ⌘V right after opening Add Song went to <body> and nothing happened). Only a
+     * field that takes text itself (the title, the section bar's Other…) keeps its own paste, and CodeMirror handles a
+     * paste inside it. Chords mode is locked, so a paste there goes back to Lyrics first.
+     */
+    function onDocPaste(e) {
+        if (e.defaultPrevented || !host.isConnected || host.offsetParent === null) return;   // the editor is not on screen
+        const t = e.target instanceof Element ? e.target : null;
+        if (t && (view.dom.contains(t) || t.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"])'))) return;
+        const raw = e.clipboardData?.getData('text/plain');
+        if (!raw) return;
+        e.preventDefault();
+        if (mode === 'chords') setMode('lyrics', { persist: false });
+        insertPasted(raw);
+        view.focus();
+    }
+    document.addEventListener('paste', onDocPaste);
+    /** A new, empty song on a desktop opens with the caret in the sheet, ready to type (a phone would pop its keyboard). */
+    function focusIfEmpty() {
+        if (view.state.doc.length || mode !== 'lyrics' || !window.matchMedia?.('(pointer: fine)').matches) return;
+        if (document.activeElement && document.activeElement !== document.body && !view.dom.contains(document.activeElement)) return;
+        view.focus();
     }
 
     /**
@@ -1291,7 +1317,8 @@ export function mountLeadEditor({ host, hooks = {} }) {
             end() { presenting = false; updateSelectionBar(); },
         },
         focus: () => view.focus(),
-        destroy() { fontDownBtn?.removeEventListener('click', onFontDown); fontUpBtn?.removeEventListener('click', onFontUp); document.removeEventListener('keydown', onDocKey, true); resetGestures(); window.removeEventListener('pointermove', onPressMove); window.removeEventListener('pointerup', endPress); window.removeEventListener('pointercancel', endPress); window.removeEventListener('lostpointercapture', onLostCapture, true); window.removeEventListener('blur', resetGestures); document.removeEventListener('visibilitychange', onVisibility); window.removeEventListener('scroll', onScrollRing); window.visualViewport?.removeEventListener('resize', onViewportForBar); window.visualViewport?.removeEventListener('scroll', onViewportForBar); ring.remove(); loupe.destroy(); menu.destroy(); menuResizeObserver?.disconnect(); sel.remove(); emptyHint.remove(); closeLabelMenu(); editor.destroy(); },
+        focusIfEmpty,
+        destroy() { document.removeEventListener('paste', onDocPaste); fontDownBtn?.removeEventListener('click', onFontDown); fontUpBtn?.removeEventListener('click', onFontUp); document.removeEventListener('keydown', onDocKey, true); resetGestures(); window.removeEventListener('pointermove', onPressMove); window.removeEventListener('pointerup', endPress); window.removeEventListener('pointercancel', endPress); window.removeEventListener('lostpointercapture', onLostCapture, true); window.removeEventListener('blur', resetGestures); document.removeEventListener('visibilitychange', onVisibility); window.removeEventListener('scroll', onScrollRing); window.visualViewport?.removeEventListener('resize', onViewportForBar); window.visualViewport?.removeEventListener('scroll', onViewportForBar); ring.remove(); loupe.destroy(); menu.destroy(); menuResizeObserver?.disconnect(); sel.remove(); emptyHint.remove(); closeLabelMenu(); editor.destroy(); },
     };
     host.__lead = api;   // test hook (e2e reads the CodeMirror view through it)
     return api;
