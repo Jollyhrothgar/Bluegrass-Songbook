@@ -3,7 +3,7 @@
 // with the song page's own classes. See docs/plans/2026-10-26-lyrics-editor-redesign.md.
 import { test, expect } from './fixtures.js';
 import {
-    CM, SHEET, setLead, leadText, leadReady, setMode, chordsOn, boxAt, boxPos, openEditor, pointOnWord,
+    CM, SHEET, BAND, openDisplay, setLead, leadText, leadReady, setMode, chordsOn, boxAt, boxPos, openEditor, pointOnWord,
     boxState, lineEndPoint, centreOf, mouseDrag, along, segmentRects, syllableCentres, boxStopKind, stepKinds,
 } from './helpers/lead-editor.js';
 
@@ -278,7 +278,7 @@ test.describe('Chords mode on desktop', () => {
         await openNew(page);
         await chordsOn(page, 'Amazing grace how sweet');
         const sheet = page.locator(SHEET);
-        await expect(sheet).toContainText('Key: not set');               // no chord and no {key:} yet: the rows show G's chords
+        await expect(page.locator('#editor-key-select')).toHaveValue('');   // no chord and no {key:} yet: the rows show G's chords
         // the decorations row is always there (the sheet keeps its height) but dimmed and inert until the box holds a chord
         await expect(sheet.locator('.chm-decos.idle')).toHaveCount(1);
         await expect(sheet.locator('.chm-deco:not([disabled])')).toHaveCount(0);
@@ -388,11 +388,12 @@ test.describe('Chords mode on desktop', () => {
         expect(await leadText(page)).toBe(moved);
     });
 
-    test('the picker\'s Lyrics switch goes back to Lyrics (there is no Done); Esc closes only the sheet', async ({ page }) => {
+    test('the band\'s Lyrics switch goes back to Lyrics (there is no Done); the picker has no switch of its own', async ({ page }) => {
         await openNew(page);
         await chordsOn(page, 'Amazing grace');
         await expect(page.locator(`${SHEET} .chm-done`)).toHaveCount(0);
-        await page.locator(`${SHEET} [data-picker-mode="lyrics"]`).click();
+        await expect(page.locator(`${SHEET} [data-picker-mode], ${SHEET} .chm-modeswitch`)).toHaveCount(0);
+        await page.locator(`${BAND} #editor-mode-lyrics`).click();
         await expect(page.locator('#editor-mode-lyrics')).toHaveAttribute('aria-pressed', 'true');
         await expect(page.locator(SHEET)).toBeHidden();
         await expect(page.locator(CM)).toHaveAttribute('contenteditable', 'true');
@@ -402,7 +403,8 @@ test.describe('Chords mode on desktop', () => {
         await openNew(page);
         await chordsOn(page, '{key: D}\n[D]Hello [A]there [D/F#]friend');
         const menu = page.locator(SHEET);
-        await expect(menu.locator('.chm-key')).toHaveText('Key of D');
+        await expect(page.locator('#editor-key-select')).toHaveValue('D');
+        await expect(menu.locator('.chm-key, select')).toHaveCount(0);           // the key lives in the band only
         await expect(menu.locator('.chm-cell.used')).toHaveCount(2);
         await expect(menu).not.toContainText('Also in this song');
         await expect(menu.locator('.chm-chip')).toHaveCount(0);
@@ -449,11 +451,11 @@ test.describe('Chords mode on desktop', () => {
     test('one key, changed in one place: the toolbar moves every chord and the sheet follows', async ({ page }) => {
         await openNew(page);
         await chordsOn(page, '[G]Hello [C]there [D]friend');
-        await expect(page.locator(`${SHEET} .chm-key`)).toHaveText('Key of G');
-        await expect(page.locator(`${SHEET} select`)).toHaveCount(0);           // the sheet shows the key, it does not change it
+        await expect(page.locator('#editor-key-select')).toHaveValue('G');
+        await expect(page.locator(`${SHEET} select, ${SHEET} .chm-key`)).toHaveCount(0);   // one key control: the band's
         await page.locator('#editor-key-select').selectOption('A');
         expect(await leadText(page)).toBe('{key: A}\n[A]Hello [D]there [E]friend');
-        await expect(page.locator(`${SHEET} .chm-key`)).toHaveText('Key of A');
+        await expect(page.locator('#editor-key-select')).toHaveValue('A');
         await expect(page.locator(`${SHEET} .chm-row-diatonic .chm-cell`).first()).toHaveAttribute('data-chord', 'A');
         const key = await page.evaluate(async () => {
             const { currentSongKey } = await import('/js/lead-editor/doc-model.js');
@@ -469,7 +471,7 @@ test.describe('Chords mode on desktop', () => {
         await chordsOn(page, '[G]Hello [Em]there [C]friend');
         await page.locator('#editor-key-select').selectOption('Em');
         expect(await leadText(page)).toBe('{key: Em}\n[G]Hello [Em]there [C]friend');
-        await expect(page.locator(`${SHEET} .chm-key`)).toHaveText('Key of Em');
+        await expect(page.locator('#editor-key-select')).toHaveValue('Em');
     });
 
     test('a song with no chords yet can be given its key first, and the sheet offers that key\'s chords', async ({ page }) => {
@@ -478,7 +480,7 @@ test.describe('Chords mode on desktop', () => {
         await expect(page.locator('#editor-key-select')).toBeVisible();          // before the first chord
         await expect(page.locator('#editor-key-select')).toHaveValue('');
         await page.locator('#editor-mode-chords').click();
-        await expect(page.locator(`${SHEET} .chm-key`)).toHaveText('Key: not set');
+        await expect(page.locator('#editor-key-select')).toHaveValue('');
         await page.locator('#editor-key-select').selectOption('D');
         expect(await leadText(page)).toBe('{key: D}\nHello there');
         await expect(page.locator(`${SHEET} .chm-row-diatonic .chm-cell`).first()).toHaveAttribute('data-chord', 'D');
@@ -1005,8 +1007,8 @@ test.describe('Chords mode: the docked side panel (desktop)', () => {
         await setLead(page, 'Amazing grace how sweet');
         await setMode(page, 'chords');
         await expect(page.locator(SHEET)).toHaveClass(/chm-split/);
-        const m = await page.evaluate(() => ({ body: document.querySelector('.chm-body').getBoundingClientRect().bottom, vh: innerHeight, strip: getComputedStyle(document.querySelector('.chm-strip')).position }));
-        expect(Math.round(m.body)).toBe(m.vh);
+        const m = await page.evaluate(() => ({ body: document.querySelector('.chm-body').getBoundingClientRect().bottom, band: document.getElementById('app-bottomband').getBoundingClientRect().top, strip: getComputedStyle(document.querySelector('.chm-strip')).position }));
+        expect(Math.round(m.body)).toBe(Math.round(m.band));                // on top of the controls band
         expect(m.strip).toBe('fixed');
     });
 });
@@ -1147,6 +1149,33 @@ test.describe('where the cursor stops (desktop)', () => {
     });
 });
 
+test.describe('the editor\'s controls band', () => {
+    test('it is on screen only with the editor, and comes back in step with the mode', async ({ page }) => {
+        await openNew(page);
+        await chordsOn(page, '[G]Amazing grace');
+        await expect(page.locator(BAND)).toBeVisible();
+        await expect(page.locator('#editor-toolbar, .editor-toolbar')).toHaveCount(0);   // no second set at the top
+        await page.locator('.topbar-nav-link[data-nav="search"]').click();
+        await expect(page.locator('#app-bottomband')).toBeHidden();
+        await page.goBack();
+        await expect(page.locator('#editor-panel')).toBeVisible();
+        await expect(page.locator(BAND)).toBeVisible();
+        const mode = await page.evaluate(() => document.querySelector('#editor-lead').__lead.mode);
+        await expect(page.locator(`${BAND} [data-lead-mode="${mode}"]`)).toHaveAttribute('aria-pressed', 'true');
+        await expect(page.locator(`${BAND} [aria-pressed="true"]`)).toHaveCount(1);
+    });
+
+    test('Display holds text size, Nashville and the paste cleanup switch', async ({ page }) => {
+        await openNew(page);
+        await setLead(page, '{key: G}\n[G]Test [C]line');
+        await openDisplay(page);
+        const pop = page.locator('#editor-display-pill .pill-popover');
+        for (const id of ['#editor-font-down', '#editor-font-up', '#editor-nashville', '#editor-auto-detect']) await expect(pop.locator(id)).toBeVisible();
+        await pop.locator('#editor-nashville').check();
+        await expect(page.locator('#editor-lead .cl-chord').first()).toHaveText('I');
+    });
+});
+
 test.describe('desktop side panel: magnifier off by default, one nav row', () => {
     test('no magnifier bar until the toggle is pressed; the arrows live in the nav row only', async ({ page }) => {
         await page.addInitScript(() => localStorage.removeItem('bgb-chord-magnifier'));   // runs after the file-level seed
@@ -1155,7 +1184,8 @@ test.describe('desktop side panel: magnifier off by default, one nav row', () =>
         await page.evaluate(() => document.querySelector('#editor-lead').__lead.editor.setBox({ pos: 0, active: true }));
         await expect(page.locator('.chm-strip')).toHaveCount(0);
         const nav = page.locator(`${SHEET} .chm-row3`);
-        await expect(nav.locator('.chm-prev, .chm-up, .chm-down, .chm-next, .chm-undo, .chm-redo, .chm-mag')).toHaveCount(7);
+        await expect(nav.locator('.chm-prev, .chm-up, .chm-down, .chm-next, .chm-mag')).toHaveCount(5);
+        await expect(nav.locator('.chm-undo, .chm-redo')).toHaveCount(0);          // undo / redo: the band's
         await nav.locator('.chm-next').click();
         expect(await boxPos(page)).toBeGreaterThan(0);
         await nav.locator('.chm-mag').click();

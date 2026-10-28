@@ -339,7 +339,6 @@ test.describe('one key owner: the chord sheet, the toolbar and the submitted key
         await page.locator('#editor-mode-chords').click();
         await page.locator('#editor-key-select').selectOption('A');
         await expect(page.locator('#editor-key-select')).toHaveValue('A');
-        await expect(page.locator('.chm-menu .chm-key')).toHaveText('Key of A');
         expect(await page.evaluate(() => document.querySelector('#editor-lead').__lead.getText())).toContain('[A]Out to Google and [D]back again');
         await page.locator('#editor-submit').click();
         await expect.poll(() => sb.rows('pending_songs').length, { timeout: 20000 }).toBe(1);

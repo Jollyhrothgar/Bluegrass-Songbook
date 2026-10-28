@@ -163,15 +163,28 @@ override: with it, iOS drew a second selection and handles over the native one.
   - **`scrollBoxIntoView`** keeps the cursor's line (its chord row too) inside `visibleGap()`: below the top band and, in split,
     below the magnifier and above the picker. Used by taps, the arrows, a glide, placing a chord and Add chord line.
   - Hold-to-trackpad works on the picker AND on the magnifier (the arrows; dragging the strip itself is a trackpad at once).
-  - `Esc` closes it. There is no Done: the picker's mode switch (below) returns to Lyrics.
-  - **Picker header, three rows of fixed height** (`.chm-row1` / `.chm-row2` / `.chm-row3`, 40px each, same in split and side): row 1 = the key LABEL (`.chm-key`)
-    left, a compact `Lyrics | Chords | ChordPro` segmented control right (`[data-picker-mode]`; calls the SAME `setMode` as the editor
-    header's `#editor-mode-*`; `applyMode` -> `syncModeChrome` keeps the header in sync, and the picker is only on screen in Chords);
-    row 2 = the function line, then Move / ✕ Remove when the cursor is on a chord;
-    row 3 = THE nav row `◀ ▲ ▼ ▶ ... ↶ ↷ [magnifier]` (`.chm-prev .chm-up .chm-down .chm-next`, `.chm-undo`/`.chm-redo` = `editor.undo/redo`
-    disabled from `editor.history()` like `#editor-undo/#editor-redo`, `.chm-mag` = icon button, aria-label "Magnifier", `aria-pressed`;
-    every target 40px; at <=340px the mode switch, Key select and nav buttons compact (34px wide) so nothing leaves a 320px viewport, heights unchanged). Chord glyphs are `position: relative; z-index: 1`, above the cursor's `.cl-slot-pill`, so a tap on a visible chord selects it even when the pill overlaps it. Hold-to-trackpad works on the whole picker.
-  - **Editor zoom**: `A−` / `A+` (`#editor-font-down/up`, in `#editor-toolbar`) step the SAME `fontSizeLevel` as the song page's Display pill
+  - `Esc` closes it. There is no Done: the band's `Lyrics` returns to Lyrics.
+  - **Picker header, two rows of fixed height** (`.chm-row2` / `.chm-row3`, 40px each, same in split and side): row 2 = the
+    function line, then Move / ✕ Remove when the cursor is on a chord; row 3 = THE nav row `◀ ▲ ▼ ▶ ... [magnifier]`
+    (`.chm-prev .chm-up .chm-down .chm-next`, `.chm-mag` = icon button, aria-label "Magnifier", `aria-pressed`; every target
+    40px; at <=340px the nav buttons compact to 34px wide, heights unchanged). The picker carries NO key, mode switch or
+    undo / redo (until 2026-10-28 it had copies of all three): those are the band's (below). Chord glyphs are
+    `position: relative; z-index: 1`, above the cursor's `.cl-slot-pill`, so a tap on a visible chord selects it even when
+    the pill overlaps it. Hold-to-trackpad works on the whole picker.
+- **The controls band: ONE place, every device** (Mike, 2026-10-28: "there are duplicated controls ... where should the
+  one place go"). `index.html #editor-band` = `Lyrics | Chords | ChordPro` (`#editor-mode-*`), ↶ ↷ (`#editor-undo/redo`),
+  the key (`#editor-transpose-group`: − `#editor-key-select` +), and a Display pill (`editor.js` builds it with the shell's
+  `pill()`; on first open it takes `#editor-display-options`: A− / A+, Nashville, "Clean up pasted chord sheets"
+  `#editor-auto-detect`). `editor.js::showEditorBand()` mounts it in the app shell's bottom band (`setBottomBand`) whenever
+  `main.js` shows the editor view; leaving the view clears the band, which DETACHES the element (kept, so listeners and
+  state survive; `syncModeChrome` looks in the detached band too). The elements are MOVED, never rebuilt: ids hold.
+  - Phone (`split`): the picker is fixed at `bottom: var(--bottomband-h)`, ON the band; `visibleGap()` and the docked
+    section bar (`placeDockedBar`: above the keyboard, or above the band when the keyboard is down) both stop at the band.
+  - Width: one row from 360px up (`@media (max-width: 480px)` hides − / +, the key list does the same job; `(max-width:
+    400px)` tightens the switch and draws a slim caret on the key select so "Key: C#m" fits). At 320 it wraps to two rows;
+    everything stacked on it reads `--bottomband-h`. e2e: "one place for the controls" (`visual-editor-mobile.spec.js`),
+    "the editor's controls band" (`visual-editor.spec.js`); helpers `BAND`, `openDisplay` in `e2e/helpers/lead-editor.js`.
+  - **Editor zoom**: `A−` / `A+` (`#editor-font-down/up`, in the band's Display pill) step the SAME `fontSizeLevel` as the song page's Display pill
     (limits -5..6, `setFontSizeLevel`); `index.js::stepFont` re-applies the font, `view.requestMeasure()`s and, a frame later, redraws the
     sheet, scrolls the box into view and re-syncs the ring.
 - **The strip** (the magnifier): a clone of the current `.cm-line` (or of the pending chord line's
@@ -377,7 +390,7 @@ at 18px inside those buttons only; `chordGlyphHtml` elsewhere is untouched.
   is visible (the locked chart can't take focus): arrows move the box; a chord letter
   starts typed entry (ghost chip: ~800ms idle commit, Enter commits, 1.5s resume grace
   so `E` then `b7` is `Eb7`); Space/Tab advance; Delete/Backspace remove; Esc closes the sheet.
-- **The key: one per song, changed in ONE place** (decided by Mike 2026-10-28): the toolbar's `#editor-key-select` (every
+- **The key: one per song, changed in ONE place** (decided by Mike 2026-10-28): the band's `#editor-key-select` (every
   major and minor key). Choosing one moves the WHOLE song, `editor.js::songInKey`: every chord shifts by
   `doc-model.js::keyShift(from, to)` (the nearer way, keys compared through their relative major, so G -> A is +2 and
   G -> Em is 0: only the name changes, which is how a mis-detected mode is fixed) and `{key: to}` is written, ONE undo

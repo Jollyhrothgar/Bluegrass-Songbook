@@ -8,7 +8,7 @@
 // synthetic pointer events.
 import { test, expect } from './fixtures.js';
 import {
-    CM, SHEET, setLead, leadText, leadReady, setMode, openEditor, boxPos, boxAt, syllableCentres, scrollLineToTop,
+    CM, SHEET, BAND, openDisplay, setLead, leadText, leadReady, setMode, openEditor, boxPos, boxAt, syllableCentres, scrollLineToTop,
     boxState, lineEndPoint, centreOf, touchDrag, along, boxStopKind, stepKinds, segmentRects,
 } from './helpers/lead-editor.js';
 
@@ -96,7 +96,9 @@ test.describe('Lyrics mode on a phone', () => {
             const vv = window.visualViewport;
             const { editor } = document.querySelector('#editor-lead').__lead;
             const start = editor.view.coordsAtPos(editor.view.state.selection.main.from);
-            return { top: bar.top, bottom: bar.bottom, left: bar.left, right: bar.right, vvTop: vv.offsetTop, vvBottom: vv.offsetTop + vv.height,
+            const band = document.getElementById('app-bottomband');
+            const floor = band && !band.classList.contains('hidden') ? Math.min(vv.offsetTop + vv.height, band.getBoundingClientRect().top) : vv.offsetTop + vv.height;
+            return { top: bar.top, bottom: bar.bottom, left: bar.left, right: bar.right, vvTop: vv.offsetTop, vvBottom: floor,
                 vw: innerWidth, startTop: start ? start.top : null, startBottom: start ? start.bottom : null,
                 docked: document.querySelector('.le-selbar').classList.contains('le-selbar-docked') };
         });
@@ -105,7 +107,7 @@ test.describe('Lyrics mode on a phone', () => {
         let p = await place();
         expect(p.docked).toBe(true);
         expect(p.bottom).toBeLessThanOrEqual(p.vvBottom);
-        expect(p.bottom).toBeGreaterThan(p.vvBottom - 30);                 // at the bottom, not floating mid-screen
+        expect(p.bottom).toBeGreaterThan(p.vvBottom - 30);                 // at the bottom (on the controls band), not floating mid-screen
         expect(p.left).toBeGreaterThanOrEqual(0);
         expect(p.right).toBeLessThanOrEqual(p.vw);
         expect(p.top > p.startBottom || p.bottom < p.startTop).toBe(true);  // not over the selection start (iOS's menu spot)
@@ -180,10 +182,11 @@ test.describe('Chords mode on a phone', () => {
         const m = await page.evaluate(() => {
             const r = (s) => { const b = document.querySelector(s).getBoundingClientRect(); return { top: b.top, bottom: b.bottom, h: b.height }; };
             const cs = getComputedStyle(document.documentElement);
-            return { strip: r('.chm-strip'), body: r('.chm-body'), band: r('.app-topbar'), stripVar: cs.getPropertyValue('--chm-strip-h'), pickerVar: cs.getPropertyValue('--chm-picker-h') };
+            return { strip: r('.chm-strip'), body: r('.chm-body'), band: r('.app-topbar'), controls: r('#app-bottomband'), stripVar: cs.getPropertyValue('--chm-strip-h'), pickerVar: cs.getPropertyValue('--chm-picker-h') };
         });
         const vh = page.viewportSize().height;
-        expect(Math.round(m.body.bottom)).toBe(vh);                                  // the picker is at the bottom
+        expect(Math.round(m.controls.bottom)).toBe(vh);                              // the editor's controls band is at the bottom
+        expect(Math.round(m.body.bottom)).toBe(Math.round(m.controls.top));          // and the picker sits right on it
         expect(Math.abs(m.strip.top - m.band.bottom)).toBeLessThanOrEqual(1);        // the magnifier is right under the top band
         expect(m.strip.bottom).toBeLessThan(vh / 3);
         expect(m.body.top).toBeGreaterThan(m.strip.bottom + 100);                    // a real gap between them
@@ -750,6 +753,7 @@ test.describe('no staircase inside a word (WebKit, A+ then a cursor mid-word)', 
         await openEditor(page);
         await setLead(page, 'Well the girl ran [C#7]off with [D]somebody [A]else');
         await setMode(page, 'chords');
+        await openDisplay(page);
         await page.locator('#editor-font-up').click();
         const body = await page.evaluate(() => document.querySelector('#editor-lead').__lead.editor.view.state.doc.toString().indexOf('body'));
         await page.evaluate((p) => document.querySelector('#editor-lead').__lead.editor.setBox({ pos: p, active: true }), body);
@@ -863,7 +867,7 @@ test.describe('the docked parts keep their height', () => {
             await page.waitForTimeout(150);
             return page.evaluate(() => {
                 const r = (s) => { const b = document.querySelector(s).getBoundingClientRect(); return [Math.round(b.top), Math.round(b.height)]; };
-                return { row1: r('.chm-row1'), row2: r('.chm-row2'), picker: r('.chm-body'), strip: r('.chm-strip'), stripView: r('.chm-strip-view') };
+                return { row2: r('.chm-row2'), row3: r('.chm-row3'), picker: r('.chm-body'), strip: r('.chm-strip'), stripView: r('.chm-strip-view') };
             });
         };
         const text = await leadText(page);
@@ -928,48 +932,61 @@ test.describe('the ⋯ second row of extensions', () => {
     });
 });
 
-test.describe('the picker carries the mode switch and undo / redo', () => {
-    test('the picker switch and the header switch drive the same mode and stay in sync', async ({ page }) => {
+test.describe('one place for the controls: the band at the bottom (mode, undo / redo, key, display)', () => {
+    test('the band\'s mode switch is the only one; the picker sits on the band and has no copies', async ({ page }) => {
         await openEditor(page);
         await setLead(page, 'Amazing [G]grace how sweet');
         await setMode(page, 'chords');
-        const pick = (m) => page.locator(`${SHEET} [data-picker-mode="${m}"]`);
-        await expect(pick('chords')).toHaveAttribute('aria-pressed', 'true');
-        await pick('chordpro').tap();
+        await expect(page.locator(`${SHEET} [data-picker-mode], ${SHEET} .chm-undo, ${SHEET} .chm-redo, ${SHEET} .chm-key, ${SHEET} select`)).toHaveCount(0);
+        await expect(page.locator('[data-lead-mode]')).toHaveCount(3);     // one switch on the page
+        await page.locator(`${BAND} #editor-mode-chordpro`).tap();
         await expect(page.locator('#editor-mode-chordpro')).toHaveAttribute('aria-pressed', 'true');
         await expect(page.locator(SHEET)).toBeHidden();
-        await setMode(page, 'chords');                                     // the header switch brings the picker back, with Chords on
-        await expect(pick('chords')).toHaveAttribute('aria-pressed', 'true');
-        await expect(pick('lyrics')).toHaveAttribute('aria-pressed', 'false');
-        await pick('lyrics').tap();
-        await expect(page.locator('#editor-mode-lyrics')).toHaveAttribute('aria-pressed', 'true');
+        await expect(page.locator(BAND)).toBeVisible();                     // the band stays in every mode
+        await page.locator(`${BAND} #editor-mode-chords`).tap();
+        await expect(page.locator(SHEET)).toBeVisible();
+        await page.locator(`${BAND} #editor-mode-lyrics`).tap();
         await expect(page.locator('#editor-mode-chords')).toHaveAttribute('aria-pressed', 'false');
         await expect(page.locator(SHEET)).toBeHidden();
     });
 
-    test('undo / redo in the picker undo a placed chord and share the toolbar disabled states', async ({ page }) => {
+    test('the band\'s undo / redo undo a chord placed from the picker', async ({ page }) => {
         await openEditor(page);
         await setLead(page, 'Amazing grace how sweet');
         await setMode(page, 'chords');
-        const undo = page.locator(`${SHEET} .chm-undo`);
-        const redo = page.locator(`${SHEET} .chm-redo`);
-        const same = async () => {
-            expect(await undo.isDisabled()).toBe(await page.locator('#editor-undo').isDisabled());
-            expect(await redo.isDisabled()).toBe(await page.locator('#editor-redo').isDisabled());
-        };
-        await same();
+        const undo = page.locator(`${BAND} #editor-undo`);
+        const redo = page.locator(`${BAND} #editor-redo`);
         const before = await leadText(page);
         await page.locator(`${SHEET} [data-chord="G"]`).first().tap();
         expect(await leadText(page)).toContain('[G]');
         await expect(undo).toBeEnabled();
-        await same();
         await undo.tap();
         expect(await leadText(page)).toBe(before);
         await expect(redo).toBeEnabled();
-        await same();
         await redo.tap();
         expect(await leadText(page)).toContain('[G]');
     });
+
+    for (const width of [390, 375, 360]) {
+        test(`at ${width}px the band is one row and nothing in it leaves the screen`, async ({ page }) => {
+            await page.setViewportSize({ width, height: 760 });
+            await openEditor(page);
+            await setLead(page, '{key: C#m}\n[C#m]Amazing grace');
+            await setMode(page, 'chords');
+            const m = await page.evaluate(() => {
+                const items = [...document.querySelectorAll('#editor-band > *')].filter((e) => getComputedStyle(e).display !== 'none');
+                const mids = items.map((e) => { const r = e.getBoundingClientRect(); return (r.top + r.bottom) / 2; });   // one row = centres together
+                const out = [...document.querySelectorAll('#editor-band button, #editor-band select')].filter((e) => {
+                    const r = e.getBoundingClientRect(); return r.width > 0 && (r.left < 0 || r.right > innerWidth);
+                }).map((e) => e.id || e.textContent);
+                const sel = document.getElementById('editor-key-select');
+                return { rows: Math.max(...mids) - Math.min(...mids) < 12 ? 1 : 2, out, keyFits: sel.scrollWidth <= sel.clientWidth };
+            });
+            expect(m.rows).toBe(1);
+            expect(m.out).toEqual([]);
+            expect(m.keyFits).toBe(true);                                   // "Key: C#m" is not cut off
+        });
+    }
 
     test('Move and Remove appear in row 2 when the cursor is on a chord, not otherwise', async ({ page }) => {
         await openEditor(page);
@@ -1393,13 +1410,13 @@ test.describe('magnifier default and nav row', () => {
         await expect(page.locator('.chm-strip')).toHaveCount(0);
     });
 
-    test('the nav row arrows move the cursor, and its undo undoes a placed chord', async ({ page }) => {
+    test('the nav row arrows move the cursor; the band\'s undo undoes a placed chord', async ({ page }) => {
         await openEditor(page);
         await setLead(page, 'Amazing grace how sweet\nsecond line here');
         await setMode(page, 'chords');
         await page.evaluate(() => document.querySelector('#editor-lead').__lead.editor.setBox({ pos: 0, active: true }));
         const nav = page.locator(`${SHEET} .chm-row3`);
-        for (const sel of ['.chm-prev', '.chm-up', '.chm-down', '.chm-next', '.chm-undo', '.chm-redo', '.chm-mag']) {
+        for (const sel of ['.chm-prev', '.chm-up', '.chm-down', '.chm-next', '.chm-mag']) {
             const b = await nav.locator(sel).boundingBox();
             expect(b.width, sel).toBeGreaterThanOrEqual(40);
             expect(b.height, sel).toBeGreaterThanOrEqual(40);
@@ -1417,7 +1434,7 @@ test.describe('magnifier default and nav row', () => {
         const before = await leadText(page);
         await page.locator(`${SHEET} [data-chord="G"]`).first().tap();
         expect(await leadText(page)).toContain('[G]');
-        await nav.locator('.chm-undo').tap();
+        await page.locator(`${BAND} #editor-undo`).tap();                 // undo is the band's (one place)
         expect(await leadText(page)).toBe(before);
         // no arrows anywhere else
         await expect(page.locator(`${SHEET} .chm-next`)).toHaveCount(1);
@@ -1446,7 +1463,7 @@ test.describe('magnifier default and nav row', () => {
             await page.waitForTimeout(150);
             return page.evaluate(() => {
                 const r = (s) => { const b = document.querySelector(s).getBoundingClientRect(); return [Math.round(b.top), Math.round(b.height)]; };
-                return { row1: r('.chm-row1'), row2: r('.chm-row2'), row3: r('.chm-row3'), decos: r('.chm-decos'), picker: r('.chm-body') };
+                return { row2: r('.chm-row2'), row3: r('.chm-row3'), decos: r('.chm-decos'), picker: r('.chm-body') };
             });
         };
         const text = await leadText(page);
@@ -1456,7 +1473,6 @@ test.describe('magnifier default and nav row', () => {
         expect(plain).toEqual(empty);
         expect(ext).toEqual(empty);
         expect(empty.row3[1]).toBe(40);
-        expect(empty.row1[1]).toBe(40);
         expect(empty.row2[1]).toBe(40);
     });
 
@@ -1466,6 +1482,7 @@ test.describe('magnifier default and nav row', () => {
         const size = () => page.evaluate(() => parseFloat(getComputedStyle(document.querySelector('#editor-lead .cm-content')).fontSize));
         const s0 = await size();
         const lineH0 = await page.evaluate(() => document.querySelector('#editor-lead .cm-line.cl-line').getBoundingClientRect().height);
+        await openDisplay(page);                                           // text size: the band's Display pill
         await page.locator('#editor-font-up').tap();
         await page.locator('#editor-font-up').tap();
         const s1 = await size();
@@ -1488,6 +1505,7 @@ test.describe('magnifier default and nav row', () => {
         // the SAME setting the song page uses
         const level = await page.evaluate(() => JSON.parse(localStorage.getItem('songbook-view-prefs')).fontSizeLevel);
         expect(level).toBeGreaterThan(0);
+        await openDisplay(page);
         await page.locator('#editor-font-down').tap();
         expect(await size()).toBeLessThan(s1);
         await page.locator('#editor-font-up').tap();
@@ -1519,7 +1537,7 @@ test.describe('narrow phones: the docked picker header fits', () => {
                     if (r.left < -0.5 || r.right > w + 0.5) bad.push(`${el.className || el.tagName} ${Math.round(r.left)}..${Math.round(r.right)} of ${w}`);
                 }
                 const h = (s) => Math.round(document.querySelector(s).getBoundingClientRect().height);
-                return { bad, rows: [h('.chm-row1'), h('.chm-row3'), h('.chm-mag'), h('.chm-modeswitch button')] };
+                return { bad, rows: [h('.chm-row2'), h('.chm-row3'), h('.chm-mag')] };
             });
             expect(out.bad).toEqual([]);
             expect(out.rows.slice(0, 3)).toEqual([40, 40, 40]);
