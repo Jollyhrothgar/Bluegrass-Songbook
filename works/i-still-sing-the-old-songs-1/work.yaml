@@ -1,5 +1,7 @@
 id: i-still-sing-the-old-songs-1
 title: I Still Sing The Old Songs
+song: i-still-sing-the-old-songs
+version: '2'
 artist: Tanya Tucker
 composers:
 - David A. Coe
@@ -7,6 +9,9 @@ default_key: G
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

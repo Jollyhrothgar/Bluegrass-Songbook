@@ -1,10 +1,15 @@
 id: the-great-pretender-1
 title: The Great Pretender
+song: the-great-pretender
+version: '2'
 artist: The Platters
 default_key: G
 tags:
 - Pop
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

@@ -1,11 +1,16 @@
 id: a-thousand-times-a-day-1
 title: A Thousand Times A Day
+song: a-thousand-times-a-day-2
+version: '2'
 artist: George Jones
 composers:
 - Garry Burr and Gary Nicholson
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

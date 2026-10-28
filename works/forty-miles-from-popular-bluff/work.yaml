@@ -1,11 +1,16 @@
 id: forty-miles-from-popular-bluff
 title: Forty Miles From Popular Bluff
+song: forty-miles-from-poplar-bluff
+version: '2'
 artist: Porter Wagoner
 composers:
 - Frank Dycus and Larry Kingston
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

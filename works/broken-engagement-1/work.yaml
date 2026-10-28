@@ -1,14 +1,19 @@
 id: broken-engagement-1
 title: Broken Engagement
+song: broken-engagement
+version: '2'
 artist: The Louvin Brothers
 composers:
-- Wayne P. Walker, Max Powell, Mary C. Rhodes
+- 'Wayne P. Walker, Max Powell, Mary C. Rhodes'
 default_key: C
 tags:
 - ClassicCountry
 - Gospel
 - Bluegrass
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

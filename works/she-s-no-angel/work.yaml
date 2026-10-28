@@ -1,9 +1,14 @@
 id: she-s-no-angel
 title: She's No Angel
+song: shes-no-angel
+version: '2'
 artist: Kitty Wells
 composers:
 - Wanda Ballman and J.W. Arnold
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

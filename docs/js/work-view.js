@@ -1,4 +1,4 @@
-// WorkView — the unified song page. ONE page per song: title + artist,
+// WorkView — the unified song page. ONE page per song: title + writer,
 // a pill row (Key / Display / Info / Arrangement), part tabs when a work
 // has multiple parts, the active part's content, and the app shell's
 // top/bottom bands for actions and playback controls.
@@ -20,7 +20,8 @@ import {
     currentView, setCurrentView,
     resolveWorkId,
     getBountiesForWork,
-    subscribe
+    subscribe,
+    songHref, currentHref,
 } from './state.js';
 
 import { deleteAffordance } from './delete-affordance.js';
@@ -40,6 +41,7 @@ import { CHROMATIC_MAJOR_KEYS } from './chords.js';
 import {
     escapeHtml, escapeAttr, safeUrl, partUsesSongActions, isPlaceholder,
     requireLogin, slugify, tabLabel, canEditWorkMetadata, copyrightMailto,
+    songWriter, writtenByLabel,
 } from './utils.js';
 import {
     accessToken, namespacedRowId, requestDurableWrite,
@@ -576,7 +578,7 @@ export async function openWork(workId, options = {}) {
             workId, allSongs, await loadDeletedSongs());
         if (redirect) {
             if (!fromList && !fromHistory) {
-                history.replaceState({ view: 'song', songId: redirect.id }, '', `#work/${redirect.id}`);
+                history.replaceState({ view: 'song', songId: redirect.id }, '', songHref(redirect.id));
             }
             return openWork(redirect.id, { ...options, fromDeepLink: true, exact: true });
         }
@@ -747,10 +749,10 @@ export async function openWork(workId, options = {}) {
     const partSeg = requestedPartId ? `/${requestedPartId}` : '';
     const effectiveListId = listId || (fromList && listContext ? listContext.listId : null);
     const hash = effectiveListId
-        ? `#list/${effectiveListId}/${workId}${partSeg}`
-        : `#work/${workId}${partSeg}`;
+        ? `/#list/${effectiveListId}/${workId}${partSeg}`
+        : songHref(workId, partSeg);
 
-    if (!fromDeepLink && !fromHistory && window.location.hash !== hash) {
+    if (!fromDeepLink && !fromHistory && currentHref() !== hash) {
         history.pushState(
             { view: 'song', songId: workId, partId: requestedPartId, listId: effectiveListId },
             '', hash);
@@ -773,7 +775,7 @@ export function renderWorkView() {
 
     container.innerHTML = '';
 
-    // Title row: song title + small artist line
+    // Title row: song title + small writer line
     container.appendChild(renderTitleHeader());
 
     // Pill row: Key / Display / Info / Arrangement
@@ -935,14 +937,14 @@ function selectPart(part) {
     // Edit/Export applicability can change with the part type
     updateWorkTopBar();
 
-    const hash = `#work/${currentWork.id}/${part.partId}`;
-    if (window.location.hash !== hash) {
+    const hash = `/#work/${currentWork.id}/${part.partId}`;
+    if (currentHref() !== hash) {
         history.pushState({ view: 'song', songId: currentWork.id, partId: part.partId }, '', hash);
     }
 }
 
 /**
- * Quiet "Practice:" line under the artist: Strum Machine (when matched) and
+ * Quiet "Practice:" line under the writer: Strum Machine (when matched) and
  * a YouTube search. Shown for lead sheets and tab-only works alike.
  */
 function practiceLineHtml() {
@@ -954,13 +956,14 @@ function practiceLineHtml() {
 }
 
 /**
- * Title row: song title + small artist line.
+ * Title row: song title + small writer line. Never the artist (F9): `artist`
+ * is whichever page a chart was scraped from, so it is not shown anywhere.
  */
 function renderTitleHeader() {
     const header = document.createElement('div');
     header.className = 'song-header';
     const title = currentWork.title || 'Untitled';
-    const artist = currentWork.artist || '';
+    const writer = writtenByLabel(songWriter(currentWork));
 
     // A PROVISIONAL work (#new-tab) has no title yet — the two fields that
     // decide what gets minted are the title slot itself, not a form on
@@ -1008,9 +1011,7 @@ function renderTitleHeader() {
                 <button id="edit-song-btn" class="focus-btn" title="Edit this song">&#x270F;&#xFE0F; Edit</button>
                 <button id="edit-meta-btn" class="focus-btn hidden" title="Edit this song's title, artist, key and notes">&#x1F3F7;&#xFE0F; Details</button>
             </div>
-            ${artist
-                ? `<div class="song-artist-line">${escapeHtml(artist)}</div>`
-                : '<div class="song-artist-line song-artist-missing hidden">Artist unknown</div>'}
+            ${writer ? `<div class="song-writer-line">${escapeHtml(writer)}</div>` : ''}
             ${practiceLineHtml()}
         </div>
     `;
@@ -1366,7 +1367,7 @@ async function renderArrangementList(container, versions, voteData = null) {
     if (voteData === null && typeof SupabaseAuth !== 'undefined' && groupId) {
         (async () => {
             try {
-                const { data } = await SupabaseAuth.fetchGroupVotes(groupId);
+                const { data } = await SupabaseAuth.fetchGroupVotes(versions.map(v => v.id));
                 const counts = data || {};
                 const loggedIn = SupabaseAuth.isLoggedIn();
                 let uv = {};
@@ -1693,9 +1694,6 @@ export function updateWorkTopBar() {
     const metaBtn = document.getElementById('edit-meta-btn');
     const mayEditMeta = canEditMetadataHere();
     if (metaBtn) metaBtn.classList.toggle('hidden', !mayEditMeta);
-    // The "Artist unknown" nudge only appears to someone who can act on it.
-    document.querySelector('#song-content .song-artist-missing')
-        ?.classList.toggle('hidden', !mayEditMeta);
 
     actions.push({
         id: 'list-picker-btn',
@@ -1960,8 +1958,8 @@ function importTefAsNewTake(instrument, existingCount = 0) {
         startAddTabMode({
             instrument, title: currentWork.title, existingCount, otf,
         });
-        const hash = createTabHref({ workId: currentWork.id, instrument });
-        if (window.location.hash !== hash) {
+        const hash = createTabHref({ workId: currentWork.id, instrument }, '/');
+        if (currentHref() !== hash) {
             history.replaceState(
                 { view: 'song', songId: currentWork.id }, '', hash);
         }
@@ -3026,8 +3024,8 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
         // must come back to the correction in progress, not to the published
         // take it corrects.
         const suffix = draft?.id ? `?draft=${encodeURIComponent(draft.id)}` : '';
-        const hash = `${editTabHref(currentWork.id, ref)}${suffix}`;
-        if (ref && window.location.hash !== hash) {
+        const hash = `${editTabHref(currentWork.id, ref, '/')}${suffix}`;
+        if (ref && currentHref() !== hash) {
             history.replaceState({ view: 'song', songId: currentWork.id, edit: ref }, '', hash);
         }
     }
@@ -3042,8 +3040,8 @@ async function enterTabEditMode(otf, part, container) {
 function restoreWorkHash() {
     if (!currentWork?.id || currentWork.provisional) return;
     const partSeg = activePart?.partId && !activePart.default ? `/${activePart.partId}` : '';
-    const hash = `#work/${currentWork.id}${partSeg}`;
-    if (window.location.hash !== hash) {
+    const hash = songHref(currentWork.id, partSeg);
+    if (currentHref() !== hash) {
         history.replaceState({ view: 'song', songId: currentWork.id }, '', hash);
     }
 }
@@ -3334,7 +3332,7 @@ function landSubmittedTake(result, part, container) {
         currentWork.id = result.workId;
         currentWork.provisional = false;
         history.replaceState(
-            { view: 'song', songId: result.workId }, '', `#work/${result.workId}`);
+            { view: 'song', songId: result.workId }, '', songHref(result.workId));
     } else {
         restoreWorkHash();
     }

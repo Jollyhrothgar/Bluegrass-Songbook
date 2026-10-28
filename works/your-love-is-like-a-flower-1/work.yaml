@@ -1,9 +1,18 @@
 id: your-love-is-like-a-flower-1
 title: Your Love Is Like A Flower
-artist: Lester Flatt, Earl Scruggs, Everett Lilly
+song: your-love-is-like-a-flower
+version: '2'
+artist: 'Lester Flatt, Earl Scruggs, Everett Lilly'
+composers:
+- Lester Flatt
+- Earl Scruggs
+- Everett Lilly
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -12,7 +21,3 @@ parts:
   provenance:
     source: golden-standard
     imported_at: '2026-01-02'
-composers:
-- Lester Flatt
-- Earl Scruggs
-- Everett Lilly

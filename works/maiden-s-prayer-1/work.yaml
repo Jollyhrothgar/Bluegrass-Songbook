@@ -1,5 +1,7 @@
 id: maiden-s-prayer-1
 title: Maiden's Prayer
+song: a-maiden-s-prayer
+version: '2'
 artist: Willie Nelson
 composers:
 - Bob Wills
@@ -10,6 +12,9 @@ tags:
 - JamFriendly
 - Instrumental
 - Bluegrass
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

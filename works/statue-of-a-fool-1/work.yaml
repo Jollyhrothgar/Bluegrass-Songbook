@@ -1,9 +1,14 @@
 id: statue-of-a-fool-1
 title: Statue of a Fool
+song: statue-of-a-fool
+version: '2'
 artist: Jack Greene
 default_key: C
 tags:
 - Jazzy
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

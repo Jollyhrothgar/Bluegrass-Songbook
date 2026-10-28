@@ -1,5 +1,7 @@
 id: don-t-forbid-me-1
 title: Don't Forbid Me
+song: don-t-forbid-me
+version: '2'
 artist: Pat Boone
 composers:
 - Charles Singleton
@@ -7,6 +9,9 @@ default_key: G
 tags:
 - Pop
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

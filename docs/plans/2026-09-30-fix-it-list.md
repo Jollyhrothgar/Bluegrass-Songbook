@@ -76,14 +76,18 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | F7 | Tab view rework (Mike wants to lead this) | L | — | not started |
 | F8 | List view rework + a way to read notes (Mike wants to lead this) | L | `feature/ui-state-inventory` (design) | design approved on the canvas (2026-10-02); build after C1 |
 | D8 | Arrangement markup for stage notes (follow-up to D3) | M | — | idea, after D3 ships |
-| F9 | Stop presenting `artist` as the song's artist | M | — | idea; collides with F8 and the song page |
+| F9 | Stop presenting `artist` as the song's artist | M | `feature/f9-song-credits` | done (2026-10-26): the writer is the credit; the scraped `artist` is never a label on a chart. "Recorded by: Bill Monroe (1947), …" (MusicBrainz covering artists + scraped artists MusicBrainz confirms), first recording first, each a YouTube search, in the Info pill and the static footer; search matches only what is shown. List boards (F8) still to build |
 | F10 | Redraw the remaining views in the new look (queue below) | M each | — | queued (Mike, 2026-10-02) |
 | F11 | Build the new look in `style.css` (tokens, links not buttons, chords, BB mark) | M | — | not started; the look is approved on the canvas |
 | G1 | Dev blog moved to mikebeaumier.com: point the Dev Blog links and old post URLs at it | S | `feature/blog-redirect` | done — #283 (2026-10-21), after mikebeaumier.com went live; open: whether to delete `docs/posts/` (Mike) |
-| G2 | Search engines: no robots.txt or sitemap.xml, and every song is a `#work/` hash route Google can't index on its own | M | `feature/search-discovery`, `feature/song-pages` | done — robots.txt (#285); a static page per searchable song at `/songs/{id}/` + a generated sitemap, rebuilt on every deploy (`scripts/lib/build_song_pages.py`) |
+| G2 | Search engines: no robots.txt or sitemap.xml, and every song is a `#work/` hash route Google can't index on its own | M | `feature/search-discovery`, `feature/song-pages` | done — robots.txt (#285); a static page per searchable song at `/songs/{id}/` + a generated sitemap, rebuilt on every deploy (`scripts/lib/build_song_pages.py`); URLs reworked in G7 |
 | G3 | One contact address: `hello@bluegrassbook.com` (Porkbun forward) replaces the Gmail address; rights holders get a way to reach it | S | `feature/search-discovery`, `feature/song-pages` | done — forward created 2026-10-21 (the domain had no other forwards); About + feedback modal (#285); `© Copyright concern` in every song's ⋯ menu and on every static song page (mailto, no account) |
 | G4 | Security policy: no `SECURITY.md`, no private way to report a vulnerability, no Dependabot | S | `feature/security-policy` | done — `SECURITY.md` names Mike as maintainer; private vulnerability reporting, Dependabot alerts and security updates turned on (2026-10-23) |
 | G5 | `with-secrets` and `bootstrap` probed 1Password with `op whoami`, which says "not signed in" under the app integration even when reads work, so every command fell back to a plaintext `analytics/.env` | S | `bug/op-probe` | done — probe resolves the template (`op inject` to /dev/null); `analytics/.env` deleted after confirming 1Password holds the same values (2026-10-23); `tests/test_with_secrets.py` |
+| G6 | Google showed the old banjo app icon for the site, and its song results landed on a plain page that looked nothing like the app | M | `feature/song-urls` | done (2026-10-26): every icon is the BB monogram (`scripts/lib/make_icons.py`; 16px hand-drawn, small sizes rendered in linear light + grid-fitted; banjo deleted); each song page is the app itself with the chart pre-rendered |
+| G7 | Song URLs that don't lie: `angel-band-1` could be a version or a different song | L | `feature/song-urls` | done (2026-10-26): `/songs/{song}/` (indexed, one per song) + `/songs/{song}/{version}/`; work.yaml `song:`/`version:`/`slug:` seeded on evidence only (`scripts/lib/seed_songs.py`); the app routes paths; versions follow songs |
+| G8 | 79 merged-away works re-created by July backfills: searchable, but the app opened their redirect target, so their tabs and edits were unreachable | M | `feature/song-urls` | done (2026-10-26): each pair is now one song with both as versions, redirects dropped; the build fails if a redirect source exists again (`works_writer.redirect_violations`) |
+| G9 | One metadata editor for every song: Song (which song this is a version of), Version label, Performer (the intended artist); its Artist field edits the scraped field we never show | M | — | not started — next after G7 (touches `pending_songs`, `auto-commit-song`, `works_writer.METADATA_FIELDS`, the Details editor) |
 
 ### How it ships
 
@@ -378,6 +382,64 @@ with small margins, and the board now matches that.
   search results and the "Covering artists" line all show `artist` today. It
   collides with F8 here; the proposed list boards already drop it. The song
   boards (D3) still show it.
+
+  **Done 2026-10-26 (`feature/f9-song-credits`), display only, no data
+  changes.** Mike: a chart is a "good enough" version of a song; performers
+  make it findable and credit people, but chords and lyrics don't show that
+  any one artist's take is the source, and a really different take belongs
+  in the version system. So:
+  - **The writer is the credit**: `composer`, else "Traditional" when the
+    artist field says only that; nothing when unknown (no guessing).
+  - **The scraped `artist` is never a label on the chart** (Mike: "too
+    noisy"; a cover is not a different arrangement — that is what versions
+    are for). It stays in `work.yaml`. It counts as a **recording credit**
+    only when MusicBrainz confirms that artist recorded the title
+    (`tagging/verify_artists.py` → `docs/data/verified_artists.json`, local
+    only, `./scripts/utility refresh-musicbrainz`), trying the name's
+    spellings and MusicBrainz aliases, a duo's members, and the bands they
+    were in; titles must match exactly (bar a dropped g). The credit shown is
+    the name MusicBrainz credits ("Earl Scruggs and Lester Flatt" → "Lester
+    Flatt & Earl Scruggs (1964)", "Doyle Lawson" → "Doyle Lawson &
+    Quicksilver"). 1,289 of 1,535 canon songs with a scraped artist on
+    2026-10-26; 2,038 of 2,589 canon rows have a "Recorded by" list.
+  - **Recorded by** = `covering_artists` (grassiness: curated bluegrass
+    artists' MusicBrainz recordings) + confirmed scraped artists, with a
+    parallel `covering_years` (earliest release), ordered by first
+    recording. Shown as "Recorded by: Bill Monroe (1947), Doug Dillard
+    (1961), …", each a YouTube search for "Title Artist Year", three then
+    "(+N)" in the Info pill, five then a `<details>` "and N more" in the
+    static footer (`recordedBy` in `utils.js`, `recorded_by` in
+    `build_song_pages.py`, `merge_covering_artists` in `tag_enrichment.py`).
+  - **Search matches only what a row can show**: covering artists and
+    writers (`artist:` matches either); an unconfirmed scraped artist
+    neither matches nor appears.
+  - **Freshness**: `./scripts/utility refresh-musicbrainz` rebuilds every
+    MusicBrainz cache (artist tags, grassiness, verified artists) and the
+    index, starting/stopping Colima + the DB itself; every index build prints
+    "MusicBrainz: N works' artists never checked" when it is due. Its first
+    run found `grassiness_scores.json` 1,383 works behind (no covering artists
+    for any of them). Not built yet: a weekly launchd job on Mike's laptop
+    that runs it and opens a PR (needs Mike's OK — it pushes on its own).
+  - **Follow-ups.** (1) 246 canon scraped artists stay unconfirmed: names
+    MusicBrainz lacks (local bands), junk names ("Misc Children", "Misc
+    Praise Songs"), typos ("Statler Brother", "Flatt Scruggs"), titles
+    with junk in them ("Born to be With You Lyrics and Chords") — the last
+    three are `works/` cleanup, not matching rules. (2) Grassiness years use
+    exact artist names only, so a legend whose early sides are credited to
+    the band can still show a reissue year when verify_artists doesn't
+    supply the band credit (Blue Moon of Kentucky now reads "Bill Monroe and
+    the Bluegrass Boys (1947)").
+  - Static page: `<title>` and description name the writer, never a
+    performer; up to five associated artists + "and N more" in the footer,
+    beside the copyright link. Song page: writer under the title, artists
+    in the Info pill. Search rows: writer line; a "Recorded by" line only
+    for the recorder the search matched. The editor-only "Artist unknown"
+    nudge is gone (it invited filling a field nobody sees).
+  - Not done, on purpose: no MusicBrainz credits cache or writer
+    back-fill (~960 canon songs have no writer and show none) until it is
+    clearly needed. Still showing `artist`: print view, list text export,
+    bounty cards, pickers, version labels (the version-URL work in
+    `feature/favicon-sizes` owns those labels).
 
 **Look and library (Mike, 2026-10-02):**
 
@@ -1217,7 +1279,7 @@ Rule: **hide setup, show content and resources.**
     card. A phone row carries ✓ / 📝 / + / ✕, and the 📝 is a faint emoji
     that doesn't read as "notes".
   - **It's a search page in disguise**: the search box and nine filter chips
-    sit above the list, and rows show tags, "Also by" and first lines, while
+    sit above the list, and rows show tags, artists and first lines, while
     the setlist data (key, tempo, notes) is reduced to small badges.
 
 ## G. Site
@@ -1265,9 +1327,20 @@ a page on the next deploy; a pruned, deleted or suppressed one loses it
 (orphan directories are removed). Variants (`variant_of`) get a page whose
 canonical names the main version and stay out of the sitemap. Placeholders
 and empty rows get none. First build: 2,581 pages, 2,565 sitemap URLs.
-Each page: title, artist, writer, key, Nashville chords, the chart as chords
+Each page: title, writer, key, Nashville chords, the chart as chords
 over lyrics, tab instruments, a link into the app, and a "Copyright concern"
-mailto. No redirect into the app (crawler and reader see the same page).
+mailto, with "Recorded by" (MusicBrainz-confirmed artists) in the footer
+(F9). No redirect into the app (crawler and reader see the same page).
+
+**2026-10-26: the song page is the app.** Visitors from Google landed on a
+plainly styled page that looked nothing like the site. Each
+`songs/{id}/index.html` is now `docs/index.html` with `<base href="/">`, the
+song's head tags, and the chart (with F9's writer credit and "Recorded by")
+pre-rendered into the song view; `main.js`
+boots `/songs/{id}/` as `#work/{id}`. Still no redirect: the crawler gets the
+chart in the HTML, the reader gets the full song page. Same PR: Google showed
+the old banjo app icon as the site icon, so every icon is now the BB
+monogram (`scripts/lib/make_icons.py`).
 Tests: `tests/test_song_pages.py`.
 
 Copyright: Mike decided to index full charts for every searchable song, with

@@ -1,5 +1,7 @@
 id: searching-for-a-soldier-s-grave
 title: Searching For A Soldier's Grave
+song: searching-for-a-soldiers-grave
+version: '2'
 artist: Hank Williams
 composers:
 - Roy Acuff
@@ -8,6 +10,9 @@ tags:
 - HonkyTonk
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

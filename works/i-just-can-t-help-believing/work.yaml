@@ -1,11 +1,16 @@
 id: i-just-can-t-help-believing
 title: I Just Can't Help Believing
+song: i-just-can-t-help-believin
+version: '2'
 artist: B J Thomas
 composers:
 - Cynthia Weil and Barry Mann
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

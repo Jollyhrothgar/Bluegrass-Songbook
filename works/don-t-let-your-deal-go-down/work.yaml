@@ -1,9 +1,14 @@
 id: don-t-let-your-deal-go-down
 title: Don't Let Your Deal Go Down
+song: dont-let-your-deal-go-down
+version: '2'
 artist: Lester Flatt and Earl Scruggs
 composers:
-- Gladys Stacey, Louise Certain,
+- 'Gladys Stacey, Louise Certain,'
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

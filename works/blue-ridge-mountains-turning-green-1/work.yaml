@@ -1,5 +1,7 @@
 id: blue-ridge-mountains-turning-green-1
 title: Blue Ridge Mountains Turning Green
+song: blue-ridge-mountains-turning-green
+version: '2'
 artist: Charley Pride
 composers:
 - James Lunsford
@@ -7,6 +9,9 @@ default_key: G
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

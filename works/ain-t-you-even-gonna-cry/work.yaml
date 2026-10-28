@@ -1,11 +1,16 @@
 id: ain-t-you-even-gonna-cry
 title: Ain't You Even Gonna Cry
+song: ain-t-you-even-gonna-cry-1
+version: '2'
 artist: Connie Smith
 composers:
 - Johnny Russell
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

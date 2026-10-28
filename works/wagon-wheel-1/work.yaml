@@ -1,7 +1,15 @@
 id: wagon-wheel-1
 title: Wagon Wheel
+song: wagon-wheel
+version: '2'
 artist: Darius Rucker
+composers:
+- Bob Dylan
+- Ketch Secor
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -10,6 +18,3 @@ parts:
   provenance:
     source: manual
     imported_at: '2026-01-02'
-composers:
-- Bob Dylan
-- Ketch Secor

@@ -1,5 +1,16 @@
 id: give-me-flowers-my-while-im-living
 title: Give Me Flowers My While I’m Living
+song: give-me-my-flowers-while-i-m-living
+version: '2'
+artist: Earl Scruggs and Lester Flatt
+composers:
+- 'Louise Certain, Gladys Stacey, Elvin Bigger'
+default_key: C
+tags:
+- JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -9,9 +20,3 @@ parts:
     source: bluegrass-lyrics
     source_url: https://www.bluegrasslyrics.com/song/give-me-flowers-my-while-im-living/
     imported_at: '2026-02-08'
-tags:
-- JamFriendly
-default_key: C
-artist: Earl Scruggs and Lester Flatt
-composers:
-- Louise Certain, Gladys Stacey, Elvin Bigger

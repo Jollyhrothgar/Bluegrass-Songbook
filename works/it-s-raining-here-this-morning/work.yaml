@@ -1,9 +1,14 @@
 id: it-s-raining-here-this-morning
 title: It's Raining Here This Morning
+song: its-raining-here-this-morning
+version: '2'
 artist: The Osborne Brothers
 composers:
 - Grandpa Jones
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

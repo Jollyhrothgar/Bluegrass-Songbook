@@ -1,11 +1,16 @@
 id: nothing-can-stop-my-love-1
 title: Nothing Can Stop My Love
+song: nothing-can-stop-my-love
+version: '2'
 artist: Roger Miller
 composers:
 - Roger Miller and George Jones
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

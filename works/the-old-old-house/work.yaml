@@ -1,9 +1,14 @@
 id: the-old-old-house
 title: The Old Old House
+song: old-old-house
+version: '2'
 artist: George Jones
 composers:
 - Hal Bynum and George Jones
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

@@ -1,5 +1,7 @@
 id: blowing-in-the-wind
 title: Blowing In The Wind
+song: blowin-in-the-wind
+version: '2'
 artist: Dolly Parton
 composers:
 - Bob Dylan
@@ -9,6 +11,9 @@ tags:
 - Bluegrass
 - Pop
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

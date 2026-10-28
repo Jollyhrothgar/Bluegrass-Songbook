@@ -1,11 +1,16 @@
 id: don-t-give-your-heart-to-a-rambler
 title: Don't Give Your Heart To A Rambler
+song: dont-give-your-heart-to-a-rambler
+version: '2'
 artist: J.D. Crowe & the New South
 composers:
 - Jimmie Skinner
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

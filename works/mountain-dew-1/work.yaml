@@ -1,9 +1,17 @@
 id: mountain-dew-1
 title: Mountain Dew
-artist: Bascom Lamar Lunsford, Scotty Wiseman
+song: mountain-dew
+version: '2'
+artist: 'Bascom Lamar Lunsford, Scotty Wiseman'
+composers:
+- Bascom Lamar Lunsford
+- Scotty Wiseman
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -12,6 +20,3 @@ parts:
   provenance:
     source: golden-standard
     imported_at: '2026-01-02'
-composers:
-- Bascom Lamar Lunsford
-- Scotty Wiseman

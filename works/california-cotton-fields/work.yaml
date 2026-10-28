@@ -1,5 +1,7 @@
 id: california-cotton-fields
 title: California Cotton Fields
+song: california-cottonfields
+version: '2'
 artist: The Seldom Scene
 composers:
 - Dallas Frazier and Earl Montgomery
@@ -8,6 +10,9 @@ tags:
 - Bluegrass
 - JamFriendly
 - Modal
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

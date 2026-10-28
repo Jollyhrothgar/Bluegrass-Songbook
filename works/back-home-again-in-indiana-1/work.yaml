@@ -1,11 +1,16 @@
 id: back-home-again-in-indiana-1
 title: Back Home Again in Indiana
+song: back-home-again-in-indiana
+version: '2'
 artist: Traditional
 composers:
 - James F. Hanley
 - Ballard MacDonald
 tags:
 - Instrumental
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

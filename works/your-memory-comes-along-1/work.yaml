@@ -1,11 +1,16 @@
 id: your-memory-comes-along-1
 title: Your Memory Comes Along
+song: your-memory-comes-along
+version: '2'
 artist: Johnny Tillotson
 composers:
 - Johnny Tillotson and Paul Tannen
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

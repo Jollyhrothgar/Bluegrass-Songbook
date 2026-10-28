@@ -1,5 +1,6 @@
 id: i-ll-take-the-blame-1
 title: I'll Take The Blame
+slug: i-ll-take-the-blame
 artist: Ricky Skaggs
 composers:
 - Carter Stanley
@@ -10,6 +11,9 @@ tags:
 - Gospel
 - Folk
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

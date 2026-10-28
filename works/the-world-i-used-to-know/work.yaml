@@ -1,9 +1,14 @@
 id: the-world-i-used-to-know
 title: The World I Used To Know
+song: world-i-used-to-know
+version: '2'
 artist: Jimmie Rodgers
 composers:
 - Rod McKuen
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

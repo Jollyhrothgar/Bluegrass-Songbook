@@ -78,6 +78,7 @@ Some operations require external APIs/databases and only run locally. Others run
 | **Harmonic analysis** | Everywhere | - | Computes JamFriendly, Modal tags from chords |
 | **MusicBrainz tags** | Local only | `artist_tags.json` | Requires local MB database on port 5440 |
 | **Grassiness scores** | Local only | `bluegrass_recordings.json`, `bluegrass_tagged.json` | Song-level bluegrass detection |
+| **Verified artists** | Local only | `verified_artists.json` | `./scripts/utility refresh-musicbrainz`: confirms each work's scraped `artist` recorded the title (MusicBrainz); confirmed ones join `covering_artists` ("Recorded by", F9) |
 | **Strum Machine URLs** | Local only | `strum_machine_cache.json` | API rate limited (10 req/sec) |
 | **Deleted songs sync** | Scheduled CI + local | `deleted_songs.json` | `.github/workflows/sync-deleted-songs.yml` (hourly cron + manual dispatch) or `./scripts/utility sync-deleted-songs` |
 | **Promoted songs sync** | Scheduled CI + local | `promoted_songs.json` | same workflow as deleted songs, or `./scripts/utility sync-promoted-songs`. Any signed-in user can promote (was trusted-only) |
@@ -93,7 +94,7 @@ holds the shared connect/fail logic, including telling a genuinely missing
 `supabase` package apart from a broken dependency inside it.
 
 **How caching works:**
-1. Run local command to populate cache (e.g., `refresh-tags`, `strum-machine-match`)
+1. Run local command to populate cache (e.g., `refresh-musicbrainz`, `strum-machine-match`)
 2. Commit the cache file to git
 3. CI reads cache during build - no external API calls
 
@@ -103,6 +104,7 @@ holds the shared connect/fail logic, including telling a genuinely missing
 - `docs/data/bluegrass_recordings.json` - Recordings by curated bluegrass artists
 - `docs/data/bluegrass_tagged.json` - Recordings with MusicBrainz bluegrass tags
 - `docs/data/grassiness_scores.json` - Computed grassiness scores per song
+- `docs/data/verified_artists.json` - Scraped artists MusicBrainz confirms recorded the song, with earliest release year (`tagging/verify_artists.py`)
 - `docs/data/deleted_songs.json` - Soft-deleted song IDs (synced from Supabase via `fetch_deleted_songs.py`; suppressed at index build)
 - `docs/data/promoted_songs.json` - Promotions from the Bluegrass Dungeon (any signed-in user) (synced from Supabase via `fetch_promoted_songs.py`; unioned with the registry `keep:` map at index build)
 
@@ -154,17 +156,14 @@ list — a few utilities (`check_index_outputs.py`, `coverage_report.py`,
 # Full pipeline: build index from works/
 ./scripts/bootstrap --quick
 
-# Build index with tag refresh (local only, requires MusicBrainz)
-./scripts/bootstrap --quick --refresh-tags
-
 # Add a song manually
 ./scripts/utility add-song /path/to/song.pro
 
 # Count chord usage across all songs
 ./scripts/utility count-chords
 
-# Refresh tags from MusicBrainz (LOCAL ONLY - requires MB database)
-./scripts/utility refresh-tags
+# Rebuild every MusicBrainz cache + the index (LOCAL ONLY - needs the MB database)
+./scripts/utility refresh-musicbrainz
 
 # Match songs to Strum Machine (LOCAL ONLY - ~30 min for 17k songs)
 ./scripts/utility strum-machine-match
@@ -342,16 +341,66 @@ The last step of `build_works_index` (and runnable alone:
 `uv run python scripts/lib/build_song_pages.py`). It reads the `index.jsonl`
 and `songs/{id}.pro` just written and emits, both gitignored:
 
-- `docs/songs/{id}/index.html`: one indexable page per canon row that has a
-  chart or a tab (no placeholders, no empty rows). Chords over lyrics in
-  `<pre>`, ABC skipped, a link to `/#work/{id}`, a copyright mailto.
-- `docs/sitemap.xml`: `STATIC_PAGES` + every song page except variants,
-  whose canonical link points at their `variant_of` page.
+- `docs/songs/{song}/index.html` and `docs/songs/{song}/{version}/index.html`:
+  a page at each canon row's `path` (no placeholders, no empty rows). The
+  page is **the app itself**: `docs/index.html` (which carries
+  `<base href="/">`) with the song's title / description / canonical /
+  JSON-LD in the head, the landing page hidden, and the song view shown
+  holding a pre-rendered chart (writer, chords over lyrics in `<pre>`, ABC
+  skipped, "Recorded by", a copyright mailto). A song page lists its
+  versions; a version page names its song and points its canonical link at
+  it. `main.js` routes the path, so a visitor from Google lands in the real
+  song page (transpose, playback, tabs) and a crawler without JavaScript
+  still reads the chart. The template is filled by exact-string landmarks
+  (`_fill`); a change to those lines in `index.html` fails the build, not
+  the site.
+- `docs/404.html`: `index.html` as is. GitHub Pages (and `scripts/server`)
+  serve it for a path with no page — an archived song — and the app routes it.
+- `docs/sitemap.xml`: `STATIC_PAGES` + every SONG page (one per song;
+  versions are left out), each with `<lastmod>`: the date of the last commit
+  to the song's work or any of its versions (a static page: its file's).
+  Google uses lastmod only when it is consistently accurate, so it is never
+  the build date. `git_dates()` needs full history — the deploy job checks
+  out with `fetch-depth: 0` + `filter: blob:none` — and returns nothing on
+  a shallow clone, which leaves the sitemap undated rather than wrong.
+  Nothing pings Google: it re-reads the sitemap named in `robots.txt`.
 
 Songs are hash routes in the app, which Google indexes as one URL; these
-pages are how songs reach search (G2). Pages are rewritten only when their
+pages are how songs reach search (G2). Until 2026-10-26 they were a separate,
+plainly styled page with a link into the app; visitors from Google landed on
+something that didn't look like the site. Pages are rewritten only when their
 text changes, and directories for songs that left the index are removed, so
 curation flows through on the next build with no manual step.
+
+### Songs, versions and URLs (`seed_songs.py`, `apply_songs`)
+
+A work is its own song unless its work.yaml says `song: <root work id>` +
+`version: <slug>`; a song root may carry `slug:` (see the root CLAUDE.md).
+`build_works_index.apply_songs()` (after `apply_curation`) gives every row
+its `path` and makes its version group its song: `group_id: song:{root}`,
+`canonical` on a root with versions, `variant_of` on each version. That
+REPLACES the fuzzy title groups below for the app's Arrangement pill and
+"N versions" badge — the fuzzy pass merges on title alone ("Satisfied" and
+another "Satisfied" with different lyrics), so it is not evidence.
+
+`seed_songs.py` proposed the fields once (2026-10-26) and `--write` stamped
+them through `works_writer.update_metadata` (`song`, `version`, `slug` are on
+its whitelist). Evidence it accepts: a build group confirmed by lyric
+containment at `dedup_scorer.CONTAINMENT_MATCH` (or two instrumentals) with
+no writer conflict; a curation pin; a merge redirect; a tab-only work with
+exactly one song of its title. Re-running it against already-seeded works is
+not a supported workflow: fix individual songs in work.yaml.
+
+**Merge redirects must stay merged** (`works_writer.redirect_violations`,
+checked by every build — it fails on a redirect source with a live `works/`
+dir, a chained redirect, or a dangling target). `merge_works.py` (2026-02-17)
+deleted ~200 duplicates and recorded redirects; July 2026 backfill imports
+wrote straight into `works/` and re-created 79 of them, which then took on
+tabs and edits the app never showed (openWork follows the redirect). The
+seed made each pair versions of one song and dropped those 79 redirects;
+113 remain, for ids that are really gone. `merge_works.py` itself drops a
+source's lead sheet when the target already has one — prefer making works
+versions of one song to merging them.
 
 ### Version Grouping
 

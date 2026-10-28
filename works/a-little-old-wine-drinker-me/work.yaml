@@ -1,5 +1,7 @@
 id: a-little-old-wine-drinker-me
 title: A Little Old Wine Drinker Me
+song: little-ole-wine-drinker-me
+version: '2'
 artist: Dean Martin
 composers:
 - Hank Mills and Dick Jennings
@@ -7,6 +9,9 @@ default_key: C
 tags:
 - Pop
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

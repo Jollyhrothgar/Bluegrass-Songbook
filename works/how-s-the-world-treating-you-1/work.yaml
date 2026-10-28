@@ -1,9 +1,14 @@
 id: how-s-the-world-treating-you-1
 title: How's the World Treating You
+song: hows-the-world-treating-you
+version: '3'
 artist: Louvin Brothers
 composers:
 - Boudleaux Bryant and Chet Atkins
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

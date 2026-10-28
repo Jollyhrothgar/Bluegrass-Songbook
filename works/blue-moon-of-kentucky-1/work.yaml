@@ -1,10 +1,14 @@
 id: blue-moon-of-kentucky-1
 title: Blue Moon Of Kentucky
+slug: blue-moon-of-kentucky
 artist: Bill Monroe
 composers:
 - Bill Monroe
 default_key: G
 tags: []
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

@@ -59,9 +59,10 @@ export function markArchived(rows) {
 export function ensureStems(songs) {
     for (const song of songs) {
         if (song._stems) continue;
+        // No scraped `artist` (F9): search matches only what a row can show.
         song._stems = buildStemSet([
             song.title || '',
-            song.artist || '',
+            (song.covering_artists || []).join(' '),
             song.composer || '',
             song.first_line || ''
         ].join(' '));

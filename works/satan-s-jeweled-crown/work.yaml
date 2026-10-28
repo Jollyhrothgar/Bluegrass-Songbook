@@ -1,9 +1,14 @@
 id: satan-s-jeweled-crown
 title: Satan's Jeweled Crown
+song: satans-jewel-crown
+version: '2'
 artist: Emmylou Harris
 composers:
 - Edgar Edens
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

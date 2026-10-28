@@ -397,17 +397,15 @@ describe('the Details affordance on a tab-only work', () => {
         // rule is not what was broken; reaching the DETAILS through it was.
         expect(document.getElementById('edit-song-btn').classList.contains('hidden'))
             .toBe(true);
-        // …and the empty artist line becomes an invitation instead of a blank.
-        expect(document.querySelector('.song-artist-missing').classList.contains('hidden'))
-            .toBe(false);
+        // No "Artist unknown" nudge (F9): the artist is never shown, so
+        // there is no blank to invite anyone to fill.
+        expect(document.querySelector('.song-artist-missing')).toBeNull();
     });
 
     it('is hidden from a visitor with no stake in the work', async () => {
         mockAuth('user-jwt', { userId: 'somebody-else' });
         await openTabWork();
         expect(document.getElementById('edit-meta-btn').classList.contains('hidden'))
-            .toBe(true);
-        expect(document.querySelector('.song-artist-missing').classList.contains('hidden'))
             .toBe(true);
     });
 
@@ -442,7 +440,7 @@ describe('the Details affordance on a tab-only work', () => {
             pending_metadata: { id: 'meta:welcome-to-new-york:aaaaaa', created_by: 'u1' },
         });
         expect(document.querySelector('.pending-meta-badge')).toBeTruthy();
-        expect(document.querySelector('.song-artist-line').textContent)
-            .toContain('Bill Emerson');
+        // The artist is stored but never shown (F9).
+        expect(document.querySelector('.song-header').textContent).not.toContain('Bill Emerson');
     });
 });

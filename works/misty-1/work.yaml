@@ -1,9 +1,13 @@
 id: misty-1
 title: Misty
+slug: misty
 artist: Ray Stevens
 composers:
 - Johnny Burke and Erroll Garner
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

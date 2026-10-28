@@ -1,11 +1,15 @@
 id: just-loving-you-1
 title: Just Loving You
+slug: just-loving-you
 artist: Doyle Lawson
 composers:
 - Doyle Lawson and Jamie Dailey
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

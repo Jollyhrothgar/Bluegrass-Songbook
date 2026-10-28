@@ -1,10 +1,15 @@
 id: you-re-not-easy-to-forget-1
 title: You're Not Easy to Forget
+song: youre-not-easy-to-forget
+version: '3'
 artist: Kitty Wells
 default_key: C
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

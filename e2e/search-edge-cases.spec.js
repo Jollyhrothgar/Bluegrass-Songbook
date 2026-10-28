@@ -266,7 +266,7 @@ test.describe('Search Results Display', () => {
         await page.waitForSelector('#search-input');
     });
 
-    test('results show title and artist', async ({ page }) => {
+    test('results show title, no performer (F9)', async ({ page }) => {
         const input = page.locator('#search-input');
         await input.click();
         await input.pressSequentially('foggy mountain', { delay: 30 });
@@ -279,9 +279,9 @@ test.describe('Search Results Display', () => {
         const title = firstResult.locator('.result-title, .song-title');
         await expect(title).toBeVisible();
 
-        // Should have artist element
-        const artist = firstResult.locator('.result-artist, .song-artist');
-        await expect(artist).toBeVisible();
+        // No performer on the row (F9): `artist` is a scrape artifact, so a
+        // row shows the writer when known and an artist only on an artist search.
+        await expect(firstResult.locator('.result-artist')).toHaveCount(0);
     });
 
     test('results show key badge', async ({ page }) => {

@@ -1,9 +1,14 @@
 id: i-ll-never-shed-another-tear
 title: I'll Never Shed Another Tear
+song: ill-never-shed-another-tear
+version: '2'
 artist: Earl Scruggs and Lester Flatt
 composers:
 - Lester Flatt
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

@@ -1,5 +1,7 @@
 id: at-mail-call-today-1
 title: At Mail Call Today
+song: at-mail-call-today
+version: '2'
 artist: Gene Autry
 composers:
 - Gene Autry and Fred Rose
@@ -7,6 +9,9 @@ default_key: G
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

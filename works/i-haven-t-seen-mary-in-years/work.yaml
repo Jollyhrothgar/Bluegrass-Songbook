@@ -1,13 +1,18 @@
 id: i-haven-t-seen-mary-in-years
 title: I Haven't Seen Mary In Years
+song: i-havent-seen-mary-in-years
+version: '2'
 artist: Mel Tillis
 composers:
-- Damon Black [3/4 time]
+- 'Damon Black [3/4 time]'
 default_key: C
 tags:
 - ClassicCountry
 - Outlaw
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

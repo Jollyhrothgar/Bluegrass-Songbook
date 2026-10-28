@@ -1,11 +1,16 @@
 id: too-much-to-gain-to-lose-1
 title: Too Much To Gain To Lose
+song: too-much-to-gain-to-lose
+version: '2'
 artist: Doyle Lawson
 composers:
 - Reba Joyce (Dottie) Rambo
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

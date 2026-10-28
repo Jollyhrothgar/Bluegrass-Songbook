@@ -1,5 +1,7 @@
 id: in-the-ghetto-1
 title: In The Ghetto
+song: in-the-ghetto
+version: '2'
 artist: Elvis Presley
 composers:
 - Mac Davis
@@ -10,6 +12,9 @@ tags:
 - Pop
 - Gospel
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

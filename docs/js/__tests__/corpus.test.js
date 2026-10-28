@@ -559,10 +559,13 @@ describe('mergeCorpus with metadata rows', () => {
         expect(songs[0].tablature_parts).toHaveLength(1);
     });
 
-    it('re-stems the merged row, so the new artist is searchable', () => {
-        const { songs } = mergeCorpus({ canon: TAB_ONLY_CANON, pending: [metaRow()] });
+    it('re-stems the merged row, so an edited title is searchable', () => {
+        const { songs } = mergeCorpus({ canon: TAB_ONLY_CANON,
+            pending: [metaRow({ title: 'Welcome to Old Kentucky' })] });
         expect(songs[0]._stems).toBeDefined();
-        expect([...songs[0]._stems].some(s => s.startsWith('emerson'))).toBe(true);
+        expect([...songs[0]._stems].some(s => s.startsWith('kentuck'))).toBe(true);
+        // The artist is stored but neither shown nor searched (F9).
+        expect([...songs[0]._stems].some(s => s.startsWith('emerson'))).toBe(false);
     });
 
     it('does not let a metadata row hide the work the way a song row would', () => {

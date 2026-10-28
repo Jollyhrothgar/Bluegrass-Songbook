@@ -1,9 +1,14 @@
 id: it-s-mighty-dark-to-travel
 title: It's Mighty Dark To Travel
+song: its-mighty-dark-to-travel
+version: '2'
 artist: Ricky Skaggs
 composers:
 - Bill Monroe
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

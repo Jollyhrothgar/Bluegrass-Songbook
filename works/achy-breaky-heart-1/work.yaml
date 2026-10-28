@@ -1,5 +1,7 @@
 id: achy-breaky-heart-1
 title: Achy Breaky Heart
+song: achy-breaky-heart
+version: '2'
 artist: Billy Ray Cyrus
 composers:
 - Donald L. Von Tress
@@ -7,6 +9,9 @@ default_key: D
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

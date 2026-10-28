@@ -10,10 +10,11 @@ test.describe('Song View', () => {
         await searchAndOpen(page, 'old home place', /old home place/i);
     });
 
-    test('displays song title and artist line', async ({ page }) => {
+    test('displays song title and writer line, no artist (F9)', async ({ page }) => {
         await expect(page.locator('.song-title')).toBeVisible();
         await expect(page.locator('.song-title')).toContainText(/old home place/i);
-        await expect(page.locator('.song-artist-line')).toBeVisible();
+        await expect(page.locator('.song-writer-line')).toContainText(/Written by Dean Webb/);
+        await expect(page.locator('.song-header')).not.toContainText(/New South/);
     });
 
     test('Info pill discloses song details and tags', async ({ page }) => {
@@ -137,11 +138,12 @@ test.describe('Song View', () => {
 });
 
 test.describe('Song Navigation', () => {
-    test('deep link to song redirects to the work URL and renders', async ({ page }) => {
+    test('deep link to song redirects to the song\'s path and renders', async ({ page }) => {
         await page.goto('/#song/blue-moon-of-kentucky-1');
 
         await expect(page.locator('#song-view')).toBeVisible({ timeout: 15000 });
-        await expect(page).toHaveURL(/#work\//);
+        // blue-moon-of-kentucky-1's song is named by its work.yaml `slug:`
+        await expect(page).toHaveURL(/\/songs\/blue-moon-of-kentucky\/$/);
     });
 
     test('back button returns to search', async ({ page }) => {

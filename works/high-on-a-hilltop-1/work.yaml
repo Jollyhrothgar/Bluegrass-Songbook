@@ -1,5 +1,7 @@
 id: high-on-a-hilltop-1
 title: High On A Hilltop
+song: high-on-a-hilltop
+version: '2'
 artist: The Louvin Brothers
 composers:
 - Tommy Collins
@@ -9,6 +11,9 @@ tags:
 - Gospel
 - Bluegrass
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

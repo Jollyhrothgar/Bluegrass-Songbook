@@ -1,7 +1,7 @@
 // Core search functionality for Bluegrass Songbook
 
 import { allSongs, songGroups, userLists, selectedSongIds, toggleSongSelection, clearSelectedSongs, selectAllSongs, getBountiesForWork, dungeonMode } from './state.js';
-import { highlightMatch, escapeHtml, escapeAttr } from './utils.js';
+import { highlightMatch, escapeHtml, escapeAttr, songWriter, writtenByLabel, matchedArtists, recordedBy, recorderLabel } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
 import {
     songHasTags, getTagCategory, formatTagName, syncTagControls,
@@ -54,6 +54,7 @@ const PAGE_SIZE = 50;        // Results per batch
 let loadingMore = false;     // Prevent double-loads
 let scrollObserver = null;   // IntersectionObserver instance
 let currentQuery = '';       // Query for the current results
+let currentArtistMatch = null; // { textTerms, artistFilter } of the search behind them (F9)
 
 /**
  * Show context menu for a song in list view
@@ -648,19 +649,16 @@ export function songHasProgression(song, progression) {
 /**
  * Format covering artists for display (clickable, shows first 2 + count)
  */
-function formatCoveringArtists(artists, primaryArtist) {
-    // Filter out the primary artist if they're in the list
-    const others = artists.filter(a =>
-        a.toLowerCase() !== (primaryArtist || '').toLowerCase()
-    );
-    if (others.length === 0) return '';
+function formatMatchedArtists(song, names) {
+    if (names.length === 0) return '';
+    const years = new Map(recordedBy(song).map(r => [r.name, r.year]));
 
     // Make artists clickable - clicking filters by that artist
-    const artistLinks = others.slice(0, 2).map(a =>
-        `<span class="covering-artist" data-artist="${escapeAttr(a)}">${escapeHtml(a)}</span>`
+    const artistLinks = names.slice(0, 2).map(name =>
+        `<span class="covering-artist" data-artist="${escapeAttr(name)}">${escapeHtml(recorderLabel({ name, year: years.get(name) }))}</span>`
     ).join(', ');
-    const more = others.length > 2 ? ` <span class="covering-more">+${others.length - 2} more</span>` : '';
-    return `<div class="result-covering">Also by: ${artistLinks}${more}</div>`;
+    const more = names.length > 2 ? ` <span class="covering-more">+${names.length - 2} more</span>` : '';
+    return `<div class="result-covering">Recorded by: ${artistLinks}${more}</div>`;
 }
 
 /**
@@ -732,12 +730,13 @@ export function search(query, options = {}) {
     const stemmedTerms = textTerms.map(stemWord);
     const stemOnlyMatches = new Set();
 
+    // F9: search matches only what a row can show. The scraped `artist` is
+    // never shown, so it never matches; covering artists and writers do.
     const results = searchableSongs().filter(song => {
         // General text search (searches all fields)
         if (textTerms.length > 0) {
             const searchText = [
                 song.title || '',
-                song.artist || '',
                 (song.covering_artists || []).join(' '),
                 song.composer || '',
                 song.lyrics || '',
@@ -756,12 +755,13 @@ export function search(query, options = {}) {
         }
 
         // Field-specific filters (inclusion)
-        // Artist filter checks both primary artist and covering artists
+        // artist: matches a covering artist or a writer — both shown on the
+        // row (matched-artist line / "Written by"), never the scraped artist.
         if (artistFilter) {
-            const primaryMatch = (song.artist || '').toLowerCase().includes(artistFilter);
-            const coveringArtists = song.covering_artists || [];
-            const coveringMatch = coveringArtists.some(a => a.toLowerCase().includes(artistFilter));
-            if (!primaryMatch && !coveringMatch) {
+            const coveringMatch = (song.covering_artists || [])
+                .some(a => a.toLowerCase().includes(artistFilter));
+            const writerMatch = (song.composer || '').toLowerCase().includes(artistFilter);
+            if (!coveringMatch && !writerMatch) {
                 return false;
             }
         }
@@ -800,11 +800,14 @@ export function search(query, options = {}) {
 
     // Sort by relevance (for text searches) with canonical_rank as tie-breaker
     const textQuery = textTerms.join(' ');
+    // Credits a text match may rank on: covering artists and writer (F9).
+    const creditsOf = new Map(results.map(s => [s.id,
+        [...(s.covering_artists || []), s.composer || ''].join(' ').toLowerCase()]));
     results.sort((a, b) => {
         const aTitle = (a.title || '').toLowerCase();
         const bTitle = (b.title || '').toLowerCase();
-        const aArtist = (a.artist || '').toLowerCase();
-        const bArtist = (b.artist || '').toLowerCase();
+        const aCredits = creditsOf.get(a.id);
+        const bCredits = creditsOf.get(b.id);
 
         if (textQuery) {
             // Stem-only matches rank below exact substring matches
@@ -820,8 +823,8 @@ export function search(query, options = {}) {
             if (bTitle.startsWith(textQuery) && !aTitle.startsWith(textQuery)) return 1;
             if (aTitle.includes(textQuery) && !bTitle.includes(textQuery)) return -1;
             if (bTitle.includes(textQuery) && !aTitle.includes(textQuery)) return 1;
-            if (aArtist.includes(textQuery) && !bArtist.includes(textQuery)) return -1;
-            if (bArtist.includes(textQuery) && !aArtist.includes(textQuery)) return 1;
+            if (aCredits.includes(textQuery) && !bCredits.includes(textQuery)) return -1;
+            if (bCredits.includes(textQuery) && !aCredits.includes(textQuery)) return 1;
         }
 
         // Tie-breaker: sort by canonical_rank (higher = more popular = first)
@@ -892,7 +895,7 @@ export function search(query, options = {}) {
     }, ANALYTICS_DEBOUNCE_MS);
 
     if (!skipRender) {
-        renderResults(dedupedResults, textQuery);
+        renderResults(dedupedResults, textQuery, { artistMatch: { textTerms, artistFilter } });
     }
 
     return dedupedResults;
@@ -910,6 +913,7 @@ function cleanupScroll() {
     renderedCount = 0;
     loadingMore = false;
     currentQuery = '';
+    currentArtistMatch = null;
 }
 
 /**
@@ -1057,13 +1061,16 @@ function renderResultItem(song, index, query, isDraggable, canReorder, viewingLi
         ? `<span class="grassiness-badge" title="Bluegrass score: ${grassinessScore}">🎵 ${grassinessScore}</span>`
         : '';
 
-    // Artist display: always the song's OWN artist — showing
-    // covering_artists[0] here made search disagree with the song page
-    // (e.g. "Misty" carded as David Grisman but by Ray Stevens). The
-    // bluegrass names stay on the "Also by:" line.
-    const coveringArtists = song.covering_artists || [];
-    const primaryArtist = song.artist || 'Unknown artist';
-    const coveringDisplay = formatCoveringArtists(coveringArtists, primaryArtist);
+    // Credits (F9): the row names the writer, never a performer — `artist`
+    // is whichever page the chart was scraped from. An associated artist
+    // appears only when this search asked for them, to say why the row is here.
+    const writerLabel = writtenByLabel(songWriter(song));
+    const writerLine = writerLabel
+        ? `<div class="result-writer">${highlightMatch(writerLabel, query)}</div>`
+        : '';
+    const artistLine = currentArtistMatch
+        ? formatMatchedArtists(song, matchedArtists(song, currentArtistMatch))
+        : '';
 
     // Drag handle and attributes
     const dragHandle = isDraggable ? '<span class="drag-handle" title="Drag to reorder">⋮⋮</span>' : '';
@@ -1106,8 +1113,8 @@ function renderResultItem(song, index, query, isDraggable, canReorder, viewingLi
                     <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}${partLabel}${versionBadge}${placeholderBadge}${bountyBadge}${docBadge}${instrumentBadges}${grassinessBadge}</div>
                     ${metadataBadges}
                 </div>
-                <div class="result-artist">${highlightMatch(primaryArtist, query)}</div>
-                ${coveringDisplay}
+                ${writerLine}
+                ${artistLine}
                 ${tagBadges ? `<div class="result-tags">${tagBadges}</div>` : ''}
                 <div class="result-preview">${song.first_line || (song.status === 'placeholder' && song.notes ? song.notes.slice(0, 80) : '')}</div>
             </div>
@@ -1120,9 +1127,12 @@ function renderResultItem(song, index, query, isDraggable, canReorder, viewingLi
 }
 
 /**
- * Render search results with infinite scroll support
+ * Render search results with infinite scroll support.
+ * `query` is the free text to highlight; `artistMatch` is the parsed search
+ * ({ textTerms, artistFilter }) so a row can name the artist it matched —
+ * `query` alone drops an `artist:` filter. Omitted for lists and collections.
  */
-export function renderResults(songs, query) {
+export function renderResults(songs, query, { artistMatch = null } = {}) {
     if (!resultsDivEl) return;
 
     // Clean up previous scroll state
@@ -1175,6 +1185,7 @@ export function renderResults(songs, query) {
     // Store full results for infinite scroll
     fullResults = dedupedSongs;
     currentQuery = query;
+    currentArtistMatch = artistMatch;
     renderedCount = 0;
 
     // For list view (canReorder), render all items without pagination

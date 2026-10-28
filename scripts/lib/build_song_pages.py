@@ -5,8 +5,11 @@ The app routes songs by hash (`/#work/{id}`), and Google treats everything
 after `#` as the same URL, so the whole songbook was one page to it. This
 writes one plain HTML page per searchable song:
 
-    docs/songs/{id}/index.html   title, artist, key, chords over lyrics,
-                                 tab instruments, a link into the app
+    docs/songs/{id}/index.html   the app itself (docs/index.html) with the
+                                 song's title/description/canonical in the
+                                 head and its chart pre-rendered in the song
+                                 view: writer, key, chords over lyrics, tab
+                                 instruments, "Recorded by"
     docs/sitemap.xml             the static pages + every song page
 
 Inputs are what `build_works_index.write_outputs` just wrote
@@ -21,7 +24,18 @@ Rules:
 - A variant (`variant_of`) gets a page whose canonical link names its main
   version, and is left out of the sitemap, so Google indexes one page per
   song rather than near-duplicates.
-- No redirect into the app: crawler and reader see the same page.
+- No redirect: the page IS the app. index.html's `<base href="/">` keeps
+  its relative URLs at the root, and main.js routes the song's path. Before JavaScript runs (and for a crawler that doesn't run
+  it) the song view already shows the chart; the app then replaces it with
+  the full song page — transpose, playback, tabs. A crawler and a reader see
+  the same song.
+- No scraped artist (F9). `artist` is whichever performer page a chart was
+  scraped from, not whose version it is, so it is never shown (it stays in
+  the data). The title, description and top of the page credit the
+  writer; the footer's "Recorded by" lists `covering_artists` — artists
+  MusicBrainz shows recording the song — by first recording year, each a
+  YouTube search for that recording. A credit for the song, never a label
+  on this chart.
 
 Run standalone with `uv run python scripts/lib/build_song_pages.py`.
 """
@@ -30,7 +44,9 @@ import html
 import json
 import re
 import shutil
+import subprocess
 from pathlib import Path
+from urllib.parse import quote_plus
 
 ORIGIN = 'https://bluegrassbook.com/'
 
@@ -42,6 +58,10 @@ STATIC_PAGES = ['', 'about.html', 'chord-explorer.html',
 
 SONGS_DIR = 'songs'
 DESCRIPTION_CHARS = 155
+# Footer credit: the first few recorders, the rest behind "and N more". A
+# famous song has dozens; a page-long roll call is the slop look F9 removes.
+FOOTER_ARTISTS = 5
+YOUTUBE_SEARCH = 'https://www.youtube.com/results?search_query='
 
 SECTION_START = re.compile(r'^\{(?:start_of_|so)(\w+)(?::\s*(.*?))?\}$')
 SECTION_END = re.compile(r'^\{(?:end_of_|eo)(\w+)\}$')
@@ -49,31 +69,6 @@ DIRECTIVE = re.compile(r'^\{(\w+)(?::\s*(.*?))?\}$')
 CHORD = re.compile(r'\[([^\]]*)\]')
 SECTION_SHORT = {'v': 'verse', 'c': 'chorus', 'b': 'bridge', 't': 'tab'}
 PREFORMATTED = {'tab', 'grid'}
-
-PAGE_CSS = """
-:root { --bg: #fdfbf7; --text: #2b2620; --muted: #6b6258; --accent: #8a4b1f; --line: #e6dfd4; }
-@media (prefers-color-scheme: dark) {
-  :root { --bg: #1d1a17; --text: #ece6dd; --muted: #a89e92; --accent: #e3a16b; --line: #3a342e; }
-}
-body { margin: 0; background: var(--bg); color: var(--text);
-  font: 17px/1.5 Georgia, 'Times New Roman', serif; }
-main, header, footer { max-width: 720px; margin: 0 auto; padding: 0 16px; }
-header { padding-top: 16px; }
-header a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
-h1 { font-size: 2rem; line-height: 1.2; margin: 24px 0 4px; }
-.by, .facts { color: var(--muted); margin: 0 0 4px; }
-.open { display: inline-block; margin: 16px 0 8px; padding: 8px 16px;
-  border: 1px solid var(--accent); border-radius: 6px; color: var(--accent);
-  text-decoration: none; font-family: system-ui, sans-serif; font-size: 0.95rem; }
-h2 { font-size: 1.1rem; margin: 28px 0 4px; color: var(--muted); }
-pre { font: 15px/1.45 'SF Mono', Menlo, Consolas, monospace; white-space: pre;
-  overflow-x: auto; margin: 0; }
-.ch { color: var(--accent); font-weight: bold; }
-.note { font-style: italic; color: var(--muted); margin: 8px 0; }
-footer { margin-top: 48px; padding-bottom: 32px; border-top: 1px solid var(--line);
-  color: var(--muted); font-size: 0.85rem; }
-footer a { color: var(--muted); }
-"""
 
 
 # ---------------------------------------------------------------- chart
@@ -169,18 +164,87 @@ def render_chart(chordpro: str) -> str:
 
 # ---------------------------------------------------------------- page
 
-def _page_url(work_id: str) -> str:
-    return f'{ORIGIN}{SONGS_DIR}/{work_id}/'
+def _path(row: dict) -> str:
+    """`songs/{song}/` or `songs/{song}/{version}/` (build_works_index.apply_songs)."""
+    return row.get('path') or f"{SONGS_DIR}/{row['id']}/"
+
+
+def _page_url(row: dict) -> str:
+    return ORIGIN + _path(row)
+
+
+def _version_name(row: dict) -> str:
+    """`2` -> "Version 2"; `banjo-tab` -> "Banjo tab"."""
+    version = str(row.get('version') or '')
+    return f'Version {version}' if version.isdigit() else version.replace('-', ' ').capitalize()
+
+
+def _version_order(row: dict) -> tuple:
+    version = str(row.get('version') or '')
+    return (not version.isdigit(), int(version) if version.isdigit() else 0, version)
 
 
 def _instrument_name(instrument: str) -> str:
     return (instrument or 'tab').replace('5-string-', '').replace('-', ' ').capitalize()
 
 
+def _is_traditional(name: str) -> bool:
+    return (name or '').strip().lower() == 'traditional'
+
+
+def _writer(row: dict) -> str:
+    """Who wrote it: `composer`, or "Traditional" when that is all the
+    artist field says (a scrape that names no performer). '' when unknown —
+    no guessing."""
+    composer = (row.get('composer') or '').strip()
+    if composer:
+        return composer
+    return 'Traditional' if _is_traditional(row.get('artist')) else ''
+
+
+def _written_by(writer: str) -> str:
+    if not writer:
+        return ''
+    return 'Traditional' if _is_traditional(writer) else f'Written by {writer}'
+
+
+def recorded_by(row: dict) -> list:
+    """[(name, year or None)] — the artists a page may name: `covering_artists`
+    with their parallel `covering_years`, in the index's order (first
+    recording year first), once each, "Traditional" left out. Never the
+    scraped `artist` unless the build confirmed it into covering_artists
+    (Mike, 2026-10-26). Mirrors recordedBy() in docs/js/utils.js."""
+    names = row.get('covering_artists') or []
+    years = row.get('covering_years') or []
+    out, seen = [], set()
+    for i, name in enumerate(names):
+        name = (name or '').strip()
+        if not name or _is_traditional(name) or name.lower() in seen:
+            continue
+        seen.add(name.lower())
+        year = years[i] if i < len(years) and years[i] else None
+        out.append((name, year))
+    return out
+
+
+def associated_artists(row: dict) -> list:
+    return [name for name, _ in recorded_by(row)]
+
+
+def _recording_link(title: str, name: str, year) -> str:
+    """`Bill Monroe (1947)` linking to a YouTube search for that recording."""
+    query = ' '.join(str(x) for x in (title, name, year) if x)
+    label = f'{name} ({year})' if year else name
+    href = YOUTUBE_SEARCH + quote_plus(query)
+    return (f'<a href="{html.escape(href, quote=True)}" rel="nofollow noopener" '
+            f'target="_blank">{html.escape(label)}</a>')
+
+
 def _description(row: dict) -> str:
     bits = [f"{row.get('title', '')} chords and lyrics"]
-    if row.get('artist'):
-        bits[0] += f", as played by {row['artist']}"
+    writer = _writer(row)
+    if writer:
+        bits.append('Traditional song' if _is_traditional(writer) else f'Written by {writer}')
     if row.get('key'):
         bits.append(f"Key of {row['key']}")
     if row.get('first_line'):
@@ -191,17 +255,34 @@ def _description(row: dict) -> str:
     return text
 
 
-def render_page(row: dict, chordpro: str, canonical: str) -> str:
+def _fill(template: str, old: str, new: str) -> str:
+    """Replace one landmark in the app template; it must occur exactly once."""
+    count = template.count(old)
+    if count != 1:
+        raise ValueError(f'docs/index.html: expected {old!r} once, found it {count} times '
+                         '(song pages are built from it; update build_song_pages.py)')
+    return template.replace(old, new)
+
+
+def render_page(row: dict, chordpro: str, canonical: str, template: str,
+                related: str = '') -> str:
+    """The app's index.html, made into this song's page.
+
+    Head: the song's title, description, canonical link and JSON-LD (the
+    template's own `<base href="/">` keeps its relative URLs at the root). Body: the landing page starts
+    hidden and the song view starts shown, holding the pre-rendered chart,
+    so the first paint is the song, not the homepage.
+    """
     work_id = str(row['id'])
     title = row.get('title') or work_id
-    artist = row.get('artist') or ''
-    composer = row.get('composer') or ''
+    writer = _writer(row)
+    recorders = recorded_by(row)
     esc = html.escape
     app_link = f'/#work/{work_id}'
 
-    head_title = f'{title} ({artist}) chords and lyrics' if artist else f'{title} chords and lyrics'
+    head_title = f'{title} chords and lyrics'
     if not chordpro and row.get('tablature_parts'):
-        head_title = f'{title} ({artist}) tab' if artist else f'{title} tab'
+        head_title = f'{title} tab'
 
     facts = []
     if row.get('key'):
@@ -217,21 +298,21 @@ def render_page(row: dict, chordpro: str, canonical: str) -> str:
 
     ld = {'@context': 'https://schema.org', '@type': 'MusicComposition',
           'name': title, 'url': canonical}
-    if composer:
-        ld['composer'] = {'@type': 'Person', 'name': composer}
+    if writer and not _is_traditional(writer):
+        ld['composer'] = {'@type': 'Person', 'name': writer}
     ld_json = json.dumps(ld, ensure_ascii=False, indent=2).replace('</', '<\\/')
 
     body = []
     body.append(f'<h1>{esc(title)}</h1>')
-    if artist:
-        body.append(f'<p class="by">{esc(artist)}</p>')
-    if composer and composer != artist:
-        written = composer if composer.lower() == 'traditional' else f'Written by {composer}'
-        body.append(f'<p class="by">{esc(written)}</p>')
+    if writer:
+        body.append(f'<p class="by">{esc(_written_by(writer))}</p>')
     if facts:
         body.append(f'<p class="facts">{esc(" · ".join(facts))}</p>')
     if instruments:
         body.append('<p class="facts">' + esc(' · '.join(f'{n} tab' for n in instruments)) + '</p>')
+    if related:
+        body.append(related)
+    # Only seen before the app boots, or with JavaScript off.
     body.append(f'<a class="open" href="{esc(app_link)}">Open in Bluegrass Book: transpose, play along'
                 + (', tabs' if instruments else '') + '</a>')
     if chordpro:
@@ -240,33 +321,34 @@ def render_page(row: dict, chordpro: str, canonical: str) -> str:
     subject = f'Copyright concern: {title}'
     mail = ('mailto:hello@bluegrassbook.com?subject='
             + re.sub(r'\s', '%20', esc(subject, quote=True))
-            + '&amp;body=' + esc(_page_url(work_id)))
+            + '&amp;body=' + esc(_page_url(row)))
+    rights = f'<p class="rights">Rights holder? <a href="{mail}">Copyright concern</a></p>'
 
-    return f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{esc(head_title)} | Bluegrass Book</title>
-<meta name="description" content="{esc(_description(row), quote=True)}">
-<link rel="canonical" href="{esc(canonical)}">
-<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
-<script type="application/ld+json">
-{ld_json}
-</script>
-<style>{PAGE_CSS}</style>
-</head>
-<body>
-<header><a href="/">&larr; Bluegrass Book</a></header>
-<main>
-{chr(10).join(body)}
-</main>
-<footer>
-<p>From <a href="/">Bluegrass Book</a>, a free songbook for bluegrass jams. Rights holder? <a href="{mail}">Copyright concern</a></p>
-</footer>
-</body>
-</html>
-"""
+    if recorders:
+        links = [_recording_link(title, name, year) for name, year in recorders]
+        shown = ', '.join(links[:FOOTER_ARTISTS])
+        rest = links[FOOTER_ARTISTS:]
+        if rest:
+            # Opened, the rest continues the same line (::details-content).
+            shown += (f'<details><summary> and {len(rest)} more</summary>, '
+                      + ', '.join(rest) + '</details>')
+        body.append(f'<div class="artists">Recorded by: {shown}</div>')
+
+    body.append(rights)
+
+    head = (f'<title>{esc(head_title)} | Bluegrass Book</title>\n'
+            f'    <meta name="description" content="{esc(_description(row), quote=True)}">\n'
+            f'    <link rel="canonical" href="{esc(canonical)}">\n'
+            f'    <script type="application/ld+json">\n{ld_json}\n    </script>')
+    article = '<article class="prerender">\n' + '\n'.join(body) + '\n</article>'
+
+    page = _fill(template, '<title>Bluegrass Book</title>', head)
+    page = _fill(page, '<div id="landing-page" class="landing-page">',
+                 '<div id="landing-page" class="landing-page hidden">')
+    page = _fill(page, '<div id="song-view" class="song-view hidden">', '<div id="song-view" class="song-view">')
+    page = _fill(page, '<div id="song-content" class="song-content"></div>',
+                 f'<div id="song-content" class="song-content">{article}</div>')
+    return page
 
 
 # ---------------------------------------------------------------- build
@@ -283,23 +365,84 @@ def _write_if_changed(path: Path, text: str) -> bool:
 
 
 def _sitemap(urls: list) -> str:
+    """urls: [(url, lastmod 'YYYY-MM-DD' or None)]."""
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    lines += [f'  <url><loc>{html.escape(u)}</loc></url>' for u in urls]
+    for url, lastmod in urls:
+        mod = f'<lastmod>{lastmod}</lastmod>' if lastmod else ''
+        lines.append(f'  <url><loc>{html.escape(url)}</loc>{mod}</url>')
     lines.append('</urlset>')
     return '\n'.join(lines) + '\n'
 
 
-def build_song_pages(docs_dir: Path) -> dict:
-    """Write docs/songs/{id}/index.html + docs/sitemap.xml from the index."""
+def git_dates(repo: Path, paths: list) -> dict:
+    """{path's first segment below its root: date of the last commit touching it}.
+
+    For `paths=['works']` that is {work id: 'YYYY-MM-DD'}; for a list of
+    files it is {file name: date}. The sitemap's <lastmod> comes from here,
+    because Google only uses lastmod when it is consistently accurate: a page
+    is dated by the last commit that changed its content, never by the build.
+    Returns {} without full history (CI's default shallow clone dates every
+    file to the one commit it has) or outside a git checkout — the sitemap
+    then simply has no <lastmod>.
+    """
+    def git(*args):
+        return subprocess.run(['git', '-C', str(repo), *args], capture_output=True,
+                              text=True, check=True).stdout
+    try:
+        if git('rev-parse', '--is-shallow-repository').strip() != 'false':
+            return {}
+        log = git('log', '--format=%x00%cs', '--name-only', '--no-renames', '--', *paths)
+    except (OSError, subprocess.CalledProcessError):
+        return {}
+    dates, current = {}, None
+    for line in log.splitlines():
+        if line.startswith('\x00'):
+            current = line[1:]
+        elif line:
+            for root in paths:
+                if line == root or line.startswith(root.rstrip('/') + '/'):
+                    key = line[len(root):].lstrip('/').split('/')[0] or root
+                    dates.setdefault(key, current)      # newest first: keep the first
+    return dates
+
+
+def _read_jsonl(path: Path) -> list:
+    if not path.exists():
+        return []
+    with open(path, encoding='utf-8') as f:
+        return [json.loads(line) for line in f if line.strip()]
+
+
+def build_song_pages(docs_dir: Path, work_dates: dict = None, page_dates: dict = None) -> dict:
+    """Write a page per song and version, docs/404.html and docs/sitemap.xml.
+
+    A song's page (`songs/{song}/`) is indexed and listed in the sitemap, and
+    names its versions. A version's page (`songs/{song}/{version}/`) points
+    its canonical link at the song, so Google indexes one page per song.
+    404.html is the app as is (index.html carries `<base href="/">`): GitHub
+    Pages serves it for any path without a page (an archived song), and
+    main.js routes that path.
+
+    Each sitemap URL carries <lastmod>: a song's is the newest commit to its
+    own work or any of its versions (its page lists them); a static page's is
+    its file's. `work_dates` / `page_dates` default to git (see git_dates).
+    """
     docs_dir = Path(docs_dir)
     data_dir = docs_dir / 'data'
+    template = (docs_dir / 'index.html').read_text(encoding='utf-8')
+    if work_dates is None:
+        work_dates = git_dates(docs_dir.parent, ['works'])
+    if page_dates is None:
+        page_dates = git_dates(docs_dir.parent, [f'docs/{p or "index.html"}' for p in STATIC_PAGES])
     out_dir = docs_dir / SONGS_DIR
-    rows = []
-    with open(data_dir / 'index.jsonl', encoding='utf-8') as f:
-        for line in f:
-            if line.strip():
-                rows.append(json.loads(line))
+    rows = _read_jsonl(data_dir / 'index.jsonl')
+    everything = rows + _read_jsonl(data_dir / 'archive.jsonl')
+    by_id = {str(r['id']): r for r in everything}
+    versions_of = {}
+    for r in everything:
+        if r.get('variant_of'):
+            versions_of.setdefault(str(r['variant_of']), []).append(r)
 
     def chart_for(row):
         if not row.get('has_content'):
@@ -317,28 +460,50 @@ def build_song_pages(docs_dir: Path) -> dict:
         if chart or row.get('tablature_parts'):
             pages[str(row['id'])] = (row, chart)
 
+    def link(row, text):
+        return f'<a href="/{html.escape(_path(row))}">{html.escape(text)}</a>'
+
     written = 0
     song_urls = []
+    expected = set()
     for work_id in sorted(pages):
         row, chart = pages[work_id]
-        main = str(row.get('variant_of') or '')
-        canonical = _page_url(main if main in pages else work_id)
-        if canonical == _page_url(work_id):
-            song_urls.append(canonical)
-        if _write_if_changed(out_dir / work_id / 'index.html', render_page(row, chart, canonical)):
+        root = str(row.get('variant_of') or '')
+        if root:
+            song = by_id.get(root)
+            canonical = _page_url(pages[root][0]) if root in pages else _page_url(row)
+            related = (f'<p class="facts">{html.escape(_version_name(row))} of '
+                       f'{link(song, song.get("title") or root)}</p>') if song else ''
+        else:
+            canonical = _page_url(row)
+            versions = sorted(versions_of.get(work_id, []), key=_version_order)
+            dated = [work_dates.get(str(r['id'])) for r in [row] + versions]
+            song_urls.append((canonical, max((d for d in dated if d), default=None)))
+            related = ('<p class="facts">Versions: '
+                       + ' · '.join(link(v, _version_name(v)) for v in versions)
+                       + '</p>') if versions else ''
+        target = docs_dir / _path(row) / 'index.html'
+        expected.add(target)
+        if _write_if_changed(target, render_page(row, chart, canonical, template, related)):
             written += 1
 
-    # Prune pages whose song left the index. Only generated page directories
-    # (a lone index.html) are removed; anything else in docs/songs is left.
+    # Prune pages that left the index (renames, curation, deletions). Every
+    # index.html under docs/songs is generated; anything else is left alone.
     pruned = 0
     if out_dir.is_dir():
-        for child in out_dir.iterdir():
-            if (child.is_dir() and child.name not in pages
-                    and [p.name for p in child.iterdir()] == ['index.html']):
-                shutil.rmtree(child)
+        for page in sorted(out_dir.rglob('index.html')):
+            if page not in expected:
+                page.unlink()
                 pruned += 1
+        for folder in sorted((d for d in out_dir.rglob('*') if d.is_dir()),
+                             key=lambda d: len(d.parts), reverse=True):
+            if not any(folder.iterdir()):
+                folder.rmdir()
 
-    urls = [ORIGIN + p for p in STATIC_PAGES] + song_urls
+    _fill(template, '<base href="/">', '<base href="/">')   # fails loudly if it's gone
+    _write_if_changed(docs_dir / '404.html', template)
+
+    urls = [(ORIGIN + p, page_dates.get(f'docs/{p or "index.html"}')) for p in STATIC_PAGES] + song_urls
     _write_if_changed(docs_dir / 'sitemap.xml', _sitemap(urls))
     print(f"Song pages: {len(pages)} in {out_dir} ({written} written, {pruned} pruned); "
           f"sitemap.xml lists {len(urls)} URLs")

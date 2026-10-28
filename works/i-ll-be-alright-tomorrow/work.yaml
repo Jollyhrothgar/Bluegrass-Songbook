@@ -1,11 +1,16 @@
 id: i-ll-be-alright-tomorrow
 title: I'll Be Alright Tomorrow
+song: '2402'
+version: '2'
 artist: Mac Wiseman
 composers:
 - Bobby Osborne and Pete Goble
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

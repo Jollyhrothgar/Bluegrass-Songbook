@@ -1,11 +1,16 @@
 id: try-to-remember-1
 title: Try To Remember
+song: try-to-remember
+version: '2'
 artist: Ricky Nelson
 composers:
 - Harvey Schmidt and Tom Jones
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

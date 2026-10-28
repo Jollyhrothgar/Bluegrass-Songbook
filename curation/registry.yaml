@@ -96,10 +96,6 @@ groups:
     variants:
       roving-gambler:
         label: Traditional version
-  stairway-to-heaven:
-    variants:
-      stairway-to-heaven-1:
-        label: The Stanley Brothers version
   st-louis-blues:
     variants:
       st-louis-blues-1:

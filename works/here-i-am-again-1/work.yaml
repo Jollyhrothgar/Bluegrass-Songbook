@@ -1,5 +1,7 @@
 id: here-i-am-again-1
 title: Here I Am Again
+song: here-i-am-again
+version: '2'
 artist: Loretta Lynn
 composers:
 - Shel Silverstein
@@ -8,6 +10,9 @@ tags:
 - ClassicCountry
 - HonkyTonk
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

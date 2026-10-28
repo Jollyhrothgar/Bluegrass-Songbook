@@ -1,9 +1,16 @@
 id: i-ll-take-the-blame
 title: I'll Take The Blame
+song: ill-take-the-blame
+version: '2'
 artist: The Lonesome River Band
+composers:
+- Carter Stanley
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -13,5 +20,3 @@ parts:
     source: classic-country
     source_file: illtaketheblamelyricsandchords.pro
     imported_at: '2026-01-02'
-composers:
-- Carter Stanley

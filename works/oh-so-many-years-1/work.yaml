@@ -1,5 +1,7 @@
 id: oh-so-many-years-1
 title: Oh So Many Years
+song: oh-so-many-years
+version: '2'
 artist: the Everly Brothers
 composers:
 - Frankie Bailes
@@ -8,6 +10,9 @@ tags:
 - Pop
 - Rockabilly
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

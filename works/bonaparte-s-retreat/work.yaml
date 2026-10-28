@@ -1,5 +1,7 @@
 id: bonaparte-s-retreat
 title: Bonaparte's Retreat
+song: bonapartes-retreat
+version: '2'
 artist: Willie Nelson
 composers:
 - Redd Stewart &amp; Pee Wee King
@@ -10,6 +12,9 @@ tags:
 - JamFriendly
 - Instrumental
 - OldTime
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

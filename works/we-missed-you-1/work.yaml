@@ -1,5 +1,7 @@
 id: we-missed-you-1
 title: We Missed You
+song: we-missed-you
+version: '2'
 artist: Kitty Wells
 composers:
 - Bill Anderson
@@ -7,6 +9,9 @@ default_key: G
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

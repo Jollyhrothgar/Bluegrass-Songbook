@@ -1,5 +1,7 @@
 id: it-doesn-t-matter-anymore-1
 title: It Doesn't Matter Anymore
+song: it-doesn-t-matter-anymore
+version: '2'
 artist: Wanda Jackson
 composers:
 - Paul Anka
@@ -7,6 +9,9 @@ default_key: G
 tags:
 - Rockabilly
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

@@ -1,7 +1,11 @@
 id: rain-please-go-away-1
 title: Rain Please Go Away
+slug: rain-please-go-away
 artist: Dan Tyminsky
 tags: []
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

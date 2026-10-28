@@ -1,6 +1,9 @@
 id: arkansas-traveler-1
 title: Arkansas Traveler
+slug: arkansas-traveler
 artist: Traditional
+composers:
+- Traditional
 default_key: G
 tags:
 - Instrumental
@@ -8,6 +11,9 @@ tags:
 - OldTime
 - Scruggs
 - Folk
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -17,10 +23,10 @@ parts:
     source: tunearch
     imported_at: '2026-01-02'
 - type: tablature
-  instrument: banjo
   format: otf
   file: banjo.otf.json
   default: true
+  instrument: banjo
   provenance:
     source: banjo-hangout
     source_id: '27154'
@@ -32,9 +38,9 @@ parts:
     tef_tracks: 1
     tef_events: 222
 - type: tablature
-  instrument: guitar
   format: otf
   file: guitar.otf.json
+  instrument: guitar
   provenance:
     source: flatpicker-hangout
     source_id: '346'
@@ -42,9 +48,9 @@ parts:
     author: jasonh
     imported_at: '2026-07-26'
 - type: tablature
-  instrument: mandolin
   format: otf
   file: mandolin.otf.json
+  instrument: mandolin
   provenance:
     source: mandolin-hangout
     source_id: '2805'
@@ -52,9 +58,9 @@ parts:
     author: MandoTom2
     imported_at: '2026-07-26'
 - type: tablature
-  instrument: mandolin
   format: otf
   file: mandolin-2580.otf.json
+  instrument: mandolin
   provenance:
     source: mandolin-hangout
     source_id: '2580'
@@ -64,9 +70,9 @@ parts:
     tuning: GDAE (Standard)
     imported_at: '2026-07-27'
 - type: tablature
-  instrument: banjo
   format: otf
   file: banjo-26610.otf.json
+  instrument: banjo
   provenance:
     source: banjo-hangout
     source_id: '26610'
@@ -76,9 +82,9 @@ parts:
     tuning: Standard Open G (gDGBD)
     imported_at: '2026-10-17'
 - type: tablature
-  instrument: banjo
   format: otf
   file: banjo-28424.otf.json
+  instrument: banjo
   provenance:
     source: banjo-hangout
     source_id: '28424'
@@ -87,5 +93,3 @@ parts:
     difficulty: Intermediate
     tuning: Standard Open G (gDGBD)
     imported_at: '2026-10-17'
-composers:
-- Traditional

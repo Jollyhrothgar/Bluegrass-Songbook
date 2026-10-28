@@ -161,7 +161,7 @@ async function networkFirst(event, cacheName, timeoutMs) {
         // A navigation with no cached page still deserves the app shell:
         // index.html is a hash-routed SPA, so any route can be served from it.
         if (request.mode === 'navigate') {
-            const shell = await caches.match('./index.html');
+            const shell = await cachedShell();
             if (shell) return shell;
         }
         throw err;
@@ -198,10 +198,19 @@ async function staleWhileRevalidate(event, cacheName) {
     const response = await network;
     if (response) return response;
     if (request.mode === 'navigate') {
-        const shell = await caches.match('./index.html');
+        const shell = await cachedShell();
         if (shell) return shell;
     }
     throw new Error('offline and uncached');
+}
+
+/**
+ * The cached index.html, for a navigation nothing else can answer — any
+ * route, a song's /songs/{song}/ path included: its `<base href="/">` keeps
+ * its relative URLs at the root wherever it is served.
+ */
+function cachedShell() {
+    return caches.match('./index.html');
 }
 
 async function cacheFirst(request, cacheName) {

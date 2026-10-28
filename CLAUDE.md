@@ -17,7 +17,7 @@ Corpus size drifts constantly, so count it rather than quoting this file:
 ./scripts/bootstrap          # First-time setup (install deps + build index)
 ./scripts/server             # Start frontend (walks 8080-8090; --exact to pin)
 ./scripts/utility help               # THE list of subcommands (~30 of them)
-./scripts/utility refresh-tags       # Refresh tags from MusicBrainz (local only)
+./scripts/utility refresh-musicbrainz  # Rebuild every MusicBrainz cache (local only)
 ./scripts/utility build-posts        # Build blog posts manifest
 ./scripts/bootstrap --quick          # Rebuild docs/data/ from works/
 ```
@@ -135,7 +135,7 @@ Bluegrass-Songbook/
 ├── docs/                    # Frontend (GitHub Pages)
 │   ├── index.html           # Search UI + song editor
 │   ├── blog.html            # Redirect to the dev blog on mikebeaumier.com
-│   ├── songs/{id}/          # GENERATED static page per searchable song (+ sitemap.xml)
+│   ├── songs/{song}/        # GENERATED per-song (and /{version}/) app page, chart pre-rendered (+ sitemap.xml, 404.html)
 │   ├── js/                  # ES modules
 │   │   ├── main.js          # Entry point, initialization, routing
 │   │   ├── shell.js         # App shell: top band, bottom band, pill primitive
@@ -181,7 +181,7 @@ Bluegrass-Songbook/
 ├── scripts/                 # CLI tools
 │   ├── bootstrap            # Setup + build index
 │   ├── server               # Start dev server
-│   ├── utility              # add-song, count-chords, refresh-tags
+│   ├── utility              # add-song, count-chords, refresh-musicbrainz
 │   └── lib/                 # Python implementations
 │       ├── build_works_index.py  # PRIMARY: Build index from works/
 │       ├── work_schema.py        # work.yaml schema
@@ -295,6 +295,20 @@ parts:
       imported_at: '2026-01-02'
 ```
 
+**Songs and versions.** A work is its own song unless it says otherwise:
+
+```yaml
+song: a-hundred-years-from-now   # this work is a version of that song (its root work id)
+version: '2'                     # its URL: /songs/a-hundred-years-from-now/2/
+slug: blue-moon-of-kentucky      # (on a song's root only) its URL name, when the work id would mislead
+```
+
+Recorded once, never recomputed: `scripts/lib/seed_songs.py` seeded them
+(2026-10-26) on evidence only — matching lyrics, curation pins, merge
+redirects; a version is named for what it provably is (`2`, `banjo-tab`),
+**never** the scraped `artist`. Fix one by editing the work.yaml. The build
+turns them into URLs and version groups (`build_works_index.apply_songs`).
+
 **Part types** in the corpus today: `lead-sheet` (the overwhelming majority),
 `tablature`, and a single legacy `document`. There is no `abc-notation` part
 type — ABC lives *inside* a `chordpro` lead sheet as a `{start_of_abc}` block,
@@ -400,26 +414,24 @@ rebuilds `docs/data/`.
 
 This runs `build_works_index.py`, which reads all `works/*/work.yaml` files and builds the search index.
 
-### Refreshing MusicBrainz Tags (Local Only)
+### Refreshing MusicBrainz Data (Local Only)
 
-MusicBrainz tag enrichment requires a local PostgreSQL database with the MusicBrainz dump. This cannot run in CI.
+Four caches need a local PostgreSQL copy of the MusicBrainz dump
+(`~/workspace/music_brainz/mb-db`, Docker container `musicbrainz-db`, port
+5440; on Mike's M4 laptop it runs under Colima). CI never has it, so the
+caches are committed and CI reads them. One command rebuilds all of them in
+order and rebuilds the index:
 
 ```bash
-# 1. Start the MusicBrainz database (separate repo)
-/Users/mike/workspace/music_brainz/mb-db/scripts/db start
-
-# 2. Install psycopg2 if needed
-uv pip install psycopg2-binary
-
-# 3. Refresh artist tags and rebuild index
-./scripts/utility refresh-tags
-
-# 4. Commit the updated cache (CI uses this)
-git add docs/data/artist_tags.json
-git commit -m "Refresh MusicBrainz artist tags"
+uv sync --extra analytics                 # psycopg2 lives in this extra
+./scripts/utility refresh-musicbrainz     # starts/stops Colima + the DB itself
+git add docs/data/artist_tags.json docs/data/bluegrass_*.json \
+        docs/data/grassiness_scores.json docs/data/verified_artists.json
 ```
 
-The `artist_tags.json` cache is checked into git so CI builds can apply tags without the MusicBrainz database.
+Every index build prints `MusicBrainz: N works' artists never checked` when
+works arrived (or artists changed) since the last refresh — that is the
+signal to run it. Details: `scripts/lib/refresh-musicbrainz`.
 
 ## Format: ChordPro + Extensions
 
@@ -508,7 +520,7 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 - **Tags**: Genre (Bluegrass, ClassicCountry, etc.), Vibe (JamFriendly, Modal), Instrument (tag:fiddle, tag:banjo) - primary source is LLM tagging, with MusicBrainz and grassiness scoring as fallbacks
 - **User accounts**: Google OAuth via Supabase, cloud-synced lists
 - **Song versions**: Multiple arrangements with voting via the Arrangement pill; editorial curation (canonical/variant pins) in `curation/registry.yaml`
-- **URL stability**: Work URLs (`#work/{slug}`) are permanent; legacy `#song/{id}` URLs redirect
+- **Song URLs**: a song lives at `/songs/{song}/`, its versions at `/songs/{song}/{version}/` (work.yaml `song:` / `version:` / `slug:`; see "Song paths" in `docs/js/CLAUDE.md`). Work ids stay permanent as data keys (lists, votes, pending edits); `#work/{slug}` still routes
 - **App shell UI**: slim top band + bottom band + pill controls (`docs/js/shell.js`); one unified song page (`work-view.js` / `openWork`); auto-hiding chrome (`body.chrome-hidden`) instead of a focus mode
 
 **Recent additions (Jan-Feb 2026):**
@@ -523,7 +535,7 @@ Start the dev server first (`./scripts/server`), then use the MCP to interact wi
 - **Strum Machine integration**: 605+ songs with practice backing tracks
 - **UI redesign (Jul 2026)**: app shell with top/bottom bands, pill controls (Key/Display/Info/Export/Arrangement) replacing the old quick-controls bar, sidebar, and version-picker modal
 - **Auto-hiding chrome**: the top band hides while you scroll through a song (replaced focus mode)
-- **Covering artists**: Shows which bluegrass legends recorded each song
+- **Covering artists**: which bluegrass legends recorded each song. Since F9 (Oct 2026) the scraped `artist` is never a label on a chart: the writer is the credit, and "Recorded by: Bill Monroe (1947), …" lists MusicBrainz-confirmed recorders (covering artists + confirmed scraped artists, `./scripts/utility refresh-musicbrainz`), each a YouTube search, in the Info pill and static footer
 - **Multi-owner lists**: Collaborative list curation with follow/unfollow
 - **Thunderdome**: Claim abandoned lists (now 1 year inactivity threshold)
 - **Frictionless feedback**: Report issues and request songs with no account at all

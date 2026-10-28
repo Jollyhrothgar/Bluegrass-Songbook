@@ -1,9 +1,14 @@
 id: i-m-working-on-a-building
 title: I'm Working on a Building
+song: im-working-on-a-building
+version: '2'
 artist: Bill Monroe
 composers:
 - A.P. Carter and Reverend Louis Overstreet
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

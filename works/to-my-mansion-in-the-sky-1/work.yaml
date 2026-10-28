@@ -1,9 +1,14 @@
 id: to-my-mansion-in-the-sky-1
 title: To My Mansion In The Sky
+song: to-my-mansion-in-the-sky
+version: '2'
 artist: Jimmie Davis
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

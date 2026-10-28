@@ -1,5 +1,7 @@
 id: where-we-ll-never-say-farewell
 title: Where We'll Never Say Farewell
+song: where-well-never-say-farewell
+version: '2'
 artist: Rhonda Vincent
 composers:
 - Larry Sparks and Eva Sparks
@@ -7,6 +9,9 @@ default_key: G
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

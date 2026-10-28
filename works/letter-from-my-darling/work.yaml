@@ -1,7 +1,14 @@
 id: letter-from-my-darling
 title: Letter From My Darling
+song: letter-from-my-darlin
+version: '2'
 artist: Bill Monroe
+composers:
+- Bill Monroe
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -11,5 +18,3 @@ parts:
     source: classic-country
     source_file: letterfrommydarlinglyricschords.pro
     imported_at: '2026-07-26'
-composers:
-- Bill Monroe

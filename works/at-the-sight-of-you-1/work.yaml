@@ -1,11 +1,16 @@
 id: at-the-sight-of-you-1
 title: At The Sight Of You
+song: at-the-sight-of-you
+version: '2'
 artist: Cal Smith
 composers:
 - Bozo Darnell and Dave Pittman
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

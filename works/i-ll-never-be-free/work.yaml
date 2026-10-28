@@ -1,11 +1,16 @@
 id: i-ll-never-be-free
 title: I'll Never Be Free
+song: ill-never-be-free
+version: '2'
 artist: Jean Shepard
 composers:
 - Bennie Benjamin and George Weiss
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

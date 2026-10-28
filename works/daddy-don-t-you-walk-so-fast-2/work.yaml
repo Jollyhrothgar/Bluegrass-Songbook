@@ -1,9 +1,14 @@
 id: daddy-don-t-you-walk-so-fast-2
 title: Daddy Don't You Walk So Fast
+song: daddy-don-t-you-walk-so-fast
+version: '2'
 artist: Wayne Newton
 composers:
 - Peter Callender and Geoff Stephens
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

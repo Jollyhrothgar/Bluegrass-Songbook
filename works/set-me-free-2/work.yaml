@@ -1,5 +1,7 @@
 id: set-me-free-2
 title: Set Me Free
+song: set-me-free
+version: '2'
 artist: Tammy Wynette
 composers:
 - Curly Putman
@@ -7,6 +9,9 @@ default_key: G
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

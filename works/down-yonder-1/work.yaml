@@ -1,10 +1,17 @@
 id: down-yonder-1
 title: Down Yonder
+song: down-yonder
+version: '2'
 artist: Traditional
+composers:
+- L. Wolfe Gilbert
 tags:
 - Instrumental
 - OldTime
 - Clawhammer
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -14,14 +21,12 @@ parts:
     source: tunearch
     imported_at: '2026-01-02'
 - type: tablature
-  instrument: banjo
   format: otf
   file: banjo.otf.json
+  instrument: banjo
   provenance:
     source: banjo-hangout
     source_id: '17492'
     source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=17492
     author: janolov
     imported_at: '2026-07-08'
-composers:
-- L. Wolfe Gilbert

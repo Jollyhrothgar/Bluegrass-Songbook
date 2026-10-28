@@ -761,7 +761,7 @@ h1 {
     margin-bottom: 0.2rem;
 }
 
-.result-artist {
+.result-writer {
     font-size: 0.8rem;
     color: var(--text-secondary);
     margin-bottom: 0.3rem;
@@ -863,7 +863,7 @@ h1 {
     color: #4ade80;
 }
 
-/* Covering artists line */
+/* Associated-artist line: only when the search named one (F9) */
 .result-covering {
     font-size: 0.75rem;
     color: var(--text-secondary);
@@ -1183,13 +1183,17 @@ h1 {
     font-size: 0.8rem;
 }
 
-.artists-hidden {
-    display: none;
+/* "Recorded by" names: each a YouTube search for that recording (F9) */
+.recorded-by-link {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
-.artists-hidden.visible {
-    display: inline;
+.recorded-by-link:hover {
+    color: var(--accent);
 }
+
 
 /* Info tags section */
 .info-tags {
@@ -1577,6 +1581,32 @@ h1 {
     border-radius: 8px;
     padding: 1.25rem;
 }
+
+/* The chart a song's search-engine page (/songs/{id}/) carries in its HTML,
+   built by scripts/lib/build_song_pages.py. Shown until the app boots and
+   openWork() replaces it, so it borrows the song page's look. */
+.prerender h1 { font-size: 1.5rem; font-weight: 600; margin: 0 0 0.5rem; }
+.prerender .by,
+.prerender .facts,
+.prerender .rights { color: var(--text-secondary); font-size: 0.9rem; margin: 0 0 0.25rem; }
+.prerender .open { display: inline-block; margin: 0.75rem 0 0.5rem; color: var(--accent); }
+.prerender h2 {
+    color: var(--text-secondary); font-size: 0.85rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.04em; margin: 1.25rem 0 0.25rem;
+}
+.prerender pre {
+    font-family: 'SF Mono', Menlo, Consolas, monospace; font-size: 0.95rem;
+    line-height: 1.45; white-space: pre; overflow-x: auto; margin: 0;
+}
+.prerender .ch { color: var(--chord); font-weight: 600; }
+.prerender .note { font-style: italic; color: var(--text-secondary); margin: 0.5rem 0; }
+.prerender .rights { margin-top: 1.5rem; }
+.prerender .artists { color: var(--text-secondary); font-size: 0.9rem; margin: 1.5rem 0 0; }
+.prerender .artists a { color: var(--text-secondary); }
+.prerender .artists details { display: inline; }
+.prerender .artists summary { display: inline; cursor: pointer; text-decoration: underline dotted; }
+.prerender .artists details[open] summary { display: none; }
+.prerender .artists details::details-content { display: inline; }
 
 .song-header {
     display: flex;
@@ -9567,6 +9597,7 @@ body.has-bottomband .container {
    bottom-band playback controls. See work-view.js + song-controls.js.
    ============================================ */
 
+.song-writer-line,
 .song-artist-line {
     color: var(--text-secondary);
     font-size: var(--font-sm);
@@ -9587,14 +9618,6 @@ body.has-bottomband .container {
 
 .song-practice-line a:hover {
     color: var(--accent);
-}
-
-/* The nudge in the artist's place on a work that has none. Shown only to
-   someone who can fix it (work-view.js updateWorkTopBar), so it reads as an
-   invitation rather than a complaint. */
-.song-artist-missing {
-    font-style: italic;
-    opacity: 0.7;
 }
 
 .song-pill-row {

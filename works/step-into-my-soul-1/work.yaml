@@ -1,9 +1,14 @@
 id: step-into-my-soul-1
 title: Step Into My Soul
+song: step-into-my-soul
+version: '2'
 artist: Bobby Helms
 composers:
 - Johnny Paycheck and Aubrey Mayhew
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

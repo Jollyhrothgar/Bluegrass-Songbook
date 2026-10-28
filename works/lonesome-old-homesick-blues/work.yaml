@@ -1,6 +1,11 @@
 id: lonesome-old-homesick-blues
 title: Lonesome Old Homesick Blues
+song: lonesome-homesick-blues
+version: '2'
 tags: []
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

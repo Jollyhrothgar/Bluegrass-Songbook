@@ -1,9 +1,14 @@
 id: a-way-to-free-myself
 title: A Way To Free Myself
+song: way-to-free-myself
+version: '2'
 artist: Ray Price
 composers:
 - Joe Hayes
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

@@ -1,10 +1,15 @@
 id: shotgun-boogie-1
 title: Shotgun Boogie
+song: shotgun-boogie
+version: '2'
 artist: Tennessee Ernie Ford
 default_key: G
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

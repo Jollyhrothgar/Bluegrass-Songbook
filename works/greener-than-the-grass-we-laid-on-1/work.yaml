@@ -1,5 +1,7 @@
 id: greener-than-the-grass-we-laid-on-1
 title: Greener Than The Grass We Laid On
+song: greener-than-the-grass-we-laid-on
+version: '2'
 artist: Tanya Tucker
 composers:
 - David Alan Coe
@@ -8,6 +10,9 @@ tags:
 - ClassicCountry
 - JamFriendly
 - Modal
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

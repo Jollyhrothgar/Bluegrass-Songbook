@@ -1,5 +1,6 @@
 id: king-of-the-road-1
 title: King of the Road
+slug: king-of-the-road
 artist: The Statler Brothers
 composers:
 - Roger Miller
@@ -7,6 +8,9 @@ default_key: G
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

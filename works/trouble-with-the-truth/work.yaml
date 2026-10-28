@@ -1,5 +1,7 @@
 id: trouble-with-the-truth
 title: Trouble With The Truth
+song: the-trouble-with-the-truth
+version: '2'
 artist: Patty Loveless
 composers:
 - Gary Nicholson
@@ -8,6 +10,9 @@ tags:
 - ClassicCountry
 - Bluegrass
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

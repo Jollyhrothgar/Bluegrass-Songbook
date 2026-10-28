@@ -1,11 +1,16 @@
 id: the-great-judgment-morning-1
 title: The Great Judgment Morning
+song: the-great-judgment-morning
+version: '2'
 artist: Roy Acuff
 composers:
 - Leander L. Pickett
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

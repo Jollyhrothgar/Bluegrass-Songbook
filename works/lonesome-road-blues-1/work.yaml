@@ -1,10 +1,16 @@
 id: lonesome-road-blues-1
 title: Lonesome Road Blues
+slug: lonesome-road-blues
 artist: Traditional
+composers:
+- Traditional
 default_key: G
 tags:
 - JamFriendly
 - Instrumental
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -14,14 +20,12 @@ parts:
     source: golden-standard
     imported_at: '2026-01-02'
 - type: tablature
-  instrument: banjo
   format: otf
   file: banjo.otf.json
+  instrument: banjo
   provenance:
     source: banjo-hangout
     source_id: '12127'
     source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=12127
     author: Mirek Tim Patek
     imported_at: '2026-07-08'
-composers:
-- Traditional

@@ -1,11 +1,16 @@
 id: lord-i-m-coming-home
 title: Lord I'm Coming Home
+song: lord-im-coming-home
+version: '2'
 artist: Don Gibson
 composers:
 - William Kirkpatrick
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

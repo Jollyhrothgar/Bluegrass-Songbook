@@ -1,11 +1,16 @@
 id: the-fool
 title: The Fool
+song: fool
+version: '2'
 artist: Bobby Bare
 composers:
 - Lee Hazlewood and Naomi Ford
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

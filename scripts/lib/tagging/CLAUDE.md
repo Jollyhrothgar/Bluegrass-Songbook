@@ -96,6 +96,8 @@ See `analytics/grassiness_analysis.ipynb` for visualizations and threshold analy
 | `docs/data/bluegrass_recordings.json` | Cache: recordings by curated artists |
 | `docs/data/bluegrass_tagged.json` | Cache: recordings with bluegrass tags |
 | `docs/data/grassiness_scores.json` | Computed scores for index songs (works scoring 0 are omitted) |
+| `scripts/lib/tagging/verify_artists.py` | Confirms each work's scraped `artist` against MusicBrainz (not a grassiness signal; feeds `covering_artists`) |
+| `docs/data/verified_artists.json` | Cache: `{work_id: {name, year}}` for confirmed scraped artists |
 
 All four are tracked in git so CI never needs MusicBrainz — verified with
 `git ls-files docs/data/bluegrass_*.json docs/data/grassiness_scores.json`.
@@ -173,10 +175,17 @@ What the score actually feeds today:
 
 1. **Covering artists** (`tag_enrichment.py`, the ONLY consumer in the build):
    `load_grassiness_scores()` supplies each row's `covering_artists` — which
-   bluegrass artists recorded the song, sorted by tier/prominence — for search
-   (`covering:`) and for display under the title. It does **not** add tags.
-   Ambiguous titles are skipped unless the song's own artist is a known
-   bluegrass artist, so the wrong legend isn't attributed to the wrong song.
+   bluegrass artists recorded the song — plus a parallel `covering_years`
+   (earliest release year, `null` when unknown), sorted by first recording
+   year, then tier/prominence. It does **not** add tags. Ambiguous titles are
+   skipped unless the song's own artist is a known bluegrass artist, so the
+   wrong legend isn't attributed to the wrong song.
+   `merge_covering_artists()` also adds the work's scraped `artist` when
+   `verified_artists.json` confirms MusicBrainz has that artist recording the
+   title (F9, 2026-10-26). The frontend shows the list as "Recorded by: Bill
+   Monroe (1947), …", each a YouTube search, and searches it; an unconfirmed
+   scraped `artist` is never shown or searched. Refresh with
+   `./scripts/utility refresh-musicbrainz`.
 2. **Analysis** — `analytics/grassiness_analysis.ipynb` and the
    `analytics/bluegrass-research/` scripts.
 

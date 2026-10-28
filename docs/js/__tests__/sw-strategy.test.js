@@ -67,7 +67,7 @@ describe('routeFor — same-origin app shell', () => {
     });
 
     it('falls back to the shell cache for anything else same-origin', () => {
-        expect(at(`${ORIGIN}/images/banjo.png`)).toEqual(SHELL_ROUTE);
+        expect(at(`${ORIGIN}/images/favicon-32.png`)).toEqual(SHELL_ROUTE);
     });
 });
 

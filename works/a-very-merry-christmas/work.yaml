@@ -1,10 +1,15 @@
 id: a-very-merry-christmas
 title: A Very Merry Christmas
+song: very-merry-christmas
+version: '2'
 artist: Buck Owens
 default_key: G
 tags:
 - JamFriendly
 - Modal
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

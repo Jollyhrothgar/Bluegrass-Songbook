@@ -1,5 +1,15 @@
 id: miners-prayer
 title: Miner’s Prayer
+song: miner-s-prayer
+version: '2'
+artist: Dwight Yoakam
+default_key: G
+tags:
+- ClassicCountry
+- JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -9,8 +19,3 @@ parts:
     source: bluegrass-lyrics
     source_url: https://www.bluegrasslyrics.com/song/miners-prayer/
     imported_at: '2026-02-08'
-tags:
-- ClassicCountry
-- JamFriendly
-default_key: G
-artist: Dwight Yoakam

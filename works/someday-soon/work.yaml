@@ -1,9 +1,14 @@
 id: someday-soon
 title: Someday Soon
+song: someday-soon-1
+version: '2'
 artist: Moe Bandy
 composers:
 - Ian Tyson
 default_key: G
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

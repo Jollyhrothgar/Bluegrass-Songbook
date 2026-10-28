@@ -1,9 +1,14 @@
 id: unchained-melody-1
 title: Unchained Melody
+song: unchained-melody
+version: '2'
 artist: The Righteous Brothers
 composers:
 - Hy Zaret and Alex North
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

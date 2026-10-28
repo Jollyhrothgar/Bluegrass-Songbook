@@ -1,9 +1,14 @@
 id: don-t-let-your-sweet-love-die
 title: Don't Let Your Sweet Love Die
+song: dont-let-your-sweet-love-die
+version: '2'
 artist: Ricky Skaggs
 composers:
 - Clarke VanNess and Zeke Clements
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

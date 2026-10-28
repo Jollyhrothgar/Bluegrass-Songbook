@@ -1,11 +1,16 @@
 id: i-wonder-where-i-ll-find-you-at-tonight
 title: I Wonder Where I'll Find You At Tonight
+song: i-wonder-where-ill-find-you-at-tonight
+version: '2'
 artist: Leona Williams
 composers:
 - Merle Haggard
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

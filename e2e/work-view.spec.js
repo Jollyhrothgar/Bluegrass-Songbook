@@ -5,22 +5,22 @@ import { test, expect } from '@playwright/test';
 
 test.describe('WorkView - Tablature', () => {
     test('opens work with tablature via legacy #song URL', async ({ page }) => {
-        // #song/{id} redirects to the unified #work page
+        // #song/{id} redirects to the song's own path
         await page.goto('/#song/foggy-mountain-breakdown');
 
         await expect(page.locator('#song-view')).toBeVisible({ timeout: 15000 });
-        await expect(page).toHaveURL(/#work\/foggy-mountain-breakdown/);
+        await expect(page).toHaveURL(/\/songs\/foggy-mountain-breakdown\/$/);
         await expect(page.locator('.song-title')).toContainText(/foggy mountain/i);
     });
 
     test('legacy slug redirects and part deep link renders tablature', async ({ page }) => {
-        // Legacy slug on purpose: angeline-the-baker redirects to
-        // angeline-baker (URL-stability promise); /banjo selects the part.
-        await page.goto('/#work/angeline-the-baker/banjo');
+        // Legacy slug on purpose: cripple-creek-1 was merged into
+        // cripple-creek (docs/data/redirects.json); /banjo selects the part.
+        await page.goto('/#work/cripple-creek-1/banjo');
         await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
 
         await expect(page.locator('.tablature-container').first()).toBeVisible();
-        await expect(page).toHaveURL(/#work\/angeline-baker/);
+        await expect(page).toHaveURL(/\/#work\/cripple-creek\/banjo$/);
     });
 
     test('tablature renders stave rows with notes', async ({ page }) => {

@@ -1,10 +1,16 @@
 id: wayfaring-stranger-1
 title: Wayfaring Stranger
+slug: wayfaring-stranger
 artist: Emmylou Harris
+composers:
+- Traditional
 default_key: Am
 tags:
 - Folk
 - Modal
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -17,5 +23,3 @@ parts:
     corrected_by: github:Jollyhrothgar
     corrected_at: '2026-08-07'
     correction_issue: 204
-composers:
-- Traditional

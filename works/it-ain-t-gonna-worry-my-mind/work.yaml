@@ -1,9 +1,14 @@
 id: it-ain-t-gonna-worry-my-mind
 title: It Ain't Gonna Worry My Mind
+song: it-aint-gonna-worry-my-mind
+version: '2'
 artist: George Jones
 composers:
 - Richard Leigh
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

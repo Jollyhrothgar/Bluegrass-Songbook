@@ -1,11 +1,15 @@
 id: you-haven-t-heard-the-last-of-me-1
 title: You Haven't Heard The Last Of Me
+slug: you-haven-t-heard-the-last-of-me
 artist: Moe Bandy
 composers:
 - Tom Snow and Eric Kaz
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

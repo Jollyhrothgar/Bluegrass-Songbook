@@ -1,5 +1,7 @@
 id: yours-love-1
 title: Yours Love
+song: yours-love
+version: '2'
 artist: Dolly Parton
 composers:
 - Harlan Howard
@@ -9,6 +11,9 @@ tags:
 - Bluegrass
 - Pop
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

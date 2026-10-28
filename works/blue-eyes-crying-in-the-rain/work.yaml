@@ -1,9 +1,14 @@
 id: blue-eyes-crying-in-the-rain
 title: Blue Eyes Crying in the Rain
+song: blue-eyes-cryin-in-the-rain
+version: '2'
 artist: Willie Nelson
 composers:
 - Fred Rose
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

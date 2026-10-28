@@ -1,5 +1,12 @@
 id: the-boat-of-love
 title: The Boat Of Love
+song: boat-of-love
+version: '2'
+composers:
+- James B. Smith
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -9,5 +16,3 @@ parts:
     source: bluegrass-lyrics
     source_url: https://www.bluegrasslyrics.com/song/the-boat-of-love/
     imported_at: '2026-02-08'
-composers:
-- James B. Smith

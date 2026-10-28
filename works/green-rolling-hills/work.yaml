@@ -1,9 +1,14 @@
 id: green-rolling-hills
 title: Green Rolling Hills
+song: green-rollin-hills
+version: '2'
 artist: Emmylou Harris
 composers:
-- Utah Phillips, Alice Gerrard, Hazel Dickens
+- 'Utah Phillips, Alice Gerrard, Hazel Dickens'
 default_key: C
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

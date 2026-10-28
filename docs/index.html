@@ -2,13 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Every relative URL below (and every fetch of data/…) resolves from
+         the site root, whatever path the app is showing: a song lives at
+         /songs/{song}/[{version}/] (build_song_pages.py writes this file
+         there, and as 404.html). Keep it first in <head>. -->
+    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="preconnect" href="https://ofmqlrnyldlmvggihogt.supabase.co" crossorigin>
     <title>Bluegrass Book</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-    <link rel="apple-touch-icon" href="images/icon-192.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="images/favicon-48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <!-- PWA: installable app + offline (js/pwa.js registers sw.js). The
          theme colour follows the theme's --bg so the OS window chrome does
          not fight the page. -->

@@ -1,6 +1,11 @@
 id: ginsing-sullivan
 title: Ginsing Sullivan
+song: ginseng-sullivan
+version: '3'
 tags: []
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

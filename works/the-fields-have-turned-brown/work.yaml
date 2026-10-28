@@ -1,5 +1,7 @@
 id: the-fields-have-turned-brown
 title: The Fields Have Turned Brown
+song: fields-have-turned-brown-the
+version: '2'
 artist: The Stanley Brothers
 composers:
 - Carter Stanley
@@ -7,6 +9,9 @@ default_key: C
 tags:
 - Bluegrass
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

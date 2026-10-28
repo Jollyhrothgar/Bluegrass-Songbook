@@ -1,5 +1,7 @@
 id: the-great-society
 title: The Great Society
+song: great-society
+version: '2'
 artist: Hank Thompson
 composers:
 - Hank Thompson and Bill Penix
@@ -8,6 +10,9 @@ tags:
 - ClassicCountry
 - JamFriendly
 - Modal
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

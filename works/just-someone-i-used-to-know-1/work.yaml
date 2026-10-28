@@ -1,5 +1,7 @@
 id: just-someone-i-used-to-know-1
 title: Just Someone I Used to Know
+song: just-someone-i-used-to-know
+version: '2'
 artist: Dolly Parton
 composers:
 - Jack Clement
@@ -9,6 +11,9 @@ tags:
 - Bluegrass
 - Pop
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

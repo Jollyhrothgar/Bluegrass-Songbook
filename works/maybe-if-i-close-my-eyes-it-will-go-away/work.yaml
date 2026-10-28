@@ -1,11 +1,16 @@
 id: maybe-if-i-close-my-eyes-it-will-go-away
 title: Maybe If I Close My Eyes (It Will Go Away)
+song: maybe-if-i-close-my-eyes
+version: '2'
 artist: Susan Raye
 composers:
 - Buck Owens
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

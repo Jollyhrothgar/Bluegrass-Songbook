@@ -1,11 +1,16 @@
 id: take-good-care-of-him
 title: Take Good Care of Him
+song: take-good-care-of-her
+version: '2'
 artist: Anita Carter
 composers:
 - Arthur Kent and Ed Warren
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

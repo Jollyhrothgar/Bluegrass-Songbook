@@ -1,11 +1,16 @@
 id: darling-days-1
 title: Darling Days
+song: darling-days
+version: '2'
 artist: Billy Walker
 composers:
 - Dallas Frazier/Sanger D. Shafer
 default_key: C
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

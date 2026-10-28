@@ -1,5 +1,7 @@
 id: rain-please-go-away
 title: Rain Please Go Away
+song: rain-please-go-away-1
+version: '2'
 artist: Dan Tyminski
 composers:
 - Del McCoury
@@ -7,6 +9,9 @@ default_key: G
 tags:
 - Bluegrass
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

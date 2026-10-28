@@ -1,5 +1,7 @@
 id: when-i-stop-dreaming-1
 title: When I Stop Dreaming
+song: when-i-stop-dreaming
+version: '2'
 artist: Emmylou Harris
 composers:
 - Ira Louvin and Charlie Louvin
@@ -7,6 +9,9 @@ default_key: C
 tags:
 - Folk
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

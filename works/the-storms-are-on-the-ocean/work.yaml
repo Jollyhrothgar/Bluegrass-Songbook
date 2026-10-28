@@ -1,11 +1,16 @@
 id: the-storms-are-on-the-ocean
 title: The Storms Are On The Ocean
+song: storms-are-on-the-ocean
+version: '2'
 artist: Connie Smith
 composers:
 - A.P. Carter
 default_key: G
 tags:
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

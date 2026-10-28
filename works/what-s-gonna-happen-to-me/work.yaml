@@ -1,5 +1,7 @@
 id: what-s-gonna-happen-to-me
 title: What's Gonna Happen To Me
+song: whats-gonna-happen-to-me
+version: '2'
 artist: Gene Autry
 composers:
 - Fred Rose and Gene Autry
@@ -7,6 +9,9 @@ default_key: C
 tags:
 - ClassicCountry
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

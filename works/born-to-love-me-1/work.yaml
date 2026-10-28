@@ -1,5 +1,7 @@
 id: born-to-love-me-1
 title: Born To Love Me
+song: born-to-love-me
+version: '2'
 artist: Roy Orbison
 composers:
 - Bob Morrison
@@ -8,6 +10,9 @@ tags:
 - Rockabilly
 - Pop
 - JamFriendly
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

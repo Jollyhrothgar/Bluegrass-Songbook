@@ -1,5 +1,13 @@
 id: mule-skinner-blues
 title: Mule Skinner Blues
+song: mule-skinner-blues-blue-yodel-no-8
+version: '2'
+composers:
+- Jimmie Rodgers
+- George Vaughn
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
@@ -10,6 +18,3 @@ parts:
     source_url: https://tabs.ultimate-guitar.com/tab/the-cramps/muleskinner-blues-chords-1873264
     imported_at: '2026-08-01'
     note: chords upgraded from bounty-hunt chart; previous lyrics-only sheet in lead-sheet.pre-bounty.pro.bak
-composers:
-- Jimmie Rodgers
-- George Vaughn

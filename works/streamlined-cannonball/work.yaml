@@ -1,6 +1,11 @@
 id: streamlined-cannonball
 title: Streamlined Cannonball
+song: streamline-cannonball
+version: '2'
 artist: Norman Blake
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro

@@ -1,6 +1,11 @@
 id: my-brown-eyed-darling
 title: My Brown-Eyed Darling
+song: my-brown-eyed-darlin
+version: '2'
 tags: []
+metadata_provenance:
+  source: song-seed
+  source_id: scripts/lib/seed_songs.py
 parts:
 - type: lead-sheet
   format: chordpro
