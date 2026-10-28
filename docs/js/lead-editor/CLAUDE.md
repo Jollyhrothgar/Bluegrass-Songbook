@@ -95,6 +95,13 @@ override: with it, iOS drew a second selection and handles over the native one.
   `visualViewport` resize/scroll; `.le-selbar-docked` wraps so every type is in view). The floating bar sat exactly where
   iOS draws its own Cut / Copy / Paste menu, which always wins: shown, but covered (triage). NOT verifiable in
   Playwright: whether iOS's form accessory bar (˄ ˅ ✓) is inside the visual viewport's shrink (if not, it covers the bar).
+- **The label menu and the undo toast fit the visible screen** (2026-10-28): `index.js::visibleArea()` = below the top band,
+  above the bottom band / keyboard (`visualViewport`) and, in Chords on a phone, between the magnifier and the docked picker.
+  `placeLabelMenu` opens the menu below the label; when it does not fit, the page first scrolls the label up to the top of
+  that area (before the menu listens for pointerdown, since a finger scroll closes it), and a menu still too tall scrolls
+  inside itself (`max-height`). It used to flip above, clamped to the WINDOW top, under the top band (types and label hidden).
+  The undo toast sits above that area's bottom, so in Chords it no longer covers the picker; only its Undo takes taps
+  (`.le-toast` is `pointer-events: none`). e2e: "the undo toast stands above the picker", "the section label menu on a phone".
 - Sections: a selection shows the section bar; `wrapSelectionAsSection`
   (`../visual-editor/wrap-section.js`) re-sections across boundaries (closes the
   section open at the start, drops boundaries inside, re-opens the rest with its

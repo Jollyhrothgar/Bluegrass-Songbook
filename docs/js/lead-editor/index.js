@@ -957,6 +957,22 @@ export function mountLeadEditor({ host, hooks = {} }) {
         } catch { view.focus(); showPasteHint(); }   // permission refused: the keyboard's own Paste still works
     }
 
+    /**
+     * What the user can actually see, in viewport px: below the top band, above the bottom band, the keyboard
+     * (the visual viewport) and, in Chords on a phone, above the docked picker. Toasts and the label menu fit in it.
+     */
+    function visibleArea() {
+        const vv = window.visualViewport;
+        const band = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--bottomband-h')) || 0;
+        let top = Math.max(topInset(), vv ? vv.offsetTop : 0) + DOCK_MARGIN;
+        let bottom = Math.min(vv ? vv.offsetTop + vv.height : window.innerHeight, window.innerHeight - band) - DOCK_MARGIN;
+        if (menu.isOpen && mode === 'chords' && menu.layout === 'split') {
+            if (menu.magnifier) top = Math.max(top, menu.parts.strip.getBoundingClientRect().bottom + DOCK_MARGIN);
+            bottom = Math.min(bottom, menu.parts.body.getBoundingClientRect().top - DOCK_MARGIN);
+        }
+        return { top, bottom };
+    }
+
     // ---- undo toast --------------------------------------------------------
     let toastEl = null;
     function undoToast(message) {
@@ -972,6 +988,8 @@ export function mountLeadEditor({ host, hooks = {} }) {
         btn.textContent = 'Undo';
         btn.addEventListener('click', () => { editor.undo(); toastEl?.remove(); toastEl = null; view.focus(); });
         toastEl.append(span, btn);
+        // stand clear of the docked chord picker (phones): over it, the toast hid the chords you tap next
+        toastEl.style.bottom = `${Math.round(window.innerHeight - visibleArea().bottom + 8)}px`;
         document.body.appendChild(toastEl);
         const mine = toastEl;
         setTimeout(() => { mine.remove(); if (toastEl === mine) toastEl = null; }, 5000);
@@ -1103,6 +1121,31 @@ export function mountLeadEditor({ host, hooks = {} }) {
         if (next === text) return;
         editor.change({ changes: diffChange(text, next) }, { userEvent: 'input.section' });
     }
+    /**
+     * Put the label menu where all of it can be seen: below the label, else above it. On a phone neither side fit (the
+     * menu is ~350px; it ran under the bottom band and off the screen), so when the menu does not fit below, the page
+     * scrolls the label up to the top of the visible area first; a menu still too tall scrolls inside itself.
+     * The scroll happens before the menu listens for pointerdown: a finger scroll would close it.
+     */
+    function placeLabelMenu(menuEl, anchorEl) {
+        const GAP = 6;
+        const w = menuEl.offsetWidth;
+        const h = menuEl.offsetHeight;
+        let { top, bottom } = visibleArea();
+        let r = anchorEl.getBoundingClientRect();
+        if (r.bottom + GAP + h > bottom || r.top < top) {
+            window.scrollBy({ top: r.top - top, behavior: 'instant' });
+            ({ top, bottom } = visibleArea());   // the top band may hide on the scroll
+            r = anchorEl.getBoundingClientRect();
+        }
+        const below = bottom - (r.bottom + GAP);
+        const above = r.top - GAP - top;
+        const room = Math.max(below >= h || below >= above ? below : above, 120);
+        menuEl.style.maxHeight = `${Math.round(room)}px`;
+        const shown = Math.min(h, room);
+        menuEl.style.left = `${Math.max(8, Math.min(r.left, window.innerWidth - w - 8))}px`;
+        menuEl.style.top = `${Math.round(below >= h || below >= above ? r.bottom + GAP : r.top - GAP - shown)}px`;
+    }
     function openLabelMenu(section, anchorEl) {
         closeLabelMenu();
         if (mode !== 'lyrics') return;
@@ -1151,11 +1194,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
         }
         btn('Delete section', () => { applyText(deleteSectionText(editor.getText(), line)); undoToast(`Deleted ${section.label}`); }, 'danger');
         document.body.appendChild(menuEl);
-        const r = anchorEl.getBoundingClientRect();
-        const w = menuEl.offsetWidth;
-        menuEl.style.left = `${Math.max(8, Math.min(r.left, window.innerWidth - w - 8))}px`;
-        const h = menuEl.offsetHeight;
-        menuEl.style.top = `${r.bottom + 6 + h > window.innerHeight ? Math.max(8, r.top - h - 6) : r.bottom + 6}px`;
+        placeLabelMenu(menuEl, anchorEl);
         labelMenu = menuEl;
         setTimeout(() => {
             const off = (ev) => { if (!menuEl.contains(ev.target)) { closeLabelMenu(); document.removeEventListener('pointerdown', off, true); } };
