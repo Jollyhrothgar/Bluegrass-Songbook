@@ -1,529 +1,146 @@
-# Banjo Hangout Source
+# Banjo Hangout and the Hangout network
 
-Banjo tablature from [Banjo Hangout](https://www.banjohangout.org/tab/).
+Banjo tablature from banjohangout.org, in TablEdit's TEF binary format. The
+code in `src/` also drives four sibling sites (fiddle-, flatpicker-,
+mandolin-, reso-hangout); they have no CLAUDE.md of their own, so this file
+covers all five. `sources/mandozine/` and `sources/tef-uploads/` reuse the same
+TEF parser.
 
-## Current Status
+Debugging TEF parsing (format reference, byte inspection, common rendering
+bugs): `.claude/skills/tab-debug/SKILL.md`. Drum tracks:
+`sources/banjo-hangout/TEF-FORMAT.md`.
 
-Counts here rot fast — ask the catalog instead. `tab_catalog.json` is the
-source of truth for how many tabs are known and what state each is in:
+## Pipeline commands
 
-```bash
-uv run python sources/banjo-hangout/src/batch_import.py stats            # banjo-hangout
-uv run python sources/banjo-hangout/src/batch_import.py stats --site fiddle-hangout
-```
-
-For scale: as of 2026-08-19 the banjo-hangout catalog held 3,973 tabs
-(3,504 `pending`, 248 `imported`, 117 `skipped`, 104 `converted`) — i.e.
-scanning has run far past the original tier 1-5 pilot.
-
-## Next Steps: Adding More Tunes
-
-### Expand to more priority tiers
+Every command except `convert-file` takes `--site` (default `banjo-hangout`; `choices` come from
+`SITES` in `src/site_config.py`, the authoritative site list).
 
 ```bash
-# Tier 6-10: Common session tunes (~47 more titles)
-uv run python sources/banjo-hangout/src/batch_import.py scan --priority --max-priority 10
-
-# Download and convert new tabs
-uv run python sources/banjo-hangout/src/batch_import.py download
-uv run python sources/banjo-hangout/src/batch_convert.py
-
-# Rebuild search index
-./scripts/bootstrap --quick
+B=sources/banjo-hangout/src
+uv run python $B/batch_import.py priorities                       # tier sizes
+uv run python $B/batch_import.py scan --priority --max-priority 5 # catalog matching tunes only
+uv run python $B/batch_import.py download --limit 50
+uv run python $B/batch_import.py convert --limit 50               # TEF -> OTF, writes conversion_log.json
+uv run python $B/batch_import.py import --limit 50 [--dry-run] [--no-new-works]
+uv run python $B/batch_import.py stats --site mandolin-hangout   # catalog counts by status
+uv run python $B/batch_import.py convert-file IN.tef [OUT.json]  # one file, no catalog
+./scripts/bootstrap --quick                                       # rebuild index afterwards
 ```
 
-### Priority tier reference
+- Counts drift; `stats` and `priorities` are the source of truth, not this file.
+- `scan` without `--priority` crawls the whole listing. Use `--priority`: the
+  site has about 9,000 tabs and we only want ones matching tunes we care about.
+- Scraping limit: `scraper.py` waits 1.5 s between requests and caches listing
+  HTML in `raw/` (gitignored). Keep both.
+- `import --no-new-works` only adds arrangements to existing works. Use it for
+  arrangement-promotion passes, where minting a work needs title review.
 
-Tiers 1-20 come from `sources/tunearch/src/tune_list.py`'s `TIER N` comments;
-25 and 30 are computed from `works/` (see `build_priority_list` in
-`src/priority_list.py`). Per-tier counts move with the corpus — get them
-live with `batch_import.py priorities`:
+### Priority tiers
 
-| Tier | Description |
-|------|-------------|
-| 1-20 | Curated tune list, tiered (essential jam tunes → extended standards) |
-| 25 | Existing works already tagged Instrumental |
-| 30 | Any work with no tab for this site's instrument |
+`src/priority_list.py` ranks tabs by title (it normalizes "- banjo tab",
+"(arr.)" etc.). Tiers 1-20 come from the `TIER N` comments in
+`TUNE_LIST` in `sources/tunearch/src/tune_list.py` (used only as a curated
+tune list; nothing is imported from tunearch). Tier 25 is works already tagged
+Instrumental; tier 30 is any work with no tab for the site's instrument.
+`--max-priority N` catalogs only tabs at tier N or better.
 
-### V3 format support
-
-V2 and V3 both parse (fix-it A12, 2026-10-17). Routing and the V3 note
-pointer follow TablEdit's own loaders: byte 205 >= 10 means V3, and V3 notes
-start at the u32 at 0x3C (the old 'debt' search missed 77 of 88 V3 files).
-Tabs skipped as "Empty notation" before that date can be re-converted.
-Known remaining mismatches with TablEdit are listed under A13 in
-`docs/plans/2026-09-30-fix-it-list.md`.
-
-## Multi-Site (Hangout Network)
-
-The pipeline in `src/` is shared by the sibling Hangout sites. Every site
-is one entry in `src/site_config.py` (`SITES`), and every CLI takes
-`--site` (default `banjo-hangout`, so existing invocations are unchanged):
-
-```bash
-uv run python sources/banjo-hangout/src/batch_import.py stats --site mandolin-hangout
-uv run python sources/banjo-hangout/src/batch_convert.py --site flatpicker-hangout
-```
-
-Five sites are registered (`SITES` in `src/site_config.py` is authoritative;
-the `--site` flag's `choices` are generated from it):
+## Sites
 
 | Site | base_url | fallback_instrument | Data dir |
 |------|----------|---------------------|----------|
-| banjo-hangout | https://www.banjohangout.org | banjo | `sources/banjo-hangout/` |
-| mandolin-hangout | https://www.mandohangout.com (mandolinhangout.com 301s here) | mandolin | `sources/mandolin-hangout/` |
-| flatpicker-hangout | https://www.flatpickerhangout.com | guitar | `sources/flatpicker-hangout/` |
-| fiddle-hangout | https://www.fiddlehangout.com | fiddle | `sources/fiddle-hangout/` |
-| reso-hangout | https://www.resohangout.com | dobro | `sources/reso-hangout/` |
+| banjo-hangout | banjohangout.org | banjo | `sources/banjo-hangout/` |
+| mandolin-hangout | mandohangout.com | mandolin | `sources/mandolin-hangout/` |
+| flatpicker-hangout | flatpickerhangout.com | guitar | `sources/flatpicker-hangout/` |
+| fiddle-hangout | fiddlehangout.com | fiddle | `sources/fiddle-hangout/` |
+| reso-hangout | resohangout.com | dobro | `sources/reso-hangout/` |
 
-Each site owns its `tab_catalog.json`, `raw/`, `downloads/` and `parsed/`
-— tab ids are only unique within a site. `base_url` is `Optional`, and
-scanning a site whose `base_url` is still `None` fails with a clear error
-(`require_base_url`); every currently registered site has one set.
+- Each site owns its `tab_catalog.json`, `raw/`, `downloads/`, `parsed/` and
+  `conversion_log.json`. Tab ids are only unique within a site.
+- `downloads/*.tef` are tracked in git (small, and the parsers are frozen);
+  `raw/` and `conversion_log.json` are gitignored and exist only after a run.
+- Catalog status values: `pending`, `downloaded`, `converted`, `matched`
+  (attached to an existing work), `imported` (new work), `skipped` (non-TEF or
+  rejected), `error`.
 
-**Instrument detection**: the part's `instrument:` and the OTF filename
-come from the converted OTF's tracks (`site_config.resolve_instrument`),
-not from the site — the first melodic track wins, a file that doesn't
-lead with the site's instrument and has 2+ melodic tracks is `ensemble`,
-and detection failure falls back to the site's instrument. So a banjo tab
-with guitar/bass backup stays `banjo.otf.json`, while a tenor-banjo or
-guitar arrangement posted on Banjo Hangout lands as
-`tenor-banjo.otf.json` / `guitar.otf.json`.
+## Import rules that are not obvious from the code
 
-**Multiple arrangements per instrument**: the duplicate check is on the
-arrangement's identity — its `source_id` — not on the instrument. A work
-can hold several banjo tabs (the frontend groups instrument →
-arrangement → tracks). The first arrangement of an instrument keeps the
-bare `{instrument}.otf.json`; alternates land as
-`{instrument}-{source_id}.otf.json`. Which one shows by default is
-editorial: `./scripts/utility curate pin-tab <work> <instrument>
-<source_id>`, defaulting to the first part listed in work.yaml.
+- Instrument comes from the converted OTF's tracks
+  (`site_config.resolve_instrument`), not from the site. First melodic track
+  wins; a file with 2+ melodic tracks that does not lead with the site's
+  instrument is `ensemble`; detection failure falls back to the site's
+  instrument. A tenor-banjo tab posted on Banjo Hangout lands as
+  `tenor-banjo.otf.json`.
+- Known gap: `tef_parser` defaults an instrument-less TEF to a 5-string banjo
+  track, so such files import as `banjo` on any site. Fixing it means giving
+  `tef_to_otf` a default-instrument argument; deferred because the parser is
+  locked by golden tests against the JS port (`docs/js/tef-import/`).
+- Strict-instrument gate (`works_importer.py`): on the four sibling sites a
+  conversion imports only if the detected instrument is the site's own or
+  `ensemble`. Otherwise a dobro tab written as `6-string-guitar` would be filed
+  under guitar. Banjo Hangout is exempt because it genuinely hosts tenor-banjo,
+  guitar and ensemble arrangements.
+- Several arrangements per instrument are allowed. The duplicate check is on
+  `source_id`, not instrument. The first arrangement is `{instrument}.otf.json`;
+  later ones are `{instrument}-{source_id}.otf.json`. The default shown is
+  editorial: `./scripts/utility curate pin-tab <work> <instrument> <source_id>`,
+  otherwise the first part in work.yaml.
+- "Does this title already have a work?" is `works_importer.find_matching_work`,
+  backed by `scripts/lib/dedup_scorer.WorkCorpus`. Tab imports have no lyrics,
+  so titles must score at least `TITLE_ONLY_MIN` (0.95). `batch_import` builds
+  one `WorkCorpus` per run; do not build one per tab (it rereads every
+  work.yaml). `_find_matching_work_legacy` is kept only to log disagreements
+  (`[dedup-scorer] match differs...`). Tests: `tests/test_works_importer_dedup.py`.
+- `batch_convert.py` duplicates part of `works_importer.py` (its own slugs and
+  YAML template, no curation guard). It survives because it alone writes the
+  `tef_*` provenance fields and `conversion_log.json`. Prefer
+  `works_importer` for new logic.
+- Multi-instrument files import as `instrument: ensemble`
+  (`ensemble.otf.json`); the frontend shows a track mixer.
 
-**Title matching is scorer-backed (#192 / #226)**: `works_importer.
-find_matching_work` decides "does this tab title already have a work?" via
-`scripts/lib/dedup_scorer.WorkCorpus`, not its own string equality. Tab
-imports never carry lyrics, so the scorer always takes its instrumental /
-no-lyrics path: title similarity must clear `TITLE_ONLY_MIN` (0.95) before
-two titles count as the same tune — much stricter than exact-match, but
-also catches near-misses the old equality check minted duplicate works
-for (`Soldier's Joy` vs `Soldiers Joy`, a trailing `- Trad.` attribution).
-`batch_import` builds ONE `WorkCorpus` for the whole run and threads it
-through every tab — never reconstructed per file, which would re-read
-every `work.yaml` title on every call. The pre-#226 matcher is kept as
-`_find_matching_work_legacy` purely so disagreements between the two get
-logged (`[dedup-scorer] match differs...`) instead of happening silently;
-it is no longer the decision. Tests: `tests/test_works_importer_dedup.py`.
+## Metadata
 
-**Strict-instrument gate**: on the sibling sites (mandolin/flatpicker/
-fiddle/reso) a conversion only imports when the detected instrument is the
-site's own or `ensemble` — otherwise a reso dobro written as
-`6-string-guitar`, or an instrument-less TEF defaulting to banjo, would be
-filed under the wrong instrument. Banjo Hangout is exempt: it genuinely
-hosts tenor-banjo, guitar and ensemble arrangements.
-
-`import --no-new-works` restricts a run to enriching existing works (used
-by arrangement-promotion passes, where minting new works needs its own
-title/curation review).
-
-Known gap: `tef_parser` defaults an instrument-less TEF to a 5-string
-banjo track, so such files import as `banjo` on any site. Teaching
-`tef_to_otf` a default-instrument argument is deferred (the parser is
-locked by golden tests against the JS port).
-
-## Overview
-
-- **Content**: 9,270+ banjo tabs in TEF (TablEdit) format
-- **Metadata**: genre, style, tuning, key, difficulty
-- **Attribution**: All tabs include source_url and author from Banjo Hangout
-
-## Structure
-
-```
-banjo-hangout/
-├── src/
-│   ├── tef_parser/           # TEF binary parser - REUSABLE for other instruments
-│   │   ├── reader.py         # Binary file reader (V2 and V3 formats)
-│   │   └── otf.py            # TEF to OTF conversion
-│   ├── site_config.py        # Per-site config + instrument resolution
-│   ├── scraper.py            # Hangout HTTP client
-│   ├── catalog.py            # Tab catalog management (one per site)
-│   ├── converter.py          # TEF → OTF pipeline
-│   └── batch_import.py       # CLI for batch operations (--site)
-├── raw/                      # Cached HTML (gitignored)
-├── downloads/                # Downloaded TEF files (gitignored)
-└── tab_catalog.json          # Tracks fetch/conversion status
-```
-
-## Usage
-
-```bash
-# Priority scan: fetch only tabs matching our curated tune list (tier 1-5 = essential)
-uv run python sources/banjo-hangout/src/batch_import.py scan --priority --max-priority 5
-
-# Download pending TEF files
-uv run python sources/banjo-hangout/src/batch_import.py download --limit 50
-
-# Convert TEF → OTF with validation and logging
-uv run python sources/banjo-hangout/src/batch_import.py convert --limit 50
-
-# Import converted tabs to works/ directory
-uv run python sources/banjo-hangout/src/batch_import.py import --limit 50
-
-# Show catalog statistics
-uv run python sources/banjo-hangout/src/batch_import.py stats
-
-# Show priority list statistics
-uv run python sources/banjo-hangout/src/batch_import.py priorities
-```
-
-## Priority-Based Scanning (Avoiding 9000+ Tab Full Scrape)
-
-Banjo Hangout has 9,270+ tabs. Instead of downloading everything, we prioritize:
-
-### Priority Tiers
-
-| Tier | Source | Notes |
-|------|--------|-------|
-| 1-5 | Curated tune list | Essential jam tunes |
-| 6-10 | Curated tune list | Common session tunes |
-| 11-20 | Curated tune list | Extended standards |
-| 25 | Existing instrumental works | Works already tagged Instrumental |
-| 30 | All works needing a tab for this site's instrument | Any work without that tab part |
-
-Per-tier counts and which tiers have actually been scanned change with every
-run — read them from `batch_import.py priorities` / `stats`, not from here.
-
-### Curated Tune List
-
-The priority list references `sources/tunearch/src/tune_list.py` as a **reference for what tunes are important** - this is NOT importing from tunearch (which handles ABC notation). It's just using the same curated list (`TUNE_LIST`, 206 entries as of 2026-08-19) of popular bluegrass/old-time instrumentals to guide which BH tabs to download first.
-
-### Priority Workflow
-
-```bash
-# 1. Show what's prioritized
-uv run python sources/banjo-hangout/src/batch_import.py priorities
-
-# 2. Scan with priority filter (only essential tier 1-5 tunes)
-uv run python sources/banjo-hangout/src/batch_import.py scan --priority --max-priority 5
-
-# 3. Or scan wider (tiers 1-10 = common jam tunes)
-uv run python sources/banjo-hangout/src/batch_import.py scan --priority --max-priority 10
-
-# 4. Download and convert as usual
-uv run python sources/banjo-hangout/src/batch_import.py download
-uv run python sources/banjo-hangout/src/batch_import.py convert
-uv run python sources/banjo-hangout/src/batch_import.py import
-```
-
-### Matching Logic
-
-- `priority_list.py` normalizes titles (removes "- banjo tab", "(arr.)", etc.)
-- Matches BH tab titles against priority titles
-- Only adds to catalog if priority <= max-priority threshold
-
-## Metadata Pipeline
-
-### Scraped from Banjo Hangout Page
-
-The scraper extracts metadata from each tab's listing:
-
-| Field | Example | Notes |
-|-------|---------|-------|
-| title | "Red Haired Boy" | Display title |
-| author | "schlange" | BH username who uploaded |
-| genre | "Bluegrass" | → maps to tags |
-| style | "Scruggs" | → maps to tags |
-| key | "G" | Musical key |
-| tuning | "Open G" | Banjo tuning |
-| difficulty | "Intermediate" | Skill level |
-
-### TEF File Metadata
-
-The TEF binary also contains metadata (often lower quality):
-
-| Field | Notes |
-|-------|-------|
-| v2_title | Often has null bytes, file extensions, or just numbers |
-| v2_composer | Rarely populated |
-| time_signature | e.g., "2/4", "4/4" |
-| format_version | "v2" or "v3" |
-
-### Fallback Strategy
-
-When creating work.yaml, use this priority:
-
-1. **Title**: Prefer BH scraped title, fall back to TEF title if BH is empty
-2. **Author**: Always use BH author (TEF rarely has composer)
-3. **Tags**: Map BH genre/style to songbook tags
-4. **Provenance**: Include both BH metadata and TEF metadata for debugging
-
-### Logging Parser Failures
-
-`batch_convert.py` creates `conversion_log.json`:
-
-```json
-{
-  "summary": {"success": 265, "skipped": 66, "error": 0},
-  "files": [
-    {"tef_id": "12345", "status": "success", "slug": "red-haired-boy", ...},
-    {"tef_id": "67890", "status": "skipped", "error": "Empty notation (0 events) - format: v3", ...}
-  ]
-}
-```
-
-Skipped reasons:
-- Empty notation (before 2026-10-17: V3 files without the 'debt' marker and untitled V2 files; both fixed)
-- Invalid title (nulls, just numbers, too short)
-
-## Conversion Logs & Failure Tracking
-
-### Where to find failures
-
-| File | Contents |
-|------|----------|
-| `sources/banjo-hangout/conversion_log.json` | Detailed conversion results with status, errors, metadata |
-| `sources/banjo-hangout/tab_catalog.json` | Catalog with status per tab (pending/downloaded/error) |
-
-### Viewing conversion failures
-
-```bash
-# Show all skipped files and reasons
-uv run python3 -c "
-import json
-log = json.loads(open('sources/banjo-hangout/conversion_log.json').read())
-print(f\"Summary: {log['summary']}\")
-print('\\nSkipped files:')
-for f in log['files']:
-    if f['status'] == 'skipped':
-        print(f\"  {f['tef_id']}: {f['error']}\")
-"
-
-# Show conversion errors (parsing failures)
-uv run python3 -c "
-import json
-log = json.loads(open('sources/banjo-hangout/conversion_log.json').read())
-for f in log['files']:
-    if f['status'] == 'error':
-        print(f\"{f['tef_id']}: {f['error']}\")
-"
-```
-
-### Log file structure
-
-```json
-{
-  "timestamp": "2026-01-04T...",
-  "summary": {"success": 100, "skipped": 24, "error": 0},
-  "files": [
-    {
-      "tef_id": "12345",
-      "status": "success",
-      "slug": "arkansas-traveler",
-      "title": "Arkansas Traveler",
-      "title_source": "catalog",
-      "tags": ["Instrumental", "Bluegrass", "Scruggs"],
-      "events": 222,
-      "tef_metadata": {"format_version": "v2", "time_signature": "2/4", ...},
-      "catalog_metadata": {"author": "Yohansen", "genre": "Bluegrass", ...}
-    },
-    {
-      "tef_id": "67890",
-      "status": "skipped",
-      "error": "Empty notation (0 events) - format: v3"
-    }
-  ]
-}
-```
-
-## Catalog Status Values
-
-- `pending` - Tab discovered, not yet downloaded
-- `downloaded` - TEF file downloaded
-- `converted` - Converted to OTF format
-- `matched` - Matched to existing work
-- `imported` - Created as new work
-- `skipped` - Non-TEF format or error
-- `error` - Conversion or import failed
-
-## Provenance Tracking
-
-All imported tabs maintain full provenance:
-
-```yaml
-parts:
-  - type: tablature
-    instrument: banjo
-    format: otf
-    file: banjo.otf.json
-    provenance:
-      source: banjo-hangout
-      source_id: '11059'             # BH tab detail id - REQUIRED for re-downloads
-      source_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=11059
-      author: "UserName"
-      difficulty: "Intermediate"     # optional, from the listing
-      tuning: "Standard Open G (gDGBD)"  # optional, from the listing
-      imported_at: "2025-01-03"
-```
-
-`source_id` is also the **arrangement identity**: it's what distinguishes
-two banjo tabs on one work, what the published
-`docs/data/tabs/{work}-{instrument}-{source_id}.otf.json` filename is keyed
-on, and what `curate pin-tab` names.
+- Title: the listing's title, falling back to the TEF's own title when the
+  listing has none (TEF titles are often null-padded, file names or bare
+  numbers; titles like that are skipped as "Invalid title").
+- Author: always the listing's uploader; TEF composer is rarely filled.
+- Tags: `map_to_tags` in `src/batch_convert.py` always adds `Instrumental`,
+  then maps listing genre and style through `DEFAULT_GENRE_TAG_MAP` and
+  `DEFAULT_STYLE_TAG_MAP` in `src/site_config.py` (a site may override).
+- Provenance in work.yaml (`source`, `source_id`, `source_url`, `author`,
+  optional `difficulty` and `tuning`, `imported_at`). `source_id` is the
+  arrangement identity: it keys the published
+  `docs/data/tabs/{work}-{instrument}-{source_id}.otf.json` and what
+  `curate pin-tab` names.
 
 ## Download URLs
 
-TEF files are hosted on `hangoutstorage.com`, not directly on banjohangout.org.
-Two filename shapes exist, and **neither number is the tab id**:
+TEF files live on `hangoutstorage.com`, not the Hangout site. Two filename
+shapes exist and neither number is reliably the tab id:
 
 ```
 older:  .../storage/tabs/{letter}/{slug}-{attachment_id}.tef
 newer:  .../storage/tabs/{letter}/tab-{slug}-{tab_id}-{timestamp}.tef
 ```
 
-⚠️ **The number in an older-shape filename is a per-file ATTACHMENT id in a
-different namespace than the tab id.** Tab `10545` ("Arkansas Traveler")
-ships `arkansas_traveller-426.tef`, `arkansas_traveler-428.gtp` and
-`arkansas_traveller-427.mid` — three attachment ids under one tab. Across
-the banjo-hangout catalog, attachment ids run 29–2999 while tab ids run
-10216–29391; they never collide.
+The number in an older-shape name is a per-file attachment id in a different
+namespace (tab 10545 ships `arkansas_traveller-426.tef` plus a `.gtp` and
+`.mid` with their own attachment ids). So never derive a tab id from a
+filename, and never template a download URL: scrape it from the detail page
+href. The converter records its id in the OTF's `x_source.source_id`, and
+`build_works_index`'s provenance gate compares that with work.yaml's
+`provenance.source_id`.
 
-Example:
-- Tab detail id: 11059 (from the listing href `browse.asp?m=detail&v=11059`)
-- Title: "Red Haired Boy"
-- URL: `https://www.hangoutstorage.com/banjohangout.org/storage/tabs/r/red_haired_boy-1687.tef` (1687 = attachment id)
+Files in `downloads/` are `{id}.tef` (manual) or `{id}_tef.tef` (scraper).
 
-So **never re-derive a tab id from a filename**. The converter records the id
-it used in the OTF's `x_source.source_id`, and `build_works_index`'s
-provenance gate compares that against `work.yaml`'s
-`provenance.source_id` — two recorded ids, no regex. Download URLs must
-always be scraped from the detail page href, never templated.
+## Parser notes not covered by the tab-debug skill
 
-## File Naming in downloads/
-
-Downloaded files use two naming patterns:
-- `{id}.tef` - manual downloads
-- `{id}_tef.tef` - batch downloads from scraper
-
-## Debugging TEF Parsing Issues
-
-**See skill**: `.claude/skills/tab-debug/SKILL.md` for comprehensive debugging workflow including:
-- TEF binary format reference (V2 vs V3, marker types, effect bytes)
-- Step-by-step debugging process
-- Common issues and fixes (empty notation, wrong articulations, ties, triplets)
-- Code snippets for inspecting raw bytes
-
-### Recent Parser Fixes (2026-01)
-
-| Issue | Fix | File |
-|-------|-----|------|
-| Fingering annotations (0x0c) added to fret | Exclude effect2=0x0c from high-fret calculation | reader.py:1013 |
-| Liberty D-tuning parsed as gDGBD | Parse tuning note names from TEF text as fallback | reader.py |
-| Slides showing as hammer-ons | Check effect1=0x03 before 0x01 | otf.py |
-| Slurs not rendering for close notes | Fixed slur rendering for closely-spaced notes | tablature.js |
-
-### Percussion (drum) tracks
-
-Many TablEdit arrangements — MandoTom2's especially — carry a drum track
-alongside the melodic ones. It is detected **structurally** — V2: `u16 @
-track_record+6 == 98` (`reader.py` `_PERCUSSION_FLAG`); V3: bit 7 of
-`track_record+4` (TablEdit's V3 loader, fix-it A13) — never from the
-track name: TablEdit lets the name lie, and mandolin-hangout 2613's drum
-track is literally named `Guitar Standard`.
-
-A flagged track's 8 "tuning" bytes are drum-kit staff-line assignments, so
-the `96 - b` pitch formula must NOT run on them. Doing so used to fabricate
-a tuning (`C#4-D#4-F#3-D4-A3-C#3-F3-G#2`), which the renderer drew as an
-8-line stave and the player sounded as arbitrary guitar notes. Flagged
-tracks now convert to:
-
-```json
-{"id": "percussion", "instrument": "percussion", "tuning": [],
- "capo": 0, "role": "percussion", "percussion": true, "lines": 8}
-```
-
-The frontend keeps them out of the mixer, playback and the editor
-(`docs/js/renderers/otf-tracks.js`), and `build_works_index`'s `tracks`
-count excludes them. The track IS shown on the song page — greyed out,
-with a "drum notation is in progress" note — rather than hidden, because
-we can detect a drum track reliably but cannot yet say which drum each
-staff line means (see below). Notation is preserved, so a real drum
-renderer / kit playback can pick it up later without reconverting.
-
-#### What the line→drum mapping is NOT (verified 2026-08-02)
-
-Confirmed against TablEdit itself (its track dialog shows **"Drum Tab"**
-checked and **MIDI Channels 10-10** for a flagged track, so the `+6 == 98`
-detection is semantically right). Ground truth came from TablEdit MIDI
-exports of gold-rush 2927 (8 lines) and big-sciota 23579 (3 lines), each
-matching our OTF note-for-note (786/786 notes over 285 chords for 2927).
-
-Two hypotheses are **falsified** — don't re-try them:
-
-1. **The `+20` bytes are not the drum assignment.** They decode to
-   plausible GM drum names, which makes them *look* right. But both files
-   carry bytes `43` and `52` on used lines while their MIDI produces
-   different drums ({36,41,43} vs {32,41}); and no 8-byte window anywhere
-   in 2927 contains all four drums it actually plays ({36,41,43,51}).
-2. **`f` is not the drum selector.** In 2927 lines 1 and 2 have different
-   `f` (2 and 0) but the same drum (GM 51); in 23579 lines 2 and 3 share
-   `f = 0` but produce different drums.
-
-The staff line decides, and that mapping is not in the data we parse.
-That two distinct lines map to the *same* drum argues against a simple
-per-line vector and toward something derived — a fixed drum-tab template
-by line count (an app preference, not in the file), or the track's MIDI
-kit ("TR-808 Set" on 2927) remapping. Unresolved: whether it varies per
-file at all.
-
-`drum_kit.json` (beside `reader.py`) holds TablEdit's own 51-drum table —
-GM note → name, tab symbol, staff position, notehead — scraped from the
-track dialog's Configuration tab. It's what a renderer will need once the
-line→drum mapping is found. Next lead: TuxGuitar's TablEdit importer,
-which already validated our track-record layout.
-
-### Multi-Track Ensemble Support
-
-Some TEF files have multiple instruments (guitar, bass, mandolin, banjo). These are imported with `instrument: ensemble`:
-
-```yaml
-parts:
-  - type: tablature
-    instrument: ensemble  # Not just "banjo"
-    format: otf
-    file: ensemble.otf.json
-```
-
-The frontend shows a **track mixer** for selecting which instruments to display/solo.
-
-## Tag Mapping
-
-### Genres
-| Banjo Hangout | Songbook Tag |
-|---------------|--------------|
-| Bluegrass | Bluegrass |
-| Old-Time | OldTime |
-| Folk | Folk |
-| Gospel | Gospel |
-| Blues | Blues |
-
-### Styles
-| Banjo Hangout | Songbook Tag |
-|---------------|--------------|
-| Scruggs | Scruggs |
-| Melodic | Melodic |
-| Clawhammer | Clawhammer |
-
-## Rate Limiting
-
-- 1.5 second delay between requests
-- Respectful User-Agent header
-- Cached HTML to avoid re-fetching
-
-## Related Sources
-
-The same pipeline already drives the other Hangout sites (all registered in
-`src/site_config.py`, all reachable via `--site`):
-- Mandolin Hangout
-- Flatpicker Hangout
-- Fiddle Hangout
-- Reso Hangout
+- V2 and V3 both parse. Routing follows TablEdit's loaders: byte 205 >= 10
+  means V3, and V3 notes start at the u32 at 0x3C. Remaining mismatches with
+  TablEdit are listed under fix-it item A13 in
+  `docs/plans/2026-09-30-fix-it-list.md`.
+- "Empty notation (0 events)" skips are parser failures to investigate, not
+  empty files. Inspect with `conversion_log.json` (`status: skipped|error`,
+  `error` text) in the site's data dir.
+- The Python parser is the oracle for the in-browser JS port. After any
+  legitimate parser change, regenerate the golden fixture
+  (`docs/js/tef-import/__fixtures__/gen_golden.py`, see the tab-debug skill).

@@ -1,191 +1,42 @@
 # Classic Country Parser
 
-Converts HTML song files from classic-country-song-lyrics.com to ChordPro format.
+Converts HTML pages saved from classic-country-song-lyrics.com into ChordPro.
 
-**Stats**: 17,122 successful / 17,381 total (98.5% success rate)
+Status: finished import, parser frozen. 17,053 works cite `source: classic-country`
+(`grep -rl "source: classic-country" works/*/work.yaml | wc -l`). `raw/` (17,382
+HTML files) and `parsed/` (17,122 `.pro`) are both tracked in git. About 260 pages
+matched no HTML pattern and were never parsed (won't fix). Since 2026-07-31
+`works/` is authoritative and nothing re-parses into it, so a parser change no
+longer reaches the site. Fix individual songs in `works/*/` instead.
 
-## Files
+## Commands
 
-```
-src/
-├── parser.py           # Main parser (all logic here)
-├── batch_process.py    # Batch processing with threading
-└── regression_test.py  # Before/after comparison testing
-```
-
-## Quick Commands
-
-These are the source-local wrappers under `sources/classic-country/scripts/`,
-NOT the repo-root `scripts/`. Run them from the repo root by full path — the
-root `scripts/server` is the frontend dev server and has no `debug_viewer`,
-the root `scripts/utility` has no `batch_parse`, and there is no root
-`scripts/test` at all.
+The wrappers live in `sources/classic-country/scripts/`, not the repo-root
+`scripts/` (the root `server` is the frontend, the root `utility` has no
+`batch_parse`, and there is no root `test`). Run them from the repo root:
 
 ```bash
-# Debug a single file
-./sources/classic-country/scripts/test reparse songname
-
-# Run debug viewer (live parsing)
-./sources/classic-country/scripts/server debug_viewer
-# → http://localhost:8000
-
-# Run regression test
-./sources/classic-country/scripts/test regression --name my_fix
-
-# Batch re-parse all files
-./sources/classic-country/scripts/utility batch_parse
+./sources/classic-country/scripts/test reparse <songname>        # one song, with diff
+./sources/classic-country/scripts/test regression --name my_fix  # before/after over everything
+./sources/classic-country/scripts/utility batch_parse            # raw/ -> parsed/
+./sources/classic-country/scripts/server debug_viewer            # http://localhost:8000
 ```
 
-## Parser Architecture
+## Things the code doesn't make obvious
 
-### Three-Stage Pipeline
-
-```
-HTML → StructureDetector → ContentExtractor → ChordProGenerator → .pro
-```
-
-### 1. StructureDetector
-
-Identifies HTML pattern type:
-
-| Type | % | Pattern |
-|------|---|---------|
-| `pre_plain` | 59.7% | Plain text in `<pre>` tags |
-| `pre_tag` | 31.8% | `<pre>` with `<font>` tags for chords |
-| `span_br` | 8.4% | Courier New `<span>` elements with `<br>` |
-
-**Key method**: `detect_structure_type(soup) → str | None`
-
-### 2. ContentExtractor
-
-Pattern-specific parsing. Three methods:
-- `parse_pre_plain_structure(soup)`
-- `parse_pre_tag_structure(soup)`
-- `parse_span_br_structure(soup)`
-
-**Verse boundary detection** (critical logic):
-```python
-# 2+ consecutive blank lines = always verse boundary
-if blank_count >= 2:
-    start_new_paragraph()
-
-# Single blank + chord line = verse boundary
-elif ChordDetector.is_chord_line(next_line):
-    start_new_paragraph()
-
-# Single blank + lyrics = internal spacing (NOT boundary)
-```
-
-**Chord detection**: `ChordDetector.is_chord_line(line) → bool`
-- Checks if line is primarily chord symbols
-- Pattern: `[A-G][#b]?(?:maj|min|m|sus|dim|aug)?\d*(?:/[A-G][#b]?)?`
-
-**Repeat handling**: Parses `"Repeat #3"` or `"Repeat #4,5"` → creates `REPEAT_VERSE_N` markers
-
-### 3. ChordProGenerator
-
-Converts `Song` object to ChordPro string.
-
-**Key method**: `song_to_chordpro(song) → str`
-
-**Two-pass algorithm for repeats**:
-1. First pass: identify actual verses (skip repeat markers)
-2. Second pass: output verses, expanding `REPEAT_VERSE_N` markers
-
-**Chord insertion**: `_insert_chords_inline(lyrics, chords)`
-- Inserts `[chord]` at exact character positions
-- Sorts by position descending (insert right-to-left)
-
-## Data Structures
-
-```python
-@dataclass
-class Song:
-    title: str
-    artist: str
-    composer: str
-    source_html_file: str
-    song_content: SongContent
-
-@dataclass
-class SongContent:
-    paragraphs: List[Paragraph]
-    playback_sequence: List[int]
-
-@dataclass
-class Paragraph:
-    lines: List[SongLine]
-    section_type: Optional[str]  # 'verse', 'chorus', 'bridge'
-
-@dataclass
-class SongLine:
-    lyrics: str
-    chords: List[ChordPosition]
-    chords_line: Optional[str]  # For chord-only lines
-
-@dataclass
-class ChordPosition:
-    chord: str      # e.g., "G7"
-    position: int   # Character offset in lyric line
-```
-
-## Output Format
-
-```chordpro
-{meta: title Your Cheatin Heart}
-{meta: artist Hank Williams}
-{meta: writer Hank Williams}        # BUG: should be "composer" (issue #4)
-
-{start_of_verse: Verse 1}
-[G7]Your cheating [C]heart [C7]will make you [F]weep
-{end_of_verse}
-```
-
-## Known Issues
-
-| Issue | Status | Notes |
-|-------|--------|-------|
-| `{meta: writer}` should be `{meta: composer}` | GitHub #4 | Wrong field name |
-| 259 files fail to parse | Won't fix | HTML doesn't match any pattern |
-| "Tag:" directive | Low priority | Treated as lyrics |
-| End anchor edge cases | Mostly fixed | Sometimes captures footer |
-
-## Development Workflow
-
-1. **Make changes** to `parser.py`
-2. **Test immediately** with debug viewer (no rebuild needed):
-   ```bash
-   ./sources/classic-country/scripts/server debug_viewer
-   # Refresh browser to see changes
-   ```
-3. **Run regression test** before committing:
-   ```bash
-   ./sources/classic-country/scripts/test regression --name my_fix
-   ```
-4. **If clean**, batch re-parse:
-   ```bash
-   ./sources/classic-country/scripts/utility batch_parse
-   ```
-
-## Common Pitfalls
-
-1. **Don't break chord alignment** - Position mapping is critical
-2. **Test all three parsers** - Changes often need to apply to all patterns
-3. **Watch NavigableString vs Tag** - BeautifulSoup text nodes have `name=None`
-4. **Repeat directives are 1-indexed** - "Repeat #1" means first verse
-
-## Debugging Tips
-
-**Parser not detecting structure?**
-- Check if HTML has `<pre>` tags or Courier New spans
-- Look for chord patterns in the HTML
-
-**Verses merged incorrectly?**
-- Check blank line count between verses
-- Verify verse boundary detection rules
-
-**Chords misaligned?**
-- Check character positions in `ChordPosition` objects
-- Verify fixed-width assumption holds
-
-**Use debug viewer** at http://localhost:8000 for side-by-side HTML vs ChordPro comparison.
+- `parser.py` holds all the logic: `StructureDetector` picks one of three HTML
+  shapes (`pre_plain`, `pre_tag`, `span_br`), a per-shape extractor builds
+  paragraphs, and `ChordProGenerator` writes the `.pro`. A fix usually has to be
+  made in all three extractors.
+- Verse boundary: two or more blank lines always split; one blank line splits
+  only when a chord line follows; one blank before lyrics is spacing.
+- Repeat markers ("Repeat #3", "Repeat #4,5") are 1-indexed and expanded in a
+  second pass, so a repeat can refer to a verse later in the page.
+- Chord positions are character offsets into the lyric line, so the page must be
+  fixed-width. Check that before debugging alignment.
+- BeautifulSoup text nodes have `name=None`; tag-only checks skip them.
+- `protected.txt` (one song id per line) lists hand-corrected songs that
+  `batch_process.py` skips. It is also read by `scripts/lib/enrich_songs.py`.
+- - `src/` also holds one-off analysis scripts (`analyze_changes.py`,
+  `create_spot_check.py`, `select_outliers.py`, `quick_fix.py`, and similar).
+  They are not part of the pipeline.

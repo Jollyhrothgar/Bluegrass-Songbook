@@ -1,54 +1,27 @@
 # Tests (Python)
 
-pytest test suite for the build pipeline, parser, and work schema.
-
-## Running
-
-```bash
-uv run pytest          # Run all tests (verbose by default)
-uv run pytest -x       # Stop on first failure
-```
-
-## Configuration
-
-Defined in `pyproject.toml`:
-- Test directory: `tests/`
-- File pattern: `test_*.py`
-- Default flags: `-v` (verbose)
-
-## Test Files
-
-**This table is a partial map, not an inventory** — the suite is ~38 files and
-grows. List the current set with:
+pytest suite for the build pipeline, parsers and work schema. Config is in `pyproject.toml`
+(`testpaths = ["tests"]`, files `test_*.py`).
 
 ```bash
-find tests -name 'test_*.py' | sort
+uv run pytest                              # all tests
+uv run pytest -x                           # stop on first failure
+uv run pytest tests/test_curation.py -k name   # one file / one test
+find tests -name 'test_*.py' | sort        # the current set (about 50 files; don't trust a list here)
 ```
 
-A few landmarks:
+- `tests/parser/` covers the classic-country HTML parser (`test_detector.py`,
+  `test_integration.py`) and the TEF to OTF parser (`test_tef_*.py`). Fixtures for it are in
+  `tests/parser/fixtures/`; shared ones are in `tests/fixtures/` (path via the `fixtures_path`
+  fixture in `conftest.py`).
+- Two tests guard wiring that fails silently elsewhere. Do not delete them to make CI pass:
+  - `test_workflow_deploy_triggers.py`: every workflow that pushes to `main` must be listed in
+    `build.yml`'s `workflow_run` trigger, or its commits never deploy.
+  - `test_e2e_specs_use_fixtures.py`: every Playwright spec imports `test` from
+    `e2e/fixtures.js`, the backstop that mocks Supabase so specs cannot hit production.
+- The live contribution path (pending_songs to `works/`) is `test_process_pending.py` and
+  `test_works_writer.py`. `tests/test_dedup_scorer.py` (the duplicate-submission scorer) uses `tests/fixtures/dedup/` and
+  must stay in step with the JS mirror `docs/js/dedup-check.js`.
 
-| File | Tests |
-|------|-------|
-| `parser/test_detector.py` | HTML structure detection (pre_plain vs pre_tag formats) |
-| `parser/test_integration.py` | Full parsing pipeline: HTML → ChordPro |
-| `parser/test_tef_*.py` | TEF→OTF parsing: durations, ties, triplets, articulations, time signatures, anacrusis, … |
-| `test_add_placeholder.py` | CLI placeholder work creation |
-| `test_work_schema.py` | Work YAML round-trip serialization |
-| `test_grouping.py` | Song grouping/deduplication (simplify_chord, compute_group_id, fuzzy_group_songs) |
-| `test_process_pending.py` / `test_works_writer.py` | The live contribution path (pending_songs → works/) |
-| `test_dedup_scorer.py` | Per-submission duplicate check (fixtures in `tests/fixtures/dedup/`) |
-| `test_curation.py` / `test_index_outputs.py` | Curation registry and the split index/archive/.pro outputs |
-| `test_workflow_deploy_triggers.py` | Every workflow that pushes is listed in `build.yml`'s `workflow_run` |
-| `test_e2e_specs_use_fixtures.py` | Every Playwright spec imports `test` from `e2e/fixtures.js` (the Supabase mock backstop) |
-
-## Fixtures
-
-Defined in `conftest.py`:
-- `fixtures_path` - Points to test fixtures directory
-- `sample_html_pre_plain` - Sample HTML with plain pre blocks
-- `sample_html_pre_tag` - Sample HTML with tagged pre blocks
-
-## See Also
-
-- Frontend unit tests: `docs/js/__tests__/` (Vitest, run once with `npm test`; `npm run test:watch` to keep it running)
-- E2E tests: `e2e/` (Playwright, run with `npm run test:e2e`)
+Frontend unit tests are in `docs/js/__tests__/` (`npm test`, which exits;
+`npm run test:watch` does not). E2E tests are in `e2e/` (`npm run test:e2e`; Playwright starts its own server on port 8137).

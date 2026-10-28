@@ -1,1670 +1,209 @@
 # Frontend (docs/js)
 
-Single-page search application for the Bluegrass Songbook. Modularized into ES modules.
+A no-build single-page app of ES modules, served as-is from `docs/` (GitHub
+Pages). `index.html` loads `js/main.js`; `shell.js` builds the chrome. Subdirectory
+docs: `renderers/`, `otf-editor/` (tab editor), `lead-editor/` (lead-sheet
+editor), `visual-editor/` (model helpers it uses), `chord-explorer/`.
+Reference files next to this one, each opening with "read before touching X":
+`OFFLINE.md` (service worker, drafts, icons), `CORPUS.md` (index/archive/overlay
+loading, arrangements), `CONTRIBUTIONS.md` (submit/pending flows, sign-in
+return), `TOUR.md` (feature tour).
 
-## Files
-
-```
-docs/
-├── index.html          # Page structure, modals (chrome is built by js/shell.js)
-├── blog.html           # Redirect: the dev blog moved to mikebeaumier.com (G1)
-├── robots.txt / sitemap.xml # sitemap is GENERATED with songs/ (scripts/lib/build_song_pages.py)
-├── songs/{song}/[{version}/] # GENERATED: index.html + the pre-rendered chart (scripts/lib/build_song_pages.py)
-├── songs/index.html    # GENERATED: every song A–Z, the page that links Google to each one (G11)
-├── 404.html            # GENERATED: index.html as is — boots the app for a song path with no page (archived)
-├── manifest.webmanifest # PWA manifest (install, shortcuts, .tef/.otf.json file handlers)
-├── sw.js               # Service worker — a shell around js/sw-strategy.js
-├── js/
-│   ├── main.js         # Entry point, initialization, event wiring, routing
-│   ├── shell.js        # App shell: top band, bottom band, pill primitive
-│   ├── state.js        # Shared state (allSongs, currentSong, etc.)
-│   ├── corpus.js       # Corpus assembly: canon + on-demand archive + lean pending overlay
-│   ├── song-content.js # ChordPro on demand (data/songs/{id}.pro) + has_* flags
-│   ├── search-core.js  # Search logic, query parsing, filtering
-│   ├── work-view.js    # THE unified song page (openWork) — all routes land here
-│   ├── song-view.js    # Lead-sheet rendering helpers, ABC notation, list nav
-│   ├── song-controls.js # Pill builders: Key / Display / Info / Export
-│   ├── tab-controls-sheet.js # Phone: re-parents the tab band's non-transport controls into a ⚙ settings sheet
-│   ├── tab-edit-band.js # The SAME bottom band, re-bound to the live editor document (edit mode keeps its controls)
-│   ├── chords.js       # Transposition, Nashville numbers, key detection
-│   ├── tags.js         # Tag dropdown, filtering, virtual instrument tags/facets
-│   ├── title-match.js  # Song-title normalization (bounty board dedupe)
-│   ├── work-suggest.js # Not-found recovery: redirect deleted duplicates / suggest same-title works
-│   ├── lists.js        # User lists, favorites, multi-owner, Thunderdome
-│   ├── list-picker.js  # List picker popup component
-│   ├── editor.js       # Song editor shell (submit/dirty/return record, getText/setText), re-exports smart-paste pipeline
-│   ├── smart-paste.js  # Shared chord-sheet→ChordPro conversion (Raw + Visual paste)
-│   ├── dedup-check.js  # "This song already exists" scorer — MIRRORS scripts/lib/dedup_scorer.py
-│   ├── flags.js        # Unified feedback modal (song issues, bugs, general feedback)
-│   ├── add-song-picker.js # Add/request-a-song picker (also serves #request-song)
-│   ├── superuser-request.js # Super-user request modal and submission
-│   ├── tour.js         # Feature tour (G14): floating card + ring over the real controls (lazy)
-│   ├── tour-editor-demo.js # The tour's lyrics & chords demo: a song typed, sectioned, chorded in the real editor (lazy)
-│   ├── high-scores.js  # `#high-scores` leaderboard — renders `get_leaderboard()`; identities are resolved SERVER-side (no email/uuid ever reaches this file)
-│   ├── collections.js  # Landing page collection definitions
-│   ├── analytics.js    # Behavioral analytics tracking
-│   ├── telemetry.js    # telemetryEnabled(): visits/events are written only on bluegrassbook.com, never by automation
-│   ├── utils.js        # Shared utilities (escapeHtml, etc.)
-│   ├── pwa.js          # Service-worker registration, install prompt, .tef/.otf.json file open + drop
-│   ├── sw-strategy.js  # THE caching decisions (imported by ../sw.js and by its tests)
-│   ├── lazy-modules.js # URLs of every module NOT in the boot graph — precached by the SW (kept honest by a test)
-│   ├── delete-affordance.js # The one-line "instant / request / none" delete rule (split out of review-queue.js so the song page need not load the queue)
-│   ├── drafts.js       # IndexedDB drafts bucket + debounced editor autosave
-│   ├── drafts-view.js  # `#drafts` list (Open / Delete)
-│   ├── audio-unlock.js # iOS audio: SYNC resume inside the tap + ringer-switch escape (never await before calling it)
-│   ├── supabase-auth.js # Auth, cloud sync, voting
-│   ├── auth-return.js  # Return record: get back to the editor (route + text) after the Google redirect
-│   ├── renderers/      # Part renderers
-│   │   ├── index.js    # Renderer registry
-│   │   ├── chordpro.js # THE ChordPro renderer (parse + render, shared everywhere)
-│   │   ├── tablature.js # Tablature display
-│   │   ├── tab-player.js # Interactive tab player with playback
-│   │   ├── tab-ascii.js # ASCII tab format
-│   │   ├── otf-tracks.js # isPercussionTrack / pitchedTracks (shared filter)
-│   │   └── measure-timing.js # Measure timing helpers for playback
-│   ├── chord-explorer/ # Chord exploration tool (standalone)
-│   ├── lead-editor/    # THE lead-sheet editor: CodeMirror 6, Lyrics | Chords | ChordPro modes (own CLAUDE.md)
-│   ├── visual-editor/  # Pure model + helpers the editor still uses (ChordPro model, syllables, wrap-section)
-│   ├── otf-editor/     # Tablature editor
-│   └── __tests__/      # Vitest unit tests
-├── css/style.css       # Dark/light themes, responsive layout (theme is set pre-paint by an inline script in index.html head; initTheme/setTheme in main.js keep it and theme-color in step; abcjs is lazy-loaded by song-view.js loadAbcjs())
-├── posts/              # Blog posts (markdown)
-└── data/
-    ├── index.jsonl     # SEARCHABLE canon only, no ChordPro (`wc -l` it)
-    ├── archive.jsonl   # Pruned rows, same shape, lyrics truncated (ON DEMAND only)
-    ├── songs/{id}.pro  # Full ChordPro per work — fetched when a page opens
-    ├── posts.json      # Blog manifest (built by scripts/lib/build_posts.py)
-    └── bounty_decisions.json  # Wanted-list verdicts (built from
-                        # curation/bounty_decisions.yaml at index build)
-```
-
-## Quick Start
+## Commands
 
 ```bash
-./scripts/server        # Start at http://localhost:8080
+./scripts/server      # dev server (needs ./scripts/bootstrap once for docs/data/)
+npm test              # Vitest, once; `npm test -- tab-edit-band` runs one file
+npm run test:watch    # never exits; don't run it from an agent
+npm run test:e2e      # Playwright; starts its own server on 8137 (e2e/CLAUDE.md)
 ```
 
-## Architecture
+`__tests__/setup-webstorage.js` undoes Node 25's empty global `localStorage`
+shadowing jsdom's, so unit tests pass on any Node.
 
-### App Shell (`shell.js`)
+## Orientation
 
-All persistent chrome lives in the app shell — there is no sidebar, hamburger,
-quick-controls bar, or bottom sheet anymore:
+- `state.js`: reactive state. `subscribe(name, fn)` notifies a frame later
+  (`requestAnimationFrame`). `setCurrentView`, `setCurrentDetectedKey` and
+  `setDungeonMode` do nothing when the value is unchanged; never write a
+  redundant value to force a callback.
+- `corpus.js` builds `allSongs`; `song-content.js` reads charts (always
+  `getSongContent(song)`, never `song.content`); `work-view.js` is the song page.
+  Any path that cannot find an id awaits `window.ensureArchiveLoaded()` once
+  before showing "not found" (details in `CORPUS.md`).
+- `supabase-auth.js` is not an ES module: its whole surface is the
+  `window.SupabaseAuth` literal at the bottom
+  (`sed -n '/^window.SupabaseAuth = {/,/^};/p' docs/js/supabase-auth.js`). Keys
+  do not always match function names (`init:` exposes `initSupabase`).
+- Nothing calls the GitHub API from the browser. Anything reaching GitHub goes
+  through a Supabase edge function that holds the token.
 
-- **Top band** (`.app-topbar`): back button, brand, nav links, page title,
-  per-page action buttons, theme toggle, and an overflow (⋯) menu.
-  Pages declare their chrome with `setTopBar({ back, title, actions, overflow, navActive })`.
-- **Bottom band** (`.app-bottomband`): the one home for practice/playback
-  controls (tab player transport, track mixer, ABC controls). Mount content
-  with `setBottomBand(el)`; pass `null` to hide it. Its height is NOT a
-  constant — the phone tab strip is 65px, a wrapped desktop band is 88px —
-  so shell.js publishes the measured height as `--bottomband-h` on
-  `<html>` (ResizeObserver + on every `setBottomBand`). Anything stacked on
-  the band (drop-up popovers, the tab settings sheet, `.container`'s
-  bottom padding) offsets off that variable, never a literal.
-- **Collapsed tab band** (`tab-controls-sheet.js`): below a band width of
-  640px the band keeps Play / Stop / tempo / loop / ⚙ and the ⚙ sheet holds
-  everything else (size, key, layout, feel, count-in, metronome, mixer,
-  Edit). The controls are MOVED into the sheet, not rebuilt — the sheet
-  lives inside `.tab-controls`, so `controls.querySelector(...)` in
-  `setupTablaturePlayer` and the listeners it attached both survive.
-  Widening moves them back and deletes the sheet, so the wide DOM is
-  byte-identical to `createTablatureControls`' output.
-  **The width is the BAND's, not the window's**: the module observes
-  `.tab-controls` with a ResizeObserver and publishes its verdict as
-  `.is-narrow-band`, and the CSS asks the same question with
-  `@container tabband (max-width: 640px)` (`container-type: inline-size` on
-  `.app-bottomband`; the old `@media (max-width: 640px)` block stays as the
-  fallback). That is deliberate and load-bearing for tests: a collapsed band
-  is reachable by constraining the container, not only by shrinking the
-  viewport. The media query is still the SEED — `attachTabControlsSheet`
-  runs while the band is detached, where there is no width to measure —
-  and injecting a `media` object turns the observer off entirely, which is
-  how the unit tests drive one thing at a time.
-  Note that `container-type` does NOT make the band the containing block for
-  its `position: fixed` drop-ups in Chromium, so those still offset off
-  `--bottomband-h`, not `100%`.
-- **Pill primitive**: `pill(label, buildContent, opts)` returns a small
-  labeled button that opens a popover. All song-page controls are pills.
-- **Auto-hiding chrome** (`setChromeAutoHide(on)`, enabled on song pages):
-  the top band hides as you scroll down (`body.chrome-hidden`, 4px peek
-  strip) and returns on scroll-up, hover, tapping the strip, or reaching
-  the top. There is no focus mode — immersion is automatic.
+## App shell (`shell.js`)
 
-### Unified Song Page (`work-view.js`)
+- `setTopBar({back, title, actions, overflow, navActive})` declares a page's top
+  band; `setBottomBand(el)` mounts practice/playback controls (`null` hides);
+  `pill(label, buildContent, opts)` is the labeled popover button all song-page
+  controls use (built in `song-controls.js`; the Arrangement pill is in
+  work-view.js). `setChromeAutoHide(true)` hides the top band while scrolling
+  down on song pages (`body.chrome-hidden`); there is no focus mode.
+- The bottom band's height varies (it wraps on narrow windows and the tab band
+  collapses on phones), so `shell.js` publishes its measured height as `--bottomband-h` on `<html>`. Anything stacked on the
+  band (drop-ups, the tab settings sheet, `.container` padding) offsets from that
+  variable, never a literal, and never from `100%` (Chromium does not make
+  `container-type` the containing block for `position: fixed` drop-ups).
+- `tab-controls-sheet.js` collapses the tab band below a band width of 640 px by
+  MOVING (not rebuilding) controls into a gear sheet, so listeners from
+  `setupTablaturePlayer` survive. The width is the band's, not the window's
+  (ResizeObserver sets `.is-narrow-band`; CSS uses `@container tabband`); the
+  `@media` query is only the seed and fallback, and tests inject a `media`
+  object to turn the observer off.
+- `tab-edit-band.js::bindBandToEditor` keeps the bottom band alive in edit mode.
+  Controls that cannot work while editing are disabled with a reason
+  (`DISABLED_REASONS`), not removed: a vanished control reads as a bug.
 
-ONE page per song: title + artist, a pill row (Key / Display / Info /
-Arrangement), part tabs when a work has multiple parts, the active part's
-content, and the shell's top/bottom bands for actions and playback.
+## Routing: everything lands in `openWork`
 
-- **Every route lands in `openWork()`** — search results, lists, deep links,
-  history. `openSong()` still exists as a thin wrapper that calls
-  `openWork(id, { exact: true })`.
-- **Pills** are built by `song-controls.js` (`buildKeyPill`, `buildDisplayPill`,
-  `buildInfoPill`, `buildExportPill`) plus the Arrangement pill in
-  work-view.js (version switching + voting, replacing the old version-picker
-  modal and dashboard cards).
-- **One renderer**: ChordPro parsing/rendering is shared from
-  `renderers/chordpro.js` (`parseChordPro` is re-exported by song-view.js for
-  compatibility).
-- **Routing**: a song's address is its PATH, `/songs/{song}/` or
-  `/songs/{song}/{version}/` (the row's `path`; see "Song paths" below).
-  `#work/{slug}` still routes (and is rewritten to the path); a part
-  (`#work/{slug}/{partId}`) and the editor modes stay hash routes. Legacy
-  `#song/{id}` URLs resolve to the work. List-context pages keep
-  `#list/{listId}/{workId}` URLs.
-- **The tab editor is a MODE of this page, addressed by URL** (plan §9):
-  `#work/{slug}/edit/{take}`, `#work/{slug}/add-tab?instrument=`, and
-  `#new-tab?title=&instrument=&ts=&tempo=&measures=` for a song the
-  songbook doesn't have yet. All three are parsed by `parseTabRoute`
-  (`otf-editor/create-tab-entry.js`) and land in `openWork()` /
-  `openNewTabPage()` — never in a page of their own.
+`openWork(id, opts)` renders lead sheets, tab-only works and multi-part works.
+`openSong(id)` (song-view.js) only calls `openWork(id, {exact: true})` (that
+exact version, not the group's representative, which `pickRepresentative`
+chooses; work-view.js and search-core.js each have a copy, keep them in step).
+Do not add a second render path.
 
-### State Variables
-
-State is managed via a **reactive pub/sub system** in `state.js`. Variables have getters/setters that notify subscribers on change:
-
-```javascript
-// Reactive pattern example:
-import { currentSong, setCurrentSong, subscribe } from './state.js';
-
-// Subscribe to state changes
-subscribe('currentSong', (newSong, oldSong) => {
-    console.log('Song changed from', oldSong?.title, 'to', newSong?.title);
-});
-
-// Update state (triggers subscribers)
-setCurrentSong(song);
-```
-
-**Core state:**
-```javascript
-let allSongs = [];              // Array of song objects (loaded from index.jsonl)
-let songGroups = {};            // Map of group_id → [songs] for versions
-let currentSong = null;         // Currently viewed song
-let currentChordpro = null;     // Raw ChordPro content
-let currentView = 'search';     // 'search' | 'song' | 'work' | 'add-song' | 'blog'
-```
-
-**Works/tablature state:**
-```javascript
-let loadedTablature = null;     // Currently loaded OTF tablature data
-let tablaturePlayer = null;     // Active TabPlayer instance
-let activePartTab = 0;          // Currently selected part index in work view
-```
-
-**Display modes:**
-```javascript
-let nashvilleMode = false;      // Show Nashville numbers
-let compactMode = false;        // Reduce whitespace
-let currentDetectedKey = null;  // Current key (for transposition)
-let chordDisplayMode = 'all';   // 'all' | 'first' | 'none'
-let fontSizeLevel = 2;          // Index into FONT_SIZES array
-```
-
-**User data:**
-```javascript
-let favorites = new Set();      // Song IDs (localStorage or synced)
-let userLists = [];             // Custom user lists (via supabase-auth.js)
-```
-
-### Key Functions
-
-| Function | Purpose |
-|----------|---------|
-| `loadIndex()` | Fetch/parse `data/index.jsonl` (canon only) with the Supabase overlays started in parallel, render, route. The archive is NOT scheduled |
-| `ensureArchiveLoaded()` | `window.` hook: fetch `archive.jsonl` (once) — called by whatever needs an archived row |
-| `whenOverlaysSettled()` | `window.` hook: resolves when the boot overlay fetch has landed AND been merged into the corpus, or after 3 s, whichever is first (openWork waits for it before the archive; a hung backend cannot strand a deep link) |
-| `getSongContent(song)` | ChordPro for a work: cached fetch of `data/songs/{id}.pro` (song-content.js) |
-| `songHasContent(song)` / `songHasAbc(song)` | Cheap, sync "does this work have a lead sheet / ABC" |
-| `refreshPendingSongs()` | Re-fetch pending songs from Supabase, merge into allSongs |
-| `search(query)` | Filter songs by query, chords, progression |
-| `renderResults(songs)` | Display search results list (with version badges) |
-| `openWork(workSlug, opts)` | THE song page entry point (parts, pills, tablature) |
-| `openSong(songId)` | Thin wrapper: `openWork(id, { exact: true })` |
-| `parseChordPro(content)` | Parse ChordPro → structured sections (renderers/chordpro.js) |
-| `transposeChord(chord, semitones)` | Transpose individual chord |
-| `toNashville(chord, key)` | Convert chord to Nashville number |
-| `detectKey(chords)` | Auto-detect key from chord list |
-| `setTopBar(config)` / `setBottomBand(el)` | Declare page chrome in the app shell |
-| `openPrintView()` | Open print-optimized view in new window |
-
-### Search Features
-
-**Keyword search**: Matches title, artist, lyrics
-```
-blue moon kentucky
-```
-
-**Field-specific filters**: Target specific metadata
-```
-artist:hank williams      # Filter by artist (multi-word supported)
-title:blue moon           # Filter by title
-lyrics:lonesome highway   # Filter by lyrics content
-tag:bluegrass             # Filter by tag; whole value = tags (commas or spaces)
-tag:fiddle                # Instrument tag (see "Instrument tags" below)
-composer:bill monroe      # Filter by composer/writer
-```
-
-**Instrument tags** are *virtual* — derived per row by
-`tags.js getInstrumentTags(song)`, never stored:
-
-| Tag | Comes from |
-|-----|------------|
-| `tag:banjo` / `mandolin` / `guitar` / `fiddle` / `dobro` / `bass` | a tablature part whose instrument is in that family (`5-string-banjo` also answers to `banjo`, and to `tag:5-string-banjo`) |
-| `tag:tenor-banjo` | a tenor banjo part (also matches `tag:banjo`) |
-| `tag:fiddle` + `tag:notation` | `has_abc: true` (ABC notation) |
-| `tag:multipart` | any part with `tracks > 1`, or an `ensemble` part |
-
-That one function is THE source: `songHasTags` matching (case- and
-separator-insensitive), the result-card instrument badges, the Tags
-dropdown's Instruments group, and the Instrument facet pill all read it.
-Add a facet by adding it to `INSTRUMENT_FACETS` in `tags.js` (and the
-matching checkbox in `index.html`).
-
-There is deliberately NO `key:` filter — keys are transposable, so the
-detected key is display metadata (song page "Key of G" pill), not a search
-dimension (removed 2026-07-31 at Mike's direction). `status:`/`has:` and
-all negations except `-tag:` were removed at the same time; typing any of
-them degrades to plain text.
-
-**Search scope**: the canon by default. The Bluegrass Dungeon (`#dungeon`,
-`dungeonMode`) searches the archive only. The "Include the dungeon" checkbox
-(`#include-dungeon`, state.js `includeDungeon`, localStorage
-`songbook-include-dungeon`, off by default) searches both: archived rows get
-a `Dungeon` badge and rank below canon rows of equal relevance (relevance
-tiers still come first), and `main.js applySearchScope()` loads the archive
-when the search view needs it. `searchableSongs()` is the one place that
-decides. The box is hidden inside the dungeon and on lists.
-
-**Negative filter** (`-tag:` is the only negation)
-```
-tag:bluegrass -tag:instrumental    # Bluegrass but not instrumentals
-```
-
-**Facet UI**: the search page and the landing page share one-tap facet
-chips (Instrumentals/Gospel/Old-Time/Waltzes/Jam-Friendly) plus the
-**Chords** and **Instrument** popovers (`#search-facet-pills`, built by
-`search-core.js`); all of them write syntax into the search box (helpers in
-`search-query.js`) so the box stays the single source of truth. The
-Instrument pill routes through `tags.js toggleFacetTag`, so it and the Tags
-dropdown checkbox for the same tag can never disagree; any surface can keep
-itself in step by registering with `tags.js onTagSync(fn)`.
-
-**Chord search**: Find songs with specific Nashville numbers
-```
-chord:VII        # Songs with VII chord
-chord:VII,II     # Songs with both VII and II
-```
-
-**Progression search**: Find songs with chord sequences
-```
-prog:I-IV-V      # Classic progression
-prog:ii-V-I      # Jazz turnaround
-```
-
-**Combining filters**: Mix and match
-```
-artist:hank williams tag:honkytonk chord:VII
-```
-
-### Song Rendering Pipeline
-
-```
-ChordPro string
-    ↓ parseChordPro()
-Sections array [{type, label, lines, preformatted?}]  (never drops lyric lines: untagged
-text = implicit verses split on blank lines; any start_of_X opens type X; {comment}
-= comment section; tab/grid = preformatted; repeats are detected at render time)
-    ↓ renderSong()
-HTML with chord highlighting
-    ↓ (if nashvilleMode)
-Nashville number conversion
-    ↓ (if transposed)
-Chord transposition applied
-```
-
-### Works and Renderers
-
-Works can have multiple parts (lead sheet, tablature, ABC notation). The renderer system handles different formats:
-
-```
-work-view.js
-    ↓ selectPart(partIndex)
-    ↓ getRenderer(part.format)
-renderers/
-    ├── tablature.js      # OpenTabFormat JSON → interactive tab display
-    ├── tab-player.js     # TabPlayer class with playback controls
-    └── tab-ascii.js      # ASCII tablature format
-```
-
-**TabPlayer features:**
-- Play/pause with tempo control
-- Note highlighting during playback
-- Measure navigation
-- Loop sections
-
-### Routing: everything is openWork
-
-There is ONE rendering path. `openWork(id, opts)` handles lead sheets,
-tablature-only works, and multi-part works alike (part tabs select the
-active part; the track mixer mounts in the bottom band for multi-track
-tabs). `openSong(id)` survives only as a compatibility wrapper that calls
-`openWork(id, { exact: true })` — it shows exactly the requested version
-instead of the group representative.
-
-URL forms:
-
-- `/songs/{song}/` and `/songs/{song}/{version}/` — a song and one of its
-  versions (see "Song paths" below)
-- `#work/{slug}` — routes to the work and is rewritten to its path
-  (`/#work/{slug}/{partId}` for a part, which stays a hash route)
-- `#work/{slug}/edit/{take}` — that take open in the editor. `{take}` is the
-  take's own NAME (its `src_file` stem, e.g. `banjo-18967`), never an index:
-  curation pins re-sort takes between builds. `takeRefs` accepts the
-  published basename and the label too, so older links still land.
-- `#work/{slug}/add-tab?instrument=banjo` — the song page with one new,
-  unsaved take selected and the editor open on it
-- `#new-tab?title=&instrument=&ts=&tempo=&measures=` — a provisional WORK
-  page (title/artist are inputs in the title slot); submitting mints the work
-  and the hash becomes `#work/{id}` without a reload
-- `#song/{id}` — legacy; resolved via `resolveWorkId()` and rewritten to
-  the song's path with `history.replaceState`
-- `#list/{listId}/{workId}` — list-context pages keep list URLs
+- `/songs/{song}/` and `/songs/{song}/{version}/` are a song and a version.
+  `#work/{slug}` still routes and is rewritten to the path; a part
+  (`#work/{slug}/{partId}`) and editor modes stay hash routes.
+  `#song/{id}` is legacy (`resolveWorkId()`); `#list/{listId}/{workId}` keeps
+  list URLs.
+- Tab routes: `#work/{slug}/edit/{take}`, `#work/{slug}/add-tab?instrument=`,
+  `#new-tab?title=&instrument=&ts=&tempo=&measures=`, all parsed by
+  `parseTabRoute` (`otf-editor/create-tab-entry.js`). `{take}` is the take's name
+  (its `src_file` stem, e.g. `banjo-18967`), never an index, because curation
+  pins re-sort takes between builds.
 
 ### Song paths
 
-Every work is a song (`/songs/{work id}/`) unless its `work.yaml` names
-another work as its song (`song:` + `version:`), which makes it a version
-(`/songs/{song}/{version}/`); a song root may carry `slug:` when its id would
-mislead (`2402`, an orphaned `-1`). The build turns that into each row's
-`path` (`build_works_index.apply_songs`) and makes the row's version group
-its song (`group_id: song:{root}`, `canonical` / `variant_of`), so the
-Arrangement pill lists exactly the song's versions. Votes are counted by
-work id (`fetchGroupVotes(songIds)`) so regrouping never strands them.
+Work-to-URL rules (`song:`, `version:`, `slug:`) are in `.claude/rules/works.md`;
+`build_works_index.apply_songs` turns them into each row's `path` and
+`group_id: song:{root}`. Votes are keyed by work id so regrouping never strands
+them. Client side (`main.js`, `state.js`: `SONG_PATH`, `songHref`,
+`songIdForPath`, `currentHref`):
 
-How the app does it, all in `main.js` + `state.js` (`SONG_PATH`,
-`songHref`, `songIdForPath`, `currentHref`):
+- `<base href="/">` in `index.html` makes `fetch('data/...')` resolve from the
+  root on any path; without it `/songs/x/` fetches `/songs/x/data/songs/x.pro`.
+- Show a song at `songHref(id)`; write every other history entry absolute
+  (`/#search`) so a hash route never inherits a song's path. Compare with
+  `currentHref()`, not `location.hash`. A document click handler turns a `#...`
+  link on a song path into in-place navigation (the base would load `/`).
+- `scripts/lib/build_song_pages.py` writes the pages and `404.html`; `scripts/server`
+  serves `404.html` for unknown paths like Pages does.
 
-- **`<base href="/">` in index.html** — every relative URL and every
-  `fetch('data/…')` resolves from the root whatever path is showing. Without
-  it, opening a song at `/songs/x/` fetched `/songs/x/data/songs/x.pro`.
-- **Booting on a path**: `handleDeepLink` → `routeSongPath()` resolves the
-  path against row `path`s (loading the archive if the canon lacks it) and
-  calls `openWork`. A path nothing matches gets the not-found page.
-- **Writing URLs**: a song is shown at `songHref(id)` (its path, else
-  `/#work/{id}`); every other history entry is written ABSOLUTE (`/#search`),
-  so a hash route never inherits a song's path. Compare with
-  `currentHref()` (path + hash), not `location.hash`.
-- **Leaving a song**: the `currentView` subscriber normalizes
-  `/songs/x/#search` to `/#search`, and a document click handler turns a `#…`
-  link on a song path into an in-place navigation (the base would otherwise
-  make it a full load of `/`).
-- **Pages**: `scripts/lib/build_song_pages.py` writes each song and version
-  as `index.html` at its path (song pages indexed, version pages canonical
-  to their song) and `404.html` for everything else; `scripts/server` serves
-  `404.html` for unknown paths like GitHub Pages does.
+### Navigation invariants
 
-**`create.html` is a redirect shim** (`?work=x&instrument=y` →
-`index.html#work/x/add-tab?instrument=y`; bare → `#new-tab`; `?draft=d-1`
-rides along either way). Its form,
-editor mount and `.tef` drop zone are gone; `create-tab.js` survives as the
-"new empty take" producer the song page calls, and the `.tef` import is
-offered wherever a take is started (`pickTefFile` in work-view.js).
+1. The `currentView` subscriber tears down the tablature view on the way out of
+   `song`, never on the way in. Everything entering the song view goes through
+   work-view, which tears down synchronously first; a teardown queued by entering
+   lands a frame later and destroys what the entry just built (this once made
+   `#new-tab?draft=...` mount its editor and delete it, depending on whether the
+   editor's imports were cached; `e2e/otf-editor-drafts.spec.js`).
+2. One navigation step, one route. Back/forward fires `popstate` then
+   `hashchange`; `main.js` parks the popstate work for one task, a hashchange in
+   that window cancels it and routes by hash, and an echo within 100 ms is
+   dropped. Without this every step built the song page twice
+   (`e2e/render-counts.spec.js`).
 
-**The bottom band survives edit mode** (`tab-edit-band.js`). It used to be
-replaced by an italic notice, which took size/tempo/transport/metronome away
-at the moment the reader started changing what they describe — and the
-editor grew a second transport in its status bar. `bindBandToEditor(controls,
-editor)` re-binds the same band to the live document: size drives the
-editor's renderer, tempo writes through the facade (undoable, and it is what
-gets submitted), ▶/⏹ drive the editor's player, and the session's buttons
-(`Submit · Download · Cancel · Done`) take the `✏️ Edit` slot. Transpose,
-Unrolled/Repeats, feel and the mixer are **disabled with a reason**
-(`DISABLED_REASONS`) rather than removed — a control that vanishes reads as
-a bug.
+## Search
 
-### Track Mixer (Multi-Track Tablature)
+Syntax lives in `search-query.js`, scoring in `search-core.js`; read those, not a
+list here. Not obvious from the code:
 
-Multi-track tabs (e.g., ensemble arrangements with guitar, banjo, mandolin, bass) show a track mixer:
+- There is deliberately no `key:` filter (keys transpose) and no `covering:`
+  filter. `status:`, `has:` and every negation except `-tag:` were removed on
+  purpose; typing them degrades to plain text.
+- Instrument tags (`tag:banjo`, `tag:multipart`, ...) are virtual:
+  `tags.js::getInstrumentTags(song)` derives them from `tablature_parts` and
+  `has_abc`, and matching, badges, the Tags dropdown and the Instrument facet all
+  read it. Add a facet in `INSTRUMENT_FACETS` plus its checkbox in `index.html`.
+- Facet chips write syntax into the search box so the box stays the single
+  source of truth. The Instrument pill uses `tags.js::toggleFacetTag`; other
+  surfaces sync through `tags.js::onTagSync(fn)`.
+- Scope: canon by default; `#dungeon` (`dungeonMode`) searches the archive only;
+  the "Include the dungeon" checkbox (`includeDungeon`, localStorage
+  `songbook-include-dungeon`) searches both. `searchableSongs()` decides;
+  `main.js::applySearchScope()` loads the archive when needed.
 
-- Appears above the tablature when OTF has multiple tracks
-- Toggle visibility of each track
-- Solo a single track
-- Shows instrument icon and name per track
+## Song page
 
-**Track detection** is based on the `instrument` field in the OTF:
-- `5-string-banjo`, `6-string-guitar`, `mandolin`, `upright-bass`, etc.
-- Falls back to track index if no instrument name
+- `renderLeadSheetContent` stamps `container.dataset.renderedKey` and work-view's
+  key subscriber skips a redraw when it matches (notifications arrive a frame
+  after the write; without this every chart drew twice).
+- Percussion tracks are excluded from the mixer, playback and the OTF editor via
+  `isPercussionTrack` / `pitchedTracks` (`renderers/otf-tracks.js`): a drum
+  track's `s` is a kit staff line, so `tuning[s-1] + f` is nonsense. Never sniff
+  track names (one drum track is named "Guitar Standard"). The song page shows
+  the track greyed out with a "drum notation is in progress" note on purpose: we
+  detect a drum track reliably but not which drum each line is.
+- A tab draws once per open. `renderTablaturePart` waits up to 250 ms for the
+  Bravura font (`TabRenderer.whenBravuraReady`); a late font redraws only if that
+  draw was made without it (`_drewWithBravura`, since the font promise resolves
+  on a microtask even for a long-loaded font). The font URL is pinned
+  (`TabRenderer.BRAVURA_URL`) because jsDelivr's `@latest` on `gh` is the repo's
+  HEAD. `loadPartOtf` sets no `cache` option: freshness is the service worker's.
+- Audio must stay synchronous inside the tap (`audio-unlock.js`): never let Play
+  await an import. That is why `TabPlayer` loads with the renderer.
 
-**Percussion tracks are excluded from mixer, playback and the OTF editor**
-via `isPercussionTrack` / `pitchedTracks` in `renderers/otf-tracks.js`. A
-drum track (`percussion: true`, `instrument: 'percussion'`, empty
-`tuning`) is not pitched: its `s` is a kit staff line, so `tuning[s-1] + f`
-yields nonsense. Use the shared predicate — never sniff track names, which
-lie (one drum track is named "Guitar Standard").
+## Lazy modules
 
-On the song page the track IS shown, greyed out (`.percussion-track` +
-`.percussion-placeholder`), with a "drum notation is in progress" note,
-and it gets a track-view tab like any other. Deliberate: we can detect a
-drum track reliably but not yet which drum each line means, so drawing a
-stave would be fiction and hiding it would be a lie by omission. See
-`sources/banjo-hangout/CLAUDE.md` for what's known about the mapping.
+Whatever `main.js` imports statically is on every cold load; the rest is
+`import()`ed at the point of use. `__tests__/lazy-modules.test.js` enforces the
+boot-graph budget and names the modules that must stay out.
 
-### Tablature draw count (Bravura, tab fetch)
-
-A tab draws **once** per open. `TabRenderer` engraves time signatures and
-rests with Bravura (SMuFL) when it is loaded, bold-serif digits otherwise.
-`renderTablaturePart` starts the font load alongside the tab JSON and waits for
-it (capped at 250ms, `TabRenderer.whenBravuraReady`) before drawing, so the
-first draw already has the glyphs; a renderer still re-draws when the font
-lands LATER than its draw, but only if that draw was made without it
-(`_drewWithBravura` — the font promise resolves on a microtask even when the
-font was ready long ago, which used to redraw every staff on every open). The
-font URL is pinned (`TabRenderer.BRAVURA_URL`, release tag `bravura-1.482`;
-`@latest` on jsDelivr's `gh` endpoint is the repo's HEAD). `loadPartOtf`
-fetches tab JSON with no `cache` override — freshness is the service worker's
-job (SWR, revalidating refresh; see Offline / PWA).
-
-### Chart prefetch
-
-The `.pro` for the song a reader is about to open is fetched early through
-`prefetchSongContent()` (`song-content.js`, which shares `getSongContent`'s
-cache and in-flight dedupe, so the real open finds the text in memory or joins
-the request already in the air): on `pointerdown` of a search result, on a
-mouse resting on one for 120ms (`search-core.js`, delegated on the results
-container; `prefetchResult` resolves the same target a click would, including a
-group's representative, and skips part-qualified rows), and for the NEXT song in
-a list when the nav bar updates (`song-view.js::prefetchNextInList`). It is
-best-effort and silent (failures are not cached, so the open retries and
-reports) and is skipped on Save-Data connections.
-
-### Transposition
-
-- `currentDetectedKey` tracks the current key
-- `setCurrentDetectedKey()` is a **no-op when the key is unchanged** (like
-  `setCurrentView` / `setDungeonMode`). `initKeyState` writes the detected key
-  on every render, and the song page re-renders on every `currentDetectedKey`
-  notification, so an unconditional notify drew every chart twice. Nothing
-  relies on re-notification with an unchanged key; a caller that wants a redraw
-  calls the renderer.
-- Notifications are delivered a frame after the write, so a chart drawn in
-  between has already used the key: `renderLeadSheetContent` stamps
-  `container.dataset.renderedKey`, and work-view's key subscriber skips the
-  redraw when it matches.
-- Key selector dropdown triggers re-render
-- `transposeChord()` handles sharps/flats correctly
-- `getSemitonesBetweenKeys()` calculates interval
-
-### Song Page Controls (pills)
-
-The song page's controls are pills in a single pill row, built by
-`song-controls.js`:
-
-- **Key pill** (`buildKeyPill`): −/+ transpose, key grid, Nashville toggle,
-  (Strum Machine moved to the Practice line)
-- **Display pill** (`buildDisplayPill`): font size, two columns, section
-  labels, compact, chord display mode ('all' | 'first' | 'none')
-- **Info pill** (`buildInfoPill`): metadata, covering artists, tags, source
-- **Export pill** (`buildExportPill`, in the top band): Print
-  (`openPrintView()`), Copy ChordPro/Text, Download .pro/.txt
-- **Arrangement pill** (work-view.js): switch between versions of a group,
-  with vote counts and voting (replaces the old version-picker modal)
-
-**Print view** has its own controls:
-- Same options as song view
-- 2-column toggle for print layout
-- Labels toggle for section headers
-
-### Editor (Add Song / Edit Song)
-
-ONE CodeMirror 6 view whose document is the ChordPro text (`lead-editor/`, see
-its CLAUDE.md; CodeMirror is vendored in `docs/vendor/codemirror.js`, rebuilt by
-`./scripts/vendor-codemirror`). Three explicit modes over the same document,
-switched by `Lyrics | Chords | ChordPro` in the editor header and remembered
-per device (`localStorage['bgb-lead-mode']`); a new empty song always opens in
-Lyrics. Each mode does one job:
-
-- **Lyrics** looks exactly like the song page (decorations that reuse the
-  book's classes) and is editable with the platform's own typing, paste and
-  selection. Chords are drawn but inert. Select lines to show the section bar (floating on desktop, docked above the keyboard on phones)
-  (`Verse · Chorus · Bridge · Intro · Outro · Tag · Other…`; a selection that
-  crosses section boundaries is re-sectioned); tap a label for rename / type /
-  duplicate / move / remove label / delete. Chords are drawn greyed (inert). Only the
-  Chords button enters Chords mode (no double-click shortcut, 2026-10-27). Select-all +
-  Delete removes whole sections (labels too) but keeps `{meta:}` / `{key:}` and locked blocks.
-- **Chords** locks the chart (not editable: no keyboard, no text selection).
-  Tap a lyric (or the chord row above it) and the box snaps to the syllable;
-  the chord panel is always shown and docked (phone: magnifier fixed at the top, picker at the bottom; wide desktop: a sticky panel beside the chart) with
-  a magnifier strip (drag to step the box seam by seam), ◀ ▶ ▲ ▼,
-  the key's chords, and for the chord in the box Remove / Move (Move carries the
-  chord with the box). One layout, no extension cells: a decorations row
-  (⁷ maj⁷ ⁶ ⁶⁄₉ add⁹ sus² sus⁴ ⁹ /bass) composes with the chord in the box.
-- **ChordPro** is the source, beside a read-only preview drawn by
-  `renderSectionsHtml` (phone: `Source | Preview` toggle).
-
-**Every reader of the song text goes through `getText()` / `setText()`**
-(exported from `editor.js`): submit, copy, download, the dirty check
-(`editorHasUnsavedChanges`), the sign-in return record, transpose and key
-changes (one undo step each). `#editor-content` is a hidden fallback textarea
-that only shows if the CodeMirror editor cannot mount. Smart paste
-(`convertPastedText`) runs on paste in Lyrics mode and fills empty
-title/artist; the auto-detect checkbox still gates it.
-
-Functions prefixed with `editor*`:
-- `enterEditMode(song)` - Open editor with existing song
-- `editorConvertToChordPro()` - Smart paste: chord-above-lyrics → ChordPro
-- `updateEditorPreview()` - Refresh chrome (key/toolbar) + the ChordPro-mode preview
-- `getText()` / `setText(text, {reset})` - the text adapter (see above)
-- **The editor is a view, entered through `currentView`.** `enterEditMode`
-  calls `setCurrentView('add-song')`; it does not hide the song page by hand
-  (that left state saying "song", so navigating to another song was a no-op
-  for state and the editor stayed on screen). Leaving with unsubmitted edits
-  (`editorHasUnsavedChanges()` — fields vs the baseline taken at open/reset/
-  submit) shows an in-page prompt (`promptUnsavedChanges`, `#editor-leave-modal`,
-  never `window.confirm`). The navigation has already happened by then, so the
-  `currentView` subscriber in main.js (`guardEditorExit`) defers
-  `exitEditMode()` until the answer: "Keep editing" pushes the editor route
-  back and re-shows the view with the editor state untouched.
-- Ownership wording mirrors the server (`pending-dispatch.ts`): the chart's
-  submitter AND trusted users update in place (button "Submit Correction";
-  trusted users see a one-line notice saying so), everyone else forks
-  ("Save as My Arrangement" + the fork notice; signed-out users get a hedged
-  "Sign in to submit. Unless this chart is yours…"). `editsInPlace()` is the
-  one place that decides; `refreshEditorOwnership()` re-derives it on an auth
-  change. There is deliberately **no Edit Comment field**: `pending_songs.notes`
-  is written to the *work's* `notes` when an edit lands on the primary chart
-  (`process_pending.py`), so a free-text comment would overwrite the song's
-  description. Only tab submissions carry a comment (as provenance).
-- Submitting writes a `pending_songs` row and then POSTs its id to the
-  `auto-commit-song` edge function (see "Contributing" below). There is no
-  `submitSongToGitHub()` any more — the GitHub-issue flow and its
-  `create-song-issue` function are both deleted.
-
-### Surviving the sign-in redirect (`auth-return.js`)
-
-Google sign-in is a FULL-PAGE redirect: the page unloads, and the browser
-returns to `origin + pathname` with the session in the URL **fragment**
-(`#access_token=…`; the client uses the implicit flow). Two consequences that
-cost us work before: the route (`#add`, `#edit/{id}`, a tab route) was gone
-after sign-in, and the lead-sheet editor — which has no draft store — came
-back empty. The route can NOT ride in `redirectTo` (the fragment is
-Supabase's), so the page leaves a note for itself:
-
-- **Write** — `requireLogin()` (`utils.js`), the tab gate's default
-  (`otf-editor/create-tab-entry.js`) and the auth modal's Google button call
-  `persistReturnRecord()` right before `signInWithGoogle()`. The record
-  (`localStorage['bgb-auth-return']`, `{v, at, hash, kind, state?}`, 30 min TTL,
-  single use) holds the route plus whatever the open editor contributes through
-  `registerReturnSource(fn)`: the lead-sheet editor returns its text (`getText()`) +
-  title/artist/writer (`kind: 'lead-sheet'`); the tab editor returns
-  `draftOpenHash(...)` — the IndexedDB draft's own route with `?draft=`
-  (`kind: 'tab'`), after `mountTabEditor`'s `onSubmit` has force-flushed the
-  autosave (it does NOT wait for the 1s trailing edge when signed out). With
-  no editor open the record is just the current route.
-- **Apply** — `AUTH_REDIRECT` is read at import time (before supabase-js strips
-  the fragment); only a page that actually came back from the redirect may
-  apply a record, so a record left by an abandoned attempt can't fire when the
-  user later signs in by email. `main.js::resumeAfterAuthRedirect` waits for the
-  boot route (`bootRouted`), replaces the token URL with the recorded hash,
-  runs `handleDeepLink()` and lets the editor restore: `stageEditorRestore`
-  parks the snapshot (an edit's waits for `enterEditMode` of that song, then
-  wins over the published text; a new song's is applied by
-  `applyEditorRestore()`). Message: "Signed in — ready to submit". It never
-  submits on the user's behalf. An error return (`#error=access_denied`) restores
-  the work too.
-- Tests: `e2e/editor-lifecycle.spec.js` runs the real SDK against a mock OAuth
-  endpoint that completes the redirect (`mockSupabase(page, { oauthReturn: true
-  })`). A stubbed `signInWithGoogle` cannot see this bug.
-- Known limits: the tab submit panel's comment is not carried over (retype it);
-  email/password sign-in never leaves the page, so it needs none of this.
-
-### View Navigation
-
-Views are switched through the reactive `currentView` state (`showView(mode)`
-in main.js sets it; a subscriber shows/hides panels and updates the top
-band's nav links). There is no sidebar — top-band nav links cover Search,
-Lists, Add Song, etc., with the rest in the overflow (⋯) menu.
-
-**Two invariants hold this together, and both were bought with a bug.**
-
-1. **`setCurrentView(v)` where `v` is already the value fires NOTHING**
-   (state.js). Subscribers run on a `requestAnimationFrame`, so a redundant
-   write is not free — it is a real callback at a later frame boundary, and
-   the `currentView` subscriber does imperative teardown, not painting.
-2. **The subscriber tears down the tablature view on the way OUT of `song`,
-   never on the way IN** (`if (view !== 'song') teardownTablatureView()`).
-   Everything that ENTERS the song view goes through work-view, which tears
-   down synchronously before it builds (`openWork`, `openNewTabPage`,
-   `showWorkLoading`, the not-found branch). A teardown queued by *entering*
-   the view lands a frame after the entry and can only destroy what that
-   entry just built.
-
-Together those are what stopped `#new-tab?draft=…` from mounting its editor
-and then silently deleting it. The failure looked like a rendering bug — the
-page appeared, the band appeared, the editor did not — and it was decided by
-the module cache: with the editor's five dynamic imports warm the mount
-resolved in a microtask and lost the race; cold, it won. `#drafts` → Open
-lost every time; a dropped `.tef` lost about half. Covered by
-`e2e/otf-editor-drafts.spec.js` and `e2e/otf-editor-files.spec.js`.
-
-> **One navigation step, one route.** A back/forward step (or
-> `location.hash = …`) fires `popstate` AND `hashchange` whenever the
-> fragment differs, popstate first. Both used to reach `handleDeepLink`, so
-> `openWork` / `openTabRoute` ran twice per step — two builds of the song
-> page, two IndexedDB reads for a draft route, two lead-sheet draws (the
-> second render is why `mountTabEditor` and `renderTablaturePart` each carry a
-> "the page moved on" guard; the guards stay, they protect against ordinary
-> slow fetches too). `main.js` now PARKS the popstate work for one task; a
-> hashchange arriving in that window cancels it and routes by hash (the hash is
-> the more trustworthy of the two), and with no hashchange (same fragment,
-> only the state differs) the parked popstate runs. A hashchange for the URL a
-> popstate already routed within 100ms is dropped as an echo. Covered by
-> `e2e/render-counts.spec.js` (back/forward draws a chart once).
-
-## Offline / PWA
-
-The "standalone app" of §9.3 of `docs/plans/tab-editor-input-parity.md` is
-this site, installed — not a second product. Four pieces:
-`docs/manifest.webmanifest`, `docs/sw.js` (+ `js/sw-strategy.js`),
-`js/drafts.js` (+ `drafts-view.js`) and `js/pwa.js`. `main.js` calls
-`initPWA()` once; every capability probe no-ops where the API is missing, so
-this is inert in jsdom, in Playwright and in browsers without service workers.
-
-### The caching strategy table
-
-`js/sw-strategy.js::routeFor()` is the only place that decides. `sw.js` is a
-mechanical shell around it, which is why the table is unit-tested
-(`__tests__/sw-strategy.test.js`) without a service-worker runtime.
-
-| Request | Strategy | Cache | Why |
-|---|---|---|---|
-| Navigations, same-origin `.html` / `.js` / `.css` (and any other same-origin GET) | **network-first, ~1.8s timeout** | `bgb-shell-<ver>` | Nothing here is content-hashed. Network-first means a deploy is picked up on the next load (within the `max-age=600` HTTP-cache window GitHub Pages sends; a hard reload skips it) and, while the network is healthy, modules are not served stale. The cache answers when the network fails, or has not answered in `NETWORK_TIMEOUT_MS` **and a cached copy exists** (with nothing cached the request keeps waiting). Navigation preload is on. See below for why this is not stale-while-revalidate. |
-| `docs/data/*.jsonl`, `docs/data/**.json` (incl. `data/tabs/*.json`), `docs/data/songs/*.pro` | **stale-while-revalidate** | `bgb-data-<ver>` | Rebuilt by every deploy (`build.yml` runs `build_works_index.py` then uploads `docs/`), and big. Paint instantly, refresh behind, fresh next visit. **Never** cached as immutable. The background refresh sends `cache: 'no-cache'` (a conditional request, 304 when unchanged) so GitHub Pages' `max-age=600` cannot keep the cache a deploy behind. A song page blocks on its `.pro`, so this is what makes a repeat open instant. |
-| `surikov.github.io/*` (WebAudioFont player + soundfonts), `cdn.jsdelivr.net/**/bravura/**` | **cache-first** | `bgb-vendor-<ver>` | Immutable third-party assets. Opaque responses are cached deliberately — we only replay them. |
-| `*.supabase.co`, any non-GET, other third parties (analytics, the abcjs / supabase-js CDN bundles), non-http schemes | **bypass** | — | Not ours. No `respondWith`, so the request is untouched. |
-
-A navigation that misses the cache offline falls back to `./index.html` —
-its `<base href="/">` and path routing let the shell serve any route,
-`/songs/…` included.
-
-**Why the shell is network-first with a timeout, not stale-while-revalidate.**
-There is no build step and no content hashing, so one deploy changes dozens of
-ES modules at once. SWR would serve the old copy of each cached module and the
-new copy of the rest on the load after a deploy; a module importing a name its
-(old) sibling does not export is a hard failure — a blank app for a returning
-user. Network-first picks a deploy up on the next load (the worker's `fetch()` goes
-through the HTTP cache, and GitHub Pages sends `max-age=600`, so "next load"
-can be up to ten minutes after a deploy; this predates the timeout) and only
-gives that up on a link too slow to be getting anything done. The give-up is
-made **sticky in both directions** (`shellPolicy()`), so one page load is one
-generation of the app instead of a mix:
-
-- **Slow latch** (`slowSince`, `slowNetworkActive`): once one shell request has
-  timed out to the cache, every shell request prefers its cached copy
-  (refreshing behind) for `SLOW_NETWORK_WINDOW_MS` (15s), so the load stays on
-  the OLD generation instead of an old `main.js` with a new `work-view.js`.
-- **Fresh latch** (`freshSince`, `freshNetworkActive`): once any ES-module
-  request (`startsFreshWindow`: destination `script`, mode `cors`) has been
-  answered BY THE NETWORK, every shell request waits for the network (timeout
-  0; the cache answers only on a network error) for `FRESH_NETWORK_WINDOW_MS`
-  (15s), so a module that stalls after a deploy is waited for rather than
-  filled in from the old cache beside modules that arrived new (an export that
-  moved between modules would be a blank app). Requests already in flight
-  re-check it when their timer fires (`canAbandon`). The window is anchored at
-  the first answer, not slid, and a navigation resets it (a new page load);
-  stylesheets, classic scripts and the page itself do not start it, so a
-  stalled ENTRY module still times out to the cache.
-- The slow latch wins a tie: a request already served old means the rest of
-  the load must be old too.
-- **A hard reload waits** (`wantsFreshNetwork`): `cache: 'reload'` /
-  `'no-store'` requests (Shift-reload, "empty cache and hard reload") never
-  fall back on a timeout — the reader asked for the network. This is also the
-  escape hatch if a bad worker or stale cache ever misbehaves.
-
-The timeout logic is `networkFirstWithTimeout()` in `sw-strategy.js` (pure,
-unit-tested); `e2e/sw-and-prefetch.spec.js` exercises the real worker against a
-delaying proxy (`page.route` cannot: Playwright turns the HTTP cache off while
-a route is installed, which makes every request `cache: 'reload'`).
-
-**Updating the worker:** `pwa.js` registers with `updateViaCache: 'none'`, so an
-update check fetches `sw.js` AND its imports (`sw-strategy.js`) from the
-network. Otherwise GitHub Pages' `max-age=600` could pair a new `sw.js` with a
-ten-minute-old `sw-strategy.js` that lacks a name it imports; that fails to
-install (the old worker stays, nobody is stranded) but stalls the update.
-
-**Residual mix (unfixable without content hashing):** a module the cache has
-never held (a lazy import not yet visited, or a file a deploy ADDED) has to
-come from the network even during the slow latch, so it is new beside old
-siblings. Rare (lazy modules are leaf features), and a hard reload fixes it.
-
-**Gotcha:** the very first visit's own requests predate the worker's control
-(`clients.claim()` lands after they are issued), so they are not in its cache;
-the SECOND online load fills it. Offline support starts on the second visit.
-
-### How a deploy invalidates the caches
-
-It doesn't have to, and that is the point. Network-first re-fetches app code
-on the next load (HTTP-cache `max-age` permitting), and stale-while-revalidate refreshes corpus data one visit
-behind — so shipping new JS, CSS or a rebuilt `index.jsonl` needs **no cache
-bump at all**.
-
-**Bump `CACHE_VERSION` in `js/sw-strategy.js` when the STRATEGY changes**
-(v2: `.pro` moved from the shell cache to the data cache, and shell requests
-gained the timeout) —
-a route moves between rows of the table above, a cache splits, the stored
-shape changes. Every cache name is stamped with it, and `activate` deletes
-every `bgb-`-prefixed cache that isn't the current generation (`staleCaches()`).
-The new worker calls `skipWaiting()` + `clients.claim()` and posts
-`{type: 'sw-activated'}` to open pages; `pwa.js` turns that into a one-line
-"Updated — reload for the new version." toast, but only for a tab that
-already had a controller when it loaded (a first install has nothing to
-announce).
-
-`PRECACHE_URLS` is the five shell entries **plus `LAZY_MODULE_URLS`**
-(`js/lazy-modules.js`): every module that is *not* in the boot graph. Boot
-modules are requested on every online load, so the runtime cache always has
-them; a lazy module (the song editor, the tab renderer and player, the
-`#drafts` list — the PWA's offline surface) is requested only when its route
-first runs, so a reader who went offline before visiting it would find it
-missing. `__tests__/lazy-modules.test.js` derives the lazy set from the source
-(`import()` edges minus the static closure of `main.js`) and fails with the
-exact difference, so the list cannot rot the way a hand-kept module list would.
-Everything else enters the shell cache the first time it is fetched online.
-
-## Lazy modules (what loads at boot, and what doesn't)
-
-`index.html` loads `js/main.js`; whatever `main.js` imports **statically** is
-on the critical path of every cold load. Route- or action-specific code is
-reached with `import()` at the point of use instead (B7a took the boot graph
-from 65 modules / 1.47 MB raw to ~33 / 0.75 MB; see the test for the budget):
-
-| Loaded on demand | Trigger |
-|---|---|
-| `editor.js` (+ `smart-paste`, `dedup-check`, `lead-editor/*`, `visual-editor/{model,syllables,wrap-section}`, `vendor/codemirror.js`) | `showView('add-song')` or any `enterEditMode` (`loadEditor()` in `main.js`, which also runs `initEditor` once, right after the first load) |
-| `review-queue.js` | Dungeon mode for a trusted/admin viewer, or a request handler (`loadReviewQueue()` runs `configureReviewQueue` once) |
-| `bounty-view`, `my-submissions`, `high-scores`, `drafts-view` | their `#` route (`renderLazyView` in `main.js` drops the result if the reader has already navigated on) |
-| `list-export`, `zip` | a list's Export pill → Download |
-| `renderers/tablature.js`, `renderers/tab-player.js`, `tab-controls-sheet.js`, `tab-playback-interactions.js` (+ `audio-unlock.js`) | the first tablature render or editor mount (`loadTabRenderKit()` in `work-view.js`, started in parallel with the OTF fetch) |
-| `otf-editor/{editor,work-edit,state,facade,cursor,actions,…}`, `tab-edit-band.js` | `mountTabEditor` (unchanged: it already used `import()`) |
-| `tef-import/*` | picking a `.tef` (unchanged) |
-| `work-suggest.js` (+ `title-match.js`) | the song page's not-found branch (A10's redirect / suggestions) |
-| `tour.js` (+ `tour-editor-demo.js`) | the Tour button in the band, or ⋯ ▸ Take the tour (`startFeatureTour` in `main.js`) |
-
-Rules that keep it that way:
-
-- **Don't add a static import of a lazy module to the boot graph.** The test
-  lists the ones that must stay out. If something boot-side needs one symbol
-  from a heavy module, move the symbol (as `positionFromSvgPoint` moved from
-  `otf-editor/cursor.js` to `renderers/tab-hit-test.js`, `deleteAffordance`
-  from `review-queue.js` to `delete-affordance.js`, and
-  `createEmptyOTF`/`createMultiTrackOTF` from `otf-editor/actions.js` to
-  `otf-editor/new-otf.js` — the old modules re-export them, so importers and
-  tests are unchanged).
-- **The lazy modules have no module-level side effects** (no `window.*`
-  assignments, no listeners at import). Keep it so: the wiring they need runs
-  explicitly after the load, never as a side effect of importing.
-- **New lazy module → add it to `LAZY_MODULE_URLS`;** new boot module → add a
-  `<link rel="modulepreload">` before the `main.js` script tag in
+- Do not add a static import of a lazy module to the boot graph. If boot code
+  needs one symbol from a heavy module, move the symbol (as `deleteAffordance`
+  moved from `review-queue.js` to `delete-affordance.js`).
+- Lazy modules have no module-level side effects (no `window.*` assignments or
+  listeners at import).
+- A new lazy module goes in `LAZY_MODULE_URLS` (`lazy-modules.js`); a new boot
+  module needs a `<link rel="modulepreload">` before the `main.js` script tag in
   `index.html`. The test names the exact difference either way.
-- Audio must stay synchronous inside the tap (`audio-unlock.js`): never make
-  Play wait on an import — that is why `TabPlayer` loads with the renderer,
-  not on the first click.
 
-### Drafts (`#drafts`)
-
-`js/drafts.js` is an IndexedDB bucket (`bgb-drafts` / `drafts`, key = draft
-id) of `{ id, title, instrument, workId?, takeRef?, otf, updatedAt }`. The
-editor autosaves into it on every facade `change`, debounced ~1s
-(`createAutosaver`), wired where the session is created — `work-view.js`
-`mountTabEditor` passes the session's `onChange` — and never inside the
-editor. All three modes autosave; the record's `workId` / `takeRef` are what
-make it reopenable (see `draftOpenHash` below), so a new take files under
-`workId` with no `takeRef` and a correction files under both. Submitting
-clears the draft; Cancel clears it; ✓ Done flushes and keeps it (Done only
-applies the document to the open page).
-
-Storage is INJECTED (`memoryBackend()` / `idbBackend()`), so all of the
-logic is tested without `fake-indexeddb`, which this repo does not carry.
-Without IndexedDB the store degrades to memory for the session rather than
-throwing.
-
-`migrateLegacyDraft()` imports the old single-slot localStorage draft
-(`otf-editor-draft`) once, under a fixed id, and leaves the localStorage copy
-in place: it is still what `startAddTabMode` resumes a half-written NEW take
-from ("Picked up where you left off"), which happens inside a render and so
-cannot wait on IndexedDB.
-
-`draftOpenHash()` builds the reopen route: `#new-tab?draft=`,
-`#work/{slug}/add-tab?draft=`, `#work/{slug}/edit/{take}?draft=`.
-
-### Reopening a draft
-
-Those routes, the manifest's `file_handlers` action and the "New tab"
-shortcut all point at the §9.2 in-page surface — the real hash routes, on
-the song page. `main.js::openTabRoute` is the one place that reads
-`?draft={id}` back out of the bucket (async, so `handleDeepLink` answers
-"mine" first and the page opens a tick later) and hands the document to the
-route: `openNewTabPage({otf})`, `openWork(id, {addTab: {otf}})`, or
-`openWork(id, {editRef, draft})`. In `work-view.js` a `draft` option parks
-in `pendingDraft`, which `mountTabEditor` consumes — the draft's document
-wins over the take's, which for an edit is exactly the point (your
-unsubmitted correction, not the published tab).
-
-`create.html` forwards `?draft=` through with the rest of its query string,
-so pre-PWA draft links still land in the right mode.
-
-### File handling
-
-`.tef` and `.otf.json` open the same way whether the OS handed them over
-(`launchQueue`, installed app, Chromium) or they were dropped anywhere on the
-window (`enableFileDrop`): parse (`js/tef-import` for `.tef`), park the
-document as a draft, then route to `#new-tab?draft=…&file=1`. The draft IS
-the handoff — a hash route can't carry a document. Elements with their own
-drop zone opt out with `data-file-drop`.
-
-### Icons
-
-Every icon (favicons, `favicon.ico`, `apple-touch-icon.png`, and the PWA
-manifest's `icon-192.png` / `icon-512.png` / `icon-maskable-512.png`) is
-rendered from the BB monogram in `images/favicon.svg` by
-`scripts/lib/make_icons.py` (`uv run --with resvg-py python …`). The maskable
-icon is full-bleed black with the art inset to the 80% safe zone. Re-run it
-when the logo changes; nothing in the build calls it.
-
-Pages link the PNGs, never `favicon.svg`: a browser rasterizes an SVG favicon
-itself, plainly, and white-on-black detail goes muddy at tab size. The
-script's docstring explains how it renders the small sizes (linear-light
-averaging, slight boldening, grid fitting). Every page also needs a 48px
-multiple and an `apple-touch-icon` — Google Search picks its result icon
-from those, and once chose the old banjo app icon over the favicon
-(`tests/test_favicons.py`).
-
-## Testing
-
-```bash
-npm test              # Run unit tests once (Vitest) and exit
-npm run test:watch    # Unit tests in watch mode (re-runs on save; never exits)
-npm run test:e2e      # Run E2E tests (Playwright, requires server)
-```
-
-`npm test` was plain `vitest` until 2026-10-27, which is watch mode outside
-CI: from an agent or script it never exited and looked like a hang. Unit
-tests pass on any Node: since Node 25, Node's own empty global
-`localStorage` hid jsdom's, which `__tests__/setup-webstorage.js` undoes.
-
-### Chrome DevTools MCP
-
-For issues that tests don't catch, use the `chrome-devtools` MCP with the dev server running:
-
-- Inspecting rendered song/tablature layout
-- Debugging state changes visually
-- Profiling search performance with large result sets
-- Checking network requests for index.jsonl or tablature JSON
-
-**Interactive debugging workflow:**
-
-```javascript
-// 1. Navigate to specific deep links
-mcp__chrome-devtools__navigate_page({ type: "url", url: "http://localhost:8080/#list/local_123" })
-
-// 2. Inspect localStorage state
-mcp__chrome-devtools__evaluate_script({
-    function: `() => {
-        const lists = JSON.parse(localStorage.getItem('songbook-lists') || '[]');
-        return lists.map(l => ({ id: l.id, name: l.name, cloudId: l.cloudId }));
-    }`
-})
-
-// 3. Take snapshots to find UI elements
-mcp__chrome-devtools__take_snapshot()
-// Returns UIDs like uid=3_44 for buttons - use these to click
-
-// 4. Click buttons and verify state changes
-mcp__chrome-devtools__click({ uid: "3_44" })  // e.g., click Share button
-
-// 5. Check console for errors
-mcp__chrome-devtools__list_console_messages({ types: ["error", "warn"] })
-```
-
-**Common scenarios:**
-- Testing modals: Navigate → take_snapshot → click trigger → take_snapshot → verify modal content
-- Testing local vs cloud state: Use evaluate_script to check localStorage before/after actions
-- Testing deep links: Navigate directly to `#list/{id}`, `#song/{id}`, `#work/{slug}`
-
-**Unit tests** (`__tests__/`):
-- `chords.test.js` - Key detection, transposition, Nashville numbers
-- `editor.test.js` - Editor functionality, ChordPro conversion
-- `search-core.test.js` - Query parsing, chord/progression filtering
-- `song-view.test.js` - ChordPro parsing
-- `song-content.test.js` - Content on demand: cache, dedupe, legacy fallback, prefetch
-- `sw-strategy.test.js` - Service-worker routing table, network-first timeout, slow/fresh latches (`shellPolicy`)
-- `tablature-bravura.test.js` - Pinned font, redraw-only-when-needed
-- `song-view-perf.test.js` - Batched wrapped-line measuring, next-in-list prefetch
-- `corpus.test.js` - Canon + archive + pending merge, archive gating
-- `corpus-lean-overlay.test.js` - Lean pending rows (no `content`), held-back rows, `overlaysNeedArchive`, cached curation sets
-- `song-content-pending.test.js` - Pending text read on open (`getPendingContent`), fork/tab takes
-- `lists-legacy-ids.test.js` - Legacy-ID map fetched only for a list that needs it
-- `tags.test.js` - Tag matching + virtual instrument tag derivation
-- `state.test.js` - State management, pub/sub system
-- `utils.test.js` - Utility functions
-
-**E2E tests** (`../../e2e/`):
-- `abc-notation.spec.js` - ABC notation rendering for fiddle tunes
-- `arrangement-pill.spec.js` - Arrangement pill (version switching/voting)
-- `editor.spec.js` - Song editor flows
-- `editor-lifecycle.spec.js` - Editor as a routed view (A7), leave prompt, and surviving the Google sign-in redirect (A5)
-- `error-states.spec.js` - Error handling and edge cases
-- `favorites.spec.js` - Favorites and lists
-- `landing-page.spec.js` - Homepage collections and navigation
-- `list-management.spec.js` - List CRUD, sharing, multi-owner
-- `navigation.spec.js` - URL routing, deep links
-- `otf-editor.spec.js` / `otf-editor-visual.spec.js` - Tablature editor
-- `print-options.spec.js` - Print view and export options
-- `search.spec.js` - Search and filtering flows
-- `search-edge-cases.spec.js` - Complex search scenarios
-- `song-view.spec.js` - Song display and controls
-- `transposition.spec.js` - Key transposition features
-- `ui.spec.js` - UI interactions, modals, navigation
-- `visual-editor.spec.js` / `visual-editor-mobile.spec.js` - Lead-sheet editor (Visual / ChordPro, chord menu, sections; phone keyboard-as-mode)
-- `work-view.spec.js` - Unified song page with parts/tablature
-
-## Adding a Feature
-
-1. **Identify the right module** - search in `search-core.js`, song display in `song-view.js`, etc.
-2. **Add state** (if needed) in `state.js` and export it
-3. **Add DOM element reference** in `main.js` DOM elements section
-4. **Implement function** in the appropriate module, export it
-5. **Wire up event listener** in `main.js` init function
-6. **Add UI** in `index.html` if needed
-7. **Style** in `css/style.css`
-8. **Test** - Run `npm test` to verify
-9. **Push** - CI will syntax-check and run unit tests
-
-## Common Patterns
-
-### Showing/hiding panels
-```javascript
-element.classList.add('hidden');
-element.classList.remove('hidden');
-```
-
-### Saving to localStorage
-```javascript
-localStorage.setItem('songbook-key', JSON.stringify(value));
-const value = JSON.parse(localStorage.getItem('songbook-key') || 'default');
-```
-
-### Re-rendering after state change
-```javascript
-showChords = e.target.checked;
-renderSong(currentSong, currentChordpro);  // Re-render with new state
-```
-
-## Data Format
-
-The index is **split three ways** (2026-07): a lean searchable canon, a lazy
-archive, and one ChordPro file per work. Nothing in `index.jsonl` carries song
-text beyond `lyrics` / `first_line` (which search snippets need).
-
-```
-data/index.jsonl      searchable canon rows              fetched at startup
-                      (2,462 on 2026-08-19 — `wc -l` it
-                       after a build rather than trusting
-                       a number in this file)
-data/archive.jsonl    pruned rows, lyrics truncated      fetched on demand
-data/songs/{id}.pro   the work's full ChordPro           fetched per song page
-```
-
-A row in `index.jsonl` (or `archive.jsonl` — same shape, plus `indexed: false`):
-```json
-{
-  "id": "blue-moon-of-kentucky",
-  "title": "Blue Moon of Kentucky",
-  "artist": "Bill Monroe",
-  "composer": "Bill Monroe",
-  "first_line": "Blue moon of Kentucky keep on shining",
-  "lyrics": "Blue moon of Kentucky...",
-  "has_content": true,
-  "has_abc": true,
-  "key": "G",
-  "mode": "major",
-  "nashville": ["I", "IV", "V", "V7"],
-  "progression": ["I", "IV", "V", "I", "V7", "I"],
-  "group_id": "abc123def456_12345678",
-  "chord_count": 4,
-  "version_label": "Simplified",
-  "version_type": "simplified",
-  "arrangement_by": "John Smith"
-}
-```
-
-**Content flags** (there is no `content` field any more):
-- `has_content: true` — a lead sheet exists at `data/songs/{id}.pro`
-- `has_abc: true` — that lead sheet contains an ABC notation block
-
-**Reading content — always through `song-content.js`, never `song.content`:**
-```javascript
-import { getSongContent, songHasContent, songHasAbc, peekSongContent }
-    from './song-content.js';
-
-if (songHasContent(song)) {            // sync, flag-based
-    const chordpro = await getSongContent(song);   // cached + deduped fetch
-}
-```
-`getSongContent` **degrades to either index generation**: a row that still
-carries an inline `content` string (the old fat index, Supabase pending rows,
-synthetic editor rows) resolves to that string with no request. Rows with
-neither the flag nor a string resolve to `''` — no speculative 404s on
-tab-only works. `peekSongContent` returns what's already in hand (or `null`)
-for code that cannot await; a failed fetch is never cached, so the song
-page's Retry actually retries.
-
-**Corpus assembly** (`corpus.js` + `loadIndex`/`loadArchive` in main.js): the
-canon blocks first paint; `archive.jsonl` (16 MB raw / 3 MB gzip) is fetched
-**only when something needs an archived row** — nothing prefetches it. The
-on-demand callers: `openWork` on an id the canon doesn't hold (after waiting
-for the overlays, which are cheaper), `#edit/` deep links, the Dungeon, a list
-view / favorites / print-export / Song Lists preview / share-text that names
-an id the canon doesn't hold (`ensureArchiveForRefs` — the list view redraws
-when the archive lands instead of silently dropping the song), the bounty
-board and the add-song picker (both match against every title), My
-Submissions (only for a target the canon doesn't hold), a merge request, the
-editor's dedup check, and `syncArchiveNeed()` (below). The merge notifies
-`allSongs` subscribers. Archive rows are forced to `indexed: false`, so
-search, collection counts and the songbook total ignore them while deep
-links, lists and redirects still resolve. Any path that fails to find an id
-awaits `window.ensureArchiveLoaded()` **once** before showing "not found".
-
-**The overlays start with the index, not after it.** `loadIndex` kicks off
-`fetchSupabaseOverlays()` (pending + deleted + promoted) before awaiting the
-canon, then races it against `OVERLAY_GRACE_MS` (800 ms) so a slow backend
-can't hold first paint; when it lands later the corpus is re-merged
-(`overlayVersion` says whether it must be). The last-known deleted/promoted
-id sets are cached in `localStorage` (`songbook-curation-deleted|promoted`)
-and applied at module load, so a deleted song doesn't flash in; the fetched
-sets *replace* the cached ones (an un-delete has to take effect).
-**`promoted_songs` rescues ARCHIVED rows into search**, and until the next
-index build folds a promotion into the canon that row exists only in
-`archive.jsonl` — so `syncArchiveNeed()` loads the archive whenever a
-promoted id (or a pending edit/tab whose `replaces_id`) names a work the canon
-doesn't hold (`corpus.overlaysNeedArchive`). Until the archive is in,
-`mergeCorpus({ archiveLoaded: false })` *holds back* exactly those pending
-rows (they have nothing to merge onto and would otherwise appear as bare rows).
-A promoted id that is also deleted, a target that is deleted, and a target that
-is itself a pending SONG row do not count as "missing". **Accepted trade-off:**
-an archived sibling of a canon work (same `group_id`) is invisible to the
-"N versions" badge and the version pills until something loads the archive
-(46 of ~2,400 canon groups; PENDING OWNER DECISION — the build-side fix is a
-group size or sibling stubs in `index.jsonl` rows). A list view that redraws
-when the archive lands must check it is still the current view
-(`currentView === 'list'`), or it yanks the user back from a song they opened
-meanwhile.
-
-**The pending overlay is lean.** `pending_songs` is fetched with
-`PENDING_OVERLAY_COLUMNS` — no `content` (up to 200 KB a chart, 2 MB a tab,
-for every visitor) — plus a second id-only query for rows that have a body
-(`has_content`). A lean song row carries `has_content` + `deferred_content`;
-a lean tab part carries `content_deferred`; a fork's pending arrangement
-carries `pending_id`. The text is read from `pending_songs` when the song
-opens: `song-content.js` `getPendingContent(id)` (fetcher installed by
-main.js), which `getSongContent`, `getArrangementContent` and `loadPartOtf`
-use. Trade-off: a brand-new *pending* song has no `first_line` / `lyrics`
-until the build publishes it, so it is found by title/artist, not by lyrics.
-A pending EDIT of a published work is unaffected: the lean row omits those
-keys (never `''`), so the merge keeps the published work's values.
-
-**The landing cards belong to the home view.** `renderCollectionCardsIfHome()`
-builds them when the home view shows (and rebuilds them when the corpus
-changed since), never for a deep link — a visitor headed for a song downloads
-none of the card images.
-
-**The legacy-ID map** (`data/legacy_id_mapping.json`, 304 KB gzip) is fetched
-by `lists.js` only when a stored list holds an id that is not a known work
-slug (`needsLegacyMapping`); ids the map was checked against and did not
-translate are remembered (`songbook-legacy-checked`).
-
-**Version fields** (for alternate arrangements):
-- `group_id`: the work's song, `song:{root work id}` (from work.yaml
-  `song:`; see "Song paths"). Versions of one song share it
-- `path`: the work's URL path, `songs/{song}/` or `songs/{song}/{version}/`
-- `version` / `version_of`: on a version, its slug and its song's root work
-- `version_label`: Display name ("Simplified", "Original", etc.)
-- `version_type`: Category (alternate, cover, simplified, live)
-- `arrangement_by`: Who created this arrangement
-
-**Curation fields** (from `curation/registry.yaml`, applied at index build):
-- `canonical`: `true` on the editorially pinned version of a group
-- `variant_of`: canonical work id this row is a variant of
-- `variant_label`: optional display label for the variant
-
-**Tablature fields** (for works with tabs):
-```json
-{
-  "tablature_parts": [{
-    "instrument": "banjo",
-    "label": "banjo",
-    "file": "data/tabs/red-haired-boy-banjo-1687.otf.json",
-    "src_file": "banjo.otf.json",   // the file inside works/{id}/
-    "source": "banjo-hangout",
-    "source_id": "1687",
-    "author": "schlange",
-    "tracks": 3          // OTF track count — >1 means "multipart"
-  }],
-  "has_abc": true        // ABC notation lives in data/songs/{id}.pro
-}
-```
-
-### Arrangement Pill & Curation Fields
-
-Version selection lives in the Arrangement pill on the song page (the old
-version-picker modal is gone). Index rows carry editorial curation fields
-from `curation/registry.yaml` (applied by `scripts/lib/curation.py` at
-build time):
-
-- `canonical: true` — this row is the editorially pinned version of its group
-- `variant_of: "<canonical-id>"` — this row is a variant of a canonical work
-- `variant_label: "..."` — optional display label for the variant
-
-The pill lists the group's versions (canonical first), shows vote counts,
-and lets signed-in users vote. When picking a group's representative
-(search results, non-exact navigation), a `canonical` row wins outright;
-otherwise: content > most chords > highest `canonical_rank`.
-
-**Two takes on one work** (`arrangements`, issue #232). Editing a chart you
-don't own doesn't overwrite it — the server lands your text as an extra
-lead-sheet part on the SAME work, and the build publishes it as
-`data/songs/{id}--{slug}.pro` with an entry in the row's `arrangements`:
-
-```json
-"arrangements": [
-  {"slug": "default", "label": "Original", "default": true,
-   "file": "data/songs/how-long-blues.pro", "key": "G", "chord_count": 4},
-  {"slug": "simplified", "label": "Simplified", "arrangement_by": "Jane",
-   "file": "data/songs/how-long-blues--simplified.pro", "chord_count": 3}
-]
-```
-
-The field is absent unless a work really holds two charts, so nothing
-changes for the rest of the corpus. In the pill, the current work expands
-into one row per take; picking one calls `selectLeadSheetArrangement` and
-swaps the rendered chart **in place** — same work, same URL, page state
-only, exactly like tablature arrangements. Votes are cast per work id and a
-part has no id, so only the primary row carries the vote button.
-
-Content per take goes through `getArrangementContent(song, arrangement)`:
-an entry's own `content` string wins (a pending submission), else its
-`file` is fetched (url-keyed cache), else the work's lead sheet.
-
-**Before the build lands**: `corpus.pendingForkArrangements` synthesizes the
-same two-entry list on the pending overlay row — the published original plus
-"Your arrangement" (`pending: true`, content inline) — so a fork is listed in
-the pill seconds after submission instead of appearing to replace the chart
-it forked from. Ownership follows `process_pending.owns_content`: the work is
-yours only if a part there records you as its submitter.
-
-## Dependencies
-
-- **Supabase JS** - CDN loaded for auth and database
-- Fetches `data/index.jsonl` at startup (canon only), `data/archive.jsonl` only
-  when something needs an archived row, and `data/songs/{id}.pro` per song page
-- Never calls the GitHub API directly (`grep -r api.github.com docs/js/` is
-  empty). Everything that reaches GitHub goes through a Supabase edge
-  function, which holds the token server-side
-
-## supabase-auth.js
-
-Handles authentication and cloud sync. It is **not** an ES module — the whole
-surface is the `window.SupabaseAuth` object literal at the bottom of the file.
-That literal is the definitive list; this table is a partial copy, so read it
-directly when a name matters:
-
-```bash
-sed -n '/^window.SupabaseAuth = {/,/^};/p' docs/js/supabase-auth.js
-```
-
-Note the key on the object is what callers use, and it does not always match
-the function's declared name (`init:` exposes `initSupabase`).
-
-| Key on `window.SupabaseAuth` | Purpose |
-|----------|---------|
-| `init()` | Initialize Supabase client (the function is `initSupabase`) |
-| `signInWithGoogle()` | OAuth sign-in flow |
-| `signOut()` | Sign out current user |
-| `getUser()` | Current authenticated user (sync, from cache) |
-| `fetchCloudLists()` | Get user's song lists from cloud |
-| `createCloudList(name)` | Create a new list |
-| `deleteCloudList(id)` | Delete a list |
-| `addToCloudList(listId, songId)` | Add song to a list |
-| `removeFromCloudList(listId, songId)` | Remove song from list |
-| `fetchGroupVotes(groupId)` | Work-level vote counts for a version group |
-| `fetchArrangementVotes(songId)` | Per-arrangement counts for one work (`''` = the work-level vote) |
-| `fetchUserArrangementVotes(songId)` | Which of one work's arrangements the user voted for |
-| `castVote(songId, groupId, value, arrSlug)` | Vote for a version; `arrSlug` null = the work's own chart |
-| `removeVote(songId, arrSlug)` | Remove the user's vote for that same arrangement key |
-| `isTrustedUser()` | Check if current user has trusted status |
-| `supabase` (getter) | The raw client — how `pending_songs` rows are written; there is no `savePendingSong` helper |
-
-## Recent Features (Jan-Feb 2026)
-
-### Contributing (phase 2b — trust gates edit rights, not speed)
-
-Every logged-in user's submission takes the same path:
-
-- saved to `pending_songs` → visible immediately (`refreshPendingSongs()`
-  merges the overlay into `allSongs`)
-- `auto-commit-song` classifies it and fires a `pending-commit`
-  repository_dispatch; `process-pending.yml` lands it in `works/`
-- the response says what happened: `{mode: 'create' | 'update' | 'fork'}`
-- **fork**: editing content you didn't submit never overwrites it — the chart
-  lands as a new arrangement on the same work and the original stays put
-- `isTrustedUser()` (the `trusted_users` table) now only decides whether an
-  edit of someone else's chart may land **in place** instead of forking —
-  plus who may file a review request (below)
-- the GitHub-issue submission flow (`create-song-issue`) is gone
-
-### Review queue (phase 2d — the destructive residue)
-
-`review-queue.js` renders `#review-queue-panel` in the Bluegrass Dungeon.
-Deletions, suppressions and merge-redirects are the only asks left that wait
-on a human:
-
-- **admin** → instant delete, unchanged (`🗑️ Delete song` in the song
-  overflow); admins are the reviewers, so queueing them would be ceremony
-- **trusted, not admin** → the same slot becomes `🗑️ Request deletion`,
-  which writes a `review_requests` row
-- **trusted** (admin or not) also gets `🙈 Request suppression` and
-  `🔀 Request merge into another song…` in the overflow — neither kind has
-  an instant admin path (approval only ever prints a local command, below),
-  so both are offered as requests unconditionally on `isTrusted()`. Each
-  opens a small modal (`showSuppressRequestDialog` / `showMergeRequestDialog`
-  in review-queue.js, same DOM-built-Promise shape as the editor's
-  `showDedupModal`): suppression requires a reason (it's the only context a
-  reviewer gets); merge-redirect searches the corpus via `searchWorksForTab`
-  (add-song-picker.js — reused, not rebuilt) and previews "Redirect THIS →
-  TARGET" before filing `kind: 'merge-redirect'` with
-  `payload: {redirect_to: targetId}`
-- approving a `delete` in the panel executes it (the `delete_song` RPC) and
-  mirrors it into the client corpus; approving a `suppress` or
-  `merge-redirect` records the decision and **prints the local command**,
-  because those edit files in the repo and no CI path does it from a table
-
-The panel has three sections: **Waiting on you** (pending requests),
-**Decided** (history, including any command still owed a local run), and
-**Held by dedup backstop** — `pending_songs` rows where 3b's backstop set
-`dedup_hold`. Nothing commits a held row; admins get *Release hold*
-(`dedup_hold` → null, so the hourly reconciler re-dispatches it — the toast
-says "not committed yet" rather than pretending otherwise) and *Reject*
-(deletes the pending row, behind a confirm). The hold read is separate from
-the request read: if the `dedup_hold` column isn't deployed the section shows
-the error and the rest of the queue still renders.
-
-Document upload is gone with 2d (`doc-upload.js`, the `#upload` view, the
-picker's Upload card, the editor's "Upload a photo instead" hatch). Document
-*parts* already in `works/` still render — `renderDocumentPart` in
-`work-view.js`. The intake died; the shelf did not.
-
-### Feature tour (`tour.js`, G14)
-
-Nine steps: Key (`#key-pill`), Lists (`#list-picker-btn`), Edit
-(`#edit-song-btn`); then three that play a song into the real lyrics & chords
-editor (`tour-editor-demo.js`, below); then tab Play (`.tab-play-btn`), tab
-Edit (`.tab-edit-btn`, or `.tab-more-btn` when a phone band has moved Edit
-into the ⚙ sheet), and your own TablEdit files. That last one is a `dropZone` step: there is no single `.tef` control
-(drop anywhere, `pwa.js enableFileDrop`; Add Song ▸ Tablature ▸ 📂 Import
-.tef… on a phone), so the ring outlines the page itself, dashed like
-`body.file-dragover`. **Its copy was checked against the app** (2026-10-27):
-a drop opens the editor signed out on the home, song and tab pages; Add Song
-▸ Tablature asks for sign-in BEFORE the editor and opens an empty take, the
-file going in through 📂 Import .tef… — so the card says "sign in" for the
-phone path and for Submit. Re-check it if either flow changes. The steps are data (`TOUR_STEPS`); a step's `targets`
-are tried in order and the first visible one is ringed.
-
-- **The editor demo** (`tour-editor-demo.js`, `/#add`): *Write in a song*
-  types "Will the Circle Be Unbroken" (the 1907 Habershon/Gabriel hymn,
-  public domain; not A.P. Carter's 1935 words the book also carries, which
-  ship nowhere in code), *Sort it into sections* selects lines and presses the
-  section bar's Verse / Chorus, *Add the chords* switches to Chords and
-  presses G / C / D cells down the chorus. It presses the REAL buttons, ringed
-  first; the only editor hooks are `lead.present.select / boxAt / end`
-  (`lead-editor/index.js`): a selection that shows the section bar WITHOUT
-  focusing the editor (focus would raise a phone's keyboard), and the chord
-  box on a syllable. The ring outlines the selected lines itself, since an
-  unfocused editor draws no selection. Each phase starts from its own known
-  state, so Back replays and Next skips ahead. The demo's mode change is not
-  remembered (`persist: false`). A trusted press or key in the editor stops it
-  (`takeOver`). The tour calls `resetEditorForNewSong()` before it navigates
-  away from the editor and when it closes there, so nothing is kept and
-  leaving never asks about unsaved changes. On a phone the card keeps out of
-  the docked section bar and chord picker (`freeArea`'s `BOTTOM_BARS`) and
-  moves to the other end of the screen off the line being worked on
-  (`reveal`). main.js hands the tour `editor: { lead, reset }`.
-- **The card has to be found without a backdrop:** a 2px accent frame and
-  halo, a `✨ Tour · 3 of 7` label (so it never reads as one of the app's own
-  popups), an arrow on the edge facing the control (`--tour-arrow-x`, from
-  `placeCard`'s `arrow`), and an arrival animation: the card slides in from
-  the control's side and the ring ripples three times (`.tour-arrive`,
-  `.tour-ping`). It plays when a step shows and again when its control turns
-  up, so a step that waited for a page to load still says where it landed.
-
-- **The invitation.** A first-time visitor's band carries `#topbar-tour`
-  (`setTourInvite` in `shell.js`): three slow pulses, then a steady glow; no
-  animation under `prefers-reduced-motion`. Opening it sets
-  `localStorage['songbook-tour-seen']`, after which the button is gone and
-  the tour is `⋯ ▸ ✨ Take the tour` (`#overflow-tour`), the FIRST item of
-  the ⋯ menu on every page (`setOverflowLead` in `shell.js`: under a phone
-  song page's own five items it was not found). It never opens itself.
-- **Links.** `?tour` starts it (on the linked song when the path is one);
-  `?tour=reset` forgets the visit so the glowing button is back (testing on
-  a phone). `handleTourLink` in `main.js` takes the parameter out of the URL
-  at once.
-  No animation anywhere in the tour under `prefers-reduced-motion`.
-- **Pages.** Song-page steps run on the reader's own song when they started
-  on one (Key + Edit visible), otherwise on `old-home-place`; tab steps on
-  their own tab, otherwise `foggy-mountain-breakdown/banjo-tab`. Add Song
-  stays wherever its nav link is showing and goes home when it isn't (a
-  phone song page hides the nav). Done returns to the starting URL.
-  Navigation is the in-page link mechanism: `pushState` + a synthetic
-  `hashchange`.
-- **Unobtrusive.** No backdrop. The card (`z-index: 899`) is under both
-  bands and everything that opens from them, and `placeCard` keeps it in
-  the free area between the bands. The ring (`901`) never takes a click and
-  hides while the ringed control has a popover open. If the ringed control
-  has been gone for 1.5s (a drop-zone step has none, so it never does) (the reader followed a link, pressed Back, opened
-  the editor), the tour ends. It refuses to start from either editor.
-- **Analytics:** `tour_start {source}`, `tour_step {step, index}`,
-  `tour_end {finished, step, index}`.
-- Tests: `__tests__/tour.test.js` (steps, placement, the runner and the
-  demo lifecycle on stub pages), `__tests__/tour-editor-demo.test.js` (the
-  song, chord positions) and `e2e/tour.spec.js` + `e2e/tour-mobile.spec.js`
-  (the real walk, the demo's text at each phase, taking over, nothing left).
-
-### Auto-hiding chrome
-
-The song page enables `setChromeAutoHide(true)`: scrolling down hides the
-top band (`body.chrome-hidden`), scrolling up or returning to the top
-reveals it. Edit lives in the title row (`#edit-song-btn`); the phone-width
-band keeps only back / logo / Lists / overflow.
-
-### Strum Machine Integration
-
-Songs with matching Strum Machine backing tracks get a link in the always-visible
-**Practice** line under the title/artist (`practiceLineHtml` in work-view.js,
-`practiceLinks` in song-controls.js); every song also gets a YouTube search link
-(`title + ' bluegrass'`). Not shown on provisional `#new-tab` pages.
-
-- Matching done via title normalization (handles "The", parenthetical suffixes)
-- Opens Strum Machine in new tab with current key
-- 709 songs matched
-- Cache in `docs/data/strum_machine_cache.json`
-
-### Covering Artists
-
-Songs display which bluegrass artists have recorded them (from grassiness scoring).
-
-- Shown in song metadata below title
-- Sorted by artist tier (founding artists first)
-- Searchable via `covering:artist name` filter
-- Data from `grassiness_scores.json`
-
-### Unified Feedback Modal (`flags.js`)
-
-ONE modal for all feedback — song issues (wrong chord, lyric error, etc.),
-bug reports, and general feedback — no GitHub account needed.
-
-- `openFeedbackModal({ type, song })` with a type selector
-  (`song-issue`, `song-correction`, `bug-report`, `general-feedback`)
-- Copyright: every song's overflow also has `© Copyright concern`
-  (`#copyright-btn`, all visitors), a mailto to hello@bluegrassbook.com
-  built by `utils.copyrightMailto`. The trusted-only "Request suppression"
-  is the internal path; this is the one a rights holder can reach.
-- Entry points: "🚩 Report issue" in the song page's overflow menu,
-  "Send Feedback" in the shell's overflow menu, homepage report-bug link
-- Creates GitHub issues via the `create-flag-issue` Supabase edge function
-- **No login required** (Phase 2a) — a report is complete at the toast.
-  Attribution is derived SERVER-SIDE from the session when one exists, and
-  is simply "Anonymous" when it doesn't; the client never sends a name
-
-### Song Requests (`add-song-picker.js`)
-
-Frictionless song requests without a GitHub account.
-
-- `openAddSongPicker({ mode: 'request' })` — reachable via the
-  `#request-song` hash and the bounty page's "Request a Song" button
-- Goes through the `create-song-request` Supabase edge function, which
-  branches on identity: **signed in** → a `pending_songs` placeholder the
-  requester owns (and lands on); **anonymous** → a `tune-request` GitHub
-  issue and a confirmation, with no placeholder work minted
-- The signed-in branch takes the same road as every other contribution
-  (2026-08-19): a `pending_songs` row with `status: 'placeholder'` and no
-  content, then the `pending-commit` dispatch → `works_writer`. It used to
-  PUT `work.yaml` to the GitHub Contents API itself, passing the existing
-  file's sha whenever the slug was taken — i.e. **overwriting a real work
-  with an empty stub**. See "Contribution Workflow" in `supabase/CLAUDE.md`.
-- **A request for a song that already exists is refused with a 409**, whose
-  message (`"<title>" is already in the songbook.`) the picker shows in
-  `reqStatus`. The dedup warning in front of the form stays advisory; this
-  is the answer that binds, and there is deliberately no suffixed fallback
-  (an empty placeholder at `foo-1` is a bounty entry for a song we have)
-
-### Contributing a tab (`otf-editor/create-tab-entry.js`, `existing-tabs.js`)
-
-Two entry points open the tab editor pre-targeted at a work — the work
-page's "+ Add a tab" / tablature-bounty Contribute, and the add-song
-picker's Tablature card — both routing to `#work/{slug}/add-tab` (or
-`#new-tab` when no work is named) with `?instrument=&title=&have=`.
-
-**A work that already has tabs for that instrument says so BEFORE the
-editor opens** (contract principle 4 — the offramp is offered early, never
-discovered at Submit). `tabEntryPlan(song, instrument)` reads
-`tablature_parts` straight off the index row (no fetch) and matches
-instrument families the way `tags.js getInstrumentTags` does, so a
-`5-string-banjo` part answers to `banjo`. When it finds any,
-`renderExistingTabsPanel` offers three ways forward:
-
-- **view** an existing take → `#work/{id}/{partId}`
-- **add mine as another version** → `#work/{id}/add-tab`: the same song page
-  with an unsaved take added to the versions list, editor open
-- **import a .tef** → the same mode, with the parsed document loaded
-- **improve this one** → the tab-correction path (`enterTabEditMode`), via
-  `requestTabEdit(workId, file)` when the work page isn't already open
-
-Same-instrument siblings are normal (foggy-mountain-breakdown carries
-eight banjo takes), so the server **adds** a uniquely-named part rather
-than 409ing. A correction names the take it fixes with `src_file` — the
-published `file` name can't be mapped back to `works/`.
-
-**Submitting is the same two steps a song takes** (`submit-tab.js`). The
-GitHub-PR flow is gone: `create-tab-pr` and `process-tab-pr.yml` are
-deleted, and nothing may call them.
-
-1. write the `pending_songs` row → **live in seconds**
-2. `POST {id}` to `auto-commit-song` → durable in `works/` in minutes
-
-Three columns make the row a part rather than a song — `part_type`
-(`'lead-sheet'` | `'tablature'`), `instrument` (required, and it becomes
-the filename), and `part_file` (the works/ filename a CORRECTION targets;
-null for a new take) — and a tablature row's `content` is the serialized
-OTF document. The client never claims create/add/update; step 2's response
-says what the server decided. `submitTab` resolves the moment the tab is
-LIVE and reports the durable half separately:
-`{id, workId, instrument, partFile, live, synced, mode, syncError}`. A
-`synced: false` is **not a failure** — the row is live and the hourly
-reconciler retries the commit; say "live, syncing shortly".
-
-**The overlay is parts-aware** (`corpus.js`). A pending tablature row is
-never a row of its own in search — `applyPendingTabs` attaches it to the
-work it targets as an entry in that work's `tablature_parts`
-(`overlayPendingTabParts`: a `part_file` match REPLACES that take keeping
-its label/author/`file`; no match APPENDS a take). Only a tab whose work
-nothing has published yet becomes a row, shaped like the tab-only works
-the index build emits. The work itself is *not* flagged `source: 'pending'`
-— it is as durable as it was; only the part is pending.
-
-**Rendering a pending take** (`work-view.js`): `loadPartOtf(part)` parses
-the overlay's `content` (read from `pending_songs` when the take is opened,
-since the boot overlay is lean) instead of fetching `data/tabs/…otf.json`
-(which does not exist yet); the committed path is unchanged. `otfCacheKey(part)`
-keys a pending take by its overlay row, because a correction keeps the
-`file` of the take it fixes and would otherwise hit the cache and render
-the very version it corrects. The page says so out loud ("Just submitted —
-live here now"), and the arrangement bar lists the take as *New submission
-· just submitted*.
-
-In **My Submissions** a tab is now `Live` like everything else, through the
-generic rule — no tab-specific branch. It used to sit at "Requested" until
-a human merged its PR, the inconsistency
-`docs/plans/contribution-pipeline.md:204-210` accepted on purpose.
-
-### Editing a work's details (`work-view.js` + `corpus.js` + `utils.js`)
-
-Title / artist / key / notes belong to the WORK, not to any part — so they
-get their own affordance and their own kind of pending row. The case that
-forced it: a tab-minted work (`works/welcome-to-new-york/`) arrived with a
-title and nothing else, and no surface could give it an artist. The metadata
-editor existed but was reachable only from `status: 'placeholder'`, which a
-tab-minted work never has.
-
-**The affordance**: `🏷️ Details` in the title row (`#edit-meta-btn`, the
-same `.focus-btn` shell as Edit — *not* `.qc-btn`, which is the icon-only
-32x32 tab-band button and must never hold a word). Deliberately NOT
-part-scoped the way `#edit-song-btn` is: a tablature part hides Edit (there
-is no chart to edit) but the work still has details, and that is exactly the
-work that needs them. It is gated on the viewer instead —
-`canEditWorkMetadata(song, {userId, trusted})` in `utils.js`: **own a part of
-this work, or be trusted.** The gate is re-asked on every `updateWorkTopBar`
-because both halves resolve late. The empty artist line shows an "Artist
-unknown" nudge only to someone who can act on it.
-
-**Ownership, client-side**, is read from what the index row publishes
-(`workSubmitters`): `submitted_by` (primary chart), `arrangements[]`,
-`document_parts[]`, `tablature_parts[].submitted_by`, plus `created_by` on a
-pending overlay row. ⚠️ **`build_works_index` does not publish
-`submitted_by` on `tablature_parts` yet** — the uuid is in
-`work.yaml` (`provenance.submitted_by`) but the row keeps only `author`, a
-display name that is not comparable to `auth.uid()`. So a tab submitter has
-the affordance from the overlay (corpus attaches `submitted_by` to a pending
-part) and loses it once their work is published, until the index carries the
-field. Trusted users are unaffected, and the server is authoritative either
-way.
-
-**The row** (`submitWorkMetadata`) is neither a chart nor a part:
-
-| field | value |
-|---|---|
-| `id` | `meta:<slug>:<rand>` — its own namespace (DB CHECK), memoized per work so a double-click updates one row |
-| `part_type` | `'metadata'` |
-| `content` | `null` — the row owns no bytes |
-| `replaces_id` | the work being edited, **required**: it is the row's whole address |
-| `title` / `artist` / `key` / `notes` / `created_by` | the edit |
-
-Then `POST {id}` to `auto-commit-song`, like every other contribution. One
-deliberate difference in how step 2 failing is read: for a tab, step 2 is
-only durability, so any failure is "syncing shortly". For metadata it is also
-where **permission** is decided, so a 4xx (403 no claim, 404 no such work,
-400 no target — but not 429) means REFUSED: the row is deleted again so the
-overlay stops advertising an edit that will never land, and the server's own
-message is raised.
-
-**The overlay** (`corpus.applyPendingMetadata`, run last in `mergeCorpus`)
-merges the fields onto the work it names and nothing else: it never mints a
-row (unlike a tab, there is no song behind it), never touches the parts, and
-never flags the work `source: 'pending'`. It drops `_stems` so search follows
-the new title, and the newest `created_at` wins when two edits are in flight.
-A `pending_metadata` marker on the row drives the "Just edited" badge.
-
-The `savePlaceholderMetadata` path is **gone**, replaced entirely — it wrote
-`status: 'placeholder'` and round-tripped the chart through `content`, which
-on a tab-only work read `''` and would have stamped `status: placeholder`
-onto a legitimate work. `showMetadataEditor` (formerly `showPlaceholderEditor`)
-still serves real placeholders through `handleEditAction`, unchanged.
-
-### Bounty board dedupe (`title-match.js` + `bounty-view.js`)
-
-The wanted list used to advertise songs the book already had — "Can the Circle
-Be Unbroken" while three `will-the-circle-be-unbroken` works sat indexed.
-`partitionWanted()` filters it at render from two sources:
-
-1. **`data/bounty_decisions.json`** — the adjudicated verdicts, built from
-   `curation/bounty_decisions.yaml` by `scripts/lib/bounty_decisions.py` during
-   the index build. These are the alias calls no algorithm gets right.
-2. **A live re-check against `allSongs`** via `title-match.js`. This is what
-   keeps the page honest between builds: a contribution in `pending_songs` is
-   in `allSongs` before any generator has run again.
-
-`title-match.js` deliberately exposes **no fuzzy ratio**. Scores in the
-0.80–0.93 band interleave true and false pairs at identical values
-(`Come All Ye Tenderhearted`/`Come All You Tender Hearted` is real at 0.92;
-`500 Miles`/`900 Miles` is not at 0.89), so there is nothing safe to do with
-the number. It auto-resolves exact and token-set matches only, and returns
-**candidate arrays, never a best match** — ranking by score once put
-`Carpet on the Floor` ahead of the three real Pallet works.
-
-A covered entry whose work is lyrics-only is dropped from "Missing Jam
-Standards" but not deleted: `computeChordGaps()` already lists it under
-"Needs Chords". Listing it in both places was the original double-count.
-
-See `sources/bounty-hunt/CLEANUP-PLAN.md` for the full evidence.
-
-### Multi-Owner Lists & Thunderdome
-
-Lists can have multiple owners for collaborative curation.
-
-- **Follow/Unfollow**: Follow someone else's list to see it with your lists
-- **Thunderdome**: when the last owner leaves a list that has followers it
-  becomes *orphaned*; any follower can claim it within 30 days
-  (`claim_orphaned_list`). The Claim button shows for a follower of an orphaned
-  list, whether they arrived by share link or through their followed lists.
-- **Shareable URLs**: `#list/{id}` URLs work for any list, signed in or not
-- Lists stored in the Supabase `user_lists` table with an `owners` uuid array
-- **Who can read the tables**: only a list's owners and followers, and only
-  signed in (RLS). Everyone else, including signed-out visitors, views a list
-  through the `get_public_list` RPC. See "Row-Level Security" in
-  `supabase/CLAUDE.md`. The client never calls `add_list_owner`;
-  `leaveList()` calls `remove_list_owner(p_list_id)`, which can only remove the
-  caller.
-- **`SupabaseAuth.fetchPublicList(id)` returns one shape**, normalized from the
-  RPC's snake_case in one place (`normalizePublicList` in `supabase-auth.js`):
-  `{ list, songs, isOwner, isFollower, isOrphaned, canClaim }`, with `songs`
-  top-level (there is no `list.songs`). That is also what `viewingPublicList`
-  holds. Read these keys, never `is_owner` / `can_claim`; a test feeds the real
-  RPC response through the real `supabase-auth.js` to keep it that way
-  (`__tests__/supabase-auth-public-list.test.js`, `lists-public-view.test.js`).
-- **Analytics** (`analytics.js`) batches events to the `log_events` RPC,
-  and `main.js` counts the visit with `log_visit` — both ONLY when
-  `telemetry.js telemetryEnabled()` (production host, `navigator.webdriver`
-  false). Elsewhere `initAnalytics` stays off and the home page reads totals
-  with `get_visitor_stats`. The Supabase project is production everywhere, so
-  without the gate local servers, phone tests, Playwright and crawlers each
-  counted as new visitors (Oct 2026).
-  `supabase.rpc` resolves `{ error }` rather than throwing, so `flush()` checks
-  it and re-queues the batch on failure (one flush interval of back-off).
-  `search` carries its `scope`, `search_result_click` says `from_list`, and
-  `openWork`'s not-found page logs `song_not_found`: `./scripts/utility
-  search-gaps` reads them back (see `analytics/CLAUDE.md`).
-
-### Shareable Lists
-
-Lists can be shared via URL and viewed by anyone.
-
-- `#list/{list-id}` - View a specific list
-- `#favorites/{user-id}` - View someone's favorites
-- Public by default, owner can make private
-
-### Submitter Attribution
-
-All user-submitted content tracks who submitted it, and **the client never
-says who that is** (Phase 2a). The browser sends its session token; the edge
-function calls `supabase.auth.getUser(token)` and builds the attribution
-string from the verified user (`full_name` → `email` → `user:<id>`). There is
-no `submittedBy` request field and no "Rando Calrissian" fallback.
-
-- **Content writes require login** — song submission/correction AND tab
-  submission/correction, all four now the same path (`pending_songs` +
-  `auto-commit-song`). No token, no write: `submitTab` refuses to touch the
-  table without a session, and the function answers 401.
-- **Reports and requests stay anonymous-capable** — `create-flag-issue`
-  always, `create-song-request` in its issue branch. Anonymous callers are
-  attributed "Anonymous" and throttled by IP.
-- Shared helper: `supabase/functions/_shared/identity.ts`
-  (`requireUser` / `optionalUser` / `attributionFor` / `rateLimited`)
+## Lead-sheet editor shell (`editor.js`)
+
+- Every reader of the song text goes through `getText()` / `setText()` (submit,
+  copy, download, dirty check, sign-in return record, transpose).
+  `#editor-content` is only a hidden fallback textarea.
+- The editor is a view entered through `currentView` (`enterEditMode` calls
+  `setCurrentView('add-song')`); do not hide the song page by hand. Leaving with
+  unsaved edits shows `promptUnsavedChanges` (never `window.confirm`; a test
+  forbids native dialogs), and `main.js::guardEditorExit` defers `exitEditMode()`
+  until the answer because the navigation has already happened.
+- Ownership wording mirrors the server (`pending-dispatch.ts`): the submitter and
+  trusted users update in place ("Submit Correction"); everyone else forks
+  ("Save as My Arrangement"). `editsInPlace()` decides.
+- There is deliberately no Edit Comment field: `pending_songs.notes` becomes the
+  work's `notes` when an edit lands on the primary chart (`process_pending.py`),
+  so a free-text comment would overwrite the song's description.
+- The sign-in redirect (`auth-return.js`) restores the route and the editor's
+  text; see `CONTRIBUTIONS.md` before changing it.
+
+## Smaller rules
+
+- Contributions: every logged-in submission is a `pending_songs` row, then a POST
+  of its id to the `auto-commit-song` edge function; the client never claims
+  create/update/fork and never sends who the submitter is. The `create-song-issue`
+  and `create-tab-pr` flows are deleted; nothing may call them.
+- Bounty board: `title-match.js` exposes no fuzzy ratio on purpose (scores
+  0.80-0.93 mix true and false pairs: `500 Miles` / `900 Miles` scores 0.89) and
+  returns candidate arrays, never a best match. `partitionWanted()`
+  (`bounty-view.js`) also filters against `data/bounty_decisions.json`, built from
+  `curation/bounty_decisions.yaml`. Evidence: `sources/bounty-hunt/CLEANUP-PLAN.md`.
+- Lists: owners and followers read the tables (RLS); everyone else uses the
+  `get_public_list` RPC. `SupabaseAuth.fetchPublicList` returns
+  `{list, songs, isOwner, isFollower, isOrphaned, canClaim}` (normalized in
+  `normalizePublicList`); read those keys, never `is_owner` / `can_claim`.
+- Analytics (`analytics.js`) run only when `telemetry.js::telemetryEnabled()`
+  (production host, `navigator.webdriver` false), because the Supabase project is
+  production everywhere and local servers and crawlers counted as visitors.
+  `supabase.rpc` resolves `{error}` rather than throwing, so `flush()` checks it
+  and re-queues.
+- Document upload is gone, but document parts already in `works/` still render
+  (`renderDocumentPart`, work-view.js).

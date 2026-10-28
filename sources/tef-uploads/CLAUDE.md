@@ -1,66 +1,20 @@
-# TEF Uploads Source
+# TEF Uploads
 
-User-uploaded TEF (TablEdit) files for conversion to OTF tablature.
+User-supplied TablEdit (`.tef`) files kept for conversion to OTF tablature.
+There is no upload endpoint yet; the three files in `uploads/` are all there is.
 
-## Structure
+- `uploads/` is gitignored (root `.gitignore`). The existing files are tracked
+  because they predate that rule; a new `.tef` needs `git add -f`.
+- `parsed/` does not exist. Create it before writing output.
 
-```
-tef-uploads/
-├── uploads/     # Raw TEF files (see caveat below)
-└── CLAUDE.md    # This file
-```
-
-⚠️ `parsed/` does **not** exist — nothing has created it yet. The conversion
-snippet below writes into it, so `mkdir -p sources/tef-uploads/parsed` first
-or `open(...)` raises `FileNotFoundError`.
-
-⚠️ `uploads/` is listed in the repo-root `.gitignore`
-(`sources/tef-uploads/uploads/`). The three files below are tracked because
-they predate that rule; a **new** `.tef` dropped in `uploads/` will be
-ignored and needs `git add -f` to be committed.
-
-## Current Files
-
-| File | Description | Source |
-|------|-------------|--------|
-| `mandolin_foggy_mountain_breakdown.tef` | Mandolin break | Joe Carr's Magical Mandolin Method (1978) |
-| `shuck_the_corn.tef` | Ensemble arrangement | Unknown |
-| `shuck_the_corn_banjo_only.tef` | Banjo-only version | Unknown |
-
-## Converting TEF to OTF
-
-Use the banjo-hangout TEF parser (it works for any stringed instrument):
+Convert one file with the Banjo Hangout parser (`convert-file` takes any
+stringed instrument and needs no catalog):
 
 ```bash
-cd sources/banjo-hangout/src && uv run python -c "
-from tef_parser import TEFReader, tef_to_otf
-import json
-
-tef_path = '../../../sources/tef-uploads/uploads/YOUR_FILE.tef'
-reader = TEFReader(tef_path)
-tef = reader.parse()
-
-otf = tef_to_otf(tef)
-otf_dict = otf.to_dict()
-
-# Save result
-with open('../../../sources/tef-uploads/parsed/YOUR_FILE.otf.json', 'w') as f:
-    json.dump(otf_dict, f, indent=2)
-"
+mkdir -p sources/tef-uploads/parsed
+uv run python sources/banjo-hangout/src/batch_import.py convert-file \
+  sources/tef-uploads/uploads/FILE.tef sources/tef-uploads/parsed/FILE.otf.json
 ```
 
-## Future: Upload Endpoint
-
-This directory will eventually be wired to an upload endpoint where users can:
-
-1. Upload TEF files directly
-2. Auto-convert to OTF
-3. Preview the tablature
-4. Submit for inclusion in the songbook
-
-## Notes
-
-- TEF files are proprietary TablEdit binary format
-- Parser supports V2 format; some V3 files may not work
-- Multi-instrument files produce multiple tracks in the OTF
-- Check `sources/banjo-hangout/CLAUDE.md` for parser details
+Parser details and V3 status: `sources/banjo-hangout/CLAUDE.md` and
+`.claude/skills/tab-debug/SKILL.md`.

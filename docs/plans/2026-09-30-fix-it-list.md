@@ -94,7 +94,7 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | G13 | Home page "visitors" counter was mostly our own test runs: 37k of 40.6k visitors were one-shot E2E/bot arrivals in bursts of 70–170/min that line up with E2E sessions (Jan, Jul–Oct) | S | `bug/telemetry-prod-only` | done — #307 (2026-10-27): `log_visit` + `log_events` only on bluegrassbook.com and never under automation (`docs/js/telemetry.js`); every E2E spec imports `test` from `e2e/fixtures.js` (Supabase mock per context, `assertClean()` after; 35 of 40 specs used to hit production; `tests/test_e2e_specs_use_fixtures.py`); `*.supabase.co` unresolvable under Playwright. Production cleaned the same night: 37,016 one-shot visitors in 61 burst hours (13,233 + 23,783) deleted and `visitor_stats` reduced to match (home page 46,158 views · 40,634 visitors → 9,645 · 4,097); backups in `~/workspace/bluegrassbook.com/backups/visitor-cleanup-*.json`. Two hours kept as possibly real (2026-01-02 07:00, 2026-02-08 06:00 UTC: no dev activity). Open: worktrees still on pre-#307 code keep adding bursts when they run E2E (468 at 2026-10-28 05:00 UTC) — rebase them, then re-run the same rule. No foreign keys or triggers reference `visitors` (live schema dump), so deleting rows touches nothing else |
 | G14 | Visitors from Google can't tell what the book does beyond the page they landed on: nothing points at lists, adding or editing songs, or tab playback and editing | M | `feature/feature-tour` | done — #312 (2026-10-28): a glowing ✨ Tour button for first-time visitors (gone once opened; then ⋯ ▸ Take the tour) starts a nine-step walk over the real controls (Key, Lists, Edit; a song played into the real lyrics & chords editor — typed in, sorted into sections, chorded — using the 1907 public-domain "Will the Circle Be Unbroken"; tab Play, tab Edit, then the page outlined as a drop zone for your own `.tef` files: open, edit in the browser, submit to the book). Cards are framed in the accent colour, labelled "Tour", point at their control and animate in; `?tour` links start it, `?tour=reset` brings the glow back; once seen it leads the ⋯ menu. No backdrop; the reader's own song when they're on one, else Old Home Place / Foggy Mountain Breakdown's banjo tab; Done goes back. `docs/js/tour.js`; `tour_*` analytics events |
 | G15 | Your own tab files have no private round trip: open (no Open dialog; drag-drop or the installed app's file handler only — the one 📂 Import .tef button is behind sign-in in Add Song ▸ Tablature, so a signed-out phone cannot open a file at all), work on it (autosaved to a local draft, ⋯ ▸ Drafts — this part exists), save it (⬇ Download writes `.otf.json`; nothing writes `.tef` back). Submitting to the book is the only end anyone finds, which risks filling the index with personal files, and storing people's files is its own worry | M–L | — | open question (Mike, 2026-10-27): no design yet. Found while checking the G14 tour's `.tef` card, whose copy currently ends at Submit |
-| G16 | Agent docs outgrew their use: the root `CLAUDE.md` was 601 lines (Anthropic's guidance is under 200 per file), half of it architecture an agent reads from the code; every new paseo worktree started with no deps and no index; the `add-issue` skill didn't know this backlog, and `github-project` said to squash-merge | S | `docs/refresh-agent-docs-paseo-workflow` | in review: `paseo.json` (setup runs `./scripts/bootstrap`, ~25 s; `web` service on its own port; `test` script); root `CLAUDE.md` cut to commands, the worktree → PR → merge loop, rules and gotchas; works and generated-data detail moved to path-scoped `.claude/rules/`; README, ROADMAP, `add-issue`, `github-project` refreshed. Follow-ups below |
+| G16 | Agent docs outgrew their use: the root `CLAUDE.md` was 601 lines (Anthropic's guidance is under 200 per file) and the nested ones 8,500 more, much of it architecture an agent reads from the code and some of it wrong; every new paseo worktree started with no deps and no index; the `add-issue` skill didn't know this backlog, and `github-project` said to squash-merge; dead docs and abandoned imports sat in the tree | M | `docs/refresh-agent-docs-paseo-workflow` | in review: `paseo.json` (worktree setup, `web` service, `test` script); root `CLAUDE.md` 601 → ~150 lines plus path-scoped `.claude/rules/`; nested docs 8,546 → 3,069 lines, each fact re-checked against the code; dead docs and abandoned experiments deleted; issue skills refreshed; all 72 open issues audited (actions await Mike). Follow-ups below |
 
 ### How it ships
 
@@ -1427,7 +1427,7 @@ Flatt & Scruggs is three separate songs (`a-hundred-years-from-now`, `-2`,
 `-3`, same first line), not versions — three near-duplicate pages to Google.
 Tests: `tests/test_song_pages.py`.
 
-### G16 — Agent docs and the paseo worktree loop · S
+### G16 — Agent docs and the paseo worktree loop · M
 
 2026-10-28. Checked against Anthropic's current guidance for agent docs
 (https://code.claude.com/docs/en/memory and
@@ -1439,59 +1439,84 @@ over-apply; make any rule that has no exceptions a hook or a test.
 
 Done on `docs/refresh-agent-docs-paseo-workflow`:
 
-- `paseo.json`: new worktrees run `./scripts/bootstrap` (about 25 s with warm
-  caches: `.venv`, `node_modules`, Supabase link, index and song pages). A
-  `web` service serves the worktree on its own port with a paseo proxy URL; a
-  `test` script runs Vitest and pytest. Paseo reads the file from `main`, so
+- **`paseo.json`.** New worktrees run `./scripts/bootstrap` (about 25 s with
+  warm caches: `.venv`, `node_modules`, Supabase link, index and song pages).
+  A `web` service serves the worktree on its own port with a paseo proxy URL;
+  a `test` script runs Vitest and pytest. Paseo reads the file from `main`, so
   it takes effect once this merges.
-- Root `CLAUDE.md` 601 → about 150 lines: commands, the worktree → PR → merge
-  loop, rules, gotchas, and where to read more. The architecture tour and
-  feature history are gone (the code and README cover them). The works
-  schema and the generated-data tiers moved to `.claude/rules/works.md` and
+- **Root `CLAUDE.md`, 601 → about 150 lines:** commands, the worktree → PR →
+  merge loop, rules, gotchas, and where to read more. The works schema and the
+  generated-data tiers moved to `.claude/rules/works.md` and
   `.claude/rules/generated-data.md`, which load only when an agent touches
-  those files. Its part-type recount command matched only indented lines and
-  reported 462 lead sheets and no tabs; the moved copy is fixed.
-- `add-issue`: searches the fix-it list as well as GitHub, links fix-it IDs
-  both ways, keeps off the labels the site's 🚩 Report issue flow sets
+  those files. The old part-type recount command matched only indented lines
+  (462 lead sheets, no tabs); the moved copy is fixed.
+- **Nested docs, 8,546 → 3,069 lines.** All 25 subdirectory `CLAUDE.md` files
+  were cut to what the code can't say, and each fact kept was checked against
+  the code. Reference material that some tasks need moved beside its doc
+  (`docs/js/{OFFLINE,CORPUS,CONTRIBUTIONS,TOUR}.md`,
+  `scripts/lib/process-pending.md`, `sources/banjo-hangout/TEF-FORMAT.md`).
+  `docs/js/otf-editor/DESIGN.md` (1,162 → 302) is the tab editor's Help ▸ About
+  page and the OTF format reference, so it was rewritten to match the shipped
+  editor rather than deleted. A blind reader check (`write:check`) flagged
+  references a fresh agent couldn't resolve, and each was repaired.
+  Wrong facts found and fixed along the way include: the edge functions read
+  `GITHUB_PAT`, not `GITHUB_TOKEN`; the tab editor has three modes, not five;
+  there is no `covering:` search filter; the build does publish `submitted_by`
+  on tab parts; `grassiness.py` defaults `MB_PORT` to 5432, not the local 5440;
+  Hangout `downloads/` is tracked, not gitignored; the `fuzzy_group_songs` pass
+  needs lyrics as well as title similarity.
+- **Deleted:** `APP_SPEC.md` (pre-redesign product spec), the committed
+  `coverage/` report (now gitignored), the root `.env.example` (described a
+  bootstrap step that no longer exists), `docs/superpowers/` (plan and spec
+  for the July visual editor that `docs/js/lead-editor/` replaced),
+  `sources/traditional-music-uk/` (22 MB; no work cites it) and the 65
+  never-imported charts built from it, `scripts/enrichment-viewer/`, the
+  abandoned Chrome-driven Ultimate Guitar attempt, and stale notes in
+  `sources/banjo-hangout/`. `SESSION-HANDOFF.md` and `TEF-LOOP-FEASIBILITY.md`
+  moved to `docs/plans/archive/`.
+- **Skills.** `add-issue` searches this file as well as GitHub, links fix-it
+  IDs both ways, keeps off the labels the site's 🚩 Report issue flow sets
   (`song-flag` plus a sub-type such as `bug-report`), adds a `P0`–`P3`
-  priority label only when Mike gives one, and uses `argument-hint` (the
-  `arguments` field it had declares named parameters).
-  `github-project`: merge with `--merge`, not `--squash`; the copied
-  workflow table (already missing `schema-check.yml`) replaced by the command
-  that lists them.
-- README rewritten for readers, and ROADMAP points at this file.
-  `SESSION-HANDOFF.md` and `TEF-LOOP-FEASIBILITY.md` moved from the root to
-  `docs/plans/archive/`.
-- `.mcp.json`: the Chrome DevTools servers looked for `npx` only in an nvm
-  Node that no longer exists, so they failed to start. Homebrew's bin now
-  comes first in their PATH.
+  priority label only when Mike gives one, and uses `argument-hint`.
+  `github-project` merges with `--merge`, not `--squash`, and lists workflows
+  by command instead of a stale copy.
+- README rewritten for readers; ROADMAP points at this file; `.mcp.json` puts
+  Homebrew first in the Chrome DevTools servers' PATH (they failed to start
+  looking for an nvm Node that no longer exists).
+- **Issue audit.** All 72 open issues were checked against the code, data and
+  history on 2026-10-28. The proposed closes, rewrites and milestone fixes
+  are with Mike; nothing on GitHub has changed yet.
 
 Follow-ups:
 
-- **Nested `CLAUDE.md` files are still 2–8× the guidance.** Line counts on
-  2026-10-28: `docs/js` 1,670; `scripts/lib` 1,162; `supabase` 772;
-  `docs/js/otf-editor` 714; `sources/banjo-hangout` 529;
-  `docs/js/lead-editor` 410; `docs/js/renderers` 328; `e2e` 264;
-  `scripts/lib/tagging` 216. Each loads only when an agent works in its
-  directory, but then stays in context for the rest of the session. Cut each
-  to what the code can't say (decisions, gotchas, commands), one directory per
-  PR. `/doctor prompt-audit <path>` lists stale references and contradictions
-  to start from.
-- **The issue tracker has drifted.** 72 issues were open on 2026-10-28, 21 of
-  them with no milestone. A quick audit (greps and git history, not
-  reproductions) found these done or obsolete: #9, #10, #30, #43, #61, #75,
-  #94, #115, #119, #123, #124, #150, #169, #243. These need a check before
-  closing: #32, #36, #76, #125, #146, #164, #165, #176, #184, #236. #210 and
-  #211 are app bugs that came in through 🚩 Report issue (their Song ID
-  field reads `app`, meaning the report is about the app, not a song) and
-  should be relabelled `bug`. The GitHub milestone "Contribution pipeline"
-  has no open issues left (18 closed) and could be closed. Nothing has been
-  closed yet; Mike decides.
+- **Still over 200 lines:** `scripts/lib/CLAUDE.md` (324),
+  `supabase/CLAUDE.md` (267), `docs/js/otf-editor/CLAUDE.md` (266),
+  `docs/js/CLAUDE.md` (209). What remains is rules and cross-file couplings;
+  the next cut means deciding which of them an agent can live without.
+  `.claude/skills/tab-debug/SKILL.md` is 562 lines (Anthropic suggests under
+  500 for a skill); its reference sections could move to a sibling file.
+- **In-flight PRs #308, #311 and #315** edit docs rewritten here
+  (`docs/js/lead-editor/`, `analytics/`, `docs/js/`, `scripts/lib/tagging/`,
+  root). Whichever merges second carries their additions into the new text.
 - **E2E can't run in two worktrees at once.** It binds port 8137 exactly, so
   the second run fails until it is given `PW_PORT`. If that gets in the way,
   paseo can assign each worktree a port.
-- **`APP_SPEC.md`** at the root is a full app spec with January numbers
-  (18,300+ songs). Only A10 above cites it. Update it, archive it, or keep it
-  as is: Mike's call.
-- The container repo (`Bluegrass-Songbook-workspace`: its `CLAUDE.md` and
-  `WORKTREES.md`) still describes only the manual `.bare` worktree flow.
+- **`pickRepresentative`** is duplicated in `docs/js/work-view.js` and
+  `docs/js/search-core.js`.
+- **Two archived works** (`t-r-o-u-b-l-e`, `d-o-a-drunk-on-arrival`) still
+  have chord lines wrapped in `{comment:}` (issue #10).
+- **Remote branches:** eleven merged branches from the 2026-10-01 batch are
+  still on GitHub (`bug/chordpro-untagged-lines`, `bug/editor-lifecycle`,
+  `bug/list-security`, `bug/setlist-keys-not-found`, `feature/fix-it-plan`,
+  `feature/perf-*` ×5, `feature/practice-line-contrast`), plus two unmerged
+  and idle ones (`bug/pending-content-not-null`, 2026-08-20;
+  `feature/design-review-followups`, 2026-10-04).
+- **The container repo** (`Bluegrass-Songbook-workspace`, private) versions
+  only the worktree-dispatch layer: `setup.sh` rebuilds the bare-clone +
+  `main` worktree layout on a new machine, and its `CLAUDE.md` and
+  `WORKTREES.md` tell a session launched in the container how to make
+  worktrees. Nothing in it (or in this repo) deploys or self-hosts the site,
+  which ships to GitHub Pages. With paseo making worktrees, only `setup.sh`
+  still earns its keep.
+- `analytics/` keeps one-off PNGs and `bluegrass-research/` notes from
+  January; revisit after #315 reworks the notebooks.
