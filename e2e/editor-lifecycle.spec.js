@@ -6,6 +6,7 @@
 // song was then a no-op for the state and the editor stayed on screen.
 import { test, expect } from '@playwright/test';
 import { mockSupabase } from './helpers/supabase-mock.js';
+import { setLead, appendLead, leadText } from './helpers/lead-editor.js';
 
 const SONG_A = 'your-cheating-heart';
 const SONG_B = 'cold-cold-heart';
@@ -73,10 +74,8 @@ test.describe('A7: leaving the editor with unsaved edits', () => {
 
     async function editSomething(page, text = '[G]Extra line I typed') {
         await openSongThenEditor(page, SONG_A);
-        const box = page.locator('#editor-content');
-        const before = await box.inputValue();
-        await box.fill(`${before}\n${text}`);
-        return `${before}\n${text}`;
+        await appendLead(page, text);
+        return leadText(page);
     }
 
     test('an untouched editor leaves without asking', async ({ page }) => {
@@ -97,7 +96,7 @@ test.describe('A7: leaving the editor with unsaved edits', () => {
 
         await expect(page.locator('#editor-leave-modal')).toHaveCount(0);
         await expect(page.locator('#editor-panel')).toBeVisible();
-        await expect(page.locator('#editor-content')).toHaveValue(edited);
+        expect(await leadText(page)).toBe(edited);
         await expect(page).toHaveURL(new RegExp(`#edit/${SONG_A}$`));
         // and it is still an edit of the same song, not a fresh "Add Song"
         await expect(page.locator('#editor-title')).toHaveValue(/Cheat/i);
@@ -130,7 +129,7 @@ test.describe('A7: leaving the editor with unsaved edits', () => {
     test('a new-song draft asks too, and Leave keeps the draft in this tab', async ({ page }) => {
         await page.goto('/#add');
         await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
-        await page.locator('#editor-content').fill('[G]A draft I care about');
+        await setLead(page, '[G]A draft I care about');
 
         await page.locator('#topbar-brand').click();
         await expect(page.locator('#editor-leave-modal')).toContainText(/Leave without submitting/);
@@ -139,7 +138,7 @@ test.describe('A7: leaving the editor with unsaved edits', () => {
 
         await page.locator('.topbar-nav-link[data-nav="add"]').click();
         await page.locator('.picker-card[data-type="chordpro"]').click();
-        await expect(page.locator('#editor-content')).toHaveValue('[G]A draft I care about');
+        expect(await leadText(page)).toBe('[G]A draft I care about');
     });
 });
 
@@ -167,7 +166,7 @@ test.describe('A5: sign-in at Submit keeps the work (lead sheet)', () => {
         await page.locator('#metadata-summary').click();
         await page.locator('#editor-title').fill('Round Trip Blues');
         await page.locator('#editor-artist').fill('E2E Band');
-        await page.locator('#editor-content').fill('[G]Out to Google and [C]back again\n[D]with every word [G]kept');
+        await setLead(page, '[G]Out to Google and [C]back again\n[D]with every word [G]kept');
 
         // Signed out: Submit leaves the page for the OAuth hand-off, which
         // bounces straight back with the session in the URL fragment.
@@ -180,7 +179,7 @@ test.describe('A5: sign-in at Submit keeps the work (lead sheet)', () => {
         await expect(page).toHaveURL(/#add$/, { timeout: 20000 });
         await expect(page.locator('#editor-panel')).toBeVisible();
         // …with everything that was typed…
-        await expect(page.locator('#editor-content')).toHaveValue(
+        expect(await leadText(page)).toBe(
             '[G]Out to Google and [C]back again\n[D]with every word [G]kept');
         await expect(page.locator('#editor-title')).toHaveValue('Round Trip Blues');
         await expect(page.locator('#editor-artist')).toHaveValue('E2E Band');
@@ -204,9 +203,11 @@ test.describe('A5: sign-in at Submit keeps the work (lead sheet)', () => {
         await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
         await expect(page.locator('#editor-title')).toHaveValue(/Cheat/i);
 
-        const box = page.locator('#editor-content');
-        const edited = `${await box.inputValue()}\n[G]A line added before sign-in`;
-        await box.fill(edited);
+        const before = await leadText(page);
+        await appendLead(page, '[G]A line added before sign-in');
+        const edited = await leadText(page);
+        expect(edited).toContain('A line added before sign-in');
+        expect(edited.startsWith(before)).toBe(true);
 
         await Promise.all([
             page.waitForURL(/#access_token=/, { timeout: 20000 }),
@@ -216,8 +217,8 @@ test.describe('A5: sign-in at Submit keeps the work (lead sheet)', () => {
         await expect(page).toHaveURL(new RegExp(`#edit/${SONG_A}$`), { timeout: 20000 });
         await expect(page.locator('#editor-panel')).toBeVisible();
         await expect(page.locator('#editor-title')).toHaveValue(/Cheat/i);
-        // the textarea holds the USER's text, not the published song re-fetched
-        await expect(page.locator('#editor-content')).toHaveValue(edited);
+        // the editor holds the USER's text, not the published song re-fetched
+        expect(await leadText(page)).toBe(edited);
         await expect(page.locator('#editor-status')).toContainText('Signed in — ready to submit');
         expect(sb.rows('pending_songs')).toEqual([]);
     });
@@ -238,7 +239,7 @@ test.describe('A5: sign-in at Submit keeps the work (lead sheet)', () => {
         await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
         await page.locator('#metadata-summary').click();
         await page.locator('#editor-title').fill('Declined');
-        await page.locator('#editor-content').fill('[G]Words I would hate to lose');
+        await setLead(page, '[G]Words I would hate to lose');
 
         await Promise.all([
             page.waitForURL(/#error=access_denied/, { timeout: 20000 }),
@@ -246,7 +247,7 @@ test.describe('A5: sign-in at Submit keeps the work (lead sheet)', () => {
         ]);
 
         await expect(page).toHaveURL(/#add$/, { timeout: 20000 });
-        await expect(page.locator('#editor-content')).toHaveValue('[G]Words I would hate to lose');
+        expect(await leadText(page)).toBe('[G]Words I would hate to lose');
         await expect(page.locator('#editor-title')).toHaveValue('Declined');
         await expect(page.locator('#editor-status')).toContainText(/Sign-in did not finish/);
         expect(sb.rows('pending_songs')).toEqual([]);
@@ -321,5 +322,26 @@ test.describe('A5: sign-in at Submit keeps the work (tab editor)', () => {
         await page.locator('.editor-renderer .stave-row').first().waitFor({ timeout: 20000 });
         await expect(page.locator('.editor-renderer .note-text').first()).toBeVisible();
         expect(sb.rows('pending_songs')).toEqual([]);
+    });
+});
+
+test.describe('one key owner: the chord sheet, the toolbar and the submitted key', () => {
+    test('a key set in the chord sheet is the toolbar\'s key and the key that is submitted', async ({ page }) => {
+        const sb = await mockSupabase(page);   // signed in
+        await page.goto('/#add');
+        await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
+        await page.locator('#metadata-summary').click();
+        await page.locator('#editor-title').fill('One Key Blues');
+        await page.locator('#editor-artist').fill('E2E Band');
+        await setLead(page, '[G]Out to Google and [C]back again\n[D]with every word [G]kept');
+        // detected: the toolbar already says G
+        await expect(page.locator('#editor-key-select')).toHaveValue('G');
+        await page.locator('#editor-mode-chords').click();
+        await page.locator('.chm-menu .chm-key').selectOption('A');
+        await expect(page.locator('#editor-key-select')).toHaveValue('A');
+        await expect(page.locator('.chm-menu .chm-key')).toHaveValue('A');
+        await page.locator('#editor-submit').click();
+        await expect.poll(() => sb.rows('pending_songs').length, { timeout: 20000 }).toBe(1);
+        expect(sb.row('pending_songs').key).toBe('A');
     });
 });

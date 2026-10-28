@@ -11,12 +11,13 @@ import {
 import { registerReturnSource } from './auth-return.js';
 import { generateSlug, requireLogin } from './utils.js';
 import { getSongContent, primeSongContent } from './song-content.js';
-import { extractChords, detectKey, toNashville, transposeChord, getSemitonesBetweenKeys, isValidChord, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
+import { extractChords, toNashville, transposeChord, getSemitonesBetweenKeys, isValidChord, CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { trackEditor, trackSubmission } from './analytics.js';
 import { showToast } from './toast.js';
 // Note: refreshPendingSongs is accessed via window.refreshPendingSongs to avoid circular import
-import { createInteractivePreview } from './visual-editor/preview.js';
-import { wrapSelectionAsSection } from './visual-editor/wrap-section.js';
+import { mountLeadEditor } from './lead-editor/index.js';
+import { currentSongKey } from './lead-editor/doc-model.js';
+import { diffChange } from './lead-editor/section-ops.js';
 import { parseSong, serializeSong } from './visual-editor/model.js';
 import {
     cleanChordUPaste, cleanUltimateGuitarPaste,
@@ -67,13 +68,16 @@ let metadataSummaryEl = null;
 let metadataFieldsEl = null;
 let onSongRequestCb = null;
 
-// Two-pane interactive preview state
-let editorPreviewContainerEl = null;
+// Lead-sheet editor state: ONE CodeMirror view whose document is the ChordPro
+// text (lead-editor/). `lead` is null only when it could not be mounted (no
+// host element, or the vendored bundle failed): then the hidden #editor-content
+// textarea is shown and stands in as a plain-text editor, so the same
+// getText()/setText() adapter below serves both.
+let editorLeadHostEl = null;
 let editorUndoBtnEl = null;
 let editorRedoBtnEl = null;
 let editorTransposeGroupEl = null;
-let editorSelectionToolbarEl = null;
-let preview = null;
+let lead = null;
 // The record being edited, kept so the fork notice can ask "is this mine?"
 // without going back through allSongs.
 let editingSongRecord = null;
@@ -88,6 +92,35 @@ let navAddSongEl = null;
 let navFavoritesEl = null;
 let resultsDivEl = null;
 let songViewEl = null;
+
+// ---------------------------------------------------------------------------
+// The text adapter: every read/write of the song text goes through these two.
+// ---------------------------------------------------------------------------
+
+/** The ChordPro text of the song being edited. */
+export function getText() {
+    return lead ? lead.getText() : (editorContentEl?.value || '');
+}
+
+/**
+ * Replace the whole text. `reset` is for opening a different song (it also
+ * drops the undo history); without it the replacement is one undo step.
+ */
+export function setText(text, { reset = false } = {}) {
+    if (lead) lead.setText(text || '', { reset });
+    else if (editorContentEl) editorContentEl.value = text || '';
+}
+
+/** Replace the text as ONE undo step (transpose, key change). */
+function applyText(next, userEvent = 'input.transpose') {
+    if (lead) {
+        const old = lead.getText();
+        if (old === next) return;
+        lead.editor.change({ changes: diffChange(old, next) }, { userEvent, scroll: false });
+    } else if (editorContentEl) {
+        editorContentEl.value = next;
+    }
+}
 
 /**
  * Derive the compact metadata line text from title/artist values.
@@ -176,7 +209,7 @@ export async function enterEditMode(song, options = {}) {
     if (editorTitleEl) editorTitleEl.value = song.title || '';
     if (editorArtistEl) editorArtistEl.value = song.artist || '';
     if (editorWriterEl) editorWriterEl.value = song.composer || '';
-    if (editorContentEl) editorContentEl.value = content || '';
+    setText(content || '', { reset: true });
 
     updateMetadataSummary();
     setMetadataExpanded(false);
@@ -215,7 +248,6 @@ export async function enterEditMode(song, options = {}) {
     // Refresh key detection / toolbar and re-render the preview with a
     // clean undo history for the new editing session
     updateEditorChrome();
-    if (preview) preview.reset();
 }
 
 /**
@@ -247,7 +279,7 @@ export function resetEditorForNewSong() {
     if (editorTitleEl) editorTitleEl.value = '';
     if (editorArtistEl) editorArtistEl.value = '';
     if (editorWriterEl) editorWriterEl.value = '';
-    if (editorContentEl) editorContentEl.value = '';
+    setText('', { reset: true });
     if (editorSubmitBtnEl) editorSubmitBtnEl.textContent = 'Submit to Songbook';
     if (editorStatusEl) {
         editorStatusEl.textContent = '';
@@ -260,7 +292,6 @@ export function resetEditorForNewSong() {
     markEditorClean();
 
     updateEditorChrome();
-    if (preview) preview.reset();
 }
 
 // ---------------------------------------------------------------------------
@@ -276,7 +307,7 @@ function readEditorFields() {
         title: (editorTitleEl?.value || '').trim(),
         artist: (editorArtistEl?.value || '').trim(),
         writer: (editorWriterEl?.value || '').trim(),
-        content: editorContentEl?.value || '',
+        content: getText(),
     };
 }
 
@@ -350,7 +381,7 @@ function applyStagedRestore(songId) {
     if (editorTitleEl) editorTitleEl.value = title || '';
     if (editorArtistEl) editorArtistEl.value = artist || '';
     if (editorWriterEl) editorWriterEl.value = writer || '';
-    if (editorContentEl) editorContentEl.value = content || '';
+    setText(content || '');
     updateMetadataSummary();
     updateEditorPreview();
     if (staged.message && editorStatusEl) {
@@ -539,11 +570,9 @@ function updateEditorKeySelect(detectedKey, detectedMode) {
  * rendered themselves.
  */
 function updateEditorChrome() {
-    if (!editorContentEl) return;
-
-    const content = editorContentEl.value;
+    const content = getText();
     const chords = extractChords(content);
-    const detected = detectKey(chords);
+    const detected = currentSongKey(content);   // declared {key:}, else detected: the same answer everywhere
 
     // Only update key if user hasn't manually pinned it
     if (!editorKeyPinned) {
@@ -559,16 +588,11 @@ function updateEditorChrome() {
 }
 
 /**
- * Update the editor chrome and re-render the interactive preview from the
- * textarea. Pass { immediate: false } for typing (debounced re-render that
- * preserves the preview scroll); everything else re-renders immediately.
+ * Refresh the chrome and, in ChordPro mode, the read-only preview.
  */
-export function updateEditorPreview(opts = {}) {
-    const { immediate = true } = opts;
+export function updateEditorPreview() {
     updateEditorChrome();
-    if (!preview) return;
-    if (immediate) preview.refresh();
-    else preview.scheduleRefresh();
+    if (lead && lead.mode === 'chordpro') lead.refreshPreview();
 }
 
 /**
@@ -583,7 +607,7 @@ export function editorGenerateChordPro() {
     const title = editorTitleEl?.value.trim() || '';
     const artist = editorArtistEl?.value.trim() || '';
     const writer = editorWriterEl?.value.trim() || '';
-    const content = editorContentEl?.value || '';
+    const content = getText();
 
     const doc = parseSong(content);
     if (title) doc.metadata.fields.title = title;
@@ -626,83 +650,69 @@ export function closeHints() {
 }
 
 /**
- * Make-verse/chorus mini-bar. It sits at a FIXED spot (the ChordPro pane
- * header) rather than floating near the selection: a textarea exposes no
- * selection coordinates (measuring them needs a mirror-div hack that fights
- * scrolling and resize), and a bar that pops in above the text would shift
- * the very lines the user is mid-drag-selecting. The header row already
- * exists, so showing the buttons there costs no layout at all.
+ * Mount the lead-sheet editor (CodeMirror, Visual / ChordPro modes). The
+ * controller reports changes through hooks; everything downstream reads the
+ * text through getText().
  */
-function updateSelectionToolbar() {
-    if (!editorSelectionToolbarEl || !editorContentEl) return;
-    const show = document.activeElement === editorContentEl &&
-        editorContentEl.selectionStart !== editorContentEl.selectionEnd;
-    editorSelectionToolbarEl.classList.toggle('hidden', !show);
+function initLeadEditor() {
+    if (!editorLeadHostEl) return;
+    try {
+        lead = mountLeadEditor({
+            host: editorLeadHostEl,
+            hooks: {
+                // Nashville display mode: labels show numbers, the text stays chords
+                getDisplay: () => editorDisplayChord,
+                autoDetect: () => autoDetectFormat,
+                onSongRequest: onSongRequestCb ? () => onSongRequestCb() : null,
+                onChange() { updateEditorChrome(); },
+                onKey() { editorKeyPinned = false; updateEditorChrome(); },
+                onHistory({ undo, redo }) {
+                    if (editorUndoBtnEl) editorUndoBtnEl.disabled = undo === 0;
+                    if (editorRedoBtnEl) editorRedoBtnEl.disabled = redo === 0;
+                },
+                onMode(mode, { showPreview }) { syncModeChrome(mode, showPreview); },
+                onPaste(res) {
+                    if (res.title && editorTitleEl && !editorTitleEl.value.trim()) editorTitleEl.value = res.title;
+                    if (res.artist && editorArtistEl && !editorArtistEl.value.trim()) editorArtistEl.value = res.artist;
+                    updateMetadataSummary();
+                    if (editorStatusEl) {
+                        editorStatusEl.textContent = 'Converted from chord sheet format';
+                        editorStatusEl.className = 'save-status success';
+                        setTimeout(() => { editorStatusEl.textContent = ''; }, 3000);
+                    }
+                },
+            },
+        });
+        if (editorContentEl) editorContentEl.hidden = true;
+    } catch (err) {
+        // The vendored bundle (or the DOM) is unusable: fall back to the textarea.
+        console.error('Lead-sheet editor could not start; using the plain text box:', err);
+        lead = null;
+        editorLeadHostEl.hidden = true;
+        if (editorContentEl) editorContentEl.hidden = false;
+    }
 }
 
-/**
- * Wrap the textarea's selected lines in {start_of_X}/{end_of_X} (pure text
- * transform in visual-editor/wrap-section.js). One document-level undo
- * step; the preview re-renders immediately.
- */
-function applyWrapSelection(type) {
-    if (!editorContentEl) return;
-    const res = wrapSelectionAsSection(editorContentEl.value,
-        editorContentEl.selectionStart, editorContentEl.selectionEnd, type);
-    if (!res) return;
-    if (preview) preview.pushUndoSnapshot(editorContentEl.value);
-    editorContentEl.value = res.text;
-    editorContentEl.focus();
-    editorContentEl.setSelectionRange(res.selStart, res.selEnd);
-    updateEditorPreview();
-    updateSelectionToolbar();
+function editorDisplayChord(chord) {
+    return (editorNashvilleMode && editorDetectedKey) ? toNashville(chord, editorDetectedKey) : chord;
 }
 
-function initSelectionToolbar() {
-    editorSelectionToolbarEl = document.getElementById('editor-selection-toolbar');
-    if (!editorSelectionToolbarEl || !editorContentEl) return;
-    editorSelectionToolbarEl.querySelectorAll('[data-wrap]').forEach((btn) => {
-        // keep focus (and the selection) in the textarea through the click
-        btn.addEventListener('pointerdown', (e) => e.preventDefault());
-        btn.addEventListener('mousedown', (e) => e.preventDefault());
-        btn.addEventListener('click', () => applyWrapSelection(btn.dataset.wrap));
+/** Reflect the mode on the switch buttons and the phone Source | Preview toggle. */
+function syncModeChrome(mode, showPreview) {
+    document.querySelectorAll('[data-lead-mode]').forEach((b) => {
+        const on = b.dataset.leadMode === mode;
+        b.classList.toggle('on', on);
+        b.setAttribute('aria-pressed', String(on));
     });
-    // selectionchange covers collapse-from-anywhere; the textarea events
-    // are the belt-and-suspenders for browsers that don't fire it there
-    document.addEventListener('selectionchange', updateSelectionToolbar);
-    editorContentEl.addEventListener('select', updateSelectionToolbar);
-    editorContentEl.addEventListener('keyup', updateSelectionToolbar);
-    editorContentEl.addEventListener('mouseup', updateSelectionToolbar);
-    editorContentEl.addEventListener('blur', () => setTimeout(updateSelectionToolbar, 0));
-}
-
-/**
- * Mount the interactive preview on the right-hand pane. The textarea is THE
- * document: the preview renders parseSong(textarea.value), and every
- * preview-side edit writes serialized ChordPro back into the textarea
- * (one step on the preview's undo stack). Submit/copy/download flows keep
- * reading the textarea unchanged.
- */
-function initInteractivePreview() {
-    if (!editorPreviewContainerEl || !editorContentEl) return;
-    preview = createInteractivePreview({
-        container: editorPreviewContainerEl,
-        textarea: editorContentEl,
-        undoBtn: editorUndoBtnEl,
-        redoBtn: editorRedoBtnEl,
-        // Nashville display mode: chips show numbers, edits stay chords
-        displayChord: (chord) => (editorNashvilleMode && editorDetectedKey)
-            ? toNashville(chord, editorDetectedKey)
-            : chord,
-        onChange() {
-            // a preview edit wrote the textarea (it has already re-rendered
-            // itself): refresh only the derived chrome, never the preview —
-            // this one-way notification is what prevents update loops
-            updateEditorChrome();
-        },
-        onSongRequest() { if (onSongRequestCb) onSongRequestCb(); }
+    document.querySelectorAll('[data-lead-pane]').forEach((b) => {
+        const on = (b.dataset.leadPane === 'preview') === !!showPreview;
+        b.classList.toggle('on', on);
+        b.setAttribute('aria-pressed', String(on));
     });
-    preview.refresh();
+    const toggle = document.getElementById('editor-pane-toggle');
+    if (toggle) toggle.classList.toggle('hidden', mode !== 'chordpro');
+    const hint = document.getElementById('editor-chordpro-help');
+    if (hint) hint.classList.toggle('hidden', mode !== 'chordpro');
 }
 
 /**
@@ -732,7 +742,7 @@ export function initEditor(options) {
         metadataSummary,
         metadataFields,
         onSongRequest,
-        editorPreviewContainer,
+        editorLead,
         editorUndoBtn,
         editorRedoBtn,
         editorTransposeGroup,
@@ -770,7 +780,7 @@ export function initEditor(options) {
     navFavoritesEl = navFavorites;
     resultsDivEl = resultsDiv;
     songViewEl = songView;
-    editorPreviewContainerEl = editorPreviewContainer;
+    editorLeadHostEl = editorLead || null;
     editorUndoBtnEl = editorUndoBtn;
     editorRedoBtnEl = editorRedoBtn;
     editorTransposeGroupEl = editorTransposeGroup;
@@ -789,9 +799,17 @@ export function initEditor(options) {
         updateMetadataSummary();
     }
 
-    // Two-pane editor: interactive preview over the raw textarea
-    initInteractivePreview();
-    initSelectionToolbar();
+    // One CodeMirror view, two modes (Visual | ChordPro)
+    initLeadEditor();
+    document.querySelectorAll('[data-lead-mode]').forEach((b) => {
+        b.addEventListener('click', () => lead?.setMode(b.dataset.leadMode));
+    });
+    document.querySelectorAll('[data-lead-pane]').forEach((b) => {
+        b.addEventListener('click', () => lead?.setShowPreview(b.dataset.leadPane === 'preview'));
+    });
+    if (editorUndoBtnEl) editorUndoBtnEl.addEventListener('click', () => lead?.undo());
+    if (editorRedoBtnEl) editorRedoBtnEl.addEventListener('click', () => lead?.redo());
+    if (lead) syncModeChrome(lead.mode, false);
     updateEditorChrome();
 
     // Edit song button
@@ -808,7 +826,8 @@ export function initEditor(options) {
     }
 
     // Paste handler
-    if (editorContentEl) {
+    // Plain-textarea fallback only (the CodeMirror editor handles paste itself)
+    if (editorContentEl && !lead) {
         editorContentEl.addEventListener('paste', () => {
             setTimeout(() => {
                 let text = editorContentEl.value;
@@ -860,7 +879,6 @@ export function initEditor(options) {
                 if (converted !== text || wasImported) {
                     // one undo step, like transpose/key-select/wrap-section:
                     // a wrong auto-conversion must be recoverable
-                    if (preview) preview.pushUndoSnapshot(editorContentEl.value);
                     editorContentEl.value = converted;
                     updateEditorPreview();
                     if (editorStatusEl) {
@@ -872,8 +890,7 @@ export function initEditor(options) {
             }, 0);
         });
 
-        // typing re-renders the preview debounced, preserving its scroll
-        editorContentEl.addEventListener('input', () => updateEditorPreview({ immediate: false }));
+        editorContentEl.addEventListener('input', () => updateEditorPreview());
     }
 
     if (editorTitleEl) editorTitleEl.addEventListener('input', updateMetadataSummary);
@@ -882,6 +899,7 @@ export function initEditor(options) {
     if (editorNashvilleEl) {
         editorNashvilleEl.addEventListener('change', (e) => {
             setEditorNashvilleMode(e.target.checked);
+            lead?.setDisplay(editorDisplayChord);
             updateEditorPreview();
         });
     }
@@ -890,12 +908,9 @@ export function initEditor(options) {
     if (editorKeySelectEl) {
         editorKeySelectEl.addEventListener('change', () => {
             const selected = editorKeySelectEl.value;
-            if (selected && editorDetectedKey && selected !== editorDetectedKey && editorContentEl) {
+            if (selected && editorDetectedKey && selected !== editorDetectedKey) {
                 const semitones = getSemitonesBetweenKeys(editorDetectedKey, selected);
-                if (semitones !== 0) {
-                    if (preview) preview.pushUndoSnapshot(editorContentEl.value);
-                    editorContentEl.value = editorTransposeContent(editorContentEl.value, semitones);
-                }
+                if (semitones !== 0) applyText(editorTransposeContent(getText(), semitones));
             }
             // After transposing, let key re-detect from new chords
             editorKeyPinned = false;
@@ -913,23 +928,17 @@ export function initEditor(options) {
     // Transpose buttons - these modify actual chords, so let key re-detect
     if (editorTransposeUpEl) {
         editorTransposeUpEl.addEventListener('click', () => {
-            if (editorContentEl) {
-                editorKeyPinned = false;
-                if (preview) preview.pushUndoSnapshot(editorContentEl.value);
-                editorContentEl.value = editorTransposeContent(editorContentEl.value, 1);
-                updateEditorPreview();
-            }
+            editorKeyPinned = false;
+            applyText(editorTransposeContent(getText(), 1));
+            updateEditorPreview();
         });
     }
 
     if (editorTransposeDownEl) {
         editorTransposeDownEl.addEventListener('click', () => {
-            if (editorContentEl) {
-                editorKeyPinned = false;
-                if (preview) preview.pushUndoSnapshot(editorContentEl.value);
-                editorContentEl.value = editorTransposeContent(editorContentEl.value, -1);
-                updateEditorPreview();
-            }
+            editorKeyPinned = false;
+            applyText(editorTransposeContent(getText(), -1));
+            updateEditorPreview();
         });
     }
 
@@ -1001,7 +1010,7 @@ export function initEditor(options) {
             }
 
             const chordpro = editorGenerateChordPro();
-            const content = editorContentEl?.value.trim();
+            const content = getText().trim();
 
             if (!content) {
                 if (editorStatusEl) {
@@ -1322,8 +1331,7 @@ async function submitSong(data) {
     const slug = editMode ? editingSongId : generateSlug(title, artist);
 
     // Detect key from chords
-    const chords = extractChords(content);
-    const { key, mode } = detectKey(chords);
+    const { key, mode } = currentSongKey(content);
 
     // Get current user ID for created_by
     const user = window.SupabaseAuth?.getUser?.();

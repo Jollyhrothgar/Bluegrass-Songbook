@@ -30,7 +30,7 @@ docs/
 │   ├── work-suggest.js # Not-found recovery: redirect deleted duplicates / suggest same-title works
 │   ├── lists.js        # User lists, favorites, multi-owner, Thunderdome
 │   ├── list-picker.js  # List picker popup component
-│   ├── editor.js       # Song editor (Raw tab), re-exports smart-paste pipeline
+│   ├── editor.js       # Song editor shell (submit/dirty/return record, getText/setText), re-exports smart-paste pipeline
 │   ├── smart-paste.js  # Shared chord-sheet→ChordPro conversion (Raw + Visual paste)
 │   ├── dedup-check.js  # "This song already exists" scorer — MIRRORS scripts/lib/dedup_scorer.py
 │   ├── flags.js        # Unified feedback modal (song issues, bugs, general feedback)
@@ -58,7 +58,8 @@ docs/
 │   │   ├── otf-tracks.js # isPercussionTrack / pitchedTracks (shared filter)
 │   │   └── measure-timing.js # Measure timing helpers for playback
 │   ├── chord-explorer/ # Chord exploration tool (standalone)
-│   ├── visual-editor/  # Two-pane editor: interactive preview + ChordPro model
+│   ├── lead-editor/    # THE lead-sheet editor: CodeMirror 6, Lyrics | Chords | ChordPro modes (own CLAUDE.md)
+│   ├── visual-editor/  # Pure model + helpers the editor still uses (ChordPro model, syllables, wrap-section)
 │   ├── otf-editor/     # Tablature editor
 │   └── __tests__/      # Vitest unit tests
 ├── css/style.css       # Dark/light themes, responsive layout (theme is set pre-paint by an inline script in index.html head; initTheme/setTheme in main.js keep it and theme-color in step; abcjs is lazy-loaded by song-view.js loadAbcjs())
@@ -465,28 +466,44 @@ The song page's controls are pills in a single pill row, built by
 
 ### Editor (Add Song / Edit Song)
 
-Two-pane editor: the raw ChordPro textarea (`#editor-content`, left) beside
-a live INTERACTIVE preview (`#editor-preview-container`, right; stacked
-below ~800px). The textarea is THE document — the preview renders
-`parseSong(textarea.value)` and every preview-side edit writes serialized
-ChordPro back into the textarea. In the preview, VERTICAL POSITION IS THE
-MODE: the chord strip above each line places/edits chords (hover ghost
-slot → click a seam → palette or typed entry; tap a chip → change/delete),
-while clicking the lyric text swaps that line for an inline input (blur
-commits with word-LCS chord re-anchoring, Enter splits, Backspace at 0
-merges, Escape reverts), plus section drag/menu ops. See
-`visual-editor/CLAUDE.md` for the preview orchestrator. Submit/copy/
-download flows read the textarea unchanged; smart paste converts chord
-sheets on paste into the textarea; selecting textarea lines reveals a
-Make verse/chorus/bridge mini-bar in the pane header (pure transform in
-`visual-editor/wrap-section.js`). Above the panes: compact metadata line,
-undo/redo, and a progressive transpose/key/Nashville group that appears
-once the song has a chord.
+ONE CodeMirror 6 view whose document is the ChordPro text (`lead-editor/`, see
+its CLAUDE.md; CodeMirror is vendored in `docs/vendor/codemirror.js`, rebuilt by
+`./scripts/vendor-codemirror`). Three explicit modes over the same document,
+switched by `Lyrics | Chords | ChordPro` in the editor header and remembered
+per device (`localStorage['bgb-lead-mode']`); a new empty song always opens in
+Lyrics. Each mode does one job:
+
+- **Lyrics** looks exactly like the song page (decorations that reuse the
+  book's classes) and is editable with the platform's own typing, paste and
+  selection. Chords are drawn but inert. Select lines to show the section bar (floating on desktop, docked above the keyboard on phones)
+  (`Verse · Chorus · Bridge · Intro · Outro · Tag · Other…`; a selection that
+  crosses section boundaries is re-sectioned); tap a label for rename / type /
+  duplicate / move / remove label / delete. Chords are drawn greyed (inert). Only the
+  Chords button enters Chords mode (no double-click shortcut, 2026-10-27). Select-all +
+  Delete removes whole sections (labels too) but keeps `{meta:}` / `{key:}` and locked blocks.
+- **Chords** locks the chart (not editable: no keyboard, no text selection).
+  Tap a lyric (or the chord row above it) and the box snaps to the syllable;
+  the chord panel is always shown and docked (phone: magnifier fixed at the top, picker at the bottom; wide desktop: a sticky panel beside the chart) with
+  a magnifier strip (drag to step the box seam by seam), ◀ ▶ ▲ ▼,
+  the key's chords, and for the chord in the box Remove / Move (Move carries the
+  chord with the box). One layout, no extension cells: a decorations row
+  (⁷ maj⁷ ⁶ ⁶⁄₉ add⁹ sus² sus⁴ ⁹ /bass) composes with the chord in the box.
+- **ChordPro** is the source, beside a read-only preview drawn by
+  `renderSectionsHtml` (phone: `Source | Preview` toggle).
+
+**Every reader of the song text goes through `getText()` / `setText()`**
+(exported from `editor.js`): submit, copy, download, the dirty check
+(`editorHasUnsavedChanges`), the sign-in return record, transpose and key
+changes (one undo step each). `#editor-content` is a hidden fallback textarea
+that only shows if the CodeMirror editor cannot mount. Smart paste
+(`convertPastedText`) runs on paste in Lyrics mode and fills empty
+title/artist; the auto-detect checkbox still gates it.
 
 Functions prefixed with `editor*`:
 - `enterEditMode(song)` - Open editor with existing song
 - `editorConvertToChordPro()` - Smart paste: chord-above-lyrics → ChordPro
-- `updateEditorPreview()` - Refresh chrome (key/toolbar) + re-render preview
+- `updateEditorPreview()` - Refresh chrome (key/toolbar) + the ChordPro-mode preview
+- `getText()` / `setText(text, {reset})` - the text adapter (see above)
 - **The editor is a view, entered through `currentView`.** `enterEditMode`
   calls `setCurrentView('add-song')`; it does not hide the song page by hand
   (that left state saying "song", so navigating to another song was a no-op
@@ -527,7 +544,7 @@ Supabase's), so the page leaves a note for itself:
   `persistReturnRecord()` right before `signInWithGoogle()`. The record
   (`localStorage['bgb-auth-return']`, `{v, at, hash, kind, state?}`, 30 min TTL,
   single use) holds the route plus whatever the open editor contributes through
-  `registerReturnSource(fn)`: the lead-sheet editor returns its textarea +
+  `registerReturnSource(fn)`: the lead-sheet editor returns its text (`getText()`) +
   title/artist/writer (`kind: 'lead-sheet'`); the tab editor returns
   `draftOpenHash(...)` — the IndexedDB draft's own route with `?draft=`
   (`kind: 'tab'`), after `mountTabEditor`'s `onSubmit` has force-flushed the
@@ -711,7 +728,7 @@ from 65 modules / 1.47 MB raw to ~33 / 0.75 MB; see the test for the budget):
 
 | Loaded on demand | Trigger |
 |---|---|
-| `editor.js` (+ `smart-paste`, `dedup-check`, `visual-editor/*`, `chord-explorer/theory`) | `showView('add-song')` or any `enterEditMode` (`loadEditor()` in `main.js`, which also runs `initEditor` once, right after the first load) |
+| `editor.js` (+ `smart-paste`, `dedup-check`, `lead-editor/*`, `visual-editor/{model,syllables,wrap-section}`, `vendor/codemirror.js`) | `showView('add-song')` or any `enterEditMode` (`loadEditor()` in `main.js`, which also runs `initEditor` once, right after the first load) |
 | `review-queue.js` | Dungeon mode for a trusted/admin viewer, or a request handler (`loadReviewQueue()` runs `configureReviewQueue` once) |
 | `bounty-view`, `my-submissions`, `high-scores`, `drafts-view` | their `#` route (`renderLazyView` in `main.js` drops the result if the reader has already navigated on) |
 | `list-export`, `zip` | a list's Export pill → Download |
@@ -879,7 +896,7 @@ mcp__chrome-devtools__list_console_messages({ types: ["error", "warn"] })
 - `song-view.spec.js` - Song display and controls
 - `transposition.spec.js` - Key transposition features
 - `ui.spec.js` - UI interactions, modals, navigation
-- `visual-editor.spec.js` - Visual editor preview
+- `visual-editor.spec.js` / `visual-editor-mobile.spec.js` - Lead-sheet editor (Visual / ChordPro, chord menu, sections; phone keyboard-as-mode)
 - `work-view.spec.js` - Unified song page with parts/tablature
 
 ## Adding a Feature

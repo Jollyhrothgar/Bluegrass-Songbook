@@ -48,8 +48,11 @@ npm run test:all       # Run unit tests + E2E tests
   default is 5). If it ever comes back, `--workers=1` passing is the tell.
 - **`npx playwright install` hangs** after writing `ABOUT` and `LICENSE*` into
   the browser folder, at 0% CPU: Playwright's zip extractor stalls under
-  Node 24.16.0 (24.7.0 and 24.22.0 are fine). Install with another Node, e.g.
-  `mise x node@24.22.0 -- npx playwright install chromium chromium-headless-shell`.
+  Node 24.16.0 and 26.12.1 (24.7.0 and 24.22.0 are fine; for WebKit it stalls
+  at ~15 MB, `webkit-*/libwebrtc.dylib` alone). Install with another Node, e.g.
+  `mise x node@24.22.0 -- npx playwright install chromium chromium-headless-shell`
+  (or `webkit`: installed this way 2026-10-27 to reproduce an iOS-only editor
+  bug; the projects below still do not run it).
   Only the install needs it; the tests run on any Node.
 
 ## Configuration

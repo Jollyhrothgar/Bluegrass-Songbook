@@ -5,6 +5,10 @@
 import { describe, it, expect } from 'vitest';
 import { wrapSelectionAsSection } from '../visual-editor/wrap-section.js';
 import { parseSong } from '../visual-editor/model.js';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { analyzeDocument } from '../lead-editor/doc-model.js';
+import { parseChordPro } from '../renderers/chordpro.js';
 
 const sel = (text, needle) => {
     const i = text.indexOf(needle);
@@ -172,5 +176,73 @@ describe('metadata stays put', () => {
         expect(res.text.startsWith('{meta: title Keep Me}\n{key: G}\n\n{start_of_verse')).toBe(true);
         const doc = parseSong(res.text);
         expect(doc.metadata.fields.title).toBe('Keep Me');
+    });
+});
+
+describe('a selection that crosses a section boundary re-sections the document', () => {
+    // "sawmill" at the end of Verse 2 through "What have" in the Chorus after it
+    const real = readFileSync(resolve(process.cwd(), 'works/old-home-place/lead-sheet.pro'), 'utf8');
+    const labels = (t) => analyzeDocument(t).sections.filter((s) => s.explicit).map((s) => s.label);
+    const lyricLines = (t) => parseChordPro(t).sections.flatMap((s) => s.lines).filter((l) => l.trim() && !l.startsWith('{'));
+
+    it('closes Verse 2, wraps the lines, re-opens the rest of the chorus', () => {
+        const from = real.indexOf('sawmill');
+        const to = real.indexOf('What have') + 'What have'.length;
+        const res = wrapSelectionAsSection(real, from, to, 'bridge');
+        const out = res.text;
+        const t = out.split('\n');
+        const v2 = t.indexOf('{start_of_verse: Verse 2}');
+        expect(t.slice(v2, v2 + 5)).toEqual([
+            '{start_of_verse: Verse 2}',
+            'I fell in [C#7]love with a [D]girl from the [A]town',
+            'I thought that she would be [E7]true',
+            '[A]I ran [C#7]away to [A][D]Charlottesville',
+            '{end_of_verse}',
+        ]);
+        const b = t.indexOf('{start_of_bridge: Bridge}');
+        expect(t.slice(b, b + 5)).toEqual([
+            '{start_of_bridge: Bridge}',
+            'And worked in a [E7]sawmill [A]too',
+            '',
+            '[E7]What have they done to the old home [A]place',
+            '{end_of_bridge}',
+        ]);
+        // the rest of the chorus is still a closed chorus with its own label
+        expect(t.slice(b + 6, b + 8)).toEqual(['{start_of_chorus: Chorus}', '[B7]Why did they tear it [E7]down']);
+        // every start has exactly one end, none stray
+        const starts = t.filter((l) => /^\{start_of_/.test(l)).length;
+        const ends = t.filter((l) => /^\{end_of_/.test(l)).length;
+        expect(ends).toBe(starts);
+        // the sections nest as flat, closed runs
+        let open = 0;
+        for (const l of t) {
+            if (/^\{start_of_/.test(l)) { open++; expect(open).toBe(1); }
+            if (/^\{end_of_/.test(l)) { open--; expect(open).toBe(0); }
+        }
+        // verses stay unique and positional
+        const verses = labels(out).filter((l) => /^Verse/.test(l));
+        expect(new Set(verses).size).toBe(verses.length);
+        expect(verses).toEqual(['Verse 1', 'Verse 2', 'Verse 3', 'Verse 4']);
+        // no lyric line is lost
+        expect(lyricLines(out).sort()).toEqual(lyricLines(real).sort());
+        expect(out.slice(res.selStart, res.selEnd).startsWith('{start_of_bridge: Bridge}')).toBe(true);
+    });
+
+    it('a verse wrapped over the boundary renumbers the verses after it', () => {
+        const from = real.indexOf('sawmill');
+        const to = real.indexOf('What have');
+        const out = wrapSelectionAsSection(real, from, to, 'verse').text;
+        const verses = labels(out).filter((l) => /^Verse/.test(l));
+        expect(verses).toEqual(['Verse 1', 'Verse 2', 'Verse 3', 'Verse 4', 'Verse 5']);
+        expect(lyricLines(out).sort()).toEqual(lyricLines(real).sort());
+    });
+
+    it('a selection inside one section splits it around the new one', () => {
+        const t = '{start_of_verse: Verse 1}\none\ntwo\nthree\n{end_of_verse}\n';
+        const i = t.indexOf('two');
+        const out = wrapSelectionAsSection(t, i, i + 3, 'chorus').text;
+        expect(out).toBe('{start_of_verse: Verse 1}\none\n{end_of_verse}\n\n'
+            + '{start_of_chorus: Chorus}\ntwo\n{end_of_chorus}\n\n'
+            + '{start_of_verse: Verse 2}\nthree\n{end_of_verse}\n');
     });
 });

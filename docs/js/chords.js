@@ -480,3 +480,65 @@ export function generateKeyOptions(currentKey) {
                   'Am', 'Bbm', 'Bm', 'Cm', 'C#m', 'Dm', 'Ebm', 'Em', 'Fm', 'F#m', 'Gm', 'G#m'];
     return keys.map(k => `<option value="${k}"${k === currentKey ? ' selected' : ''}>${k}</option>`).join('');
 }
+
+// ---------------------------------------------------------------------------
+// Chord glyphs (display only)
+// ---------------------------------------------------------------------------
+
+const GLYPH_ESC = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' };
+const glyphEsc = (s) => String(s).replace(/[&<>"]/g, (c) => GLYPH_ESC[c]);
+const accidentalGlyph = (a) => a === '#' ? '<span class="acc">♯</span>'
+    : a === 'b' ? '<span class="acc flat">♭</span>' : '';
+
+/** `b7` / `#9` inside an extension become ♭7 / ♯9. */
+function glyphExtension(text) {
+    // G69 reads as 6/9 (a fraction slash, so it cannot be mistaken for a bass note)
+    return glyphEsc(text === '69' ? '6\u20449' : text)
+        .replace(/b(\d)/g, (_, d) => `${accidentalGlyph('b')}${d}`)
+        .replace(/#(\d)/g, (_, d) => `${accidentalGlyph('#')}${d}`);
+}
+
+/**
+ * A chord symbol as glyph HTML, spelled-out style: F#m7b5 -> F♯ø⁷,
+ * Cmaj7 -> Cmaj⁷, Caug -> C+, D/F# -> D with a smaller /F♯. Roman
+ * numerals (Nashville display) get the same treatment. DISPLAY ONLY: the file,
+ * search, transposition and Nashville logic keep the ASCII symbol; anything
+ * that is not a chord comes back escaped and unchanged.
+ *
+ * `faintRoot` dims the root so a decoration reads as the result (D⁷).
+ */
+export function chordGlyphHtml(symbol, { faintRoot = false } = {}) {
+    const text = String(symbol ?? '');
+    const m = text.match(/^([A-G])([#b]?)([^/]*)(?:\/([A-G])([#b]?))?$/);
+    if (m) {
+        const [, r, a, qual, bass, bassAcc] = m;
+        let q = qual;
+        let root = r + accidentalGlyph(a);
+        let minor = '';
+        let plus = '';
+        if (/^m(?!aj)/.test(q)) { minor = 'm'; q = q.slice(1); }
+        let sup = q;
+        if (minor && sup === '7b5') { minor = ''; sup = 'ø7'; }
+        else if (sup === 'dim') sup = '°';
+        else if (sup === 'dim7') sup = '°7';
+        else if (sup === 'aug') { sup = ''; plus = '+'; }
+        // ALWAYS escaped: `sup` is the chord file's own text, and a chord like
+        // `G°<img onerror=…>` starts with the same ° our dim mapping produces
+        // (ø and ° are not HTML-special, so escaping leaves ø7/°/°7 intact)
+        const supHtml = glyphExtension(sup);
+        const rootHtml = faintRoot ? `<span class="faint">${root}</span>` : root;
+        const inner = `${rootHtml}${minor}${plus}${supHtml ? `<sup>${supHtml}</sup>` : ''}`
+            + `${bass ? `<span class="bass">/${bass}${accidentalGlyph(bassAcc)}</span>` : ''}`;
+        // Plain letters (G, Am) need no markup: keep the book's HTML as it was
+        return inner.includes('<') ? `<span class="cg">${inner}</span>` : inner;
+    }
+    const n = text.match(/^([b#]?)(VII|VI|IV|V|III|II|I|vii|vi|iv|v|iii|ii|i)([^/]*)(?:\/(.+))?$/);
+    if (n) {
+        const [, acc, rn, rest, bass] = n;
+        const restHtml = rest ? `<sup>${glyphExtension(rest)}</sup>` : '';
+        const inner = `${accidentalGlyph(acc)}${rn}${restHtml}`
+            + `${bass ? `<span class="bass">/${glyphEsc(bass)}</span>` : ''}`;
+        return inner.includes('<') ? `<span class="cg">${inner}</span>` : inner;
+    }
+    return glyphEsc(text);
+}

@@ -24,7 +24,8 @@
 
 import { escapeHtml } from '../utils.js';
 import {
-    parseLineWithChords, isValidChord, transposeChord, toNashville, getSemitonesBetweenKeys
+    parseLineWithChords, isValidChord, transposeChord, toNashville, getSemitonesBetweenKeys,
+    chordGlyphHtml
 } from '../chords.js';
 
 const SECTION_START_RE = /^\{start_of_(\w+)(?::\s*([^}]*?))?\s*\}$/i;
@@ -233,13 +234,16 @@ function renderLine(line, hideChords, o) {
 
     // Build HTML from segments
     let html = '';
-    for (const seg of segments) {
+    segments.forEach((seg, i) => {
         const chordHtml = seg.chord
-            ? `<span class="cl-chord">${escapeHtml(seg.chord)}</span>`
+            ? `<span class="cl-chord">${chordGlyphHtml(seg.chord)}</span>`
             : `<span class="cl-chord">&nbsp;</span>`;
         const lyricsHtml = escapeHtml(seg.lyrics) || '&nbsp;';
-        html += `<span class="cl-segment">${chordHtml}${lyricsHtml}</span>`;
-    }
+        // a chord with no lyric of its own right before another chord (`[A][D]Charlottesville`): without a gap the two
+        // glyphs touched ("AD"). The lead editor marks the same segment (cm-editor.js ChordWidget), so both draw alike.
+        const cls = seg.chord && !seg.lyrics && i + 1 < segments.length ? 'cl-segment cl-before-chord' : 'cl-segment';
+        html += `<span class="${cls}">${chordHtml}${lyricsHtml}</span>`;
+    });
 
     return `<div class="song-line cl-line">${html}</div>`;
 }

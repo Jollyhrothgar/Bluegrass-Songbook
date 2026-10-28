@@ -2390,6 +2390,9 @@ h1 {
     overflow-wrap: break-word;
     word-break: normal;
 }
+/* a chord with no lyric of its own right before another chord (`[A][D]Charlottesville`): one character of air, or the
+   glyphs touch ("AD"). Same rule in the book and the lead editor (renderers/chordpro.js, lead-editor/cm-editor.js). */
+.cl-segment.cl-before-chord { padding-right: 1ch; }
 
 .cl-chord {
     display: block;
@@ -2398,6 +2401,22 @@ h1 {
     line-height: 1.3;
     min-height: 1.3em;
 }
+
+/* Chord glyphs (chords.js chordGlyphHtml): display only, the file stays ASCII */
+.cg { white-space: nowrap; }
+.cg sup {
+    font-size: 0.66em;
+    vertical-align: 0;
+    position: relative;
+    top: -0.55em;
+    margin-left: 0.03em;
+    letter-spacing: -0.01em;
+    line-height: 0;
+}
+.cg .bass { font-size: 0.85em; }
+.cg .acc { letter-spacing: -0.14em; padding-right: 0.06em; }
+.cg .acc.flat { margin-left: -0.1em; }
+.cg .faint { opacity: 0.35; }
 
 /* Wrap indicator: subtle arrow when a chord-lyrics line wraps */
 .cl-line.wrapped {
@@ -3142,6 +3161,7 @@ mark {
 
 .editor-actions {
     display: flex;
+    flex-wrap: wrap;   /* a phone can't fit three buttons + the fork notice on one row */
     gap: 0.75rem;
     align-items: center;
 }
@@ -3204,6 +3224,10 @@ mark {
     border-left: 3px solid var(--accent, var(--border));
     padding: 0.4rem 0.6rem;
     margin-bottom: 0.5rem;
+    /* it is inserted INTO .editor-actions: give it a row of its own. Squeezed
+       into the button row it pushed the page wider than a phone, and every
+       position:fixed sheet then sat below the visible screen */
+    flex: 1 1 100%;
 }
 
 /* Dedup offramp — "this looks like a song we already have" (phase 3b) */
@@ -9185,201 +9209,6 @@ body.dungeon-mode #search-stats {
 .editor-toolbar-btn:disabled { opacity: 0.45; cursor: default; }
 .editor-toolbar-spacer { flex: 1; }
 
-.editor-workspace {
-    display: grid;
-    grid-template-columns: 45fr 55fr;
-    gap: 1rem;
-    align-items: stretch;
-    margin-bottom: 0.75rem;
-}
-.editor-pane-raw {
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    min-height: 0;
-}
-.editor-pane-raw #editor-content { flex: 1; min-height: 0; }
-.editor-pane-raw .editor-help-row { margin-top: 0.5rem; }
-.editor-pane-preview {
-    position: relative;
-    min-width: 0;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md, 6px);
-    background: var(--bg);
-}
-.editor-preview-header {
-    display: flex;
-    align-items: center;
-    padding: 0.4rem 0.75rem;
-    border-bottom: 1px solid var(--border);
-    background: var(--bg);
-    border-radius: var(--radius-md, 6px) var(--radius-md, 6px) 0 0;
-}
-@media (min-width: 800px) {
-    /* side-by-side: panes share a fixed height; the preview scrolls
-       internally so the docked palette stays in view */
-    .editor-workspace { height: clamp(420px, calc(100vh - 300px), 900px); }
-    .editor-pane-preview { overflow-y: auto; }
-    /* keep the pane title visible while the pane scrolls */
-    .editor-preview-header { position: sticky; top: 0; z-index: 20; }
-    /* popover mode: no bottom dock to scroll clear of, so no need for the
-       huge dock-clearance padding below the last line */
-    .ve-preview-body,
-    .ve-preview:has(.ve-picker:not(.hidden)) .ve-preview-body { padding-bottom: 3rem; }
-}
-@media (max-width: 799.98px) {
-    /* stacked: textarea on top, preview flows with the page */
-    .editor-workspace { grid-template-columns: 1fr; }
-    .editor-pane-raw #editor-content { min-height: 35vh; }
-    /* the palette docks to the viewport when the pane doesn't scroll */
-    .ve-preview .ve-palette { position: fixed; left: 0; right: 0; bottom: 0; }
-}
-
-/* Interactive preview: section headers + chord chips over syllables */
-.ve-preview-body { position: relative; padding: 0.6rem 0.75rem 30vh; }
-/* the open root+quality picker is much taller than the bare palette: give
-   enough scroll room that the line being edited can sit above it */
-.ve-preview:has(.ve-picker:not(.hidden)) .ve-preview-body {
-    padding-bottom: max(75vh, 600px);
-}
-.ve-psec { margin-bottom: 1.1rem; }
-.ve-section-label {
-    font-weight: 700;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: var(--text-secondary);
-}
-
-/* section header row: ⠿ drag handle + label + ⋯ menu */
-.ve-psec-header { display: flex; align-items: center; gap: 0.15rem; margin-bottom: 0.25rem; }
-.ve-psec-header .ve-drag-handle { min-height: 30px; min-width: 30px; font-size: 0.95rem; opacity: 0.55; }
-.ve-psec-header .ve-drag-handle:hover,
-.ve-psec-header .ve-drag-handle:focus-visible { opacity: 1; }
-.ve-psec-menu-wrap { position: relative; }
-.ve-psec-menu-btn {
-    min-height: 30px;
-    min-width: 34px;
-    background: none;
-    border: none;
-    color: var(--text-secondary);
-    cursor: pointer;
-    font-size: 1.05rem;
-    border-radius: var(--radius-md, 6px);
-    opacity: 0.55;
-}
-.ve-psec-header:hover .ve-psec-menu-btn,
-.ve-psec-menu-btn:hover, .ve-psec-menu-btn:focus-visible { opacity: 1; }
-.ve-psec-menu-btn:hover { color: var(--text); background: var(--bg-secondary); }
-.ve-psec-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 15;
-    min-width: 9.5rem;
-    display: flex;
-    flex-direction: column;
-    background: var(--bg-secondary);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md, 6px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-    padding: 0.25rem;
-}
-.ve-psec-menu.hidden { display: none; }
-.ve-psec-menu .ve-menu-item {
-    text-align: left;
-    background: none;
-    border: none;
-    color: var(--text);
-    padding: 0.45rem 0.7rem;
-    min-height: 36px;
-    cursor: pointer;
-    border-radius: var(--radius-sm, 4px);
-    font-size: 0.9rem;
-}
-.ve-psec-menu .ve-menu-item:hover { background: var(--bg); }
-.ve-psec-menu .ve-menu-item[data-action="delete"] { color: var(--danger); }
-.ve-rename-input {
-    font-weight: 700;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: var(--text);
-    background: var(--bg);
-    border: 1px solid var(--accent);
-    border-radius: var(--radius-sm, 4px);
-    padding: 0.15rem 0.4rem;
-    max-width: 14rem;
-}
-
-/* lifted section + drop indicator during a drag (indicator style is shared
-   with the parked card surface, .ve-drop-indicator below) */
-.ve-psec-dragging {
-    position: relative;
-    z-index: 5;
-    opacity: 0.9;
-    background: var(--bg);
-    border-radius: var(--radius-md, 6px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
-    pointer-events: none;   /* captured pointer events still reach the handle */
-}
-.ve-preview-body.ve-drag-active { cursor: grabbing; }
-
-/* blank lines inside a section: keep the "+" end slot functional (chord-only
-   lines are placed there) but whisper-quiet until hovered or selected */
-.ve-line-blank { min-height: 1rem; }
-.ve-line-blank .ve-end-slot { opacity: 0.15; }
-.ve-line-blank:hover .ve-end-slot,
-.ve-line-blank .ve-end-slot:focus-visible,
-.ve-line-blank .ve-end-slot.ve-syl-selected { opacity: 1; }
-.ve-psec-chorus .ve-psec-body { padding-left: 1rem; }
-.ve-psec-passthrough .ve-passthrough-raw {
-    border-left: 3px solid var(--border);
-    padding-left: 0.6rem;
-}
-.ve-preview-empty {
-    padding: 2rem 1rem;
-    color: var(--text-secondary);
-    text-align: center;
-}
-.ve-preview-empty-hint { margin: 0 0 1rem; font-style: italic; }
-.ve-preview-empty .ve-empty-links { justify-content: center; }
-@media (max-width: 800px) {
-    .ve-psec-body { font-size: 1.05rem; }
-}
-
-/* ===== Visual editor (card modules parked; shared ve-* line styles below) ===== */
-.visual-editor-container.hidden { display: none; }
-.ve-root { padding-bottom: 30vh; } /* room above the docked palette */
-/* the open root+quality picker is much taller than the bare palette: give
-   enough scroll room that the line being edited can sit above it. The px
-   floor covers short viewports where the picker's fixed-height rows exceed
-   75vh (measured ~530px at 390x700), so even the last line can auto-scroll
-   clear of the palette. */
-.ve-root:has(.ve-picker:not(.hidden)) { padding-bottom: max(75vh, 600px); }
-.ve-toolbar {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.4rem 0;
-    position: sticky;
-    top: 0;
-    background: var(--bg);
-    z-index: 5;
-}
-.ve-toolbar button {
-    min-height: 40px;
-    min-width: 44px;
-    background: var(--bg-secondary);
-    color: var(--text);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md, 6px);
-    cursor: pointer;
-    font-size: var(--font-base, 0.9rem);
-}
-.ve-toolbar button:hover { border-color: var(--accent); }
-.ve-toolbar-spacer { flex: 1; }
-.ve-key-label { font-weight: 600; color: var(--chord); }
 /* transpose/key fade in once the song has a chord; space stays reserved
    so the cards below never jump */
 .ve-transpose-group {
@@ -9395,523 +9224,6 @@ body.dungeon-mode #search-stats {
     pointer-events: none;
 }
 
-/* drag-and-drop section reorder */
-.ve-cards { position: relative; }
-.ve-cards.ve-drag-active { user-select: none; -webkit-user-select: none; }
-.ve-drag-handle {
-    min-height: 36px;
-    min-width: 36px;
-    background: none;
-    border: none;
-    color: var(--text-secondary);
-    cursor: grab;
-    touch-action: none;   /* the handle is the lift zone; card content still scrolls */
-    font-size: 1.05rem;
-    padding: 0 0.2rem;
-}
-.ve-drag-handle:active { cursor: grabbing; color: var(--accent); }
-.ve-card-dragging {
-    position: relative;
-    z-index: 5;
-    opacity: 0.9;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
-    border-color: var(--accent);
-    pointer-events: none;   /* captured pointer events still reach the handle */
-}
-.ve-drop-indicator {
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 3px;
-    border-radius: 2px;
-    background: var(--accent);
-    z-index: 4;
-    pointer-events: none;
-}
-
-.ve-card {
-    border: 1px solid var(--border);
-    border-radius: var(--radius-lg, 8px);
-    margin: 0.75rem 0;
-    background: var(--bg-secondary);
-}
-.ve-card-header {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.4rem 0.6rem;
-    border-bottom: 1px solid var(--border);
-}
-.ve-card-label { font-weight: 700; flex: 1; }
-.ve-mode-btn {
-    min-height: 36px;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md, 6px);
-    color: var(--text);
-    cursor: pointer;
-    padding: 0 0.5rem;
-}
-.ve-mode-btn:hover { border-color: var(--accent); }
-.ve-mode-btn.active { background: var(--chord); color: var(--bg); border-color: var(--chord); }
-.ve-card-menu-btn { min-height: 36px; min-width: 40px; background: none; border: none; color: var(--text); cursor: pointer; font-size: 1.2rem; }
-.ve-card-menu { display: flex; flex-wrap: wrap; gap: 0.25rem; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--border); }
-.ve-menu-item {
-    min-height: 40px;
-    padding: 0 0.6rem;
-    cursor: pointer;
-    background: var(--bg);
-    color: var(--text);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md, 6px);
-}
-.ve-menu-item:hover { border-color: var(--accent); }
-.ve-card-body { padding: 0.5rem 0.6rem; overflow-x: auto; }
-
-.ve-line { margin: 0.35rem 0; white-space: pre-wrap; line-height: 1.2; }
-.ve-line-opaque { color: var(--text-secondary); font-family: monospace; }
-.ve-seg { display: inline-block; vertical-align: bottom; white-space: pre-wrap; }
-.ve-chips { display: block; min-height: 1.4em; }
-.ve-chip {
-    display: inline-block;
-    background: var(--chord);
-    color: var(--bg);
-    font-weight: 700;
-    border: none;
-    border-radius: var(--radius-sm, 4px);
-    padding: 0.05em 0.35em;
-    margin-right: 2px;
-    cursor: pointer;
-    font-size: 0.9em;
-}
-/* Hovering the strip over an occupied seam: the chip IS the indicator —
-   dashed preview of the same ring that .ve-chip-selected makes solid */
-.ve-chip-hover {
-    outline: 2px dashed var(--accent);
-    outline-offset: 2px;
-}
-.ve-chip-selected {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px; /* ring with a bg gap so it reads on the chord color */
-}
-/* Ghost-chip typed entry: in-progress chord shown where the chip will sit */
-.ve-ghost-chip {
-    display: inline-block;
-    background: transparent;
-    color: var(--chord);
-    font-weight: 700;
-    border: 1px dashed var(--chord);
-    border-radius: var(--radius-sm, 4px);
-    padding: 0.05em 0.35em;
-    margin-right: 2px;
-    font-size: 0.9em;
-    opacity: 0.75;
-    min-width: 0.8em;
-    min-height: 1.1em;
-}
-.ve-chip-editing {
-    opacity: 0.75;
-    outline-style: dashed;
-    min-width: 0.8em; /* keeps a visible stub when backspaced to empty */
-    min-height: 1.4em;
-}
-.ve-ghost-invalid {
-    border-color: var(--error, #e05252);
-    color: var(--error, #e05252);
-    text-decoration: line-through;
-}
-.ve-chip.ve-ghost-invalid { outline-color: var(--error, #e05252); }
-/* Hover ×: desktop-only quick delete on a chord chip */
-.ve-chip-wrap { position: relative; display: inline-block; }
-.ve-chip-x {
-    display: none;
-    position: absolute;
-    top: -0.55em;
-    right: -0.35em;
-    width: 16px;
-    height: 16px;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    line-height: 1;
-    background: var(--bg-secondary);
-    color: var(--text);
-    border: 1px solid var(--border);
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 2;
-}
-.ve-chip-x:hover { border-color: var(--error, #e05252); color: var(--error, #e05252); }
-@media (hover: hover) and (pointer: fine) {
-    .ve-chip-wrap:hover .ve-chip-x { display: flex; }
-}
-.ve-syl {
-    cursor: text;
-    border-radius: 3px;
-    padding: 0.1em 0;
-}
-.ve-line:hover .ve-syl {
-    background: rgba(96, 165, 250, 0.06); /* fallback */
-    background: color-mix(in srgb, var(--accent) 6%, transparent);
-}
-/* Selected seam's syllable: a subtle secondary cue (tint + underline) —
-   the primary indicator is the slot/chip in the chord strip above. */
-.ve-syl-selected {
-    background: rgba(96, 165, 250, 0.12); /* fallback */
-    background: color-mix(in srgb, var(--accent) 12%, transparent);
-    box-shadow: inset 0 -2px 0 var(--accent);
-}
-.ve-end-slot {
-    background: none;
-    border: 1px dashed var(--border);
-    border-radius: var(--radius-sm, 4px);
-    color: var(--text-secondary);
-    cursor: pointer;
-    min-width: 28px;
-    min-height: 28px;
-    margin-left: 0.4rem;
-}
-.ve-end-slot:hover,
-.ve-end-slot-hover { border-color: var(--accent); color: var(--accent); }
-/* selected end slot: solid, filled version of the same shape */
-.ve-end-slot.ve-syl-selected {
-    border: 2px solid var(--accent);
-    color: var(--accent);
-    background: rgba(96, 165, 250, 0.18); /* fallback */
-    background: color-mix(in srgb, var(--accent) 18%, transparent);
-    box-shadow: none; /* the syl underline cue is for lyric syllables */
-}
-
-/* ===== Chord row as the chord surface ===== */
-/* Each token's chip container doubles as the explicit chord strip above
-   the lyrics: hover shows a faint ghost slot snapped to the nearest
-   syllable seam, click selects that offset for the palette / typed entry.
-   Kept >= 1.4em tall (comfortable hit target) but visually light. */
-.ve-seg { position: relative; }
-.ve-strip {
-    cursor: copy;
-    border-radius: 3px;
-    min-height: 1.4em;
-}
-.ve-strip:hover {
-    background: rgba(96, 165, 250, 0.08); /* fallback */
-    background: color-mix(in srgb, var(--accent) 8%, transparent);
-}
-/* Seam caret: ONE shape for hover and selection — a thin insertion bar
-   with a small triangle head, centered on the seam (the target syllable's
-   left edge), absolutely positioned in the seg that owns the target token
-   (no layout shift, correct across wrapped lines). A caret marks a POINT,
-   so indicators at adjacent seams stay distinct even over one-letter
-   syllables — the old fixed-width slot boxes overhung short tokens and
-   collided with each other. Hover = translucent ghost; selected = solid.
-   Same shape, weight distinguishes them. */
-.ve-slot {
-    position: absolute;
-    top: 0.05em;
-    left: -1.5px; /* 3px bar centered on the seam */
-    box-sizing: border-box;
-    width: 3px;
-    height: 1.3em;
-    border-radius: 2px;
-    background: var(--accent);
-    pointer-events: none;
-    z-index: 1;
-}
-.ve-slot::before { /* triangle head: reads as "insert here" */
-    content: '';
-    position: absolute;
-    top: -3px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-top: 5px solid var(--accent);
-}
-.ve-slot-ghost { opacity: 0.55; }
-.ve-slot-selected { opacity: 1; }
-
-/* ===== In-preview lyric editing ===== */
-/* the edited line swaps to a bare single-line input; padding-top keeps the
-   vertical rhythm where the chord strip was */
-.ve-line-editing { padding-top: 1.4em; }
-.ve-lyric-input {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    font: inherit;
-    line-height: 1.2;
-    padding: 0.1em 0.2em;
-    margin-left: -0.2em;
-    background: var(--bg);
-    color: var(--text);
-    border: 1px solid var(--accent);
-    border-radius: 3px;
-}
-/* quiet trailing ghost row: starts a new line at the end of the section */
-.ve-add-line {
-    display: block;
-    background: none;
-    border: none;
-    padding: 0.15em 0;
-    min-height: 28px;
-    color: var(--text-secondary);
-    font: inherit;
-    font-size: 0.85em;
-    cursor: text;
-    opacity: 0.25;
-    text-align: left;
-}
-.ve-psec-body:hover .ve-add-line, .ve-add-line:focus-visible { opacity: 0.7; }
-.ve-lyrics-input {
-    width: 100%;
-    min-height: 6em;
-    font-size: 1rem;
-    background: var(--bg);
-    color: var(--text);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md, 6px);
-    padding: 0.5rem;
-}
-.ve-passthrough-raw {
-    margin: 0;
-    padding: 0.5rem 0.6rem;
-    color: var(--text-secondary);
-    font-size: 0.85rem;
-    overflow-x: auto;
-}
-.ve-footer { padding: 0.5rem 0; }
-.ve-add-section,
-.ve-add-types button {
-    min-height: 44px;
-    cursor: pointer;
-    background: var(--bg-secondary);
-    color: var(--text);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md, 6px);
-}
-.ve-add-section { padding: 0 1rem; }
-.ve-add-types button { padding: 0 0.8rem; }
-.ve-add-section:hover,
-.ve-add-types button:hover { border-color: var(--accent); }
-.ve-add-types { display: flex; gap: 0.4rem; margin-top: 0.4rem; flex-wrap: wrap; }
-
-.ve-palette {
-    position: sticky;
-    bottom: 0;
-    background: var(--bg);
-    border-top: 2px solid var(--border);
-    padding: 0.5rem;
-    z-index: 10;
-    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
-}
-[data-theme="dark"] .ve-palette { box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.6); }
-.ve-palette.hidden { display: none; }
-/* Wide layout: the palette floats as a popover anchored to the selected
-   syllable/chip (positioned by preview.js). Width capped so the
-   root+quality picker still fits; taller-than-viewport content scrolls
-   inside the popover. */
-.ve-palette.ve-palette-popover {
-    position: fixed;
-    bottom: auto;
-    width: min(400px, calc(100vw - 2rem));
-    border: 1px solid var(--border);
-    border-top-width: 1px;
-    border-radius: var(--radius-md, 6px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
-    overflow-y: auto;
-    overscroll-behavior: contain;
-    z-index: 60;
-}
-[data-theme="dark"] .ve-palette.ve-palette-popover {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
-}
-.ve-palette-row { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.4rem; }
-.ve-chip-btn {
-    min-height: 44px;
-    min-width: 44px;
-    font-size: 1rem;
-    font-weight: 700;
-    background: var(--bg-secondary);
-    color: var(--chord);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-lg, 8px);
-    cursor: pointer;
-}
-.ve-chip-btn:hover {
-    border-color: var(--accent);
-    background: color-mix(in srgb, var(--accent) 10%, var(--bg-secondary));
-}
-
-/* Root + quality chord picker (Strum Machine style) */
-.ve-picker { margin-top: 0.4rem; }
-.ve-picker.hidden { display: none; }
-.ve-picker-panels {
-    display: flex;
-    gap: 0.6rem;
-    align-items: flex-start;
-    max-height: 45vh;
-    overflow-y: auto;
-}
-.ve-picker-roots { display: flex; gap: 0.3rem; flex-shrink: 0; }
-.ve-picker-naturals,
-.ve-picker-accidentals { display: flex; flex-direction: column; gap: 0.25rem; }
-.ve-picker-root {
-    min-height: 40px;
-    min-width: 52px;
-    font-size: 1rem;
-    font-weight: 700;
-    background: var(--bg-secondary);
-    color: var(--text);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md, 6px);
-    cursor: pointer;
-}
-.ve-picker-accidentals .ve-picker-root {
-    min-width: 44px;
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-}
-.ve-picker-root:hover { border-color: var(--accent); }
-.ve-picker-root.selected,
-.ve-picker-accidentals .ve-picker-root.selected {
-    background: var(--chord);
-    color: var(--bg);
-    border-color: var(--chord);
-}
-.ve-picker-qualities {
-    flex: 1;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 0.3rem;
-    align-content: start;
-}
-.ve-picker-quality {
-    min-height: 44px;
-    padding: 0 0.2rem;
-    font-size: 0.95rem;
-    font-weight: 700;
-    background: var(--bg-secondary);
-    color: var(--chord);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md, 6px);
-    cursor: pointer;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-.ve-picker-quality:hover {
-    border-color: var(--accent);
-    background: color-mix(in srgb, var(--accent) 10%, var(--bg-secondary));
-}
-.ve-palette-custom {
-    min-height: 44px;
-    padding: 0 0.5rem;
-    font-size: 1rem;
-    margin-top: 0.4rem;
-    width: 100%;
-    background: var(--bg);
-    color: var(--text);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md, 6px);
-}
-.ve-palette-custom:focus { outline: none; border-color: var(--accent); }
-
-.ve-palette-more,
-.ve-palette-close {
-    min-height: 44px;
-    padding: 0 0.8rem;
-    background: var(--bg-secondary);
-    color: var(--text);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md, 6px);
-    cursor: pointer;
-}
-.ve-palette-more:hover,
-.ve-palette-close:hover { border-color: var(--accent); }
-.ve-palette-delete {
-    min-height: 44px;
-    padding: 0 0.8rem;
-    color: var(--danger);
-    background: var(--bg-secondary);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md, 6px);
-    cursor: pointer;
-}
-.ve-palette-delete:hover { border-color: var(--danger); }
-.ve-palette-close { margin-left: auto; }
-.ve-palette-actions { align-items: center; }
-
-.ve-toast {
-    position: fixed;
-    bottom: 5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--bg-secondary);
-    color: var(--text);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-lg, 8px);
-    padding: 0.6rem 1rem;
-    z-index: 20;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-.ve-toast.hidden { display: none; }
-.ve-toast-undo { margin-left: 0.5rem; font-weight: 700; cursor: pointer; color: var(--accent); }
-
-/* per-card "no lyrics yet" hint (section-card.js) */
-.ve-empty-hint { color: var(--text-secondary); padding: 0.75rem; }
-.ve-empty-paste {
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 0.25rem;
-    padding: 1rem;
-    font: inherit;
-    font-size: 1.05rem;
-    line-height: 1.5;
-    color: var(--text-primary);
-    background: var(--bg-secondary);
-    border: 1px dashed var(--border-color);
-    border-radius: 12px;
-    resize: vertical;
-}
-.ve-empty-paste:focus { outline: none; border-color: var(--accent); }
-.ve-empty-paste::placeholder { color: var(--text-secondary); opacity: 0.8; }
-.ve-empty-links {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    padding: 0.75rem 0;
-}
-.ve-empty-link {
-    background: none;
-    border: none;
-    padding: 0.25rem 0;
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    cursor: pointer;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
-.ve-empty-link:hover { color: var(--accent); }
-
-/* gentle entrance when typed/pasted lyrics split into cards */
-@keyframes ve-card-in {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: none; }
-}
-.ve-card-enter { animation: ve-card-in 260ms ease-out both; }
-@media (prefers-reduced-motion: reduce) {
-    .ve-card-enter { animation: none; }
-    .ve-transpose-group { transition: none; }
-}
-
-@media (max-width: 700px) {
-    .ve-palette { position: fixed; left: 0; right: 0; bottom: 0; }
-    .ve-card-body { font-size: 1.05rem; }
-    .ve-picker-root { min-width: 44px; }
-}
 
 /* ============================================
    APP SHELL: top band, bottom band, pill primitive
@@ -11242,3 +10554,361 @@ body.file-dragover {
     border-color: var(--accent);
     outline: none;
 }
+
+/* ==========================================================================
+   Lead-sheet editor (js/lead-editor/): one CodeMirror view, Lyrics | Chords | ChordPro
+   Lyrics and Chords modes reuse the book's own classes (.song-body, .song-section,
+   .section-label, .cl-line, .cl-segment, .cl-chord), so it looks like the
+   song page by construction; only editor-only chrome is styled below.
+   ========================================================================== */
+.editor-workspace { display: block; height: auto; margin-bottom: 0.5rem; }
+.editor-lead { min-width: 0; }
+.editor-modebar { display: flex; align-items: center; gap: 0.75rem; margin: 0.25rem 0 0.6rem; flex-wrap: wrap; }
+.le-modeswitch { display: inline-flex; border: 1px solid var(--border); border-radius: 999px; overflow: hidden; background: var(--bg); }
+.le-modeswitch button {
+    border: 0; background: none; color: var(--text-secondary); padding: 0.35rem 0.9rem;
+    font: inherit; font-size: 0.85rem; cursor: pointer; min-height: 32px;
+}
+.le-modeswitch button.on { background: var(--accent); color: var(--on-accent); font-weight: 600; }
+.le-pane-toggle { display: none; }
+
+.le-workspace { display: block; }
+.le-preview-pane { display: none; }
+.le-mode-chordpro { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: start; }
+.le-mode-chordpro .le-preview-pane {
+    display: block; background: var(--bg-secondary); border: 1px solid var(--border);
+    border-radius: 8px; padding: 1.25rem; min-width: 0;
+}
+.le-preview-empty { color: var(--text-secondary); font-family: inherit; }
+@media (max-width: 799.98px) {
+    .le-mode-chordpro { display: block; }
+    .le-mode-chordpro .le-preview-pane { display: none; }
+    .le-mode-chordpro.le-show-preview .le-preview-pane { display: block; }
+    .le-mode-chordpro.le-show-preview .le-source-pane { display: none; }
+    #editor-pane-toggle:not(.hidden) { display: inline-flex; }
+}
+
+.le-cm .cm-editor {
+    background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px;
+    min-height: 55vh; color: var(--text);
+}
+.le-cm .cm-editor.cm-focused { outline: 2px solid color-mix(in srgb, var(--accent) 45%, transparent); outline-offset: 0; }
+/* overflow-x CLIP (not hidden: no scroll container, the page still scrolls the chart): CodeMirror measures text with a
+   99999px-wide absolute line (measureTextSize, whenever no line is plain text, i.e. always here). Unclipped it widened the
+   PAGE for that instant, and a phone viewport answered by resetting the scroll: a jump to the top in the middle of a glide. */
+.le-cm .cm-scroller { overflow: visible; overflow-x: clip; font-family: inherit; line-height: inherit; }
+.le-cm .cm-content { padding: 1.25rem; caret-color: var(--text); min-height: 50vh; }
+.le-cm .cm-line { padding: 0; }
+.le-cm .cm-content ::selection { background: color-mix(in srgb, var(--accent) 28%, transparent); }
+.le-cm .cm-content.cl-source { font-family: 'SF Mono', 'Fira Code', Consolas, monospace; font-size: 0.9rem; line-height: 1.5; }
+.le-cm .cm-chordtok { color: var(--chord); font-weight: 600; }
+.le-cm .cm-directive { color: var(--text-secondary); }
+.le-source-pane { position: relative; }
+/* the empty-sheet hint is a sibling overlay of CodeMirror, so its buttons are real */
+.le-empty { position: absolute; z-index: 2; top: 1.25rem; left: 1.25rem; right: 1.25rem; color: var(--text-secondary); cursor: text; }
+.le-empty.hidden { display: none; }
+.le-paste-hint { font-size: 0.85rem; }
+.cl-empty { display: flex; flex-direction: column; gap: 0.35rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+.cl-empty strong { color: var(--text); font-size: 1.05rem; }
+
+/* Visual mode: the book's blocks, inside CodeMirror's lines */
+/* CodeMirror measures a line's box, margins excluded: any vertical margin on .cm-line (or on a
+   block widget) drifts its height map away from the screen. The book's spacing is kept as PADDING. */
+.le-cm .cm-line.cl-line { white-space: pre-wrap; }
+.le-cm .cm-line.song-line { margin-bottom: 0; padding-bottom: 0.25rem; }
+.le-cm .cm-line.song-line.cl-last { margin-bottom: 0; padding-bottom: 1.5rem; }
+.le-cm .cm-line.cl-blank { min-height: 0.35rem; line-height: 0.35rem; }
+.le-cm .cl-label-row { margin-bottom: 0; display: flow-root; }
+.le-cm .cl-label-row .section-label { cursor: pointer; display: inline-block; border-radius: 4px; padding: 0 0.25rem; margin-left: -0.25rem; }
+.le-cm .cl-label-row .section-label:hover { background: var(--bg-tertiary); }
+.le-cm .cl-hidden { display: none; }
+.le-mode-chords .le-cm .cl-chord-glyph { cursor: pointer; }
+/* Chords paint AND hit-test above the cursor's empty pill (absolute, min-width 1.6em: after a short syllable it
+   reaches the next chord), so a tap on a visible glyph selects that chord while the pill still shows beneath. */
+.le-cm .cl-chord-glyph { position: relative; z-index: 1; }
+/* Lyrics mode: the chords are drawn but inert, greyed so a pasted lyrics+chords sheet is not mistaken for editable.
+   Colour and opacity only: no weight / size / width change, the layout is the book's pixel for pixel. */
+.le-mode-lyrics .le-cm .cl-chord-glyph { color: var(--text-secondary); opacity: 0.5; cursor: default; }
+.le-cm .cl-chord .cg sup { top: -0.55em; }
+.le-cm .cl-locked { margin: 0; padding-bottom: 1rem; display: flow-root; }
+.le-cm .cl-locked-block { border: 1px dashed var(--border); border-radius: 6px; padding: 0.4rem 0.6rem; overflow-x: auto; }   /* a wide tab scrolls in its box (the chart clips x) */
+.le-cm .cl-locked-title { color: var(--text-secondary); font-size: 0.8rem; font-style: italic; }
+
+/* The box: the syllable a chord goes on */
+.le-cm .cm-line.cl-has-box:not(:has(.cl-segment)) { padding-top: 1.4em; }
+.le-cm .cl-box-text, .chm-strip .cl-box-text, .le-loupe .cl-box-text { outline: 2px solid var(--accent); outline-offset: 1px; border-radius: 3px; }
+.le-cm .cl-box-chord .cl-chord-glyph, .chm-strip .cl-box-chord .cl-chord-glyph, .le-loupe .cl-box-chord .cl-chord-glyph { background: var(--accent); color: var(--on-accent); border-radius: 3px; box-shadow: 0 0 0 3px var(--accent); }
+.le-cm .cl-slot, .chm-strip .cl-slot, .le-loupe .cl-slot { position: relative; display: inline-block; width: 0; height: 0; vertical-align: baseline; }
+.le-cm .cl-slot-pill, .chm-strip .cl-slot-pill, .le-loupe .cl-slot-pill {
+    position: absolute; left: -2px; bottom: 1.35em; min-width: 1.6em; height: 1.25em; padding: 0 3px;
+    border: 2px dashed var(--accent); border-radius: 3px; color: var(--chord); font-weight: 600;
+    line-height: 1.15; white-space: nowrap; background: var(--bg-secondary);
+}
+.le-cm .cl-slot-invalid .cl-slot-pill, .chm-strip .cl-slot-invalid .cl-slot-pill, .le-loupe .cl-slot-invalid .cl-slot-pill { border-color: #dc2626; color: #dc2626; }
+
+/* Chords mode: the chart is locked - no text selection, no callout, no keyboard */
+.le-mode-chords .cm-content {
+    -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; -webkit-tap-highlight-color: transparent;
+    cursor: default; touch-action: manipulation;
+}
+
+/* floating section bar */
+.le-selbar {
+    position: fixed; z-index: 62; display: flex; gap: 2px; padding: 4px; max-width: calc(100vw - 16px); overflow-x: auto;
+    background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 10px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+}
+.le-selbar.hidden { display: none; }
+/* phones: docked at the bottom of the visual viewport, above the keyboard (index.js placeDockedBar); the iOS selection menu
+   draws where the floating bar sat */
+.le-selbar.le-selbar-docked { left: 8px; right: 8px; top: auto; bottom: var(--le-selbar-bottom, 8px); max-width: none; flex-wrap: wrap; justify-content: center; overflow-x: visible; }   /* every type in view ("Other…" was off the right edge) */
+.le-selbar button, .le-labelmenu button {
+    border: 0; background: none; color: var(--text); font: inherit; font-size: 0.85rem; padding: 0.4rem 0.7rem;
+    border-radius: 6px; cursor: pointer; white-space: nowrap; min-height: 34px;
+}
+.le-selbar button:hover, .le-labelmenu button:hover { background: var(--bg-tertiary); }
+.le-selbar-field { font: inherit; padding: 0.3rem 0.5rem; border: 1px solid var(--border); border-radius: 6px; background: var(--bg); color: var(--text); }
+.le-labelmenu {
+    position: fixed; z-index: 62; display: flex; flex-direction: column; gap: 2px; padding: 6px; min-width: 200px;
+    background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 10px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+}
+.le-labelmenu button { text-align: left; }
+.le-labelmenu button.danger { color: #dc2626; }
+.le-labelmenu-types { display: flex; flex-wrap: wrap; gap: 2px; }
+.le-labelmenu-types button.on { background: var(--accent); color: var(--on-accent); }
+.le-labelmenu-rename { display: flex; gap: 4px; }
+.le-labelmenu-rename input { flex: 1; min-width: 0; font: inherit; padding: 0.3rem 0.5rem; border: 1px solid var(--border); border-radius: 6px; background: var(--bg); color: var(--text); }
+.le-toast { display: flex; gap: 0.5rem; align-items: center; }
+.le-toast-undo { background: none; border: 0; color: inherit; font: inherit; font-weight: 700; text-decoration: underline; cursor: pointer; }
+
+/* the chord menu (js/lead-editor/chord-menu.js) */
+.chm-menu {
+    z-index: 60; color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+.chm-menu.hidden { display: none; }
+/* SPLIT (phones, narrow windows): the root draws nothing; the magnifier is a fixed bar just under the
+   app's top band, the picker a fixed bar at the bottom. js/lead-editor/index.js publishes --chm-top,
+   --chm-strip-h and --chm-picker-h on <html> (the --bottomband-h pattern) and pads the chart by them. */
+.chm-split { display: contents; }
+.chm-split .chm-strip {
+    position: fixed; z-index: 60; left: 0; right: 0; top: var(--chm-top, 48px); margin: 0;
+    padding: 4px 8px; background: var(--bg-secondary); border-bottom: 1px solid var(--border);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+.chm-split .chm-body {
+    position: fixed; z-index: 60; left: 0; right: 0; bottom: 0; padding: 8px 10px 14px;
+    background: var(--bg-secondary); border-top: 1px solid var(--border);
+    box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.12); max-height: 55vh; overflow-y: auto;
+}
+.editor-lead.chm-docked { padding-top: calc(var(--chm-strip-h, 0px) + var(--chm-strip-gap, 0px)); padding-bottom: calc(var(--chm-picker-h, 0px) + 8px); }
+/* SIDE (wide desktop): one panel in the editor layout, sticky while the chart scrolls */
+.editor-workspace.chm-has-side > .editor-lead { grid-column: 1; grid-row: 1; }
+.editor-workspace.chm-has-side { display: grid; grid-template-columns: minmax(0, 1fr) 390px; gap: 1rem; align-items: start; }
+.chm-side {
+    position: sticky; top: calc(var(--chm-top, 48px) + 8px); align-self: start; grid-column: 2; grid-row: 1;
+    max-height: calc(100vh - var(--chm-top, 48px) - 16px); overflow-y: auto; padding: 8px 10px 10px;
+    background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+.chm-head { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; font-size: 14px; padding: 2px 4px 8px; }
+.chm-sp { flex: 1; }
+.chm-key { font: inherit; font-weight: 600; border: 0; background: none; color: var(--text); padding: 4px 2px; }
+.chm-head button { font: inherit; border: 0; background: none; cursor: pointer; color: var(--text-secondary); }
+.chm-head .chm-done { color: var(--accent); font-weight: 600; }
+.chm-head .chm-move, .chm-head .chm-remove { padding: 3px 9px; border-radius: 6px; box-shadow: inset 0 0 0 1px var(--border); color: var(--text); white-space: nowrap; }
+.chm-head .chm-move.on { background: var(--accent); color: var(--on-accent); box-shadow: none; font-weight: 600; }
+.chm-deco.chm-bass { font-size: 15px; }
+
+/* the trackpad strip: the current line, enlarged; drag it to step the box seam by seam */
+.chm-strip { display: flex; align-items: stretch; gap: 5px; margin-bottom: 6px; }
+.chm-split .chm-strip { margin-bottom: 0; }
+.chm-strip.empty .chm-strip-view { visibility: hidden; }
+.chm-strip-view {
+    flex: 1; min-width: 0; overflow: hidden; position: relative; min-height: 80px; border-radius: 10px;
+    background: var(--bg); box-shadow: inset 0 0 0 1px var(--border); touch-action: none; cursor: ew-resize;
+    -webkit-user-select: none; user-select: none; display: flex; align-items: center; padding: 0 12px;
+}
+.chm-strip-view.dragging { box-shadow: inset 0 0 0 2px var(--accent); }
+.chm-strip-line { width: 100%; pointer-events: none; }
+.chm-strip-cl { white-space: nowrap; display: inline-block; margin: 0; padding: 0; transition: transform 0.08s; }
+.chm-strip-cl .cl-segment { white-space: pre; }
+.chm-strip-cl.song-line, .chm-strip-cl.cl-last { margin: 0; padding: 0; }
+.chm-strip-cl .section-indent, .chm-strip-cl.section-indent { margin-left: 0; }
+.chm-strip .cl-segment > .cm-widgetBuffer:first-child, .le-loupe .cl-segment > .cm-widgetBuffer:first-child { position: absolute; }   /* see .le-cm below */
+.chm-step {
+    flex: none; width: 40px; border: 0; border-radius: 10px; background: var(--bg); color: var(--text);
+    box-shadow: inset 0 0 0 1px var(--border); font: inherit; font-size: 15px; cursor: pointer; min-height: 40px;
+}
+.chm-step-vert { flex: none; display: flex; flex-direction: column; gap: 0; }
+.chm-step-vert .chm-step { min-height: 40px; flex: 1; width: 40px; border-radius: 8px; }
+.chm-basses { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 8px; }
+.chm-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; margin-bottom: 4px; }
+.chm-cell {
+    position: relative; min-height: 48px; border-radius: 8px; background: var(--bg); border: 0; padding: 0; cursor: pointer;
+    box-shadow: inset 0 0 0 1px var(--border); color: var(--text);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px;
+}
+.chm-cell .c { font: 600 17px/1.1 -apple-system, sans-serif; }
+.chm-cell .n { font: 11px/1 -apple-system, sans-serif; color: var(--text-secondary); }
+.chm-cell.empty { background: none; opacity: 0.35; cursor: default; }
+.chm-cell.sel { box-shadow: inset 0 0 0 2px var(--accent); background: color-mix(in srgb, var(--accent) 10%, var(--bg)); }
+.chm-cell.used::after { content: ''; position: absolute; top: 5px; right: 5px; width: 5px; height: 5px; border-radius: 50%; background: var(--chord); }
+.chm-cell.quiet .c { color: var(--text-secondary); font-weight: 400; }
+.chm-decos { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 4px; margin-bottom: 8px; padding-bottom: 2px; }
+/* the second row (⋯ open): the rarer marks then /bass; it wraps, it never scrolls sideways */
+.chm-decos2 { grid-template-columns: repeat(auto-fill, minmax(min(60px, 22%), 1fr)); }
+.chm-deco {
+    min-width: 0; min-height: 44px; border-radius: 8px; padding: 0 6px; background: var(--bg); border: 0; cursor: pointer;
+    box-shadow: inset 0 0 0 1px var(--border); color: var(--text);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px;
+}
+.chm-deco .c { font: 600 16px/1.1 -apple-system, sans-serif; }
+.chm-deco .n { font: 10px/1 -apple-system, sans-serif; color: var(--text-secondary); }
+.chm-deco.on { box-shadow: inset 0 0 0 2px var(--accent); }
+.chm-foot { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-secondary); padding: 4px 2px 0; flex-wrap: wrap; }
+.chm-more { border: 0; background: none; color: var(--accent); font: inherit; font-weight: 600; cursor: pointer; }
+.chm-morepanel { margin-top: 8px; display: flex; flex-direction: column; gap: 6px; }
+.chm-root { border: 0; background: var(--bg); box-shadow: inset 0 0 0 1px var(--border); color: var(--text); border-radius: 6px; padding: 6px 9px; font: inherit; cursor: pointer; min-height: 34px; }
+.chm-root.on { box-shadow: inset 0 0 0 2px var(--accent); }
+.chm-free { display: flex; gap: 6px; }
+.chm-free input { flex: 1; min-width: 0; font: inherit; padding: 0.4rem 0.6rem; border: 1px solid var(--border); border-radius: 6px; background: var(--bg); color: var(--text); }
+.chm-free input.invalid { border-color: #dc2626; }
+.chm-go { border: 0; background: var(--accent); color: var(--on-accent); border-radius: 6px; padding: 0 14px; font: inherit; font-weight: 600; }
+/* CodeMirror's zero-width widget buffer BEFORE a segment's block chord would add a phantom text row above it: only that
+   one leaves the flow. The others (after the chord, around the cursor's slot mid-word) sit on the lyric line and must stay
+   inline: WebKit (iOS) mis-lays out an ABSOLUTE buffer mid-word once the font size changes (A+ / A-), and the segment grew a
+   third row, D / some / body (the "staircase"; reproduced in Playwright WebKit, never in Chromium). They cannot simply be
+   hidden either: CodeMirror's coordsAtPos measures them (display:none put the cursor at 0,0 and broke scrolling to it). */
+.le-cm .cl-segment > .cm-widgetBuffer:first-child { position: absolute; }
+.cl-empty-actions { display: flex; gap: 0.75rem; align-items: center; margin-top: 0.4rem; }
+.cl-empty-actions .le-paste-btn { border: 1px solid var(--border); background: var(--bg); color: var(--text); border-radius: 8px; padding: 0.4rem 0.9rem; font: inherit; cursor: pointer; min-height: 36px; }
+.cl-empty-actions .le-link-request { color: var(--text-secondary); font-size: 0.85rem; }
+.le-toast { pointer-events: auto; z-index: 90; }
+
+/* ---- Chords mode: gliding the cursor, the slot after the words, chord lines ---- */
+/* what a finger can grab must not scroll the page: the boxed chord's row and the slot pill */
+.le-mode-chords .cl-box-chord, .le-mode-chords .cl-slot-pill { touch-action: none; }
+/* a long press must glide, not select text or pop iOS's callout */
+.le-mode-chords .le-cm { -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; }
+.le-cm .cl-slot-pill::after { content: ''; position: absolute; inset: -10px; }   /* a finger-sized target */
+/* the empty slot after the words sits a little to the right of the last letter */
+.le-cm .cl-slot-after .cl-slot-pill, .chm-strip .cl-slot-after .cl-slot-pill, .le-loupe .cl-slot-after .cl-slot-pill { left: 0.45em; }
+/* ...and outlined on the lyric row below it, like a syllable (.cl-box-text). Absolute inside the zero-size slot: no width,
+   no wrap, so the line and every stop measure the same whether the cursor is here or not (e2e "the end of a line"). */
+.le-cm .cl-slot-after .cl-slot-text, .chm-strip .cl-slot-after .cl-slot-text, .le-loupe .cl-slot-after .cl-slot-text {
+    position: absolute; left: 0.45em; bottom: -0.28em; width: calc(1.6em + 10px); height: 1.2em; box-sizing: border-box;
+    outline: 2px solid var(--accent); outline-offset: 1px; border-radius: 3px; pointer-events: none;
+}
+/* the cursor between two words (a GAP stop): a slim bar over the chord row and the lyric row, no text outline */
+.le-cm .cl-gap-bar, .chm-strip .cl-gap-bar, .le-loupe .cl-gap-bar {
+    position: absolute; left: -2px; bottom: -0.3em; width: 4px; height: 2.9em; border-radius: 2px;
+    background: var(--accent); pointer-events: none;
+}
+.le-cm .cl-slot-gap .cl-slot-pill:empty, .chm-strip .cl-slot-gap .cl-slot-pill:empty, .le-loupe .cl-slot-gap .cl-slot-pill:empty { display: none; }
+.le-cm .cl-slot-gap .cl-slot-pill, .chm-strip .cl-slot-gap .cl-slot-pill, .le-loupe .cl-slot-gap .cl-slot-pill { left: 5px; }
+.chm-enter { font-weight: 600; white-space: nowrap; }
+/* an empty chord line the cursor is on: space is PADDING (the height map ignores margins) */
+.le-cm .cl-newline { margin: 0; padding-bottom: 0.25rem; display: flow-root; }
+.le-cm .cl-newline .cl-line { margin: 0; }
+/* a soft ring that follows the cursor so a move glides */
+.le-cursor-ring {
+    position: fixed; z-index: 55; pointer-events: none; border-radius: 6px;
+    background: color-mix(in srgb, var(--accent) 20%, transparent);
+    left: 0; top: 0; will-change: transform;
+}
+/* a small settle on release (and for taps / arrows); NEVER while a finger is driving it: it would lag */
+.le-cursor-ring.settle { transition: transform 90ms ease-out, width 90ms ease-out, height 90ms ease-out; }
+.le-cursor-ring.dragging { transition: none; }
+.le-cursor-ring.hidden { display: none; }
+/* the loupe: a bubble above a thumb gliding over the chart, showing the cursor's line magnified (js/lead-editor/loupe.js).
+   A picture: pointer-events none. Above the docked picker (z 60). No vertical margins: it is outside CodeMirror, but the clone is a .cm-line. */
+.le-loupe {
+    position: fixed; left: 0; top: 0; z-index: 70; pointer-events: none; box-sizing: border-box;
+    will-change: transform;
+}
+.le-loupe.hidden { display: none; }
+.le-loupe-view {
+    position: relative; overflow: hidden; border-radius: 12px; padding: 0;
+    background: var(--bg, #fff); color: var(--text, #000);
+    border: 1px solid var(--border, #ccc); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
+}
+.le-loupe-view .le-loupe-cl {
+    display: block; margin: 0; white-space: nowrap; width: max-content; padding: 0.55rem 0.5rem 0.3rem;
+    -webkit-user-select: none; user-select: none; transition: none;   /* it follows the finger: no lag */
+}
+.le-loupe.empty .le-loupe-view { min-height: 2.5rem; }
+.le-loupe-tail {
+    position: absolute; bottom: -6px; width: 12px; height: 12px; margin-left: -6px; box-sizing: border-box;
+    background: var(--bg, #fff); border: solid var(--border, #ccc); border-width: 0 1px 1px 0; transform: rotate(45deg);
+}
+.le-loupe.pop .le-loupe-view { animation: le-loupe-pop 90ms ease-out; }
+.le-loupe.pop .le-loupe-tail { animation: le-loupe-fade 90ms ease-out; }
+@keyframes le-loupe-pop { from { opacity: 0; transform: scale(0.6); } to { opacity: 1; transform: scale(1); } }
+@keyframes le-loupe-fade { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .le-loupe.pop .le-loupe-view, .le-loupe.pop .le-loupe-tail { animation: none; } }
+/* holding the sheet turns it into a trackpad: the buttons fade and are not pressed */
+.chm-menu.is-trackpad .chm-head, .chm-menu.is-trackpad .chm-body > :not(.chm-head), .chm-menu.is-trackpad .chm-step { opacity: 0.3; pointer-events: none; }
+.chm-menu.is-trackpad .chm-strip-view { box-shadow: inset 0 0 0 2px var(--accent); }
+.chm-menu { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+.chm-menu input { -webkit-user-select: text; user-select: text; }
+/* the decoration marks are plain characters at a readable size (chord glyphs elsewhere are untouched) */
+.chm-deco { font: 600 18px/1 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+.chm-deco.chm-bass { font-size: 16px; }
+.chm-addline {
+    border: 0; background: none; box-shadow: inset 0 0 0 1px var(--border); color: var(--text);
+    border-radius: 6px; padding: 5px 10px; font: inherit; font-size: 13px; cursor: pointer;
+}
+
+/* In the key (solid) versus outside it (dashed, muted): the difference has to be plain at a glance, light or dark */
+.chm-cell.chm-inkey, .chm-root.chm-inkey, .chm-deco.chm-inkey {
+    background: color-mix(in srgb, var(--accent) 13%, var(--bg)); color: var(--text);
+    box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--accent) 55%, var(--border));
+}
+.chm-cell.chm-inkey .c { font-weight: 700; }
+.chm-cell.chm-outside:not(.sel), .chm-root.chm-outside:not(.on), .chm-deco.chm-outside:not(.on) {
+    background: color-mix(in srgb, var(--text-secondary) 7%, transparent); color: var(--text-secondary);
+    box-shadow: none; outline: 1.5px dashed color-mix(in srgb, var(--text-secondary) 65%, transparent); outline-offset: -2px;
+}
+.chm-cell.chm-outside .c { font-weight: 500; }
+.chm-cell.chm-outside.sel { outline: 2px dashed var(--accent); outline-offset: -2px; box-shadow: none; }
+.chm-root.chm-outside.on { outline: 2px dashed var(--accent); outline-offset: -2px; box-shadow: none; }
+.chm-deco.chm-extra.on { background: color-mix(in srgb, var(--accent) 22%, var(--bg)); color: var(--text); box-shadow: inset 0 0 0 2px var(--accent); outline: 0; }
+@media (max-width: 400px) { .chm-deco { font-size: 16px; padding: 0 2px; } .chm-deco.chm-bass { font-size: 14px; } }
+/* 320px phones: the 8 main cells are ~34px wide and "sus4" at 16px needs ~36 (the labels ran into each other) */
+@media (max-width: 340px) { .chm-deco { font-size: 13.5px; padding: 0; letter-spacing: -0.02em; } }
+.chm-row-more { margin-bottom: 4px; }
+.chm-deco.chm-inkey.on { box-shadow: inset 0 0 0 2.5px var(--accent); }
+.chm-deco.chm-outside.on { outline: 2.5px dashed var(--accent); outline-offset: -2px; }
+.chm-head .chm-func { flex: 0 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 600; color: var(--text); }
+/* the docked sheet is too narrow to share a row with Key / Move / Remove / Done:
+   the function ("B⁷ · II⁷ (V⁷/V)") is the teaching aid, so it gets a line of its
+   own, last, rather than an ellipsis */
+.chm-menu .chm-head .chm-func, .chm-menu .chm-head .chm-func-ph { flex: 0 1 auto; min-width: 0; white-space: nowrap; line-height: 1.5em; overflow: hidden; text-overflow: ellipsis; }
+/* Move / Remove come and go with the chord: the header's first row keeps its height either way */
+.chm-menu .chm-head { display: block; padding: 0 4px 6px; }
+/* the picker's two header rows have a FIXED height (the e2e compares them across cursor states) */
+.chm-row { display: flex; align-items: center; gap: 8px; box-sizing: border-box; overflow: hidden; }
+.chm-row1 { height: 40px; }
+.chm-row2 { height: 40px; }
+.chm-row3 { height: 40px; gap: 4px; }
+.chm-row3 .chm-step, .chm-row3 .chm-mag { flex: none; width: 40px; height: 40px; min-height: 40px; padding: 0; border-radius: 8px; border: 0; background: var(--bg); color: var(--text); box-shadow: inset 0 0 0 1px var(--border); font-size: 16px; line-height: 1; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
+.chm-row3 .chm-hist { box-shadow: none; }
+.chm-row3 .chm-mag.on { background: var(--accent); color: var(--on-accent); box-shadow: none; }
+.editor-zoom { display: inline-flex; gap: 4px; }
+.chm-row .chm-sp { flex: 1 1 0; min-width: 0; }
+.chm-row .chm-key { flex: none; max-width: 40%; }
+.chm-modeswitch { flex: none; }
+.chm-modeswitch button { min-height: 32px; padding: 0 10px; font-size: 13px; }
+/* a 320px phone: the header's three rows must fit the picker's width (same heights, every control) */
+@media (max-width: 340px) {
+    .chm-row { gap: 4px; }
+    .chm-modeswitch button { padding: 0 6px; font-size: 12px; }
+    .chm-row .chm-key { max-width: 34%; min-width: 0; padding: 4px 0; font-size: 13px; }
+    .chm-row3 { gap: 2px; }
+    .chm-row3 .chm-step, .chm-row3 .chm-mag, .chm-head .chm-row3 .chm-hist { width: 34px; }
+}
+.chm-head .chm-hist { flex: none; width: 40px; height: 40px; padding: 0; font-size: 22px; line-height: 1; color: var(--text); }
+.chm-head .chm-hist:disabled { opacity: 0.3; cursor: default; }
+.chm-row2 .chm-move, .chm-row2 .chm-remove { flex: none; }
+/* the decorations row is always there; with an empty box it is dimmed and inert */
+.chm-decos.idle { opacity: 0.38; pointer-events: none; }
+.chm-decos.idle .chm-deco { cursor: default; }
+.chm-head .chm-func .cg { font-weight: 600; }

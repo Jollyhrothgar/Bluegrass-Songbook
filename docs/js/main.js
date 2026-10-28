@@ -283,7 +283,7 @@ const editorTransposeDown = document.getElementById('editor-transpose-down');
 const editorKeySelect = document.getElementById('editor-key-select');
 const metadataSummary = document.getElementById('metadata-summary');
 const metadataFields = document.getElementById('metadata-fields');
-const editorPreviewContainer = document.getElementById('editor-preview-container');
+const editorLead = document.getElementById('editor-lead');
 const editorUndoBtn = document.getElementById('editor-undo');
 const editorRedoBtn = document.getElementById('editor-redo');
 const editorTransposeGroup = document.getElementById('editor-transpose-group');
@@ -364,7 +364,7 @@ function editorInitOptions() {
         metadataSummary,
         metadataFields,
         onSongRequest: () => openAddSongPicker({ mode: 'request' }),
-        editorPreviewContainer,
+        editorLead,
         editorUndoBtn,
         editorRedoBtn,
         editorTransposeGroup,
