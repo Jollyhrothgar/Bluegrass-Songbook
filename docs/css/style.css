@@ -11254,3 +11254,7 @@ body.file-dragover {
 .chm-decos.idle { opacity: 0.38; pointer-events: none; }
 .chm-decos.idle .chm-deco { cursor: default; }
 .chm-head .chm-func .cg { font-weight: 600; }
+
+/* a {comment} row in Lyrics mode is tappable (its menu: Delete note), like a section label */
+.le-mode-lyrics .le-cm .cl-comment { cursor: pointer; }
+.le-mode-lyrics .le-cm .cl-comment:hover { color: var(--accent); }

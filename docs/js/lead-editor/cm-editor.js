@@ -160,7 +160,7 @@ class LabelWidget extends WidgetType {
 }
 
 class LockedWidget extends WidgetType {
-    constructor(block) { super(); this.b = block; }
+    constructor(block, ctx) { super(); this.b = block; this.ctx = ctx; }
     eq(o) { return o.b.type === this.b.type && o.b.text === this.b.text; }
     toDOM() {
         // vertical space is PADDING on the widget root, never a margin: CodeMirror's
@@ -170,8 +170,13 @@ class LockedWidget extends WidgetType {
         const el = document.createElement('div');
         root.appendChild(el);
         if (this.b.type === 'comment') {
-            el.className = 'song-comment';
+            // a note row ("Interlude"): tap it for Delete, as a section label is tapped for its menu
+            el.className = 'song-comment cl-comment';
             el.textContent = this.b.text;
+            el.setAttribute('role', 'button');
+            el.title = 'Note options';
+            el.addEventListener('mousedown', (e) => e.preventDefault());
+            el.addEventListener('click', (e) => { e.preventDefault(); this.ctx?.onComment?.(this.b, el); });
             return root;
         }
         el.className = 'cl-locked-block';
@@ -213,7 +218,7 @@ export function buildVisual(state, ctx) {
 
     const blockLines = new Set();
     for (const b of a.blocks) {
-        replace(b.from, b.to, { widget: new LockedWidget(b), block: true });
+        replace(b.from, b.to, { widget: new LockedWidget(b, ctx), block: true });
         for (const l of a.lines) if (l.from >= b.from && l.to <= b.to) blockLines.add(l.index);
     }
 
@@ -405,7 +410,7 @@ export function protectDirectivesFilter(isVisual) {
  * @param {string} [o.doc]
  * @param {'visual'|'chordpro'} [o.mode]
  * @param {(chord: string) => string} [o.displayChord]   Nashville etc., display only
- * @param {object} [o.hooks]  { onChange, onSelection, onSectionLabel, onChordsRemoved, onMouseDown, onClick, onPaste }
+ * @param {object} [o.hooks]  { onChange, onSelection, onSectionLabel, onComment, onChordsRemoved, onMouseDown, onClick, onPaste }
  */
 export function createLeadEditor({ parent, doc = '', mode = 'visual', displayChord, hooks = {} }) {
     const modeCompartment = new Compartment();
@@ -417,7 +422,7 @@ export function createLeadEditor({ parent, doc = '', mode = 'visual', displayCho
     let dragJoin = false;
     let dragUntil = 0;
     let display = displayChord || ((c) => c);
-    const ctx = { display: (c) => display(c), onSectionLabel: (...a) => hooks.onSectionLabel?.(...a) };
+    const ctx = { display: (c) => display(c), onSectionLabel: (...a) => hooks.onSectionLabel?.(...a), onComment: (...a) => hooks.onComment?.(...a) };
 
     const visualField = StateField.define({
         create: (state) => buildVisual(state, ctx),
