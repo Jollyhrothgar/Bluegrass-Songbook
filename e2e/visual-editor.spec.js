@@ -3,7 +3,7 @@
 // with the song page's own classes. See docs/plans/2026-10-26-lyrics-editor-redesign.md.
 import { test, expect } from './fixtures.js';
 import {
-    CM, SHEET, setLead, leadText, leadReady, setMode, chordsOn, boxAt, boxPos, openEditor, pointOnWord,
+    CM, SHEET, openFrozenOldHomePlace, setLead, leadText, leadReady, setMode, chordsOn, boxAt, boxPos, openEditor, pointOnWord,
     boxState, lineEndPoint, centreOf, mouseDrag, along, segmentRects, syllableCentres, boxStopKind, stepKinds,
 } from './helpers/lead-editor.js';
 
@@ -163,7 +163,7 @@ test.describe('Lyrics mode: selection and sections across boundaries', () => {
     });
 
     test('selecting from the end of Verse 2 into the Chorus re-sections cleanly', async ({ page }) => {
-        await openEditor(page, '#edit/old-home-place');
+        await openFrozenOldHomePlace(page);
         const range = await page.evaluate(() => {
             const { editor } = document.querySelector('#editor-lead').__lead;
             const t = editor.getText();

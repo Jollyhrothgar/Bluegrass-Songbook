@@ -8,7 +8,7 @@
 // synthetic pointer events.
 import { test, expect } from './fixtures.js';
 import {
-    CM, SHEET, setLead, leadText, leadReady, setMode, openEditor, boxPos, boxAt, syllableCentres, scrollLineToTop,
+    CM, SHEET, openFrozenOldHomePlace, setLead, leadText, leadReady, setMode, openEditor, boxPos, boxAt, syllableCentres, scrollLineToTop,
     boxState, lineEndPoint, centreOf, touchDrag, along, boxStopKind, stepKinds, segmentRects,
 } from './helpers/lead-editor.js';
 
@@ -316,7 +316,7 @@ test.describe('Chords mode: tap to seam', () => {
     ];
 
     test('tapping the centre of a syllable lands the box on that syllable (>= 94%)', async ({ page }) => {
-        await openEditor(page, '#edit/old-home-place');
+        await openFrozenOldHomePlace(page);
         await setMode(page, 'chords');
         let total = 0;
         const misses = [];
