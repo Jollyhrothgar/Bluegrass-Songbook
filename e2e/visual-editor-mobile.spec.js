@@ -6,9 +6,9 @@
 // Playwright cannot raise a real phone keyboard or emulate iOS selection handles; the plan's
 // real-device test covers those. These drive taps with the touchscreen and the strip with
 // synthetic pointer events.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import {
-    CM, SHEET, setLead, leadText, leadReady, setMode, openEditor, boxPos, boxAt, syllableCentres, scrollLineToTop,
+    CM, SHEET, openFrozenOldHomePlace, setLead, leadText, leadReady, setMode, openEditor, boxPos, boxAt, syllableCentres, scrollLineToTop,
     boxState, lineEndPoint, centreOf, touchDrag, along, boxStopKind, stepKinds, segmentRects,
 } from './helpers/lead-editor.js';
 
@@ -316,7 +316,7 @@ test.describe('Chords mode: tap to seam', () => {
     ];
 
     test('tapping the centre of a syllable lands the box on that syllable (>= 94%)', async ({ page }) => {
-        await openEditor(page, '#edit/old-home-place');
+        await openFrozenOldHomePlace(page);
         await setMode(page, 'chords');
         let total = 0;
         const misses = [];
@@ -983,7 +983,68 @@ test.describe('the picker carries the mode switch and undo / redo', () => {
         await page.locator(`${SHEET} .chm-row2 .chm-remove`).tap();
         expect(await leadText(page)).not.toContain('[G]');
     });
+
+    // The "Removed 1 chord — Undo" toast sat at bottom: 2rem, on top of the docked picker's chords, and took the taps:
+    // you had to wait 5s before placing the next chord.
+    test('removing a chord: the undo toast stands above the picker, and the picker takes the next tap', async ({ page }) => {
+        await openEditor(page);
+        await setLead(page, 'Amazing [G]grace how sweet');
+        await setMode(page, 'chords');
+        await page.locator(`${CM} .cl-chord-glyph`).first().tap();
+        await page.locator(`${SHEET} .chm-row2 .chm-remove`).tap();
+        const toast = page.locator('.le-toast');
+        await expect(toast).toContainText('Removed 1 chord');
+        const g = await page.evaluate(() => ({
+            toast: document.querySelector('.le-toast').getBoundingClientRect().bottom,
+            picker: document.querySelector('.chm-body').getBoundingClientRect().top,
+        }));
+        expect(g.toast).toBeLessThanOrEqual(g.picker);
+        await page.locator(`${SHEET} .chm-row2 .chm-remove`).waitFor({ state: 'detached' });
+        const cell = page.locator(`${SHEET} .chm-inkey[data-chord]`).first();
+        const chord = await cell.getAttribute('data-chord');
+        await cell.tap();
+        expect(await leadText(page)).toContain(`[${chord}]`);
+        await expect(toast).toBeVisible();   // still showing: the tap went past it
+    });
 });
+
+test.describe('the section label menu on a phone', () => {
+    // The menu (~265px) did not fit below a label in the middle of a short screen (a phone with Safari's bars or the
+    // keyboard up), so it flipped above, clamped to the top of the WINDOW: under the top band, which hid the section
+    // types and covered the label. Scrolling with a finger closed it, so its options could not be reached.
+    for (const [where, frac] of [['in the middle of', 0.5], ['low on', 0.85]]) {
+        test(`a label ${where} a short screen: the page scrolls it up, the menu opens below it, all of it on screen`, async ({ page }) => {
+            await page.setViewportSize({ width: 390, height: 560 });
+            await openEditor(page);
+            const verses = Array.from({ length: 8 }, (_, i) => `{start_of_verse: Verse ${i + 1}}\nLine one of verse ${i + 1}\nLine two\n{end_of_verse}`);
+            await setLead(page, verses.join('\n\n'));
+            await setMode(page, 'lyrics');
+            const label = page.locator('#editor-lead .section-label', { hasText: 'Verse 3' });
+            await label.evaluate((el, f) => window.scrollBy(0, el.getBoundingClientRect().top - window.innerHeight * f), frac);
+            await label.tap();
+            const menu = page.locator('.le-labelmenu');
+            await expect(menu).toBeVisible();
+            const g = await label.evaluate((el) => {
+                const m = document.querySelector('.le-labelmenu');
+                const r = m.getBoundingClientRect();
+                const band = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--bottomband-h')) || 0;
+                return {
+                    top: r.top, bottom: r.bottom, labelBottom: el.getBoundingClientRect().bottom,
+                    topband: document.querySelector('.app-topbar').getBoundingClientRect().bottom,
+                    vh: window.innerHeight - band, fits: m.scrollHeight <= m.clientHeight + 1,
+                };
+            });
+            expect(g.top).toBeGreaterThanOrEqual(g.topband);      // not under the top band
+            expect(g.top).toBeGreaterThanOrEqual(g.labelBottom);  // the label it belongs to stays in view
+            expect(g.bottom).toBeLessThanOrEqual(g.vh);
+            expect(g.fits).toBe(true);
+            await expect(menu.getByRole('menuitem', { name: 'Delete section' })).toBeInViewport();
+            await menu.getByRole('menuitem', { name: 'Duplicate' }).tap();
+            expect(await leadText(page)).toMatch(/Line one of verse 3[\s\S]*Line one of verse 3/);
+        });
+    }
+});
+
 
 test.describe('the magnifier sits fully below the top band', () => {
     test('its top equals the top band bottom, on opening and after a mode round trip', async ({ page }) => {

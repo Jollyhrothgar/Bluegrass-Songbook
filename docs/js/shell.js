@@ -25,7 +25,7 @@ let openPopover = null; // only one pill/overflow popover open at a time
  * The existing #auth-section node is moved (not rebuilt) so supabase-auth
  * wiring keeps working untouched.
  */
-export function initShell({ nav = [], onToggleTheme, onReportBug } = {}) {
+export function initShell({ nav = [], onToggleTheme, onReportBug, onTour } = {}) {
     if (topbarEl) return;
 
     topbarEl = document.createElement('header');
@@ -43,6 +43,7 @@ export function initShell({ nav = [], onToggleTheme, onReportBug } = {}) {
         <div class="topbar-title" id="topbar-title"></div>
         <div class="topbar-actions" id="topbar-actions"></div>
         <div class="topbar-right">
+            <button id="topbar-tour" class="topbar-tour-btn hidden" title="Take a quick tour of what the book can do"><span class="topbar-tour-icon" aria-hidden="true">✨</span><span class="topbar-tour-label">Tour</span></button>
             <button id="topbar-bug" class="topbar-icon-btn" title="Report a bug">🐛</button>
             <button id="topbar-theme" class="topbar-icon-btn" title="Toggle theme">◐</button>
             <div class="topbar-overflow">
@@ -99,6 +100,7 @@ export function initShell({ nav = [], onToggleTheme, onReportBug } = {}) {
 
     topbarEl.querySelector('#topbar-theme').addEventListener('click', () => onToggleTheme?.());
     topbarEl.querySelector('#topbar-bug').addEventListener('click', () => onReportBug?.());
+    topbarEl.querySelector('#topbar-tour').addEventListener('click', () => onTour?.());
 
     const overflowBtn = topbarEl.querySelector('#topbar-overflow-btn');
     overflowBtn.addEventListener('click', (e) => {
@@ -246,13 +248,35 @@ export function setTopBar({ back = null, title = null, actions = [], overflow = 
     updateDensity();
 }
 
+/**
+ * Show or hide the glowing Tour invitation in the band. main.js decides who
+ * sees it (first-time visitors); afterwards the tour lives in the ⋯ menu.
+ */
+export function setTourInvite(on) {
+    const btn = topbarEl?.querySelector('#topbar-tour');
+    if (!btn) return;
+    btn.classList.toggle('hidden', !on);
+    updateDensity();
+}
+
 let overflowBase = [];
+let overflowLead = [];
 let lastViewOverflow = [];
 
 /** Persistent overflow entries (About, Patreon, Feedback, …) seeded once by main.js. */
 export function setOverflowBase(items) {
     overflowBase = items;
-    renderOverflow([]);
+    renderOverflow(lastViewOverflow);
+}
+
+/**
+ * Persistent entries that lead the ⋯ menu, above the page's own items
+ * (the feature tour: on a phone song page the page's items run five deep,
+ * and an entry under them was not found).
+ */
+export function setOverflowLead(items) {
+    overflowLead = items;
+    renderOverflow(lastViewOverflow);
 }
 
 function renderOverflow(viewItems) {
@@ -266,7 +290,7 @@ function renderOverflow(viewItems) {
         label: item.label,
         onClick: item.onClick || (() => { location.href = item.href; }),
     })) : [];
-    const groups = [navGroup, viewItems, overflowBase].filter(group => group.length);
+    const groups = [navGroup, overflowLead, viewItems, overflowBase].filter(group => group.length);
     groups.forEach((group, i) => {
         if (i > 0 && group.length) {
             const hr = document.createElement('div');

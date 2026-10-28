@@ -38,9 +38,12 @@ docs/
 │   ├── flags.js        # Unified feedback modal (song issues, bugs, general feedback)
 │   ├── add-song-picker.js # Add/request-a-song picker (also serves #request-song)
 │   ├── superuser-request.js # Super-user request modal and submission
+│   ├── tour.js         # Feature tour (G14): floating card + ring over the real controls (lazy)
+│   ├── tour-editor-demo.js # The tour's lyrics & chords demo: a song typed, sectioned, chorded in the real editor (lazy)
 │   ├── high-scores.js  # `#high-scores` leaderboard — renders `get_leaderboard()`; identities are resolved SERVER-side (no email/uuid ever reaches this file)
 │   ├── collections.js  # Landing page collection definitions
 │   ├── analytics.js    # Behavioral analytics tracking
+│   ├── telemetry.js    # telemetryEnabled(): visits/events are written only on bluegrassbook.com, never by automation or a browser marked `/?internal=1`
 │   ├── utils.js        # Shared utilities (escapeHtml, etc.)
 │   ├── pwa.js          # Service-worker registration, install prompt, .tef/.otf.json file open + drop
 │   ├── sw-strategy.js  # THE caching decisions (imported by ../sw.js and by its tests)
@@ -786,6 +789,7 @@ from 65 modules / 1.47 MB raw to ~33 / 0.75 MB; see the test for the budget):
 | `otf-editor/{editor,work-edit,state,facade,cursor,actions,…}`, `tab-edit-band.js` | `mountTabEditor` (unchanged: it already used `import()`) |
 | `tef-import/*` | picking a `.tef` (unchanged) |
 | `work-suggest.js` (+ `title-match.js`) | the song page's not-found branch (A10's redirect / suggestions) |
+| `tour.js` (+ `tour-editor-demo.js`) | the Tour button in the band, or ⋯ ▸ Take the tour (`startFeatureTour` in `main.js`) |
 
 Rules that keep it that way:
 
@@ -1300,6 +1304,81 @@ picker's Upload card, the editor's "Upload a photo instead" hatch). Document
 *parts* already in `works/` still render — `renderDocumentPart` in
 `work-view.js`. The intake died; the shelf did not.
 
+### Feature tour (`tour.js`, G14)
+
+Nine steps: Key (`#key-pill`), Lists (`#list-picker-btn`), Edit
+(`#edit-song-btn`); then three that play a song into the real lyrics & chords
+editor (`tour-editor-demo.js`, below); then tab Play (`.tab-play-btn`), tab
+Edit (`.tab-edit-btn`, or `.tab-more-btn` when a phone band has moved Edit
+into the ⚙ sheet), and your own TablEdit files. That last one is a `dropZone` step: there is no single `.tef` control
+(drop anywhere, `pwa.js enableFileDrop`; Add Song ▸ Tablature ▸ 📂 Import
+.tef… on a phone), so the ring outlines the page itself, dashed like
+`body.file-dragover`. **Its copy was checked against the app** (2026-10-27):
+a drop opens the editor signed out on the home, song and tab pages; Add Song
+▸ Tablature asks for sign-in BEFORE the editor and opens an empty take, the
+file going in through 📂 Import .tef… — so the card says "sign in" for the
+phone path and for Submit. Re-check it if either flow changes. The steps are data (`TOUR_STEPS`); a step's `targets`
+are tried in order and the first visible one is ringed.
+
+- **The editor demo** (`tour-editor-demo.js`, `/#add`): *Write in a song*
+  types "Will the Circle Be Unbroken" (the 1907 Habershon/Gabriel hymn,
+  public domain; not A.P. Carter's 1935 words the book also carries, which
+  ship nowhere in code), *Sort it into sections* selects lines and presses the
+  section bar's Verse / Chorus, *Add the chords* switches to Chords and
+  presses G / C / D cells down the chorus. It presses the REAL buttons, ringed
+  first; the only editor hooks are `lead.present.select / boxAt / end`
+  (`lead-editor/index.js`): a selection that shows the section bar WITHOUT
+  focusing the editor (focus would raise a phone's keyboard), and the chord
+  box on a syllable. The ring outlines the selected lines itself, since an
+  unfocused editor draws no selection. Each phase starts from its own known
+  state, so Back replays and Next skips ahead. The demo's mode change is not
+  remembered (`persist: false`). A trusted press or key in the editor stops it
+  (`takeOver`). The tour calls `resetEditorForNewSong()` before it navigates
+  away from the editor and when it closes there, so nothing is kept and
+  leaving never asks about unsaved changes. On a phone the card keeps out of
+  the docked section bar and chord picker (`freeArea`'s `BOTTOM_BARS`) and
+  moves to the other end of the screen off the line being worked on
+  (`reveal`). main.js hands the tour `editor: { lead, reset }`.
+- **The card has to be found without a backdrop:** a 2px accent frame and
+  halo, a `✨ Tour · 3 of 7` label (so it never reads as one of the app's own
+  popups), an arrow on the edge facing the control (`--tour-arrow-x`, from
+  `placeCard`'s `arrow`), and an arrival animation: the card slides in from
+  the control's side and the ring ripples three times (`.tour-arrive`,
+  `.tour-ping`). It plays when a step shows and again when its control turns
+  up, so a step that waited for a page to load still says where it landed.
+
+- **The invitation.** A first-time visitor's band carries `#topbar-tour`
+  (`setTourInvite` in `shell.js`): three slow pulses, then a steady glow; no
+  animation under `prefers-reduced-motion`. Opening it sets
+  `localStorage['songbook-tour-seen']`, after which the button is gone and
+  the tour is `⋯ ▸ ✨ Take the tour` (`#overflow-tour`), the FIRST item of
+  the ⋯ menu on every page (`setOverflowLead` in `shell.js`: under a phone
+  song page's own five items it was not found). It never opens itself.
+- **Links.** `?tour` starts it (on the linked song when the path is one);
+  `?tour=reset` forgets the visit so the glowing button is back (testing on
+  a phone). `handleTourLink` in `main.js` takes the parameter out of the URL
+  at once.
+  No animation anywhere in the tour under `prefers-reduced-motion`.
+- **Pages.** Song-page steps run on the reader's own song when they started
+  on one (Key + Edit visible), otherwise on `old-home-place`; tab steps on
+  their own tab, otherwise `foggy-mountain-breakdown/banjo-tab`. Add Song
+  stays wherever its nav link is showing and goes home when it isn't (a
+  phone song page hides the nav). Done returns to the starting URL.
+  Navigation is the in-page link mechanism: `pushState` + a synthetic
+  `hashchange`.
+- **Unobtrusive.** No backdrop. The card (`z-index: 899`) is under both
+  bands and everything that opens from them, and `placeCard` keeps it in
+  the free area between the bands. The ring (`901`) never takes a click and
+  hides while the ringed control has a popover open. If the ringed control
+  has been gone for 1.5s (a drop-zone step has none, so it never does) (the reader followed a link, pressed Back, opened
+  the editor), the tour ends. It refuses to start from either editor.
+- **Analytics:** `tour_start {source}`, `tour_step {step, index}`,
+  `tour_end {finished, step, index}`.
+- Tests: `__tests__/tour.test.js` (steps, placement, the runner and the
+  demo lifecycle on stub pages), `__tests__/tour-editor-demo.test.js` (the
+  song, chord positions) and `e2e/tour.spec.js` + `e2e/tour-mobile.spec.js`
+  (the real walk, the demo's text at each phase, taking over, nothing left).
+
 ### Auto-hiding chrome
 
 The song page enables `setChromeAutoHide(true)`: scrolling down hides the
@@ -1551,7 +1630,15 @@ Lists can have multiple owners for collaborative curation.
   holds. Read these keys, never `is_owner` / `can_claim`; a test feeds the real
   RPC response through the real `supabase-auth.js` to keep it that way
   (`__tests__/supabase-auth-public-list.test.js`, `lists-public-view.test.js`).
-- **Analytics** (`analytics.js`) batches events to the `log_events` RPC.
+- **Analytics** (`analytics.js`) batches events to the `log_events` RPC,
+  and `main.js` counts the visit with `log_visit` — both ONLY when
+  `telemetry.js telemetryEnabled()` (production host, `navigator.webdriver`
+  false, browser not marked internal: `/?internal=1` sets
+  `localStorage['bgb-internal']`, `?internal=0` clears it, and the toast shows
+  the browser's visitor id). Elsewhere `initAnalytics` stays off and the home page reads totals
+  with `get_visitor_stats`. The Supabase project is production everywhere, so
+  without the gate local servers, phone tests, Playwright and crawlers each
+  counted as new visitors (Oct 2026).
   `supabase.rpc` resolves `{ error }` rather than throwing, so `flush()` checks
   it and re-queues the batch on failure (one flush interval of back-off).
   `search` carries its `scope`, `search_result_click` says `from_list`, and

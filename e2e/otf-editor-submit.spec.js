@@ -9,7 +9,7 @@
 // The real supabase-js SDK still loads and still runs: only the far end is
 // fake. Every test finishes with `sb.assertClean()`, which fails if anything
 // reached a host the mock does not own.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import { mockSupabase } from './helpers/supabase-mock.js';
 
 /** A published banjo/mandolin take to correct. */

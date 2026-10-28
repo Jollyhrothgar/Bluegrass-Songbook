@@ -18,6 +18,7 @@ import { chordAt, declaredKey, currentSongKey } from './doc-model.js';
 import {
     SECTION_TYPES, markSelection, renameSection, setSectionTypeText, duplicateSectionText,
     moveSectionText, unlabelSection, deleteSectionText, diffChange,
+    sectionsForClipboard, placeSectionPaste, holdsSections,
 } from './section-ops.js';
 import { extractChords, isValidChord } from '../chords.js';
 import { parseChordPro, renderSectionsHtml } from '../renderers/chordpro.js';
@@ -104,6 +105,9 @@ export function mountLeadEditor({ host, hooks = {} }) {
     let mode = 'lyrics';
     let showPreview = false;      // phone Source | Preview
     let sel = null;               // selection bar
+    // The feature tour (../tour-editor-demo.js) shows the bar for a selection it
+    // made without focusing the editor: on a phone, focus raises the keyboard.
+    let presenting = false;
     let labelMenu = null;
     let previewTimer = null;
     let moving = false;           // Chords mode: Move is on, the chord travels with the box
@@ -150,6 +154,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
             onMouseDown: (e, v) => handleMouseDown(e, v),
             onClick: (e, v) => handleClick(e, v),
             onPaste: (e, v) => handlePaste(e, v),
+            onCopy: (e, v, cut) => handleCopy(e, cut),
         },
     });
     const view = editor.view;
@@ -919,11 +924,38 @@ export function mountLeadEditor({ host, hooks = {} }) {
         return true;
     }
 
-    // ---- paste -------------------------------------------------------------
+    // ---- copy / cut / paste -------------------------------------------------
+    /**
+     * Lyrics mode hides the section markers, so a selection of whole sections
+     * never holds them: put them on the clipboard (section-ops.js
+     * sectionsForClipboard), or a copied chorus pastes back as a verse. Lines
+     * from inside one section stay the browser's own copy.
+     */
+    function handleCopy(e, cut) {
+        if (mode !== 'lyrics' || !e.clipboardData) return false;
+        const s = view.state.selection;
+        if (s.ranges.length > 1 || s.main.empty) return false;
+        const clip = sectionsForClipboard(editor.getText(), s.main.from, s.main.to);
+        if (!clip) return false;
+        e.preventDefault();
+        e.clipboardData.setData('text/plain', clip.text);
+        // A user deletion, not a programmatic one, so the protect rules see it:
+        // a section wholly inside the range goes label and all, and the blank
+        // lines it leaves are tidied (doc-model.js clipDeletion).
+        if (cut) view.dispatch({ changes: { from: clip.from, to: clip.to }, userEvent: 'delete.cut', scrollIntoView: true });
+        return true;
+    }
     function handlePaste(e) {
-        if (!hooks.autoDetect?.()) return false;
         const raw = e.clipboardData?.getData('text/plain');
         if (!raw) return false;
+        if (!hooks.autoDetect?.()) {
+            // Auto-detect off: the text goes in as it is, but sections still
+            // land between sections in Lyrics mode, never nested in one.
+            if (mode !== 'lyrics' || !holdsSections(raw)) return false;
+            e.preventDefault();
+            insertConverted({ kind: 'chordpro', text: raw, raw: true });
+            return true;
+        }
         const res = convertPastedText(raw);
         if (res.kind !== 'chordpro') return false;
         e.preventDefault();
@@ -931,15 +963,33 @@ export function mountLeadEditor({ host, hooks = {} }) {
         return true;
     }
     function insertConverted(res) {
-        const sel0 = view.state.selection.main;
-        const empty = view.state.doc.length === 0;
-        const head = sel0.from;
-        const body = empty ? res.text.replace(/\n+$/, '\n') : res.text;
-        editor.change({
-            changes: { from: sel0.from, to: sel0.to, insert: body },
-            selection: { anchor: head + body.length },
-        }, { userEvent: 'input.paste' });
-        hooks.onPaste?.(res);
+        let sel0 = view.state.selection.main;
+        // In Lyrics mode pasted sections land between sections (section-ops.js
+        // placeSectionPaste). ChordPro mode shows the markers: a paste goes
+        // exactly where the caret is, as typed.
+        const sectioned = mode === 'lyrics' && holdsSections(res.text);
+        if (sectioned && !sel0.empty) {
+            // pasted over a selection: the selection goes first, as a user
+            // deletion so the protect rules apply, then the sections land
+            view.dispatch({ changes: { from: sel0.from, to: sel0.to }, userEvent: 'delete' });
+            sel0 = view.state.selection.main;
+        }
+        const placed = sectioned && placeSectionPaste(editor.getText(), sel0.from, res.text);
+        if (placed) {
+            editor.change({
+                changes: placed,
+                selection: { anchor: placed.from + placed.insert.replace(/\n+$/, '').length },
+            }, { userEvent: 'input.paste' });
+        } else {
+            const empty = view.state.doc.length === 0;
+            const head = sel0.from;
+            const body = empty ? res.text.replace(/\n+$/, '\n') : res.text;
+            editor.change({
+                changes: { from: sel0.from, to: sel0.to, insert: body },
+                selection: { anchor: head + body.length },
+            }, { userEvent: 'input.paste' });
+        }
+        if (!res.raw) hooks.onPaste?.(res);
     }
     /** The empty-sheet Paste button. Pages may only read the clipboard over HTTPS (or on localhost). */
     async function pasteFromClipboard() {
@@ -957,6 +1007,22 @@ export function mountLeadEditor({ host, hooks = {} }) {
         } catch { view.focus(); showPasteHint(); }   // permission refused: the keyboard's own Paste still works
     }
 
+    /**
+     * What the user can actually see, in viewport px: below the top band, above the bottom band, the keyboard
+     * (the visual viewport) and, in Chords on a phone, above the docked picker. Toasts and the label menu fit in it.
+     */
+    function visibleArea() {
+        const vv = window.visualViewport;
+        const band = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--bottomband-h')) || 0;
+        let top = Math.max(topInset(), vv ? vv.offsetTop : 0) + DOCK_MARGIN;
+        let bottom = Math.min(vv ? vv.offsetTop + vv.height : window.innerHeight, window.innerHeight - band) - DOCK_MARGIN;
+        if (menu.isOpen && mode === 'chords' && menu.layout === 'split') {
+            if (menu.magnifier) top = Math.max(top, menu.parts.strip.getBoundingClientRect().bottom + DOCK_MARGIN);
+            bottom = Math.min(bottom, menu.parts.body.getBoundingClientRect().top - DOCK_MARGIN);
+        }
+        return { top, bottom };
+    }
+
     // ---- undo toast --------------------------------------------------------
     let toastEl = null;
     function undoToast(message) {
@@ -972,6 +1038,8 @@ export function mountLeadEditor({ host, hooks = {} }) {
         btn.textContent = 'Undo';
         btn.addEventListener('click', () => { editor.undo(); toastEl?.remove(); toastEl = null; view.focus(); });
         toastEl.append(span, btn);
+        // stand clear of the docked chord picker (phones): over it, the toast hid the chords you tap next
+        toastEl.style.bottom = `${Math.round(window.innerHeight - visibleArea().bottom + 8)}px`;
         document.body.appendChild(toastEl);
         const mine = toastEl;
         setTimeout(() => { mine.remove(); if (toastEl === mine) toastEl = null; }, 5000);
@@ -1055,7 +1123,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
         const res = markSelection(text, s.from, s.to, type);
         if (!res) { showToast('Select some lyric lines first.', { variant: 'warning' }); return; }
         editor.change({ changes: diffChange(text, res.text), selection: { anchor: res.selStart } }, { userEvent: 'input.section' });
-        view.focus();
+        if (!presenting) view.focus();
     }
     /**
      * Phones (a coarse pointer) DOCK the bar at the bottom of the visual viewport, above the keyboard: iOS draws its own
@@ -1075,7 +1143,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
     window.visualViewport?.addEventListener('scroll', onViewportForBar);
     function updateSelectionBar() {
         const s = view.state.selection.main;
-        const show = !s.empty && mode !== 'chords' && view.hasFocus && !sel.classList.contains('le-selbar-input');
+        const show = !s.empty && mode !== 'chords' && (view.hasFocus || presenting) && !sel.classList.contains('le-selbar-input');
         if (!show && !sel.classList.contains('le-selbar-input')) { sel.classList.add('hidden'); return; }
         if (!show) return;
         sel.classList.remove('hidden');
@@ -1102,6 +1170,31 @@ export function mountLeadEditor({ host, hooks = {} }) {
         const text = editor.getText();
         if (next === text) return;
         editor.change({ changes: diffChange(text, next) }, { userEvent: 'input.section' });
+    }
+    /**
+     * Put the label menu where all of it can be seen: below the label, else above it. On a phone neither side fit (the
+     * menu is ~350px; it ran under the bottom band and off the screen), so when the menu does not fit below, the page
+     * scrolls the label up to the top of the visible area first; a menu still too tall scrolls inside itself.
+     * The scroll happens before the menu listens for pointerdown: a finger scroll would close it.
+     */
+    function placeLabelMenu(menuEl, anchorEl) {
+        const GAP = 6;
+        const w = menuEl.offsetWidth;
+        const h = menuEl.offsetHeight;
+        let { top, bottom } = visibleArea();
+        let r = anchorEl.getBoundingClientRect();
+        if (r.bottom + GAP + h > bottom || r.top < top) {
+            window.scrollBy({ top: r.top - top, behavior: 'instant' });
+            ({ top, bottom } = visibleArea());   // the top band may hide on the scroll
+            r = anchorEl.getBoundingClientRect();
+        }
+        const below = bottom - (r.bottom + GAP);
+        const above = r.top - GAP - top;
+        const room = Math.max(below >= h || below >= above ? below : above, 120);
+        menuEl.style.maxHeight = `${Math.round(room)}px`;
+        const shown = Math.min(h, room);
+        menuEl.style.left = `${Math.max(8, Math.min(r.left, window.innerWidth - w - 8))}px`;
+        menuEl.style.top = `${Math.round(below >= h || below >= above ? r.bottom + GAP : r.top - GAP - shown)}px`;
     }
     function openLabelMenu(section, anchorEl) {
         closeLabelMenu();
@@ -1151,11 +1244,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
         }
         btn('Delete section', () => { applyText(deleteSectionText(editor.getText(), line)); undoToast(`Deleted ${section.label}`); }, 'danger');
         document.body.appendChild(menuEl);
-        const r = anchorEl.getBoundingClientRect();
-        const w = menuEl.offsetWidth;
-        menuEl.style.left = `${Math.max(8, Math.min(r.left, window.innerWidth - w - 8))}px`;
-        const h = menuEl.offsetHeight;
-        menuEl.style.top = `${r.bottom + 6 + h > window.innerHeight ? Math.max(8, r.top - h - 6) : r.bottom + 6}px`;
+        placeLabelMenu(menuEl, anchorEl);
         labelMenu = menuEl;
         setTimeout(() => {
             const off = (ev) => { if (!menuEl.contains(ev.target)) { closeLabelMenu(); document.removeEventListener('pointerdown', off, true); } };
@@ -1173,6 +1262,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
         get showPreview() { return showPreview; },
         getText: () => editor.getText(),
         setText: (t, o) => {
+            if (o?.reset) presenting = false;
             closeBox();
             editor.setText(t, o);
             // a song opened gets the remembered mode; a new empty song always opens in Lyrics
@@ -1185,6 +1275,21 @@ export function mountLeadEditor({ host, hooks = {} }) {
         setDisplay: (fn) => editor.setDisplay(fn),
         pasteFromClipboard,
         refreshPreview: renderPreview,
+        /**
+         * For the feature tour's demo (../tour-editor-demo.js), which presses the real buttons (section bar, mode
+         * switch, chord cells) and needs only the two things a pointer does that code cannot.
+         */
+        present: {
+            /** Select [from, to) and show the section bar, as a drag over the lines would, without focusing the editor. */
+            select(from, to) {
+                presenting = true;
+                view.dispatch({ selection: { anchor: from, head: to }, scrollIntoView: true });
+                updateSelectionBar();
+            },
+            /** Chords mode: put the chord box on `pos`, as a tap on that syllable would. */
+            boxAt(pos) { if (mode === 'chords') openBox(pos); },
+            end() { presenting = false; updateSelectionBar(); },
+        },
         focus: () => view.focus(),
         destroy() { fontDownBtn?.removeEventListener('click', onFontDown); fontUpBtn?.removeEventListener('click', onFontUp); document.removeEventListener('keydown', onDocKey, true); resetGestures(); window.removeEventListener('pointermove', onPressMove); window.removeEventListener('pointerup', endPress); window.removeEventListener('pointercancel', endPress); window.removeEventListener('lostpointercapture', onLostCapture, true); window.removeEventListener('blur', resetGestures); document.removeEventListener('visibilitychange', onVisibility); window.removeEventListener('scroll', onScrollRing); window.visualViewport?.removeEventListener('resize', onViewportForBar); window.visualViewport?.removeEventListener('scroll', onViewportForBar); ring.remove(); loupe.destroy(); menu.destroy(); menuResizeObserver?.disconnect(); sel.remove(); emptyHint.remove(); closeLabelMenu(); editor.destroy(); },
     };

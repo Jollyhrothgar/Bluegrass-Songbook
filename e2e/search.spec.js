@@ -1,5 +1,5 @@
 // E2E tests for search functionality
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 
 test.describe('Search', () => {
     test.beforeEach(async ({ page }) => {

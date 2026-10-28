@@ -1,6 +1,9 @@
 id: you-are-my-sunshine
 title: You Are My Sunshine
 artist: Johnny Cash
+composers:
+- Jimmie Davis
+- Charles Mitchell
 default_key: G
 tags:
 - ClassicCountry
@@ -15,9 +18,9 @@ parts:
   file: lead-sheet.pro
   default: true
   provenance:
-    source: classic-country
+    source: user-submission
     source_file: youaremysunshinelyricschords.pro
     imported_at: '2026-01-02'
-composers:
-- Jimmie Davis
-- Charles Mitchell
+    source_id: pending:you-are-my-sunshine:a0c63c995bc6
+    submitted_by: 4bcc2445-5661-4569-b55d-c29e0c101215
+    submitted_at: '2026-10-28'

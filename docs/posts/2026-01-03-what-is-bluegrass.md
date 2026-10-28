@@ -4,7 +4,7 @@ date: 2026-01-03
 summary: How I used MusicBrainz data and bluegrass artist catalogs to mathematically define what makes a song "bluegrass."
 ---
 
-> **Want to explore the data yourself?** Check out the [interactive Jupyter notebook](https://github.com/jollyhrothgar/Bluegrass-Songbook/blob/main/analytics/grassiness_analysis.ipynb) with full visualizations and queries.
+> **Want to explore the data yourself?** Check out the [interactive Jupyter notebook](https://github.com/jollyhrothgar/Bluegrass-Songbook/blob/main/analytics/grassiness_analysis.py) with full visualizations and queries.
 
 One of the first
 [criticisms](https://bluegrassbook.com/bluegrass-standards-board.html) I got

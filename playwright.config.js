@@ -17,7 +17,14 @@ export default defineConfig({
     reuseExistingServer: Boolean(process.env.PW_PORT)
   },
   use: {
-    baseURL: `http://localhost:${port}`
+    baseURL: `http://localhost:${port}`,
+    // No test may reach the production Supabase project (supabase-auth.js
+    // hard-codes it). e2e/fixtures.js mocks it per context; this is the floor
+    // under that, for a spec that opts out of routes: the host doesn't resolve.
+    // Routed requests are answered before DNS, so the mock is unaffected.
+    launchOptions: {
+      args: ['--host-resolver-rules=MAP *.supabase.co ~NOTFOUND']
+    }
   },
   projects: [
     {

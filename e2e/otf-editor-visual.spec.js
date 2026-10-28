@@ -2,7 +2,7 @@
 // Loads real tabs, renders them in production mode and editor mode, and compares.
 // Also tests recording replay produces correct output.
 
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import fs from 'fs';
 import path from 'path';
 

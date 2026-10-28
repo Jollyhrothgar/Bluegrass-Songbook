@@ -2,7 +2,7 @@
 // Favorites link (.topbar-nav-link[data-nav="favorites"]) — the sidebar and
 // its favorites-count badge are gone, so state is asserted via the result
 // buttons (has-lists / is-favorite classes) and the favorites view itself.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import { gotoSearch, searchFor, navClick } from './helpers.js';
 
 test.describe('Favorites', () => {

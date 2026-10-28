@@ -15,7 +15,7 @@ cp .env.example .env
 ./scripts/server
 ```
 
-Open http://localhost:8888/notebooks/dashboard.ipynb — or whichever port
+Open http://localhost:8888/lab/tree/dashboard.ipynb — or whichever port
 `./scripts/server` reports, since it auto-increments past a busy 8888.
 
 ## Setup Details
@@ -36,14 +36,9 @@ You need the **service role key** (not anon key) to bypass RLS and see all data.
 
 ## Security
 
-Notebook outputs are **automatically stripped on commit** via `nbstripout`.
-No manual clearing needed - the git filter handles it.
-
-The filter is only half committed: `.gitattributes` (`*.ipynb filter=nbstripout`)
-is in the repo, but the `filter.nbstripout.*` git config that makes it do
-anything is per-clone and is installed by `./scripts/bootstrap`
-(`nbstripout --install`). On a fresh clone that hasn't run it, outputs commit
-unstripped. Check with `git config --get filter.nbstripout.clean`.
+Notebook outputs are **never committed**: notebooks live in git as
+percent-format `.py` files (jupytext), and the paired `.ipynb` that holds the
+outputs is gitignored. See "Notebooks are .py files" in `CLAUDE.md`.
 
 ## Data Available
 

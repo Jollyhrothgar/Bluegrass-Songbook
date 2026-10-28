@@ -2,7 +2,7 @@
 // the hamburger sidebar is gone — every view renders under the slim
 // top band (#app-topbar) with nav links, and song URLs are unified on
 // the #work/{slug} form (#song/{id} permanently redirects).
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import { gotoSearch, searchAndOpen, navClick } from './helpers.js';
 
 test.describe('Top Band Navigation', () => {

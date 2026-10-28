@@ -4,7 +4,7 @@
 // A7 — opening the editor from a song page used to bypass the view state
 // machine, so app state still said "song page"; a later navigation to another
 // song was then a no-op for the state and the editor stayed on screen.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import { mockSupabase } from './helpers/supabase-mock.js';
 import { setLead, appendLead, leadText } from './helpers/lead-editor.js';
 

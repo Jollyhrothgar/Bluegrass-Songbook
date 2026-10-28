@@ -1,6 +1,6 @@
 // Theme is applied before first paint and follows the OS (perf B5); abcjs is
 // loaded on demand, not in the head (perf B4).
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 
 test.describe('theme at boot', () => {
     test.describe('OS dark, no saved choice', () => {

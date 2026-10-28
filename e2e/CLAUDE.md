@@ -78,6 +78,27 @@ npm run test:all       # Run unit tests + E2E tests
 
 ## The Supabase mock
 
+**Every spec imports `test` from `./fixtures.js`, never from
+`@playwright/test`** (`tests/test_e2e_specs_use_fixtures.py` fails CI
+otherwise). That fixture installs this mock on each test's browser context —
+signed out, empty tables — and runs `assertClean()` after the test, so no test
+can reach the production project `supabase-auth.js` hard-codes. Until
+2026-10-27 only five specs mocked; the rest wrote to production, and since
+every test starts with empty localStorage each page load was a new row in
+`visitors` (the home page counter's "visitors" were mostly E2E runs). A spec
+that needs a signed-in user or seeded tables still calls `mockSupabase(page,
+{...})`: page routes take precedence, so its mock answers and the context one
+is only the backstop. The backstop lets the soundfont CDNs through
+(`blockAudio: false`) so Play really starts; a spec's own mock still aborts
+them.
+
+Under the backstop, `playwright.config.js` makes `*.supabase.co` unresolvable
+(`--host-resolver-rules`) for the whole suite; routed requests are answered
+before DNS, so mocks are unaffected. That floor is what lets
+`sw-and-prefetch.spec.js` opt out with `test.use({ supabaseBackstop: false })`
+— any installed route turns Playwright's HTTP cache off, and the cache is what
+it measures — without reaching production.
+
 `e2e/helpers/supabase-mock.js` routes `**/*.supabase.co/**` so submissions,
 sign-in and every table read are answered in-process. The real supabase-js SDK
 still loads from jsdelivr and still runs — stubbing it would test the stub —
@@ -118,7 +139,8 @@ sb.assertClean();          // nothing un-mocked, nothing off-box
 - **`assertClean()`** fails on two things: a Supabase path the mock does not
   understand (the app grew a call; teach the helper) and any request to a host
   that is not localhost or jsdelivr (a test was talking to production).
-  Analytics and the WebAudioFont CDN are aborted outright.
+  Google Analytics is always aborted; the soundfont CDNs (WebAudioFont,
+  abcjs's midi-js soundfonts) are aborted unless `blockAudio: false`.
 - `e2e/helpers/tef-fixture.js` decodes a real `.tef` out of the JS parser's
   golden oracle (`docs/js/tef-import/__fixtures__/golden.json`), so an import
   test can assert what LANDED, not just that something did.
@@ -189,7 +211,11 @@ export dropdown markup, and the mobile bottom sheet. The suite targets:
 | `otf-editor-invariants.spec.js` | Layout and history rules checked against what is DRAWN, via `__otfEditor.automation.check()`: an empty tab at every step size, ruler starts at the barline, clicking a ruler line lands on its tick, typing never moves earlier notes, fret 12 undoes in one step, and a **seeded random walk** (120 keys from the binding table per seed; after each key: no broken rule, no page error, focus still in the editor; at the end undo restores the document). A failure prints the seed and the keys. Widen it locally with `WALK_SEEDS=4,5,6 npx playwright test e2e/otf-editor-invariants.spec.js -g random` |
 | `otf-editor-tracks.spec.js` | Multi-track (`red-haired-boy` ensemble): switch by toolbar and by Score ▸ Tracks, rename via the popover (+ duplicate refusal), reorder, undo |
 | `otf-editor-drafts.spec.js` | `#drafts`: autosave appears, Open reopens on the right route with the note, inline-confirm Delete |
+| `tour.spec.js` | Feature tour (G14): the glowing band button walks all nine steps (ring encloses the control, card clear of it and both bands once its arrival animation ends, arrow under the control; the editor demo's text after each phase — typed, sectioned, chorded — and leaving the editor asks nothing and keeps nothing; the `.tef` step outlines the page) and Done returns home; a press in the editor stops the demo; started on a song it stays on that song; a popover the reader opens covers the card; wandering off / × / Escape end it; it refuses to leave an editor; no pulse under reduced motion; afterwards it leads the ⋯ menu; `?tour` starts it on the linked song and `?tour=reset` brings the glow back, both leaving the URL clean |
+| `tour-mobile.spec.js` | **mobile project.** The Tour button fits a phone song page band; the editor demo rings the DOCKED section bar and chord picker with the card above them and never focuses the editor (no keyboard); tab Edit rings ⚙ with its note; the `.tef` step names Add Song ▸ Tablature; afterwards ✨ Take the tour is the first ⋯ item |
+| `fixtures.js` | The `test` every spec imports: Supabase mock backstop per context (not a spec) |
 | `helpers.js` | Shared helpers (not a spec) |
+| `helpers/tour.js` | `ringAround` / `cardClear` / `arrowAt` / `leadText` for the tour specs; `cardClear` and `arrowAt` wait for the card's arrival animation (not a spec) |
 | `helpers/supabase-mock.js` | Mocked backend (not a spec) — see above |
 | `helpers/tef-fixture.js` | A real `.tef` from the golden corpus (not a spec) |
 
@@ -211,8 +237,9 @@ export dropdown markup, and the mobile bottom sheet. The suite targets:
   flow needs `page.on('dialog')` there, the product is wrong — register the
   listener and assert it stayed empty instead (that is the check, not a
   workaround)
-- Anything that talks to Supabase starts with `await mockSupabase(page)` and
-  ends with `sb.assertClean()`
+- Import `{ test, expect }` from `./fixtures.js` (the Supabase backstop).
+  A test that asserts on what it sent to Supabase starts with
+  `await mockSupabase(page)` and ends with `sb.assertClean()`
 - Editor selectors worth knowing: `.editor-renderer .stave-row` (mounted),
   `.editor-canvas-container` (click to place the cursor), `.note-text`,
   `.editor-status-bar`, `.track-buttons .track-button[.active]`,

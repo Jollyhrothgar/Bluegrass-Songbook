@@ -43,7 +43,7 @@ dev = [
 [project.optional-dependencies]
 analytics = [
     "jupyter>=1.0.0",
-    "nbstripout>=0.8.0",
+    "jupytext>=1.16.0",
     "pandas>=2.0.0",
     "psycopg2-binary>=2.9.0",
     "supabase>=2.0.0",

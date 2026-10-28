@@ -71,7 +71,7 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | C1 | List store rework | L | — | not started |
 | C2 | Song index freshness | M | — | not started |
 | D1–D7 | Library building blocks | L | `feature/ui-state-inventory` (design) | list, song-in-a-list, library and stage-sheet designs approved on the canvas (2026-10-02); playlist mode (D6) still to draw; build blocked on C1 |
-| E1–E6 | Editors | M–L each | — | not started |
+| E1–E6 | Editors | M–L each | — | not started, except E3's copy/paste of whole sections: fixed 2026-10-27 with G14 (#312) |
 | F1–F6 | Visual design | M–L | — | not started |
 | F7 | Tab view rework (Mike wants to lead this) | L | — | not started |
 | F8 | List view rework + a way to read notes (Mike wants to lead this) | L | `feature/ui-state-inventory` (design) | design approved on the canvas (2026-10-02); build after C1 |
@@ -91,6 +91,9 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | G10 | Searching the dungeon meant leaving the canon: no way to search both at once | S | `feature/include-dungeon` | done (2026-10-27): a remembered "Include the dungeon" checkbox beside the search count (off by default); archived results badged, canon first at equal relevance, archive loaded on demand. Dungeon song pages for Google deferred (Pages 1 GB limit, thin-content risk) |
 | G11 | Google's SEO starter guide: no page linked to any song page (Search Console: "Referring page: None detected", "Discovered – currently not indexed"); the homepage and three other pages had no description; dev pages were indexable | S | `feature/seo-starter-guide` | done (2026-10-27): generated A–Z page at `/songs/` linking every song, linked from the homepage; titles + descriptions on the four listed pages; `noindex` on `editor.html`, `editor-demo.html`, `tab-test.html` |
 | G12 | What can't visitors find? Zero-result searches were logged but only readable as a raw list in the dashboard | S | `feature/log-failed-search-journeys` | done (2026-10-27): `./scripts/utility search-gaps` stitches search journeys and sorts each failed search against the local index (missing / dungeon / missing take / misspelled / artist / filters), printing the add-placeholder / unprune command; `search` gains `scope`, result clicks `from_list`, not-found song pages log `song_not_found`. `search_index.py` brought in line with F9 |
+| G13 | Home page "visitors" counter was mostly our own test runs: 37k of 40.6k visitors were one-shot E2E/bot arrivals in bursts of 70–170/min that line up with E2E sessions (Jan, Jul–Oct) | S | `bug/telemetry-prod-only` | done — #307 (2026-10-27): `log_visit` + `log_events` only on bluegrassbook.com and never under automation (`docs/js/telemetry.js`); every E2E spec imports `test` from `e2e/fixtures.js` (Supabase mock per context, `assertClean()` after; 35 of 40 specs used to hit production; `tests/test_e2e_specs_use_fixtures.py`); `*.supabase.co` unresolvable under Playwright. Production cleaned the same night: 37,016 one-shot visitors in 61 burst hours (13,233 + 23,783) deleted and `visitor_stats` reduced to match (home page 46,158 views · 40,634 visitors → 9,645 · 4,097); backups in `~/workspace/bluegrassbook.com/backups/visitor-cleanup-*.json`. Two hours kept as possibly real (2026-01-02 07:00, 2026-02-08 06:00 UTC: no dev activity). Open: worktrees still on pre-#307 code keep adding bursts when they run E2E (468 at 2026-10-28 05:00 UTC) — rebase them, then re-run the same rule. No foreign keys or triggers reference `visitors` (live schema dump), so deleting rows touches nothing else |
+| G14 | Visitors from Google can't tell what the book does beyond the page they landed on: nothing points at lists, adding or editing songs, or tab playback and editing | M | `feature/feature-tour` | done — #312 (2026-10-27): a glowing ✨ Tour button for first-time visitors (gone once opened; then ⋯ ▸ Take the tour) starts a nine-step walk over the real controls (Key, Lists, Edit; a song played into the real lyrics & chords editor — typed in, sorted into sections, chorded — using the 1907 public-domain "Will the Circle Be Unbroken"; tab Play, tab Edit, then the page outlined as a drop zone for your own `.tef` files: open, edit in the browser, submit to the book). Cards are framed in the accent colour, labelled "Tour", point at their control and animate in; `?tour` links start it, `?tour=reset` brings the glow back; once seen it leads the ⋯ menu. No backdrop; the reader's own song when they're on one, else Old Home Place / Foggy Mountain Breakdown's banjo tab; Done goes back. `docs/js/tour.js`; `tour_*` analytics events |
+| G15 | Your own tab files have no private round trip: open (no Open dialog; drag-drop or the installed app's file handler only — the one 📂 Import .tef button is behind sign-in in Add Song ▸ Tablature, so a signed-out phone cannot open a file at all), work on it (autosaved to a local draft, ⋯ ▸ Drafts — this part exists), save it (⬇ Download writes `.otf.json`; nothing writes `.tef` back). Submitting to the book is the only end anyone finds, which risks filling the index with personal files, and storing people's files is its own worry | M–L | — | open question (Mike, 2026-10-27): no design yet. Found while checking the G14 tour's `.tef` card, whose copy currently ends at Submit |
 
 ### How it ships
 
@@ -1208,6 +1211,24 @@ on them.
   (`style.css:9170-9176`); no mid-word gaps where a chord chip is wider than
   its syllable ("go ne", "shi ning"); keyboard chord entry (arrows between
   slots, Up/Down between lines, Nashville digits); one undo stack.
+  - **Copy/paste drops a section's type** — **fixed 2026-10-27**
+    (#312, with G14): the root fix below, as
+    `section-ops.js` `sectionsForClipboard` / `placeSectionPaste` and the
+    editor's `copy` / `cut` handlers. (Mike, 2026-10-27; triaged, and
+    reproduced in Chromium the same day): copy a chorus in Lyrics mode and
+    paste it, and it comes back a verse. The section markers are hidden
+    atomic widgets there, so the browser's copy takes only the lyric lines
+    (clipboard: `"Sing it loud\nSing it proud"`), and untagged text is an
+    implicit verse. Duplicate keeps the type because it copies the marker
+    lines too (`section-ops.js` `duplicateSectionText`). ROOT FIX: a
+    `copy`/`cut` handler in `lead-editor/cm-editor.js` (Lyrics mode) that
+    writes the covered sections WITH their `{start_of_*}`/`{end_of_*}` lines
+    (sharing the section spans `doc-model.js` already has), and a paste that
+    lands inside a section moves to its boundary. Paste and smart paste stay
+    as they are: text with markers already passes through unchanged. Not a
+    fix: guessing the type on paste.
+  - **Drag a section up or down** with the mouse or a press-and-drag, in
+    addition to the label menu's Move (Mike, 2026-10-27): issue #309.
 - **E4 Tab editor traps** — Import .tef is undoable and confirms over unsaved
   edits (`work-view.js:2780-2789`, `facade.js:234-245`); "Done" becomes
   "Close" plus an "Unsubmitted changes" marker (`work-view.js:2821-2844`);

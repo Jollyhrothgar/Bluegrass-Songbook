@@ -4,7 +4,7 @@
 // pre-rendered with the chart (scripts/lib/build_song_pages.py); an archived
 // song has no page and gets 404.html, the same app. Everything that isn't a
 // song stays a hash route on the root.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 
 const songReady = (page) => expect(page.locator('#song-content .prerender')).toHaveCount(0, { timeout: 20000 });
 const here = (page) => page.evaluate(() => location.pathname + location.hash);

@@ -26,8 +26,11 @@ done
 echo "=== Analytics Dashboard Setup ==="
 echo ""
 
-# Check for .env file
-if [ ! -f ".env" ]; then
+# Credentials: 1Password (.env.tpl, injected per run by scripts/server through
+# scripts/lib/with-secrets — no plaintext copy on disk), or a hand-made .env.
+if [ ! -f ".env" ] && [ -f ".env.tpl" ] && command -v op >/dev/null 2>&1; then
+    echo "✓ credentials come from 1Password (.env.tpl); unlock the app when prompted"
+elif [ ! -f ".env" ]; then
     echo "ERROR: .env file not found"
     echo ""
     echo "Create it from the template:"
@@ -39,8 +42,7 @@ if [ ! -f ".env" ]; then
     echo ""
     echo "Get these from: https://supabase.com/dashboard/project/YOUR_PROJECT/settings/api"
     exit 1
-fi
-
+else
 # Validate .env has required vars
 source .env
 if [ -z "$SUPABASE_URL" ] || [ "$SUPABASE_URL" = "https://your-project.supabase.co" ]; then
@@ -54,6 +56,7 @@ if [ -z "$SUPABASE_SERVICE_KEY" ] || [ "$SUPABASE_SERVICE_KEY" = "your-service-r
 fi
 
 echo "✓ .env configured"
+fi
 
 if [ "$CHECK_ONLY" = true ]; then
     echo ""
@@ -67,13 +70,7 @@ echo "Installing analytics dependencies..."
 cd "$REPO_ROOT"
 uv sync --extra analytics
 
-# Setup nbstripout to auto-clear outputs on commit
-echo ""
-echo "Setting up nbstripout (auto-strips notebook outputs on commit)..."
-uv run nbstripout --install --attributes .gitattributes
-
 echo ""
 echo "Bootstrap complete!"
 echo "  - Run './scripts/server' to start Jupyter"
-echo "  - Open dashboard.ipynb in the browser"
-echo "  - Notebook outputs are auto-stripped on commit (nbstripout)"
+echo "  - Open dashboard.ipynb in the browser (paired with the committed dashboard.py)"

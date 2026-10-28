@@ -1,6 +1,6 @@
 // A work deleted as a duplicate still resolves: the URL is redirected to the
 // single surviving twin (A10), shown at its song's path.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 
 test('deleted duplicate URL redirects to its surviving work', async ({ page }) => {
     await page.goto('/#work/blue-moon-of-kentucky');

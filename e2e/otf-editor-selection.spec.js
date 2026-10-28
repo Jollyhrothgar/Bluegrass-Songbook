@@ -10,7 +10,7 @@
 // editor's QA handle (`.otf-editor.__otfEditor`); every claim about the
 // HIGHLIGHT is read from real bounding boxes against the string lines the
 // renderer drew.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 
 const WORK = '/#work/red-haired-boy/banjo';
 

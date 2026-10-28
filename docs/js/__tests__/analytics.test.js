@@ -13,7 +13,8 @@ let rpc;
 async function load() {
     vi.resetModules();
     analytics = await import('../analytics.js');
-    analytics.initAnalytics(); // tracks session_start, starts the 30s flush timer
+    // jsdom is localhost, where telemetry is off; these tests are about flush()
+    analytics.initAnalytics({ enabled: true }); // tracks session_start, starts the 30s flush timer
 }
 
 function sentEventNames(callIndex) {
@@ -158,6 +159,20 @@ describe('flush', () => {
         window.SupabaseAuth = { _getClient: () => null };
         await load();
         await expect(vi.advanceTimersByTimeAsync(FLUSH_INTERVAL_MS)).resolves.not.toThrow();
+        expect(rpc).not.toHaveBeenCalled();
+    });
+});
+
+describe('off the production site', () => {
+    it('never initializes, so nothing is queued or sent', async () => {
+        vi.resetModules();
+        analytics = await import('../analytics.js');
+        analytics.initAnalytics(); // jsdom: localhost
+        analytics.track('a');
+
+        await vi.advanceTimersByTimeAsync(FLUSH_INTERVAL_MS * 3);
+        window.dispatchEvent(new Event('beforeunload'));
+
         expect(rpc).not.toHaveBeenCalled();
     });
 });

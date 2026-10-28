@@ -20,12 +20,29 @@ the one it settled on. It launches Jupyter through
 1Password CLI the notebook gets its credentials injected at run time and the
 on-disk `.env` is only what `bootstrap` validates.
 
+## Notebooks are .py files
+
+Notebooks are committed as **percent-format Python** (jupytext: `# %%` cells),
+so a change diffs and reviews like code and no output — production numbers,
+visitor ids, query text — can ever be committed. Each `.py` pairs with a
+`.ipynb` of the same name that holds the outputs and is gitignored
+(`analytics/jupytext.toml`). `./scripts/server` creates any missing `.ipynb`
+from its `.py` before starting (`jupytext --sync`), and Jupyter writes both on
+every save. Edit in Jupyter, commit the `.py`. A new notebook: create it in
+Jupyter here and the `.py` appears on first save (the folder's
+`jupytext.toml` pairs it). This replaced nbstripout (2026-10-28): its
+per-clone git filter once broke every git command touching a notebook, and
+its diff driver pointed at one checkout's venv, so `git diff` failed elsewhere.
+
 ## Notebooks
 
-### dashboard.ipynb
+### dashboard.py
 
 Product analytics from Supabase:
-- Visitor statistics (daily traffic, unique visitors, page views)
+- Visitor statistics (daily page views, new visitors — `visitor_stats.unique_visitors`
+  only counts first-ever visits, so the notebook renames it `new_visitors`)
+- Weekly active users: app visitors (first-time vs returning) beside signed-in
+  contributors
 - User engagement (song votes, genre suggestions, tag votes)
 - Behavioral analytics from `analytics_events` (song views, searches, exports).
   The event total lives in Supabase and only grows — read it off the notebook,
@@ -34,7 +51,7 @@ Product analytics from Supabase:
 - Export behavior breakdown (ChordPro download vs Print vs Copy)
 - User lists and retention metrics
 
-### grassiness_analysis.ipynb
+### grassiness_analysis.py
 
 Bluegrass scoring methodology validation:
 - Score distribution across the collection
@@ -76,9 +93,19 @@ than trusting the ranking.
 
 ## Data Sources
 
-- **Supabase tables** (the eight `dashboard.ipynb` actually queries):
+- **Supabase tables** (the nine `dashboard.py` actually queries):
   `visitor_stats`, `visitors`, `song_votes`, `genre_suggestions`, `tag_votes`,
-  `user_lists`, `list_songs`, `analytics_events`
+  `user_lists`, `user_list_items`, `user_favorites`, `analytics_events`.
+  Every query pages through `fetch_all` — PostgREST caps a request at 1,000
+  rows, and `visitors` was ~39k before the G13 cleanup (~4k after)
+- **Mike's own traffic**: open `https://bluegrassbook.com/?internal=1` once per
+  browser to stop it counting; add the visitor id the toast shows to
+  `INTERNAL_VISITORS` in the dashboard's setup cell to drop its history too.
+  Per browser: clearing site data unmarks it
+- **WAU caveat**: `analytics_events` has only an anonymous `visitor_id`, so
+  "signed-in" weekly activity is inferred from contributor tables (votes,
+  tags, lists, favorites) — a floor, not a split of one total. Events are
+  missing 2026-01-07 → 2026-10-01 (`log_events` outage, fix-it list A2)
 - **Local files**: `docs/data/grassiness_scores.json`, `docs/data/bluegrass_artist_database.json`
 - **MusicBrainz**: Local PostgreSQL on port 5440 (for grassiness analysis)
 
@@ -86,8 +113,9 @@ than trusting the ranking.
 
 ```
 analytics/
-├── dashboard.ipynb            # Product analytics
-├── grassiness_analysis.ipynb  # Bluegrass scoring analysis
+├── jupytext.toml              # Pairs each .py with a local .ipynb
+├── dashboard.py               # Product analytics (percent-format notebook)
+├── grassiness_analysis.py     # Bluegrass scoring analysis
 ├── scripts/
 │   ├── bootstrap              # Install dependencies
 │   └── server                 # Start Jupyter

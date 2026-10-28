@@ -190,7 +190,7 @@ Bluegrass-Songbook/
 │       └── build_index.py        # LEGACY: Build from sources/
 │
 ├── analytics/               # Data analysis dashboard
-│   ├── dashboard.ipynb      # Jupyter notebook
+│   ├── dashboard.py         # Jupyter notebook (jupytext percent; .ipynb is local)
 │   └── scripts/             # Export utilities
 │
 ├── supabase/                # Supabase backend configuration
@@ -589,9 +589,9 @@ change. (Older GitHub milestones still exist: `gh issue list --milestone "..."`.
 | Add a database migration | `supabase/migrations/` |
 | Manage issues/milestones | `.claude/skills/github-project/SKILL.md` |
 | Write a blog post | mikebeaumier.com, in the Bluegrass Book dev log series (`docs/posts/` is the pre-move copy; `blog.html` only redirects) |
-| Analyze usage data | `analytics/dashboard.ipynb` |
+| Analyze usage data | `analytics/dashboard.py` (opens as a notebook; `analytics/scripts/server`) |
 | See what visitors searched for and couldn't find | `./scripts/utility search-gaps` (`analytics/CLAUDE.md`) |
-| Analyze grassiness data | `analytics/grassiness_analysis.ipynb` |
+| Analyze grassiness data | `analytics/grassiness_analysis.py` |
 | Decide what to work on next | `docs/plans/2026-09-30-fix-it-list.md` (Status table) |
 | Open or screenshot one UI state (design work) | `design/ui-states/README.md` |
 | See product vision | `ROADMAP.md` |
