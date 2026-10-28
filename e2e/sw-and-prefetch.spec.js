@@ -6,7 +6,12 @@
 // .pro stale-while-revalidate, and — above all — that a returning user with
 // no network still gets the app (a bad service worker strands people).
 import http from 'node:http';
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
+
+// No Supabase backstop here: any installed route turns Playwright's HTTP cache
+// off, and the cache is what these tests measure. playwright.config.js keeps
+// *.supabase.co unresolvable, so this spec still can't reach production.
+test.use({ supabaseBackstop: false });
 import { gotoSearch, searchFor } from './helpers.js';
 
 const swReady = (page) => page.evaluate(async () => {

@@ -3,7 +3,7 @@
 // A work whose group has multiple versions shows an "N versions" pill;
 // its popover lists each version (canonical badge, current marker, vote
 // affordance) and clicking one navigates to that arrangement.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import { gotoSearch, searchFor, openPill } from './helpers.js';
 
 // wagon-wheel has a 2-version group (wagon-wheel, wagon-wheel-1)

@@ -10,7 +10,7 @@
 // Supabase is mocked (helpers/supabase-mock.js); the pending_songs route here
 // additionally honours PostgREST column selection so the test can see what the
 // app asked for.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import fs from 'node:fs';
 import path from 'node:path';
 import { mockSupabase } from './helpers/supabase-mock.js';

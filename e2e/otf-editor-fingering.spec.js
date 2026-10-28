@@ -12,7 +12,7 @@
 // the RENDERER draws the mark; clear it, the mark goes; undo, it is back.
 // Nothing here reads the document — `.finger-text` / `.lh-finger-text`
 // are what a person looking at the stave actually sees.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import fs from 'fs';
 import path from 'path';
 

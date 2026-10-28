@@ -1,7 +1,7 @@
 // E2E tests for works with tablature on the unified song page.
 // Tablature playback controls live in the fixed bottom band
 // (#app-bottomband); multi-part works get a .part-tabs segmented control.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 
 test.describe('WorkView - Tablature', () => {
     test('opens work with tablature via legacy #song URL', async ({ page }) => {

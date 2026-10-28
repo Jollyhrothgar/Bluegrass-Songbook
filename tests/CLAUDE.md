@@ -39,6 +39,7 @@ A few landmarks:
 | `test_dedup_scorer.py` | Per-submission duplicate check (fixtures in `tests/fixtures/dedup/`) |
 | `test_curation.py` / `test_index_outputs.py` | Curation registry and the split index/archive/.pro outputs |
 | `test_workflow_deploy_triggers.py` | Every workflow that pushes is listed in `build.yml`'s `workflow_run` |
+| `test_e2e_specs_use_fixtures.py` | Every Playwright spec imports `test` from `e2e/fixtures.js` (the Supabase mock backstop) |
 
 ## Fixtures
 

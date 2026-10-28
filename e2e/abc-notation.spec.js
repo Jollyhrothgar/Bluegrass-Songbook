@@ -4,7 +4,7 @@
 // (#work/{slug}); the playback controls (tempo, play) live in the fixed
 // bottom band (#app-bottomband). The old work dashboard with part cards
 // is gone — bare #work/ URLs render the same unified page.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 
 const ABC_SONG_URL = '/#song/abbey-reel-the';
 

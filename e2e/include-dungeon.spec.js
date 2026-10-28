@@ -1,7 +1,7 @@
 // "Include the dungeon": a remembered search-scope checkbox. Off, search is
 // the curated canon; on, archived songs join the results (badged, ranked
 // below the canon at equal relevance) and the archive loads on demand.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 
 const ARCHIVED = '1+1 = Love';   // works/1-1-love is in archive.jsonl
 

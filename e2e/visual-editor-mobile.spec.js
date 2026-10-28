@@ -6,7 +6,7 @@
 // Playwright cannot raise a real phone keyboard or emulate iOS selection handles; the plan's
 // real-device test covers those. These drive taps with the touchscreen and the strip with
 // synthetic pointer events.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import {
     CM, SHEET, setLead, leadText, leadReady, setMode, openEditor, boxPos, boxAt, syllableCentres, scrollLineToTop,
     boxState, lineEndPoint, centreOf, touchDrag, along, boxStopKind, stepKinds, segmentRects,

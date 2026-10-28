@@ -6,7 +6,7 @@
 //
 // No audio assertions here: WebAudioFont's CDN is blocked in the
 // sandbox; playback is verified by ear on a real machine.
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 
 async function openDemo(page) {
     await page.goto('/editor-demo.html');
