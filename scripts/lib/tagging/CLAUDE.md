@@ -84,7 +84,7 @@ uv run python -c "import json,collections; d=json.load(open('docs/data/grassines
 that score above 0 appear in the cache at all — "Jolene" and "9 to 5" are not
 in it.)
 
-See `analytics/grassiness_analysis.ipynb` for visualizations and threshold analysis.
+See `analytics/grassiness_analysis.py` for visualizations and threshold analysis.
 
 ## Files
 
@@ -186,7 +186,7 @@ What the score actually feeds today:
    Monroe (1947), …", each a YouTube search, and searches it; an unconfirmed
    scraped `artist` is never shown or searched. Refresh with
    `./scripts/utility refresh-musicbrainz`.
-2. **Analysis** — `analytics/grassiness_analysis.ipynb` and the
+2. **Analysis** — `analytics/grassiness_analysis.py` and the
    `analytics/bluegrass-research/` scripts.
 
 Genre tagging moved to the LLM path: `batch_tag_songs.py` writes

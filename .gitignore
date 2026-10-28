@@ -102,3 +102,8 @@ docs/data/wanted_songs.json
 
 # UI state inventory screenshots (build output: node design/ui-states/capture.js)
 design/ui-states/shots/
+
+# Notebooks are committed as percent-format .py (jupytext); the paired .ipynb
+# holds outputs and stays local. See analytics/jupytext.toml.
+*.ipynb
+.ipynb_checkpoints/
