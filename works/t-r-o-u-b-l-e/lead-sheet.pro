@@ -13,8 +13,7 @@ Well I [C]don't miss much if it happens on a dance hall [G]floor
 {end_of_verse}
 
 {start_of_verse: Verse 2}
-{comment:      C                 G}
-{comment: Well hello T-R-O-U-B-L-E }
+Well [C]hello T-R-O-U-B-L-[G]E
 Tell me [D7]what in the world you doin' [C]A-L-O-N-[G]E
 Yeah say [C]hey good L double O-K-I-N-[G]G 
 Well [D7]I smell T-R-[C]O-U-B-L-[G]E yeah
