@@ -164,7 +164,7 @@ export function createChordMenu({ getContext, onPick, onRemove, onMove, onClose,
         stripLine.appendChild(clone);
         // the cursor sits mid-strip when it can, and is always fully in view: measure with no transform,
         // then slide from where the last line was (so the line glides under the cursor)
-        const target = clone.querySelector('.cl-gap-bar, .cl-box-chord .cl-chord-glyph, .cl-slot-pill, .cl-box-text');
+        const target = clone.querySelector('.cl-box-chord .cl-chord-glyph, .cl-slot-pill, .cl-box-text');
         const view = stripView.getBoundingClientRect();
         let shift = 0;
         clone.style.transition = 'none';

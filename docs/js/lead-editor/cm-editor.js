@@ -80,26 +80,26 @@ class PadWidget extends WidgetType {
     toDOM() { const el = document.createElement('span'); el.textContent = ' '; return el; }
 }
 
-/** The box where no chord sits yet: a dashed pill above the syllable (ghost text while typing). */
+/**
+ * The box where no chord sits yet: a dashed pill above the syllable (ghost text while typing). In the empty slot after the
+ * words and in the gap between two words it is a box on the LYRIC row too, as a syllable is; a gap already holding a chord
+ * keeps only that lyric-row box (the chord glyph itself is boxed).
+ */
 class SlotWidget extends WidgetType {
-    constructor(ghost, invalid, after, gap) { super(); this.ghost = ghost || ''; this.invalid = !!invalid; this.after = !!after; this.gap = !!gap; }
-    eq(o) { return o.ghost === this.ghost && o.invalid === this.invalid && o.after === this.after && o.gap === this.gap; }
+    constructor(ghost, invalid, after, gap, held) { super(); this.ghost = ghost || ''; this.invalid = !!invalid; this.after = !!after; this.gap = !!gap; this.held = !!held; }
+    eq(o) { return o.ghost === this.ghost && o.invalid === this.invalid && o.after === this.after && o.gap === this.gap && o.held === this.held; }
     toDOM() {
         const el = document.createElement('span');
         el.className = 'cl-slot' + (this.invalid ? ' cl-slot-invalid' : '') + (this.after ? ' cl-slot-after' : '') + (this.gap ? ' cl-slot-gap' : '');
-        if (this.gap) {
-            // the cursor between two words: a slim bar across the chord row and the lyric row (no text outline)
-            const bar = document.createElement('span');
-            bar.className = 'cl-gap-bar';
-            el.appendChild(bar);
+        if (!this.held) {
+            const pill = document.createElement('span');
+            pill.className = 'cl-slot-pill';
+            pill.innerHTML = this.ghost ? chordGlyphHtml(this.ghost) : '';
+            el.appendChild(pill);
         }
-        const pill = document.createElement('span');
-        pill.className = 'cl-slot-pill';
-        pill.innerHTML = this.ghost ? chordGlyphHtml(this.ghost) : '';
-        el.appendChild(pill);
-        if (this.after) {
-            // the empty place after the words is outlined on the LYRIC row too, as a syllable is (absolute: it takes no
-            // width and cannot wrap the line, so the stops measure the same with the cursor here or not)
+        if (this.after || this.gap) {
+            // outlined on the lyric row (absolute: it takes no width and cannot wrap the line, so the stops measure the
+            // same with the cursor here or not)
             const text = document.createElement('span');
             text.className = 'cl-slot-text';
             el.appendChild(text);
@@ -239,11 +239,12 @@ export function buildVisual(state, ctx) {
     }
 
     // the box on a syllable with no chord yet, or in the empty slot after the words; between two words
-    // (a GAP stop) it is always drawn, as a slim bar (the dashed pill only appears for typed-entry ghost text)
+    // (a GAP stop) it is always drawn: a box on the lyric row, and the dashed pill while the gap holds no chord
     if (box && box.pos != null && box.pos <= text.length) {
         const gap = !box.after && stopKindAt(text, box.pos) === 'gap';
+        const held = gap && !box.ghost && !!chordAt(text, box.pos);
         if (gap || box.after || box.ghost || !chordAt(text, box.pos)) {
-            decos.push(Decoration.widget({ widget: new SlotWidget(box.ghost, box.invalid, box.after, gap), side: -1 }).range(box.pos));
+            decos.push(Decoration.widget({ widget: new SlotWidget(box.ghost, box.invalid, box.after, gap, held), side: -1 }).range(box.pos));
         }
     }
     // the box on an empty chord line, drawn below the line that ends at box.pos
