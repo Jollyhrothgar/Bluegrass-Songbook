@@ -753,8 +753,10 @@ export class EditorCursor {
 
         const { start, end } = sel.getNormalized(this.state.ticksPerMeasure);
         const startAbs = facade.toAbs(start.measure, start.tick);
-        // Inclusive of the end slot: extend by one grid step
-        const endAbs = facade.toAbs(end.measure, end.tick) + this.state.gridSubdivision;
+        // Inclusive of the end slot — the same range every op acts on
+        const endAbs = this.state.slotEndAbs
+            ? this.state.slotEndAbs(end)
+            : facade.toAbs(end.measure, end.tick) + this.state.gridSubdivision;
 
         const opt = this.renderer.options || {};
         const topMargin = opt.topMargin ?? 30;

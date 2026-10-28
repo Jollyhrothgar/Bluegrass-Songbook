@@ -426,6 +426,12 @@ export class OTFEditor {
                 min-height: 200px;
             }
 
+            /* Placed text is a click target: click = cursor to it,
+               double-click = edit it. */
+            .editor-renderer .annotation-text {
+                cursor: pointer;
+            }
+
             /* A zoomed-in row may be wider than the canvas. It scrolls WITH
                the canvas (the cursor/ruler overlays live there and use its
                scrollLeft), and is never shrunk to fit: style.css's
@@ -862,6 +868,15 @@ export class OTFEditor {
         // Only handle clicks on the canvas area
         if (!this.canvasContainer.contains(event.target)) return;
 
+        // A click ON placed text goes to that text's own spot, so `t` /
+        // ⌫ / the Text button act on it. Its drawn width runs well past
+        // a beat, so the x → tick mapping below would often land out of
+        // its reach.
+        if (this._setCursorToAnnotation(event)) {
+            this.editorRoot.focus();
+            return;
+        }
+
         // Hit-test the renderer's real row/measure geometry first — the
         // uniform-grid fallback drifts on variable-width measures and
         // scrolled pages.
@@ -915,6 +930,34 @@ export class OTFEditor {
     }
 
     /**
+     * The placed text a pointer event landed on, as its `{measure, tick}`
+     * (the renderer stamps both on `.annotation-text`), or null.
+     */
+    _annotationFromEvent(event) {
+        const el = event.target?.closest?.('.annotation-text');
+        if (!el || !this.canvasContainer.contains(el)) return null;
+        const measure = Number(el.getAttribute('data-measure'));
+        const tick = Number(el.getAttribute('data-tick'));
+        if (!Number.isFinite(measure) || !Number.isFinite(tick)) return null;
+        return { measure, tick };
+    }
+
+    /**
+     * Put the cursor on the placed text under a pointer event.
+     * @returns {boolean} false when the event was not on placed text
+     */
+    _setCursorToAnnotation(event) {
+        const at = this._annotationFromEvent(event);
+        if (!at) return false;
+        this.keyboard?.fret?.cancelRefine();
+        this.state.cursor.measure = at.measure;
+        this.state.cursor.tick = at.tick;
+        this.cursor.update();
+        this.state._emit('cursorMove', this.state.cursor);
+        return true;
+    }
+
+    /**
      * Set the cursor from a viewport point.
      * @returns {boolean} true if a row was hit
      */
@@ -964,19 +1007,12 @@ export class OTFEditor {
 
     /**
      * The current selection as an absolute tick range (end inclusive of
-     * its slot — extended one grid step), or null.
+     * its slot), or null. The drag-move, loop's hit test and the context
+     * menu read it; it IS `state.selectionRange()`, so they act on the
+     * same notes copy and delete do.
      */
     _selectionAbsRange() {
-        if (!this.state.selection) return null;
-        const { start, end } = this.state.selection.getNormalized(this.state.ticksPerMeasure);
-        const f = this.state.facade;
-        return {
-            startAbs: f.toAbs(start.measure, start.tick),
-            endAbs: f.toAbs(end.measure, end.tick) + this.state.gridSubdivision,
-            // The rectangle's height: every op that acts on the drag
-            // (move, loop's hit test, the context menu) reads it from here.
-            strings: this.state.selectionStrings(),
-        };
+        return this.state.selectionRange();
     }
 
     /**
@@ -989,6 +1025,8 @@ export class OTFEditor {
         if (event.button !== 0) return;
         if (!this.canvasContainer.contains(event.target)) return;
         this._suppressNextClick = false; // stale flag guard
+        // Placed text is a click target, not the start of a drag.
+        if (this._annotationFromEvent(event)) return;
         const pos = this._positionFromPoint(event.clientX, event.clientY);
         if (!pos) return;
 
@@ -1096,6 +1134,12 @@ export class OTFEditor {
      */
     _handleCanvasDblClick(event) {
         if (!this.canvasContainer.contains(event.target)) return;
+
+        // Double-clicking placed text edits THAT text, not a note.
+        if (this._setCursorToAnnotation(event)) {
+            this.editAnnotationAtCursor();
+            return;
+        }
 
         // Get click position
         const rect = this.canvasContainer.getBoundingClientRect();

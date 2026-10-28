@@ -1042,9 +1042,9 @@ export class EditorState {
      *
      * A selection is a RECTANGLE (TablEdit), not a column: dragging
      * along one string selects that string alone, and dragging down to
-     * string 5 selects 3,4,5. `Ctrl+A` is the one thing that still
-     * spans every string — it asks for the whole measure, so it sets
-     * its own endpoints to string 1 and the last string.
+     * string 5 selects 3,4,5. `Ctrl+A` (and Edit ▸ Select measure) still
+     * span every string — they set their own endpoints to string 1 and
+     * the last string.
      *
      * Ordering comes from the ENDPOINTS' strings, never from the tick
      * normalization: the rectangle's height is independent of which end
@@ -1080,9 +1080,25 @@ export class EditorState {
             (m, t) => this.facade.toAbs(m, t));
         return {
             startAbs: this.facade.toAbs(start.measure, start.tick),
-            endAbs: this.facade.toAbs(end.measure, end.tick) + 1,
+            endAbs: this.slotEndAbs(end),
             strings: this.selectionStrings(),
         };
+    }
+
+    /**
+     * Where the grid slot at `pos` ENDS, as an absolute tick: the next
+     * grid line, or the barline when the slot is the measure's last.
+     *
+     * A slot is everything up to the next line, not just its own tick —
+     * a note typed at a finer step (a 16th at beat 4.3 under a 1/8 step)
+     * sits inside the slot the cursor can reach, and must be selected
+     * with it. `+ 1` here once left exactly those notes out of every
+     * selection, Ctrl+A included, and nothing else could reach them.
+     */
+    slotEndAbs(pos) {
+        const ticks = this.facade.ticksFor(pos.measure);
+        const end = Math.min(pos.tick + (this.gridSubdivision || 1), ticks);
+        return this.facade.toAbs(pos.measure, Math.max(end, pos.tick + 1));
     }
 
     /**

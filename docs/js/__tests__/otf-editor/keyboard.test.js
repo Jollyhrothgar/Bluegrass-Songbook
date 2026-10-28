@@ -1584,12 +1584,13 @@ describe('KeyboardHandler (tabledit preset)', () => {
             expect(state.selection).toBeNull();
         });
 
-        it('Ctrl+A selects the measure, then the whole tab', () => {
+        it('Ctrl+A selects the whole tab in ONE press', () => {
             const { state, press } = setup();
             state.cursor.measure = 2;
             press('a', { ctrl: true });
-            expect(state.selection.start.measure).toBe(2);
-            expect(state.selection.end.measure).toBe(2);
+            expect(state.selection.start.measure).toBe(1);
+            expect(state.selection.end.measure).toBe(state.getMeasureCount());
+            // and a second press keeps it (it used to toggle stages)
             press('a', { ctrl: true });
             expect(state.selection.start.measure).toBe(1);
             expect(state.selection.end.measure).toBe(state.getMeasureCount());
