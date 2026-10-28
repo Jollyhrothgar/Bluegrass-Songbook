@@ -94,7 +94,7 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | G13 | Home page "visitors" counter was mostly our own test runs: 37k of 40.6k visitors were one-shot E2E/bot arrivals in bursts of 70–170/min that line up with E2E sessions (Jan, Jul–Oct) | S | `bug/telemetry-prod-only` | done — #307 (2026-10-27): `log_visit` + `log_events` only on bluegrassbook.com and never under automation (`docs/js/telemetry.js`); every E2E spec imports `test` from `e2e/fixtures.js` (Supabase mock per context, `assertClean()` after; 35 of 40 specs used to hit production; `tests/test_e2e_specs_use_fixtures.py`); `*.supabase.co` unresolvable under Playwright. Production cleaned the same night: 37,016 one-shot visitors in 61 burst hours (13,233 + 23,783) deleted and `visitor_stats` reduced to match (home page 46,158 views · 40,634 visitors → 9,645 · 4,097); backups in `~/workspace/bluegrassbook.com/backups/visitor-cleanup-*.json`. Two hours kept as possibly real (2026-01-02 07:00, 2026-02-08 06:00 UTC: no dev activity). Open: worktrees still on pre-#307 code keep adding bursts when they run E2E (468 at 2026-10-28 05:00 UTC) — rebase them, then re-run the same rule. No foreign keys or triggers reference `visitors` (live schema dump), so deleting rows touches nothing else |
 | G14 | Visitors from Google can't tell what the book does beyond the page they landed on: nothing points at lists, adding or editing songs, or tab playback and editing | M | `feature/feature-tour` | done — #312 (2026-10-27): a glowing ✨ Tour button for first-time visitors (gone once opened; then ⋯ ▸ Take the tour) starts a nine-step walk over the real controls (Key, Lists, Edit; a song played into the real lyrics & chords editor — typed in, sorted into sections, chorded — using the 1907 public-domain "Will the Circle Be Unbroken"; tab Play, tab Edit, then the page outlined as a drop zone for your own `.tef` files: open, edit in the browser, submit to the book). Cards are framed in the accent colour, labelled "Tour", point at their control and animate in; `?tour` links start it, `?tour=reset` brings the glow back; once seen it leads the ⋯ menu. No backdrop; the reader's own song when they're on one, else Old Home Place / Foggy Mountain Breakdown's banjo tab; Done goes back. `docs/js/tour.js`; `tour_*` analytics events |
 | G15 | Your own tab files have no private round trip: open (no Open dialog; drag-drop or the installed app's file handler only — the one 📂 Import .tef button is behind sign-in in Add Song ▸ Tablature, so a signed-out phone cannot open a file at all), work on it (autosaved to a local draft, ⋯ ▸ Drafts — this part exists), save it (⬇ Download writes `.otf.json`; nothing writes `.tef` back). Submitting to the book is the only end anyone finds, which risks filling the index with personal files, and storing people's files is its own worry | M–L | — | open question (Mike, 2026-10-27): no design yet. Found while checking the G14 tour's `.tef` card, whose copy currently ends at Submit |
-| G16 | Agent docs outgrew their use: the root `CLAUDE.md` was 601 lines (Anthropic's guidance is under 200 per file) and the nested ones 8,500 more, much of it architecture an agent reads from the code and some of it wrong; every new paseo worktree started with no deps and no index; the `add-issue` skill didn't know this backlog, and `github-project` said to squash-merge; dead docs and abandoned imports sat in the tree | M | `docs/refresh-agent-docs-paseo-workflow` | in review: `paseo.json` (worktree setup, `web` service, `test` script); root `CLAUDE.md` 601 → ~150 lines plus path-scoped `.claude/rules/`; nested docs 8,546 → 3,069 lines, each fact re-checked against the code; dead docs and abandoned experiments deleted; issue skills refreshed; all 72 open issues audited (actions await Mike). Follow-ups below |
+| G16 | Agent docs outgrew their use: the root `CLAUDE.md` was 601 lines (Anthropic's guidance is under 200 per file) and the nested ones 8,500 more, much of it architecture an agent reads from the code and some of it wrong; every new paseo worktree started with no deps and no index; the `add-issue` skill didn't know this backlog, and `github-project` said to squash-merge; dead docs and abandoned imports sat in the tree | M | `docs/refresh-agent-docs-paseo-workflow` | in review: `paseo.json` (worktree setup, `web` service, `test` script); root `CLAUDE.md` 601 → ~150 lines plus path-scoped `.claude/rules/`; nested docs 8,546 → 3,069 lines, each fact re-checked against the code; dead docs and abandoned experiments deleted; issue skills refreshed; all 72 open issues audited and cleaned up (2026-10-28); merged remote branches deleted. Follow-ups below |
 
 ### How it ships
 
@@ -1484,8 +1484,14 @@ Done on `docs/refresh-agent-docs-paseo-workflow`:
   Homebrew first in the Chrome DevTools servers' PATH (they failed to start
   looking for an nvm Node that no longer exists).
 - **Issue audit.** All 72 open issues were checked against the code, data and
-  history on 2026-10-28. The proposed closes, rewrites and milestone fixes
-  are with Mike; nothing on GitHub has changed yet.
+  history on 2026-10-28. With Mike's approval: 30 closed with a comment
+  citing the evidence (done, obsolete, or ideas with no plan); 15 rewritten
+  to what is still left (#55 folded into #53); 9 moved to the right milestone
+  or label; the empty "Contribution pipeline" milestone closed. #10 closes
+  with this branch: the last two works with chord lines wrapped in
+  `{comment:}` (`t-r-o-u-b-l-e`, `d-o-a-drunk-on-arrival`) are fixed.
+- **Remote branches.** The eleven branches merged on 2026-10-01 were deleted
+  from GitHub.
 
 Follow-ups:
 
@@ -1503,14 +1509,10 @@ Follow-ups:
   paseo can assign each worktree a port.
 - **`pickRepresentative`** is duplicated in `docs/js/work-view.js` and
   `docs/js/search-core.js`.
-- **Two archived works** (`t-r-o-u-b-l-e`, `d-o-a-drunk-on-arrival`) still
-  have chord lines wrapped in `{comment:}` (issue #10).
-- **Remote branches:** eleven merged branches from the 2026-10-01 batch are
-  still on GitHub (`bug/chordpro-untagged-lines`, `bug/editor-lifecycle`,
-  `bug/list-security`, `bug/setlist-keys-not-found`, `feature/fix-it-plan`,
-  `feature/perf-*` ×5, `feature/practice-line-contrast`), plus two unmerged
-  and idle ones (`bug/pending-content-not-null`, 2026-08-20;
-  `feature/design-review-followups`, 2026-10-04).
+- **Two unmerged, idle branches** are still on GitHub:
+  `bug/pending-content-not-null` (last commit 2026-08-20) and
+  `feature/design-review-followups` (2026-10-04, also checked out in the
+  container folder's `feature-ui-state-inventory` worktree).
 - **The container repo** (`Bluegrass-Songbook-workspace`, private) versions
   only the worktree-dispatch layer: `setup.sh` rebuilds the bare-clone +
   `main` worktree layout on a new machine, and its `CLAUDE.md` and
