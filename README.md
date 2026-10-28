@@ -21,8 +21,8 @@ too.
   TablEdit (`.tef`) files, with playback, a track mixer, and an in-browser tab
   editor.
 - **Lyrics & chords editor** with Lyrics, Chords and ChordPro modes.
-- **Lists** you can sync across devices with a Google sign-in, share, print,
-  and co-own with other people.
+- **Lists** that sync across devices once you sign in, and that you can
+  share, print, and co-own with other people.
 - **Contributing:** signed-in users add and correct songs and tabs in the app.
   Anyone can report a problem with a song, no account needed.
 - **Works offline** once loaded (service worker), with dark and light themes.
