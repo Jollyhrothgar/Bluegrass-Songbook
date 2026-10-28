@@ -89,6 +89,7 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | G8 | 79 merged-away works re-created by July backfills: searchable, but the app opened their redirect target, so their tabs and edits were unreachable | M | `feature/song-urls` | done (2026-10-26): each pair is now one song with both as versions, redirects dropped; the build fails if a redirect source exists again (`works_writer.redirect_violations`) |
 | G9 | One metadata editor for every song: Song (which song this is a version of), Version label, Performer (the intended artist); its Artist field edits the scraped field we never show | M | — | not started — next after G7 (touches `pending_songs`, `auto-commit-song`, `works_writer.METADATA_FIELDS`, the Details editor) |
 | G10 | Searching the dungeon meant leaving the canon: no way to search both at once | S | `feature/include-dungeon` | done (2026-10-27): a remembered "Include the dungeon" checkbox beside the search count (off by default); archived results badged, canon first at equal relevance, archive loaded on demand. Dungeon song pages for Google deferred (Pages 1 GB limit, thin-content risk) |
+| G11 | What can't visitors find? Zero-result searches were logged but only readable as a raw list in the dashboard | S | `feature/log-failed-search-journeys` | done (2026-10-27): `./scripts/utility search-gaps` stitches search journeys and sorts each failed search against the local index (missing / dungeon / missing take / misspelled / artist / filters), printing the add-placeholder / unprune command; `search` gains `scope`, result clicks `from_list`, not-found song pages log `song_not_found`. `search_index.py` brought in line with F9 |
 
 ### How it ships
 
@@ -181,6 +182,16 @@ headless Chromium on main (4/40) and on the branch (8/40); watch for it.
 
 Not fixed in the branches above, recorded so they are not lost. Each names
 the plan item it belongs with.
+
+- **Search analytics (G11, 2026-10-27)**
+  - `search_result_click.position` has never been recorded for a search
+    result: it reads `data-index`, which only draggable list rows carry, so
+    it is `NaN` → `null` in every row since tracking began.
+  - The local `sync-deleted-songs` / `sync-promoted-songs` / `sync-tag-votes`
+    run `uv run python3`, but `supabase` is only in the `analytics` extra,
+    which `./scripts/bootstrap`'s plain `uv sync` prunes; the failure then
+    says "Run: uv sync", which does not help. CI and `search-gaps` use
+    `uv run --with supabase`.
 
 - **Lists / sync (C1, D5)**
   - `handleInviteLink` (main.js) reads `result.error` as a string (shows

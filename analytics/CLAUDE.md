@@ -43,6 +43,37 @@ Bluegrass scoring methodology validation:
 - Artist era distribution (Founding/Classic/Modern)
 - Cover count vs score correlation
 
+## Search gaps — what visitors could not find
+
+```bash
+./scripts/bootstrap --quick                   # verdicts are only as fresh as docs/data/
+./scripts/utility search-gaps                 # last 30 days
+./scripts/utility search-gaps --since 2026-10-01
+```
+
+`scripts/lib/search_gaps.py` stitches each visitor's `search` and
+`search_result_click` events into journeys (a 30-minute pause starts a new
+one; keystroke pauses are collapsed), then re-runs every failed search against
+the LOCAL index and sorts it: **not in the songbook** (with an
+`add-placeholder` line), **in the dungeon** (by archived work, with a
+`curate unprune` line), **here but not with those filters** (a missing take),
+**spelled differently**, **artists**, **filters only**, and **found since**.
+It also lists searches that had results nobody opened, and song pages that
+were not found (`song_not_found`). It prints and suggests; it never writes,
+commits or runs anything — the queries are visitors' words and the repo is
+public. The dashboard's "Zero results" cell is the raw list this replaces.
+
+Events it reads (all sent by `docs/js/analytics.js`):
+
+| Event | Properties it relies on |
+|-------|-------------------------|
+| `search` | `query`, `result_count`, `scope` (`canon` / `canon+dungeon` / `dungeon`; absent before 2026-10-27 = canon) |
+| `search_result_click` | `song_id`, `query`, `from_list` (a list view's row, not a search result; absent before 2026-10-27). `position` is always null for search rows: `data-index` only exists on draggable list rows |
+| `song_not_found` | `song_id`, `source` (`deep_link` / `list` / `history` / `app`), `path`, `suggestions`, `referrer` (deep links only). Since 2026-10-27 |
+
+Data is thin (~350 searches a month in Oct 2026), so read every line rather
+than trusting the ranking.
+
 ## Data Sources
 
 - **Supabase tables** (the eight `dashboard.ipynb` actually queries):
