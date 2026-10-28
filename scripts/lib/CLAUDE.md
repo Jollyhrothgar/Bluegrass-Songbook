@@ -363,9 +363,18 @@ and `songs/{id}.pro` just written and emits, both gitignored:
   still reads the chart. The template is filled by exact-string landmarks
   (`_fill`); a change to those lines in `index.html` fails the build, not
   the site.
+  The homepage's `<title>` + description (`HOME_HEAD`, a regex: keep the
+  description right after the title) are swapped for the song's.
+- `docs/songs/index.html`: every song (the sitemap's, not versions) A to Z
+  with its writer — a plain page, not the app. It is the one page linking to
+  every song, so each song page has a referring page instead of being known to
+  Google only through the sitemap (G11); the homepage's landing footer links
+  to it. Search results and collections can't do that job: they are hash
+  routes, and Googlebot never types a search.
 - `docs/404.html`: `index.html` as is. GitHub Pages (and `scripts/server`)
   serve it for a path with no page — an archived song — and the app routes it.
-- `docs/sitemap.xml`: `STATIC_PAGES` + every SONG page (one per song;
+- `docs/sitemap.xml`: `STATIC_PAGES`, the A–Z page (undated: no one commit
+  dates its list) + every SONG page (one per song;
   versions are left out), each with `<lastmod>`: the date of the last commit
   to the song's work or any of its versions (a static page: its file's).
   Google uses lastmod only when it is consistently accurate, so it is never

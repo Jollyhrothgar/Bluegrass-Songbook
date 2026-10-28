@@ -89,7 +89,8 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | G8 | 79 merged-away works re-created by July backfills: searchable, but the app opened their redirect target, so their tabs and edits were unreachable | M | `feature/song-urls` | done (2026-10-26): each pair is now one song with both as versions, redirects dropped; the build fails if a redirect source exists again (`works_writer.redirect_violations`) |
 | G9 | One metadata editor for every song: Song (which song this is a version of), Version label, Performer (the intended artist); its Artist field edits the scraped field we never show | M | — | not started — next after G7 (touches `pending_songs`, `auto-commit-song`, `works_writer.METADATA_FIELDS`, the Details editor) |
 | G10 | Searching the dungeon meant leaving the canon: no way to search both at once | S | `feature/include-dungeon` | done (2026-10-27): a remembered "Include the dungeon" checkbox beside the search count (off by default); archived results badged, canon first at equal relevance, archive loaded on demand. Dungeon song pages for Google deferred (Pages 1 GB limit, thin-content risk) |
-| G11 | What can't visitors find? Zero-result searches were logged but only readable as a raw list in the dashboard | S | `feature/log-failed-search-journeys` | done (2026-10-27): `./scripts/utility search-gaps` stitches search journeys and sorts each failed search against the local index (missing / dungeon / missing take / misspelled / artist / filters), printing the add-placeholder / unprune command; `search` gains `scope`, result clicks `from_list`, not-found song pages log `song_not_found`. `search_index.py` brought in line with F9 |
+| G11 | Google's SEO starter guide: no page linked to any song page (Search Console: "Referring page: None detected", "Discovered – currently not indexed"); the homepage and three other pages had no description; dev pages were indexable | S | `feature/seo-starter-guide` | done (2026-10-27): generated A–Z page at `/songs/` linking every song, linked from the homepage; titles + descriptions on the four listed pages; `noindex` on `editor.html`, `editor-demo.html`, `tab-test.html` |
+| G12 | What can't visitors find? Zero-result searches were logged but only readable as a raw list in the dashboard | S | `feature/log-failed-search-journeys` | done (2026-10-27): `./scripts/utility search-gaps` stitches search journeys and sorts each failed search against the local index (missing / dungeon / missing take / misspelled / artist / filters), printing the add-placeholder / unprune command; `search` gains `scope`, result clicks `from_list`, not-found song pages log `song_not_found`. `search_index.py` brought in line with F9 |
 
 ### How it ships
 
@@ -183,7 +184,7 @@ headless Chromium on main (4/40) and on the branch (8/40); watch for it.
 Not fixed in the branches above, recorded so they are not lost. Each names
 the plan item it belongs with.
 
-- **Search analytics (G11, 2026-10-27)**
+- **Search analytics (G12, 2026-10-27)**
   - `search_result_click.position` has never been recorded for a search
     result: it reads `data-index`, which only draggable list rows carry, so
     it is `NaN` → `null` in every row since tracking began.
@@ -1368,3 +1369,38 @@ in order of effort: a static page per work generated at build time (e.g.
 `/songs/{slug}/` with the title, artist, lyrics and a link into the app;
 ~2.5k canon pages, or all ~19k), or moving the app to path routing with a
 404.html fallback (GitHub Pages has no rewrites). Mike's call.
+
+### G11 — Follow Google's SEO starter guide · S
+
+2026-10-27. Audit against
+https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+after the sitemap was submitted to Search Console (2,407 URLs discovered).
+Already met by G2/G7: crawlable, descriptive `/songs/` URLs, one URL per
+song (versions canonical to it), unique titles and descriptions per song,
+chart in the HTML, http/www 301 to the apex.
+
+**Gap 1: nothing linked to a song page.** Search results are `<div>`s with
+click handlers, collections link to `#search/…`, and a song page's own link
+into the app is `/#work/…` — all of it the homepage to Google. URL
+Inspection on an unindexed song showed "Referring page: None detected".
+Making search results `<a href>` would not fix that: Googlebot never runs a
+search. `build_song_pages.render_all_songs` now writes `docs/songs/index.html`
+(every song the sitemap lists, A to Z, with its writer), linked from the
+homepage's landing footer and listed in the sitemap.
+
+**Gap 2: thin heads on the hand-written pages.** The homepage title was just
+"Bluegrass Book" with no description; About, Chord Explorer and the
+Standards Board had no description and still said "Bluegrass Songbook".
+Each now has a title ending "| Bluegrass Book" and a description. Song pages
+swap the homepage's title + description for their own
+(`build_song_pages.HOME_HEAD`).
+
+**Gap 3: dev pages were indexable.** `editor.html`, `editor-demo.html` and
+`tab-test.html` now say `noindex`; a test fails if a new top-level page is
+neither listed in `STATIC_PAGES` nor noindex/canonical-elsewhere.
+
+Not code: Google wants other sites linking in (jam groups, forums, Banjo
+Hangout). Seen while building the A–Z page: "A Hundred Years From Now" by
+Flatt & Scruggs is three separate songs (`a-hundred-years-from-now`, `-2`,
+`-3`, same first line), not versions — three near-duplicate pages to Google.
+Tests: `tests/test_song_pages.py`.

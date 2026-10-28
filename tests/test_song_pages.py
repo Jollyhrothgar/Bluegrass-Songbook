@@ -275,6 +275,7 @@ def test_sitemap_lists_static_pages_and_main_versions_only(tmp_path):
     assert f"{ORIGIN}songs/salt-creek/" in locs
     assert f"{ORIGIN}songs/2393/" in locs
     assert f"{ORIGIN}songs/blue-moon-alt/" not in locs
+    assert locs[len(STATIC_PAGES)] == f"{ORIGIN}songs/"     # the A–Z page
     assert not any("wanted-song" in u or "empty-row" in u for u in locs)
     assert len(locs) == len(set(locs))
     assert all("#" not in u for u in locs)
@@ -291,15 +292,19 @@ def test_rebuild_prunes_songs_that_left_the_index(tmp_path):
     assert not (docs / "songs" / "salt-creek").exists()
     assert (docs / "songs" / "README.txt").exists()
     assert f"{ORIGIN}songs/salt-creek/" not in sitemap_locs(docs)
+    assert "/songs/salt-creek/" not in (docs / "songs" / "index.html").read_text()
 
 
 def test_rebuild_is_byte_stable_and_quiet(tmp_path):
     docs = make_docs(tmp_path, ROWS, CHARTS)
     build_song_pages(docs)
     page = docs / "songs" / "blue-moon-of-kentucky" / "index.html"
-    before = (page.read_bytes(), page.stat().st_mtime_ns, (docs / "sitemap.xml").read_bytes())
+    az = docs / "songs" / "index.html"
+    before = (page.read_bytes(), page.stat().st_mtime_ns, (docs / "sitemap.xml").read_bytes(),
+              az.read_bytes(), az.stat().st_mtime_ns)
     build_song_pages(docs)
-    after = (page.read_bytes(), page.stat().st_mtime_ns, (docs / "sitemap.xml").read_bytes())
+    after = (page.read_bytes(), page.stat().st_mtime_ns, (docs / "sitemap.xml").read_bytes(),
+             az.read_bytes(), az.stat().st_mtime_ns)
     assert before == after
 
 
@@ -323,9 +328,67 @@ def test_page_is_the_app_with_the_song_already_showing(tmp_path):
     content = html.split('<div id="song-content" class="song-content">', 1)[1]
     assert content.startswith('<article class="prerender">')
     assert "Blue moon of Kentucky keep on shining" in content.split("</article>")[0]
-    # One title, and it is the song's.
+    # One title and one description, and both are the song's.
     assert html.count("<title>") == 1
+    descriptions = re.findall(r'<meta name="description" content="([^"]*)">', html)
+    assert len(descriptions) == 1 and descriptions[0].startswith("Blue Moon of Kentucky")
     assert "Copyright concern" in html
+
+
+# The A–Z page (G11): the one page linking to every song, so a song page has a
+# referring page and isn't known to Google only through the sitemap.
+
+def test_all_songs_page_links_every_song_once_a_to_z(tmp_path):
+    docs = make_docs(tmp_path, ROWS, CHARTS)
+    build_song_pages(docs)
+    html = (docs / "songs" / "index.html").read_text()
+    assert "<title>All songs A–Z | Bluegrass Book</title>" in html
+    assert '<meta name="description" content="' in html
+    assert f'<link rel="canonical" href="{ORIGIN}songs/">' in html
+    assert "noindex" not in html
+    # Blue Moon, Numeric Id, Salt Creek: the sitemap's songs, by title.
+    assert re.findall(r'<a href="(/songs/[^"]+)"', html) == [
+        "/songs/blue-moon-of-kentucky/", "/songs/2393/", "/songs/salt-creek/"]
+    # The writer, never the scraped artist (F9): Salt Creek's "Bill Monroe"
+    # is only its artist field.
+    assert html.count("Bill Monroe") == 1 and "Elvis" not in html
+
+
+def test_all_songs_page_files_titles_under_their_first_letter(tmp_path):
+    rows = [{"id": i, "title": t, "has_content": True}
+            for i, t in (("tis", "’Tis Sweet to Be Remembered"), ("angel", "angel band"),
+                         ("ten", "10 Degrees"), ("bury", "Bury Me Beneath the Willow"))]
+    docs = make_docs(tmp_path, rows, {f"{r['id']}.pro": "[G]Hi\n" for r in rows})
+    build_song_pages(docs)
+    html = (docs / "songs" / "index.html").read_text()
+    assert re.findall(r'<a href="/songs/([^"]+)/"', html) == ["ten", "angel", "bury", "tis"]
+    headings = re.findall(r'<h2 id="([^"]+)">([^<]+)</h2>', html)
+    assert [label for _, label in headings] == ["#", "A", "B", "T"]
+    for anchor, _ in headings:                       # the letter bar jumps to each
+        assert f'href="#{anchor}"' in html
+
+
+def test_the_real_homepage_links_to_the_all_songs_page():
+    assert 'href="songs/"' in APP_TEMPLATE.read_text()
+
+
+def test_real_listed_pages_have_a_title_and_description():
+    for page in STATIC_PAGES:
+        html = (REPO_ROOT / "docs" / (page or "index.html")).read_text()
+        titles = re.findall(r"<title>([^<]+)</title>", html)
+        assert len(titles) == 1 and "Bluegrass Book" in titles[0], page
+        descriptions = re.findall(r'<meta name="description" content="([^"]+)">', html)
+        assert len(descriptions) == 1 and len(descriptions[0]) <= 160, page
+
+
+def test_real_unlisted_pages_stay_out_of_search():
+    """Every other hand-written page says noindex, or names its canonical
+    elsewhere (blog.html, a redirect)."""
+    for path in sorted((REPO_ROOT / "docs").glob("*.html")):
+        if path.name in ("index.html", "404.html") or path.name in STATIC_PAGES:
+            continue
+        html = path.read_text()
+        assert '<meta name="robots" content="noindex">' in html or 'rel="canonical"' in html, path.name
 
 
 def test_template_drift_fails_loudly():
@@ -360,7 +423,10 @@ def test_versions_live_under_their_song_and_point_at_it(tmp_path):
     for page in (version, tab):
         assert f'<link rel="canonical" href="{ORIGIN}songs/house-of-gold/">' in page
     assert 'Version 2 of <a href="/songs/house-of-gold/">House Of Gold</a>' in version
-    assert sitemap_locs(docs)[len(STATIC_PAGES):] == [f"{ORIGIN}songs/house-of-gold/"]
+    assert sitemap_locs(docs)[len(STATIC_PAGES):] == [f"{ORIGIN}songs/", f"{ORIGIN}songs/house-of-gold/"]
+    # The A–Z page lists the song once; its versions are reached from the song.
+    assert re.findall(r'<a href="(/songs/[^"]+)"', (docs / "songs" / "index.html").read_text()) \
+        == ["/songs/house-of-gold/"]
 
 
 def test_404_is_the_app_rooted_at_slash(tmp_path):

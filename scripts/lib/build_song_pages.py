@@ -10,7 +10,9 @@ writes one plain HTML page per searchable song:
                                  head and its chart pre-rendered in the song
                                  view: writer, key, chords over lyrics, tab
                                  instruments, "Recorded by"
-    docs/sitemap.xml             the static pages + every song page
+    docs/songs/index.html        every song A–Z: the page that links to them
+                                 all, linked from the homepage (G11)
+    docs/sitemap.xml             the static pages, the A–Z page + every song page
 
 Inputs are what `build_works_index.write_outputs` just wrote
 (`docs/data/index.jsonl` + `docs/data/songs/{id}.pro`), so the pages follow
@@ -57,6 +59,12 @@ STATIC_PAGES = ['', 'about.html', 'chord-explorer.html',
                 'bluegrass-standards-board.html']
 
 SONGS_DIR = 'songs'
+ALL_SONGS = f'{SONGS_DIR}/'
+ALL_SONGS_TITLE = 'All songs A–Z | Bluegrass Book'
+ALL_SONGS_DESCRIPTION = ('Every song in Bluegrass Book, A to Z: chords, lyrics and tabs '
+                         'for bluegrass, old-time and gospel standards.')
+# The homepage's own title and description, which a song page swaps for its own.
+HOME_HEAD = re.compile(r'<title>[^<]*</title>\s*<meta name="description" content="[^"]*">')
 DESCRIPTION_CHARS = 155
 # Footer credit: the first few recorders, the rest behind "and N more". A
 # famous song has dozens; a page-long roll call is the slop look F9 removes.
@@ -264,6 +272,95 @@ def _fill(template: str, old: str, new: str) -> str:
     return template.replace(old, new)
 
 
+def _landmark(template: str, pattern: re.Pattern) -> str:
+    """The text `pattern` matches in the app template, for _fill to replace."""
+    match = pattern.search(template)
+    if not match:
+        raise ValueError(f'docs/index.html: no match for {pattern.pattern!r} '
+                         '(song pages are built from it; update build_song_pages.py)')
+    return match.group(0)
+
+
+# ---------------------------------------------------------------- A–Z
+
+# Theme before first paint: the saved choice, else the OS preference. Keep in
+# step with the same script in docs/index.html.
+THEME_SCRIPT = """<script>
+        (function () {
+            var t = null;
+            try { t = localStorage.getItem('theme'); } catch (e) {}
+            if (t !== 'dark' && t !== 'light') {
+                t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            document.documentElement.setAttribute('data-theme', t);
+        })();
+    </script>"""
+
+
+def _title_key(title: str) -> str:
+    """Sort and file a title by its first letter or digit: `’Tis` under T."""
+    return re.sub(r'^\W+', '', title.casefold())
+
+
+def render_all_songs(rows: list) -> str:
+    """`songs/index.html`: every song (not its versions), A to Z, with its
+    writer. The one page that links to all of them, so a song page has a
+    referring page and isn't known to Google through the sitemap alone; the
+    homepage links here. A plain page, not the app: main.js routes only a
+    song's own path."""
+    esc = html.escape
+
+    def title(row):
+        return row.get('title') or str(row['id'])
+
+    letters = {}
+    for row in sorted(rows, key=lambda r: (_title_key(title(r)), str(r['id']))):
+        first = _title_key(title(row))[:1].upper()
+        letters.setdefault(first if first.isascii() and first.isalpha() else '#', []).append(row)
+    order = sorted(letters, key=lambda k: (k != '#', k))
+
+    def anchor(letter):
+        return 'num' if letter == '#' else letter
+
+    sections = []
+    for letter in order:
+        items = []
+        for row in letters[letter]:
+            writer = _writer(row)
+            by = f' <span class="by">{esc(writer)}</span>' if writer else ''
+            items.append(f'<li><a href="/{esc(_path(row))}">{esc(title(row))}</a>{by}</li>')
+        sections.append(f'<h2 id="{anchor(letter)}">{esc(letter)}</h2>\n<ul>\n'
+                        + '\n'.join(items) + '\n</ul>')
+    bar = ' '.join(f'<a href="#{anchor(letter)}">{esc(letter)}</a>' for letter in order)
+    count = f'{len(rows):,} song' + ('' if len(rows) == 1 else 's')
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{esc(ALL_SONGS_TITLE)}</title>
+    <meta name="description" content="{esc(ALL_SONGS_DESCRIPTION, quote=True)}">
+    <link rel="canonical" href="{ORIGIN}{ALL_SONGS}">
+    <link rel="icon" type="image/png" sizes="48x48" href="/images/favicon-48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192.png">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="stylesheet" href="/css/style.css">
+    {THEME_SCRIPT}
+</head>
+<body>
+<main class="all-songs">
+<nav><a class="all-songs-home" href="/">← Bluegrass Book</a></nav>
+<h1>All songs</h1>
+<p class="all-songs-intro">{count}, A to Z. Or <a href="/#search">search them</a>.</p>
+<p class="all-songs-letters">{bar}</p>
+{chr(10).join(sections)}
+</main>
+</body>
+</html>
+"""
+
+
 def render_page(row: dict, chordpro: str, canonical: str, template: str,
                 related: str = '') -> str:
     """The app's index.html, made into this song's page.
@@ -342,7 +439,7 @@ def render_page(row: dict, chordpro: str, canonical: str, template: str,
             f'    <script type="application/ld+json">\n{ld_json}\n    </script>')
     article = '<article class="prerender">\n' + '\n'.join(body) + '\n</article>'
 
-    page = _fill(template, '<title>Bluegrass Book</title>', head)
+    page = _fill(template, _landmark(template, HOME_HEAD), head)
     page = _fill(page, '<div id="landing-page" class="landing-page">',
                  '<div id="landing-page" class="landing-page hidden">')
     page = _fill(page, '<div id="song-view" class="song-view hidden">', '<div id="song-view" class="song-view">')
@@ -415,10 +512,11 @@ def _read_jsonl(path: Path) -> list:
 
 
 def build_song_pages(docs_dir: Path, work_dates: dict = None, page_dates: dict = None) -> dict:
-    """Write a page per song and version, docs/404.html and docs/sitemap.xml.
+    """Write a page per song and version, the A–Z page (`songs/index.html`),
+    docs/404.html and docs/sitemap.xml.
 
-    A song's page (`songs/{song}/`) is indexed and listed in the sitemap, and
-    names its versions. A version's page (`songs/{song}/{version}/`) points
+    A song's page (`songs/{song}/`) is indexed, listed in the sitemap and on
+    the A–Z page, and names its versions. A version's page (`songs/{song}/{version}/`) points
     its canonical link at the song, so Google indexes one page per song.
     404.html is the app as is (index.html carries `<base href="/">`): GitHub
     Pages serves it for any path without a page (an archived song), and
@@ -465,6 +563,7 @@ def build_song_pages(docs_dir: Path, work_dates: dict = None, page_dates: dict =
 
     written = 0
     song_urls = []
+    songs = []          # the sitemap's songs, for the A–Z page
     expected = set()
     for work_id in sorted(pages):
         row, chart = pages[work_id]
@@ -479,6 +578,7 @@ def build_song_pages(docs_dir: Path, work_dates: dict = None, page_dates: dict =
             versions = sorted(versions_of.get(work_id, []), key=_version_order)
             dated = [work_dates.get(str(r['id'])) for r in [row] + versions]
             song_urls.append((canonical, max((d for d in dated if d), default=None)))
+            songs.append(row)
             related = ('<p class="facts">Versions: '
                        + ' · '.join(link(v, _version_name(v)) for v in versions)
                        + '</p>') if versions else ''
@@ -486,6 +586,10 @@ def build_song_pages(docs_dir: Path, work_dates: dict = None, page_dates: dict =
         expected.add(target)
         if _write_if_changed(target, render_page(row, chart, canonical, template, related)):
             written += 1
+
+    all_songs = docs_dir / ALL_SONGS / 'index.html'
+    expected.add(all_songs)
+    _write_if_changed(all_songs, render_all_songs(songs))
 
     # Prune pages that left the index (renames, curation, deletions). Every
     # index.html under docs/songs is generated; anything else is left alone.
@@ -503,7 +607,9 @@ def build_song_pages(docs_dir: Path, work_dates: dict = None, page_dates: dict =
     _fill(template, '<base href="/">', '<base href="/">')   # fails loudly if it's gone
     _write_if_changed(docs_dir / '404.html', template)
 
-    urls = [(ORIGIN + p, page_dates.get(f'docs/{p or "index.html"}')) for p in STATIC_PAGES] + song_urls
+    # The A–Z page has no <lastmod>: no single commit dates its list.
+    urls = ([(ORIGIN + p, page_dates.get(f'docs/{p or "index.html"}')) for p in STATIC_PAGES]
+            + [(ORIGIN + ALL_SONGS, None)] + song_urls)
     _write_if_changed(docs_dir / 'sitemap.xml', _sitemap(urls))
     print(f"Song pages: {len(pages)} in {out_dir} ({written} written, {pruned} pruned); "
           f"sitemap.xml lists {len(urls)} URLs")
