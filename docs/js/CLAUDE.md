@@ -10,6 +10,7 @@ docs/
 ├── blog.html           # Redirect: the dev blog moved to mikebeaumier.com (G1)
 ├── robots.txt / sitemap.xml # sitemap is GENERATED with songs/ (scripts/lib/build_song_pages.py)
 ├── songs/{song}/[{version}/] # GENERATED: index.html + the pre-rendered chart (scripts/lib/build_song_pages.py)
+├── songs/index.html    # GENERATED: every song A–Z, the page that links Google to each one (G11)
 ├── 404.html            # GENERATED: index.html as is — boots the app for a song path with no page (archived)
 ├── manifest.webmanifest # PWA manifest (install, shortcuts, .tef/.otf.json file handlers)
 ├── sw.js               # Service worker — a shell around js/sw-strategy.js

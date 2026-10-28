@@ -136,6 +136,7 @@ Bluegrass-Songbook/
 │   ├── index.html           # Search UI + song editor
 │   ├── blog.html            # Redirect to the dev blog on mikebeaumier.com
 │   ├── songs/{song}/        # GENERATED per-song (and /{version}/) app page, chart pre-rendered (+ sitemap.xml, 404.html)
+│   ├── songs/index.html     # GENERATED: every song A–Z (links Google to each song page)
 │   ├── js/                  # ES modules
 │   │   ├── main.js          # Entry point, initialization, routing
 │   │   ├── shell.js         # App shell: top band, bottom band, pill primitive
