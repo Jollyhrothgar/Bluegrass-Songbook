@@ -201,7 +201,9 @@ boot-graph budget and names the modules that must stay out.
   `{list, songs, isOwner, isFollower, isOrphaned, canClaim}` (normalized in
   `normalizePublicList`); read those keys, never `is_owner` / `can_claim`.
 - Analytics (`analytics.js`) run only when `telemetry.js::telemetryEnabled()`
-  (production host, `navigator.webdriver` false), because the Supabase project is
+  (production host, `navigator.webdriver` false, and the browser not marked
+  internal: `/?internal=1` sets `localStorage['bgb-internal']`, `?internal=0`
+  clears it), because the Supabase project is
   production everywhere and local servers and crawlers counted as visitors.
   `supabase.rpc` resolves `{error}` rather than throwing, so `flush()` checks it
   and re-queues.

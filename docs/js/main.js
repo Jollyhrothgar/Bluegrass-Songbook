@@ -58,7 +58,7 @@ import { escapeHtml, escapeAttr, requireLogin, parseItemRef, buildDeleteCandidat
 import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
 import { initShell, setTopBar, setBottomBand, setOverflowBase, setOverflowLead, setChromeAutoHide, pill, setBanner, setTourInvite } from './shell.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink } from './analytics.js';
-import { telemetryEnabled } from './telemetry.js';
+import { telemetryEnabled, applyInternalParam } from './telemetry.js';
 import { initFlags, openFeedbackModal } from './flags.js';
 import { initSuperUserRequest } from './superuser-request.js';
 import { COLLECTIONS, COLLECTION_PINS, collectionThumbnailHtml } from './collections.js';
@@ -3222,6 +3222,14 @@ function init() {
     document.body.classList.toggle('dungeon-mode', dungeonMode);
 
     // Initialize analytics (early, before other modules)
+    // `/?internal=1` marks the maintainer's browser before anything is counted
+    const internal = applyInternalParam();
+    if (internal !== null) {
+        const id = localStorage.getItem('songbook-visitor-id') || 'none yet';
+        showToast(internal
+            ? `This browser no longer counts in analytics (visitor ${id})`
+            : 'This browser counts in analytics again', { duration: 8000 });
+    }
     initAnalytics();
 
     // Initialize the unified feedback modal (song flags, corrections,

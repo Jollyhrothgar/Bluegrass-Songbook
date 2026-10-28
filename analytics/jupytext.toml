@@ -1,0 +1,6 @@
+# Notebooks here are committed as percent-format Python (`# %%` cells), which
+# diffs and reviews like code. Each pairs with a local .ipynb (gitignored)
+# that holds the outputs; Jupyter keeps the two in sync on save.
+formats = "ipynb,py:percent"
+# Keep the header stable across jupytext versions.
+notebook_metadata_filter = "-jupytext.text_representation.jupytext_version"

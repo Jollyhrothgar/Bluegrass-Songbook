@@ -68,6 +68,10 @@ document, one undo history and one caret. Spec:
 - **Sections.** `wrapSelectionAsSection` (`../visual-editor/wrap-section.js`) re-sections across
   boundaries and renumbers `Verse N`.
 - **Section bar placement.** Desktop floats it beside the selection; phones dock it above the keyboard (`placeDockedBar`), because iOS draws its own Cut / Copy / Paste menu where the floating bar sat and that menu always wins.
+- **Label menu and undo toast stay in the visible area** (`index.js::visibleArea()`: below the top band, above the
+  bottom band or keyboard via `visualViewport`, and in Chords on a phone between the magnifier and the docked picker).
+  `placeLabelMenu` opens below the label; if it won't fit it first scrolls the label up (before the menu listens for
+  pointerdown, since a finger scroll closes it), then scrolls inside itself. `.le-toast` takes no taps except its Undo.
 - **Copy / cut / paste of whole sections.** Section markers are hidden widgets, so a browser copy of
   the lyrics lost them (a copied chorus pasted back as a verse). `handleCopy` (`index.js`) uses
   `section-ops.js::sectionsForClipboard`: a selection covering or crossing sections puts each touched

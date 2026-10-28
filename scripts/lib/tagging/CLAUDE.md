@@ -68,7 +68,7 @@ analytics`). `MB_PORT` defaults to 5432 in the code, so set it to 5440.
   docs/data/index.jsonl` is 0).
 - Homepage collections (`docs/js/collections.js`) use the LLM-derived tags
   `BluegrassStandard` and `Bluegrass`, not this score.
-- `analytics/grassiness_analysis.ipynb` and `analytics/bluegrass-research/`.
+- `analytics/grassiness_analysis.py` and `analytics/bluegrass-research/`.
 
 ## Gotchas
 
