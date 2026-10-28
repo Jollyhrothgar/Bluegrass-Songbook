@@ -27,7 +27,7 @@ const el = (tag, cls, html) => {
 
 /**
  * @param {object} o
- * @param {() => {key:string, keySet?:boolean, used:string[], current:string, moving:boolean}} o.getContext  read fresh on every update
+ * @param {() => {key:string, used:string[], current:string, moving:boolean}} o.getContext  read fresh on every update
  * @param {(chord:string)=>void} o.onPick       a cell, a decoration, "any chord"
  * @param {()=>void} o.onRemove
  * @param {()=>void} o.onMove                    toggles carry mode
@@ -36,14 +36,10 @@ const el = (tag, cls, html) => {
  * @param {() => HTMLElement|null} o.getStrip    a clone of the current line
  * @param {(d:{dx:number,dy:number,dt:number}|null, phase:'start'|'move'|'end')=>void} o.onGlide  the strip drag and the hold-to-trackpad drag: RAW pointer movement (the controller owns the glide point)
  * @param {()=>void} [o.onAddChordLine]
- * @param {(mode:'lyrics'|'chords'|'chordpro')=>void} [o.onMode]   the picker's mode switch (the SAME setMode as the editor header's)
  * @param {() => boolean} [o.getMagnifier]    whether the top magnifier is on (read fresh on every render)
  * @param {(on:boolean)=>void} [o.onMagnifier]  the nav row's toggle
- * @param {()=>void} [o.onUndo]
- * @param {()=>void} [o.onRedo]
- * @param {() => {undo:number, redo:number}} [o.getHistory]        drives the disabled state of the two buttons
  */
-export function createChordMenu({ getContext, onPick, onRemove, onMove, onClose, onStep, getStrip, onGlide, onAddChordLine, onMode, onUndo, onRedo, getHistory, getMagnifier, onMagnifier }) {
+export function createChordMenu({ getContext, onPick, onRemove, onMove, onClose, onStep, getStrip, onGlide, onAddChordLine, getMagnifier, onMagnifier }) {
     const root = el('div', 'chm-menu hidden');
     root.setAttribute('role', 'dialog');
     root.setAttribute('aria-label', 'Chords');
@@ -195,33 +191,11 @@ export function createChordMenu({ getContext, onPick, onRemove, onMove, onClose,
         if (magnifierOn()) { if (!strip.isConnected) root.insertBefore(strip, body); }
         else if (strip.isConnected) { strip.remove(); lastLine = null; }
 
-        // Two rows, each a FIXED height whatever the cursor holds (CSS: .chm-row1 / .chm-row2):
-        //   row 1: Key ▾ ............ Lyrics | Chords | ChordPro   (Done is gone: Lyrics does that)
+        // Two rows, each a FIXED height whatever the cursor holds (CSS: .chm-row2 / .chm-row3). The key, the mode switch
+        // and undo / redo are NOT here: they live in ONE place, the editor's bottom band (index.html #editor-band).
         //   row 2: the function line ... Move  ✕ Remove
-        //   row 3: the nav row (◀ ▲ ▼ ▶ ... ↶ ↷ magnifier)
+        //   row 3: the nav row (◀ ▲ ▼ ▶ ... magnifier)
         const head = el('div', 'chm-head');
-        const row1 = el('div', 'chm-row chm-row1');
-        // the song's key, shown, not chosen here: one key per song, changed in ONE place (the editor toolbar), and that
-        // moves the whole song. Any chord is still reachable (More roots, typing), so a real key change mid-song can be charted
-        const keySel = el('span', 'chm-key');
-        keySel.textContent = ctx.keySet === false ? 'Key: not set' : `Key of ${model.key}`;
-        keySel.title = 'The song\u2019s key. Change it in the toolbar: that moves every chord.';
-        row1.append(keySel, el('span', 'chm-sp'));
-        if (onMode) {
-            const sw = el('div', 'le-modeswitch chm-modeswitch');
-            sw.setAttribute('role', 'group');
-            sw.setAttribute('aria-label', 'Editor mode');
-            for (const [m, label] of [['lyrics', 'Lyrics'], ['chords', 'Chords'], ['chordpro', 'ChordPro']]) {
-                const b = el('button', m === 'chords' ? 'on' : '', label);   // the picker is only on screen in Chords mode
-                b.type = 'button';
-                b.dataset.pickerMode = m;
-                b.setAttribute('aria-pressed', String(m === 'chords'));
-                b.addEventListener('click', () => onMode(m));
-                sw.appendChild(b);
-            }
-            row1.appendChild(sw);
-        }
-        head.appendChild(row1);
 
         const row2 = el('div', 'chm-row chm-row2');
         if (model.func) {
@@ -252,25 +226,12 @@ export function createChordMenu({ getContext, onPick, onRemove, onMove, onClose,
         }
         head.appendChild(row2);
 
-        // ONE nav row, the same in split and side: ◀ ▲ ▼ ▶ ... ↶ ↷ [magnifier]. Every target is 40px.
+        // ONE nav row, the same in split and side: ◀ ▲ ▼ ▶ ... [magnifier]. Every target is 40px.
         const row3 = el('div', 'chm-row chm-row3 chm-nav');
         row3.append(
             arrow('chm-prev', '◀', 'Previous spot', 'prev'), arrow('chm-up', '▲', 'Line above', 'up'),
             arrow('chm-down', '▼', 'Line below', 'down'), arrow('chm-next', '▶', 'Next spot', 'next'),
             el('span', 'chm-sp'));
-        if (onUndo || onRedo) {
-            const h = getHistory?.() || { undo: 0, redo: 0 };
-            const hb = (cls, glyph, label, fn, n) => {
-                const b = el('button', `chm-hist ${cls}`, glyph);
-                b.type = 'button';
-                b.setAttribute('aria-label', label);
-                b.title = label;
-                b.disabled = n === 0;
-                b.addEventListener('click', () => fn?.());
-                return b;
-            };
-            row3.append(hb('chm-undo', '↶', 'Undo', onUndo, h.undo), hb('chm-redo', '↷', 'Redo', onRedo, h.redo));
-        }
         if (onMagnifier) {
             const mg = el('button', `chm-mag${magnifierOn() ? ' on' : ''}`,
                 '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="M15 15l6 6"/></svg>');

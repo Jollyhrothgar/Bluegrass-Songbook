@@ -3,7 +3,7 @@
 // editor) or the #add deep link (straight to the editor).
 import { test, expect } from './fixtures.js';
 import { gotoSearch, navClick } from './helpers.js';
-import { CM, setLead, leadText, leadReady } from './helpers/lead-editor.js';
+import { CM, setLead, leadText, leadReady, openDisplay } from './helpers/lead-editor.js';
 
 // Open a fresh new-song editor via the top-band flow
 async function openAddSongEditor(page) {
@@ -438,6 +438,7 @@ test.describe('Editor Nashville Mode', () => {
         await setLead(page, '{key: G}\n[G]Test [C]line [D]here');
         await page.waitForTimeout(300);
 
+        await openDisplay(page);                                   // the band's Display pill
         const toggle = page.locator('#editor-nashville');
         await expect(toggle).toBeVisible();
         await toggle.click();

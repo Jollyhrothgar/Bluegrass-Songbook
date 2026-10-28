@@ -16,6 +16,7 @@ import { trackEditor, trackSubmission } from './analytics.js';
 import { showToast } from './toast.js';
 // Note: refreshPendingSongs is accessed via window.refreshPendingSongs to avoid circular import
 import { mountLeadEditor } from './lead-editor/index.js';
+import { pill, setBottomBand } from './shell.js';
 import { currentSongKey, keyShift, withKey } from './lead-editor/doc-model.js';
 import { diffChange } from './lead-editor/section-ops.js';
 import { parseSong, serializeSong } from './visual-editor/model.js';
@@ -563,7 +564,7 @@ function updateEditorKeySelect(detectedKey) {
         editorKeySelectEl.innerHTML = '';
         const placeholder = document.createElement('option');
         placeholder.value = '';
-        placeholder.textContent = 'Key: not set';
+        placeholder.textContent = 'Key: –';
         editorKeySelectEl.appendChild(placeholder);
         for (const k of [...CHROMATIC_MAJOR_KEYS, ...CHROMATIC_MINOR_KEYS]) {
             const opt = document.createElement('option');
@@ -710,8 +711,37 @@ function editorDisplayChord(chord) {
 }
 
 /** Reflect the mode on the switch buttons and the phone Source | Preview toggle. */
+/**
+ * The editor's controls live in ONE place on every device: the app shell's bottom band (`#editor-band`: mode, undo /
+ * redo, the key, Display). main.js calls this whenever the editor view shows; leaving the view clears the band, which
+ * DETACHES the element (kept here, so its listeners and state survive for the next visit). The Display pill takes
+ * `#editor-display-options` (text size, Nashville, paste cleanup) into its popover on first open.
+ */
+let editorBandEl = null;
+let editorDisplayPill = null;
+export function showEditorBand() {
+    editorBandEl ||= document.getElementById('editor-band');
+    if (!editorBandEl) return;
+    if (!editorDisplayPill) {
+        const options = document.getElementById('editor-display-options');
+        editorDisplayPill = pill('Aa', (container) => { if (options) container.appendChild(options); },
+            { id: 'editor-display-pill', title: 'Display: text size, Nashville numbers, paste cleanup', className: 'editor-display-pill' });
+        editorDisplayPill.querySelector('.pill-btn')?.setAttribute('aria-label', 'Display');
+        document.getElementById('editor-display-slot')?.replaceWith(editorDisplayPill);
+    }
+    editorBandEl.hidden = false;
+    setBottomBand(editorBandEl);
+}
+
+/** The mode buttons may be detached (the band is cleared when the editor is not on screen), so look in the band too. */
+function bandQueryAll(sel) {
+    const found = new Set(document.querySelectorAll(sel));
+    editorBandEl?.querySelectorAll(sel).forEach((b) => found.add(b));
+    return [...found];
+}
+
 function syncModeChrome(mode, showPreview) {
-    document.querySelectorAll('[data-lead-mode]').forEach((b) => {
+    bandQueryAll('[data-lead-mode]').forEach((b) => {
         const on = b.dataset.leadMode === mode;
         b.classList.toggle('on', on);
         b.setAttribute('aria-pressed', String(on));

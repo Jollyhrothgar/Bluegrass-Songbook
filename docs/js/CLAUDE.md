@@ -95,7 +95,9 @@ quick-controls bar, or bottom sheet anymore:
   per-page action buttons, theme toggle, and an overflow (⋯) menu.
   Pages declare their chrome with `setTopBar({ back, title, actions, overflow, navActive })`.
 - **Bottom band** (`.app-bottomband`): the one home for practice/playback
-  controls (tab player transport, track mixer, ABC controls). Mount content
+  controls (tab player transport, track mixer, ABC controls) and, in the
+  lead-sheet editor, the editor's controls (`#editor-band`: mode, undo / redo,
+  key, Display; `editor.js::showEditorBand`). Mount content
   with `setBottomBand(el)`; pass `null` to hide it. Its height is NOT a
   constant — the phone tab strip is 65px, a wrapped desktop band is 88px —
   so shell.js publishes the measured height as `--bottomband-h` on
@@ -521,7 +523,8 @@ The song page's controls are pills in a single pill row, built by
 ONE CodeMirror 6 view whose document is the ChordPro text (`lead-editor/`, see
 its CLAUDE.md; CodeMirror is vendored in `docs/vendor/codemirror.js`, rebuilt by
 `./scripts/vendor-codemirror`). Three explicit modes over the same document,
-switched by `Lyrics | Chords | ChordPro` in the editor header and remembered
+switched by `Lyrics | Chords | ChordPro` in the editor's controls band (the app's bottom band, with undo / redo, the
+key and Display: ONE place on every device, see `lead-editor/CLAUDE.md`) and remembered
 per device (`localStorage['bgb-lead-mode']`); a new empty song always opens in
 Lyrics. Each mode does one job:
 

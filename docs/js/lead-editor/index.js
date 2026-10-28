@@ -286,7 +286,6 @@ export function mountLeadEditor({ host, hooks = {} }) {
             const a = boxChord(text, box);
             return {
                 key: menuKey(text),
-                keySet: !!currentSongKey(text).key,     // false: no key yet, the rows show G's chords until one is chosen
                 used: [...new Set(extractChords(text))],
                 current: a?.chord || '',
                 moving: moving && !!a,
@@ -296,10 +295,6 @@ export function mountLeadEditor({ host, hooks = {} }) {
         onRemove: () => removeChord(),
         onMove: () => toggleMove(),
         onClose: () => setMode('lyrics'),
-        onMode: (m) => setMode(m),
-        onUndo: () => { editor.undo(); },
-        onRedo: () => { editor.redo(); },
-        getHistory: () => editor.history(),
         onStep: (dir) => stepBox(dir),
         onGlide: (moves, phase) => onGlide(moves, phase),
         onAddChordLine: () => addChordLine(),
@@ -419,6 +414,9 @@ export function mountLeadEditor({ host, hooks = {} }) {
     function visibleGap() {
         let top = topInset() + DOCK_MARGIN;
         let bottom = window.innerHeight - DOCK_MARGIN;
+        // the app's bottom band holds the editor's controls (on every device): nothing is readable behind it
+        const band = document.getElementById('app-bottomband');
+        if (band && !band.classList.contains('hidden')) bottom = Math.min(bottom, band.getBoundingClientRect().top - DOCK_MARGIN);
         if (menu.isOpen && mode === 'chords' && menu.layout === 'split') {
             const { strip, body } = menu.parts;
             if (menu.magnifier) top = Math.max(top, strip.getBoundingClientRect().bottom + DOCK_MARGIN);
@@ -1167,7 +1165,10 @@ export function mountLeadEditor({ host, hooks = {} }) {
     const dockedBar = () => !!window.matchMedia?.('(pointer: coarse)').matches;
     function placeDockedBar() {
         const vv = window.visualViewport;
-        const below = vv ? Math.max(0, window.innerHeight - (vv.offsetTop + vv.height)) : 0;   // the keyboard (and its bar)
+        const kb = vv ? Math.max(0, window.innerHeight - (vv.offsetTop + vv.height)) : 0;   // the keyboard (and its bar)
+        const band = document.getElementById('app-bottomband');
+        const bandH = band && !band.classList.contains('hidden') ? band.offsetHeight : 0;
+        const below = Math.max(kb, bandH);                         // above the keyboard, or above the controls band when it is down
         sel.style.left = '';
         sel.style.top = '';
         sel.style.setProperty('--le-selbar-bottom', `${Math.round(below + 8)}px`);

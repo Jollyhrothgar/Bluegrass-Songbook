@@ -7,6 +7,15 @@ import { expect } from '@playwright/test';
 
 export const CM = '#editor-lead .cm-content';
 export const SHEET = '.chm-menu';
+/** The editor's controls: ONE band at the bottom of the screen on every device (index.html #editor-band). */
+export const BAND = '#app-bottomband #editor-band';
+
+/** Open the band's Display pill (text size, Nashville, paste cleanup), once: its options live in the popover. */
+export async function openDisplay(page) {
+    const pop = page.locator('#editor-display-pill .pill-popover');
+    if (!(await pop.isVisible())) await page.locator('#editor-display-pill .pill-btn').click();
+    await pop.waitFor({ state: 'visible' });
+}
 
 /**
  * Old Home Place as the tests were written against it: a FROZEN copy (docs/js/__tests__/fixtures/old-home-place.pro).
