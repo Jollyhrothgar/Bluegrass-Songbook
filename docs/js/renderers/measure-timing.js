@@ -250,7 +250,11 @@ export function expandNotation(notation, timeline) {
     const out = [];
     for (const { display, original } of timeline) {
         const src = byMeasure.get(original) || { events: [] };
-        out.push({ ...src, measure: display, originalMeasure: original });
+        // The repeat signs, endings and jump marks of the written score
+        // (attachOtfDecorations) say "go back"; an unrolled score has
+        // already gone back. The end bar is just a barline and stays.
+        const { repeatStart, repeatEnd, ending, endingStart, jump, ...rest } = src;
+        out.push({ ...rest, measure: display, originalMeasure: original });
     }
     return out;
 }
@@ -405,10 +409,13 @@ export function analyzeReadingList(readingList) {
  * Annotate original (written-measure) notation with repeatStart/repeatEnd/
  * ending flags for compact display with repeat signs.
  */
-export function prepareCompactNotation(notation, readingList) {
+export function prepareCompactNotation(notation, readingList, measureMarks = null) {
     if (!readingList || readingList.length === 0) {
         return notation;
     }
+    // A file that carries its own repeat signs (measure_marks) draws those,
+    // as TablEdit does; the reading list only fills in for files without.
+    if (marksDrawRepeats(measureMarks)) return notation;
     const analysis = analyzeReadingList(readingList);
     return notation.map(measure => {
         const m = measure.measure;
@@ -427,6 +434,38 @@ export function prepareCompactNotation(notation, readingList) {
 }
 
 /**
+ * True when the document's measure_marks hold repeat starts/ends or numbered
+ * endings (a file with only ending 7, an end bar or raw bytes still gets its
+ * repeat signs derived from the reading list).
+ */
+export function marksDrawRepeats(measureMarks) {
+    return !!measureMarks && measureMarks.some(m => m.repeat_start || m.repeat_end || m.ending);
+}
+
+/**
+ * Display fields (repeatStart, repeatEnd, ending, endingStart, endBar, jump)
+ * for each marked measure, from otf.measure_marks. A numbered ending starts a
+ * bracket unless the measure before carries the same number.
+ */
+function markDisplayByMeasure(measureMarks) {
+    const byMeasure = new Map((measureMarks || []).map(m => [m.measure, m]));
+    const out = new Map();
+    for (const [measure, e] of byMeasure) {
+        const f = {};
+        if (e.repeat_start) f.repeatStart = true;
+        if (e.repeat_end) f.repeatEnd = true;
+        if (e.ending) {
+            f.ending = e.ending;
+            if (byMeasure.get(measure - 1)?.ending !== e.ending) f.endingStart = true;
+        }
+        if (e.end_bar) f.endBar = true;
+        if (e.jump) f.jump = e.jump;
+        if (Object.keys(f).length) out.set(measure, f);
+    }
+    return out;
+}
+
+/**
  * Attach display decorations from the OTF document onto a track's
  * notation entries (display copy — the document itself is untouched):
  *
@@ -434,6 +473,9 @@ export function prepareCompactNotation(notation, readingList) {
  *              from otf.annotations, grouped per written measure
  * - `section`: reading-list entry names ("Intro", "Part A1") on each
  *              range's first measure — TablEdit prints them there
+ * - `repeatStart`/`repeatEnd`/`ending`/`endingStart`/`endBar`/`jump`: the
+ *              stored repeat signs (otf.measure_marks); expandNotation drops
+ *              all but `endBar` when it unrolls the score
  *
  * Call AFTER densifyNotation (annotations may target silent measures —
  * Welcome to New York m30-31 carry the "...solo" texts) and BEFORE
@@ -443,7 +485,8 @@ export function prepareCompactNotation(notation, readingList) {
 export function attachOtfDecorations(notation, otf) {
     const anns = otf?.annotations || [];
     const named = (otf?.reading_list || []).filter(e => e.name);
-    if (!anns.length && !named.length) return notation;
+    const marks = markDisplayByMeasure(otf?.measure_marks);
+    if (!anns.length && !named.length && !marks.size) return notation;
     const textsByMeasure = new Map();
     for (const a of anns) {
         if (!textsByMeasure.has(a.measure)) textsByMeasure.set(a.measure, []);
@@ -458,8 +501,9 @@ export function attachOtfDecorations(notation, otf) {
     return notation.map(m => {
         const texts = textsByMeasure.get(m.measure);
         const section = sectionByMeasure.get(m.measure);
-        if (!texts && !section) return m;
-        const out = { ...m };
+        const markFields = marks.get(m.measure);
+        if (!texts && !section && !markFields) return m;
+        const out = { ...m, ...markFields };
         if (texts) out.texts = texts;
         if (section) out.section = section;
         return out;

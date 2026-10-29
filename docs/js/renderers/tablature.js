@@ -938,13 +938,15 @@ export class TabRenderer {
      */
     static REPEAT_START_WIDTH = 14;
     static REPEAT_END_WIDTH = 12;
+    static END_BAR_WIDTH = 8;
 
     _adornmentsFor(measure, signatureMark) {
         const repeatLead = measure.repeatStart ? TabRenderer.REPEAT_START_WIDTH : 0;
         const sigLead = signatureMark ? this._sigInset(signatureMark) : 0;
         return {
             leading: repeatLead + sigLead,
-            trailing: measure.repeatEnd ? TabRenderer.REPEAT_END_WIDTH : 0,
+            trailing: measure.repeatEnd ? TabRenderer.REPEAT_END_WIDTH
+                : (measure.endBar ? TabRenderer.END_BAR_WIDTH : 0),
             sigX: repeatLead,
         };
     }
@@ -1189,6 +1191,8 @@ export class TabRenderer {
             if (measure.repeatEnd && mi < measures.length - 1) {
                 const endX = x + measureWidth;
                 this.drawRepeatEndBarline(svg, endX, opt.topMargin, stringsBottom, opt);
+            } else if (measure.endBar && mi < measures.length - 1) {
+                this.drawEndBarline(svg, x + measureWidth, opt.topMargin, stringsBottom, opt);
             }
 
             // Draw ONE ending bracket per contiguous run of same-numbered
@@ -1206,6 +1210,14 @@ export class TabRenderer {
                 // later rows draw the bracket line without re-stamping "N."
                 this.drawEndingBracket(svg, x, runWidth, opt.topMargin, measure.ending,
                     opt, !!measure.endingStart);
+            }
+
+            // Jump mark (Signo / Da Signo / Coda / Al Coda), right-aligned
+            // on the measure-number baseline so it can't meet the ending
+            // bracket above it or the section label above that.
+            if (measure.jump) {
+                this.drawJumpMark(svg, x + measureWidth - 4 - this._adornmentsFor(measure, null).trailing, opt.topMargin - 8,
+                    measure.jump, opt, measure.measure);
             }
 
             // Time-signature glyph at signature changes (and measure 1)
@@ -1433,6 +1445,8 @@ export class TabRenderer {
         const finalMeasure = measures[measures.length - 1];
         if (finalMeasure && finalMeasure.repeatEnd) {
             this.drawRepeatEndBarline(svg, endX, opt.topMargin, stringsBottom, opt);
+        } else if (finalMeasure && finalMeasure.endBar) {
+            this.drawEndBarline(svg, endX, opt.topMargin, stringsBottom, opt);
         } else {
             const endBar = this.createLine(endX, opt.topMargin, endX, stringsBottom, opt.measureLineColor);
             svg.appendChild(endBar);
@@ -1954,6 +1968,44 @@ export class TabRenderer {
 
         // Thick bar
         svg.appendChild(this.createRect(x - 3, topY, 3, bottomY - topY, opt.measureLineColor));
+    }
+
+    /**
+     * Draw an end bar (thin, then thick): a repeat end without the dots.
+     */
+    drawEndBarline(svg, x, topY, bottomY, opt) {
+        const thin = this.createLine(x - 6, topY, x - 6, bottomY, opt.measureLineColor);
+        thin.setAttribute('class', 'end-bar');
+        svg.appendChild(thin);
+        const thick = this.createRect(x - 3, topY, 3, bottomY - topY, opt.measureLineColor);
+        thick.setAttribute('class', 'end-bar');
+        svg.appendChild(thick);
+    }
+
+    /**
+     * Draw a jump mark. Signo and Coda are SMuFL glyphs when Bravura is
+     * loaded (the Unicode 𝄋 𝄌 are missing from many phone fonts, so the
+     * fallback is the word); Da Signo and Al Coda are the usual text.
+     */
+    drawJumpMark(svg, x, y, jump, opt, measureNumber) {
+        const bravura = TabRenderer._bravuraReady;
+        const spec = {
+            'signo': bravura ? { text: '\uE047', bravura: true } : { text: 'Segno' },
+            'coda': bravura ? { text: '\uE048', bravura: true } : { text: 'Coda' },
+            'da-signo': { text: 'D.S.' },
+            'al-coda': { text: 'To Coda' },
+        }[jump];
+        if (!spec) return;
+        const label = this.createText(x, y, spec.text, {
+            fontSize: spec.bravura ? '18px' : '10px',
+            fill: opt.fretColor,
+            fontWeight: spec.bravura ? '400' : '700',
+            textAnchor: 'end',
+        });
+        if (spec.bravura) label.setAttribute('font-family', 'Bravura');
+        label.setAttribute('class', `jump-mark jump-${jump}`);
+        label.setAttribute('data-measure', measureNumber);
+        svg.appendChild(label);
     }
 
     /**

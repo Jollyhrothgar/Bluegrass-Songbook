@@ -10,7 +10,7 @@ because it isolates one thing (copied 2026-10-29; ids are the site ids):
                    0x01 in one measure OR into 0x81).
   marks_v2_21612   Wild Horse: the same 0x40 / 0x81 / 0x0a shape in V2.
   marks_v2_21420   a lone 0x08 end bar in V2.
-  marks_v2_22933   Soldier's Joy: one of the 7 files whose repeats are ONLY
+  marks_only_22933 Soldier's Joy: one of the 7 files whose repeats are ONLY
                    barlines (no stored reading list).
   marks_v2_24144   Huckleberry Hornpipe: 11 records, 9 entries.
   marks_v2_17542   ending 7 ("unspecified"): draws nothing, raw keeps it.
@@ -44,7 +44,7 @@ EXPECTED = {
         (3, [(1, 0x40), (8, 0x81), (9, 0x0a)]),
     "marks_v2_21420_lone_end_bar.tef":
         (2, [(1, 0x40), (8, 0x08)]),
-    "marks_v2_22933_soldiers_joy.tef":
+    "marks_only_banjo_22933_soldiers_joy.tef":
         (4, [(1, 0x40), (8, 0x80), (9, 0x40), (16, 0x80)]),
     "marks_v2_24144_huckleberry_hornpipe.tef":
         (11, [(1, 0x40), (4, 0x81), (5, 0x02), (6, 0x40), (9, 0x81),
@@ -100,7 +100,7 @@ def test_lone_end_bar(name, measure):
 
 
 @pytest.mark.parametrize("name", [
-    "marks_v3_27159_cumberland_gap.tef", "marks_v2_22933_soldiers_joy.tef"])
+    "marks_v3_27159_cumberland_gap.tef", "marks_only_banjo_22933_soldiers_joy.tef"])
 def test_repeat_start_and_end_pair(name):
     _, marks = _marks(name)
     assert marks[0] == {"measure": 1, "repeat_start": True, "raw": 0x40}
@@ -124,7 +124,7 @@ def test_unspecified_ending_keeps_raw_and_models_nothing():
 
 
 def test_marks_only_file_has_no_reading_list():
-    tef = TEFReader(str(FIX / "marks_v2_22933_soldiers_joy.tef")).parse()
+    tef = TEFReader(str(FIX / "marks_only_banjo_22933_soldiers_joy.tef")).parse()
     d = tef_to_otf(tef).to_dict()
     assert "reading_list" not in d and d["measure_marks"]
 
@@ -180,3 +180,18 @@ def test_corpus_every_mark_record_is_kept():
         total_records += records
         total_entries += len(got)
     assert total_records > 500 and total_entries <= total_records
+
+
+# The 7 files whose repeats are ONLY barlines (frozen copies, 2026-10-29).
+MARKS_ONLY = sorted(p.name for p in FIX.glob("marks_only_*.tef"))
+
+
+def test_the_seven_marks_only_files_are_all_here():
+    assert len(MARKS_ONLY) == 7
+
+
+@pytest.mark.parametrize("name", MARKS_ONLY)
+def test_marks_only_file_keeps_its_marks_and_has_no_reading_list(name):
+    d = tef_to_otf(TEFReader(str(FIX / name)).parse()).to_dict()
+    assert "reading_list" not in d
+    assert any("repeat_end" in m or "end_bar" in m for m in d["measure_marks"])

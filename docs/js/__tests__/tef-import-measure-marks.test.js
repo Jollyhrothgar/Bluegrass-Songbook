@@ -23,7 +23,7 @@ const EXPECTED = {
     'marks_v3_25911_golden_slippers.tef': [5, [[2, 0x40], [9, 0x81], [10, 0x0a]]],
     'marks_v2_21612_wild_horse.tef': [3, [[1, 0x40], [8, 0x81], [9, 0x0a]]],
     'marks_v2_21420_lone_end_bar.tef': [2, [[1, 0x40], [8, 0x08]]],
-    'marks_v2_22933_soldiers_joy.tef': [4, [[1, 0x40], [8, 0x80], [9, 0x40], [16, 0x80]]],
+    'marks_only_banjo_22933_soldiers_joy.tef': [4, [[1, 0x40], [8, 0x80], [9, 0x40], [16, 0x80]]],
     'marks_v2_24144_huckleberry_hornpipe.tef':
         [11, [[1, 0x40], [4, 0x81], [5, 0x02], [6, 0x40], [9, 0x81], [10, 0x02],
               [11, 0x40], [14, 0x81], [15, 0x02]]],
@@ -71,7 +71,7 @@ describe('measure_marks import', () => {
     });
 
     it('a 0x40 / 0x80 pair is a repeat start and end', () => {
-        for (const name of ['marks_v3_27159_cumberland_gap.tef', 'marks_v2_22933_soldiers_joy.tef']) {
+        for (const name of ['marks_v3_27159_cumberland_gap.tef', 'marks_only_banjo_22933_soldiers_joy.tef']) {
             const [a, b] = load(name).doc.measure_marks;
             expect(a).toEqual({ measure: 1, repeat_start: true, raw: 0x40 });
             expect(b.repeat_end).toBe(true);
@@ -92,7 +92,7 @@ describe('measure_marks import', () => {
     });
 
     it('a marks-only file has no reading list', () => {
-        const { doc } = load('marks_v2_22933_soldiers_joy.tef');
+        const { doc } = load('marks_only_banjo_22933_soldiers_joy.tef');
         expect(doc.reading_list).toBeUndefined();
         expect(doc.measure_marks.length).toBe(4);
     });

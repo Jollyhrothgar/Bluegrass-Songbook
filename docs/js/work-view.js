@@ -2566,7 +2566,7 @@ async function renderTablaturePart(part, container) {
             // target silent measures).
             notation = attachOtfDecorations(notation, otf);
             if (showRepeatsCompact && otf.reading_list && otf.reading_list.length > 0) {
-                notation = prepareCompactNotation(notation, otf.reading_list);
+                notation = prepareCompactNotation(notation, otf.reading_list, otf.measure_marks);
             } else if (otf.reading_list && otf.reading_list.length > 0) {
                 notation = expandNotation(notation, timings.playbackTimeline);
             }
