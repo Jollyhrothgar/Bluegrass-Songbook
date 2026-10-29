@@ -703,7 +703,7 @@ class TestOwnership:
 def otf_doc(track_id='banjo', fret=0, **extra):
     doc = {
         'otf_version': '1.0',
-        'metadata': {'title': 'Salt Creek'},
+        'metadata': {'title': 'Salt Creek', 'time_signature': '4/4', 'tempo': 120},
         'timing': {'ticks_per_beat': 480},
         'tracks': [{
             'id': track_id,
@@ -959,7 +959,7 @@ class TestTablatureValidation:
     def test_a_fret_past_the_end(self):
         doc = otf_doc()
         doc['notation']['banjo'][0]['events'][0]['notes'][0]['f'] = 99
-        assert any('bad fret' in p for p in validate_otf(doc))
+        assert any('notes/0/f:' in p for p in validate_otf(doc))
 
     def test_an_invalid_otf_is_refused_before_anything_is_written(self, tmp_path):
         doc = otf_doc()

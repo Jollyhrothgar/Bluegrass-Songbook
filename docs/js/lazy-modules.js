@@ -46,6 +46,7 @@ export const LAZY_MODULE_URLS = [
     './js/otf-editor/facade.js',
     './js/otf-editor/keyboard.js',
     './js/otf-editor/menu-bar.js',
+    './js/otf-editor/otf-validate.js',
     './js/otf-editor/pitch.js',
     './js/otf-editor/popover.js',
     './js/otf-editor/recorder.js',

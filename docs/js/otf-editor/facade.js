@@ -112,7 +112,7 @@ function assertLeftHand(digit) {
 }
 
 // ----------------------------------------------------------------------
-// TablEdit's note effects and grace notes — DESIGN.md "interface Note".
+// TablEdit's note effects and grace notes — docs/schema/otf.md.
 //
 // Like the fingering alphabets, these are the TEF importer's vocabulary
 // (`docs/js/tef-import/otf.js` FX_ORDER / GRACE_KINDS, decoded from

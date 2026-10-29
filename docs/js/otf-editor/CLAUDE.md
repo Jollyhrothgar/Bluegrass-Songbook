@@ -1,9 +1,15 @@
 # OTF Editor
 
+**The file format is `docs/schema/otf.schema.json`** (field guide:
+`docs/schema/otf.md`). `validateOTF` (`otf-validate.js`, re-exported from
+`actions.js`) is its hand-written JS validator; Python's is
+`scripts/lib/otf_schema.py`. A new allowed value (effect, technique, ...) goes in
+the schema first; the fence tests in `__tests__/otf-editor/otf-validate.test.js`
+and `tests/test_otf_schema.py` fail until every copy matches.
+
 The in-browser tablature editor for OpenTabFormat (OTF) files. It ships.
-`DESIGN.md` describes what the editor does and the OTF document format; its
-`interface Note` section (`fx`, `grace`) is the format reference that code
-comments cite, and Help ▸ About opens it for users. Input-model plan:
+`DESIGN.md` describes what the editor does (the OTF document format is
+`docs/schema/otf.md`, which code comments cite), and Help ▸ About opens it for users. Input-model plan:
 `docs/plans/tab-editor-input-parity.md`.
 
 ```bash
@@ -164,7 +170,7 @@ key bindings.
   key order differs (Banjo Hangout tab 27493, fixture
   `docs/data/tabs/27493_tef.otf.json`, used by `facade-27493.test.js`: `notation`
   keys are guitar/bass/banjo/mandolin, `tracks[]` is guitar/bass/mandolin/banjo). Dropping a key makes `validate_otf`
-  (`scripts/lib/process_pending.py`) reject "track X: no notation".
+  (`scripts/lib/process_pending.py`) reject `[notation_keys]`.
 - Duplicate ids are refused (popover disables Save; facade throws as backstop).
   `sanitizeTrackId` strips `< > & " ' \` and control characters because the
   renderer puts a track id into innerHTML unescaped.

@@ -1,5 +1,10 @@
 # Banjo Hangout and the Hangout network
 
+**The OTF format the converter writes is `docs/schema/otf.schema.json`** (field guide:
+`docs/schema/otf.md`). `tef_parser/otf.py` and `docs/js/tef-import/otf.js` own the
+`FX_ORDER` / `GRACE_KINDS` / `V3_PLUCK_LETTERS` copies; tests fail if they drift
+from the schema's enums. Validate with `scripts/lib/otf_schema.py` (`check(doc)`).
+
 Banjo tablature from banjohangout.org, in TablEdit's TEF binary format. The
 code in `src/` also drives four sibling sites (fiddle-, flatpicker-,
 mandolin-, reso-hangout); they have no CLAUDE.md of their own, so this file

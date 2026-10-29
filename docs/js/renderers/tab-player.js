@@ -216,7 +216,7 @@ export function bendWaypoints(semitones, noteDurSec) {
 
 // ---------------------------------------------------------------------------
 // TablEdit note effects (`note.fx`) and grace notes (`note.grace`), fix-it A15.
-// The format is docs/js/otf-editor/DESIGN.md "interface Note". Every helper
+// The format is docs/schema/otf.md. Every helper
 // below is pure; play() only collects, calls them, and queues the result.
 // ---------------------------------------------------------------------------
 

@@ -1246,7 +1246,7 @@ export const ACTIONS = {
     // for a bend; vim keeps `a b`.
     'effect.bend': techAction('b', 'Bend target'),
 
-    // TablEdit's note effects (`fx`, a set — DESIGN.md "interface Note").
+    // TablEdit's note effects (`fx`, a set — docs/schema/otf.md).
     // Each key is a TOGGLE: pressing it again takes the effect off.
     'effect.brush': fxAction('brush', 'Brush'),
     'effect.roll': fxAction('roll', 'Roll'),

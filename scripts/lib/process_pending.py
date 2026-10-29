@@ -235,6 +235,7 @@ from pathlib import Path
 from typing import Optional
 
 import dedup_scorer
+import otf_schema
 import works_writer
 from work_schema import slugify
 
@@ -962,51 +963,18 @@ def apply_placeholder_row(repo_root, row: dict, mode: str, work_id: str,
 
 
 def validate_otf(otf) -> list:
-    """Sanity checks — returns a list of problems (empty = OK).
+    """Problems with an incoming OTF, as strings (empty = OK).
 
-    Moved here from the retired ``scripts/lib/process_tab.py`` unchanged.
-    It is the ONLY structural validation an incoming OTF gets: the edge
-    function asks no more than "does this parse and have tracks?", because
-    everything below needs to walk the notation, and the editor that
-    produced the document is not a party this pipeline trusts.
+    The format is ``docs/schema/otf.schema.json`` plus the cross-field rules a
+    schema cannot say; both live in :mod:`otf_schema`, which is also what the
+    corpus test and the conformance fixtures run. Warnings (a reading list that
+    overruns, #263) are not problems and are not returned here.
+
+    This is the ONLY structural validation an incoming OTF gets: the edge
+    function asks no more than "does this parse and have tracks?", and the
+    editor that produced the document is not a party this pipeline trusts.
     """
-    problems = []
-    if not isinstance(otf, dict):
-        return ['not an object']
-    tracks = otf.get('tracks')
-    if not isinstance(tracks, list) or not tracks:
-        problems.append('no tracks')
-        return problems
-    notation = otf.get('notation') or {}
-    for t in tracks:
-        tid = t.get('id')
-        if not tid:
-            problems.append('track without id')
-            continue
-        if not isinstance(t.get('tuning'), list) or len(t['tuning']) < 3:
-            problems.append(f'track {tid}: bad tuning')
-        measures = notation.get(tid)
-        if not isinstance(measures, list):
-            problems.append(f'track {tid}: no notation')
-            continue
-        nstrings = len(t.get('tuning') or [])
-        for m in measures:
-            if not isinstance(m.get('measure'), int):
-                problems.append(f'track {tid}: measure without number')
-                break
-            for e in m.get('events', []):
-                if not isinstance(e.get('tick'), int) or e['tick'] < 0:
-                    problems.append(f'track {tid} m{m.get("measure")}: bad tick')
-                    break
-                for n in e.get('notes', []):
-                    s, f = n.get('s'), n.get('f')
-                    if not (isinstance(s, int) and 1 <= s <= nstrings):
-                        problems.append(f'track {tid} m{m.get("measure")}: bad string {s}')
-                        break
-                    if not (isinstance(f, int) and 0 <= f <= 24):
-                        problems.append(f'track {tid} m{m.get("measure")}: bad fret {f}')
-                        break
-    return problems
+    return otf_schema.check(otf)[0]
 
 
 def otf_document(row: dict) -> tuple:
