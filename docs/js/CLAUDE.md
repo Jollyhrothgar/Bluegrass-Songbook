@@ -21,6 +21,11 @@ npm run test:e2e      # Playwright; starts its own server on 8137 (e2e/CLAUDE.md
 `__tests__/setup-webstorage.js` undoes Node 25's empty global `localStorage`
 shadowing jsdom's, so unit tests pass on any Node.
 
+A test of the code reads a frozen copy of a song (`__tests__/fixtures/`), never
+the live one: `works/` is edited from the site, and an edit to Old Home Place
+broke CI for hours (#320). Live songs are only for smoke tests that catch
+problems in the data (Mike, 2026-10-28; `.claude/rules/tests.md`).
+
 ## Orientation
 
 - `state.js`: reactive state. `subscribe(name, fn)` notifies a frame later
@@ -174,7 +179,12 @@ boot-graph budget and names the modules that must stay out.
   `[Interlude]`, `[Instrumental]`, `[Break]`, `[Solo]`, `[Outro]`, `[Tag]`,
   `[Ending]`) into a real section, and a line of chords with no words under it
   into a chords-only line (`[G]   [B7]    [C]`), so its chords transpose. Other
-  headings (`[Capo 2]`) stay `{comment: …}` notes.
+  headings (`[Capo 2]`) stay `{comment: …}` notes. A pasted chord that sits a
+  letter or two into a word (chord sites draw it over the word: `t[G]en`) moves
+  to the start of that syllable, `[G]ten`; deeper into a long syllable it backs
+  up only to the start of its sound (`Charlottes[G]ville`)
+  (`smart-paste.js::chordColumnToLyric`). The downbeat isn't in the text, so
+  placing it exactly stays the charter's job in Chords mode.
 - Every reader of the song text goes through `getText()` / `setText()` (submit,
   copy, download, dirty check, sign-in return record, transpose).
   `#editor-content` is only a hidden fallback textarea.

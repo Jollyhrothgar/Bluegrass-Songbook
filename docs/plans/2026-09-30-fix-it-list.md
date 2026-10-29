@@ -1503,7 +1503,7 @@ Follow-ups:
 - **Still over 200 lines:** `scripts/lib/CLAUDE.md` (324),
   `supabase/CLAUDE.md` (267), `docs/js/otf-editor/CLAUDE.md` (266),
   `docs/js/lead-editor/CLAUDE.md` (244, after the six editor PRs of
-  2026-10-28 were carried in), `docs/js/CLAUDE.md` (218). What remains is rules and cross-file couplings;
+  2026-10-28 were carried in), `docs/js/CLAUDE.md` (228). What remains is rules and cross-file couplings;
   the next cut means deciding which of them an agent can live without.
   `.claude/skills/tab-debug/SKILL.md` is 562 lines (Anthropic suggests under
   500 for a skill); its reference sections could move to a sibling file.
