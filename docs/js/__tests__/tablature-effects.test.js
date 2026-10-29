@@ -335,7 +335,7 @@ describe('notes without fx render exactly as before', () => {
 
 describe('a real corpus tab', () => {
     const otf = JSON.parse(fs.readFileSync(path.join(
-        REPO_ROOT, 'works/cripple-creek/banjo.otf.json'), 'utf8'));
+        REPO_ROOT, 'works/cripple-creek/banjo.otf.json'), 'utf8'));   // live smoke test
     const track = otf.tracks.find(t => t.id === 'banjo');
     const notation = otf.notation.banjo;
 
