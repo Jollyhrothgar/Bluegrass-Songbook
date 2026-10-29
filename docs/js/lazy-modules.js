@@ -21,6 +21,8 @@ export const LAZY_MODULE_URLS = [
     './js/../vendor/hyph-en-us.js',
     './js/audio-unlock.js',
     './js/bounty-view.js',
+    './js/chord-chart-view.js',
+    './js/chord-chart.js',
     './js/dedup-check.js',
     './js/drafts-view.js',
     './js/editor.js',
