@@ -1890,3 +1890,160 @@ function escapeHtml(s) {
 function escapeAttr(s) {
     return escapeHtml(s).replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 }
+
+/**
+ * Track Popover: the two questions Score ▸ Add track… and Score ▸ Delete
+ * track… ask, in the app and not in a native dialog (no `window.confirm`:
+ * it is not in the DOM, so no test can answer it).
+ *
+ *  - `openAdd({choices})`   pick an instrument; Enter or "Add track" commits
+ *  - `openDelete({trackId, noteCount})`  "Delete the guitar track and its 12
+ *    notes?" with Cancel focused, so a stray Enter cancels rather than deletes
+ */
+export class TrackPopover {
+    constructor(options = {}) {
+        this.options = {
+            onAdd: null,       // (instrumentKey) => void
+            onDelete: null,    // (trackId) => void
+            onCancel: null,
+            ...options,
+        };
+        this.element = null;
+        this.overlay = null;
+        this.isOpen = false;
+        this.context = null;
+        this._onKeyDown = this._onKeyDown.bind(this);
+    }
+
+    init(container) {
+        if (!document.querySelector('style[data-otf-track-popover]')) {
+            const style = document.createElement('style');
+            style.setAttribute('data-otf-track-popover', '');
+            style.textContent = `
+                .otf-track-popover .track-add-instrument {
+                    width: 100%; box-sizing: border-box; padding: 10px 12px;
+                    font-size: 16px; border: 2px solid var(--border, #ddd);
+                    border-radius: 8px; background: var(--bg, #fff);
+                    color: var(--text, #333);
+                }
+                .otf-track-popover .track-delete-question { font-size: 15px; }
+                .otf-track-popover .track-popover-note {
+                    font-size: 11px; color: var(--text-muted, #888); margin-top: 8px;
+                }
+            `;
+            document.head.appendChild(style);
+        }
+        this.overlay = document.createElement('div');
+        this.overlay.className = 'otf-popover-overlay otf-track-overlay';
+        this.overlay.addEventListener('click', (e) => {
+            if (e.target === this.overlay) this.close();
+        });
+        this.element = document.createElement('div');
+        this.element.className = 'otf-note-popover otf-track-popover';
+        this.overlay.appendChild(this.element);
+        container.appendChild(this.overlay);
+        this.overlay.style.display = 'none';
+    }
+
+    openAdd({ choices = [] } = {}) {
+        this.context = { mode: 'add' };
+        this._show(`
+            <div class="popover-header">
+                <span class="popover-title">Add track</span>
+                <button class="popover-close" title="Close (Escape)">&times;</button>
+            </div>
+            <div class="popover-body">
+                <div class="popover-section">
+                    <label class="section-label" for="otf-track-add-instrument">Instrument</label>
+                    <select class="track-add-instrument" id="otf-track-add-instrument">
+                        ${choices.map(c => `<option value="${escapeAttr(c.value)}">${escapeHtml(c.label)}</option>`).join('')}
+                    </select>
+                    <div class="track-popover-note">It goes at the end, empty. Start typing to fill it.</div>
+                </div>
+            </div>
+            <div class="popover-footer">
+                <button class="popover-btn cancel-btn">Cancel</button>
+                <button class="popover-btn confirm-btn primary">Add track</button>
+            </div>
+        `, '.track-add-instrument');
+    }
+
+    openDelete({ trackId, noteCount = 0 } = {}) {
+        this.context = { mode: 'delete', trackId };
+        const what = noteCount > 0
+            ? `and its ${noteCount} ${noteCount === 1 ? 'note' : 'notes'}`
+            : '(it has no notes)';
+        this._show(`
+            <div class="popover-header">
+                <span class="popover-title">Delete track</span>
+                <button class="popover-close" title="Close (Escape)">&times;</button>
+            </div>
+            <div class="popover-body">
+                <div class="popover-section">
+                    <div class="track-delete-question">Delete the ${escapeHtml(trackId)} track ${what}?</div>
+                    <div class="track-popover-note">You can undo this.</div>
+                </div>
+            </div>
+            <div class="popover-footer">
+                <button class="popover-btn cancel-btn">Cancel</button>
+                <button class="popover-btn confirm-btn primary">Delete track</button>
+            </div>
+        `, '.cancel-btn');
+    }
+
+    _show(html, focusSelector) {
+        this.element.innerHTML = html;
+        this.element.querySelector('.popover-close').addEventListener('click', () => this.close());
+        this.element.querySelector('.cancel-btn').addEventListener('click', () => this.close());
+        this.element.querySelector('.confirm-btn').addEventListener('click', () => this._commit());
+        this.element.addEventListener('keydown', this._onKeyDown);
+        this.overlay.style.display = 'flex';
+        this.isOpen = true;
+        this.element.querySelector(focusSelector)?.focus();
+    }
+
+    _onKeyDown(event) {
+        if (event.key === 'Escape') {
+            event.preventDefault();
+            event.stopPropagation();
+            this.close();
+            return;
+        }
+        // Enter on the instrument list commits; on a button it presses it
+        // (so Enter on the focused Cancel of a delete cancels).
+        if (event.key === 'Enter' && event.target.tagName === 'SELECT') {
+            event.preventDefault();
+            event.stopPropagation();
+            this._commit();
+            return;
+        }
+        event.stopPropagation();
+    }
+
+    _commit() {
+        const ctx = this.context;
+        const value = this.element.querySelector('.track-add-instrument')?.value;
+        this._closeQuietly();
+        if (ctx?.mode === 'add') this.options.onAdd?.(value);
+        else if (ctx?.mode === 'delete') this.options.onDelete?.(ctx.trackId);
+    }
+
+    _closeQuietly() {
+        if (this.overlay) this.overlay.style.display = 'none';
+        this.isOpen = false;
+    }
+
+    close() {
+        const wasOpen = this.isOpen;
+        this._closeQuietly();
+        if (wasOpen) this.options.onCancel?.();
+    }
+
+    get opened() { return this.isOpen; }
+
+    destroy() {
+        this.overlay?.parentNode?.removeChild(this.overlay);
+        this.overlay = null;
+        this.element = null;
+    }
+}

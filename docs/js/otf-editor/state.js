@@ -178,7 +178,10 @@ export class EditorState {
 
         // Editing facade — owns the OTF document, undo history, clipboard
         const otf = options.otf || this._createEmptyOTF(options.instrument || '5-string-banjo');
-        this.facade = new EditingFacade(otf, { trackId: options.trackId });
+        this.facade = new EditingFacade(otf, {
+            trackId: options.trackId,
+            protectedTrackId: options.protectedTrackId,
+        });
 
         // Current track ID
         this.trackId = this.facade.trackId || 'banjo';
@@ -452,6 +455,47 @@ export class EditorState {
         const changed = this.facade.moveTrack(trackId, from + delta) !== false;
         if (changed) this._emit('tracksChange', this.getTracks());
         return changed;
+    }
+
+    /** Why a track can't be deleted ('' when it can). */
+    trackDeleteBlocker(trackId = this.trackId) {
+        return this.facade.trackDeleteBlocker(trackId);
+    }
+
+    /**
+     * Delete a track (the current one by default). Deleting the track being
+     * edited moves the cursor to the first remaining pitched track.
+     * Undoable as one step.
+     */
+    deleteTrack(trackId = this.trackId) {
+        const wasCurrent = trackId === this.trackId;
+        this.facade.deleteTrack(trackId);
+        if (wasCurrent) this._enterTrack(this.facade.trackId);
+        this._emit('tracksChange', this.getTracks());
+        return true;
+    }
+
+    /**
+     * Add a track and switch to it. Undoable as one step (undo drops the
+     * track again).
+     * @returns {string} the new track's id
+     */
+    addTrack(track) {
+        const id = this.facade.addTrack(track);
+        this._emit('tracksChange', this.getTracks());
+        this.setTrack(id);
+        return id;
+    }
+
+    /** Park the cursor at the start of a track the facade already switched to. */
+    _enterTrack(trackId) {
+        this.trackId = trackId;
+        this.selection = null;
+        this.mode = EditorMode.NORMAL;
+        this.cursor = new CursorPosition(1, 0,
+            Math.min(3, this.getStringCount()), trackId);
+        this._emit('trackChange', trackId);
+        this._emit('change', this.otf);
     }
 
     /**

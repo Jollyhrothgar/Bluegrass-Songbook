@@ -37,6 +37,8 @@ export function resolveEditTrackId(otf, instrument) {
  * @param {HTMLElement} options.mount - where the session UI is appended
  * @param {Object} options.otf - document to edit
  * @param {string} [options.trackId] - track to edit (see resolveEditTrackId)
+ * @param {string} [options.protectedTrackId] - a correction's own track: the
+ *   editor will not delete it (null for a new take or an opened file)
  * @param {string} [options.filename] - download filename (no extension)
  * @param {Function} options.editorFactory - ({container, otf, trackId, onSave}) => editor
  * @param {Function} [options.onApply] - receives the edited document
@@ -61,6 +63,7 @@ export function createTabEditSession({
     mount,
     otf,
     trackId = null,
+    protectedTrackId = null,
     filename = null,
     editorFactory,
     onApply = () => {},
@@ -153,6 +156,7 @@ export function createTabEditSession({
         container: host,
         otf,
         trackId,
+        protectedTrackId,
         onSave: (doc) => onApply(doc),
         ...(onChange ? { onChange: (doc) => onChange(doc) } : {}),
         // In compact mode the bottom band owns playback, so the editor's

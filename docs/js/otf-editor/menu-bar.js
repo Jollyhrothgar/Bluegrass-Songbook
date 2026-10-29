@@ -45,6 +45,8 @@ const hasClipboard = (s) => !!s?.clipboard;
 const hasText = (s) => !!s?.getAnnotationAtCursor?.();
 const canUndo = (s) => !!s?.history?.canUndo?.();
 const canRedo = (s) => !!s?.history?.canRedo?.();
+const canDeleteTrack = (s) => !s?.trackDeleteBlocker?.();
+const deleteTrackWhy = (s) => s?.trackDeleteBlocker?.() || '';
 const manyMeasures = (s) => (s?.getMeasureCount?.() || 1) > 1;
 /** Does the note at the cursor carry this effect? (the item's ✓) */
 const noteHasFx = (fx) => (s) => !!s?.getNoteAtCursor?.()?.fx?.includes(fx);
@@ -187,6 +189,8 @@ export const MENUS = [
             { hook: 'renameTrack', label: 'Rename track…' },
             { hook: 'moveTrackEarlier', label: 'Move track earlier' },
             { hook: 'moveTrackLater', label: 'Move track later' },
+            { hook: 'addTrack', label: 'Add track…' },
+            { hook: 'deleteTrack', label: 'Delete track…', when: canDeleteTrack, why: deleteTrackWhy },
             { separator: true },
             { hook: 'tempo', label: 'Tempo…' },
             { hook: 'timeSignature', label: 'Time signature…' },
@@ -498,6 +502,8 @@ export class EditorMenuBar {
                     label: item.label,
                     run: fn,
                     disabled: item.when ? !item.when(this.state) : false,
+                    // a disabled item says why (hover / long-press)
+                    title: item.when && !item.when(this.state) ? item.why?.(this.state) : undefined,
                     checked: item.checked ? !!this.hooks[item.checked]?.() : undefined,
                     role: item.checked ? 'menuitemcheckbox' : 'menuitem',
                 }));
@@ -554,7 +560,7 @@ export class EditorMenuBar {
     }
 
     _menuItem({ label, keys, disabled, checked, run, role = 'menuitem',
-        actionId, keepOpen = false }) {
+        actionId, keepOpen = false, title }) {
         const btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'menu-item';
@@ -565,6 +571,7 @@ export class EditorMenuBar {
             btn.classList.toggle('is-checked', !!checked);
         }
         if (disabled) btn.disabled = true;
+        if (title) btn.title = title;
 
         // textContent for both halves: labels and track names are data
         const name = document.createElement('span');

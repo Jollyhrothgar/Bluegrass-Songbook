@@ -159,6 +159,14 @@ mixer and the switcher print. Rename therefore edits the id
 (`moveTrack`). UI is the toolbar's Track section and Score > Rename track; no
 key bindings.
 
+- A track is as long as the DOCUMENT (`getMeasureCount` = max over all tracks),
+  and a track with no `notation` key is valid and editable: the editor draws
+  empty bars for it, and only `getOrCreateMeasure` ever creates the key. Reading
+  (`getNotation`, switching tracks) writes nothing.
+- Score > Add track… appends an instrument's empty track (`makeTrack`, no
+  `notation` key); Score > Delete track… (`deleteTrack`, one undo step) refuses
+  the last pitched track and, in a correction, the take's own track
+  (`protectedTrackId`). Both ask in `TrackPopover`, never a native dialog.
 - `notation` is keyed by track id, so a rename rebuilds it in key order with
   the renamed key back in place. Never rebuild it from `tracks[]`: real files'
   key order differs (Banjo Hangout tab 27493, fixture

@@ -20,6 +20,7 @@ import {
     measureTimingFromOtf,
 } from '../renderers/measure-timing.js';
 import { notePitch, fretForPitch } from './pitch.js';
+import { isPercussionTrack, pitchedTracks } from '../renderers/otf-tracks.js';
 
 const clone = (x) => JSON.parse(JSON.stringify(x));
 
@@ -252,6 +253,8 @@ export class EditingFacade {
             : tracks[0]?.id;
 
         this.clipboard = null;
+        // A correction session names the track it edits; deleteTrack refuses it.
+        this.protectedTrackId = options.protectedTrackId || null;
 
         this._history = [];
         this._historyIndex = -1;
@@ -409,6 +412,7 @@ export class EditingFacade {
             }
             return true;
         });
+        if (result !== false && this.protectedTrackId === oldId) this.protectedTrackId = clean;
         if (result !== false && wasCurrent) {
             this.trackId = clean;
             this._emit('trackChange', clean);
@@ -435,6 +439,82 @@ export class EditingFacade {
             this.otf.tracks.splice(to, 0, moved);
             return true;
         });
+    }
+
+    /** How many notes a track holds (what "delete this track" would lose). */
+    noteCountIn(trackId = this.trackId) {
+        let n = 0;
+        for (const m of this.getNotation(trackId)) {
+            for (const e of m.events || []) n += (e.notes || []).length;
+        }
+        return n;
+    }
+
+    /**
+     * Why a track cannot be deleted, or '' when it can. The menu shows the
+     * reason; `deleteTrack` throws it.
+     *
+     *  - the last pitched (editable) track: a tab needs one to write on;
+     *  - the track a CORRECTION is editing (`protectedTrackId`, set by the
+     *    editor for a session on an existing take): deleting it would
+     *    submit a "correction" that removes the thing it corrects.
+     */
+    trackDeleteBlocker(trackId = this.trackId) {
+        const track = this.getTrack(trackId);
+        if (!track) return `Unknown track: ${trackId}`;
+        if (this.protectedTrackId && trackId === this.protectedTrackId) {
+            return `The ${trackId} track is the one this correction edits.`;
+        }
+        if (!isPercussionTrack(track)
+            && pitchedTracks(this.getTracks()).every(t => t.id === trackId)) {
+            return 'A tab needs at least one instrument track.';
+        }
+        return '';
+    }
+
+    /**
+     * Delete a track: its entry in `tracks[]` AND its `notation` key, as one
+     * undo step (undo restores both, in place, from the snapshot). When it
+     * was the track being edited, the first remaining pitched track takes
+     * over.
+     *
+     * @returns {boolean} true
+     * @throws {Error} unknown track, or one `trackDeleteBlocker` refuses
+     */
+    deleteTrack(trackId = this.trackId) {
+        const blocker = this.trackDeleteBlocker(trackId);
+        if (blocker) throw new Error(blocker);
+        const wasCurrent = this.trackId === trackId;
+        const result = this._mutate('Delete track', () => {
+            this.otf.tracks.splice(this.trackIndex(trackId), 1);
+            if (this.otf.notation) delete this.otf.notation[trackId];
+            return true;
+        });
+        if (result !== false && wasCurrent) {
+            this.trackId = (pitchedTracks(this.getTracks())[0] || this.getTracks()[0])?.id;
+            this._emit('trackChange', this.trackId);
+        }
+        return result;
+    }
+
+    /**
+     * Append a track (built by new-otf.js `makeTrack`). It carries NO
+     * `notation` key — absent means silent, and the first note entered
+     * creates it — so adding a track changes nothing but `tracks[]`.
+     *
+     * @returns {string} the new track's id
+     * @throws {Error} a malformed track, or an id already in use
+     */
+    addTrack(track) {
+        if (!track?.id || !Array.isArray(track.tuning) || track.tuning.length === 0) {
+            throw new Error('A track needs an id and a tuning');
+        }
+        if (this.getTrack(track.id)) throw new Error(`Track id already in use: ${track.id}`);
+        this._mutate('Add track', () => {
+            this.otf.tracks.push(clone(track));
+            return true;
+        });
+        return track.id;
     }
 
     getNotation(trackId = this.trackId) {
