@@ -3,12 +3,12 @@
 Converts downloaded TEF files to OTF JSON format.
 """
 
-import json
 from pathlib import Path
 from datetime import datetime
 from typing import Optional
 
 from tef_parser import TEFReader, tef_to_otf
+from tef_parser.otf import _otf_format
 from catalog import TabCatalog, TabEntry
 from site_config import SiteConfig, resolve_instrument
 
@@ -100,7 +100,7 @@ class TEFConverter:
             # Write output
             self.output_dir.mkdir(parents=True, exist_ok=True)
             output_path = self.output_dir / f"{tab.id}.otf.json"
-            output_path.write_text(json.dumps(otf_dict, indent=2))
+            output_path.write_text(_otf_format().serialize(otf_dict), encoding='utf-8')
 
             # Extract metadata for catalog/works. `instrument` is the short
             # id the work.yaml part and the OTF filename use — detected from
@@ -191,7 +191,7 @@ def convert_single(tef_path: Path, output_path: Path = None) -> Optional[Path]:
             'converted_at': datetime.now().isoformat(),
         }
 
-        output_path.write_text(json.dumps(otf_dict, indent=2))
+        output_path.write_text(_otf_format().serialize(otf_dict), encoding='utf-8')
         return output_path
 
     except Exception as e:

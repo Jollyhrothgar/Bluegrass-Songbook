@@ -20,6 +20,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "sources" / "banjo-hangout" / "src"))
 
 from tef_parser import TEFReader, tef_to_otf  # noqa: E402
+from tef_parser.otf import _otf_format  # noqa: E402
 
 # Host -> sandbox mount mapping (order matters: longest prefix first).
 # The raw_tabs mount lives under a per-session path — detect the live
@@ -80,7 +81,7 @@ def main() -> int:
             "source_file": tef_path.name,
             "converted_at": datetime.now().isoformat(),
         }
-        out_path.write_text(json.dumps(otf_dict, indent=2))
+        out_path.write_text(_otf_format().serialize(otf_dict), encoding="utf-8")
         ok += 1
     print(f"regenerated {ok}, failed {fail}")
     return 1 if fail else 0

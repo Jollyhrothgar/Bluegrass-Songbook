@@ -37,6 +37,7 @@ export const LAZY_MODULE_URLS = [
     './js/lead-editor/section-ops.js',
     './js/list-export.js',
     './js/my-submissions.js',
+    './js/otf-format.js',
     './js/otf-editor/actions.js',
     './js/otf-editor/automation.js',
     './js/otf-editor/bindings.js',

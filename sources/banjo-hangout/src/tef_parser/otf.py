@@ -4,7 +4,9 @@ Copied from TablEdit_Reverse project.
 """
 
 import json
+import sys
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import Any
 
 from .reader import (TEFFile, TEFNoteEvent, TEFInstrument, TRIPLET_DURATION_CODES,
@@ -51,6 +53,19 @@ def v3_fingering(event: TEFNoteEvent) -> tuple[str | None, int | None]:
     return decode_fingering(raw[10] if raw and len(raw) >= 12 else 0)
 
 
+def _otf_format():
+    """scripts/lib/otf_format.py: the one OTF serializer (shared with
+    process_pending, which runs from scripts/lib). This package sits
+    elsewhere, so put scripts/lib on the path the first time it is needed."""
+    try:
+        import otf_format
+    except ImportError:
+        lib = Path(__file__).resolve().parents[4] / 'scripts' / 'lib'
+        sys.path.insert(0, str(lib))
+        import otf_format
+    return otf_format
+
+
 @dataclass
 class OTFNote:
     """A single note in OTF format."""
@@ -65,6 +80,19 @@ class OTFNote:
     grace: dict | None = None      # {"f": fret, "kind"?: GRACE_KINDS}
 
 
+def _otf_format():
+    """scripts/lib/otf_format.py: the one OTF serializer (shared with
+    process_pending, which runs from scripts/lib). This package sits
+    elsewhere, so put scripts/lib on the path the first time it is needed."""
+    try:
+        import otf_format
+    except ImportError:
+        lib = Path(__file__).resolve().parents[4] / 'scripts' / 'lib'
+        sys.path.insert(0, str(lib))
+        import otf_format
+    return otf_format
+
+
 @dataclass
 class OTFEvent:
     """A note event at a specific tick position."""
@@ -72,11 +100,37 @@ class OTFEvent:
     notes: list[OTFNote] = field(default_factory=list)
 
 
+def _otf_format():
+    """scripts/lib/otf_format.py: the one OTF serializer (shared with
+    process_pending, which runs from scripts/lib). This package sits
+    elsewhere, so put scripts/lib on the path the first time it is needed."""
+    try:
+        import otf_format
+    except ImportError:
+        lib = Path(__file__).resolve().parents[4] / 'scripts' / 'lib'
+        sys.path.insert(0, str(lib))
+        import otf_format
+    return otf_format
+
+
 @dataclass
 class OTFMeasure:
     """A measure containing note events."""
     measure: int
     events: list[OTFEvent] = field(default_factory=list)
+
+
+def _otf_format():
+    """scripts/lib/otf_format.py: the one OTF serializer (shared with
+    process_pending, which runs from scripts/lib). This package sits
+    elsewhere, so put scripts/lib on the path the first time it is needed."""
+    try:
+        import otf_format
+    except ImportError:
+        lib = Path(__file__).resolve().parents[4] / 'scripts' / 'lib'
+        sys.path.insert(0, str(lib))
+        import otf_format
+    return otf_format
 
 
 @dataclass
@@ -95,10 +149,36 @@ class OTFTrack:
     lines: int = 0
 
 
+def _otf_format():
+    """scripts/lib/otf_format.py: the one OTF serializer (shared with
+    process_pending, which runs from scripts/lib). This package sits
+    elsewhere, so put scripts/lib on the path the first time it is needed."""
+    try:
+        import otf_format
+    except ImportError:
+        lib = Path(__file__).resolve().parents[4] / 'scripts' / 'lib'
+        sys.path.insert(0, str(lib))
+        import otf_format
+    return otf_format
+
+
 @dataclass
 class OTFTiming:
     """Timing configuration."""
     ticks_per_beat: int = 480
+
+
+def _otf_format():
+    """scripts/lib/otf_format.py: the one OTF serializer (shared with
+    process_pending, which runs from scripts/lib). This package sits
+    elsewhere, so put scripts/lib on the path the first time it is needed."""
+    try:
+        import otf_format
+    except ImportError:
+        lib = Path(__file__).resolve().parents[4] / 'scripts' / 'lib'
+        sys.path.insert(0, str(lib))
+        import otf_format
+    return otf_format
 
 
 @dataclass
@@ -116,6 +196,19 @@ class OTFMetadata:
     time_signature_changes: list = field(default_factory=list)
 
 
+def _otf_format():
+    """scripts/lib/otf_format.py: the one OTF serializer (shared with
+    process_pending, which runs from scripts/lib). This package sits
+    elsewhere, so put scripts/lib on the path the first time it is needed."""
+    try:
+        import otf_format
+    except ImportError:
+        lib = Path(__file__).resolve().parents[4] / 'scripts' / 'lib'
+        sys.path.insert(0, str(lib))
+        import otf_format
+    return otf_format
+
+
 @dataclass
 class OTFReadingListEntry:
     """Reading list entry for playback order."""
@@ -124,12 +217,38 @@ class OTFReadingListEntry:
     name: str = ""   # Optional section label ("Intro", "Part A1", ...)
 
 
+def _otf_format():
+    """scripts/lib/otf_format.py: the one OTF serializer (shared with
+    process_pending, which runs from scripts/lib). This package sits
+    elsewhere, so put scripts/lib on the path the first time it is needed."""
+    try:
+        import otf_format
+    except ImportError:
+        lib = Path(__file__).resolve().parents[4] / 'scripts' / 'lib'
+        sys.path.insert(0, str(lib))
+        import otf_format
+    return otf_format
+
+
 @dataclass
 class OTFAnnotation:
     """A placed free-text annotation ("Long Choke", chord letters, ...)."""
     measure: int     # 1-indexed written measure
     tick: int        # Tick offset within the measure
     text: str
+
+
+def _otf_format():
+    """scripts/lib/otf_format.py: the one OTF serializer (shared with
+    process_pending, which runs from scripts/lib). This package sits
+    elsewhere, so put scripts/lib on the path the first time it is needed."""
+    try:
+        import otf_format
+    except ImportError:
+        lib = Path(__file__).resolve().parents[4] / 'scripts' / 'lib'
+        sys.path.insert(0, str(lib))
+        import otf_format
+    return otf_format
 
 
 @dataclass
@@ -236,9 +355,9 @@ class OTFDocument:
             # Fallback to JSON if yaml not available
             return self.to_json()
 
-    def to_json(self, indent: int = 2) -> str:
-        """Convert to JSON string."""
-        return json.dumps(self.to_dict(), indent=indent)
+    def to_json(self) -> str:
+        """The canonical OTF file text (scripts/lib/otf_format.py, G15b)."""
+        return _otf_format().serialize(self.to_dict())
 
 
 def instrument_to_otf_id(inst: TEFInstrument) -> str:

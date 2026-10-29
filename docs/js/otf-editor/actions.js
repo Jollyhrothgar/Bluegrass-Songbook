@@ -2,6 +2,7 @@
 // Higher-level edit actions that operate on state
 
 import { EditorMode, DURATIONS } from './state.js';
+import { serializeOTF } from '../otf-format.js';
 
 // createEmptyOTF / createMultiTrackOTF live in new-otf.js (no editor state
 // needed to build a blank document); re-exported for existing importers.
@@ -377,7 +378,7 @@ export function cleanupOTF(otf) {
  */
 export function downloadOTF(otf, filename = 'untitled') {
     const cleaned = cleanupOTF(JSON.parse(JSON.stringify(otf)));
-    const json = JSON.stringify(cleaned, null, 2);
+    const json = serializeOTF(cleaned);   // the one file layout (otf-format.js)
     const blob = new Blob([json], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
 
