@@ -15,7 +15,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { validateOTF as validateViaActions, createEmptyOTF } from '../../otf-editor/actions.js';
 import {
-    validateOTF, OTF_TECHS, OTF_FX, OTF_GRACE_KINDS, OTF_FINGERS, OTF_LH, OTF_ROLES,
+    validateOTF, OTF_VERSION, TAB_BY_NAME_MAX, TAB_BY_URL_MAX, OTF_TECHS, OTF_FX, OTF_GRACE_KINDS, OTF_FINGERS, OTF_LH, OTF_ROLES,
 } from '../../otf-editor/otf-validate.js';
 import {
     FX_ORDER as FACADE_FX, GRACE_KINDS as FACADE_GRACE, PLUCK_FINGERS, LH_DIGITS, TECHS,
@@ -157,5 +157,32 @@ describe('new-tab builder', () => {
         const otf = createMultiTrackOTF({ instruments: ['5-string-banjo', '6-string-guitar', 'upright-bass'] });
         expect(otf.tracks.map(t => t.role)).toEqual(['lead', 'rhythm', 'rhythm']);
         expect(validateOTF(otf).errors).toEqual([]);
+    });
+});
+
+describe('metadata.tab_by (schema 1.1)', () => {
+    const tabBy = SCHEMA.properties.metadata.properties.tab_by.properties;
+
+    it('the limits equal the schema\'s', () => {
+        expect(TAB_BY_NAME_MAX).toBe(tabBy.name.maxLength);
+        expect(TAB_BY_URL_MAX).toBe(tabBy.url.maxLength);
+        expect(tabBy.url.pattern).toBe('^https?://');
+    });
+
+    it('sits after composer in the canonical key order', () => {
+        const keys = Object.keys(SCHEMA.properties.metadata.properties);
+        expect(keys[keys.indexOf('composer') + 1]).toBe('tab_by');
+    });
+
+    it('a 1.0 file without tab_by stays valid and keeps its version', () => {
+        const doc = load('valid').find(f => f.name === 'valid--minimal').doc;
+        expect(doc.otf_version).toBe('1.0');
+        expect(validateOTF(doc).valid).toBe(true);
+        expect(doc.otf_version).toBe('1.0');
+    });
+
+    it('every writer stamps the current version', () => {
+        expect(OTF_VERSION).toBe('1.1');
+        expect(createEmptyOTF().otf_version).toBe(OTF_VERSION);
     });
 });

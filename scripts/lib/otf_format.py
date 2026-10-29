@@ -50,6 +50,7 @@ def _orders() -> dict:
         'grace': _keys(note['grace']['properties']),
         'annotation': _keys(top['annotations']['items']['properties']),
         'reading': _keys(top['reading_list']['items']['properties']),
+        'tab_by': _keys(top['metadata']['properties']['tab_by']['properties']),
         'tsc': _keys(top['metadata']['properties']['time_signature_changes']
                      ['items']['properties']),
     }
@@ -66,6 +67,7 @@ _CHILD = {
     ('doc', 'annotations'): 'annotation',
     ('doc', 'reading_list'): 'reading',
     ('metadata', 'time_signature_changes'): 'tsc',
+    ('metadata', 'tab_by'): 'tab_by',
     ('measure', 'events'): 'event',
     ('event', 'notes'): 'note',
     ('note', 'grace'): 'grace',

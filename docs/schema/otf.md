@@ -16,7 +16,13 @@ Two validators enforce it, and a shared set of fixture files
 
 ## Version rule
 
-`otf_version` is `"MAJOR.MINOR"`. `"1.0"` is the shape as of G15a (2026-10-28).
+`otf_version` is `"MAJOR.MINOR"`.
+
+| Version | Date | What changed |
+|---|---|---|
+| `1.0` | 2026-10-28 (G15a) | the first schema |
+| `1.1` | 2026-10-29 (G15c) | optional `metadata.tab_by` (who wrote the tab), the first minor bump |
+
 
 - Adding an **optional** field bumps the minor version.
 - Anything else (a rename, a removal, a change of meaning, a new required
@@ -43,13 +49,23 @@ free-form provenance. Keys starting with `_` are runtime view caches
 | Field | Meaning |
 |---|---|
 | `otf_version` | `"1.x"`, see above |
-| `metadata` | `title`, `time_signature` (`"4/4"`), `tempo` (quarter-note BPM) required; `key`, `composer`, `time_signature_changes` optional |
+| `metadata` | `title`, `time_signature` (`"4/4"`), `tempo` (quarter-note BPM) required; `key`, `composer`, `tab_by` (1.1), `time_signature_changes` optional |
 | `timing.ticks_per_beat` | ticks in a quarter note; 480 in every file so far |
 | `tracks` | the instruments, see below |
 | `notation` | `{trackId: [measure, ...]}`: every key names a track; a track may have no key (an empty track) |
 | `annotations` | `[{measure, tick, text}]` placed text: section banners, chord names, remarks |
 | `reading_list` | `[{from_measure, to_measure, name?}]` playback order, with repeats unrolled |
 | `x_source` | free-form provenance (`type`, `source_id`, `author`, `url`, `converted_at`, ...) |
+
+**`metadata.tab_by`** (1.1) is who wrote this tab: `{"name": ..., "url": ...}`, a
+closed object. `name` is required, non-empty, already trimmed, at most 100
+characters. `url` is optional, must start with `http://` or `https://`, at most
+500 characters (say, their Banjo Hangout profile). It is not the song's
+`composer`. The editor's "Tab by" / "Link" fields write it; on submission the
+pipeline copies it to `provenance.author` / `provenance.author_url` in
+`work.yaml` (anyone may fill a blank credit; changing one needs a trusted
+submitter, and a refused change is written back into the stored file so the two
+never disagree).
 
 **`metadata.time_signature_changes`** is `[{measure, time_signature}]`. Each
 entry applies **only to its own measure**; every other measure follows
@@ -111,8 +127,11 @@ Python returns warnings from `otf_schema.check`; JS returns them as
 
 ```json
 {
-  "otf_version": "1.0",
-  "metadata": {"title": "Old Joe Clark", "time_signature": "4/4", "tempo": 120, "key": "A"},
+  "otf_version": "1.1",
+  "metadata": {
+    "title": "Old Joe Clark", "time_signature": "4/4", "tempo": 120, "key": "A",
+    "tab_by": {"name": "Jane Picker", "url": "https://www.banjohangout.org/my/janepicker"}
+  },
   "timing": {"ticks_per_beat": 480},
   "tracks": [
     {

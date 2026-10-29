@@ -41,7 +41,7 @@ export function createEmptyOTF(instrument = '5-string-banjo', options = {}) {
     const config = instrumentConfigs[instrument] || instrumentConfigs['5-string-banjo'];
 
     return {
-        otf_version: '1.0',
+        otf_version: '1.1',
         metadata: {
             title: options.title || 'Untitled',
             time_signature: options.timeSignature || '4/4',

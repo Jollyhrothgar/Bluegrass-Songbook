@@ -73,6 +73,10 @@ def test_key_order_is_the_schemas():
     note = SCHEMA['$defs']['note']['properties']
     assert otf_format.KEY_ORDER['note'] == list(note)
     assert otf_format.KEY_ORDER['doc'] == list(SCHEMA['properties'])
+    meta = SCHEMA['properties']['metadata']['properties']
+    assert otf_format.KEY_ORDER['metadata'] == list(meta)
+    assert list(meta)[list(meta).index('composer') + 1] == 'tab_by'
+    assert otf_format.KEY_ORDER['tab_by'] == list(meta['tab_by']['properties']) == ['name', 'url']
 
 
 def test_every_tracked_file_is_already_in_the_canonical_layout():

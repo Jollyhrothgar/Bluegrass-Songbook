@@ -16,6 +16,9 @@
 //
 // Cross-field rules run only on a document whose shape is sound.
 
+/** The version every writer stamps (schema 1.1 added metadata.tab_by). */
+export const OTF_VERSION = '1.1';
+
 export const OTF_TECHS = ['h', 'p', '/', '\\', 'x', 'b'];
 export const OTF_FX = ['brush', 'roll', 'choke', 'ghost', 'staccato', 'let-ring', 'muted',
     'harmonic', 'artificial-harmonic', 'tap', 'vibrato', 'tremolo', 'bend-release', 'slap'];
@@ -107,6 +110,30 @@ function checkSignature(sig, path, errors) {
     }
 }
 
+export const TAB_BY_NAME_MAX = 100;
+export const TAB_BY_URL_MAX = 500;
+const HTTP_URL = /^https?:\/\//;
+
+/** metadata.tab_by (added in 1.1): { name, url? }, a closed object. */
+function checkTabBy(t, errors) {
+    const path = 'metadata/tab_by';
+    if (!isObj(t)) { errors.push(`[schema] ${path}: not an object`); return; }
+    closed(t, ['name', 'url'], path, errors);
+    if (typeof t.name !== 'string') errors.push(`[schema] ${path}/name: must be a string`);
+    else if (!t.name) errors.push(`[schema] ${path}/name: must not be empty`);
+    else if (t.name !== t.name.trim()) errors.push(`[schema] ${path}/name: must be trimmed`);
+    else if (t.name.length > TAB_BY_NAME_MAX) {
+        errors.push(`[schema] ${path}/name: at most ${TAB_BY_NAME_MAX} characters`);
+    }
+    if ('url' in t) {
+        if (typeof t.url !== 'string') errors.push(`[schema] ${path}/url: must be a string`);
+        else if (!HTTP_URL.test(t.url)) errors.push(`[schema] ${path}/url: must start with http:// or https://`);
+        else if (t.url.length > TAB_BY_URL_MAX) {
+            errors.push(`[schema] ${path}/url: at most ${TAB_BY_URL_MAX} characters`);
+        }
+    }
+}
+
 /** The shape rules: everything the JSON Schema says. */
 function shapeErrors(otf) {
     const errors = [];
@@ -122,7 +149,7 @@ function shapeErrors(otf) {
     if (!meta) errors.push('Missing metadata section');
     else if (!isObj(meta)) errors.push('[schema] metadata: not an object');
     else {
-        closed(meta, ['title', 'time_signature', 'tempo', 'key', 'composer',
+        closed(meta, ['title', 'time_signature', 'tempo', 'key', 'composer', 'tab_by',
             'time_signature_changes'], 'metadata', errors);
         if (typeof meta.title !== 'string') errors.push('[schema] metadata/title: must be a string');
         checkSignature(meta.time_signature, 'metadata/time_signature', errors);
@@ -130,6 +157,7 @@ function shapeErrors(otf) {
         for (const k of ['key', 'composer']) {
             if (k in meta && typeof meta[k] !== 'string') errors.push(`[schema] metadata/${k}: must be a string`);
         }
+        if ('tab_by' in meta) checkTabBy(meta.tab_by, errors);
         if ('time_signature_changes' in meta) {
             const c = meta.time_signature_changes;
             if (!Array.isArray(c)) errors.push('[schema] metadata/time_signature_changes: must be an array');

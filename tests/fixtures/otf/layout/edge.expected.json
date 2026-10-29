@@ -6,6 +6,10 @@
     "tempo": 120,
     "key": "G",
     "composer": "",
+    "tab_by": {
+      "name": "Jane",
+      "url": "https://example.com/u"
+    },
     "time_signature_changes": [
       {"measure": 2, "time_signature": "3/4"}
     ]

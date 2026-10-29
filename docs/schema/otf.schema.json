@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://bluegrassbook.com/schema/otf.schema.json",
   "title": "OTF (Open Tab Format)",
-  "description": "OTF is the Bluegrass Songbook's tab format: one JSON document per tab, usually stored as *.otf.json. VERSION RULE. otf_version is \"MAJOR.MINOR\"; \"1.0\" is the shape as of G15a (2026-10-28). Adding an OPTIONAL field bumps the minor version. Anything else (a rename, a removal, a change of meaning, a new required field) bumps the major version. Files of any earlier 1.x stay valid under the current schema. Writers stamp the current version; readers accept any 1.x and reject any other major. The order of properties in this file is the canonical key order used when a document is written out (G15b). Keys starting with an underscore are runtime view caches and are never valid in a file. Some rules JSON Schema cannot express are enforced by both validators (scripts/lib/otf_schema.py and validateOTF in docs/js/otf-editor/otf-validate.js); they are listed in docs/schema/otf.md.",
+  "description": "OTF is the Bluegrass Songbook's tab format: one JSON document per tab, usually stored as *.otf.json. VERSION RULE. otf_version is \"MAJOR.MINOR\"; \"1.0\" is the shape as of G15a (2026-10-28); \"1.1\" adds the optional metadata.tab_by. Adding an OPTIONAL field bumps the minor version. Anything else (a rename, a removal, a change of meaning, a new required field) bumps the major version. Files of any earlier 1.x stay valid under the current schema. Writers stamp the current version; readers accept any 1.x and reject any other major. The order of properties in this file is the canonical key order used when a document is written out (G15b). Keys starting with an underscore are runtime view caches and are never valid in a file. Some rules JSON Schema cannot express are enforced by both validators (scripts/lib/otf_schema.py and validateOTF in docs/js/otf-editor/otf-validate.js); they are listed in docs/schema/otf.md.",
   "type": "object",
   "additionalProperties": false,
   "required": ["otf_version", "metadata", "timing", "tracks", "notation"],
@@ -39,6 +39,27 @@
         "composer": {
           "description": "Composer or arranger credit. May be empty.",
           "type": "string"
+        },
+        "tab_by": {
+          "description": "Who wrote this tab (added in 1.1): a name and an optional link, e.g. their Banjo Hangout profile. Not the song's composer.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["name"],
+          "properties": {
+            "name": {
+              "description": "The tab writer's name: non-empty, no leading or trailing whitespace, at most 100 characters.",
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100,
+              "pattern": "^(\\S|\\S[\\s\\S]*\\S)$"
+            },
+            "url": {
+              "description": "Optional link, http or https only, at most 500 characters.",
+              "type": "string",
+              "maxLength": 500,
+              "pattern": "^https?://"
+            }
+          }
         },
         "time_signature_changes": {
           "description": "Per-measure time signature overrides. Each entry applies ONLY to its own measure; every other measure follows metadata.time_signature.",
