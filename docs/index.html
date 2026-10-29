@@ -301,42 +301,49 @@
                 </div>
             </div>
 
-            <div id="editor-toolbar" class="editor-toolbar">
-                <button id="editor-undo" class="editor-toolbar-btn" type="button" title="Undo" disabled>&#8617; Undo</button>
-                <button id="editor-redo" class="editor-toolbar-btn" type="button" title="Redo" disabled>&#8618; Redo</button>
-                <span class="editor-toolbar-spacer"></span>
-                <span class="editor-zoom" role="group" aria-label="Text size">
-                    <button id="editor-font-down" class="editor-toolbar-btn" type="button" title="Smaller text" aria-label="Smaller text">A&minus;</button>
-                    <button id="editor-font-up" class="editor-toolbar-btn" type="button" title="Larger text" aria-label="Larger text">A+</button>
-                </span>
-                <span id="editor-transpose-group" class="ve-transpose-group ve-gone">
-                    <button id="editor-transpose-down" class="transpose-btn" type="button" title="Transpose down one semitone">&minus;</button>
-                    <select id="editor-key-select" class="editor-key-select" title="Detected key (change to override)">
-                        <option value="">Key: ?</option>
-                    </select>
-                    <button id="editor-transpose-up" class="transpose-btn" type="button" title="Transpose up one semitone">+</button>
-                    <label class="preview-option" title="Show chords as Nashville numbers in the preview">
-                        <input type="checkbox" id="editor-nashville">
-                        Nashville
-                    </label>
-                </span>
-            </div>
-
-            <div id="editor-modebar" class="editor-modebar">
-                <div class="le-modeswitch" role="group" aria-label="Editor mode">
+            <!-- The editor's controls: ONE place on every device. editor.js mounts this in the app shell's bottom band while
+                 the editor is on screen (shell.js setBottomBand); the elements are MOVED, never rebuilt, so their ids and
+                 listeners hold. The Display options go into a pill popover (editor.js) on first open. -->
+            <div id="editor-band" class="editor-band" role="toolbar" aria-label="Song controls" hidden>
+                <div class="le-modeswitch editor-band-modes" role="group" aria-label="Editor mode">
                     <button type="button" id="editor-mode-lyrics" class="on" data-lead-mode="lyrics" aria-pressed="true">Lyrics</button>
                     <button type="button" id="editor-mode-chords" data-lead-mode="chords" aria-pressed="false">Chords</button>
                     <button type="button" id="editor-mode-chordpro" data-lead-mode="chordpro" aria-pressed="false">ChordPro</button>
                 </div>
+                <span class="editor-band-group" role="group" aria-label="Undo and redo">
+                    <button id="editor-undo" class="editor-band-btn" type="button" title="Undo" aria-label="Undo" disabled>&#8630;</button>
+                    <button id="editor-redo" class="editor-band-btn" type="button" title="Redo" aria-label="Redo" disabled>&#8631;</button>
+                </span>
+                <span id="editor-transpose-group" class="editor-band-group ve-transpose-group ve-gone" role="group" aria-label="Key">
+                    <button id="editor-transpose-down" class="editor-band-btn transpose-btn" type="button" title="Down a semitone (every chord)" aria-label="Transpose down">&minus;</button>
+                    <select id="editor-key-select" class="editor-key-select" title="The song's key: changing it moves every chord" aria-label="Key">
+                        <option value="">Key: –</option>
+                    </select>
+                    <button id="editor-transpose-up" class="editor-band-btn transpose-btn" type="button" title="Up a semitone (every chord)" aria-label="Transpose up">+</button>
+                </span>
+                <span id="editor-display-slot"></span>
+                <div id="editor-display-options" class="editor-display-options">
+                    <div class="editor-zoom" role="group" aria-label="Text size">
+                        <span>Text size</span>
+                        <button id="editor-font-down" class="editor-band-btn" type="button" title="Smaller text" aria-label="Smaller text">A&minus;</button>
+                        <button id="editor-font-up" class="editor-band-btn" type="button" title="Larger text" aria-label="Larger text">A+</button>
+                    </div>
+                    <label class="preview-option" title="Show chords as Nashville numbers">
+                        <input type="checkbox" id="editor-nashville">
+                        Nashville numbers
+                    </label>
+                    <label class="auto-detect-label" title="Automatically clean up pasted content from chord sites like Ultimate Guitar or ChordU">
+                        <input type="checkbox" id="editor-auto-detect" checked>
+                        Clean up pasted chord sheets
+                    </label>
+                </div>
+            </div>
+
+            <div id="editor-modebar" class="editor-modebar">
                 <div id="editor-pane-toggle" class="le-modeswitch le-pane-toggle hidden" role="group" aria-label="Source or preview">
                     <button type="button" class="on" data-lead-pane="source" aria-pressed="true">Source</button>
                     <button type="button" data-lead-pane="preview" aria-pressed="false">Preview</button>
                 </div>
-                <span class="editor-toolbar-spacer"></span>
-                <label class="auto-detect-label" title="Automatically clean up pasted content from chord sites like Ultimate Guitar or ChordU">
-                    <input type="checkbox" id="editor-auto-detect" checked>
-                    Auto-detect format
-                </label>
             </div>
 
             <div id="editor-workspace" class="editor-workspace">

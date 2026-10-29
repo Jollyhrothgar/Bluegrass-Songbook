@@ -80,26 +80,26 @@ class PadWidget extends WidgetType {
     toDOM() { const el = document.createElement('span'); el.textContent = ' '; return el; }
 }
 
-/** The box where no chord sits yet: a dashed pill above the syllable (ghost text while typing). */
+/**
+ * The box where no chord sits yet: a dashed pill above the syllable (ghost text while typing). In the empty slot after the
+ * words and in the gap between two words it is a box on the LYRIC row too, as a syllable is; a gap already holding a chord
+ * keeps only that lyric-row box (the chord glyph itself is boxed).
+ */
 class SlotWidget extends WidgetType {
-    constructor(ghost, invalid, after, gap) { super(); this.ghost = ghost || ''; this.invalid = !!invalid; this.after = !!after; this.gap = !!gap; }
-    eq(o) { return o.ghost === this.ghost && o.invalid === this.invalid && o.after === this.after && o.gap === this.gap; }
+    constructor(ghost, invalid, after, gap, held) { super(); this.ghost = ghost || ''; this.invalid = !!invalid; this.after = !!after; this.gap = !!gap; this.held = !!held; }
+    eq(o) { return o.ghost === this.ghost && o.invalid === this.invalid && o.after === this.after && o.gap === this.gap && o.held === this.held; }
     toDOM() {
         const el = document.createElement('span');
         el.className = 'cl-slot' + (this.invalid ? ' cl-slot-invalid' : '') + (this.after ? ' cl-slot-after' : '') + (this.gap ? ' cl-slot-gap' : '');
-        if (this.gap) {
-            // the cursor between two words: a slim bar across the chord row and the lyric row (no text outline)
-            const bar = document.createElement('span');
-            bar.className = 'cl-gap-bar';
-            el.appendChild(bar);
+        if (!this.held) {
+            const pill = document.createElement('span');
+            pill.className = 'cl-slot-pill';
+            pill.innerHTML = this.ghost ? chordGlyphHtml(this.ghost) : '';
+            el.appendChild(pill);
         }
-        const pill = document.createElement('span');
-        pill.className = 'cl-slot-pill';
-        pill.innerHTML = this.ghost ? chordGlyphHtml(this.ghost) : '';
-        el.appendChild(pill);
-        if (this.after) {
-            // the empty place after the words is outlined on the LYRIC row too, as a syllable is (absolute: it takes no
-            // width and cannot wrap the line, so the stops measure the same with the cursor here or not)
+        if (this.after || this.gap) {
+            // outlined on the lyric row (absolute: it takes no width and cannot wrap the line, so the stops measure the
+            // same with the cursor here or not)
             const text = document.createElement('span');
             text.className = 'cl-slot-text';
             el.appendChild(text);
@@ -160,7 +160,7 @@ class LabelWidget extends WidgetType {
 }
 
 class LockedWidget extends WidgetType {
-    constructor(block) { super(); this.b = block; }
+    constructor(block, ctx) { super(); this.b = block; this.ctx = ctx; }
     eq(o) { return o.b.type === this.b.type && o.b.text === this.b.text; }
     toDOM() {
         // vertical space is PADDING on the widget root, never a margin: CodeMirror's
@@ -170,8 +170,13 @@ class LockedWidget extends WidgetType {
         const el = document.createElement('div');
         root.appendChild(el);
         if (this.b.type === 'comment') {
-            el.className = 'song-comment';
+            // a note row ("Interlude"): tap it for Delete, as a section label is tapped for its menu
+            el.className = 'song-comment cl-comment';
             el.textContent = this.b.text;
+            el.setAttribute('role', 'button');
+            el.title = 'Note options';
+            el.addEventListener('mousedown', (e) => e.preventDefault());
+            el.addEventListener('click', (e) => { e.preventDefault(); this.ctx?.onComment?.(this.b, el); });
             return root;
         }
         el.className = 'cl-locked-block';
@@ -213,7 +218,7 @@ export function buildVisual(state, ctx) {
 
     const blockLines = new Set();
     for (const b of a.blocks) {
-        replace(b.from, b.to, { widget: new LockedWidget(b), block: true });
+        replace(b.from, b.to, { widget: new LockedWidget(b, ctx), block: true });
         for (const l of a.lines) if (l.from >= b.from && l.to <= b.to) blockLines.add(l.index);
     }
 
@@ -234,11 +239,12 @@ export function buildVisual(state, ctx) {
     }
 
     // the box on a syllable with no chord yet, or in the empty slot after the words; between two words
-    // (a GAP stop) it is always drawn, as a slim bar (the dashed pill only appears for typed-entry ghost text)
+    // (a GAP stop) it is always drawn: a box on the lyric row, and the dashed pill while the gap holds no chord
     if (box && box.pos != null && box.pos <= text.length) {
         const gap = !box.after && stopKindAt(text, box.pos) === 'gap';
+        const held = gap && !box.ghost && !!chordAt(text, box.pos);
         if (gap || box.after || box.ghost || !chordAt(text, box.pos)) {
-            decos.push(Decoration.widget({ widget: new SlotWidget(box.ghost, box.invalid, box.after, gap), side: -1 }).range(box.pos));
+            decos.push(Decoration.widget({ widget: new SlotWidget(box.ghost, box.invalid, box.after, gap, held), side: -1 }).range(box.pos));
         }
     }
     // the box on an empty chord line, drawn below the line that ends at box.pos
@@ -405,7 +411,7 @@ export function protectDirectivesFilter(isVisual) {
  * @param {string} [o.doc]
  * @param {'visual'|'chordpro'} [o.mode]
  * @param {(chord: string) => string} [o.displayChord]   Nashville etc., display only
- * @param {object} [o.hooks]  { onChange, onSelection, onSectionLabel, onChordsRemoved, onMouseDown, onClick, onPaste }
+ * @param {object} [o.hooks]  { onChange, onSelection, onSectionLabel, onComment, onChordsRemoved, onMouseDown, onClick, onPaste }
  */
 export function createLeadEditor({ parent, doc = '', mode = 'visual', displayChord, hooks = {} }) {
     const modeCompartment = new Compartment();
@@ -417,7 +423,7 @@ export function createLeadEditor({ parent, doc = '', mode = 'visual', displayCho
     let dragJoin = false;
     let dragUntil = 0;
     let display = displayChord || ((c) => c);
-    const ctx = { display: (c) => display(c), onSectionLabel: (...a) => hooks.onSectionLabel?.(...a) };
+    const ctx = { display: (c) => display(c), onSectionLabel: (...a) => hooks.onSectionLabel?.(...a), onComment: (...a) => hooks.onComment?.(...a) };
 
     const visualField = StateField.define({
         create: (state) => buildVisual(state, ctx),

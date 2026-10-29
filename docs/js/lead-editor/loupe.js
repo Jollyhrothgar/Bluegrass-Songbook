@@ -12,7 +12,7 @@ export const LOUPE_GAP = 56;        // px between the bubble's bottom edge and t
 export const LOUPE_TAIL = 10;       // the tail's half-width: it never sits closer to a corner than this
 
 /** What marks the cursor in a line, in the order `syncRing` prefers. */
-const BOXED = ['.cl-gap-bar', '.cl-box-chord .cl-chord-glyph', '.cl-slot-pill', '.cl-box-text'];
+const BOXED = ['.cl-box-chord .cl-chord-glyph', '.cl-slot-pill', '.cl-box-text'];
 export function boxedEl(root) {
     for (const sel of BOXED) { const e = root.querySelector(sel); if (e) return e; }
     return null;
