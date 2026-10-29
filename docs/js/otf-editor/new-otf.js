@@ -103,7 +103,7 @@ export function createMultiTrackOTF({
         let n = 2;
         while (used.has(id)) id = `${track.id}-${n++}`;
         used.add(id);
-        base.tracks.push({ ...track, id, role: base.tracks.length === 0 ? 'lead' : 'backup' });
+        base.tracks.push({ ...track, id, role: base.tracks.length === 0 ? 'lead' : 'rhythm' });
         base.notation[id] = Array.from({ length: measures },
             (_, i) => ({ measure: i + 1, events: [] }));
     }

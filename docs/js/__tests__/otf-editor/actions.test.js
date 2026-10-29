@@ -27,7 +27,7 @@ describe('createMultiTrackOTF (new-tab flow)', () => {
         });
         expect(otf.tracks.map(t => t.id)).toEqual(['banjo', 'guitar', 'bass']);
         expect(otf.tracks[0].role).toBe('lead');
-        expect(otf.tracks[1].role).toBe('backup');
+        expect(otf.tracks[1].role).toBe('rhythm');
         expect(otf.metadata.title).toBe('My Tune');
         expect(otf.metadata.time_signature).toBe('3/4');
         expect(otf.notation.banjo).toHaveLength(8);
@@ -681,6 +681,20 @@ describe('downloadOTF', () => {
 
         // The cleanupOTF is called internally, so we just verify download works
         expect(() => downloadOTF(otf)).not.toThrow();
+    });
+
+    it('writes the canonical file layout (one note event per line, G15b)', async () => {
+        let written;
+        vi.stubGlobal('Blob', class { constructor(parts) { written = parts.join(''); } });
+        const otf = createEmptyOTF();
+        otf._partFile = 'x.otf.json';   // a runtime view cache never reaches the file
+        downloadOTF(otf, 'layout');
+        const text = written;
+        const { serializeOTF } = await import('../../otf-format.js');
+        expect(text).toBe(serializeOTF(JSON.parse(text)));
+        expect(text.endsWith('}\n')).toBe(true);
+        expect(text).not.toContain('_partFile');
+        expect(text).toContain('\n  "otf_version"');
     });
 
     it('revokes object URL after download', () => {

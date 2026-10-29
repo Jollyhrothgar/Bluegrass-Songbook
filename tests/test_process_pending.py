@@ -23,11 +23,13 @@ chords), so "would this have been caught?" is asked here with the actual text
 that wasn't.
 """
 
+import hashlib
 import json
 
 import pytest
 import yaml
 
+import otf_format
 import works_writer
 from process_pending import (
     DEDUP_HOLD_REASON,
@@ -39,9 +41,11 @@ from process_pending import (
     already_applied,
     apply_row,
     content_marker,
+    legacy_tab_marker,
     hold_reason,
     is_placeholder_row,
     otf_document,
+    tab_marker,
     owns_content,
     tab_work_slug,
     validate_otf,
@@ -703,7 +707,7 @@ class TestOwnership:
 def otf_doc(track_id='banjo', fret=0, **extra):
     doc = {
         'otf_version': '1.0',
-        'metadata': {'title': 'Salt Creek'},
+        'metadata': {'title': 'Salt Creek', 'time_signature': '4/4', 'tempo': 120},
         'timing': {'ticks_per_beat': 480},
         'tracks': [{
             'id': track_id,
@@ -795,7 +799,10 @@ class TestTablatureCreate:
 
         text = (tmp_path / 'works/salt-creek/banjo.otf.json').read_text()
         assert text.endswith('\n')
-        assert '\n  "tracks"' in text          # indent=2, like the corpus
+        assert '\n  "tracks"' in text          # 2-space indent, like the corpus
+        # one note event per line (G15b), the same bytes the editor downloads
+        assert '{"tick": 0, "notes": [{"s": 1, "f": 0}]}' in text
+        assert text == otf_format.serialize(json.loads(text))
         assert json.loads(text)['tracks'][0]['id'] == 'banjo'
 
     def test_x_source_is_dropped_so_the_build_gate_cannot_trip(self, tmp_path):
@@ -959,7 +966,7 @@ class TestTablatureValidation:
     def test_a_fret_past_the_end(self):
         doc = otf_doc()
         doc['notation']['banjo'][0]['events'][0]['notes'][0]['f'] = 99
-        assert any('bad fret' in p for p in validate_otf(doc))
+        assert any('notes/0/f:' in p for p in validate_otf(doc))
 
     def test_an_invalid_otf_is_refused_before_anything_is_written(self, tmp_path):
         doc = otf_doc()
@@ -1031,18 +1038,77 @@ class TestTablatureReplay:
         assert doc['notation']['banjo'][0]['events'][0]['notes'][0]['f'] == 5
 
     def test_the_marker_is_canonical_and_content_scoped(self):
-        same = otf_document(tab_row())[1]
-        reformatted = otf_document(tab_row(content=json.dumps(otf_doc(), indent=4)))[1]
-        changed = otf_document(tab_row(content=json.dumps(otf_doc(fret=5))))[1]
+        same = otf_document(tab_row())[0]
+        reformatted = otf_document(tab_row(content=json.dumps(otf_doc(), indent=4)))[0]
+        changed = otf_document(tab_row(content=json.dumps(otf_doc(fret=5))))[0]
 
         row_id = 'tab:salt-creek:ab12cd'
-        assert content_marker(row_id, same) == \
-            content_marker(row_id, reformatted)
-        assert content_marker(row_id, same) != \
-            content_marker(row_id, changed)
+        assert tab_marker(row_id, same) == tab_marker(row_id, reformatted)
+        assert tab_marker(row_id, same) != tab_marker(row_id, changed)
         # Two people, two rows, same tab: two markers, so both land.
-        assert content_marker(row_id, same) != \
-            content_marker('tab:salt-creek:zz99xx', same)
+        assert tab_marker(row_id, same) != tab_marker('tab:salt-creek:zz99xx', same)
+
+    def test_the_marker_does_not_depend_on_the_file_layout(self):
+        """A new layout must never mint a new marker (G15b)."""
+        doc = otf_document(tab_row())[0]
+        row_id = 'tab:salt-creek:ab12cd'
+        # a fixed value: if this changes, every applied tab row would re-apply
+        assert tab_marker(row_id, doc) == 'pending:tab:salt-creek:ab12cd:' + \
+            hashlib.sha256(json.dumps(doc, sort_keys=True, separators=(',', ':')).encode()).hexdigest()[:12]
+        assert tab_marker(row_id, doc) != legacy_tab_marker(row_id, doc)
+
+    def test_a_row_applied_with_the_old_layout_is_still_a_replay(self, tmp_path):
+        """Before G15b the marker was a sha of the indent=2 text. A work.yaml
+        written then carries that marker; a replay after the switch must not
+        add a second part."""
+        row = tab_row()
+        doc = otf_document(row)[0]
+        old_marker = legacy_tab_marker(row['id'], doc)
+        works_writer.create_work(
+            tmp_path, 'salt-creek', 'Salt Creek',
+            works_writer.PartSpec(
+                file='banjo.otf.json', type='tablature', format='otf',
+                instrument='banjo', default=True,
+                content=json.dumps(doc, indent=2) + '\n',
+                provenance={'source': 'user-submission',
+                            'source_id': old_marker,
+                            'submitted_by': SUBMITTER}),
+            on_collision='fail', verbose=False)
+
+        result = apply_row(tmp_path, row, 'add', 'salt-creek', verbose=False)
+
+        assert result.skipped_reason == 'already-applied'
+        assert len(read_work(tmp_path, 'salt-creek')['parts']) == 1
+
+    def test_a_row_applied_with_the_new_layout_is_a_replay_too(self, tmp_path):
+        apply_row(tmp_path, tab_row(), 'create', 'salt-creek', verbose=False)
+        source_id = read_work(tmp_path, 'salt-creek')['parts'][0]['provenance']['source_id']
+        assert source_id == tab_marker('tab:salt-creek:ab12cd', otf_document(tab_row())[0])
+
+    def test_a_correction_diffs_only_the_changed_event(self, tmp_path):
+        """The point of one event per line: a fixed note is a one-line diff."""
+        def doc(frets):
+            d = otf_doc()
+            d['notation']['banjo'] = [{'measure': 1, 'events': [
+                {'tick': 480 * i, 'notes': [{'s': 1, 'f': f, 'dur': 480}]}
+                for i, f in enumerate(frets)]}]
+            return d
+
+        apply_row(tmp_path, tab_row(content=json.dumps(doc([0, 2, 3, 5]))),
+                  'create', 'salt-creek', verbose=False)
+        path = tmp_path / 'works/salt-creek/banjo.otf.json'
+        before = path.read_text().split('\n')
+
+        apply_row(tmp_path,
+                  tab_row(part_file='banjo.otf.json',
+                          content=json.dumps(doc([0, 2, 4, 5]))),
+                  'update', 'salt-creek', verbose=False)
+        after = path.read_text().split('\n')
+
+        assert len(before) == len(after)
+        changed = [(b, a) for b, a in zip(before, after) if b != a]
+        assert len(changed) == 1
+        assert '"tick": 960' in changed[0][1] and '"f": 4' in changed[0][1]
 
 
 class TestTablatureSkipsTheDedupBackstop:

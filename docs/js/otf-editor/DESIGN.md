@@ -62,73 +62,16 @@ bound. This document does not repeat them.
 
 ### OTF document structure
 
-An OTF document is JSON. The writer is
-`sources/banjo-hangout/src/tef_parser/otf.py` (`OTFDocument.to_dict`); the
-editor mutates it only through `EditingFacade` (`facade.js`).
+The format is written down once, in **[`docs/schema/otf.schema.json`](../../schema/otf.schema.json)**
+(JSON Schema; the published spec, with its version rule), and explained in
+**[`docs/schema/otf.md`](../../schema/otf.md)** (field guide, cross-field rules,
+worked example). This document does not repeat them; it covers how the editor
+treats the fields. The editor mutates a document only through `EditingFacade`
+(`facade.js`), and `validateOTF` (`otf-validate.js`) is the JS validator for the
+schema (`scripts/lib/otf_schema.py` is the Python one).
 
-```typescript
-interface OTFDocument {
-  otf_version: "1.0"
-  metadata: {
-    title: string
-    time_signature: string          // "4/4", "2/2", ...
-    tempo: number                   // quarter-note BPM
-    composer?: string
-    key?: string
-    time_signature_changes?: { measure: number, time_signature: string }[]
-  }
-  timing: {
-    ticks_per_beat: number          // 480
-  }
-  tracks: Track[]                   // order matters, see "Track name and order"
-  notation: Record<string, Measure[]>   // keyed by Track.id
-  annotations?: PlacedText[]        // see "Placed text"
-  reading_list?: { from_measure: number, to_measure: number, name?: string }[]
-}
-
-interface Track {
-  id: string                        // also the display name
-  instrument: string                // e.g. "5-string-banjo"
-  tuning: string[]                  // string 1 first, e.g. ["D4","B3","G3","D3","G4"]
-  capo: number
-  role: string                      // "lead" | "rhythm" | "backup" | "percussion"
-  percussion?: true                 // drum tracks only, with `lines`
-  lines?: unknown
-}
-
-interface Measure {
-  measure: number                   // 1-indexed
-  events: NoteEvent[]
-}
-
-interface NoteEvent {
-  tick: number                      // position in the measure
-  notes: Note[]
-}
-
-interface Note {
-  s: number                         // string, 1-indexed
-  f: number                         // fret, 0 = open (editor allows 0..24)
-  tech?: "h" | "p" | "/" | "\\" | "x" | "b"
-  finger?: "T" | "I" | "M" | "R" | "P"   // picking hand
-  lh?: 0 | 1 | 2 | 3 | 4            // fretting-hand digit
-  tie?: boolean                     // tied from the previous note on this string
-  dur?: number                      // duration in ticks
-  fx?: Fx[]                         // TablEdit per-note effects, canonical order
-  grace?: { f: number, kind?: GraceKind }   // grace note before this one
-}
-
-// In this order (FX_ORDER in facade.js, docs/js/tef-import/otf.js and otf.py):
-type Fx = "brush" | "roll" | "choke" | "ghost" | "staccato" | "let-ring"
-        | "muted" | "harmonic" | "artificial-harmonic" | "tap" | "vibrato"
-        | "tremolo" | "bend-release" | "slap"
-type GraceKind = "hp" | "slide" | "bend" | "mordent" | "double"
-               | "gruppetto" | "trill"   // absent = a plain grace note
-```
-
-The type above is `interface Note`, the format reference cited by the
-renderers (`renderers/tablature.js`, `renderers/tab-player.js`) and tests for
-per-note `fx` and `grace`.
+The sections below keep the editor's reading of the fields (`tech`, `fx`,
+`grace`, ties, fingering, roles, durations, tracks, placed text).
 
 **`tech`** holds the transitions: `h` hammer-on, `p` pull-off, `/` and `\`
 slides, `b` the target of a bend, `x` a dead note (no pitch; the bluegrass
@@ -170,8 +113,10 @@ draws.
 
 **Roles.** `role` is the TEF importer's guess (`banjo` and `mandolin` get
 `lead`, other instruments `rhythm`, drums `percussion`); the new-tab builder
-writes `lead` for the first track and `backup` for the rest. It is a hint, not
-an ordering, see below.
+writes `lead` for the first track and `rhythm` for the rest. The schema allows
+`lead`, `rhythm` and `percussion` only; `EditingFacade._adopt` (run by the
+constructor and by `load`, the one place a document enters the editor) turns a
+legacy `backup` into `rhythm`. It is a hint, not an ordering, see below.
 
 ### Duration constants
 
@@ -205,7 +150,7 @@ notation: {mandolin: [...]}         ->  {'lead mandolin': [...]}
 ```
 
 Changing only `tracks` loses the music from every surface and fails
-`validate_otf` (`scripts/lib/process_pending.py`) with `track X: no notation`.
+`validate_otf` (`scripts/lib/process_pending.py`) with `[notation_keys]`.
 `renameTrack` rebuilds `notation` in key order so the renamed key stays in its
 own slot; real files do not key `notation` in `tracks[]` order, so it cannot be
 rebuilt from the track list. `TrackNamePopover` refuses a blank name and a name

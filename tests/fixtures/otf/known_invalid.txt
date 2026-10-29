@@ -1,0 +1,66 @@
+# Corpus files that fail an OTF rule today, and the rule ids each breaks.
+# Ratchet (tests/test_otf_schema.py): a file not listed here must pass; a listed
+# file whose rule ids change fails the test, and so does a listed sources/ file
+# that starts passing (a fixed or deleted works/ file does not: readers edit
+# works/ on main, and that must not block a deploy). Rule ids are
+# the [bracketed] ids from otf_schema.py; `schema` means the JSON Schema rejects it.
+# Format: <path> <rule-id> [<rule-id> ...]
+
+# works/: two notes on one string at one tick; triage + fix is #318 § G15d5 (batch 3).
+works/jerusalem-ridge-ensemble/fiddle.otf.json duplicate_string
+
+# sources/*/parsed/: frozen Tier-2 parser output, not served. Kept as found,
+# never hand-edited.
+sources/banjo-hangout/parsed/10544_tef.otf.json schema
+sources/banjo-hangout/parsed/10546_tef.otf.json duplicate_string
+sources/banjo-hangout/parsed/10591_tef.otf.json duplicate_string
+sources/banjo-hangout/parsed/10633_tef.otf.json schema
+sources/banjo-hangout/parsed/10676_tef.otf.json duplicate_string
+sources/banjo-hangout/parsed/10701_tef.otf.json duplicate_string
+sources/banjo-hangout/parsed/10830_tef.otf.json schema
+sources/banjo-hangout/parsed/10899_tef.otf.json schema
+sources/banjo-hangout/parsed/10999_tef.otf.json duplicate_string
+sources/banjo-hangout/parsed/11072_tef.otf.json schema
+sources/banjo-hangout/parsed/11197_tef.otf.json schema
+sources/banjo-hangout/parsed/11269_tef.otf.json duplicate_string string_count
+sources/banjo-hangout/parsed/11535_tef.otf.json schema
+sources/banjo-hangout/parsed/11536_tef.otf.json schema
+sources/banjo-hangout/parsed/11537_tef.otf.json schema
+sources/banjo-hangout/parsed/11787_tef.otf.json schema
+sources/banjo-hangout/parsed/11854_tef.otf.json duplicate_string
+sources/banjo-hangout/parsed/12626_tef.otf.json schema
+sources/banjo-hangout/parsed/12940_tef.otf.json schema
+sources/banjo-hangout/parsed/13735_tef.otf.json duplicate_string
+sources/banjo-hangout/parsed/13851_tef.otf.json schema
+sources/banjo-hangout/parsed/13855_tef.otf.json duplicate_string track_ids
+sources/banjo-hangout/parsed/13856_tef.otf.json duplicate_string string_count track_ids
+sources/banjo-hangout/parsed/14700_tef.otf.json duplicate_string
+sources/banjo-hangout/parsed/16133_tef.otf.json schema
+sources/banjo-hangout/parsed/16373_tef.otf.json schema
+sources/banjo-hangout/parsed/16911_tef.otf.json duplicate_string
+sources/banjo-hangout/parsed/17228_tef.otf.json schema
+sources/banjo-hangout/parsed/17641_tef.otf.json schema
+sources/banjo-hangout/parsed/17714_tef.otf.json duplicate_string track_ids
+sources/banjo-hangout/parsed/19499_tef.otf.json schema
+sources/banjo-hangout/parsed/19501_tef.otf.json schema
+sources/banjo-hangout/parsed/20613_tef.otf.json schema
+sources/banjo-hangout/parsed/21248_tef.otf.json duplicate_string
+sources/banjo-hangout/parsed/21671_tef.otf.json duplicate_string string_count
+sources/banjo-hangout/parsed/21734_tef.otf.json schema
+sources/banjo-hangout/parsed/21752_tef.otf.json schema
+sources/banjo-hangout/parsed/25360_tef.otf.json schema
+sources/banjo-hangout/parsed/25439_tef.otf.json schema
+sources/banjo-hangout/parsed/25569_tef.otf.json duplicate_string string_count
+sources/banjo-hangout/parsed/26043_tef.otf.json schema
+sources/banjo-hangout/parsed/26146_tef.otf.json schema
+sources/banjo-hangout/parsed/26184_tef.otf.json schema
+sources/banjo-hangout/parsed/26529_tef.otf.json schema
+sources/banjo-hangout/parsed/27007_tef.otf.json schema
+sources/banjo-hangout/parsed/27382_tef.otf.json schema
+sources/banjo-hangout/parsed/27668_tef.otf.json schema
+sources/banjo-hangout/parsed/27755_tef.otf.json schema
+sources/banjo-hangout/parsed/27932_tef.otf.json schema
+sources/banjo-hangout/parsed/28126_tef.otf.json schema
+sources/banjo-hangout/parsed/28619_tef.otf.json schema
+sources/fiddle-hangout/parsed/3098_tef.otf.json duplicate_string
+sources/fiddle-hangout/parsed/3404_tef.otf.json duplicate_string

@@ -94,7 +94,7 @@ Playback highlighting is keyed by absolute tick, not measure or note index:
 
 ### Marks
 
-Per-note `fx` and `grace` (format: `otf-editor/DESIGN.md` "interface Note")
+Per-note `fx` and `grace` (format: `docs/schema/otf.md`)
 draw in four places so stacked marks never land on each other, on H/P/sl labels
 or on a chord neighbour's digit (strings are 14 px apart and chips 14 px tall,
 so there is no room for labels inside the staff): on the fret (ghost, harmonic),

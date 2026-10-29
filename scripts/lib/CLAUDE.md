@@ -318,6 +318,13 @@ work?". Read `scripts/lib/process-pending.md` before changing either, the edge
 function `supabase/functions/_shared/pending-dispatch.ts`, or anything that
 writes `provenance.source_id`.
 
+OTF files are serialized by `scripts/lib/otf_format.py` (JS twin
+`docs/js/otf-format.js`, same bytes). A tab row's replay marker is
+`tab_marker` (a sha of the document's value, not of the file text), so a layout
+change can't re-apply a row; `already_applied` also accepts `legacy_tab_marker`,
+the pre-G15b `indent=2` sha. `reformat_otf.py` rewrites the tracked `.otf.json`
+files into the layout.
+
 ## Metadata parsing
 
 The build accepts both `{meta: title Song Name}` and `{title: Song Name}`

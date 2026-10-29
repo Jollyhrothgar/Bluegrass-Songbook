@@ -212,8 +212,8 @@ def convert_tef_file(
         work_dir.mkdir(exist_ok=True)
 
         # Save OTF
-        (work_dir / f'{instrument}.otf.json').write_text(otf_json)
-        (tabs_dir / f'{slug}-{instrument}.otf.json').write_text(otf_json)
+        (work_dir / f'{instrument}.otf.json').write_text(otf_json, encoding='utf-8')
+        (tabs_dir / f'{slug}-{instrument}.otf.json').write_text(otf_json, encoding='utf-8')
 
         # Build tags from catalog metadata
         tags = map_to_tags(

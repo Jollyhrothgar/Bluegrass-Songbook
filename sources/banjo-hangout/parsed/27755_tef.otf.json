@@ -11,22 +11,10 @@
   "tracks": [],
   "notation": {},
   "reading_list": [
-    {
-      "from_measure": 1,
-      "to_measure": 9
-    },
-    {
-      "from_measure": 2,
-      "to_measure": 13
-    },
-    {
-      "from_measure": 10,
-      "to_measure": 13
-    },
-    {
-      "from_measure": 14,
-      "to_measure": 17
-    }
+    {"from_measure": 1, "to_measure": 9},
+    {"from_measure": 2, "to_measure": 13},
+    {"from_measure": 10, "to_measure": 13},
+    {"from_measure": 14, "to_measure": 17}
   ],
   "x_source": {
     "type": "banjo-hangout",

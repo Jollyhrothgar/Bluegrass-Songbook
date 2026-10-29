@@ -1,0 +1,23 @@
+{
+  "x_source": {"url": "http://x", "zzz": [1, {"b": 2, "a": 1}], "aaa": {}, "_cache": 1, "nested": {"_hidden": true, "k": []}, "type": "local"},
+  "_partFile": "banjo.otf.json",
+  "notation": {
+    "banjo": [
+      {"events": [
+        {"notes": [{"lh": 2, "finger": "T", "grace": {"kind": "hp", "f": 3, "_x": 1}, "fx": ["brush", "roll"], "tech": "h", "tie": true, "dur": 120, "f": 2, "s": 5, "_sel": true}], "tick": 0, "_ui": 1},
+        {"tick": 240, "notes": []}
+      ], "measure": 1, "_dirty": true},
+      {"measure": 2, "events": []}
+    ],
+    "empty": []
+  },
+  "reading_list": [{"name": "Intro \"A\"", "to_measure": 2, "from_measure": 1}],
+  "annotations": [{"text": "tab\there\nnew \\ line \u0001\u001f \u007f    café 🎵 lone \ud800 end", "tick": 0, "measure": 1}],
+  "tracks": [
+    {"role": "lead", "capo": 0, "tuning": ["D4", "B3"], "instrument": "5-string-banjo", "id": "banjo", "_t": 1},
+    {"id": "perc", "instrument": "percussion", "tuning": [], "percussion": true, "lines": 3}
+  ],
+  "timing": {"ticks_per_beat": 480},
+  "metadata": {"time_signature_changes": [{"time_signature": "3/4", "measure": 2}], "composer": "", "key": "G", "tempo": 120.0, "time_signature": "4/4", "title": "Edge é \"quoted\""},
+  "otf_version": "1.0"
+}
