@@ -6,6 +6,7 @@
 import {
     decodeDurationCode, isMelody, decodeStringFret, TRIPLET_DURATION_CODES, V3_UNITS_PER_WHOLE, v3Locate,
 } from './reader.js';
+import { OTF_VERSION } from '../otf-editor/otf-validate.js';
 
 const fdiv = (a, b) => Math.floor(a / b);
 
@@ -82,7 +83,7 @@ const SECOND_FX = { 3: 'roll', 5: 'brush', 6: 'harmonic', 7: 'artificial-harmoni
 const SECOND_DEAD = 10;
 const V2_LAYOUT_CODES = new Set([0x0b, 0x0c, 0x0d, 0x0e, 0xc0, 0xd0]);
 export const FX_ORDER = ['brush', 'roll', 'choke', 'ghost', 'staccato', 'let-ring', 'muted',
-    'harmonic', 'artificial-harmonic', 'tap', 'vibrato', 'tremolo', 'bend-release', 'slap'];
+    'harmonic', 'artificial-harmonic', 'tap', 'vibrato', 'tremolo', 'bend', 'bend-release', 'slap'];
 export const GRACE_KINDS = [null, 'hp', 'slide', 'bend', 'mordent', 'double', 'gruppetto', 'trill'];
 
 function attributeByte(e) {
@@ -504,7 +505,7 @@ export function tefToOtf(tef) {
     });
 
     const doc = {
-        otf_version: '1.1',
+        otf_version: OTF_VERSION,
         metadata, timing: { ticks_per_beat: 480 },
         tracks, notation,
         annotations,

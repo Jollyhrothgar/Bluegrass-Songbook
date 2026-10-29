@@ -16,6 +16,7 @@ import path from 'node:path';
 import { validateOTF as validateViaActions, createEmptyOTF } from '../../otf-editor/actions.js';
 import {
     validateOTF, OTF_VERSION, TAB_BY_NAME_MAX, TAB_BY_URL_MAX, OTF_TECHS, OTF_FX, OTF_GRACE_KINDS, OTF_FINGERS, OTF_LH, OTF_ROLES,
+    DYN_LEVELS, OTF_JUMPS, decodeMarkRaw, ensureVersionAtLeast,
 } from '../../otf-editor/otf-validate.js';
 import {
     FX_ORDER as FACADE_FX, GRACE_KINDS as FACADE_GRACE, PLUCK_FINGERS, LH_DIGITS, TECHS,
@@ -43,6 +44,15 @@ describe('conformance fixtures', () => {
     it('finds the fixtures', () => {
         expect(valid.length).toBeGreaterThanOrEqual(6);
         expect(invalid.length).toBeGreaterThanOrEqual(40);
+    });
+
+    it('has a fixture for every cross-field rule', () => {
+        const rules = ['string_count', 'notation_keys', 'track_ids', 'measure_order', 'tick_order',
+            'tick_range', 'duplicate_string', 'chord_index', 'chord_track', 'chord_tick',
+            'chord_fingers', 'mark_order', 'mark_raw'];
+        for (const rule of rules) {
+            expect(invalid.some(f => f.name.startsWith('cross--') && ruleOf(f.name)[1] === rule), rule).toBe(true);
+        }
     });
 
     for (const { name, doc } of valid) {
@@ -76,9 +86,11 @@ describe('conformance fixtures', () => {
 });
 
 describe('version rule', () => {
-    it('accepts 1.1 and rejects 2.0', () => {
+    it('accepts 1.1 and 1.2 and rejects 2.0', () => {
         const doc = createEmptyOTF();
         doc.otf_version = '1.1';
+        expect(validateOTF(doc).valid).toBe(true);
+        doc.otf_version = '1.2';
         expect(validateOTF(doc).valid).toBe(true);
         doc.otf_version = '2.0';
         const r = validateOTF(doc);
@@ -182,7 +194,51 @@ describe('metadata.tab_by (schema 1.1)', () => {
     });
 
     it('every writer stamps the current version', () => {
-        expect(OTF_VERSION).toBe('1.1');
+        expect(OTF_VERSION).toBe('1.2');
         expect(createEmptyOTF().otf_version).toBe(OTF_VERSION);
+    });
+});
+
+describe('schema 1.2 (dynamics, bend, marks, chords)', () => {
+    const marks = SCHEMA.properties.measure_marks.items.properties;
+
+    it('dynamic levels equal the schema, loudest first', () => {
+        expect(DYN_LEVELS).toEqual(SCHEMA.properties.tracks.items.properties.dyn.enum);
+        expect(DYN_LEVELS).toEqual(NOTE.dyn.enum);
+        expect(DYN_LEVELS).toEqual(['fff', 'ff', 'f', 'mf', 'mp', 'p', 'pp']);
+    });
+
+    it('bend sits just before bend-release in every FX_ORDER copy', () => {
+        for (const fx of [NOTE.fx.items.enum, OTF_FX, FACADE_FX, IMPORT_FX]) {
+            expect(fx[fx.indexOf('bend-release') - 1]).toBe('bend');
+        }
+    });
+
+    it('jump names equal the schema', () => {
+        expect(OTF_JUMPS).toEqual(marks.jump.enum);
+    });
+
+    it.each([
+        [0, {}], [0x07, {}], [0x40, { repeat_start: true }], [0x80, { repeat_end: true }],
+        [0x81, { repeat_end: true, ending: 1 }], [0x0a, { ending: 2, end_bar: true }], [0x03, { ending: 3 }], [0x06, { ending: 6 }],
+        [0x08, { end_bar: true }], [0x10, { jump: 'da-signo' }], [0x18, { jump: 'signo' }],
+        [0x20, { jump: 'al-coda' }], [0x28, { jump: 'coda' }], [0x30, {}], [0x38, {}],
+        [0xce, { repeat_start: true, repeat_end: true, ending: 6, end_bar: true }],
+    ])('decodeMarkRaw(%i)', (raw, fields) => {
+        expect(decodeMarkRaw(raw)).toEqual(fields);
+    });
+
+    it('ensureVersionAtLeast raises, never lowers, and ignores other majors', () => {
+        const doc = { otf_version: '1.0' };
+        expect(ensureVersionAtLeast(doc, '1.1')).toBe(true);
+        expect(doc.otf_version).toBe('1.1');
+        expect(ensureVersionAtLeast(doc, '1.1')).toBe(false);
+        expect(ensureVersionAtLeast(doc, '1.0')).toBe(false);
+        expect(ensureVersionAtLeast(doc, '1.2')).toBe(true);
+        expect(doc.otf_version).toBe('1.2');
+        expect(ensureVersionAtLeast({ otf_version: '1.10' }, '1.2')).toBe(false);
+        const odd = { otf_version: '2.0' };
+        expect(ensureVersionAtLeast(odd, '1.2')).toBe(false);
+        expect(odd.otf_version).toBe('2.0');
     });
 });

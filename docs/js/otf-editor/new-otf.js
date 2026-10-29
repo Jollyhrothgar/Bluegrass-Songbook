@@ -5,6 +5,11 @@
 // state machine and its facade (~170 KB). actions.js re-exports both, so the
 // editor and its tests keep importing them from there.
 
+// The version to stamp. Not imported from otf-validate.js (OTF_VERSION): this
+// module is reached from the song page's boot graph and that one is lazy.
+// otf-validate.test.js asserts the two are equal.
+const OTF_VERSION = '1.2';
+
 /**
  * Create an empty OTF document
  * @param {string} instrument - Instrument type
@@ -41,7 +46,7 @@ export function createEmptyOTF(instrument = '5-string-banjo', options = {}) {
     const config = instrumentConfigs[instrument] || instrumentConfigs['5-string-banjo'];
 
     return {
-        otf_version: '1.1',
+        otf_version: OTF_VERSION,
         metadata: {
             title: options.title || 'Untitled',
             time_signature: options.timeSignature || '4/4',

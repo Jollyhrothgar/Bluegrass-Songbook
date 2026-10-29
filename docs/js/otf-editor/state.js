@@ -7,6 +7,7 @@
 // UI can drive the same facade directly without this class.
 
 import { measureTicksFor } from '../renderers/measure-timing.js';
+import { OTF_VERSION } from './otf-validate.js';
 import {
     EditingFacade,
     MAX_DURATION,
@@ -323,7 +324,7 @@ export class EditorState {
         const trackId = instrument.replace(/-/g, '_').replace(/\d+_string_/, '');
 
         return {
-            otf_version: '1.1',
+            otf_version: OTF_VERSION,
             metadata: {
                 title: 'Untitled',
                 time_signature: '4/4',

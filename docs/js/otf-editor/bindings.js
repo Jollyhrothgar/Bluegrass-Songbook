@@ -545,6 +545,7 @@ export const FX_ACTIONS = {
     tap: 'effect.tap',
     vibrato: 'effect.vibrato',
     tremolo: 'effect.tremolo',
+    bend: 'effect.bendUp',
     'bend-release': 'effect.bendRelease',
     slap: 'effect.slap',
 };
@@ -1261,6 +1262,7 @@ export const ACTIONS = {
     'effect.tap': fxAction('tap', 'Tap', { menuOnly: true }),
     'effect.vibrato': fxAction('vibrato', 'Vibrato', { menuOnly: true }),
     'effect.tremolo': fxAction('tremolo', 'Tremolo', { menuOnly: true }),
+    'effect.bendUp': fxAction('bend', 'Bend (up and hold)', { menuOnly: true }),
     'effect.bendRelease': fxAction('bend-release', 'Bend and release', { menuOnly: true }),
     'effect.slap': fxAction('slap', 'Slap', { menuOnly: true }),
     'effect.grace': {

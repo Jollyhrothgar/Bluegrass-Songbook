@@ -2832,6 +2832,7 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
         { createAutosaver, getDraftStore, draftOpenHash },
         { bindBandToEditor },
         { creditFromPart },
+        { ensureVersionAtLeast },
     ] = await Promise.all([
         import('./otf-editor/editor.js'),
         import('./otf-editor/work-edit.js'),
@@ -2839,6 +2840,7 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
         import('./drafts.js'),
         import('./tab-edit-band.js'),
         import('./otf-editor/tab-credit.js'),
+        import('./otf-editor/otf-validate.js'),
         kitLoading,
     ]);
 
@@ -2925,11 +2927,8 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
     if (!isNewTake && !otf?.metadata?.tab_by) {
         const published = creditFromPart(part);
         if (published) {
-            otf = {
-                ...otf,
-                otf_version: otf.otf_version === '1.0' ? '1.1' : otf.otf_version,
-                metadata: { ...otf.metadata, tab_by: published },
-            };
+            otf = { ...otf, metadata: { ...otf.metadata, tab_by: published } };
+            ensureVersionAtLeast(otf, '1.1');
         }
     }
 

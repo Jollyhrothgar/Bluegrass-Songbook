@@ -1,0 +1,59 @@
+{
+  "otf_version": "1.2",
+  "metadata": {
+    "title": "Conformance",
+    "time_signature": "4/4",
+    "tempo": 100,
+    "time_signature_changes": [
+      {"measure": 2, "time_signature": "3/4"}
+    ]
+  },
+  "timing": {
+    "ticks_per_beat": 480
+  },
+  "tracks": [
+    {
+      "id": "banjo",
+      "instrument": "5-string-banjo",
+      "tuning": ["D4", "B3", "G3", "D3", "G4"],
+      "capo": 0,
+      "role": "lead",
+      "dyn": "mf"
+    },
+    {
+      "id": "guitar",
+      "instrument": "6-string-guitar",
+      "tuning": ["E4", "B3", "G3", "D3", "A2", "E2"],
+      "role": "rhythm"
+    }
+  ],
+  "notation": {
+    "banjo": [
+      {
+        "measure": 1,
+        "events": [
+          {"tick": 0, "notes": [{"s": 2, "f": 1, "dur": 240, "fx": ["bend"]}, {"s": 3, "f": 0, "dur": 240, "dyn": "ff"}]},
+          {"tick": 480, "notes": [{"s": 2, "f": 2, "dur": 240, "tie": true, "tech": "b"}]},
+          {"tick": 960, "notes": [{"s": 1, "f": 0, "dur": 240, "fx": ["bend-release"], "dyn": "pp"}]}
+        ]
+      },
+      {
+        "measure": 2,
+        "events": [
+          {"tick": 0, "notes": [{"s": 5, "f": 0, "dur": 240}]}
+        ]
+      }
+    ],
+    "guitar": [
+      {
+        "measure": 1,
+        "events": [
+          {"tick": 0, "notes": [{"s": 6, "f": 3, "dur": 240, "dyn": "fff"}]}
+        ]
+      }
+    ]
+  },
+  "measure_marks": [
+    {"measure": 1, "ending": 6, "raw": 7}
+  ]
+}

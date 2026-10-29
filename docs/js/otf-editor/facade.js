@@ -20,7 +20,7 @@ import {
     measureTimingFromOtf,
 } from '../renderers/measure-timing.js';
 import { notePitch, fretForPitch } from './pitch.js';
-import { TAB_BY_NAME_MAX, TAB_BY_URL_MAX } from './otf-validate.js';
+import { TAB_BY_NAME_MAX, TAB_BY_URL_MAX, ensureVersionAtLeast } from './otf-validate.js';
 import { isPercussionTrack, pitchedTracks } from '../renderers/otf-tracks.js';
 
 const clone = (x) => JSON.parse(JSON.stringify(x));
@@ -133,7 +133,7 @@ function assertLeftHand(digit) {
 /** The effects, in the one order a note stores them. */
 export const FX_ORDER = ['brush', 'roll', 'choke', 'ghost', 'staccato', 'let-ring',
     'muted', 'harmonic', 'artificial-harmonic', 'tap', 'vibrato', 'tremolo',
-    'bend-release', 'slap'];
+    'bend', 'bend-release', 'slap'];
 
 /** How a grace note connects to its main note (absent = plain). */
 export const GRACE_KINDS = ['hp', 'slide', 'bend', 'mordent', 'double', 'gruppetto', 'trill'];
@@ -1585,7 +1585,7 @@ export class EditingFacade {
                 && (now?.url ?? null) === (next?.url ?? null)) return false;
             if (next) {
                 this.otf.metadata.tab_by = next;
-                if (this.otf.otf_version === '1.0') this.otf.otf_version = '1.1';
+                ensureVersionAtLeast(this.otf, '1.1');
             } else {
                 delete this.otf.metadata.tab_by;
             }

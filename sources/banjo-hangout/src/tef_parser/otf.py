@@ -66,6 +66,15 @@ def _otf_format():
     return otf_format
 
 
+# The shared, dependency-free OTF helpers (scripts/lib/otf_format.py), under the
+# names the importers use: OTF_VERSION, DYN_LEVELS (loudest first),
+# decode_mark_raw(raw), ensure_version_at_least(doc, '1.2').
+OTF_VERSION = _otf_format().OTF_VERSION
+DYN_LEVELS = _otf_format().DYN_LEVELS
+decode_mark_raw = _otf_format().decode_mark_raw
+ensure_version_at_least = _otf_format().ensure_version_at_least
+
+
 @dataclass
 class OTFNote:
     """A single note in OTF format."""
@@ -150,7 +159,7 @@ class OTFAnnotation:
 @dataclass
 class OTFDocument:
     """Complete OTF document."""
-    otf_version: str = "1.1"
+    otf_version: str = OTF_VERSION
     metadata: OTFMetadata = field(default_factory=OTFMetadata)
     timing: OTFTiming = field(default_factory=OTFTiming)
     tracks: list[OTFTrack] = field(default_factory=list)
@@ -371,7 +380,7 @@ V2_LAYOUT_CODES = {0x0b, 0x0c, 0x0d, 0x0e, 0xc0, 0xd0}
 # Canonical order of `fx`: the order the vocabulary is listed in the format doc.
 FX_ORDER = ["brush", "roll", "choke", "ghost", "staccato", "let-ring", "muted",
             "harmonic", "artificial-harmonic", "tap", "vibrato", "tremolo",
-            "bend-release", "slap"]
+            "bend", "bend-release", "slap"]
 GRACE_KINDS = [None, "hp", "slide", "bend", "mordent", "double", "gruppetto", "trill"]
 
 

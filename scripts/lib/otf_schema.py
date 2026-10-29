@@ -19,6 +19,13 @@ fixtures can name the rule they break):
 ``tick_order``         event ticks are unique and ascending within a measure
 ``tick_range``         every event tick falls inside the measure's length
 ``duplicate_string``   at most one note per string per event
+``chord_index``        ``chord_diagrams[].chord`` is an index into ``chords``
+``chord_track``        ``chord_diagrams[].track`` names a track
+``chord_tick``         a diagram's tick lies inside its measure
+``chord_fingers``      ``fingers`` needs ``frets`` and has the same length
+``mark_order``         ``measure_marks`` measures are strictly ascending
+``mark_raw``           a mark's decoded fields agree with its ``raw`` byte
+                       (``decode_mark_raw``)
 
 Warning only (#263): ``reading_list_overrun``.
 
@@ -31,6 +38,10 @@ from functools import lru_cache
 from pathlib import Path
 
 from jsonschema import Draft202012Validator
+
+# Re-exported so a caller that already has this module gets the shared helpers.
+from otf_format import (  # noqa: F401
+    DYN_LEVELS, OTF_VERSION, decode_mark_raw, ensure_version_at_least)
 
 SCHEMA_PATH = Path(__file__).resolve().parents[2] / 'docs' / 'schema' / 'otf.schema.json'
 
@@ -68,6 +79,43 @@ def measure_length(otf: dict, measure: int) -> int:
 
 def _string_count(track: dict) -> int:
     return track['lines'] if track.get('percussion') else len(track['tuning'])
+
+
+_MARK_FIELDS = ('repeat_start', 'repeat_end', 'ending', 'jump', 'end_bar')
+
+
+def _chord_rules(otf: dict, ids: list, errors: list) -> None:
+    chords = otf.get('chords', [])
+    for i, c in enumerate(chords):
+        if 'fingers' in c and 'frets' not in c:
+            errors.append(f'[chord_fingers] chords/{i}: fingers needs frets')
+        elif 'fingers' in c and len(c['fingers']) != len(c['frets']):
+            errors.append(f'[chord_fingers] chords/{i}: {len(c["fingers"])} fingers '
+                          f'for {len(c["frets"])} frets')
+    for i, d in enumerate(otf.get('chord_diagrams', [])):
+        if d['chord'] >= len(chords):
+            errors.append(f'[chord_index] chord_diagrams/{i}: chord {d["chord"]} '
+                          f'but there are {len(chords)} chords')
+        if d['track'] not in ids:
+            errors.append(f'[chord_track] chord_diagrams/{i}: no track {d["track"]!r}')
+        length = measure_length(otf, d['measure'])
+        if d['tick'] >= length:
+            errors.append(f'[chord_tick] chord_diagrams/{i} m{d["measure"]}: tick '
+                          f'{d["tick"]} is outside the {length}-tick measure')
+
+
+def _mark_rules(otf: dict, errors: list) -> None:
+    previous = 0
+    for i, m in enumerate(otf.get('measure_marks', [])):
+        if m['measure'] <= previous:
+            errors.append(f'[mark_order] measure_marks/{i}: measure {m["measure"]} '
+                          f'follows measure {previous}')
+        previous = max(previous, m['measure'])
+        decoded = decode_mark_raw(m['raw'])
+        for field in _MARK_FIELDS:
+            if m.get(field) != decoded.get(field):
+                errors.append(f'[mark_raw] measure_marks/{i} m{m["measure"]}: {field} is '
+                              f'{m.get(field)!r} but raw {m["raw"]} says {decoded.get(field)!r}')
 
 
 def cross_field(otf: dict) -> tuple:
@@ -118,6 +166,9 @@ def cross_field(otf: dict) -> tuple:
                         errors.append(f'[duplicate_string] track {tid} m{num} tick '
                                       f'{tick}: two notes on string {n["s"]}')
                     seen.add(n['s'])
+
+    _chord_rules(otf, ids, errors)
+    _mark_rules(otf, errors)
 
     for r in otf.get('reading_list', []):
         if r['to_measure'] > written or r['from_measure'] > written:
