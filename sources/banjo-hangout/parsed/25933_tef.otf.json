@@ -4,7 +4,8 @@
     "title": "Whiskey Before Breakfast",
     "time_signature": "4/4",
     "tempo": 110,
-    "key": "D"
+    "key": "D",
+    "composer": "Traditional Instrumental\r\nKey of D"
   },
   "timing": {
     "ticks_per_beat": 480

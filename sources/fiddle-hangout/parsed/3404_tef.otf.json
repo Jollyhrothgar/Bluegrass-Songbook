@@ -5,6 +5,7 @@
     "time_signature": "4/4",
     "tempo": 288,
     "key": "G",
+    "composer": "Bill Monroe - Kenny Baker",
     "time_signature_changes": [
       {"measure": 27, "time_signature": "6/4"},
       {"measure": 34, "time_signature": "6/4"}

@@ -4,7 +4,8 @@
     "title": "Shuckin' the Corn - variations",
     "time_signature": "4/4",
     "tempo": 260,
-    "key": "G"
+    "key": "G",
+    "composer": "After the playing of Peter Schwimmer"
   },
   "timing": {
     "ticks_per_beat": 480

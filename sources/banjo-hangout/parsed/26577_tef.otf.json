@@ -4,7 +4,8 @@
     "title": "black mountain rag",
     "time_signature": "4/4",
     "tempo": 200,
-    "key": "A"
+    "key": "A",
+    "composer": "Trad., Arr. Michael Franz\r\nMuch cribbed from Emerson, Baker, Crowe & Munde"
   },
   "timing": {
     "ticks_per_beat": 480

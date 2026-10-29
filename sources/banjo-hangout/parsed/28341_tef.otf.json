@@ -4,7 +4,8 @@
     "title": "St. Anne's Reel",
     "time_signature": "4/4",
     "tempo": 210,
-    "key": "D"
+    "key": "D",
+    "composer": "Traditional, arranged for banjo by Michael Corcoran"
   },
   "timing": {
     "ticks_per_beat": 480

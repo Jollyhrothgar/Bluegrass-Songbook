@@ -4,7 +4,8 @@
     "title": "June Apple",
     "time_signature": "4/4",
     "tempo": 220,
-    "key": "A"
+    "key": "A",
+    "composer": "Tradiitional, arranged for banjo by Michael Corcoran"
   },
   "timing": {
     "ticks_per_beat": 480

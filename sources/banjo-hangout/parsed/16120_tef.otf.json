@@ -4,7 +4,8 @@
     "title": "Old Joe Clark (mixed index and thumb lead)",
     "time_signature": "2/2",
     "tempo": 248,
-    "key": "A"
+    "key": "A",
+    "composer": "Traditional"
   },
   "timing": {
     "ticks_per_beat": 480

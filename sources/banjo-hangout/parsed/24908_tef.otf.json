@@ -5,6 +5,7 @@
     "time_signature": "4/4",
     "tempo": 324,
     "key": "G",
+    "composer": "Don Reno",
     "time_signature_changes": [
       {"measure": 5, "time_signature": "5/4"}
     ]

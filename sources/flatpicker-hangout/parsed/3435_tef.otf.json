@@ -4,7 +4,8 @@
     "title": "blackberry blossom",
     "time_signature": "4/4",
     "tempo": 175,
-    "key": "G"
+    "key": "G",
+    "composer": "Traditional, arr. Michael Franz"
   },
   "timing": {
     "ticks_per_beat": 480

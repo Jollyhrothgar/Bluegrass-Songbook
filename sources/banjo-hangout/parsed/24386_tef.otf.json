@@ -4,7 +4,8 @@
     "title": "Dixie Hoedown",
     "time_signature": "4/4",
     "tempo": 215,
-    "key": "G"
+    "key": "G",
+    "composer": "Jesse McReynolds, arranged for banjo by Michael Corcoran"
   },
   "timing": {
     "ticks_per_beat": 480

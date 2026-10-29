@@ -4,7 +4,8 @@
     "title": "Big Sciota",
     "time_signature": "4/4",
     "tempo": 205,
-    "key": "G"
+    "key": "G",
+    "composer": "Traditional, arranged for banjo by Michael Corcoran"
   },
   "timing": {
     "ticks_per_beat": 480

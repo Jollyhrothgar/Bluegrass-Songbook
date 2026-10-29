@@ -5,6 +5,7 @@
     "time_signature": "4/4",
     "tempo": 252,
     "key": "Dm",
+    "composer": "Kenny Baker",
     "time_signature_changes": [
       {"measure": 35, "time_signature": "2/4"}
     ]

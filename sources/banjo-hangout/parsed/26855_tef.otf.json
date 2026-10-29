@@ -4,7 +4,8 @@
     "title": "whiskey before breakfast",
     "time_signature": "4/4",
     "tempo": 150,
-    "key": "D"
+    "key": "D",
+    "composer": " Trad., arr. Michael Franz"
   },
   "timing": {
     "ticks_per_beat": 480
