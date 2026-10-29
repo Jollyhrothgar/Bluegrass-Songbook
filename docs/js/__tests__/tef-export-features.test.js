@@ -271,6 +271,16 @@ describe('.tef writer: layout', () => {
         expect(headerString(out, 0x4c)).not.toBe(headerString(source, 0x4c));
     });
 
+    it('tracks the template lacks get the per-track bytes TablEdit 3.06 itself writes', () => {
+        // A blank 4-track file saved by TablEdit 3.06: mandolin, banjo, guitar, bass.
+        const four = new Uint8Array(fs.readFileSync(path.join(repo, 'tests/parser/fixtures/tabledit_306_blank_4track.tef')));
+        const a = parseTef(four, 'blank.tef');
+        expect(a.tracks.map(t => t.id)).toEqual(['mandolin', 'banjo', 'guitar', 'bass']);
+        const { bytes } = writeTef(a, { template });      // the 1-track template, no source
+        const record = (d, i) => { const p = (d[0x60] | (d[0x61] << 8) | (d[0x62] << 16)); return d.subarray(p + 4 + 68 * i, p + 4 + 68 * i + 32); };
+        for (let i = 0; i < 4; i++) expect([...record(bytes, i)]).toEqual([...record(four, i)]);
+    });
+
     it('needs a template when there is no usable source', () => {
         expect(() => writeTef(otf)).toThrow(TefWriteError);
         expect(() => writeTef(otf, { template: new Uint8Array(10) })).toThrow(TefWriteError);

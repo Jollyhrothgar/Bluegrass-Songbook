@@ -37,11 +37,9 @@ problems in the data (Mike, 2026-10-28; `.claude/rules/tests.md`).
   Any path that cannot find an id awaits `window.ensureArchiveLoaded()` once
   before showing "not found" (details in `CORPUS.md`).
 - `supabase-auth.js` is not an ES module: its whole surface is the
-  `window.SupabaseAuth` literal at the bottom
-  (`sed -n '/^window.SupabaseAuth = {/,/^};/p' docs/js/supabase-auth.js`). Keys
-  do not always match function names (`init:` exposes `initSupabase`).
-- Nothing calls the GitHub API from the browser. Anything reaching GitHub goes
-  through a Supabase edge function that holds the token.
+  `window.SupabaseAuth` literal at the bottom (`sed -n '/^window.SupabaseAuth =
+  {/,/^};/p' docs/js/supabase-auth.js`); keys differ from function names.
+- The browser never calls the GitHub API; a Supabase edge function holds the token.
 
 ## App shell (`shell.js`)
 
@@ -62,8 +60,7 @@ problems in the data (Mike, 2026-10-28; `.claude/rules/tests.md`).
   MOVING (not rebuilding) controls into a gear sheet, so listeners from
   `setupTablaturePlayer` survive. The width is the band's, not the window's
   (ResizeObserver sets `.is-narrow-band`; CSS uses `@container tabband`); the
-  `@media` query is only the seed and fallback, and tests inject a `media`
-  object to turn the observer off.
+  `@media` query is only the seed, and tests inject `media` to stop the observer.
 - `tab-edit-band.js::bindBandToEditor` keeps the bottom band alive in edit mode.
   Controls that cannot work while editing are disabled with a reason
   (`DISABLED_REASONS`), not removed: a vanished control reads as a bug.
@@ -99,22 +96,24 @@ them. Client side (`main.js`, `state.js`: `SONG_PATH`, `songHref`,
   root on any path; without it `/songs/x/` fetches `/songs/x/data/songs/x.pro`.
 - Show a song at `songHref(id)`; write every other history entry absolute
   (`/#search`) so a hash route never inherits a song's path. Compare with
-  `currentHref()`, not `location.hash`. A document click handler turns a `#...`
-  link on a song path into in-place navigation (the base would load `/`).
+  `currentHref()`, not `location.hash`. A click handler turns a `#...` link on
+  a song path into in-place navigation (the base would load `/`).
 - `scripts/lib/build_song_pages.py` writes the pages and `404.html`; `scripts/server`
   serves `404.html` for unknown paths like Pages does.
 - `/tab-editor/` is the second path the app owns (`TAB_EDITOR_PATH`, state.js):
   the tab editor's front door, view `tab-editor`, rendered lazily by
   `tab-editor-home.js`. `handleDeepLink` routes it and returns true (boot would
-  otherwise rewrite it to `/`); `normalizedHref` gives the URL back to the root
-  when the view changes; in-app entry is `showView('tab-editor')` +
-  `pushHistoryState('tab-editor')` (a push, no reload). It has no editor code:
-  Open goes through `pwa.js` (`chooseTabFile` -> `openTabFile` -> `#new-tab?draft=`),
-  Start goes to `#new-tab?title=&instrument=`, My tabs reuses `drafts-view.js`
-  rows (`draftRowHtml`, `attachDraftActions`). "My tabs" is `#drafts` renamed in
-  copy only (store `bgb-drafts` unchanged). Nothing before Submit asks for sign-in.
-  A `.tef` open shows what wasn't kept (`x_source.skipped` → `skippedLine()` in
-  `tef-skipped.js`, `.arr-skipped`; only for `file=1`, only when non-zero).
+  rewrite it to `/`); `normalizedHref` restores the root URL when the view
+  changes; in-app entry is `showView('tab-editor')` + `pushHistoryState`. No
+  editor code: Open goes through `pwa.js` (`chooseTabFile` -> `openTabFile` ->
+  `#new-tab?draft=`), Start to `#new-tab?title=&instrument=`, My tabs reuses
+  `drafts-view.js` rows ("My tabs" is `#drafts` renamed in copy; store
+  `bgb-drafts`). Nothing before Submit asks for sign-in. A `.tef` open shows
+  what wasn't kept (`skippedLine()`, `tef-skipped.js`; `file=1` only). Saving is
+  the mirror, `tef-export/`: `writeTef(otf, {source, template})` returns
+  `{bytes, notices}`, plus `noticeLine()` (TEF-REFERENCE.md "Writing a .tef").
+  Nothing imports it yet; Save as adds the `import()` and its
+  `LAZY_MODULE_URLS` lines together (the test lists only reachable modules).
 
 ### Navigation invariants
 

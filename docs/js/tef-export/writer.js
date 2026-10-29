@@ -40,7 +40,11 @@ const READING_ENTRY = 32, READING_NAME_MAX = 27, READING_MAX = 100;
 const TEXT_MAX = 998, TEXT_INDEX_MAX = 256, TITLE_MAX = 255;
 const SIGNATURE_DENOMINATORS = [1, 2, 4, 8, 16];
 const TAB_BY_LINE = /^Tab by: /;
-const DEFAULT_PROGRAM = { '5-string-banjo': 105, 'tenor-banjo': 105, 'fiddle': 110, 'upright-bass': 32, percussion: 0 };
+// Per-instrument defaults for a track the template does not have: MIDI program (the
+// corpus's usual, bass as TablEdit 3.06's own template has it) and the octave
+// transposition at +14 (mandolin 12 in all 14 corpus records; others 0).
+const DEFAULT_PROGRAM = { '5-string-banjo': 105, 'tenor-banjo': 105, 'fiddle': 110, 'upright-bass': 33, percussion: 0 };
+const DEFAULT_TRANSPOSE = { mandolin: 12 };
 const PERCUSSION_LINES = [0x23, 0x2b, 0x34, 0x3c, 0x44, 0x4c, 0x54, 0x58, 0x59, 0x5a, 0x5a, 0x5a];
 
 const u16 = (d, o) => d[o] | (d[o + 1] << 8);
@@ -154,7 +158,10 @@ function trackRecord(track, baseRecord, keepBytes, notices) {
     view.setUint16(0, track.strings, true);
     view.setUint16(2, track.rowBase, true);
     rec[4] = track.perc ? rec[4] | 0x80 : rec[4] & 0x7f;
-    if (!keepBytes) view.setUint16(8, DEFAULT_PROGRAM[track.instrument] ?? 25, true);
+    if (!keepBytes) {
+        view.setUint16(8, DEFAULT_PROGRAM[track.instrument] ?? 25, true);
+        view.setUint16(14, DEFAULT_TRANSPOSE[track.instrument] ?? 0, true);
+    }
     let capo = track.capo;
     if (capo > 12) { capo = 12; notices.values_clamped += 1; }
     rec.fill(0, 20, 32);

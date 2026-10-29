@@ -62,6 +62,43 @@ All of the above oracle-verified against TablEdit's own MusicXML export
 (`<words>`, `<pluck>`, `<fingering>`, `<harmony>`): 35/35 text placements and
 37/37 fingerings match on Welcome to New York.
 
+## Writing a .tef (G15f, `docs/js/tef-export/`)
+
+`writeTef(otf, {source, template})` writes V3 only. Everything OTF models is
+rewritten; the rest (unknown header bytes, per-track settings, the 0x64
+page-layout block, the notes/URL/copyright strings, measure flags) is carried
+over from `source` (the original V3 file, when its tracks match) or from
+`template.tef` (blank, saved by TablEdit 3.06). Layout, as TablEdit saves it:
+header 0x100, title, author, comments, notes, [URL, copyright], +0x50, text
+table, chord table, measures, tracks, 0x64 block, reading list, components
+(last; ends in `ff ff ff ff`). A zero pointer is an absent block.
+
+- **Title** = pointer 64 (`titleFromHeader`, both readers); a title with control
+  characters (multi-line) still falls back to the first-string heuristic, so
+  the writer turns line breaks into spaces. **Author** (0x44, the "subtitle")
+  is the composer; the V3 readers do not read it yet (59 of 91 V3 files have one).
+- **Credit**: `metadata.tab_by` is the last comments line `Tab by: NAME <URL>`
+  (the colon matters: about 30 corpus files say `Tab by Name` and are left alone).
+- **Capo**: +12 is the capo (read by us and by TablEdit's loader). +10's low
+  nibble is the 5-string capo offset `capo + t1 - t5 - 5` (V2 loader
+  FUN_10004632c recomputes it; 14 of 16 corpus 5-string capo records agree).
+- **Duration**: lowest code for a tick count (corpus: code 6 x23,062 and 18
+  x726; 30, 21, 24, 27 never). A triplet's position is stored straight; the
+  writer searches for the unit that `retimeTriplet` maps back to the tick.
+- **Effects**: primary = byte 6 low nibble, shared with the h/p/slide code
+  (on the SOURCE note) and 0x0f dead; attribute = byte 8 low; second = byte 8
+  high (a second effect of 3 hides the attribute). Overflow is counted.
+- **Cells**: one component per (position, row). Text, repeat signs and chord
+  anchors take the first free cell (chords on a row of their own track).
+  Text bytes: 0x39, index, byte 9 = 3. Marks: 0xb7, byte 5 = 1, byte 6 = raw,
+  byte 7 = 1 (the common corpus form; not oracle-checked).
+- **Tracks**: the name is chosen so `instrumentToOtfId/Type` and the lead rule
+  (name has banjo/mandolin) read it back as this track. Drum tracks: +4 bit 7,
+  tuning bytes are placeholder line codes.
+- **Limits**: 15 tracks, 12 strings, 2048 measures, 100 reading-list entries,
+  names of 27 characters, text index one byte (256 texts), frets 0-24,
+  denominators 1/2/4/8/16. `notices` counts everything else.
+
 ## TablEdit's own names (2026-10, fix-it A15)
 
 Read from TablEdit 3.06 with REA/Ghidra. Prefer these over guessing from
