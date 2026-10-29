@@ -372,7 +372,7 @@
       }
     },
     "x_source": {
-      "description": "Provenance of the tab (type, source_id, author, url, converted_at, ...). Free-form: the only object in the format that accepts unknown keys.",
+      "description": "Provenance of the tab (type, source_id, author, url, converted_at, ...). Free-form: the only object in the format that accepts unknown keys. `skipped` (G15e) is {key: count}, written by the .tef importers only when at least one count is non-zero, and shown to the reader as \"Not kept from this file: ...\" (docs/js/tef-skipped.js). Keys, in this order, with the label readers see: tempo_changes = tempo changes; instrument_changes = instrument (MIDI) changes; scale_diagrams = scale diagrams; accents = accent and crescendo marks; slurs = slurs and brackets; picking_marks = picking marks not on a note; special_characters = special characters and musical signs; percussion = percussion marks; chord_diagrams = chord diagrams (only when a V2 chord table fails to parse); lyrics = lines of lyrics (V3 files store them as one free-text block of lines, not per syllable, so lines are what can be counted; V2 files are not counted); tapping = tapping amounts; vibrato = vibrato amounts; tremolo_bar = tremolo-bar amounts (the mark is kept as fx, the amount is not); other = other TablEdit markings (a component type the importer does not recognise). Deliberately not counted: voices, rests, stem and beam layout, and line breaks and spacing/layout marks, because none of them changes what the tab says; per-track volume and pan, because the track bytes that hold them are unknown. The submit step drops x_source, so skipped never reaches works/.",
       "type": "object"
     }
   },

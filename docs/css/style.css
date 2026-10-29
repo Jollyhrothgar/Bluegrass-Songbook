@@ -10842,6 +10842,9 @@ body.file-dragover {
     font-size: var(--font-sm);
     color: var(--text-secondary);
 }
+.arr-status .arr-skipped {
+    margin-top: 0.15rem;
+}
 
 /* A provisional work (#new-tab): the title and artist ARE the header. */
 .song-title-input,

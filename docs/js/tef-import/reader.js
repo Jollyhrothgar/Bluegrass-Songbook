@@ -3,6 +3,8 @@
 // where it matters; verified byte-exact against the Python parser by the
 // golden-diff gate (docs/js/__tests__/tef-import-golden.test.js).
 
+import { countSkipped } from './skipped.js';
+
 // --- Python-builtin shims --------------------------------------------------
 const u16 = (d, o) => d[o] | (d[o + 1] << 8);
 const u32 = (d, o) => (d[o] | (d[o + 1] << 8) | (d[o + 2] << 16) | (d[o + 3] << 24)) >>> 0;
@@ -456,6 +458,7 @@ export function parseV2(data, name) {
         reading_list: readingList,
         time_signature_changes: timeSignatureChanges,
         v3_global_ts: null,
+        skipped: countSkipped(data, header, v2ComponentStride(data, header)),
     };
 }
 
@@ -811,6 +814,7 @@ export function parseV3(data, name) {
         v3_global_ts: globalTs,
         v3_measure_starts: slotStarts,
         v3_measure_lengths: slotCounts,
+        skipped: countSkipped(data, header),
     };
 }
 

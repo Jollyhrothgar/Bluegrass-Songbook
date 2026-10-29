@@ -7,6 +7,7 @@ import {
     decodeDurationCode, isMelody, decodeStringFret, TRIPLET_DURATION_CODES, V3_UNITS_PER_WHOLE, v3Locate,
 } from './reader.js';
 import { OTF_VERSION } from '../otf-editor/otf-validate.js';
+import { SKIPPED_KEYS } from './skipped.js';
 
 const fdiv = (a, b) => Math.floor(a / b);
 
@@ -514,6 +515,8 @@ export function tefToOtf(tef) {
                    : { from_measure: e.from_measure, to_measure: e.to_measure }
         )),
         _tsChanges: tsChanges,
+        skipped: Object.fromEntries(
+            SKIPPED_KEYS.filter(k => tef.skipped && tef.skipped[k]).map(k => [k, tef.skipped[k]])),
     };
 
     normalizeSlideTiming(doc);
@@ -568,5 +571,6 @@ export function toOtfDict(doc) {
     }
     if (doc.annotations && doc.annotations.length) result.annotations = doc.annotations;
     if (doc.reading_list && doc.reading_list.length) result.reading_list = doc.reading_list;
+    if (doc.skipped && Object.keys(doc.skipped).length) result.x_source = { skipped: { ...doc.skipped } };
     return result;
 }
