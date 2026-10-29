@@ -7,7 +7,7 @@ import {
     songHasTags, getTagCategory, formatTagName, syncTagControls,
     getInstrumentTags, INSTRUMENT_FACETS, toggleFacetTag, activeQueryTags, onTagSync,
 } from './tags.js';
-import { songHasContent, prefetchSongContent } from './song-content.js';
+import { songHasContent, prefetchSongContent, pickRepresentative } from './song-content.js';
 import { setFieldTerm } from './search-query.js';
 import { pill } from './shell.js';
 import {
@@ -998,31 +998,6 @@ function loadMoreResults() {
         resultsDivEl.insertAdjacentHTML('beforeend', '<div class="scroll-sentinel"></div>');
         setupScrollObserver();
     }
-}
-
-/**
- * Pick the best representative version from a group for display.
- * A canonical row (editorially pinned via curation/registry.yaml) wins
- * outright; otherwise prefers: content > most chords > highest canonical_rank.
- */
-function pickRepresentative(versions) {
-    if (versions.length === 0) return null;
-    if (versions.length === 1) return versions[0];
-    const pinned = versions.find(v => v.canonical === true);
-    if (pinned) return pinned;
-    return [...versions].sort((a, b) => {
-        // Prefer versions with content (lead sheets). has_content on the
-        // lean index; an inline `content` string on legacy rows.
-        const aHasContent = songHasContent(a) ? 1 : 0;
-        const bHasContent = songHasContent(b) ? 1 : 0;
-        if (aHasContent !== bHasContent) return bHasContent - aHasContent;
-        // Then by chord count
-        const aChords = a.chord_count || 0;
-        const bChords = b.chord_count || 0;
-        if (aChords !== bChords) return bChords - aChords;
-        // Then by canonical rank
-        return (b.canonical_rank || 0) - (a.canonical_rank || 0);
-    })[0];
 }
 
 /**

@@ -26,4 +26,5 @@ find tests -name 'test_*.py' | sort        # the current set (about 50 files; do
   must stay in step with the JS mirror `docs/js/dedup-check.js`.
 
 Frontend unit tests are in `docs/js/__tests__/` (`npm test`, which exits;
-`npm run test:watch` does not). E2E tests are in `e2e/` (`npm run test:e2e`; Playwright starts its own server on port 8137).
+`npm run test:watch` does not). E2E tests are in `e2e/` (`npm run test:e2e`; Playwright starts its own server on this worktree's port,
+`e2e/port.js`).

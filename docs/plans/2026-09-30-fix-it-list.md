@@ -101,7 +101,7 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | G15e | Opening a `.tef` never says what it didn't keep | S | `feature/tef-bluegrass-core` | not started — #318 § G15e: `x_source.skipped`, shown on open and at Save as |
 | G15f | Nothing writes `.tef` | L | `feature/tef-writer` | not started — #318 § G15f: V3 writer (`docs/js/tef-export/`), File ▸ Save as… `.tef` / `.otf.json` / `.txt`; gates: 602-file round trip + TablEdit's own export |
 | G15g | Tour, docs and issues still describe Submit as the only end | S | `feature/tef-writer` | not started — #318 § G15g |
-| G16 | Agent docs outgrew their use: the root `CLAUDE.md` was 601 lines (Anthropic's guidance is under 200 per file) and the nested ones 8,500 more, much of it architecture an agent reads from the code and some of it wrong; every new paseo worktree started with no deps and no index; the `add-issue` skill didn't know this backlog, and `github-project` said to squash-merge; dead docs and abandoned imports sat in the tree | M | `docs/refresh-agent-docs-paseo-workflow` | in review: `paseo.json` (worktree setup, `web` service, `test` script); root `CLAUDE.md` 601 → ~150 lines plus path-scoped `.claude/rules/`; nested docs 8,546 → 3,069 lines, each fact re-checked against the code; dead docs and abandoned experiments deleted; issue skills refreshed; all 72 open issues audited and cleaned up (2026-10-28); merged remote branches deleted. Follow-ups below |
+| G16 | Agent docs outgrew their use: the root `CLAUDE.md` was 601 lines (Anthropic's guidance is under 200 per file) and the nested ones 8,500 more, much of it architecture an agent reads from the code and some of it wrong; every new paseo worktree started with no deps and no index; the `add-issue` skill didn't know this backlog, and `github-project` said to squash-merge; dead docs and abandoned imports sat in the tree | M | `docs/refresh-agent-docs-paseo-workflow`, `docs/g16-followups` | done — #317 (2026-10-28): `paseo.json` (worktree setup, `web` service, `test` script); root `CLAUDE.md` 601 → ~150 lines plus path-scoped `.claude/rules/`; nested docs 8,546 → 3,069 lines, each fact re-checked against the code; dead docs and abandoned experiments deleted; issue skills refreshed; all 72 open issues audited and cleaned up (2026-10-28); merged remote branches deleted. #329 gave each PR its own CI queue, so parallel PRs no longer cancel each other. Follow-ups (2026-10-28): every `CLAUDE.md` under 200 lines, E2E on a per-worktree port, `pickRepresentative` shared; two idle branches and the container repo wait on Mike |
 | G17 | The tab editor shows the same commands twice: the session bar under the song title (Submit · ⬇ Download · Cancel · ✓ Done, `otf-editor/work-edit.js` `createTabEditSession`) repeats the editor's File menu (📂 Open… · Submit · ⬇ Download OTF · Cancel · ✓ Done), and the toolbar's NOTE LENGTH and TECHNIQUE buttons repeat the Note menu (durations, dotted, triplet, tie, hammer-on …) | M | — | not started — Mike, 2026-10-29, while testing G15c (#331): synthesize the menus and buttons into one command surface per device (desktop and the phone ☰ sheet): decide what lives only in a menu and what stays a visible button, then remove the duplicates. The menu tables (`menu-bar.js`, `bindings.js`) stay the single list of commands. Do it before G15f adds Save as…, which would otherwise be a third copy |
 
 ### How it ships
@@ -1506,27 +1506,37 @@ Done on `docs/refresh-agent-docs-paseo-workflow`:
 - **Remote branches.** The eleven branches merged on 2026-10-01 were deleted
   from GitHub.
 
-Follow-ups:
+Follow-ups, done on `docs/g16-followups` (2026-10-28):
 
-- **Still over 200 lines:** `scripts/lib/CLAUDE.md` (324),
-  `supabase/CLAUDE.md` (267), `docs/js/otf-editor/CLAUDE.md` (266),
-  `docs/js/lead-editor/CLAUDE.md` (244, after the six editor PRs of
-  2026-10-28 were carried in), `docs/js/CLAUDE.md` (228). What remains is rules and cross-file couplings;
-  the next cut means deciding which of them an agent can live without.
-  `.claude/skills/tab-debug/SKILL.md` is 562 lines (Anthropic suggests under
-  500 for a skill); its reference sections could move to a sibling file.
-- **In-flight PRs #308 and #311** edit `docs/js/lead-editor/CLAUDE.md`,
-  which is rewritten here. Whichever merges second carries the other's
-  additions into the new text (#313, #314 and #315 already have been).
-- **E2E can't run in two worktrees at once.** It binds port 8137 exactly, so
-  the second run fails until it is given `PW_PORT`. If that gets in the way,
-  paseo can assign each worktree a port.
-- **`pickRepresentative`** is duplicated in `docs/js/work-view.js` and
-  `docs/js/search-core.js`.
-- **Two unmerged, idle branches** are still on GitHub:
-  `bug/pending-content-not-null` (last commit 2026-08-20) and
-  `feature/design-review-followups` (2026-10-04, also checked out in the
-  container folder's `feature-ui-state-inventory` worktree).
+- **Every `CLAUDE.md` is under 200 lines.** Rules that apply to a few files
+  moved to path-scoped rules, which load only when an agent touches those
+  files: `.claude/rules/search.md` (it also covers the Python copy of the
+  search, `scripts/lib/search_index.py`, which an agent editing
+  `search-core.js` never saw before), `contribution-gate.md` (`classifyChange`
+  and ownership, for both the edge function and `process_pending.py`),
+  `supabase-migrations.md` and `lead-sheet-editor-shell.md`. Reference
+  material moved beside its doc: `scripts/lib/BUILD.md`,
+  `docs/js/otf-editor/MODEL.md`, `docs/js/lead-editor/CHORDS-MODE.md`. The
+  `tab-debug` skill's byte-level TEF notes moved to `TEF-REFERENCE.md` in the
+  skill (562 → 408 lines). Nothing was cut; each moved section is behind a
+  pointer that says when to read it.
+- **E2E runs in parallel worktrees.** `e2e/port.js` derives each worktree's
+  port from its path (20000-29999), so two worktrees no longer fight over
+  8137. `PW_PORT` still overrides.
+- **`pickRepresentative`** lives once, in `docs/js/song-content.js`, with
+  tests; `work-view.js` and `search-core.js` import it.
+- **`analytics/*.png`** are `grassiness_analysis.py` output, so they are
+  gitignored and untracked. `analytics/bluegrass-research/` stays: research
+  notes that `scripts/lib/tagging/CLAUDE.md` cites.
+
+Still Mike's call:
+
+- **Two unmerged branches** are on GitHub, and neither is on `main`:
+  `bug/pending-content-not-null` (2026-08-20; despite its name, about 950
+  lines making a tab edit a session over one part, with drafts saved as you
+  type) and `feature/design-review-followups` (2026-10-04; a four-line
+  fix-it note, "Prep first" list rows, also checked out in the container
+  folder's `feature-ui-state-inventory` worktree).
 - **The container repo** (`Bluegrass-Songbook-workspace`, private) versions
   only the worktree-dispatch layer: `setup.sh` rebuilds the bare-clone +
   `main` worktree layout on a new machine, and its `CLAUDE.md` and
@@ -1534,5 +1544,3 @@ Follow-ups:
   worktrees. Nothing in it (or in this repo) deploys or self-hosts the site,
   which ships to GitHub Pages. With paseo making worktrees, only `setup.sh`
   still earns its keep.
-- `analytics/` keeps one-off PNGs and `bluegrass-research/` notes from
-  January that nothing reads.

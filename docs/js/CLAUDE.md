@@ -15,7 +15,7 @@ return), `TOUR.md` (feature tour).
 ./scripts/server      # dev server (needs ./scripts/bootstrap once for docs/data/)
 npm test              # Vitest, once; `npm test -- tab-edit-band` runs one file
 npm run test:watch    # never exits; don't run it from an agent
-npm run test:e2e      # Playwright; starts its own server on 8137 (e2e/CLAUDE.md)
+npm run test:e2e      # Playwright; starts its own server (e2e/CLAUDE.md)
 ```
 
 `__tests__/setup-webstorage.js` undoes Node 25's empty global `localStorage`
@@ -72,8 +72,8 @@ problems in the data (Mike, 2026-10-28; `.claude/rules/tests.md`).
 
 `openWork(id, opts)` renders lead sheets, tab-only works and multi-part works.
 `openSong(id)` (song-view.js) only calls `openWork(id, {exact: true})` (that
-exact version, not the group's representative, which `pickRepresentative`
-chooses; work-view.js and search-core.js each have a copy, keep them in step).
+exact version, not the group's representative, which
+`song-content.js::pickRepresentative` chooses for search and the song page).
 Do not add a second render path.
 
 - `/songs/{song}/` and `/songs/{song}/{version}/` are a song and a version.
@@ -130,23 +130,10 @@ them. Client side (`main.js`, `state.js`: `SONG_PATH`, `songHref`,
 
 ## Search
 
-Syntax lives in `search-query.js`, scoring in `search-core.js`; read those, not a
-list here. Not obvious from the code:
-
-- There is deliberately no `key:` filter (keys transpose) and no `covering:`
-  filter. `status:`, `has:` and every negation except `-tag:` were removed on
-  purpose; typing them degrades to plain text.
-- Instrument tags (`tag:banjo`, `tag:multipart`, ...) are virtual:
-  `tags.js::getInstrumentTags(song)` derives them from `tablature_parts` and
-  `has_abc`, and matching, badges, the Tags dropdown and the Instrument facet all
-  read it. Add a facet in `INSTRUMENT_FACETS` plus its checkbox in `index.html`.
-- Facet chips write syntax into the search box so the box stays the single
-  source of truth. The Instrument pill uses `tags.js::toggleFacetTag`; other
-  surfaces sync through `tags.js::onTagSync(fn)`.
-- Scope: canon by default; `#dungeon` (`dungeonMode`) searches the archive only;
-  the "Include the dungeon" checkbox (`includeDungeon`, localStorage
-  `songbook-include-dungeon`) searches both. `searchableSongs()` decides;
-  `main.js::applySearchScope()` loads the archive when needed.
+Search syntax, scope (canon, dungeon, both) and the virtual instrument tags
+load from `.claude/rules/search.md` when you touch `search-core.js`,
+`search-query.js` or `tags.js`. That rule also covers the Python copy of the
+search (`scripts/lib/search_index.py`), which must change with `search()`.
 
 ## Song page
 
@@ -185,32 +172,10 @@ boot-graph budget and names the modules that must stay out.
 
 ## Lead-sheet editor shell (`editor.js`)
 
-- Smart paste (`smart-paste.js`) turns a heading for a played part (`[Intro]`,
-  `[Interlude]`, `[Instrumental]`, `[Break]`, `[Solo]`, `[Outro]`, `[Tag]`,
-  `[Ending]`) into a real section, and a line of chords with no words under it
-  into a chords-only line (`[G]   [B7]    [C]`), so its chords transpose. Other
-  headings (`[Capo 2]`) stay `{comment: …}` notes. A pasted chord that sits a
-  letter or two into a word (chord sites draw it over the word: `t[G]en`) moves
-  to the start of that syllable, `[G]ten`; deeper into a long syllable it backs
-  up only to the start of its sound (`Charlottes[G]ville`)
-  (`smart-paste.js::chordColumnToLyric`). The downbeat isn't in the text, so
-  placing it exactly stays the charter's job in Chords mode.
-- Every reader of the song text goes through `getText()` / `setText()` (submit,
-  copy, download, dirty check, sign-in return record, transpose).
-  `#editor-content` is only a hidden fallback textarea.
-- The editor is a view entered through `currentView` (`enterEditMode` calls
-  `setCurrentView('add-song')`); do not hide the song page by hand. Leaving with
-  unsaved edits shows `promptUnsavedChanges` (never `window.confirm`; a test
-  forbids native dialogs), and `main.js::guardEditorExit` defers `exitEditMode()`
-  until the answer because the navigation has already happened.
-- Ownership wording mirrors the server (`pending-dispatch.ts`): the submitter and
-  trusted users update in place ("Submit Correction"); everyone else forks
-  ("Save as My Arrangement"). `editsInPlace()` decides.
-- There is deliberately no Edit Comment field: `pending_songs.notes` becomes the
-  work's `notes` when an edit lands on the primary chart (`process_pending.py`),
-  so a free-text comment would overwrite the song's description.
-- The sign-in redirect (`auth-return.js`) restores the route and the editor's
-  text; see `CONTRIBUTIONS.md` before changing it.
+Smart paste, the text adapter (`getText()` / `setText()`), leaving with unsaved
+edits, and the in-place-or-fork wording load from
+`.claude/rules/lead-sheet-editor-shell.md` when you touch `editor.js`,
+`smart-paste.js` or `auth-return.js`. The editor itself is `lead-editor/`.
 
 ## Smaller rules
 
@@ -218,11 +183,6 @@ boot-graph budget and names the modules that must stay out.
   of its id to the `auto-commit-song` edge function; the client never claims
   create/update/fork and never sends who the submitter is. The `create-song-issue`
   and `create-tab-pr` flows are deleted; nothing may call them.
-- Bounty board: `title-match.js` exposes no fuzzy ratio on purpose (scores
-  0.80-0.93 mix true and false pairs: `500 Miles` / `900 Miles` scores 0.89) and
-  returns candidate arrays, never a best match. `partitionWanted()`
-  (`bounty-view.js`) also filters against `data/bounty_decisions.json`, built from
-  `curation/bounty_decisions.yaml`. Evidence: `sources/bounty-hunt/CLEANUP-PLAN.md`.
 - Lists: owners and followers read the tables (RLS); everyone else uses the
   `get_public_list` RPC. `SupabaseAuth.fetchPublicList` returns
   `{list, songs, isOwner, isFollower, isOrphaned, canClaim}` (normalized in

@@ -6,7 +6,7 @@ import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import {
     getSongContent, getSongContents, peekSongContent, primeSongContent,
     clearSongContentCache, songHasContent, songHasAbc, songContentUrl,
-    prefetchSongContent,
+    prefetchSongContent, pickRepresentative,
 } from '../song-content.js';
 
 const LEAN = { id: 'blue-moon-of-kentucky', title: 'Blue Moon', has_content: true };
@@ -256,5 +256,35 @@ describe('prefetchSongContent', () => {
         vi.stubGlobal('navigator', { ...globalThis.navigator, connection: { saveData: true } });
         expect(prefetchSongContent(LEAN)).toBeNull();
         expect(fetchMock).not.toHaveBeenCalled();
+    });
+});
+
+describe('pickRepresentative', () => {
+    const row = (id, extra = {}) => ({ id, ...extra });
+
+    it('returns null for no versions and the only one for one', () => {
+        expect(pickRepresentative([])).toBeNull();
+        const only = row('a');
+        expect(pickRepresentative([only])).toBe(only);
+    });
+
+    it('takes a canonical pin over anything with more chords', () => {
+        const pinned = row('pinned', { canonical: true });
+        const rich = row('rich', { has_content: true, chord_count: 9 });
+        expect(pickRepresentative([rich, pinned])).toBe(pinned);
+    });
+
+    it('prefers a lead sheet, then more chords, then a higher canonical_rank', () => {
+        const tabOnly = row('tab-only', { chord_count: 12, canonical_rank: 9 });
+        const few = row('few', { has_content: true, chord_count: 3, canonical_rank: 9 });
+        const many = row('many', { has_content: true, chord_count: 5, canonical_rank: 1 });
+        const manyRanked = row('many-ranked', { has_content: true, chord_count: 5, canonical_rank: 2 });
+        expect(pickRepresentative([tabOnly, few, many, manyRanked])).toBe(manyRanked);
+    });
+
+    it('does not reorder the caller\'s array', () => {
+        const versions = [row('x', { chord_count: 1 }), row('y', { chord_count: 2 })];
+        pickRepresentative(versions);
+        expect(versions.map(v => v.id)).toEqual(['x', 'y']);
     });
 });

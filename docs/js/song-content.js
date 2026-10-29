@@ -87,6 +87,29 @@ export function songHasContent(song) {
 }
 
 /**
+ * Pick the version that represents a group (a search result, the song page).
+ * A canonical row (editorially pinned via curation/registry.yaml) wins
+ * outright; otherwise prefers: content > most chords > highest canonical_rank.
+ * Content is the row's flag, not whether its chart has been fetched, so the
+ * order can't depend on which versions the reader opened this session.
+ */
+export function pickRepresentative(versions) {
+    if (versions.length === 0) return null;
+    if (versions.length === 1) return versions[0];
+    const pinned = versions.find(v => v.canonical === true);
+    if (pinned) return pinned;
+    return [...versions].sort((a, b) => {
+        const aHasContent = songHasContent(a) ? 1 : 0;
+        const bHasContent = songHasContent(b) ? 1 : 0;
+        if (aHasContent !== bHasContent) return bHasContent - aHasContent;
+        const aChords = a.chord_count || 0;
+        const bChords = b.chord_count || 0;
+        if (aChords !== bChords) return bChords - aChords;
+        return (b.canonical_rank || 0) - (a.canonical_rank || 0);
+    })[0];
+}
+
+/**
  * Does this work have ABC notation? The lean index flags it (`has_abc`);
  * older rows either carry an `abc_content` field or an inline
  * `{start_of_abc}` block in their ChordPro.
