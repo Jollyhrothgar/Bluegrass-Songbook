@@ -60,7 +60,7 @@ const noteTexts = (c) => [...c.querySelectorAll('.note-text')];
 const FX = [
     'brush', 'roll', 'choke', 'ghost', 'staccato', 'let-ring', 'muted',
     'harmonic', 'artificial-harmonic', 'tap', 'vibrato', 'tremolo',
-    'bend-release', 'slap',
+    'bend', 'bend-release', 'slap',
 ];
 
 describe('note.fx: every effect draws a findable mark', () => {

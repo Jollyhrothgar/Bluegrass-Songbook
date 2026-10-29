@@ -1710,8 +1710,48 @@ export class EditingFacade {
         return this._mutate(on === false ? 'Remove effect' : 'Set effect', () => {
             const { note } = this._findNote(pos, trackId);
             if (!note) return false;
-            return writeFx(note, fx, on);
+            const changed = writeFx(note, fx, on);
+            if (changed) this._syncBendTarget(trackId, pos, note, fx);
+            return changed;
         });
+    }
+
+    /**
+     * Keep a bend's target marked (G15d2). A note carrying `bend` or
+     * `bend-release` bends into the NEXT note on its string (any later
+     * measure), and that note is marked `tech: 'b'` so the renderer and
+     * player find it. Turning the bend on marks it (unless it already owns a
+     * technique or sits on the same fret); turning it off unmarks it. The
+     * amount is the fret difference, so editing the target's fret edits the
+     * bend. Insert, delete or move a note between the two and the link is
+     * not rewritten: the old target keeps its `b` and plays as a lone note
+     * (see "Bends" in otf-editor/CLAUDE.md).
+     */
+    _syncBendTarget(trackId, pos, note, fx) {
+        if (fx !== 'bend' && fx !== 'bend-release') return;
+        const target = this._nextOnString(trackId, pos, note.s);
+        if (!target) return;
+        if (note.fx?.includes('bend') || note.fx?.includes('bend-release')) {
+            if (!target.tech && target.f !== note.f) target.tech = 'b';
+        } else if (target.tech === 'b') {
+            delete target.tech;
+        }
+    }
+
+    /** The next note on `string` after `pos`, in any later measure/tick. */
+    _nextOnString(trackId, { measure, tick }, string) {
+        let best = null, bestAbs = Infinity;
+        const from = this.toAbs(measure, tick);
+        for (const m of this.getNotation(trackId)) {
+            const base = this.toAbs(m.measure, 0);
+            for (const e of m.events) {
+                const abs = base + e.tick;
+                if (abs <= from || abs >= bestAbs) continue;
+                const n = e.notes.find(x => x.s === string);
+                if (n) { best = n; bestAbs = abs; }
+            }
+        }
+        return best;
     }
 
     /** Flip one effect on one note. @returns {boolean} false when no note */
@@ -1738,8 +1778,11 @@ export class EditingFacade {
         }
         return this._mutate(want ? 'Set effect' : 'Remove effect', () => {
             let changed = false;
-            for (const { note } of this.notesInRange(startAbs, endAbs, { strings, trackId })) {
-                if (writeFx(note, fx, want)) changed = true;
+            for (const hit of this.notesInRange(startAbs, endAbs, { strings, trackId })) {
+                if (writeFx(hit.note, fx, want)) {
+                    changed = true;
+                    this._syncBendTarget(trackId, hit, hit.note, fx);
+                }
             }
             return changed;
         });
