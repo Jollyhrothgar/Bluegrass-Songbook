@@ -241,9 +241,13 @@ in a performance is arrangement (set-list data).
 
 - **Desktop:** lyrics on the left, the chart on the right, generated parts
   (as tab) under the chart. Lyric sections and chart sections sit side by side.
-- **Phone:** open. Either the song page's existing part tabs (Lyrics | Chart),
-  or each chart line under its lyric line (four one-cell bars fit a phone
-  width). Interleaving only works where a chart line really is a lyric line.
+- **Phone** (Mike, 2026-10-29): chart view behind the song page's part tabs
+  (Lyrics | Chart); practice mode puts each chart line under its lyric line
+  (four one-cell bars fit a phone width). Mockups:
+  `design/ui-states/proposed/g18b-chart-{desktop,phone}.html`.
+- **Spacing:** each bar is divided into equal sub-cells, one per slot, and a
+  chord or `\` is centered in its sub-cell (Mike, 2026-10-29). Two cells to a
+  bar make four equal sub-cells.
 - **Display details:** a chord carried over a line break is repeated faintly
   in the next line's first slot, so you never look back up a line; the key can
   show its capo shape ("Key of A (G capo 2)"); a section shows its repeat
@@ -313,6 +317,9 @@ Each step is useful without the next.
 - Breaks and arrangement belong to set lists.
 - Tabs are partial; tabs and ABC for instrumentals relate to the chart the way
   lyrics do.
+- Desktop as drawn in the G18b mockup; phone: part tabs for chart view, chart
+  lines under lyric lines for practice; the toggle reads "Bars: One cell | Two
+  cells"; chord and `\` centered in equal sub-cells (2026-10-29).
 - Wanted, from Mike's notes on chart editors (2026-10-29): split slots, push,
   stop / let ring / rest, a meter change on a single bar, 1st and 2nd endings,
   first-time and last-time sections, and fast keyboard entry.
@@ -323,13 +330,9 @@ Each step is useful without the next.
 - **Chords stored as numbers.** Claude's recommendation (key and capo become
   display only, comparisons are key-free); not yet confirmed. If so, a minor
   key is numbered from its own tonic (1m) or from the relative major (6m).
-- **The barring toggle's label:** "one cell / two cells a bar", or the time
-  signature of the tab beside it. Most 4/4 tabs are one-cell bars, so "4/4"
-  alone is ambiguous.
 - **Starting meter:** take 3/4 or duple from the lyric chart's own `{time}`
   when it has one (416 charts declared one on 2026-10-28)?
 - **Notation** for split slots, push and the effects.
-- **Phone layout:** part tabs, or chart lines under lyric lines.
 - **One chart per song, or takes** like tabs.
 - **May a version carry its own chart or form?** Leaning no for now: one per
   song, and a version that doesn't line up is flagged.
