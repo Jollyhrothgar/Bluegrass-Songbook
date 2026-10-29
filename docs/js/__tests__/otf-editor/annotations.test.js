@@ -22,7 +22,9 @@ import { AnnotationPopover } from '../../otf-editor/popover.js';
 import { dispatchEditorEvent } from '../../otf-editor/recorder.js';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
-const WNY_PATH = path.join(here, '../../../../works/welcome-to-new-york/banjo.otf.json');
+// A pinned copy of works/welcome-to-new-york/banjo.otf.json (2026-10-28): the
+// live tab can be corrected in the app, and a test must not break when it is.
+const WNY_PATH = path.join(here, '../fixtures/welcome-to-new-york-banjo.otf.json');
 const wnyRaw = fs.readFileSync(WNY_PATH, 'utf8');
 const wny = JSON.parse(wnyRaw);
 

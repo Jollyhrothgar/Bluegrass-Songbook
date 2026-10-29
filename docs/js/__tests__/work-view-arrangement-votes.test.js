@@ -307,7 +307,7 @@ describe('Arrangement pill — the default-flip signal', () => {
         await openPillWithVotes();
 
         expect(flipNote().textContent)
-            .toContain('works/how-long-blues/work.yaml');
+            .toContain('works/how-long-blues/work.yaml');   // not a file read
     });
 
     it('keeps the file path out of an ordinary reader\'s way', async () => {
