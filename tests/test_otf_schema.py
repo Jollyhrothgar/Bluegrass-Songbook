@@ -187,8 +187,10 @@ def test_every_tracked_otf_validates_or_is_pinned_as_known_invalid():
     """Sweep the corpus with every rule strict, as a ratchet.
 
     ``known_invalid.txt`` pins the files that fail today and the rule ids each
-    breaks. This fails if a file NOT on the list fails, if a listed file starts
-    passing (delete its line), or if a listed file's set of rule ids changes.
+    breaks. This fails if a file NOT on the list fails, if a listed file's set
+    of rule ids changes, or if a listed ``sources/*/parsed/`` file starts passing
+    (delete its line). A listed ``works/`` file that passes or is gone is fine:
+    readers edit works on main, and that must not block a deploy.
     Warnings (reading-list overruns, #263) never fail.
     """
     known = read_known_invalid()
@@ -201,7 +203,10 @@ def test_every_tracked_otf_validates_or_is_pinned_as_known_invalid():
         if errors:
             actual[rel] = rule_ids(errors)
     new = {f: r for f, r in actual.items() if f not in known}
-    fixed = sorted(f for f in known if f not in actual)
+    # A works/ file can be fixed or deleted by a reader's edit (a bot commit on
+    # main, .claude/rules/tests.md), so only the frozen sources/*/parsed/ lines
+    # must be pruned when they stop failing; a fixed works/ line just goes stale.
+    fixed = sorted(f for f in known if f not in actual and not f.startswith('works/'))
     changed = {f: (known[f], actual[f]) for f in known if f in actual and known[f] != actual[f]}
     problems = []
     if new:

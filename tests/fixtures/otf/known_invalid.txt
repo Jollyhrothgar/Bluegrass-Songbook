@@ -1,6 +1,8 @@
 # Corpus files that fail an OTF rule today, and the rule ids each breaks.
 # Ratchet (tests/test_otf_schema.py): a file not listed here must pass; a listed
-# file that starts passing, or whose rule ids change, fails the test. Rule ids are
+# file whose rule ids change fails the test, and so does a listed sources/ file
+# that starts passing (a fixed or deleted works/ file does not: readers edit
+# works/ on main, and that must not block a deploy). Rule ids are
 # the [bracketed] ids from otf_schema.py; `schema` means the JSON Schema rejects it.
 # Format: <path> <rule-id> [<rule-id> ...]
 
