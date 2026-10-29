@@ -126,10 +126,15 @@ export const TAB_EDITOR_PATH = /^\/tab-editor\/?$/;
  * to leave it. Only a song shows at a song's path and only the front door at
  * /tab-editor/; every other view belongs to the root, so a hash route set on
  * either path (`/tab-editor/#search`) becomes `/#search`.
+ *
+ * `entryView` is the history entry's own `state.view`. An entry that belongs
+ * to its path's view is never stray, even while `view` still names the page
+ * being left: Back then Forward onto a song lands before the song's route runs.
  */
-export function normalizedHref(view, { pathname, hash = '' }) {
-    const stray = (view !== 'song' && SONG_PATH.test(pathname))
-        || (view !== 'tab-editor' && TAB_EDITOR_PATH.test(pathname));
+export function normalizedHref(view, { pathname, hash = '' }, entryView = null) {
+    const owns = (v) => view === v || entryView === v;
+    const stray = (!owns('song') && SONG_PATH.test(pathname))
+        || (!owns('tab-editor') && TAB_EDITOR_PATH.test(pathname));
     return stray ? `/${hash}` : null;
 }
 
