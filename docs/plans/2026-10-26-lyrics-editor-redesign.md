@@ -421,11 +421,14 @@ shown** (2026-10-26):
   II⁷ (V⁷/V)". This is the hint Strum Machine lacks.
 - **The chart is not tinted.** The highlighting lives in the sheet only.
 
-**The key in the sheet's header: open.** What should changing it do?
-Transpose the song, declare `{key: …}`, or should it leave the sheet so
-that key changes happen only in the toolbar? It declares for now. Whichever it
-becomes, the toolbar's key shows the same key as the sheet (one function,
-`currentSongKey`, feeds the sheet, the toolbar and the submitted key).
+**The key: decided 2026-10-28 (Mike).** One key per song, changed in one
+place, the toolbar, and changing it moves the whole song: every chord, plus
+`{key: …}`, one undo step (the relative minor only renames: G -> Em moves
+nothing). The sheet shows the key and does not change it ("the chord UI is in
+service of editing the song, which has a selected key"). Songs with real key
+changes are dealt with later, and nothing here blocks charting one: any chord
+is reachable from More roots or by typing. One function, `currentSongKey`,
+still feeds the sheet, the toolbar and the submitted key.
 
 ### Chord glyphs (book and editor alike)
 

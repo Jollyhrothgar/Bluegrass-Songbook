@@ -139,6 +139,33 @@ describe('currentSongKey: ONE owner for the toolbar, the chord sheet and the sub
     });
 });
 
+describe('keyShift / songInKey: one key per song, and changing it moves the whole song', () => {
+    it('keyShift goes the nearer way and compares keys through their relative major', async () => {
+        const { keyShift } = await import('../lead-editor/doc-model.js');
+        expect(keyShift('G', 'A')).toBe(2);
+        expect(keyShift('G', 'F')).toBe(-2);
+        expect(keyShift('G', 'C')).toBe(5);
+        expect(keyShift('G', 'D')).toBe(-5);
+        expect(keyShift('G', 'C#')).toBe(6);
+        expect(keyShift('G', 'Em')).toBe(0);        // the same chords: only the key's name was wrong
+        expect(keyShift('Em', 'G')).toBe(0);
+        expect(keyShift('G', 'Am')).toBe(5);        // to C's chords
+        expect(keyShift('Am', 'Bm')).toBe(2);
+        expect(keyShift(null, 'A')).toBe(0);
+    });
+    it('songInKey moves every chord and declares the key, replacing an old declaration', async () => {
+        const { songInKey } = await import('../editor.js');
+        expect(songInKey('[G]Hello [C]there [D7]friend', 'A')).toBe('{key: A}\n[A]Hello [D]there [E7]friend');
+        expect(songInKey('{key: G}\n[G]Hello [C/G]there', 'A')).toBe('{key: A}\n[A]Hello [D/A]there');
+        expect(songInKey('[G]Hello [Em]there', 'Em')).toBe('{key: Em}\n[G]Hello [Em]there');
+        expect(songInKey('Hello there', 'D')).toBe('{key: D}\nHello there');      // no chords yet: it only declares
+    });
+    it('a song that really changes key moves as a whole: both keys go up together', async () => {
+        const { songInKey } = await import('../editor.js');
+        expect(songInKey('{key: G}\n[G]verse [D]one\n[A]modulated [E]up', 'A')).toBe('{key: A}\n[A]verse [E]one\n[B]modulated [F#]up');
+    });
+});
+
 describe('syllableEnd: the box outline', () => {
     const text = 'Many long years ago\nsecond [G]line';
     it('a syllable start gives that syllable\'s end', () => {

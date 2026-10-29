@@ -5,7 +5,7 @@
 // `parseChordPro` rule for rule, so what Visual mode shows is what the song
 // page shows.
 
-import { isValidChord, extractChords, detectKey } from '../chords.js';
+import { isValidChord, extractChords, detectKey, getSemitonesBetweenKeys } from '../chords.js';
 import { tokenizeLine } from '../visual-editor/syllables.js';
 
 const SECTION_START_RE = /^\{start_of_(\w+)(?::\s*([^}]*?))?\s*\}$/i;
@@ -38,6 +38,25 @@ export function currentSongKey(text) {
     const { key, mode } = detectKey(chords);
     if (!key) return { key: null, mode: null };
     return { key: mode === 'minor' && !key.endsWith('m') ? `${key}m` : key, mode };
+}
+
+/** The text with `{key: k}` written (replacing the declaration, else a new first line). */
+export function withKey(text, k) {
+    const re = /^(\s*)\{(?:key:\s*|meta:\s*key\s+)([A-G][#b]?(?:m|min)?)\s*\}/im;
+    if (re.test(text)) return text.replace(re, (_, ws) => `${ws}{key: ${k}}`);
+    return `{key: ${k}}\n${text}`;
+}
+
+/**
+ * How far the chords move when the song goes from key `from` to key `to`, in semitones (-5..6, the nearer way).
+ * Keys are compared through their relative major, so G -> A is +2, G -> Em is 0 (the same chords: only the key's
+ * name was wrong) and G -> Am is +5 (to C's chords). 0 when either key is unknown.
+ */
+export function keyShift(from, to) {
+    if (!from || !to) return 0;
+    const minor = (k) => (/m$/.test(k) ? 3 : 0);
+    const s = (getSemitonesBetweenKeys(from, to) + minor(to) - minor(from) + 24) % 12;
+    return s > 6 ? s - 12 : s;
 }
 
 /** One chord token, `[G7]`: global, so always reset lastIndex or use matchAll. */
@@ -254,7 +273,8 @@ export function protectedSpans(text, free = null, analysis = analyzeDocument(tex
 /**
  * The `{start_of_*}` / `{end_of_*}` line indexes of every explicit (non tab / ABC / grid) section whose WHOLE
  * extent, from its start line's first character to its last line's last character, lies inside [from, to).
- * Those directives go with the lyrics when a user deletes the whole section; metadata and locked blocks never.
+ * Those directives go with the lyrics when a user deletes the whole section; so does a `{comment}` row wholly inside.
+ * Metadata and the other locked blocks (tab / ABC / grid) never.
  */
 export function freedSectionLines(text, from, to, analysis = analyzeDocument(text)) {
     const free = new Set();
@@ -265,6 +285,13 @@ export function freedSectionLines(text, from, to, analysis = analyzeDocument(tex
         if (!a || !b || a.from < from || b.to > to) continue;
         free.add(s.startLine);
         if (b.kind === 'hidden' && SECTION_END_RE.test(b.text.trim())) free.add(b.index);
+    }
+    // a `{comment}` row ("Interlude", from a pasted chord sheet) wholly inside the range goes too: it is a note, not
+    // metadata, and it had no other way out of Lyrics mode (2026-10-28)
+    for (const blk of analysis.blocks) {
+        if (blk.type !== 'comment' || blk.from < from || blk.to > to) continue;
+        const l = analysis.lines.find((x) => x.from === blk.from);
+        if (l) free.add(l.index);
     }
     return free;
 }

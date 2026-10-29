@@ -723,9 +723,14 @@ function initViewSubscription() {
                 // the first visit it appears only once the editor is ready.
                 if (editorModule) {
                     editorPanel?.classList.remove('hidden');
+                    editorModule.showEditorBand();          // the editor's controls: the bottom band, on every device
+                    editorModule.focusEmptyEditor?.();
                 } else {
                     loadEditor().then(() => {
-                        if (currentView === 'add-song') editorPanel?.classList.remove('hidden');
+                        if (currentView !== 'add-song') return;
+                        editorPanel?.classList.remove('hidden');
+                        editorModule.showEditorBand();
+                        editorModule.focusEmptyEditor?.();
                     }).catch((err) => lazyLoadFailed('the editor', err));
                 }
                 break;

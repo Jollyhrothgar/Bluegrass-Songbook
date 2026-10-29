@@ -107,6 +107,20 @@ override: with it, iOS drew a second selection and handles over the native one.
   section open at the start, drops boundaries inside, re-opens the rest with its
   own type/label, renumbers `Verse N` labels from there on).
 - **Other…** (`askType`) settles exactly once: Enter, the Add button and a blur with text COMMIT, Escape or an empty field cancels; the value is read and the blur listener removed BEFORE the input is removed. The bar's pointerdown/mousedown `preventDefault` skips the input so iOS places the caret.
+- **The label menu follows the screen** (2026-10-28): `placeLabelMenu` runs again on `visualViewport` / window resize
+  while the menu is open (`onViewportForLabelMenu`), measuring the menu's own height (its `max-height` cleared first). On
+  an iPhone the keyboard closes AFTER a label is tapped, so a menu measured at the tap kept the space above the keyboard:
+  "Remove label" cut in half, "Delete section" out of sight. e2e: "the section label menu on a phone".
+- **Note rows can go** (2026-10-28): a `{comment}` row (smart paste turns UG's `[Interlude]` / `[Intro]` / `[Break]`
+  headings into one) is a locked block, so it was protected like a tab and could only be removed in ChordPro mode.
+  `freedSectionLines` now frees a comment row lying wholly inside a deletion (select across it + Backspace), and tapping
+  it in Lyrics mode (`LockedWidget` -> `hooks.onComment` -> `index.js::openCommentMenu`) offers **Delete note**, one
+  undo step. The row's line is read with `posAtDOM` at the tap (the widget is reused when text above it moves). Tab /
+  ABC / grid blocks are still never deleted from Lyrics. e2e: "a note row" (`visual-editor.spec.js`).
+- **Making and editing notes** (2026-10-28): the section bar's **Note** (after Other…) turns every lyric line the
+  selection touches into `{comment: words}` IN PLACE (`section-ops.js::noteSelection`; chords dropped, braces stripped;
+  inside a section it stays there, as the song page draws it). The note's menu has an **Edit** field + Save
+  (`setNoteText`) above Delete note. Both are one undo step. Before this a note could only be typed in ChordPro mode.
 - **Only the mode switch enters Chords** (2026-10-27): no double-click shortcut on any device; a double-click in Lyrics is the browser's word selection.
 - **Chords are greyed in Lyrics** (2026-10-27): `.le-mode-lyrics .le-cm .cl-chord-glyph` is secondary colour, opacity 0.5, default cursor; colour / opacity only, so the layout is the book's.
 - **Protected text** (2026-10-27): `protectDirectivesFilter` clips a USER delete / replace to the unprotected pieces (`doc-model.js::clipDeletion`), EXCEPT a section lying wholly inside the range: its `{start_of_*}` .. `{end_of_*}` lines go too (`freedSectionLines`), then the blank lines it leaves are tidied (no run of blank lines, none at an end the deletion reached) as one change. `{meta:}` / `{key:}` / other header directives and locked blocks (ABC / tab / grid) always stay. Partial deletes (held Backspace, all lyric lines but not the label line) keep labels. Select-all + Delete = just the metadata lines (`''` when there are none); select-all + paste puts the new text after the metadata.
@@ -128,6 +142,16 @@ override: with it, iOS drew a second selection and handles over the native one.
   Paste button: it says how to paste up front ("Tap and hold here, then Paste" / "Press ⌘V to paste"), since a button
   there could only show a hint and read as broken (2026-10-27). A refused permission at runtime still shows the hint.
   Real paste events run smart paste.
+- **Paste just works** (2026-10-27): ⌘V / Ctrl+V ANYWHERE on the editor page pastes into the song (`onDocPaste`, a
+  document `paste` listener while `host` is on screen). Only a field that takes text itself (`input`, `textarea`,
+  `select`, `contenteditable`: the title, the section bar's Other…) keeps its own paste; CodeMirror handles one inside
+  it; in Chords mode (locked) it switches to Lyrics first. A new empty song on a fine pointer also opens with the caret
+  in the sheet (`focusIfEmpty`, called by `main.js` when the Add Song view shows, via `editor.js::focusEmptyEditor`);
+  never on a phone (it would pop the keyboard). Before this, a ⌘V right after opening `#add` went to `<body>` and
+  nothing happened, while the hint said "Press ⌘V to paste". e2e: `editor.spec.js` "Paste just works".
+- **Line endings** (2026-10-28): clipboard text is normalized to `\n` (`clipText`, and `convertPastedText` itself) before
+  anything measures it. CodeMirror drops every `\r` on insert, so an Ultimate Guitar copy (`\r\n`) set the cursor 36
+  characters past the end: `RangeError: Selection points outside of document`, and the whole paste was lost.
 
 ## Chords mode
 
@@ -163,15 +187,28 @@ override: with it, iOS drew a second selection and handles over the native one.
   - **`scrollBoxIntoView`** keeps the cursor's line (its chord row too) inside `visibleGap()`: below the top band and, in split,
     below the magnifier and above the picker. Used by taps, the arrows, a glide, placing a chord and Add chord line.
   - Hold-to-trackpad works on the picker AND on the magnifier (the arrows; dragging the strip itself is a trackpad at once).
-  - `Esc` closes it. There is no Done: the picker's mode switch (below) returns to Lyrics.
-  - **Picker header, three rows of fixed height** (`.chm-row1` / `.chm-row2` / `.chm-row3`, 40px each, same in split and side): row 1 = `Key` select
-    left, a compact `Lyrics | Chords | ChordPro` segmented control right (`[data-picker-mode]`; calls the SAME `setMode` as the editor
-    header's `#editor-mode-*`; `applyMode` -> `syncModeChrome` keeps the header in sync, and the picker is only on screen in Chords);
-    row 2 = the function line, then Move / ✕ Remove when the cursor is on a chord;
-    row 3 = THE nav row `◀ ▲ ▼ ▶ ... ↶ ↷ [magnifier]` (`.chm-prev .chm-up .chm-down .chm-next`, `.chm-undo`/`.chm-redo` = `editor.undo/redo`
-    disabled from `editor.history()` like `#editor-undo/#editor-redo`, `.chm-mag` = icon button, aria-label "Magnifier", `aria-pressed`;
-    every target 40px; at <=340px the mode switch, Key select and nav buttons compact (34px wide) so nothing leaves a 320px viewport, heights unchanged). Chord glyphs are `position: relative; z-index: 1`, above the cursor's `.cl-slot-pill`, so a tap on a visible chord selects it even when the pill overlaps it. Hold-to-trackpad works on the whole picker.
-  - **Editor zoom**: `A−` / `A+` (`#editor-font-down/up`, in `#editor-toolbar`) step the SAME `fontSizeLevel` as the song page's Display pill
+  - `Esc` closes it. There is no Done: the band's `Lyrics` returns to Lyrics.
+  - **Picker header, two rows of fixed height** (`.chm-row2` / `.chm-row3`, 40px each, same in split and side): row 2 = the
+    function line, then Move / ✕ Remove when the cursor is on a chord; row 3 = THE nav row `◀ ▲ ▼ ▶ ... [magnifier]`
+    (`.chm-prev .chm-up .chm-down .chm-next`, `.chm-mag` = icon button, aria-label "Magnifier", `aria-pressed`; every target
+    40px; at <=340px the nav buttons compact to 34px wide, heights unchanged). The picker carries NO key, mode switch or
+    undo / redo (until 2026-10-28 it had copies of all three): those are the band's (below). Chord glyphs are
+    `position: relative; z-index: 1`, above the cursor's `.cl-slot-pill`, so a tap on a visible chord selects it even when
+    the pill overlaps it. Hold-to-trackpad works on the whole picker.
+- **The controls band: ONE place, every device** (Mike, 2026-10-28: "there are duplicated controls ... where should the
+  one place go"). `index.html #editor-band` = `Lyrics | Chords | ChordPro` (`#editor-mode-*`), ↶ ↷ (`#editor-undo/redo`),
+  the key (`#editor-transpose-group`: − `#editor-key-select` +), and a Display pill (`editor.js` builds it with the shell's
+  `pill()`; on first open it takes `#editor-display-options`: A− / A+, Nashville, "Clean up pasted chord sheets"
+  `#editor-auto-detect`). `editor.js::showEditorBand()` mounts it in the app shell's bottom band (`setBottomBand`) whenever
+  `main.js` shows the editor view; leaving the view clears the band, which DETACHES the element (kept, so listeners and
+  state survive; `syncModeChrome` looks in the detached band too). The elements are MOVED, never rebuilt: ids hold.
+  - Phone (`split`): the picker is fixed at `bottom: var(--bottomband-h)`, ON the band; `visibleGap()` and the docked
+    section bar (`placeDockedBar`: above the keyboard, or above the band when the keyboard is down) both stop at the band.
+  - Width: one row from 360px up (`@media (max-width: 480px)` hides − / +, the key list does the same job; `(max-width:
+    400px)` tightens the switch and draws a slim caret on the key select so "Key: C#m" fits). At 320 it wraps to two rows;
+    everything stacked on it reads `--bottomband-h`. e2e: "one place for the controls" (`visual-editor-mobile.spec.js`),
+    "the editor's controls band" (`visual-editor.spec.js`); helpers `BAND`, `openDisplay` in `e2e/helpers/lead-editor.js`.
+  - **Editor zoom**: `A−` / `A+` (`#editor-font-down/up`, in the band's Display pill) step the SAME `fontSizeLevel` as the song page's Display pill
     (limits -5..6, `setFontSizeLevel`); `index.js::stepFont` re-applies the font, `view.requestMeasure()`s and, a frame later, redraws the
     sheet, scrolls the box into view and re-syncs the ring.
 - **The strip** (the magnifier): a clone of the current `.cm-line` (or of the pending chord line's
@@ -188,13 +225,18 @@ The cursor stands on STOPS, never on a letter (decided 2026-10-27; plan: "Where 
 | kind | where | cursor shape | placing D writes |
 |---|---|---|---|
 | `syllable` | a syllable start (`tokenizeLine` seams, incl. a chord already mid-word) | outline box `.cl-box-text` (the dashed pill only while there is no chord) | `[D]hollow` |
-| `gap` | ONE per whitespace run between two words, at the offset of its first space (or just after a chord already in the run) | slim bar `.cl-gap-bar` over the chord row and the lyric row; NO text outline | `years[D] since` |
+| `gap` | ONE per whitespace run between two words, at the offset of its first space (or just after a chord already in the run) | the empty slot's box, centred on the space: the dashed pill (only while the gap holds no chord; otherwise the chord's glyph is boxed) AND `.cl-slot-text` on the lyric row (`.cl-slot-gap`; absolute, takes no width). Was a 4px bar until 2026-10-27: it read as a text caret, not a place | `years[D] since` |
 | `after` | each chord already trailing the words (`after: 0`), then ONE virtual empty slot (`after: 1`, pos = line end) | the boxed chord / for the empty slot: the dashed pill AND an outline on the lyric row below it (`.cl-slot-text`, like a syllable; absolute, takes no width) | `home   [D]` |
 
 - `snapCursor(text, pos)` -> `{pos, after}` is the single normalisation step (`normalizeCursor` is its `.pos`; `fixBox` in
   `cm-editor.js` applies it to every box set and every box mapped through an edit or undo). First the one-place-per-letter
   rule (a position at or inside chord tokens moves to the end of the run), then the nearest stop on a lyric line (ties go
   earlier; at or past the last word's end = the slot after the words). Non-lyric lines only get the first rule.
+- **Hit spans** (`rowSpans` in `chords-touch.js`, used by `pickItem` and `pickStop`): a stop's span is its left edge to
+  the next stop's, but one narrower than `MIN_HIT_PX` (24) grows by up to half the shortfall on each side, taken from a
+  neighbour only while that neighbour stays at least `MIN_HIT_PX` wide. A one-space gap was ~5px wide (a tap 3px off
+  boxed the word) while the slot after the words reached the chart's edge; a narrow stop never takes from another narrow
+  one ("a" keeps its letter) and no word loses its centre. The returned `left/right` (ring, strip centring) are the span.
 - **Arrows**: ◀ ▶ (`moveCursor` kind `'stop'`) walk the stops: syllable, gap, next word ... last word, trailing chords,
   the slot, then the next line. ▲ ▼ move by line and land on the stop whose DRAWN x (`coordsAtPos`) is nearest the kept x.
   Every step ticks.
@@ -377,9 +419,14 @@ at 18px inside those buttons only; `chordGlyphHtml` elsewhere is untouched.
   is visible (the locked chart can't take focus): arrows move the box; a chord letter
   starts typed entry (ghost chip: ~800ms idle commit, Enter commits, 1.5s resume grace
   so `E` then `b7` is `Eb7`); Space/Tab advance; Delete/Backspace remove; Esc closes the sheet.
-- **The key**: the sheet's select writes `{key: X}` (declares; the owner has not
-  decided whether it should transpose). `currentSongKey` feeds the sheet, the
-  toolbar `#editor-key-select` and the submitted `key`/`mode`, so they cannot disagree.
+- **The key: one per song, changed in ONE place** (decided by Mike 2026-10-28): the band's `#editor-key-select` (every
+  major and minor key). Choosing one moves the WHOLE song, `editor.js::songInKey`: every chord shifts by
+  `doc-model.js::keyShift(from, to)` (the nearer way, keys compared through their relative major, so G -> A is +2 and
+  G -> Em is 0: only the name changes, which is how a mis-detected mode is fixed) and `{key: to}` is written, ONE undo
+  step. A song with no chords only gets the declaration; the key control shows as soon as the song has text. The chord
+  sheet's `.chm-key` is a LABEL ("Key of G", "Key: not set" while nothing is declared or detected; the rows show G until
+  then). Songs that really change key are not blocked: More roots and typed entry reach any chord, and a key change
+  moves both keys together. `currentSongKey` feeds the sheet, the toolbar and the submitted `key`/`mode`.
 
 ## The tour's hooks (`present`)
 
@@ -413,5 +460,5 @@ Magnifier default / nav row / zoom: `visual-editor-mobile.spec.js` "magnifier de
 ON for every other test; that describe starts clean) and a desktop test in `visual-editor.spec.js`. Syllables: `syllable-corpus.test.js`.
 
 NOT verifiable without a real phone: iOS autocorrect/dictation next to hidden
-chords in Lyrics mode, the feel of the glide tuning constants (`chord-motion.js`: gain, smoothing, hold, `HYSTERESIS`), whether the gap bar is easy to land on with a thumb, whether the 2-space `AFTER_GAP` reads right on a real phone, whether a carried chord's own width shifts the letters under a still finger enough to flicker, haptics, whether a held touch on the sheet beats iOS's own long-press behaviour, whether iOS really
+chords in Lyrics mode, the feel of the glide tuning constants (`chord-motion.js`: gain, smoothing, hold, `HYSTERESIS`), whether `MIN_HIT_PX` makes a gap easy to land on with a thumb, whether the 2-space `AFTER_GAP` reads right on a real phone, whether a carried chord's own width shifts the letters under a still finger enough to flicker, haptics, whether a held touch on the sheet beats iOS's own long-press behaviour, whether iOS really
 shows no callout/handles on the locked chart, and how the fixed top bar and the bottom picker behave with iOS Safari's collapsing address bar and the visual viewport (`position: fixed` offsets and `window.innerHeight` can differ there).

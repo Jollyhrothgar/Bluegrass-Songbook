@@ -342,6 +342,28 @@ Sing along`;
         expect(result).toContain('{sov: Verse 1}');
         expect(result).toContain('{soc}');
     });
+
+    // UG's Old Home Place (Mike, 2026-10-28): [Interlude] / [Intro] used to become `{comment: Interlude}` notes with the
+    // chords under them as `{comment: G B7 C G}`, which the editor hid and transposing skipped
+    it('a played section ([Intro], [Interlude], [Break], ...) is a real section, its chords a chord line', () => {
+        const out = editorConvertToChordPro('[Verse 1]\nG       C\nHello world\n\n[Interlude]\nG B7 C G\nG    D\n\n[Instrumental Break]\nA E');
+        expect(out).toContain('{start_of_interlude: Interlude}\n[G]   [B7]    [C]   [G]\n[G]   [D]\n');
+        expect(out).toMatch(/\[G\]   \[D\]\n+\{end_of_interlude\}/);
+        expect(out).toContain('{start_of_instrumental: Instrumental Break}\n[A]   [E]\n{end_of_instrumental}');
+        expect(out).not.toContain('{comment');
+    });
+
+    it('a heading that is not a section stays a note; a chord line anywhere is a chord line', () => {
+        const out = editorConvertToChordPro('[Capo 2]\nG C\n\n[Verse 1]\nD\nwords here\nG  C\n\n');
+        expect(out).toContain('{comment: Capo 2}');
+        expect(out).toContain('[G]   [C]');
+        expect(out).not.toContain('{comment: G');
+    });
+
+    it('chord lines transpose with the song (a note of chords never did)', () => {
+        const out = editorConvertToChordPro('[Intro]\nG C D G\n\n[Verse 1]\nG\nwords');
+        expect(editorTransposeContent(out, 2)).toContain('[A]   [D]   [E]   [A]');
+    });
 });
 
 describe('editorTransposeContent', () => {

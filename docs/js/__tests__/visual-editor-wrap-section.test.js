@@ -180,9 +180,9 @@ describe('metadata stays put', () => {
 });
 
 describe('a selection that crosses a section boundary re-sections the document', () => {
-    // "sawmill" at the end of Verse 2 through "What have" in the Chorus after it.
-    // A pinned copy of Old Home Place's chart (as of 2026-10-27): the live one
-    // can be edited in the app, and this test broke CI when it was.
+    // "sawmill" at the end of Verse 2 through "What have" in the Chorus after it. A FROZEN copy of the real chart
+    // (works/old-home-place as of 2026-10-27): works/ is authoritative and editable from the site, so a test that read
+    // it live failed - and blocked every deploy - the moment someone corrected the song's chords (407a42d42).
     const real = readFileSync(resolve(process.cwd(), 'docs/js/__tests__/fixtures/old-home-place.pro'), 'utf8');
     const labels = (t) => analyzeDocument(t).sections.filter((s) => s.explicit).map((s) => s.label);
     const lyricLines = (t) => parseChordPro(t).sections.flatMap((s) => s.lines).filter((l) => l.trim() && !l.startsWith('{'));
