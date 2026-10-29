@@ -244,6 +244,8 @@ export function parseNoteEventsV2(data, h, instruments) {
     // Text components (fret byte 0x1d = TablEdit type 0x39): byte 3 indexes
     // the text table after the reading list. Resolved by parseV2.
     const textRefs = [];
+    // Chord-diagram anchors (fret byte 0x1c/0x5c/0x9c = type 0x35): byte 3 is the chord index.
+    const chordRefs = [];
     const numStrings = h.v2_strings;
 
     const stride = v2ComponentStride(data, h);
@@ -260,7 +262,7 @@ export function parseNoteEventsV2(data, h, instruments) {
     // yields zero overruns. See reader.py for the full evidence.
     const durationMask = stride === 6 ? 0x1f : 0x0f;
 
-    if (tsSize === 0 || numStrings === 0) return { events, tsChanges, textRefs };
+    if (tsSize === 0 || numStrings === 0) return { events, tsChanges, textRefs, chordRefs };
 
     let trackStringCounts = instruments.map(i => i.num_strings);
     if (trackStringCounts.length === 0) trackStringCounts = [numStrings];
@@ -331,6 +333,13 @@ export function parseNoteEventsV2(data, h, instruments) {
             continue;
         }
 
+        if (fretByte === 0x1c || fretByte === 0x5c || fretByte === 0x9c) {
+            chordRefs.push({ position: (measure * tsSize + positionInMeasure) * posScale,
+                             stringRow: cumulativeString, index: rec[3], dx: 0, dy: 0 });
+            offset += stride;
+            continue;
+        }
+
         // Fret field 0x1a is fret 25 unless the byte is a bare 0x1a (a special; 11056 m9).
         if ((fretRaw >= 0x01 && fretRaw <= 0x19) || (fretRaw === 0x1a && fretByte !== 0x1a)) {
             const fret = fretRaw - 1;
@@ -362,7 +371,7 @@ export function parseNoteEventsV2(data, h, instruments) {
         }
         offset += stride;
     }
-    return { events, tsChanges, textRefs };
+    return { events, tsChanges, textRefs, chordRefs };
 }
 
 // V2 free-text table: u16 count at header 228, entries right after the
@@ -386,6 +395,74 @@ export function parseTextTableV2(data, h) {
     return table;
 }
 
+// --- chord-diagram table (G15d3) -------------------------------------------
+const CHORD_STRING_BYTES = 14;
+const CHORD_NAME_AT = 14;      // 17 bytes, NUL-terminated, then leftover memory
+
+/** One record -> {name, strings, first_fret, string_count}; null when the name
+ *  is not plain ASCII (the table was read at the wrong place). */
+function chordRecord(rec, withStringCount) {
+    let end = -1;
+    for (let i = CHORD_NAME_AT; i < 31; i++) if (rec[i] === 0) { end = i; break; }
+    if (end < 0) return null;
+    let name = '';
+    for (let i = CHORD_NAME_AT; i < end; i++) {
+        if (rec[i] < 0x20 || rec[i] >= 0x7f) return null;
+        name += String.fromCharCode(rec[i]);
+    }
+    return {
+        name,
+        strings: Uint8Array.from(rec.subarray(0, CHORD_STRING_BYTES)),
+        first_fret: rec[31] > 127 ? rec[31] - 256 : rec[31],
+        string_count: withStringCount ? rec[32] : 0,
+    };
+}
+
+/** V3: header pointer 88 -> [u16 entry size 36][u16 count] + records. null = absent/unreadable. */
+export function parseChordTableV3(data) {
+    if (data.length < 92) return null;
+    const ptr = u32(data, 88);
+    if (ptr < V3_HEADER_SIZE || ptr + 4 > data.length) return null;
+    const size = u16(data, ptr), count = u16(data, ptr + 2);
+    if (size !== 36 || ptr + 4 + size * count > data.length) return null;
+    const table = [];
+    for (let i = 0; i < count; i++) {
+        const o = ptr + 4 + i * size;
+        const rec = chordRecord(data.subarray(o, o + size), true);
+        if (!rec) return null;
+        table.push(rec);
+    }
+    return table;
+}
+
+/** V2: u16 count at file offset 236; 32-byte records after the free-text table. */
+export function parseChordTableV2(data, h) {
+    if (data.length < 238) return null;
+    const count = u16(data, 236);
+    if (count === 0) return null;
+    let off = h.v2_component_offset + h.v2_component_count * v2ComponentStride(data, h)
+        + 2 * h.v2_repeats_count;
+    for (let i = 0, n = u16(data, 228); i < n; i++) {
+        if (off + 2 > data.length) return null;
+        off += 2 + u16(data, off);
+    }
+    if (off + 32 * count > data.length) return null;
+    const table = [];
+    for (let i = 0; i < count; i++) {
+        const rec = chordRecord(data.subarray(off + 32 * i, off + 32 * i + 32), false);
+        if (!rec) return null;
+        table.push(rec);
+    }
+    return table;
+}
+
+/** Keep the anchors that point into the table; count the rest. */
+function resolveChordAnchors(table, refs) {
+    if (!table) return { anchors: [], dropped: refs.length };
+    const anchors = refs.filter(a => a.index < table.length);
+    return { anchors, dropped: refs.length - anchors.length };
+}
+
 // --- reading list ----------------------------------------------------------
 export function parseReadingListV2(data, h) {
     const entries = [];
@@ -407,7 +484,7 @@ export function parseReadingListV2(data, h) {
 export function parseV2(data, name) {
     const header = readV2Header(data);
     const instruments = parseInstrumentsV2(data, header);
-    let { events: noteEvents, tsChanges, textRefs } = parseNoteEventsV2(data, header, instruments);
+    let { events: noteEvents, tsChanges, textRefs, chordRefs } = parseNoteEventsV2(data, header, instruments);
     let timeSignatureChanges = tsChanges;
     const textTable = parseTextTableV2(data, header);
     const textEvents = textRefs
@@ -430,6 +507,9 @@ export function parseV2(data, name) {
             for (const te of textEvents) {
                 if (te.position < tsSize) te.position = Math.max(0, te.position - shift);
             }
+            for (const ca of chordRefs) {
+                if (ca.position < tsSize) ca.position = Math.max(0, ca.position - shift);
+            }
             let den = header.v2_time_denom || 4;
             const grid = tsSize - shift;
             let num = fdiv(grid * den, 256);
@@ -445,6 +525,8 @@ export function parseV2(data, name) {
     }
 
     const readingList = parseReadingListV2(data, header);
+    const chordTable = parseChordTableV2(data, header);
+    const { anchors: chordAnchors, dropped: chordDropped } = resolveChordAnchors(chordTable, chordRefs);
 
     return {
         path_stem: name,
@@ -455,6 +537,9 @@ export function parseV2(data, name) {
         text_events: textEvents,
         reading_list: readingList,
         time_signature_changes: timeSignatureChanges,
+        chord_table: chordTable,
+        chord_anchors: chordAnchors,
+        chord_anchors_dropped: chordDropped,
         v3_global_ts: null,
     };
 }
@@ -644,10 +729,13 @@ const V3_FIRST_SPECIAL_TYPE = 0x33;
 export function parseNoteEventsV3(data, instruments) {
     const events = [];
     const textRefs = [];   // 0x39 components: {position, stringRow, index}
+    // 0x35 chord-diagram anchors (full type byte; 0x75 is a scale diagram, 0xf5 a
+    // special character): cell bytes 1-2 chord index, 3 signed dy, 4 signed dx.
+    const chordRefs = [];
     const startOffset = findComponentOffset(data);
     let globalTs = null;
     const tsChanges = [];
-    if (startOffset < 0) return { events, textRefs, tsChanges, globalTs, slotStarts: [], slotCounts: [] };
+    if (startOffset < 0) return { events, textRefs, chordRefs, tsChanges, globalTs, slotStarts: [], slotCounts: [] };
 
     let totalStrings = instruments.reduce((s, i) => s + i.num_strings, 0);
     if (totalStrings === 0) totalStrings = 5;
@@ -706,6 +794,14 @@ export function parseNoteEventsV3(data, instruments) {
                     stringRow: fdiv(location % VALUE_PER_POSITION, VALUE_PER_STRING),
                     index: record[5],
                 });
+            } else if (componentType === 0x35) {
+                chordRefs.push({
+                    position: fdiv(location, VALUE_PER_POSITION),
+                    stringRow: fdiv(location % VALUE_PER_POSITION, VALUE_PER_STRING),
+                    index: record[5] | (record[6] << 8),
+                    dy: (record[7] << 24) >> 24,
+                    dx: (record[8] << 24) >> 24,
+                });
             }
             offset += 12;
             continue;
@@ -744,7 +840,7 @@ export function parseNoteEventsV3(data, instruments) {
         });
         offset += 12;
     }
-    return { events, textRefs, tsChanges, globalTs, slotStarts, slotCounts };
+    return { events, textRefs, chordRefs, tsChanges, globalTs, slotStarts, slotCounts };
 }
 
 /** Continuous V3 position -> [0-based measure, 64ths into it] (TEFFile.v3_locate). */
@@ -782,7 +878,9 @@ export function parseV3(data, name) {
         break;
     }
     const instruments = parseTrackRecordsV3(data);   // name-pattern fallback not ported
-    const { events, textRefs, tsChanges, globalTs, slotStarts, slotCounts } = parseNoteEventsV3(data, instruments);
+    const { events, textRefs, chordRefs, tsChanges, globalTs, slotStarts, slotCounts } = parseNoteEventsV3(data, instruments);
+    const chordTable = parseChordTableV3(data);
+    const { anchors: chordAnchors, dropped: chordDropped } = resolveChordAnchors(chordTable, chordRefs);
     const readingList = parseReadingListV3(data);
 
     // Resolve 0x39 text components against the text table; unresolvable
@@ -808,6 +906,9 @@ export function parseV3(data, name) {
         text_events: textEvents,
         reading_list: readingList,
         time_signature_changes: tsChanges,
+        chord_table: chordTable,
+        chord_anchors: chordAnchors,
+        chord_anchors_dropped: chordDropped,
         v3_global_ts: globalTs,
         v3_measure_starts: slotStarts,
         v3_measure_lengths: slotCounts,

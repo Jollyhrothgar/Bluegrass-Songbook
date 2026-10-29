@@ -177,6 +177,38 @@ class TEFChord:
 
 
 @dataclass
+class TEFChordRecord:
+    """One record of the chord-diagram table (G15d3).
+
+    V3 records are 36 bytes, V2 records 32. Bytes 0-13: one per string,
+    string 1 first (0xff = not played; low 5 bits = ABSOLUTE fret; high 3
+    bits 0 = plain dot, 2-5 = finger 1-4). 14-30: NUL-terminated name.
+    31: first fret shown (signed). V3 only: 32 = the diagram's string count
+    (0 = the owning track's).
+    """
+    name: str
+    strings: bytes        # the 14 per-string bytes, as stored
+    first_fret: int       # signed byte 31
+    string_count: int = 0  # byte 32 (V3); always 0 for V2's 32-byte records
+
+
+@dataclass
+class TEFChordAnchor:
+    """A chord-diagram anchor (V3 type 0x35; V2 fret byte 0x1c/0x5c/0x9c).
+
+    The string row only anchors the diagram; the owning track is the one
+    whose strings contain the row. V3: cell bytes 1-2 = u16 chord index,
+    byte 3 = signed y offset, byte 4 = signed x offset. V2: byte 3 is the
+    (u8) chord index; its offset bytes are not decoded (dx = dy = 0).
+    """
+    position: int
+    string_row: int
+    index: int
+    dx: int = 0
+    dy: int = 0
+
+
+@dataclass
 class TEFSection:
     """Section marker (e.g., "A Part", "B Part")."""
     name: str
@@ -352,6 +384,12 @@ class TEFFile:
     text_events: list[TEFTextEvent] = field(default_factory=list)
     reading_list: list[TEFReadingListEntry] = field(default_factory=list)
     time_signature_changes: list[TEFTimeSignatureChange] = field(default_factory=list)
+    # G15d3: the chord-diagram table (None = absent/unreadable), the anchors
+    # that point into it, and how many anchors could not be kept (no table,
+    # a bad table, or an index past its end).
+    chord_table: list[TEFChordRecord] | None = None
+    chord_anchors: list[TEFChordAnchor] = field(default_factory=list)
+    chord_anchors_dropped: int = 0
     # V3 only: (num, den) derived from the measure table — the table is
     # the authoritative meter (no known header signature field in V3).
     v3_global_ts: tuple | None = None
@@ -1106,6 +1144,10 @@ class TEFReader:
         # byte 5 is a 0-based index into the text table. Resolved to
         # TEFTextEvents by _parse_v3.
         self._v3_text_refs: list[tuple[int, int, int]] = []  # (position, string_row, index)
+        # Chord-diagram anchors (full type byte 0x35 -- 0x75 is a scale
+        # diagram, 0xf5 a special character): cell bytes 1-2 chord index,
+        # byte 3 signed dy, byte 4 signed dx (record bytes 5-6, 7, 8).
+        self._v3_chord_anchors: list[TEFChordAnchor] = []
 
         offset = start_offset
         consecutive_invalid = 0
@@ -1125,6 +1167,14 @@ class TEFReader:
                         location // VALUE_PER_POSITION,
                         (location % VALUE_PER_POSITION) // VALUE_PER_STRING,
                         record[5],
+                    ))
+                elif component_type == 0x35:
+                    self._v3_chord_anchors.append(TEFChordAnchor(
+                        position=location // VALUE_PER_POSITION,
+                        string_row=(location % VALUE_PER_POSITION) // VALUE_PER_STRING,
+                        index=record[5] | (record[6] << 8),
+                        dy=struct.unpack('b', record[7:8])[0],
+                        dx=struct.unpack('b', record[8:9])[0],
                     ))
                 offset += 12
                 continue
@@ -1311,6 +1361,9 @@ class TEFReader:
         # upgrade FUN_1000459c4): byte 3 indexes the text table that follows
         # the reading list. Resolved by _parse_v2.
         self._v2_text_refs: list[tuple[int, int, int]] = []  # (position, string_row, index)
+        # Chord-diagram anchors (fret byte 0x1c/0x5c/0x9c = TablEdit type
+        # 0x35 after the V2 upgrade): byte 3 is the chord index.
+        self._v2_chord_anchors: list[TEFChordAnchor] = []
 
         # Loud-failure backstop. A component stream read at the wrong
         # stride still decodes into "notes" — just at impossible measure
@@ -1396,6 +1449,13 @@ class TEFReader:
                 self._v2_text_refs.append((
                     (measure * ts_size + position_in_measure) * pos_scale,
                     cumulative_string, rec[3]))
+                offset += stride
+                continue
+
+            if fret_byte in (0x1c, 0x5c, 0x9c):
+                self._v2_chord_anchors.append(TEFChordAnchor(
+                    position=(measure * ts_size + position_in_measure) * pos_scale,
+                    string_row=cumulative_string, index=rec[3]))
                 offset += stride
                 continue
 
@@ -1806,6 +1866,91 @@ class TEFReader:
             offset += 2 + length
         return texts
 
+    # ------------------------------------------------------------------
+    # Chord-diagram table (G15d3)
+    # ------------------------------------------------------------------
+
+    _V3_CHORD_TABLE_PTR = 88      # header u32 -> [u16 entry size][u16 count][records]
+    _V3_CHORD_RECORD_SIZE = 36
+    _V2_CHORD_COUNT_OFFSET = 236  # u16
+    _V2_CHORD_RECORD_SIZE = 32
+    _CHORD_STRING_BYTES = 14
+    _CHORD_NAME_AT = 14           # 17 bytes, NUL-terminated, then leftover memory
+
+    @classmethod
+    def _chord_record(cls, rec: bytes, with_string_count: bool) -> TEFChordRecord | None:
+        """Decode one chord record; None when the name is not plain ASCII
+        (the sign that the table was read at the wrong place)."""
+        name_bytes = rec[cls._CHORD_NAME_AT:31]
+        end = name_bytes.find(b"\x00")
+        if end < 0:
+            return None
+        name_bytes = name_bytes[:end]
+        if not all(0x20 <= b < 0x7f for b in name_bytes):
+            return None
+        first_fret = rec[31] - 256 if rec[31] > 127 else rec[31]
+        return TEFChordRecord(
+            name=name_bytes.decode("ascii"),
+            strings=bytes(rec[:cls._CHORD_STRING_BYTES]),
+            first_fret=first_fret,
+            string_count=rec[32] if with_string_count else 0,
+        )
+
+    def parse_chord_table_v3(self) -> list[TEFChordRecord] | None:
+        """V3 chord table at header pointer 88. None when absent/unreadable."""
+        data = self.data
+        if len(data) < self._V3_CHORD_TABLE_PTR + 4:
+            return None
+        ptr = struct.unpack_from("<I", data, self._V3_CHORD_TABLE_PTR)[0]
+        if ptr < V3_HEADER_SIZE or ptr + 4 > len(data):
+            return None
+        size, count = struct.unpack_from("<HH", data, ptr)
+        if size != self._V3_CHORD_RECORD_SIZE or ptr + 4 + size * count > len(data):
+            return None
+        table = []
+        for i in range(count):
+            o = ptr + 4 + i * size
+            rec = self._chord_record(data[o:o + size], True)
+            if rec is None:
+                return None
+            table.append(rec)
+        return table
+
+    def parse_chord_table_v2(self, header: TEFHeader) -> list[TEFChordRecord] | None:
+        """V2 chord table: u16 count at file offset 236; 32-byte records that
+        follow the free-text table (reading list, then the text entries).
+        None when the count is zero or the run does not read as records."""
+        data = self.data
+        count = struct.unpack_from("<H", data, self._V2_CHORD_COUNT_OFFSET)[0]
+        if count == 0:
+            return None
+        text_count = struct.unpack_from("<H", data, 228)[0]
+        off = (header.v2_component_offset
+               + header.v2_component_count * self.v2_component_stride(header)
+               + 2 * header.v2_repeats_count)
+        for _ in range(text_count):
+            if off + 2 > len(data):
+                return None
+            off += 2 + struct.unpack_from("<H", data, off)[0]
+        size = self._V2_CHORD_RECORD_SIZE
+        if off + size * count > len(data):
+            return None
+        table = []
+        for i in range(count):
+            rec = self._chord_record(data[off + i * size:off + (i + 1) * size], False)
+            if rec is None:
+                return None
+            table.append(rec)
+        return table
+
+    @staticmethod
+    def _resolve_chord_anchors(table, anchors):
+        """Keep the anchors that point into the table; count the rest."""
+        if table is None:
+            return [], len(anchors)
+        kept = [a for a in anchors if a.index < len(table)]
+        return kept, len(anchors) - len(kept)
+
     def parse(self) -> TEFFile:
         """Parse the entire TEF file.
 
@@ -1925,6 +2070,7 @@ class TEFReader:
             TEFTextEvent(position=pos, string_row=row, text=text_table[idx])
             for pos, row, idx in getattr(self, "_v2_text_refs", [])
             if idx < len(text_table) and text_table[idx]]
+        v2_chord_anchors = list(getattr(self, "_v2_chord_anchors", []))
 
         if header.v2_anacrusis and not any(
                 c.measure == 1 for c in time_signature_changes):
@@ -1937,6 +2083,9 @@ class TEFReader:
                 for te in text_events:
                     if te.position < ts_size:
                         te.position = max(0, te.position - shift)
+                for ca in v2_chord_anchors:
+                    if ca.position < ts_size:
+                        ca.position = max(0, ca.position - shift)
                 den = header.v2_time_denom or 4
                 grid = ts_size - shift
                 num = grid * den // 256
@@ -1952,7 +2101,12 @@ class TEFReader:
         # Parse reading list (repeat structure)
         reading_list = self.parse_reading_list_v2(header)
 
-        # V2 chords stored differently - not yet implemented
+        # Chord-diagram table and its anchors (G15d3). A table that does not
+        # read as records drops every diagram; the count is reported, not guessed.
+        chord_table = self.parse_chord_table_v2(header)
+        chord_anchors, chord_dropped = self._resolve_chord_anchors(
+            chord_table, v2_chord_anchors)
+
         chords = []
         sections = []
         strings = []
@@ -1969,6 +2123,9 @@ class TEFReader:
             text_events=text_events,
             reading_list=reading_list,
             time_signature_changes=time_signature_changes,
+            chord_table=chord_table,
+            chord_anchors=chord_anchors,
+            chord_anchors_dropped=chord_dropped,
         )
 
     def _parse_v3(self, header: TEFHeader) -> TEFFile:
@@ -2023,6 +2180,11 @@ class TEFReader:
                     text=text_table[idx],
                 ))
 
+        v3_anchors = list(getattr(self, "_v3_chord_anchors", []))
+        chord_table = self.parse_chord_table_v3()
+        chord_anchors, chord_dropped = self._resolve_chord_anchors(
+            chord_table, v3_anchors)
+
         return TEFFile(
             path=self.path,
             header=header,
@@ -2034,6 +2196,9 @@ class TEFReader:
             note_events=note_events,
             text_events=text_events,
             reading_list=reading_list,
+            chord_table=chord_table,
+            chord_anchors=chord_anchors,
+            chord_anchors_dropped=chord_dropped,
             time_signature_changes=getattr(self, "_v3_ts_changes", []),
             v3_global_ts=getattr(self, "_v3_global_ts", None),
             v3_measure_starts=getattr(self, "_v3_measure_starts", []),

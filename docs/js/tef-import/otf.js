@@ -306,6 +306,71 @@ export function normalizeSlideTiming(doc) {
     }
 }
 
+// --- chord diagrams (G15d3) ---------------------------------------------------
+/** Index of the track whose strings contain the cumulative string row (null = none). */
+function diagramTrackIndex(stringCounts, row) {
+    if (!stringCounts.length) return 0;
+    for (let idx = 0; idx < stringCounts.length; idx++) {
+        if (row < stringCounts[idx]) return idx;
+        row -= stringCounts[idx];
+    }
+    return null;
+}
+
+/** One chord-table record as an OTF `chords` entry (see chord_record_to_otf in otf.py). */
+function chordRecordToOtf(rec, stringCount) {
+    const out = { name: rec.name };
+    if (rec.strings.some(b => b !== 0xff)) {
+        const raw = Array.from(rec.strings.subarray(0, stringCount));
+        out.frets = raw.map(b => (b === 0xff ? null : b & 0x1f));
+        // high 3 bits: 0 plain dot, 1 special glyph (never seen), 2-5 = finger 1-4
+        const fingers = raw.map(b => (b !== 0xff && (b >> 5) >= 2 && (b >> 5) <= 5 ? (b >> 5) - 1 : null));
+        if (fingers.some(f => f !== null)) out.fingers = fingers;
+    }
+    if (rec.first_fret !== 1) out.first_fret = rec.first_fret;
+    return out;
+}
+
+/**
+ * Port of chord_diagrams_to_otf(): the `chords` table, the `chord_diagrams`
+ * anchors, and the count of diagrams that could not be kept. The `frets`
+ * length of a record is byte 32 when non-zero, else the string count of the
+ * track of the first diagram pointing at it, else (unused record) the file's
+ * longest track.
+ */
+function chordDiagramsToOtf(tef, tracks, unitsPerMeasure, ticksPerUnit) {
+    const isV2 = tef.header.isV2;
+    let dropped = tef.chord_anchors_dropped || 0;
+    const table = tef.chord_table || [];
+    const stringCounts = tef.instruments.map(i => i.num_strings);
+    const diagrams = [];
+    const ownerStrings = new Map();
+    for (const a of (tef.chord_anchors || [])) {
+        const idx = diagramTrackIndex(stringCounts, a.stringRow);
+        if (idx === null || idx >= tracks.length) { dropped += 1; continue; }
+        let measure, tick;
+        if (isV2) {
+            measure = fdiv(a.position, unitsPerMeasure);
+            tick = fdiv(((a.position % unitsPerMeasure) & ~3) * 15, 2);
+        } else {
+            const [m, offset] = v3Locate(tef, a.position);
+            measure = m;
+            tick = offset * ticksPerUnit;
+        }
+        const d = { measure: measure + 1, tick, track: tracks[idx].id, chord: a.index };
+        if (a.dx) d.dx = a.dx;
+        if (a.dy) d.dy = a.dy;
+        diagrams.push(d);
+        if (!ownerStrings.has(a.index)) ownerStrings.set(a.index, stringCounts.length ? stringCounts[idx] : 5);
+    }
+    const longest = stringCounts.length ? Math.max(...stringCounts) : 5;
+    const chords = table.map((rec, i) => {
+        const n = rec.string_count || ownerStrings.get(i) || longest;
+        return chordRecordToOtf(rec, Math.max(1, Math.min(14, n)));
+    });
+    return { chords, diagrams, dropped };
+}
+
 // --- main conversion ---------------------------------------------------------
 const DEFAULT_TUNINGS = {
     '5-string-banjo': [62, 59, 55, 50, 67],
@@ -504,6 +569,8 @@ export function tefToOtf(tef) {
         return { measure: index + 1, tick: offset * V3_TICKS_PER_UNIT, text: te.text };
     });
 
+    const chordOut = chordDiagramsToOtf(tef, tracks, unitsPerMeasure, V3_TICKS_PER_UNIT);
+
     const doc = {
         otf_version: OTF_VERSION,
         metadata, timing: { ticks_per_beat: 480 },
@@ -513,6 +580,9 @@ export function tefToOtf(tef) {
             e.name ? { from_measure: e.from_measure, to_measure: e.to_measure, name: e.name }
                    : { from_measure: e.from_measure, to_measure: e.to_measure }
         )),
+        chords: chordOut.chords,
+        chord_diagrams: chordOut.diagrams,
+        skipped: chordOut.dropped ? { chord_diagrams: chordOut.dropped } : {},
         _tsChanges: tsChanges,
     };
 
@@ -568,5 +638,8 @@ export function toOtfDict(doc) {
     }
     if (doc.annotations && doc.annotations.length) result.annotations = doc.annotations;
     if (doc.reading_list && doc.reading_list.length) result.reading_list = doc.reading_list;
+    if (doc.chords && doc.chords.length) result.chords = doc.chords;
+    if (doc.chord_diagrams && doc.chord_diagrams.length) result.chord_diagrams = doc.chord_diagrams;
+    if (doc.skipped && Object.keys(doc.skipped).length) result.x_source = { skipped: { ...doc.skipped } };
     return result;
 }
