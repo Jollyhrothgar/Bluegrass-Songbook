@@ -187,7 +187,9 @@ Decoded so far:
 | Type | Meaning | Parsed? |
 |------|---------|---------|
 | 0x39 | **Free-text anchor**: byte 5 = 0-based index into the text table at header ptr 84; location gives (measure, slot, string row) | Yes → OTF `annotations: [{measure, tick, text}]` (byte 7 = signed y-offset, ignored) |
-| 0x35 | Chord-diagram anchor (byte 5 = chord index) | Not yet (chord NAME usually also appears as a 0x39 text) |
+| 0x35 | **Chord-diagram anchor**, compared on the FULL type byte (0x75 = scale diagram, 0xf5 = special character): record bytes 5-6 = u16 index into the chord table (header 88), byte 7 = signed dy, byte 8 = signed dx; the owning track is the one whose strings contain the string row | Yes → OTF `chords[]` + `chord_diagrams[]` (V2: fret byte 0x1c/0x5c/0x9c, byte 3 = chord index; dx/dy not decoded) |
+
+**Chord record** (36 bytes V3, 32 V2): bytes 0-13 one per string, string 1 first (0xff not played, low 5 bits ABSOLUTE fret, high 3 bits 0 plain / 2-5 = finger 1-4); 14-30 NUL-terminated name; 31 first fret shown (signed; 1 on every corpus record that has no position label); V3 byte 32 = the diagram's string count (0 = the owning track's; 0 on every corpus record); 33 unknown (0). No barre is stored. **V2 table**: u16 count at file offset 236, 32-byte records right after the free-text table (reading list, then the u16-count-at-228 text entries); all 51 V2 files with a table read this way. A table that doesn't parse (a name byte below 0x20, no NUL, past EOF) drops its diagrams and is reported as `x_source.skipped.chord_diagrams`. Corpus (decode session, reproduced by `tests/parser/test_tef_chord_diagrams.py`): 380 V3 anchors in 17 files, 1,558 V2 in 40; 19 of 21 scorable diagrams spell their name with the owning track's tuning; 47 referenced records are name-only; 35 records are never referenced.
 
 All of the above oracle-verified against TablEdit's own MusicXML export
 (`<words>`, `<pluck>`, `<fingering>`, `<harmony>`): 35/35 text placements and

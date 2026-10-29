@@ -113,6 +113,8 @@ def build_v3() -> bytes:
     comps = [
         cell(0, 0, 0, 0x01, 0x03),          # banjo open string 1, quarter note
         cell(0, 0, 5, 0x01, 0x03),          # guitar open string 1
+        cell(1, 0, 0, 0x01, 0x03),          # measure 2 has notes too, so it is drawn
+        cell(1, 0, 5, 0x01, 0x03),
         cell(0, 0, 0, 0x75, 0, 0, 0, 0),    # scale diagram: NOT a chord anchor
         cell(0, 8, 0, 0xF5, 0x70, 0x10),    # special character: NOT a chord anchor
         cell(0, 8, 0, 0x39, 0),             # text "G" at the same spot as nothing
@@ -160,10 +162,14 @@ def build_v2() -> bytes:
     comps = [
         comp(0, 0, 0, 0x01, 0x03),             # banjo open string 1, quarter note
         comp(0, 0, 5, 0x01, 0x03),             # guitar open string 1
+        comp(1, 0, 0, 0x01, 0x03),             # measure 2 has notes too, so it is drawn
+        comp(1, 0, 5, 0x01, 0x03),
     ]
     fret_bytes = [0x1C, 0x1C, 0x5C, 0x9C]      # all three V2 anchor codes
     for (m, pos, row, idx, _dy, _dx), fb in zip(ANCHORS, fret_bytes):
         comps.append(comp(m, pos, row, fb, idx))
+    # the stream runs measure by measure (a falling measure number means overflow)
+    comps.sort(key=lambda c: struct.unpack("<H", c[:2])[0] // (ts * strings))
     head[256:258] = struct.pack("<H", len(comps))
 
     texts = struct.pack("<H", 2) + b"G\0"

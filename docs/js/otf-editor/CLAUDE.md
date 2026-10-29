@@ -122,6 +122,13 @@ in `keyboard.js` rewrites the note just placed to the two-digit fret, if it is
 | reached by | `A` (ANNOTATION mode) | clicking the text; `t` / `T` in NORMAL (vim `c` / `C`) |
 | facade | `setFingering`, `setLeftHand`, `setArticulation` | `addAnnotation`, `setAnnotationText`, `deleteAnnotation`, `findAnnotationIndex` |
 
+Chord diagrams (`chords[]` + `chord_diagrams[]`, G15d3) are score-level too but
+read-only in the editor: they cannot be created or edited yet, only survive.
+The facade moves them with `insertMeasure`/`deleteMeasure` (a deleted measure
+takes its diagrams), follows `renameTrack`, and `deleteTrack` removes that
+track's; the `chords` table is never trimmed. Each is one undo step, because
+`_mutate` snapshots the whole document.
+
 Placed text is score-level and drawn above the staff by
 `renderers/tablature.js`; chord names over a tab are placed text. Two entries
 may share a `(measure, tick)`, so address them by index
