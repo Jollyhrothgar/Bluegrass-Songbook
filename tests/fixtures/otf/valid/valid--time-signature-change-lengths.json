@@ -1,0 +1,64 @@
+{
+  "otf_version": "1.0",
+  "metadata": {
+    "title": "Conformance",
+    "time_signature": "6/8",
+    "tempo": 100,
+    "time_signature_changes": [
+      {
+        "measure": 2,
+        "time_signature": "2/4"
+      }
+    ]
+  },
+  "timing": {
+    "ticks_per_beat": 480
+  },
+  "tracks": [
+    {
+      "id": "banjo",
+      "instrument": "5-string-banjo",
+      "tuning": [
+        "D4",
+        "B3",
+        "G3",
+        "D3",
+        "G4"
+      ],
+      "capo": 0,
+      "role": "lead"
+    }
+  ],
+  "notation": {
+    "banjo": [
+      {
+        "measure": 1,
+        "events": [
+          {
+            "tick": 1200,
+            "notes": [
+              {
+                "s": 1,
+                "f": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "measure": 2,
+        "events": [
+          {
+            "tick": 720,
+            "notes": [
+              {
+                "s": 1,
+                "f": 0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

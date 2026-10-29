@@ -370,6 +370,28 @@ class TestIndexContract:
         assert first['source_page_url'].endswith('m=detail&v=111')
         assert first['author_url'].endswith('/my/picker')
 
+    def test_a_typed_credit_link_beats_the_hangout_derived_one(self, tmp_path):
+        work_dir = make_work(tmp_path, parts=[
+            tab_part('banjo', '111', author='picker',
+                     author_url='https://example.com/picker'),
+            tab_part('banjo', '222', file='banjo-222.otf.json', author='other'),
+        ])
+        for name in ('banjo.otf.json', 'banjo-222.otf.json'):
+            write_otf(work_dir / name)
+        first, second = build_song_from_work(work_dir)['tablature_parts']
+        assert first['author_url'] == 'https://example.com/picker'
+        assert second['author_url'].endswith('/my/other')   # derived, as before
+
+    def test_a_typed_credit_link_publishes_for_a_non_hangout_part(self, tmp_path):
+        part = tab_part('banjo', 'pending:x:1', author='Jane',
+                        author_url='https://example.com/jane')
+        part['provenance']['source'] = 'user-submission'
+        work_dir = make_work(tmp_path, parts=[part])
+        write_otf(work_dir / 'banjo.otf.json')
+        first = build_song_from_work(work_dir)['tablature_parts'][0]
+        assert first['author'] == 'Jane'
+        assert first['author_url'] == 'https://example.com/jane'
+
     def test_difficulty_and_tuning_are_omitted_when_unknown(self, work_dir):
         second = build_song_from_work(work_dir)['tablature_parts'][1]
         assert 'difficulty' not in second

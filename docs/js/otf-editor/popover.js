@@ -1639,8 +1639,7 @@ const GRACE_KIND_LABELS = {
 /**
  * Grace Note Popover — TablEdit's Alt+G "Grace Note" dialog.
  *
- * A grace note hangs on the MAIN note (`note.grace = {f, kind?}`, DESIGN
- * "interface Note"): a quick note on the same string, fret `f`, played
+ * A grace note hangs on the MAIN note (`note.grace = {f, kind?}`, docs/schema/otf.md): a quick note on the same string, fret `f`, played
  * just before it, connected by `kind` (hammer/pull, slide, …; none = a
  * plain grace). So the panel asks two things — a fret and a connection —
  * and answers `onCommit({f, kind?})`, or `onCommit(null)` from Remove.

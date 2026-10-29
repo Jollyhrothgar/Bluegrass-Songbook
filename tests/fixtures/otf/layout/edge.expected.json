@@ -1,0 +1,73 @@
+{
+  "otf_version": "1.0",
+  "metadata": {
+    "title": "Edge é \"quoted\"",
+    "time_signature": "4/4",
+    "tempo": 120,
+    "key": "G",
+    "composer": "",
+    "tab_by": {
+      "name": "Jane",
+      "url": "https://example.com/u"
+    },
+    "time_signature_changes": [
+      {"measure": 2, "time_signature": "3/4"}
+    ]
+  },
+  "timing": {
+    "ticks_per_beat": 480
+  },
+  "tracks": [
+    {
+      "id": "banjo",
+      "instrument": "5-string-banjo",
+      "tuning": ["D4", "B3"],
+      "capo": 0,
+      "role": "lead"
+    },
+    {
+      "id": "perc",
+      "instrument": "percussion",
+      "tuning": [],
+      "percussion": true,
+      "lines": 3
+    }
+  ],
+  "notation": {
+    "banjo": [
+      {
+        "measure": 1,
+        "events": [
+          {"tick": 0, "notes": [{"s": 5, "f": 2, "dur": 120, "tie": true, "tech": "h", "fx": ["brush", "roll"], "grace": {"f": 3, "kind": "hp"}, "finger": "T", "lh": 2}]},
+          {"tick": 240, "notes": []}
+        ]
+      },
+      {
+        "measure": 2,
+        "events": []
+      }
+    ],
+    "empty": []
+  },
+  "annotations": [
+    {"measure": 1, "tick": 0, "text": "tab\there\nnew \\ line \u0001\u001f     café 🎵 lone \ud800 end"}
+  ],
+  "reading_list": [
+    {"from_measure": 1, "to_measure": 2, "name": "Intro \"A\""}
+  ],
+  "x_source": {
+    "url": "http://x",
+    "zzz": [
+      1,
+      {
+        "b": 2,
+        "a": 1
+      }
+    ],
+    "aaa": {},
+    "nested": {
+      "k": []
+    },
+    "type": "local"
+  }
+}

@@ -20,6 +20,7 @@ import {
     measureTimingFromOtf,
 } from '../renderers/measure-timing.js';
 import { notePitch, fretForPitch } from './pitch.js';
+import { TAB_BY_NAME_MAX, TAB_BY_URL_MAX } from './otf-validate.js';
 
 const clone = (x) => JSON.parse(JSON.stringify(x));
 
@@ -112,7 +113,7 @@ function assertLeftHand(digit) {
 }
 
 // ----------------------------------------------------------------------
-// TablEdit's note effects and grace notes — DESIGN.md "interface Note".
+// TablEdit's note effects and grace notes — docs/schema/otf.md.
 //
 // Like the fingering alphabets, these are the TEF importer's vocabulary
 // (`docs/js/tef-import/otf.js` FX_ORDER / GRACE_KINDS, decoded from
@@ -284,6 +285,11 @@ export class EditingFacade {
      * @returns {Object} the same document
      */
     _adopt(doc) {
+        // A legacy `role: 'backup'` (the new-tab builder wrote it until
+        // 2026-10-28) is not in the schema's role enum: it is `rhythm`.
+        for (const t of doc?.tracks || []) {
+            if (t && t.role === 'backup') t.role = 'rhythm';
+        }
         const notation = doc?.notation;
         if (!notation) return doc;
         for (const measures of Object.values(notation)) {
@@ -1459,6 +1465,51 @@ export class EditingFacade {
             this.otf.metadata.tempo = v;
             return true;
         });
+    }
+
+    /**
+     * Set (or clear, with null) who wrote this tab: `metadata.tab_by`
+     * `{name, url?}`. Undoable, one step per call. The caller validates
+     * (see otf-editor/tab-credit.js); this only refuses what the schema would.
+     * A document that gets a credit is stamped 1.1, the version that has it.
+     */
+    setTabBy(credit) {
+        let next = null;
+        if (credit) {
+            const name = typeof credit.name === 'string' ? credit.name.trim() : '';
+            const url = typeof credit.url === 'string' ? credit.url.trim() : '';
+            if (!name) return false;
+            // The schema's domain, enforced here like every value setter: a
+            // credit the validators reject would get the whole tab refused
+            // at Submit (process_pending), not just the credit.
+            if (name.length > TAB_BY_NAME_MAX) {
+                throw new RangeError(`Tab credit name over ${TAB_BY_NAME_MAX} characters`);
+            }
+            if (url && (!/^https?:\/\//.test(url) || url.length > TAB_BY_URL_MAX)) {
+                throw new RangeError('Tab credit link must be an http(s) URL of at most '
+                    + `${TAB_BY_URL_MAX} characters`);
+            }
+            next = url ? { name, url } : { name };
+        }
+        return this._mutate(next ? 'Set tab credit' : 'Clear tab credit', () => {
+            if (!this.otf.metadata) this.otf.metadata = {};
+            const now = this.otf.metadata.tab_by || null;
+            if ((now?.name ?? null) === (next?.name ?? null)
+                && (now?.url ?? null) === (next?.url ?? null)) return false;
+            if (next) {
+                this.otf.metadata.tab_by = next;
+                if (this.otf.otf_version === '1.0') this.otf.otf_version = '1.1';
+            } else {
+                delete this.otf.metadata.tab_by;
+            }
+            return true;
+        });
+    }
+
+    /** The current credit, `{name, url?}` or null. */
+    getTabBy() {
+        const t = this.otf.metadata?.tab_by;
+        return t && t.name ? { ...t } : null;
     }
 
     // ------------------------------------------------------------------

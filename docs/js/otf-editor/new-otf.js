@@ -41,7 +41,7 @@ export function createEmptyOTF(instrument = '5-string-banjo', options = {}) {
     const config = instrumentConfigs[instrument] || instrumentConfigs['5-string-banjo'];
 
     return {
-        otf_version: '1.0',
+        otf_version: '1.1',
         metadata: {
             title: options.title || 'Untitled',
             time_signature: options.timeSignature || '4/4',
@@ -103,7 +103,7 @@ export function createMultiTrackOTF({
         let n = 2;
         while (used.has(id)) id = `${track.id}-${n++}`;
         used.add(id);
-        base.tracks.push({ ...track, id, role: base.tracks.length === 0 ? 'lead' : 'backup' });
+        base.tracks.push({ ...track, id, role: base.tracks.length === 0 ? 'lead' : 'rhythm' });
         base.notation[id] = Array.from({ length: measures },
             (_, i) => ({ measure: i + 1, events: [] }));
     }

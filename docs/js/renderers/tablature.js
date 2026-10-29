@@ -121,7 +121,7 @@ export function restGlyphSequence(len, start = null) {
 
 /*
  * TablEdit's per-note effects (note.fx, fix-it A15; the format is in
- * otf-editor/DESIGN.md "interface Note"). Each one is drawn in one of four
+ * docs/schema/otf.md). Each one is drawn in one of four
  * places, chosen so marks that stack never collide with each other or with
  * the existing H/P/sl labels, tie arcs and finger letters:
  *

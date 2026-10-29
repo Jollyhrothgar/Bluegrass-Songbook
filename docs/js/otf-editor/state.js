@@ -320,7 +320,7 @@ export class EditorState {
         const trackId = instrument.replace(/-/g, '_').replace(/\d+_string_/, '');
 
         return {
-            otf_version: '1.0',
+            otf_version: '1.1',
             metadata: {
                 title: 'Untitled',
                 time_signature: '4/4',

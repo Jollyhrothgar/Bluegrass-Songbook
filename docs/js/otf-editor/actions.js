@@ -2,10 +2,14 @@
 // Higher-level edit actions that operate on state
 
 import { EditorMode, DURATIONS } from './state.js';
+import { serializeOTF } from '../otf-format.js';
 
 // createEmptyOTF / createMultiTrackOTF live in new-otf.js (no editor state
 // needed to build a blank document); re-exported for existing importers.
 export { createEmptyOTF, createMultiTrackOTF } from './new-otf.js';
+
+// validateOTF lives in otf-validate.js (the JS twin of scripts/lib/otf_schema.py).
+export { validateOTF } from './otf-validate.js';
 
 /**
  * Add measures to OTF document
@@ -340,56 +344,6 @@ export function insertRoll(state, rollType) {
 }
 
 /**
- * Validate OTF document structure
- * @param {Object} otf - OTF document
- * @returns {Object} - Validation result with errors array
- */
-export function validateOTF(otf) {
-    const errors = [];
-
-    if (!otf) {
-        errors.push('OTF document is null or undefined');
-        return { valid: false, errors };
-    }
-
-    if (otf.otf_version !== '1.0') {
-        errors.push(`Unknown OTF version: ${otf.otf_version}`);
-    }
-
-    if (!otf.metadata) {
-        errors.push('Missing metadata section');
-    }
-
-    if (!otf.timing) {
-        errors.push('Missing timing section');
-    } else if (!otf.timing.ticks_per_beat) {
-        errors.push('Missing ticks_per_beat in timing');
-    }
-
-    if (!otf.tracks || otf.tracks.length === 0) {
-        errors.push('No tracks defined');
-    } else {
-        for (const track of otf.tracks) {
-            if (!track.id) {
-                errors.push('Track missing id');
-            }
-            if (!track.tuning || track.tuning.length === 0) {
-                errors.push(`Track ${track.id} missing tuning`);
-            }
-        }
-    }
-
-    if (!otf.notation) {
-        errors.push('Missing notation section');
-    }
-
-    return {
-        valid: errors.length === 0,
-        errors,
-    };
-}
-
-/**
  * Clean up OTF document (remove empty events, sort, etc.)
  * @param {Object} otf - OTF document
  */
@@ -424,7 +378,7 @@ export function cleanupOTF(otf) {
  */
 export function downloadOTF(otf, filename = 'untitled') {
     const cleaned = cleanupOTF(JSON.parse(JSON.stringify(otf)));
-    const json = JSON.stringify(cleaned, null, 2);
+    const json = serializeOTF(cleaned);   // the one file layout (otf-format.js)
     const blob = new Blob([json], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
 

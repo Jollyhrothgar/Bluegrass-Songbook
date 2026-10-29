@@ -1,5 +1,5 @@
 // TablEdit's per-note effects (`fx`) and grace notes (`grace`) — the
-// facade half. DESIGN.md "interface Note": `fx` is a SET stored in
+// facade half. docs/schema/otf.md: `fx` is a SET stored in
 // FX_ORDER and omitted when empty (never `[]`); `grace` is
 // `{f: 0..24, kind?}` hanging on the main note.
 //
