@@ -6,6 +6,7 @@ Copied from TablEdit_Reverse project.
 import json
 import sys
 from collections import Counter
+import re
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
@@ -23,6 +24,25 @@ MIDI_TO_PITCH = {
     60: "C4", 61: "C#4", 62: "D4", 63: "D#4", 64: "E4", 65: "F4", 66: "F#4", 67: "G4", 68: "G#4", 69: "A4", 70: "A#4", 71: "B4",
     72: "C5", 73: "C#5", 74: "D5", 75: "D#5", 76: "E5", 77: "F5", 78: "F#5", 79: "G5", 80: "G#5", 81: "A5", 82: "A#5", 83: "B5",
 }
+
+
+_TAB_BY_LINE = re.compile(r"^Tab by: (.+?)(?: <(https?://[^\s<>]+)>)?$")
+
+
+def tab_by_from_comments(text: str) -> dict[str, str] | None:
+    """The "Tab by: NAME <URL>" credit line that the .tef writer puts in the
+    comments (G15f), as metadata.tab_by, or None. The last such line wins.
+    Mirrors tabByFromComments() in tef-import/reader.js."""
+    found = None
+    for line in re.split(r"\r?\n", text or ""):
+        m = _TAB_BY_LINE.match(line.strip())
+        if not m:
+            continue
+        name = m.group(1).strip()
+        if not name or len(name) > 100 or (m.group(2) and len(m.group(2)) > 500):
+            continue
+        found = {"name": name, "url": m.group(2)} if m.group(2) else {"name": name}
+    return found
 
 
 def midi_to_pitch_name(midi: int) -> str:
@@ -135,6 +155,7 @@ class OTFMetadata:
     title: str = ""
     composer: str | None = None
     arranger: str | None = None
+    tab_by: dict[str, str] | None = None   # {name, url?}: the "Tab by" credit (schema 1.1)
     key: str | None = None
     time_signature: str = "4/4"
     tempo: int = 100
@@ -202,6 +223,8 @@ class OTFDocument:
             result["metadata"]["composer"] = self.metadata.composer
         if self.metadata.key:
             result["metadata"]["key"] = self.metadata.key
+        if self.metadata.tab_by:
+            result["metadata"]["tab_by"] = dict(self.metadata.tab_by)
 
         # Add tracks
         for track in self.tracks:
@@ -1077,6 +1100,7 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
 
     # Metadata
     doc.metadata.title = tef.title or tef.path.stem
+    doc.metadata.tab_by = tab_by_from_comments(tef.comments)
     if tef.header.is_v2:
         doc.metadata.time_signature = f"{tef.header.v2_time_num}/{tef.header.v2_time_denom}"
         if tef.header.v2_composer:

@@ -546,6 +546,7 @@ export function parseV2(data, name) {
         path_stem: name,
         header,
         title: header.v2_title,
+        tab_by: tabByFromComments(header.v2_comments),
         instruments,
         note_events: noteEvents,
         text_events: textEvents,
@@ -619,6 +620,44 @@ export function findStrings(data) {
         i += 1;
     }
     return strings;
+}
+
+/** A u16-length-prefixed string at the header pointer `slot` (latin-1, up to
+ *  the first NUL), or null when the pointer or length is unusable. */
+export function headerString(data, slot) {
+    if (data.length < slot + 4) return null;
+    const p = u32(data, slot);
+    if (p < V3_HEADER_SIZE || p + 2 > data.length) return null;
+    const len = u16(data, p);
+    if (p + 2 + len > data.length) return null;
+    let s = '';
+    for (let j = p + 2; j < p + 2 + len && data[j] !== 0; j++) s += String.fromCharCode(data[j]);
+    return s;
+}
+
+/** The V3 title as TablEdit stores it (header pointer 64), or null when it
+ *  holds control characters (a multi-line title): the caller then falls back
+ *  to the first-printable-string heuristic. */
+export function titleFromHeader(data) {
+    const s = headerString(data, 0x40);
+    if (s === null || /[\x00-\x1f\x7f]/.test(s)) return null;
+    return s.trim();
+}
+
+const TAB_BY_LINE = /^Tab by: (.+?)(?: <(https?:\/\/[^\s<>]+)>)?$/;
+
+/** The "Tab by: NAME <URL>" credit line that the .tef writer puts in the
+ *  comments (G15f), as metadata.tab_by, or null. The last such line wins. */
+export function tabByFromComments(text) {
+    let found = null;
+    for (const line of String(text || '').split(/\r?\n/)) {
+        const m = TAB_BY_LINE.exec(line.trim());
+        if (!m) continue;
+        const name = m[1].trim();
+        if (!name || name.length > 100 || (m[2] && m[2].length > 500)) continue;
+        found = m[2] ? { name, url: m[2] } : { name };
+    }
+    return found;
 }
 
 export function parseMeasureTableV3(data) {
@@ -887,18 +926,23 @@ export function parseV3(data, name) {
     }
     const header = readV3Header(data);
     const strings = findStrings(data);
-    // Title = the FIRST substantial string (offset ~0x100), not the longest —
+    // Title: header pointer 64, which is where TablEdit keeps it. A title with
+    // control characters (a multi-line one) and files with no usable pointer
+    // fall back to the FIRST substantial string below 0x200, not the longest —
     // see reader.py. Skips verbose credits and decorative "____INTRO____" separators.
-    let title = '';
-    for (const s of strings) {
-        if (s.offset >= 0x200) continue;
-        const v = s.value.trim();
-        if (v.length < 3 || v.includes('Part') || v[0] === '(' || v[0] === '-') continue;
-        const nonspace = [...v].filter(c => !/\s/.test(c)).length;
-        const alnum = [...v].filter(c => /[a-zA-Z0-9]/.test(c)).length;
-        if (nonspace && alnum / nonspace < 0.5) continue;   // skip decorative separators
-        title = v;
-        break;
+    let title = titleFromHeader(data);
+    if (title === null) {
+        title = '';
+        for (const s of strings) {
+            if (s.offset >= 0x200) continue;
+            const v = s.value.trim();
+            if (v.length < 3 || v.includes('Part') || v[0] === '(' || v[0] === '-') continue;
+            const nonspace = [...v].filter(c => !/\s/.test(c)).length;
+            const alnum = [...v].filter(c => /[a-zA-Z0-9]/.test(c)).length;
+            if (nonspace && alnum / nonspace < 0.5) continue;   // skip decorative separators
+            title = v;
+            break;
+        }
     }
     const instruments = parseTrackRecordsV3(data);   // name-pattern fallback not ported
     const { events, textRefs, markRefs, chordRefs, tsChanges, globalTs, slotStarts, slotCounts } = parseNoteEventsV3(data, instruments);
@@ -924,6 +968,7 @@ export function parseV3(data, name) {
         path_stem: name,
         header,
         title,
+        tab_by: tabByFromComments(headerString(data, 0x48)),
         instruments,
         note_events: events,
         text_events: textEvents,

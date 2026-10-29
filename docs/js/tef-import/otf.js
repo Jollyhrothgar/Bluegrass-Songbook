@@ -76,13 +76,13 @@ export function instrumentToType(inst) {
 // --- articulation / tie helpers ---------------------------------------------
 // TablEdit's per-note effects (fix-it A15) — a port of otf.py note_fx /
 // note_grace / is_dead_note; see there for the bytes and the evidence.
-const EFFECT_FX = { 4: 'choke', 5: 'brush', 6: 'harmonic', 7: 'artificial-harmonic',
+export const EFFECT_FX = { 4: 'choke', 5: 'brush', 6: 'harmonic', 7: 'artificial-harmonic',
     8: 'muted', 9: 'tap', 10: 'vibrato', 11: 'tremolo', 12: 'bend', 13: 'bend-release', 14: 'roll' };
-const BEND_EFFECTS = new Set([12, 13]);
-const ATTRIBUTE_FX = { 1: 'let-ring', 2: 'slap', 4: 'ghost', 7: 'staccato' };
-const SECOND_FX = { 3: 'roll', 5: 'brush', 6: 'harmonic', 7: 'artificial-harmonic',
+export const BEND_EFFECTS = new Set([12, 13]);
+export const ATTRIBUTE_FX = { 1: 'let-ring', 2: 'slap', 4: 'ghost', 7: 'staccato' };
+export const SECOND_FX = { 3: 'roll', 5: 'brush', 6: 'harmonic', 7: 'artificial-harmonic',
     8: 'let-ring', 9: 'ghost' };
-const SECOND_DEAD = 10;
+export const SECOND_DEAD = 10;
 const V2_LAYOUT_CODES = new Set([0x0b, 0x0c, 0x0d, 0x0e, 0xc0, 0xd0]);
 export const FX_ORDER = ['brush', 'roll', 'choke', 'ghost', 'staccato', 'let-ring', 'muted',
     'harmonic', 'artificial-harmonic', 'tap', 'vibrato', 'tremolo', 'bend', 'bend-release', 'slap'];
@@ -185,6 +185,19 @@ function tripletDurationCode(evt) {
     else if (raw.length >= 4) code = raw[3] & 0x1f;     // V2 duration byte
     else return null;
     return TRIPLET_DURATION_CODES.has(code) ? code : null;
+}
+
+/** Triplet timing (V2 and V3): TRIPLET_DURATION_CODES are 3:2. TablEdit stores
+ *  a triplet's position straight; only a note on the straight storage step
+ *  (3/4 of its triplet duration) is stretched by 4/3, and only while it stays
+ *  inside the measure. The .tef writer inverts this (tef-export/notes.js). */
+export function retimeTriplet(tick, code, measureTicks) {
+    const span = 2 * (1920 >> fdiv(code, 3));
+    const step = fdiv(decodeDurationCode(code) * 3, 4);
+    const inSpan = tick % span;
+    if (inSpan % step !== 0) return tick;
+    const retimed = tick - inSpan + fdiv(inSpan * 4, 3);
+    return retimed < measureTicks ? retimed : tick;
 }
 
 export function computeArticulations(noteEvents, maxGap) {
@@ -466,6 +479,8 @@ export function tefToOtf(tef) {
         metadata.time_signature = '2/2';
     }
 
+    if (tef.tab_by) metadata.tab_by = tef.tab_by;
+
     let tsChanges = tef.time_signature_changes.map(c => ({
         measure: c.measure, time_signature: `${c.numerator}/${c.denominator}`,
     }));
@@ -564,22 +579,16 @@ export function tefToOtf(tef) {
         // on the straight storage step (3/4 of its triplet duration) is compressed.
         const code = tripletDurationCode(event);
         if (code !== null) {
-            const span = 2 * (1920 >> fdiv(code, 3));
-            const step = fdiv(decodeDurationCode(code) * 3, 4);
-            const inSpan = tick % span;
-            if (inSpan % step === 0) {
-                const retimed = tick - inSpan + fdiv(inSpan * 4, 3);
-                // Barline guard (G15d5, port of otf.py): TablEdit's MusicXML export
-                // keeps 10676 m7's slot-3 note inside the measure (945/240 divisions),
-                // never on or past the barline, so keep the stored tick then.
-                let measureTicks = 1920;
-                if (isV2) measureTicks = fdiv(unitsPerMeasure * 15, 2);
-                else if (tef.v3_measure_starts && tef.v3_measure_starts.length
-                         && measure - 1 < tef.v3_measure_lengths.length) {
-                    measureTicks = tef.v3_measure_lengths[measure - 1] * V3_TICKS_PER_UNIT;
-                }
-                if (retimed < measureTicks) tick = retimed;
+            // Barline guard (G15d5, port of otf.py): TablEdit's MusicXML export
+            // keeps 10676 m7's slot-3 note inside the measure (945/240 divisions),
+            // never on or past the barline, so keep the stored tick then.
+            let measureTicks = 1920;
+            if (isV2) measureTicks = fdiv(unitsPerMeasure * 15, 2);
+            else if (tef.v3_measure_starts && tef.v3_measure_starts.length
+                     && measure - 1 < tef.v3_measure_lengths.length) {
+                measureTicks = tef.v3_measure_lengths[measure - 1] * V3_TICKS_PER_UNIT;
             }
+            tick = retimeTriplet(tick, code, measureTicks);
         }
 
         const measures = trackEvents.get(trackId);
@@ -736,6 +745,7 @@ export function toOtfDict(doc) {
     if (doc._tsChanges && doc._tsChanges.length) metadata.time_signature_changes = doc._tsChanges;
     if (doc.metadata.composer) metadata.composer = doc.metadata.composer;
     if (doc.metadata.key) metadata.key = doc.metadata.key;
+    if (doc.metadata.tab_by) metadata.tab_by = { ...doc.metadata.tab_by };
 
     const result = {
         otf_version: doc.otf_version,

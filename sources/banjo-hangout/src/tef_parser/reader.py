@@ -378,6 +378,7 @@ class TEFFile:
     path: Path
     header: TEFHeader
     title: str = ""
+    comments: str = ""   # the Comments field (V2 info string / V3 pointer 0x48)
     strings: list[TEFString] = field(default_factory=list)
     instruments: list[TEFInstrument] = field(default_factory=list)
     chords: list[TEFChord] = field(default_factory=list)
@@ -2151,6 +2152,7 @@ class TEFReader:
             path=self.path,
             header=header,
             title=title,
+            comments=header.v2_comments,
             strings=strings,
             instruments=instruments,
             chords=chords,
@@ -2166,6 +2168,31 @@ class TEFReader:
             chord_anchors_dropped=chord_dropped,
         )
 
+    def header_string(self, slot: int) -> str | None:
+        """A u16-length-prefixed string at the V3 header pointer `slot`
+        (latin-1, up to the first NUL), or None when the pointer or length is
+        unusable. Mirrors headerString() in tef-import/reader.js."""
+        data = self.data
+        if len(data) < slot + 4:
+            return None
+        ptr = struct.unpack_from('<I', data, slot)[0]
+        if ptr < V3_HEADER_SIZE or ptr + 2 > len(data):
+            return None
+        length = struct.unpack_from('<H', data, ptr)[0]
+        if ptr + 2 + length > len(data):
+            return None
+        raw = data[ptr + 2:ptr + 2 + length].split(b'\x00', 1)[0]
+        return raw.decode('latin-1')
+
+    def title_from_header(self) -> str | None:
+        """The V3 title as TablEdit stores it (header pointer 64), or None when
+        it holds control characters (a multi-line title): the caller then
+        falls back to the first-printable-string heuristic."""
+        s = self.header_string(0x40)
+        if s is None or any(ord(c) < 0x20 or ord(c) == 0x7f for c in s):
+            return None
+        return s.strip()
+
     def _parse_v3(self, header: TEFHeader) -> TEFFile:
         """Parse V3 format TEF file."""
         # V3 header tempo: u16 at 0x06, in quarter-note BPM. Verified
@@ -2178,26 +2205,30 @@ class TEFReader:
 
         strings = self.find_strings()
 
-        # Title = the FIRST substantial string in the info region (offset
+        # Title: header pointer 64 (where TablEdit keeps it; G15f). A title with
+        # control characters (multi-line) or no usable pointer falls back to the
+        # FIRST substantial string in the info region (offset
         # ~0x100), NOT the longest. The longest is usually a verbose tabber
         # credit ("TablEdited by Greg Crisp"), and decorative section
         # separators ("____INTRO____") are longer still — the old "longest"
         # rule picked those over the real title ("Cherokee Shuffle",
         # "Jerusalem Ridge", "Welcome To New York"). find_strings returns
         # strings in ascending-offset order, so the first qualifying one wins.
-        title = ""
-        for s in strings:
-            if s.offset >= 0x200:
-                continue
-            v = s.value.strip()
-            if len(v) < 3 or 'Part' in v or v[:1] in ('(', '-'):
-                continue
-            nonspace = sum(not c.isspace() for c in v)
-            alnum = sum(c.isalnum() for c in v)
-            if nonspace and alnum / nonspace < 0.5:  # skip decorative separators
-                continue
-            title = v
-            break
+        title = self.title_from_header()
+        if title is None:
+            title = ""
+            for s in strings:
+                if s.offset >= 0x200:
+                    continue
+                v = s.value.strip()
+                if len(v) < 3 or 'Part' in v or v[:1] in ('(', '-'):
+                    continue
+                nonspace = sum(not c.isspace() for c in v)
+                alnum = sum(c.isalnum() for c in v)
+                if nonspace and alnum / nonspace < 0.5:  # skip decorative separators
+                    continue
+                title = v
+                break
 
         instruments = self.parse_track_records_v3() or self.parse_instruments()
         chords = self.parse_chords()
@@ -2227,6 +2258,7 @@ class TEFReader:
             path=self.path,
             header=header,
             title=title,
+            comments=self.header_string(0x48) or "",
             strings=strings,
             instruments=instruments,
             chords=chords,
