@@ -20,7 +20,7 @@ import {
     measureTimingFromOtf,
 } from '../renderers/measure-timing.js';
 import { notePitch, fretForPitch } from './pitch.js';
-import { TAB_BY_NAME_MAX, TAB_BY_URL_MAX, ensureVersionAtLeast } from './otf-validate.js';
+import { TAB_BY_NAME_MAX, TAB_BY_URL_MAX, DYN_LEVELS, ensureVersionAtLeast } from './otf-validate.js';
 import { isPercussionTrack, pitchedTracks } from '../renderers/otf-tracks.js';
 
 const clone = (x) => JSON.parse(JSON.stringify(x));
@@ -129,6 +129,15 @@ function assertLeftHand(digit) {
 //          played just before this one; `kind` is how it connects
 //          (absent = a plain grace note). It has no tick of its own.
 // ----------------------------------------------------------------------
+
+/** A track with no `dyn` plays at f, TablEdit's common default. */
+export const DEFAULT_DYN = 'f';
+
+function assertDynamic(level) {
+    if (level != null && !DYN_LEVELS.includes(level)) {
+        throw new RangeError(`Unknown dynamic "${level}" (use ${DYN_LEVELS.join(' ')} or null)`);
+    }
+}
 
 /** The effects, in the one order a note stores them. */
 export const FX_ORDER = ['brush', 'roll', 'choke', 'ghost', 'staccato', 'let-ring',
@@ -517,6 +526,7 @@ export class EditingFacade {
         }
         if (this.getTrack(track.id)) throw new Error(`Track id already in use: ${track.id}`);
         this._mutate('Add track', () => {
+            if (track.dyn) ensureVersionAtLeast(this.otf, '1.2');
             this.otf.tracks.push(clone(track));
             return true;
         });
@@ -985,8 +995,12 @@ export class EditingFacade {
         if (on && !this.tiePredecessor(pos, trackId)) return false;
         return this._mutate(on ? 'Add tie' : 'Remove tie', () => {
             const found = this._findNote(pos, trackId);
-            if (on) found.note.tie = true;
-            else delete found.note.tie;
+            if (on) {
+                found.note.tie = true;
+                delete found.note.dyn;     // a tie continues its source's sound
+            } else {
+                delete found.note.tie;
+            }
             return true;
         });
     }
@@ -1689,6 +1703,71 @@ export class EditingFacade {
     }
 
     // ------------------------------------------------------------------
+    // Dynamics — `note.dyn` against `tracks[].dyn` (default f)
+    //
+    // A note with no `dyn` plays at its track's level, and `note.dyn` is
+    // stored only when it differs from that, so setting a note to the
+    // track's own level clears the key. A tied note continues its source
+    // and carries none: it is refused here and loses `dyn` when tied.
+    // ------------------------------------------------------------------
+
+    /** The level a note with no `dyn` plays at on this track. */
+    trackDynamic(trackId = this.trackId) {
+        return this.getTrack(trackId)?.dyn ?? DEFAULT_DYN;
+    }
+
+    /** The level the note actually plays at (its own, else its track's). */
+    noteDynamic(note, trackId = this.trackId) {
+        return note.dyn ?? this.trackDynamic(trackId);
+    }
+
+    /** Write `level` onto a note (null = back to the track's). @returns {boolean} changed */
+    _writeDynamic(note, level, trackId) {
+        if (note.tie) return false;
+        const want = level == null || level === this.trackDynamic(trackId) ? null : level;
+        if ((note.dyn ?? null) === want) return false;
+        if (want) {
+            note.dyn = want;
+            ensureVersionAtLeast(this.otf, '1.2');
+        } else {
+            delete note.dyn;
+        }
+        return true;
+    }
+
+    /**
+     * Set one note's dynamic, or clear it with null ("Track default").
+     * @param {Object} pos - {measure, tick, string}
+     * @param {string|null} level - one of DYN_LEVELS, or null
+     * @throws {RangeError} on a level outside DYN_LEVELS
+     * @returns {boolean} false when there is no note, it is tied, or it already reads that
+     */
+    setDynamic(pos, level, trackId = this.trackId) {
+        assertDynamic(level);
+        return this._mutate(level ? 'Set dynamic' : 'Clear dynamic', () => {
+            const { note } = this._findNote(pos, trackId);
+            if (!note) return false;
+            return this._writeDynamic(note, level, trackId);
+        });
+    }
+
+    /**
+     * setDynamic over a tick range — one undo step for the phrase. Tied
+     * notes are skipped.
+     * @returns {boolean} false when no note in range changed
+     */
+    setRangeDynamic(startAbs, endAbs, level, { strings = null, trackId = this.trackId } = {}) {
+        assertDynamic(level);
+        return this._mutate(level ? 'Set dynamic' : 'Clear dynamic', () => {
+            let changed = false;
+            for (const { note } of this.notesInRange(startAbs, endAbs, { strings, trackId })) {
+                if (this._writeDynamic(note, level, trackId)) changed = true;
+            }
+            return changed;
+        });
+    }
+
+    // ------------------------------------------------------------------
     // Effects (`fx`) and grace notes — TablEdit's note model
     //
     // Same contract as the fingering ops: the vocabulary is validated
@@ -1894,7 +1973,10 @@ export class EditingFacade {
             }
         }
         data.sort((a, b) => a.relativeTick - b.relativeTick);
-        const payload = { type: 'notes', span: endAbs - startAbs, data };
+        // trackDyn: the level a note with no `dyn` had here, so a paste into a
+        // track at another level can keep the sound (see paste).
+        const payload = { type: 'notes', span: endAbs - startAbs, data,
+            trackDyn: this.trackDynamic(trackId) };
         if (updateClipboard) {
             this.clipboard = payload;
             this._emit('clipboardChange', payload);
@@ -1950,6 +2032,22 @@ export class EditingFacade {
     }
 
     /**
+     * A copied note with no `dyn` sounded at its SOURCE track's level. Pasted
+     * into a track at another level it must keep that sound, so it gets an
+     * explicit `dyn`; one that now equals the target's level drops it.
+     */
+    _carryDynamic(note, sourceLevel, trackId) {
+        if (sourceLevel === undefined || note.tie) return;
+        const level = note.dyn ?? sourceLevel;
+        if (level === this.trackDynamic(trackId)) {
+            delete note.dyn;
+        } else {
+            note.dyn = level;
+            ensureVersionAtLeast(this.otf, '1.2');
+        }
+    }
+
+    /**
      * Paste a payload with its start at an absolute tick. Events are
      * re-bucketed into measures through the ts-aware timeline, so a
      * phrase copied from 4/4 territory lands correctly around short
@@ -1967,7 +2065,9 @@ export class EditingFacade {
                 const { measure, tick } = this.locate(atAbs + item.relativeTick);
                 for (const note of item.notes) {
                     if (count && note.s > count) continue;
-                    this._placeNote(trackId, measure, tick, clone(note));
+                    const placed = clone(note);
+                    this._carryDynamic(placed, payload.trackDyn, trackId);
+                    this._placeNote(trackId, measure, tick, placed);
                     // A pasted note keeps the rhythm it was copied with:
                     // it is not "entered under auto", so it is neither
                     // pinned nor re-timed. Its NEIGHBOURS still adapt.
