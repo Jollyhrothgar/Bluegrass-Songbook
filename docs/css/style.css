@@ -11547,6 +11547,8 @@ body.file-dragover .tab-home-open {
     display: grid;
     margin-bottom: 0.4rem;
     border-right: 2px solid var(--text);
+    /* the body's face: practice rows sit inside the lyrics' monospace block */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
 }
 .cc-bar { display: flex; border-left: 2px solid var(--text); min-width: 0; }
 .cc-cell { display: flex; flex: 1; min-width: 0; }
