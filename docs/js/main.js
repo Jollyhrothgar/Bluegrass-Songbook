@@ -3369,11 +3369,16 @@ function init() {
         });
     }
 
-    // Update URL when user types in search (debounced, uses replaceState to avoid history spam)
+    // Update URL when user types in search (debounced, uses replaceState to avoid history spam).
+    // Skipped if the reader has navigated since typing: a result clicked
+    // inside the delay put the song on screen, and replacing then overwrote the
+    // song's history entry with the search (e2e/song-paths.spec.js).
     let urlUpdateTimeout = null;
     searchInput?.addEventListener('input', (e) => {
         if (urlUpdateTimeout) clearTimeout(urlUpdateTimeout);
+        const typedAt = currentHref();
         urlUpdateTimeout = setTimeout(() => {
+            if (currentHref() !== typedAt) return;
             const query = e.target.value.trim();
             // Use replaceState so back button goes to previous page, not previous keystroke
             pushHistoryState(dungeonMode ? 'dungeon' : 'search', { query }, true);
