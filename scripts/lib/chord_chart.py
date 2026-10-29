@@ -1,7 +1,8 @@
 """Chord charts: the `chord-chart` part of a work (G18a).
 
-A chart is bars of chords, one cell per bar, a fixed number of slots per cell
-(a slot is a chord or `\\`, "keep playing"). It lives in
+A chart is cells of chords, a fixed number of slots per cell (a slot is one
+bass note: a chord or `\\`, "keep playing"). How many cells a printed bar
+holds is a display setting, so `|` here separates cells. It lives in
 `works/<song root>/chord-chart.yaml`. Design: docs/plans/2026-10-29-chord-charts.md.
 
     chart = parse(text)            # raises ChartError carrying every problem

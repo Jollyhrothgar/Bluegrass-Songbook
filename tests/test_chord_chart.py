@@ -318,7 +318,20 @@ class TestBuild:
 
 # ----------------------------------------------------------- corpus sweep
 
-def test_every_chart_in_works_parses():
-    # Live-data smoke test (.claude/rules/tests.md): none exist yet.
-    for path in (REPO_ROOT / "works").glob("*/chord-chart.yaml"):
-        cc.parse(path.read_text())
+def test_every_chart_in_works_is_valid():
+    # Live-data smoke test (.claude/rules/tests.md): none exist yet. Same rules
+    # as the build gate, so a hand-edited chart fails in PR checks, not deploy.
+    problems = []
+    for wy in sorted((REPO_ROOT / "works").glob("*/work.yaml")):
+        work = yaml.safe_load(wy.read_text(encoding="utf-8")) or {}
+        parts = cc.chart_parts(work)
+        if not parts:
+            continue
+        errors = cc.validate_work_parts(work)
+        try:
+            chart = cc.parse((wy.parent / parts[0]["file"]).read_text(encoding="utf-8"))
+            errors += cc.validate_for_work(chart, work)
+        except (OSError, cc.ChartError) as e:
+            errors += getattr(e, "errors", [str(e)])
+        problems += [f"{wy.parent.name}: {m}" for m in errors]
+    assert not problems, "\n".join(problems)
