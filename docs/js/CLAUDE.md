@@ -111,9 +111,9 @@ them. Client side (`main.js`, `state.js`: `SONG_PATH`, `songHref`,
   `bgb-drafts`). Nothing before Submit asks for sign-in. A `.tef` open shows
   what wasn't kept (`skippedLine()`, `tef-skipped.js`; `file=1` only). Saving is
   the mirror, `tef-export/`: `writeTef(otf, {source, template})` returns
-  `{bytes, notices}`, plus `noticeLine()` (TEF-REFERENCE.md "Writing a .tef").
-  Nothing imports it yet; Save as adds the `import()` and its
-  `LAZY_MODULE_URLS` lines together (the test lists only reachable modules).
+  `{bytes, notices}`, plus `noticeLine()` (TEF-REFERENCE.md "Writing a .tef"); only
+  File ▸ Save as… `import()`s it. A draft keeps the opened file as `source:
+  {name, bytes?}` (`importTabFile`, `openTabFile`; older drafts have none).
 
 ### Navigation invariants
 

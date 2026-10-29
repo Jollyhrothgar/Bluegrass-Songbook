@@ -10,7 +10,7 @@
 // through ⬇ Download and reads the file: `tracks[]` order is not something
 // the canvas shows.
 import { test, expect } from './fixtures.js';
-import { clickFileItem } from './helpers/front-door.js';
+import { saveAs } from './helpers/front-door.js';
 
 const WORK = '/#work/red-haired-boy/ensemble-tab';
 
@@ -39,10 +39,7 @@ async function activeTrack(page) {
 
 /** Download the document and hand back the parsed JSON. */
 async function downloadDoc(page) {
-    const [download] = await Promise.all([
-        page.waitForEvent('download'),
-        clickFileItem(page, 'Download OTF'),
-    ]);
+    const download = await saveAs(page, { format: 'otf' });
     const path = await download.path();
     const { readFileSync } = await import('fs');
     return JSON.parse(readFileSync(path, 'utf-8'));

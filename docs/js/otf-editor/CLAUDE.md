@@ -7,7 +7,7 @@
 the schema first; the fence tests in `__tests__/otf-editor/otf-validate.test.js`
 and `tests/test_otf_schema.py` fail until every copy matches.
 
-Files are written by `serializeOTF` (`docs/js/otf-format.js`; `downloadOTF` uses it), one
+Files are written by `serializeOTF` (`docs/js/otf-format.js`; Save as uses it), one
 note event per line, byte-identical to Python's `scripts/lib/otf_format.py`. Never
 `JSON.stringify(otf, null, 2)` a file; the compact wire formats are the exception.
 
@@ -157,11 +157,11 @@ One command surface per device (G17): the menus are the one list of commands.
   in `style.css` (the bottom band); change them together.
 - `new OTFEditor(...)` options (`work-edit.js` passes them): `fileActions:
   [{label, run, disabled?, action?} | {separator: true}]` (`action` only prints
-  that action's key; leave it off Download in a work session, where Ctrl+S
-  applies) and `hostTransport: true` when the song page's band has transport.
-  The band's session bar is Submit and ✓ Done only; Open…, Import .tef…,
-  Download OTF and Cancel are `fileActions`, and Cancel asks "Discard edits?"
-  inline in the bar, never `window.confirm`.
+  that action's key), `source`, `filename`, `hostTransport` (the band has transport). The bar: Submit, ✓ Done.
+- File ▸ Save as… (G15f: `save-as.js`, `SaveAsPopover`) is the only save command;
+  Ctrl/Cmd+S opens it, and only ✓ Done applies edits to the view. `.tef`
+  (`tef-export`, `import()`ed then), `.otf.json`, `.txt`; opens on the opened
+  file's format, else `.tef`; the notice is computed on open.
 - One zoom: the status bar's − 100% + (`state.horizontalZoom`, View ▸ Zoom,
   `{` `}`); the band's Aa size is removed while editing. The `?` hint is plain
   text, hidden on touch; Help ▸ Keyboard shortcuts is the one help button.
