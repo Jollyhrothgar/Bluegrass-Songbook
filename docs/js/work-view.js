@@ -30,7 +30,8 @@ import {
     goBack,
     updateListContextClass, updateNavBar,
     stopAbcPlayback,
-    renderLeadSheetContent,
+    renderLeadSheetContent, renderChartTabContent,
+    chartIsWide, CHART_WIDE_MQ,
     initKeyState
 } from './song-view.js';
 import {
@@ -390,7 +391,8 @@ function buildPartsFromIndex(song, content = undefined) {
     if (hasLeadSheet) {
         // Label the lead sheet by what it is, not a guessed instrument —
         // ABC transcriptions aren't necessarily fiddle (flutes, pipes...).
-        const label = songHasAbc(song) ? 'Notation' : 'Lyrics & Chords';
+        // (With a chord chart the chords sit in the chart's tab too, so this one reads "Lyrics".)
+        const label = songHasAbc(song) ? 'Notation' : song.chord_chart ? 'Lyrics' : 'Lyrics & Chords';
         parts.push({
             type: 'lead-sheet',
             format: 'chordpro',
@@ -398,6 +400,11 @@ function buildPartsFromIndex(song, content = undefined) {
             content: leadSheet,   // null until the .pro file lands
             default: true
         });
+        // The chord chart (G18b): a tab on narrow screens; wide ones show it
+        // as the lead sheet's second column, so CSS hides this tab there.
+        if (song.chord_chart && !songHasAbc(song)) {
+            parts.push({ type: 'chord-chart', format: 'json', label: 'Chart', default: false });
+        }
     }
 
     // Tablature: ONE part (= one pill) per instrument, carrying that
@@ -666,6 +673,7 @@ export async function openWork(workId, options = {}) {
                 p.aliases?.includes(partId)
             ) || null;
     }
+    if (activePart?.type === 'chord-chart' && chartIsWide()) activePart = null;   // wide: the chart is a column
     if (!activePart) {
         activePart = availableParts.find(p => p.default) || availableParts[0] || null;
     }
@@ -813,10 +821,12 @@ function renderActivePart(content, isInitial = false) {
         renderDocumentPart(activePart, content);
         setBottomBand(null);
     } else {
-        // lead-sheet (chordpro, possibly with embedded ABC notation)
+        // lead-sheet (chordpro, possibly with embedded ABC notation), or the
+        // chord chart tab, which needs the same ChordPro for its key and lyrics
+        const render = activePart.type === 'chord-chart' ? renderChartTabContent : renderLeadSheetContent;
         const chordpro = currentChordpro ?? activePart.content;
         if (typeof chordpro === 'string') {
-            renderLeadSheetContent(content, currentWork, chordpro, isInitial);
+            render(content, currentWork, chordpro, isInitial);
         } else {
             fetchAndRenderLeadSheet(content, isInitial);
         }
@@ -831,6 +841,7 @@ function renderActivePart(content, isInitial = false) {
 function fetchAndRenderLeadSheet(container, isInitial = false) {
     const work = currentWork;
     const part = activePart;
+    const render = part.type === 'chord-chart' ? renderChartTabContent : renderLeadSheetContent;
     const arrangement = activeLeadSheetArrangement();
 
     container.innerHTML = '<div class="part-loading">Loading song…</div>';
@@ -843,7 +854,7 @@ function fetchAndRenderLeadSheet(container, isInitial = false) {
             activeLeadSheetArrangement() !== arrangement) return;
         part.content = text || '';
         setCurrentChordpro(text || null);
-        renderLeadSheetContent(container, work, text || '', isInitial);
+        render(container, work, text || '', isInitial);
     }).catch(error => {
         if (currentWork !== work || activePart !== part) return;
         container.innerHTML = `
@@ -1047,10 +1058,15 @@ function renderPartTabs() {
     const bar = document.createElement('div');
     bar.className = 'part-tabs';
     bar.id = 'part-tabs';
+    // Lyrics + Chart only: wide screens show both at once, so no tabs at all
+    if (availableParts.every(p => p.type === 'lead-sheet' || p.type === 'chord-chart')) {
+        bar.classList.add('part-tabs-chart-only');
+    }
     for (const part of availableParts) {
         const btn = document.createElement('button');
         btn.className = 'part-tab' + (part === activePart ? ' active' : '');
         btn.dataset.partId = part.partId;
+        btn.dataset.partType = part.type;
         const n = part.arrangements?.length || 0;
         // Badge only when there's a choice to be made — a lone arrangement
         // is just "the tab", and "1" would be noise on every other pill.
@@ -1592,7 +1608,7 @@ export function configureWorkPage(hooks = {}) {
     for (const key of displayPrefKeys) {
         subscribe(key, (value) => {
             if (currentView !== 'song' || !currentWork) return;
-            if (activePart && activePart.type !== 'lead-sheet') return;
+            if (activePart && activePart.type !== 'lead-sheet' && activePart.type !== 'chord-chart') return;
             const content = document.getElementById('work-part-content');
             const chordpro = currentChordpro || activePart?.content;
             // A key notification is delivered a frame after the write, so a
@@ -1602,10 +1618,18 @@ export function configureWorkPage(hooks = {}) {
             if (key === 'currentDetectedKey' && content &&
                 content.dataset.renderedKey === String(value ?? '')) return;
             if (content && chordpro) {
-                renderLeadSheetContent(content, currentWork, chordpro, false);
+                const render = activePart?.type === 'chord-chart' ? renderChartTabContent : renderLeadSheetContent;
+                render(content, currentWork, chordpro, false);
             }
         });
     }
+
+    // Widening past the chart breakpoint turns the Chart tab into a column
+    // (the lead sheet carries it), so leave the tab for the lead sheet.
+    window.matchMedia?.(CHART_WIDE_MQ).addEventListener?.('change', (e) => {
+        if (!e.matches || currentView !== 'song' || activePart?.type !== 'chord-chart') return;
+        selectPart(availableParts.find(p => p.type === 'lead-sheet'));
+    });
 }
 
 /**
@@ -3814,7 +3838,8 @@ export function getActiveItemRef() {
     if (!currentWork) return null;
     // Part-qualified ref only when the user is on a non-default part of a
     // multi-part work; the plain work id is the common case.
-    if (availableParts.length > 1 && activePart?.partId && !activePart.default) {
+    if (availableParts.length > 1 && activePart?.partId && !activePart.default &&
+        activePart.type !== 'chord-chart') {
         return `${currentWork.id}/${activePart.partId}`;
     }
     return currentWork.id;
