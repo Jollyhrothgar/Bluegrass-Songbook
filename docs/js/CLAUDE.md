@@ -897,6 +897,12 @@ npm run test:watch    # Unit tests in watch mode (re-runs on save; never exits)
 npm run test:e2e      # Run E2E tests (Playwright, requires server)
 ```
 
+**Tests and live corpus data** (Mike, 2026-10-28). `works/` is edited from the site, so a test may read a live work
+only when its purpose is to catch problems IN that data (a smoke test: "a real tab renders end to end"). A test of the
+code that asserts what a chart says (exact lines, counts) reads a frozen copy or a sample in `__tests__/fixtures/`
+(`old-home-place.pro`, `fmb-banjo.otf.json`; e2e: `openFrozenOldHomePlace`). A site correction to Old Home Place
+failed CI & Deploy for hours (#320).
+
 `npm test` was plain `vitest` until 2026-10-27, which is watch mode outside
 CI: from an agent or script it never exited and looked like a hang. Unit
 tests pass on any Node: since Node 25, Node's own empty global
