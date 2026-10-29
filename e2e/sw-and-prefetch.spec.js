@@ -13,6 +13,7 @@ import { test, expect } from './fixtures.js';
 // *.supabase.co unresolvable, so this spec still can't reach production.
 test.use({ supabaseBackstop: false });
 import { gotoSearch, searchFor } from './helpers.js';
+import { E2E_PORT } from './port.js';
 
 const swReady = (page) => page.evaluate(async () => {
     const reg = await navigator.serviceWorker.ready;
@@ -92,7 +93,7 @@ test.describe('service worker', () => {
 // `cache: 'reload'` — and the worker (correctly) never times out on those.
 // So these tests put a small delaying proxy in front of the app server and
 // load the app from THAT origin (its own worker registration, its own caches).
-const APP_PORT = Number(process.env.PW_PORT) || 8137;
+const APP_PORT = E2E_PORT;
 
 async function startSlowProxy() {
     // `generation` simulates deploys: when set, every app module under /js/
