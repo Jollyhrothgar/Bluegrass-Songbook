@@ -721,16 +721,23 @@ let editorBandEl = null;
 let editorDisplayPill = null;
 export function showEditorBand() {
     editorBandEl ||= document.getElementById('editor-band');
-    if (!editorBandEl) return;
-    if (!editorDisplayPill) {
-        const options = document.getElementById('editor-display-options');
-        editorDisplayPill = pill('Aa', (container) => { if (options) container.appendChild(options); },
-            { id: 'editor-display-pill', title: 'Display: text size, Nashville numbers, paste cleanup', className: 'editor-display-pill' });
-        editorDisplayPill.querySelector('.pill-btn')?.setAttribute('aria-label', 'Display');
-        document.getElementById('editor-display-slot')?.replaceWith(editorDisplayPill);
+    if (editorBandEl) {
+        if (!editorDisplayPill) {
+            const options = document.getElementById('editor-display-options');
+            editorDisplayPill = pill('Aa', (container) => { if (options) container.appendChild(options); },
+                { id: 'editor-display-pill', title: 'Display: text size, Nashville numbers, paste cleanup', className: 'editor-display-pill' });
+            editorDisplayPill.querySelector('.pill-btn')?.setAttribute('aria-label', 'Display');
+            document.getElementById('editor-display-slot')?.replaceWith(editorDisplayPill);
+        }
+        editorBandEl.hidden = false;
+        setBottomBand(editorBandEl);
     }
-    editorBandEl.hidden = false;
-    setBottomBand(editorBandEl);
+    lead?.setOnScreen(true);      // after the band: on a phone Chords mode's picker docks on it
+}
+
+/** main.js, whenever another view shows: Chords mode's picker and ring are on <body>, outside the hidden panel. */
+export function hideEditor() {
+    lead?.setOnScreen(false);
 }
 
 /** The mode buttons may be detached (the band is cleared when the editor is not on screen), so look in the band too. */

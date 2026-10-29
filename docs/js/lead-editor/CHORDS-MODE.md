@@ -73,6 +73,12 @@ by a ResizeObserver, like `--bottomband-h` in `shell.js`).
   `visualViewport` resize and scroll. e2e: "never hides behind the top band".
 - **`side`** (`(min-width: 1100px) and (pointer: fine)`): the root moves into
   `#editor-workspace` (a grid, `.chm-has-side`) and is `position: sticky` in column 2.
+- **Leaving the editor view.** In `split` the picker and the cursor ring are on `<body>`, so hiding
+  the editor panel does not hide them (2026-10-29: the picker sat over the search results).
+  `main.js` calls `editor.js::hideEditor()` for every other view and `showEditorBand()` on the
+  way back; they call `api.setOnScreen(false / true)`, which closes Chords mode's box and picker,
+  parks the box, and reopens it where it was. The mode stays Chords. e2e: "leaving the editor
+  takes the picker", "Keep editing brings it back".
 - **The magnifier** (`.chm-strip`) is off by default, persisted in `localStorage['bgb-chord-magnifier']`
   (`'1'` = on). While off it is not in the DOM and `--chm-strip-h` is `0px`. It shows an enlarged
   clone of the cursor's line (`data-chord` stripped: a picture, not a second set of buttons).
