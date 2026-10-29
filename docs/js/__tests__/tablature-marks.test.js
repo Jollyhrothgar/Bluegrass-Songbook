@@ -9,7 +9,7 @@ import { describe, it, expect, vi, afterEach } from 'vitest';
 import { TabRenderer } from '../renderers/tablature.js';
 import {
     attachOtfDecorations, expandNotation, prepareCompactNotation,
-    readingListTimeline, marksDrawRepeats,
+    readingListTimeline,
 } from '../renderers/measure-timing.js';
 import { decodeMarkRaw } from '../otf-editor/otf-validate.js';
 
@@ -189,15 +189,11 @@ describe('display fields from measure_marks', () => {
         expect(out.some(m => m.endBar)).toBe(true);
     });
 
-    it('stored marks replace the reading list-derived repeat signs', () => {
+    it('reading-list-derived signs merge with stored marks (one sign, not two)', () => {
         const rl = [{ from_measure: 1, to_measure: 8 }, { from_measure: 1, to_measure: 8 }];
-        const n = bare(8);
-        expect(prepareCompactNotation(n, rl)[7].repeatEnd).toBe(true);   // derived
-        expect(prepareCompactNotation(n, rl, [mark(4, 0x80)])).toBe(n);   // stored wins
-        // a file with only ending 7 / an end bar / raw still gets derived signs
-        expect(prepareCompactNotation(n, rl, [mark(1, 0x07), mark(8, 0x08)])[7].repeatEnd)
-            .toBe(true);
-        expect(marksDrawRepeats([mark(1, 0x07)])).toBe(false);
-        expect(marksDrawRepeats([mark(1, 0x40)])).toBe(true);
+        const stored = attachOtfDecorations(bare(8), { measure_marks: [mark(8, 0x80)] });
+        const merged = prepareCompactNotation(stored, rl);
+        expect(merged[7].repeatEnd).toBe(true);
+        expect(merged[0].repeatStart).toBe(true);   // derived, marks had none
     });
 });

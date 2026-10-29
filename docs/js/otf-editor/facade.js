@@ -1240,6 +1240,12 @@ export class EditingFacade {
                     if (a.measure >= measureNum) a.measure++;
                 }
             }
+            // repeat signs belong to their measure (read-only in the editor)
+            if (Array.isArray(this.otf.measure_marks)) {
+                for (const k of this.otf.measure_marks) {
+                    if (k.measure >= measureNum) k.measure++;
+                }
+            }
             this._invalidateTiming();
             return true;
         });
@@ -1260,6 +1266,7 @@ export class EditingFacade {
      *   next measure had its own change, which takes the slot instead —
      *   either way every surviving measure keeps the signature it had
      * - `annotations`: text placed in the measure goes with it
+     * - `measure_marks`: the measure's repeat signs go with it
      *
      * Refuses when the number is out of range or it is the last measure
      * the document has (a document with no measures has nowhere to put a
@@ -1309,6 +1316,16 @@ export class EditingFacade {
                 }
                 if (kept.length) this.otf.annotations = kept;
                 else delete this.otf.annotations;
+            }
+            if (Array.isArray(this.otf.measure_marks)) {
+                const kept = [];
+                for (const k of this.otf.measure_marks) {
+                    if (k.measure === measureNum) continue;
+                    if (k.measure > measureNum) k.measure--;
+                    kept.push(k);
+                }
+                if (kept.length) this.otf.measure_marks = kept;
+                else delete this.otf.measure_marks;
             }
             this._invalidateTiming();
             return true;
@@ -2010,16 +2027,33 @@ export class EditingFacade {
     _setSequence(seq) {
         // Recompress into contiguous ranges; an identity sequence means
         // no reading list at all (keeps plain docs plain).
+        //
+        // Section names ("Intro", "Part A1") ride on ranges: a named range
+        // keeps its name wherever it still stands as a range of its own, so
+        // a run is also cut at the edges of named ranges (otherwise
+        // [1-4 Intro][5-8 A] flattens to one anonymous 1-8). A name goes to
+        // the FIRST range equal to the old one; a repeated copy of a named
+        // span is a new, unnamed range.
+        const named = (this.otf.reading_list || []).filter(r => r.name);
+        const cuts = new Set();
+        for (const r of named) { cuts.add(r.from_measure); cuts.add(r.to_measure + 1); }
         const ranges = [];
         for (const m of seq) {
             const last = ranges[ranges.length - 1];
-            if (last && m === last.to_measure + 1) last.to_measure = m;
+            if (last && m === last.to_measure + 1 && !cuts.has(m)) last.to_measure = m;
             else ranges.push({ from_measure: m, to_measure: m });
+        }
+        const unclaimed = named.slice();
+        let keptName = false;
+        for (const r of ranges) {
+            const i = unclaimed.findIndex(
+                o => o.from_measure === r.from_measure && o.to_measure === r.to_measure);
+            if (i >= 0) { r.name = unclaimed[i].name; unclaimed.splice(i, 1); keptName = true; }
         }
         const max = Math.max(1, maxMeasureIn(this.otf.notation || {}));
         const identity = ranges.length === 1
             && ranges[0].from_measure === 1 && ranges[0].to_measure === max;
-        if (identity) delete this.otf.reading_list;
+        if (identity && !keptName) delete this.otf.reading_list;
         else this.otf.reading_list = ranges;
     }
 

@@ -409,13 +409,10 @@ export function analyzeReadingList(readingList) {
  * Annotate original (written-measure) notation with repeatStart/repeatEnd/
  * ending flags for compact display with repeat signs.
  */
-export function prepareCompactNotation(notation, readingList, measureMarks = null) {
+export function prepareCompactNotation(notation, readingList) {
     if (!readingList || readingList.length === 0) {
         return notation;
     }
-    // A file that carries its own repeat signs (measure_marks) draws those,
-    // as TablEdit does; the reading list only fills in for files without.
-    if (marksDrawRepeats(measureMarks)) return notation;
     const analysis = analyzeReadingList(readingList);
     return notation.map(measure => {
         const m = measure.measure;
@@ -431,15 +428,6 @@ export function prepareCompactNotation(notation, readingList, measureMarks = nul
         }
         return enhanced;
     });
-}
-
-/**
- * True when the document's measure_marks hold repeat starts/ends or numbered
- * endings (a file with only ending 7, an end bar or raw bytes still gets its
- * repeat signs derived from the reading list).
- */
-export function marksDrawRepeats(measureMarks) {
-    return !!measureMarks && measureMarks.some(m => m.repeat_start || m.repeat_end || m.ending);
 }
 
 /**
@@ -475,7 +463,9 @@ function markDisplayByMeasure(measureMarks) {
  *              range's first measure — TablEdit prints them there
  * - `repeatStart`/`repeatEnd`/`ending`/`endingStart`/`endBar`/`jump`: the
  *              stored repeat signs (otf.measure_marks); expandNotation drops
- *              all but `endBar` when it unrolls the score
+ *              all but `endBar` when it unrolls the score, and
+ *              prepareCompactNotation adds the signs a reading list implies
+ *              on top (booleans merge, so agreeing signs draw once)
  *
  * Call AFTER densifyNotation (annotations may target silent measures —
  * Welcome to New York m30-31 carry the "...solo" texts) and BEFORE

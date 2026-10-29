@@ -1698,7 +1698,7 @@ export class OTFEditor {
         // all editing geometry is unaffected.
         const rl = this.state.otf.reading_list;
         if (rl && rl.length > 0) {
-            notation = prepareCompactNotation(notation, rl, this.state.otf.measure_marks);
+            notation = prepareCompactNotation(notation, rl);
         }
 
         // Render using TabRenderer, with the facade's ts-aware timing so
