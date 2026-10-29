@@ -1158,7 +1158,11 @@ def is_trusted_user(user_id: Optional[str], *, supabase_url: str,
     """Is ``user_id`` in ``trusted_users``? The same table the edge functions
     read (``auto-commit-song``, ``reconcile-pending``) to classify a change;
     asked again here because the dispatch carries only the resulting mode,
-    and ``update`` means "owns the part OR is trusted". Fails closed."""
+    and ``update`` means "owns the part OR is trusted".
+
+    No user id is ``False``. A lookup that fails (HTTP or network) raises
+    :class:`ProcessPendingError` rather than guessing either way: the row
+    stays pending and the hourly reconciler retries it."""
     if not user_id:
         return False
     url = (f"{supabase_url.rstrip('/')}/rest/v1/trusted_users"
@@ -1174,6 +1178,9 @@ def is_trusted_user(user_id: Optional[str], *, supabase_url: str,
     except urllib.error.HTTPError as e:
         raise ProcessPendingError(
             f"trusted_users lookup failed: HTTP {e.code}") from e
+    except urllib.error.URLError as e:
+        raise ProcessPendingError(
+            f"trusted_users lookup failed: {e.reason}") from e
 
 
 def _tab_provenance(row: dict, marker: str, actor: Optional[str],

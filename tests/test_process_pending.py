@@ -1074,6 +1074,17 @@ class TestTabCredit:
         assert pp.is_trusted_user(None, **kw) is False
         assert 'rest/v1/trusted_users?user_id=eq.u' in seen[0]
 
+    def test_a_failed_trust_lookup_raises_and_never_guesses(self, monkeypatch):
+        import urllib.error
+        import process_pending as pp
+        kw = dict(supabase_url='https://x.supabase.co', service_key='k')
+
+        def down(request, timeout=0):
+            raise urllib.error.URLError('connection refused')
+        monkeypatch.setattr(pp.urllib.request, 'urlopen', down)
+        with pytest.raises(pp.ProcessPendingError, match='trusted_users lookup failed'):
+            pp.is_trusted_user('u', **kw)
+
 
 class TestTablatureValidation:
     """The OTF gets its structural check here or nowhere.

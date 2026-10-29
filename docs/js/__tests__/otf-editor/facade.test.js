@@ -654,6 +654,16 @@ describe('EditingFacade — insertMeasure (structural, all tracks)', () => {
 });
 
 describe('EditingFacade — setTabBy (the "Tab by" credit)', () => {
+    it('throws on a link that is not http(s), or an over-long name or link, and changes nothing', () => {
+        const f = new EditingFacade(banjoDoc());
+        expect(() => f.setTabBy({ name: 'Jane', url: 'javascript:alert(1)' })).toThrow(RangeError);
+        expect(() => f.setTabBy({ name: 'Jane', url: 'ftp://example.com' })).toThrow(RangeError);
+        expect(() => f.setTabBy({ name: 'x'.repeat(101) })).toThrow(RangeError);
+        expect(() => f.setTabBy({ name: 'Jane', url: 'https://e.com/' + 'x'.repeat(500) })).toThrow(RangeError);
+        expect(f.getTabBy()).toBe(null);
+        expect(f.canUndo()).toBe(false);
+    });
+
     it('is one undo step and restores the 1.0 version on undo', () => {
         const f = new EditingFacade(banjoDoc());
         expect(f.setTabBy({ name: ' Jane Picker ', url: 'https://example.com/jane' })).toBe(true);

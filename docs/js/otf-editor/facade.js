@@ -20,6 +20,7 @@ import {
     measureTimingFromOtf,
 } from '../renderers/measure-timing.js';
 import { notePitch, fretForPitch } from './pitch.js';
+import { TAB_BY_NAME_MAX, TAB_BY_URL_MAX } from './otf-validate.js';
 
 const clone = (x) => JSON.parse(JSON.stringify(x));
 
@@ -1478,6 +1479,16 @@ export class EditingFacade {
             const name = typeof credit.name === 'string' ? credit.name.trim() : '';
             const url = typeof credit.url === 'string' ? credit.url.trim() : '';
             if (!name) return false;
+            // The schema's domain, enforced here like every value setter: a
+            // credit the validators reject would get the whole tab refused
+            // at Submit (process_pending), not just the credit.
+            if (name.length > TAB_BY_NAME_MAX) {
+                throw new RangeError(`Tab credit name over ${TAB_BY_NAME_MAX} characters`);
+            }
+            if (url && (!/^https?:\/\//.test(url) || url.length > TAB_BY_URL_MAX)) {
+                throw new RangeError('Tab credit link must be an http(s) URL of at most '
+                    + `${TAB_BY_URL_MAX} characters`);
+            }
             next = url ? { name, url } : { name };
         }
         return this._mutate(next ? 'Set tab credit' : 'Clear tab credit', () => {
