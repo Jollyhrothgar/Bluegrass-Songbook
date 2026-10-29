@@ -70,8 +70,9 @@ ALL_SONGS_DESCRIPTION = ('Every song in Bluegrass Book, A to Z: chords, lyrics a
 TAB_EDITOR_DIR = 'tab-editor'
 TAB_EDITOR_SOURCE = 'scripts/lib/build_song_pages.py'   # what dates its sitemap entry, with docs/index.html
 TAB_EDITOR_TITLE = 'Free TablEdit (.tef) tab editor online · Bluegrass Book'
-TAB_EDITOR_DESCRIPTION = ('Open a TablEdit .tef file, edit it in your browser and save it back '
-                          'as .tef. Free, with no account. Your files stay on your device.')
+# Says nothing about saving back as .tef until that exists (G15f adds it).
+TAB_EDITOR_DESCRIPTION = ('Open a TablEdit .tef file and edit it in your browser, on a phone or '
+                          'a laptop. Free, with no account. Your tabs stay on your device.')
 # The words below are the app's empty state too (docs/js/tab-editor-home.js):
 # the heading and the privacy line must read the same in both.
 TAB_EDITOR_H1 = 'Free tab editor for TablEdit (.tef) files'
@@ -483,7 +484,7 @@ def render_tab_editor_page(template: str) -> str:
         f'<p>{esc(TAB_EDITOR_PRIVACY)}</p>',
         '<ul>',
         '<li>Open a <code>.tef</code> or <code>.otf.json</code> file</li>',
-        '<li>Start a new tab for banjo, guitar, mandolin, bass or dobro</li>',
+        '<li>Start a new tab for banjo, guitar, mandolin, fiddle, dobro or bass</li>',
         '<li>Edit with the keyboard or by touch, and play it back</li>',
         '<li>Keep your tabs in My tabs, saved in this browser</li>',
         '<li>Download your work, or submit it to the book when you are ready</li>',
