@@ -103,6 +103,7 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | G15g | Tour, docs and issues still describe Submit as the only end | S | `feature/tef-writer` | not started — #318 § G15g |
 | G16 | Agent docs outgrew their use: the root `CLAUDE.md` was 601 lines (Anthropic's guidance is under 200 per file) and the nested ones 8,500 more, much of it architecture an agent reads from the code and some of it wrong; every new paseo worktree started with no deps and no index; the `add-issue` skill didn't know this backlog, and `github-project` said to squash-merge; dead docs and abandoned imports sat in the tree | M | `docs/refresh-agent-docs-paseo-workflow`, `docs/g16-followups` | done — #317 (2026-10-28): `paseo.json` (worktree setup, `web` service, `test` script); root `CLAUDE.md` 601 → ~150 lines plus path-scoped `.claude/rules/`; nested docs 8,546 → 3,069 lines, each fact re-checked against the code; dead docs and abandoned experiments deleted; issue skills refreshed; all 72 open issues audited and cleaned up (2026-10-28); merged remote branches deleted. #329 gave each PR its own CI queue, so parallel PRs no longer cancel each other. Follow-ups (2026-10-28): every `CLAUDE.md` under 200 lines, E2E on a per-worktree port, `pickRepresentative` shared; two idle branches and the container repo wait on Mike |
 | G17 | The tab editor shows the same commands twice: the session bar under the song title (Submit · ⬇ Download · Cancel · ✓ Done, `otf-editor/work-edit.js` `createTabEditSession`) repeats the editor's File menu (📂 Open… · Submit · ⬇ Download OTF · Cancel · ✓ Done), and the toolbar's NOTE LENGTH and TECHNIQUE buttons repeat the Note menu (durations, dotted, triplet, tie, hammer-on …) | M | — | not started — Mike, 2026-10-29, while testing G15c (#331): synthesize the menus and buttons into one command surface per device (desktop and the phone ☰ sheet): decide what lives only in a menu and what stays a visible button, then remove the duplicates. The menu tables (`menu-bar.js`, `bindings.js`) stay the single list of commands. Do it before G15f adds Save as…, which would otherwise be a third copy |
+| G18 | Lyrics and chords say which chords, not how long: the book has no chord charts, no way to play a song back for practice, and nothing catches a chart that contradicts itself (Old Home Place verse 2 reads `A C#7 A D`; the other verses read `A C#7 D A`) | L | `feature/chord-charts` | design only (2026-10-29): `docs/plans/2026-10-29-chord-charts.md` + mockup `design/ui-states/proposed/g18-chord-chart-cells.html`, decided with Mike 2026-10-28 and 29; nothing built |
 
 ### How it ships
 
@@ -1544,3 +1545,38 @@ Still Mike's call:
   worktrees. Nothing in it (or in this repo) deploys or self-hosts the site,
   which ships to GitHub Pages. With paseo making worktrees, only `setup.sh`
   still earns its keep.
+
+### G18 — Chord charts and a generated band · L
+
+2026-10-29. Design: `docs/plans/2026-10-29-chord-charts.md`, decided with
+Mike in conversation on 2026-10-28 and 29. Nothing built yet.
+
+A chord chart is a song's harmonic structure with meter hints, each section
+written once. A slot is one bass note, holding a chord or `\` to continue; a
+cell is boom-chuck boom-chuck (two slots), or boom-chuck-chuck (one) in 3/4.
+The chart stores cells, and how many cells a bar holds (one, or two) is a
+display toggle, because tabs bar the same music both ways: 432 of 493 tabs put
+one cell in a bar, 17 put two, and both kinds say 4/4. Mockup:
+`design/ui-states/proposed/g18-chord-chart-cells.html`. People draw charts;
+nothing generates a progression. The chart is its own part on the song's root work.
+Lyrics and chords are its primary consumer: they line up with it section by
+section and supply the playing order. Tabs and ABC line up cell by cell, and
+for instrumentals they supply the order. Chart view shows each section once;
+practice mode plays the full order once through or on a loop, like the tab
+view's Unrolled | Repeats. Each source is checked against the chart and
+mismatches are flagged, never fixed automatically. Breaks and other
+arrangement details belong to set lists (D4, D8), not the songbook.
+
+Order of work (each step gets its own ID, G18a–G18f, when it starts):
+
+1. The chart part: schema, publishing, and a few hand-written charts.
+2. Read-only chart on the song page: chart view, practice order, mismatch
+   flags.
+3. The designer: the lead-sheet editor's Chords-mode picker plus keyboard
+   entry (shared with E3), and adding a chart from the site (a
+   `pending_songs` migration).
+4. Generated bass, played through `TabPlayer`.
+5. Guitar.
+6. Mandolin. No banjo.
+
+Open questions are listed at the end of the design note.
