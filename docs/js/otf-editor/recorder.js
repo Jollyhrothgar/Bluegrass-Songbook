@@ -303,6 +303,13 @@ export function dispatchEditorEvent(editor, event) {
             state.setLeftHand(params.digit ?? null);
             break;
 
+        case 'setDynamic':
+            state.cursor.measure = params.measure;
+            state.cursor.tick = params.tick;
+            state.cursor.string = params.string;
+            state.setDynamic(params.level ?? null);
+            break;
+
         case 'clearFingerings':
             state.cursor.measure = params.measure;
             state.cursor.tick = params.tick;

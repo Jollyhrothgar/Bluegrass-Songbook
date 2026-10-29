@@ -20,10 +20,11 @@
 // eats several of them; menus open on click and are then arrow-driven.
 
 import {
-    ACTIONS, PRESETS, FX_ACTIONS, menuKeyFor, prettyKeys,
+    ACTIONS, PRESETS, FX_ACTIONS, DYNAMIC_ACTIONS, DYNAMIC_DEFAULT_ACTION, menuKeyFor, prettyKeys,
     getPreset, setPreset, onPresetChange,
 } from './bindings.js';
 import { FX_ORDER } from './facade.js';
+import { DYN_LEVELS } from './otf-validate.js';
 
 /** Below this width the bar collapses to a single ☰ sheet. */
 export const NARROW_WIDTH = 720;
@@ -64,6 +65,25 @@ const FX_ITEMS = FX_ORDER.map(fx => ({
     when: hasNoteOrSelection,
     checked: noteHasFx(fx),
 }));
+
+/** Does the note at the cursor play at this level? (null = no `dyn` of its own) */
+const noteDynIs = (level) => (s) => (s?.getNoteAtCursor?.()?.dyn ?? null) === level;
+
+/** Note ▸ Dynamics: the seven levels, loudest first, then "Track default". */
+const DYNAMIC_ITEMS = [
+    ...DYN_LEVELS.map(level => ({
+        action: DYNAMIC_ACTIONS[level],
+        label: level,
+        when: hasNoteOrSelection,
+        checked: noteDynIs(level),
+    })),
+    {
+        action: DYNAMIC_DEFAULT_ACTION,
+        label: 'Track default',
+        when: hasNoteOrSelection,
+        checked: noteDynIs(null),
+    },
+];
 
 /**
  * THE menu tree. Items:
@@ -145,6 +165,9 @@ export const MENUS = [
             { heading: 'Effects' },
             ...FX_ITEMS,
             { action: 'effect.grace', label: 'Grace note…', when: hasNote },
+            { separator: true },
+            { heading: 'Dynamics' },
+            ...DYNAMIC_ITEMS,
             { separator: true },
             { heading: 'Fingering' },
             { action: 'finger.thumb', label: 'Thumb', when: hasNote },
