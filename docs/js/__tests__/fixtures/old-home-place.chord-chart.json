@@ -1,0 +1,238 @@
+{
+ "_comment": "Frozen copy of the published chart, built from works/old-home-place/chord-chart.yaml on 2026-10-29 (docs/data/charts/old-home-place.json). Not read live.",
+ "key": "A",
+ "meter": "duple",
+ "drawn_from": "lead-sheet.pro",
+ "sections": [
+  {
+   "name": "Verse",
+   "repeat": 1,
+   "lines": [
+    [
+     {
+      "slots": [
+       "A",
+       null
+      ]
+     },
+     {
+      "slots": [
+       "C#7",
+       null
+      ]
+     },
+     {
+      "slots": [
+       "D",
+       null
+      ]
+     },
+     {
+      "slots": [
+       "A",
+       null
+      ]
+     }
+    ],
+    [
+     {
+      "slots": [
+       null,
+       null
+      ]
+     },
+     {
+      "slots": [
+       null,
+       null
+      ]
+     },
+     {
+      "slots": [
+       "E",
+       null
+      ]
+     },
+     {
+      "slots": [
+       null,
+       null
+      ]
+     }
+    ],
+    [
+     {
+      "slots": [
+       "A",
+       null
+      ]
+     },
+     {
+      "slots": [
+       "C#7",
+       null
+      ]
+     },
+     {
+      "slots": [
+       "D",
+       null
+      ]
+     },
+     {
+      "slots": [
+       "A",
+       null
+      ]
+     }
+    ],
+    [
+     {
+      "slots": [
+       null,
+       null
+      ]
+     },
+     {
+      "slots": [
+       "E",
+       null
+      ]
+     },
+     {
+      "slots": [
+       "A",
+       null
+      ]
+     },
+     {
+      "slots": [
+       null,
+       null
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "name": "Chorus",
+   "repeat": 1,
+   "lines": [
+    [
+     {
+      "slots": [
+       "E",
+       null
+      ]
+     },
+     {
+      "slots": [
+       null,
+       null
+      ]
+     },
+     {
+      "slots": [
+       "A",
+       null
+      ]
+     },
+     {
+      "slots": [
+       null,
+       null
+      ]
+     }
+    ],
+    [
+     {
+      "slots": [
+       "B7",
+       null
+      ]
+     },
+     {
+      "slots": [
+       null,
+       null
+      ]
+     },
+     {
+      "slots": [
+       "E",
+       null
+      ]
+     },
+     {
+      "slots": [
+       null,
+       null
+      ]
+     }
+    ],
+    [
+     {
+      "slots": [
+       "A",
+       null
+      ]
+     },
+     {
+      "slots": [
+       "C#7",
+       null
+      ]
+     },
+     {
+      "slots": [
+       "D",
+       null
+      ]
+     },
+     {
+      "slots": [
+       "A",
+       null
+      ]
+     }
+    ],
+    [
+     {
+      "slots": [
+       null,
+       null
+      ]
+     },
+     {
+      "slots": [
+       "E",
+       null
+      ]
+     },
+     {
+      "slots": [
+       "A",
+       null
+      ]
+     },
+     {
+      "slots": [
+       null,
+       null
+      ]
+     }
+    ]
+   ]
+  }
+ ],
+ "form": [
+  "Verse",
+  "Verse",
+  "Chorus",
+  "Verse",
+  "Verse",
+  "Chorus",
+  "Chorus"
+ ],
+ "by": "Mike Beaumier"
+}
