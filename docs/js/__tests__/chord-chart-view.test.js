@@ -7,8 +7,8 @@ import { resolve } from 'path';
 import { parseChordPro, renderSectionsHtml } from '../renderers/chordpro.js';
 import { regroupBars } from '../chord-chart.js';
 import {
-    buildModel, chartSectionHtml, chartLineHtml, sungCaption, mismatchNoteHtml,
-    addMismatchNotes, drawPanel, setMode, getBars, setBars,
+    buildModel, chartSectionHtml, chartLineHtml, sungCaption,
+    drawPanel, setMode, getBars, setBars,
 } from '../chord-chart-view.js';
 
 const FIX = resolve(process.cwd(), 'docs/js/__tests__/fixtures');
@@ -97,49 +97,6 @@ describe('the Key pill', () => {
     });
 });
 
-describe('mismatch notes', () => {
-    it('finds only verse 2 line 3 and writes it as glyphs, there and here', () => {
-        const model = buildModel(ctx());
-        expect(model.mismatches).toHaveLength(1);
-        const note = html(mismatchNoteHtml(model.mismatches[0], model)).firstChild;
-        expect(note.getAttribute('role')).toBe('note');
-        expect(text(note)).toBe('Differs from the chart: A C♯7 D A there, A C♯7 A D here.');
-        expect(note.innerHTML).toContain('<sup>7</sup>');
-    });
-
-    it('goes under the lyric line it is about', () => {
-        const model = buildModel(ctx());
-        const root = html(renderSectionsHtml(sections, OPTS));
-        addMismatchNotes(root, model);
-        const notes = root.querySelectorAll('.cc-mis');
-        expect(notes).toHaveLength(1);
-        const section = notes[0].closest('.song-section');
-        expect(section.querySelector('.section-label').textContent).toBe('Verse 2');
-        const prev = notes[0].previousElementSibling;
-        expect(prev.textContent).toContain('Charlottesville');
-    });
-
-    it('follows the Key pill and Nashville', () => {
-        const g = buildModel(ctx({ transposeTo: 'G' }));
-        expect(text(html(mismatchNoteHtml(g.mismatches[0], g)))).toContain('G B7 C G there, G B7 G C here');
-        const n = buildModel(ctx({ nashville: true }));
-        expect(text(html(mismatchNoteHtml(n.mismatches[0], n)))).toContain('I III7 IV I there, I III7 I IV here');
-    });
-
-    it('a section-level mismatch goes under the section label', () => {
-        // a one-line chart section against a two-line lyric section
-        const syn = { key: 'G', meter: 'duple', form: ['V'], sections: [
-            { name: 'V', repeat: 1, lines: [[{ slots: ['G', null] }, { slots: ['C', null] }, { slots: ['D', null] }]] }] };
-        const lyric = parseChordPro('{start_of_verse: V}\n[G]one [C]two\n[G]three [D]four\n{end_of_verse}').sections;
-        const model = buildModel({ chart: syn, sections: lyric, opts: { key: 'G', transposeTo: 'G' } });
-        expect(model.mismatches).toHaveLength(1);
-        expect(model.mismatches[0].line).toBeNull();
-        const root = html(renderSectionsHtml(lyric, { key: 'G' }));
-        addMismatchNotes(root, model);
-        expect(root.querySelector('.section-label').nextElementSibling.className).toBe('cc-mis');
-    });
-});
-
 describe('the panel', () => {
     const draw = (opts) => { const host = document.createElement('div'); drawPanel(host, ctx(opts)); return host; };
 
@@ -184,10 +141,8 @@ describe('the panel', () => {
             expect(r.querySelectorAll('.cc-plyric .song-line')).toHaveLength(1);
             expect(r.querySelectorAll('.cc-pchart .cc-line')).toHaveLength(1);
         });
-        // the mismatch note sits in verse 2's third row, with its lyric line
-        expect(host.querySelectorAll('.cc-mis')).toHaveLength(1);
-        expect(secs[1].querySelectorAll('.cc-prow')[2].querySelector('.cc-plyric .cc-mis')).not.toBeNull();
-        // no playback yet
+        // no notes on the lyrics (Mike, 2026-10-29), and no playback yet
+        expect(host.querySelector('.cc-mis')).toBeNull();
         expect(host.querySelector('.now, .cc-playing, .cc-transport')).toBeNull();
     });
 

@@ -122,6 +122,12 @@ function lyricKeyOf(pairs, opts, chart) {
  * -> [{label, index, line, chart, lyric}]: the lyric section's label and
  * its position in the pairs, the 1-based line (null for a section-level
  * mismatch), and both chord lists in the lyric chart's spelling.
+ *
+ * Not used by the song page: Mike removed the notes it fed (2026-10-29).
+ * Before reusing it, find why the live page showed a note on many lines
+ * ("D7 E♭ B♭ there, C♯7 D A here": the chart spelled a semitone up from
+ * the lyrics), which points at `lyricKey` not being the key the lyric chart
+ * is written in. Not reproduced locally (G18 checklist, G18b3).
  */
 export function compareSections(chart, alignment, opts = {}) {
     if (!alignment.aligned) return [];

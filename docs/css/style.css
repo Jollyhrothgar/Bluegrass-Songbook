@@ -11602,17 +11602,6 @@ body.file-dragover .tab-home-open {
 .cc-form b { color: var(--text); font-weight: 600; }
 .cc-legend i { font-style: normal; opacity: 0.5; }
 
-/* The quiet note under a lyric line (or a section label) */
-.cc-mis {
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-    margin: -0.1rem 0 0.5rem;
-    padding-left: 0.5rem;
-    border-left: 2px dotted var(--border);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-}
-.cc-mis b { font-family: var(--mono); font-weight: 600; color: var(--text); }
-
 /* Practice mode: chart sections in the playing order, with the lyrics */
 .cc-psec { padding: 0.25rem 0 0.4rem; border-bottom: 1px solid var(--border); }
 .cc-plabel {
