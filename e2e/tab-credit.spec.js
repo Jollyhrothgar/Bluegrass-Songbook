@@ -6,6 +6,7 @@
 // that the editor does not offer the edit to someone it would be thrown away
 // for.
 import { test, expect } from './fixtures.js';
+import { clickFileItem } from './helpers/front-door.js';
 import { mockSupabase } from './helpers/supabase-mock.js';
 
 const band = (page) => page.locator('#app-bottomband');
@@ -58,7 +59,7 @@ test.describe('a new take', () => {
 
         const [download] = await Promise.all([
             page.waitForEvent('download'),
-            band(page).locator('.tab-edit-download').click(),
+            clickFileItem(page, 'Download OTF'),
         ]);
         const doc = await downloadedJson(download);
         expect(doc.metadata.tab_by).toEqual({
@@ -80,7 +81,7 @@ test.describe('a new take', () => {
 
         const [download] = await Promise.all([
             page.waitForEvent('download'),
-            band(page).locator('.tab-edit-download').click(),
+            clickFileItem(page, 'Download OTF'),
         ]);
         const doc = await downloadedJson(download);
         expect(doc.metadata.tab_by).toEqual({ name: 'Jane' });
@@ -136,7 +137,7 @@ test.describe('correcting a published take', () => {
         await name.press('Enter');
         const [download] = await Promise.all([
             page.waitForEvent('download'),
-            band(page).locator('.tab-edit-download').click(),
+            clickFileItem(page, 'Download OTF'),
         ]);
         expect((await downloadedJson(download)).metadata.tab_by.name).toBe('Someone Else');
     });

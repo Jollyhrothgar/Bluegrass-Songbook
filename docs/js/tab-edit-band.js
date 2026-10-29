@@ -4,7 +4,7 @@
 // editor grow a second transport in its own status bar — three playback
 // controls for one document, and a page whose bottom half changed shape
 // the moment you pressed ✏️ Edit. The band is now the same band: the
-// controls it already has (size, tempo, ▶/⏹, metronome) are re-bound to
+// controls it already has (tempo, ▶/⏹, metronome) are re-bound to
 // the LIVE editor document, the session's buttons take the slot the
 // ✏️ Edit button was in, and the controls that cannot mean anything
 // mid-edit are DISABLED with a reason rather than removed — a control
@@ -13,8 +13,7 @@
 //
 // Deliberately DOM-only and injection-free: it takes the controls element
 // `createTablatureControls` built and any object with the editor's small
-// surface (`state.facade`, `state.setTempo`, `renderer.setScale`,
-// `player`, `togglePlayback`, `stop`, `isPlaying`), so it can be driven
+// surface (`state.facade`, `state.setTempo`, `player`, `togglePlayback`, `stop`, `isPlaying`), so it can be driven
 // in jsdom without an editor, a renderer or an audio context.
 
 /** Why a given control is off while editing. One sentence, no jargon. */
@@ -48,7 +47,7 @@ function disableGroup(root, selector, reason) {
  * @param {Object} editor - an OTFEditor (or anything with its surface)
  * @param {Object} [options]
  * @param {HTMLElement} [options.actions] - element to drop where ✏️ Edit was
- *   (the session's Submit / Download / Cancel / Done group)
+ *   (the session's Submit and Done group)
  * @returns {{destroy: Function, refresh: Function, actionSlot: HTMLElement}}
  */
 export function bindBandToEditor(controls, editor, { actions = null } = {}) {
@@ -70,18 +69,11 @@ export function bindBandToEditor(controls, editor, { actions = null } = {}) {
     }
     if (actions) slot.appendChild(actions);
 
-    // ── Size: the editor's renderer, not the read view's ──────────────
-    const sizeDown = controls.querySelector('.tab-size-down');
-    const sizeUp = controls.querySelector('.tab-size-up');
-    let scale = 1.0;
-    const setScale = (delta) => {
-        scale = Math.max(0.6, Math.min(1.6, Math.round((scale + delta) * 10) / 10));
-        editor.renderer?.setScale?.(scale);
-        if (sizeDown) sizeDown.disabled = scale <= 0.6;
-        if (sizeUp) sizeUp.disabled = scale >= 1.6;
-    };
-    sizeDown?.addEventListener('click', () => setScale(-0.1));
-    sizeUp?.addEventListener('click', () => setScale(0.1));
+    // ── Size: gone while editing (G17) ────────────────────────────────
+    // The editor has ONE zoom: its status bar's − 100% + (also View ▸ Zoom
+    // and `{` `}`). The band's Aa size is a second, reader-side zoom with
+    // no menu item and no key; two sizes for one canvas was a duplicate.
+    controls.querySelector('.tab-size-group')?.remove();
 
     // ── Tempo: the DOCUMENT's tempo, through the facade ───────────────
     // Editing is the one place where "the tempo" is not a practice

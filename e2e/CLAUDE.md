@@ -148,7 +148,8 @@ Tab-editor selectors: `.editor-renderer .stave-row`, `.editor-canvas-container`,
 `.menu-popup .menu-item` (track entries are `menuitemradio`, so `[role=menuitem]`
 misses them), `.otf-track-name-popover`, `.otf-value-prompt-popover`,
 `.editor-selection-rect`, and the session buttons `.tab-edit-submit` /
-`-download` / `-cancel` / `-done` / `-import` in the bottom band. The live
+`-done` in the bottom band (Download, Cancel and Import .tef… are File menu
+items: `clickFileItem` in `helpers/front-door.js`, laptop or phone). The live
 document is `.otf-editor.__otfEditor.state.facade`, and
 `__otfEditor.automation.check()` reports layout and history rule violations.
 

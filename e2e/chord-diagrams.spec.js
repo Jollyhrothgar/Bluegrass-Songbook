@@ -4,6 +4,7 @@
 // chord_diagrams_v3.tef (a banjo and a guitar track, four diagrams), taken
 // from the golden oracle like the other import specs.
 import { test, expect } from './fixtures.js';
+import { clickFileItem } from './helpers/front-door.js';
 import { tefFixture } from './helpers/tef-fixture.js';
 
 const band = (page) => page.locator('#app-bottomband');
@@ -14,7 +15,7 @@ async function importFixture(page) {
     await page.locator('.editor-renderer .stave-row').first().waitFor({ timeout: 20000 });
     const [chooser] = await Promise.all([
         page.waitForEvent('filechooser'),
-        band(page).locator('.tab-edit-import').click(),
+        clickFileItem(page, 'Import .tef'),
     ]);
     await chooser.setFiles(fixture.file);
     await expect(band(page).locator('.tab-edit-status'))

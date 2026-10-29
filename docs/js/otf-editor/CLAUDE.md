@@ -95,22 +95,18 @@ chord is both an action and a sequence prefix, every printed `<kbd>` comes from
 - `menuKeyFor(action, preset, mode)` prints the key for the mode the menu is
   read in; a key bound only in another mode is qualified (`A, t`) or omitted
   (in NORMAL `t` is placed text, `m` a dead note).
-- `FretEntry` is the one digit-to-fret rule (`f` prefix; two-digit refine: a second digit typed within `REFINE_MS` = 300 ms
-in `keyboard.js` rewrites the note just placed to the two-digit fret, if it is
-<= 24) for
-  the canvas and the popovers. A two-digit fret is one undo step: the second
-  digit rewrites the first through `facade.amendSince(mark, fn)`. A click
-  or any navigation or edit key closes the refine window early.
+- `FretEntry` is the one digit-to-fret rule (`f` prefix) for the canvas and the
+  popovers. A second digit typed within `REFINE_MS` (300 ms, `keyboard.js`)
+  rewrites the note just placed to a two-digit fret (<= 24), as one undo step
+  (`facade.amendSince(mark, fn)`). A click or any navigation or edit key closes
+  the window early.
 - Where preset keys differ from TablEdit's, the preset lists them in
   `exceptions`: `c` is Choke; repeat-previous-measure is `Alt+R`; `m` stays the
-  dead note `x` (a bluegrass tabber's "muted" is the chop; TablEdit's palm mute
-  is `fx: 'muted'`, menu-only).
-- Walking forward past the last tick appends a measure: `stepTicks()` is the
-  one forward-step helper and calls `state.ensureMeasure`, so one `u` removes
-  the bar.
-- Code needing a number of ticks calls `state.effectiveDuration()` or
-  `entryAdvanceTicks()`. `state.currentDuration` is `null` under automatic
-  duration, and multiplying it gives 0.
+  dead note `x` (TablEdit's palm mute is `fx: 'muted'`, menu-only).
+- Walking forward past the last tick appends a measure (`stepTicks()`, the
+  one forward-step helper, calls `state.ensureMeasure`); one `u` removes it.
+- Code needing ticks calls `state.effectiveDuration()` or `entryAdvanceTicks()`;
+  `state.currentDuration` is `null` under automatic duration (times it gives 0).
 
 ## The selection is a rectangle
 
@@ -122,17 +118,15 @@ outside the block.
   normalization.
 - Every facade range op takes `{strings}`. A new range op's state wrapper must
   pass them, or it silently acts on a full column.
-- Paste keeps each note's own string.
-- `fixDurations` is the exception: its column rule reads every string, so
-  `fixDurationsInSelection` honours ticks and ignores height.
-- `Ctrl+A` (`select.all`) is the whole tab, current track only. Edit > Select
-  measure (`select.measure`) is one measure. Placed text is in no selection.
+- Paste keeps each note's own string. `fixDurations` is the exception: its
+  column rule reads every string, so `fixDurationsInSelection` ignores height.
+- `Ctrl+A` (`select.all`) is the whole tab, current track only; Edit > Select
+  measure is one measure. Placed text is in no selection.
 - A selection's end slot runs to the next grid line, or to the barline in a
   measure's last slot (`state.slotEndAbs`), so a note typed at a finer step is
   inside Ctrl+A and can be deleted.
 - Grabbing a selection to move it must be inside the band, not just the tick
-  range. The highlight and the dashed move preview are clipped to the band
-  (`selectionBand`, `cursor.js`).
+  range; the highlight and move preview are clipped to it (`selectionBand`).
 
 ## Notes, tracks and durations
 
@@ -144,17 +138,33 @@ keyboard layer). Read it before changing any of them.
 
 ## Toolbar, menus, zoom
 
+One command surface per device (G17): the menus are the one list of commands.
+
 - `menu-bar.js` (`EditorMenuBar`) builds its menus at runtime from the `MENUS`
-  tree. An `{action}` item names an action and gets its
-  key from `menuKeyFor`; a `{hook}` item calls a callback that `OTFEditor` (`editor.js`) lists in
-  the `hooks` object it gives `new EditorMenuBar({...})`, and a hook missing
-  there means the item is not drawn. The popup
-  hangs off `<body>` (fixed) because `.otf-editor` has `overflow: hidden`. No
-  `Alt+letter` mnemonics. `updateLayout()` reconciles to the current width
-  instead of diffing against the last.
-- Options the host passes to `new OTFEditor(...)` (`work-edit.js` does): `fileActions: [{label, run, disabled?,
-  action?}]` (default Download OTF), and `hostTransport: true` when the song
-  page's bottom band already shows play/stop/BPM.
+  tree. An `{action}` item names an action and gets its key from `menuKeyFor`;
+  a `{hook}` item calls a callback that `OTFEditor` (`editor.js`) lists in the
+  `hooks` object it gives `new EditorMenuBar({...})`, and a hook missing there
+  means the item is not drawn. The popup hangs off `<body>` (fixed) because
+  `.otf-editor` has `overflow: hidden`. No `Alt+letter` mnemonics. Below its
+  own width of 720 (container based, on purpose) it is one ☰ sheet whose
+  sections fold under their headings (File open) with the key column hidden.
+- Every toolbar button names a menu command: the toolbar stamps `data-action`
+  and a `menu-bar.test.js` fence fails for one in no menu. Add the menu item
+  first. Tempo is in Play only.
+- Phone strip: at `PHONE_MAX_WIDTH` (640, `toolbar.js`) the toolbar is one row
+  (undo, redo, a note-length picker, tie). That width is also the editor's
+  fill mode, `NARROW_WIDTH` in `tab-controls-sheet.js` and `@container tabband`
+  in `style.css` (the bottom band); change them together.
+- `new OTFEditor(...)` options (`work-edit.js` passes them): `fileActions:
+  [{label, run, disabled?, action?} | {separator: true}]` (`action` only prints
+  that action's key; leave it off Download in a work session, where Ctrl+S
+  applies) and `hostTransport: true` when the song page's band has transport.
+  The band's session bar is Submit and ✓ Done only; Open…, Import .tef…,
+  Download OTF and Cancel are `fileActions`, and Cancel asks "Discard edits?"
+  inline in the bar, never `window.confirm`.
+- One zoom: the status bar's − 100% + (`state.horizontalZoom`, View ▸ Zoom,
+  `{` `}`); the band's Aa size is removed while editing. The `?` hint is plain
+  text, hidden on touch; Help ▸ Keyboard shortcuts is the one help button.
 - Palette outlines mean different things: `.active` (filled) is the entry state
   for the next note; `.reflects-note` is what the note under the cursor already
   is (an outline, never a border-width change); `.predicts-next` (dashed) is the
