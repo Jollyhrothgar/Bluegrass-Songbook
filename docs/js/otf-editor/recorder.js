@@ -341,6 +341,14 @@ export function dispatchEditorEvent(editor, event) {
             state.moveTrack(params.delta);
             break;
 
+        case 'addTrack':
+            state.addTrack(params.track);
+            break;
+
+        case 'deleteTrack':
+            state.deleteTrack(params.trackId);
+            break;
+
         // === Mode ===
         case 'setMode':
             state.setMode(params.mode);

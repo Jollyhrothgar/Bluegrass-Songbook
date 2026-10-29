@@ -2939,6 +2939,8 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
         lockExistingCredit: !isNewTake,
         isTrusted: async () => (await window.SupabaseAuth?.isTrustedUser?.()) === true,
         trackId: resolveEditTrackId(otf, instrument),
+        // a correction edits this track, so it cannot be deleted from the Score menu
+        protectedTrackId: isNewTake ? null : resolveEditTrackId(otf, instrument),
         filename: `${editFilename(part)}${isNewTake ? '' : '-edited'}`,
         editorFactory: (opts) => new OTFEditor(opts),
         barHost,

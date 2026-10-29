@@ -16,7 +16,7 @@ import { escapeAttr, escapeHtml } from './utils.js';
 import { getDraftStore } from './drafts.js';
 import { draftRowHtml, attachDraftActions } from './drafts-view.js';
 import { chooseTabFile } from './pwa.js';
-import { TARGET_PRESETS } from './otf-editor/create-tab-entry.js';
+import { TARGET_PRESETS, TARGET_LABELS as LABELS } from './otf-editor/create-tab-entry.js';
 import { track as trackEvent } from './analytics.js';
 
 /** How many tabs the front door lists before "All my tabs". */
@@ -24,11 +24,6 @@ export const HOME_DRAFTS = 5;
 
 /** The tab the tour uses; the example link opens it. */
 export const EXAMPLE_TAB_HREF = '/#work/foggy-mountain-breakdown/banjo-tab';
-
-const LABELS = {
-    'banjo': 'Banjo', 'guitar': 'Guitar', 'mandolin': 'Mandolin', 'fiddle': 'Fiddle',
-    'dobro': 'Dobro', 'bass': 'Bass', 'tenor-banjo': 'Tenor banjo',
-};
 
 /** What "Start a new tab" offers: the instruments `#new-tab?instrument=` understands. */
 export const INSTRUMENT_CHOICES = Object.keys(TARGET_PRESETS)

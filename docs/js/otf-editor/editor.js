@@ -18,6 +18,7 @@ import { EditorMenuBar } from './menu-bar.js';
 import {
     NoteEntryPopover, AnnotationPopover, TrackNamePopover, ValuePromptPopover,
     GracePopover,
+    TrackPopover,
 } from './popover.js';
 import { sanitizeTrackId, FX_ORDER, isGrace } from './facade.js';
 import { downloadOTF, cleanupOTF, validateOTF } from './actions.js';
@@ -29,6 +30,8 @@ import {
 import { EditEventRecorder } from './recorder.js';
 import { chooseTabFile } from '../pwa.js';
 import { createAutomation } from './automation.js';
+import { TARGET_PRESETS, TARGET_LABELS } from './create-tab-entry.js';
+import { makeTrack } from './new-otf.js';
 
 const ZOOM_HINT = 'Zoom: how much room each beat gets. Zoom in to see and click a fine cursor step.';
 
@@ -67,6 +70,9 @@ export class OTFEditor {
             otf: null,
             instrument: '5-string-banjo',
             trackId: null,      // which track of a multi-track OTF to edit
+            // protectedTrackId: a CORRECTION's own track; Score ▸ Delete track
+            // refuses it (null for a new take or an opened file)
+            protectedTrackId: null,
             // fillHeight: the host gives the editor a definite height, so
             // the TAB scrolls inside the editor and the chrome (toolbar,
             // transport) is pinned instead of scrolling off with the page.
@@ -100,6 +106,7 @@ export class OTFEditor {
             otf: this.options.otf,
             instrument: this.options.instrument,
             trackId: this.options.trackId,
+            protectedTrackId: this.options.protectedTrackId,
         });
 
         // Event recorder (must be created before keyboard handler)
@@ -206,6 +213,8 @@ export class OTFEditor {
                 renameTrack: () => this.renameCurrentTrack(),
                 moveTrackEarlier: () => this.moveCurrentTrack(-1),
                 moveTrackLater: () => this.moveCurrentTrack(1),
+                addTrack: () => this.addTrackPrompt(),
+                deleteTrack: () => this.deleteTrackPrompt(),
                 measuresPerRow: () => [2, 3, 4, 5, 6].map(n => ({
                     label: String(n),
                     checked: this._baseMeasuresPerRow === n,
@@ -229,6 +238,13 @@ export class OTFEditor {
         this.trackNamePopover = new TrackNamePopover({
             sanitize: sanitizeTrackId,
             onCommit: (name) => this._commitTrackName(name),
+            onCancel: () => this.editorRoot?.focus(),
+        });
+        // Score ▸ Add track… / Delete track… — the questions they ask are
+        // answered here, never in a native dialog.
+        this.trackPopover = new TrackPopover({
+            onAdd: (key) => this._commitAddTrack(key),
+            onDelete: (id) => this._commitDeleteTrack(id),
             onCancel: () => this.editorRoot?.focus(),
         });
         // "Type one number" — Go to measure and Play ▸ Tempo…. It replaced
@@ -369,6 +385,7 @@ export class OTFEditor {
         this.popover.init(this.container);
         this.annotationPopover.init(this.container);
         this.trackNamePopover.init(this.container);
+        this.trackPopover.init(this.container);
         this.valuePopover.init(this.container);
         this.gracePopover.init(this.container);
 
@@ -1353,6 +1370,50 @@ export class OTFEditor {
         return ok;
     }
 
+    /** Score ▸ Add track…: ask which instrument. */
+    addTrackPrompt() {
+        this.trackPopover.openAdd({
+            choices: Object.keys(TARGET_PRESETS)
+                .map(value => ({ value, label: TARGET_LABELS[value] || value })),
+        });
+        return true;
+    }
+
+    /** The instrument was chosen: append its empty track and switch to it. */
+    _commitAddTrack(key) {
+        const preset = TARGET_PRESETS[key];
+        if (!preset) return false;
+        const track = makeTrack(preset, this.state.getTracks().map(t => t.id), 'rhythm');
+        this.recorder?.record('addTrack', { track });
+        const id = this.state.addTrack(track);
+        this.editorRoot?.focus();
+        return id;
+    }
+
+    /** Score ▸ Delete track…: ask first, saying what goes. */
+    deleteTrackPrompt() {
+        const trackId = this.state.trackId;
+        if (!trackId || this.state.trackDeleteBlocker(trackId)) return false;
+        this.trackPopover.openDelete({
+            trackId,
+            noteCount: this.state.facade.noteCountIn(trackId),
+        });
+        return true;
+    }
+
+    _commitDeleteTrack(trackId) {
+        this.recorder?.record('deleteTrack', { trackId });
+        let ok = false;
+        try {
+            ok = this.state.deleteTrack(trackId);
+        } catch (err) {
+            // The document changed under the open question; say nothing worse.
+            console.warn('Delete track failed:', err.message);
+        }
+        this.editorRoot?.focus();
+        return ok;
+    }
+
     /**
      * Handle save
      */
@@ -1617,7 +1678,14 @@ export class OTFEditor {
         // OTF omits silent measures; render them as empty bars (display
         // copy only — the document stays sparse, and editing one goes
         // through getOrCreateMeasure as usual).
-        notation = densifyNotation(notation, maxMeasureIn(this.state.otf.notation));
+        const docMax = maxMeasureIn(this.state.otf.notation);
+        if (notation.length === 0) {
+            // A track with no notes is still editable: draw the document's
+            // bars empty (display copy; nothing is written by looking).
+            notation = Array.from({ length: docMax }, (_, i) => ({ measure: i + 1, events: [] }));
+        } else {
+            notation = densifyNotation(notation, docMax);
+        }
 
         // Free-text annotations + reading-list section labels (display
         // copy; annotations may target the silent measures, so attach
@@ -2496,6 +2564,7 @@ export class OTFEditor {
         this.popover.destroy();
         this.annotationPopover?.destroy();
         this.trackNamePopover?.destroy();
+        this.trackPopover?.destroy();
         this.valuePopover?.destroy();
         this.gracePopover?.destroy();
         this.renderer?.destroy();
@@ -2513,6 +2582,7 @@ export class OTFEditor {
         this.popover = null;
         this.annotationPopover = null;
         this.trackNamePopover = null;
+        this.trackPopover = null;
         this.valuePopover = null;
         this.gracePopover = null;
         this.renderer = null;

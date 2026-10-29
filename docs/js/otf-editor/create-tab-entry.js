@@ -52,6 +52,12 @@ export const TARGET_PRESETS = {
     'tenor-banjo': 'tenor-banjo',
 };
 
+/** What each TARGET_PRESETS instrument is called on screen. */
+export const TARGET_LABELS = {
+    'banjo': 'Banjo', 'guitar': 'Guitar', 'mandolin': 'Mandolin', 'fiddle': 'Fiddle',
+    'dobro': 'Dobro', 'bass': 'Bass', 'tenor-banjo': 'Tenor banjo',
+};
+
 const SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 /** Coerce a name into something the works writer will accept, or ''. */
