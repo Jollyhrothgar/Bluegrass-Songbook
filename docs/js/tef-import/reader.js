@@ -969,6 +969,7 @@ export function parseV3(data, name) {
         header,
         title,
         tab_by: tabByFromComments(headerString(data, 0x48)),
+        composer: headerString(data, 0x44) || '',
         instruments,
         note_events: events,
         text_events: textEvents,

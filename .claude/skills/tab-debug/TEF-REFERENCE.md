@@ -75,8 +75,8 @@ table, chord table, measures, tracks, 0x64 block, reading list, components
 
 - **Title** = pointer 64 (`titleFromHeader`, both readers); a title with control
   characters (multi-line) still falls back to the first-string heuristic, so
-  the writer turns line breaks into spaces. **Author** (0x44, the "subtitle")
-  is the composer; the V3 readers do not read it yet (59 of 91 V3 files have one).
+  the writer turns line breaks into spaces. **Author** (0x44, TablEdit's name;
+  imported raw as `composer`, like V2; read by both importers).
 - **Credit**: `metadata.tab_by` is the last comments line `Tab by: NAME <URL>`
   (the colon matters: about 30 corpus files say `Tab by Name` and are left alone).
 - **Capo**: +12 is the capo (read by us and by TablEdit's loader). +10's low

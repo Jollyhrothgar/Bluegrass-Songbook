@@ -8,16 +8,12 @@
 //   - metadata.title is trimmed and its line breaks become spaces: a V3 title is
 //     trimmed on read, and a multi-line title cannot be read back (the writer
 //     counts it in notices.text_changed);
-//   - metadata.composer is written to TablEdit's Author field but the V3 reader
-//     does not read it back yet: reading it would change the parse of 59 of the
-//     91 V3 corpus files (Mike's call, see the PR), so it is not compared.
 
 const byText = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
 
 export function canonical(otf) {
     const c = JSON.parse(JSON.stringify(otf));
     delete c.x_source;
-    delete c.metadata.composer;
     c.metadata.title = c.metadata.title.replace(/[\x00-\x1f\x7f]+/g, ' ').trim();
     if (c.annotations) c.annotations.sort((a, b) => a.measure - b.measure || a.tick - b.tick || byText(a.text, b.text));
     if (c.chord_diagrams) c.chord_diagrams.sort((a, b) => a.measure - b.measure || a.tick - b.tick || a.chord - b.chord);

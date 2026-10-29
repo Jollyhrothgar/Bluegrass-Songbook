@@ -478,6 +478,7 @@ export function tefToOtf(tef) {
     } else {
         metadata.time_signature = '2/2';
     }
+    if (!isV2 && tef.composer) metadata.composer = tef.composer;
 
     if (tef.tab_by) metadata.tab_by = tef.tab_by;
 

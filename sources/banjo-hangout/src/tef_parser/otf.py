@@ -1115,6 +1115,8 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
     else:
         # V3 with no measure table: legacy guess
         doc.metadata.time_signature = "2/2"  # Cut time for bluegrass
+    if not tef.header.is_v2 and tef.composer:
+        doc.metadata.composer = tef.composer
     # Per-measure overrides come from the reader for BOTH formats:
     # V2 type-27 components and the V3 measure table (oracle-confirmed
     # on 27493 m30/m49).

@@ -55,7 +55,7 @@ describe('.tef writer: corpus round trip', () => {
         if (pinned) expect(diff, `${file}: ${pinned.why}`).toBe(pinned.pointer);
         else expect(diff, 'differs; fix the writer or pin it with a reason').toBe(null);
 
-        // The composer goes to TablEdit's Author field even though we do not read it back.
+        // The composer goes to TablEdit's Author field.
         if (a.metadata.composer && a.metadata.composer.length < 998) {
             expect(headerString(out, 0x44)).toBe(a.metadata.composer);
         }

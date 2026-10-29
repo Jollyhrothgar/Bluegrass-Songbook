@@ -378,6 +378,7 @@ class TEFFile:
     path: Path
     header: TEFHeader
     title: str = ""
+    composer: str = ""   # V3 Author field (pointer 0x44); V2 keeps it in header.v2_composer
     comments: str = ""   # the Comments field (V2 info string / V3 pointer 0x48)
     strings: list[TEFString] = field(default_factory=list)
     instruments: list[TEFInstrument] = field(default_factory=list)
@@ -2259,6 +2260,7 @@ class TEFReader:
             header=header,
             title=title,
             comments=self.header_string(0x48) or "",
+            composer=self.header_string(0x44) or "",
             strings=strings,
             instruments=instruments,
             chords=chords,
