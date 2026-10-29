@@ -6,16 +6,19 @@
 //
 // ONE COMMAND SURFACE (G17). The session bar in the bottom band holds only
 // the two buttons a visitor must not miss: Submit and ✓ Done (edit sessions).
-// Everything else the session offers (Open…, Import .tef…, Download OTF,
+// Everything else the session offers (Open…, Import .tef…, Save as…,
 // Cancel) lives in the editor's File menu only, built from `fileActions`
 // below, so no command is drawn twice. Cancel keeps its inline "Discard
-// edits?" question, shown in the bar whichever surface raised it. G15f swaps
-// the one "Download OTF" entry for Save as…; keep it a single entry.
+// edits?" question, shown in the bar whichever surface raised it.
+//
+// Ctrl/Cmd+S opens Save as… (G15f), the same panel as the File item. It used
+// to apply the edits to the view; ✓ Done (applyAndExit) is the one way to do
+// that now, and session.apply() remains for callers that want it.
 //
 // UI-free of editor internals: the editor is injected via editorFactory
 // so work-view can lazy-import OTFEditor and tests can stub it. The
-// only editor surface used: save(), download(filename?), destroy(),
-// state.facade.canUndo() (dirty check), and the onSave option.
+// only editor surface used: save(), openSaveAs(), setSource(), load(),
+// destroy() and state.facade.canUndo() (dirty check).
 
 import { pitchedTracks } from '../renderers/otf-tracks.js';
 import { chooseTabFile } from '../pwa.js';
@@ -48,8 +51,10 @@ export function resolveEditTrackId(otf, instrument) {
  * @param {string} [options.trackId] - track to edit (see resolveEditTrackId)
  * @param {string} [options.protectedTrackId] - a correction's own track: the
  *   editor will not delete it (null for a new take or an opened file)
- * @param {string} [options.filename] - download filename (no extension)
- * @param {Function} options.editorFactory - ({container, otf, trackId, onSave}) => editor
+ * @param {string} [options.filename] - Save as's file name when there is no source (no extension)
+ * @param {{name: string, bytes?: ArrayBuffer}} [options.source] - the file this document was
+ *   opened from: Save as starts from its format and name, and writes a .tef over its bytes
+ * @param {Function} options.editorFactory - ({container, otf, trackId, source, filename, ...}) => editor
  * @param {Function} [options.onApply] - receives the edited document
  * @param {Function} [options.onExit] - receives 'apply' | 'cancel' after unmount
  * @param {Function} [options.confirmDiscard] - () => boolean; defaults to window.confirm
@@ -77,6 +82,7 @@ export function createTabEditSession({
     trackId = null,
     protectedTrackId = null,
     filename = null,
+    source = null,
     editorFactory,
     onApply = () => {},
     onExit = () => {},
@@ -166,7 +172,8 @@ export function createTabEditSession({
         otf,
         trackId,
         protectedTrackId,
-        onSave: (doc) => onApply(doc),
+        source,
+        filename,
         ...(onChange ? { onChange: (doc) => onChange(doc) } : {}),
         // In compact mode the bottom band owns playback, so the editor's
         // status bar drops its own transport (plan §8.3: one transport).
@@ -188,11 +195,11 @@ export function createTabEditSession({
                 label: a.label,
                 run: () => a.onClick?.(session),
             })),
-            // No `action: 'edit.save'`: Ctrl+S is "apply" here (onSave →
-            // onApply), so printing it beside a download would be false.
+            // Ctrl+S opens the same panel, so the File item prints its key.
             {
-                label: '⬇ Download OTF',
-                run: () => editor.download?.(filename),
+                label: '💾 Save as…',
+                action: 'edit.save',
+                run: () => editor.openSaveAs?.(),
             },
             { separator: true },
             ...(onSubmit ? [{
@@ -347,7 +354,8 @@ export function createTabEditSession({
         },
 
         /** Swap the document being edited (a .tef import into this mode). */
-        replaceDocument(doc) {
+        replaceDocument(doc, newSource = null) {
+            editor.setSource?.(newSource);
             editor.load?.(doc);
             credit?.refresh();
         },
