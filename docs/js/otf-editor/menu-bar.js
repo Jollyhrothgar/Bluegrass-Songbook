@@ -505,8 +505,11 @@ export class EditorMenuBar {
                     e.stopPropagation();
                     if (open) this._sheetOpen.delete(menu.id);
                     else this._sheetOpen.add(menu.id);
+                    const top = this.popup.scrollTop;
                     this._buildPopup('*');
-                    this.popup.querySelector(`.menu-sheet-head[data-menu="${menu.id}"]`)?.focus();
+                    this.popup.querySelector(`.menu-sheet-head[data-menu="${menu.id}"]`)
+                        ?.focus({ preventScroll: true });
+                    this.popup.scrollTop = top;
                 });
                 head.addEventListener('keydown', (e) => {
                     if (e.key !== 'Escape') return;

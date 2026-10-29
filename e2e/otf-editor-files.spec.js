@@ -5,6 +5,7 @@
 // event rather than a DOM change, and a file picker is a native dialog until
 // a test drives the chooser. Both are drivable — they just needed a spec.
 import { test, expect } from './fixtures.js';
+import { clickFileItem } from './helpers/front-door.js';
 import { tefFixture } from './helpers/tef-fixture.js';
 
 const TAB_WORK = '/#work/foggy-mountain-breakdown/mandolin';
@@ -40,7 +41,7 @@ test.describe('downloading the edited document', () => {
 
             const [download] = await Promise.all([
                 page.waitForEvent('download'),
-                band(page).locator('.tab-edit-download').click(),
+                clickFileItem(page, 'Download OTF'),
             ]);
 
             // The session names the file after the take it is correcting.
@@ -99,7 +100,7 @@ test.describe('importing a .tef', () => {
 
         const [chooser] = await Promise.all([
             page.waitForEvent('filechooser'),
-            band(page).locator('.tab-edit-import').click(),
+            clickFileItem(page, 'Import .tef'),
         ]);
         await chooser.setFiles(fixture.file);
 

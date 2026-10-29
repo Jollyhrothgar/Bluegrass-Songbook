@@ -154,7 +154,12 @@ test.describe('no sign-in before editing', () => {
         // importTefAsNewTake used to gate on requireLogin('add a tab').
         await page.goto('/#new-tab?title=Empty%20Take&instrument=banjo');
         await page.locator('.editor-renderer .stave-row').first().waitFor({ timeout: 20000 });
-        await chooseFile(page, page.locator('#app-bottomband .tab-edit-import'), tef.file);
+        // Import .tef… is a File menu command now (G17), not a bar button
+        const [chooser] = await Promise.all([
+            page.waitForEvent('filechooser'),
+            clickFileItem(page, 'Import .tef'),
+        ]);
+        await chooser.setFiles(tef.file);
         await expectEditorWithNotes(page);
     });
 });
