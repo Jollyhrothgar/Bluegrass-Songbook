@@ -1094,17 +1094,102 @@ def tab_instrument(row: dict) -> str:
     return instrument
 
 
+def document_credit(document: dict) -> Optional[dict]:
+    """``metadata.tab_by`` of a validated OTF: ``{'name', 'url'?}`` or None."""
+    credit = (document.get('metadata') or {}).get('tab_by')
+    return dict(credit) if credit else None
+
+
+def credit_updates(credit: Optional[dict]) -> dict:
+    """The provenance keys a ``tab_by`` credit becomes (empty = nothing)."""
+    if not credit:
+        return {}
+    updates = {'author': credit['name']}
+    if credit.get('url'):
+        updates['author_url'] = credit['url']
+    return updates
+
+
+def resolve_credit(document: dict, previous: Optional[dict],
+                   trusted: bool) -> tuple:
+    """Decide the credit for a tab being written. Returns
+    ``(provenance_updates, document)``.
+
+    Anyone may fill a blank credit; changing one that already exists is for
+    trusted submitters only (Mike, 2026-10-29). The editor greys the fields
+    out for everyone else, but the client is not a party this pipeline
+    trusts, so this is the real gate.
+
+    ``document`` is returned with ``metadata.tab_by`` rewritten to the credit
+    that actually stands whenever it differs from the one submitted, so the
+    stored OTF and ``work.yaml`` can never disagree.
+    """
+    incoming = document_credit(document)
+    existing_name = ((previous or {}).get('author') or '').strip()
+    if not existing_name:
+        return credit_updates(incoming), document
+
+    existing_url = ((previous or {}).get('author_url') or '').strip()
+    same = (incoming is not None and incoming['name'] == existing_name
+            and incoming.get('url', existing_url) in (existing_url, ''))
+    if incoming is not None and (same or trusted):
+        updates = credit_updates(incoming)
+        if not same:
+            # A replacement with no link must not keep the old person's link.
+            updates.setdefault('author_url', '')
+        return updates, document
+
+    # Refused (or nothing submitted): the existing credit stands. Write it
+    # back into the document so the file says what work.yaml says.
+    kept = {'name': existing_name}
+    if existing_url:
+        kept['url'] = existing_url
+    stamped = json.loads(json.dumps(document))
+    stamped['metadata']['tab_by'] = kept
+    if validate_otf(stamped):
+        stamped['metadata'].pop('tab_by')
+    elif stamped.get('otf_version') == '1.0':
+        stamped['otf_version'] = '1.1'
+    return {}, stamped
+
+
+def is_trusted_user(user_id: Optional[str], *, supabase_url: str,
+                    service_key: str) -> bool:
+    """Is ``user_id`` in ``trusted_users``? The same table the edge functions
+    read (``auto-commit-song``, ``reconcile-pending``) to classify a change;
+    asked again here because the dispatch carries only the resulting mode,
+    and ``update`` means "owns the part OR is trusted". Fails closed."""
+    if not user_id:
+        return False
+    url = (f"{supabase_url.rstrip('/')}/rest/v1/trusted_users"
+           f"?user_id=eq.{urllib.parse.quote(str(user_id), safe='')}&select=user_id")
+    request = urllib.request.Request(url, headers={
+        'apikey': service_key,
+        'Authorization': f'Bearer {service_key}',
+        'Accept': 'application/json',
+    })
+    try:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            return bool(json.loads(response.read().decode('utf-8')))
+    except urllib.error.HTTPError as e:
+        raise ProcessPendingError(
+            f"trusted_users lookup failed: HTTP {e.code}") from e
+
+
 def _tab_provenance(row: dict, marker: str, actor: Optional[str],
                     previous: Optional[dict] = None) -> dict:
     """Provenance for a tab part this pipeline writes.
 
-    ``author`` is never written here. It is the name the frontend credits
+    ``author`` is never INFERRED here. It is the name the frontend credits
     on a tablature part (``tablature_parts[].author``), and uploading a tab
     is not evidence of having arranged it: people upload tabs they found
     elsewhere, and stamping the submitter's display name there credited
     them with someone else's work. ``submitted_by`` already records who
-    uploaded it. A correction leaves an existing ``author`` alone too —
-    see :func:`apply_tablature_row`.
+    uploaded it. The credit is written only from an explicit ``tab_by`` a
+    person typed into the document (:func:`credit_updates`, from
+    ``metadata.tab_by`` of the OTF), never from who the uploader is; a
+    correction leaves an existing ``author`` alone unless the submitter is
+    trusted — see :func:`resolve_credit` and :func:`apply_tablature_row`.
 
     ``previous`` is the provenance being replaced, when there is one. Its
     ``source``/``source_id`` are about to be overwritten with
@@ -1139,7 +1224,8 @@ def _tab_provenance(row: dict, marker: str, actor: Optional[str],
 
 def apply_tablature_row(repo_root, row: dict, mode: str, work_id: str,
                         actor: Optional[str] = None,
-                        verbose: bool = True) -> works_writer.WriteResult:
+                        verbose: bool = True,
+                        trusted: bool = False) -> works_writer.WriteResult:
     """Write one tablature row to ``works/`` in the dispatched mode.
 
     ``create``
@@ -1217,8 +1303,10 @@ def apply_tablature_row(repo_root, row: dict, mode: str, work_id: str,
         else:
             previous = dict(existing[0].get('provenance') or {})
             provenance = _tab_provenance(row, marker, actor, previous)
-            # A correction is not an arrangement credit: `author` is not in
-            # these updates, so it stays whoever arranged the take. Who
+            # A correction is not an arrangement credit: the author only
+            # changes through an explicit `tab_by` that a trusted submitter
+            # typed (resolve_credit), otherwise it stays whoever arranged the
+            # take, and the stored OTF is made to say so. Who
             # fixed it is recorded the way the retired PR flow recorded it,
             # so the vocabulary in works/ does not fork.
             provenance['x_corrected_by'] = row.get('created_by') or actor
@@ -1229,15 +1317,18 @@ def apply_tablature_row(repo_root, row: dict, mode: str, work_id: str,
             notes = provenance.pop('x_submission_notes', None)
             if notes:
                 provenance['x_correction_notes'] = notes
+            credit, document = resolve_credit(document, previous, trusted)
+            provenance.update(credit)
             return works_writer.update_part(
                 repo_root, work_id,
                 match=match,
-                content=otf_text,
+                content=otf_format.serialize(document),
                 provenance_updates=provenance,
                 verbose=verbose,
             )
 
     provenance = _tab_provenance(row, marker, actor)
+    provenance.update(credit_updates(document_credit(document)))
 
     if mode == 'add':
         if work is None:
@@ -1295,7 +1386,8 @@ def _version_label(actor: Optional[str]) -> str:
 def apply_row(repo_root, row: dict, mode: str, work_id: str,
               actor: Optional[str] = None,
               verbose: bool = True,
-              backstop: Optional[DedupBackstop] = None) -> works_writer.WriteResult:
+              backstop: Optional[DedupBackstop] = None,
+              trusted: bool = False) -> works_writer.WriteResult:
     """Write one pending row to ``works/`` in the dispatched mode.
 
     ``backstop`` is consulted before a ``create`` and may retarget the write
@@ -1313,7 +1405,7 @@ def apply_row(repo_root, row: dict, mode: str, work_id: str,
     part_type = row.get('part_type') or 'lead-sheet'
     if part_type == 'tablature':
         return apply_tablature_row(repo_root, row, mode, work_id, actor,
-                                   verbose=verbose)
+                                   verbose=verbose, trusted=trusted)
     if part_type == 'metadata':
         return apply_metadata_row(repo_root, row, mode, work_id, actor,
                                   verbose=verbose)
@@ -1542,8 +1634,13 @@ def main() -> int:
     try:
         row = fetch_pending_row(row_id, supabase_url=supabase_url,
                                 service_key=service_key)
+        # Only a tab correction consults trust (who may change a credit).
+        trusted = (row.get('part_type') == 'tablature' and mode == 'update'
+                   and is_trusted_user(row.get('created_by'),
+                                       supabase_url=supabase_url,
+                                       service_key=service_key))
         result = apply_row(repo_root, row, mode, work_id or row_id, actor,
-                           backstop=backstop)
+                           backstop=backstop, trusted=trusted)
     except (ProcessPendingError, works_writer.WorksWriterError) as e:
         print(f'Error: {e}', file=sys.stderr)
         return 1

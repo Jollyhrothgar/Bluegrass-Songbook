@@ -25,6 +25,7 @@ class Provenance:
     source_file: Optional[str] = None  # Original filename
     source_url: Optional[str] = None  # Original URL if scraped
     author: Optional[str] = None  # Who created/tabbed it
+    author_url: Optional[str] = None  # Optional link for `author` (http/https)
     difficulty: Optional[str] = None  # Listing skill level ('Intermediate')
     tuning: Optional[str] = None  # Listing tuning ('Standard Open G (gDGBD)')
     submitted_by: Optional[str] = None  # Username for submissions
@@ -144,6 +145,8 @@ class Work:
                         prov['source_url'] = part.provenance.source_url
                     if part.provenance.author:
                         prov['author'] = part.provenance.author
+                    if part.provenance.author_url:
+                        prov['author_url'] = part.provenance.author_url
                     if part.provenance.difficulty:
                         prov['difficulty'] = part.provenance.difficulty
                     if part.provenance.tuning:
@@ -187,6 +190,7 @@ class Work:
                     source_file=pv.get('source_file'),
                     source_url=pv.get('source_url'),
                     author=pv.get('author'),
+                    author_url=pv.get('author_url'),
                     difficulty=pv.get('difficulty'),
                     tuning=pv.get('tuning'),
                     submitted_by=pv.get('submitted_by'),
