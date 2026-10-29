@@ -54,7 +54,7 @@ import {
 } from './work-view.js';
 import { parseTabRoute, partInstrumentFor } from './otf-editor/create-tab-entry.js';
 import { initSearch, search, showPopularSongs, renderResults, parseSearchQuery, searchableSongs } from './search-core.js';
-import { escapeHtml, escapeAttr, requireLogin, parseItemRef, buildDeleteCandidates, downloadFile } from './utils.js';
+import { escapeHtml, escapeAttr, songCount, requireLogin, parseItemRef, buildDeleteCandidates, downloadFile } from './utils.js';
 import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
 import { initShell, setTopBar, setBottomBand, setOverflowBase, setOverflowLead, setChromeAutoHide, pill, setBanner, setTourInvite } from './shell.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink } from './analytics.js';
@@ -877,7 +877,7 @@ function renderCollectionCards() {
                 <div class="collection-content">
                     <h3 class="collection-title">${escapeHtml(collection.title)}</h3>
                     <p class="collection-description">${escapeHtml(collection.description)}</p>
-                    ${(collection.isToolLink || collection.isDungeonLink) ? '' : `<span class="collection-count">${count.toLocaleString()} songs</span>`}
+                    ${(collection.isToolLink || collection.isDungeonLink) ? '' : `<span class="collection-count">${songCount(count)}</span>`}
                 </div>
             </a>
         `;
@@ -1623,7 +1623,7 @@ function rebuildCorpus() {
 /** The searchable-title count shown next to the search box. */
 function updateSongbookCount(songs) {
     if (!searchStats) return;
-    searchStats.textContent = `${countDistinctTitles(songs).toLocaleString()} songs`;
+    searchStats.textContent = songCount(countDistinctTitles(songs));
 }
 
 /**
@@ -3100,6 +3100,20 @@ async function startFeatureTour(source) {
             },
             reset: () => editorModule?.resetEditorForNewSong(),
         },
+        // The search demo types into the real box. The reader didn't search,
+        // so it is not recorded as their search (`track: false`); no input
+        // event fires, so the URL and Google Analytics leave it alone too.
+        search: {
+            fill: (text) => {
+                const input = document.getElementById('search-input');
+                if (input) input.value = text;
+            },
+            run: (text) => {
+                const input = document.getElementById('search-input');
+                if (input) input.value = text;
+                search(text, { track: false });
+            },
+        },
         onStep: (step, index) => track('tour_step', { step: step.id, index }),
         onClose: ({ finished, step, index }) => {
             tourOpen = false;
@@ -3133,7 +3147,8 @@ async function handleTourLink() {
     }
     await bootRouted;
     // A song path draws after routing (its chart is fetched): wait for it, so
-    // the tour runs on the reader's own song rather than the demo one.
+    // a tab the reader linked to hosts the tab steps (the song steps always
+    // use the demo song) and Done returns to a page that has finished drawing.
     const started = performance.now();
     while (SONG_PATH.test(window.location.pathname)
         && !document.querySelector('#key-pill, .tab-play-btn')

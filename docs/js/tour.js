@@ -1,6 +1,7 @@
 // The feature tour (G14): a small floating card that points at the real
-// controls one at a time — Key, Lists, Edit, a song written into the lyrics &
-// chords editor (tour-editor-demo.js), tab playback, tab editing, opening
+// controls one at a time — search (a line of the words typed into the real
+// box finds the demo song), Key, Lists, Edit, a song written into the lyrics
+// & chords editor (tour-editor-demo.js), tab playback, tab editing, opening
 // your own TablEdit files — so a visitor arriving from Google learns what the
 // book can do.
 //
@@ -9,10 +10,13 @@
 // presses Back, opens the editor), the step's control disappears and the
 // tour gets out of the way.
 //
-// The editor demo is the one place the tour does things itself: it plays a
-// song into the editor. A trusted press or key in the editor stops it (the
-// reader took over), and the tour resets the editor whenever it leaves it,
-// so nothing is saved and leaving never asks about unsaved changes.
+// The two demos are the only places the tour does things itself: it types a
+// search into the search box, and it plays a song into the editor. A trusted
+// press or key in the box or the editor stops a demo (the reader took over).
+// The tour's search is not recorded as the reader's (main.js passes
+// `search.run`, which searches with `track: false`), and the tour resets the
+// editor whenever it leaves it, so nothing is saved and leaving never asks
+// about unsaved changes.
 //
 // Lazy (LAZY_MODULE_URLS): main.js imports it on the Tour button's click. No
 // module-level side effects; startTour() does all the wiring and stop()
@@ -22,15 +26,48 @@
 import { writeIn, sortSections, addChords } from './tour-editor-demo.js';
 
 /**
- * Where a step goes when the page the reader started on can't show it.
- * Old Home Place is the design inventory's lead-sheet example and Foggy
- * Mountain Breakdown's banjo tab its tab example (design/ui-states).
+ * Where a step goes. The song steps always use Old Home Place, the song the
+ * search demo finds (the design inventory's lead-sheet example); the tab
+ * steps use the reader's own tab when the tour starts on one, else Foggy
+ * Mountain Breakdown's banjo tab (design/ui-states).
  */
 export const TOUR_ROUTES = {
+    search: '/#search',
     lead: '/#work/old-home-place',
     editor: '/#add',
     tab: '/#work/foggy-mountain-breakdown/banjo-tab',
 };
+
+/** The search demo types this: the first line of Old Home Place, which no other song shares. */
+export const SEARCH_DEMO_QUERY = 'ten long years since I left my home';
+const TYPE_MS = 55;
+
+/**
+ * The search demo: type the line into the real search box a letter at a
+ * time, searching at the end of each word so the results narrow as it goes,
+ * then ring the top result. `search.fill(text)` only shows text in the box;
+ * `search.run(text)` also searches, without recording it as the reader's.
+ */
+export async function searchByWords({ search, wait, reduced, point }) {
+    if (!search) return;
+    point('#search-input');
+    if (reduced) {
+        search.run(SEARCH_DEMO_QUERY);
+    } else {
+        let typed = '';
+        for (const word of SEARCH_DEMO_QUERY.split(' ')) {
+            for (const ch of (typed ? ' ' : '') + word) {
+                typed += ch;
+                search.fill(typed);
+                if (!await wait(TYPE_MS)) return;
+            }
+            search.run(typed);
+        }
+    }
+    if (!await wait(reduced ? 0 : 500)) return;
+    point('#results .result-item');
+    return true;   // keep the ring on the song it found
+}
 
 /**
  * The steps, in order. `page` is where the step happens; `targets` are tried
@@ -42,6 +79,23 @@ export const TOUR_ROUTES = {
  * (body.file-dragover).
  */
 export const TOUR_STEPS = [
+    {
+        id: 'search',
+        page: 'search',
+        targets: ['#search-input'],
+        title: 'Search the whole book',
+        body: "Look a song up by its title, its artist, a line of the words, or a chord progression like prog:I-IV-V. Tabs and instrumentals are in here too.",
+    },
+    {
+        id: 'find',
+        page: 'search',
+        // The results, not the box: too big to sit beside, so the card rests
+        // at the bottom, off the song the demo rings at the top
+        targets: ['#results'],
+        play: searchByWords,
+        title: 'Find it by the words',
+        body: "Can't think of the name? Type a line you remember. (A demo: the tour types it for you.) Next opens the song.",
+    },
     {
         id: 'key',
         page: 'lead',
@@ -247,24 +301,24 @@ function defaultNavigate(url) {
  *   onClose({ finished, step, index }) — once, however it ends
  *   navigate(url)         — injectable for tests
  *   editor                — { lead(): Promise<controller|null>, reset() } for the
- *                           editor demo (main.js); without it the demo steps
- *                           show their card and play nothing
+ *                           editor demo (main.js); without it the editor demo
+ *                           steps show their card and play nothing
+ *   search                — { fill(text), run(text) } for the search demo
+ *                           (main.js); without it that step only shows its card
  */
-export function startTour({ steps = TOUR_STEPS, routes = TOUR_ROUTES, onStep, onClose, navigate = defaultNavigate, editor = null } = {}) {
+export function startTour({ steps = TOUR_STEPS, routes = TOUR_ROUTES, onStep, onClose, navigate = defaultNavigate, editor = null, search = null } = {}) {
     const query = (sel) => document.querySelector(sel);
 
-    // Can the page the reader is on already host the song-page steps? Then
-    // they happen here, on their own song, and Done has nowhere to return.
+    // The song steps always use the song the search demo finds. A tab the
+    // reader started on can host the tab steps; Done returns them to it, or
+    // to wherever else they started.
     const startUrl = location.pathname + location.search + location.hash;
-    const onLead = !!(pickTarget({ targets: ['#key-pill'] }, query, isVisible)
-        && pickTarget({ targets: ['#edit-song-btn'] }, query, isVisible));
     const onTab = !!pickTarget({ targets: ['.tab-play-btn'] }, query, isVisible);
     const pageUrl = {
         ...routes,
-        ...(onLead ? { lead: startUrl } : {}),
         ...(onTab ? { tab: startUrl } : {}),
     };
-    let here = onLead ? 'lead' : onTab ? 'tab' : null;
+    let here = onTab ? 'tab' : null;
     let hereUrl = startUrl;
 
     const card = document.createElement('div');
@@ -382,7 +436,7 @@ export function startTour({ steps = TOUR_STEPS, routes = TOUR_ROUTES, onStep, on
         // A ripple suits a control; around the whole editor it scales out
         // across the page, so a big target lands without one.
         if (landed) arrive({ ping: !isBig(rectOf(pointed || target)) });
-        if (landed && step.play && editor) play(step);
+        if (landed && step.play) play(step);
     }
 
     /**
@@ -397,23 +451,32 @@ export function startTour({ steps = TOUR_STEPS, routes = TOUR_ROUTES, onStep, on
         if (changed && target) replay(ring, 'tour-ping');
     }
 
-    /** Run a step's demo. It stops at its next wait once the step changes or the reader takes over. */
+    /**
+     * Run a step's demo. It stops at its next wait once the step changes or
+     * the reader takes over. A demo in the editor needs the editor hooks;
+     * without them it shows its card and plays nothing. A demo that returns
+     * true leaves the ring on what it pointed at last.
+     */
     async function play(step) {
         const mine = run;
         const alive = () => !stopped && run === mine;
         const wait = (ms) => new Promise(resolve => setTimeout(() => resolve(alive()), ms));
-        lead = lead || await editor.lead();
-        if (!lead || !alive()) return;
+        if (step.page === 'editor') {
+            if (!editor) return;
+            lead = lead || await editor.lead();
+            if (!lead || !alive()) return;
+        }
+        let keep = false;
         try {
-            await step.play({
-                lead, reset: editor.reset, wait, reduced,
+            keep = await step.play({
+                lead, reset: editor?.reset, search, wait, reduced,
                 point: (selector) => { if (alive()) point(selector); },
                 reveal: (rect) => { if (alive()) reveal(rect); },
             });
         } catch (err) {
             console.error('The tour demo stopped:', err);
         }
-        if (alive()) point(null);
+        if (alive() && keep !== true) point(null);
     }
 
     /**
@@ -437,10 +500,10 @@ export function startTour({ steps = TOUR_STEPS, routes = TOUR_ROUTES, onStep, on
         tick();
     }
 
-    /** A real press or key in the editor: the reader has taken over, so the demo stops where it is. */
+    /** A real press or key in the editor or the search box: the reader has taken over, so the demo stops where it is. */
     function takeOver(e) {
         if (!e.isTrusted || !steps[index]?.play || e.target.closest?.('.tour-card')) return;
-        if (!e.target.closest?.('#editor-panel, .chm-menu, .le-selbar')) return;
+        if (!e.target.closest?.('#editor-panel, .chm-menu, .le-selbar, #search-input')) return;
         run++;
         focus = null;
         lead?.present?.end();

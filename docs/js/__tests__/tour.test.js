@@ -1,16 +1,16 @@
 // @vitest-environment jsdom
 // The feature tour (G14): which control each step rings, when the tour has
-// to change page, where the card goes, how the editor demo starts and stops,
-// and how a tour ends. The real pages are walked in e2e/tour.spec.js; here
+// to change page, where the card goes, how the search and editor demos start
+// and stop, and how a tour ends. The real pages are walked in e2e/tour.spec.js; here
 // the "pages" are a few stub elements and navigate() swaps them.
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
-import { TOUR_STEPS, TOUR_ROUTES, pickTarget, pageToVisit, placeCard, startTour } from '../tour.js';
+import { TOUR_STEPS, TOUR_ROUTES, SEARCH_DEMO_QUERY, pickTarget, pageToVisit, placeCard, startTour } from '../tour.js';
 
 describe('TOUR_STEPS', () => {
-    it('walks key, lists, edit, the editor demo, tab playback, tab editing, your own .tef — in that order', () => {
+    it('walks search, key, lists, edit, the editor demo, tab playback, tab editing, your own .tef — in that order', () => {
         expect(TOUR_STEPS.map(s => s.id)).toEqual(
-            ['key', 'lists', 'edit', 'write', 'sections', 'chords', 'play', 'tab-edit', 'tef']);
+            ['search', 'find', 'key', 'lists', 'edit', 'write', 'sections', 'chords', 'play', 'tab-edit', 'tef']);
     });
 
     it('every step has a page the tour knows how to reach', () => {
@@ -19,13 +19,25 @@ describe('TOUR_STEPS', () => {
 
     it("keeps each page's steps together, so the tour changes page as little as it can", () => {
         expect(TOUR_STEPS.map(s => s.page)).toEqual(
-            ['lead', 'lead', 'lead', 'editor', 'editor', 'editor', 'tab', 'tab', 'tab']);
+            ['search', 'search', 'lead', 'lead', 'lead', 'editor', 'editor', 'editor', 'tab', 'tab', 'tab']);
     });
 
     it('the editor steps each play a demo, in the Add Song editor', () => {
-        expect(TOUR_STEPS.filter(s => s.play).map(s => s.id)).toEqual(['write', 'sections', 'chords']);
+        expect(TOUR_STEPS.filter(s => s.page === 'editor' && s.play).map(s => s.id)).toEqual(['write', 'sections', 'chords']);
         expect(TOUR_ROUTES.editor).toBe('/#add');
         expect(TOUR_STEPS.find(s => s.id === 'write').body).toMatch(/nothing here is saved/);
+    });
+
+    it('the search card names what you can search for, and the demo finds the demo song', () => {
+        const body = TOUR_STEPS.find(s => s.id === 'search').body;
+        for (const what of [/title/, /artist/, /a line of the words/, /prog:I-IV-V/, /Tabs/, /instrumentals/]) {
+            expect(body).toMatch(what);
+        }
+        expect(TOUR_STEPS.find(s => s.id === 'find').play).toBeTypeOf('function');
+        expect(TOUR_ROUTES.search).toBe('/#search');
+        // The demo types the first line of the song the song steps then open
+        expect(TOUR_ROUTES.lead).toBe('/#work/old-home-place');
+        expect(SEARCH_DEMO_QUERY).toBe('ten long years since I left my home');
     });
 
     it('the .tef step says all three things: open it, edit it here, submit it to the book', () => {
@@ -136,6 +148,9 @@ describe('placeCard', () => {
 /** What each page shows. The top band is on every page. */
 const PAGES = {
     home: '',
+    search: `
+        <input id="search-input">
+        <div id="results"><div class="result-item" data-id="old-home-place"></div></div>`,
     lead: `
         <div id="key-pill"></div>
         <button id="edit-song-btn"></button>`,
@@ -164,7 +179,7 @@ function renderPage(name) {
 }
 
 const pageForUrl = (url) => ({
-    [TOUR_ROUTES.lead]: 'lead', [TOUR_ROUTES.editor]: 'editor', [TOUR_ROUTES.tab]: 'tab',
+    [TOUR_ROUTES.search]: 'search', [TOUR_ROUTES.lead]: 'lead', [TOUR_ROUTES.editor]: 'editor', [TOUR_ROUTES.tab]: 'tab',
 }[url] || 'home');
 
 describe('startTour', () => {
@@ -192,56 +207,69 @@ describe('startTour', () => {
     const next = () => card().querySelector('.tour-next').click();
     const back = () => card().querySelector('.tour-back').click();
 
-    it('from the home page: the demo song, the editor, the demo tab, then home on Done', () => {
+    it('from the home page: search, the demo song, the editor, the demo tab, then home on Done', () => {
         renderPage('home');
         const onStep = vi.fn();
         const onClose = vi.fn();
         startTour({ navigate, onStep, onClose });
 
-        expect(navigate).toHaveBeenLastCalledWith(TOUR_ROUTES.lead);
-        expect(card().querySelector('.tour-label').textContent).toMatch(/Tour\s+1 of 9/);
-        next(); next();                         // lists, edit: same page
+        expect(navigate).toHaveBeenLastCalledWith(TOUR_ROUTES.search);
+        expect(card().querySelector('.tour-label').textContent).toMatch(/Tour\s+1 of 11/);
+        next();                                 // find: same page
         expect(navigate).toHaveBeenCalledTimes(1);
+        next();                                 // key: the song the demo found
+        expect(navigate).toHaveBeenLastCalledWith(TOUR_ROUTES.lead);
+        next(); next();                         // lists, edit: same page
+        expect(navigate).toHaveBeenCalledTimes(2);
         next();                                 // write: the Add Song editor
         expect(navigate).toHaveBeenLastCalledWith(TOUR_ROUTES.editor);
         next(); next();                         // sections, chords: same page
-        expect(navigate).toHaveBeenCalledTimes(2);
+        expect(navigate).toHaveBeenCalledTimes(3);
         next();                                 // play
         expect(navigate).toHaveBeenLastCalledWith(TOUR_ROUTES.tab);
         next();                                 // tab-edit
         next();                                 // tef: the page itself is the target
-        expect(navigate).toHaveBeenCalledTimes(3);
+        expect(navigate).toHaveBeenCalledTimes(4);
         expect(document.querySelector('.tour-ring').classList.contains('tour-ring-zone')).toBe(true);
         expect(card().querySelector('.tour-next').textContent).toBe('Done');
         next();                                 // Done
         expect(navigate).toHaveBeenLastCalledWith('/');
-        expect(onClose).toHaveBeenCalledWith({ finished: true, step: TOUR_STEPS[8], index: 8 });
+        expect(onClose).toHaveBeenCalledWith({ finished: true, step: TOUR_STEPS[10], index: 10 });
         expect(onStep.mock.calls.map(([s]) => s.id)).toEqual(TOUR_STEPS.map(s => s.id));
         expect(card()).toBeNull();
         expect(document.querySelector('.tour-ring')).toBeNull();
     });
 
-    it("on a song page: the song-page steps use the reader's own song", () => {
+    it("on a song page: the tour still searches and shows the demo song, and Done goes back to the reader's song", () => {
         history.replaceState(null, '', '/songs/salty-dog-blues/');
         renderPage('lead');
         startTour({ navigate });
-        next(); next();                         // key, lists, edit — no navigation
-        expect(navigate).not.toHaveBeenCalled();
-        next(); next(); next();                 // the editor demo
-        next(); next(); next();                 // play, tab-edit, tef
+        expect(navigate).toHaveBeenLastCalledWith(TOUR_ROUTES.search);
+        next(); next();                         // find, then key: the demo song
+        expect(navigate).toHaveBeenLastCalledWith(TOUR_ROUTES.lead);
+        for (let i = 0; i < 8; i++) next();     // lists … tef
         next();                                 // Done: back to their song
         expect(navigate).toHaveBeenLastCalledWith('/songs/salty-dog-blues/');
     });
 
-    it('Back returns through the editor to the song', () => {
-        history.replaceState(null, '', '/songs/salty-dog-blues/');
-        renderPage('lead');
+    it("on a tab page: the tab steps use the reader's own tab", () => {
+        history.replaceState(null, '', '/#work/salt-creek/banjo');
+        renderPage('tab');
         startTour({ navigate });
-        for (let i = 0; i < 6; i++) next();     // play → the demo tab
+        for (let i = 0; i < 8; i++) next();     // play
+        expect(navigate).toHaveBeenLastCalledWith('/#work/salt-creek/banjo');
+    });
+
+    it('Back returns through the editor to the song', () => {
+        renderPage('home');
+        startTour({ navigate });
+        for (let i = 0; i < 8; i++) next();     // play → the demo tab
         back();                                 // chords: the editor
         expect(navigate).toHaveBeenLastCalledWith(TOUR_ROUTES.editor);
-        back(); back(); back();                 // edit: back to their song
-        expect(navigate).toHaveBeenLastCalledWith('/songs/salty-dog-blues/');
+        back(); back(); back();                 // edit: back to the song
+        expect(navigate).toHaveBeenLastCalledWith(TOUR_ROUTES.lead);
+        back(); back(); back();                 // lists, key, then find: the search page
+        expect(navigate).toHaveBeenLastCalledWith(TOUR_ROUTES.search);
     });
 
     it('rings the control and appends the note of a fallback target', () => {
@@ -258,7 +286,7 @@ describe('startTour', () => {
         });
         startTour({ navigate });
         expect(document.querySelector('.tour-ring').classList.contains('hidden')).toBe(false);
-        for (let i = 0; i < 7; i++) next();     // tab-edit
+        for (let i = 0; i < 9; i++) next();     // tab-edit
         expect(card().querySelector('.tour-body').textContent).toContain('On a phone, Edit is under ⚙.');
     });
 
@@ -275,12 +303,72 @@ describe('startTour', () => {
         renderPage('home');
         const onClose = vi.fn();
         startTour({ navigate, onClose });
-        for (let i = 0; i < 8; i++) next();     // tef
+        for (let i = 0; i < 10; i++) next();    // tef
         vi.advanceTimersByTime(5000);
         expect(onClose).not.toHaveBeenCalled();
         const ring = document.querySelector('.tour-ring');
         expect(ring.classList.contains('hidden')).toBe(false);
         expect(ring.classList.contains('tour-ping')).toBe(false);   // the last step's ripple stopped
+    });
+
+    // --- the search demo (what it looks like on the real page: e2e/tour.spec.js)
+
+    const words = SEARCH_DEMO_QUERY.split(' ');
+    const searchHooks = () => ({ fill: vi.fn(), run: vi.fn() });
+
+    it('the search demo types the line, searching at each word, then rings the top result', async () => {
+        renderPage('home');
+        Element.prototype.getBoundingClientRect.mockImplementation(function () {
+            if (this.closest('.hidden')) return { left: 0, top: 0, width: 0, height: 0, right: 0, bottom: 0 };
+            if (this.matches('.result-item')) return { left: 100, top: 200, width: 300, height: 40, right: 400, bottom: 240 };
+            return { left: 10, top: 10, width: 40, height: 20, right: 50, bottom: 30 };
+        });
+        const search = searchHooks();
+        startTour({ navigate, search });
+        await vi.advanceTimersByTimeAsync(3000);
+        expect(search.fill).not.toHaveBeenCalled();     // the first card only talks
+        next();                                         // find
+        await vi.advanceTimersByTimeAsync(5000);
+        expect(search.run.mock.calls.map(([text]) => text))
+            .toEqual(words.map((_, i) => words.slice(0, i + 1).join(' ')));
+        expect(search.fill).toHaveBeenLastCalledWith(SEARCH_DEMO_QUERY);
+        expect(document.querySelector('.tour-ring').style.left).toBe('96px');   // the result, not the box
+    });
+
+    it('stepping on stops the search demo where it is', async () => {
+        renderPage('home');
+        const search = searchHooks();
+        startTour({ navigate, search });
+        next();                                         // find
+        await vi.advanceTimersByTimeAsync(300);
+        next();                                         // key
+        const typed = search.fill.mock.calls.length;
+        await vi.advanceTimersByTimeAsync(5000);
+        expect(search.fill.mock.calls.length).toBe(typed);
+        expect(search.run).not.toHaveBeenCalledWith(SEARCH_DEMO_QUERY);
+    });
+
+    it('under reduced motion the search demo runs the whole line at once', async () => {
+        window.matchMedia = vi.fn(() => ({ matches: true }));
+        try {
+            renderPage('home');
+            const search = searchHooks();
+            startTour({ navigate, search });
+            next();
+            await vi.advanceTimersByTimeAsync(100);
+            expect(search.fill).not.toHaveBeenCalled();
+            expect(search.run.mock.calls).toEqual([[SEARCH_DEMO_QUERY]]);
+        } finally {
+            delete window.matchMedia;
+        }
+    });
+
+    it('without search hooks the search demo shows its card and plays nothing', async () => {
+        renderPage('home');
+        startTour({ navigate });
+        next();
+        await vi.advanceTimersByTimeAsync(5000);
+        expect(card().querySelector('.tour-title').textContent).toBe('Find it by the words');
     });
 
     // --- the editor demo's lifecycle (what it does in the editor: e2e/tour.spec.js)
@@ -342,7 +430,7 @@ describe('startTour', () => {
 
         renderPage('home');
         const other = fakeEditor();
-        startTour({ navigate, editor: other });   // the real steps: step 1 is on a song page
+        startTour({ navigate, editor: other });   // the real steps: step 1 is on the search page
         card().querySelector('.tour-close').click();
         expect(other.reset).not.toHaveBeenCalled();
     });

@@ -18,7 +18,7 @@ import { expect } from '@playwright/test';
 export async function gotoSearch(page) {
     await page.goto('/#search');
     await page.waitForSelector('#search-input');
-    await expect(page.locator('#search-stats')).toContainText(/[1-9][\d,]*\s+songs/, { timeout: 20000 });
+    await expect(page.locator('#search-stats')).toContainText(/[1-9][\d,]*\s+songs?\b/, { timeout: 20000 });
 }
 
 /** Type a query (fires input events) and wait for results. */

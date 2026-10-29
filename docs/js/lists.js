@@ -14,7 +14,7 @@ import {
     subscribe, currentView, corpusLoadFailed,
     focusedListId, setFocusedListId
 } from './state.js';
-import { escapeHtml, generateLocalId, parseItemRef } from './utils.js';
+import { escapeHtml, songCount, generateLocalId, parseItemRef } from './utils.js';
 import { openAddSongPicker } from './add-song-picker.js';
 import { showRandomSongs, hideBatchOperationsBar } from './search-core.js';
 import { trackListAction } from './analytics.js';
@@ -2631,7 +2631,7 @@ export function renderListsModal() {
         div.innerHTML = `
             <span class="list-item-icon">&#9776;</span>
             <span class="list-item-name">${escapeHtml(list.name)}</span>
-            <span class="list-item-count">${list.songs.length} songs</span>
+            <span class="list-item-count">${songCount(list.songs.length)}</span>
             <div class="list-item-actions">
                 <button class="list-item-btn rename-list-btn" data-list-id="${list.id}">Rename</button>
                 <button class="list-item-btn danger delete-list-btn" data-list-id="${list.id}">Delete</button>
