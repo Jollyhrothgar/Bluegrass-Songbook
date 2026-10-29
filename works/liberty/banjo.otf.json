@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Liberty",
     "time_signature": "4/4",
@@ -14,28 +14,32 @@
       "instrument": "5-string-banjo",
       "tuning": ["E4", "C#4", "A3", "E3", "A4"],
       "capo": 2,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     },
     {
       "id": "guitar",
       "instrument": "6-string-guitar",
       "tuning": ["E4", "B3", "G3", "D3", "A2", "E2"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "fff"
     },
     {
       "id": "mandolin",
       "instrument": "mandolin",
       "tuning": ["E5", "A4", "D4", "G3"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "fff"
     },
     {
       "id": "bass",
       "instrument": "upright-bass",
       "tuning": ["G2", "D2", "A1", "E1"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     },
     {
       "id": "percussion",
@@ -43,6 +47,7 @@
       "tuning": [],
       "capo": 0,
       "role": "percussion",
+      "dyn": "f",
       "percussion": true,
       "lines": 5
     }
@@ -609,14 +614,14 @@
       {
         "measure": 5,
         "events": [
-          {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 480}]},
+          {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 480, "dyn": "fff"}]},
           {"tick": 960, "notes": [{"s": 2, "f": 0, "dur": 480}]}
         ]
       },
       {
         "measure": 6,
         "events": [
-          {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 480}]},
+          {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 480, "dyn": "fff"}]},
           {"tick": 960, "notes": [{"s": 2, "f": 0, "dur": 480}]}
         ]
       },
@@ -637,8 +642,8 @@
       {
         "measure": 9,
         "events": [
-          {"tick": 0, "notes": [{"s": 1, "f": 2, "dur": 480}]},
-          {"tick": 960, "notes": [{"s": 2, "f": 2, "dur": 480}]}
+          {"tick": 0, "notes": [{"s": 1, "f": 2, "dur": 480, "dyn": "fff"}]},
+          {"tick": 960, "notes": [{"s": 2, "f": 2, "dur": 480, "dyn": "fff"}]}
         ]
       },
       {
@@ -679,8 +684,8 @@
       {
         "measure": 15,
         "events": [
-          {"tick": 0, "notes": [{"s": 1, "f": 2, "dur": 480}]},
-          {"tick": 960, "notes": [{"s": 2, "f": 2, "dur": 480}]}
+          {"tick": 0, "notes": [{"s": 1, "f": 2, "dur": 480, "dyn": "fff"}]},
+          {"tick": 960, "notes": [{"s": 2, "f": 2, "dur": 480, "dyn": "fff"}]}
         ]
       },
       {
@@ -700,8 +705,8 @@
       {
         "measure": 18,
         "events": [
-          {"tick": 0, "notes": [{"s": 1, "f": 2, "dur": 480}]},
-          {"tick": 960, "notes": [{"s": 2, "f": 2, "dur": 480}]}
+          {"tick": 0, "notes": [{"s": 1, "f": 2, "dur": 480, "dyn": "fff"}]},
+          {"tick": 960, "notes": [{"s": 2, "f": 2, "dur": 480, "dyn": "fff"}]}
         ]
       },
       {

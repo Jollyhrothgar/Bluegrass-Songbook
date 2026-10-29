@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Eighth of January",
     "time_signature": "4/4",
@@ -16,14 +16,16 @@
       "instrument": "5-string-banjo",
       "tuning": ["E4", "D4", "A3", "D3", "A4"],
       "capo": 2,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     },
     {
       "id": "guitar",
       "instrument": "6-string-guitar",
       "tuning": ["E4", "B3", "G3", "D3", "A2", "E2"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -390,10 +392,28 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 0, "text": "D"},
+    {"measure": 2, "tick": 480, "text": "G"},
+    {"measure": 3, "tick": 480, "text": "A"},
+    {"measure": 4, "tick": 480, "text": "D"},
+    {"measure": 6, "tick": 480, "text": "G"},
+    {"measure": 7, "tick": 480, "text": "A"},
+    {"measure": 8, "tick": 480, "text": "D"},
+    {"measure": 9, "tick": 0, "text": "D"},
+    {"measure": 12, "tick": 240, "text": "A"},
+    {"measure": 12, "tick": 1440, "text": "D"},
+    {"measure": 16, "tick": 240, "text": "A"},
+    {"measure": 16, "tick": 1440, "text": "D"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 16},
     {"from_measure": 1, "to_measure": 15},
     {"from_measure": 17, "to_measure": 17}
+  ],
+  "measure_marks": [
+    {"measure": 1, "repeat_start": true, "raw": 64},
+    {"measure": 8, "end_bar": true, "raw": 8}
   ],
   "x_source": {
     "type": "banjo-hangout",

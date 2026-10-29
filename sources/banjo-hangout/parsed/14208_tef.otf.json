@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Fire on the Mountain",
     "time_signature": "2/2",
@@ -21,7 +21,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["E4", "C#4", "A3", "E3", "A4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "fff"
     }
   ],
   "notation": {
@@ -225,6 +226,9 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 17, "tick": 240, "text": "-P"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 9},
     {"from_measure": 1, "to_measure": 18},

@@ -54,7 +54,9 @@ Decoded so far:
 | Type | Meaning | Parsed? |
 |------|---------|---------|
 | 0x39 | **Free-text anchor**: byte 5 = 0-based index into the text table at header ptr 84; location gives (measure, slot, string row) | Yes → OTF `annotations: [{measure, tick, text}]` (byte 7 = signed y-offset, ignored) |
-| 0x35 | Chord-diagram anchor (byte 5 = chord index) | Not yet (chord NAME usually also appears as a 0x39 text) |
+| 0x35 | **Chord-diagram anchor**, compared on the FULL type byte (0x75 = scale diagram, 0xf5 = special character): record bytes 5-6 = u16 index into the chord table (header 88), byte 7 = signed dy, byte 8 = signed dx; the owning track is the one whose strings contain the string row | Yes → OTF `chords[]` + `chord_diagrams[]` (V2: fret byte 0x1c/0x5c/0x9c, byte 3 = chord index; dx/dy not decoded) |
+
+**Chord record** (36 bytes V3, 32 V2): bytes 0-13 one per string, string 1 first (0xff not played, low 5 bits ABSOLUTE fret, high 3 bits 0 plain / 2-5 = finger 1-4); 14-30 NUL-terminated name; 31 first fret shown (signed; 1 on every corpus record that has no position label); V3 byte 32 = the diagram's string count (0 = the owning track's; 0 on every corpus record); 33 unknown (0). No barre is stored. **V2 table**: u16 count at file offset 236, 32-byte records right after the free-text table (reading list, then the u16-count-at-228 text entries); all 51 V2 files with a table read this way. A table that doesn't parse (a name byte below 0x20, no NUL, past EOF) drops its diagrams and is reported as `x_source.skipped.chord_diagrams`. Corpus (decode session, reproduced by `tests/parser/test_tef_chord_diagrams.py`): 380 V3 anchors in 17 files, 1,558 V2 in 40; 19 of 21 scorable diagrams spell their name with the owning track's tuning; 47 referenced records are name-only; 35 records are never referenced.
 
 All of the above oracle-verified against TablEdit's own MusicXML export
 (`<words>`, `<pluck>`, `<fingering>`, `<harmony>`): 35/35 text placements and
@@ -73,8 +75,14 @@ byte patterns. The census that counts them is
   11 tremolo, 12 bend, 13 bend and release, 14 roll, 15 dead note. Bits 4-5
   are the voice (0x20 upper, 0x30 lower). Bits 6-7 are the enharmonic
   spelling.
-- **Dynamics** (byte 5 / V2 byte 3, bits 5-7): ppp, pp, p, mp, mf, f, ff,
-  and 7 = tie.
+- **Dynamics** (byte 5 / V2 byte 3, bits 5-7; the 4-byte V2 variant uses
+  byte 3 too). **Code 0 is the loudest**: 0 fff, 1 ff, 2 f, 3 mf, 4 mp,
+  5 p, 6 pp, 7 = tie. MIDI velocity is `127 - 16 * code` (f = 95), measured
+  from TablEdit's Rich-MIDI export; the palette handler stores `0x27 - tag`.
+  There is no ppp. Code 2 (f) is the most common level, not p. OTF:
+  `tracks[].dyn` is the track's most common non-tie level, `note.dyn` only
+  where it differs (`dynamic_code` / `assign_dynamics` in `otf.py`, the same
+  names in camelCase in `otf.js`).
 - **Note attribute** (V3 byte 8; V2 effect2 under fret flag 0x80): the low
   nibble is 1 ringing, 2 slap, 3 rasgueado, 4 ghost, 5/6 tremolo bar,
   7 staccato, 8/9 fade. The high nibble is a second effect (1 h, 2 p,
@@ -120,7 +128,7 @@ useful for triage, but never derive duration, dynamics or ties from the
 | 0x01 | Hammer-on or pull-off (check fret direction) |
 | 0x02 | Unknown (possibly slide related) |
 | 0x03 | Slide (bits 0x01 + 0x02 both set) |
-| 0x04 | Bend (1/4 step) - NOT legato, ignore. **This bit is noise** — see "Bends/chokes" in `SKILL.md` |
+| 0x04 | Bend (1/4 step) - NOT legato, ignore. **This bit is noise** — see "Bends" in `SKILL.md` |
 
 `has_legato_effect` masks `effect1 & 0x03`; `is_slide_effect` requires
 `effect1 == 0x03`. Ties are NOT in effect1 — see "Tie Detection" below.
@@ -149,7 +157,7 @@ def is_tied_note(evt):
 ```
 
 The same sentinel is the "connect" bit that bend/choke detection keys on —
-see "Bends/chokes" (`bend_destination_keys`) in `SKILL.md`.
+see "Bends" (`bend_target_keys`, and `fret_changed_tie_keys` for the old misread) in `SKILL.md`.
 
 ## Slide vs Hammer-on Detection
 

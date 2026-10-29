@@ -9,7 +9,7 @@
 // Unknown keys (only inside x_source) keep their order after the known ones;
 // keys starting with `_` are runtime view caches and are dropped. One line
 // each: an event, an annotation, a reading_list entry, a
-// time_signature_changes entry, and any array whose items are all scalars.
+// time_signature_changes entry, a measure_marks / chords / chord_diagrams entry, and any array whose items are all scalars.
 //
 // Not in the boot graph: it is reached only from the tab editor
 // (otf-editor/actions.js downloadOTF), so it is listed in lazy-modules.js.
@@ -17,18 +17,22 @@
 // drafts) deliberately do not use it.
 
 export const KEY_ORDER = {
-    doc: ['otf_version', 'metadata', 'timing', 'tracks', 'notation', 'annotations', 'reading_list', 'x_source'],
+    doc: ['otf_version', 'metadata', 'timing', 'tracks', 'notation', 'annotations', 'reading_list',
+        'measure_marks', 'chords', 'chord_diagrams', 'x_source'],
     metadata: ['title', 'time_signature', 'tempo', 'key', 'composer', 'tab_by', 'time_signature_changes'],
     timing: ['ticks_per_beat'],
-    track: ['id', 'instrument', 'tuning', 'capo', 'role', 'percussion', 'lines'],
+    track: ['id', 'instrument', 'tuning', 'capo', 'role', 'dyn', 'percussion', 'lines'],
     measure: ['measure', 'events'],
     event: ['tick', 'notes'],
-    note: ['s', 'f', 'dur', 'tie', 'tech', 'fx', 'grace', 'finger', 'lh'],
+    note: ['s', 'f', 'dur', 'tie', 'tech', 'fx', 'grace', 'finger', 'lh', 'dyn'],
     grace: ['f', 'kind'],
     annotation: ['measure', 'tick', 'text'],
     reading: ['from_measure', 'to_measure', 'name'],
     tab_by: ['name', 'url'],
     tsc: ['measure', 'time_signature'],
+    mark: ['measure', 'repeat_start', 'repeat_end', 'ending', 'jump', 'end_bar', 'raw'],
+    chord: ['name', 'frets', 'fingers', 'first_fret'],
+    diagram: ['measure', 'tick', 'track', 'chord', 'dx', 'dy'],
 };
 
 const CHILD = {
@@ -38,13 +42,16 @@ const CHILD = {
     'doc.notation': 'notation',
     'doc.annotations': 'annotation',
     'doc.reading_list': 'reading',
+    'doc.measure_marks': 'mark',
+    'doc.chords': 'chord',
+    'doc.chord_diagrams': 'diagram',
     'metadata.time_signature_changes': 'tsc',
     'metadata.tab_by': 'tab_by',
     'measure.events': 'event',
     'event.notes': 'note',
     'note.grace': 'grace',
 };
-const INLINE = new Set(['event', 'annotation', 'reading', 'tsc']);
+const INLINE = new Set(['event', 'annotation', 'reading', 'tsc', 'mark', 'chord', 'diagram']);
 
 const childCtx = (ctx, key) => (ctx === 'notation' ? 'measure' : CHILD[`${ctx}.${key}`]);
 const isScalar = (v) => v === null || typeof v !== 'object';

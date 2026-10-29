@@ -80,6 +80,7 @@ class TEFConverter:
             # ATTACHMENT id in a different namespace, so a filename regex can
             # never confirm the pairing. build_works_index's provenance gate
             # compares work.yaml's source_id against this field.
+            skipped = (otf_dict.get('x_source') or {}).get('skipped')  # G15e
             otf_dict['x_source'] = {
                 'type': self.site.source,
                 'source_id': tab.id.split('_')[0],
@@ -88,6 +89,8 @@ class TEFConverter:
                 'author': tab.author,
                 'converted_at': datetime.now().isoformat(),
             }
+            if skipped:
+                otf_dict['x_source']['skipped'] = skipped
 
             # Override title from tab metadata if available
             if tab.title:
@@ -185,11 +188,14 @@ def convert_single(tef_path: Path, output_path: Path = None) -> Optional[Path]:
             print(f"Error converting {tef_path}: {error}")
             return None
 
+        skipped = (otf_dict.get('x_source') or {}).get('skipped')  # G15e
         otf_dict['x_source'] = {
             'type': 'local',
             'source_file': tef_path.name,
             'converted_at': datetime.now().isoformat(),
         }
+        if skipped:
+            otf_dict['x_source']['skipped'] = skipped
 
         output_path.write_text(_otf_format().serialize(otf_dict), encoding='utf-8')
         return output_path

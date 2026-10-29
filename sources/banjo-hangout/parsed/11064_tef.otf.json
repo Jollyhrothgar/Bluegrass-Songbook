@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Reuben",
     "time_signature": "4/4",
@@ -15,28 +15,32 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "A3", "F#3", "D3", "F#4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     },
     {
       "id": "guitar",
       "instrument": "6-string-guitar",
       "tuning": ["E4", "B3", "G3", "D3", "A2", "E2"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "mf"
     },
     {
       "id": "mandolin",
       "instrument": "mandolin",
       "tuning": ["E5", "A4", "D4", "G3"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     },
     {
       "id": "bass",
       "instrument": "upright-bass",
       "tuning": ["G2", "D2", "A1", "E1"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -469,7 +473,7 @@
       {
         "measure": 2,
         "events": [
-          {"tick": 0, "notes": [{"s": 2, "f": 3, "dur": 1440}, {"s": 3, "f": 2, "dur": 1440}, {"s": 4, "f": 0, "dur": 1440}]},
+          {"tick": 0, "notes": [{"s": 2, "f": 3, "dur": 1440, "dyn": "ff"}, {"s": 3, "f": 2, "dur": 1440, "dyn": "ff"}, {"s": 4, "f": 0, "dur": 1440, "dyn": "ff"}]},
           {"tick": 1440, "notes": [{"s": 2, "f": 3, "dur": 480}, {"s": 3, "f": 2, "dur": 480}]}
         ]
       },
@@ -941,7 +945,7 @@
       {
         "measure": 33,
         "events": [
-          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 1920}, {"s": 4, "f": 2, "dur": 1920}]}
+          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 1920, "dyn": "mf"}, {"s": 4, "f": 2, "dur": 1920, "dyn": "mf"}]}
         ]
       }
     ],

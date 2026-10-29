@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Cumberland Gap",
     "time_signature": "2/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "A3", "E3", "B2", "F#4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -110,6 +111,46 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 240, "text": "T"},
+    {"measure": 1, "tick": 720, "text": "P"},
+    {"measure": 1, "tick": 0, "text": "T"},
+    {"measure": 1, "tick": 360, "text": "I"},
+    {"measure": 1, "tick": 480, "text": "T"},
+    {"measure": 2, "tick": 720, "text": "T"},
+    {"measure": 2, "tick": 0, "text": "T"},
+    {"measure": 2, "tick": 240, "text": "T"},
+    {"measure": 2, "tick": 360, "text": "I"},
+    {"measure": 2, "tick": 480, "text": "T"},
+    {"measure": 3, "tick": 0, "text": "I"},
+    {"measure": 3, "tick": 240, "text": "T"},
+    {"measure": 3, "tick": 480, "text": "T"},
+    {"measure": 3, "tick": 720, "text": "T"},
+    {"measure": 3, "tick": 840, "text": "I"},
+    {"measure": 4, "tick": 240, "text": "T"},
+    {"measure": 4, "tick": 720, "text": "P"},
+    {"measure": 4, "tick": 0, "text": "T"},
+    {"measure": 4, "tick": 360, "text": "I"},
+    {"measure": 4, "tick": 480, "text": "T"},
+    {"measure": 5, "tick": 240, "text": "T"},
+    {"measure": 5, "tick": 720, "text": "T"},
+    {"measure": 5, "tick": 0, "text": "I"},
+    {"measure": 5, "tick": 480, "text": "I"},
+    {"measure": 6, "tick": 0, "text": "I"},
+    {"measure": 6, "tick": 240, "text": "I"},
+    {"measure": 6, "tick": 480, "text": "T"},
+    {"measure": 6, "tick": 720, "text": "I"},
+    {"measure": 7, "tick": 0, "text": "T"},
+    {"measure": 7, "tick": 240, "text": "T"},
+    {"measure": 7, "tick": 480, "text": "T"},
+    {"measure": 7, "tick": 720, "text": "T"},
+    {"measure": 7, "tick": 840, "text": "I"},
+    {"measure": 8, "tick": 240, "text": "T"},
+    {"measure": 8, "tick": 720, "text": "P"},
+    {"measure": 8, "tick": 0, "text": "T"},
+    {"measure": 8, "tick": 360, "text": "I"},
+    {"measure": 8, "tick": 480, "text": "T"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 4},
     {"from_measure": 1, "to_measure": 4},

@@ -5,10 +5,12 @@ Copied from TablEdit_Reverse project.
 
 import json
 import sys
+from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
+from .skipped import SKIPPED_KEYS
 from .reader import (TEFFile, TEFNoteEvent, TEFInstrument, TRIPLET_DURATION_CODES,
                      V3_UNITS_PER_WHOLE, decode_duration_code)
 
@@ -66,6 +68,15 @@ def _otf_format():
     return otf_format
 
 
+# The shared, dependency-free OTF helpers (scripts/lib/otf_format.py), under the
+# names the importers use: OTF_VERSION, DYN_LEVELS (loudest first),
+# decode_mark_raw(raw), ensure_version_at_least(doc, '1.2').
+OTF_VERSION = _otf_format().OTF_VERSION
+DYN_LEVELS = _otf_format().DYN_LEVELS
+decode_mark_raw = _otf_format().decode_mark_raw
+ensure_version_at_least = _otf_format().ensure_version_at_least
+
+
 @dataclass
 class OTFNote:
     """A single note in OTF format."""
@@ -78,6 +89,7 @@ class OTFNote:
     tie: bool = False          # True if tied to previous note (no re-articulation)
     fx: list[str] | None = None    # TablEdit per-note effects (FX_ORDER)
     grace: dict | None = None      # {"f": fret, "kind"?: GRACE_KINDS}
+    dyn: str | None = None         # DYN_LEVELS entry, only when != the track's
 
 
 @dataclass
@@ -108,6 +120,7 @@ class OTFTrack:
     # `lines` carries the staff-line count `tuning` would otherwise imply.
     percussion: bool = False
     lines: int = 0
+    dyn: str | None = None   # most common note level (DYN_LEVELS); None = f
 
 
 @dataclass
@@ -150,13 +163,21 @@ class OTFAnnotation:
 @dataclass
 class OTFDocument:
     """Complete OTF document."""
-    otf_version: str = "1.1"
+    otf_version: str = OTF_VERSION
     metadata: OTFMetadata = field(default_factory=OTFMetadata)
     timing: OTFTiming = field(default_factory=OTFTiming)
     tracks: list[OTFTrack] = field(default_factory=list)
     notation: dict[str, list[OTFMeasure]] = field(default_factory=dict)
     annotations: list[OTFAnnotation] = field(default_factory=list)
     reading_list: list[OTFReadingListEntry] = field(default_factory=list)
+    # Repeat signs (schema 1.2): [{measure, ...decode_mark_raw(raw), raw}]
+    measure_marks: list[dict] = field(default_factory=list)
+    # G15d3 chord diagrams: the table (dicts in OTF shape) and the anchors.
+    chords: list[dict[str, Any]] = field(default_factory=list)
+    chord_diagrams: list[dict[str, Any]] = field(default_factory=list)
+    # G15e: what the .tef held that OTF does not keep ({key: count}); written
+    # as x_source.skipped, last in the document, only when non-empty.
+    skipped: dict[str, int] = field(default_factory=dict)
 
     def to_dict(self) -> dict[str, Any]:
         """Convert to dictionary for YAML/JSON serialization."""
@@ -191,6 +212,8 @@ class OTFDocument:
                 "capo": track.capo,
                 "role": track.role,
             }
+            if track.dyn:
+                t["dyn"] = track.dyn
             # Emitted only for drum tracks, so pitched tabs stay byte-identical
             if track.percussion:
                 t["percussion"] = True
@@ -220,6 +243,8 @@ class OTFDocument:
                             n["fx"] = list(note.fx)
                         if note.grace:
                             n["grace"] = dict(note.grace)
+                        if note.dyn:
+                            n["dyn"] = note.dyn
                         e["notes"].append(n)
                     m["events"].append(e)
                 result["notation"][track_id].append(m)
@@ -239,6 +264,15 @@ class OTFDocument:
                 if e.name:
                     entry["name"] = e.name
                 result["reading_list"].append(entry)
+
+        if self.measure_marks:
+            result["measure_marks"] = [dict(m) for m in self.measure_marks]
+        if self.chords:
+            result["chords"] = [dict(c) for c in self.chords]
+        if self.chord_diagrams:
+            result["chord_diagrams"] = [dict(d) for d in self.chord_diagrams]
+        if self.skipped:
+            result["x_source"] = {"skipped": dict(self.skipped)}
 
         return result
 
@@ -332,8 +366,8 @@ def is_tied_note(event: TEFNoteEvent) -> bool:
     """Check if this note is tied to the previous note (same pitch, extends duration).
 
     V2 byte3 layout (oracle-derived): bits 0-4 duration code, bits 5-7
-    dynamic. Dynamics 0-5 are real volume levels (6 unused in the
-    corpus); dynamic 7 is the TIE sentinel. The old `byte3 & 0x80` rule
+    dynamic. Dynamics 0-6 are real volume levels (0 fff loudest .. 6 pp,
+    see dynamic_code); dynamic 7 is the TIE sentinel. The old `byte3 & 0x80` rule
     also caught dynamics 4 and 5 (0x80-0xBF) and silently dropped those
     notes as phantom ties (21690 m4, 21999 m10, 22446, 23439 — their
     oracle exports show plain notes, while every true XML tie in the
@@ -353,13 +387,51 @@ def is_tied_note(event: TEFNoteEvent) -> bool:
     return False
 
 
+def dynamic_code(event: TEFNoteEvent) -> int | None:
+    """The note's dynamic code 0-6 (0 = fff, the LOUDEST, .. 6 = pp), or None
+    for a tied note (code 7) or a record with no duration byte.
+
+    Bits 5-7 of V3 cell byte 5 / V2 byte 3 (the 4-byte V2 sub-variant keeps
+    the dynamic in byte 3 too). Measured from TablEdit's Rich-MIDI export:
+    velocity = 127 - 16 * code, so f (code 2) is 95. Code 2 is the most
+    common level in most files (66 of 88 V3 files). DYN_LEVELS[code] is the
+    OTF name; there is no ppp."""
+    raw = event.raw_data
+    if not raw or len(raw) < 4:
+        return None
+    byte = raw[5] if len(raw) >= 12 else raw[3]
+    code = (byte >> 5) & 0x07
+    return None if code == 7 else code
+
+
+def assign_dynamics(doc: OTFDocument) -> None:
+    """Collapse per-note levels into tracks[].dyn plus exceptions.
+
+    On entry every non-tie note carries its own level in note.dyn; on exit
+    tracks[].dyn is the most common level (the louder one on a tie) and
+    note.dyn survives only where it differs. Tied notes never had one."""
+    for track in doc.tracks:
+        notes = [n for m in doc.notation.get(track.id, [])
+                 for e in m.events for n in e.notes if n.dyn]
+        if not notes:
+            continue
+        counts = Counter(n.dyn for n in notes)
+        best = min(counts, key=lambda lv: (-counts[lv], DYN_LEVELS.index(lv)))
+        track.dyn = best
+        for n in notes:
+            if n.dyn == best:
+                n.dyn = None
+
+
 # TablEdit's per-note effects, in its own vocabulary (fix-it A15). The note
 # effect enum is V3 byte 6 / V2 effect1 & 0x0f (string table at 0x1000f57e0);
-# 1-3 are transitions (tech h/p/slide), 12 is the bend the connect-bit
-# heuristic already marks 'b', 15 is the dead note 'x'. The rest are `fx`.
+# 1-3 are transitions (tech h/p/slide), 15 is the dead note 'x'. The rest are
+# `fx`; 12 (bend: up and hold) and 13 (bend-release: up and back) bend into
+# the next note on the string (see bend_target_keys, G15d2).
 EFFECT_FX = {4: "choke", 5: "brush", 6: "harmonic", 7: "artificial-harmonic",
              8: "muted", 9: "tap", 10: "vibrato", 11: "tremolo",
-             13: "bend-release", 14: "roll"}
+             12: "bend", 13: "bend-release", 14: "roll"}
+BEND_EFFECTS = (12, 13)
 # Attribute byte (V3 byte 8; V2 effect2 under fret-byte flag 0x80), read by
 # FUN_10001f594: low nibble = attribute, high nibble = a second effect.
 ATTRIBUTE_FX = {1: "let-ring", 2: "slap", 4: "ghost", 7: "staccato"}
@@ -371,7 +443,7 @@ V2_LAYOUT_CODES = {0x0b, 0x0c, 0x0d, 0x0e, 0xc0, 0xd0}
 # Canonical order of `fx`: the order the vocabulary is listed in the format doc.
 FX_ORDER = ["brush", "roll", "choke", "ghost", "staccato", "let-ring", "muted",
             "harmonic", "artificial-harmonic", "tap", "vibrato", "tremolo",
-            "bend-release", "slap"]
+            "bend", "bend-release", "slap"]
 GRACE_KINDS = [None, "hp", "slide", "bend", "mordent", "double", "gruppetto", "trill"]
 
 
@@ -653,21 +725,65 @@ def compute_articulations_v3(
     return articulations
 
 
-def bend_destination_keys(note_events, articulations):
-    """Keys (track, position, string) of BEND/CHOKE notes.
+def _effect_code(event: TEFNoteEvent) -> int:
+    """The note effect enum (V3 byte 6 / V2 effect1) & 0x0f; 0 if unreadable."""
+    raw = event.raw_data or b""
+    if len(raw) >= 12:
+        return raw[6] & 0x0f
+    if len(raw) >= 6:
+        return raw[4] & 0x0f
+    return 0
 
-    The tie sentinel (V2 dynamic-7 / V3 byte-5 bit-7) actually means "connected
-    to the previous note on this string." That renders as a TIE only when the
-    fret is unchanged (same pitch). When the fret DIFFERS and the note carries no
-    hammer/pull/slide (those already own the connection — e.g. 25635 m74's slide
-    destination, left untouched here), it's a bend/choke: TablEdit's own display
-    shows a bend, though its MusicXML exports it lossily as a tie-stop. We surface
-    it as a 'b' technique instead of a phantom tie.
 
-    Corpus-safe: zero notes in the 40+ file corpus meet all three conditions
-    (connect-bit AND fret change AND no h/p/slide), so this changes no existing
-    output; it only fixes real bends (e.g. Bill Emerson's "Welcome to New York"
-    m4, str3 fret 3->4). Full +1-semitone playback glide is tracked in #184.
+def bend_target_keys(note_events, articulations):
+    """Keys (track, position, string) of BEND TARGETS (G15d2).
+
+    A note with effect 12 (bend) or 13 (bend-release) bends into the NEXT note
+    on the same string of the same track, tied or not, possibly in a later
+    measure. TablEdit's MIDI builder (FUN_10005d814 -> FUN_10005be90, next
+    same-string note via FUN_10005bcd8) bends by destination pitch - source
+    pitch and does not pick the destination again; almost no destination
+    carries the tie bit. There is no amount field: the amount is
+    target.f - source.f, derived at draw/play time.
+
+    A bend with no later note on its string has no target and is left alone.
+    So is one whose target is already an h/p/slide destination (that tech owns
+    the connection) or sits on the same fret (nothing to bend).
+    """
+    by_track_string: dict = {}
+    for event in note_events:
+        if not event.is_melody:
+            continue
+        sf = event.decode_string_fret()
+        if not sf:
+            continue
+        by_track_string.setdefault((event.track, sf[0]), []).append(
+            (event.position, sf[1], event))
+
+    keys = set()
+    for (track, string), notes in by_track_string.items():
+        notes.sort(key=lambda x: x[0])
+        for i, (position, fret, event) in enumerate(notes[:-1]):
+            if _effect_code(event) not in BEND_EFFECTS:
+                continue
+            next_position, next_fret, _ = notes[i + 1]
+            if next_position == position or next_fret == fret:
+                continue
+            if articulations.get((track, next_position, string)) is not None:
+                continue
+            keys.add((track, next_position, string))
+    return keys
+
+
+def fret_changed_tie_keys(note_events, articulations):
+    """Keys (track, position, string) of notes that carry the tie bit but sit
+    on a different fret than the previous note on their string, with no
+    h/p/slide owning the connection.
+
+    A real tie is the same pitch. These are not ties (the note would go
+    silent), and since G15d2 they are not bends either: a bend is whatever
+    follows an effect-12/13 note (bend_target_keys). They import as plain,
+    re-attacked notes. Corpus: 37 notes in 11 files on 2026-10-29.
     """
     by_track_string: dict = {}
     for event in note_events:
@@ -820,6 +936,133 @@ def normalize_slide_timing(doc: OTFDocument) -> None:
             measure.events.sort(key=lambda e: e.tick)
 
 
+def fold_slide_source_graces(otf_event: OTFEvent, pairs, all_events) -> None:
+    """Fold a slide source that the triplet retime stacked on its target.
+
+    A fiddle slide (3098 m40: f6 eighth-triplet then f7, same string) is two
+    records at different file positions; the triplet retime moves the source
+    onto the target's tick, so one event holds two notes on one string. That
+    is TablEdit's own timing (its MusicXML export stacks them too) but OTF
+    allows one note per string per event. The source becomes the target's
+    slide grace, `grace: {f: <source fret>, kind: 'slide'}`, the same shape a
+    TEF grace-slide imports as, and the standalone source note is dropped.
+    The target's "/" is dropped with it: it only meant "slid in from the
+    previous note", which the grace now says, and left on it would draw a
+    second slide from whatever note precedes the source.
+
+    Narrow on purpose: exactly two notes on the string, the earlier file
+    position being the target's immediate predecessor on that string, the
+    later one carrying a slide, neither already graced or tied. Anything else
+    stays as is (and `duplicate_string` still flags it).
+    """
+    by_string: dict[int, list] = {}
+    for evt, note in pairs:
+        by_string.setdefault(note.s, []).append((evt, note))
+    for string, group in by_string.items():
+        if len(group) != 2:
+            continue
+        (src_evt, src), (tgt_evt, tgt) = sorted(group, key=lambda g: g[0].position)
+        if src_evt.position == tgt_evt.position or tgt.tech not in ("/", "\\"):
+            continue
+        if src.grace or tgt.grace or src.tie or tgt.tie or src.f > 31:
+            continue
+        between = False
+        for e in all_events:
+            if e.track != tgt_evt.track or not (src_evt.position < e.position < tgt_evt.position):
+                continue
+            r = e.decode_string_fret()
+            if r and r[0] == string:
+                between = True
+                break
+        if between:
+            continue
+        tgt.grace = {"f": src.f, "kind": "slide"}
+        tgt.tech = None
+        otf_event.notes.remove(src)
+
+
+def _diagram_track_index(string_counts: list[int], row: int) -> int | None:
+    """Index of the track whose strings contain the cumulative string row."""
+    if not string_counts:
+        return 0
+    for idx, count in enumerate(string_counts):
+        if row < count:
+            return idx
+        row -= count
+    return None
+
+
+def chord_record_to_otf(rec, string_count: int) -> dict[str, Any]:
+    """One chord-table record as an OTF ``chords`` entry.
+
+    ``string_count`` is the length of ``frets`` (the rule is in
+    :func:`chord_diagrams_to_otf`). A record whose strings are all 0xff is
+    name-only: ``{name}``. ``first_fret`` is omitted at 1, TablEdit's
+    default (every corpus record has 1 unless it shows a higher position).
+    """
+    out: dict[str, Any] = {"name": rec.name}
+    if any(b != 0xff for b in rec.strings):
+        raw = rec.strings[:string_count]
+        out["frets"] = [None if b == 0xff else b & 0x1f for b in raw]
+        # high 3 bits: 0 plain dot, 1 special glyph (never seen), 2-5 = finger 1-4
+        fingers = [(b >> 5) - 1 if b != 0xff and 2 <= (b >> 5) <= 5 else None
+                   for b in raw]
+        if any(f is not None for f in fingers):
+            out["fingers"] = fingers
+    if rec.first_fret != 1:
+        out["first_fret"] = rec.first_fret
+    return out
+
+
+def chord_diagrams_to_otf(tef: TEFFile, doc: "OTFDocument",
+                          units_per_measure: int, v3_ticks_per_unit: int) -> None:
+    """Fill ``doc.chords`` / ``doc.chord_diagrams`` (G15d3), and
+    ``doc.skipped['chord_diagrams']`` for diagrams that could not be kept.
+
+    The ``frets`` length of a record (it is not tied to a track in the file):
+    byte 32 when it is non-zero; else the string count of the track of the
+    FIRST diagram (in ``chord_diagrams`` order) that points at it; else, for a
+    record nothing uses, the string count of the file's longest track. Bytes
+    past that length are dropped (TablEdit ignores them; V2 files leave 0x00
+    junk there). The G15f writer inverts it: byte 32 = 0 when ``len(frets)``
+    equals that same count, else ``len(frets)``.
+    """
+    dropped = tef.chord_anchors_dropped
+    table = tef.chord_table or []
+    string_counts = [i.num_strings for i in tef.instruments]
+
+    diagrams = []
+    owner_strings: dict[int, int] = {}
+    for a in tef.chord_anchors:
+        idx = _diagram_track_index(string_counts, a.string_row)
+        if idx is None or idx >= len(doc.tracks):
+            dropped += 1
+            continue
+        if tef.header.is_v2:
+            measure, offset = divmod(a.position, units_per_measure)
+            tick = (offset & ~3) * 15 // 2
+        else:
+            measure, offset = tef.v3_locate(a.position)
+            tick = offset * v3_ticks_per_unit
+        d: dict[str, Any] = {"measure": measure + 1, "tick": tick,
+                             "track": doc.tracks[idx].id, "chord": a.index}
+        if a.dx:
+            d["dx"] = a.dx
+        if a.dy:
+            d["dy"] = a.dy
+        diagrams.append(d)
+        owner_strings.setdefault(a.index, string_counts[idx] if string_counts else 5)
+
+    longest = max(string_counts, default=5)
+    doc.chords = []
+    for i, rec in enumerate(table):
+        n = rec.string_count or owner_strings.get(i) or longest
+        doc.chords.append(chord_record_to_otf(rec, max(1, min(14, n))))
+    doc.chord_diagrams = diagrams
+    if dropped:
+        doc.skipped["chord_diagrams"] = dropped
+
+
 def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
     """Convert a parsed TEF file to OTF format.
 
@@ -970,9 +1213,10 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
     else:
         articulations = compute_articulations_v3(tef.note_events)
 
-    # Bend/choke notes: connect-bit + fret change + no h/p/slide (see
-    # bend_destination_keys). Surfaced as a 'b' technique instead of a tie.
-    bend_keys = bend_destination_keys(tef.note_events, articulations)
+    # Bend targets: the next note on the string after an effect-12/13 note
+    # (see bend_target_keys). Surfaced as a 'b' technique, never a tie.
+    bend_keys = bend_target_keys(tef.note_events, articulations)
+    retie_keys = fret_changed_tie_keys(tef.note_events, articulations)
 
     # Group note events by track and measure.
     #
@@ -1040,7 +1284,21 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
             step = decode_duration_code(code) * 3 // 4
             in_span = tick % span
             if in_span % step == 0:
-                tick = tick - in_span + (in_span * 4) // 3
+                retimed = tick - in_span + (in_span * 4) // 3
+                # Barline guard (G15d5). A note stored in slot 3 of the last
+                # beat would retime onto/past the barline (10676 m7/m8). Per
+                # TablEdit's own MusicXML export (240 divisions/quarter) m7's
+                # note sits at 945, inside the measure, which overflows to
+                # 1025: it is never put on or past the barline. So keep the
+                # stored tick when the retime would leave the measure.
+                if tef.header.is_v2:
+                    measure_ticks = units_per_measure * 15 // 2
+                elif tef.v3_measure_starts and index < len(tef.v3_measure_lengths):
+                    measure_ticks = tef.v3_measure_lengths[index] * V3_TICKS_PER_UNIT
+                else:
+                    measure_ticks = 1920
+                if retimed < measure_ticks:
+                    tick = retimed
 
         if measure not in track_events[track_id]:
             track_events[track_id][measure] = []
@@ -1065,6 +1323,7 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
 
             for tick in sorted(events_by_tick.keys()):
                 otf_event = OTFEvent(tick=tick)
+                note_events_in = []   # (evt, note), for fold_slide_source_graces
 
                 for evt in events_by_tick[tick]:
                     # (An old "rhythm marker" skip dropped notes whose
@@ -1096,11 +1355,13 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
                             tech = 'x'
                         # Check if this note is tied to the previous note
                         tie = is_tied_note(evt)
-                        # ...unless it's really a bend/choke (connect bit but a
-                        # fret change, no h/p/slide): render 'b', not a tie.
+                        # ...unless it's a bend target (the next note after an
+                        # effect-12/13 note): 'b', never a tie or a re-attack.
                         if (evt.track, evt.position, string) in bend_keys:
                             tie = False
                             tech = 'b'
+                        elif (evt.track, evt.position, string) in retie_keys:
+                            tie = False
                         # Fingering: when a V2 fret byte's flag bits are
                         # exactly 0x20, TablEdit's V2 upgrade (FUN_1000459c4)
                         # copies effect2 into the cell byte V3 stores at
@@ -1118,7 +1379,14 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
                                        lh=lh, tie=tie, dur=evt.duration_ticks,
                                        fx=note_fx(evt) or None,
                                        grace=note_grace(evt))
+                        if not tie:
+                            code = dynamic_code(evt)
+                            if code is not None:
+                                note.dyn = DYN_LEVELS[code]
                         otf_event.notes.append(note)
+                        note_events_in.append((evt, note))
+
+                fold_slide_source_graces(otf_event, note_events_in, tef.note_events)
 
                 if otf_event.notes:
                     otf_measure.events.append(otf_event)
@@ -1129,6 +1397,7 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
     # Store slides as a note + articulation, not TablEdit's triplet-compress
     # timing hack (see normalize_slide_timing / tab-debug SKILL).
     normalize_slide_timing(doc)
+    assign_dynamics(doc)
 
     # Placed free-text annotations (V3 0x39 components: "Long Choke",
     # chord letters, section banners). Positions share the note grid, so
@@ -1146,6 +1415,8 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
             text=te.text,
         ))
 
+    chord_diagrams_to_otf(tef, doc, units_per_measure, V3_TICKS_PER_UNIT)
+
     # Reading list (with section labels when the file names its entries)
     for entry in tef.reading_list:
         doc.reading_list.append(OTFReadingListEntry(
@@ -1153,5 +1424,16 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
             to_measure=entry.to_measure,
             name=entry.name,
         ))
+
+    # Repeat signs: one entry per marked measure, ascending. The flag byte
+    # is the OR of every mark in the measure, as TablEdit ORs them.
+    for index in sorted(tef.measure_flags):
+        raw = tef.measure_flags[index]
+        doc.measure_marks.append(
+            {"measure": index + 1, **decode_mark_raw(raw), "raw": raw})
+    # One skipped map: the reader's counts plus the chord importer's own
+    # `chord_diagrams` (set above on doc.skipped), in SKIPPED_KEYS order.
+    counts = {**tef.skipped, **doc.skipped}
+    doc.skipped = {k: counts[k] for k in SKIPPED_KEYS if counts.get(k)}
 
     return doc

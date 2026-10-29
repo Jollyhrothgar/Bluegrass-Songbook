@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "temperance reel",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -255,6 +256,26 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 2, "tick": 0, "text": "G"},
+    {"measure": 4, "tick": 0, "text": "Em"},
+    {"measure": 5, "tick": 0, "text": "G"},
+    {"measure": 5, "tick": 960, "text": "D"},
+    {"measure": 6, "tick": 0, "text": "G"},
+    {"measure": 8, "tick": 0, "text": "Em"},
+    {"measure": 8, "tick": 960, "text": "C"},
+    {"measure": 9, "tick": 0, "text": "D"},
+    {"measure": 9, "tick": 960, "text": "G"},
+    {"measure": 11, "tick": 0, "text": "Em"},
+    {"measure": 13, "tick": 0, "text": "D"},
+    {"measure": 15, "tick": 0, "text": "Em"},
+    {"measure": 17, "tick": 0, "text": "G"},
+    {"measure": 17, "tick": 960, "text": "C"},
+    {"measure": 18, "tick": 0, "text": "D"},
+    {"measure": 18, "tick": 960, "text": "G"},
+    {"measure": 19, "tick": 0, "text": "D"},
+    {"measure": 19, "tick": 960, "text": "G"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 9},
     {"from_measure": 2, "to_measure": 8},

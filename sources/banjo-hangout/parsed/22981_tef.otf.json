@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Whiskey Before Breakfast",
     "time_signature": "2/4",
@@ -19,7 +19,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     },
     {
       "id": "guitar",
@@ -43,26 +44,26 @@
         "measure": 2,
         "events": [
           {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 120}]},
-          {"tick": 120, "notes": [{"s": 2, "f": 5, "dur": 120}]},
-          {"tick": 240, "notes": [{"s": 1, "f": 4, "dur": 120}]},
-          {"tick": 360, "notes": [{"s": 5, "f": 0, "dur": 120}]},
-          {"tick": 480, "notes": [{"s": 2, "f": 10, "dur": 120}]},
-          {"tick": 600, "notes": [{"s": 5, "f": 0, "dur": 120}]},
-          {"tick": 720, "notes": [{"s": 3, "f": 11, "dur": 120}]},
-          {"tick": 840, "notes": [{"s": 5, "f": 0, "dur": 120}]}
+          {"tick": 120, "notes": [{"s": 2, "f": 5, "dur": 120, "dyn": "fff"}]},
+          {"tick": 240, "notes": [{"s": 1, "f": 4, "dur": 120, "dyn": "fff"}]},
+          {"tick": 360, "notes": [{"s": 5, "f": 0, "dur": 120, "dyn": "fff"}]},
+          {"tick": 480, "notes": [{"s": 2, "f": 10, "dur": 120, "dyn": "fff"}]},
+          {"tick": 600, "notes": [{"s": 5, "f": 0, "dur": 120, "dyn": "fff"}]},
+          {"tick": 720, "notes": [{"s": 3, "f": 11, "dur": 120, "dyn": "fff"}]},
+          {"tick": 840, "notes": [{"s": 5, "f": 0, "dur": 120, "dyn": "fff"}]}
         ]
       },
       {
         "measure": 3,
         "events": [
-          {"tick": 0, "notes": [{"s": 2, "f": 10, "dur": 120}]},
-          {"tick": 120, "notes": [{"s": 1, "f": 9, "dur": 120}]},
-          {"tick": 240, "notes": [{"s": 2, "f": 10, "dur": 120}]},
-          {"tick": 360, "notes": [{"s": 5, "f": 0, "dur": 120}]},
-          {"tick": 480, "notes": [{"s": 3, "f": 11, "dur": 120}]},
-          {"tick": 600, "notes": [{"s": 1, "f": 0, "dur": 120}]},
-          {"tick": 720, "notes": [{"s": 3, "f": 9, "dur": 120}]},
-          {"tick": 840, "notes": [{"s": 2, "f": 7, "dur": 120}]}
+          {"tick": 0, "notes": [{"s": 2, "f": 10, "dur": 120, "dyn": "fff"}]},
+          {"tick": 120, "notes": [{"s": 1, "f": 9, "dur": 120, "dyn": "fff"}]},
+          {"tick": 240, "notes": [{"s": 2, "f": 10, "dur": 120, "dyn": "fff"}]},
+          {"tick": 360, "notes": [{"s": 5, "f": 0, "dur": 120, "dyn": "fff"}]},
+          {"tick": 480, "notes": [{"s": 3, "f": 11, "dur": 120, "dyn": "fff"}]},
+          {"tick": 600, "notes": [{"s": 1, "f": 0, "dur": 120, "dyn": "fff"}]},
+          {"tick": 720, "notes": [{"s": 3, "f": 9, "dur": 120, "dyn": "fff"}]},
+          {"tick": 840, "notes": [{"s": 2, "f": 7, "dur": 120, "dyn": "fff"}]}
         ]
       },
       {
@@ -285,6 +286,37 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 2, "tick": 0, "text": "A-PART"},
+    {"measure": 2, "tick": 0, "text": "D"},
+    {"measure": 4, "tick": 0, "text": "G"},
+    {"measure": 4, "tick": 480, "text": "D"},
+    {"measure": 5, "tick": 0, "text": "A"},
+    {"measure": 6, "tick": 0, "text": "D"},
+    {"measure": 8, "tick": 0, "text": "G"},
+    {"measure": 8, "tick": 480, "text": "D"},
+    {"measure": 9, "tick": 0, "text": "A"},
+    {"measure": 9, "tick": 480, "text": "D"},
+    {"measure": 10, "tick": 0, "text": "A"},
+    {"measure": 10, "tick": 480, "text": "D"},
+    {"measure": 11, "tick": 0, "text": "B-PART"},
+    {"measure": 11, "tick": 0, "text": "D"},
+    {"measure": 13, "tick": 0, "text": "Em"},
+    {"measure": 14, "tick": 0, "text": "A"},
+    {"measure": 15, "tick": 480, "text": "A"},
+    {"measure": 15, "tick": 0, "text": "D"},
+    {"measure": 16, "tick": 0, "text": "G"},
+    {"measure": 16, "tick": 480, "text": "D"},
+    {"measure": 17, "tick": 0, "text": "G"},
+    {"measure": 17, "tick": 480, "text": "D"},
+    {"measure": 18, "tick": 480, "text": "D"},
+    {"measure": 18, "tick": 0, "text": "A"},
+    {"measure": 19, "tick": 0, "text": "G"},
+    {"measure": 19, "tick": 480, "text": "D"},
+    {"measure": 20, "tick": 480, "text": "D"},
+    {"measure": 20, "tick": 0, "text": "A"},
+    {"measure": 21, "tick": 0, "text": "Pick up"}
+  ],
   "reading_list": [
     {"from_measure": 21, "to_measure": 21},
     {"from_measure": 2, "to_measure": 9},
@@ -292,6 +324,18 @@
     {"from_measure": 10, "to_measure": 18},
     {"from_measure": 11, "to_measure": 16},
     {"from_measure": 19, "to_measure": 20}
+  ],
+  "measure_marks": [
+    {"measure": 1, "repeat_start": true, "ending": 1, "raw": 65},
+    {"measure": 2, "repeat_start": true, "ending": 2, "raw": 66},
+    {"measure": 9, "end_bar": true, "raw": 15},
+    {"measure": 10, "ending": 2, "end_bar": true, "raw": 10},
+    {"measure": 11, "repeat_start": true, "ending": 2, "raw": 66},
+    {"measure": 17, "ending": 1, "end_bar": true, "raw": 9},
+    {"measure": 18, "ending": 1, "end_bar": true, "raw": 9},
+    {"measure": 19, "ending": 2, "end_bar": true, "raw": 10},
+    {"measure": 20, "ending": 2, "end_bar": true, "raw": 10},
+    {"measure": 21, "raw": 0}
   ],
   "x_source": {
     "type": "banjo-hangout",

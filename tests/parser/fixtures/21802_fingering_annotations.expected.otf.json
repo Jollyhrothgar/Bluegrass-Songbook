@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.1",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Tennessee Mountain Fox Chase",
     "time_signature": "6/4",
@@ -48,7 +48,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["E4", "C4", "G3", "C3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -229,7 +230,7 @@
         "events": [
           {"tick": 0, "notes": [{"s": 1, "f": 5, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 1, "f": 3, "dur": 480}]},
-          {"tick": 960, "notes": [{"s": 1, "f": 5, "dur": 240, "tech": "b"}]},
+          {"tick": 960, "notes": [{"s": 1, "f": 5, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 5, "f": 0, "dur": 240, "finger": "T"}]},
           {"tick": 1440, "notes": [{"s": 2, "f": 0, "dur": 480}]}
         ]
@@ -251,7 +252,7 @@
         "events": [
           {"tick": 0, "notes": [{"s": 1, "f": 5, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 1, "f": 3, "dur": 480}]},
-          {"tick": 960, "notes": [{"s": 1, "f": 5, "dur": 240, "tech": "b"}]},
+          {"tick": 960, "notes": [{"s": 1, "f": 5, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 5, "f": 0, "dur": 240, "finger": "T"}]},
           {"tick": 1440, "notes": [{"s": 2, "f": 4, "dur": 240}]},
           {"tick": 1680, "notes": [{"s": 2, "f": 2, "dur": 240, "tech": "/"}]}
@@ -273,7 +274,7 @@
         "events": [
           {"tick": 0, "notes": [{"s": 1, "f": 5, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 1, "f": 3, "dur": 480}]},
-          {"tick": 960, "notes": [{"s": 1, "f": 5, "dur": 240, "tech": "b"}]},
+          {"tick": 960, "notes": [{"s": 1, "f": 5, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 5, "f": 0, "dur": 240, "finger": "T"}]},
           {"tick": 1440, "notes": [{"s": 2, "f": 0, "dur": 480}]}
         ]
@@ -434,5 +435,10 @@
     {"from_measure": 24, "to_measure": 32},
     {"from_measure": 24, "to_measure": 31},
     {"from_measure": 33, "to_measure": 33}
-  ]
+  ],
+  "x_source": {
+    "skipped": {
+      "special_characters": 5
+    }
+  }
 }

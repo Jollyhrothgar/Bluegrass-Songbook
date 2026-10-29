@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Temperance Reel",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -358,6 +359,12 @@
     {"from_measure": 1, "to_measure": 8},
     {"from_measure": 1, "to_measure": 8},
     {"from_measure": 9, "to_measure": 25}
+  ],
+  "chords": [
+    {"name": "Em", "frets": [1, 0, 0, 1, null]}
+  ],
+  "chord_diagrams": [
+    {"measure": 9, "tick": 300, "track": "banjo", "chord": 0}
   ],
   "x_source": {
     "type": "banjo-hangout",

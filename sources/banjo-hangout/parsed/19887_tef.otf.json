@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Angeline The Baker",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["E4", "D4", "A3", "D3", "A4"],
       "capo": 2,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -28,7 +29,7 @@
           {"tick": 480, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 3, "f": 5, "dur": 240}]},
-          {"tick": 1440, "notes": [{"s": 5, "f": 0, "dur": 240}]}
+          {"tick": 1440, "notes": [{"s": 5, "f": 0, "dur": 240, "fx": ["let-ring"]}]}
         ]
       },
       {
@@ -39,7 +40,7 @@
           {"tick": 480, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 3, "f": 5, "dur": 240}]},
-          {"tick": 1440, "notes": [{"s": 5, "f": 0, "dur": 240}]}
+          {"tick": 1440, "notes": [{"s": 5, "f": 0, "dur": 240, "fx": ["let-ring"]}]}
         ]
       },
       {
@@ -50,7 +51,7 @@
           {"tick": 480, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 3, "f": 5, "dur": 240}]},
-          {"tick": 1440, "notes": [{"s": 5, "f": 0, "dur": 240}]}
+          {"tick": 1440, "notes": [{"s": 5, "f": 0, "dur": 240, "fx": ["let-ring"]}]}
         ]
       },
       {
@@ -61,7 +62,7 @@
           {"tick": 480, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 3, "f": 5, "dur": 240}]},
-          {"tick": 1440, "notes": [{"s": 5, "f": 0, "dur": 240}]}
+          {"tick": 1440, "notes": [{"s": 5, "f": 0, "dur": 240, "fx": ["let-ring"]}]}
         ]
       },
       {
@@ -148,7 +149,7 @@
           {"tick": 0, "notes": [{"s": 2, "f": 0, "dur": 360}]},
           {"tick": 480, "notes": [{"s": 5, "f": 0, "dur": 120}]},
           {"tick": 720, "notes": [{"s": 2, "f": 0, "dur": 360}]},
-          {"tick": 960, "notes": [{"s": 3, "f": 0, "dur": 120}]}
+          {"tick": 960, "notes": [{"s": 3, "f": 0, "dur": 120, "fx": ["let-ring"]}]}
         ]
       },
       {
@@ -322,9 +323,17 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 0, "text": "Intro"},
+    {"measure": 20, "tick": 1560, "text": "B part"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 28},
     {"from_measure": 5, "to_measure": 28}
+  ],
+  "measure_marks": [
+    {"measure": 5, "repeat_start": true, "ending": 1, "raw": 65},
+    {"measure": 28, "ending": 2, "end_bar": true, "raw": 10}
   ],
   "x_source": {
     "type": "banjo-hangout",

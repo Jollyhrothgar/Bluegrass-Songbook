@@ -93,6 +93,7 @@ const FX_SYMBOLS = {
     tap: 'T',
     vibrato: '∿',
     tremolo: '≡',
+    bend: 'B',
     'bend-release': 'BR',
     slap: 'S',
 };

@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Salt Creek (Up the Neck)",
     "time_signature": "4/4",
@@ -16,7 +16,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -219,11 +220,35 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 0, "text": "G"},
+    {"measure": 2, "tick": 960, "text": "C"},
+    {"measure": 3, "tick": 0, "text": "F"},
+    {"measure": 4, "tick": 960, "text": "D"},
+    {"measure": 5, "tick": 0, "text": "G"},
+    {"measure": 6, "tick": 960, "text": "C"},
+    {"measure": 7, "tick": 0, "text": "F"},
+    {"measure": 8, "tick": 0, "text": "D"},
+    {"measure": 8, "tick": 960, "text": "G"},
+    {"measure": 9, "tick": 0, "text": "G"},
+    {"measure": 11, "tick": 0, "text": "F"},
+    {"measure": 13, "tick": 0, "text": "G"},
+    {"measure": 15, "tick": 0, "text": "G"},
+    {"measure": 15, "tick": 960, "text": "C"},
+    {"measure": 16, "tick": 0, "text": "D"},
+    {"measure": 16, "tick": 960, "text": "G"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 8},
     {"from_measure": 1, "to_measure": 8},
     {"from_measure": 9, "to_measure": 16},
     {"from_measure": 9, "to_measure": 16}
+  ],
+  "measure_marks": [
+    {"measure": 1, "repeat_start": true, "raw": 64},
+    {"measure": 8, "repeat_end": true, "raw": 128},
+    {"measure": 9, "repeat_start": true, "raw": 64},
+    {"measure": 16, "repeat_end": true, "raw": 128}
   ],
   "x_source": {
     "type": "banjo-hangout",

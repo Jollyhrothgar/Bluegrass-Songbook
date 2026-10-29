@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Gold Rush",
     "time_signature": "4/4",
@@ -16,7 +16,8 @@
       "instrument": "6-string-guitar",
       "tuning": ["F#4", "C#4", "A3", "E3", "B2", "F#2"],
       "capo": 2,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -337,11 +338,14 @@
       {
         "measure": 28,
         "events": [
-          {"tick": 480, "notes": [{"s": 1, "f": 3, "dur": 960}, {"s": 2, "f": 0, "dur": 960}, {"s": 3, "f": 0, "dur": 960}, {"s": 4, "f": 0, "dur": 960}, {"s": 5, "f": 2, "dur": 960}, {"s": 6, "f": 3, "dur": 960}]}
+          {"tick": 480, "notes": [{"s": 1, "f": 3, "dur": 960, "fx": ["roll"]}, {"s": 2, "f": 0, "dur": 960}, {"s": 3, "f": 0, "dur": 960}, {"s": 4, "f": 0, "dur": 960}, {"s": 5, "f": 2, "dur": 960}, {"s": 6, "f": 3, "dur": 960, "fx": ["brush"]}]}
         ]
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 0, "text": "put your ( Idaho & P.E.I.) spuds here"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 10},
     {"from_measure": 3, "to_measure": 8},

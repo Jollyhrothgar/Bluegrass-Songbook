@@ -68,6 +68,7 @@ import {
     maxMeasureIn, measureTimingFromOtf,
     analyzeReadingList, prepareCompactNotation, densifyNotation,
     attachOtfDecorations,
+    attachChordDiagrams,
 } from './renderers/measure-timing.js';
 import { isPercussionTrack, pitchedTracks } from './renderers/otf-tracks.js';
 import { clearListView, openNotesSheet } from './lists.js';
@@ -78,6 +79,7 @@ import { setTopBar, setBottomBand, pill, setChromeAutoHide } from './shell.js';
 import { practiceLinks, buildKeyPill, buildDisplayPill, buildInfoPill, buildExportPill, handleExport } from './song-controls.js';
 import { showToast } from './toast.js';
 import { importFileToOtf, pickTabFile, chooseTabFile } from './pwa.js';
+import { skippedLine } from './tef-skipped.js';
 
 // ============================================
 // WORK STATE
@@ -1128,6 +1130,14 @@ function renderArrangementBar() {
         const line = document.createElement('div');
         line.className = 'arr-status';
         line.textContent = takeStatusLine;
+        // G15e: what the opened .tef held that the book does not keep, inside
+        // the same box so there is still one `.arr-status`.
+        if (tabAuthoring?.skippedLine) {
+            const skipped = document.createElement('div');
+            skipped.className = 'arr-skipped';
+            skipped.textContent = tabAuthoring.skippedLine;
+            line.appendChild(skipped);
+        }
         host.appendChild(line);
     };
 
@@ -2566,6 +2576,7 @@ async function renderTablaturePart(part, container) {
             // (display copy; attach after densify — annotations may
             // target silent measures).
             notation = attachOtfDecorations(notation, otf);
+            notation = attachChordDiagrams(notation, otf, track.id);
             if (showRepeatsCompact && otf.reading_list && otf.reading_list.length > 0) {
                 notation = prepareCompactNotation(notation, otf.reading_list);
             } else if (otf.reading_list && otf.reading_list.length > 0) {
@@ -2833,6 +2844,7 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
         { createAutosaver, getDraftStore, draftOpenHash },
         { bindBandToEditor },
         { creditFromPart },
+        { ensureVersionAtLeast },
     ] = await Promise.all([
         import('./otf-editor/editor.js'),
         import('./otf-editor/work-edit.js'),
@@ -2840,6 +2852,7 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
         import('./drafts.js'),
         import('./tab-edit-band.js'),
         import('./otf-editor/tab-credit.js'),
+        import('./otf-editor/otf-validate.js'),
         kitLoading,
     ]);
 
@@ -2926,11 +2939,8 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
     if (!isNewTake && !otf?.metadata?.tab_by) {
         const published = creditFromPart(part);
         if (published) {
-            otf = {
-                ...otf,
-                otf_version: otf.otf_version === '1.0' ? '1.1' : otf.otf_version,
-                metadata: { ...otf.metadata, tab_by: published },
-            };
+            otf = { ...otf, metadata: { ...otf.metadata, tab_by: published } };
+            ensureVersionAtLeast(otf, '1.1');
         }
     }
 
@@ -3185,7 +3195,11 @@ export function startAddTabMode(target = {}) {
         availableParts.push(part);
     }
 
-    tabAuthoring = { kind: currentWork.provisional ? 'new' : 'add', part, take, target, otf };
+    tabAuthoring = {
+        kind: currentWork.provisional ? 'new' : 'add', part, take, target, otf,
+        // G15e: only for a file just opened; a draft or a new tab has nothing to report.
+        skippedLine: target.fromFile ? skippedLine(otf?.x_source?.skipped) : '',
+    };
     activePart = part;
     // Three things the take header can be honest about, in priority order:
     // this document came out of a FILE you just opened (a `.tef` dropped on

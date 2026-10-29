@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Clinch Mountain Backstep",
     "time_signature": "4/4",
@@ -19,7 +19,8 @@
       "instrument": "tenor-banjo",
       "tuning": ["G4", "D4", "G3", "D3"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "fff"
     }
   ],
   "notation": {

@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Ookpik Waltz",
     "time_signature": "3/4",
@@ -18,7 +18,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -654,6 +655,15 @@
     {"from_measure": 18, "to_measure": 50},
     {"from_measure": 35, "to_measure": 50},
     {"from_measure": 51, "to_measure": 67}
+  ],
+  "measure_marks": [
+    {"measure": 1, "repeat_start": true, "raw": 64},
+    {"measure": 17, "repeat_end": true, "ending": 1, "raw": 129},
+    {"measure": 18, "ending": 2, "end_bar": true, "raw": 10},
+    {"measure": 34, "end_bar": true, "raw": 8},
+    {"measure": 50, "repeat_end": true, "ending": 1, "raw": 129},
+    {"measure": 51, "ending": 2, "end_bar": true, "raw": 10},
+    {"measure": 67, "end_bar": true, "raw": 8}
   ],
   "x_source": {
     "type": "banjo-hangout",

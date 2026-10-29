@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Cluck Old Hen (thumb lead)",
     "time_signature": "2/2",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["E4", "D4", "A3", "E3", "A4"],
       "capo": 2,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -23,7 +24,7 @@
       {
         "measure": 1,
         "events": [
-          {"tick": 1440, "notes": [{"s": 3, "f": 5, "dur": 480, "finger": "T"}]}
+          {"tick": 1440, "notes": [{"s": 3, "f": 5, "dur": 480, "finger": "T", "dyn": "ff"}]}
         ]
       },
       {

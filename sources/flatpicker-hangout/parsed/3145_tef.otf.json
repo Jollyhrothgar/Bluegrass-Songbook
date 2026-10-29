@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Ashokan Farewell",
     "time_signature": "3/4",
@@ -15,28 +15,32 @@
       "instrument": "6-string-guitar",
       "tuning": ["E4", "B3", "G3", "D3", "A2", "E2"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     },
     {
       "id": "guitar-2",
       "instrument": "6-string-guitar",
       "tuning": ["E4", "B3", "G3", "D3", "A2", "E2"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     },
     {
       "id": "bass",
       "instrument": "upright-bass",
       "tuning": ["G2", "D2", "A1", "E1"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     },
     {
       "id": "fiddle",
       "instrument": "fiddle",
       "tuning": ["E5", "A4", "D4", "G3"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "ff"
     }
   ],
   "notation": {
@@ -236,7 +240,7 @@
       {
         "measure": 25,
         "events": [
-          {"tick": 0, "notes": [{"s": 1, "f": 5, "dur": 960}, {"s": 2, "f": 5, "dur": 960}, {"s": 3, "f": 6, "dur": 960}]},
+          {"tick": 0, "notes": [{"s": 1, "f": 5, "dur": 960}, {"s": 2, "f": 5, "dur": 960}, {"s": 3, "f": 6, "dur": 960, "fx": ["brush"]}]},
           {"tick": 960, "notes": [{"s": 2, "f": 7, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 2, "f": 5, "dur": 240, "tech": "p"}]}
         ]
@@ -523,7 +527,7 @@
         "measure": 27,
         "events": [
           {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 960}]},
-          {"tick": 960, "notes": [{"s": 1, "f": 2, "dur": 480}]}
+          {"tick": 960, "notes": [{"s": 1, "f": 2, "dur": 480, "dyn": "fff"}]}
         ]
       },
       {
@@ -546,20 +550,20 @@
       {
         "measure": 30,
         "events": [
-          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 240}]},
-          {"tick": 240, "notes": [{"s": 3, "f": 4, "dur": 240}]},
-          {"tick": 480, "notes": [{"s": 2, "f": 0, "dur": 240}]},
-          {"tick": 720, "notes": [{"s": 2, "f": 5, "dur": 240}]},
-          {"tick": 960, "notes": [{"s": 1, "f": 2, "dur": 240}]},
-          {"tick": 1200, "notes": [{"s": 1, "f": 5, "dur": 240}]}
+          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 240, "dyn": "fff"}]},
+          {"tick": 240, "notes": [{"s": 3, "f": 4, "dur": 240, "dyn": "fff"}]},
+          {"tick": 480, "notes": [{"s": 2, "f": 0, "dur": 240, "dyn": "fff"}]},
+          {"tick": 720, "notes": [{"s": 2, "f": 5, "dur": 240, "dyn": "fff"}]},
+          {"tick": 960, "notes": [{"s": 1, "f": 2, "dur": 240, "dyn": "fff"}]},
+          {"tick": 1200, "notes": [{"s": 1, "f": 5, "dur": 240, "dyn": "fff"}]}
         ]
       },
       {
         "measure": 31,
         "events": [
-          {"tick": 0, "notes": [{"s": 1, "f": 5, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 1, "f": 10, "dur": 720}]},
-          {"tick": 1200, "notes": [{"s": 1, "f": 2, "dur": 240}]}
+          {"tick": 0, "notes": [{"s": 1, "f": 5, "dur": 480, "dyn": "fff"}]},
+          {"tick": 480, "notes": [{"s": 1, "f": 10, "dur": 720, "dyn": "fff"}]},
+          {"tick": 1200, "notes": [{"s": 1, "f": 2, "dur": 240, "dyn": "fff"}]}
         ]
       },
       {
@@ -1051,6 +1055,107 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 2, "tick": 0, "text": "D"},
+    {"measure": 2, "tick": 0, "text": "D"},
+    {"measure": 2, "tick": 0, "text": "D"},
+    {"measure": 3, "tick": 0, "text": "D/F#"},
+    {"measure": 3, "tick": 0, "text": "D/F#"},
+    {"measure": 3, "tick": 0, "text": "D/F#"},
+    {"measure": 4, "tick": 0, "text": "G"},
+    {"measure": 4, "tick": 0, "text": "G"},
+    {"measure": 4, "tick": 0, "text": "G"},
+    {"measure": 5, "tick": 0, "text": "Em7"},
+    {"measure": 5, "tick": 0, "text": "Em7"},
+    {"measure": 5, "tick": 0, "text": "Em7"},
+    {"measure": 6, "tick": 0, "text": "D"},
+    {"measure": 6, "tick": 0, "text": "D"},
+    {"measure": 6, "tick": 0, "text": "D"},
+    {"measure": 7, "tick": 0, "text": "Bm"},
+    {"measure": 7, "tick": 0, "text": "Bm"},
+    {"measure": 7, "tick": 0, "text": "Bm"},
+    {"measure": 8, "tick": 0, "text": "G"},
+    {"measure": 8, "tick": 0, "text": "G"},
+    {"measure": 8, "tick": 0, "text": "G"},
+    {"measure": 9, "tick": 0, "text": "A"},
+    {"measure": 9, "tick": 0, "text": "A"},
+    {"measure": 9, "tick": 0, "text": "A"},
+    {"measure": 10, "tick": 0, "text": "D"},
+    {"measure": 10, "tick": 0, "text": "D"},
+    {"measure": 10, "tick": 0, "text": "D"},
+    {"measure": 11, "tick": 0, "text": "D7/F#"},
+    {"measure": 11, "tick": 0, "text": "D7/F#"},
+    {"measure": 11, "tick": 0, "text": "D7/F#"},
+    {"measure": 12, "tick": 0, "text": "G"},
+    {"measure": 12, "tick": 0, "text": "G"},
+    {"measure": 12, "tick": 0, "text": "G"},
+    {"measure": 13, "tick": 0, "text": "Em7"},
+    {"measure": 13, "tick": 0, "text": "Em7"},
+    {"measure": 13, "tick": 0, "text": "Em7"},
+    {"measure": 14, "tick": 0, "text": "D"},
+    {"measure": 14, "tick": 0, "text": "D"},
+    {"measure": 14, "tick": 0, "text": "D"},
+    {"measure": 15, "tick": 0, "text": "Bm"},
+    {"measure": 15, "tick": 0, "text": "Bm"},
+    {"measure": 15, "tick": 0, "text": "Bm"},
+    {"measure": 16, "tick": 0, "text": "A"},
+    {"measure": 16, "tick": 0, "text": "A"},
+    {"measure": 16, "tick": 0, "text": "A"},
+    {"measure": 17, "tick": 0, "text": "D"},
+    {"measure": 17, "tick": 0, "text": "D"},
+    {"measure": 17, "tick": 0, "text": "D"},
+    {"measure": 18, "tick": 0, "text": "D"},
+    {"measure": 18, "tick": 0, "text": "D"},
+    {"measure": 18, "tick": 0, "text": "D"},
+    {"measure": 19, "tick": 0, "text": "D7/F#"},
+    {"measure": 19, "tick": 0, "text": "D7/F#"},
+    {"measure": 19, "tick": 0, "text": "D7/F#"},
+    {"measure": 20, "tick": 120, "text": "G"},
+    {"measure": 20, "tick": 0, "text": "G"},
+    {"measure": 20, "tick": 0, "text": "G"},
+    {"measure": 21, "tick": 0, "text": "D"},
+    {"measure": 21, "tick": 0, "text": "D"},
+    {"measure": 21, "tick": 0, "text": "D"},
+    {"measure": 22, "tick": 0, "text": "D"},
+    {"measure": 22, "tick": 0, "text": "D"},
+    {"measure": 22, "tick": 0, "text": "D"},
+    {"measure": 23, "tick": 0, "text": "Bm"},
+    {"measure": 23, "tick": 0, "text": "Bm"},
+    {"measure": 23, "tick": 0, "text": "Bm"},
+    {"measure": 24, "tick": 0, "text": "A"},
+    {"measure": 24, "tick": 0, "text": "A"},
+    {"measure": 24, "tick": 0, "text": "A"},
+    {"measure": 25, "tick": 0, "text": "A/G"},
+    {"measure": 25, "tick": 0, "text": "A/G"},
+    {"measure": 25, "tick": 0, "text": "A/G"},
+    {"measure": 26, "tick": 0, "text": "D"},
+    {"measure": 26, "tick": 0, "text": "D"},
+    {"measure": 26, "tick": 0, "text": "D"},
+    {"measure": 27, "tick": 120, "text": "C"},
+    {"measure": 27, "tick": 0, "text": "C"},
+    {"measure": 27, "tick": 0, "text": "C"},
+    {"measure": 28, "tick": 120, "text": "G"},
+    {"measure": 28, "tick": 0, "text": "G"},
+    {"measure": 28, "tick": 0, "text": "G"},
+    {"measure": 29, "tick": 120, "text": "D"},
+    {"measure": 29, "tick": 0, "text": "D"},
+    {"measure": 29, "tick": 0, "text": "D"},
+    {"measure": 30, "tick": 0, "text": "D"},
+    {"measure": 30, "tick": 0, "text": "D"},
+    {"measure": 30, "tick": 0, "text": "D"},
+    {"measure": 31, "tick": 0, "text": "Bm"},
+    {"measure": 31, "tick": 0, "text": "Bm"},
+    {"measure": 31, "tick": 0, "text": "Bm"},
+    {"measure": 32, "tick": 0, "text": "A"},
+    {"measure": 32, "tick": 0, "text": "A"},
+    {"measure": 32, "tick": 0, "text": "A"},
+    {"measure": 33, "tick": 0, "text": "D"},
+    {"measure": 33, "tick": 0, "text": "D"},
+    {"measure": 33, "tick": 0, "text": "D"},
+    {"measure": 34, "tick": 0, "text": "D"},
+    {"measure": 34, "tick": 0, "text": "D"},
+    {"measure": 34, "tick": 0, "text": "D"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 33},
     {"from_measure": 2, "to_measure": 33},

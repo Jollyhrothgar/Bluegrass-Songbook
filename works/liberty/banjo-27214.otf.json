@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Liberty",
     "time_signature": "4/4",
@@ -18,7 +18,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["E4", "D4", "A3", "D3", "A4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -268,6 +269,10 @@
     {"from_measure": 10, "to_measure": 18},
     {"from_measure": 11, "to_measure": 17},
     {"from_measure": 19, "to_measure": 19}
+  ],
+  "measure_marks": [
+    {"measure": 9, "repeat_end": true, "ending": 1, "end_bar": true, "raw": 137},
+    {"measure": 10, "ending": 2, "end_bar": true, "raw": 10}
   ],
   "x_source": {
     "type": "banjo-hangout",

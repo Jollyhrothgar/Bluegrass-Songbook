@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Panhandle Country",
     "time_signature": "2/4",
@@ -16,14 +16,16 @@
       "instrument": "5-string-banjo",
       "tuning": ["G4", "E4", "C4", "G3", "C5"],
       "capo": 5,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     },
     {
       "id": "guitar",
       "instrument": "6-string-guitar",
       "tuning": ["A4", "E4", "C4", "G3", "D3", "A2"],
       "capo": 5,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     }
   ],
   "notation": {

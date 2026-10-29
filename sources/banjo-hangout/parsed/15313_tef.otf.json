@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Ground Speed",
     "time_signature": "4/4",
@@ -16,7 +16,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -1021,7 +1022,7 @@
         "measure": 85,
         "events": [
           {"tick": 0, "notes": [{"s": 1, "f": 16, "dur": 960}]},
-          {"tick": 960, "notes": [{"s": 1, "f": 12, "dur": 960}, {"s": 2, "f": 12, "dur": 960}, {"s": 3, "f": 12, "dur": 960}]}
+          {"tick": 960, "notes": [{"s": 1, "f": 12, "dur": 960, "fx": ["harmonic"]}, {"s": 2, "f": 12, "dur": 960, "fx": ["harmonic"]}, {"s": 3, "f": 12, "dur": 960, "fx": ["harmonic"]}]}
         ]
       }
     ]

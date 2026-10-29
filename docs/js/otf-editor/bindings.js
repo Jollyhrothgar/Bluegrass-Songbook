@@ -545,6 +545,7 @@ export const FX_ACTIONS = {
     tap: 'effect.tap',
     vibrato: 'effect.vibrato',
     tremolo: 'effect.tremolo',
+    bend: 'effect.bendUp',
     'bend-release': 'effect.bendRelease',
     slap: 'effect.slap',
 };
@@ -585,6 +586,33 @@ function gridAction(ticks, label) {
         },
     };
 }
+
+/**
+ * Note ▸ Dynamics: one level (fff..pp, loudest first) or null for "Track
+ * default". TablEdit reaches these through its velocity palette, so none
+ * has a key: menu-only, like the effects it has no hotkey for.
+ */
+function dynamicAction(level, label) {
+    return {
+        label,
+        group: 'Effects',
+        modes: ['normal', 'visual'],
+        menuOnly: true,
+        level,
+        run(ctx) {
+            ctx.record('setDynamic', { ...posOf(ctx.state), level });
+            ctx.state.setDynamic(level);
+            return true;
+        },
+    };
+}
+
+/** Dynamic level → its action id (null = Track default). */
+export const DYNAMIC_ACTIONS = {
+    fff: 'dynamic.fff', ff: 'dynamic.ff', f: 'dynamic.f', mf: 'dynamic.mf',
+    mp: 'dynamic.mp', p: 'dynamic.p', pp: 'dynamic.pp',
+};
+export const DYNAMIC_DEFAULT_ACTION = 'dynamic.trackDefault';
 
 function fingeringAction(finger, label) {
     return {
@@ -1261,8 +1289,17 @@ export const ACTIONS = {
     'effect.tap': fxAction('tap', 'Tap', { menuOnly: true }),
     'effect.vibrato': fxAction('vibrato', 'Vibrato', { menuOnly: true }),
     'effect.tremolo': fxAction('tremolo', 'Tremolo', { menuOnly: true }),
+    'effect.bendUp': fxAction('bend', 'Bend (up and hold)', { menuOnly: true }),
     'effect.bendRelease': fxAction('bend-release', 'Bend and release', { menuOnly: true }),
     'effect.slap': fxAction('slap', 'Slap', { menuOnly: true }),
+    'dynamic.fff': dynamicAction('fff', 'Dynamics: fff'),
+    'dynamic.ff': dynamicAction('ff', 'Dynamics: ff'),
+    'dynamic.f': dynamicAction('f', 'Dynamics: f'),
+    'dynamic.mf': dynamicAction('mf', 'Dynamics: mf'),
+    'dynamic.mp': dynamicAction('mp', 'Dynamics: mp'),
+    'dynamic.p': dynamicAction('p', 'Dynamics: p'),
+    'dynamic.pp': dynamicAction('pp', 'Dynamics: pp'),
+    'dynamic.trackDefault': dynamicAction(null, 'Dynamics: track default'),
     'effect.grace': {
         label: 'Grace note…',
         group: 'Effects',

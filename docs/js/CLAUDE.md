@@ -113,6 +113,8 @@ them. Client side (`main.js`, `state.js`: `SONG_PATH`, `songHref`,
   Start goes to `#new-tab?title=&instrument=`, My tabs reuses `drafts-view.js`
   rows (`draftRowHtml`, `attachDraftActions`). "My tabs" is `#drafts` renamed in
   copy only (store `bgb-drafts` unchanged). Nothing before Submit asks for sign-in.
+  A `.tef` open shows what wasn't kept (`x_source.skipped` → `skippedLine()` in
+  `tef-skipped.js`, `.arr-skipped`; only for `file=1`, only when non-zero).
 
 ### Navigation invariants
 

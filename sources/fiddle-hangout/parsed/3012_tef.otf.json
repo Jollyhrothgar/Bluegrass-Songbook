@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Foggy Mountain Special (Basic)",
     "time_signature": "4/4",
@@ -15,14 +15,16 @@
       "instrument": "6-string-guitar",
       "tuning": ["E4", "B3", "G3", "D3", "A2", "E2"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     },
     {
       "id": "mandolin",
       "instrument": "mandolin",
       "tuning": ["E5", "A4", "D4", "G3"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -39,13 +41,13 @@
         "events": [
           {"tick": 0, "notes": [{"s": 2, "f": 5, "dur": 120}]},
           {"tick": 120, "notes": [{"s": 2, "f": 3, "dur": 120}]},
-          {"tick": 240, "notes": [{"s": 2, "f": 1, "dur": 240}]},
+          {"tick": 240, "notes": [{"s": 2, "f": 1, "dur": 240, "fx": ["choke"]}]},
           {"tick": 480, "notes": [{"s": 3, "f": 5, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 3, "f": 2, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 3, "f": 0, "dur": 120}]},
           {"tick": 1080, "notes": [{"s": 3, "f": 2, "dur": 120}]},
           {"tick": 1200, "notes": [{"s": 3, "f": 5, "dur": 120}]},
-          {"tick": 1320, "notes": [{"s": 2, "f": 1, "dur": 240}]},
+          {"tick": 1320, "notes": [{"s": 2, "f": 1, "dur": 240, "fx": ["choke"]}]},
           {"tick": 1560, "notes": [{"s": 2, "f": 5, "dur": 120}]},
           {"tick": 1680, "notes": [{"s": 3, "f": 5, "dur": 240}]}
         ]
@@ -55,13 +57,13 @@
         "events": [
           {"tick": 0, "notes": [{"s": 2, "f": 5, "dur": 120}]},
           {"tick": 120, "notes": [{"s": 2, "f": 3, "dur": 120}]},
-          {"tick": 240, "notes": [{"s": 2, "f": 1, "dur": 240}]},
+          {"tick": 240, "notes": [{"s": 2, "f": 1, "dur": 240, "fx": ["choke"]}]},
           {"tick": 480, "notes": [{"s": 3, "f": 5, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 3, "f": 2, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 3, "f": 0, "dur": 120}]},
           {"tick": 1080, "notes": [{"s": 3, "f": 2, "dur": 120}]},
           {"tick": 1200, "notes": [{"s": 3, "f": 5, "dur": 120}]},
-          {"tick": 1320, "notes": [{"s": 2, "f": 1, "dur": 120}]},
+          {"tick": 1320, "notes": [{"s": 2, "f": 1, "dur": 120, "fx": ["choke"]}]},
           {"tick": 1560, "notes": [{"s": 2, "f": 5, "dur": 120}]},
           {"tick": 1680, "notes": [{"s": 3, "f": 5, "dur": 240}]}
         ]

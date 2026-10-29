@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Katy Hill (Bobby Hicks)",
     "time_signature": "2/4",
@@ -15,7 +15,8 @@
       "instrument": "mandolin",
       "tuning": ["E5", "A4", "D4", "G3"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -130,7 +131,7 @@
       {
         "measure": 10,
         "events": [
-          {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 360}]},
+          {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 360, "grace": {"f": 0, "kind": "hp"}}]},
           {"tick": 360, "notes": [{"s": 2, "f": 2, "dur": 120}]},
           {"tick": 480, "notes": [{"s": 2, "f": 0, "dur": 120}]},
           {"tick": 600, "notes": [{"s": 3, "f": 5, "dur": 120}]},
@@ -178,7 +179,7 @@
       {
         "measure": 14,
         "events": [
-          {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 360}]},
+          {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 360, "grace": {"f": 0, "kind": "hp"}}]},
           {"tick": 360, "notes": [{"s": 2, "f": 2, "dur": 120}]},
           {"tick": 480, "notes": [{"s": 2, "f": 0, "dur": 120}]},
           {"tick": 600, "notes": [{"s": 3, "f": 5, "dur": 120}]},
@@ -202,7 +203,7 @@
       {
         "measure": 16,
         "events": [
-          {"tick": 0, "notes": [{"s": 1, "f": 3, "dur": 120, "tech": "b"}, {"s": 2, "f": 10, "dur": 120}]},
+          {"tick": 0, "notes": [{"s": 1, "f": 3, "dur": 120}, {"s": 2, "f": 10, "dur": 120}]},
           {"tick": 120, "notes": [{"s": 1, "f": 0, "dur": 120}]},
           {"tick": 240, "notes": [{"s": 2, "f": 5, "dur": 120}]},
           {"tick": 360, "notes": [{"s": 2, "f": 2, "dur": 120}]},

@@ -664,6 +664,14 @@ describe('EditingFacade — setTabBy (the "Tab by" credit)', () => {
         expect(f.canUndo()).toBe(false);
     });
 
+    it('never lowers a newer version (setTabBy goes through ensureVersionAtLeast)', () => {
+        const doc = banjoDoc();
+        doc.otf_version = '1.2';
+        const f = new EditingFacade(doc);
+        f.setTabBy({ name: 'Jane' });
+        expect(f.otf.otf_version).toBe('1.2');
+    });
+
     it('is one undo step and restores the 1.0 version on undo', () => {
         const f = new EditingFacade(banjoDoc());
         expect(f.setTabBy({ name: ' Jane Picker ', url: 'https://example.com/jane' })).toBe(true);

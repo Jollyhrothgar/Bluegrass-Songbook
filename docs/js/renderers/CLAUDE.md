@@ -74,6 +74,17 @@ Playback highlighting is keyed by absolute tick, not measure or note index:
   `bravura-1.482`) because `@latest` on jsDelivr's `gh` endpoint is the repo's
   HEAD. Test: `__tests__/tablature-bravura.test.js`.
 
+### Chord diagrams
+
+`chord-box.js` is a staff-agnostic SVG chord box (`chordBoxGeometry` layout, `renderChordBox`):
+string 1 on the right, grid from `first_fret` ("3fr"), `0` = o, `null` = x, no `frets` = name only,
+no barre (the file has none). `attachChordDiagrams(notation, otf, trackId)` (measure-timing.js,
+called beside `attachOtfDecorations`) hangs `measure.diagrams` on the track's measures. The renderer
+reserves a band only for a track with diagrams, shifts annotation text up by it, centres a box on
+its tick (pushed right on overlap) and skips a name a text annotation at that tick already says.
+`dx`/`dy` are kept, not drawn (units unknown). Tests: `chord-box.test.js`,
+`tablature-chord-diagrams.test.js`, `e2e/chord-diagrams.spec.js`.
+
 ### Rhythm: stems, beams, flags, rests
 
 `renderStemsAndBeams` has three beam levels in ticks: 1 eighth, 2 sixteenth,
@@ -135,7 +146,7 @@ stopping and restarting.
 
 Techniques: a tie continuation never re-attacks (`applyTieExtensions`); `h`/`p`/
 slide targets are one pick whose source rings on and glides (`absorbLegato`,
-`legatoWaypoints`); `x` is a short damped chop; `b` bends a quarter tone. All
+`legatoWaypoints`); `x` is a short damped chop; a `bend`/`bend-release` note and its `tech: 'b'` target are one pick (`absorbBend`) that ramps by the fret difference (`bendIntoWaypoints`); an orphan `b` bends a quarter tone. All
 pitch moves use WebAudioFont `slides` waypoints (8th arg of `queueWaveTable`).
 
 Effects and grace (fix-it item A15) follow TablEdit's playback. The logic is pure
@@ -164,7 +175,7 @@ intervals, ...). Rules that are not obvious from the constants:
 - Combining: gains multiply; let-ring sets length first, then muted/choke/
   staccato can still shorten it. One pitch shape per attack, by precedence:
   legato legs (`note.legs`: one `{toMidi, atTick, glide}` per h/p/slide target
-  that `absorbLegato` records on the source note), bend-release, choke, `tech: 'b'`, vibrato. Tremolo re-picks carry
+  that `absorbLegato` records on the source note), bend into a target (`note.bendTo`), bend-release, choke, orphan `tech: 'b'`, vibrato. Tremolo re-picks carry
   none.
 
 ## No instrument emoji in the tab UI

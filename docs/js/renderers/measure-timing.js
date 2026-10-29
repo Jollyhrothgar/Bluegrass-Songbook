@@ -250,7 +250,11 @@ export function expandNotation(notation, timeline) {
     const out = [];
     for (const { display, original } of timeline) {
         const src = byMeasure.get(original) || { events: [] };
-        out.push({ ...src, measure: display, originalMeasure: original });
+        // The repeat signs, endings and jump marks of the written score
+        // (attachOtfDecorations) say "go back"; an unrolled score has
+        // already gone back. The end bar is just a barline and stays.
+        const { repeatStart, repeatEnd, ending, endingStart, jump, ...rest } = src;
+        out.push({ ...rest, measure: display, originalMeasure: original });
     }
     return out;
 }
@@ -427,6 +431,29 @@ export function prepareCompactNotation(notation, readingList) {
 }
 
 /**
+ * Display fields (repeatStart, repeatEnd, ending, endingStart, endBar, jump)
+ * for each marked measure, from otf.measure_marks. A numbered ending starts a
+ * bracket unless the measure before carries the same number.
+ */
+function markDisplayByMeasure(measureMarks) {
+    const byMeasure = new Map((measureMarks || []).map(m => [m.measure, m]));
+    const out = new Map();
+    for (const [measure, e] of byMeasure) {
+        const f = {};
+        if (e.repeat_start) f.repeatStart = true;
+        if (e.repeat_end) f.repeatEnd = true;
+        if (e.ending) {
+            f.ending = e.ending;
+            if (byMeasure.get(measure - 1)?.ending !== e.ending) f.endingStart = true;
+        }
+        if (e.end_bar) f.endBar = true;
+        if (e.jump) f.jump = e.jump;
+        if (Object.keys(f).length) out.set(measure, f);
+    }
+    return out;
+}
+
+/**
  * Attach display decorations from the OTF document onto a track's
  * notation entries (display copy — the document itself is untouched):
  *
@@ -434,6 +461,11 @@ export function prepareCompactNotation(notation, readingList) {
  *              from otf.annotations, grouped per written measure
  * - `section`: reading-list entry names ("Intro", "Part A1") on each
  *              range's first measure — TablEdit prints them there
+ * - `repeatStart`/`repeatEnd`/`ending`/`endingStart`/`endBar`/`jump`: the
+ *              stored repeat signs (otf.measure_marks); expandNotation drops
+ *              all but `endBar` when it unrolls the score, and
+ *              prepareCompactNotation adds the signs a reading list implies
+ *              on top (booleans merge, so agreeing signs draw once)
  *
  * Call AFTER densifyNotation (annotations may target silent measures —
  * Welcome to New York m30-31 carry the "...solo" texts) and BEFORE
@@ -443,7 +475,8 @@ export function prepareCompactNotation(notation, readingList) {
 export function attachOtfDecorations(notation, otf) {
     const anns = otf?.annotations || [];
     const named = (otf?.reading_list || []).filter(e => e.name);
-    if (!anns.length && !named.length) return notation;
+    const marks = markDisplayByMeasure(otf?.measure_marks);
+    if (!anns.length && !named.length && !marks.size) return notation;
     const textsByMeasure = new Map();
     for (const a of anns) {
         if (!textsByMeasure.has(a.measure)) textsByMeasure.set(a.measure, []);
@@ -458,11 +491,36 @@ export function attachOtfDecorations(notation, otf) {
     return notation.map(m => {
         const texts = textsByMeasure.get(m.measure);
         const section = sectionByMeasure.get(m.measure);
-        if (!texts && !section) return m;
-        const out = { ...m };
+        const markFields = marks.get(m.measure);
+        if (!texts && !section && !markFields) return m;
+        const out = { ...m, ...markFields };
         if (texts) out.texts = texts;
         if (section) out.section = section;
         return out;
+    });
+}
+
+/**
+ * Attach one track's chord diagrams (display copy) onto its notation entries:
+ * `diagrams: [{tick, index, chord}]` per written measure, where `chord` is the
+ * resolved `otf.chords[]` record and `index` its position in that table.
+ * Diagrams whose `track` is another track's, or whose `chord` points past the
+ * table, are skipped. Call after densifyNotation (a diagram may sit in a
+ * silent measure), alongside attachOtfDecorations.
+ */
+export function attachChordDiagrams(notation, otf, trackId) {
+    const table = otf?.chords || [];
+    const mine = (otf?.chord_diagrams || [])
+        .filter(d => d.track === trackId && table[d.chord]);
+    if (!mine.length) return notation;
+    const byMeasure = new Map();
+    for (const d of mine) {
+        if (!byMeasure.has(d.measure)) byMeasure.set(d.measure, []);
+        byMeasure.get(d.measure).push({ tick: d.tick, index: d.chord, chord: table[d.chord] });
+    }
+    return notation.map(m => {
+        const diagrams = byMeasure.get(m.measure);
+        return diagrams ? { ...m, diagrams } : m;
     });
 }
 

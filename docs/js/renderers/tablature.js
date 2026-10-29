@@ -9,6 +9,7 @@ import {
     parseTimeSignature,
 } from './measure-timing.js';
 import { isPercussionTrack } from './otf-tracks.js';
+import { renderChordBox, chordBoxGeometry, CHORD_BOX_HEIGHT } from './chord-box.js';
 
 /**
  * Build an HTML element with a class and TEXT content.
@@ -29,6 +30,19 @@ function el(tag, className, text) {
 
 /** Shortest silence worth a glyph: a 32nd. Slivers are rounding, not rests. */
 const MIN_REST = 60;
+
+/**
+ * TablEdit's bend label for a bend of `frets` semitones (the target's fret
+ * minus the bent note's): 1 = ½, 2 = full, 3 = 1½, 4 = 2; the sign is the
+ * direction and is not printed. Beyond 4, whole steps (5 = 2½). Pure.
+ */
+export function bendLabel(frets) {
+    const n = Math.abs(frets);
+    if (n === 0) return '';
+    if (n === 2) return 'full';
+    const whole = Math.floor(n / 2);
+    return `${whole || ''}${n % 2 ? '½' : ''}`;
+}
 
 /**
  * Silent spans inside a measure that deserve rest glyphs.
@@ -145,6 +159,7 @@ const FX_POINT_MARKS = [
     ['artificial-harmonic', 'A.H.'],
     ['tap', 'T'],
     ['vibrato', null],           // short wavy line
+    ['bend', null],              // up arrow (amount: the bend-arrow label)
     ['bend-release', null],      // up-then-down arrow
     ['slap', 'S'],
 ];
@@ -723,8 +738,14 @@ export class TabRenderer {
         // Effects band (note.fx point/run marks), same rule: uniform, and
         // only when the tab has something to put in it.
         this._fxLanes = fxLanesFor(notation);
+        // Chord-diagram band (G15d3): a chord box's height, between the text
+        // band above and the effects band below, and only when this track
+        // carries diagrams. Texts shift up by it (see renderRow), so the
+        // staff-relative bands keep their places.
+        this._chordBand = notation.some(m => m.diagrams && m.diagrams.length)
+            ? CHORD_BOX_HEIGHT + 2 : 0;
         this.options.topMargin = this._baseTopMargin + (hasTextBand ? 32 : 0)
-            + this._fxLanes.band;
+            + this._fxLanes.band + this._chordBand;
 
         // Calculate responsive layout (against the real width measured above)
         this._calculateLayout(layoutWidth);
@@ -938,13 +959,15 @@ export class TabRenderer {
      */
     static REPEAT_START_WIDTH = 14;
     static REPEAT_END_WIDTH = 12;
+    static END_BAR_WIDTH = 8;
 
     _adornmentsFor(measure, signatureMark) {
         const repeatLead = measure.repeatStart ? TabRenderer.REPEAT_START_WIDTH : 0;
         const sigLead = signatureMark ? this._sigInset(signatureMark) : 0;
         return {
             leading: repeatLead + sigLead,
-            trailing: measure.repeatEnd ? TabRenderer.REPEAT_END_WIDTH : 0,
+            trailing: measure.repeatEnd ? TabRenderer.REPEAT_END_WIDTH
+                : (measure.endBar ? TabRenderer.END_BAR_WIDTH : 0),
             sigX: repeatLead,
         };
     }
@@ -1168,6 +1191,8 @@ export class TabRenderer {
         // 11px higher ("C" at beat 1.5 under "Press F-12 ..." otherwise
         // prints on top of it).
         const textLaneEnds = [-Infinity, -Infinity];
+        // Right edge of the last chord box drawn in this row (they never overlap).
+        let chordBoxEnd = -Infinity;
 
         measures.forEach((measure, mi) => {
             const geom = measureGeoms[mi];
@@ -1189,6 +1214,8 @@ export class TabRenderer {
             if (measure.repeatEnd && mi < measures.length - 1) {
                 const endX = x + measureWidth;
                 this.drawRepeatEndBarline(svg, endX, opt.topMargin, stringsBottom, opt);
+            } else if (measure.endBar && mi < measures.length - 1) {
+                this.drawEndBarline(svg, x + measureWidth, opt.topMargin, stringsBottom, opt);
             }
 
             // Draw ONE ending bracket per contiguous run of same-numbered
@@ -1206,6 +1233,14 @@ export class TabRenderer {
                 // later rows draw the bracket line without re-stamping "N."
                 this.drawEndingBracket(svg, x, runWidth, opt.topMargin, measure.ending,
                     opt, !!measure.endingStart);
+            }
+
+            // Jump mark (Signo / Da Signo / Coda / Al Coda), right-aligned
+            // on the measure-number baseline so it can't meet the ending
+            // bracket above it or the section label above that.
+            if (measure.jump) {
+                this.drawJumpMark(svg, x + measureWidth - 4 - this._adornmentsFor(measure, null).trailing, opt.topMargin - 8,
+                    measure.jump, opt, measure.measure);
             }
 
             // Time-signature glyph at signature changes (and measure 1)
@@ -1244,7 +1279,8 @@ export class TabRenderer {
                         : (tx >= textLaneEnds[1] + 6 ? 1 : 0);
                     textLaneEnds[lane] = tx + 5.5 * t.text.length;
                     // ...and above the effects band, when there is one
-                    const annY = opt.topMargin - 34 - this._fxLanes.band - lane * 11;
+                    const annY = opt.topMargin - 34 - this._fxLanes.band
+                        - (this._chordBand || 0) - lane * 11;
                     const annText = this.createText(tx, annY, t.text, {
                         fontSize: '10px',
                         fill: opt.fretColor,
@@ -1255,6 +1291,36 @@ export class TabRenderer {
                     annText.setAttribute('data-measure', measure.measure);
                     annText.setAttribute('data-tick', t.tick || 0);
                     svg.appendChild(annText);
+                }
+            }
+
+            // Chord diagrams (G15d3): a small box above the staff at the
+            // anchor's tick, centred on it. A name already printed by a text
+            // annotation at the same tick is not printed again; boxes that
+            // would overlap are pushed right. A name-only chord is just text.
+            if (measure.diagrams && measure.diagrams.length) {
+                const boxTop = opt.topMargin - 34 - this._fxLanes.band
+                    - this._chordBand + 4;
+                for (const d of measure.diagrams) {
+                    const name = (d.chord.name || '').trim();
+                    const printed = name && (measure.texts || []).some(
+                        t => (t.tick || 0) === (d.tick || 0) && (t.text || '').trim() === name);
+                    const showName = !printed;
+                    const size = chordBoxGeometry(d.chord, { showName });
+                    if (size.nameOnly && !size.name) continue;   // nothing left to draw
+                    const cx = geom.noteX0 + geom.noteOffset + (d.tick / geom.ticks) * geom.noteW;
+                    let bx = Math.max(opt.leftMargin - 10, Math.min(cx - size.width / 2, rowRight - size.width));
+                    bx = Math.max(bx, chordBoxEnd + 2);
+                    chordBoxEnd = bx + size.width;
+                    const box = renderChordBox(d.chord, {
+                        x: bx,
+                        y: size.nameOnly ? boxTop + CHORD_BOX_HEIGHT - 10 : boxTop,
+                        showName, ink: opt.fretColor, muted: opt.mutedColor,
+                    });
+                    box.setAttribute('data-measure', measure.measure);
+                    box.setAttribute('data-tick', d.tick || 0);
+                    box.setAttribute('data-chord', d.index);
+                    svg.appendChild(box);
                 }
             }
 
@@ -1433,6 +1499,8 @@ export class TabRenderer {
         const finalMeasure = measures[measures.length - 1];
         if (finalMeasure && finalMeasure.repeatEnd) {
             this.drawRepeatEndBarline(svg, endX, opt.topMargin, stringsBottom, opt);
+        } else if (finalMeasure && finalMeasure.endBar) {
+            this.drawEndBarline(svg, endX, opt.topMargin, stringsBottom, opt);
         } else {
             const endBar = this.createLine(endX, opt.topMargin, endX, stringsBottom, opt.measureLineColor);
             svg.appendChild(endBar);
@@ -1607,6 +1675,14 @@ export class TabRenderer {
             } else if (fx === 'vibrato') {
                 svg.appendChild(svgPath(
                     `M ${cx} ${y - 3} q 1.25 -2.5 2.5 0 t 2.5 0 t 2.5 0 t 2.5 0`, fx));
+            } else if (fx === 'bend') {
+                // bend: one rising stroke, arrowhead at the tip
+                const tipX = cx + 9, tipY = y - 6;
+                const ang = Math.atan2(6, 9);
+                const h = (a) => `${tipX - 3 * Math.cos(a)} ${tipY - 3 * Math.sin(a)}`;
+                svg.appendChild(svgPath(
+                    `M ${cx} ${y} L ${tipX} ${tipY}`
+                    + ` M ${h(ang - 0.5)} L ${tipX} ${tipY} L ${h(ang + 0.5)}`, fx));
             } else {
                 // bend-release: up, then back down, arrowhead at the end
                 const tipX = cx + 9, tipY = y;
@@ -1804,10 +1880,9 @@ export class TabRenderer {
                 const hasTechnique = n2.tech === 'h' || n2.tech === 'p' || n2.tech === '/';
                 const hasTie = n2.tie === true;
 
-                // Bend/choke: a tilted-up arrow from the SOURCE note (the
-                // one being bent) to the bracketed target, with the bend
-                // amount above the tip (TablEdit draws "½" for its
-                // quarter-tone choke; playback matches BEND_SEMITONES).
+                // Bend: a tilted-up arrow from the SOURCE note (the one being
+                // bent) to the bracketed target, with the bend amount above
+                // the tip. The amount is the fret difference (G15d2).
                 if (n2.tech === 'b') {
                     const n1 = notes[i - 1];
                     if (n2.x - n1.x > 60) continue;
@@ -1825,7 +1900,7 @@ export class TabRenderer {
                     arrow.setAttribute('stroke-width', '1.2');
                     arrow.setAttribute('class', 'bend-arrow');
                     svg.appendChild(arrow);
-                    const amt = this.createText(x2 + 1, y2 - 3, '½', {
+                    const amt = this.createText(x2 + 1, y2 - 3, bendLabel(n2.fret - n1.fret), {
                         fontSize: '9px',
                         fill: this.options.mutedColor,
                         textAnchor: 'middle'
@@ -1954,6 +2029,44 @@ export class TabRenderer {
 
         // Thick bar
         svg.appendChild(this.createRect(x - 3, topY, 3, bottomY - topY, opt.measureLineColor));
+    }
+
+    /**
+     * Draw an end bar (thin, then thick): a repeat end without the dots.
+     */
+    drawEndBarline(svg, x, topY, bottomY, opt) {
+        const thin = this.createLine(x - 6, topY, x - 6, bottomY, opt.measureLineColor);
+        thin.setAttribute('class', 'end-bar');
+        svg.appendChild(thin);
+        const thick = this.createRect(x - 3, topY, 3, bottomY - topY, opt.measureLineColor);
+        thick.setAttribute('class', 'end-bar');
+        svg.appendChild(thick);
+    }
+
+    /**
+     * Draw a jump mark. Signo and Coda are SMuFL glyphs when Bravura is
+     * loaded (the Unicode 𝄋 𝄌 are missing from many phone fonts, so the
+     * fallback is the word); Da Signo and Al Coda are the usual text.
+     */
+    drawJumpMark(svg, x, y, jump, opt, measureNumber) {
+        const bravura = TabRenderer._bravuraReady;
+        const spec = {
+            'signo': bravura ? { text: '\uE047', bravura: true } : { text: 'Segno' },
+            'coda': bravura ? { text: '\uE048', bravura: true } : { text: 'Coda' },
+            'da-signo': { text: 'D.S.' },
+            'al-coda': { text: 'To Coda' },
+        }[jump];
+        if (!spec) return;
+        const label = this.createText(x, y, spec.text, {
+            fontSize: spec.bravura ? '18px' : '10px',
+            fill: opt.fretColor,
+            fontWeight: spec.bravura ? '400' : '700',
+            textAnchor: 'end',
+        });
+        if (spec.bravura) label.setAttribute('font-family', 'Bravura');
+        label.setAttribute('class', `jump-mark jump-${jump}`);
+        label.setAttribute('data-measure', measureNumber);
+        svg.appendChild(label);
     }
 
     /**

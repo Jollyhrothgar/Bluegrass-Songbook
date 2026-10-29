@@ -151,3 +151,18 @@ Files in `downloads/` are `{id}.tef` (manual) or `{id}_tef.tef` (scraper).
 - The Python parser is the oracle for the in-browser JS port. After any
   legitimate parser change, regenerate the golden fixture
   (`docs/js/tef-import/__fixtures__/gen_golden.py`, see the tab-debug skill).
+
+## What the importers don't keep (G15e)
+
+`tef_parser/skipped.py` (JS twin `docs/js/tef-import/skipped.js`) walks the
+raw component records and counts what OTF drops: tempo changes, MIDI changes,
+scale diagrams, accent/crescendo, slurs, picking marks with no note, special
+characters, percussion, free-text lines (V3 block at pointer 0x4C), tapping /
+vibrato / tremolo-bar amounts, and unknown component types (`other`). The
+result is `TEFFile.skipped` -> `OTFDocument.skipped` -> `x_source.skipped`
+(only when non-zero); `converter.py` and `spike/regen_parsed.py` carry it
+through their `x_source` rewrite. Not counted, on purpose: rests, voices,
+line breaks and spacing/layout marks, stem/beam layout. The key list, labels
+and reasons are in the schema's `x_source` description; the words readers see
+are `docs/js/tef-skipped.js`. A new importer feature that stops dropping
+something must stop counting it. Fixtures: `tests/parser/make_skipped_fixtures.py`.

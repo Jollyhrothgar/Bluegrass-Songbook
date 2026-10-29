@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Orange Blossom Special",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "tenor-banjo",
       "tuning": ["A4", "E4", "A3", "E3"],
       "capo": 2,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -216,7 +217,7 @@
         "events": [
           {"tick": 0, "notes": [{"s": 3, "f": 2, "dur": 480, "finger": "T"}]},
           {"tick": 480, "notes": [{"s": 1, "f": 2, "dur": 480, "finger": "M"}, {"s": 2, "f": 2, "dur": 480, "finger": "I"}]},
-          {"tick": 960, "notes": [{"s": 4, "f": 3, "dur": 480, "finger": "T"}]},
+          {"tick": 960, "notes": [{"s": 4, "f": 3, "dur": 480, "fx": ["choke"], "finger": "T"}]},
           {"tick": 1440, "notes": [{"s": 1, "f": 2, "dur": 480, "finger": "M"}, {"s": 2, "f": 2, "dur": 480, "finger": "I"}]}
         ]
       },
@@ -359,6 +360,10 @@
   "reading_list": [
     {"from_measure": 1, "to_measure": 32},
     {"from_measure": 25, "to_measure": 32}
+  ],
+  "measure_marks": [
+    {"measure": 25, "repeat_start": true, "raw": 64},
+    {"measure": 32, "repeat_end": true, "raw": 128}
   ],
   "x_source": {
     "type": "banjo-hangout",

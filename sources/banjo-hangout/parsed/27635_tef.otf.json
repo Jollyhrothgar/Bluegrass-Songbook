@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Cripple Creek",
     "time_signature": "2/2",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -136,6 +137,10 @@
     "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/c/tab-cripple-creek-27635-352183122024.tef",
     "download_file": "27635_tef_cripple_creek.tef",
     "author": "LyleK",
-    "converted_at": "2026-10-17T22:44:19.949635"
+    "converted_at": "2026-10-17T22:44:19.949635",
+    "skipped": {
+      "picking_marks": 6,
+      "free_text": 1
+    }
   }
 }

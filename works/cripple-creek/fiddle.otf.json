@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Cripple Creek",
     "time_signature": "4/4",
@@ -15,35 +15,40 @@
       "instrument": "fiddle",
       "tuning": ["E5", "A4", "D4", "G3"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "ff"
     },
     {
       "id": "banjo",
       "instrument": "5-string-banjo",
       "tuning": ["E4", "C#4", "A3", "E3", "A4"],
       "capo": 2,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     },
     {
       "id": "guitar",
       "instrument": "6-string-guitar",
       "tuning": ["F#4", "C#4", "A3", "E3", "B2", "F#2"],
       "capo": 2,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "fff"
     },
     {
       "id": "mandolin",
       "instrument": "mandolin",
       "tuning": ["E5", "A4", "D4", "G3"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "fff"
     },
     {
       "id": "bass",
       "instrument": "upright-bass",
       "tuning": ["G2", "D2", "A1", "E1"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -1126,7 +1131,7 @@
         "events": [
           {"tick": 0, "notes": [{"s": 4, "f": 0, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 1, "f": 2, "dur": 480}, {"s": 2, "f": 3, "dur": 480}, {"s": 3, "f": 2, "dur": 480, "fx": ["brush"]}]},
-          {"tick": 960, "notes": [{"s": 1, "f": 3, "dur": 960}, {"s": 2, "f": 0, "dur": 960}, {"s": 3, "f": 0, "dur": 960}, {"s": 4, "f": 0, "dur": 960}, {"s": 5, "f": 2, "dur": 960}, {"s": 6, "f": 3, "dur": 960}]}
+          {"tick": 960, "notes": [{"s": 1, "f": 3, "dur": 960, "dyn": "ff"}, {"s": 2, "f": 0, "dur": 960, "dyn": "ff"}, {"s": 3, "f": 0, "dur": 960, "dyn": "ff"}, {"s": 4, "f": 0, "dur": 960, "dyn": "ff"}, {"s": 5, "f": 2, "dur": 960, "dyn": "ff"}, {"s": 6, "f": 3, "dur": 960, "dyn": "ff"}]}
         ]
       },
       {
@@ -1365,7 +1370,7 @@
         "measure": 34,
         "events": [
           {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 120, "tech": "x"}, {"s": 2, "f": 0, "dur": 120, "tech": "x"}, {"s": 3, "f": 0, "dur": 120, "tech": "x"}, {"s": 4, "f": 0, "dur": 120, "tech": "x"}]},
-          {"tick": 960, "notes": [{"s": 1, "f": 5, "dur": 960}, {"s": 2, "f": 4, "dur": 960}, {"s": 3, "f": 7, "dur": 960}, {"s": 4, "f": 6, "dur": 960}]}
+          {"tick": 960, "notes": [{"s": 1, "f": 5, "dur": 960, "dyn": "ff"}, {"s": 2, "f": 4, "dur": 960, "dyn": "ff"}, {"s": 3, "f": 7, "dur": 960, "dyn": "ff"}, {"s": 4, "f": 6, "dur": 960, "dyn": "ff"}]}
         ]
       },
       {
@@ -1401,7 +1406,7 @@
         "measure": 5,
         "events": [
           {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 2, "f": 4, "dur": 480}]},
+          {"tick": 480, "notes": [{"s": 2, "f": 4, "dur": 480, "dyn": "ff"}]},
           {"tick": 960, "notes": [{"s": 1, "f": 2, "dur": 960}]}
         ]
       },
@@ -1430,7 +1435,7 @@
         "measure": 9,
         "events": [
           {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 2, "f": 4, "dur": 480}]},
+          {"tick": 480, "notes": [{"s": 2, "f": 4, "dur": 480, "dyn": "ff"}]},
           {"tick": 960, "notes": [{"s": 1, "f": 2, "dur": 960}]}
         ]
       },
@@ -1453,14 +1458,14 @@
         "events": [
           {"tick": 0, "notes": [{"s": 1, "f": 2, "dur": 960}]},
           {"tick": 960, "notes": [{"s": 2, "f": 4, "dur": 480}]},
-          {"tick": 1440, "notes": [{"s": 2, "f": 3, "dur": 480}]}
+          {"tick": 1440, "notes": [{"s": 2, "f": 3, "dur": 480, "dyn": "ff"}]}
         ]
       },
       {
         "measure": 13,
         "events": [
           {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 2, "f": 4, "dur": 480}]},
+          {"tick": 480, "notes": [{"s": 2, "f": 4, "dur": 480, "dyn": "ff"}]},
           {"tick": 960, "notes": [{"s": 1, "f": 2, "dur": 960}]}
         ]
       },
@@ -1483,14 +1488,14 @@
         "events": [
           {"tick": 0, "notes": [{"s": 1, "f": 2, "dur": 960}]},
           {"tick": 960, "notes": [{"s": 2, "f": 4, "dur": 480}]},
-          {"tick": 1440, "notes": [{"s": 2, "f": 3, "dur": 480}]}
+          {"tick": 1440, "notes": [{"s": 2, "f": 3, "dur": 480, "dyn": "ff"}]}
         ]
       },
       {
         "measure": 17,
         "events": [
           {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 2, "f": 4, "dur": 480}]},
+          {"tick": 480, "notes": [{"s": 2, "f": 4, "dur": 480, "dyn": "ff"}]},
           {"tick": 960, "notes": [{"s": 1, "f": 2, "dur": 960}]}
         ]
       },
@@ -1519,7 +1524,7 @@
         "measure": 21,
         "events": [
           {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 2, "f": 4, "dur": 480}]},
+          {"tick": 480, "notes": [{"s": 2, "f": 4, "dur": 480, "dyn": "ff"}]},
           {"tick": 960, "notes": [{"s": 1, "f": 2, "dur": 960}]}
         ]
       },
@@ -1548,7 +1553,7 @@
         "measure": 25,
         "events": [
           {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 2, "f": 4, "dur": 480}]},
+          {"tick": 480, "notes": [{"s": 2, "f": 4, "dur": 480, "dyn": "ff"}]},
           {"tick": 960, "notes": [{"s": 1, "f": 2, "dur": 960}]}
         ]
       },
@@ -1577,7 +1582,7 @@
         "measure": 29,
         "events": [
           {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 2, "f": 4, "dur": 480}]},
+          {"tick": 480, "notes": [{"s": 2, "f": 4, "dur": 480, "dyn": "ff"}]},
           {"tick": 960, "notes": [{"s": 1, "f": 2, "dur": 960}]}
         ]
       },
@@ -1606,15 +1611,15 @@
         "measure": 33,
         "events": [
           {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 2, "f": 4, "dur": 480}]},
+          {"tick": 480, "notes": [{"s": 2, "f": 4, "dur": 480, "dyn": "ff"}]},
           {"tick": 960, "notes": [{"s": 1, "f": 2, "dur": 960}]}
         ]
       },
       {
         "measure": 34,
         "events": [
-          {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 960}]},
-          {"tick": 960, "notes": [{"s": 3, "f": 0, "dur": 960}]}
+          {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 960, "dyn": "ff"}]},
+          {"tick": 960, "notes": [{"s": 3, "f": 0, "dur": 960, "dyn": "ff"}]}
         ]
       },
       {
@@ -1772,6 +1777,31 @@
     {"from_measure": 1, "to_measure": 33},
     {"from_measure": 2, "to_measure": 32},
     {"from_measure": 34, "to_measure": 35}
+  ],
+  "measure_marks": [
+    {"measure": 10, "raw": 7},
+    {"measure": 26, "raw": 7}
+  ],
+  "chords": [
+    {"name": "C", "frets": [2, 1, 0, 2, 0, null], "fingers": [3, 1, null, 2, null, null]},
+    {"name": "Cadd9", "frets": [0, 1, 0, 2, 0, null], "fingers": [null, 1, null, 2, null, null]},
+    {"name": "D7", "frets": [0, 1, 2, 0, null, null], "fingers": [null, 1, 2, null, null, null]},
+    {"name": "F", "frets": [3, 1, 2, null, null, null], "fingers": [3, 1, 2, null, null, null]},
+    {"name": "D", "frets": [4, 3, 2, 0, null, null], "fingers": [4, 2, 1, null, null, null]},
+    {"name": "D6", "frets": [0, 0, 2, 4, null, null], "fingers": [null, null, 1, 3, null, null]},
+    {"name": "C", "frets": [5, 5, 5, null, 0, null], "fingers": [1, 1, 1, null, null, null]},
+    {"name": "F", "frets": [7, 6, 5, null, null, null], "fingers": [4, 2, 1, null, null, null], "first_fret": 3},
+    {"name": "G", "frets": [9, 8, 7, 0, 0, null], "fingers": [4, 2, 1, null, null, null], "first_fret": 5},
+    {"name": "Em", "frets": [2, 0, 0, 2, 0, null], "fingers": [3, null, null, 2, null, null]},
+    {"name": "Em", "frets": [5, 5, 4, null, null, null], "fingers": [4, 3, 2, null, null, null]},
+    {"name": "Em", "frets": [5, 5, 4, null, null, null], "fingers": [3, 2, 1, null, null, null]},
+    {"name": "Am", "frets": [2, 1, 2, null, null, null], "fingers": [3, 1, 2, null, null, null]},
+    {"name": "A", "frets": [2, 2, 2, null, null, null], "fingers": [1, 1, 1, null, null, null]},
+    {"name": "A", "frets": [2, 2, 2, 2, null, null], "fingers": [1, 1, 1, 1, null, null]},
+    {"name": "D", "frets": [7, 7, null, null, null, null], "fingers": [3, 2, null, null, null, null], "first_fret": 3},
+    {"name": "D", "frets": [null, 5, 5, null, null, null], "fingers": [null, 3, 2, null, null, null]},
+    {"name": "D", "frets": [7, 7, null, null, null, null], "fingers": [3, 2, null, null, null, null], "first_fret": 3},
+    {"name": "D", "frets": [null, 5, 5, null, null, null], "fingers": [null, 3, 2, null, null, null]}
   ],
   "x_source": {
     "type": "fiddle-hangout",

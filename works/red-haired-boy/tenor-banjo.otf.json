@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Red Haired Boy",
     "time_signature": "4/4",
@@ -16,7 +16,8 @@
       "instrument": "tenor-banjo",
       "tuning": ["G4", "D4", "G3", "D3"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -60,7 +61,7 @@
         "events": [
           {"tick": 0, "notes": [{"s": 2, "f": 0, "dur": 240, "finger": "T"}]},
           {"tick": 240, "notes": [{"s": 2, "f": 2, "dur": 240, "tech": "h"}]},
-          {"tick": 480, "notes": [{"s": 2, "f": 0, "dur": 240, "finger": "R"}, {"s": 3, "f": 0, "dur": 240, "tech": "b"}]},
+          {"tick": 480, "notes": [{"s": 2, "f": 0, "dur": 240, "finger": "R"}, {"s": 3, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240, "finger": "I"}, {"s": 3, "f": 4, "dur": 240, "tech": "h"}]},
           {"tick": 960, "notes": [{"s": 3, "f": 5, "dur": 480, "finger": "T"}]},
           {"tick": 1440, "notes": [{"s": 3, "f": 4, "dur": 240, "finger": "R"}]},
@@ -108,7 +109,7 @@
         "events": [
           {"tick": 0, "notes": [{"s": 2, "f": 0, "dur": 240, "finger": "T"}]},
           {"tick": 240, "notes": [{"s": 2, "f": 2, "dur": 240, "tech": "h"}]},
-          {"tick": 480, "notes": [{"s": 2, "f": 0, "dur": 240, "finger": "R"}, {"s": 3, "f": 0, "dur": 240, "tech": "b"}]},
+          {"tick": 480, "notes": [{"s": 2, "f": 0, "dur": 240, "finger": "R"}, {"s": 3, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240, "finger": "I"}, {"s": 3, "f": 4, "dur": 240, "tech": "h"}]},
           {"tick": 960, "notes": [{"s": 3, "f": 5, "dur": 480, "finger": "T"}]},
           {"tick": 1440, "notes": [{"s": 2, "f": 0, "dur": 240, "finger": "R"}]},
@@ -124,7 +125,7 @@
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240, "finger": "I"}, {"s": 2, "f": 5, "dur": 240, "tech": "h"}]},
           {"tick": 960, "notes": [{"s": 2, "f": 3, "dur": 240, "finger": "T"}]},
           {"tick": 1200, "notes": [{"s": 2, "f": 2, "dur": 240, "tech": "p"}]},
-          {"tick": 1440, "notes": [{"s": 2, "f": 0, "dur": 240, "finger": "R"}, {"s": 3, "f": 0, "dur": 240, "tech": "b"}]},
+          {"tick": 1440, "notes": [{"s": 2, "f": 0, "dur": 240, "finger": "R"}, {"s": 3, "f": 0, "dur": 240}]},
           {"tick": 1680, "notes": [{"s": 1, "f": 0, "dur": 240, "finger": "I"}, {"s": 3, "f": 5, "dur": 240, "tech": "h"}]}
         ]
       },
@@ -214,7 +215,7 @@
         "events": [
           {"tick": 0, "notes": [{"s": 2, "f": 0, "dur": 240, "finger": "T"}]},
           {"tick": 240, "notes": [{"s": 2, "f": 2, "dur": 240, "tech": "h"}]},
-          {"tick": 480, "notes": [{"s": 2, "f": 0, "dur": 240, "finger": "R"}, {"s": 3, "f": 0, "dur": 240, "tech": "b"}]},
+          {"tick": 480, "notes": [{"s": 2, "f": 0, "dur": 240, "finger": "R"}, {"s": 3, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240, "finger": "I"}, {"s": 3, "f": 4, "dur": 240, "tech": "h"}]},
           {"tick": 960, "notes": [{"s": 3, "f": 5, "dur": 480, "finger": "T"}]},
           {"tick": 1440, "notes": [{"s": 2, "f": 0, "dur": 240, "finger": "R"}]},
@@ -230,7 +231,7 @@
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240, "finger": "I"}, {"s": 2, "f": 5, "dur": 240, "tech": "h"}]},
           {"tick": 960, "notes": [{"s": 2, "f": 3, "dur": 240, "finger": "T"}]},
           {"tick": 1200, "notes": [{"s": 2, "f": 2, "dur": 240, "tech": "p"}]},
-          {"tick": 1440, "notes": [{"s": 2, "f": 0, "dur": 240, "finger": "R"}, {"s": 3, "f": 0, "dur": 240, "tech": "b"}]},
+          {"tick": 1440, "notes": [{"s": 2, "f": 0, "dur": 240, "finger": "R"}, {"s": 3, "f": 0, "dur": 240}]},
           {"tick": 1680, "notes": [{"s": 1, "f": 0, "dur": 240, "finger": "I"}, {"s": 3, "f": 5, "dur": 240, "tech": "h"}]}
         ]
       },

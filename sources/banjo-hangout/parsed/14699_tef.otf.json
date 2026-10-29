@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Mississippi Sawyer",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "A4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     },
     {
       "id": "bass",
@@ -440,7 +441,7 @@
       {
         "measure": 37,
         "events": [
-          {"tick": 0, "notes": [{"s": 2, "f": 6, "dur": 480}]},
+          {"tick": 0, "notes": [{"s": 2, "f": 6, "dur": 480, "fx": ["choke"]}]},
           {"tick": 240, "notes": [{"s": 1, "f": 4, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 5, "f": 0, "dur": 480}]},
           {"tick": 720, "notes": [{"s": 1, "f": 4, "dur": 480}]},
@@ -464,6 +465,9 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 0, "text": "TablEdit by www.davehum.com"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 33},
     {"from_measure": 2, "to_measure": 32},

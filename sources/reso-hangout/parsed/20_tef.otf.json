@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Red Wing (easy)",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "6-string-guitar",
       "tuning": ["D4", "B3", "G3", "D3", "B2", "G2"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -300,6 +301,30 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 0, "text": "G"},
+    {"measure": 4, "tick": 0, "text": "C"},
+    {"measure": 5, "tick": 0, "text": "G"},
+    {"measure": 6, "tick": 0, "text": "D"},
+    {"measure": 7, "tick": 0, "text": "G"},
+    {"measure": 8, "tick": 0, "text": "A"},
+    {"measure": 9, "tick": 0, "text": "D"},
+    {"measure": 10, "tick": 0, "text": "G"},
+    {"measure": 12, "tick": 0, "text": "C"},
+    {"measure": 13, "tick": 0, "text": "G"},
+    {"measure": 14, "tick": 0, "text": "D"},
+    {"measure": 15, "tick": 0, "text": "G"},
+    {"measure": 16, "tick": 0, "text": "A"},
+    {"measure": 16, "tick": 1200, "text": "D"},
+    {"measure": 18, "tick": 0, "text": "C"},
+    {"measure": 20, "tick": 0, "text": "G"},
+    {"measure": 22, "tick": 0, "text": "D"},
+    {"measure": 24, "tick": 0, "text": "G"},
+    {"measure": 26, "tick": 0, "text": "C"},
+    {"measure": 28, "tick": 0, "text": "G"},
+    {"measure": 30, "tick": 0, "text": "D"},
+    {"measure": 32, "tick": 0, "text": "G"}
+  ],
   "x_source": {
     "type": "reso-hangout",
     "url": "https://www.hangoutstorage.com/resohangout.com/storage/tabs/r/tab-red-wing-(easy)-2923.tef",
