@@ -41,8 +41,10 @@ npx playwright test --project=mobile   # or --project=desktop
 ```
 
 Config is `playwright.config.js`. It starts `./scripts/server <port> --exact`
-itself on port 8137, outside the 8080-8090 dev range so tests never hit an
-unrelated app. `--exact` fails fast if the port is taken. `PW_PORT=<port>`
+itself, on a port that `e2e/port.js` derives from the worktree's path
+(20000-29999), so parallel worktrees can run E2E at once and tests never hit a
+dev server on 8080-8090. `--exact` fails fast if the port is taken. A spec that
+needs the port imports `E2E_PORT` from `e2e/port.js`. `PW_PORT=<port>`
 overrides it and also opts in to `reuseExistingServer` ("I'm managing that
 server"). Projects:
 

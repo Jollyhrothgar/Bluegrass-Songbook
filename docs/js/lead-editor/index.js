@@ -98,6 +98,10 @@ export function mountLeadEditor({ host, hooks = {} }) {
     // a new empty song always opens in Lyrics, because there is nothing to put chords on yet.
     let preferred = loadMode();
     let mode = 'lyrics';
+    // The app hides the editor view without destroying it (api.setOnScreen). Chords mode's picker and ring hang on
+    // <body>, so they leave with it; the box is parked and comes back where it was.
+    let onScreen = true;
+    let parkedBox = null;
     let showPreview = false;      // phone Source | Preview
     let sel = null;               // selection bar
     // The feature tour (../tour-editor-demo.js) shows the bar for a selection it
@@ -215,7 +219,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
         editor.setEditable(mode !== 'chords');
         showPreview = false;
         applyMode();
-        if (mode === 'chords') enterChords(boxAt);
+        if (mode === 'chords') { if (onScreen) enterChords(boxAt); }
         else view.focus();
     }
     function setShowPreview(on) {
@@ -439,6 +443,7 @@ export function mountLeadEditor({ host, hooks = {} }) {
         resetGestures();
         clearGhost();
         moving = false;
+        parkedBox = null;
         menu.close();
         padForSheet();
         if (editor.getBox()) editor.setBox(null);
@@ -1360,6 +1365,17 @@ export function mountLeadEditor({ host, hooks = {} }) {
         setMode,
         setShowPreview,
         get showPreview() { return showPreview; },
+        /** The editor view left the screen (another view shows) or came back: Chords mode puts its picker away / back. */
+        setOnScreen(on) {
+            if (on === onScreen) return;
+            onScreen = on;
+            if (!on) closeLabelMenu();
+            if (mode !== 'chords') return;
+            if (on) { enterChords(parkedBox); parkedBox = null; return; }
+            const box = editor.getBox();
+            leaveChords();
+            parkedBox = box;
+        },
         getText: () => editor.getText(),
         setText: (t, o) => {
             if (o?.reset) presenting = false;

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proposed G18: chord chart cells and barring</title>
+<link rel="stylesheet" href="mock.css">
+<style>
+    .panel { margin: 26px 0 0; padding-top: 18px; border-top: 1px solid var(--border); }
+    .panel h2 { margin-top: 0; }
+    .panel p { margin: 4px 0 10px; color: var(--text-secondary); max-width: 860px; }
+    .panel p b { color: var(--text); font-weight: 600; }
+    .toggle { display: inline-flex; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; font-size: 13px; margin: 2px 0 8px; }
+    .toggle span { padding: 3px 10px; color: var(--text-secondary); }
+    .toggle span.on { background: var(--accent); color: var(--on-accent); }
+    .toggle-label { font-size: 13px; color: var(--text-secondary); margin-right: 8px; }
+    svg { display: block; overflow: visible; }
+    svg text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .chord { font-size: 21px; font-weight: 500; fill: var(--text); }
+    .hold { font-size: 21px; fill: var(--text-secondary); opacity: 0.55; }
+    .bar { stroke: var(--text); stroke-width: 1.6; }
+    .cellsep { stroke: var(--text-secondary); stroke-width: 1; stroke-dasharray: 3 3; opacity: 0.7; }
+    .string { stroke: var(--text-secondary); stroke-width: 1; opacity: 0.6; }
+    .fret { font: 600 12px var(--mono); fill: var(--text); }
+    .fretbg { fill: var(--bg); }
+    .stem, .beam { stroke: var(--text); stroke-width: 1.4; }
+    .beam { stroke-width: 3; }
+    .ts { font: 700 22px Georgia, 'Times New Roman', serif; fill: var(--text); }
+    .bc { font-size: 12px; fill: var(--text-secondary); letter-spacing: 0.02em; }
+    .cellbox { fill: none; stroke: var(--accent); stroke-width: 1.5; rx: 6; }
+    .celltag { font-size: 11px; fill: var(--accent); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+</style>
+</head>
+<body data-proposal="G18 chord chart: cells and barring">
+<main class="page wide">
+    <h1 class="song-title">Old Home Place: first verse line</h1>
+    <div class="meta">Same four chords, stored once as cells, shown with two different barrings. Tab fret numbers are illustrative.</div>
+
+    <section class="panel">
+        <h2>1. What the chart stores: cells</h2>
+        <p>A <b>cell is boom-chuck boom-chuck</b>: two slots, one bass note each. A slot holds a chord or <b>\</b> (keep playing). No bar lines are stored.</p>
+        <svg id="cells" width="860" height="96"></svg>
+    </section>
+
+    <section class="panel">
+        <h2>2. Shown one cell per bar</h2>
+        <span class="toggle-label">Bars</span><span class="toggle"><span class="on">One cell</span><span>Two cells</span></span>
+        <p>Lines up bar for bar with a tab that puts one roll in a bar: <b>4/4 in eighths (354 tabs)</b>, 2/4 in sixteenths (49), 2/2 in eighths (29).</p>
+        <svg id="one" width="860" height="176"></svg>
+    </section>
+
+    <section class="panel">
+        <h2>3. Shown two cells per bar</h2>
+        <span class="toggle-label">Bars</span><span class="toggle"><span>One cell</span><span class="on">Two cells</span></span>
+        <p>Lines up with a tab that puts two rolls in a bar: <b>4/4 in sixteenths (17 tabs)</b>. Same chords in the same slots, same notes; only the bar lines moved. Both tabs say 4/4.</p>
+        <svg id="two" width="860" height="176"></svg>
+    </section>
+
+    <section class="panel">
+        <h2>4. 3/4: a cell is boom-chuck-chuck</h2>
+        <p>One slot per cell, one cell per bar.</p>
+        <svg id="waltz" width="860" height="176"></svg>
+    </section>
+</main>
+<script src="mock.js"></script>
+<script>
+const NS = 'http://www.w3.org/2000/svg';
+const el = (svg, name, attrs, text) => {
+    const n = document.createElementNS(NS, name);
+    for (const [k, v] of Object.entries(attrs)) n.setAttribute(k, v);
+    if (text != null) n.textContent = text;
+    svg.appendChild(n);
+    return n;
+};
+
+// Open-G banjo shapes, fret per string (1 = high D ... 5 = short G).
+const SHAPES = {
+    G:  {1: 0, 2: 0, 3: 0, 4: 0, 5: 0},
+    B7: {1: 1, 2: 0, 3: 2, 4: 1, 5: 0},
+    C:  {1: 2, 2: 1, 3: 0, 4: 2, 5: 0},
+    D:  {1: 4, 2: 3, 3: 2, 4: 0, 5: 0},
+};
+const LEFT = 52, NOTE_W = 24, STR_GAP = 13;
+
+// One chart row over one tab. `cells` are [[chord, hold], ...]; slots per
+// cell = cells[i].length; notes per cell come from the roll pattern.
+function drawPanel(svg, { cells, cellsPerBar, roll, beams, ts }) {
+    const notesPerCell = roll.length;
+    const cellW = notesPerCell * NOTE_W;
+    const chartY = 26, tabY = 58, tabBottom = tabY + 4 * STR_GAP;
+    const stemTop = tabBottom + 14, stemBottom = stemTop + 26;
+    const nBars = Math.ceil(cells.length / cellsPerBar);
+    const right = LEFT + cells.length * cellW;
+
+    for (let s = 0; s < 5; s++) el(svg, 'line', { class: 'string', x1: LEFT, x2: right, y1: tabY + s * STR_GAP, y2: tabY + s * STR_GAP });
+    el(svg, 'text', { class: 'ts', x: LEFT - 34, y: tabY + 2 * STR_GAP - 4, 'text-anchor': 'middle' }, ts[0]);
+    el(svg, 'text', { class: 'ts', x: LEFT - 34, y: tabY + 2 * STR_GAP + 20, 'text-anchor': 'middle' }, ts[1]);
+
+    cells.forEach((slots, i) => {
+        const x0 = LEFT + i * cellW;
+        const slotW = cellW / slots.length;
+        slots.forEach((c, j) => {
+            const hold = c === '\\';
+            el(svg, 'text', { class: hold ? 'hold' : 'chord', x: x0 + j * slotW + 10, y: chartY }, c);
+        });
+        if (i % cellsPerBar !== 0) el(svg, 'line', { class: 'cellsep', x1: x0, x2: x0, y1: 4, y2: tabBottom });
+        const chord = slots[0];
+        roll.forEach((string, n) => {
+            const x = x0 + n * NOTE_W + NOTE_W / 2;
+            const y = tabY + (string - 1) * STR_GAP;
+            el(svg, 'rect', { class: 'fretbg', x: x - 6, y: y - 7, width: 12, height: 14 });
+            el(svg, 'text', { class: 'fret', x, y: y + 4, 'text-anchor': 'middle' }, SHAPES[chord][string]);
+            el(svg, 'line', { class: 'stem', x1: x, x2: x, y1: stemTop, y2: stemBottom });
+        });
+        // Beam each beat's group (4 notes for eighths in 4/4 halves, 4 sixteenths a beat; 2 eighths in 3/4).
+        const group = beams.group;
+        for (let g = 0; g < notesPerCell; g += group) {
+            const xa = x0 + g * NOTE_W + NOTE_W / 2, xb = x0 + (g + group - 1) * NOTE_W + NOTE_W / 2;
+            for (let b = 0; b < beams.count; b++) el(svg, 'line', { class: 'beam', x1: xa, x2: xb, y1: stemBottom - b * 6, y2: stemBottom - b * 6 });
+        }
+    });
+    for (let b = 0; b <= nBars; b++) {
+        const x = LEFT + Math.min(b * cellsPerBar, cells.length) * cellW;
+        el(svg, 'line', { class: 'bar', x1: x, x2: x, y1: 4, y2: tabBottom });
+    }
+}
+
+const LINE = [['G', '\\'], ['B7', '\\'], ['C', '\\'], ['G', '\\']];
+const FORWARD = [3, 2, 1, 5, 2, 1, 5, 1];   // one forward roll = one cell
+
+drawPanel(document.getElementById('one'), { cells: LINE, cellsPerBar: 1, roll: FORWARD, beams: { count: 1, group: 4 }, ts: ['4', '4'] });
+drawPanel(document.getElementById('two'), { cells: LINE, cellsPerBar: 2, roll: FORWARD, beams: { count: 2, group: 4 }, ts: ['4', '4'] });
+drawPanel(document.getElementById('waltz'), {
+    cells: [['G'], ['C'], ['D'], ['G']], cellsPerBar: 1, roll: [3, 2, 1, 5, 2, 1],
+    beams: { count: 1, group: 2 }, ts: ['3', '4'],
+});
+
+// Panel 1: the stored cells, boxed, with boom/chuck under each slot.
+(() => {
+    const svg = document.getElementById('cells');
+    const cellW = FORWARD.length * NOTE_W, gap = 0;
+    LINE.forEach((slots, i) => {
+        const x0 = LEFT + i * (cellW + gap);
+        el(svg, 'rect', { class: 'cellbox', x: x0 + 4, y: 4, width: cellW - 8, height: 84 });
+        el(svg, 'text', { class: 'celltag', x: x0 + 14, y: 22 }, `cell ${i + 1}`);
+        slots.forEach((c, j) => {
+            const sx = x0 + j * (cellW / 2) + 14;
+            el(svg, 'text', { class: c === '\\' ? 'hold' : 'chord', x: sx, y: 52 }, c);
+            el(svg, 'text', { class: 'bc', x: sx, y: 76 }, 'boom chuck');
+        });
+    });
+})();
+</script>
+</body>
+</html>

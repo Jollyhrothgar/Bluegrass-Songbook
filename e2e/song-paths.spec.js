@@ -5,6 +5,7 @@
 // song has no page and gets 404.html, the same app. Everything that isn't a
 // song stays a hash route on the root.
 import { test, expect } from './fixtures.js';
+import { gotoSearch } from './helpers.js';
 
 const songReady = (page) => expect(page.locator('#song-content .prerender')).toHaveCount(0, { timeout: 20000 });
 const here = (page) => page.evaluate(() => location.pathname + location.hash);
@@ -38,11 +39,17 @@ test.describe('Song paths', () => {
     });
 
     test('opening a search result shows its song path; back and forward follow', async ({ page }) => {
-        await page.goto('/#search');
+        await gotoSearch(page);
         await page.fill('#search-input', 'house of gold');
         await page.locator('.result-item').first().click();
         await songReady(page);
         await expect.poll(() => here(page)).toMatch(/^\/songs\/house-of-gold\//);
+        // Typing schedules a URL update 500 ms later (main.js). Clicking a
+        // result sooner than that must not let it overwrite the song's history
+        // entry with the search; it did whenever the song took over 500 ms to
+        // load, and Forward from the search then went nowhere.
+        await page.waitForTimeout(700);
+        expect(await here(page)).toMatch(/^\/songs\/house-of-gold\//);
 
         await page.goBack();
         await expect.poll(() => here(page)).toMatch(/^\/#search/);

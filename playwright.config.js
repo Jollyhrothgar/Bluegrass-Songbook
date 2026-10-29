@@ -1,13 +1,11 @@
 import { defineConfig, devices } from '@playwright/test';
+import { E2E_PORT } from './e2e/port.js';
 
-// E2E tests use a dedicated port (default 8137) so they never collide with —
-// or silently test against — whatever is running on the human dev default
-// 8080 (or the 8080-8090 auto-increment/--cleanup sweep range).
-// Override with PW_PORT=<port>. Setting PW_PORT explicitly also opts in to
-// reuseExistingServer (i.e. "I'm managing the server on that port myself");
-// otherwise Playwright always starts and owns a fresh server via --exact,
-// which fails fast instead of adopting a foreign process on the port.
-const port = Number(process.env.PW_PORT) || 8137;
+// Playwright starts and owns a fresh server on this worktree's own port
+// (e2e/port.js); --exact fails fast instead of adopting a foreign process on
+// it. PW_PORT=<port> overrides the port and opts in to reuseExistingServer
+// ("I'm managing the server on that port myself").
+const port = E2E_PORT;
 
 export default defineConfig({
   testDir: './e2e',

@@ -11,6 +11,7 @@ import {
     CM, SHEET, BAND, openDisplay, openFrozenOldHomePlace, setLead, leadText, leadReady, setMode, openEditor, boxPos, boxAt, syllableCentres, scrollLineToTop,
     boxState, lineEndPoint, centreOf, touchDrag, along, boxStopKind, stepKinds, segmentRects,
 } from './helpers/lead-editor.js';
+import { navClick } from './helpers.js';
 
 const LEAD = '#editor-lead';
 
@@ -308,6 +309,40 @@ test.describe('Chords mode on a phone', () => {
         await page.locator(`${CM} .cl-chord-glyph`).first().tap();
         await page.locator(`${SHEET} .chm-cell[data-chord="D"]`).tap();
         expect(await leadText(page)).toBe('Amazing [D]grace');
+    });
+
+    // The picker and the ring are fixed bars on <body>, not inside the editor, so hiding the editor view left them on
+    // screen over the next page (the live site, 2026-10-29: the picker over the search results).
+    test('leaving the editor takes the picker and the ring with it; Back opens them again, still in Chords', async ({ page }) => {
+        await openEditor(page, '#edit/old-home-place');
+        await setMode(page, 'chords');
+        await expect(page.locator(SHEET)).toBeVisible();
+        await expect(page.locator('.le-cursor-ring')).toBeVisible();
+        await navClick(page, 'search');
+        await expect(page.locator('#editor-panel')).toBeHidden();
+        await expect(page.locator(SHEET)).toBeHidden();
+        await expect(page.locator('.le-cursor-ring')).toBeHidden();
+        expect(await page.evaluate(() => getComputedStyle(document.documentElement).getPropertyValue('--chm-picker-h'))).toBe('');
+        await page.goBack();
+        await expect(page.locator('#editor-panel')).toBeVisible();
+        await expect(page.locator('#editor-mode-chords')).toHaveAttribute('aria-pressed', 'true');
+        await expect(page.locator(SHEET)).toBeVisible();
+    });
+
+    test('with unsaved edits the picker is gone while the prompt asks; Keep editing brings it back on the same syllable', async ({ page }) => {
+        await openEditor(page);
+        await setLead(page, 'Amazing grace how sweet');
+        await setMode(page, 'chords');
+        const how = (await syllableCentres(page, 'Amazing')).find((s) => s.text.startsWith('how'));
+        await page.touchscreen.tap(how.x, how.y);
+        expect(await boxPos(page)).toBe(how.seam);
+        await navClick(page, 'search');
+        await expect(page.locator('#editor-leave-modal')).toBeVisible();
+        await expect(page.locator(SHEET)).toBeHidden();
+        await page.locator('#editor-leave-modal [data-choice="keep"]').tap();
+        await expect(page.locator('#editor-panel')).toBeVisible();
+        await expect(page.locator(SHEET)).toBeVisible();
+        expect(await boxPos(page)).toBe(how.seam);
     });
 });
 
