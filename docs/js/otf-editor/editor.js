@@ -1383,7 +1383,8 @@ export class OTFEditor {
     _commitAddTrack(key) {
         const preset = TARGET_PRESETS[key];
         if (!preset) return false;
-        const track = makeTrack(preset, this.state.getTracks().map(t => t.id), 'rhythm');
+        const track = makeTrack(preset, this.state.getTracks().map(t => t.id), 'rhythm',
+            key === 'fiddle' ? 'fiddle' : null);   // fiddle borrows the mandolin stave
         this.recorder?.record('addTrack', { track });
         const id = this.state.addTrack(track);
         this.editorRoot?.focus();

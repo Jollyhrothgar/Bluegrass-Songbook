@@ -181,6 +181,18 @@ describe('the editor: Score ▸ Delete track… / Add track…', () => {
         expect(editor.state.trackId).not.toBe('mandolin');
     });
 
+    it('Add track ▸ fiddle is a fiddle track (mandolin stave, its own name)', () => {
+        make();
+        for (let i = 0; i < 2; i++) {
+            scoreItem('Add track…').click();
+            popover().querySelector('.track-add-instrument').value = 'fiddle';
+            popover().querySelector('.confirm-btn').click();
+        }
+        const [a, b] = editor.state.getTracks().slice(-2);
+        expect([a.id, a.instrument, b.id, b.instrument]).toEqual(['fiddle', 'fiddle', 'fiddle-2', 'fiddle']);
+        expect(a.tuning).toEqual(makeTrack('mandolin').tuning);   // GDAE, the mandolin stave
+    });
+
     it('never uses a native dialog', () => {
         make();
         const src = [OTFEditor.prototype.addTrackPrompt, OTFEditor.prototype.deleteTrackPrompt]

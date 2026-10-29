@@ -79,9 +79,13 @@ export function createEmptyOTF(instrument = '5-string-banjo', options = {}) {
  * @param {Iterable<string>} usedIds - ids already taken in the document
  * @param {string} role - 'lead' | 'rhythm' | ...
  */
-export function makeTrack(instrument, usedIds = [], role = 'rhythm') {
+export function makeTrack(instrument, usedIds = [], role = 'rhythm', name = null) {
     const used = new Set(usedIds);
-    const track = createEmptyOTF(instrument).tracks[0];
+    // `name`: an instrument that borrows another's stave (fiddle on the
+    // mandolin's GDAE) keeps its own id and instrument, so the switcher, the
+    // file and the player's voice all say what it is.
+    const preset = createEmptyOTF(instrument).tracks[0];
+    const track = name ? { ...preset, id: name, instrument: name } : preset;
     let id = track.id;
     let n = 2;
     while (used.has(id)) id = `${track.id}-${n++}`;
