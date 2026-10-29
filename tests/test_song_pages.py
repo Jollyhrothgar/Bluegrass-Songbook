@@ -525,7 +525,7 @@ def test_tab_editor_page_has_the_prerender_article_in_the_results_panel(tmp_path
     content = html.split('<div id="results" class="results">', 1)[1]
     assert content.startswith('<article class="prerender">')
     article = content.split("</article>")[0]
-    assert article.count("<h1>") == 1 and "<h1>Free tab editor for TablEdit (.tef) files</h1>" in article
+    assert article.count("<h1>") == 1 and "<h1>Tab Editor</h1>" in article
     assert 2 <= article.count("<p>") <= 3
     assert "<ul>" in article and "Your tabs stay on this device" in article
 
@@ -534,7 +534,7 @@ def test_tab_editor_article_starts_with_the_words_the_app_shows():
     """The app replaces the article with its empty state; the heading and the
     privacy line must be the same words in both."""
     source = (REPO_ROOT / "docs" / "js" / "tab-editor-home.js").read_text()
-    assert "Free tab editor for TablEdit (.tef) files" in source
+    assert "<h1 class=\"bounty-title\">Tab Editor</h1>" in source
     assert "Your tabs stay on this device. Nothing is uploaded unless you submit it to the book." in source
 
 

@@ -30,7 +30,7 @@ describe('tabEditorHomeHtml', () => {
     it('says what the page is, the same words the generated page has', () => {
         const html = tabEditorHomeHtml([]);
         expect(html).toContain('<h1');
-        expect(html).toContain('Free tab editor for TablEdit (.tef) files');
+        expect(html).toContain('<h1 class="bounty-title">Tab Editor</h1>');
         expect(html).toContain('Your tabs stay on this device. Nothing is uploaded unless you submit it to the book.');
     });
 

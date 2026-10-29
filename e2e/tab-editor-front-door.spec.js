@@ -21,7 +21,7 @@ test.describe('the front door, desktop', () => {
     test('/tab-editor/ stays /tab-editor/ and shows the three actions', async ({ page }) => {
         await gotoFrontDoor(page);
         expect(new URL(page.url()).pathname).toBe('/tab-editor/');
-        await expect(page.locator('.tab-home h1')).toHaveText('Free tab editor for TablEdit (.tef) files');
+        await expect(page.locator('.tab-home h1')).toHaveText('Tab Editor');
         await expect(page.locator('.tab-open-file')).toBeVisible();
         await expect(page.locator('.tab-home-new')).toBeVisible();
         await expect(page.locator('.tab-home-mytabs')).toContainText('No tabs yet.');

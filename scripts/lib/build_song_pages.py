@@ -69,13 +69,13 @@ ALL_SONGS_DESCRIPTION = ('Every song in Bluegrass Book, A to Z: chords, lyrics a
                          'for bluegrass, old-time and gospel standards.')
 TAB_EDITOR_DIR = 'tab-editor'
 TAB_EDITOR_SOURCE = 'scripts/lib/build_song_pages.py'   # what dates its sitemap entry, with docs/index.html
-TAB_EDITOR_TITLE = 'Free TablEdit (.tef) tab editor online · Bluegrass Book'
+TAB_EDITOR_TITLE = 'Tab Editor · Bluegrass Book'
 # Says nothing about saving back as .tef until that exists (G15f adds it).
 TAB_EDITOR_DESCRIPTION = ('Open a TablEdit .tef file and edit it in your browser, on a phone or '
                           'a laptop. Free, with no account. Your tabs stay on your device.')
 # The words below are the app's empty state too (docs/js/tab-editor-home.js):
 # the heading and the privacy line must read the same in both.
-TAB_EDITOR_H1 = 'Free tab editor for TablEdit (.tef) files'
+TAB_EDITOR_H1 = 'Tab Editor'
 TAB_EDITOR_PRIVACY = 'Your tabs stay on this device. Nothing is uploaded unless you submit it to the book.'
 # The homepage's own title and description, which a song page swaps for its own.
 HOME_HEAD = re.compile(r'<title>[^<]*</title>\s*<meta name="description" content="[^"]*">')
