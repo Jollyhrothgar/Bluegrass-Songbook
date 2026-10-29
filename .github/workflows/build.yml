@@ -41,10 +41,16 @@ on:
   # use it if the live site ever drifts from main without the commit changing.
   workflow_dispatch:
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# One queue per pull request, and one for main. A group holds one running and
+# one waiting run, and a newer waiting run cancels the older one, so a single
+# shared group (it was "pages" for everything until 2026-10-28) made PR checks
+# cancel each other and wait behind deploys. Now a push to a PR cancels only
+# that PR's older run; runs on main (push, workflow_run, dispatch) keep one
+# queue and are never cancelled mid-run. The deploy job has its own "pages"
+# group below, so two deploys never overlap.
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: ci-${{ github.event_name == 'pull_request' && format('pr-{0}', github.event.pull_request.number) || 'main' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   # The content workflows below fire this one on *every* completion, including the
@@ -201,6 +207,12 @@ jobs:
       (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') ||
       (github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch')
     runs-on: ubuntu-latest
+
+    # Only one deployment at a time, and one in progress is never cancelled
+    # (GitHub's recommended setting for Pages).
+    concurrency:
+      group: pages
+      cancel-in-progress: false
 
     permissions:
       pages: write
