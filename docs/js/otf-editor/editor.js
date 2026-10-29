@@ -11,6 +11,7 @@ import {
     prepareCompactNotation, readingListTimeline, TimelineTiming,
     maxMeasureIn, makePlaybackToVisualMapper, densifyNotation,
     attachOtfDecorations,
+    attachChordDiagrams,
 } from '../renderers/measure-timing.js';
 import { KeyboardHandler } from './keyboard.js';
 import { EditorToolbar } from './toolbar.js';
@@ -1692,6 +1693,7 @@ export class OTFEditor {
         // copy; annotations may target the silent measures, so attach
         // after densify).
         notation = attachOtfDecorations(notation, this.state.otf);
+        notation = attachChordDiagrams(notation, this.state.otf, track.id);
 
         // Repeat signs / ending brackets derive from the reading list;
         // compact presentation keeps WRITTEN numbering (identity), so
