@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proposed G18b3: two docks (desktop)</title>
+<link rel="stylesheet" href="mock.css">
+<style>
+body{padding-bottom:80px}
+.wrap{max-width:1500px;margin:0 auto;padding:8px 24px 0}
+.intro{max-width:860px;font-size:15px;margin:18px 0 6px}
+.cap-h{margin:30px 0 2px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-secondary)}
+.cap-n{margin:0 0 10px;color:var(--text-secondary);font-size:13px;max-width:390px}
+.frames{display:flex;gap:28px;flex-wrap:wrap;align-items:flex-start}
+.fr{position:relative;overflow:hidden;background:var(--bg);border:1px solid var(--border);flex:none;color:var(--text)}
+.sc{position:absolute;inset:0;overflow-y:auto;scrollbar-width:none}
+.sc::-webkit-scrollbar{display:none}
+/* docks */
+.dock{position:absolute;left:0;right:0;z-index:5;display:flex;align-items:center;background:var(--bg);transition:transform .22s ease;font-size:14px}
+.dock.top{top:0;border-bottom:1px solid var(--border)}
+.dock.bot{bottom:0;border-top:1px solid var(--border)}
+.fr.hide .dock.top{transform:translateY(-101%)}
+.fr.hide .dock.bot{transform:translateY(101%)}
+.dock .in{display:flex;align-items:center;width:100%;margin:0 auto}
+.dock .sp{flex:1}
+.ib{width:34px;height:34px;display:grid;place-items:center;border-radius:8px;font-size:18px;color:var(--text)}
+.brand{font:700 19px/1 Georgia,'Times New Roman',serif;letter-spacing:-1px;padding:0 6px}
+.ib svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}
+.edit{display:inline-flex;align-items:center;gap:5px;font-size:14px;font-weight:600;color:var(--accent);padding:5px 11px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--accent);white-space:nowrap}
+.ctl{display:inline-flex;align-items:center;gap:5px;white-space:nowrap;font-size:14px;padding:6px 10px;border-radius:999px;background:var(--bg-secondary);box-shadow:inset 0 0 0 1px var(--border)}
+.ctl b{font-weight:600}
+.ctl .caret{font-size:9px;color:var(--text-secondary)}
+.size{display:inline-flex;align-items:center;gap:0;border-radius:999px;background:var(--bg-secondary);box-shadow:inset 0 0 0 1px var(--border);overflow:hidden}
+.size span{padding:6px 9px;font-size:14px}
+.size .aa{font-weight:600;padding-right:4px;color:var(--text-secondary)}
+.size .pm{font-size:17px;line-height:1;padding:5px 9px}
+.sgc{display:inline-flex;border-radius:999px;box-shadow:inset 0 0 0 1px var(--border);overflow:hidden;background:var(--bg-secondary)}
+.sgc span{padding:6px 10px;font-size:14px;color:var(--text-secondary);white-space:nowrap}
+.sgc span.on{background:var(--accent);color:var(--on-accent);font-weight:600}
+.playslot{width:34px;height:34px;border-radius:50%;border:1.5px dashed var(--border);display:grid;place-items:center;color:var(--text-secondary);font-size:11px;opacity:.7;flex:none}
+/* header */
+.hd h1{font-size:26px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.badge{font-size:11px;font-weight:600;color:var(--text-secondary);box-shadow:inset 0 0 0 1px var(--border);border-radius:999px;padding:2px 8px;letter-spacing:0;white-space:nowrap}
+.credit{display:block;margin-top:4px;font-size:14px;color:var(--text-secondary)}
+.credit .more{color:var(--accent)}
+.prac{font-size:14px;color:var(--text-secondary);margin-top:2px}
+.prac a{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
+/* lyrics */
+.lyr .chart{margin:0}
+.lyr .sec{margin:16px 0 4px}
+.lyr .line{margin-bottom:4px}
+.lyr .sec.first{margin-top:8px}
+/* chart */
+.form{font-size:12px;color:var(--text-secondary);margin:0 0 6px}
+.form b{color:var(--text);font-weight:600}
+.csec{margin:10px 0 14px}
+.csec .cap{display:flex;gap:10px;align-items:baseline;font-size:13px;margin-bottom:4px}
+.csec .cap b{font-size:14px}.csec .cap span{color:var(--text-secondary)}
+.cl{display:grid;grid-template-columns:repeat(var(--bars),1fr);margin-bottom:6px;border-right:2px solid var(--text)}
+.cb{display:flex;border-left:2px solid var(--text)}
+.cc{display:flex;flex:1;min-width:0}
+.sl{flex:1;min-width:0;padding:7px 0;text-align:center;font-size:var(--cf,19px);font-weight:500;line-height:1.2}
+.sl.hold{color:var(--text-secondary);opacity:.5;font-weight:400}
+.sl.carry{opacity:.38}
+.legend{font-size:12px;color:var(--text-secondary);margin:4px 0 0}
+/* invitation */
+.invite{border-top:1px solid var(--border);margin-top:28px;padding-top:18px}
+.invite p{margin:0 0 10px;font-size:15px}
+.invite p b{font-weight:700}
+.invite p span{color:var(--text-secondary)}
+.btn2{display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:14px;padding:8px 14px;border-radius:8px;background:var(--accent);color:var(--on-accent)}
+.btn2.ghost{background:none;color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+/* sheets */
+.scrim{position:absolute;inset:0;background:rgba(0,0,0,.45);z-index:10}
+[data-theme=light] .scrim{background:rgba(0,0,0,.28)}
+.bsheet{position:absolute;left:0;right:0;bottom:0;z-index:11;background:var(--bg-secondary);border-top:1px solid var(--border);border-radius:16px 16px 0 0;padding:8px 16px 18px;max-height:82%;overflow:hidden;box-shadow:0 -10px 30px rgba(0,0,0,.3);font-size:15px}
+.grab{width:36px;height:4px;border-radius:2px;background:var(--border);margin:0 auto 10px}
+.sh-h{display:flex;align-items:center;font-size:17px;font-weight:700;margin-bottom:4px}
+.sh-h .x{margin-left:auto;color:var(--text-secondary);font-size:20px;font-weight:400}
+.gh{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-secondary);padding:12px 0 3px;border-top:1px solid var(--border);margin-top:8px}
+.gh.first{border-top:0;margin-top:0}
+.gh i{font-style:normal;text-transform:none;letter-spacing:0;font-weight:400;margin-left:6px}
+.r{display:flex;align-items:center;gap:12px;padding:9px 0}
+.r .lab{flex:1}
+.r.dis{opacity:.5}
+.r .ic{width:22px;text-align:center;color:var(--text-secondary)}
+.r.ln{border-bottom:1px solid var(--border)}
+.ck{width:17px;height:17px;border:1.5px solid var(--text-secondary);border-radius:4px;flex:none;position:relative}
+.ck.on{border-color:var(--accent);background:var(--accent)}
+.ck.on::after{content:'';position:absolute;left:5px;top:1px;width:4px;height:9px;border:solid var(--on-accent);border-width:0 2px 2px 0;transform:rotate(45deg)}
+.sgc.sq{border-radius:7px}.sgc.sq span{padding:4px 10px;font-size:13px}
+.fact{display:grid;grid-template-columns:96px 1fr;gap:10px;padding:9px 0;border-bottom:1px solid var(--border);font-size:14px}
+.fact:last-of-type{border-bottom:0}
+.fact .k{color:var(--text-secondary)}
+.fact .v small{display:block;color:var(--text-secondary);font-size:12px;margin-top:2px}
+.ex{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--text-secondary);box-shadow:inset 0 0 0 1px var(--border);border-radius:4px;padding:0 4px;margin-left:6px;vertical-align:1px}
+.sh-foot{border-top:1px solid var(--border);margin-top:6px;padding-top:12px;display:flex;align-items:center;gap:12px}
+.sh-foot small{color:var(--text-secondary);font-size:12px}
+
+.wrap{max-width:1500px}
+.cap-n{max-width:900px}
+.fr.dk{width:1440px;height:900px;border-radius:10px}
+.dk .pg{max-width:1120px;margin:0 auto;padding:60px 24px 90px}
+.dk h1{font-size:30px}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:64px;align-items:start;margin-top:12px}
+.colhead{padding:6px 0;border-bottom:1px solid var(--text);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+.dk .cl{margin-bottom:8px}
+.dk .dock.top{height:48px}
+.dk .dock.bot{height:60px}
+.dk .dock .in{max-width:1120px;padding:0 24px;gap:14px}
+.dk .dock.top .in{padding:0 20px}
+.dk .dock.bot .in{gap:18px}
+.dk .lyr .chart{font-size:17px}
+.dk .lyr .sec{margin:20px 0 6px}
+.dk .lyr .sec.first{margin-top:12px}
+.modal{position:absolute;z-index:11;left:50%;top:50%;transform:translate(-50%,-50%);width:520px;background:var(--bg-secondary);border:1px solid var(--border);border-radius:12px;padding:20px 24px 18px;box-shadow:0 20px 60px rgba(0,0,0,.45);font-size:15px}
+.modal .sh-h{font-size:19px}
+.modal .fact{grid-template-columns:110px 1fr;font-size:15px}
+</style></head>
+<body data-proposal="G18b3 two docks, desktop">
+<main class="wrap">
+<p class="intro"><b>What changed versus today.</b> No bordered, padded card: the song is one flat surface, framed by a max width (here 1120 px), with hairlines under the column heads. The top band (Search, Add Song, Favorites, Lists, account) becomes a thin dock of <i>&larr; BB search Edit &#8943;</i>, and the pill row (Key, Display, Info, Arrangement) becomes a bottom dock: Key, Size, View (Lyrics / Lyrics + chart / Chart), Display, with room for Play. Both docks hide on scroll down. The credit line opens Details, which is now a centered popover holding the song's facts. The song text starts a little higher and, with both docks hidden, nothing else competes with it. Add <code>?theme=dark</code> for dark.</p>
+<div class="frames" id="frames" style="display:block"></div>
+</main>
+<script src="mock.js"></script>
+<script>
+// mock.js adds a header and a tab we don't want here
+document.querySelector('.proposed-tab')?.remove(); document.querySelector('header.top')?.remove();
+const LYR = {
+ 'Verse 1': ["It's been [A]ten long [C#7]years since I [D]left my [A]home","In the hollow where I was [E]born","Where the [A]cool fall [C#7]nights make the [D]wood smoke [A]rise","And the fox hunter [E]blows his [A]horn"],
+ 'Verse 2': ["I [A]fell in [C#7]love with a [D]girl from the [A]town","I thought that she would be [E]true","[A]I ran [C#7]away to [A][D]Charlottesville","And worked in a [E]sawmill [A]too"],
+ 'Chorus': ["[E]What have they done to the old home [A]place","[B7]Why did they tear it [E]down","And [A]why did I [C#7]leave my plow [D]in the [A]field","And look for a [E]job in the [A]town"],
+ 'Verse 3': ["Well the [A]girl ran [C#7]off with [D]somebody [A]else","The tariffs took all my [E]pay","[A]And here I [C#7]stand where the old [D]home [A]stood","Before they [E]took it [A]away"],
+ 'Verse 4': ["Now the [A]geese fly [C#7]south and the cold [D]wind [A]moans","As I stand her and hang my [E]head","[A]I've lost my [C#7]love I've [D]lost my [A]home","And now I [E]wish that I was [A]dead"],
+};
+const FORM = ['Verse 1','Verse 2','Chorus','Verse 3','Verse 4','Chorus','Chorus'];
+const CHART = {
+ Verse: ['| A \\ | C#7 \\ | D \\ | A \\ |','| \\ \\ | \\ \\ | E \\ | \\ \\ |','| A \\ | C#7 \\ | D \\ | A \\ |','| \\ \\ | E \\ | A \\ | \\ \\ |'],
+ Chorus: ['| E \\ | \\ \\ | A \\ | \\ \\ |','| B7 \\ | \\ \\ | E \\ | \\ \\ |','| A \\ | C#7 \\ | D \\ | A \\ |','| \\ \\ | E \\ | A \\ | \\ \\ |'],
+};
+const esc = (s) => s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+function lyricLine(line) {
+    const segs = []; let chord = '';
+    for (const p of line.split(/(\[[^\]]+\])/).filter(Boolean)) {
+        if (p[0] === '[') { if (chord) segs.push([chord, '']); chord = p.slice(1, -1); }
+        else { segs.push([chord, p]); chord = ''; }
+    }
+    if (chord) segs.push([chord, '']);
+    return `<div class="line">${segs.map(([c, t]) => `<span class="seg"><span class="ch">${chordGlyph(c)}</span><span>${esc(t) || ' '}</span></span>`).join('')}</div>`;
+}
+const lyricsHtml = (fs) => `<div class="lyr"><div class="chart" style="font-size:${fs}px">${FORM.map((n, i) =>
+    `<div class="sec${i ? '' : ' first'}">${n}</div>${LYR[n].map(lyricLine).join('')}`).join('')}</div></div>`;
+function chartHtml(cf) {
+    const sec = (name, cap) => `<div class="csec"><div class="cap"><b>${name}</b><span>${cap}</span></div>${CHART[name].map((row, li) => {
+        const cells = row.split('|').slice(1, -1).map(c => c.trim().split(/\s+/)); let cur = null;
+        return `<div class="cl" style="--bars:${cells.length}">${cells.map((c, idx) => `<div class="cb"><div class="cc">${c.map((s, si) => {
+            if (s !== '\\') { cur = s; return `<span class="sl">${chordGlyph(s)}</span>`; }
+            if (li > 0 && idx === 0 && si === 0) return `<span class="sl carry">${chordGlyph('A')}</span>`;
+            return `<span class="sl hold">\\</span>`; }).join('')}</div></div>`).join('')}</div>`; }).join('')}</div>`;
+    return `<div style="--cf:${cf}px">${sec('Verse', 'sung 4 times')}${sec('Chorus', 'sung 3 times')}
+    <p class="form">Form: <b>Verse</b> &middot; <b>Verse</b> &middot; <b>Chorus</b> &middot; <b>Verse</b> &middot; <b>Verse</b> &middot; <b>Chorus</b> &middot; <b>Chorus</b></p>
+    <p class="legend">Faint <i>\</i>: keep playing. Faint chord at a line's start: carried over.</p></div>`;
+}
+const SEARCH = '<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>';
+const header = () => `<div class="hd"><h1>Old Home Place <span class="badge">Just edited</span></h1>
+ <span class="credit">Written by Dean Webb and Mitchell Jayne <span class="more">&rsaquo;</span></span>
+ <div class="prac">Practice: <a>Strum Machine</a> &middot; <a>YouTube</a></div></div>`;
+const topDock = (maxw) => `<div class="dock top" style="height:44px"><div class="in" style="max-width:${maxw};padding:0 8px"><span class="ib">&larr;</span><span class="brand">BB</span><span class="sp"></span><span class="ib">${SEARCH}</span><span class="edit">&#9999;&#65039; Edit</span><span class="ib" style="font-size:20px">&#8943;</span></div></div>`;
+const invite = () => `<div class="invite"><p><b>See something wrong? Edit this song.</b> <span>Every fix makes the book better.</span></p><span class="btn2 ghost">&#9999;&#65039; Edit this song</span></div>`;
+// docks hide on scroll down, return on scroll up or tap
+function wire(fr, opts = {}) {
+    const sc = fr.querySelector('.sc'); let last = 0;
+    if (opts.scroll != null) sc.scrollTop = opts.scroll === 'end' ? 1e6 : opts.scroll;
+    last = sc.scrollTop; fr.classList.toggle('hide', !!opts.hidden);
+    sc.addEventListener('scroll', () => { const t = sc.scrollTop, d = t - last; if (Math.abs(d) < 6) return;
+        fr.classList.toggle('hide', d > 0 && t > 60); last = t; });
+    sc.addEventListener('click', () => fr.classList.toggle('hide'));
+}
+
+const dockBot = () => `<div class="dock bot"><div class="in">
+ <span class="ctl"><span>Key:</span> <b>A</b></span>
+ <span class="size"><span class="aa">Aa</span><span class="pm">&minus;</span><span class="pm">+</span></span>
+ <span class="sgc"><span>Lyrics</span><span class="on">Lyrics + chart</span><span>Chart</span></span>
+ <span class="ctl">Display</span><span class="sp"></span><span class="playslot" title="room for Play">&#9654;</span></div></div>`;
+const details = `<div class="scrim"></div><div class="modal"><div class="sh-h">Details<span class="x">&times;</span></div>
+  <div class="fact"><span class="k">Written by</span><span class="v">Dean Webb and Mitchell Jayne</span></div>
+  <div class="fact"><span class="k">Recorded by</span><span class="v">J.D. Crowe &amp; the New South (1975), Larry Sparks (1981), &hellip;<span class="ex">example</span></span></div>
+  <div class="fact"><span class="k">Key</span><span class="v">A</span></div>
+  <div class="fact"><span class="k">Tags</span><span class="v">Bluegrass &middot; JamFriendly<span class="ex">example</span></span></div>
+  <div class="fact"><span class="k">Source</span><span class="v">Chart by Mike Beaumier<small>Imported from classic-country, edited Oct 2026<span class="ex">example</span></small></span></div>
+  <div class="sh-foot"><span class="btn2 ghost">Edit details</span><small>Shown to people who can edit this song.</small></div></div>`;
+const host = document.getElementById('frames');
+for (const [title, note, extra] of [
+ ['1. View = Lyrics + chart, docks shown, no card', 'Lyrics on the left, the chart on the right, one flat surface. Scroll inside the frame: both docks hide and return.', ''],
+ ['2. Details popover open', 'Tap the credit line. Facts about the song; Edit details for people allowed to.', details]]) {
+    const box = document.createElement('div');
+    box.innerHTML = `<div class="cap-h">${title}</div><p class="cap-n">${note}</p>
+     <div class="fr dk"><div class="sc"><div class="pg">${header()}
+      <div class="cols"><div><div class="colhead">Lyrics</div>${lyricsHtml(17)}</div>
+      <div style="position:sticky;top:64px"><div class="colhead">Chart</div>${chartHtml(21)}</div></div>${invite()}</div></div>
+     ${topDock('1120px')}${dockBot()}${extra}</div>`;
+    host.appendChild(box);
+    wire(box.querySelector('.fr'), {});
+}
+const f1 = host.querySelector('.fr');
+window.__ly = Math.round(f1.querySelector('.line .seg span:last-child').getBoundingClientRect().top - f1.getBoundingClientRect().top);
+</script></body></html>
