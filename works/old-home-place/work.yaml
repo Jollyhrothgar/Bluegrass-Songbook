@@ -5,6 +5,11 @@ composers:
 - Dean Webb and Mitchell Jayne
 default_key: A
 tags: []
+metadata_provenance:
+  source: user-submission
+  source_id: pending:meta:old-home-place:yhszc59v:c1c0a71a8c20
+  submitted_by: 4bcc2445-5661-4569-b55d-c29e0c101215
+  submitted_at: '2026-10-29'
 parts:
 - type: lead-sheet
   format: chordpro
