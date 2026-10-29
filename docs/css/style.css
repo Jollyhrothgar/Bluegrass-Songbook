@@ -10528,6 +10528,33 @@ body.has-list-context.has-bottomband .container {
     }
 }
 
+/* While EDITING on a narrow band (G17): the session's two buttons (Submit,
+   Done), or the "Discard edits?" question, take a row of their own under the
+   five performance controls. They used to share the one nowrap strip with
+   Import / Submit / Download / Cancel, which ran 582px wide in a 375px box.
+   `.is-narrow-band` is published by tab-controls-sheet.js, the same
+   decision the container query makes. */
+.app-bottomband .tab-controls.is-narrow-band:has(.tab-edit-actions-slot) {
+    flex-wrap: wrap;
+    overflow-x: visible;
+    row-gap: 0.4rem;
+}
+
+.app-bottomband .tab-controls.is-narrow-band .tab-edit-actions-slot,
+.app-bottomband .tab-controls.is-narrow-band .tab-edit-band-actions,
+.app-bottomband .tab-controls.is-narrow-band .tab-edit-bar,
+.app-bottomband .tab-controls.is-narrow-band .tab-edit-actions {
+    flex: 1 1 100%;
+    width: 100%;
+    min-width: 0;
+    order: 5;
+}
+
+.app-bottomband .tab-controls.is-narrow-band .tab-edit-actions .qc-toggle-btn {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
 /* Wanted list on the bounty board */
 .wanted-block {
     margin-bottom: 2rem;

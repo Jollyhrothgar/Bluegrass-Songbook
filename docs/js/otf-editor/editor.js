@@ -14,7 +14,7 @@ import {
     attachChordDiagrams,
 } from '../renderers/measure-timing.js';
 import { KeyboardHandler } from './keyboard.js';
-import { EditorToolbar } from './toolbar.js';
+import { EditorToolbar, PHONE_MAX_WIDTH } from './toolbar.js';
 import { EditorMenuBar } from './menu-bar.js';
 import {
     NoteEntryPopover, AnnotationPopover, TrackNamePopover, ValuePromptPopover,
@@ -522,7 +522,7 @@ export class OTFEditor {
                 border-top: 1px solid var(--border, #ddd);
             }
 
-            @media (max-width: 640px) {
+            @media (max-width: ${PHONE_MAX_WIDTH}px) {
                 .otf-editor-fill .editor-canvas-container { padding: 8px; }
                 .otf-editor-fill .editor-status-bar {
                     gap: 8px;
@@ -604,6 +604,10 @@ export class OTFEditor {
             .status-hint {
                 margin-left: auto;
                 color: var(--text-muted, #888);
+            }
+
+            @media (max-width: ${PHONE_MAX_WIDTH}px), (pointer: coarse) {
+                .status-hint { display: none; }
             }
 
             .status-hint kbd {
@@ -758,14 +762,6 @@ export class OTFEditor {
             }
             .editor-help-notes ul { margin: 6px 0 0; padding-left: 18px; }
             .editor-help-notes li { margin: 2px 0; }
-            .status-help-btn {
-                background: none;
-                border: none;
-                color: inherit;
-                font: inherit;
-                cursor: pointer;
-                padding: 0 4px;
-            }
         `;
 
         if (!document.querySelector('style[data-otf-editor]')) {
@@ -1878,22 +1874,15 @@ export class OTFEditor {
                 <span class="zoom-level" aria-live="polite">100%</span>
                 <button type="button" class="status-zoom-btn zoom-in-button" aria-label="Zoom in">+</button>
             </span>
-            <button type="button" class="status-hint status-help-btn"
-                    title="Keyboard shortcuts">
-                Press <kbd>?</kbd> for help
-            </button>
+            <span class="status-hint">Press <kbd>?</kbd> for help</span>
         `;
 
         // Wire up playback controls (once)
         this._wirePlaybackControls();
 
-        // The help hint is a real <button>, so touch users can open the
-        // overlay at all (it used to be a <span>).
-        const helpBtn = this.statusBar.querySelector('.status-help-btn');
-        helpBtn?.addEventListener('click', () => {
-            this._showHelp();
-            this.editorRoot?.focus();
-        });
+        // Help has ONE button: Help ▸ Keyboard shortcuts (reachable from
+        // ☰ on a phone). The status bar only hints at the key, and not at
+        // all where there is no keyboard.
 
         // Horizontal zoom (A21): bottom right, where score editors keep
         // it, and through the binding table like `{` / `}`

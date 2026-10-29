@@ -13,7 +13,10 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 
 import { EditorMenuBar, MENUS } from '../../otf-editor/menu-bar.js';
-import { EditorToolbar, durationReflects } from '../../otf-editor/toolbar.js';
+import {
+    EditorToolbar, durationReflects, lengthLabel, PHONE_MAX_WIDTH,
+    ARTICULATION_BUTTONS, FX_BUTTONS,
+} from '../../otf-editor/toolbar.js';
 import { EditorState, DURATIONS, EditorMode } from '../../otf-editor/state.js';
 import { OTFEditor } from '../../otf-editor/editor.js';
 import {
@@ -251,6 +254,41 @@ describe('EditorMenuBar — the tree', () => {
         expect(findItem(bar, '✓ Done').disabled).toBe(true);
     });
 
+    it('File draws a rule between the file commands and the session\'s (G17)', () => {
+        bar = mountMenu({
+            fileActions: [
+                { label: '📂 Open…', run: () => {} },
+                { label: '⬇ Download OTF', run: () => {} },
+                { separator: true },
+                { label: 'Cancel', run: () => {} },
+            ],
+        });
+        bar.open('file');
+        const kinds = [...bar.popup.children].map(el =>
+            el.classList.contains('menu-separator') ? '—' : labelOf(el));
+        expect(kinds).toEqual(['📂 Open…', '⬇ Download OTF', '—', 'Cancel']);
+    });
+
+    it('Tempo… is listed once across all the menus (Play), not also in Score', () => {
+        const tempo = MENUS.flatMap(m => m.items.filter(i => i.hook === 'tempo').map(() => m.id));
+        expect(tempo).toEqual(['play']);
+    });
+
+    it('Edit has Delete note (Del) and Note has Rest and Advance — nothing is key-only', () => {
+        bar = mountMenu({ state: stubState({ getNoteAtCursor: () => ({ fret: 2 }) }) });
+        bar.open('edit');
+        const del = findItem(bar, 'Delete note');
+        expect(del.disabled).toBe(false);
+        expect(keyOf(del)).toBe('Del');
+        bar.open('note');
+        expect(findItem(bar, 'Rest (step on without a note)')).toBeTruthy();
+        expect(findItem(bar, 'Advance after each note')).toBeTruthy();
+        bar.open('view');
+        for (const l of ['Quarter', '32nd', 'Triplet', 'Show the grid']) {
+            expect(findItem(bar, l)).toBeTruthy();
+        }
+    });
+
     it('disables what cannot happen right now', () => {
         bar = mountMenu({ state: stubState({ getMeasureCount: () => 1 }) });
         bar.open('edit');
@@ -388,17 +426,48 @@ describe('EditorMenuBar — narrow screens', () => {
         expect(bar.element.classList.contains('is-narrow')).toBe(true);
     });
 
-    it('the ☰ opens the SAME menus as a sheet — touch reaches every command', () => {
+    const heads = (b) => [...b.popup.querySelectorAll('.menu-sheet-head')];
+    const headFor = (b, id) => b.popup.querySelector(`.menu-sheet-head[data-menu="${id}"]`);
+
+    it('the ☰ sheet has one heading per menu; only File starts unfolded (G17)', () => {
+        setWidth(500);
+        bar = mountMenu({ fileActions: [{ label: '📂 Open…', run: () => {} }] });
+        bar.element.querySelector('.menu-hamburger').click();
+        expect(heads(bar).map(h => h.textContent.slice(2))).toEqual(MENUS.map(m => m.label));
+        expect(headFor(bar, 'file').getAttribute('aria-expanded')).toBe('true');
+        for (const m of MENUS.filter(m => m.id !== 'file')) {
+            expect(headFor(bar, m.id).getAttribute('aria-expanded')).toBe('false');
+        }
+        expect(itemsOf(bar).map(labelOf)).toEqual(['📂 Open…']);
+    });
+
+    it('unfolding a heading reaches every command — touch loses nothing', () => {
         setWidth(500);
         bar = mountMenu();
         bar.element.querySelector('.menu-hamburger').click();
+        for (const m of MENUS) {
+            if (headFor(bar, m.id).getAttribute('aria-expanded') !== 'true') headFor(bar, m.id).click();
+        }
         const labels = itemsOf(bar).map(labelOf);
         expect(labels).toContain('Insert measure before');
         expect(labels).toContain('Repeat the previous measure');
         expect(labels).toContain('Keyboard shortcuts');
-        const heads = [...bar.popup.querySelectorAll('.menu-sheet-head')]
-            .map(h => h.textContent);
-        expect(heads).toEqual(MENUS.map(m => m.label));
+        // what the phone toolbar gave up, by touch
+        for (const l of ['Delete note', 'Rest (step on without a note)', 'Show the grid', 'Text at cursor…']) {
+            expect(labels).toContain(l);
+        }
+        // folding it again takes the rows away
+        headFor(bar, 'edit').click();
+        expect(itemsOf(bar).map(labelOf)).not.toContain('Insert measure before');
+    });
+
+    it('the sheet hides the key column (no keyboard on a phone)', () => {
+        setWidth(500);
+        bar = mountMenu();
+        bar.element.querySelector('.menu-hamburger').click();
+        expect(bar.popup.classList.contains('is-sheet')).toBe(true);
+        const css = document.querySelector('style[data-otf-menu-bar]').textContent;
+        expect(css).toMatch(/\.menu-popup\.is-sheet \.menu-item-key\s*\{\s*display:\s*none/);
     });
 
     it('grows back into a bar when the window widens', () => {
@@ -1046,7 +1115,11 @@ describe('OTFEditor — menu bar and status bar', () => {
             'fingering', 'annotation']) {
             expect(editor.statusBar.querySelector(`[data-field="${field}"]`)).toBeTruthy();
         }
-        expect(editor.statusBar.querySelector('.status-help-btn')).toBeTruthy();
+        // Help has one button (Help ▸ Keyboard shortcuts); the status bar
+        // only hints at the key (G17)
+        expect(editor.statusBar.querySelector('.status-help-btn')).toBeNull();
+        expect(editor.statusBar.querySelector('button.status-hint')).toBeNull();
+        expect(editor.statusBar.querySelector('.status-hint').textContent).toContain('?');
     });
 
     // The toolbar has no fingering palette (eleven buttons for a mark
@@ -1239,5 +1312,119 @@ describe('OTFEditor — menu bar and status bar', () => {
         editor.destroy();
         editor = null;
         expect(document.querySelector('.otf-menu-bar')).toBeNull();
+    });
+});
+
+// ----------------------------------------------------------------------
+// G17: one command surface. The toolbar's buttons are shortcuts to MENU
+// commands, never commands of their own, so a button can't exist that a
+// phone's ☰ sheet can't reach.
+// ----------------------------------------------------------------------
+describe('EditorToolbar — every button is a menu command (G17 fence)', () => {
+    const menuActions = () => new Set(MENUS.flatMap(m => m.items)
+        .filter(i => i.action).map(i => i.action));
+
+    it('every toolbar button\'s action id is an item in a menu', () => {
+        document.body.innerHTML = '';
+        const state = new EditorState({ otf: doc(), trackId: 'banjo' });
+        const toolbar = new EditorToolbar(state, {});
+        const container = document.createElement('div');
+        document.body.appendChild(container);
+        toolbar.render(container);
+        const ids = [...toolbar.element.querySelectorAll('[data-action]')]
+            .map(el => el.dataset.action);
+        expect(ids.length).toBeGreaterThan(20);   // durations, steps, techniques, latches…
+        const menus = menuActions();
+        const orphans = ids.filter(id => !menus.has(id));
+        expect(orphans).toEqual([]);
+        toolbar.destroy();
+    });
+
+    it('the exported palettes (the note popover builds from them) are menu commands too', () => {
+        const menus = menuActions();
+        for (const b of [...ARTICULATION_BUTTONS, ...FX_BUTTONS]) {
+            expect(ACTIONS[b.action], b.action).toBeTruthy();
+            expect(menus.has(b.action), b.action).toBe(true);
+        }
+    });
+
+    it('the Effects ▾ list and the phone length picker draw only menu commands', () => {
+        document.body.innerHTML = '';
+        const state = new EditorState({ otf: doc(), trackId: 'banjo' });
+        const toolbar = new EditorToolbar(state, {});
+        const container = document.createElement('div');
+        document.body.appendChild(container);
+        toolbar.render(container);
+        const menus = menuActions();
+        toolbar.effectsButton.click();
+        toolbar.lengthPickerButton.click();
+        const ids = [...document.querySelectorAll('.otf-fx-popup .otf-fx-item')]
+            .map(el => el.dataset.action);
+        expect(ids.length).toBeGreaterThan(14);
+        expect(ids.filter(id => !menus.has(id))).toEqual([]);
+        toolbar.destroy();
+    });
+});
+
+describe('EditorToolbar — the phone strip (G17)', () => {
+    let state, toolbar, onAction;
+    beforeEach(() => {
+        document.body.innerHTML = '';
+        state = new EditorState({ otf: doc(), trackId: 'banjo' });
+        onAction = vi.fn();
+        toolbar = new EditorToolbar(state, { onAction });
+        const container = document.createElement('div');
+        document.body.appendChild(container);
+        toolbar.render(container);
+    });
+    afterEach(() => toolbar.destroy());
+
+    it('the length picker names the current length, and follows it', () => {
+        const label = () => toolbar.lengthPickerButton.querySelector('.length-picker-label').textContent;
+        state.setDuration(DURATIONS.eighth);
+        expect(label()).toBe('1/8');
+        state.setDuration(DURATIONS.quarter);
+        expect(label()).toBe('1/4');
+        state.setAutoDuration(true);
+        expect(label()).toBe('Auto');
+        expect(lengthLabel({ isAutoDuration: false, currentDuration: DURATIONS.eighth * 1.5 }))
+            .toBe('1/8.');
+        expect(lengthLabel({ isAutoDuration: false, currentDuration: DURATIONS.tripletEighth }))
+            .toBe('³');
+    });
+
+    it('the picker lists Auto, the six lengths, Dotted and Triplet; a pick dispatches the action', () => {
+        state.setDuration(DURATIONS.eighth);
+        toolbar.lengthPickerButton.click();
+        const popup = document.querySelector('.otf-length-popup');
+        expect(popup.hidden).toBe(false);
+        const rows = [...popup.querySelectorAll('.otf-fx-item')];
+        expect(rows.map(r => r.querySelector('.otf-fx-label').textContent)).toEqual(
+            ['Automatic', '1', '1/2', '1/4', '1/8', '1/16', '1/32', 'Dotted', 'Triplet']);
+        expect(rows.find(r => r.getAttribute('aria-checked') === 'true')
+            .querySelector('.otf-fx-label').textContent).toBe('1/8');
+        rows.find(r => r.dataset.action === 'duration.quarter').click();
+        expect(onAction).toHaveBeenCalledWith('duration.quarter');
+        expect(popup.hidden).toBe(true);
+    });
+
+    it('its CSS keeps ONE row (undo, redo, length, tie) at the shared phone width', () => {
+        const css = document.querySelector('style[data-otf-toolbar]').textContent;
+        expect(css).toContain(`@media (max-width: ${PHONE_MAX_WIDTH}px)`);
+        expect(css).toContain('flex-wrap: nowrap');
+        expect(css).toContain(':not([data-action="effect.tie"])');
+    });
+});
+
+describe('one phone breakpoint (G17)', () => {
+    it('the band, the toolbar and the editor all collapse at 640', async () => {
+        expect(PHONE_MAX_WIDTH).toBe(640);
+        const { NARROW_WIDTH: bandWidth } = await import('../../tab-controls-sheet.js');
+        expect(bandWidth).toBe(PHONE_MAX_WIDTH);
+        const fs = await import('node:fs');
+        const css = fs.readFileSync('docs/css/style.css', 'utf8');
+        expect(css).toContain(`@container tabband (max-width: ${PHONE_MAX_WIDTH}px)`);
+        const editorSrc = fs.readFileSync('docs/js/otf-editor/editor.js', 'utf8');
+        expect(editorSrc).not.toMatch(/@media \(max-width: 6\d\dpx/);   // uses the constant
     });
 });

@@ -25,6 +25,7 @@ import {
 } from './bindings.js';
 import { FX_ORDER } from './facade.js';
 import { DYN_LEVELS } from './otf-validate.js';
+import { DURATIONS } from './state.js';
 
 /** Below this width the bar collapses to a single ☰ sheet. */
 export const NARROW_WIDTH = 720;
@@ -49,6 +50,8 @@ const canRedo = (s) => !!s?.history?.canRedo?.();
 const canDeleteTrack = (s) => !s?.trackDeleteBlocker?.();
 const deleteTrackWhy = (s) => s?.trackDeleteBlocker?.() || '';
 const manyMeasures = (s) => (s?.getMeasureCount?.() || 1) > 1;
+/** Is the cursor step (the grid subdivision) this one? */
+const stepIs = (sub) => (s) => s?.gridSubdivision === sub;
 /** Does the note at the cursor carry this effect? (the item's ✓) */
 const noteHasFx = (fx) => (s) => !!s?.getNoteAtCursor?.()?.fx?.includes(fx);
 
@@ -119,6 +122,11 @@ export const MENUS = [
             { action: 'select.all', label: 'Select all' },
             { action: 'select.measure', label: 'Select measure' },
             { separator: true },
+            // The only way to delete a note by touch: the key is Del, and the
+            // context menu is a desktop right-click.
+            { action: 'note.deleteOrMeasure', label: 'Delete note', when: hasNote },
+            { action: 'select.delete', label: 'Delete selection', when: hasSelection },
+            { separator: true },
             { action: 'measure.insertBefore', label: 'Insert measure before' },
             { action: 'measure.insertAfter', label: 'Insert measure after' },
             { action: 'measure.delete', label: 'Delete measure', when: manyMeasures },
@@ -152,6 +160,10 @@ export const MENUS = [
             { action: 'duration.longer', label: 'Longer', when: hasNote },
             { action: 'duration.applyToSelection', label: 'Apply duration to selection', when: hasSelection },
             { action: 'duration.fix', label: 'Fix durations from spacing' },
+            { separator: true },
+            // The toolbar's Rest / Advance buttons, which have no room on a phone
+            { action: 'nav.advance', label: 'Rest (step on without a note)' },
+            { action: 'entry.autoAdvance', label: 'Advance after each note', checked: (s) => !!s?.autoAdvance },
             { separator: true },
             { action: 'effect.tie', label: 'Tie', when: hasNote },
             { action: 'effect.hammer', label: 'Hammer-on' },
@@ -215,7 +227,6 @@ export const MENUS = [
             { hook: 'addTrack', label: 'Add track…' },
             { hook: 'deleteTrack', label: 'Delete track…', when: canDeleteTrack, why: deleteTrackWhy },
             { separator: true },
-            { hook: 'tempo', label: 'Tempo…' },
             { hook: 'timeSignature', label: 'Time signature…' },
             { hook: 'tuning', label: 'Tuning…' },
             { separator: true },
@@ -228,9 +239,14 @@ export const MENUS = [
         items: [
             { heading: 'Grid' },
             { action: 'grid.toggle', label: 'Show the grid' },
+            { heading: 'Cursor step' },
+            { action: 'grid.quarter', label: 'Quarter', checked: stepIs(DURATIONS.quarter) },
+            { action: 'grid.eighth', label: 'Eighth', checked: stepIs(DURATIONS.eighth) },
+            { action: 'grid.sixteenth', label: '16th', checked: stepIs(DURATIONS.sixteenth) },
+            { action: 'grid.thirtySecond', label: '32nd', checked: stepIs(DURATIONS.thirtySecond) },
+            { action: 'grid.triplet', label: 'Triplet', checked: stepIs(DURATIONS.tripletEighth) },
             { action: 'grid.coarser', label: 'Coarser' },
             { action: 'grid.finer', label: 'Finer' },
-            { action: 'grid.triplet', label: 'Triplet grid' },
             { separator: true },
             { heading: 'Measures per row' },
             { dynamic: 'measuresPerRow' },
@@ -274,6 +290,8 @@ export class EditorMenuBar {
         this.aboutUrl = options.aboutUrl || ABOUT_URL;
         this.onClose = options.onClose || (() => {});
         this.narrowWidth = options.narrowWidth || NARROW_WIDTH;
+        /** The ☰ sheet's unfolded sections (menu ids): File only, to start. */
+        this._sheetOpen = new Set(['file']);
 
         this.element = null;
         this.popup = null;
@@ -468,17 +486,37 @@ export class EditorMenuBar {
     // ── The popup ─────────────────────────────────────────────────────
     _buildPopup(menuId) {
         this.popup.innerHTML = '';
-        this.popup.classList.toggle('is-sheet', menuId === '*');
-        const menus = menuId === '*'
-            ? MENUS
-            : MENUS.filter(m => m.id === menuId);
+        const sheet = menuId === '*';
+        this.popup.classList.toggle('is-sheet', sheet);
+        const menus = sheet ? MENUS : MENUS.filter(m => m.id === menuId);
         for (const menu of menus) {
-            if (menuId === '*') {
-                const head = document.createElement('div');
+            let open = true;
+            if (sheet) {
+                // One heading per menu; touching it folds the section. Only
+                // File starts open, so ~125 rows are seven lines to scan.
+                open = this._sheetOpen.has(menu.id);
+                const head = document.createElement('button');
+                head.type = 'button';
                 head.className = 'menu-sheet-head';
-                head.textContent = menu.label;
+                head.dataset.menu = menu.id;
+                head.setAttribute('aria-expanded', open ? 'true' : 'false');
+                head.textContent = `${open ? '▾' : '▸'} ${menu.label}`;
+                head.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    if (open) this._sheetOpen.delete(menu.id);
+                    else this._sheetOpen.add(menu.id);
+                    this._buildPopup('*');
+                    this.popup.querySelector(`.menu-sheet-head[data-menu="${menu.id}"]`)?.focus();
+                });
+                head.addEventListener('keydown', (e) => {
+                    if (e.key !== 'Escape') return;
+                    e.stopPropagation();
+                    this.close();
+                    this.onClose();
+                });
                 this.popup.appendChild(head);
             }
+            if (!open) continue;
             for (const el of this._renderItems(menu.items)) {
                 this.popup.appendChild(el);
             }
@@ -504,7 +542,11 @@ export class EditorMenuBar {
             }
             if (item.dynamic) {
                 for (const entry of this._dynamicItems(item.dynamic)) {
-                    out.push(this._menuItem(entry));
+                    if (entry.separator) {
+                        const hr = document.createElement('div');
+                        hr.className = 'menu-separator';
+                        out.push(hr);
+                    } else out.push(this._menuItem(entry));
                 }
                 continue;
             }
@@ -564,7 +606,7 @@ export class EditorMenuBar {
 
     _dynamicItems(name) {
         if (name === 'file') {
-            return (this.fileActions || []).map(a => ({
+            return (this.fileActions || []).map(a => a.separator ? { separator: true } : ({
                 label: a.label,
                 keys: a.action ? menuKeyFor(a.action, getPreset(), this._mode()) : null,
                 disabled: !!a.disabled,
@@ -754,9 +796,27 @@ export class EditorMenuBar {
                 color: var(--text-muted, #888);
             }
             .menu-sheet-head {
-                font-weight: 700;
+                display: block;
+                width: 100%;
+                border: 0;
                 border-top: 1px solid var(--border, #ddd);
                 margin-top: 4px;
+                background: none;
+                font: inherit;
+                font-size: 12px;
+                font-weight: 700;
+                text-align: left;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                color: var(--text-muted, #888);
+                cursor: pointer;
+                min-height: 40px;
+            }
+            /* No keyboard on a phone: the key column is noise there */
+            .menu-popup.is-sheet .menu-item-key { display: none; }
+            @media (pointer: coarse) {
+                .menu-item-key { display: none; }
+                .menu-item { padding: 9px 10px; }
             }
             .menu-popup .menu-sheet-head:first-child {
                 border-top: 0;
