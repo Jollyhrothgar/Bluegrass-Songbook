@@ -1,0 +1,10 @@
+# SYNTHETIC: placeholder chords (G, C, D), not a real song. An A / B / Chorus form.
+key: G
+sections:
+  A: |
+    | G \ | C \ | G \ | D \ |
+  B: |
+    | C \ | G \ | D \ | G \ |
+  Chorus: |
+    | G \ | G \ | C \ | D \ |
+form: [A, B, Chorus, A, Chorus]

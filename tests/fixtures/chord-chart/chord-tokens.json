@@ -1,0 +1,5 @@
+{
+  "_comment": "Shared by tests/test_chord_chart.py and docs/js/__tests__/chord-tokens.test.js. Pins scripts/lib/chord_chart.py is_valid_chord against isValidChord in docs/js/chords.js; they must agree on every token. Synthetic, 2026-10-29.",
+  "valid": ["A", "G", "C#7", "Bb", "F#m", "Em7", "Dmaj7", "Csus4", "Gadd9", "Bdim", "Caug", "E7b9", "Am/C", "G/B", "D/F#", "Cmin", "CM7", "A+", "B°", "Bø", "Co", "Dsus2add9"],
+  "invalid": ["", "H", "a", "Ax", "C#x", "H7", "7", "C/", "C/H", "C//G", "Am/C#7", "Gmaj7x", "C 7", "\\", "|", "A\n", "C7#", "Cmajor"]
+}

@@ -1,0 +1,18 @@
+# Frozen copy of the Old Home Place chart from the G18a spec
+# (docs/plans/2026-10-29-g18-checklist.md), in A to match
+# works/old-home-place; bars from docs/plans/2026-10-29-chord-charts.md. 2026-10-29.
+key: A
+meter: duple
+drawn_from: lead-sheet.pro
+sections:
+  Verse: |
+    | A \ | C#7 \ | D \ | A \ |
+    | \ \ | \ \ | E \ | \ \ |
+    | A \ | C#7 \ | D \ | A \ |
+    | \ \ | E \ | A \ | \ \ |
+  Chorus: |
+    | E \ | \ \ | A \ | \ \ |
+    | B7 \ | \ \ | E \ | \ \ |
+    | A \ | C#7 \ | D \ | A \ |
+    | \ \ | E \ | A \ | \ \ |
+form: [Verse, Verse, Chorus, Verse, Verse, Chorus, Chorus]
