@@ -416,6 +416,9 @@ export class EditingFacade {
                 }
                 this.otf.notation = rebuilt;
             }
+            for (const d of this.otf.chord_diagrams || []) {
+                if (d.track === oldId) d.track = clean;
+            }
             return true;
         });
         if (result !== false && this.protectedTrackId === oldId) this.protectedTrackId = clean;
@@ -479,10 +482,10 @@ export class EditingFacade {
     }
 
     /**
-     * Delete a track: its entry in `tracks[]` AND its `notation` key, as one
-     * undo step (undo restores both, in place, from the snapshot). When it
-     * was the track being edited, the first remaining pitched track takes
-     * over.
+     * Delete a track: its entry in `tracks[]`, its `notation` key AND its
+     * chord diagrams, as one undo step (undo restores them all, in place,
+     * from the snapshot). When it was the track being edited, the first
+     * remaining pitched track takes over.
      *
      * @returns {boolean} true
      * @throws {Error} unknown track, or one `trackDeleteBlocker` refuses
@@ -494,6 +497,12 @@ export class EditingFacade {
         const result = this._mutate('Delete track', () => {
             this.otf.tracks.splice(this.trackIndex(trackId), 1);
             if (this.otf.notation) delete this.otf.notation[trackId];
+            // the track's chord diagrams go with it (the `chords` table stays)
+            if (Array.isArray(this.otf.chord_diagrams)) {
+                const kept = this.otf.chord_diagrams.filter(d => d.track !== trackId);
+                if (kept.length) this.otf.chord_diagrams = kept;
+                else delete this.otf.chord_diagrams;
+            }
             return true;
         });
         if (result !== false && wasCurrent) {
@@ -1211,9 +1220,9 @@ export class EditingFacade {
      * shared score structure, so a single-track shift would desync an
      * ensemble doc. reading_list ranges and time_signature_changes are
      * renumbered with it (a range straddling the split grows, keeping
-     * play order intact) — and so are placed annotations, which anchor to
-     * written measures exactly like a reading-list range does. One undo
-     * step.
+     * play order intact) — and so are placed annotations and chord
+     * diagrams, which anchor to written measures exactly like a
+     * reading-list range does. One undo step.
      */
     insertMeasure(measureNum) {
         if (!(measureNum >= 1)) return false;
@@ -1240,6 +1249,10 @@ export class EditingFacade {
                     if (a.measure >= measureNum) a.measure++;
                 }
             }
+            // chord diagrams anchor to written measures like annotations do
+            for (const d of this.otf.chord_diagrams || []) {
+                if (d.measure >= measureNum) d.measure++;
+            }
             this._invalidateTiming();
             return true;
         });
@@ -1260,6 +1273,7 @@ export class EditingFacade {
      *   next measure had its own change, which takes the slot instead —
      *   either way every surviving measure keeps the signature it had
      * - `annotations`: text placed in the measure goes with it
+     * - `chord_diagrams`: so do the measure's diagrams
      *
      * Refuses when the number is out of range or it is the last measure
      * the document has (a document with no measures has nowhere to put a
@@ -1309,6 +1323,18 @@ export class EditingFacade {
                 }
                 if (kept.length) this.otf.annotations = kept;
                 else delete this.otf.annotations;
+            }
+            // ...and so do chord diagrams: the measure's go with it (the
+            // `chords` table keeps every record, used or not)
+            if (Array.isArray(this.otf.chord_diagrams)) {
+                const kept = [];
+                for (const d of this.otf.chord_diagrams) {
+                    if (d.measure === measureNum) continue;
+                    if (d.measure > measureNum) d.measure--;
+                    kept.push(d);
+                }
+                if (kept.length) this.otf.chord_diagrams = kept;
+                else delete this.otf.chord_diagrams;
             }
             this._invalidateTiming();
             return true;
