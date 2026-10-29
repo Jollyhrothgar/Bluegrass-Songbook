@@ -80,19 +80,6 @@ class OTFNote:
     grace: dict | None = None      # {"f": fret, "kind"?: GRACE_KINDS}
 
 
-def _otf_format():
-    """scripts/lib/otf_format.py: the one OTF serializer (shared with
-    process_pending, which runs from scripts/lib). This package sits
-    elsewhere, so put scripts/lib on the path the first time it is needed."""
-    try:
-        import otf_format
-    except ImportError:
-        lib = Path(__file__).resolve().parents[4] / 'scripts' / 'lib'
-        sys.path.insert(0, str(lib))
-        import otf_format
-    return otf_format
-
-
 @dataclass
 class OTFEvent:
     """A note event at a specific tick position."""
@@ -100,37 +87,11 @@ class OTFEvent:
     notes: list[OTFNote] = field(default_factory=list)
 
 
-def _otf_format():
-    """scripts/lib/otf_format.py: the one OTF serializer (shared with
-    process_pending, which runs from scripts/lib). This package sits
-    elsewhere, so put scripts/lib on the path the first time it is needed."""
-    try:
-        import otf_format
-    except ImportError:
-        lib = Path(__file__).resolve().parents[4] / 'scripts' / 'lib'
-        sys.path.insert(0, str(lib))
-        import otf_format
-    return otf_format
-
-
 @dataclass
 class OTFMeasure:
     """A measure containing note events."""
     measure: int
     events: list[OTFEvent] = field(default_factory=list)
-
-
-def _otf_format():
-    """scripts/lib/otf_format.py: the one OTF serializer (shared with
-    process_pending, which runs from scripts/lib). This package sits
-    elsewhere, so put scripts/lib on the path the first time it is needed."""
-    try:
-        import otf_format
-    except ImportError:
-        lib = Path(__file__).resolve().parents[4] / 'scripts' / 'lib'
-        sys.path.insert(0, str(lib))
-        import otf_format
-    return otf_format
 
 
 @dataclass
@@ -149,36 +110,10 @@ class OTFTrack:
     lines: int = 0
 
 
-def _otf_format():
-    """scripts/lib/otf_format.py: the one OTF serializer (shared with
-    process_pending, which runs from scripts/lib). This package sits
-    elsewhere, so put scripts/lib on the path the first time it is needed."""
-    try:
-        import otf_format
-    except ImportError:
-        lib = Path(__file__).resolve().parents[4] / 'scripts' / 'lib'
-        sys.path.insert(0, str(lib))
-        import otf_format
-    return otf_format
-
-
 @dataclass
 class OTFTiming:
     """Timing configuration."""
     ticks_per_beat: int = 480
-
-
-def _otf_format():
-    """scripts/lib/otf_format.py: the one OTF serializer (shared with
-    process_pending, which runs from scripts/lib). This package sits
-    elsewhere, so put scripts/lib on the path the first time it is needed."""
-    try:
-        import otf_format
-    except ImportError:
-        lib = Path(__file__).resolve().parents[4] / 'scripts' / 'lib'
-        sys.path.insert(0, str(lib))
-        import otf_format
-    return otf_format
 
 
 @dataclass
@@ -196,19 +131,6 @@ class OTFMetadata:
     time_signature_changes: list = field(default_factory=list)
 
 
-def _otf_format():
-    """scripts/lib/otf_format.py: the one OTF serializer (shared with
-    process_pending, which runs from scripts/lib). This package sits
-    elsewhere, so put scripts/lib on the path the first time it is needed."""
-    try:
-        import otf_format
-    except ImportError:
-        lib = Path(__file__).resolve().parents[4] / 'scripts' / 'lib'
-        sys.path.insert(0, str(lib))
-        import otf_format
-    return otf_format
-
-
 @dataclass
 class OTFReadingListEntry:
     """Reading list entry for playback order."""
@@ -217,38 +139,12 @@ class OTFReadingListEntry:
     name: str = ""   # Optional section label ("Intro", "Part A1", ...)
 
 
-def _otf_format():
-    """scripts/lib/otf_format.py: the one OTF serializer (shared with
-    process_pending, which runs from scripts/lib). This package sits
-    elsewhere, so put scripts/lib on the path the first time it is needed."""
-    try:
-        import otf_format
-    except ImportError:
-        lib = Path(__file__).resolve().parents[4] / 'scripts' / 'lib'
-        sys.path.insert(0, str(lib))
-        import otf_format
-    return otf_format
-
-
 @dataclass
 class OTFAnnotation:
     """A placed free-text annotation ("Long Choke", chord letters, ...)."""
     measure: int     # 1-indexed written measure
     tick: int        # Tick offset within the measure
     text: str
-
-
-def _otf_format():
-    """scripts/lib/otf_format.py: the one OTF serializer (shared with
-    process_pending, which runs from scripts/lib). This package sits
-    elsewhere, so put scripts/lib on the path the first time it is needed."""
-    try:
-        import otf_format
-    except ImportError:
-        lib = Path(__file__).resolve().parents[4] / 'scripts' / 'lib'
-        sys.path.insert(0, str(lib))
-        import otf_format
-    return otf_format
 
 
 @dataclass
