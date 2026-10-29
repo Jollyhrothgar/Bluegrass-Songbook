@@ -1,9 +1,19 @@
 # OTF Editor
 
+**The file format is `docs/schema/otf.schema.json`** (field guide:
+`docs/schema/otf.md`). `validateOTF` (`otf-validate.js`, re-exported from
+`actions.js`) is its hand-written JS validator; Python's is
+`scripts/lib/otf_schema.py`. A new allowed value (effect, technique, ...) goes in
+the schema first; the fence tests in `__tests__/otf-editor/otf-validate.test.js`
+and `tests/test_otf_schema.py` fail until every copy matches.
+
+Files are written by `serializeOTF` (`docs/js/otf-format.js`; `downloadOTF` uses it), one
+note event per line, byte-identical to Python's `scripts/lib/otf_format.py`. Never
+`JSON.stringify(otf, null, 2)` a file; the compact wire formats are the exception.
+
 The in-browser tablature editor for OpenTabFormat (OTF) files. It ships.
-`DESIGN.md` describes what the editor does and the OTF document format; its
-`interface Note` section (`fx`, `grace`) is the format reference that code
-comments cite, and Help ▸ About opens it for users. Input-model plan:
+`DESIGN.md` describes what the editor does (the OTF document format is
+`docs/schema/otf.md`, which code comments cite), and Help ▸ About opens it for users. Input-model plan:
 `docs/plans/tab-editor-input-parity.md`.
 
 ```bash
@@ -128,9 +138,9 @@ outside the block.
 
 `MODEL.md` beside this file holds the rules for per-note marks (fingering,
 effects, grace) versus placed free text, for tracks (a track's `id` is its
-name; `tracks[]` order is load-bearing), and for automatic duration (computed
-inside the facade's `_mutate`, never from the keyboard layer). Read it before
-changing any of them.
+name; `tracks[]` order is load-bearing; adding and deleting one), and for
+automatic duration (computed inside the facade's `_mutate`, never from the
+keyboard layer). Read it before changing any of them.
 
 ## Toolbar, menus, zoom
 

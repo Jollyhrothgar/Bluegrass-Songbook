@@ -12,39 +12,21 @@
     {
       "id": "banjo",
       "instrument": "5-string-banjo",
-      "tuning": [
-        "G3",
-        "D3",
-        "A2",
-        "E2",
-        "E2"
-      ],
+      "tuning": ["G3", "D3", "A2", "E2", "E2"],
       "capo": 0,
       "role": "lead"
     },
     {
       "id": "guitar",
       "instrument": "6-string-guitar",
-      "tuning": [
-        "F#4",
-        "C#4",
-        "A3",
-        "E3",
-        "B2",
-        "F#2"
-      ],
+      "tuning": ["F#4", "C#4", "A3", "E3", "B2", "F#2"],
       "capo": 0,
       "role": "rhythm"
     },
     {
       "id": "bass",
       "instrument": "upright-bass",
-      "tuning": [
-        "A2",
-        "E2",
-        "B1",
-        "F#1"
-      ],
+      "tuning": ["A2", "E2", "B1", "F#1"],
       "capo": 0,
       "role": "rhythm"
     }

@@ -10,6 +10,8 @@
 // state.facade.canUndo() (dirty check), and the onSave option.
 
 import { pitchedTracks } from '../renderers/otf-tracks.js';
+import { chooseTabFile } from '../pwa.js';
+import { createCreditRow } from './tab-credit.js';
 
 /**
  * Pick the track to edit for a part. Mirrors work-view's lead-track
@@ -36,6 +38,8 @@ export function resolveEditTrackId(otf, instrument) {
  * @param {HTMLElement} options.mount - where the session UI is appended
  * @param {Object} options.otf - document to edit
  * @param {string} [options.trackId] - track to edit (see resolveEditTrackId)
+ * @param {string} [options.protectedTrackId] - a correction's own track: the
+ *   editor will not delete it (null for a new take or an opened file)
  * @param {string} [options.filename] - download filename (no extension)
  * @param {Function} options.editorFactory - ({container, otf, trackId, onSave}) => editor
  * @param {Function} [options.onApply] - receives the edited document
@@ -53,6 +57,9 @@ export function resolveEditTrackId(otf, instrument) {
  *   a brand-new take has nothing to describe, so it submits on the click.
  * @param {Function} [options.onSubmitted] - receives (result, doc) after a
  *   successful submit (the caller decides what the page becomes next).
+ * @param {boolean} [options.lockExistingCredit] - a correction of a published
+ *   take: an existing "Tab by" credit is read-only unless the user is trusted.
+ * @param {Function} [options.isTrusted] - () => Promise<boolean>
  * @param {Array} [options.extraActions] - [{className, label, title, onClick}]
  *   buttons prepended to the group (e.g. "Import .tef…").
  */
@@ -60,6 +67,7 @@ export function createTabEditSession({
     mount,
     otf,
     trackId = null,
+    protectedTrackId = null,
     filename = null,
     editorFactory,
     onApply = () => {},
@@ -73,6 +81,9 @@ export function createTabEditSession({
     commentRequired = true,
     onSubmitted = null,
     extraActions = [],
+    onOpenFile = null,
+    lockExistingCredit = false,
+    isTrusted = null,
 }) {
     const root = document.createElement('div');
     root.className = 'tab-edit-session';
@@ -142,6 +153,12 @@ export function createTabEditSession({
         (barHost || root).appendChild(submitPanel);
     }
 
+    // "Tab by" credit: right under the page's title/artist, above the editor.
+    let credit = null;
+    const creditSlot = document.createElement('div');
+    creditSlot.className = 'tab-credit-slot';
+    root.appendChild(creditSlot);
+
     const host = document.createElement('div');
     host.className = 'tab-edit-host';
     root.appendChild(host);
@@ -151,6 +168,7 @@ export function createTabEditSession({
         container: host,
         otf,
         trackId,
+        protectedTrackId,
         onSave: (doc) => onApply(doc),
         ...(onChange ? { onChange: (doc) => onChange(doc) } : {}),
         // In compact mode the bottom band owns playback, so the editor's
@@ -161,6 +179,13 @@ export function createTabEditSession({
         // and `session` are consts assigned below; every `run` is a
         // closure invoked long after both exist.
         fileActions: [
+            // Open… first, as every File menu has it. The caller decides what
+            // opening means (work-view flushes the autosave first); with no
+            // caller it is the plain picker, which opens the file as a draft.
+            {
+                label: '📂 Open…',
+                run: () => (onOpenFile ? onOpenFile(session) : chooseTabFile({ source: 'menu' })),
+            },
             ...(onSubmit ? [{
                 label: submitLabel,
                 run: () => bar.querySelector('.tab-edit-submit')?.click(),
@@ -175,10 +200,20 @@ export function createTabEditSession({
         ],
     });
 
+    credit = createCreditRow({
+        getFacade: () => editor.state?.facade,
+        lockExisting: lockExistingCredit,
+        isTrusted,
+    });
+    creditSlot.appendChild(credit.el);
+    // Undo / redo / a loaded file change the credit without touching the inputs.
+    editor.state?.on?.('change', () => credit?.refresh());
+
     let closed = false;
     const cleanup = () => {
         if (closed) return false;
         closed = true;
+        credit?.destroy();
         closeInline();
         editor.destroy?.();
         // The bar (and its panel) live in the bottom band in compact mode,
@@ -307,6 +342,7 @@ export function createTabEditSession({
         /** Swap the document being edited (a .tef import into this mode). */
         replaceDocument(doc) {
             editor.load?.(doc);
+            credit?.refresh();
         },
 
         /** One line of feedback in the action group (never markup). */

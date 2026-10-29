@@ -42,10 +42,19 @@
       ]
     },
     {
-      "name": "Drafts",
-      "short_name": "Drafts",
-      "description": "Tabs you have started but not submitted",
+      "name": "My tabs",
+      "short_name": "My tabs",
+      "description": "Tabs you have opened or started, saved on this device",
       "url": "./index.html#drafts",
+      "icons": [
+        { "src": "images/icon-192.png", "sizes": "192x192", "type": "image/png" }
+      ]
+    },
+    {
+      "name": "Tab editor",
+      "short_name": "Tab editor",
+      "description": "Open a TablEdit .tef file, or start a new tab",
+      "url": "./tab-editor/",
       "icons": [
         { "src": "images/icon-192.png", "sizes": "192x192", "type": "image/png" }
       ]

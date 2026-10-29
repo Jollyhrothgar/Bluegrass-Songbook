@@ -76,6 +76,7 @@ import { trackSongView, trackSongNotFound } from './analytics.js';
 import { setTopBar, setBottomBand, pill, setChromeAutoHide } from './shell.js';
 import { practiceLinks, buildKeyPill, buildDisplayPill, buildInfoPill, buildExportPill, handleExport } from './song-controls.js';
 import { showToast } from './toast.js';
+import { importFileToOtf, pickTabFile, chooseTabFile } from './pwa.js';
 
 // ============================================
 // WORK STATE
@@ -1905,7 +1906,7 @@ function startTabContribution(section, instrument) {
     const plan = tabEntryPlan(currentWork, instrument, { title: currentWork.title });
 
     if (plan.kind !== 'existing') {
-        launchTabCreator({           // gates on login itself
+        launchTabCreator({
             workId: currentWork.id, instrument, title: currentWork.title,
         });
         return;
@@ -1932,7 +1933,6 @@ function startTabContribution(section, instrument) {
  * preview is the song page it will be published on.
  */
 function importTefAsNewTake(instrument, existingCount = 0) {
-    if (!requireLogin('add a tab')) return;
     pickTefFile((otf) => {
         if (!currentWork) return;
         startAddTabMode({
@@ -2745,20 +2745,20 @@ function editFilename(part) {
 }
 
 /**
- * Ask for a .tef and hand back the parsed OTF.
+ * Ask for a tab file (.tef or .otf.json) and hand back its OTF.
  *
- * The drop zone that used to live on create.html: a TablEdit file is a
- * starting point for a take, so it belongs wherever a take is started —
- * the add-tab flow and the existing-takes offramp. The parser is imported
- * lazily; readers never pay for it.
+ * A thin wrapper: the picker is pwa.js's `pickTabFile` and the parsing is its
+ * `importFileToOtf`, the same two steps every other way of opening a file
+ * takes (drop, launch, front door, File ▸ Open…), so a format is supported
+ * everywhere or nowhere. What this adds is the take-level behaviour: the
+ * caller gets the document and file to drop into a take rather than a draft.
+ * The parser is imported lazily by importFileToOtf; readers never pay for it.
  */
 export async function pickTefFile(onDocument, { file = null } = {}) {
     const load = async (chosen) => {
         if (!chosen) return;
         try {
-            const { parseTef } = await import('./tef-import/index.js');
-            const bytes = new Uint8Array(await chosen.arrayBuffer());
-            const otf = parseTef(bytes, chosen.name);
+            const otf = await importFileToOtf(chosen);
             const hasNotes = Object.values(otf.notation || {})
                 .some(measures => measures.length > 0);
             if (!hasNotes) {
@@ -2780,18 +2780,7 @@ export async function pickTefFile(onDocument, { file = null } = {}) {
     };
 
     if (file) return load(file);
-
-    const input = document.createElement('input');
-    input.type = 'file';
-    input.accept = '.tef';
-    input.style.display = 'none';
-    document.body.appendChild(input);
-    input.addEventListener('change', async () => {
-        const chosen = input.files?.[0];
-        input.remove();
-        await load(chosen);
-    });
-    input.click();
+    pickTabFile(load);
 }
 
 /**
@@ -2819,12 +2808,14 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
         { submitTab },
         { createAutosaver, getDraftStore, draftOpenHash },
         { bindBandToEditor },
+        { creditFromPart },
     ] = await Promise.all([
         import('./otf-editor/editor.js'),
         import('./otf-editor/work-edit.js'),
         import('./otf-editor/submit-tab.js'),
         import('./drafts.js'),
         import('./tab-edit-band.js'),
+        import('./otf-editor/tab-credit.js'),
         kitLoading,
     ]);
 
@@ -2904,10 +2895,29 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
         await autosave.flush();
     };
 
+    // PRE-FILL the credit when correcting a published take: the OTF's own
+    // tab_by, else the credit the part is published with (the imported
+    // Hangout author, or an earlier submission's). A copy, so the view's
+    // cached document is not touched. A new take or an opened .tef starts empty.
+    if (!isNewTake && !otf?.metadata?.tab_by) {
+        const published = creditFromPart(part);
+        if (published) {
+            otf = {
+                ...otf,
+                otf_version: otf.otf_version === '1.0' ? '1.1' : otf.otf_version,
+                metadata: { ...otf.metadata, tab_by: published },
+            };
+        }
+    }
+
     activeEditSession = createTabEditSession({
         mount: container,
         otf,
+        lockExistingCredit: !isNewTake,
+        isTrusted: async () => (await window.SupabaseAuth?.isTrustedUser?.()) === true,
         trackId: resolveEditTrackId(otf, instrument),
+        // a correction edits this track, so it cannot be deleted from the Score menu
+        protectedTrackId: isNewTake ? null : resolveEditTrackId(otf, instrument),
         filename: `${editFilename(part)}${isNewTake ? '' : '-edited'}`,
         editorFactory: (opts) => new OTFEditor(opts),
         barHost,
@@ -2915,6 +2925,13 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
         showDone: !isNewTake,
         commentRequired: !isNewTake,
         extraActions,
+        // File ▸ Open…: put the work in progress safely in My tabs FIRST (the
+        // autosave's 1s trailing edge may not have fired), then open the
+        // picked file as a new draft, exactly like a drop.
+        onOpenFile: () => chooseTabFile({
+            source: 'menu',
+            beforeOpen: () => autosave.flush(),
+        }),
         // Every edit, in every mode, lands in the drafts bucket on a ~1s
         // trailing edge (§9.3) — a reload, a crash or a sign-in round trip
         // does not cost the session, and `#drafts` can reopen it on the

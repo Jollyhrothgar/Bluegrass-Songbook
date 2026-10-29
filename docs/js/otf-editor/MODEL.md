@@ -3,7 +3,7 @@
 Read before changing fingering, effects, grace notes, placed text, tracks, or
 how note durations are computed. The editor's other rules (the facade, keys,
 selection, menus) are in `CLAUDE.md` beside this file; the OTF format itself
-is the `interface Note` section of `DESIGN.md`.
+is `docs/schema/otf.schema.json` (field guide: `docs/schema/otf.md`).
 
 ## Per-note marks vs placed text
 
@@ -63,12 +63,20 @@ mixer and the switcher print. Rename therefore edits the id
 (`moveTrack`). UI is the toolbar's Track section and Score > Rename track; no
 key bindings.
 
+- A track is as long as the DOCUMENT (`getMeasureCount` = max over all tracks),
+  and a track with no `notation` key is valid and editable: the editor draws
+  empty bars for it, and only `getOrCreateMeasure` ever creates the key. Reading
+  (`getNotation`, switching tracks) writes nothing.
+- Score > Add track… appends an instrument's empty track (`makeTrack`, no
+  `notation` key); Score > Delete track… (`deleteTrack`, one undo step) refuses
+  the last pitched track and, in a correction, the take's own track
+  (`protectedTrackId`). Both ask in `TrackPopover`, never a native dialog.
 - `notation` is keyed by track id, so a rename rebuilds it in key order with
   the renamed key back in place. Never rebuild it from `tracks[]`: real files'
   key order differs (Banjo Hangout tab 27493, fixture
   `docs/data/tabs/27493_tef.otf.json`, used by `facade-27493.test.js`: `notation`
   keys are guitar/bass/banjo/mandolin, `tracks[]` is guitar/bass/mandolin/banjo). Dropping a key makes `validate_otf`
-  (`scripts/lib/process_pending.py`) reject "track X: no notation".
+  (`scripts/lib/process_pending.py`) reject `[notation_keys]`.
 - Duplicate ids are refused (popover disables Save; facade throws as backstop).
   `sanitizeTrackId` strips `< > & " ' \` and control characters because the
   renderer puts a track id into innerHTML unescaped.

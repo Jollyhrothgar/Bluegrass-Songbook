@@ -790,6 +790,10 @@ def build_song_from_work(work_dir: Path) -> dict:
                 tab_info['source_page_url'] = f"{hangout_base}/tab/browse.asp?m=detail&v={prov.get('source_id')}"
                 if prov.get('author'):
                     tab_info['author_url'] = f"{hangout_base}/my/{quote(prov.get('author'))}"
+            # A credit a person typed (tab_by -> provenance.author_url) wins
+            # over the link derived from a Hangout profile.
+            if prov.get('author_url'):
+                tab_info['author_url'] = prov['author_url']
             song['tablature_parts'].append(tab_info)
 
     # Add document parts info for frontend

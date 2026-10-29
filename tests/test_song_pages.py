@@ -23,6 +23,8 @@ sys.path.insert(0, str(REPO_ROOT / "scripts" / "lib"))
 from build_song_pages import (  # noqa: E402
     ORIGIN,
     STATIC_PAGES,
+    TAB_EDITOR_DESCRIPTION,
+    TAB_EDITOR_TITLE,
     build_song_pages,
     render_chart,
     render_page,
@@ -423,7 +425,8 @@ def test_versions_live_under_their_song_and_point_at_it(tmp_path):
     for page in (version, tab):
         assert f'<link rel="canonical" href="{ORIGIN}songs/house-of-gold/">' in page
     assert 'Version 2 of <a href="/songs/house-of-gold/">House Of Gold</a>' in version
-    assert sitemap_locs(docs)[len(STATIC_PAGES):] == [f"{ORIGIN}songs/", f"{ORIGIN}songs/house-of-gold/"]
+    assert sitemap_locs(docs)[len(STATIC_PAGES):] == [
+        f"{ORIGIN}songs/", f"{ORIGIN}tab-editor/", f"{ORIGIN}songs/house-of-gold/"]
     # The A–Z page lists the song once; its versions are reached from the song.
     assert re.findall(r'<a href="(/songs/[^"]+)"', (docs / "songs" / "index.html").read_text()) \
         == ["/songs/house-of-gold/"]
@@ -488,3 +491,88 @@ def test_git_dates_refuse_a_shallow_clone(tmp_path):
                    check=True, capture_output=True)
     assert git_dates(tmp_path / "shallow", ["works"]) == {}
     assert git_dates(tmp_path / "not-a-repo", ["works"]) == {}
+
+
+# The tab editor's front door (G15c): /tab-editor/ is the app too, with the
+# empty state's words already on the page, so a search engine and a reader
+# see the same thing.
+
+def tab_editor_page(docs):
+    return (docs / "tab-editor" / "index.html").read_text()
+
+
+def test_tab_editor_page_is_generated_with_its_head(tmp_path):
+    docs = make_docs(tmp_path, ROWS, CHARTS)
+    build_song_pages(docs)
+    html = tab_editor_page(docs)
+    assert html.count("<title>") == 1
+    assert f"<title>{TAB_EDITOR_TITLE}</title>" in html
+    assert len(TAB_EDITOR_TITLE) <= 60
+    descriptions = re.findall(r'<meta name="description" content="([^"]*)">', html)
+    assert descriptions == [TAB_EDITOR_DESCRIPTION]
+    assert len(TAB_EDITOR_DESCRIPTION) <= 160
+    for word in (".tef", "browser", "free", "no account"):
+        assert word in TAB_EDITOR_DESCRIPTION.lower()
+    assert f'<link rel="canonical" href="{ORIGIN}tab-editor/">' in html
+    assert '<base href="/">' in html and '<script type="module" src="js/main.js"></script>' in html
+
+
+def test_tab_editor_page_has_the_prerender_article_in_the_results_panel(tmp_path):
+    docs = make_docs(tmp_path, ROWS, CHARTS)
+    build_song_pages(docs)
+    html = tab_editor_page(docs)
+    assert '<div id="landing-page" class="landing-page hidden">' in html
+    content = html.split('<div id="results" class="results">', 1)[1]
+    assert content.startswith('<article class="prerender">')
+    article = content.split("</article>")[0]
+    assert article.count("<h1>") == 1 and "<h1>Tab Editor</h1>" in article
+    assert 2 <= article.count("<p>") <= 3
+    assert "<ul>" in article and "Your tabs stay on this device" in article
+
+
+def test_tab_editor_article_starts_with_the_words_the_app_shows():
+    """The app replaces the article with its empty state; the heading and the
+    privacy line must be the same words in both."""
+    source = (REPO_ROOT / "docs" / "js" / "tab-editor-home.js").read_text()
+    assert "<h1 class=\"bounty-title\">Tab Editor</h1>" in source
+    assert "Your tabs stay on this device. Nothing is uploaded unless you submit it to the book." in source
+
+
+def test_tab_editor_is_in_the_sitemap_once_after_the_all_songs_page(tmp_path):
+    docs = make_docs(tmp_path, ROWS, CHARTS)
+    build_song_pages(docs, page_dates={"docs/index.html": "2026-10-20",
+                                       "scripts/lib/build_song_pages.py": "2026-10-28"})
+    locs = sitemap_locs(docs)
+    assert locs.count(f"{ORIGIN}tab-editor/") == 1
+    assert locs[len(STATIC_PAGES) + 1] == f"{ORIGIN}tab-editor/"
+    # dated by the newer of the template and the generator
+    assert f"<loc>{ORIGIN}tab-editor/</loc><lastmod>2026-10-28</lastmod>" in (docs / "sitemap.xml").read_text()
+
+
+def test_tab_editor_sitemap_entry_has_no_lastmod_without_git_dates(tmp_path):
+    docs = make_docs(tmp_path, ROWS, CHARTS)
+    build_song_pages(docs, page_dates={})
+    assert f"<loc>{ORIGIN}tab-editor/</loc></url>" in (docs / "sitemap.xml").read_text()
+
+
+def test_tab_editor_rebuild_is_byte_stable_and_quiet(tmp_path):
+    docs = make_docs(tmp_path, ROWS, CHARTS)
+    build_song_pages(docs)
+    page = docs / "tab-editor" / "index.html"
+    before = (page.read_bytes(), page.stat().st_mtime_ns)
+    build_song_pages(docs)
+    assert (page.read_bytes(), page.stat().st_mtime_ns) == before
+
+
+def test_tab_editor_template_drift_fails_loudly(tmp_path):
+    docs = make_docs(tmp_path, ROWS, CHARTS)
+    template = APP_TEMPLATE.read_text().replace('<div id="results" class="results"></div>',
+                                                '<div id="renamed"></div>')
+    (docs / "index.html").write_text(template)
+    with pytest.raises(ValueError, match="results"):
+        build_song_pages(docs)
+
+
+def test_tab_editor_output_is_gitignored():
+    ignored = (REPO_ROOT / ".gitignore").read_text().splitlines()
+    assert "docs/tab-editor/" in ignored

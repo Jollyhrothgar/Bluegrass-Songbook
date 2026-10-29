@@ -103,6 +103,16 @@ them. Client side (`main.js`, `state.js`: `SONG_PATH`, `songHref`,
   link on a song path into in-place navigation (the base would load `/`).
 - `scripts/lib/build_song_pages.py` writes the pages and `404.html`; `scripts/server`
   serves `404.html` for unknown paths like Pages does.
+- `/tab-editor/` is the second path the app owns (`TAB_EDITOR_PATH`, state.js):
+  the tab editor's front door, view `tab-editor`, rendered lazily by
+  `tab-editor-home.js`. `handleDeepLink` routes it and returns true (boot would
+  otherwise rewrite it to `/`); `normalizedHref` gives the URL back to the root
+  when the view changes; in-app entry is `showView('tab-editor')` +
+  `pushHistoryState('tab-editor')` (a push, no reload). It has no editor code:
+  Open goes through `pwa.js` (`chooseTabFile` -> `openTabFile` -> `#new-tab?draft=`),
+  Start goes to `#new-tab?title=&instrument=`, My tabs reuses `drafts-view.js`
+  rows (`draftRowHtml`, `attachDraftActions`). "My tabs" is `#drafts` renamed in
+  copy only (store `bgb-drafts` unchanged). Nothing before Submit asks for sign-in.
 
 ### Navigation invariants
 
@@ -173,11 +183,6 @@ edits, and the in-place-or-fork wording load from
   of its id to the `auto-commit-song` edge function; the client never claims
   create/update/fork and never sends who the submitter is. The `create-song-issue`
   and `create-tab-pr` flows are deleted; nothing may call them.
-- Bounty board: `title-match.js` exposes no fuzzy ratio on purpose (scores
-  0.80-0.93 mix true and false pairs: `500 Miles` / `900 Miles` scores 0.89) and
-  returns candidate arrays, never a best match. `partitionWanted()`
-  (`bounty-view.js`) also filters against `data/bounty_decisions.json`, built from
-  `curation/bounty_decisions.yaml`. Evidence: `sources/bounty-hunt/CLEANUP-PLAN.md`.
 - Lists: owners and followers read the tables (RLS); everyone else uses the
   `get_public_list` RPC. `SupabaseAuth.fetchPublicList` returns
   `{list, songs, isOwner, isFollower, isOrphaned, canClaim}` (normalized in

@@ -22,7 +22,7 @@ export function midiToPitchName(midi) {
 // pluck 1..5 -> picking finger T/I/M/R/P; lh_code 0 = none, else fretting
 // digit = lh_code - 1. Oracle-verified against TablEdit's MusicXML
 // <pluck>/<fingering> (see otf.py).
-const V3_PLUCK_LETTERS = { 1: 'T', 2: 'I', 3: 'M', 4: 'R', 5: 'P' };
+export const V3_PLUCK_LETTERS = { 1: 'T', 2: 'I', 3: 'M', 4: 'R', 5: 'P' };
 
 function decodeFingering(code) {
     if (!(code > 0 && code <= 35)) return [null, null];
@@ -83,7 +83,7 @@ const SECOND_DEAD = 10;
 const V2_LAYOUT_CODES = new Set([0x0b, 0x0c, 0x0d, 0x0e, 0xc0, 0xd0]);
 export const FX_ORDER = ['brush', 'roll', 'choke', 'ghost', 'staccato', 'let-ring', 'muted',
     'harmonic', 'artificial-harmonic', 'tap', 'vibrato', 'tremolo', 'bend-release', 'slap'];
-const GRACE_KINDS = [null, 'hp', 'slide', 'bend', 'mordent', 'double', 'gruppetto', 'trill'];
+export const GRACE_KINDS = [null, 'hp', 'slide', 'bend', 'mordent', 'double', 'gruppetto', 'trill'];
 
 function attributeByte(e) {
     const r = e.raw;
@@ -504,7 +504,7 @@ export function tefToOtf(tef) {
     });
 
     const doc = {
-        otf_version: '1.0',
+        otf_version: '1.1',
         metadata, timing: { ticks_per_beat: 480 },
         tracks, notation,
         annotations,

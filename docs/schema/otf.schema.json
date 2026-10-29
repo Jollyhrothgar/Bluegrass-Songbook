@@ -1,0 +1,316 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bluegrassbook.com/schema/otf.schema.json",
+  "title": "OTF (Open Tab Format)",
+  "description": "OTF is the Bluegrass Songbook's tab format: one JSON document per tab, usually stored as *.otf.json. VERSION RULE. otf_version is \"MAJOR.MINOR\"; \"1.0\" is the shape as of G15a (2026-10-28); \"1.1\" adds the optional metadata.tab_by. Adding an OPTIONAL field bumps the minor version. Anything else (a rename, a removal, a change of meaning, a new required field) bumps the major version. Files of any earlier 1.x stay valid under the current schema. Writers stamp the current version; readers accept any 1.x and reject any other major. The order of properties in this file is the canonical key order used when a document is written out (G15b). Keys starting with an underscore are runtime view caches and are never valid in a file. Some rules JSON Schema cannot express are enforced by both validators (scripts/lib/otf_schema.py and validateOTF in docs/js/otf-editor/otf-validate.js); they are listed in docs/schema/otf.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["otf_version", "metadata", "timing", "tracks", "notation"],
+  "properties": {
+    "otf_version": {
+      "description": "Format version, \"MAJOR.MINOR\". Any \"1.x\" is accepted; see the version rule in this schema's description.",
+      "type": "string",
+      "pattern": "^1\\.[0-9]+$"
+    },
+    "metadata": {
+      "description": "What the tab is: title, time signature, tempo, and optional credits.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "time_signature", "tempo"],
+      "properties": {
+        "title": {
+          "description": "Song or tune title.",
+          "type": "string"
+        },
+        "time_signature": {
+          "description": "Default time signature for every measure, as \"beats/unit\" (\"4/4\", \"6/8\"). Measures listed in time_signature_changes override it for that measure only.",
+          "type": "string",
+          "pattern": "^[1-9][0-9]*/[1-9][0-9]*$"
+        },
+        "tempo": {
+          "description": "Tempo in quarter-note beats per minute.",
+          "type": "integer",
+          "minimum": 1
+        },
+        "key": {
+          "description": "Key of the tune, as written by the source (\"G\", \"Am\"). May be empty.",
+          "type": "string"
+        },
+        "composer": {
+          "description": "Composer or arranger credit. May be empty.",
+          "type": "string"
+        },
+        "tab_by": {
+          "description": "Who wrote this tab (added in 1.1): a name and an optional link, e.g. their Banjo Hangout profile. Not the song's composer.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["name"],
+          "properties": {
+            "name": {
+              "description": "The tab writer's name: non-empty, no leading or trailing whitespace, at most 100 characters.",
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100,
+              "pattern": "^(\\S|\\S[\\s\\S]*\\S)$"
+            },
+            "url": {
+              "description": "Optional link, http or https only, at most 500 characters.",
+              "type": "string",
+              "maxLength": 500,
+              "pattern": "^https?://"
+            }
+          }
+        },
+        "time_signature_changes": {
+          "description": "Per-measure time signature overrides. Each entry applies ONLY to its own measure; every other measure follows metadata.time_signature.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["measure", "time_signature"],
+            "properties": {
+              "measure": {
+                "description": "1-based measure number the override applies to.",
+                "type": "integer",
+                "minimum": 1
+              },
+              "time_signature": {
+                "description": "Time signature of that measure, \"beats/unit\".",
+                "type": "string",
+                "pattern": "^[1-9][0-9]*/[1-9][0-9]*$"
+              }
+            }
+          }
+        }
+      }
+    },
+    "timing": {
+      "description": "The tick grid every tick and duration in the document is measured on.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ticks_per_beat"],
+      "properties": {
+        "ticks_per_beat": {
+          "description": "Ticks in one beat, where a beat is a quarter note (480 in every file so far). A measure of n/d is n*4/d beats long.",
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "tracks": {
+      "description": "The instruments in the tab. Each may have a matching key in notation.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "instrument", "tuning"],
+        "dependentRequired": {
+          "percussion": ["lines"],
+          "lines": ["percussion"]
+        },
+        "properties": {
+          "id": {
+            "description": "Track id, unique in the document. It is the key of this track's notation.",
+            "type": "string",
+            "minLength": 1
+          },
+          "instrument": {
+            "description": "Instrument name as the source gave it (\"5-string-banjo\", \"mandolin\", \"percussion\", ...). Free text.",
+            "type": "string"
+          },
+          "tuning": {
+            "description": "Open-string pitches, string 1 first (\"D4\"). Its length is the track's string count. Empty only on a percussion track, which counts lines instead.",
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "capo": {
+            "description": "Capo fret, 0 for none.",
+            "type": "integer",
+            "minimum": 0
+          },
+          "role": {
+            "description": "What the track does in the arrangement.",
+            "enum": ["lead", "rhythm", "percussion"]
+          },
+          "percussion": {
+            "description": "True on a percussion track. Requires lines.",
+            "const": true
+          },
+          "lines": {
+            "description": "Number of staff lines (instruments) on a percussion track; its notes' s counts against this instead of the tuning length.",
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "if": { "required": ["percussion"] },
+        "else": {
+          "properties": { "tuning": { "minItems": 1 } }
+        }
+      }
+    },
+    "notation": {
+      "description": "The music: {trackId: [measure, ...]}. Every key must name a track; a track may have no key (an empty track).",
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["measure", "events"],
+          "properties": {
+            "measure": {
+              "description": "1-based measure number. Unique and ascending within a track.",
+              "type": "integer",
+              "minimum": 1
+            },
+            "events": {
+              "description": "Moments in the measure that have notes, ascending by tick.",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["tick", "notes"],
+                "properties": {
+                  "tick": {
+                    "description": "Offset from the start of the measure, in ticks. Unique and ascending within a measure, and inside the measure's length.",
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "notes": {
+                    "description": "Notes struck at this tick, at most one per string.",
+                    "type": "array",
+                    "items": { "$ref": "#/$defs/note" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "annotations": {
+      "description": "Text marks above the staff (chord names, section labels, remarks).",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["measure", "tick", "text"],
+        "properties": {
+          "measure": {
+            "description": "1-based measure the mark sits in.",
+            "type": "integer",
+            "minimum": 1
+          },
+          "tick": {
+            "description": "Offset inside that measure, in ticks.",
+            "type": "integer",
+            "minimum": 0
+          },
+          "text": {
+            "description": "The text of the mark.",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "reading_list": {
+      "description": "Playback order: measure ranges to play, in order (repeats and jumps unrolled). Absent means play straight through.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["from_measure", "to_measure"],
+        "properties": {
+          "from_measure": {
+            "description": "First measure of the range, inclusive.",
+            "type": "integer",
+            "minimum": 1
+          },
+          "to_measure": {
+            "description": "Last measure of the range, inclusive. A range running past the last written measure is a warning, not an error (#263).",
+            "type": "integer",
+            "minimum": 1
+          },
+          "name": {
+            "description": "Optional section label (\"Intro\", \"Part A1\").",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "x_source": {
+      "description": "Provenance of the tab (type, source_id, author, url, converted_at, ...). Free-form: the only object in the format that accepts unknown keys.",
+      "type": "object"
+    }
+  },
+  "$defs": {
+    "note": {
+      "description": "One note: a string and a fret, plus optional articulation. Property order here is the canonical key order for a note.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["s", "f"],
+      "properties": {
+        "s": {
+          "description": "String number, 1 = the first tuning entry. Must not exceed the track's string count (or lines, for percussion).",
+          "type": "integer",
+          "minimum": 1
+        },
+        "f": {
+          "description": "Fret, 0 = open.",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 24
+        },
+        "dur": {
+          "description": "Duration in ticks.",
+          "type": "integer",
+          "minimum": 1
+        },
+        "tie": {
+          "description": "True when this note is tied to the previous note on the same string.",
+          "type": "boolean"
+        },
+        "tech": {
+          "description": "Left-hand technique into this note: h hammer-on, p pull-off, / slide up, \\ slide down, x dead (muted) note, b bend.",
+          "enum": ["h", "p", "/", "\\", "x", "b"]
+        },
+        "fx": {
+          "description": "Per-note effects, a set stored in this canonical order. Omitted when empty.",
+          "type": "array",
+          "items": {
+            "enum": ["brush", "roll", "choke", "ghost", "staccato", "let-ring", "muted", "harmonic", "artificial-harmonic", "tap", "vibrato", "tremolo", "bend-release", "slap"]
+          }
+        },
+        "grace": {
+          "description": "A grace note leading into this note. It has no tick of its own.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["f"],
+          "properties": {
+            "f": {
+              "description": "Fret of the grace note, 0 = open.",
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 24
+            },
+            "kind": {
+              "description": "How the grace note connects to the main note. Absent means a plain grace note.",
+              "enum": ["hp", "slide", "bend", "mordent", "double", "gruppetto", "trill"]
+            }
+          }
+        },
+        "finger": {
+          "description": "Picking-hand finger: T thumb, I index, M middle, R ring, P pinky.",
+          "enum": ["T", "I", "M", "R", "P"]
+        },
+        "lh": {
+          "description": "Left-hand finger: 0 open, 1 index, 2 middle, 3 ring, 4 pinky.",
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        }
+      }
+    }
+  }
+}

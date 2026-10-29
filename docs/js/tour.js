@@ -162,16 +162,13 @@ export const TOUR_STEPS = [
     {
         id: 'tef',
         page: 'tab',
-        // Checked in the app, 2026-10-27: a .tef dropped on the home page, a
-        // song page or a tab page opens in the editor signed out (pwa.js
-        // enableFileDrop); sign-in is only asked at Submit. A phone cannot
-        // drag, and its way in, Add Song ▸ Tablature, asks for sign-in
-        // BEFORE the editor (launchTabCreator) and opens an empty take whose
-        // band has 📂 Import .tef…, so the copy says exactly that.
+        // Checked against G15c: a .tef dropped on any page opens in the editor
+        // signed out (pwa.js enableFileDrop), and so does a phone's way in,
+        // ⋯ ▸ Tab editor ▸ Open a tab file…; sign-in is only asked at Submit.
         dropZone: true,
         targets: [],
         title: 'Open your own TablEdit files',
-        body: 'Drag a .tef file onto any page and it opens in the tab editor, right in your browser. Fix it up, then sign in and submit it to add it to the book. On a phone: sign in, choose the song under Add Song ▸ Tablature, then tap 📂 Import .tef in the editor.',
+        body: 'Drag a .tef file onto any page and it opens in the tab editor, right in your browser. Fix it up, then sign in and submit it to add it to the book. On a phone: open the ⋯ menu, choose Tab editor, then tap Open a tab file…',
     },
 ];
 

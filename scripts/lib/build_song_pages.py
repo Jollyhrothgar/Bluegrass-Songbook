@@ -12,7 +12,11 @@ writes one plain HTML page per searchable song:
                                  instruments, "Recorded by"
     docs/songs/index.html        every song A–Z: the page that links to them
                                  all, linked from the homepage (G11)
-    docs/sitemap.xml             the static pages, the A–Z page + every song page
+    docs/tab-editor/index.html   the tab editor's front door (G15c): the app
+                                 with its empty state's words already in the
+                                 results panel
+    docs/sitemap.xml             the static pages, the A–Z page, the tab
+                                 editor + every song page
 
 Inputs are what `build_works_index.write_outputs` just wrote
 (`docs/data/index.jsonl` + `docs/data/songs/{id}.pro`), so the pages follow
@@ -63,6 +67,16 @@ ALL_SONGS = f'{SONGS_DIR}/'
 ALL_SONGS_TITLE = 'All songs A–Z | Bluegrass Book'
 ALL_SONGS_DESCRIPTION = ('Every song in Bluegrass Book, A to Z: chords, lyrics and tabs '
                          'for bluegrass, old-time and gospel standards.')
+TAB_EDITOR_DIR = 'tab-editor'
+TAB_EDITOR_SOURCE = 'scripts/lib/build_song_pages.py'   # what dates its sitemap entry, with docs/index.html
+TAB_EDITOR_TITLE = 'Tab Editor · Bluegrass Book'
+# Says nothing about saving back as .tef until that exists (G15f adds it).
+TAB_EDITOR_DESCRIPTION = ('Open a TablEdit .tef file and edit it in your browser, on a phone or '
+                          'a laptop. Free, with no account. Your tabs stay on your device.')
+# The words below are the app's empty state too (docs/js/tab-editor-home.js):
+# the heading and the privacy line must read the same in both.
+TAB_EDITOR_H1 = 'Tab Editor'
+TAB_EDITOR_PRIVACY = 'Your tabs stay on this device. Nothing is uploaded unless you submit it to the book.'
 # The homepage's own title and description, which a song page swaps for its own.
 HOME_HEAD = re.compile(r'<title>[^<]*</title>\s*<meta name="description" content="[^"]*">')
 DESCRIPTION_CHARS = 155
@@ -448,6 +462,42 @@ def render_page(row: dict, chordpro: str, canonical: str, template: str,
     return page
 
 
+# ---------------------------------------------------------------- tab editor
+
+def render_tab_editor_page(template: str) -> str:
+    """`tab-editor/index.html`: the app, with the tab editor front door's
+    head and its words already in the results panel. The app replaces the
+    article when it renders the empty state (docs/js/tab-editor-home.js), so a
+    crawler and a reader see the same words. The landing page starts hidden
+    and the (otherwise empty) results panel starts shown."""
+    esc = html.escape
+    canonical = f'{ORIGIN}{TAB_EDITOR_DIR}/'
+    head = (f'<title>{esc(TAB_EDITOR_TITLE)}</title>\n'
+            f'    <meta name="description" content="{esc(TAB_EDITOR_DESCRIPTION, quote=True)}">\n'
+            f'    <link rel="canonical" href="{esc(canonical)}">')
+    article = '\n'.join([
+        '<article class="prerender">',
+        f'<h1>{esc(TAB_EDITOR_H1)}</h1>',
+        '<p>Open a TablEdit file, or a tab saved from this site, and edit it right here in '
+        'your browser. It is free, it needs no account, and it works on a phone as well as a '
+        'laptop.</p>',
+        f'<p>{esc(TAB_EDITOR_PRIVACY)}</p>',
+        '<ul>',
+        '<li>Open a <code>.tef</code> or <code>.otf.json</code> file</li>',
+        '<li>Start a new tab for banjo, guitar, mandolin, fiddle, dobro or bass</li>',
+        '<li>Edit with the keyboard or by touch, and play it back</li>',
+        '<li>Keep your tabs in My tabs, saved in this browser</li>',
+        '<li>Download your work, or submit it to the book when you are ready</li>',
+        '</ul>',
+        '</article>',
+    ])
+    page = _fill(template, _landmark(template, HOME_HEAD), head)
+    page = _fill(page, '<div id="landing-page" class="landing-page">',
+                 '<div id="landing-page" class="landing-page hidden">')
+    return _fill(page, '<div id="results" class="results"></div>',
+                 f'<div id="results" class="results">{article}</div>')
+
+
 # ---------------------------------------------------------------- build
 
 def _write_if_changed(path: Path, text: str) -> bool:
@@ -513,7 +563,7 @@ def _read_jsonl(path: Path) -> list:
 
 def build_song_pages(docs_dir: Path, work_dates: dict = None, page_dates: dict = None) -> dict:
     """Write a page per song and version, the A–Z page (`songs/index.html`),
-    docs/404.html and docs/sitemap.xml.
+    docs/404.html, docs/tab-editor/index.html and docs/sitemap.xml.
 
     A song's page (`songs/{song}/`) is indexed, listed in the sitemap and on
     the A–Z page, and names its versions. A version's page (`songs/{song}/{version}/`) points
@@ -532,7 +582,8 @@ def build_song_pages(docs_dir: Path, work_dates: dict = None, page_dates: dict =
     if work_dates is None:
         work_dates = git_dates(docs_dir.parent, ['works'])
     if page_dates is None:
-        page_dates = git_dates(docs_dir.parent, [f'docs/{p or "index.html"}' for p in STATIC_PAGES])
+        page_dates = git_dates(docs_dir.parent, [f'docs/{p or "index.html"}' for p in STATIC_PAGES]
+                               + [TAB_EDITOR_SOURCE])
     out_dir = docs_dir / SONGS_DIR
     rows = _read_jsonl(data_dir / 'index.jsonl')
     everything = rows + _read_jsonl(data_dir / 'archive.jsonl')
@@ -606,10 +657,16 @@ def build_song_pages(docs_dir: Path, work_dates: dict = None, page_dates: dict =
 
     _fill(template, '<base href="/">', '<base href="/">')   # fails loudly if it's gone
     _write_if_changed(docs_dir / '404.html', template)
+    _write_if_changed(docs_dir / TAB_EDITOR_DIR / 'index.html', render_tab_editor_page(template))
 
-    # The A–Z page has no <lastmod>: no single commit dates its list.
+    # The A–Z page has no <lastmod>: no single commit dates its list. The tab
+    # editor's page is generated, so no commit touches it: it is as new as the
+    # newer of the template it is made from and this generator.
+    editor_dates = [page_dates.get(k) for k in ('docs/index.html', TAB_EDITOR_SOURCE)]
     urls = ([(ORIGIN + p, page_dates.get(f'docs/{p or "index.html"}')) for p in STATIC_PAGES]
-            + [(ORIGIN + ALL_SONGS, None)] + song_urls)
+            + [(ORIGIN + ALL_SONGS, None),
+               (f'{ORIGIN}{TAB_EDITOR_DIR}/', max((d for d in editor_dates if d), default=None))]
+            + song_urls)
     _write_if_changed(docs_dir / 'sitemap.xml', _sitemap(urls))
     print(f"Song pages: {len(pages)} in {out_dir} ({written} written, {pruned} pruned); "
           f"sitemap.xml lists {len(urls)} URLs")

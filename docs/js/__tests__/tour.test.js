@@ -46,10 +46,11 @@ describe('TOUR_STEPS', () => {
         expect(tef.body).toMatch(/\.tef/);
         expect(tef.body).toMatch(/in your browser/);
         expect(tef.body).toMatch(/submit it to add it to the book/);
-        // Submitting needs an account, and on a phone so does Add Song ▸
-        // Tablature (launchTabCreator gates it): the card must not hide that
+        // Submitting needs an account; opening and editing do not, on a phone
+        // too (G15c): the card says where a phone finds the file picker
         expect(tef.body).toMatch(/sign in and submit/);
-        expect(tef.body).toMatch(/On a phone: sign in, choose the song under Add Song ▸ Tablature/);
+        expect(tef.body).toMatch(/On a phone: open the ⋯ menu, choose Tab editor, then tap Open a tab file…/);
+        expect(tef.body).not.toMatch(/On a phone: sign in/);
     });
 });
 

@@ -86,6 +86,7 @@ docs/data/songs/
 # index by scripts/lib/build_song_pages.py on every build (G2). 404.html is
 # the app with <base href="/"> for song paths that have no page.
 docs/songs/
+docs/tab-editor/
 docs/sitemap.xml
 docs/404.html
 docs/data/tabs/*.otf.json
