@@ -26,8 +26,12 @@ const REPO_ROOT = (() => {
     return dir;
 })();
 
+// A FROZEN copy of the banjo track (fixtures/fmb-banjo.otf.json, 2026-10-28). This test guards the RENDERER and
+// asserts exact technique counts, so it must not read works/: a tab correction from the site would break it, as an
+// edit to Old Home Place broke CI & Deploy (#320). The live tab is still rendered end to end by the corpus smoke test
+// in tablature-effects.test.js, whose purpose is to catch problems in real data.
 const FMB = JSON.parse(fs.readFileSync(path.join(
-    REPO_ROOT, 'works/foggy-mountain-breakdown/banjo.otf.json'), 'utf8'));
+    REPO_ROOT, 'docs/js/__tests__/fixtures/fmb-banjo.otf.json'), 'utf8'));
 
 const TECH = new Set(['h', 'p', '/']);
 
