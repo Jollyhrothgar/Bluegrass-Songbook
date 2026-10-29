@@ -110,3 +110,6 @@ design/ui-states/shots/
 # holds outputs and stays local. See analytics/jupytext.toml.
 *.ipynb
 .ipynb_checkpoints/
+
+# Charts written by analytics/grassiness_analysis.py (regenerate by running it)
+analytics/*.png
