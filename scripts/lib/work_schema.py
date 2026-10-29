@@ -44,8 +44,8 @@ class Part:
     decision (curation/registry.yaml ``tab_pins:``), defaulting to the
     first part listed for that instrument.
     """
-    type: str  # 'lead-sheet', 'tablature', 'melody'
-    format: str  # 'chordpro', 'htf', 'abc'
+    type: str  # 'lead-sheet', 'tablature', 'melody', 'chord-chart'
+    format: str  # 'chordpro', 'htf', 'abc', 'chart'
     file: str  # Filename within work directory
     default: bool = False  # Is this the default part to show?
     instrument: Optional[str] = None  # For tablature: 'banjo', 'mandolin', etc.

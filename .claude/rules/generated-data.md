@@ -16,7 +16,7 @@ human edits, so committing everything dirty is always right.
 | Acquisition cache | `sources/*/raw/`, `downloads/` | mostly no (per-source `.gitignore`) | re-scrape |
 | Primary artifacts | `sources/*/parsed/`, Hangout `downloads/*.tef` | yes | costly: the parsers are frozen |
 | Authoritative | `works/*/work.yaml` + parts | yes | unrecoverable (hand-edited) |
-| Generated | `docs/data/index.jsonl`, `archive.jsonl`, `songs/`, `tabs/*.otf.json`; `docs/songs/` | no | `./scripts/bootstrap --quick` |
+| Generated | `docs/data/index.jsonl`, `archive.jsonl`, `songs/`, `tabs/*.otf.json`, `charts/`; `docs/songs/` | no | `./scripts/bootstrap --quick` |
 
 Every deploy rebuilds the generated tier (`build.yml` runs
 `build_works_index.py`, then uploads `docs/`). List the workflows that rebuild

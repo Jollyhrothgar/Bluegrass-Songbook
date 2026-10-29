@@ -81,6 +81,7 @@ from build_index import (
     KEYS,
 )
 
+import chord_chart
 from curation import (apply_curation, apply_tab_defaults, filter_suppressed,
                       load_registry, load_prune_list, apply_index_prune,
                       apply_tag_exclusions, load_promoted_songs)
@@ -815,6 +816,13 @@ def build_song_from_work(work_dir: Path) -> dict:
                 doc_info['submitted_by'] = prov['submitted_by']
             song['document_parts'].append(doc_info)
 
+    # Chord chart: validated and published by build_works_index (it needs
+    # every row), so only the facts it checks ride along; popped there.
+    if chord_chart.chart_parts(work):
+        song['_chart'] = {'parts': chord_chart.chart_parts(work),
+                          'errors': chord_chart.validate_work_parts(work),
+                          'work': {'parts': work.get('parts')}}
+
     return song
 
 
@@ -1073,6 +1081,63 @@ def _process_work_dir(work_dir_path: str) -> tuple:
         return (None, (work_dir.name, str(e)))
 
 
+def publish_charts(songs: list, works_dir: Path, charts_dir: Path):
+    """Validate each row's chord-chart part, publish it as JSON, prune orphans.
+
+    Sets `chord_chart` on the row; an invalid chart, a second chart on one
+    work, or a chart on a version prints an ERROR list and exits 1 before
+    anything is written. Every file in charts_dir is generated.
+    """
+    problems = []
+    charts = {}
+    for song in songs:
+        info = song.pop('_chart', None)
+        if not info:
+            continue
+        work_id = song['id']
+        errors = list(info['errors'])
+        parts = info['parts']
+        if parts:
+            fname = parts[0].get('file') or chord_chart.PART_TYPE
+            path = works_dir / work_id / fname
+            try:
+                chart = chord_chart.parse(path.read_text(encoding='utf-8'))
+                errors += chord_chart.validate_for_work(chart, info['work'])
+                charts[work_id] = chord_chart.to_json(chart)
+            except OSError as e:
+                errors.append(f"cannot read {fname}: {e.strerror}")
+            except chord_chart.ChartError as e:
+                errors += e.errors
+            if errors:
+                problems.append((work_id, fname, errors))
+    if problems:
+        print("\nERROR: invalid chord charts:")
+        for work_id, fname, errors in problems:
+            for msg in errors:
+                print(f"  {work_id}/{fname}: {msg}")
+        raise SystemExit(1)
+
+    published = set()
+    for song in songs:
+        data = charts.get(song['id'])
+        if data is None:
+            continue
+        name = f"{song['id']}.json"
+        published.add(name)
+        song['chord_chart'] = f"data/charts/{name}"
+        text = json.dumps(data, ensure_ascii=False, indent=1) + '\n'
+        dest = charts_dir / name
+        if not dest.exists() or dest.read_text(encoding='utf-8') != text:
+            charts_dir.mkdir(parents=True, exist_ok=True)
+            dest.write_text(text, encoding='utf-8')
+    orphans = [p for p in charts_dir.glob('*.json') if p.name not in published]
+    for path in orphans:
+        path.unlink()
+    if published or orphans:
+        print(f"Chord charts: {len(published)} published, "
+              f"{len(orphans)} orphans removed")
+
+
 def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = True,
                       fuzzy_grouping: bool = True, num_workers: int = None):
     """Build index from all works.
@@ -1162,6 +1227,10 @@ def build_works_index(works_dir: Path, output_file: Path, enrich_tags: bool = Tr
     # else the first part listed in work.yaml). Runs before the copy step so
     # the flag is set on every row that gets written.
     songs = apply_tab_defaults(songs, registry)
+
+    # Chord charts (G18a): validate every chart first and fail before anything
+    # is published, then write docs/data/charts/<work-id>.json.
+    publish_charts(songs, works_dir, Path('docs/data/charts'))
 
     # Copy tablature files to docs/data/tabs/
     tabs_dir = Path('docs/data/tabs')

@@ -45,9 +45,11 @@ parts:
   never for the scraped `artist`. Fix one by editing its `work.yaml`.
 - **Work ids are permanent data keys** (lists, votes, pending edits), even when
   the URL uses `slug`.
-- **Part types:** `lead-sheet`, `tablature`, and one legacy `document`.
-  **Formats:** `chordpro`, `otf` (the key is literally `otf`), and one legacy
-  `pdf`. ABC is not a part type: it lives inside a lead sheet as a
+- **Part types:** `lead-sheet`, `tablature`, `chord-chart` (format `chart`,
+  `chord-chart.yaml`; at most one, song roots only; `scripts/lib/chord_chart.py`),
+  and one legacy `document`.
+  **Formats:** `chordpro`, `otf` (the key is literally `otf`), `chart`, and one
+  legacy `pdf`. ABC is not a part type: it lives inside a lead sheet as a
   `{start_of_abc}` block, which the index exposes as `has_abc`. Recount with
   `grep -rhoE '^\s*(- )?type: [a-z-]+' works/*/work.yaml | awk '{print $NF}' | sort | uniq -c`
   (swap `type` for `format`). On 2026-10-28: 19,150 lead sheets, 493 tabs.

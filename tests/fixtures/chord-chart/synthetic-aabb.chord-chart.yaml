@@ -1,0 +1,14 @@
+# SYNTHETIC: placeholder chords (G, C, D, Em), not a real song. An A A B B
+# tune: repeats {A: 2, B: 2} and a 10-cell B part.
+key: G
+drawn_from: lead-sheet.pro
+sections:
+  A: |
+    | G \ | G \ | C \ | G \ |
+    | G \ | Em \ | D \ | G \ |
+  B: |
+    | C \ | C \ | G \ | G \ | D \ |
+    | D \ | G \ | Em \ | D \ | G \ |
+repeats:
+  A: 2
+  B: 2

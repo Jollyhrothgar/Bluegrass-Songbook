@@ -82,6 +82,8 @@ curation/lint_report.csv
 docs/data/index.jsonl
 docs/data/archive.jsonl
 docs/data/songs/
+# Published chord charts (G18a), one JSON per work with a chord-chart part.
+docs/data/charts/
 # Static per-song pages + the sitemap that lists them, generated from the
 # index by scripts/lib/build_song_pages.py on every build (G2). 404.html is
 # the app with <base href="/"> for song paths that have no page.

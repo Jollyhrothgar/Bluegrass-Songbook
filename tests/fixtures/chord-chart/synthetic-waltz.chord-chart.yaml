@@ -1,0 +1,7 @@
+# SYNTHETIC: placeholder chords (G, C, D), not a real song. A 3/4 waltz: one slot per cell.
+key: G
+meter: 3/4
+sections:
+  A: |
+    | G | G | C | G |
+    | G | D | G | \ |
