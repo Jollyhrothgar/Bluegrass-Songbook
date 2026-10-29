@@ -34,7 +34,7 @@ import {
     initKeyState
 } from './song-view.js';
 import {
-    peekSongContent, songHasContent, songHasAbc,
+    peekSongContent, songHasContent, songHasAbc, pickRepresentative,
     getArrangementContent, peekArrangementContent, getPendingContent,
 } from './song-content.js';
 import { CHROMATIC_MAJOR_KEYS } from './chords.js';
@@ -186,29 +186,6 @@ function activeLeadSheetArrangement() {
     if (!currentArrangements.length) return null;
     return currentArrangements.find(a => a.slug === activeArrangementSlug)
         || currentArrangements[0];
-}
-
-/**
- * Pick the best representative version from a group for display.
- * A canonical row (editorially pinned via curation/registry.yaml) wins
- * outright; otherwise prefers: content > most chords > highest canonical_rank.
- */
-function pickRepresentative(versions) {
-    if (versions.length === 0) return null;
-    if (versions.length === 1) return versions[0];
-    const pinned = versions.find(v => v.canonical === true);
-    if (pinned) return pinned;
-    return [...versions].sort((a, b) => {
-        // Flag-based (has_content) so the order can't depend on which
-        // versions the reader happens to have opened this session
-        const aHasContent = songHasContent(a) ? 1 : 0;
-        const bHasContent = songHasContent(b) ? 1 : 0;
-        if (aHasContent !== bHasContent) return bHasContent - aHasContent;
-        const aChords = a.chord_count || 0;
-        const bChords = b.chord_count || 0;
-        if (aChords !== bChords) return bChords - aChords;
-        return (b.canonical_rank || 0) - (a.canonical_rank || 0);
-    })[0];
 }
 
 // Getter for checking if we're in work view
