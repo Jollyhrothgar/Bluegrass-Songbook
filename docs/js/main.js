@@ -603,7 +603,8 @@ function initViewSubscription() {
         // Off a song page the URL belongs to the root: a hash route set while
         // on a song's path (/songs/x/#search) becomes /#search. Likewise off
         // the tab editor's front door (/tab-editor/#search).
-        const root = normalizedHref(view, window.location);
+        // The entry's own view guards a Back/Forward whose route hasn't run yet.
+        const root = normalizedHref(view, window.location, history.state?.view);
         if (root !== null) history.replaceState(history.state, '', root);
 
         // Tear down live tablature state when LEAVING the song page: stops

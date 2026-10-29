@@ -41,6 +41,21 @@ describe('normalizedHref (what the currentView subscriber does on leaving)', () 
     it('does nothing at the root', () => {
         expect(normalizedHref('search', { pathname: '/', hash: '#search' })).toBeNull();
     });
+
+    // Back then Forward onto a song: the Forward lands before its route runs
+    // (main.js parks popstate work for a task), so the view is still the page
+    // being left. The history entry's own state says it is the song's, and
+    // its URL was being rewritten to / (e2e/song-paths.spec.js).
+    it('leaves an entry that is its path\'s own view alone, whatever the view says', () => {
+        expect(normalizedHref('search', { pathname: '/songs/x/', hash: '' }, 'song')).toBeNull();
+        expect(normalizedHref('search', { pathname: '/tab-editor/', hash: '' }, 'tab-editor')).toBeNull();
+    });
+
+    it('still normalizes when the entry belongs to another view or has no state', () => {
+        expect(normalizedHref('search', { pathname: '/songs/x/', hash: '#search' }, null)).toBe('/#search');
+        expect(normalizedHref('search', { pathname: '/songs/x/', hash: '#search' }, 'search')).toBe('/#search');
+        expect(normalizedHref('home', { pathname: '/tab-editor/', hash: '' }, 'song')).toBe('/');
+    });
 });
 
 // main.js can't be imported without booting the app, so its wiring is pinned
@@ -58,7 +73,7 @@ describe('main.js wiring', () => {
     });
 
     it('the currentView subscriber normalizes through normalizedHref', () => {
-        expect(main).toMatch(/normalizedHref\(view, window\.location\)/);
+        expect(main).toMatch(/normalizedHref\(view, window\.location, history\.state\?\.view\)/);
     });
 
     it('the ⋯ menu offers My tabs and Tab editor, navigating without a reload', () => {
