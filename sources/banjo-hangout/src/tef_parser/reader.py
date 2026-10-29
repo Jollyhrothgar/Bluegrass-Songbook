@@ -244,8 +244,8 @@ class TEFNoteEvent:
     - Byte 4: component type. Notes: bits 0-4 = fret+1 (0x01-0x19),
       0x40 = grace flag. Non-notes: 0x39 = free text (byte 5 = text
       table index), 0x35 = chord diagram anchor, etc.
-    - Byte 5: duration code (bits 0-4) + dynamics (bits 5-6) + tie/
-      connect bit (bit 7).
+    - Byte 5: duration code (bits 0-4) + dynamic (bits 5-7: 0 fff loudest
+      .. 6 pp; 7 = tie/connect, see otf.dynamic_code).
     - Byte 6: articulation (1=hammer, 2=pull, 3=slide, 0x0c=bend/choke
       source, 0x0f=dead/muted).
     - Byte 10: fingering pack, base-6: 6*pluck + lh_code (see
