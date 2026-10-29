@@ -96,40 +96,10 @@ Tab and metadata ids live in their own namespaces because keying them by work id
 collided on the primary key when two people tabbed the same song, and surfaced
 as a permissions error (the update policy checks `created_by`).
 
-### `classifyChange` outcomes
-
-| Kind | Situation | Result |
-|---|---|---|
-| lead sheet | no work at the id | `create` |
-| lead sheet | caller is in a lead-sheet part's `provenance.submitted_by`, or in `trusted_users` | `update` in place |
-| lead sheet | anything else | `fork`: a new arrangement part, original untouched |
-| tablature | no work at the id | `create` (slug from the title; the row id is synthetic) |
-| tablature | `part_file` names a tab part the caller authored, or caller is trusted | `update` in place |
-| tablature | anything else | `add`: a new sibling part |
-| metadata | caller is trusted, or appears on any part of the work | `metadata` |
-| metadata | no claim / no work at `replaces_id` / no `replaces_id` | refused: 403 / 404 / 400 (`MetadataRefusedError`), never a fork or create |
-| placeholder | no work at the slug | `placeholder` (mint it) |
-| placeholder | work exists / bad id / also sets `replaces_id` | refused: 409 / 400 / 400 (`PlaceholderRefusedError`), never an overwrite or a suffix |
-
-Rules behind the table:
-
-- Ownership is asked per part type: `submittersOf(yaml, 'lead-sheet')` for a
-  chart, `tabPartOwners(yaml, file)` for a tab, mirrored in Python by
-  `process_pending.owns_content(..., part_type)`. Owning a tab must not buy an
-  in-place rewrite of someone's chart. The expectations live in one table,
-  `functions/_shared/testdata/ownership-cases.json`, read by both
-  `deno task test` and `uv run pytest tests/test_ownership_parity.py`. Add a row
-  there when you change either side.
-- `anyPartOwners(yaml)` is deliberately looser, and only the `metadata` branch of
-  `classifyChange` (not a database column) calls it. Do not "fix" it into `submittersOf`. Contributing anything earns the
-  right to say who wrote a song; it does not earn a rewrite of lyrics.
-- Metadata refuses when the work is missing; a placeholder refuses when the
-  work is present. A placeholder gets no trust bonus (trust used to turn on the
-  overwrite). If `apply_placeholder_row` finds the work present at write time,
-  the row is parked with `dedup_hold` for the Dungeon.
-- `DispatchRefusedError` is the base of the typed refusals; callers catch it.
-- The metadata action is logged as `metadata_edit`, which `get_leaderboard()`
-  does not score but the rate limit does count.
+`classifyChange` decides whether a row creates a work, updates it in place,
+forks it or is refused, by kind and by who owns what. Its outcome table and
+the ownership rules load from `.claude/rules/contribution-gate.md` when you
+touch `pending-dispatch.ts`, `commit-song.ts` or `process_pending.py`.
 
 Adding a trusted user (run in the SQL editor with the service role):
 `INSERT INTO trusted_users (user_id, created_by) VALUES ('<uuid>', 'admin-manual');`
@@ -170,9 +140,6 @@ does not do that from a table. The panel prints the local command:
   `claim_orphaned_list`, `generate_list_invite`, `remove_list_owner(list_id)`
   (removes the caller only). `add_list_owner` is executable by nobody; only
   `claim_list_invite` calls it as the definer.
-- A new `SECURITY DEFINER` function in `public` is executable by PUBLIC and, by
-  Supabase default privileges, `anon` and `authenticated`. In the same
-  migration, `REVOKE ALL ... FROM PUBLIC, anon` and grant only what is needed.
 - Votes are unique on `(user_id, song_id, arr_key)`. `arr_key` is a generated
   `coalesce(arr_slug, '')`, because a nullable column can't carry the unique
   constraint and PostgREST can't arbitrate an upsert on an expression index.
@@ -200,46 +167,10 @@ machine after one `supabase login`, shared across worktrees.
 supabase/tests/run.sh         # replay all migrations in a throwaway local Docker stack
 ```
 
-- Read the dry run before pushing. A migration dated earlier than the last
-  applied one is refused by a plain `db push` and needs `--include-all`, which
-  applies every pending migration.
-- Never edit or renumber an applied migration; add a new one. Check for a
-  timestamp collision first: `ls supabase/migrations | sed 's/_.*//' | uniq -d`.
-- Drift has three row shapes in `supabase migration list`: in sync, local-only
-  (pending), and remote-only (the database ran something this branch has no
-  file for). `scripts/lib/migration_drift.py` reports all three (exit 0 / 2 /
-  1); tests in `tests/test_migration_drift.py`.
-- The ledger agreeing is not the schema agreeing. `migration list` reads a table
-  of version strings. `20260209000000_pending_nullable_content.sql` was stamped
-  applied while its `DROP NOT NULL` never ran, which broke every metadata save
-  (23502) months later. `supabase db dump --schema public` shows the real schema;
-  `db-check` (`scripts/lib/schema_assert.py`, list in `INVARIANTS`) asserts the
-  load-bearing parts. An invariant belongs there only when a named consumer
-  breaks without it and no other guard catches it (the rule is at the top of that
-  file). Add new ones there with a `why`.
-- A new migration that changes nullability, adds or drops a constraint, or drops
-  an object must end with a `DO $$ ... RAISE EXCEPTION` block asserting its own
-  postcondition (query `pg_attribute`, `pg_constraint`, `pg_proc`,
-  `to_regclass`, `pg_policies`). `db push` runs each file in a transaction, so a
-  failed assertion rolls it back and the ledger can't be stamped without the DDL
-  running. Assert the postcondition, not the statement you just typed; keep it in
-  the same file. Don't retrofit applied migrations. Example:
-  `supabase/migrations/20260819000000_pending_content_really_nullable.sql`.
-- Before narrowing a read policy, backfill the rows the new predicate would hide
-  (the `20260930000000` migration backfills lists with `owners = '{}'`, which the
-  client's sync would otherwise treat as deleted).
-- `SET search_path = ''` on a function whose body names tables unqualified breaks
-  it: `20260107010000` did that to `log_events` and every call failed with 42P01
-  for eight months, unnoticed because `supabase.rpc` resolves `{ error }`
-  instead of throwing. Qualify every table (`public.analytics_events`) and call
-  the function in the migration's own postcondition.
-- Local replay needs `supabase/tests/baseline/` because a few objects
-  (`user_lists`, `user_list_items`, `song_flags`, `submit_flag`,
-  `get_visitor_flag_count`) were made in the dashboard and have no `CREATE` in
-  `migrations/`. `post_deploy_check.sql` and `post_deploy_probe.sql` are the
-  read-only checks to run against production after `db-push`; the probe's pass
-  signal is its last line, `PASS: post_deploy_probe.sql`, with no ERROR line.
-  See `supabase/tests/README.md`.
+- The rules for writing one (assert the postcondition in the same file, never
+  edit an applied migration, check for timestamp collisions, qualify tables
+  under `SET search_path = ''`) load from `.claude/rules/supabase-migrations.md`
+  when you touch `supabase/migrations/`.
 
 ## Deno tests
 

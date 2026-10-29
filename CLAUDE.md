@@ -16,7 +16,7 @@ ES modules with no build step, served by GitHub Pages. Song data lives in
 | Dev server (walks 8080–8090; `--exact` pins the port) | `./scripts/server [port]` |
 | Unit tests (Vitest) | `npm test`; one file: `npx vitest run docs/js/__tests__/<file>` |
 | Python tests | `uv run pytest`; one file: `uv run pytest tests/<file> -q` |
-| E2E (Playwright, own server on 8137) | `npm run test:e2e`; one spec: `npx playwright test e2e/<spec>` |
+| E2E (Playwright, own server on this worktree's port) | `npm run test:e2e`; one spec: `npx playwright test e2e/<spec>` |
 | Every CLI subcommand | `./scripts/utility help` |
 
 Run Python through `uv run`. Corpus sizes drift, so count them instead of
@@ -52,11 +52,11 @@ own git worktree off `main` (`~/.paseo/worktrees/<project>/<name>/`).
 Parallel worktrees share some things:
 
 - **Ports.** The `web` service in `paseo.json`, started from paseo, serves
-  this worktree on its own port with a proxy URL. E2E binds 8137 exactly, so
-  it fails fast while another worktree is running E2E. Then use
-  `PW_PORT=<port> npm run test:e2e` with a port nothing is listening on:
-  with `PW_PORT` set, Playwright tests whatever server already holds that
-  port instead of starting its own.
+  this worktree on its own port with a proxy URL. E2E starts its own server
+  on a port derived from the worktree's path (`e2e/port.js`), so worktrees
+  can run E2E at the same time. `PW_PORT=<port>` overrides it: Playwright
+  then tests whatever server already holds that port instead of starting
+  its own.
 - **The git stash** is shared by every worktree. Set work aside with a WIP
   commit instead.
 - **`main` is protected** (ruleset "Protect main"): force pushes and branch
