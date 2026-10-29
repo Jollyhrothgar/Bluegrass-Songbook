@@ -12,27 +12,15 @@
     {
       "id": "banjo",
       "instrument": "5-string-banjo",
-      "tuning": [
-        "D4",
-        "B3",
-        "G3",
-        "D3",
-        "G4"
-      ],
+      "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
       "role": "lead"
     }
   ],
   "notation": {},
   "reading_list": [
-    {
-      "from_measure": 1,
-      "to_measure": 34
-    },
-    {
-      "from_measure": 3,
-      "to_measure": 34
-    }
+    {"from_measure": 1, "to_measure": 34},
+    {"from_measure": 3, "to_measure": 34}
   ],
   "x_source": {
     "type": "banjo-hangout",

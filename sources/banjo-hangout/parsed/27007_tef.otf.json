@@ -11,46 +11,16 @@
   "tracks": [],
   "notation": {},
   "reading_list": [
-    {
-      "from_measure": 1,
-      "to_measure": 9
-    },
-    {
-      "from_measure": 2,
-      "to_measure": 8
-    },
-    {
-      "from_measure": 10,
-      "to_measure": 18
-    },
-    {
-      "from_measure": 11,
-      "to_measure": 17
-    },
-    {
-      "from_measure": 19,
-      "to_measure": 19
-    },
-    {
-      "from_measure": 20,
-      "to_measure": 27
-    },
-    {
-      "from_measure": 20,
-      "to_measure": 26
-    },
-    {
-      "from_measure": 28,
-      "to_measure": 36
-    },
-    {
-      "from_measure": 29,
-      "to_measure": 35
-    },
-    {
-      "from_measure": 37,
-      "to_measure": 37
-    }
+    {"from_measure": 1, "to_measure": 9},
+    {"from_measure": 2, "to_measure": 8},
+    {"from_measure": 10, "to_measure": 18},
+    {"from_measure": 11, "to_measure": 17},
+    {"from_measure": 19, "to_measure": 19},
+    {"from_measure": 20, "to_measure": 27},
+    {"from_measure": 20, "to_measure": 26},
+    {"from_measure": 28, "to_measure": 36},
+    {"from_measure": 29, "to_measure": 35},
+    {"from_measure": 37, "to_measure": 37}
   ],
   "x_source": {
     "type": "banjo-hangout",

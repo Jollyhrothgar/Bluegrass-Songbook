@@ -12,13 +12,7 @@
     {
       "id": "banjo",
       "instrument": "5-string-banjo",
-      "tuning": [
-        "MIDI16",
-        "MIDI7",
-        "E2",
-        "E2",
-        "E2"
-      ],
+      "tuning": ["MIDI16", "MIDI7", "E2", "E2", "E2"],
       "capo": 0,
       "role": "lead"
     },

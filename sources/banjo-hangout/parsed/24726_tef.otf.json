@@ -12,14 +12,7 @@
     {
       "id": "guitar",
       "instrument": "6-string-guitar",
-      "tuning": [
-        "F#4",
-        "C#4",
-        "A3",
-        "E3",
-        "B2",
-        "F#2"
-      ],
+      "tuning": ["F#4", "C#4", "A3", "E3", "B2", "F#2"],
       "capo": 0,
       "role": "rhythm"
     }

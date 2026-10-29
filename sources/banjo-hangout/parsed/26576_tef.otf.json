@@ -12,36 +12,21 @@
     {
       "id": "guitar",
       "instrument": "6-string-guitar",
-      "tuning": [
-        "E4",
-        "B3",
-        "G3",
-        "D3",
-        "A2",
-        "E2"
-      ],
+      "tuning": ["E4", "B3", "G3", "D3", "A2", "E2"],
       "capo": 0,
       "role": "rhythm"
     },
     {
       "id": "bass",
       "instrument": "upright-bass",
-      "tuning": [
-        "G2",
-        "D2",
-        "A1",
-        "E1"
-      ],
+      "tuning": ["G2", "D2", "A1", "E1"],
       "capo": 0,
       "role": "rhythm"
     }
   ],
   "notation": {},
   "reading_list": [
-    {
-      "from_measure": 1,
-      "to_measure": 66
-    }
+    {"from_measure": 1, "to_measure": 66}
   ],
   "x_source": {
     "type": "banjo-hangout",
