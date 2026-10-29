@@ -57,18 +57,30 @@ export function looksLikeOtf(doc) {
  * @param {{parseTef?: Function}} [deps] - injected for tests
  * @returns {Promise<Object>} OTF document
  */
-export async function importFileToOtf(file, { parseTef = null } = {}) {
+export async function importFileToOtf(file, deps = {}) {
+    return (await importTabFile(file, deps)).otf;
+}
+
+/**
+ * importFileToOtf, and the file it came from: `source` is `{name, bytes}` for
+ * a `.tef` (its original bytes, so Save as can write a .tef over them) and
+ * `{name}` for an `.otf.json` (so Save as starts from the same format).
+ *
+ * @returns {Promise<{otf: Object, source: {name: string, bytes?: ArrayBuffer}}>}
+ */
+export async function importTabFile(file, { parseTef = null } = {}) {
     const name = file?.name || '';
     if (OTF_JSON_RE.test(name)) {
         const doc = JSON.parse(await file.text());
         if (!looksLikeOtf(doc)) throw new Error('That .otf.json has no tracks.');
-        return doc;
+        return { otf: doc, source: { name } };
     }
     if (!TEF_RE.test(name)) throw new Error(`"${name}" is not a .tef or .otf.json file.`);
     const parse = parseTef || (await import('./tef-import/index.js')).parseTef;
-    const doc = parse(new Uint8Array(await file.arrayBuffer()), name);
+    const bytes = await file.arrayBuffer();
+    const doc = parse(new Uint8Array(bytes), name);
     if (!looksLikeOtf(doc)) throw new Error("Couldn't read any tracks from that tab file.");
-    return doc;
+    return { otf: doc, source: { name, bytes } };
 }
 
 /**
@@ -87,8 +99,8 @@ export async function openTabFile(file, {
     track = trackEvent,
 } = {}) {
     try {
-        const otf = await importFileToOtf(file, { parseTef });
-        const draft = await store.save({ otf, title: otf?.metadata?.title || file.name });
+        const { otf, source: opened } = await importTabFile(file, { parseTef });
+        const draft = await store.save({ otf, source: opened, title: otf?.metadata?.title || file.name });
         // `source`: front-door | menu | drop | launch (where the file came from).
         track('tab_file_open', { source, ext: tabFileExt(file.name) });
         navigate(`#new-tab?draft=${encodeURIComponent(draft.id)}&file=1`);
