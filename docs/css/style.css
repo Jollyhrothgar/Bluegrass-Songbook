@@ -10873,6 +10873,55 @@ body.file-dragover {
     outline: none;
 }
 
+/* "Tab by" credit row (otf-editor/tab-credit.js): under the title/artist. */
+.tab-credit {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem 0.75rem;
+    margin: 0.35rem 0 0.5rem;
+    font-size: var(--font-sm);
+}
+.tab-credit-field {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex: 1 1 14rem;
+    min-width: 0;
+}
+.tab-credit-label {
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+.tab-credit input {
+    flex: 1;
+    min-width: 0;
+    font: inherit;
+    color: inherit;
+    background: var(--bg);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-sm);
+    padding: 0.2rem 0.4rem;
+}
+.tab-credit input:focus {
+    border-style: solid;
+    border-color: var(--accent);
+    outline: none;
+}
+.tab-credit.is-locked input {
+    border-style: solid;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+.tab-credit-error {
+    flex-basis: 100%;
+    color: var(--danger, #c0392b);
+}
+.tab-credit-note {
+    flex-basis: 100%;
+    color: var(--text-secondary);
+}
+
 /* ==========================================================================
    Lead-sheet editor (js/lead-editor/): one CodeMirror view, Lyrics | Chords | ChordPro
    Lyrics and Chords modes reuse the book's own classes (.song-body, .song-section,

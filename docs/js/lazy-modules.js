@@ -52,6 +52,7 @@ export const LAZY_MODULE_URLS = [
     './js/otf-editor/popover.js',
     './js/otf-editor/recorder.js',
     './js/otf-editor/state.js',
+    './js/otf-editor/tab-credit.js',
     './js/otf-editor/toolbar.js',
     './js/otf-editor/work-edit.js',
     './js/renderers/tab-hit-test.js',

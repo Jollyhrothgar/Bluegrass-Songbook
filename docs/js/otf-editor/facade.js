@@ -1466,6 +1466,41 @@ export class EditingFacade {
         });
     }
 
+    /**
+     * Set (or clear, with null) who wrote this tab: `metadata.tab_by`
+     * `{name, url?}`. Undoable, one step per call. The caller validates
+     * (see otf-editor/tab-credit.js); this only refuses what the schema would.
+     * A document that gets a credit is stamped 1.1, the version that has it.
+     */
+    setTabBy(credit) {
+        let next = null;
+        if (credit) {
+            const name = typeof credit.name === 'string' ? credit.name.trim() : '';
+            const url = typeof credit.url === 'string' ? credit.url.trim() : '';
+            if (!name) return false;
+            next = url ? { name, url } : { name };
+        }
+        return this._mutate(next ? 'Set tab credit' : 'Clear tab credit', () => {
+            if (!this.otf.metadata) this.otf.metadata = {};
+            const now = this.otf.metadata.tab_by || null;
+            if ((now?.name ?? null) === (next?.name ?? null)
+                && (now?.url ?? null) === (next?.url ?? null)) return false;
+            if (next) {
+                this.otf.metadata.tab_by = next;
+                if (this.otf.otf_version === '1.0') this.otf.otf_version = '1.1';
+            } else {
+                delete this.otf.metadata.tab_by;
+            }
+            return true;
+        });
+    }
+
+    /** The current credit, `{name, url?}` or null. */
+    getTabBy() {
+        const t = this.otf.metadata?.tab_by;
+        return t && t.name ? { ...t } : null;
+    }
+
     // ------------------------------------------------------------------
     // Fingering — two independent fields on one note
     //

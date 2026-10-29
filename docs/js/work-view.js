@@ -2831,12 +2831,14 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
         { submitTab },
         { createAutosaver, getDraftStore, draftOpenHash },
         { bindBandToEditor },
+        { creditFromPart },
     ] = await Promise.all([
         import('./otf-editor/editor.js'),
         import('./otf-editor/work-edit.js'),
         import('./otf-editor/submit-tab.js'),
         import('./drafts.js'),
         import('./tab-edit-band.js'),
+        import('./otf-editor/tab-credit.js'),
         kitLoading,
     ]);
 
@@ -2916,9 +2918,26 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
         await autosave.flush();
     };
 
+    // PRE-FILL the credit when correcting a published take: the OTF's own
+    // tab_by, else the credit the part is published with (the imported
+    // Hangout author, or an earlier submission's). A copy, so the view's
+    // cached document is not touched. A new take or an opened .tef starts empty.
+    if (!isNewTake && !otf?.metadata?.tab_by) {
+        const published = creditFromPart(part);
+        if (published) {
+            otf = {
+                ...otf,
+                otf_version: otf.otf_version === '1.0' ? '1.1' : otf.otf_version,
+                metadata: { ...otf.metadata, tab_by: published },
+            };
+        }
+    }
+
     activeEditSession = createTabEditSession({
         mount: container,
         otf,
+        lockExistingCredit: !isNewTake,
+        isTrusted: async () => (await window.SupabaseAuth?.isTrustedUser?.()) === true,
         trackId: resolveEditTrackId(otf, instrument),
         filename: `${editFilename(part)}${isNewTake ? '' : '-edited'}`,
         editorFactory: (opts) => new OTFEditor(opts),

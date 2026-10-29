@@ -653,6 +653,45 @@ describe('EditingFacade — insertMeasure (structural, all tracks)', () => {
     });
 });
 
+describe('EditingFacade — setTabBy (the "Tab by" credit)', () => {
+    it('is one undo step and restores the 1.0 version on undo', () => {
+        const f = new EditingFacade(banjoDoc());
+        expect(f.setTabBy({ name: ' Jane Picker ', url: 'https://example.com/jane' })).toBe(true);
+        expect(f.otf.metadata.tab_by).toEqual({ name: 'Jane Picker', url: 'https://example.com/jane' });
+        expect(f.otf.otf_version).toBe('1.1');
+        expect(f.getTabBy()).toEqual({ name: 'Jane Picker', url: 'https://example.com/jane' });
+        f.undo();
+        expect(f.canUndo()).toBe(false);          // exactly one step
+        expect(f.otf.metadata.tab_by).toBeUndefined();
+        expect(f.otf.otf_version).toBe('1.0');
+        f.redo();
+        expect(f.getTabBy().name).toBe('Jane Picker');
+    });
+
+    it('no-ops on the same value, and null clears', () => {
+        const f = new EditingFacade(banjoDoc());
+        f.setTabBy({ name: 'Jane' });
+        expect(f.setTabBy({ name: 'Jane' })).toBe(false);
+        expect(f.setTabBy({ name: 'Jane', url: '' })).toBe(false);
+        expect(f.setTabBy(null)).toBe(true);
+        expect(f.otf.metadata.tab_by).toBeUndefined();
+        expect(f.setTabBy(null)).toBe(false);
+    });
+
+    it('refuses a credit with no name', () => {
+        const f = new EditingFacade(banjoDoc());
+        expect(f.setTabBy({ name: '  ', url: 'https://x.test/' })).toBe(false);
+        expect(f.canUndo()).toBe(false);
+    });
+
+    it('survives a draft round trip (export, JSON, reload)', () => {
+        const f = new EditingFacade(banjoDoc());
+        f.setTabBy({ name: 'Jane', url: 'https://example.com/j' });
+        const reloaded = new EditingFacade(JSON.parse(JSON.stringify(f.export())));
+        expect(reloaded.getTabBy()).toEqual({ name: 'Jane', url: 'https://example.com/j' });
+    });
+});
+
 describe('EditingFacade — setTempo / setFingering', () => {
     it('setTempo is undoable and no-ops on the same value', () => {
         const f = new EditingFacade(banjoDoc());
