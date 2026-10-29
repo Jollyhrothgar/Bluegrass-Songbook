@@ -1,601 +1,150 @@
 # Bluegrass Songbook
 
-A bluegrass jam songbook: a curated searchable index of a few thousand
-bluegrass and bluegrass-adjacent songs, backed by a 19,000+ work archive (every
-archived work still resolves by direct URL and can be restored to search — see
-"Index Prune" in `scripts/lib/CLAUDE.md`).
+A bluegrass jam songbook at [bluegrassbook.com](https://bluegrassbook.com): a
+curated, searchable index of a few thousand songs, backed by an archive of
+19,000+ works that still resolve by URL. The frontend in `docs/` is static
+ES modules with no build step, served by GitHub Pages. Song data lives in
+`works/`; accounts, lists and votes live in Supabase. Mike owns the project;
+"Mike" below means the person you take instructions from.
 
-Corpus size drifts constantly, so count it rather than quoting this file:
-`ls works | wc -l` (all works), and after `./scripts/bootstrap --quick`,
-`wc -l docs/data/index.jsonl` (curated/searchable) and
-`wc -l docs/data/archive.jsonl` (archived). On 2026-08-19: 19,230 / 2,462 /
-16,762.
+## Commands
 
-## Quick Start
+| Task | Command |
+|------|---------|
+| Set up a worktree (deps + index, ~25 s) | `./scripts/bootstrap` |
+| Rebuild `docs/data/` from `works/` | `./scripts/bootstrap --quick` |
+| Dev server (walks 8080–8090; `--exact` pins the port) | `./scripts/server [port]` |
+| Unit tests (Vitest) | `npm test`; one file: `npx vitest run docs/js/__tests__/<file>` |
+| Python tests | `uv run pytest`; one file: `uv run pytest tests/<file> -q` |
+| E2E (Playwright, own server on 8137) | `npm run test:e2e`; one spec: `npx playwright test e2e/<spec>` |
+| Every CLI subcommand | `./scripts/utility help` |
 
-```bash
-./scripts/bootstrap          # First-time setup (install deps + build index)
-./scripts/server             # Start frontend (walks 8080-8090; --exact to pin)
-./scripts/utility help               # THE list of subcommands (~30 of them)
-./scripts/utility refresh-musicbrainz  # Rebuild every MusicBrainz cache (local only)
-./scripts/utility build-posts        # Build blog posts manifest
-./scripts/utility search-gaps        # What visitors searched for and couldn't find
-./scripts/bootstrap --quick          # Rebuild docs/data/ from works/
-```
+Run Python through `uv run`. Corpus sizes drift, so count them instead of
+quoting this file: `ls works | wc -l` (all works), and after a build
+`wc -l docs/data/index.jsonl` (searchable) and `docs/data/archive.jsonl`
+(archived). On 2026-10-28: 19,246 / 2,589 / 16,651.
 
-`./scripts/utility add-song FILE.pro` creates `works/<slug>/` from a local
-chart via `works_writer.create_work` and rebuilds the index. Metadata comes
-from the file's own `{meta: ...}` directives (`--title` / `--artist` /
-`--composer` / `--key` / `--id` override); an id that is taken is an error,
-not an overwrite (`--on-collision suffix` to mint `<slug>-1` instead).
-Fixed 2026-08-19 — it used to copy the file into `songs/manual/parsed/`,
-which nothing reads, and print "Added:".
+## Workflow: one worktree per change
 
-## Secrets
+Mike uses paseo, a tool that runs several coding agents at once, each in its
+own git worktree off `main` (`~/.paseo/worktrees/<project>/<name>/`).
 
-Never written to disk. `.env.tpl` holds 1Password `op://` references (committed);
-values are injected per-command by `scripts/lib/with-secrets`, which
-`./scripts/utility` already uses for everything needing them. Keep the
-1Password app unlocked (no `op signin` needed; `op whoami` lies under the app
-integration, so don't use it as a check). Details in `scripts/lib/CLAUDE.md`.
+1. **Setup.** Paseo runs `./scripts/bootstrap` when it creates the worktree,
+   as `paseo.json` says. Paseo reads that file from `main`, not from your
+   branch. If `.venv`, `node_modules` or `docs/data/index.jsonl` is missing,
+   run it yourself.
+2. **Pick the work.** The backlog, called the fix-it list, is
+   `docs/plans/2026-09-30-fix-it-list.md`. Read its Status table before
+   proposing work.
+3. **Branch.** `feature/<name>`, `bug/<name>` or `docs/<name>`. When the work
+   has a fix-it ID (a letter and a number, such as `G14`), start commit
+   subjects with it: `G14: ...`.
+4. **Build and check.** Keep it simple (DRY, KISS, no speculative
+   generality). Write the test first, especially for parser changes. Before a
+   PR, run `npm test`, `uv run pytest`, and the E2E specs that cover any UI
+   you touched.
+5. **PR.** `gh pr create --base main`. Name the fix-it IDs in the body and
+   update their Status rows in the same PR.
+6. **Merge** with a merge commit, never a squash, so each item stays
+   bisectable and revertable: `gh pr merge <n> --merge --delete-branch`.
+   CI deploys `main` only when its tests pass (`build.yml`).
 
-## CRITICAL: Cost Controls
+Parallel worktrees share some things:
 
-**NEVER submit paid API calls without explicit user confirmation.** This includes:
-- Anthropic batch API (LLM tagging)
-- Strum Machine API (if it ever becomes paid)
-- Any other external paid service
+- **Ports.** The `web` service in `paseo.json`, started from paseo, serves
+  this worktree on its own port with a proxy URL. E2E binds 8137 exactly, so
+  it fails fast while another worktree is running E2E. Then use
+  `PW_PORT=<port> npm run test:e2e` with a port nothing is listening on:
+  with `PW_PORT` set, Playwright tests whatever server already holds that
+  port instead of starting its own.
+- **The git stash** is shared by every worktree. Set work aside with a WIP
+  commit instead.
+- **`main` is protected** (ruleset "Protect main"): force pushes and branch
+  deletion are rejected for everyone.
 
-Always:
-1. Show the cost estimate with breakdown (token counts, rates, total)
-2. Give the user a chance to validate the calculation - cost estimates can have bugs
-3. Ask for explicit permission to proceed
-4. Wait for clear "yes" before submitting - don't auto-submit
+Without paseo: `cd <container>/.bare && git worktree add ../<dir> -b <branch> main`,
+then `./scripts/bootstrap` in the new directory.
 
-## Development Practices
+## Rules
 
-- **Test-driven development** - write tests, especially for parser changes
-- **Best practices**: DRY, KISS - avoid over-engineering
-- **Python**: Always use `uv run` (e.g., `uv run pytest`, `uv run python script.py`)
-- **Branching**:
-  - Features: `feature/<name>` (e.g., `feature/chord-display-mode`)
-  - Bug fixes: `bug/<name-or-issue-id>` (e.g., `bug/parser-missing-chord`)
-- **Worktrees**: Use `.bare` worktree setup for parallel work on multiple features (see below)
-- **Trunk-based workflow**: All PRs merge to `main`. CI runs tests; deployment only happens if tests pass.
-- **Understand the project before making changes**: Confirm with the user before you make changes
-  (and also do your research). Does making a change corrupt the search index? Do you rember that
-  there are effectively two "CI modes" - the 'long mode' that is built with local deps, and the
-  short mode that uses github actions. Have you ensured that github actions reflect the intent of
-  the user and the state that needs to serve users?
-
-## Bug Triage — No Invisible Bandaids
-
-**IMPORTANT**: When the user complains about something being wrong — rendering looks off, data seems incorrect, behavior is unexpected — **dispatch the `triage` subagent BEFORE writing any code fix.**
-
-The triage agent investigates root cause and comes back with a structured verdict that classifies every suggested fix as:
-- **ROOT FIX**: Addresses the actual cause
-- **BANDAID**: Makes the symptom go away without fixing the cause (acceptable if tracked as tech debt)
-- **WORKAROUND**: Avoids the buggy path entirely
-
-**Why this matters**: This project has layered pipelines (TEF → OTF → renderer, ChordPro → works → index → UI). A symptom at the display layer often hides a bug in the parser or data. Fixing at the surface creates invisible bandaids that cascade into worse problems later.
-
-**When to dispatch triage**:
-- User says something "looks wrong" or "should be X not Y"
-- You notice unexpected data while implementing a feature
-- A test fails in a way that seems like bad data rather than bad test logic
-- You're tempted to add a special case or override to make something "just work"
-
-**How**: dispatch the subagent-launching tool with `subagent_type: "triage"` and
-a prompt describing the complaint and what you've observed so far. (That tool is
-named `Agent` in current Claude Code and was `Task` in older versions — use
-whichever your tool list actually offers.)
-
-A known bandaid tracked as an issue is fine. An invisible bandaid is not.
-
-## Repository Structure (Git Worktrees)
-
-This repo uses a bare git repository with worktrees for parallel feature development:
-
-```
-bluegrassbook.com/
-├── .bare/              # Bare git repo (shared git data)
-├── main/               # Worktree: main branch
-└── feature-xyz/        # Worktree: feature branches as needed
-```
-
-**Setup from scratch:**
-```bash
-mkdir bluegrassbook.com && cd bluegrassbook.com
-git clone --bare git@github.com:Jollyhrothgar/Bluegrass-Songbook.git .bare
-echo "gitdir: ./.bare" > .git
-cd .bare && git worktree add ../main main
-cd ../main && git branch --set-upstream-to=origin/main main
-```
-
-**Common worktree commands:**
-```bash
-# Create a new feature worktree
-cd .bare && git worktree add ../feature-xyz -b feature-xyz
-
-# List worktrees
-git worktree list
-
-# Remove a worktree (after merging)
-git worktree remove ../feature-xyz
-```
-
-## Project Structure
-
-```
-Bluegrass-Songbook/
-├── works/                   # PRIMARY: Song collection (18,300+ works)
-│   └── {work-slug}/         # e.g., "blue-moon-of-kentucky"
-│       ├── work.yaml        # Metadata: title, artist, tags, parts
-│       └── lead-sheet.pro   # ChordPro lead sheet
-│
-├── docs/                    # Frontend (GitHub Pages)
-│   ├── index.html           # Search UI + song editor
-│   ├── blog.html            # Redirect to the dev blog on mikebeaumier.com
-│   ├── songs/{song}/        # GENERATED per-song (and /{version}/) app page, chart pre-rendered (+ sitemap.xml, 404.html)
-│   ├── songs/index.html     # GENERATED: every song A–Z (links Google to each song page)
-│   ├── js/                  # ES modules
-│   │   ├── main.js          # Entry point, initialization, routing
-│   │   ├── shell.js         # App shell: top band, bottom band, pill primitive
-│   │   ├── state.js         # Shared state
-│   │   ├── search-core.js   # Search logic
-│   │   ├── work-view.js     # THE unified song page (openWork) — all routes land here
-│   │   ├── song-view.js     # Lead-sheet helpers, ABC notation, list nav
-│   │   ├── song-controls.js # Pill builders (Key / Display / Info / Export)
-│   │   ├── chord-explorer/  # Interactive chord progression builder
-│   │   ├── bounty-view.js   # Bounty/voting system
-│   │   ├── add-song-picker.js # Song selection interface
-│   │   └── renderers/       # Part renderers
-│   │       ├── chordpro.js  # ChordPro parse + render (shared everywhere)
-│   │       ├── tablature.js # Tab display
-│   │       └── tab-player.js # Interactive tab player
-│   ├── css/style.css        # Dark/light themes
-│   ├── posts/               # Blog posts (markdown)
-│   └── data/
-│       ├── index.jsonl      # Song index (built from works/)
-│       └── posts.json       # Blog manifest
-│
-├── sources/                 # Song and tab sources
-│   ├── classic-country/     # ~17,000 parsed songs (migrated to works/)
-│   ├── golden-standard/     # 86 curated bluegrass standards
-│   ├── manual/              # Hand-created songs
-│   ├── tunearch/            # ABC fiddle tunes
-│   ├── banjo-hangout/       # Banjo tabs from Banjo Hangout (TEF→OTF); its
-│   │                        #   site_config.py also drives the four siblings
-│   ├── fiddle-hangout/      # Sibling Hangout site (shares banjo-hangout code)
-│   ├── flatpicker-hangout/  #   "
-│   ├── mandolin-hangout/    #   "
-│   ├── reso-hangout/        #   "
-│   ├── bluegrass-lyrics/    # 764 songs from BluegrassLyrics.com (Feb 2026)
-│   ├── ultimate-guitar/     # Chord enrichment via UG Mobile API
-│   ├── web-chords/          # Chord-website import, COMPLETE Jul 2026:
-│   │                        #   239 parsed, 144 works created
-│   ├── traditional-music-uk/ # Chord data from traditionalmusic.co.uk
-│   ├── bounty-hunt/         # Builds the wanted/bounty list
-│   ├── mandozine/           # Mandolin TEF arrangements
-│   └── tef-uploads/         # User-uploaded TEF files for conversion
-│   # `ls sources/` is the real list — this tree goes stale.
-│
-├── scripts/                 # CLI tools
-│   ├── bootstrap            # Setup + build index
-│   ├── server               # Start dev server
-│   ├── utility              # add-song, count-chords, refresh-musicbrainz
-│   └── lib/                 # Python implementations
-│       ├── build_works_index.py  # PRIMARY: Build index from works/
-│       ├── work_schema.py        # work.yaml schema
-│       └── build_index.py        # LEGACY: Build from sources/
-│
-├── analytics/               # Data analysis dashboard
-│   ├── dashboard.py         # Jupyter notebook (jupytext percent; .ipynb is local)
-│   └── scripts/             # Export utilities
-│
-├── supabase/                # Supabase backend configuration
-│   └── migrations/          # SQL migrations (version-controlled)
-│
-├── .claude/skills/          # Claude Code skills
-│   ├── chordpro/SKILL.md    # ChordPro syntax reference
-│   ├── github-project/SKILL.md  # GitHub project management
-│   ├── tab-debug/SKILL.md   # TEF/tablature debugging workflow
-│   └── add-issue/SKILL.md   # GitHub issue creation with duplicate detection
-│
-├── ROADMAP.md               # Product vision & phases
-├── tests/                   # pytest test suite (parser)
-├── docs/js/__tests__/       # Vitest unit tests (frontend)
-├── e2e/                     # Playwright E2E tests
-└── package.json             # Node.js test dependencies
-```
-
-## Data Tiers — what's tracked, and why
-
-**The rule: if a build produces it, git doesn't track it.** `git status` should
-only ever show things a human edited, so "commit everything that's dirty" is
-always the right answer and nobody has to decide what belongs in a PR.
-
-| Tier | Where | Tracked? | Read by the site build? | If lost |
-|------|-------|----------|------------------------|---------|
-| 1. Acquisition cache | `sources/*/raw/`, `downloads/` | mostly **no** (per-source `.gitignore`) | no | re-scrape |
-| 2. Primary artifacts | `sources/*/parsed/`, Hangout `downloads/*.tef` | **yes** | no | not re-creatable cheaply — the parsers are frozen |
-| 3. Authoritative | `works/*/work.yaml` + parts | **yes** | **yes** | unrecoverable — hand-edited |
-| 4. Generated site data | `docs/data/index.jsonl`, `archive.jsonl`, `songs/`, `tabs/*.otf.json` | **no** | rebuilt every deploy | `./scripts/bootstrap --quick` |
-
-Tier 4 is gitignored (2026-08-02). Every consumer rebuilds it before use, so the
-committed copies never reached production and only made corpus PRs unreadable.
-The rebuilders are whichever workflows invoke the index builder — ask, don't
-assume: `grep -ln build_works_index .github/workflows/*`. As of 2026-08-19 that
-is `build.yml` (the Pages deploy: runs `build_works_index.py`, then uploads
-`docs/`) and `process-tune-request.yml`. The other content workflows push to
-`works/` and rely on the deploy triggered afterwards to rebuild.
-
-Three carve-outs, all deliberate — each verified by wiping `docs/data/` and
-rebuilding from `works/` (songs and tabs came back with **0 diffs**; the items
-below did **not** come back, which is exactly why they stay tracked):
-
-- **`docs/data/tabs/*_tef.otf.json` stays tracked.** Those six are hand-placed
-  OTF test fixtures, not build output: `build_works_index`'s orphan prune
-  spares them and `docs/js/__tests__/otf-editor/facade-27493.test.js` reads one
-  directly. Adding a new fixture means matching that `*_tef` name.
-- **`docs/data/docs/` (published PDFs) stays tracked.** It's 4 files that never
-  churn, so ignoring it would buy nothing — and one of them
-  (`ive-just-seen-a-face-banjo-intro-tab.pdf`) has no matching source anywhere
-  in `works/`, so it is only recoverable from git. The doc-copy step also has
-  no orphan prune, so stale copies from deleted works linger here.
-- **Caches in `docs/data/*.json` stay tracked** (`artist_tags`, `llm_tags`,
-  `tag_overrides`, `strum_machine_cache`, `deleted_songs`, `grassiness_scores`,
-  …). They are *inputs* CI reads, not outputs — see "Local vs CI Operations" in
+- **Paid APIs need an explicit yes.** Before any paid call (Anthropic batch
+  tagging, or any other paid service), show the cost estimate with its
+  breakdown (token counts, rates, total), let Mike check the arithmetic, and
+  wait for a clear "yes". Never auto-submit.
+- **Research, then confirm the plan with Mike before changing code.** Ask
+  yourself: can this corrupt the search index? Does it behave the same in the
+  local long build (which has MusicBrainz and other local-only inputs; see
+  "Local vs CI Operations" in `scripts/lib/CLAUDE.md`) and in GitHub Actions?
+  Do the workflows still do what Mike intends for the live site?
+- **Triage a complaint before fixing it.** When Mike says something looks
+  wrong, when data surprises you, or when you are tempted to add a special
+  case, dispatch the `triage` agent before writing a fix. It labels each fix
+  ROOT FIX, BANDAID or WORKAROUND. The pipelines are layered (TEF → OTF →
+  renderer; ChordPro → works → index → UI), so a display symptom often has a
+  parser or data cause. A bandaid tracked in an issue is fine; an untracked
+  one is not.
+- **`works/` is authoritative.** Fix song metadata in `works/*/work.yaml`,
+  never by regenerating from `sources/`. The full rules load from
+  `.claude/rules/works.md` when you touch `works/`.
+- **Never write secrets to disk.** `.env.tpl` holds 1Password `op://`
+  references; `scripts/lib/with-secrets` injects the values per command, and
+  `./scripts/utility` already uses it. Keep the 1Password app unlocked. Don't
+  check sign-in with `op whoami`: under the app integration it says "not
+  signed in" even when reads work. Details: "Secrets" in
+  `scripts/lib/CLAUDE.md`.
+- **Generated data is not tracked.** If a build produces it, it is gitignored,
+  so `git status` only shows human edits. The exceptions load from
+  `.claude/rules/generated-data.md`.
+- **A workflow's push to `main` does not deploy.** GitHub starts no workflows
+  for `GITHUB_TOKEN` pushes, so `build.yml` lists every content workflow by
+  its `name:` in a `workflow_run` trigger. Adding or renaming a workflow that
+  pushes means updating that list; `tests/test_workflow_deploy_triggers.py`
+  fails if you forget. See "How a bot commit reaches the site" in
   `scripts/lib/CLAUDE.md`.
 
-Re-verify any time with: snapshot `docs/data/`, delete `songs/ tabs/
-index.jsonl archive.jsonl`, run `./scripts/bootstrap --quick`, diff.
-
-Consequences worth knowing: a fresh clone must run `./scripts/bootstrap` before
-`./scripts/server` has data; and to see what an import did to the published
-corpus, rebuild and inspect locally (or check prod) rather than reading a diff.
-
-Provenance is unaffected — it lives in `works/*/work.yaml` under
-`parts[].provenance` (`source`, `source_id`, `source_file`), which is what ties
-tier 4 back to tier 1. Only a handful of works lack it (4 of 19,230 on
-2026-08-19) — recount rather than trusting this number.
-
-## Works Architecture
-
-**Works are now authoritative (Mike, 2026-07-31).** Source regeneration is
-finished: `works/` is the durable, hand-editable store. Metadata fixes
-(artist, composers, tags, titles) belong DIRECTLY in `works/*/work.yaml` —
-they will not be clobbered, because nothing bulk-regenerates works from
-sources anymore. Importers still ADD works/parts (new tabs, new songs) but
-must never overwrite existing works' metadata.
-
-History: before 2026-07-31 works were treated as ephemeral parser output
-("fix the parser, not the work"), and source `artist` fields inherited
-whatever performer page a chart was scraped from — so authorship-looking
-attributions (e.g. "You Are My Sunshine ~ Johnny Cash") are scrape artifacts.
-The `artist` field means "as performed by"; authorship lives in `composers`
-(the index's `composer` comes only from work.yaml `composers`).
-
-Songs are organized in `works/`, where each work is a directory containing:
-
-```yaml
-# works/blue-moon-of-kentucky/work.yaml
-id: blue-moon-of-kentucky
-title: Blue Moon of Kentucky
-artist: Patsy Cline
-composers: [Bill Monroe]
-default_key: C
-tags: [ClassicCountry, NashvilleSound, JamFriendly]
-parts:
-  - type: lead-sheet
-    format: chordpro
-    file: lead-sheet.pro
-    default: true
-    provenance:
-      source: classic-country
-      source_file: bluemoonofkentuckylyricschords.pro
-      imported_at: '2026-01-02'
-```
-
-**Songs and versions.** A work is its own song unless it says otherwise:
-
-```yaml
-song: a-hundred-years-from-now   # this work is a version of that song (its root work id)
-version: '2'                     # its URL: /songs/a-hundred-years-from-now/2/
-slug: blue-moon-of-kentucky      # (on a song's root only) its URL name, when the work id would mislead
-```
-
-Recorded once, never recomputed: `scripts/lib/seed_songs.py` seeded them
-(2026-10-26) on evidence only — matching lyrics, curation pins, merge
-redirects; a version is named for what it provably is (`2`, `banjo-tab`),
-**never** the scraped `artist`. Fix one by editing the work.yaml. The build
-turns them into URLs and version groups (`build_works_index.apply_songs`).
-
-**Part types** in the corpus today: `lead-sheet` (the overwhelming majority),
-`tablature`, and a single legacy `document`. There is no `abc-notation` part
-type — ABC lives *inside* a `chordpro` lead sheet as a `{start_of_abc}` block,
-which is why the index exposes it as the `has_abc` flag rather than a part.
-
-**Formats**: `chordpro`, `otf` (OpenTabFormat — the key is literally `otf`,
-not `opentabformat`; see `RENDERERS` in `docs/js/renderers/index.js`), plus one
-legacy `pdf`.
-
-Recount either list with:
-`grep -rhoE '^\s+(- )?type: [a-z-]+' works/*/work.yaml | awk '{print $NF}' | sort | uniq -c`
-(swap `type` for `format`).
-
-The frontend can display multiple parts per work (e.g., lead sheet + banjo tab).
-
-## Key Components
-
-| Component | Location | Reference |
-|-----------|----------|-----------|
-| **Frontend** | `docs/` | `docs/js/CLAUDE.md` |
-| **App shell (top/bottom bands, pills)** | `docs/js/shell.js`, `docs/js/song-controls.js` | `docs/js/CLAUDE.md` |
-| **Unified song page / Tablature** | `docs/js/work-view.js`, `docs/js/renderers/` | `docs/js/CLAUDE.md` |
-| **Parser** | `sources/classic-country/src/` | `sources/classic-country/src/CLAUDE.md` |
-| **Banjo Hangout tabs** | `sources/banjo-hangout/` | `sources/banjo-hangout/CLAUDE.md` |
-| **Build pipeline** | `scripts/lib/` | `scripts/lib/CLAUDE.md` |
-| **ChordPro syntax** | `.claude/skills/chordpro/` | `SKILL.md` (auto-invoked) |
-| **GitHub project** | `.claude/skills/github-project/` | `SKILL.md` (milestones, issues, labels) |
-| **TEF/Tab debugging** | `.claude/skills/tab-debug/` | `SKILL.md` (TEF parsing issues) |
-| **Issue creation** | `.claude/skills/add-issue/` | `SKILL.md` (duplicate detection, labels) |
-| **Chord Explorer** | `docs/js/chord-explorer/` | `docs/js/chord-explorer/CLAUDE.md` |
-| **Backend (Supabase)** | `supabase/`, `docs/js/supabase-auth.js` | `supabase/CLAUDE.md` |
-| **Analytics** | `analytics/` | `analytics/CLAUDE.md` |
-| **E2E Tests** | `e2e/` | `e2e/CLAUDE.md` |
-| **Python Tests** | `tests/` | `tests/CLAUDE.md` |
-
-### Project Skills (`.claude/skills/`)
-
-| Skill | Purpose |
-|-------|---------|
-| **chordpro** | ChordPro syntax reference (auto-invoked) |
-| **github-project** | Milestones, issues, labels, PR workflows |
-| **tab-debug** | TEF/tablature debugging workflow |
-| **add-issue** | GitHub issue creation with duplicate detection |
-
-### Project Commands (`.claude/commands/`)
-
-| Command | Purpose |
-|---------|---------|
-| **roast_image** | Process a complaint screenshot into a Bluegrass Standards Board case with bureaucratic roast |
-
-### Project Agents (`.claude/agents/`)
-
-| Agent | Purpose |
-|-------|---------|
-| **triage** | Bug triage investigator. Dispatch when user complains about wrong behavior. Traces root cause, labels fixes as ROOT FIX vs BANDAID. See "Bug Triage" section above. |
-| **qa-explorer** | Explores the running app like a real user to find bugs and UX issues. Needs `./scripts/server` up first. |
-
-## Development Workflows
-
-### Adding a UI Feature
-
-1. Edit the relevant module in `docs/js/` (see `docs/js/CLAUDE.md` for module breakdown)
-2. Edit `docs/css/style.css` for styling
-3. Test at `http://localhost:8080` (run `./scripts/server`)
-4. Push to main - CI will verify JS syntax and rebuild if needed
-
-### Fixing Parser Issues
-
-1. Edit `sources/classic-country/src/parser.py`
-2. Test with debug viewer: `./sources/classic-country/scripts/server debug_viewer`
-3. Run regression test: `./sources/classic-country/scripts/test regression`
-4. See `sources/classic-country/src/CLAUDE.md` for parser details
-
-### Adding a Song Manually
-
-`works/` is authoritative, so a song is added by creating its work directory
-and rebuilding:
-
-```bash
-mkdir -p works/<slug>
-$EDITOR works/<slug>/work.yaml        # see "Works Architecture" below
-$EDITOR works/<slug>/lead-sheet.pro
-./scripts/bootstrap --quick           # rebuild docs/data/ from works/
-```
-
-Or, when the chart already exists as a `.pro` file, let the CLI do exactly
-that:
-
-```bash
-./scripts/utility add-song ~/Downloads/my-song.pro
-```
-
-It reads the file's `{meta: ...}` metadata, mints the slug the same way the
-rest of the pipeline does (`slugify(title)`), writes through `works_writer`
-(so suppressed ids and existing works are refused, never overwritten), and
-rebuilds `docs/data/`.
-
-### Rebuilding the Search Index
-
-```bash
-./scripts/bootstrap --quick   # Regenerates docs/data/index.jsonl from works/
-```
-
-This runs `build_works_index.py`, which reads all `works/*/work.yaml` files and builds the search index.
-
-### Refreshing MusicBrainz Data (Local Only)
-
-Four caches need a local PostgreSQL copy of the MusicBrainz dump
-(`~/workspace/music_brainz/mb-db`, Docker container `musicbrainz-db`, port
-5440; on Mike's M4 laptop it runs under Colima). CI never has it, so the
-caches are committed and CI reads them. One command rebuilds all of them in
-order and rebuilds the index:
-
-```bash
-uv sync --extra analytics                 # psycopg2 lives in this extra
-./scripts/utility refresh-musicbrainz     # starts/stops Colima + the DB itself
-git add docs/data/artist_tags.json docs/data/bluegrass_*.json \
-        docs/data/grassiness_scores.json docs/data/verified_artists.json
-```
-
-Every index build prints `MusicBrainz: N works' artists never checked` when
-works arrived (or artists changed) since the last refresh — that is the
-signal to run it. Details: `scripts/lib/refresh-musicbrainz`.
-
-## Format: ChordPro + Extensions
-
-We use **ChordPro-compatible syntax** with custom extensions:
-
-```chordpro
-{meta: title Your Cheatin Heart}
-{meta: artist Hank Williams}
-{meta: composer Hank Williams}
-{key: G}
-{tempo: 120}
-{meta: x_source classic-country}      # Custom extension
-
-{start_of_verse: Verse 1}
-Your cheatin' [G]heart will make you [C]weep
-{end_of_verse}
-```
-
-**Version metadata** (for alternate arrangements):
-```chordpro
-{meta: x_version_label Simplified}
-{meta: x_version_type simplified}      # alternate | cover | simplified | live
-{meta: x_arrangement_by John Smith}
-{meta: x_version_notes Easier chord voicings for beginners}
-```
-
-**Key conventions:**
-- `{meta: key value}` for all metadata (consistent pattern)
-- `{meta: x_*}` for custom fields (ChordPro spec allows this)
-- Standard ChordPro for portability to other apps
-
-See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
-
-## GitHub
-
-**Milestones**: Run `gh api repos/:owner/:repo/milestones --jq '.[] | "\(.title): \(.open_issues) open"'`
-
-**Labels**: Run `gh label list` to see available labels and descriptions.
-
-**See**: `.claude/skills/github-project/SKILL.md` for issue/milestone management patterns.
-
-**Automated Workflows**:
-
-| Workflow | Trigger | Action |
-|----------|---------|--------|
-| `build.yml` | Push to main, PRs, **`workflow_run` after any content workflow named in its trigger list**, manual dispatch | Runs tests, rebuilds search index, deploys to GitHub Pages only if tests pass |
-| `process-pending.yml` | `pending-commit` repository_dispatch from `auto-commit-song` / `reconcile-pending` | Writes one `pending_songs` row into `works/` via `works_writer` (create / update / fork-to-arrangement), pushes, then marks the row committed |
-| `process-tune-request.yml` | Issue labeled `tune-request` | Processes tune requests |
-| `cleanup-pending.yml` | `workflow_run` after a successful `CI & Deploy` | Cleans up stale pending songs (so it only runs when a deploy actually happened) |
-| `reconcile-pending.yml` | Hourly (`42 * * * *`) + manual | Retries `pending_songs` rows that never reached `works/`, prints the drift count, and opens/updates one alert issue if any stay stuck |
-| `sync-community-input.yml` | Hourly (`27 * * * *`) + manual | Syncs trusted-user tag downvotes to `docs/data/tag_overrides.json` (auto-applied at next index build) and exports `genre_suggestions` to `docs/data/user_genre_suggestions.json` (review-only, not auto-applied) |
-| `sync-deleted-songs.yml` | Hourly (`17 * * * *`) + manual | Syncs Supabase `deleted_songs` + `promoted_songs` into `docs/data/*.json` so UI deletes and Dungeon promotions survive the next index build |
-| `deploy-functions.yml` | Push to main touching `supabase/functions/**` (or the Deno config/lockfile), + manual | Type-checks and tests the edge functions, then `supabase functions deploy`. Needs the `SUPABASE_ACCESS_TOKEN` repo secret |
-
-This table is a copy, not the source of truth — the workflow's real name is the
-`name:` field in its file. Regenerate with
-`grep -H -m1 '^name:' .github/workflows/*.yml` before trusting it.
-
-> ⚠️ **A workflow that pushes to `main` does not trigger a deploy by itself.**
-> GitHub does not start workflows for pushes made with the default
-> `GITHUB_TOKEN`, so bot commits land in git and nothing rebuilds. `build.yml`
-> closes the gap with a `workflow_run` trigger that lists content workflows **by
-> their `name:` field** — a rename or a new pushing workflow silently unhooks
-> deployment with no error anywhere. If you add or rename a workflow that
-> commits to `main`, update `.github/workflows/build.yml`;
-> `tests/test_workflow_deploy_triggers.py` fails CI if you forget. Details:
-> "How a bot commit reaches the site" in `scripts/lib/CLAUDE.md`.
-
-## Chrome DevTools MCP
-
-Use the `chrome-devtools` MCP when Playwright/Vitest aren't enough:
-
-- **Visual debugging** - inspect rendered DOM, see layout issues, check CSS
-- **Performance profiling** - identify slow renders, memory issues
-- **Network inspection** - debug index.jsonl loading, tablature fetch failures
-- **Console errors** - catch runtime JS errors not surfaced in tests
-
-Start the dev server first (`./scripts/server`), then use the MCP to interact with the page.
-
-## Current State
-
-- **Curated index (2026-07-31)**: search/collections show the bluegrass canon, kept by a two-of-three-ledgers rule — MusicBrainz coverage, Strum Machine, BluegrassLyrics — plus instrumentals, curated artists, user adds, and a manual review. Everything else is archived, not deleted: direct URLs work, and `./scripts/utility curate unprune <id>` puts any song back. For the current split, count `docs/data/index.jsonl` vs `archive.jsonl` after a build (2,462 / 16,762 on 2026-08-19) — the numbers move as songs are promoted
-- **19,000+ works** in works-based architecture with chord search, transposition, favorites, dark mode
-- **Works system**: Each song is a "work" with multiple parts (lead sheet, tablature, ABC notation)
-- **Tablature**: Banjo Hangout tabs with TEF→OTF parsing, playback, track mixer for multi-instrument arrangements
-- **Tags**: Genre (Bluegrass, ClassicCountry, etc.), Vibe (JamFriendly, Modal), Instrument (tag:fiddle, tag:banjo) - primary source is LLM tagging, with MusicBrainz and grassiness scoring as fallbacks
-- **User accounts**: Google OAuth via Supabase, cloud-synced lists
-- **Song versions**: Multiple arrangements with voting via the Arrangement pill; editorial curation (canonical/variant pins) in `curation/registry.yaml`
-- **Song URLs**: a song lives at `/songs/{song}/`, its versions at `/songs/{song}/{version}/` (work.yaml `song:` / `version:` / `slug:`; see "Song paths" in `docs/js/CLAUDE.md`). Work ids stay permanent as data keys (lists, votes, pending edits); `#work/{slug}` still routes
-- **App shell UI**: slim top band + bottom band + pill controls (`docs/js/shell.js`); one unified song page (`work-view.js` / `openWork`); auto-hiding chrome (`body.chrome-hidden`) instead of a focus mode
-
-**Recent additions (Jan-Feb 2026):**
-- **Trusted user editing**: Trusted users can make instant edits without approval
-- **Super-user requests**: Regular users can request trusted status via GitHub issue
-- **LLM tagging**: Primary tag source using Claude batch API
-- **Tag voting**: Trusted users can override incorrect tags
-- **Dungeon promote**: any signed-in user can promote an archived work back
-  into search from the Bluegrass Dungeon; undo is limited to the promoter or a
-  trusted user, so two users disagreeing can't flip a song back and forth
-- **Legacy ID migration**: Song IDs migrated from filename-based to work slugs
-- **Strum Machine integration**: 605+ songs with practice backing tracks
-- **UI redesign (Jul 2026)**: app shell with top/bottom bands, pill controls (Key/Display/Info/Export/Arrangement) replacing the old quick-controls bar, sidebar, and version-picker modal
-- **Auto-hiding chrome**: the top band hides while you scroll through a song (replaced focus mode)
-- **Covering artists**: which bluegrass legends recorded each song. Since F9 (Oct 2026) the scraped `artist` is never a label on a chart: the writer is the credit, and "Recorded by: Bill Monroe (1947), …" lists MusicBrainz-confirmed recorders (covering artists + confirmed scraped artists, `./scripts/utility refresh-musicbrainz`), each a YouTube search, in the Info pill and static footer
-- **Multi-owner lists**: Collaborative list curation with follow/unfollow
-- **Thunderdome**: Claim abandoned lists (now 1 year inactivity threshold)
-- **Frictionless feedback**: Report issues and request songs with no account at all
-- **Submitter attribution**: Derived server-side from the verified session; content
-  writes (song/tab submissions and corrections) require login, reports and requests
-  don't (Phase 2a — see `docs/plans/contribution-pipeline.md`)
-
-- **Review queue (Aug 2026, phase 2d)**: deletions / suppressions /
-  merge-redirects are the only asks still reviewed. Trusted users file a
-  request, admins decide, in the Bluegrass Dungeon panel
-  (`docs/js/review-queue.js`, `review_requests`). Admins keep the instant
-  delete. Approving a suppress or merge-redirect prints the local command
-  instead of pretending CI can run it.
-- **Document upload removed (Aug 2026, phase 2d)**: the intake staged files
-  nothing downstream ever read. Document parts already in `works/` and the
-  PDFs in `docs/data/docs/` still serve — this killed the intake, not the
-  shelf.
-
-**What's next**: `docs/plans/2026-09-30-fix-it-list.md` is the backlog and its single
-source of truth: a Status table by ID, the working agreements, and the follow-ups.
-Read it before proposing work and update its Status column in the same PR as the
-change. (Older GitHub milestones still exist: `gh issue list --milestone "..."`.)
-
-**Recent (Feb 2026):**
-- **BluegrassLyrics.com import**: 764 songs imported (494 with chords from UG enrichment, 270 lyrics-only). See `sources/bluegrass-lyrics/CLAUDE.md` and `sources/ultimate-guitar/CLAUDE.md`.
-- **Strum Machine matching**: 764 total songs now matched (+147 from BL import)
-- **LLM tagging**: All new songs tagged with genre tags via Anthropic batch API
-
-## File Navigation
-
-| I want to... | Go to... |
-|--------------|----------|
-| Add a UI feature | `docs/js/` + `docs/js/CLAUDE.md` |
-| Work with tablature/renderers | `docs/js/renderers/` + `docs/js/work-view.js` |
-| Build the OTF editor | `docs/js/otf-editor/DESIGN.md` |
-| Modify homepage collections | `docs/js/collections.js` |
-| Build chord progressions | `docs/js/chord-explorer/` + `docs/js/chord-explorer/CLAUDE.md` |
-| Understand works structure | `works/` + `scripts/lib/work_schema.py` |
-| Pin canonical versions / suppress works | `curation/registry.yaml` + `scripts/lib/curate.py` (see `scripts/lib/CLAUDE.md`) |
-| Fix a parser bug | `sources/classic-country/src/parser.py` + its CLAUDE.md |
-| Debug TEF/tablature parsing | `.claude/skills/tab-debug/SKILL.md` |
-| Understand ChordPro syntax | `.claude/skills/chordpro/SKILL.md` |
-| Understand grassiness scoring | `scripts/lib/tagging/CLAUDE.md` |
-| BluegrassLyrics.com import | `sources/bluegrass-lyrics/CLAUDE.md` |
-| Change the wanted/bounty list | `curation/bounty_decisions.yaml`, then rebuild — `docs/data/wanted_songs.json` is build output, not a file to edit (`sources/bounty-hunt/CLAUDE.md`) |
-| Ultimate Guitar chord scraper | `sources/ultimate-guitar/CLAUDE.md` |
-| Work with auth/user data | `docs/js/supabase-auth.js` |
-| Review a delete/suppress/merge request | `docs/js/review-queue.js` + `supabase/CLAUDE.md` |
-| Add a database migration | `supabase/migrations/` |
-| Manage issues/milestones | `.claude/skills/github-project/SKILL.md` |
-| Write a blog post | mikebeaumier.com, in the Bluegrass Book dev log series (`docs/posts/` is the pre-move copy; `blog.html` only redirects) |
-| Analyze usage data | `analytics/dashboard.py` (opens as a notebook; `analytics/scripts/server`) |
-| See what visitors searched for and couldn't find | `./scripts/utility search-gaps` (`analytics/CLAUDE.md`) |
-| Analyze grassiness data | `analytics/grassiness_analysis.py` |
-| Decide what to work on next | `docs/plans/2026-09-30-fix-it-list.md` (Status table) |
-| Open or screenshot one UI state (design work) | `design/ui-states/README.md` |
-| See product vision | `ROADMAP.md` |
-| Run parser tests | `uv run pytest` |
-| Run frontend tests | `npm test` |
-| Run E2E tests | `npm run test:e2e` (see `e2e/CLAUDE.md`) |
-| Debug in browser | Chrome DevTools MCP (`./scripts/chrome` launches a debug browser with saved login) |
+## Gotchas
+
+- **`docs/` is the published site.** Everything committed under it is public,
+  `docs/plans/` included.
+- **MusicBrainz caches only build locally.** `./scripts/utility
+  refresh-musicbrainz` needs the local MusicBrainz Postgres and
+  `uv sync --extra analytics`; CI reads the committed caches (listed at the
+  top of `scripts/lib/refresh-musicbrainz`). When an index build prints
+  `MusicBrainz: N works' artists never checked`, it's time to run it.
+- **Files that look live but aren't:** `scripts/lib/build_index.py` is the
+  legacy builder (the index comes from `build_works_index.py`);
+  `docs/data/wanted_songs.json` is build output (edit
+  `curation/bounty_decisions.yaml`); `docs/posts/` is the pre-move copy of a
+  blog that now lives on mikebeaumier.com.
+- **Phone testing is plain http.** The tailnet URL `./scripts/server` prints is
+  not a secure context, so clipboard reads and other secure-only APIs are
+  missing there, though they work on the live https site.
+- **Browser debugging:** the Chrome DevTools MCP, against a running
+  `./scripts/server`. `./scripts/chrome` opens a debug browser with a saved
+  login.
+- **Some tracker labels are dead.** Submissions and corrections arrive through
+  the in-app editor (`pending_songs` → `process-pending.yml` → `works/`), not
+  as issues, so nothing consumes the `song-submission`, `song-correction`,
+  `tab-submission` and `tab-correction` labels any more.
+
+## Where to read more
+
+A subdirectory's `CLAUDE.md` loads when you work on files in it.
+
+| Area | Read |
+|------|------|
+| Frontend modules, routing, song paths, offline caching | `docs/js/CLAUDE.md` |
+| Renderers and the tab player | `docs/js/renderers/CLAUDE.md` |
+| Tab editor | `docs/js/otf-editor/CLAUDE.md`, `docs/js/otf-editor/DESIGN.md` |
+| Lyrics & chords editor | `docs/js/lead-editor/CLAUDE.md` |
+| Build pipeline, index, curation, prune, workflows | `scripts/lib/CLAUDE.md` |
+| Tags and grassiness | `scripts/lib/tagging/CLAUDE.md` |
+| Supabase schema, RLS, edge functions, migrations | `supabase/CLAUDE.md` |
+| E2E tests and the Supabase mock | `e2e/CLAUDE.md` |
+| Analytics; what visitors searched for and didn't find | `analytics/CLAUDE.md` |
+| One song source (scraper, parser, import) | `sources/<source>/CLAUDE.md` |
+| ChordPro syntax and our `x_` extensions | `chordpro` skill |
+| TEF / tablature parsing bugs | `tab-debug` skill |
+| Filing an issue; labels, milestones, PRs | `add-issue` and `github-project` skills |
+| Opening or screenshotting one UI state | `design/ui-states/README.md` |
+| Product vision | `ROADMAP.md` |

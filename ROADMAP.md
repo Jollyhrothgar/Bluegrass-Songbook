@@ -71,10 +71,7 @@ Built for how bluegrass musicians actually practice and jam - not generic music 
 
 ## Roadmap
 
-See [GitHub Milestones](https://github.com/Jollyhrothgar/Bluegrass-Songbook/milestones) for current work.
-
-**Quick reference:**
-```bash
-gh issue list --milestone "Milestone Name"
-gh issue list --label quick-win
-```
+The working backlog is [`docs/plans/2026-09-30-fix-it-list.md`](docs/plans/2026-09-30-fix-it-list.md):
+its Status table says what is done, in progress and next. Longer-range ideas
+are GitHub issues, grouped by
+[milestone](https://github.com/Jollyhrothgar/Bluegrass-Songbook/milestones).

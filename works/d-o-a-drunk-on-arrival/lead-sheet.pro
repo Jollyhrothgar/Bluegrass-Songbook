@@ -38,7 +38,7 @@ And this bottle's the damn reason [G7]why
 Now the [F]road keeps a swayin' the [C]stop signs are a [G7]blur
 Lord I [C]hope that you're lookin' my [G7]way
 Hope the [C]drive ends ahead cause I [F]feel all but [C]dead
-{comment:             G7  C}
+[G7] [C]
 {end_of_verse}
 
 {start_of_verse: Verse 3}

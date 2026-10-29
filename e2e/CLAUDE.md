@@ -1,268 +1,166 @@
 # E2E Tests
 
-Playwright end-to-end tests for the Bluegrass Songbook frontend
-(post-redesign shell UI: slim top band, unified song page, pill popovers).
+Playwright tests for the frontend. Specs are `e2e/*.spec.js` (`ls e2e` lists
+them); each opens with a comment saying what it covers.
 
 ## The rule
 
 > **Everything a human can do must be reachable by Playwright against a
 > mocked backend.**
 
-It is not a nice-to-have; it is how a defect is defined here. A surface a
-person can reach and a test cannot is a bug in the product or a bug in this
-harness, and either way it gets fixed rather than noted. Three corollaries,
-each of which has already cost us something:
+A surface a person can reach and a test cannot is a bug in the product or in
+this harness, and gets fixed rather than noted. Three corollaries:
 
-1. **No native dialogs.** `window.prompt` / `confirm` / `alert` are drawn by
-   the browser, so they are not in the DOM: no test can click them, no theme
-   can style them, and on iOS the editor never gets focus back. The tab
-   editor's asks are all in-app panels now — `ValuePromptPopover` (Go to
-   measure, Tempo…), the bar's inline "Discard edits?", the drafts list's
+1. **No native dialogs.** `window.prompt` / `confirm` / `alert` are drawn by the
+   browser, so no test can click them, no theme can style them, and on iOS the
+   editor never gets focus back. The OTF tab editor (`docs/js/otf-editor/`) asks in in-app panels:
+   `ValuePromptPopover` (`otf-editor/popover.js`), the inline "Discard edits?" in
+   the bottom band's edit bar (`otf-editor/work-edit.js`), and the drafts list's
    inline "Delete this draft?". `docs/js/__tests__/no-native-dialogs.test.js`
-   scans the tab-editor sources and fails if one comes back, and the specs
-   below register `page.on('dialog')` and assert it never fired.
-   (Outside the tab editor, `lists.js`, `main.js`, `review-queue.js` and the
-   chordpro visual editor still use native dialogs — `arrangement-pill.spec.js`
-   and `list-management.spec.js` drive them through `page.on('dialog')`. That
-   is the backlog, not the standard.)
-2. **The backend is mocked, never live.** See the Supabase mock below.
-3. **Layouts are widths, not devices.** A phone layout that only a phone can
-   reach is a phone layout nothing tests. The tab band collapses on the
-   BAND's own width (`tab-controls-sheet.js` observes the element; the CSS
-   asks `@container tabband (max-width: 640px)`), so a test can reach the
-   collapsed layout by constraining the container as well as the viewport.
+   scans the tab-editor sources and fails if one comes back. In tab-editor specs,
+   register `page.on('dialog')` and assert it never fired; never accept a dialog
+   to make a test pass there, because it means the product is wrong. Outside the
+   tab editor, `docs/js/lists.js`, `main.js`, `review-queue.js`, `pwa.js`,
+   `chord-explorer/main.js`, `editor.js` and `work-view.js` (one `alert` each)
+   still use native dialogs (`arrangement-pill.spec.js` and
+   `list-management.spec.js` drive them with `page.on('dialog')`). That is
+   backlog, not a pattern to copy.
+2. **The backend is mocked, never live.** See below.
+3. **Layouts are widths, not devices.** The tab band (`.app-bottomband`, the bottom band; CSS `container: tabband / inline-size`) collapses on its own width
+   (`tab-controls-sheet.js` observes the element; CSS uses
+   `@container tabband (max-width: 640px)`), so a test reaches the collapsed
+   layout by constraining the container, not only the viewport.
 
 ## Running
 
 ```bash
-npm run test:e2e       # Run all E2E tests
-npm run test:all       # Run unit tests + E2E tests
+npm run test:e2e                       # all E2E
+npm run test:all                       # vitest + E2E
+npx playwright test e2e/search.spec.js # one spec
+npx playwright test --project=mobile   # or --project=desktop
 ```
+
+Config is `playwright.config.js`. It starts `./scripts/server <port> --exact`
+itself on port 8137, outside the 8080-8090 dev range so tests never hit an
+unrelated app. `--exact` fails fast if the port is taken. `PW_PORT=<port>`
+overrides it and also opts in to `reuseExistingServer` ("I'm managing that
+server"). Projects:
+
+- `desktop`: 1440x900, every spec except `*-mobile.spec.js`.
+- `mobile`: iPhone 13 metrics (390x844, touch) on Chromium, only
+  `*-mobile.spec.js`. WebKit, the descriptor's default engine, is not installed,
+  and every collapse under test is a width/pointer question.
 
 ### When it fails on one machine only
 
-- **Random tests fail, a different set each run, and the trace shows
-  `net::ERR_CONNECTION_RESET` on `localhost`**: the test server's listen
-  backlog overflowed. Every page asks for ~40 ES modules at once, one page per
-  worker. `scripts/server` sets `request_queue_size = 128` for this (Python's
-  default is 5). If it ever comes back, `--workers=1` passing is the tell.
-- **`npx playwright install` hangs** after writing `ABOUT` and `LICENSE*` into
-  the browser folder, at 0% CPU: Playwright's zip extractor stalls under
-  Node 24.16.0 and 26.12.1 (24.7.0 and 24.22.0 are fine; for WebKit it stalls
-  at ~15 MB, `webkit-*/libwebrtc.dylib` alone). Install with another Node, e.g.
+- **Random tests fail, a different set each run, with
+  `net::ERR_CONNECTION_RESET` on `localhost`**: the test server's listen backlog
+  overflowed (each page requests ~40 ES modules at once, one page per worker).
+  `scripts/server` sets `request_queue_size = 128`; Python's default is 5. If
+  `--workers=1` passes, this has regressed.
+- **`npx playwright install` hangs** after writing `ABOUT` and `LICENSE*` into the
+  browser folder, at 0% CPU: Playwright's zip extractor stalls under Node 24.16.0
+  and 26.12.1 (24.7.0 and 24.22.0 are fine; for WebKit it stalls at ~15 MB on
+  `webkit-*/libwebrtc.dylib`). Install with another Node:
   `mise x node@24.22.0 -- npx playwright install chromium chromium-headless-shell`
-  (or `webkit`: installed this way 2026-10-27 to reproduce an iOS-only editor
-  bug; the projects below still do not run it).
-  Only the install needs it; the tests run on any Node.
-
-## Configuration
-
-- **Config**: `playwright.config.js` (project root)
-- **Web server**: Starts `./scripts/server <port> --exact` automatically on a
-  dedicated test port (default **8137**, deliberately outside the 8080-8090
-  dev-server/`--cleanup` range so tests never hit an unrelated app on 8080)
-- **Port override**: `PW_PORT=<port> npm run test:e2e`
-- **Reuse server**: off by default - Playwright starts and owns a fresh server,
-  and `--exact` mode fails fast (instead of auto-incrementing) if the port is
-  occupied, so tests can never silently run against a foreign server. Setting
-  `PW_PORT` explicitly opts in to `reuseExistingServer` ("I'm managing the
-  server on that port myself").
-- **Projects**: two.
-  - `desktop` — 1440x900, everything except `*-mobile.spec.js`. This is the
-    suite as it has always run.
-  - `mobile` — `devices['iPhone 13']` metrics (390x844, touch, `isMobile`) on
-    **Chromium**, running only `*-mobile.spec.js`. The device descriptor's own
-    default is WebKit, which is not installed here, and every collapse under
-    test is a width/pointer question rather than an engine one.
-  - Run one with `--project=desktop` / `--project=mobile`.
+  (add `webkit` to reproduce iOS-only bugs; no project runs it). Only the install
+  needs it; the tests run on any Node.
 
 ## The Supabase mock
 
-**Every spec imports `test` from `./fixtures.js`, never from
-`@playwright/test`** (`tests/test_e2e_specs_use_fixtures.py` fails CI
-otherwise). That fixture installs this mock on each test's browser context —
-signed out, empty tables — and runs `assertClean()` after the test, so no test
-can reach the production project `supabase-auth.js` hard-codes. Until
-2026-10-27 only five specs mocked; the rest wrote to production, and since
-every test starts with empty localStorage each page load was a new row in
-`visitors` (the home page counter's "visitors" were mostly E2E runs). A spec
-that needs a signed-in user or seeded tables still calls `mockSupabase(page,
-{...})`: page routes take precedence, so its mock answers and the context one
-is only the backstop. The backstop lets the soundfont CDNs through
-(`blockAudio: false`) so Play really starts; a spec's own mock still aborts
-them.
+Every spec imports `test` from `./fixtures.js`, never from `@playwright/test`
+(`tests/test_e2e_specs_use_fixtures.py` fails CI otherwise). The fixture
+installs a signed-out, empty-tables mock on each browser context and runs
+`assertClean()` after the test. Without it, tests wrote to the production
+project that `supabase-auth.js` hard-codes (including a `visitors` row per page
+load). Details:
 
-Under the backstop, `playwright.config.js` makes `*.supabase.co` unresolvable
-(`--host-resolver-rules`) for the whole suite; routed requests are answered
-before DNS, so mocks are unaffected. That floor is what lets
-`sw-and-prefetch.spec.js` opt out with `test.use({ supabaseBackstop: false })`
-— any installed route turns Playwright's HTTP cache off, and the cache is what
-it measures — without reaching production.
-
-`e2e/helpers/supabase-mock.js` routes `**/*.supabase.co/**` so submissions,
-sign-in and every table read are answered in-process. The real supabase-js SDK
-still loads from jsdelivr and still runs — stubbing it would test the stub —
-so what is under test is the shipping code path: `auth.getSession()`,
-`.from('pending_songs').upsert(…)`, `fetch(functions/v1/auto-commit-song)`.
-
-```js
-import { mockSupabase } from './helpers/supabase-mock.js';
-
-const sb = await mockSupabase(page);                    // signed in
-const sb = await mockSupabase(page, { signedIn: false }); // anonymous
-const sb = await mockSupabase(page, {
-    commit: { success: true, mode: 'create', workId: 'e2e-breakdown' },
-    rpc: { is_trusted_user: true },
-    tables: { bounties: [] },
-});
-…
-sb.row('pending_songs');   // the row the app WROTE (fails unless exactly one)
-sb.calls();                // every Supabase path touched
-sb.assertClean();          // nothing un-mocked, nothing off-box
-```
-
-- **Signing in** is a session blob seeded into
-  `localStorage['sb-<ref>-auth-token']` by an init script, which is how the
-  SDK persists one — `getSession()` then answers with no network at all.
-- **Signing in FAILING** is a route too: `signInWithOAuth` navigates to
-  `/auth/v1/authorize`, and the mock serves a page carrying `#e2e-oauth-gate`.
-  That is what "the login gate appeared" means in an assertion.
-- **Signing in SUCCEEDING** (`{ signedIn: false, oauthReturn: true }`): the
-  authorize route answers with a 302 back to `redirect_to` carrying
-  `#access_token=…` in the fragment, exactly as Google + Supabase do, and the
-  mock is signed in from then on. The browser really leaves and comes back, so
-  a test sees what a redirect destroys. **Never stub `signInWithGoogle` with a
-  no-op to test a sign-in flow** — the page never unloads and the lost-route /
-  lost-draft bug (A5) is invisible. (`editor.spec.js` keeps a stub for the
-  narrower "the gate fires and the draft stays" assertion only.)
-  `e2e/editor-lifecycle.spec.js` is the model.
-- **`assertClean()`** fails on two things: a Supabase path the mock does not
-  understand (the app grew a call; teach the helper) and any request to a host
-  that is not localhost or jsdelivr (a test was talking to production).
-  Google Analytics is always aborted; the soundfont CDNs (WebAudioFont,
-  abcjs's midi-js soundfonts) are aborted unless `blockAudio: false`.
-- `e2e/helpers/tef-fixture.js` decodes a real `.tef` out of the JS parser's
-  golden oracle (`docs/js/tef-import/__fixtures__/golden.json`), so an import
-  test can assert what LANDED, not just that something did.
-
-## Viewport
-
-`desktop` runs 1440x900; `mobile` runs 390x844. Nothing else sets one.
-
-## UI Model (what the tests target)
-
-The redesign removed the ~250px logo header, hamburger sidebar, quick-controls
-bar, Info bar, work dashboard cards, version-picker modal (#version-modal),
-export dropdown markup, and the mobile bottom sheet. The suite targets:
-
-- **Top band** (`#app-topbar`, built by `docs/js/shell.js`): brand link
-  `#topbar-brand` (home), nav links `.topbar-nav-link[data-nav="search|add|
-  favorites|lists"]`, theme `#topbar-theme`, auth `#auth-section`, overflow
-  `#topbar-overflow-btn` + `#topbar-overflow-menu`. Song pages add
-  `#topbar-back`, `#edit-song-btn`, `#list-picker-btn` and the Export pill
-  (`#export-pill`).
-- **Unified song page** (`work-view.js`): a song's URL is its path,
-  `/songs/{song}/[{version}/]`; `#work/{slug}` routes there (a part,
-  `/#work/{slug}/{partId}`, stays a hash route); `#song/{id}` permanently redirects via
-  `history.replaceState`. Structure: title row (`.song-title`, `#edit-song-btn`),
-  `.song-artist-line`, pill row `#song-pill-row` (`#key-pill`, `#display-pill`,
-  `#info-pill`, `#arrangement-pill` when the group has >1 version), part tabs
-  `#part-tabs .part-tab` when a work has >1 part, content below.
-- **Pills** (`shell.js` `pill()` primitive): `.pill-btn` opens `.pill-popover`;
-  only one popover open at a time; outside click / Escape closes.
-- **Bottom band** (`#app-bottomband`): tablature playback controls
-  (`.tab-play-btn`, `.tab-tempo-*`, mixer) and ABC controls (`#abc-play-btn`,
-  `#abc-tempo-label`).
-  In the lead-sheet editor it holds the editor's controls (`#editor-band`:
-  `#editor-mode-*`, `#editor-undo/redo`, `#editor-key-select`, and the Display
-  pill `#editor-display-pill`, whose options are only in the DOM's view once it
-  is open: use `openDisplay(page)` from `helpers/lead-editor.js`).
-- **Auto-hiding chrome**: `body.chrome-hidden` — the top band hides on scroll-down on song pages, returns on scroll-up/top (no focus mode; `#edit-song-btn` sits in the title row).
-- **Feedback**: one unified modal `#flag-modal` (type selector), opened from
-  the overflow menu ("Send Feedback" everywhere, "Report issue" on song pages).
-- **List navigation**: `#song-nav-bar` (bottom bar) still used in list context.
-
-## Test Specs
-
-| Spec | Coverage |
-|------|----------|
-| `search.spec.js` | Basic search, result display, search prompt |
-| `search-edge-cases.spec.js` | `artist:`, `title:`, `tag:` filter syntax, tag dropdown, URL encoding |
-| `song-view.spec.js` | Title/artist, content, Key/Display/Info pill behaviors, Export print |
-| `work-view.spec.js` | Work URL routing, tablature in bottom band, part tabs, playback, and the band collapsing on its own width (container pinned, viewport left wide) |
-| `arrangement-pill.spec.js` | Multi-version groups: pill listing, navigation, vote gating (replaces the old version-picker modal tests) |
-| `navigation.spec.js` | Top-band nav links, deep links, `#song`→`#work` redirect, history |
-| `song-paths.spec.js` | `/songs/{song}/[{version}/]`: boot on a song or version, leave for search without a reload, back/forward, an archived song via 404.html, `#work/` rewritten to the path, unknown song |
-| `landing-page.spec.js` | Collection cards, landing search, URL routing |
-| `boot-data.spec.js` | What boot downloads and when: cards built only for the home view, archive fetched on demand (deep link, Dungeon, lists, promotion rescue), lean pending overlay + content read on open, cached deletions applied before the overlays land, legacy-ID map only for lists that need it |
-| `favorites.spec.js` | Empty state, adding/removing songs, viewing favorites |
-| `list-management.spec.js` | List CRUD via picker + Song Lists view, sharing buttons |
-| `editor.spec.js` | Add-song picker flow, `#add`/`#edit` deep links, editor fields, validation |
-| `visual-editor.spec.js` | Two-pane editor: chord strip, lyric editing, palette |
-| `transposition.spec.js` | Key pill: key grid, semitone steps, Nashville, edge cases |
-| `print-options.spec.js` | Export pill actions (print/copy/download), list print |
-| `ui.spec.js` | Theme toggle (top band), auto-hiding chrome, overflow menu, pref persistence |
-| `abc-notation.spec.js` | ABC sheet music display, bottom-band playback controls |
-| `error-states.spec.js` | Not-found states, invalid URLs, graceful errors |
-| `render-counts.spec.js` | A lead sheet / tab is drawn ONCE per open (MutationObserver counters), incl. back/forward (popstate + hashchange de-dup) |
-| `sw-and-prefetch.spec.js` | Real service worker (registers, preload, cache sweep, `.pro` SWR, offline reload, network timeout and one-generation-per-load after a simulated deploy, against a delaying proxy) + chart prefetch on hover/pointerdown/next-in-list |
-| `otf-editor.spec.js` | OTF editor: the dev harness (`/editor-demo.html`), the in-app Go-to-measure / Tempo prompts, and the song page's authoring mode (`#new-tab`; `/create.html` is a redirect shim into it) |
-| `otf-editor-visual.spec.js` | OTF editor visual/screenshot checks |
-| `otf-editor-mobile.spec.js` | **mobile project.** Band collapses to ⚙; edit session's buttons stay on the band; menu bar collapses to ☰; `Press ? for help`; digits still enter notes; Cancel asks inline |
-| `otf-editor-submit.spec.js` | Correction and new-tab submissions against the Supabase mock; "live but not synced"; the anonymous sign-in gate |
-| `otf-editor-files.spec.js` | ⬇ Download + Ctrl+S (real `download` events); `.tef` via the band's 📂 button and via a drop anywhere on the app |
-| `otf-editor-selection.spec.js` | **The selection is a rectangle.** Drag string 3 of measure 2 → string 5 of measure 4 on `red-haired-boy/banjo`: the highlight box is checked against the renderer's own string-line y's, `Delete` and `+` are checked against the live document (`.otf-editor.__otfEditor.state.facade`), a refused block `+` is checked in `.status-flash`, and `Ctrl+z` takes the block back in one step |
-| `otf-editor-invariants.spec.js` | Layout and history rules checked against what is DRAWN, via `__otfEditor.automation.check()`: an empty tab at every step size, ruler starts at the barline, clicking a ruler line lands on its tick, typing never moves earlier notes, fret 12 undoes in one step, and a **seeded random walk** (120 keys from the binding table per seed; after each key: no broken rule, no page error, focus still in the editor; at the end undo restores the document). A failure prints the seed and the keys. Widen it locally with `WALK_SEEDS=4,5,6 npx playwright test e2e/otf-editor-invariants.spec.js -g random` |
-| `otf-editor-tracks.spec.js` | Multi-track (`red-haired-boy` ensemble): switch by toolbar and by Score ▸ Tracks, rename via the popover (+ duplicate refusal), reorder, undo |
-| `otf-editor-drafts.spec.js` | `#drafts`: autosave appears, Open reopens on the right route with the note, inline-confirm Delete |
-| `tour.spec.js` | Feature tour (G14): the glowing band button walks all eleven steps (the search demo types a line of Old Home Place and rings the song it found; ring encloses the control, card clear of it and both bands once its arrival animation ends, arrow under the control; the editor demo's text after each phase — typed, sectioned, chorded — and leaving the editor asks nothing and keeps nothing; the `.tef` step outlines the page) and Done returns home; a press in the search box or the editor stops that demo; started on a song it still searches, uses Old Home Place, and Done goes back; a popover the reader opens covers the card; wandering off / × / Escape end it; it refuses to leave an editor; no pulse under reduced motion; afterwards it leads the ⋯ menu; `?tour` starts it and `?tour=reset` brings the glow back, both leaving the URL clean |
-| `tour-mobile.spec.js` | **mobile project.** The Tour button fits a phone song page band; the search demo finds the song without focusing the box (no keyboard); the editor demo rings the DOCKED section bar and chord picker with the card above them and never focuses the editor (no keyboard); tab Edit rings ⚙ with its note; the `.tef` step names Add Song ▸ Tablature; afterwards ✨ Take the tour is the first ⋯ item |
-| `fixtures.js` | The `test` every spec imports: Supabase mock backstop per context (not a spec) |
-| `helpers.js` | Shared helpers (not a spec) |
-| `helpers/tour.js` | `ringAround` / `cardClear` / `arrowAt` / `leadText` for the tour specs; `cardClear` and `arrowAt` wait for the card's arrival animation (not a spec) |
-| `helpers/supabase-mock.js` | Mocked backend (not a spec) — see above |
-| `helpers/tef-fixture.js` | A real `.tef` from the golden corpus (not a spec) |
+- A spec that needs a signed-in user or seeded tables calls
+  `mockSupabase(page, {...})`. Page routes win over the context's, which is only
+  the backstop. The backstop lets the soundfont CDNs through
+  (`blockAudio: false`) so Play really starts; a spec's own mock aborts them.
+- `playwright.config.js` makes `*.supabase.co` unresolvable
+  (`--host-resolver-rules`) for the whole suite; routed requests are answered
+  before DNS. That is what lets `sw-and-prefetch.spec.js` use
+  `test.use({ supabaseBackstop: false })` (any installed route turns off
+  Playwright's HTTP cache, which that spec measures) without reaching production.
+- `e2e/helpers/supabase-mock.js` routes `**/*.supabase.co/**`. The real
+  supabase-js SDK still loads from jsdelivr and runs, so the shipping code path
+  is under test: `auth.getSession()`, `.from('pending_songs').upsert(…)`,
+  `fetch(functions/v1/auto-commit-song)`. Read the file's header for the options
+  (`signedIn`, `commit`, `rpc`, `tables`, `oauthReturn`, `blockAudio`) and
+  helpers (`sb.row(table)` fails unless exactly one row was written;
+  `sb.calls()`; `sb.assertClean()`).
+- A signed-in session is seeded into `localStorage['sb-<ref>-auth-token']`, so
+  `getSession()` needs no network.
+- To test sign-in, use `{ signedIn: false, oauthReturn: true }`: the authorize
+  route 302s back with `#access_token=…` like Google + Supabase, so the browser
+  really leaves and returns. Do not stub `signInWithGoogle` to test a sign-in
+  flow: the page never unloads, so the lost-route / lost-draft bug (fix-it item
+  A5) is invisible. `e2e/editor-lifecycle.spec.js` is the model; `editor.spec.js`
+  keeps a stub only for "the gate fires and the draft stays".
+- Without `oauthReturn`, the authorize route serves a page with `#e2e-oauth-gate`,
+  which is what "the login gate appeared" means in an assertion.
+- `assertClean()` fails on a Supabase path the mock doesn't understand (the app
+  grew a call; teach the helper) and on any request to a host other than
+  localhost or jsdelivr. Google Analytics is always aborted.
+- `e2e/helpers/tef-fixture.js` decodes a real `.tef` from the JS parser's golden
+  oracle (`docs/js/tef-import/__fixtures__/golden.json`), so an import test can
+  assert what landed.
 
 ## Conventions
 
-- Tests use hash-based routing (`/#search`, `/#work/slug`, `/#add`,
+- Routing is hash-based in tests (`/#search`, `/#work/slug`, `/#add`,
   `/#edit/slug`); a song then shows at its path, `/songs/{song}/…`
-  (`song-paths.spec.js`). Assert a song by path or `history.state.songId`
-- Shared helpers live in `e2e/helpers.js`:
-  - `gotoSearch(page)` — go to `#search` and wait for the index to load
-  - `searchFor(page, q)` / `searchAndOpen(page, q)` — query + open first result
-  - `navClick(page, id)` — click a top-band nav link by `data-nav` id
-  - `openPill(page, pillId)` — open a pill popover, returns its locator
-- localStorage is cleared in `beforeEach` where isolation matters
+  (`song-paths.spec.js`). Assert a song by path or `history.state.songId`.
+- Helpers in `e2e/helpers.js`: `gotoSearch`, `searchFor`, `searchAndOpen`,
+  `navClick(page, id)` (top-band link by `data-nav`), `openPill(page, pillId)`.
 - Wait for `#search-stats` to contain "songs" before navigating away from
-  search — the post-index-load render stomps earlier navigation
-- Use `.first()` for strict mode compliance when multiple elements match
-- **Never accept a native dialog to make a test pass in the tab editor.** If a
-  flow needs `page.on('dialog')` there, the product is wrong — register the
-  listener and assert it stayed empty instead (that is the check, not a
-  workaround)
-- Import `{ test, expect }` from `./fixtures.js` (the Supabase backstop).
-  A test that asserts on what it sent to Supabase starts with
-  `await mockSupabase(page)` and ends with `sb.assertClean()`
-- Editor selectors worth knowing: `.editor-renderer .stave-row` (mounted),
-  `.editor-canvas-container` (click to place the cursor), `.note-text`,
-  `.editor-status-bar`, `.track-buttons .track-button[.active]`,
-  `.menu-trigger[data-menu="score"]` → `.menu-popup .menu-item` (track entries
-  are `menuitemradio`, so `[role=menuitem]` misses them),
-  `.otf-track-name-popover`, `.otf-value-prompt-popover`,
-  `.editor-selection-rect` (one per row/measure the selection crosses,
-  clipped to the selected strings) and `.editor-status-bar .status-flash`
-  (what a refused op says); the session's buttons
-  live in the bottom band as `.tab-edit-submit` / `.tab-edit-download` /
-  `.tab-edit-cancel` / `.tab-edit-done` / `.tab-edit-import`
-- Useful fixture works: `old-home-place` (plain lead sheet; note the jam-repertoire
-  prune hides non-bluegrass rows like `your-cheating-heart` from search),
-  `wagon-wheel` (2-version group → arrangement pill),
-  `arkansas-traveler-1` (lead sheet + banjo tab → part tabs),
-  `foggy-mountain-breakdown` (tab-only, mandolin part),
-  `cripple-creek-1` → `cripple-creek` (legacy slug redirect),
-  `house-of-gold` (a song with a version, `/songs/house-of-gold/2/`),
-  `1-1-love` (archived: its path is served by 404.html),
-  `abbey-reel-the` (ABC notation),
-  `foggy-mountain-breakdown/mandolin` (a published tab to correct),
-  `red-haired-boy/ensemble-tab` (six tracks — the multi-track fixture)
+  search: the post-index-load render overwrites earlier navigation.
+- Clear localStorage in `beforeEach` where isolation matters. Use `.first()`
+  when several elements match (strict mode).
+- A test that asserts what it sent to Supabase starts with `await
+  mockSupabase(page)` and ends with `sb.assertClean()`.
+- `otf-editor-invariants.spec.js` runs a seeded random walk; a failure prints the
+  seed and keys. Widen locally with
+  `WALK_SEEDS=4,5,6 npx playwright test e2e/otf-editor-invariants.spec.js -g random`.
+- Tests read the generated index in `docs/data/`, so run
+  `./scripts/bootstrap --quick` first on a fresh clone.
+
+### Selectors and fixture works
+
+Shell ids come from `docs/js/shell.js` and `work-view.js`: `#app-topbar`,
+`.topbar-nav-link[data-nav=…]`, `#song-pill-row` with `#key-pill`, `#display-pill`,
+`#info-pill`, `#arrangement-pill` (only when a group has more than one version),
+`#export-pill`, `#part-tabs .part-tab`, `#app-bottomband` (tab and ABC playback;
+in the lead-sheet editor `#editor-band`: `#editor-mode-*`, `#editor-undo/redo`,
+`#editor-key-select` and the Display pill, whose options exist only once it is
+open, so use `openDisplay(page)` from `helpers/lead-editor.js`),
+`#flag-modal` (feedback), `#song-nav-bar` (list context). `.pill-btn` opens a
+`.pill-popover`; one is open at a time. The top band auto-hides while scrolling a
+song (`body.chrome-hidden`).
+
+Tab-editor selectors: `.editor-renderer .stave-row`, `.editor-canvas-container`,
+`.note-text`, `.editor-status-bar` (`.status-flash` shows a refused op),
+`.track-buttons .track-button.active`, `.menu-trigger[data-menu="score"]` then
+`.menu-popup .menu-item` (track entries are `menuitemradio`, so `[role=menuitem]`
+misses them), `.otf-track-name-popover`, `.otf-value-prompt-popover`,
+`.editor-selection-rect`, and the session buttons `.tab-edit-submit` /
+`-download` / `-cancel` / `-done` / `-import` in the bottom band. The live
+document is `.otf-editor.__otfEditor.state.facade`, and
+`__otfEditor.automation.check()` reports layout and history rule violations.
+
+Fixture works (confirm with `ls works/<id>` after a build):
+
+- `old-home-place`: plain lead sheet. The index prune hides non-bluegrass rows
+  such as `your-cheating-heart` from search.
+- `wagon-wheel`: 2-version group (arrangement pill).
+- `arkansas-traveler-1`: lead sheet plus banjo tab (part tabs).
+- `foggy-mountain-breakdown`: tab only (no lead sheet). Open `/#work/foggy-mountain-breakdown/mandolin`
+  (`works/foggy-mountain-breakdown/mandolin.otf.json`) to edit a published tab and
+  submit a correction (`editor-lifecycle.spec.js`, `otf-editor-mobile.spec.js`).
+- `cripple-creek-1` redirects to `cripple-creek` (legacy slug).
+- `house-of-gold`: has a version, `/songs/house-of-gold/2/`.
+- `1-1-love`: archived, so its path is served by `404.html`.
+- `abbey-reel-the`: ABC notation.
+- `red-haired-boy/ensemble-tab`: six tracks, the multi-track fixture.

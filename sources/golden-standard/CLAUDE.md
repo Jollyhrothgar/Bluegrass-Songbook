@@ -1,43 +1,22 @@
 # Golden Standard Source
 
-86 curated bluegrass standards from Ryan Schindler's Golden Standard bluegrass fakebook.
+86 bluegrass standards from Ryan Schindler's Golden Standard fakebook, supplied
+as one ChordPro-with-shorthand file, `raw/golden_standard.txt`
+(songs separated by `{new_song}`).
 
-## Pipeline
+Status: finished; 74 works cite `source: golden-standard`. `parsed/` holds the 86
+`.pro` files (tracked). Of the 86, 59 overlap classic-country titles and carry
+`x_version_label Golden Standard`, `x_version_type alternate` and
+`x_book The Golden Standard by Ryan Schindler` (the overlap list is
+`OVERLAPPING_TITLES` in `add_version_metadata.py`). Since 2026-10-26 versions are
+recorded in `work.yaml` (`song:` / `version:`), not in these headers.
 
 ```bash
-# Parse raw file into individual ChordPro files
-uv run python sources/golden-standard/parse_songs.py
-
-# Add version metadata for songs that overlap with classic-country
-uv run python sources/golden-standard/add_version_metadata.py
-
-# Analyze structure of parsed songs
-uv run python sources/golden-standard/analyze_structure.py
+uv run python sources/golden-standard/parse_songs.py            # raw -> parsed/*.pro
+uv run python sources/golden-standard/add_version_metadata.py   # stamp the overlapping 59
 ```
 
-## Structure
-
-```
-golden-standard/
-├── raw/golden_standard.txt     # Source: 86 songs with {new_song} delimiters
-├── parsed/                     # 86 individual .pro files
-├── parse_songs.py              # Raw → ChordPro (section expansion, verse detection)
-├── add_version_metadata.py     # Marks 59 overlapping songs as alternate versions
-└── analyze_structure.py        # Reports on section marker usage
-```
-
-## Processing Details
-
-**parse_songs.py** transforms raw ChordPro with shorthand into standardized format:
-- Splits on `{new_song}` separator
-- Expands short directives: `{soc}` → `{start_of_chorus}`, `{eov}` → `{end_of_verse}`, etc.
-- Converts metadata: `{title: X}` → `{meta: title X}`
-- Auto-detects verse boundaries for unmarked content blocks
-- Adds provenance: `x_source golden-standard`, `x_submitted_by github:Jollyhrothgar`
-
-**add_version_metadata.py** identifies 59 songs overlapping with classic-country
-(`OVERLAPPING_TITLES` in that script; 59 of the 86 parsed `.pro` files carry the
-resulting `x_version_label`) and marks them:
-- `{meta: x_version_label Golden Standard}`
-- `{meta: x_version_type alternate}`
-- `{meta: x_book The Golden Standard by Ryan Schindler}`
+`parse_songs.py` expands shorthand directives (`{soc}` to `{start_of_chorus}`),
+rewrites `{title: X}` as `{meta: title X}`, detects verse boundaries in unmarked
+blocks, and adds `x_source golden-standard` and `x_submitted_by github:Jollyhrothgar`.
+`analyze_structure.py` is a one-off report on section markers.

@@ -15,6 +15,9 @@ node_modules/
 test-results/
 playwright-report/
 
+# Vitest coverage report (npx vitest run --coverage)
+coverage/
+
 # Python
 __pycache__/
 *.py[cod]

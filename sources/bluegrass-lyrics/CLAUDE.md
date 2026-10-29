@@ -1,144 +1,33 @@
 # BluegrassLyrics.com Source
 
-Lyrics for traditional bluegrass and early country songs from [BluegrassLyrics.com](https://www.bluegrasslyrics.com/).
+Lyrics for traditional bluegrass and early country songs from
+[BluegrassLyrics.com](https://www.bluegrasslyrics.com/). The site owner gave
+permission for the import (Feb 2026).
 
-## Status: COMPLETE (Feb 2026)
-
-**Permission**: Granted by site owner (Feb 2026)
-
-764 songs imported to works/ - 494 with chords (from Ultimate Guitar), 270 lyrics-only.
-
-## Quick Reference
-
-```bash
-# Check a generated work
-cat works/<slug>/work.yaml
-cat works/<slug>/lead-sheet.pro
-
-# View original parsed data
-cat sources/bluegrass-lyrics/parsed/<slug>.json
-```
-
-## Import Summary (Feb 8, 2026)
-
-| Category | Count |
-|----------|-------|
-| Total songs scraped | 1,818 |
-| Already in collection | 823 |
-| New songs available | 995 |
-| Imported with chords | 494 |
-| Imported lyrics-only | 270 |
-| Skipped (duplicates/low quality) | 231 |
+Status: finished (Feb 2026), scraper and parser frozen. 1,110 works cite
+`source: bluegrass-lyrics` (`grep -rl "source: bluegrass-lyrics" works/*/work.yaml | wc -l`);
+that includes older works whose lyrics were matched, not only the 764 new imports
+(494 with chords from Ultimate Guitar, 270 lyrics-only).
 
 ## Pipeline
 
-```
-BluegrassLyrics.com
-        │
-        ▼ src/scraper.py
-   raw/*.html (gitignored)
-        │
-        ▼ src/parser.py
-   parsed/*.json (structured lyrics)
-        │
-        ├─────────────────────────────────┐
-        ▼                                 ▼
-Ultimate Guitar enrichment          Direct import
-(see sources/ultimate-guitar/)      (lyrics-only)
-        │                                 │
-        ▼                                 ▼
-   works/*/                          works/*/
-   (with chords)                     (without chords)
-```
+1. `src/scraper.py` fetches the index and pages into `raw/` (gitignored), listed in
+   `song_index.json` (1,818 URLs).
+2. `src/parser.py` writes `parsed/<slug>.json` (title, url, sections of lines;
+   one file per song, tracked).
+3. `src/matcher.py` dedupes against `works/`; `classification_report.json` is the
+   result (823 already present, 995 new).
+4. Chords came from Ultimate Guitar and were merged by `sources/ultimate-guitar/`,
+   which also did the imports to `works/`.
 
-## Chord Enrichment Strategy
+## Things to know
 
-### What Worked (Feb 2026)
-
-1. **Ultimate Guitar Mobile API** - Scraped ~765 matching songs
-   - Fuzzy matched lyrics to place chords correctly
-   - 70%+ coverage threshold for "good" matches
-   - See `sources/ultimate-guitar/CLAUDE.md` for details
-
-### What Was Tried But Not Scaled
-
-1. **TMUK Carter Family** - 65 songs with text chords
-   - Good quality but limited coverage
-   - Still in `chordpro/` directory
-
-2. **Embedding-based matching** - Tested but fuzzy matching sufficient
-   - Code in `sources/ultimate-guitar/embedding_match.py`
-
-### Future Options (Not Implemented)
-
-- **OCR for image chords** - TMUK has 172 more in image/PDF format
-- **LLM chord inference** - Generate chords from lyrics + genre
-- **Community contributions** - Users can add chords via edit interface
-
-## File Structure
-
-```
-bluegrass-lyrics/
-├── raw/                    # Cached HTML (gitignored)
-├── parsed/                 # Structured JSON per song
-│   └── *.json              # 1,818 files
-├── chordpro/               # TMUK-generated ChordPro (65 files, legacy)
-├── manifest.json           # Status tracking per song
-├── src/
-│   ├── scraper.py          # Fetch index + pages
-│   ├── parser.py           # HTML to structured JSON
-│   └── matcher.py          # Deduplication against works/
-├── generate_chordpro.py    # Generate .pro from TMUK matches
-├── song_index.json         # All 1,818 URLs
-├── classification_report.json  # New vs existing breakdown
-└── CLAUDE.md               # This file
-```
-
-## Parsed JSON Format
-
-```json
-{
-  "slug": "cabin-home-on-the-hill",
-  "title": "Cabin Home On The Hill",
-  "url": "https://www.bluegrasslyrics.com/song/cabin-home-on-the-hill/",
-  "sections": [
-    {
-      "type": "verse",
-      "label": "Verse 1",
-      "lines": [
-        "Tonight I'm alone without you my dear",
-        "It seems there's a longing for you still"
-      ]
-    }
-  ]
-}
-```
-
-## Attribution
-
-All imported songs include source attribution:
-
-```chordpro
-{meta: x_lyrics_source bluegrass-lyrics}
-{meta: x_lyrics_url https://www.bluegrasslyrics.com/song/...}
-```
-
-If enriched with UG chords, also includes:
-```chordpro
-{meta: x_chords_source ultimate-guitar}
-{meta: x_chords_url https://tabs.ultimate-guitar.com/tab/...}
-```
-
-**Frontend display:** Shows "BluegrassLyrics.com" with link to original page.
-
-## Known Limitations
-
-1. **No artist metadata** - BluegrassLyrics doesn't provide artist info
-2. **Section detection imperfect** - Some songs have unusual formatting
-3. **Lyrics-only songs** - 270 songs imported without chords (users can add via edit)
-
-## Related Documentation
-
-- `sources/ultimate-guitar/CLAUDE.md` - Chord enrichment pipeline
-- `docs/js/CLAUDE.md` - Frontend rendering and source attribution
-- `scripts/lib/CLAUDE.md` - Index building and tagging
+- The site gives no artist. Anything in an artist field is inherited from the
+  Ultimate Guitar search, so it is a scrape artifact (see `.claude/rules/works.md`).
+- Section detection is imperfect on unusually formatted songs.
+- Attribution lives in each chart as `{meta: x_lyrics_source bluegrass-lyrics}`
+  and `x_lyrics_url`; the frontend shows "BluegrassLyrics.com" linking the page.
+  Enriched charts also carry `x_chords_source ultimate-guitar`, which the
+  frontend shows as "Community Contribution".
+- Other code reads `parsed/*.json`: `sources/bounty-hunt` uses it for lyric-overlap
+  validation and a lyrics-only fallback.

@@ -1,28 +1,11 @@
 # Manual Source
 
-Hand-created ChordPro songs added directly by contributors (not parsed from external sources).
+Hand-created ChordPro songs from contributors, not parsed from any site.
 
-## Structure
+Status: finished as a source; 14 works cite `source: manual`. `parsed/` holds 24
+`.pro` files that predate `works/`. New hand-made songs no longer go here:
+`./scripts/utility add-song FILE.pro` writes `works/<slug>/` directly (see root
+`CLAUDE.md`). `protected.txt` lists filenames `scripts/lib/enrich_songs.py` skips.
 
-```
-manual/
-├── parsed/           # .pro files in standard ChordPro format
-│                     #   (24 as of 2026-08-19; `ls sources/manual/parsed | wc -l`)
-└── protected.txt     # Filenames excluded from automated enrichment
-```
-
-## Adding a Song
-
-Use the CLI tool:
-
-```bash
-./scripts/utility add-song ~/path/to/song.pro
-```
-
-## Provenance
-
-All manual songs include:
-- `{meta: x_source manual}`
-- `{meta: x_submitted_by github:<username>}`
-- `{meta: x_submitted <date>}`
-- `{meta: x_submission_issue <number>}` (GitHub issue reference)
+Charts carry `x_source manual`, `x_submitted_by github:<user>`, `x_submitted <date>`
+and `x_submission_issue <number>`.

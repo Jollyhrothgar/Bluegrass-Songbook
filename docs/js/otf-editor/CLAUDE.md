@@ -1,714 +1,272 @@
 # OTF Editor
 
-In-browser tablature editor for OpenTabFormat (OTF) files.
+The in-browser tablature editor for OpenTabFormat (OTF) files. It ships.
+`DESIGN.md` describes what the editor does and the OTF document format; its
+`interface Note` section (`fx`, `grace`) is the format reference that code
+comments cite, and Help ▸ About opens it for users. Input-model plan:
+`docs/plans/tab-editor-input-parity.md`.
 
-## Status
+```bash
+npm test -- otf-editor          # unit tests in docs/js/__tests__/otf-editor/
+npm run test:e2e -- otf-editor  # e2e/otf-editor*.spec.js (needs the server)
+```
 
-**Design phase** - See `DESIGN.md` for full specification.
+## The one rule
 
-## Quick Summary
+Nothing mutates the document except `EditingFacade` (`facade.js`). Its undo
+history is a whole-document snapshot per op, so anything routed through it is
+undoable for free, and anything that reaches around it is silently not.
 
-A modal, keyboard-accelerated tablature editor inspired by vim. Two audiences:
+- `state.js` wraps the facade with cursor, selection and mode.
+- A facade op that has nothing to do or is out of range returns `false` and
+  leaves the document and history untouched. Multi-note ops are atomic: one
+  note that would leave frets 0..24 refuses the whole `+`/`-`.
+- A multi-step edit is one `transact`, so one `u` undoes it.
+- Value setters **throw** outside their alphabet (`PLUCK_FINGERS`,
+  `LH_DIGITS`, `FX_ORDER`, `GRACE_KINDS`, fret 0..24): anything else
+  round-trips into a file no importer wrote and no renderer draws. The facade
+  stays importer-free, so it keeps its own copy of those lists;
+  `effects-facade.test.js` asserts `FX_ORDER` equals the one exported by `docs/js/tef-import/otf.js`.
+- `pitch.js` (string+fret to MIDI) copies two lines of `tab-player.js` rather
+  than importing them, so the facade stays UI-free. The player maps an
+  unknown tuning name to MIDI 60 (`PITCH_TO_MIDI[p] || 60`); `pitch.js` returns
+  `null` instead, so an edit refuses rather than moving a note by a guess.
+- `new-otf.js` (`createEmptyOTF`, `createMultiTrackOTF`) must stay pure and
+  editor-free: the song page builds new takes from it, and `actions.js`
+  re-exports it.
 
-1. **Casual users**: Click/tap to place notes, use toolbars and popovers
-2. **Power users**: Vim-style keyboard shortcuts for rapid entry
+## No native dialogs
 
-### Key Features (Planned)
+`window.prompt` / `confirm` / `alert` are banned here
+(`__tests__/no-native-dialogs.test.js` scans for them): Playwright cannot drive
+them, they are not themed, and on iOS they take focus the canvas never gets
+back. Ask through the sibling panels in `popover.js` (Enter commits, Escape
+cancels, keys are swallowed so bindings never see them): `NoteEntryPopover`,
+`AnnotationPopover`, `TrackNamePopover`, `ValuePromptPopover` (one number),
+`GracePopover`.
 
-- Edit existing tabs from the site
-- Create new tabs
-- Support for 5-string banjo (MVP), then guitar, mandolin, bass
-- Articulations: hammer-on, pull-off, slide, tie
-- Triplet entry with visual feedback
-- Roll mode for quick picking pattern entry (banjo)
-- Undo/redo, copy/paste
-- Placed free text: section labels, playing notes and chord names (below)
-- Renaming and reordering the instrument tracks (below)
-- Mobile-friendly touch interface
+- `ValuePromptPopover` answers later, so `_promptForMeasure` returns 0 and
+  dispatches `nav.goToMeasure` with a `count` from the commit callback (the
+  binding table already understands counts, `g12G`).
+- Say refusals out loud: `editor.flashStatus(msg)` writes the status bar's
+  `.status-flash` and reaches bindings as the `onStatus` hook on `ctx.hooks`.
+  An atomic refusal changes nothing on screen otherwise.
+## Keys: `bindings.js` is the only place they live
 
-### Placed text vs. "annotation mode" — two different things
+`keyboard.js` is a matcher. Every behaviour is an entry in `ACTIONS`; every key
+is an entry in `PRESETS.tabledit` or `PRESETS.vim` (per mode, plus `global`,
+`countPrefix`, `exceptions`). Menus, tooltips and the `?` overlay render from
+the table (`describe`, `keyFor`, `menuKeyFor`). Never write a key name by hand
+in a toolbar, menu or tooltip.
 
-The word is overloaded, and getting it wrong sends you to the wrong file:
+`__tests__/otf-editor/bindings.test.js` and `menu-bar.test.js` are the fence:
+every preset key maps to a real action, every action is reachable (except
+`menuOnly`), no `RESERVED_CHORDS` entry (`Ctrl+T/W/N`, `F6`, ...) is bound, no
+chord is both an action and a sequence prefix, every printed `<kbd>` comes from
+`describe()`.
+
+- Key strings: modifiers in the order `Ctrl+Alt+Shift+`; case decides Shift for
+  letters (write modified letters lower-case, `Ctrl+z`); digits and
+  `Alt+letter` come off `event.code` (macOS Option+G types a different
+  character); write `Shift+3`, never `#`; sequences are space-separated.
+- `Meta` is never in the table. The matcher mirrors Cmd onto Ctrl for
+  `S C X V Z Y A` and returns `null` for every other Cmd chord, so
+  `Cmd+F`/`Cmd+L`/`Cmd+1` stay the browser's.
+- `Tab` / `Shift+Tab` are always `preventDefault`ed in every mode, even with no
+  binding; otherwise focus leaves the canvas and every later key goes elsewhere.
+- Active preset: `getPreset()` / `setPreset()` in `bindings.js`,
+  `localStorage['otf-editor.preset']`, default `tabledit`. Counts are opt-in per
+  preset because in NORMAL every digit is a fret; a count that lands on an
+  unbound sequence falls back to the last chord (so `g3w` needs no `g w`).
+- `hidden: true` is a bound alias kept for muscle memory, not advertised.
+  `menuOnly: true` marks an action TablEdit has no hotkey for: refused a
+  binding, required to be in a menu.
+- `menuKeyFor(action, preset, mode)` prints the key for the mode the menu is
+  read in; a key bound only in another mode is qualified (`A, t`) or omitted
+  (in NORMAL `t` is placed text, `m` a dead note).
+- `FretEntry` is the one digit-to-fret rule (`f` prefix; two-digit refine: a second digit typed within `REFINE_MS` = 300 ms
+in `keyboard.js` rewrites the note just placed to the two-digit fret, if it is
+<= 24) for
+  the canvas and the popovers. A two-digit fret is one undo step: the second
+  digit rewrites the first through `facade.amendSince(mark, fn)`. A click
+  or any navigation or edit key closes the refine window early.
+- Where preset keys differ from TablEdit's, the preset lists them in
+  `exceptions`: `c` is Choke; repeat-previous-measure is `Alt+R`; `m` stays the
+  dead note `x` (a bluegrass tabber's "muted" is the chop; TablEdit's palm mute
+  is `fx: 'muted'`, menu-only).
+- Walking forward past the last tick appends a measure: `stepTicks()` is the
+  one forward-step helper and calls `state.ensureMeasure`, so one `u` removes
+  the bar.
+- Code needing a number of ticks calls `state.effectiveDuration()` or
+  `entryAdvanceTicks()`. `state.currentDuration` is `null` under automatic
+  duration, and multiplying it gives 0.
+
+## Per-note marks vs placed text
+
+"Annotation" means two things:
 
 | | per-note marks | placed free text |
 |---|---|---|
-| **what** | fingering (`finger` T I M R P, `lh` 0–4), technique | "PART A", "Long Choke", "Bb6+9" |
-| **stored** | on the note (`finger`, `lh`, `tech`) | `otf.annotations[]` — top level, `{measure, tick, text}` |
-| **reached by** | `A` (ANNOTATION mode) | clicking the text; `t` / `T` in NORMAL (vim preset: `c` / `C`) |
-| **facade ops** | `setFingering`, `setLeftHand`, `setArticulation` | `addAnnotation` / `setAnnotationText` / `deleteAnnotation` / `findAnnotationIndex` |
-
-Placed text is score-level, not track-level: one array for the whole
-document, positioned by written measure + tick, drawn above the staff by
-`renderers/tablature.js`. Chord names live there too, so `t` is also how
-you write chords over a tab.
-
-- `t` (vim: `c`) opens the prompt (`AnnotationPopover` in `popover.js`),
-  pre-filled with whatever is within a beat of the cursor; `T` (vim: `C`)
-  deletes it; the toolbar's **Text** button and ⌫ do the same. In the
-  TablEdit preset `c` is the Choke effect, not text.
-- **The text itself is a click target.** The renderer stamps each
-  `.annotation-text` with `data-measure` / `data-tick`; a click puts the
-  cursor exactly there (the drawn words run well past the one-beat reach,
-  so mapping the click's x to a tick often missed), a double-click opens
-  the prompt on it, and a mousedown on it never starts a drag
-  (`_annotationFromEvent` in `editor.js`).
-- **Empty text deletes** — text is trimmed, and a blank one is never
-  stored (you could never click or find it again).
-- Two annotations may share one `(measure, tick)`, so they are addressed
-  by INDEX. `state.getAnnotationAtCursor()` returns `{index, annotation}`.
-- Everything routes through the facade, so undo/redo covers text and
-  notes in one stack, and a document you only read round-trips
-  byte-identical (adds splice into score order without reordering).
-
-### Fingering: two hands, two fields, one clear
-
-`finger` (picking hand) and `lh` (fretting hand) are **separate fields on
-the note**, and the vocabulary is not ours to invent — it is what
-`sources/banjo-hangout/src/tef_parser/otf.py` decodes out of TablEdit's
-one base-6 V3 byte: `finger` ∈ `T I M R P` (MusicXML `<pluck>` p i m a c),
-`lh` ∈ `0..4`, drawn by `renderers/tablature.js` as an italic letter under
-the beams and a circled digit under that. `facade.js` exports
-`PLUCK_FINGERS` / `LH_DIGITS` and **throws** on anything else, because a
-value outside those two alphabets round-trips into a file no importer
-wrote and no renderer draws.
-
-| | picking hand | fretting hand | both |
-|---|---|---|---|
-| **facade** | `setFingering(pos, 'R'\|null)`, `setRangeFingering(startAbs, endAbs, …, {strings})` | `setLeftHand(pos, 3\|null)`, `setRangeLeftHand(…)` | — |
-| **state** | `setFingering(f)` | `setLeftHand(d)` | `clearFingerings()` |
-| **ANNOTATION** | `t i m r` + **`P`** | `0` `1` `2` `3` `4` | `c` |
-| **TablEdit NORMAL** | — (via `A`) | `Alt+0`…`Alt+4` | `Alt+⌫` |
-| **vim NORMAL** | `a t`/`a i`/`a m`/`a r`/`a P` | `a 0`…`a 4` | `a c` |
-
-- **The picking pinky is `Shift+P`.** `p` in ANNOTATION is the pull-off
-  and has been since the mode existed; a right-hand pinky is the rarest
-  mark in the vocabulary and a pull-off is not, so the shift goes on the
-  pinky. Everything else is the letter you would say out loud.
-- **`c` clears the FINGERING; `x` / `n` still clear the EFFECTS.** They
-  are different marks on the same note and people fix them separately —
-  `clearEffectsAtCursor` never touched `finger`, and `clearFingerings`
-  never touches `tech`/`tie`/`fx`/`grace`. (In ANNOTATION; NORMAL `c` is
-  TablEdit's Choke — see Effects below.) `clearFingerings` is one `transact` over
-  both hands, and refuses (no history entry) when there is nothing set.
-- **The keys are TOGGLES at the cursor and plain SETs over a selection.**
-  Pressing the letter a note already reads clears that hand, which is how
-  the touch row behaves and how you un-mark one hand without a second
-  key; over a phrase, "they all already read T" is not what the press
-  meant. Every action takes the selection when there is one — same rule
-  as `applyTech`, one undo step for the phrase.
-- **`lh: 0` is a value, not a cleared field.** Clearing is `null`
-  everywhere; `?? null` comparisons are why the ops refuse correctly.
-- **No fingering palette in the toolbar** — eleven buttons for a mark
-  most tabs never carry. What is set shows in the **status bar**
-  (`Fing: T · lh 2`, `—` when there is none), recomputed on `cursorMove`
-  and `change` like the rest of that line. The touch path is the note
-  popover's Fingering row (`POPOVER_FINGERS` / `POPOVER_LH`), whose
-  buttons are toggles.
-- **Double-clicking an EXISTING note opens the popover as an edit of
-  it** — fret, technique and both hands pre-selected, `Edit Note` in the
-  title, and Insert rewrites that note in place inside ONE `transact`
-  (`facade._placeNote` replaces whatever was on the string, so the
-  fingering has to be re-applied in the same step or `u` costs two
-  presses). An edit does not auto-advance; entry still does.
-
-### Effects (`fx`) and grace notes: TablEdit's note model, TablEdit's keys
-
-`note.fx` (a SET, stored in `FX_ORDER`, omitted when empty, never `[]`)
-and `note.grace` (`{f: 0..24, kind?}`) are what the TEF importer decodes
-out of TablEdit's own note model (DESIGN.md "interface Note"). `tech` keeps
-the transitions (h p / \ x, and `b` = bend TARGET); everything else is `fx`.
-`facade.js` exports its own `FX_ORDER` / `GRACE_KINDS` / `isGrace` (it stays
-importer-free; `effects-facade.test.js` asserts the list equals
-`tef-import/otf.js`'s) and **throws** on anything outside them.
-
-| | TablEdit NORMAL / VISUAL | vim NORMAL / VISUAL | facade |
-|---|---|---|---|
-| brush · roll · choke · ghost · staccato | `b` · `r` · `c` · `g` · `/` (`Shift+R` = roll, hidden) | `aB` · `aR` · `aC` · `aG` · `aS` | `setEffect(pos, fx, on\|'toggle')`, `toggleEffect`, `setRangeEffect(start, end, fx, on, {strings})` |
-| let-ring, muted (palm), harmonic, artificial-harmonic, tap, vibrato, tremolo, bend-release, slap | — (`menuOnly`: Note ▸ Effects, popover row) | — | same |
-| grace note | `Alt+G` (NORMAL) → `GracePopover` | `ag` | `setGrace(pos, {f, kind?}\|null)` |
-| bend target (`tech: 'b'`) | — (Note ▸ Bend (target), popover `b`) | `ab` | `setArticulation` |
-| clear (tech + tie + fx + grace, not fingering) | `n` | `an` | `state.clearEffectsAtCursor` / `clearEffectsInSelection` |
-| repeat last effect | `F3` | `a.` | `state.lastTech = 'fx:<name>'` |
-
-- **Every fx key is a TOGGLE.** Over a selection it is one undo step and
-  TablEdit's rule: every note already has it → off, else on for all
-  (`setRangeEffect(…, 'toggle')`). `F3` / vim `.` RE-APPLY (on, never
-  off), and only an effect that was turned ON is remembered.
-- **Moved keys** (each in the preset's `exceptions`): `c` was `tech: 'b'`
-  and is now TablEdit's Choke fx; `r` was repeat-previous-measure, now
-  `Alt+R` (TablEdit's R is the roll); `m` stays the dead note `x` — the
-  chop is what a bluegrass tabber means by "muted"; TablEdit's palm-mute M
-  is `fx: 'muted'`, menu-only.
-- **`menuOnly: true`** on an action means TablEdit has no hotkey for it.
-  The fence in `bindings.test.js` exempts it from "reachable from a
-  preset" and refuses it a binding; `effects-editor.test.js` requires it
-  to be in a menu.
-- **Alt+letter is read off `event.code`** (`eventToKeyString`): macOS
-  Option+G types `©`, which no table entry could match.
-- **UI**: Note ▸ Effects is generated from `FX_ORDER` with a ✓ for what the
-  note carries (`checked(state)` on an action item); the toolbar's
-  articulation palette gains ⇅ ≀ ch ( ) · (the keyed five, from
-  `FX_BUTTONS`, `.reflects-note` like h/p) — always the action, never
-  armed — **superseded 2026-10-21: the palette keeps only the transitions,
-  and all 14 effects (the keyed five included) are one `Effects ▾` list,
-  by name, with ✓ and keys** (see "The menu bar and the palettes"); the
-  note popover gets an **Effects** row of 14 toggles
-  (`POPOVER_FX`) and carries `grace` through an in-place edit; the status
-  bar shows `Fx: brush · let-ring · grace 3 hp`. Drawing is
-  `renderers/tablature.js`'s job, not the editor's.
-- **A grace follows its main note**: `+`/`-` (`transposeFret`,
-  `transposeRange` — still all-or-nothing, grace included) move it by the
-  same frets, and `moveNoteToString` keeps its interval (same string, so the
-  same fret offset), refusing when the grace would leave 0..24.
-
-### Tracks: the name IS the id, and the order IS the lead
-
-Both track edits live in the toolbar's **Track** section, beside the
-switcher — the only other place a track is chosen or named. No key
-bindings: choosing a track never had one, and these are
-once-per-document edits, not entry-speed ones.
-
-| | rename (✏️) | reorder (◀ ▶) |
-|---|---|---|
-| **facade op** | `renameTrack(trackId, newId)` | `moveTrack(trackId, toIndex)` |
-| **state wrapper** | `renameTrack(newId)` | `moveTrack(delta)` |
-| **UI** | `TrackNamePopover` in `popover.js` | two toolbar buttons |
-| **recorder** | `renameTrack` | `moveTrack` |
-
-**A rename edits the `id`, and there is no alternative.** A track has no
-display-name field: the id is what `renderers/tablature.js` prints on the
-stave's track-info row, what work-view's mixer and percussion placeholder
-print, and what the editor's own switcher shows. A name stored anywhere
-else would be invisible on the site.
-
-- **`notation` is keyed by track id, so the notation moves with it** —
-  `renameTrack` rebuilds the object in key order, putting the renamed key
-  back exactly where it was. Miss this and the track's music vanishes;
-  `validate_otf` in `scripts/lib/process_pending.py` would reject the
-  submission with "track X: no notation". (Real files' notation key order
-  is NOT the `tracks[]` order — 27493 keys guitar/bass/banjo/mandolin for
-  tracks guitar/bass/mandolin/banjo — so never rebuild it from `tracks`.)
-- **Duplicate ids are refused** (they'd collide in `notation`). The popover
-  disables Save and says which track owns the name; the facade throws as a
-  backstop. Names are cleaned by `sanitizeTrackId` — spaces and mixed case
-  are kept, `< > & " ' \` and control chars are not, because the renderer
-  interpolates a track id into innerHTML unescaped.
-- **Undo of a rename re-points the facade.** `_reconcileTrack` runs after
-  every history swap: a stale `trackId` would make the next `getNotation()`
-  *mint* an empty bucket under the dead name. EditorState follows via the
-  facade's `trackChange`.
-
-**A reorder moves `tracks[]` and nothing else.** `notation` is keyed, not
-positional — reordering it would be churn with no meaning. Order is
-load-bearing anyway: work-view takes its lead as the first *pitched* track
-(`pitched[0]?.id`) unless the part instrument names one, `resolveEditTrackId`
-and `EditingFacade` fall back to `tracks[0]`, and the song page stacks the
-staves in `tracks[]` order. "Make this the lead" really is "move it first".
-
-`role` is **not** where lead-ness lives, despite the name: it comes from
-the TEF importer's instrument guess (`banjo`/`mandolin` → `lead`, else
-`rhythm`), so red-haired-boy's ensemble has three tracks claiming `lead`
-and work-view treats it as a hint next to position, never as the answer.
-Neither op touches it. `tablature_parts[].tracks` in the index is a *count*
-of non-percussion tracks, so neither op moves it either.
-
-### The selection is a RECTANGLE, not a column
-
-TablEdit's model, and the one the owner asked for: a selection has a
-WIDTH (ticks) and a HEIGHT (strings). Dragging along string 3 selects
-string 3 alone; dragging from string 3 down to string 5 selects 3, 4 and
-5 across every measure the drag crossed. Strings 1–2 are simply not in
-the block, and no op may touch them.
-
-| piece | what it is |
-|---|---|
-| `SelectionRange` | two `CursorPosition`s — each already carried a `string`; the rectangle is what finally reads it |
-| `state.selectionStrings()` | the inclusive span between the two endpoints' strings, low → high, clamped to the track (`[3,4,5]`) |
-| `state.selectionRange()` | `{startAbs, endAbs, strings}` — **the one thing every range op is built from** |
-| `cursor.js selectionBand(strings, geom)` | pure: the highlight's `{top, height}` in SVG units, from the renderer's own `topMargin` / `stringSpacing` |
-
-- **The height comes from the ENDPOINTS, never from the tick
-  normalization.** `getNormalized` orders the range in time; a drag that
-  runs backwards in time still selects the same strings.
-- **Every facade range op already took `{strings}`** (`copyRange`,
-  `deleteRange`, `moveRange`, `setRangeDuration`, `scaleRangeDuration`,
-  `notesInRange`, `transposeRange`) — the state simply never passed it,
-  so every selection behaved as a full column. The wrappers that pass it
-  now: `copy`, `deleteSelection`, `applyDurationToSelection`,
-  `scaleSelectionDuration`, `transposeSelection`, the drag-move in
-  `editor.js`, and `applyTech` in `bindings.js` (effects over a
-  selection).
-- **Paste keeps each note's OWN string.** A block copied off strings 3–5
-  lands on strings 3–5 wherever the cursor is; the cursor's string is a
-  tick address, not a transposition.
-- **`fixDurations` is the one op the rectangle does NOT narrow.** The
-  column rule reads every string of the measure to decide a duration, so
-  re-timing "only strings 3–5" would compute durations from a phantom
-  document. `fixDurationsInSelection` honours the ticks and ignores the
-  height, deliberately.
-- **`Ctrl+A` is the whole tab, in one press** (`select.all`): every
-  measure, every string, the CURRENT track only — the track you are
-  looking at, not the others (owner, 2026-10-27). Edit ▸ Select measure
-  (`select.measure`, menu-only) is the one-measure column. It used to be
-  one action that took the measure first and the tab on a second press,
-  which nothing on screen announced. Placed text is score-level and is
-  not in any selection.
-- **A selection's end slot runs to the next grid line**, or to the
-  barline in a measure's last slot (`state.slotEndAbs`). It used to end
-  one tick past the slot's start, so a note typed at a finer step than
-  the current one (a 16th at beat 4.3 under a 1/8 step) was outside
-  every selection, Ctrl+A included — and the cursor can't land on it
-  either, so nothing could delete it. `selectionRange()` is the one
-  range: the highlight and the editor's drag-move read it too.
-- **Growing it**: `Shift+←/→` moves the end tick, `Shift+↑/↓` (and vim's
-  `j`/`k` in VISUAL) moves the end string. `cursor.moveString` drags the
-  selection end exactly the way `moveByTicks` always has — without that,
-  vim's `j` in VISUAL moved the crosshair and left the rectangle behind.
-- **Dragging**: the rectangle is anchored at the mousedown slot's string
-  and follows the pointer's string. Re-grabbing to MOVE a phrase now
-  requires the grab to be inside the band as well as the tick range —
-  grabbing string 1 under a strings-3–5 selection starts a new selection,
-  which is what it looks like it should do.
-- **The highlight is clipped to the band** (`renderSelection`, and the
-  dashed `renderMovePreview` with it). It used to be full staff height,
-  which is the same picture for every selection and therefore told you
-  nothing about what was about to be deleted.
-
-### Driving and measuring it from a script — `editor.automation`
-
-`automation.js`, reached from the element: `document.querySelector('.otf-editor').__otfEditor.automation`.
-The same object serves Playwright, a unit test, and a browser session on the
-live site (Claude in Chrome), so "the ruler looks wrong" becomes a list.
-
-| call | what |
-|---|---|
-| `press('1 2')`, `press('Ctrl+z')` | real keydowns through the binding table (two-digit refine, sequences, counts behave as typed) |
-| `exec('edit.undo')`, `actions()` | run an action by id, exactly as a menu item does |
-| `doc()`, `cursor()`, `setCursor({measure, tick, string})`, `history()` | read the document (a copy), the cursor, the undo stack |
-| `layout()` | what is DRAWN, in client px: each bar's barlines and string y's, every ruler line (`data-measure`/`data-tick` on `.editor-grid-overlay line`; `hidden` when too dense to draw), fret digit (`data-abs-tick`/`data-string`), rest glyph (`data-measure`) and the cursor box; `zoom` (Aa) and `hZoom` (horizontal) |
-| `check()` | `layoutViolations(layout())`: ruler periodic and inside its bar, notes and cursor on their tick's ruler line and inside the bar, rests inside the bar, every row drawn at the zoom (`row-squeezed`). `[]` when sane |
-
-Measured against the BARLINES on purpose: notes, ruler and cursor share
-one tick→x mapping, so they always agree with each other; the bug class is
-the mapping drifting off the bar (A17: per-measure centering put an empty
-bar's tick 0 mid-measure). `e2e/otf-editor-invariants.spec.js` runs
-`check()` after every key of a seeded random walk.
-
-Two input rules that walk pinned down:
-
-- **A two-digit fret is ONE undo step.** `1` places fret 1 (one history
-  entry, plus an "Add measures" one if auto-advance walked off the end);
-  `2` inside the refine window rewrites it to 12 through
-  `facade.amendSince(mark, fn)`, which folds everything since the seed's
-  `historyMark()` into one entry. It used to leave a stray fret 1 on undo.
-- **Tab never leaves the editor**, in any mode: `handleKeyDown`
-  preventDefaults `Tab`/`Shift+Tab` even when no binding takes it. VISUAL
-  and ANNOTATION bind none, and Shift+Tab with a selection used to hand
-  focus to the previous control, after which every key went there.
-
-### The binding table — `bindings.js` is the only place keys live
-
-`keyboard.js` is a **matcher**, not a switch statement: every behaviour is
-an entry in `ACTIONS`, every key is an entry in a `PRESETS` list. Menus,
-tooltips and the `?` overlay all render from the same table, so an
-advertised key is a bound key by construction. (It used to be 880 lines of
-`if (key === …)` plus a hand-written overlay that lied in four places —
-plan `docs/plans/tab-editor-input-parity.md` §3.)
-
-| piece | what it is |
-|---|---|
-| `ACTIONS[id]` | `{ label, group, modes, run(ctx, {count, key, event}), repeatable }` — the verb |
-| `PRESETS.tabledit` / `.vim` | `mode → [{keys, action, hidden?}]`, plus `global` (all modes), `countPrefix`, `exceptions` |
-| `describe(preset)` | grouped `{keys[], label}` for the help overlay |
-| `keyFor(action, preset)` | the key to print beside a tooltip |
-| `menuKeyFor(action, preset, mode)` | the key to print beside a MENU item, in the mode the menu is read in — a key bound only in another mode is qualified with the way in (`A, t`) or not printed at all, because in NORMAL `t` is placed text and `m` is a dead note |
-| `FretEntry` | THE digit→fret rule (two-digit refine, `f` prefix) — the canvas *and* the note popover use this one object |
-
-**Key-string grammar** (one grammar for the table and for events): modifiers
-`Ctrl+Alt+Shift+` in that order; **case decides Shift** for letters (`W` ≡
-`Shift+W`, `Ctrl+Z` ≡ `Ctrl+Shift+Z` — write modified letters lower-case);
-digits come off `event.code` (`Shift+3`, never `#`); punctuation is the
-character itself (`<`, `?`, `*`); sequences are space-separated (`g g`,
-`a h`); `0-9` and `Shift+A-J` are ranges, expanded for matching and kept
-whole for display.
-
-- **`Meta` is never in the table.** The matcher mirrors Cmd onto Ctrl for
-  the seven system idioms (`S C X V Z Y A`) and returns `null` for every
-  other Cmd chord, which is what hands `Cmd+F`/`Cmd+L`/`Cmd+1` back to the
-  browser. `RESERVED_CHORDS` (`Ctrl+T/W/N`, `F6`, `F11`, …) is asserted
-  against in `__tests__/otf-editor/bindings.test.js`.
-- **Counts are opt-in per preset** (`countPrefix`), because in NORMAL every
-  digit is a fret. vim uses `g`: `g12G`, `g3w`, `g4.`. A count that lands on
-  a sequence with no binding falls back to the last chord alone — that is
-  why `g3w` needs no `g w` entry. TablEdit has no count; `Ctrl+G` prompts.
-- **The active preset is `getPreset()` / `setPreset()` / `onPresetChange()`
-  in `bindings.js`**, persisted to `localStorage['otf-editor.preset']`,
-  default `tabledit`. It lives there rather than on `EditorState` because
-  the table is what consumes it.
-- **`hidden: true`** marks an alias kept for muscle memory (`j`/`k`/`u` in
-  the TablEdit preset, `Ctrl+C/X/V` in vim). It is bound but not
-  advertised, so the help stays the preset's own vocabulary.
-- **Walking forward past the last tick appends a measure** — `stepTicks()`
-  is the one forward-step helper (`→`, `Tab`, `.`, `Enter`, auto-advance),
-  and it calls `state.ensureMeasure` so one `u` takes the bar back.
-- Anything that needs a NUMBER of ticks calls `state.effectiveDuration()`
-  (or `entryAdvanceTicks()`, which is the grid under automatic duration).
-  `currentDuration` is `null` under auto and multiplying by it is 0.
-
-The tests in `__tests__/otf-editor/bindings.test.js` are the fence: every
-preset key maps to a real action, every action is reachable from some
-preset, no reserved chord is bound, no chord is both an action and a
-sequence prefix, and every `<kbd>` the help overlay prints comes from
-`describe()`.
-
-### The menu bar and the palettes — one surface, generated
-
-`menu-bar.js` is the same component in every wrapper, mounted by the
-editor ABOVE the toolbar. Nothing in it (or in `toolbar.js`) writes a key
-down: an item names an ACTION, and the key column comes from
-`menuKeyFor(action, getPreset(), state.mode)` — mode-aware, because a
-menu is read from wherever the user is standing (Note ▸ Fingering used to
-print a bare `t`, which is ANNOTATION's thumb and NORMAL's placed text). Switching preset relabels the bar, the
-tooltips and the `?` overlay at once, and an advertised chord is a bound
-chord by construction (`__tests__/otf-editor/menu-bar.test.js` is the
-fence). The toolbar used to claim `Ctrl+T`, `Shift+Q`, `G` and `3` —
-none of them bound to anything.
-
-| piece | what it is |
-|---|---|
-| `MENUS` | the tree: File · Edit · Note · Play · Score · View · Help (plan §8.3) |
-| `{action}` item | label + key from the table; runs `keyboard.dispatchAction(id)` |
-| `{hook}` item | a callback the EDITOR supplied — tempo, repeats, tracks, measures-per-row, zoom, about. **A hook the wrapper didn't pass is an item that isn't drawn**, which is how a surface says it can't do something |
-| `{dynamic}` item | expanded at open time (`tracks`, `measuresPerRow`, and `file` ← `options.fileActions`) |
-| `when(state)` | the item is disabled when it returns false (no note at the cursor, no selection, one measure left, empty clipboard) |
-
-- **The popup hangs off `<body>`, fixed-positioned.** `.otf-editor` sets
-  `overflow: hidden` for its rounded corner, and in fill mode the chrome
-  is at the BOTTOM — an in-flow menu is cut in half either way. `_position`
-  measures and drops up when there is no room below.
-- **No `Alt+letter` mnemonics**: OS- and browser-sensitive. Menus open on
-  click, then arrow keys walk them and `Esc` hands focus back to the canvas.
-- **Under 720px the bar collapses to one `☰`** listing every menu as a
-  sheet, so touch users reach insert/delete measure and repeats at all.
-  `updateLayout()` RECONCILES rather than diffs — it asks what this
-  width should look like and makes it so on every call — because the
-  `narrow === this._narrow` early return it used to open with left a
-  stale `☰` beside the full trigger row after one missed transition.
-
-Two editor options carry a wrapper's answer into the shared component:
-
-| option | default | who sets it |
-|---|---|---|
-| `fileActions: [{label, run, disabled?, action?}]` | Download OTF alone (`action: 'edit.save'` prints its key) | whoever owns the session's buttons — the song page's Submit / Download / Cancel / Done group belongs here |
-| `hostTransport: true` | `false` | a wrapper that already shows ▶/⏹/BPM for this document (the song page's bottom band, `tab-edit-band.js`). It drops the status bar's transport so one tab doesn't get three sets of playback controls; Mode/M/Beat/String/Duration/Text and the help button stay |
-
-**One flowing toolbar, labelled — no caption sentences** (2026-10-21,
-owner: the captions read as documentation left hanging, and the toolbar
-took three crowded rows). Left to right, wrapping as the width asks:
-
-| section | holds |
-|---|---|
-| `.history-section` | ↩ ↪ |
-| `.duration-section` — label **Note length** | `Auto`, `.duration-buttons` (1 · 1/2 · 1/4 · 1/8 · 1/16 · 1/32), `Dot`, `³` |
-| `.grid-section` — label **Cursor step** | `.grid-buttons` (1/4 · 1/8 · 1/16 · 1/32 · Trip), `Rest`, `Advance`, `Ruler` |
-| `.articulation-section` | h p / x b ⌒ ∅ + **`Effects ▾`** (`.effects-button` → `.otf-fx-popup`, all of `FX_BUTTONS` by name, ✓ for what the note carries, the preset's key) |
-| `.text-section` | `Text` (placed text), ⌫ |
-| `.track-section` | **only with two or more tracks**; a lone track is renamed from Score ▸ Rename track… |
-| `.mode-section` (last, `margin-left: auto`) | `.mode-indicator`, **hidden in NORMAL**; `VISUAL · Esc to leave` / `ANNOTATION · …` otherwise |
-
-- **The labels say which knob is which; the tooltips explain.** "Note
-  length" / "Cursor step" carry the old captions' sentences in `title`
-  (`LENGTH_HINT`, `STEP_HINT`). The confusion they answer is real — under
-  automatic duration the STEP is the rhythm input — so the words stay on
-  screen, just not as a sentence.
-- **Keys are in tooltips only.** The inline F4 · F5 · q · F7 hints are gone
-  (`q` because F6 is the browser's read like a typo).
-- **The cursor step is not a zoom** (fix-it A20). It sets where the cursor
-  and clicks land and what the ruler draws; it never changes measure width
-  or rows. `gridSubdivisionChange` redraws the ruler and the cursor box,
-  not the tab. A step too fine to see (lines closer than
-  `MIN_RULER_SPACING_PX`, 8px, in `cursor.js`) keeps every line in the DOM
-  but draws only the coarsest multiple that fits (`hidden` in
-  `gridLinesForRow`); beats always draw. To see and click every step,
-  zoom in (below).
-  It used to set a ratcheted `measureWidthFloor` from the step: 1/32 made
-  rows wider than the container, CSS shrank the whole tab to ~0.58x, and
-  going back to 1/4 didn't undo it.
-- **Horizontal zoom is the room a tick gets** (fix-it A21). `state.horizontalZoom`
-  (one of `H_ZOOM_LEVELS`, 0.75–8; view state, no history) is set by the
-  status bar's `− 100% +` (bottom right, where score editors keep it), View ▸
-  Zoom in/out/Reset and `{` / `}` (beside the step's `[` `]`). The editor
-  derives the row shape from the pinned zoom-1 count (`_baseMeasuresPerRow`,
-  which View ▸ Measures per row sets, resetting the zoom): each measure is at
-  least `zoom ×` its zoom-1 width, as many as fit share a row and fill it
-  (`measureWidthFloor`), and one measure wider than the canvas is kept at
-  size: `.editor-renderer .stave-row svg { max-width: none }`, and the
-  CANVAS scrolls (the overlays use its `scrollLeft`). Not the Aa size: Aa
-  scales digits with the spacing, so a 32nd slot stays narrower than a digit
-  at every size. Entry never reads the zoom: clicks, arrows and the entry
-  advance stay on `gridSubdivision` / `effectiveDuration()`. While the ruler
-  is thinning the step, the zoom readout is outlined (`.needs-zoom`) and its
-  tooltip says why: at 1/32 and 100% you would otherwise aim at the drawn
-  1/16 lines, which is how Mike's 32nds landed a 16th apart.
-- **A click closes the two-digit fret window** (`_setCursorFromPoint` calls
-  `fret.cancelRefine()`): `2`, click elsewhere, `0` used to make fret 20 at
-  the first slot.
-- **On/off switches are not choices.** `Advance` and `Ruler` are
-  `.toolbar-toggle`: on is a tinted outline with `aria-pressed`, never the
-  solid fill that marks the selected value next to them.
-- **Copy / cut / paste / loop left the toolbar** — they are Edit ▸ and
-  Play ▸ items with their keys, and four more slots was most of a row.
-- `Effects ▾` hangs its list off `<body>` (fixed, like the menu bar's
-  popup, because `.otf-editor` clips), closes on pick / Escape / outside
-  click, and is outlined `.reflects-note` when the note carries any `fx`.
-  Entries are never disabled on an empty slot: in VISUAL the action takes
-  the selection.
-- Under 600px the sections wrap internally and separators hide, so no
-  palette runs off a phone screen.
-
-Selectors the e2e suite names: `.duration-buttons .button-symbol` (still
-`1 1/2 1/4 1/8 1/16 1/32`), `.rest-button`, `.grid-buttons`,
-`.grid-btn[data-subdivision]`, `.toolbar-section`, `.mode-indicator`
-(its text is set even while hidden), `.effects-button`, `.otf-fx-popup`.
-
-**The palettes reflect the note under the cursor** — TablEdit's purple
-border, and the reason post-hoc duration/effect editing is usable at all.
-Three outline states live on the LENGTH row and never mean the same
-thing:
-
-- `.active` (filled) = the ENTRY state: what the NEXT note gets.
-- `.reflects-note` (inset outline) = what the note UNDER THE CURSOR
-  already is, recomputed on `cursorMove` and `change`. A dotted value
-  outlines its base button *and* `Dot` (`durationReflects`, exported);
-  160 ticks outlines the triplet button; `tech`/`tie` outline their
-  articulation button, and so does each `fx` the note carries. An outline, never a border width — nothing moves
-  when the cursor does.
-- `.predicts-next` (dashed outline) = **under `Auto` only**, the live
-  prediction: the value `state.effectiveDuration()` maps to for the slot
-  the cursor is on, recomputed on `cursorMove`, `change`,
-  `durationChange` and `autoDurationChange`. Dotted and triplet
-  predictions light the same buttons `.reflects-note` would
-  (`durationPredicts` is `durationReflects`); a prediction with no button
-  (an odd gap like 1800) outlines nothing and the status bar still prints
-  the number. Choosing a duration clears every dashed outline — there is
-  no prediction then, only the choice. This is TablEdit's palette
-  "dynamically displays the automatic duration of the note that would be
-  inserted", and the only way to see the last-note rule before committing
-  to it.
-- `.pending` (orange) is still "armed for the next note": clicking `h`,
-  `p`, `/`, `x` or `b` on an EMPTY slot arms it, on a note applies the
-  binding action. Tie always goes to the action (it needs a real
-  predecessor); Clear disarms before it touches the document. There is no
-  `~`-as-technique button any more — a tie is `tie: true`.
-- **The note popover's technique row is the same config**, not a second
-  opinion about it: `POPOVER_TECHS` in `popover.js` is `toolbar.js`'s
-  exported `ARTICULATION_BUTTONS` minus the clear latch (the row ends in
-  its own `none`), so `h · p · / · x · b · ⌒` reach the one path a phone
-  has. The tie carries `'~'` — the value `facade.insertNote` reads as
-  "tie to the same-string predecessor" — and is DISABLED with the reason
-  in its tooltip when `facade.tiePredecessor` finds none, rather than
-  being dropped in silence at Insert.
-
-The Track group sits near the END of the toolbar, and only with a second
-track: rename and reorder are once-per-document edits and used to spend
-four slots ahead of the buttons you press every few seconds.
-
-### Document ops added for TablEdit input parity
-
-Every one goes through `EditingFacade`, so every one is a single undo
-step (the "refuses" column means: returns `false`, document untouched).
-State wrappers in `state.js` take the cursor/selection instead of a
-position. Plan: `docs/plans/tab-editor-input-parity.md` §3, §6.
-
-| facade op | state wrapper | refuses when | undoable |
-|---|---|---|---|
-| `setNoteDuration(pos, dur)` | `setDuration(d)` also re-times the note at the cursor and PINS it | no note there; already that duration | yes |
-| `setRangeDuration(start, end, dur, {strings})` | `applyDurationToSelection(d)` | range holds no notes | yes (one step) |
-| `scaleDuration(pos, factor)` | `scaleDurationAtCursor(f)` | no note; already clamped at 60 / 1920 | yes |
-| `scaleRangeDuration(start, end, factor, {strings})` | `scaleSelectionDuration(f)` | nothing in range moves | yes (one step) |
-| `transposeFret(pos, delta)` | `transposeFretAtCursor(d)` | no note; already at 0 or 24 | yes |
-| `transposeRange(start, end, delta, {strings})` | `transposeSelection(d)` — what `+`/`-` run when there IS a selection | the block is empty; delta 0; **any** note would leave 0..24 (ATOMIC: a single 24 refuses the whole `+1`, no partial move) | yes (one step) |
-| `moveNoteToString(pos, ±1)` | `moveNoteAcrossStrings(d)` (moves the cursor too, and emits `cursorMove` so the status bar's `String:` follows) | no such string; slot occupied; fret would leave 0..24; untuned track | yes |
-| `setTie(pos, on)` | `toggleTieAtCursor()` | turning ON with no same-string predecessor; clearing a tie that isn't set | yes |
-| `setArticulation(pos, null)` + `setTie(pos, false)` + `setEffect(…, false)` per fx + `setGrace(pos, null)` in one `transact` | `clearEffectsAtCursor()` / `clearEffectsInSelection()` — what `n` runs, TablEdit's N: `tech`, `tie`, `fx` AND `grace`, since no op clears another's field | the note (range) carries none of them | yes (one step) |
-| `setEffect(pos, fx, on\|'toggle')` / `toggleEffect` / `setRangeEffect(start, end, fx, on, {strings})` — FX_ORDER, **throws** otherwise | `setEffect(fx, on = 'toggle')` (selection or cursor) | no note; nothing changes | yes (range: one step) |
-| `setGrace(pos, {f, kind?}\|null)` — f 0..24, kind in GRACE_KINDS, **throws** otherwise | `setGraceAtCursor(g)` | no note; same grace; nothing to clear | yes |
-| `setFingering(pos, finger\|null)` — T I M R P, **throws** otherwise | `setFingering(f)` (selection or cursor) | no note there; already that letter | yes |
-| `setLeftHand(pos, digit\|null)` — 0..4, **throws** otherwise | `setLeftHand(d)` | no note there; already that digit | yes |
-| `setRangeFingering(start, end, finger\|null, {strings})` / `setRangeLeftHand(…)` | the same two wrappers, when a selection exists | no note in range changes | yes (one step) |
-| `setFingering(pos, null)` + `setLeftHand(pos, null)` in one `transact` | `clearFingerings()` — what `c` runs. Fingering ONLY: the effects have their own clear | the note (or range) carries neither hand | yes (one step) |
-| `deleteMeasure(n)` | `deleteMeasureAtCursor()`, `deleteEmptyTrailingMeasure()` | n out of range; it's the last measure; (wrapper) the tail has notes on ANY track | yes |
-| `shiftRight(m, tick, ticks)` / `shiftLeft` | `shiftRightAtCursor()` / `shiftLeftAtCursor()` | a note would cross the barline or land on an occupied slot; nothing at/after the tick | yes |
-| `repeatMeasure(n)` | `repeatPreviousMeasure()` | n < 2; n−1 missing or empty; n already has notes; source longer than destination | yes |
-| `addMeasures` (existing) | `ensureMeasure(n)` — walk past the end to append | measure n already exists | yes |
-| `fixDurations(n \| {startAbs,endAbs})` | `fixDurationsAtCursor()` / `fixDurationsInSelection()` | nothing changes | yes (one step) |
-| `insertNote({autoDuration, pins, autoEntered})`, and the same option on `deleteNote` / `deleteTick` / `paste` | automatic via `state.isAutoDuration` | — | yes (note + neighbours in ONE step) |
-
-**Automatic duration** (`state.currentDuration === null`) is TablEdit's
-"no explicit current duration". Two halves:
-
-- **Every note that has a later onset in its measure**: `dur` is the gap
-  to that onset on ANY string of the same track — the *column* rule, not
-  the same-string rule TablEdit's manual describes, because same-string
-  would make every 5th-string note of a roll a dotted quarter and the
-  corpus says TablEdit users write rolls as eighths (95,702 banjo notes:
-  eighths 63.6%, dotted quarters 0.1%).
-- **The measure's LAST sounding column** takes the same value as the
-  interval that precedes it (`lastColumnDuration`, exported), clamped so
-  it can never cross the barline; only a column with nothing before it
-  fills to the barline. This half is the manual verbatim
-  (`note_menu.shtml`, "Automatic duration"):
-
-  > "if you enter a note at the very first position in a measure … it
-  > will automatically be displayed as a whole note. If you then move the
-  > cursor … an 1/8th note further on … TablEdit will automatically
-  > change the first note into an 1/8th note and assign the same value to
-  > the second note. If you then move the cursor to the beginning of the
-  > next measure (and 'Automatic rests' is on) TablEdit will enter a 1/4
-  > rest and a 1/2 rest to fill out the first measure. If you delete a
-  > note, TablEdit adjusts the duration of the remaining notes according
-  > to the same logic. If a note duration has been selected manually,
-  > deleting notes will have no effect on the remaining notes."
-
-  So typing two notes an eighth apart in a 4/4 bar leaves TWO EIGHTHS and
-  1440 ticks of silence — not an eighth and a dotted half. The silence is
-  real, and the renderer draws it: `restSpansForMeasure` +
-  `restGlyphSequence` in `renderers/tablature.js` decompose every gap
-  into standard rest values that each start on a multiple of themselves
-  (1440 from beat 2 → a quarter rest then a half rest, the manual's own
-  order; a 32nd on beat 1 leaves 32nd, 16th, 8th, quarter, half) and draw
-  the LEADING silence of a measure too, which is TablEdit's "Automatic
-  rests". Chords in a column share the value.
-
-- **Never recompute from the keyboard layer.** The facade does it inside
-  the same `_mutate`, so one `u` takes back the note *and* the neighbour's
-  new stem.
-- **Pinning is session state, never format.** `state.pinnedDurations`
-  (hand-set durations auto must not touch) and `state.autoEnteredDurations`
-  (notes typed under auto this session — the only ones auto may touch)
-  hold `durationKey(measure, tick, string)` strings and are handed to the
-  facade per call. A reopened document has neither, so it is fully pinned:
-  you didn't type those notes. `fixDurations` is the one-shot that ignores
-  both, on request.
-- Anything that needs a NUMBER must call `state.effectiveDuration()`, not
-  `state.currentDuration` — under auto the latter is `null`.
-- **A STEP is not a duration.** `Tab` / `Shift+Tab` / `.` / `Space` and
-  auto-advance move by `entryAdvanceTicks()` — one grid slot under auto,
-  the chosen duration otherwise — because under auto the grid is the
-  rhythm input (plan §6). Stepping by the prediction instead walked past
-  the very slots about to be typed into (an empty 2/4 bar predicts a
-  dotted quarter, so `Tab` jumped a measure).
-- Measure-bounded: auto never ties across a barline. OTF stores no
-  rests, so the trailing silence is not IN the document — it is what the
-  measure's ticks minus the written durations come to, and the renderer
-  is what makes it visible. Wanting a specific length for the last note
-  regardless of spacing is still the explicit-duration escape hatch
-  (which pins it).
-- `facade.autoDurationAt(pos)` is the single source for the prediction:
-  gap to the next onset → else the preceding interval clamped to the
-  barline → else the rest of the measure. `fixDurations` (`J`) and note
-  entry both go through `_recomputeAuto`, so `J` cannot disagree with
-  what typing would have produced.
-
-**A refusal is SAID, not swallowed.** `editor.flashStatus(msg)` writes
-into the status bar's `.status-flash` (`role="status"`, cleared after a
-few seconds) and reaches the binding layer as the `onStatus` hook on
-`ctx.hooks`. It exists because an atomic refusal changes nothing on
-screen — a block `+` that would push a note past fret 24 is
-indistinguishable from a dead key otherwise. It is a DOM node, never a
-native alert: see "No native dialogs" below.
-
-Entry-state flags the keyboard layer reads: `state.autoAdvance`
-(`toggleAutoAdvance()`, emits `autoAdvanceChange`), `state.lastTech`
-(TablEdit's F3 — `repeatLastAction()` re-applies it, `'~'` there
-means tie and `'fx:<name>'` an effect turned on).
-
-`pitch.js` is the pure string+fret↔MIDI module the re-string op needs; it
-is a port of `tab-player.js`'s two lines, not an import of it (the facade
-stays UI-free), and it returns `null` where the player guesses.
-
-## Architecture
-
-Wraps existing `TabRenderer` with editing capabilities:
-
-```
-OTFEditor
-├── TabRenderer (existing) - renders OTF to SVG
-├── CursorOverlay - shows cursor position
-├── NoteEntryPopover - UI for entering notes
-├── Toolbar - duration, articulation buttons
-└── EditorState - manages document, cursor, history
-```
-
-## Implementation Phases
-
-1. **Foundation**: Basic editor, cursor, note entry popover, save/load
-2. **Articulations**: h/p//, triplets, ties, undo/redo
-3. **Power User**: Roll mode, visual mode, macros
-4. **Integration**: Edit site tabs, submit corrections
-5. **Multi-Instrument**: Guitar, mandolin, bass support
-
-## Files
-
-```
-docs/js/otf-editor/
-├── DESIGN.md          # Full specification (read this first)
-├── CLAUDE.md          # This file
-├── editor.js          # OTFEditor — wires everything together
-├── state.js           # UI-session state (cursor, mode, grid) over the facade
-├── facade.js          # UI-free document API: ALL mutations + undo history
-├── cursor.js          # Cursor/grid/selection overlays and navigation
-├── keyboard.js        # Modal vim-style key bindings
-├── menu-bar.js        # File/Edit/Note/Play/Score/View/Help, generated from bindings.js
-├── toolbar.js         # Duration / grid / articulation / text / edit / track palettes
-├── popover.js         # NoteEntryPopover + AnnotationPopover + TrackNamePopover
-│                      #   + ValuePromptPopover + GracePopover (see "No native dialogs")
-├── context-menu.js    # Right-click menu
-├── pitch.js           # Pure string+fret ↔ MIDI (ported from tab-player)
-├── actions.js         # Document-level helpers (validate, cleanup, download); re-exports new-otf.js
-├── new-otf.js         # createEmptyOTF / createMultiTrackOTF — pure, editor-state-free (the song page builds new takes from it)
-└── recorder.js        # Record/replay of edit events
-```
-
-**One rule holds the editor together: nothing mutates the document
-except `EditingFacade`.** Its undo history is a whole-document snapshot
-pair per op, so anything routed through it is undoable for free — and
-anything that reaches around it is silently *not*.
-
-### No native dialogs
-
-`window.prompt` / `confirm` / `alert` are banned from this directory, and
-`docs/js/__tests__/no-native-dialogs.test.js` scans for them. They are drawn
-by the BROWSER, which means: not in the DOM (so no Playwright test can drive
-them, and the owner's rule is that everything a human can do must be), not in
-the theme, and on iOS they take focus in a way the canvas never gets back.
-
-Five panels cover everything the editor needs to ask, and they are siblings
-on purpose — same overlay/panel chrome, Enter commits, Escape cancels, keys
-are swallowed so the vim bindings never see what you typed:
-
-| ask | panel |
-|---|---|
-| a note | `NoteEntryPopover` |
-| placed text (`c`) | `AnnotationPopover` |
-| a track's name (✏️) | `TrackNamePopover` |
-| **one number** — Go to measure (`Ctrl+G`), Play ▸ Tempo… | `ValuePromptPopover` |
-| a grace note (`Alt+G`) — fret by `FretEntry` + connection | `GracePopover` |
-
-`ValuePromptPopover` is where the last two `prompt()` calls went. Its answer
-arrives LATER (on Enter or a click), which is why `_promptForMeasure` returns
-0 and dispatches `nav.goToMeasure` with a `count` from the commit callback
-instead of returning a number — the binding table already understood counts
-(`g12G` in the vim preset), so it needed no new entry and no async hook.
-
-Outside the editor, the same rule reaches the two places a tab session asks
-something: the edit bar's inline "Discard edits? · Discard · Keep editing"
-(`work-edit.js`, with the `confirmDiscard` injection point still honoured
-when a host supplies one) and the drafts list's inline "Delete this draft?"
-(`drafts-view.js`).
-
-## Related
-
-- `docs/js/renderers/tablature.js` - TabRenderer class
-- `docs/js/renderers/tab-player.js` - Playback engine
-- `sources/banjo-hangout/CLAUDE.md` - OTF format details
+| what | fingering (`finger`, `lh`), technique | "PART A", "Long Choke", "Bb6+9" |
+| stored | on the note (`finger`, `lh`, `tech`) | `otf.annotations[]`, top level, `{measure, tick, text}` |
+| reached by | `A` (ANNOTATION mode) | clicking the text; `t` / `T` in NORMAL (vim `c` / `C`) |
+| facade | `setFingering`, `setLeftHand`, `setArticulation` | `addAnnotation`, `setAnnotationText`, `deleteAnnotation`, `findAnnotationIndex` |
+
+Placed text is score-level and drawn above the staff by
+`renderers/tablature.js`; chord names over a tab are placed text. Two entries
+may share a `(measure, tick)`, so address them by index
+(`state.getAnnotationAtCursor()`). Text is trimmed and a blank one is never
+stored. The renderer stamps `.annotation-text` with `data-measure`/`data-tick`;
+a click on it puts the cursor exactly there (mapping the click x misses, since
+the words run past the one-beat reach) and a mousedown on it never starts a
+drag (`_annotationFromEvent`). A document you only read round-trips
+byte-identical.
+
+**Fingering.** `finger` (picking hand, `T I M R P`) and `lh` (fretting hand,
+`0..4`) are separate fields in TablEdit's vocabulary, decoded by
+`sources/banjo-hangout/src/tef_parser/otf.py` from one base-6 V3 byte.
+
+- The picking pinky is `Shift+P` in ANNOTATION mode because `p` is the pull-off
+  and a pinky is the rarer mark.
+- Keys toggle at the cursor and plain-set over a selection (one undo step).
+- `lh: 0` is a value; clearing is `null`, compared with `?? null`.
+- `c` clears fingering only; `x`/`n` clear effects. `clearFingerings` never
+  touches `tech`/`tie`/`fx`/`grace`, and `clearEffectsAtCursor` never touches
+  `finger`/`lh`.
+- No toolbar palette; the status bar shows what is set, and touch users use the
+  note popover's Fingering row.
+- Double-clicking a note opens the popover as an edit; Insert rewrites it in one
+  `transact`. `_placeNote` replaces whatever is on the string, so fingering
+  must be re-applied in that same step or `u` costs two presses.
+
+**Effects and grace.** `note.fx` is a set stored in `FX_ORDER`, omitted when
+empty (never `[]`); `note.grace` is `{f: 0..24, kind?}`. `tech` keeps the
+transitions (`h p / \ x`, and `b` = bend target); everything else is `fx`.
+
+- Every fx key is a toggle. Over a selection: all notes already have it means
+  off, otherwise on for all (`setRangeEffect(..., 'toggle')`, one undo step).
+  `F3` / vim `.` re-apply (on, never off); only an effect turned on is
+  remembered (`state.lastTech = 'fx:<name>'`).
+- A grace follows its main note: `+`/`-` move it by the same frets, and
+  `moveNoteToString` keeps its fret offset, refusing if it would leave 0..24.
+- Drawing is `renderers/tablature.js`'s job.
+
+## Tracks
+
+A track has no display-name field: its `id` is what the stave, the song page
+mixer and the switcher print. Rename therefore edits the id
+(`renameTrack(trackId, newId)`), and reorder moves `tracks[]` only
+(`moveTrack`). UI is the toolbar's Track section and Score > Rename track; no
+key bindings.
+
+- `notation` is keyed by track id, so a rename rebuilds it in key order with
+  the renamed key back in place. Never rebuild it from `tracks[]`: real files'
+  key order differs (Banjo Hangout tab 27493, fixture
+  `docs/data/tabs/27493_tef.otf.json`, used by `facade-27493.test.js`: `notation`
+  keys are guitar/bass/banjo/mandolin, `tracks[]` is guitar/bass/mandolin/banjo). Dropping a key makes `validate_otf`
+  (`scripts/lib/process_pending.py`) reject "track X: no notation".
+- Duplicate ids are refused (popover disables Save; facade throws as backstop).
+  `sanitizeTrackId` strips `< > & " ' \` and control characters because the
+  renderer puts a track id into innerHTML unescaped.
+- Undo of a rename re-points the facade (`_reconcileTrack`, after every history
+  swap); a stale `trackId` makes the next `getNotation()` mint an empty bucket.
+- Order is load-bearing: work-view takes the lead as the first pitched track
+  unless the part names one, `resolveEditTrackId` and `EditingFacade` fall back
+  to `tracks[0]`, and the song page stacks staves in `tracks[]` order. `role`
+  is not lead-ness (it is the TEF importer's instrument guess; red-haired-boy
+  has three tracks claiming `lead`), and `tablature_parts[].tracks` in the index
+  is a count. Neither op touches them.
+
+## The selection is a rectangle
+
+A selection has a width (ticks) and a height (strings). No op may touch strings
+outside the block.
+
+- `state.selectionRange()` returns `{startAbs, endAbs, strings}`; every range op
+  is built from it. Height comes from the two endpoints, never from tick
+  normalization.
+- Every facade range op takes `{strings}`. A new range op's state wrapper must
+  pass them, or it silently acts on a full column.
+- Paste keeps each note's own string.
+- `fixDurations` is the exception: its column rule reads every string, so
+  `fixDurationsInSelection` honours ticks and ignores height.
+- `Ctrl+A` (`select.all`) is the whole tab, current track only. Edit > Select
+  measure (`select.measure`) is one measure. Placed text is in no selection.
+- A selection's end slot runs to the next grid line, or to the barline in a
+  measure's last slot (`state.slotEndAbs`), so a note typed at a finer step is
+  inside Ctrl+A and can be deleted.
+- Grabbing a selection to move it must be inside the band, not just the tick
+  range. The highlight and the dashed move preview are clipped to the band
+  (`selectionBand`, `cursor.js`).
+
+## Automatic duration
+
+`state.currentDuration === null` is TablEdit's automatic duration. The facade
+computes it inside the same `_mutate` as the edit (`autoDurationAt`,
+`_recomputeAuto`), so one `u` takes back the note and its neighbour's new stem.
+Never recompute from the keyboard layer.
+
+- A note with a later onset in its measure takes the gap to that onset on any
+  string of the track (column rule). A note's duration is not the gap to the next onset on its own string,
+  though that is the obvious rule: it would make every 5th-string note of a roll a dotted quarter, and the
+  corpus writes rolls as eighths (95,702 banjo notes: eighths 63.6%, dotted
+  quarters 0.1%).
+- The measure's last sounding column takes the preceding interval
+  (`lastColumnDuration`), clamped at the barline; a lone column fills to the
+  barline. Two eighths in a 4/4 bar leave 1440 ticks of silence, which the
+  renderer draws (`restSpansForMeasure`, `restGlyphSequence`). OTF stores no
+  rests; auto never ties across a barline.
+- Pinning is session state, never format. `state.pinnedDurations` (hand-set;
+  auto must not touch) and `state.autoEnteredDurations` (typed under auto this
+  session; the only ones auto may touch) hold `durationKey(measure, tick,
+  string)` strings. A reopened document has neither, so it is fully pinned.
+  `fixDurations` (`J`) ignores both.
+- A step is not a duration: `Tab`, `.`, `Space` and auto-advance move by
+  `entryAdvanceTicks()` (one grid slot under auto), because under auto the grid
+  is the rhythm input.
+
+## Toolbar, menus, zoom
+
+- `menu-bar.js` (`EditorMenuBar`) builds its menus at runtime from the `MENUS`
+  tree. An `{action}` item names an action and gets its
+  key from `menuKeyFor`; a `{hook}` item calls a callback that `OTFEditor` (`editor.js`) lists in
+  the `hooks` object it gives `new EditorMenuBar({...})`, and a hook missing
+  there means the item is not drawn. The popup
+  hangs off `<body>` (fixed) because `.otf-editor` has `overflow: hidden`. No
+  `Alt+letter` mnemonics. `updateLayout()` reconciles to the current width
+  instead of diffing against the last.
+- Options the host passes to `new OTFEditor(...)` (`work-edit.js` does): `fileActions: [{label, run, disabled?,
+  action?}]` (default Download OTF), and `hostTransport: true` when the song
+  page's bottom band already shows play/stop/BPM.
+- Palette outlines mean different things: `.active` (filled) is the entry state
+  for the next note; `.reflects-note` is what the note under the cursor already
+  is (an outline, never a border-width change); `.predicts-next` (dashed) is the
+  live auto-duration prediction, under `Auto` only; `.pending` (orange) is a
+  technique armed by clicking on an empty slot.
+- The note popover's technique row is `toolbar.js`'s `ARTICULATION_BUTTONS` via
+  `POPOVER_TECHS`, not a second list. The tie carries `'~'` and is disabled with
+  a reason when `facade.tiePredecessor` finds none.
+- The cursor step is not a zoom (fix-it item A20): it changes where the cursor
+  and clicks land and what the ruler draws, never measure width. Steps closer
+  than `MIN_RULER_SPACING_PX` (`cursor.js`) stay in the DOM but draw only the
+  coarsest multiple that fits. Do not derive `measureWidthFloor` from the step.
+- Horizontal zoom (fix-it item A21): `state.horizontalZoom` (`H_ZOOM_LEVELS`;
+  view state, no history). Each measure is at least `zoom x` its zoom-1 width
+  (`measureWidthFloor`, rows from `_baseMeasuresPerRow`); a measure wider than
+  the canvas scrolls the canvas (`.editor-renderer .stave-row svg { max-width:
+  none }`), so overlays use its `scrollLeft`. Entry never reads the zoom.
+
+## Driving it from a script: `editor.automation`
+
+`document.querySelector('.otf-editor').__otfEditor.automation` (`automation.js`)
+serves Playwright, unit tests and a live-site browser session: `press('1 2')`
+(real keydowns through the table), `exec(actionId)`, `actions()`, `doc()`,
+`cursor()`, `setCursor(...)`, `history()`, `layout()` (what is drawn, in client
+px) and `check()` (`layoutViolations(layout())`, `[]` when sane).
+
+`check()` measures against the barlines, because notes, ruler and cursor share
+one tick-to-x mapping and so always agree with each other; the bug class is that
+mapping drifting off the bar (fix-it item A17).
+`e2e/otf-editor-invariants.spec.js` runs it after every key of a seeded random
+walk. Every consumer reads `noteX0 + noteOffset + tick / ticks * noteW`
+(`renderers/tablature.js`); do not add per-measure centering.
