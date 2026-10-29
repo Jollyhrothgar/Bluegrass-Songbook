@@ -288,7 +288,7 @@ def is_tied_note(evt):
 ```
 
 The same sentinel is the "connect" bit that bend/choke detection keys on —
-see `bend_destination_keys` below.
+see "Bends" below (`fret_changed_tie_keys`).
 
 ### Slide vs Hammer-on Detection
 
@@ -380,18 +380,27 @@ instrument_patterns = [
 **Symptom**: Notes with 1/4 step bends show pull-off slurs
 **Fix**: Removed 0x04 from legato detection - it's actually a bend indicator
 
-### Bends/chokes: DECODED (2026-07) via the connect bit, not the noisy 0x04 bit
+### Bends: DECODED (G15d2) from effects 12 and 13, not the connect bit
 
-**Status**: bends ARE decoded and rendered. Detection (`bend_destination_keys`
-in otf.py, both parsers): a note carrying the tie/connect bit (V2 dyn bit-7 /
-V3 byte-5 bit-7) whose fret CHANGED vs the previous note on that string, with
-no h/p/slide, is a bend/choke TARGET → `tech: 'b'`, `tie: false`. In V3 the
-SOURCE note additionally carries byte6 = 0x0c (corroboration, not required).
+**Status**: effect 12 (bend, up and hold) is fx `bend`; effect 13 is fx
+`bend-release` (up and back). The TARGET is the next note on the same string of
+the same track, tied or not, possibly in a later measure (`bend_target_keys` in
+otf.py, `bendTargetKeys` in otf.js) → `tech: 'b'`, `tie: false`, never
+re-attacked. There is no amount field: the amount is `target.f - source.f`
+(1 = ½, 2 = full, 3 = 1½, 4 = 2; a lower target bends down). A bend with no
+later note on its string, or whose target is already an h/p/slide
+destination or on the same fret, is left alone. Most targets are NOT tied.
+The old rule (connect bit + fret change = bend) was wrong: those notes
+(`fret_changed_tie_keys`) are plain re-attacked notes now. The track flag
+(+0x12 bit 10) that makes TablEdit bend with no destination is not decoded.
 
-- **Render** (tablature.js): TablEdit's glyph — tilted-up arrow from the
-  source note to the bracketed `[target]` fret, amount ("½") above the tip.
-- **Playback** (tab-player.js): `bendWaypoints`, quarter-tone choke
-  (`BEND_SEMITONES = 0.5`). Fuller +1-semitone glide is issue #184.
+- **Render** (tablature.js): tilted-up arrow from the source note to the
+  bracketed `[target]` fret, amount from `bendLabel(target.f - source.f)`; a
+  rising-arrow band mark on the bent note (`.fx-bend`).
+- **Playback** (tab-player.js): `absorbBend` folds the target into the source
+  (one attack); `bendIntoWaypoints` ramps to the fret difference over the
+  source note, as in TablEdit's MIDI (spike/oracle, `test_bends_oracle.py`).
+  Choke (effect 4) is unchanged; an orphan `tech: 'b'` note is a quarter-tone.
 
 **Old caution still true**: the raw V2 `effect1 & 0x04` bit is NOISE (fires on
 ~2,221 corpus notes; TablEdit's MusicXML has 0 `<bend>` elements there). Do

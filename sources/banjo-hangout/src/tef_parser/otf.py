@@ -407,11 +407,13 @@ def assign_dynamics(doc: OTFDocument) -> None:
 
 # TablEdit's per-note effects, in its own vocabulary (fix-it A15). The note
 # effect enum is V3 byte 6 / V2 effect1 & 0x0f (string table at 0x1000f57e0);
-# 1-3 are transitions (tech h/p/slide), 12 is the bend the connect-bit
-# heuristic already marks 'b', 15 is the dead note 'x'. The rest are `fx`.
+# 1-3 are transitions (tech h/p/slide), 15 is the dead note 'x'. The rest are
+# `fx`; 12 (bend: up and hold) and 13 (bend-release: up and back) bend into
+# the next note on the string (see bend_target_keys, G15d2).
 EFFECT_FX = {4: "choke", 5: "brush", 6: "harmonic", 7: "artificial-harmonic",
              8: "muted", 9: "tap", 10: "vibrato", 11: "tremolo",
-             13: "bend-release", 14: "roll"}
+             12: "bend", 13: "bend-release", 14: "roll"}
+BEND_EFFECTS = (12, 13)
 # Attribute byte (V3 byte 8; V2 effect2 under fret-byte flag 0x80), read by
 # FUN_10001f594: low nibble = attribute, high nibble = a second effect.
 ATTRIBUTE_FX = {1: "let-ring", 2: "slap", 4: "ghost", 7: "staccato"}
@@ -705,21 +707,65 @@ def compute_articulations_v3(
     return articulations
 
 
-def bend_destination_keys(note_events, articulations):
-    """Keys (track, position, string) of BEND/CHOKE notes.
+def _effect_code(event: TEFNoteEvent) -> int:
+    """The note effect enum (V3 byte 6 / V2 effect1) & 0x0f; 0 if unreadable."""
+    raw = event.raw_data or b""
+    if len(raw) >= 12:
+        return raw[6] & 0x0f
+    if len(raw) >= 6:
+        return raw[4] & 0x0f
+    return 0
 
-    The tie sentinel (V2 dynamic-7 / V3 byte-5 bit-7) actually means "connected
-    to the previous note on this string." That renders as a TIE only when the
-    fret is unchanged (same pitch). When the fret DIFFERS and the note carries no
-    hammer/pull/slide (those already own the connection — e.g. 25635 m74's slide
-    destination, left untouched here), it's a bend/choke: TablEdit's own display
-    shows a bend, though its MusicXML exports it lossily as a tie-stop. We surface
-    it as a 'b' technique instead of a phantom tie.
 
-    Corpus-safe: zero notes in the 40+ file corpus meet all three conditions
-    (connect-bit AND fret change AND no h/p/slide), so this changes no existing
-    output; it only fixes real bends (e.g. Bill Emerson's "Welcome to New York"
-    m4, str3 fret 3->4). Full +1-semitone playback glide is tracked in #184.
+def bend_target_keys(note_events, articulations):
+    """Keys (track, position, string) of BEND TARGETS (G15d2).
+
+    A note with effect 12 (bend) or 13 (bend-release) bends into the NEXT note
+    on the same string of the same track, tied or not, possibly in a later
+    measure. TablEdit's MIDI builder (FUN_10005d814 -> FUN_10005be90, next
+    same-string note via FUN_10005bcd8) bends by destination pitch - source
+    pitch and does not pick the destination again; almost no destination
+    carries the tie bit. There is no amount field: the amount is
+    target.f - source.f, derived at draw/play time.
+
+    A bend with no later note on its string has no target and is left alone.
+    So is one whose target is already an h/p/slide destination (that tech owns
+    the connection) or sits on the same fret (nothing to bend).
+    """
+    by_track_string: dict = {}
+    for event in note_events:
+        if not event.is_melody:
+            continue
+        sf = event.decode_string_fret()
+        if not sf:
+            continue
+        by_track_string.setdefault((event.track, sf[0]), []).append(
+            (event.position, sf[1], event))
+
+    keys = set()
+    for (track, string), notes in by_track_string.items():
+        notes.sort(key=lambda x: x[0])
+        for i, (position, fret, event) in enumerate(notes[:-1]):
+            if _effect_code(event) not in BEND_EFFECTS:
+                continue
+            next_position, next_fret, _ = notes[i + 1]
+            if next_position == position or next_fret == fret:
+                continue
+            if articulations.get((track, next_position, string)) is not None:
+                continue
+            keys.add((track, next_position, string))
+    return keys
+
+
+def fret_changed_tie_keys(note_events, articulations):
+    """Keys (track, position, string) of notes that carry the tie bit but sit
+    on a different fret than the previous note on their string, with no
+    h/p/slide owning the connection.
+
+    A real tie is the same pitch. These are not ties (the note would go
+    silent), and since G15d2 they are not bends either: a bend is whatever
+    follows an effect-12/13 note (bend_target_keys). They import as plain,
+    re-attacked notes. Corpus: 37 notes in 11 files on 2026-10-29.
     """
     by_track_string: dict = {}
     for event in note_events:
@@ -1067,9 +1113,10 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
     else:
         articulations = compute_articulations_v3(tef.note_events)
 
-    # Bend/choke notes: connect-bit + fret change + no h/p/slide (see
-    # bend_destination_keys). Surfaced as a 'b' technique instead of a tie.
-    bend_keys = bend_destination_keys(tef.note_events, articulations)
+    # Bend targets: the next note on the string after an effect-12/13 note
+    # (see bend_target_keys). Surfaced as a 'b' technique, never a tie.
+    bend_keys = bend_target_keys(tef.note_events, articulations)
+    retie_keys = fret_changed_tie_keys(tef.note_events, articulations)
 
     # Group note events by track and measure.
     #
@@ -1208,11 +1255,13 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
                             tech = 'x'
                         # Check if this note is tied to the previous note
                         tie = is_tied_note(evt)
-                        # ...unless it's really a bend/choke (connect bit but a
-                        # fret change, no h/p/slide): render 'b', not a tie.
+                        # ...unless it's a bend target (the next note after an
+                        # effect-12/13 note): 'b', never a tie or a re-attack.
                         if (evt.track, evt.position, string) in bend_keys:
                             tie = False
                             tech = 'b'
+                        elif (evt.track, evt.position, string) in retie_keys:
+                            tie = False
                         # Fingering: when a V2 fret byte's flag bits are
                         # exactly 0x20, TablEdit's V2 upgrade (FUN_1000459c4)
                         # copies effect2 into the cell byte V3 stores at

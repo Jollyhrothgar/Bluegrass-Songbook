@@ -164,6 +164,15 @@ the note differs from its track.
 empty (never `[]`); `note.grace` is `{f: 0..24, kind?}`. `tech` keeps the
 transitions (`h p / \ x`, and `b` = bend target); everything else is `fx`.
 
+- **Bends.** Turning on `bend` / `bend-release` also marks the next same-string
+  note (any later measure) `tech: 'b'` when it has no technique and a different
+  fret; turning it off unmarks it (`_syncBendTarget`, same undo step). The amount
+  is the target's fret minus the source's: edit the target's fret, there is no
+  control. Copy, move, measure and track ops carry both notes. Separation is not
+  rewritten: delete the source and the target keeps its `b` (plays as a lone
+  quarter-tone note); delete the target and the bend has no target and sounds
+  plain; a note inserted between steals nothing (it is unmarked, the old target
+  stays `b` and plays lone).
 - Every fx key is a toggle. Over a selection: all notes already have it means
   off, otherwise on for all (`setRangeEffect(..., 'toggle')`, one undo step).
   `F3` / vim `.` re-apply (on, never off); only an effect turned on is

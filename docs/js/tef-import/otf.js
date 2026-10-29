@@ -76,7 +76,8 @@ export function instrumentToType(inst) {
 // TablEdit's per-note effects (fix-it A15) — a port of otf.py note_fx /
 // note_grace / is_dead_note; see there for the bytes and the evidence.
 const EFFECT_FX = { 4: 'choke', 5: 'brush', 6: 'harmonic', 7: 'artificial-harmonic',
-    8: 'muted', 9: 'tap', 10: 'vibrato', 11: 'tremolo', 13: 'bend-release', 14: 'roll' };
+    8: 'muted', 9: 'tap', 10: 'vibrato', 11: 'tremolo', 12: 'bend', 13: 'bend-release', 14: 'roll' };
+const BEND_EFFECTS = new Set([12, 13]);
 const ATTRIBUTE_FX = { 1: 'let-ring', 2: 'slap', 4: 'ghost', 7: 'staccato' };
 const SECOND_FX = { 3: 'roll', 5: 'brush', 6: 'harmonic', 7: 'artificial-harmonic',
     8: 'let-ring', 9: 'ghost' };
@@ -260,12 +261,14 @@ function articulationMaxGap(header) {
     return header.isV2 ? fdiv(header.v2_ts_size || 256, 2) : V3_UNITS_PER_WHOLE / 2;
 }
 
-/** Keys "track:position:string" of BEND/CHOKE notes. Port of
- *  bend_destination_keys. The tie bit means "connected to previous"; that's a
- *  tie only when the fret is unchanged. A fret change with no h/p/slide is a
- *  bend/choke → 'b', not a phantom tie. (Corpus-safe: 0 such notes exist in the
- *  corpus; only real bends like "Welcome to New York" m4 are affected. #184.) */
-export function bendDestinationKeys(noteEvents, articulations) {
+/** The note effect enum (V3 byte 6 / V2 effect1) & 0x0f; 0 if unreadable. */
+function effectCode(e) {
+    const r = e.raw;
+    if (!r || r.length < 6) return 0;
+    return r.length >= 12 ? r[6] & 0x0f : r[4] & 0x0f;
+}
+
+function notesByTrackString(noteEvents) {
     const byTrackString = new Map();
     for (const e of noteEvents) {
         if (!isMelody(e)) continue;
@@ -273,18 +276,49 @@ export function bendDestinationKeys(noteEvents, articulations) {
         if (!sf) continue;
         const key = e.track + ':' + sf[0];
         if (!byTrackString.has(key)) byTrackString.set(key, []);
-        byTrackString.get(key).push({ position: e.position, fret: sf[1], e });
+        byTrackString.get(key).push({ position: e.position, fret: sf[1], e, string: sf[0] });
     }
+    for (const notes of byTrackString.values()) notes.sort((a, b) => a.position - b.position);
+    return byTrackString;
+}
+
+/** Keys "track:position:string" of BEND TARGETS (G15d2). Port of
+ *  bend_target_keys: a note with effect 12 (bend) or 13 (bend-release) bends
+ *  into the NEXT note on the same string of its track, tied or not, possibly
+ *  in a later measure. There is no amount field (it is target.f - source.f),
+ *  and the target is never re-attacked. A bend with no later note, a target
+ *  that is already an h/p/slide destination, or one on the same fret is left
+ *  alone. */
+export function bendTargetKeys(noteEvents, articulations) {
     const keys = new Set();
-    for (const notes of byTrackString.values()) {
-        notes.sort((a, b) => a.position - b.position);
-        for (let i = 0; i < notes.length; i++) {
-            const { position, fret, e } = notes[i];
-            if (i === 0 || !isTiedNote(e)) continue;
+    for (const notes of notesByTrackString(noteEvents).values()) {
+        for (let i = 0; i + 1 < notes.length; i++) {
+            const { position, fret, e, string } = notes[i];
+            if (!BEND_EFFECTS.has(effectCode(e))) continue;
+            const next = notes[i + 1];
+            if (next.position === position || next.fret === fret) continue;
+            const key = e.track + ':' + next.position + ':' + string;
+            if (articulations.get(key) != null) continue;
+            keys.add(key);
+        }
+    }
+    return keys;
+}
+
+/** Keys of notes that carry the tie bit on a different fret than the previous
+ *  note on their string, with no h/p/slide owning the connection. Port of
+ *  fret_changed_tie_keys: not ties (they would go silent) and, since G15d2,
+ *  not bends either; they import as plain re-attacked notes. */
+export function fretChangedTieKeys(noteEvents, articulations) {
+    const keys = new Set();
+    for (const notes of notesByTrackString(noteEvents).values()) {
+        for (let i = 1; i < notes.length; i++) {
+            const { position, fret, e, string } = notes[i];
+            if (!isTiedNote(e)) continue;
             if (notes[i - 1].fret === fret) continue;              // same fret = tie
-            const string = decodeStringFret(e)[0];
-            if (articulations.get(e.track + ':' + position + ':' + string) != null) continue;
-            keys.add(e.track + ':' + position + ':' + string);
+            const key = e.track + ':' + position + ':' + string;
+            if (articulations.get(key) != null) continue;
+            keys.add(key);
         }
     }
     return keys;
@@ -433,8 +467,9 @@ export function tefToOtf(tef) {
     const articulations = isV2
         ? computeArticulations(tef.note_events, articulationMaxGap(header))
         : computeArticulationsV3(tef.note_events);
-    // Bend/choke notes (connect-bit + fret change + no h/p/slide) → 'b', not a tie.
-    const bendKeys = bendDestinationKeys(tef.note_events, articulations);
+    // Bend targets: the next note on the string after an effect-12/13 note → 'b'.
+    const bendKeys = bendTargetKeys(tef.note_events, articulations);
+    const retieKeys = fretChangedTieKeys(tef.note_events, articulations);
 
     // ---- group events by track + measure ----
     // V3 positions: continuous 64ths (30 ticks each), split by v3Locate.
@@ -509,11 +544,14 @@ export function tefToOtf(tef) {
                     // technique_from_event is a retired no-op (returns null).
                     if (isDeadNote(evt)) tech = 'x';
                     let tie = isTiedNote(evt);
-                    // ...unless it's a bend/choke (connect bit but a fret change,
-                    // no h/p/slide): render 'b', not a tie.
-                    if (bendKeys.has(evt.track + ':' + evt.position + ':' + string)) {
+                    // ...unless it's a bend target (the next note after an
+                    // effect-12/13 note): 'b', never a tie or a re-attack.
+                    const noteKey = evt.track + ':' + evt.position + ':' + string;
+                    if (bendKeys.has(noteKey)) {
                         tie = false;
                         tech = 'b';
+                    } else if (retieKeys.has(noteKey)) {
+                        tie = false;
                     }
                     // Fingering: a V2 note whose fret-byte flags are exactly
                     // 0x20 carries the same base-6 fingering byte in effect2
