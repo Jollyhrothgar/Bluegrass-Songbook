@@ -42,7 +42,8 @@ No other part of the editor carries a copy of these (the chord picker had all th
 - `editor.js::showEditorBand()` mounts it in the app's bottom band whenever `main.js` shows the editor
   view. Leaving the view clears the band, which detaches the element without destroying it, so
   listeners and state survive (`syncModeChrome` looks in the detached band too). The elements are
-  moved, never rebuilt: their ids hold.
+  moved, never rebuilt: their ids hold. It and `hideEditor()` also put Chords mode's picker back
+  and away (`api.setOnScreen`; "Leaving the editor view" in `CHORDS-MODE.md`).
 - On a phone (`split`) the picker sits on the band (`bottom: var(--bottomband-h)`); `visibleGap()` and
   the docked section bar (`placeDockedBar`) stop at it. The band is one row from 360px up (≤480px hides
   − / +; ≤400px tightens the switch); at 320px it wraps, and everything stacked on it reads

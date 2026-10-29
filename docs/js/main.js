@@ -642,6 +642,8 @@ function initViewSubscription() {
         // are unsubmitted edits, in which case ask first (and leave the
         // editor's state alone until the answer).
         if (view !== 'add-song') {
+            // the panel is hidden below, but Chords mode's picker sits on <body>
+            editorModule?.hideEditor();
             if (leftEditor && editorHasUnsavedChanges()) {
                 guardEditorExit();
             } else if (!unsavedPromptOpen()) {
