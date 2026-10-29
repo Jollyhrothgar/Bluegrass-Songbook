@@ -575,3 +575,8 @@ Path('works/{slug}/banjo.otf.json').write_text(otf.to_json())
 ./scripts/server
 # Navigate to http://localhost:8080/#work/{slug}
 ```
+
+## Repeat signs (0xb7 V3 / 0x5e V2), decoded G15d4
+
+Flag byte = V3 cell byte 2 (file byte 6) / V2 record byte 4, OR-ed per measure into OTF `measure_marks`.
+0x40 repeat start, 0x80 repeat end, bits 0-2 = ending 1-6 (7 = unspecified, draws nothing), `&0x38`: 0x08 end bar, 0x10 Da Signo, 0x18 Signo, 0x20 Al Coda, 0x28 Coda. Use `decode_mark_raw` / `decodeMarkRaw`. Not expanded for playback.

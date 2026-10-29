@@ -244,6 +244,11 @@ export function parseNoteEventsV2(data, h, instruments) {
     // Text components (fret byte 0x1d = TablEdit type 0x39): byte 3 indexes
     // the text table after the reading list. Resolved by parseV2.
     const textRefs = [];
+    // Reading-guide marks (fret byte 0x5e, G15d4): the flag byte is record
+    // byte 4, OR-ed into the measure holding the record. Only the 6-byte
+    // layout has a byte 4. Mirrors reader.py (_v2_measure_flags).
+    const measureFlags = {};
+    let markRecords = 0;
     const numStrings = h.v2_strings;
 
     const stride = v2ComponentStride(data, h);
@@ -260,7 +265,7 @@ export function parseNoteEventsV2(data, h, instruments) {
     // yields zero overruns. See reader.py for the full evidence.
     const durationMask = stride === 6 ? 0x1f : 0x0f;
 
-    if (tsSize === 0 || numStrings === 0) return { events, tsChanges, textRefs };
+    if (tsSize === 0 || numStrings === 0) return { events, tsChanges, textRefs, measureFlags, markRecords };
 
     let trackStringCounts = instruments.map(i => i.num_strings);
     if (trackStringCounts.length === 0) trackStringCounts = [numStrings];
@@ -324,6 +329,13 @@ export function parseNoteEventsV2(data, h, instruments) {
 
         if (tsMove && positionInMeasure >= tsMove) positionInMeasure -= tsMove;
 
+        if (fretByte === 0x5e && stride === 6) {
+            measureFlags[measure] = (measureFlags[measure] || 0) | rec[4];
+            markRecords += 1;
+            offset += stride;
+            continue;
+        }
+
         if (fretByte === 0x1d) {
             textRefs.push({ position: (measure * tsSize + positionInMeasure) * posScale,
                             stringRow: cumulativeString, index: rec[3] });
@@ -362,7 +374,7 @@ export function parseNoteEventsV2(data, h, instruments) {
         }
         offset += stride;
     }
-    return { events, tsChanges, textRefs };
+    return { events, tsChanges, textRefs, measureFlags, markRecords };
 }
 
 // V2 free-text table: u16 count at header 228, entries right after the
@@ -407,7 +419,7 @@ export function parseReadingListV2(data, h) {
 export function parseV2(data, name) {
     const header = readV2Header(data);
     const instruments = parseInstrumentsV2(data, header);
-    let { events: noteEvents, tsChanges, textRefs } = parseNoteEventsV2(data, header, instruments);
+    let { events: noteEvents, tsChanges, textRefs, measureFlags, markRecords } = parseNoteEventsV2(data, header, instruments);
     let timeSignatureChanges = tsChanges;
     const textTable = parseTextTableV2(data, header);
     const textEvents = textRefs
@@ -454,6 +466,8 @@ export function parseV2(data, name) {
         note_events: noteEvents,
         text_events: textEvents,
         reading_list: readingList,
+        measure_flags: measureFlags,
+        mark_records: markRecords,
         time_signature_changes: timeSignatureChanges,
         v3_global_ts: null,
     };
@@ -644,10 +658,13 @@ const V3_FIRST_SPECIAL_TYPE = 0x33;
 export function parseNoteEventsV3(data, instruments) {
     const events = [];
     const textRefs = [];   // 0x39 components: {position, stringRow, index}
+    // Reading-guide marks (type 0xb7, G15d4): {position, flags}; only cell
+    // byte 2 (file byte 6) is read. Resolved to measures by parseV3.
+    const markRefs = [];
     const startOffset = findComponentOffset(data);
     let globalTs = null;
     const tsChanges = [];
-    if (startOffset < 0) return { events, textRefs, tsChanges, globalTs, slotStarts: [], slotCounts: [] };
+    if (startOffset < 0) return { events, textRefs, markRefs, tsChanges, globalTs, slotStarts: [], slotCounts: [] };
 
     let totalStrings = instruments.reduce((s, i) => s + i.num_strings, 0);
     if (totalStrings === 0) totalStrings = 5;
@@ -700,6 +717,9 @@ export function parseNoteEventsV3(data, instruments) {
         const location = u32(record, 0);
         const componentType = record[4];
         if ((componentType & 0x3f) >= V3_FIRST_SPECIAL_TYPE) {
+            if (componentType === 0xb7) {
+                markRefs.push({ position: fdiv(location, VALUE_PER_POSITION), flags: record[6] });
+            }
             if (componentType === 0x39) {
                 textRefs.push({
                     position: fdiv(location, VALUE_PER_POSITION),
@@ -744,7 +764,7 @@ export function parseNoteEventsV3(data, instruments) {
         });
         offset += 12;
     }
-    return { events, textRefs, tsChanges, globalTs, slotStarts, slotCounts };
+    return { events, textRefs, markRefs, tsChanges, globalTs, slotStarts, slotCounts };
 }
 
 /** Continuous V3 position -> [0-based measure, 64ths into it] (TEFFile.v3_locate). */
@@ -782,7 +802,7 @@ export function parseV3(data, name) {
         break;
     }
     const instruments = parseTrackRecordsV3(data);   // name-pattern fallback not ported
-    const { events, textRefs, tsChanges, globalTs, slotStarts, slotCounts } = parseNoteEventsV3(data, instruments);
+    const { events, textRefs, markRefs, tsChanges, globalTs, slotStarts, slotCounts } = parseNoteEventsV3(data, instruments);
     const readingList = parseReadingListV3(data);
 
     // Resolve 0x39 text components against the text table; unresolvable
@@ -799,7 +819,7 @@ export function parseV3(data, name) {
         }
     }
 
-    return {
+    const tef = {
         path_stem: name,
         header,
         title,
@@ -807,11 +827,20 @@ export function parseV3(data, name) {
         note_events: events,
         text_events: textEvents,
         reading_list: readingList,
+        measure_flags: {},
+        mark_records: 0,
         time_signature_changes: tsChanges,
         v3_global_ts: globalTs,
         v3_measure_starts: slotStarts,
         v3_measure_lengths: slotCounts,
     };
+    // Reading-guide marks (0xb7): OR each into the measure holding it.
+    for (const ref of markRefs) {
+        const [index] = v3Locate(tef, ref.position);
+        tef.measure_flags[index] = (tef.measure_flags[index] || 0) | ref.flags;
+        tef.mark_records += 1;
+    }
+    return tef;
 }
 
 export function parseTefBytes(data, name) {

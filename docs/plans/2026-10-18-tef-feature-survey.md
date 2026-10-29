@@ -108,3 +108,5 @@ These are quick wins first, then features by reach. Every one needs TDD against 
 7. **Grace notes** (M): OTF field, renderer and player. 54 published tabs.
 8. **Chord diagrams** (M). 46 published tabs.
 9. **Dynamics → velocity** (S-M) and **tempo changes** (M, needs an OTF field).
+
+**Status 2026-10-29 (G15d4, repeat signs):** row 18 is imported by both importers into `measure_marks` (schema 1.2) and drawn: `|:`, `:|`, "n." brackets, end bars, Signo / D.S. / Coda / To Coda. Only cell byte 2 (V3 file byte 6; V2 record byte 4 of the 0x5e record) is read, OR-ed into the measure holding it. Bits: 0x40 start, 0x80 end, bits 0-2 = 1-6 ending number (7 = unspecified, drawn as nothing), `&0x38` 0x08 end bar, 0x10 Da Signo, 0x18 Signo, 0x20 Al Coda, 0x28 Coda. The player is unchanged (reading list only, as TablEdit). Marks move with inserted/deleted measures; they can't be created or edited yet. `_setSequence` now keeps reading-list names.

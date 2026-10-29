@@ -6,7 +6,7 @@
 import {
     decodeDurationCode, isMelody, decodeStringFret, TRIPLET_DURATION_CODES, V3_UNITS_PER_WHOLE, v3Locate,
 } from './reader.js';
-import { OTF_VERSION, DYN_LEVELS } from '../otf-editor/otf-validate.js';
+import { OTF_VERSION, DYN_LEVELS, decodeMarkRaw } from '../otf-editor/otf-validate.js';
 
 const fdiv = (a, b) => Math.floor(a / b);
 
@@ -592,6 +592,15 @@ export function tefToOtf(tef) {
         return { measure: index + 1, tick: offset * V3_TICKS_PER_UNIT, text: te.text };
     });
 
+    // Repeat signs (schema 1.2): one entry per marked measure, ascending; the
+    // flag byte is the OR of every mark in the measure, as TablEdit ORs them.
+    const measureMarks = Object.keys(tef.measure_flags || {}).map(Number)
+        .sort((a, b) => a - b)
+        .map(index => {
+            const raw = tef.measure_flags[index];
+            return { measure: index + 1, ...decodeMarkRaw(raw), raw };
+        });
+
     const doc = {
         otf_version: OTF_VERSION,
         metadata, timing: { ticks_per_beat: 480 },
@@ -601,6 +610,7 @@ export function tefToOtf(tef) {
             e.name ? { from_measure: e.from_measure, to_measure: e.to_measure, name: e.name }
                    : { from_measure: e.from_measure, to_measure: e.to_measure }
         )),
+        measure_marks: measureMarks,
         _tsChanges: tsChanges,
     };
 
@@ -688,5 +698,6 @@ export function toOtfDict(doc) {
     }
     if (doc.annotations && doc.annotations.length) result.annotations = doc.annotations;
     if (doc.reading_list && doc.reading_list.length) result.reading_list = doc.reading_list;
+    if (doc.measure_marks && doc.measure_marks.length) result.measure_marks = doc.measure_marks;
     return result;
 }
