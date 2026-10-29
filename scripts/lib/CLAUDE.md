@@ -126,8 +126,9 @@ workflow_run:
 `uv run python scripts/lib/build_works_index.py` (`--no-tags` skips tag
 enrichment). Read `scripts/lib/BUILD.md` before changing what it writes: the
 row shape and output files, song pages and the sitemap, versions and URLs,
-forked lead sheets, tab arrangements, version grouping, and curation. The
-rules that changes elsewhere most often break:
+forked lead sheets, tab arrangements, version grouping, curation, and which
+metadata directives a chart may use. The rules that changes elsewhere most
+often break:
 
 - `build_song_pages.py` fills `docs/index.html` by exact-string landmarks;
   editing the `<title>` and description lines there fails the build on
@@ -187,8 +188,3 @@ create. Do not write `work.yaml` with a bare `yaml.dump`.
 work?". Read `scripts/lib/process-pending.md` before changing either, the edge
 function `supabase/functions/_shared/pending-dispatch.ts`, or anything that
 writes `provenance.source_id`.
-
-## Metadata parsing
-
-The build accepts both `{meta: title Song Name}` and `{title: Song Name}`
-(also `artist`, and so on) and normalizes them.

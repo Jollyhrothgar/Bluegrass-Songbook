@@ -144,3 +144,8 @@ Suppression is two questions. Use the right one:
   build still publishes a work, you may add to it. Using the mint guard here
   once refused a real user's tab on `dark-hollow-1` (unrelated to the deleted
   `dark-hollow`) every hour, because the failed row was re-dispatched.
+
+## Metadata parsing
+
+The build accepts both `{meta: title Song Name}` and `{title: Song Name}`
+(also `artist`, and so on) and normalizes them.
