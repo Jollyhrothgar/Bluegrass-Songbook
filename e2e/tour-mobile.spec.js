@@ -37,6 +37,20 @@ test('phone: the button fits a song page band and the tour finds every control',
     expect(band.spill).toBeLessThanOrEqual(0);
 
     await btn.click();
+    // Search first: the box, then a line of the words typed in finds the song
+    await ringAround(page, '#search-input');
+    await cardClear(page, '#search-input');
+    await next(page);
+    await expect(page.locator('#search-input'))
+        .toHaveValue('ten long years since I left my home', { timeout: 20000 });
+    await ringAround(page, '#results .result-item');
+    await cardClear(page, '#results .result-item');
+    // no keyboard: the demo never focused the box
+    expect(await page.evaluate(() => document.activeElement?.id)).not.toBe('search-input');
+
+    await next(page);
+    await expect.poll(() => here(page)).toBe('/songs/old-home-place/');
+    await songReady(page);
     await ringAround(page, '#key-pill');
     await cardClear(page, '#key-pill');
     await next(page);

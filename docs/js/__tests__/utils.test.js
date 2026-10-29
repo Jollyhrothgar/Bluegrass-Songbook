@@ -124,9 +124,22 @@ describe('highlightMatch', () => {
         expect(result).toBe('<mark>one</mark> two');
     });
 
-    it('merges adjacent matches into single highlight', () => {
-        // Adjacent matches get merged into one continuous highlight
-        expect(highlightMatch('ab', 'a b')).toBe('<mark>ab</mark>');
+    it('merges terms that start the same word into one highlight', () => {
+        expect(highlightMatch('Blueberry Hill', 'blue blueberry')).toBe('<mark>Blueberry</mark> Hill');
+    });
+
+    it('marks words a term starts, never letters inside other words', () => {
+        // The tour's search demo: every term is in the lyrics, none in the writer line
+        expect(highlightMatch('Written by Dean Webb and Mitchell Jayne',
+            'ten long years since i left my home')).toBe('Written by Dean Webb and Mitchell Jayne');
+        expect(highlightMatch('Old Home Place', 'ten long years since i left my home'))
+            .toBe('Old <mark>Home</mark> Place');
+        expect(highlightMatch('Blue Moon of Kentucky', 'ken')).toBe('Blue Moon of <mark>Ken</mark>tucky');
+    });
+
+    it('marks a term of one or two letters only as a whole word', () => {
+        expect(highlightMatch('I Am a Pilgrim', 'i a')).toBe('<mark>I</mark> Am <mark>a</mark> Pilgrim');
+        expect(highlightMatch("It's Mighty Dark to Travel", 'i')).toBe("It's Mighty Dark to Travel");
     });
 
     // Regression test: searching for terms containing "m", "a", "r", or "k"
@@ -150,7 +163,7 @@ describe('highlightMatch', () => {
         }
 
         it('does not corrupt when searching for "m"', () => {
-            const result = highlightMatch('Sons of the Pioneers', 'on m');
+            const result = highlightMatch('Sons of the Pioneers', 'pioneer m');
             assertValidHighlight(result, 'Sons of the Pioneers');
             expect(result).toContain('<mark>');
         });
