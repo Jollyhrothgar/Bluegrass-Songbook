@@ -63,6 +63,12 @@ describe('resolveEditTrackId', () => {
     });
 });
 
+/** A File-menu entry by its label, as the editor's menu would run it. */
+const fileEntry = (editor, label) =>
+    editor.factoryOptions.fileActions.find(a => a.label === label);
+const fileLabels = (editor) =>
+    editor.factoryOptions.fileActions.map(a => (a.separator ? '—' : a.label));
+
 describe('createTabEditSession', () => {
     let mount, editor, onApply, onExit, session;
 
@@ -111,9 +117,9 @@ describe('createTabEditSession', () => {
         expect(mount.querySelector('.tab-edit-bar')).toBeNull(); // unmounted
     });
 
-    it('Cancel with no edits exits without applying', () => {
+    it('Cancel (File ▸ Cancel) with no edits exits without applying', () => {
         start();
-        mount.querySelector('.tab-edit-cancel').click();
+        fileEntry(editor, 'Cancel').run();
         expect(onApply).not.toHaveBeenCalled();
         expect(onExit).toHaveBeenCalledWith('cancel');
         expect(editor.destroy).toHaveBeenCalled();
@@ -187,9 +193,10 @@ describe('createTabEditSession', () => {
         expect(onExit).toHaveBeenCalledWith('cancel');
     });
 
-    it('Download delegates to the editor with the session filename', () => {
+    it('Download (File ▸ Download OTF) delegates to the editor with the session filename', () => {
         start({ filename: '27493-banjo' });
-        mount.querySelector('.tab-edit-download').click();
+        expect(mount.querySelector('.tab-edit-download')).toBeNull();   // not a bar button
+        fileEntry(editor, '⬇ Download OTF').run();
         expect(editor.download).toHaveBeenCalledWith('27493-banjo');
         expect(onExit).not.toHaveBeenCalled(); // stays in the session
     });
@@ -313,7 +320,7 @@ describe('createTabEditSession', () => {
             onApply, onExit, onSubmit: vi.fn(),
         });
         const buttons = [...mount.querySelectorAll('button')];
-        expect(buttons.length).toBeGreaterThan(4);   // actions + submit panel
+        expect(buttons.length).toBeGreaterThan(3);   // Submit, Done + submit panel
         for (const btn of buttons) {
             // A label is anything past a lone glyph — every button here has one.
             expect(btn.textContent.trim().length).toBeGreaterThan(1);
@@ -437,15 +444,60 @@ describe('createTabEditSession in the bottom band', () => {
         await vi.waitFor(() => expect(onSubmitted).toHaveBeenCalled());
     });
 
-    it('offers extra actions (Import .tef…) alongside the rest', () => {
+    it('offers extra actions (Import .tef…) in the File menu, not on the bar', () => {
         const onClick = vi.fn();
         const session = start({
-            extraActions: [{ className: 'tab-edit-import', label: '📂 Import .tef…', onClick }],
+            extraActions: [{ label: '📂 Import .tef…', onClick }],
         });
-        const btn = host.querySelector('.tab-edit-import');
-        expect(btn.textContent).toBe('📂 Import .tef…');
-        btn.click();
+        expect(host.querySelector('.tab-edit-import')).toBeNull();
+        expect([...host.querySelectorAll('button')].map(b => b.textContent))
+            .not.toContain('📂 Import .tef…');
+        fileEntry(editor, '📂 Import .tef…').run();
         expect(onClick).toHaveBeenCalledWith(session);
+    });
+
+    it('File order with Import .tef…: Open…, Import, Download, rule, Submit, Cancel', () => {
+        start({
+            onSubmit: async () => ({}), showDone: false, submitLabel: '🚀 Submit tab',
+            extraActions: [{ label: '📂 Import .tef…', onClick: () => {} }],
+        });
+        expect(fileLabels(editor)).toEqual([
+            '📂 Open…', '📂 Import .tef…', '⬇ Download OTF', '—', '🚀 Submit tab', 'Cancel']);
+    });
+
+    it('the bar holds Submit and Done only (G17); the rest is File menu', () => {
+        start({ onSubmit: vi.fn(), showDone: true });
+        const bar = host.querySelector('.tab-edit-bar');
+        const labels = [...bar.querySelectorAll('button')].map(b => b.className.split(' ')[0]);
+        expect(labels).toEqual(['tab-edit-submit', 'tab-edit-done']);
+    });
+
+    it('a new take (no Done) has Submit alone on the bar', () => {
+        start({ onSubmit: vi.fn(), showDone: false });
+        expect([...host.querySelectorAll('.tab-edit-bar button')]
+            .map(b => b.className.split(' ')[0])).toEqual(['tab-edit-submit']);
+    });
+
+    it('Cancel from the File menu asks inline, in the bar (never window.confirm)', () => {
+        const confirm = vi.spyOn(window, 'confirm');
+        const session = start({ onSubmit: vi.fn() });
+        editor.dirty = true;
+        fileEntry(editor, 'Cancel').run();
+        expect(confirm).not.toHaveBeenCalled();
+        const ask = host.querySelector('.tab-edit-bar .tab-edit-discard-confirm');
+        expect(ask).not.toBeNull();
+        expect(ask.textContent).toContain('Discard edits?');
+        expect(onExit).not.toHaveBeenCalled();
+        ask.querySelector('.tab-edit-discard-yes').click();
+        expect(onExit).toHaveBeenCalledWith('cancel');
+        confirm.mockRestore();
+        expect(session).toBeTruthy();
+    });
+
+    it('File ▸ Download OTF does not print Ctrl+S (it applies here, never downloads)', () => {
+        start();
+        const dl = fileEntry(editor, '⬇ Download OTF');
+        expect(dl.action).toBeUndefined();
     });
 
     it('replaceDocument swaps what is being edited (a .tef import)', () => {
@@ -459,7 +511,7 @@ describe('createTabEditSession in the bottom band', () => {
         const session = start({ onOpenFile });
         const labels = editor.factoryOptions.fileActions.map(a => a.label);
         expect(labels[0]).toBe('📂 Open…');
-        expect(labels).toEqual(['📂 Open…', '⬇ Download OTF', 'Cancel', '✓ Done']);
+        expect(fileLabels(editor)).toEqual(['📂 Open…', '⬇ Download OTF', '—', 'Cancel', '✓ Done']);
         editor.factoryOptions.fileActions[0].run();
         expect(onOpenFile).toHaveBeenCalledWith(session);
     });
@@ -467,7 +519,8 @@ describe('createTabEditSession in the bottom band', () => {
     it('File ▸ Open… is there in a new take (with Submit) and a correction alike', () => {
         start({ onSubmit: async () => ({}), showDone: false });
         const labels = editor.factoryOptions.fileActions.map(a => a.label);
-        expect(labels).toEqual(['📂 Open…', '🚀 Submit correction', '⬇ Download OTF', 'Cancel']);
+        expect(fileLabels(editor))
+            .toEqual(['📂 Open…', '⬇ Download OTF', '—', '🚀 Submit correction', 'Cancel']);
     });
 
     it('passes onChange through to the editor (drafts survive a reload)', () => {

@@ -55,9 +55,10 @@ describe('renderSectionsHtml', () => {
         expect(segs.filter((x) => x.cls.includes('cl-before-chord'))).toHaveLength(1);   // a chord with text, or the last chord, does not
     });
     it('renders a normal song to the exact screen DOM structure', () => {
+        // data-section-index is how the chord chart finds a lyric section again (G18b2)
         const html = renderSectionsHtml(sectionsOf(MINI_SONG), { key: 'G' });
         expect(html).toBe(`
-        <div class="song-section ">
+        <div class="song-section " data-section-index="0">
             <div class="section-label">Verse</div>
             <div class="section-content"><div class="song-line cl-line"><span class="cl-segment"><span class="cl-chord">G</span>Hello </span><span class="cl-segment"><span class="cl-chord">C</span>world</span></div></div>
         </div>

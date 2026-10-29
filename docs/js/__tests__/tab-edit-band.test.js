@@ -121,20 +121,15 @@ describe('bindBandToEditor', () => {
         expect(controls.querySelector('.tab-tempo-display')).not.toBeNull();
     });
 
-    it('sizes the EDITOR\'s renderer, not the read view\'s', () => {
+    // G17: the editor has one zoom (status bar − 100% +, View ▸ Zoom, { }).
+    // The band's Aa size was a second zoom for the same canvas, so edit mode
+    // takes it away rather than disabling it.
+    it('drops the reader\'s Aa size: the editor has its own zoom', () => {
+        expect(controls.querySelector('.tab-size-group')).not.toBeNull();
         band = bindBandToEditor(controls, editor);
-        controls.querySelector('.tab-size-up').click();
-        controls.querySelector('.tab-size-up').click();
-        expect(editor.scales).toEqual([1.1, 1.2]);
-        controls.querySelector('.tab-size-down').click();
-        expect(editor.scales.at(-1)).toBe(1.1);
-    });
-
-    it('clamps size the way the read view does', () => {
-        band = bindBandToEditor(controls, editor);
-        for (let i = 0; i < 12; i++) controls.querySelector('.tab-size-up').click();
-        expect(editor.scales.at(-1)).toBe(1.6);
-        expect(controls.querySelector('.tab-size-up').disabled).toBe(true);
+        expect(controls.querySelector('.tab-size-group')).toBeNull();
+        expect(controls.querySelector('.tab-size-up')).toBeNull();
+        expect(editor.scales).toEqual([]);
     });
 
     it('shows the live document tempo, and writes changes through the facade', () => {
