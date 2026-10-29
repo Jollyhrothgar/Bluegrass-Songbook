@@ -41,7 +41,9 @@ shadowing jsdom's, so unit tests pass on any Node.
 ## App shell (`shell.js`)
 
 - `setTopBar({back, title, actions, overflow, navActive})` declares a page's top
-  band; `setBottomBand(el)` mounts practice/playback controls (`null` hides);
+  band; `setBottomBand(el)` mounts practice/playback controls, and in the
+  lead-sheet editor the editor's own (`#editor-band`, via
+  `editor.js::showEditorBand`; see `lead-editor/CLAUDE.md`) (`null` hides);
   `pill(label, buildContent, opts)` is the labeled popover button all song-page
   controls use (built in `song-controls.js`; the Arrangement pill is in
   work-view.js). `setChromeAutoHide(true)` hides the top band while scrolling
@@ -168,6 +170,11 @@ boot-graph budget and names the modules that must stay out.
 
 ## Lead-sheet editor shell (`editor.js`)
 
+- Smart paste (`smart-paste.js`) turns a heading for a played part (`[Intro]`,
+  `[Interlude]`, `[Instrumental]`, `[Break]`, `[Solo]`, `[Outro]`, `[Tag]`,
+  `[Ending]`) into a real section, and a line of chords with no words under it
+  into a chords-only line (`[G]   [B7]    [C]`), so its chords transpose. Other
+  headings (`[Capo 2]`) stay `{comment: …}` notes.
 - Every reader of the song text goes through `getText()` / `setText()` (submit,
   copy, download, dirty check, sign-in return record, transpose).
   `#editor-content` is only a hidden fallback textarea.

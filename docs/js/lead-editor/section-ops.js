@@ -2,7 +2,7 @@
 // Each returns the new document text, or null for a no-op. Pure: positions
 // come from analyzeDocument, so they agree with what Visual mode draws.
 
-import { analyzeDocument } from './doc-model.js';
+import { analyzeDocument, lineModel } from './doc-model.js';
 import { wrapSelectionAsSection } from '../visual-editor/wrap-section.js';
 
 export const SECTION_TYPES = ['verse', 'chorus', 'bridge', 'intro', 'outro', 'tag'];
@@ -112,6 +112,43 @@ export function deleteSectionText(text, startLine) {
 /** Section the lines covered by a selection (floating bar). */
 export function markSelection(text, from, to, type) {
     return wrapSelectionAsSection(text, from, to, type);
+}
+
+// ---------------------------------------------------------------------------
+// Notes: `{comment: ...}` rows ("Interlude", "slow down here")
+// ---------------------------------------------------------------------------
+
+/** A note's text as it can stand in `{comment: ...}`: one line, no braces. */
+const noteText = (t) => String(t).replace(/[{}]/g, '').replace(/\s+/g, ' ').trim();
+
+/**
+ * Turn every lyric line the selection [from, to] touches into a note, `{comment: words}`, in place (inside a section
+ * it stays there). The line's chords are dropped: a note is words. Returns { text, selStart } or null when the
+ * selection holds no lyric line.
+ */
+export function noteSelection(text, from, to) {
+    const a = analyzeDocument(text);
+    const hit = a.lines.filter((l) => l.kind === 'lyric' && l.to >= from && l.from <= Math.max(from, to - 1));
+    const lines = text.split('\n');
+    let changed = false;
+    for (const l of hit) {
+        const words = noteText(lineModel(l.text).lyrics);
+        if (!words) continue;
+        lines[l.index] = `{comment: ${words}}`;
+        changed = true;
+    }
+    if (!changed) return null;
+    const out = lines.join('\n');
+    const last = hit[hit.length - 1].index;
+    return { text: out, selStart: lines.slice(0, last + 1).join('\n').length };
+}
+
+/** The note on the line [lineFrom, lineTo) with new words (empty words: no change; delete the note instead). */
+export function setNoteText(text, lineFrom, lineTo, words) {
+    const w = noteText(words);
+    if (!w) return null;
+    const next = `${text.slice(0, lineFrom)}{comment: ${w}}${text.slice(lineTo)}`;
+    return next === text ? null : next;
 }
 
 // ---------------------------------------------------------------------------

@@ -31,6 +31,30 @@ document, one undo history and one caret. Spec:
 `chord-motion.js` holds the cursor-motion tuning constants. `index.js` is the controller and sets
 `host.__lead` (a test hook). The other files are named for their job.
 
+## The controls band: one place, every device
+
+Decided by Mike on 2026-10-28. `index.html #editor-band` holds `Lyrics | Chords | ChordPro`
+(`#editor-mode-*`), ↶ ↷ (`#editor-undo/redo`), the key (`#editor-transpose-group`: −
+`#editor-key-select` +) and a Display pill (built with the shell's `pill()`; it takes
+`#editor-display-options`: A− / A+, Nashville, "Clean up pasted chord sheets" `#editor-auto-detect`).
+No other part of the editor carries a copy of these (the chord picker had all three until then).
+
+- `editor.js::showEditorBand()` mounts it in the app's bottom band whenever `main.js` shows the editor
+  view. Leaving the view clears the band, which detaches the element without destroying it, so
+  listeners and state survive (`syncModeChrome` looks in the detached band too). The elements are
+  moved, never rebuilt: their ids hold.
+- On a phone (`split`) the picker sits on the band (`bottom: var(--bottomband-h)`); `visibleGap()` and
+  the docked section bar (`placeDockedBar`) stop at it. The band is one row from 360px up (≤480px hides
+  − / +; ≤400px tightens the switch); at 320px it wraps, and everything stacked on it reads
+  `--bottomband-h`. e2e: "one place for the controls", "the editor's controls band"; helpers `BAND`,
+  `openDisplay` in `e2e/helpers/lead-editor.js`.
+- **The key: one per song.** Choosing a key in `#editor-key-select` moves the whole song
+  (`editor.js::songInKey`): every chord shifts by `doc-model.js::keyShift(from, to)`, the nearer way,
+  comparing keys through their relative majors (G → A is +2; G → Em is 0, only the name changes, which
+  is how a mis-detected mode is fixed), and `{key: to}` is written, one undo step. A song with no
+  chords gets only the declaration. The chord panel's `.chm-key` is a label ("Key of G", "Key: not
+  set"). `currentSongKey` feeds the panel, the band and the submitted `key`/`mode`.
+
 ## Rendering traps
 
 - **No vertical margin inside the editor.** CodeMirror's height map ignores margins, so a
@@ -60,7 +84,7 @@ document, one undo history and one caret. Spec:
   drop to the unprotected pieces (`doc-model.js::clipDeletion`). Exceptions: a section lying
   wholly inside the range goes too, `{start_of_*}` to `{end_of_*}` (`freedSectionLines`), and
   the blank lines it leaves are tidied as one change. `{meta:}`, `{key:}`, other header
-  directives and locked blocks (ABC / tab / grid) always stay. Edits through
+  directives and locked blocks (ABC / tab / grid) always stay; note rows are the exception (below). Edits through
   `editor.change` / `setText` (`Programmatic`) and undo/redo are exempt. Select-all + Delete
   leaves the metadata lines; select-all + paste puts the new text after them. For tests:
   replacing a song that has directives by select-all + typing keeps the directives (use
@@ -71,7 +95,22 @@ document, one undo history and one caret. Spec:
 - **Label menu and undo toast stay in the visible area** (`index.js::visibleArea()`: below the top band, above the
   bottom band or keyboard via `visualViewport`, and in Chords on a phone between the magnifier and the docked picker).
   `placeLabelMenu` opens below the label; if it won't fit it first scrolls the label up (before the menu listens for
-  pointerdown, since a finger scroll closes it), then scrolls inside itself. `.le-toast` takes no taps except its Undo.
+  pointerdown, since a finger scroll closes it), then scrolls inside itself. It runs again on `visualViewport` /
+  window resize while the menu is open (`onViewportForLabelMenu`): on an iPhone the keyboard closes after the label
+  is tapped. `.le-toast` takes no taps except its Undo.
+- **Note rows** (`{comment: …}` lines; smart paste makes them from headings like `[Capo 2]`) are locked blocks, but
+  unlike tab / ABC / grid blocks they can be removed from Lyrics: `freedSectionLines` frees one lying wholly inside
+  a deletion, and tapping one (`LockedWidget` → `hooks.onComment` → `index.js::openCommentMenu`) offers an Edit
+  field + Save (`setNoteText`) and Delete note. The section bar's **Note** turns every lyric line the selection
+  touches into a note in place (`section-ops.js::noteSelection`, chords dropped). Each is one undo step. The row's
+  line is read with `posAtDOM` at the tap: the widget is reused when text above it moves. e2e: "a note row".
+- **Paste anywhere.** ⌘V / Ctrl+V anywhere on the editor page pastes into the song (`onDocPaste`, a document
+  `paste` listener while the editor is on screen); a field that takes text itself (`input`, `textarea`, `select`,
+  `contenteditable`) keeps its own paste, and Chords mode switches to Lyrics first. A new empty song on a fine
+  pointer opens with the caret in the sheet (`focusIfEmpty`, via `editor.js::focusEmptyEditor`), never on a
+  phone (it would raise the keyboard). Clipboard text is normalized to `\n` first (`clipText`,
+  `convertPastedText`): CodeMirror drops `\r`, so a `\r\n` paste (an Ultimate Guitar copy) put the cursor past
+  the end and the whole paste was lost. e2e: `editor.spec.js` "Paste just works".
 - **Copy / cut / paste of whole sections.** Section markers are hidden widgets, so a browser copy of
   the lyrics lost them (a copied chorus pasted back as a verse). `handleCopy` (`index.js`) uses
   `section-ops.js::sectionsForClipboard`: a selection covering or crossing sections puts each touched
@@ -95,8 +134,9 @@ document, one undo history and one caret. Spec:
 - **Keys (desktop).** A capture `keydown` on `document` while in Chords mode (the locked chart
   cannot take focus): arrows, typed chord letters (ghost chip, 1.5s grace so `E` then `b7` is `Eb7`),
   Space/Tab, Delete/Backspace, Esc.
-- **The key.** The `select.chm-key` in the chord panel header writes `{key: X}`. `currentSongKey` feeds the sheet,
-  `#editor-key-select` and the submitted `key`/`mode`, so they cannot disagree.
+- **Hit spans** (`chords-touch.js::rowSpans`, used by `pickItem` and `pickStop`): a stop's span runs from its left
+  edge to the next stop's, and one narrower than `MIN_HIT_PX` (24) borrows up to half the shortfall from each
+  neighbour that stays at least that wide. Without it a one-space gap was a 5px target.
 
 ### Where the cursor stops
 

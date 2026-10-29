@@ -71,7 +71,7 @@ reproduced on bluegrassbook.com, **code** = confirmed by reading the source.
 | C1 | List store rework | L | — | not started |
 | C2 | Song index freshness | M | — | not started |
 | D1–D7 | Library building blocks | L | `feature/ui-state-inventory` (design) | list, song-in-a-list, library and stage-sheet designs approved on the canvas (2026-10-02); playlist mode (D6) still to draw; build blocked on C1 |
-| E1–E6 | Editors | M–L each | — | not started, except E3's copy/paste of whole sections: fixed 2026-10-27 with G14 (#312) |
+| E1–E6 | Editors | M–L each | — | not started, except in E3: copy/paste of whole sections fixed 2026-10-27 with G14 (#312); one place for the lead-sheet editor's controls (the bottom band) and one key per song, 2026-10-28 (`feature/one-key`, `feature/editor-control-band`) |
 | F1–F6 | Visual design | M–L | — | not started |
 | F7 | Tab view rework (Mike wants to lead this) | L | — | not started |
 | F8 | List view rework + a way to read notes (Mike wants to lead this) | L | `feature/ui-state-inventory` (design) | design approved on the canvas (2026-10-02); build after C1 |
@@ -1212,6 +1212,11 @@ on them.
   (`style.css:9170-9176`); no mid-word gaps where a chord chip is wider than
   its syllable ("go ne", "shi ning"); keyboard chord entry (arrows between
   slots, Up/Down between lines, Nashville digits); one undo stack.
+  - **Duplicated controls** (key, mode, undo/redo in the toolbar AND the chord
+    picker; two key menus that did different things) — **fixed 2026-10-28**:
+    one key per song, changed in one place and moving the whole song
+    (`feature/one-key`), and every editor control in the app's bottom band on
+    every device (`feature/editor-control-band`); see `docs/js/lead-editor/CLAUDE.md`.
   - **Copy/paste drops a section's type** — **fixed 2026-10-27**
     (#312, with G14): the root fix below, as
     `section-ops.js` `sectionsForClipboard` / `placeSectionPaste` and the
@@ -1497,7 +1502,8 @@ Follow-ups:
 
 - **Still over 200 lines:** `scripts/lib/CLAUDE.md` (324),
   `supabase/CLAUDE.md` (267), `docs/js/otf-editor/CLAUDE.md` (266),
-  `docs/js/CLAUDE.md` (209). What remains is rules and cross-file couplings;
+  `docs/js/lead-editor/CLAUDE.md` (244, after the six editor PRs of
+  2026-10-28 were carried in), `docs/js/CLAUDE.md` (218). What remains is rules and cross-file couplings;
   the next cut means deciding which of them an agent can live without.
   `.claude/skills/tab-debug/SKILL.md` is 562 lines (Anthropic suggests under
   500 for a skill); its reference sections could move to a sibling file.

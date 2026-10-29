@@ -132,7 +132,10 @@ load). Details:
 Shell ids come from `docs/js/shell.js` and `work-view.js`: `#app-topbar`,
 `.topbar-nav-link[data-nav=…]`, `#song-pill-row` with `#key-pill`, `#display-pill`,
 `#info-pill`, `#arrangement-pill` (only when a group has more than one version),
-`#export-pill`, `#part-tabs .part-tab`, `#app-bottomband` (tab and ABC playback),
+`#export-pill`, `#part-tabs .part-tab`, `#app-bottomband` (tab and ABC playback;
+in the lead-sheet editor `#editor-band`: `#editor-mode-*`, `#editor-undo/redo`,
+`#editor-key-select` and the Display pill, whose options exist only once it is
+open, so use `openDisplay(page)` from `helpers/lead-editor.js`),
 `#flag-modal` (feedback), `#song-nav-bar` (list context). `.pill-btn` opens a
 `.pill-popover`; one is open at a time. The top band auto-hides while scrolling a
 song (`body.chrome-hidden`).

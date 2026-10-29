@@ -60,6 +60,19 @@ function editorAlignChordsToLyrics(chordLine, lyricLine, chordPositions) {
     return result;
 }
 
+/** Section names that are played rather than sung, which a pasted sheet heads with `[Intro]`, `[Interlude]`, ... */
+const PLAYED_SECTION = /^(intro|outro|interlude|instrumental|break|solo|tag|ending)\b/;
+
+/**
+ * A line of chords with no words under it (an intro, a break, a turnaround) as a ChordPro chords-only line, spaced the
+ * way the lead-sheet editor writes one (lead-editor/chord-motion.js, AFTER_GAP 2): after each chord its own length + 2
+ * spaces, so every drawn gap is 2 wide. It used to become `{comment: G C D G}`, which the editor hid and transposing
+ * skipped. `[G]   [B7]    [C]   [G]`
+ */
+function chordOnlyLine(chords) {
+    return chords.map((c, i) => (i === 0 ? '' : ' '.repeat(chords[i - 1].length + 2)) + `[${c}]`).join('');
+}
+
 /**
  * Convert chord sheet format to ChordPro
  */
@@ -81,6 +94,7 @@ export function editorConvertToChordPro(text) {
         if (openSection === 'c') result.push('{eoc}');
         else if (openSection === 'v') result.push('{eov}');
         else if (openSection === 'b') result.push('{eob}');
+        else if (openSection) result.push(`{end_of_${openSection}}`);
         openSection = null;
     };
 
@@ -104,11 +118,16 @@ export function editorConvertToChordPro(text) {
             } else if (lowerName.includes('verse')) {
                 result.push(`{sov: ${sectionName}}`);
                 openSection = 'v';
-            } else if (lowerName.includes('instrumental') || lowerName.includes('break')) {
-                result.push(`{comment: ${sectionName}}`);
             } else if (lowerName.includes('bridge')) {
                 result.push('{sob}');
                 openSection = 'b';
+            } else if (PLAYED_SECTION.test(lowerName)) {
+                // [Intro] / [Interlude] / [Instrumental] / [Break] / [Solo] / [Outro] / [Tag]: a real section with
+                // that name (its chords below are a chord line), not a note: a note could not hold the chords, and
+                // the editor could neither show nor transpose them (Mike, 2026-10-28, UG Old Home Place)
+                const type = lowerName.match(PLAYED_SECTION)[1];
+                result.push(`{start_of_${type}: ${sectionName}}`);
+                openSection = type;
             } else {
                 result.push(`{comment: ${sectionName}}`);
             }
@@ -127,8 +146,7 @@ export function editorConvertToChordPro(text) {
             if (i + 1 < lines.length) {
                 const nextLine = lines[i + 1];
                 if (!nextLine.trim() || editorIsChordLine(nextLine) || editorIsSectionMarker(nextLine.trim())) {
-                    const chords = chordPositions.map(c => c.chord).join(' ');
-                    result.push(`{comment: ${chords}}`);
+                    result.push(chordOnlyLine(chordPositions.map(c => c.chord)));
                     i++;
                     continue;
                 }
@@ -137,8 +155,7 @@ export function editorConvertToChordPro(text) {
                 i += 2;
                 continue;
             } else {
-                const chords = chordPositions.map(c => c.chord).join(' ');
-                result.push(`{comment: ${chords}}`);
+                result.push(chordOnlyLine(chordPositions.map(c => c.chord)));
                 i++;
                 continue;
             }
@@ -444,7 +461,9 @@ export function looksLikeChordPro(text) {
  */
 export function convertPastedText(raw) {
     if (!raw || !raw.trim()) return { kind: 'plain' };
-    let text = raw;
+    // Windows / web clipboards hand over \r\n. The editor drops every \r on insert, so text measured with them is
+    // longer than what lands (Ultimate Guitar: 36 left over put the cursor past the end and the whole paste was lost)
+    let text = raw.replace(/\r\n?/g, '\n');
     let title = null;
     let artist = null;
     let cleaned = false;

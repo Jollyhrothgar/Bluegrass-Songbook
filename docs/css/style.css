@@ -9319,26 +9319,6 @@ body.dungeon-mode #search-stats {
 .metadata-summary.expanded::after { content: ' \25B4'; }
 
 /* ===== Two-pane editor: raw ChordPro (left) + interactive preview (right) ===== */
-.editor-toolbar {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.3rem 0 0.6rem;
-    flex-wrap: wrap;
-}
-.editor-toolbar-btn {
-    min-height: 40px;
-    min-width: 44px;
-    background: var(--bg-secondary);
-    color: var(--text);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md, 6px);
-    cursor: pointer;
-    font-size: var(--font-base, 0.9rem);
-}
-.editor-toolbar-btn:hover:not(:disabled) { border-color: var(--accent); }
-.editor-toolbar-btn:disabled { opacity: 0.45; cursor: default; }
-.editor-toolbar-spacer { flex: 1; }
 
 /* transpose/key fade in once the song has a chord; space stays reserved
    so the cards below never jump */
@@ -11034,7 +11014,7 @@ body.file-dragover {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 .chm-split .chm-body {
-    position: fixed; z-index: 60; left: 0; right: 0; bottom: 0; padding: 8px 10px 14px;
+    position: fixed; z-index: 60; left: 0; right: 0; bottom: var(--bottomband-h, 0px); padding: 8px 10px 14px;
     background: var(--bg-secondary); border-top: 1px solid var(--border);
     box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.12); max-height: 55vh; overflow-y: auto;
 }
@@ -11049,7 +11029,6 @@ body.file-dragover {
 }
 .chm-head { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; font-size: 14px; padding: 2px 4px 8px; }
 .chm-sp { flex: 1; }
-.chm-key { font: inherit; font-weight: 600; border: 0; background: none; color: var(--text); padding: 4px 2px; }
 .chm-head button { font: inherit; border: 0; background: none; cursor: pointer; color: var(--text-secondary); }
 .chm-head .chm-done { color: var(--accent); font-weight: 600; }
 .chm-head .chm-move, .chm-head .chm-remove { padding: 3px 9px; border-radius: 6px; box-shadow: inset 0 0 0 1px var(--border); color: var(--text); white-space: nowrap; }
@@ -11139,13 +11118,13 @@ body.file-dragover {
     position: absolute; left: 0.45em; bottom: -0.28em; width: calc(1.6em + 10px); height: 1.2em; box-sizing: border-box;
     outline: 2px solid var(--accent); outline-offset: 1px; border-radius: 3px; pointer-events: none;
 }
-/* the cursor between two words (a GAP stop): a slim bar over the chord row and the lyric row, no text outline */
-.le-cm .cl-gap-bar, .chm-strip .cl-gap-bar, .le-loupe .cl-gap-bar {
-    position: absolute; left: -2px; bottom: -0.3em; width: 4px; height: 2.9em; border-radius: 2px;
-    background: var(--accent); pointer-events: none;
+/* the cursor between two words (a GAP stop): the same box as the slot after the words, centred on the space - the dashed
+   pill on the chord row (while the gap holds no chord) and an outline on the lyric row. Absolute, no width (see above). */
+.le-cm .cl-slot-gap .cl-slot-pill, .chm-strip .cl-slot-gap .cl-slot-pill, .le-loupe .cl-slot-gap .cl-slot-pill { left: 0.5ch; transform: translateX(-50%); }
+.le-cm .cl-slot-gap .cl-slot-text, .chm-strip .cl-slot-gap .cl-slot-text, .le-loupe .cl-slot-gap .cl-slot-text {
+    position: absolute; left: 0.5ch; bottom: -0.28em; width: 1ch; height: 1.2em; transform: translateX(-50%);
+    box-sizing: border-box; outline: 2px solid var(--accent); outline-offset: -1px; border-radius: 3px; pointer-events: none;
 }
-.le-cm .cl-slot-gap .cl-slot-pill:empty, .chm-strip .cl-slot-gap .cl-slot-pill:empty, .le-loupe .cl-slot-gap .cl-slot-pill:empty { display: none; }
-.le-cm .cl-slot-gap .cl-slot-pill, .chm-strip .cl-slot-gap .cl-slot-pill, .le-loupe .cl-slot-gap .cl-slot-pill { left: 5px; }
 .chm-enter { font-weight: 600; white-space: nowrap; }
 /* an empty chord line the cursor is on: space is PADDING (the height map ignores margins) */
 .le-cm .cl-newline { margin: 0; padding-bottom: 0.25rem; display: flow-root; }
@@ -11226,31 +11205,71 @@ body.file-dragover {
 .chm-menu .chm-head .chm-func, .chm-menu .chm-head .chm-func-ph { flex: 0 1 auto; min-width: 0; white-space: nowrap; line-height: 1.5em; overflow: hidden; text-overflow: ellipsis; }
 /* Move / Remove come and go with the chord: the header's first row keeps its height either way */
 .chm-menu .chm-head { display: block; padding: 0 4px 6px; }
-/* the picker's two header rows have a FIXED height (the e2e compares them across cursor states) */
+/* the picker's header rows have a FIXED height (the e2e compares them across cursor states) */
 .chm-row { display: flex; align-items: center; gap: 8px; box-sizing: border-box; overflow: hidden; }
-.chm-row1 { height: 40px; }
 .chm-row2 { height: 40px; }
 .chm-row3 { height: 40px; gap: 4px; }
 .chm-row3 .chm-step, .chm-row3 .chm-mag { flex: none; width: 40px; height: 40px; min-height: 40px; padding: 0; border-radius: 8px; border: 0; background: var(--bg); color: var(--text); box-shadow: inset 0 0 0 1px var(--border); font-size: 16px; line-height: 1; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
-.chm-row3 .chm-hist { box-shadow: none; }
 .chm-row3 .chm-mag.on { background: var(--accent); color: var(--on-accent); box-shadow: none; }
 .editor-zoom { display: inline-flex; gap: 4px; }
 .chm-row .chm-sp { flex: 1 1 0; min-width: 0; }
-.chm-row .chm-key { flex: none; max-width: 40%; }
-.chm-modeswitch { flex: none; }
-.chm-modeswitch button { min-height: 32px; padding: 0 10px; font-size: 13px; }
-/* a 320px phone: the header's three rows must fit the picker's width (same heights, every control) */
+/* a 320px phone: the header's two rows must fit the picker's width (same heights, every control) */
 @media (max-width: 340px) {
     .chm-row { gap: 4px; }
-    .chm-modeswitch button { padding: 0 6px; font-size: 12px; }
-    .chm-row .chm-key { max-width: 34%; min-width: 0; padding: 4px 0; font-size: 13px; }
     .chm-row3 { gap: 2px; }
-    .chm-row3 .chm-step, .chm-row3 .chm-mag, .chm-head .chm-row3 .chm-hist { width: 34px; }
+    .chm-row3 .chm-step, .chm-row3 .chm-mag { width: 34px; }
 }
-.chm-head .chm-hist { flex: none; width: 40px; height: 40px; padding: 0; font-size: 22px; line-height: 1; color: var(--text); }
-.chm-head .chm-hist:disabled { opacity: 0.3; cursor: default; }
 .chm-row2 .chm-move, .chm-row2 .chm-remove { flex: none; }
 /* the decorations row is always there; with an empty box it is dimmed and inert */
 .chm-decos.idle { opacity: 0.38; pointer-events: none; }
 .chm-decos.idle .chm-deco { cursor: default; }
 .chm-head .chm-func .cg { font-weight: 600; }
+
+/* =====================================   THE EDITOR'S CONTROLS: one band, every device (index.html #editor-band, mounted in .app-bottomband by
+   editor.js showEditorBand). Mode | undo redo | key | Display. Wraps rather than overflowing a narrow phone; the
+   band's height is live (--bottomband-h), so the docked chord picker and the chart's padding follow it.
+   ============================================ */
+.app-bottomband .editor-band { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px 10px; width: 100%; }
+.editor-band-group { display: inline-flex; align-items: center; gap: 4px; }
+.editor-band-btn {
+    min-width: 36px; min-height: 36px; padding: 0 8px; border: 1px solid var(--border); border-radius: 8px;
+    background: var(--bg-secondary); color: var(--text); font: inherit; font-size: 1rem; cursor: pointer;
+}
+.editor-band-btn:hover:not(:disabled) { border-color: var(--accent); }
+.editor-band-btn:disabled { opacity: 0.4; cursor: default; }
+.editor-band .editor-key-select { min-height: 36px; font-size: 0.9rem; }
+.editor-band .le-modeswitch button { min-height: 36px; }
+/* the Display options wait inside the band, unseen, until the pill's first open moves them into its popover */
+.editor-band > .editor-display-options { display: none; }
+.editor-display-options { display: flex; flex-direction: column; gap: 10px; padding: 4px 2px; }
+.editor-display-options .editor-zoom { display: flex; align-items: center; gap: 6px; }
+.editor-display-options .editor-zoom > span { flex: 1; }
+.editor-display-options label { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.editor-display-pill .pill-btn { min-height: 36px; }
+/* a phone: one row at 390px. The semitone steps go (the key list does the same job), the switch tightens */
+@media (max-width: 480px) {
+    .editor-band .transpose-btn { display: none; }
+    .editor-band .le-modeswitch button { padding: 0.35rem 0.38rem; font-size: 0.82rem; }
+    .editor-band .editor-band-group { gap: 2px; }
+    .editor-band .editor-band-btn { min-width: 32px; padding: 0 4px; }
+    .editor-band .editor-key-select { min-width: 0; padding: 0 2px; }
+    .editor-band .editor-display-pill .pill-btn { padding: 0.3rem 0.5rem; }
+    .app-bottomband .editor-band { gap: 4px; }
+    .app-bottomband:has(.editor-band) { padding-left: 6px; padding-right: 6px; }
+}
+/* 360-400px (iPhone, SE, most Androids): still one row; at 320 it wraps to two, and the picker and chart follow --bottomband-h */
+@media (max-width: 400px) {
+    .editor-band .le-modeswitch button { padding: 0.3rem 0.25rem; font-size: 0.78rem; }
+    .editor-band .editor-band-btn { min-width: 28px; padding: 0 3px; }
+    .editor-band .editor-display-pill .pill-btn { padding: 0.3rem 0.4rem; }
+    /* the native arrow takes ~16px: a small drawn caret instead, so "Key: C#m" fits */
+    .editor-band .editor-key-select {
+        width: 76px; font-size: 0.82rem; -webkit-appearance: none; appearance: none; padding: 0 12px 0 4px;
+        background: var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5'%3E%3Cpath d='M0 0l4 5 4-5z' fill='%23888'/%3E%3C/svg%3E") no-repeat right 4px center;
+    }
+    .app-bottomband:has(.editor-band) { padding-left: 4px; padding-right: 4px; }
+}
+=======
+/* a {comment} row in Lyrics mode is tappable (its menu: Delete note), like a section label */
+.le-mode-lyrics .le-cm .cl-comment { cursor: pointer; }
+.le-mode-lyrics .le-cm .cl-comment:hover { color: var(--accent); }

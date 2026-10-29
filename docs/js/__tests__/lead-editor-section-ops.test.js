@@ -185,3 +185,32 @@ describe('where pasted sections land', () => {
         expect(paste(SONG, SONG.length, `\n\n${CLIP}\n\n`)).toBe(`${SONG}\n\n${CLIP}\n`);
     });
 });
+
+describe('notes: noteSelection / setNoteText', () => {
+    it('a selected lyric line becomes a note, words only, where it stands (inside its section)', async () => {
+        const { noteSelection } = await import('../lead-editor/section-ops.js');
+        const t = '{start_of_verse: Verse 1}\n[G]Hello there\nslow [C]down here\n[D]last line\n{end_of_verse}';
+        const from = t.indexOf('slow');
+        const res = noteSelection(t, from, from + 3);
+        expect(res.text).toBe('{start_of_verse: Verse 1}\n[G]Hello there\n{comment: slow down here}\n[D]last line\n{end_of_verse}');
+    });
+    it('every lyric line the selection touches becomes its own note; no lyric line, no change', async () => {
+        const { noteSelection } = await import('../lead-editor/section-ops.js');
+        const t = 'Interlude\nInstrumental break\n\nVerse words';
+        expect(noteSelection(t, 0, t.indexOf('break') + 2).text).toBe('{comment: Interlude}\n{comment: Instrumental break}\n\nVerse words');
+        expect(noteSelection('{key: G}\n\nwords', 0, 8)).toBeNull();
+    });
+    it('braces cannot break the directive', async () => {
+        const { noteSelection } = await import('../lead-editor/section-ops.js');
+        expect(noteSelection('a {weird} line', 0, 3).text).toBe('{comment: a weird line}');
+    });
+    it('setNoteText changes the words in place; empty words change nothing', async () => {
+        const { setNoteText } = await import('../lead-editor/section-ops.js');
+        const t = 'one\n{comment: Interlude}\ntwo';
+        const from = t.indexOf('{comment');
+        const to = t.indexOf('}', from) + 1;
+        expect(setNoteText(t, from, to, 'Banjo break')).toBe('one\n{comment: Banjo break}\ntwo');
+        expect(setNoteText(t, from, to, '   ')).toBeNull();
+        expect(setNoteText(t, from, to, 'Interlude')).toBeNull();
+    });
+});
