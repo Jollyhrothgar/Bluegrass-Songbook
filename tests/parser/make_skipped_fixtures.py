@@ -19,11 +19,11 @@ HERE = Path(__file__).parent / "fixtures"
 EXPECTED_V3 = {
     "tempo_changes": 2, "instrument_changes": 1, "scale_diagrams": 3,
     "accents": 4, "slurs": 5, "picking_marks": 6, "special_characters": 7,
-    "percussion": 8, "lyrics": 3, "tapping": 9, "vibrato": 10,
+    "percussion": 8, "free_text": 3, "tapping": 9, "vibrato": 10,
     "tremolo_bar": 11, "other": 12,
 }
-EXPECTED_V2 = {k: v for k, v in EXPECTED_V3.items() if k != "lyrics"}
-# V2 has no lyrics block we can count, and its specials are other bytes.
+EXPECTED_V2 = {k: v for k, v in EXPECTED_V3.items() if k != "free_text"}
+# V2 has no free-text block we can count, and its specials are other bytes.
 
 # (type byte, how many) — V3 whole-byte component types.
 V3_SPECIALS = [
@@ -43,7 +43,7 @@ V2_SPECIALS = [
     (0x1A, 2), (0x9D, 3), (0x7D, 1), (0xBD, 1), (0xBE, 1), (0xFD, 1),
     (0x1C, 2), (0x5E, 1),
 ]
-LYRICS = b"First line of a verse\r\nSecond line\r\n\r\nThird line\x00"
+FREE_TEXT = b"First line of notes\r\nSecond line\r\n\r\nThird line\x00"
 
 
 def v3() -> bytes:
@@ -63,11 +63,11 @@ def v3() -> bytes:
             i += 1
     assert i < (len(data) - start) // 12
     # End the component region the way TablEdit does (0xFFFFFFFF), then pad
-    # with 20 zero records so parse_note_events stops before the lyrics.
+    # with 20 zero records so parse_note_events stops before the free text.
     data += b"\xff\xff\xff\xff" + bytes(8) + bytes(12 * 20)
-    # lyrics: a new u16-length string at the end, pointed to from 0x4C
+    # free text: a new u16-length string at the end, pointed to from 0x4C
     struct.pack_into("<I", data, 0x4C, len(data))
-    data += struct.pack("<H", len(LYRICS)) + LYRICS
+    data += struct.pack("<H", len(FREE_TEXT)) + FREE_TEXT
     return bytes(data)
 
 

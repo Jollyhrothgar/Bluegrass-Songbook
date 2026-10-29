@@ -15,14 +15,14 @@ export const SKIPPED_LABELS = {
     special_characters: ['special character or musical sign', 'special characters and musical signs'],
     percussion: ['percussion mark', 'percussion marks'],
     chord_diagrams: ['chord diagram', 'chord diagrams'],
-    lyrics: ['line of lyrics', 'lines of lyrics'],
+    free_text: ['line of free text', 'lines of free text'],
     tapping: ['tapping amount', 'tapping amounts'],
     vibrato: ['vibrato amount', 'vibrato amounts'],
     tremolo_bar: ['tremolo-bar amount', 'tremolo-bar amounts'],
     other: ['other TablEdit marking', 'other TablEdit markings'],
 };
 
-/** "2 tempo changes, 1 line of lyrics" — '' when nothing was skipped. */
+/** "2 tempo changes, 1 line of free text" — '' when nothing was skipped. */
 export function skippedSummary(skipped) {
     if (!skipped || typeof skipped !== 'object') return '';
     // A key this build has no words for is still something that was not kept.
@@ -41,7 +41,7 @@ export function skippedSummary(skipped) {
     return parts.join(', ');
 }
 
-/** The full line: "Not kept from this file: 2 tempo changes, 1 line of lyrics." */
+/** The full line: "Not kept from this file: 2 tempo changes, 1 line of free text." */
 export function skippedLine(skipped) {
     const summary = skippedSummary(skipped);
     return summary ? `Not kept from this file: ${summary}.` : '';

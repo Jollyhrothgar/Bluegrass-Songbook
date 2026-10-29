@@ -1,7 +1,7 @@
 // G15e: opening a .tef says what the book did not keep from it.
 //
 // skipped_v3_all.tef is a real V3 tab with records overwritten so it holds,
-// among others, 2 tempo changes and 3 lines of lyrics
+// among others, 2 tempo changes and 3 lines of free text
 // (tests/parser/make_skipped_fixtures.py); it travels in golden.json beside
 // the bytes of every other fixture.
 import { test, expect } from './fixtures.js';
@@ -22,7 +22,7 @@ test.describe('Not kept from this file', () => {
         await expect(status).toContainText('Imported from a file');
         await expect(status.locator('.arr-skipped')).toContainText(
             'Not kept from this file: 2 tempo changes, 1 instrument (MIDI) change, 3 scale diagrams');
-        await expect(status.locator('.arr-skipped')).toContainText('3 lines of lyrics');
+        await expect(status.locator('.arr-skipped')).toContainText('3 lines of free text');
     });
 
     test('a .tef that lost nothing shows no such line', async ({ page }) => {

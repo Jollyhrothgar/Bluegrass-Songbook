@@ -157,7 +157,7 @@ Files in `downloads/` are `{id}.tef` (manual) or `{id}_tef.tef` (scraper).
 `tef_parser/skipped.py` (JS twin `docs/js/tef-import/skipped.js`) walks the
 raw component records and counts what OTF drops: tempo changes, MIDI changes,
 scale diagrams, accent/crescendo, slurs, picking marks with no note, special
-characters, percussion, lyrics lines (V3 string at pointer 0x4C), tapping /
+characters, percussion, free-text lines (V3 block at pointer 0x4C), tapping /
 vibrato / tremolo-bar amounts, and unknown component types (`other`). The
 result is `TEFFile.skipped` -> `OTFDocument.skipped` -> `x_source.skipped`
 (only when non-zero); `converter.py` and `spike/regen_parsed.py` carry it

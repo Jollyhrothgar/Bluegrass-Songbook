@@ -9,7 +9,7 @@ const u32 = (d, o) => (d[o] | (d[o + 1] << 8) | (d[o + 2] << 16) | (d[o + 3] << 
 export const SKIPPED_KEYS = [
     'tempo_changes', 'instrument_changes', 'scale_diagrams', 'accents',
     'slurs', 'picking_marks', 'special_characters', 'percussion',
-    'chord_diagrams', 'lyrics', 'tapping', 'vibrato', 'tremolo_bar', 'other',
+    'chord_diagrams', 'free_text', 'tapping', 'vibrato', 'tremolo_bar', 'other',
 ];
 
 const V3_COUNTED = new Map([
@@ -32,7 +32,7 @@ const V2_LAYOUT_CODES = new Set([0x0b, 0x0c, 0x0d, 0x0e, 0xc0, 0xd0]);
 
 const EFFECT_TAPPING = 9;
 const EFFECT_VIBRATO = 10;
-const V3_LYRICS_PTR = 0x4c;
+const V3_FREE_TEXT_PTR = 0x4c;
 
 const tremoloBar = (attr) => (attr >> 4) !== 3 && ((attr & 0x0f) === 5 || (attr & 0x0f) === 6);
 
@@ -41,9 +41,9 @@ function bump(counts, key) {
 }
 
 /** Non-blank lines of the u16-length string at pointer 0x4C. */
-function lyricLines(data) {
-    if (data.length < V3_LYRICS_PTR + 4) return 0;
-    const ptr = u32(data, V3_LYRICS_PTR);
+function freeTextLines(data) {
+    if (data.length < V3_FREE_TEXT_PTR + 4) return 0;
+    const ptr = u32(data, V3_FREE_TEXT_PTR);
     if (!(ptr > 0 && ptr <= data.length - 2)) return 0;
     const length = u16(data, ptr);
     let lines = 0;
@@ -120,8 +120,8 @@ export function countSkipped(data, header, stride = 6) {
         countV2(data, header, stride, counts);
     } else {
         countV3(data, counts);
-        const lyrics = lyricLines(data);
-        if (lyrics) counts.lyrics = lyrics;
+        const freeText = freeTextLines(data);
+        if (freeText) counts.free_text = freeText;
     }
     const out = {};
     for (const k of SKIPPED_KEYS) if (counts[k]) out[k] = counts[k];

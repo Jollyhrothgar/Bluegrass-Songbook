@@ -260,12 +260,12 @@ describe('adding a take to a song we have', () => {
         it('names it under "Imported from a file"', async () => {
             startAddTabMode({
                 instrument: 'banjo', fromFile: true,
-                otf: withSkipped({ tempo_changes: 2, lyrics: 1 }),
+                otf: withSkipped({ tempo_changes: 2, free_text: 1 }),
             });
             await untilEditor();
             expect(status().textContent).toContain('Imported from a file');
             expect(status().querySelector('.arr-skipped').textContent)
-                .toBe('Not kept from this file: 2 tempo changes, 1 line of lyrics.');
+                .toBe('Not kept from this file: 2 tempo changes, 1 line of free text.');
         });
 
         it('says nothing when the file lost nothing', async () => {

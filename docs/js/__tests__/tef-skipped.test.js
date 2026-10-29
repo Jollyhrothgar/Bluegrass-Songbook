@@ -17,9 +17,9 @@ const read = (name) => new Uint8Array(fs.readFileSync(path.join(FIXTURES, name))
 const EXPECTED_V3 = {
     tempo_changes: 2, instrument_changes: 1, scale_diagrams: 3, accents: 4,
     slurs: 5, picking_marks: 6, special_characters: 7, percussion: 8,
-    lyrics: 3, tapping: 9, vibrato: 10, tremolo_bar: 11, other: 12,
+    free_text: 3, tapping: 9, vibrato: 10, tremolo_bar: 11, other: 12,
 };
-const { lyrics: _lyrics, ...EXPECTED_V2 } = EXPECTED_V3;
+const { free_text: _freeText, ...EXPECTED_V2 } = EXPECTED_V3;
 
 describe('TEF import counts what OTF does not keep', () => {
     describe.each([['V3', 'skipped_v3_all.tef', EXPECTED_V3], ['V2', 'skipped_v2_all.tef', EXPECTED_V2]])(
@@ -60,14 +60,14 @@ describe('the words', () => {
     });
 
     it('says what a header should say', () => {
-        expect(skippedLine({ tempo_changes: 2, lyrics: 1 }))
-            .toBe('Not kept from this file: 2 tempo changes, 1 line of lyrics.');
+        expect(skippedLine({ tempo_changes: 2, free_text: 1 }))
+            .toBe('Not kept from this file: 2 tempo changes, 1 line of free text.');
         expect(skippedLine({ tempo_changes: 1 }))
             .toBe('Not kept from this file: 1 tempo change.');
     });
 
     it('is stable whatever order the keys arrive in', () => {
-        expect(skippedSummary({ lyrics: 1, tempo_changes: 2 })).toBe('2 tempo changes, 1 line of lyrics');
+        expect(skippedSummary({ free_text: 1, tempo_changes: 2 })).toBe('2 tempo changes, 1 line of free text');
     });
 
     it('says nothing when nothing was skipped', () => {

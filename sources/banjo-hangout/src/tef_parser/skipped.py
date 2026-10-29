@@ -17,7 +17,7 @@ Counted (TablEdit's component types, V3 type byte / V2 fret byte):
     picking_marks        0x3e stroke with no note      (V2 0x3e)
     special_characters   0xf5 special char, 0xb6 sign  (V2 0x5d 0xdd)
     percussion           0x78                          (V2 0xde)
-    lyrics               non-blank lines of the V3 u16-string at pointer 0x4C
+    free_text            non-blank lines of the V3 free-text block (u16-string at pointer 0x4C)
     tapping              notes with effect 9 (the kind is kept as fx, the amount is not)
     vibrato              notes with effect 10 (same)
     tremolo_bar          notes with attribute 5 or 6
@@ -39,7 +39,7 @@ import struct
 SKIPPED_KEYS = [
     "tempo_changes", "instrument_changes", "scale_diagrams", "accents",
     "slurs", "picking_marks", "special_characters", "percussion",
-    "chord_diagrams", "lyrics", "tapping", "vibrato", "tremolo_bar", "other",
+    "chord_diagrams", "free_text", "tapping", "vibrato", "tremolo_bar", "other",
 ]
 
 # V3 component type byte (compared whole: 0x35 chord vs 0x75 scale vs 0xf5
@@ -69,7 +69,7 @@ V2_LAYOUT_CODES = {0x0b, 0x0c, 0x0d, 0x0e, 0xc0, 0xd0}
 EFFECT_TAPPING, EFFECT_VIBRATO = 9, 10
 TREMOLO_BAR_ATTRIBUTES = (5, 6)
 
-V3_LYRICS_PTR = 0x4C
+V3_FREE_TEXT_PTR = 0x4C
 V3_POINTER_RANGE = range(0x40, 0xA0, 4)
 
 
@@ -77,11 +77,11 @@ def _tremolo_bar(attribute: int) -> bool:
     return attribute >> 4 != 3 and attribute & 0x0F in TREMOLO_BAR_ATTRIBUTES
 
 
-def _lyric_lines(data: bytes) -> int:
+def _free_text_lines(data: bytes) -> int:
     """Non-blank lines of the u16-length string at pointer 0x4C."""
-    if len(data) < V3_LYRICS_PTR + 4:
+    if len(data) < V3_FREE_TEXT_PTR + 4:
         return 0
-    ptr = struct.unpack_from("<I", data, V3_LYRICS_PTR)[0]
+    ptr = struct.unpack_from("<I", data, V3_FREE_TEXT_PTR)[0]
     if not 0 < ptr <= len(data) - 2:
         return 0
     length = struct.unpack_from("<H", data, ptr)[0]
@@ -163,7 +163,7 @@ def count_skipped(data: bytes, header, stride: int = 6) -> dict[str, int]:
         _count_v2(data, header, stride, counts)
     else:
         _count_v3(data, counts)
-        lyrics = _lyric_lines(data)
-        if lyrics:
-            counts["lyrics"] = lyrics
+        free_text = _free_text_lines(data)
+        if free_text:
+            counts["free_text"] = free_text
     return {k: counts[k] for k in SKIPPED_KEYS if counts.get(k)}
