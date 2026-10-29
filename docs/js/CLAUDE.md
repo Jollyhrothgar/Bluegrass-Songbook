@@ -558,7 +558,13 @@ part (`[Intro]`, `[Interlude]`, `[Instrumental]`, `[Break]`, `[Solo]`,
 line of chords with no words under it becomes a chords-only line spaced as the
 editor writes one (`[G]   [B7]    [C]   [G]`); both were `{comment: …}` notes
 until 2026-10-28, which hid the chords and kept them out of transposition.
-Other headings (`[Capo 2]`) are still notes.
+Other headings (`[Capo 2]`) are still notes. A chord typed a letter or two
+into a word (chord sites draw it as a box over the word: UG's `t[G]en`,
+`Wh[D]at`) goes to the start of that syllable, `[G]ten`, `[D]What`; deeper into
+a long syllable it backs up only to the start of the sound it is on
+(`Charlottes[G]ville`); a chord on a syllable start or past the words stays
+(`smart-paste.js::chordColumnToLyric`, 2026-10-28). Where the downbeat falls is
+not in the text: that stays the charter's call in Chords mode.
 
 Functions prefixed with `editor*`:
 - `enterEditMode(song)` - Open editor with existing song
