@@ -829,6 +829,51 @@ def normalize_slide_timing(doc: OTFDocument) -> None:
             measure.events.sort(key=lambda e: e.tick)
 
 
+def fold_slide_source_graces(otf_event: OTFEvent, pairs, all_events) -> None:
+    """Fold a slide source that the triplet retime stacked on its target.
+
+    A fiddle slide (3098 m40: f6 eighth-triplet then f7, same string) is two
+    records at different file positions; the triplet retime moves the source
+    onto the target's tick, so one event holds two notes on one string. That
+    is TablEdit's own timing (its MusicXML export stacks them too) but OTF
+    allows one note per string per event. The source becomes the target's
+    slide grace, `grace: {f: <source fret>, kind: 'slide'}`, the same shape a
+    TEF grace-slide imports as, and the standalone source note is dropped.
+    The target's "/" is dropped with it: it only meant "slid in from the
+    previous note", which the grace now says, and left on it would draw a
+    second slide from whatever note precedes the source.
+
+    Narrow on purpose: exactly two notes on the string, the earlier file
+    position being the target's immediate predecessor on that string, the
+    later one carrying a slide, neither already graced or tied. Anything else
+    stays as is (and `duplicate_string` still flags it).
+    """
+    by_string: dict[int, list] = {}
+    for evt, note in pairs:
+        by_string.setdefault(note.s, []).append((evt, note))
+    for string, group in by_string.items():
+        if len(group) != 2:
+            continue
+        (src_evt, src), (tgt_evt, tgt) = sorted(group, key=lambda g: g[0].position)
+        if src_evt.position == tgt_evt.position or tgt.tech not in ("/", "\\"):
+            continue
+        if src.grace or tgt.grace or src.tie or tgt.tie or src.f > 31:
+            continue
+        between = False
+        for e in all_events:
+            if e.track != tgt_evt.track or not (src_evt.position < e.position < tgt_evt.position):
+                continue
+            r = e.decode_string_fret()
+            if r and r[0] == string:
+                between = True
+                break
+        if between:
+            continue
+        tgt.grace = {"f": src.f, "kind": "slide"}
+        tgt.tech = None
+        otf_event.notes.remove(src)
+
+
 def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
     """Convert a parsed TEF file to OTF format.
 
@@ -1074,6 +1119,7 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
 
             for tick in sorted(events_by_tick.keys()):
                 otf_event = OTFEvent(tick=tick)
+                note_events_in = []   # (evt, note), for fold_slide_source_graces
 
                 for evt in events_by_tick[tick]:
                     # (An old "rhythm marker" skip dropped notes whose
@@ -1128,6 +1174,9 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
                                        fx=note_fx(evt) or None,
                                        grace=note_grace(evt))
                         otf_event.notes.append(note)
+                        note_events_in.append((evt, note))
+
+                fold_slide_source_graces(otf_event, note_events_in, tef.note_events)
 
                 if otf_event.notes:
                     otf_measure.events.append(otf_event)

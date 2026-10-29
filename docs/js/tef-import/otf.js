@@ -456,6 +456,7 @@ export function tefToOtf(tef) {
             const outEvents = [];
             for (const tick of [...byTick.keys()].sort((a, b) => a - b)) {
                 const notes = [];
+                const notePairs = [];   // [evt, note], for foldSlideSourceGraces
                 for (const evt of byTick.get(tick)) {
                     const r = decodeStringFret(evt);
                     if (!r) continue;
@@ -482,9 +483,12 @@ export function tefToOtf(tef) {
                         [finger, lh] = v3Fingering(evt);
                     }
                     const fx = noteFx(evt);
-                    notes.push({ s: string, f: fret, tech, finger, lh, tie, dur: evt.durationTicks,
-                        fx: fx.length ? fx : null, grace: noteGrace(evt) });
+                    const note = { s: string, f: fret, tech, finger, lh, tie, dur: evt.durationTicks,
+                        fx: fx.length ? fx : null, grace: noteGrace(evt) };
+                    notes.push(note);
+                    notePairs.push([evt, note]);
                 }
+                foldSlideSourceGraces(notes, notePairs, tef.note_events);
                 if (notes.length) outEvents.push({ tick, notes });
             }
             if (outEvents.length) outMeasures.push({ measure: measureNum, events: outEvents });
@@ -518,6 +522,35 @@ export function tefToOtf(tef) {
 
     normalizeSlideTiming(doc);
     return doc;
+}
+
+/** Fold a slide source that the triplet retime stacked on its target.
+ *  Port of fold_slide_source_graces() (see otf.py for the why): the earlier
+ *  note becomes the later note's `grace: {f, kind: 'slide'}` and is removed
+ *  from `notes` in place; the target's "/" goes with it. */
+function foldSlideSourceGraces(notes, pairs, allEvents) {
+    const byString = new Map();
+    for (const pair of pairs) {
+        const s = pair[1].s;
+        if (!byString.has(s)) byString.set(s, []);
+        byString.get(s).push(pair);
+    }
+    for (const [string, group] of byString) {
+        if (group.length !== 2) continue;
+        group.sort((a, b) => a[0].position - b[0].position);
+        const [[srcEvt, src], [tgtEvt, tgt]] = group;
+        if (srcEvt.position === tgtEvt.position || (tgt.tech !== '/' && tgt.tech !== '\\')) continue;
+        if (src.grace || tgt.grace || src.tie || tgt.tie || src.f > 31) continue;
+        const between = allEvents.some(e => {
+            if (e.track !== tgtEvt.track || !(srcEvt.position < e.position && e.position < tgtEvt.position)) return false;
+            const r = decodeStringFret(e);
+            return !!r && r[0] === string;
+        });
+        if (between) continue;
+        tgt.grace = { f: src.f, kind: 'slide' };
+        tgt.tech = null;
+        notes.splice(notes.indexOf(src), 1);
+    }
 }
 
 /** Serialize the working doc to the canonical OTF dict (== OTFDocument.to_dict()),
