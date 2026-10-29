@@ -535,6 +535,8 @@ export class OTFEditor {
                 gap: 4px;
             }
 
+            .status-item[hidden] { display: none; }
+
             .status-label {
                 color: var(--text-muted, #888);
             }
@@ -1858,6 +1860,11 @@ export class OTFEditor {
                 <span class="status-label">Fx:</span>
                 <span class="status-value" data-field="effects">—</span>
             </span>
+            <span class="status-item status-dyn" data-field="dynamic-item" hidden title="This note's dynamic, shown only when it differs from its track's (Note ▸ Dynamics)">
+                <span class="status-separator">|</span>
+                <span class="status-label">Dyn:</span>
+                <span class="status-value" data-field="dynamic"></span>
+            </span>
             <span class="status-separator">|</span>
             <span class="status-item" title="Placed text at the cursor — c to add or edit, Shift+C to delete">
                 <span class="status-label">Text:</span>
@@ -2012,6 +2019,16 @@ export class OTFEditor {
             const text = parts.join(' · ');
             fxEl.textContent = text.length > 40 ? text.slice(0, 39) + '…' : (text || '—');
             fxEl.title = text;
+        }
+
+        // Dynamics: only when the note differs from its track (a note with
+        // no `dyn` plays at the track's level, so there is nothing to say).
+        const dynItem = this.statusBar.querySelector('[data-field="dynamic-item"]');
+        if (dynItem) {
+            const own = this.state.getNoteAtCursor()?.dyn;
+            dynItem.hidden = !own;
+            const dynEl = dynItem.querySelector('[data-field="dynamic"]');
+            if (dynEl) dynEl.textContent = own || '';
         }
 
         // Placed text at the cursor — the editor's only way to know which

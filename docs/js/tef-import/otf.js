@@ -6,7 +6,7 @@
 import {
     decodeDurationCode, isMelody, decodeStringFret, TRIPLET_DURATION_CODES, V3_UNITS_PER_WHOLE, v3Locate,
 } from './reader.js';
-import { OTF_VERSION } from '../otf-editor/otf-validate.js';
+import { OTF_VERSION, DYN_LEVELS } from '../otf-editor/otf-validate.js';
 
 const fdiv = (a, b) => Math.floor(a / b);
 
@@ -136,6 +136,38 @@ export function isTiedNote(e) {
         return ((r[5] >> 5) & 0x07) === 7;                        // V3: same byte, same rule
     }
     return false;
+}
+
+/** The note's dynamic code 0-6 (0 = fff, the LOUDEST, .. 6 = pp), or null for a
+ *  tied note (code 7) or a record with no duration byte. Bits 5-7 of V3 cell
+ *  byte 5 / V2 byte 3 (the 4-byte V2 variant keeps it in byte 3 too).
+ *  Velocity = 127 - 16 * code (TablEdit's Rich-MIDI export). Port of
+ *  dynamic_code(). */
+export function dynamicCode(e) {
+    const r = e.raw;
+    if (!r || r.length < 4) return null;
+    const code = ((r.length >= 12 ? r[5] : r[3]) >> 5) & 0x07;
+    return code === 7 ? null : code;
+}
+
+/** Collapse per-note levels (note.dyn on every non-tie note) into
+ *  tracks[].dyn (most common; the louder one on a tie) plus the exceptions.
+ *  Port of assign_dynamics(). */
+function assignDynamics(doc) {
+    for (const track of doc.tracks) {
+        const notes = [];
+        for (const m of doc.notation[track.id] || [])
+            for (const e of m.events) for (const n of e.notes) if (n.dyn) notes.push(n);
+        if (!notes.length) continue;
+        const counts = new Map();
+        for (const n of notes) counts.set(n.dyn, (counts.get(n.dyn) || 0) + 1);
+        let best = null;
+        for (const lv of DYN_LEVELS) {       // loudest first, so ties go loud
+            if (counts.has(lv) && (best === null || counts.get(lv) > counts.get(best))) best = lv;
+        }
+        track.dyn = best;
+        for (const n of notes) if (n.dyn === best) n.dyn = null;
+    }
 }
 
 /** V2 techniques: effect1 (byte 4) is an enum on the SOURCE note, attributed to
@@ -495,8 +527,10 @@ export function tefToOtf(tef) {
                         [finger, lh] = v3Fingering(evt);
                     }
                     const fx = noteFx(evt);
+                    const dc = tie ? null : dynamicCode(evt);
                     const note = { s: string, f: fret, tech, finger, lh, tie, dur: evt.durationTicks,
-                        fx: fx.length ? fx : null, grace: noteGrace(evt) };
+                        fx: fx.length ? fx : null, grace: noteGrace(evt),
+                        dyn: dc === null ? null : DYN_LEVELS[dc] };
                     notes.push(note);
                     notePairs.push([evt, note]);
                 }
@@ -533,6 +567,7 @@ export function tefToOtf(tef) {
     };
 
     normalizeSlideTiming(doc);
+    assignDynamics(doc);
     return doc;
 }
 
@@ -588,6 +623,7 @@ export function toOtfDict(doc) {
             };
             // Emitted only for drum tracks, so pitched tabs stay byte-identical
             if (t.percussion) { out.percussion = true; out.lines = t.lines; }
+            if (t.dyn) out.dyn = t.dyn;
             return out;
         }),
         notation: {},
@@ -606,6 +642,7 @@ export function toOtfDict(doc) {
                     if (n.tie) out.tie = true;
                     if (n.fx) out.fx = [...n.fx];
                     if (n.grace) out.grace = { ...n.grace };
+                    if (n.dyn) out.dyn = n.dyn;
                     return out;
                 }),
             })),

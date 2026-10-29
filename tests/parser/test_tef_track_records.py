@@ -189,7 +189,7 @@ def test_percussion_otf_track_is_untuned_and_typed():
     assert len(perc) == 1
     assert perc[0] == {
         "id": "percussion", "instrument": "percussion", "tuning": [],
-        "capo": 0, "role": "percussion", "percussion": True, "lines": 8,
+        "capo": 0, "role": "percussion", "dyn": "f", "percussion": True, "lines": 8,
     }
     # Melodic tracks are untouched and carry no percussion keys
     assert [t["id"] for t in tracks] == [

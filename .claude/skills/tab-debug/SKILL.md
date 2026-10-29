@@ -206,8 +206,14 @@ byte patterns. The census that counts them is
   11 tremolo, 12 bend, 13 bend and release, 14 roll, 15 dead note. Bits 4-5
   are the voice (0x20 upper, 0x30 lower). Bits 6-7 are the enharmonic
   spelling.
-- **Dynamics** (byte 5 / V2 byte 3, bits 5-7): ppp, pp, p, mp, mf, f, ff,
-  and 7 = tie.
+- **Dynamics** (byte 5 / V2 byte 3, bits 5-7; the 4-byte V2 variant uses
+  byte 3 too). **Code 0 is the loudest**: 0 fff, 1 ff, 2 f, 3 mf, 4 mp,
+  5 p, 6 pp, 7 = tie. MIDI velocity is `127 - 16 * code` (f = 95), measured
+  from TablEdit's Rich-MIDI export; the palette handler stores `0x27 - tag`.
+  There is no ppp. Code 2 (f) is the most common level, not p. OTF:
+  `tracks[].dyn` is the track's most common non-tie level, `note.dyn` only
+  where it differs (`dynamic_code` / `assign_dynamics` in `otf.py`, the same
+  names in camelCase in `otf.js`).
 - **Note attribute** (V3 byte 8; V2 effect2 under fret flag 0x80): the low
   nibble is 1 ringing, 2 slap, 3 rasgueado, 4 ghost, 5/6 tremolo bar,
   7 staccato, 8/9 fade. The high nibble is a second effect (1 h, 2 p,

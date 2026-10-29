@@ -353,6 +353,28 @@ export function graceLeadSeconds(secondsPerTick, ticksPerBeat) {
     return Math.min(ticksPerBeat / 8 * secondsPerTick, GRACE_MAX_LEAD_SEC);
 }
 
+/** Dynamic levels, loudest first (TablEdit code 0 = fff .. 6 = pp). Same list as
+ *  DYN_LEVELS in otf-editor/otf-validate.js, repeated so the player keeps no
+ *  editor dependency. */
+const DYN_ORDER = ['fff', 'ff', 'f', 'mf', 'mp', 'p', 'pp'];
+export const DEFAULT_DYN = 'f';
+
+/** TablEdit's MIDI velocity for a level: 127 - 16 * code (f = 95). Unknown or
+ *  missing levels count as the default, f. */
+export function dynamicVelocity(level) {
+    const code = DYN_ORDER.indexOf(level);
+    return 127 - 16 * (code < 0 ? DYN_ORDER.indexOf(DEFAULT_DYN) : code);
+}
+
+/** Gain for a note relative to its track's level. A note with no `dyn` plays at
+ *  its track's level, so it is exactly 1: a track at one level sounds as it
+ *  always did, and the mixer volume stays the track's loudness. Only a note
+ *  that differs from the track is scaled, by the velocity ratio. Pure. */
+export function dynamicGain(noteDyn, trackDyn) {
+    if (!noteDyn) return 1;
+    return dynamicVelocity(noteDyn) / dynamicVelocity(trackDyn);
+}
+
 /**
  * Apply the duration/volume fx to a note whose ring-model or explicit
  * duration is already computed. Order matters and is deliberate: let-ring
@@ -907,7 +929,7 @@ export class TabPlayer {
                             // Editor-entered notes carry explicit durations
                             explicitEndTick: note.dur ? absTick + note.dur : undefined,
                             instrumentData,
-                            volume: mix.volume,
+                            volume: mix.volume * dynamicGain(note.dyn, track.dyn),
                             sustain: mix.sustain,
                             decay: mix.decay,
                             trackId: track.id,

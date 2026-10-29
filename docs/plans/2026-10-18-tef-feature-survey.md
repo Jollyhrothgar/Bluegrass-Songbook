@@ -43,7 +43,7 @@ These are ranked by published tabs. "Notes" means records carrying the feature. 
 | 10 | **Staccato** (attribute 7) | 3,517 | 52 | 35 | no | V2 effect2 = 0x07 under fret flag 0x80. Under flag 0x00, 0x07 is the unexplained case `_parse_v2` drops (see corrections). |
 | 11 | **Ghost notes** (attribute 4, plus 5 as a second effect) | 893 | 27 | 23 | no | |
 | 12 | **Bend; bend and release**, effects 12/13 | 152 / 33 | 14 / 9 | 12 / 6 | partly: `b` on the target note | The bend amount is not imported. Bend-and-release is not distinguished. |
-| 13 | **Dynamics**, 8 levels per note (cell byte 5, bits 5-7) | every note | 235 vary it | 200 vary it | no | The player plays every note at one volume. Most notes are level `p` (270,587); 235 files mix levels, e.g. accented melody over quieter backup. |
+| 13 | **Dynamics**, 7 levels per note plus the tie code (cell byte 5, bits 5-7) | every note | 235 vary it | 200 vary it | yes (G15d1): `tracks[].dyn`, `note.dyn`, played as velocity | Code 0 is the loudest: 0 fff, 1 ff, 2 f, 3 mf, 4 mp, 5 p, 6 pp, 7 tie. Code 2 (**f**) is the most common level, not `p` (an earlier version of this row had the names reversed). 235 files mix levels, e.g. accented melody over quieter backup. |
 | 14 | **Harmonics**, natural/artificial (effects 6/7 and as second effects) | 81 | 16 | 13 | no | |
 | 15 | **Tempo changes** (type 0xfe) | 58 | 21 | 17 | no | OTF has one tempo per document. 19 of the files are V2 files whose byte equals the V3 type byte; the V2 mapping is not in the upgrade table, so it is less certain. |
 | 16 | **Tremolo; muted** (effects 11/8) | 441 / 368 | 6 / 9 | 6 / 6 | no | |

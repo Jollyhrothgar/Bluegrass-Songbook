@@ -5,6 +5,7 @@ Copied from TablEdit_Reverse project.
 
 import json
 import sys
+from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
@@ -87,6 +88,7 @@ class OTFNote:
     tie: bool = False          # True if tied to previous note (no re-articulation)
     fx: list[str] | None = None    # TablEdit per-note effects (FX_ORDER)
     grace: dict | None = None      # {"f": fret, "kind"?: GRACE_KINDS}
+    dyn: str | None = None         # DYN_LEVELS entry, only when != the track's
 
 
 @dataclass
@@ -117,6 +119,7 @@ class OTFTrack:
     # `lines` carries the staff-line count `tuning` would otherwise imply.
     percussion: bool = False
     lines: int = 0
+    dyn: str | None = None   # most common note level (DYN_LEVELS); None = f
 
 
 @dataclass
@@ -200,6 +203,8 @@ class OTFDocument:
                 "capo": track.capo,
                 "role": track.role,
             }
+            if track.dyn:
+                t["dyn"] = track.dyn
             # Emitted only for drum tracks, so pitched tabs stay byte-identical
             if track.percussion:
                 t["percussion"] = True
@@ -229,6 +234,8 @@ class OTFDocument:
                             n["fx"] = list(note.fx)
                         if note.grace:
                             n["grace"] = dict(note.grace)
+                        if note.dyn:
+                            n["dyn"] = note.dyn
                         e["notes"].append(n)
                     m["events"].append(e)
                 result["notation"][track_id].append(m)
@@ -341,8 +348,8 @@ def is_tied_note(event: TEFNoteEvent) -> bool:
     """Check if this note is tied to the previous note (same pitch, extends duration).
 
     V2 byte3 layout (oracle-derived): bits 0-4 duration code, bits 5-7
-    dynamic. Dynamics 0-5 are real volume levels (6 unused in the
-    corpus); dynamic 7 is the TIE sentinel. The old `byte3 & 0x80` rule
+    dynamic. Dynamics 0-6 are real volume levels (0 fff loudest .. 6 pp,
+    see dynamic_code); dynamic 7 is the TIE sentinel. The old `byte3 & 0x80` rule
     also caught dynamics 4 and 5 (0x80-0xBF) and silently dropped those
     notes as phantom ties (21690 m4, 21999 m10, 22446, 23439 — their
     oracle exports show plain notes, while every true XML tie in the
@@ -360,6 +367,42 @@ def is_tied_note(event: TEFNoteEvent) -> bool:
         # notes in 12 files (11721's guitar beat-3 chords are 0x86).
         return (event.raw_data[5] >> 5) & 0x07 == 7
     return False
+
+
+def dynamic_code(event: TEFNoteEvent) -> int | None:
+    """The note's dynamic code 0-6 (0 = fff, the LOUDEST, .. 6 = pp), or None
+    for a tied note (code 7) or a record with no duration byte.
+
+    Bits 5-7 of V3 cell byte 5 / V2 byte 3 (the 4-byte V2 sub-variant keeps
+    the dynamic in byte 3 too). Measured from TablEdit's Rich-MIDI export:
+    velocity = 127 - 16 * code, so f (code 2) is 95. Code 2 is the most
+    common level in most files (66 of 88 V3 files). DYN_LEVELS[code] is the
+    OTF name; there is no ppp."""
+    raw = event.raw_data
+    if not raw or len(raw) < 4:
+        return None
+    byte = raw[5] if len(raw) >= 12 else raw[3]
+    code = (byte >> 5) & 0x07
+    return None if code == 7 else code
+
+
+def assign_dynamics(doc: OTFDocument) -> None:
+    """Collapse per-note levels into tracks[].dyn plus exceptions.
+
+    On entry every non-tie note carries its own level in note.dyn; on exit
+    tracks[].dyn is the most common level (the louder one on a tie) and
+    note.dyn survives only where it differs. Tied notes never had one."""
+    for track in doc.tracks:
+        notes = [n for m in doc.notation.get(track.id, [])
+                 for e in m.events for n in e.notes if n.dyn]
+        if not notes:
+            continue
+        counts = Counter(n.dyn for n in notes)
+        best = min(counts, key=lambda lv: (-counts[lv], DYN_LEVELS.index(lv)))
+        track.dyn = best
+        for n in notes:
+            if n.dyn == best:
+                n.dyn = None
 
 
 # TablEdit's per-note effects, in its own vocabulary (fix-it A15). The note
@@ -1187,6 +1230,10 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
                                        lh=lh, tie=tie, dur=evt.duration_ticks,
                                        fx=note_fx(evt) or None,
                                        grace=note_grace(evt))
+                        if not tie:
+                            code = dynamic_code(evt)
+                            if code is not None:
+                                note.dyn = DYN_LEVELS[code]
                         otf_event.notes.append(note)
                         note_events_in.append((evt, note))
 
@@ -1201,6 +1248,7 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
     # Store slides as a note + articulation, not TablEdit's triplet-compress
     # timing hack (see normalize_slide_timing / tab-debug SKILL).
     normalize_slide_timing(doc)
+    assign_dynamics(doc)
 
     # Placed free-text annotations (V3 0x39 components: "Long Choke",
     # chord letters, section banners). Positions share the note grid, so

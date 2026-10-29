@@ -705,6 +705,20 @@ export class EditorState {
     }
 
     /**
+     * Set a dynamic (fff..pp) on the selection or the note at the cursor;
+     * null is "Track default". Tied notes are left alone.
+     * @returns {boolean} false when nothing changed
+     */
+    setDynamic(level) {
+        const range = this.selection ? this.selectionRange() : null;
+        if (range) {
+            return this.facade.setRangeDynamic(range.startAbs, range.endAbs,
+                level, { strings: range.strings, trackId: this.trackId }) !== false;
+        }
+        return this.facade.setDynamic(this._cursorPos(), level, this.trackId) !== false;
+    }
+
+    /**
      * Set (or clear with null) the fretting-hand digit — 0..4, drawn
      * circled under the pluck letter.
      * @returns {boolean} false when nothing changed

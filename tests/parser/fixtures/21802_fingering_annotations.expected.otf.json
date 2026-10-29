@@ -48,7 +48,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["E4", "C4", "G3", "C3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {

@@ -149,6 +149,17 @@ byte-identical.
   `transact`. `_placeNote` replaces whatever is on the string, so fingering
   must be re-applied in that same step or `u` costs two presses.
 
+**Dynamics.** `tracks[].dyn` is the track's level (absent = `f`), `note.dyn`
+(`fff ff f mf mp p pp`, loudest first) only where the note differs from it, and
+a tied note carries none. Note ▸ Dynamics is menu-only (`dynamic.*` actions);
+`facade.setDynamic` / `setRangeDynamic` store nothing for the track's own level
+and refuse tied notes (tying a note drops its `dyn`). A note with no `dyn`
+takes its track's level, so `copyRange` records `trackDyn` and `paste` writes
+an explicit `dyn` when the target track is at another level (`_carryDynamic`).
+The player plays `127 - 16 * code`, normalised to the track's level
+(`dynamicGain` in `tab-player.js`). The status bar's `Dyn:` shows only when
+the note differs from its track.
+
 **Effects and grace.** `note.fx` is a set stored in `FX_ORDER`, omitted when
 empty (never `[]`); `note.grace` is `{f: 0..24, kind?}`. `tech` keeps the
 transitions (`h p / \ x`, and `b` = bend target); everything else is `fx`.
