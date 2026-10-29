@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Black Mountain Rag",
     "time_signature": "4/4",
@@ -18,7 +18,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -380,6 +381,31 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 0, "text": "A Part"},
+    {"measure": 2, "tick": 0, "text": "G"},
+    {"measure": 5, "tick": 960, "text": "G"},
+    {"measure": 5, "tick": 0, "text": "D"},
+    {"measure": 6, "tick": 960, "text": "G"},
+    {"measure": 6, "tick": 0, "text": "D"},
+    {"measure": 7, "tick": 0, "text": "B Part"},
+    {"measure": 7, "tick": 0, "text": "G"},
+    {"measure": 10, "tick": 0, "text": "D"},
+    {"measure": 10, "tick": 960, "text": "G"},
+    {"measure": 11, "tick": 0, "text": "C Part"},
+    {"measure": 11, "tick": 0, "text": "G"},
+    {"measure": 13, "tick": 0, "text": "C"},
+    {"measure": 15, "tick": 0, "text": "G"},
+    {"measure": 17, "tick": 0, "text": "D"},
+    {"measure": 19, "tick": 0, "text": "G"},
+    {"measure": 21, "tick": 0, "text": "C"},
+    {"measure": 23, "tick": 0, "text": "G"},
+    {"measure": 24, "tick": 0, "text": "D"},
+    {"measure": 25, "tick": 0, "text": "G"},
+    {"measure": 27, "tick": 0, "text": "B Part Variation (x=harmonics)"},
+    {"measure": 27, "tick": 0, "text": "G"},
+    {"measure": 30, "tick": 0, "text": "D"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 5},
     {"from_measure": 2, "to_measure": 4},

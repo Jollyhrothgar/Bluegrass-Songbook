@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Katy Hill (Paul Warren)",
     "time_signature": "2/4",
@@ -15,7 +15,8 @@
       "instrument": "mandolin",
       "tuning": ["E5", "A4", "D4", "G3"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -122,7 +123,7 @@
       {
         "measure": 9,
         "events": [
-          {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 360}]},
+          {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 360, "grace": {"f": 0, "kind": "hp"}}]},
           {"tick": 360, "notes": [{"s": 3, "f": 5, "dur": 120}]},
           {"tick": 480, "notes": [{"s": 2, "f": 0, "dur": 120}]},
           {"tick": 600, "notes": [{"s": 3, "f": 5, "dur": 120}]},
@@ -168,7 +169,7 @@
       {
         "measure": 13,
         "events": [
-          {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 360}]},
+          {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 360, "grace": {"f": 0, "kind": "hp"}}]},
           {"tick": 360, "notes": [{"s": 3, "f": 5, "dur": 120}]},
           {"tick": 480, "notes": [{"s": 2, "f": 0, "dur": 120}]},
           {"tick": 600, "notes": [{"s": 3, "f": 5, "dur": 120}]},

@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Devil's Dream (minor version)",
     "time_signature": "4/4",
@@ -16,7 +16,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -273,6 +274,33 @@
     {"from_measure": 9, "to_measure": 17},
     {"from_measure": 10, "to_measure": 16},
     {"from_measure": 18, "to_measure": 20}
+  ],
+  "chords": [
+    {"name": "Am", "frets": [2, 1, 2, 2, null]},
+    {"name": "Bdim", "frets": [3, 3, 4, 3, null]},
+    {"name": "E7", "frets": [2, 3, 1, 2, null]}
+  ],
+  "chord_diagrams": [
+    {"measure": 1, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 3, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 4, "tick": 960, "track": "banjo", "chord": 2},
+    {"measure": 5, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 7, "tick": 960, "track": "banjo", "chord": 0},
+    {"measure": 7, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 8, "tick": 0, "track": "banjo", "chord": 2},
+    {"measure": 8, "tick": 960, "track": "banjo", "chord": 0},
+    {"measure": 9, "tick": 0, "track": "banjo", "chord": 2},
+    {"measure": 9, "tick": 960, "track": "banjo", "chord": 0},
+    {"measure": 10, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 12, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 13, "tick": 960, "track": "banjo", "chord": 2},
+    {"measure": 14, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 16, "tick": 960, "track": "banjo", "chord": 0},
+    {"measure": 16, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 17, "tick": 0, "track": "banjo", "chord": 2},
+    {"measure": 17, "tick": 960, "track": "banjo", "chord": 0},
+    {"measure": 18, "tick": 0, "track": "banjo", "chord": 2},
+    {"measure": 18, "tick": 960, "track": "banjo", "chord": 0}
   ],
   "x_source": {
     "type": "banjo-hangout",

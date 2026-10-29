@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Fire on the Mountain",
     "time_signature": "4/4",
@@ -15,14 +15,16 @@
       "instrument": "6-string-guitar",
       "tuning": ["E4", "B3", "G3", "D3", "A2", "E2"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "fff"
     },
     {
       "id": "bass",
       "instrument": "upright-bass",
       "tuning": ["G2", "D2", "A1", "E1"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "ff"
     }
   ],
   "notation": {
@@ -323,7 +325,7 @@
       {
         "measure": 27,
         "events": [
-          {"tick": 0, "notes": [{"s": 3, "f": 2, "dur": 240}]},
+          {"tick": 0, "notes": [{"s": 3, "f": 2, "dur": 240, "dyn": "mf"}]},
           {"tick": 240, "notes": [{"s": 3, "f": 4, "dur": 240}]},
           {"tick": 480, "notes": [{"s": 3, "f": 2, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 3, "f": 0, "dur": 240}]},
@@ -744,10 +746,10 @@
       {
         "measure": 61,
         "events": [
-          {"tick": 0, "notes": [{"s": 3, "f": 5, "dur": 480}]},
+          {"tick": 0, "notes": [{"s": 3, "f": 5, "dur": 480, "dyn": "mf"}]},
           {"tick": 480, "notes": [{"s": 4, "f": 7, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 4, "f": 0, "dur": 240}]},
-          {"tick": 960, "notes": [{"s": 4, "f": 5, "dur": 480}]},
+          {"tick": 960, "notes": [{"s": 4, "f": 5, "dur": 480, "dyn": "mp"}]},
           {"tick": 1440, "notes": [{"s": 5, "f": 7, "dur": 240}]},
           {"tick": 1680, "notes": [{"s": 5, "f": 0, "dur": 240}]}
         ]
@@ -756,8 +758,8 @@
         "measure": 62,
         "events": [
           {"tick": 0, "notes": [{"s": 5, "f": 5, "dur": 240}]},
-          {"tick": 240, "notes": [{"s": 6, "f": 7, "dur": 240}]},
-          {"tick": 480, "notes": [{"s": 6, "f": 7, "dur": 480}]},
+          {"tick": 240, "notes": [{"s": 6, "f": 7, "dur": 240, "dyn": "mp"}]},
+          {"tick": 480, "notes": [{"s": 6, "f": 7, "dur": 480, "dyn": "mf"}]},
           {"tick": 960, "notes": [{"s": 5, "f": 0, "dur": 960}]}
         ]
       }
@@ -1166,7 +1168,7 @@
       {
         "measure": 58,
         "events": [
-          {"tick": 0, "notes": [{"s": 4, "f": 0, "dur": 480}]},
+          {"tick": 0, "notes": [{"s": 4, "f": 0, "dur": 480, "dyn": "fff"}]},
           {"tick": 960, "notes": [{"s": 3, "f": 0, "dur": 960}]}
         ]
       },
@@ -1210,6 +1212,100 @@
     {"from_measure": 33, "to_measure": 58},
     {"from_measure": 1, "to_measure": 14},
     {"from_measure": 59, "to_measure": 62}
+  ],
+  "chords": [
+    {"name": "A", "frets": [0, 2, 2, 2, 0, null]},
+    {"name": "E7", "frets": [0, 3, 1, 2, 2, 0]},
+    {"name": "D7", "frets": [2, 1, 2, 0, null, null]},
+    {"name": "D", "frets": [2, 3, 2, 0, null, null]},
+    {"name": "A7", "frets": [0, 2, 0, 2, 0, 0]}
+  ],
+  "chord_diagrams": [
+    {"measure": 1, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 2, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 3, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 4, "tick": 0, "track": "guitar", "chord": 1},
+    {"measure": 4, "tick": 960, "track": "guitar", "chord": 0},
+    {"measure": 5, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 6, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 7, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 8, "tick": 0, "track": "guitar", "chord": 1},
+    {"measure": 8, "tick": 960, "track": "guitar", "chord": 0},
+    {"measure": 9, "tick": 0, "track": "guitar", "chord": 3},
+    {"measure": 10, "tick": 0, "track": "guitar", "chord": 4},
+    {"measure": 10, "tick": 960, "track": "guitar", "chord": 3},
+    {"measure": 11, "tick": 0, "track": "guitar", "chord": 3},
+    {"measure": 12, "tick": 0, "track": "guitar", "chord": 4},
+    {"measure": 12, "tick": 960, "track": "guitar", "chord": 3},
+    {"measure": 13, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 14, "tick": 0, "track": "guitar", "chord": 1},
+    {"measure": 14, "tick": 960, "track": "guitar", "chord": 0},
+    {"measure": 15, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 16, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 17, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 18, "tick": 0, "track": "guitar", "chord": 1},
+    {"measure": 18, "tick": 960, "track": "guitar", "chord": 0},
+    {"measure": 19, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 20, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 21, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 22, "tick": 0, "track": "guitar", "chord": 1},
+    {"measure": 22, "tick": 960, "track": "guitar", "chord": 0},
+    {"measure": 23, "tick": 0, "track": "guitar", "chord": 3},
+    {"measure": 24, "tick": 0, "track": "guitar", "chord": 4},
+    {"measure": 24, "tick": 960, "track": "guitar", "chord": 3},
+    {"measure": 25, "tick": 0, "track": "guitar", "chord": 3},
+    {"measure": 26, "tick": 0, "track": "guitar", "chord": 4},
+    {"measure": 26, "tick": 960, "track": "guitar", "chord": 3},
+    {"measure": 27, "tick": 0, "track": "guitar", "chord": 3},
+    {"measure": 28, "tick": 0, "track": "guitar", "chord": 4},
+    {"measure": 28, "tick": 960, "track": "guitar", "chord": 3},
+    {"measure": 29, "tick": 0, "track": "guitar", "chord": 3},
+    {"measure": 30, "tick": 0, "track": "guitar", "chord": 4},
+    {"measure": 30, "tick": 960, "track": "guitar", "chord": 3},
+    {"measure": 31, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 32, "tick": 0, "track": "guitar", "chord": 1},
+    {"measure": 32, "tick": 960, "track": "guitar", "chord": 0},
+    {"measure": 33, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 34, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 35, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 36, "tick": 0, "track": "guitar", "chord": 1},
+    {"measure": 36, "tick": 960, "track": "guitar", "chord": 0},
+    {"measure": 37, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 38, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 39, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 40, "tick": 0, "track": "guitar", "chord": 1},
+    {"measure": 40, "tick": 960, "track": "guitar", "chord": 0},
+    {"measure": 41, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 42, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 43, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 44, "tick": 0, "track": "guitar", "chord": 1},
+    {"measure": 44, "tick": 960, "track": "guitar", "chord": 0},
+    {"measure": 45, "tick": 120, "track": "guitar", "chord": 0},
+    {"measure": 46, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 47, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 48, "tick": 0, "track": "guitar", "chord": 1},
+    {"measure": 48, "tick": 960, "track": "guitar", "chord": 0},
+    {"measure": 49, "tick": 0, "track": "guitar", "chord": 3},
+    {"measure": 50, "tick": 0, "track": "guitar", "chord": 4},
+    {"measure": 50, "tick": 960, "track": "guitar", "chord": 3},
+    {"measure": 51, "tick": 0, "track": "guitar", "chord": 3},
+    {"measure": 52, "tick": 0, "track": "guitar", "chord": 4},
+    {"measure": 52, "tick": 960, "track": "guitar", "chord": 3},
+    {"measure": 53, "tick": 0, "track": "guitar", "chord": 3},
+    {"measure": 54, "tick": 960, "track": "guitar", "chord": 3},
+    {"measure": 54, "tick": 0, "track": "guitar", "chord": 4},
+    {"measure": 55, "tick": 0, "track": "guitar", "chord": 3},
+    {"measure": 56, "tick": 0, "track": "guitar", "chord": 4},
+    {"measure": 56, "tick": 960, "track": "guitar", "chord": 3},
+    {"measure": 57, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 58, "tick": 0, "track": "guitar", "chord": 1},
+    {"measure": 58, "tick": 960, "track": "guitar", "chord": 0},
+    {"measure": 59, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 60, "tick": 960, "track": "guitar", "chord": 0},
+    {"measure": 60, "tick": 0, "track": "guitar", "chord": 1},
+    {"measure": 61, "tick": 0, "track": "guitar", "chord": 0},
+    {"measure": 62, "tick": 0, "track": "guitar", "chord": 1},
+    {"measure": 62, "tick": 960, "track": "guitar", "chord": 0}
   ],
   "x_source": {
     "type": "banjo-hangout",

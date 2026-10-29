@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Cumberland Gap",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "tenor-banjo",
       "tuning": ["G4", "D4", "G3", "D3"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "fff"
     }
   ],
   "notation": {
@@ -86,22 +87,22 @@
           {"tick": 240, "notes": [{"s": 3, "f": 12, "dur": 240, "finger": "T"}]},
           {"tick": 480, "notes": [{"s": 2, "f": 9, "dur": 240, "finger": "I"}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240, "finger": "M"}]},
-          {"tick": 960, "notes": [{"s": 2, "f": 8, "dur": 240, "finger": "I"}]},
-          {"tick": 1200, "notes": [{"s": 3, "f": 9, "dur": 240, "finger": "T"}]},
-          {"tick": 1440, "notes": [{"s": 2, "f": 7, "dur": 240, "finger": "I"}]},
-          {"tick": 1680, "notes": [{"s": 1, "f": 0, "dur": 240, "finger": "M"}]}
+          {"tick": 960, "notes": [{"s": 2, "f": 8, "dur": 240, "finger": "I", "dyn": "f"}]},
+          {"tick": 1200, "notes": [{"s": 3, "f": 9, "dur": 240, "finger": "T", "dyn": "f"}]},
+          {"tick": 1440, "notes": [{"s": 2, "f": 7, "dur": 240, "finger": "I", "dyn": "f"}]},
+          {"tick": 1680, "notes": [{"s": 1, "f": 0, "dur": 240, "finger": "M", "dyn": "f"}]}
         ]
       },
       {
         "measure": 7,
         "events": [
-          {"tick": 0, "notes": [{"s": 3, "f": 9, "dur": 240, "finger": "T"}]},
+          {"tick": 0, "notes": [{"s": 3, "f": 9, "dur": 240, "finger": "T", "dyn": "f"}]},
           {"tick": 240, "notes": [{"s": 1, "f": 0, "dur": 240, "finger": "M"}]},
           {"tick": 480, "notes": [{"s": 2, "f": 9, "dur": 240, "finger": "T"}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240, "finger": "M"}]},
           {"tick": 960, "notes": [{"s": 2, "f": 9, "dur": 240, "finger": "T"}]},
           {"tick": 1200, "notes": [{"s": 1, "f": 0, "dur": 240, "finger": "M"}]},
-          {"tick": 1440, "notes": [{"s": 3, "f": 9, "dur": 240, "finger": "T"}]},
+          {"tick": 1440, "notes": [{"s": 3, "f": 9, "dur": 240, "finger": "T", "dyn": "f"}]},
           {"tick": 1680, "notes": [{"s": 2, "f": 9, "dur": 240, "finger": "I"}]}
         ]
       },
@@ -112,16 +113,16 @@
           {"tick": 240, "notes": [{"s": 3, "f": 12, "dur": 240, "finger": "T"}]},
           {"tick": 480, "notes": [{"s": 2, "f": 9, "dur": 240, "finger": "I"}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240, "finger": "M"}]},
-          {"tick": 960, "notes": [{"s": 2, "f": 8, "dur": 240, "finger": "I"}]},
-          {"tick": 1200, "notes": [{"s": 3, "f": 9, "dur": 240, "finger": "T"}]},
-          {"tick": 1440, "notes": [{"s": 2, "f": 7, "dur": 240, "finger": "I"}]},
-          {"tick": 1680, "notes": [{"s": 1, "f": 0, "dur": 240, "finger": "M"}]}
+          {"tick": 960, "notes": [{"s": 2, "f": 8, "dur": 240, "finger": "I", "dyn": "f"}]},
+          {"tick": 1200, "notes": [{"s": 3, "f": 9, "dur": 240, "finger": "T", "dyn": "f"}]},
+          {"tick": 1440, "notes": [{"s": 2, "f": 7, "dur": 240, "finger": "I", "dyn": "f"}]},
+          {"tick": 1680, "notes": [{"s": 1, "f": 0, "dur": 240, "finger": "M", "dyn": "f"}]}
         ]
       },
       {
         "measure": 9,
         "events": [
-          {"tick": 0, "notes": [{"s": 3, "f": 9, "dur": 240, "finger": "T"}]},
+          {"tick": 0, "notes": [{"s": 3, "f": 9, "dur": 240, "finger": "T", "dyn": "f"}]},
           {"tick": 240, "notes": [{"s": 1, "f": 0, "dur": 240, "finger": "M"}]},
           {"tick": 480, "notes": [{"s": 2, "f": 9, "dur": 240, "finger": "T"}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240, "finger": "M"}]},

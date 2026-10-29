@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Whiskey Before Breakfast (in A)",
     "time_signature": "4/4",
@@ -20,28 +20,32 @@
       "instrument": "mandolin",
       "tuning": ["E5", "A4", "D4", "G3"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     },
     {
       "id": "mandolin-2",
       "instrument": "mandolin",
       "tuning": ["E5", "A4", "D4", "G3"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     },
     {
       "id": "bass",
       "instrument": "upright-bass",
       "tuning": ["G2", "D2", "A1", "E1"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     },
     {
       "id": "fiddle",
       "instrument": "fiddle",
       "tuning": ["E5", "A4", "D4", "G3"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     },
     {
       "id": "percussion",
@@ -49,6 +53,7 @@
       "tuning": [],
       "capo": 0,
       "role": "percussion",
+      "dyn": "f",
       "percussion": true,
       "lines": 8
     }
@@ -1033,6 +1038,9 @@
     {"from_measure": 10, "to_measure": 19},
     {"from_measure": 11, "to_measure": 18},
     {"from_measure": 20, "to_measure": 20}
+  ],
+  "measure_marks": [
+    {"measure": 20, "end_bar": true, "raw": 8}
   ],
   "x_source": {
     "type": "mandolin-hangout",

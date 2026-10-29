@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "black mountain rag",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["E4", "C#4", "A3", "E3", "A4"],
       "capo": 2,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -146,9 +147,9 @@
           {"tick": 240, "notes": [{"s": 2, "f": 0, "dur": 240}, {"s": 3, "f": 3, "dur": 240, "tech": "/"}]},
           {"tick": 480, "notes": [{"s": 5, "f": 0, "dur": 480}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240}]},
-          {"tick": 960, "notes": [{"s": 3, "f": 3, "dur": 120}]},
-          {"tick": 1080, "notes": [{"s": 3, "f": 2, "dur": 120, "tech": "p"}]},
-          {"tick": 1200, "notes": [{"s": 2, "f": 0, "dur": 240}]},
+          {"tick": 960, "notes": [{"s": 3, "f": 3, "dur": 120, "dyn": "ff"}]},
+          {"tick": 1080, "notes": [{"s": 3, "f": 2, "dur": 120, "tech": "p", "dyn": "ff"}]},
+          {"tick": 1200, "notes": [{"s": 2, "f": 0, "dur": 240, "dyn": "ff"}]},
           {"tick": 1440, "notes": [{"s": 3, "f": 0, "dur": 480}]},
           {"tick": 1680, "notes": [{"s": 1, "f": 0, "dur": 240}]}
         ]
@@ -197,9 +198,9 @@
           {"tick": 240, "notes": [{"s": 2, "f": 0, "dur": 240}, {"s": 3, "f": 3, "dur": 240, "tech": "/"}]},
           {"tick": 480, "notes": [{"s": 5, "f": 0, "dur": 480}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240}]},
-          {"tick": 960, "notes": [{"s": 3, "f": 3, "dur": 120}]},
-          {"tick": 1080, "notes": [{"s": 3, "f": 2, "dur": 120, "tech": "p"}]},
-          {"tick": 1200, "notes": [{"s": 2, "f": 0, "dur": 240}]},
+          {"tick": 960, "notes": [{"s": 3, "f": 3, "dur": 120, "dyn": "ff"}]},
+          {"tick": 1080, "notes": [{"s": 3, "f": 2, "dur": 120, "tech": "p", "dyn": "ff"}]},
+          {"tick": 1200, "notes": [{"s": 2, "f": 0, "dur": 240, "dyn": "ff"}]},
           {"tick": 1440, "notes": [{"s": 3, "f": 0, "dur": 480}]},
           {"tick": 1680, "notes": [{"s": 1, "f": 0, "dur": 240}]}
         ]

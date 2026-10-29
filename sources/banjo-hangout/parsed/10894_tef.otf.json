@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Lonesome Fiddle Blues (John McEuen Style)",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -124,7 +125,7 @@
         "measure": 9,
         "events": [
           {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 2, "f": 3, "dur": 240}]},
+          {"tick": 480, "notes": [{"s": 2, "f": 3, "dur": 240, "grace": {"f": 2, "kind": "hp"}}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 2, "f": 3, "dur": 240}]},
@@ -135,9 +136,9 @@
       {
         "measure": 10,
         "events": [
-          {"tick": 0, "notes": [{"s": 2, "f": 3, "dur": 240}]},
+          {"tick": 0, "notes": [{"s": 2, "f": 3, "dur": 240, "grace": {"f": 2, "kind": "hp"}}]},
           {"tick": 240, "notes": [{"s": 1, "f": 0, "dur": 240}]},
-          {"tick": 480, "notes": [{"s": 2, "f": 3, "dur": 240}]},
+          {"tick": 480, "notes": [{"s": 2, "f": 3, "dur": 240, "grace": {"f": 2, "kind": "hp"}}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 2, "f": 3, "dur": 240}]},
@@ -148,9 +149,9 @@
       {
         "measure": 11,
         "events": [
-          {"tick": 0, "notes": [{"s": 2, "f": 3, "dur": 240}]},
+          {"tick": 0, "notes": [{"s": 2, "f": 3, "dur": 240, "grace": {"f": 2, "kind": "hp"}}]},
           {"tick": 240, "notes": [{"s": 1, "f": 0, "dur": 240}]},
-          {"tick": 480, "notes": [{"s": 2, "f": 3, "dur": 240}]},
+          {"tick": 480, "notes": [{"s": 2, "f": 3, "dur": 240, "grace": {"f": 2, "kind": "hp"}}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 2, "f": 3, "dur": 240}]},
@@ -161,7 +162,7 @@
       {
         "measure": 12,
         "events": [
-          {"tick": 0, "notes": [{"s": 2, "f": 3, "dur": 240}]},
+          {"tick": 0, "notes": [{"s": 2, "f": 3, "dur": 240, "grace": {"f": 2, "kind": "hp"}}]},
           {"tick": 240, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 480, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 2, "f": 3, "dur": 240}]},
@@ -312,7 +313,7 @@
         "measure": 26,
         "events": [
           {"tick": 0, "notes": [{"s": 1, "f": 12, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 2, "f": 12, "dur": 240}]},
+          {"tick": 480, "notes": [{"s": 2, "f": 12, "dur": 240, "grace": {"f": 11, "kind": "hp"}}]},
           {"tick": 720, "notes": [{"s": 1, "f": 12, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 2, "f": 12, "dur": 240}]},
@@ -398,6 +399,31 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 0, "text": "Part A"},
+    {"measure": 1, "tick": 0, "text": "Dm"},
+    {"measure": 3, "tick": 0, "text": "C"},
+    {"measure": 4, "tick": 960, "text": "Am"},
+    {"measure": 5, "tick": 0, "text": "Dm"},
+    {"measure": 8, "tick": 480, "text": "Am"},
+    {"measure": 8, "tick": 960, "text": "Dm"},
+    {"measure": 9, "tick": 0, "text": "Part B"},
+    {"measure": 9, "tick": 0, "text": "G"},
+    {"measure": 11, "tick": 0, "text": "D"},
+    {"measure": 13, "tick": 0, "text": "E"},
+    {"measure": 15, "tick": 0, "text": "A"},
+    {"measure": 17, "tick": 0, "text": "Part A (Variation)"},
+    {"measure": 17, "tick": 0, "text": "Dm"},
+    {"measure": 19, "tick": 0, "text": "C"},
+    {"measure": 20, "tick": 960, "text": "Am"},
+    {"measure": 21, "tick": 0, "text": "Dm"},
+    {"measure": 24, "tick": 480, "text": "Am"},
+    {"measure": 26, "tick": 0, "text": "Variation to Part B"},
+    {"measure": 26, "tick": 0, "text": "G"},
+    {"measure": 28, "tick": 0, "text": "D"},
+    {"measure": 30, "tick": 0, "text": "E"},
+    {"measure": 33, "tick": 0, "text": "~"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 8},
     {"from_measure": 1, "to_measure": 33}

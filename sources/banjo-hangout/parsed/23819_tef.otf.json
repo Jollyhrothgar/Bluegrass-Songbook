@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Cherokee Shuffle",
     "time_signature": "4/4",
@@ -16,21 +16,24 @@
       "instrument": "5-string-banjo",
       "tuning": ["E4", "C#4", "A3", "E3", "A4"],
       "capo": 2,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     },
     {
       "id": "guitar",
       "instrument": "6-string-guitar",
       "tuning": ["F#4", "C#4", "A3", "E3", "B2", "F#2"],
       "capo": 2,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     },
     {
       "id": "bass",
       "instrument": "upright-bass",
       "tuning": ["G2", "D2", "A1", "E1"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "fff"
     }
   ],
   "notation": {
@@ -181,9 +184,9 @@
         "events": [
           {"tick": 0, "notes": [{"s": 1, "f": 2, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240}]},
-          {"tick": 720, "notes": [{"s": 2, "f": 0, "dur": 240}]},
+          {"tick": 720, "notes": [{"s": 2, "f": 0, "dur": 240, "dyn": "mf"}]},
           {"tick": 960, "notes": [{"s": 1, "f": 2, "dur": 240}]},
-          {"tick": 1200, "notes": [{"s": 5, "f": 0, "dur": 240}]},
+          {"tick": 1200, "notes": [{"s": 5, "f": 0, "dur": 240, "dyn": "mf"}]},
           {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 480}]}
         ]
       },
@@ -192,7 +195,7 @@
         "events": [
           {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 480}, {"s": 2, "f": 5, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240}, {"s": 2, "f": 5, "dur": 240}]},
-          {"tick": 720, "notes": [{"s": 2, "f": 8, "dur": 240, "tech": "/"}, {"s": 5, "f": 0, "dur": 240}]},
+          {"tick": 720, "notes": [{"s": 2, "f": 8, "dur": 240, "tech": "/"}, {"s": 5, "f": 0, "dur": 240, "dyn": "mf"}]},
           {"tick": 960, "notes": [{"s": 2, "f": 8, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 1440, "notes": [{"s": 2, "f": 8, "dur": 240}]},
@@ -204,7 +207,7 @@
         "events": [
           {"tick": 0, "notes": [{"s": 1, "f": 8, "dur": 240, "tie": true}]},
           {"tick": 240, "notes": [{"s": 2, "f": 10, "dur": 480}]},
-          {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
+          {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240, "dyn": "mf"}]},
           {"tick": 960, "notes": [{"s": 1, "f": 3, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 2, "f": 5, "dur": 240}]},
           {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 480}]},
@@ -587,7 +590,7 @@
           {"tick": 0, "notes": [{"s": 6, "f": 3, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 1, "f": 3, "dur": 480}, {"s": 2, "f": 3, "dur": 480}, {"s": 3, "f": 0, "dur": 480}, {"s": 4, "f": 0, "dur": 480}, {"s": 5, "f": 2, "dur": 480}]},
           {"tick": 960, "notes": [{"s": 5, "f": 0, "dur": 480}]},
-          {"tick": 1440, "notes": [{"s": 1, "f": 3, "dur": 480, "tie": true}, {"s": 2, "f": 3, "dur": 480, "tie": true}, {"s": 3, "f": 0, "dur": 480, "tie": true}, {"s": 4, "f": 0, "dur": 480, "tie": true}, {"s": 5, "f": 1, "dur": 480}]}
+          {"tick": 1440, "notes": [{"s": 1, "f": 3, "dur": 480, "tie": true}, {"s": 2, "f": 3, "dur": 480, "tie": true}, {"s": 3, "f": 0, "dur": 480, "tie": true}, {"s": 4, "f": 0, "dur": 480, "tie": true}, {"s": 5, "f": 1, "dur": 480, "dyn": "fff"}]}
         ]
       },
       {
@@ -623,7 +626,7 @@
           {"tick": 0, "notes": [{"s": 5, "f": 3, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 480}, {"s": 2, "f": 1, "dur": 480}, {"s": 3, "f": 0, "dur": 480}, {"s": 4, "f": 2, "dur": 480}]},
           {"tick": 960, "notes": [{"s": 4, "f": 0, "dur": 480}]},
-          {"tick": 1440, "notes": [{"s": 1, "f": 2, "dur": 480}, {"s": 2, "f": 3, "dur": 480}, {"s": 3, "f": 2, "dur": 480}, {"s": 4, "f": 0, "dur": 480}, {"s": 6, "f": 2, "dur": 480}]}
+          {"tick": 1440, "notes": [{"s": 1, "f": 2, "dur": 480}, {"s": 2, "f": 3, "dur": 480}, {"s": 3, "f": 2, "dur": 480}, {"s": 4, "f": 0, "dur": 480}, {"s": 6, "f": 2, "dur": 480, "dyn": "fff"}]}
         ]
       },
       {
@@ -713,7 +716,7 @@
           {"tick": 0, "notes": [{"s": 6, "f": 3, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 1, "f": 3, "dur": 480}, {"s": 2, "f": 3, "dur": 480}, {"s": 3, "f": 0, "dur": 480}, {"s": 4, "f": 0, "dur": 480}, {"s": 5, "f": 2, "dur": 480}]},
           {"tick": 960, "notes": [{"s": 4, "f": 0, "dur": 480}]},
-          {"tick": 1440, "notes": [{"s": 1, "f": 2, "dur": 480}, {"s": 2, "f": 3, "dur": 480}, {"s": 3, "f": 2, "dur": 480}, {"s": 4, "f": 0, "dur": 480}, {"s": 6, "f": 2, "dur": 480}]}
+          {"tick": 1440, "notes": [{"s": 1, "f": 2, "dur": 480}, {"s": 2, "f": 3, "dur": 480}, {"s": 3, "f": 2, "dur": 480}, {"s": 4, "f": 0, "dur": 480}, {"s": 6, "f": 2, "dur": 480, "dyn": "fff"}]}
         ]
       },
       {
@@ -782,10 +785,10 @@
       {
         "measure": 34,
         "events": [
-          {"tick": 0, "notes": [{"s": 6, "f": 3, "dur": 480}]},
+          {"tick": 0, "notes": [{"s": 6, "f": 3, "dur": 480, "dyn": "fff"}]},
           {"tick": 480, "notes": [{"s": 1, "f": 3, "dur": 480}, {"s": 2, "f": 3, "dur": 480}, {"s": 3, "f": 0, "dur": 480}, {"s": 4, "f": 0, "dur": 480}]},
-          {"tick": 960, "notes": [{"s": 5, "f": 0, "dur": 480}]},
-          {"tick": 1440, "notes": [{"s": 1, "f": 3, "dur": 480, "tie": true}, {"s": 2, "f": 3, "dur": 480, "tie": true}, {"s": 3, "f": 0, "dur": 480, "tie": true}, {"s": 4, "f": 0, "dur": 480, "tie": true}, {"s": 5, "f": 1, "dur": 480}]}
+          {"tick": 960, "notes": [{"s": 5, "f": 0, "dur": 480, "dyn": "fff"}]},
+          {"tick": 1440, "notes": [{"s": 1, "f": 3, "dur": 480, "tie": true}, {"s": 2, "f": 3, "dur": 480, "tie": true}, {"s": 3, "f": 0, "dur": 480, "tie": true}, {"s": 4, "f": 0, "dur": 480, "tie": true}, {"s": 5, "f": 1, "dur": 480, "dyn": "fff"}]}
         ]
       },
       {
@@ -868,8 +871,8 @@
       {
         "measure": 8,
         "events": [
-          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 960}]},
-          {"tick": 960, "notes": [{"s": 3, "f": 5, "dur": 960}]}
+          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 960, "dyn": "f"}]},
+          {"tick": 960, "notes": [{"s": 3, "f": 5, "dur": 960, "dyn": "f"}]}
         ]
       },
       {
@@ -1004,8 +1007,8 @@
         "measure": 27,
         "events": [
           {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 960}]},
-          {"tick": 960, "notes": [{"s": 3, "f": 2, "dur": 480}]},
-          {"tick": 1440, "notes": [{"s": 3, "f": 4, "dur": 480}]}
+          {"tick": 960, "notes": [{"s": 3, "f": 2, "dur": 480, "dyn": "ff"}]},
+          {"tick": 1440, "notes": [{"s": 3, "f": 4, "dur": 480, "dyn": "ff"}]}
         ]
       },
       {
@@ -1086,6 +1089,39 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 0, "text": "Key A - Capo 2 - chords shown as G"},
+    {"measure": 2, "tick": 0, "text": "G"},
+    {"measure": 5, "tick": 0, "text": "Em"},
+    {"measure": 6, "tick": 0, "text": "C"},
+    {"measure": 7, "tick": 0, "text": "G"},
+    {"measure": 8, "tick": 960, "text": "D"},
+    {"measure": 9, "tick": 0, "text": "G"},
+    {"measure": 13, "tick": 0, "text": "Em"},
+    {"measure": 14, "tick": 0, "text": "C"},
+    {"measure": 15, "tick": 0, "text": "G"},
+    {"measure": 16, "tick": 960, "text": "D"},
+    {"measure": 17, "tick": 0, "text": "G"},
+    {"measure": 18, "tick": 0, "text": "C"},
+    {"measure": 19, "tick": 0, "text": "G"},
+    {"measure": 20, "tick": 0, "text": "G"},
+    {"measure": 21, "tick": 0, "text": "G"},
+    {"measure": 22, "tick": 0, "text": "C"},
+    {"measure": 23, "tick": 0, "text": "G"},
+    {"measure": 25, "tick": 0, "text": "Em"},
+    {"measure": 26, "tick": 0, "text": "G"},
+    {"measure": 27, "tick": 0, "text": "D"},
+    {"measure": 28, "tick": 0, "text": "C"},
+    {"measure": 29, "tick": 0, "text": "G"},
+    {"measure": 30, "tick": 0, "text": "C"},
+    {"measure": 31, "tick": 0, "text": "G"},
+    {"measure": 32, "tick": 0, "text": "C"},
+    {"measure": 33, "tick": 0, "text": "G"},
+    {"measure": 35, "tick": 0, "text": "Em"},
+    {"measure": 36, "tick": 960, "text": "D"},
+    {"measure": 36, "tick": 0, "text": "G"},
+    {"measure": 37, "tick": 0, "text": "G"}
+  ],
   "x_source": {
     "type": "banjo-hangout",
     "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/c/tab-cherokee-shuffl-23819-332212472019.tef",

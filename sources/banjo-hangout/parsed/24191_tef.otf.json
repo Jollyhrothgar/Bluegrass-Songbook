@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "RED WING",
     "time_signature": "4/4",
@@ -16,21 +16,24 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     },
     {
       "id": "fiddle",
       "instrument": "fiddle",
       "tuning": ["E5", "A4", "D4", "G3"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     },
     {
       "id": "guitar",
       "instrument": "6-string-guitar",
       "tuning": ["E4", "B3", "G3", "D3", "A2", "E2"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -1021,6 +1024,81 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 0, "text": "Pick-up notes"},
+    {"measure": 1, "tick": 480, "text": "Pick-up notes"},
+    {"measure": 2, "tick": 0, "text": "G"},
+    {"measure": 2, "tick": 0, "text": "G"},
+    {"measure": 2, "tick": 0, "text": "G"},
+    {"measure": 4, "tick": 0, "text": "C"},
+    {"measure": 4, "tick": 0, "text": "C"},
+    {"measure": 4, "tick": 0, "text": "C"},
+    {"measure": 5, "tick": 0, "text": "G"},
+    {"measure": 5, "tick": 0, "text": "G"},
+    {"measure": 5, "tick": 0, "text": "G"},
+    {"measure": 6, "tick": 0, "text": "D7"},
+    {"measure": 6, "tick": 0, "text": "C"},
+    {"measure": 6, "tick": 0, "text": "D"},
+    {"measure": 7, "tick": 0, "text": "G"},
+    {"measure": 7, "tick": 0, "text": "G"},
+    {"measure": 7, "tick": 0, "text": "G"},
+    {"measure": 8, "tick": 0, "text": "A"},
+    {"measure": 8, "tick": 0, "text": "A"},
+    {"measure": 8, "tick": 0, "text": "A"},
+    {"measure": 9, "tick": 0, "text": "D"},
+    {"measure": 9, "tick": 0, "text": "D"},
+    {"measure": 9, "tick": 0, "text": "D"},
+    {"measure": 10, "tick": 0, "text": "G"},
+    {"measure": 10, "tick": 0, "text": "G"},
+    {"measure": 10, "tick": 0, "text": "G"},
+    {"measure": 12, "tick": 0, "text": "C"},
+    {"measure": 12, "tick": 0, "text": "C"},
+    {"measure": 12, "tick": 0, "text": "C"},
+    {"measure": 13, "tick": 0, "text": "G"},
+    {"measure": 13, "tick": 0, "text": "G"},
+    {"measure": 13, "tick": 0, "text": "G"},
+    {"measure": 14, "tick": 0, "text": "D"},
+    {"measure": 14, "tick": 0, "text": "C"},
+    {"measure": 14, "tick": 0, "text": "D"},
+    {"measure": 15, "tick": 0, "text": "G"},
+    {"measure": 15, "tick": 0, "text": "G"},
+    {"measure": 15, "tick": 0, "text": "G"},
+    {"measure": 16, "tick": 0, "text": "A"},
+    {"measure": 16, "tick": 960, "text": "D"},
+    {"measure": 16, "tick": 0, "text": "A"},
+    {"measure": 16, "tick": 960, "text": "D"},
+    {"measure": 16, "tick": 0, "text": "A"},
+    {"measure": 16, "tick": 960, "text": "D"},
+    {"measure": 17, "tick": 0, "text": "G"},
+    {"measure": 17, "tick": 0, "text": "G"},
+    {"measure": 17, "tick": 0, "text": "G"},
+    {"measure": 18, "tick": 120, "text": "CHORUS"},
+    {"measure": 18, "tick": 0, "text": "C"},
+    {"measure": 18, "tick": 0, "text": "C"},
+    {"measure": 18, "tick": 0, "text": "C"},
+    {"measure": 20, "tick": 0, "text": "G"},
+    {"measure": 20, "tick": 0, "text": "G"},
+    {"measure": 20, "tick": 0, "text": "G"},
+    {"measure": 22, "tick": 0, "text": "D"},
+    {"measure": 22, "tick": 0, "text": "D"},
+    {"measure": 22, "tick": 0, "text": "D"},
+    {"measure": 24, "tick": 0, "text": "G"},
+    {"measure": 24, "tick": 0, "text": "G"},
+    {"measure": 24, "tick": 0, "text": "G"},
+    {"measure": 25, "tick": 960, "text": "G7"},
+    {"measure": 26, "tick": 0, "text": "C"},
+    {"measure": 26, "tick": 0, "text": "C"},
+    {"measure": 26, "tick": 0, "text": "C"},
+    {"measure": 28, "tick": 0, "text": "G"},
+    {"measure": 28, "tick": 0, "text": "G"},
+    {"measure": 28, "tick": 0, "text": "G"},
+    {"measure": 30, "tick": 0, "text": "D"},
+    {"measure": 30, "tick": 0, "text": "D"},
+    {"measure": 30, "tick": 0, "text": "D"},
+    {"measure": 32, "tick": 0, "text": "G"},
+    {"measure": 32, "tick": 0, "text": "G"},
+    {"measure": 32, "tick": 0, "text": "G"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 33},
     {"from_measure": 2, "to_measure": 33},
@@ -1031,6 +1109,9 @@
     "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/r/tab-red-wing-24191-4792032020.tef",
     "author": "toolmaker",
     "converted_at": "2026-07-26T22:20:05.916270",
-    "source_id": "24191"
+    "source_id": "24191",
+    "skipped": {
+      "picking_marks": 111
+    }
   }
 }

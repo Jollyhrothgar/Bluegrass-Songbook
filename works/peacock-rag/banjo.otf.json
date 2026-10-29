@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Peacock Rag",
     "time_signature": "4/4",
@@ -16,7 +16,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "A4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -287,6 +288,11 @@
     {"from_measure": 10, "to_measure": 19},
     {"from_measure": 12, "to_measure": 18},
     {"from_measure": 20, "to_measure": 20}
+  ],
+  "measure_marks": [
+    {"measure": 12, "repeat_start": true, "raw": 64},
+    {"measure": 19, "repeat_end": true, "raw": 128},
+    {"measure": 20, "end_bar": true, "raw": 8}
   ],
   "x_source": {
     "type": "banjo-hangout",

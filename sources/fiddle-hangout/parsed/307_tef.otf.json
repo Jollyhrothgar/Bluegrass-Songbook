@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Orange Blossom Special",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "fiddle",
       "tuning": ["E5", "A4", "D4", "G3"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "fff"
     }
   ],
   "notation": {
@@ -491,6 +492,13 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 28, "tick": 0, "text": "X"},
+    {"measure": 40, "tick": 0, "text": "X"}
+  ],
+  "measure_marks": [
+    {"measure": 40, "raw": 7}
+  ],
   "x_source": {
     "type": "fiddle-hangout",
     "url": "https://www.hangoutstorage.com/fiddlehangout.com/storage/tabs/o/tab-orange-blossom--307-561732182008.tef",

@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Westphalia Waltz",
     "time_signature": "3/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -374,6 +375,13 @@
     {"from_measure": 21, "to_measure": 36},
     {"from_measure": 21, "to_measure": 33},
     {"from_measure": 37, "to_measure": 39}
+  ],
+  "measure_marks": [
+    {"measure": 2, "repeat_start": true, "ending": 1, "raw": 65},
+    {"measure": 17, "repeat_end": true, "ending": 1, "raw": 129},
+    {"measure": 21, "repeat_start": true, "ending": 1, "raw": 65},
+    {"measure": 36, "repeat_end": true, "ending": 1, "raw": 129},
+    {"measure": 39, "ending": 2, "end_bar": true, "raw": 10}
   ],
   "x_source": {
     "type": "banjo-hangout",

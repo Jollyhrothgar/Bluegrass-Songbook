@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Huckleberry Hornpipe",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["E4", "C#4", "A3", "E3", "A4"],
       "capo": 2,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -333,6 +334,17 @@
     {"from_measure": 10, "to_measure": 14},
     {"from_measure": 11, "to_measure": 13},
     {"from_measure": 15, "to_measure": 15}
+  ],
+  "measure_marks": [
+    {"measure": 1, "repeat_start": true, "raw": 64},
+    {"measure": 4, "repeat_end": true, "ending": 1, "raw": 129},
+    {"measure": 5, "ending": 2, "raw": 2},
+    {"measure": 6, "repeat_start": true, "raw": 64},
+    {"measure": 9, "repeat_end": true, "ending": 1, "raw": 129},
+    {"measure": 10, "ending": 2, "raw": 2},
+    {"measure": 11, "repeat_start": true, "raw": 64},
+    {"measure": 14, "repeat_end": true, "ending": 1, "raw": 129},
+    {"measure": 15, "ending": 2, "raw": 2}
   ],
   "x_source": {
     "type": "banjo-hangout",

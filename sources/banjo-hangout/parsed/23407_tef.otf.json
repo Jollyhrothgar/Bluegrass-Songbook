@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Cripple Creek",
     "time_signature": "2/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -172,7 +173,7 @@
           {"tick": 240, "notes": [{"s": 5, "f": 0, "dur": 120}]},
           {"tick": 360, "notes": [{"s": 1, "f": 0, "dur": 120}]},
           {"tick": 480, "notes": [{"s": 3, "f": 0, "dur": 120}]},
-          {"tick": 720, "notes": [{"s": 1, "f": 2, "dur": 240}, {"s": 5, "f": 0, "dur": 240}]}
+          {"tick": 720, "notes": [{"s": 1, "f": 2, "dur": 240}, {"s": 5, "f": 0, "dur": 240, "dyn": "fff"}]}
         ]
       },
       {
@@ -422,10 +423,83 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 60, "text": "Chorus"},
+    {"measure": 9, "tick": 120, "text": "Verse"},
+    {"measure": 17, "tick": 120, "text": "Chorus"},
+    {"measure": 17, "tick": 240, "text": "(Variation)"},
+    {"measure": 25, "tick": 120, "text": "Verse"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 16},
     {"from_measure": 1, "to_measure": 32},
     {"from_measure": 17, "to_measure": 32}
+  ],
+  "chords": [
+    {"name": "C"},
+    {"name": "G"},
+    {"name": "D"},
+    {"name": "G"},
+    {"name": "G"},
+    {"name": "D"},
+    {"name": "G"},
+    {"name": "G"},
+    {"name": "G"},
+    {"name": "D"},
+    {"name": "G"},
+    {"name": "G"},
+    {"name": "C"},
+    {"name": "G"},
+    {"name": "G"},
+    {"name": "D"},
+    {"name": "G"},
+    {"name": "G"},
+    {"name": "C"},
+    {"name": "G"},
+    {"name": "G"},
+    {"name": "D"},
+    {"name": "G"}
+  ],
+  "chord_diagrams": [
+    {"measure": 1, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 3, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 4, "tick": 0, "track": "banjo", "chord": 2},
+    {"measure": 4, "tick": 480, "track": "banjo", "chord": 1},
+    {"measure": 7, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 8, "tick": 0, "track": "banjo", "chord": 2},
+    {"measure": 8, "tick": 480, "track": "banjo", "chord": 1},
+    {"measure": 9, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 10, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 10, "tick": 480, "track": "banjo", "chord": 1},
+    {"measure": 11, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 12, "tick": 0, "track": "banjo", "chord": 2},
+    {"measure": 12, "tick": 480, "track": "banjo", "chord": 1},
+    {"measure": 13, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 14, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 14, "tick": 480, "track": "banjo", "chord": 1},
+    {"measure": 15, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 16, "tick": 0, "track": "banjo", "chord": 2},
+    {"measure": 16, "tick": 480, "track": "banjo", "chord": 1},
+    {"measure": 17, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 19, "tick": 0, "track": "banjo", "chord": 4},
+    {"measure": 20, "tick": 0, "track": "banjo", "chord": 5},
+    {"measure": 20, "tick": 480, "track": "banjo", "chord": 6},
+    {"measure": 21, "tick": 0, "track": "banjo", "chord": 7},
+    {"measure": 23, "tick": 0, "track": "banjo", "chord": 8},
+    {"measure": 24, "tick": 0, "track": "banjo", "chord": 9},
+    {"measure": 24, "tick": 480, "track": "banjo", "chord": 10},
+    {"measure": 25, "tick": 0, "track": "banjo", "chord": 11},
+    {"measure": 26, "tick": 0, "track": "banjo", "chord": 12},
+    {"measure": 26, "tick": 480, "track": "banjo", "chord": 13},
+    {"measure": 27, "tick": 0, "track": "banjo", "chord": 14},
+    {"measure": 28, "tick": 0, "track": "banjo", "chord": 15},
+    {"measure": 28, "tick": 480, "track": "banjo", "chord": 16},
+    {"measure": 29, "tick": 0, "track": "banjo", "chord": 17},
+    {"measure": 30, "tick": 0, "track": "banjo", "chord": 18},
+    {"measure": 30, "tick": 480, "track": "banjo", "chord": 19},
+    {"measure": 31, "tick": 0, "track": "banjo", "chord": 20},
+    {"measure": 32, "tick": 0, "track": "banjo", "chord": 21},
+    {"measure": 32, "tick": 480, "track": "banjo", "chord": 22}
   ],
   "x_source": {
     "type": "banjo-hangout",

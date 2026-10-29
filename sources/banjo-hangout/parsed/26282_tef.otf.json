@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Fire on the Mountain",
     "time_signature": "4/4",
@@ -18,7 +18,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["E4", "C#4", "A3", "E3", "A4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -202,6 +203,13 @@
     {"from_measure": 6, "to_measure": 10},
     {"from_measure": 7, "to_measure": 9},
     {"from_measure": 11, "to_measure": 13}
+  ],
+  "measure_marks": [
+    {"measure": 5, "repeat_end": true, "ending": 1, "raw": 129},
+    {"measure": 6, "ending": 2, "end_bar": true, "raw": 10},
+    {"measure": 10, "repeat_end": true, "ending": 1, "raw": 129},
+    {"measure": 11, "ending": 2, "end_bar": true, "raw": 10},
+    {"measure": 13, "end_bar": true, "raw": 8}
   ],
   "x_source": {
     "type": "banjo-hangout",

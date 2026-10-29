@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Chicken Reel",
     "time_signature": "4/4",
@@ -16,7 +16,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -221,6 +222,14 @@
     {"from_measure": 7, "to_measure": 10},
     {"from_measure": 7, "to_measure": 8},
     {"from_measure": 13, "to_measure": 14}
+  ],
+  "measure_marks": [
+    {"measure": 2, "repeat_start": true, "raw": 64},
+    {"measure": 5, "repeat_end": true, "raw": 128},
+    {"measure": 6, "end_bar": true, "raw": 8},
+    {"measure": 7, "repeat_start": true, "raw": 64},
+    {"measure": 10, "repeat_end": true, "raw": 128},
+    {"measure": 12, "repeat_end": true, "raw": 128}
   ],
   "x_source": {
     "type": "banjo-hangout",

@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Road to Columbus",
     "time_signature": "4/4",
@@ -16,7 +16,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -626,6 +627,36 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 0, "text": "A Part"},
+    {"measure": 1, "tick": 0, "text": "G"},
+    {"measure": 4, "tick": 0, "text": "C"},
+    {"measure": 6, "tick": 0, "text": "G"},
+    {"measure": 8, "tick": 0, "text": "D"},
+    {"measure": 10, "tick": 0, "text": "G"},
+    {"measure": 12, "tick": 0, "text": "C"},
+    {"measure": 14, "tick": 0, "text": "G"},
+    {"measure": 15, "tick": 0, "text": "D"},
+    {"measure": 16, "tick": 0, "text": "G"},
+    {"measure": 17, "tick": 480, "text": "B Part"},
+    {"measure": 20, "tick": 0, "text": "C"},
+    {"measure": 22, "tick": 0, "text": "G"},
+    {"measure": 24, "tick": 0, "text": "D"},
+    {"measure": 26, "tick": 0, "text": "G"},
+    {"measure": 28, "tick": 0, "text": "C"},
+    {"measure": 30, "tick": 0, "text": "G"},
+    {"measure": 31, "tick": 0, "text": "D"},
+    {"measure": 32, "tick": 0, "text": "G"},
+    {"measure": 33, "tick": 480, "text": "Variation B Part"},
+    {"measure": 36, "tick": 0, "text": "C"},
+    {"measure": 38, "tick": 0, "text": "G"},
+    {"measure": 40, "tick": 0, "text": "D"},
+    {"measure": 42, "tick": 0, "text": "G"},
+    {"measure": 44, "tick": 0, "text": "C"},
+    {"measure": 46, "tick": 0, "text": "G"},
+    {"measure": 47, "tick": 0, "text": "D"},
+    {"measure": 48, "tick": 0, "text": "G"}
+  ],
   "x_source": {
     "type": "banjo-hangout",
     "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/r/tab-road-to-columbu-12583-23491912102011.tef",

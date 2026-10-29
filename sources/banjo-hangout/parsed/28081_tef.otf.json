@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Foggy Mountain Breakdown",
     "time_signature": "2/4",
@@ -33,7 +33,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -426,6 +427,31 @@
       }
     ]
   },
+  "chords": [
+    {"name": "G"},
+    {"name": "A"},
+    {"name": "B"},
+    {"name": "C"},
+    {"name": "D"},
+    {"name": "E"},
+    {"name": "F"},
+    {"name": "Em"}
+  ],
+  "chord_diagrams": [
+    {"measure": 1, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 5, "tick": 0, "track": "banjo", "chord": 7},
+    {"measure": 7, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 9, "tick": 0, "track": "banjo", "chord": 7},
+    {"measure": 11, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 13, "tick": 0, "track": "banjo", "chord": 4},
+    {"measure": 17, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 21, "tick": 0, "track": "banjo", "chord": 7},
+    {"measure": 23, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 25, "tick": 0, "track": "banjo", "chord": 7},
+    {"measure": 27, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 29, "tick": 0, "track": "banjo", "chord": 4},
+    {"measure": 31, "tick": 0, "track": "banjo", "chord": 0}
+  ],
   "x_source": {
     "type": "banjo-hangout",
     "source_id": "28081",

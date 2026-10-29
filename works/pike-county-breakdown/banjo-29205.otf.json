@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Pike County Breakdown",
     "time_signature": "4/4",
@@ -15,14 +15,16 @@
       "instrument": "5-string-banjo",
       "tuning": ["E4", "C#4", "A3", "E3", "A4"],
       "capo": 2,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     },
     {
       "id": "guitar",
       "instrument": "6-string-guitar",
       "tuning": ["E4", "B3", "G3", "D3", "A2", "E2"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "mf"
     }
   ],
   "notation": {
@@ -66,7 +68,7 @@
         "measure": 4,
         "events": [
           {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240}, {"s": 2, "f": 0, "dur": 240}, {"s": 3, "f": 0, "dur": 240, "fx": ["brush"]}]},
+          {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240, "dyn": "mf"}, {"s": 2, "f": 0, "dur": 240, "dyn": "mf"}, {"s": 3, "f": 0, "dur": 240, "fx": ["brush"], "dyn": "mf"}]},
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 3, "f": 2, "dur": 240, "grace": {"f": 3, "kind": "hp"}}]},
           {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "h"}]},
@@ -78,10 +80,10 @@
         "measure": 5,
         "events": [
           {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240}, {"s": 2, "f": 0, "dur": 240}, {"s": 3, "f": 0, "dur": 240, "fx": ["brush"]}]},
+          {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240, "dyn": "mf"}, {"s": 2, "f": 0, "dur": 240, "dyn": "mf"}, {"s": 3, "f": 0, "dur": 240, "fx": ["brush"], "dyn": "mf"}]},
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 2, "f": 0, "dur": 480}]},
-          {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 240}, {"s": 2, "f": 0, "dur": 240}, {"s": 3, "f": 0, "dur": 240, "fx": ["brush"]}]},
+          {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 240, "dyn": "mf"}, {"s": 2, "f": 0, "dur": 240, "dyn": "mf"}, {"s": 3, "f": 0, "dur": 240, "fx": ["brush"], "dyn": "mf"}]},
           {"tick": 1680, "notes": [{"s": 5, "f": 0, "dur": 240}]}
         ]
       },
@@ -215,7 +217,7 @@
         "measure": 16,
         "events": [
           {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240}, {"s": 2, "f": 0, "dur": 240}, {"s": 3, "f": 0, "dur": 240, "fx": ["brush"]}]},
+          {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240, "dyn": "mf"}, {"s": 2, "f": 0, "dur": 240, "dyn": "mf"}, {"s": 3, "f": 0, "dur": 240, "fx": ["brush"], "dyn": "mf"}]},
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 3, "f": 2, "dur": 240, "grace": {"f": 3, "kind": "hp"}}]},
           {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "p"}]},
@@ -227,7 +229,7 @@
         "measure": 17,
         "events": [
           {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240}, {"s": 2, "f": 0, "dur": 240}, {"s": 3, "f": 0, "dur": 240, "fx": ["brush"]}]},
+          {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240, "dyn": "mf"}, {"s": 2, "f": 0, "dur": 240, "dyn": "mf"}, {"s": 3, "f": 0, "dur": 240, "fx": ["brush"], "dyn": "mf"}]},
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 4, "f": 0, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 4, "f": 2, "dur": 240, "tech": "p"}]},
@@ -238,7 +240,7 @@
         "measure": 18,
         "events": [
           {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240}, {"s": 2, "f": 0, "dur": 240, "fx": ["brush"]}]},
+          {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240, "dyn": "mf"}, {"s": 2, "f": 0, "dur": 240, "fx": ["brush"], "dyn": "mf"}]},
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 3, "f": 0, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 3, "f": 2, "dur": 240, "tech": "h"}]},
@@ -264,7 +266,7 @@
         "measure": 20,
         "events": [
           {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240}, {"s": 2, "f": 0, "dur": 240}, {"s": 3, "f": 0, "dur": 240, "fx": ["brush"]}]},
+          {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240, "dyn": "mf"}, {"s": 2, "f": 0, "dur": 240, "dyn": "mf"}, {"s": 3, "f": 0, "dur": 240, "fx": ["brush"], "dyn": "mf"}]},
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 3, "f": 2, "dur": 240, "grace": {"f": 3, "kind": "hp"}}]},
           {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "h"}]},
@@ -276,10 +278,10 @@
         "measure": 21,
         "events": [
           {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240}, {"s": 2, "f": 0, "dur": 240}, {"s": 3, "f": 0, "dur": 240, "fx": ["brush"]}]},
+          {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240, "dyn": "mf"}, {"s": 2, "f": 0, "dur": 240, "dyn": "mf"}, {"s": 3, "f": 0, "dur": 240, "fx": ["brush"], "dyn": "mf"}]},
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 2, "f": 0, "dur": 480}]},
-          {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 240}, {"s": 2, "f": 0, "dur": 240}, {"s": 3, "f": 0, "dur": 240, "fx": ["brush"]}]},
+          {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 240, "dyn": "mf"}, {"s": 2, "f": 0, "dur": 240, "dyn": "mf"}, {"s": 3, "f": 0, "dur": 240, "fx": ["brush"], "dyn": "mf"}]},
           {"tick": 1680, "notes": [{"s": 5, "f": 0, "dur": 240}]}
         ]
       },
@@ -426,7 +428,7 @@
         "measure": 33,
         "events": [
           {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240}, {"s": 2, "f": 0, "dur": 240}, {"s": 3, "f": 0, "dur": 240, "fx": ["brush"]}]},
+          {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240, "dyn": "mf"}, {"s": 2, "f": 0, "dur": 240, "dyn": "mf"}, {"s": 3, "f": 0, "dur": 240, "fx": ["brush"], "dyn": "mf"}]},
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 4, "f": 0, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 4, "f": 2, "dur": 240, "tech": "p"}]},

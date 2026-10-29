@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Soldier's Joy",
     "time_signature": "4/4",
@@ -19,14 +19,16 @@
       "instrument": "5-string-banjo",
       "tuning": ["E4", "C#4", "A3", "E3", "G4"],
       "capo": 2,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     },
     {
       "id": "guitar",
       "instrument": "6-string-guitar",
       "tuning": ["E4", "B3", "G3", "D3", "A2", "E2"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -55,7 +57,7 @@
         "measure": 3,
         "events": [
           {"tick": 0, "notes": [{"s": 5, "f": 2, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 1, "f": 10, "dur": 480}, {"s": 3, "f": 9, "dur": 480}]},
+          {"tick": 480, "notes": [{"s": 1, "f": 10, "dur": 480}, {"s": 3, "f": 9, "dur": 480, "grace": {"f": 5, "kind": "slide"}}]},
           {"tick": 960, "notes": [{"s": 1, "f": 10, "dur": 480}, {"s": 3, "f": 9, "dur": 480}]},
           {"tick": 1440, "notes": [{"s": 1, "f": 10, "dur": 240}]},
           {"tick": 1680, "notes": [{"s": 2, "f": 10, "dur": 240}]}
@@ -101,7 +103,7 @@
         "measure": 7,
         "events": [
           {"tick": 0, "notes": [{"s": 5, "f": 2, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 1, "f": 10, "dur": 480}, {"s": 3, "f": 9, "dur": 480}]},
+          {"tick": 480, "notes": [{"s": 1, "f": 10, "dur": 480}, {"s": 3, "f": 9, "dur": 480, "grace": {"f": 5, "kind": "slide"}}]},
           {"tick": 960, "notes": [{"s": 1, "f": 10, "dur": 480}, {"s": 3, "f": 9, "dur": 480}]},
           {"tick": 1440, "notes": [{"s": 3, "f": 5, "dur": 240}]},
           {"tick": 1680, "notes": [{"s": 1, "f": 0, "dur": 240}]}
@@ -424,12 +426,35 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 2, "tick": 0, "text": "D"},
+    {"measure": 5, "tick": 0, "text": "A7"},
+    {"measure": 6, "tick": 0, "text": "D"},
+    {"measure": 8, "tick": 0, "text": "D"},
+    {"measure": 8, "tick": 960, "text": "A7"},
+    {"measure": 9, "tick": 0, "text": "D"},
+    {"measure": 10, "tick": 0, "text": "D"},
+    {"measure": 11, "tick": 0, "text": "D"},
+    {"measure": 12, "tick": 0, "text": "G"},
+    {"measure": 13, "tick": 0, "text": "D"},
+    {"measure": 14, "tick": 0, "text": "A7"},
+    {"measure": 15, "tick": 0, "text": "D"},
+    {"measure": 16, "tick": 0, "text": "G"},
+    {"measure": 17, "tick": 0, "text": "D"},
+    {"measure": 17, "tick": 960, "text": "A7"},
+    {"measure": 18, "tick": 0, "text": "D"},
+    {"measure": 19, "tick": 0, "text": "D"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 9},
     {"from_measure": 2, "to_measure": 8},
     {"from_measure": 10, "to_measure": 18},
     {"from_measure": 11, "to_measure": 17},
     {"from_measure": 19, "to_measure": 19}
+  ],
+  "chords": [
+    {"name": ""},
+    {"name": ""}
   ],
   "x_source": {
     "type": "banjo-hangout",

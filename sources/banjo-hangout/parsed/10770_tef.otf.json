@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Leather Britches",
     "time_signature": "2/4",
@@ -14,21 +14,24 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     },
     {
       "id": "track-2",
       "instrument": "6-string",
       "tuning": ["E4", "B3", "G3", "D3", "A2", "E2"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     },
     {
       "id": "track-3",
       "instrument": "4-string",
       "tuning": ["G2", "D2", "A1", "E1"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -958,7 +961,7 @@
       {
         "measure": 1,
         "events": [
-          {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 120}]},
+          {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 120, "dyn": "fff"}]},
           {"tick": 120, "notes": [{"s": 2, "f": 5, "dur": 720, "tech": "/"}]},
           {"tick": 840, "notes": [{"s": 2, "f": 5, "dur": 120, "tie": true}]}
         ]
@@ -972,7 +975,7 @@
       {
         "measure": 3,
         "events": [
-          {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 120}]},
+          {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 120, "dyn": "fff"}]},
           {"tick": 120, "notes": [{"s": 2, "f": 5, "dur": 720, "tech": "/"}]},
           {"tick": 840, "notes": [{"s": 2, "f": 5, "dur": 120, "tie": true}]}
         ]
@@ -986,7 +989,7 @@
       {
         "measure": 5,
         "events": [
-          {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 120}]},
+          {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 120, "dyn": "fff"}]},
           {"tick": 120, "notes": [{"s": 2, "f": 5, "dur": 720, "tech": "/"}]},
           {"tick": 840, "notes": [{"s": 2, "f": 5, "dur": 120, "tie": true}]}
         ]
@@ -1000,8 +1003,8 @@
       {
         "measure": 7,
         "events": [
-          {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 120}]},
-          {"tick": 120, "notes": [{"s": 2, "f": 5, "dur": 360, "tech": "/"}]},
+          {"tick": 0, "notes": [{"s": 2, "f": 2, "dur": 120, "dyn": "ff"}]},
+          {"tick": 120, "notes": [{"s": 2, "f": 5, "dur": 360, "tech": "/", "dyn": "ff"}]},
           {"tick": 480, "notes": [{"s": 2, "f": 2, "dur": 120}]},
           {"tick": 600, "notes": [{"s": 2, "f": 5, "dur": 360, "tech": "/"}]}
         ]
@@ -1273,6 +1276,10 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 26, "tick": 0, "text": "Var. Part A"},
+    {"measure": 35, "tick": 0, "text": "Var. Part B"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 24},
     {"from_measure": 17, "to_measure": 23},

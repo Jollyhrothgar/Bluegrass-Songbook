@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Foggy Mountain Special",
     "time_signature": "4/4",
@@ -15,21 +15,24 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     },
     {
       "id": "guitar",
       "instrument": "6-string-guitar",
       "tuning": ["E4", "B3", "G3", "D3", "A2", "E2"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     },
     {
       "id": "bass",
       "instrument": "upright-bass",
       "tuning": ["G2", "D2", "A1", "E1"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -40,7 +43,7 @@
           {"tick": 240, "notes": [{"s": 1, "f": 12, "dur": 120}]},
           {"tick": 360, "notes": [{"s": 5, "f": 0, "dur": 120}]},
           {"tick": 480, "notes": [{"s": 1, "f": 12, "dur": 240}]},
-          {"tick": 720, "notes": [{"s": 2, "f": 11, "dur": 240}]},
+          {"tick": 720, "notes": [{"s": 2, "f": 11, "dur": 240, "fx": ["choke"]}]},
           {"tick": 960, "notes": [{"s": 5, "f": 0, "dur": 120}]},
           {"tick": 1080, "notes": [{"s": 1, "f": 0, "dur": 120}]},
           {"tick": 1200, "notes": [{"s": 3, "f": 9, "dur": 120}]},
@@ -48,7 +51,7 @@
           {"tick": 1440, "notes": [{"s": 3, "f": 7, "dur": 120}]},
           {"tick": 1560, "notes": [{"s": 1, "f": 0, "dur": 120}]},
           {"tick": 1680, "notes": [{"s": 5, "f": 0, "dur": 120}]},
-          {"tick": 1800, "notes": [{"s": 2, "f": 11, "dur": 240}]}
+          {"tick": 1800, "notes": [{"s": 2, "f": 11, "dur": 240, "fx": ["choke"]}]}
         ]
       },
       {
@@ -58,7 +61,7 @@
           {"tick": 240, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 480, "notes": [{"s": 1, "f": 12, "dur": 120}]},
           {"tick": 600, "notes": [{"s": 5, "f": 0, "dur": 120}]},
-          {"tick": 720, "notes": [{"s": 2, "f": 11, "dur": 240}]},
+          {"tick": 720, "notes": [{"s": 2, "f": 11, "dur": 240, "fx": ["choke"]}]},
           {"tick": 960, "notes": [{"s": 5, "f": 0, "dur": 120}]},
           {"tick": 1080, "notes": [{"s": 1, "f": 0, "dur": 120}]},
           {"tick": 1200, "notes": [{"s": 3, "f": 9, "dur": 120}]},
@@ -66,7 +69,7 @@
           {"tick": 1440, "notes": [{"s": 3, "f": 7, "dur": 120}]},
           {"tick": 1560, "notes": [{"s": 1, "f": 0, "dur": 120}]},
           {"tick": 1680, "notes": [{"s": 5, "f": 0, "dur": 120}]},
-          {"tick": 1800, "notes": [{"s": 2, "f": 11, "dur": 240}]}
+          {"tick": 1800, "notes": [{"s": 2, "f": 11, "dur": 240, "fx": ["choke"]}]}
         ]
       },
       {
@@ -102,15 +105,15 @@
         "measure": 5,
         "events": [
           {"tick": 240, "notes": [{"s": 1, "f": 12, "dur": 120}]},
-          {"tick": 360, "notes": [{"s": 5, "f": 0, "dur": 120}]},
+          {"tick": 360, "notes": [{"s": 5, "f": 0, "dur": 120, "fx": ["muted"]}]},
           {"tick": 480, "notes": [{"s": 1, "f": 15, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 1, "f": 14, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 1, "f": 12, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 1, "f": 14, "dur": 240}]},
-          {"tick": 1440, "notes": [{"s": 5, "f": 0, "dur": 120}]},
+          {"tick": 1440, "notes": [{"s": 5, "f": 0, "dur": 120, "fx": ["muted"]}]},
           {"tick": 1560, "notes": [{"s": 1, "f": 0, "dur": 120}]},
-          {"tick": 1680, "notes": [{"s": 5, "f": 0, "dur": 120}]},
-          {"tick": 1800, "notes": [{"s": 2, "f": 11, "dur": 240}]}
+          {"tick": 1680, "notes": [{"s": 5, "f": 0, "dur": 120, "fx": ["muted"]}]},
+          {"tick": 1800, "notes": [{"s": 2, "f": 11, "dur": 240, "fx": ["choke"]}]}
         ]
       },
       {

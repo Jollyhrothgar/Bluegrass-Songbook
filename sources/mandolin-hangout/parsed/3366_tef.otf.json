@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Growling Old Man",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "mandolin",
       "tuning": ["E5", "A4", "D4", "G3"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -617,6 +618,12 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 41, "tick": 0, "text": "OUTRO"},
+    {"measure": 45, "tick": 0, "text": "INTRO Lick 1"},
+    {"measure": 46, "tick": 0, "text": "Lick 2"},
+    {"measure": 47, "tick": 0, "text": "Lick 3"}
+  ],
   "x_source": {
     "type": "mandolin-hangout",
     "url": "https://www.hangoutstorage.com/mandohangout.com/storage/tabs/g/tab-growling-old-ma-3366-161815882022.tef",

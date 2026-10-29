@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Cripple Creek (thumb lead variations)",
     "time_signature": "2/2",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -36,9 +37,9 @@
       {
         "measure": 2,
         "events": [
-          {"tick": 0, "notes": [{"s": 3, "f": 5, "dur": 240}]},
+          {"tick": 0, "notes": [{"s": 3, "f": 5, "dur": 240, "dyn": "ff"}]},
           {"tick": 240, "notes": [{"s": 1, "f": 0, "dur": 240}]},
-          {"tick": 480, "notes": [{"s": 2, "f": 5, "dur": 240}]},
+          {"tick": 480, "notes": [{"s": 2, "f": 5, "dur": 240, "dyn": "ff"}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 2, "f": 3, "dur": 480, "finger": "T"}]},
           {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 480, "finger": "I"}, {"s": 5, "f": 0, "dur": 480, "finger": "T"}]}
@@ -403,6 +404,10 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 0, "text": "I. Stright thumb lead"},
+    {"measure": 17, "tick": 0, "text": "II. Mixed thumb lead and index lead"}
+  ],
   "x_source": {
     "type": "banjo-hangout",
     "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/c/tab-cripple-creek-(-16054-13141219102011.tef",

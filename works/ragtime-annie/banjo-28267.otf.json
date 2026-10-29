@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Ragtime Annie",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -139,7 +140,7 @@
         "events": [
           {"tick": 0, "notes": [{"s": 2, "f": 1, "dur": 240}]},
           {"tick": 240, "notes": [{"s": 1, "f": 2, "dur": 240}]},
-          {"tick": 480, "notes": [{"s": 4, "f": 0, "dur": 120}]},
+          {"tick": 480, "notes": [{"s": 4, "f": 0, "dur": 120, "dyn": "fff"}]},
           {"tick": 600, "notes": [{"s": 4, "f": 2, "dur": 120, "tech": "h"}]},
           {"tick": 720, "notes": [{"s": 2, "f": 1, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 1, "f": 2, "dur": 240}]},
@@ -364,6 +365,10 @@
     {"from_measure": 1, "to_measure": 9},
     {"from_measure": 2, "to_measure": 8},
     {"from_measure": 10, "to_measure": 26}
+  ],
+  "measure_marks": [
+    {"measure": 2, "repeat_start": true, "raw": 64},
+    {"measure": 9, "repeat_end": true, "raw": 128}
   ],
   "x_source": {
     "type": "banjo-hangout",

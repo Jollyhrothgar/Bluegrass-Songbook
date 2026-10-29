@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Reuben",
     "time_signature": "4/4",
@@ -16,7 +16,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "A3", "F#3", "D3", "F#4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -130,7 +131,7 @@
         "measure": 10,
         "events": [
           {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 240}]},
-          {"tick": 240, "notes": [{"s": 2, "f": 0, "dur": 240}]},
+          {"tick": 240, "notes": [{"s": 2, "f": 0, "dur": 240, "lh": 0}]},
           {"tick": 480, "notes": [{"s": 3, "f": 1, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "p"}]},
           {"tick": 960, "notes": [{"s": 4, "f": 0, "dur": 480}]},
@@ -145,7 +146,7 @@
           {"tick": 240, "notes": [{"s": 1, "f": 4, "dur": 240, "tech": "h"}]},
           {"tick": 480, "notes": [{"s": 1, "f": 2, "dur": 480}]},
           {"tick": 960, "notes": [{"s": 1, "f": 0, "dur": 240}]},
-          {"tick": 1200, "notes": [{"s": 2, "f": 0, "dur": 240}]},
+          {"tick": 1200, "notes": [{"s": 2, "f": 0, "dur": 240, "lh": 0}]},
           {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 1680, "notes": [{"s": 5, "f": 0, "dur": 240}]}
         ]
@@ -168,7 +169,7 @@
           {"tick": 240, "notes": [{"s": 1, "f": 4, "dur": 240, "tech": "h"}]},
           {"tick": 480, "notes": [{"s": 1, "f": 2, "dur": 480}]},
           {"tick": 960, "notes": [{"s": 1, "f": 0, "dur": 240}]},
-          {"tick": 1200, "notes": [{"s": 2, "f": 0, "dur": 240}]},
+          {"tick": 1200, "notes": [{"s": 2, "f": 0, "dur": 240, "lh": 0}]},
           {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 1680, "notes": [{"s": 5, "f": 0, "dur": 240}]}
         ]
@@ -222,6 +223,9 @@
     "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/r/tab-reuben-17816-371218692012.tef",
     "download_file": "17816_tef_reuben.tef",
     "author": "cmcnabb",
-    "converted_at": "2026-08-01T11:14:56.925344"
+    "converted_at": "2026-08-01T11:14:56.925344",
+    "skipped": {
+      "tempo_changes": 1
+    }
   }
 }

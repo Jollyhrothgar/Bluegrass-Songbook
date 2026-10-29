@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Old Joe Clark",
     "time_signature": "4/4",
@@ -16,28 +16,32 @@
       "instrument": "6-string-guitar",
       "tuning": ["E4", "B3", "G3", "D3", "A2", "E2"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     },
     {
       "id": "bass",
       "instrument": "upright-bass",
       "tuning": ["G2", "D2", "A1", "E1"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "ff"
     },
     {
       "id": "guitar-2",
       "instrument": "6-string-guitar",
       "tuning": ["E4", "B3", "G3", "D3", "A2", "E2"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "fff"
     },
     {
       "id": "mandolin",
       "instrument": "mandolin",
       "tuning": ["E5", "A4", "D4", "G3"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "fff"
     }
   ],
   "notation": {
@@ -329,15 +333,15 @@
       {
         "measure": 4,
         "events": [
-          {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 960, "fx": ["staccato"]}]},
-          {"tick": 960, "notes": [{"s": 1, "f": 0, "dur": 960, "fx": ["staccato"]}]}
+          {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 960, "fx": ["staccato"], "dyn": "f"}]},
+          {"tick": 960, "notes": [{"s": 1, "f": 0, "dur": 960, "fx": ["staccato"], "dyn": "f"}]}
         ]
       },
       {
         "measure": 5,
         "events": [
-          {"tick": 0, "notes": [{"s": 2, "f": 0, "dur": 960, "fx": ["staccato"]}]},
-          {"tick": 960, "notes": [{"s": 3, "f": 0, "dur": 960, "fx": ["staccato"]}]}
+          {"tick": 0, "notes": [{"s": 2, "f": 0, "dur": 960, "fx": ["staccato"], "dyn": "f"}]},
+          {"tick": 960, "notes": [{"s": 3, "f": 0, "dur": 960, "fx": ["staccato"], "dyn": "f"}]}
         ]
       },
       {
@@ -400,7 +404,7 @@
         "measure": 14,
         "events": [
           {"tick": 0, "notes": [{"s": 2, "f": 3, "dur": 960, "fx": ["staccato"]}]},
-          {"tick": 960, "notes": [{"s": 2, "f": 3, "dur": 960, "fx": ["staccato"]}]}
+          {"tick": 960, "notes": [{"s": 2, "f": 3, "dur": 960, "fx": ["staccato"], "dyn": "fff"}]}
         ]
       },
       {
@@ -420,8 +424,8 @@
       {
         "measure": 17,
         "events": [
-          {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 960, "fx": ["staccato"]}]},
-          {"tick": 960, "notes": [{"s": 2, "f": 0, "dur": 960, "fx": ["staccato"]}]}
+          {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 960, "fx": ["staccato"], "dyn": "fff"}]},
+          {"tick": 960, "notes": [{"s": 2, "f": 0, "dur": 960, "fx": ["staccato"], "dyn": "fff"}]}
         ]
       },
       {
@@ -434,30 +438,30 @@
       {
         "measure": 20,
         "events": [
-          {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 960, "fx": ["staccato"]}]},
-          {"tick": 960, "notes": [{"s": 2, "f": 3, "dur": 960, "fx": ["staccato"]}]}
+          {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 960, "fx": ["staccato"], "dyn": "fff"}]},
+          {"tick": 960, "notes": [{"s": 2, "f": 3, "dur": 960, "fx": ["staccato"], "dyn": "fff"}]}
         ]
       },
       {
         "measure": 21,
         "events": [
-          {"tick": 0, "notes": [{"s": 2, "f": 0, "dur": 960, "fx": ["staccato"]}]},
-          {"tick": 960, "notes": [{"s": 3, "f": 3, "dur": 960, "fx": ["staccato"]}]}
+          {"tick": 0, "notes": [{"s": 2, "f": 0, "dur": 960, "fx": ["staccato"], "dyn": "fff"}]},
+          {"tick": 960, "notes": [{"s": 3, "f": 3, "dur": 960, "fx": ["staccato"], "dyn": "fff"}]}
         ]
       },
       {
         "measure": 22,
         "events": [
-          {"tick": 0, "notes": [{"s": 2, "f": 0, "dur": 960, "fx": ["staccato"]}]},
-          {"tick": 960, "notes": [{"s": 3, "f": 3, "dur": 960, "fx": ["staccato"]}]}
+          {"tick": 0, "notes": [{"s": 2, "f": 0, "dur": 960, "fx": ["staccato"], "dyn": "f"}]},
+          {"tick": 960, "notes": [{"s": 3, "f": 3, "dur": 960, "fx": ["staccato"], "dyn": "f"}]}
         ]
       },
       {
         "measure": 23,
         "events": [
-          {"tick": 0, "notes": [{"s": 3, "f": 1, "dur": 480, "fx": ["staccato"]}]},
-          {"tick": 480, "notes": [{"s": 3, "f": 0, "dur": 960, "fx": ["staccato"]}]},
-          {"tick": 1440, "notes": [{"s": 4, "f": 3, "dur": 960, "fx": ["let-ring"]}]}
+          {"tick": 0, "notes": [{"s": 3, "f": 1, "dur": 480, "fx": ["staccato"], "dyn": "f"}]},
+          {"tick": 480, "notes": [{"s": 3, "f": 0, "dur": 960, "fx": ["staccato"], "dyn": "f"}]},
+          {"tick": 1440, "notes": [{"s": 4, "f": 3, "dur": 960, "fx": ["let-ring"], "dyn": "f"}]}
         ]
       }
     ],
@@ -465,7 +469,7 @@
       {
         "measure": 2,
         "events": [
-          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 480}]},
+          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 480, "dyn": "f"}]},
           {"tick": 480, "notes": [{"s": 1, "f": 3, "dur": 960}, {"s": 2, "f": 3, "dur": 960}, {"s": 3, "f": 0, "dur": 960}]},
           {"tick": 1440, "notes": [{"s": 1, "f": 3, "dur": 480}, {"s": 2, "f": 3, "dur": 480}, {"s": 3, "f": 0, "dur": 480}]}
         ]
@@ -608,7 +612,7 @@
       {
         "measure": 19,
         "events": [
-          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 1920}]}
+          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 1920, "dyn": "f"}]}
         ]
       }
     ],

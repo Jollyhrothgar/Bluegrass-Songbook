@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Soldier's Joy (with melodics)",
     "time_signature": "2/4",
@@ -16,7 +16,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -408,8 +409,8 @@
       {
         "measure": 33,
         "events": [
-          {"tick": 0, "notes": [{"s": 4, "f": 0, "dur": 240}]},
-          {"tick": 240, "notes": [{"s": 3, "f": 2, "dur": 240}]},
+          {"tick": 0, "notes": [{"s": 4, "f": 0, "dur": 240, "fx": ["let-ring"]}]},
+          {"tick": 240, "notes": [{"s": 3, "f": 2, "dur": 240, "fx": ["let-ring"]}]},
           {"tick": 480, "notes": [{"s": 1, "f": 4, "dur": 480}, {"s": 2, "f": 3, "dur": 480}]}
         ]
       },
@@ -507,11 +508,58 @@
         "measure": 41,
         "events": [
           {"tick": 0, "notes": [{"s": 4, "f": 0, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 1, "f": 4, "dur": 480}, {"s": 2, "f": 3, "dur": 480}, {"s": 3, "f": 2, "dur": 480}, {"s": 4, "f": 0, "dur": 480}]}
+          {"tick": 480, "notes": [{"s": 1, "f": 4, "dur": 480}, {"s": 2, "f": 3, "dur": 480}, {"s": 3, "f": 2, "dur": 480}, {"s": 4, "f": 0, "dur": 480, "fx": ["brush", "let-ring"]}]}
         ]
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 0, "text": "INTRO"},
+    {"measure": 2, "tick": 0, "text": "PART A"},
+    {"measure": 2, "tick": 0, "text": "D"},
+    {"measure": 5, "tick": 0, "text": "A"},
+    {"measure": 6, "tick": 0, "text": "D"},
+    {"measure": 8, "tick": 0, "text": "D"},
+    {"measure": 8, "tick": 480, "text": "A"},
+    {"measure": 9, "tick": 0, "text": "D"},
+    {"measure": 10, "tick": 0, "text": "PART B"},
+    {"measure": 10, "tick": 0, "text": "D"},
+    {"measure": 11, "tick": 0, "text": "G"},
+    {"measure": 12, "tick": 0, "text": "D"},
+    {"measure": 13, "tick": 0, "text": "A"},
+    {"measure": 14, "tick": 0, "text": "D"},
+    {"measure": 15, "tick": 0, "text": "G"},
+    {"measure": 16, "tick": 0, "text": "D"},
+    {"measure": 16, "tick": 480, "text": "A"},
+    {"measure": 17, "tick": 0, "text": "D"},
+    {"measure": 18, "tick": 0, "text": "PART A -- VARIATION"},
+    {"measure": 18, "tick": 0, "text": "D"},
+    {"measure": 21, "tick": 0, "text": "A"},
+    {"measure": 22, "tick": 0, "text": "D"},
+    {"measure": 24, "tick": 0, "text": "D"},
+    {"measure": 24, "tick": 480, "text": "A"},
+    {"measure": 25, "tick": 0, "text": "D"},
+    {"measure": 26, "tick": 0, "text": "PART B -- MELODIC VARIATION"},
+    {"measure": 26, "tick": 0, "text": "D"},
+    {"measure": 27, "tick": 0, "text": "G"},
+    {"measure": 28, "tick": 0, "text": "D"},
+    {"measure": 29, "tick": 0, "text": "A"},
+    {"measure": 30, "tick": 0, "text": "D"},
+    {"measure": 31, "tick": 0, "text": "G"},
+    {"measure": 32, "tick": 0, "text": "D"},
+    {"measure": 32, "tick": 480, "text": "A"},
+    {"measure": 33, "tick": 0, "text": "D"},
+    {"measure": 34, "tick": 0, "text": "PART B -- MORE MELODICS"},
+    {"measure": 34, "tick": 0, "text": "D"},
+    {"measure": 35, "tick": 0, "text": "G"},
+    {"measure": 36, "tick": 0, "text": "D"},
+    {"measure": 37, "tick": 0, "text": "A"},
+    {"measure": 38, "tick": 0, "text": "D"},
+    {"measure": 39, "tick": 0, "text": "G"},
+    {"measure": 40, "tick": 0, "text": "D"},
+    {"measure": 40, "tick": 480, "text": "A"},
+    {"measure": 41, "tick": 0, "text": "D"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 1},
     {"from_measure": 2, "to_measure": 9},
@@ -521,6 +569,16 @@
     {"from_measure": 18, "to_measure": 25},
     {"from_measure": 18, "to_measure": 25},
     {"from_measure": 26, "to_measure": 41}
+  ],
+  "measure_marks": [
+    {"measure": 2, "repeat_start": true, "raw": 64},
+    {"measure": 9, "repeat_end": true, "raw": 128},
+    {"measure": 10, "repeat_start": true, "raw": 64},
+    {"measure": 17, "repeat_end": true, "raw": 128},
+    {"measure": 18, "repeat_start": true, "raw": 64},
+    {"measure": 25, "repeat_end": true, "raw": 128},
+    {"measure": 34, "raw": 7},
+    {"measure": 41, "end_bar": true, "raw": 8}
   ],
   "x_source": {
     "type": "banjo-hangout",

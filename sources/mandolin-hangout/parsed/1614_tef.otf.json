@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Foggy Mountain Breakdown",
     "time_signature": "4/4",
@@ -16,14 +16,16 @@
       "instrument": "mandolin",
       "tuning": ["E5", "A4", "D4", "G3"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     },
     {
       "id": "guitar",
       "instrument": "6-string-guitar",
       "tuning": ["E4", "B3", "G3", "D3", "A2", "E2"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -417,7 +419,7 @@
       {
         "measure": 32,
         "events": [
-          {"tick": 0, "notes": [{"s": 4, "f": 0, "dur": 480}]}
+          {"tick": 0, "notes": [{"s": 4, "f": 0, "dur": 480, "fx": ["let-ring"]}]}
         ]
       }
     ],
@@ -709,11 +711,26 @@
       {
         "measure": 32,
         "events": [
-          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 480}]}
+          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 480, "fx": ["let-ring"]}]}
         ]
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 0, "text": "G"},
+    {"measure": 5, "tick": 0, "text": "E"},
+    {"measure": 8, "tick": 0, "text": "G"},
+    {"measure": 9, "tick": 0, "text": "E"},
+    {"measure": 12, "tick": 0, "text": "G"},
+    {"measure": 13, "tick": 0, "text": "D"},
+    {"measure": 15, "tick": 0, "text": "G"},
+    {"measure": 21, "tick": 0, "text": "E"},
+    {"measure": 24, "tick": 0, "text": "G"},
+    {"measure": 25, "tick": 0, "text": "E"},
+    {"measure": 28, "tick": 0, "text": "G"},
+    {"measure": 29, "tick": 0, "text": "D"},
+    {"measure": 31, "tick": 0, "text": "G"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 23}
   ],

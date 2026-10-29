@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Cherokee Shuffle",
     "time_signature": "2/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -254,16 +255,53 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 240, "text": "VERSE"},
+    {"measure": 9, "tick": 240, "text": "CHORUS"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 8},
     {"from_measure": 1, "to_measure": 18},
     {"from_measure": 9, "to_measure": 18}
+  ],
+  "chords": [
+    {"name": "G", "frets": [9, 8, 7, null, null], "first_fret": 7},
+    {"name": "G", "frets": [17, 15, 16, null, null], "first_fret": 15},
+    {"name": "C", "frets": [10, 8, 9, null, null], "first_fret": 8},
+    {"name": "D", "frets": [12, 10, 11, null, null], "first_fret": 10},
+    {"name": "G", "frets": [9, 8, 7, null, null], "first_fret": 7},
+    {"name": "G", "frets": [9, 8, 7, null, null], "first_fret": 7},
+    {"name": "G", "frets": [9, 8, 7, null, null], "first_fret": 7},
+    {"name": "G", "frets": [17, 15, 16, null, null], "first_fret": 15},
+    {"name": "Em"}
+  ],
+  "chord_diagrams": [
+    {"measure": 1, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 3, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 4, "tick": 0, "track": "banjo", "chord": 8},
+    {"measure": 5, "tick": 0, "track": "banjo", "chord": 2},
+    {"measure": 6, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 7, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 8, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 9, "tick": 0, "track": "banjo", "chord": 2},
+    {"measure": 10, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 11, "tick": 0, "track": "banjo", "chord": 2},
+    {"measure": 12, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 13, "tick": 0, "track": "banjo", "chord": 2},
+    {"measure": 14, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 15, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 16, "tick": 0, "track": "banjo", "chord": 8},
+    {"measure": 17, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 18, "tick": 0, "track": "banjo", "chord": 0}
   ],
   "x_source": {
     "type": "banjo-hangout",
     "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/c/tab-cherokee-shuffl-23404-3332310112018.tef",
     "author": "Yohansen",
     "converted_at": "2026-07-26T22:20:06.224394",
-    "source_id": "23404"
+    "source_id": "23404",
+    "skipped": {
+      "picking_marks": 1
+    }
   }
 }

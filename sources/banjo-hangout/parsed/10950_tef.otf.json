@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Old Joe Clark",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "mf"
     }
   ],
   "notation": {
@@ -131,7 +132,7 @@
           {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 3, "f": 0, "dur": 240}]},
-          {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 180}]},
+          {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 180, "tech": "x"}]},
           {"tick": 1380, "notes": [{"s": 2, "f": 2, "dur": 60}]},
           {"tick": 1440, "notes": [{"s": 2, "f": 3, "dur": 240, "tech": "/"}]},
           {"tick": 1680, "notes": [{"s": 1, "f": 0, "dur": 240}]}
@@ -237,9 +238,9 @@
           {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 4, "f": 0, "dur": 240}]},
-          {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240}]},
+          {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "x"}]},
           {"tick": 1440, "notes": [{"s": 4, "f": 2, "dur": 240}]},
-          {"tick": 1680, "notes": [{"s": 3, "f": 0, "dur": 240}, {"s": 4, "f": 4, "dur": 240}]}
+          {"tick": 1680, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "x"}, {"s": 4, "f": 4, "dur": 240}]}
         ]
       },
       {
@@ -290,9 +291,9 @@
           {"tick": 480, "notes": [{"s": 4, "f": 3, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 4, "f": 0, "dur": 240}]},
-          {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240}]},
+          {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "x"}]},
           {"tick": 1440, "notes": [{"s": 4, "f": 2, "dur": 240}]},
-          {"tick": 1680, "notes": [{"s": 3, "f": 0, "dur": 180}]},
+          {"tick": 1680, "notes": [{"s": 3, "f": 0, "dur": 180, "tech": "x"}]},
           {"tick": 1860, "notes": [{"s": 4, "f": 4, "dur": 60}]}
         ]
       },
@@ -343,9 +344,9 @@
           {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 3, "f": 0, "dur": 240}]},
-          {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240}]},
+          {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "x"}]},
           {"tick": 1440, "notes": [{"s": 4, "f": 2, "dur": 240}]},
-          {"tick": 1680, "notes": [{"s": 3, "f": 0, "dur": 180}]},
+          {"tick": 1680, "notes": [{"s": 3, "f": 0, "dur": 180, "tech": "x"}]},
           {"tick": 1860, "notes": [{"s": 4, "f": 4, "dur": 60}]}
         ]
       },
@@ -448,9 +449,9 @@
           {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 3, "f": 0, "dur": 240}]},
-          {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240}]},
-          {"tick": 1440, "notes": [{"s": 3, "f": 0, "dur": 240}]},
-          {"tick": 1680, "notes": [{"s": 3, "f": 0, "dur": 240}]}
+          {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "x"}]},
+          {"tick": 1440, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "x"}]},
+          {"tick": 1680, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "x"}]}
         ]
       }
     ]
