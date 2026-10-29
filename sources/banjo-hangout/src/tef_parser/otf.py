@@ -166,6 +166,8 @@ class OTFDocument:
     notation: dict[str, list[OTFMeasure]] = field(default_factory=dict)
     annotations: list[OTFAnnotation] = field(default_factory=list)
     reading_list: list[OTFReadingListEntry] = field(default_factory=list)
+    # Repeat signs (schema 1.2): [{measure, ...decode_mark_raw(raw), raw}]
+    measure_marks: list[dict] = field(default_factory=list)
 
     def to_dict(self) -> dict[str, Any]:
         """Convert to dictionary for YAML/JSON serialization."""
@@ -248,6 +250,9 @@ class OTFDocument:
                 if e.name:
                     entry["name"] = e.name
                 result["reading_list"].append(entry)
+
+        if self.measure_marks:
+            result["measure_marks"] = [dict(m) for m in self.measure_marks]
 
         return result
 
@@ -1162,5 +1167,12 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
             to_measure=entry.to_measure,
             name=entry.name,
         ))
+
+    # Repeat signs: one entry per marked measure, ascending. The flag byte
+    # is the OR of every mark in the measure, as TablEdit ORs them.
+    for index in sorted(tef.measure_flags):
+        raw = tef.measure_flags[index]
+        doc.measure_marks.append(
+            {"measure": index + 1, **decode_mark_raw(raw), "raw": raw})
 
     return doc

@@ -351,6 +351,12 @@ class TEFFile:
     note_events: list[TEFNoteEvent] = field(default_factory=list)
     text_events: list[TEFTextEvent] = field(default_factory=list)
     reading_list: list[TEFReadingListEntry] = field(default_factory=list)
+    # Repeat signs (G15d4): 0-based measure -> the OR of the flag bytes of
+    # every V3 0xb7 / V2 0x5e "reading guide" component in that measure,
+    # exactly as TablEdit ORs them (FUN_10001b1a0 case 0xd). mark_records
+    # counts the components, so a census can compare records with entries.
+    measure_flags: dict[int, int] = field(default_factory=dict)
+    mark_records: int = 0
     time_signature_changes: list[TEFTimeSignatureChange] = field(default_factory=list)
     # V3 only: (num, den) derived from the measure table — the table is
     # the authoritative meter (no known header signature field in V3).
@@ -1107,6 +1113,11 @@ class TEFReader:
         # TEFTextEvents by _parse_v3.
         self._v3_text_refs: list[tuple[int, int, int]] = []  # (position, string_row, index)
 
+        # Reading-guide marks (type 0xb7, G15d4): (position, flag byte).
+        # Only cell byte 2 (file byte 6) is read; the string row is ignored.
+        # Resolved to measures by _parse_v3 once v3_locate() exists.
+        self._v3_mark_refs: list[tuple[int, int]] = []
+
         offset = start_offset
         consecutive_invalid = 0
         max_invalid = 20
@@ -1120,6 +1131,9 @@ class TEFReader:
 
             # Skip known non-note component types (capturing text anchors)
             if component_type & 0x3f >= FIRST_SPECIAL_TYPE:
+                if component_type == 0xb7:
+                    self._v3_mark_refs.append(
+                        (location // VALUE_PER_POSITION, record[6]))
                 if component_type == 0x39:
                     self._v3_text_refs.append((
                         location // VALUE_PER_POSITION,
@@ -1312,6 +1326,13 @@ class TEFReader:
         # the reading list. Resolved by _parse_v2.
         self._v2_text_refs: list[tuple[int, int, int]] = []  # (position, string_row, index)
 
+        # Reading-guide marks (fret byte 0x5e, G15d4): the flag byte is
+        # record byte 4 (the V2 upgrade moves it to V3 cell byte 2), OR-ed
+        # into the measure that holds the record. Only the 6-byte layout
+        # has a byte 4. Resolved by _parse_v2.
+        self._v2_measure_flags: dict[int, int] = {}
+        self._v2_mark_records = 0
+
         # Loud-failure backstop. A component stream read at the wrong
         # stride still decodes into "notes" — just at impossible measure
         # numbers (10591 read as 6-byte records reported 324 notes across
@@ -1391,6 +1412,13 @@ class TEFReader:
 
             if ts_move and position_in_measure >= ts_move:
                 position_in_measure -= ts_move
+
+            if fret_byte == 0x5e and stride == 6:
+                self._v2_measure_flags[measure] = (
+                    self._v2_measure_flags.get(measure, 0) | rec[4])
+                self._v2_mark_records += 1
+                offset += stride
+                continue
 
             if fret_byte == 0x1d:
                 self._v2_text_refs.append((
@@ -1968,6 +1996,8 @@ class TEFReader:
             note_events=note_events,
             text_events=text_events,
             reading_list=reading_list,
+            measure_flags=dict(getattr(self, "_v2_measure_flags", {})),
+            mark_records=getattr(self, "_v2_mark_records", 0),
             time_signature_changes=time_signature_changes,
         )
 
@@ -2023,7 +2053,7 @@ class TEFReader:
                     text=text_table[idx],
                 ))
 
-        return TEFFile(
+        tef = TEFFile(
             path=self.path,
             header=header,
             title=title,
@@ -2039,3 +2069,9 @@ class TEFReader:
             v3_measure_starts=getattr(self, "_v3_measure_starts", []),
             v3_measure_lengths=getattr(self, "_v3_measure_lengths", []),
         )
+        # Reading-guide marks (0xb7): OR each into the measure holding it.
+        for position, flags in getattr(self, "_v3_mark_refs", []):
+            index, _ = tef.v3_locate(position)
+            tef.measure_flags[index] = tef.measure_flags.get(index, 0) | flags
+            tef.mark_records += 1
+        return tef
