@@ -6,7 +6,7 @@
 # the [bracketed] ids from otf_schema.py; `schema` means the JSON Schema rejects it.
 # Format: <path> <rule-id> [<rule-id> ...]
 
-# works/: importer emits two notes on one string at one tick; triage pending (G15 checklist).
+# works/: two notes on one string at one tick; triage + fix is #318 § G15d5 (batch 3).
 works/jerusalem-ridge-ensemble/fiddle.otf.json duplicate_string
 
 # sources/*/parsed/: frozen Tier-2 parser output, not served. Kept as found,
