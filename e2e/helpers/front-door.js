@@ -56,3 +56,21 @@ export async function clickOverflow(page, label) {
     await page.locator('#topbar-overflow-btn').click();
     await page.locator('#topbar-overflow-menu .pill-popover-item', { hasText: label }).click();
 }
+
+/** The Save as… panel (File ▸ Save as…, or Ctrl+S). */
+export const saveAsPanel = (page) => page.locator('.otf-save-as-popover');
+
+/**
+ * File ▸ Save as…, pick a format and (optionally) a name, press Save, and hand
+ * back the download. `format` is the radio's value: 'tef', 'otf' or 'txt'.
+ */
+export async function saveAs(page, { format = null, name = null } = {}) {
+    await clickFileItem(page, 'Save as');
+    const panel = saveAsPanel(page);
+    await expect(panel).toBeVisible();
+    if (format) await panel.locator(`input[name="save-as-format"][value="${format}"]`).check();
+    if (name !== null) await panel.locator('.save-as-name').fill(name);
+    await expect(panel.locator('.save-btn')).toBeEnabled();
+    const [download] = await Promise.all([page.waitForEvent('download'), panel.locator('.save-btn').click()]);
+    return download;
+}

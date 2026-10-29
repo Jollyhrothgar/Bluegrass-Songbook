@@ -70,9 +70,8 @@ ALL_SONGS_DESCRIPTION = ('Every song in Bluegrass Book, A to Z: chords, lyrics a
 TAB_EDITOR_DIR = 'tab-editor'
 TAB_EDITOR_SOURCE = 'scripts/lib/build_song_pages.py'   # what dates its sitemap entry, with docs/index.html
 TAB_EDITOR_TITLE = 'Tab Editor · Bluegrass Book'
-# Says nothing about saving back as .tef until that exists (G15f adds it).
-TAB_EDITOR_DESCRIPTION = ('Open a TablEdit .tef file and edit it in your browser, on a phone or '
-                          'a laptop. Free, with no account. Your tabs stay on your device.')
+TAB_EDITOR_DESCRIPTION = ('Open a TablEdit (.tef) file, fix it up in your browser, and save it back '
+                          'as .tef. Free, with no account, on a phone or a laptop.')
 # The words below are the app's empty state too (docs/js/tab-editor-home.js):
 # the heading and the privacy line must read the same in both.
 TAB_EDITOR_H1 = 'Tab Editor'
@@ -478,16 +477,16 @@ def render_tab_editor_page(template: str) -> str:
     article = '\n'.join([
         '<article class="prerender">',
         f'<h1>{esc(TAB_EDITOR_H1)}</h1>',
-        '<p>Open a TablEdit file, or a tab saved from this site, and edit it right here in '
-        'your browser. It is free, it needs no account, and it works on a phone as well as a '
-        'laptop.</p>',
+        '<p>Open a TablEdit (<code>.tef</code>) file, fix it up in your browser, and save it '
+        'back as <code>.tef</code>. It is free, it needs no account, and it works on a phone as '
+        'well as a laptop.</p>',
         f'<p>{esc(TAB_EDITOR_PRIVACY)}</p>',
         '<ul>',
         '<li>Open a <code>.tef</code> or <code>.otf.json</code> file</li>',
         '<li>Start a new tab for banjo, guitar, mandolin, fiddle, dobro or bass</li>',
         '<li>Edit with the keyboard or by touch, and play it back</li>',
         '<li>Keep your tabs in My tabs, saved in this browser</li>',
-        '<li>Download your work, or submit it to the book when you are ready</li>',
+        '<li>Save your work as <code>.tef</code>, <code>.otf.json</code> or plain text, or submit it to the book when you are ready</li>',
         '</ul>',
         '</article>',
     ])

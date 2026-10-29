@@ -4,10 +4,21 @@
 // editor over a rendered tab, applies edits back to the view (Done /
 // Ctrl+S), downloads the OTF, and never discards work without asking.
 //
+// ONE COMMAND SURFACE (G17). The session bar in the bottom band holds only
+// the two buttons a visitor must not miss: Submit and ✓ Done (edit sessions).
+// Everything else the session offers (Open…, Import .tef…, Save as…,
+// Cancel) lives in the editor's File menu only, built from `fileActions`
+// below, so no command is drawn twice. Cancel keeps its inline "Discard
+// edits?" question, shown in the bar whichever surface raised it.
+//
+// Ctrl/Cmd+S opens Save as… (G15f), the same panel as the File item. It used
+// to apply the edits to the view; ✓ Done (applyAndExit) is the one way to do
+// that now, and session.apply() remains for callers that want it.
+//
 // UI-free of editor internals: the editor is injected via editorFactory
 // so work-view can lazy-import OTFEditor and tests can stub it. The
-// only editor surface used: save(), download(filename?), destroy(),
-// state.facade.canUndo() (dirty check), and the onSave option.
+// only editor surface used: save(), openSaveAs(), setSource(), load(),
+// destroy() and state.facade.canUndo() (dirty check).
 
 import { pitchedTracks } from '../renderers/otf-tracks.js';
 import { chooseTabFile } from '../pwa.js';
@@ -40,8 +51,10 @@ export function resolveEditTrackId(otf, instrument) {
  * @param {string} [options.trackId] - track to edit (see resolveEditTrackId)
  * @param {string} [options.protectedTrackId] - a correction's own track: the
  *   editor will not delete it (null for a new take or an opened file)
- * @param {string} [options.filename] - download filename (no extension)
- * @param {Function} options.editorFactory - ({container, otf, trackId, onSave}) => editor
+ * @param {string} [options.filename] - Save as's file name when there is no source (no extension)
+ * @param {{name: string, bytes?: ArrayBuffer}} [options.source] - the file this document was
+ *   opened from: Save as starts from its format and name, and writes a .tef over its bytes
+ * @param {Function} options.editorFactory - ({container, otf, trackId, source, filename, ...}) => editor
  * @param {Function} [options.onApply] - receives the edited document
  * @param {Function} [options.onExit] - receives 'apply' | 'cancel' after unmount
  * @param {Function} [options.confirmDiscard] - () => boolean; defaults to window.confirm
@@ -60,8 +73,8 @@ export function resolveEditTrackId(otf, instrument) {
  * @param {boolean} [options.lockExistingCredit] - a correction of a published
  *   take: an existing "Tab by" credit is read-only unless the user is trusted.
  * @param {Function} [options.isTrusted] - () => Promise<boolean>
- * @param {Array} [options.extraActions] - [{className, label, title, onClick}]
- *   buttons prepended to the group (e.g. "Import .tef…").
+ * @param {Array} [options.extraActions] - [{label, onClick}] File-menu entries
+ *   after Open… (e.g. "📂 Import .tef…"). They are not bar buttons.
  */
 export function createTabEditSession({
     mount,
@@ -69,6 +82,7 @@ export function createTabEditSession({
     trackId = null,
     protectedTrackId = null,
     filename = null,
+    source = null,
     editorFactory,
     onApply = () => {},
     onExit = () => {},
@@ -106,8 +120,6 @@ export function createTabEditSession({
         ${compact ? '' : '<span class="tab-edit-title"></span>'}
         <span class="tab-edit-actions" style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
             ${onSubmit ? '<button type="button" class="tab-edit-submit qc-toggle-btn"></button>' : ''}
-            <button type="button" class="tab-edit-download qc-toggle-btn" title="Download the edited OTF">⬇ Download</button>
-            <button type="button" class="tab-edit-cancel qc-toggle-btn" title="Discard changes and go back">Cancel</button>
             ${showDone ? '<button type="button" class="tab-edit-done qc-toggle-btn" title="Apply changes to the view">✓ Done</button>' : ''}
             <span class="tab-edit-status"></span>
         </span>
@@ -119,15 +131,6 @@ export function createTabEditSession({
         submitBtn.title = submitLabel.replace(/^\W+\s*/, '');
     }
     const actionsEl = bar.querySelector('.tab-edit-actions');
-    for (const action of extraActions) {
-        const btn = document.createElement('button');
-        btn.type = 'button';
-        btn.className = `${action.className || 'tab-edit-extra'} qc-toggle-btn`;
-        btn.textContent = action.label || '';
-        if (action.title) btn.title = action.title;
-        btn.addEventListener('click', () => action.onClick?.(session));
-        actionsEl.insertBefore(btn, actionsEl.firstChild);
-    }
     // textContent, not interpolation: track ids come from OTF data,
     // which community submissions make untrusted input
     if (!compact) {
@@ -169,15 +172,16 @@ export function createTabEditSession({
         otf,
         trackId,
         protectedTrackId,
-        onSave: (doc) => onApply(doc),
+        source,
+        filename,
         ...(onChange ? { onChange: (doc) => onChange(doc) } : {}),
         // In compact mode the bottom band owns playback, so the editor's
         // status bar drops its own transport (plan §8.3: one transport).
         hostTransport: compact,
-        // The File menu offers the session's own buttons — the same
-        // handlers, reached from the keyboard-discoverable place. `editor`
-        // and `session` are consts assigned below; every `run` is a
-        // closure invoked long after both exist.
+        // The File menu holds every session command except Submit and Done's
+        // buttons (which the bar also carries); same handlers. `editor` and
+        // `session` are consts assigned below; every `run` is a closure
+        // invoked long after both exist.
         fileActions: [
             // Open… first, as every File menu has it. The caller decides what
             // opening means (work-view flushes the autosave first); with no
@@ -186,15 +190,22 @@ export function createTabEditSession({
                 label: '📂 Open…',
                 run: () => (onOpenFile ? onOpenFile(session) : chooseTabFile({ source: 'menu' })),
             },
+            // Import .tef…, only where the session offers it
+            ...extraActions.map(a => ({
+                label: a.label,
+                run: () => a.onClick?.(session),
+            })),
+            // Ctrl+S opens the same panel, so the File item prints its key.
+            {
+                label: '💾 Save as…',
+                action: 'edit.save',
+                run: () => editor.openSaveAs?.(),
+            },
+            { separator: true },
             ...(onSubmit ? [{
                 label: submitLabel,
                 run: () => bar.querySelector('.tab-edit-submit')?.click(),
             }] : []),
-            {
-                label: '⬇ Download OTF',
-                action: 'edit.save',
-                run: () => editor.download?.(filename),
-            },
             { label: 'Cancel', run: () => session.cancel() },
             ...(showDone ? [{ label: '✓ Done', run: () => session.applyAndExit() }] : []),
         ],
@@ -247,8 +258,11 @@ export function createTabEditSession({
         discardAsk.className = 'tab-edit-discard-confirm';
         discardAsk.setAttribute('role', 'alertdialog');
         discardAsk.setAttribute('aria-label', 'Discard edits?');
+        // A whole row of the bar: it is raised from the File menu now, far
+        // from the bar, so it must be unmissable, and on a phone it needs
+        // the full width to keep both answers on screen.
         discardAsk.style.cssText =
-            'display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap;';
+            'display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap;flex:1 1 100%;';
         discardAsk.innerHTML = `
             <span class="tab-edit-discard-question">Discard edits?</span>
             <button type="button" class="tab-edit-discard-yes qc-toggle-btn">Discard</button>
@@ -340,7 +354,8 @@ export function createTabEditSession({
         },
 
         /** Swap the document being edited (a .tef import into this mode). */
-        replaceDocument(doc) {
+        replaceDocument(doc, newSource = null) {
+            editor.setSource?.(newSource);
             editor.load?.(doc);
             credit?.refresh();
         },
@@ -354,9 +369,6 @@ export function createTabEditSession({
 
     bar.querySelector('.tab-edit-done')
         ?.addEventListener('click', () => session.applyAndExit());
-    bar.querySelector('.tab-edit-cancel').addEventListener('click', () => session.cancel());
-    bar.querySelector('.tab-edit-download').addEventListener('click', () => editor.download?.(filename));
-
     // A brand-new take has nothing to describe, so Submit IS the submission —
     // no comment panel in the way. (The correction path below is unchanged.)
     if (onSubmit && !commentRequired) {

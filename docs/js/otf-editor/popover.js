@@ -2,7 +2,8 @@
 // UI for entering notes and placed text via click/tap
 //
 import { FretEntry } from './bindings.js';
-import { ARTICULATION_BUTTONS, FX_BUTTONS } from './toolbar.js';
+import { ARTICULATION_BUTTONS, FX_BUTTONS, PHONE_MAX_WIDTH } from './toolbar.js';
+import { fileNameFor } from './save-as.js';
 import { FX_ORDER, GRACE_KINDS, GRACE_MAX_FRET } from './facade.js';
 
 /**
@@ -2041,6 +2042,213 @@ export class TrackPopover {
     get opened() { return this.isOpen; }
 
     destroy() {
+        this.overlay?.parentNode?.removeChild(this.overlay);
+        this.overlay = null;
+        this.element = null;
+    }
+}
+
+/**
+ * File ▸ Save as… (G15f) — a sibling of the prompts above, in the page and
+ * never a native dialog (it must work on a phone and be drivable by a test).
+ *
+ * The logic is `save-as.js createSaveAs()`; this is only the form:
+ *  - three formats as radio buttons, the document's own first;
+ *  - the file name, whose extension follows the format;
+ *  - the notice (what the import kept out, what the .tef writer changed),
+ *    computed when the panel opens and again on a format change, so it is
+ *    read BEFORE Save;
+ *  - an error as a plain sentence, with Save held back.
+ */
+export class SaveAsPopover {
+    constructor(options = {}) {
+        this.options = { onClose: null, ...options };   // onClose: after Cancel, Escape or a finished save
+        this.element = null;
+        this.overlay = null;
+        this.isOpen = false;
+        this.session = null;
+        this._token = 0;     // a late answer for a format no longer selected is ignored
+        this._onKeyDown = this._onKeyDown.bind(this);
+        this._onDocKey = (e) => {
+            if (e.key === 'Escape' && this.isOpen) { e.preventDefault(); e.stopPropagation(); this.close(); }
+        };
+    }
+
+    init(container) {
+        if (!document.querySelector('style[data-otf-save-as]')) {
+            const style = document.createElement('style');
+            style.setAttribute('data-otf-save-as', '');
+            style.textContent = `
+                .otf-save-as-popover { min-width: 340px; max-width: 460px; }
+                .otf-save-as-popover fieldset { border: 0; margin: 0; padding: 0; }
+                .otf-save-as-popover .save-as-format {
+                    display: flex; align-items: center; gap: 8px; padding: 6px 0; font-size: 14px;
+                }
+                .otf-save-as-popover .save-as-name {
+                    width: 100%; box-sizing: border-box; padding: 10px 12px; font-size: 16px;
+                    border: 2px solid var(--border, #ddd); border-radius: 8px;
+                    background: var(--bg, #fff); color: var(--text, #333);
+                }
+                .otf-save-as-popover .save-as-name:focus { outline: none; border-color: var(--accent, #007bff); }
+                .otf-save-as-popover .save-as-notice { font-size: 12px; color: var(--text-muted, #666); margin-top: 8px; min-height: 1em; }
+                .otf-save-as-popover .save-as-error { font-size: 13px; color: var(--danger, #dc3545); margin-top: 8px; min-height: 1em; }
+                .otf-save-as-popover .popover-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+                @media (max-width: ${PHONE_MAX_WIDTH}px) {
+                    .otf-save-as-overlay { align-items: flex-end; }
+                    .otf-save-as-popover {
+                        min-width: 0; width: 100%; max-width: none; max-height: 90vh; overflow-y: auto;
+                        border-radius: 14px 14px 0 0;
+                    }
+                    .otf-save-as-popover .save-as-format { padding: 10px 0; font-size: 16px; }
+                    .otf-save-as-popover .save-as-format input { width: 22px; height: 22px; }
+                    .otf-save-as-popover .popover-btn { min-height: 44px; }
+                }
+            `;
+            document.head.appendChild(style);
+        }
+        this.overlay = document.createElement('div');
+        this.overlay.className = 'otf-popover-overlay otf-save-as-overlay';
+        this.overlay.addEventListener('click', (e) => {
+            if (e.target === this.overlay) this.close();
+        });
+        this.element = document.createElement('div');
+        this.element.className = 'otf-note-popover otf-save-as-popover';
+        this.element.setAttribute('role', 'dialog');
+        this.element.setAttribute('aria-label', 'Save as');
+        this.overlay.appendChild(this.element);
+        container.appendChild(this.overlay);
+        this.overlay.style.display = 'none';
+    }
+
+    /** @param {Object} session - `createSaveAs()` from save-as.js */
+    open(session) {
+        this.session = session;
+        const radios = session.formats.map(f => `
+            <label class="save-as-format">
+                <input type="radio" name="save-as-format" value="${escapeAttr(f.id)}"${f.id === session.format ? ' checked' : ''}>
+                <span>${escapeHtml(f.label)}</span>
+            </label>`).join('');
+        this.element.innerHTML = `
+            <div class="popover-header">
+                <span class="popover-title">Save as</span>
+                <button class="popover-close" title="Close (Escape)">&times;</button>
+            </div>
+            <div class="popover-body">
+                <fieldset class="popover-section">
+                    <legend class="section-label">File type</legend>
+                    ${radios}
+                </fieldset>
+                <div class="popover-section">
+                    <label class="section-label" for="otf-save-as-name">File name</label>
+                    <input type="text" id="otf-save-as-name" class="save-as-name"
+                           value="${escapeAttr(session.fileName)}"
+                           autocomplete="off" spellcheck="false" autocapitalize="off">
+                    <div class="save-as-notice" role="status"></div>
+                    <div class="save-as-error" role="alert"></div>
+                </div>
+            </div>
+            <div class="popover-footer">
+                <button class="popover-btn cancel-btn">Cancel</button>
+                <button class="popover-btn save-btn primary" disabled>Save</button>
+            </div>
+        `;
+        const $ = (sel) => this.element.querySelector(sel);
+        this.nameInput = $('.save-as-name');
+        this.noticeEl = $('.save-as-notice');
+        this.errorEl = $('.save-as-error');
+        this.saveButton = $('.save-btn');
+        $('.popover-close').addEventListener('click', () => this.close());
+        $('.cancel-btn').addEventListener('click', () => this.close());
+        this.saveButton.addEventListener('click', () => this._save());
+        this.nameInput.addEventListener('input', () => { this.saveButton.disabled = !this._ready(); });
+        for (const radio of this.element.querySelectorAll('input[name="save-as-format"]')) {
+            radio.addEventListener('change', () => this._formatChanged());
+        }
+        this.element.addEventListener('keydown', this._onKeyDown);
+
+        this.overlay.style.display = 'flex';
+        this.isOpen = true;
+        this._prepare();
+        // After a File-menu click the menu hands focus back to the editor as it
+        // closes, which is after this runs; focus again once it has.
+        const focusName = () => { this.nameInput?.focus(); this.nameInput?.select(); };
+        focusName();
+        setTimeout(focusName, 0);
+        requestAnimationFrame(focusName);
+        // Escape closes it wherever focus happens to be (the editor may hold it)
+        document.addEventListener('keydown', this._onDocKey, true);
+    }
+
+    get format() {
+        return this.element?.querySelector('input[name="save-as-format"]:checked')?.value || this.session?.format;
+    }
+
+    _ready() {
+        return !this._preparing && !this.errorEl.textContent && !!this.nameInput.value.trim();
+    }
+
+    _formatChanged() {
+        // the extension follows the format; the rest of the name is theirs
+        this.nameInput.value = fileNameFor(this.nameInput.value, this.format);
+        this._prepare();
+    }
+
+    async _prepare() {
+        const token = ++this._token;
+        this._preparing = true;
+        this.saveButton.disabled = true;
+        this.noticeEl.textContent = '';
+        this.errorEl.textContent = '';
+        const { notice, error } = await this.session.prepare(this.format);
+        if (token !== this._token || !this.isOpen) return;
+        this._preparing = false;
+        this.noticeEl.textContent = notice;
+        this.errorEl.textContent = error;
+        this.saveButton.disabled = !this._ready();
+    }
+
+    async _save() {
+        if (!this._ready()) return;
+        const token = ++this._token;
+        this.saveButton.disabled = true;
+        const result = await this.session.save(this.format, this.nameInput.value);
+        if (token !== this._token || !this.isOpen) return;
+        if (result.error) {
+            this.errorEl.textContent = result.error;
+            return;
+        }
+        this.close();
+    }
+
+    _onKeyDown(event) {
+        if (event.key === 'Escape') {
+            event.preventDefault();
+            event.stopPropagation();
+            this.close();
+            return;
+        }
+        if (event.key === 'Enter' && event.target === this.nameInput) {
+            event.preventDefault();
+            event.stopPropagation();
+            this._save();
+            return;
+        }
+        event.stopPropagation();
+    }
+
+    close() {
+        const wasOpen = this.isOpen;
+        this.isOpen = false;
+        this._token++;
+        document.removeEventListener('keydown', this._onDocKey, true);
+        if (this.overlay) this.overlay.style.display = 'none';
+        if (wasOpen) this.options.onClose?.();
+    }
+
+    get opened() { return this.isOpen; }
+
+    destroy() {
+        document.removeEventListener('keydown', this._onDocKey, true);
         this.overlay?.parentNode?.removeChild(this.overlay);
         this.overlay = null;
         this.element = null;

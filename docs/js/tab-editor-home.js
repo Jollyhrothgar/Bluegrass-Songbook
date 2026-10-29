@@ -58,8 +58,8 @@ export function tabEditorHomeHtml(drafts, now = Date.now()) {
         <div class="tab-home drafts-view">
             <div class="drafts-header">
                 <h1 class="bounty-title">Tab Editor</h1>
-                <p class="bounty-subtitle">Open a tab file or start a new tab. It's free
-                   and needs no account.</p>
+                <p class="bounty-subtitle">Open a TablEdit <code>.tef</code> file,
+                   fix it up in your browser, and save it back as <code>.tef</code>. It's free and needs no account.</p>
             </div>
             <div class="tab-home-cards">
                 <section class="tab-home-card tab-home-open">

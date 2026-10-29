@@ -109,6 +109,9 @@ export const PRECACHE_URLS = [
     './manifest.webmanifest',
     './images/icon-192.png',
     ...LAZY_MODULE_URLS,
+    // Not a module, so not in the list above: the blank .tef the writer starts from
+    // (tef-export/index.js loadDefaultTemplate). Save as .tef works offline with it.
+    './js/tef-export/template.tef',
 ];
 
 /** Hosts whose assets are content-addressed enough to cache forever. */

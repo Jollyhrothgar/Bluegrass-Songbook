@@ -1646,7 +1646,7 @@ export const ACTIONS = {
         },
     },
     'edit.save': {
-        label: 'Download / save',
+        label: 'Save as…',
         group: 'Edit',
         modes: ['*'],
         run(ctx) { ctx.hooks.onSave?.(); return true; },

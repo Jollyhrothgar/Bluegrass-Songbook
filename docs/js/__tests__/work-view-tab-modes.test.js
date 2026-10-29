@@ -24,6 +24,12 @@ import { initShell } from '../shell.js';
 // The real OTFEditor wants a canvas, soundfonts and a layout pass. What
 // work-view actually depends on is a much smaller surface — this is it.
 const editors = [];
+
+/** Run a File-menu entry of the live session (G17: Cancel, Download and
+ *  Import left the bar; the File menu is where they are). */
+const fileAction = (label) => editors.at(-1).options.fileActions
+    .find(a => a.label === label).run();
+
 vi.mock('../otf-editor/editor.js', () => ({
     OTFEditor: class {
         constructor(options) {
@@ -165,14 +171,20 @@ describe('editing an existing take from its URL', () => {
         expect(band().querySelector('.tab-play-btn')).not.toBeNull();
         expect(band().querySelector('.tab-tempo-display')).not.toBeNull();
         expect(band().querySelector('.tab-metronome-checkbox')).not.toBeNull();
-        // ✏️ Edit is gone — its slot holds Submit correction / Download /
-        // Cancel / Done instead
+        // ✏️ Edit is gone — its slot holds Submit correction and Done (the
+        // rest is in the editor's File menu)
         expect(band().querySelector('.tab-edit-btn')).toBeNull();
         const actions = band().querySelector('.tab-edit-actions-slot .tab-edit-bar');
         expect(actions).not.toBeNull();
         expect(actions.querySelector('.tab-edit-submit').textContent)
             .toBe('🚀 Submit correction');
         expect(actions.querySelector('.tab-edit-done')).not.toBeNull();
+        expect([...actions.querySelectorAll('button')].map(b => b.className.split(' ')[0]))
+            .toEqual(['tab-edit-submit', 'tab-edit-done']);
+        // a correction has no Import .tef… (that is for takes of your own)
+        const labels = editors[0].options.fileActions.map(a => a.label);
+        expect(labels).not.toContain('📂 Import .tef…');
+        expect(labels).toContain('✓ Done');
     });
 
     it('writes the mode into the URL so a reload comes back here', async () => {
@@ -185,7 +197,7 @@ describe('editing an existing take from its URL', () => {
         await openWork('gold-rush', { editRef: 'banjo', fromDeepLink: true });
         await untilEditor();
 
-        band().querySelector('.tab-edit-cancel').click();
+        fileAction('Cancel');
         await settle();
         expect(window.location.hash).toBe('#work/gold-rush');
         expect(editors[0].destroyed).toBe(true);
@@ -220,18 +232,23 @@ describe('adding a take to a song we have', () => {
         expect(document.querySelector('.arr-meta').textContent).toContain('unsaved');
     });
 
-    it('offers Submit tab / Download / Cancel — no Done, nothing to apply back', async () => {
+    it('the bar is Submit tab alone (no Done, nothing to apply back); the rest is File', async () => {
         await addTab();
         const actions = band().querySelector('.tab-edit-actions-slot .tab-edit-bar');
         expect(actions.querySelector('.tab-edit-submit').textContent).toBe('🚀 Submit tab');
-        expect(actions.querySelector('.tab-edit-download')).not.toBeNull();
-        expect(actions.querySelector('.tab-edit-cancel')).not.toBeNull();
+        expect(actions.querySelector('.tab-edit-download')).toBeNull();
+        expect(actions.querySelector('.tab-edit-cancel')).toBeNull();
         expect(actions.querySelector('.tab-edit-done')).toBeNull();
+        const labels = editors[0].options.fileActions.map(a => a.label);
+        expect(labels).toEqual(expect.arrayContaining(
+            ['📂 Open…', '📂 Import .tef…', '💾 Save as…', '🚀 Submit tab', 'Cancel']));
+        expect(labels).not.toContain('✓ Done');
     });
 
-    it('offers the .tef import in the same place (create.html\'s drop zone)', async () => {
+    it('offers the .tef import in the File menu (create.html\'s drop zone), not on the band', async () => {
         await addTab();
-        expect(band().querySelector('.tab-edit-import')).not.toBeNull();
+        expect(band().querySelector('.tab-edit-import')).toBeNull();
+        expect(editors[0].options.fileActions.map(a => a.label)).toContain('📂 Import .tef…');
     });
 
     it('starts from an empty document for the asked-for instrument', async () => {
@@ -285,7 +302,7 @@ describe('adding a take to a song we have', () => {
 
     it('Cancel drops the unsaved take rather than leaving it in the list', async () => {
         await addTab();
-        band().querySelector('.tab-edit-cancel').click();
+        fileAction('Cancel');
         await settle();
         const part = availableParts.find(p => p.type === 'tablature');
         expect(part.arrangements).toHaveLength(1);
@@ -448,7 +465,7 @@ describe('an unsaved draft', () => {
         expect(JSON.parse(localStorage.getItem('otf-editor-draft')).otf)
             .toEqual({ edited: 'yes' });
 
-        band().querySelector('.tab-edit-cancel').click();
+        fileAction('Cancel');
         await settle();
         expect(localStorage.getItem('otf-editor-draft')).toBeNull();
     });
@@ -533,7 +550,7 @@ describe('the drafts bucket', () => {
         await openWork('gold-rush', { editRef: 'banjo', fromDeepLink: true });
         await untilEditor();
         editors[0].options.onChange(structuredClone(OTF));
-        band().querySelector('.tab-edit-cancel').click();
+        fileAction('Cancel');
 
         await settle();
         expect(await store.list()).toHaveLength(0);

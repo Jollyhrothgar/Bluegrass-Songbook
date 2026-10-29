@@ -2,10 +2,15 @@
 // (§9.3 of docs/plans/tab-editor-input-parity.md; the "personal bucket" of
 // docs/plans/tab-authoring.md Step 2, in its local-only first form).
 //
-// A draft is `{ id, title, instrument, workId?, takeRef?, otf, updatedAt }`
+// A draft is `{ id, title, instrument, workId?, takeRef?, otf, source?, updatedAt }`
 // kept in IndexedDB (`bgb-drafts` / `drafts`), because an OTF document is far
 // too big for the localStorage budget the old single-draft slot lived in —
 // and because there is now more than one of them.
+//
+// `source` is the file the document was opened from, `{name, bytes}` (bytes
+// are an ArrayBuffer; IndexedDB stores them as they are): Save as starts from
+// its format and name, and a .tef written over its bytes keeps what the book
+// does not model. A draft written before this has none, and loads as before.
 //
 // STORAGE IS INJECTED. Everything here is written against a tiny `backend`
 // interface (`get/put/delete/getAll`) rather than IndexedDB directly, so the
@@ -152,7 +157,7 @@ export function createDraftStore({
      * Write (or overwrite) a draft. Returns the stored record.
      * A missing id mints one, which is how "start typing" becomes a draft.
      */
-    async function save({ id = null, otf, title, instrument, workId = null, takeRef = null }) {
+    async function save({ id = null, otf, title, instrument, workId = null, takeRef = null, source = null }) {
         const derived = draftMetaFrom(otf, { title, instrument });
         const record = {
             id: isDraftId(id) ? id : newDraftId(now()),
@@ -162,6 +167,7 @@ export function createDraftStore({
             updatedAt: new Date(now()).toISOString(),
             ...(workId ? { workId } : {}),
             ...(takeRef ? { takeRef } : {}),
+            ...(source?.name ? { source } : {}),
         };
         await backend.put(record);
         await prune();

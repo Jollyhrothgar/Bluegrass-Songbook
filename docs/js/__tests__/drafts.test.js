@@ -90,6 +90,39 @@ describe('createDraftStore', () => {
         expect((await s.get(first.id)).title).toBe('Take two');
     });
 
+    it('keeps the file the draft was opened from, bytes and all (G15f)', async () => {
+        const s = store();
+        const bytes = new Uint8Array([84, 70, 1, 2]).buffer;
+        const saved = await s.save({ otf: otf(), source: { name: 'Sally.tef', bytes } });
+        const back = await s.get(saved.id);
+        expect(back.source.name).toBe('Sally.tef');
+        expect(new Uint8Array(back.source.bytes)).toEqual(new Uint8Array([84, 70, 1, 2]));
+    });
+
+    it('a draft written before `source` existed still loads, and has none', async () => {
+        const backend = memoryBackend([{ id: 'd-old', title: 'Old', instrument: 'banjo', otf: otf(), updatedAt: '2026-01-01T00:00:00Z' }]);
+        const s = createDraftStore({ backend });
+        const old = await s.get('d-old');
+        expect(old.otf.metadata.title).toBe('Sally Goodin');
+        expect(old.source).toBeUndefined();
+        expect(await s.save({ id: 'd-old', otf: otf() })).not.toHaveProperty('source');
+    });
+
+    it('the autosaver carries the source through every write', async () => {
+        vi.useFakeTimers();
+        const s = store();
+        const meta = { source: { name: 'a.tef', bytes: new ArrayBuffer(2) } };
+        const saver = createAutosaver({ store: s, meta, delay: 10 });
+        saver.save(otf('one'));
+        await vi.advanceTimersByTimeAsync(10);
+        meta.source = { name: 'b.tef', bytes: new ArrayBuffer(3) };   // an Import .tef… swapped it
+        saver.save(otf('two'));
+        await vi.advanceTimersByTimeAsync(10);
+        const [row] = await s.list();
+        expect(row.source.name).toBe('b.tef');
+        vi.useRealTimers();
+    });
+
     it('carries the target work and take through', async () => {
         const s = store();
         const saved = await s.save({

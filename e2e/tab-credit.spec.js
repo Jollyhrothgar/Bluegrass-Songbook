@@ -6,6 +6,7 @@
 // that the editor does not offer the edit to someone it would be thrown away
 // for.
 import { test, expect } from './fixtures.js';
+import { saveAs } from './helpers/front-door.js';
 import { mockSupabase } from './helpers/supabase-mock.js';
 
 const band = (page) => page.locator('#app-bottomband');
@@ -56,10 +57,7 @@ test.describe('a new take', () => {
         await page.locator('.tab-credit-url').fill('https://www.banjohangout.org/my/janepicker');
         await page.locator('.tab-credit-url').press('Enter');
 
-        const [download] = await Promise.all([
-            page.waitForEvent('download'),
-            band(page).locator('.tab-edit-download').click(),
-        ]);
+        const download = await saveAs(page, { format: 'otf' });
         const doc = await downloadedJson(download);
         expect(doc.metadata.tab_by).toEqual({
             name: 'Jane Picker', url: 'https://www.banjohangout.org/my/janepicker',
@@ -78,10 +76,7 @@ test.describe('a new take', () => {
         await page.locator('.tab-credit-url').press('Enter');
         await expect(page.locator('.tab-credit-error')).toContainText('http');
 
-        const [download] = await Promise.all([
-            page.waitForEvent('download'),
-            band(page).locator('.tab-edit-download').click(),
-        ]);
+        const download = await saveAs(page, { format: 'otf' });
         const doc = await downloadedJson(download);
         expect(doc.metadata.tab_by).toEqual({ name: 'Jane' });
     });
@@ -134,10 +129,7 @@ test.describe('correcting a published take', () => {
         await expect(name).toHaveJSProperty('readOnly', false);
         await name.fill('Someone Else');
         await name.press('Enter');
-        const [download] = await Promise.all([
-            page.waitForEvent('download'),
-            band(page).locator('.tab-edit-download').click(),
-        ]);
+        const download = await saveAs(page, { format: 'otf' });
         expect((await downloadedJson(download)).metadata.tab_by.name).toBe('Someone Else');
     });
 });
