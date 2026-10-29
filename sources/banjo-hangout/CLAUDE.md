@@ -4,6 +4,8 @@
 `docs/schema/otf.md`). `tef_parser/otf.py` and `docs/js/tef-import/otf.js` own the
 `FX_ORDER` / `GRACE_KINDS` / `V3_PLUCK_LETTERS` copies; tests fail if they drift
 from the schema's enums. Validate with `scripts/lib/otf_schema.py` (`check(doc)`).
+Files are written in one layout (one note event per line) by `scripts/lib/otf_format.py`:
+`OTFDocument.to_json()` and `converter.py` call it, so never `json.dumps(..., indent=2)` an OTF.
 
 Banjo tablature from banjohangout.org, in TablEdit's TEF binary format. The
 code in `src/` also drives four sibling sites (fiddle-, flatpicker-,

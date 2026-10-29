@@ -7,6 +7,10 @@
 the schema first; the fence tests in `__tests__/otf-editor/otf-validate.test.js`
 and `tests/test_otf_schema.py` fail until every copy matches.
 
+Files are written by `serializeOTF` (`docs/js/otf-format.js`; `downloadOTF` uses it), one
+note event per line, byte-identical to Python's `scripts/lib/otf_format.py`. Never
+`JSON.stringify(otf, null, 2)` a file; the compact wire formats are the exception.
+
 The in-browser tablature editor for OpenTabFormat (OTF) files. It ships.
 `DESIGN.md` describes what the editor does (the OTF document format is
 `docs/schema/otf.md`, which code comments cite), and Help ▸ About opens it for users. Input-model plan:

@@ -77,8 +77,8 @@ describe('serializeOTF', () => {
 // or a hand edit in the wrong layout; .claude/rules/tests.md allows that).
 describe('every tracked .otf.json is already in the canonical layout', () => {
     it('serializeOTF(parse(f)) equals the bytes of f', () => {
-        const files = execFileSync('git', ['ls-files', 'works/*/*.otf.json', 'docs/data/tabs/*_tef.otf.json',
-            'tests/parser/fixtures/*.otf.json', 'sources/*/parsed/*.otf.json'], { cwd: ROOT, encoding: 'utf8' })
+        const scope = ['works/*/*.otf.json', 'docs/data/tabs/*_tef.otf.json', 'tests/parser/fixtures/*.otf.json', 'sources/*/parsed/*.otf.json']; // not a file read
+        const files = execFileSync('git', ['ls-files', ...scope], { cwd: ROOT, encoding: 'utf8' })
             .split('\n').filter(Boolean);
         expect(files.length).toBeGreaterThan(1000);
         const off = files.filter((f) => serializeOTF(JSON.parse(read(f))) !== read(f));

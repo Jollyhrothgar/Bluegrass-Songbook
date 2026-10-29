@@ -145,6 +145,21 @@ Python returns warnings from `otf_schema.check`; JS returns them as
 }
 ```
 
+## File layout
+
+Every file is written the same way, by `scripts/lib/otf_format.py` (Python) and
+`docs/js/otf-format.js` (JS), which produce identical bytes: UTF-8 with non-ASCII
+left as is, 2-space indent, `": "` after keys, one trailing newline. Keys go in
+the order of the properties in `otf.schema.json`; keys the schema doesn't name
+(only inside `x_source`) keep their order after the known ones; keys starting
+with `_` are dropped. One line each for an event, an annotation, a `reading_list`
+entry, a `time_signature_changes` entry, and any array of plain values (`tuning`,
+`fx`); an empty array is `[]`. Numbers are integers (`120`, never `120.0`).
+`scripts/lib/reformat_otf.py` rewrites every tracked `.otf.json` into this layout,
+and `tests/test_otf_format.py` fails if one is not. The compact forms in
+`serializeForSubmission`, `take.content` and IndexedDB drafts are wire formats,
+not files, and are left alone.
+
 ## Changing the format
 
 1. Edit `otf.schema.json` (and bump the version per the rule above).
@@ -155,3 +170,6 @@ Python returns warnings from `otf_schema.check`; JS returns them as
    `docs/js/__tests__/otf-editor/otf-validate.test.js`) fail until every copy of
    an allowed-value list (`FX_ORDER`, `GRACE_KINDS`, fingerings, `TECHS`, ...)
    equals the schema's.
+5. A new property also goes in `KEY_ORDER` in `docs/js/otf-format.js` (a test checks
+   it against the schema), and `uv run python scripts/lib/reformat_otf.py` fixes
+   any file the new order moves.
