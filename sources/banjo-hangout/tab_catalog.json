@@ -4953,8 +4953,9 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "A",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178085"
+      "status": "downloaded",
+      "discovered_at": "2026-07-26T21:59:58.178085",
+      "downloaded_at": "2026-10-29T12:32:21.529114"
     },
     "15851_tef": {
       "id": "15851_tef",
@@ -11017,8 +11018,9 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "Em",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178948"
+      "status": "downloaded",
+      "discovered_at": "2026-07-26T21:59:58.178948",
+      "downloaded_at": "2026-10-29T12:32:21.529112"
     },
     "28126_tef": {
       "id": "28126_tef",
@@ -11319,8 +11321,9 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.178986"
+      "status": "downloaded",
+      "discovered_at": "2026-07-26T21:59:58.178986",
+      "downloaded_at": "2026-10-29T12:32:21.529106"
     },
     "21021_tef": {
       "id": "21021_tef",
@@ -14045,8 +14048,9 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/daley&no39s_reel-432.tef",
       "genre": "Traditional",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179365"
+      "status": "downloaded",
+      "discovered_at": "2026-07-26T21:59:58.179365",
+      "downloaded_at": "2026-10-29T12:32:21.529095"
     },
     "26806_tef": {
       "id": "26806_tef",
@@ -15899,8 +15903,9 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/doug&no39s_tune_(break_7)-819.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179636"
+      "status": "downloaded",
+      "discovered_at": "2026-07-26T21:59:58.179636",
+      "downloaded_at": "2026-10-29T12:32:21.529102"
     },
     "10674_tef": {
       "id": "10674_tef",
@@ -16320,8 +16325,9 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179696"
+      "status": "downloaded",
+      "discovered_at": "2026-07-26T21:59:58.179696",
+      "downloaded_at": "2026-10-29T12:32:21.529107"
     },
     "14613_tef": {
       "id": "14613_tef",
@@ -16767,8 +16773,9 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/dusty_miller-879.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.179762"
+      "status": "downloaded",
+      "discovered_at": "2026-07-26T21:59:58.179762",
+      "downloaded_at": "2026-10-29T12:32:21.529104"
     },
     "16607_tef": {
       "id": "16607_tef",
@@ -22654,8 +22661,9 @@
       "style": "Bluegrass (Scruggs)",
       "tuning": "Standard Open G (gDGBD)",
       "key": "D",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.180592"
+      "status": "downloaded",
+      "discovered_at": "2026-07-26T21:59:58.180592",
+      "downloaded_at": "2026-10-29T12:32:21.529108"
     },
     "11074_tef": {
       "id": "11074_tef",
@@ -25867,8 +25875,9 @@
       "format": "tef",
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/i/tab-irish-washerwom-21671-56547812016.tef",
       "difficulty": "Expert",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181052"
+      "status": "downloaded",
+      "discovered_at": "2026-07-26T21:59:58.181052",
+      "downloaded_at": "2026-10-29T12:32:21.529113"
     },
     "25471_tef": {
       "id": "25471_tef",
@@ -30679,8 +30688,9 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.181946"
+      "status": "downloaded",
+      "discovered_at": "2026-07-26T21:59:58.181946",
+      "downloaded_at": "2026-10-29T12:32:21.529109"
     },
     "10902_tef": {
       "id": "10902_tef",
@@ -36205,8 +36215,9 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/p/paddy_on_the_turnpike-1557.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.182728"
+      "status": "downloaded",
+      "discovered_at": "2026-07-26T21:59:58.182728",
+      "downloaded_at": "2026-10-29T12:32:21.529105"
     },
     "22117_tef": {
       "id": "22117_tef",
@@ -42650,8 +42661,9 @@
       "source_url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/s/sledd__ridin&no39-2124.tef",
       "genre": "Bluegrass",
       "style": "Bluegrass (Scruggs)",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.183660"
+      "status": "downloaded",
+      "discovered_at": "2026-07-26T21:59:58.183660",
+      "downloaded_at": "2026-10-29T12:32:21.529106"
     },
     "12574_tef": {
       "id": "12574_tef",
@@ -46200,8 +46212,9 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "C",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.184143"
+      "status": "downloaded",
+      "discovered_at": "2026-07-26T21:59:58.184143",
+      "downloaded_at": "2026-10-29T12:32:21.529112"
     },
     "17772_tef": {
       "id": "17772_tef",
@@ -46334,8 +46347,9 @@
       "tuning": "Drop C (gCGBD)",
       "key": "C",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.184159"
+      "status": "downloaded",
+      "discovered_at": "2026-07-26T21:59:58.184159",
+      "downloaded_at": "2026-10-29T12:32:21.529111"
     },
     "15822_tef": {
       "id": "15822_tef",
@@ -50396,8 +50410,9 @@
       "tuning": "Standard Open G (gDGBD)",
       "key": "G",
       "difficulty": "Intermediate",
-      "status": "pending",
-      "discovered_at": "2026-07-26T21:59:58.184725"
+      "status": "downloaded",
+      "discovered_at": "2026-07-26T21:59:58.184725",
+      "downloaded_at": "2026-10-29T12:32:21.529110"
     },
     "11413_tef": {
       "id": "11413_tef",
