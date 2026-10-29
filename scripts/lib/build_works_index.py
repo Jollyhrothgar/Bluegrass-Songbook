@@ -1104,6 +1104,10 @@ def publish_charts(songs: list, works_dir: Path, charts_dir: Path):
                 chart = chord_chart.parse(path.read_text(encoding='utf-8'))
                 errors += chord_chart.validate_for_work(chart, info['work'])
                 charts[work_id] = chord_chart.to_json(chart)
+                # The credit: shown on the chart, published only when named.
+                by = (parts[0].get('provenance') or {}).get('author')
+                if by:
+                    charts[work_id]['by'] = by
             except OSError as e:
                 errors.append(f"cannot read {fname}: {e.strerror}")
             except chord_chart.ChartError as e:

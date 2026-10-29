@@ -275,6 +275,14 @@ class TestBuild:
         assert published == cc.to_json(cc.parse(GOOD))
         assert not Path("docs/data/charts/no-chart.json").exists()
 
+    def test_credit_is_published_when_the_part_names_an_author(self, repo):
+        credited = {**CH, "provenance": {"source": "manual", "author": "Ada Example"}}
+        make_work(repo / "works", "credited", [LS, credited], GOOD)
+        make_work(repo / "works", "anonymous", [LS, CH], GOOD)
+        self.build()
+        assert json.loads(Path("docs/data/charts/credited.json").read_text())["by"] == "Ada Example"
+        assert "by" not in json.loads(Path("docs/data/charts/anonymous.json").read_text())
+
     def test_orphans_are_pruned(self, repo):
         make_work(repo / "works", "with-chart", [LS, CH], GOOD)
         charts = repo / "docs" / "data" / "charts"

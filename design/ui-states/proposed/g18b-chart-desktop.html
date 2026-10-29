@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proposed G18b: chord chart on the song page (desktop)</title>
+<link rel="stylesheet" href="mock.css">
+<style>
+    body { padding-bottom: 80px; }
+    .wrap { max-width: 1440px; margin: 0 auto; padding: 8px 40px 0; }
+    .state-h { margin: 36px 0 2px; }
+    .state-note { margin: 0 0 14px; color: var(--text-secondary); font-size: 14px; max-width: 900px; }
+    .frame { border: 1px solid var(--border); border-radius: 10px; padding: 22px 28px 0; background: var(--bg); position: relative; }
+
+    /* song header, pill row: copied from the real page's look */
+    .frame h1 { font-size: 28px; }
+    .writer { color: var(--text-secondary); font-size: 14px; margin-top: 2px; }
+    .pills { display: flex; gap: 8px; margin: 14px 0 18px; }
+    .pill-btn { display: inline-flex; gap: 6px; align-items: center; background: var(--bg-secondary); border: 1px solid var(--border);
+                border-radius: 999px; font-size: 14px; padding: 4px 12px; }
+    .pill-btn .caret { font-size: 10px; color: var(--text-secondary); }
+    .pill-btn b { font-weight: 600; }
+
+    /* the two columns */
+    .cols { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 56px; align-items: start; }
+    .colhead { display: flex; align-items: center; gap: 14px; padding: 6px 0; border-bottom: 1px solid var(--text);
+               font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; background: var(--bg); }
+    .colhead .grow { flex: 1; }
+    .tg { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; letter-spacing: 0; text-transform: none; font-weight: 400; color: var(--text-secondary); }
+    .seg2 { display: inline-flex; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+    .seg2 span { padding: 2px 9px; font-size: 13px; color: var(--text-secondary); cursor: pointer; }
+    .seg2 span.on { background: var(--accent); color: var(--on-accent); }
+    .sticky { position: sticky; top: 12px; }
+
+    /* lyric side */
+    .lyr .chart { margin: 0; font-size: 16px; }
+    .lyr .sec { margin: 22px 0 6px; }
+    .lyr .lsec:first-child .sec { margin-top: 14px; }
+    .lyr .line { margin-bottom: 6px; }
+    .lyr .ch.flag { text-decoration: underline dotted var(--text-secondary); text-underline-offset: 4px; }
+    .mis { font-size: 12px; color: var(--text-secondary); margin: -2px 0 8px; padding-left: 8px; border-left: 2px dotted var(--border); }
+    .mis b { font-family: var(--mono); font-weight: 600; color: var(--text); }
+
+    /* chart side */
+    .csec { margin: 14px 0 18px; }
+    .csec .cap { display: flex; gap: 10px; align-items: baseline; font-size: 13px; margin-bottom: 4px; }
+    .csec .cap b { font-size: 14px; }
+    .csec .cap span { color: var(--text-secondary); }
+    .cl { display: grid; grid-template-columns: repeat(var(--bars), 1fr); margin-bottom: 6px; border-right: 2px solid var(--text); }
+    .cb { display: flex; border-left: 2px solid var(--text); }
+    .cc { display: flex; flex: 1; min-width: 0; }
+    .cc + .cc { border-left: 1px dashed var(--border); }
+    .sl { flex: 1; min-width: 0; padding: 8px 0; text-align: center; font-size: 21px; font-weight: 500; line-height: 1.2; }
+    .sl.hold { color: var(--text-secondary); opacity: .5; font-weight: 400; }
+    .sl.carry { opacity: .38; }
+    .cc.on { background: color-mix(in srgb, var(--accent) 20%, transparent); box-shadow: inset 0 -3px 0 var(--accent); }
+    .cc.on .sl { color: var(--accent); opacity: 1; }
+    .legend { font-size: 12px; color: var(--text-secondary); margin: 0 0 16px; }
+    .legend i { font-style: normal; opacity: .5; }
+    .form { font-size: 13px; color: var(--text-secondary); margin: 6px 0 22px; }
+    .form b { color: var(--text); font-weight: 600; }
+
+    /* practice rows: one lyric section beside its chart section */
+    .prow { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 56px; padding: 6px 0 4px; border-bottom: 1px solid var(--border); position: relative; }
+    .prow .csec { margin: 0; padding-top: 14px; }
+    .prow .lsec .sec { margin: 14px 0 6px; }
+    .prow.done { opacity: .5; }
+    .prow.now { background: color-mix(in srgb, var(--accent) 7%, transparent); margin: 0 -28px; padding-left: 28px; padding-right: 28px; box-shadow: inset 4px 0 0 var(--accent); }
+    .prow .chart { margin: 0; font-size: 16px; }
+    .prow .line { margin-bottom: 6px; }
+    .prow .ch.flag { text-decoration: underline dotted var(--text-secondary); text-underline-offset: 4px; }
+    .nowtag { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+
+    /* bottom band, in the style of the app's */
+    .band { position: sticky; bottom: 0; margin: 0 -28px; padding: 0 20px; height: 60px; display: flex; align-items: center; gap: 22px;
+            background: var(--bg); border-top: 1px solid var(--border); border-radius: 0 0 10px 10px; font-size: 14px; z-index: 3; }
+    .play { width: 38px; height: 38px; border-radius: 50%; background: var(--accent); display: grid; place-items: center; flex: none; }
+    .play::after { content: ''; border-left: 13px solid var(--on-accent); border-top: 8px solid transparent; border-bottom: 8px solid transparent; margin-left: 4px; }
+    .band .lab { color: var(--text-secondary); font-size: 12px; }
+    .step { display: inline-flex; align-items: center; gap: 8px; }
+    .step button { width: 24px; height: 24px; border-radius: 50%; border: 1px solid var(--border); line-height: 1; }
+    .step b { font-variant-numeric: tabular-nums; min-width: 70px; text-align: center; }
+    .slider { width: 120px; height: 4px; border-radius: 2px; background: var(--border); position: relative; }
+    .slider::after { content: ''; position: absolute; left: 55%; top: -5px; width: 14px; height: 14px; border-radius: 50%; background: var(--accent); }
+    .band .where { margin-left: auto; color: var(--text-secondary); white-space: nowrap; }
+    .band .where b { color: var(--text); font-weight: 600; }
+    .ghost-gap { height: 22px; }
+</style>
+</head>
+<body data-proposal="G18b chord chart on the song page">
+<main class="wrap">
+    <p class="state-note" style="margin-top:18px">Two states of the same page, stacked. Lyrics stay on the left; the chart is the right column
+    (generated parts such as tab would sit under it). Key A, two slots a cell, as in the chart fixture. Add <code>?theme=dark</code> for dark.</p>
+
+    <h2 class="state-h">A. Chart view</h2>
+    <p class="state-note">Each chart section once, beside the whole lyric chart, so the chart stays in view (sticky) while the lyrics scroll.
+    The mismatch in verse 2, line 3 is flagged on the lyric side only, and quietly.</p>
+    <div class="frame" id="stateA">
+        <h1>Old Home Place</h1>
+        <div class="writer">Written by Dean Webb and Mitchell Jayne</div>
+        <div class="pills"><span class="pill-btn">Key <b>A</b> <span class="caret">&#9662;</span></span><span class="pill-btn">Display <span class="caret">&#9662;</span></span><span class="pill-btn">Info <span class="caret">&#9662;</span></span><span class="pill-btn">Arrangement <span class="caret">&#9662;</span></span></div>
+        <div class="cols">
+            <div class="lyr">
+                <div class="colhead"><span class="grow">Lyrics</span></div>
+                <div id="lyrA"></div>
+            </div>
+            <div>
+                <div class="sticky">
+                    <div class="colhead">
+                        <span class="grow">Chart</span>
+                        <span class="tg"><span class="seg2 mode"><span class="on">Chart</span><span>Practice</span></span></span>
+                        <span class="tg">Bars <span class="seg2 bars"><span class="on" data-n="1">One cell</span><span data-n="2">Two cells</span></span></span>
+                    </div>
+                    <div id="chartA"></div>
+                    <p class="form">Form: <b>Verse</b> &middot; <b>Verse</b> &middot; <b>Chorus</b> &middot; <b>Verse</b> &middot; <b>Verse</b> &middot; <b>Chorus</b> &middot; <b>Chorus</b></p>
+                    <p class="legend">Dashed line: cell. Faint <i>\</i>: keep playing. Faint chord at the start of a line: carried over from the line above.</p>
+                </div>
+            </div>
+        </div>
+        <div class="ghost-gap"></div>
+    </div>
+
+    <h2 class="state-h">B. Practice mode</h2>
+    <p class="state-note">The chart unrolled in the lyric chart's playing order (verse, verse, chorus, verse, verse, chorus, chorus). Each chart section sits beside the lyric section it
+    lines up with, in order. The bar being played and its lyric section are highlighted; sections already played are dimmed. The playback band sticks to the bottom of the window.</p>
+    <div class="frame" id="stateB">
+        <h1>Old Home Place</h1>
+        <div class="writer">Written by Dean Webb and Mitchell Jayne</div>
+        <div class="pills"><span class="pill-btn">Key <b>A</b> <span class="caret">&#9662;</span></span><span class="pill-btn">Display <span class="caret">&#9662;</span></span><span class="pill-btn">Info <span class="caret">&#9662;</span></span><span class="pill-btn">Arrangement <span class="caret">&#9662;</span></span></div>
+        <div class="colhead" style="display:grid;grid-template-columns:1fr 1fr;column-gap:56px">
+            <span>Lyrics</span>
+            <span style="display:flex;align-items:center;gap:14px">
+                <span class="grow" style="flex:1">Chart</span>
+                <span class="tg"><span class="seg2 mode"><span>Chart</span><span class="on">Practice</span></span></span>
+                <span class="tg">Bars <span class="seg2 bars"><span class="on" data-n="1">One cell</span><span data-n="2">Two cells</span></span></span>
+            </span>
+        </div>
+        <div id="practice"></div>
+        <div class="band">
+            <span class="play"></span>
+            <span><span class="lab">Tempo</span><br><span class="step"><button>&minus;</button><b>112 BPM</b><button>+</button></span></span>
+            <span class="slider"></span>
+            <span><span class="lab">Loop</span><br><span class="seg2"><span>Off</span><span>Section</span><span class="on">Song</span></span></span>
+            <span><span class="lab">Count-in</span><br><span class="seg2"><span class="on">1 bar</span><span>Off</span></span></span>
+            <span class="where"><b>Verse 2</b> &middot; line 2, bar 3 of 4 &middot; section 2 of 7</span>
+        </div>
+    </div>
+</main>
+<script src="mock.js"></script>
+<script>
+// Data copied from works/old-home-place/lead-sheet.pro and
+// tests/fixtures/chord-chart/old-home-place.chord-chart.yaml.
+// Lyric lines reuse mock.css's .chart/.line/.seg/.ch classes (same markup as mock.js).
+const LYR = {
+ 'Verse 1': ["It's been [A]ten long [C#7]years since I [D]left my [A]home","In the hollow where I was [E]born","Where the [A]cool fall [C#7]nights make the [D]wood smoke [A]rise","And the fox hunter [E]blows his [A]horn"],
+ 'Verse 2': ["I [A]fell in [C#7]love with a [D]girl from the [A]town","I thought that she would be [E]true","[A]I ran [C#7]away to [A][D]Charlottesville","And worked in a [E]sawmill [A]too"],
+ 'Chorus': ["[E]What have they done to the old home [A]place","[B7]Why did they tear it [E]down","And [A]why did I [C#7]leave my plow [D]in the [A]field","And look for a [E]job in the [A]town"],
+ 'Verse 3': ["Well the [A]girl ran [C#7]off with [D]somebody [A]else","The tariffs took all my [E]pay","[A]And here I [C#7]stand where the old [D]home [A]stood","Before they [E]took it [A]away"],
+ 'Verse 4': ["Now the [A]geese fly [C#7]south and the cold [D]wind [A]moans","As I stand her and hang my [E]head","[A]I've lost my [C#7]love I've [D]lost my [A]home","And now I [E]wish that I was [A]dead"],
+};
+const FORM = ['Verse 1','Verse 2','Chorus','Verse 3','Verse 4','Chorus','Chorus'];
+const CHART = {
+ Verse: ['| A \\ | C#7 \\ | D \\ | A \\ |','| \\ \\ | \\ \\ | E \\ | \\ \\ |','| A \\ | C#7 \\ | D \\ | A \\ |','| \\ \\ | E \\ | A \\ | \\ \\ |'],
+ Chorus: ['| E \\ | \\ \\ | A \\ | \\ \\ |','| B7 \\ | \\ \\ | E \\ | \\ \\ |','| A \\ | C#7 \\ | D \\ | A \\ |','| \\ \\ | E \\ | A \\ | \\ \\ |'],
+};
+const ofSection = (name) => name.startsWith('Verse') ? 'Verse' : 'Chorus';
+const NOW = { n: 1, line: 1, cell: 2 };   // practice: Verse 2 (index 1), line 2, cell 3
+let perBar = 1;
+
+const esc = (s) => s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+function lyricLine(line, flag) {
+    const segs = []; let chord = '';
+    for (const p of line.split(/(\[[^\]]+\])/).filter(Boolean)) {
+        if (p[0] === '[') { if (chord) segs.push([chord, '']); chord = p.slice(1, -1); }
+        else { segs.push([chord, p]); chord = ''; }
+    }
+    if (chord) segs.push([chord, '']);
+    let k = 0;
+    return `<div class="line">${segs.map(([c, t]) => {
+        const f = flag && c && ++k > 2 ? ' flag' : '';
+        return `<span class="seg"><span class="ch${f}">${chordGlyph(c)}</span><span>${esc(t) || ' '}</span></span>`; }).join('')}</div>`;
+}
+const G = (cs) => cs.map(chordGlyph).join(' ');
+const MIS = `<div class="mis">Differs from the chart: <b>${G(['A', 'C#7', 'D', 'A'])}</b> there, <b>${G(['A', 'C#7', 'A', 'D'])}</b> here.</div>`;
+function lyricSection(name) {
+    return `<div class="lsec"><div class="sec">${name}</div>${LYR[name].map((l, i) =>
+        lyricLine(l, name === 'Verse 2' && i === 2) + (name === 'Verse 2' && i === 2 ? MIS : '')).join('')}</div>`;
+}
+function chartLines(sec, on) {
+    let cur = null;
+    return CHART[sec].map((row, li) => {
+        const cells = row.split('|').slice(1, -1).map(c => c.trim().split(/\s+/));
+        const bars = [];
+        for (let i = 0; i < cells.length; i += perBar) bars.push(cells.slice(i, i + perBar).map((c, k) => [c, i + k]));
+        return `<div class="cl" style="--bars:${bars.length}">${bars.map(b => `<div class="cb">${b.map(([c, idx]) =>
+            `<div class="cc${on && on.line === li && on.cell === idx ? ' on' : ''}">${c.map((s, si) => {
+                if (s !== '\\') { cur = s; return `<span class="sl">${chordGlyph(s)}</span>`; }
+                if (li > 0 && idx === 0 && si === 0) return `<span class="sl carry">${chordGlyph(cur)}</span>`;
+                return `<span class="sl hold">\\</span>`; }).join('')}</div>`).join('')}</div>`).join('')}</div>`;
+    }).join('');
+}
+const csec = (sec, cap, on) => `<div class="csec"><div class="cap"><b>${sec}</b><span>${cap}</span></div>${chartLines(sec, on)}</div>`;
+function render() {
+    document.getElementById('lyrA').innerHTML = FORM.map(lyricSection).join('');
+    document.getElementById('chartA').innerHTML = csec('Verse', 'sung 4 times', null) + csec('Chorus', 'sung 3 times', null);
+    document.getElementById('practice').innerHTML = FORM.map((name, n) => {
+        const now = n === NOW.n, cls = now ? ' now' : n < NOW.n ? ' done' : '';
+        const cap = now ? '<span class="nowtag">Playing</span>' : `${n + 1} of 7`;
+        return `<div class="prow${cls}"><div class="lyr"><div class="chart">${lyricSection(name)}</div></div>${csec(ofSection(name), cap, now ? NOW : null)}</div>`;
+    }).join('');
+    document.querySelectorAll('.seg2.bars span').forEach(s => s.classList.toggle('on', +s.dataset.n === perBar));
+}
+document.addEventListener('click', (e) => {
+    const s = e.target.closest('.seg2.bars span'); if (!s) return;
+    perBar = +s.dataset.n; render();
+});
+render();
+// the lyric column's markup needs the .chart wrapper in state A
+document.getElementById('lyrA').classList.add('chart');
+</script>
+</body>
+</html>

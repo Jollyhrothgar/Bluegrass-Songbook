@@ -23,6 +23,35 @@ document.body.insertAdjacentHTML('afterbegin', `
     <span class="who">MB</span>
 </header>`);
 
+// Mirrors chordGlyphHtml() in docs/js/chords.js, the book's chord engraving:
+// superscript extensions, ♯ ♭, ° ø + (C#7 -> C♯⁷, Asus4 -> A^sus4, F#m7b5 -> F♯ø⁷,
+// D/F# -> D with a smaller /F♯). Copied, not imported: these pages open from
+// file://, where module imports are blocked. Display only.
+const GLYPH_ESC = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' };
+const glyphEsc = (s) => String(s).replace(/[&<>"]/g, (c) => GLYPH_ESC[c]);
+const accGlyph = (a) => a === '#' ? '<span class="acc">♯</span>'
+    : a === 'b' ? '<span class="acc flat">♭</span>' : '';
+const extGlyph = (t) => glyphEsc(t === '69' ? '6⁄9' : t)
+    .replace(/b(\d)/g, (_, d) => `${accGlyph('b')}${d}`)
+    .replace(/#(\d)/g, (_, d) => `${accGlyph('#')}${d}`);
+window.chordGlyph = (symbol) => {
+    const text = String(symbol ?? '');
+    const m = text.match(/^([A-G])([#b]?)([^/]*)(?:\/([A-G])([#b]?))?$/);
+    if (!m) return glyphEsc(text);
+    const [, r, a, qual, bass, bassAcc] = m;
+    let q = qual, minor = '', plus = '';
+    if (/^m(?!aj)/.test(q)) { minor = 'm'; q = q.slice(1); }
+    let sup = q;
+    if (minor && sup === '7b5') { minor = ''; sup = 'ø7'; }
+    else if (sup === 'dim') sup = '°';
+    else if (sup === 'dim7') sup = '°7';
+    else if (sup === 'aug') { sup = ''; plus = '+'; }
+    const supHtml = extGlyph(sup);
+    const inner = `${r}${accGlyph(a)}${minor}${plus}${supHtml ? `<sup>${supHtml}</sup>` : ''}`
+        + `${bass ? `<span class="bass">/${bass}${accGlyph(bassAcc)}</span>` : ''}`;
+    return inner.includes('<') ? `<span class="cg">${inner}</span>` : inner;
+};
+
 const esc = (s) => s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
 
 function renderLine(line) {
