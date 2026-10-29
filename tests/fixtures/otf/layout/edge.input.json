@@ -18,6 +18,6 @@
     {"id": "perc", "instrument": "percussion", "tuning": [], "percussion": true, "lines": 3}
   ],
   "timing": {"ticks_per_beat": 480},
-  "metadata": {"time_signature_changes": [{"time_signature": "3/4", "measure": 2}], "composer": "", "key": "G", "tempo": 120.0, "time_signature": "4/4", "title": "Edge é \"quoted\""},
+  "metadata": {"time_signature_changes": [{"time_signature": "3/4", "measure": 2}], "tab_by": {"url": "https://example.com/u", "name": "Jane"}, "composer": "", "key": "G", "tempo": 120.0, "time_signature": "4/4", "title": "Edge é \"quoted\""},
   "otf_version": "1.0"
 }

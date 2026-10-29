@@ -18,6 +18,7 @@ import {
     downloadOTF,
 } from '../../otf-editor/actions.js';
 import { EditorState, DURATIONS } from '../../otf-editor/state.js';
+import { OTF_VERSION } from '../../otf-editor/otf-validate.js';
 
 describe('createMultiTrackOTF (new-tab flow)', () => {
     it('builds one track per instrument with empty measures', () => {
@@ -122,7 +123,7 @@ describe('createEmptyOTF', () => {
 
     it('has correct OTF version', () => {
         const otf = createEmptyOTF();
-        expect(otf.otf_version).toBe('1.0');
+        expect(otf.otf_version).toBe(OTF_VERSION);
     });
 
     it('has timing section with ticks_per_beat', () => {

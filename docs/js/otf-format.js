@@ -18,7 +18,7 @@
 
 export const KEY_ORDER = {
     doc: ['otf_version', 'metadata', 'timing', 'tracks', 'notation', 'annotations', 'reading_list', 'x_source'],
-    metadata: ['title', 'time_signature', 'tempo', 'key', 'composer', 'time_signature_changes'],
+    metadata: ['title', 'time_signature', 'tempo', 'key', 'composer', 'tab_by', 'time_signature_changes'],
     timing: ['ticks_per_beat'],
     track: ['id', 'instrument', 'tuning', 'capo', 'role', 'percussion', 'lines'],
     measure: ['measure', 'events'],
@@ -27,6 +27,7 @@ export const KEY_ORDER = {
     grace: ['f', 'kind'],
     annotation: ['measure', 'tick', 'text'],
     reading: ['from_measure', 'to_measure', 'name'],
+    tab_by: ['name', 'url'],
     tsc: ['measure', 'time_signature'],
 };
 
@@ -38,6 +39,7 @@ const CHILD = {
     'doc.annotations': 'annotation',
     'doc.reading_list': 'reading',
     'metadata.time_signature_changes': 'tsc',
+    'metadata.tab_by': 'tab_by',
     'measure.events': 'event',
     'event.notes': 'note',
     'note.grace': 'grace',

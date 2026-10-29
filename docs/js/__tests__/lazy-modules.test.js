@@ -73,7 +73,7 @@ describe('boot graph (static imports from main.js)', () => {
         'tab-edit-band.js', 'tab-controls-sheet.js', 'tab-playback-interactions.js',
         // whole-page views and one-shot actions
         'review-queue.js', 'bounty-view.js', 'my-submissions.js', 'high-scores.js',
-        'drafts-view.js', 'list-export.js', 'zip.js', 'title-match.js',
+        'drafts-view.js', 'tab-editor-home.js', 'list-export.js', 'zip.js', 'title-match.js',
     ];
 
     it.each(MUST_BE_LAZY)('does not load %s at boot', (name) => {

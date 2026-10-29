@@ -504,7 +504,7 @@ export function tefToOtf(tef) {
     });
 
     const doc = {
-        otf_version: '1.0',
+        otf_version: '1.1',
         metadata, timing: { ticks_per_beat: 480 },
         tracks, notation,
         annotations,

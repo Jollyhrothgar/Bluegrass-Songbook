@@ -292,10 +292,15 @@ describe('manifest.webmanifest', () => {
         expect(handler.accept['application/x-tabledit']).toEqual(['.tef']);
     });
 
-    it('offers New tab and Drafts as shortcuts', () => {
+    it('offers New tab, My tabs and the Tab editor as shortcuts', () => {
         const urls = manifest.shortcuts.map(s => s.url);
         expect(urls.some(u => u.endsWith('#new-tab'))).toBe(true);
         expect(urls.some(u => u.endsWith('#drafts'))).toBe(true);
+        expect(urls).toContain('./tab-editor/');
+        const names = manifest.shortcuts.map(s => s.name);
+        expect(names).toContain('My tabs');
+        expect(names).toContain('Tab editor');
+        expect(names).not.toContain('Drafts');
     });
 
     it('is linked from index.html with a theme colour', () => {

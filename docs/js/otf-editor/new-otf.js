@@ -41,7 +41,7 @@ export function createEmptyOTF(instrument = '5-string-banjo', options = {}) {
     const config = instrumentConfigs[instrument] || instrumentConfigs['5-string-banjo'];
 
     return {
-        otf_version: '1.0',
+        otf_version: '1.1',
         metadata: {
             title: options.title || 'Untitled',
             time_signature: options.timeSignature || '4/4',
@@ -71,6 +71,28 @@ export function createEmptyOTF(instrument = '5-string-banjo', options = {}) {
 }
 
 /**
+ * One new track for an instrument preset: its tuning, `capo: 0`, and an id
+ * that is not in `usedIds` (a second banjo is `banjo-2`). No notation: the
+ * caller decides whether the track starts with empty bars or none.
+ *
+ * @param {string} instrument - a preset, e.g. '5-string-banjo'
+ * @param {Iterable<string>} usedIds - ids already taken in the document
+ * @param {string} role - 'lead' | 'rhythm' | ...
+ */
+export function makeTrack(instrument, usedIds = [], role = 'rhythm', name = null) {
+    const used = new Set(usedIds);
+    // `name`: an instrument that borrows another's stave (fiddle on the
+    // mandolin's GDAE) keeps its own id and instrument, so the switcher, the
+    // file and the player's voice all say what it is.
+    const preset = createEmptyOTF(instrument).tracks[0];
+    const track = name ? { ...preset, id: name, instrument: name } : preset;
+    let id = track.id;
+    let n = 2;
+    while (used.has(id)) id = `${track.id}-${n++}`;
+    return { ...track, id, role };
+}
+
+/**
  * Create an empty MULTI-track OTF (the "new tab" flow). Instruments are
  * data: any list of the known presets; duplicate instruments get
  * numbered ids (banjo, banjo-2).
@@ -97,13 +119,11 @@ export function createMultiTrackOTF({
 
     const used = new Set();
     for (const instrument of instruments) {
-        const single = createEmptyOTF(instrument);
-        const track = single.tracks[0];
-        let id = track.id;
-        let n = 2;
-        while (used.has(id)) id = `${track.id}-${n++}`;
-        used.add(id);
-        base.tracks.push({ ...track, id, role: base.tracks.length === 0 ? 'lead' : 'rhythm' });
+        const role = base.tracks.length === 0 ? 'lead' : 'rhythm';
+        const track = makeTrack(instrument, used, role);
+        used.add(track.id);
+        base.tracks.push(track);
+        const id = track.id;
         base.notation[id] = Array.from({ length: measures },
             (_, i) => ({ measure: i + 1, events: [] }));
     }

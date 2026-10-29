@@ -653,6 +653,55 @@ describe('EditingFacade — insertMeasure (structural, all tracks)', () => {
     });
 });
 
+describe('EditingFacade — setTabBy (the "Tab by" credit)', () => {
+    it('throws on a link that is not http(s), or an over-long name or link, and changes nothing', () => {
+        const f = new EditingFacade(banjoDoc());
+        expect(() => f.setTabBy({ name: 'Jane', url: 'javascript:alert(1)' })).toThrow(RangeError);
+        expect(() => f.setTabBy({ name: 'Jane', url: 'ftp://example.com' })).toThrow(RangeError);
+        expect(() => f.setTabBy({ name: 'x'.repeat(101) })).toThrow(RangeError);
+        expect(() => f.setTabBy({ name: 'Jane', url: 'https://e.com/' + 'x'.repeat(500) })).toThrow(RangeError);
+        expect(f.getTabBy()).toBe(null);
+        expect(f.canUndo()).toBe(false);
+    });
+
+    it('is one undo step and restores the 1.0 version on undo', () => {
+        const f = new EditingFacade(banjoDoc());
+        expect(f.setTabBy({ name: ' Jane Picker ', url: 'https://example.com/jane' })).toBe(true);
+        expect(f.otf.metadata.tab_by).toEqual({ name: 'Jane Picker', url: 'https://example.com/jane' });
+        expect(f.otf.otf_version).toBe('1.1');
+        expect(f.getTabBy()).toEqual({ name: 'Jane Picker', url: 'https://example.com/jane' });
+        f.undo();
+        expect(f.canUndo()).toBe(false);          // exactly one step
+        expect(f.otf.metadata.tab_by).toBeUndefined();
+        expect(f.otf.otf_version).toBe('1.0');
+        f.redo();
+        expect(f.getTabBy().name).toBe('Jane Picker');
+    });
+
+    it('no-ops on the same value, and null clears', () => {
+        const f = new EditingFacade(banjoDoc());
+        f.setTabBy({ name: 'Jane' });
+        expect(f.setTabBy({ name: 'Jane' })).toBe(false);
+        expect(f.setTabBy({ name: 'Jane', url: '' })).toBe(false);
+        expect(f.setTabBy(null)).toBe(true);
+        expect(f.otf.metadata.tab_by).toBeUndefined();
+        expect(f.setTabBy(null)).toBe(false);
+    });
+
+    it('refuses a credit with no name', () => {
+        const f = new EditingFacade(banjoDoc());
+        expect(f.setTabBy({ name: '  ', url: 'https://x.test/' })).toBe(false);
+        expect(f.canUndo()).toBe(false);
+    });
+
+    it('survives a draft round trip (export, JSON, reload)', () => {
+        const f = new EditingFacade(banjoDoc());
+        f.setTabBy({ name: 'Jane', url: 'https://example.com/j' });
+        const reloaded = new EditingFacade(JSON.parse(JSON.stringify(f.export())));
+        expect(reloaded.getTabBy()).toEqual({ name: 'Jane', url: 'https://example.com/j' });
+    });
+});
+
 describe('EditingFacade — setTempo / setFingering', () => {
     it('setTempo is undoable and no-ops on the same value', () => {
         const f = new EditingFacade(banjoDoc());

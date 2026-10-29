@@ -944,6 +944,148 @@ class TestTablatureUpdate:
         assert work['parts'][0]['provenance']['author'] == 'schlange'
 
 
+def credit_doc(name='Jane Picker', url=None, fret=0):
+    tab_by = {'name': name}
+    if url:
+        tab_by['url'] = url
+    doc = otf_doc(fret=fret)
+    doc['otf_version'] = '1.1'
+    doc['metadata']['tab_by'] = tab_by
+    return doc
+
+
+def stored_doc(tmp_path, work_id='salt-creek', file='banjo.otf.json'):
+    return json.loads((tmp_path / 'works' / work_id / file).read_text())
+
+
+class TestTabCredit:
+    """metadata.tab_by -> provenance.author / author_url (2026-10-29).
+
+    The credit is written only from a name a person typed, never inferred
+    from the uploader; anyone may fill a blank, only a trusted submitter may
+    change an existing one, and the stored OTF always agrees with work.yaml.
+    """
+
+    URL = 'https://www.banjohangout.org/my/janepicker'
+
+    def test_create_sets_author_and_link(self, tmp_path):
+        apply_row(tmp_path, tab_row(content=json.dumps(credit_doc(url=self.URL))),
+                  'create', 'salt-creek', actor='Someone Else', verbose=False)
+        prov = read_work(tmp_path, 'salt-creek')['parts'][0]['provenance']
+        assert prov['author'] == 'Jane Picker'
+        assert prov['author_url'] == self.URL
+        assert stored_doc(tmp_path)['metadata']['tab_by']['name'] == 'Jane Picker'
+
+    def test_add_sets_author(self, tmp_path):
+        seed_tab_work(tmp_path)
+        apply_row(tmp_path, tab_row(content=json.dumps(credit_doc())),
+                  'add', 'salt-creek', actor='X', verbose=False)
+        added = read_work(tmp_path, 'salt-creek')['parts'][1]['provenance']
+        assert added['author'] == 'Jane Picker'
+        assert 'author_url' not in added
+
+    def test_no_tab_by_writes_nothing(self, tmp_path):
+        apply_row(tmp_path, tab_row(), 'create', 'salt-creek',
+                  actor='Jane Picker', verbose=False)
+        prov = read_work(tmp_path, 'salt-creek')['parts'][0]['provenance']
+        assert 'author' not in prov and 'author_url' not in prov
+        assert 'tab_by' not in stored_doc(tmp_path)['metadata']
+
+    def test_anyone_fills_a_blank_credit_on_update(self, tmp_path):
+        seed_tab_work(tmp_path, submitted_by=SUBMITTER, author=None)
+        apply_row(tmp_path,
+                  tab_row(part_file='banjo.otf.json',
+                          content=json.dumps(credit_doc(url=self.URL, fret=5))),
+                  'update', 'salt-creek', actor='Jane', verbose=False,
+                  trusted=False)
+        prov = read_work(tmp_path, 'salt-creek')['parts'][0]['provenance']
+        assert prov['author'] == 'Jane Picker'
+        assert prov['author_url'] == self.URL
+
+    def test_a_non_trusted_change_is_refused_and_the_file_is_put_back(
+            self, tmp_path):
+        seed_tab_work(tmp_path, submitted_by=SUBMITTER, author='schlange')
+        apply_row(tmp_path,
+                  tab_row(part_file='banjo.otf.json',
+                          content=json.dumps(credit_doc('Mallory', fret=5))),
+                  'update', 'salt-creek', actor='Mallory', verbose=False,
+                  trusted=False)
+        prov = read_work(tmp_path, 'salt-creek')['parts'][0]['provenance']
+        assert prov['author'] == 'schlange'
+        assert 'author_url' not in prov
+        doc = stored_doc(tmp_path)
+        assert doc['metadata']['tab_by'] == {'name': 'schlange'}
+        assert doc['notation']['banjo'][0]['events'][0]['notes'][0]['f'] == 5
+        assert validate_otf(doc) == []
+
+    def test_a_non_trusted_update_without_a_credit_keeps_the_existing_one(
+            self, tmp_path):
+        seed_tab_work(tmp_path, submitted_by=SUBMITTER, author='schlange')
+        apply_row(tmp_path,
+                  tab_row(part_file='banjo.otf.json',
+                          content=json.dumps(otf_doc(fret=5))),
+                  'update', 'salt-creek', actor='X', verbose=False)
+        assert stored_doc(tmp_path)['metadata']['tab_by'] == {'name': 'schlange'}
+        assert read_work(tmp_path, 'salt-creek')['parts'][0]['provenance'][
+            'author'] == 'schlange'
+
+    def test_a_trusted_change_replaces_the_credit_and_drops_the_old_link(
+            self, tmp_path):
+        seed_tab_work(tmp_path, submitted_by=SUBMITTER, author='schlange')
+        works_writer.update_part(
+            tmp_path, 'salt-creek', match={'type': 'tablature'},
+            provenance_updates={'author_url': 'https://old.example/'},
+            verbose=False)
+        apply_row(tmp_path,
+                  tab_row(part_file='banjo.otf.json',
+                          content=json.dumps(credit_doc(fret=5))),
+                  'update', 'salt-creek', actor='Tim', verbose=False,
+                  trusted=True)
+        prov = read_work(tmp_path, 'salt-creek')['parts'][0]['provenance']
+        assert prov['author'] == 'Jane Picker'
+        assert not prov.get('author_url')
+        assert stored_doc(tmp_path)['metadata']['tab_by'] == {'name': 'Jane Picker'}
+
+    def test_resubmitting_the_same_credit_is_not_a_change(self, tmp_path):
+        seed_tab_work(tmp_path, submitted_by=SUBMITTER, author='Jane Picker')
+        apply_row(tmp_path,
+                  tab_row(part_file='banjo.otf.json',
+                          content=json.dumps(credit_doc(fret=5))),
+                  'update', 'salt-creek', actor='Jane', verbose=False)
+        prov = read_work(tmp_path, 'salt-creek')['parts'][0]['provenance']
+        assert prov['author'] == 'Jane Picker'
+
+    def test_trust_is_read_from_trusted_users(self, monkeypatch):
+        import io
+        import process_pending as pp
+        seen = []
+
+        def fake(rows):
+            def urlopen(request, timeout=0):
+                seen.append(request.full_url)
+                return io.BytesIO(json.dumps(rows).encode())
+            return urlopen
+
+        kw = dict(supabase_url='https://x.supabase.co', service_key='k')
+        monkeypatch.setattr(pp.urllib.request, 'urlopen', fake([{'user_id': 'u'}]))
+        assert pp.is_trusted_user('u', **kw) is True
+        monkeypatch.setattr(pp.urllib.request, 'urlopen', fake([]))
+        assert pp.is_trusted_user('u', **kw) is False
+        assert pp.is_trusted_user(None, **kw) is False
+        assert 'rest/v1/trusted_users?user_id=eq.u' in seen[0]
+
+    def test_a_failed_trust_lookup_raises_and_never_guesses(self, monkeypatch):
+        import urllib.error
+        import process_pending as pp
+        kw = dict(supabase_url='https://x.supabase.co', service_key='k')
+
+        def down(request, timeout=0):
+            raise urllib.error.URLError('connection refused')
+        monkeypatch.setattr(pp.urllib.request, 'urlopen', down)
+        with pytest.raises(pp.ProcessPendingError, match='trusted_users lookup failed'):
+            pp.is_trusted_user('u', **kw)
+
+
 class TestTablatureValidation:
     """The OTF gets its structural check here or nowhere.
 

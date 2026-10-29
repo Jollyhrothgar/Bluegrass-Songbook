@@ -26,6 +26,7 @@ describe('KEY_ORDER equals the schema property order', () => {
         grace: note.grace.properties,
         annotation: top.annotations.items.properties,
         reading: top.reading_list.items.properties,
+        tab_by: top.metadata.properties.tab_by.properties,
         tsc: top.metadata.properties.time_signature_changes.items.properties,
     };
     for (const [ctx, props] of Object.entries(expected)) {

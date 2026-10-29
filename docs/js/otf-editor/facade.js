@@ -20,6 +20,8 @@ import {
     measureTimingFromOtf,
 } from '../renderers/measure-timing.js';
 import { notePitch, fretForPitch } from './pitch.js';
+import { TAB_BY_NAME_MAX, TAB_BY_URL_MAX } from './otf-validate.js';
+import { isPercussionTrack, pitchedTracks } from '../renderers/otf-tracks.js';
 
 const clone = (x) => JSON.parse(JSON.stringify(x));
 
@@ -252,6 +254,8 @@ export class EditingFacade {
             : tracks[0]?.id;
 
         this.clipboard = null;
+        // A correction session names the track it edits; deleteTrack refuses it.
+        this.protectedTrackId = options.protectedTrackId || null;
 
         this._history = [];
         this._historyIndex = -1;
@@ -414,6 +418,7 @@ export class EditingFacade {
             }
             return true;
         });
+        if (result !== false && this.protectedTrackId === oldId) this.protectedTrackId = clean;
         if (result !== false && wasCurrent) {
             this.trackId = clean;
             this._emit('trackChange', clean);
@@ -442,9 +447,87 @@ export class EditingFacade {
         });
     }
 
+    /** How many notes a track holds (what "delete this track" would lose). */
+    noteCountIn(trackId = this.trackId) {
+        let n = 0;
+        for (const m of this.getNotation(trackId)) {
+            for (const e of m.events || []) n += (e.notes || []).length;
+        }
+        return n;
+    }
+
+    /**
+     * Why a track cannot be deleted, or '' when it can. The menu shows the
+     * reason; `deleteTrack` throws it.
+     *
+     *  - the last pitched (editable) track: a tab needs one to write on;
+     *  - the track a CORRECTION is editing (`protectedTrackId`, set by the
+     *    editor for a session on an existing take): deleting it would
+     *    submit a "correction" that removes the thing it corrects.
+     */
+    trackDeleteBlocker(trackId = this.trackId) {
+        const track = this.getTrack(trackId);
+        if (!track) return `Unknown track: ${trackId}`;
+        if (this.protectedTrackId && trackId === this.protectedTrackId) {
+            return `The ${trackId} track is the one this correction edits.`;
+        }
+        if (!isPercussionTrack(track)
+            && pitchedTracks(this.getTracks()).every(t => t.id === trackId)) {
+            return 'A tab needs at least one instrument track.';
+        }
+        return '';
+    }
+
+    /**
+     * Delete a track: its entry in `tracks[]` AND its `notation` key, as one
+     * undo step (undo restores both, in place, from the snapshot). When it
+     * was the track being edited, the first remaining pitched track takes
+     * over.
+     *
+     * @returns {boolean} true
+     * @throws {Error} unknown track, or one `trackDeleteBlocker` refuses
+     */
+    deleteTrack(trackId = this.trackId) {
+        const blocker = this.trackDeleteBlocker(trackId);
+        if (blocker) throw new Error(blocker);
+        const wasCurrent = this.trackId === trackId;
+        const result = this._mutate('Delete track', () => {
+            this.otf.tracks.splice(this.trackIndex(trackId), 1);
+            if (this.otf.notation) delete this.otf.notation[trackId];
+            return true;
+        });
+        if (result !== false && wasCurrent) {
+            this.trackId = (pitchedTracks(this.getTracks())[0] || this.getTracks()[0])?.id;
+            this._emit('trackChange', this.trackId);
+        }
+        return result;
+    }
+
+    /**
+     * Append a track (built by new-otf.js `makeTrack`). It carries NO
+     * `notation` key — absent means silent, and the first note entered
+     * creates it — so adding a track changes nothing but `tracks[]`.
+     *
+     * @returns {string} the new track's id
+     * @throws {Error} a malformed track, or an id already in use
+     */
+    addTrack(track) {
+        if (!track?.id || !Array.isArray(track.tuning) || track.tuning.length === 0) {
+            throw new Error('A track needs an id and a tuning');
+        }
+        if (this.getTrack(track.id)) throw new Error(`Track id already in use: ${track.id}`);
+        this._mutate('Add track', () => {
+            this.otf.tracks.push(clone(track));
+            return true;
+        });
+        return track.id;
+    }
+
     getNotation(trackId = this.trackId) {
-        if (!this.otf.notation[trackId]) this.otf.notation[trackId] = [];
-        return this.otf.notation[trackId];
+        // Reading never writes: a track with no `notation` key is valid OTF
+        // ("absent means silent"), and looking at one must not mint the key.
+        // Only getOrCreateMeasure (a note being entered) creates it.
+        return this.otf.notation?.[trackId] || [];
     }
 
     getMeasure(measureNum, trackId = this.trackId) {
@@ -455,7 +538,9 @@ export class EditingFacade {
         let measure = this.getMeasure(measureNum, trackId);
         if (!measure) {
             measure = { measure: measureNum, events: [] };
-            const notation = this.getNotation(trackId);
+            if (!this.otf.notation) this.otf.notation = {};
+            if (!this.otf.notation[trackId]) this.otf.notation[trackId] = [];
+            const notation = this.otf.notation[trackId];
             notation.push(measure);
             notation.sort((a, b) => a.measure - b.measure);
             this._invalidateTiming();
@@ -463,10 +548,13 @@ export class EditingFacade {
         return measure;
     }
 
+    /**
+     * A track is as long as the DOCUMENT: an empty track (or one that ends
+     * early) can be written out to the last measure any track has.
+     */
     getMeasureCount(trackId = this.trackId) {
-        const notation = this.getNotation(trackId);
-        if (notation.length === 0) return 1;
-        return Math.max(...notation.map(m => m.measure));
+        const own = this.getNotation(trackId).reduce((mx, m) => Math.max(mx, m.measure), 1);
+        return Math.max(own, maxMeasureIn(this.otf.notation || {}), 1);
     }
 
     // ------------------------------------------------------------------
@@ -1464,6 +1552,51 @@ export class EditingFacade {
             this.otf.metadata.tempo = v;
             return true;
         });
+    }
+
+    /**
+     * Set (or clear, with null) who wrote this tab: `metadata.tab_by`
+     * `{name, url?}`. Undoable, one step per call. The caller validates
+     * (see otf-editor/tab-credit.js); this only refuses what the schema would.
+     * A document that gets a credit is stamped 1.1, the version that has it.
+     */
+    setTabBy(credit) {
+        let next = null;
+        if (credit) {
+            const name = typeof credit.name === 'string' ? credit.name.trim() : '';
+            const url = typeof credit.url === 'string' ? credit.url.trim() : '';
+            if (!name) return false;
+            // The schema's domain, enforced here like every value setter: a
+            // credit the validators reject would get the whole tab refused
+            // at Submit (process_pending), not just the credit.
+            if (name.length > TAB_BY_NAME_MAX) {
+                throw new RangeError(`Tab credit name over ${TAB_BY_NAME_MAX} characters`);
+            }
+            if (url && (!/^https?:\/\//.test(url) || url.length > TAB_BY_URL_MAX)) {
+                throw new RangeError('Tab credit link must be an http(s) URL of at most '
+                    + `${TAB_BY_URL_MAX} characters`);
+            }
+            next = url ? { name, url } : { name };
+        }
+        return this._mutate(next ? 'Set tab credit' : 'Clear tab credit', () => {
+            if (!this.otf.metadata) this.otf.metadata = {};
+            const now = this.otf.metadata.tab_by || null;
+            if ((now?.name ?? null) === (next?.name ?? null)
+                && (now?.url ?? null) === (next?.url ?? null)) return false;
+            if (next) {
+                this.otf.metadata.tab_by = next;
+                if (this.otf.otf_version === '1.0') this.otf.otf_version = '1.1';
+            } else {
+                delete this.otf.metadata.tab_by;
+            }
+            return true;
+        });
+    }
+
+    /** The current credit, `{name, url?}` or null. */
+    getTabBy() {
+        const t = this.otf.metadata?.tab_by;
+        return t && t.name ? { ...t } : null;
     }
 
     // ------------------------------------------------------------------

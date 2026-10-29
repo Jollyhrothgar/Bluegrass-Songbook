@@ -10873,6 +10873,55 @@ body.file-dragover {
     outline: none;
 }
 
+/* "Tab by" credit row (otf-editor/tab-credit.js): under the title/artist. */
+.tab-credit {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem 0.75rem;
+    margin: 0.35rem 0 0.5rem;
+    font-size: var(--font-sm);
+}
+.tab-credit-field {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex: 1 1 14rem;
+    min-width: 0;
+}
+.tab-credit-label {
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+.tab-credit input {
+    flex: 1;
+    min-width: 0;
+    font: inherit;
+    color: inherit;
+    background: var(--bg);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-sm);
+    padding: 0.2rem 0.4rem;
+}
+.tab-credit input:focus {
+    border-style: solid;
+    border-color: var(--accent);
+    outline: none;
+}
+.tab-credit.is-locked input {
+    border-style: solid;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+.tab-credit-error {
+    flex-basis: 100%;
+    color: var(--danger, #c0392b);
+}
+.tab-credit-note {
+    flex-basis: 100%;
+    color: var(--text-secondary);
+}
+
 /* ==========================================================================
    Lead-sheet editor (js/lead-editor/): one CodeMirror view, Lyrics | Chords | ChordPro
    Lyrics and Chords modes reuse the book's own classes (.song-body, .song-section,
@@ -11273,3 +11322,98 @@ body.file-dragover {
 /* a {comment} row in Lyrics mode is tappable (its menu: Delete note), like a section label */
 .le-mode-lyrics .le-cm .cl-comment { cursor: pointer; }
 .le-mode-lyrics .le-cm .cl-comment:hover { color: var(--accent); }
+
+/* ==========================================================================
+   The tab editor's front door (/tab-editor/, G15c). It borrows the My tabs
+   page's frame (.drafts-view) and rows (.draft-row); only the three actions
+   and the privacy line are its own.
+   ========================================================================== */
+
+.tab-home-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.tab-home-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg-secondary);
+}
+
+.tab-home-card h2,
+.tab-home-mytabs h2 {
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+.tab-home-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.tab-home-card label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    width: 100%;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.tab-home-card input,
+.tab-home-card select {
+    font: inherit;
+    padding: 0.4rem 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.tab-home-card .qc-toggle-btn {
+    margin-top: auto;
+}
+
+/* A file is being dragged over the page: the card that takes it says so
+   (body.file-dragover already rings the page). */
+body.file-dragover .tab-home-open {
+    outline: 2px dashed var(--accent);
+    outline-offset: 2px;
+}
+
+.tab-home-mytabs {
+    margin-bottom: 1rem;
+}
+
+.tab-home-mytabs h2 {
+    margin-bottom: 0.5rem;
+}
+
+.tab-home-none,
+.tab-home-all,
+.tab-home-privacy,
+.tab-home-example {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin: 0.5rem 0;
+}
+
+.tab-home-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tab-home-actions a.qc-toggle-btn {
+    text-decoration: none;
+}

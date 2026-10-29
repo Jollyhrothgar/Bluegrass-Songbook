@@ -125,24 +125,27 @@ describe('the target banner is honest from the first pixel', () => {
 });
 
 describe('launchTabCreator', () => {
-    it('sends a signed-in contributor to the song page, in add-tab mode', () => {
+    it('sends anyone to the song page, in add-tab mode', () => {
         const navigate = vi.fn();
         const ok = launchTabCreator(
             { workId: 'gold-rush', instrument: 'banjo', title: 'Gold Rush' },
-            { requireLogin: loggedIn, navigate });
+            { navigate });
         expect(ok).toBe(true);
         expect(navigate).toHaveBeenCalledWith(
             '#work/gold-rush/add-tab?instrument=banjo&title=Gold+Rush');
     });
 
-    it('gates on login at the click, and goes nowhere without one', () => {
+    it('does not ask for sign-in: that waits for Submit (G15c)', () => {
         const navigate = vi.fn();
-        loggedOut.mockClear();
-        const ok = launchTabCreator({ workId: 'gold-rush' },
-            { requireLogin: loggedOut, navigate });
-        expect(ok).toBe(false);
-        expect(loggedOut).toHaveBeenCalled();
-        expect(navigate).not.toHaveBeenCalled();
+        const signIn = vi.fn();
+        vi.stubGlobal('window', { SupabaseAuth: { isLoggedIn: () => false, signInWithGoogle: signIn } });
+        try {
+            expect(launchTabCreator({ workId: 'gold-rush' }, { navigate })).toBe(true);
+        } finally {
+            vi.unstubAllGlobals();
+        }
+        expect(signIn).not.toHaveBeenCalled();
+        expect(navigate).toHaveBeenCalled();
     });
 });
 

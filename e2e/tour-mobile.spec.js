@@ -88,10 +88,10 @@ test('phone: the button fits a song page band and the tour finds every control',
     await ringAround(page, '.tab-more-btn');
     await expect(page.locator('.tour-body')).toContainText('On a phone, Edit is under ⚙.');
 
-    // Your own .tef: nothing to drag on a phone, so the copy names Add Song ▸ Tablature
+    // Your own .tef: nothing to drag on a phone, so the copy names ⋯ ▸ Tab editor
     await next(page);
     await expect(page.locator('.tour-ring.tour-ring-zone')).toBeVisible();
-    await expect(page.locator('.tour-body')).toContainText('Add Song ▸ Tablature');
+    await expect(page.locator('.tour-body')).toContainText('Tab editor, then tap Open a tab file');
     await cardClear(page, '.tab-play-btn');
 
     await next(page);   // Done

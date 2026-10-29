@@ -150,7 +150,7 @@ class OTFAnnotation:
 @dataclass
 class OTFDocument:
     """Complete OTF document."""
-    otf_version: str = "1.0"
+    otf_version: str = "1.1"
     metadata: OTFMetadata = field(default_factory=OTFMetadata)
     timing: OTFTiming = field(default_factory=OTFTiming)
     tracks: list[OTFTrack] = field(default_factory=list)
