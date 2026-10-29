@@ -434,7 +434,19 @@ export function tefToOtf(tef) {
             const span = 2 * (1920 >> fdiv(code, 3));
             const step = fdiv(decodeDurationCode(code) * 3, 4);
             const inSpan = tick % span;
-            if (inSpan % step === 0) tick = tick - inSpan + fdiv(inSpan * 4, 3);
+            if (inSpan % step === 0) {
+                const retimed = tick - inSpan + fdiv(inSpan * 4, 3);
+                // Barline guard (G15d5, port of otf.py): TablEdit's MusicXML export
+                // keeps 10676 m7's slot-3 note inside the measure (945/240 divisions),
+                // never on or past the barline, so keep the stored tick then.
+                let measureTicks = 1920;
+                if (isV2) measureTicks = fdiv(unitsPerMeasure * 15, 2);
+                else if (tef.v3_measure_starts && tef.v3_measure_starts.length
+                         && measure - 1 < tef.v3_measure_lengths.length) {
+                    measureTicks = tef.v3_measure_lengths[measure - 1] * V3_TICKS_PER_UNIT;
+                }
+                if (retimed < measureTicks) tick = retimed;
+            }
         }
 
         const measures = trackEvents.get(trackId);

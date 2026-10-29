@@ -1094,7 +1094,21 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
             step = decode_duration_code(code) * 3 // 4
             in_span = tick % span
             if in_span % step == 0:
-                tick = tick - in_span + (in_span * 4) // 3
+                retimed = tick - in_span + (in_span * 4) // 3
+                # Barline guard (G15d5). A note stored in slot 3 of the last
+                # beat would retime onto/past the barline (10676 m7/m8). Per
+                # TablEdit's own MusicXML export (240 divisions/quarter) m7's
+                # note sits at 945, inside the measure, which overflows to
+                # 1025: it is never put on or past the barline. So keep the
+                # stored tick when the retime would leave the measure.
+                if tef.header.is_v2:
+                    measure_ticks = units_per_measure * 15 // 2
+                elif tef.v3_measure_starts and index < len(tef.v3_measure_lengths):
+                    measure_ticks = tef.v3_measure_lengths[index] * V3_TICKS_PER_UNIT
+                else:
+                    measure_ticks = 1920
+                if retimed < measure_ticks:
+                    tick = retimed
 
         if measure not in track_events[track_id]:
             track_events[track_id][measure] = []

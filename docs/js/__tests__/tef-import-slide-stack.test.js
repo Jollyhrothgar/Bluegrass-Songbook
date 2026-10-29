@@ -53,3 +53,17 @@ describe('slide source folded into a grace', () => {
         expect(ev.notes.some(n => n.grace)).toBe(false);
     });
 });
+
+// A triplet retime may not push a note onto/past the barline (10676 m7/m8):
+// TablEdit's export keeps m7's slot-3 note inside the measure (945/240 divisions).
+describe('triplet retime stays inside the measure', () => {
+    it('10676 m7/m8: no event at or past tick 1920; m7 keeps its note at 1800', () => {
+        const otf = convert('10676_doug_s_tune_slot3_barline.tef');
+        for (const n of [7, 8]) {
+            const m = measure(otf, 'banjo', n);
+            expect(Math.max(...m.events.map(e => e.tick))).toBeLessThan(1920);
+        }
+        const ev = measure(otf, 'banjo', 7).events.find(e => e.tick === 1800);
+        expect(ev.notes.some(n => n.s === 1)).toBe(true);
+    });
+});

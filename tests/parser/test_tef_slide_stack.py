@@ -69,3 +69,22 @@ def test_3302_m88_index3_note_stays_on_beat_4():
                                  "bryan-sutton", 88)["events"] if e["tick"] == 1440)
     assert {"s": 5, "f": 4, "tech": "h", "dur": 160} in ev["notes"]
     assert not any("grace" in n for n in ev["notes"])
+
+
+# ── G15d5: a triplet retime may not push a note onto/past the barline ────────
+# 10676_doug_s_tune_slot3_barline.tef (banjo-hangout 10676, frozen 2026-10-29).
+# TablEdit's MusicXML export keeps m7's slot-3 string-1 note at 945/240 divisions
+# (inside the measure, which overflows to 1025), not at the barline.
+
+def test_10676_slot3_note_stays_inside_its_measure():
+    from tef_parser.otf import tef_to_otf as _t  # noqa: F401
+    sys.path.insert(0, str(REPO_ROOT / "scripts" / "lib"))
+    import otf_schema
+    otf = convert("10676_doug_s_tune_slot3_barline.tef")
+    errors, _ = otf_schema.check(otf)
+    assert not [e for e in errors if "tick_range" in e], errors
+    for n in (7, 8):
+        assert max(e["tick"] for e in measure(otf, "banjo", n)["events"]) < 1920
+    m7 = measure(otf, "banjo", 7)
+    assert any(e["tick"] == 1800 and any(x["s"] == 1 for x in e["notes"])
+               for e in m7["events"])
