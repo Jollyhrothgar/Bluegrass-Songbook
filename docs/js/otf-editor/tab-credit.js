@@ -12,8 +12,10 @@
 // has a credit and the signed-in user is not trusted, the fields are
 // read-only. No window.prompt/confirm/alert: errors are inline.
 
-export const TAB_BY_NAME_MAX = 100;
-export const TAB_BY_URL_MAX = 500;
+// The schema's limits, from the validator (one copy).
+import { TAB_BY_NAME_MAX, TAB_BY_URL_MAX } from './otf-validate.js';
+
+export { TAB_BY_NAME_MAX, TAB_BY_URL_MAX };
 
 /** The part's published credit as a valid tab_by, or null. */
 export function creditFromPart(part) {
