@@ -24,13 +24,16 @@ const { free_text: _freeText, ...EXPECTED_V2 } = EXPECTED_V3;
 describe('TEF import counts what OTF does not keep', () => {
     describe.each([['V3', 'skipped_v3_all.tef', EXPECTED_V3], ['V2', 'skipped_v2_all.tef', EXPECTED_V2]])(
         '%s', (_label, file, expected) => {
+            // The fixtures' bare 0x35 / V2 0x1c records have no chord table, so the
+            // chord-diagram importer (G15d3) also reports them, as dropped diagrams.
+            const withChords = { ...expected, chord_diagrams: 2 };
             const skipped = parseTef(read(file), file).x_source?.skipped;
             it.each(Object.entries(expected))('%s', (key, count) => {
                 expect(skipped[key]).toBe(count);
             });
             it('counts nothing else', () => {
-                expect(skipped).toEqual(expected);
-                expect(Object.keys(skipped)).toEqual(SKIPPED_KEYS.filter(k => k in expected));
+                expect(skipped).toEqual(withChords);
+                expect(Object.keys(skipped)).toEqual(SKIPPED_KEYS.filter(k => k in withChords));
             });
         });
 

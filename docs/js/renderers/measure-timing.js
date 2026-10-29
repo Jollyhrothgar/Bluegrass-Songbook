@@ -501,6 +501,30 @@ export function attachOtfDecorations(notation, otf) {
 }
 
 /**
+ * Attach one track's chord diagrams (display copy) onto its notation entries:
+ * `diagrams: [{tick, index, chord}]` per written measure, where `chord` is the
+ * resolved `otf.chords[]` record and `index` its position in that table.
+ * Diagrams whose `track` is another track's, or whose `chord` points past the
+ * table, are skipped. Call after densifyNotation (a diagram may sit in a
+ * silent measure), alongside attachOtfDecorations.
+ */
+export function attachChordDiagrams(notation, otf, trackId) {
+    const table = otf?.chords || [];
+    const mine = (otf?.chord_diagrams || [])
+        .filter(d => d.track === trackId && table[d.chord]);
+    if (!mine.length) return notation;
+    const byMeasure = new Map();
+    for (const d of mine) {
+        if (!byMeasure.has(d.measure)) byMeasure.set(d.measure, []);
+        byMeasure.get(d.measure).push({ tick: d.tick, index: d.chord, chord: table[d.chord] });
+    }
+    return notation.map(m => {
+        const diagrams = byMeasure.get(m.measure);
+        return diagrams ? { ...m, diagrams } : m;
+    });
+}
+
+/**
  * Max written measure number across every track of an OTF notation map.
  */
 export function maxMeasureIn(notationByTrack) {

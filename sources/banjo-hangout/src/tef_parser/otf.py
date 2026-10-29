@@ -172,6 +172,9 @@ class OTFDocument:
     reading_list: list[OTFReadingListEntry] = field(default_factory=list)
     # Repeat signs (schema 1.2): [{measure, ...decode_mark_raw(raw), raw}]
     measure_marks: list[dict] = field(default_factory=list)
+    # G15d3 chord diagrams: the table (dicts in OTF shape) and the anchors.
+    chords: list[dict[str, Any]] = field(default_factory=list)
+    chord_diagrams: list[dict[str, Any]] = field(default_factory=list)
     # G15e: what the .tef held that OTF does not keep ({key: count}); written
     # as x_source.skipped, last in the document, only when non-empty.
     skipped: dict[str, int] = field(default_factory=dict)
@@ -264,6 +267,10 @@ class OTFDocument:
 
         if self.measure_marks:
             result["measure_marks"] = [dict(m) for m in self.measure_marks]
+        if self.chords:
+            result["chords"] = [dict(c) for c in self.chords]
+        if self.chord_diagrams:
+            result["chord_diagrams"] = [dict(d) for d in self.chord_diagrams]
         if self.skipped:
             result["x_source"] = {"skipped": dict(self.skipped)}
 
@@ -974,6 +981,88 @@ def fold_slide_source_graces(otf_event: OTFEvent, pairs, all_events) -> None:
         otf_event.notes.remove(src)
 
 
+def _diagram_track_index(string_counts: list[int], row: int) -> int | None:
+    """Index of the track whose strings contain the cumulative string row."""
+    if not string_counts:
+        return 0
+    for idx, count in enumerate(string_counts):
+        if row < count:
+            return idx
+        row -= count
+    return None
+
+
+def chord_record_to_otf(rec, string_count: int) -> dict[str, Any]:
+    """One chord-table record as an OTF ``chords`` entry.
+
+    ``string_count`` is the length of ``frets`` (the rule is in
+    :func:`chord_diagrams_to_otf`). A record whose strings are all 0xff is
+    name-only: ``{name}``. ``first_fret`` is omitted at 1, TablEdit's
+    default (every corpus record has 1 unless it shows a higher position).
+    """
+    out: dict[str, Any] = {"name": rec.name}
+    if any(b != 0xff for b in rec.strings):
+        raw = rec.strings[:string_count]
+        out["frets"] = [None if b == 0xff else b & 0x1f for b in raw]
+        # high 3 bits: 0 plain dot, 1 special glyph (never seen), 2-5 = finger 1-4
+        fingers = [(b >> 5) - 1 if b != 0xff and 2 <= (b >> 5) <= 5 else None
+                   for b in raw]
+        if any(f is not None for f in fingers):
+            out["fingers"] = fingers
+    if rec.first_fret != 1:
+        out["first_fret"] = rec.first_fret
+    return out
+
+
+def chord_diagrams_to_otf(tef: TEFFile, doc: "OTFDocument",
+                          units_per_measure: int, v3_ticks_per_unit: int) -> None:
+    """Fill ``doc.chords`` / ``doc.chord_diagrams`` (G15d3), and
+    ``doc.skipped['chord_diagrams']`` for diagrams that could not be kept.
+
+    The ``frets`` length of a record (it is not tied to a track in the file):
+    byte 32 when it is non-zero; else the string count of the track of the
+    FIRST diagram (in ``chord_diagrams`` order) that points at it; else, for a
+    record nothing uses, the string count of the file's longest track. Bytes
+    past that length are dropped (TablEdit ignores them; V2 files leave 0x00
+    junk there). The G15f writer inverts it: byte 32 = 0 when ``len(frets)``
+    equals that same count, else ``len(frets)``.
+    """
+    dropped = tef.chord_anchors_dropped
+    table = tef.chord_table or []
+    string_counts = [i.num_strings for i in tef.instruments]
+
+    diagrams = []
+    owner_strings: dict[int, int] = {}
+    for a in tef.chord_anchors:
+        idx = _diagram_track_index(string_counts, a.string_row)
+        if idx is None or idx >= len(doc.tracks):
+            dropped += 1
+            continue
+        if tef.header.is_v2:
+            measure, offset = divmod(a.position, units_per_measure)
+            tick = (offset & ~3) * 15 // 2
+        else:
+            measure, offset = tef.v3_locate(a.position)
+            tick = offset * v3_ticks_per_unit
+        d: dict[str, Any] = {"measure": measure + 1, "tick": tick,
+                             "track": doc.tracks[idx].id, "chord": a.index}
+        if a.dx:
+            d["dx"] = a.dx
+        if a.dy:
+            d["dy"] = a.dy
+        diagrams.append(d)
+        owner_strings.setdefault(a.index, string_counts[idx] if string_counts else 5)
+
+    longest = max(string_counts, default=5)
+    doc.chords = []
+    for i, rec in enumerate(table):
+        n = rec.string_count or owner_strings.get(i) or longest
+        doc.chords.append(chord_record_to_otf(rec, max(1, min(14, n))))
+    doc.chord_diagrams = diagrams
+    if dropped:
+        doc.skipped["chord_diagrams"] = dropped
+
+
 def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
     """Convert a parsed TEF file to OTF format.
 
@@ -1326,6 +1415,8 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
             text=te.text,
         ))
 
+    chord_diagrams_to_otf(tef, doc, units_per_measure, V3_TICKS_PER_UNIT)
+
     # Reading list (with section labels when the file names its entries)
     for entry in tef.reading_list:
         doc.reading_list.append(OTFReadingListEntry(
@@ -1340,6 +1431,9 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
         raw = tef.measure_flags[index]
         doc.measure_marks.append(
             {"measure": index + 1, **decode_mark_raw(raw), "raw": raw})
-    doc.skipped = {k: tef.skipped[k] for k in SKIPPED_KEYS if tef.skipped.get(k)}
+    # One skipped map: the reader's counts plus the chord importer's own
+    # `chord_diagrams` (set above on doc.skipped), in SKIPPED_KEYS order.
+    counts = {**tef.skipped, **doc.skipped}
+    doc.skipped = {k: counts[k] for k in SKIPPED_KEYS if counts.get(k)}
 
     return doc

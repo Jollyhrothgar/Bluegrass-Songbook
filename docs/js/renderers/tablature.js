@@ -9,6 +9,7 @@ import {
     parseTimeSignature,
 } from './measure-timing.js';
 import { isPercussionTrack } from './otf-tracks.js';
+import { renderChordBox, chordBoxGeometry, CHORD_BOX_HEIGHT } from './chord-box.js';
 
 /**
  * Build an HTML element with a class and TEXT content.
@@ -737,8 +738,14 @@ export class TabRenderer {
         // Effects band (note.fx point/run marks), same rule: uniform, and
         // only when the tab has something to put in it.
         this._fxLanes = fxLanesFor(notation);
+        // Chord-diagram band (G15d3): a chord box's height, between the text
+        // band above and the effects band below, and only when this track
+        // carries diagrams. Texts shift up by it (see renderRow), so the
+        // staff-relative bands keep their places.
+        this._chordBand = notation.some(m => m.diagrams && m.diagrams.length)
+            ? CHORD_BOX_HEIGHT + 2 : 0;
         this.options.topMargin = this._baseTopMargin + (hasTextBand ? 32 : 0)
-            + this._fxLanes.band;
+            + this._fxLanes.band + this._chordBand;
 
         // Calculate responsive layout (against the real width measured above)
         this._calculateLayout(layoutWidth);
@@ -1184,6 +1191,8 @@ export class TabRenderer {
         // 11px higher ("C" at beat 1.5 under "Press F-12 ..." otherwise
         // prints on top of it).
         const textLaneEnds = [-Infinity, -Infinity];
+        // Right edge of the last chord box drawn in this row (they never overlap).
+        let chordBoxEnd = -Infinity;
 
         measures.forEach((measure, mi) => {
             const geom = measureGeoms[mi];
@@ -1270,7 +1279,8 @@ export class TabRenderer {
                         : (tx >= textLaneEnds[1] + 6 ? 1 : 0);
                     textLaneEnds[lane] = tx + 5.5 * t.text.length;
                     // ...and above the effects band, when there is one
-                    const annY = opt.topMargin - 34 - this._fxLanes.band - lane * 11;
+                    const annY = opt.topMargin - 34 - this._fxLanes.band
+                        - (this._chordBand || 0) - lane * 11;
                     const annText = this.createText(tx, annY, t.text, {
                         fontSize: '10px',
                         fill: opt.fretColor,
@@ -1281,6 +1291,36 @@ export class TabRenderer {
                     annText.setAttribute('data-measure', measure.measure);
                     annText.setAttribute('data-tick', t.tick || 0);
                     svg.appendChild(annText);
+                }
+            }
+
+            // Chord diagrams (G15d3): a small box above the staff at the
+            // anchor's tick, centred on it. A name already printed by a text
+            // annotation at the same tick is not printed again; boxes that
+            // would overlap are pushed right. A name-only chord is just text.
+            if (measure.diagrams && measure.diagrams.length) {
+                const boxTop = opt.topMargin - 34 - this._fxLanes.band
+                    - this._chordBand + 4;
+                for (const d of measure.diagrams) {
+                    const name = (d.chord.name || '').trim();
+                    const printed = name && (measure.texts || []).some(
+                        t => (t.tick || 0) === (d.tick || 0) && (t.text || '').trim() === name);
+                    const showName = !printed;
+                    const size = chordBoxGeometry(d.chord, { showName });
+                    if (size.nameOnly && !size.name) continue;   // nothing left to draw
+                    const cx = geom.noteX0 + geom.noteOffset + (d.tick / geom.ticks) * geom.noteW;
+                    let bx = Math.max(opt.leftMargin - 10, Math.min(cx - size.width / 2, rowRight - size.width));
+                    bx = Math.max(bx, chordBoxEnd + 2);
+                    chordBoxEnd = bx + size.width;
+                    const box = renderChordBox(d.chord, {
+                        x: bx,
+                        y: size.nameOnly ? boxTop + CHORD_BOX_HEIGHT - 10 : boxTop,
+                        showName, ink: opt.fretColor, muted: opt.mutedColor,
+                    });
+                    box.setAttribute('data-measure', measure.measure);
+                    box.setAttribute('data-tick', d.tick || 0);
+                    box.setAttribute('data-chord', d.index);
+                    svg.appendChild(box);
                 }
             }
 

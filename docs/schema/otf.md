@@ -132,6 +132,15 @@ an end bar.
 first: 0-31 is an absolute fret (0 = open), `null` = not played. `fingers` has
 the same length, items 1-4 or `null`, and needs `frets`. `first_fret` is a signed
 byte. A name-only record has no `frets`. Records no diagram uses are kept.
+
+How the TEF importers choose the `frets` length (a TablEdit record is not tied
+to a track, and the G15f writer inverts this to rebuild the 14 string bytes and
+byte 32): byte 32 of the record when it is non-zero (V3 only), else the string
+count of the track of the first `chord_diagrams` entry that points at the
+record, else (a record nothing uses) the string count of the file's longest
+track. `first_fret` is omitted when it is 1, TablEdit's default. Whatever the
+importer could not keep goes to `x_source.skipped` (`chord_diagrams`: a V2 table
+that did not read as records, or a diagram pointing past the table).
 **`chord_diagrams`** anchors a diagram above a track's staff: `track` is a track
 id, `tick` lies inside the measure, `dx` / `dy` (signed bytes, optional) nudge it.
 

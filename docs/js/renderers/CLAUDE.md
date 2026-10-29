@@ -74,6 +74,24 @@ Playback highlighting is keyed by absolute tick, not measure or note index:
   `bravura-1.482`) because `@latest` on jsDelivr's `gh` endpoint is the repo's
   HEAD. Test: `__tests__/tablature-bravura.test.js`.
 
+### Chord diagrams
+
+`chord-box.js` is a standalone SVG chord box (`chordBoxGeometry` is the pure
+layout, `renderChordBox` the `<g>`), written for reuse: it knows nothing about
+staves. String 1 is drawn on the right, the grid starts at `first_fret` (and
+says "3fr"), `0` is an o, `null` an x, and a record with no `frets` is just its
+name. No barre is drawn: the file does not store one. `attachChordDiagrams(
+notation, otf, trackId)` (measure-timing.js, called next to
+`attachOtfDecorations` in `work-view.js` and the editor) hangs
+`measure.diagrams = [{tick, index, chord}]` on this track's measures. The tab
+renderer reserves a band (`CHORD_BOX_HEIGHT + 2`) only when the track has
+diagrams, between the text band above and the effects band below, and shifts
+annotation text up by it. A box is centred on its tick, pushed right when it
+would overlap the previous one, and does not print a name a text annotation at
+the same measure and tick already says. `dx`/`dy` are kept in the document but
+not drawn (their units are unknown; 4 corpus cells have one). Tests:
+`chord-box.test.js`, `tablature-chord-diagrams.test.js`, `e2e/chord-diagrams.spec.js`.
+
 ### Rhythm: stems, beams, flags, rests
 
 `renderStemsAndBeams` has three beam levels in ticks: 1 eighth, 2 sixteenth,

@@ -67,6 +67,7 @@ import {
     maxMeasureIn, measureTimingFromOtf,
     analyzeReadingList, prepareCompactNotation, densifyNotation,
     attachOtfDecorations,
+    attachChordDiagrams,
 } from './renderers/measure-timing.js';
 import { isPercussionTrack, pitchedTracks } from './renderers/otf-tracks.js';
 import { clearListView, openNotesSheet } from './lists.js';
@@ -2574,6 +2575,7 @@ async function renderTablaturePart(part, container) {
             // (display copy; attach after densify — annotations may
             // target silent measures).
             notation = attachOtfDecorations(notation, otf);
+            notation = attachChordDiagrams(notation, otf, track.id);
             if (showRepeatsCompact && otf.reading_list && otf.reading_list.length > 0) {
                 notation = prepareCompactNotation(notation, otf.reading_list);
             } else if (otf.reading_list && otf.reading_list.length > 0) {

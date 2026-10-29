@@ -67,8 +67,10 @@ def test_a_file_with_nothing_skipped_has_no_x_source(name):
 def test_x_source_skipped_is_written_in_key_order():
     doc = tef_to_otf(TEFReader(str(FIXTURES / "skipped_v3_all.tef")).parse()).to_dict()
     assert list(doc["x_source"]) == ["skipped"]
+    # The fixture's bare 0x35 records have no chord table behind them, so the
+    # chord-diagram importer (G15d3) also reports them as dropped diagrams.
     assert list(doc["x_source"]["skipped"]) == [
-        k for k in SKIPPED_KEYS if k in fx.EXPECTED_V3]
+        k for k in SKIPPED_KEYS if k in fx.EXPECTED_V3 or k == "chord_diagrams"]
 
 
 def test_a_key_added_by_another_importer_is_kept_and_ordered():
@@ -93,5 +95,6 @@ def test_skipped_survives_the_converter(tmp_path):
     out = tmp_path / "out.otf.json"
     convert_single(FIXTURES / "skipped_v3_all.tef", out)
     x_source = json.loads(out.read_text())["x_source"]
-    assert x_source["skipped"] == fx.EXPECTED_V3
+    # plus the two bare chord-diagram records G15d3 reports as dropped (no table)
+    assert x_source["skipped"] == {**fx.EXPECTED_V3, "chord_diagrams": 2}
     assert x_source["type"] == "local"
