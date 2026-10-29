@@ -11447,3 +11447,185 @@ body.file-dragover .tab-home-open {
 .tab-home-actions a.qc-toggle-btn {
     text-decoration: none;
 }
+
+/* ============================================
+   CHORD CHART on the song page (G18b2, docs/js/chord-chart-view.js)
+   Wide (min-width 800px, CHART_WIDE_MQ in song-view.js): the lead sheet is
+   two columns, lyrics | chart, and the Chart tab is hidden. Narrower: the
+   chart column is not drawn and the Chart part tab shows it.
+   ============================================ */
+
+.cc-cols { display: block; }
+.cc-chart-col, .cc-colhead { display: none; }
+
+@media (min-width: 800px) {
+    .cc-cols {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        column-gap: 3.5rem;
+        align-items: start;
+    }
+    .cc-chart-col {
+        display: block;
+        position: sticky;
+        top: 3.75rem;
+        max-height: calc(100vh - 3.75rem - var(--bottomband-h, 52px) - 1rem);
+        overflow-y: auto;
+    }
+    .cc-colhead {
+        display: block;
+        padding: 0.4rem 0;
+        border-bottom: 1px solid var(--text);
+        font-size: var(--font-sm);
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 0.75rem;
+    }
+    /* Practice mode: rows span both columns, each lyric section beside its chart section */
+    .cc-cols.cc-practice-on .cc-lyrics { display: none; }
+    .cc-cols.cc-practice-on .cc-chart-col {
+        grid-column: 1 / -1;
+        position: static;
+        max-height: none;
+        overflow: visible;
+    }
+    .cc-cols.cc-practice-on .cc-head {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        column-gap: 3.5rem;
+    }
+    .cc-cols.cc-practice-on .cc-head-lyrics { display: block; }
+    .cc-prow {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        column-gap: 3.5rem;
+        align-items: start;
+    }
+    .cc-psec .cc-plabel { grid-column: 1 / -1; }
+    .part-tab[data-part-type="chord-chart"],
+    .part-tabs.part-tabs-chart-only { display: none; }
+}
+
+/* Header: Chart | Practice and Bars toggles */
+.cc-head {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--text);
+    margin-bottom: 0.5rem;
+}
+.cc-head-lyrics {
+    display: none;
+    font-size: var(--font-sm);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+.cc-head-chart {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem 0.9rem;
+    flex: 1;
+}
+.cc-title {
+    flex: 1;
+    font-size: var(--font-sm);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+.cc-bars-tg {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: var(--font-sm);
+    color: var(--text-secondary);
+}
+.cc-seg {
+    display: inline-flex;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+.cc-seg-btn {
+    padding: 0.15rem 0.6rem;
+    border: none;
+    background: none;
+    color: var(--text-secondary);
+    font: inherit;
+    font-size: var(--font-sm);
+    cursor: pointer;
+}
+.cc-seg-btn + .cc-seg-btn { border-left: 1px solid var(--border); }
+.cc-seg-btn.on { background: var(--accent); color: var(--on-accent); }
+
+/* Chart sections and lines. A line is a grid of bars, a bar a row of cells,
+   a cell a row of equal slots; --text rules are the bar lines. */
+.cc-sec { margin: 0.9rem 0 1.1rem; }
+.cc-cap {
+    display: flex;
+    gap: 0.6rem;
+    align-items: baseline;
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+}
+.cc-cap b { font-size: 0.9rem; }
+.cc-cap span { color: var(--text-secondary); }
+.cc-line {
+    display: grid;
+    margin-bottom: 0.4rem;
+    border-right: 2px solid var(--text);
+    /* the body's face: practice rows sit inside the lyrics' monospace block */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+.cc-bar { display: flex; border-left: 2px solid var(--text); min-width: 0; }
+.cc-cell { display: flex; flex: 1; min-width: 0; }
+.cc-cell + .cc-cell { border-left: 1px dashed var(--border); }
+.cc-slot {
+    flex: 1;
+    min-width: 0;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.cc-slot.cc-hold { color: var(--text-secondary); opacity: 0.5; font-weight: 400; }
+.cc-slot.cc-carry { opacity: 0.38; }
+.cc-form, .cc-legend, .cc-note, .cc-by {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin: 0.4rem 0 0.9rem;
+}
+.cc-form b { color: var(--text); font-weight: 600; }
+.cc-legend i { font-style: normal; opacity: 0.5; }
+
+/* The quiet note under a lyric line (or a section label) */
+.cc-mis {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin: -0.1rem 0 0.5rem;
+    padding-left: 0.5rem;
+    border-left: 2px dotted var(--border);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+.cc-mis b { font-family: var(--mono); font-weight: 600; color: var(--text); }
+
+/* Practice mode: chart sections in the playing order, with the lyrics */
+.cc-psec { padding: 0.25rem 0 0.4rem; border-bottom: 1px solid var(--border); }
+.cc-plabel {
+    display: flex;
+    gap: 0.6rem;
+    align-items: baseline;
+    margin: 0.6rem 0 0.3rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    font-size: 0.85rem;
+}
+.cc-pcount { font-style: normal; font-size: var(--font-xs); }
+.cc-practice .cc-line { margin: 0.1rem 0 0.3rem; }
+.cc-practice .cc-slot { font-size: 1.05rem; padding: 0.3rem 0; }
+.cc-practice { font-size: 1em; }
+.cc-pchart { min-width: 0; }

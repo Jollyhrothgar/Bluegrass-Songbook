@@ -265,9 +265,11 @@ function getSectionChordPattern(section) {
 }
 
 /**
- * Render a section (verse, chorus, etc.)
+ * Render a section (verse, chorus, etc.). `index` is its place in the list
+ * renderSectionsHtml was given, stamped as data-section-index so the chord
+ * chart can find a lyric section again (compact mode folds some away).
  */
-function renderSection(section, isRepeatedSection, hideChords, o) {
+function renderSection(section, isRepeatedSection, hideChords, o, index) {
     const lines = section.preformatted
         ? `<pre class="section-preformatted">${escapeHtml(section.lines.join('\n'))}</pre>`
         : section.lines.map(line => renderLine(line, hideChords, o)).join('');
@@ -276,7 +278,7 @@ function renderSection(section, isRepeatedSection, hideChords, o) {
     const labelHtml = o.sectionLabels ? `<div class="section-label">${escapeHtml(section.label)}</div>` : '';
 
     return `
-        <div class="song-section ${indentClass}">
+        <div class="song-section ${indentClass}" data-section-index="${index}">
             ${labelHtml}
             <div class="section-content">${lines}</div>
         </div>
@@ -339,7 +341,7 @@ export function renderSectionsHtml(sections, opts) {
 
         if (!seenSections.has(sectionKey)) {
             seenSections.set(sectionKey, sectionContent);
-            sectionsHtml += renderSection(section, isRepeatedSection, hideChords, o);
+            sectionsHtml += renderSection(section, isRepeatedSection, hideChords, o, i);
             i++;
         } else if (o.compact && sectionContent === seenSections.get(sectionKey)) {
             // Only collapse if lyrics+chords are identical to the first instance
@@ -351,7 +353,7 @@ export function renderSectionsHtml(sections, opts) {
             }
             sectionsHtml += renderRepeatIndicator(sectionKey, consecutiveCount, shouldIndent);
         } else {
-            sectionsHtml += renderSection(section, isRepeatedSection, hideChords, o);
+            sectionsHtml += renderSection(section, isRepeatedSection, hideChords, o, i);
             i++;
         }
     }

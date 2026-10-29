@@ -31,7 +31,7 @@ import {
     allSongs
 } from './state.js';
 import { escapeHtml, safeUrl, parseItemRef } from './utils.js';
-import { prefetchSongContent } from './song-content.js';
+import { prefetchSongContent, getChordChart } from './song-content.js';
 import {
     extractChords, detectKey,
     CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS, normalizeKeyForMode
@@ -57,6 +57,15 @@ let navListNameEl = null;
 // Callback references (set by init)
 let pushHistoryStateFn = null;
 let showViewFn = null;
+
+// Where the song page has room for the chord chart beside the lyrics (G18b2).
+// Wider: two columns on the lead sheet. Narrower: a "Chart" part tab. The CSS
+// (`.cc-cols`, `.part-tab[data-part-type="chord-chart"]`) mirrors this width.
+export const CHART_WIDE_WIDTH = 800;
+export const CHART_WIDE_MQ = `(min-width: ${CHART_WIDE_WIDTH}px)`;
+export function chartIsWide() {
+    return typeof window !== 'undefined' && !!window.matchMedia?.(CHART_WIDE_MQ).matches;
+}
 
 // ChordPro parsing/section rendering lives in the shared renderer module.
 // Re-exported so existing importers (tests, work-view) keep working.
@@ -367,6 +376,40 @@ export function initKeyState(song, chordpro, isInitialRender = false) {
     }
 }
 
+/** The display options every lyric-chart draw uses (renderSectionsHtml's `opts`). */
+function lyricRenderOpts() {
+    return {
+        key: originalDetectedKey,
+        transposeTo: currentDetectedKey,
+        nashville: nashvilleMode,
+        chordMode: chordDisplayMode,
+        compact: compactMode,
+        sectionLabels: showSectionLabels,
+        twoColumn: twoColumnMode
+    };
+}
+
+/**
+ * Draw the work's chord chart into `container` once the lazy view and the
+ * chart JSON are in (`draw(view, ctx)`). A draw that was superseded while it
+ * loaded (key change, another part, another song) is dropped. A chart that
+ * fails to load leaves the page exactly as it was.
+ */
+let chartDrawSeq = 0;
+function drawChordChart(container, song, ctx, draw, onMissing = null) {
+    const token = String(++chartDrawSeq);
+    container.dataset.chartDraw = token;
+    const current = () => container.isConnected && container.dataset.chartDraw === token;
+    Promise.all([import('./chord-chart-view.js'), getChordChart(song)]).then(([view, chart]) => {
+        if (!current()) return;
+        if (chart) draw(view, { ...ctx, chart });
+        else onMissing?.();
+    }).catch(err => {
+        console.warn('chord chart:', err);
+        if (current()) onMissing?.();
+    });
+}
+
 /**
  * Render a chordpro lead sheet (chord view and/or ABC notation) into a
  * container. Also manages the bottom band: ABC playback controls when
@@ -395,15 +438,8 @@ export function renderLeadSheetContent(container, song, chordpro, isInitialRende
         setAbcTempoBpm(tempoMatch ? parseInt(tempoMatch[1], 10) : 120);
     }
 
-    const sectionsHtml = renderSectionsHtml(chordSections, {
-        key: originalDetectedKey,
-        transposeTo: currentDetectedKey,
-        nashville: nashvilleMode,
-        chordMode: chordDisplayMode,
-        compact: compactMode,
-        sectionLabels: showSectionLabels,
-        twoColumn: twoColumnMode
-    });
+    const lyricOpts = lyricRenderOpts();
+    const sectionsHtml = renderSectionsHtml(chordSections, lyricOpts);
 
     const showAbcView = hasAbc && (!hasChords || showAbcNotation);
 
@@ -516,6 +552,35 @@ export function renderLeadSheetContent(container, song, chordpro, isInitialRende
 
     // Mark wrapped chord-lyrics lines for visual indicator
     markWrappedLines();
+
+    // The chord chart (G18b): notes under lyric lines and the second column
+    if (song?.chord_chart && hasChords && !showAbcView) {
+        drawChordChart(container, song,
+            { sections: chordSections, opts: lyricOpts, fontScale: FONT_SIZES[fontSizeLevel] },
+            (view, ctx) => {
+                view.mountLeadSheetChart(container, ctx);
+                markWrappedLines();   // the lyrics now have a column's width
+            });
+    }
+}
+
+/**
+ * The Chart part tab (narrow screens): the chord chart alone, or with the
+ * lyrics interleaved in practice mode. Stamps renderedKey like the lead sheet
+ * so work-view's key subscriber can tell a real transpose from an echo.
+ */
+export function renderChartTabContent(container, song, chordpro, isInitialRender = false) {
+    if (!container) return;
+    const { sections } = parseChordPro(chordpro);
+    initKeyState(song, chordpro, isInitialRender);
+    container.dataset.renderedKey = String(currentDetectedKey ?? '');
+    stopAbcPlayback();
+    setBottomBand(null);
+    container.innerHTML = '<div class="part-loading">Loading chart\u2026</div>';
+    drawChordChart(container, song,
+        { sections: sections.filter(s => s.type !== 'abc'), opts: lyricRenderOpts(), fontScale: FONT_SIZES[fontSizeLevel] },
+        (view, ctx) => view.renderChartTab(container, ctx),
+        () => { container.innerHTML = '<div class="part-error"><p>Couldn\'t load this chart.</p></div>'; });
 }
 
 /**

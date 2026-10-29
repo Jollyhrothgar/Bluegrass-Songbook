@@ -318,3 +318,26 @@ export function clearSongContentCache(id = null) {
     urlCache.delete(songContentUrl(id));
     urlInFlight.delete(songContentUrl(id));
 }
+
+// ---------------------------------------------------------------------------
+// Chord charts (G18b): data/charts/<work-id>.json, named by the index row's
+// `chord_chart`. Cached per URL; a failed fetch resolves null and is not
+// cached, so the next open retries. The page works without it.
+// ---------------------------------------------------------------------------
+
+const chartCache = new Map();
+
+/** The work's published chord chart, or null (no chart, or it could not load). */
+export function getChordChart(song) {
+    const url = song?.chord_chart;
+    if (!url) return Promise.resolve(null);
+    if (chartCache.has(url)) return chartCache.get(url);
+    const promise = fetch(url)
+        .then(r => {
+            if (!r.ok) throw new Error(`HTTP ${r.status}`);
+            return r.json();
+        })
+        .catch(() => { chartCache.delete(url); return null; });
+    chartCache.set(url, promise);
+    return promise;
+}
