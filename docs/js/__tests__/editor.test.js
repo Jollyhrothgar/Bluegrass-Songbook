@@ -360,6 +360,32 @@ Sing along`;
         expect(out).not.toContain('{comment: G');
     });
 
+    // UG draws a chord as a box over the word, so its typed column sits a letter or two in (Mike's paste of Old Home
+    // Place, 2026-10-28): the chord goes to the start of the syllable it is on, as it is charted by hand
+    it('a chord typed a letter or two into a word lands on that syllable\'s start', () => {
+        const sheet = [
+            '           G        B7         C          G',
+            "It's been ten long years since I left my home",
+            '  D                        G',
+            'What have they done to the old home place?',
+            '   G    B7      C        G',
+            'I ran away to Charlottesville',
+            '                 D           G',
+            'And worked in a sawmill or two',
+        ].join('\n');
+        const out = editorConvertToChordPro(sheet);
+        expect(out).toContain("It's been [G]ten long [B7]years since [C]I left my [G]home");
+        expect(out).toContain('[D]What have they done to the [G]old home place?');
+        expect(out).toContain('I [G]ran a[B7]way to [C]Charlottes[G]ville');   // deep in a long syllable: the sound's start
+        expect(out).toContain('And worked in a [D]sawmill or [G]two');
+    });
+
+    it('a chord on a syllable start stays; one past the words goes after them, as before', () => {
+        expect(editorConvertToChordPro('G     C\nHello there')).toBe('[G]Hello [C]there');
+        expect(editorConvertToChordPro('G       C            D\nHello there my friend')).toBe('[G]Hello [C]there my friend[D]');
+        expect(editorConvertToChordPro('G   A\nHi')).toBe('[G]Hi[A]');
+    });
+
     it('chord lines transpose with the song (a note of chords never did)', () => {
         const out = editorConvertToChordPro('[Intro]\nG C D G\n\n[Verse 1]\nG\nwords');
         expect(editorTransposeContent(out, 2)).toContain('[A]   [D]   [E]   [A]');

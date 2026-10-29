@@ -1,3 +1,4 @@
+import { tokenizeLine } from './visual-editor/syllables.js';
 // Smart paste: detect and convert chord sheets (chords-over-lyrics, ChordU,
 // Ultimate Guitar) into ChordPro. Extracted verbatim from editor.js so the
 // Raw editor and the Visual editor share one battle-tested implementation.
@@ -49,12 +50,44 @@ function editorExtractChordsWithPositions(chordLine) {
 /**
  * Align chords to lyrics based on position
  */
+/**
+ * Where a chord typed at column `position` over `lyricLine` belongs: the START of the syllable that column falls in.
+ * Chord sites draw a chord as a box over the word, so its column is approximate and usually a letter or two in (UG's
+ * Old Home Place: `t[G]en long y[B7]ears`, `Wh[D]at`); charted by hand the chord sits on the syllable it changes on
+ * (`[G]ten long [B7]years`, `[D]What`, `[C]Charlottes[G]ville`), which is also where the editor's cursor stands.
+ * Only a short move (two letters) goes to a syllable's start; deeper into a long syllable the chord backs up to the
+ * start of the sound it is on. A column over a space goes to the next word when it starts right there (one or two
+ * columns on); past the words, or further from a word, it stays where it was typed.
+ */
+function chordColumnToLyric(lyricLine, position, syllables) {
+    if (position >= lyricLine.length) return lyricLine.length;
+    const inside = syllables.find((t) => position >= t.start && position < t.start + t.text.length);
+    if (inside) {
+        if (position - inside.start <= 2) return inside.start;
+        // further into a syllable the splitter left long ("Charlottes|ville" is one piece to it): back only to the
+        // start of the sound the column is on, its vowels and the one consonant before them ("Charlottes[G]ville")
+        const V = /[aeiouy]/i;
+        let k = position;
+        if (!V.test(lyricLine[k])) return k;
+        while (k > inside.start && V.test(lyricLine[k - 1])) k--;
+        if (k > inside.start && /[a-z]/i.test(lyricLine[k - 1])) k--;
+        return k;
+    }
+    const next = syllables.find((t) => t.start > position);
+    return next && next.start - position <= 2 ? next.start : position;
+}
+
 function editorAlignChordsToLyrics(chordLine, lyricLine, chordPositions) {
     if (!chordPositions.length) return lyricLine;
-    const sorted = [...chordPositions].sort((a, b) => b.position - a.position);
+    const syllables = tokenizeLine(lyricLine);
+    // right to left, so an insertion never shifts a position still to be placed; two chords that land on one
+    // syllable keep their order (`[A][D]Charlottesville`)
+    const placed = chordPositions
+        .map(({ chord, position }, i) => ({ chord, i, at: chordColumnToLyric(lyricLine, position, syllables) }))
+        .sort((a, b) => b.at - a.at || b.i - a.i);
     let result = lyricLine;
-    for (const { chord, position } of sorted) {
-        let lyricPos = Math.min(position, result.length);
+    for (const { chord, at } of placed) {
+        const lyricPos = Math.min(at, result.length);
         result = result.slice(0, lyricPos) + `[${chord}]` + result.slice(lyricPos);
     }
     return result;

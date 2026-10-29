@@ -558,7 +558,13 @@ part (`[Intro]`, `[Interlude]`, `[Instrumental]`, `[Break]`, `[Solo]`,
 line of chords with no words under it becomes a chords-only line spaced as the
 editor writes one (`[G]   [B7]    [C]   [G]`); both were `{comment: …}` notes
 until 2026-10-28, which hid the chords and kept them out of transposition.
-Other headings (`[Capo 2]`) are still notes.
+Other headings (`[Capo 2]`) are still notes. A chord typed a letter or two
+into a word (chord sites draw it as a box over the word: UG's `t[G]en`,
+`Wh[D]at`) goes to the start of that syllable, `[G]ten`, `[D]What`; deeper into
+a long syllable it backs up only to the start of the sound it is on
+(`Charlottes[G]ville`); a chord on a syllable start or past the words stays
+(`smart-paste.js::chordColumnToLyric`, 2026-10-28). Where the downbeat falls is
+not in the text: that stays the charter's call in Chords mode.
 
 Functions prefixed with `editor*`:
 - `enterEditMode(song)` - Open editor with existing song
@@ -896,6 +902,12 @@ npm test              # Run unit tests once (Vitest) and exit
 npm run test:watch    # Unit tests in watch mode (re-runs on save; never exits)
 npm run test:e2e      # Run E2E tests (Playwright, requires server)
 ```
+
+**Tests and live corpus data** (Mike, 2026-10-28). `works/` is edited from the site, so a test may read a live work
+only when its purpose is to catch problems IN that data (a smoke test: "a real tab renders end to end"). A test of the
+code that asserts what a chart says (exact lines, counts) reads a frozen copy or a sample in `__tests__/fixtures/`
+(`old-home-place.pro`, `fmb-banjo.otf.json`; e2e: `openFrozenOldHomePlace`). A site correction to Old Home Place
+failed CI & Deploy for hours (#320).
 
 `npm test` was plain `vitest` until 2026-10-27, which is watch mode outside
 CI: from an agent or script it never exited and looked like a hang. Unit

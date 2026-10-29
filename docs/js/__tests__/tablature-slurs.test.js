@@ -20,16 +20,18 @@ import { TabRenderer } from '../renderers/tablature.js';
 // repo root instead of resolving relative to this module.
 const REPO_ROOT = (() => {
     let dir = process.cwd();
-    while (!fs.existsSync(path.join(dir, 'package.json')) && path.dirname(dir) !== dir) {
+    while (!fs.existsSync(path.join(dir, 'works')) && path.dirname(dir) !== dir) {
         dir = path.dirname(dir);
     }
     return dir;
 })();
 
-// A pinned copy of works/foggy-mountain-breakdown/banjo.otf.json
-// (2026-10-28): the live tab can be corrected in the app.
+// A FROZEN copy of the banjo track (fixtures/fmb-banjo.otf.json, 2026-10-28). This test guards the RENDERER and
+// asserts exact technique counts, so it must not read works/: a tab correction from the site would break it, as an
+// edit to Old Home Place broke CI & Deploy (#320). The live tab is still rendered end to end by the corpus smoke test
+// in tablature-effects.test.js, whose purpose is to catch problems in real data.
 const FMB = JSON.parse(fs.readFileSync(path.join(
-    REPO_ROOT, 'docs/js/__tests__/fixtures/foggy-mountain-breakdown-banjo.otf.json'), 'utf8'));
+    REPO_ROOT, 'docs/js/__tests__/fixtures/fmb-banjo.otf.json'), 'utf8'));
 
 const TECH = new Set(['h', 'p', '/']);
 

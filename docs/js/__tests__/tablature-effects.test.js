@@ -22,7 +22,7 @@ import { TabRenderer } from '../renderers/tablature.js';
 
 const REPO_ROOT = (() => {
     let dir = process.cwd();
-    while (!fs.existsSync(path.join(dir, 'package.json')) && path.dirname(dir) !== dir) {
+    while (!fs.existsSync(path.join(dir, 'works')) && path.dirname(dir) !== dir) {
         dir = path.dirname(dir);
     }
     return dir;
@@ -334,10 +334,8 @@ describe('notes without fx render exactly as before', () => {
 });
 
 describe('a real corpus tab', () => {
-    // A pinned copy of works/cripple-creek/banjo.otf.json (2026-10-28): the
-    // live tab can be corrected in the app, and a test must not break when it is.
     const otf = JSON.parse(fs.readFileSync(path.join(
-        REPO_ROOT, 'docs/js/__tests__/fixtures/cripple-creek-banjo.otf.json'), 'utf8'));
+        REPO_ROOT, 'works/cripple-creek/banjo.otf.json'), 'utf8'));   // live smoke test
     const track = otf.tracks.find(t => t.id === 'banjo');
     const notation = otf.notation.banjo;
 
