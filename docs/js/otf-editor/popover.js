@@ -2069,6 +2069,9 @@ export class SaveAsPopover {
         this.session = null;
         this._token = 0;     // a late answer for a format no longer selected is ignored
         this._onKeyDown = this._onKeyDown.bind(this);
+        this._onDocKey = (e) => {
+            if (e.key === 'Escape' && this.isOpen) { e.preventDefault(); e.stopPropagation(); this.close(); }
+        };
     }
 
     init(container) {
@@ -2171,6 +2174,9 @@ export class SaveAsPopover {
         const focusName = () => { this.nameInput?.focus(); this.nameInput?.select(); };
         focusName();
         setTimeout(focusName, 0);
+        requestAnimationFrame(focusName);
+        // Escape closes it wherever focus happens to be (the editor may hold it)
+        document.addEventListener('keydown', this._onDocKey, true);
     }
 
     get format() {
@@ -2234,6 +2240,7 @@ export class SaveAsPopover {
         const wasOpen = this.isOpen;
         this.isOpen = false;
         this._token++;
+        document.removeEventListener('keydown', this._onDocKey, true);
         if (this.overlay) this.overlay.style.display = 'none';
         if (wasOpen) this.options.onClose?.();
     }
@@ -2241,6 +2248,7 @@ export class SaveAsPopover {
     get opened() { return this.isOpen; }
 
     destroy() {
+        document.removeEventListener('keydown', this._onDocKey, true);
         this.overlay?.parentNode?.removeChild(this.overlay);
         this.overlay = null;
         this.element = null;
