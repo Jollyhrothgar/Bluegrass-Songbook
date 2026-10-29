@@ -17,7 +17,7 @@ import {
     historyInitialized,
     setBootRouteClaimed,
     canRouteBootUrl,
-    SONG_PATH, songHref, songIdForPath, currentHref,
+    SONG_PATH, TAB_EDITOR_PATH, normalizedHref, songHref, songIdForPath, currentHref,
     loadViewPrefs,
     userLists,
     compactMode,
@@ -209,6 +209,8 @@ const renderHighScoresView = (el) =>
     renderLazyView('high-scores', () => import('./high-scores.js'), m => m.renderHighScoresView(el));
 const renderDraftsView = (el) =>
     renderLazyView('drafts', () => import('./drafts-view.js'), m => m.renderDraftsView(el));
+const renderTabEditorHome = (el) =>
+    renderLazyView('tab-editor', () => import('./tab-editor-home.js'), m => m.renderTabEditorHome(el));
 
 // ============================================
 // DOM ELEMENTS
@@ -417,6 +419,9 @@ function pushHistoryState(view, data = {}, replace = false) {
         case 'drafts':
             hash = '#drafts';
             break;
+        case 'tab-editor':
+            hash = '/tab-editor/';   // a path, not a hash route (absolute, like every entry here)
+            break;
         case 'high-scores':
             hash = '#high-scores';
             break;
@@ -530,6 +535,9 @@ function handleHistoryNavigation(state) {
         case 'drafts':
             showView('drafts');
             break;
+        case 'tab-editor':
+            showView('tab-editor');
+            break;
         case 'favorites':
             showView('favorites');
             break;
@@ -593,10 +601,10 @@ function initViewSubscription() {
         previousView = view;
 
         // Off a song page the URL belongs to the root: a hash route set while
-        // on a song's path (/songs/x/#search) becomes /#search.
-        if (view !== 'song' && SONG_PATH.test(window.location.pathname)) {
-            history.replaceState(history.state, '', `/${window.location.hash}`);
-        }
+        // on a song's path (/songs/x/#search) becomes /#search. Likewise off
+        // the tab editor's front door (/tab-editor/#search).
+        const root = normalizedHref(view, window.location);
+        if (root !== null) history.replaceState(history.state, '', root);
 
         // Tear down live tablature state when LEAVING the song page: stops
         // audio (including an in-flight soundfont load), destroys the edit
@@ -789,6 +797,14 @@ function initViewSubscription() {
                 editorPanel?.classList.add('hidden');
                 songListsView?.classList.add('hidden');
                 renderDraftsView(resultsDiv);
+                break;
+            case 'tab-editor':
+                searchContainer?.classList.add('hidden');
+                resultsDiv?.classList.remove('hidden');
+                songView?.classList.add('hidden');
+                editorPanel?.classList.add('hidden');
+                songListsView?.classList.add('hidden');
+                renderTabEditorHome(resultsDiv);
                 break;
             case 'song-lists':
                 searchContainer?.classList.add('hidden');
@@ -1113,9 +1129,23 @@ function routeSongPath() {
     return true;
 }
 
+/**
+ * The tab editor's front door: /tab-editor/ (the static page there is this
+ * app with the empty state's words already in #results). Returns true so boot
+ * doesn't rewrite the URL to `/`; the entry is stamped with the view so Back
+ * from the editor lands here.
+ */
+function routeTabEditorPath() {
+    if (!TAB_EDITOR_PATH.test(window.location.pathname)) return false;
+    trackDeepLink('tab-editor', window.location.pathname);
+    showView('tab-editor');
+    pushHistoryState('tab-editor', {}, true);
+    return true;
+}
+
 function handleDeepLink() {
     const hash = window.location.hash;
-    if (!hash) return routeSongPath();
+    if (!hash) return routeSongPath() || routeTabEditorPath();
 
     // Dungeon chrome persists only on dungeon and song URLs — every other
     // destination drops back to the canon scope
@@ -3181,7 +3211,8 @@ function seedOverflowBase() {
                 seedOverflowBase();   // the prompt is single-use
             },
         }] : []),
-        { label: 'Drafts', onClick: () => { showView('drafts'); pushHistoryState('drafts'); } },
+        { label: 'My tabs', onClick: () => { showView('drafts'); pushHistoryState('drafts'); } },
+        { label: 'Tab editor', onClick: () => { showView('tab-editor'); pushHistoryState('tab-editor'); } },
         { label: 'High Scores', onClick: () => { showView('high-scores'); pushHistoryState('high-scores'); } },
         { label: 'About', onClick: () => { location.href = 'about.html'; } },
         { label: 'Dev Blog', onClick: () => { location.href = 'https://mikebeaumier.com/blog/series/bluegrass-book-dev-log/'; } },

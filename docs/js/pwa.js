@@ -13,6 +13,7 @@
 
 import { showToast } from './toast.js';
 import { getDraftStore } from './drafts.js';
+import { track as trackEvent } from './analytics.js';
 
 const TEF_RE = /\.tef$/i;
 const OTF_JSON_RE = /\.otf\.json$/i;
@@ -20,6 +21,24 @@ const OTF_JSON_RE = /\.otf\.json$/i;
 /** Which dropped/opened files this app can do something with. Pure. */
 export function isSupportedTabFile(name) {
     return TEF_RE.test(String(name || '')) || OTF_JSON_RE.test(String(name || ''));
+}
+
+/**
+ * The file input's `accept` for a tab file. `.otf.json` is what we mean, but
+ * some pickers match only the last extension, so plain `.json` rides along;
+ * a .json that isn't a tab is turned away after it is picked, with
+ * importFileToOtf's message. iOS Safari may grey `.tef` out as an unknown
+ * type: if the on-device check says so, drop `accept` entirely and rely on
+ * that same after-the-pick rejection.
+ */
+export const TAB_FILE_ACCEPT = '.tef,.otf.json,.json';
+
+/** The extension that decides a tab file's format: 'tef', 'otf.json', or whatever else it has. */
+export function tabFileExt(name) {
+    const lower = String(name || '').toLowerCase();
+    if (OTF_JSON_RE.test(lower)) return 'otf.json';
+    const dot = lower.lastIndexOf('.');
+    return dot === -1 ? '' : lower.slice(dot + 1);
 }
 
 /** Cheap structural check — the editor needs at least one track to mount. */
@@ -64,10 +83,14 @@ export async function openTabFile(file, {
     parseTef = null,
     navigate = (hash) => { globalThis.location.hash = hash; },
     notify = showToast,
+    source = 'drop',
+    track = trackEvent,
 } = {}) {
     try {
         const otf = await importFileToOtf(file, { parseTef });
         const draft = await store.save({ otf, title: otf?.metadata?.title || file.name });
+        // `source`: front-door | menu | drop | launch (where the file came from).
+        track('tab_file_open', { source, ext: tabFileExt(file.name) });
         navigate(`#new-tab?draft=${encodeURIComponent(draft.id)}&file=1`);
         return draft;
     } catch (err) {
@@ -77,6 +100,48 @@ export async function openTabFile(file, {
             { variant: 'warning', duration: 6000 });
         return null;
     }
+}
+
+/**
+ * Ask for a tab file with the system picker: a hidden input, clicked inside
+ * the caller's tap (iOS and Android only open a picker from a user gesture, so
+ * nothing may be awaited before this). `onFile` gets the chosen File; a
+ * cancelled dialog just cleans up.
+ */
+export function pickTabFile(onFile, { document: doc = globalThis.document } = {}) {
+    const input = doc.createElement('input');
+    input.type = 'file';
+    input.accept = TAB_FILE_ACCEPT;
+    input.style.display = 'none';
+    doc.body.appendChild(input);
+    input.addEventListener('change', async () => {
+        const chosen = input.files?.[0];
+        input.remove();
+        if (chosen) await onFile(chosen);
+    });
+    input.addEventListener('cancel', () => input.remove());
+    input.click();
+}
+
+/**
+ * The one "Open a tab file…" action: pick, run `beforeOpen` (File ▸ Open…
+ * flushes the session's autosave here, so the current work is a draft first),
+ * then open the file exactly like a drop. Resolves with the new draft.
+ */
+export function chooseTabFile({
+    source,
+    beforeOpen = null,
+    open = openTabFile,
+    pick = pickTabFile,
+} = {}) {
+    return new Promise((resolve) => {
+        pick(async (file) => {
+            try { await beforeOpen?.(); } catch (err) {
+                console.warn('Could not save before opening a file', err);
+            }
+            resolve(await open(file, { source }));
+        });
+    });
 }
 
 // ---------------------------------------------------------------------------
@@ -207,7 +272,7 @@ export function consumeLaunchQueue({ win = globalThis, open = openTabFile } = {}
         for (const handle of handles) {
             try {
                 const file = await handle.getFile();
-                await open(file);
+                await open(file, { source: 'launch' });
                 break;   // one document per launch; the rest would fight over the route
             } catch (err) {
                 console.warn('Could not open launched file', err);
@@ -259,7 +324,7 @@ export function enableFileDrop({
         root.body?.classList.remove('file-dragover');
         if (!file) return;             // not ours — leave the event alone
         e.preventDefault();
-        open(file);
+        open(file, { source: 'drop' });
     };
 
     root.addEventListener('dragover', onDragOver);

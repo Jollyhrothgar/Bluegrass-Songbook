@@ -10,6 +10,7 @@
 // state.facade.canUndo() (dirty check), and the onSave option.
 
 import { pitchedTracks } from '../renderers/otf-tracks.js';
+import { chooseTabFile } from '../pwa.js';
 
 /**
  * Pick the track to edit for a part. Mirrors work-view's lead-track
@@ -73,6 +74,7 @@ export function createTabEditSession({
     commentRequired = true,
     onSubmitted = null,
     extraActions = [],
+    onOpenFile = null,
 }) {
     const root = document.createElement('div');
     root.className = 'tab-edit-session';
@@ -161,6 +163,13 @@ export function createTabEditSession({
         // and `session` are consts assigned below; every `run` is a
         // closure invoked long after both exist.
         fileActions: [
+            // Open… first, as every File menu has it. The caller decides what
+            // opening means (work-view flushes the autosave first); with no
+            // caller it is the plain picker, which opens the file as a draft.
+            {
+                label: '📂 Open…',
+                run: () => (onOpenFile ? onOpenFile(session) : chooseTabFile({ source: 'menu' })),
+            },
             ...(onSubmit ? [{
                 label: submitLabel,
                 run: () => bar.querySelector('.tab-edit-submit')?.click(),

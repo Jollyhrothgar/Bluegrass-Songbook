@@ -118,6 +118,21 @@ export function setAllSongs(songs) {
 
 export const SONG_PATH = /^\/songs\/[^/]+\/(?:[^/]+\/)?$/;
 
+/** The tab editor's front door (G15c): /tab-editor/, with or without the slash. */
+export const TAB_EDITOR_PATH = /^\/tab-editor\/?$/;
+
+/**
+ * The URL to put in the address bar when `view` is showing at `loc`, or null
+ * to leave it. Only a song shows at a song's path and only the front door at
+ * /tab-editor/; every other view belongs to the root, so a hash route set on
+ * either path (`/tab-editor/#search`) becomes `/#search`.
+ */
+export function normalizedHref(view, { pathname, hash = '' }) {
+    const stray = (view !== 'song' && SONG_PATH.test(pathname))
+        || (view !== 'tab-editor' && TAB_EDITOR_PATH.test(pathname));
+    return stray ? `/${hash}` : null;
+}
+
 /** The URL to show for a work: its song path, or `/#work/{id}{suffix}`. */
 export function songHref(workId, suffix = '') {
     const path = !suffix && allSongs.find(s => s.id === workId)?.path;

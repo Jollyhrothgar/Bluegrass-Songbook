@@ -58,6 +58,7 @@ export const LAZY_MODULE_URLS = [
     './js/review-queue.js',
     './js/smart-paste.js',
     './js/tab-controls-sheet.js',
+    './js/tab-editor-home.js',
     './js/tab-edit-band.js',
     './js/tab-playback-interactions.js',
     './js/tef-import/index.js',

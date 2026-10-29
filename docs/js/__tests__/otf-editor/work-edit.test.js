@@ -454,6 +454,22 @@ describe('createTabEditSession in the bottom band', () => {
         expect(editor.load).toHaveBeenCalledWith({ imported: true });
     });
 
+    it('File ▸ Open… is first in the menu, and hands the session to onOpenFile', () => {
+        const onOpenFile = vi.fn();
+        const session = start({ onOpenFile });
+        const labels = editor.factoryOptions.fileActions.map(a => a.label);
+        expect(labels[0]).toBe('📂 Open…');
+        expect(labels).toEqual(['📂 Open…', '⬇ Download OTF', 'Cancel', '✓ Done']);
+        editor.factoryOptions.fileActions[0].run();
+        expect(onOpenFile).toHaveBeenCalledWith(session);
+    });
+
+    it('File ▸ Open… is there in a new take (with Submit) and a correction alike', () => {
+        start({ onSubmit: async () => ({}), showDone: false });
+        const labels = editor.factoryOptions.fileActions.map(a => a.label);
+        expect(labels).toEqual(['📂 Open…', '🚀 Submit correction', '⬇ Download OTF', 'Cancel']);
+    });
+
     it('passes onChange through to the editor (drafts survive a reload)', () => {
         const onChange = vi.fn();
         start({ onChange });

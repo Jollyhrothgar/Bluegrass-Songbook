@@ -185,6 +185,13 @@ Reads the written `index.jsonl` and `songs/*.pro` and emits (all gitignored):
 - `docs/songs/index.html` (every song A to Z, the page that gives each song a
   referring link), `docs/404.html` (a copy of `index.html`; Pages serves it for
   archived songs and the app routes it), `docs/sitemap.xml`.
+- `docs/tab-editor/index.html` (G15c): the same template with the tab editor
+  front door's title, description, canonical and a pre-rendered
+  `<article class="prerender">` in `#results` (`render_tab_editor_page`). The app
+  replaces the article with `docs/js/tab-editor-home.js`; the heading and the
+  privacy line must read the same in both (a pytest reads the JS for them). Its
+  sitemap `<lastmod>` is the newer of `docs/index.html` and this script, since
+  no commit touches a generated file.
 - The template is filled by exact-string landmarks (`_fill`, `HOME_HEAD`, a
   regex that needs the description right after the `<title>`). Editing those
   lines in `docs/index.html` fails the build on purpose.

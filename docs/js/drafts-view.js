@@ -1,4 +1,6 @@
-// The Drafts list (`#drafts`) — the one new surface the PWA adds.
+// My tabs (`#drafts`) — the one new surface the PWA adds. (It was called
+// Drafts; only the words changed. The route stays `#drafts` and the store
+// `bgb-drafts`, so every saved tab and bookmark keeps working.)
 //
 // Deliberately plain: title, instrument, when it was last touched, Open and
 // Delete. It renders inside the app shell like every other non-song view
@@ -10,6 +12,7 @@
 
 import { escapeAttr, escapeHtml } from './utils.js';
 import { draftOpenHash, getDraftStore } from './drafts.js';
+import { chooseTabFile } from './pwa.js';
 
 const MINUTE = 60 * 1000;
 const HOUR = 60 * MINUTE;
@@ -67,11 +70,21 @@ function shellHtml(inner) {
     return `
         <div class="drafts-view">
             <div class="drafts-header">
-                <h1 class="bounty-title">Drafts</h1>
-                <p class="bounty-subtitle">Tabs you've started. They live on this
-                   device and survive going offline.</p>
+                <h1 class="bounty-title">My tabs</h1>
+                <p class="bounty-subtitle">Tabs you've opened or started. They're saved
+                   in this browser only; nothing is uploaded unless you submit it.</p>
             </div>
             ${inner}
+        </div>
+    `;
+}
+
+/** The two ways to get a first tab, the same pair as the tab editor's front door. */
+export function startButtonsHtml() {
+    return `
+        <div class="tab-home-actions">
+            <button type="button" class="qc-toggle-btn tab-open-file">Open a tab file…</button>
+            <a class="qc-toggle-btn tab-start-new" href="#new-tab">Start a new tab</a>
         </div>
     `;
 }
@@ -80,21 +93,22 @@ export function draftsViewHtml(drafts, now = Date.now()) {
     if (!drafts.length) {
         return shellHtml(`
             <div class="bounty-empty">
-                <p>No drafts yet.</p>
+                <p>No tabs yet.</p>
                 <p class="bounty-empty-sub">Start a tab and it saves itself here as
                    you type — no button to remember.</p>
+                ${startButtonsHtml()}
             </div>
         `);
     }
     return shellHtml(`
         <div class="drafts-list">${drafts.map(d => draftRowHtml(d, now)).join('')}</div>
-        <p class="bounty-filter-hint">Drafts are stored in this browser only.
-           Submitting a tab clears its draft.</p>
+        <p class="bounty-filter-hint">Tabs are stored in this browser only.
+           Submitting a tab clears its copy here.</p>
     `);
 }
 
 /**
- * Render the Drafts view into `container`.
+ * Render My tabs (the drafts list) into `container`.
  *
  * @param {HTMLElement} container
  * @param {Object} [options]
@@ -130,13 +144,53 @@ export async function renderDraftsView(container, {
     // The user may have navigated on while we awaited IndexedDB.
     if (!container.isConnected && container.ownerDocument) return;
 
-    container.innerHTML = draftsViewHtml(drafts, now());
+    const draw = (list) => {
+        container.innerHTML = draftsViewHtml(list, now());
+        attachDraftActions(container.querySelector('.drafts-view') || container, {
+            drafts: list, store, navigate, confirmDelete,
+            onEmpty: () => draw([]),
+        });
+    };
+    draw(drafts);
+}
 
-    container.addEventListener('click', async (e) => {
+/**
+ * Make a block of `draftRowHtml` rows work: Open navigates to the draft's
+ * route, Delete asks inline and then removes the record. Shared by this view
+ * and the tab editor's front door (which shows the five newest), so a row
+ * behaves the same wherever it is drawn.
+ *
+ * Listens on `root`, which the caller replaces on every render (a listener on
+ * a shared container would stack up across renders). `drafts` is the array the
+ * rows were drawn from; deleted drafts leave it.
+ *
+ * @param {HTMLElement} root - an element holding the rows
+ * @param {Object} options
+ * @param {Array} options.drafts
+ * @param {Object} [options.store]
+ * @param {Function} [options.navigate] - (hash) => void
+ * @param {Function} [options.confirmDelete] - see renderDraftsView
+ * @param {Function} [options.onEmpty] - called when the last draft is deleted
+ * @param {Function} [options.onDeleted] - (draft) after a delete
+ */
+export function attachDraftActions(root, {
+    drafts,
+    store = getDraftStore(),
+    navigate = (hash) => { globalThis.location.hash = hash; },
+    confirmDelete = null,
+    onEmpty = null,
+    onDeleted = null,
+} = {}) {
+    root.addEventListener('click', async (e) => {
         const open = e.target.closest?.('.draft-open');
         if (open) {
             const draft = drafts.find(d => d.id === open.dataset.draftId);
             if (draft) navigate(draftOpenHash(draft));
+            return;
+        }
+        const pick = e.target.closest?.('.tab-open-file');
+        if (pick) {
+            chooseTabFile({ source: 'my-tabs' });
             return;
         }
         const del = e.target.closest?.('.draft-delete');
@@ -148,10 +202,11 @@ export async function renderDraftsView(container, {
                 : await askInRow(del.closest('.draft-row'));
             if (!ok) return;
             await store.remove(draft.id);
-            drafts = drafts.filter(d => d.id !== draft.id);
-            [...container.querySelectorAll('.draft-row')]
+            drafts.splice(drafts.indexOf(draft), 1);
+            [...root.querySelectorAll('.draft-row')]
                 .find(el => el.dataset.draftId === draft.id)?.remove();
-            if (!drafts.length) container.innerHTML = draftsViewHtml([], now());
+            onDeleted?.(draft);
+            if (!drafts.length) onEmpty?.();
         }
     });
 }

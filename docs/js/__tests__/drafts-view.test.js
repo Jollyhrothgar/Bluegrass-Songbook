@@ -8,6 +8,7 @@ import {
     draftsViewHtml,
     formatUpdated,
     renderDraftsView,
+    attachDraftActions,
 } from '../drafts-view.js';
 
 const NOW = Date.parse('2026-08-20T12:00:00Z');
@@ -68,8 +69,24 @@ describe('draftRowHtml', () => {
 describe('draftsViewHtml', () => {
     it('explains itself when empty', () => {
         const html = draftsViewHtml([], NOW);
-        expect(html).toContain('No drafts yet');
+        expect(html).toContain('No tabs yet.');
         expect(html).not.toContain('draft-row');
+    });
+
+    it('is called My tabs, and says what is and is not uploaded', () => {
+        const html = draftsViewHtml([draft()], NOW);
+        expect(html).toContain('<h1 class="bounty-title">My tabs</h1>');
+        expect(html.replace(/\s+/g, ' ')).toContain(
+            "Tabs you've opened or started. They're saved in this browser only; "
+            + 'nothing is uploaded unless you submit it.');
+        expect(html).not.toMatch(/Drafts/);
+    });
+
+    it('offers the front door’s two buttons when empty', () => {
+        const html = draftsViewHtml([], NOW);
+        expect(html).toContain('Open a tab file…');
+        expect(html).toContain('Start a new tab');
+        expect(html).toContain('href="#new-tab"');
     });
 
     it('renders one row per draft', () => {
@@ -126,7 +143,7 @@ describe('renderDraftsView', () => {
         el2.querySelector('.draft-delete').click();
         await new Promise(r => setTimeout(r, 0));
         expect(await store.list()).toEqual([]);
-        expect(el2.textContent).toContain('No drafts yet');
+        expect(el2.textContent).toContain('No tabs yet.');
     });
 
     // With nothing injected the ask is an INLINE strip in the row — not
@@ -157,7 +174,7 @@ describe('renderDraftsView', () => {
         el.querySelector('.draft-confirm-yes').click();
         await new Promise(r => setTimeout(r, 0));
         expect(await store.list()).toEqual([]);
-        expect(el.textContent).toContain('No drafts yet');
+        expect(el.textContent).toContain('No tabs yet.');
         nativeConfirm.mockRestore();
     });
 
@@ -165,5 +182,30 @@ describe('renderDraftsView', () => {
         const el = mount();
         await renderDraftsView(el, { store: { list: () => Promise.reject(new Error('blocked')) } });
         expect(el.textContent).toContain("Couldn't open the drafts store");
+    });
+});
+
+
+describe('attachDraftActions (rows are drawn by the front door too)', () => {
+    it('makes Open and Delete work on any block of draftRowHtml rows', async () => {
+        const store = createDraftStore({ backend: memoryBackend() });
+        const saved = await store.save({ otf: { metadata: { title: 'A' }, tracks: [{ id: 'b' }] } });
+        const drafts = await store.list();
+        const root = document.createElement('div');
+        root.innerHTML = drafts.map(d => draftRowHtml(d, NOW)).join('');
+        document.body.appendChild(root);
+        const navigate = vi.fn();
+        const onEmpty = vi.fn();
+        attachDraftActions(root, { drafts, store, navigate, confirmDelete: () => true, onEmpty });
+
+        root.querySelector('.draft-open').click();
+        expect(navigate).toHaveBeenCalledWith(`#new-tab?draft=${saved.id}`);
+
+        root.querySelector('.draft-delete').click();
+        await new Promise(r => setTimeout(r, 0));
+        expect(await store.list()).toEqual([]);
+        expect(root.querySelector('.draft-row')).toBeNull();
+        expect(drafts).toEqual([]);
+        expect(onEmpty).toHaveBeenCalled();
     });
 });

@@ -12,12 +12,17 @@ import {
     importFileToOtf,
     isStandalone,
     isSupportedTabFile,
+    TAB_FILE_ACCEPT,
+    tabFileExt,
+    pickTabFile,
+    chooseTabFile,
     looksLikeOtf,
     openTabFile,
     promptInstall,
     registerServiceWorker,
     watchInstallPrompt,
 } from '../pwa.js';
+import * as analytics from '../analytics.js';
 import { createDraftStore, memoryBackend } from '../drafts.js';
 
 const OTF = { metadata: { title: 'Sally Goodin' }, tracks: [{ id: 'banjo' }], notation: {} };
@@ -284,7 +289,7 @@ describe('consumeLaunchQueue', () => {
         expect(consumeLaunchQueue({ win, open })).toBe(true);
         await consumer({ files: [{ getFile: async () => file }, { getFile: async () => fakeFile('b.tef') }] });
         expect(open).toHaveBeenCalledTimes(1);
-        expect(open).toHaveBeenCalledWith(file);
+        expect(open).toHaveBeenCalledWith(file, { source: 'launch' });
     });
 });
 
@@ -309,7 +314,7 @@ describe('enableFileDrop', () => {
         const event = dropEvent([file]);
         listeners.drop(event);
         expect(event.preventDefault).toHaveBeenCalled();
-        expect(open).toHaveBeenCalledWith(file);
+        expect(open).toHaveBeenCalledWith(file, { source: 'drop' });
     });
 
     it('leaves unrelated drops to the browser', () => {
@@ -347,5 +352,119 @@ describe('enableFileDrop', () => {
 
     it('returns a teardown and no-ops without a document', () => {
         expect(typeof enableFileDrop({ root: null })).toBe('function');
+    });
+});
+
+
+describe('openTabFile analytics (tab_file_open)', () => {
+    it('reports where the file came from and its extension, once it opened', async () => {
+        const track = vi.fn();
+        const store = createDraftStore({ backend: memoryBackend() });
+        await openTabFile(fakeFile('Sally.tef'), {
+            store, navigate: vi.fn(), parseTef: () => OTF, source: 'front-door', track,
+        });
+        expect(track).toHaveBeenCalledWith('tab_file_open', { source: 'front-door', ext: 'tef' });
+    });
+
+    it('names .otf.json whole, and counts nothing for a file that would not open', async () => {
+        const track = vi.fn();
+        const store = createDraftStore({ backend: memoryBackend() });
+        await openTabFile(fakeFile('Sally.otf.json', { text: JSON.stringify(OTF) }), {
+            store, navigate: vi.fn(), source: 'menu', track,
+        });
+        expect(track).toHaveBeenCalledWith('tab_file_open', { source: 'menu', ext: 'otf.json' });
+
+        track.mockClear();
+        await openTabFile(fakeFile('notes.txt'), {
+            store, navigate: vi.fn(), notify: vi.fn(), source: 'menu', track,
+        });
+        expect(track).not.toHaveBeenCalled();
+    });
+
+    it('defaults the source to a drop (the original caller)', async () => {
+        const track = vi.fn();
+        const store = createDraftStore({ backend: memoryBackend() });
+        await openTabFile(fakeFile('a.tef'), { store, navigate: vi.fn(), parseTef: () => OTF, track });
+        expect(track).toHaveBeenCalledWith('tab_file_open', { source: 'drop', ext: 'tef' });
+    });
+
+    it('uses the real analytics track by default', () => {
+        expect(typeof analytics.track).toBe('function');
+    });
+});
+
+describe('tabFileExt', () => {
+    it('is the extension that decides the format', () => {
+        expect(tabFileExt('Sally.TEF')).toBe('tef');
+        expect(tabFileExt('x.otf.json')).toBe('otf.json');
+        expect(tabFileExt('x.json')).toBe('json');
+        expect(tabFileExt('noext')).toBe('');
+        expect(tabFileExt(undefined)).toBe('');
+    });
+});
+
+describe('the file picker', () => {
+    it('accepts .tef and .otf.json (and plain .json, which iOS and some Androids match on)', () => {
+        const parts = TAB_FILE_ACCEPT.split(',');
+        expect(parts).toContain('.tef');
+        expect(parts).toContain('.otf.json');
+    });
+
+    function fakeDoc() {
+        const input = {
+            style: {}, files: [], listeners: {}, removed: false,
+            addEventListener(t, fn) { this.listeners[t] = fn; },
+            click: vi.fn(),
+            remove() { this.removed = true; },
+        };
+        const doc = {
+            createElement: () => input,
+            body: { appendChild: vi.fn() },
+        };
+        return { input, doc };
+    }
+
+    it('pickTabFile clicks a hidden file input and hands back the chosen file', async () => {
+        const { input, doc } = fakeDoc();
+        const onFile = vi.fn();
+        pickTabFile(onFile, { document: doc });
+        expect(input.type).toBe('file');
+        expect(input.accept).toBe(TAB_FILE_ACCEPT);
+        expect(input.click).toHaveBeenCalledTimes(1);   // synchronously: iOS wants the tap's activation
+        input.files = [fakeFile('Sally.tef')];
+        await input.listeners.change();
+        expect(onFile).toHaveBeenCalledWith(input.files[0]);
+        expect(input.removed).toBe(true);
+    });
+
+    it('pickTabFile cleans up after a cancelled dialog and calls back with nothing', async () => {
+        const { input, doc } = fakeDoc();
+        const onFile = vi.fn();
+        pickTabFile(onFile, { document: doc });
+        input.listeners.cancel();
+        expect(input.removed).toBe(true);
+        expect(onFile).not.toHaveBeenCalled();
+    });
+
+    it('chooseTabFile runs beforeOpen (the autosave flush) before opening the file', async () => {
+        const order = [];
+        const file = fakeFile('Sally.tef');
+        const pick = (cb) => cb(file);
+        const open = vi.fn(async () => { order.push('open'); });
+        await chooseTabFile({
+            source: 'menu', pick, open,
+            beforeOpen: async () => { order.push('flush'); },
+        });
+        expect(order).toEqual(['flush', 'open']);
+        expect(open).toHaveBeenCalledWith(file, { source: 'menu' });
+    });
+
+    it('chooseTabFile still opens the file when the flush fails', async () => {
+        const open = vi.fn();
+        await chooseTabFile({
+            source: 'menu', pick: (cb) => cb(fakeFile('a.tef')), open,
+            beforeOpen: async () => { throw new Error('idb gone'); },
+        });
+        expect(open).toHaveBeenCalled();
     });
 });

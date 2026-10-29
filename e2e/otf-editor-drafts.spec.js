@@ -72,17 +72,17 @@ test.describe('the drafts list', () => {
             await page.locator('.draft-delete').first().click();
             await page.locator('.draft-confirm-yes').click();
             await expect(page.locator('.draft-row')).toHaveCount(0);
-            await expect(page.locator('.drafts-view')).toContainText('No drafts yet');
+            await expect(page.locator('.drafts-view')).toContainText('No tabs yet');
             expect(dialogs).toEqual([]);
 
             await page.reload();
             await expect(page.locator('.drafts-view'))
-                .toContainText('No drafts yet', { timeout: 20000 });
+                .toContainText('No tabs yet', { timeout: 20000 });
         });
 
     test('an empty bucket says so, without pretending it failed', async ({ page }) => {
         await gotoDrafts(page);
-        await expect(page.locator('.drafts-view')).toContainText('No drafts yet');
+        await expect(page.locator('.drafts-view')).toContainText('No tabs yet');
         await expect(page.locator('.drafts-view'))
             .toContainText('it saves itself here as you type');
     });

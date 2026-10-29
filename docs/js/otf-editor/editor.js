@@ -27,6 +27,7 @@ import {
     PRESETS, entryAdvanceTicks, stepTicks, keyFor,
 } from './bindings.js';
 import { EditEventRecorder } from './recorder.js';
+import { chooseTabFile } from '../pwa.js';
 import { createAutomation } from './automation.js';
 
 const ZOOM_HINT = 'Zoom: how much room each beat gets. Zoom in to see and click a fine cursor step.';
@@ -80,9 +81,9 @@ export class OTFEditor {
             // fileActions: what the File menu offers, supplied by whoever
             // owns the session's buttons — `[{label, run, disabled?,
             // action?}]`, where `action` is a binding id used ONLY to
-            // print its key. The editor alone can only download, so that
-            // is the default; the song page's edit session (Submit /
-            // Download / Cancel / Done) passes its own list through
+            // print its key. The editor alone can open a file and download,
+            // so those are the default; the song page's edit session (Open /
+            // Submit / Download / Cancel / Done) passes its own list through
             // whatever creates the editor.
             fileActions: null,
             onSave: null,
@@ -182,6 +183,11 @@ export class OTFEditor {
             dispatch: (id) => this.keyboard.dispatchAction(id),
             onClose: () => this.editorRoot?.focus(),
             fileActions: this.options.fileActions || [{
+                // Open a tab file: parked as a draft and opened like a drop
+                // (pwa.js openTabFile), so it is the app's one open path.
+                label: '📂 Open…',
+                run: () => chooseTabFile({ source: 'menu' }),
+            }, {
                 label: '⬇ Download OTF',
                 action: 'edit.save',
                 run: () => this.keyboard.dispatchAction('edit.save'),

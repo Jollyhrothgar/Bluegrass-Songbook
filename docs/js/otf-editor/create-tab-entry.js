@@ -267,18 +267,16 @@ function defaultRequireLogin() {
 /**
  * Open the tab editor in create mode, pre-targeted at a work.
  *
- * Login is required AT THE ACTION (Phase 2a): browsing the work page
- * stays open to everyone, and the sign-in prompt happens the moment
- * someone commits to contributing — not a page earlier.
+ * No sign-in here (G15c): anyone can open the editor, write, open files and
+ * download; the book stores nothing until Submit, which is where the login
+ * gate is (`submitNewTab`, and the correction path in work-view).
  *
- * @returns {boolean} false when the click turned into a sign-in instead.
+ * @returns {boolean} true (kept so callers can close their picker on launch).
  */
 export function launchTabCreator(target = {}, {
-    requireLogin = defaultRequireLogin,
     navigate = (href) => { globalThis.location.href = href; },
     base = '',
 } = {}) {
-    if (!requireLogin('add a tab')) return false;
     navigate(createTabHref(target, base));
     return true;
 }

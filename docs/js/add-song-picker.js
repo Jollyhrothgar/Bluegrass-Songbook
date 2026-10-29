@@ -235,7 +235,7 @@ function renderTabResults() {
 }
 
 /**
- * Hand off to the tab editor. Login is gated inside launchTabCreator.
+ * Hand off to the tab editor. No sign-in first: that waits for Submit.
  *
  * Except: if the chosen work ALREADY has tabs for the chosen instrument,
  * that gets said here — before the editor opens and before an hour of
