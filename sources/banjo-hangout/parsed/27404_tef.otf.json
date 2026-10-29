@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Pike County Breakdown",
     "time_signature": "2/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -387,26 +388,26 @@
       {
         "measure": 29,
         "events": [
-          {"tick": 0, "notes": [{"s": 2, "f": 11, "dur": 120}]},
+          {"tick": 0, "notes": [{"s": 2, "f": 11, "dur": 120, "fx": ["choke"]}]},
           {"tick": 120, "notes": [{"s": 1, "f": 9, "dur": 120}]},
           {"tick": 240, "notes": [{"s": 5, "f": 0, "dur": 120}]},
-          {"tick": 360, "notes": [{"s": 2, "f": 11, "dur": 120}]},
+          {"tick": 360, "notes": [{"s": 2, "f": 11, "dur": 120, "fx": ["choke"]}]},
           {"tick": 480, "notes": [{"s": 1, "f": 9, "dur": 120}]},
           {"tick": 600, "notes": [{"s": 5, "f": 0, "dur": 120}]},
-          {"tick": 720, "notes": [{"s": 2, "f": 11, "dur": 120}]},
+          {"tick": 720, "notes": [{"s": 2, "f": 11, "dur": 120, "fx": ["choke"]}]},
           {"tick": 840, "notes": [{"s": 1, "f": 9, "dur": 120}]}
         ]
       },
       {
         "measure": 30,
         "events": [
-          {"tick": 0, "notes": [{"s": 2, "f": 11, "dur": 120}]},
+          {"tick": 0, "notes": [{"s": 2, "f": 11, "dur": 120, "fx": ["choke"]}]},
           {"tick": 120, "notes": [{"s": 1, "f": 9, "dur": 120}]},
           {"tick": 240, "notes": [{"s": 5, "f": 0, "dur": 120}]},
-          {"tick": 360, "notes": [{"s": 2, "f": 11, "dur": 120}]},
+          {"tick": 360, "notes": [{"s": 2, "f": 11, "dur": 120, "fx": ["choke"]}]},
           {"tick": 480, "notes": [{"s": 1, "f": 9, "dur": 120}]},
           {"tick": 600, "notes": [{"s": 5, "f": 0, "dur": 120}]},
-          {"tick": 720, "notes": [{"s": 2, "f": 11, "dur": 120}]},
+          {"tick": 720, "notes": [{"s": 2, "f": 11, "dur": 120, "fx": ["choke"]}]},
           {"tick": 840, "notes": [{"s": 1, "f": 9, "dur": 120}]}
         ]
       },
@@ -437,16 +438,59 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 60, "text": "PART 1"},
+    {"measure": 17, "tick": 60, "text": "PART 2"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 16},
     {"from_measure": 1, "to_measure": 16},
     {"from_measure": 17, "to_measure": 32}
+  ],
+  "measure_marks": [
+    {"measure": 1, "repeat_start": true, "raw": 64},
+    {"measure": 16, "repeat_end": true, "raw": 128}
+  ],
+  "chords": [
+    {"name": "G"},
+    {"name": "F"},
+    {"name": "C"},
+    {"name": "D"}
+  ],
+  "chord_diagrams": [
+    {"measure": 1, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 3, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 4, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 5, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 7, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 8, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 9, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 11, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 12, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 13, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 15, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 16, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 17, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 19, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 20, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 21, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 23, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 24, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 25, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 27, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 28, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 29, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 31, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 32, "tick": 0, "track": "banjo", "chord": 0}
   ],
   "x_source": {
     "type": "banjo-hangout",
     "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/p/tab-pike-county-bre-27404-5927171492024.tef",
     "author": "Yohansen",
     "converted_at": "2026-07-26T22:20:06.494081",
-    "source_id": "27404"
+    "source_id": "27404",
+    "skipped": {
+      "picking_marks": 49
+    }
   }
 }

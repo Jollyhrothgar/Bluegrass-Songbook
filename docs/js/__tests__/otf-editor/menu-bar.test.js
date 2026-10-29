@@ -851,7 +851,7 @@ describe('EditorToolbar — what only shows when it means something', () => {
         const popup = document.querySelector('.otf-fx-popup');
         expect(popup && !popup.hidden).toBe(true);
         const items = [...popup.querySelectorAll('[role="menuitemcheckbox"]')];
-        expect(items).toHaveLength(14);
+        expect(items).toHaveLength(15);
         const roll = items.find(i => i.dataset.action === 'effect.roll');
         expect(roll.getAttribute('aria-checked')).toBe('true');   // the note has it
         expect(roll.textContent).toMatch(/roll/i);

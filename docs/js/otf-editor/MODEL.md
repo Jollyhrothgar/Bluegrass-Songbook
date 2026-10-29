@@ -16,6 +16,13 @@ is `docs/schema/otf.schema.json` (field guide: `docs/schema/otf.md`).
 | reached by | `A` (ANNOTATION mode) | clicking the text; `t` / `T` in NORMAL (vim `c` / `C`) |
 | facade | `setFingering`, `setLeftHand`, `setArticulation` | `addAnnotation`, `setAnnotationText`, `deleteAnnotation`, `findAnnotationIndex` |
 
+Chord diagrams (`chords[]` + `chord_diagrams[]`, G15d3) are score-level too but
+read-only in the editor: they cannot be created or edited yet, only survive.
+The facade moves them with `insertMeasure`/`deleteMeasure` (a deleted measure
+takes its diagrams), follows `renameTrack`, and `deleteTrack` removes that
+track's; the `chords` table is never trimmed. Each is one undo step, because
+`_mutate` snapshots the whole document.
+
 Placed text is score-level and drawn above the staff by
 `renderers/tablature.js`; chord names over a tab are placed text. Two entries
 may share a `(measure, tick)`, so address them by index
@@ -43,10 +50,30 @@ byte-identical.
   `transact`. `_placeNote` replaces whatever is on the string, so fingering
   must be re-applied in that same step or `u` costs two presses.
 
+**Dynamics.** `tracks[].dyn` is the track's level (absent = `f`), `note.dyn`
+(`fff ff f mf mp p pp`, loudest first) only where the note differs from it, and
+a tied note carries none. Note ▸ Dynamics is menu-only (`dynamic.*` actions);
+`facade.setDynamic` / `setRangeDynamic` store nothing for the track's own level
+and refuse tied notes (tying a note drops its `dyn`). A note with no `dyn`
+takes its track's level, so `copyRange` records `trackDyn` and `paste` writes
+an explicit `dyn` when the target track is at another level (`_carryDynamic`).
+The player plays `127 - 16 * code`, normalised to the track's level
+(`dynamicGain` in `tab-player.js`). The status bar's `Dyn:` shows only when
+the note differs from its track.
+
 **Effects and grace.** `note.fx` is a set stored in `FX_ORDER`, omitted when
 empty (never `[]`); `note.grace` is `{f: 0..24, kind?}`. `tech` keeps the
 transitions (`h p / \ x`, and `b` = bend target); everything else is `fx`.
 
+- **Bends.** Turning on `bend` / `bend-release` also marks the next same-string
+  note (any later measure) `tech: 'b'` when it has no technique and a different
+  fret; turning it off unmarks it (`_syncBendTarget`, same undo step). The amount
+  is the target's fret minus the source's: edit the target's fret, there is no
+  control. Copy, move, measure and track ops carry both notes. Separation is not
+  rewritten: delete the source and the target keeps its `b` (plays as a lone
+  quarter-tone note); delete the target and the bend has no target and sounds
+  plain; a note inserted between steals nothing (it is unmarked, the old target
+  stays `b` and plays lone).
 - Every fx key is a toggle. Over a selection: all notes already have it means
   off, otherwise on for all (`setRangeEffect(..., 'toggle')`, one undo step).
   `F3` / vim `.` re-apply (on, never off); only an effect turned on is

@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Sally Goodin (Kirk McGee)",
     "time_signature": "2/4",
@@ -15,7 +15,8 @@
       "instrument": "mandolin",
       "tuning": ["E5", "A4", "D4", "G3"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {

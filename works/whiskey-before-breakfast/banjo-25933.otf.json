@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Whiskey Before Breakfast",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -351,6 +352,10 @@
     {"measure": 12, "tick": 480, "text": "D"},
     {"measure": 12, "tick": 960, "text": "A"},
     {"measure": 12, "tick": 1440, "text": "D"}
+  ],
+  "measure_marks": [
+    {"measure": 8, "end_bar": true, "raw": 8},
+    {"measure": 16, "end_bar": true, "raw": 8}
   ],
   "x_source": {
     "type": "banjo-hangout",

@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Arkansas Traveler",
     "time_signature": "4/4",
@@ -16,7 +16,8 @@
       "instrument": "6-string-guitar",
       "tuning": ["E4", "B3", "G3", "D3", "A2", "E2"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "ff"
     }
   ],
   "notation": {
@@ -775,7 +776,7 @@
       {
         "measure": 66,
         "events": [
-          {"tick": 0, "notes": [{"s": 2, "f": 3, "dur": 480}]},
+          {"tick": 0, "notes": [{"s": 2, "f": 3, "dur": 480, "grace": {"f": 2, "kind": "slide"}}]},
           {"tick": 480, "notes": [{"s": 2, "f": 3, "dur": 480}]},
           {"tick": 960, "notes": [{"s": 2, "f": 3, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 2, "f": 2, "dur": 240}]},

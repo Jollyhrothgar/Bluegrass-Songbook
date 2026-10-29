@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Liberty (D tuning)",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["E4", "B3", "G#3", "E3", "G#4"],
       "capo": 2,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -151,7 +152,7 @@
           {"tick": 720, "notes": [{"s": 3, "f": 5, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 2, "f": 0, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240}]},
-          {"tick": 1440, "notes": [{"s": 4, "f": 0, "dur": 480}]}
+          {"tick": 1440, "notes": [{"s": 4, "f": 0, "dur": 480, "grace": {"f": 2, "kind": "hp"}}]}
         ]
       },
       {
@@ -178,7 +179,7 @@
       {
         "measure": 15,
         "events": [
-          {"tick": 0, "notes": [{"s": 4, "f": 4, "dur": 480}]},
+          {"tick": 0, "notes": [{"s": 4, "f": 4, "dur": 480, "grace": {"f": 0, "kind": "hp"}}]},
           {"tick": 480, "notes": [{"s": 2, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 5, "f": 0, "dur": 240}]},
@@ -208,7 +209,7 @@
           {"tick": 480, "notes": [{"s": 2, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 3, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 4, "f": 0, "dur": 480}]},
-          {"tick": 1440, "notes": [{"s": 3, "f": 1, "dur": 480}]}
+          {"tick": 1440, "notes": [{"s": 3, "f": 1, "dur": 480, "grace": {"f": 0, "kind": "hp"}}]}
         ]
       },
       {
@@ -223,6 +224,23 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 0, "text": "D Tuning  F# D F# A D"},
+    {"measure": 1, "tick": 0, "text": "D"},
+    {"measure": 3, "tick": 0, "text": "G"},
+    {"measure": 5, "tick": 0, "text": "D"},
+    {"measure": 7, "tick": 960, "text": "A"},
+    {"measure": 7, "tick": 0, "text": "G"},
+    {"measure": 8, "tick": 0, "text": "D"},
+    {"measure": 9, "tick": 0, "text": "D"},
+    {"measure": 10, "tick": 0, "text": "D"},
+    {"measure": 13, "tick": 0, "text": "A"},
+    {"measure": 14, "tick": 0, "text": "D"},
+    {"measure": 16, "tick": 960, "text": "A"},
+    {"measure": 16, "tick": 0, "text": "G"},
+    {"measure": 17, "tick": 0, "text": "D"},
+    {"measure": 18, "tick": 0, "text": "D"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 8},
     {"from_measure": 1, "to_measure": 7},

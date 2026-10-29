@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Devil's Dream",
     "time_signature": "2/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -231,11 +232,64 @@
     {"from_measure": 1, "to_measure": 16},
     {"from_measure": 9, "to_measure": 16}
   ],
+  "chords": [
+    {"name": "G"},
+    {"name": "Am"},
+    {"name": "G"},
+    {"name": "Am"},
+    {"name": "D"},
+    {"name": "G"},
+    {"name": "G"},
+    {"name": "Am"},
+    {"name": "G"},
+    {"name": "Am"},
+    {"name": "D"},
+    {"name": "G"},
+    {"name": "Am"},
+    {"name": "G"},
+    {"name": "Am"},
+    {"name": "D"},
+    {"name": "G"},
+    {"name": "G"},
+    {"name": "Am"},
+    {"name": "G"},
+    {"name": "Am"},
+    {"name": "D"},
+    {"name": "G"},
+    {"name": "Am"},
+    {"name": "G"},
+    {"name": "Am"},
+    {"name": "D"},
+    {"name": "G"},
+    {"name": "G"},
+    {"name": "Am"},
+    {"name": "G"},
+    {"name": "Am"},
+    {"name": "D"},
+    {"name": "G"}
+  ],
+  "chord_diagrams": [
+    {"measure": 1, "tick": 0, "track": "banjo", "chord": 8},
+    {"measure": 3, "tick": 0, "track": "banjo", "chord": 23},
+    {"measure": 5, "tick": 0, "track": "banjo", "chord": 24},
+    {"measure": 7, "tick": 0, "track": "banjo", "chord": 25},
+    {"measure": 8, "tick": 0, "track": "banjo", "chord": 26},
+    {"measure": 8, "tick": 480, "track": "banjo", "chord": 27},
+    {"measure": 9, "tick": 0, "track": "banjo", "chord": 28},
+    {"measure": 11, "tick": 0, "track": "banjo", "chord": 29},
+    {"measure": 13, "tick": 0, "track": "banjo", "chord": 30},
+    {"measure": 15, "tick": 0, "track": "banjo", "chord": 31},
+    {"measure": 16, "tick": 0, "track": "banjo", "chord": 32},
+    {"measure": 16, "tick": 480, "track": "banjo", "chord": 33}
+  ],
   "x_source": {
     "type": "banjo-hangout",
     "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/d/tab-devils-dream-27165-2159141262024.tef",
     "author": "Yohansen",
     "converted_at": "2026-07-26T22:20:06.273042",
-    "source_id": "27165"
+    "source_id": "27165",
+    "skipped": {
+      "picking_marks": 15
+    }
   }
 }

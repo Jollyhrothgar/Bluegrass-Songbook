@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Cripple Creek (thumb lead)",
     "time_signature": "2/2",
@@ -16,7 +16,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["E4", "C#4", "A3", "E3", "A4"],
       "capo": 2,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -41,8 +42,8 @@
           {"tick": 480, "notes": [{"s": 5, "f": 0, "dur": 240, "finger": "T"}]},
           {"tick": 720, "notes": [{"s": 1, "f": 2, "dur": 240, "finger": "I"}]},
           {"tick": 960, "notes": [{"s": 2, "f": 3, "dur": 480, "finger": "T"}]},
-          {"tick": 1440, "notes": [{"s": 2, "f": 0, "dur": 240, "finger": "T"}]},
-          {"tick": 1680, "notes": [{"s": 1, "f": 0, "dur": 240, "finger": "I"}]}
+          {"tick": 1440, "notes": [{"s": 2, "f": 0, "dur": 240, "finger": "T", "dyn": "ff"}]},
+          {"tick": 1680, "notes": [{"s": 1, "f": 0, "dur": 240, "finger": "I", "dyn": "ff"}]}
         ]
       },
       {

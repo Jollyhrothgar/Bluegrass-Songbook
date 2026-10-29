@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Blackberry Blossom",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -231,6 +232,12 @@
       }
     ]
   },
+  "measure_marks": [
+    {"measure": 2, "repeat_start": true, "raw": 64},
+    {"measure": 9, "repeat_end": true, "ending": 2, "raw": 130},
+    {"measure": 10, "repeat_start": true, "raw": 64},
+    {"measure": 17, "repeat_end": true, "ending": 2, "raw": 130}
+  ],
   "x_source": {
     "type": "banjo-hangout",
     "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/tab-blackberry-blos-24211-435243132020.tef",

@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Over the Waterfall",
     "time_signature": "4/4",
@@ -16,14 +16,16 @@
       "instrument": "5-string-banjo",
       "tuning": ["E4", "D4", "A3", "D3", "A4"],
       "capo": 2,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     },
     {
       "id": "guitar-2",
       "instrument": "6-string-guitar",
       "tuning": ["E4", "B3", "G3", "D3", "A2", "E2"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -299,7 +301,7 @@
       {
         "measure": 7,
         "events": [
-          {"tick": 0, "notes": [{"s": 4, "f": 0, "dur": 480}]},
+          {"tick": 0, "notes": [{"s": 4, "f": 0, "dur": 480, "dyn": "fff"}]},
           {"tick": 480, "notes": [{"s": 1, "f": 2, "dur": 480, "fx": ["brush"]}, {"s": 2, "f": 3, "dur": 480, "fx": ["brush"]}, {"s": 3, "f": 2, "dur": 480, "fx": ["brush"]}]},
           {"tick": 960, "notes": [{"s": 5, "f": 0, "dur": 480}]},
           {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 480, "fx": ["brush"]}, {"s": 2, "f": 2, "dur": 480, "fx": ["brush"]}, {"s": 3, "f": 2, "dur": 480, "fx": ["brush"]}]}
@@ -346,7 +348,7 @@
         "events": [
           {"tick": 0, "notes": [{"s": 4, "f": 0, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 1, "f": 2, "dur": 480, "fx": ["brush"]}, {"s": 2, "f": 3, "dur": 480, "fx": ["brush"]}, {"s": 3, "f": 2, "dur": 480, "fx": ["brush"]}]},
-          {"tick": 960, "notes": [{"s": 6, "f": 3, "dur": 480}]},
+          {"tick": 960, "notes": [{"s": 6, "f": 3, "dur": 480, "dyn": "fff"}]},
           {"tick": 1440, "notes": [{"s": 1, "f": 3, "dur": 480, "fx": ["brush"]}, {"s": 2, "f": 0, "dur": 480, "fx": ["brush"]}, {"s": 3, "f": 0, "dur": 480, "fx": ["brush"]}]}
         ]
       },
@@ -355,7 +357,7 @@
         "events": [
           {"tick": 0, "notes": [{"s": 4, "f": 0, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 1, "f": 2, "dur": 480, "fx": ["brush"]}, {"s": 2, "f": 3, "dur": 480, "fx": ["brush"]}, {"s": 3, "f": 2, "dur": 480, "fx": ["brush"]}]},
-          {"tick": 960, "notes": [{"s": 5, "f": 0, "dur": 480}]},
+          {"tick": 960, "notes": [{"s": 5, "f": 0, "dur": 480, "dyn": "fff"}]},
           {"tick": 1440, "notes": [{"s": 1, "f": 2, "dur": 480, "fx": ["brush"]}, {"s": 2, "f": 3, "dur": 480, "fx": ["brush"]}, {"s": 3, "f": 2, "dur": 480, "fx": ["brush"]}]}
         ]
       },
@@ -364,7 +366,7 @@
         "events": [
           {"tick": 0, "notes": [{"s": 4, "f": 0, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 1, "f": 2, "dur": 480, "fx": ["brush"]}, {"s": 2, "f": 3, "dur": 480, "fx": ["brush"]}, {"s": 3, "f": 2, "dur": 480, "fx": ["brush"]}]},
-          {"tick": 960, "notes": [{"s": 6, "f": 3, "dur": 480}]},
+          {"tick": 960, "notes": [{"s": 6, "f": 3, "dur": 480, "dyn": "fff"}]},
           {"tick": 1440, "notes": [{"s": 1, "f": 3, "dur": 480, "fx": ["brush"]}, {"s": 2, "f": 0, "dur": 480, "fx": ["brush"]}, {"s": 3, "f": 0, "dur": 480, "fx": ["brush"]}]}
         ]
       },
@@ -373,7 +375,7 @@
         "events": [
           {"tick": 0, "notes": [{"s": 4, "f": 0, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 1, "f": 2, "dur": 480, "fx": ["brush"]}, {"s": 2, "f": 3, "dur": 480, "fx": ["brush"]}, {"s": 3, "f": 2, "dur": 480, "fx": ["brush"]}]},
-          {"tick": 960, "notes": [{"s": 5, "f": 0, "dur": 480}]},
+          {"tick": 960, "notes": [{"s": 5, "f": 0, "dur": 480, "dyn": "fff"}]},
           {"tick": 1440, "notes": [{"s": 1, "f": 2, "dur": 480, "fx": ["brush"]}, {"s": 2, "f": 3, "dur": 480, "fx": ["brush"]}, {"s": 3, "f": 2, "dur": 480, "fx": ["brush"]}]}
         ]
       },
@@ -382,7 +384,7 @@
         "events": [
           {"tick": 0, "notes": [{"s": 4, "f": 0, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 1, "f": 2, "dur": 480, "fx": ["brush"]}, {"s": 2, "f": 3, "dur": 480, "fx": ["brush"]}, {"s": 3, "f": 2, "dur": 480, "fx": ["brush"]}]},
-          {"tick": 960, "notes": [{"s": 5, "f": 0, "dur": 480}]},
+          {"tick": 960, "notes": [{"s": 5, "f": 0, "dur": 480, "dyn": "fff"}]},
           {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 480, "fx": ["brush"]}, {"s": 2, "f": 2, "dur": 480, "fx": ["brush"]}, {"s": 3, "f": 2, "dur": 480, "fx": ["brush"]}]}
         ]
       },
@@ -400,7 +402,7 @@
         "events": [
           {"tick": 0, "notes": [{"s": 4, "f": 0, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 1, "f": 2, "dur": 480, "fx": ["brush"]}, {"s": 2, "f": 3, "dur": 480, "fx": ["brush"]}, {"s": 3, "f": 2, "dur": 480, "fx": ["brush"]}]},
-          {"tick": 960, "notes": [{"s": 5, "f": 0, "dur": 480}]},
+          {"tick": 960, "notes": [{"s": 5, "f": 0, "dur": 480, "dyn": "fff"}]},
           {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 480, "fx": ["brush"]}, {"s": 2, "f": 2, "dur": 480, "fx": ["brush"]}, {"s": 3, "f": 2, "dur": 480, "fx": ["brush"]}]}
         ]
       },
@@ -473,6 +475,10 @@
     {"from_measure": 2, "to_measure": 17},
     {"from_measure": 10, "to_measure": 16},
     {"from_measure": 18, "to_measure": 20}
+  ],
+  "measure_marks": [
+    {"measure": 9, "repeat_start": true, "raw": 64},
+    {"measure": 20, "end_bar": true, "raw": 8}
   ],
   "x_source": {
     "type": "banjo-hangout",

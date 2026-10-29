@@ -17,8 +17,9 @@ UTF-8, non-ASCII left as is, 2-space indent, ``": "`` after keys, exactly one
 trailing ``"\\n"``. Keys go in the order of ``docs/schema/otf.schema.json``
 (unknown keys, only inside ``x_source``, keep their order after the known
 ones); keys starting with ``_`` are runtime view caches and are dropped.
-One line each for: an event, an annotation, a reading_list entry and a
-time_signature_changes entry, and every array whose items are all scalars.
+One line each for: an event, an annotation, a reading_list entry, a
+time_signature_changes entry, a measure_marks / chords / chord_diagrams entry,
+and every array whose items are all scalars.
 The document is integers-only (a whole float such as ``120.0`` is written
 ``120``, as JS would; any other float is an error).
 """
@@ -28,6 +29,64 @@ import re
 from pathlib import Path
 
 SCHEMA_PATH = Path(__file__).resolve().parents[2] / 'docs' / 'schema' / 'otf.schema.json'
+
+# Shared, dependency-free helpers for everything that writes OTF (the TEF
+# importers import them from here; otf_schema re-exports them). Their JS twins
+# are in docs/js/otf-editor/otf-validate.js.
+
+#: The version every writer stamps (schema 1.2: dynamics, bend, measure_marks,
+#: chords, chord_diagrams).
+OTF_VERSION = '1.2'
+
+#: Dynamic levels, loudest first (TablEdit codes 0-6). Equal to the schema's
+#: enum for ``tracks[].dyn`` and ``note.dyn`` (tests/test_otf_schema.py).
+DYN_LEVELS = ['fff', 'ff', 'f', 'mf', 'mp', 'p', 'pp']
+
+_JUMPS = {0x10: 'da-signo', 0x18: 'signo', 0x20: 'al-coda', 0x28: 'coda'}
+
+
+def decode_mark_raw(raw: int) -> dict:
+    """The ``measure_marks`` fields TablEdit's flag byte ``raw`` stands for.
+
+    Returns only the fields that are present: ``repeat_start`` (0x40),
+    ``repeat_end`` (0x80), ``ending`` (``raw & 7`` when 1-6; 0 and 7 give
+    none), ``end_bar`` (``raw & 0x38 == 0x08``) and ``jump`` (``raw & 0x38``
+    in 0x10 da-signo, 0x18 signo, 0x20 al-coda, 0x28 coda). The ``mark_raw``
+    rule requires an entry's fields to equal this; importers build entries
+    with it (``{'measure': m, **decode_mark_raw(raw), 'raw': raw}``).
+    """
+    out = {}
+    if raw & 0x40:
+        out['repeat_start'] = True
+    if raw & 0x80:
+        out['repeat_end'] = True
+    if 1 <= raw & 7 <= 6:
+        out['ending'] = raw & 7
+    if raw & 0x38 == 0x08:
+        out['end_bar'] = True
+    if raw & 0x38 in _JUMPS:
+        out['jump'] = _JUMPS[raw & 0x38]
+    return out
+
+
+def _minor(version):
+    m = re.fullmatch(r'1\.([0-9]+)', version) if isinstance(version, str) else None
+    return int(m.group(1)) if m else None
+
+
+def ensure_version_at_least(doc: dict, minimum: str) -> bool:
+    """Raise ``doc['otf_version']`` to ``minimum`` ("1.2") if it is lower.
+
+    Call it whenever a field newer than the document's version is set (the
+    optional fields keep older files valid; a file that uses one says so).
+    Returns True when it changed the version. A version that is not "1.x" is
+    left alone for the validator to report.
+    """
+    have, want = _minor(doc.get('otf_version')), _minor(minimum)
+    if have is None or want is None or have >= want:
+        return False
+    doc['otf_version'] = minimum
+    return True
 
 
 def _keys(props: dict) -> list:
@@ -51,6 +110,9 @@ def _orders() -> dict:
         'annotation': _keys(top['annotations']['items']['properties']),
         'reading': _keys(top['reading_list']['items']['properties']),
         'tab_by': _keys(top['metadata']['properties']['tab_by']['properties']),
+        'mark': _keys(top['measure_marks']['items']['properties']),
+        'chord': _keys(top['chords']['items']['properties']),
+        'diagram': _keys(top['chord_diagrams']['items']['properties']),
         'tsc': _keys(top['metadata']['properties']['time_signature_changes']
                      ['items']['properties']),
     }
@@ -66,13 +128,16 @@ _CHILD = {
     ('doc', 'notation'): 'notation',
     ('doc', 'annotations'): 'annotation',
     ('doc', 'reading_list'): 'reading',
+    ('doc', 'measure_marks'): 'mark',
+    ('doc', 'chords'): 'chord',
+    ('doc', 'chord_diagrams'): 'diagram',
     ('metadata', 'time_signature_changes'): 'tsc',
     ('metadata', 'tab_by'): 'tab_by',
     ('measure', 'events'): 'event',
     ('event', 'notes'): 'note',
     ('note', 'grace'): 'grace',
 }
-_INLINE = {'event', 'annotation', 'reading', 'tsc'}
+_INLINE = {'event', 'annotation', 'reading', 'tsc', 'mark', 'chord', 'diagram'}
 
 # JSON.stringify and json.dumps agree on everything but a lone surrogate:
 # JS writes it as a lowercase \udXXX escape, Python would emit it raw.

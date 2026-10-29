@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Brilliancy",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "fff"
     }
   ],
   "notation": {
@@ -701,6 +702,17 @@
     {"measure": 48, "tick": 0, "text": "G"},
     {"measure": 48, "tick": 960, "text": "D"},
     {"measure": 49, "tick": 0, "text": "G"}
+  ],
+  "measure_marks": [
+    {"measure": 2, "repeat_start": true, "raw": 64},
+    {"measure": 10, "raw": 0},
+    {"measure": 17, "repeat_end": true, "raw": 128},
+    {"measure": 18, "repeat_start": true, "raw": 64},
+    {"measure": 26, "raw": 0},
+    {"measure": 33, "repeat_end": true, "raw": 128},
+    {"measure": 34, "repeat_start": true, "raw": 64},
+    {"measure": 42, "raw": 0},
+    {"measure": 49, "repeat_end": true, "raw": 128}
   ],
   "x_source": {
     "type": "banjo-hangout",

@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Big Mon",
     "time_signature": "4/4",
@@ -16,7 +16,8 @@
       "instrument": "6-string-guitar",
       "tuning": ["F#4", "C#4", "A3", "E3", "B2", "F#2"],
       "capo": 2,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     }
   ],
   "notation": {

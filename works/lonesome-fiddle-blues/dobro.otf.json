@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Lonesome Fiddle Blues",
     "time_signature": "4/4",
@@ -16,7 +16,8 @@
       "instrument": "dobro",
       "tuning": ["D4", "B3", "G3", "D3", "B2", "G2"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "fff"
     }
   ],
   "notation": {

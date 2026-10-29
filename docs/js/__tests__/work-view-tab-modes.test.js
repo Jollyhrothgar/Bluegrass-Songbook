@@ -249,6 +249,40 @@ describe('adding a take to a song we have', () => {
         expect(editors.at(-1).options.otf.metadata.title).toBe('Imported');
     });
 
+    describe('G15e: what an opened .tef did not keep', () => {
+        const withSkipped = (skipped) => {
+            const imported = structuredClone(OTF);
+            if (skipped) imported.x_source = { skipped };
+            return imported;
+        };
+        const status = () => document.querySelector('.arr-status');
+
+        it('names it under "Imported from a file"', async () => {
+            startAddTabMode({
+                instrument: 'banjo', fromFile: true,
+                otf: withSkipped({ tempo_changes: 2, free_text: 1 }),
+            });
+            await untilEditor();
+            expect(status().textContent).toContain('Imported from a file');
+            expect(status().querySelector('.arr-skipped').textContent)
+                .toBe('Not kept from this file: 2 tempo changes, 1 line of free text.');
+        });
+
+        it('says nothing when the file lost nothing', async () => {
+            startAddTabMode({ instrument: 'banjo', fromFile: true, otf: withSkipped(null) });
+            await untilEditor();
+            expect(status().textContent).toContain('Imported from a file');
+            expect(status().querySelector('.arr-skipped')).toBeNull();
+            expect(document.querySelectorAll('.arr-status')).toHaveLength(1);
+        });
+
+        it('says nothing about a document that did not come from a file', async () => {
+            startAddTabMode({ instrument: 'banjo', otf: withSkipped({ tempo_changes: 2 }) });
+            await untilEditor();
+            expect(document.querySelector('.arr-skipped')).toBeNull();
+        });
+    });
+
     it('Cancel drops the unsaved take rather than leaving it in the list', async () => {
         await addTab();
         band().querySelector('.tab-edit-cancel').click();

@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Liberty",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["E4", "D4", "A3", "D3", "A4"],
       "capo": 2,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "fff"
     }
   ],
   "notation": {
@@ -240,6 +241,9 @@
     "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/l/tab-liberty-16825-4752172122012.tef",
     "author": "Julian44_4",
     "converted_at": "2026-07-26T22:20:06.134514",
-    "source_id": "16825"
+    "source_id": "16825",
+    "skipped": {
+      "special_characters": 2
+    }
   }
 }

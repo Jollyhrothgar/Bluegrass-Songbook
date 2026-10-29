@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "FIRE ON THE MOUNTAIN",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "C4", "G3", "C3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -123,6 +124,21 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 0, "text": "D"},
+    {"measure": 4, "tick": 0, "text": "A"},
+    {"measure": 4, "tick": 960, "text": "D"},
+    {"measure": 5, "tick": 0, "text": "G"},
+    {"measure": 8, "tick": 0, "text": "D"},
+    {"measure": 8, "tick": 960, "text": "G"},
+    {"measure": 9, "tick": 0, "text": "D"},
+    {"measure": 10, "tick": 0, "text": "A"},
+    {"measure": 10, "tick": 1200, "text": "D"}
+  ],
+  "measure_marks": [
+    {"measure": 4, "repeat_end": true, "raw": 128},
+    {"measure": 8, "repeat_end": true, "raw": 128}
+  ],
   "x_source": {
     "type": "fiddle-hangout",
     "url": "https://www.hangoutstorage.com/fiddlehangout.com/storage/tabs/f/tab-fire-on-the-mou-834-261009122009.tef",

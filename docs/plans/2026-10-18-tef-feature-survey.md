@@ -37,13 +37,13 @@ These are ranked by published tabs. "Notes" means records carrying the feature. 
 | 4 | **Ringing / let ring** (attribute 1, plus 133 as a second effect) | 3,138 | 95 | 77 | no | |
 | 5 | **Grace notes** (V2 fret-byte flag 0x40, V3 type bit 0x40) | 388 | 69 | 54 | no | The flag sits on the main note. The grace's own fret and kind are in V2 effect2 / V3 byte 7 (bits 0-4 fret, bits 5-7 kind: slide 279, hammer/pull 109). We keep the main note and lose the grace. TablEdit's export has 2× these counts (one per staff) in 44 files. |
 | 6 | **Choke**, effect 4 | 358 | 64 | 50 | no | Distinct from `b`. Our bend heuristic catches some chokes only when the next note on the string is tied. |
-| 7 | **Chord diagrams** (type 0x35, V2 0x1c/0x5c/0x9c) | 1,942 | 58 | 46 | no | Each is an index into the chord table (V3 header 0x58). 31 of these files also export `<harmony>` chord symbols. |
+| 7 | **Chord diagrams** (type 0x35, V2 0x1c/0x5c/0x9c) | 1,942 | 58 | 46 | **yes (G15d3)**: `chords[]` + `chord_diagrams[]`, drawn as a box above the staff | Each is an index into the chord table (V3 header 0x58; V2: count at offset 236, records after the text table). 31 of these files also export `<harmony>` chord symbols. 1,938 anchors in 57 files are on disk here. |
 | 8 | **Roll (arpeggio)**, effect 14 | 1,114 | 39 | 37 | no | |
 | 9 | **Stroke / fingering marks** with no note (type 0x3e) | 2,992 | 53 | 36 | partly: `finger` exists on notes | Same encoding as a note's fingering byte, standing alone. |
 | 10 | **Staccato** (attribute 7) | 3,517 | 52 | 35 | no | V2 effect2 = 0x07 under fret flag 0x80. Under flag 0x00, 0x07 is the unexplained case `_parse_v2` drops (see corrections). |
 | 11 | **Ghost notes** (attribute 4, plus 5 as a second effect) | 893 | 27 | 23 | no | |
 | 12 | **Bend; bend and release**, effects 12/13 | 152 / 33 | 14 / 9 | 12 / 6 | partly: `b` on the target note | The bend amount is not imported. Bend-and-release is not distinguished. |
-| 13 | **Dynamics**, 8 levels per note (cell byte 5, bits 5-7) | every note | 235 vary it | 200 vary it | no | The player plays every note at one volume. Most notes are level `p` (270,587); 235 files mix levels, e.g. accented melody over quieter backup. |
+| 13 | **Dynamics**, 7 levels per note plus the tie code (cell byte 5, bits 5-7) | every note | 235 vary it | 200 vary it | yes (G15d1): `tracks[].dyn`, `note.dyn`, played as velocity | Code 0 is the loudest: 0 fff, 1 ff, 2 f, 3 mf, 4 mp, 5 p, 6 pp, 7 tie. Code 2 (**f**) is the most common level, not `p` (an earlier version of this row had the names reversed). 235 files mix levels, e.g. accented melody over quieter backup. |
 | 14 | **Harmonics**, natural/artificial (effects 6/7 and as second effects) | 81 | 16 | 13 | no | |
 | 15 | **Tempo changes** (type 0xfe) | 58 | 21 | 17 | no | OTF has one tempo per document. 19 of the files are V2 files whose byte equals the V3 type byte; the V2 mapping is not in the upgrade table, so it is less certain. |
 | 16 | **Tremolo; muted** (effects 11/8) | 441 / 368 | 6 / 9 | 6 / 6 | no | |
@@ -108,3 +108,5 @@ These are quick wins first, then features by reach. Every one needs TDD against 
 7. **Grace notes** (M): OTF field, renderer and player. 54 published tabs.
 8. **Chord diagrams** (M). 46 published tabs.
 9. **Dynamics → velocity** (S-M) and **tempo changes** (M, needs an OTF field).
+
+**Status 2026-10-29 (G15d4, repeat signs):** row 18 is imported by both importers into `measure_marks` (schema 1.2) and drawn: `|:`, `:|`, "n." brackets, end bars, Signo / D.S. / Coda / To Coda. Only cell byte 2 (V3 file byte 6; V2 record byte 4 of the 0x5e record) is read, OR-ed into the measure holding it. Bits: 0x40 start, 0x80 end, bits 0-2 = 1-6 ending number (7 = unspecified, drawn as nothing), `&0x38` 0x08 end bar, 0x10 Da Signo, 0x18 Signo, 0x20 Al Coda, 0x28 Coda. The player is unchanged (reading list only, as TablEdit). Marks move with inserted/deleted measures; they can't be created or edited yet. `_setSequence` now keeps reading-list names.

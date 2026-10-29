@@ -64,7 +64,8 @@ test.describe('a new take', () => {
         expect(doc.metadata.tab_by).toEqual({
             name: 'Jane Picker', url: 'https://www.banjohangout.org/my/janepicker',
         });
-        expect(doc.otf_version).toBe('1.1');
+        // tab_by arrived in schema 1.1; writers stamp the current version.
+        expect(Number(doc.otf_version.split('.')[1])).toBeGreaterThanOrEqual(1);
         // canonical key order: tab_by sits in metadata, name before url
         expect(Object.keys(doc.metadata.tab_by)).toEqual(['name', 'url']);
     });

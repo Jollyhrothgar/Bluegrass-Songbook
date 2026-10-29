@@ -34,7 +34,8 @@ SCHEMA = otf_schema.load_schema()
 SCHEMA_VALIDATOR = Draft202012Validator(SCHEMA)
 
 CROSS_RULES = {'string_count', 'notation_keys', 'track_ids', 'measure_order',
-               'tick_order', 'tick_range', 'duplicate_string'}
+               'tick_order', 'tick_range', 'duplicate_string', 'chord_index', 'chord_track',
+               'chord_tick', 'chord_fingers', 'mark_order', 'mark_raw'}
 
 
 def load(path):
@@ -70,9 +71,18 @@ def test_the_schema_is_itself_valid_and_closed():
 def test_the_canonical_key_order():
     assert list(SCHEMA['properties']) == [
         'otf_version', 'metadata', 'timing', 'tracks', 'notation',
-        'annotations', 'reading_list', 'x_source']
+        'annotations', 'reading_list', 'measure_marks', 'chords', 'chord_diagrams',
+        'x_source']
     assert list(SCHEMA['$defs']['note']['properties']) == [
-        's', 'f', 'dur', 'tie', 'tech', 'fx', 'grace', 'finger', 'lh']
+        's', 'f', 'dur', 'tie', 'tech', 'fx', 'grace', 'finger', 'lh', 'dyn']
+    assert list(SCHEMA['properties']['tracks']['items']['properties']) == [
+        'id', 'instrument', 'tuning', 'capo', 'role', 'dyn', 'percussion', 'lines']
+    assert list(SCHEMA['properties']['measure_marks']['items']['properties']) == [
+        'measure', 'repeat_start', 'repeat_end', 'ending', 'jump', 'end_bar', 'raw']
+    assert list(SCHEMA['properties']['chords']['items']['properties']) == [
+        'name', 'frets', 'fingers', 'first_fret']
+    assert list(SCHEMA['properties']['chord_diagrams']['items']['properties']) == [
+        'measure', 'tick', 'track', 'chord', 'dx', 'dy']
 
 
 def test_the_version_rule_is_written_in_the_schema():
@@ -151,6 +161,66 @@ def test_python_enum_copies_equal_the_schema():
     assert [k for k in tef_otf.GRACE_KINDS if k is not None] == grace
     assert tef_otf.GRACE_KINDS[0] is None
     assert list(tef_otf.V3_PLUCK_LETTERS.values()) == note_enum('finger')
+
+
+def test_dynamic_levels_equal_the_schema_loudest_first():
+    import otf_format
+    from tef_parser import otf as tef_otf
+    track = SCHEMA['properties']['tracks']['items']['properties']['dyn']['enum']
+    assert track == note_enum('dyn') == otf_format.DYN_LEVELS == tef_otf.DYN_LEVELS
+    assert track == ['fff', 'ff', 'f', 'mf', 'mp', 'p', 'pp']      # TablEdit codes 0-6
+
+
+def test_bend_sits_just_before_bend_release():
+    fx = SCHEMA['$defs']['note']['properties']['fx']['items']['enum']
+    assert fx[fx.index('bend-release') - 1] == 'bend'
+
+
+def test_marks_enums_equal_the_schema():
+    props = SCHEMA['properties']['measure_marks']['items']['properties']
+    assert props['jump']['enum'] == ['da-signo', 'signo', 'al-coda', 'coda']
+    assert (props['ending']['minimum'], props['ending']['maximum']) == (1, 6)
+    assert (props['raw']['minimum'], props['raw']['maximum']) == (0, 255)
+
+
+@pytest.mark.parametrize('raw, fields', [
+    (0, {}),
+    (0x07, {}),                                       # ending 7 = unspecified
+    (0x40, {'repeat_start': True}),
+    (0x80, {'repeat_end': True}),
+    (0x81, {'repeat_end': True, 'ending': 1}),
+    (0x0a, {'ending': 2, 'end_bar': True}),            # Red Haired Boy's 2nd ending
+    (0x03, {'ending': 3}),
+    (0x06, {'ending': 6}),
+    (0x08, {'end_bar': True}),
+    (0x10, {'jump': 'da-signo'}),
+    (0x18, {'jump': 'signo'}),
+    (0x20, {'jump': 'al-coda'}),
+    (0x28, {'jump': 'coda'}),
+    (0x30, {}),
+    (0x38, {}),
+    (0xce, {'repeat_start': True, 'repeat_end': True, 'ending': 6, 'end_bar': True}),
+])
+def test_decode_mark_raw(raw, fields):
+    assert otf_schema.decode_mark_raw(raw) == fields
+
+
+def test_ensure_version_at_least():
+    ensure = otf_schema.ensure_version_at_least
+    doc = {'otf_version': '1.0'}
+    assert ensure(doc, '1.1') is True and doc['otf_version'] == '1.1'
+    assert ensure(doc, '1.1') is False and ensure(doc, '1.0') is False
+    assert ensure(doc, '1.2') is True and doc['otf_version'] == '1.2'
+    assert ensure({'otf_version': '1.10'}, '1.2') is False        # numeric, not text
+    odd = {'otf_version': '2.0'}
+    assert ensure(odd, '1.2') is False and odd['otf_version'] == '2.0'
+    assert ensure({}, '1.2') is False
+
+
+def test_writers_stamp_the_current_version():
+    from tef_parser.otf import OTFDocument
+    assert otf_schema.OTF_VERSION == '1.2'
+    assert OTFDocument().to_dict()['otf_version'] == '1.2'
 
 
 # ------------------------------------------------------------------ corpus

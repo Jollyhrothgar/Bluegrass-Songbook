@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Mississippi Sawyer (thumb lead - open C tuning)",
     "time_signature": "2/2",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["F#4", "D4", "A3", "D3", "A4"],
       "capo": 2,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -205,6 +206,9 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 0, "text": "Part 2. Two-finger style (mixed thumb and index lead)"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 8},
     {"from_measure": 1, "to_measure": 8},

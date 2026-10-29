@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Leather Britches",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -218,6 +219,59 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 0, "text": "G"},
+    {"measure": 1, "tick": 0, "text": "M"},
+    {"measure": 1, "tick": 480, "text": "M"},
+    {"measure": 1, "tick": 960, "text": "M"},
+    {"measure": 2, "tick": 0, "text": "M"},
+    {"measure": 2, "tick": 480, "text": "M"},
+    {"measure": 2, "tick": 960, "text": "M"},
+    {"measure": 3, "tick": 0, "text": "M"},
+    {"measure": 3, "tick": 480, "text": "M"},
+    {"measure": 3, "tick": 960, "text": "M"},
+    {"measure": 4, "tick": 720, "text": "G"},
+    {"measure": 4, "tick": 0, "text": "D"},
+    {"measure": 4, "tick": 0, "text": "M"},
+    {"measure": 4, "tick": 480, "text": "M"},
+    {"measure": 4, "tick": 960, "text": "M"},
+    {"measure": 5, "tick": 0, "text": "M"},
+    {"measure": 5, "tick": 480, "text": "M"},
+    {"measure": 5, "tick": 960, "text": "M"},
+    {"measure": 6, "tick": 0, "text": "M"},
+    {"measure": 6, "tick": 480, "text": "M"},
+    {"measure": 6, "tick": 960, "text": "M"},
+    {"measure": 7, "tick": 0, "text": "D"},
+    {"measure": 7, "tick": 0, "text": "M"},
+    {"measure": 7, "tick": 480, "text": "M"},
+    {"measure": 7, "tick": 960, "text": "M"},
+    {"measure": 8, "tick": 960, "text": "G"},
+    {"measure": 8, "tick": 0, "text": "M"},
+    {"measure": 8, "tick": 480, "text": "M"},
+    {"measure": 8, "tick": 960, "text": "M"},
+    {"measure": 9, "tick": 0, "text": "G"},
+    {"measure": 9, "tick": 0, "text": "M---->"},
+    {"measure": 9, "tick": 960, "text": "M"},
+    {"measure": 10, "tick": 480, "text": "M"},
+    {"measure": 10, "tick": 960, "text": "M"},
+    {"measure": 11, "tick": 0, "text": "M---->"},
+    {"measure": 11, "tick": 960, "text": "M"},
+    {"measure": 12, "tick": 960, "text": "G"},
+    {"measure": 12, "tick": 0, "text": "D"},
+    {"measure": 12, "tick": 480, "text": "M"},
+    {"measure": 12, "tick": 960, "text": "M"},
+    {"measure": 13, "tick": 0, "text": "M---->"},
+    {"measure": 13, "tick": 960, "text": "M"},
+    {"measure": 14, "tick": 480, "text": "M"},
+    {"measure": 14, "tick": 960, "text": "M"},
+    {"measure": 15, "tick": 0, "text": "M"},
+    {"measure": 15, "tick": 960, "text": "M"},
+    {"measure": 16, "tick": 720, "text": "G"},
+    {"measure": 16, "tick": 0, "text": "D"},
+    {"measure": 16, "tick": 0, "text": "M"},
+    {"measure": 16, "tick": 480, "text": "M"},
+    {"measure": 16, "tick": 960, "text": "M"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 8},
     {"from_measure": 1, "to_measure": 16},
@@ -228,6 +282,9 @@
     "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/l/tab-leather-britche-16624-4650121512012.tef",
     "author": "Julian44_4",
     "converted_at": "2026-07-26T22:20:06.452526",
-    "source_id": "16624"
+    "source_id": "16624",
+    "skipped": {
+      "picking_marks": 11
+    }
   }
 }

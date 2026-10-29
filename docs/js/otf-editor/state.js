@@ -7,6 +7,7 @@
 // UI can drive the same facade directly without this class.
 
 import { measureTicksFor } from '../renderers/measure-timing.js';
+import { OTF_VERSION } from './otf-validate.js';
 import {
     EditingFacade,
     MAX_DURATION,
@@ -323,7 +324,7 @@ export class EditorState {
         const trackId = instrument.replace(/-/g, '_').replace(/\d+_string_/, '');
 
         return {
-            otf_version: '1.1',
+            otf_version: OTF_VERSION,
             metadata: {
                 title: 'Untitled',
                 time_signature: '4/4',
@@ -701,6 +702,20 @@ export class EditorState {
                 finger, { trackId: this.trackId }) !== false;
         }
         return this.facade.setFingering(this._cursorPos(), finger, this.trackId) !== false;
+    }
+
+    /**
+     * Set a dynamic (fff..pp) on the selection or the note at the cursor;
+     * null is "Track default". Tied notes are left alone.
+     * @returns {boolean} false when nothing changed
+     */
+    setDynamic(level) {
+        const range = this.selection ? this.selectionRange() : null;
+        if (range) {
+            return this.facade.setRangeDynamic(range.startAbs, range.endAbs,
+                level, { strings: range.strings, trackId: this.trackId }) !== false;
+        }
+        return this.facade.setDynamic(this._cursorPos(), level, this.trackId) !== false;
     }
 
     /**

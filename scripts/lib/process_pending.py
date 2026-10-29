@@ -1148,8 +1148,8 @@ def resolve_credit(document: dict, previous: Optional[dict],
     stamped['metadata']['tab_by'] = kept
     if validate_otf(stamped):
         stamped['metadata'].pop('tab_by')
-    elif stamped.get('otf_version') == '1.0':
-        stamped['otf_version'] = '1.1'
+    else:
+        otf_schema.ensure_version_at_least(stamped, '1.1')
     return {}, stamped
 
 

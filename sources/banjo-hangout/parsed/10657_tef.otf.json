@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Dixie Breakdown",
     "time_signature": "4/4",
@@ -18,7 +18,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -231,7 +232,7 @@
       {
         "measure": 18,
         "events": [
-          {"tick": 0, "notes": [{"s": 3, "f": 12, "dur": 240}]},
+          {"tick": 0, "notes": [{"s": 3, "f": 12, "dur": 240, "finger": "R"}]},
           {"tick": 240, "notes": [{"s": 2, "f": 12, "dur": 240}]},
           {"tick": 480, "notes": [{"s": 1, "f": 12, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 2, "f": 12, "dur": 240}]},
@@ -1229,6 +1230,62 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 2, "tick": 0, "text": "A Part"},
+    {"measure": 2, "tick": 0, "text": "G"},
+    {"measure": 4, "tick": 0, "text": "C"},
+    {"measure": 6, "tick": 0, "text": "G"},
+    {"measure": 8, "tick": 0, "text": "D"},
+    {"measure": 10, "tick": 0, "text": "G"},
+    {"measure": 12, "tick": 0, "text": "C"},
+    {"measure": 14, "tick": 0, "text": "D"},
+    {"measure": 16, "tick": 0, "text": "G"},
+    {"measure": 18, "tick": 0, "text": "B Part (Backup instruments should execute stops/vamps on each ch"},
+    {"measure": 18, "tick": 0, "text": "G"},
+    {"measure": 20, "tick": 0, "text": "C"},
+    {"measure": 22, "tick": 0, "text": "G"},
+    {"measure": 24, "tick": 0, "text": "D"},
+    {"measure": 26, "tick": 0, "text": "G"},
+    {"measure": 28, "tick": 0, "text": "C"},
+    {"measure": 30, "tick": 0, "text": "D"},
+    {"measure": 32, "tick": 0, "text": "G"},
+    {"measure": 34, "tick": 0, "text": "A Part (Variation #1)"},
+    {"measure": 34, "tick": 0, "text": "G"},
+    {"measure": 36, "tick": 0, "text": "C"},
+    {"measure": 38, "tick": 0, "text": "G"},
+    {"measure": 40, "tick": 0, "text": "D"},
+    {"measure": 42, "tick": 0, "text": "G"},
+    {"measure": 44, "tick": 0, "text": "C"},
+    {"measure": 46, "tick": 0, "text": "D"},
+    {"measure": 48, "tick": 0, "text": "G"},
+    {"measure": 50, "tick": 0, "text": "B Part (Variation #1)"},
+    {"measure": 50, "tick": 0, "text": "G"},
+    {"measure": 52, "tick": 0, "text": "C"},
+    {"measure": 54, "tick": 0, "text": "G"},
+    {"measure": 56, "tick": 0, "text": "D"},
+    {"measure": 58, "tick": 0, "text": "G"},
+    {"measure": 60, "tick": 0, "text": "C"},
+    {"measure": 62, "tick": 0, "text": "D"},
+    {"measure": 64, "tick": 0, "text": "G"},
+    {"measure": 66, "tick": 0, "text": "A Part (Variation #2)"},
+    {"measure": 66, "tick": 0, "text": "G"},
+    {"measure": 68, "tick": 0, "text": "C"},
+    {"measure": 70, "tick": 0, "text": "G"},
+    {"measure": 72, "tick": 0, "text": "D"},
+    {"measure": 74, "tick": 0, "text": "G"},
+    {"measure": 76, "tick": 0, "text": "C"},
+    {"measure": 78, "tick": 0, "text": "D"},
+    {"measure": 80, "tick": 0, "text": "G"},
+    {"measure": 82, "tick": 0, "text": "A Part (Variation #3)"},
+    {"measure": 82, "tick": 0, "text": "G"},
+    {"measure": 84, "tick": 0, "text": "C"},
+    {"measure": 86, "tick": 0, "text": "G"},
+    {"measure": 88, "tick": 0, "text": "D"},
+    {"measure": 90, "tick": 0, "text": "G"},
+    {"measure": 92, "tick": 0, "text": "C"},
+    {"measure": 94, "tick": 0, "text": "D"},
+    {"measure": 96, "tick": 0, "text": "G"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 97}
   ],

@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Clinch Mountain Backstep",
     "time_signature": "2/2",
@@ -19,7 +19,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -175,10 +176,10 @@
       {
         "measure": 14,
         "events": [
-          {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 240}, {"s": 3, "f": 3, "dur": 240, "tech": "h"}]},
-          {"tick": 240, "notes": [{"s": 5, "f": 0, "dur": 240}]},
-          {"tick": 480, "notes": [{"s": 2, "f": 1, "dur": 240}]},
-          {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240}]}
+          {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 240, "dyn": "fff"}, {"s": 3, "f": 3, "dur": 240, "tech": "h", "dyn": "fff"}]},
+          {"tick": 240, "notes": [{"s": 5, "f": 0, "dur": 240, "dyn": "fff"}]},
+          {"tick": 480, "notes": [{"s": 2, "f": 1, "dur": 240, "dyn": "fff"}]},
+          {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240, "dyn": "fff"}]}
         ]
       },
       {
@@ -453,6 +454,17 @@
     {"from_measure": 10, "to_measure": 19},
     {"from_measure": 11, "to_measure": 18},
     {"from_measure": 20, "to_measure": 22}
+  ],
+  "measure_marks": [
+    {"measure": 2, "repeat_start": true, "raw": 64},
+    {"measure": 9, "repeat_end": true, "ending": 1, "raw": 129},
+    {"measure": 10, "ending": 2, "raw": 2},
+    {"measure": 11, "repeat_start": true, "raw": 64},
+    {"measure": 14, "raw": 7},
+    {"measure": 15, "raw": 7},
+    {"measure": 19, "repeat_end": true, "ending": 1, "raw": 129},
+    {"measure": 20, "ending": 2, "raw": 2},
+    {"measure": 22, "end_bar": true, "raw": 8}
   ],
   "x_source": {
     "type": "banjo-hangout",

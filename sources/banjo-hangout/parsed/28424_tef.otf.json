@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Arkansas Traveler",
     "time_signature": "2/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -432,6 +433,65 @@
       }
     ]
   },
+  "chords": [
+    {"name": "G"},
+    {"name": "A"},
+    {"name": "B"},
+    {"name": "C"},
+    {"name": "D"},
+    {"name": "E"},
+    {"name": "F"}
+  ],
+  "chord_diagrams": [
+    {"measure": 2, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 2, "tick": 480, "track": "banjo", "chord": 6},
+    {"measure": 3, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 4, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 6, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 6, "tick": 480, "track": "banjo", "chord": 6},
+    {"measure": 7, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 8, "tick": 480, "track": "banjo", "chord": 6},
+    {"measure": 9, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 9, "tick": 480, "track": "banjo", "chord": 3},
+    {"measure": 10, "tick": 480, "track": "banjo", "chord": 6},
+    {"measure": 11, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 12, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 14, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 14, "tick": 480, "track": "banjo", "chord": 6},
+    {"measure": 15, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 16, "tick": 480, "track": "banjo", "chord": 6},
+    {"measure": 17, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 17, "tick": 480, "track": "banjo", "chord": 3},
+    {"measure": 18, "tick": 480, "track": "banjo", "chord": 6},
+    {"measure": 19, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 19, "tick": 480, "track": "banjo", "chord": 0},
+    {"measure": 20, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 20, "tick": 480, "track": "banjo", "chord": 0},
+    {"measure": 21, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 21, "tick": 480, "track": "banjo", "chord": 0},
+    {"measure": 22, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 22, "tick": 480, "track": "banjo", "chord": 6},
+    {"measure": 23, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 23, "tick": 480, "track": "banjo", "chord": 0},
+    {"measure": 24, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 24, "tick": 480, "track": "banjo", "chord": 6},
+    {"measure": 25, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 25, "tick": 480, "track": "banjo", "chord": 3},
+    {"measure": 26, "tick": 480, "track": "banjo", "chord": 6},
+    {"measure": 27, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 27, "tick": 480, "track": "banjo", "chord": 0},
+    {"measure": 28, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 28, "tick": 480, "track": "banjo", "chord": 0},
+    {"measure": 29, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 29, "tick": 480, "track": "banjo", "chord": 0},
+    {"measure": 30, "tick": 480, "track": "banjo", "chord": 6},
+    {"measure": 31, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 31, "tick": 480, "track": "banjo", "chord": 0},
+    {"measure": 32, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 32, "tick": 480, "track": "banjo", "chord": 6},
+    {"measure": 33, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 33, "tick": 480, "track": "banjo", "chord": 3}
+  ],
   "x_source": {
     "type": "banjo-hangout",
     "source_id": "28424",

@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Elzic's Farewell",
     "time_signature": "4/4",
@@ -15,21 +15,24 @@
       "instrument": "5-string-banjo",
       "tuning": ["E4", "C#4", "A3", "E3", "A4"],
       "capo": 2,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     },
     {
       "id": "guitar",
       "instrument": "6-string-guitar",
       "tuning": ["E4", "B3", "G3", "D3", "A2", "E2"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     },
     {
       "id": "mandolin",
       "instrument": "mandolin",
       "tuning": ["E5", "A4", "D4", "G3"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {

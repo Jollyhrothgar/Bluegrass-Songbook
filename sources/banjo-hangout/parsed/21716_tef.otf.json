@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Cluck Old Hen",
     "time_signature": "4/4",
@@ -14,7 +14,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "C4", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -192,7 +193,7 @@
         "events": [
           {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 240, "notes": [{"s": 2, "f": 0, "dur": 240}]},
-          {"tick": 480, "notes": [{"s": 3, "f": 3, "dur": 480}]},
+          {"tick": 480, "notes": [{"s": 3, "f": 3, "dur": 480, "fx": ["choke"]}]},
           {"tick": 960, "notes": [{"s": 3, "f": 0, "dur": 480}]},
           {"tick": 1440, "notes": [{"s": 2, "f": 0, "dur": 240}, {"s": 3, "f": 0, "dur": 240}]},
           {"tick": 1680, "notes": [{"s": 5, "f": 0, "dur": 240}]}
@@ -205,7 +206,7 @@
           {"tick": 240, "notes": [{"s": 2, "f": 0, "dur": 240}]},
           {"tick": 480, "notes": [{"s": 3, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
-          {"tick": 960, "notes": [{"s": 3, "f": 3, "dur": 480}]},
+          {"tick": 960, "notes": [{"s": 3, "f": 3, "dur": 480, "fx": ["choke"]}]},
           {"tick": 1440, "notes": [{"s": 2, "f": 0, "dur": 240}, {"s": 3, "f": 3, "dur": 240}]},
           {"tick": 1680, "notes": [{"s": 5, "f": 0, "dur": 240}]}
         ]
@@ -217,7 +218,7 @@
           {"tick": 240, "notes": [{"s": 2, "f": 0, "dur": 240}]},
           {"tick": 480, "notes": [{"s": 3, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
-          {"tick": 960, "notes": [{"s": 4, "f": 3, "dur": 480}]},
+          {"tick": 960, "notes": [{"s": 4, "f": 3, "dur": 480, "fx": ["choke"]}]},
           {"tick": 1440, "notes": [{"s": 2, "f": 0, "dur": 240}, {"s": 3, "f": 0, "dur": 240}]},
           {"tick": 1680, "notes": [{"s": 5, "f": 0, "dur": 240}]}
         ]
@@ -240,7 +241,7 @@
         "events": [
           {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 240, "notes": [{"s": 2, "f": 0, "dur": 240}]},
-          {"tick": 480, "notes": [{"s": 3, "f": 3, "dur": 480}]},
+          {"tick": 480, "notes": [{"s": 3, "f": 3, "dur": 480, "fx": ["choke"]}]},
           {"tick": 960, "notes": [{"s": 3, "f": 0, "dur": 480}]},
           {"tick": 1440, "notes": [{"s": 2, "f": 0, "dur": 240}, {"s": 3, "f": 0, "dur": 240}]},
           {"tick": 1680, "notes": [{"s": 5, "f": 0, "dur": 240}]}

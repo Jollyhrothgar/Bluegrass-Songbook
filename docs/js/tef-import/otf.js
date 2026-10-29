@@ -6,6 +6,8 @@
 import {
     decodeDurationCode, isMelody, decodeStringFret, TRIPLET_DURATION_CODES, V3_UNITS_PER_WHOLE, v3Locate,
 } from './reader.js';
+import { OTF_VERSION, DYN_LEVELS, decodeMarkRaw } from '../otf-editor/otf-validate.js';
+import { SKIPPED_KEYS } from './skipped.js';
 
 const fdiv = (a, b) => Math.floor(a / b);
 
@@ -75,14 +77,15 @@ export function instrumentToType(inst) {
 // TablEdit's per-note effects (fix-it A15) — a port of otf.py note_fx /
 // note_grace / is_dead_note; see there for the bytes and the evidence.
 const EFFECT_FX = { 4: 'choke', 5: 'brush', 6: 'harmonic', 7: 'artificial-harmonic',
-    8: 'muted', 9: 'tap', 10: 'vibrato', 11: 'tremolo', 13: 'bend-release', 14: 'roll' };
+    8: 'muted', 9: 'tap', 10: 'vibrato', 11: 'tremolo', 12: 'bend', 13: 'bend-release', 14: 'roll' };
+const BEND_EFFECTS = new Set([12, 13]);
 const ATTRIBUTE_FX = { 1: 'let-ring', 2: 'slap', 4: 'ghost', 7: 'staccato' };
 const SECOND_FX = { 3: 'roll', 5: 'brush', 6: 'harmonic', 7: 'artificial-harmonic',
     8: 'let-ring', 9: 'ghost' };
 const SECOND_DEAD = 10;
 const V2_LAYOUT_CODES = new Set([0x0b, 0x0c, 0x0d, 0x0e, 0xc0, 0xd0]);
 export const FX_ORDER = ['brush', 'roll', 'choke', 'ghost', 'staccato', 'let-ring', 'muted',
-    'harmonic', 'artificial-harmonic', 'tap', 'vibrato', 'tremolo', 'bend-release', 'slap'];
+    'harmonic', 'artificial-harmonic', 'tap', 'vibrato', 'tremolo', 'bend', 'bend-release', 'slap'];
 export const GRACE_KINDS = [null, 'hp', 'slide', 'bend', 'mordent', 'double', 'gruppetto', 'trill'];
 
 function attributeByte(e) {
@@ -135,6 +138,38 @@ export function isTiedNote(e) {
         return ((r[5] >> 5) & 0x07) === 7;                        // V3: same byte, same rule
     }
     return false;
+}
+
+/** The note's dynamic code 0-6 (0 = fff, the LOUDEST, .. 6 = pp), or null for a
+ *  tied note (code 7) or a record with no duration byte. Bits 5-7 of V3 cell
+ *  byte 5 / V2 byte 3 (the 4-byte V2 variant keeps it in byte 3 too).
+ *  Velocity = 127 - 16 * code (TablEdit's Rich-MIDI export). Port of
+ *  dynamic_code(). */
+export function dynamicCode(e) {
+    const r = e.raw;
+    if (!r || r.length < 4) return null;
+    const code = ((r.length >= 12 ? r[5] : r[3]) >> 5) & 0x07;
+    return code === 7 ? null : code;
+}
+
+/** Collapse per-note levels (note.dyn on every non-tie note) into
+ *  tracks[].dyn (most common; the louder one on a tie) plus the exceptions.
+ *  Port of assign_dynamics(). */
+function assignDynamics(doc) {
+    for (const track of doc.tracks) {
+        const notes = [];
+        for (const m of doc.notation[track.id] || [])
+            for (const e of m.events) for (const n of e.notes) if (n.dyn) notes.push(n);
+        if (!notes.length) continue;
+        const counts = new Map();
+        for (const n of notes) counts.set(n.dyn, (counts.get(n.dyn) || 0) + 1);
+        let best = null;
+        for (const lv of DYN_LEVELS) {       // loudest first, so ties go loud
+            if (counts.has(lv) && (best === null || counts.get(lv) > counts.get(best))) best = lv;
+        }
+        track.dyn = best;
+        for (const n of notes) if (n.dyn === best) n.dyn = null;
+    }
 }
 
 /** V2 techniques: effect1 (byte 4) is an enum on the SOURCE note, attributed to
@@ -227,12 +262,14 @@ function articulationMaxGap(header) {
     return header.isV2 ? fdiv(header.v2_ts_size || 256, 2) : V3_UNITS_PER_WHOLE / 2;
 }
 
-/** Keys "track:position:string" of BEND/CHOKE notes. Port of
- *  bend_destination_keys. The tie bit means "connected to previous"; that's a
- *  tie only when the fret is unchanged. A fret change with no h/p/slide is a
- *  bend/choke → 'b', not a phantom tie. (Corpus-safe: 0 such notes exist in the
- *  corpus; only real bends like "Welcome to New York" m4 are affected. #184.) */
-export function bendDestinationKeys(noteEvents, articulations) {
+/** The note effect enum (V3 byte 6 / V2 effect1) & 0x0f; 0 if unreadable. */
+function effectCode(e) {
+    const r = e.raw;
+    if (!r || r.length < 6) return 0;
+    return r.length >= 12 ? r[6] & 0x0f : r[4] & 0x0f;
+}
+
+function notesByTrackString(noteEvents) {
     const byTrackString = new Map();
     for (const e of noteEvents) {
         if (!isMelody(e)) continue;
@@ -240,18 +277,49 @@ export function bendDestinationKeys(noteEvents, articulations) {
         if (!sf) continue;
         const key = e.track + ':' + sf[0];
         if (!byTrackString.has(key)) byTrackString.set(key, []);
-        byTrackString.get(key).push({ position: e.position, fret: sf[1], e });
+        byTrackString.get(key).push({ position: e.position, fret: sf[1], e, string: sf[0] });
     }
+    for (const notes of byTrackString.values()) notes.sort((a, b) => a.position - b.position);
+    return byTrackString;
+}
+
+/** Keys "track:position:string" of BEND TARGETS (G15d2). Port of
+ *  bend_target_keys: a note with effect 12 (bend) or 13 (bend-release) bends
+ *  into the NEXT note on the same string of its track, tied or not, possibly
+ *  in a later measure. There is no amount field (it is target.f - source.f),
+ *  and the target is never re-attacked. A bend with no later note, a target
+ *  that is already an h/p/slide destination, or one on the same fret is left
+ *  alone. */
+export function bendTargetKeys(noteEvents, articulations) {
     const keys = new Set();
-    for (const notes of byTrackString.values()) {
-        notes.sort((a, b) => a.position - b.position);
-        for (let i = 0; i < notes.length; i++) {
-            const { position, fret, e } = notes[i];
-            if (i === 0 || !isTiedNote(e)) continue;
+    for (const notes of notesByTrackString(noteEvents).values()) {
+        for (let i = 0; i + 1 < notes.length; i++) {
+            const { position, fret, e, string } = notes[i];
+            if (!BEND_EFFECTS.has(effectCode(e))) continue;
+            const next = notes[i + 1];
+            if (next.position === position || next.fret === fret) continue;
+            const key = e.track + ':' + next.position + ':' + string;
+            if (articulations.get(key) != null) continue;
+            keys.add(key);
+        }
+    }
+    return keys;
+}
+
+/** Keys of notes that carry the tie bit on a different fret than the previous
+ *  note on their string, with no h/p/slide owning the connection. Port of
+ *  fret_changed_tie_keys: not ties (they would go silent) and, since G15d2,
+ *  not bends either; they import as plain re-attacked notes. */
+export function fretChangedTieKeys(noteEvents, articulations) {
+    const keys = new Set();
+    for (const notes of notesByTrackString(noteEvents).values()) {
+        for (let i = 1; i < notes.length; i++) {
+            const { position, fret, e, string } = notes[i];
+            if (!isTiedNote(e)) continue;
             if (notes[i - 1].fret === fret) continue;              // same fret = tie
-            const string = decodeStringFret(e)[0];
-            if (articulations.get(e.track + ':' + position + ':' + string) != null) continue;
-            keys.add(e.track + ':' + position + ':' + string);
+            const key = e.track + ':' + position + ':' + string;
+            if (articulations.get(key) != null) continue;
+            keys.add(key);
         }
     }
     return keys;
@@ -303,6 +371,71 @@ export function normalizeSlideTiming(doc) {
             measure.events.sort((a, b) => a.tick - b.tick);
         }
     }
+}
+
+// --- chord diagrams (G15d3) ---------------------------------------------------
+/** Index of the track whose strings contain the cumulative string row (null = none). */
+function diagramTrackIndex(stringCounts, row) {
+    if (!stringCounts.length) return 0;
+    for (let idx = 0; idx < stringCounts.length; idx++) {
+        if (row < stringCounts[idx]) return idx;
+        row -= stringCounts[idx];
+    }
+    return null;
+}
+
+/** One chord-table record as an OTF `chords` entry (see chord_record_to_otf in otf.py). */
+function chordRecordToOtf(rec, stringCount) {
+    const out = { name: rec.name };
+    if (rec.strings.some(b => b !== 0xff)) {
+        const raw = Array.from(rec.strings.subarray(0, stringCount));
+        out.frets = raw.map(b => (b === 0xff ? null : b & 0x1f));
+        // high 3 bits: 0 plain dot, 1 special glyph (never seen), 2-5 = finger 1-4
+        const fingers = raw.map(b => (b !== 0xff && (b >> 5) >= 2 && (b >> 5) <= 5 ? (b >> 5) - 1 : null));
+        if (fingers.some(f => f !== null)) out.fingers = fingers;
+    }
+    if (rec.first_fret !== 1) out.first_fret = rec.first_fret;
+    return out;
+}
+
+/**
+ * Port of chord_diagrams_to_otf(): the `chords` table, the `chord_diagrams`
+ * anchors, and the count of diagrams that could not be kept. The `frets`
+ * length of a record is byte 32 when non-zero, else the string count of the
+ * track of the first diagram pointing at it, else (unused record) the file's
+ * longest track.
+ */
+function chordDiagramsToOtf(tef, tracks, unitsPerMeasure, ticksPerUnit) {
+    const isV2 = tef.header.isV2;
+    let dropped = tef.chord_anchors_dropped || 0;
+    const table = tef.chord_table || [];
+    const stringCounts = tef.instruments.map(i => i.num_strings);
+    const diagrams = [];
+    const ownerStrings = new Map();
+    for (const a of (tef.chord_anchors || [])) {
+        const idx = diagramTrackIndex(stringCounts, a.stringRow);
+        if (idx === null || idx >= tracks.length) { dropped += 1; continue; }
+        let measure, tick;
+        if (isV2) {
+            measure = fdiv(a.position, unitsPerMeasure);
+            tick = fdiv(((a.position % unitsPerMeasure) & ~3) * 15, 2);
+        } else {
+            const [m, offset] = v3Locate(tef, a.position);
+            measure = m;
+            tick = offset * ticksPerUnit;
+        }
+        const d = { measure: measure + 1, tick, track: tracks[idx].id, chord: a.index };
+        if (a.dx) d.dx = a.dx;
+        if (a.dy) d.dy = a.dy;
+        diagrams.push(d);
+        if (!ownerStrings.has(a.index)) ownerStrings.set(a.index, stringCounts.length ? stringCounts[idx] : 5);
+    }
+    const longest = stringCounts.length ? Math.max(...stringCounts) : 5;
+    const chords = table.map((rec, i) => {
+        const n = rec.string_count || ownerStrings.get(i) || longest;
+        return chordRecordToOtf(rec, Math.max(1, Math.min(14, n)));
+    });
+    return { chords, diagrams, dropped };
 }
 
 // --- main conversion ---------------------------------------------------------
@@ -400,8 +533,9 @@ export function tefToOtf(tef) {
     const articulations = isV2
         ? computeArticulations(tef.note_events, articulationMaxGap(header))
         : computeArticulationsV3(tef.note_events);
-    // Bend/choke notes (connect-bit + fret change + no h/p/slide) → 'b', not a tie.
-    const bendKeys = bendDestinationKeys(tef.note_events, articulations);
+    // Bend targets: the next note on the string after an effect-12/13 note → 'b'.
+    const bendKeys = bendTargetKeys(tef.note_events, articulations);
+    const retieKeys = fretChangedTieKeys(tef.note_events, articulations);
 
     // ---- group events by track + measure ----
     // V3 positions: continuous 64ths (30 ticks each), split by v3Locate.
@@ -433,7 +567,19 @@ export function tefToOtf(tef) {
             const span = 2 * (1920 >> fdiv(code, 3));
             const step = fdiv(decodeDurationCode(code) * 3, 4);
             const inSpan = tick % span;
-            if (inSpan % step === 0) tick = tick - inSpan + fdiv(inSpan * 4, 3);
+            if (inSpan % step === 0) {
+                const retimed = tick - inSpan + fdiv(inSpan * 4, 3);
+                // Barline guard (G15d5, port of otf.py): TablEdit's MusicXML export
+                // keeps 10676 m7's slot-3 note inside the measure (945/240 divisions),
+                // never on or past the barline, so keep the stored tick then.
+                let measureTicks = 1920;
+                if (isV2) measureTicks = fdiv(unitsPerMeasure * 15, 2);
+                else if (tef.v3_measure_starts && tef.v3_measure_starts.length
+                         && measure - 1 < tef.v3_measure_lengths.length) {
+                    measureTicks = tef.v3_measure_lengths[measure - 1] * V3_TICKS_PER_UNIT;
+                }
+                if (retimed < measureTicks) tick = retimed;
+            }
         }
 
         const measures = trackEvents.get(trackId);
@@ -455,6 +601,7 @@ export function tefToOtf(tef) {
             const outEvents = [];
             for (const tick of [...byTick.keys()].sort((a, b) => a - b)) {
                 const notes = [];
+                const notePairs = [];   // [evt, note], for foldSlideSourceGraces
                 for (const evt of byTick.get(tick)) {
                     const r = decodeStringFret(evt);
                     if (!r) continue;
@@ -463,11 +610,14 @@ export function tefToOtf(tef) {
                     // technique_from_event is a retired no-op (returns null).
                     if (isDeadNote(evt)) tech = 'x';
                     let tie = isTiedNote(evt);
-                    // ...unless it's a bend/choke (connect bit but a fret change,
-                    // no h/p/slide): render 'b', not a tie.
-                    if (bendKeys.has(evt.track + ':' + evt.position + ':' + string)) {
+                    // ...unless it's a bend target (the next note after an
+                    // effect-12/13 note): 'b', never a tie or a re-attack.
+                    const noteKey = evt.track + ':' + evt.position + ':' + string;
+                    if (bendKeys.has(noteKey)) {
                         tie = false;
                         tech = 'b';
+                    } else if (retieKeys.has(noteKey)) {
+                        tie = false;
                     }
                     // Fingering: a V2 note whose fret-byte flags are exactly
                     // 0x20 carries the same base-6 fingering byte in effect2
@@ -481,9 +631,14 @@ export function tefToOtf(tef) {
                         [finger, lh] = v3Fingering(evt);
                     }
                     const fx = noteFx(evt);
-                    notes.push({ s: string, f: fret, tech, finger, lh, tie, dur: evt.durationTicks,
-                        fx: fx.length ? fx : null, grace: noteGrace(evt) });
+                    const dc = tie ? null : dynamicCode(evt);
+                    const note = { s: string, f: fret, tech, finger, lh, tie, dur: evt.durationTicks,
+                        fx: fx.length ? fx : null, grace: noteGrace(evt),
+                        dyn: dc === null ? null : DYN_LEVELS[dc] };
+                    notes.push(note);
+                    notePairs.push([evt, note]);
                 }
+                foldSlideSourceGraces(notes, notePairs, tef.note_events);
                 if (notes.length) outEvents.push({ tick, notes });
             }
             if (outEvents.length) outMeasures.push({ measure: measureNum, events: outEvents });
@@ -503,8 +658,24 @@ export function tefToOtf(tef) {
         return { measure: index + 1, tick: offset * V3_TICKS_PER_UNIT, text: te.text };
     });
 
+    // Repeat signs (schema 1.2): one entry per marked measure, ascending; the
+    // flag byte is the OR of every mark in the measure, as TablEdit ORs them.
+    const measureMarks = Object.keys(tef.measure_flags || {}).map(Number)
+        .sort((a, b) => a - b)
+        .map(index => {
+            const raw = tef.measure_flags[index];
+            return { measure: index + 1, ...decodeMarkRaw(raw), raw };
+        });
+
+    const chordOut = chordDiagramsToOtf(tef, tracks, unitsPerMeasure, V3_TICKS_PER_UNIT);
+
+    // One skipped map: the reader's counts plus the chord importer's own
+    // `chord_diagrams` (anchors it could not place), in SKIPPED_KEYS order.
+    const skippedAll = { ...(tef.skipped || {}) };
+    if (chordOut.dropped) skippedAll.chord_diagrams = chordOut.dropped;
+
     const doc = {
-        otf_version: '1.1',
+        otf_version: OTF_VERSION,
         metadata, timing: { ticks_per_beat: 480 },
         tracks, notation,
         annotations,
@@ -512,11 +683,46 @@ export function tefToOtf(tef) {
             e.name ? { from_measure: e.from_measure, to_measure: e.to_measure, name: e.name }
                    : { from_measure: e.from_measure, to_measure: e.to_measure }
         )),
+        measure_marks: measureMarks,
+        chords: chordOut.chords,
+        chord_diagrams: chordOut.diagrams,
         _tsChanges: tsChanges,
+        skipped: Object.fromEntries(
+            SKIPPED_KEYS.filter(k => skippedAll[k]).map(k => [k, skippedAll[k]])),
     };
 
     normalizeSlideTiming(doc);
+    assignDynamics(doc);
     return doc;
+}
+
+/** Fold a slide source that the triplet retime stacked on its target.
+ *  Port of fold_slide_source_graces() (see otf.py for the why): the earlier
+ *  note becomes the later note's `grace: {f, kind: 'slide'}` and is removed
+ *  from `notes` in place; the target's "/" goes with it. */
+function foldSlideSourceGraces(notes, pairs, allEvents) {
+    const byString = new Map();
+    for (const pair of pairs) {
+        const s = pair[1].s;
+        if (!byString.has(s)) byString.set(s, []);
+        byString.get(s).push(pair);
+    }
+    for (const [string, group] of byString) {
+        if (group.length !== 2) continue;
+        group.sort((a, b) => a[0].position - b[0].position);
+        const [[srcEvt, src], [tgtEvt, tgt]] = group;
+        if (srcEvt.position === tgtEvt.position || (tgt.tech !== '/' && tgt.tech !== '\\')) continue;
+        if (src.grace || tgt.grace || src.tie || tgt.tie || src.f > 31) continue;
+        const between = allEvents.some(e => {
+            if (e.track !== tgtEvt.track || !(srcEvt.position < e.position && e.position < tgtEvt.position)) return false;
+            const r = decodeStringFret(e);
+            return !!r && r[0] === string;
+        });
+        if (between) continue;
+        tgt.grace = { f: src.f, kind: 'slide' };
+        tgt.tech = null;
+        notes.splice(notes.indexOf(src), 1);
+    }
 }
 
 /** Serialize the working doc to the canonical OTF dict (== OTFDocument.to_dict()),
@@ -542,6 +748,7 @@ export function toOtfDict(doc) {
             };
             // Emitted only for drum tracks, so pitched tabs stay byte-identical
             if (t.percussion) { out.percussion = true; out.lines = t.lines; }
+            if (t.dyn) out.dyn = t.dyn;
             return out;
         }),
         notation: {},
@@ -560,6 +767,7 @@ export function toOtfDict(doc) {
                     if (n.tie) out.tie = true;
                     if (n.fx) out.fx = [...n.fx];
                     if (n.grace) out.grace = { ...n.grace };
+                    if (n.dyn) out.dyn = n.dyn;
                     return out;
                 }),
             })),
@@ -567,5 +775,9 @@ export function toOtfDict(doc) {
     }
     if (doc.annotations && doc.annotations.length) result.annotations = doc.annotations;
     if (doc.reading_list && doc.reading_list.length) result.reading_list = doc.reading_list;
+    if (doc.measure_marks && doc.measure_marks.length) result.measure_marks = doc.measure_marks;
+    if (doc.chords && doc.chords.length) result.chords = doc.chords;
+    if (doc.chord_diagrams && doc.chord_diagrams.length) result.chord_diagrams = doc.chord_diagrams;
+    if (doc.skipped && Object.keys(doc.skipped).length) result.x_source = { skipped: { ...doc.skipped } };
     return result;
 }

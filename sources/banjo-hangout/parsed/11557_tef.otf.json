@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Beaumont Rag (C)",
     "time_signature": "4/4",
@@ -18,7 +18,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     },
     {
       "id": "bass",
@@ -87,7 +88,7 @@
       {
         "measure": 5,
         "events": [
-          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 240}]},
+          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 240, "grace": {"f": 2, "kind": "hp"}}]},
           {"tick": 240, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 480, "notes": [{"s": 4, "f": 3, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 2, "f": 1, "dur": 240}]},
@@ -100,7 +101,7 @@
       {
         "measure": 6,
         "events": [
-          {"tick": 0, "notes": [{"s": 4, "f": 3, "dur": 240}]},
+          {"tick": 0, "notes": [{"s": 4, "f": 3, "dur": 240, "grace": {"f": 0, "kind": "hp"}}]},
           {"tick": 240, "notes": [{"s": 2, "f": 0, "dur": 240}]},
           {"tick": 480, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240}]},
@@ -111,7 +112,7 @@
       {
         "measure": 7,
         "events": [
-          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 240}]},
+          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 240, "grace": {"f": 2, "kind": "hp"}}]},
           {"tick": 240, "notes": [{"s": 2, "f": 0, "dur": 240}]},
           {"tick": 480, "notes": [{"s": 4, "f": 3, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240}]},
@@ -189,7 +190,7 @@
       {
         "measure": 13,
         "events": [
-          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 240}]},
+          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 240, "grace": {"f": 2, "kind": "hp"}}]},
           {"tick": 240, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 480, "notes": [{"s": 4, "f": 3, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 2, "f": 1, "dur": 240}]},
@@ -392,7 +393,7 @@
       {
         "measure": 29,
         "events": [
-          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 240}]},
+          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 240, "grace": {"f": 2, "kind": "hp"}}]},
           {"tick": 240, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 480, "notes": [{"s": 4, "f": 3, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 2, "f": 1, "dur": 240}]},
@@ -451,6 +452,35 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 0, "text": "Key of C, G tuning    Part 1"},
+    {"measure": 4, "tick": 0, "text": "C"},
+    {"measure": 6, "tick": 0, "text": "G"},
+    {"measure": 8, "tick": 0, "text": "C"},
+    {"measure": 10, "tick": 0, "text": "G"},
+    {"measure": 12, "tick": 0, "text": "C"},
+    {"measure": 14, "tick": 0, "text": "F"},
+    {"measure": 15, "tick": 0, "text": "C"},
+    {"measure": 15, "tick": 960, "text": "A"},
+    {"measure": 16, "tick": 960, "text": "G"},
+    {"measure": 16, "tick": 0, "text": "D"},
+    {"measure": 17, "tick": 0, "text": "C"},
+    {"measure": 18, "tick": 0, "text": "Part 2"},
+    {"measure": 18, "tick": 0, "text": "G"},
+    {"measure": 20, "tick": 0, "text": "C"},
+    {"measure": 22, "tick": 0, "text": "G"},
+    {"measure": 24, "tick": 0, "text": "C"},
+    {"measure": 26, "tick": 0, "text": "G"},
+    {"measure": 28, "tick": 0, "text": "C"},
+    {"measure": 30, "tick": 0, "text": "F"},
+    {"measure": 31, "tick": 0, "text": "C"},
+    {"measure": 31, "tick": 960, "text": "A"},
+    {"measure": 32, "tick": 960, "text": "G"},
+    {"measure": 32, "tick": 0, "text": "D"},
+    {"measure": 33, "tick": 0, "text": "C"},
+    {"measure": 33, "tick": 480, "text": "G"},
+    {"measure": 33, "tick": 960, "text": "C6"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 33}
   ],

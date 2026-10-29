@@ -28,6 +28,9 @@ describe('KEY_ORDER equals the schema property order', () => {
         reading: top.reading_list.items.properties,
         tab_by: top.metadata.properties.tab_by.properties,
         tsc: top.metadata.properties.time_signature_changes.items.properties,
+        mark: top.measure_marks.items.properties,
+        chord: top.chords.items.properties,
+        diagram: top.chord_diagrams.items.properties,
     };
     for (const [ctx, props] of Object.entries(expected)) {
         it(ctx, () => expect(KEY_ORDER[ctx]).toEqual(Object.keys(props)));

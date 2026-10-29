@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Lonesome Fiddle Blues",
     "time_signature": "4/4",
@@ -16,7 +16,8 @@
       "instrument": "dobro",
       "tuning": ["D4", "B3", "G3", "D3", "B2", "G2"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "fff"
     }
   ],
   "notation": {
@@ -25,14 +26,14 @@
         "measure": 2,
         "events": [
           {"tick": 0, "notes": [{"s": 5, "f": 2, "dur": 120}]},
-          {"tick": 120, "notes": [{"s": 5, "f": 3, "dur": 120, "tech": "/"}]},
+          {"tick": 120, "notes": [{"s": 5, "f": 3, "dur": 120, "tech": "/", "fx": ["ghost"]}]},
           {"tick": 240, "notes": [{"s": 4, "f": 0, "dur": 240}]},
           {"tick": 480, "notes": [{"s": 5, "f": 2, "dur": 120}]},
-          {"tick": 600, "notes": [{"s": 5, "f": 3, "dur": 120, "tech": "/"}]},
+          {"tick": 600, "notes": [{"s": 5, "f": 3, "dur": 120, "tech": "/", "fx": ["ghost"]}]},
           {"tick": 720, "notes": [{"s": 4, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 5, "f": 2, "dur": 120}]},
-          {"tick": 1320, "notes": [{"s": 5, "f": 3, "dur": 120, "tech": "/"}]},
+          {"tick": 1320, "notes": [{"s": 5, "f": 3, "dur": 120, "tech": "/", "fx": ["ghost"]}]},
           {"tick": 1440, "notes": [{"s": 4, "f": 0, "dur": 240}]},
           {"tick": 1680, "notes": [{"s": 1, "f": 0, "dur": 240}]}
         ]
@@ -52,7 +53,7 @@
           {"tick": 0, "notes": [{"s": 4, "f": 0, "dur": 480}]},
           {"tick": 240, "notes": [{"s": 5, "f": 2, "dur": 240}]},
           {"tick": 480, "notes": [{"s": 4, "f": 0, "dur": 240}]},
-          {"tick": 720, "notes": [{"s": 4, "f": 2, "dur": 240, "tech": "h"}]},
+          {"tick": 720, "notes": [{"s": 4, "f": 2, "dur": 240, "tech": "h", "fx": ["ghost"]}]},
           {"tick": 960, "notes": [{"s": 4, "f": 3, "dur": 480}]},
           {"tick": 1440, "notes": [{"s": 4, "f": 3, "dur": 240}]},
           {"tick": 1680, "notes": [{"s": 3, "f": 0, "dur": 240}]}
@@ -62,13 +63,13 @@
         "measure": 5,
         "events": [
           {"tick": 0, "notes": [{"s": 3, "f": 2, "dur": 240}]},
-          {"tick": 240, "notes": [{"s": 3, "f": 1, "dur": 240, "tech": "/"}]},
+          {"tick": 240, "notes": [{"s": 3, "f": 1, "dur": 240, "tech": "/", "fx": ["ghost"]}]},
           {"tick": 480, "notes": [{"s": 3, "f": 2, "dur": 240}]},
-          {"tick": 720, "notes": [{"s": 3, "f": 3, "dur": 240, "tech": "/"}]},
+          {"tick": 720, "notes": [{"s": 3, "f": 3, "dur": 240, "tech": "/", "fx": ["ghost"]}]},
           {"tick": 960, "notes": [{"s": 3, "f": 2, "dur": 240}]},
-          {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "p"}]},
+          {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "p", "fx": ["ghost"]}]},
           {"tick": 1440, "notes": [{"s": 4, "f": 3, "dur": 240}]},
-          {"tick": 1680, "notes": [{"s": 4, "f": 2, "dur": 240, "tech": "/"}]}
+          {"tick": 1680, "notes": [{"s": 4, "f": 2, "dur": 240, "tech": "/", "fx": ["ghost"]}]}
         ]
       },
       {
@@ -79,7 +80,7 @@
           {"tick": 720, "notes": [{"s": 4, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 5, "f": 5, "dur": 480}]},
           {"tick": 1440, "notes": [{"s": 5, "f": 5, "dur": 240}]},
-          {"tick": 1680, "notes": [{"s": 5, "f": 6, "dur": 240, "tech": "/"}]}
+          {"tick": 1680, "notes": [{"s": 5, "f": 6, "dur": 240, "tech": "/", "fx": ["ghost"]}]}
         ]
       },
       {
@@ -88,10 +89,10 @@
           {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 240}]},
           {"tick": 240, "notes": [{"s": 4, "f": 4, "dur": 240}]},
           {"tick": 480, "notes": [{"s": 3, "f": 0, "dur": 240}]},
-          {"tick": 720, "notes": [{"s": 3, "f": 2, "dur": 240, "tech": "h"}]},
+          {"tick": 720, "notes": [{"s": 3, "f": 2, "dur": 240, "tech": "h", "fx": ["ghost"]}]},
           {"tick": 960, "notes": [{"s": 3, "f": 0, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 5, "f": 6, "dur": 240}]},
-          {"tick": 1440, "notes": [{"s": 5, "f": 5, "dur": 240, "tech": "/"}]},
+          {"tick": 1440, "notes": [{"s": 5, "f": 5, "dur": 240, "tech": "/", "fx": ["ghost"]}]},
           {"tick": 1680, "notes": [{"s": 6, "f": 5, "dur": 240}]}
         ]
       },
@@ -102,9 +103,9 @@
           {"tick": 240, "notes": [{"s": 5, "f": 2, "dur": 240}]},
           {"tick": 480, "notes": [{"s": 4, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 4, "f": 2, "dur": 240, "tech": "h"}]},
-          {"tick": 960, "notes": [{"s": 4, "f": 3, "dur": 240, "tech": "/"}]},
+          {"tick": 960, "notes": [{"s": 4, "f": 3, "dur": 240, "tech": "/", "fx": ["ghost"]}]},
           {"tick": 1200, "notes": [{"s": 4, "f": 2, "dur": 240}]},
-          {"tick": 1440, "notes": [{"s": 4, "f": 3, "dur": 240, "tech": "/"}]},
+          {"tick": 1440, "notes": [{"s": 4, "f": 3, "dur": 240, "tech": "/", "fx": ["ghost"]}]},
           {"tick": 1680, "notes": [{"s": 3, "f": 0, "dur": 240}]}
         ]
       },
@@ -112,13 +113,13 @@
         "measure": 9,
         "events": [
           {"tick": 0, "notes": [{"s": 3, "f": 2, "dur": 240}]},
-          {"tick": 240, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "h"}]},
+          {"tick": 240, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "h", "fx": ["ghost"]}]},
           {"tick": 480, "notes": [{"s": 3, "f": 2, "dur": 240}]},
-          {"tick": 720, "notes": [{"s": 3, "f": 3, "dur": 240, "tech": "/"}]},
+          {"tick": 720, "notes": [{"s": 3, "f": 3, "dur": 240, "tech": "/", "fx": ["ghost"]}]},
           {"tick": 960, "notes": [{"s": 3, "f": 2, "dur": 240}]},
-          {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "h"}]},
+          {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "h", "fx": ["ghost"]}]},
           {"tick": 1440, "notes": [{"s": 4, "f": 3, "dur": 240}]},
-          {"tick": 1680, "notes": [{"s": 4, "f": 2, "dur": 240, "tech": "h"}]}
+          {"tick": 1680, "notes": [{"s": 4, "f": 2, "dur": 240, "tech": "h", "fx": ["ghost"]}]}
         ]
       },
       {
@@ -133,9 +134,9 @@
         "measure": 11,
         "events": [
           {"tick": 0, "notes": [{"s": 3, "f": 2, "dur": 240}]},
-          {"tick": 240, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "p"}]},
+          {"tick": 240, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "p", "fx": ["ghost"]}]},
           {"tick": 480, "notes": [{"s": 4, "f": 3, "dur": 240}]},
-          {"tick": 720, "notes": [{"s": 4, "f": 2, "dur": 240, "tech": "/"}]},
+          {"tick": 720, "notes": [{"s": 4, "f": 2, "dur": 240, "tech": "/", "fx": ["ghost"]}]},
           {"tick": 960, "notes": [{"s": 4, "f": 0, "dur": 480}]}
         ]
       },
@@ -144,11 +145,11 @@
         "events": [
           {"tick": 0, "notes": [{"s": 6, "f": 0, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 6, "f": 0, "dur": 240}]},
-          {"tick": 720, "notes": [{"s": 6, "f": 2, "dur": 240, "tech": "h"}]},
+          {"tick": 720, "notes": [{"s": 6, "f": 2, "dur": 240, "tech": "h", "fx": ["ghost"]}]},
           {"tick": 960, "notes": [{"s": 6, "f": 4, "dur": 240}]},
-          {"tick": 1200, "notes": [{"s": 6, "f": 2, "dur": 240, "tech": "/"}]},
+          {"tick": 1200, "notes": [{"s": 6, "f": 2, "dur": 240, "tech": "/", "fx": ["ghost"]}]},
           {"tick": 1440, "notes": [{"s": 5, "f": 0, "dur": 240}]},
-          {"tick": 1680, "notes": [{"s": 5, "f": 1, "dur": 240, "tech": "h"}]}
+          {"tick": 1680, "notes": [{"s": 5, "f": 1, "dur": 240, "tech": "h", "fx": ["ghost"]}]}
         ]
       },
       {
@@ -156,7 +157,7 @@
         "events": [
           {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 480}, {"s": 4, "f": 3, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 3, "f": 0, "dur": 480}, {"s": 4, "f": 2, "dur": 480, "tech": "/"}]},
-          {"tick": 960, "notes": [{"s": 3, "f": 0, "dur": 480}, {"s": 4, "f": 0, "dur": 480, "tech": "p"}]},
+          {"tick": 960, "notes": [{"s": 3, "f": 0, "dur": 480}, {"s": 4, "f": 0, "dur": 480, "tech": "p", "fx": ["ghost"]}]},
           {"tick": 1440, "notes": [{"s": 3, "f": 0, "dur": 480}, {"s": 5, "f": 0, "dur": 480}]}
         ]
       },
@@ -164,11 +165,11 @@
         "measure": 14,
         "events": [
           {"tick": 0, "notes": [{"s": 3, "f": 2, "dur": 240}, {"s": 4, "f": 0, "dur": 240}]},
-          {"tick": 240, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "p"}]},
+          {"tick": 240, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "p", "fx": ["ghost"]}]},
           {"tick": 480, "notes": [{"s": 3, "f": 2, "dur": 240}, {"s": 4, "f": 0, "dur": 240}]},
-          {"tick": 720, "notes": [{"s": 3, "f": 4, "dur": 240, "tech": "/"}]},
+          {"tick": 720, "notes": [{"s": 3, "f": 4, "dur": 240, "tech": "/", "fx": ["ghost"]}]},
           {"tick": 960, "notes": [{"s": 3, "f": 2, "dur": 240}, {"s": 4, "f": 0, "dur": 240}]},
-          {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "p"}]},
+          {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "p", "fx": ["ghost"]}]},
           {"tick": 1680, "notes": [{"s": 4, "f": 0, "dur": 240}]}
         ]
       },
@@ -176,13 +177,13 @@
         "measure": 15,
         "events": [
           {"tick": 0, "notes": [{"s": 4, "f": 2, "dur": 240}]},
-          {"tick": 240, "notes": [{"s": 4, "f": 0, "dur": 240, "tech": "p"}]},
+          {"tick": 240, "notes": [{"s": 4, "f": 0, "dur": 240, "tech": "p", "fx": ["ghost"]}]},
           {"tick": 480, "notes": [{"s": 4, "f": 2, "dur": 240}]},
-          {"tick": 720, "notes": [{"s": 4, "f": 4, "dur": 240, "tech": "/"}]},
+          {"tick": 720, "notes": [{"s": 4, "f": 4, "dur": 240, "tech": "/", "fx": ["ghost"]}]},
           {"tick": 960, "notes": [{"s": 4, "f": 2, "dur": 240}]},
-          {"tick": 1200, "notes": [{"s": 4, "f": 0, "dur": 240, "tech": "p"}]},
+          {"tick": 1200, "notes": [{"s": 4, "f": 0, "dur": 240, "tech": "p", "fx": ["ghost"]}]},
           {"tick": 1440, "notes": [{"s": 5, "f": 2, "dur": 240}]},
-          {"tick": 1680, "notes": [{"s": 5, "f": 1, "dur": 240, "tech": "/"}]}
+          {"tick": 1680, "notes": [{"s": 5, "f": 1, "dur": 240, "tech": "/", "fx": ["ghost"]}]}
         ]
       },
       {
@@ -190,9 +191,9 @@
         "events": [
           {"tick": 0, "notes": [{"s": 5, "f": 0, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 5, "f": 0, "dur": 240}]},
-          {"tick": 720, "notes": [{"s": 5, "f": 2, "dur": 240, "tech": "h"}]},
+          {"tick": 720, "notes": [{"s": 5, "f": 2, "dur": 240, "tech": "h", "fx": ["ghost"]}]},
           {"tick": 960, "notes": [{"s": 4, "f": 0, "dur": 240}]},
-          {"tick": 1200, "notes": [{"s": 4, "f": 2, "dur": 240, "tech": "h"}]},
+          {"tick": 1200, "notes": [{"s": 4, "f": 2, "dur": 240, "tech": "h", "fx": ["ghost"]}]},
           {"tick": 1440, "notes": [{"s": 4, "f": 0, "dur": 240}]},
           {"tick": 1680, "notes": [{"s": 5, "f": 2, "dur": 240}]}
         ]
@@ -201,12 +202,12 @@
         "measure": 17,
         "events": [
           {"tick": 0, "notes": [{"s": 5, "f": 0, "dur": 240}]},
-          {"tick": 240, "notes": [{"s": 5, "f": 2, "dur": 240, "tech": "h"}]},
+          {"tick": 240, "notes": [{"s": 5, "f": 2, "dur": 240, "tech": "h", "fx": ["ghost"]}]},
           {"tick": 480, "notes": [{"s": 4, "f": 0, "dur": 240}]},
-          {"tick": 720, "notes": [{"s": 4, "f": 2, "dur": 240, "tech": "h"}]},
+          {"tick": 720, "notes": [{"s": 4, "f": 2, "dur": 240, "tech": "h", "fx": ["ghost"]}]},
           {"tick": 960, "notes": [{"s": 4, "f": 0, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 5, "f": 2, "dur": 240}]},
-          {"tick": 1440, "notes": [{"s": 5, "f": 0, "dur": 240, "tech": "p"}]},
+          {"tick": 1440, "notes": [{"s": 5, "f": 0, "dur": 240, "tech": "p", "fx": ["ghost"]}]},
           {"tick": 1680, "notes": [{"s": 4, "f": 2, "dur": 240}]}
         ]
       },
@@ -216,10 +217,10 @@
           {"tick": 0, "notes": [{"s": 4, "f": 7, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 4, "f": 7, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 5, "f": 7, "dur": 240}]},
-          {"tick": 960, "notes": [{"s": 5, "f": 2, "dur": 240, "tech": "/"}]},
+          {"tick": 960, "notes": [{"s": 5, "f": 2, "dur": 240, "tech": "/", "fx": ["ghost"]}]},
           {"tick": 1200, "notes": [{"s": 4, "f": 2, "dur": 240}]},
           {"tick": 1440, "notes": [{"s": 5, "f": 1, "dur": 240}]},
-          {"tick": 1680, "notes": [{"s": 5, "f": 2, "dur": 240, "tech": "/"}]}
+          {"tick": 1680, "notes": [{"s": 5, "f": 2, "dur": 240, "tech": "/", "fx": ["ghost"]}]}
         ]
       },
       {
@@ -236,7 +237,7 @@
         "events": [
           {"tick": 0, "notes": [{"s": 4, "f": 0, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 4, "f": 0, "dur": 240}]},
-          {"tick": 720, "notes": [{"s": 4, "f": 2, "dur": 240, "tech": "h"}]},
+          {"tick": 720, "notes": [{"s": 4, "f": 2, "dur": 240, "tech": "h", "fx": ["ghost"]}]},
           {"tick": 960, "notes": [{"s": 4, "f": 3, "dur": 480}]},
           {"tick": 1440, "notes": [{"s": 4, "f": 3, "dur": 240}]},
           {"tick": 1680, "notes": [{"s": 3, "f": 0, "dur": 240}]}
@@ -246,13 +247,13 @@
         "measure": 21,
         "events": [
           {"tick": 0, "notes": [{"s": 3, "f": 2, "dur": 240}]},
-          {"tick": 240, "notes": [{"s": 3, "f": 1, "dur": 240, "tech": "/"}]},
+          {"tick": 240, "notes": [{"s": 3, "f": 1, "dur": 240, "tech": "/", "fx": ["ghost"]}]},
           {"tick": 480, "notes": [{"s": 3, "f": 2, "dur": 240}]},
-          {"tick": 720, "notes": [{"s": 3, "f": 3, "dur": 240, "tech": "/"}]},
+          {"tick": 720, "notes": [{"s": 3, "f": 3, "dur": 240, "tech": "/", "fx": ["ghost"]}]},
           {"tick": 960, "notes": [{"s": 3, "f": 2, "dur": 240}]},
-          {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "p"}]},
+          {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "p", "fx": ["ghost"]}]},
           {"tick": 1440, "notes": [{"s": 4, "f": 3, "dur": 240}]},
-          {"tick": 1680, "notes": [{"s": 4, "f": 2, "dur": 240, "tech": "/"}]}
+          {"tick": 1680, "notes": [{"s": 4, "f": 2, "dur": 240, "tech": "/", "fx": ["ghost"]}]}
         ]
       },
       {
@@ -263,7 +264,7 @@
           {"tick": 720, "notes": [{"s": 4, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 5, "f": 5, "dur": 480}]},
           {"tick": 1440, "notes": [{"s": 5, "f": 5, "dur": 240}]},
-          {"tick": 1680, "notes": [{"s": 5, "f": 6, "dur": 240, "tech": "/"}]}
+          {"tick": 1680, "notes": [{"s": 5, "f": 6, "dur": 240, "tech": "/", "fx": ["ghost"]}]}
         ]
       },
       {
@@ -272,10 +273,10 @@
           {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 240}]},
           {"tick": 240, "notes": [{"s": 4, "f": 4, "dur": 240}]},
           {"tick": 480, "notes": [{"s": 3, "f": 0, "dur": 240}]},
-          {"tick": 720, "notes": [{"s": 3, "f": 2, "dur": 240, "tech": "h"}]},
+          {"tick": 720, "notes": [{"s": 3, "f": 2, "dur": 240, "tech": "h", "fx": ["ghost"]}]},
           {"tick": 960, "notes": [{"s": 3, "f": 0, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 5, "f": 6, "dur": 240}]},
-          {"tick": 1440, "notes": [{"s": 5, "f": 5, "dur": 240, "tech": "/"}]},
+          {"tick": 1440, "notes": [{"s": 5, "f": 5, "dur": 240, "tech": "/", "fx": ["ghost"]}]},
           {"tick": 1680, "notes": [{"s": 6, "f": 5, "dur": 240}]}
         ]
       },
@@ -286,9 +287,9 @@
           {"tick": 240, "notes": [{"s": 5, "f": 2, "dur": 240}]},
           {"tick": 480, "notes": [{"s": 4, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 4, "f": 2, "dur": 240, "tech": "h"}]},
-          {"tick": 960, "notes": [{"s": 4, "f": 3, "dur": 240, "tech": "/"}]},
+          {"tick": 960, "notes": [{"s": 4, "f": 3, "dur": 240, "tech": "/", "fx": ["ghost"]}]},
           {"tick": 1200, "notes": [{"s": 4, "f": 2, "dur": 240}]},
-          {"tick": 1440, "notes": [{"s": 4, "f": 3, "dur": 240, "tech": "/"}]},
+          {"tick": 1440, "notes": [{"s": 4, "f": 3, "dur": 240, "tech": "/", "fx": ["ghost"]}]},
           {"tick": 1680, "notes": [{"s": 3, "f": 0, "dur": 240}]}
         ]
       },
@@ -296,13 +297,13 @@
         "measure": 25,
         "events": [
           {"tick": 0, "notes": [{"s": 3, "f": 2, "dur": 240}]},
-          {"tick": 240, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "h"}]},
+          {"tick": 240, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "h", "fx": ["ghost"]}]},
           {"tick": 480, "notes": [{"s": 3, "f": 2, "dur": 240}]},
-          {"tick": 720, "notes": [{"s": 3, "f": 3, "dur": 240, "tech": "/"}]},
+          {"tick": 720, "notes": [{"s": 3, "f": 3, "dur": 240, "tech": "/", "fx": ["ghost"]}]},
           {"tick": 960, "notes": [{"s": 3, "f": 2, "dur": 240}]},
-          {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "h"}]},
+          {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "h", "fx": ["ghost"]}]},
           {"tick": 1440, "notes": [{"s": 4, "f": 3, "dur": 240}]},
-          {"tick": 1680, "notes": [{"s": 4, "f": 0, "dur": 240, "tech": "h"}]}
+          {"tick": 1680, "notes": [{"s": 4, "f": 0, "dur": 240, "tech": "h", "fx": ["ghost"]}]}
         ]
       },
       {
@@ -317,14 +318,18 @@
         "measure": 27,
         "events": [
           {"tick": 0, "notes": [{"s": 3, "f": 2, "dur": 240}]},
-          {"tick": 240, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "p"}]},
+          {"tick": 240, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "p", "fx": ["ghost"]}]},
           {"tick": 480, "notes": [{"s": 4, "f": 3, "dur": 240}]},
-          {"tick": 720, "notes": [{"s": 4, "f": 2, "dur": 240, "tech": "/"}]},
+          {"tick": 720, "notes": [{"s": 4, "f": 2, "dur": 240, "tech": "/", "fx": ["ghost"]}]},
           {"tick": 960, "notes": [{"s": 4, "f": 0, "dur": 480}]}
         ]
       }
     ]
   },
+  "annotations": [
+    {"measure": 2, "tick": 0, "text": "Intro"},
+    {"measure": 4, "tick": 0, "text": "1st break"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 11},
     {"from_measure": 4, "to_measure": 27}

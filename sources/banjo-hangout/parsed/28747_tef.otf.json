@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Road To Columbus",
     "time_signature": "2/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -424,6 +425,38 @@
       }
     ]
   },
+  "chords": [
+    {"name": "G"},
+    {"name": "A"},
+    {"name": "B"},
+    {"name": "C"},
+    {"name": "D"},
+    {"name": "E"},
+    {"name": "F"},
+    {"name": "C7"}
+  ],
+  "chord_diagrams": [
+    {"measure": 2, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 2, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 4, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 5, "tick": 0, "track": "banjo", "chord": 7},
+    {"measure": 6, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 8, "tick": 0, "track": "banjo", "chord": 4},
+    {"measure": 10, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 12, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 13, "tick": 0, "track": "banjo", "chord": 7},
+    {"measure": 14, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 15, "tick": 0, "track": "banjo", "chord": 4},
+    {"measure": 16, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 20, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 22, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 24, "tick": 0, "track": "banjo", "chord": 4},
+    {"measure": 26, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 28, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 30, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 31, "tick": 0, "track": "banjo", "chord": 4},
+    {"measure": 32, "tick": 0, "track": "banjo", "chord": 0}
+  ],
   "x_source": {
     "type": "banjo-hangout",
     "source_id": "28747",

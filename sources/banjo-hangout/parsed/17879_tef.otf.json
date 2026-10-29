@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Liberty (Variation)",
     "time_signature": "4/4",
@@ -16,7 +16,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -139,13 +140,13 @@
           {"tick": 480, "notes": [{"s": 3, "f": 2, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 4, "f": 4, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 4, "f": 0, "dur": 480}]},
-          {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 480}, {"s": 3, "f": 0, "dur": 480}]}
+          {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 480}, {"s": 3, "f": 0, "dur": 480, "grace": {"f": 2, "kind": "hp"}}]}
         ]
       },
       {
         "measure": 11,
         "events": [
-          {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 480}, {"s": 3, "f": 2, "dur": 480}]},
+          {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 480}, {"s": 3, "f": 2, "dur": 480, "grace": {"f": 1, "kind": "slide"}}]},
           {"tick": 480, "notes": [{"s": 4, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240}, {"s": 3, "f": 4, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 3, "f": 2, "dur": 240, "tech": "p"}]},
@@ -163,13 +164,13 @@
           {"tick": 480, "notes": [{"s": 3, "f": 2, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 2, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 1, "f": 0, "dur": 480}]},
-          {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 480}, {"s": 3, "f": 0, "dur": 480}]}
+          {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 480}, {"s": 3, "f": 0, "dur": 480, "grace": {"f": 2, "kind": "hp"}}]}
         ]
       },
       {
         "measure": 13,
         "events": [
-          {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 480}, {"s": 3, "f": 2, "dur": 480}]},
+          {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 480}, {"s": 3, "f": 2, "dur": 480, "grace": {"f": 1, "kind": "slide"}}]},
           {"tick": 480, "notes": [{"s": 4, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240}, {"s": 3, "f": 4, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 3, "f": 2, "dur": 240, "tech": "p"}]},
@@ -182,17 +183,17 @@
         "measure": 14,
         "events": [
           {"tick": 0, "notes": [{"s": 4, "f": 2, "dur": 240}]},
-          {"tick": 240, "notes": [{"s": 2, "f": 2, "dur": 240}, {"s": 3, "f": 0, "dur": 240}]},
+          {"tick": 240, "notes": [{"s": 2, "f": 2, "dur": 240}, {"s": 3, "f": 0, "dur": 240, "grace": {"f": 2, "kind": "hp"}}]},
           {"tick": 480, "notes": [{"s": 2, "f": 2, "dur": 240, "tie": true}, {"s": 3, "f": 0, "dur": 240, "tie": true}]},
           {"tick": 720, "notes": [{"s": 4, "f": 2, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 2, "f": 2, "dur": 480}, {"s": 3, "f": 0, "dur": 480}]},
-          {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 480}, {"s": 3, "f": 0, "dur": 480}]}
+          {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 480}, {"s": 3, "f": 0, "dur": 480, "grace": {"f": 2, "kind": "hp"}}]}
         ]
       },
       {
         "measure": 15,
         "events": [
-          {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 480}, {"s": 3, "f": 2, "dur": 480}]},
+          {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 480}, {"s": 3, "f": 2, "dur": 480, "grace": {"f": 1, "kind": "slide"}}]},
           {"tick": 480, "notes": [{"s": 4, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 240}, {"s": 3, "f": 4, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 3, "f": 2, "dur": 240, "tech": "p"}]},
@@ -235,7 +236,7 @@
           {"tick": 480, "notes": [{"s": 3, "f": 2, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 4, "f": 4, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 4, "f": 0, "dur": 480}]},
-          {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 480}, {"s": 3, "f": 0, "dur": 480}]}
+          {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 480}, {"s": 3, "f": 0, "dur": 480, "grace": {"f": 2, "kind": "hp"}}]}
         ]
       },
       {
@@ -247,7 +248,7 @@
           {"tick": 720, "notes": [{"s": 1, "f": 4, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 2, "f": 5, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 1, "f": 0, "dur": 240}]},
-          {"tick": 1440, "notes": [{"s": 3, "f": 11, "dur": 240}]},
+          {"tick": 1440, "notes": [{"s": 3, "f": 11, "dur": 240, "grace": {"f": 10, "kind": "hp"}}]},
           {"tick": 1680, "notes": [{"s": 2, "f": 10, "dur": 240}]}
         ]
       },
@@ -255,7 +256,7 @@
         "measure": 20,
         "events": [
           {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 240}]},
-          {"tick": 240, "notes": [{"s": 3, "f": 11, "dur": 240}]},
+          {"tick": 240, "notes": [{"s": 3, "f": 11, "dur": 240, "grace": {"f": 10, "kind": "hp"}}]},
           {"tick": 480, "notes": [{"s": 2, "f": 10, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 3, "f": 11, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 1, "f": 0, "dur": 960}]}
@@ -269,6 +270,32 @@
     {"from_measure": 10, "to_measure": 18},
     {"from_measure": 11, "to_measure": 16},
     {"from_measure": 19, "to_measure": 20}
+  ],
+  "chords": [
+    {"name": "C", "frets": [2, 1, 0, 2, 0]},
+    {"name": "G", "frets": [0, 0, 0, 0, 0]},
+    {"name": "D", "frets": [4, 3, 2, 4, null]},
+    {"name": "A", "frets": [2, 2, 2, 2, null]},
+    {"name": "Em", "frets": [2, 0, 0, 2, null]},
+    {"name": "B", "frets": [4, 4, 4, 4, null]}
+  ],
+  "chord_diagrams": [
+    {"measure": 2, "tick": 0, "track": "banjo", "chord": 2},
+    {"measure": 4, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 6, "tick": 0, "track": "banjo", "chord": 2},
+    {"measure": 8, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 8, "tick": 960, "track": "banjo", "chord": 3},
+    {"measure": 9, "tick": 0, "track": "banjo", "chord": 2},
+    {"measure": 10, "tick": 0, "track": "banjo", "chord": 2},
+    {"measure": 11, "tick": 0, "track": "banjo", "chord": 2},
+    {"measure": 14, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 15, "tick": 0, "track": "banjo", "chord": 2},
+    {"measure": 17, "tick": 960, "track": "banjo", "chord": 3},
+    {"measure": 17, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 18, "tick": 0, "track": "banjo", "chord": 2},
+    {"measure": 19, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 19, "tick": 960, "track": "banjo", "chord": 3},
+    {"measure": 20, "tick": 0, "track": "banjo", "chord": 2}
   ],
   "x_source": {
     "type": "banjo-hangout",

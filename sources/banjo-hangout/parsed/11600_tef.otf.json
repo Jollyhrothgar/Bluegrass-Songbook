@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Black Mountain Rag",
     "time_signature": "4/4",
@@ -14,7 +14,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -338,10 +339,10 @@
       {
         "measure": 27,
         "events": [
-          {"tick": 0, "notes": [{"s": 1, "f": 12, "dur": 480}, {"s": 2, "f": 12, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 3, "f": 12, "dur": 480}]},
-          {"tick": 960, "notes": [{"s": 1, "f": 12, "dur": 480}, {"s": 2, "f": 12, "dur": 480}]},
-          {"tick": 1440, "notes": [{"s": 3, "f": 12, "dur": 480}]}
+          {"tick": 0, "notes": [{"s": 1, "f": 12, "dur": 480, "fx": ["harmonic"]}, {"s": 2, "f": 12, "dur": 480}]},
+          {"tick": 480, "notes": [{"s": 3, "f": 12, "dur": 480, "fx": ["harmonic"]}]},
+          {"tick": 960, "notes": [{"s": 1, "f": 12, "dur": 480, "fx": ["harmonic"]}, {"s": 2, "f": 12, "dur": 480}]},
+          {"tick": 1440, "notes": [{"s": 3, "f": 12, "dur": 480, "fx": ["harmonic"]}]}
         ]
       },
       {

@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Angeline The Baker",
     "time_signature": "4/4",
@@ -16,7 +16,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "A4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -295,6 +296,9 @@
     "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/a/tab-angeline-the-ba-11736-44510492009.tef",
     "author": "Banjoker",
     "converted_at": "2026-07-26T22:20:06.069259",
-    "source_id": "11736"
+    "source_id": "11736",
+    "skipped": {
+      "tempo_changes": 1
+    }
   }
 }

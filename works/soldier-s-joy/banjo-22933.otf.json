@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Soldiers Joy",
     "time_signature": "4/4",
@@ -16,7 +16,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "C3", "G4"],
       "capo": 2,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "fff"
     }
   ],
   "notation": {
@@ -214,6 +215,12 @@
   "annotations": [
     {"measure": 8, "tick": 1560, "text": "5 into B"},
     {"measure": 16, "tick": 1560, "text": "2 into A"}
+  ],
+  "measure_marks": [
+    {"measure": 1, "repeat_start": true, "raw": 64},
+    {"measure": 8, "repeat_end": true, "raw": 128},
+    {"measure": 9, "repeat_start": true, "raw": 64},
+    {"measure": 16, "repeat_end": true, "raw": 128}
   ],
   "x_source": {
     "type": "banjo-hangout",

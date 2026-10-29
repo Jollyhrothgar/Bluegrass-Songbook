@@ -174,6 +174,43 @@ export function absorbLegato(lastByString, note, midi, absTick) {
     return true;
 }
 
+const BEND_SOURCE_FX = ['bend', 'bend-release'];
+
+/**
+ * Fold a bend target into the note it bends from (G15d2). TablEdit bends
+ * a note (effect 12 bend, 13 bend-release) into the NEXT note on its string
+ * and does not pick that note again: one pick, one note-on, the pitch moving
+ * by (target - source) frets. The target is the note OTF marks `tech: 'b'`;
+ * the source is the last attack on the string when it carries a bend fx and
+ * has not bent yet. Without such a source (an orphan 'b') the note is played
+ * normally. Returns true when the note was absorbed.
+ */
+export function absorbBend(lastByString, note, midi, absTick) {
+    if (note.tech !== 'b') return false;
+    const source = lastByString[note.s];
+    if (!source || source.bendTo || !BEND_SOURCE_FX.some(f => hasFx(source.fx, f))) return false;
+    source.explicitEndTick = absTick + (note.dur || 0);
+    source.bendTo = { deltaSemitones: midi - source.midi, atTick: absTick };
+    return true;
+}
+
+/**
+ * Pitch waypoints for a note that bends into the next one (WebAudioFont
+ * `slides`). The pitch ramps from the note's own pitch to `deltaSemitones`
+ * over the SOURCE note's length (`riseSec`, the time to the target's onset),
+ * as in TablEdit's own MIDI, and holds. A bend-release then comes back down
+ * over the second half of what is left. Pure.
+ */
+export function bendIntoWaypoints(deltaSemitones, riseSec, noteDurSec, release) {
+    const rise = Math.max(riseSec, 0.001);
+    const wp = [{ delta: 0, when: 0 }, { delta: deltaSemitones, when: rise }];
+    if (release && noteDurSec > rise) {
+        wp.push({ delta: deltaSemitones, when: rise + (noteDurSec - rise) / 2 });
+        wp.push({ delta: 0, when: noteDurSec });
+    }
+    return wp;
+}
+
 /**
  * Pitch waypoints (WebAudioFont `slides`) for a source note and its legato
  * legs: hold, then a near-instant step (hammer/pull) or a ~45ms glide
@@ -353,6 +390,28 @@ export function graceLeadSeconds(secondsPerTick, ticksPerBeat) {
     return Math.min(ticksPerBeat / 8 * secondsPerTick, GRACE_MAX_LEAD_SEC);
 }
 
+/** Dynamic levels, loudest first (TablEdit code 0 = fff .. 6 = pp). Same list as
+ *  DYN_LEVELS in otf-editor/otf-validate.js, repeated so the player keeps no
+ *  editor dependency. */
+const DYN_ORDER = ['fff', 'ff', 'f', 'mf', 'mp', 'p', 'pp'];
+export const DEFAULT_DYN = 'f';
+
+/** TablEdit's MIDI velocity for a level: 127 - 16 * code (f = 95). Unknown or
+ *  missing levels count as the default, f. */
+export function dynamicVelocity(level) {
+    const code = DYN_ORDER.indexOf(level);
+    return 127 - 16 * (code < 0 ? DYN_ORDER.indexOf(DEFAULT_DYN) : code);
+}
+
+/** Gain for a note relative to its track's level. A note with no `dyn` plays at
+ *  its track's level, so it is exactly 1: a track at one level sounds as it
+ *  always did, and the mixer volume stays the track's loudness. Only a note
+ *  that differs from the track is scaled, by the velocity ratio. Pure. */
+export function dynamicGain(noteDyn, trackDyn) {
+    if (!noteDyn) return 1;
+    return dynamicVelocity(noteDyn) / dynamicVelocity(trackDyn);
+}
+
 /**
  * Apply the duration/volume fx to a note whose ring-model or explicit
  * duration is already computed. Order matters and is deliberate: let-ring
@@ -412,6 +471,11 @@ export function applyStrumOffsets(notes) {
 function pitchWaypoints(note, secondsPerTick) {
     if (note.legs) {
         return legatoWaypoints(note.midi, legSeconds(note, secondsPerTick, 0), note.duration);
+    }
+    if (note.bendTo) {
+        return bendIntoWaypoints(note.bendTo.deltaSemitones,
+            (note.bendTo.atTick - note.absTick) * secondsPerTick, note.duration,
+            hasFx(note.fx, 'bend-release'));
     }
     if (hasFx(note.fx, 'bend-release')) return bendReleaseWaypoints(note.duration);
     if (hasFx(note.fx, 'choke')) return chokeWaypoints(note.duration);
@@ -895,6 +959,8 @@ export class TabPlayer {
                         // glides at schedule time (see below). Falls back to a
                         // normal attack if there is no preceding note.
                         if (absorbLegato(lastByString, note, midi, absTick)) return;
+                        // Bend target: one pick with its source (G15d2).
+                        if (absorbBend(lastByString, note, midi, absTick)) return;
 
                         const tn = {
                             time: absTick * secondsPerTick,
@@ -907,7 +973,7 @@ export class TabPlayer {
                             // Editor-entered notes carry explicit durations
                             explicitEndTick: note.dur ? absTick + note.dur : undefined,
                             instrumentData,
-                            volume: mix.volume,
+                            volume: mix.volume * dynamicGain(note.dyn, track.dyn),
                             sustain: mix.sustain,
                             decay: mix.decay,
                             trackId: track.id,

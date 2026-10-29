@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "forked deer",
     "time_signature": "4/4",
@@ -16,7 +16,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -41,16 +42,16 @@
           {"tick": 240, "notes": [{"s": 1, "f": 9, "dur": 240, "finger": "I"}]},
           {"tick": 480, "notes": [{"s": 1, "f": 7, "dur": 240, "finger": "M"}]},
           {"tick": 720, "notes": [{"s": 2, "f": 8, "dur": 240, "finger": "I"}]},
-          {"tick": 960, "notes": [{"s": 2, "f": 7, "dur": 240}]},
-          {"tick": 1200, "notes": [{"s": 3, "f": 9, "dur": 240}]},
-          {"tick": 1440, "notes": [{"s": 3, "f": 7, "dur": 240}]},
-          {"tick": 1680, "notes": [{"s": 3, "f": 6, "dur": 240}]}
+          {"tick": 960, "notes": [{"s": 2, "f": 7, "dur": 240, "finger": "T", "lh": 2}]},
+          {"tick": 1200, "notes": [{"s": 3, "f": 9, "dur": 240, "finger": "M", "lh": 4}]},
+          {"tick": 1440, "notes": [{"s": 3, "f": 7, "dur": 240, "finger": "I", "lh": 2}]},
+          {"tick": 1680, "notes": [{"s": 3, "f": 6, "dur": 240, "finger": "T", "lh": 1}]}
         ]
       },
       {
         "measure": 3,
         "events": [
-          {"tick": 0, "notes": [{"s": 3, "f": 7, "dur": 240}]},
+          {"tick": 0, "notes": [{"s": 3, "f": 7, "dur": 240, "finger": "I", "lh": 1}]},
           {"tick": 240, "notes": [{"s": 3, "f": 9, "dur": 240, "finger": "T"}]},
           {"tick": 480, "notes": [{"s": 2, "f": 7, "dur": 240, "finger": "I"}]},
           {"tick": 720, "notes": [{"s": 2, "f": 8, "dur": 240, "finger": "T"}]},
@@ -68,8 +69,8 @@
           {"tick": 480, "notes": [{"s": 3, "f": 9, "dur": 240, "finger": "I"}]},
           {"tick": 720, "notes": [{"s": 3, "f": 7, "dur": 240, "finger": "T"}]},
           {"tick": 960, "notes": [{"s": 3, "f": 6, "dur": 240, "finger": "M"}]},
-          {"tick": 1200, "notes": [{"s": 4, "f": 9, "dur": 240}]},
-          {"tick": 1440, "notes": [{"s": 4, "f": 7, "dur": 480}]}
+          {"tick": 1200, "notes": [{"s": 4, "f": 9, "dur": 240, "finger": "I", "lh": 4}]},
+          {"tick": 1440, "notes": [{"s": 4, "f": 7, "dur": 480, "finger": "T", "lh": 2}]}
         ]
       },
       {
@@ -320,6 +321,9 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 17, "tick": 720, "text": "B part up the neck solo"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 8},
     {"from_measure": 1, "to_measure": 16},

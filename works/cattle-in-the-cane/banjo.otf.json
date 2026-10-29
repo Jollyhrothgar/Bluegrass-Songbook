@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Cattle in the Cane.tef",
     "time_signature": "4/4",
@@ -14,14 +14,16 @@
       "instrument": "5-string-banjo",
       "tuning": ["E4", "C#4", "A3", "E3", "A4"],
       "capo": 2,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     },
     {
       "id": "guitar",
       "instrument": "6-string-guitar",
       "tuning": ["F#4", "C#4", "A3", "E3", "B2", "F#2"],
       "capo": 2,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     }
   ],
   "notation": {

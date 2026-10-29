@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Black Mountain Rag - Mando & Banjo",
     "time_signature": "4/4",
@@ -19,21 +19,24 @@
       "instrument": "mandolin",
       "tuning": ["E5", "A4", "D4", "G3"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     },
     {
       "id": "guitar",
       "instrument": "5-string-banjo",
       "tuning": ["E4", "C#4", "A3", "E3", "A4"],
       "capo": 2,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     },
     {
       "id": "bass",
       "instrument": "upright-bass",
       "tuning": ["G2", "D2", "A1", "E1"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     },
     {
       "id": "percussion",
@@ -41,6 +44,7 @@
       "tuning": [],
       "capo": 0,
       "role": "percussion",
+      "dyn": "f",
       "percussion": true,
       "lines": 8
     }
@@ -2975,6 +2979,13 @@
     {"from_measure": 1, "to_measure": 66},
     {"from_measure": 2, "to_measure": 65},
     {"from_measure": 67, "to_measure": 67}
+  ],
+  "measure_marks": [
+    {"measure": 10, "raw": 7},
+    {"measure": 18, "raw": 7},
+    {"measure": 38, "raw": 7},
+    {"measure": 42, "raw": 7},
+    {"measure": 50, "raw": 7}
   ],
   "x_source": {
     "type": "mandolin-hangout",

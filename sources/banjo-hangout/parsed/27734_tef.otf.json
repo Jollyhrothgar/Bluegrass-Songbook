@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Cuckoo's Nest",
     "time_signature": "4/4",
@@ -18,7 +18,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["E4", "D4", "A3", "D3", "A4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -386,6 +387,13 @@
     {"from_measure": 10, "to_measure": 10},
     {"from_measure": 20, "to_measure": 27},
     {"from_measure": 20, "to_measure": 27}
+  ],
+  "measure_marks": [
+    {"measure": 9, "repeat_end": true, "ending": 1, "raw": 129},
+    {"measure": 10, "ending": 2, "end_bar": true, "raw": 10},
+    {"measure": 18, "repeat_end": true, "ending": 1, "raw": 129},
+    {"measure": 19, "ending": 2, "end_bar": true, "raw": 10},
+    {"measure": 27, "repeat_end": true, "raw": 128}
   ],
   "x_source": {
     "type": "banjo-hangout",

@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Big Mon",
     "time_signature": "2/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -459,6 +460,53 @@
     {"from_measure": 9, "to_measure": 24},
     {"from_measure": 17, "to_measure": 32},
     {"from_measure": 25, "to_measure": 32}
+  ],
+  "chords": [
+    {"name": "G", "frets": [9, 8, 7, null, null], "first_fret": 7},
+    {"name": "G", "frets": [17, 15, 16, null, null], "first_fret": 15},
+    {"name": "C", "frets": [10, 8, 9, null, null], "first_fret": 8},
+    {"name": "D", "frets": [12, 10, 11, null, null], "first_fret": 10},
+    {"name": "G", "frets": [9, 8, 7, null, null], "first_fret": 7},
+    {"name": "G", "frets": [9, 8, 7, null, null], "first_fret": 7},
+    {"name": "G", "frets": [9, 8, 7, null, null], "first_fret": 7},
+    {"name": "G", "frets": [17, 15, 16, null, null], "first_fret": 15},
+    {"name": "F"}
+  ],
+  "chord_diagrams": [
+    {"measure": 1, "tick": 0, "track": "banjo", "chord": 5},
+    {"measure": 2, "tick": 0, "track": "banjo", "chord": 8},
+    {"measure": 3, "tick": 0, "track": "banjo", "chord": 5},
+    {"measure": 4, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 4, "tick": 480, "track": "banjo", "chord": 6},
+    {"measure": 5, "tick": 0, "track": "banjo", "chord": 7},
+    {"measure": 6, "tick": 0, "track": "banjo", "chord": 8},
+    {"measure": 7, "tick": 0, "track": "banjo", "chord": 7},
+    {"measure": 8, "tick": 480, "track": "banjo", "chord": 7},
+    {"measure": 8, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 9, "tick": 0, "track": "banjo", "chord": 7},
+    {"measure": 11, "tick": 0, "track": "banjo", "chord": 6},
+    {"measure": 12, "tick": 480, "track": "banjo", "chord": 3},
+    {"measure": 13, "tick": 0, "track": "banjo", "chord": 7},
+    {"measure": 15, "tick": 0, "track": "banjo", "chord": 7},
+    {"measure": 16, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 16, "tick": 480, "track": "banjo", "chord": 6},
+    {"measure": 17, "tick": 0, "track": "banjo", "chord": 7},
+    {"measure": 18, "tick": 0, "track": "banjo", "chord": 8},
+    {"measure": 19, "tick": 0, "track": "banjo", "chord": 4},
+    {"measure": 20, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 20, "tick": 480, "track": "banjo", "chord": 7},
+    {"measure": 21, "tick": 0, "track": "banjo", "chord": 7},
+    {"measure": 22, "tick": 0, "track": "banjo", "chord": 8},
+    {"measure": 23, "tick": 0, "track": "banjo", "chord": 6},
+    {"measure": 24, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 24, "tick": 480, "track": "banjo", "chord": 6},
+    {"measure": 25, "tick": 0, "track": "banjo", "chord": 7},
+    {"measure": 27, "tick": 0, "track": "banjo", "chord": 7},
+    {"measure": 28, "tick": 480, "track": "banjo", "chord": 3},
+    {"measure": 29, "tick": 0, "track": "banjo", "chord": 7},
+    {"measure": 31, "tick": 0, "track": "banjo", "chord": 7},
+    {"measure": 32, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 32, "tick": 480, "track": "banjo", "chord": 7}
   ],
   "x_source": {
     "type": "banjo-hangout",

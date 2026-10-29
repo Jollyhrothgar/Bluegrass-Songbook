@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Edge é \"quoted\"",
     "time_signature": "4/4",
@@ -23,7 +23,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "mp"
     },
     {
       "id": "perc",
@@ -38,7 +39,7 @@
       {
         "measure": 1,
         "events": [
-          {"tick": 0, "notes": [{"s": 5, "f": 2, "dur": 120, "tie": true, "tech": "h", "fx": ["brush", "roll"], "grace": {"f": 3, "kind": "hp"}, "finger": "T", "lh": 2}]},
+          {"tick": 0, "notes": [{"s": 5, "f": 2, "dur": 120, "tie": true, "tech": "h", "fx": ["brush", "roll", "bend"], "grace": {"f": 3, "kind": "hp"}, "finger": "T", "lh": 2, "dyn": "ff"}]},
           {"tick": 240, "notes": []}
         ]
       },
@@ -54,6 +55,18 @@
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 2, "name": "Intro \"A\""}
+  ],
+  "measure_marks": [
+    {"measure": 1, "repeat_end": true, "ending": 1, "raw": 129},
+    {"measure": 2, "raw": 0}
+  ],
+  "chords": [
+    {"name": "C \"x\"", "frets": [null, 0, 7], "fingers": [null, 1, 2], "first_fret": -2},
+    {"name": ""}
+  ],
+  "chord_diagrams": [
+    {"measure": 1, "tick": 240, "track": "banjo", "chord": 1, "dx": 3, "dy": -5},
+    {"measure": 2, "tick": 0, "track": "banjo", "chord": 0}
   ],
   "x_source": {
     "url": "http://x",

@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Daybreak In Dixie",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -320,14 +321,31 @@
         "measure": 25,
         "events": [
           {"tick": 0, "notes": [{"s": 5, "f": 0, "dur": 480}]},
-          {"tick": 480, "notes": [{"s": 1, "f": 2, "dur": 240}]},
+          {"tick": 480, "notes": [{"s": 1, "f": 2, "dur": 240, "grace": {"f": 3, "kind": "hp"}}]},
           {"tick": 720, "notes": [{"s": 2, "f": 0, "dur": 240}]},
-          {"tick": 960, "notes": [{"s": 3, "f": 2, "dur": 480}]},
+          {"tick": 960, "notes": [{"s": 3, "f": 2, "dur": 480, "grace": {"f": 3, "kind": "hp"}}]},
           {"tick": 1440, "notes": [{"s": 3, "f": 0, "dur": 480}]}
         ]
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 0, "text": "G"},
+    {"measure": 2, "tick": 1440, "text": "F"},
+    {"measure": 3, "tick": 1440, "text": "C"},
+    {"measure": 5, "tick": 1440, "text": "D"},
+    {"measure": 7, "tick": 1440, "text": "G"},
+    {"measure": 9, "tick": 1440, "text": "D"},
+    {"measure": 11, "tick": 1440, "text": "G"},
+    {"measure": 13, "tick": 1440, "text": "D"},
+    {"measure": 15, "tick": 1440, "text": "G"},
+    {"measure": 17, "tick": 1440, "text": "D"},
+    {"measure": 19, "tick": 1440, "text": "G"},
+    {"measure": 21, "tick": 1440, "text": "C"},
+    {"measure": 22, "tick": 1440, "text": "D"},
+    {"measure": 23, "tick": 1440, "text": "G"},
+    {"measure": 25, "tick": 0, "text": "Ending Lick"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 8},
     {"from_measure": 1, "to_measure": 25}

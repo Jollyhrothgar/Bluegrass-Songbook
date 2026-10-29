@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Wheel Hoss",
     "time_signature": "4/4",
@@ -17,7 +17,8 @@
       "instrument": "6-string-guitar",
       "tuning": ["D4", "B3", "G3", "D3", "B2", "G2"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -122,7 +123,7 @@
       {
         "measure": 9,
         "events": [
-          {"tick": 0, "notes": [{"s": 1, "f": 5, "dur": 960}]},
+          {"tick": 0, "notes": [{"s": 1, "f": 5, "dur": 960, "grace": {"f": 2, "kind": "slide"}}]},
           {"tick": 960, "notes": [{"s": 1, "f": 5, "dur": 720}]},
           {"tick": 1680, "notes": [{"s": 1, "f": 7, "dur": 240, "tech": "/"}]}
         ]
@@ -143,14 +144,14 @@
       {
         "measure": 11,
         "events": [
-          {"tick": 0, "notes": [{"s": 1, "f": 5, "dur": 960}]},
+          {"tick": 0, "notes": [{"s": 1, "f": 5, "dur": 960, "grace": {"f": 2, "kind": "slide"}}]},
           {"tick": 960, "notes": [{"s": 1, "f": 5, "dur": 960}]}
         ]
       },
       {
         "measure": 12,
         "events": [
-          {"tick": 0, "notes": [{"s": 1, "f": 8, "dur": 480}]},
+          {"tick": 0, "notes": [{"s": 1, "f": 8, "dur": 480, "grace": {"f": 7, "kind": "slide"}}]},
           {"tick": 480, "notes": [{"s": 1, "f": 7, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 2, "f": 8, "dur": 720}]},
           {"tick": 1440, "notes": [{"s": 1, "f": 8, "dur": 480}]}

@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Sally Goodin (Tommy Jackson)",
     "time_signature": "2/4",
@@ -15,7 +15,8 @@
       "instrument": "mandolin",
       "tuning": ["E5", "A4", "D4", "G3"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -82,7 +83,7 @@
       {
         "measure": 6,
         "events": [
-          {"tick": 0, "notes": [{"s": 2, "f": 4, "dur": 120}, {"s": 3, "f": 7, "dur": 240, "tech": "b"}]},
+          {"tick": 0, "notes": [{"s": 2, "f": 4, "dur": 120}, {"s": 3, "f": 7, "dur": 240}]},
           {"tick": 120, "notes": [{"s": 2, "f": 0, "dur": 120}]},
           {"tick": 240, "notes": [{"s": 2, "f": 2, "dur": 120}]},
           {"tick": 360, "notes": [{"s": 2, "f": 4, "dur": 120}]},

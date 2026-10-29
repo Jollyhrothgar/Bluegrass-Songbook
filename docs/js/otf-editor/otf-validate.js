@@ -11,17 +11,63 @@
 // Messages tagged [schema] are shape errors; the cross-field rules carry
 // their id in brackets, the same ids as the Python module:
 //   string_count notation_keys track_ids measure_order tick_order tick_range
-//   duplicate_string
+//   duplicate_string chord_index chord_track chord_tick chord_fingers mark_order
+//   mark_raw
 // plus the warning-only reading_list_overrun (#263).
 //
 // Cross-field rules run only on a document whose shape is sound.
 
-/** The version every writer stamps (schema 1.1 added metadata.tab_by). */
-export const OTF_VERSION = '1.1';
+/**
+ * The version every writer stamps (1.1 added metadata.tab_by; 1.2 added
+ * dynamics, the bend effect, measure_marks, chords and chord_diagrams).
+ */
+export const OTF_VERSION = '1.2';
+
+/** Dynamic levels, loudest first (TablEdit codes 0-6); the schema's enum. */
+export const DYN_LEVELS = ['fff', 'ff', 'f', 'mf', 'mp', 'p', 'pp'];
+
+export const OTF_JUMPS = ['da-signo', 'signo', 'al-coda', 'coda'];
+const JUMP_BITS = { 0x10: 'da-signo', 0x18: 'signo', 0x20: 'al-coda', 0x28: 'coda' };
+
+/**
+ * The measure_marks fields TablEdit's flag byte `raw` stands for. Only the
+ * fields that are present: repeat_start (0x40), repeat_end (0x80), ending
+ * (raw & 7 when 1-6; 0 and 7 give none), end_bar ((raw & 0x38) == 0x08) and
+ * jump (raw & 0x38 in 0x10 da-signo, 0x18 signo, 0x20 al-coda, 0x28 coda).
+ * The `mark_raw` rule requires an entry's fields to equal this; importers
+ * build entries as `{ measure, ...decodeMarkRaw(raw), raw }`.
+ */
+export function decodeMarkRaw(raw) {
+    const out = {};
+    if (raw & 0x40) out.repeat_start = true;
+    if (raw & 0x80) out.repeat_end = true;
+    if ((raw & 7) >= 1 && (raw & 7) <= 6) out.ending = raw & 7;
+    if ((raw & 0x38) === 0x08) out.end_bar = true;
+    if ((raw & 0x38) in JUMP_BITS) out.jump = JUMP_BITS[raw & 0x38];
+    return out;
+}
+
+const minorOf = v => {
+    const m = typeof v === 'string' ? /^1\.([0-9]+)$/.exec(v) : null;
+    return m ? Number(m[1]) : null;
+};
+
+/**
+ * Raise doc.otf_version to `minimum` ("1.2") if it is lower. Call it whenever
+ * a field newer than the document's version is set. Returns true when it
+ * changed the version; a version that is not "1.x" is left for the validator.
+ */
+export function ensureVersionAtLeast(doc, minimum) {
+    const have = minorOf(doc.otf_version);
+    const want = minorOf(minimum);
+    if (have === null || want === null || have >= want) return false;
+    doc.otf_version = minimum;
+    return true;
+}
 
 export const OTF_TECHS = ['h', 'p', '/', '\\', 'x', 'b'];
 export const OTF_FX = ['brush', 'roll', 'choke', 'ghost', 'staccato', 'let-ring', 'muted',
-    'harmonic', 'artificial-harmonic', 'tap', 'vibrato', 'tremolo', 'bend-release', 'slap'];
+    'harmonic', 'artificial-harmonic', 'tap', 'vibrato', 'tremolo', 'bend', 'bend-release', 'slap'];
 export const OTF_GRACE_KINDS = ['hp', 'slide', 'bend', 'mordent', 'double', 'gruppetto', 'trill'];
 export const OTF_FINGERS = ['T', 'I', 'M', 'R', 'P'];
 export const OTF_LH = [0, 1, 2, 3, 4];
@@ -43,7 +89,7 @@ function closed(obj, allowed, path, errors) {
 
 function checkNote(n, path, errors) {
     if (!isObj(n)) { errors.push(`[schema] ${path}: not an object`); return; }
-    closed(n, ['s', 'f', 'dur', 'tie', 'tech', 'fx', 'grace', 'finger', 'lh'], path, errors);
+    closed(n, ['s', 'f', 'dur', 'tie', 'tech', 'fx', 'grace', 'finger', 'lh', 'dyn'], path, errors);
     if (!isInt(n.s, 1)) errors.push(`[schema] ${path}/s: must be an integer >= 1`);
     if (!isInt(n.f, 0, 24)) errors.push(`[schema] ${path}/f: must be an integer 0-24`);
     if ('dur' in n && !isInt(n.dur, 1)) errors.push(`[schema] ${path}/dur: must be an integer >= 1`);
@@ -68,6 +114,7 @@ function checkNote(n, path, errors) {
     if ('lh' in n && !(typeof n.lh === 'number' && OTF_LH.includes(n.lh))) {
         errors.push(`[schema] ${path}/lh: must be 0-4`);
     }
+    if ('dyn' in n && !DYN_LEVELS.includes(n.dyn)) errors.push(`[schema] ${path}/dyn: unknown dynamic`);
 }
 
 function checkMeasure(m, path, errors) {
@@ -88,7 +135,7 @@ function checkMeasure(m, path, errors) {
 function checkTrack(t, i, errors) {
     const path = `tracks/${i}`;
     if (!isObj(t)) { errors.push(`[schema] ${path}: not an object`); return; }
-    closed(t, ['id', 'instrument', 'tuning', 'capo', 'role', 'percussion', 'lines'], path, errors);
+    closed(t, ['id', 'instrument', 'tuning', 'capo', 'role', 'dyn', 'percussion', 'lines'], path, errors);
     if (typeof t.id !== 'string' || !t.id) errors.push('Track missing id');
     if (typeof t.instrument !== 'string') errors.push(`[schema] ${path}/instrument: must be a string`);
     const perc = 'percussion' in t;
@@ -99,6 +146,7 @@ function checkTrack(t, i, errors) {
     }
     if ('capo' in t && !isInt(t.capo, 0)) errors.push(`[schema] ${path}/capo: must be an integer >= 0`);
     if ('role' in t && !OTF_ROLES.includes(t.role)) errors.push(`[schema] ${path}/role: unknown role`);
+    if ('dyn' in t && !DYN_LEVELS.includes(t.dyn)) errors.push(`[schema] ${path}/dyn: unknown dynamic`);
     if (perc && t.percussion !== true) errors.push(`[schema] ${path}/percussion: must be true`);
     if ('lines' in t && !isInt(t.lines, 1)) errors.push(`[schema] ${path}/lines: must be an integer >= 1`);
     if (perc !== ('lines' in t)) errors.push(`[schema] ${path}: percussion and lines go together`);
@@ -134,12 +182,69 @@ function checkTabBy(t, errors) {
     }
 }
 
+/** measure_marks (added in 1.2). */
+function checkMeasureMarks(marks, errors) {
+    if (!Array.isArray(marks)) { errors.push('[schema] measure_marks: must be an array'); return; }
+    marks.forEach((m, i) => {
+        const p = `measure_marks/${i}`;
+        if (!isObj(m)) { errors.push(`[schema] ${p}: not an object`); return; }
+        closed(m, ['measure', 'repeat_start', 'repeat_end', 'ending', 'jump', 'end_bar', 'raw'], p, errors);
+        if (!isInt(m.measure, 1)) errors.push(`[schema] ${p}/measure: must be an integer >= 1`);
+        for (const k of ['repeat_start', 'repeat_end', 'end_bar']) {
+            if (k in m && m[k] !== true) errors.push(`[schema] ${p}/${k}: must be true`);
+        }
+        if ('ending' in m && !isInt(m.ending, 1, 6)) errors.push(`[schema] ${p}/ending: must be an integer 1-6`);
+        if ('jump' in m && !OTF_JUMPS.includes(m.jump)) errors.push(`[schema] ${p}/jump: unknown jump`);
+        if (!isInt(m.raw, 0, 255)) errors.push(`[schema] ${p}/raw: must be an integer 0-255`);
+    });
+}
+
+const arrayOf = (v, ok) => Array.isArray(v) && v.every(x => x === null || ok(x));
+
+/** chords (added in 1.2): the chord-diagram table. */
+function checkChords(chords, errors) {
+    if (!Array.isArray(chords)) { errors.push('[schema] chords: must be an array'); return; }
+    chords.forEach((c, i) => {
+        const p = `chords/${i}`;
+        if (!isObj(c)) { errors.push(`[schema] ${p}: not an object`); return; }
+        closed(c, ['name', 'frets', 'fingers', 'first_fret'], p, errors);
+        if (typeof c.name !== 'string') errors.push(`[schema] ${p}/name: must be a string`);
+        if ('frets' in c && !arrayOf(c.frets, x => isInt(x, 0, 31))) {
+            errors.push(`[schema] ${p}/frets: must be an array of integers 0-31 or null`);
+        }
+        if ('fingers' in c && !arrayOf(c.fingers, x => isInt(x, 1, 4))) {
+            errors.push(`[schema] ${p}/fingers: must be an array of integers 1-4 or null`);
+        }
+        if ('first_fret' in c && !isInt(c.first_fret, -128, 127)) {
+            errors.push(`[schema] ${p}/first_fret: must be an integer -128..127`);
+        }
+    });
+}
+
+/** chord_diagrams (added in 1.2): where the diagrams are drawn. */
+function checkChordDiagrams(diagrams, errors) {
+    if (!Array.isArray(diagrams)) { errors.push('[schema] chord_diagrams: must be an array'); return; }
+    diagrams.forEach((d, i) => {
+        const p = `chord_diagrams/${i}`;
+        if (!isObj(d)) { errors.push(`[schema] ${p}: not an object`); return; }
+        closed(d, ['measure', 'tick', 'track', 'chord', 'dx', 'dy'], p, errors);
+        if (!isInt(d.measure, 1)) errors.push(`[schema] ${p}/measure: must be an integer >= 1`);
+        if (!isInt(d.tick, 0)) errors.push(`[schema] ${p}/tick: must be an integer >= 0`);
+        if (typeof d.track !== 'string' || !d.track) errors.push(`[schema] ${p}/track: must be a non-empty string`);
+        if (!isInt(d.chord, 0)) errors.push(`[schema] ${p}/chord: must be an integer >= 0`);
+        for (const k of ['dx', 'dy']) {
+            if (k in d && !isInt(d[k], -128, 127)) errors.push(`[schema] ${p}/${k}: must be an integer -128..127`);
+        }
+    });
+}
+
 /** The shape rules: everything the JSON Schema says. */
 function shapeErrors(otf) {
     const errors = [];
     if (!isObj(otf)) return ['[schema] (document): not an object'];
     closed(otf, ['otf_version', 'metadata', 'timing', 'tracks', 'notation',
-        'annotations', 'reading_list', 'x_source'], '(document)', errors);
+        'annotations', 'reading_list', 'measure_marks', 'chords', 'chord_diagrams', 'x_source'],
+        '(document)', errors);
 
     if (typeof otf.otf_version !== 'string' || !VERSION.test(otf.otf_version)) {
         errors.push(`Unknown OTF version: ${otf.otf_version}`);
@@ -217,6 +322,10 @@ function shapeErrors(otf) {
         });
     }
 
+    if ('measure_marks' in otf) checkMeasureMarks(otf.measure_marks, errors);
+    if ('chords' in otf) checkChords(otf.chords, errors);
+    if ('chord_diagrams' in otf) checkChordDiagrams(otf.chord_diagrams, errors);
+
     if ('x_source' in otf && !isObj(otf.x_source)) errors.push('[schema] x_source: not an object');
     return errors;
 }
@@ -229,6 +338,49 @@ export function measureLength(otf, measure) {
     }
     const [beats, unit] = sig.split('/').map(Number);
     return Math.floor(otf.timing.ticks_per_beat * 4 * beats / unit);
+}
+
+const MARK_FIELDS = ['repeat_start', 'repeat_end', 'ending', 'jump', 'end_bar'];
+
+function chordRules(otf, ids, errors) {
+    const chords = otf.chords || [];
+    chords.forEach((c, i) => {
+        if ('fingers' in c && !('frets' in c)) {
+            errors.push(`[chord_fingers] chords/${i}: fingers needs frets`);
+        } else if ('fingers' in c && c.fingers.length !== c.frets.length) {
+            errors.push(`[chord_fingers] chords/${i}: ${c.fingers.length} fingers for ${c.frets.length} frets`);
+        }
+    });
+    (otf.chord_diagrams || []).forEach((d, i) => {
+        if (d.chord >= chords.length) {
+            errors.push(`[chord_index] chord_diagrams/${i}: chord ${d.chord} but there are ${chords.length} chords`);
+        }
+        if (!ids.includes(d.track)) {
+            errors.push(`[chord_track] chord_diagrams/${i}: no track ${JSON.stringify(d.track)}`);
+        }
+        const length = measureLength(otf, d.measure);
+        if (d.tick >= length) {
+            errors.push(`[chord_tick] chord_diagrams/${i} m${d.measure}: tick ${d.tick} `
+                + `is outside the ${length}-tick measure`);
+        }
+    });
+}
+
+function markRules(otf, errors) {
+    let previous = 0;
+    (otf.measure_marks || []).forEach((m, i) => {
+        if (m.measure <= previous) {
+            errors.push(`[mark_order] measure_marks/${i}: measure ${m.measure} follows measure ${previous}`);
+        }
+        previous = Math.max(previous, m.measure);
+        const decoded = decodeMarkRaw(m.raw);
+        for (const field of MARK_FIELDS) {
+            if (m[field] !== decoded[field]) {
+                errors.push(`[mark_raw] measure_marks/${i} m${m.measure}: ${field} is ${JSON.stringify(m[field])} `
+                    + `but raw ${m.raw} says ${JSON.stringify(decoded[field])}`);
+            }
+        }
+    });
 }
 
 /** The cross-field rules, for a document whose shape is sound. */
@@ -283,6 +435,9 @@ function crossField(otf) {
             }
         }
     }
+
+    chordRules(otf, ids, errors);
+    markRules(otf, errors);
 
     for (const r of otf.reading_list || []) {
         if (r.to_measure > written || r.from_measure > written) {

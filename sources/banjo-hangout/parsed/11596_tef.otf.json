@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Billy In The Lowground",
     "time_signature": "2/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["E4", "C#4", "A3", "E3", "A4"],
       "capo": 2,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     },
     {
       "id": "guitar",
@@ -146,7 +147,7 @@
       {
         "measure": 9,
         "events": [
-          {"tick": 0, "notes": [{"s": 3, "f": 3, "dur": 120}]},
+          {"tick": 0, "notes": [{"s": 3, "f": 3, "dur": 120, "grace": {"f": 2, "kind": "hp"}}]},
           {"tick": 120, "notes": [{"s": 2, "f": 0, "dur": 120}]},
           {"tick": 240, "notes": [{"s": 1, "f": 0, "dur": 120}]},
           {"tick": 360, "notes": [{"s": 5, "f": 0, "dur": 120}]},
@@ -196,7 +197,7 @@
       {
         "measure": 13,
         "events": [
-          {"tick": 0, "notes": [{"s": 3, "f": 3, "dur": 120}]},
+          {"tick": 0, "notes": [{"s": 3, "f": 3, "dur": 120, "grace": {"f": 2, "kind": "hp"}}]},
           {"tick": 120, "notes": [{"s": 2, "f": 0, "dur": 120}]},
           {"tick": 240, "notes": [{"s": 1, "f": 0, "dur": 120}]},
           {"tick": 360, "notes": [{"s": 5, "f": 0, "dur": 120}]},
@@ -245,6 +246,21 @@
       }
     ]
   },
+  "annotations": [
+    {"measure": 1, "tick": 0, "text": "Key: G / G-Tuning"},
+    {"measure": 1, "tick": 0, "text": "G"},
+    {"measure": 3, "tick": 0, "text": "Em"},
+    {"measure": 5, "tick": 0, "text": "G"},
+    {"measure": 7, "tick": 0, "text": "Em"},
+    {"measure": 8, "tick": 480, "text": "G"},
+    {"measure": 8, "tick": 0, "text": "D"},
+    {"measure": 9, "tick": 0, "text": "G"},
+    {"measure": 11, "tick": 0, "text": "C"},
+    {"measure": 13, "tick": 0, "text": "G"},
+    {"measure": 15, "tick": 0, "text": "Em"},
+    {"measure": 16, "tick": 480, "text": "G"},
+    {"measure": 16, "tick": 0, "text": "D"}
+  ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 8},
     {"from_measure": 1, "to_measure": 16},

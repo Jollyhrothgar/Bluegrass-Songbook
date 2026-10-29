@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Big Sciota",
     "time_signature": "4/4",
@@ -18,7 +18,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -38,7 +39,7 @@
           {"tick": 720, "notes": [{"s": 3, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 3, "f": 2, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "h"}]},
-          {"tick": 1440, "notes": [{"s": 3, "f": 2, "dur": 240, "tech": "b"}, {"s": 4, "f": 2, "dur": 240}]},
+          {"tick": 1440, "notes": [{"s": 3, "f": 2, "dur": 240}, {"s": 4, "f": 2, "dur": 240}]},
           {"tick": 1680, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "p"}]}
         ]
       },
@@ -62,7 +63,7 @@
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 3, "f": 2, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "p"}]},
-          {"tick": 1440, "notes": [{"s": 3, "f": 2, "dur": 240, "tech": "b"}, {"s": 4, "f": 2, "dur": 240}]},
+          {"tick": 1440, "notes": [{"s": 3, "f": 2, "dur": 240}, {"s": 4, "f": 2, "dur": 240}]},
           {"tick": 1680, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "p"}]}
         ]
       },
@@ -107,7 +108,7 @@
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 3, "f": 2, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "p"}]},
-          {"tick": 1440, "notes": [{"s": 3, "f": 2, "dur": 240, "tech": "b"}, {"s": 4, "f": 2, "dur": 240}]},
+          {"tick": 1440, "notes": [{"s": 3, "f": 2, "dur": 240}, {"s": 4, "f": 2, "dur": 240}]},
           {"tick": 1680, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "p"}]}
         ]
       },
@@ -148,7 +149,7 @@
       {
         "measure": 12,
         "events": [
-          {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 240, "tech": "b"}, {"s": 2, "f": 5, "dur": 240}]},
+          {"tick": 0, "notes": [{"s": 1, "f": 0, "dur": 240}, {"s": 2, "f": 5, "dur": 240}]},
           {"tick": 240, "notes": [{"s": 1, "f": 7, "dur": 240, "tech": "h"}]},
           {"tick": 480, "notes": [{"s": 1, "f": 7, "dur": 240, "tie": true}]},
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
@@ -236,7 +237,7 @@
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 3, "f": 2, "dur": 240}]},
           {"tick": 1200, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "p"}]},
-          {"tick": 1440, "notes": [{"s": 3, "f": 2, "dur": 240, "tech": "b"}, {"s": 4, "f": 2, "dur": 240}]},
+          {"tick": 1440, "notes": [{"s": 3, "f": 2, "dur": 240}, {"s": 4, "f": 2, "dur": 240}]},
           {"tick": 1680, "notes": [{"s": 3, "f": 0, "dur": 240, "tech": "p"}]}
         ]
       },

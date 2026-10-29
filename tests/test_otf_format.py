@@ -98,3 +98,25 @@ def test_tef_parser_writes_the_same_bytes():
     text = doc.to_json()
     assert text.endswith('\n') and not text.endswith('\n\n')
     assert text == serialize(doc.to_dict())
+
+
+def test_new_1_2_contexts_follow_the_schema():
+    top = SCHEMA['properties']
+    assert otf_format.KEY_ORDER['mark'] == list(top['measure_marks']['items']['properties'])
+    assert otf_format.KEY_ORDER['chord'] == list(top['chords']['items']['properties'])
+    assert otf_format.KEY_ORDER['diagram'] == list(top['chord_diagrams']['items']['properties'])
+    assert otf_format.KEY_ORDER['track'] == list(top['tracks']['items']['properties'])
+    assert otf_format.KEY_ORDER['doc'][-4:] == [
+        'measure_marks', 'chords', 'chord_diagrams', 'x_source']
+
+
+def test_marks_chords_and_diagrams_are_one_line_each():
+    doc = {'measure_marks': [{'raw': 64, 'measure': 1, 'repeat_start': True}],
+           'chords': [{'frets': [None, 0], 'name': 'C'}],
+           'chord_diagrams': [{'chord': 0, 'track': 't', 'tick': 0, 'measure': 1}]}
+    assert serialize(doc) == (
+        '{\n  "measure_marks": [\n'
+        '    {"measure": 1, "repeat_start": true, "raw": 64}\n  ],\n'
+        '  "chords": [\n    {"name": "C", "frets": [null, 0]}\n  ],\n'
+        '  "chord_diagrams": [\n'
+        '    {"measure": 1, "tick": 0, "track": "t", "chord": 0}\n  ]\n}\n')

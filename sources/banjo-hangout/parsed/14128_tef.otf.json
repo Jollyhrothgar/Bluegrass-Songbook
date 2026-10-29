@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Cripple Creek",
     "time_signature": "4/4",
@@ -15,14 +15,16 @@
       "instrument": "5-string-banjo",
       "tuning": ["C4", "A3", "F3", "C3", "F4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     },
     {
       "id": "banjo-2",
       "instrument": "5-string-banjo",
       "tuning": ["C4", "A3", "F3", "C3", "F4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "fff"
     }
   ],
   "notation": {

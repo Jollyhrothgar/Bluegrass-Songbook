@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Turkey in the Straw",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -273,12 +274,21 @@
     {"from_measure": 11, "to_measure": 17},
     {"from_measure": 19, "to_measure": 19}
   ],
+  "chords": [
+    {"name": "", "frets": [12, 12, null, null, 14], "first_fret": 12}
+  ],
+  "chord_diagrams": [
+    {"measure": 8, "tick": 480, "track": "banjo", "chord": 0}
+  ],
   "x_source": {
     "type": "banjo-hangout",
     "source_id": "28501",
     "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/t/tab-turkey-in-the-s-28501-5319919102025.tef",
     "download_file": "28501_tef_turkey_in_the_straw.tef",
     "author": "trinaemig",
-    "converted_at": "2026-10-17T22:44:19.977761"
+    "converted_at": "2026-10-17T22:44:19.977761",
+    "skipped": {
+      "special_characters": 2
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Sailor's Hornpipe",
     "time_signature": "4/4",
@@ -14,7 +14,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -87,7 +88,7 @@
       {
         "measure": 7,
         "events": [
-          {"tick": 0, "notes": [{"s": 1, "f": 2, "dur": 1120}]},
+          {"tick": 0, "notes": [{"s": 1, "f": 2, "dur": 30}]},
           {"tick": 240, "notes": [{"s": 1, "f": 0, "dur": 240}]},
           {"tick": 480, "notes": [{"s": 2, "f": 1, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 2, "f": 0, "dur": 240}]},
@@ -116,9 +117,9 @@
           {"tick": 0, "notes": [{"s": 2, "f": 0, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 3, "f": 0, "dur": 480}]},
           {"tick": 960, "notes": [{"s": 3, "f": 0, "dur": 480}]},
-          {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 1120}]},
+          {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 30}]},
           {"tick": 1600, "notes": [{"s": 1, "f": 2, "dur": 160}]},
-          {"tick": 1755, "notes": [{"s": 1, "f": 4, "dur": 1680}]}
+          {"tick": 1740, "notes": [{"s": 1, "f": 4, "dur": 1680}]}
         ]
       },
       {
@@ -161,7 +162,7 @@
           {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 480}]},
           {"tick": 960, "notes": [{"s": 1, "f": 0, "dur": 480}]},
           {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 160}]},
-          {"tick": 1597, "notes": [{"s": 1, "f": 2, "dur": 1680}]},
+          {"tick": 1590, "notes": [{"s": 1, "f": 2, "dur": 1680}]},
           {"tick": 1760, "notes": [{"s": 1, "f": 4, "dur": 160}]}
         ]
       },
@@ -262,7 +263,7 @@
           {"tick": 480, "notes": [{"s": 3, "f": 6, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 480}]},
           {"tick": 1280, "notes": [{"s": 1, "f": 0, "dur": 160}]},
-          {"tick": 1357, "notes": [{"s": 1, "f": 2, "dur": 1680}]},
+          {"tick": 1350, "notes": [{"s": 1, "f": 2, "dur": 1680}]},
           {"tick": 1440, "notes": [{"s": 1, "f": 4, "dur": 160}]},
           {"tick": 1680, "notes": [{"s": 5, "f": 0, "dur": 240}]}
         ]
@@ -363,7 +364,7 @@
           {"tick": 480, "notes": [{"s": 3, "f": 6, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 1, "f": 0, "dur": 480}]},
           {"tick": 1280, "notes": [{"s": 1, "f": 0, "dur": 160}]},
-          {"tick": 1357, "notes": [{"s": 1, "f": 2, "dur": 1680}]},
+          {"tick": 1350, "notes": [{"s": 1, "f": 2, "dur": 1680}]},
           {"tick": 1440, "notes": [{"s": 1, "f": 4, "dur": 160}]},
           {"tick": 1680, "notes": [{"s": 5, "f": 0, "dur": 240}]}
         ]

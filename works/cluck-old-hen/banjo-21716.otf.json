@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Cluck Old Hen",
     "time_signature": "4/4",
@@ -14,7 +14,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "C4", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {

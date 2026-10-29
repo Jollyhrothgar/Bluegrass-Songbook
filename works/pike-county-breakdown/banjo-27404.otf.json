@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Pike County Breakdown",
     "time_signature": "2/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["D4", "B3", "G3", "D3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -445,6 +446,42 @@
     {"from_measure": 1, "to_measure": 16},
     {"from_measure": 1, "to_measure": 16},
     {"from_measure": 17, "to_measure": 32}
+  ],
+  "measure_marks": [
+    {"measure": 1, "repeat_start": true, "raw": 64},
+    {"measure": 16, "repeat_end": true, "raw": 128}
+  ],
+  "chords": [
+    {"name": "G"},
+    {"name": "F"},
+    {"name": "C"},
+    {"name": "D"}
+  ],
+  "chord_diagrams": [
+    {"measure": 1, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 3, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 4, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 5, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 7, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 8, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 9, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 11, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 12, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 13, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 15, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 16, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 17, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 19, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 20, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 21, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 23, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 24, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 25, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 27, "tick": 0, "track": "banjo", "chord": 1},
+    {"measure": 28, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 29, "tick": 0, "track": "banjo", "chord": 0},
+    {"measure": 31, "tick": 0, "track": "banjo", "chord": 3},
+    {"measure": 32, "tick": 0, "track": "banjo", "chord": 0}
   ],
   "x_source": {
     "type": "banjo-hangout",

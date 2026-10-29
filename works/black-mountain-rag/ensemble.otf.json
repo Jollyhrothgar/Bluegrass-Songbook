@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Black Mountain Rag (X3)",
     "time_signature": "4/4",
@@ -19,28 +19,32 @@
       "instrument": "6-string-guitar",
       "tuning": ["E5", "A4", "D4", "G3"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     },
     {
       "id": "guitar-2",
       "instrument": "5-string-banjo",
       "tuning": ["E4", "C#4", "A3", "E3", "A4"],
       "capo": 2,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     },
     {
       "id": "guitar-3",
       "instrument": "6-string-guitar",
       "tuning": ["F#4", "C#4", "A3", "E3", "B2", "F#2"],
       "capo": 2,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     },
     {
       "id": "bass",
       "instrument": "upright-bass",
       "tuning": ["G2", "D2", "A1", "E1"],
       "capo": 0,
-      "role": "rhythm"
+      "role": "rhythm",
+      "dyn": "f"
     },
     {
       "id": "percussion",
@@ -48,6 +52,7 @@
       "tuning": [],
       "capo": 0,
       "role": "percussion",
+      "dyn": "f",
       "percussion": true,
       "lines": 8
     }
@@ -6897,6 +6902,20 @@
     {"measure": 134, "tick": 960, "text": "(END)..."},
     {"measure": 134, "tick": 1080, "text": "(END)..."},
     {"measure": 134, "tick": 960, "text": "(END)..."}
+  ],
+  "measure_marks": [
+    {"measure": 10, "raw": 7},
+    {"measure": 18, "raw": 7},
+    {"measure": 38, "raw": 7},
+    {"measure": 42, "raw": 7},
+    {"measure": 50, "raw": 7},
+    {"measure": 75, "raw": 7},
+    {"measure": 83, "raw": 7},
+    {"measure": 99, "raw": 7},
+    {"measure": 107, "raw": 7},
+    {"measure": 115, "raw": 7},
+    {"measure": 131, "raw": 7},
+    {"measure": 135, "end_bar": true, "raw": 8}
   ],
   "x_source": {
     "type": "mandolin-hangout",

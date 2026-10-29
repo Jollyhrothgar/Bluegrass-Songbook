@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.0",
+  "otf_version": "1.2",
   "metadata": {
     "title": "Billy in the Lowground",
     "time_signature": "4/4",
@@ -15,7 +15,8 @@
       "instrument": "5-string-banjo",
       "tuning": ["E4", "C4", "G3", "C3", "G4"],
       "capo": 0,
-      "role": "lead"
+      "role": "lead",
+      "dyn": "f"
     }
   ],
   "notation": {
@@ -103,7 +104,7 @@
           {"tick": 240, "notes": [{"s": 4, "f": 4, "dur": 240}]},
           {"tick": 480, "notes": [{"s": 4, "f": 2, "dur": 480}]},
           {"tick": 960, "notes": [{"s": 4, "f": 0, "dur": 480}]},
-          {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 240}, {"s": 2, "f": 0, "dur": 240}, {"s": 3, "f": 0, "dur": 240}, {"s": 4, "f": 0, "dur": 240}]},
+          {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 240, "fx": ["brush"]}, {"s": 2, "f": 0, "dur": 240, "fx": ["brush"]}, {"s": 3, "f": 0, "dur": 240, "fx": ["brush"]}, {"s": 4, "f": 0, "dur": 240, "fx": ["brush"]}]},
           {"tick": 1680, "notes": [{"s": 5, "f": 0, "dur": 240}]}
         ]
       },
@@ -199,7 +200,7 @@
           {"tick": 480, "notes": [{"s": 4, "f": 2, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 4, "f": 0, "dur": 480}]},
-          {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 240}, {"s": 2, "f": 0, "dur": 240}, {"s": 3, "f": 0, "dur": 240}, {"s": 4, "f": 0, "dur": 240}]},
+          {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 240, "fx": ["brush"]}, {"s": 2, "f": 0, "dur": 240, "fx": ["brush"]}, {"s": 3, "f": 0, "dur": 240, "fx": ["brush"]}, {"s": 4, "f": 0, "dur": 240, "fx": ["brush"]}]},
           {"tick": 1680, "notes": [{"s": 5, "f": 0, "dur": 240}]}
         ]
       }
@@ -215,6 +216,9 @@
     "url": "https://www.hangoutstorage.com/banjohangout.org/storage/tabs/b/tab-billy-in-the-lo-22001-4150122272016.tef",
     "author": "JanetB",
     "converted_at": "2026-07-26T22:20:06.002085",
-    "source_id": "22001"
+    "source_id": "22001",
+    "skipped": {
+      "special_characters": 2
+    }
   }
 }
