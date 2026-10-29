@@ -3327,7 +3327,7 @@ async function submitAuthoredTake(doc, part) {
 
     // What was submitted is what the page must show as pending afterwards —
     // `tabAuthoring.otf` otherwise still holds the document as it was when
-    // the editor opened (onApply only fires on Ctrl+S / ✓ Done).
+    // the editor opened (onApply only fires on ✓ Done).
     if (tabAuthoring) tabAuthoring.otf = doc;
 
     return submitNewTab(doc, {
