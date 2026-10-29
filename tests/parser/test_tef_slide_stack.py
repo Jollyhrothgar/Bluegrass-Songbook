@@ -67,7 +67,10 @@ def test_3302_m88_index3_note_stays_on_beat_4():
     exactly as TablEdit's export has it, and nothing is folded."""
     ev = next(e for e in measure(convert("3302_beaumont_rag_triplet_slot3.tef"),
                                  "bryan-sutton", 88)["events"] if e["tick"] == 1440)
-    assert {"s": 5, "f": 4, "tech": "h", "dur": 160} in ev["notes"]
+    # Compare only the fields this test is about: the track is `ff`, so the
+    # note also carries `dyn: "f"` (G15d1).
+    want = {"s": 5, "f": 4, "tech": "h", "dur": 160}
+    assert any(all(n.get(k) == v for k, v in want.items()) for n in ev["notes"])
     assert not any("grace" in n for n in ev["notes"])
 
 

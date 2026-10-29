@@ -49,7 +49,9 @@ describe('slide source folded into a grace', () => {
     it('3302 m88 index-3 hammer-on stays on beat 4, unfolded', () => {
         const ev = measure(convert('3302_beaumont_rag_triplet_slot3.tef'), 'bryan-sutton', 88)
             .events.find(e => e.tick === 1440);
-        expect(ev.notes).toContainEqual({ s: 5, f: 4, tech: 'h', dur: 160 });
+        // Only the fields this test is about: the track is `ff`, so the note
+        // also carries `dyn: 'f'` (G15d1).
+        expect(ev.notes).toContainEqual(expect.objectContaining({ s: 5, f: 4, tech: 'h', dur: 160 }));
         expect(ev.notes.some(n => n.grace)).toBe(false);
     });
 });
