@@ -77,6 +77,7 @@ import { setTopBar, setBottomBand, pill, setChromeAutoHide } from './shell.js';
 import { practiceLinks, buildKeyPill, buildDisplayPill, buildInfoPill, buildExportPill, handleExport } from './song-controls.js';
 import { showToast } from './toast.js';
 import { importFileToOtf, pickTabFile, chooseTabFile } from './pwa.js';
+import { skippedLine } from './tef-skipped.js';
 
 // ============================================
 // WORK STATE
@@ -1135,6 +1136,14 @@ function renderArrangementBar() {
         const line = document.createElement('div');
         line.className = 'arr-status';
         line.textContent = takeStatusLine;
+        // G15e: what the opened .tef held that the book does not keep, inside
+        // the same box so there is still one `.arr-status`.
+        if (tabAuthoring?.skippedLine) {
+            const skipped = document.createElement('div');
+            skipped.className = 'arr-skipped';
+            skipped.textContent = tabAuthoring.skippedLine;
+            line.appendChild(skipped);
+        }
         host.appendChild(line);
     };
 
@@ -3183,7 +3192,11 @@ export function startAddTabMode(target = {}) {
         availableParts.push(part);
     }
 
-    tabAuthoring = { kind: currentWork.provisional ? 'new' : 'add', part, take, target, otf };
+    tabAuthoring = {
+        kind: currentWork.provisional ? 'new' : 'add', part, take, target, otf,
+        // G15e: only for a file just opened; a draft or a new tab has nothing to report.
+        skippedLine: target.fromFile ? skippedLine(otf?.x_source?.skipped) : '',
+    };
     activePart = part;
     // Three things the take header can be honest about, in priority order:
     // this document came out of a FILE you just opened (a `.tef` dropped on

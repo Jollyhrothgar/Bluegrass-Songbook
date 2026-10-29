@@ -70,6 +70,7 @@ def main() -> int:
             print(f"FAIL {pid}: {e}")
             fail += 1
             continue
+        skipped = (otf_dict.get("x_source") or {}).get("skipped")   # G15e
         x_source = None
         if out_path.exists():
             try:
@@ -81,6 +82,9 @@ def main() -> int:
             "source_file": tef_path.name,
             "converted_at": datetime.now().isoformat(),
         }
+        otf_dict["x_source"].pop("skipped", None)
+        if skipped:
+            otf_dict["x_source"]["skipped"] = skipped
         out_path.write_text(_otf_format().serialize(otf_dict), encoding="utf-8")
         ok += 1
     print(f"regenerated {ok}, failed {fail}")

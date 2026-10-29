@@ -64,7 +64,7 @@ free-form provenance. Keys starting with `_` are runtime view caches
 | `measure_marks` | (1.2) `[{measure, repeat_start?, repeat_end?, ending?, jump?, end_bar?, raw}]` repeat signs, see below |
 | `chords` | (1.2) `[{name, frets?, fingers?, first_fret?}]` the chord-diagram table, see below |
 | `chord_diagrams` | (1.2) `[{measure, tick, track, chord, dx?, dy?}]` where diagrams are drawn, see below |
-| `x_source` | free-form provenance (`type`, `source_id`, `author`, `url`, `converted_at`, ...) |
+| `x_source` | free-form provenance (`type`, `source_id`, `author`, `url`, `converted_at`, ...). The `.tef` importers also write `skipped`: `{key: count}` of what the file held that OTF does not keep (tempo changes, free text, ...), only when non-zero. The keys and their labels are in the schema's `x_source` description |
 
 **`metadata.tab_by`** (1.1) is who wrote this tab: `{"name": ..., "url": ...}`, a
 closed object. `name` is required, non-empty, already trimmed, at most 100

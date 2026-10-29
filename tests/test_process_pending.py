@@ -821,6 +821,21 @@ class TestTablatureCreate:
         doc = json.loads((tmp_path / 'works/salt-creek/banjo.otf.json').read_text())
         assert 'x_source' not in doc
 
+    def test_skipped_never_reaches_works(self, tmp_path):
+        """G15e: x_source.skipped is a note to the person who opened the .tef.
+
+        It rides in the submitted document (the editor keeps x_source), and
+        must be gone from the file in works/ along with the rest of x_source.
+        """
+        row_ = tab_row(content=json.dumps(otf_doc(
+            x_source={'skipped': {'tempo_changes': 2, 'lyrics': 1}})))
+
+        apply_row(tmp_path, row_, 'create', 'salt-creek', verbose=False)
+
+        text = (tmp_path / 'works/salt-creek/banjo.otf.json').read_text()
+        assert 'skipped' not in text
+        assert 'x_source' not in json.loads(text)
+
 
 class TestTablatureAdd:
     def test_a_tab_for_a_song_that_has_none(self, tmp_path):

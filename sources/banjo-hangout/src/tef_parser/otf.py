@@ -10,6 +10,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
+from .skipped import SKIPPED_KEYS
 from .reader import (TEFFile, TEFNoteEvent, TEFInstrument, TRIPLET_DURATION_CODES,
                      V3_UNITS_PER_WHOLE, decode_duration_code)
 
@@ -171,6 +172,9 @@ class OTFDocument:
     reading_list: list[OTFReadingListEntry] = field(default_factory=list)
     # Repeat signs (schema 1.2): [{measure, ...decode_mark_raw(raw), raw}]
     measure_marks: list[dict] = field(default_factory=list)
+    # G15e: what the .tef held that OTF does not keep ({key: count}); written
+    # as x_source.skipped, last in the document, only when non-empty.
+    skipped: dict[str, int] = field(default_factory=dict)
 
     def to_dict(self) -> dict[str, Any]:
         """Convert to dictionary for YAML/JSON serialization."""
@@ -260,6 +264,8 @@ class OTFDocument:
 
         if self.measure_marks:
             result["measure_marks"] = [dict(m) for m in self.measure_marks]
+        if self.skipped:
+            result["x_source"] = {"skipped": dict(self.skipped)}
 
         return result
 
@@ -1334,5 +1340,6 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
         raw = tef.measure_flags[index]
         doc.measure_marks.append(
             {"measure": index + 1, **decode_mark_raw(raw), "raw": raw})
+    doc.skipped = {k: tef.skipped[k] for k in SKIPPED_KEYS if tef.skipped.get(k)}
 
     return doc

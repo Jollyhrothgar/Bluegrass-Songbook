@@ -67,6 +67,7 @@ export const LAZY_MODULE_URLS = [
     './js/tef-import/index.js',
     './js/tef-import/otf.js',
     './js/tef-import/reader.js',
+    './js/tef-import/skipped.js',
     './js/title-match.js',
     './js/tour-editor-demo.js',
     './js/tour.js',

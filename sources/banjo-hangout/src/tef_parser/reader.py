@@ -8,6 +8,8 @@ from dataclasses import dataclass, field
 from pathlib import Path
 import struct
 
+from .skipped import count_skipped
+
 
 # TablEdit's own duration table (TablEdit 3.06, 0x1000f38b8), indexed by
 # the 5-bit duration code, in its 960-per-whole units. Codes 0-15 run
@@ -366,6 +368,9 @@ class TEFFile:
     # continuous 64ths; v3_locate() turns one into (measure index, offset).
     v3_measure_starts: list[int] = field(default_factory=list)
     v3_measure_lengths: list[int] = field(default_factory=list)
+    # G15e: what the file holds that OTF does not keep, {key: count} (see
+    # skipped.py). Filled by TEFReader.parse(); other importers may add keys.
+    skipped: dict[str, int] = field(default_factory=dict)
 
     def v3_locate(self, position: int) -> tuple[int, int]:
         """Continuous V3 position -> (0-based measure, 64ths into it)."""
@@ -1845,9 +1850,12 @@ class TEFReader:
 
         # Dispatch based on version
         if header.is_v2:
-            return self._parse_v2(header)
+            tef = self._parse_v2(header)
         else:
-            return self._parse_v3(header)
+            tef = self._parse_v3(header)
+        tef.skipped.update(count_skipped(
+            self.data, header, self.v2_component_stride(header)))
+        return tef
 
     def _filter_chord_diagrams(self, events: list[TEFNoteEvent]) -> list[TEFNoteEvent]:
         """Filter out chord diagram notes that accompany melody notes.
