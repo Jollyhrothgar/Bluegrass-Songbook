@@ -76,8 +76,7 @@ const GRID_BUTTONS = [
  * way to say "the next one is hammered".
  */
 /**
- * TablEdit's note effects (`fx`, a SET on the note — DESIGN.md
- * "interface Note"), one button config per value in the facade's
+ * TablEdit's note effects (`fx`, a SET on the note — docs/schema/otf.md), one button config per value in the facade's
  * FX_ORDER. The label is the action's own, so the menu, the palette and
  * the popover can never name one effect two ways.
  */

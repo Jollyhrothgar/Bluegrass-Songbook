@@ -235,6 +235,8 @@ from pathlib import Path
 from typing import Optional
 
 import dedup_scorer
+import otf_format
+import otf_schema
 import works_writer
 from work_schema import slugify
 
@@ -655,12 +657,37 @@ def content_marker(row_id: str, content: str) -> str:
     return f'pending:{row_id}:{sha}'
 
 
-def already_applied(repo_root, work_id: str, marker: str) -> bool:
+def tab_marker(row_id: str, document: dict) -> str:
+    """The idempotence marker for a tablature row.
+
+    Computed over a layout-independent form of the OTF (compact JSON, sorted
+    keys), NOT over the file text, so changing the file layout (G15b) can
+    never change a marker and re-apply an already-applied row as a second
+    part.
+    """
+    canonical = json.dumps(document, sort_keys=True, ensure_ascii=False,
+                           separators=(',', ':'))
+    return content_marker(row_id, canonical)
+
+
+def legacy_tab_marker(row_id: str, document: dict) -> str:
+    """The marker rows applied BEFORE G15b carry in ``work.yaml``.
+
+    It was a sha of the ``indent=2`` text, which is what those files held.
+    Kept only so :func:`already_applied` still recognises them on a replay.
+    """
+    text = json.dumps(document, indent=2, ensure_ascii=False) + '\n'
+    return content_marker(row_id, text)
+
+
+def already_applied(repo_root, work_id: str, marker: str, *also: str) -> bool:
+    """Does any part of ``work_id`` carry ``marker`` (or one of ``also``)?"""
+    accepted = {marker, *also}
     work = works_writer.load_work(repo_root, work_id)
     if not work:
         return False
     for part in work.get('parts') or []:
-        if (part.get('provenance') or {}).get('source_id') == marker:
+        if (part.get('provenance') or {}).get('source_id') in accepted:
             return True
     return False
 
@@ -962,66 +989,34 @@ def apply_placeholder_row(repo_root, row: dict, mode: str, work_id: str,
 
 
 def validate_otf(otf) -> list:
-    """Sanity checks — returns a list of problems (empty = OK).
+    """Problems with an incoming OTF, as strings (empty = OK).
 
-    Moved here from the retired ``scripts/lib/process_tab.py`` unchanged.
-    It is the ONLY structural validation an incoming OTF gets: the edge
-    function asks no more than "does this parse and have tracks?", because
-    everything below needs to walk the notation, and the editor that
-    produced the document is not a party this pipeline trusts.
+    The format is ``docs/schema/otf.schema.json`` plus the cross-field rules a
+    schema cannot say; both live in :mod:`otf_schema`, which is also what the
+    corpus test and the conformance fixtures run. Warnings (a reading list that
+    overruns, #263) are not problems and are not returned here.
+
+    This is the ONLY structural validation an incoming OTF gets: the edge
+    function asks no more than "does this parse and have tracks?", and the
+    editor that produced the document is not a party this pipeline trusts.
     """
-    problems = []
-    if not isinstance(otf, dict):
-        return ['not an object']
-    tracks = otf.get('tracks')
-    if not isinstance(tracks, list) or not tracks:
-        problems.append('no tracks')
-        return problems
-    notation = otf.get('notation') or {}
-    for t in tracks:
-        tid = t.get('id')
-        if not tid:
-            problems.append('track without id')
-            continue
-        if not isinstance(t.get('tuning'), list) or len(t['tuning']) < 3:
-            problems.append(f'track {tid}: bad tuning')
-        measures = notation.get(tid)
-        if not isinstance(measures, list):
-            problems.append(f'track {tid}: no notation')
-            continue
-        nstrings = len(t.get('tuning') or [])
-        for m in measures:
-            if not isinstance(m.get('measure'), int):
-                problems.append(f'track {tid}: measure without number')
-                break
-            for e in m.get('events', []):
-                if not isinstance(e.get('tick'), int) or e['tick'] < 0:
-                    problems.append(f'track {tid} m{m.get("measure")}: bad tick')
-                    break
-                for n in e.get('notes', []):
-                    s, f = n.get('s'), n.get('f')
-                    if not (isinstance(s, int) and 1 <= s <= nstrings):
-                        problems.append(f'track {tid} m{m.get("measure")}: bad string {s}')
-                        break
-                    if not (isinstance(f, int) and 0 <= f <= 24):
-                        problems.append(f'track {tid} m{m.get("measure")}: bad fret {f}')
-                        break
-    return problems
+    return otf_schema.check(otf)[0]
 
 
 def otf_document(row: dict) -> tuple:
     """Parse, validate and re-serialize a tablature row's ``content``.
 
     Returns ``(document, text)``. The text is what lands in ``works/``:
-    ``indent=2``, matching every OTF already in the corpus, so a correction
-    produces a readable diff against the take it replaces rather than a
-    one-line churn.
+    the canonical layout of :mod:`otf_format` (one note event per line,
+    the same bytes the editor's download writes), so a correction produces a
+    diff of only the events that changed rather than a one-line churn.
 
     Re-serializing also makes the idempotence marker whitespace-insensitive.
-    The marker is a sha of this canonical text, so a client that re-saves a
-    tab it did not actually change is a replay (no-op) rather than a second
-    part — which matters more here than for charts, because an OTF is
-    machine-serialized and its formatting is nobody's intent.
+    The marker (:func:`tab_marker`) is a sha of the document's value, not of
+    this text, so a client that re-saves a tab it did not actually change is
+    a replay (no-op) rather than a second part, and a future change of layout
+    cannot break that — which matters more here than for charts, because an
+    OTF is machine-serialized and its formatting is nobody's intent.
 
     ``x_source`` is dropped on the way through. It records "this OTF is the
     conversion of Hangout TEF *N*", and ``build_works_index`` FAILS THE
@@ -1048,7 +1043,7 @@ def otf_document(row: dict) -> tuple:
             + '; '.join(problems[:5]))
 
     document.pop('x_source', None)
-    return document, json.dumps(document, indent=2, ensure_ascii=False) + '\n'
+    return document, otf_format.serialize(document)
 
 
 def tab_work_slug(work_id: str, title: str) -> str:
@@ -1185,15 +1180,16 @@ def apply_tablature_row(repo_root, row: dict, mode: str, work_id: str,
         raise ProcessPendingError(f"row '{row_id}' has no title")
 
     instrument = tab_instrument(row)
-    _, otf_text = otf_document(row)
-    marker = content_marker(row_id, otf_text)
+    document, otf_text = otf_document(row)
+    marker = tab_marker(row_id, document)
 
     # A tab row's id is `tab:<slug>:<rand>`, never a work slug, so a create
     # has to be told (or work out) what to name the work it mints.
     if mode == 'create':
         work_id = tab_work_slug(work_id, title)
 
-    if already_applied(repo_root, work_id, marker):
+    if already_applied(repo_root, work_id, marker,
+                       legacy_tab_marker(row_id, document)):
         if verbose:
             print(f"Already applied: works/{work_id} carries {marker}")
         return works_writer.WriteResult(

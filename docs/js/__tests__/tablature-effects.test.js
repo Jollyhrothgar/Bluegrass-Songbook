@@ -1,6 +1,6 @@
 // TablEdit per-note effects (note.fx) and grace notes (note.grace) must be
 // DRAWN, so an imported tab shows what TablEdit shows (fix-it A15). The
-// format is fixed in otf-editor/DESIGN.md ("interface Note"); this file pins
+// format is fixed in docs/schema/otf.md; this file pins
 // how the renderer engraves it:
 //
 //   - inline, on the fret itself: ghost "(5)", harmonic "<12>"

@@ -2342,8 +2342,14 @@ export class OTFEditor {
      * @param {Object} otf - OTF document to load
      */
     load(otf) {
-        // Validate
-        const validation = validateOTF(otf);
+        // Validate. Loaded documents may carry runtime view caches
+        // (`_partFile`, `_tsChanges`: work-view.js, tef-import/otf.js), which
+        // are never valid in a FILE, so check a copy without them; the
+        // validator itself stays strict.
+        const forCheck = otf && typeof otf === 'object'
+            ? Object.fromEntries(Object.entries(otf).filter(([k]) => !k.startsWith('_')))
+            : otf;
+        const validation = validateOTF(forCheck);
         if (!validation.valid) {
             console.warn('OTF validation warnings:', validation.errors);
         }
