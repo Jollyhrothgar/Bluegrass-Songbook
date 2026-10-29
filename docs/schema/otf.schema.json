@@ -77,7 +77,7 @@
       }
     },
     "tracks": {
-      "description": "The instruments in the tab. Each has a matching key in notation.",
+      "description": "The instruments in the tab. Each may have a matching key in notation.",
       "type": "array",
       "minItems": 1,
       "items": {
@@ -129,7 +129,7 @@
       }
     },
     "notation": {
-      "description": "The music: one key per track id, each a list of measures.",
+      "description": "The music: {trackId: [measure, ...]}. Every key must name a track; a track may have no key (an empty track).",
       "type": "object",
       "additionalProperties": {
         "type": "array",

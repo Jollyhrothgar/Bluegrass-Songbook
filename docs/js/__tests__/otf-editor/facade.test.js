@@ -1608,3 +1608,15 @@ describe('EditingFacade — automatic duration follows the manual', () => {
         });
     });
 });
+
+describe('EditingFacade - legacy role: backup', () => {
+    it('becomes rhythm when a document is adopted (constructor and load)', () => {
+        const doc = banjoDoc();
+        doc.tracks[0].role = 'backup';
+        expect(new EditingFacade(doc).export().tracks[0].role).toBe('rhythm');
+        const f = new EditingFacade(banjoDoc());
+        f.load(doc);
+        expect(f.export().tracks[0].role).toBe('rhythm');
+        expect(doc.tracks[0].role).toBe('backup'); // the caller's copy is untouched
+    });
+});

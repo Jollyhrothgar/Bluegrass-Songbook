@@ -46,7 +46,7 @@ free-form provenance. Keys starting with `_` are runtime view caches
 | `metadata` | `title`, `time_signature` (`"4/4"`), `tempo` (quarter-note BPM) required; `key`, `composer`, `time_signature_changes` optional |
 | `timing.ticks_per_beat` | ticks in a quarter note; 480 in every file so far |
 | `tracks` | the instruments, see below |
-| `notation` | `{trackId: [measure, ...]}`: exactly one key per track id |
+| `notation` | `{trackId: [measure, ...]}`: every key names a track; a track may have no key (an empty track) |
 | `annotations` | `[{measure, tick, text}]` placed text: section banners, chord names, remarks |
 | `reading_list` | `[{from_measure, to_measure, name?}]` playback order, with repeats unrolled |
 | `x_source` | free-form provenance (`type`, `source_id`, `author`, `url`, `converted_at`, ...) |
@@ -59,7 +59,7 @@ ticks long.
 **Track**: `id` (also the display name, and the key into `notation`),
 `instrument` (free text), `tuning` (open strings, string 1 first, e.g.
 `["D4","B3","G3","D3","G4"]`), optional `capo` (0 = none) and `role`
-(`lead`, `rhythm`, `percussion`; a hint, not an ordering). A percussion track
+(`lead`, `rhythm`, `percussion`; a hint, not an ordering; the editor turns a legacy `backup` into `rhythm` on load). A percussion track
 has `percussion: true` and `lines` (its line count) instead of a tuning
 (`tuning: []`); the two go together, and `lines` is its string count.
 
@@ -95,7 +95,7 @@ Messages carry the rule id in brackets.
 | Rule id | Meaning |
 |---|---|
 | `string_count` | a note's `s` is at most its track's string count (`tuning` length; `lines` for percussion) |
-| `notation_keys` | `notation` has exactly one key per track id |
+| `notation_keys` | every `notation` key names a track id (a track may have no key: an empty track) |
 | `track_ids` | track ids are unique |
 | `measure_order` | measure numbers are unique and ascending per track |
 | `tick_order` | event ticks are unique and ascending within a measure |

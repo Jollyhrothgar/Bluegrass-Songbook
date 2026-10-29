@@ -284,6 +284,11 @@ export class EditingFacade {
      * @returns {Object} the same document
      */
     _adopt(doc) {
+        // A legacy `role: 'backup'` (the new-tab builder wrote it until
+        // 2026-10-28) is not in the schema's role enum: it is `rhythm`.
+        for (const t of doc?.tracks || []) {
+            if (t && t.role === 'backup') t.role = 'rhythm';
+        }
         const notation = doc?.notation;
         if (!notation) return doc;
         for (const measures of Object.values(notation)) {

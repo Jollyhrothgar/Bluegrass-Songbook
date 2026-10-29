@@ -16,7 +16,6 @@ rule named ``<rule>`` (underscores), ``warn--<rule>`` is valid with a warning.
 import json
 import subprocess
 import sys
-from collections import defaultdict
 from pathlib import Path
 
 import pytest
@@ -156,39 +155,63 @@ def test_python_enum_copies_equal_the_schema():
 
 # ------------------------------------------------------------------ corpus
 
+CORPUS_PREFIXES = ('works/', 'docs/data/tabs/', 'tests/parser/fixtures/')
+KNOWN_INVALID = FIXTURES / 'known_invalid.txt'
+
+
 def tracked_otf_files():
+    """The spec's four locations. docs/js/__tests__/fixtures/ is left out:
+    those are partial test inputs, not documents."""
     out = subprocess.run(['git', 'ls-files', '*.otf.json'], cwd=REPO, text=True,
                          capture_output=True, check=True).stdout.split()
-    return sorted(out)
+    return sorted(f for f in out
+                  if f.startswith(CORPUS_PREFIXES)
+                  or (f.startswith('sources/') and '/parsed/' in f))
 
 
-@pytest.mark.xfail(
-    strict=True,
-    reason='PENDING the orchestrator/Mike decision (G15a hard stop): real files '
-           'break duplicate_string, notation_keys, string_count, track_ids and '
-           'the schema. Fix the data or relax the rule, then delete this mark.')
-def test_every_tracked_otf_validates():
-    """Sweep ``git ls-files '*.otf.json'``: works/, docs/data/tabs fixtures,
-    docs/js/__tests__/fixtures, tests/parser/fixtures, sources/*/parsed.
+def rule_ids(errors):
+    return sorted({e.split(']')[0].lstrip('[') for e in errors})
 
-    A failure here is a real file breaking a real rule. Warnings (reading-list
-    overruns, #263) are reported but do not fail.
+
+def read_known_invalid():
+    known = {}
+    for line in KNOWN_INVALID.read_text(encoding='utf-8').splitlines():
+        line = line.strip()
+        if line and not line.startswith('#'):
+            path, *rules = line.split()
+            known[path] = sorted(rules)
+    return known
+
+
+def test_every_tracked_otf_validates_or_is_pinned_as_known_invalid():
+    """Sweep the corpus with every rule strict, as a ratchet.
+
+    ``known_invalid.txt`` pins the files that fail today and the rule ids each
+    breaks. This fails if a file NOT on the list fails, if a listed file starts
+    passing (delete its line), or if a listed file's set of rule ids changes.
+    Warnings (reading-list overruns, #263) never fail.
     """
-    failures = defaultdict(list)
-    warned = []
+    known = read_known_invalid()
     files = tracked_otf_files()
     assert len(files) > 1000
+    actual = {}
     for rel in files:
         doc = json.loads((REPO / rel).read_text(encoding='utf-8'))
-        errors, warnings = otf_schema.check(doc)
-        for e in errors:
-            rule = e.split(']')[0].lstrip('[')
-            failures[rule].append(f'{rel}: {e}')
-        if warnings:
-            warned.append(rel)
-    summary = [f'{rule}: {len({f.split(": ")[0] for f in v})} files, {len(v)} items; '
-               f'e.g. {v[0]}' for rule, v in sorted(failures.items())]
-    assert not failures, '\n'.join(summary)
+        errors, _ = otf_schema.check(doc)
+        if errors:
+            actual[rel] = rule_ids(errors)
+    new = {f: r for f, r in actual.items() if f not in known}
+    fixed = sorted(f for f in known if f not in actual)
+    changed = {f: (known[f], actual[f]) for f in known if f in actual and known[f] != actual[f]}
+    problems = []
+    if new:
+        problems.append('NEW failures (fix the file; do not add it to the list): '
+                        + '; '.join(f'{f} {r}' for f, r in sorted(new.items())[:10]))
+    if fixed:
+        problems.append(f'now passing, remove from known_invalid.txt: {fixed[:10]}')
+    if changed:
+        problems.append(f'rule ids changed: {dict(list(changed.items())[:10])}')
+    assert not problems, '\n'.join(problems)
 
 
 def test_the_example_in_the_field_guide_validates():

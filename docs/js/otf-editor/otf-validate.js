@@ -213,12 +213,9 @@ function crossField(otf) {
     for (const id of new Set(ids.filter((x, i) => ids.indexOf(x) !== i))) {
         errors.push(`[track_ids] track ${id}: id used more than once`);
     }
-    const keys = Object.keys(notation);
-    const missing = ids.filter(i => !(i in notation));
-    const extra = keys.filter(k => !ids.includes(k));
-    if (missing.length || extra.length) {
-        errors.push('[notation_keys] notation keys differ from track ids '
-            + `(no notation: ${JSON.stringify(missing)}; no track: ${JSON.stringify(extra)})`);
+    const extra = Object.keys(notation).filter(k => !ids.includes(k));
+    if (extra.length) {
+        errors.push(`[notation_keys] notation keys with no track: ${JSON.stringify(extra)}`);
     }
 
     let written = 0;

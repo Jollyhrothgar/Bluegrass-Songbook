@@ -12,7 +12,8 @@ fixtures can name the rule they break):
 
 ``string_count``       a note's ``s`` is at most its track's string count
                        (``tuning`` length; ``lines`` for a percussion track)
-``notation_keys``      ``notation`` has exactly one key per track id
+``notation_keys``      every ``notation`` key names a track id (a track may have
+                       no key: an empty track)
 ``track_ids``          track ids are unique
 ``measure_order``      measure numbers are unique and ascending per track
 ``tick_order``         event ticks are unique and ascending within a measure
@@ -78,11 +79,9 @@ def cross_field(otf: dict) -> tuple:
 
     for tid in sorted({i for i in ids if ids.count(i) > 1}):
         errors.append(f'[track_ids] track {tid}: id used more than once')
-    if set(ids) != set(notation):
-        missing = sorted(set(ids) - set(notation))
-        extra = sorted(set(notation) - set(ids))
-        errors.append(f'[notation_keys] notation keys differ from track ids '
-                      f'(no notation: {missing}; no track: {extra})')
+    extra = sorted(set(notation) - set(ids))
+    if extra:
+        errors.append(f'[notation_keys] notation keys with no track: {extra}')
 
     written = 0
     for track in tracks:

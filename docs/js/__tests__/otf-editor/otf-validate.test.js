@@ -150,3 +150,12 @@ describe('enum fences: every copy equals the schema', () => {
         }
     });
 });
+
+describe('new-tab builder', () => {
+    it('writes only schema roles, so a multi-track new tab passes validation', async () => {
+        const { createMultiTrackOTF } = await import('../../otf-editor/actions.js');
+        const otf = createMultiTrackOTF({ instruments: ['5-string-banjo', '6-string-guitar', 'upright-bass'] });
+        expect(otf.tracks.map(t => t.role)).toEqual(['lead', 'rhythm', 'rhythm']);
+        expect(validateOTF(otf).errors).toEqual([]);
+    });
+});

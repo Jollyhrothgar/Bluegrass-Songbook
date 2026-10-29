@@ -27,7 +27,7 @@ describe('createMultiTrackOTF (new-tab flow)', () => {
         });
         expect(otf.tracks.map(t => t.id)).toEqual(['banjo', 'guitar', 'bass']);
         expect(otf.tracks[0].role).toBe('lead');
-        expect(otf.tracks[1].role).toBe('backup');
+        expect(otf.tracks[1].role).toBe('rhythm');
         expect(otf.metadata.title).toBe('My Tune');
         expect(otf.metadata.time_signature).toBe('3/4');
         expect(otf.notation.banjo).toHaveLength(8);

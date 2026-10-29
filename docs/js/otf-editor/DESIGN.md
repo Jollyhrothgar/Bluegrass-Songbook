@@ -113,8 +113,10 @@ draws.
 
 **Roles.** `role` is the TEF importer's guess (`banjo` and `mandolin` get
 `lead`, other instruments `rhythm`, drums `percussion`); the new-tab builder
-writes `lead` for the first track and `backup` for the rest. It is a hint, not
-an ordering, see below.
+writes `lead` for the first track and `rhythm` for the rest. The schema allows
+`lead`, `rhythm` and `percussion` only; `EditingFacade._adopt` (run by the
+constructor and by `load`, the one place a document enters the editor) turns a
+legacy `backup` into `rhythm`. It is a hint, not an ordering, see below.
 
 ### Duration constants
 
