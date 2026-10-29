@@ -2,7 +2,7 @@
 
 The format is written down once, in ``docs/schema/otf.schema.json`` (human
 guide: ``docs/schema/otf.md``). This module is its Python validator;
-``validateOTF`` in ``docs/js/otf-editor/actions.js`` is the hand-written JS
+``validateOTF`` in ``docs/js/otf-editor/otf-validate.js`` is the hand-written JS
 twin. Both enforce the same rules, and ``tests/test_otf_schema.py`` /
 ``docs/js/__tests__/otf-editor/otf-validate.test.js`` check they agree on every
 file in ``tests/fixtures/otf/``.
