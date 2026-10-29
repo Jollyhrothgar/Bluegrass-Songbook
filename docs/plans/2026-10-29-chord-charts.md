@@ -248,6 +248,10 @@ in a performance is arrangement (set-list data).
 - **Spacing:** each bar is divided into equal sub-cells, one per slot, and a
   chord or `\` is centered in its sub-cell (Mike, 2026-10-29). Two cells to a
   bar make four equal sub-cells.
+- **Chord engraving:** chart chords are drawn by `chordGlyphHtml()`
+  (`docs/js/chords.js`), the book's own engraving, so they match the lyrics:
+  superscript extensions (C♯⁷, A^sus4), ♯ ♭, ° ø +, and a smaller slash bass
+  (Mike, 2026-10-29).
 - **Display details:** a chord carried over a line break is repeated faintly
   in the next line's first slot, so you never look back up a line; the key can
   show its capo shape ("Key of A (G capo 2)"); a section shows its repeat

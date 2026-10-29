@@ -178,9 +178,10 @@ function lyricLine(line, flag) {
     let k = 0;
     return `<div class="line">${segs.map(([c, t]) => {
         const f = flag && c && ++k > 2 ? ' flag' : '';
-        return `<span class="seg"><span class="ch${f}">${esc(c)}</span><span>${esc(t) || ' '}</span></span>`; }).join('')}</div>`;
+        return `<span class="seg"><span class="ch${f}">${chordGlyph(c)}</span><span>${esc(t) || ' '}</span></span>`; }).join('')}</div>`;
 }
-const MIS = '<div class="mis">Differs from the chart: <b>A C#7 D A</b> there, <b>A C#7 A D</b> here.</div>';
+const G = (cs) => cs.map(chordGlyph).join(' ');
+const MIS = `<div class="mis">Differs from the chart: <b>${G(['A', 'C#7', 'D', 'A'])}</b> there, <b>${G(['A', 'C#7', 'A', 'D'])}</b> here.</div>`;
 function lyricSection(name) {
     return `<div class="lsec"><div class="sec">${name}</div>${LYR[name].map((l, i) =>
         lyricLine(l, name === 'Verse 2' && i === 2) + (name === 'Verse 2' && i === 2 ? MIS : '')).join('')}</div>`;
@@ -193,8 +194,8 @@ function chartLines(sec, on) {
         for (let i = 0; i < cells.length; i += perBar) bars.push(cells.slice(i, i + perBar).map((c, k) => [c, i + k]));
         return `<div class="cl" style="--bars:${bars.length}">${bars.map(b => `<div class="cb">${b.map(([c, idx]) =>
             `<div class="cc${on && on.line === li && on.cell === idx ? ' on' : ''}">${c.map((s, si) => {
-                if (s !== '\\') { cur = s; return `<span class="sl">${s}</span>`; }
-                if (li > 0 && idx === 0 && si === 0) return `<span class="sl carry">${cur}</span>`;
+                if (s !== '\\') { cur = s; return `<span class="sl">${chordGlyph(s)}</span>`; }
+                if (li > 0 && idx === 0 && si === 0) return `<span class="sl carry">${chordGlyph(cur)}</span>`;
                 return `<span class="sl hold">\\</span>`; }).join('')}</div>`).join('')}</div>`).join('')}</div>`;
     }).join('');
 }
