@@ -140,9 +140,11 @@ there under `{work}-{instrument}-{source_id}.otf.json` (see
 
 Byte-level detail is in `TEF-REFERENCE.md` beside this file: V2 vs V3
 detection (byte 205, not the first byte), the V3 layout reverse-engineered on
-Welcome to New York, TablEdit's own field names (fix-it A15), the V2 marker,
-Effect1 and Effect2 bytes, and how ties, slides and hammer-ons are detected.
-Read it when a fix depends on what a byte means.
+Welcome to New York, the header pointers, chord diagrams, repeat signs,
+dynamics (code 0 is the loudest; velocity `127 - 16 * code`), TablEdit's own
+field names (fix-it A15), the V2 marker, Effect1 and Effect2 bytes, how ties,
+slides and hammer-ons are detected, and **Writing a .tef** (G15f). Read it when
+a fix depends on what a byte means or on what the writer puts back.
 
 ## Common Issues & Fixes
 
@@ -379,6 +381,8 @@ circled fretting digits below the beams.
 | `sources/banjo-hangout/src/tef_parser/reader.py` | Binary parsing, marker filtering (Python oracle) |
 | `sources/banjo-hangout/src/tef_parser/otf.py` | TEF→OTF conversion, articulations, triplets |
 | `docs/js/tef-import/{reader,otf}.js` | In-browser JS port — MUST stay byte-exact vs Python (golden gate: `docs/js/__tests__/tef-import-golden.test.js`; regenerate fixture with `uv run python docs/js/tef-import/__fixtures__/gen_golden.py` whenever the Python parser legitimately changes) |
+| `sources/banjo-hangout/src/tef_parser/skipped.py`, `docs/js/tef-import/skipped.js` | Count what a `.tef` holds that OTF does not keep (`x_source.skipped`; golden-gated twins; reader-facing words in `docs/js/tef-skipped.js`) |
+| `docs/js/tef-export/` | The `.tef` writer (`writeTef`, V3 only; `template.tef` is a blank TablEdit 3.06 file). Gate: every corpus `.tef` round-trips (`tef-roundtrip-exceptions.txt` pins the 3 that do not); layout in TEF-REFERENCE.md "Writing a .tef" |
 | `docs/js/renderers/tablature.js` | SVG rendering, slurs, brackets, bends, annotations |
 | `docs/js/renderers/tab-player.js` | Audio playback, note scheduling, bend/slide waypoints |
 | `sources/banjo-hangout/conversion_log.json` | Batch conversion results. **Generated and gitignored** — it does not exist until you run `batch_convert.py`. Path comes from `site_config.SiteConfig.conversion_log_path`, so sibling Hangout sites write their own under their own `data_dir` |

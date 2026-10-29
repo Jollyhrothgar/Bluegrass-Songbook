@@ -14,15 +14,12 @@ obvious from it:
   so click-to-play in the reading view does not load the editor.
   `otf-editor/cursor.js` re-exports it.
 - `otf-tracks.js` (`isPercussionTrack`, `pitchedTracks`) is the one "is this
-  track pitched" filter. A drum track's `s` is a kit line, so `tuning[s-1] + f`
-  is nonsense. Never sniff track names (one drum track is named "Guitar
-  Standard"). The song page still shows a greyed `.percussion-track`
-  placeholder; see `docs/js/CLAUDE.md`.
+  track pitched" filter; never sniff track names (`docs/js/CLAUDE.md`).
 - `index.js` is a registry (`RENDERERS`, `getRenderer`, `detectFormat`; the key
   for OpenTabFormat is `otf`). `work-view.js` no longer imports it; it loads
   `tablature.js` and `tab-player.js` lazily. Do not add a static import of
   either to the boot graph (`docs/js/CLAUDE.md`, "Lazy modules").
-- `tab-ascii.js` is legacy ASCII tab; rarely used.
+- `tab-ascii.js` renders plain-text tab (`renderAsciiTab`; Save as .txt).
 
 ```bash
 npm test -- tablature                  # unit tests
@@ -148,6 +145,14 @@ Techniques: a tie continuation never re-attacks (`applyTieExtensions`); `h`/`p`/
 slide targets are one pick whose source rings on and glides (`absorbLegato`,
 `legatoWaypoints`); `x` is a short damped chop; a `bend`/`bend-release` note and its `tech: 'b'` target are one pick (`absorbBend`) that ramps by the fret difference (`bendIntoWaypoints`); an orphan `b` bends a quarter tone. All
 pitch moves use WebAudioFont `slides` waypoints (8th arg of `queueWaveTable`).
+
+Bend amounts (G15d): `bendLabel(fretDiff)` in tablature.js is the printed
+amount (1 = ½, 2 = full, 3 = 1½, 4 = 2; sign not printed), drawn as `.bend-arrow`
+plus `.bend-amount`; the player ramps by the same fret difference. Dynamics:
+`dynamicGain(noteDyn, trackDyn)` is the velocity ratio `127 - 16 * code`
+(`dynamicVelocity`, f = 95), exactly 1 for a note with no `dyn`, multiplied
+into the mixer volume; no dynamic marks are drawn. Repeat signs
+(`measure_marks`, via `attachOtfDecorations`) are drawn but never played.
 
 Effects and grace (fix-it item A15) follow TablEdit's playback. The logic is pure
 exported helpers (`fxDurationVolume`, `strumOffsets`/`applyStrumOffsets`,

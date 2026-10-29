@@ -40,15 +40,15 @@ describe('TOUR_STEPS', () => {
         expect(SEARCH_DEMO_QUERY).toBe('ten long years since I left my home');
     });
 
-    it('the .tef step says all three things: open it, edit it here, submit it to the book', () => {
+    it('the .tef step says open it, edit it here, save it back, and sign in only to add it to the book', () => {
         const tef = TOUR_STEPS.find(s => s.id === 'tef');
         expect(tef.dropZone).toBe(true);
         expect(tef.body).toMatch(/\.tef/);
         expect(tef.body).toMatch(/in your browser/);
-        expect(tef.body).toMatch(/submit it to add it to the book/);
-        // Submitting needs an account; opening and editing do not, on a phone
-        // too (G15c): the card says where a phone finds the file picker
-        expect(tef.body).toMatch(/sign in and submit/);
+        expect(tef.body).toMatch(/File ▸ Save as… saves it back as \.tef/);
+        // Submitting needs an account; opening, editing and saving do not, on
+        // a phone too (G15c, G15f): the card says where a phone finds the picker
+        expect(tef.body).toMatch(/No account needed; sign in only to add it to the book/);
         expect(tef.body).toMatch(/On a phone: open the ⋯ menu, choose Tab editor, then tap Open a tab file…/);
         expect(tef.body).not.toMatch(/On a phone: sign in/);
     });

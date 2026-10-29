@@ -22,9 +22,10 @@ the `lead.present` hooks in `lead-editor/index.js`.
   `lead.present.select / boxAt / end` (`lead-editor/index.js`): a selection that
   shows the section bar without focusing the editor (focus raises a phone
   keyboard). It calls `resetEditorForNewSong()` on leaving the editor.
-- The `.tef` step copy was checked against the app (G15c): a drop, and ⋯ ▸
-  Tab editor ▸ Open a tab file…, both open the editor signed out; sign-in is
-  only asked at Submit. Re-check the card text if either flow changes.
+- The `.tef` step copy was checked against the app (G15c, G15g): a drop, and ⋯ ▸
+  Tab editor ▸ Open a tab file…, both open the editor signed out; File ▸ Save
+  as… downloads a `.tef` signed out; sign-in is only asked at Submit. Re-check
+  the card text if any of those changes.
 - The invitation (`setTourInvite`) sets `localStorage['songbook-tour-seen']`;
   after that the tour is the first overflow item (`setOverflowLead`). It never
   opens itself. `?tour` starts it, `?tour=reset` re-arms the invitation.

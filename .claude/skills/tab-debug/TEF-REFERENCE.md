@@ -28,10 +28,13 @@ else:
 | Offset | Points at |
 |--------|-----------|
 | 60 | Component (note) region (TablEdit seeks here; ends with u32 0xFFFFFFFF) |
-| 64 / 68 / 72 | Title / subtitle / comments (each u16-len-prefixed) |
+| 64 / 68 / 72 / 76 | Title / author / comments / notes (each u16-len-prefixed; the comments' last line may be `Tab by: NAME <URL>`; the 76 block is the "free text" `x_source.skipped` counts) |
+| 80 | Extra block (the writer keeps it; unread) |
 | 84 | **Free-text table**: u16 count, then count × [u16 len][bytes, NUL-terminated] |
 | 88 | Chord diagram table: u16 entry_size (36), u16 count, then records (name inside) |
+| 92 / 96 / 100 | Measure table / track records / page-layout block (carried over by the writer) |
 | 128 | Reading list: u16 entry_size (32), u16 count, then records |
+| 132 / 140 | URL / copyright strings (carried over by the writer) |
 
 **Reading-list records** (32 bytes): u16 from_measure, u16 to_measure, then a
 NUL-terminated **entry label** ("Intro", "Part A1", ...) — TablEdit prints it
@@ -57,6 +60,8 @@ Decoded so far:
 | 0x35 | **Chord-diagram anchor**, compared on the FULL type byte (0x75 = scale diagram, 0xf5 = special character): record bytes 5-6 = u16 index into the chord table (header 88), byte 7 = signed dy, byte 8 = signed dx; the owning track is the one whose strings contain the string row | Yes → OTF `chords[]` + `chord_diagrams[]` (V2: fret byte 0x1c/0x5c/0x9c, byte 3 = chord index; dx/dy not decoded) |
 
 **Chord record** (36 bytes V3, 32 V2): bytes 0-13 one per string, string 1 first (0xff not played, low 5 bits ABSOLUTE fret, high 3 bits 0 plain / 2-5 = finger 1-4); 14-30 NUL-terminated name; 31 first fret shown (signed; 1 on every corpus record that has no position label); V3 byte 32 = the diagram's string count (0 = the owning track's; 0 on every corpus record); 33 unknown (0). No barre is stored. **V2 table**: u16 count at file offset 236, 32-byte records right after the free-text table (reading list, then the u16-count-at-228 text entries); all 51 V2 files with a table read this way. A table that doesn't parse (a name byte below 0x20, no NUL, past EOF) drops its diagrams and is reported as `x_source.skipped.chord_diagrams`. Corpus (decode session, reproduced by `tests/parser/test_tef_chord_diagrams.py`): 380 V3 anchors in 17 files, 1,558 V2 in 40; 19 of 21 scorable diagrams spell their name with the owning track's tuning; 47 referenced records are name-only; 35 records are never referenced.
+
+| 0xb7 | **Repeat signs** (V2: fret byte 0x5e): record byte 6 (V2 byte 4) is a flag OR-ed per measure into `measure_marks[].raw`: 0x40 repeat start, 0x80 repeat end, bits 0-2 ending 1-6 (7 = unspecified, draws nothing), `& 0x38` 0x08 end bar, 0x10 Da Signo, 0x18 Signo, 0x20 Al Coda, 0x28 Coda (`decode_mark_raw` / `decodeMarkRaw`). Drawn, kept and written back; not played | Yes → OTF `measure_marks` |
 
 All of the above oracle-verified against TablEdit's own MusicXML export
 (`<words>`, `<pluck>`, `<fingering>`, `<harmony>`): 35/35 text placements and

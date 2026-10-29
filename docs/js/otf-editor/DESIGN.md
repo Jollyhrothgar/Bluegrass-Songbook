@@ -32,7 +32,8 @@ one track at a time as strings and frets.
 - **Saving.** Done applies the edit back to the song page; File > Save as…
   (Ctrl+S) is an in-page panel that writes `.tef`, `.otf.json` or plain-text
   `.txt`, opening on the format the file came from and naming what a `.tef`
-  leaves out before you press Save; Submit sends a tab correction or a new tab through `submit-tab.js` (a
+  leaves out before you press Save. The File menu of a song-page session is
+  Open, Import .tef (new takes only), Save as, Submit, Cancel, Done; Submit sends a tab correction or a new tab through `submit-tab.js` (a
   `pending_songs` row, then `auto-commit-song`, which commits it to `works/`).
 - **Menu bar** (File, Edit, Note, Play, Score, View, Help) with every shortcut
   printed beside its item. Help > About opens this document.
@@ -239,6 +240,16 @@ section, or by clicking the text. Facade operations: `addAnnotation`,
 - **Time signatures.** Measure arithmetic is time-signature aware
   (`renderers/measure-timing.js`), so tunes with mid-tune changes in
   `metadata.time_signature_changes` are not corrupted by edits.
+- **Dynamics are menu-only.** Note > Dynamics sets `fff` to `pp` on the note or
+  selection, or "Track default" to clear it; a track's own level is
+  `tracks[].dyn` and a note stores `dyn` only when it differs. The status bar
+  shows `Dyn:` only for such a note. Playback scales by TablEdit's velocity
+  ratio (`127 - 16 * code`); nothing is drawn on the staff.
+- **A bend is two notes.** Note > Effects > bend (or bend and release) on the
+  bent note also marks the next note on that string as the bend's target
+  (`tech: 'b'`). The amount is the fret difference, drawn as ½, full, 1½, 2, so
+  you change it by editing the target's fret; there is no amount control.
+  Turning the bend off unmarks the target, in the same undo step.
 - **Forward step appends.** Moving past the last tick of the last measure adds a
   measure, as part of the same undo step.
 

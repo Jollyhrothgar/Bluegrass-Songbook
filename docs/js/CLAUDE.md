@@ -22,16 +22,14 @@ npm run test:e2e      # Playwright; starts its own server (e2e/CLAUDE.md)
 shadowing jsdom's, so unit tests pass on any Node.
 
 A test of the code reads a frozen copy of a song (`__tests__/fixtures/`), never
-the live one: `works/` is edited from the site, and an edit to Old Home Place
-broke CI for hours (#320). Live songs are only for smoke tests that catch
-problems in the data (Mike, 2026-10-28; `.claude/rules/tests.md`).
+the live one: an edit to Old Home Place broke CI for hours (#320). Live songs
+are for data smoke tests only (`.claude/rules/tests.md`).
 
 ## Orientation
 
-- `state.js`: reactive state. `subscribe(name, fn)` notifies a frame later
-  (`requestAnimationFrame`). `setCurrentView`, `setCurrentDetectedKey` and
-  `setDungeonMode` do nothing when the value is unchanged; never write a
-  redundant value to force a callback.
+- `state.js`: reactive state. `subscribe(name, fn)` notifies a frame later.
+  `setCurrentView`, `setCurrentDetectedKey` and `setDungeonMode` do nothing when
+  the value is unchanged; never write a redundant value to force a callback.
 - `corpus.js` builds `allSongs`; `song-content.js` reads charts (always
   `getSongContent(song)`, never `song.content`); `work-view.js` is the song page.
   Any path that cannot find an id awaits `window.ensureArchiveLoaded()` once
@@ -101,28 +99,32 @@ them. Client side (`main.js`, `state.js`: `SONG_PATH`, `songHref`,
 - `scripts/lib/build_song_pages.py` writes the pages and `404.html`; `scripts/server`
   serves `404.html` for unknown paths like Pages does.
 - `/tab-editor/` is the second path the app owns (`TAB_EDITOR_PATH`, state.js):
-  the tab editor's front door, view `tab-editor`, rendered lazily by
-  `tab-editor-home.js`. `handleDeepLink` routes it and returns true (boot would
-  rewrite it to `/`); `normalizedHref` restores the root URL when the view
-  changes; in-app entry is `showView('tab-editor')` + `pushHistoryState`. No
-  editor code: Open goes through `pwa.js` (`chooseTabFile` -> `openTabFile` ->
-  `#new-tab?draft=`), Start to `#new-tab?title=&instrument=`, My tabs reuses
-  `drafts-view.js` rows ("My tabs" is `#drafts` renamed in copy; store
-  `bgb-drafts`). Nothing before Submit asks for sign-in. A `.tef` open shows
-  what wasn't kept (`skippedLine()`, `tef-skipped.js`; `file=1` only). Saving is
-  the mirror, `tef-export/`: `writeTef(otf, {source, template})` returns
-  `{bytes, notices}`, plus `noticeLine()` (TEF-REFERENCE.md "Writing a .tef"); only
-  File ▸ Save as… `import()`s it. A draft keeps the opened file as `source:
-  {name, bytes?}` (`importTabFile`, `openTabFile`; older drafts have none).
+  the editor's front door, view `tab-editor`, lazy `tab-editor-home.js`.
+  `handleDeepLink` routes it and returns true (boot would rewrite it to `/`);
+  `normalizedHref` restores the root URL when the view changes; in-app entry is
+  `showView('tab-editor')` + `pushHistoryState` (⋯ ▸ Tab editor). No editor
+  code: Start goes to `#new-tab?title=&instrument=`, its My tabs rows are
+  `drafts-view.js`'s. Nothing before Submit asks for sign-in.
+- File handling (`pwa.js`) has one path for the picker (`chooseTabFile`; `.tef`,
+  `.otf.json`), a drop anywhere (`enableFileDrop`; an element with its own drop
+  zone sets `data-file-drop`) and the installed app's `launchQueue`:
+  `importTabFile` parses, `openTabFile` parks a draft and routes to
+  `#new-tab?draft=&file=1` (a hash cannot carry a document). A `.tef` open
+  shows what wasn't kept (`skippedLine()`, `tef-skipped.js`; `file=1` only).
+- My tabs is `#drafts` renamed in copy; the store is `drafts.js` (IndexedDB
+  `bgb-drafts`, newest 50). A draft keeps `source: {name, bytes?}`, the opened
+  file (older drafts have none).
+- File ▸ Save as… (`otf-editor/save-as.js`) is the mirror: `tef-export/`
+  `writeTef(otf, {source, template})` returns `{bytes, notices}`, plus
+  `noticeLine()` (TEF-REFERENCE.md "Writing a .tef"); only Save as `import()`s it.
 
 ### Navigation invariants
 
 1. The `currentView` subscriber tears down the tablature view on the way out of
    `song`, never on the way in. Everything entering the song view goes through
    work-view, which tears down synchronously first; a teardown queued by entering
-   lands a frame later and destroys what the entry just built (this once made
-   `#new-tab?draft=...` mount its editor and delete it, depending on whether the
-   editor's imports were cached; `e2e/otf-editor-drafts.spec.js`).
+   lands a frame later and destroys what the entry just built (once
+   `#new-tab?draft=...` mounted its editor and deleted it; `e2e/otf-editor-drafts.spec.js`).
 2. One navigation step, one route. Back/forward fires `popstate` then
    `hashchange`; `main.js` parks the popstate work for one task, a hashchange in
    that window cancels it and routes by hash, and an echo within 100 ms is
@@ -144,9 +146,8 @@ search (`scripts/lib/search_index.py`), which must change with `search()`.
 - Percussion tracks are excluded from the mixer, playback and the OTF editor via
   `isPercussionTrack` / `pitchedTracks` (`renderers/otf-tracks.js`): a drum
   track's `s` is a kit staff line, so `tuning[s-1] + f` is nonsense. Never sniff
-  track names (one drum track is named "Guitar Standard"). The song page shows
-  the track greyed out with a "drum notation is in progress" note on purpose: we
-  detect a drum track reliably but not which drum each line is.
+  track names (one drum track is named "Guitar Standard"). The song page greys
+  the track out on purpose: we detect a drum track but not which drum a line is.
 - A tab draws once per open. `renderTablaturePart` waits up to 250 ms for the
   Bravura font (`TabRenderer.whenBravuraReady`); a late font redraws only if that
   draw was made without it (`_drewWithBravura`, since the font promise resolves
@@ -191,9 +192,8 @@ edits, and the in-place-or-fork wording load from
 - Analytics (`analytics.js`) run only when `telemetry.js::telemetryEnabled()`
   (production host, `navigator.webdriver` false, and the browser not marked
   internal: `/?internal=1` sets `localStorage['bgb-internal']`, `?internal=0`
-  clears it), because the Supabase project is
-  production everywhere and local servers and crawlers counted as visitors.
+  clears it), because the Supabase project is production everywhere.
   `supabase.rpc` resolves `{error}` rather than throwing, so `flush()` checks it
   and re-queues.
-- Document upload is gone, but document parts already in `works/` still render
-  (`renderDocumentPart`, work-view.js).
+- Document upload is gone; document parts in `works/` still render
+  (`renderDocumentPart`).
