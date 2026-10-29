@@ -438,8 +438,10 @@ export class EditingFacade {
     }
 
     getNotation(trackId = this.trackId) {
-        if (!this.otf.notation[trackId]) this.otf.notation[trackId] = [];
-        return this.otf.notation[trackId];
+        // Reading never writes: a track with no `notation` key is valid OTF
+        // ("absent means silent"), and looking at one must not mint the key.
+        // Only getOrCreateMeasure (a note being entered) creates it.
+        return this.otf.notation?.[trackId] || [];
     }
 
     getMeasure(measureNum, trackId = this.trackId) {
@@ -450,7 +452,9 @@ export class EditingFacade {
         let measure = this.getMeasure(measureNum, trackId);
         if (!measure) {
             measure = { measure: measureNum, events: [] };
-            const notation = this.getNotation(trackId);
+            if (!this.otf.notation) this.otf.notation = {};
+            if (!this.otf.notation[trackId]) this.otf.notation[trackId] = [];
+            const notation = this.otf.notation[trackId];
             notation.push(measure);
             notation.sort((a, b) => a.measure - b.measure);
             this._invalidateTiming();
@@ -458,10 +462,13 @@ export class EditingFacade {
         return measure;
     }
 
+    /**
+     * A track is as long as the DOCUMENT: an empty track (or one that ends
+     * early) can be written out to the last measure any track has.
+     */
     getMeasureCount(trackId = this.trackId) {
-        const notation = this.getNotation(trackId);
-        if (notation.length === 0) return 1;
-        return Math.max(...notation.map(m => m.measure));
+        const own = this.getNotation(trackId).reduce((mx, m) => Math.max(mx, m.measure), 1);
+        return Math.max(own, maxMeasureIn(this.otf.notation || {}), 1);
     }
 
     // ------------------------------------------------------------------

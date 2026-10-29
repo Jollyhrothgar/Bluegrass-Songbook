@@ -487,9 +487,7 @@ export class EditorState {
      * Get total measure count
      */
     getMeasureCount() {
-        const notation = this.getNotation();
-        if (notation.length === 0) return 1;
-        return Math.max(...notation.map(m => m.measure));
+        return this.facade.getMeasureCount(this.trackId);
     }
 
     /**

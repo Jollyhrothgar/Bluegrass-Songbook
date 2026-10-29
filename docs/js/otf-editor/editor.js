@@ -1617,7 +1617,14 @@ export class OTFEditor {
         // OTF omits silent measures; render them as empty bars (display
         // copy only — the document stays sparse, and editing one goes
         // through getOrCreateMeasure as usual).
-        notation = densifyNotation(notation, maxMeasureIn(this.state.otf.notation));
+        const docMax = maxMeasureIn(this.state.otf.notation);
+        if (notation.length === 0) {
+            // A track with no notes is still editable: draw the document's
+            // bars empty (display copy; nothing is written by looking).
+            notation = Array.from({ length: docMax }, (_, i) => ({ measure: i + 1, events: [] }));
+        } else {
+            notation = densifyNotation(notation, docMax);
+        }
 
         // Free-text annotations + reading-list section labels (display
         // copy; annotations may target the silent measures, so attach
