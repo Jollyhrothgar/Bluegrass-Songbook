@@ -11,7 +11,8 @@ import {
     twoColumnMode, setTwoColumnMode,
     chordDisplayMode, setChordDisplayMode,
     showSectionLabels, setShowSectionLabels,
-    fontSizeLevel, setFontSizeLevel,
+    chartCells, setChartCells, chartBars, setChartBars, chartOrder, setChartOrder,
+    autoHideControls, setAutoHideControls,
     currentDetectedKey, setCurrentDetectedKey,
     originalDetectedKey, originalDetectedMode,
     subscribe
@@ -19,7 +20,8 @@ import {
 import { CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { escapeHtml, escapeAttr, safeUrl, downloadFile, songWriter, recordedBy, recorderLabel, recordingSearchUrl } from './utils.js';
 import { getSongContent } from './song-content.js';
-import { pill } from './shell.js';
+import { openSheet } from './shell.js';
+import { dockButton } from './song-dock.js';
 import { trackTranspose, trackExport } from './analytics.js';
 import { getTagCategory, formatTagName } from './tags.js';
 
@@ -33,11 +35,6 @@ const ENHARMONIC_TO_CHROMATIC = {
 
 function normalizeKeyForChromatic(key) {
     return ENHARMONIC_TO_CHROMATIC[key] || key;
-}
-
-/** Label for the Key pill button. */
-export function keyPillLabel(key) {
-    return key ? `Key of ${key}` : 'Key';
 }
 
 /**
@@ -102,125 +99,171 @@ export function practiceLinks(song, key) {
 }
 
 // ============================================
-// KEY PILL
+// KEY (the dock's Key button and its sheet)
 // ============================================
 
+/** "Key: A" for the dock's Key button. */
+export function keyButtonLabel(key) {
+    return key ? `Key: ${key}` : 'Key';
+}
+
 /**
- * Key pill: chromatic transpose, key list, Nashville toggle.
- * Label live-updates ("Key of G").
+ * The Key sheet's content: chromatic transpose, the key list, Nashville.
+ * Same content the Key pill had; only where it opens has changed.
  */
-export function buildKeyPill(song) {
-    const root = pill(keyPillLabel(currentDetectedKey), (container) => {
-        const keys = originalDetectedMode === 'minor' ? CHROMATIC_MINOR_KEYS : CHROMATIC_MAJOR_KEYS;
-        container.innerHTML = `
-            <div class="pill-section pill-transpose-row">
-                <button class="qc-btn" data-transpose="-1" title="Transpose down">−</button>
-                <span class="pill-current-key">${escapeHtml(currentDetectedKey || '—')}</span>
-                <button class="qc-btn" data-transpose="1" title="Transpose up">+</button>
-            </div>
-            <div class="pill-section pill-key-grid">
-                ${keys.map(k => {
-                    const cls = [
-                        k === currentDetectedKey ? 'active' : '',
-                        k === originalDetectedKey ? 'original' : ''
-                    ].filter(Boolean).join(' ');
-                    return `<button class="pill-key-btn ${cls}" data-key="${k}" title="${k === originalDetectedKey ? `${k} (detected)` : k}">${k}</button>`;
-                }).join('')}
-            </div>
-            <div class="pill-section">
-                <button class="qc-toggle-btn pill-nashville-btn ${nashvilleMode ? 'active' : ''}" title="Nashville numbers">Nashville</button>
-            </div>
-        `;
+export function renderKeyContent(container, song) {
+    const keys = originalDetectedMode === 'minor' ? CHROMATIC_MINOR_KEYS : CHROMATIC_MAJOR_KEYS;
+    container.innerHTML = `
+        <div class="pill-section pill-transpose-row">
+            <button class="qc-btn" data-transpose="-1" title="Transpose down">−</button>
+            <span class="pill-current-key">${escapeHtml(currentDetectedKey || '—')}</span>
+            <button class="qc-btn" data-transpose="1" title="Transpose up">+</button>
+        </div>
+        ${originalDetectedKey ? `<div class="pill-original-key">original key: ${escapeHtml(originalDetectedKey)}</div>` : ''}
+        <div class="pill-section pill-key-grid">
+            ${keys.map(k => {
+                const cls = [
+                    k === currentDetectedKey ? 'active' : '',
+                    k === originalDetectedKey ? 'original' : ''
+                ].filter(Boolean).join(' ');
+                return `<button class="pill-key-btn ${cls}" data-key="${k}" title="${k === originalDetectedKey ? `${k} (detected)` : k}">${k}</button>`;
+            }).join('')}
+        </div>
+        <div class="pill-section">
+            <button class="qc-toggle-btn pill-nashville-btn ${nashvilleMode ? 'active' : ''}" aria-pressed="${nashvilleMode}" title="Nashville numbers">Nashville numbers</button>
+            <span class="pill-hint">1 4 5 instead of A D E</span>
+        </div>
+    `;
 
-        const refreshKeyMarkers = () => {
-            container.querySelector('.pill-current-key').textContent = currentDetectedKey || '—';
-            container.querySelectorAll('.pill-key-btn').forEach(b => {
-                b.classList.toggle('active', b.dataset.key === currentDetectedKey);
-            });
-        };
-
-        container.querySelectorAll('[data-transpose]').forEach(btn => {
-            btn.addEventListener('click', () => {
-                transposeBySemitone(parseInt(btn.dataset.transpose, 10));
-                refreshKeyMarkers();
-            });
+    const refreshKeyMarkers = () => {
+        container.querySelector('.pill-current-key').textContent = currentDetectedKey || '—';
+        container.querySelectorAll('.pill-key-btn').forEach(b => {
+            b.classList.toggle('active', b.dataset.key === currentDetectedKey);
         });
+    };
 
-        container.querySelectorAll('.pill-key-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const key = btn.dataset.key;
-                if (song && currentDetectedKey !== key) {
-                    trackTranspose(song.id, currentDetectedKey, key);
-                }
-                setCurrentDetectedKey(key);
-                refreshKeyMarkers();
-            });
+    container.querySelectorAll('[data-transpose]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            transposeBySemitone(parseInt(btn.dataset.transpose, 10));
+            refreshKeyMarkers();
         });
+    });
 
-        const nashBtn = container.querySelector('.pill-nashville-btn');
-        nashBtn?.addEventListener('click', () => {
-            setNashvilleMode(!nashvilleMode);
-            nashBtn.classList.toggle('active', nashvilleMode);
+    container.querySelectorAll('.pill-key-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const key = btn.dataset.key;
+            if (song && currentDetectedKey !== key) {
+                trackTranspose(song.id, currentDetectedKey, key);
+            }
+            setCurrentDetectedKey(key);
+            refreshKeyMarkers();
         });
-    }, { id: 'key-pill', title: 'Key & transposition' });
+    });
 
-    // Label follows the current key even when transposed elsewhere
-    autoSub('currentDetectedKey', root, (key) => root.pillApi.setLabel(keyPillLabel(key)));
-    return root;
+    const nashBtn = container.querySelector('.pill-nashville-btn');
+    nashBtn?.addEventListener('click', () => {
+        setNashvilleMode(!nashvilleMode);
+        nashBtn.classList.toggle('active', nashvilleMode);
+        nashBtn.setAttribute('aria-pressed', String(nashvilleMode));
+    });
+}
+
+/**
+ * The dock's Key button ("Key: A"). It opens the Key sheet; the label follows
+ * the current key even when it is transposed elsewhere.
+ */
+export function buildKeyButton(song) {
+    const btn = dockButton({ id: 'dock-key-btn', label: keyButtonLabel(currentDetectedKey), title: 'Key & transposition' });
+    btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openSheet({ id: 'dock-key-sheet', title: 'Key', opener: btn, build: (el) => renderKeyContent(el, song) });
+    });
+    autoSub('currentDetectedKey', btn, (key) => { btn.textContent = keyButtonLabel(key); });
+    return btn;
 }
 
 // ============================================
-// DISPLAY PILL
+// DISPLAY (the dock's Display button and its sheet)
 // ============================================
 
-/**
- * Display pill: font size, layout toggles, chord display mode.
- * Same behavior the quick-controls bar had; re-render happens reactively.
- */
-export function buildDisplayPill() {
-    return pill('Display', (container) => {
-        container.innerHTML = `
-            <div class="pill-section pill-transpose-row">
-                <button class="qc-btn" data-size="-1" title="Decrease font size">−</button>
-                <span class="qc-label">Aa</span>
-                <button class="qc-btn" data-size="1" title="Increase font size">+</button>
-            </div>
-            <div class="pill-section pill-checks">
-                <label class="qc-checkbox"><input type="checkbox" id="pill-twocol" ${twoColumnMode ? 'checked' : ''}> Two columns</label>
-                <label class="qc-checkbox"><input type="checkbox" id="pill-sections" ${showSectionLabels ? 'checked' : ''}> Section labels</label>
-                <label class="qc-checkbox"><input type="checkbox" id="pill-compact" ${compactMode ? 'checked' : ''}> Compact</label>
-            </div>
-            <div class="pill-section">
-                <div class="pill-mode-label">Chords</div>
-                <div class="pill-mode-group" id="pill-chord-mode" role="group" aria-label="Chord display">
-                    <button class="pill-mode-btn ${chordDisplayMode === 'all' ? 'active' : ''}" data-mode="all">All</button>
-                    <button class="pill-mode-btn ${chordDisplayMode === 'first' ? 'active' : ''}" data-mode="first">First only</button>
-                    <button class="pill-mode-btn ${chordDisplayMode === 'none' ? 'active' : ''}" data-mode="none">None</button>
-                </div>
-            </div>
-        `;
+const CHART_CELLS_CHOICES = [2, 4, 6, 8];
 
-        container.querySelectorAll('[data-size]').forEach(btn => {
+/** A labelled segmented group; `choices` is [[value, label]], `on` the current value. */
+function segmentedRow(label, id, choices, on) {
+    return `
+        <div class="dock-opt-row">
+            <span class="dock-opt-label">${label}</span>
+            <div class="pill-mode-group" id="${id}" role="group" aria-label="${label}">
+                ${choices.map(([v, l]) => `<button type="button" class="pill-mode-btn ${String(v) === String(on) ? 'active' : ''}" data-value="${v}">${l}</button>`).join('')}
+            </div>
+        </div>`;
+}
+
+/**
+ * The Display sheet's content: layout options, the chord mode, Auto-hide
+ * controls, and (only for a song with a chart) the Chart group. Size is not
+ * here: it is in the dock. `wide` says whether two columns can show.
+ */
+export function renderDisplayContent(container, { hasChart = false, wide = false } = {}) {
+    container.innerHTML = `
+        <div class="dock-group-label">Layout</div>
+        <div class="pill-section pill-checks">
+            <label class="qc-checkbox ${wide ? '' : 'is-off'}"><input type="checkbox" id="pill-twocol" ${twoColumnMode ? 'checked' : ''} ${wide ? '' : 'disabled'}> Two columns${wide ? '' : ' <span class="dock-opt-hint">(wide screens only)</span>'}</label>
+            <label class="qc-checkbox"><input type="checkbox" id="pill-sections" ${showSectionLabels ? 'checked' : ''}> Section labels</label>
+            <label class="qc-checkbox"><input type="checkbox" id="pill-compact" ${compactMode ? 'checked' : ''}> Compact</label>
+            <label class="qc-checkbox"><input type="checkbox" id="pill-autohide" ${autoHideControls ? 'checked' : ''}> Auto-hide controls <span class="dock-opt-hint">(${autoHideControls ? 'on' : 'off'}: docks ${autoHideControls ? 'hide' : 'stay'} while you scroll)</span></label>
+        </div>
+        <div class="dock-opt-row">
+            <span class="dock-opt-label">Chords</span>
+            <div class="pill-mode-group" id="pill-chord-mode" role="group" aria-label="Chord display">
+                <button class="pill-mode-btn ${chordDisplayMode === 'all' ? 'active' : ''}" data-mode="all">All</button>
+                <button class="pill-mode-btn ${chordDisplayMode === 'first' ? 'active' : ''}" data-mode="first">First only</button>
+                <button class="pill-mode-btn ${chordDisplayMode === 'none' ? 'active' : ''}" data-mode="none">None</button>
+            </div>
+        </div>
+        ${hasChart ? `
+        <div class="dock-group-label dock-group-chart">Chart <span class="dock-opt-hint">shown because this song has one</span></div>
+        ${segmentedRow('Cells per row', 'pill-chart-cells', CHART_CELLS_CHOICES.map(n => [n, n]), chartCells)}
+        ${segmentedRow('Bars', 'pill-chart-bars', [[1, 'One cell'], [2, 'Two cells']], chartBars)}
+        ${segmentedRow('Order', 'pill-chart-order', [['once', 'Each section once'], ['sung', 'As sung']], chartOrder)}
+        ` : ''}
+    `;
+
+    container.querySelector('#pill-twocol').addEventListener('change', (e) => setTwoColumnMode(e.target.checked));
+    container.querySelector('#pill-sections').addEventListener('change', (e) => setShowSectionLabels(e.target.checked));
+    container.querySelector('#pill-compact').addEventListener('change', (e) => setCompactMode(e.target.checked));
+    container.querySelector('#pill-autohide').addEventListener('change', (e) => {
+        setAutoHideControls(e.target.checked);
+        const hint = e.target.parentElement.querySelector('.dock-opt-hint');
+        if (hint) hint.textContent = `(${autoHideControls ? 'on' : 'off'}: docks ${autoHideControls ? 'hide' : 'stay'} while you scroll)`;
+    });
+
+    // A segmented group's buttons light one at a time and say what they chose
+    const group = (selector, attr, onChoose) => {
+        container.querySelectorAll(`${selector} .pill-mode-btn`).forEach(btn => {
             btn.addEventListener('click', () => {
-                const delta = parseInt(btn.dataset.size, 10);
-                const next = fontSizeLevel + delta;
-                if (next >= -5 && next <= 6) setFontSizeLevel(next);
+                onChoose(btn.dataset[attr]);
+                container.querySelectorAll(`${selector} .pill-mode-btn`).forEach(b => b.classList.toggle('active', b === btn));
             });
         });
-        container.querySelector('#pill-twocol').addEventListener('change', (e) => setTwoColumnMode(e.target.checked));
-        container.querySelector('#pill-sections').addEventListener('change', (e) => setShowSectionLabels(e.target.checked));
-        container.querySelector('#pill-compact').addEventListener('change', (e) => setCompactMode(e.target.checked));
-        // Segmented buttons instead of a native <select>: consistent pill
-        // styling everywhere (mobile browsers render select menus at odd
-        // sizes floating over the popover)
-        container.querySelectorAll('#pill-chord-mode .pill-mode-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                setChordDisplayMode(btn.dataset.mode);
-                container.querySelectorAll('#pill-chord-mode .pill-mode-btn').forEach(b =>
-                    b.classList.toggle('active', b === btn));
-            });
-        });
-    }, { id: 'display-pill', title: 'Display options' });
+    };
+    // Segmented buttons instead of a native <select>: consistent styling
+    // everywhere (mobile browsers render select menus at odd sizes)
+    group('#pill-chord-mode', 'mode', setChordDisplayMode);
+    group('#pill-chart-cells', 'value', (v) => setChartCells(Number(v)));
+    group('#pill-chart-bars', 'value', (v) => setChartBars(Number(v)));
+    group('#pill-chart-order', 'value', setChartOrder);
+}
+
+/** The dock's Display button. `options()` is read when it opens (the chart, the width). */
+export function buildDisplayButton(options) {
+    const btn = dockButton({ id: 'dock-display-btn', label: 'Display', title: 'Display options' });
+    btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openSheet({ id: 'dock-display-sheet', title: 'Display', opener: btn,
+            build: (el) => renderDisplayContent(el, options()) });
+    });
+    return btn;
 }
 
 // ============================================

@@ -7,7 +7,7 @@ import { parseChordPro } from '../renderers/chordpro.js';
 import { transposeChord } from '../chords.js';
 import {
     musicalSections, alignForm, compareSections, regroupBars, carriedChords,
-    transposeChart, practiceOrder, lineChords,
+    transposeChart, practiceOrder, lineChords, wrapCells,
 } from '../chord-chart.js';
 
 const FIX = resolve(process.cwd(), 'docs/js/__tests__/fixtures');
@@ -142,6 +142,36 @@ describe('carriedChords', () => {
             [cell(null, null), cell(null, null)],
         ]);
         expect(carriedChords(s)).toEqual([null, 'C', 'D']);
+    });
+});
+
+describe('wrapCells', () => {
+    const s = section('A', [
+        [cell('G', null), cell('C', null), cell('D', null)],
+        [cell(null, null), cell('C', null)],
+    ]);
+
+    it('runs the cells of a section on across its lines and wraps them into rows of N', () => {
+        expect(wrapCells(s, 2).lines.map(l => l.length)).toEqual([2, 2, 1]);
+        expect(wrapCells(s, 4).lines.map(l => l.length)).toEqual([4, 1]);
+        expect(wrapCells(s, 8).lines.map(l => l.length)).toEqual([5]);
+        expect(wrapCells(s, 2).lines.flat()).toEqual(s.lines.flat());
+    });
+
+    it('leaves the section alone and keeps its name and repeat', () => {
+        const w = wrapCells(s, 2);
+        expect(s.lines.map(l => l.length)).toEqual([3, 2]);
+        expect([w.name, w.repeat]).toEqual(['A', 1]);
+    });
+
+    it('carries the sounding chord into each new row, so a wrapped row starts from what rings', () => {
+        expect(carriedChords(wrapCells(s, 2))).toEqual([null, 'C', 'D']);
+    });
+
+    it('pairs into bars after wrapping: a row of N cells is N/2 two-cell bars', () => {
+        const bars = regroupBars(wrapCells(s, 4), 2);
+        expect(bars.map(l => l.map(b => b.cells.length))).toEqual([[2, 2], [1]]);
+        expect(bars[1][0].half).toBe(true);
     });
 });
 

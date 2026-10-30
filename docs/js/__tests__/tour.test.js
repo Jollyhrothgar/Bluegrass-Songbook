@@ -153,7 +153,7 @@ const PAGES = {
         <input id="search-input">
         <div id="results"><div class="result-item" data-id="old-home-place"></div></div>`,
     lead: `
-        <div id="key-pill"></div>
+        <button id="dock-key-btn"></button>
         <button id="edit-song-btn"></button>`,
     editor: `
         <div id="editor-panel"><div id="editor-lead"><div class="cm-content"></div></div>

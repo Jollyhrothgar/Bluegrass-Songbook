@@ -5,36 +5,24 @@
 // chords, transposition); this file draws it.
 //
 //   mountLeadSheetChart  the lead-sheet part: the chart as a second column
-//                        (CSS shows it on wide screens)
-//   renderChartTab       the narrow screens' "Chart" part tab
+//                        (View ▸ Lyrics + Chart, wide screens)
+//   renderChartTab       the chart alone (View ▸ Chart)
 //
-// ctx = {chart, sections, opts, fontScale}: the published chart JSON, the
-// lyric chart's parsed sections (the list renderSectionsHtml was given) and
-// the display options it used ({key, transposeTo, nashville, ...}), so the
-// chart always shows what the lyrics show.
+// ctx = {chart, sections, opts, fontScale, layout}: the published chart JSON,
+// the lyric chart's parsed sections and the display options it used
+// ({key, transposeTo, nashville, ...}), so the chart always shows what the
+// lyrics show; the Size the page is at (the chart scales with it); and
+// Display ▸ Chart's choices, layout = {cells per row, bars, order}.
+// There is no chrome of its own: every choice lives in the dock.
 
 import { chordGlyphHtml, toNashville, getSemitonesBetweenKeys } from './chords.js';
 import {
-    alignForm, regroupBars, carriedChords, transposeChart, practiceOrder,
+    alignForm, regroupBars, carriedChords, transposeChart, practiceOrder, wrapCells,
 } from './chord-chart.js';
-import { renderSectionsHtml } from './renderers/chordpro.js';
 import { escapeHtml } from './utils.js';
 
-const BARS_KEY = 'bgb-chart-bars';
-
-// Chart | Practice, per page load (a reload starts on the chart)
-let mode = 'chart';
-
-export const getMode = () => mode;
-export function setMode(next) { mode = next === 'practice' ? 'practice' : 'chart'; }
-
-/** Cells a printed bar holds: 1 or 2, remembered on this device. */
-export function getBars() {
-    try { return globalThis.localStorage?.getItem(BARS_KEY) === '2' ? 2 : 1; } catch { return 1; }
-}
-export function setBars(n) {
-    try { globalThis.localStorage?.setItem(BARS_KEY, n === 2 ? '2' : '1'); } catch { /* private mode */ }
-}
+/** What Display ▸ Chart starts at. */
+export const DEFAULT_LAYOUT = { cells: 4, bars: 1, order: 'once' };
 
 // ---------------------------------------------------------------------------
 // Model: the chart as the Key pill has it, aligned with the lyric chart
@@ -81,10 +69,11 @@ export function chartLineHtml(bars, carried, model) {
     return `<div class="cc-line" style="grid-template-columns: ${cols}">${html}</div>`;
 }
 
-/** A section's chart lines as separate HTML strings. */
-export function chartLinesHtml(section, cellsPerBar, model) {
-    const carried = carriedChords(section);
-    return regroupBars(section, cellsPerBar).map((bars, i) => chartLineHtml(bars, carried[i], model));
+/** A section's chart lines as separate HTML strings: its cells wrapped into rows. */
+export function chartLinesHtml(section, layout, model) {
+    const wrapped = wrapCells(section, layout.cells);
+    const carried = carriedChords(wrapped);
+    return regroupBars(wrapped, layout.bars).map((bars, i) => chartLineHtml(bars, carried[i], model));
 }
 
 /** "sung 4 times" when the chart lines up with the lyrics, else its repeat count. */
@@ -96,45 +85,46 @@ export function sungCaption(section, model) {
     return section.repeat > 1 ? `×${section.repeat}` : '';
 }
 
-export function chartSectionHtml(section, caption, cellsPerBar, model) {
+export function chartSectionHtml(section, caption, layout, model) {
     return `<div class="cc-sec"><div class="cc-cap"><b>${escapeHtml(section.name)}</b>`
         + `<span>${escapeHtml(caption)}</span></div>`
-        + `${chartLinesHtml(section, cellsPerBar, model).join('')}</div>`;
+        + `${chartLinesHtml(section, layout, model).join('')}</div>`;
+}
+
+/**
+ * "As sung": every section in the order it is sung, each drawn where it
+ * falls, named as the lyrics name it ("Verse 3") and counted ("3 of 7").
+ * The chart on its own, without lyrics.
+ */
+export function sungSectionsHtml(layout, model) {
+    const { alignment } = model;
+    const order = practiceOrder(model.chart, alignment);
+    return order.map((section, n) => {
+        const label = alignment.aligned ? alignment.pairs[n].lyric.label : section.name;
+        return chartSectionHtml({ ...section, name: label }, `${n + 1} of ${order.length}`, layout, model);
+    }).join('');
 }
 
 const LEGEND = 'Dashed line: cell. Faint <i>\\</i>: keep playing. '
     + 'Faint chord at the start of a line: carried over from the line above.';
 
-function chartBodyHtml(model, cellsPerBar) {
+function chartBodyHtml(model, layout) {
     const { chart, alignment } = model;
-    const parts = chart.sections.map(s => chartSectionHtml(s, sungCaption(s, model), cellsPerBar, model));
-    if (chart.form) {
+    const sung = layout.order === 'sung';
+    const parts = [sung
+        ? sungSectionsHtml(layout, model)
+        : chart.sections.map(s => chartSectionHtml(s, sungCaption(s, model), layout, model)).join('')];
+    if (chart.form && !sung) {
         parts.push(`<p class="cc-form">Form: ${chart.form.map(n => `<b>${escapeHtml(n)}</b>`).join(' · ')}</p>`);
     }
-    if (!alignment.aligned && alignment.reason === 'count') {
+    if (sung && !alignment.aligned && alignment.reason === 'count') {
         parts.push(`<p class="cc-note">This chart's form has ${alignment.formCount} sections and the lyrics have `
-            + `${alignment.lyricCount}, so Practice follows the chart's own form.</p>`);
+            + `${alignment.lyricCount}, so As sung follows the chart's own form.</p>`);
     }
     parts.push(`<p class="cc-legend">${LEGEND}</p>`);
     if (chart.by) parts.push(`<p class="cc-by">Chart by ${escapeHtml(chart.by)}</p>`);
     return parts.join('');
 }
-
-function headHtml(model, state) {
-    const seg = (attr, value, label, on) =>
-        `<button type="button" class="cc-seg-btn${on ? ' on' : ''}" data-cc-${attr}="${value}" aria-pressed="${on}">${label}</button>`;
-    return `<div class="cc-head"><span class="cc-head-lyrics">Lyrics</span><div class="cc-head-chart">`
-        + '<span class="cc-title">Chart</span>'
-        + `<span class="cc-seg" role="group" aria-label="View">${seg('mode', 'chart', 'Chart', state.mode === 'chart')}`
-        + `${seg('mode', 'practice', 'Practice', state.mode === 'practice')}</span>`
-        + `<span class="cc-bars-tg">Bars <span class="cc-seg" role="group" aria-label="Bars">`
-        + `${seg('bars', 1, 'One cell', state.bars === 1)}${seg('bars', 2, 'Two cells', state.bars === 2)}`
-        + '</span></span></div></div>';
-}
-
-// ---------------------------------------------------------------------------
-// Practice mode: the chart unrolled in the lyric chart's playing order
-// ---------------------------------------------------------------------------
 
 function div(className, html = '') {
     const el = document.createElement('div');
@@ -144,84 +134,20 @@ function div(className, html = '') {
 }
 
 /**
- * One section of practice mode. Chart lines sit level with (wide) or under
- * (narrow) their lyric lines when both have the same number; otherwise the
- * chart section sits beside / under the lyric section. Layout is CSS.
+ * Draw the chart into `host`. `ctx.column` adds the "Chart" column head the
+ * lyrics column answers with. The chart's text is em-sized, so Size scales it.
  */
-function practiceSection(section, n, total, cellsPerBar, model) {
-    const { alignment, opts } = model;
-    const pair = alignment.aligned ? alignment.pairs[n] : null;
-    const el = div('cc-psec');
-    el.innerHTML = `<div class="cc-plabel"><span>${escapeHtml(pair ? pair.lyric.label : section.name)}</span>`
-        + `<span class="cc-pcount">${n + 1} of ${total}</span></div>`;
-
-    const chartLines = chartLinesHtml(section, cellsPerBar, model);
-    if (!pair) {
-        el.append(div('cc-prow', `<div class="cc-plyric"></div><div class="cc-pchart">${chartLines.join('')}</div>`));
-        return el;
-    }
-
-    const body = div('');
-    body.innerHTML = renderSectionsHtml([pair.lyric], { ...opts, sectionLabels: false, compact: false, twoColumn: false });
-    const items = [...body.querySelectorAll('.section-content > *')];
-    const lines = items.filter(i => !i.classList.contains('song-comment'));
-
-    if (lines.length !== chartLines.length) {
-        const row = div('cc-prow', '<div class="cc-plyric"></div><div class="cc-pchart"></div>');
-        row.firstChild.append(...items);
-        row.lastChild.innerHTML = chartLines.join('');
-        el.append(row);
-        return el;
-    }
-    let line = 0;
-    for (const item of items) {
-        if (item.classList.contains('song-comment')) { el.append(item); continue; }
-        line += 1;
-        const row = div('cc-prow', '<div class="cc-plyric"></div>');
-        row.firstChild.append(item);
-        row.append(div('cc-pchart', chartLines[line - 1]));
-        el.append(row);
-    }
-    return el;
-}
-
-function practiceEl(model, cellsPerBar, fontScale) {
-    const order = practiceOrder(model.chart, model.alignment);
-    const el = div('cc-practice song-body');
-    if (fontScale) el.style.fontSize = `${fontScale}em`;
-    order.forEach((section, n) => el.append(practiceSection(section, n, order.length, cellsPerBar, model)));
-    return el;
-}
-
-// ---------------------------------------------------------------------------
-// The panel: header, toggles and either view
-// ---------------------------------------------------------------------------
-
-/** Draw the panel into `host`. The toggles redraw only the panel. */
 export function drawPanel(host, ctx) {
     const model = buildModel(ctx);
-    const state = { mode, bars: getBars() };
-    host.innerHTML = headHtml(model, state);
-    if (state.mode === 'practice') {
-        host.append(practiceEl(model, state.bars, ctx.fontScale));
-    } else {
-        host.insertAdjacentHTML('beforeend', `<div class="cc-chart">${chartBodyHtml(model, state.bars)}</div>`);
-    }
-    host.closest('.cc-cols')?.classList.toggle('cc-practice-on', state.mode === 'practice');
-    host.onclick = (e) => {
-        const btn = e.target.closest('[data-cc-mode], [data-cc-bars]');
-        if (!btn) return;
-        if (btn.dataset.ccMode) setMode(btn.dataset.ccMode);
-        else setBars(Number(btn.dataset.ccBars));
-        drawPanel(host, ctx);
-    };
+    const layout = { ...DEFAULT_LAYOUT, ...ctx.layout };
+    host.innerHTML = ctx.column ? '<div class="cc-colhead">Chart</div>' : '';
+    const body = div('cc-chart', chartBodyHtml(model, layout));
+    if (ctx.fontScale) body.style.fontSize = `${ctx.fontScale}em`;
+    host.append(body);
     return model;
 }
 
-/**
- * The lead-sheet part: add the chart column beside the lyrics. The column is always built; CSS shows it on wide
- * screens (the narrow ones get a Chart tab instead).
- */
+/** The lead-sheet part with the chart as a column beside the lyrics (wide screens). */
 export function mountLeadSheetChart(container, ctx) {
     const chordView = container.querySelector('#chord-view');
     if (!chordView) return;
@@ -231,10 +157,10 @@ export function mountLeadSheetChart(container, ctx) {
     chordView.replaceWith(cols);
     lyrics.append(chordView);
     cols.append(lyrics, column);
-    drawPanel(column, ctx);
+    drawPanel(column, { ...ctx, column: true });
 }
 
-/** The Chart part tab (narrow screens): the panel alone. */
+/** The Chart part: the chart alone. */
 export function renderChartTab(container, ctx) {
     container.innerHTML = '';
     const host = div('cc-tab');

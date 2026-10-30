@@ -99,7 +99,7 @@ export const TOUR_STEPS = [
     {
         id: 'key',
         page: 'lead',
-        targets: ['#key-pill'],
+        targets: ['#dock-key-btn'],
         title: 'Play it in your key',
         body: 'Move every chord to another key, or switch to Nashville numbers.',
     },
@@ -502,9 +502,9 @@ export function startTour({ steps = TOUR_STEPS, routes = TOUR_ROUTES, onStep, on
     }
 
     function bringIntoView(el) {
-        // The top band auto-hides on song pages; bring it back for a step
-        // that points into it.
-        if (el.closest('.app-topbar')) document.body.classList.remove('chrome-hidden');
+        // Both bands can auto-hide on song pages (Display ▸ Auto-hide
+        // controls); bring them back for a step that points into one.
+        if (el.closest('.app-topbar, .app-bottomband')) document.body.classList.remove('chrome-hidden');
         const r = el.getBoundingClientRect();
         if (r.top < 0 || r.bottom > window.innerHeight) {
             el.scrollIntoView({ block: 'center' });

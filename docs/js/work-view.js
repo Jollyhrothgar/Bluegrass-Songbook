@@ -1,7 +1,7 @@
-// WorkView — the unified song page. ONE page per song: title + writer,
-// a pill row (Key / Display / Info / Arrangement), part tabs when a work
-// has multiple parts, the active part's content, and the app shell's
-// top/bottom bands for actions and playback controls.
+// WorkView — the unified song page. ONE page per song: title + writer, the
+// active part's content, and the app shell's two docks: the top band (back,
+// search, Edit, ⋯) and the bottom band (Key, Size, View, Display for a lyric
+// sheet or chart; the player for a tab; song-dock.js).
 //
 // This replaced the old dashboard-of-cards and the separate song page:
 // every route (search, lists, deep links, history) lands in openWork().
@@ -14,6 +14,9 @@ import {
     loadedTablature, setLoadedTablature,
     tablaturePlayer, setTablaturePlayer,
     currentDetectedKey, setCurrentDetectedKey,
+    fontSizeLevel, setFontSizeLevel,
+    chartBeside, setChartBeside, autoHideControls,
+    showAbcNotation, setShowAbcNotation,
     setOriginalDetectedKey,
     setOriginalDetectedMode,
     listContext, setListContext,
@@ -32,6 +35,7 @@ import {
     stopAbcPlayback,
     renderLeadSheetContent, renderChartTabContent,
     chartIsWide, CHART_WIDE_MQ,
+    setDockProvider,
     initKeyState
 } from './song-view.js';
 import {
@@ -76,7 +80,8 @@ import { showListPicker } from './list-picker.js';
 import { openFlagModal, openFeedbackModal } from './flags.js';
 import { trackSongView, trackSongNotFound } from './analytics.js';
 import { setTopBar, setBottomBand, pill, setChromeAutoHide, openSheet } from './shell.js';
-import { practiceLinks, buildKeyPill, buildDisplayPill, renderDetails, EXPORT_ACTIONS, handleExport } from './song-controls.js';
+import { practiceLinks, buildKeyButton, buildDisplayButton, renderDetails, EXPORT_ACTIONS, handleExport } from './song-controls.js';
+import { viewModel, viewControl, sizeControl, readingDock, fillViewSheet } from './song-dock.js';
 import { showToast } from './toast.js';
 import { importFileToOtf, pickTabFile, chooseTabFile } from './pwa.js';
 import { skippedLine } from './tef-skipped.js';
@@ -105,6 +110,7 @@ let activeEditBand = null;       // bottom band bound to the live editor
 let unregisterTabReturn = null;  // auth-return source for the live tab editor
 let tabAuthoring = null;         // {kind:'add'|'new', part, take, target, otf}
 let takeStatusLine = null;       // "Submitted — live now…" under the take header
+let lastHybrid = false;          // the lead sheet holds chords AND ABC (known once it renders; View lists Chords / Notation)
 
 /**
  * Tear down everything the tablature view holds live handles to: the
@@ -632,7 +638,8 @@ export async function openWork(workId, options = {}) {
 
     setCurrentChordpro(null);
     setCurrentView('song');
-    setChromeAutoHide(true);
+    setChromeAutoHide(autoHideControls);
+    lastHybrid = false;
 
     setOriginalDetectedKey(null);
     setOriginalDetectedMode(null);
@@ -678,7 +685,6 @@ export async function openWork(workId, options = {}) {
                 p.aliases?.includes(partId)
             ) || null;
     }
-    if (activePart?.type === 'chord-chart' && chartIsWide()) activePart = null;   // wide: the chart is a column
     if (!activePart) {
         activePart = availableParts.find(p => p.default) || availableParts[0] || null;
     }
@@ -766,18 +772,12 @@ export function renderWorkView() {
 
     const isInitial = pendingInitialRender;
     pendingInitialRender = false;
+    setDockProvider(dockProvider);
 
     container.innerHTML = '';
 
     // Title row: song title + small writer line
     container.appendChild(renderTitleHeader());
-
-    // Pill row: Key / Display / Info / Arrangement
-    container.appendChild(renderPillRow());
-
-    // Part tabs (segmented control) — only when the work has multiple parts
-    const tabs = renderPartTabs();
-    if (tabs) container.appendChild(tabs);
 
     // Arrangement bar: whose take of the active instrument you're reading
     // (filled by renderArrangementBar; empty + hidden for non-tab parts)
@@ -919,10 +919,6 @@ function selectPart(part) {
     activePart = part;
     part.arrangementsOpen = false;   // never hand over an open catalog
 
-    document.querySelectorAll('#part-tabs .part-tab').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.partId === part.partId);
-    });
-
     renderArrangementBar();
 
     const content = document.getElementById('work-part-content');
@@ -1025,57 +1021,6 @@ function renderTitleHeader() {
     const detailsBtn = header.querySelector('#song-details-btn');
     detailsBtn.addEventListener('click', () => openDetails(detailsBtn));
     return header;
-}
-
-/**
- * Pill row under the title (shell.js pill primitive).
- */
-function renderPillRow() {
-    const row = document.createElement('div');
-    row.className = 'song-pill-row';
-    row.id = 'song-pill-row';
-
-    // A provisional work has no chart, no key, no versions and no index row
-    // to describe — every pill here would be an empty popover.
-    if (currentWork.provisional) return row;
-
-    if (songHasContent(currentWork)) {
-        row.appendChild(buildKeyPill(currentWork));
-        row.appendChild(buildDisplayPill());
-    }
-    if (currentGroupVersions.length > 1 || currentArrangements.length > 1 ||
-        currentWork.variant_of || currentWork.variant_label) {
-        row.appendChild(buildArrangementPill());
-    }
-    return row;
-}
-
-/**
- * Segmented control for part switching. Null when there's nothing to switch.
- */
-function renderPartTabs() {
-    if (availableParts.length < 2) return null;
-    const bar = document.createElement('div');
-    bar.className = 'part-tabs';
-    bar.id = 'part-tabs';
-    // Lyrics + Chart only: wide screens show both at once, so no tabs at all
-    if (availableParts.every(p => p.type === 'lead-sheet' || p.type === 'chord-chart')) {
-        bar.classList.add('part-tabs-chart-only');
-    }
-    for (const part of availableParts) {
-        const btn = document.createElement('button');
-        btn.className = 'part-tab' + (part === activePart ? ' active' : '');
-        btn.dataset.partId = part.partId;
-        btn.dataset.partType = part.type;
-        const n = part.arrangements?.length || 0;
-        // Badge only when there's a choice to be made — a lone arrangement
-        // is just "the tab", and "1" would be noise on every other pill.
-        btn.innerHTML = escapeHtml(part.label || part.type) +
-            (n > 1 ? `<span class="part-tab-count">${n}</span>` : '');
-        btn.addEventListener('click', () => selectPart(part));
-        bar.appendChild(btn);
-    }
-    return bar;
 }
 
 // ============================================
@@ -1274,22 +1219,107 @@ function buildPlaceholderCta(hasContent) {
 // ARRANGEMENT PILL (replaces the dashboard version cards)
 // ============================================
 
-/**
- * Arrangement pill: lists the group's versions with canonical badge,
- * variant labels and vote counts; clicking navigates to that version.
- */
-function buildArrangementPill() {
-    const versions = currentGroupVersions.length ? currentGroupVersions : [currentWork];
-    // The current work contributes one entry per lead sheet it holds, not one
-    // entry full stop — a fork lives on the work it forked from.
-    const count = versions.length +
-        (currentArrangements.length ? currentArrangements.length - 1 : 0);
-    const label = count > 1 ? `${count} versions` : 'Version';
-    return pill(label, (container) => {
-        container.innerHTML = '<div class="arrangement-loading">Loading…</div>';
-        renderArrangementList(container, versions);
-    }, { id: 'arrangement-pill', title: 'Versions of this song', className: 'pill-wide' });
+// ============================================
+// THE DOCK: View, Key, Size, Display (song-dock.js draws it)
+// ============================================
+
+/** Does this song have more than one version (a sibling work, or a fork of its chart)? */
+function hasVersions() {
+    return currentGroupVersions.length > 1 || currentArrangements.length > 1 ||
+        !!currentWork?.variant_of || !!currentWork?.variant_label;
 }
+
+/** What View offers this song right now. `ctx` is what the lead sheet knows when it renders. */
+function currentViewModel(ctx = {}) {
+    if (ctx.hybrid !== undefined) lastHybrid = ctx.hybrid;
+    return viewModel({
+        parts: availableParts,
+        active: activePart,
+        hybrid: lastHybrid,
+        abcShown: showAbcNotation,
+        wide: chartIsWide(),
+        beside: chartBeside,
+        versions: hasVersions(),
+    });
+}
+
+/** Redraw the lyric sheet or chart on screen (its dock too, which the render mounts). */
+function rerenderTextPart() {
+    const content = document.getElementById('work-part-content');
+    const chordpro = currentChordpro || activePart?.content;
+    if (!content || !chordpro || !activePart) return;
+    const render = activePart.type === 'chord-chart' ? renderChartTabContent : renderLeadSheetContent;
+    render(content, currentWork, chordpro, false);
+}
+
+/** A View choice: what each id does. Lyrics / Lyrics + Chart / Chart / Chords / Notation. */
+function pickView(id) {
+    const lead = availableParts.find(p => p.type === 'lead-sheet');
+    const chart = availableParts.find(p => p.type === 'chord-chart');
+    let changed = false;
+    if (id === 'chart') {
+        selectPart(chart);
+        return;
+    }
+    if ((id === 'lyrics' || id === 'both') && chart && chartIsWide()) {
+        changed = setChartBeside(id === 'both');
+    }
+    if (id === 'chords' || id === 'notation') {
+        changed = showAbcNotation !== (id === 'notation');
+        setShowAbcNotation(id === 'notation');
+    }
+    if (activePart !== lead) selectPart(lead);          // selectPart draws it
+    else if (changed) rerenderTextPart();
+}
+
+function pickTab(partId) {
+    selectPart(availableParts.find(p => p.partId === partId));
+}
+
+/**
+ * The View sheet (frame 9): the choices, the versions with their votes and
+ * badges, and the other parts. Opened by the dock's View ▾ on every part.
+ */
+function openViewSheet(opener) {
+    const model = currentViewModel();
+    openSheet({
+        id: 'song-view-sheet', title: 'View', opener,
+        build: (content, sheet) => fillViewSheet(content, model, {
+            onPick: (id) => { sheet.close(); pickView(id); },
+            onPickTab: (partId) => { sheet.close(); pickTab(partId); },
+            renderVersions: (host) => {
+                const versions = currentGroupVersions.length ? currentGroupVersions : [currentWork];
+                host.innerHTML = '<div class="arrangement-loading">Loading…</div>';
+                // Picking a version leaves the page for it: close the sheet. A vote stays on it.
+                host.addEventListener('click', (e) => {
+                    if (e.target.closest('.arrangement-item') && !e.target.closest('.arrangement-vote-btn')) sheet.close();
+                });
+                renderArrangementList(host, versions);
+            },
+        }),
+    });
+}
+
+/** Key · Size · View · Display, for the lyric sheet and the chart. */
+function buildReadingDock(ctx) {
+    if (currentWork.provisional) return null;
+    const song = currentWork;
+    const size = sizeControl({
+        canStep: (dir) => fontSizeLevel + dir >= -5 && fontSizeLevel + dir <= 6,
+        step: (dir) => setFontSizeLevel(fontSizeLevel + dir),
+    });
+    const view = viewControl(currentViewModel(ctx), { onPick: pickView, onOpen: openViewSheet });
+    const display = buildDisplayButton(() => ({
+        hasChart: !!song.chord_chart && !songHasAbc(song),
+        wide: chartIsWide(),
+    }));
+    return readingDock(buildKeyButton(song), size, view, display);
+}
+
+const dockProvider = {
+    reading: buildReadingDock,
+    view: (ctx) => viewControl(currentViewModel(ctx), { onPick: pickView, onOpen: openViewSheet }),
+};
 
 /**
  * The ballot key for one lead-sheet arrangement of the current work.
@@ -1606,11 +1636,12 @@ export function configureWorkPage(hooks = {}) {
     if (prefSubscriptionsRegistered) return;
     prefSubscriptionsRegistered = true;
 
-    // Re-render only the part content on pref changes: pills stay mounted,
-    // so an open Key/Display popover survives its own updates.
+    // A display choice redraws the lyric sheet or chart on screen (and its
+    // dock, which the render mounts); a sheet that is open stays open
     const displayPrefKeys = [
         'compactMode', 'nashvilleMode', 'twoColumnMode',
         'chordDisplayMode', 'showSectionLabels', 'fontSizeLevel',
+        'chartCells', 'chartBars', 'chartOrder',
         'currentDetectedKey',
     ];
     for (const key of displayPrefKeys) {
@@ -1618,25 +1649,26 @@ export function configureWorkPage(hooks = {}) {
             if (currentView !== 'song' || !currentWork) return;
             if (activePart && activePart.type !== 'lead-sheet' && activePart.type !== 'chord-chart') return;
             const content = document.getElementById('work-part-content');
-            const chordpro = currentChordpro || activePart?.content;
             // A key notification is delivered a frame after the write, so a
             // chart rendered in between has ALREADY used this key (openWork
             // clears it and the render detects it again). Redrawing would
             // repeat identical work.
             if (key === 'currentDetectedKey' && content &&
                 content.dataset.renderedKey === String(value ?? '')) return;
-            if (content && chordpro) {
-                const render = activePart?.type === 'chord-chart' ? renderChartTabContent : renderLeadSheetContent;
-                render(content, currentWork, chordpro, false);
-            }
+            rerenderTextPart();
         });
     }
 
-    // Widening past the chart breakpoint turns the Chart tab into a column
-    // (the lead sheet carries it), so leave the tab for the lead sheet.
-    window.matchMedia?.(CHART_WIDE_MQ).addEventListener?.('change', (e) => {
-        if (!e.matches || currentView !== 'song' || activePart?.type !== 'chord-chart') return;
-        selectPart(availableParts.find(p => p.type === 'lead-sheet'));
+    // Auto-hide controls turned on or off
+    subscribe('autoHideControls', (on) => {
+        if (currentView === 'song') setChromeAutoHide(on);
+    });
+
+    // Crossing the chart breakpoint changes what View offers (Lyrics + Chart
+    // needs the room) and whether the chart column can show: draw it again.
+    window.matchMedia?.(CHART_WIDE_MQ).addEventListener?.('change', () => {
+        if (currentView !== 'song') return;
+        if (activePart?.type === 'lead-sheet' || activePart?.type === 'chord-chart') rerenderTextPart();
     });
 }
 
@@ -3274,7 +3306,7 @@ export function openNewTabPage(options = {}) {
 
     setCurrentChordpro(null);
     setCurrentView('song');
-    setChromeAutoHide(true);
+    setChromeAutoHide(autoHideControls);
     teardownTablatureView();
     setBottomBand(null);
     setLoadedTablature(null);
@@ -3556,6 +3588,15 @@ function createTablatureControls(otf, part) {
         step: (delta) => setKeyIdx(keyIdx + delta),
         onChange: (cb) => changeListeners.push(cb),
     };
+
+    // View ▾ ends the band and stays out of the ⚙ collapse (G19b): with the
+    // part tabs gone, it is how a tab page reaches the lyrics and other parts.
+    const viewModelHere = currentViewModel();
+    if (viewModelHere.kind !== 'none') {
+        const viewBtn = viewControl({ ...viewModelHere, kind: 'sheet' }, { onPick: pickView, onOpen: openViewSheet });
+        viewBtn.classList.add('tab-view-btn');
+        controls.appendChild(viewBtn);
+    }
 
     // Phone: everything but Play/Stop/tempo/loop moves into a ⚙ sheet. The
     // nodes stay descendants of `controls`, so the querySelector wiring in

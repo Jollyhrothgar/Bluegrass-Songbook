@@ -72,6 +72,15 @@ export function initShell({ nav = [], onToggleTheme, onReportBug, onTour } = {})
     if (typeof ResizeObserver !== 'undefined') {
         new ResizeObserver(syncBandHeight).observe(bottomBandEl);
     }
+    // The top band's height, the same way: the chart column sticks under it
+    syncTopbarHeight();
+    if (typeof ResizeObserver !== 'undefined') {
+        new ResizeObserver(syncTopbarHeight).observe(topbarEl);
+    }
+    // Tapping the peek strip of a hidden bottom band brings both bands back
+    bottomBandEl.addEventListener('click', () => {
+        document.body.classList.remove('chrome-hidden');
+    });
 
     actionsEl = topbarEl.querySelector('#topbar-actions');
     titleEl = topbarEl.querySelector('#topbar-title');
@@ -497,6 +506,12 @@ export function setBottomBand(contentEl) {
     syncBandHeight();
 }
 
+/** Publish the top band's live height as --topbar-h (the band is fixed, so a sticky column can sit under it). */
+function syncTopbarHeight() {
+    if (!topbarEl) return;
+    document.documentElement.style.setProperty('--topbar-h', `${topbarEl.offsetHeight}px`);
+}
+
 /** Publish the bottom band's live height as --bottomband-h (0 when hidden). */
 function syncBandHeight() {
     if (!bottomBandEl) return;
@@ -541,10 +556,11 @@ export function setBanner(message, { onRetry, onDismiss, retryLabel = 'Retry' } 
 }
 
 /**
- * Auto-hiding chrome (progressive disclosure — replaces focus mode):
- * on pages that enable it, the top band slides away as you scroll down
- * into the content and returns on scroll-up, tapping the top edge, or
- * returning to the top. No mode, no toggle, no state to learn.
+ * Auto-hiding chrome (Display ▸ Auto-hide controls, off by default): when
+ * the page enables it, BOTH bands slide away as you scroll down into the
+ * content and return on scroll-up, tapping a peek strip, or returning to the
+ * top. The shell owns no state: the page passes the reader's choice
+ * (`setChromeAutoHide(true)` only on a song page whose reader turned it on).
  */
 let autoHideEnabled = false;
 let lastScrollY = 0;

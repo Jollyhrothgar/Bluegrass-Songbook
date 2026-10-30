@@ -21,6 +21,7 @@ function makeControls() {
     const controls = document.createElement('div');
     controls.className = 'tab-controls';
     controls.innerHTML = `
+        <button class="tab-view-btn dock-btn">View</button>
         <div class="qc-group tab-size-group">
             <button class="tab-size-down qc-btn">−</button>
             <span class="qc-label">Aa</span>
@@ -211,6 +212,9 @@ describe('bindBandToEditor', () => {
             .toBe(DISABLED_REASONS.repeats);
         expect(controls.querySelector('.tab-feel-group .pill-mode-btn').disabled).toBe(true);
         expect(controls.querySelector('.track-checkbox').disabled).toBe(true);
+        // View would leave the editor behind: ✓ Done is the way out
+        expect(controls.querySelector('.tab-view-btn').disabled).toBe(true);
+        expect(controls.querySelector('.tab-view-btn').title).toBe(DISABLED_REASONS.view);
 
         // …but none of them are gone
         expect(controls.querySelector('.qc-key-group')).not.toBeNull();

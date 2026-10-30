@@ -21,6 +21,7 @@ export const DISABLED_REASONS = {
     repeats: 'The editor always shows written measures, repeat signs and all.',
     feel: 'Feel is a reading choice; while editing, the tab plays as written.',
     tracks: 'While editing, playback follows the document — every track sounds.',
+    view: 'Finish the edit (✓ Done) to switch parts.',
 };
 
 /** Disable a control and say why (on the control AND its group wrapper). */
@@ -138,6 +139,7 @@ export function bindBandToEditor(controls, editor, { actions = null } = {}) {
     disableGroup(controls, '.tab-repeat-group', DISABLED_REASONS.repeats);
     disableGroup(controls, '.tab-feel-group', DISABLED_REASONS.feel);
     disableGroup(controls, '.tab-track-mixer', DISABLED_REASONS.tracks);
+    disableWithReason(controls.querySelector('.tab-view-btn'), DISABLED_REASONS.view);
 
     // ── Follow the live document ──────────────────────────────────────
     const facade = editor.state?.facade;

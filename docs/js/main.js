@@ -26,6 +26,7 @@ import {
     showSectionLabels,
     twoColumnMode,
     fontSizeLevel,
+    autoHideControls,
     printFontPxForLevel,
     PRINT_BASE_FONT_PX, PRINT_FONT_PX_MIN, PRINT_FONT_PX_MAX,
     setListContext, listContext,
@@ -665,8 +666,9 @@ function initViewSubscription() {
             applySearchScope();
         }
 
-        // Chrome auto-hide only lives on the song page
-        setChromeAutoHide(view === 'song');
+        // Chrome auto-hide only lives on the song page, and only when the
+        // reader turned it on (Display ▸ Auto-hide controls)
+        setChromeAutoHide(view === 'song' && autoHideControls);
 
         // Close any open editor hints panel
         closeHints();

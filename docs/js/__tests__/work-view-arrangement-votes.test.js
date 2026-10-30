@@ -1,4 +1,4 @@
-// Per-arrangement voting in the Arrangement pill (issue #233).
+// Per-arrangement voting in View ▸ Versions (issue #233; the Arrangement pill became the View sheet in G19b).
 //
 // The contract Phase 2c owes: a fork is a version of the song, so it gets a
 // ballot of its own. Votes RANK the takes; the editorial `default` flag still
@@ -12,6 +12,7 @@ import {
 import { setAllSongs, setSongGroups } from '../state.js';
 import { clearSongContentCache } from '../song-content.js';
 import { mergeCorpus } from '../corpus.js';
+import { initShell } from '../shell.js';
 
 const ORIGINAL = '{meta: title How Long Blues}\n[G]How [C]long\n';
 const SIMPLE = '{meta: title How Long Blues}\n[G]How long\n';
@@ -45,13 +46,13 @@ const BODY = {
 const settle = () => new Promise(r => setTimeout(r, 0));
 
 function pillItems() {
-    return [...document.querySelectorAll('#arrangement-pill .arrangement-item')];
+    return [...document.querySelectorAll('#song-view-sheet .arrangement-item')];
 }
 function openPill() {
-    document.querySelector('#arrangement-pill .pill-btn').click();
+    document.querySelector('#dock-view-btn').click();   // View ▾ opens the sheet that lists the versions
 }
 function flipNote() {
-    return document.querySelector('#arrangement-pill .arrangement-flip-note');
+    return document.querySelector('#song-view-sheet .arrangement-flip-note');
 }
 
 /** A SupabaseAuth stand-in whose vote tables the test controls. */
@@ -80,7 +81,14 @@ beforeEach(async () => {
     vi.restoreAllMocks();
     clearSongContentCache();
     configureWorkPage({ isTrusted: () => false });
-    document.body.innerHTML = '<div id="song-content"></div>';
+    // The dock lives in the shell's bottom band, which holds on to its element:
+    // build the page once and empty what the last test left
+    if (!document.getElementById('app-bottomband')) {
+        document.body.innerHTML = '<div id="song-content"></div>';
+        initShell();
+    }
+    document.getElementById('song-content').innerHTML = '';
+    document.querySelectorAll('.notes-sheet, .notes-sheet-backdrop').forEach(el => el.remove());
     window.matchMedia = () => ({ matches: false, addEventListener() {} });
     global.fetch = vi.fn((url) => Promise.resolve(
         BODY[url] === undefined
@@ -166,7 +174,7 @@ describe('defaultFlipSignal', () => {
     });
 });
 
-describe('Arrangement pill — per-arrangement ballots', () => {
+describe('View ▸ Versions — per-arrangement ballots', () => {
     it('shows each take its own count and the reader their own vote', async () => {
         stubAuth({
             arrCounts: { '': 3, simplified: 8 },
@@ -283,7 +291,7 @@ describe('Arrangement pill — per-arrangement ballots', () => {
     });
 });
 
-describe('Arrangement pill — the default-flip signal', () => {
+describe('View ▸ Versions — the default-flip signal', () => {
     it('surfaces the imbalance without changing anything', async () => {
         stubAuth({ arrCounts: { '': 1, simplified: 6 } });
         await openWork('how-long-blues');

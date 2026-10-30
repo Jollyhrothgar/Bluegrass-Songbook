@@ -1,17 +1,17 @@
 // Unit tests for song-controls.js (unified song page pills)
-import { describe, it, expect, beforeEach } from 'vitest';
-import { keyPillLabel, transposeBySemitone, practiceLinks, buildKeyPill, renderDetails } from '../song-controls.js';
+import { describe, it, expect, beforeEach, afterEach } from 'vitest';
+import { keyButtonLabel, transposeBySemitone, practiceLinks, renderKeyContent, renderDisplayContent, renderDetails } from '../song-controls.js';
 import * as state from '../state.js';
 
-describe('keyPillLabel', () => {
-    it('formats the current key', () => {
-        expect(keyPillLabel('G')).toBe('Key of G');
-        expect(keyPillLabel('F#')).toBe('Key of F#');
+describe('keyButtonLabel', () => {
+    it('formats the current key as the dock draws it', () => {
+        expect(keyButtonLabel('G')).toBe('Key: G');
+        expect(keyButtonLabel('F#')).toBe('Key: F#');
     });
 
     it('falls back to plain "Key" when no key is known', () => {
-        expect(keyPillLabel(null)).toBe('Key');
-        expect(keyPillLabel('')).toBe('Key');
+        expect(keyButtonLabel(null)).toBe('Key');
+        expect(keyButtonLabel('')).toBe('Key');
     });
 });
 
@@ -84,13 +84,59 @@ describe('practiceLinks', () => {
     });
 });
 
-describe('Key pill', () => {
+describe('Key sheet', () => {
     it('no longer carries a Strum Machine button', () => {
-        const pillEl = buildKeyPill({ title: 'X', strum_machine_url: 'https://s.example/x' });
-        pillEl.pillApi.refresh();
-        expect(pillEl.innerHTML).toContain('pill-nashville-btn');
-        expect(pillEl.innerHTML).not.toContain('pill-strum-btn');
-        expect(pillEl.innerHTML).not.toContain('Strum Machine');
+        const el = document.createElement('div');
+        renderKeyContent(el, { title: 'X', strum_machine_url: 'https://s.example/x' });
+        expect(el.innerHTML).toContain('pill-nashville-btn');
+        expect(el.innerHTML).not.toContain('pill-strum-btn');
+        expect(el.innerHTML).not.toContain('Strum Machine');
+    });
+});
+
+describe('Display sheet', () => {
+    // one sheet at a time: jsdom's selector engine finds a duplicate #id elsewhere in the document before it looks inside the container
+    const open = (opts) => { document.body.innerHTML = ''; const el = document.createElement('div'); document.body.appendChild(el); renderDisplayContent(el, opts); return el; };
+    afterEach(() => { document.body.innerHTML = ''; state.setChartCells(4); state.setChartBars(1); state.setChartOrder('once'); state.setAutoHideControls(false); });
+
+    it('holds layout, chords and Auto-hide; Size is the dock\'s, not this sheet\'s', () => {
+        const el = open({ hasChart: false, wide: true });
+        expect([...el.querySelectorAll('input[type=checkbox]')].map(i => i.id))
+            .toEqual(['pill-twocol', 'pill-sections', 'pill-compact', 'pill-autohide']);
+        expect(el.querySelector('#pill-chord-mode')).toBeTruthy();
+        expect(el.querySelector('[data-size]')).toBeNull();
+    });
+
+    it('has the Chart group only for a song with a chart', () => {
+        expect(open({ hasChart: false }).querySelector('#pill-chart-cells')).toBeNull();
+        const el = open({ hasChart: true });
+        expect([...el.querySelectorAll('#pill-chart-cells .pill-mode-btn')].map(b => b.textContent)).toEqual(['2', '4', '6', '8']);
+        expect([...el.querySelectorAll('#pill-chart-bars .pill-mode-btn')].map(b => b.textContent)).toEqual(['One cell', 'Two cells']);
+        expect([...el.querySelectorAll('#pill-chart-order .pill-mode-btn')].map(b => b.textContent)).toEqual(['Each section once', 'As sung']);
+    });
+
+    it('two columns are for wide screens only', () => {
+        expect(open({ wide: false }).querySelector('#pill-twocol').disabled).toBe(true);
+        expect(open({ wide: true }).querySelector('#pill-twocol').disabled).toBe(false);
+    });
+
+    it('the Chart group writes the remembered choices and lights the current one', () => {
+        const el = open({ hasChart: true });
+        el.querySelector('#pill-chart-cells [data-value="6"]').click();
+        el.querySelector('#pill-chart-bars [data-value="2"]').click();
+        el.querySelector('#pill-chart-order [data-value="sung"]').click();
+        expect([state.chartCells, state.chartBars, state.chartOrder]).toEqual([6, 2, 'sung']);
+        expect(el.querySelector('#pill-chart-cells .active').textContent).toBe('6');
+        const again = open({ hasChart: true });
+        expect(again.querySelector('#pill-chart-order .active').textContent).toBe('As sung');
+    });
+
+    it('Auto-hide controls is off until it is turned on, and is remembered', () => {
+        const el = open({});
+        expect(el.querySelector('#pill-autohide').checked).toBe(false);
+        el.querySelector('#pill-autohide').click();
+        expect(state.autoHideControls).toBe(true);
+        expect(open({}).querySelector('#pill-autohide').checked).toBe(true);
     });
 });
 
