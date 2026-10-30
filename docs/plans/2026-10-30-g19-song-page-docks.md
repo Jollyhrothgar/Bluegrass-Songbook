@@ -96,6 +96,60 @@ scope (F10/F11 own the new look elsewhere).
 | Tab "View track" (banjo / guitar / bass / All) | View ▸ Tracks, shown on multi-track tabs |
 | List nav bar (`#song-nav-bar`: List · 1 of 5 · Prev · Next) | ← names the list; ‹ 1 of 5 › in the bottom dock; the bar is deleted |
 
+### Must carry over (the mockups simplified these; the build keeps them)
+
+- **Export / Print:** all five of today's options: Print, Copy ChordPro, Copy
+  Plain Text, Download .pro, Download .txt. The ⋯ mockup shows three.
+- **Details:** everything the Info pill has:
+  - writers and recordings, with the "+n" expander
+  - From (book)
+  - Source
+  - Notes
+  - tags, tag votes and "+ Add your own"
+
+  The mockup shows only the facts.
+- **View ▸ Versions:** the vote buttons and the "Canonical" / "viewing" badges.
+- **Tab editor:** the "Tab by" / "Link" credit fields above the editor (frame
+  9 left them out).
+- **Tab view:** the attribution block after the tab ("Tabbed by …", "View on
+  Banjo Hangout", the disclaimer). The new credit line under the title is in
+  addition, not instead.
+- **Tab status notices** after a submission or a `.tef` import (`.arr-status`,
+  `.arr-skipped`): they lived in the takes bar and stay in the page, under the
+  credit line.
+- **Lyrics editor:** the notice "Songs go live as soon as you submit them",
+  which shared a row with the in-page "← Back" that goes.
+- **Placeholder:** the Wanted section (+ Request a part, + Add a tab) under
+  "Help complete this song".
+- **⋯:** the site-wide group (Install app … Send Feedback).
+- **Lead sheet:** the "Source:" link at the end of the song stays; Details
+  shows it too.
+
+### Further away than today (deliberate unless Mike says otherwise)
+
+- **Lists / Save to list:** one tap → two (⋯ ▸ Save to list…).
+- **Export on desktop:** two taps → three.
+- **Theme, Report a bug and the desktop Sign in button:** now in ⋯. Signed
+  out, Submit in either editor still asks you to sign in and keeps the draft.
+- **Switching part, version or track:** one tap → two (View).
+- **Desktop tab dock:** today's desktop band shows Size, Play in, metronome,
+  count-in, loop, Repeats, Feel and the mixer in one row.
+  - **Recommendation:** keep them inline on desktop and collapse into Display
+    only when the dock is narrower than 640px, as the band already does.
+  - Mockup D1 shows only ▶ · Tempo · View · Display; that would make desktop
+    players reach into a sheet for things that are one click today.
+
+### Removed on purpose
+
+- **Chord-chart Practice mode** (chart rows interleaved with lyric lines,
+  G18b2): Mike found it harder to perform from than lyrics beside a chart. It
+  is replaced by View ▸ Lyrics + Chart and Display ▸ Chart ▸ Order ▸ As sung.
+- **Auto-hide on by default:** now off.
+- **The "Differs from the chart" notes:** removed (#342).
+- **Edit at the end of the song.**
+- **The Key and Display pills on tab and ABC pages**, where they did nothing.
+- **The vestigial focus-mode "Exit" button.**
+
 ## The views the mockups didn't draw
 
 ### Tab
