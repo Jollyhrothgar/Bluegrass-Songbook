@@ -4,7 +4,10 @@
     "title": "Katy Hill (Guitar Solo)",
     "time_signature": "4/4",
     "tempo": 270,
-    "composer": "Bryan Sutton arranged by Lee Marcus"
+    "composer": "Bryan Sutton arranged by Lee Marcus",
+    "tab_by": {
+      "name": "Lee Marcus"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

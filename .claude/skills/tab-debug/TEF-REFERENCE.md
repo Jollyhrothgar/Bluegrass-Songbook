@@ -84,6 +84,10 @@ table, chord table, measures, tracks, 0x64 block, reading list, components
   imported raw as `composer`, like V2; read by both importers).
 - **Credit**: `metadata.tab_by` is the last comments line `Tab by: NAME <URL>`
   (the colon matters: about 30 corpus files say `Tab by Name` and are left alone).
+  Failing that, TablEdit's own default `TablEdited by NAME` line (V2 and V3; also `Arranged|Transcribed|Modified
+  and|& TablEdited by`, `TablEdited and|& Arr.|Arranged by`) when NAME is clean: at most 60 characters and 6 words, words of
+  letters, digits and `. ' -`, each with a letter; 228 corpus files. Anything else stays plain comment text. The writer
+  keeps a V2 source's comments too and adds no second credit line when the existing one already reads as this `tab_by`.
 - **Capo**: +12 is the capo (read by us and by TablEdit's loader). +10's low
   nibble is the 5-string capo offset `capo + t1 - t5 - 5` (V2 loader
   FUN_10004632c recomputes it; 14 of 16 corpus 5-string capo records agree).

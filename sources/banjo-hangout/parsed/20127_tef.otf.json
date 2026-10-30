@@ -5,6 +5,9 @@
     "time_signature": "4/4",
     "tempo": 240,
     "key": "Em",
+    "tab_by": {
+      "name": "Richard Van Patten"
+    },
     "time_signature_changes": [
       {"measure": 38, "time_signature": "2/4"},
       {"measure": 58, "time_signature": "2/4"}

@@ -4,7 +4,10 @@
     "title": "Cattle In The Cane",
     "time_signature": "4/4",
     "tempo": 150,
-    "key": "A"
+    "key": "A",
+    "tab_by": {
+      "name": "Derek N Scarr"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

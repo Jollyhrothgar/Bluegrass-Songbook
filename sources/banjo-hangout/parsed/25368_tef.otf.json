@@ -6,6 +6,9 @@
     "tempo": 252,
     "key": "Dm",
     "composer": "Kenny Baker",
+    "tab_by": {
+      "name": "Greg Crisp"
+    },
     "time_signature_changes": [
       {"measure": 35, "time_signature": "2/4"}
     ]

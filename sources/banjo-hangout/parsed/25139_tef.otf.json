@@ -5,7 +5,10 @@
     "time_signature": "4/4",
     "tempo": 260,
     "key": "G",
-    "composer": "After the playing of Peter Schwimmer"
+    "composer": "After the playing of Peter Schwimmer",
+    "tab_by": {
+      "name": "Michael E Corcoran"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

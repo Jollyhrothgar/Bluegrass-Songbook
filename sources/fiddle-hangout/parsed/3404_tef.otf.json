@@ -6,6 +6,9 @@
     "tempo": 288,
     "key": "G",
     "composer": "Bill Monroe - Kenny Baker",
+    "tab_by": {
+      "name": "mmuussiiccaall"
+    },
     "time_signature_changes": [
       {"measure": 27, "time_signature": "6/4"},
       {"measure": 34, "time_signature": "6/4"}

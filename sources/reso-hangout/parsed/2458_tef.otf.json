@@ -5,7 +5,10 @@
     "time_signature": "3/4",
     "tempo": 100,
     "key": "Dm",
-    "composer": "Based on Rob Ickes - Big Time"
+    "composer": "Based on Rob Ickes - Big Time",
+    "tab_by": {
+      "name": "John Mortensen"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

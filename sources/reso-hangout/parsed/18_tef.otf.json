@@ -4,6 +4,9 @@
     "title": "Wheel Hoss",
     "time_signature": "4/4",
     "tempo": 120,
+    "tab_by": {
+      "name": "Michael J Evors"
+    },
     "time_signature_changes": [
       {"measure": 16, "time_signature": "2/4"}
     ]

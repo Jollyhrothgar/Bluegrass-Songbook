@@ -5,6 +5,9 @@
     "time_signature": "4/4",
     "tempo": 186,
     "composer": "Trad. Arr. M Blake",
+    "tab_by": {
+      "name": "Martin Blake"
+    },
     "time_signature_changes": [
       {"measure": 1, "time_signature": "1/4"}
     ]

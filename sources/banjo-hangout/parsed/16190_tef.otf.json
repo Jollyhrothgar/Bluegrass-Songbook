@@ -3,7 +3,10 @@
   "metadata": {
     "title": "Sugar In the Gourd",
     "time_signature": "4/4",
-    "tempo": 145
+    "tempo": 145,
+    "tab_by": {
+      "name": "David Payne"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

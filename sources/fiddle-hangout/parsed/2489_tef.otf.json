@@ -4,7 +4,10 @@
     "title": "Forked Deer (Noel \"Monk\" Scruggs)",
     "time_signature": "2/4",
     "tempo": 120,
-    "key": "D"
+    "key": "D",
+    "tab_by": {
+      "name": "Daniel T. Rothwell"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

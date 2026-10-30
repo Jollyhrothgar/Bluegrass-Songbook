@@ -4,7 +4,10 @@
     "title": "Old Joe Clark",
     "time_signature": "4/4",
     "tempo": 260,
-    "composer": "arranged by Lee Marcus"
+    "composer": "arranged by Lee Marcus",
+    "tab_by": {
+      "name": "Lee Marcus"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

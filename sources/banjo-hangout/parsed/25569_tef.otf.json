@@ -4,7 +4,10 @@
     "title": "Banjo Signal",
     "time_signature": "4/4",
     "tempo": 264,
-    "composer": "Don Reno"
+    "composer": "Don Reno",
+    "tab_by": {
+      "name": "Greg Crisp"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

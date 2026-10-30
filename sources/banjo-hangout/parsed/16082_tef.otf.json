@@ -4,7 +4,10 @@
     "title": "June Apple (thumb lead)",
     "time_signature": "2/2",
     "tempo": 220,
-    "key": "A"
+    "key": "A",
+    "tab_by": {
+      "name": "Jan-Olov Sundqvist"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

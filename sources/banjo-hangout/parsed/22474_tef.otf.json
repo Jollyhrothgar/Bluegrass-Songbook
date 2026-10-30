@@ -6,6 +6,9 @@
     "tempo": 120,
     "key": "Am",
     "composer": "G modal tuning; capo II, capo 5th string at seventh fret",
+    "tab_by": {
+      "name": "Roger Jorgenson"
+    },
     "time_signature_changes": [
       {"measure": 20, "time_signature": "1/4"},
       {"measure": 37, "time_signature": "1/4"}

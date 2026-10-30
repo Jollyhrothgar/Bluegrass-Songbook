@@ -5,7 +5,10 @@
     "time_signature": "4/4",
     "tempo": 210,
     "key": "D",
-    "composer": "Traditional, arranged for banjo by Michael Corcoran"
+    "composer": "Traditional, arranged for banjo by Michael Corcoran",
+    "tab_by": {
+      "name": "M. Corcoran"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

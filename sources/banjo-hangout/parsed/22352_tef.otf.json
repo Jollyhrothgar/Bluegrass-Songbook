@@ -5,7 +5,10 @@
     "time_signature": "4/4",
     "tempo": 230,
     "key": "G",
-    "composer": "Earl Scruggs"
+    "composer": "Earl Scruggs",
+    "tab_by": {
+      "name": "Howard Walker"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

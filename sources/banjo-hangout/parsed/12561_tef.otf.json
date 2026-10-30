@@ -5,7 +5,10 @@
     "time_signature": "4/4",
     "tempo": 200,
     "key": "G",
-    "composer": "as taught by Rob Bourassa"
+    "composer": "as taught by Rob Bourassa",
+    "tab_by": {
+      "name": "Jeff Frandsen"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

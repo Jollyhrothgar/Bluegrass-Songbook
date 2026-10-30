@@ -5,7 +5,10 @@
     "time_signature": "4/4",
     "tempo": 175,
     "key": "G",
-    "composer": "Traditional, arr. Michael Franz"
+    "composer": "Traditional, arr. Michael Franz",
+    "tab_by": {
+      "name": "Michael Franz"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

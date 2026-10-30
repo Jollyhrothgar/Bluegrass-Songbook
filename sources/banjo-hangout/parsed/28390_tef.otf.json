@@ -5,7 +5,10 @@
     "time_signature": "4/4",
     "tempo": 120,
     "key": "A",
-    "composer": "Arranged by Noam Pikelny, based off playing of Kenny Baker. Key of A, Capo 2"
+    "composer": "Arranged by Noam Pikelny, based off playing of Kenny Baker. Key of A, Capo 2",
+    "tab_by": {
+      "name": "Nick Puglisi"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

@@ -4,7 +4,10 @@
     "title": "Cripple Creek",
     "time_signature": "4/4",
     "tempo": 150,
-    "key": "G"
+    "key": "G",
+    "tab_by": {
+      "name": "Steve Parker"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

@@ -4,7 +4,10 @@
     "title": "Fire on the Mountain",
     "time_signature": "4/4",
     "tempo": 200,
-    "composer": "      Bluegrass    "
+    "composer": "      Bluegrass    ",
+    "tab_by": {
+      "name": "L.B."
+    }
   },
   "timing": {
     "ticks_per_beat": 480

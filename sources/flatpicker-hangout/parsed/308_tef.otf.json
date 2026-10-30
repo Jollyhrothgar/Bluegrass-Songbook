@@ -5,7 +5,10 @@
     "time_signature": "4/4",
     "tempo": 220,
     "key": "D",
-    "composer": "Arranged for Guitar, 5 String Banjo and Mandolin by Guy Rogers"
+    "composer": "Arranged for Guitar, 5 String Banjo and Mandolin by Guy Rogers",
+    "tab_by": {
+      "name": "Guy Rogers"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

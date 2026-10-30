@@ -5,7 +5,10 @@
     "time_signature": "3/4",
     "tempo": 120,
     "key": "Dm",
-    "composer": "Kenny Baker"
+    "composer": "Kenny Baker",
+    "tab_by": {
+      "name": "Martin Blake"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

@@ -4,7 +4,10 @@
     "title": "Cluck Old Hen",
     "time_signature": "4/4",
     "tempo": 250,
-    "composer": "Alison Krauss arranged by Lee Marcus"
+    "composer": "Alison Krauss arranged by Lee Marcus",
+    "tab_by": {
+      "name": "Lee Marcus"
+    }
   },
   "timing": {
     "ticks_per_beat": 480
