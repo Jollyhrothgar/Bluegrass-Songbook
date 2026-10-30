@@ -39,6 +39,16 @@ import {
 import { FX_ORDER } from './facade.js';
 
 /**
+ * The ONE phone breakpoint (G17) for everything viewport-based in the editor:
+ * the toolbar collapses to its single row here, the editor's fill mode
+ * tightens here, and it is the width `style.css` and `tab-controls-sheet.js`
+ * collapse the song page's bottom band at (`NARROW_WIDTH`). The menu bar's
+ * own-width collapse (`NARROW_WIDTH` in menu-bar.js, 720) is container-based
+ * and deliberately separate.
+ */
+export const PHONE_MAX_WIDTH = 640;
+
+/**
  * Duration button configuration
  */
 // Plain-text symbols: the previous SMuFL codepoints (𝅝 𝅗𝅥 …) rendered
@@ -147,6 +157,20 @@ export function durationReflects(noteDur, buttonDur) {
 }
 
 /**
+ * What the phone's one-button length picker says: `Auto`, or the entry
+ * length with its dot / triplet mark (`1/8`, `1/8.`, `³`).
+ */
+export function lengthLabel(state) {
+    if (state.isAutoDuration) return 'Auto';
+    const cur = state.currentDuration;
+    if (state.tripletMode || cur === DURATIONS.tripletEighth) return '³';
+    const plain = DURATION_BUTTONS.find(b => b.duration === cur);
+    if (plain) return plain.symbol;
+    const base = DURATION_BUTTONS.find(b => b.duration === cur / 1.5);
+    return base && DOTTED_DURATIONS.has(cur) ? `${base.symbol}.` : '?';
+}
+
+/**
  * Which LENGTH button the automatic-duration PREDICTION lands on.
  * Same mapping as `durationReflects` — a predicted 360 points at `1/8`
  * (and the `Dot` latch), 160 at the triplet button — because the two
@@ -213,6 +237,10 @@ export class EditorToolbar {
             <div class="toolbar-separator"></div>
             <div class="toolbar-section duration-section">
                 <span class="toolbar-label" title="${LENGTH_HINT}">Note length</span>
+                <button class="toolbar-button length-picker-button" aria-haspopup="menu" aria-expanded="false"
+                        title="${LENGTH_HINT}">
+                    <span class="length-picker-label"></span><span class="length-picker-caret"> ▾</span>
+                </button>
                 <button class="toolbar-button auto-duration-button">
                     <span class="button-content">Auto</span>
                 </button>
@@ -302,6 +330,7 @@ export class EditorToolbar {
         this.redoButton = this.element.querySelector('.redo-button');
         this.restButton = this.element.querySelector('.rest-button');
         this.effectsButton = this.element.querySelector('.effects-button');
+        this.lengthPickerButton = this.element.querySelector('.length-picker-button');
         this.annotationButton = this.element.querySelector('.annotation-button');
         this.annotationDeleteButton = this.element.querySelector('.annotation-delete-button');
 
@@ -367,6 +396,8 @@ export class EditorToolbar {
      */
     _title(el, label, actionId) {
         if (!el) return;
+        // The fence test reads this: every button names a menu command
+        if (actionId) el.dataset.action = actionId;
         this._titled.push({ el, label, action: actionId });
     }
 
@@ -641,41 +672,53 @@ export class EditorToolbar {
                 font-size: 16px;
             }
 
-            @media (max-width: 600px) {
+            /* The picker is the phone's stand-in for the whole length row */
+            .length-picker-button {
+                display: none;
+                font-weight: 600;
+            }
+
+            /* PHONE (G17): one slim strip: undo, redo, note length, tie.
+               Everything else is a menu command, reached from the editor's
+               ☰ sheet (cursor step, Rest, Advance, Ruler, technique,
+               Effects, Text, tracks) or the note popover. */
+            @media (max-width: ${PHONE_MAX_WIDTH}px) {
                 .otf-editor-toolbar {
+                    flex-wrap: nowrap;
+                    gap: 6px;
                     padding: 6px 8px;
                 }
 
-                /* Labels that were only decoration go. Note length /
-                   Cursor step STAY — they tell the two palettes apart. */
-                .toolbar-section:not(.grid-section):not(.duration-section)
-                    .toolbar-label {
-                    display: none;
+                .toolbar-separator,
+                .toolbar-label,
+                .grid-section,
+                .text-section,
+                .track-section,
+                .effects-button,
+                .auto-duration-button,
+                .duration-buttons,
+                .dotted-button,
+                .triplet-button,
+                .articulation-button:not([data-action="effect.tie"]) {
+                    display: none !important;
                 }
 
-                .grid-section > .toolbar-label,
-                .duration-section > .toolbar-label {
-                    min-width: 0;
-                    font-size: 10px;
+                .length-picker-button {
+                    display: flex;
+                    min-width: 64px;
                 }
 
                 .toolbar-button {
-                    min-width: 28px;
-                    height: 28px;
+                    min-width: 40px;
+                    height: 40px;
                 }
 
-                /* Wrap INSIDE a section so a palette never runs off the
-                   screen; separators would only strand at line starts. */
-                .toolbar-section,
-                .button-group {
-                    flex-wrap: wrap;
+                .toolbar-section {
+                    flex-wrap: nowrap;
                 }
 
-                .toolbar-separator {
-                    display: none;
-                }
-
-                .toolbar-label {
+                .mode-indicator {
+                    padding: 4px 8px;
                     white-space: nowrap;
                 }
             }
@@ -782,6 +825,7 @@ export class EditorToolbar {
         this.state.on('modeChange', this._onModeChange);
         this.state.on('tripletModeChange', this._onTripletModeChange);
         this.state.on('autoAdvanceChange', this._onAutoAdvanceChange);
+        this.state.on('autoDurationChange', this._onDurationChange);
         this.state.on('pendingArticulationChange', this._onPendingArticulationChange);
         this.state.on('gridSubdivisionChange', this._onGridSubdivisionChange);
         this.state.on('gridToggle', this._onGridToggle);
@@ -853,8 +897,12 @@ export class EditorToolbar {
         // their keys) — they used to be four more toolbar slots.
 
         this.effectsButton.addEventListener('click', () => {
-            if (this._fxPopup && !this._fxPopup.hidden) this._closeEffects();
+            if (this._listOpen('fx')) this._closeList('fx');
             else this._openEffects();
+        });
+        this.lengthPickerButton.addEventListener('click', () => {
+            if (this._listOpen('length')) this._closeList('length');
+            else this._openList('length', this.lengthPickerButton, (p) => this._renderLengths(p));
         });
 
         // Placed text: the mouse path to the same prompt `c` opens
@@ -963,6 +1011,7 @@ export class EditorToolbar {
      * Update duration button selection
      */
     _updateDurationSelection() {
+        this._updateLengthPicker();
         const current = this.state.currentDuration;
         for (const [duration, button] of this.durationButtons) {
             button.classList.toggle('active', duration === current);
@@ -971,6 +1020,7 @@ export class EditorToolbar {
 
     /** Auto / dotted / triplet / auto-advance latches (ENTRY state). */
     _updateEntryLatches() {
+        this._updateLengthPicker();
         const current = this.state.currentDuration;
         this.autoDurationButton?.classList.toggle('active', this.state.isAutoDuration);
         this.dottedButton?.classList.toggle('active',
@@ -1002,7 +1052,7 @@ export class EditorToolbar {
         // Effects ▾ is outlined when the note carries any effect — the
         // only sign of it once the effects left the palette
         this.effectsButton?.classList.toggle('reflects-note', !!note?.fx?.length);
-        if (this._fxPopup && !this._fxPopup.hidden) this._renderEffects();
+        if (this._listOpen('fx')) this._renderEffects();
 
         for (const config of ARTICULATION_BUTTONS) {
             const button = this.articulationButtons.get(config.tech || config.action);
@@ -1016,6 +1066,12 @@ export class EditorToolbar {
             else on = !!note && note.tech === config.tech;
             button.classList.toggle('reflects-note', on);
         }
+    }
+
+    /** The phone's length picker names the current entry length. */
+    _updateLengthPicker() {
+        const label = this.lengthPickerButton?.querySelector('.length-picker-label');
+        if (label) label.textContent = lengthLabel(this.state);
     }
 
     /**
@@ -1053,69 +1109,124 @@ export class EditorToolbar {
     }
 
     /**
-     * The Effects ▾ list: every TablEdit effect by name, a ✓ for what the
-     * note at the cursor carries, the key where there is one. Hangs off
-     * <body> and is fixed-positioned for the reason the menu bar's popup
-     * is: `.otf-editor` clips its overflow.
+     * The two drop lists (Effects ▾, and the phone's note-length picker) are
+     * one mechanism: a popup that hangs off <body> and is fixed-positioned
+     * for the reason the menu bar's popup is (`.otf-editor` clips its
+     * overflow), listing menu COMMANDS by name, a ✓ on what is current, the
+     * key where there is one. `render(popup)` fills it.
      */
-    _openEffects() {
-        if (!this._fxPopup) {
+    _openList(kind, anchor, render) {
+        const lists = (this._lists ||= {});
+        let list = lists[kind];
+        if (!list) {
             const popup = document.createElement('div');
-            popup.className = 'otf-fx-popup';
+            popup.className = `otf-fx-popup otf-${kind}-popup`;
             popup.setAttribute('role', 'menu');
             popup.hidden = true;
             popup.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape') { e.preventDefault(); this._closeEffects(true); }
+                if (e.key === 'Escape') { e.preventDefault(); this._closeList(kind, true); }
             });
             document.body.appendChild(popup);
-            this._fxPopup = popup;
-            this._onFxOutside = (e) => {
-                if (!popup.contains(e.target) && !this.effectsButton.contains(e.target)) {
-                    this._closeEffects();
+            list = lists[kind] = { popup, anchor, render };
+            list.outside = (e) => {
+                if (!popup.contains(e.target) && !anchor.contains(e.target)) {
+                    this._closeList(kind);
                 }
             };
         }
-        this._renderEffects();
-        const r = this.effectsButton.getBoundingClientRect();
-        Object.assign(this._fxPopup.style, { left: `${r.left}px`, top: `${r.bottom + 4}px` });
-        this._fxPopup.hidden = false;
-        this.effectsButton.setAttribute('aria-expanded', 'true');
-        document.addEventListener('mousedown', this._onFxOutside, true);
-        this._fxPopup.querySelector('[role="menuitemcheckbox"]')?.focus();
+        // one list at a time
+        for (const other of Object.keys(lists)) if (other !== kind) this._closeList(other);
+        list.render(list.popup);
+        const r = anchor.getBoundingClientRect();
+        const width = list.popup.offsetWidth || 220;
+        const left = Math.max(4, Math.min(r.left, (globalThis.innerWidth || 1024) - width - 4));
+        Object.assign(list.popup.style, { left: `${left}px`, top: `${r.bottom + 4}px` });
+        list.popup.hidden = false;
+        anchor.setAttribute('aria-expanded', 'true');
+        document.addEventListener('mousedown', list.outside, true);
+        list.popup.querySelector('[role^="menuitem"]')?.focus();
     }
 
-    _renderEffects() {
+    _listOpen(kind) {
+        const list = this._lists?.[kind];
+        return !!list && !list.popup.hidden;
+    }
+
+    _closeList(kind, refocus = false) {
+        const list = this._lists?.[kind];
+        if (!list || list.popup.hidden) return;
+        list.popup.hidden = true;
+        list.anchor.setAttribute('aria-expanded', 'false');
+        document.removeEventListener('mousedown', list.outside, true);
+        if (refocus) this.options.onRefocus?.();
+    }
+
+    /** One row of a drop list: ✓, name, key; clicking dispatches the action. */
+    _listItem(popup, { action, label, on }) {
+        const item = document.createElement('button');
+        item.className = 'otf-fx-item';
+        item.setAttribute('role', 'menuitemcheckbox');
+        item.setAttribute('aria-checked', on ? 'true' : 'false');
+        item.dataset.action = action;
+        const keys = keyFor(action, getPreset());
+        item.innerHTML = `<span class="otf-fx-check">${on ? '✓' : ''}</span>`
+            + `<span class="otf-fx-label"></span><kbd class="otf-fx-key"></kbd>`;
+        item.querySelector('.otf-fx-label').textContent = label;
+        item.querySelector('.otf-fx-key').textContent = keys ? prettyKeys(keys) : '';
+        popup.appendChild(item);
+        return item;
+    }
+
+    _openEffects() {
+        this._openList('fx', this.effectsButton, (popup) => this._renderEffects(popup));
+    }
+
+    _renderEffects(popup = this._lists.fx.popup) {
         const note = this.state.getNoteAtCursor?.() || null;
-        const preset = getPreset();
-        this._fxPopup.innerHTML = '';
+        popup.innerHTML = '';
         for (const cfg of FX_BUTTONS) {
-            const on = !!note?.fx?.includes(cfg.fx);
-            const item = document.createElement('button');
-            item.className = 'otf-fx-item';
-            item.setAttribute('role', 'menuitemcheckbox');
-            item.setAttribute('aria-checked', on ? 'true' : 'false');
-            item.dataset.action = cfg.action;
             // Never disabled for an empty slot: in VISUAL the action takes
             // the selection, and elsewhere it says why it refused.
-            const keys = keyFor(cfg.action, preset);
-            item.innerHTML = `<span class="otf-fx-check">${on ? '✓' : ''}</span>`
-                + `<span class="otf-fx-label"></span><kbd class="otf-fx-key"></kbd>`;
-            item.querySelector('.otf-fx-label').textContent = cfg.label;
-            item.querySelector('.otf-fx-key').textContent = keys ? prettyKeys(keys) : '';
+            const item = this._listItem(popup,
+                { action: cfg.action, label: cfg.label, on: !!note?.fx?.includes(cfg.fx) });
             item.addEventListener('click', () => {
                 this.options.onAction?.(cfg.action);
-                this._closeEffects(true);
+                this._closeList('fx', true);
             });
-            this._fxPopup.appendChild(item);
         }
     }
 
     _closeEffects(refocus = false) {
-        if (!this._fxPopup || this._fxPopup.hidden) return;
-        this._fxPopup.hidden = true;
-        this.effectsButton?.setAttribute('aria-expanded', 'false');
-        document.removeEventListener('mousedown', this._onFxOutside, true);
-        if (refocus) this.options.onRefocus?.();
+        this._closeList('fx', refocus);
+    }
+
+    /**
+     * The phone's note-length picker: the same latches the wide row has
+     * (Auto, the six lengths, Dot, Triplet), each the menu command of the
+     * same name. The ✓ is the entry state, as `.active` is on the wide row.
+     */
+    _renderLengths(popup = this._lists.length.popup) {
+        const state = this.state;
+        const current = state.isAutoDuration ? null : state.currentDuration;
+        const rows = [
+            { action: 'duration.auto', label: 'Automatic', on: state.isAutoDuration },
+            ...DURATION_BUTTONS.map(b => ({
+                action: b.action, label: b.symbol,
+                on: current === b.duration || (current != null && current / 1.5 === b.duration
+                    && DOTTED_DURATIONS.has(current)),
+            })),
+            { action: 'duration.dotted', label: 'Dotted',
+                on: current != null && DOTTED_DURATIONS.has(current) },
+            { action: 'duration.triplet', label: 'Triplet', on: !!state.tripletMode },
+        ];
+        popup.innerHTML = '';
+        for (const row of rows) {
+            const item = this._listItem(popup, row);
+            item.addEventListener('click', () => {
+                this.options.onAction?.(row.action);
+                this._closeList('length', true);
+            });
+        }
     }
 
     /**
@@ -1134,6 +1245,7 @@ export class EditorToolbar {
         this.state.off('modeChange', this._onModeChange);
         this.state.off('tripletModeChange', this._onTripletModeChange);
         this.state.off('autoAdvanceChange', this._onAutoAdvanceChange);
+        this.state.off('autoDurationChange', this._onDurationChange);
         this.state.off('pendingArticulationChange', this._onPendingArticulationChange);
         this.state.off('gridSubdivisionChange', this._onGridSubdivisionChange);
         this.state.off('gridToggle', this._onGridToggle);
@@ -1148,9 +1260,11 @@ export class EditorToolbar {
         this._unsubPreset?.();
         this._unsubPreset = null;
         this._titled = [];
-        this._closeEffects();
-        this._fxPopup?.remove();
-        this._fxPopup = null;
+        for (const kind of Object.keys(this._lists || {})) {
+            this._closeList(kind);
+            this._lists[kind].popup.remove();
+        }
+        this._lists = {};
 
         if (this.element && this.element.parentNode) {
             this.element.parentNode.removeChild(this.element);

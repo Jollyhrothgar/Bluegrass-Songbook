@@ -10,6 +10,7 @@
 // through ⬇ Download and reads the file: `tracks[]` order is not something
 // the canvas shows.
 import { test, expect } from './fixtures.js';
+import { clickFileItem } from './helpers/front-door.js';
 
 const WORK = '/#work/red-haired-boy/ensemble-tab';
 
@@ -40,7 +41,7 @@ async function activeTrack(page) {
 async function downloadDoc(page) {
     const [download] = await Promise.all([
         page.waitForEvent('download'),
-        band(page).locator('.tab-edit-download').click(),
+        clickFileItem(page, 'Download OTF'),
     ]);
     const path = await download.path();
     const { readFileSync } = await import('fs');
