@@ -54,6 +54,9 @@ const SHOW_BITS = 0x70, SHOW_TAB_ONLY = 0x10;
 // ptr 0x64) +17 bit 1 and +78 bit 0. A blank file TablEdit 3.06 saved with it on
 // and off differs in these two bytes and track byte 16 (G15f oracle).
 const LAYOUT_NOTATION_A = 17, LAYOUT_NOTATION_B = 78;
+// Reading-guide (0xb7) bits: 0x40 repeat start; 0x80 repeat end, 0x38 jumps and the
+// end bar, all of which TablEdit stores at the end of the measure.
+const MARK_START = 0x40, MARK_END_BITS = 0xb8;
 const DEFAULT_TRANSPOSE = { mandolin: 12 };
 const PERCUSSION_LINES = [0x23, 0x2b, 0x34, 0x3c, 0x44, 0x4c, 0x54, 0x58, 0x59, 0x5a, 0x5a, 0x5a];
 
@@ -521,17 +524,29 @@ export function writeTef(otf, { source, template } = {}) {
     const text = textTable(otf, plan, totalRows, occupied, notices, placements);
     for (const [key, rec] of text.cells) cells.set(key, rec);
 
-    // Repeat signs: one 0xb7 per marked measure, on the first free cell of its first position.
+    // Repeat signs, where TablEdit itself puts them (V3 corpus, 34 files): a repeat
+    // start or an ending bracket on the measure's first position, a repeat end, end
+    // bar or jump on its last sixteenth. One sign on the first position of a measure
+    // whose sign belongs at its end was dropped by TablEdit's export (834 m8, G15f
+    // oracle). The reader ORs a measure's cells, so splitting keeps `raw`.
     for (const mark of otf.measure_marks || []) {
         if (placed.has(mark) || mark.measure < 1 || mark.measure > plan.starts.length) continue;
         const mi = mark.measure - 1;
-        const key = freeCell(occupied, totalRows, plan.starts[mi], plan.starts[mi] + plan.slots[mi] - 1, range(0, totalRows));
-        if (key === null) { notices.repeat_signs_not_written += 1; continue; }
-        const rec = component(key, 0xb7);
-        rec[5] = 1;
-        rec[6] = mark.raw;
-        rec[7] = 1;
-        cells.set(key, rec);
+        const first = plan.starts[mi], last = first + plan.slots[mi] - 1;
+        const atEnd = mark.raw & ~MARK_START;
+        const parts = (mark.raw ? [[mark.raw & MARK_START, first],
+            [atEnd, atEnd & MARK_END_BITS ? Math.max(first, last - 3) : first]] : [[0, first]])
+            .filter(([raw], i, all) => raw || all.length === 1);   // a V2 file's empty sign stays one cell
+        for (const [raw, at] of parts) {
+            const key = freeCell(occupied, totalRows, at, last, range(0, totalRows))
+                ?? freeCell(occupied, totalRows, first, last, range(0, totalRows));
+            if (key === null) { notices.repeat_signs_not_written += 1; continue; }
+            const rec = component(key, 0xb7);
+            rec[5] = 1;
+            rec[6] = raw;
+            rec[7] = 1;
+            cells.set(key, rec);
+        }
     }
 
     // Chord diagrams: an anchor on a row of the diagram's own track (the original's row when it has one).

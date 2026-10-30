@@ -120,6 +120,10 @@ table, chord table, measures, tracks, 0x64 block, reading list, components
   block +17 bit 1 and +78 bit 0 (blank file saved on vs off: only these and
   byte 16 differ); the template has it on, so a file written from the template
   clears both, or TablEdit still exports a notation staff.
+  **Reading guides (0xb7)** go where TablEdit puts them (34 V3 files): repeat
+  start and ending brackets on the measure's first slot, repeat ends, end bars
+  and jumps on its last sixteenth (slots - 4); a 0x40|0x80 sign is two cells.
+  On the first slot TablEdit's export lost a repeat end (834 m8).
   **MIDI program** (+8): 105 banjos, 110 fiddle, 25 the rest, 32 upright bass.
   An unedited original's track records come back byte for byte (all 91 V3
   corpus files): drum-line codes, the capo offset at +10 and the bytes after

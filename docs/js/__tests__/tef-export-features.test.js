@@ -532,6 +532,18 @@ describe('.tef writer: what a TablEdit export of the written file showed', () =>
         expect(showMode(writeTef(parseTef(v2, 'x'), { source: undefined, template }).bytes, 0)).toBe(1);
     });
 
+    it('puts a sign that ends a measure on its last sixteenth, as TablEdit does', () => {
+        // V3 corpus: repeat ends, end bars and jumps sit 4 slots before the measure's
+        // end (64 of 85), starts and endings on its first slot. TablEdit's export
+        // dropped a repeat end written on the first slot (834 m8).
+        const notes = [1, 2, 3].map(m => ({ measure: m, events: [ev(0, note(1, 0, 480))] }));
+        const marks = [mark(1, 0x40), mark(2, 0x80), mark(3, 0xc0)];
+        const { bytes, back } = roundTrip(doc({ notation: { banjo: notes }, measure_marks: marks }));
+        expect(back.measure_marks.map(m => m.raw)).toEqual([0x40, 0x80, 0xc0]);
+        const at = cellsOf(bytes, 0xb7).map(c => [c.pos, c.rec[6]]).sort((a, b) => a[0] - b[0]);
+        expect(at).toEqual([[0, 0x40], [64 + 60, 0x80], [128, 0x40], [128 + 60, 0x80]]);
+    });
+
     it('turns off the document-wide Notation switch the blank template has on', () => {
         // TablEdit 3.06 saved one blank file with Settings ▸ General ▸ Notation on and
         // one with it off: they differ in track byte 16 and two layout-block bytes.
