@@ -12,7 +12,7 @@
 // Nothing is dropped silently: whatever a .tef cannot hold is counted in the
 // returned `notices` (see notices.js).
 
-import { isV3Layout, parseTrackRecordsV3, headerString } from '../tef-import/reader.js';
+import { isV3Layout, parseTrackRecordsV3, headerString, parseTextTableV3, programToName } from '../tef-import/reader.js';
 import { instrumentToOtfId, instrumentToType } from '../tef-import/otf.js';
 import { emptyNotices } from './notices.js';
 import { buildNoteCells, UNIT_TICKS } from './notes.js';
@@ -41,9 +41,15 @@ const TEXT_MAX = 998, TEXT_INDEX_MAX = 256, TITLE_MAX = 255;
 const SIGNATURE_DENOMINATORS = [1, 2, 4, 8, 16];
 const TAB_BY_LINE = /^Tab by: /;
 // Per-instrument defaults for a track the template does not have: MIDI program (the
-// corpus's usual, bass as TablEdit 3.06's own template has it) and the octave
+// corpus's usual: acoustic bass 32 in 18 of 31 V3 and 110 of 224 V2 bass tracks,
+// where TablEdit 3.06's own blank file says electric 33) and the octave
 // transposition at +14 (mandolin 12 in all 14 corpus records; others 0).
-const DEFAULT_PROGRAM = { '5-string-banjo': 105, 'tenor-banjo': 105, 'fiddle': 110, 'upright-bass': 33, percussion: 0 };
+const DEFAULT_PROGRAM = { '5-string-banjo': 105, 'tenor-banjo': 105, 'fiddle': 110, 'upright-bass': 32, percussion: 0 };
+// Byte 16, bits 4-6, is what a track shows: 1 tab, 2 notation, 3 both, 0 nothing
+// (TablEdit's MusicXML exporter, FUN_1000982f0). A track the writer creates shows
+// the tab only, which is what a .tef opened here displays and what the corpus
+// mostly stores (the blank file TablEdit saves shows both).
+const SHOW_BITS = 0x70, SHOW_TAB_ONLY = 0x10;
 const DEFAULT_TRANSPOSE = { mandolin: 12 };
 const PERCUSSION_LINES = [0x23, 0x2b, 0x34, 0x3c, 0x44, 0x4c, 0x54, 0x58, 0x59, 0x5a, 0x5a, 0x5a];
 
@@ -141,14 +147,23 @@ function planTracks(otf) {
 
 const prettyName = (id) => id.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 
-/** Would the importer turn this track name back into the track we have? */
-function nameSurvives(name, track) {
-    const inst = { name, num_strings: track.strings, is_percussion: track.perc };
-    const lower = name.toLowerCase();
+/** Would the importer turn this track name back into the track we have? An
+ *  empty name is read as the MIDI program's name (tef-import/reader.js). */
+function nameSurvives(name, track, program) {
+    const shown = name.trim() || (track.perc ? 'Percussion' : programToName(program, track.strings));
+    const inst = { name: shown, num_strings: track.strings, is_percussion: track.perc };
+    const lower = shown.toLowerCase();
     const role = track.perc ? 'percussion' : (lower.includes('banjo') || lower.includes('mandolin')) ? 'lead' : 'rhythm';
     const id = instrumentToOtfId(inst);
     return (id === track.id || id === track.id.replace(/-\d+$/, ''))
         && instrumentToType(inst) === track.instrument && role === track.role;
+}
+
+/** The name stored in a track record (up to the NUL). */
+function trackName(record) {
+    const bytes = record.subarray(32);
+    const nul = bytes.indexOf(0);
+    return String.fromCharCode(...(nul >= 0 ? bytes.subarray(0, nul) : bytes));
 }
 
 function trackRecord(track, baseRecord, keepBytes, notices) {
@@ -161,6 +176,7 @@ function trackRecord(track, baseRecord, keepBytes, notices) {
     if (!keepBytes) {
         view.setUint16(8, DEFAULT_PROGRAM[track.instrument] ?? 25, true);
         view.setUint16(14, DEFAULT_TRANSPOSE[track.instrument] ?? 0, true);
+        rec[16] = (rec[16] & ~SHOW_BITS) | SHOW_TAB_ONLY;
     }
     let capo = track.capo;
     if (capo > 12) { capo = 12; notices.values_clamped += 1; }
@@ -185,14 +201,18 @@ function trackRecord(track, baseRecord, keepBytes, notices) {
         rec[10] = (rec[10] & 0xf0) | fifth;
         rec[11] = 0;
     }
-    // Name: the original's if the importer reads it back as this track, else the track id.
-    const nameBytes = baseRecord.subarray(32);
-    const nul = nameBytes.indexOf(0);
-    const original = String.fromCharCode(...(nul >= 0 ? nameBytes.subarray(0, nul) : nameBytes));
-    // The importer derives id, instrument and role from the name alone, so pick
-    // the first name it reads back as this track.
-    const candidates = [keepBytes ? original : '', prettyName(track.id), prettyName(track.instrument), 'Rhythm'];
-    let name = candidates.find(c => c && nameSurvives(c, track));
+    // Name. An original's own bytes (junk after the NUL included) stay when the
+    // importer reads them back as this track; the empty name is such a name, and
+    // the importer then names the track after its MIDI program. Else pick the
+    // first name it reads back as this track: the importer derives id,
+    // instrument and role from the name alone.
+    const program = view.getUint16(8, true);
+    if (keepBytes && nameSurvives(trackName(baseRecord), track, program)) {
+        rec.set(baseRecord.subarray(32), 32);
+        return rec;
+    }
+    const candidates = [prettyName(track.id), prettyName(track.instrument), 'Rhythm'];
+    let name = candidates.find(c => nameSurvives(c, track, program));
     if (name === undefined) { name = prettyName(track.id); notices.track_details_changed += 1; }
     name = name.slice(0, 35);
     rec.fill(0, 32);
@@ -260,13 +280,47 @@ function measureTable(plan, base, fromSource) {
     return out;
 }
 
+// --- cells the original placed ------------------------------------------------------
+// TablEdit's own export is sensitive to where a text or a repeat sign sits: moved to
+// the first free row (so onto the first track), they came out on another track's
+// staff, without the vertical offset, and in three files with other voices and
+// slides (G15f oracle). OTF keeps a text's position but not its row or offset, so
+// when the original is the template, the cells it placed are put back wherever the
+// document still says the same thing. The rest falls back to the first free cell.
+
+/** The original's text cells {pos, row, rec, text}, reading guides {pos, row, rec} and
+ *  chord-diagram anchors (by `pos:chord`). */
+function sourcePlacements(base, totalRows) {
+    const out = { text: new Map(), marks: [], anchors: new Map() };
+    if (!base.fromSource) return out;
+    const d = base.data, table = parseTextTableV3(d);
+    for (let o = u32(d, SLOT_COMPONENTS); o + 12 <= d.length && u32(d, o) !== 0xffffffff; o += 12) {
+        const type = d[o + 4];
+        if (type !== 0x39 && type !== 0xb7 && type !== 0x35) continue;
+        const loc = u32(d, o) / 8;
+        const cell = { pos: Math.floor(loc / totalRows), row: loc % totalRows, rec: d.slice(o, o + 12) };
+        if (type === 0xb7) { out.marks.push(cell); continue; }
+        if (type === 0x35) {
+            const at = `${cell.pos}:${d[o + 5] | (d[o + 6] << 8)}`;
+            out.anchors.set(at, [...(out.anchors.get(at) || []), cell]);
+            continue;
+        }
+        const text = table[d[o + 5]];
+        if (!text) continue;
+        if (!out.text.has(cell.pos)) out.text.set(cell.pos, []);
+        out.text.get(cell.pos).push({ ...cell, text });
+    }
+    return out;
+}
+
 // --- the small tables -----------------------------------------------------------
-function textTable(otf, plan, totalRows, occupied, notices) {
+function textTable(otf, plan, totalRows, occupied, notices, source) {
     const entries = [];
     const items = (otf.annotations || []).filter(a => a.text);
     const share = items.length > TEXT_INDEX_MAX;     // an index is one byte
     const index = new Map();
     const cells = new Map();
+    const later = [];
     for (const a of items) {
         if (a.measure < 1 || a.measure > plan.starts.length) { notices.annotations_not_written += 1; continue; }
         let i = share ? index.get(a.text) : undefined;
@@ -279,6 +333,18 @@ function textTable(otf, plan, totalRows, occupied, notices) {
         const mi = a.measure - 1;
         const last = plan.starts[mi] + plan.slots[mi] - 1;
         const pos = Math.min(plan.starts[mi] + Math.round(a.tick / UNIT_TICKS), last);
+        // The original's cell for this very text at this very place, if it is still free.
+        const own = (source.text.get(pos) || []).find(c => c.text === a.text && !c.taken && !occupied.has(pos * totalRows + c.row));
+        if (own) {
+            own.taken = true;
+            const key = pos * totalRows + own.row;
+            occupied.add(key);
+            const rec = new Uint8Array(own.rec);
+            rec[5] = i;
+            cells.set(key, rec);
+        } else later.push({ i, pos, last });
+    }
+    for (const { i, pos, last } of later) {
         const key = freeCell(occupied, totalRows, pos, last, range(0, totalRows));
         if (key === null) { notices.annotations_not_written += 1; continue; }
         const rec = component(key, 0x39);
@@ -407,12 +473,25 @@ export function writeTef(otf, { source, template } = {}) {
     const plan = planMeasures(otf, measureCount(otf), notices);
 
     const { cells, occupied } = buildNoteCells(otf, tracks, plan.starts, plan.slots, totalRows, notices);
-    const text = textTable(otf, plan, totalRows, occupied, notices);
+    const placements = sourcePlacements(base, totalRows);
+
+    // Repeat signs: the original's cells where they still add up to this measure's mark.
+    const placed = new Set();
+    for (const mark of otf.measure_marks || []) {
+        if (mark.measure < 1 || mark.measure > plan.starts.length) continue;
+        const mi = mark.measure - 1;
+        const mine = placements.marks.filter(c => c.pos >= plan.starts[mi] && c.pos < plan.starts[mi] + plan.slots[mi]);
+        const keys = mine.map(c => c.pos * totalRows + c.row);
+        if (!mine.length || mine.reduce((or, c) => or | c.rec[6], 0) !== mark.raw || keys.some(k => occupied.has(k))) continue;
+        mine.forEach((c, j) => { occupied.add(keys[j]); cells.set(keys[j], new Uint8Array(c.rec)); });
+        placed.add(mark);
+    }
+    const text = textTable(otf, plan, totalRows, occupied, notices, placements);
     for (const [key, rec] of text.cells) cells.set(key, rec);
 
     // Repeat signs: one 0xb7 per marked measure, on the first free cell of its first position.
     for (const mark of otf.measure_marks || []) {
-        if (mark.measure < 1 || mark.measure > plan.starts.length) continue;
+        if (placed.has(mark) || mark.measure < 1 || mark.measure > plan.starts.length) continue;
         const mi = mark.measure - 1;
         const key = freeCell(occupied, totalRows, plan.starts[mi], plan.starts[mi] + plan.slots[mi] - 1, range(0, totalRows));
         if (key === null) { notices.repeat_signs_not_written += 1; continue; }
@@ -423,16 +502,27 @@ export function writeTef(otf, { source, template } = {}) {
         cells.set(key, rec);
     }
 
-    // Chord diagrams: an anchor on a row of the diagram's own track.
+    // Chord diagrams: an anchor on a row of the diagram's own track (the original's row when it has one).
     for (const d of otf.chord_diagrams || []) {
         const track = tracks.find(t => t.id === d.track);
         const mi = d.measure - 1;
-        const key = track && mi >= 0 && mi < plan.starts.length
-            ? freeCell(occupied, totalRows, Math.min(plan.starts[mi] + Math.round(d.tick / UNIT_TICKS), plan.starts[mi] + plan.slots[mi] - 1),
-                plan.starts[mi] + plan.slots[mi] - 1, range(track.rowBase, track.rowBase + track.strings))
-            : null;
+        let key = null, rec = null;
+        if (track && mi >= 0 && mi < plan.starts.length) {
+            const last = plan.starts[mi] + plan.slots[mi] - 1;
+            const pos = Math.min(plan.starts[mi] + Math.round(d.tick / UNIT_TICKS), last);
+            const own = (placements.anchors.get(`${pos}:${d.chord}`) || []).find(c => !c.taken
+                && c.row >= track.rowBase && c.row < track.rowBase + track.strings && !occupied.has(pos * totalRows + c.row));
+            if (own) {
+                own.taken = true;
+                key = pos * totalRows + own.row;
+                occupied.add(key);
+                rec = new Uint8Array(own.rec);
+            } else {
+                key = freeCell(occupied, totalRows, pos, last, range(track.rowBase, track.rowBase + track.strings));
+            }
+        }
         if (key === null) { notices.chord_diagrams_not_written += 1; continue; }
-        const rec = component(key, 0x35);
+        rec ??= component(key, 0x35);
         rec[5] = d.chord & 0xff;
         rec[6] = d.chord >> 8;
         rec[7] = (d.dy || 0) & 0xff;

@@ -94,12 +94,36 @@ table, chord table, measures, tracks, 0x64 block, reading list, components
   (on the SOURCE note) and 0x0f dead; attribute = byte 8 low; second = byte 8
   high (a second effect of 3 hides the attribute). Overflow is counted.
 - **Cells**: one component per (position, row). Text, repeat signs and chord
-  anchors take the first free cell (chords on a row of their own track).
+  anchors take the first free cell (chords on a row of their own track) unless
+  the original V3 file is the template: its cells for the same text at the same
+  position, the same marks (their `raw` bits OR to the measure's mark) and the
+  same chord at the same position go back on their own row with their own bytes.
   Text bytes: 0x39, index, byte 9 = 3. Marks: 0xb7, byte 5 = 1, byte 6 = raw,
-  byte 7 = 1 (the common corpus form; not oracle-checked).
+  byte 7 = 1 (117 corpus cells; 19 more have byte 5 = 0, byte 8 = 1).
 - **Tracks**: the name is chosen so `instrumentToOtfId/Type` and the lead rule
-  (name has banjo/mandolin) read it back as this track. Drum tracks: +4 bit 7,
-  tuning bytes are placeholder line codes.
+  (name has banjo/mandolin) read it back as this track; an original's name
+  bytes stay when they do, the empty name too (the importer then names the
+  track after its MIDI program). Drum tracks: +4 bit 7, tuning bytes are
+  placeholder line codes. **Byte 16 bits 4-6** is what a V3 track shows (1 tab,
+  2 notation, 3 both, 0 hidden; MusicXML export, FUN_1000982f0; bit 7 unknown:
+  0x90 on the first track and 0x80 on the rest in about 20 multi-track
+  files, 0x10 first tracks 58 of 91, 0x30 12): a created track shows tab only,
+  an original's byte stays. A V2 track is not read from byte 16: TablEdit
+  exported tab only for 0x00, 0x10, 0x20, 0x30, 0x90 and 0xa0, tab plus
+  notation for 0xb0 (308, two tracks), nothing for 0x80. The V2 upgrade that
+  decides is not in our decompiles, so V2 tracks are created, tab only.
+  **MIDI program** (+8): 105 banjos, 110 fiddle, 25 the rest, 32 upright bass.
+- **What TablEdit's own MusicXML export of a rewritten file still differs in**
+  (G15f oracle, 50 corpus files, tab staff only; the OTF does not hold these):
+  explicit rests (0x33; also what sets some notes' voice), voices, the key
+  signature (V2 header byte 206; V3 measure record byte 2, a signed count of
+  sharps, per measure), the track and row a text sits on in a V2 file, V2
+  track names and MIDI programs, drum-line codes (+20 of a drum track), trailing
+  empty measures, a bend target that was tied (dyn 7), fingering bytes above 35
+  (flags 0x80/0x40/0x20 over `6 * pluck + lh`: 60 V3 notes in 4 files, 894 V2
+  notes in 20; the importer reads none of them), second effect 11 (byte 8 =
+  0xb0), the enharmonic bits (byte 6 & 0xc0), a slide with no destination and
+  its byte 7, and the cell types nothing reads (0x3e stroke/fingering, 0xb6, 0xfd).
 - **Limits**: 15 tracks, 12 strings, 2048 measures, 100 reading-list entries,
   names of 27 characters, text index one byte (256 texts), frets 0-24,
   denominators 1/2/4/8/16. `notices` counts everything else.

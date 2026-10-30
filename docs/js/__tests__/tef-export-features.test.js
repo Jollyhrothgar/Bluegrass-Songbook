@@ -278,7 +278,10 @@ describe('.tef writer: layout', () => {
         expect(a.tracks.map(t => t.id)).toEqual(['mandolin', 'banjo', 'guitar', 'bass']);
         const { bytes } = writeTef(a, { template });      // the 1-track template, no source
         const record = (d, i) => { const p = (d[0x60] | (d[0x61] << 8) | (d[0x62] << 16)); return d.subarray(p + 4 + 68 * i, p + 4 + 68 * i + 32); };
-        for (let i = 0; i < 4; i++) expect([...record(bytes, i)]).toEqual([...record(four, i)]);
+        // Not byte 16 (a created track shows tab only, below) and not the bass's MIDI
+        // program (acoustic bass, the corpus's choice: TablEdit's blank has electric).
+        const same = (d, i) => [...record(d, i)].filter((_, k) => k !== 16 && !(i === 3 && k === 8));
+        for (let i = 0; i < 4; i++) expect(same(bytes, i)).toEqual(same(four, i));
     });
 
     it('needs a template when there is no usable source', () => {
@@ -431,5 +434,110 @@ describe('.tef writer: readers', () => {
         const bytes = new Uint8Array(fs.readFileSync(path.join(dir, file)));
         expect(headerString(bytes, 0x48)).toBe('Tab by David Johnson');
         expect(parseTef(bytes, file).metadata.tab_by).toBeUndefined();
+    });
+});
+
+// What TablEdit's own MusicXML export of 50 corpus files and their rewrites showed
+// (G15f oracle, 2026-10-30): the same music, but not the same file.
+describe('.tef writer: what a TablEdit export of the written file showed', () => {
+    const u32 = (d, o) => (d[o] | (d[o + 1] << 8) | (d[o + 2] << 16) | (d[o + 3] << 24)) >>> 0;
+    const corpus = (rel) => new Uint8Array(fs.readFileSync(path.join(repo, 'sources', rel)));
+    const trackRecord = (d, i) => { const p = u32(d, 0x60); return d.subarray(p + 4 + 68 * i, p + 4 + 68 * (i + 1)); };
+    const trackCount = (d) => d[u32(d, 0x60) + 2] | (d[u32(d, 0x60) + 3] << 8);
+    const rowsOf = (d) => { let n = 0; for (let i = 0; i < trackCount(d); i++) n += trackRecord(d, i)[0]; return n; };
+    /** [{pos, row, rec}] for every component of one type, as TablEdit places it. */
+    const cellsOf = (d, type) => {
+        const rows = rowsOf(d), out = [];
+        for (let o = u32(d, 0x3c); u32(d, o) !== 0xffffffff; o += 12) {
+            if (d[o + 4] !== type) continue;
+            const loc = u32(d, o) / 8;
+            out.push({ pos: Math.floor(loc / rows), row: loc % rows, rec: d.subarray(o, o + 12) });
+        }
+        return out;
+    };
+    const showMode = (d, i) => (trackRecord(d, i)[16] >> 4) & 7;      // 1 tab, 2 notation, 3 both, 0 hidden
+    const hex = (rec) => Buffer.from(rec).toString('hex');
+
+    it('shows tab only on every track it creates (TablEdit exports a notation staff above the tab otherwise)', () => {
+        const two = doc({ tracks: [
+            { id: 'banjo', instrument: '5-string-banjo', tuning: ['D4', 'B3', 'G3', 'D3', 'G4'], capo: 0, role: 'lead' },
+            { id: 'bass', instrument: 'upright-bass', tuning: ['G2', 'D2', 'A1', 'E1'], capo: 0, role: 'rhythm' }],
+        notation: { banjo: [{ measure: 1, events: [ev(0, note(1, 0, 480))] }], bass: [] } });
+        const { bytes } = roundTrip(two);
+        expect([showMode(bytes, 0), showMode(bytes, 1)]).toEqual([1, 1]);
+        expect(showMode(template, 0)).toBe(3);                       // the template itself shows both
+        // A V2 file has no TablEdit 3 original to copy from: its tracks are created too
+        const v2 = corpus('banjo-hangout/downloads/14667_tef_cumberland_gap.tef');
+        expect(isV3Layout(v2)).toBe(false);
+        expect(showMode(writeTef(parseTef(v2, 'x'), { source: undefined, template }).bytes, 0)).toBe(1);
+    });
+
+    it('keeps what a TablEdit 3 original showed: both, tab only, or hidden', () => {
+        for (const rel of ['fiddle-hangout/downloads/3404_tef_wheel_hoss.tef',       // first track tab, the rest hidden
+            'banjo-hangout/downloads/26497_tef_cripple_creek___up_the_neck.tef']) {  // notation and tab
+            const source = corpus(rel);
+            const { bytes } = writeTef(parseTef(source, 'x'), { source, template });
+            for (let i = 0; i < trackCount(source); i++) {
+                expect(showMode(bytes, i), `${rel} track ${i}`).toBe(showMode(source, i));
+                expect(trackRecord(bytes, i)[16]).toBe(trackRecord(source, i)[16]);
+            }
+        }
+    });
+
+    it('keeps the name bytes of an unchanged original, an empty name included (it reads back as the same track)', () => {
+        for (const rel of ['banjo-hangout/downloads/25808_tef_cumberland_gap.tef',   // empty name
+            'fiddle-hangout/downloads/3404_tef_wheel_hoss.tef',
+            'flatpicker-hangout/downloads/3433_tef_gold_rush.tef']) {
+            const source = corpus(rel);
+            const a = parseTef(source, 'x');
+            const { bytes } = writeTef(a, { source, template });
+            for (let i = 0; i < trackCount(source); i++) {
+                expect([...trackRecord(bytes, i).subarray(32)], `${rel} track ${i}`).toEqual([...trackRecord(source, i).subarray(32)]);
+            }
+            expect(parseTef(bytes, 'x').tracks.map(t => t.id)).toEqual(a.tracks.map(t => t.id));
+        }
+        expect(trackRecord(corpus('banjo-hangout/downloads/25808_tef_cumberland_gap.tef'), 0)[32]).toBe(0);
+    });
+
+    it('a created track gets a name the importer reads back, never an empty one', () => {
+        const { bytes } = roundTrip(doc());
+        expect(trackRecord(bytes, 0)[32]).not.toBe(0);
+    });
+
+    it('plays a created upright bass as an acoustic bass (program 32, as 18 of 31 corpus bass tracks do)', () => {
+        const bass = doc({ tracks: [{ id: 'bass', instrument: 'upright-bass', tuning: ['G2', 'D2', 'A1', 'E1'], capo: 0, role: 'rhythm' }],
+            notation: { bass: [{ measure: 1, events: [ev(0, note(1, 0, 480))] }] } });
+        const { bytes } = roundTrip(bass);
+        expect(trackRecord(bytes, 0)[8]).toBe(32);
+        const banjo = roundTrip(doc()).bytes;
+        expect(trackRecord(banjo, 0)[8]).toBe(105);
+    });
+
+    it('puts text, repeat signs and chord diagrams back on the rows and with the bytes the original had', () => {
+        for (const rel of ['banjo-hangout/downloads/28438_tef_angeline_the_baker.tef',      // text on the last string
+            'flatpicker-hangout/downloads/3433_tef_gold_rush.tef',                           // text on the second track
+            'mandolin-hangout/downloads/3419_tef_st__anne_s_reel.tef',                       // marks on the third track
+            'banjo-hangout/downloads/27500_tef_temperance_reel__geade_.tef',                 // text with a vertical offset
+            'fiddle-hangout/downloads/3404_tef_wheel_hoss.tef']) {                           // chord diagrams on the fourth string
+            const source = corpus(rel);
+            const { bytes } = writeTef(parseTef(source, 'x'), { source, template });
+            const key = ({ pos, row, rec }) => `${pos}:${row}:${hex(rec.subarray(6))}`;     // all but the location and the text index
+            for (const type of [0x39, 0xb7, 0x35]) {
+                expect(cellsOf(bytes, type).map(key).sort(), `${rel} ${type.toString(16)}`).toEqual(cellsOf(source, type).map(key).sort());
+            }
+        }
+    });
+
+    it('moves text that is not in the original to a free cell instead', () => {
+        const source = corpus('banjo-hangout/downloads/28438_tef_angeline_the_baker.tef');
+        const a = parseTef(source, 'x');
+        const old = a.annotations[0];
+        a.annotations[0] = { ...old, text: 'changed' };                       // no longer the original's text
+        a.annotations.push({ measure: 2, tick: 0, text: 'new' });
+        const { bytes, notices } = writeTef(a, { source, template });
+        expect(noticeLine(notices)).toBe('');
+        expect(parseTef(bytes, 'x').annotations.map(t => t.text).sort()).toEqual(a.annotations.map(t => t.text).sort());
+        const cells = cellsOf(bytes, 0x39);
+        expect(new Set(cells.map(c => `${c.pos}:${c.row}`)).size).toBe(cells.length);   // no two on one cell
     });
 });

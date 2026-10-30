@@ -64,7 +64,7 @@ const GM_PROGRAM_NAMES = {
     36: 'Bass', 37: 'Bass', 38: 'Bass', 39: 'Bass',
 };
 
-function programToName(program, numStrings) {
+export function programToName(program, numStrings) {
     if (GM_PROGRAM_NAMES[program]) return GM_PROGRAM_NAMES[program];
     // reader.py falls back to a strings-count label; for the corpus this is
     // only reached for named tracks (name wins), so the exact label is inert.
