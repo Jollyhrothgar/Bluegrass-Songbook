@@ -21,7 +21,6 @@ body{padding-bottom:80px}
 .dock .in{display:flex;align-items:center;width:100%;margin:0 auto}
 .dock .sp{flex:1}
 .ib{width:34px;height:34px;display:grid;place-items:center;border-radius:8px;font-size:18px;color:var(--text)}
-.brand{font:700 19px/1 Georgia,'Times New Roman',serif;letter-spacing:-1px;padding:0 6px}
 .ib svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}
 .edit{display:inline-flex;align-items:center;gap:5px;font-size:14px;font-weight:600;color:var(--accent);padding:5px 11px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--accent);white-space:nowrap}
 .ctl{display:inline-flex;align-items:center;gap:5px;white-space:nowrap;font-size:14px;padding:6px 10px;border-radius:999px;background:var(--bg-secondary);box-shadow:inset 0 0 0 1px var(--border)}
@@ -43,7 +42,8 @@ body{padding-bottom:80px}
 .prac{font-size:14px;color:var(--text-secondary);margin-top:2px}
 .prac a{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
 /* lyrics */
-.lyr .chart{margin:0}
+.lyr .chart{margin:0;line-height:1.4}
+.lyr .ch{font-weight:600}
 .lyr .sec{margin:16px 0 4px}
 .lyr .line{margin-bottom:4px}
 .lyr .sec.first{margin-top:8px}
@@ -105,10 +105,36 @@ body{padding-bottom:80px}
 .ph .size .pm{font-size:16px;padding:5px 8px}
 .ph .sgc span{padding:6px 9px}
 .ph .sheet-sec{position:static}
+
+/* the app's own monogram (docs/images/new_bb_logo.svg): white plaque in dark, inverted in light, as in style.css */
+.brand{padding:0 6px;display:flex}
+.brand svg{height:30px;width:auto;display:block;border-radius:3px}
+[data-theme=light] .brand svg{filter:invert(1)}
+.backname{font-size:13px;color:var(--text-secondary);white-space:nowrap;margin:0 4px 0 -2px}
+.ib.glow{border-radius:50%;box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 38%,transparent),0 0 16px 4px color-mix(in srgb,var(--accent) 45%,transparent)}
+.tourtip{position:absolute;z-index:6;top:50px;right:10px;max-width:150px;font-size:12px;line-height:1.3;padding:6px 9px;border-radius:8px;background:var(--accent);color:var(--on-accent);font-weight:600;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.tourtip::before{content:'';position:absolute;top:-5px;right:14px;width:10px;height:10px;background:var(--accent);transform:rotate(45deg)}
+.sgc.nav span{padding:6px 9px}.sgc.nav .mid{color:var(--text);padding:6px 3px}
+.fr.hide .tourtip{display:none}
+.bsheet.tall{max-height:90%;overflow-y:auto;scrollbar-width:none}.bsheet.tall::-webkit-scrollbar{display:none}
+.bsheet .r{padding:7px 0}
+.r .sub{display:block;font-size:12px;color:var(--text-secondary);margin-top:1px}
+.r .go{color:var(--text-secondary)}
+.when{font-style:normal;font-size:11px;color:var(--text-secondary);box-shadow:inset 0 0 0 1px var(--border);border-radius:4px;padding:0 5px;margin-left:6px;white-space:nowrap}
+.gh .when{text-transform:none;letter-spacing:0;font-weight:400;margin-left:8px}
+.keyrow{display:flex;align-items:center;justify-content:center;gap:22px;padding:6px 0 12px}
+.keyrow .pmb{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font-size:26px;background:var(--bg);box-shadow:inset 0 0 0 1px var(--border)}
+.keyrow .cur{font-size:40px;font-weight:700;min-width:70px;text-align:center}
+.keyrow small{display:block;font-size:12px;color:var(--text-secondary);font-weight:400;text-align:center}
+.kgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-bottom:8px}
+.kgrid span{height:44px;display:grid;place-items:center;border-radius:8px;background:var(--bg);box-shadow:inset 0 0 0 1px var(--border);font-size:17px}
+.kgrid span.on{background:var(--accent);color:var(--on-accent);font-weight:700;box-shadow:none}
+.quiet{font-size:12px;color:var(--text-secondary);margin:10px 0 0;padding-top:10px;border-top:1px solid var(--border)}
+.chk{margin-left:auto;color:var(--accent);font-weight:700}
 </style></head>
 <body data-proposal="G18b3 two docks, phone">
 <main class="wrap">
-<p class="intro"><b>What changed versus today.</b> The song page is now one flat surface between two thin docks. The top dock carries only <i>&larr; BB search Edit &#8943;</i>; Add Song, Favorites, Lists, Export, theme and account all live in &#8943;. The Key / Display / Info / Arrangement pill row is gone: a bottom dock holds Key, Size, View and Display (with room for a later Play), and both docks slide away while you scroll down. The header is title, a tappable credit line that opens Details, and the practice line, so the first lyric starts well above the old 226 px. Details (the facts) and Display (the layout) are separate sheets. Edit stays visible, and the song ends with an invitation to fix it. Add <code>?theme=dark</code> for dark. Scroll inside any frame to see the docks hide and return.</p>
+<p class="intro"><b>What changed versus today.</b> The song page is one flat surface between two thin docks. The top dock carries only <i>&larr; BB search Edit &#8943;</i> (BB is the app's real monogram); the bottom dock holds Key, Size, View and Display, and both slide away while you scroll down. This update places every control today's page has: the &#8943; sheet now groups everything without another home (This song, Trusted and admin, Go to, You, with a signed-out state), the Key sheet and a View sheet for songs with versions or tabs are drawn, and a set-list frame shows &larr; naming the list plus a previous / next pill in the dock. Lyrics and chords are at the app's real size (16 px, measured on the live page). On a first visit &#8943; glows and points to the tour. Add <code>?theme=dark</code> for dark; scroll inside any frame to see the docks hide and return.</p>
 <div class="frames" id="frames"></div>
 </main>
 <script src="mock.js"></script>
@@ -154,7 +180,9 @@ const SEARCH = '<svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d=
 const header = () => `<div class="hd"><h1>Old Home Place <span class="badge">Just edited</span></h1>
  <span class="credit">Written by Dean Webb and Mitchell Jayne <span class="more">&rsaquo;</span></span>
  <div class="prac">Practice: <a>Strum Machine</a> &middot; <a>YouTube</a></div></div>`;
-const topDock = (maxw) => `<div class="dock top" style="height:44px"><div class="in" style="max-width:${maxw};padding:0 8px"><span class="ib">&larr;</span><span class="brand">BB</span><span class="sp"></span><span class="ib">${SEARCH}</span><span class="edit">&#9999;&#65039; Edit</span><span class="ib" style="font-size:20px">&#8943;</span></div></div>`;
+const LOGO = `<svg class="logo" role="img" aria-label="Bluegrass Book" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 934 1128"> <rect width="934" height="1128" fill="#000000"/> <g transform="translate(0.000000,1128.000000) scale(0.100000,-0.100000)" fill="#ffffff" stroke="none"> <path d="M3422 11132 c-138 -299 -154 -586 -51 -905 60 -187 196 -427 339 -602 92 -111 292 -301 460 -436 85 -68 214 -181 286 -251 l130 -127 125 122 c68 67 216 199 329 293 369 308 560 533 714 842 174 347 182 743 22 1061 -22 42 -41 70 -46 65 -5 -5 -32 -65 -60 -134 -28 -69 -96 -212 -152 -318 -151 -291 -183 -382 -219 -601 -20 -124 -39 -164 -81 -169 -15 -2 -31 5 -44 19 -22 24 -24 70 -11 297 l8 142 -113 0 c-62 0 -118 -4 -124 -8 -7 -4 -14 -78 -19 -207 -4 -110 -12 -216 -19 -235 -10 -32 -15 -35 -53 -38 -36 -3 -44 1 -60 24 -16 24 -18 57 -22 246 l-3 218 -159 0 c-93 0 -160 -4 -164 -10 -3 -5 -8 -101 -11 -212 -7 -238 -14 -268 -67 -268 -68 0 -74 22 -85 310 l-7 175 -125 0 -125 0 1 -45 c0 -25 4 -115 8 -201 10 -171 6 -203 -24 -219 -55 -29 -93 31 -115 182 -20 130 -47 248 -75 318 -12 30 -73 162 -136 292 -64 131 -134 284 -158 340 -23 56 -47 103 -53 105 -5 2 -24 -27 -41 -65z M807 11039 c-279 -30 -470 -203 -579 -523 -52 -154 -70 -270 -71 -456 -1 -236 30 -385 109 -520 176 -301 603 -415 1079 -288 107 29 204 69 430 178 105 51 228 105 275 120 128 43 290 64 440 56 229 -11 389 -46 723 -157 136 -46 213 -67 219 -61 7 7 -15 55 -63 139 -163 288 -234 455 -294 688 -54 209 -94 526 -95 743 0 61 -3 82 -13 82 -20 0 -180 -112 -277 -193 -47 -40 -154 -137 -238 -217 -365 -346 -524 -484 -662 -577 -75 -51 -229 -129 -339 -173 -313 -124 -556 -126 -676 -5 -61 61 -79 121 -73 249 8 155 54 256 117 256 44 0 55 -23 62 -127 5 -71 11 -101 26 -121 67 -92 273 -94 403 -4 177 123 233 410 122 632 -93 188 -362 308 -625 279z M6217 11003 c-4 -3 -7 -62 -7 -129 0 -254 -61 -589 -157 -854 -53 -148 -166 -382 -258 -534 -36 -60 -64 -117 -63 -125 5 -22 26 -18 193 35 212 67 466 131 600 150 73 11 180 17 275 17 247 0 372 -35 680 -188 211 -105 452 -182 646 -205 362 -44 695 106 822 370 66 137 93 257 99 445 6 190 -10 318 -62 483 -35 110 -101 234 -171 318 -70 86 -204 160 -345 189 -90 19 -266 19 -346 0 -249 -59 -412 -255 -413 -495 0 -188 79 -339 214 -405 97 -47 248 -54 327 -14 45 23 59 54 59 137 0 90 22 136 68 140 73 7 114 -84 116 -253 1 -101 -1 -114 -26 -161 -31 -60 -73 -98 -142 -130 -169 -79 -515 -9 -827 167 -155 87 -258 171 -574 464 -356 330 -468 427 -612 528 -86 61 -86 61 -96 50z M140 8023 c0 -38 3 -105 6 -149 l7 -81 68 -7 c93 -8 220 -50 271 -89 103 -78 144 -187 160 -422 12 -187 3 -1083 -12 -1160 -26 -131 -112 -245 -251 -332 -116 -73 -114 -62 -15 -122 155 -94 226 -182 264 -328 15 -61 17 -131 16 -708 -1 -705 -3 -743 -62 -869 -63 -135 -170 -196 -375 -215 l-72 -6 0 -150 0 -150 1360 -3 c917 -2 1402 1 1490 8 518 43 912 194 1178 449 174 168 267 334 323 578 21 94 30 407 15 514 -33 225 -137 452 -278 609 -97 108 -312 254 -472 321 -42 18 -123 46 -181 64 -58 17 -104 36 -103 41 1 5 43 25 95 45 116 44 154 64 246 129 153 108 278 247 360 400 159 295 162 690 9 1005 -189 387 -577 608 -1193 680 -109 13 -339 15 -1491 15 l-1363 0 0 -67z m2350 -413 c210 -22 322 -72 451 -200 95 -94 140 -173 181 -316 21 -71 23 -100 23 -279 0 -179 -2 -208 -23 -280 -72 -250 -219 -400 -469 -479 -140 -44 -196 -48 -552 -47 -184 1 -337 4 -340 7 -3 2 -6 362 -8 799 l-2 795 187 3 c103 1 248 3 322 5 74 1 178 -3 230 -8z m118 -2096 c181 -28 324 -86 449 -180 158 -121 252 -308 284 -568 16 -124 5 -358 -20 -462 -79 -322 -303 -524 -644 -579 -71 -12 -188 -15 -509 -15 l-418 0 0 910 0 910 263 3 c328 4 477 -1 595 -19z M4832 7943 l3 -148 60 -7 c240 -26 360 -115 411 -305 23 -88 37 -503 30 -928 -7 -392 -11 -445 -47 -540 -28 -76 -130 -180 -242 -245 -42 -25 -77 -48 -77 -52 0 -3 39 -30 86 -59 163 -100 223 -176 261 -326 15 -60 17 -142 18 -708 0 -674 -3 -736 -46 -851 -23 -62 -85 -135 -143 -169 -51 -30 -138 -53 -237 -63 l-74 -7 -3 -152 -3 -153 1375 0 c1380 0 1523 3 1726 37 487 80 835 258 1063 544 106 132 188 323 222 513 20 115 20 352 0 476 -75 461 -387 794 -903 965 -79 26 -140 50 -135 54 4 4 42 20 83 36 215 81 373 193 506 359 128 160 208 366 224 577 27 354 -83 666 -312 885 -189 181 -423 294 -740 359 -274 55 -269 55 -1746 55 l-1363 0 3 -147z m2468 -350 c264 -53 462 -245 529 -514 41 -161 36 -415 -10 -567 -68 -221 -224 -378 -449 -451 -136 -43 -222 -51 -581 -51 l-339 0 0 800 0 800 258 3 c335 5 500 -1 592 -20z m39 -2084 c224 -43 367 -112 487 -234 168 -172 249 -457 224 -791 -11 -151 -32 -230 -93 -354 -43 -89 -63 -117 -131 -186 -69 -68 -97 -88 -186 -131 -190 -93 -264 -103 -782 -103 l-408 0 0 910 0 910 238 3 c352 5 531 -1 651 -24z M4438 2211 c-80 -82 -204 -195 -275 -251 -168 -136 -420 -389 -503 -507 -140 -200 -230 -384 -278 -566 -24 -92 -27 -119 -26 -277 0 -162 2 -182 28 -265 33 -108 97 -240 116 -240 8 0 54 90 117 230 56 127 134 293 172 370 83 167 84 169 117 360 32 189 37 200 89 200 59 0 69 -27 55 -152 -6 -54 -13 -137 -17 -185 l-6 -88 127 0 126 0 0 199 c0 226 2 231 71 231 36 0 41 -3 55 -35 7 -19 14 -65 14 -102 0 -37 3 -119 7 -180 l6 -113 159 0 158 0 1 133 c1 258 14 301 89 295 54 -5 62 -30 57 -182 -3 -71 -2 -156 1 -189 l5 -60 120 6 c66 3 122 8 125 11 3 3 -3 70 -12 148 -21 186 -21 230 2 251 21 19 54 22 82 7 23 -13 35 -55 50 -180 20 -172 37 -225 145 -450 56 -118 135 -286 175 -372 40 -87 77 -158 82 -158 15 0 85 159 112 252 87 304 29 622 -176 956 -114 187 -304 391 -573 617 -172 145 -218 189 -359 348 -43 48 -82 87 -85 87 -4 0 -73 -67 -153 -149z M1003 2110 c-56 -12 -135 -46 -217 -94 -458 -271 -522 -1166 -109 -1536 62 -55 187 -120 266 -139 258 -62 532 34 656 228 90 141 110 358 46 498 -30 66 -104 145 -159 172 -68 31 -162 44 -232 32 -101 -19 -137 -59 -159 -175 -17 -89 -27 -106 -61 -106 -54 0 -92 87 -101 232 -7 113 7 165 63 227 106 118 283 131 542 40 109 -39 283 -125 387 -194 117 -75 194 -145 545 -490 173 -171 345 -334 382 -363 75 -59 175 -122 195 -122 10 0 13 34 13 153 0 228 22 381 86 602 65 223 179 485 294 681 62 104 74 150 45 174 -19 16 -31 12 -190 -49 -138 -53 -269 -89 -425 -118 -136 -26 -517 -26 -609 0 -35 9 -165 66 -290 126 -370 178 -514 220 -766 226 -88 2 -179 0 -202 -5z M7895 2079 c-221 -21 -404 -80 -695 -223 -291 -143 -424 -166 -753 -131 -227 25 -472 92 -639 176 -71 36 -96 37 -108 5 -13 -34 -1 -69 71 -204 130 -244 191 -387 248 -585 61 -208 85 -364 97 -624 4 -94 11 -153 17 -153 22 0 146 75 222 135 103 80 218 187 430 396 343 339 525 468 810 574 377 141 641 75 662 -164 7 -72 -21 -233 -50 -291 -18 -37 -27 -46 -53 -48 -41 -4 -50 10 -63 97 -14 86 -39 137 -84 168 -43 29 -128 47 -189 39 -216 -29 -343 -200 -325 -436 15 -194 122 -347 300 -430 291 -136 632 -70 802 155 64 84 129 222 162 340 25 94 27 113 27 300 0 174 -3 210 -22 277 -74 269 -205 439 -417 544 -146 71 -293 98 -450 83z"/> </g> </svg>`;
+const topDock = (maxw, o = {}) => `<div class="dock top" style="height:44px"><div class="in" style="max-width:${maxw};padding:0 8px"><span class="ib">&larr;</span>${o.list ? `<span class="backname">${o.list}</span>` : ''}<span class="brand">${LOGO}</span><span class="sp"></span><span class="ib">${SEARCH}</span><span class="edit">&#9999;&#65039; Edit</span><span class="ib${o.glow ? ' glow' : ''}" style="font-size:20px">&#8943;</span></div></div>`;
+const navPill = '<span class="sgc nav" title="previous / next song in the list"><span>&lsaquo;</span><span class="mid">2 of 9</span><span>&rsaquo;</span></span>';
 const invite = () => `<div class="invite"><p><b>See something wrong? Edit this song.</b> <span>Every fix makes the book better.</span></p><span class="btn2 ghost">&#9999;&#65039; Edit this song</span></div>`;
 // docks hide on scroll down, return on scroll up or tap
 function wire(fr, opts = {}) {
@@ -166,11 +194,11 @@ function wire(fr, opts = {}) {
     sc.addEventListener('click', () => fr.classList.toggle('hide'));
 }
 
-const dockBot = (view) => `<div class="dock bot"><div class="in">
- <span class="ctl"><span>Key:</span> <b>A</b></span>
+const dockBot = (view, o = {}) => `<div class="dock bot"><div class="in">
+ ${o.list ? navPill : ''}<span class="ctl"><span>Key:</span> <b>A</b></span>
  <span class="size"><span class="aa">Aa</span><span class="pm">&minus;</span><span class="pm">+</span></span>
- <span class="sgc"><span class="${view === 'L' ? 'on' : ''}">Lyrics</span><span class="${view === 'C' ? 'on' : ''}">Chart</span></span>
- <span class="ctl">Display</span><span class="playslot" title="room for Play">&#9654;</span></div></div>`;
+ ${o.viewBtn || o.list ? '<span class="ctl">View <span class="caret">&#9662;</span></span>' : `<span class="sgc"><span class="${view === 'L' ? 'on' : ''}">Lyrics</span><span class="${view === 'C' ? 'on' : ''}">Chart</span></span>`}
+ <span class="ctl">Display</span>${o.list ? '' : '<span class="playslot" title="room for Play">&#9654;</span>'}</div></div>`;
 const seg = (opts, on) => `<span class="sgc sq">${opts.map(o => `<span class="${o === on ? 'on' : ''}">${o}</span>`).join('')}</span>`;
 const row = (lab, ck, dis) => `<div class="r${dis ? ' dis' : ''}"><span class="ck${ck ? ' on' : ''}"></span><span class="lab">${lab}</span></div>`;
 const sheets = {
@@ -183,13 +211,53 @@ const sheets = {
   <div class="r"><span class="lab">Cells per row</span>${seg(['2', '4', '6', '8'], '4')}</div>
   <div class="r"><span class="lab">Bars</span>${seg(['One cell', 'Two cells'], 'One cell')}</div>
   <div class="r"><span class="lab">Order</span>${seg(['Each section once', 'As sung'], 'Each section once')}</div></div>`,
- more: `<div class="scrim"></div><div class="bsheet"><div class="grab"></div>
-  <div class="r ln"><span class="ic">+</span><span class="lab">Add Song</span></div>
-  <div class="r ln"><span class="ic">&#9734;</span><span class="lab">Favorites</span></div>
-  <div class="r ln"><span class="ic">&#9776;</span><span class="lab">Lists</span></div>
-  <div class="r ln" style="margin-top:8px"><span class="ic">&#8681;</span><span class="lab">Export / Print</span></div>
-  <div class="r ln" style="margin-top:8px"><span class="ic">&#9681;</span><span class="lab">Theme</span>${seg(['Light', 'Dark', 'Auto'], 'Dark')}</div>
-  <div class="r"><span class="ic" style="width:22px;height:22px;border-radius:50%;background:var(--bg-tertiary);font-size:10px;display:grid;place-items:center;color:var(--text)">MB</span><span class="lab">Mike Beaumier<br><small style="color:var(--text-secondary)">Account &middot; Sign out</small></span></div></div>`,
+ more: `<div class="scrim"></div><div class="bsheet tall"><div class="grab"></div>
+  <div class="gh first">This song</div>
+  <div class="r"><span class="ic"></span><span class="lab">Save to list&hellip;</span></div>
+  <div class="r"><span class="ic">&#128221;</span><span class="lab">Song notes<i class="when">only when opened from a list</i></span></div>
+  <div class="r"><span class="ic"></span><span class="lab">Export / Print<span class="sub">&#128424;&#65039; Print &middot; &#128203; Copy ChordPro &middot; &#11015;&#65039; Download .pro</span></span><span class="go">&rsaquo;</span></div>
+  <div class="r"><span class="ic"></span><span class="lab">Report a problem<span class="sub">&#128681; Report an issue with this song &middot; &#128027; Report a bug &middot; &copy; Copyright concern</span></span><span class="go">&rsaquo;</span></div>
+  <div class="r"><span class="ic">&#11014;&#65039;</span><span class="lab">Promote to songbook<i class="when">signed in, archived songs only</i></span></div>
+  <div class="gh">Trusted and admin <i>shown only to them</i></div>
+  <div class="r"><span class="ic">&#128465;&#65039;</span><span class="lab">Request deletion</span></div>
+  <div class="r"><span class="ic">&#128584;</span><span class="lab">Request suppression</span></div>
+  <div class="r"><span class="ic">&#128256;</span><span class="lab">Request merge into another song&hellip;</span></div>
+  <div class="r"><span class="ic">&#128465;&#65039;</span><span class="lab">Delete song<i class="when">admins: instead of Request deletion</i></span></div>
+  <div class="gh">Go to</div>
+  <div class="r"><span class="ic">+</span><span class="lab">Add Song</span></div>
+  <div class="r"><span class="ic">&#9825;</span><span class="lab">Favorites</span></div>
+  <div class="r"><span class="ic">&#9776;</span><span class="lab">Lists</span></div>
+  <div class="r"><span class="ic">&#10024;</span><span class="lab">Take the tour</span></div>
+  <div class="gh">You</div>
+  <div class="r"><span class="lab">Theme</span>${seg(['Light', 'Dark', 'Auto'], 'Dark')}</div>
+  <div class="r"><span class="ic" style="width:24px;height:24px;border-radius:50%;background:var(--bg-tertiary);font-size:10px;display:grid;place-items:center;color:var(--text)">MB</span><span class="lab">Mike Beaumier<span class="sub">Account &middot; Sign out</span></span></div></div>`,
+ moreOut: `<div class="scrim"></div><div class="bsheet tall"><div class="grab"></div>
+  <div class="gh first">This song</div>
+  <div class="r"><span class="ic"></span><span class="lab">Save to list&hellip;</span></div>
+  <div class="r"><span class="ic"></span><span class="lab">Export / Print<span class="sub">&#128424;&#65039; Print &middot; &#128203; Copy ChordPro &middot; &#11015;&#65039; Download .pro</span></span><span class="go">&rsaquo;</span></div>
+  <div class="r"><span class="ic"></span><span class="lab">Report a problem<span class="sub">&#128681; Report an issue with this song &middot; &#128027; Report a bug &middot; &copy; Copyright concern</span></span><span class="go">&rsaquo;</span></div>
+  <div class="gh">Go to</div>
+  <div class="r"><span class="ic">+</span><span class="lab">Add Song</span></div>
+  <div class="r"><span class="ic">&#9825;</span><span class="lab">Favorites</span></div>
+  <div class="r"><span class="ic">&#9776;</span><span class="lab">Lists</span></div>
+  <div class="r"><span class="ic">&#10024;</span><span class="lab">Take the tour</span></div>
+  <div class="gh">You</div>
+  <div class="r"><span class="lab">Theme</span>${seg(['Light', 'Dark', 'Auto'], 'Light')}</div>
+  <div class="r"><span class="ic" style="width:24px;height:24px;border-radius:50%;border:1.5px dashed var(--border);font-size:11px;display:grid;place-items:center;color:var(--text-secondary)">?</span><span class="lab">Sign in<span class="sub">Lists, favorites and edits follow you</span></span></div></div>`,
+ key: `<div class="scrim"></div><div class="bsheet"><div class="grab"></div><div class="sh-h">Key<span class="x">&times;</span></div>
+  <div class="keyrow"><span class="pmb">&minus;</span><span class="cur">A<small>original key: A</small></span><span class="pmb">+</span></div>
+  <div class="kgrid">${['C','C&#9839;','D','E&#9837;','E','F','F&#9839;','G','A&#9837;','A','B&#9837;','B'].map(k => `<span class="${k === 'A' ? 'on' : ''}">${k}</span>`).join('')}</div>
+  <div class="r"><span class="ck"></span><span class="lab">Nashville numbers<span class="sub">1 4 5 instead of A D E</span></span></div></div>`,
+ view: `<div class="scrim"></div><div class="bsheet"><div class="grab"></div><div class="sh-h">View<span class="x">&times;</span></div>
+  <div class="r"><span class="lab">Lyrics</span><span class="chk">&#10003;</span></div>
+  <div class="r"><span class="lab">Chart</span></div>
+  <div class="gh">Versions</div>
+  <div class="r"><span class="lab">Original</span><span class="chk">&#10003;</span></div>
+  <div class="r"><span class="lab">Simplified<i class="ex">example</i></span></div>
+  <div class="gh">Tabs</div>
+  <div class="r"><span class="lab">Banjo<i class="ex">example</i></span><span class="go">&rsaquo;</span></div>
+  <div class="r"><span class="lab">Mandolin<i class="ex">example</i></span><span class="go">&rsaquo;</span></div>
+  <p class="quiet">When a tab is open, the bottom dock becomes the tab player (play, tempo, loop). The tab view itself is not drawn here.</p></div>`,
  details: `<div class="scrim"></div><div class="bsheet"><div class="grab"></div><div class="sh-h">Details<span class="x">&times;</span></div>
   <div class="fact"><span class="k">Written by</span><span class="v">Dean Webb and Mitchell Jayne</span></div>
   <div class="fact"><span class="k">Recorded by</span><span class="v">J.D. Crowe &amp; the New South (1975), Larry Sparks (1981), &hellip;<span class="ex">example</span></span></div>
@@ -199,22 +267,28 @@ const sheets = {
   <div class="sh-foot"><span class="btn2 ghost">Edit details</span><small>Shown to people who can edit this song.</small></div></div>`,
 };
 const frames = [
- ['1. Reading, docks shown', {}, 'L', null, 'Header is title, credit, practice line. The first lyric is at y = <span id="ly"></span> px.'],
+ ['1. Reading, docks shown', {}, 'L', null, 'Header is title, credit, practice line. The first lyric is at y = <span id="ly"></span> px. First visit only: a soft glow on &#8943; points to the tour.', { glow: true }],
  ['2. Scrolled, docks hidden', { scroll: 330, hidden: true }, 'L', null, 'Just lyrics. Scrolling up or tapping brings both docks back.'],
  ['3. View = Chart', {}, 'C', null, 'Chart only, no lyric text mixed in. Chart scales with Size.'],
  ['4. Display sheet open', {}, 'L', 'display', 'Layout options. Two columns is desktop-only; the Chart group is there because this song has a chart.'],
- ['5. The ⋯ sheet open', {}, 'L', 'more', 'Global navigation, Export, theme and account moved here.'],
- ['6. Details sheet open', {}, 'L', 'details', 'Tapped the credit line. The facts about the song; Edit details at the bottom.'],
- ['7. End of the song', { scroll: 'end', hidden: true }, 'L', null, 'A short, warm invitation to edit. Not a banner.'],
+ ['5. The &#8943; sheet open', {}, 'L', 'more', 'Everything with no other home, in four quiet groups. Small grey tags say when a row appears. Rows marked &rsaquo; open a short list (named in grey).'],
+ ['6. The &#8943; sheet, scrolled down', {}, 'L', 'more', 'The same sheet further down: tools for trusted users and admins (labelled as theirs), Go to, and You.', {}, 'end'],
+ ['7. The &#8943; sheet, signed out', {}, 'L', 'moreOut', 'No Promote, no trusted group, no Song notes. The account row reads &ldquo;Sign in&rdquo;.', {}, 'end'],
+ ['8. Key sheet', {}, 'L', 'key', 'Transpose a step at a time, or tap a key. The current key is filled. Nashville numbers is a toggle.'],
+ ['9. View sheet, a song with more to read', {}, 'L', 'view', 'View appears as a button when a song has versions or tabs. Entries marked &ldquo;example&rdquo; are placeholders.', { viewBtn: true }],
+ ['10. Opened from a set list', {}, 'L', null, 'The top &larr; goes back to the list and names it. The bottom dock gains previous / next song, beside Key, Size, View and Display.', { list: 'Friday Jam (example)' }],
+ ['11. Details sheet open', {}, 'L', 'details', 'Tapped the credit line. The facts about the song; Edit details at the bottom.'],
+ ['12. End of the song', { scroll: 'end', hidden: true }, 'L', null, 'A short, warm invitation to edit. Not a banner.'],
 ];
 const host = document.getElementById('frames');
-for (const [title, opts, view, sheet, note] of frames) {
+for (const [title, opts, view, sheet, note, dock = {}, sheetScroll] of frames) {
     const box = document.createElement('div');
     box.innerHTML = `<div class="cap-h">${title}</div><p class="cap-n">${note}</p>
-     <div class="fr ph"><div class="sc"><div class="pg">${header()}<div style="height:2px"></div>${view === 'L' ? lyricsHtml(14) : chartHtml(17)}${invite()}</div></div>
-     ${topDock('390px')}${dockBot(view)}${sheet ? sheets[sheet] : ''}</div>`;
+     <div class="fr ph"><div class="sc"><div class="pg">${header()}<div style="height:2px"></div>${view === 'L' ? lyricsHtml(16) : chartHtml(17)}${invite()}</div></div>
+     ${topDock('390px', dock)}${dockBot(view, dock)}${dock.glow ? '<div class="tourtip">first visit: the tour lives here</div>' : ''}${sheet ? sheets[sheet] : ''}</div>`;
     host.appendChild(box);
     wire(box.querySelector('.fr'), opts);
+    if (sheetScroll) { const sh = box.querySelector('.bsheet'); sh.scrollTop = 1e6; }
 }
 // measure the first lyric text
 const f1 = host.children[0].querySelector('.fr');
