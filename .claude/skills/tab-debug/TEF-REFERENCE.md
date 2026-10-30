@@ -113,6 +113,9 @@ table, chord table, measures, tracks, 0x64 block, reading list, components
   notation for 0xb0 (308, two tracks), nothing for 0x80. The V2 upgrade that
   decides is not in our decompiles, so V2 tracks are created, tab only.
   **MIDI program** (+8): 105 banjos, 110 fiddle, 25 the rest, 32 upright bass.
+  An unedited original's track records come back byte for byte (all 91 V3
+  corpus files): drum-line codes, the capo offset at +10 and the bytes after
+  the last string stay while the capo and tuning do.
 - **What TablEdit's own MusicXML export of a rewritten file still differs in**
   (G15f oracle, 50 corpus files, tab staff only; the OTF does not hold these):
   explicit rests (0x33; also what sets some notes' voice), voices, the key

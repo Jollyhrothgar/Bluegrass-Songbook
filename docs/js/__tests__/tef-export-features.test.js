@@ -499,6 +499,17 @@ describe('.tef writer: what a TablEdit export of the written file showed', () =>
         expect(trackRecord(corpus('banjo-hangout/downloads/25808_tef_cumberland_gap.tef'), 0)[32]).toBe(0);
     });
 
+    it('an unedited original keeps every track record byte for byte: drum-line codes, capo offset, bytes past the last string', () => {
+        for (const rel of ['banjo-hangout/downloads/25014_tef_blackberry_blossom.tef',       // a drum track
+            'banjo-hangout/downloads/24440_tef_north_carolina_breakdown.tef',                // a capo offset the rule does not give
+            'flatpicker-hangout/downloads/3424_tef_clinch_mountain_backstep.tef',            // bytes after the strings
+            'fiddle-hangout/downloads/3404_tef_wheel_hoss.tef']) {
+            const source = corpus(rel);
+            const { bytes } = writeTef(parseTef(source, 'x'), { source, template });
+            for (let i = 0; i < trackCount(source); i++) expect([...trackRecord(bytes, i)], `${rel} track ${i}`).toEqual([...trackRecord(source, i)]);
+        }
+    });
+
     it('a created track gets a name the importer reads back, never an empty one', () => {
         const { bytes } = roundTrip(doc());
         expect(trackRecord(bytes, 0)[32]).not.toBe(0);

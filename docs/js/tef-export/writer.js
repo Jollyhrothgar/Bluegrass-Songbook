@@ -180,12 +180,17 @@ function trackRecord(track, baseRecord, keepBytes, notices) {
     }
     let capo = track.capo;
     if (capo > 12) { capo = 12; notices.values_clamped += 1; }
-    rec.fill(0, 20, 32);
     if (track.perc) {
-        view.setUint16(12, 0, true);
-        view.setUint16(10, 0, true);
-        PERCUSSION_LINES.slice(0, track.strings).forEach((b, i) => { rec[20 + i] = b; });
+        // A drum track's "tuning" bytes are its drum-line codes (TEF-FORMAT.md): an original's stay.
+        if (!keepBytes) {
+            rec.fill(0, 20, 32);
+            view.setUint16(12, 0, true);
+            view.setUint16(10, 0, true);
+            PERCUSSION_LINES.slice(0, track.strings).forEach((b, i) => { rec[20 + i] = b; });
+        }
     } else {
+        const was = { capo: view.getUint16(12, true), tuning: rec.slice(20, 20 + track.strings) };
+        if (!keepBytes) rec.fill(0, 20, 32);       // an original's bytes past its last string stay too
         view.setUint16(12, capo, true);
         track.midi.forEach((m, i) => {
             if (m < 6 || m > 90) throw new TefWriteError(`Track ${track.id}: string ${i + 1} is outside TablEdit's range.`);
@@ -193,13 +198,17 @@ function trackRecord(track, baseRecord, keepBytes, notices) {
         });
         // TablEdit recomputes a 5-string track's capo offset on load (V2 loader
         // FUN_10004632c): rec[10] low nibble = capo + t1 - t5 - 5 when positive.
-        let fifth = 0;
-        if (track.strings === 5 && capo > 0) {
-            const v = capo + rec[20] - rec[24] - 5;
-            if (v > 0 && v < 0x0b) fifth = v;
+        // An original's own byte stays while its capo and tuning do (24440 disagrees with the rule).
+        const unchanged = keepBytes && capo === was.capo && was.tuning.every((b, i) => b === rec[20 + i]);
+        if (!unchanged) {
+            let fifth = 0;
+            if (track.strings === 5 && capo > 0) {
+                const v = capo + rec[20] - rec[24] - 5;
+                if (v > 0 && v < 0x0b) fifth = v;
+            }
+            rec[10] = (rec[10] & 0xf0) | fifth;
+            rec[11] = 0;
         }
-        rec[10] = (rec[10] & 0xf0) | fifth;
-        rec[11] = 0;
     }
     // Name. An original's own bytes (junk after the NUL included) stay when the
     // importer reads them back as this track; the empty name is such a name, and
