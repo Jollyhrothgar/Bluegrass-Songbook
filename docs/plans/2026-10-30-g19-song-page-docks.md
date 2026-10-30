@@ -138,6 +138,8 @@ scope (F10/F11 own the new look elsewhere).
     only when the dock is narrower than 640px, as the band already does.
   - Mockup D1 shows only ▶ · Tempo · View · Display; that would make desktop
     players reach into a sheet for things that are one click today.
+  - **Mike, 2026-10-30:** build it as drawn. Revisit if it feels slow once he
+    sees the real page; the band already supports the one-row layout.
 
 ### Removed on purpose
 
@@ -399,3 +401,76 @@ before any code moves.
 - **iOS Safari's collapsing address bar** with fixed bottom bars is already
   unverified for the editor (`lead-editor/CLAUDE.md`). Check on Mike's phone
   at each phase.
+
+## Later, not G19
+
+- **Tab editor, keyboard first** (Mike, 2026-10-30). Entering a note means
+  two choices on two separate rulers: its length (a half note), then where it
+  starts (beat one, beat two, the "and" of three). The editor already has
+  both: note lengths, and the cursor step in View. What's left is packaging
+  them into a keyboard-driven flow that is easy to learn.
+- **Lyric sync to chord changes:** see the G18 checklist (after playback).
+
+## Checklist
+
+Mike approved the frames on 2026-10-30 ("it looks really good"):
+`g19-docks-views-{phone,desktop}.html` plus the G18b3 dock mockups.
+
+| Piece | Status |
+|---|---|
+| Spec + mock frames | done, commits on `feature/g19-song-page-docks` |
+| G19a top dock + Details | building (subagent, Sonnet high) |
+| G19b reading dock | not started; draw the phone Lyrics + Chart frame (chart above lyrics) first |
+| G19c tabs + lists | not started |
+| G19d tidy | not started |
+| G19e editor Submit in the top dock | only on Mike's yes |
+
+### G19a brief
+
+Song page and lyrics editor only; every other page keeps today's band.
+
+1. **Top band on the song page:** ← · BB · 🔍 · ✏️ Edit · ⋯, on phone and
+   desktop. The desktop nav, ♡ Lists, the Export pill, Promote, ✨ Tour, 🐛,
+   theme and Sign in leave the band.
+2. **⋯** is a sheet on phones and a popover on desktop, grouped as in
+   `g18b3-docks-phone.html` frames 5–7:
+   - **This song:** Save to list…; Song notes (list context); Export / Print ›
+     with all five options; Report a problem › (Report an issue with this
+     song, Report a bug, Copyright concern); Promote (signed in, archived
+     songs).
+   - **Trusted and admin:** Request deletion / Delete song, Request
+     suppression, Request merge.
+   - **Go to:** Add Song, Favorites, Lists, Take the tour.
+   - **You:** Theme (Light / Dark / Auto); the account, or "Sign in".
+   - **The site-wide group:** today's `setOverflowBase` entries.
+3. **On a first visit ⋯ glows** instead of the ✨ Tour button. It stops once
+   the tour is opened, the same rule as today.
+4. **One Edit**, in the top band. Keep the id `edit-song-btn`:
+   - On the lyrics, chart or ABC, it opens the lyrics editor.
+   - On a tab part, it opens the tab editor. The band's `.tab-edit-btn` and
+     the ⚙ sheet's Tab ▸ Edit row go.
+   - On a placeholder, it opens the details form.
+   - It is hidden while the tab editor is open.
+   - The title-row Edit and 🏷️ Details buttons go.
+5. **"Written by… ›" opens Details:** a sheet on phones, a popover on desktop.
+   - It holds everything the Info pill has (see "Must carry over") and the key.
+   - "Edit details" at the bottom, for people allowed to edit, opens today's
+     `showMetadataEditor` unchanged.
+   - The Info pill goes.
+   - For a song with no writer line (Traditional, or none), the line still
+     appears and opens Details.
+6. **End of the lead sheet:** a quiet line, "See something wrong? Use ✏️
+   Edit at the top. Every fix makes the book better." (frame 12).
+7. **Lyrics editor:** the same thin top band: ← back to the song · BB · ⋯.
+   - The in-page "← Back" goes; its notice ("Songs go live as soon as you
+     submit them") stays.
+   - The band keeps its 48px height and its element, because
+     `lead-editor/index.js` measures it.
+8. **Tour:** the steps for Lists and Edit point at their new homes.
+   `tour.spec.js` and `tour-mobile.spec.js` pass.
+9. **Unchanged in G19a:**
+   - the pill row's Key, Display and Versions
+   - the part tabs
+   - the tab player (except its Edit)
+   - auto-hide
+   - the list nav bar
