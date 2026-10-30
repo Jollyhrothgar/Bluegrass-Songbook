@@ -1,11 +1,11 @@
 // Chord chart view for the song page (G18b2)
 //
 // Lazy module: song-view.js import()s it only for a work whose index row has
-// `chord_chart`. chord-chart.js has the logic (alignment, mismatches, bars,
-// carried chords, transposition); this file draws it.
+// `chord_chart`. chord-chart.js has the logic (alignment, bars, carried
+// chords, transposition); this file draws it.
 //
-//   mountLeadSheetChart  the lead-sheet part: notes under lyric lines, and the
-//                        chart as a second column (CSS shows it on wide screens)
+//   mountLeadSheetChart  the lead-sheet part: the chart as a second column
+//                        (CSS shows it on wide screens)
 //   renderChartTab       the narrow screens' "Chart" part tab
 //
 // ctx = {chart, sections, opts, fontScale}: the published chart JSON, the
@@ -13,9 +13,9 @@
 // the display options it used ({key, transposeTo, nashville, ...}), so the
 // chart always shows what the lyrics show.
 
-import { chordGlyphHtml, toNashville, transposeChord, getSemitonesBetweenKeys } from './chords.js';
+import { chordGlyphHtml, toNashville, getSemitonesBetweenKeys } from './chords.js';
 import {
-    alignForm, compareSections, regroupBars, carriedChords, transposeChart, practiceOrder,
+    alignForm, regroupBars, carriedChords, transposeChart, practiceOrder,
 } from './chord-chart.js';
 import { renderSectionsHtml } from './renderers/chordpro.js';
 import { escapeHtml } from './utils.js';
@@ -41,9 +41,8 @@ export function setBars(n) {
 // ---------------------------------------------------------------------------
 
 /**
- * -> {chart (moved to the displayed key), alignment, mismatches, show, showLyric}
- * `show` draws a chart chord, `showLyric` a chord spelled like the lyric chart
- * (what compareSections reports); both follow the Nashville toggle.
+ * -> {chart (moved to the displayed key), alignment, sections, opts, show}
+ * `show` draws a chart chord; it follows the Nashville toggle.
  */
 export function buildModel({ chart, sections, opts }) {
     const lyricKey = opts.key || null;
@@ -51,13 +50,9 @@ export function buildModel({ chart, sections, opts }) {
     const toShown = getSemitonesBetweenKeys(chart.key, shown);
     const moved = toShown ? transposeChart(chart, toShown) : chart;
     const alignment = alignForm(moved, sections);
-    const mismatches = compareSections(moved, alignment, lyricKey ? { lyricKey } : {});
-    const lyricShift = getSemitonesBetweenKeys(lyricKey, shown);
-    const nashville = c => (opts.nashville && shown ? toNashville(c, shown) : c);
     return {
-        chart: moved, alignment, mismatches, sections, opts,
-        show: nashville,
-        showLyric: c => nashville(lyricShift ? transposeChord(c, lyricShift) : c),
+        chart: moved, alignment, sections, opts,
+        show: c => (opts.nashville && shown ? toNashville(c, shown) : c),
     };
 }
 
@@ -107,15 +102,6 @@ export function chartSectionHtml(section, caption, cellsPerBar, model) {
         + `${chartLinesHtml(section, cellsPerBar, model).join('')}</div>`;
 }
 
-const glyphs = (chords, show) => chords.map(c => chordGlyphHtml(show(c))).join(' ');
-
-/** "Differs from the chart: X there, Y here." for one mismatch from compareSections. */
-export function mismatchNoteHtml(m, model) {
-    return `<div class="cc-mis" role="note">Differs from the chart: `
-        + `<b>${glyphs(m.chart, model.showLyric)}</b> there, `
-        + `<b>${glyphs(m.lyric, model.showLyric)}</b> here.</div>`;
-}
-
 const LEGEND = 'Dashed line: cell. Faint <i>\\</i>: keep playing. '
     + 'Faint chord at the start of a line: carried over from the line above.';
 
@@ -127,7 +113,7 @@ function chartBodyHtml(model, cellsPerBar) {
     }
     if (!alignment.aligned && alignment.reason === 'count') {
         parts.push(`<p class="cc-note">This chart's form has ${alignment.formCount} sections and the lyrics have `
-            + `${alignment.lyricCount}, so they are not compared and Practice follows the chart's own form.</p>`);
+            + `${alignment.lyricCount}, so Practice follows the chart's own form.</p>`);
     }
     parts.push(`<p class="cc-legend">${LEGEND}</p>`);
     if (chart.by) parts.push(`<p class="cc-by">Chart by ${escapeHtml(chart.by)}</p>`);
@@ -147,34 +133,6 @@ function headHtml(model, state) {
 }
 
 // ---------------------------------------------------------------------------
-// Notes under lyric lines (DOM)
-// ---------------------------------------------------------------------------
-
-/** The `.song-line`s of a rendered lyric section, comments left out. */
-const lyricLines = el => [...el.querySelectorAll('.section-content > .song-line:not(.song-comment)')];
-
-/**
- * Put each mismatch under its lyric line (or under the section label when it
- * is section-level) in the rendered lyric chart `root`.
- */
-export function addMismatchNotes(root, model) {
-    for (const m of model.mismatches) {
-        const section = model.alignment.pairs[m.index].lyric;
-        const at = model.sections.indexOf(section);
-        const el = root.querySelector(`.song-section[data-section-index="${at}"]`);
-        if (!el) continue;                       // compact mode folded this repeat away
-        const note = mismatchNoteHtml(m, model);
-        if (m.line === null) {
-            const label = el.querySelector('.section-label');
-            if (label) label.insertAdjacentHTML('afterend', note);
-            else el.insertAdjacentHTML('afterbegin', note);
-        } else {
-            lyricLines(el)[m.line - 1]?.insertAdjacentHTML('afterend', note);
-        }
-    }
-}
-
-// ---------------------------------------------------------------------------
 // Practice mode: the chart unrolled in the lyric chart's playing order
 // ---------------------------------------------------------------------------
 
@@ -191,13 +149,11 @@ function div(className, html = '') {
  * chart section sits beside / under the lyric section. Layout is CSS.
  */
 function practiceSection(section, n, total, cellsPerBar, model) {
-    const { alignment, mismatches, opts } = model;
+    const { alignment, opts } = model;
     const pair = alignment.aligned ? alignment.pairs[n] : null;
     const el = div('cc-psec');
     el.innerHTML = `<div class="cc-plabel"><span>${escapeHtml(pair ? pair.lyric.label : section.name)}</span>`
         + `<span class="cc-pcount">${n + 1} of ${total}</span></div>`;
-    const mine = pair ? mismatches.filter(m => m.index === n) : [];
-    for (const m of mine.filter(m => m.line === null)) el.insertAdjacentHTML('beforeend', mismatchNoteHtml(m, model));
 
     const chartLines = chartLinesHtml(section, cellsPerBar, model);
     if (!pair) {
@@ -223,9 +179,6 @@ function practiceSection(section, n, total, cellsPerBar, model) {
         line += 1;
         const row = div('cc-prow', '<div class="cc-plyric"></div>');
         row.firstChild.append(item);
-        for (const m of mine.filter(m => m.line === line)) {
-            row.firstChild.insertAdjacentHTML('beforeend', mismatchNoteHtml(m, model));
-        }
         row.append(div('cc-pchart', chartLines[line - 1]));
         el.append(row);
     }
@@ -266,8 +219,7 @@ export function drawPanel(host, ctx) {
 }
 
 /**
- * The lead-sheet part: flag mismatches under the lyric lines and add the chart
- * column beside the lyrics. The column is always built; CSS shows it on wide
+ * The lead-sheet part: add the chart column beside the lyrics. The column is always built; CSS shows it on wide
  * screens (the narrow ones get a Chart tab instead).
  */
 export function mountLeadSheetChart(container, ctx) {
@@ -279,8 +231,7 @@ export function mountLeadSheetChart(container, ctx) {
     chordView.replaceWith(cols);
     lyrics.append(chordView);
     cols.append(lyrics, column);
-    const model = drawPanel(column, ctx);
-    addMismatchNotes(chordView, model);
+    drawPanel(column, ctx);
 }
 
 /** The Chart part tab (narrow screens): the panel alone. */

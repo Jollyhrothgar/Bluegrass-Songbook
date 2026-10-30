@@ -1,6 +1,5 @@
 // E2E for the chord chart on the song page (G18b2): Old Home Place is the one
-// song with a chart. Structure only: its chords and the verse 2 mismatch can
-// be edited from the site, so the exact numbers live in Vitest against a
+// song with a chart. Structure only: its chords can be edited from the site, so the exact numbers live in Vitest against a
 // frozen copy (docs/js/__tests__/chord-chart-view.test.js).
 import { test, expect } from './fixtures.js';
 import { openPill } from './helpers.js';
