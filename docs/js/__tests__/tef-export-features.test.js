@@ -532,6 +532,25 @@ describe('.tef writer: what a TablEdit export of the written file showed', () =>
         expect(showMode(writeTef(parseTef(v2, 'x'), { source: undefined, template }).bytes, 0)).toBe(1);
     });
 
+    it('turns off the document-wide Notation switch the blank template has on', () => {
+        // TablEdit 3.06 saved one blank file with Settings ▸ General ▸ Notation on and
+        // one with it off: they differ in track byte 16 and two layout-block bytes.
+        // Track byte 16 alone still exported a notation staff (Chicken Reel, 13038).
+        const fixture = (name) => new Uint8Array(fs.readFileSync(path.join(repo, 'tests/parser/fixtures', name)));
+        const on = fixture('tabledit_306_blank_notation_on.tef');
+        const off = fixture('tabledit_306_blank_notation_off.tef');
+        const layout = (d) => { const p = u32(d, 0x64); return [d[p + 17], d[p + 78]]; };
+        const diffs = [...on].flatMap((b, i) => (b === off[i] ? [] : [i]));
+        expect(diffs).toEqual([u32(on, 0x60) + 4 + 16, u32(on, 0x64) + 17, u32(on, 0x64) + 78]);
+        expect(layout(template)).toEqual(layout(on));
+        const { bytes } = roundTrip(doc({ notation: { banjo: [{ measure: 1, events: [ev(0, note(1, 0, 480))] }] } }));
+        expect(layout(bytes)).toEqual(layout(off));
+        expect(showMode(bytes, 0)).toBe(showMode(off, 0));
+        // A TablEdit 3 original keeps its own switch
+        const source = corpus('banjo-hangout/downloads/26497_tef_cripple_creek___up_the_neck.tef');
+        expect(layout(writeTef(parseTef(source, 'x'), { source, template }).bytes)).toEqual(layout(source));
+    });
+
     it('keeps what a TablEdit 3 original showed: both, tab only, or hidden', () => {
         for (const rel of ['fiddle-hangout/downloads/3404_tef_wheel_hoss.tef',       // first track tab, the rest hidden
             'banjo-hangout/downloads/26497_tef_cripple_creek___up_the_neck.tef']) {  // notation and tab

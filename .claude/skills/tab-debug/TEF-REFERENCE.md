@@ -116,6 +116,10 @@ table, chord table, measures, tracks, 0x64 block, reading list, components
   exported tab only for 0x00, 0x10, 0x20, 0x30, 0x90 and 0xa0, tab plus
   notation for 0xb0 (308, two tracks), nothing for 0x80. The V2 upgrade that
   decides is not in our decompiles, so V2 tracks are created, tab only.
+  The document-wide **Settings ▸ General ▸ Notation** switch is the 0x64 layout
+  block +17 bit 1 and +78 bit 0 (blank file saved on vs off: only these and
+  byte 16 differ); the template has it on, so a file written from the template
+  clears both, or TablEdit still exports a notation staff.
   **MIDI program** (+8): 105 banjos, 110 fiddle, 25 the rest, 32 upright bass.
   An unedited original's track records come back byte for byte (all 91 V3
   corpus files): drum-line codes, the capo offset at +10 and the bytes after

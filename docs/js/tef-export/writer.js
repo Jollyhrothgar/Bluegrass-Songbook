@@ -50,6 +50,10 @@ const DEFAULT_PROGRAM = { '5-string-banjo': 105, 'tenor-banjo': 105, 'fiddle': 1
 // the tab only, which is what a .tef opened here displays and what the corpus
 // mostly stores (the blank file TablEdit saves shows both).
 const SHOW_BITS = 0x70, SHOW_TAB_ONLY = 0x10;
+// The document-wide switch (Settings ▸ General ▸ Notation): layout block (header
+// ptr 0x64) +17 bit 1 and +78 bit 0. A blank file TablEdit 3.06 saved with it on
+// and off differs in these two bytes and track byte 16 (G15f oracle).
+const LAYOUT_NOTATION_A = 17, LAYOUT_NOTATION_B = 78;
 const DEFAULT_TRANSPOSE = { mandolin: 12 };
 const PERCUSSION_LINES = [0x23, 0x2b, 0x34, 0x3c, 0x44, 0x4c, 0x54, 0x58, 0x59, 0x5a, 0x5a, 0x5a];
 
@@ -593,6 +597,16 @@ export function writeTef(otf, { source, template } = {}) {
     for (const slot of OPAQUE_SLOTS) {
         const r = base.regions.get(slot);
         if (r) blocks.set(slot, base.data.subarray(r[0], r[1]));
+    }
+    // The document's own Notation switch (TablEdit ▸ Settings ▸ General) is in the
+    // layout block too, and the blank template has it on, so TablEdit exports a
+    // notation staff whatever the tracks say. Off, as TablEdit 3.06 itself saves it.
+    const layout = blocks.get(SLOT_LAYOUT);
+    if (!chosen.fromSource && layout && layout.length > LAYOUT_NOTATION_B) {
+        const off = layout.slice();
+        off[LAYOUT_NOTATION_A] &= ~0x02;
+        off[LAYOUT_NOTATION_B] &= ~0x01;
+        blocks.set(SLOT_LAYOUT, off);
     }
     const reading = readingList(otf, notices);
     if (reading) blocks.set(SLOT_READING, reading);
