@@ -9888,6 +9888,315 @@ body.has-bottomband .container {
 }
 
 /* ============================================
+   THE THIN TOP DOCK (G19, shell.js setTopBar({dock}))
+   Song pages and the lyrics editor: ← · BB · [search] · [Edit] · ⋯ and
+   nothing else. The nav, bug, theme, tour and account leave the band and
+   live in the ⋯ menu. Same element, same 48px.
+   ============================================ */
+
+.app-topbar.topbar-dock .topbar-nav,
+.app-topbar.topbar-dock #topbar-tour,
+.app-topbar.topbar-dock #topbar-bug,
+.app-topbar.topbar-dock #topbar-theme,
+.app-topbar.topbar-dock #auth-section {
+    display: none;
+}
+
+.topbar-dock .topbar-back {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    min-width: 34px;
+    height: 34px;
+    padding: 0 0.4rem;
+    border: none;
+    border-radius: var(--radius-lg);
+    font-size: 1.15rem;
+    line-height: 1;
+}
+
+.topbar-dock .topbar-back:hover { background: var(--bg-secondary); }
+
+.topbar-back-label {
+    max-width: 38vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: var(--font-md);
+    color: var(--text-secondary);
+}
+
+.topbar-dock .topbar-icon-btn {
+    min-width: 34px;
+    height: 34px;
+    display: inline-grid;
+    place-items: center;
+    padding: 0;
+    color: var(--text);
+}
+
+.topbar-dock #topbar-overflow-btn {
+    font-size: 1.35rem;
+    border-radius: 50%;
+}
+
+/* Edit: the one way into editing, always in the band */
+.topbar-edit-btn {
+    border-radius: 999px;
+    border-color: var(--accent);
+    color: var(--accent);
+    font-weight: 600;
+    font-size: var(--font-base);
+    padding: 0.25rem 0.75rem;
+}
+
+.topbar-edit-btn:hover { background: color-mix(in srgb, var(--accent) 10%, transparent); }
+
+/* A first visit: ⋯ glows (three pulses, then a steady glow) and says why */
+.topbar-dock #topbar-overflow-btn.tour-invite {
+    background: color-mix(in srgb, var(--accent) 10%, transparent);
+    box-shadow: 0 0 0 2px var(--accent), 0 0 8px 1px color-mix(in srgb, var(--accent) 40%, transparent);
+    color: var(--accent);
+    animation: tour-glow 2.4s ease-in-out 3;
+}
+
+.tour-invite-tip {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    width: max-content;
+    max-width: 180px;
+    padding: 0.35rem 0.6rem;
+    border-radius: var(--radius-lg);
+    background: var(--accent);
+    color: var(--on-accent);
+    font-size: var(--font-sm);
+    font-weight: 600;
+    pointer-events: none;
+    /* says its piece, then gets out of the title's way; the glow stays */
+    opacity: 0;
+    animation: tour-tip 8s ease 0.4s 1 forwards;
+}
+
+@keyframes tour-tip {
+    0%, 100% { opacity: 0; }
+    8%, 85% { opacity: 1; }
+}
+
+.topbar-dock #topbar-overflow-btn.tour-invite:not(.open) + .tour-invite-tip { display: block; }
+
+@media (prefers-reduced-motion: reduce) {
+    .topbar-dock #topbar-overflow-btn.tour-invite { animation: none; }
+}
+
+/* ⋯ menu (renderMenu): a popover under the button on a wide screen */
+.topbar-dock .topbar-overflow .pill-popover {
+    width: 340px;
+    max-width: calc(100vw - 16px);
+    max-height: calc(100vh - 64px);
+    overflow-y: auto;
+    padding: var(--space-xs) var(--space-sm) var(--space-sm);
+}
+
+/* An open menu rises above the bottom band (also z 900, later in the page) */
+.app-topbar:has(#topbar-overflow-menu:not(.hidden)) { z-index: 1000; }
+
+.topbar-overflow .menu-scrim { display: none; }
+
+.menu-section-title {
+    padding: 0.6rem 0.6rem 0.2rem;
+    font-size: var(--font-xs);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}
+
+.menu-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 0.5rem 0.6rem;
+}
+
+.menu-item-icon {
+    flex: none;
+    width: 1.5rem;
+    min-height: 1.2em;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.menu-item-text {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item-label { font-size: var(--font-base); }
+
+.menu-item-sub {
+    margin-top: 1px;
+    font-size: var(--font-sm);
+    color: var(--text-secondary);
+}
+
+.menu-item-chevron {
+    align-self: center;
+    color: var(--text-secondary);
+    transition: transform 0.15s;
+}
+
+.menu-item.expanded .menu-item-chevron { transform: rotate(90deg); }
+.menu-item.expanded .menu-item-sub { display: none; }
+
+.menu-sub { padding: 0 0 var(--space-xs) 2.1rem; }
+.menu-sub-item { font-size: var(--font-base); }
+
+.menu-segmented-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+    padding: 0.4rem 0.6rem;
+}
+
+.menu-segmented {
+    display: inline-flex;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.menu-segmented-btn {
+    padding: 0.35rem 0.8rem;
+    border: none;
+    background: var(--bg);
+    color: var(--text);
+    font-size: var(--font-sm);
+    cursor: pointer;
+}
+
+.menu-segmented-btn + .menu-segmented-btn { border-left: 1px solid var(--border); }
+.menu-segmented-btn.active { background: var(--accent); color: var(--on-accent); }
+
+/* On a phone the menu is a sheet from the bottom over a scrim. The scrim and
+   the sheet live inside the band's own stacking context, so the band's
+   buttons dim with the page. */
+@media (max-width: 640px) {
+    .topbar-dock .topbar-overflow:has(#topbar-overflow-menu:not(.hidden)) .menu-scrim {
+        display: block;
+        position: fixed;
+        inset: 0;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    .topbar-dock .topbar-overflow .pill-popover {
+        position: fixed;
+        z-index: 2;
+        top: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: auto;
+        max-width: none;
+        max-height: 85vh;
+        border-width: 1px 0 0;
+        border-radius: 16px 16px 0 0;
+        padding: var(--space-md) var(--space-md) var(--space-lg);
+        transform: none !important;   /* shell.js's edge-clamp is for popovers */
+    }
+
+    /* the grab handle */
+    .topbar-dock .topbar-overflow .pill-popover::before {
+        content: '';
+        display: block;
+        width: 36px;
+        height: 4px;
+        margin: 0 auto var(--space-sm);
+        border-radius: 2px;
+        background: var(--border);
+    }
+
+    .menu-item { padding: 0.65rem 0.6rem; }
+}
+
+/* ---- Details sheet (work-view.js openDetails) ---- */
+.dock-sheet .notes-sheet-title { margin: 0; font-size: 1.1rem; }
+
+.details-content { border: none; padding: 0; }
+.details-content .info-details { display: block; margin: 0; }
+
+.details-content .info-item {
+    display: grid;
+    grid-template-columns: 6.5rem 1fr;
+    gap: var(--space-sm);
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--border);
+    font-size: var(--font-base);
+}
+
+.details-content .info-label { color: var(--text-secondary); }
+.details-content .info-tags { align-items: start; }
+.details-content .info-tags-label { padding-top: 0; font-size: inherit; }
+
+.details-footer {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    padding-top: var(--space-md);
+}
+
+.details-edit-btn {
+    padding: 0.45rem 0.9rem;
+    border: 1px solid var(--accent);
+    border-radius: var(--radius-lg);
+    background: var(--bg);
+    color: var(--accent);
+    font-size: var(--font-base);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.details-edit-btn:hover { background: color-mix(in srgb, var(--accent) 10%, transparent); }
+.details-footer-note { font-size: var(--font-sm); color: var(--text-secondary); }
+
+/* The writer line is a button: it opens Details */
+.song-details-btn {
+    display: block;
+    padding: 0;
+    border: none;
+    background: none;
+    font: inherit;
+    font-size: var(--font-base);
+    text-align: left;
+    cursor: pointer;
+}
+
+.song-details-btn:hover { color: var(--accent); }
+
+/* The tab editor brings its own chrome: clear the pill row and part tabs
+   from above it (work-view.js syncTabEditing) */
+body.tab-editing #song-pill-row,
+body.tab-editing #part-tabs { display: none; }
+
+/* The quiet line at the end of a lead sheet, pointing at the top Edit */
+.song-edit-nudge {
+    margin: var(--space-xl) 0 var(--space-md);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: var(--font-base);
+}
+
+.song-edit-nudge b { color: var(--text); }
+
+/* ============================================
    UNIFIED SONG PAGE (M2): title/artist row, pill row, part tabs,
    bottom-band playback controls. See work-view.js + song-controls.js.
    ============================================ */

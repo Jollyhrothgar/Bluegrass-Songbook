@@ -1,6 +1,6 @@
 // Unit tests for song-controls.js (unified song page pills)
 import { describe, it, expect, beforeEach } from 'vitest';
-import { keyPillLabel, transposeBySemitone, practiceLinks, buildKeyPill, buildInfoPill } from '../song-controls.js';
+import { keyPillLabel, transposeBySemitone, practiceLinks, buildKeyPill, renderDetails } from '../song-controls.js';
 import * as state from '../state.js';
 
 describe('keyPillLabel', () => {
@@ -94,14 +94,14 @@ describe('Key pill', () => {
     });
 });
 
-// F9: the Info pill is where the song page names performers — only the
+// F9: the Details sheet is where the song page names performers — only the
 // MusicBrainz-backed covering artists; the scraped `artist` is never shown.
-describe('Info pill credits', () => {
-    function openInfo(song, versions = []) {
-        const root = buildInfoPill(song, versions);
-        document.body.appendChild(root);
-        root.querySelector('.pill-btn').click();
-        return root.querySelector('.pill-popover');
+describe('Details credits', () => {
+    function openInfo(song) {
+        const container = document.createElement('div');
+        document.body.appendChild(container);
+        renderDetails(container, song);
+        return container;
     }
 
     it('names the writer, then who recorded it with years — never an unconfirmed scraped artist', () => {
@@ -111,8 +111,8 @@ describe('Info pill credits', () => {
             covering_artists: ['Richard Greene', 'Norman Blake'], covering_years: [1979, null], tags: {},
         });
         const items = [...popover.querySelectorAll('.info-item')].map(el => el.textContent);
-        expect(items[0]).toBe('Written by: Jimmie Davis, Charles Mitchell');
-        expect(items[1]).toBe('Recorded by: Richard Greene (1979), Norman Blake');
+        expect(items[0]).toBe('Written by Jimmie Davis, Charles Mitchell');
+        expect(items[1]).toBe('Recorded by Richard Greene (1979), Norman Blake');
         expect(popover.textContent).not.toContain('Johnny Cash');
     });
 
@@ -138,12 +138,53 @@ describe('Info pill credits', () => {
         expect(popover.querySelector('.artists-hidden').textContent).toBe(', D (1980), E (1990)');
     });
 
-    it('treats "Traditional" as the writer, and shows no versions\' scraped artists', () => {
-        const popover = openInfo({ id: 'trad', artist: 'Traditional', tags: {} },
-            [{ artist: 'Ralph Stanley' }]);
+    it('treats "Traditional" as the writer, and shows no scraped artists', () => {
+        const popover = openInfo({ id: 'trad', artist: 'Traditional', tags: {} });
         const items = [...popover.querySelectorAll('.info-item')].map(el => el.textContent);
-        expect(items[0]).toBe('Written by: Traditional');
+        expect(items[0]).toBe('Written by Traditional');
         expect(popover.textContent).not.toContain('Recorded by');
-        expect(popover.textContent).not.toContain('Ralph Stanley');
+    });
+});
+
+// Everything the Info pill showed has to survive the move into Details.
+describe('Details content', () => {
+    function details(song, { signedIn = false } = {}) {
+        window.SupabaseAuth = signedIn ? {
+            isLoggedIn: () => true,
+            fetchTagVotes: async () => ({ data: {} }),
+            fetchUserTagVotes: async () => ({ data: {} }),
+        } : undefined;
+        const container = document.createElement('div');
+        document.body.appendChild(container);
+        renderDetails(container, song);
+        return container;
+    }
+
+    it('shows the key, the book, the source and the notes', () => {
+        const el = details({
+            id: 'x', title: 'X', key: 'G', book: 'Golden Standards', source: 'classic-country',
+            notes: 'Kick it off slow', tags: {},
+        });
+        const text = [...el.querySelectorAll('.info-item')].map(i => i.textContent);
+        expect(text).toContain('Key G');
+        expect(text).toContain('From Golden Standards');
+        expect(text).toContain('Source Classic Country Song Lyrics');
+        expect(text).toContain('Notes Kick it off slow');
+    });
+
+    it('offers tag votes and "+ Add your own" only to a signed-in reader', () => {
+        const song = { id: 'x', tags: { Bluegrass: 1 } };
+        const out = details(song);
+        expect(out.querySelector('.votable-tag')).not.toBeNull();
+        expect(out.querySelector('.vote-chip')).toBeNull();
+        expect(out.querySelector('.add-tags-btn')).toBeNull();
+
+        const inn = details(song, { signedIn: true });
+        expect(inn.querySelector('.vote-chip')).not.toBeNull();
+        expect(inn.querySelector('.add-tags-btn').textContent).toBe('+ Add your own');
+    });
+
+    it('says "None" when a song has no tags', () => {
+        expect(details({ id: 'x', tags: {} }).querySelector('.no-tags').textContent).toBe('None');
     });
 });

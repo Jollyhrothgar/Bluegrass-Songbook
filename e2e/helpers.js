@@ -5,9 +5,12 @@
 //   - nav links   .topbar-nav-link[data-nav="search|add|favorites|lists"]
 //   - theme       #topbar-theme
 //   - overflow    #topbar-overflow-btn / #topbar-overflow-menu
-// Song pages add: #topbar-back, #edit-song-btn, #list-picker-btn and the
-// Export pill (#export-pill) to the band; the song body renders the pill row
-// (#key-pill, #display-pill, #info-pill, #arrangement-pill) and .part-tabs.
+// Song pages have the thin top dock: #topbar-back, #topbar-search, the one
+// Edit (#edit-song-btn) and ⋯. Everything else is in ⋯ (see openMenu below):
+// Save to list (#list-picker-btn), Export / Print (#export-menu-btn), Report a
+// problem (#report-menu-btn), Take the tour (#overflow-tour). The song body
+// renders the pill row (#key-pill, #display-pill, #arrangement-pill), .part-tabs
+// and the writer line (#song-details-btn) that opens the Details sheet.
 import { expect } from '@playwright/test';
 
 /** Go to the search view and wait until the index has loaded.
@@ -58,4 +61,25 @@ export async function openPill(page, pillId) {
     const popover = page.locator(`#${pillId} .pill-popover`);
     await expect(popover).toBeVisible();
     return popover;
+}
+
+/** Open the top band's ⋯ menu; `expand` opens a row that expands in place
+ *  (#export-menu-btn, #report-menu-btn). Returns the menu. */
+export async function openMenu(page, expand = null) {
+    await page.locator('#topbar-overflow-btn').click();
+    const menu = page.locator('#topbar-overflow-menu');
+    await expect(menu).toBeVisible();
+    if (expand) await page.locator(`#${expand}`).click();
+    return menu;
+}
+
+/** Go to search from a page with the thin top dock: the song page's 🔍, or the
+ *  lyrics editor's ⋯ ▸ Go to ▸ Search (its band has no search icon). */
+export async function goToSearch(page) {
+    if (await page.locator('#topbar-search').isVisible()) {
+        await page.locator('#topbar-search').click();
+        return;
+    }
+    await openMenu(page);
+    await page.locator('#menu-go-search').click();
 }

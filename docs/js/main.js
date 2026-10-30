@@ -50,13 +50,13 @@ import {
 import { initSongView, goBack, getCurrentSong, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';
 import {
     openWork, teardownTablatureView, configureWorkPage, updateWorkTopBar,
-    handleEditAction, openNewTabPage,
+    openNewTabPage,
 } from './work-view.js';
 import { parseTabRoute, partInstrumentFor } from './otf-editor/create-tab-entry.js';
 import { initSearch, search, showPopularSongs, renderResults, parseSearchQuery, searchableSongs } from './search-core.js';
 import { escapeHtml, escapeAttr, songCount, requireLogin, parseItemRef, buildDeleteCandidates, downloadFile } from './utils.js';
 import { parseChordPro, renderSectionsPrintHtml } from './renderers/chordpro.js';
-import { initShell, setTopBar, setBottomBand, setOverflowBase, setOverflowLead, setChromeAutoHide, pill, setBanner, setTourInvite } from './shell.js';
+import { initShell, setTopBar, setBottomBand, setOverflowBase, setOverflowLead, setMenuSite, setChromeAutoHide, pill, setBanner, setTourInvite } from './shell.js';
 import { initAnalytics, track, trackNavigation, trackThemeToggle, trackDeepLink } from './analytics.js';
 import { telemetryEnabled, applyInternalParam } from './telemetry.js';
 import { initFlags, openFeedbackModal } from './flags.js';
@@ -113,7 +113,9 @@ function loadEditor() {
 async function enterEditMode(song, options) {
     try {
         const mod = await loadEditor();
-        return await mod.enterEditMode(song, options);
+        const opened = await mod.enterEditMode(song, options);
+        updateEditorTopBar();   // names the song the ← goes back to
+        return opened;
     } catch (err) {
         lazyLoadFailed('the editor', err);
     }
@@ -123,7 +125,7 @@ async function enterEditMode(song, options) {
 // every one of these only undoes state enterEditMode/initEditor created.
 function exitEditMode() { editorModule?.exitEditMode(); }
 function closeHints() { editorModule?.closeHints(); }
-function prepareAddSongView() { editorModule?.prepareAddSongView(); }
+function prepareAddSongView() { editorModule?.prepareAddSongView(); updateEditorTopBar(); }
 
 // The leave-without-submitting guard and ownership chrome (A7, A11) only
 // concern an editor that has been opened, i.e. loaded.
@@ -268,7 +270,6 @@ const userName = document.getElementById('user-name');
 
 // Editor elements
 const editorPanel = document.getElementById('editor-panel');
-const editorBackBtn = document.getElementById('editor-back-btn');
 const editorTitle = document.getElementById('editor-title');
 const editorArtist = document.getElementById('editor-artist');
 const editorWriter = document.getElementById('editor-writer');
@@ -339,6 +340,17 @@ function toggleTheme() {
     const newTheme = current === 'dark' ? 'light' : 'dark';
     setTheme(newTheme);
     trackThemeToggle(newTheme);
+}
+
+/** The ⋯ menu's Theme row: Light, Dark, or Auto (no saved choice: follow the OS). */
+function setThemeChoice(choice) {
+    if (choice === 'auto') {
+        try { localStorage.removeItem('theme'); } catch { /* nothing saved either way */ }
+        applyTheme(window.matchMedia?.('(prefers-color-scheme: dark)')?.matches ? 'dark' : 'light');
+    } else {
+        setTheme(choice);
+    }
+    trackThemeToggle(choice);
 }
 
 // ============================================
@@ -572,6 +584,26 @@ function showView(mode) {
 }
 
 /**
+ * The lyrics editor's top band is the song page's thin dock: ← back to the
+ * song being edited (its name beside the arrow), BB, ⋯. A new song has no
+ * song to go back to, so ← goes to search as the in-page Back used to. The
+ * editor measures this band (lead-editor/index.js), so only what is in it
+ * changes, never its element or its height.
+ */
+function updateEditorTopBar() {
+    if (currentView !== 'add-song') return;
+    const { isEdit, songId } = editorSessionInfo();
+    const song = isEdit ? allSongs.find(s => s.id === songId) : null;
+    setTopBar({
+        dock: 'editor',
+        back: song
+            ? { label: song.title, onClick: () => openWork(song.id, { exact: true }) }
+            : { onClick: () => navigateTo('search') },
+        navActive: 'add',
+    });
+}
+
+/**
  * The editor was navigated away from with edits that were never submitted
  * (hash change, Back, a link). The navigation has already happened, so the
  * prompt sits over the new view; "Keep editing" routes straight back to the
@@ -669,7 +701,11 @@ function initViewSubscription() {
                 'search': 'search', 'add-song': 'add',
                 'favorites': 'favorites', 'list': 'lists', 'song-lists': 'lists',
             };
-            setTopBar({ navActive: shellNavByView[view] || null });
+            if (view === 'add-song') {
+                updateEditorTopBar();
+            } else {
+                setTopBar({ navActive: shellNavByView[view] || null });
+            }
             setBottomBand(null);
         }
 
@@ -3195,6 +3231,56 @@ async function handleTourLink() {
 // INITIALIZATION
 // ============================================
 
+const SHELL_NAV = [
+    { id: 'search', label: 'Search', icon: '&#128269;', href: '#search', onClick: () => navigateTo('search') },
+    { id: 'add', label: 'Add Song', icon: '&#43;', href: '#add', onClick: () => openAddSongPicker() },
+    { id: 'favorites', label: 'Favorites', icon: '&#9825;', href: '#favorites', onClick: () => navigateTo('favorites') },
+    { id: 'lists', label: 'Lists', icon: '&#9776;', href: '#lists', onClick: () => { showSongListsView(); pushHistoryState('song-lists', {}); } },
+];
+
+const GO_TO_ICONS = { search: '🔍', add: '+', favorites: '♡', lists: '≡' };
+
+/**
+ * The site's groups in the thin top dock's ⋯ menu (song pages and the lyrics
+ * editor): Go to (the nav the dock dropped, and the tour) and You (theme and
+ * account). Asked each time the menu opens, so it shows who is signed in and
+ * which theme is chosen now.
+ */
+function siteMenuSections() {
+    // The song page's band has a 🔍 of its own; the editor's has none
+    const searchInBand = document.getElementById('app-topbar')?.dataset.dock === 'song';
+    const user = window.SupabaseAuth?.getUser?.();
+    const name = user ? (user.user_metadata?.full_name || user.email?.split('@')[0] || 'User') : '';
+    return [
+        {
+            title: 'Go to',
+            items: [
+                ...SHELL_NAV.filter(n => n.id !== 'search' || !searchInBand).map(n => ({
+                    id: `menu-go-${n.id}`, icon: GO_TO_ICONS[n.id], label: n.label, onClick: n.onClick,
+                })),
+                { id: 'overflow-tour', icon: '✨', label: 'Take the tour', onClick: () => startFeatureTour('menu') },
+            ],
+        },
+        {
+            title: 'You',
+            items: [
+                {
+                    type: 'segmented', label: 'Theme', value: savedTheme() || 'auto',
+                    options: [{ value: 'light', label: 'Light' }, { value: 'dark', label: 'Dark' }, { value: 'auto', label: 'Auto' }],
+                    onSelect: setThemeChoice,
+                },
+                user ? {
+                    id: 'menu-account', icon: getInitials(user), label: name, sub: 'Account · Sign out',
+                    onClick: openAccountModal,
+                } : {
+                    id: 'menu-sign-in', icon: '?', label: 'Sign in', sub: 'Lists, favorites and edits follow you',
+                    onClick: openAuthModal,
+                },
+            ],
+        },
+    ];
+}
+
 /**
  * The persistent ⋯ menu. Re-seeded (not appended to) whenever its contents
  * change, because setOverflowBase REPLACES the list — "Install app" appears
@@ -3235,12 +3321,7 @@ function init() {
     // Must run before auth init so #auth-section is in the band when
     // supabase-auth updates it.
     initShell({
-        nav: [
-            { id: 'search', label: 'Search', icon: '&#128269;', href: '#search', onClick: () => navigateTo('search') },
-            { id: 'add', label: 'Add Song', icon: '&#43;', href: '#add', onClick: () => openAddSongPicker() },
-            { id: 'favorites', label: 'Favorites', icon: '&#9825;', href: '#favorites', onClick: () => navigateTo('favorites') },
-            { id: 'lists', label: 'Lists', icon: '&#9776;', href: '#lists', onClick: () => { showSongListsView(); pushHistoryState('song-lists', {}); } },
-        ],
+        nav: SHELL_NAV,
         onToggleTheme: toggleTheme,
         // Bug reports get a first-class top-band button (the old homepage
         // "Report Bugs" sign is gone with the banner hero)
@@ -3248,6 +3329,7 @@ function init() {
         onTour: () => startFeatureTour('band'),
     });
     seedOverflowBase();
+    setMenuSite(siteMenuSections);
     setTourInvite(!tourSeen());
     handleTourLink();
     document.getElementById('topbar-brand')?.addEventListener('click', (e) => {
@@ -3414,8 +3496,6 @@ function init() {
         goHome();
     });
 
-    editorBackBtn?.addEventListener('click', () => navigateTo('search'));
-
     // Landing facet chips: tags.js already toggles the tag in the main
     // search box and runs the search — we just carry the user to it
     document.getElementById('landing-facets')?.addEventListener('click', (e) => {
@@ -3509,23 +3589,6 @@ function init() {
             createList(name);
             modalNewListInput.value = '';
             renderListsModal();
-        }
-    });
-
-    // ==========================================================================
-    // Song-page delegation: focus-mode buttons rendered by work-view.js.
-    // (The quick-controls bar, Info bar and their dropdowns are gone —
-    // replaced by the Key/Display/Info pills in song-controls.js.)
-    // ==========================================================================
-
-    songContent?.addEventListener('click', (e) => {
-        const target = e.target;
-
-        // Edit button (in title row — a content action lives with the
-        // content; the old Focus button died with focus mode)
-        if (target.closest('#edit-song-btn')) {
-            handleEditAction();
-            return;
         }
     });
 

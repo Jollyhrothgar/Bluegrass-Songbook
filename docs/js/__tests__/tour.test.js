@@ -160,7 +160,7 @@ const PAGES = {
         <button id="editor-mode-chords"></button></div>`,
     tab: `
         <button class="tab-play-btn"></button>
-        <button class="tab-edit-btn"></button>`,
+        <button id="edit-song-btn"></button>`,
 };
 
 /** Pages render into #app, as the real views do: body (and the card) stays. */
@@ -174,7 +174,7 @@ function renderPage(name) {
     app.innerHTML = `
         <header id="app-topbar" class="app-topbar">
             <a class="topbar-nav-link" data-nav="add"></a>
-            ${name === 'home' ? '' : '<button id="list-picker-btn"></button>'}
+            ${name === 'home' ? '' : '<button id="topbar-overflow-btn"></button>'}
         </header>
         <main>${PAGES[name]}</main>`;
 }
@@ -275,20 +275,16 @@ describe('startTour', () => {
 
     it('rings the control and appends the note of a fallback target', () => {
         renderPage('home');
-        navigate = vi.fn((url) => {
-            renderPage(pageForUrl(url));
-            // phone tab band: Edit has moved into the hidden ⚙ sheet
-            if (pageForUrl(url) === 'tab') {
-                document.querySelector('main').innerHTML = `
-                    <button class="tab-play-btn"></button>
-                    <button class="tab-more-btn"></button>
-                    <div class="hidden"><button class="tab-edit-btn"></button></div>`;
-            }
-        });
-        startTour({ navigate });
+        // a step whose first control is not on the page falls back to the next
+        const steps = [{
+            id: 'fallback', page: 'tab',
+            targets: ['#not-here', { selector: '.tab-play-btn', note: 'Look here instead.' }],
+            title: 'A step', body: 'The body.',
+        }];
+        navigate = vi.fn((url) => renderPage(pageForUrl(url)));
+        startTour({ navigate, steps });
         expect(document.querySelector('.tour-ring').classList.contains('hidden')).toBe(false);
-        for (let i = 0; i < 9; i++) next();     // tab-edit
-        expect(card().querySelector('.tour-body').textContent).toContain('On a phone, Edit is under ⚙.');
+        expect(card().querySelector('.tour-body').textContent).toContain('The body. Look here instead.');
     });
 
     it('every step lands visibly: the card animates in and the ring ripples', () => {

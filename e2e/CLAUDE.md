@@ -132,15 +132,24 @@ load). Details:
 ### Selectors and fixture works
 
 Shell ids come from `docs/js/shell.js` and `work-view.js`: `#app-topbar`,
-`.topbar-nav-link[data-nav=…]`, `#song-pill-row` with `#key-pill`, `#display-pill`,
-`#info-pill`, `#arrangement-pill` (only when a group has more than one version),
-`#export-pill`, `#part-tabs .part-tab`, `#app-bottomband` (tab and ABC playback;
-in the lead-sheet editor `#editor-band`: `#editor-mode-*`, `#editor-undo/redo`,
+`.topbar-nav-link[data-nav=…]` (full band only), and on a song page the thin
+dock (G19): `#topbar-back`, `#topbar-search`, `#edit-song-btn` (the one Edit),
+`#topbar-overflow-btn`. Everything else song-specific is in ⋯: use
+`openMenu(page, expand?)` from `helpers.js` (rows `#list-picker-btn`,
+`#export-menu-btn` and `#report-menu-btn`, which expand in place to hold
+`[data-action=…]` / `#flag-btn` / `#report-bug-btn` / `#copyright-btn`;
+`#overflow-tour`, `#menu-go-*`, `#menu-account` / `#menu-sign-in`). The writer
+line `#song-details-btn` opens `#song-details-sheet` (`#edit-meta-btn` is its
+Edit details). The song body has `#song-pill-row` with `#key-pill`,
+`#display-pill`, `#arrangement-pill` (only when a group has more than one
+version), `#part-tabs .part-tab`, `#app-bottomband` (tab and ABC playback; in
+the lead-sheet editor `#editor-band`: `#editor-mode-*`, `#editor-undo/redo`,
 `#editor-key-select` and the Display pill, whose options exist only once it is
 open, so use `openDisplay(page)` from `helpers/lead-editor.js`),
 `#flag-modal` (feedback), `#song-nav-bar` (list context). `.pill-btn` opens a
 `.pill-popover`; one is open at a time. The top band auto-hides while scrolling a
-song (`body.chrome-hidden`).
+song (`body.chrome-hidden`). To enter the tab editor press Edit with
+`pressTabEdit(page)` (`helpers/tab-edit.js`); the band has no Edit of its own.
 
 Tab-editor selectors: `.editor-renderer .stave-row`, `.editor-canvas-container`,
 `.note-text`, `.editor-status-bar` (`.status-flash` shows a refused op),

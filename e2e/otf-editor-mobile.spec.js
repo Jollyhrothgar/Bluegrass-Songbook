@@ -13,6 +13,7 @@
 // needs the Supabase mock.
 import { test, expect } from './fixtures.js';
 import { clickFileItem } from './helpers/front-door.js';
+import { pressTabEdit } from './helpers/tab-edit.js';
 
 /** A tab-only work: the band is the tablature band from the first paint. */
 const TAB_WORK = '/#work/foggy-mountain-breakdown/mandolin';
@@ -35,12 +36,9 @@ async function openSheet(page) {
     return sheet;
 }
 
-/** Read a tab, then press ✏️ Edit (which lives in the sheet on a phone). */
+/** Read a tab, then press ✏️ Edit (the top band's, the same on a phone). */
 async function enterEditMode(page) {
-    const sheet = await openSheet(page);
-    await sheet.locator('.tab-edit-btn').click();
-    await page.locator('.editor-renderer .stave-row').first()
-        .waitFor({ timeout: 20000 });
+    await pressTabEdit(page, { waitForEditor: true });
 }
 
 test.describe('phone: the read band', () => {
@@ -59,11 +57,12 @@ test.describe('phone: the read band', () => {
         await expect(band(page).locator('.tab-settings-sheet')).toBeHidden();
 
         const sheet = await openSheet(page);
-        await expect(sheet.locator('.tab-edit-btn')).toBeVisible();
         await expect(sheet.locator('.tab-size-group')).toBeVisible();
         const labels = await sheet.locator('.tab-sheet-row:visible .tab-sheet-label')
             .allTextContents();
-        expect(labels).toContain('Tab');
+        // Edit left the sheet: it is the top band's now
+        expect(labels).not.toContain('Tab');
+        await expect(sheet.locator('.tab-edit-btn')).toHaveCount(0);
     });
 
     test('the sheet closes on Escape and on an outside tap', async ({ page }) => {
@@ -83,7 +82,7 @@ test.describe('phone: the edit session', () => {
         await openTab(page);
         await enterEditMode(page);
 
-        // §9.1: the session's buttons take the ✏️ Edit slot at BAND level —
+        // §9.1: the session's buttons sit at BAND level, after Stop —
         // Submit / Done behind a disclosure is not a thing anyone would find.
         // G17: those two are all the bar holds; Download / Cancel / Import
         // are File menu commands (below), so nothing is cut off.
@@ -97,7 +96,7 @@ test.describe('phone: the edit session', () => {
 
         // and the band kept its transport rather than being replaced
         await expect(band(page).locator('.tab-play-btn')).toBeVisible();
-        await expect(band(page).locator('.tab-edit-btn')).toHaveCount(0);
+        await expect(page.locator('#edit-song-btn')).toBeHidden();
     });
 
     test('the menu bar collapses to ☰ and the sheet lists every menu', async ({ page }) => {
@@ -249,7 +248,8 @@ test.describe('phone: the edit session', () => {
 
         await clickFileItem(page, 'Cancel');
         await band(page).locator('.tab-edit-discard-yes').click();
-        // Back to reading: the band has ✏️ Edit again (in the ⚙ sheet).
+        // Back to reading: the top band has ✏️ Edit again.
+        await expect(page.locator('#edit-song-btn')).toBeVisible();
         await expect(band(page).locator('.tab-edit-actions')).toHaveCount(0);
         expect(dialogs).toEqual([]);
     });

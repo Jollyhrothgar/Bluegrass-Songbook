@@ -26,8 +26,11 @@ the `lead.present` hooks in `lead-editor/index.js`.
   Tab editor ▸ Open a tab file…, both open the editor signed out; sign-in is
   only asked at Submit. Re-check the card text if either flow changes.
 - The invitation (`setTourInvite`) sets `localStorage['songbook-tour-seen']`;
-  after that the tour is the first overflow item (`setOverflowLead`). It never
-  opens itself. `?tour` starts it, `?tour=reset` re-arms the invitation.
+  after that the tour is the first overflow item (`setOverflowLead`), or
+  "Take the tour" in ⋯ ▸ Go to on the thin-dock pages (song page, lyrics
+  editor). On those pages the invitation is the ⋯ button glowing with a small
+  "The tour is in here" tip, not a Tour button (`.topbar-dock` hides that). It
+  never opens itself. `?tour` starts it, `?tour=reset` re-arms the invitation.
 - No backdrop: the card (`z-index: 899`) sits under both bands, the ring (`901`)
   never takes a click. `main.js::startFeatureTour` refuses to start (toast) while the lyrics & chords
   editor is open (`currentView === 'add-song'`) or the URL is a tab-editor route

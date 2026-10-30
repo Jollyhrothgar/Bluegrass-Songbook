@@ -419,7 +419,7 @@ Mike approved the frames on 2026-10-30 ("it looks really good"):
 | Piece | Status |
 |---|---|
 | Spec + mock frames | done, commits on `feature/g19-song-page-docks` |
-| G19a top dock + Details | building (subagent, Sonnet high) |
+| G19a top dock + Details | built on `feature/g19-song-page-docks`; waiting for Mike to see the real page (phone and desktop) |
 | G19b reading dock | not started; draw the phone Lyrics + Chart frame (chart above lyrics) first |
 | G19c tabs + lists | not started |
 | G19d tidy | not started |

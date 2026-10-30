@@ -10,6 +10,7 @@
 // through ⬇ Download and reads the file: `tracks[]` order is not something
 // the canvas shows.
 import { test, expect } from './fixtures.js';
+import { pressTabEdit } from './helpers/tab-edit.js';
 import { clickFileItem } from './helpers/front-door.js';
 
 const WORK = '/#work/red-haired-boy/ensemble-tab';
@@ -20,7 +21,7 @@ const trackButtons = (page) => page.locator('.track-buttons .track-button');
 async function openEnsembleEditor(page) {
     await page.goto(WORK);
     await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
-    await band(page).locator('.tab-edit-btn').click();
+    await pressTabEdit(page);
     await page.locator('.editor-renderer .stave-row').first()
         .waitFor({ timeout: 20000 });
     await expect(trackButtons(page).first()).toBeVisible();

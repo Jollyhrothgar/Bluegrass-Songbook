@@ -527,6 +527,7 @@ export function renderLeadSheetContent(container, song, chordpro, isInitialRende
             ${!hasChords && hasAbc ? '<div class="instrumental-notice"><em>Instrumental tune - see notation above</em></div>' : ''}
         </div>
         ${sourceHtml}
+        <p class="song-edit-nudge"><b>See something wrong? Use <span aria-hidden="true">✏️</span> Edit at the top.</b><br>Every fix makes the book better.</p>
     `;
 
     // Bottom band: ABC playback controls when the notation view is up

@@ -8,6 +8,12 @@ export const here = (page) => page.evaluate(() => location.pathname + location.h
 
 export const next = (page) => page.click('.tour-next');
 
+/** Start the tour from a song page: its thin top band has no Tour button, the tour is ⋯ ▸ Go to. */
+export async function startTourFromMenu(page) {
+    await page.click('#topbar-overflow-btn');
+    await page.click('#overflow-tour');
+}
+
 /** The first on-screen element for a selector, as a plain box (or null). */
 function boxOf(sel) {
     const el = [...document.querySelectorAll(sel)]

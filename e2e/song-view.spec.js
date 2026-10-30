@@ -1,8 +1,8 @@
 // E2E tests for the unified song page (work-view.js). Transpose/display/
-// info controls live in pill popovers on the #song-pill-row; export actions
-// live in the top band's Export pill.
+// controls live in pill popovers on the #song-pill-row; export actions live
+// in the top band's ⋯ menu; song facts are the Details sheet.
 import { test, expect } from './fixtures.js';
-import { gotoSearch, searchAndOpen, openPill, chords } from './helpers.js';
+import { gotoSearch, searchAndOpen, openPill, openMenu, chords } from './helpers.js';
 
 test.describe('Song View', () => {
     test.beforeEach(async ({ page }) => {
@@ -17,10 +17,13 @@ test.describe('Song View', () => {
         await expect(page.locator('.song-header')).not.toContainText(/New South/);
     });
 
-    test('Info pill discloses song details and tags', async ({ page }) => {
-        const popover = await openPill(page, 'info-pill');
-        await expect(popover.locator('.info-item').first()).toBeVisible();
-        await expect(popover.locator('.info-tags')).toBeVisible();
+    test('the writer line opens Details: song facts and tags', async ({ page }) => {
+        await page.locator('#song-details-btn').click();
+        const sheet = page.locator('#song-details-sheet');
+        await expect(sheet).toBeVisible();
+        await expect(sheet.locator('.info-item').first()).toBeVisible();
+        await expect(sheet.locator('.info-tags')).toBeVisible();
+        await expect(page.locator('#info-pill')).toHaveCount(0);   // the Info pill is gone
     });
 
     test('displays chord and lyrics content', async ({ page }) => {
@@ -157,7 +160,7 @@ test.describe('Song Navigation', () => {
 });
 
 test.describe('Print', () => {
-    test('Export pill print action triggers print', async ({ page }) => {
+    test('⋯ ▸ Export / Print ▸ Print triggers print', async ({ page }) => {
         await gotoSearch(page);
         await searchAndOpen(page, 'old home place', /old home place/i);
 
@@ -168,8 +171,8 @@ test.describe('Print', () => {
             window.print = () => { window.trackPrint(); };
         });
 
-        const popover = await openPill(page, 'export-pill');
-        await popover.locator('[data-action="print"]').click();
+        await openMenu(page, 'export-menu-btn');
+        await page.locator('#topbar-overflow-menu [data-action="print"]').click();
 
         expect(printCalled).toBe(true);
     });

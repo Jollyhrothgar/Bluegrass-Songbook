@@ -194,7 +194,7 @@ test.describe('WorkView - the band collapses on its OWN width', () => {
         await expect(sheet).toBeVisible();
         // …and the sheet is a real panel, not an unstyled div: its chrome no
         // longer lives inside the phone media query.
-        await expect(sheet.locator('.tab-edit-btn')).toBeVisible();
+        await expect(sheet.locator('.tab-size-group')).toBeVisible();
         expect(await sheet.evaluate(el => getComputedStyle(el).position))
             .toBe('fixed');
     });
@@ -211,7 +211,7 @@ test.describe('WorkView - the band collapses on its OWN width', () => {
         await expect(controls).not.toHaveClass(/is-narrow-band/);
         await expect(page.locator('.tab-settings-sheet')).toHaveCount(0);
         // The controls came back to the band itself, not to a leftover sheet.
-        await expect(page.locator('#app-bottomband > .tab-controls > .tab-edit-btn'))
+        await expect(page.locator('#app-bottomband > .tab-controls > .tab-size-group'))
             .toBeVisible();
     });
 });

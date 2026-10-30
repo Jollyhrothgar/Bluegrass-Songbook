@@ -53,6 +53,26 @@ problems in the data (Mike, 2026-10-28; `.claude/rules/tests.md`).
   controls use (built in `song-controls.js`; the Arrangement pill is in
   work-view.js). `setChromeAutoHide(true)` hides the top band while scrolling
   down on song pages (`body.chrome-hidden`); there is no focus mode.
+- **The thin top dock (G19).** `setTopBar({dock: 'song' | 'editor', back:
+  {onClick, label}, actions, menu})` turns `#app-topbar` into ← · BB · [🔍] ·
+  [Edit] · ⋯ and nothing else (CSS `.topbar-dock` hides the nav, bug, theme,
+  tour and account; the elements stay, so supabase-auth and the density
+  ladder keep working). The song page and the lyrics & chords editor use it;
+  every other page keeps the full band. The ⋯ menu is built on open from the
+  page's `menu` groups (work-view.js `updateWorkTopBar`), the site's groups
+  (`setMenuSite`, main.js `siteMenuSections`: Go to, You) and `setOverflowBase`.
+  A row can expand in place (`items`), or be a `segmented` choice (Theme).
+  It is a popover on a wide screen and a sheet over a scrim at 640px (CSS
+  only). A first visit glows ⋯ (`setTourInvite`), not a Tour button. Keep the
+  element and its 48px: `lead-editor/index.js` measures it.
+- **One Edit** is `#edit-song-btn` in that band (work-view.js
+  `handleEditAction`): a placeholder gets the details form, a tab part the tab
+  editor (`tabEditEntry`), anything else the lyrics editor. It hides while the
+  tab editor is open (`body.tab-editing`, which also clears `#song-pill-row`
+  and `#part-tabs`). The writer line `#song-details-btn` opens Details
+  (`openSheet` in shell.js: a bottom sheet on a phone, a centred card on a
+  wide screen, in the notes sheet's CSS), whose "Edit details" is
+  `showMetadataEditor`.
 - The bottom band's height varies (it wraps on narrow windows and the tab band
   collapses on phones), so `shell.js` publishes its measured height as `--bottomband-h` on `<html>`. Anything stacked on the
   band (drop-ups, the tab settings sheet, `.container` padding) offsets from that

@@ -10,6 +10,7 @@
 // fake. Every test finishes with `sb.assertClean()`, which fails if anything
 // reached a host the mock does not own.
 import { test, expect } from './fixtures.js';
+import { pressTabEdit } from './helpers/tab-edit.js';
 import { mockSupabase } from './helpers/supabase-mock.js';
 
 /** A published banjo/mandolin take to correct. */
@@ -21,7 +22,7 @@ const band = (page) => page.locator('#app-bottomband');
 async function editPublishedTake(page) {
     await page.goto(TAB_WORK);
     await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
-    await band(page).locator('.tab-edit-btn').click();
+    await pressTabEdit(page);
     await page.locator('.editor-renderer .stave-row').first()
         .waitFor({ timeout: 20000 });
 }

@@ -124,14 +124,16 @@ const openPill = (id) => async (page) => {
     await page.locator(`#${id} .pill-popover`).waitFor();
 };
 
-/** Press Edit on a tab page. On a phone the button lives in the gear sheet. */
-async function enterTabEditor(page, { phone }) {
-    const band = page.locator('#app-bottomband');
-    if (phone) {
-        await band.locator('.tab-more-btn').click();
-        await band.locator('.tab-settings-sheet').waitFor();
-    }
-    await band.locator('.tab-edit-btn').first().click();
+/** Open the top band's ⋯ menu, with a group's rows expanded when asked. */
+const openMenu = (...expand) => async (page) => {
+    await page.locator('#topbar-overflow-btn').click();
+    await page.locator('#topbar-overflow-menu:not(.hidden)').waitFor();
+    for (const id of expand) await page.locator(`#${id}`).click();
+};
+
+/** Press Edit on a tab page (the top band's one Edit). */
+async function enterTabEditor(page) {
+    await page.locator('#edit-song-btn').click();
     await page.locator('.editor-renderer .stave-row').first().waitFor({ timeout: 20000 });
 }
 
@@ -216,13 +218,44 @@ export const STATES = [
         workshop: ['F2', 'F4'],
     },
     {
-        id: 'song-info-pill',
+        id: 'song-details',
         group: 'Song page',
-        title: 'Lead sheet, Info pill open',
+        title: 'Lead sheet, Details sheet open (from the writer line)',
         url: '/#work/old-home-place',
         ready: '#song-view .song-body',
-        setup: openPill('info-pill'),
-        workshop: ['F2', 'F4'],
+        setup: async (page) => {
+            await page.locator('#song-details-btn').click();
+            await page.locator('#song-details-sheet').waitFor();
+        },
+        workshop: ['G19'],
+    },
+    {
+        id: 'song-menu',
+        group: 'Song page',
+        title: 'Lead sheet, ⋯ menu open (signed out)',
+        url: '/#work/old-home-place',
+        ready: '#song-view .song-body',
+        setup: openMenu(),
+        workshop: ['G19'],
+    },
+    {
+        id: 'song-menu-expanded',
+        group: 'Song page',
+        title: 'Lead sheet, ⋯ menu with Export / Print expanded',
+        url: '/#work/old-home-place',
+        ready: '#song-view .song-body',
+        setup: openMenu('export-menu-btn'),
+        workshop: ['G19'],
+    },
+    {
+        id: 'song-menu-signed-in',
+        group: 'Song page',
+        title: 'Lead sheet, ⋯ menu open (signed in)',
+        url: '/#work/old-home-place',
+        ready: '#song-view .song-body',
+        mock: { signedIn: true },
+        setup: openMenu(),
+        workshop: ['G19'],
     },
     {
         id: 'song-abc',
@@ -240,6 +273,7 @@ export const STATES = [
         seed: WITH_LISTS,
         ready: '#song-view .song-body',
         setup: async (page) => {
+            await openMenu()(page);
             await page.locator('#list-picker-btn').click();
             await page.locator('.list-picker-popup').waitFor();
         },

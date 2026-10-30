@@ -11,6 +11,7 @@ import { readFileSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { test, expect } from './fixtures.js';
+import { pressTabEdit } from './helpers/tab-edit.js';
 import { gotoFrontDoor, chooseFile } from './helpers/front-door.js';
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -113,7 +114,7 @@ test.describe('a correction session', () => {
     test('cannot delete its own track, but can delete another', async ({ page }) => {
         await page.goto('/#work/red-haired-boy/ensemble-tab');
         await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
-        await page.locator('#app-bottomband .tab-edit-btn').click();
+        await pressTabEdit(page);
         await page.locator('.editor-renderer .stave-row').first().waitFor({ timeout: 20000 });
 
         const own = (await page.locator('.track-button.active').textContent()).trim();

@@ -293,9 +293,9 @@ test.describe('new-tab flow (the song page in #new-tab mode)', () => {
         // The take header the read view draws, on an unsaved take
         await expect(page.locator('.arr-who')).toHaveText('Guitar — new take');
         // The band survived: play/tempo are still there, and the session's
-        // buttons took the ✏️ Edit slot
+        // buttons sit after Stop, and the top band's Edit stepped aside
         await expect(page.locator('#app-bottomband .tab-play-btn')).toBeVisible();
-        await expect(page.locator('#app-bottomband .tab-edit-btn')).toHaveCount(0);
+        await expect(page.locator('#edit-song-btn')).toBeHidden();
         await expect(page.locator('#app-bottomband .tab-edit-submit'))
             .toHaveText('🚀 Submit tab');
     });
