@@ -420,7 +420,7 @@ Mike approved the frames on 2026-10-30 ("it looks really good"):
 |---|---|
 | Spec + mock frames | done, commits on `feature/g19-song-page-docks` |
 | G19a top dock + Details | built on `feature/g19-song-page-docks`; waiting for Mike to see the real page (phone and desktop) |
-| G19b reading dock | not started; draw the phone Lyrics + Chart frame (chart above lyrics) first |
+| G19b reading dock | building on the same branch; #344 holds until the page matches the mock (Mike, 2026-10-30: the G19a-only page "doesn't look like the mocks") |
 | G19c tabs + lists | not started |
 | G19d tidy | not started |
 | G19e editor Submit in the top dock | only on Mike's yes |
@@ -474,3 +474,62 @@ Song page and lyrics editor only; every other page keeps today's band.
    - the tab player (except its Edit)
    - auto-hide
    - the list nav bar
+
+### G19b brief
+
+Same branch and PR as G19a (#344). Mike reviews the two together. Keep G19b
+in its own commits.
+
+1. **The reading dock.** Lead sheet and chart get the bottom dock in
+   `#app-bottomband` (`setBottomBand`): Key · Size · View · Display, as in
+   `g18b3-docks-phone.html` frames 1–4 and 8–9 and `g18b3-docks-desktop.html`
+   frame 1. It is one row and must fit at 360px.
+   - **Key:** today's Key pill content, unchanged.
+   - **Size:** "Aa − +", for the text, and the chart scales with it.
+   - **View:**
+     - When the song has only lyrics and a chart, View is a Lyrics | Chart
+       segmented control. Wide screens get Lyrics | Lyrics + Chart | Chart;
+       Lyrics + Chart is today's two-column layout.
+     - With versions, other parts or a hybrid ABC + chords part, it becomes
+       "View ▾", opening a sheet (frame 9) that lists:
+       - Lyrics, Chart, Notation (and Chords for a hybrid);
+       - Versions, with today's vote buttons and the "Canonical" and
+         "viewing" badges;
+       - Tabs: the other parts. Picking one goes to it as the part tabs do
+         today.
+   - **Display:** frame 4. It holds:
+     - Two columns (wide screens only)
+     - Section labels
+     - Compact
+     - Chords: All / First only / None
+     - Auto-hide controls
+     - A Chart group, only when the song has a chart:
+       - Cells per row: 2 / 4 / 6 / 8. The chart's cells wrap into rows of N
+         across each section.
+       - Bars: One cell / Two cells.
+       - Order: Each section once / As sung. As sung is the chart unrolled in
+         the sung order (`practiceOrder`), without lyrics.
+2. **ABC notation:** the dock is ▶ · Tempo · Size · View, replacing today's
+   ABC band. There is no Key and no Display. Size scales the notation and is
+   remembered in its own localStorage key, separate from the lyric text size.
+3. **Remove from the page:**
+   - the pill row (Key, Display, Versions);
+   - the part tabs, on every part;
+   - the hybrid Chords / Notation toggle;
+   - the chord chart's own header (Chart / Practice, the bars toggle);
+   - Practice mode (the interleaved lyric and chart rows): Mike confirmed its
+     removal on 2026-10-30.
+4. **Tab parts until G19c:** add a View ▾ button to the tab band, at the end
+   of `.tab-controls`, and keep it out of the 640px ⚙ collapse. This lets a
+   tab page reach the lyrics and other parts once the part tabs are gone. The
+   rest of the tab band, the takes bar and "View track" stay as they are.
+5. **Auto-hide:**
+   - Off by default: neither band hides on scroll.
+   - On (Display ▸ Auto-hide controls, remembered): both bands hide on scroll
+     down and come back on scroll up or a tap.
+   - `setChromeAutoHide` and `body.chrome-hidden` drive it; the bottom band
+     gets the same transform.
+6. **`--topbar-h`:** `shell.js` publishes it the way it publishes
+   `--bottomband-h`. `.cc-chart-col` uses it instead of the 3.75rem guess.
+7. **Tour:** the Key step rings the dock's Key.
+8. **Print:** hide `#app-bottomband`.
