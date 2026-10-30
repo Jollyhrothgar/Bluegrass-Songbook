@@ -12,7 +12,7 @@
 // Nothing is dropped silently: whatever a .tef cannot hold is counted in the
 // returned `notices` (see notices.js).
 
-import { isV3Layout, parseTrackRecordsV3, headerString, parseTextTableV3, programToName } from '../tef-import/reader.js';
+import { isV3Layout, readHeader, tabByFromComments, parseTrackRecordsV3, headerString, parseTextTableV3, programToName } from '../tef-import/reader.js';
 import { instrumentToOtfId, instrumentToType } from '../tef-import/otf.js';
 import { emptyNotices } from './notices.js';
 import { buildNoteCells, UNIT_TICKS } from './notes.js';
@@ -452,15 +452,34 @@ function stringRegion(base, slot) {
     return r ? base.data.subarray(r[0], r[0] + 2 + u16(base.data, r[0])) : null;
 }
 
-/** The comments, with this tab's "Tab by:" credit as the last line. */
-function commentsRegion(otf, base, notices) {
+/** The comments text of the .tef the document was opened from (V3 or V2), or
+ *  null when there is no usable source. */
+function sourceComments(source) {
+    if (!(source instanceof Uint8Array)) return null;
+    if (isV3Layout(source)) return headerString(source, SLOT_COMMENTS);
+    try { return readHeader(source).v2_comments ?? null; } catch { return null; }
+}
+
+const sameCredit = (a, b) => (a?.name ?? null) === (b?.name ?? null) && (a?.url ?? null) === (b?.url ?? null);
+
+/** The comments: the source file's (V3 or V2), else the template's. This tab's
+ *  credit is already in them when the importer reads it back as this
+ *  document's tab_by ("Tab by:" or TablEdit's "TablEdited by"): then they are
+ *  written unchanged. Otherwise the "Tab by:" line is replaced or added last. */
+function commentsRegion(otf, base, source, notices) {
     const old = stringRegion(base, SLOT_COMMENTS);
-    const text = headerString(base.data, SLOT_COMMENTS);
-    const hasCredit = text !== null && text.split(/\r?\n/).some(l => TAB_BY_LINE.test(l.trim()));
-    if (!otf.metadata.tab_by && !hasCredit) return old ?? lengthPrefixed(new Uint8Array(0));
-    const lines = (text ?? '').split(/\r?\n/).filter(l => !TAB_BY_LINE.test(l.trim()));
+    const fromSource = sourceComments(source);
+    const text = fromSource ?? headerString(base.data, SLOT_COMMENTS);
+    const unchanged = () => (fromSource === null || (base.fromSource && isV3Layout(source)))
+        ? old ?? lengthPrefixed(new Uint8Array(0))
+        : lengthPrefixed(latin1(fromSource, TEXT_MAX, notices));
+    const want = otf.metadata.tab_by || null;
+    if (sameCredit(tabByFromComments(text), want)) return unchanged();
+    const all = (text ?? '').split(/\r?\n/);
+    const lines = all.filter(l => !TAB_BY_LINE.test(l.trim()));
+    if (!want && lines.length === all.length) return unchanged();
     while (lines.length && !lines[lines.length - 1].trim()) lines.pop();
-    if (otf.metadata.tab_by) lines.push(creditLine(otf.metadata.tab_by));
+    if (want) lines.push(creditLine(want));
     return lengthPrefixed(latin1(lines.join('\r\n'), TEXT_MAX, notices));
 }
 
@@ -553,7 +572,7 @@ export function writeTef(otf, { source, template } = {}) {
     blocks.set(SLOT_AUTHOR, otf.metadata.composer
         ? lengthPrefixed(latin1(otf.metadata.composer, TEXT_MAX, notices))
         : stringRegion(base, SLOT_AUTHOR) ?? lengthPrefixed(new Uint8Array(0)));
-    blocks.set(SLOT_COMMENTS, commentsRegion(otf, base, notices));
+    blocks.set(SLOT_COMMENTS, commentsRegion(otf, base, source, notices));
     for (const slot of [SLOT_NOTES, SLOT_URL, SLOT_COPYRIGHT, SLOT_EXTRA]) {
         const keep = stringRegion(base, slot);
         if (keep) blocks.set(slot, keep);
