@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proposed G18b3: A, no new controls</title>
+<link rel="stylesheet" href="mock.css">
+<style>
+body{padding-bottom:80px}
+.wrap{max-width:1240px;margin:0 auto;padding:8px 20px 0}
+.intro{max-width:860px;font-size:15px;margin:18px 0 6px}
+.intro b{font-weight:700}
+.state-h{margin:34px 0 2px}
+.state-note{margin:0 0 12px;color:var(--text-secondary);font-size:14px;max-width:860px}
+.frame{border:1px solid var(--border);border-radius:10px;background:var(--bg);position:relative;width:1200px;max-width:100%;padding:22px 28px 0}
+.frame .clip{max-height:640px;overflow:hidden;-webkit-mask-image:linear-gradient(#000 88%,transparent);mask-image:linear-gradient(#000 88%,transparent)}
+.phones{display:flex;gap:28px;flex-wrap:wrap;align-items:flex-start}
+.phone{width:390px;height:780px;border:1px solid var(--border);border-radius:22px;background:var(--bg);position:relative;overflow:hidden;flex:none}
+.phone .pf-top{display:flex;align-items:center;gap:10px;height:46px;padding:0 10px;border-bottom:1px solid var(--border);font-size:13px}
+.phone .pf-top .brand{font:700 18px/1 Georgia,serif;letter-spacing:-1px}
+.phone .pf-top .sp{flex:1}
+.phone .pf-top .bx{border:1px solid var(--border);border-radius:999px;padding:3px 10px}
+.phone .pg{padding:12px 12px 0}
+.cap-under{font-size:12px;color:var(--text-secondary);margin:6px 0 0;width:390px}
+/* header */
+.hd{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+h1{font-size:28px}
+.phone h1{font-size:23px}
+.sbtn{font-size:13px;border:1px solid var(--border);border-radius:6px;padding:3px 9px;background:var(--bg-secondary);white-space:nowrap}
+.writer{color:var(--text-secondary);font-size:14px;margin-top:3px}
+.prac{color:var(--text-secondary);font-size:14px}
+.prac u{text-underline-offset:2px}
+.prac .on{color:var(--accent);font-weight:600;text-decoration:underline}
+.prac .new{text-decoration:underline}
+.pills{display:flex;gap:8px;margin:12px 0 16px;flex-wrap:wrap}
+.pw{position:relative}
+.pill-btn{display:inline-flex;gap:6px;align-items:center;background:var(--bg-secondary);border:1px solid var(--border);border-radius:999px;font-size:14px;padding:4px 12px;white-space:nowrap}
+.pill-btn.open{border-color:var(--accent);color:var(--accent)}
+.pill-btn.new{box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 35%,transparent)}
+.pill-btn .caret{font-size:10px;color:var(--text-secondary)}
+.pill-btn b{font-weight:600}
+.hr{border-top:1px solid var(--border);margin:12px 0 0}
+/* popover menus */
+.pop{position:absolute;left:0;top:calc(100% + 6px);z-index:20;min-width:270px;background:var(--bg-secondary);border:1px solid var(--border);border-radius:10px;box-shadow:0 10px 34px rgba(0,0,0,.30);padding:6px 0;font-size:14px;text-align:left;white-space:nowrap;color:var(--text)}
+.pop{text-transform:none;letter-spacing:0;font-weight:400;font-size:14px}
+.pop.right{left:auto;right:0}
+.pop .gh{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-secondary);padding:10px 14px 3px;border-top:1px solid var(--border);margin-top:6px}
+.pop .gh.first{border-top:0;margin-top:0}
+.pop .gh i{font-style:normal;text-transform:none;letter-spacing:0;font-weight:400;margin-left:6px}
+.pop .r{display:flex;align-items:center;gap:10px;padding:6px 14px}
+.pop .r .lab{flex:1}
+.pop .r.dis{color:var(--text-secondary);opacity:.55}
+.pop .r.sel{color:var(--accent);font-weight:600}
+.ck,.rd{width:15px;height:15px;border:1.5px solid var(--text-secondary);flex:none;position:relative}
+.ck{border-radius:3px}.rd{border-radius:50%}
+.ck.on,.rd.on{border-color:var(--accent);background:var(--accent)}
+.ck.on::after{content:'';position:absolute;left:4px;top:1px;width:4px;height:8px;border:solid var(--on-accent);border-width:0 2px 2px 0;transform:rotate(45deg)}
+.rd.on::after{content:'';position:absolute;inset:3px;border-radius:50%;background:var(--on-accent)}
+.seg2{display:inline-flex;border:1px solid var(--border);border-radius:6px;overflow:hidden}
+.seg2 span{padding:2px 9px;font-size:13px;color:var(--text-secondary)}
+.seg2 span.on{background:var(--accent);color:var(--on-accent)}
+.fs{display:inline-flex;gap:14px;align-items:center;font-weight:600}
+.fs span{color:var(--text-secondary)}
+.chk-tick{width:15px;color:var(--accent);font-weight:700;flex:none}
+.note-tag{font-size:11px;color:var(--text-secondary);border:1px solid var(--border);border-radius:999px;padding:0 7px}
+/* columns */
+.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:56px;align-items:start}
+.colhead{display:flex;align-items:center;gap:14px;padding:6px 0;border-bottom:1px solid var(--text);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--bg);min-height:34px}
+.colhead .grow{flex:1}
+.dots{position:relative;font-size:18px;line-height:1;letter-spacing:0;padding:0 6px;border-radius:6px;text-transform:none}
+.dots.open{background:var(--bg-tertiary);color:var(--accent)}
+.single{max-width:100%}
+/* lyrics */
+.chart{margin-top:0;font-size:16px}
+.lyr .sec{margin:20px 0 6px}
+.lyr .line{margin-bottom:6px}
+.phone .chart{font-size:14px}
+.phone .chart .line{margin-bottom:8px}
+.phone .chart .sec{margin:16px 0 6px}
+/* chart */
+.csec{margin:14px 0 18px}
+.csec .cap{display:flex;gap:10px;align-items:baseline;font-size:13px;margin-bottom:4px}
+.csec .cap b{font-size:14px}.csec .cap span{color:var(--text-secondary)}
+.cl{display:grid;grid-template-columns:repeat(var(--bars),1fr);margin-bottom:6px;border-right:2px solid var(--text)}
+.cb{display:flex;border-left:2px solid var(--text)}
+.cc{display:flex;flex:1;min-width:0}
+.cc+.cc{border-left:1px dashed var(--border)}
+.sl{flex:1;min-width:0;padding:8px 0;text-align:center;font-size:21px;font-weight:500;line-height:1.2}
+.phone .sl{font-size:18px;padding:6px 0}
+.sl.hold{color:var(--text-secondary);opacity:.5;font-weight:400}
+.sl.carry{opacity:.38}
+.legend{font-size:12px;color:var(--text-secondary);margin:0 0 12px}
+.legend i{font-style:normal;opacity:.5}
+.form{font-size:13px;color:var(--text-secondary);margin:6px 0 10px}
+.form b{color:var(--text);font-weight:600}
+/* as sung, wide: lyric section left, chart section right (not aligned line by line) */
+.prow{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:56px;padding:6px 0 4px;border-bottom:1px solid var(--border)}
+.prow .csec{margin:0;padding-top:14px}
+.prow .lyr .sec{margin:14px 0 6px}
+/* as sung, phone: muted lyric block as context above its chart section */
+.ctx{font-size:12px;line-height:1.35;color:var(--text-secondary);margin:14px 0 4px;padding-left:8px;border-left:2px solid var(--border)}
+.ctx b{display:block;font-weight:600;font-style:italic;color:var(--text-secondary)}
+.ctx .csec{margin:0}
+.sungp .csec{margin:4px 0 6px}
+.sungp .blk{border-bottom:1px solid var(--border);padding-bottom:6px}
+/* bottom band (C) */
+.band{position:absolute;left:0;right:0;bottom:0;height:62px;border-top:1px solid var(--border);background:var(--bg);display:flex;align-items:center;gap:12px;padding:0 14px;z-index:6}
+.bbtn{font-size:14px;font-weight:600;border:1px solid var(--border);border-radius:999px;padding:7px 18px;background:var(--bg-secondary)}
+.bbtn.on{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.later{flex:1;border:1px dashed var(--border);border-radius:999px;padding:7px 12px;font-size:12px;color:var(--text-secondary);text-align:center}
+.phone .pills .pw{position:static}
+.phone .pills .pop{left:10px;right:10px;top:176px;min-width:0!important}
+.scrim{position:absolute;inset:0;background:rgba(0,0,0,.45);z-index:4}
+[data-theme="light"] .scrim,:root:not([data-theme]) .scrim{background:rgba(0,0,0,.25)}
+.sheet{position:absolute;left:0;right:0;bottom:62px;top:250px;background:var(--bg);border-top:1px solid var(--border);border-radius:16px 16px 0 0;box-shadow:0 -8px 30px rgba(0,0,0,.35);z-index:5;padding:0 14px;overflow:visible}
+.sheet .grab{width:38px;height:4px;border-radius:2px;background:var(--border);margin:8px auto 4px}
+.sheet .sh{display:flex;align-items:center;gap:10px;padding:4px 0 8px;border-bottom:1px solid var(--text);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.sheet .sh .grow{flex:1}
+.sheet .body{overflow:hidden;height:calc(100% - 52px)}
+.annot{font-size:13px;color:var(--text-secondary);max-width:1200px;margin:10px 0 0}
+.annot b{color:var(--text)}
+.card{display:inline-block;margin-top:12px}
+.card .pop{position:static;box-shadow:none;min-width:300px}
+</style></head>
+<body data-proposal="G18b3 A, no new controls">
+<main class="wrap">
+<p class="intro"><b>Option A: no new controls.</b> Everything lives in Display and the practice line. Trade-off: nothing on the page says a chart exists until you open Display or notice "Chart" in the practice line, and Display grows a conditional group; on phones the chart and the lyrics are one-or-the-other, with no way back except Display.</p>
+<p class="state-note">Old Home Place, key A. Static proposals: the menus are drawn open, nothing is clickable. Add <code>?theme=dark</code> (or <code>?theme=light</code>) to the address. Chart drawing is the approved one (G18b mockups).</p>
+<h2 class="state-h">Desktop: Layout = With chart</h2>
+<p class="state-note">Lyrics left, chart right, Display open. Two columns is now one of three layouts, so the two can never fight. The chart column header has only its label. "Chart" in the practice line is the shortcut to this layout.</p>
+<div class="frame">
+<div class="hd"><h1>Old Home Place</h1><span class="sbtn">&#9999;&#65039; Edit</span><span class="sbtn">&#127991;&#65039; Details</span></div>
+<div class="writer">Written by Dean Webb and Mitchell Jayne</div>
+<div class="prac">Practice: <span class="on">Chart</span> &middot; <u>Strum Machine</u> &middot; <u>YouTube</u></div>
+<div class="pills"><span class="pw"><span class="pill-btn">Key of <b>A</b> <span class=caret>&#9662;</span></span></span><span class="pw"><span class="pill-btn open">Display <span class=caret>&#9662;</span></span><div class="pop"><div class="r"><span class="lab">Font size</span><span class="fs"><span>&minus;</span>Aa<span>+</span></span></div><div class="gh">Layout</div><div class="r "><span class="rd"></span><span class="lab">One column</span></div><div class="r "><span class="rd"></span><span class="lab">Two columns</span></div><div class="r sel"><span class="rd on"></span><span class="lab">With chart</span></div><div class="gh">Show</div><div class="r "><span class="ck on"></span><span class="lab">Section labels</span></div><div class="r "><span class="ck"></span><span class="lab">Compact</span></div><div class="gh">Chords</div><div class="r"><span class="seg2"><span class="on">All</span><span class="">First only</span><span class="">None</span></span></div><div class="gh">Chart <i>only on songs with a chart</i></div><div class="r"><span class="lab">Order</span><span class="seg2"><span class="on">Each section once</span><span class="">As sung</span></span></div><div class="r"><span class="lab">Bars</span><span class="seg2"><span class="on">One cell</span><span class="">Two cells</span></span></div></div></span><span class="pw"><span class="pill-btn">Info <span class=caret>&#9662;</span></span></span></div>
+<div class="clip"><div class="cols"><div class="lyr"><div class="colhead"><span class="grow">Lyrics</span></div><div class="chart"><div data-render="lyr" data-n="3"></div></div></div>
+<div><div class="colhead"><span class="grow">Chart</span></div><div data-render="once"></div></div></div></div></div>
+<h2 class="state-h">Phone: lyrics, then Layout = Chart (Order: As sung)</h2>
+<p class="state-note">Left: the page as first opened, exactly today's row of three pills and no tab row. Right: Display open with the Chart group, the chart replacing the lyrics. In As sung order the phone shows only chart sections, each captioned with its name and position; lyrics never mix into the chart.</p>
+<div class="phones"><div class="phone"><div class="pf-top"><span>&larr;</span><span class="brand">BB</span><span class="sp"></span><span class="bx">Lists</span><span>&middot;&middot;&middot;</span></div><div class="pg"><div class="hd"><h1>Old Home Place</h1><span class="sbtn">&#9999;&#65039; Edit</span><span class="sbtn">&#127991;&#65039; Details</span></div>
+<div class="writer">Written by Dean Webb and Mitchell Jayne</div>
+<div class="prac">Practice: <span class="new">Chart</span> &middot; <u>Strum Machine</u> &middot; <u>YouTube</u></div>
+<div class="pills"><span class="pw"><span class="pill-btn">Key of <b>A</b> <span class=caret>&#9662;</span></span></span><span class="pw"><span class="pill-btn">Display <span class=caret>&#9662;</span></span></span><span class="pw"><span class="pill-btn">Info <span class=caret>&#9662;</span></span></span></div><div class="hr"></div>
+<div class="chart"><div data-render="lyr" data-n="3"></div></div></div></div><div class="phone"><div class="pf-top"><span>&larr;</span><span class="brand">BB</span><span class="sp"></span><span class="bx">Lists</span><span>&middot;&middot;&middot;</span></div><div class="pg"><div class="hd"><h1>Old Home Place</h1><span class="sbtn">&#9999;&#65039; Edit</span><span class="sbtn">&#127991;&#65039; Details</span></div>
+<div class="writer">Written by Dean Webb and Mitchell Jayne</div>
+<div class="prac">Practice: <span class="on">Chart</span> &middot; <u>Strum Machine</u> &middot; <u>YouTube</u></div>
+<div class="pills"><span class="pw"><span class="pill-btn">Key of <b>A</b> <span class=caret>&#9662;</span></span></span><span class="pw"><span class="pill-btn open">Display <span class=caret>&#9662;</span></span><div class="pop"><div class="r"><span class="lab">Font size</span><span class="fs"><span>&minus;</span>Aa<span>+</span></span></div><div class="gh">Layout</div><div class="r "><span class="rd"></span><span class="lab">One column</span></div><div class="r "><span class="rd"></span><span class="lab">Two columns</span></div><div class="r sel"><span class="rd on"></span><span class="lab">Chart</span></div><div class="gh">Show</div><div class="r "><span class="ck on"></span><span class="lab">Section labels</span></div><div class="r "><span class="ck"></span><span class="lab">Compact</span></div><div class="gh">Chords</div><div class="r"><span class="seg2"><span class="on">All</span><span class="">First only</span><span class="">None</span></span></div><div class="gh">Chart <i>only on songs with a chart</i></div><div class="r"><span class="lab">Order</span><span class="seg2"><span class="">Each section once</span><span class="on">As sung</span></span></div><div class="r"><span class="lab">Bars</span><span class="seg2"><span class="on">One cell</span><span class="">Two cells</span></span></div></div></span><span class="pw"><span class="pill-btn">Info <span class=caret>&#9662;</span></span></span></div><div class="hr"></div>
+<div data-render="sungP" data-n="3"></div></div></div></div>
+</main>
+<script src="mock.js"></script>
+<script>
+const LYR = {
+ 'Verse 1': ["It's been [A]ten long [C#7]years since I [D]left my [A]home","In the hollow where I was [E]born","Where the [A]cool fall [C#7]nights make the [D]wood smoke [A]rise","And the fox hunter [E]blows his [A]horn"],
+ 'Verse 2': ["I [A]fell in [C#7]love with a [D]girl from the [A]town","I thought that she would be [E]true","[A]I ran [C#7]away to [A][D]Charlottesville","And worked in a [E]sawmill [A]too"],
+ 'Chorus': ["[E]What have they done to the old home [A]place","[B7]Why did they tear it [E]down","And [A]why did I [C#7]leave my plow [D]in the [A]field","And look for a [E]job in the [A]town"],
+ 'Verse 3': ["Well the [A]girl ran [C#7]off with [D]somebody [A]else","The tariffs took all my [E]pay","[A]And here I [C#7]stand where the old [D]home [A]stood","Before they [E]took it [A]away"],
+ 'Verse 4': ["Now the [A]geese fly [C#7]south and the cold [D]wind [A]moans","As I stand her and hang my [E]head","[A]I've lost my [C#7]love I've [D]lost my [A]home","And now I [E]wish that I was [A]dead"],
+};
+const FORM = ['Verse 1','Verse 2','Chorus','Verse 3','Verse 4','Chorus','Chorus'];
+const CHART = {
+ Verse: ['| A \\ | C#7 \\ | D \\ | A \\ |','| \\ \\ | \\ \\ | E \\ | \\ \\ |','| A \\ | C#7 \\ | D \\ | A \\ |','| \\ \\ | E \\ | A \\ | \\ \\ |'],
+ Chorus: ['| E \\ | \\ \\ | A \\ | \\ \\ |','| B7 \\ | \\ \\ | E \\ | \\ \\ |','| A \\ | C#7 \\ | D \\ | A \\ |','| \\ \\ | E \\ | A \\ | \\ \\ |'],
+};
+const ofSection = n => n.startsWith('Verse') ? 'Verse' : 'Chorus';
+const esc = s => s.replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const plain = l => l.replace(/\[[^\]]+\]/g, '');
+function lyricLine(line){
+  const segs=[]; let chord='';
+  for (const p of line.split(/(\[[^\]]+\])/).filter(Boolean)){
+    if (p[0]==='['){ if(chord) segs.push([chord,'']); chord=p.slice(1,-1);} else { segs.push([chord,p]); chord=''; } }
+  if (chord) segs.push([chord,'']);
+  return `<div class="line">${segs.map(([c,t])=>`<span class="seg"><span class="ch">${chordGlyph(c)}</span><span>${esc(t)||' '}</span></span>`).join('')}</div>`;
+}
+const lyricSection = n => `<div class="lsec"><div class="sec">${n}</div>${LYR[n].map(lyricLine).join('')}</div>`;
+function chartLines(sec, perBar){
+  let cur=null;
+  return CHART[sec].map((row,li)=>{
+    const cells=row.split('|').slice(1,-1).map(c=>c.trim().split(/\s+/));
+    const bars=[]; for(let i=0;i<cells.length;i+=perBar) bars.push(cells.slice(i,i+perBar).map((c,k)=>[c,i+k]));
+    return `<div class="cl" style="--bars:${bars.length}">${bars.map(b=>`<div class="cb">${b.map(([c,idx])=>`<div class="cc">${c.map((s,si)=>{
+      if(s!=='\\'){cur=s;return `<span class="sl">${chordGlyph(s)}</span>`;}
+      if(li>0&&idx===0&&si===0) return `<span class="sl carry">${chordGlyph(cur)}</span>`;
+      return `<span class="sl hold">\\</span>`;}).join('')}</div>`).join('')}</div>`).join('')}</div>`;
+  }).join('');
+}
+const csec=(sec,cap,pb)=>`<div class="csec"><div class="cap"><b>${sec}</b><span>${cap}</span></div>${chartLines(sec,pb)}</div>`;
+const FORMLINE='<p class="form">Form: <b>Verse</b> &middot; <b>Verse</b> &middot; <b>Chorus</b> &middot; <b>Verse</b> &middot; <b>Verse</b> &middot; <b>Chorus</b> &middot; <b>Chorus</b></p>';
+const LEGEND='<p class="legend">Dashed line: cell. Faint <i>\\</i>: keep playing. Faint chord at the start of a line: carried over.</p>';
+const R={
+ lyr:(n,pb)=>FORM.slice(0,n).map(lyricSection).join(''),
+ once:(n,pb)=>csec('Verse','sung 4 times',pb)+csec('Chorus','sung 3 times',pb)+FORMLINE+LEGEND,
+ // As sung, wide: lyric section on the left, its chart section on the right. No line-by-line alignment: the chart carries no timing for words.
+ sungD:(n,pb)=>FORM.slice(0,n).map((name,i)=>`<div class="prow"><div class="lyr"><div class="chart">${lyricSection(name)}</div></div>${csec(ofSection(name),`${i+1} of 7`,pb)}</div>`).join(''),
+ // As sung, phone: chart sections only, in sung order, each captioned with its section name and position. No lyric text.
+ sungP:(n,pb)=>'<div class="sungp">'+FORM.slice(0,n).map((name,i)=>`<div class="blk">${csec(ofSection(name),`${i+1} of 7`,pb).replace('<b>'+ofSection(name)+'</b><span>'+(i+1)+' of 7</span>','<b>'+name+' &middot; '+(i+1)+' of 7</b>')}</div>`).join('')+'</div>',
+};
+document.querySelectorAll('[data-render]').forEach(el=>{
+  el.innerHTML=R[el.dataset.render](+(el.dataset.n||7), +(el.dataset.bars||1));
+});
+</script>
+</body></html>
