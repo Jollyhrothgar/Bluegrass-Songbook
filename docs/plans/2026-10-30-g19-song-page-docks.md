@@ -142,8 +142,12 @@ scope (F10/F11 own the new look elsewhere).
 ### Removed on purpose
 
 - **Chord-chart Practice mode** (chart rows interleaved with lyric lines,
-  G18b2): Mike found it harder to perform from than lyrics beside a chart. It
-  is replaced by View ▸ Lyrics + Chart and Display ▸ Chart ▸ Order ▸ As sung.
+  G18b2): Mike found it harder to perform from than lyrics beside a chart. He
+  confirmed the loss on 2026-10-30, provided the chart and the lyrics + chords
+  can share a page. It is replaced by:
+  - View ▸ Lyrics + Chart: side by side on wide screens. On a phone, the chart
+    (each section once) sits above the lyrics; this is a proposal to draw.
+  - Display ▸ Chart ▸ Order ▸ As sung.
 - **Auto-hide on by default:** now off.
 - **The "Differs from the chart" notes:** removed (#342).
 - **Edit at the end of the song.**
