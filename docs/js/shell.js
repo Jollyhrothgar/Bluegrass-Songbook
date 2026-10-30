@@ -48,7 +48,6 @@ export function initShell({ nav = [], onToggleTheme, onReportBug, onTour } = {})
             <button id="topbar-theme" class="topbar-icon-btn" title="Toggle theme">◐</button>
             <div class="topbar-overflow">
                 <button id="topbar-overflow-btn" class="topbar-icon-btn" title="More" aria-label="More" aria-haspopup="true" aria-expanded="false" aria-controls="topbar-overflow-menu">⋯</button>
-                <span class="tour-invite-tip" aria-hidden="true">The tour is in here</span>
                 <div class="menu-scrim"></div>
                 <div id="topbar-overflow-menu" class="pill-popover hidden"></div>
             </div>
@@ -296,7 +295,7 @@ export function setTopBar({ back = null, title = null, actions = [], overflow = 
  * Show or hide the glowing Tour invitation. main.js decides who sees it
  * (first-time visitors); afterwards the tour lives in the ⋯ menu. Pages with
  * the full band show the Tour button; on the thin dock the ⋯ button itself
- * glows and says so (the Tour button is hidden there by CSS).
+ * glows (the Tour button is hidden there by CSS).
  */
 export function setTourInvite(on) {
     const btn = topbarEl?.querySelector('#topbar-tour');

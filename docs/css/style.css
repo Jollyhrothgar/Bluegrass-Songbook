@@ -9953,39 +9953,13 @@ body.has-bottomband .container {
 
 .topbar-edit-btn:hover { background: color-mix(in srgb, var(--accent) 10%, transparent); }
 
-/* A first visit: ⋯ glows (three pulses, then a steady glow) and says why */
+/* A first visit: ⋯ glows (three pulses, then a steady glow) */
 .topbar-dock #topbar-overflow-btn.tour-invite {
     background: color-mix(in srgb, var(--accent) 10%, transparent);
     box-shadow: 0 0 0 2px var(--accent), 0 0 8px 1px color-mix(in srgb, var(--accent) 40%, transparent);
     color: var(--accent);
     animation: tour-glow 2.4s ease-in-out 3;
 }
-
-.tour-invite-tip {
-    display: none;
-    position: absolute;
-    top: calc(100% + 10px);
-    right: 0;
-    width: max-content;
-    max-width: 180px;
-    padding: 0.35rem 0.6rem;
-    border-radius: var(--radius-lg);
-    background: var(--accent);
-    color: var(--on-accent);
-    font-size: var(--font-sm);
-    font-weight: 600;
-    pointer-events: none;
-    /* says its piece, then gets out of the title's way; the glow stays */
-    opacity: 0;
-    animation: tour-tip 8s ease 0.4s 1 forwards;
-}
-
-@keyframes tour-tip {
-    0%, 100% { opacity: 0; }
-    8%, 85% { opacity: 1; }
-}
-
-.topbar-dock #topbar-overflow-btn.tour-invite:not(.open) + .tour-invite-tip { display: block; }
 
 @media (prefers-reduced-motion: reduce) {
     .topbar-dock #topbar-overflow-btn.tour-invite { animation: none; }
@@ -10042,6 +10016,9 @@ body.has-bottomband .container {
     margin-top: 1px;
     font-size: var(--font-sm);
     color: var(--text-secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .menu-item-chevron {
