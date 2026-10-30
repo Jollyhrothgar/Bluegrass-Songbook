@@ -22,7 +22,7 @@ this harness, and gets fixed rather than noted. Three corollaries:
    to make a test pass there, because it means the product is wrong. Outside the
    tab editor, `docs/js/lists.js`, `main.js`, `review-queue.js`, `pwa.js`,
    `chord-explorer/main.js`, `editor.js` and `work-view.js` (one `alert` each)
-   still use native dialogs (`arrangement-pill.spec.js` and
+   still use native dialogs (`view-versions.spec.js` and
    `list-management.spec.js` drive them with `page.on('dialog')`). That is
    backlog, not a pattern to copy.
 2. **The backend is mocked, never live.** See below.
@@ -116,7 +116,9 @@ load). Details:
   `/#edit/slug`); a song then shows at its path, `/songs/{song}/…`
   (`song-paths.spec.js`). Assert a song by path or `history.state.songId`.
 - Helpers in `e2e/helpers.js`: `gotoSearch`, `searchFor`, `searchAndOpen`,
-  `navClick(page, id)` (top-band link by `data-nav`), `openPill(page, pillId)`.
+  `navClick(page, id)` (top-band link by `data-nav`), `openDock(page, 'key' |
+  'display' | 'view')` (the song page's dock sheets; returns the sheet) with
+  `closeSheet(page)`, and `openPill(page, pillId)` (the list export pill).
 - Wait for `#search-stats` to contain "songs" before navigating away from
   search: the post-index-load render overwrites earlier navigation.
 - Clear localStorage in `beforeEach` where isolation matters. Use `.first()`
@@ -140,15 +142,25 @@ dock (G19): `#topbar-back`, `#topbar-search`, `#edit-song-btn` (the one Edit),
 `[data-action=…]` / `#flag-btn` / `#report-bug-btn` / `#copyright-btn`;
 `#overflow-tour`, `#menu-go-*`, `#menu-account` / `#menu-sign-in`). The writer
 line `#song-details-btn` opens `#song-details-sheet` (`#edit-meta-btn` is its
-Edit details). The song body has `#song-pill-row` with `#key-pill`,
-`#display-pill`, `#arrangement-pill` (only when a group has more than one
-version), `#part-tabs .part-tab`, `#app-bottomband` (tab and ABC playback; in
-the lead-sheet editor `#editor-band`: `#editor-mode-*`, `#editor-undo/redo`,
-`#editor-key-select` and the Display pill, whose options exist only once it is
-open, so use `openDisplay(page)` from `helpers/lead-editor.js`),
-`#flag-modal` (feedback), `#song-nav-bar` (list context). `.pill-btn` opens a
-`.pill-popover`; one is open at a time. The top band auto-hides while scrolling a
-song (`body.chrome-hidden`). To enter the tab editor press Edit with
+Edit details). The song page's controls are the reading dock in
+`#app-bottomband` (G19b): `#dock-key-btn` (opens `#dock-key-sheet`),
+`#dock-size` (`[data-size="1"]` / `"-1"`), View as `#dock-view` (segments
+`[data-view=lyrics|both|chart]`) or, when the song has versions, tabs or a
+hybrid part, `#dock-view-btn` (opens `#song-view-sheet`: `.dock-row[data-view]`,
+`.dock-row[data-part]`, the versions as `.arrangement-item`) and
+`#dock-display-btn` (opens `#dock-display-sheet`: `#pill-compact`,
+`#pill-autohide`, `#pill-chord-mode`, and for a chart `#pill-chart-cells`,
+`#pill-chart-bars`, `#pill-chart-order`, whose buttons carry `data-value`). The
+pill row and part tabs are gone. ABC notation has `#abc-play-btn`,
+`#abc-tempo-label`, `#abc-size`; a tab part's band ends in `.tab-view-btn`.
+In the lead-sheet editor the band is `#editor-band`: `#editor-mode-*`,
+`#editor-undo/redo`, `#editor-key-select` and the Display pill, whose options
+exist only once it is open, so use `openDisplay(page)` from
+`helpers/lead-editor.js`; `#flag-modal` (feedback), `#song-nav-bar` (list
+context). `.pill-btn` opens a `.pill-popover`; one is open at a time, and the
+dock sheets are modal (close with `closeSheet`). Both bands auto-hide while
+scrolling a song only when Display ▸ Auto-hide controls is on
+(`body.chrome-hidden`; off by default). To enter the tab editor press Edit with
 `pressTabEdit(page)` (`helpers/tab-edit.js`); the band has no Edit of its own.
 
 Tab-editor selectors: `.editor-renderer .stave-row`, `.editor-canvas-container`,
@@ -166,8 +178,8 @@ Fixture works (confirm with `ls works/<id>` after a build):
 
 - `old-home-place`: plain lead sheet. The index prune hides non-bluegrass rows
   such as `your-cheating-heart` from search.
-- `wagon-wheel`: 2-version group (arrangement pill).
-- `arkansas-traveler-1`: lead sheet plus banjo tab (part tabs).
+- `wagon-wheel`: 2-version group (View ▾ ▸ Versions).
+- `arkansas-traveler-1`: ABC notation (the ABC dock); `lonesome-road-blues-1`: a chordful lead sheet plus a banjo tab (View ▾ ▸ Tabs).
 - `foggy-mountain-breakdown`: tab only (no lead sheet). Open `/#work/foggy-mountain-breakdown/mandolin`
   (`works/foggy-mountain-breakdown/mandolin.otf.json`) to edit a published tab and
   submit a correction (`editor-lifecycle.spec.js`, `otf-editor-mobile.spec.js`).

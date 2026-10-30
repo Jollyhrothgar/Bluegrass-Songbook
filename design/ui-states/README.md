@@ -58,13 +58,15 @@ put it in `setup`.
 | State | What it shows | Where | For |
 |---|---|---|---|
 | `song-lead-sheet` | Lead sheet | `/#work/old-home-place` | F3, F5 |
-| `song-key-pill` | Lead sheet, Key pill open | `/#work/old-home-place` (needs clicks) | F2, F4 |
-| `song-display-pill` | Lead sheet, Display pill open | `/#work/old-home-place` (needs clicks) | F2, F4 |
+| `song-key-pill` | Lead sheet, Key sheet open (from the dock) | `/#work/old-home-place` (needs clicks) | F2, F4 |
+| `song-display-pill` | Lead sheet, Display sheet open (from the dock) | `/#work/old-home-place` (needs clicks) | F2, F4 |
+| `song-view-sheet` | Lead sheet with a banjo tab, View sheet open | `/#work/lonesome-road-blues-1` (needs clicks) | G19 |
+| `song-chart` | Chord chart on its own (View ▸ Chart) | `/#work/old-home-place` (needs clicks) | G19 |
 | `song-details` | Lead sheet, Details sheet open (from the writer line) | `/#work/old-home-place` (needs clicks) | G19 |
 | `song-menu` | Lead sheet, ⋯ menu open (signed out) | `/#work/old-home-place` (needs clicks) | G19 |
 | `song-menu-expanded` | Lead sheet, ⋯ menu with Export / Print expanded | `/#work/old-home-place` (needs clicks) | G19 |
 | `song-menu-signed-in` | Lead sheet, ⋯ menu open (signed in) | `/#work/old-home-place` (mocked backend, needs clicks) | G19 |
-| `song-abc` | Fiddle tune with ABC notation | `/#work/arkansas-traveler-1` | F5 |
+| `song-abc` | Fiddle tune with ABC notation (its dock: play, tempo, size, view) | `/#work/arkansas-traveler-1` | F5 |
 | `song-add-to-list` | Add-to-list picker open | `/#work/old-home-place` (seeded data, needs clicks) | F2, D1 |
 | `song-not-found` | Song not found | `/#work/this-song-does-not-exist` | F3 |
 

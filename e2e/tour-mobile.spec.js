@@ -53,8 +53,8 @@ test('phone: ⋯ glows on the thin band and the tour finds every control', async
     await next(page);
     await expect.poll(() => here(page)).toBe('/songs/old-home-place/');
     await songReady(page);
-    await ringAround(page, '#key-pill');
-    await cardClear(page, '#key-pill');
+    await ringAround(page, '#dock-key-btn');
+    await cardClear(page, '#dock-key-btn');
     await next(page);
     await ringAround(page, '#topbar-overflow-btn');
     await cardClear(page, '#topbar-overflow-btn');

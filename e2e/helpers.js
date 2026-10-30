@@ -8,9 +8,11 @@
 // Song pages have the thin top dock: #topbar-back, #topbar-search, the one
 // Edit (#edit-song-btn) and ⋯. Everything else is in ⋯ (see openMenu below):
 // Save to list (#list-picker-btn), Export / Print (#export-menu-btn), Report a
-// problem (#report-menu-btn), Take the tour (#overflow-tour). The song body
-// renders the pill row (#key-pill, #display-pill, #arrangement-pill), .part-tabs
-// and the writer line (#song-details-btn) that opens the Details sheet.
+// problem (#report-menu-btn), Take the tour (#overflow-tour). The song body has
+// the writer line (#song-details-btn) that opens the Details sheet; the
+// controls are the reading dock in the bottom band (G19b): Key (#dock-key-btn),
+// Size (#dock-size), View (#dock-view segments, or #dock-view-btn for a sheet)
+// and Display (#dock-display-btn). `openDock` opens one of their sheets.
 import { expect } from '@playwright/test';
 
 /** Go to the search view and wait until the index has loaded.
@@ -55,7 +57,27 @@ export async function navClick(page, id) {
     await page.locator(`.topbar-nav-link[data-nav="${id}"]`).click();
 }
 
-/** Open a pill's popover (Key / Display / Info / Arrangement / Export). */
+/** Open one of the reading dock's sheets: 'key', 'display' or 'view' (View ▾, a song with versions or tabs).
+ *  Returns the sheet; it is modal, so close it with `closeSheet` before touching the page. */
+export async function openDock(page, which) {
+    const sheet = page.locator(which === 'view' ? '#song-view-sheet' : `#dock-${which}-sheet`);
+    await page.locator(`#dock-${which}-btn`).click();
+    await expect(sheet).toBeVisible();
+    return sheet;
+}
+
+/** Close the open dock sheet (Esc), and wait for it to go. */
+export async function closeSheet(page) {
+    await page.keyboard.press('Escape');
+    await expect(page.locator('.dock-sheet')).toHaveCount(0);
+}
+
+/** The key the dock's Key button shows: "A" from "Key: A". */
+export async function dockKey(page) {
+    return ((await page.locator('#dock-key-btn').textContent()) || '').replace(/^Key:\s*/, '').trim();
+}
+
+/** Open a pill's popover (the list export pill; the song page's pills are the dock now). */
 export async function openPill(page, pillId) {
     await page.locator(`#${pillId} .pill-btn`).click();
     const popover = page.locator(`#${pillId} .pill-popover`);

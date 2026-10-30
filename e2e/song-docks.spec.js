@@ -1,6 +1,7 @@
 // G19a: the song page's thin top dock (← · BB · 🔍 · Edit · ⋯), the ⋯ menu's
 // groups, the Details sheet the writer line opens, the one Edit and where it
-// routes, the tab editor clearing the pill row, and the lyrics editor's dock.
+// routes, the tab editor, and the lyrics editor's dock. The reading dock (G19b)
+// is at the end of this file.
 // The phone sheet and the desktop popover are the same menu; the "phone"
 // tests below constrain the viewport rather than naming a device.
 import { test, expect } from './fixtures.js';
@@ -346,31 +347,30 @@ test.describe('the one Edit', () => {
         await expect(page.locator('#edit-song-btn')).toBeVisible();
     });
 
-    test('the tab editor clears the part tabs (and pill row) from above it, Done brings them back', async ({ page }) => {
-        // arkansas-traveler-1: a lead sheet plus a banjo tab, so there are part tabs
+    test('while the tab editor is open View is off (with a reason), and Done brings it back', async ({ page }) => {
+        // arkansas-traveler-1: a lead sheet plus a banjo tab, so the tab band has a View ▾
         await page.goto('/#work/arkansas-traveler-1/banjo-tab');
         await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
-        await expect(page.locator('#part-tabs')).toBeVisible();
-        await expect(page.locator('#song-pill-row')).toBeVisible();
+        const viewBtn = page.locator('#app-bottomband .tab-view-btn');
+        await expect(viewBtn).toBeEnabled();
 
         await pressTabEdit(page, { waitForEditor: true });
         await expect(page.locator('body')).toHaveClass(/tab-editing/);
-        await expect(page.locator('#part-tabs')).toBeHidden();
-        await expect(page.locator('#song-pill-row')).toBeHidden();
+        await expect(viewBtn).toBeDisabled();
+        await expect(viewBtn).toHaveAttribute('title', /Done/);
         // the take header (status lines live there) and the editor's own chrome stay
         await expect(page.locator('#arrangement-host')).toBeAttached();
 
         await page.locator('#app-bottomband .tab-edit-done').click();
         await expect(page.locator('body')).not.toHaveClass(/tab-editing/);
-        await expect(page.locator('#part-tabs')).toBeVisible();
-        await expect(page.locator('#song-pill-row')).toBeVisible();
+        await expect(page.locator('#app-bottomband .tab-view-btn')).toBeEnabled();
     });
 
-    test('a new take (#new-tab) hides them too, and Cancel puts the page back', async ({ page }) => {
+    test('a new take (#new-tab) has Edit stepped aside, and no reading dock', async ({ page }) => {
         await page.goto('/#new-tab?title=E2E%20Docks&instrument=banjo');
         await page.locator('.editor-renderer .stave-row').first().waitFor({ timeout: 20000 });
         await expect(page.locator('body')).toHaveClass(/tab-editing/);
-        await expect(page.locator('#song-pill-row')).toBeHidden();
+        await expect(page.locator('#dock-key-btn')).toHaveCount(0);
         await expect(page.locator('#edit-song-btn')).toBeHidden();
     });
 
@@ -398,3 +398,142 @@ test.describe('on a phone the tab page has one Edit, in the top band', () => {
         await pressTabEdit(page, { waitForEditor: true });
     });
 });
+
+// ── G19b: the reading dock ────────────────────────────────────────────────
+// Key · Size · View · Display in the bottom band for a lyric sheet and a
+// chart; ▶ · Tempo · Size · View for ABC notation. The part tabs, the pill row,
+// the hybrid toggle and the chart's own header are gone. Chart choices, View
+// and Auto-hide are covered where they live (chord-chart.spec.js,
+// view-versions.spec.js, work-view.spec.js, ui.spec.js).
+const ABC = '/#work/arkansas-traveler-1';
+const dockFits = async (page, selector) => {
+    const box = await page.locator('#app-bottomband').boundingBox();
+    const vw = page.viewportSize().width;
+    expect(box.x).toBeGreaterThanOrEqual(0);
+    expect(box.x + box.width).toBeLessThanOrEqual(vw + 1);
+    const overflow = await page.evaluate((sel) => {
+        const dock = document.querySelector(sel);
+        return { sw: dock.scrollWidth, cw: dock.clientWidth,
+            kids: [...dock.children].map(k => { const r = k.getBoundingClientRect(); return [Math.round(r.left), Math.round(r.right)]; }) };
+    }, selector);
+    expect(overflow.sw).toBeLessThanOrEqual(overflow.cw + 1);
+    for (const [l, r] of overflow.kids) {
+        expect(l).toBeGreaterThanOrEqual(0);
+        expect(r).toBeLessThanOrEqual(vw);
+    }
+};
+
+test.describe('the reading dock', () => {
+    test('the pill row and the part tabs are gone from the page', async ({ page }) => {
+        await page.goto(LEAD);
+        await songReady(page);
+        for (const sel of ['#song-pill-row', '#part-tabs', '#key-pill', '#display-pill', '#arrangement-pill', '.view-toggle', '.cc-head']) {
+            await expect(page.locator(sel), sel).toHaveCount(0);
+        }
+    });
+
+    test('wide: Key · Size · View · Display in the bottom band, at its left edge', async ({ page }) => {
+        await page.goto(LEAD);
+        await songReady(page);
+        const band = page.locator('#app-bottomband');
+        await expect(band).toBeVisible();
+        await expect(band.locator('#dock-key-btn')).toHaveText(/^Key: [A-G]/);
+        await expect(band.locator('#dock-size')).toBeVisible();
+        await expect(band.locator('#dock-view')).toBeVisible();
+        await expect(band.locator('#dock-display-btn')).toHaveText('Display');
+        await expect(band.locator('#abc-play-btn, .tab-controls')).toHaveCount(0);
+        const keyBox = await band.locator('#dock-key-btn').boundingBox();
+        expect(keyBox.x).toBeLessThan(120);
+        // the page keeps clear of the band
+        const h = await page.evaluate(() => getComputedStyle(document.documentElement).getPropertyValue('--bottomband-h'));
+        expect(parseFloat(h)).toBeGreaterThan(40);
+        expect(await page.evaluate(() => getComputedStyle(document.documentElement).getPropertyValue('--topbar-h'))).toBe('48px');
+    });
+
+    test('a song without a chart or versions has Key, Size and Display, and no View', async ({ page }) => {
+        await page.goto('/#work/your-cheating-heart');
+        await songReady(page);
+        await expect(page.locator('#dock-key-btn')).toBeVisible();
+        await expect(page.locator('#dock-view, #dock-view-btn')).toHaveCount(0);
+    });
+
+    test('ABC notation: ▶ · Tempo · Size · View, and no Key or Display', async ({ page }) => {
+        await page.goto(ABC);
+        await expect(page.locator('#abc-notation svg').first()).toBeVisible({ timeout: 20000 });
+        const band = page.locator('#app-bottomband');
+        for (const sel of ['#abc-play-btn', '#abc-tempo-label', '#abc-size', '#dock-view-btn']) {
+            await expect(band.locator(sel), sel).toBeVisible();
+        }
+        await expect(band.locator('#dock-key-btn, #dock-display-btn')).toHaveCount(0);
+        await expect(page.locator('#song-pill-row, #view-abc-btn, #view-chords-btn')).toHaveCount(0);
+    });
+
+    test('ABC Size scales the notation, is remembered on its own, and leaves the lyric size alone', async ({ page }) => {
+        await page.goto(ABC);
+        const svg = page.locator('#abc-notation svg').first();
+        await expect(svg).toBeVisible({ timeout: 20000 });
+        const width = async () => (await svg.boundingBox()).height;
+        const before = await width();
+        await page.locator('#abc-size [data-size="1"]').click();
+        await expect.poll(async () => (await page.locator('#abc-notation svg').first().boundingBox()).height).toBeGreaterThan(before);
+        expect(await page.evaluate(() => localStorage.getItem('bgb-abc-scale'))).toBe('1.1');
+        expect(await page.evaluate(() => JSON.parse(localStorage.getItem('songbook-view-prefs') || '{}').fontSizeLevel ?? 0)).toBe(0);
+        await page.reload();
+        await expect(page.locator('#abc-notation svg').first()).toBeVisible({ timeout: 20000 });
+        expect(await page.evaluate(() => localStorage.getItem('bgb-abc-scale'))).toBe('1.1');
+        await expect.poll(async () => (await page.locator('#abc-notation svg').first().boundingBox()).height).toBeGreaterThan(before);
+    });
+
+    test('the lyric Size is remembered and does not move the notation scale', async ({ page }) => {
+        await page.goto(LEAD);
+        await songReady(page);
+        await page.locator('#dock-size [data-size="1"]').click();
+        await expect.poll(() => page.evaluate(() => JSON.parse(localStorage.getItem('songbook-view-prefs') || '{}').fontSizeLevel)).toBe(1);
+        expect(await page.evaluate(() => localStorage.getItem('bgb-abc-scale'))).toBeNull();
+    });
+});
+
+for (const width of [360, 390]) {
+    test.describe(`the reading dock at ${width}px`, () => {
+        test.use({ viewport: { width, height: 800 } });
+
+        test('Key · Size · Lyrics | Chart · Display fit on one row', async ({ page }) => {
+            await page.goto(LEAD);
+            await songReady(page);
+            await expect(page.locator('#dock-view')).toBeVisible();
+            await dockFits(page, '.reading-dock');
+            const heights = await page.locator('.reading-dock').evaluate(el => [...el.children].map(k => k.getBoundingClientRect().top));
+            expect(new Set(heights.map(Math.round)).size).toBe(1);     // one row
+        });
+
+        test('the chart view keeps the same dock', async ({ page }) => {
+            await page.goto(`${LEAD}`);
+            await songReady(page);
+            await page.locator('#dock-view [data-view="chart"]').click();
+            await expect(page.locator('.cc-tab .cc-sec').first()).toBeVisible();
+            await dockFits(page, '.reading-dock');
+        });
+
+        test('the ABC dock fits', async ({ page }) => {
+            await page.goto(ABC);
+            await expect(page.locator('#abc-notation svg').first()).toBeVisible({ timeout: 20000 });
+            await dockFits(page, '.reading-dock');
+        });
+
+        test('a song with versions: View ▾ fits beside Key, Size and Display', async ({ page }) => {
+            await page.goto('/#work/wagon-wheel');
+            await songReady(page);
+            await expect(page.locator('#dock-view-btn')).toBeVisible();
+            await dockFits(page, '.reading-dock');
+        });
+
+        test('the tab band keeps all its controls on the strip, View ▾ last', async ({ page }) => {
+            await page.goto('/#work/lonesome-road-blues-1/banjo');
+            await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
+            await expect(page.locator('#app-bottomband .tab-view-btn')).toBeVisible();
+            await dockFits(page, '.tab-controls');
+            const sw = await page.locator('.tab-controls').evaluate(el => el.scrollWidth <= el.clientWidth + 1);
+            expect(sw).toBe(true);
+        });
+    });
+}

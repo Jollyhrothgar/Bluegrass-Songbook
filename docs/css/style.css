@@ -1606,12 +1606,9 @@ body.dungeon-mode .include-dungeon,
     border-color: var(--text-secondary);
 }
 
-/* Song content */
+/* Song content: one flat surface between the two docks, no card (G19) */
 .song-content {
-    background: var(--bg-secondary);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 1.25rem;
+    padding: 1.25rem 0.25rem;
 }
 
 /* The chart a song's search-engine page (/songs/{id}/) carries in its HTML,
@@ -10278,7 +10275,8 @@ body.chrome-hidden .app-topbar:focus-within {
 
 .app-bottomband { transition: transform 0.2s ease; }
 
-body.chrome-hidden .app-bottomband {
+/* the song page's bands (the dock, the tab player); the lyrics editor's toolbar never hides */
+body.chrome-hidden .app-bottomband:has(.reading-dock, .tab-controls) {
     transform: translateY(calc(100% - 4px));
 }
 
@@ -10381,6 +10379,15 @@ body.chrome-hidden .app-bottomband {
 
 .dock-play:disabled { opacity: 0.6; }
 
+/* wide screens: the dock lines up with the song's left edge, as the mock draws it */
+@media (min-width: 800px) {
+    .app-bottomband:has(.reading-dock) {
+        padding-left: calc((100% - min(100% - 4rem, 1800px)) / 2 + 1.25rem);   /* the song's own left edge */
+        padding-right: 1.25rem;
+    }
+    .reading-dock { justify-content: flex-start; }
+}
+
 /* the tab band's View ▾ ends its row (work-view.js createTablatureControls) */
 .app-bottomband .tab-controls .tab-view-btn { flex: none; }
 
@@ -10390,6 +10397,9 @@ body.chrome-hidden .app-bottomband {
     .dock-size { padding-left: 0.45rem; }
     .dock-size-btn { width: 26px; }
     .dock-seg-btn { padding: 0 0.5rem; }
+}
+
+@media (max-width: 370px) {
     .abc-dock .dock-tempo-label { display: none; }
 }
 
@@ -10582,7 +10592,7 @@ body.has-list-context.has-bottomband .container {
        the rest into the settings sheet below. */
     /* Asymmetric padding: the top gap is where the position readout rides */
     .app-bottomband:has(.tab-controls) {
-        padding: 0.7rem 0.5rem 0.4rem;
+        padding: 0.7rem 0.35rem 0.4rem;
         min-height: 60px;
     }
 
@@ -10791,8 +10801,8 @@ body.has-list-context.has-bottomband .container {
     @container tabband (max-width: 640px) {
         .app-bottomband .tab-controls {
             flex-wrap: nowrap;
-            justify-content: center;
-            gap: 0.4rem;
+            justify-content: safe center;   /* a strip that overflows scrolls from its first control */
+            gap: 0.25rem;
             overflow-x: auto;
             overflow-y: hidden;
             -webkit-overflow-scrolling: touch;
@@ -10809,17 +10819,26 @@ body.has-list-context.has-bottomband .container {
         .app-bottomband .tab-controls .tab-tempo-group { order: 2; }
         .app-bottomband .tab-controls .tab-loop-toggle { order: 3; }
         .app-bottomband .tab-controls .tab-more-btn { order: 4; }
+        .app-bottomband .tab-controls .tab-view-btn { order: 5; }
 
         /* 44px touch targets — a band this narrow is being touched. */
         .app-bottomband .tab-controls .qc-toggle-btn {
             height: 44px;
-            padding: 0 0.6rem;
+            padding: 0 0.4rem;
             font-size: 0.9rem;
             border-radius: var(--radius-md);
         }
 
+        /* View ▾ (G19b) is the sixth control of the strip: as tall as the rest, but narrow */
+        .app-bottomband .tab-controls .tab-view-btn {
+            height: 44px;
+            padding: 0 0.4rem;
+            border-radius: var(--radius-md);
+            font-size: 0.85rem;
+        }
+
         .app-bottomband .tab-controls .qc-btn {
-            width: 40px;
+            width: 36px;
             height: 44px;
             font-size: 1.2rem;
         }
@@ -10827,12 +10846,12 @@ body.has-list-context.has-bottomband .container {
         .app-bottomband .tab-controls .qc-label {
             height: 44px;
             min-width: 26px;
-            padding: 0 0.2rem;
+            padding: 0 0.1rem;
         }
 
         .app-bottomband .tab-controls .tab-loop-toggle {
             height: 44px;
-            padding: 0 0.55rem;
+            padding: 0 0.45rem;
             border-radius: var(--radius-md);
         }
 
@@ -10888,20 +10907,27 @@ body.has-list-context.has-bottomband .container {
    the 44px height — only the gaps and side padding give. */
 @media (max-width: 374px) {
     .app-bottomband .tab-controls {
-        gap: 0.25rem;
+        gap: 0.2rem;
     }
 
     .app-bottomband .tab-controls .qc-btn {
-        width: 36px;
+        width: 34px;
     }
 
     .app-bottomband .tab-controls .qc-toggle-btn {
-        padding: 0 0.45rem;
+        padding: 0 0.35rem;
+    }
+
+    .app-bottomband .tab-controls .tab-loop-toggle {
+        padding: 0 0.4rem;
     }
 
     .app-bottomband .tab-controls .tab-more-btn {
-        width: 40px;
+        width: 36px;
     }
+
+    .app-bottomband .tab-controls .tab-view-btn { padding: 0 0.35rem; }
+    .app-bottomband .tab-controls .tab-view-btn .dock-caret { display: none; }
 }
 
 /* While EDITING on a narrow band (G17): the session's two buttons (Submit,

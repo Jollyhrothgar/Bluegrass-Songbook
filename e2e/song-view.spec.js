@@ -1,8 +1,8 @@
-// E2E tests for the unified song page (work-view.js). Transpose/display/
-// controls live in pill popovers on the #song-pill-row; export actions live
-// in the top band's ⋯ menu; song facts are the Details sheet.
+// E2E tests for the unified song page (work-view.js). Key, Size and Display
+// are the reading dock in the bottom band (Key and Display open sheets);
+// export actions live in the top band's ⋯ menu; song facts are the Details sheet.
 import { test, expect } from './fixtures.js';
-import { gotoSearch, searchAndOpen, openPill, openMenu, chords } from './helpers.js';
+import { gotoSearch, searchAndOpen, openDock, openMenu, chords } from './helpers.js';
 
 test.describe('Song View', () => {
     test.beforeEach(async ({ page }) => {
@@ -33,30 +33,30 @@ test.describe('Song View', () => {
         await expect(chords(page).first()).toBeVisible();
     });
 
-    test('Key pill shows the detected key and transposes chords', async ({ page }) => {
-        const label = page.locator('#key-pill .pill-label');
-        await expect(label).toContainText(/Key of [A-G]/);
+    test('the dock\'s Key shows the detected key and transposes chords', async ({ page }) => {
+        const label = page.locator('#dock-key-btn');
+        await expect(label).toContainText(/Key: [A-G]/);
 
         const originalChord = await chords(page).first().textContent();
 
-        const popover = await openPill(page, 'key-pill');
+        const popover = await openDock(page, 'key');
         // Pick a key different from the current one
         const currentKey = (await popover.locator('.pill-current-key').textContent())?.trim();
         const newKey = currentKey === 'A' ? 'G' : 'A';
         await popover.locator(`.pill-key-btn[data-key="${newKey}"]`).click();
 
-        await expect(label).toContainText(`Key of ${newKey}`);
+        await expect(label).toContainText(`Key: ${newKey}`);
         // Re-render is reactive — toHaveText retries until it settles
         await expect(chords(page).first()).not.toHaveText(originalChord);
 
         // Transpose back to the original key restores the chord
         await popover.locator(`.pill-key-btn[data-key="${currentKey}"]`).click();
-        await expect(label).toContainText(`Key of ${currentKey}`);
+        await expect(label).toContainText(`Key: ${currentKey}`);
         await expect(chords(page).first()).toHaveText(originalChord);
     });
 
-    test('semitone +/- buttons in the Key pill step the key', async ({ page }) => {
-        const popover = await openPill(page, 'key-pill');
+    test('semitone +/- buttons in the Key sheet step the key', async ({ page }) => {
+        const popover = await openDock(page, 'key');
         const currentKeyEl = popover.locator('.pill-current-key');
         const before = (await currentKeyEl.textContent())?.trim();
 
@@ -69,11 +69,11 @@ test.describe('Song View', () => {
         expect(back).toBe(before);
     });
 
-    test('Nashville toggle in the Key pill converts chords to numerals', async ({ page }) => {
+    test('Nashville toggle in the Key sheet converts chords to numerals', async ({ page }) => {
         const chordEl = chords(page).first();
         const originalChord = await chordEl.textContent();
 
-        const popover = await openPill(page, 'key-pill');
+        const popover = await openDock(page, 'key');
         const nashBtn = popover.locator('.pill-nashville-btn');
         await nashBtn.click();
         await page.waitForTimeout(200);
@@ -86,8 +86,8 @@ test.describe('Song View', () => {
         expect(await chordEl.textContent()).toBe(originalChord);
     });
 
-    test('chord display mode "none" hides chords (Display pill)', async ({ page }) => {
-        const popover = await openPill(page, 'display-pill');
+    test('chord display mode "none" hides chords (Display sheet)', async ({ page }) => {
+        const popover = await openDock(page, 'display');
         const modeGroup = popover.locator('#pill-chord-mode');
 
         await modeGroup.locator('[data-mode="none"]').click();
@@ -99,8 +99,8 @@ test.describe('Song View', () => {
         expect(await chords(page).count()).toBeGreaterThan(0);
     });
 
-    test('two-column toggle adds the layout class (Display pill)', async ({ page }) => {
-        const popover = await openPill(page, 'display-pill');
+    test('two-column toggle adds the layout class (Display sheet)', async ({ page }) => {
+        const popover = await openDock(page, 'display');
 
         await popover.locator('#pill-twocol').click();
         await page.waitForTimeout(200);
@@ -111,13 +111,13 @@ test.describe('Song View', () => {
         await expect(page.locator('.song-body')).not.toHaveClass(/two-column/);
     });
 
-    test('font size controls change the rendered size (Display pill)', async ({ page }) => {
+    test('Size in the dock changes the rendered size', async ({ page }) => {
         const body = page.locator('.song-body');
         await expect(body).toBeVisible();
         const initialSize = await body.evaluate(el => parseFloat(getComputedStyle(el).fontSize));
 
-        const popover = await openPill(page, 'display-pill');
-        await popover.locator('[data-size="1"]').click();
+        const size = page.locator('#dock-size');
+        await size.locator('[data-size="1"]').click();
 
         // The size change lands on a reactive re-render (state.js notifyChange
         // → work-view re-render), so poll rather than race a fixed timeout.
@@ -125,18 +125,19 @@ test.describe('Song View', () => {
             .poll(() => body.evaluate(el => parseFloat(getComputedStyle(el).fontSize)))
             .toBeGreaterThan(initialSize);
 
-        await popover.locator('[data-size="-1"]').click();
+        await size.locator('[data-size="-1"]').click();
         await expect
             .poll(() => body.evaluate(el => parseFloat(getComputedStyle(el).fontSize)))
             .toBe(initialSize);
     });
 
-    test('only one pill popover is open at a time', async ({ page }) => {
-        await openPill(page, 'key-pill');
-        await openPill(page, 'display-pill');
+    test('only one dock sheet is open at a time', async ({ page }) => {
+        await openDock(page, 'key');
+        await page.keyboard.press('Escape');
+        await openDock(page, 'display');
 
-        await expect(page.locator('#display-pill .pill-popover')).toBeVisible();
-        await expect(page.locator('#key-pill .pill-popover')).toBeHidden();
+        await expect(page.locator('#dock-display-sheet')).toBeVisible();
+        await expect(page.locator('#dock-key-sheet')).toHaveCount(0);
     });
 });
 

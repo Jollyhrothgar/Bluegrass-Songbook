@@ -1,7 +1,8 @@
 // E2E tests for works with tablature on the unified song page.
 // Tablature playback controls live in the fixed bottom band
-// (#app-bottomband); multi-part works get a .part-tabs segmented control.
+// (#app-bottomband); multi-part works reach their parts through View ▾ in the dock.
 import { test, expect } from './fixtures.js';
+import { openDock } from './helpers.js';
 
 test.describe('WorkView - Tablature', () => {
     test('opens work with tablature via legacy #song URL', async ({ page }) => {
@@ -92,47 +93,54 @@ test.describe('WorkView - Tablature', () => {
     });
 });
 
-test.describe('WorkView - Part Tabs', () => {
+test.describe('WorkView - View sheet (parts)', () => {
     // lonesome-road-blues-1 has a chordful lead sheet and a banjo tab
-    // → two part tabs (many multi-part works have ABC-only lead sheets,
+    // → View ▾ lists both (many multi-part works have ABC-only lead sheets,
     // which render notation instead of a .song-body)
     const MULTI_PART_URL = '/#work/lonesome-road-blues-1';
 
-    test('segmented control shows when a work has multiple parts', async ({ page }) => {
+    test('View ▾ shows when a work has multiple parts, and lists them', async ({ page }) => {
+        await page.goto(MULTI_PART_URL);
+        await expect(page.locator('#song-view')).toBeVisible({ timeout: 15000 });
+        await expect(page.locator('.song-body')).toBeVisible();
+        await expect(page.locator('#part-tabs')).toHaveCount(0);   // the part tabs are gone
+
+        const sheet = await openDock(page, 'view');
+        // The lead sheet is the one on screen
+        await expect(sheet.locator('.dock-row.on')).toHaveCount(1);
+        await expect(sheet.locator('.dock-row.on')).toContainText(/Lyrics|Chords|Notation/);
+        await expect(sheet.locator('.dock-sheet-heading', { hasText: 'Tabs' })).toBeVisible();
+        await expect(sheet.locator('[data-part]').first()).toBeVisible();
+    });
+
+    test('picking a tab switches content and updates the URL; the tab band can come back', async ({ page }) => {
         await page.goto(MULTI_PART_URL);
         await expect(page.locator('#song-view')).toBeVisible({ timeout: 15000 });
 
-        const partTabs = page.locator('#part-tabs .part-tab');
-        expect(await partTabs.count()).toBeGreaterThanOrEqual(2);
-        // The default (lead sheet) tab is active
-        await expect(page.locator('#part-tabs .part-tab.active')).toHaveCount(1);
-        await expect(page.locator('.song-body')).toBeVisible();
-    });
+        const sheet = await openDock(page, 'view');
+        const tab = sheet.locator('[data-part]').first();
+        const partId = await tab.getAttribute('data-part');
+        await tab.click();
 
-    test('clicking a part tab switches content and updates the URL', async ({ page }) => {
-        await page.goto(MULTI_PART_URL);
-        await expect(page.locator('#part-tabs .part-tab').nth(1)).toBeVisible({ timeout: 15000 });
-
-        const secondTab = page.locator('#part-tabs .part-tab').nth(1);
-        const partId = await secondTab.getAttribute('data-part-id');
-        await secondTab.click();
-
-        // Tab becomes active, tablature renders, URL carries the part id
-        await expect(secondTab).toHaveClass(/active/);
+        // Tablature renders, the URL carries the part id
         await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
         expect(page.url()).toContain(`#work/lonesome-road-blues-1/${partId}`);
 
-        // Switching back restores the lead sheet and tears down the band
-        await page.locator('#part-tabs .part-tab').first().click();
+        // The tab band has its own View ▾, which reaches the lyrics again
+        await expect(page.locator('#app-bottomband .tab-view-btn')).toBeVisible();
+        await page.locator('#app-bottomband .tab-view-btn').click();
+        await page.locator('#song-view-sheet [data-view="lyrics"]').click();
         await expect(page.locator('.song-body')).toBeVisible();
-        await expect(page.locator('#app-bottomband')).toBeHidden();
+        await expect(page.locator('#dock-key-btn')).toBeVisible();
+        await expect(page.locator('#app-bottomband .tab-controls')).toHaveCount(0);
     });
 
     test('part deep link selects that part directly', async ({ page }) => {
         await page.goto(`${MULTI_PART_URL}/banjo`);
         await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
 
-        await expect(page.locator('#part-tabs .part-tab.active')).toContainText(/banjo/i);
+        const sheet = await openDock(page, 'view');
+        await expect(sheet.locator('[data-part].on')).toContainText(/banjo/i);
     });
 });
 

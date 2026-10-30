@@ -1,23 +1,23 @@
 // E2E tests for transposition on the unified song page. All key controls
-// live in the Key pill (#key-pill): chromatic +/- steps, the key grid,
+// live in the Key sheet (the dock's #dock-key-btn): chromatic +/- steps, the key grid,
 // and the Nashville toggle. The old #key-select dropdown and quick-controls
 // bar are gone.
 import { test, expect } from './fixtures.js';
-import { gotoSearch, searchAndOpen, openPill, chords } from './helpers.js';
+import { gotoSearch, searchAndOpen, openDock, chords } from './helpers.js';
 
 test.describe('Key Detection and Display', () => {
-    test('song page shows detected key in the Key pill label', async ({ page }) => {
+    test('song page shows the detected key on the dock\'s Key button', async ({ page }) => {
         await page.goto('/#work/your-cheating-heart');
         await expect(page.locator('#song-view')).toBeVisible({ timeout: 15000 });
 
-        await expect(page.locator('#key-pill .pill-label')).toContainText(/Key of [A-G][#b]?m?/);
+        await expect(page.locator('#dock-key-btn')).toContainText(/Key: [A-G][#b]?m?/);
     });
 
     test('song opened from search shows its detected key', async ({ page }) => {
         await gotoSearch(page);
         await searchAndOpen(page, 'old home place');
 
-        const popover = await openPill(page, 'key-pill');
+        const popover = await openDock(page, 'key');
         await expect(popover.locator('.pill-current-key')).toHaveText(/^A/);
     });
 });
@@ -30,7 +30,7 @@ test.describe('Key Transposition', () => {
         const chordEl = chords(page).first();
         const initialChord = await chordEl.textContent();
 
-        const popover = await openPill(page, 'key-pill');
+        const popover = await openDock(page, 'key');
         const currentKey = (await popover.locator('.pill-current-key').textContent())?.trim();
         const targetKey = currentKey === 'D' ? 'E' : 'D';
         await popover.locator(`.pill-key-btn[data-key="${targetKey}"]`).click();
@@ -51,7 +51,7 @@ test.describe('Key Transposition', () => {
         const hasMinorBefore = chordTexts.some(c => c.includes('m') && !c.includes('maj'));
         const has7Before = chordTexts.some(c => c.includes('7'));
 
-        const popover = await openPill(page, 'key-pill');
+        const popover = await openDock(page, 'key');
         await popover.locator('[data-transpose="1"]').click();
         await page.waitForTimeout(300);
 
@@ -72,7 +72,7 @@ test.describe('Nashville Numbers', () => {
         await page.goto('/#work/wagon-wheel');
         await expect(chords(page).first()).toBeVisible({ timeout: 15000 });
 
-        const popover = await openPill(page, 'key-pill');
+        const popover = await openDock(page, 'key');
         await popover.locator('.pill-nashville-btn').click();
         await page.waitForTimeout(300);
 
@@ -92,7 +92,7 @@ test.describe('Nashville Numbers', () => {
         await expect(chordEl).toBeVisible();
         const original = await chordEl.textContent();
 
-        const popover = await openPill(page, 'key-pill');
+        const popover = await openDock(page, 'key');
         const nashBtn = popover.locator('.pill-nashville-btn');
 
         await nashBtn.click();
@@ -110,7 +110,7 @@ test.describe('Transposition Edge Cases', () => {
         await gotoSearch(page);
         await searchAndOpen(page, 'amazing grace');
 
-        const popover = await openPill(page, 'key-pill');
+        const popover = await openDock(page, 'key');
         await popover.locator('[data-transpose="1"]').click();
         await page.waitForTimeout(300);
 
@@ -123,7 +123,7 @@ test.describe('Transposition Edge Cases', () => {
         await gotoSearch(page);
         await searchAndOpen(page, 'salty dog blues');
 
-        const popover = await openPill(page, 'key-pill');
+        const popover = await openDock(page, 'key');
         const keyButtons = popover.locator('.pill-key-btn');
         const count = Math.min(5, await keyButtons.count());
 
@@ -138,7 +138,7 @@ test.describe('Transposition Edge Cases', () => {
         await gotoSearch(page);
         await searchAndOpen(page, 'john henry');
 
-        const popover = await openPill(page, 'key-pill');
+        const popover = await openDock(page, 'key');
         const currentKeyEl = popover.locator('.pill-current-key');
         const start = (await currentKeyEl.textContent())?.trim();
 

@@ -51,9 +51,9 @@ test.describe('Feature tour', () => {
         await expect(count(page)).toHaveText('3 of 11');
         await expect.poll(() => here(page)).toBe('/songs/old-home-place/');
         await songReady(page);
-        await ringAround(page, '#key-pill');
-        await cardClear(page, '#key-pill');
-        await arrowAt(page, '#key-pill');
+        await ringAround(page, '#dock-key-btn');
+        await cardClear(page, '#dock-key-btn');
+        await arrowAt(page, '#dock-key-btn');
 
         await next(page);
         await expect(count(page)).toHaveText('4 of 11');
@@ -194,7 +194,7 @@ test.describe('Feature tour', () => {
         await next(page);                               // find
         await next(page);                               // key: the song the search found
         await expect.poll(() => here(page)).toBe('/songs/old-home-place/');
-        await ringAround(page, '#key-pill');
+        await ringAround(page, '#dock-key-btn');
         for (let i = 0; i < 2; i++) await next(page);   // lists, edit
         expect(await here(page)).toBe('/songs/old-home-place/');
 
@@ -254,13 +254,13 @@ test.describe('Feature tour', () => {
         await next(page);                               // find
         await next(page);                               // key, on the song the search found
         await songReady(page);
-        await ringAround(page, '#key-pill');
+        await ringAround(page, '#dock-key-btn');
 
-        await page.click('#key-pill .pill-btn');
-        const popover = page.locator('#key-pill .pill-popover');
+        await page.click('#dock-key-btn');
+        const popover = page.locator('#dock-key-sheet');
         await expect(popover).toBeVisible();
         await expect(page.locator('.tour-ring')).toBeHidden();
-        // The popover is on top wherever the two overlap
+        // The sheet is on top wherever the two overlap
         const onTop = await popover.evaluate((el) => {
             const r = el.getBoundingClientRect();
             const hit = document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2);

@@ -118,10 +118,10 @@ const PUBLIC_LIST = {
 
 const tabReady = '.tablature-container';
 
-/** Open a pill's popover on the song page. */
-const openPill = (id) => async (page) => {
-    await page.locator(`#${id} .pill-btn`).click();
-    await page.locator(`#${id} .pill-popover`).waitFor();
+/** Open one of the reading dock's sheets (G19b): key, display or view. */
+const openDock = (which) => async (page) => {
+    await page.locator(`#dock-${which}-btn`).click();
+    await page.locator(`#dock-${which}-sheet, #song-${which}-sheet`).waitFor();
 };
 
 /** Open the top band's ⋯ menu, with a group's rows expanded when asked. */
@@ -202,20 +202,41 @@ export const STATES = [
     {
         id: 'song-key-pill',
         group: 'Song page',
-        title: 'Lead sheet, Key pill open',
+        title: 'Lead sheet, Key sheet open (from the dock)',
         url: '/#work/old-home-place',
         ready: '#song-view .song-body',
-        setup: openPill('key-pill'),
+        setup: openDock('key'),
         workshop: ['F2', 'F4'],
     },
     {
         id: 'song-display-pill',
         group: 'Song page',
-        title: 'Lead sheet, Display pill open',
+        title: 'Lead sheet, Display sheet open (from the dock)',
         url: '/#work/old-home-place',
         ready: '#song-view .song-body',
-        setup: openPill('display-pill'),
+        setup: openDock('display'),
         workshop: ['F2', 'F4'],
+    },
+    {
+        id: 'song-view-sheet',
+        group: 'Song page',
+        title: 'Lead sheet with a banjo tab, View sheet open',
+        url: '/#work/lonesome-road-blues-1',
+        ready: '#song-view .song-body',
+        setup: openDock('view'),
+        workshop: ['G19'],
+    },
+    {
+        id: 'song-chart',
+        group: 'Song page',
+        title: 'Chord chart on its own (View ▸ Chart)',
+        url: '/#work/old-home-place',
+        ready: '#song-view .song-body',
+        setup: async (page) => {
+            await page.locator('#dock-view [data-view="chart"]').click();
+            await page.locator('.cc-tab .cc-sec').first().waitFor();
+        },
+        workshop: ['G19'],
     },
     {
         id: 'song-details',
@@ -260,7 +281,7 @@ export const STATES = [
     {
         id: 'song-abc',
         group: 'Song page',
-        title: 'Fiddle tune with ABC notation',
+        title: 'Fiddle tune with ABC notation (its dock: play, tempo, size, view)',
         url: '/#work/arkansas-traveler-1',
         ready: '#song-view .abc-notation svg',
         workshop: ['F5'],

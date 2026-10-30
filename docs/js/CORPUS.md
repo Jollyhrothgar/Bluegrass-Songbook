@@ -1,7 +1,7 @@
 # Corpus loading and arrangements
 
 Read this before changing `corpus.js`, `song-content.js`, `loadIndex` /
-`ensureArchiveLoaded` in `main.js`, or how the Arrangement pill picks takes.
+`ensureArchiveLoaded` in `main.js`, or how View ▸ Versions picks takes.
 
 ## Two takes on one work (`arrangements`)
 
