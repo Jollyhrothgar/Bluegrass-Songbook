@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseTef } from '../tef-import/index.js';
-import { headerString, isV3Layout } from '../tef-import/reader.js';
+import { headerString, isV3Layout, tabByFromComments } from '../tef-import/reader.js';
 import { decodeDurationCode } from '../tef-import/reader.js';
 import { writeTef, TefWriteError } from '../tef-export/writer.js';
 import { noticeLine, noticeSummary, NOTICE_LABELS } from '../tef-export/notices.js';
@@ -434,6 +434,66 @@ describe('.tef writer: readers', () => {
         const bytes = new Uint8Array(fs.readFileSync(path.join(dir, file)));
         expect(headerString(bytes, 0x48)).toBe('Tab by David Johnson');
         expect(parseTef(bytes, file).metadata.tab_by).toBeUndefined();
+    });
+});
+
+describe('TablEdit "TablEdited by NAME" as the credit (G15f)', () => {
+    const accepted = [
+        ['TablEdited by Lee Marcus', 'Lee Marcus'],
+        ['tabledited BY  James N  Leonard ', 'James N Leonard'],
+        ['TablEdited by: Stan Slack', 'Stan Slack'],
+        ['TablEdited by L.Bradshaw', 'L.Bradshaw'],
+        ['TablEdited by Jean-Pierre Devin', 'Jean-Pierre Devin'],
+        ['TablEdited by Mike Larsen AKA Lefty5string', 'Mike Larsen AKA Lefty5string'],
+        ['Arranged & Tabledited by Tom Arri', 'Tom Arri'],
+        ['Transcribed and TablEdited by Jim Crowley', 'Jim Crowley'],
+        ['Modified and TablEdited by Robert Fentress', 'Robert Fentress'],
+        ['TablEdited & Arr. by Martin Blake', 'Martin Blake'],
+        ['TablEdited and Arranged by Martin Blake', 'Martin Blake'],
+    ];
+    const rejected = [
+        'TablEdited by', 'Arranged & Tabledited', 'TablEdited on 12-7-2013',
+        'TablEdited by Tom Arri 2010', 'TablEdited by Stan Slack, Jan 2013',
+        'TablEdited by Nic Durham: picke_r@hotmail.com', 'TablEdited by5stringabuse',
+        'Tabledited byToni Ruiz', 'TablEdited by Holt&Holt /Yep, Guitars', 'TablEdited by \\ Rick Diesel',
+        'TablEdited by Greg Crisp (breaks 1 & 2)', 'TablEdited by Donald W,Couchie',
+        'Arranged and TablEdited for clawhammer banjo by Jan-Olov Sundqvist',
+        'Banjo Tuning: aDADE     TablEdited by Ned Banta',
+        'Sequenced by  Barry Taylor TablEdited by Patrick P.',
+        'TablEdited by ' + 'Abcdefgh '.repeat(7), 'TablEdited by ' + 'x'.repeat(61),
+    ];
+    it.each(accepted)('%j is a credit', (line, name) => expect(tabByFromComments(line)).toEqual({ name }));
+    it.each(rejected)('%j is no credit', line => expect(tabByFromComments(line)).toBeNull());
+    it('the last line wins, and an explicit "Tab by:" line beats it', () => {
+        expect(tabByFromComments('TablEdited by A B\r\nTablEdited by C D')).toEqual({ name: 'C D' });
+        expect(tabByFromComments('TablEdited by Devon Wells\r\nTab by: Jane Doe')).toEqual({ name: 'Jane Doe' });
+        expect(tabByFromComments('Tab by: Jane Doe\r\nTablEdited by Devon Wells')).toEqual({ name: 'Jane Doe' });
+    });
+
+    const chicken = new Uint8Array(fs.readFileSync(path.join(repo, 'sources/banjo-hangout/downloads/13038_tef_chicken_reel.tef')));
+    it('a V2 source keeps its comments, and an unchanged credit adds no second line', () => {
+        const a = parseTef(chicken, 'x');
+        expect(a.metadata.tab_by).toEqual({ name: 'Devon Wells' });
+        const { bytes } = writeTef(a, { source: chicken, template });
+        expect(headerString(bytes, 0x48)).toBe('TablEdited by Devon Wells');
+        expect(parseTef(bytes, 'x').metadata.tab_by).toEqual({ name: 'Devon Wells' });
+        // and again from the V3 file just written
+        expect(headerString(writeTef(a, { source: bytes, template }).bytes, 0x48)).toBe('TablEdited by Devon Wells');
+    });
+    it('a changed credit follows the kept line; reading it back gives the new name', () => {
+        const a = parseTef(chicken, 'x');
+        a.metadata.tab_by = { name: 'Jane Doe' };
+        const { bytes } = writeTef(a, { source: chicken, template });
+        expect(headerString(bytes, 0x48)).toBe('TablEdited by Devon Wells\r\nTab by: Jane Doe');
+        expect(parseTef(bytes, 'x').metadata.tab_by).toEqual({ name: 'Jane Doe' });
+        const again = writeTef(a, { source: bytes, template }).bytes;
+        expect(headerString(again, 0x48)).toBe('TablEdited by Devon Wells\r\nTab by: Jane Doe');
+    });
+    it('a credit with a link is written as a Tab by line after the kept comment', () => {
+        const a = parseTef(chicken, 'x');
+        a.metadata.tab_by = { name: 'Devon Wells', url: 'https://example.com/d' };
+        const { bytes } = writeTef(a, { source: chicken, template });
+        expect(headerString(bytes, 0x48)).toBe('TablEdited by Devon Wells\r\nTab by: Devon Wells <https://example.com/d>');
     });
 });
 

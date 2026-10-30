@@ -29,20 +29,49 @@ MIDI_TO_PITCH = {
 _TAB_BY_LINE = re.compile(r"^Tab by: (.+?)(?: <(https?://[^\s<>]+)>)?$")
 
 
-def tab_by_from_comments(text: str) -> dict[str, str] | None:
-    """The "Tab by: NAME <URL>" credit line that the .tef writer puts in the
-    comments (G15f), as metadata.tab_by, or None. The last such line wins.
-    Mirrors tabByFromComments() in tef-import/reader.js."""
-    found = None
-    for line in re.split(r"\r?\n", text or ""):
-        m = _TAB_BY_LINE.match(line.strip())
+# TablEdit's own default comment, "TablEdited by NAME", and the co-credit forms
+# that name the same person. Anchored on the whole line. Mirrors reader.js.
+_TABLEDITED_LINES = [re.compile(p, re.I) for p in (
+    r"^(?:arranged|transcribed|modified)[ \t]+(?:and|&)[ \t]+tabledited[ \t]+by:?[ \t]+(.+)$",
+    r"^tabledited[ \t]+(?:and|&)[ \t]+(?:arr\.?|arranged)[ \t]+by:?[ \t]+(.+)$",
+    r"^tabledited[ \t]+by:?[ \t]+(.+)$",
+)]
+# A word of letters, digits, . ' - with at least one letter.
+_CLEAN_WORD = re.compile(r"^(?=.*[^\W\d_])(?:[^\W_]|[.'-])+$")
+
+
+def _tabedited_name(line: str) -> str | None:
+    for pattern in _TABLEDITED_LINES:
+        m = pattern.match(line)
         if not m:
+            continue
+        name = re.sub(r"[ \t]+", " ", m.group(1)).strip()
+        words = name.split(" ")
+        clean = len(name) <= 60 and len(words) <= 6 and all(_CLEAN_WORD.match(w) for w in words)
+        return name if clean else None
+    return None
+
+
+def tab_by_from_comments(text: str) -> dict[str, str] | None:
+    """The credit in the comments, as metadata.tab_by, or None. The "Tab by:
+    NAME <URL>" line the .tef writer makes (G15f) wins; else TablEdit's
+    "TablEdited by NAME" line when NAME is a clean name. The last such line
+    wins. Mirrors tabByFromComments() in tef-import/reader.js."""
+    found = None
+    tabedited = None
+    for raw in re.split(r"\r?\n", text or ""):
+        line = raw.strip()
+        m = _TAB_BY_LINE.match(line)
+        if not m:
+            n = _tabedited_name(line)
+            if n:
+                tabedited = {"name": n}
             continue
         name = m.group(1).strip()
         if not name or len(name) > 100 or (m.group(2) and len(m.group(2)) > 500):
             continue
         found = {"name": name, "url": m.group(2)} if m.group(2) else {"name": name}
-    return found
+    return found or tabedited
 
 
 def midi_to_pitch_name(midi: int) -> str:

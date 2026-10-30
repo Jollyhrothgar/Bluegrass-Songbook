@@ -646,18 +646,48 @@ export function titleFromHeader(data) {
 
 const TAB_BY_LINE = /^Tab by: (.+?)(?: <(https?:\/\/[^\s<>]+)>)?$/;
 
-/** The "Tab by: NAME <URL>" credit line that the .tef writer puts in the
- *  comments (G15f), as metadata.tab_by, or null. The last such line wins. */
-export function tabByFromComments(text) {
-    let found = null;
-    for (const line of String(text || '').split(/\r?\n/)) {
-        const m = TAB_BY_LINE.exec(line.trim());
+// TablEdit's own default comment, "TablEdited by NAME", and the co-credit forms
+// that name the same person. Anchored on the whole line: any other prefix or
+// suffix ("for clawhammer banjo by", "Banjo Tuning: ...") is not a credit.
+const TABLEDITED_LINES = [
+    /^(?:arranged|transcribed|modified)[ \t]+(?:and|&)[ \t]+tabledited[ \t]+by:?[ \t]+(.+)$/i,
+    /^tabledited[ \t]+(?:and|&)[ \t]+(?:arr\.?|arranged)[ \t]+by:?[ \t]+(.+)$/i,
+    /^tabledited[ \t]+by:?[ \t]+(.+)$/i,
+];
+// A clean person or handle name: words of letters, digits, . ' - (each word has a letter).
+const CLEAN_WORD = /^[\p{L}\p{Nd}.'-]+$/u;
+
+function tabeditedName(line) {
+    for (const re of TABLEDITED_LINES) {
+        const m = re.exec(line);
         if (!m) continue;
+        const name = m[1].replace(/[ \t]+/g, ' ').trim();
+        const words = name.split(' ');
+        const clean = name.length <= 60 && words.length <= 6
+            && words.every(w => CLEAN_WORD.test(w) && /\p{L}/u.test(w));
+        return clean ? name : null;
+    }
+    return null;
+}
+
+/** The credit in the comments, as metadata.tab_by, or null. The "Tab by: NAME
+ *  <URL>" line the .tef writer makes (G15f) wins; else TablEdit's "TablEdited
+ *  by NAME" line when NAME is a clean name. The last such line wins. */
+export function tabByFromComments(text) {
+    let found = null, tabEdited = null;
+    for (const raw of String(text || '').split(/\r?\n/)) {
+        const line = raw.trim();
+        const m = TAB_BY_LINE.exec(line);
+        if (!m) {
+            const n = tabeditedName(line);
+            if (n) tabEdited = { name: n };
+            continue;
+        }
         const name = m[1].trim();
         if (!name || name.length > 100 || (m[2] && m[2].length > 500)) continue;
         found = m[2] ? { name, url: m[2] } : { name };
     }
-    return found;
+    return found ?? tabEdited;
 }
 
 export function parseMeasureTableV3(data) {

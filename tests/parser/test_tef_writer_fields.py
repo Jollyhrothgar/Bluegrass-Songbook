@@ -9,6 +9,7 @@ JS counterpart: docs/js/__tests__/tef-export-features.test.js
 """
 
 import json
+import pytest
 import sys
 from pathlib import Path
 
@@ -39,3 +40,45 @@ def test_tab_by_line_forms():
     assert tab_by_from_comments("Tab by David Johnson") is None
     assert tab_by_from_comments("Tab by: " + "x" * 101) is None
     assert tab_by_from_comments("") is None
+
+
+ACCEPTED_TABLEDITED = [
+    ("TablEdited by Lee Marcus", "Lee Marcus"),
+    ("tabledited BY  James N  Leonard ", "James N Leonard"),
+    ("TablEdited by: Stan Slack", "Stan Slack"),
+    ("TablEdited by L.Bradshaw", "L.Bradshaw"),
+    ("TablEdited by Jean-Pierre Devin", "Jean-Pierre Devin"),
+    ("TablEdited by Mike Larsen AKA Lefty5string", "Mike Larsen AKA Lefty5string"),
+    ("Arranged & Tabledited by Tom Arri", "Tom Arri"),
+    ("Transcribed and TablEdited by Jim Crowley", "Jim Crowley"),
+    ("Modified and TablEdited by Robert Fentress", "Robert Fentress"),
+    ("TablEdited & Arr. by Martin Blake", "Martin Blake"),
+    ("TablEdited and Arranged by Martin Blake", "Martin Blake"),
+]
+REJECTED_TABLEDITED = [
+    "TablEdited by", "Arranged & Tabledited", "TablEdited on 12-7-2013",
+    "TablEdited by Tom Arri 2010", "TablEdited by Stan Slack, Jan 2013",
+    "TablEdited by Nic Durham: picke_r@hotmail.com", "TablEdited by5stringabuse",
+    "Tabledited byToni Ruiz", "TablEdited by Holt&Holt /Yep, Guitars", "TablEdited by \\ Rick Diesel",
+    "TablEdited by Greg Crisp (breaks 1 & 2)", "TablEdited by Donald W,Couchie",
+    "Arranged and TablEdited for clawhammer banjo by Jan-Olov Sundqvist",
+    "Banjo Tuning: aDADE     TablEdited by Ned Banta",
+    "Sequenced by  Barry Taylor TablEdited by Patrick P.",
+    "TablEdited by " + "Abcdefgh " * 7, "TablEdited by " + "x" * 61,
+]
+
+
+@pytest.mark.parametrize("line,name", ACCEPTED_TABLEDITED)
+def test_tabledited_line_is_a_credit(line, name):
+    assert tab_by_from_comments(line) == {"name": name}
+
+
+@pytest.mark.parametrize("line", REJECTED_TABLEDITED)
+def test_doubtful_tabledited_line_is_no_credit(line):
+    assert tab_by_from_comments(line) is None
+
+
+def test_tabledited_last_line_wins_and_explicit_credit_beats_it():
+    assert tab_by_from_comments("TablEdited by A B\r\nTablEdited by C D") == {"name": "C D"}
+    assert tab_by_from_comments("TablEdited by Devon Wells\r\nTab by: Jane Doe") == {"name": "Jane Doe"}
+    assert tab_by_from_comments("Tab by: Jane Doe\r\nTablEdited by Devon Wells") == {"name": "Jane Doe"}
