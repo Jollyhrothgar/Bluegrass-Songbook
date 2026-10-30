@@ -110,7 +110,7 @@ body{padding-bottom:80px}
 .brand{padding:0 6px;display:flex}
 .brand svg{height:30px;width:auto;display:block;border-radius:3px}
 [data-theme=light] .brand svg{filter:invert(1)}
-.backname{font-size:13px;color:var(--text-secondary);white-space:nowrap;margin:0 4px 0 -2px}
+.backname{font-size:13px;color:var(--text-secondary);white-space:nowrap;margin:0 4px 0 -2px;min-width:0;max-width:40%;overflow:hidden;text-overflow:ellipsis}
 .ib.glow{border-radius:50%;box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 38%,transparent),0 0 16px 4px color-mix(in srgb,var(--accent) 45%,transparent)}
 .tourtip{position:absolute;z-index:6;top:50px;right:10px;max-width:150px;font-size:12px;line-height:1.3;padding:6px 9px;border-radius:8px;background:var(--accent);color:var(--on-accent);font-weight:600;box-shadow:0 4px 14px rgba(0,0,0,.3)}
 .tourtip::before{content:'';position:absolute;top:-5px;right:14px;width:10px;height:10px;background:var(--accent);transform:rotate(45deg)}
@@ -238,7 +238,7 @@ body{padding-bottom:80px}
 .brand{padding:0 6px;display:flex}
 .brand svg{height:30px;width:auto;display:block;border-radius:3px}
 [data-theme=light] .brand svg{filter:invert(1)}
-.backname{font-size:13px;color:var(--text-secondary);white-space:nowrap;margin:0 4px 0 -2px}
+.backname{font-size:13px;color:var(--text-secondary);white-space:nowrap;margin:0 4px 0 -2px;min-width:0;max-width:40%;overflow:hidden;text-overflow:ellipsis}
 .ib.glow{border-radius:50%;box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 38%,transparent),0 0 16px 4px color-mix(in srgb,var(--accent) 45%,transparent)}
 .tourtip{position:absolute;z-index:6;top:50px;right:10px;max-width:150px;font-size:12px;line-height:1.3;padding:6px 9px;border-radius:8px;background:var(--accent);color:var(--on-accent);font-weight:600;box-shadow:0 4px 14px rgba(0,0,0,.3)}
 .tourtip::before{content:'';position:absolute;top:-5px;right:14px;width:10px;height:10px;background:var(--accent);transform:rotate(45deg)}
@@ -426,8 +426,8 @@ const sheetDisplay = `<div class="scrim"></div><div class="bsheet tall">${sheetH
  <div class="gh">Play in <i>a capo for playback; the frets don&rsquo;t move</i></div>
  <div class="kgrid sm">${['C','C&#9839;','D','E&#9837;','E','F','F&#9839;','G','A&#9837;','A','B&#9837;','B'].map(k => `<span class="${k === 'A' ? 'on' : ''}">${k}</span>`).join('')}</div>
  <p class="note">Playing in A: capo 2. Frets on the page stay as written (tab is in G).</p>
- <div class="gh">Layout</div><div class="r"><span class="lab">Playback</span>${seg(['Unrolled', 'Repeats'], 'Unrolled')}</div>
- <div class="gh">Feel</div><div class="r"><span class="lab">Beat</span>${seg(['Four feel', 'Two feel'], 'Four feel')}</div>
+ <div class="gh">Layout</div><div class="r"><span class="lab"></span>${seg(['Unrolled', 'Repeats'], 'Unrolled')}</div>
+ <div class="gh">Feel</div><div class="r"><span class="lab"></span>${seg(['Four feel', 'Two feel'], 'Four feel')}</div>
  <div class="gh">Practice</div>${row('Loop', false)}${row('Metronome', false)}${row('Count-in <b style="font-weight:600">1&middot;2&middot;3&middot;4</b>', true)}
  <div class="gh">Tracks <i>what you hear</i></div><div class="chips"><span class="chp on">banjo</span><span class="chp">guitar</span><span class="chp">bass</span></div>
  <p class="note">Solo plays one track alone: use Solo on the track card.</p>
