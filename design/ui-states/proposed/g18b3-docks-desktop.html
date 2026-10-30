@@ -17,6 +17,7 @@ body{padding-bottom:80px}
 .dock.top{top:0;border-bottom:1px solid var(--border)}
 .dock.bot{bottom:0;border-top:1px solid var(--border)}
 .fr.hide .dock.top{transform:translateY(-101%)}
+.fr.hide .dock.bot{transform:translateY(101%)}
 .dock .in{display:flex;align-items:center;width:100%;margin:0 auto}
 .dock .sp{flex:1}
 .ib{width:34px;height:34px;display:grid;place-items:center;border-radius:8px;font-size:18px;color:var(--text)}
@@ -141,7 +142,7 @@ body{padding-bottom:80px}
 </style></head>
 <body data-proposal="G18b3 two docks, desktop">
 <main class="wrap">
-<p class="intro"><b>What changed versus today.</b> No bordered, padded card: the song is one flat surface, framed by a max width (here 1120 px), with hairlines under the column heads. The top band becomes a thin dock of <i>&larr; BB search Edit &#8943;</i> (BB is the app's real monogram), and the pill row becomes a bottom dock: Key, Size, View (Lyrics / Lyrics + chart / Chart), Display, with room for Play. Only the top dock hides on scroll down (returns on scroll up or tap); the bottom dock is sticky. The credit line opens Details, a centered popover of the song's facts. New in this update: the real logo, lyrics and chords at the app's real size (16 px, measured on the live page), and a frame for a song opened from a set list (&larr; names the list; the dock gains previous / next). On desktop the &#8943; menu would hold the same groups drawn on the phone page (This song, Trusted and admin, Go to, You). Add <code>?theme=dark</code> for dark.</p>
+<p class="intro"><b>What changed versus today.</b> No bordered, padded card: the song is one flat surface, framed by a max width (here 1120 px), with hairlines under the column heads. The top band becomes a thin dock of <i>&larr; BB search Edit &#8943;</i> (BB is the app's real monogram), and the pill row becomes a bottom dock: Key, Size, View (Lyrics / Lyrics + chart / Chart), Display, with room for Play. Both docks stay visible while scrolling by default; Display has an &ldquo;Auto-hide controls&rdquo; toggle (off by default) that hides both on scroll down and brings them back on scroll up or tap. The credit line opens Details, a centered popover of the song's facts. New in this update: the real logo, lyrics and chords at the app's real size (16 px, measured on the live page), and a frame for a song opened from a set list (&larr; names the list; the dock gains previous / next). On desktop the &#8943; menu would hold the same groups drawn on the phone page (This song, Trusted and admin, Go to, You). Add <code>?theme=dark</code> for dark.</p>
 <div class="frames" id="frames" style="display:block"></div>
 </main>
 <script src="mock.js"></script>
@@ -191,11 +192,12 @@ const LOGO = `<svg class="logo" role="img" aria-label="Bluegrass Book" xmlns="ht
 const topDock = (maxw, o = {}) => `<div class="dock top" style="height:44px"><div class="in" style="max-width:${maxw};padding:0 8px"><span class="ib">&larr;</span>${o.list ? `<span class="backname">${o.list}</span>` : ''}<span class="brand">${LOGO}</span><span class="sp"></span><span class="ib">${SEARCH}</span><span class="edit">&#9999;&#65039; Edit</span><span class="ib${o.glow ? ' glow' : ''}" style="font-size:20px">&#8943;</span></div></div>`;
 const navPill = '<span class="sgc nav" title="previous / next song in the list"><span>&lsaquo;</span><span class="mid">2 of 9</span><span>&rsaquo;</span></span>';
 const invite = () => `<div class="invite"><p><b>See something wrong? Edit this song.</b> <span>Every fix makes the book better.</span></p><span class="btn2 ghost">&#9999;&#65039; Edit this song</span></div>`;
-// only the top dock hides on scroll down (the bottom dock is sticky), return on scroll up or tap
+// default: neither dock hides. Only when Display > Auto-hide controls is on do both hide on scroll down and return on scroll up or tap
 function wire(fr, opts = {}) {
     const sc = fr.querySelector('.sc'); let last = 0;
     if (opts.scroll != null) sc.scrollTop = opts.scroll === 'end' ? 1e6 : opts.scroll;
     last = sc.scrollTop; fr.classList.toggle('hide', !!opts.hidden);
+    if (!opts.autohide) return; // Auto-hide controls is off by default: nothing hides
     sc.addEventListener('scroll', () => { const t = sc.scrollTop, d = t - last; if (Math.abs(d) < 6) return;
         fr.classList.toggle('hide', d > 0 && t > 60); last = t; });
     sc.addEventListener('click', () => fr.classList.toggle('hide'));
@@ -215,7 +217,7 @@ const details = `<div class="scrim"></div><div class="modal"><div class="sh-h">D
   <div class="sh-foot"><span class="btn2 ghost">Edit details</span><small>Shown to people who can edit this song.</small></div></div>`;
 const host = document.getElementById('frames');
 for (const [title, note, extra, dock = {}] of [
- ['1. View = Lyrics + chart, both docks shown, no card', 'Lyrics on the left, the chart on the right, one flat surface. Scroll inside the frame: the top dock hides and returns; the bottom dock stays.', ''],
+ ['1. View = Lyrics + chart, both docks shown, no card', 'Lyrics on the left, the chart on the right, one flat surface. Scroll inside the frame: both docks stay (Auto-hide controls is off by default; the Display menu turns it on, and then both hide on scroll down and return on scroll up or tap).', ''],
  ['2. Details popover open', 'Tap the credit line. Facts about the song; Edit details for people allowed to.', details],
  ['3. Opened from a set list', 'The top &larr; goes back to the list and names it. The bottom dock gains previous / next song at its left, beside Key, Size, View and Display.', '', { list: 'Friday Jam (example)' }]]) {
     const box = document.createElement('div');

@@ -17,6 +17,7 @@ body{padding-bottom:80px}
 .dock.top{top:0;border-bottom:1px solid var(--border)}
 .dock.bot{bottom:0;border-top:1px solid var(--border)}
 .fr.hide .dock.top{transform:translateY(-101%)}
+.fr.hide .dock.bot{transform:translateY(101%)}
 .dock .in{display:flex;align-items:center;width:100%;margin:0 auto}
 .dock .sp{flex:1}
 .ib{width:34px;height:34px;display:grid;place-items:center;border-radius:8px;font-size:18px;color:var(--text)}
@@ -133,7 +134,7 @@ body{padding-bottom:80px}
 </style></head>
 <body data-proposal="G18b3 two docks, phone">
 <main class="wrap">
-<p class="intro"><b>What changed versus today.</b> The song page is one flat surface between two thin docks. The top dock carries only <i>&larr; BB search Edit &#8943;</i> (BB is the app's real monogram); the bottom dock holds Key, Size, View and Display, and only the top dock slides away while you scroll down (it returns on scroll up or tap); the bottom dock is sticky and always visible. This update places every control today's page has: the &#8943; sheet now groups everything without another home (This song, Trusted and admin, Go to, You, with a signed-out state), the Key sheet and a View sheet for songs with versions or tabs are drawn, and a set-list frame shows &larr; naming the list plus a previous / next pill in the dock. Lyrics and chords are at the app's real size (16 px, measured on the live page). On a first visit &#8943; glows and points to the tour. Add <code>?theme=dark</code> for dark; scroll inside any frame to see the top dock hide and return.</p>
+<p class="intro"><b>What changed versus today.</b> The song page is one flat surface between two thin docks. The top dock carries only <i>&larr; BB search Edit &#8943;</i> (BB is the app's real monogram); the bottom dock holds Key, Size, View and Display, and both stay visible while you scroll. Display has an &ldquo;Auto-hide controls&rdquo; toggle, off by default; turned on, both docks slide away on scroll down and return on scroll up or tap. This update places every control today's page has: the &#8943; sheet now groups everything without another home (This song, Trusted and admin, Go to, You, with a signed-out state), the Key sheet and a View sheet for songs with versions or tabs are drawn, and a set-list frame shows &larr; naming the list plus a previous / next pill in the dock. Lyrics and chords are at the app's real size (16 px, measured on the live page). On a first visit &#8943; glows and points to the tour. Add <code>?theme=dark</code> for dark; scroll inside any frame (docks stay put, Auto-hide being off).</p>
 <div class="frames" id="frames"></div>
 </main>
 <script src="mock.js"></script>
@@ -183,11 +184,12 @@ const LOGO = `<svg class="logo" role="img" aria-label="Bluegrass Book" xmlns="ht
 const topDock = (maxw, o = {}) => `<div class="dock top" style="height:44px"><div class="in" style="max-width:${maxw};padding:0 8px"><span class="ib">&larr;</span>${o.list ? `<span class="backname">${o.list}</span>` : ''}<span class="brand">${LOGO}</span><span class="sp"></span><span class="ib">${SEARCH}</span><span class="edit">&#9999;&#65039; Edit</span><span class="ib${o.glow ? ' glow' : ''}" style="font-size:20px">&#8943;</span></div></div>`;
 const navPill = '<span class="sgc nav" title="previous / next song in the list"><span>&lsaquo;</span><span class="mid">2 of 9</span><span>&rsaquo;</span></span>';
 const invite = () => `<div class="invite"><p><b>See something wrong? Edit this song.</b> <span>Every fix makes the book better.</span></p><span class="btn2 ghost">&#9999;&#65039; Edit this song</span></div>`;
-// only the top dock hides on scroll down (the bottom dock is sticky), return on scroll up or tap
+// default: neither dock hides. Only when Display > Auto-hide controls is on do both hide on scroll down and return on scroll up or tap
 function wire(fr, opts = {}) {
     const sc = fr.querySelector('.sc'); let last = 0;
     if (opts.scroll != null) sc.scrollTop = opts.scroll === 'end' ? 1e6 : opts.scroll;
     last = sc.scrollTop; fr.classList.toggle('hide', !!opts.hidden);
+    if (!opts.autohide) return; // Auto-hide controls is off by default: nothing hides
     sc.addEventListener('scroll', () => { const t = sc.scrollTop, d = t - last; if (Math.abs(d) < 6) return;
         fr.classList.toggle('hide', d > 0 && t > 60); last = t; });
     sc.addEventListener('click', () => fr.classList.toggle('hide'));
@@ -205,6 +207,7 @@ const sheets = {
   <div class="gh first">Layout</div>
   <div class="r dis"><span class="ck"></span><span class="lab">Two columns <i style="font-style:normal;font-size:12px">(wide screens only)</i></span></div>
   ${row('Section labels', true)}${row('Compact', false)}
+  ${row('Auto-hide controls <i style="font-style:normal;font-size:12px;color:var(--text-secondary)">(off: docks stay while you scroll)</i>', false)}
   <div class="r"><span class="lab">Chords</span>${seg(['All', 'First only', 'None'], 'All')}</div>
   <div class="gh">Chart <i>shown because this song has one</i></div>
   <div class="r"><span class="lab">Cells per row</span>${seg(['2', '4', '6', '8'], '4')}</div>
@@ -267,9 +270,9 @@ const sheets = {
 };
 const frames = [
  ['1. Reading, both docks shown', {}, 'L', null, 'Header is title, credit, practice line. The first lyric is at y = <span id="ly"></span> px. First visit only: a soft glow on &#8943; points to the tour.', { glow: true }],
- ['2. Scrolled: top dock hidden, bottom dock stays', { scroll: 330, hidden: true }, 'L', null, 'The top dock slides away as you read; scrolling up or tapping brings it back. Key, Size, View and Display never move.'],
+ ['2. Scrolled (Auto-hide off, the default): both docks stay', { scroll: 330 }, 'L', null, 'Both docks stay put while you read. Turning Auto-hide controls on (Display sheet) hides both on scroll down; scrolling up or tapping brings them back.'],
  ['3. View = Chart', {}, 'C', null, 'Chart only, no lyric text mixed in. Chart scales with Size.'],
- ['4. Display sheet open', {}, 'L', 'display', 'Layout options. Two columns is desktop-only; the Chart group is there because this song has a chart.'],
+ ['4. Display sheet open', {}, 'L', 'display', 'Layout options. Two columns is desktop-only; Auto-hide controls is off by default (on: both docks hide on scroll down); the Chart group is there because this song has a chart.'],
  ['5. The &#8943; sheet open', {}, 'L', 'more', 'Everything with no other home, in four quiet groups. Small grey tags say when a row appears. Rows marked &rsaquo; open a short list (named in grey).'],
  ['6. The &#8943; sheet, scrolled down', {}, 'L', 'more', 'The same sheet further down: tools for trusted users and admins (labelled as theirs), Go to, and You.', {}, 'end'],
  ['7. The &#8943; sheet, signed out', {}, 'L', 'moreOut', 'No Promote, no trusted group, no Song notes. The account row reads &ldquo;Sign in&rdquo;.', {}, 'end'],
@@ -277,7 +280,7 @@ const frames = [
  ['9. View sheet, a song with more to read', {}, 'L', 'view', 'View appears as a button when a song has versions or tabs. Entries marked &ldquo;example&rdquo; are placeholders.', { viewBtn: true }],
  ['10. Opened from a set list', {}, 'L', null, 'The top &larr; goes back to the list and names it. The bottom dock gains previous / next song, beside Key, Size, View and Display.', { list: 'Friday Jam (example)' }],
  ['11. Details sheet open', {}, 'L', 'details', 'Tapped the credit line. The facts about the song; Edit details at the bottom.'],
- ['12. End of the song', { scroll: 'end', hidden: true }, 'L', null, 'Top dock hidden, bottom dock still there. A short, warm invitation to edit, not a banner.'],
+ ['12. End of the song', { scroll: 'end' }, 'L', null, 'Docks still shown. A short, warm invitation to edit, not a banner.'],
 ];
 const host = document.getElementById('frames');
 for (const [title, opts, view, sheet, note, dock = {}, sheetScroll] of frames) {
