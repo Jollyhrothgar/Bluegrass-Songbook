@@ -136,61 +136,10 @@ load). Details:
 ### Selectors and fixture works
 
 Shell ids come from `docs/js/shell.js` and `work-view.js`: `#app-topbar`,
-`.topbar-nav-link[data-nav=…]` (full band only), and on a song page the thin
-dock (G19): `#topbar-back`, `#topbar-search`, `#edit-song-btn` (the one Edit),
-`#topbar-overflow-btn`. Everything else song-specific is in ⋯: use
-`openMenu(page, expand?)` from `helpers.js` (rows `#list-picker-btn`,
-`#export-menu-btn` and `#report-menu-btn`, which expand in place to hold
-`[data-action=…]` / `#flag-btn` / `#report-bug-btn` / `#copyright-btn`;
-`#overflow-tour`, `#menu-go-*`, `#menu-account` / `#menu-sign-in`). The writer
-line `#song-details-btn` opens `#song-details-sheet` (`#edit-meta-btn` is its
-Edit details). The song page's controls are the reading dock in
-`#app-bottomband` (G19b): `#dock-key-btn` (opens `#dock-key-sheet`),
-`#dock-size` (`[data-size="1"]` / `"-1"`), View as `#dock-view` (segments
-`[data-view=lyrics|both|chart]`) or, when the song has versions, tabs or a
-hybrid part, `#dock-view-btn` (opens `#song-view-sheet`: `.dock-row[data-view]`,
-`.dock-row[data-part]`, the versions as `.arrangement-item`) and
-`#dock-display-btn` (opens `#dock-display-sheet`: `#pill-compact`,
-`#pill-autohide`, `#pill-chord-mode`, and for a chart `#pill-chart-cells`,
-`#pill-chart-bars`, `#pill-chart-order`, whose buttons carry `data-value`). The
-pill row and part tabs are gone. ABC notation has `#abc-play-btn`,
-`#abc-tempo-label`, `#abc-size`.
-
-A song opened from a set list (`#list/<id>/<ref>`; seed `songbook-lists` with
-`addInitScript`, as `set-list-dock.spec.js` does) has `#topbar-back` labelled
-with the list name (`.topbar-back-label`) and `#list-pill` leading the bottom
-dock: `.list-prev`, `.list-pos` ("2 of 9", goes back to the list) and
-`.list-next`, disabled at the ends. A view with no dock (a placeholder, a PDF
-part, loading) gets a dock holding only the pill. A tab in a list shows
-`#dock-tempo-chip` (♩ n) instead of the Tempo stepper; it opens
-`#dock-tempo-sheet`, and the stepper (`.tab-tempo-up` / `-down` /
-`-display`) is in the sheet while it is open and in `.tab-display-store`
-otherwise. Below 560px a list's lyric dock shows View ▾ rather than Lyrics |
-Chart. There is no `#song-nav-bar` and no `body.has-list-context`. A
-dock that "fits" must be checked button by button: a segmented control
-clips what overflows without widening the row. ←/→ step the list unless
-focus is in an input, textarea, select, contenteditable, CodeMirror, the tab
-editor or an open sheet.
-
-A tab part's band is the tab dock (G19c): `.tab-play-btn` (▶ / ⏸ / ▶ Loop),
-`.tab-stop-btn` (hidden until playing), `.tab-tempo-down` / `-display` / `-up`,
-`.tab-view-btn` (also `#dock-view-btn`, opening `#song-view-sheet`) and
-`#dock-display-btn` (opening `#dock-display-sheet`, the same id as on the lyric
-sheet: `openDock(page, 'display')`). In the tab's Display sheet: `#tab-size`
-(`[data-size]`), `#tab-play-in` (`.pill-key-btn`, with `.tab-capo-indicator`
-under it), `.tab-repeat-group`, `.tab-feel-group`, `.tab-loop-toggle`,
-`.tab-metronome-toggle`, `.tab-countin-toggle`, `.tab-track-mixer`
-(`.track-toggle`, `.track-checkbox`), `#pill-autohide`. Those controls sit in
-`.tab-display-store` while the sheet is closed, so open it before touching
-them. In the tab's View sheet: `[data-part]` rows (`.dock-count`, `.dock-chev`
-when a part has several takes; clicking drills into `.dock-take` rows with
-`.dock-pin` ★, `.on`, `.dock-take-who`, and `.dock-back` in the title) and
-`[data-track]` rows (`all` included). Above the music: `.arr-credit`,
-`.arr-status`, `.arr-skipped`; the takes bar (`.arr-bar`, `#arr-list`) and
-`.track-view-tabs` are gone. To assert what Play was asked for, stub
-`TabPlayer.prototype.play` as `song-docks.spec.js` does (`stubPlay`). The tab
-EDITING band is the old one: `.tab-edit-submit`, `.tab-edit-done`, `.tab-more-btn`
-and `.tab-settings-sheet` below 640px, and no View or Display.
+`.topbar-nav-link[data-nav=…]` (full band only). The song page's selectors (the
+thin dock, ⋯ via `openMenu`, Details, the reading dock via `openDock`, the tab
+dock and its sheets, set lists via `set-list-dock.spec.js`'s seeding) are in
+`docs/js/DOCKS.md` § Selectors; read it before writing a song-page spec.
 
 In the lead-sheet editor the band is `#editor-band`: `#editor-mode-*`,
 `#editor-undo/redo`, `#editor-key-select` and the Display pill, whose options
