@@ -15,6 +15,9 @@ describe('tuning names', () => {
         ['banjo Open G', '5-string-banjo', ['D4', 'B3', 'G3', 'D3', 'G4'], 'Open G'],
         ['banjo Double C', '5-string-banjo', ['D4', 'C4', 'G3', 'C3', 'G4'], 'Double C'],
         ['mandolin standard', 'mandolin', ['E5', 'A4', 'D4', 'G3'], 'Standard'],
+        ['guitar Drop D (DADGBE)', 'guitar', ['E4', 'B3', 'G3', 'D3', 'A2', 'D2'], 'Drop D'],
+        ['guitar Open D (DADF#AD)', 'guitar', ['D4', 'A3', 'F#3', 'D3', 'A2', 'D2'], 'Open D'],
+        ['guitar standard', 'guitar', ['E4', 'B3', 'G3', 'D3', 'A2', 'E2'], 'Standard'],
     ])('%s is named', (_, instrument, pitches, name) => {
         expect(detectTuningName(pitches, instrument).name).toBe(name);
     });

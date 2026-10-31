@@ -246,8 +246,8 @@ export const MANDOLIN_TUNINGS = {
 // Guitar tunings
 export const GUITAR_TUNINGS = {
     'E-B-G-D-A-E': 'Standard',
-    'D-B-G-D-A-D': 'Drop D',
-    'D-A-G-D-A-D': 'Open D',
+    'E-B-G-D-A-D': 'Drop D',     // DADGBE, string 1 first
+    'D-A-F#-D-A-D': 'Open D',    // DADF#AD
     'D-B-G-D-G-D': 'Open G',
 };
 
