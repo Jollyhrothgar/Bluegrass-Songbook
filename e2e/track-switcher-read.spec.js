@@ -23,7 +23,7 @@ for (const width of [390, 1440]) {
             const btn = page.locator('.track-info .track-switcher-button');
             await expect(btn).toHaveCount(1);
             await expect(btn).toHaveText('Banjo ▾ 1 of 4');
-            expect((await btn.boundingBox()).height).toBeGreaterThanOrEqual(44);
+            expect((await btn.boundingBox()).height).toBeGreaterThanOrEqual(43.5);   // 44px min-height; the scaled staff lays out in sub-pixels (43.99998)
             expect(await visibleTracks(page)).toEqual(['banjo']);
 
             await btn.click();
