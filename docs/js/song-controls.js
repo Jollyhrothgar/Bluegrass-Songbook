@@ -200,6 +200,22 @@ function segmentedRow(label, id, choices, on) {
 }
 
 /**
+ * "Auto-hide controls", the Display sheet's last row on every page that has a
+ * Display (the lyric sheet, the chart and, since G19c, a tab).
+ */
+export function autoHideRow() {
+    const label = document.createElement('label');
+    label.className = 'qc-checkbox';
+    const hintText = () => `(${autoHideControls ? 'on' : 'off'}: docks ${autoHideControls ? 'hide' : 'stay'} while you scroll)`;
+    label.innerHTML = `<input type="checkbox" id="pill-autohide" ${autoHideControls ? 'checked' : ''}> Auto-hide controls <span class="dock-opt-hint">${hintText()}</span>`;
+    label.querySelector('input').addEventListener('change', (e) => {
+        setAutoHideControls(e.target.checked);
+        label.querySelector('.dock-opt-hint').textContent = hintText();
+    });
+    return label;
+}
+
+/**
  * The Display sheet's content: layout options, the chord mode, Auto-hide
  * controls, and (only for a song with a chart) the Chart group. Size is not
  * here: it is in the dock. `wide` says whether two columns can show.
@@ -211,7 +227,7 @@ export function renderDisplayContent(container, { hasChart = false, wide = false
             <label class="qc-checkbox ${wide ? '' : 'is-off'}"><input type="checkbox" id="pill-twocol" ${twoColumnMode ? 'checked' : ''} ${wide ? '' : 'disabled'}> Two columns${wide ? '' : ' <span class="dock-opt-hint">(wide screens only)</span>'}</label>
             <label class="qc-checkbox"><input type="checkbox" id="pill-sections" ${showSectionLabels ? 'checked' : ''}> Section labels</label>
             <label class="qc-checkbox"><input type="checkbox" id="pill-compact" ${compactMode ? 'checked' : ''}> Compact</label>
-            <label class="qc-checkbox"><input type="checkbox" id="pill-autohide" ${autoHideControls ? 'checked' : ''}> Auto-hide controls <span class="dock-opt-hint">(${autoHideControls ? 'on' : 'off'}: docks ${autoHideControls ? 'hide' : 'stay'} while you scroll)</span></label>
+            <span data-slot="autohide"></span>
         </div>
         <div class="dock-opt-row">
             <span class="dock-opt-label">Chords</span>
@@ -232,11 +248,7 @@ export function renderDisplayContent(container, { hasChart = false, wide = false
     container.querySelector('#pill-twocol').addEventListener('change', (e) => setTwoColumnMode(e.target.checked));
     container.querySelector('#pill-sections').addEventListener('change', (e) => setShowSectionLabels(e.target.checked));
     container.querySelector('#pill-compact').addEventListener('change', (e) => setCompactMode(e.target.checked));
-    container.querySelector('#pill-autohide').addEventListener('change', (e) => {
-        setAutoHideControls(e.target.checked);
-        const hint = e.target.parentElement.querySelector('.dock-opt-hint');
-        if (hint) hint.textContent = `(${autoHideControls ? 'on' : 'off'}: docks ${autoHideControls ? 'hide' : 'stay'} while you scroll)`;
-    });
+    container.querySelector('[data-slot="autohide"]').replaceWith(autoHideRow());
 
     // A segmented group's buttons light one at a time and say what they chose
     const group = (selector, attr, onChoose) => {

@@ -15,6 +15,7 @@ import {
     tablaturePlayer, setTablaturePlayer,
     currentDetectedKey, setCurrentDetectedKey,
     fontSizeLevel, setFontSizeLevel,
+    tabScale, setTabScale, TAB_SCALE_MIN, TAB_SCALE_MAX,
     chartBeside, setChartBeside, autoHideControls,
     showAbcNotation, setShowAbcNotation,
     setOriginalDetectedKey,
@@ -28,10 +29,10 @@ import {
 } from './state.js';
 
 import { deleteAffordance } from './delete-affordance.js';
+import { listPillModel } from './list-pill.js';
 
 import {
-    goBack,
-    updateListContextClass, updateNavBar,
+    goBack, goToList, listPillEl, listPillDock, prefetchNextInList,
     stopAbcPlayback,
     renderLeadSheetContent, renderChartTabContent,
     chartIsWide, CHART_WIDE_MQ,
@@ -66,10 +67,11 @@ import { registerReturnSource } from './auth-return.js';
 // helpers (tab-controls-sheet, tab-playback-interactions) are NOT imported
 // statically any more: they load on the first tablature render
 // (loadTabRenderKit below), so chord-chart visitors never download them.
+// tab-dock.js (the Display sheet) is one of them.
 import {
     TimelineTiming, identityTimeline, readingListTimeline,
     expandNotation, makePlaybackToVisualMapper,
-    maxMeasureIn, measureTimingFromOtf,
+    maxMeasureIn, measureTimingFromOtf, quartersPerBeat,
     analyzeReadingList, prepareCompactNotation, densifyNotation,
     attachOtfDecorations,
     attachChordDiagrams,
@@ -79,9 +81,9 @@ import { clearListView, openNotesSheet } from './lists.js';
 import { showListPicker } from './list-picker.js';
 import { openFlagModal, openFeedbackModal } from './flags.js';
 import { trackSongView, trackSongNotFound } from './analytics.js';
-import { setTopBar, setBottomBand, pill, setChromeAutoHide, openSheet } from './shell.js';
+import { setTopBar, setBottomBand, pill, setChromeAutoHide, holdChrome, openSheet } from './shell.js';
 import { practiceLinks, buildKeyButton, buildDisplayButton, renderDetails, EXPORT_ACTIONS, handleExport } from './song-controls.js';
-import { viewModel, viewControl, sizeControl, readingDock, fillViewSheet } from './song-dock.js';
+import { viewModel, viewControl, sizeControl, tempoControl, readingDock, fillViewSheet } from './song-dock.js';
 import { showToast } from './toast.js';
 import { importTabFile, pickTabFile, chooseTabFile } from './pwa.js';
 import { skippedLine } from './tef-skipped.js';
@@ -110,6 +112,7 @@ let activeEditBand = null;       // bottom band bound to the live editor
 let unregisterTabReturn = null;  // auth-return source for the live tab editor
 let tabAuthoring = null;         // {kind:'add'|'new', part, take, target, otf}
 let takeStatusLine = null;       // "Submitted — live now…" under the take header
+let tabTrackView = null;         // the tab on screen's staves: {ids, leadId, host}; View ▸ Tracks reads it
 let lastHybrid = false;          // the lead sheet holds chords AND ABC (known once it renders; View lists Chords / Notation)
 
 /**
@@ -131,6 +134,7 @@ export function teardownTablatureView() {
     }
     tabEditEntry = null;
     document.body.classList.remove('tab-editing');
+    holdChrome(false);   // a tab that was playing no longer holds the bands up
     destroyTrackRenderers();
     if (tablaturePlayer) {
         tablaturePlayer.stop();
@@ -631,9 +635,6 @@ export async function openWork(workId, options = {}) {
             listHeader.classList.add('hidden');
         }
         clearListView();
-
-        const navBar = document.getElementById('song-nav-bar');
-        if (navBar) navBar.classList.add('hidden');
     }
 
     setCurrentChordpro(null);
@@ -714,12 +715,6 @@ export async function openWork(workId, options = {}) {
         setListContext(null);
     }
 
-    // List context flag for CSS (band offsets above the list nav bar);
-    // chrome auto-hide handles immersion — no mode to enter.
-    if (fromList && listContext) {
-        document.body.classList.add('has-list-context');
-    }
-
     // Analytics
     trackSongView(workId, fromDeepLink ? 'deep_link' : 'search', song.group_id);
     if (typeof gtag === 'function') {
@@ -738,10 +733,9 @@ export async function openWork(workId, options = {}) {
     // be published on; this only adds the take.
     if (addTab) startAddTabMode(addTab);
 
-    updateNavBar();
-    if (fromList) {
-        updateListContextClass();
-    }
+    // The next song is the likeliest next tap: have its chart in memory by
+    // the time the reader gets there.
+    prefetchNextInList(listContext);
 
     // History: list-context pages keep #list/... URLs; everything else gets
     // the canonical #work/... form (old #song links land here too).
@@ -780,7 +774,7 @@ export function renderWorkView() {
     container.appendChild(renderTitleHeader());
 
     // Arrangement bar: whose take of the active instrument you're reading
-    // (filled by renderArrangementBar; empty + hidden for non-tab parts)
+    // (filled by renderTakeHeader; empty + hidden for non-tab parts)
     const arrHost = document.createElement('div');
     arrHost.className = 'arr-host hidden';
     arrHost.id = 'arrangement-host';
@@ -792,7 +786,7 @@ export function renderWorkView() {
     content.id = 'work-part-content';
     container.appendChild(content);
 
-    renderArrangementBar();
+    renderTakeHeader();
 
     if (activePart) {
         renderActivePart(content, isInitial);
@@ -801,6 +795,7 @@ export function renderWorkView() {
         }
     } else {
         content.appendChild(buildPlaceholderCta(false));
+        setBottomBand(listPillDock());   // nothing to control, but a list still steps
     }
 
     // Bounty section: the "help complete this song" surface. Shown for
@@ -820,11 +815,13 @@ export function renderWorkView() {
  * Render the active part into the content area.
  */
 function renderActivePart(content, isInitial = false) {
+    // Until the part draws its own dock (or for one that has none: a PDF, a
+    // song still loading), a set list still steps
+    setBottomBand(listPillDock());
     if (activePart.type === 'tablature') {
         renderTablaturePart(activePart, content);
     } else if (activePart.type === 'document') {
         renderDocumentPart(activePart, content);
-        setBottomBand(null);
     } else {
         // lead-sheet (chordpro, possibly with embedded ABC notation), or the
         // chord chart tab, which needs the same ChordPro for its key and lyrics
@@ -850,7 +847,7 @@ function fetchAndRenderLeadSheet(container, isInitial = false) {
     const arrangement = activeLeadSheetArrangement();
 
     container.innerHTML = '<div class="part-loading">Loading song…</div>';
-    setBottomBand(null);
+    setBottomBand(listPillDock());
 
     getArrangementContent(work, arrangement).then(text => {
         // Bail if the reader has navigated on (or switched arrangements)
@@ -917,9 +914,9 @@ function selectPart(part) {
     setBottomBand(null);
 
     activePart = part;
-    part.arrangementsOpen = false;   // never hand over an open catalog
+    activeTrackView = null;          // each part starts on its own lead track
 
-    renderArrangementBar();
+    renderTakeHeader();
 
     const content = document.getElementById('work-part-content');
     if (content) {
@@ -1036,15 +1033,19 @@ function renderTitleHeader() {
 }
 
 // ============================================
-// ARRANGEMENT BAR (which take of this instrument you're reading)
+// TAKE HEADER (whose take of this instrument you're reading)
 // ============================================
+//
+// One credit line under the title, "Banjo tab by schlange · Banjo Hangout ★",
+// and the status notices under it. Which take you are reading is chosen in
+// View ▸ Tabs (the takes drill-in); nothing else on the page lists them.
 
-/** Human "Intermediate · Open G · Banjo Hangout" for one arrangement. */
-function arrangementMeta(arr, { withSource = true } = {}) {
+/** Human "Intermediate · Banjo Hangout" for one arrangement. */
+function arrangementMeta(arr, { withSource = true, withTuning = true } = {}) {
     return [
         arr.provisional ? 'unsaved' : null,
         arr.pending ? 'just submitted' : null,
-        arr.difficulty, arr.tuning,
+        arr.difficulty, withTuning ? arr.tuning : null,
         withSource ? prettySource(arr.source) : null,
     ].filter(Boolean).join(' · ');
 }
@@ -1056,15 +1057,27 @@ function arrangementWho(arr) {
     return arr.author || arr.label || (arr.pending ? 'New submission' : 'Unattributed');
 }
 
+/** The take rows View ▸ Tabs drills into, as plain data. */
+function takesOf(part) {
+    const index = part.arrangementIndex || 0;
+    return (part.arrangements || []).map((arr, i) => ({
+        index: i,
+        who: arrangementWho(arr),
+        source: prettySource(arr.source),
+        pinned: i === 0,           // sorted default-first at build time
+        on: i === index,
+    }));
+}
+
 /**
- * Render (or clear) the arrangement bar into its host. Shown for tablature
- * parts only: a one-line byline when there's a single take, a clickable
- * summary + expandable catalog when there's more than one.
+ * Render (or clear) the take header into its host: the credit line for the
+ * take on screen, then the submission / import status. Shown for tablature
+ * parts only.
  *
  * The chosen arrangement is page state, NOT a URL segment — shared links
  * stay instrument-shaped and survive a re-pin.
  */
-function renderArrangementBar() {
+function renderTakeHeader() {
     const host = document.getElementById('arrangement-host');
     if (!host) return;
     host.innerHTML = '';
@@ -1077,128 +1090,59 @@ function renderArrangementBar() {
     }
     host.classList.remove('hidden');
 
+    const cur = arrangements[part.arrangementIndex || 0];
+    const meta = arrangementMeta(cur, { withTuning: false });
+    const kind = String(part.label || 'Tab').replace(/\s+tab$/i, '');
+    const credit = document.createElement('div');
+    credit.className = 'arr-credit';
+    credit.innerHTML = `${escapeHtml(kind)} tab by <span class="arr-who">${escapeHtml(arrangementWho(cur))}</span>`
+        + (meta ? ` <span class="arr-meta">· ${escapeHtml(meta)}</span>` : '')
+        + (!part.arrangementIndex ? ' <span class="arr-pin" title="Editor\'s pick" aria-label="Editor\'s pick">★</span>' : '');
+    host.appendChild(credit);
+
     // "Submitted — live now, appears in search after the next build."
     // The take header is where a submission's status belongs: the reader is
     // looking at the take it is about, on the page it was submitted from.
-    const renderStatusLine = () => {
-        if (!takeStatusLine) return;
-        const line = document.createElement('div');
-        line.className = 'arr-status';
-        line.textContent = takeStatusLine;
-        // G15e: what the opened .tef held that the book does not keep, inside
-        // the same box so there is still one `.arr-status`.
-        if (tabAuthoring?.skippedLine) {
-            const skipped = document.createElement('div');
-            skipped.className = 'arr-skipped';
-            skipped.textContent = tabAuthoring.skippedLine;
-            line.appendChild(skipped);
-        }
-        host.appendChild(line);
-    };
-
-    const index = part.arrangementIndex || 0;
-    const cur = arrangements[index];
-    const single = arrangements.length === 1;
-    const meta = arrangementMeta(cur);
-    const isPinned = i => i === 0;   // sorted default-first at build time
-
-    const summary = document.createElement(single ? 'div' : 'button');
-    summary.className = 'arr-bar' + (single ? ' is-single' : '');
-    if (!single) {
-        summary.type = 'button';
-        summary.setAttribute('aria-expanded', String(!!part.arrangementsOpen));
-        summary.setAttribute('aria-controls', 'arr-list');
+    if (!takeStatusLine) return;
+    const line = document.createElement('div');
+    line.className = 'arr-status';
+    line.textContent = takeStatusLine;
+    // G15e: what the opened .tef held that the book does not keep, inside
+    // the same box so there is still one `.arr-status`.
+    if (tabAuthoring?.skippedLine) {
+        const skipped = document.createElement('div');
+        skipped.className = 'arr-skipped';
+        skipped.textContent = tabAuthoring.skippedLine;
+        line.appendChild(skipped);
     }
-    summary.innerHTML = `
-        ${isPinned(index) ? '<span class="arr-pin" title="Editor\'s pick">★</span>' : ''}
-        <span class="arr-who">${escapeHtml(arrangementWho(cur))}</span>
-        ${meta ? `<span class="arr-meta">${escapeHtml(meta)}</span>` : ''}
-        ${single ? '' : `<span class="arr-count">${arrangements.length} arrangements ${
-            part.arrangementsOpen ? '▴' : '▾'}</span>`}
-    `;
-    host.appendChild(summary);
-    renderStatusLine();
-
-    if (single) return;
-
-    summary.addEventListener('click', () => {
-        part.arrangementsOpen = !part.arrangementsOpen;
-        renderArrangementBar();
-        if (part.arrangementsOpen) {
-            document.querySelector('#arr-list .arr-item.is-selected')?.focus();
-        } else {
-            document.querySelector('.arr-bar')?.focus();
-        }
-    });
-
-    if (!part.arrangementsOpen) return;
-
-    const list = document.createElement('div');
-    list.className = 'arr-list';
-    list.id = 'arr-list';
-    list.setAttribute('role', 'listbox');
-    list.setAttribute('aria-label', `${part.label || 'Tab'} arrangements`);
-
-    arrangements.forEach((arr, i) => {
-        const item = document.createElement('button');
-        item.type = 'button';
-        item.className = 'arr-item' + (i === index ? ' is-selected' : '');
-        item.setAttribute('role', 'option');
-        item.setAttribute('aria-selected', String(i === index));
-        const rowMeta = arrangementMeta(arr, { withSource: false });
-        item.innerHTML = `
-            <span class="arr-pin" ${isPinned(i)
-                ? 'title="Editor&#39;s pick" aria-label="Editor&#39;s pick">★' : '>'}</span>
-            <span class="arr-who">${escapeHtml(arrangementWho(arr))}</span>
-            ${rowMeta ? `<span class="arr-meta">${escapeHtml(rowMeta)}</span>` : ''}
-            <span class="arr-src">${escapeHtml(prettySource(arr.source))}</span>
-        `;
-        item.addEventListener('click', () => selectArrangement(part, i));
-        list.appendChild(item);
-    });
-
-    // Roving arrows inside the catalog; Esc closes it. Enter/Space are the
-    // buttons' own defaults.
-    list.addEventListener('keydown', (e) => {
-        const items = [...list.querySelectorAll('.arr-item')];
-        const at = items.indexOf(document.activeElement);
-        if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
-            e.preventDefault();
-            const next = e.key === 'ArrowDown' ? at + 1 : at - 1;
-            items[(next + items.length) % items.length]?.focus();
-        } else if (e.key === 'Escape') {
-            e.preventDefault();
-            part.arrangementsOpen = false;
-            renderArrangementBar();
-            document.querySelector('.arr-bar')?.focus();
-        }
-    });
-
-    host.appendChild(list);
+    host.appendChild(line);
 }
 
 /**
- * Load a different arrangement of the active instrument: swap the rendered
- * tab (and with it the mixer, player and attribution, which all read the
- * part's arrangement fields) while leaving the URL alone.
+ * Load a different arrangement of an instrument (View ▸ Tabs ▸ takes): swap
+ * the rendered tab (and with it the mixer, player and attribution, which all
+ * read the part's arrangement fields) while leaving the URL alone. Another
+ * instrument's take opens that part on it.
  */
-function selectArrangement(part, index) {
-    const changed = applyArrangement(part, index);
-    part.arrangementsOpen = false;
-
-    if (changed) {
-        teardownTablatureView();
-        setBottomBand(null);
-        setLoadedTablature(null);   // force a fetch of the new OTF
-        const content = document.getElementById('work-part-content');
-        if (content) {
-            content.innerHTML = '';
-            renderActivePart(content, false);
-        }
+function pickTake(partId, index) {
+    const part = availableParts.find(p => p.partId === partId);
+    if (!part) return;
+    if (part !== activePart) {
+        applyArrangement(part, index);
+        selectPart(part);
+        return;
     }
-
-    renderArrangementBar();
-    document.querySelector('.arr-bar')?.focus();
+    if (!applyArrangement(part, index)) return;
+    teardownTablatureView();
+    setBottomBand(null);
+    setLoadedTablature(null);   // force a fetch of the new OTF
+    activeTrackView = null;
+    renderTakeHeader();
+    const content = document.getElementById('work-part-content');
+    if (content) {
+        content.innerHTML = '';
+        renderActivePart(content, false);
+    }
 }
 
 /**
@@ -1244,8 +1188,10 @@ function hasVersions() {
 /** What View offers this song right now. `ctx` is what the lead sheet knows when it renders. */
 function currentViewModel(ctx = {}) {
     if (ctx.hybrid !== undefined) lastHybrid = ctx.hybrid;
+    for (const p of availableParts) if (p.type === 'tablature') p.takes = takesOf(p);
     return viewModel({
         parts: availableParts,
+        tracks: activePart?.type === 'tablature' ? trackChoices() : [],
         active: activePart,
         hybrid: lastHybrid,
         abcShown: showAbcNotation,
@@ -1288,6 +1234,30 @@ function pickTab(partId) {
     selectPart(availableParts.find(p => p.partId === partId));
 }
 
+/** View ▸ Tracks: one staff at a time, or All. Sight only; the mixer decides what you hear. */
+function trackChoices() {
+    if (!tabTrackView || tabTrackView.ids.length < 2) return [];
+    const current = activeTrackView ?? tabTrackView.leadId;
+    return [
+        ...tabTrackView.ids.map(id => ({ id, label: id, on: id === current })),
+        { id: 'all', label: 'All', on: current === 'all' },
+    ];
+}
+
+/** Show the tab's staves the reader chose: every section's visibility follows `activeTrackView`. */
+function applyTrackView() {
+    if (!tabTrackView) return;
+    const current = activeTrackView ?? tabTrackView.leadId;
+    for (const section of tabTrackView.host.querySelectorAll('.tablature-track-section')) {
+        section.style.display = (current === 'all' || section.dataset.trackId === current) ? 'block' : 'none';
+    }
+}
+
+function pickTrack(id) {
+    activeTrackView = id;
+    applyTrackView();
+}
+
 /**
  * The View sheet (frame 9): the choices, the versions with their votes and
  * badges, and the other parts. Opened by the dock's View ▾ on every part.
@@ -1297,8 +1267,11 @@ function openViewSheet(opener) {
     openSheet({
         id: 'song-view-sheet', title: 'View', opener,
         build: (content, sheet) => fillViewSheet(content, model, {
+            title: sheet.el.querySelector('.notes-sheet-title'),
             onPick: (id) => { sheet.close(); pickView(id); },
             onPickTab: (partId) => { sheet.close(); pickTab(partId); },
+            onPickTake: (partId, index) => { sheet.close(); pickTake(partId, index); },
+            onPickTrack: (id) => { sheet.close(); pickTrack(id); },
             renderVersions: (host) => {
                 const versions = currentGroupVersions.length ? currentGroupVersions : [currentWork];
                 host.innerHTML = '<div class="arrangement-loading">Loading…</div>';
@@ -1312,6 +1285,9 @@ function openViewSheet(opener) {
     });
 }
 
+// Below this width a set list's pill leaves no room for Lyrics | Chart in the dock
+const LIST_NARROW_MQ = '(max-width: 560px)';
+
 /** Key · Size · View · Display, for the lyric sheet and the chart. */
 function buildReadingDock(ctx) {
     if (currentWork.provisional) return null;
@@ -1320,12 +1296,15 @@ function buildReadingDock(ctx) {
         canStep: (dir) => fontSizeLevel + dir >= -5 && fontSizeLevel + dir <= 6,
         step: (dir) => setFontSizeLevel(fontSizeLevel + dir),
     });
-    const view = viewControl(currentViewModel(ctx), { onPick: pickView, onOpen: openViewSheet });
+    // The pill and the segments do not both fit on a phone: in a list, View is the sheet
+    const model = currentViewModel(ctx);
+    const crowded = model.kind === 'segmented' && listPillModel(listContext) && window.matchMedia?.(LIST_NARROW_MQ).matches;
+    const view = viewControl(crowded ? { ...model, kind: 'sheet' } : model, { onPick: pickView, onOpen: openViewSheet });
     const display = buildDisplayButton(() => ({
         hasChart: !!song.chord_chart && !songHasAbc(song),
         wide: chartIsWide(),
     }));
-    return readingDock(buildKeyButton(song), size, view, display);
+    return readingDock(listPillEl(), buildKeyButton(song), size, view, display);
 }
 
 const dockProvider = {
@@ -1886,8 +1865,10 @@ export function updateWorkTopBar() {
         });
     }
 
+    // Opened from a set list: ← names the list and goes back to it
+    const inList = listPillModel(listContext);
     setTopBar({
-        back: { onClick: goBack },
+        back: inList ? { onClick: goToList, label: inList.listName || 'List' } : { onClick: goBack },
         // No title here: the page h1 is directly below the band and a
         // duplicate reads as clutter (owner feedback).
         title: null,
@@ -2498,9 +2479,10 @@ function loadTabRenderKit() {
         import('./renderers/tab-player.js'),
         import('./tab-controls-sheet.js'),
         import('./tab-playback-interactions.js'),
-    ]).then(([{ TabRenderer }, { TabPlayer }, { attachTabControlsSheet }, interactions]) => {
+        import('./tab-dock.js'),
+    ]).then(([{ TabRenderer }, { TabPlayer }, { attachTabControlsSheet }, interactions, tabDock]) => {
         tabRenderKit = {
-            TabRenderer, TabPlayer, attachTabControlsSheet,
+            TabRenderer, TabPlayer, attachTabControlsSheet, tabDock,
             attachTabPlaybackInteractions: interactions.attachTabPlaybackInteractions,
             playbackTickForPoint: interactions.playbackTickForPoint,
             playbackRangeForMeasures: interactions.playbackRangeForMeasures,
@@ -2575,15 +2557,12 @@ async function renderTablaturePart(part, container) {
         const controls = createTablatureControls(otf, part);
         setBottomBand(controls);
 
-        // Track VIEW tabs (which staff you see; audio = mixer/Solo).
-        // One visible track at a time kills the nested-scroll fights and
-        // the 'cursors in different places' confusion — plus [All] for
-        // the stacked view. (True score view — every instrument's same
-        // measures aligned in one system — needs cross-track measure
-        // widths and is queued in the handoff.)
-        const trackTabsBar = document.createElement('div');
-        trackTabsBar.className = 'track-view-tabs';
-        container.appendChild(trackTabsBar);
+        // Which staff you see is View ▸ Tracks (audio = the Display sheet's
+        // mixer, and Solo). One visible track at a time kills the
+        // nested-scroll fights and the 'cursors in different places'
+        // confusion, plus All for the stacked view. (True score view, every
+        // instrument's same measures aligned in one system, needs cross-track
+        // measure widths and is queued in the handoff.)
 
         // Create container for all tracks
         const allTracksContainer = document.createElement('div');
@@ -2682,39 +2661,15 @@ async function renderTablaturePart(part, container) {
             allTracksContainer.appendChild(trackSection);
 
             const renderer = new tabRenderKit.TabRenderer(tabContainer);
+            renderer.setScale(tabScale);   // before the first draw, so it does not lay out twice
             renderer.render(track, notation, ticksPerBeat, timeSignature, timings.visual);
             trackRenderers[track.id] = renderer;
             viewIds.push(track.id);
         }
 
-        // Populate the view tabs from every track that owns a section
-        if (viewIds.length > 1) {
-            const current = activeTrackView ?? leadTrackId;
-            // Labelled so it reads as "which staff am I looking at", not as
-            // an unexplained row of instrument names next to the Sound row.
-            trackTabsBar.innerHTML = [
-                '<span class="track-view-label">View track</span>',
-                ...viewIds.map(id => `
-                    <button class="track-view-tab${id === current ? ' active' : ''}"
-                            data-view="${id}">${escapeHtml(id)}</button>`),
-                `<button class="track-view-tab${current === 'all' ? ' active' : ''}"
-                         data-view="all">All</button>`,
-            ].join('');
-            trackTabsBar.addEventListener('click', (e) => {
-                const btn = e.target.closest('.track-view-tab');
-                if (!btn) return;
-                activeTrackView = btn.dataset.view;
-                trackTabsBar.querySelectorAll('.track-view-tab').forEach(b =>
-                    b.classList.toggle('active', b === btn));
-                for (const section of allTracksContainer.querySelectorAll('.tablature-track-section')) {
-                    section.style.display =
-                        (activeTrackView === 'all' || section.dataset.trackId === activeTrackView)
-                            ? 'block' : 'none';
-                }
-            });
-        } else {
-            trackTabsBar.remove();
-        }
+        // View ▸ Tracks lists every track that owns a section
+        tabTrackView = { ids: viewIds, leadId: leadTrackId, host: allTracksContainer };
+        controls.querySelector('.tab-view-btn')?.classList.toggle('hidden', currentViewModel().kind === 'none');
 
         // Track checkboxes control AUDIO only — the view tabs decide
         // what you SEE. Default: the lead track sounds. Toggles apply
@@ -2728,12 +2683,22 @@ async function renderTablaturePart(part, container) {
             });
         });
 
+        // These two redraw the tab and rebuild the band, so the Display
+        // sheet they were pressed in is rebuilt on the new band: its
+        // controls are the new ones, and the old ones are gone.
+        const redraw = () => {
+            const reopen = !!document.getElementById('dock-display-sheet');
+            renderTablaturePart(part, container).then(() => {
+                if (reopen) document.getElementById('dock-display-btn')?.click();
+            });
+        };
+
         // Wire up repeat notation buttons (re-renders with repeat signs
         // or unrolled)
         controls.querySelectorAll('.tab-repeat-group .pill-mode-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 showRepeatsCompact = btn.dataset.val === 'repeats';
-                renderTablaturePart(part, container);
+                redraw();
             });
         });
 
@@ -2741,7 +2706,7 @@ async function renderTablaturePart(part, container) {
         controls.querySelectorAll('.tab-feel-group .pill-mode-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 twoFeelMode = btn.dataset.val === 'two';
-                renderTablaturePart(part, container);
+                redraw();
             });
         });
 
@@ -2983,7 +2948,7 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
 
     // THE BAND SURVIVES. Same controls the reader had a second ago, built
     // from the same document, re-bound to the editor by bindBandToEditor.
-    const controls = createTablatureControls(otf, part);
+    const controls = createTablatureControls(otf, part, { editing: true });
     setBottomBand(controls);
 
     // The session's buttons take the ✏️ Edit button's slot in the band; the
@@ -3092,7 +3057,7 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
                 // The take header carries the submission's status (and its
                 // pending badge) — it is drawn outside the part content, so
                 // it has to be re-rendered alongside it.
-                renderArrangementBar();
+                renderTakeHeader();
                 renderTablaturePart(part, container);
             }
         },
@@ -3467,17 +3432,31 @@ function landSubmittedTake(result, part, container) {
     window.refreshPendingSongs?.();
 }
 
+function bandQuartersPerBeat(otf) {
+    return quartersPerBeat(otf.metadata?.time_signature, twoFeelMode ? 'two' : null);
+}
+
 /**
- * Create tablature controls
+ * Create tablature controls: the band the tab page mounts in the bottom band.
+ *
+ * Reading (the default) is the tab dock (tab-dock.js): ▶ · Tempo · View ·
+ * Display, with Size, Play in, Layout, Feel, Practice, Tracks and Auto-hide
+ * in the Display sheet. The controls that live in the sheet are built here
+ * and parked in a hidden `.tab-display-store`; the sheet moves them out and
+ * back, so setupTablaturePlayer wires each once.
+ *
+ * `editing` is the tab EDITOR's band (G17), unchanged: the old one-row band
+ * (Play, Stop, tempo, loop ... ⚙ on a phone) that bindBandToEditor re-binds
+ * and adds Submit and Done to.
  */
-function createTablatureControls(otf, part) {
+function createTablatureControls(otf, part, { editing = false } = {}) {
     const quarterBpm = (tempoOverride && tempoOverride.workId === currentWork?.id)
         ? tempoOverride.quarterBpm
         : (otf.metadata?.tempo || 100);
-    // Displayed BPM is per BEAT of the current feel: in two feel (cut
-    // time) the beat is a half note, so the same absolute speed shows
-    // as half the number (240 quarters == 120 in cut time).
-    const defaultTempo = Math.round(quarterBpm / (twoFeelMode ? 2 : 1));
+    // Displayed BPM is per BEAT: in a written 2/2 or two feel (cut time)
+    // the beat is a half note, so the same absolute speed shows as half
+    // the number (240 quarters == 120 in cut time).
+    const defaultTempo = Math.round(quarterBpm / bandQuartersPerBeat(otf));
     const originalKey = currentWork.key || 'G';
 
     // Percussion is dropped up front: it has no tuning to sound (otf-tracks.js)
@@ -3515,10 +3494,11 @@ function createTablatureControls(otf, part) {
     ` : '';
 
     const hasReadingList = otf.reading_list && otf.reading_list.length > 0;
+    const grp = editing ? 'qc-group ' : '';   // the editing band's boxed segmented look; the Display sheet's are plain
     // Segmented buttons, not native selects — mobile browsers float select
     // menus over the band at odd sizes; buttons match the pill design.
     const repeatToggleHtml = hasReadingList ? `
-        <div class="qc-group pill-mode-group tab-repeat-group" title="Repeat notation: unrolled or repeat signs">
+        <div class="${grp}pill-mode-group tab-repeat-group" title="Repeat notation: unrolled or repeat signs">
             <button class="pill-mode-btn ${showRepeatsCompact ? '' : 'active'}" data-val="unrolled">Unrolled</button>
             <button class="pill-mode-btn ${showRepeatsCompact ? 'active' : ''}" data-val="repeats">Repeats</button>
         </div>
@@ -3527,14 +3507,43 @@ function createTablatureControls(otf, part) {
     // Feel selector (4/4 tunes only): explicit buttons, no ambiguous
     // toggle state
     const feelToggleHtml = (otf.metadata?.time_signature || '4/4') === '4/4' ? `
-        <div class="qc-group pill-mode-group tab-feel-group" title="Rhythmic feel: quarter-note pulse or cut time (BPM counts the feel's beat)">
+        <div class="${grp}pill-mode-group tab-feel-group" title="Rhythmic feel: quarter-note pulse or cut time (BPM counts the feel's beat)">
             <button class="pill-mode-btn ${twoFeelMode ? '' : 'active'}" data-val="four">Four feel</button>
             <button class="pill-mode-btn ${twoFeelMode ? 'active' : ''}" data-val="two">Two feel</button>
         </div>
     ` : '';
 
+    // Key state: which key the capo plays in. The tab's frets never move.
+    const keys = CHROMATIC_MAJOR_KEYS;
+    const origIdx = Math.max(0, keys.indexOf(originalKey));
+    let keyIdx = origIdx;
+    const capoOf = (i) => (i - origIdx + 12) % 12;
+    const changeListeners = [];
+    let onKeySet = () => {};
+    const setKeyIdx = (i) => {
+        keyIdx = Math.max(0, Math.min(keys.length - 1, i));
+        onKeySet();
+        changeListeners.forEach(cb => cb());
+    };
+
     const controls = document.createElement('div');
     controls.className = 'tab-controls';
+    // Exposes a tiny API on the controls element so setupTablaturePlayer can
+    // read the capo and step keys, and the Display sheet can draw the keys.
+    controls._tabKey = {
+        get capo() { return capoOf(keyIdx); },
+        get index() { return keyIdx; },
+        keys, origKey: keys[origIdx], capoFor: capoOf,
+        set: setKeyIdx,
+        step: (delta) => setKeyIdx(keyIdx + delta),
+        onChange: (cb) => changeListeners.push(cb),
+    };
+
+    if (!editing) {
+        buildTabDock(controls, { defaultTempo, trackMixerHtml, repeatToggleHtml, feelToggleHtml });
+        return controls;
+    }
+
     controls.innerHTML = `
         <div class="qc-group tab-size-group">
             <button class="tab-size-down qc-btn" title="Decrease size">−</button>
@@ -3572,15 +3581,7 @@ function createTablatureControls(otf, part) {
         ${trackMixerHtml}
     `;
 
-    // Key picker: a pill with a drop-up key grid (replaces the native
-    // select). Exposes a tiny API on the controls element so
-    // setupTablaturePlayer can read the capo and step keys.
-    const keys = CHROMATIC_MAJOR_KEYS;
-    const origIdx = Math.max(0, keys.indexOf(originalKey));
-    let keyIdx = origIdx;
-    const capoOf = (i) => (i - origIdx + 12) % 12;
-    const changeListeners = [];
-
+    // Key picker: a pill with a drop-up key grid (replaces the native select)
     const keyPill = pill(keys[keyIdx], (pop, api) => {
         pop.innerHTML = `<div class="pill-key-grid">${keys.map((k, i) => `
             <button class="pill-key-btn ${i === keyIdx ? 'active' : ''}" data-idx="${i}"
@@ -3592,36 +3593,75 @@ function createTablatureControls(otf, part) {
             });
         });
     }, { className: 'tab-key-pill', title: 'Select key' });
-
-    const setKeyIdx = (i) => {
-        keyIdx = Math.max(0, Math.min(keys.length - 1, i));
+    onKeySet = () => {
         keyPill.pillApi.setLabel(keys[keyIdx]);
         keyPill.pillApi.refresh();
-        changeListeners.forEach(cb => cb());
     };
-
     controls.querySelector('.tab-key-slot').replaceWith(keyPill);
-    controls._tabKey = {
-        get capo() { return capoOf(keyIdx); },
-        step: (delta) => setKeyIdx(keyIdx + delta),
-        onChange: (cb) => changeListeners.push(cb),
-    };
-
-    // View ▾ ends the band and stays out of the ⚙ collapse (G19b): with the
-    // part tabs gone, it is how a tab page reaches the lyrics and other parts.
-    const viewModelHere = currentViewModel();
-    if (viewModelHere.kind !== 'none') {
-        const viewBtn = viewControl({ ...viewModelHere, kind: 'sheet' }, { onPick: pickView, onOpen: openViewSheet });
-        viewBtn.classList.add('tab-view-btn');
-        controls.appendChild(viewBtn);
-    }
 
     // Phone: everything but Play/Stop/tempo/loop moves into a ⚙ sheet. The
-    // nodes stay descendants of `controls`, so the querySelector wiring in
-    // setupTablaturePlayer (which runs after this) is unaffected.
+    // nodes stay descendants of `controls`, so bindBandToEditor's
+    // querySelector wiring (which runs after this) is unaffected.
     tabRenderKit.attachTabControlsSheet(controls);
 
     return controls;
+}
+
+/**
+ * The reading dock's DOM (tab-dock.js has the Display sheet). `controls` is
+ * the empty `.tab-controls`; the controls the sheet holds go in the store.
+ */
+function buildTabDock(controls, { defaultTempo, trackMixerHtml, repeatToggleHtml, feelToggleHtml }) {
+    const { PLAY } = tabRenderKit.tabDock;
+    controls.classList.add('tab-dock', 'reading-dock');
+    controls.innerHTML = `
+        <button type="button" class="tab-play-btn dock-play" aria-label="Play" title="Play">${PLAY}</button>
+        <button type="button" class="tab-stop-btn dock-stop" aria-label="Stop" title="Stop" disabled>⏹</button>
+        <span data-slot="tempo"></span>
+        <span class="tab-position" aria-live="off"></span>
+        <div class="tab-display-store" hidden>
+            <label class="tab-loop-toggle" title="Loop the whole song">
+                <input type="checkbox" class="tab-loop-checkbox">
+                <span class="tab-loop-label">Loop</span>
+            </label>
+            <label class="tab-metronome-toggle">
+                <input type="checkbox" class="tab-metronome-checkbox">
+                <span class="tab-metronome-icon">Metronome</span>
+            </label>
+            <label class="tab-countin-toggle" title="Count-in before looped phrases">
+                <input type="checkbox" class="tab-countin-checkbox" checked>
+                <span class="tab-countin-label">Count-in 1·2·3·4</span>
+            </label>
+            ${repeatToggleHtml}
+            ${feelToggleHtml}
+            <span class="tab-capo-indicator"></span>
+            ${trackMixerHtml}
+        </div>`;
+    const tempo = tempoControl({
+        n: defaultTempo,
+        display: { className: 'tab-tempo-display' },
+        down: { className: 'tab-tempo-down' },
+        up: { className: 'tab-tempo-up' },
+    });
+    tempo.classList.add('tab-tempo-group');
+    controls.querySelector('[data-slot="tempo"]').replaceWith(tempo);
+
+    // Opened from a set list: the pill leads the dock, and Tempo is a chip
+    // that opens its stepper, so everything still fits at 360px
+    const pill = listPillEl();
+    let tempoSlot = tempo;
+    if (pill) {
+        controls.prepend(pill);
+        tempoSlot = tabRenderKit.tabDock.buildTempoChip(controls);
+    }
+    controls._tabDisplay = { size: null };   // setupTablaturePlayer fills in Size
+
+    // View ▾ always shows the tab's own choices; renderTablaturePart hides it
+    // when this work has nothing to choose (one part, one take, one track).
+    const viewBtn = viewControl({ ...currentViewModel(), kind: 'sheet' }, { onPick: pickView, onOpen: openViewSheet });
+    viewBtn.classList.add('tab-view-btn');
+    const display = tabRenderKit.tabDock.buildDisplayControl(controls);
+    tempoSlot.after(viewBtn, display);
 }
 
 /**
@@ -3644,16 +3684,14 @@ function setupTablaturePlayer(otf, controls, renderer) {
     const tempoDown = controls.querySelector('.tab-tempo-down');
     const tempoUp = controls.querySelector('.tab-tempo-up');
     const tabKey = controls._tabKey;
-    const keyDown = controls.querySelector('.tab-key-down');
-    const keyUp = controls.querySelector('.tab-key-up');
     const capoIndicator = controls.querySelector('.tab-capo-indicator');
     const metronomeCheckbox = controls.querySelector('.tab-metronome-checkbox');
-    const sizeDown = controls.querySelector('.tab-size-down');
-    const sizeUp = controls.querySelector('.tab-size-up');
+    // The mixer lives in the Display sheet while it is open: hold the node, not a query from the band
+    const mixer = controls.querySelector('.tab-track-mixer');
+    const { PLAY, PAUSE, PLAY_LOOP, playInNote } = tabRenderKit.tabDock;
 
     let currentTempo = parseInt(tempoDisplay.textContent, 10);
     let currentCapo = 0;
-    let currentScale = 1.0;
 
     // Map playback ticks to visual ticks for compact mode: playback follows
     // the unrolled reading list while the display shows written measures.
@@ -3675,24 +3713,23 @@ function setupTablaturePlayer(otf, controls, renderer) {
     player.onNoteStart = (absTick) => eachRenderer(r => r.highlightNote(tickMapper(absTick)));
     player.onNoteEnd = (absTick) => eachRenderer(r => r.clearNoteHighlight(tickMapper(absTick)));
 
-    const updateSize = (delta) => {
-        currentScale = Math.max(0.6, Math.min(1.6, currentScale + delta));
-        // Size is a LAYOUT input, not a lens over a fixed drawing: each
-        // renderer re-engraves into (container width / scale) and the CSS
-        // transform scales that back up, so biggie-sizing gives FEWER
-        // measures per row instead of a row that runs off the right edge.
-        // Every track's renderer gets it — the old code set --tab-scale on
-        // `document.querySelector('.tablature-container')`, i.e. the first
-        // staff only, so on a multi-track work the others never changed
-        // size at all. (`renderer.reflow` never existed; that branch was
-        // dead, which is why nothing re-laid out.)
-        for (const r of Object.values(trackRenderers)) r.setScale?.(currentScale);
-        sizeDown.disabled = currentScale <= 0.6;
-        sizeUp.disabled = currentScale >= 1.6;
+    // Size is a LAYOUT input, not a lens over a fixed drawing: each
+    // renderer re-engraves into (container width / scale) and the CSS
+    // transform scales that back up, so biggie-sizing gives FEWER
+    // measures per row instead of a row that runs off the right edge.
+    // Every track's renderer gets it — the old code set --tab-scale on
+    // `document.querySelector('.tablature-container')`, i.e. the first
+    // staff only, so on a multi-track work the others never changed
+    // size at all. It is remembered (its own key, state.js), so a redraw or
+    // the next tab starts at the size the reader chose.
+    const stepScale = (dir) => Math.round((tabScale + dir * 0.1) * 10) / 10;
+    controls._tabDisplay.size = {
+        canStep: (dir) => stepScale(dir) >= TAB_SCALE_MIN - 0.001 && stepScale(dir) <= TAB_SCALE_MAX + 0.001,
+        step: (dir) => {
+            setTabScale(stepScale(dir));
+            for (const r of Object.values(trackRenderers)) r.setScale?.(tabScale);
+        },
     };
-
-    sizeDown?.addEventListener('click', () => updateSize(-0.1));
-    sizeUp?.addEventListener('click', () => updateSize(0.1));
 
     metronomeCheckbox?.addEventListener('change', () => {
         player.metronomeEnabled = metronomeCheckbox.checked;
@@ -3712,7 +3749,7 @@ function setupTablaturePlayer(otf, controls, renderer) {
         // convert the display while keeping the actual speed.
         tempoOverride = {
             workId: currentWork?.id,
-            quarterBpm: currentTempo * (twoFeelMode ? 2 : 1),
+            quarterBpm: currentTempo * bandQuartersPerBeat(otf),
         };
         updateTempoButtons();
     };
@@ -3720,43 +3757,46 @@ function setupTablaturePlayer(otf, controls, renderer) {
     tempoDown?.addEventListener('click', () => setTempo(currentTempo - 5));
     tempoUp?.addEventListener('click', () => setTempo(currentTempo + 5));
 
+    // Play in: a capo for playback (the frets do not move). Key state lives
+    // with createTablatureControls; the Display sheet's keys write it.
     const updateCapoIndicator = () => {
-        capoIndicator.textContent = currentCapo > 0 ? `Capo ${currentCapo}` : '';
+        capoIndicator.textContent = playInNote(currentCapo, tabKey.keys[tabKey.index], tabKey.origKey);
     };
 
-    // Key state lives with the key pill (created in createTablatureControls)
     tabKey?.onChange(() => {
         currentCapo = tabKey.capo;
         updateCapoIndicator();
     });
 
-    keyDown?.addEventListener('click', () => tabKey?.step(-1));
-    keyUp?.addEventListener('click', () => tabKey?.step(1));
-
     // Position updates — also SELF-HEAL the play button from player
     // truth: optimistic UI plus loop restarts and view switches can
     // desync the label from reality (Mike: 'the play button state is
     // lost'). While ticks arrive, the player IS playing.
+    // One place for what "playing" looks like: ⏸ and ⏹ on the dock, and the
+    // bands held up (a playing tab scrolls itself; auto-hide must not take its
+    // Stop away). `armed` is declared below; it is only read when playing stops.
+    const setPlaying = (on) => {
+        playBtn.classList.toggle('playing', on);
+        stopBtn.disabled = !on;
+        playBtn.textContent = on ? PAUSE : (armed?.kind === 'loop' ? PLAY_LOOP : PLAY);
+        playBtn.setAttribute('aria-label', on ? 'Pause' : 'Play');
+        holdChrome(on);
+    };
+
     player.onPositionUpdate = (elapsed, total) => {
         const fmt = (s) => `${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`;
         posEl.textContent = `${fmt(elapsed)} / ${fmt(total)}`;
-        if (!playBtn.classList.contains('playing')) {
-            playBtn.textContent = '⏸ Pause';
-            playBtn.classList.add('playing');
-            stopBtn.disabled = false;
-        }
+        if (!playBtn.classList.contains('playing')) setPlaying(true);
     };
 
     player.onPlaybackEnd = () => {
-        playBtn.textContent = armed?.kind === 'loop' ? '▶ Loop' : '▶ Play';
-        playBtn.classList.remove('playing');
-        stopBtn.disabled = true;
+        setPlaying(false);
         posEl.textContent = '';
         eachRenderer(r => r.resetPlaybackVisualization());
     };
 
     const getEnabledTrackIds = () => {
-        const checkboxes = controls.querySelectorAll('.track-checkbox:checked');
+        const checkboxes = mixer?.querySelectorAll('.track-checkbox:checked') || [];
         if (checkboxes.length === 0) {
             return pitchedTracks(otf.tracks)
                 .filter(t => {
@@ -3773,14 +3813,12 @@ function setupTablaturePlayer(otf, controls, renderer) {
     // ARMED (cursor / phrase); nothing plays on click alone.
     const startPlayback = async (extra = {}) => {
         if (player.isPlaying) player.stop();
-        playBtn.textContent = '⏸ Pause';
-        playBtn.classList.add('playing');
-        stopBtn.disabled = false;
+        setPlaying(true);
         try {
             await player.play(otf, {
                 // Player tempo is quarter-note bpm; the displayed number is
-                // per-beat of the feel, so two feel plays twice as fast.
-                tempo: currentTempo * (twoFeelMode ? 2 : 1),
+                // per-beat, so a half-note pulse plays twice as fast.
+                tempo: currentTempo * bandQuartersPerBeat(otf),
                 transpose: currentCapo,
                 trackIds: getEnabledTrackIds(),
                 feel: twoFeelMode ? 'two' : null,
@@ -3800,11 +3838,7 @@ function setupTablaturePlayer(otf, controls, renderer) {
         }
         // play() can bail (superseded by a newer call, audio context
         // blocked) — reconcile the optimistic button with reality
-        if (!player.isPlaying) {
-            playBtn.classList.remove('playing');
-            stopBtn.disabled = true;
-            updatePlayLabel();
-        }
+        if (!player.isPlaying) setPlaying(false);
     };
 
     // ARM-THEN-PLAY (Mike: clicking/highlighting must not auto-start):
@@ -3815,7 +3849,7 @@ function setupTablaturePlayer(otf, controls, renderer) {
     let armedVisual = null; // {trackId, measure, tick} | {trackId, m0, m1}
     const updatePlayLabel = () => {
         if (player.isPlaying) return;
-        playBtn.textContent = armed?.kind === 'loop' ? '▶ Loop' : '▶ Play';
+        playBtn.textContent = armed?.kind === 'loop' ? PLAY_LOOP : PLAY;
     };
     const disarm = () => {
         armed = null;
@@ -3843,7 +3877,7 @@ function setupTablaturePlayer(otf, controls, renderer) {
         solo.textContent = 'Solo';
         solo.title = 'Hear only this track (click again for all)';
         solo.addEventListener('click', () => {
-            const boxes = [...controls.querySelectorAll('.track-checkbox')];
+            const boxes = [...(mixer?.querySelectorAll('.track-checkbox') || [])];
             const soloed = boxes.every(cb =>
                 cb.checked === (cb.dataset.trackId === trackId));
             for (const cb of boxes) {
@@ -3915,9 +3949,7 @@ function setupTablaturePlayer(otf, controls, renderer) {
         player.unlockAudio();
         if (player.isPlaying) {
             player.stop();
-            updatePlayLabel();
-            playBtn.classList.remove('playing');
-            stopBtn.disabled = true;
+            setPlaying(false);
             eachRenderer(r => r.resetPlaybackVisualization());
         } else if (armed?.kind === 'loop') {
             await startPlayback({
@@ -3933,9 +3965,7 @@ function setupTablaturePlayer(otf, controls, renderer) {
 
     stopBtn.addEventListener('click', () => {
         player.stop();
-        playBtn.textContent = '▶ Play';
-        playBtn.classList.remove('playing');
-        stopBtn.disabled = true;
+        setPlaying(false);
         posEl.textContent = '';
         eachRenderer(r => r.resetPlaybackVisualization());
     });

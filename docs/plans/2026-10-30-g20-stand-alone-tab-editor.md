@@ -104,8 +104,8 @@ remains the backlog's source of truth.
 
 | ID | Piece | Model / effort | Worktree | Status | Checked |
 |----|-------|----------------|----------|--------|---------|
-| G20a | Phone track switcher | Sonnet / medium | `g20a-phone-tracks` | review, merged into the batch 2026-10-30 | diff read; my fix: `--bg-card` (undefined) → `--bg`, checked in dark mode; unit 7 ✓, switcher + tracks e2e 7 ✓ (port 8321); agent: npm 5181 ✓, 42 e2e ✓ |
-| G20b | Tab setup + title sync + front door meter | Sonnet / high | `g20b-tab-setup` | review, merged into the batch 2026-10-30 | diff read (facade setters + rollback, panel, work-view handler, front door `ts` → `create-tab-entry.js` parser, renderer = `export` only); screenshots desktop + phone + refusal; corpus check found 20 works tabs with tempo > 280 → sent back: Apply sends only changed fields (bc08f4b55); batch npm 5275 ✓, pytest 1570 ✓ 1 skip |
+| G20a | Phone track switcher | Sonnet / medium | `g20a-phone-tracks` | done — #348 (2026-10-31) | diff read; my fix: `--bg-card` (undefined) → `--bg`, checked in dark mode; unit 7 ✓, switcher + tracks e2e 7 ✓ (port 8321); agent: npm 5181 ✓, 42 e2e ✓ |
+| G20b | Tab setup + title sync + front door meter | Sonnet / high | `g20b-tab-setup` | done — #348 (2026-10-31) | diff read (facade setters + rollback, panel, work-view handler, front door `ts` → `create-tab-entry.js` parser, renderer = `export` only); screenshots desktop + phone + refusal; corpus check found 20 works tabs with tempo > 280 → sent back: Apply sends only changed fields (bc08f4b55); batch npm 5275 ✓, pytest 1570 ✓ 1 skip |
 
 The batch branch is `feature/g20-stand-alone-editor`. Both pieces merge into
 it, and one PR follows. G19 (the song page docks) is building on
@@ -163,3 +163,13 @@ Whichever PR merges second merges main in and reruns the full e2e.
     - the renderer's tuning-name table; told the G19 session.
 - 2026-10-30 · Batch: `npm test` 5275 ✓, `uv run pytest` 1570 ✓ 1 skip.
   `docs/js/CLAUDE.md` is 245 lines on main (G19b); told the G19 session.
+- 2026-10-30 · PR #348 opened.
+  - Full e2e: 731 of 738. The 7 failures are G19 chrome specs:
+    `topbar-density` was flaky on main (fixed in 3afc8d895), and two
+    `page.goto` timeouts under load passed when re-run alone.
+  - Phone server on port 8095.
+- 2026-10-31 · Mike, on his iPhone: "It works! Fuck yah! Merge."
+  - Merged main in: G19c #349, G21 spec #351 and #352, Old Home Place 2/2
+    #350.
+  - Fix-it conflict resolved: G20 rows → done, G21 row kept.
+  - Full e2e rerun before merging, as agreed with the G19 session.

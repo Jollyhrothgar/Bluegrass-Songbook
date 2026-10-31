@@ -7,7 +7,8 @@ editor), `visual-editor/` (model helpers it uses), `chord-explorer/`.
 Reference files next to this one, each opening with "read before touching X":
 `OFFLINE.md` (service worker, drafts, icons), `CORPUS.md` (index/archive/overlay
 loading, arrangements), `CONTRIBUTIONS.md` (submit/pending flows, sign-in
-return), `TOUR.md` (feature tour).
+return), `TOUR.md` (feature tour), `DOCKS.md` (the bands, the song page's docks and
+sheets).
 
 ## Commands
 
@@ -41,73 +42,17 @@ are for data smoke tests only (`.claude/rules/tests.md`).
 
 ## App shell (`shell.js`)
 
-- `setTopBar({back, title, actions, overflow, navActive})` declares a page's top
-  band; `setBottomBand(el)` mounts practice/playback controls, and in the
-  lead-sheet editor the editor's own (`#editor-band`, via
-  `editor.js::showEditorBand`; see `lead-editor/CLAUDE.md`) (`null` hides);
-  `pill(label, buildContent, opts)` is the labeled popover button (the tab
-  band's capo key and the list export use it; the song page's controls are
-  the dock below). `setChromeAutoHide(true)` hides BOTH bands while scrolling
-  down (`body.chrome-hidden`; CSS slides `#app-topbar` and the song page's
-  bottom band, not the lyrics editor's, and only when the page's dock has
-  `#dock-display-btn`, the switch that turns it off: a tab or ABC page never
-  hides). The shell owns no state, so
-  work-view.js and main.js pass the reader's choice (`autoHideControls`,
-  Display ▸ Auto-hide controls, OFF by default); there is no focus mode.
-  `--topbar-h` is published next to `--bottomband-h`; the chart column sticks
-  under it.
-- **The thin top dock (G19).** `setTopBar({dock: 'song' | 'editor', back:
-  {onClick, label}, actions, menu})` turns `#app-topbar` into ← · BB · [🔍] ·
-  [Edit] · ⋯ and nothing else (CSS `.topbar-dock` hides the nav, bug, theme,
-  tour and account; the elements stay, so supabase-auth and the density
-  ladder keep working). The song page and the lyrics & chords editor use it;
-  every other page keeps the full band. The ⋯ menu is built on open from the
-  page's `menu` groups (work-view.js `updateWorkTopBar`), the site's groups
-  (`setMenuSite`, main.js `siteMenuSections`: Go to, You) and `setOverflowBase`.
-  A row can expand in place (`items`), or be a `segmented` choice (Theme).
-  It is a popover on a wide screen and a sheet over a scrim at 640px (CSS
-  only). A first visit glows ⋯ (`setTourInvite`), not a Tour button. Keep the
-  element and its 48px: `lead-editor/index.js` measures it.
-- **One Edit** is `#edit-song-btn` in that band (work-view.js
-  `handleEditAction`): a placeholder gets the details form, a tab part the tab
-  editor (`tabEditEntry`), anything else the lyrics editor. It hides while the
-  tab editor is open (`body.tab-editing`, which also clears `#song-pill-row`
-  and `#part-tabs`). The writer line `#song-details-btn` opens Details
-  (`openSheet` in shell.js: a bottom sheet on a phone, a centred card on a
-  wide screen, in the notes sheet's CSS), whose "Edit details" is
-  `showMetadataEditor`.
-- **The reading dock (G19b, `song-dock.js`).** The lyric sheet and the chord
-  chart mount `Key: A · Aa − + · Lyrics | Chart · Display` in `#app-bottomband`
-  (ABC notation: `▶ · tempo · Aa − + · View ▾`, no Key or Display). song-view.js
-  draws the part and asks `setDockProvider`'s provider (work-view.js, which
-  knows the parts and versions) for the dock each time it renders, so a dock
-  is rebuilt with every redraw and an open sheet (`openSheet`: Key, Display,
-  View) survives it. `viewModel` (pure, unit tested) decides which View the
-  song has: `none`; `segmented` (lyrics + chart, plus Lyrics + Chart when
-  `chartIsWide()`); or `sheet` (View ▾) once there are versions, tabs or a
-  hybrid ABC + chords part. The sheet lists the choices, Versions
-  (`renderArrangementList`, with votes and badges) and Tabs. A tab part gets a
-  `.tab-view-btn` at the end of its band (kept out of the ⚙ collapse,
-  disabled while the tab editor is open). Chart choices are view prefs in
-  state.js (`chartCells`, `chartBars`, `chartOrder`, `chartBeside`,
-  `autoHideControls`), redrawn by the same subscriber as the other display
-  prefs; the chart's text is em-sized and scales with Size. Size is
-  remembered per kind: text in `songbook-view-prefs`, notation in
-  `bgb-abc-scale` (tab Size joins in G19c). There is no pill row, part tabs,
-  hybrid toggle or Practice mode.
-- The bottom band's height varies (it wraps on narrow windows and the tab band
-  collapses on phones), so `shell.js` publishes its measured height as `--bottomband-h` on `<html>`. Anything stacked on the
-  band (drop-ups, the tab settings sheet, `.container` padding) offsets from that
-  variable, never a literal, and never from `100%` (Chromium does not make
-  `container-type` the containing block for `position: fixed` drop-ups).
-- `tab-controls-sheet.js` collapses the tab band below a band width of 640 px by
-  MOVING (not rebuilding) controls into a gear sheet, so listeners from
-  `setupTablaturePlayer` survive. The width is the band's, not the window's
-  (ResizeObserver sets `.is-narrow-band`; CSS uses `@container tabband`); the
-  `@media` query is only the seed, and tests inject `media` to stop the observer.
-- `tab-edit-band.js::bindBandToEditor` keeps the bottom band alive in edit mode.
-  Controls that cannot work while editing are disabled with a reason
-  (`DISABLED_REASONS`), not removed: a vanished control reads as a bug.
+- `setTopBar({...})` declares a page's top band and `setBottomBand(el)` its
+  bottom band (`null` hides); `pill(label, build, opts)` is the labeled popover
+  button and `openSheet()` the bottom sheet (a centred card on a wide screen).
+  Keep both band elements and their sizes: the lyrics editor and the tour
+  measure them.
+- **Read `DOCKS.md` before touching the bands**: their heights
+  (`--topbar-h`, `--bottomband-h`), auto-hide (`setChromeAutoHide`,
+  `holdChrome`), the song page's thin top dock, ⋯, Details and one Edit, the
+  reading dock (`song-dock.js`), the tab dock (`tab-dock.js`), set lists
+  (`list-pill.js`), and the tab editing band (`tab-controls-sheet.js`,
+  `tab-edit-band.js`).
 
 ## Routing: everything lands in `openWork`
 

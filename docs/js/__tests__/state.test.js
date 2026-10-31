@@ -14,7 +14,7 @@ import {
     historyInitialized, setHistoryInitialized,
     bootRouteClaimed, setBootRouteClaimed, canRouteBootUrl,
     loadViewPrefs, chartCells, setChartCells, chartBars, setChartBars, chartOrder, setChartOrder,
-    chartBeside, setChartBeside, autoHideControls, setAutoHideControls, abcScale, setAbcScale,
+    chartBeside, setChartBeside, autoHideControls, setAutoHideControls, abcScale, setAbcScale, tabScale, setTabScale, TAB_SCALE_KEY,
     ABC_SCALE_KEY
 } from '../state.js';
 
@@ -353,7 +353,7 @@ describe('the song page\'s remembered choices (G19b)', () => {
     beforeEach(() => localStorage.clear());
     afterEach(() => {
         setChartCells(4); setChartBars(1); setChartOrder('once'); setChartBeside(true);
-        setAutoHideControls(false); setAbcScale(1);
+        setAutoHideControls(false); setAbcScale(1); setTabScale(1);
         localStorage.clear();
     });
 
@@ -395,5 +395,20 @@ describe('the song page\'s remembered choices (G19b)', () => {
         localStorage.setItem(ABC_SCALE_KEY, '9');
         loadViewPrefs();
         expect(abcScale).toBe(1.4);   // out of range: kept as it was
+    });
+
+    it('give the tab its own remembered size (G19c), separate from the text and the notation', () => {
+        expect(tabScale).toBe(1);
+        setTabScale(1.3);
+        expect(localStorage.getItem(TAB_SCALE_KEY)).toBe('1.3');
+        expect(localStorage.getItem(ABC_SCALE_KEY)).toBeNull();
+        expect(JSON.parse(localStorage.getItem('songbook-view-prefs') || '{}').fontSizeLevel).toBeUndefined();
+        setTabScale(1);
+        localStorage.setItem(TAB_SCALE_KEY, '0.8');
+        loadViewPrefs();
+        expect(tabScale).toBe(0.8);
+        localStorage.setItem(TAB_SCALE_KEY, '3');
+        loadViewPrefs();
+        expect(tabScale).toBe(0.8);   // out of range: kept as it was
     });
 });

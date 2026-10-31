@@ -49,6 +49,7 @@ import {
     ensureArchiveForRefs
 } from './lists.js';
 import { initSongView, goBack, getCurrentSong, navigatePrev, navigateNext, setListItemRouter } from './song-view.js';
+import { isStepKey, listPillModel } from './list-pill.js';
 import {
     openWork, teardownTablatureView, configureWorkPage, updateWorkTopBar,
     openNewTabPage,
@@ -231,14 +232,6 @@ const landingPage = document.getElementById('landing-page');
 const collectionsGrid = document.getElementById('collections-grid');
 const landingSearchInput = document.getElementById('landing-search-input');
 const logoLink = document.getElementById('logo-link');
-
-// List navigation bar elements
-const exitFullscreenBtn = document.getElementById('exit-fullscreen-btn');
-const navBar = document.getElementById('song-nav-bar');
-const navPrevBtn = document.getElementById('nav-prev-btn');
-const navNextBtn = document.getElementById('nav-next-btn');
-const navPosition = document.getElementById('nav-position');
-const navListName = document.getElementById('nav-list-name');
 
 // Print list button
 const printListBtn = document.getElementById('print-list-btn');
@@ -3409,13 +3402,7 @@ function init() {
         songContent,
         resultsDiv,
         pushHistoryState,
-        showView,
-        // Navigation elements
-        navBar,
-        navPrevBtn,
-        navNextBtn,
-        navPosition,
-        navListName
+        showView
     });
 
     // List navigation router: everything goes through the unified song page
@@ -3447,14 +3434,17 @@ function init() {
         resultsDiv
     });
 
-    const includeDungeonBox = document.getElementById('include-dungeon');
-    if (includeDungeonBox) {
-        includeDungeonBox.checked = includeDungeon;
-        includeDungeonBox.addEventListener('change', () => {
-            setIncludeDungeon(includeDungeonBox.checked);
+    // Two boxes, one choice: the search bar's and the home page's
+    const includeDungeonBoxes = ['include-dungeon', 'landing-include-dungeon']
+        .map(id => document.getElementById(id)).filter(Boolean);
+    includeDungeonBoxes.forEach(box => {
+        box.checked = includeDungeon;
+        box.addEventListener('change', () => {
+            setIncludeDungeon(box.checked);
+            includeDungeonBoxes.forEach(other => { other.checked = box.checked; });
             applySearchScope();
         });
-    }
+    });
 
     // Update URL when user types in search (debounced, uses replaceState to avoid history spam).
     // Skipped if the reader has navigated since typing: a result clicked
@@ -3742,30 +3732,16 @@ function init() {
 // Start the app
 init();
 
-// Exit fullscreen button
-if (exitFullscreenBtn) {
-    // "List" button in the list nav bar: return to the list
-    exitFullscreenBtn.addEventListener('click', () => history.back());
-}
-
 // ============================================
 // KEYBOARD SHORTCUTS
 // ============================================
 
 document.addEventListener('keydown', (e) => {
-    // Don't trigger shortcuts when typing in inputs
-    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
-        return;
-    }
-
-    // Arrow keys for navigation (when viewing a song from a list)
-    if (!songView.classList.contains('hidden')) {
-        if (e.key === 'ArrowLeft') {
-            e.preventDefault();
-            navigatePrev();
-        } else if (e.key === 'ArrowRight') {
-            e.preventDefault();
-            navigateNext();
-        }
-    }
+    // ← / → step through the list the song was opened from (list-pill.js
+    // says which keys count: not typing, not in an editor or a sheet)
+    const step = isStepKey(e);
+    if (!step || songView.classList.contains('hidden') || !listPillModel(listContext)) return;
+    e.preventDefault();
+    if (step === 'prev') navigatePrev();
+    else navigateNext();
 });

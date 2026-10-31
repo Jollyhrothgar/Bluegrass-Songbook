@@ -24,8 +24,8 @@ read those, not a list here. Not obvious from the code:
   source of truth. The Instrument pill uses `tags.js::toggleFacetTag`; other
   surfaces sync through `tags.js::onTagSync(fn)`.
 - Scope: canon by default; `#dungeon` (`dungeonMode`) searches the archive only;
-  the "Include the dungeon" checkbox (`includeDungeon`, localStorage
-  `songbook-include-dungeon`) searches both. `searchableSongs()` decides;
+  the "Include the dungeon" checkbox (on the search bar and the home page;
+  `includeDungeon`, localStorage `songbook-include-dungeon`) searches both. `searchableSongs()` decides;
   `main.js::applySearchScope()` loads the archive when needed.
 - `search_index.py` must match the site's search: `search_gaps.py` replays
   visitors' failed searches through it. Change `search()` in
