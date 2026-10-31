@@ -105,3 +105,24 @@ export async function goToSearch(page) {
     await openMenu(page);
     await page.locator('#menu-go-search').click();
 }
+
+/**
+ * Serve the index without one song's tabs. Old Home Place is the one song with
+ * a chord chart, and a tab turns its View segment (Lyrics | Chart) into View ▾,
+ * so specs of that segment take the tab away. Needs
+ * `test.use({ serviceWorkers: 'block' })`: a service worker's fetches skip page
+ * routes.
+ */
+export async function serveWithoutTabs(page, id) {
+    await page.route('**/data/index.jsonl*', async route => {
+        const response = await route.fetch();
+        const body = (await response.text()).split('\n').map(line => {
+            if (!line.trim()) return line;
+            const row = JSON.parse(line);
+            if (row.id !== id) return line;
+            delete row.tablature_parts;
+            return JSON.stringify(row);
+        }).join('\n');
+        await route.fulfill({ response, body });
+    });
+}
