@@ -149,6 +149,26 @@ Rules:
   lyrics editor's workspace.
 - Belongs to the tab editor session, after G20.
 
+### Folded in: tuning names (renderer)
+
+The tab editor session found this on 2026-10-30, while building G20 Tab setup.
+
+`renderers/tablature.js` names tunings by their note letters, and four
+entries don't match the tunings players mean:
+
+| Entry | Written in the table | What players mean |
+|---|---|---|
+| Banjo Open D | `D-A-D-F#-A` | f#DF#AD, which reads D-A-F#-D-F# |
+| Banjo C | `C-G-C-G-G` | gCGBD, which reads D-B-G-C-G |
+| Banjo Open A | `D-A-E-A-A` | aEAC#E, which reads E-C#-A-E-A |
+| Mandolin DADA | `E-A-D-A` | DADA |
+
+So a tab in one of these tunings prints no name.
+
+- **Fix:** correct the four table entries, in G21c, which already touches the
+  renderer's track header.
+- **Test:** each preset's pitches map to its name.
+
 ## Acceptance (the litmus)
 
 Foggy Mountain Breakdown, ensemble, banjo track, at 390px and 1440px, on the
