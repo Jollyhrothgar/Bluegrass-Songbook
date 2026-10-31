@@ -77,7 +77,7 @@ selectors.
   has started (CSS hides a disabled `.tab-stop-btn` in the dock); the position
   readout rides the dock's top edge; ▶ reads ⏸ while playing and "▶ Loop"
   when a dragged phrase is armed. `#dock-display-btn` opens the Display sheet
-  (`fillDisplaySheet`): Size (`#tab-size`, remembered), Play in (`#tab-play-in`,
+  (`fillDisplaySheet`): Size (`#tab-size`, remembered), Bars per row (G22: `#tab-bars`, `[data-bars=-1|1]` and the middle `#tab-bars-auto`, which reads "Auto (4)" or "5 (auto +1)" and resets; remembered as an OFFSET from the automatic count in `bgb-tab-bars-offset`, state.js `tabBarsOffset`; the renderer re-fits it on resize with `measuresPerRowOffset`, clamps to 1-8 and to `hardMinMeasureWidth`, and says the reachable ends in `rowFit()`; `mountTabEditor` hands the reader's count to the editor as its `measuresPerRow` option so Edit does not reflow), Play in (`#tab-play-in`,
   the twelve keys: a capo for playback, the frets never move), Layout, Feel,
   Practice (Loop, Metronome, Count-in), Tracks (the mixer), Auto-hide. Those
   controls are built with the band, parked in a hidden `.tab-display-store`,

@@ -345,11 +345,23 @@ export const STATES = [
     {
         id: 'tab-settings-sheet',
         group: 'Tab page',
-        title: 'Tab Display sheet (Size, Play in, Layout, Feel, Practice, Tracks, Auto-hide)',
+        title: 'Tab Display sheet (Size, Bars per row, Play in, Layout, Feel, Practice, Tracks, Auto-hide)',
         url: '/#work/foggy-mountain-breakdown/ensemble',
         ready: tabReady,
         setup: openDock('display'),
         workshop: ['F7', 'F4'],
+    },
+    {
+        id: 'tab-bars-per-row',
+        group: 'Tab page',
+        title: 'Tab Display sheet with Bars per row at auto +1 (G22)',
+        url: '/#work/foggy-mountain-breakdown/banjo-tab',
+        ready: tabReady,
+        setup: async (page) => {
+            await openDock('display')(page);
+            await page.locator('#tab-bars [data-bars="1"]').click();
+        },
+        workshop: ['G22'],
     },
     {
         id: 'tab-view-sheet',

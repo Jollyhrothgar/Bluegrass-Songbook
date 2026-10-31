@@ -318,6 +318,10 @@ export class TabRenderer {
                                       // and its beats land under the beats below.
                                       // false = the old proportional width.
             measuresPerRow: 'auto',   // 'auto' or number (1-8)
+            measuresPerRowOffset: 0,  // bars more (+) or fewer (-) than 'auto' picks, re-fitted
+                                      // on every layout (the reader's "Bars per row", G22)
+            hardMinMeasureWidth: 90,  // A chosen count squeezes bars down to here, never
+                                      // past it, so a row cannot run off the side
             leftMargin: 50,
             topMargin: 40,
             stemAreaHeight: 28,
@@ -508,9 +512,10 @@ export class TabRenderer {
 
         if (opt.measuresPerRow !== 'auto') {
             // Fixed measures per row
+            this._rowFit = null;
             this._computedMeasuresPerRow = Math.max(1, Math.min(8, opt.measuresPerRow));
             this._computedMeasureWidth = Math.max(
-                opt.minMeasureWidth,
+                Math.min(opt.minMeasureWidth, opt.hardMinMeasureWidth),
                 Math.min(opt.maxMeasureWidth, availableWidth / this._computedMeasuresPerRow)
             );
             this._applyMeasureWidthFloor(availableWidth);
@@ -518,9 +523,33 @@ export class TabRenderer {
         }
 
         const fit = TabRenderer._autoRowFit(availableWidth, opt);
-        this._computedMeasuresPerRow = fit.measuresPerRow;
-        this._computedMeasureWidth = fit.measureWidth;
+        const auto = fit.measuresPerRow;
+        const most = Math.max(1, Math.min(8, Math.floor(availableWidth / opt.hardMinMeasureWidth)));
+        const count = Math.max(1, Math.min(most, auto + (opt.measuresPerRowOffset || 0)));
+        this._rowFit = { auto, count, offset: count - auto, lo: 1 - auto, hi: Math.max(0, most - auto) };
+        this._computedMeasuresPerRow = count;
+        this._computedMeasureWidth = count === auto ? fit.measureWidth
+            : Math.max(opt.hardMinMeasureWidth, Math.min(opt.maxMeasureWidth, availableWidth / count));
         this._applyMeasureWidthFloor(availableWidth);
+    }
+
+    /**
+     * The reader's bars-per-row choice, as laid out last: the automatic
+     * count, the count in use, the offset actually in effect (the asked-for
+     * one, clamped) and the offsets that can still be reached (`lo`..`hi`).
+     * Null before the first layout, or when `measuresPerRow` is pinned.
+     */
+    rowFit() { return this._rowFit || null; }
+
+    /**
+     * Set the reader's offset from the automatic count and re-lay out.
+     * @param {number} offset - bars more (+) or fewer (-) than auto
+     */
+    setMeasuresPerRowOffset(offset) {
+        const next = Math.round(Number(offset)) || 0;
+        if (next === this.options.measuresPerRowOffset) return;
+        this.options.measuresPerRowOffset = next;
+        if (this._track && this._notation) this._renderInternal();
     }
 
     /**

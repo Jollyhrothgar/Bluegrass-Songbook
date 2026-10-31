@@ -14,7 +14,7 @@ import {
     historyInitialized, setHistoryInitialized,
     bootRouteClaimed, setBootRouteClaimed, canRouteBootUrl,
     loadViewPrefs, chartCells, setChartCells, chartBars, setChartBars, chartOrder, setChartOrder,
-    chartBeside, setChartBeside, autoHideControls, setAutoHideControls, abcScale, setAbcScale, tabScale, setTabScale, TAB_SCALE_KEY,
+    chartBeside, setChartBeside, autoHideControls, setAutoHideControls, abcScale, setAbcScale, tabScale, setTabScale, TAB_SCALE_KEY, tabBarsOffset, setTabBarsOffset, TAB_BARS_OFFSET_KEY,
     ABC_SCALE_KEY
 } from '../state.js';
 
@@ -410,5 +410,21 @@ describe('the song page\'s remembered choices (G19b)', () => {
         localStorage.setItem(TAB_SCALE_KEY, '3');
         loadViewPrefs();
         expect(tabScale).toBe(0.8);   // out of range: kept as it was
+    });
+
+    it('remembers the tab bars-per-row choice as an offset, in its own key (G22)', () => {
+        expect(tabBarsOffset).toBe(0);
+        setTabBarsOffset(2);
+        expect(localStorage.getItem(TAB_BARS_OFFSET_KEY)).toBe('2');
+        setTabBarsOffset(-1);
+        localStorage.setItem(TAB_BARS_OFFSET_KEY, '3');
+        loadViewPrefs();
+        expect(tabBarsOffset).toBe(3);
+        localStorage.setItem(TAB_BARS_OFFSET_KEY, '40');
+        loadViewPrefs();
+        expect(tabBarsOffset).toBe(3);   // out of range: kept as it was
+        setTabBarsOffset(99);
+        expect(tabBarsOffset).toBe(7);
+        setTabBarsOffset(0);
     });
 });

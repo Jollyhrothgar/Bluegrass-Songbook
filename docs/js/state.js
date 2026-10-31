@@ -245,6 +245,8 @@ export function loadViewPrefs() {
         if (abc >= ABC_SCALE_MIN && abc <= ABC_SCALE_MAX) abcScale = abc;
         const tab = parseFloat(localStorage.getItem(TAB_SCALE_KEY));
         if (tab >= TAB_SCALE_MIN && tab <= TAB_SCALE_MAX) tabScale = tab;
+        const bars = parseInt(localStorage.getItem(TAB_BARS_OFFSET_KEY), 10);
+        if (bars >= -7 && bars <= 7) tabBarsOffset = bars;
     } catch (e) {
         console.error('Failed to load view preferences:', e);
     }
@@ -328,6 +330,8 @@ export let tabScale = 1.0;                 // Size scale of a tab's staff (0.6 -
 export const TAB_SCALE_KEY = 'bgb-tab-scale';
 export const TAB_SCALE_MIN = 0.6;
 export const TAB_SCALE_MAX = 1.6;
+export let tabBarsOffset = 0;              // Bars per row on a tab, as an offset from the automatic count (G22)
+export const TAB_BARS_OFFSET_KEY = 'bgb-tab-bars-offset';
 export let abcSynth = null;                // Persistent synth instance
 export let abcTimingCallbacks = null;      // Persistent timing callbacks
 export let abcIsPlaying = false;           // Playback state for toggle button
@@ -345,6 +349,10 @@ export function setAbcScale(value) {
 export function setTabScale(value) {
     tabScale = value;
     try { localStorage.setItem(TAB_SCALE_KEY, String(value)); } catch { /* private mode */ }
+}
+export function setTabBarsOffset(value) {
+    tabBarsOffset = Math.max(-7, Math.min(7, Math.round(Number(value)) || 0));
+    try { localStorage.setItem(TAB_BARS_OFFSET_KEY, String(tabBarsOffset)); } catch { /* private mode */ }
 }
 export function setAbcSynth(value) { abcSynth = value; }
 export function setAbcTimingCallbacks(value) { abcTimingCallbacks = value; }
@@ -617,6 +625,7 @@ const stateGetters = {
     abcTranspose: () => abcTranspose,
     abcScale: () => abcScale,
     tabScale: () => tabScale,
+    tabBarsOffset: () => tabBarsOffset,
     abcSynth: () => abcSynth,
     abcTimingCallbacks: () => abcTimingCallbacks,
     abcIsPlaying: () => abcIsPlaying,
@@ -693,6 +702,7 @@ const stateSetters = {
     abcTranspose: setAbcTranspose,
     abcScale: setAbcScale,
     tabScale: setTabScale,
+    tabBarsOffset: setTabBarsOffset,
     abcSynth: setAbcSynth,
     abcTimingCallbacks: setAbcTimingCallbacks,
     abcIsPlaying: setAbcIsPlaying,

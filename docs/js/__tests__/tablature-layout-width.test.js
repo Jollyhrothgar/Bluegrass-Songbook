@@ -112,6 +112,79 @@ describe('TabRenderer width budget', () => {
             narrow.remove();
         });
 
+        describe('bars per row as an offset from auto (G22)', () => {
+            const draw = (width, offset) => {
+                const el = document.createElement('div');
+                document.body.appendChild(el);
+                setWidth(el, width);
+                const r = new TabRenderer(el);
+                r.options.measuresPerRowOffset = offset;
+                r.render(TRACK, NOTATION);
+                return { r, el };
+            };
+
+            it('no offset is the automatic count', () => {
+                const { r } = draw(1300, 0);
+                expect(r.rowFit()).toMatchObject({ auto: 6, count: 6, offset: 0 });
+            });
+
+            it('adds to and takes from the automatic count', () => {
+                expect(draw(1300, 1).r.rowFit()).toMatchObject({ auto: 6, count: 7, offset: 1 });
+                expect(draw(1300, -2).r.rowFit()).toMatchObject({ count: 4, offset: -2 });
+            });
+
+            it('stays within 1 to 8, and reports the ends as lo and hi', () => {
+                const fit = draw(1300, 5).r.rowFit();
+                expect(fit.count).toBe(8);
+                expect(fit.offset).toBe(2);
+                expect(fit.hi).toBe(2);
+                const low = draw(1300, -9).r.rowFit();
+                expect(low.count).toBe(1);
+                expect(low.lo).toBe(-5);
+            });
+
+            it('never packs bars narrower than the hard floor, so a row cannot overflow', () => {
+                // 420 wide: 340 usable, auto 1; a 4th bar would be 85px < 90px
+                const { r, el } = draw(420, 5);
+                expect(r.rowFit().count).toBe(3);
+                expect(r.rowFit().hi).toBe(2);
+                expect(r._computedMeasureWidth).toBeGreaterThanOrEqual(r.options.hardMinMeasureWidth);
+                for (const w of svgWidths(el)) expect(w).toBeLessThanOrEqual(420);
+            });
+
+            it('squeezes bars to fit instead of holding them at the usual minimum', () => {
+                const { r } = draw(420, 2);
+                expect(r.rowFit().count).toBe(3);
+                expect(r._computedMeasureWidth).toBeLessThan(r.options.minMeasureWidth);
+            });
+
+            it('keeps the offset when the container resizes', () => {
+                const { r, el } = draw(1300, 1);
+                expect(r.rowFit().count).toBe(7);
+                setWidth(el, 700);   // usable 620: auto 3
+                r._onContainerResize();
+                vi.advanceTimersByTime(150);
+                expect(r.rowFit()).toMatchObject({ auto: 3, count: 4, offset: 1 });
+            });
+
+            it('setMeasuresPerRowOffset re-lays out', () => {
+                const { r, el } = draw(1300, 0);
+                const before = rows(el);
+                r.setMeasuresPerRowOffset(-3);
+                expect(r.rowFit().count).toBe(3);
+                expect(rows(el)).toBeGreaterThan(before);
+            });
+
+            it('has no fit to report while measuresPerRow is pinned', () => {
+                const el = document.createElement('div');
+                document.body.appendChild(el);
+                setWidth(el, 1300);
+                const r = new TabRenderer(el, { measuresPerRow: 4 });
+                r.render(TRACK, NOTATION);
+                expect(r.rowFit()).toBeNull();
+            });
+        });
+
         it('draws nothing into a container that has no box yet', () => {
             setWidth(container, 0);            // display:none ancestor
             const r = new TabRenderer(container);

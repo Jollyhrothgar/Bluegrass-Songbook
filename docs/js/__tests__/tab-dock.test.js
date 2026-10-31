@@ -2,7 +2,7 @@
 // The tab dock's Display sheet (G19c): it holds the band's controls while it is
 // open, and gives every one back, listeners alive, when it closes.
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { playInNote, fillDisplaySheet, buildTempoChip, PLAY, PAUSE, PLAY_LOOP } from '../tab-dock.js';
+import { playInNote, fillDisplaySheet, buildTempoChip, barsLabel, PLAY, PAUSE, PLAY_LOOP } from '../tab-dock.js';
 
 function band() {
     const controls = document.createElement('div');
@@ -149,5 +149,46 @@ describe('the tempo chip (a tab in a set list)', () => {
         await Promise.resolve();   // MutationObserver callbacks are microtasks
         expect(chip.textContent).toContain('135');
         expect(chip.getAttribute('aria-label')).toBe('Tempo 135, change');
+    });
+});
+
+describe('Bars per row row (G22)', () => {
+    const mount = (fit) => {
+        const controls = band();
+        const state = { fit };
+        controls._tabDisplay.bars = {
+            fit: () => state.fit,
+            step: vi.fn((dir) => { state.fit = { ...state.fit, offset: state.fit.offset + dir, count: state.fit.count + dir }; }),
+            reset: vi.fn(() => { state.fit = { ...state.fit, offset: 0, count: state.fit.auto }; }),
+        };
+        const content = document.createElement('div');
+        document.body.appendChild(content);
+        fillDisplaySheet(content, controls);
+        return { content, controls };
+    };
+
+    it('words the label', () => {
+        expect(barsLabel({ auto: 4, count: 4, offset: 0 })).toBe('Auto (4)');
+        expect(barsLabel({ auto: 4, count: 5, offset: 1 })).toBe('5 (auto +1)');
+        expect(barsLabel({ auto: 4, count: 2, offset: -2 })).toBe('2 (auto −2)');
+    });
+
+    it('steps, shows the count and resets with Auto', () => {
+        const { content } = mount({ auto: 4, count: 4, offset: 0, lo: -3, hi: 2 });
+        const label = content.querySelector('#tab-bars-auto');
+        expect(label.textContent).toBe('Auto (4)');
+        expect(label.disabled).toBe(true);
+        content.querySelector('[data-bars="1"]').click();
+        expect(label.textContent).toBe('5 (auto +1)');
+        content.querySelector('[data-bars="1"]').click();
+        expect(content.querySelector('[data-bars="1"]').disabled).toBe(true);   // at the top
+        label.click();
+        expect(label.textContent).toBe('Auto (4)');
+    });
+
+    it('disables the low end', () => {
+        const { content } = mount({ auto: 1, count: 1, offset: 0, lo: 0, hi: 2 });
+        expect(content.querySelector('[data-bars="-1"]').disabled).toBe(true);
+        expect(content.querySelector('[data-bars="1"]').disabled).toBe(false);
     });
 });

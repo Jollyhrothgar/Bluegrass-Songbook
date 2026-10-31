@@ -41,6 +41,43 @@ function group(label, hint = '') {
     return el;
 }
 
+/** The words on the middle button: "Auto (4)", or "5 (auto +1)". */
+export function barsLabel({ auto, count, offset }) {
+    if (!offset) return `Auto (${auto})`;
+    return `${count} (auto ${offset > 0 ? '+' : '−'}${Math.abs(offset)})`;
+}
+
+/**
+ * "− Auto (4) +": bars per row relative to the automatic count. `bars.fit()`
+ * says where the renderer stands ({auto, count, offset, lo, hi} or null),
+ * `bars.step(dir)` moves it and `bars.reset()` goes back to Auto.
+ */
+function barsControl(bars) {
+    const el = document.createElement('span');
+    el.className = 'dock-bars';
+    el.id = 'tab-bars';
+    el.setAttribute('role', 'group');
+    el.setAttribute('aria-label', 'Bars per row');
+    el.innerHTML = `<button type="button" class="dock-size-btn" data-bars="-1" aria-label="Fewer bars" title="Fewer bars per row">−</button>`
+        + `<button type="button" class="dock-bars-label" id="tab-bars-auto" title="Back to automatic"></button>`
+        + `<button type="button" class="dock-size-btn" data-bars="1" aria-label="More bars" title="More bars per row">+</button>`;
+    const label = el.querySelector('.dock-bars-label');
+    const buttons = [...el.querySelectorAll('[data-bars]')];
+    const sync = () => {
+        const fit = bars.fit();
+        label.textContent = fit ? barsLabel(fit) : 'Auto';
+        label.disabled = !fit || !fit.offset;
+        buttons.forEach(b => {
+            const dir = Number(b.dataset.bars);
+            b.disabled = !fit || (dir < 0 ? fit.offset <= fit.lo : fit.offset >= fit.hi);
+        });
+    };
+    buttons.forEach(b => b.addEventListener('click', () => { bars.step(Number(b.dataset.bars)); sync(); }));
+    label.addEventListener('click', () => { bars.reset(); sync(); });
+    sync();
+    return el;
+}
+
 /**
  * Fill the Display sheet from the band's controls. `moved` collects every
  * node taken out of the store, so closing the sheet can return them.
@@ -68,6 +105,17 @@ export function fillDisplaySheet(content, controls) {
         row.className = 'dock-opt-row';
         row.innerHTML = '<span class="dock-opt-label">Staff size</span>';
         row.appendChild(sizeControl({ id: 'tab-size', canStep: size.canStep, step: size.step }));
+        content.appendChild(row);
+    }
+
+    // Bars per row: − Auto (4) +, relative to what fits (work-view.js owns the offset)
+    const bars = controls._tabDisplay?.bars;
+    if (bars) {
+        content.appendChild(group('Bars per row', 'more or fewer than fits'));
+        const row = document.createElement('div');
+        row.className = 'dock-opt-row';
+        row.innerHTML = '<span class="dock-opt-label">Bars</span>';
+        row.appendChild(barsControl(bars));
         content.appendChild(row);
     }
 
