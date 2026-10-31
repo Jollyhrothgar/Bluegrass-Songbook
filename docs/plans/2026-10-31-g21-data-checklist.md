@@ -120,3 +120,26 @@ into it.
   - Caught my "207 in 21627" (corpus-wide); corrected.
 - 2026-10-31 · G21b + G21d2 dispatched (Sonnet high, e2e on 8342) off the
   batch.
+- 2026-10-31 · G21b + G21d2 back (06e99c851, 7c5730abd, 7d5923aba); merged
+  into the batch (9bfb2d60b).
+  - Corpus (610 `.tef`): 3,950 letters → `finger` in 39 files; 189 stay
+    text, 121 of them on chord ticks with no note on the text's row.
+    17,217 of 20,676 texts become `kind: "chord"`, in 292 files.
+  - Batch, my run: npm 5440 ✓, pytest 1681 ✓ 1 skip (after bootstrapping
+    the batch worktree).
+  - FMB fixtures for the G19 session are in `/tmp/g21-fixtures/`.
+- 2026-10-31 · **Re-import dry run** (`--dry-run --baseline debcf09f1`):
+  - works: refresh 461, submitted 3 (dark-hollow-1 guitar, old-home-place
+    banjo, welcome-to-new-york banjo), corrected 0, mismatch 1 (FMB
+    mandolin: tracks), no TEF on disk 29;
+  - parsed: regenerate 591.
+- Trial real run in a throwaway worktree, then a field-by-field diff of the
+  461 works files:
+  - every file 1.2 → 1.3;
+  - 297 files change annotations: 18,152 with a track, 15,245 chords, 433
+    below;
+  - 31 files gain `finger`: 3,322 letters, exactly the annotations removed;
+  - **nothing else changes**: tracks, notes other than `finger`, measure
+    marks, chords, diagrams, metadata and reading list are all identical.
+  - The diff is 1,052 files, +46,820 / −54,057.
+  - Waiting for Mike's yes before the real run.
