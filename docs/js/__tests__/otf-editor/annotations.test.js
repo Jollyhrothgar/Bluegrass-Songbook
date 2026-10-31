@@ -285,7 +285,7 @@ describe('EditorState — annotations anchored to the cursor', () => {
         state.cursor.measure = 3;
         state.cursor.tick = 240;
         expect(state.setAnnotationAtCursor('G7')).toBe(true);
-        expect(state.otf.annotations).toContainEqual({ measure: 3, tick: 240, text: 'G7' });
+        expect(state.otf.annotations).toContainEqual({ measure: 3, tick: 240, text: 'G7', track: 'banjo' });
     });
 
     it('edits the one that IS there instead of stacking a second', () => {
@@ -482,7 +482,7 @@ describe('AnnotationPopover', () => {
         popover.open({ measure: 1, tick: 0 });
         host.querySelector('.annotation-input').value = '  Bb6+9  ';
         host.querySelector('.save-btn').click();
-        expect(onCommit).toHaveBeenCalledWith('Bb6+9');
+        expect(onCommit).toHaveBeenCalledWith('Bb6+9', 'above');
         expect(popover.opened).toBe(false);
     });
 
@@ -490,7 +490,7 @@ describe('AnnotationPopover', () => {
         popover.open({ measure: 1, tick: 0, existing: 'PART A' });
         host.querySelector('.annotation-input').value = '   ';
         host.querySelector('.save-btn').click();
-        expect(onCommit).toHaveBeenCalledWith('');
+        expect(onCommit).toHaveBeenCalledWith('', 'above');
     });
 
     it('Enter commits', () => {
@@ -498,7 +498,7 @@ describe('AnnotationPopover', () => {
         host.querySelector('.annotation-input').value = 'Solo';
         host.querySelector('.otf-annotation-popover')
             .dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true }));
-        expect(onCommit).toHaveBeenCalledWith('Solo');
+        expect(onCommit).toHaveBeenCalledWith('Solo', 'above');
     });
 
     it('Escape cancels without committing', () => {
@@ -531,6 +531,26 @@ describe('AnnotationPopover', () => {
         host.querySelector('.annotation-input')
             .dispatchEvent(new KeyboardEvent('keydown', { key: 'x', bubbles: true }));
         expect(seen).not.toHaveBeenCalled();
+    });
+
+    it('offers Above / Below, above by default, and commits the choice', () => {
+        popover.open({ measure: 1, tick: 0 });
+        const pressed = () => [...host.querySelectorAll('.annotation-place button')]
+            .map(b => `${b.dataset.place}:${b.getAttribute('aria-pressed')}`);
+        expect(pressed()).toEqual(['above:true', 'below:false']);
+        host.querySelector('[data-place="below"]').click();
+        expect(pressed()).toEqual(['above:false', 'below:true']);
+        host.querySelector('.annotation-input').value = 'm';
+        host.querySelector('.save-btn').click();
+        expect(onCommit).toHaveBeenCalledWith('m', 'below');
+    });
+
+    it('opens on the text\'s own side, and forgets it the next time', () => {
+        popover.open({ measure: 1, tick: 0, existing: 'm', place: 'below' });
+        expect(host.querySelector('[data-place="below"]').getAttribute('aria-pressed')).toBe('true');
+        host.querySelector('.cancel-btn').click();
+        popover.open({ measure: 1, tick: 0 });
+        expect(host.querySelector('[data-place="above"]').getAttribute('aria-pressed')).toBe('true');
     });
 
     it('escapes markup in existing text', () => {

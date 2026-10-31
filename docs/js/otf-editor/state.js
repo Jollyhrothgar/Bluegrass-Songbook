@@ -806,30 +806,34 @@ export class EditorState {
     }
 
     /**
-     * The annotation at (or within a beat of) the cursor.
+     * The annotation at (or within a beat of) the cursor: the current track's
+     * own, or a track-less one (an older file's), never another track's.
      * @returns {{index: number, annotation: Object}|null}
      */
     getAnnotationAtCursor() {
         const index = this.facade.findAnnotationIndex(
             { measure: this.cursor.measure, tick: this.cursor.tick },
-            { maxTicks: this.annotationReach });
+            { maxTicks: this.annotationReach, trackId: this.trackId });
         if (index === -1) return null;
         return { index, annotation: this.facade.annotations()[index] };
     }
 
     /**
      * Write text at the cursor: retext the annotation already there, or
-     * place a new one. Empty text deletes the existing one (and adds
-     * nothing when there is none). Undoable.
+     * place a new one on the current track. Empty text deletes the existing
+     * one (and adds nothing when there is none). `place` is 'above' (the
+     * default) or 'below' the staff. Undoable.
      * @returns {boolean} false when nothing changed
      */
-    setAnnotationAtCursor(text) {
+    setAnnotationAtCursor(text, place = 'above') {
         const found = this.getAnnotationAtCursor();
-        if (found) return this.facade.setAnnotationText(found.index, text) !== false;
+        if (found) return this.facade.editAnnotation(found.index, { text, place }) !== false;
         return this.facade.addAnnotation({
             measure: this.cursor.measure,
             tick: this.cursor.tick,
             text,
+            track: this.getCurrentTrack()?.id,
+            place,
         }) !== false;
     }
 
