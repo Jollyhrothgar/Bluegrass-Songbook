@@ -16,6 +16,7 @@ import {
 import { KeyboardHandler } from './keyboard.js';
 import { EditorToolbar, PHONE_MAX_WIDTH } from './toolbar.js';
 import { EditorMenuBar } from './menu-bar.js';
+import { TrackSwitcher } from './track-switcher.js';
 import {
     NoteEntryPopover, AnnotationPopover, TrackNamePopover, ValuePromptPopover, SaveAsPopover,
     GracePopover,
@@ -384,9 +385,18 @@ export class OTFEditor {
         // leave the grid/cursor overlays drawn from stale geometry
         this.renderer.onAfterRender = () => {
             if (!this.cursor) return; // during destroy
+            // Phone: the track name above the tab becomes the switcher
+            // (before the cursor measures where the first row starts)
+            this.trackSwitcher?.decorate(this.rendererContainer.querySelector('.track-info'));
             this.cursor.update();
             this.cursor.renderGrid();
         };
+
+        this.trackSwitcher = new TrackSwitcher({
+            state: this.state,
+            isPhone: () => !!window.matchMedia?.(`(max-width: ${PHONE_MAX_WIDTH}px)`).matches,
+            onChoose: () => this.editorRoot?.focus(),
+        });
 
         // Initialize cursor overlay
         this.cursor.init(this.canvasContainer);
@@ -531,6 +541,47 @@ export class OTFEditor {
                 border-bottom: 0;
                 border-top: 1px solid var(--border, #ddd);
             }
+
+            /* Phone track switcher (track-switcher.js): the name above the
+               tab as a button, with a short list under it */
+            .track-info.has-track-switcher { position: relative; }
+            .track-switcher-button, .track-switcher-item {
+                min-height: 44px;
+                padding: 0 12px;
+                border: 1px solid var(--border, #ccc);
+                border-radius: 8px;
+                background: var(--bg, #fff);
+                color: var(--text, #222);
+                font: inherit;
+                font-weight: 600;
+                cursor: pointer;
+            }
+            .track-switcher-name { text-transform: capitalize; }
+            .track-switcher-list {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                z-index: 20;
+                display: flex;
+                flex-direction: column;
+                min-width: 200px;
+                max-height: 60vh;
+                overflow-y: auto;
+                background: var(--bg, #fff);
+                border: 1px solid var(--border, #ccc);
+                border-radius: 8px;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+            }
+            .track-switcher-item {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                border: 0;
+                border-radius: 0;
+                font-weight: 400;
+                text-align: left;
+            }
+            .track-switcher-check { width: 1.2em; }
 
             @media (max-width: ${PHONE_MAX_WIDTH}px) {
                 .otf-editor-fill .editor-canvas-container { padding: 8px; }
@@ -2579,6 +2630,8 @@ export class OTFEditor {
 
         // Clean up components
         this.keyboard.detach();
+        this.trackSwitcher?.destroy();
+        this.trackSwitcher = null;
         this.cursor.destroy();
         this.toolbar.destroy();
         this.menuBar?.destroy();

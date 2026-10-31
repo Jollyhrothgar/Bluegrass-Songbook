@@ -193,6 +193,20 @@ to the track now at the same index; otherwise the next `getNotation()` would
 mint an empty measure list under the dead name. The toolbar re-reads the track
 row on every `change`, so undoing a rename relabels the button.
 
+**Phone track switcher (G20a, `track-switcher.js`).** G17 hides the toolbar's
+Track row at `PHONE_MAX_WIDTH`, so on a phone with two or more tracks the track
+name above the tab is a button, "mandolin ▾ 1 of 4" (`aria-haspopup`,
+`aria-expanded`, 44px tall). It opens a short list of the tracks with a check on
+the current one; choosing one calls `state.setTrack` and puts focus back on the
+editor. Escape or a tap outside closes it. One track, or a wide screen: the
+header is untouched. The header is drawn by `renderers/tablature.js`
+(`renderTrackInfo`), shared with the read view, so the editor does not change
+the renderer: `editor.js` calls `TrackSwitcher.decorate` on the fresh
+`.track-info` from `renderer.onAfterRender`, before the cursor measures the
+first row. Every redraw (rename, reorder, add, delete, undo, resize across the
+breakpoint) relabels it, and the list is read from the document each time it
+opens. The module is in `lazy-modules.js`.
+
 ### Placed text (`annotations`)
 
 "Annotation" means two things. ANNOTATION mode edits per-note marks (fingering,
