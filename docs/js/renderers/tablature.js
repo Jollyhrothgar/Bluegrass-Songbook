@@ -514,8 +514,11 @@ export class TabRenderer {
             // Fixed measures per row
             this._rowFit = null;
             this._computedMeasuresPerRow = Math.max(1, Math.min(8, opt.measuresPerRow));
+            // A pinned count (the tab editor) keeps minMeasureWidth: its layout
+            // (A20/A21) never squeezes triplets and 32nds; a row that does not fit
+            // scrolls. Only the reader's auto + offset squeezes to hardMinMeasureWidth.
             this._computedMeasureWidth = Math.max(
-                Math.min(opt.minMeasureWidth, opt.hardMinMeasureWidth),
+                opt.minMeasureWidth,
                 Math.min(opt.maxMeasureWidth, availableWidth / this._computedMeasuresPerRow)
             );
             this._applyMeasureWidthFloor(availableWidth);

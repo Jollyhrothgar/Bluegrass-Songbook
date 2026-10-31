@@ -183,6 +183,18 @@ describe('TabRenderer width budget', () => {
                 r.render(TRACK, NOTATION);
                 expect(r.rowFit()).toBeNull();
             });
+
+            it('a pinned count (the tab editor) never squeezes below minMeasureWidth', () => {
+                // the editor's layout (A20/A21) keeps triplets and 32nds readable and
+                // scrolls a row that doesn't fit; only the reader's offset squeezes
+                const el = document.createElement('div');
+                document.body.appendChild(el);
+                setWidth(el, 420);
+                const r = new TabRenderer(el, { measuresPerRow: 3 });
+                r.render(TRACK, NOTATION);
+                expect(r._computedMeasuresPerRow).toBe(3);
+                expect(r._computedMeasureWidth).toBe(r.options.minMeasureWidth);
+            });
         });
 
         it('draws nothing into a container that has no box yet', () => {
