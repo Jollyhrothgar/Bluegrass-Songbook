@@ -23,9 +23,9 @@ Mike, 2026-10-31:
 
 | ID | Piece | Depends on | Model / effort | Worktree | Status | Checked |
 |----|-------|-----------|----------------|----------|--------|---------|
-| G21a | OTF 1.3 (`track`, `kind`, `place`); importers fill `track`; writer; editor; re-import guard `COMPARED = TAKEN` | — | Sonnet / high | `g21a-annotation-track` | dispatched 2026-10-31 | |
+| G21a | OTF 1.3 (`track`, `kind`, `place`); importers fill `track` and `place`; writer; editor; re-import guard `COMPARED = TAKEN` | — | Sonnet / high | `g21a-annotation-track` | done, merged into the batch (128e9690a..dceb17752) | diff read (reader placement V3 byte 11 / V2 byte 4 bits 5–6, importer track + place, writer rows + byte 11); npm 5355 ✓, pytest 1597 ✓ 1 skip (my run); agent: 148 related e2e ✓; corpus: 24,626 texts all with a track, 4,521 below, Python = JS on 610; round trip 607 equal + 3 pinned |
 | G21d1 | `parseTabChord` / `parse_tab_chord` with a shared fixture; corpus report | — | Sonnet / medium | `g21d-tab-chord-parser` | done, merged into the batch (bdd0be965) | read `tab-chord.js`; parser + chord-token tests 98 ✓ / pytest 144 ✓; corpus report read: 32,249 of 45,802 texts parse (85 distinct), fingering letters, part labels and banners stay text; `(A [G])` (124) stays text, a follow-up |
-| G21b + G21d2 | Importers: typed t/i/m/r/p → `note.finger`; parsed chords → `kind: "chord"`; validators check chord texts; writer keeps `finger` | G21a, G21d1 | — | — | todo | |
+| G21b + G21d2 | Importers: typed t/i/m/r/p → `note.finger`; parsed chords → `kind: "chord"`; validators check chord texts; writer keeps `finger` | G21a, G21d1 | Sonnet / high | `g21bd-importers` (off the batch) | dispatched 2026-10-31 | |
 | re-import | `reimport_tef_tabs.py` dry run → counts to Mike → real run | all of the above | me | — | todo | |
 | `place` ground truth | TablEdit 3.06 prints 5 + 3 files to PDF on mike-air; compare against the string rows | — | mike-air agent f0c557a | `mike-air:~/g21-place/` | 5 PDFs read; 3 more V2 files printing | V3 (24588, 24908, 28388, 28676): every text above, byte 7 a small nudge. V2 (1481): text drawn at its row; top row above, middle on the string line, bottom row below |
 | G21e | Chord picker in the tab editor (`lead-editor/chord-menu-model.js`, `chord-menu.js` with optional callbacks) | G21d2 | — | — | todo | |
@@ -108,3 +108,15 @@ into it.
     G21a PR.
   - mike-air: all inputs unchanged (md5); TablEdit quit. Scratch files are in
     `mike-air:~/g21-place/`.
+- 2026-10-31 · G21a back (5 commits).
+  - Key order: `measure, tick, text, track, kind, place`.
+  - Every writer stamps 1.3, so golden.json got a version-only rewrite.
+  - A new text goes on its track's first free row.
+  - Paste carries `track`, though it's inert because copy has no texts yet.
+  - `facade.editAnnotation` changes text and side in one undo step.
+  - Re-import: `--previous-rev` became `--baseline` (old spelling still
+    accepted). **The G21 run must pass `--baseline debcf09f1`** (main before
+    G21a); otherwise every tab G15d refreshed reads as edited.
+  - Caught my "207 in 21627" (corpus-wide); corrected.
+- 2026-10-31 · G21b + G21d2 dispatched (Sonnet high, e2e on 8342) off the
+  batch.
