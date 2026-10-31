@@ -98,18 +98,48 @@ chord name, and the other tracks' banners and "etc." on the banjo.
 
 ### G21c: lanes (renderer)
 
-From the top of a staff row, each lane present only when something is in it:
+**The rule (Mike, 2026-10-31):** the closer to the staff, the more important
+it is to read while playing. Each lane is present only when something is in
+it.
 
-1. section name;
-2. chords (G21d fills it; until then chord-like text stays in the text lane);
-3. free text, as many lanes as the row needs. Sort by tick, never overprint,
-   and size the band from what it holds;
-4. the effects band (as today);
-5. **left-hand fretting numbers, just above the notes** (moved up from the
-   circled digits below);
-6. the staff and beams;
-7. **right-hand fingering below**: today's `finger` row, with G21b filling
-   it.
+**Above the staff**, outward from the staff:
+
+1. **articulations**: the marks on the fret and on the staff, then the
+   effects band (bends, slides, chokes …). Always shown.
+2. **left-hand fretting numbers** (`note.lh`), moved up from the circled
+   digits under the beams.
+3. **text above**: as many lanes as the row needs. Sorted by tick, never
+   overprinting, the band sized from what it holds.
+4. **chords**: chord names and chord diagrams, the furthest out.
+   - Until G21d, chord-like text stays in the text lanes.
+   - The section name stays at the row's top edge, as today. That's my call,
+     since Mike didn't place it.
+
+**Below the staff**, outward from the beams:
+
+1. **right-hand fingering** (`note.finger`, today's row; G21b fills it);
+2. **text below**: texts the source puts under the staff (see "Placement" in
+   the contract).
+
+**One mark per bend (Mike, 2026-10-31: "the choke / bend seems to appear
+twice").**
+- **The data is right:** the bent note carries `fx: "bend"`, and the note it
+  bends to carries `tech: "b"` (`docs/schema/otf.md`). Playback and the
+  `.tef` writer need both.
+- **The renderer draws the bend twice:**
+  - the arrow, "½" and `[11]` at the target (`renderSlurs`);
+  - a second arrow in the effects band for the source (`FX_POINT_MARKS`
+    `['bend', null]`, `_drawFxPoints`).
+- **Fix:** draw no band mark for a `bend` or `bend-release` that has its
+  `tech: "b"` target. A bend with no target keeps the band mark.
+  `bends.test.js` currently pins both marks and changes with it.
+- **Scale:** 173 notes in 16 tabs.
+
+**Later (G21f, drawing side):** Display ▸ Show gets toggles for Fingering,
+Text and Chord diagrams.
+- Articulations are always on.
+- The choices are remembered, and a hidden layer gives its lanes back.
+- Mike: "perhaps not right now".
 
 Rules:
 - **Geometry goes through `topMargin` / `rowData`.** The tab editor's cursor
@@ -139,6 +169,43 @@ Rules:
 - **Diagrams:** when `chords[]` has fingering for that name, the existing
   diagram path (G15d3) can draw it. Generating diagrams from names alone is
   later work.
+
+### Chord diagrams in the wrong position (data, Mike to decide)
+
+Mike, 2026-10-31, on Foggy Mountain Breakdown's banjo take, measure 54: "the
+Em is the right chord, but it's the form near the 9th fret, not at the base
+of the neck."
+
+- **It is the tab author's own diagram.**
+  - The `.tef` stores E min as frets 2-0-0-2 with "first fret shown" = 1,
+    which is an open Em.
+  - The importer reads it faithfully. Nothing in the renderer makes shapes
+    from names.
+  - The chord table is per file, so one open Em serves every Em in the tab.
+    G (0-0-0-0) and D (4-3-2-4) are the same story, while the music sits at
+    frets 8–11.
+- **Scale:** 27 of the 885 fretted diagrams show an open shape while the
+  measure's notes are 5 or more frets higher. They are in 6 tabs; Foggy
+  Mountain Breakdown has 11 and Jerusalem Ridge some at fret 12. 209 diagrams
+  already carry a position.
+- **Hazard for any hand fix:** `scripts/lib/reimport_tef_tabs.py` decides a
+  tab is untouched by comparing `tracks`, `notation`, `annotations` and
+  `reading_list`, then takes `chords` and `chord_diagrams` from the new
+  importer. A corrected diagram would be silently reverted by the G21
+  re-import.
+  - **Data side:** add `chords` and `chord_diagrams` to that comparison
+    before the re-import.
+  - **Alternatively:** make the fixes after it.
+- **Options for Mike:**
+  1. **Correct the 27 diagrams by hand.** Voicings are drafted from each
+     measure's notes and he approves them on the real page, after the
+     re-import or once the guard covers chords.
+  2. **Leave the authors' diagrams.** Readers fix them in the tab editor once
+     G21e exists, optionally with a "move this diagram to where the notes
+     are" action.
+  3. **Not recommended:** move diagrams automatically at draw time. That
+     invents shapes the author didn't draw, and the `.tef` round trip would
+     no longer match.
 
 ### G21e: entering chords in the tab editor (editor)
 
@@ -236,6 +303,23 @@ writer and the parser paths. Any change is agreed by both sessions first.
       G21d.
     - Until then, the renderer draws a chord's `text` as written, in the
       chord lane.
+- **Placement, `annotations[].place`** (optional, `"above"` or `"below"`;
+  absent means `"above"`). Agreed 2026-10-31, after Mike said texts can sit
+  above or below.
+  - **Today, only the tab editor sets it:** a text you add can be put below.
+    The writer leaves the text's row as it was.
+  - **Importer rule on hold:** how TablEdit decides above or below is unknown.
+    The tab editor session's findings:
+    - A text record (`0x39`) stores a string row and a signed y-offset (byte
+      7, ignored today). There is no flag.
+    - TablEdit's MusicXML exports mark all 4,113 texts `placement="above"`.
+    - In 65 V3 files, texts sit on bottom (896), top (732) and middle (527)
+      rows. Byte 7 is 0 on 2,088 of them.
+  - **Until there is ground truth, the importers don't set `place`.** That
+    needs either a TablEdit print-to-PDF on mike-air or an REA look at its
+    text drawing on mike-pro. Either one is Mike's yes to give. The litmus
+    doesn't need it, because FMB's m/i letters become `note.finger` (G21b) and
+    draw below anyway.
 - **`note.finger`** (`T I M R P`, right hand) and **`note.lh`** (`0`–`4`,
   left hand): unchanged.
   - G21c draws `lh` as a number above the note and `finger` below it.
