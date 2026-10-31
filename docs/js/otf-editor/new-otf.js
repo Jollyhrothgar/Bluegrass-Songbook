@@ -11,39 +11,44 @@
 const OTF_VERSION = '1.2';
 
 /**
+ * The editor's instrument presets: the track id a new track of that kind gets,
+ * and its standard tuning (string 1 first). Tab setup (tab-setup.js) offers
+ * the same list, so there is one copy.
+ */
+export const INSTRUMENT_CONFIGS = {
+    '5-string-banjo': {
+        id: 'banjo',
+        tuning: ['D4', 'B3', 'G3', 'D3', 'G4'],
+    },
+    '6-string-guitar': {
+        id: 'guitar',
+        tuning: ['E4', 'B3', 'G3', 'D3', 'A2', 'E2'],
+    },
+    'mandolin': {
+        id: 'mandolin',
+        tuning: ['E5', 'A4', 'D4', 'G3'],
+    },
+    'upright-bass': {
+        id: 'bass',
+        tuning: ['G2', 'D2', 'A1', 'E1'],
+    },
+    'tenor-banjo': {
+        id: 'tenor_banjo',
+        tuning: ['A4', 'D4', 'G3', 'C3'],
+    },
+    'dobro': {
+        id: 'dobro',
+        tuning: ['D4', 'B3', 'G3', 'D3', 'B2', 'G2'],
+    },
+};
+
+/**
  * Create an empty OTF document
  * @param {string} instrument - Instrument type
  * @param {Object} options - Additional options
  */
 export function createEmptyOTF(instrument = '5-string-banjo', options = {}) {
-    const instrumentConfigs = {
-        '5-string-banjo': {
-            id: 'banjo',
-            tuning: ['D4', 'B3', 'G3', 'D3', 'G4'],
-        },
-        '6-string-guitar': {
-            id: 'guitar',
-            tuning: ['E4', 'B3', 'G3', 'D3', 'A2', 'E2'],
-        },
-        'mandolin': {
-            id: 'mandolin',
-            tuning: ['E5', 'A4', 'D4', 'G3'],
-        },
-        'upright-bass': {
-            id: 'bass',
-            tuning: ['G2', 'D2', 'A1', 'E1'],
-        },
-        'tenor-banjo': {
-            id: 'tenor_banjo',
-            tuning: ['A4', 'D4', 'G3', 'C3'],
-        },
-        'dobro': {
-            id: 'dobro',
-            tuning: ['D4', 'B3', 'G3', 'D3', 'B2', 'G2'],
-        },
-    };
-
-    const config = instrumentConfigs[instrument] || instrumentConfigs['5-string-banjo'];
+    const config = INSTRUMENT_CONFIGS[instrument] || INSTRUMENT_CONFIGS['5-string-banjo'];
 
     return {
         otf_version: OTF_VERSION,
@@ -60,7 +65,7 @@ export function createEmptyOTF(instrument = '5-string-banjo', options = {}) {
         tracks: [{
             id: config.id,
             instrument: instrument,
-            tuning: config.tuning,
+            tuning: [...config.tuning],
             capo: options.capo || 0,
             role: 'lead',
         }],

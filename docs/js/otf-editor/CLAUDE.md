@@ -128,9 +128,9 @@ outside the block.
 
 `MODEL.md` beside this file holds the rules for per-note marks (fingering,
 effects, grace) versus placed free text, for tracks (a track's `id` is its
-name; `tracks[]` order is load-bearing; adding and deleting one), and for
-automatic duration (computed inside the facade's `_mutate`, never from the
-keyboard layer). Read it before changing any of them.
+name; `tracks[]` order is load-bearing), for Tab setup (tuning, capo, time
+signature, the title box) and for automatic duration (computed inside the
+facade's `_mutate`). Read it before changing any of them.
 
 ## Toolbar, menus, zoom
 
@@ -150,7 +150,7 @@ One command surface per device (G17): the menus are the one list of commands.
 - Phone strip: at `PHONE_MAX_WIDTH` (640, `toolbar.js`) the toolbar is one row
   (undo, redo, a note-length picker, tie). That width is also the editor's
   fill mode, `NARROW_WIDTH` in `tab-controls-sheet.js` and `@container tabband`
-  in `style.css` (the bottom band); change them together.
+  in `style.css` (the bottom band); change them together. Tracks: `track-switcher.js`.
 - `new OTFEditor(...)` options (`work-edit.js` passes them): `fileActions:
   [{label, run, disabled?, action?} | {separator: true}]` (`action` only prints
   that action's key), `source`, `filename`, `hostTransport` (the band has transport). The bar: Submit, ✓ Done.

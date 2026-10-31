@@ -29,11 +29,15 @@ export const EXAMPLE_TAB_HREF = '/#work/foggy-mountain-breakdown/banjo-tab';
 export const INSTRUMENT_CHOICES = Object.keys(TARGET_PRESETS)
     .map(value => ({ value, label: LABELS[value] || value }));
 
-/** `#new-tab` plus whatever title and instrument were filled in. */
-export function newTabHash({ title = '', instrument = '' } = {}) {
+/** The time signatures "Start a new tab" offers; `#new-tab?ts=` takes these and more. */
+export const TIME_SIGNATURE_CHOICES = ['4/4', '3/4', '2/4', '6/8'];
+
+/** `#new-tab` plus whatever title, instrument and time signature (when not 4/4) were filled in. */
+export function newTabHash({ title = '', instrument = '', timeSignature = '4/4' } = {}) {
     const params = new URLSearchParams();
     if (title.trim()) params.set('title', title.trim());
     if (instrument) params.set('instrument', instrument);
+    if (timeSignature && timeSignature !== '4/4') params.set('ts', timeSignature);
     const query = params.toString();
     return query ? `#new-tab?${query}` : '#new-tab';
 }
@@ -75,6 +79,10 @@ export function tabEditorHomeHtml(drafts, now = Date.now()) {
                     </label>
                     <label>Instrument
                         <select class="tab-home-instrument">${options}</select>
+                    </label>
+                    <label>Time signature
+                        <select class="tab-home-time">${TIME_SIGNATURE_CHOICES.map(ts =>
+                            `<option value="${ts}">${ts}</option>`).join('')}</select>
                     </label>
                     <button type="submit" class="qc-toggle-btn">Start a new tab</button>
                 </form>
@@ -133,6 +141,7 @@ export async function renderTabEditorHome(container, {
             navigate(newTabHash({
                 title: root.querySelector('.tab-home-title').value,
                 instrument: root.querySelector('.tab-home-instrument').value,
+                timeSignature: root.querySelector('.tab-home-time').value,
             }));
         });
         attachDraftActions(root, {

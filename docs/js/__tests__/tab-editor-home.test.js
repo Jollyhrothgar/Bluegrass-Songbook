@@ -11,6 +11,7 @@ import {
     newTabHash,
     HOME_DRAFTS,
     INSTRUMENT_CHOICES,
+    TIME_SIGNATURE_CHOICES,
     EXAMPLE_TAB_HREF,
 } from '../tab-editor-home.js';
 
@@ -53,6 +54,34 @@ describe('tabEditorHomeHtml', () => {
         for (const { value } of INSTRUMENT_CHOICES) {
             expect(parseNewTabOptions(newTabHash({ instrument: value }).split('?')[1]).instrument).toBe(value);
         }
+    });
+});
+
+describe('the time signature (G20b)', () => {
+    it('offers 4/4 first and selected, then 3/4, 2/4 and 6/8', () => {
+        expect(TIME_SIGNATURE_CHOICES).toEqual(['4/4', '3/4', '2/4', '6/8']);
+        const el = document.createElement('div');
+        el.innerHTML = tabEditorHomeHtml([]);
+        const select = el.querySelector('.tab-home-time');
+        expect(select.value).toBe('4/4');
+        expect([...select.options].map(o => o.value)).toEqual(['4/4', '3/4', '2/4', '6/8']);
+    });
+
+    it('rides in the hash only when it is not 4/4, and parseNewTabOptions gives each back', () => {
+        expect(newTabHash({ timeSignature: '4/4' })).toBe('#new-tab');
+        for (const ts of TIME_SIGNATURE_CHOICES) {
+            const hash = newTabHash({ title: 'Waltz', timeSignature: ts });
+            expect(parseNewTabOptions(hash.split('?')[1]).timeSignature).toBe(ts);
+        }
+        expect(newTabHash({ timeSignature: '3/4' })).toBe('#new-tab?ts=3%2F4');
+    });
+
+    it('Start a new tab sends the chosen one', async () => {
+        const navigate = vi.fn();
+        const { el } = await mount({ navigate });
+        el.querySelector('.tab-home-time').value = '3/4';
+        el.querySelector('.tab-home-new').dispatchEvent(new Event('submit', { cancelable: true }));
+        expect(navigate).toHaveBeenCalledWith('#new-tab?instrument=banjo&ts=3%2F4');
     });
 });
 
