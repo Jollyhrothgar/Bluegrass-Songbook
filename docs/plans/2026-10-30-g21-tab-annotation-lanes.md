@@ -311,20 +311,35 @@ writer and the parser paths. Any change is agreed by both sessions first.
 - **Placement, `annotations[].place`** (optional, `"above"` or `"below"`;
   absent means `"above"`). Agreed 2026-10-31, after Mike said texts can sit
   above or below.
-  - **Today, only the tab editor sets it:** a text you add can be put below.
-    The writer leaves the text's row as it was.
-  - **Importer rule on hold:** how TablEdit decides above or below is unknown.
-    The tab editor session's findings:
-    - A text record (`0x39`) stores a string row and a signed y-offset (byte
-      7, ignored today). There is no flag.
-    - TablEdit's MusicXML exports mark all 4,113 texts `placement="above"`.
-    - In 65 V3 files, texts sit on bottom (896), top (732) and middle (527)
-      rows. Byte 7 is 0 on 2,088 of them.
-  - **Until there is ground truth, the importers don't set `place`.** That
-    needs either a TablEdit print-to-PDF on mike-air or an REA look at its
-    text drawing on mike-pro. Either one is Mike's yes to give. The litmus
-    doesn't need it, because FMB's m/i letters become `note.finger` (G21b) and
-    draw below anyway.
+  - **What TablEdit stores** (Mike's yes, 2026-10-31). This comes from
+    TablEdit 3.06 printing 12 files to PDF on mike-air, and from its own V2 →
+    V3 conversion of FMB and Brilliancy. Placement is a value, not the string
+    row:
+    - in V3, text record (`0x39`) byte 11;
+    - in V2, text record byte 4, bits 5–6.
+
+    The values:
+    - `0`: above.
+    - `1`: below the staff. FMB's 426 m/i letters; Brilliancy's 3
+      "Part A:"; V3 `21627_tef_temperance_reel.tef`, 207 texts.
+    - `2`: printed above, like 0.
+    - `3`: on the staff near its string. FMB's 88 "etc.".
+
+    The string row is only the track: Tennessee Waltz's lyrics on rows 4–5
+    and Blackberry Blossom's chord names on the bottom row all print above.
+    V3 byte 7 is a small signed nudge; V3 byte 9 is style (3).
+  - **Importers, both languages:** `"below"` when the value is 1. Any other
+    value leaves `place` absent. 3 is not kept, because a text on a string
+    line would collide with fret numbers; it draws above.
+  - **Writer:**
+    - An unedited original keeps its byte.
+    - Otherwise `"below"` writes 1 and above writes 0.
+    - So `place` round-trips, independent of `track`.
+  - **Editor:** the text popover's Above / Below choice sets it.
+  - **Drawing:** `"below"` texts go in the text-below lane, under the
+    right-hand fingering. FMB's m/i letters import as `"below"` texts first.
+    G21b then turns the matched ones into `note.finger`, and any leftover
+    letter stays a `"below"` text.
 - **`note.finger`** (`T I M R P`, right hand) and **`note.lh`** (`0`–`4`,
   left hand): unchanged.
   - G21c draws `lh` as a number above the note and `finger` below it.
