@@ -201,6 +201,9 @@ of the neck."
     - Reader edits were already safe (`submitted_by`, `x_corrected_by`,
       `x_derived_from` skip the file). The gap was hand edits made straight
       in `works/`.
+- **Mike, 2026-10-31:** fixing them programmatically "would be exciting",
+  but not in scope now. The focus is the page rendering. The options below
+  stay for later.
 - **Options for Mike:**
   1. **Correct the 27 diagrams by hand.** Voicings are drafted from each
      measure's notes and he approves them on the real page, after the
