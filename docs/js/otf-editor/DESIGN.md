@@ -35,6 +35,16 @@ one track at a time as strings and frets.
   leaves out before you press Save. The File menu of a song-page session is
   Open, Import .tef (new takes only), Save as, Submit, Cancel, Done; Submit sends a tab correction or a new tab through `submit-tab.js` (a
   `pending_songs` row, then `auto-commit-song`, which commits it to `works/`).
+- **Tab setup.** Score > Tab setup… is one panel (a bottom sheet on a phone) for
+  what the tab is rather than what is written on it: title, composer, key, time
+  signature and tempo for the whole tab; instrument, tuning and capo for the
+  current track. Tuning is a preset for the instrument or Custom, one pitch box
+  per string. Apply is one undo step. Every note keeps its string and fret when
+  the tuning changes, so the sound follows the tuning; the panel says so when the
+  track has notes. A change the notes forbid, a tuning with fewer strings than
+  some notes use or a time signature some notes do not fit, is a sentence in the
+  panel (the count and the first measure) and changes nothing. Time-signature
+  changes at a measure stay as they are and are not editable yet.
 - **Menu bar** (File, Edit, Note, Play, Score, View, Help) with every shortcut
   printed beside its item. Help > About opens this document.
 - **One command surface per device.** The menus are the single list of

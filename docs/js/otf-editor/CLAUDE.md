@@ -128,9 +128,9 @@ outside the block.
 
 `MODEL.md` beside this file holds the rules for per-note marks (fingering,
 effects, grace) versus placed free text, for tracks (a track's `id` is its
-name; `tracks[]` order is load-bearing; adding and deleting one), and for
-automatic duration (computed inside the facade's `_mutate`, never from the
-keyboard layer). Read it before changing any of them.
+name; `tracks[]` order is load-bearing), for Tab setup (tuning, capo, time
+signature, the title box) and for automatic duration (computed inside the
+facade's `_mutate`). Read it before changing any of them.
 
 ## Toolbar, menus, zoom
 
