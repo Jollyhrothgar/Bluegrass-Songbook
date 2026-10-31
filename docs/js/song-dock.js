@@ -26,20 +26,18 @@ import { escapeHtml } from './utils.js';
  *   wide     there is room for the chart beside the lyrics
  *   beside   (wide) the reader chose Lyrics + Chart rather than Lyrics
  *   versions the song has more than one version
- *   tracks   (a tab) [{id, label, on}] the staves it can show, All included
  *
  * A tab part carries `takes`: [{index, who, source, pinned, on}], the
  * arrangements of that instrument (work-view.js builds them).
  *
- * -> {kind, choices, tabs, tracks, versions}
+ * -> {kind, choices, tabs, versions}
  *   kind     'none' (nothing to choose), 'segmented' (Lyrics | Chart, two or
  *            three choices and nothing else) or 'sheet' (View ▾)
  *   choices  [{id, label, on}] ids: lyrics, both, chart, chords, notation
  *   tabs     [{id: partId, label, on, takes}] the other parts (tabs, documents)
- *   tracks   the same list, only when the tab has more than one
  */
 export function viewModel({ parts = [], active = null, hybrid = false, abcShown = false,
-    wide = false, beside = true, versions = false, tracks = [] } = {}) {
+    wide = false, beside = true, versions = false } = {}) {
     const lead = parts.find(p => p.type === 'lead-sheet');
     const chart = parts.find(p => p.type === 'chord-chart');
     const onLead = !!lead && active === lead;
@@ -58,13 +56,12 @@ export function viewModel({ parts = [], active = null, hybrid = false, abcShown 
     const tabs = parts
         .filter(p => p.type === 'tablature' || p.type === 'document')
         .map(p => ({ id: p.partId, label: p.label || p.type, on: p === active, takes: p.takes || [] }));
-    const staves = tracks.length > 1 ? tracks : [];
 
     let kind = 'none';
-    if (versions || choices.length + tabs.length > 1 || tabs.some(t => t.takes.length > 1) || staves.length) {
-        kind = !versions && !tabs.length && !hybrid && !staves.length && choices.length > 1 ? 'segmented' : 'sheet';
+    if (versions || choices.length + tabs.length > 1 || tabs.some(t => t.takes.length > 1)) {
+        kind = !versions && !tabs.length && !hybrid && choices.length > 1 ? 'segmented' : 'sheet';
     }
-    return { kind, choices, tabs, tracks: staves, versions: !!versions };
+    return { kind, choices, tabs, versions: !!versions };
 }
 
 // ---------------------------------------------------------------------------
@@ -191,18 +188,18 @@ function heading(text) {
 /**
  * Fill the View sheet: the choices, then Versions (filled by `renderVersions`
  * into a container: it carries the vote buttons and the Canonical / viewing
- * badges), then Tabs, then Tracks (a multi-track tab). A tab with several
+ * badges), then "Tabs for this song" (the staves inside a tab are switched on the staff
+ * itself, G23). A tab with several
  * takes drills into them (`›`): the sheet's title turns into a back button
  * (`title` is the sheet's heading element) and the rows are the takes, the
  * editor's pick starred and the one showing ticked.
  *
- * `onPick(id)` / `onPickTab(partId)` / `onPickTake(partId, index)` /
- * `onPickTrack(id)` act and close.
+ * `onPick(id)` / `onPickTab(partId)` / `onPickTake(partId, index)` act and close.
  */
 // "Banjo Tab" is the part's label; under the Tabs heading the word is redundant
 const instrumentName = (label) => String(label).replace(/\s+tab$/i, '');
 
-export function fillViewSheet(content, model, { onPick, onPickTab, onPickTake, onPickTrack, renderVersions, title = null }) {
+export function fillViewSheet(content, model, { onPick, onPickTab, onPickTake, renderVersions, title = null }) {
     const heading0 = title?.textContent;
     const list = () => {
         const el = document.createElement('div');
@@ -215,7 +212,7 @@ export function fillViewSheet(content, model, { onPick, onPickTab, onPickTake, o
         if (title) {
             title.innerHTML = '<button type="button" class="dock-back" aria-label="Back to View">‹</button> '
                 + `<span class="dock-title-text">${escapeHtml(instrumentName(tab.label))} tabs</span> `
-                + `<span class="dock-count">${tab.takes.length} takes</span>`;
+                + `<span class="dock-count">${tab.takes.length} versions</span>`;
             title.querySelector('.dock-back').addEventListener('click', showTop);
             title.querySelector('.dock-back').focus();
         }
@@ -253,30 +250,20 @@ export function fillViewSheet(content, model, { onPick, onPickTab, onPickTake, o
             renderVersions(host);
         }
         if (model.tabs.length) {
-            content.appendChild(heading('Tabs'));
+            content.appendChild(heading('Tabs for this song'));
             const tabs = list();
             for (const t of model.tabs) {
                 const drills = (t.takes?.length || 0) > 1;
                 const r = row(instrumentName(t.label), t.on, { part: t.id });
                 if (drills) {
                     r.querySelector('.dock-row-label').insertAdjacentHTML('afterend',
-                        `<span class="dock-count">${t.takes.length}</span>`);
+                        `<span class="dock-count">${t.takes.length} versions</span>`);
                     r.insertAdjacentHTML('beforeend', '<span class="dock-chev" aria-hidden="true">›</span>');
                 }
                 r.addEventListener('click', () => (drills ? showTakes(t) : onPickTab(t.id)));
                 tabs.appendChild(r);
             }
             content.appendChild(tabs);
-        }
-        if (model.tracks?.length) {
-            content.appendChild(heading('Tracks'));
-            const tracks = list();
-            for (const t of model.tracks) {
-                const r = row(t.label, t.on, { track: t.id });
-                r.addEventListener('click', () => onPickTrack(t.id));
-                tracks.appendChild(r);
-            }
-            content.appendChild(tracks);
         }
     }
     showTop();

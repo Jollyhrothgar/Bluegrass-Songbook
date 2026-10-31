@@ -86,9 +86,15 @@ selectors.
   (`const mixer = controls.querySelector(...)`), never re-query from the band
   at play time. Layout and Feel redraw the tab and rebuild the band, so the
   sheet is reopened on the new one (`redraw` in renderTablaturePart). View's
-  sheet lists Lyrics/Chart (if any), Tabs with their take counts (a part with
-  several takes drills in: ★ the editor's pick, ✓ the take showing; picking
-  one is `pickTake`) and Tracks (a multi-track tab; `pickTrack`). Above the
+  sheet lists Lyrics/Chart (if any) and "Tabs for this song" (a part with
+  several takes reads "9 versions ›" and drills in: ★ the editor's pick, ✓ the
+  take showing; picking one is `pickTake`). It has no Tracks section (G23):
+  the staves inside the open tab are switched on the staff header, where the
+  instrument name is a `TrackSwitcher` button, "Banjo ▾ 1 of 4" or
+  "All tracks ▾" (`docs/js/track-switcher.js`, shared with the tab editor's
+  phone header; `applyTrackView` / `pickTrack` in work-view.js; it sits on the
+  first staff showing, so under All the other staves keep their own names).
+  Above the
   music is one credit line (`renderTakeHeader`, `.arr-credit`) and the
   `.arr-status` notices; the takes bar and "View track" tabs are gone. The tab
   EDITOR keeps G17's band: `createTablatureControls(otf, part, {editing:
@@ -179,8 +185,10 @@ under it), `.tab-repeat-group`, `.tab-feel-group`, `.tab-loop-toggle`,
 `.tab-display-store` while the sheet is closed, so open it before touching
 them. In the tab's View sheet: `[data-part]` rows (`.dock-count`, `.dock-chev`
 when a part has several takes; clicking drills into `.dock-take` rows with
-`.dock-pin` ★, `.on`, `.dock-take-who`, and `.dock-back` in the title) and
-`[data-track]` rows (`all` included). Above the music: `.arr-credit`,
+`.dock-pin` ★, `.on`, `.dock-take-who`, and `.dock-back` in the title). There
+are no `[data-track]` rows any more: switch staves with
+`.track-info .track-switcher-button` and `.track-switcher-item`
+(`e2e/track-switcher-read.spec.js`). Above the music: `.arr-credit`,
 `.arr-status`, `.arr-skipped`; the takes bar (`.arr-bar`, `#arr-list`) and
 `.track-view-tabs` are gone. To assert what Play was asked for, stub
 `TabPlayer.prototype.play` as `song-docks.spec.js` does (`stubPlay`). The tab

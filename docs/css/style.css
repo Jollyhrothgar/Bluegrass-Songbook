@@ -7682,6 +7682,48 @@ body.dungeon-mode #search-stats {
     color: var(--text);
 }
 
+/* Track switcher (G23; docs/js/track-switcher.js): the name above a staff as a
+   button with a short list under it, on the read view (every width) and in
+   the tab editor (phones). One copy, here. */
+.track-info.has-track-switcher { position: relative; }
+.track-switcher-button, .track-switcher-item {
+    min-height: 44px;
+    padding: 0 12px;
+    border: 1px solid var(--border, #ccc);
+    border-radius: 8px;
+    background: var(--bg, #fff);
+    color: var(--text, #222);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+.track-switcher-name { text-transform: capitalize; }
+.track-switcher-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    max-height: 60vh;
+    overflow-y: auto;
+    background: var(--bg, #fff);
+    border: 1px solid var(--border, #ccc);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+.track-switcher-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 0;
+    border-radius: 0;
+    font-weight: 400;
+    text-align: left;
+}
+.track-switcher-check { width: 1.2em; }
+
 .instrument-icon {
     font-size: 1.5rem;
 }

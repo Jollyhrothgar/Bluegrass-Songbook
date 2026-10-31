@@ -1,8 +1,8 @@
-// The phone's track switcher: the track name above the tab becomes a
+// The track switcher (G20a phone editor, G23 read view): the track name above the tab becomes a
 // "Mandolin ▾ 1 of 4" button that lists the tracks. Desktop and one-track
 // files are left exactly as the renderer drew them.
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { TrackSwitcher, trackSwitcherLabel } from '../../otf-editor/track-switcher.js';
+import { TrackSwitcher, trackSwitcherLabel, friendlyTrackName } from '../track-switcher.js';
 
 const mkState = (ids, trackId = ids[0]) => ({
     trackId,
@@ -33,13 +33,19 @@ describe('trackSwitcherLabel', () => {
 });
 
 describe('TrackSwitcher', () => {
-    let phone, onChoose;
+    let phone;
     beforeEach(() => {
         document.body.innerHTML = '';
         phone = true;
-        onChoose = vi.fn();
     });
-    const make = (state) => new TrackSwitcher({ state, isPhone: () => phone, onChoose });
+    // The tab editor's adapter (otf-editor/editor.js)
+    const make = (state, extra) => new TrackSwitcher({
+        getTracks: () => state.getTracks(),
+        getActive: () => state.trackId,
+        choose: (id) => state.setTrack(id),
+        enabled: () => phone,
+        extra,
+    });
 
     it('turns the name into a labelled button on a phone with 2+ tracks', () => {
         const info = trackInfo('mandolin');
@@ -76,7 +82,6 @@ describe('TrackSwitcher', () => {
         expect(items.map(i => i.getAttribute('aria-checked'))).toEqual(['false', 'true', 'false']);
         items[2].click();
         expect(state.setTrack).toHaveBeenCalledWith('fiddle');
-        expect(onChoose).toHaveBeenCalled();
         expect(info.querySelector('.track-switcher-list')).toBeNull();
     });
 
@@ -114,5 +119,70 @@ describe('TrackSwitcher', () => {
         btn.click();
         document.body.dispatchEvent(new Event('pointerdown', { bubbles: true }));
         expect(info.querySelector('.track-switcher-list')).toBeNull();
+    });
+});
+
+describe('friendlyTrackName', () => {
+    it('uses the track name when the file has one', () => {
+        expect(friendlyTrackName({ id: 'guitar-2', name: 'Rhythm Guitar' })).toBe('Rhythm Guitar');
+    });
+    it('otherwise makes the id readable', () => {
+        expect(friendlyTrackName({ id: 'guitar-2' })).toBe('Guitar 2');
+        expect(friendlyTrackName({ id: 'banjo', name: '  ' })).toBe('Banjo');
+        expect(friendlyTrackName({ id: 'upright_bass' })).toBe('Upright bass');
+    });
+});
+
+describe('TrackSwitcher in the read view (labels, extra items)', () => {
+    const tracks = [
+        { id: 'banjo', label: 'Banjo' }, { id: 'guitar', label: 'Guitar' },
+        { id: 'guitar-2', label: 'Guitar 2' }, { id: 'bass', label: 'Bass' },
+    ];
+    const extra = [{ id: 'all', label: 'All tracks' }];
+    let active, chosen, enabled;
+    beforeEach(() => {
+        document.body.innerHTML = '';
+        active = 'banjo'; chosen = []; enabled = true;
+    });
+    const make = () => new TrackSwitcher({
+        getTracks: () => tracks, getActive: () => active,
+        choose: (id) => { chosen.push(id); active = id; }, enabled: () => enabled, extra,
+    });
+
+    it('labels a track by its friendly name and place; All reads "All tracks ▾"', () => {
+        expect(trackSwitcherLabel(tracks, 'banjo', extra)).toBe('Banjo ▾ 1 of 4');
+        expect(trackSwitcherLabel(tracks, 'guitar-2', extra)).toBe('Guitar 2 ▾ 3 of 4');
+        expect(trackSwitcherLabel(tracks, 'all', extra)).toBe('All tracks ▾');
+        expect(trackSwitcherLabel(tracks.slice(0, 1), 'banjo', extra)).toBeNull();
+    });
+
+    it('lists the tracks then the extra items; choosing All calls choose("all") and relabels', () => {
+        const info = trackInfo('banjo');
+        const sw = make();
+        sw.decorate(info);
+        expect(info.querySelector('button').textContent).toBe('Banjo ▾ 1 of 4');
+        info.querySelector('button').click();
+        const items = [...info.querySelectorAll('[role="menuitemradio"]')];
+        expect(items.map(i => i.textContent.replace('✓', ''))).toEqual(['Banjo', 'Guitar', 'Guitar 2', 'Bass', 'All tracks']);
+        items[4].click();
+        expect(chosen).toEqual(['all']);
+        sw.decorate(info);                         // the host redraws after choosing
+        expect(info.querySelector('button').textContent).toBe('All tracks ▾');
+        info.querySelector('button').click();
+        expect(info.querySelector('[aria-checked="true"]').textContent).toContain('All tracks');
+    });
+
+    it('enabled() false gives the plain name back, and true brings the button again', () => {
+        const info = trackInfo('banjo');
+        const sw = make();
+        sw.decorate(info);
+        enabled = false;
+        sw.decorate(info);
+        expect(info.querySelector('button')).toBeNull();
+        expect(info.querySelector('strong').textContent).toBe('banjo');
+        expect(info.classList.contains('has-track-switcher')).toBe(false);
+        enabled = true;
+        sw.decorate(info);
+        expect(info.querySelector('button').textContent).toBe('Banjo ▾ 1 of 4');
     });
 });

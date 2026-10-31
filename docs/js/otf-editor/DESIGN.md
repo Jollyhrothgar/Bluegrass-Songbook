@@ -203,7 +203,7 @@ to the track now at the same index; otherwise the next `getNotation()` would
 mint an empty measure list under the dead name. The toolbar re-reads the track
 row on every `change`, so undoing a rename relabels the button.
 
-**Phone track switcher (G20a, `track-switcher.js`).** G17 hides the toolbar's
+**Phone track switcher (G20a, `docs/js/track-switcher.js`, shared with the read view since G23).** G17 hides the toolbar's
 Track row at `PHONE_MAX_WIDTH`, so on a phone with two or more tracks the track
 name above the tab is a button, "mandolin ▾ 1 of 4" (`aria-haspopup`,
 `aria-expanded`, 44px tall). It opens a short list of the tracks with a check on

@@ -710,17 +710,17 @@ test.describe('Display on a tab', () => {
 });
 
 test.describe('View on a tab', () => {
-    test('lists the tabs with their take counts and the tracks, and the part tabs are gone', async ({ page }) => {
+    test('lists the song\'s tabs with their version counts, with no Tracks (those are on the staff)', async ({ page }) => {
         await gotoTab(page, '/#work/foggy-mountain-breakdown/ensemble');
         const sheet = await openDock(page, 'view');
-        await expect(sheet.locator('.dock-sheet-heading')).toHaveText(['Tabs', 'Tracks']);
+        await expect(sheet.locator('.dock-sheet-heading')).toHaveText(['Tabs for this song']);
         const banjo = sheet.locator('[data-part="banjo-tab"]');
         await expect(banjo).toContainText('Banjo');
-        await expect(banjo.locator('.dock-count')).toHaveText(/^\d+$/);
+        await expect(banjo.locator('.dock-count')).toHaveText(/^\d+ versions$/);
         await expect(banjo.locator('.dock-chev')).toBeVisible();
         await expect(sheet.locator('[data-part].on')).toContainText('Ensemble');
-        await expect(sheet.locator('[data-track]')).not.toHaveCount(0);
-        await expect(sheet.locator('[data-track="all"]')).toBeVisible();
+        await expect(sheet.locator('[data-track]')).toHaveCount(0);
+        await expect(sheet).not.toContainText('Tracks');
     });
 
     test('a part with several takes drills into them, the pick starred and the one showing ticked', async ({ page }) => {
@@ -728,7 +728,7 @@ test.describe('View on a tab', () => {
         const who = (await page.locator('.arr-credit .arr-who').textContent()).trim();
         const sheet = await openDock(page, 'view');
         await sheet.locator('[data-part="banjo-tab"]').click();
-        await expect(sheet.locator('.notes-sheet-title')).toContainText(/Banjo tabs\s+\d+ takes/);
+        await expect(sheet.locator('.notes-sheet-title')).toContainText(/Banjo tabs\s+\d+ versions/);
         const takes = sheet.locator('.dock-take');
         expect(await takes.count()).toBeGreaterThan(1);
         await expect(takes.first().locator('.dock-pin')).toHaveText('★');
@@ -759,22 +759,6 @@ test.describe('View on a tab', () => {
         await sheet.locator('.dock-take').nth(1).click();
         await expect(page).toHaveURL(/banjo-tab/);
         await expect(page.locator('.arr-credit')).toContainText('Banjo tab by');
-    });
-
-    test('Tracks switch which staff shows, and All shows them all', async ({ page }) => {
-        await gotoTab(page, '/#work/foggy-mountain-breakdown/ensemble');
-        const sections = page.locator('.tablature-track-section');
-        const visible = () => sections.evaluateAll(els => els.filter(e => e.style.display !== 'none').map(e => e.dataset.trackId));
-        expect(await visible()).toHaveLength(1);
-        const sheet = await openDock(page, 'view');
-        const other = await sheet.locator('[data-track]:not(.on):not([data-track="all"])').first().getAttribute('data-track');
-        await sheet.locator(`[data-track="${other}"]`).click();
-        expect(await visible()).toEqual([other]);
-
-        const again = await openDock(page, 'view');
-        await expect(again.locator(`[data-track="${other}"]`)).toHaveClass(/on/);
-        await again.locator('[data-track="all"]').click();
-        expect((await visible()).length).toBeGreaterThan(1);
     });
 });
 

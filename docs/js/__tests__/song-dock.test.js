@@ -88,7 +88,6 @@ describe('viewModel on a tab', () => {
     const nineTakes = Array.from({ length: 9 }, (_, i) => take(i, `picker${i}`));
     const banjo9 = { ...banjo, takes: nineTakes };
     const ensemble = { type: 'tablature', partId: 'ensemble-tab', label: 'Ensemble', takes: [take(0, 'GuitarTom2')] };
-    const tr = (id, on) => ({ id, label: id, on });
 
     it('hands each tab its takes, and a part with more than one take drills', () => {
         const m = viewModel({ parts: [banjo9, ensemble], active: ensemble });
@@ -102,14 +101,11 @@ describe('viewModel on a tab', () => {
         expect(viewModel({ parts: [one], active: one }).kind).toBe('none');
     });
 
-    it('tracks appear only when the tab has more than one', () => {
+    it('the model carries no tracks: staves are switched on the staff (G23)', () => {
         const one = { ...banjo, takes: [take(0, 'a')] };
-        const alone = viewModel({ parts: [one], active: one, tracks: [tr('banjo', true)] });
-        expect(alone.tracks).toEqual([]);
-        expect(alone.kind).toBe('none');
-        const m = viewModel({ parts: [one], active: one, tracks: [tr('banjo', true), tr('guitar', false), tr('all', false)] });
-        expect(m.tracks.map(t => t.id)).toEqual(['banjo', 'guitar', 'all']);
-        expect(m.kind).toBe('sheet');
+        const m = viewModel({ parts: [one], active: one, tracks: [{ id: 'banjo' }, { id: 'guitar' }] });
+        expect(m).not.toHaveProperty('tracks');
+        expect(m.kind).toBe('none');
     });
 
     it('a lyric page lists the same tabs with their takes', () => {
@@ -188,7 +184,7 @@ describe('the View sheet', () => {
         const el = document.createElement('div');
         const renderVersions = vi.fn((host) => { host.innerHTML = '<div class="arrangement-item">Original</div>'; });
         fillViewSheet(el, model, { onPick: vi.fn(), onPickTab: vi.fn(), renderVersions });
-        expect([...el.querySelectorAll('.dock-sheet-heading')].map(h => h.textContent)).toEqual(['Versions', 'Tabs']);
+        expect([...el.querySelectorAll('.dock-sheet-heading')].map(h => h.textContent)).toEqual(['Versions', 'Tabs for this song']);
         expect(el.querySelector('.dock-versions .arrangement-item')).toBeTruthy();
         const rows = [...el.querySelectorAll('.dock-row')];
         expect(rows.map(r => r.textContent.replace(/\s+/g, ' ').trim())).toEqual(['Lyrics✓', 'Chart', 'Banjo']);
@@ -221,34 +217,31 @@ describe('the View sheet on a tab (G19c)', () => {
             { id: 'mando', label: 'Mandolin Break', on: false, takes: [take(0, 'solo')] },
             { id: 'banjo', label: 'Banjo Tab', on: true, takes: [take(0, 'schlange'), take(1, 'banjomike'), take(2, 'tabmaster')] },
         ],
-        tracks: [{ id: 'banjo', label: 'banjo', on: true }, { id: 'all', label: 'All', on: false }],
     };
     const build = (over = {}) => {
         const sheet = document.createElement('div');
         sheet.innerHTML = '<div class="notes-sheet-header"><h2 class="notes-sheet-title">View</h2></div><div class="c"></div>';
         const content = sheet.querySelector('.c');
-        const fns = { onPick: vi.fn(), onPickTab: vi.fn(), onPickTake: vi.fn(), onPickTrack: vi.fn(), renderVersions: vi.fn(),
+        const fns = { onPick: vi.fn(), onPickTab: vi.fn(), onPickTake: vi.fn(), renderVersions: vi.fn(),
             title: sheet.querySelector('.notes-sheet-title'), ...over };
         fillViewSheet(content, model, fns);
         return { sheet, content, fns };
     };
 
-    it('lists the tabs with their take counts, then the tracks', () => {
+    it('lists the tabs under "Tabs for this song" with their version counts, and no Tracks', () => {
         const { content } = build();
-        expect([...content.querySelectorAll('.dock-sheet-heading')].map(h => h.textContent)).toEqual(['Tabs', 'Tracks']);
+        expect([...content.querySelectorAll('.dock-sheet-heading')].map(h => h.textContent)).toEqual(['Tabs for this song']);
         const banjo = content.querySelector('[data-part="banjo"]');
-        expect(banjo.querySelector('.dock-count').textContent).toBe('3');
+        expect(banjo.querySelector('.dock-count').textContent).toBe('3 versions');
         expect(banjo.querySelector('.dock-chev')).toBeTruthy();
         expect(content.querySelector('[data-part="mando"] .dock-chev')).toBeNull();   // one take: picks straight away
-        expect(content.querySelectorAll('[data-track]')).toHaveLength(2);
+        expect(content.querySelectorAll('[data-track]')).toHaveLength(0);
     });
 
-    it('a part with one take picks it; a track picks itself', () => {
+    it('a part with one take picks it', () => {
         const { content, fns } = build();
         content.querySelector('[data-part="mando"]').click();
         expect(fns.onPickTab).toHaveBeenCalledWith('mando');
-        content.querySelector('[data-track="all"]').click();
-        expect(fns.onPickTrack).toHaveBeenCalledWith('all');
     });
 
     it('a part with takes drills in: a back header, the takes with the pick and the one showing, and back again', () => {
@@ -257,7 +250,7 @@ describe('the View sheet on a tab (G19c)', () => {
         expect(fns.onPickTab).not.toHaveBeenCalled();
         const title = sheet.querySelector('.notes-sheet-title');
         expect(title.textContent).toContain('Banjo');
-        expect(title.textContent).toContain('3 takes');
+        expect(title.textContent).toContain('3 versions');
         const rows = [...content.querySelectorAll('.dock-take')];
         expect(rows.map(r => r.querySelector('.dock-take-who').textContent)).toEqual(['schlange', 'banjomike', 'tabmaster']);
         expect(rows[0].querySelector('.dock-pin').textContent).toBe('★');
