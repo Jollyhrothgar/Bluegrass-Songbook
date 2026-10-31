@@ -181,20 +181,68 @@ song page and in the tab editor:
 - **Collisions:** nothing overprints anywhere in the tab.
 - **The other tracks:** the guitar track shows its own "etc." and banners.
 
-## Who builds what (Mike to confirm)
+## Who builds what (Mike, 2026-10-30)
 
-- **Recommended:**
-  - G21a–d to the song-page session (G19), because they are one data flow
-    ending in the renderer.
-  - G21e to the tab editor session, after G20.
-- **Coordination:** the importers and the OTF schema sit in the tab editor
-  session's area. That session confirmed on 2026-10-30 that G20 changes no
-  schema and doesn't touch lanes or annotations. Each piece pings it before
-  starting.
+Split by layer, so neither session edits code that sits under the other's
+tests. The pieces above (a–e) stay as the order of work; each piece's data
+half and drawing half belong to different sessions.
+
+| | The tab editor session (data) | The song-page session (drawing) |
+|---|---|---|
+| G21a ownership | OTF 1.3 `annotations[].track`; both importers fill it from `string_row`; the `.tef` writer writes it back; the re-import (dry-run counts to Mike first); texts the editor adds carry their track | `attachOtfDecorations(notation, otf, trackId)` draws a track's own texts only; a track-less text draws on the first track |
+| G21b fingering | importers turn typed t/i/m/r/p into `note.finger`; the writer keeps it; the re-import | nothing new: the renderer already draws `note.finger` (G21c moves its lane) |
+| G21c lanes | — | lanes for chords, text, effects, left-hand numbers above the notes and right-hand fingering below; sized from content through `topMargin` / `rowData`; the four tuning names |
+| G21d chords | OTF 1.3 `annotations[].kind`; one shared chord parser (Python and JS, pinned fixture); importers classify; the writer keeps it | the chord lane, drawn with chord glyphs |
+| G21e entry | the chord picker in the tab editor | — |
+
+**Why this split** (the song-page session's recommendation, which Mike
+accepted):
+- The `.tef` writer (G15f) and its round-trip gates sit directly on
+  annotations: the 602-file round trip and TablEdit's own check. The session
+  that built them owns any change to what they carry.
+- The fields are optional, so the drawing side can start straight after G19c
+  without waiting for the data.
+
+## The contract (OTF 1.3)
+
+Both sides build against this. Any change to it is agreed by both sessions
+first.
+
+- **`annotations[].track`** (optional string): the `id` of the track the text
+  belongs to.
+  - Absent means a text from before 1.3, or from a file with no track
+    information.
+  - The renderer draws an annotation only on its track, and a track-less one
+    on the first track only.
+- **`annotations[].kind`** (optional, `"text"` or `"chord"`; absent means
+  `"text"`):
+  - `"chord"` means `text` is a chord as written (`G`, `em`, `(em)`,
+    `A (G)`, `A(7)`, `D/F#`) that the shared parser accepts.
+  - The renderer draws `"chord"` in the chord lane and everything else in the
+    text lanes.
+  - The data side publishes the parser at an agreed path, proposed
+    `docs/js/tab-chord.js` `parseTabChord(text)`, returning the parts or
+    `null`. Until it exists, the renderer draws a chord's `text` as written,
+    in the chord lane.
+- **`note.finger`** (`T I M R P`, right hand) and **`note.lh`** (`0`–`4`,
+  left hand): unchanged.
+  - G21c draws `lh` as a number above the note and `finger` below it.
+  - G21b fills `finger` from typed letters.
+- **Version:** `otf_version` 1.3 is a minor bump (`docs/schema/otf.md`). The
+  data side bumps the schema, validators, `otf-format.js` `KEY_ORDER`,
+  `otf_format.py` and fixtures. The renderer reads whichever version it gets.
 
 ## Sequence
 
-1. After G19c (tab dock + set lists) merges, which is in review now.
-2. Then G21a → G21b → G21c → G21d.
-3. G21e follows G20.
-4. G19d (tidy) can slot in anywhere; it's small.
+1. G19c (tab dock + set lists) is in review (#349). The tab editor session's
+   G20 (#348) is in review.
+2. **Drawing side**, after G19c:
+   - G21c lanes and tuning names, together with G21a's renderer filter and
+     G21d's chord lane;
+   - all inert until the data arrives;
+   - the lanes already help today on the 95 tabs that carry `finger` or `lh` (86 and 13, 4 with both).
+3. **Data side**, after G20: G21a, G21b and G21d's data parts, then the
+   re-import (dry run to Mike first), then G21e.
+4. The litmus (Foggy Mountain Breakdown) passes once both sides are in and
+   the re-import has run.
+5. G19d (tidy) can slot in anywhere; it's small.
