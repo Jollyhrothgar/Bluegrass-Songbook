@@ -67,3 +67,29 @@ into it.
   - Asked for 3 more V2 files (15127, with lyrics on the middle and bottom
     rows; 967, with 92 bottom-row texts; 2992, with 6 tracks) before writing
     the importer rule.
+- 2026-10-31 · TablEdit PDFs, rounds 2–4 (mike-air). **"Above or below" is a
+  stored flag, not the string row.**
+  - Tennessee Waltz (15127) puts its lyrics on rows 4 and 5, and they print
+    above. Blackberry Blossom (967) puts 92 chord names on the bottom row,
+    and they print above too.
+  - In V2 the flag is text-record byte 4. Its low bits (3 or 5) look like
+    style. The high bits, against TablEdit's printout:
+    - `0x00`: above. 16,306 records in 280 files.
+    - `0x20`: below the staff. 4,140 records in 33 files: FMB's m/i
+      (`0x23`) and Brilliancy's "Part A:" (m2).
+    - `0x60`: on the staff near its string. 342 records in 15 files: FMB's
+      guitar "etc." (`0x63`) and Fire on the Mountain's "-P" (m17).
+    - `0x40`: prints above like `0x00`. 174 records in 7 files, e.g. Over
+      the Waterfall m9.
+  - V3: record byte 9 is 0x03 on almost every text, and no corpus V3 text
+    has 0x20 or 0x40. But writing 0x23, 0x63 or 0x43 into byte 9 of
+    Temperance Reel (m1, m3, m5) changed nothing; all three still print
+    above. So V3 encodes "below" elsewhere, or not at all.
+  - Next: have TablEdit save FMB 1481 and Brilliancy 11655 as V3 copies, and
+    read how it encodes their below texts. The writer only writes V3.
+  - Agreed with the G19 session:
+    - `0x20` → `place: "below"`; everything else → absent (above).
+    - The writer restores the original byte.
+    - `track` and `place` are independent.
+  - Told the G21a agent: no last-row placement for "below"; texts go on the
+    track's first row or keep their original row.
