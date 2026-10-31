@@ -139,7 +139,7 @@ export function registerTabSetupFlows(test, expect) {
                 await panel.locator('.apply-btn').click();
                 await expect(panel.locator('.tab-setup-error')).toHaveText(
                     'This tuning has 4 strings, but 1 note is on string 5; the first is in measure 3. '
-                    + 'Move or delete them first.');
+                    + 'Move or delete it first.');
                 const unchanged = await doc(page);
                 expect(unchanged.tracks[0]).toMatchObject({ instrument: '5-string-banjo' });
                 expect(unchanged.tracks[0].tuning).toHaveLength(5);

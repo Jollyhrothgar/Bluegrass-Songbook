@@ -122,7 +122,7 @@ describe('Score ▸ Tab setup…', () => {
         pick('.tab-setup-instrument', 'mandolin');
         $('.apply-btn').click();
         expect($('.tab-setup-error').textContent).toBe(
-            'This tuning has 4 strings, but 1 note is on string 5; the first is in measure 1. Move or delete them first.');
+            'This tuning has 4 strings, but 1 note is on string 5; the first is in measure 1. Move or delete it first.');
         expect(panel().opened).toBe(true);
         expect(editor.state.otf.tracks[0].instrument).toBe('5-string-banjo');
         expect(editor.state.otf.tracks[0].tuning).toHaveLength(5);

@@ -296,7 +296,12 @@ export class TabSetupPopover {
         this.overlay.style.display = 'flex';
         this.isOpen = true;
         // After a menu click the menu hands focus back to the editor as it closes
-        const focusFirst = () => this.element?.querySelector('.tab-setup-title')?.focus();
+        const focusFirst = () => {
+            // not once they have started typing somewhere in the panel
+            if (this.element && !this.element.contains(document.activeElement)) {
+                this.element.querySelector('.tab-setup-title')?.focus();
+            }
+        };
         focusFirst();
         setTimeout(focusFirst, 0);
         requestAnimationFrame(focusFirst);

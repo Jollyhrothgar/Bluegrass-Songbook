@@ -1796,7 +1796,7 @@ export class EditingFacade {
         const where = lowest === highest ? `string ${lowest}` : `strings ${lowest} to ${highest}`;
         return `This tuning has ${count} ${count === 1 ? 'string' : 'strings'}, but ${notes} `
             + `${notes === 1 ? 'note is' : 'notes are'} on ${where}; the first is in measure ${firstMeasure}. `
-            + 'Move or delete them first.';
+            + `Move or delete ${notes === 1 ? 'it' : 'them'} first.`;
     }
 
     _setTuning(pitches, trackId) {
