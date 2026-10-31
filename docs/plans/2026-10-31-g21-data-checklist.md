@@ -93,3 +93,18 @@ into it.
     - `track` and `place` are independent.
   - Told the G21a agent: no last-row placement for "below"; texts go on the
     track's first row or keep their original row.
+- 2026-10-31 · **V3 encoding found.** TablEdit saved FMB 1481 and Brilliancy
+  11655 as V3 copies (`/tmp/g21-place/v3/`). Placement is record byte 11:
+  - `0` above (457 FMB texts, 53 Brilliancy);
+  - `1` below (FMB's 426 m/i, Brilliancy's 3 "Part A:");
+  - `3` on the staff (FMB's 88 "etc." and 6 others).
+  - Byte 9 is style (3).
+  - So V2 byte 4 bits 5–6 carry the same value. `2` prints above
+    (Westphalia's 29 texts are at 2). V3 21627 has 207 texts at 1.
+  - Rule sent to the G21a agent: the importers set `"below"` iff the value
+    is 1; the writer keeps the original byte, else writes 1 or 0; `place`
+    round-trips.
+  - Contract wording proposed to the G19 session; I edit the spec in the
+    G21a PR.
+  - mike-air: all inputs unchanged (md5); TablEdit quit. Scratch files are in
+    `mike-air:~/g21-place/`.
