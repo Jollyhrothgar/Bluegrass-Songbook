@@ -208,6 +208,8 @@ class OTFAnnotation:
     measure: int     # 1-indexed written measure
     tick: int        # Tick offset within the measure
     text: str
+    track: str | None = None   # id of the track whose string row the text sits on (1.3)
+    place: str | None = None   # "below" (TablEdit placement 1); None draws above (1.3)
 
 
 @dataclass
@@ -304,7 +306,9 @@ class OTFDocument:
         # Add placed free-text annotations if present
         if self.annotations:
             result["annotations"] = [
-                {"measure": a.measure, "tick": a.tick, "text": a.text}
+                {"measure": a.measure, "tick": a.tick, "text": a.text,
+                 **({"track": a.track} if a.track else {}),
+                 **({"place": a.place} if a.place else {})}
                 for a in self.annotations
             ]
 
@@ -1033,6 +1037,11 @@ def fold_slide_source_graces(otf_event: OTFEvent, pairs, all_events) -> None:
         otf_event.notes.remove(src)
 
 
+#: TablEdit's text placement value -> OTF ``place``. 0 and 2 print above and 3
+#: sits on the staff near its string; all three draw above, so ``place`` is absent.
+TEXT_PLACE = {1: "below"}
+
+
 def _diagram_track_index(string_counts: list[int], row: int) -> int | None:
     """Index of the track whose strings contain the cumulative string row."""
     if not string_counts:
@@ -1456,7 +1465,11 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
 
     # Placed free-text annotations (V3 0x39 components: "Long Choke",
     # chord letters, section banners). Positions share the note grid, so
-    # the same 64-units-per-measure math applies.
+    # the same 64-units-per-measure math applies. The string row counts
+    # strings across all tracks, so it names the track the text belongs to
+    # (the mapping chord diagrams use); a row past every track stays
+    # track-less (the renderer puts it on the first pitched track).
+    string_counts = [i.num_strings for i in tef.instruments]
     for te in tef.text_events:
         if tef.header.is_v2:
             index, offset = divmod(te.position, units_per_measure)
@@ -1464,10 +1477,14 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
         else:
             index, offset = tef.v3_locate(te.position)
             tick = offset * V3_TICKS_PER_UNIT
+        track_index = _diagram_track_index(string_counts, te.string_row)
+        has_track = track_index is not None and track_index < len(doc.tracks)
         doc.annotations.append(OTFAnnotation(
             measure=index + 1,
             tick=tick,
             text=te.text,
+            track=doc.tracks[track_index].id if has_track else None,
+            place=TEXT_PLACE.get(te.placement),
         ))
 
     chord_diagrams_to_otf(tef, doc, units_per_measure, V3_TICKS_PER_UNIT)

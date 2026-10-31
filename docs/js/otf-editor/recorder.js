@@ -321,7 +321,7 @@ export function dispatchEditorEvent(editor, event) {
         case 'setAnnotation':
             state.cursor.measure = params.measure;
             state.cursor.tick = params.tick;
-            state.setAnnotationAtCursor(params.text);
+            state.setAnnotationAtCursor(params.text, params.place);
             break;
 
         case 'deleteAnnotation':

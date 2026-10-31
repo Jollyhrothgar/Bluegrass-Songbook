@@ -386,6 +386,9 @@ export function normalizeSlideTiming(doc) {
     }
 }
 
+/** TablEdit's text placement value for "below the staff" (V3 text record byte 11, V2 byte 4 bits 5-6). */
+const TEXT_PLACE_BELOW = 1;
+
 // --- chord diagrams (G15d3) ---------------------------------------------------
 /** Index of the track whose strings contain the cumulative string row (null = none). */
 function diagramTrackIndex(stringCounts, row) {
@@ -657,15 +660,29 @@ export function tefToOtf(tef) {
     }
 
     // Placed free-text annotations (V3 0x39 components: "Long Choke",
-    // chord letters, section banners). Positions share the note grid.
+    // chord letters, section banners). Positions share the note grid. The
+    // string row counts strings across all tracks, so it names the track the
+    // text belongs to (the mapping chord diagrams use, schema 1.3); a row past
+    // every track stays track-less.
+    const textStringCounts = tef.instruments.map(i => i.num_strings);
     const annotations = (tef.text_events || []).map(te => {
+        let measure, tick;
         if (isV2) {
             const index = fdiv(te.position, unitsPerMeasure);
             const offset = te.position % unitsPerMeasure;
-            return { measure: index + 1, tick: fdiv((offset & ~3) * 15, 2), text: te.text };
+            measure = index + 1;
+            tick = fdiv((offset & ~3) * 15, 2);
+        } else {
+            const [index, offset] = v3Locate(tef, te.position);
+            measure = index + 1;
+            tick = offset * V3_TICKS_PER_UNIT;
         }
-        const [index, offset] = v3Locate(tef, te.position);
-        return { measure: index + 1, tick: offset * V3_TICKS_PER_UNIT, text: te.text };
+        const trackIndex = diagramTrackIndex(textStringCounts, te.string_row);
+        const annotation = { measure, tick, text: te.text };
+        if (trackIndex !== null && trackIndex < tracks.length) annotation.track = tracks[trackIndex].id;
+        // TablEdit's placement value: 1 is below the staff; 0, 2 and 3 all draw above, so place stays absent.
+        if (te.placement === TEXT_PLACE_BELOW) annotation.place = 'below';
+        return annotation;
     });
 
     // Repeat signs (schema 1.2): one entry per marked measure, ascending; the

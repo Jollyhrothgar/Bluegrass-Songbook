@@ -899,7 +899,7 @@ export class NoteEntryPopover {
 export class AnnotationPopover {
     constructor(options = {}) {
         this.options = {
-            onCommit: null,   // (text) => void — '' means delete
+            onCommit: null,   // (text, place) => void — '' means delete; place is 'above' or 'below'
             onDelete: null,
             onCancel: null,
             ...options,
@@ -910,6 +910,7 @@ export class AnnotationPopover {
         this.input = null;
         this.isOpen = false;
         this.context = null;   // {measure, tick, existing}
+        this.place = 'above';  // the Above / Below choice
 
         this._onKeyDown = this._onKeyDown.bind(this);
     }
@@ -959,6 +960,29 @@ export class AnnotationPopover {
                 font-size: 11px;
                 color: var(--text-muted, #888);
                 margin-top: 8px;
+            }
+
+            .otf-annotation-popover .annotation-place {
+                display: flex;
+                gap: 6px;
+                margin-top: 10px;
+            }
+
+            .otf-annotation-popover .annotation-place button {
+                flex: 1;
+                padding: 6px 10px;
+                font-size: 13px;
+                border: 1px solid var(--border, #ddd);
+                border-radius: 6px;
+                background: var(--bg, #fff);
+                color: var(--text, #333);
+                cursor: pointer;
+            }
+
+            .otf-annotation-popover .annotation-place button[aria-pressed="true"] {
+                border-color: var(--accent, #007bff);
+                background: var(--accent, #007bff);
+                color: var(--on-accent, #fff);
             }
 
             .otf-annotation-popover .annotation-suggestions {
@@ -1012,6 +1036,10 @@ export class AnnotationPopover {
                         Measure ${this.context.measure}, beat ${this.context.beatLabel}
                         · empty text deletes
                     </div>
+                    <div class="annotation-place" role="group" aria-label="Where the text sits">
+                        <button type="button" data-place="above" aria-pressed="${this.place === 'above'}">Above the staff</button>
+                        <button type="button" data-place="below" aria-pressed="${this.place === 'below'}">Below the staff</button>
+                    </div>
                     <div class="annotation-suggestions">${chips}</div>
                 </div>
             </div>
@@ -1035,6 +1063,15 @@ export class AnnotationPopover {
 
         const del = this.element.querySelector('.delete-btn');
         del?.addEventListener('click', () => this._delete());
+
+        this.element.querySelectorAll('.annotation-place button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                this.place = btn.dataset.place;
+                this.element.querySelectorAll('.annotation-place button').forEach(
+                    b => b.setAttribute('aria-pressed', String(b === btn)));
+                this.input.focus();
+            });
+        });
 
         this.element.querySelectorAll('.annotation-suggestion').forEach(btn => {
             btn.addEventListener('click', () => {
@@ -1068,7 +1105,7 @@ export class AnnotationPopover {
     _commit() {
         const text = (this.input?.value || '').trim();
         this._closeQuietly();
-        this.options.onCommit?.(text);
+        this.options.onCommit?.(text, this.place);
     }
 
     _delete() {
@@ -1078,9 +1115,11 @@ export class AnnotationPopover {
 
     /**
      * Open the prompt for a cursor position.
-     * @param {Object} context - {measure, tick, existing, beatLabel}
+     * @param {Object} context - {measure, tick, existing, beatLabel, place}
+     *   (`place` is 'above' by default, or 'below' the staff)
      */
     open(context = {}) {
+        this.place = context.place === 'below' ? 'below' : 'above';
         this.context = {
             measure: context.measure ?? 1,
             tick: context.tick ?? 0,

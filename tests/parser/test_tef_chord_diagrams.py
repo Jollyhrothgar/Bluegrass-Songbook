@@ -112,7 +112,7 @@ def test_output_is_valid_schema_1_2(path):
 
 def test_text_annotation_and_diagram_coexist():
     """V3 fixture: a 0x39 text at m1 +8 stays an annotation."""
-    assert otf_of(V3)["annotations"] == [{"measure": 1, "tick": 240, "text": "G"}]
+    assert otf_of(V3)["annotations"] == [{"measure": 1, "tick": 240, "text": "G", "track": "banjo"}]
 
 
 def test_v2_table_that_does_not_parse_reports_the_diagrams(tmp_path):

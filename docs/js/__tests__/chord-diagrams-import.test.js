@@ -53,8 +53,8 @@ describe('chord diagrams: V3 import', () => {
         expect(tef.chord_anchors).toHaveLength(4);
     });
 
-    it('keeps the text annotation and emits a valid 1.2 document', () => {
-        expect(otf.annotations).toEqual([{ measure: 1, tick: 240, text: 'G' }]);
+    it('keeps the text annotation and emits a valid document', () => {
+        expect(otf.annotations).toEqual([{ measure: 1, tick: 240, text: 'G', track: 'banjo' }]);
         expect(otf.x_source).toEqual({ skipped: DECOYS });
         expect(validateOTF(otf).errors).toEqual([]);
     });

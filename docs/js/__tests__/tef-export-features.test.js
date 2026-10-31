@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseTef } from '../tef-import/index.js';
-import { headerString, isV3Layout, tabByFromComments } from '../tef-import/reader.js';
+import { headerString, isV3Layout, tabByFromComments, parseTefBytes } from '../tef-import/reader.js';
 import { decodeDurationCode } from '../tef-import/reader.js';
 import { writeTef, TefWriteError } from '../tef-export/writer.js';
 import { noticeLine, noticeSummary, NOTICE_LABELS } from '../tef-export/notices.js';
@@ -156,8 +156,8 @@ describe('.tef writer: feature fixtures (write -> parse -> equal)', () => {
         const otf = doc({
             metadata: { title: 'Marked up', time_signature: '4/4', tempo: 77, tab_by: { name: 'Jess Picker', url: 'https://example.com/jess' } },
             notation: { banjo },
-            annotations: [{ measure: 1, tick: 0, text: 'G' }, { measure: 1, tick: 0, text: 'Intro' },
-                { measure: 2, tick: 960, text: 'Keep this loose' }, { measure: 4, tick: 1440, text: 'Slide to the D' }],
+            annotations: [{ measure: 1, tick: 0, text: 'G', track: 'banjo' }, { measure: 1, tick: 0, text: 'Intro', track: 'banjo' },
+                { measure: 2, tick: 960, text: 'Keep this loose', track: 'banjo' }, { measure: 4, tick: 1440, text: 'Slide to the D', track: 'banjo' }],
             reading_list: [{ from_measure: 1, to_measure: 2, name: 'Part A' }, { from_measure: 3, to_measure: 4 },
                 { from_measure: 1, to_measure: 4, name: 'Whole tune, played once' }],
             measure_marks: [mark(1, 0x40), mark(2, 0x81), mark(3, 0x0a), mark(4, 0x08)],
@@ -628,6 +628,91 @@ describe('.tef writer: what a TablEdit export of the written file showed', () =>
                 expect(cellsOf(bytes, type).map(key).sort(), `${rel} ${type.toString(16)}`).toEqual(cellsOf(source, type).map(key).sort());
             }
         }
+    });
+
+    describe('annotation track (OTF 1.3)', () => {
+        const strings = { banjo: 5, guitar: 6, bass: 4 };      // rows 0-4, 5-10, 11-14
+        const three = (annotations) => doc({
+            tracks: [
+                { id: 'banjo', instrument: '5-string-banjo', tuning: ['D4', 'B3', 'G3', 'D3', 'G4'], capo: 0, role: 'lead', dyn: 'f' },
+                { id: 'guitar', instrument: '6-string-guitar', tuning: ['E4', 'B3', 'G3', 'D3', 'A2', 'E2'], capo: 0, role: 'rhythm', dyn: 'f' },
+                { id: 'bass', instrument: 'upright-bass', tuning: ['G2', 'D2', 'A1', 'E1'], capo: 0, role: 'rhythm', dyn: 'f' },
+            ],
+            notation: { banjo: [{ measure: 1, events: [ev(0, note(1, 0, 1920))] }, { measure: 2, events: [ev(960, note(1, 0, 960))] }], guitar: [], bass: [] },
+            annotations,
+        });
+        const rowOf = (bytes, text) => parseTefBytes(bytes, 'x').text_events.find(t => t.text === text).string_row;
+
+        it('a text with a track goes on that track\'s first string row and reads back on the track', () => {
+            expect(Object.values(strings).reduce((a, b) => a + b)).toBe(15);
+            const otf = three([
+                { measure: 2, tick: 0, text: 'banjo text', track: 'banjo' },
+                { measure: 2, tick: 0, text: 'guitar text', track: 'guitar' },
+                { measure: 2, tick: 0, text: 'bass text', track: 'bass' },
+                { measure: 2, tick: 480, text: 'chord', track: 'guitar', kind: 'chord' },
+            ]);
+            const { bytes, notices, back } = roundTrip(otf);
+            expect(rowOf(bytes, 'banjo text')).toBe(0);
+            expect(rowOf(bytes, 'guitar text')).toBe(5);
+            expect(rowOf(bytes, 'bass text')).toBe(11);
+            expect(rowOf(bytes, 'chord')).toBe(5);
+            expect(back.annotations.map(a => [a.text, a.track]).sort()).toEqual([
+                ['banjo text', 'banjo'], ['bass text', 'bass'], ['chord', 'guitar'], ['guitar text', 'guitar']]);
+            // kind is not stored in a .tef: the chord reads back as plain text
+            expect(back.annotations.every(a => !('kind' in a))).toBe(true);
+            expect(noticeLine(notices)).toBe('');
+        });
+
+        it('a track-less text behaves as before: the first free row of any track', () => {
+            const { bytes, back } = roundTrip(three([{ measure: 2, tick: 0, text: 'loose' }]));
+            expect(rowOf(bytes, 'loose')).toBe(0);
+            expect(back.annotations).toEqual([{ measure: 2, tick: 0, text: 'loose', track: 'banjo' }]);
+        });
+
+        it('a text whose track is taken by a note moves to the next row of the same track', () => {
+            const otf = three([{ measure: 1, tick: 0, text: 'busy', track: 'banjo' }]);
+            expect(rowOf(roundTrip(otf).bytes, 'busy')).toBe(1);      // row 0 holds the note at m1 tick 0
+        });
+
+        it('a text below the staff round-trips: placement byte 1 on the track\'s first row, no notice', () => {
+            const otf = three([{ measure: 2, tick: 0, text: 'under', track: 'guitar', place: 'below' },
+                { measure: 2, tick: 480, text: 'over', track: 'guitar', place: 'above' },
+                { measure: 2, tick: 960, text: 'plain', track: 'guitar' }]);
+            const { bytes, notices, back } = roundTrip(otf);
+            expect(rowOf(bytes, 'under')).toBe(5);
+            expect(noticeLine(notices)).toBe('');
+            const cells = cellsOf(bytes, 0x39);
+            const byte = (text, i) => cells.find(c => parseTefBytes(bytes, 'x').text_events.some(t => t.text === text
+                && t.position === c.pos && t.string_row === c.row))?.rec[i];
+            expect([byte('under', 11), byte('over', 11), byte('plain', 11)]).toEqual([1, 0, 0]);
+            expect([byte('under', 9), byte('over', 9)]).toEqual([3, 3]);
+            expect(back.annotations.map(a => [a.text, a.place]).sort())
+                .toEqual([['over', undefined], ['plain', undefined], ['under', 'below']]);
+        });
+
+        it('an unedited original keeps its placement byte; moving a text to the other side changes only that byte', () => {
+            const source = corpus('banjo-hangout/downloads/21627_tef_temperance_reel.tef');     // V3: 16 below, 48 above
+            const a = parseTef(source, 'x');
+            const placements = (b) => cellsOf(b, 0x39).map(c => `${c.pos}:${c.row}:${c.rec[9]}:${c.rec[11]}`).sort();
+            expect(placements(writeTef(a, { source, template }).bytes)).toEqual(placements(source));
+            const first = a.annotations.find(t => t.place === 'below');
+            const same = (t) => t.measure === first.measure && t.tick === first.tick && t.text === first.text;
+            const moved = { ...a, annotations: a.annotations.map(t => (same(t) ? { ...t, place: undefined } : t)) };
+            const { bytes } = writeTef(moved, { source, template });
+            const diff = placements(bytes).filter(x => !placements(source).includes(x));
+            expect(diff).toHaveLength(1);
+            expect(diff[0].endsWith(':0')).toBe(true);
+            expect(parseTef(bytes, 'x').annotations.filter(t => t.place === 'below')).toHaveLength(15);
+        });
+
+        it('an unedited original keeps the exact row it had, track and all', () => {
+            const source = corpus('flatpicker-hangout/downloads/3433_tef_gold_rush.tef');       // text on the second track
+            const a = parseTef(source, 'x');
+            const { bytes } = writeTef(a, { source, template });
+            const rows = (b) => parseTefBytes(b, 'x').text_events.map(t => `${t.position}:${t.string_row}:${t.text}`).sort();
+            expect(rows(bytes)).toEqual(rows(source));
+            expect(a.annotations.some(t => t.track !== a.tracks[0].id)).toBe(true);
+        });
     });
 
     it('moves text that is not in the original to a free cell instead', () => {

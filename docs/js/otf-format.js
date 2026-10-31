@@ -26,7 +26,7 @@ export const KEY_ORDER = {
     event: ['tick', 'notes'],
     note: ['s', 'f', 'dur', 'tie', 'tech', 'fx', 'grace', 'finger', 'lh', 'dyn'],
     grace: ['f', 'kind'],
-    annotation: ['measure', 'tick', 'text'],
+    annotation: ['measure', 'tick', 'text', 'track', 'kind', 'place'],
     reading: ['from_measure', 'to_measure', 'name'],
     tab_by: ['name', 'url'],
     tsc: ['measure', 'time_signature'],
