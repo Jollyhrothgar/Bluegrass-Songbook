@@ -393,6 +393,26 @@ describe('openTabFile analytics (tab_file_open)', () => {
     });
 });
 
+describe('openTabFile keeps the source file (G15f)', () => {
+    it('a .tef keeps its name and original bytes in the draft', async () => {
+        const store = createDraftStore({ backend: memoryBackend() });
+        const draft = await openTabFile(fakeFile('Sally.tef', { bytes: new Uint8Array([9, 8, 7]) }), {
+            store, navigate: vi.fn(), parseTef: () => OTF, track: vi.fn(),
+        });
+        const saved = await store.get(draft.id);
+        expect(saved.source.name).toBe('Sally.tef');
+        expect(new Uint8Array(saved.source.bytes)).toEqual(new Uint8Array([9, 8, 7]));
+    });
+
+    it('an .otf.json keeps its name, so Save as starts from the same format', async () => {
+        const store = createDraftStore({ backend: memoryBackend() });
+        const draft = await openTabFile(fakeFile('Sally.otf.json', { text: JSON.stringify(OTF) }), {
+            store, navigate: vi.fn(), track: vi.fn(),
+        });
+        expect((await store.get(draft.id)).source).toEqual({ name: 'Sally.otf.json' });
+    });
+});
+
 describe('tabFileExt', () => {
     it('is the extension that decides the format', () => {
         expect(tabFileExt('Sally.TEF')).toBe('tef');

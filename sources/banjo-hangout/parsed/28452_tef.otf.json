@@ -5,6 +5,10 @@
     "time_signature": "4/4",
     "tempo": 230,
     "key": "A",
+    "composer": "Ralph Stanley, arranged for banjo by Michael Corcoran",
+    "tab_by": {
+      "name": "Michael E Corcoran"
+    },
     "time_signature_changes": [
       {"measure": 21, "time_signature": "2/4"},
       {"measure": 30, "time_signature": "2/4"}

@@ -5,7 +5,10 @@
     "time_signature": "4/4",
     "tempo": 250,
     "key": "D",
-    "composer": "Key of D (G tuning gDGBD)"
+    "composer": "Key of D (G tuning gDGBD)",
+    "tab_by": {
+      "name": "Xavier Baron"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

@@ -4,7 +4,10 @@
     "title": "Gold Rush",
     "time_signature": "4/4",
     "tempo": 160,
-    "key": "G"
+    "key": "G",
+    "tab_by": {
+      "name": "Michael C Larsen"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

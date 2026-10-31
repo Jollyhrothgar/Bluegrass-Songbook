@@ -4,7 +4,8 @@
     "title": "Ashokan Farewell",
     "time_signature": "3/4",
     "tempo": 80,
-    "key": "D"
+    "key": "D",
+    "composer": "Arranged by David Brooks"
   },
   "timing": {
     "ticks_per_beat": 480

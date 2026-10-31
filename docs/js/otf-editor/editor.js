@@ -17,12 +17,13 @@ import { KeyboardHandler } from './keyboard.js';
 import { EditorToolbar, PHONE_MAX_WIDTH } from './toolbar.js';
 import { EditorMenuBar } from './menu-bar.js';
 import {
-    NoteEntryPopover, AnnotationPopover, TrackNamePopover, ValuePromptPopover,
+    NoteEntryPopover, AnnotationPopover, TrackNamePopover, ValuePromptPopover, SaveAsPopover,
     GracePopover,
     TrackPopover,
 } from './popover.js';
 import { sanitizeTrackId, FX_ORDER, isGrace } from './facade.js';
-import { downloadOTF, cleanupOTF, validateOTF } from './actions.js';
+import { cleanupOTF, validateOTF } from './actions.js';
+import { createSaveAs } from './save-as.js';
 import { ContextMenu } from './context-menu.js';
 import {
     describe as describeBindings, getPreset, setPreset,
@@ -56,7 +57,6 @@ const DEFAULT_MEASURES_PER_ROW = 4;
  *     container: document.getElementById('editor-container'),
  *     otf: existingOTFDocument,  // Optional - edit existing
  *     instrument: '5-string-banjo',  // For new documents
- *     onSave: (otf) => { ... },
  *     onChange: (otf) => { ... },
  *   });
  *
@@ -93,7 +93,12 @@ export class OTFEditor {
             // Submit / Download / Cancel / Done) passes its own list through
             // whatever creates the editor.
             fileActions: null,
-            onSave: null,
+            // source: the file the document was opened from, `{name, bytes?}`
+            // (Save as starts from its format and name, and writes a .tef over
+            // its bytes); filename: the host's name for the document, without
+            // an extension, for when there is no source.
+            source: null,
+            filename: null,
             onChange: null,
             ...options,
         };
@@ -196,9 +201,9 @@ export class OTFEditor {
                 label: '📂 Open…',
                 run: () => chooseTabFile({ source: 'menu' }),
             }, {
-                label: '⬇ Download OTF',
+                label: '💾 Save as…',
                 action: 'edit.save',
-                run: () => this.keyboard.dispatchAction('edit.save'),
+                run: () => this.openSaveAs(),
             }],
             hooks: {
                 repeatSpan: refocus(() => this._repeatSelectedMeasures(true)),
@@ -253,6 +258,10 @@ export class OTFEditor {
         // no test can drive it and no theme can style it.
         this.valuePopover = new ValuePromptPopover({
             onCancel: () => this.editorRoot?.focus(),
+        });
+        // File ▸ Save as… (and Ctrl+S): format, name, and what the file loses.
+        this.saveAsPopover = new SaveAsPopover({
+            onClose: () => this.editorRoot?.focus(),
         });
         // TablEdit's Alt+G Grace Note dialog: a fret and a connection for
         // the grace note hung on the note at the cursor.
@@ -388,6 +397,7 @@ export class OTFEditor {
         this.trackNamePopover.init(this.container);
         this.trackPopover.init(this.container);
         this.valuePopover.init(this.container);
+        this.saveAsPopover.init(this.container);
         this.gracePopover.init(this.container);
 
         // Attach keyboard handler
@@ -1414,12 +1424,24 @@ export class OTFEditor {
         return ok;
     }
 
-    /**
-     * Handle save
-     */
+    /** Ctrl/Cmd+S is File ▸ Save as…. */
     _handleSave() {
-        const otf = this.save();
-        this.options.onSave?.(otf);
+        this.openSaveAs();
+    }
+
+    /** Open the Save as panel on the document as it is now. */
+    openSaveAs() {
+        if (!this.saveAsPopover?.overlay) return;
+        this.saveAsPopover.open(createSaveAs({
+            otf: this.save(),
+            source: this.options.source,
+            filename: this.options.filename,
+        }));
+    }
+
+    /** The file the document now comes from (a .tef imported into this session). */
+    setSource(source) {
+        this.options.source = source || null;
     }
 
     /**
@@ -2445,16 +2467,6 @@ export class OTFEditor {
     }
 
     /**
-     * Download the current document as JSON
-     * @param {string} filename - Optional filename
-     */
-    download(filename) {
-        const otf = this.save();
-        const name = filename || otf.metadata?.title?.toLowerCase().replace(/\s+/g, '-') || 'untitled';
-        downloadOTF(otf, name);
-    }
-
-    /**
      * Get current selection
      * @returns {Object|null} - Selection range or null
      */
@@ -2575,6 +2587,7 @@ export class OTFEditor {
         this.trackNamePopover?.destroy();
         this.trackPopover?.destroy();
         this.valuePopover?.destroy();
+        this.saveAsPopover?.destroy();
         this.gracePopover?.destroy();
         this.renderer?.destroy();
 
@@ -2593,6 +2606,7 @@ export class OTFEditor {
         this.trackNamePopover = null;
         this.trackPopover = null;
         this.valuePopover = null;
+        this.saveAsPopover = null;
         this.gracePopover = null;
         this.renderer = null;
         this.player = null;

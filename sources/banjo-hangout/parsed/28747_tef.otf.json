@@ -4,7 +4,8 @@
     "title": "Road To Columbus",
     "time_signature": "2/4",
     "tempo": 125,
-    "key": "G"
+    "key": "G",
+    "composer": "Bill Monroe & Kenny Baker"
   },
   "timing": {
     "ticks_per_beat": 480

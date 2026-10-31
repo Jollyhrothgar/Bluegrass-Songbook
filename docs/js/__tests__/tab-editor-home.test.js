@@ -34,6 +34,11 @@ describe('tabEditorHomeHtml', () => {
         expect(html).toContain('Your tabs stay on this device. Nothing is uploaded unless you submit it to the book.');
     });
 
+    it('promises the round trip, now that Save as .tef exists (G15f)', () => {
+        const html = tabEditorHomeHtml([]);
+        expect(html).toContain('fix it up in your browser, and save it back as <code>.tef</code>');
+    });
+
     it('has the three actions and an example link', () => {
         const html = tabEditorHomeHtml([]);
         expect(html).toContain('Open a tab file…');

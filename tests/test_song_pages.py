@@ -513,6 +513,8 @@ def test_tab_editor_page_is_generated_with_its_head(tmp_path):
     assert len(TAB_EDITOR_DESCRIPTION) <= 160
     for word in (".tef", "browser", "free", "no account"):
         assert word in TAB_EDITOR_DESCRIPTION.lower()
+    # G15f: Save as .tef exists, so the page may say so (G15c had to leave it out).
+    assert "save it back as .tef" in TAB_EDITOR_DESCRIPTION
     assert f'<link rel="canonical" href="{ORIGIN}tab-editor/">' in html
     assert '<base href="/">' in html and '<script type="module" src="js/main.js"></script>' in html
 
@@ -528,6 +530,7 @@ def test_tab_editor_page_has_the_prerender_article_in_the_results_panel(tmp_path
     assert article.count("<h1>") == 1 and "<h1>Tab Editor</h1>" in article
     assert 2 <= article.count("<p>") <= 3
     assert "<ul>" in article and "Your tabs stay on this device" in article
+    assert "save it back as <code>.tef</code>" in article
 
 
 def test_tab_editor_article_starts_with_the_words_the_app_shows():

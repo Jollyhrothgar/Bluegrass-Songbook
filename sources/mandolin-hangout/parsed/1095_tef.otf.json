@@ -6,6 +6,9 @@
     "tempo": 208,
     "key": "D",
     "composer": "Traditional",
+    "tab_by": {
+      "name": "Kathryn Forester"
+    },
     "time_signature_changes": [
       {"measure": 1, "time_signature": "3/4"}
     ]

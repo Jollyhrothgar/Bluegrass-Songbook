@@ -4,7 +4,11 @@
     "title": "Cherokee Shuffle",
     "time_signature": "4/4",
     "tempo": 260,
-    "key": "A"
+    "key": "A",
+    "composer": "Traditional",
+    "tab_by": {
+      "name": "Greg Crisp"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

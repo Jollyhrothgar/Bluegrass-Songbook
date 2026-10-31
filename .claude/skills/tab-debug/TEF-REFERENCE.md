@@ -28,10 +28,13 @@ else:
 | Offset | Points at |
 |--------|-----------|
 | 60 | Component (note) region (TablEdit seeks here; ends with u32 0xFFFFFFFF) |
-| 64 / 68 / 72 | Title / subtitle / comments (each u16-len-prefixed) |
+| 64 / 68 / 72 / 76 | Title / author / comments / notes (each u16-len-prefixed; the comments' last line may be `Tab by: NAME <URL>`; the 76 block is the "free text" `x_source.skipped` counts) |
+| 80 | Extra block (the writer keeps it; unread) |
 | 84 | **Free-text table**: u16 count, then count × [u16 len][bytes, NUL-terminated] |
 | 88 | Chord diagram table: u16 entry_size (36), u16 count, then records (name inside) |
+| 92 / 96 / 100 | Measure table / track records / page-layout block (carried over by the writer) |
 | 128 | Reading list: u16 entry_size (32), u16 count, then records |
+| 132 / 140 | URL / copyright strings (carried over by the writer) |
 
 **Reading-list records** (32 bytes): u16 from_measure, u16 to_measure, then a
 NUL-terminated **entry label** ("Intro", "Part A1", ...) — TablEdit prints it
@@ -58,9 +61,87 @@ Decoded so far:
 
 **Chord record** (36 bytes V3, 32 V2): bytes 0-13 one per string, string 1 first (0xff not played, low 5 bits ABSOLUTE fret, high 3 bits 0 plain / 2-5 = finger 1-4); 14-30 NUL-terminated name; 31 first fret shown (signed; 1 on every corpus record that has no position label); V3 byte 32 = the diagram's string count (0 = the owning track's; 0 on every corpus record); 33 unknown (0). No barre is stored. **V2 table**: u16 count at file offset 236, 32-byte records right after the free-text table (reading list, then the u16-count-at-228 text entries); all 51 V2 files with a table read this way. A table that doesn't parse (a name byte below 0x20, no NUL, past EOF) drops its diagrams and is reported as `x_source.skipped.chord_diagrams`. Corpus (decode session, reproduced by `tests/parser/test_tef_chord_diagrams.py`): 380 V3 anchors in 17 files, 1,558 V2 in 40; 19 of 21 scorable diagrams spell their name with the owning track's tuning; 47 referenced records are name-only; 35 records are never referenced.
 
+| 0xb7 | **Repeat signs** (V2: fret byte 0x5e): record byte 6 (V2 byte 4) is a flag OR-ed per measure into `measure_marks[].raw`: 0x40 repeat start, 0x80 repeat end, bits 0-2 ending 1-6 (7 = unspecified, draws nothing), `& 0x38` 0x08 end bar, 0x10 Da Signo, 0x18 Signo, 0x20 Al Coda, 0x28 Coda (`decode_mark_raw` / `decodeMarkRaw`). Drawn, kept and written back; not played | Yes → OTF `measure_marks` |
+
 All of the above oracle-verified against TablEdit's own MusicXML export
 (`<words>`, `<pluck>`, `<fingering>`, `<harmony>`): 35/35 text placements and
 37/37 fingerings match on Welcome to New York.
+
+## Writing a .tef (G15f, `docs/js/tef-export/`)
+
+`writeTef(otf, {source, template})` writes V3 only. Everything OTF models is
+rewritten; the rest (unknown header bytes, per-track settings, the 0x64
+page-layout block, the notes/URL/copyright strings, measure flags) is carried
+over from `source` (the original V3 file, when its tracks match) or from
+`template.tef` (blank, saved by TablEdit 3.06). Layout, as TablEdit saves it:
+header 0x100, title, author, comments, notes, [URL, copyright], +0x50, text
+table, chord table, measures, tracks, 0x64 block, reading list, components
+(last; ends in `ff ff ff ff`). A zero pointer is an absent block.
+
+- **Title** = pointer 64 (`titleFromHeader`, both readers); a title with control
+  characters (multi-line) still falls back to the first-string heuristic, so
+  the writer turns line breaks into spaces. **Author** (0x44, TablEdit's name;
+  imported raw as `composer`, like V2; read by both importers).
+- **Credit**: `metadata.tab_by` is the last comments line `Tab by: NAME <URL>`
+  (the colon matters: about 30 corpus files say `Tab by Name` and are left alone).
+  Failing that, TablEdit's own default `TablEdited by NAME` line (V2 and V3; also `Arranged|Transcribed|Modified
+  and|& TablEdited by`, `TablEdited and|& Arr.|Arranged by`) when NAME is clean: at most 60 characters and 6 words, words of
+  letters, digits and `. ' -`, each with a letter; 228 corpus files. Anything else stays plain comment text. The writer
+  keeps a V2 source's comments too and adds no second credit line when the existing one already reads as this `tab_by`.
+- **Capo**: +12 is the capo (read by us and by TablEdit's loader). +10's low
+  nibble is the 5-string capo offset `capo + t1 - t5 - 5` (V2 loader
+  FUN_10004632c recomputes it; 14 of 16 corpus 5-string capo records agree).
+- **Duration**: lowest code for a tick count (corpus: code 6 x23,062 and 18
+  x726; 30, 21, 24, 27 never). A triplet's position is stored straight; the
+  writer searches for the unit that `retimeTriplet` maps back to the tick.
+- **Effects**: primary = byte 6 low nibble, shared with the h/p/slide code
+  (on the SOURCE note) and 0x0f dead; attribute = byte 8 low; second = byte 8
+  high (a second effect of 3 hides the attribute). Overflow is counted.
+- **Cells**: one component per (position, row). Text, repeat signs and chord
+  anchors take the first free cell (chords on a row of their own track) unless
+  the original V3 file is the template: its cells for the same text at the same
+  position, the same marks (their `raw` bits OR to the measure's mark) and the
+  same chord at the same position go back on their own row with their own bytes.
+  Text bytes: 0x39, index, byte 9 = 3. Marks: 0xb7, byte 5 = 1, byte 6 = raw,
+  byte 7 = 1 (117 corpus cells; 19 more have byte 5 = 0, byte 8 = 1).
+- **Tracks**: the name is chosen so `instrumentToOtfId/Type` and the lead rule
+  (name has banjo/mandolin) read it back as this track; an original's name
+  bytes stay when they do, the empty name too (the importer then names the
+  track after its MIDI program). Drum tracks: +4 bit 7, tuning bytes are
+  placeholder line codes. **Byte 16 bits 4-6** is what a V3 track shows (1 tab,
+  2 notation, 3 both, 0 hidden; MusicXML export, FUN_1000982f0; bit 7 unknown:
+  0x90 on the first track and 0x80 on the rest in about 20 multi-track
+  files, 0x10 first tracks 58 of 91, 0x30 12): a created track shows tab only,
+  an original's byte stays. A V2 track is not read from byte 16: TablEdit
+  exported tab only for 0x00, 0x10, 0x20, 0x30, 0x90 and 0xa0, tab plus
+  notation for 0xb0 (308, two tracks), nothing for 0x80. The V2 upgrade that
+  decides is not in our decompiles, so V2 tracks are created, tab only.
+  The document-wide **Settings ▸ General ▸ Notation** switch is the 0x64 layout
+  block +17 bit 1 and +78 bit 0 (blank file saved on vs off: only these and
+  byte 16 differ); the template has it on, so a file written from the template
+  clears both, or TablEdit still exports a notation staff.
+  **Reading guides (0xb7)** go where TablEdit puts them (34 V3 files): repeat
+  start and ending brackets on the measure's first slot, repeat ends, end bars
+  and jumps on its last sixteenth (slots - 4); a 0x40|0x80 sign is two cells.
+  On the first slot TablEdit's export lost a repeat end (834 m8).
+  **MIDI program** (+8): 105 banjos, 110 fiddle, 25 the rest, 32 upright bass.
+  An unedited original's track records come back byte for byte (all 91 V3
+  corpus files): drum-line codes, the capo offset at +10 and the bytes after
+  the last string stay while the capo and tuning do.
+- **What TablEdit's own MusicXML export of a rewritten file still differs in**
+  (G15f oracle, 50 corpus files, tab staff only; the OTF does not hold these):
+  explicit rests (0x33; also what sets some notes' voice), voices, the key
+  signature (V2 header byte 206; V3 measure record byte 2, a signed count of
+  sharps, per measure), the track and row a text sits on in a V2 file, V2
+  track names and MIDI programs, drum-line codes (+20 of a drum track), trailing
+  empty measures, a bend target that was tied (dyn 7), fingering bytes above 35
+  (flags 0x80/0x40/0x20 over `6 * pluck + lh`: 60 V3 notes in 4 files, 894 V2
+  notes in 20; the importer reads none of them), second effect 11 (byte 8 =
+  0xb0), the enharmonic bits (byte 6 & 0xc0), a slide with no destination and
+  its byte 7, and the cell types nothing reads (0x3e stroke/fingering, 0xb6, 0xfd).
+- **Limits**: 15 tracks, 12 strings, 2048 measures, 100 reading-list entries,
+  names of 27 characters, text index one byte (256 texts), frets 0-24,
+  denominators 1/2/4/8/16. `notices` counts everything else.
 
 ## TablEdit's own names (2026-10, fix-it A15)
 

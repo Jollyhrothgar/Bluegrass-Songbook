@@ -5,7 +5,10 @@
     "time_signature": "4/4",
     "tempo": 220,
     "key": "D",
-    "composer": "in D with no capo - 5th spiked to A"
+    "composer": "in D with no capo - 5th spiked to A",
+    "tab_by": {
+      "name": "Martin Blake"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

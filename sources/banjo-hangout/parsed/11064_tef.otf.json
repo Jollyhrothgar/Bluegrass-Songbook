@@ -4,7 +4,10 @@
     "title": "Reuben",
     "time_signature": "4/4",
     "tempo": 246,
-    "composer": "Jim Mills arranged by Lee Marcus"
+    "composer": "Jim Mills arranged by Lee Marcus",
+    "tab_by": {
+      "name": "Lee Marcus"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

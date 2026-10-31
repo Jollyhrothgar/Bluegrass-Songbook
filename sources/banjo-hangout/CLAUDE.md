@@ -166,3 +166,20 @@ line breaks and spacing/layout marks, stem/beam layout. The key list, labels
 and reasons are in the schema's `x_source` description; the words readers see
 are `docs/js/tef-skipped.js`. A new importer feature that stops dropping
 something must stop counting it. Fixtures: `tests/parser/make_skipped_fixtures.py`.
+
+## What the importers keep, and the writer that undoes them (G15d, G15f)
+
+Both importers (Python is the oracle) decode dynamics (duration byte bits 5-7,
+code 0 loudest, dynamic 7 = tie), bends (effects 12 and 13; the target is the
+next same-string note), chord diagrams (type 0x35 plus the table at header
+pointer 88; V2 table at file offset 236), repeat signs (0xb7 / V2 0x5e), the
+named reading list, capo, the V3 title (pointer 64), Author as `composer`, and
+a `Tab by: NAME <URL>` comments line as `metadata.tab_by`. Every byte is in
+`.claude/skills/tab-debug/TEF-REFERENCE.md`; do not copy it here.
+
+`docs/js/tef-export/` writes the same fields back (V3 only; TEF-REFERENCE.md
+"Writing a .tef"). Its gate parses every `.tef` under `sources/*/downloads/`,
+`sources/mandozine/tefs/` and `sources/tef-uploads/uploads/`, writes it, parses
+it again and expects equal OTF; `docs/js/__tests__/fixtures/tef-roundtrip-exceptions.txt`
+pins the 3 files that differ, with reasons. A change to what an importer keeps
+must keep that gate green: the writer is the importer's inverse.

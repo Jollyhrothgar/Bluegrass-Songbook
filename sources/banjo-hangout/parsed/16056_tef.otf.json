@@ -4,7 +4,10 @@
     "title": "Cumberland Gap (thumb lead)",
     "time_signature": "2/2",
     "tempo": 120,
-    "key": "G"
+    "key": "G",
+    "tab_by": {
+      "name": "Jan-Olov Sundqvist"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

@@ -4,7 +4,11 @@
     "title": "Clinch Mountain Backstep",
     "time_signature": "4/4",
     "tempo": 180,
-    "key": "G"
+    "key": "G",
+    "composer": "Arranged by Mike Larsen AKA Lefty5string",
+    "tab_by": {
+      "name": "Mike Larsen AKA Lefty5string"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

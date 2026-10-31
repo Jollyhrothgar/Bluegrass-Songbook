@@ -4,7 +4,10 @@
     "title": "Tennessee Waltz",
     "time_signature": "3/4",
     "tempo": 120,
-    "key": "G"
+    "key": "G",
+    "tab_by": {
+      "name": "Terry Fletcher"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

@@ -135,7 +135,8 @@ A subdirectory's `CLAUDE.md` loads when you work on files in it.
 |------|------|
 | Frontend modules, routing, song paths, offline caching | `docs/js/CLAUDE.md` |
 | Renderers and the tab player | `docs/js/renderers/CLAUDE.md` |
-| Tab editor | `docs/js/otf-editor/CLAUDE.md`, `docs/js/otf-editor/DESIGN.md` |
+| Tab editor, and `/tab-editor/` (open a `.tef` or `.otf.json`, edit, File ▸ Save as… `.tef`, `.otf.json` or `.txt`; no account needed) | `docs/js/otf-editor/CLAUDE.md`, `docs/js/otf-editor/DESIGN.md`, `docs/js/CLAUDE.md` |
+| The OTF tab format (also published at `/schema/otf.schema.json`) | `docs/schema/otf.schema.json`, field guide `docs/schema/otf.md` |
 | Lyrics & chords editor | `docs/js/lead-editor/CLAUDE.md` |
 | Build pipeline, index, curation, prune, workflows | `scripts/lib/CLAUDE.md` |
 | Tags and grassiness | `scripts/lib/tagging/CLAUDE.md` |

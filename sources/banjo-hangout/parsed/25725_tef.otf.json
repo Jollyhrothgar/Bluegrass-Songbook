@@ -4,7 +4,11 @@
     "title": "Liberty",
     "time_signature": "4/4",
     "tempo": 220,
-    "key": "D"
+    "key": "D",
+    "composer": "Traditional (arranged by Michael Corcoran)",
+    "tab_by": {
+      "name": "Michael Corcoran"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

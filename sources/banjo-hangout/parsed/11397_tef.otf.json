@@ -4,7 +4,10 @@
     "title": "Turkey in the Straw",
     "time_signature": "4/4",
     "tempo": 200,
-    "composer": "Trad. arrgt: B.Keith"
+    "composer": "Trad. arrgt: B.Keith",
+    "tab_by": {
+      "name": "Guy Vibet"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

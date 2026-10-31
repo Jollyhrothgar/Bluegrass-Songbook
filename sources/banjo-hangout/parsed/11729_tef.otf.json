@@ -5,7 +5,10 @@
     "time_signature": "4/4",
     "tempo": 200,
     "key": "A",
-    "composer": "trad"
+    "composer": "trad",
+    "tab_by": {
+      "name": "Martin Blake"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

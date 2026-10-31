@@ -243,7 +243,7 @@ describe('adding a take to a song we have', () => {
         expect(actions.querySelector('.tab-edit-done')).toBeNull();
         const labels = editors[0].options.fileActions.map(a => a.label);
         expect(labels).toEqual(expect.arrayContaining(
-            ['📂 Open…', '📂 Import .tef…', '⬇ Download OTF', '🚀 Submit tab', 'Cancel']));
+            ['📂 Open…', '📂 Import .tef…', '💾 Save as…', '🚀 Submit tab', 'Cancel']));
         expect(labels).not.toContain('✓ Done');
     });
 

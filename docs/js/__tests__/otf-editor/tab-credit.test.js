@@ -1,5 +1,8 @@
 // The "Tab by" credit row (otf-editor/tab-credit.js).
 import { describe, it, expect } from 'vitest';
+import fs from 'node:fs';
+import path from 'node:path';
+import { parseTef } from '../../tef-import/index.js';
 import { EditingFacade } from '../../otf-editor/facade.js';
 import {
     createCreditRow, parseCreditInput, creditFromPart,
@@ -111,5 +114,14 @@ describe('createCreditRow', () => {
         });
         await tick();
         expect(row.el.querySelector('input').readOnly).toBe(true);
+    });
+});
+
+describe('credit row for a file opened with a "TablEdited by" line', () => {
+    it('shows the name TablEdit put in the comments', () => {
+        const bytes = new Uint8Array(fs.readFileSync(path.resolve(__dirname, '../../../../sources/banjo-hangout/downloads/13038_tef_chicken_reel.tef')));
+        const f = new EditingFacade(parseTef(bytes, 'x'));
+        const row = createCreditRow({ getFacade: () => f });
+        expect(row.el.querySelector('.tab-credit-name').value).toBe('Devon Wells');
     });
 });

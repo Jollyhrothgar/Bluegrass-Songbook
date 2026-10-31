@@ -4,7 +4,8 @@
     "title": "ragtime annie",
     "time_signature": "4/4",
     "tempo": 133,
-    "key": "D"
+    "key": "D",
+    "composer": "Traditional, Arr. Michael Franz"
   },
   "timing": {
     "ticks_per_beat": 480

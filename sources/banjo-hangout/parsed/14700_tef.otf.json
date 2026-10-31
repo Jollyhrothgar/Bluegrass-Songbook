@@ -3,7 +3,10 @@
   "metadata": {
     "title": "Waiting for the Federals",
     "time_signature": "4/4",
-    "tempo": 120
+    "tempo": 120,
+    "tab_by": {
+      "name": "David G Yates"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

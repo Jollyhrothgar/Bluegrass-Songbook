@@ -124,7 +124,7 @@ test.describe('phone: the edit session', () => {
         await expect(popup.locator('.menu-sheet-head[data-menu="edit"]'))
             .toHaveAttribute('aria-expanded', 'false');
         await expect(popup.locator('.menu-item', { hasText: 'Delete note' })).toHaveCount(0);
-        await expect(popup.locator('.menu-item', { hasText: 'Download OTF' })).toBeVisible();
+        await expect(popup.locator('.menu-item', { hasText: 'Save as' })).toBeVisible();
         await expect(popup.locator('.menu-item-key').first()).toBeHidden();
     });
 

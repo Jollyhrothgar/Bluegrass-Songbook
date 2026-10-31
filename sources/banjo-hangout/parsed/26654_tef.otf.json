@@ -4,7 +4,8 @@
     "title": "Lonesome Moonlight Waltz",
     "time_signature": "3/4",
     "tempo": 120,
-    "key": "Em"
+    "key": "Em",
+    "composer": "Bill Monroe"
   },
   "timing": {
     "ticks_per_beat": 480

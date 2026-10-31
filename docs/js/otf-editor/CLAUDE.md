@@ -7,14 +7,13 @@
 the schema first; the fence tests in `__tests__/otf-editor/otf-validate.test.js`
 and `tests/test_otf_schema.py` fail until every copy matches.
 
-Files are written by `serializeOTF` (`docs/js/otf-format.js`; `downloadOTF` uses it), one
-note event per line, byte-identical to Python's `scripts/lib/otf_format.py`. Never
-`JSON.stringify(otf, null, 2)` a file; the compact wire formats are the exception.
+Files are written by `serializeOTF` (`docs/js/otf-format.js`; Save as uses it), one
+note event per line, byte-identical to `scripts/lib/otf_format.py`. Never
+`JSON.stringify(otf, null, 2)` a file (compact wire formats excepted).
 
 The in-browser tablature editor for OpenTabFormat (OTF) files. It ships.
-`DESIGN.md` describes what the editor does (the OTF document format is
-`docs/schema/otf.md`, which code comments cite), and Help ▸ About opens it for users. Input-model plan:
-`docs/plans/tab-editor-input-parity.md`.
+`DESIGN.md` describes what the editor does (Help ▸ About opens it for users);
+input-model plan: `docs/plans/tab-editor-input-parity.md`.
 
 ```bash
 npm test -- otf-editor          # unit tests in docs/js/__tests__/otf-editor/
@@ -37,10 +36,9 @@ undoable for free, and anything that reaches around it is silently not.
   round-trips into a file no importer wrote and no renderer draws. The facade
   stays importer-free, so it keeps its own copy of those lists;
   `effects-facade.test.js` asserts `FX_ORDER` equals the one exported by `docs/js/tef-import/otf.js`.
-- `pitch.js` (string+fret to MIDI) copies two lines of `tab-player.js` rather
-  than importing them, so the facade stays UI-free. The player maps an
-  unknown tuning name to MIDI 60 (`PITCH_TO_MIDI[p] || 60`); `pitch.js` returns
-  `null` instead, so an edit refuses rather than moving a note by a guess.
+- `pitch.js` (string+fret to MIDI) copies two lines of `tab-player.js` so the
+  facade stays UI-free. The player maps an unknown tuning to MIDI 60; `pitch.js`
+  returns `null`, so an edit refuses rather than guess.
 - `new-otf.js` (`createEmptyOTF`, `createMultiTrackOTF`) must stay pure and
   editor-free: the song page builds new takes from it, and `actions.js`
   re-exports it.
@@ -56,19 +54,17 @@ cancels, keys are swallowed so bindings never see them): `NoteEntryPopover`,
 `GracePopover`.
 
 - `ValuePromptPopover` answers later, so `_promptForMeasure` returns 0 and
-  dispatches `nav.goToMeasure` with a `count` from the commit callback (the
-  binding table already understands counts, `g12G`).
+  dispatches `nav.goToMeasure` with a `count` from the commit callback.
 - Say refusals out loud: `editor.flashStatus(msg)` writes the status bar's
-  `.status-flash` and reaches bindings as the `onStatus` hook on `ctx.hooks`.
-  An atomic refusal changes nothing on screen otherwise.
+  `.status-flash` (the `onStatus` hook on `ctx.hooks`); an atomic refusal
+  changes nothing else on screen.
 
 ## Keys: `bindings.js` is the only place they live
 
 `keyboard.js` is a matcher. Every behaviour is an entry in `ACTIONS`; every key
 is an entry in `PRESETS.tabledit` or `PRESETS.vim` (per mode, plus `global`,
 `countPrefix`, `exceptions`). Menus, tooltips and the `?` overlay render from
-the table (`describe`, `keyFor`, `menuKeyFor`). Never write a key name by hand
-in a toolbar, menu or tooltip.
+the table (`describe`, `keyFor`, `menuKeyFor`); never write a key name by hand.
 
 `__tests__/otf-editor/bindings.test.js` and `menu-bar.test.js` are the fence:
 every preset key maps to a real action, every action is reachable (except
@@ -157,31 +153,36 @@ One command surface per device (G17): the menus are the one list of commands.
   in `style.css` (the bottom band); change them together.
 - `new OTFEditor(...)` options (`work-edit.js` passes them): `fileActions:
   [{label, run, disabled?, action?} | {separator: true}]` (`action` only prints
-  that action's key; leave it off Download in a work session, where Ctrl+S
-  applies) and `hostTransport: true` when the song page's band has transport.
-  The band's session bar is Submit and ✓ Done only; Open…, Import .tef…,
-  Download OTF and Cancel are `fileActions`, and Cancel asks "Discard edits?"
-  inline in the bar, never `window.confirm`.
+  that action's key), `source`, `filename`, `hostTransport` (the band has transport). The bar: Submit, ✓ Done.
+- File ▸ Save as… (G15f: `save-as.js`, `SaveAsPopover`) is the only save command;
+  Ctrl/Cmd+S opens it, and only ✓ Done applies edits to the view. `.tef`
+  (`tef-export`, `import()`ed then), `.otf.json`, `.txt`; opens on the opened
+  file's format, else `.tef`; the notice is computed on open.
+- A song-page session's File menu (`work-edit.js` `fileActions`): Open…, Import
+  .tef… (new takes only), Save as…, Submit…, Cancel, ✓ Done. Note ▸ Dynamics
+  (seven levels, Track default) and the bend effects are menu-only; a bend's
+  amount has no control, edit the target's fret
+  (rules in `MODEL.md`).
 - One zoom: the status bar's − 100% + (`state.horizontalZoom`, View ▸ Zoom,
-  `{` `}`); the band's Aa size is removed while editing. The `?` hint is plain
-  text, hidden on touch; Help ▸ Keyboard shortcuts is the one help button.
-- Palette outlines mean different things: `.active` (filled) is the entry state
-  for the next note; `.reflects-note` is what the note under the cursor already
-  is (an outline, never a border-width change); `.predicts-next` (dashed) is the
-  live auto-duration prediction, under `Auto` only; `.pending` (orange) is a
-  technique armed by clicking on an empty slot.
+  `{` `}`); the band's Aa size is removed while editing. Help ▸ Keyboard
+  shortcuts is the one help button (the `?` hint is plain text).
+- Palette outlines: `.active` (filled) is the entry state for the next note;
+  `.reflects-note` is what the note under the cursor already is (an outline,
+  never a border-width change); `.predicts-next` (dashed) is the auto-duration
+  prediction, under `Auto` only; `.pending` (orange) is a technique armed on an
+  empty slot.
 - The note popover's technique row is `toolbar.js`'s `ARTICULATION_BUTTONS` via
-  `POPOVER_TECHS`, not a second list. The tie carries `'~'` and is disabled with
-  a reason when `facade.tiePredecessor` finds none.
+  `POPOVER_TECHS`. The tie carries `'~'`, disabled with a reason when
+  `facade.tiePredecessor` finds none.
 - The cursor step is not a zoom (fix-it item A20): it changes where the cursor
   and clicks land and what the ruler draws, never measure width. Steps closer
-  than `MIN_RULER_SPACING_PX` (`cursor.js`) stay in the DOM but draw only the
-  coarsest multiple that fits. Do not derive `measureWidthFloor` from the step.
+  than `MIN_RULER_SPACING_PX` (`cursor.js`) draw only the coarsest multiple
+  that fits. Do not derive `measureWidthFloor` from the step.
 - Horizontal zoom (fix-it item A21): `state.horizontalZoom` (`H_ZOOM_LEVELS`;
   view state, no history). Each measure is at least `zoom x` its zoom-1 width
   (`measureWidthFloor`, rows from `_baseMeasuresPerRow`); a measure wider than
-  the canvas scrolls the canvas (`.editor-renderer .stave-row svg { max-width:
-  none }`), so overlays use its `scrollLeft`. Entry never reads the zoom.
+  the canvas scrolls the canvas, so overlays use its `scrollLeft`. Entry never
+  reads the zoom.
 
 ## Driving it from a script: `editor.automation`
 
@@ -193,7 +194,6 @@ px) and `check()` (`layoutViolations(layout())`, `[]` when sane).
 
 `check()` measures against the barlines, because notes, ruler and cursor share
 one tick-to-x mapping and so always agree with each other; the bug class is that
-mapping drifting off the bar (fix-it item A17).
-`e2e/otf-editor-invariants.spec.js` runs it after every key of a seeded random
-walk. Every consumer reads `noteX0 + noteOffset + tick / ticks * noteW`
+mapping drifting off the bar (fix-it item A17); `e2e/otf-editor-invariants.spec.js`
+runs it after every key of a seeded random walk. Every consumer reads `noteX0 + noteOffset + tick / ticks * noteW`
 (`renderers/tablature.js`); do not add per-measure centering.

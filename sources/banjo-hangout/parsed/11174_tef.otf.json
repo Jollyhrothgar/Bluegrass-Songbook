@@ -4,7 +4,10 @@
     "title": "Salt Creek",
     "time_signature": "4/4",
     "tempo": 230,
-    "composer": "Alan Munde arranged by Lee Marcus"
+    "composer": "Alan Munde arranged by Lee Marcus",
+    "tab_by": {
+      "name": "Lee Marcus"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

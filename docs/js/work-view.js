@@ -83,7 +83,7 @@ import { setTopBar, setBottomBand, pill, setChromeAutoHide, openSheet } from './
 import { practiceLinks, buildKeyButton, buildDisplayButton, renderDetails, EXPORT_ACTIONS, handleExport } from './song-controls.js';
 import { viewModel, viewControl, sizeControl, readingDock, fillViewSheet } from './song-dock.js';
 import { showToast } from './toast.js';
-import { importFileToOtf, pickTabFile, chooseTabFile } from './pwa.js';
+import { importTabFile, pickTabFile, chooseTabFile } from './pwa.js';
 import { skippedLine } from './tef-skipped.js';
 
 // ============================================
@@ -2037,10 +2037,10 @@ function startTabContribution(section, instrument) {
  * preview is the song page it will be published on.
  */
 function importTefAsNewTake(instrument, existingCount = 0) {
-    pickTefFile((otf) => {
+    pickTefFile((otf, _file, source) => {
         if (!currentWork) return;
         startAddTabMode({
-            instrument, title: currentWork.title, existingCount, otf,
+            instrument, title: currentWork.title, existingCount, otf, source,
         });
         const hash = createTabHref({ workId: currentWork.id, instrument }, '/');
         if (currentHref() !== hash) {
@@ -2851,17 +2851,17 @@ function editFilename(part) {
  * Ask for a tab file (.tef or .otf.json) and hand back its OTF.
  *
  * A thin wrapper: the picker is pwa.js's `pickTabFile` and the parsing is its
- * `importFileToOtf`, the same two steps every other way of opening a file
+ * `importTabFile`, the same two steps every other way of opening a file
  * takes (drop, launch, front door, File ▸ Open…), so a format is supported
  * everywhere or nowhere. What this adds is the take-level behaviour: the
  * caller gets the document and file to drop into a take rather than a draft.
- * The parser is imported lazily by importFileToOtf; readers never pay for it.
+ * The parser is imported lazily by importTabFile; readers never pay for it.
  */
 export async function pickTefFile(onDocument, { file = null } = {}) {
     const load = async (chosen) => {
         if (!chosen) return;
         try {
-            const otf = await importFileToOtf(chosen);
+            const { otf, source } = await importTabFile(chosen);
             const hasNotes = Object.values(otf.notation || {})
                 .some(measures => measures.length > 0);
             if (!hasNotes) {
@@ -2869,7 +2869,7 @@ export async function pickTefFile(onDocument, { file = null } = {}) {
                     { variant: 'warning', duration: 6000 });
                 return;
             }
-            onDocument(otf, chosen);
+            onDocument(otf, chosen, source);
         } catch (err) {
             // Format-agnostic on purpose: nobody should have to know which
             // TablEdit variant they have. (The version error is caught by
@@ -2948,21 +2948,25 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
 
     // The drafts bucket (§9.3): IndexedDB, one record per session, written
     // on a trailing edge by `onChange` below.
+    const draftMeta = {
+        // What a draft has to remember to be REOPENABLE: which work it
+        // belongs to (none, for a song the songbook doesn't have), which
+        // take it corrects (edit only — a new take has no ref yet), and
+        // what to call it in the list. drafts.js::draftOpenHash turns
+        // exactly these back into `#new-tab?draft=` /
+        // `#work/{slug}/add-tab?draft=` / `#work/{slug}/edit/{ref}?draft=`.
+        workId: currentWork?.provisional ? null : (currentWork?.id || null),
+        takeRef: isNewTake ? null : takeEditRef(part),
+        title: currentWork?.title || otf?.metadata?.title || null,
+        instrument,
+        // The file this came from (a reopened draft keeps it; File ▸ Open…
+        // and the front door put it there): Save as writes a .tef over it.
+        source: draft?.source || target.source || null,
+    };
     const autosave = createAutosaver({
         store: getDraftStore(),
         id: draft?.id || null,
-        meta: {
-            // What a draft has to remember to be REOPENABLE: which work it
-            // belongs to (none, for a song the songbook doesn't have), which
-            // take it corrects (edit only — a new take has no ref yet), and
-            // what to call it in the list. drafts.js::draftOpenHash turns
-            // exactly these back into `#new-tab?draft=` /
-            // `#work/{slug}/add-tab?draft=` / `#work/{slug}/edit/{ref}?draft=`.
-            workId: currentWork?.provisional ? null : (currentWork?.id || null),
-            takeRef: isNewTake ? null : takeEditRef(part),
-            title: currentWork?.title || otf?.metadata?.title || null,
-            instrument,
-        },
+        meta: draftMeta,
     });
 
     // THE BAND SURVIVES. Same controls the reader had a second ago, built
@@ -2979,8 +2983,9 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
         className: 'tab-edit-import',
         label: '📂 Import .tef…',
         title: 'Replace this take with a TablEdit (.tef) file',
-        onClick: (session) => pickTefFile((doc, file) => {
-            session.replaceDocument(doc);
+        onClick: (session) => pickTefFile((doc, file, source) => {
+            draftMeta.source = source;
+            session.replaceDocument(doc, source);
             // The canvas redrawing is not, by itself, an answer — a tab you
             // have not scrolled to looks identical either way. Say which
             // file landed and how much of it there was.
@@ -3021,6 +3026,7 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
         // a correction edits this track, so it cannot be deleted from the Score menu
         protectedTrackId: isNewTake ? null : resolveEditTrackId(otf, instrument),
         filename: `${editFilename(part)}${isNewTake ? '' : '-edited'}`,
+        source: draftMeta.source,
         editorFactory: (opts) => new OTFEditor(opts),
         barHost,
         submitLabel: isNewTake ? '🚀 Submit tab' : '🚀 Submit correction',
@@ -3391,7 +3397,7 @@ async function submitAuthoredTake(doc, part) {
 
     // What was submitted is what the page must show as pending afterwards —
     // `tabAuthoring.otf` otherwise still holds the document as it was when
-    // the editor opened (onApply only fires on Ctrl+S / ✓ Done).
+    // the editor opened (onApply only fires on ✓ Done).
     if (tabAuthoring) tabAuthoring.otf = doc;
 
     return submitNewTab(doc, {

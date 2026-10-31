@@ -4,7 +4,10 @@
     "title": "Old Dangerfield",
     "time_signature": "4/4",
     "tempo": 160,
-    "key": "A"
+    "key": "A",
+    "tab_by": {
+      "name": "Derek N Scarr"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

@@ -4,7 +4,10 @@
     "title": "Flop Eared Mule",
     "time_signature": "4/4",
     "tempo": 120,
-    "key": "G"
+    "key": "G",
+    "tab_by": {
+      "name": "David J Stewart"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

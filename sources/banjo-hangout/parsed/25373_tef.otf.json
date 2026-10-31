@@ -4,7 +4,11 @@
     "title": "tombstone junction",
     "time_signature": "4/4",
     "tempo": 230,
-    "key": "G"
+    "key": "G",
+    "composer": "Bill Monroe, arranged for banjo by M. Corcoran",
+    "tab_by": {
+      "name": "Michael E Corcoran"
+    }
   },
   "timing": {
     "ticks_per_beat": 480
