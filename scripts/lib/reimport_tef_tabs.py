@@ -6,9 +6,11 @@ Two jobs, both re-runnable (a second run changes nothing):
 1. ``works/*/*.otf.json`` tablature parts whose ``work.yaml`` provenance points
    at a TEF on disk.  Works are authoritative, so a part is refreshed ONLY
    when the file still equals the PREVIOUS importer's output (the importer at
-   ``--previous-rev``, run in a subprocess from ``git archive`` so the old and
-   new ``tef_parser`` never mix) on ``tracks``, ``notation``, ``annotations``
-   and ``reading_list``.  Skipped, never touched: parts with
+   ``--baseline``, run in a subprocess from ``git archive`` so the old and
+   new ``tef_parser`` never mix) on every field a refresh replaces (``COMPARED
+   = TAKEN``: ``tracks``, ``notation``, ``annotations``, ``reading_list``,
+   ``measure_marks``, ``chords``, ``chord_diagrams``), so a hand-corrected chord
+   diagram is never overwritten.  Skipped, never touched: parts with
    ``provenance.submitted_by``, parts a reader corrected
    (``x_corrected_by`` / ``x_derived_from``), and parts that no longer match.
    A refresh takes ``tracks notation annotations reading_list measure_marks
@@ -23,6 +25,11 @@ Two jobs, both re-runnable (a second run changes nothing):
 
 Output goes through ``otf_format.serialize``.  A new document that fails
 ``otf_schema.check`` aborts the run before anything is written.
+
+``--baseline`` is the commit of the importer that produced the files now in
+``works/``.  The default, ``e33562593``, is the importer before G15d.  After a
+later importer change (G21a: ``annotations[].track``) pass the commit just
+before that change, or every tab that G15d refreshed reads as edited.
 
     uv run python scripts/lib/reimport_tef_tabs.py --dry-run
     uv run python scripts/lib/reimport_tef_tabs.py
@@ -40,15 +47,18 @@ sys.path.insert(0, str(ROOT / 'scripts' / 'lib'))
 
 from otf_format import OTF_VERSION, serialize  # noqa: E402
 
+#: The importer before G15d, the default ``--baseline``.
 PREVIOUS_REV = 'e33562593'
 
-#: Compared (old importer vs file) before a works part may be refreshed.
-COMPARED = ('tracks', 'notation', 'annotations', 'reading_list')
 #: Taken from the new importer on a refresh. A field the new importer does not
 #: produce is removed from the file.
-TAKEN = COMPARED + ('measure_marks', 'chords', 'chord_diagrams')
+TAKEN = ('tracks', 'notation', 'annotations', 'reading_list',
+         'measure_marks', 'chords', 'chord_diagrams')
+#: Compared (old importer vs file) before a works part may be refreshed: every
+#: field a refresh replaces, so a hand edit to any of them keeps the file as it is.
+COMPARED = TAKEN
 #: Empty and absent are the same thing when comparing.
-_EMPTY_OK = ('annotations', 'reading_list')
+_EMPTY_OK = tuple(f for f in COMPARED if f not in ('tracks', 'notation'))
 
 HANGOUT_SOURCES = ('banjo-hangout', 'fiddle-hangout', 'flatpicker-hangout',
                    'mandolin-hangout', 'reso-hangout')
@@ -225,12 +235,18 @@ def collect_works(root: Path):
                 yield wy.parent / part['file'], part.get('provenance') or {}
 
 
-def main(argv=None) -> int:
+def build_parser() -> argparse.ArgumentParser:
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     ap.add_argument('--dry-run', action='store_true', help='print what would change, write nothing')
-    ap.add_argument('--previous-rev', default=PREVIOUS_REV)
+    ap.add_argument('--baseline', '--previous-rev', dest='baseline', default=PREVIOUS_REV, metavar='COMMIT',
+                    help='commit of the importer that produced the current works files '
+                         f'(default {PREVIOUS_REV}, the importer before G15d)')
     ap.add_argument('--root', type=Path, default=ROOT)
-    args = ap.parse_args(argv)
+    return ap
+
+
+def main(argv=None) -> int:
+    args = build_parser().parse_args(argv)
     root = args.root
 
     from otf_schema import check
@@ -253,7 +269,7 @@ def main(argv=None) -> int:
             parsed.append((path, existing, tef))
 
     tefs = sorted({t for _, _, t in works if t} | {t for _, _, t in parsed})
-    old = run_old_importer(args.previous_rev, tefs)
+    old = run_old_importer(args.baseline, tefs)
     new = run_new_importer(tefs)
 
     report = {'refresh': [], 'submitted': [], 'corrected': [], 'mismatch': [],
