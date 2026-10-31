@@ -10,6 +10,10 @@ import {
 } from './measure-timing.js';
 import { isPercussionTrack } from './otf-tracks.js';
 import { renderChordBox, chordBoxGeometry, CHORD_BOX_HEIGHT } from './chord-box.js';
+import {
+    assignLanes, laneStack, belowBaseline, bendSources, chordParts, chordLaneRuns,
+    chordRunsWidth, estimateTextWidth, CHORD_FONT, CHORD_RUN_SCALE, TEXT_FONT,
+} from './tab-lanes.js';
 
 /**
  * Build an HTML element with a class and TEXT content.
@@ -180,19 +184,38 @@ const GRACE_FONT = 8;
 const GRACE_MIN_FONT = 5;
 
 /**
+ * The shared tab-chord parser (docs/js/tab-chord.js `parseTabChord`, G21d).
+ * It is not in the tree yet; the chord lane draws a `kind: "chord"` text as
+ * written until it is. When it lands, this is the one line to change:
+ * `import { parseTabChord } from '../tab-chord.js'` and `let tabChordParser = parseTabChord`.
+ */
+let tabChordParser = null;
+export function setTabChordParser(parser) { tabChordParser = parser || null; }
+
+/**
  * Which effects-band lanes a notation needs: one O(notes) scan per render.
+ * A bend whose target is drawn (its `tech: "b"` note, in the same row) has
+ * no mark in the band, so it asks for no lane. `perRow` is the number of
+ * measures a row holds; the default (no rows) pairs across the whole notation.
  * @returns {{point: boolean, runs: string[], band: number}}
  */
-export function fxLanesFor(notation) {
+export function fxLanesFor(notation, perRow = Infinity) {
     let point = false;
     const runSeen = new Set();
-    for (const m of notation || []) {
-        for (const e of m.events || []) {
-            for (const n of e.notes || []) {
-                if (!n.fx) continue;
-                for (const fx of n.fx) {
-                    if (FX_POINT.has(fx)) point = true;
-                    else if (FX_RUN.has(fx)) runSeen.add(fx);
+    const list = notation || [];
+    const step = Number.isFinite(perRow) && perRow > 0 ? perRow : Math.max(1, list.length);
+    for (let start = 0; start < list.length; start += step) {
+        const row = list.slice(start, start + step);
+        const paired = bendSources(row);
+        for (const m of row) {
+            for (const e of m.events || []) {
+                for (const n of e.notes || []) {
+                    if (!n.fx) continue;
+                    for (const fx of n.fx) {
+                        if ((fx === 'bend' || fx === 'bend-release') && paired.has(n)) continue;
+                        if (FX_POINT.has(fx)) point = true;
+                        else if (FX_RUN.has(fx)) runSeen.add(fx);
+                    }
                 }
             }
         }
@@ -207,16 +230,16 @@ export const BANJO_TUNINGS = {
     'D-B-G-D-G': 'Open G',
     'D-C-G-C-G': 'Double C',
     'D-C-G-D-G': 'G Modal',
-    'D-A-D-F#-A': 'Open D',
+    'D-A-F#-D-F#': 'Open D',   // f#DF#AD, as players spell it (5th string first)
     'E-B-G-D-G': 'Open G',  // Alternate with E on 1st
-    'C-G-C-G-G': 'C Tuning',
-    'D-A-E-A-A': 'Open A',
+    'D-B-G-C-G': 'C Tuning',   // gCGBD
+    'E-C#-A-E-A': 'Open A',    // aEAC#E
 };
 
 // Mandolin tunings
 export const MANDOLIN_TUNINGS = {
     'E-A-D-G': 'Standard',
-    'E-A-D-A': 'DADA',
+    'D-A-D-A': 'DADA',
     'D-A-D-G': 'Cross-key',
 };
 
@@ -758,33 +781,21 @@ export class TabRenderer {
             identityTimeline(notation.reduce((mx, m) => Math.max(mx, m.measure), 1))
         );
 
-        // Free-text / section-label headroom: when the notation carries
-        // display decorations (attachOtfDecorations), bump the top margin
-        // UNIFORMLY so every row gets a text band above the ending
-        // brackets. Uniform matters: the editor cursor derives its y-math
-        // from options.topMargin + a measured row height.
-        if (this._baseTopMargin === undefined) {
-            this._baseTopMargin = this.options.topMargin;
-        }
-        const hasTextBand = notation.some(m => (m.texts && m.texts.length) || m.section);
-        // Effects band (note.fx point/run marks), same rule: uniform, and
-        // only when the tab has something to put in it.
-        this._fxLanes = fxLanesFor(notation);
-        // Chord-diagram band (G15d3): a chord box's height, between the text
-        // band above and the effects band below, and only when this track
-        // carries diagrams. Texts shift up by it (see renderRow), so the
-        // staff-relative bands keep their places.
-        this._chordBand = notation.some(m => m.diagrams && m.diagrams.length)
-            ? CHORD_BOX_HEIGHT + 2 : 0;
-        this.options.topMargin = this._baseTopMargin + (hasTextBand ? 32 : 0)
-            + this._fxLanes.band + this._chordBand;
-
         // Calculate responsive layout (against the real width measured above)
         this._calculateLayout(layoutWidth);
 
+        // The lanes above and below the staff (tab-lanes.js): sized from what
+        // this track holds, UNIFORMLY, so every row has the same topMargin (the
+        // editor cursor derives its y-math from options.topMargin + a measured
+        // row height). A tab with none of it has topMargin 40, as it always did.
+        this._fxLanes = fxLanesFor(notation, this._computedMeasuresPerRow);
+        this._plan = this._planLanes(notation, this._computedMeasuresPerRow);
+        this.options.topMargin = this._plan.stack.topMargin;
+
         this.numStrings = track.tuning?.length || 5;
         const opt = this.options;
-        const staveHeight = opt.topMargin + (this.numStrings - 1) * opt.stringSpacing + opt.stemAreaHeight + 10;
+        const staveHeight = opt.topMargin + (this.numStrings - 1) * opt.stringSpacing + opt.stemAreaHeight + 10
+            + this._plan.stack.belowExtra;
 
         this.renderTrackInfo(track);
 
@@ -1055,13 +1066,70 @@ export class TabRenderer {
         }
     }
 
-    renderRow(measures, numStrings, height, tuning, rowIndex = 0) {
+    /**
+     * Plan every lane of the track (tab-lanes.js): which lane each placed text
+     * sits on and where, and the stack of bands that gives topMargin.
+     *
+     * Texts are placed per ROW, in left-to-right order, each on the lowest lane
+     * that is free at its (estimated) extent, so none overprints; the stack is
+     * sized for the busiest row so every row is the same height. Chord names
+     * (`kind: "chord"`) go in the chord lane, `place: "below"` texts under the
+     * staff, everything else in the text lanes above.
+     * @returns {{stack: object, place: Map<object, {x: number, lane: number, group: string, runs?: object[]}>}}
+     */
+    _planLanes(notation, perRow) {
         const opt = this.options;
-        // Add extra width for ending brackets if present
-        const hasEndings = measures.some(m => m.ending);
-        const endingHeight = hasEndings ? 18 : 0;
-        const adjustedHeight = height + endingHeight;
+        const place = new Map();
+        const most = { above: 0, below: 0, chord: 0 };
+        for (let start = 0; start < notation.length; start += perRow) {
+            const measures = notation.slice(start, start + perRow);
+            if (!measures.some(m => m.texts && m.texts.length)) continue;
+            const { measureGeoms, rowRight } = this._rowGeometry(measures);
+            const groups = { above: [], below: [], chord: [] };
+            measures.forEach((m, mi) => {
+                const geom = measureGeoms[mi];
+                for (const t of m.texts || []) {
+                    const x = geom.noteX0 + geom.noteOffset + ((t.tick || 0) / geom.ticks) * geom.noteW;
+                    if (t.kind === 'chord') {
+                        const runs = chordLaneRuns(chordParts(t.text, tabChordParser));
+                        groups.chord.push({ t, x, w: chordRunsWidth(runs), runs });
+                    } else {
+                        groups[t.place === 'below' ? 'below' : 'above']
+                            .push({ t, x, w: estimateTextWidth(t.text) });
+                    }
+                }
+            });
+            for (const [group, items] of Object.entries(groups)) {
+                if (!items.length) continue;
+                const res = assignLanes(items, { min: opt.leftMargin, max: rowRight });
+                items.forEach((it, i) => place.set(it.t, {
+                    x: res.x[i], lane: res.lane[i], group, runs: it.runs,
+                }));
+                most[group] = Math.max(most[group], res.count);
+            }
+        }
+        const fx = (this._fxLanes.point ? 1 : 0) + this._fxLanes.runs.length;
+        const lh = opt.showFingerings !== false && notation.some(m =>
+            (m.events || []).some(e => (e.notes || []).some(n => n.lh !== undefined && n.lh !== null)));
+        const stack = laneStack({
+            section: notation.some(m => m.section),
+            chordNames: most.chord,
+            chordDiagrams: notation.some(m => m.diagrams && m.diagrams.length) ? CHORD_BOX_HEIGHT + 2 : 0,
+            textAbove: most.above,
+            lh,
+            fx,
+            textBelow: most.below,
+        });
+        return { stack, place };
+    }
 
+    /**
+     * Where each measure of a row sits (ts-change aware): x, width, the note
+     * area, and the tick mapping every consumer shares. Pure of the DOM, so
+     * the lane planner can run it before any row is drawn.
+     */
+    _rowGeometry(measures) {
+        const opt = this.options;
         // Per-measure geometry (ts-change aware). Edge adornments grow the
         // measure by their footprint — the note area never shrinks below
         // the fit factor computed here: rows are packed by count at the
@@ -1134,7 +1202,17 @@ export class TabRenderer {
             xCursor += geomWidth;
             return geom;
         });
-        const rowRight = xCursor;
+        return { measureGeoms, rowRight: xCursor };
+    }
+
+    renderRow(measures, numStrings, height, tuning, rowIndex = 0) {
+        const opt = this.options;
+        // Add extra width for ending brackets if present
+        const hasEndings = measures.some(m => m.ending);
+        const endingHeight = hasEndings ? 18 : 0;
+        const adjustedHeight = height + endingHeight;
+
+        const { measureGeoms, rowRight } = this._rowGeometry(measures);
         const width = rowRight + 20;
 
         const rowDiv = document.createElement('div');
@@ -1218,11 +1296,9 @@ export class TabRenderer {
         // (let ring / P.M.): a column WITHOUT the effect is what ends a run.
         const fxRunColumns = this._fxLanes.runs.length ? [] : null;
 
-        // Annotation texts flow left-to-right across the row; when one
-        // would start inside the previous one, it hops to a second lane
-        // 11px higher ("C" at beat 1.5 under "Press F-12 ..." otherwise
-        // prints on top of it).
-        const textLaneEnds = [-Infinity, -Infinity];
+        // Bends whose target carries the arrow: no band mark of their own.
+        const pairedBends = bendSources(measures);
+        const stack = this._plan.stack;
         // Right edge of the last chord box drawn in this row (they never overlap).
         let chordBoxEnd = -Infinity;
 
@@ -1300,30 +1376,33 @@ export class TabRenderer {
                 svg.appendChild(secText);
             }
 
-            // Placed free-text annotations ("Long Choke", chord letters)
-            // above the ending-bracket band, x-positioned by tick and
-            // lane-stacked on overlap.
-            if (measure.texts && measure.texts.length) {
-                for (const t of measure.texts) {
-                    const tx = geom.noteX0 + geom.noteOffset
-                        + (t.tick / geom.ticks) * geom.noteW;
-                    const lane = tx >= textLaneEnds[0] + 6 ? 0
-                        : (tx >= textLaneEnds[1] + 6 ? 1 : 0);
-                    textLaneEnds[lane] = tx + 5.5 * t.text.length;
-                    // ...and above the effects band, when there is one
-                    const annY = opt.topMargin - 34 - this._fxLanes.band
-                        - (this._chordBand || 0) - lane * 11;
-                    const annText = this.createText(tx, annY, t.text, {
-                        fontSize: '10px',
+            // Placed texts (tab-lanes.js has the order): the plan gave each its
+            // x and lane, so none overprints another. Chord names (kind
+            // "chord") go in the chord lane, `place: "below"` under the
+            // staff, the rest in the text lanes above.
+            for (const t of measure.texts || []) {
+                const spot = this._plan.place.get(t);
+                if (!spot) continue;
+                let annText;
+                if (spot.group === 'chord') {
+                    annText = this._chordText(spot.x, stack.chordNames[spot.lane], spot.runs);
+                    annText.setAttribute('class', 'annotation-text annotation-chord');
+                } else {
+                    const y = spot.group === 'below'
+                        ? belowBaseline(stringsBottom + opt.stemAreaHeight + 10, spot.lane)
+                        : stack.textAbove[spot.lane];
+                    annText = this.createText(spot.x, y, t.text, {
+                        fontSize: `${TEXT_FONT}px`,
                         fill: opt.fretColor,
                     });
-                    annText.setAttribute('class', 'annotation-text');
-                    // Its address, so the editor can take a click on the
-                    // text itself to the annotation it draws.
-                    annText.setAttribute('data-measure', measure.measure);
-                    annText.setAttribute('data-tick', t.tick || 0);
-                    svg.appendChild(annText);
+                    annText.setAttribute('class', 'annotation-text'
+                        + (spot.group === 'below' ? ' annotation-below' : ''));
                 }
+                // Its address, so the editor can take a click on the
+                // text itself to the annotation it draws.
+                annText.setAttribute('data-measure', measure.measure);
+                annText.setAttribute('data-tick', t.tick || 0);
+                svg.appendChild(annText);
             }
 
             // Chord diagrams (G15d3): a small box above the staff at the
@@ -1331,8 +1410,7 @@ export class TabRenderer {
             // annotation at the same tick is not printed again; boxes that
             // would overlap are pushed right. A name-only chord is just text.
             if (measure.diagrams && measure.diagrams.length) {
-                const boxTop = opt.topMargin - 34 - this._fxLanes.band
-                    - this._chordBand + 4;
+                const boxTop = stack.chordDiagramTop + 1;
                 for (const d of measure.diagrams) {
                     const name = (d.chord.name || '').trim();
                     const printed = name && (measure.texts || []).some(
@@ -1458,10 +1536,15 @@ export class TabRenderer {
                             svg.appendChild(techText);
                         }
 
-                        // Render fingering annotation below the beams
+                        // Right-hand fingering: the lane just below the beams.
+                        // Left-hand fretting: the lane above the staff, between
+                        // the effects band and the text (tab-lanes.js). Notes
+                        // of one chord column fan out sideways, not on top of
+                        // each other.
                         if (note.finger && this.options.showFingerings !== false) {
-                            const fingerY = beamY + 12;
-                            const fingerText = this.createText(noteX, fingerY, note.finger, {
+                            const fingered = event.notes.filter(n => n.finger);
+                            const fx = noteX + (fingered.indexOf(note) - (fingered.length - 1) / 2) * 8;
+                            const fingerText = this.createText(fx, beamY + 12, note.finger, {
                                 fontSize: '10px',
                                 fill: opt.mutedColor,
                                 fontWeight: '500',
@@ -1472,14 +1555,14 @@ export class TabRenderer {
                             svg.appendChild(fingerText);
                         }
 
-                        // Fretting-hand digit, circled (TablEdit style),
-                        // below the pluck letter when both are present.
                         if (note.lh !== undefined && note.lh !== null
                                 && this.options.showFingerings !== false) {
-                            const cy = beamY + (note.finger ? 24 : 10);
+                            const pressed = event.notes.filter(n => n.lh !== undefined && n.lh !== null);
+                            const lx = noteX + (pressed.indexOf(note) - (pressed.length - 1) / 2) * 13;
+                            const cy = stack.lhCenter;
                             const circle = document.createElementNS(
                                 'http://www.w3.org/2000/svg', 'circle');
-                            circle.setAttribute('cx', noteX);
+                            circle.setAttribute('cx', lx);
                             circle.setAttribute('cy', cy);
                             circle.setAttribute('r', 6);
                             circle.setAttribute('fill', 'none');
@@ -1487,7 +1570,7 @@ export class TabRenderer {
                             circle.setAttribute('stroke-width', '1');
                             circle.setAttribute('class', 'lh-finger-circle');
                             svg.appendChild(circle);
-                            const lhText = this.createText(noteX, cy + 3, String(note.lh), {
+                            const lhText = this.createText(lx, cy + 3, String(note.lh), {
                                 fontSize: '8px',
                                 fill: opt.mutedColor,
                                 textAnchor: 'middle'
@@ -1500,7 +1583,7 @@ export class TabRenderer {
                     // note.fx / note.grace marks for this column (after its
                     // chips, so they draw on top of the chip backgrounds)
                     if (event.notes.some(n => n.fx || n.grace)) {
-                        this._drawEventEffects(svg, event, noteX, measure.events, geom, stringsBottom);
+                        this._drawEventEffects(svg, event, noteX, measure.events, geom, stringsBottom, pairedBends);
                     }
                     if (fxRunColumns) fxRunColumns.push({ x: noteX, event });
 
@@ -1579,12 +1662,12 @@ export class TabRenderer {
 
     /** Baseline of the effects band's POINT lane (closest to the staff). */
     _fxPointY() {
-        return this.options.topMargin - 30;
+        return this._plan.stack.fx[0];
     }
 
     /** Baseline of run lane `i` (let ring, P.M.), above the point lane. */
     _fxRunY(i) {
-        return this.options.topMargin - 30 - (this._fxLanes.point ? FX_LANE : 0) - i * FX_LANE;
+        return this._plan.stack.fx[(this._fxLanes.point ? 1 : 0) + i];
     }
 
     /**
@@ -1592,7 +1675,7 @@ export class TabRenderer {
      * run lanes (_renderFxRuns, row-scoped). Grace notes go first: the
      * brush/roll mark sits left of whatever is leftmost in the column.
      */
-    _drawEventEffects(svg, event, noteX, events, geom, stringsBottom) {
+    _drawEventEffects(svg, event, noteX, events, geom, stringsBottom, pairedBends = new Set()) {
         const opt = this.options;
         const yOf = (s) => opt.topMargin + (s - 1) * opt.stringSpacing;
         let left = noteX - Math.max(...event.notes.map(n => this._fretLabel(n).width)) / 2;
@@ -1608,6 +1691,14 @@ export class TabRenderer {
         const fxSet = new Set();
         for (const n of event.notes) if (n.fx) n.fx.forEach(f => fxSet.add(f));
         if (!fxSet.size) return;
+        // The band's own marks: a bend whose target draws the arrow has none
+        const bandSet = new Set();
+        for (const n of event.notes) {
+            for (const f of n.fx || []) {
+                if ((f === 'bend' || f === 'bend-release') && pairedBends.has(n)) continue;
+                bandSet.add(f);
+            }
+        }
 
         // Brush (strum) and roll (arpeggio): ONE vertical mark per column,
         // spanning the strings that carry it. The brush arrow points toward
@@ -1666,7 +1757,7 @@ export class TabRenderer {
             svg.appendChild(trem);
         }
 
-        if (this._fxLanes.point) this._drawFxPoints(svg, fxSet, noteX);
+        if (this._fxLanes.point) this._drawFxPoints(svg, bandSet, noteX);
     }
 
     /**
@@ -1917,7 +2008,6 @@ export class TabRenderer {
                 // the tip. The amount is the fret difference (G15d2).
                 if (n2.tech === 'b') {
                     const n1 = notes[i - 1];
-                    if (n2.x - n1.x > 60) continue;
                     const x1 = n1.x + 9, y1 = n1.y - 2;
                     const x2 = n2.x - 8, y2 = n2.y - 13;
                     const arrow = document.createElementNS('http://www.w3.org/2000/svg', 'path');
@@ -2565,6 +2655,36 @@ export class TabRenderer {
         line.setAttribute('stroke', stroke);
         line.setAttribute('stroke-width', '1');
         return line;
+    }
+
+    /**
+     * A chord name for the chord lane: SVG text with the app's chord glyph
+     * styling (the accidental as ♯/♭, the extension raised and small), a capo
+     * shape after it smaller and lighter. `runs` is chordLaneRuns().
+     */
+    _chordText(x, y, runs) {
+        const opt = this.options;
+        const text = this.createText(x, y, '', {
+            fontSize: `${CHORD_FONT}px`,
+            fill: opt.fretColor,
+            fontWeight: '700',
+        });
+        let raised = false;
+        for (const r of runs) {
+            const span = document.createElementNS('http://www.w3.org/2000/svg', 'tspan');
+            span.textContent = r.text;
+            span.setAttribute('class', `chord-run chord-${r.kind}`);
+            if (r.kind !== 'main') span.setAttribute('font-size', `${Math.round(CHORD_FONT * CHORD_RUN_SCALE[r.kind] * 10) / 10}px`);
+            if (r.kind === 'shape') {
+                span.setAttribute('fill', opt.mutedColor);
+                span.setAttribute('font-weight', '400');
+            }
+            if (r.kind === 'sup' && !raised) span.setAttribute('dy', '-4');
+            else if (r.kind !== 'sup' && raised) span.setAttribute('dy', '4');
+            raised = r.kind === 'sup';
+            text.appendChild(span);
+        }
+        return text;
     }
 
     createText(x, y, content, attrs = {}) {

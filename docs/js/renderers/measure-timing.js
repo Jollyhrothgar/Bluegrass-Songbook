@@ -1,3 +1,5 @@
+import { pitchedTracks } from './otf-tracks.js';
+
 // Time-signature-aware measure math for OTF documents.
 //
 // OTF carries a global metadata.time_signature plus optional per-measure
@@ -463,11 +465,28 @@ function markDisplayByMeasure(measureMarks) {
 }
 
 /**
+ * The annotations to draw on one track's staff (OTF 1.3 `annotations[].track`).
+ * A text belongs to the staff of its track; one with no track (a file from
+ * before 1.3, or hand-made) goes on the first PITCHED track only, so it never
+ * lands on every staff or on a drum track. With no `trackId` (a caller that
+ * does not say which staff, such as the tab editor until it is updated) every
+ * annotation is kept, as before 1.3.
+ */
+function ownAnnotations(otf, trackId) {
+    const anns = otf?.annotations || [];
+    if (trackId === undefined || trackId === null) return anns;
+    const first = pitchedTracks(otf?.tracks)[0]?.id;
+    return anns.filter(a => (a.track ?? first) === trackId);
+}
+
+/**
  * Attach display decorations from the OTF document onto a track's
  * notation entries (display copy — the document itself is untouched):
  *
  * - `texts`:   placed free-text annotations ("Long Choke", chord letters)
- *              from otf.annotations, grouped per written measure
+ *              from otf.annotations, grouped per written measure; with a
+ *              `trackId`, only that track's own (see ownAnnotations), and
+ *              each carries its `kind` / `place` when the file has them
  * - `section`: reading-list entry names ("Intro", "Part A1") on each
  *              range's first measure — TablEdit prints them there
  * - `repeatStart`/`repeatEnd`/`ending`/`endingStart`/`endBar`/`jump`: the
@@ -481,15 +500,19 @@ function markDisplayByMeasure(measureMarks) {
  * prepareCompactNotation/expandNotation, so the decorations ride along
  * into either display mode.
  */
-export function attachOtfDecorations(notation, otf) {
-    const anns = otf?.annotations || [];
+export function attachOtfDecorations(notation, otf, trackId) {
+    const anns = ownAnnotations(otf, trackId);
     const named = (otf?.reading_list || []).filter(e => e.name);
     const marks = markDisplayByMeasure(otf?.measure_marks);
     if (!anns.length && !named.length && !marks.size) return notation;
     const textsByMeasure = new Map();
     for (const a of anns) {
         if (!textsByMeasure.has(a.measure)) textsByMeasure.set(a.measure, []);
-        textsByMeasure.get(a.measure).push({ tick: a.tick, text: a.text });
+        const text = { tick: a.tick, text: a.text };
+        // OTF 1.3 fields, carried only when the file has them
+        if (a.kind) text.kind = a.kind;
+        if (a.place) text.place = a.place;
+        textsByMeasure.get(a.measure).push(text);
     }
     const sectionByMeasure = new Map();
     for (const e of named) {

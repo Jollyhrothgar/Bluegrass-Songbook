@@ -63,6 +63,7 @@ export const LAZY_MODULE_URLS = [
     './js/renderers/chord-box.js',
     './js/renderers/tab-ascii.js',
     './js/renderers/tab-hit-test.js',
+    './js/renderers/tab-lanes.js',
     './js/renderers/tab-player.js',
     './js/renderers/tablature.js',
     './js/review-queue.js',

@@ -321,7 +321,9 @@ describe('notes without fx render exactly as before', () => {
     it('adds no new elements and reserves no band', () => {
         const { container, renderer } = render(NOTATION);
         expect(container.querySelector('[class*="fx-"], [class*="grace"]')).toBeNull();
-        expect(renderer.options.topMargin).toBe(40);
+        // the left-hand digit has its own lane above the staff (G21c): 14 high;
+        // a tab with none of it keeps topMargin 40
+        expect(renderer.options.topMargin).toBe(40 + 14);
     });
 
     it('an empty fx list is the same as none', () => {

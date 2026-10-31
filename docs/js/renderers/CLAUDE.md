@@ -58,9 +58,9 @@ Playback highlighting is keyed by absolute tick, not measure or note index:
   ruler/cursor, which share the mapping. Every consumer reads
   `noteX0 + noteOffset + tick / ticks * noteW`; `noteOffset` is only a short
   measure's right-alignment. `otf-editor`'s `automation.check()` enforces this.
-- The free-text band and the effects band above the staff are reserved
-  uniformly and only when the tab uses them (`fxLanesFor()`, one scan per
-  render), so a tab without them renders byte-identically to before.
+- The bands above and below the staff (annotation lanes, below) are reserved
+  uniformly and only when the tab uses them, so a tab without them renders
+  byte-identically to before (`topMargin` 40).
 - Time signatures and rests are engraved with Bravura (SMuFL) when loaded,
   bold-serif digits otherwise. A tab must draw once per open:
   `renderTablaturePart` starts the font load with the tab JSON and waits up to
@@ -71,13 +71,56 @@ Playback highlighting is keyed by absolute tick, not measure or note index:
   `bravura-1.482`) because `@latest` on jsDelivr's `gh` endpoint is the repo's
   HEAD. Test: `__tests__/tablature-bravura.test.js`.
 
+### Annotation lanes (G21c)
+
+`tab-lanes.js` is the pure layout (no DOM): `laneStack(needs)` gives every y,
+`assignLanes(items)` places texts, `bendSources(row)` finds the bends that
+need no band mark. The renderer's `_planLanes(notation, perRow)` runs once per
+`render()`, after `_calculateLayout`, and sets `options.topMargin` from the
+busiest row (uniform: the editor's cursor and grid share that number; every y
+goes through it and `rowData`, never an ad-hoc offset). The closer to the
+staff, the more important:
+
+| | outward from the staff |
+|---|---|
+| above | marks on the fret and the staff (not a band), then the effects band, then **left-hand numbers** (`note.lh`, circled), then **text lanes**, then chord diagrams, then **chord names**, then the section name at the row's top |
+| below | **right-hand fingering** (`note.finger`, beside the beams), then **text lanes** (`place: "below"`) |
+
+- A text goes where its track is: `attachOtfDecorations(notation, otf,
+  trackId)` keeps that track's annotations. A track-less one (a file from
+  before OTF 1.3) goes on the first pitched track only; with no `trackId`
+  every annotation is kept (the tab editor's call, until it passes one).
+  `kind` and `place` ride on `measure.texts` when the file has them.
+- Text lanes: sorted by tick, never overprinting, as many as the row needs,
+  the band sized from the busiest row. Widths are estimates
+  (`estimateTextWidth`, wide on purpose), so it cannot be measured in jsdom;
+  a text that would pass the row's edge slides left to end there. Lane 0 is
+  the nearest the staff. `.annotation-text` keeps `data-measure` / `data-tick`;
+  below ones also have `.annotation-below`, chord names `.annotation-chord`.
+- Chord names (`kind: "chord"`): SVG text in the app's chord style
+  (`chordGlyphRuns` reads `chordGlyphHtml`: root, ♯/♭, minor, raised
+  extension), through `chordParts(text, parser)`. The shared parser
+  (`tab-chord.js` `parseTabChord`, G21d) is not in the tree: until it is,
+  `tabChordParser` in `tablature.js` is null and the text is drawn as written.
+  Switching on is one import and one assignment there (`setTabChordParser`
+  is the hook the tests use). With it, `ext` is a raised "(7)", `optional`
+  wraps the chord in parentheses and a capo `shape` follows, smaller and
+  lighter ("A (G)").
+- A chord diagram's own name is skipped when a text at the same tick says it.
+- Notes of one chord column fan out sideways (right-hand letters 8 px apart,
+  left-hand circles 13), so they never print on each other.
+- Tests: `tab-lanes.test.js` (pure), `tablature-lanes.test.js` (drawn; the
+  frozen `fixtures/fmb-ensemble-1481.otf.json`; a live-corpus sweep of the
+  planner with no DOM, because drawing hundreds of long tabs does not fit a
+  test's memory).
+
 ### Chord diagrams
 
 `chord-box.js` is a staff-agnostic SVG chord box (`chordBoxGeometry` layout, `renderChordBox`):
 string 1 on the right, grid from `first_fret` ("3fr"), `0` = o, `null` = x, no `frets` = name only,
 no barre (the file has none). `attachChordDiagrams(notation, otf, trackId)` (measure-timing.js,
 called beside `attachOtfDecorations`) hangs `measure.diagrams` on the track's measures. The renderer
-reserves a band only for a track with diagrams, shifts annotation text up by it, centres a box on
+reserves a band only for a track with diagrams (above the text lanes, below the chord names), centres a box on
 its tick (pushed right on overlap) and skips a name a text annotation at that tick already says.
 `dx`/`dy` are kept, not drawn (units unknown). Tests: `chord-box.test.js`,
 `tablature-chord-diagrams.test.js`, `e2e/chord-diagrams.spec.js`.
@@ -122,6 +165,15 @@ limitation is ROW boundaries: a tie whose source is on the previous row draws an
 incoming half-arc from the margin (`.tie-arc-in`); a technique draws nothing.
 So "slur not rendering" usually means the source note is on the previous row.
 
+### Tuning names
+
+`BANJO_TUNINGS`, `MANDOLIN_TUNINGS`, `GUITAR_TUNINGS` key a tuning by its note
+letters, string 1 first. Players list a banjo's 5th string first, so Open D
+(`f#DF#AD`) is `D-A-F#-D-F#` here, C (`gCGBD`) `D-B-G-C-G`, Open A (`aEAC#E`)
+`E-C#-A-E-A`, and mandolin DADA `D-A-D-A`. `tablature-tunings.test.js`
+pins them. The tab editor's presets (`otf-editor/tab-setup.js`) must name the
+same pitches, or the stave header prints notes in place of the name.
+
 ## TabPlayer (`tab-player.js`)
 
 The constructor takes no arguments. The OTF and options go to `play(otf,
@@ -145,6 +197,8 @@ Techniques: a tie continuation never re-attacks (`applyTieExtensions`); `h`/`p`/
 slide targets are one pick whose source rings on and glides (`absorbLegato`,
 `legatoWaypoints`); `x` is a short damped chop; a `bend`/`bend-release` note and its `tech: 'b'` target are one pick (`absorbBend`) that ramps by the fret difference (`bendIntoWaypoints`); an orphan `b` bends a quarter tone. All
 pitch moves use WebAudioFont `slides` waypoints (8th arg of `queueWaveTable`).
+
+One mark per bend (G21c): a `bend` / `bend-release` whose next note on the string, in the same row, is its `tech: "b"` target has no mark in the effects band, because the target carries the arrow and the amount (`bendSources`; `fxLanesFor` reserves no lane for it either). A bend with no target in its row keeps the band mark. The target's arrow has no distance gate any more; playback still needs both notes.
 
 Bend amounts (G15d): `bendLabel(fretDiff)` in tablature.js is the printed
 amount (1 = ½, 2 = full, 3 = 1½, 4 = 2; sign not printed), drawn as `.bend-arrow`

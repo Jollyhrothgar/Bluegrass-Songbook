@@ -119,13 +119,14 @@ describe('TabRenderer chord diagrams', () => {
         expect(plain.querySelector('.chord-diagram')).toBeNull();
     });
 
-    it('keeps text annotations above the chord boxes', () => {
+    it('puts text lanes between the chord boxes and the staff (Mike, 2026-10-31: nearer the staff = more important)', () => {
         const otf = { ...OTF, annotations: [{ measure: 1, tick: 480, text: 'Long Choke' }] };
         const { container } = draw(otf);
         const textY = Number(container.querySelector('.annotation-text').getAttribute('y'));
         const boxY = Number(/translate\([\d.-]+ ([\d.-]+)\)/.exec(
             container.querySelector('.chord-diagram').getAttribute('transform'))[1]);
-        expect(textY).toBeLessThan(boxY);
+        expect(textY).toBeGreaterThan(boxY + CHORD_BOX_HEIGHT);
+        expect(textY).toBeLessThan(topMarginOf(container));
     });
 
     it('fits a phone-width row: no box leaves the drawing or overlaps its neighbour', () => {
