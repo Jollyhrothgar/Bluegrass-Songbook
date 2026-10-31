@@ -421,7 +421,7 @@ Mike approved the frames on 2026-10-30 ("it looks really good"):
 | Spec + mock frames | done, commits on `feature/g19-song-page-docks` |
 | G19a top dock + Details | done — #344 (2026-10-30) |
 | G19b reading dock | done — #344 (2026-10-30), Mike: "It’s amazing" |
-| G19c tabs + lists | not started. The tab dock's Display must use `#dock-display-btn` and carry Auto-hide; tabs start hiding then (CSS keys on it). Keep the bands up while a tab plays (its auto-scroll would hide them) |
+| G19c tabs + lists | building on `feature/g19c-tab-dock`: c1 the tab dock, then c2 set lists; one PR, one review |
 | G19d tidy | not started |
 | G19e editor Submit in the top dock | only on Mike's yes |
 
@@ -533,3 +533,72 @@ in its own commits.
    `--bottomband-h`. `.cc-chart-col` uses it instead of the 3.75rem guess.
 7. **Tour:** the Key step rings the dock's Key.
 8. **Print:** hide `#app-bottomband`.
+
+### G19c brief
+
+One branch (`feature/g19c-tab-dock`) and one PR. Two steps, each in its own
+commits: **c1 the tab dock**, then **c2 set lists**. The approved look:
+- `g19-docks-views-phone.html` frames 1–8 and `g19-docks-views-desktop.html`
+  D1.
+- `g18b3-docks-phone.html` frame 10 (a set list on a lyric page).
+- Desktop is drawn as the slim dock, and Mike chose to build it as drawn
+  (2026-10-30).
+
+**c1: the tab dock**
+
+1. **The dock on a tab part:** ▶ · Tempo − n + · View ▾ · Display, on every
+   width.
+   - ▶ becomes ⏸ while playing, and ⏹ appears beside it once playback has
+     started.
+   - The position readout sits on the dock's top edge, as today (frame 2).
+   - Dragging over measures still arms a loop, and ▶ still reads "▶ Loop".
+2. **Display on a tab** is a sheet opened from `#dock-display-btn`, the same
+   id as on the lyrics, because auto-hide keys on it. It replaces today's ⚙
+   sheet and the desktop band's inline controls (frame 3):
+   - **Size:** remembered in its own key, separate from text and notation.
+   - **Play in:** today's band Key. It is a capo for playback; it says the
+     frets don't move and shows the capo.
+   - **Layout:** Unrolled / Repeats, when the tab has a reading list.
+   - **Feel:** Four / Two, for 4/4 tabs.
+   - **Practice:** Loop, Metronome, Count-in 1·2·3·4.
+   - **Tracks:** the mixer, for more than one pitched track; Solo stays on
+     the track card.
+   - **Auto-hide controls.**
+
+   Keep the controls' listeners alive: `tab-controls-sheet.js` already moves
+   rather than rebuilds for this reason. The bands stay up while a tab plays,
+   because its auto-scroll must not hide them.
+3. **View on a tab** is the View ▾ sheet (frames 4–5):
+   - the work's lyrics, chart or notation;
+   - **Tabs:** each part with its take count. A part with more than one take
+     drills (›) into its takes, which are today's `#arr-list`: ★ for the
+     editor's pick, ✓ for the one showing, author and source.
+   - **Tracks:** for a multi-track tab, today's "View track" choices,
+     including All.
+   - Versions, if any.
+4. **Above the music:** the title, "Written by… ›", the practice line, then
+   one credit line, e.g. "Banjo tab by schlange · Banjo Hangout ★".
+   - The status notices (`.arr-status`, `.arr-skipped`) stay under it.
+   - The takes bar (`.arr-bar`) and `.track-view-tabs` leave the page.
+   - The track card (tuning, Solo) and the attribution block after the tab
+     stay.
+5. **The tab editor's band stays as G17 made it** (frame 9 and D3): Play,
+   Stop, tempo, loop, ⚙, Submit, ✓ Done. Leave its disabled-with-a-reason
+   controls as they are. Only the reading band changes.
+6. **The tour's ⚙ step** (`.tab-more-btn`) points at the tab's Display.
+
+**c2: set lists**
+
+1. **Delete `#song-nav-bar`**, `--listbar-h` and the stacking rules
+   (`body.has-list-context .app-bottomband`).
+2. **← names the list** ("← Friday Jam") and goes back to it.
+3. **‹ 2 of 9 ›** is a pill at the left of the bottom dock on every view:
+   lyrics, chart, ABC, tab.
+   - Prev and next are disabled at the ends.
+   - The middle goes to the list.
+   - A view with no dock (a placeholder) gets a dock holding just the pill.
+4. **On a tab in a list** the tempo becomes a "♩ 120" chip that opens a
+   small stepper sheet (frames 7–8). Everything fits at 360px.
+5. **←/→ still step through the list**, but they ignore keys typed in an
+   input, a textarea, contenteditable, CodeMirror or the tab editor's canvas.
+6. **Song notes** stay in ⋯ ▸ This song.
