@@ -43,10 +43,10 @@ const HIGHEST_MIDI = 90;  // F#6
  * The first entry is the instrument's standard (new-otf.js), and is what you
  * get when you pick the instrument.
  *
- * The renderer names a tuning from its note LETTERS only, and for banjo "Open
- * D", "C Tuning" and "Open A", and mandolin "DADA", its letters are not the
- * tunings players mean by those names. These are the real tunings, so the
- * stave header prints their notes rather than the name.
+ * The renderer names a tuning from its note LETTERS only. Until G21c corrects
+ * its table, banjo "Open D", "C Tuning" and "Open A", and mandolin "DADA", have
+ * letters that aren't the tunings players mean. These are the real tunings, so
+ * the stave header prints their notes rather than the name.
  */
 export const TUNING_PRESETS = {
     '5-string-banjo': [
@@ -54,7 +54,7 @@ export const TUNING_PRESETS = {
         ['Double C', ['D4', 'C4', 'G3', 'C3', 'G4']],
         ['G Modal', ['D4', 'C4', 'G3', 'D3', 'G4']],
         ['Open D', ['D4', 'A3', 'F#3', 'D3', 'F#4']],
-        ['C Tuning', ['E4', 'C4', 'G3', 'C3', 'G4']],
+        ['C Tuning', ['D4', 'B3', 'G3', 'C3', 'G4']],   // gCGBD (gCGCE is Open C)
         ['Open A', ['E4', 'C#4', 'A3', 'E3', 'A4']],
     ],
     'tenor-banjo': [['Standard', INSTRUMENT_CONFIGS['tenor-banjo'].tuning]],
