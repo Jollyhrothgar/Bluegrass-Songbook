@@ -104,7 +104,7 @@ remains the backlog's source of truth.
 
 | ID | Piece | Model / effort | Worktree | Status | Checked |
 |----|-------|----------------|----------|--------|---------|
-| G20a | Phone track switcher | Sonnet / medium | `g20a-phone-tracks` | dispatched 2026-10-30 | |
+| G20a | Phone track switcher | Sonnet / medium | `g20a-phone-tracks` | review, merged into the batch 2026-10-30 | diff read; my fix: `--bg-card` (undefined) → `--bg`, checked in dark mode; unit 7 ✓, switcher + tracks e2e 7 ✓ (port 8321); agent: npm 5181 ✓, 42 e2e ✓ |
 | G20b | Tab setup + title sync + front door meter | Sonnet / high | `g20b-tab-setup` | dispatched 2026-10-30 | |
 
 The batch branch is `feature/g20-stand-alone-editor`. Both pieces merge into
