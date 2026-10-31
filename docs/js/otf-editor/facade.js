@@ -1720,7 +1720,7 @@ export class EditingFacade {
             for (const m of measures) {
                 if (overridden.has(m.measure)) continue;
                 for (const e of m.events || []) {
-                    const end = e.tick + Math.max(0, ...(e.notes || []).map(n => Number(n.d) || 0));
+                    const end = e.tick + Math.max(0, ...(e.notes || []).map(n => Number(n.dur) || 0));
                     if (e.tick >= length || end > length) bad.add(m.measure);
                 }
             }

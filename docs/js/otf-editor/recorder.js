@@ -356,6 +356,11 @@ export function dispatchEditorEvent(editor, event) {
             state.deleteTrack(params.trackId);
             break;
 
+        // === Tab setup (title, key, time signature, a track's tuning and capo) ===
+        case 'tabSetup':
+            state.applyTabSetup(params.setup, params.trackId);
+            break;
+
         // === Mode ===
         case 'setMode':
             state.setMode(params.mode);

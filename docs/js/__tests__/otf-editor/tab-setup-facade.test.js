@@ -6,7 +6,7 @@ import { describe, it, expect } from 'vitest';
 
 import { EditingFacade } from '../../otf-editor/facade.js';
 
-const note = (s, f, d = 480) => ({ s, f, d });
+const note = (s, f, dur = 480) => ({ s, f, dur });
 
 /** A 4/4 banjo with notes in measures 2 and 3; a mandolin beside it. */
 function doc() {
