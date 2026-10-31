@@ -1,0 +1,97 @@
+{
+  "otf_version": "1.3",
+  "metadata": {
+    "title": "Conformance",
+    "time_signature": "4/4",
+    "tempo": 100
+  },
+  "timing": {
+    "ticks_per_beat": 480
+  },
+  "tracks": [
+    {
+      "id": "banjo",
+      "instrument": "5-string-banjo",
+      "tuning": [
+        "D4",
+        "B3",
+        "G3",
+        "D3",
+        "G4"
+      ],
+      "capo": 0,
+      "role": "lead"
+    },
+    {
+      "id": "guitar",
+      "instrument": "6-string-guitar",
+      "tuning": [
+        "E4",
+        "B3",
+        "G3",
+        "D3",
+        "A2",
+        "E2"
+      ],
+      "role": "rhythm"
+    }
+  ],
+  "notation": {
+    "banjo": [
+      {
+        "measure": 1,
+        "events": [
+          {
+            "tick": 0,
+            "notes": [
+              {
+                "s": 1,
+                "f": 0,
+                "dur": 240
+              }
+            ]
+          },
+          {
+            "tick": 480,
+            "notes": [
+              {
+                "s": 2,
+                "f": 2,
+                "dur": 240
+              },
+              {
+                "s": 3,
+                "f": 0,
+                "dur": 240
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "measure": 2,
+        "events": [
+          {
+            "tick": 0,
+            "notes": [
+              {
+                "s": 5,
+                "f": 0,
+                "dur": 480
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "annotations": [
+    {
+      "measure": 1,
+      "tick": 0,
+      "text": "G",
+      "track": "banjo",
+      "place": "beside"
+    }
+  ]
+}

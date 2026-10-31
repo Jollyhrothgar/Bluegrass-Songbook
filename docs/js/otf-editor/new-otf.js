@@ -8,7 +8,7 @@
 // The version to stamp. Not imported from otf-validate.js (OTF_VERSION): this
 // module is reached from the song page's boot graph and that one is lazy.
 // otf-validate.test.js asserts the two are equal.
-const OTF_VERSION = '1.2';
+const OTF_VERSION = '1.3';
 
 /**
  * The editor's instrument presets: the track id a new track of that kind gets,

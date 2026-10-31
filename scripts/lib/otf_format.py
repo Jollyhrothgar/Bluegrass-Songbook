@@ -34,9 +34,9 @@ SCHEMA_PATH = Path(__file__).resolve().parents[2] / 'docs' / 'schema' / 'otf.sch
 # importers import them from here; otf_schema re-exports them). Their JS twins
 # are in docs/js/otf-editor/otf-validate.js.
 
-#: The version every writer stamps (schema 1.2: dynamics, bend, measure_marks,
-#: chords, chord_diagrams).
-OTF_VERSION = '1.2'
+#: The version every writer stamps (schema 1.3: annotations[].track, kind,
+#: place; 1.2 was dynamics, bend, measure_marks, chords, chord_diagrams).
+OTF_VERSION = '1.3'
 
 #: Dynamic levels, loudest first (TablEdit codes 0-6). Equal to the schema's
 #: enum for ``tracks[].dyn`` and ``note.dyn`` (tests/test_otf_schema.py).

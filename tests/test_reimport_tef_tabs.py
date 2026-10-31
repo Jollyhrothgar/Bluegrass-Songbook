@@ -65,7 +65,7 @@ def test_refresh_takes_new_fields_keeps_metadata_and_drops_skipped():
     assert out['metadata'] == existing['metadata']
     assert out['notation']['banjo'][0]['events'][0]['notes'][0]['dyn'] == 'f'
     assert out['measure_marks'][0]['repeat_start'] is True
-    assert out['otf_version'] == '1.2'
+    assert out['otf_version'] == r.OTF_VERSION == '1.3'
     assert 'skipped' not in out['x_source']
     assert out['x_source']['author'] == 'a'
     assert out['timing'] == existing['timing']
@@ -89,7 +89,7 @@ def test_regenerated_parsed_keeps_skipped_title_and_x_source():
     assert out['x_source']['author'] == 'a'
     assert out['x_source']['source_id'] == '1'
     assert out['metadata']['title'] == 'Hand Title'
-    assert out['otf_version'] == '1.2'
+    assert out['otf_version'] == r.OTF_VERSION == '1.3'
 
 
 def test_tef_lookup_by_tab_id(tmp_path):
