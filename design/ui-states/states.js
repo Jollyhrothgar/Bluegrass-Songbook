@@ -329,7 +329,7 @@ export const STATES = [
     {
         id: 'tab-multi-track',
         group: 'Tab page',
-        title: 'Tab, multi-track ensemble',
+        title: 'Tab, multi-track ensemble (the staff header reads "Banjo ▾ 1 of 4")',
         url: '/#work/foggy-mountain-breakdown/ensemble',
         ready: tabReady,
         workshop: ['F7', 'F4'],
@@ -366,7 +366,7 @@ export const STATES = [
     {
         id: 'tab-view-sheet',
         group: 'Tab page',
-        title: 'Tab View sheet (Tabs with their take counts, Tracks)',
+        title: 'Tab View sheet (Tabs for this song, with their version counts; no Tracks)',
         url: '/#work/foggy-mountain-breakdown/ensemble',
         ready: tabReady,
         setup: openDock('view'),

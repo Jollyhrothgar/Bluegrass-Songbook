@@ -16,7 +16,7 @@ import {
 import { KeyboardHandler } from './keyboard.js';
 import { EditorToolbar, PHONE_MAX_WIDTH } from './toolbar.js';
 import { EditorMenuBar } from './menu-bar.js';
-import { TrackSwitcher } from './track-switcher.js';
+import { TrackSwitcher } from '../track-switcher.js';
 import {
     NoteEntryPopover, AnnotationPopover, TrackNamePopover, ValuePromptPopover, SaveAsPopover,
     GracePopover,
@@ -400,9 +400,10 @@ export class OTFEditor {
         };
 
         this.trackSwitcher = new TrackSwitcher({
-            state: this.state,
-            isPhone: () => !!window.matchMedia?.(`(max-width: ${PHONE_MAX_WIDTH}px)`).matches,
-            onChoose: () => this.editorRoot?.focus(),
+            getTracks: () => this.state.getTracks(),
+            getActive: () => this.state.trackId,
+            choose: (id) => { this.state.setTrack(id); this.editorRoot?.focus(); },
+            enabled: () => !!window.matchMedia?.(`(max-width: ${PHONE_MAX_WIDTH}px)`).matches,
         });
 
         // Initialize cursor overlay

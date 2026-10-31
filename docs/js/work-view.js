@@ -113,7 +113,7 @@ let activeEditBand = null;       // bottom band bound to the live editor
 let unregisterTabReturn = null;  // auth-return source for the live tab editor
 let tabAuthoring = null;         // {kind:'add'|'new', part, take, target, otf}
 let takeStatusLine = null;       // "Submitted — live now…" under the take header
-let tabTrackView = null;         // the tab on screen's staves: {ids, leadId, host}; View ▸ Tracks reads it
+let tabTrackView = null;         // the tab on screen's staves: {ids, leadId, host, tracks, switchers}; the staff header's switcher reads it
 let lastHybrid = false;          // the lead sheet holds chords AND ABC (known once it renders; View lists Chords / Notation)
 
 /**
@@ -1192,7 +1192,6 @@ function currentViewModel(ctx = {}) {
     for (const p of availableParts) if (p.type === 'tablature') p.takes = takesOf(p);
     return viewModel({
         parts: availableParts,
-        tracks: activePart?.type === 'tablature' ? trackChoices() : [],
         active: activePart,
         hybrid: lastHybrid,
         abcShown: showAbcNotation,
@@ -1235,22 +1234,28 @@ function pickTab(partId) {
     selectPart(availableParts.find(p => p.partId === partId));
 }
 
-/** View ▸ Tracks: one staff at a time, or All. Sight only; the mixer decides what you hear. */
+/** The tab on screen's switchable staves: pitched tracks that own a section, by friendly name. */
 function trackChoices() {
-    if (!tabTrackView || tabTrackView.ids.length < 2) return [];
-    const current = activeTrackView ?? tabTrackView.leadId;
-    return [
-        ...tabTrackView.ids.map(id => ({ id, label: id, on: id === current })),
-        { id: 'all', label: 'All', on: current === 'all' },
-    ];
+    return tabTrackView?.tracks || [];
 }
 
-/** Show the tab's staves the reader chose: every section's visibility follows `activeTrackView`. */
+/**
+ * Show the tab's staves the reader chose: every section's visibility follows
+ * `activeTrackView`. The staff header's switcher sits on the first staff
+ * showing (under All, the others keep their own names).
+ */
 function applyTrackView() {
     if (!tabTrackView) return;
     const current = activeTrackView ?? tabTrackView.leadId;
+    let first = null;
     for (const section of tabTrackView.host.querySelectorAll('.tablature-track-section')) {
-        section.style.display = (current === 'all' || section.dataset.trackId === current) ? 'block' : 'none';
+        const show = current === 'all' || section.dataset.trackId === current;
+        section.style.display = show ? 'block' : 'none';
+        if (show && !first) first = section;
+    }
+    tabTrackView.firstShown = first?.dataset.trackId;
+    for (const [id, sw] of Object.entries(tabTrackView.switchers)) {
+        sw.decorate(tabTrackView.host.querySelector(`[data-track-id="${CSS.escape(id)}"] .track-info`));
     }
 }
 
@@ -1272,7 +1277,6 @@ function openViewSheet(opener) {
             onPick: (id) => { sheet.close(); pickView(id); },
             onPickTab: (partId) => { sheet.close(); pickTab(partId); },
             onPickTake: (partId, index) => { sheet.close(); pickTake(partId, index); },
-            onPickTrack: (id) => { sheet.close(); pickTrack(id); },
             renderVersions: (host) => {
                 const versions = currentGroupVersions.length ? currentGroupVersions : [currentWork];
                 host.innerHTML = '<div class="arrangement-loading">Loading…</div>';
@@ -2481,9 +2485,10 @@ function loadTabRenderKit() {
         import('./tab-controls-sheet.js'),
         import('./tab-playback-interactions.js'),
         import('./tab-dock.js'),
-    ]).then(([{ TabRenderer }, { TabPlayer }, { attachTabControlsSheet }, interactions, tabDock]) => {
+        import('./track-switcher.js'),
+    ]).then(([{ TabRenderer }, { TabPlayer }, { attachTabControlsSheet }, interactions, tabDock, trackSwitcher]) => {
         tabRenderKit = {
-            TabRenderer, TabPlayer, attachTabControlsSheet, tabDock,
+            TabRenderer, TabPlayer, attachTabControlsSheet, tabDock, trackSwitcher,
             attachTabPlaybackInteractions: interactions.attachTabPlaybackInteractions,
             playbackTickForPoint: interactions.playbackTickForPoint,
             playbackRangeForMeasures: interactions.playbackRangeForMeasures,
@@ -2558,7 +2563,7 @@ async function renderTablaturePart(part, container) {
         const controls = createTablatureControls(otf, part);
         setBottomBand(controls);
 
-        // Which staff you see is View ▸ Tracks (audio = the Display sheet's
+        // Which staff you see is the staff header's switcher (audio = the Display sheet's
         // mixer, and Solo). One visible track at a time kills the
         // nested-scroll fights and the 'cursors in different places'
         // confusion, plus All for the stacked view. (True score view, every
@@ -2593,6 +2598,7 @@ async function renderTablaturePart(part, container) {
         // Track ids that own a section, in document order — rendered staves
         // AND percussion placeholders (which have no renderer).
         const viewIds = [];
+        const pitchedIds = [];   // the pitched tracks among them
 
         for (const track of otf.tracks) {
             let notation = otf.notation[track.id];
@@ -2667,10 +2673,29 @@ async function renderTablaturePart(part, container) {
             renderer.render(track, notation, ticksPerBeat, timeSignature, timings.visual);
             trackRenderers[track.id] = renderer;
             viewIds.push(track.id);
+            pitchedIds.push(track);
         }
 
-        // View ▸ Tracks lists every track that owns a section
-        tabTrackView = { ids: viewIds, leadId: leadTrackId, host: allTracksContainer };
+        // The staff header's switcher (G23): "Banjo ▾ 1 of 4" on a tab with
+        // two or more pitched staves, "All tracks ▾" while All shows.
+        tabTrackView = { ids: viewIds, leadId: leadTrackId, host: allTracksContainer,
+            tracks: pitchedIds.map(t => ({ id: t.id, label: tabRenderKit.trackSwitcher.friendlyTrackName(t) })),
+            switchers: {}, firstShown: null };
+        if (tabTrackView.tracks.length > 1) {
+            const view = tabTrackView;
+            for (const track of pitchedIds) {
+                view.switchers[track.id] = new tabRenderKit.trackSwitcher.TrackSwitcher({
+                    getTracks: () => view.tracks,
+                    getActive: () => activeTrackView ?? view.leadId,
+                    choose: pickTrack,
+                    enabled: () => view.firstShown === track.id,
+                    extra: [{ id: 'all', label: 'All tracks' }],
+                });
+                // A redraw (Size, Bars, resize) makes a fresh header
+                trackRenderers[track.id].onAfterRender = () => applyTrackView();
+            }
+            applyTrackView();
+        }
         controls.querySelector('.tab-view-btn')?.classList.toggle('hidden', currentViewModel().kind === 'none');
 
         // Track checkboxes control AUDIO only — the view tabs decide
@@ -3956,7 +3981,8 @@ function setupTablaturePlayer(otf, controls, renderer) {
         attachInteractions(r, trackId);
         // renderer re-renders (resize, Bravura) rebuild the row SVGs —
         // reattach so the handlers survive
-        r.onAfterRender = () => attachInteractions(r, trackId);
+        const before = r.onAfterRender;   // the staff header's switcher redraws too
+        r.onAfterRender = () => { before?.(); attachInteractions(r, trackId); };
     }
 
     // Esc disarms (one live listener; replaced on re-render)
