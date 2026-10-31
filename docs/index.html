@@ -86,12 +86,17 @@
                 <p id="visitor-stats" class="visitor-stats"></p>
             </div>
             <div class="landing-search">
-                <input
-                    type="text"
-                    id="landing-search-input"
-                    placeholder="Search songs &mdash; title, artist, or lyrics"
-                    autocomplete="off"
-                >
+                <div class="landing-search-row">
+                    <input
+                        type="text"
+                        id="landing-search-input"
+                        placeholder="Search songs &mdash; title, artist, or lyrics"
+                        autocomplete="off"
+                    >
+                    <label class="include-dungeon" title="Also search the Bluegrass Dungeon: archived songs outside the curated songbook">
+                        <input type="checkbox" id="landing-include-dungeon"> Include the dungeon
+                    </label>
+                </div>
                 <div class="landing-facets" id="landing-facets">
                     <button class="facet-chip" data-facet-tag="Instrumental">Instrumentals</button>
                     <button class="facet-chip" data-facet-tag="Gospel">Gospel</button>
