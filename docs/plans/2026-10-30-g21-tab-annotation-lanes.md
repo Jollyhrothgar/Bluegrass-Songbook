@@ -193,9 +193,14 @@ of the neck."
   `reading_list`, then takes `chords` and `chord_diagrams` from the new
   importer. A corrected diagram would be silently reverted by the G21
   re-import.
-  - **Data side:** add `chords` and `chord_diagrams` to that comparison
-    before the re-import.
-  - **Alternatively:** make the fixes after it.
+  - **The fix (agreed by the tab editor session, 2026-10-31):** in G21a's PR,
+    the re-import compares every field it replaces (`COMPARED = TAKEN`: adds
+    `measure_marks`, `chords`, `chord_diagrams`).
+    - A test pins that a hand-edited diagram survives.
+    - It lands before any hand correction or the G21 re-import.
+    - Reader edits were already safe (`submitted_by`, `x_corrected_by`,
+      `x_derived_from` skip the file). The gap was hand edits made straight
+      in `works/`.
 - **Options for Mike:**
   1. **Correct the 27 diagrams by hand.** Voicings are drafted from each
      measure's notes and he approves them on the real page, after the
