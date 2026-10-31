@@ -71,7 +71,8 @@ Mountain Breakdown on the real page before it merges.
   chord diagrams already use (`_diagram_track_index` / `diagramTrackIndex`).
 - **Renderer:** `attachOtfDecorations(notation, otf, trackId)` keeps a
   track's own annotations. A track-less annotation (an old or hand-made file)
-  draws on the first track only, not on every staff.
+  draws on the first pitched track only (`pitchedTracks(otf)[0]`), not on every
+  staff.
 - **Data:** `scripts/lib/reimport_tef_tabs.py`, `--dry-run` first, with the
   counts shown to Mike before the real run.
   - It refreshes only a tab still equal to the previous importer's output.
@@ -189,7 +190,7 @@ half and drawing half belong to different sessions.
 
 | | The tab editor session (data) | The song-page session (drawing) |
 |---|---|---|
-| G21a ownership | OTF 1.3 `annotations[].track`; both importers fill it from `string_row`; the `.tef` writer writes it back; the re-import (dry-run counts to Mike first); texts the editor adds carry their track | `attachOtfDecorations(notation, otf, trackId)` draws a track's own texts only; a track-less text draws on the first track |
+| G21a ownership | OTF 1.3 `annotations[].track`; both importers fill it from `string_row`; the `.tef` writer writes it back; the re-import (dry-run counts to Mike first); texts the editor adds carry their track | `attachOtfDecorations(notation, otf, trackId)` draws a track's own texts only; a track-less text draws on the first pitched track |
 | G21b fingering | importers turn typed t/i/m/r/p into `note.finger`; the writer keeps it; the re-import | nothing new: the renderer already draws `note.finger` (G21c moves its lane) |
 | G21c lanes | — | lanes for chords, text, effects, left-hand numbers above the notes and right-hand fingering below; sized from content through `topMargin` / `rowData`; the four tuning names |
 | G21d chords | OTF 1.3 `annotations[].kind`; one shared chord parser (Python and JS, pinned fixture); importers classify; the writer keeps it | the chord lane, drawn with chord glyphs |
@@ -205,29 +206,48 @@ accepted):
 
 ## The contract (OTF 1.3)
 
-Both sides build against this. Any change to it is agreed by both sessions
-first.
+Both sides build against this; the tab editor session agreed to it on
+2026-10-30, with the additions on track ids, the first pitched track, the
+writer and the parser paths. Any change is agreed by both sessions first.
 
 - **`annotations[].track`** (optional string): the `id` of the track the text
-  belongs to.
+  belongs to, the same kind of id as `chord_diagrams[].track`.
+  - **Validator rule `annotation_track`:** the id names an existing track.
+  - **Editor:** renaming a track renames its annotations' `track`; deleting a
+    track deletes its annotations, as for `chord_diagrams` today.
   - Absent means a text from before 1.3, or from a file with no track
     information.
-  - The renderer draws an annotation only on its track, and a track-less one
-    on the first track only.
+  - The renderer draws an annotation only on its track. A track-less one goes
+    on the first *pitched* track only (`pitchedTracks(otf)[0]`), so a banner
+    never lands on a drum staff.
 - **`annotations[].kind`** (optional, `"text"` or `"chord"`; absent means
   `"text"`):
   - `"chord"` means `text` is a chord as written (`G`, `em`, `(em)`,
     `A (G)`, `A(7)`, `D/F#`) that the shared parser accepts.
   - The renderer draws `"chord"` in the chord lane and everything else in the
     text lanes.
-  - The data side publishes the parser at an agreed path, proposed
-    `docs/js/tab-chord.js` `parseTabChord(text)`, returning the parts or
-    `null`. Until it exists, the renderer draws a chord's `text` as written,
-    in the chord lane.
+  - **Validators:** in both languages they check that a `"chord"` text
+    parses.
+  - **The parser:** `docs/js/tab-chord.js` `parseTabChord(text)`, returning
+    the parts or `null`.
+    - Python twin: `scripts/lib/tab_chord.py` `parse_tab_chord`.
+    - It builds on the chord grammar the app already has, not a second one.
+    - The exact shape of the parts is published with its pinned fixture in
+      G21d.
+    - Until then, the renderer draws a chord's `text` as written, in the
+      chord lane.
 - **`note.finger`** (`T I M R P`, right hand) and **`note.lh`** (`0`–`4`,
   left hand): unchanged.
   - G21c draws `lh` as a number above the note and `finger` below it.
   - G21b fills `finger` from typed letters.
+- **The `.tef` writer:** every field round-trips.
+  - **`track`:** written back as the `string_row` of that track's rows.
+  - **`kind`:** not stored in a `.tef`; TablEdit has only text cells. A chord
+    is written as text, and the importer re-derives `kind` with the parser.
+  - **`finger` from a typed letter:** written as TablEdit's pick-hand
+    fingering, not as text. TablEdit then shows it as fingering. The OTF
+    round-trip gate is unaffected. TablEdit's own check sees text turned
+    into fingering, and the G21b PR says so.
 - **Version:** `otf_version` 1.3 is a minor bump (`docs/schema/otf.md`). The
   data side bumps the schema, validators, `otf-format.js` `KEY_ORDER`,
   `otf_format.py` and fixtures. The renderer reads whichever version it gets.
