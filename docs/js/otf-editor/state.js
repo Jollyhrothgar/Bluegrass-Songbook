@@ -256,6 +256,7 @@ export class EditorState {
         this.facade.on('change', (doc) => {
             if (this._suppressForward) return;
             this._updateTicksPerMeasure();
+            this._keepCursorOnTheStave();
             this._emit('change', doc);
         });
         // The facade can change the current track on its own — renaming
@@ -674,6 +675,28 @@ export class EditorState {
      */
     setTempo(bpm) {
         return this.facade.setTempo(bpm);
+    }
+
+    /**
+     * Score ▸ Tab setup… Apply: see `EditingFacade.applyTabSetup`. One undo
+     * step; throws the facade's sentence when the notes forbid a change.
+     */
+    applyTabSetup(setup, trackId = this.trackId) {
+        return this.facade.applyTabSetup(setup, trackId);
+    }
+
+    /**
+     * A tuning or a time signature can change under the cursor (a string
+     * fewer, a shorter bar; undo brings the old ones back). Keep it on the
+     * stave rather than a string or tick that is no longer there.
+     */
+    _keepCursorOnTheStave() {
+        const c = this.cursor;
+        if (!c) return;
+        const strings = this.facade.stringCount(this.trackId);
+        if (strings && c.string > strings) c.string = strings;
+        const length = this.facade.ticksFor(c.measure);
+        if (length && c.tick >= length) c.tick = 0;
     }
 
     // ------------------------------------------------------------------
