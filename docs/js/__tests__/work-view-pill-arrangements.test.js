@@ -1,7 +1,8 @@
-// The Arrangement pill with forked lead sheets on the page (issue #232).
+// The versions list (View ▾ ▸ Versions) with forked lead sheets on the page
+// (issue #232; the Arrangement pill became the View sheet in G19b).
 //
 // Drives the real song page in jsdom: open a work that holds two lead
-// sheets, open the pill, and check that both takes are listed and that
+// sheets, open View, and check that both takes are listed and that
 // picking one swaps the chart without navigating.
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 
@@ -9,6 +10,7 @@ import { openWork } from '../work-view.js';
 import { setAllSongs, setSongGroups, currentChordpro } from '../state.js';
 import { clearSongContentCache } from '../song-content.js';
 import { mergeCorpus } from '../corpus.js';
+import { initShell } from '../shell.js';
 
 const ORIGINAL = '{meta: title How Long Blues}\n[G]How [C]long\n';
 const FORKED = '{meta: title How Long Blues}\n{meta: x_version_label Simplified}\n[G]How long\n';
@@ -36,11 +38,11 @@ const BODY = {
 };
 
 function pillItems() {
-    return [...document.querySelectorAll('#arrangement-pill .arrangement-item')];
+    return [...document.querySelectorAll('#song-view-sheet .arrangement-item')];
 }
 
 function openPill() {
-    document.querySelector('#arrangement-pill .pill-btn').click();
+    document.querySelector('#dock-view-btn').click();   // View ▾ opens the sheet that lists the versions
 }
 
 /** Let the content fetch settle (two microtask hops: fetch -> text). */
@@ -49,7 +51,14 @@ const settle = () => new Promise(r => setTimeout(r, 0));
 beforeEach(async () => {
     vi.restoreAllMocks();
     clearSongContentCache();
-    document.body.innerHTML = '<div id="song-content"></div>';
+    // The dock lives in the shell's bottom band, which holds on to its element:
+    // build the page once and empty what the last test left
+    if (!document.getElementById('app-bottomband')) {
+        document.body.innerHTML = '<div id="song-content"></div>';
+        initShell();
+    }
+    document.getElementById('song-content').innerHTML = '';
+    document.querySelectorAll('.notes-sheet, .notes-sheet-backdrop').forEach(el => el.remove());
     // jsdom has no matchMedia; the top band asks it whether to slim down
     window.matchMedia = () => ({ matches: false, addEventListener() {} });
     global.fetch = vi.fn((url) => Promise.resolve(
@@ -61,16 +70,16 @@ beforeEach(async () => {
     setSongGroups({ g1: [SONG] });
 });
 
-describe('Arrangement pill — forked lead sheets on one work', () => {
+describe('View ▸ Versions — forked lead sheets on one work', () => {
     it('lists every take of the song, primary first', async () => {
         await openWork('how-long-blues');
         await settle();
 
-        expect(document.getElementById('arrangement-pill')).toBeTruthy();
-        expect(document.querySelector('#arrangement-pill .pill-label')
-            .textContent).toBe('2 versions');
+        expect(document.getElementById('dock-view-btn')).toBeTruthy();
 
         openPill();
+        expect(document.querySelector('#song-view-sheet .dock-sheet-heading').textContent)
+            .toBe('Versions');
         const items = pillItems();
         expect(items.map(i => i.dataset.arrSlug))
             .toEqual(['default', 'simplified']);
@@ -165,12 +174,13 @@ describe('Arrangement pill — forked lead sheets on one work', () => {
             'data/songs/how-long-blues.pro');
     });
 
-    it('shows no pill at all for a work with a single lead sheet', async () => {
+    it('shows no View at all for a work with a single lead sheet', async () => {
         const plain = { ...SONG, arrangements: undefined };
         setAllSongs([plain]);
         setSongGroups({ g1: [plain] });
         await openWork('how-long-blues');
         await settle();
-        expect(document.getElementById('arrangement-pill')).toBeNull();
+        expect(document.getElementById('dock-view-btn')).toBeNull();
+        expect(document.getElementById('dock-view')).toBeNull();
     });
 });

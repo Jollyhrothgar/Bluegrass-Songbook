@@ -2,6 +2,7 @@
 // Lyrics | Chords | ChordPro, over the ChordPro text. Lyrics and Chords are decorations drawn
 // with the song page's own classes. See docs/plans/2026-10-26-lyrics-editor-redesign.md.
 import { test, expect } from './fixtures.js';
+import { goToSearch } from './helpers.js';
 import {
     CM, SHEET, BAND, openDisplay, openFrozenOldHomePlace, setLead, leadText, leadReady, setMode, chordsOn, boxAt, boxPos, openEditor, pointOnWord,
     boxState, lineEndPoint, centreOf, mouseDrag, along, segmentRects, syllableCentres, boxStopKind, stepKinds,
@@ -1156,7 +1157,7 @@ test.describe('the editor\'s controls band', () => {
         await chordsOn(page, '[G]Amazing grace');
         await expect(page.locator(BAND)).toBeVisible();
         await expect(page.locator('#editor-toolbar, .editor-toolbar')).toHaveCount(0);   // no second set at the top
-        await page.locator('.topbar-nav-link[data-nav="search"]').click();
+        await goToSearch(page);
         await expect(page.locator('#app-bottomband')).toBeHidden();
         await page.goBack();
         await expect(page.locator('#editor-panel')).toBeVisible();

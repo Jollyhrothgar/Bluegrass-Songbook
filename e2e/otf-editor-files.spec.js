@@ -5,6 +5,7 @@
 // event rather than a DOM change, and a file picker is a native dialog until
 // a test drives the chooser. Both are drivable — they just needed a spec.
 import { test, expect } from './fixtures.js';
+import { pressTabEdit } from './helpers/tab-edit.js';
 import { clickFileItem, saveAs, saveAsPanel } from './helpers/front-door.js';
 import { tefFixture } from './helpers/tef-fixture.js';
 
@@ -15,7 +16,7 @@ const band = (page) => page.locator('#app-bottomband');
 async function editPublishedTake(page) {
     await page.goto(TAB_WORK);
     await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
-    await band(page).locator('.tab-edit-btn').click();
+    await pressTabEdit(page);
     await page.locator('.editor-renderer .stave-row').first()
         .waitFor({ timeout: 20000 });
 }

@@ -33,7 +33,7 @@ export function initShell({ nav = [], onToggleTheme, onReportBug, onTour } = {})
     topbarEl.className = 'app-topbar';
     topbarEl.innerHTML = `
         <div class="topbar-left">
-            <button id="topbar-back" class="topbar-back hidden" title="Back">&larr;</button>
+            <button id="topbar-back" class="topbar-back hidden" title="Back" aria-label="Back"><span class="topbar-back-arrow" aria-hidden="true">&larr;</span><span class="topbar-back-label hidden"></span></button>
             <a href="#" id="topbar-brand" class="topbar-brand" title="Home">
                 <img src="images/new_bb_logo.svg" alt="Bluegrass Book">
                 <img src="images/earl_zombie_face.png" class="brand-dungeon-face" alt="" aria-hidden="true">
@@ -47,7 +47,8 @@ export function initShell({ nav = [], onToggleTheme, onReportBug, onTour } = {})
             <button id="topbar-bug" class="topbar-icon-btn" title="Report a bug">🐛</button>
             <button id="topbar-theme" class="topbar-icon-btn" title="Toggle theme">◐</button>
             <div class="topbar-overflow">
-                <button id="topbar-overflow-btn" class="topbar-icon-btn" title="More">⋯</button>
+                <button id="topbar-overflow-btn" class="topbar-icon-btn" title="More" aria-label="More" aria-haspopup="true" aria-expanded="false" aria-controls="topbar-overflow-menu">⋯</button>
+                <div class="menu-scrim"></div>
                 <div id="topbar-overflow-menu" class="pill-popover hidden"></div>
             </div>
         </div>
@@ -71,6 +72,15 @@ export function initShell({ nav = [], onToggleTheme, onReportBug, onTour } = {})
     if (typeof ResizeObserver !== 'undefined') {
         new ResizeObserver(syncBandHeight).observe(bottomBandEl);
     }
+    // The top band's height, the same way: the chart column sticks under it
+    syncTopbarHeight();
+    if (typeof ResizeObserver !== 'undefined') {
+        new ResizeObserver(syncTopbarHeight).observe(topbarEl);
+    }
+    // Tapping the peek strip of a hidden bottom band brings both bands back
+    bottomBandEl.addEventListener('click', () => {
+        document.body.classList.remove('chrome-hidden');
+    });
 
     actionsEl = topbarEl.querySelector('#topbar-actions');
     titleEl = topbarEl.querySelector('#topbar-title');
@@ -105,14 +115,25 @@ export function initShell({ nav = [], onToggleTheme, onReportBug, onTour } = {})
     const overflowBtn = topbarEl.querySelector('#topbar-overflow-btn');
     overflowBtn.addEventListener('click', (e) => {
         e.stopPropagation();
+        // The dock menu shows the signed-in state, the theme and the tour
+        // invitation as they are NOW, so it is built when it opens.
+        if (dockKind && overflowMenu.classList.contains('hidden')) renderOverflow(lastViewOverflow);
         togglePopover(overflowMenu, overflowBtn);
+    });
+    // On a phone the menu is a sheet over a scrim; tapping the scrim closes it
+    topbarEl.querySelector('.menu-scrim').addEventListener('click', (e) => {
+        e.stopPropagation();
+        closePopover();
     });
 
     document.addEventListener('click', (e) => {
         if (openPopover && !openPopover.el.contains(e.target)) closePopover();
     });
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && openPopover) closePopover();
+        if (e.key !== 'Escape' || !openPopover) return;
+        const opener = openPopover.anchorBtn;
+        closePopover();
+        opener.focus();   // focus returns to what opened it
     });
     window.addEventListener('scroll', handleChromeScroll, { passive: true });
     // Tapping the peek strip of a hidden band brings it back
@@ -168,7 +189,7 @@ function applyDensity(step) {
         topbarEl.classList.toggle(`density-${name}`, i > 0 && i <= step);
     });
     topbarEl.dataset.density = DENSITY_STEPS[step];
-    const wantNavInOverflow = DENSITY_STEPS[step] === 'nav-overflow';
+    const wantNavInOverflow = DENSITY_STEPS[step] === 'nav-overflow' && !dockKind;
     if (wantNavInOverflow !== navInOverflow) {
         navInOverflow = wantNavInOverflow;
         renderOverflow(lastViewOverflow);
@@ -200,19 +221,39 @@ export function updateDensity() {
 
 /**
  * Declare per-view chrome. Views call this from their open/render path.
- *   back:     { onClick } | null — shows/hides the back arrow
+ *   back:     { onClick, label? } | null — shows/hides the back arrow; a label
+ *             names where it goes ("← Old Home Place")
  *   title:    string | null — center title (mobile: replaces nav labels)
- *   actions:  [{ id, label, icon, title, onClick, primary }] — right-of-title buttons
+ *   actions:  [{ id, label, icon, title, onClick, primary, className, hidden }]
+ *             — right-of-title buttons
  *   overflow: [{ id, label, onClick }] — items for the ⋯ menu (in addition to
  *             the persistent entries main.js seeds via setOverflowBase)
  *   navActive: id of the nav item to highlight
+ *   dock:     'song' | 'editor' | null — the thin top dock (G19): ← · BB ·
+ *             [search] · [actions] · ⋯ and nothing else. The nav, bug, theme,
+ *             tour and account leave the band (CSS, `.topbar-dock`) and
+ *             live in ⋯. 'song' adds the search icon.
+ *   menu:     [{ title, items }] — the page's own groups in the dock's ⋯
+ *             (see renderMenu); the site's groups follow (setMenuSite).
  */
-export function setTopBar({ back = null, title = null, actions = [], overflow = [], navActive = null } = {}) {
+export function setTopBar({ back = null, title = null, actions = [], overflow = [], navActive = null, dock = null, menu = [] } = {}) {
     if (!topbarEl) return;
-    closePopover();
+    // Sign-in and trust resolve after first paint and re-declare the band; a
+    // dock menu that is open stays open (renderOverflow rebuilds its rows).
+    const keepMenu = !!dock && dock === dockKind && openPopover?.popover === overflowMenu;
+    if (!keepMenu) closePopover();
+
+    dockKind = dock;
+    dockMenu = menu;
+    topbarEl.classList.toggle('topbar-dock', !!dock);
+    topbarEl.dataset.dock = dock || '';
 
     backBtn.classList.toggle('hidden', !back);
     backBtn.onclick = back ? back.onClick : null;
+    const backLabel = backBtn.querySelector('.topbar-back-label');
+    backLabel.textContent = back?.label || '';
+    backLabel.classList.toggle('hidden', !back?.label);
+    backBtn.setAttribute('aria-label', back?.label ? `Back to ${back.label}` : 'Back');
     // Lets CSS slim the band on pages that have a back button (song pages):
     // on phones, back + brand ARE the navigation there.
     topbarEl.classList.toggle('has-back', !!back);
@@ -221,17 +262,28 @@ export function setTopBar({ back = null, title = null, actions = [], overflow = 
     titleEl.classList.toggle('hidden', !title);
 
     actionsEl.textContent = '';
+    if (dock === 'song') {
+        const search = document.createElement('button');
+        search.id = 'topbar-search';
+        search.className = 'topbar-icon-btn topbar-search-btn';
+        search.title = 'Search';
+        search.setAttribute('aria-label', 'Search');
+        search.innerHTML = '<svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>';
+        search.addEventListener('click', () => navItems.find(n => n.id === 'search')?.onClick?.());
+        actionsEl.appendChild(search);
+    }
     for (const action of actions) {
         if (action.el) { // pre-built element (e.g. a pill)
             actionsEl.appendChild(action.el);
             continue;
         }
         const btn = document.createElement('button');
-        btn.className = 'topbar-action-btn' + (action.primary ? ' primary' : '');
+        btn.className = 'topbar-action-btn' + (action.primary ? ' primary' : '') +
+            (action.className ? ` ${action.className}` : '') + (action.hidden ? ' hidden' : '');
         if (action.id) btn.id = action.id;
         if (action.title) btn.title = action.title;
         btn.innerHTML = action.icon
-            ? `<span class="topbar-action-icon">${action.icon}</span><span class="topbar-action-label">${escapeHtml(action.label)}</span>`
+            ? `<span class="topbar-action-icon" aria-hidden="true">${action.icon}</span><span class="topbar-action-label">${escapeHtml(action.label)}</span>`
             : escapeHtml(action.label);
         btn.addEventListener('click', action.onClick);
         actionsEl.appendChild(btn);
@@ -249,19 +301,27 @@ export function setTopBar({ back = null, title = null, actions = [], overflow = 
 }
 
 /**
- * Show or hide the glowing Tour invitation in the band. main.js decides who
- * sees it (first-time visitors); afterwards the tour lives in the ⋯ menu.
+ * Show or hide the glowing Tour invitation. main.js decides who sees it
+ * (first-time visitors); afterwards the tour lives in the ⋯ menu. Pages with
+ * the full band show the Tour button; on the thin dock the ⋯ button itself
+ * glows (the Tour button is hidden there by CSS).
  */
 export function setTourInvite(on) {
     const btn = topbarEl?.querySelector('#topbar-tour');
     if (!btn) return;
     btn.classList.toggle('hidden', !on);
+    const more = topbarEl.querySelector('#topbar-overflow-btn');
+    more.classList.toggle('tour-invite', !!on);
+    more.title = on ? 'More: the tour is in here' : 'More';
     updateDensity();
 }
 
 let overflowBase = [];
 let overflowLead = [];
 let lastViewOverflow = [];
+let dockKind = null;
+let dockMenu = [];
+let siteMenu = () => [];
 
 /** Persistent overflow entries (About, Patreon, Feedback, …) seeded once by main.js. */
 export function setOverflowBase(items) {
@@ -279,10 +339,20 @@ export function setOverflowLead(items) {
     renderOverflow(lastViewOverflow);
 }
 
+/**
+ * The site's own groups in the dock's ⋯ menu (Go to, You), after the page's.
+ * A function, not a list, because it answers "who is signed in" and "which
+ * theme" and is asked each time the menu opens.
+ */
+export function setMenuSite(sectionsFn) {
+    siteMenu = sectionsFn;
+}
+
 function renderOverflow(viewItems) {
     if (!overflowMenu) return;
     lastViewOverflow = viewItems;
     overflowMenu.textContent = '';
+    if (dockKind) { renderMenu(); return; }
     // At the last density step the nav links have left the band; they lead
     // the ⋯ menu so navigation is still one tap away.
     const navGroup = navInOverflow ? navItems.map(item => ({
@@ -309,6 +379,115 @@ function renderOverflow(viewItems) {
 }
 
 /**
+ * The dock's ⋯ menu: titled groups of rows. A row is
+ *   { id?, label, sub?, badge?, icon?, onClick }          a button
+ *   { id?, label, sub?, icon?, items: [row, …] }          expands in place
+ *   { type: 'segmented', label, options: [{value, label}], value, onSelect }
+ * `sub` is the quiet second line, `badge` a small tag beside the label. The
+ * page's groups come first, then the site's (setMenuSite), then the
+ * site-wide entries (setOverflowBase) with no title.
+ */
+function renderMenu() {
+    const sections = [...dockMenu, ...siteMenu(), { items: overflowBase }]
+        .filter(section => section.items?.length);
+    sections.forEach((section, i) => {
+        if (i > 0) {
+            const hr = document.createElement('div');
+            hr.className = 'pill-popover-divider';
+            overflowMenu.appendChild(hr);
+        }
+        const group = document.createElement('div');
+        group.className = 'menu-section';
+        group.setAttribute('role', 'group');
+        if (section.title) {
+            const heading = document.createElement('div');
+            heading.className = 'menu-section-title';
+            heading.textContent = section.title;
+            group.appendChild(heading);
+            group.setAttribute('aria-label', section.title);
+        }
+        for (const row of section.items) group.appendChild(menuRow(row));
+        overflowMenu.appendChild(group);
+    });
+}
+
+let menuRowSeq = 0;
+
+function menuRow(row) {
+    if (row.type === 'segmented') {
+        const wrap = document.createElement('div');
+        wrap.className = 'menu-row menu-segmented-row';
+        wrap.innerHTML = `<span class="menu-item-label">${escapeHtml(row.label)}</span>`;
+        const seg = document.createElement('div');
+        seg.className = 'menu-segmented';
+        seg.setAttribute('role', 'group');
+        seg.setAttribute('aria-label', row.label);
+        for (const opt of row.options) {
+            const b = document.createElement('button');
+            b.type = 'button';
+            b.className = 'menu-segmented-btn' + (opt.value === row.value ? ' active' : '');
+            b.dataset.value = opt.value;
+            b.setAttribute('aria-pressed', opt.value === row.value ? 'true' : 'false');
+            b.textContent = opt.label;
+            b.addEventListener('click', () => {
+                seg.querySelectorAll('.menu-segmented-btn').forEach(x => {
+                    const on = x === b;
+                    x.classList.toggle('active', on);
+                    x.setAttribute('aria-pressed', on ? 'true' : 'false');
+                });
+                row.onSelect(opt.value);
+            });
+            seg.appendChild(b);
+        }
+        wrap.appendChild(seg);
+        return wrap;
+    }
+
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'pill-popover-item menu-item';
+    if (row.id) btn.id = row.id;
+    btn.innerHTML = `
+        <span class="menu-item-icon" aria-hidden="true">${escapeHtml(row.icon || '')}</span>
+        <span class="menu-item-text">
+            <span class="menu-item-label">${escapeHtml(row.label)}${row.badge ? ` <span class="menu-item-badge">${escapeHtml(row.badge)}</span>` : ''}</span>
+            ${row.sub ? `<span class="menu-item-sub">${escapeHtml(row.sub)}</span>` : ''}
+        </span>
+        ${row.items ? '<span class="menu-item-chevron" aria-hidden="true">›</span>' : ''}`;
+    if (!row.items) {
+        btn.addEventListener('click', () => { closePopover(); row.onClick(); });
+        return btn;
+    }
+
+    // An expanding row: its choices open under it, so "Export / Print" can
+    // list all five options without a second page to find
+    const subId = `menu-sub-${++menuRowSeq}`;
+    const sub = document.createElement('div');
+    sub.id = subId;
+    sub.className = 'menu-sub hidden';
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-controls', subId);
+    for (const child of row.items) {
+        const c = document.createElement('button');
+        c.type = 'button';
+        c.className = 'pill-popover-item menu-sub-item';
+        if (child.id) c.id = child.id;
+        if (child.action) c.dataset.action = child.action;
+        c.textContent = child.label;
+        c.addEventListener('click', () => { closePopover(); child.onClick(); });
+        sub.appendChild(c);
+    }
+    btn.addEventListener('click', () => {
+        const open = sub.classList.toggle('hidden') === false;
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        btn.classList.toggle('expanded', open);
+    });
+    const frag = document.createDocumentFragment();
+    frag.append(btn, sub);
+    return frag;
+}
+
+/**
  * Mount content into the bottom band (or hide it with null). The band is the
  * one home for practice/playback controls; body padding adjusts so content
  * never hides beneath it.
@@ -325,6 +504,12 @@ export function setBottomBand(contentEl) {
         document.body.classList.remove('has-bottomband');
     }
     syncBandHeight();
+}
+
+/** Publish the top band's live height as --topbar-h (the band is fixed, so a sticky column can sit under it). */
+function syncTopbarHeight() {
+    if (!topbarEl) return;
+    document.documentElement.style.setProperty('--topbar-h', `${topbarEl.offsetHeight}px`);
 }
 
 /** Publish the bottom band's live height as --bottomband-h (0 when hidden). */
@@ -371,10 +556,11 @@ export function setBanner(message, { onRetry, onDismiss, retryLabel = 'Retry' } 
 }
 
 /**
- * Auto-hiding chrome (progressive disclosure — replaces focus mode):
- * on pages that enable it, the top band slides away as you scroll down
- * into the content and returns on scroll-up, tapping the top edge, or
- * returning to the top. No mode, no toggle, no state to learn.
+ * Auto-hiding chrome (Display ▸ Auto-hide controls, off by default): when
+ * the page enables it, BOTH bands slide away as you scroll down into the
+ * content and return on scroll-up, tapping a peek strip, or returning to the
+ * top. The shell owns no state: the page passes the reader's choice
+ * (`setChromeAutoHide(true)` only on a song page whose reader turned it on).
  */
 let autoHideEnabled = false;
 let lastScrollY = 0;
@@ -419,6 +605,7 @@ export function pill(label, buildContent, { id, title, className } = {}) {
     const btn = document.createElement('button');
     btn.className = 'pill-btn';
     if (title) btn.title = title;
+    btn.setAttribute('aria-expanded', 'false');
     btn.innerHTML = `<span class="pill-label">${escapeHtml(label)}</span><span class="pill-caret">▾</span>`;
 
     const popover = document.createElement('div');
@@ -449,6 +636,7 @@ function togglePopover(popover, anchorBtn) {
     closePopover();
     popover.classList.remove('hidden');
     anchorBtn.classList.add('open');
+    anchorBtn.setAttribute('aria-expanded', 'true');
     // Keep the popover on-screen: flip to right-aligned when it would
     // overflow right, then clamp whatever edge still pokes out (narrow
     // viewports can overflow BOTH ways depending on the anchor position).
@@ -468,5 +656,67 @@ function closePopover() {
     if (!openPopover) return;
     openPopover.popover.classList.add('hidden');
     openPopover.anchorBtn.classList.remove('open');
+    openPopover.anchorBtn.setAttribute('aria-expanded', 'false');
     openPopover = null;
+}
+
+/**
+ * A dialog sheet: slides up from the bottom on a phone, a centred card on a
+ * wide screen, over a scrim. It reuses the notes sheet's look (`.notes-sheet*`
+ * in style.css), so there is one bottom-sheet design. Esc, the × and a tap
+ * on the scrim close it, and focus returns to what opened it.
+ *   openSheet({ id, title, opener, build(contentEl, api) }) -> { close, el }
+ * Only one is open at a time.
+ */
+let openSheetApi = null;
+
+export function openSheet({ id, title, opener = null, build }) {
+    openSheetApi?.close();
+
+    const backdrop = document.createElement('div');
+    backdrop.className = 'notes-sheet-backdrop';
+    const sheet = document.createElement('div');
+    sheet.className = 'notes-sheet dock-sheet';
+    sheet.id = id;
+    sheet.setAttribute('role', 'dialog');
+    sheet.setAttribute('aria-modal', 'true');
+    sheet.setAttribute('aria-labelledby', `${id}-title`);
+    sheet.innerHTML = `
+        <div class="notes-sheet-header">
+            <h2 class="notes-sheet-title" id="${id}-title">${escapeHtml(title)}</h2>
+            <button type="button" class="notes-sheet-close" aria-label="Close">&times;</button>
+        </div>
+        <div class="notes-sheet-content"></div>`;
+    const closeBtn = sheet.querySelector('.notes-sheet-close');
+
+    const onKey = (e) => {
+        if (e.key === 'Escape') { e.stopPropagation(); api.close(); }
+    };
+    const api = {
+        el: sheet,
+        close() {
+            if (openSheetApi !== api) return;
+            openSheetApi = null;
+            document.removeEventListener('keydown', onKey, true);
+            backdrop.remove();
+            sheet.remove();
+            if (opener) {
+                opener.setAttribute('aria-expanded', 'false');
+                if (opener.isConnected) opener.focus();
+            }
+        },
+    };
+    backdrop.addEventListener('click', api.close);
+    closeBtn.addEventListener('click', api.close);
+    document.addEventListener('keydown', onKey, true);
+
+    document.body.append(backdrop, sheet);
+    build(sheet.querySelector('.notes-sheet-content'), api);
+    if (opener) {
+        opener.setAttribute('aria-expanded', 'true');
+        opener.setAttribute('aria-controls', id);
+    }
+    openSheetApi = api;
+    closeBtn.focus();
+    return api;
 }

@@ -16,7 +16,7 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
 import {
     metaRowId, submitWorkMetadata, canEditMetadataHere, configureWorkPage,
-    openWork,
+    openWork, handleEditAction,
 } from '../work-view.js';
 import { canEditWorkMetadata, ownsPartOfWork, workSubmitters } from '../utils.js';
 import { setAllSongs, setSongGroups } from '../state.js';
@@ -34,6 +34,9 @@ function mockAuth(token, { userId = 'u1' } = {}) {
         isLoggedIn: () => !!token,
         signInWithGoogle: () => {},
         getUser: () => (token ? { id: userId } : null),
+        // the Details sheet loads the signed-in reader's tag votes
+        fetchTagVotes: async () => ({ data: {} }),
+        fetchUserTagVotes: async () => ({ data: {} }),
         supabase: {
             auth: {
                 getSession: async () => ({
@@ -353,10 +356,11 @@ describe('canEditMetadataHere — the page asking the gate', () => {
 // The affordance on the page
 // ---------------------------------------------------------------------
 //
-// This is where the feature was actually stranded. `updateWorkTopBar` hid the
-// title-row Edit button whenever `partUsesSongActions` was false — which it is
-// for a tablature part — so on the one kind of work that most needs its
-// details filled in, nothing was clickable at all.
+// Once this was stranded: `updateWorkTopBar` hid the title-row Edit button
+// whenever `partUsesSongActions` was false — which it is for a tablature part
+// — so on the one kind of work that most needs its details filled in, nothing
+// was clickable at all. Details is now the sheet the writer line opens, with
+// Edit details at the bottom for people who may edit, whatever the part.
 
 const OTF = '{"otf_version":"1.0","tracks":[{"id":"banjo","tuning":["D4","B3","G3","D3","G4"]}],"notation":{"banjo":[]}}';
 
@@ -386,35 +390,40 @@ describe('the Details affordance on a tab-only work', () => {
         global.fetch = vi.fn(async () => ({ ok: false, status: 404, text: async () => '' }));
     });
 
+    /** Open the Details sheet the way a reader does: tap the writer line. */
+    const openDetailsSheet = async () => {
+        document.getElementById('song-details-btn').click();
+        await settle();
+    };
+
     it('is offered to the submitter of the work\'s tab', async () => {
         mockAuth('user-jwt', { userId: 'u1' });
         await openTabWork();
+        await openDetailsSheet();
 
         const metaBtn = document.getElementById('edit-meta-btn');
         expect(metaBtn).toBeTruthy();
-        expect(metaBtn.classList.contains('hidden')).toBe(false);
-        // The chart Edit stays hidden — this part has no chart to edit. That
-        // rule is not what was broken; reaching the DETAILS through it was.
-        expect(document.getElementById('edit-song-btn').classList.contains('hidden'))
-            .toBe(true);
+        expect(metaBtn.textContent).toBe('Edit details');
         // No "Artist unknown" nudge (F9): the artist is never shown, so
         // there is no blank to invite anyone to fill.
         expect(document.querySelector('.song-artist-missing')).toBeNull();
     });
 
-    it('is hidden from a visitor with no stake in the work', async () => {
+    it('is not offered to a visitor with no stake in the work', async () => {
         mockAuth('user-jwt', { userId: 'somebody-else' });
         await openTabWork();
-        expect(document.getElementById('edit-meta-btn').classList.contains('hidden'))
-            .toBe(true);
+        await openDetailsSheet();
+        // The facts are there for everyone; the way to change them is not
+        expect(document.querySelector('#song-details-sheet .info-details')).toBeTruthy();
+        expect(document.getElementById('edit-meta-btn')).toBeNull();
     });
 
     it('is offered to a trusted user on a work they have never touched', async () => {
         mockAuth('user-jwt', { userId: 'somebody-else' });
         configureWorkPage({ isTrusted: () => true });
         await openTabWork();
-        expect(document.getElementById('edit-meta-btn').classList.contains('hidden'))
-            .toBe(false);
+        await openDetailsSheet();
+        expect(document.getElementById('edit-meta-btn')).toBeTruthy();
     });
 
     it('opens the details editor rather than the ChordPro editor', async () => {
@@ -422,6 +431,7 @@ describe('the Details affordance on a tab-only work', () => {
         mockAuth('user-jwt', { userId: 'u1' });
         configureWorkPage({ isTrusted: () => false, onEdit });
         await openTabWork();
+        await openDetailsSheet();
 
         document.getElementById('edit-meta-btn').click();
         await settle();
@@ -431,6 +441,8 @@ describe('the Details affordance on a tab-only work', () => {
         expect(form.querySelector('#ph-edit-title').value).toBe('Welcome to New York');
         expect(form.querySelector('#ph-edit-artist').value).toBe('');
         expect(onEdit).not.toHaveBeenCalled();
+        // The sheet closed on the way to the form
+        expect(document.getElementById('song-details-sheet')).toBeNull();
     });
 
     it('announces an edit that is live in the overlay and still syncing', async () => {
@@ -442,5 +454,37 @@ describe('the Details affordance on a tab-only work', () => {
         expect(document.querySelector('.pending-meta-badge')).toBeTruthy();
         // The artist is stored but never shown (F9).
         expect(document.querySelector('.song-header').textContent).not.toContain('Bill Emerson');
+    });
+});
+
+// The top band's one Edit (`#edit-song-btn`) opens what suits the page.
+describe('handleEditAction — the one Edit', () => {
+    beforeEach(() => {
+        configureWorkPage({ isTrusted: () => false });
+        window.matchMedia = () => ({ matches: false, addEventListener() {} });
+        global.fetch = vi.fn(async () => ({ ok: false, status: 404, text: async () => '' }));
+    });
+
+    it('opens the details form on a placeholder', async () => {
+        const onEdit = vi.fn();
+        mockAuth('user-jwt');
+        configureWorkPage({ onEdit });
+        await openTabWork({ id: 'no-chart-yet', title: 'No Chart Yet', status: 'placeholder' });
+
+        handleEditAction();
+        await settle();
+
+        expect(document.querySelector('#ph-edit-title').value).toBe('No Chart Yet');
+        expect(onEdit).not.toHaveBeenCalled();
+    });
+
+    it('opens the lyrics editor on a chart', async () => {
+        const onEdit = vi.fn();
+        configureWorkPage({ onEdit });
+        const work = { id: 'a-chart', title: 'A Chart' };
+        await openTabWork(work);
+        // a work with no tab parts is not a tab page
+        handleEditAction();
+        expect(onEdit).toHaveBeenCalledWith(expect.objectContaining({ id: 'a-chart' }));
     });
 });

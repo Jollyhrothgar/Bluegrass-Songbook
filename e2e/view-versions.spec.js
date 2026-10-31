@@ -1,15 +1,15 @@
-// E2E tests for the Arrangement pill — the replacement for the old
-// version-picker modal (#version-modal) and work-dashboard version cards.
-// A work whose group has multiple versions shows an "N versions" pill;
-// its popover lists each version (canonical badge, current marker, vote
+// E2E tests for View ▸ Versions (G19b; it was the Arrangement pill, and
+// before that the version-picker modal and the work-dashboard version cards).
+// A work whose group has multiple versions shows View ▾ in the reading dock;
+// its sheet lists each version (canonical badge, current marker, vote
 // affordance) and clicking one navigates to that arrangement.
 import { test, expect } from './fixtures.js';
-import { gotoSearch, searchFor, openPill } from './helpers.js';
+import { gotoSearch, searchFor, openDock } from './helpers.js';
 
 // wagon-wheel has a 2-version group (wagon-wheel, wagon-wheel-1)
 const MULTI_VERSION_URL = '/#work/wagon-wheel';
 
-test.describe('Arrangement Pill', () => {
+test.describe('View ▸ Versions', () => {
     test('clicking a multi-version search result opens content directly (no modal)', async ({ page }) => {
         await gotoSearch(page);
         await searchFor(page, 'wagon wheel');
@@ -22,15 +22,15 @@ test.describe('Arrangement Pill', () => {
         await expect(page.locator('#song-view')).toBeVisible();
         await expect(page.locator('#version-modal')).toHaveCount(0);
 
-        // The arrangement pill announces the group
-        await expect(page.locator('#arrangement-pill .pill-label')).toContainText(/\d+ versions/);
+        // View ▾ is how the dock offers the group's versions
+        await expect(page.locator('#dock-view-btn')).toContainText('View');
     });
 
-    test('popover lists the versions with the current one marked', async ({ page }) => {
+    test('the sheet lists the versions with the current one marked', async ({ page }) => {
         await page.goto(MULTI_VERSION_URL);
         await expect(page.locator('#song-view')).toBeVisible({ timeout: 15000 });
 
-        const popover = await openPill(page, 'arrangement-pill');
+        const popover = await openDock(page, 'view');
 
         const items = popover.locator('.arrangement-item');
         await expect(items.nth(1)).toBeVisible();  // retrying: list renders async
@@ -49,7 +49,7 @@ test.describe('Arrangement Pill', () => {
         await page.goto(MULTI_VERSION_URL);
         await expect(page.locator('#song-view')).toBeVisible({ timeout: 15000 });
 
-        const popover = await openPill(page, 'arrangement-pill');
+        const popover = await openDock(page, 'view');
 
         const otherItem = popover.locator('.arrangement-item:not(.current)').first();
         const otherId = await otherItem.getAttribute('data-song-id');
@@ -60,25 +60,25 @@ test.describe('Arrangement Pill', () => {
         await expect(page).toHaveURL(/\/songs\/[^/]+\/(?:[^/]+\/)?$/);
         await expect(page.locator('#song-view')).toBeVisible();
 
-        // Reopening the pill now marks the new arrangement as current
-        const popover2 = await openPill(page, 'arrangement-pill');
+        // Reopening the sheet now marks the new arrangement as current
+        const popover2 = await openDock(page, 'view');
         const current = popover2.locator('.arrangement-item.current');
         await expect(current).toHaveAttribute('data-song-id', otherId);
     });
 
-    test('single-version works do not render an arrangement pill', async ({ page }) => {
+    test('single-version works have no View at all', async ({ page }) => {
         await page.goto('/#work/your-cheating-heart');
         await expect(page.locator('#song-view')).toBeVisible({ timeout: 15000 });
-        // Pill row is there, arrangement pill is not
-        await expect(page.locator('#song-pill-row')).toBeVisible();
-        await expect(page.locator('#arrangement-pill')).toHaveCount(0);
+        // The dock is there; View is not, because there is nothing to choose
+        await expect(page.locator('#dock-key-btn')).toBeVisible();
+        await expect(page.locator('#dock-view-btn, #dock-view')).toHaveCount(0);
     });
 
     test('voting while logged out prompts sign-in instead of casting', async ({ page }) => {
         await page.goto(MULTI_VERSION_URL);
         await expect(page.locator('#song-view')).toBeVisible({ timeout: 15000 });
 
-        const popover = await openPill(page, 'arrangement-pill');
+        const popover = await openDock(page, 'view');
         const voteBtn = popover.locator('.arrangement-vote-btn').first();
         const countBefore = await popover.locator('.vote-count').first().textContent();
 

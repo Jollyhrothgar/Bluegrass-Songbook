@@ -1,7 +1,7 @@
-// WorkView — the unified song page. ONE page per song: title + writer,
-// a pill row (Key / Display / Info / Arrangement), part tabs when a work
-// has multiple parts, the active part's content, and the app shell's
-// top/bottom bands for actions and playback controls.
+// WorkView — the unified song page. ONE page per song: title + writer, the
+// active part's content, and the app shell's two docks: the top band (back,
+// search, Edit, ⋯) and the bottom band (Key, Size, View, Display for a lyric
+// sheet or chart; the player for a tab; song-dock.js).
 //
 // This replaced the old dashboard-of-cards and the separate song page:
 // every route (search, lists, deep links, history) lands in openWork().
@@ -14,6 +14,9 @@ import {
     loadedTablature, setLoadedTablature,
     tablaturePlayer, setTablaturePlayer,
     currentDetectedKey, setCurrentDetectedKey,
+    fontSizeLevel, setFontSizeLevel,
+    chartBeside, setChartBeside, autoHideControls,
+    showAbcNotation, setShowAbcNotation,
     setOriginalDetectedKey,
     setOriginalDetectedMode,
     listContext, setListContext,
@@ -32,6 +35,7 @@ import {
     stopAbcPlayback,
     renderLeadSheetContent, renderChartTabContent,
     chartIsWide, CHART_WIDE_MQ,
+    setDockProvider,
     initKeyState
 } from './song-view.js';
 import {
@@ -72,11 +76,12 @@ import {
 } from './renderers/measure-timing.js';
 import { isPercussionTrack, pitchedTracks } from './renderers/otf-tracks.js';
 import { clearListView, openNotesSheet } from './lists.js';
-import { showListPicker, updateTriggerButton } from './list-picker.js';
-import { openFlagModal } from './flags.js';
+import { showListPicker } from './list-picker.js';
+import { openFlagModal, openFeedbackModal } from './flags.js';
 import { trackSongView, trackSongNotFound } from './analytics.js';
-import { setTopBar, setBottomBand, pill, setChromeAutoHide } from './shell.js';
-import { practiceLinks, buildKeyPill, buildDisplayPill, buildInfoPill, buildExportPill, handleExport } from './song-controls.js';
+import { setTopBar, setBottomBand, pill, setChromeAutoHide, openSheet } from './shell.js';
+import { practiceLinks, buildKeyButton, buildDisplayButton, renderDetails, EXPORT_ACTIONS, handleExport } from './song-controls.js';
+import { viewModel, viewControl, sizeControl, readingDock, fillViewSheet } from './song-dock.js';
 import { showToast } from './toast.js';
 import { importTabFile, pickTabFile, chooseTabFile } from './pwa.js';
 import { skippedLine } from './tef-skipped.js';
@@ -98,12 +103,14 @@ let tempoOverride = null;        // { workId, quarterBpm } — user-set tempo;
 let activeTrackView = null;      // track id, 'all', or null (= lead track)
 let workViewEscHandler = null;   // Esc-to-disarm listener (single live copy)
 let activeEditSession = null;    // live tab edit session (torn down on nav)
+let tabEditEntry = null;         // opens the tab editor on the take on screen (the top band's Edit)
 let pendingTabEdit = null;       // parked "open this tab in the editor" ask
 let pendingDraft = null;         // {id, otf, …} a `?draft=` route asked for
 let activeEditBand = null;       // bottom band bound to the live editor
 let unregisterTabReturn = null;  // auth-return source for the live tab editor
 let tabAuthoring = null;         // {kind:'add'|'new', part, take, target, otf}
 let takeStatusLine = null;       // "Submitted — live now…" under the take header
+let lastHybrid = false;          // the lead sheet holds chords AND ABC (known once it renders; View lists Chords / Notation)
 
 /**
  * Tear down everything the tablature view holds live handles to: the
@@ -122,6 +129,8 @@ export function teardownTablatureView() {
         activeEditBand.destroy();
         activeEditBand = null;
     }
+    tabEditEntry = null;
+    document.body.classList.remove('tab-editing');
     destroyTrackRenderers();
     if (tablaturePlayer) {
         tablaturePlayer.stop();
@@ -629,7 +638,8 @@ export async function openWork(workId, options = {}) {
 
     setCurrentChordpro(null);
     setCurrentView('song');
-    setChromeAutoHide(true);
+    setChromeAutoHide(autoHideControls);
+    lastHybrid = false;
 
     setOriginalDetectedKey(null);
     setOriginalDetectedMode(null);
@@ -675,7 +685,6 @@ export async function openWork(workId, options = {}) {
                 p.aliases?.includes(partId)
             ) || null;
     }
-    if (activePart?.type === 'chord-chart' && chartIsWide()) activePart = null;   // wide: the chart is a column
     if (!activePart) {
         activePart = availableParts.find(p => p.default) || availableParts[0] || null;
     }
@@ -763,18 +772,12 @@ export function renderWorkView() {
 
     const isInitial = pendingInitialRender;
     pendingInitialRender = false;
+    setDockProvider(dockProvider);
 
     container.innerHTML = '';
 
     // Title row: song title + small writer line
     container.appendChild(renderTitleHeader());
-
-    // Pill row: Key / Display / Info / Arrangement
-    container.appendChild(renderPillRow());
-
-    // Part tabs (segmented control) — only when the work has multiple parts
-    const tabs = renderPartTabs();
-    if (tabs) container.appendChild(tabs);
 
     // Arrangement bar: whose take of the active instrument you're reading
     // (filled by renderArrangementBar; empty + hidden for non-tab parts)
@@ -916,10 +919,6 @@ function selectPart(part) {
     activePart = part;
     part.arrangementsOpen = false;   // never hand over an open catalog
 
-    document.querySelectorAll('#part-tabs .part-tab').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.partId === part.partId);
-    });
-
     renderArrangementBar();
 
     const content = document.getElementById('work-part-content');
@@ -992,20 +991,19 @@ function renderTitleHeader() {
         return header;
     }
 
-    // The details button is always in the DOM and hidden by class, because
-    // trust/login resolve AFTER the first render — updateWorkTopBar is called
-    // again when they land (main.js updateDeleteButtonVisibility) and just
-    // flips the class, the same contract #edit-song-btn has.
+    // The writer line is the way into Details (the song's facts, and Edit
+    // details for people who may edit them), so it is always there: a song
+    // with no writer says "Details". Edit lives in the top band.
+    const detailsLabel = writer || 'Details';
     header.innerHTML = `
         <div class="song-header-left">
             <div class="song-title-row">
                 <span class="song-title">${escapeHtml(title)}</span>
                 ${isPlaceholder(currentWork) ? '<span class="placeholder-badge">Placeholder</span>' : ''}
                 ${currentWork.pending_metadata ? '<span class="pending-meta-badge" title="Your edit is live here and syncing to the songbook">Just edited</span>' : ''}
-                <button id="edit-song-btn" class="focus-btn" title="Edit this song">&#x270F;&#xFE0F; Edit</button>
-                <button id="edit-meta-btn" class="focus-btn hidden" title="Edit this song's title, artist, key and notes">&#x1F3F7;&#xFE0F; Details</button>
             </div>
-            ${writer ? `<div class="song-writer-line">${escapeHtml(writer)}</div>` : ''}
+            <button type="button" id="song-details-btn" class="song-writer-line song-details-btn"
+                    aria-haspopup="dialog" aria-expanded="false">${escapeHtml(detailsLabel)} <span aria-hidden="true">&rsaquo;</span></button>
             ${practiceLineHtml()}
         </div>
     `;
@@ -1020,64 +1018,9 @@ function renderTitleHeader() {
             if (href) strumLink.href = href;
         });
     }
-    // #edit-song-btn is wired via main.js's songContent delegation; the
-    // details button is wired here so the feature needs nothing from main.js.
-    header.querySelector('#edit-meta-btn')
-        ?.addEventListener('click', () => showMetadataEditor());
+    const detailsBtn = header.querySelector('#song-details-btn');
+    detailsBtn.addEventListener('click', () => openDetails(detailsBtn));
     return header;
-}
-
-/**
- * Pill row under the title (shell.js pill primitive).
- */
-function renderPillRow() {
-    const row = document.createElement('div');
-    row.className = 'song-pill-row';
-    row.id = 'song-pill-row';
-
-    // A provisional work has no chart, no key, no versions and no index row
-    // to describe — every pill here would be an empty popover.
-    if (currentWork.provisional) return row;
-
-    if (songHasContent(currentWork)) {
-        row.appendChild(buildKeyPill(currentWork));
-        row.appendChild(buildDisplayPill());
-    }
-    row.appendChild(buildInfoPill(currentWork, currentGroupVersions));
-
-    if (currentGroupVersions.length > 1 || currentArrangements.length > 1 ||
-        currentWork.variant_of || currentWork.variant_label) {
-        row.appendChild(buildArrangementPill());
-    }
-    return row;
-}
-
-/**
- * Segmented control for part switching. Null when there's nothing to switch.
- */
-function renderPartTabs() {
-    if (availableParts.length < 2) return null;
-    const bar = document.createElement('div');
-    bar.className = 'part-tabs';
-    bar.id = 'part-tabs';
-    // Lyrics + Chart only: wide screens show both at once, so no tabs at all
-    if (availableParts.every(p => p.type === 'lead-sheet' || p.type === 'chord-chart')) {
-        bar.classList.add('part-tabs-chart-only');
-    }
-    for (const part of availableParts) {
-        const btn = document.createElement('button');
-        btn.className = 'part-tab' + (part === activePart ? ' active' : '');
-        btn.dataset.partId = part.partId;
-        btn.dataset.partType = part.type;
-        const n = part.arrangements?.length || 0;
-        // Badge only when there's a choice to be made — a lone arrangement
-        // is just "the tab", and "1" would be noise on every other pill.
-        btn.innerHTML = escapeHtml(part.label || part.type) +
-            (n > 1 ? `<span class="part-tab-count">${n}</span>` : '');
-        btn.addEventListener('click', () => selectPart(part));
-        bar.appendChild(btn);
-    }
-    return bar;
 }
 
 // ============================================
@@ -1276,22 +1219,107 @@ function buildPlaceholderCta(hasContent) {
 // ARRANGEMENT PILL (replaces the dashboard version cards)
 // ============================================
 
-/**
- * Arrangement pill: lists the group's versions with canonical badge,
- * variant labels and vote counts; clicking navigates to that version.
- */
-function buildArrangementPill() {
-    const versions = currentGroupVersions.length ? currentGroupVersions : [currentWork];
-    // The current work contributes one entry per lead sheet it holds, not one
-    // entry full stop — a fork lives on the work it forked from.
-    const count = versions.length +
-        (currentArrangements.length ? currentArrangements.length - 1 : 0);
-    const label = count > 1 ? `${count} versions` : 'Version';
-    return pill(label, (container) => {
-        container.innerHTML = '<div class="arrangement-loading">Loading…</div>';
-        renderArrangementList(container, versions);
-    }, { id: 'arrangement-pill', title: 'Versions of this song', className: 'pill-wide' });
+// ============================================
+// THE DOCK: View, Key, Size, Display (song-dock.js draws it)
+// ============================================
+
+/** Does this song have more than one version (a sibling work, or a fork of its chart)? */
+function hasVersions() {
+    return currentGroupVersions.length > 1 || currentArrangements.length > 1 ||
+        !!currentWork?.variant_of || !!currentWork?.variant_label;
 }
+
+/** What View offers this song right now. `ctx` is what the lead sheet knows when it renders. */
+function currentViewModel(ctx = {}) {
+    if (ctx.hybrid !== undefined) lastHybrid = ctx.hybrid;
+    return viewModel({
+        parts: availableParts,
+        active: activePart,
+        hybrid: lastHybrid,
+        abcShown: showAbcNotation,
+        wide: chartIsWide(),
+        beside: chartBeside,
+        versions: hasVersions(),
+    });
+}
+
+/** Redraw the lyric sheet or chart on screen (its dock too, which the render mounts). */
+function rerenderTextPart() {
+    const content = document.getElementById('work-part-content');
+    const chordpro = currentChordpro || activePart?.content;
+    if (!content || !chordpro || !activePart) return;
+    const render = activePart.type === 'chord-chart' ? renderChartTabContent : renderLeadSheetContent;
+    render(content, currentWork, chordpro, false);
+}
+
+/** A View choice: what each id does. Lyrics / Lyrics + Chart / Chart / Chords / Notation. */
+function pickView(id) {
+    const lead = availableParts.find(p => p.type === 'lead-sheet');
+    const chart = availableParts.find(p => p.type === 'chord-chart');
+    let changed = false;
+    if (id === 'chart') {
+        selectPart(chart);
+        return;
+    }
+    if ((id === 'lyrics' || id === 'both') && chart && chartIsWide()) {
+        changed = setChartBeside(id === 'both');
+    }
+    if (id === 'chords' || id === 'notation') {
+        changed = showAbcNotation !== (id === 'notation');
+        setShowAbcNotation(id === 'notation');
+    }
+    if (activePart !== lead) selectPart(lead);          // selectPart draws it
+    else if (changed) rerenderTextPart();
+}
+
+function pickTab(partId) {
+    selectPart(availableParts.find(p => p.partId === partId));
+}
+
+/**
+ * The View sheet (frame 9): the choices, the versions with their votes and
+ * badges, and the other parts. Opened by the dock's View ▾ on every part.
+ */
+function openViewSheet(opener) {
+    const model = currentViewModel();
+    openSheet({
+        id: 'song-view-sheet', title: 'View', opener,
+        build: (content, sheet) => fillViewSheet(content, model, {
+            onPick: (id) => { sheet.close(); pickView(id); },
+            onPickTab: (partId) => { sheet.close(); pickTab(partId); },
+            renderVersions: (host) => {
+                const versions = currentGroupVersions.length ? currentGroupVersions : [currentWork];
+                host.innerHTML = '<div class="arrangement-loading">Loading…</div>';
+                // Picking a version leaves the page for it: close the sheet. A vote stays on it.
+                host.addEventListener('click', (e) => {
+                    if (e.target.closest('.arrangement-item') && !e.target.closest('.arrangement-vote-btn')) sheet.close();
+                });
+                renderArrangementList(host, versions);
+            },
+        }),
+    });
+}
+
+/** Key · Size · View · Display, for the lyric sheet and the chart. */
+function buildReadingDock(ctx) {
+    if (currentWork.provisional) return null;
+    const song = currentWork;
+    const size = sizeControl({
+        canStep: (dir) => fontSizeLevel + dir >= -5 && fontSizeLevel + dir <= 6,
+        step: (dir) => setFontSizeLevel(fontSizeLevel + dir),
+    });
+    const view = viewControl(currentViewModel(ctx), { onPick: pickView, onOpen: openViewSheet });
+    const display = buildDisplayButton(() => ({
+        hasChart: !!song.chord_chart && !songHasAbc(song),
+        wide: chartIsWide(),
+    }));
+    return readingDock(buildKeyButton(song), size, view, display);
+}
+
+const dockProvider = {
+    reading: buildReadingDock,
+    view: (ctx) => viewControl(currentViewModel(ctx), { onPick: pickView, onOpen: openViewSheet }),
+};
 
 /**
  * The ballot key for one lead-sheet arrangement of the current work.
@@ -1608,11 +1636,12 @@ export function configureWorkPage(hooks = {}) {
     if (prefSubscriptionsRegistered) return;
     prefSubscriptionsRegistered = true;
 
-    // Re-render only the part content on pref changes: pills stay mounted,
-    // so an open Key/Display popover survives its own updates.
+    // A display choice redraws the lyric sheet or chart on screen (and its
+    // dock, which the render mounts); a sheet that is open stays open
     const displayPrefKeys = [
         'compactMode', 'nashvilleMode', 'twoColumnMode',
         'chordDisplayMode', 'showSectionLabels', 'fontSizeLevel',
+        'chartCells', 'chartBars', 'chartOrder',
         'currentDetectedKey',
     ];
     for (const key of displayPrefKeys) {
@@ -1620,47 +1649,42 @@ export function configureWorkPage(hooks = {}) {
             if (currentView !== 'song' || !currentWork) return;
             if (activePart && activePart.type !== 'lead-sheet' && activePart.type !== 'chord-chart') return;
             const content = document.getElementById('work-part-content');
-            const chordpro = currentChordpro || activePart?.content;
             // A key notification is delivered a frame after the write, so a
             // chart rendered in between has ALREADY used this key (openWork
             // clears it and the render detects it again). Redrawing would
             // repeat identical work.
             if (key === 'currentDetectedKey' && content &&
                 content.dataset.renderedKey === String(value ?? '')) return;
-            if (content && chordpro) {
-                const render = activePart?.type === 'chord-chart' ? renderChartTabContent : renderLeadSheetContent;
-                render(content, currentWork, chordpro, false);
-            }
+            rerenderTextPart();
         });
     }
 
-    // Widening past the chart breakpoint turns the Chart tab into a column
-    // (the lead sheet carries it), so leave the tab for the lead sheet.
-    window.matchMedia?.(CHART_WIDE_MQ).addEventListener?.('change', (e) => {
-        if (!e.matches || currentView !== 'song' || activePart?.type !== 'chord-chart') return;
-        selectPart(availableParts.find(p => p.type === 'lead-sheet'));
+    // Auto-hide controls turned on or off
+    subscribe('autoHideControls', (on) => {
+        if (currentView === 'song') setChromeAutoHide(on);
+    });
+
+    // Crossing the chart breakpoint changes what View offers (Lyrics + Chart
+    // needs the room) and whether the chart column can show: draw it again.
+    window.matchMedia?.(CHART_WIDE_MQ).addEventListener?.('change', () => {
+        if (currentView !== 'song') return;
+        if (activePart?.type === 'lead-sheet' || activePart?.type === 'chord-chart') rerenderTextPart();
     });
 }
 
 /**
- * Declare the song page's top band: back, title, Edit / Lists / Export
- * actions, and the overflow (Report issue, Song notes, admin Delete).
- * Also called by main.js when admin status resolves.
- */
-/**
- * Title-row Edit action (delegated from main.js): placeholders get the
- * metadata editor, real songs the ChordPro editor.
- *
- * Unchanged by the metadata work on purpose. Edit means "edit the chart"
- * everywhere it is offered — a work with no chart still wants that door open
- * (that is how a placeholder gains one). Editing the work's DETAILS is a
- * different ask and gets its own button; routing both through one control was
- * what made the details of a tab-minted work unreachable in the first place.
+ * The top band's one Edit (`#edit-song-btn`). What it opens depends on what
+ * is on the page: a placeholder gets the details form (that is how it gains a
+ * chart), a tab part gets the tab editor, anything else the lyrics & chords
+ * editor. Editing the work's DETAILS from a real song is a separate ask: the
+ * Details sheet's "Edit details".
  */
 export function handleEditAction() {
     if (!currentWork) return;
     if (isPlaceholder(currentWork)) {
         showMetadataEditor();
+    } else if (activePart?.type === 'tablature') {
+        tabEditEntry?.();
     } else {
         workPageHooks.onEdit?.(currentWork);
     }
@@ -1681,6 +1705,61 @@ export function canEditMetadataHere(song = currentWork) {
     });
 }
 
+/**
+ * The Details sheet: the song's facts (the old Info pill) and, for people who
+ * may edit them, Edit details at the bottom. Opened from the writer line; a
+ * sheet on a phone, a centred card on a wide screen (shell.js openSheet).
+ */
+function openDetails(opener) {
+    if (!currentWork) return;
+    openSheet({
+        id: 'song-details-sheet',
+        title: 'Details',
+        opener,
+        build(content, sheet) {
+            const facts = document.createElement('div');
+            renderDetails(facts, currentWork);
+            content.appendChild(facts);
+            if (canEditMetadataHere()) {
+                const footer = document.createElement('div');
+                footer.className = 'details-footer';
+                footer.innerHTML = `
+                    <button type="button" id="edit-meta-btn" class="details-edit-btn">Edit details</button>
+                    <span class="details-footer-note">Shown to people who can edit this song.</span>`;
+                footer.querySelector('#edit-meta-btn').addEventListener('click', () => {
+                    sheet.close();
+                    showMetadataEditor();
+                });
+                content.appendChild(footer);
+            }
+        },
+    });
+}
+
+/**
+ * Show or hide Edit for what is on the page. Called whenever that changes:
+ * the part, the tab editor opening or closing, the tab becoming editable.
+ * Edit is hidden while the tab editor is open (✓ Done is the way out).
+ */
+function syncEditButton() {
+    const editBtn = document.getElementById('edit-song-btn');
+    if (!editBtn || !currentWork) return;
+    const canEdit = isPlaceholder(currentWork) ||
+        (activePart?.type === 'tablature' ? !!tabEditEntry : partUsesSongActions(activePart));
+    editBtn.classList.toggle('hidden', !canEdit || !!activeEditSession);
+}
+
+/**
+ * The tab editor is open (an edit, a new take or #new-tab): one class on
+ * <body> lets CSS clear the pill row and part tabs from above it (the editor
+ * brings its own chrome), and Edit steps aside. Called where a session
+ * starts and wherever it ends.
+ */
+function syncTabEditing() {
+    document.body.classList.toggle('tab-editing', !!activeEditSession);
+    syncEditButton();
+}
+
 export function updateWorkTopBar() {
     if (!currentWork || currentView !== 'song') return;
 
@@ -1691,130 +1770,106 @@ export function updateWorkTopBar() {
         return;
     }
 
-    const actions = [];
-
-    // Edit lives in the title row (a content action stays with the
-    // content); here we only sync its visibility to the active part —
-    // tab parts carry their own Edit in the playback controls.
-    const editBtn = document.getElementById('edit-song-btn');
-    if (editBtn) {
-        editBtn.classList.toggle('hidden',
-            !(partUsesSongActions(activePart) || isPlaceholder(currentWork)));
-    }
-
-    // Details (title / artist / key / notes) is NOT part-scoped — the work has
-    // one set of details whichever part you are reading, and a tab part is the
-    // case that needs it most: a tab-minted work arrives with a title and
-    // nothing else. Gated on the viewer instead: own a part here, or trusted.
-    const metaBtn = document.getElementById('edit-meta-btn');
-    const mayEditMeta = canEditMetadataHere();
-    if (metaBtn) metaBtn.classList.toggle('hidden', !mayEditMeta);
-
-    actions.push({
+    // ---- This song ----
+    const thisSong = [];
+    thisSong.push({
         id: 'list-picker-btn',
-        label: 'Lists',
-        icon: '♡',
-        title: 'Add to list',
-        onClick: (e) => {
-            const itemRef = getActiveItemRef() || currentWork.id;
-            const anchor = e.currentTarget;
-            showListPicker(itemRef, anchor, {
-                onUpdate: () => updateTriggerButton(anchor, itemRef),
-            });
+        label: 'Save to list…',
+        onClick: () => {
+            // The menu has closed by now; the picker hangs under ⋯
+            showListPicker(getActiveItemRef() || currentWork.id,
+                document.getElementById('topbar-overflow-btn'));
         },
     });
-
-    // Phone band diet: Export moves into the ⋯ overflow (the band keeps
-    // back · logo · Lists · ⋯); desktop keeps the Export pill.
-    const phoneBand = window.matchMedia('(max-width: 640px)').matches;
-    if (songHasContent(currentWork) && !phoneBand) {
-        actions.push({ el: buildExportPill() });
+    if (listContext && listContext.listId) {
+        thisSong.push({
+            id: 'song-notes-btn',
+            icon: '📝',
+            label: 'Song notes',
+            onClick: () => openNotesSheet(listContext.listId, currentWork.id, currentWork.title),
+        });
     }
-
-    // Any signed-in user sees Promote on archived (dungeon) songs — a visible
-    // band button on desktop, ⋯ overflow on phones (same diet as Export).
-    // Not gated on trusted status: the people who notice a missing standard
-    // are the ones playing it, and a promoted work is one the corpus already
-    // holds, so the downside is a noisier index rather than injected content.
-    // Undo is narrower — see the RLS policy in
+    if (songHasContent(currentWork)) {
+        thisSong.push({
+            id: 'export-menu-btn',
+            label: 'Export / Print',
+            sub: '🖨️ Print · 📋 Copy ChordPro · ⬇️ Download .pro',
+            items: EXPORT_ACTIONS.map(a => ({
+                action: a.action,
+                label: a.label,
+                onClick: () => handleExport(a.action),
+            })),
+        });
+    }
+    thisSong.push({
+        id: 'report-menu-btn',
+        label: 'Report a problem',
+        sub: '🚩 Report an issue with this song · 🐛 Report a bug · © Copyright concern',
+        items: [
+            { id: 'flag-btn', label: '🚩 Report an issue with this song', onClick: () => openFlagModal(currentWork) },
+            { id: 'report-bug-btn', label: '🐛 Report a bug', onClick: () => openFeedbackModal({ type: 'bug-report' }) },
+            // For rights holders, so it is shown to every visitor (the
+            // suppression request below is trusted-only). An email, not a
+            // form: no account needed.
+            { id: 'copyright-btn', label: '© Copyright concern', onClick: () => window.open(copyrightMailto(currentWork), '_self') },
+        ],
+    });
+    // Any signed-in user sees Promote on archived (dungeon) songs. Not gated
+    // on trusted status: the people who notice a missing standard are the
+    // ones playing it, and a promoted work is one the corpus already holds,
+    // so the downside is a noisier index rather than injected content. Undo
+    // is narrower — see the RLS policy in
     // supabase/migrations/20260817010000_open_promote_to_logged_in.sql.
     const promotedNow = workPageHooks.isPromoted?.(currentWork.id);
     const showPromote = !!workPageHooks.isLoggedIn?.() &&
         (promotedNow || currentWork.indexed === false);
-    if (showPromote && !phoneBand) {
-        actions.push({
+    if (showPromote) {
+        thisSong.push({
             id: 'promote-song-btn',
-            label: promotedNow ? 'Undo promote' : 'Promote',
             icon: promotedNow ? '↩️' : '⬆️',
-            title: promotedNow ? 'Undo promotion' : 'Promote this song into the songbook',
+            label: promotedNow ? 'Undo promote' : 'Promote to songbook',
             onClick: () => workPageHooks.onPromote?.(),
         });
     }
 
-    const overflow = [
-        { id: 'flag-btn', label: '🚩 Report issue', onClick: () => openFlagModal(currentWork) },
-    ];
-    if (songHasContent(currentWork) && phoneBand) {
-        overflow.push(
-            { label: '🖨️ Print', onClick: () => handleExport('print') },
-            { label: '📋 Copy ChordPro', onClick: () => handleExport('copy-chordpro') },
-            { label: '⬇️ Download .pro', onClick: () => handleExport('download-chordpro') },
-        );
-    }
-    if (listContext && listContext.listId) {
-        overflow.push({
-            id: 'song-notes-btn',
-            label: '📝 Song notes',
-            onClick: () => openNotesSheet(listContext.listId, currentWork.id, currentWork.title),
-        });
-    }
-    if (showPromote && phoneBand) {
-        overflow.push({
-            id: 'promote-song-btn',
-            label: promotedNow ? '↩️ Undo promote' : '⬆️ Promote to songbook',
-            onClick: () => workPageHooks.onPromote?.(),
-        });
-    }
-    // For rights holders, so it is shown to every visitor (the suppression
-    // request below is trusted-only). An email, not a form: no account needed.
-    overflow.push({
-        id: 'copyright-btn',
-        label: '© Copyright concern',
-        onClick: () => window.open(copyrightMailto(currentWork), '_self'),
-    });
+    // ---- Trusted and admin ----
     // One slot, two meanings: admins delete on the spot, trusted users ask.
     // Deletion is the destructive residue phase 2d keeps reviewed — the rule
     // itself lives in review-queue.js so the queue and the button agree.
+    const trustedItems = [];
     const affordance = deleteAffordance({
         isAdmin: workPageHooks.isAdmin?.(),
         isTrusted: workPageHooks.isTrusted?.(),
     });
     if (affordance === 'instant') {
-        overflow.push({
+        trustedItems.push({
             id: 'delete-song-btn',
-            label: '🗑️ Delete song',
+            icon: '🗑️',
+            label: 'Delete song',
             onClick: () => workPageHooks.onDelete?.(),
         });
     } else if (affordance === 'request') {
-        overflow.push({
+        trustedItems.push({
             id: 'request-delete-song-btn',
-            label: '🗑️ Request deletion',
+            icon: '🗑️',
+            label: 'Request deletion',
             onClick: () => workPageHooks.onRequestDelete?.(),
         });
     }
-
     // Suppress and merge-redirect have no instant path even for admins —
     // approving either only prints a local command (review-queue.js) — so
     // both are offered as requests to any trusted user, admin or not.
     if (workPageHooks.isTrusted?.()) {
-        overflow.push({
+        trustedItems.push({
             id: 'request-suppress-song-btn',
-            label: '🙈 Request suppression',
+            icon: '🙈',
+            label: 'Request suppression',
             onClick: () => workPageHooks.onRequestSuppress?.(),
         });
-        overflow.push({
+        trustedItems.push({
             id: 'request-merge-song-btn',
-            label: '🔀 Request merge into another song…',
+            icon: '🔀',
+            label: 'Request merge into another song…',
             onClick: () => workPageHooks.onRequestMerge?.(),
         });
     }
@@ -1824,10 +1879,25 @@ export function updateWorkTopBar() {
         // No title here: the page h1 is directly below the band and a
         // duplicate reads as clutter (owner feedback).
         title: null,
-        actions,
-        overflow,
+        // Edit is always in the band, whatever the part; syncEditButton below
+        // hides it where it has nothing to open.
+        actions: [{
+            id: 'edit-song-btn',
+            icon: '✏️',
+            label: 'Edit',
+            title: 'Edit this song',
+            className: 'topbar-edit-btn',
+            hidden: true,
+            onClick: handleEditAction,
+        }],
+        dock: 'song',
+        menu: [
+            { title: 'This song', items: thisSong },
+            { title: 'Trusted and admin', items: trustedItems },
+        ],
         navActive: null,
     });
+    syncEditButton();
 }
 
 // ============================================
@@ -2666,11 +2736,9 @@ async function renderTablaturePart(part, container) {
         const leadRenderer = trackRenderers[leadTrackId] || Object.values(trackRenderers)[0];
         setupTablaturePlayer(otf, controls, leadRenderer);
 
-        // Wire up the Edit button — swap the rendered tab for an edit session
-        const editBtn = controls.querySelector('.tab-edit-btn');
-        if (editBtn) {
-            editBtn.addEventListener('click', () => enterTabEditMode(otf, part, container));
-        }
+        // The top band's Edit swaps the rendered tab for an edit session
+        tabEditEntry = () => enterTabEditMode(otf, part, container);
+        syncEditButton();
 
         // Say out loud that this take is the overlay, not the songbook yet.
         // The reader is looking at real notes seconds after they were
@@ -2999,6 +3067,7 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
             activeEditSession = null;
             activeEditBand?.destroy();
             activeEditBand = null;
+            syncTabEditing();
             // Cancel means "I don't want these edits" — the draft goes with
             // them. ✓ Done keeps it: Done only applies the document to THIS
             // page, and closing the tab afterwards would otherwise lose it.
@@ -3035,6 +3104,7 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
     activeEditBand = bindBandToEditor(controls, activeEditSession.editor, {
         actions: barHost,
     });
+    syncTabEditing();
 
     // The sign-in redirect comes back to this take, on this draft (auth-return.js).
     // Only while THIS session is the live one: a torn-down editor must not be
@@ -3242,7 +3312,7 @@ export function openNewTabPage(options = {}) {
 
     setCurrentChordpro(null);
     setCurrentView('song');
-    setChromeAutoHide(true);
+    setChromeAutoHide(autoHideControls);
     teardownTablatureView();
     setBottomBand(null);
     setLoadedTablature(null);
@@ -3366,6 +3436,7 @@ function landSubmittedTake(result, part, container) {
     activeEditSession = null;
     activeEditBand?.destroy();
     activeEditBand = null;
+    syncTabEditing();
 
     // A minted work has a real id the moment the server answers — the page
     // becomes that work's page without a reload.
@@ -3470,7 +3541,6 @@ function createTablatureControls(otf, part) {
         </div>
         <button class="tab-play-btn qc-toggle-btn">▶ Play</button>
         <button class="tab-stop-btn qc-toggle-btn" disabled>⏹ Stop</button>
-        <button class="tab-edit-btn qc-toggle-btn" title="Edit this tab">✏️ Edit</button>
         <label class="tab-metronome-toggle">
             <input type="checkbox" class="tab-metronome-checkbox">
             <span class="tab-metronome-icon">🥁</span>
@@ -3524,6 +3594,15 @@ function createTablatureControls(otf, part) {
         step: (delta) => setKeyIdx(keyIdx + delta),
         onChange: (cb) => changeListeners.push(cb),
     };
+
+    // View ▾ ends the band and stays out of the ⚙ collapse (G19b): with the
+    // part tabs gone, it is how a tab page reaches the lyrics and other parts.
+    const viewModelHere = currentViewModel();
+    if (viewModelHere.kind !== 'none') {
+        const viewBtn = viewControl({ ...viewModelHere, kind: 'sheet' }, { onPick: pickView, onOpen: openViewSheet });
+        viewBtn.classList.add('tab-view-btn');
+        controls.appendChild(viewBtn);
+    }
 
     // Phone: everything but Play/Stop/tempo/loop moves into a ⚙ sheet. The
     // nodes stay descendants of `controls`, so the querySelector wiring in

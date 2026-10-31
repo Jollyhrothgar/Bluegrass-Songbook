@@ -1,8 +1,9 @@
 // Practice line under the title: Strum Machine (when matched) + YouTube search.
 import { test, expect } from './fixtures.js';
+import { openDock } from './helpers.js';
 
 test.describe('Practice line', () => {
-    test('lead sheet shows YouTube and Strum Machine links, none in the Key pill', async ({ page }) => {
+    test('lead sheet shows YouTube and Strum Machine links, none in the Key sheet', async ({ page }) => {
         await page.goto('/#work/your-cheating-heart');
         await expect(page.locator('#song-view')).toBeVisible({ timeout: 15000 });
 
@@ -13,8 +14,8 @@ test.describe('Practice line', () => {
         await expect(yt).toHaveAttribute('target', '_blank');
         await expect(yt).toHaveAttribute('rel', /noopener/);
 
-        await page.locator('#key-pill .pill-btn').click();
-        await expect(page.locator('#key-pill .pill-strum-btn')).toHaveCount(0);
+        const sheet = await openDock(page, 'key');
+        await expect(sheet.locator('.pill-strum-btn')).toHaveCount(0);
     });
 
     test('Strum Machine link follows transposition without a click', async ({ page }) => {
@@ -24,8 +25,8 @@ test.describe('Practice line', () => {
         await expect(strum).toBeVisible();
         const before = await strum.getAttribute('href');
 
-        await page.locator('#key-pill .pill-btn').click();
-        await page.locator('#key-pill [data-transpose="1"]').click();
+        const sheet = await openDock(page, 'key');
+        await sheet.locator('[data-transpose="1"]').click();
 
         // The href itself changes, so middle-click and "copy link" get the new key.
         await expect(strum).not.toHaveAttribute('href', before);

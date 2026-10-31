@@ -11,7 +11,7 @@ import {
     CM, SHEET, BAND, openDisplay, openFrozenOldHomePlace, setLead, leadText, leadReady, setMode, openEditor, boxPos, boxAt, syllableCentres, scrollLineToTop,
     boxState, lineEndPoint, centreOf, touchDrag, along, boxStopKind, stepKinds, segmentRects,
 } from './helpers/lead-editor.js';
-import { navClick } from './helpers.js';
+import { goToSearch } from './helpers.js';
 
 const LEAD = '#editor-lead';
 
@@ -318,7 +318,7 @@ test.describe('Chords mode on a phone', () => {
         await setMode(page, 'chords');
         await expect(page.locator(SHEET)).toBeVisible();
         await expect(page.locator('.le-cursor-ring')).toBeVisible();
-        await navClick(page, 'search');
+        await goToSearch(page);
         await expect(page.locator('#editor-panel')).toBeHidden();
         await expect(page.locator(SHEET)).toBeHidden();
         await expect(page.locator('.le-cursor-ring')).toBeHidden();
@@ -336,7 +336,7 @@ test.describe('Chords mode on a phone', () => {
         const how = (await syllableCentres(page, 'Amazing')).find((s) => s.text.startsWith('how'));
         await page.touchscreen.tap(how.x, how.y);
         expect(await boxPos(page)).toBe(how.seam);
-        await navClick(page, 'search');
+        await goToSearch(page);
         await expect(page.locator('#editor-leave-modal')).toBeVisible();
         await expect(page.locator(SHEET)).toBeHidden();
         await page.locator('#editor-leave-modal [data-choice="keep"]').tap();

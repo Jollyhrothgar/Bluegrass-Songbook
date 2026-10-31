@@ -6,6 +6,7 @@
 // that the editor does not offer the edit to someone it would be thrown away
 // for.
 import { test, expect } from './fixtures.js';
+import { pressTabEdit } from './helpers/tab-edit.js';
 import { saveAs } from './helpers/front-door.js';
 import { mockSupabase } from './helpers/supabase-mock.js';
 
@@ -21,7 +22,7 @@ async function openNewTab(page) {
 async function openPublished(page) {
     await page.goto(PUBLISHED);
     await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
-    await band(page).locator('.tab-edit-btn').click();
+    await pressTabEdit(page);
     await page.locator('.editor-renderer .stave-row').first().waitFor({ timeout: 20000 });
 }
 

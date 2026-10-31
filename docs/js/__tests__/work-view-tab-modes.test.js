@@ -158,12 +158,15 @@ describe('editing an existing take from its URL', () => {
 
         expect(editors).toHaveLength(1);
         expect(document.querySelector('#work-part-content .otf-editor')).not.toBeNull();
-        // The page is still the song page: title, pills and all
+        // The page is still the song page: title and writer line (which opens
+        // Details). While the editor is open one body class clears the pill
+        // row and part tabs from above it.
         expect(document.querySelector('.song-title').textContent).toBe('Gold Rush');
-        expect(document.querySelector('#info-pill')).not.toBeNull();
+        expect(document.querySelector('#song-details-btn')).not.toBeNull();
+        expect(document.body.classList.contains('tab-editing')).toBe(true);
     });
 
-    it('keeps the bottom band, with the session buttons in the ✏️ Edit slot', async () => {
+    it('keeps the bottom band, with the session buttons after Stop', async () => {
         await openWork('gold-rush', { editRef: 'banjo', fromDeepLink: true });
         await untilEditor();
 
@@ -171,9 +174,8 @@ describe('editing an existing take from its URL', () => {
         expect(band().querySelector('.tab-play-btn')).not.toBeNull();
         expect(band().querySelector('.tab-tempo-display')).not.toBeNull();
         expect(band().querySelector('.tab-metronome-checkbox')).not.toBeNull();
-        // ✏️ Edit is gone — its slot holds Submit correction and Done (the
-        // rest is in the editor's File menu)
-        expect(band().querySelector('.tab-edit-btn')).toBeNull();
+        // Edit is the top band's, hidden while editing; the slot after Stop
+        // holds Submit correction and Done (the rest is in the editor's File menu)
         const actions = band().querySelector('.tab-edit-actions-slot .tab-edit-bar');
         expect(actions).not.toBeNull();
         expect(actions.querySelector('.tab-edit-submit').textContent)
@@ -617,7 +619,9 @@ describe('submitting a correction', () => {
 
         band().querySelector('.tab-edit-done').click();
         await settle();
-        // Stayed on the song page, with the status where the take is named
+        // Stayed on the song page, with the status where the take is named,
+        // and the pill row and part tabs are back (the editor is closed)
+        expect(document.body.classList.contains('tab-editing')).toBe(false);
         expect(window.location.hash).toBe('#work/gold-rush');
         expect(document.querySelector('.arr-status').textContent)
             .toMatch(/appears in search after the next build/);
@@ -654,7 +658,6 @@ describe('a slow published take cannot clobber the editor', () => {
         await settle();
 
         expect(band().querySelector('.tab-edit-submit')).not.toBeNull();
-        expect(band().querySelector('.tab-edit-btn')).toBeNull();
         expect(document.querySelector('#work-part-content .otf-editor')).not.toBeNull();
     });
 });

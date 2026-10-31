@@ -60,6 +60,9 @@ async function bandGeometry(page) {
     }, BAND_CONTROLS);
 }
 
+// A width where the full band's name no longer fits but the nav still does
+const WIDTH_NAME_SHEDS = 700;
+
 test.describe('Top band rolls up to fit', () => {
     // The reported width, plus the rest of the range the old breakpoint left
     // over-full, and the narrow end where the band must fully roll up.
@@ -80,11 +83,12 @@ test.describe('Top band rolls up to fit', () => {
         });
     }
 
+    // The song page's thin dock has no nav and no account chip, so these two
+    // measure the full band on the search page.
     test('sheds the display name before it sheds navigation', async ({ page }) => {
-        await page.setViewportSize({ width: 820, height: 800 });
-        await page.goto('/#work/nine-to-five');
-        await page.waitForSelector('#app-topbar');
-        await page.waitForSelector('.song-content, .song-view', { timeout: 20000 });
+        await page.setViewportSize({ width: WIDTH_NAME_SHEDS, height: 800 });
+        await page.goto('/#search');
+        await page.waitForSelector('#search-input');
         await signInChip(page);
 
         // At the width that used to overlap, the band is rolled up but the
@@ -94,16 +98,15 @@ test.describe('Top band rolls up to fit', () => {
     });
 
     test('a longer display name starts rolling the band up at a wider window', async ({ page }) => {
-        await page.goto('/#work/nine-to-five');
-        await page.waitForSelector('#app-topbar');
-        await page.waitForSelector('.song-content, .song-view', { timeout: 20000 });
+        await page.goto('/#search');
+        await page.waitForSelector('#search-input');
 
         // The widest window at which this name no longer fits at full density.
         // Searched rather than hardcoded: the exact pixel depends on fonts,
         // and the property under test is the ORDER, not the number.
         async function rollUpWidth(name) {
             await signInChip(page, name);
-            for (let width = 1000; width >= 700; width -= 10) {
+            for (let width = 1000; width >= 300; width -= 10) {
                 await page.setViewportSize({ width, height: 800 });
                 await page.waitForTimeout(120);
                 if ((await bandGeometry(page)).density !== 'full') return width;

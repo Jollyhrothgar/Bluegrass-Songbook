@@ -5,6 +5,7 @@
 // machine, so app state still said "song page"; a later navigation to another
 // song was then a no-op for the state and the editor stayed on screen.
 import { test, expect } from './fixtures.js';
+import { pressTabEdit } from './helpers/tab-edit.js';
 import { mockSupabase } from './helpers/supabase-mock.js';
 import { setLead, appendLead, leadText } from './helpers/lead-editor.js';
 
@@ -274,7 +275,7 @@ test.describe('A5: sign-in at Submit keeps the work (tab editor)', () => {
     async function editPublishedTake(page) {
         await page.goto('/#work/foggy-mountain-breakdown/mandolin');
         await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
-        await band(page).locator('.tab-edit-btn').click();
+        await pressTabEdit(page);
         await page.locator('.editor-renderer .stave-row').first().waitFor({ timeout: 20000 });
     }
     async function typeANote(page, key = '7') {

@@ -140,11 +140,6 @@ function linesBox(lead, from, to) {
  *   ctx: { lead, reset, point, reveal, wait, reduced } (tour.js play())
  */
 export async function writeIn({ lead, reset, point, reveal, wait, reduced }) {
-    // "Add Song" is in the band on a desktop; a phone's editor page hides it
-    if (document.querySelector('.topbar-nav-link[data-nav="add"]')?.getBoundingClientRect().width) {
-        point('.topbar-nav-link[data-nav="add"]');
-        if (!await wait(LOOK_MS)) return;
-    }
     point(null);
     reset();
     lead.setMode('lyrics', { persist: false });

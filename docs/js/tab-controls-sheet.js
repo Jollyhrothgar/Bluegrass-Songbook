@@ -29,7 +29,6 @@ const SHEET_ROWS = [
     { label: 'Feel', selectors: ['.tab-feel-group'] },
     { label: 'Practice', selectors: ['.tab-metronome-toggle', '.tab-countin-toggle'] },
     { label: 'Tracks', selectors: ['.tab-track-mixer'] },
-    { label: 'Tab', selectors: ['.tab-edit-btn'] },
 ];
 
 let sheetSeq = 0;
@@ -184,12 +183,6 @@ export function attachTabControlsSheet(controls, media) {
     moreBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         setOpen(!isOpen());
-    });
-
-    // Edit tears the band down and mounts the editor bar — don't leave a
-    // sheet floating over it.
-    sheet.addEventListener('click', (e) => {
-        if (e.target.closest('.tab-edit-btn')) setOpen(false);
     });
 
     function destroy() {

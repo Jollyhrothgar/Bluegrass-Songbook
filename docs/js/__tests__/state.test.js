@@ -12,7 +12,10 @@ import {
     currentSearchQuery, setCurrentSearchQuery,
     corpusLoadFailed, setCorpusLoadFailed,
     historyInitialized, setHistoryInitialized,
-    bootRouteClaimed, setBootRouteClaimed, canRouteBootUrl
+    bootRouteClaimed, setBootRouteClaimed, canRouteBootUrl,
+    loadViewPrefs, chartCells, setChartCells, chartBars, setChartBars, chartOrder, setChartOrder,
+    chartBeside, setChartBeside, autoHideControls, setAutoHideControls, abcScale, setAbcScale,
+    ABC_SCALE_KEY
 } from '../state.js';
 
 // Helper to wait for requestAnimationFrame callbacks
@@ -343,5 +346,54 @@ describe('bootRouteClaimed', () => {
 
         pushHistoryState();          // ordinary navigation afterwards
         expect(bootRouteClaimed).toBe(false);
+    });
+});
+
+describe('the song page\'s remembered choices (G19b)', () => {
+    beforeEach(() => localStorage.clear());
+    afterEach(() => {
+        setChartCells(4); setChartBars(1); setChartOrder('once'); setChartBeside(true);
+        setAutoHideControls(false); setAbcScale(1);
+        localStorage.clear();
+    });
+
+    it('start where the mock draws them: 4 cells a row, one cell a bar, each section once, auto-hide off', () => {
+        expect([chartCells, chartBars, chartOrder, chartBeside, autoHideControls])
+            .toEqual([4, 1, 'once', true, false]);
+    });
+
+    it('persist in the view prefs and come back on load', () => {
+        setChartCells(6); setChartBars(2); setChartOrder('sung'); setChartBeside(false); setAutoHideControls(true);
+        setChartCells(4); setChartBars(1); setChartOrder('once'); setChartBeside(true); setAutoHideControls(false);
+        localStorage.setItem('songbook-view-prefs', JSON.stringify(
+            { chartCells: 6, chartBars: 2, chartOrder: 'sung', chartBeside: false, autoHideControls: true }));
+        loadViewPrefs();
+        expect([chartCells, chartBars, chartOrder, chartBeside, autoHideControls])
+            .toEqual([6, 2, 'sung', false, true]);
+    });
+
+    it('ignore a value the page does not offer', () => {
+        localStorage.setItem('songbook-view-prefs', JSON.stringify({ chartCells: 5, chartOrder: 'x', chartBars: 3 }));
+        loadViewPrefs();
+        expect([chartCells, chartBars, chartOrder]).toEqual([4, 1, 'once']);
+    });
+
+    it('keep the bars choice G18b2 stored under its own key', () => {
+        localStorage.setItem('bgb-chart-bars', '2');
+        loadViewPrefs();
+        expect(chartBars).toBe(2);
+    });
+
+    it('give the notation its own remembered size, separate from the lyric text size', () => {
+        setAbcScale(1.2);
+        expect(localStorage.getItem(ABC_SCALE_KEY)).toBe('1.2');
+        expect(JSON.parse(localStorage.getItem('songbook-view-prefs') || '{}').fontSizeLevel).toBeUndefined();
+        setAbcScale(1);
+        localStorage.setItem(ABC_SCALE_KEY, '1.4');
+        loadViewPrefs();
+        expect(abcScale).toBe(1.4);
+        localStorage.setItem(ABC_SCALE_KEY, '9');
+        loadViewPrefs();
+        expect(abcScale).toBe(1.4);   // out of range: kept as it was
     });
 });

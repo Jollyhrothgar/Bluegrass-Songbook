@@ -33,7 +33,7 @@ test.describe('Song paths', () => {
         await songReady(page);
         await page.evaluate(() => { window.__sameDocument = true; });
 
-        await page.click('.topbar-nav-link[data-nav="search"]');
+        await page.click('#topbar-search');
         await expect.poll(() => here(page)).toBe('/#search');
         expect(await page.evaluate(() => window.__sameDocument)).toBe(true);
     });

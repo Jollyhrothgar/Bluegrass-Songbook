@@ -99,16 +99,16 @@ export const TOUR_STEPS = [
     {
         id: 'key',
         page: 'lead',
-        targets: ['#key-pill'],
+        targets: ['#dock-key-btn'],
         title: 'Play it in your key',
         body: 'Move every chord to another key, or switch to Nashville numbers.',
     },
     {
         id: 'lists',
         page: 'lead',
-        targets: ['#list-picker-btn'],
+        targets: ['#topbar-overflow-btn'],
         title: 'Make a list',
-        body: 'Save songs to Favorites or to a setlist for the next jam. No account needed; sign in to keep your lists on every device and share them.',
+        body: 'Open ⋯ and choose Save to list… to keep songs in Favorites or in a setlist for the next jam. No account needed; sign in to keep your lists on every device and share them.',
     },
     {
         id: 'edit',
@@ -151,11 +151,7 @@ export const TOUR_STEPS = [
     {
         id: 'tab-edit',
         page: 'tab',
-        targets: [
-            '.tab-edit-btn',
-            // Phone: Edit is re-parented into the ⚙ sheet (tab-controls-sheet.js)
-            { selector: '.tab-more-btn', note: 'On a phone, Edit is under ⚙.' },
-        ],
+        targets: ['#edit-song-btn'],
         title: 'Write tab',
         body: 'Use Edit to fix a note in this tab or write your own break. Your work is kept as a draft as you go.',
     },
@@ -420,8 +416,7 @@ export function startTour({ steps = TOUR_STEPS, routes = TOUR_ROUTES, onStep, on
                 landed = true;
                 bringIntoView(target.el);
             }
-            // The note follows the control actually ringed: a resize can
-            // move Edit between the band and the phone's ⚙ sheet.
+            // The note follows the control actually ringed.
             const text = target.note ? `${step.body} ${target.note}` : step.body;
             if (els.body.textContent !== text) els.body.textContent = text;
             lastSeen = now;
@@ -509,9 +504,9 @@ export function startTour({ steps = TOUR_STEPS, routes = TOUR_ROUTES, onStep, on
     }
 
     function bringIntoView(el) {
-        // The top band auto-hides on song pages; bring it back for a step
-        // that points into it.
-        if (el.closest('.app-topbar')) document.body.classList.remove('chrome-hidden');
+        // Both bands can auto-hide on song pages (Display ▸ Auto-hide
+        // controls); bring them back for a step that points into one.
+        if (el.closest('.app-topbar, .app-bottomband')) document.body.classList.remove('chrome-hidden');
         const r = el.getBoundingClientRect();
         if (r.top < 0 || r.bottom > window.innerHeight) {
             el.scrollIntoView({ block: 'center' });

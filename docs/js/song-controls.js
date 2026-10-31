@@ -11,7 +11,8 @@ import {
     twoColumnMode, setTwoColumnMode,
     chordDisplayMode, setChordDisplayMode,
     showSectionLabels, setShowSectionLabels,
-    fontSizeLevel, setFontSizeLevel,
+    chartCells, setChartCells, chartBars, setChartBars, chartOrder, setChartOrder,
+    autoHideControls, setAutoHideControls,
     currentDetectedKey, setCurrentDetectedKey,
     originalDetectedKey, originalDetectedMode,
     subscribe
@@ -19,7 +20,8 @@ import {
 import { CHROMATIC_MAJOR_KEYS, CHROMATIC_MINOR_KEYS } from './chords.js';
 import { escapeHtml, escapeAttr, safeUrl, downloadFile, songWriter, recordedBy, recorderLabel, recordingSearchUrl } from './utils.js';
 import { getSongContent } from './song-content.js';
-import { pill } from './shell.js';
+import { openSheet } from './shell.js';
+import { dockButton } from './song-dock.js';
 import { trackTranspose, trackExport } from './analytics.js';
 import { getTagCategory, formatTagName } from './tags.js';
 
@@ -33,11 +35,6 @@ const ENHARMONIC_TO_CHROMATIC = {
 
 function normalizeKeyForChromatic(key) {
     return ENHARMONIC_TO_CHROMATIC[key] || key;
-}
-
-/** Label for the Key pill button. */
-export function keyPillLabel(key) {
-    return key ? `Key of ${key}` : 'Key';
 }
 
 /**
@@ -102,125 +99,171 @@ export function practiceLinks(song, key) {
 }
 
 // ============================================
-// KEY PILL
+// KEY (the dock's Key button and its sheet)
 // ============================================
 
+/** "Key: A" for the dock's Key button. */
+export function keyButtonLabel(key) {
+    return key ? `Key: ${key}` : 'Key';
+}
+
 /**
- * Key pill: chromatic transpose, key list, Nashville toggle.
- * Label live-updates ("Key of G").
+ * The Key sheet's content: chromatic transpose, the key list, Nashville.
+ * Same content the Key pill had; only where it opens has changed.
  */
-export function buildKeyPill(song) {
-    const root = pill(keyPillLabel(currentDetectedKey), (container) => {
-        const keys = originalDetectedMode === 'minor' ? CHROMATIC_MINOR_KEYS : CHROMATIC_MAJOR_KEYS;
-        container.innerHTML = `
-            <div class="pill-section pill-transpose-row">
-                <button class="qc-btn" data-transpose="-1" title="Transpose down">−</button>
-                <span class="pill-current-key">${escapeHtml(currentDetectedKey || '—')}</span>
-                <button class="qc-btn" data-transpose="1" title="Transpose up">+</button>
-            </div>
-            <div class="pill-section pill-key-grid">
-                ${keys.map(k => {
-                    const cls = [
-                        k === currentDetectedKey ? 'active' : '',
-                        k === originalDetectedKey ? 'original' : ''
-                    ].filter(Boolean).join(' ');
-                    return `<button class="pill-key-btn ${cls}" data-key="${k}" title="${k === originalDetectedKey ? `${k} (detected)` : k}">${k}</button>`;
-                }).join('')}
-            </div>
-            <div class="pill-section">
-                <button class="qc-toggle-btn pill-nashville-btn ${nashvilleMode ? 'active' : ''}" title="Nashville numbers">Nashville</button>
-            </div>
-        `;
+export function renderKeyContent(container, song) {
+    const keys = originalDetectedMode === 'minor' ? CHROMATIC_MINOR_KEYS : CHROMATIC_MAJOR_KEYS;
+    container.innerHTML = `
+        <div class="pill-section pill-transpose-row">
+            <button class="qc-btn" data-transpose="-1" title="Transpose down">−</button>
+            <span class="pill-current-key">${escapeHtml(currentDetectedKey || '—')}</span>
+            <button class="qc-btn" data-transpose="1" title="Transpose up">+</button>
+        </div>
+        ${originalDetectedKey ? `<div class="pill-original-key">original key: ${escapeHtml(originalDetectedKey)}</div>` : ''}
+        <div class="pill-section pill-key-grid">
+            ${keys.map(k => {
+                const cls = [
+                    k === currentDetectedKey ? 'active' : '',
+                    k === originalDetectedKey ? 'original' : ''
+                ].filter(Boolean).join(' ');
+                return `<button class="pill-key-btn ${cls}" data-key="${k}" title="${k === originalDetectedKey ? `${k} (detected)` : k}">${k}</button>`;
+            }).join('')}
+        </div>
+        <div class="pill-section">
+            <button class="qc-toggle-btn pill-nashville-btn ${nashvilleMode ? 'active' : ''}" aria-pressed="${nashvilleMode}" title="Nashville numbers">Nashville numbers</button>
+            <span class="pill-hint">1 4 5 instead of A D E</span>
+        </div>
+    `;
 
-        const refreshKeyMarkers = () => {
-            container.querySelector('.pill-current-key').textContent = currentDetectedKey || '—';
-            container.querySelectorAll('.pill-key-btn').forEach(b => {
-                b.classList.toggle('active', b.dataset.key === currentDetectedKey);
-            });
-        };
-
-        container.querySelectorAll('[data-transpose]').forEach(btn => {
-            btn.addEventListener('click', () => {
-                transposeBySemitone(parseInt(btn.dataset.transpose, 10));
-                refreshKeyMarkers();
-            });
+    const refreshKeyMarkers = () => {
+        container.querySelector('.pill-current-key').textContent = currentDetectedKey || '—';
+        container.querySelectorAll('.pill-key-btn').forEach(b => {
+            b.classList.toggle('active', b.dataset.key === currentDetectedKey);
         });
+    };
 
-        container.querySelectorAll('.pill-key-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const key = btn.dataset.key;
-                if (song && currentDetectedKey !== key) {
-                    trackTranspose(song.id, currentDetectedKey, key);
-                }
-                setCurrentDetectedKey(key);
-                refreshKeyMarkers();
-            });
+    container.querySelectorAll('[data-transpose]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            transposeBySemitone(parseInt(btn.dataset.transpose, 10));
+            refreshKeyMarkers();
         });
+    });
 
-        const nashBtn = container.querySelector('.pill-nashville-btn');
-        nashBtn?.addEventListener('click', () => {
-            setNashvilleMode(!nashvilleMode);
-            nashBtn.classList.toggle('active', nashvilleMode);
+    container.querySelectorAll('.pill-key-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const key = btn.dataset.key;
+            if (song && currentDetectedKey !== key) {
+                trackTranspose(song.id, currentDetectedKey, key);
+            }
+            setCurrentDetectedKey(key);
+            refreshKeyMarkers();
         });
-    }, { id: 'key-pill', title: 'Key & transposition' });
+    });
 
-    // Label follows the current key even when transposed elsewhere
-    autoSub('currentDetectedKey', root, (key) => root.pillApi.setLabel(keyPillLabel(key)));
-    return root;
+    const nashBtn = container.querySelector('.pill-nashville-btn');
+    nashBtn?.addEventListener('click', () => {
+        setNashvilleMode(!nashvilleMode);
+        nashBtn.classList.toggle('active', nashvilleMode);
+        nashBtn.setAttribute('aria-pressed', String(nashvilleMode));
+    });
+}
+
+/**
+ * The dock's Key button ("Key: A"). It opens the Key sheet; the label follows
+ * the current key even when it is transposed elsewhere.
+ */
+export function buildKeyButton(song) {
+    const btn = dockButton({ id: 'dock-key-btn', label: keyButtonLabel(currentDetectedKey), title: 'Key & transposition' });
+    btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openSheet({ id: 'dock-key-sheet', title: 'Key', opener: btn, build: (el) => renderKeyContent(el, song) });
+    });
+    autoSub('currentDetectedKey', btn, (key) => { btn.textContent = keyButtonLabel(key); });
+    return btn;
 }
 
 // ============================================
-// DISPLAY PILL
+// DISPLAY (the dock's Display button and its sheet)
 // ============================================
 
-/**
- * Display pill: font size, layout toggles, chord display mode.
- * Same behavior the quick-controls bar had; re-render happens reactively.
- */
-export function buildDisplayPill() {
-    return pill('Display', (container) => {
-        container.innerHTML = `
-            <div class="pill-section pill-transpose-row">
-                <button class="qc-btn" data-size="-1" title="Decrease font size">−</button>
-                <span class="qc-label">Aa</span>
-                <button class="qc-btn" data-size="1" title="Increase font size">+</button>
-            </div>
-            <div class="pill-section pill-checks">
-                <label class="qc-checkbox"><input type="checkbox" id="pill-twocol" ${twoColumnMode ? 'checked' : ''}> Two columns</label>
-                <label class="qc-checkbox"><input type="checkbox" id="pill-sections" ${showSectionLabels ? 'checked' : ''}> Section labels</label>
-                <label class="qc-checkbox"><input type="checkbox" id="pill-compact" ${compactMode ? 'checked' : ''}> Compact</label>
-            </div>
-            <div class="pill-section">
-                <div class="pill-mode-label">Chords</div>
-                <div class="pill-mode-group" id="pill-chord-mode" role="group" aria-label="Chord display">
-                    <button class="pill-mode-btn ${chordDisplayMode === 'all' ? 'active' : ''}" data-mode="all">All</button>
-                    <button class="pill-mode-btn ${chordDisplayMode === 'first' ? 'active' : ''}" data-mode="first">First only</button>
-                    <button class="pill-mode-btn ${chordDisplayMode === 'none' ? 'active' : ''}" data-mode="none">None</button>
-                </div>
-            </div>
-        `;
+const CHART_CELLS_CHOICES = [2, 4, 6, 8];
 
-        container.querySelectorAll('[data-size]').forEach(btn => {
+/** A labelled segmented group; `choices` is [[value, label]], `on` the current value. */
+function segmentedRow(label, id, choices, on) {
+    return `
+        <div class="dock-opt-row">
+            <span class="dock-opt-label">${label}</span>
+            <div class="pill-mode-group" id="${id}" role="group" aria-label="${label}">
+                ${choices.map(([v, l]) => `<button type="button" class="pill-mode-btn ${String(v) === String(on) ? 'active' : ''}" data-value="${v}">${l}</button>`).join('')}
+            </div>
+        </div>`;
+}
+
+/**
+ * The Display sheet's content: layout options, the chord mode, Auto-hide
+ * controls, and (only for a song with a chart) the Chart group. Size is not
+ * here: it is in the dock. `wide` says whether two columns can show.
+ */
+export function renderDisplayContent(container, { hasChart = false, wide = false } = {}) {
+    container.innerHTML = `
+        <div class="dock-group-label">Layout</div>
+        <div class="pill-section pill-checks">
+            <label class="qc-checkbox ${wide ? '' : 'is-off'}"><input type="checkbox" id="pill-twocol" ${twoColumnMode ? 'checked' : ''} ${wide ? '' : 'disabled'}> Two columns${wide ? '' : ' <span class="dock-opt-hint">(wide screens only)</span>'}</label>
+            <label class="qc-checkbox"><input type="checkbox" id="pill-sections" ${showSectionLabels ? 'checked' : ''}> Section labels</label>
+            <label class="qc-checkbox"><input type="checkbox" id="pill-compact" ${compactMode ? 'checked' : ''}> Compact</label>
+            <label class="qc-checkbox"><input type="checkbox" id="pill-autohide" ${autoHideControls ? 'checked' : ''}> Auto-hide controls <span class="dock-opt-hint">(${autoHideControls ? 'on' : 'off'}: docks ${autoHideControls ? 'hide' : 'stay'} while you scroll)</span></label>
+        </div>
+        <div class="dock-opt-row">
+            <span class="dock-opt-label">Chords</span>
+            <div class="pill-mode-group" id="pill-chord-mode" role="group" aria-label="Chord display">
+                <button class="pill-mode-btn ${chordDisplayMode === 'all' ? 'active' : ''}" data-mode="all">All</button>
+                <button class="pill-mode-btn ${chordDisplayMode === 'first' ? 'active' : ''}" data-mode="first">First only</button>
+                <button class="pill-mode-btn ${chordDisplayMode === 'none' ? 'active' : ''}" data-mode="none">None</button>
+            </div>
+        </div>
+        ${hasChart ? `
+        <div class="dock-group-label dock-group-chart">Chart <span class="dock-opt-hint">shown because this song has one</span></div>
+        ${segmentedRow('Cells per row', 'pill-chart-cells', CHART_CELLS_CHOICES.map(n => [n, n]), chartCells)}
+        ${segmentedRow('Bars', 'pill-chart-bars', [[1, 'One cell'], [2, 'Two cells']], chartBars)}
+        ${segmentedRow('Order', 'pill-chart-order', [['once', 'Each section once'], ['sung', 'As sung']], chartOrder)}
+        ` : ''}
+    `;
+
+    container.querySelector('#pill-twocol').addEventListener('change', (e) => setTwoColumnMode(e.target.checked));
+    container.querySelector('#pill-sections').addEventListener('change', (e) => setShowSectionLabels(e.target.checked));
+    container.querySelector('#pill-compact').addEventListener('change', (e) => setCompactMode(e.target.checked));
+    container.querySelector('#pill-autohide').addEventListener('change', (e) => {
+        setAutoHideControls(e.target.checked);
+        const hint = e.target.parentElement.querySelector('.dock-opt-hint');
+        if (hint) hint.textContent = `(${autoHideControls ? 'on' : 'off'}: docks ${autoHideControls ? 'hide' : 'stay'} while you scroll)`;
+    });
+
+    // A segmented group's buttons light one at a time and say what they chose
+    const group = (selector, attr, onChoose) => {
+        container.querySelectorAll(`${selector} .pill-mode-btn`).forEach(btn => {
             btn.addEventListener('click', () => {
-                const delta = parseInt(btn.dataset.size, 10);
-                const next = fontSizeLevel + delta;
-                if (next >= -5 && next <= 6) setFontSizeLevel(next);
+                onChoose(btn.dataset[attr]);
+                container.querySelectorAll(`${selector} .pill-mode-btn`).forEach(b => b.classList.toggle('active', b === btn));
             });
         });
-        container.querySelector('#pill-twocol').addEventListener('change', (e) => setTwoColumnMode(e.target.checked));
-        container.querySelector('#pill-sections').addEventListener('change', (e) => setShowSectionLabels(e.target.checked));
-        container.querySelector('#pill-compact').addEventListener('change', (e) => setCompactMode(e.target.checked));
-        // Segmented buttons instead of a native <select>: consistent pill
-        // styling everywhere (mobile browsers render select menus at odd
-        // sizes floating over the popover)
-        container.querySelectorAll('#pill-chord-mode .pill-mode-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                setChordDisplayMode(btn.dataset.mode);
-                container.querySelectorAll('#pill-chord-mode .pill-mode-btn').forEach(b =>
-                    b.classList.toggle('active', b === btn));
-            });
-        });
-    }, { id: 'display-pill', title: 'Display options' });
+    };
+    // Segmented buttons instead of a native <select>: consistent styling
+    // everywhere (mobile browsers render select menus at odd sizes)
+    group('#pill-chord-mode', 'mode', setChordDisplayMode);
+    group('#pill-chart-cells', 'value', (v) => setChartCells(Number(v)));
+    group('#pill-chart-bars', 'value', (v) => setChartBars(Number(v)));
+    group('#pill-chart-order', 'value', setChartOrder);
+}
+
+/** The dock's Display button. `options()` is read when it opens (the chart, the width). */
+export function buildDisplayButton(options) {
+    const btn = dockButton({ id: 'dock-display-btn', label: 'Display', title: 'Display options' });
+    btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openSheet({ id: 'dock-display-sheet', title: 'Display', opener: btn,
+            build: (el) => renderDisplayContent(el, options()) });
+    });
+    return btn;
 }
 
 // ============================================
@@ -240,115 +283,116 @@ const SOURCE_DISPLAY_NAMES = {
 };
 
 /**
- * Info pill: writer, associated artists, tags (+ suggest form) — the content
- * the old collapsible Info bar showed. Since F9 this is the only place on the
+ * The song's facts, for the Details sheet (work-view.js opens it from the
+ * writer line): writer, recordings, book, key, tags with their votes and
+ * "+ Add your own", source, notes. Since F9 this is the only place on the
  * song page that names performers: "Recorded by", the MusicBrainz-backed
  * covering artists with years. `artist` is whichever page a chart was scraped
  * from; it is never shown as such.
  */
-export function buildInfoPill(song, versions = []) {
-    return pill('Info', (container) => {
-        const writer = songWriter(song);
+export function renderDetails(container, song) {
+    const writer = songWriter(song);
 
-        // "Recorded by", first recording first: MusicBrainz-backed covering
-        // artists (incl. a confirmed scraped artist). Never an unconfirmed
-        // scraped `artist`, this song's or its versions' (F9).
-        const artistsList = recordedBy(song);
+    // "Recorded by", first recording first: MusicBrainz-backed covering
+    // artists (incl. a confirmed scraped artist). Never an unconfirmed
+    // scraped `artist`, this song's or its versions' (F9).
+    const artistsList = recordedBy(song);
 
-        const infoItems = [];
-        if (writer) {
-            infoItems.push(`<div class="info-item"><span class="info-label">Written by:</span> ${escapeHtml(writer)}</div>`);
-        }
-        if (artistsList.length > 0) {
-            // Each recorder links to a YouTube search for that recording
-            // ("Song Title Bill Monroe 1947").
-            const link = (r) => `<a class="recorded-by-link" href="${escapeAttr(recordingSearchUrl(song?.title || '', r))}" target="_blank" rel="noopener">${escapeHtml(recorderLabel(r))}</a>`;
-            const maxVisible = 3;
-            const hasMore = artistsList.length > maxVisible;
-            const visibleArtists = hasMore ? artistsList.slice(0, maxVisible) : artistsList;
-            const hiddenArtists = hasMore ? artistsList.slice(maxVisible) : [];
-            const artistsHtml = hasMore
-                ? `<span class="artists-visible">${visibleArtists.map(link).join(', ')}</span><button class="artists-toggle" data-artists="expand" type="button">… <span class="artists-more">(+${hiddenArtists.length})</span></button><span class="artists-hidden hidden" data-artists="full">, ${hiddenArtists.map(link).join(', ')}</span> <button class="artists-toggle hidden" data-artists="collapse" type="button">(collapse)</button>`
-                : visibleArtists.map(link).join(', ');
-            infoItems.push(`<div class="info-item"><span class="info-label">Recorded by:</span> <span class="artists-list">${artistsHtml}</span></div>`);
-        }
-        const bookDisplay = song?.book || null;
-        const bookUrl = song?.book_url || null;
-        if (bookDisplay) {
-            // book_url rides in on the work/index row, so it is submitter
-            // data: scheme-check it, and show plain text when it isn't a
-            // real link (escaping alone would not stop `javascript:`).
-            const bookHref = safeUrl(bookUrl);
-            const bookHtml = bookHref
-                ? `<a href="${bookHref}" target="_blank" rel="noopener">${escapeHtml(bookDisplay)}</a>`
-                : escapeHtml(bookDisplay);
-            infoItems.push(`<div class="info-item"><span class="info-label">From:</span> ${bookHtml}</div>`);
-        }
-        if (song?.source && SOURCE_DISPLAY_NAMES[song.source]) {
-            infoItems.push(`<div class="info-item"><span class="info-label">Source:</span> ${SOURCE_DISPLAY_NAMES[song.source]}</div>`);
-        }
-        if (song?.notes) {
-            infoItems.push(`<div class="info-item"><span class="info-label">Notes:</span> ${escapeHtml(song.notes)}</div>`);
-        }
+    const row = (label, valueHtml, cls = '') =>
+        `<div class="info-item ${cls}"><span class="info-label">${label}</span> <span class="info-value">${valueHtml}</span></div>`;
 
-        // Tags with voting controls
-        const songTags = song?.tags || {};
-        const tagNames = Object.keys(songTags);
-        const isLoggedIn = window.SupabaseAuth?.isLoggedIn?.() || false;
-        const tagsHtml = tagNames.length > 0
-            ? tagNames.map(tag => {
-                const category = getTagCategory(tag);
-                const displayName = formatTagName(tag);
-                return `
-                    <span class="votable-tag tag-${category}" data-tag="${escapeAttr(tag)}">
-                        <span class="tag-name">${escapeHtml(displayName)}</span>
-                        ${isLoggedIn ? `
-                            <span class="vote-chip">
-                                <button class="vote-btn vote-up" data-vote="1" title="Agree">
-                                    <svg width="14" height="16" viewBox="0 0 10 12"><path d="M5 0L10 6H7V9H3V6H0L5 0Z" fill="currentColor"/></svg>
-                                </button>
-                                <span class="vote-divider"></span>
-                                <button class="vote-btn vote-down" data-vote="-1" title="Disagree">
-                                    <svg width="14" height="16" viewBox="0 0 10 12"><path d="M5 12L0 6H3V3H7V6H10L5 12Z" fill="currentColor"/></svg>
-                                </button>
-                            </span>
-                        ` : ''}
-                    </span>
-                `;
-            }).join('')
-            : '<em class="no-tags">None</em>';
+    const isLoggedIn = window.SupabaseAuth?.isLoggedIn?.() || false;
+    const infoItems = [];
+    if (writer) infoItems.push(row('Written by', escapeHtml(writer)));
+    if (artistsList.length > 0) {
+        // Each recorder links to a YouTube search for that recording
+        // ("Song Title Bill Monroe 1947").
+        const link = (r) => `<a class="recorded-by-link" href="${escapeAttr(recordingSearchUrl(song?.title || '', r))}" target="_blank" rel="noopener">${escapeHtml(recorderLabel(r))}</a>`;
+        const maxVisible = 3;
+        const hasMore = artistsList.length > maxVisible;
+        const visibleArtists = hasMore ? artistsList.slice(0, maxVisible) : artistsList;
+        const hiddenArtists = hasMore ? artistsList.slice(maxVisible) : [];
+        const artistsHtml = hasMore
+            ? `<span class="artists-visible">${visibleArtists.map(link).join(', ')}</span><button class="artists-toggle" data-artists="expand" type="button">… <span class="artists-more">(+${hiddenArtists.length})</span></button><span class="artists-hidden hidden" data-artists="full">, ${hiddenArtists.map(link).join(', ')}</span> <button class="artists-toggle hidden" data-artists="collapse" type="button">(collapse)</button>`
+            : visibleArtists.map(link).join(', ');
+        infoItems.push(row('Recorded by', `<span class="artists-list">${artistsHtml}</span>`));
+    }
+    const bookDisplay = song?.book || null;
+    const bookUrl = song?.book_url || null;
+    if (bookDisplay) {
+        // book_url rides in on the work/index row, so it is submitter
+        // data: scheme-check it, and show plain text when it isn't a
+        // real link (escaping alone would not stop `javascript:`).
+        const bookHref = safeUrl(bookUrl);
+        infoItems.push(row('From', bookHref
+            ? `<a href="${bookHref}" target="_blank" rel="noopener">${escapeHtml(bookDisplay)}</a>`
+            : escapeHtml(bookDisplay)));
+    }
+    const key = originalDetectedKey || song?.key;
+    if (key) infoItems.push(row('Key', escapeHtml(key), 'info-key'));
 
-        container.innerHTML = `
-            <div class="info-content pill-info-content">
-                <div class="info-details">${infoItems.join('') || '<em class="no-tags">No details</em>'}</div>
-                <div class="info-tags">
-                    <div class="info-tags-label">Tags:</div>
-                    <div class="song-tags-row">
-                        <span id="song-tags-container" class="song-tags" data-song-id="${song?.id || ''}">${tagsHtml}</span>
-                        ${isLoggedIn ? `<button class="add-tags-btn" data-song-id="${song?.id || ''}">+ Add your own</button>` : ''}
-                    </div>
+    // Tags with voting controls
+    const songTags = song?.tags || {};
+    const tagNames = Object.keys(songTags);
+    const tagsHtml = tagNames.length > 0
+        ? tagNames.map(tag => {
+            const category = getTagCategory(tag);
+            const displayName = formatTagName(tag);
+            return `
+                <span class="votable-tag tag-${category}" data-tag="${escapeAttr(tag)}">
+                    <span class="tag-name">${escapeHtml(displayName)}</span>
+                    ${isLoggedIn ? `
+                        <span class="vote-chip">
+                            <button class="vote-btn vote-up" data-vote="1" title="Agree">
+                                <svg width="14" height="16" viewBox="0 0 10 12"><path d="M5 0L10 6H7V9H3V6H0L5 0Z" fill="currentColor"/></svg>
+                            </button>
+                            <span class="vote-divider"></span>
+                            <button class="vote-btn vote-down" data-vote="-1" title="Disagree">
+                                <svg width="14" height="16" viewBox="0 0 10 12"><path d="M5 12L0 6H3V3H7V6H10L5 12Z" fill="currentColor"/></svg>
+                            </button>
+                        </span>
+                    ` : ''}
+                </span>
+            `;
+        }).join('')
+        : '<em class="no-tags">None</em>';
+    infoItems.push(`
+        <div class="info-item info-tags">
+            <span class="info-label info-tags-label">Tags</span>
+            <div class="song-tags-row">
+                <span id="song-tags-container" class="song-tags" data-song-id="${song?.id || ''}">${tagsHtml}</span>
+                ${isLoggedIn ? `<button class="add-tags-btn" data-song-id="${song?.id || ''}">+ Add your own</button>` : ''}
+            </div>
+        </div>`);
+
+    if (song?.source && SOURCE_DISPLAY_NAMES[song.source]) {
+        infoItems.push(row('Source', SOURCE_DISPLAY_NAMES[song.source]));
+    }
+    if (song?.notes) infoItems.push(row('Notes', escapeHtml(song.notes)));
+
+    container.innerHTML = `
+        <div class="info-content details-content">
+            <div class="info-details">${infoItems.join('')}</div>
+            <div id="add-tags-form" class="add-tags-form hidden">
+                <div class="add-tags-header">Add your own tags (comma-separated)</div>
+                <div class="add-tags-input-row">
+                    <input type="text" id="genre-suggestion-input"
+                           placeholder="e.g., driving, lonesome, parking lot jam"
+                           maxlength="200">
+                    <button id="submit-tags-btn">Submit</button>
                 </div>
-                <div id="add-tags-form" class="add-tags-form hidden">
-                    <div class="add-tags-header">Add your own tags (comma-separated)</div>
-                    <div class="add-tags-input-row">
-                        <input type="text" id="genre-suggestion-input"
-                               placeholder="e.g., driving, lonesome, parking lot jam"
-                               maxlength="200">
-                        <button id="submit-tags-btn">Submit</button>
-                    </div>
-                    <div id="tag-preview" class="tag-preview hidden"></div>
-                    <div id="tag-error" class="tag-error hidden"></div>
-                    <div class="add-tags-note">
-                        We're learning how bluegrass players describe their music.
-                        Your suggestions help shape future categories.
-                    </div>
+                <div id="tag-preview" class="tag-preview hidden"></div>
+                <div id="tag-error" class="tag-error hidden"></div>
+                <div class="add-tags-note">
+                    We're learning how bluegrass players describe their music.
+                    Your suggestions help shape future categories.
                 </div>
             </div>
-        `;
+        </div>
+    `;
 
-        wireArtistsToggle(container);
-        wireTagControls(container, song);
-    }, { id: 'info-pill', title: 'Song info & tags', className: 'pill-wide' });
+    wireArtistsToggle(container);
+    wireTagControls(container, song);
 }
 
 function wireArtistsToggle(container) {
@@ -392,7 +436,7 @@ function parseTagInput(raw) {
     return { tags: cleanedTags.slice(0, 5), warnings };
 }
 
-/** Load and display tag vote counts (scoped to the info pill's container). */
+/** Load and display tag vote counts (scoped to the Details sheet's container). */
 async function loadTagVotes(container, songId) {
     const tagsContainer = container.querySelector('#song-tags-container');
     if (!tagsContainer || !window.SupabaseAuth) return;
@@ -560,13 +604,10 @@ function wireTagControls(container, song) {
 }
 
 // ============================================
-// EXPORT PILL
+// EXPORT
 // ============================================
 
-/**
- * Export a song: same actions the old export dropdown had.
- * Exported for the mobile bottom sheet, which reuses these actions.
- */
+/** Export a song: the actions listed in EXPORT_ACTIONS. */
 export async function handleExport(action) {
     const song = currentSong;
     // Content is fetched per song page; an export fired before the .pro
@@ -599,25 +640,11 @@ export async function handleExport(action) {
     }
 }
 
-const EXPORT_ACTIONS = [
+/** The five export actions, in the order ⋯ ▸ Export / Print lists them. */
+export const EXPORT_ACTIONS = [
     { action: 'print', label: '🖨️ Print' },
     { action: 'copy-chordpro', label: '📋 Copy ChordPro' },
     { action: 'copy-text', label: '📄 Copy Plain Text' },
     { action: 'download-chordpro', label: '⬇️ Download .pro' },
     { action: 'download-text', label: '⬇️ Download .txt' },
 ];
-
-/** Export pill for the top band (replaces the #export-dropdown markup). */
-export function buildExportPill() {
-    return pill('Export', (container, api) => {
-        container.innerHTML = EXPORT_ACTIONS.map(a =>
-            `<button class="pill-popover-item" data-action="${a.action}">${a.label}</button>`
-        ).join('');
-        container.querySelectorAll('[data-action]').forEach(btn => {
-            btn.addEventListener('click', () => {
-                api.close();
-                handleExport(btn.dataset.action);
-            });
-        });
-    }, { id: 'export-pill', title: 'Print / copy / download' });
-}

@@ -7,7 +7,8 @@
 // only later.
 import { setLead } from './helpers/lead-editor.js';
 import { test, expect } from './fixtures.js';
-import { gotoSearch, searchAndOpen, searchFor, navClick, openPill } from './helpers.js';
+import { pressTabEdit } from './helpers/tab-edit.js';
+import { gotoSearch, searchAndOpen, searchFor, navClick, openPill, goToSearch } from './helpers.js';
 import { mockSupabase } from './helpers/supabase-mock.js';
 
 // The service worker answers fetches itself, which page.route() cannot see —
@@ -88,7 +89,7 @@ test.describe('tablature', () => {
         await expect(page.locator('.tablature-container svg').first()).toBeVisible({ timeout: 20000 });
         const mods = trackModules(page);
 
-        await page.locator('.tab-edit-btn').click();
+        await pressTabEdit(page);
         await expect(page.locator('.otf-editor')).toBeVisible({ timeout: 15000 });
         expect(mods.matching(/\/js\/otf-editor\/editor\.js/)).toHaveLength(1);
         expect(mods.matching(/\/js\/tab-edit-band\.js/)).toHaveLength(1);
@@ -126,7 +127,7 @@ test.describe('song editor', () => {
     test('leaving the editor and coming back keeps working', async ({ page }) => {
         await page.goto('/#add');
         await expect(page.locator('#editor-panel')).toBeVisible({ timeout: 15000 });
-        await navClick(page, 'search');
+        await goToSearch(page);
         await expect(page.locator('#editor-panel')).toBeHidden();
         await page.goto('/#add');
         await expect(page.locator('#editor-panel')).toBeVisible();

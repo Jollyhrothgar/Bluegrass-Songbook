@@ -11,6 +11,7 @@
 // HIGHLIGHT is read from real bounding boxes against the string lines the
 // renderer drew.
 import { test, expect } from './fixtures.js';
+import { pressTabEdit } from './helpers/tab-edit.js';
 
 const WORK = '/#work/red-haired-boy/banjo';
 
@@ -19,7 +20,7 @@ const band = (page) => page.locator('#app-bottomband');
 async function openBanjoEditor(page) {
     await page.goto(WORK);
     await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
-    await band(page).locator('.tab-edit-btn').click();
+    await pressTabEdit(page);
     await page.locator('.editor-renderer .stave-row').first()
         .waitFor({ timeout: 20000 });
     await expect(page.locator('.otf-editor')).toBeVisible();

@@ -44,7 +44,6 @@ function buildControls() {
         </div>
         <button class="tab-play-btn qc-toggle-btn">▶ Play</button>
         <button class="tab-stop-btn qc-toggle-btn" disabled>⏹ Stop</button>
-        <button class="tab-edit-btn qc-toggle-btn">✏️ Edit</button>
         <label class="tab-metronome-toggle"><input type="checkbox" class="tab-metronome-checkbox"></label>
         <label class="tab-countin-toggle"><input type="checkbox" class="tab-countin-checkbox" checked></label>
         <label class="tab-loop-toggle"><input type="checkbox" class="tab-loop-checkbox"></label>
@@ -89,7 +88,7 @@ describe('tab settings sheet — phone', () => {
         const sheet = controls.querySelector('.tab-settings-sheet');
         for (const sel of ['.tab-size-group', '.qc-key-group', '.tab-repeat-group',
             '.tab-feel-group', '.tab-metronome-toggle', '.tab-countin-toggle',
-            '.tab-track-mixer', '.tab-edit-btn', '.tab-capo-indicator']) {
+            '.tab-track-mixer', '.tab-capo-indicator']) {
             expect(sheet.querySelector(sel), sel).toBeTruthy();
         }
     });
@@ -114,7 +113,7 @@ describe('tab settings sheet — phone', () => {
     it('labels every row it filled and hides the ones it did not', () => {
         const shown = [...controls.querySelectorAll('.tab-sheet-row:not(.hidden) .tab-sheet-label')]
             .map(el => el.textContent);
-        expect(shown).toEqual(['Size', 'Key', 'Layout', 'Feel', 'Practice', 'Tracks', 'Tab']);
+        expect(shown).toEqual(['Size', 'Key', 'Layout', 'Feel', 'Practice', 'Tracks']);
 
         document.body.innerHTML = '';
         const bare = buildControls();
@@ -123,7 +122,7 @@ describe('tab settings sheet — phone', () => {
         attachTabControlsSheet(bare, fakeMedia(true));
         const bareRows = [...bare.querySelectorAll('.tab-sheet-row:not(.hidden) .tab-sheet-label')]
             .map(el => el.textContent);
-        expect(bareRows).toEqual(['Size', 'Key', 'Layout', 'Practice', 'Tab']);
+        expect(bareRows).toEqual(['Size', 'Key', 'Layout', 'Practice']);
     });
 });
 
@@ -162,12 +161,6 @@ describe('tab settings sheet — open/close', () => {
         sheet.querySelector('.tab-size-down').click();
         expect(sheetApi.isOpen()).toBe(true);
         document.body.click();
-        expect(sheetApi.isOpen()).toBe(false);
-    });
-
-    it('closes when Edit hands the band to the editor', () => {
-        moreBtn.click();
-        sheet.querySelector('.tab-edit-btn').click();
         expect(sheetApi.isOpen()).toBe(false);
     });
 });
@@ -268,7 +261,7 @@ describe('container-width collapse', () => {
         observers[0].resize(NARROW_WIDTH - 1);
         expect(controls.querySelector('.tab-more-btn')).toBeTruthy();
         expect(controls.classList.contains('is-narrow-band')).toBe(true);
-        expect(controls.querySelector('.tab-settings-sheet .tab-edit-btn')).toBeTruthy();
+        expect(controls.querySelector('.tab-settings-sheet .tab-size-group')).toBeTruthy();
     });
 
     it('puts the band back when the container widens again', () => {
@@ -279,7 +272,7 @@ describe('container-width collapse', () => {
         observers[0].resize(1200);
         expect(controls.querySelector('.tab-more-btn')).toBeNull();
         expect(controls.classList.contains('is-narrow-band')).toBe(false);
-        expect(controls.querySelector(':scope > .tab-edit-btn')).toBeTruthy();
+        expect(controls.querySelector(':scope > .tab-size-group')).toBeTruthy();
     });
 
     it('an injected media query turns the observer off (one thing at a time)', () => {

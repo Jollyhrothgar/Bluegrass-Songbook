@@ -1,14 +1,13 @@
 // The chord chart view (docs/js/chord-chart-view.js) against a frozen copy of
 // the published Old Home Place chart and lyric chart (fixtures/, 2026-10-29),
 // plus small synthetic charts for the cases Old Home Place doesn't have.
-import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
-import { parseChordPro, renderSectionsHtml } from '../renderers/chordpro.js';
+import { parseChordPro } from '../renderers/chordpro.js';
 import { regroupBars } from '../chord-chart.js';
 import {
-    buildModel, chartSectionHtml, chartLineHtml, sungCaption,
-    drawPanel, setMode, getBars, setBars,
+    buildModel, chartSectionHtml, chartLineHtml, sungCaption, drawPanel, DEFAULT_LAYOUT,
 } from '../chord-chart-view.js';
 
 const FIX = resolve(process.cwd(), 'docs/js/__tests__/fixtures');
@@ -21,15 +20,15 @@ const ctx = (opts = {}) => ({ chart, sections, opts: { ...OPTS, ...opts } });
 const html = (s) => { const el = document.createElement('div'); el.innerHTML = s; return el; };
 const text = (el) => el.textContent.replace(/\s+/g, ' ').trim();
 
-beforeEach(() => { localStorage.clear(); setMode('chart'); });
+const L = (cells = 4, bars = 1, order = 'once') => ({ cells, bars, order });
 
 describe('chart section HTML', () => {
     const model = buildModel(ctx());
     const verse = model.chart.sections[0];
 
     it('draws one cell per bar by default and halves the bars with two', () => {
-        const one = html(chartSectionHtml(verse, '', 1, model));
-        const two = html(chartSectionHtml(verse, '', 2, model));
+        const one = html(chartSectionHtml(verse, '', L(4, 1), model));
+        const two = html(chartSectionHtml(verse, '', L(4, 2), model));
         expect(one.querySelectorAll('.cc-line')).toHaveLength(4);
         expect(one.querySelectorAll('.cc-bar')).toHaveLength(16);
         expect(one.querySelectorAll('.cc-bar .cc-cell')).toHaveLength(16);
@@ -37,14 +36,32 @@ describe('chart section HTML', () => {
         expect(two.querySelectorAll('.cc-bar:has(.cc-cell + .cc-cell)')).toHaveLength(8);
     });
 
+    it('wraps the cells of a section into rows of 2, 4, 6 or 8', () => {
+        const rows = (n) => [...html(chartSectionHtml(verse, '', L(n), model)).querySelectorAll('.cc-line')]
+            .map(l => l.querySelectorAll('.cc-cell').length);
+        expect(rows(4)).toEqual([4, 4, 4, 4]);      // 16 cells: the chart's own lines
+        expect(rows(2)).toEqual([2, 2, 2, 2, 2, 2, 2, 2]);
+        expect(rows(6)).toEqual([6, 6, 4]);
+        expect(rows(8)).toEqual([8, 8]);
+    });
+
+    it('keeps the carried chord honest after wrapping: each row starts from what rings', () => {
+        const lines = html(chartSectionHtml(verse, '', L(2), model)).querySelectorAll('.cc-line');
+        for (const line of [...lines].slice(1)) {
+            const first = line.querySelector('.cc-slot');
+            expect(['cc-slot', 'cc-slot cc-carry']).toContain(first.className);
+        }
+        expect(lines[0].querySelector('.cc-slot').className).toBe('cc-slot');
+    });
+
     it('gives each slot its own sub-cell: the chord or a hold, centered', () => {
-        const cell = html(chartSectionHtml(verse, '', 1, model)).querySelector('.cc-cell');
+        const cell = html(chartSectionHtml(verse, '', L(), model)).querySelector('.cc-cell');
         expect([...cell.children].map(c => c.className)).toEqual(['cc-slot', 'cc-slot cc-hold']);
         expect(cell.children[1].textContent).toBe('\\');
     });
 
     it('repeats the carried chord faintly in a line\'s first slot, only where it is a hold', () => {
-        const lines = html(chartSectionHtml(verse, '', 1, model)).querySelectorAll('.cc-line');
+        const lines = html(chartSectionHtml(verse, '', L(), model)).querySelectorAll('.cc-line');
         const first = (i) => lines[i].querySelector('.cc-slot');
         expect(first(0).className).toBe('cc-slot');                    // a chord of its own
         expect(first(1).className).toBe('cc-slot cc-carry');           // A rings on from line 1
@@ -54,7 +71,7 @@ describe('chart section HTML', () => {
     });
 
     it('draws chords through chordGlyphHtml', () => {
-        const el = html(chartSectionHtml(verse, '', 1, model));
+        const el = html(chartSectionHtml(verse, '', L(), model));
         expect(el.innerHTML).toContain('<span class="cg">C<span class="acc">♯</span><sup>7</sup></span>');
         expect(el.innerHTML).not.toContain('C#7');
     });
@@ -84,86 +101,71 @@ describe('the Key pill', () => {
     it('moves the chart to the displayed key', () => {
         const model = buildModel(ctx({ transposeTo: 'G' }));
         expect(model.chart.key).toBe('G');
-        const slots = [...html(chartSectionHtml(model.chart.sections[0], '', 1, model)).querySelectorAll('.cc-slot')];
+        const slots = [...html(chartSectionHtml(model.chart.sections[0], '', L(), model)).querySelectorAll('.cc-slot')];
         expect(slots[0].textContent).toBe('G');
         expect(text(slots[2])).toBe('B⁷'.replace('⁷', '7'));
     });
 
     it('shows Nashville numbers when the lyrics do', () => {
         const model = buildModel(ctx({ nashville: true }));
-        const slots = [...html(chartSectionHtml(model.chart.sections[0], '', 1, model)).querySelectorAll('.cc-slot')];
+        const slots = [...html(chartSectionHtml(model.chart.sections[0], '', L(), model)).querySelectorAll('.cc-slot')];
         expect(slots[0].textContent).toBe('I');
         expect(slots[2].textContent).toBe('III7');
     });
 });
 
 describe('the panel', () => {
-    const draw = (opts) => { const host = document.createElement('div'); drawPanel(host, ctx(opts)); return host; };
+    const draw = (opts, extra = {}) => { const host = document.createElement('div'); drawPanel(host, { ...ctx(opts), ...extra }); return host; };
 
-    it('starts on the chart: each section once, the form, and who drew it', () => {
+    it('starts on the chart: each section once, the form, and who drew it, with no controls of its own', () => {
         const host = draw();
         expect(host.querySelectorAll('.cc-sec')).toHaveLength(2);
         expect(text(host.querySelector('.cc-form'))).toBe('Form: Verse · Verse · Chorus · Verse · Verse · Chorus · Chorus');
         expect(text(host.querySelector('.cc-by'))).toBe('Chart by Mike Beaumier');
-        expect(host.querySelector('.cc-seg-btn[data-cc-mode="chart"]').getAttribute('aria-pressed')).toBe('true');
-        expect(host.querySelector('.cc-practice')).toBeNull();
+        expect(host.querySelector('button, .cc-head, .cc-seg')).toBeNull();
+        expect(host.querySelector('.cc-colhead')).toBeNull();
+        expect(DEFAULT_LAYOUT).toEqual({ cells: 4, bars: 1, order: 'once' });
     });
 
-    it('says so, quietly, when the form does not line up', () => {
+    it('the column carries its own head', () => {
+        expect(text(draw({}, { column: true }).querySelector('.cc-colhead'))).toBe('Chart');
+    });
+
+    it('scales with Size: the chart is em-sized from the page\'s font scale', () => {
+        expect(draw({}, { fontScale: 1.25 }).querySelector('.cc-chart').style.fontSize).toBe('1.25em');
+        expect(draw().querySelector('.cc-chart').style.fontSize).toBe('');
+    });
+
+    it('draws what Display ▸ Chart chose', () => {
+        const host = draw({}, { layout: L(2, 2) });
+        expect(host.querySelectorAll('.cc-sec:first-child .cc-line')).toHaveLength(8);
+        expect(host.querySelectorAll('.cc-sec:first-child .cc-bar')).toHaveLength(8);
+    });
+
+    it('says so, quietly, when the form does not line up and the order is As sung', () => {
         const host = document.createElement('div');
-        drawPanel(host, { chart, sections: sections.slice(0, 3), opts: OPTS });
+        const short = { chart, sections: sections.slice(0, 3), opts: OPTS };
+        drawPanel(host, { ...short, layout: L(4, 1, 'sung') });
         expect(text(host.querySelector('.cc-note'))).toContain('7 sections');
+        drawPanel(host, short);
+        expect(host.querySelector('.cc-note')).toBeNull();
     });
 
-    it('toggles are buttons that redraw the panel and remember the bars', () => {
-        const host = draw();
-        host.querySelector('[data-cc-bars="2"]').click();
-        expect(getBars()).toBe(2);
-        expect(host.querySelectorAll('.cc-chart .cc-bar')).toHaveLength(16);   // 32 cells
-        host.querySelector('[data-cc-mode="practice"]').click();
-        expect(host.querySelectorAll('.cc-psec')).toHaveLength(7);
-        expect(draw().querySelectorAll('.cc-psec')).toHaveLength(7);            // the mode is for this page load
-        host.querySelector('[data-cc-mode="chart"]').click();
-        expect(host.querySelectorAll('.cc-psec')).toHaveLength(0);
-        setBars(1);
-        expect(getBars()).toBe(1);
-    });
-
-    it('practice: 7 sections in the lyrics\' order, each chart line level with its lyric line', () => {
-        setMode('practice');
-        const host = draw();
-        const secs = host.querySelectorAll('.cc-psec');
-        expect([...secs].map(s => s.querySelector('.cc-plabel span').textContent))
+    it('As sung: 7 sections in the lyrics\' order, named as the lyrics name them, counted, without lyrics', () => {
+        const host = draw({}, { layout: L(4, 1, 'sung') });
+        const secs = [...host.querySelectorAll('.cc-sec')];
+        expect(secs.map(s => s.querySelector('.cc-cap b').textContent))
             .toEqual(['Verse 1', 'Verse 2', 'Chorus', 'Verse 3', 'Verse 4', 'Chorus', 'Chorus']);
-        const rows = secs[0].querySelectorAll('.cc-prow');
-        expect(rows).toHaveLength(4);
-        rows.forEach(r => {
-            expect(r.querySelectorAll('.cc-plyric .song-line')).toHaveLength(1);
-            expect(r.querySelectorAll('.cc-pchart .cc-line')).toHaveLength(1);
-        });
-        // no notes on the lyrics (Mike, 2026-10-29), and no playback yet
-        expect(host.querySelector('.cc-mis')).toBeNull();
-        expect(host.querySelector('.now, .cc-playing, .cc-transport')).toBeNull();
+        expect(secs.map(s => s.querySelector('.cc-cap span').textContent))
+            .toEqual(['1 of 7', '2 of 7', '3 of 7', '4 of 7', '5 of 7', '6 of 7', '7 of 7']);
+        expect(secs[0].querySelectorAll('.cc-line')).toHaveLength(4);
+        expect(host.querySelector('.song-line, .cc-form, .cc-prow, .cc-psec')).toBeNull();
     });
 
-    it('practice: the chart section beside the lyric section when the line counts differ', () => {
-        setMode('practice');
-        const lyric = parseChordPro('{start_of_verse: V}\n[G]one [C]two\n[G]three [D]four\n{end_of_verse}').sections;
-        const syn = { key: 'G', meter: 'duple', form: ['V'], sections: [
-            { name: 'V', repeat: 1, lines: [[{ slots: ['G', null] }, { slots: ['C', null] }]] }] };
+    it('As sung follows the chart\'s own form when it does not line up with the lyrics', () => {
         const host = document.createElement('div');
-        drawPanel(host, { chart: syn, sections: lyric, opts: { key: 'G', transposeTo: 'G' } });
-        const rows = host.querySelectorAll('.cc-prow');
-        expect(rows).toHaveLength(1);
-        expect(rows[0].querySelectorAll('.cc-plyric .song-line')).toHaveLength(2);
-        expect(rows[0].querySelectorAll('.cc-pchart .cc-line')).toHaveLength(1);
-    });
-
-    it('practice follows the chart\'s own form when it does not line up with the lyrics', () => {
-        setMode('practice');
-        const host = document.createElement('div');
-        drawPanel(host, { chart, sections: sections.slice(0, 3), opts: OPTS });
-        expect(host.querySelectorAll('.cc-psec')).toHaveLength(7);
-        expect(host.querySelectorAll('.cc-plyric .song-line')).toHaveLength(0);
+        drawPanel(host, { chart, sections: sections.slice(0, 3), opts: OPTS, layout: L(4, 1, 'sung') });
+        expect([...host.querySelectorAll('.cc-cap b')].map(b => b.textContent))
+            .toEqual(['Verse', 'Verse', 'Chorus', 'Verse', 'Verse', 'Chorus', 'Chorus']);
     });
 });

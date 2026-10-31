@@ -1,21 +1,35 @@
-// E2E tests for export actions. The old #export-btn/#export-dropdown,
-// #copy-btn and #download-btn are gone — all export actions (print, copy,
-// download) live in the top band's Export pill (#export-pill).
+// E2E tests for export actions. All export actions (print, copy, download)
+// live in the song page's ⋯ menu: This song ▸ Export / Print, which opens in
+// place to list all five. (The list view keeps its own Export pill.)
 import { test, expect } from './fixtures.js';
 import { gotoSearch, searchAndOpen, searchFor, navClick, openPill } from './helpers.js';
 
-test.describe('Export Pill', () => {
+/** ⋯ ▸ Export / Print, opened; returns the group of five actions. */
+async function openExport(page) {
+    await page.locator('#topbar-overflow-btn').click();
+    await page.locator('#export-menu-btn').click();
+    const group = page.locator('#export-menu-btn + .menu-sub');
+    await expect(group).toBeVisible();
+    return group;
+}
+
+test.describe('Export / Print (⋯ menu)', () => {
     test.beforeEach(async ({ page }) => {
         await gotoSearch(page);
         await searchAndOpen(page, 'old home place');
     });
 
-    test('Export pill is visible in the top band on song pages', async ({ page }) => {
-        await expect(page.locator('#export-pill')).toBeVisible();
+    test('Export / Print is in ⋯, and the band carries no Export pill any more', async ({ page }) => {
+        await expect(page.locator('#export-pill')).toHaveCount(0);
+        await page.locator('#topbar-overflow-btn').click();
+        const row = page.locator('#export-menu-btn');
+        await expect(row).toBeVisible();
+        await expect(row).toHaveAttribute('aria-expanded', 'false');
     });
 
-    test('Export pill lists all five actions', async ({ page }) => {
-        const popover = await openPill(page, 'export-pill');
+    test('Export / Print lists all five actions', async ({ page }) => {
+        const popover = await openExport(page);
+        await expect(page.locator('#export-menu-btn')).toHaveAttribute('aria-expanded', 'true');
 
         await expect(popover.locator('[data-action="print"]')).toBeVisible();
         await expect(popover.locator('[data-action="copy-chordpro"]')).toBeVisible();
@@ -29,7 +43,7 @@ test.describe('Export Pill', () => {
     test('copy as ChordPro writes the song source to the clipboard', async ({ page, context }) => {
         await context.grantPermissions(['clipboard-read', 'clipboard-write']);
 
-        const popover = await openPill(page, 'export-pill');
+        const popover = await openExport(page);
         await popover.locator('[data-action="copy-chordpro"]').click();
 
         const clipboardText = await page.evaluate(() => navigator.clipboard.readText());
@@ -40,7 +54,7 @@ test.describe('Export Pill', () => {
     test('copy as plain text strips chords and directives', async ({ page, context }) => {
         await context.grantPermissions(['clipboard-read', 'clipboard-write']);
 
-        const popover = await openPill(page, 'export-pill');
+        const popover = await openExport(page);
         await popover.locator('[data-action="copy-text"]').click();
 
         const clipboardText = await page.evaluate(() => navigator.clipboard.readText());
@@ -50,7 +64,7 @@ test.describe('Export Pill', () => {
     });
 
     test('download .pro triggers a file download', async ({ page }) => {
-        const popover = await openPill(page, 'export-pill');
+        const popover = await openExport(page);
 
         const downloadPromise = page.waitForEvent('download');
         await popover.locator('[data-action="download-chordpro"]').click();
@@ -59,24 +73,32 @@ test.describe('Export Pill', () => {
         expect(download.suggestedFilename()).toMatch(/\.pro$/);
     });
 
+    test('download .txt triggers a file download', async ({ page }) => {
+        const popover = await openExport(page);
+
+        const downloadPromise = page.waitForEvent('download');
+        await popover.locator('[data-action="download-text"]').click();
+        expect((await downloadPromise).suggestedFilename()).toMatch(/\.txt$/);
+    });
+
     test('print action triggers window.print', async ({ page }) => {
         let printCalled = false;
         await page.exposeFunction('trackPrint', () => { printCalled = true; });
         await page.evaluate(() => { window.print = () => window.trackPrint(); });
 
-        const popover = await openPill(page, 'export-pill');
+        const popover = await openExport(page);
         await popover.locator('[data-action="print"]').click();
 
         expect(printCalled).toBe(true);
     });
 
-    test('clicking outside closes the export popover', async ({ page }) => {
-        const popover = await openPill(page, 'export-pill');
-        await expect(popover).toBeVisible();
+    test('clicking outside closes the menu', async ({ page }) => {
+        await openExport(page);
+        await expect(page.locator('#topbar-overflow-menu')).toBeVisible();
 
         await page.locator('.song-content').click();
 
-        await expect(popover).toBeHidden();
+        await expect(page.locator('#topbar-overflow-menu')).toBeHidden();
     });
 });
 

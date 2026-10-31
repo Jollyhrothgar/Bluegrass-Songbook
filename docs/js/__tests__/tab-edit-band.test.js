@@ -21,6 +21,7 @@ function makeControls() {
     const controls = document.createElement('div');
     controls.className = 'tab-controls';
     controls.innerHTML = `
+        <button class="tab-view-btn dock-btn">View</button>
         <div class="qc-group tab-size-group">
             <button class="tab-size-down qc-btn">−</button>
             <span class="qc-label">Aa</span>
@@ -38,7 +39,6 @@ function makeControls() {
         </div>
         <button class="tab-play-btn qc-toggle-btn">▶ Play</button>
         <button class="tab-stop-btn qc-toggle-btn" disabled>⏹ Stop</button>
-        <button class="tab-edit-btn qc-toggle-btn">✏️ Edit</button>
         <label class="tab-metronome-toggle">
             <input type="checkbox" class="tab-metronome-checkbox">
         </label>
@@ -106,16 +106,16 @@ describe('bindBandToEditor', () => {
         editor = makeEditor();
     });
 
-    it('puts the session buttons where ✏️ Edit was — the band keeps its shape', () => {
+    it('puts the session buttons right after Stop — the band keeps its shape', () => {
         const actions = document.createElement('span');
         actions.className = 'tab-edit-bar';
         actions.textContent = 'Submit correction';
         band = bindBandToEditor(controls, editor, { actions });
 
-        expect(controls.querySelector('.tab-edit-btn')).toBeNull();
         const slot = controls.querySelector('.tab-edit-actions-slot');
         expect(slot).not.toBeNull();
         expect(slot.contains(actions)).toBe(true);
+        expect(slot.previousElementSibling).toBe(controls.querySelector('.tab-stop-btn'));
         // …and the other controls are still there, in the same band
         expect(controls.querySelector('.tab-play-btn')).not.toBeNull();
         expect(controls.querySelector('.tab-tempo-display')).not.toBeNull();
@@ -212,6 +212,9 @@ describe('bindBandToEditor', () => {
             .toBe(DISABLED_REASONS.repeats);
         expect(controls.querySelector('.tab-feel-group .pill-mode-btn').disabled).toBe(true);
         expect(controls.querySelector('.track-checkbox').disabled).toBe(true);
+        // View would leave the editor behind: ✓ Done is the way out
+        expect(controls.querySelector('.tab-view-btn').disabled).toBe(true);
+        expect(controls.querySelector('.tab-view-btn').title).toBe(DISABLED_REASONS.view);
 
         // …but none of them are gone
         expect(controls.querySelector('.qc-key-group')).not.toBeNull();
@@ -234,7 +237,7 @@ describe('bindBandToEditor', () => {
     });
 });
 
-// Phones move ✏️ Edit into the ⚙ settings sheet (tab-controls-sheet.js).
+// Phones move most controls into the ⚙ settings sheet (tab-controls-sheet.js).
 // The session's buttons must NOT follow it in there: Submit and Cancel
 // behind a disclosure is a button nobody finds.
 describe('bindBandToEditor on a phone band', () => {
@@ -245,7 +248,7 @@ describe('bindBandToEditor on a phone band', () => {
         const more = document.createElement('button');
         more.className = 'tab-more-btn';
         controls.append(more, sheet);
-        sheet.appendChild(controls.querySelector('.tab-edit-btn'));
+        sheet.appendChild(controls.querySelector('.tab-size-group'));
 
         const actions = document.createElement('span');
         actions.className = 'tab-edit-bar';
@@ -255,6 +258,5 @@ describe('bindBandToEditor on a phone band', () => {
         expect(slot.closest('.tab-settings-sheet')).toBeNull();
         expect(slot.parentElement).toBe(controls);
         expect(slot.contains(actions)).toBe(true);
-        expect(controls.querySelector('.tab-edit-btn')).toBeNull();
     });
 });

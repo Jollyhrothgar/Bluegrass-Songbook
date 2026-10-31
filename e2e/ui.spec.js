@@ -3,7 +3,7 @@
 // The old sidebar/hamburger and fullscreen-header tests died with those
 // surfaces in the redesign.
 import { test, expect } from './fixtures.js';
-import { gotoSearch, searchAndOpen, openPill } from './helpers.js';
+import { gotoSearch, searchAndOpen, openDock } from './helpers.js';
 
 test.describe('Theme', () => {
     test.beforeEach(async ({ page }) => {
@@ -54,31 +54,85 @@ test.describe('Auto-hiding chrome (song page)', () => {
         await searchAndOpen(page, 'blue moon kentucky');
     });
 
-    test('scrolling down hides the top band; scrolling up reveals it', async ({ page }) => {
+    const scrollDown = async (page) => {
         // Repeated small scrolls so the shell's rAF delta logic sees
         // downward motion (a single jump can land in one frame)
         for (let i = 0; i < 6; i++) {
             await page.mouse.wheel(0, 120);
             await page.waitForTimeout(50);
         }
+    };
+
+    test('is off by default: scrolling down leaves both docks where they are (G19b)', async ({ page }) => {
+        await scrollDown(page);
+        await expect(page.locator('body')).not.toHaveClass(/chrome-hidden/);
+        await expect(page.locator('#app-topbar')).toBeInViewport();
+        await expect(page.locator('#app-bottomband')).toBeInViewport();
+    });
+
+    test('Display ▸ Auto-hide controls hides both docks on scroll down; scrolling up reveals them', async ({ page }) => {
+        const sheet = await openDock(page, 'display');
+        await sheet.locator('#pill-autohide').check();
+        await page.keyboard.press('Escape');
+
+        await scrollDown(page);
         await expect(page.locator('body')).toHaveClass(/chrome-hidden/);
+        const band = await page.locator('#app-bottomband').boundingBox();
+        expect(band.y).toBeGreaterThanOrEqual(480 - 6);   // all but the peek strip is off the screen
+        const top = await page.locator('#app-topbar').boundingBox();
+        expect(top.y + top.height).toBeLessThanOrEqual(6);
 
         for (let i = 0; i < 3; i++) {
             await page.mouse.wheel(0, -120);
             await page.waitForTimeout(50);
         }
         await expect(page.locator('body')).not.toHaveClass(/chrome-hidden/);
+        await expect(page.locator('#app-bottomband')).toBeInViewport();
     });
 
+    test('the choice is remembered', async ({ page }) => {
+        const sheet = await openDock(page, 'display');
+        await sheet.locator('#pill-autohide').check();
+        await page.keyboard.press('Escape');
+        await page.reload();
+        await expect(page.locator('#dock-display-btn')).toBeVisible({ timeout: 15000 });
+        await scrollDown(page);
+        await expect(page.locator('body')).toHaveClass(/chrome-hidden/);
+    });
+
+    // Mike, 2026-10-30: turned on from a lyric page, the bands hid on a tab
+    // page that has no Display, so nothing there could turn it off. Bands hide
+    // only where the switch is (#dock-display-btn): not on a tab or notation.
+    for (const [what, url, ready] of [
+        ['a tab', '/#work/foggy-mountain-breakdown/banjo-tab', '.tab-play-btn'],
+        ['ABC notation', '/#work/arkansas-traveler-1', '#abc-play-btn'],
+    ]) {
+        test(`on ${what}, with no Display to turn it off, the bands never hide`, async ({ page }) => {
+            const sheet = await openDock(page, 'display');
+            await sheet.locator('#pill-autohide').check();
+            await page.keyboard.press('Escape');
+
+            await page.goto(url);
+            await expect(page.locator(ready).first()).toBeVisible({ timeout: 20000 });
+            await expect(page.locator('#dock-display-btn')).toHaveCount(0);
+            await scrollDown(page);
+            const top = await page.locator('#app-topbar').boundingBox();
+            expect(top.y).toBeGreaterThanOrEqual(0);
+            const band = await page.locator('#app-bottomband').boundingBox();
+            expect(band.y + band.height).toBeLessThanOrEqual(480 + 1);
+        });
+    }
+
     test('song content stays visible while chrome is hidden', async ({ page }) => {
-        for (let i = 0; i < 6; i++) {
-            await page.mouse.wheel(0, 120);
-            await page.waitForTimeout(50);
-        }
+        const sheet = await openDock(page, 'display');
+        await sheet.locator('#pill-autohide').check();
+        await page.keyboard.press('Escape');
+        await scrollDown(page);
+        await expect(page.locator('body')).toHaveClass(/chrome-hidden/);
         await expect(page.locator('.song-body')).toBeVisible();
     });
 
-    test('Edit lives in the title row (Focus button is gone)', async ({ page }) => {
+    test('Edit lives in the top band (Focus button is gone)', async ({ page }) => {
         await expect(page.locator('#focus-btn')).toHaveCount(0);
         const editBtn = page.locator('#edit-song-btn');
         await expect(editBtn).toBeVisible();
@@ -114,11 +168,12 @@ test.describe('Overflow Menu', () => {
         await expect(page.locator('#flag-modal')).toBeHidden();
     });
 
-    test('song page overflow has Report issue → feedback modal', async ({ page }) => {
+    test('song page ⋯ has Report a problem → feedback modal', async ({ page }) => {
         await gotoSearch(page);
         await searchAndOpen(page, 'old home place', /old home place/i);
 
         await page.locator('#topbar-overflow-btn').click();
+        await page.locator('#report-menu-btn').click();
         const flagItem = page.locator('#flag-btn');
         await expect(flagItem).toBeVisible();
         await flagItem.click();
@@ -128,11 +183,12 @@ test.describe('Overflow Menu', () => {
         await expect(page.locator('#flag-song-context')).toContainText(/old home place/i);
     });
 
-    test('song page overflow offers every visitor a copyright concern email', async ({ page }) => {
+    test('song page ⋯ offers every visitor a copyright concern email', async ({ page }) => {
         await gotoSearch(page);
         await searchAndOpen(page, 'old home place', /old home place/i);
 
         await page.locator('#topbar-overflow-btn').click();
+        await page.locator('#report-menu-btn').click();
         const item = page.locator('#copyright-btn');
         await expect(item).toBeVisible();
         await expect(item).toContainText('Copyright concern');
@@ -173,18 +229,19 @@ test.describe('View Preferences', () => {
         await gotoSearch(page);
         await searchAndOpen(page, 'blue moon kentucky');
 
-        // Toggle Compact in the Display pill
-        const popover = await openPill(page, 'display-pill');
+        // Toggle Compact in the Display sheet
+        const popover = await openDock(page, 'display');
         await popover.locator('#pill-compact').click();
         await page.waitForTimeout(200);
+        await page.keyboard.press('Escape');
 
         // Navigate back and open another song
         await page.goBack();
         await page.waitForTimeout(200);
         await searchAndOpen(page, 'wagon wheel');
 
-        // The Display pill remembers the setting
-        const popover2 = await openPill(page, 'display-pill');
+        // The Display sheet remembers the setting
+        const popover2 = await openDock(page, 'display');
         await expect(popover2.locator('#pill-compact')).toBeChecked();
     });
 });

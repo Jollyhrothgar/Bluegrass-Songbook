@@ -197,6 +197,14 @@ export let seenChordPatterns = new Set();
 export let showSectionLabels = true;
 export let showChordProSource = false;
 export let fontSizeLevel = 0;  // -2 to +2
+// The chord chart's layout (G19b, Display ▸ Chart) and the song page's
+// remembered view choices
+export const CHART_CELLS = [2, 4, 6, 8];   // cells per row
+export let chartCells = 4;
+export let chartBars = 1;                  // cells a printed bar holds: 1 or 2
+export let chartOrder = 'once';            // 'once' (each section once) | 'sung' (unrolled in the sung order)
+export let chartBeside = true;             // wide screens: the chart is a column beside the lyrics
+export let autoHideControls = false;       // both docks hide while scrolling down
 
 // Save view preferences to localStorage
 function saveViewPrefs() {
@@ -206,7 +214,12 @@ function saveViewPrefs() {
         twoColumnMode,
         chordDisplayMode,
         showSectionLabels,
-        fontSizeLevel
+        fontSizeLevel,
+        chartCells,
+        chartBars,
+        chartOrder,
+        chartBeside,
+        autoHideControls
     };
     localStorage.setItem('songbook-view-prefs', JSON.stringify(prefs));
 }
@@ -215,15 +228,21 @@ function saveViewPrefs() {
 export function loadViewPrefs() {
     try {
         const saved = localStorage.getItem('songbook-view-prefs');
-        if (saved) {
-            const prefs = JSON.parse(saved);
-            if (prefs.compactMode !== undefined) compactMode = prefs.compactMode;
-            if (prefs.nashvilleMode !== undefined) nashvilleMode = prefs.nashvilleMode;
-            if (prefs.twoColumnMode !== undefined) twoColumnMode = prefs.twoColumnMode;
-            if (prefs.chordDisplayMode !== undefined) chordDisplayMode = prefs.chordDisplayMode;
-            if (prefs.showSectionLabels !== undefined) showSectionLabels = prefs.showSectionLabels;
-            if (prefs.fontSizeLevel !== undefined) fontSizeLevel = prefs.fontSizeLevel;
-        }
+        const prefs = saved ? JSON.parse(saved) : {};
+        if (prefs.compactMode !== undefined) compactMode = prefs.compactMode;
+        if (prefs.nashvilleMode !== undefined) nashvilleMode = prefs.nashvilleMode;
+        if (prefs.twoColumnMode !== undefined) twoColumnMode = prefs.twoColumnMode;
+        if (prefs.chordDisplayMode !== undefined) chordDisplayMode = prefs.chordDisplayMode;
+        if (prefs.showSectionLabels !== undefined) showSectionLabels = prefs.showSectionLabels;
+        if (prefs.fontSizeLevel !== undefined) fontSizeLevel = prefs.fontSizeLevel;
+        if (CHART_CELLS.includes(prefs.chartCells)) chartCells = prefs.chartCells;
+        if (prefs.chartBars === 1 || prefs.chartBars === 2) chartBars = prefs.chartBars;
+        else if (localStorage.getItem('bgb-chart-bars') === '2') chartBars = 2;   // G18b2 kept it under its own key
+        if (prefs.chartOrder === 'once' || prefs.chartOrder === 'sung') chartOrder = prefs.chartOrder;
+        if (typeof prefs.chartBeside === 'boolean') chartBeside = prefs.chartBeside;
+        if (typeof prefs.autoHideControls === 'boolean') autoHideControls = prefs.autoHideControls;
+        const abc = parseFloat(localStorage.getItem(ABC_SCALE_KEY));
+        if (abc >= ABC_SCALE_MIN && abc <= ABC_SCALE_MAX) abcScale = abc;
     } catch (e) {
         console.error('Failed to load view preferences:', e);
     }
@@ -238,6 +257,16 @@ export function addSeenChordPattern(pattern) { seenChordPatterns.add(pattern); }
 export function setShowSectionLabels(value) { showSectionLabels = value; saveViewPrefs(); notifyChange('showSectionLabels'); }
 export function setShowChordProSource(value) { showChordProSource = value; notifyChange('showChordProSource'); }
 export function setFontSizeLevel(value) { fontSizeLevel = value; saveViewPrefs(); notifyChange('fontSizeLevel'); }
+export function setChartCells(value) { chartCells = value; saveViewPrefs(); notifyChange('chartCells'); }
+export function setChartBars(value) { chartBars = value === 2 ? 2 : 1; saveViewPrefs(); notifyChange('chartBars'); }
+export function setChartOrder(value) { chartOrder = value === 'sung' ? 'sung' : 'once'; saveViewPrefs(); notifyChange('chartOrder'); }
+/** Returns whether it changed; the caller redraws, so nothing subscribes to it. */
+export function setChartBeside(value) {
+    if (chartBeside === !!value) return false;
+    chartBeside = !!value; saveViewPrefs();
+    return true;
+}
+export function setAutoHideControls(value) { autoHideControls = !!value; saveViewPrefs(); notifyChange('autoHideControls'); }
 
 // Font size multipliers (smaller increments, wider range)
 export const FONT_SIZES = {
@@ -289,7 +318,10 @@ export let abcjsRendered = null;           // Reference to ABCJS rendered object
 export let currentAbcContent = null;       // Current ABC content for re-rendering
 export let abcTempoBpm = 120;              // Playback tempo in BPM (60 - 240)
 export let abcTranspose = 0;               // Semitones to transpose (-6 to +6)
-export let abcScale = 1.0;                 // Size scale (0.7 - 1.5)
+export let abcScale = 1.0;                 // Size scale (0.7 - 1.5), remembered separately from the lyric text size
+export const ABC_SCALE_KEY = 'bgb-abc-scale';
+export const ABC_SCALE_MIN = 0.7;
+export const ABC_SCALE_MAX = 1.5;
 export let abcSynth = null;                // Persistent synth instance
 export let abcTimingCallbacks = null;      // Persistent timing callbacks
 export let abcIsPlaying = false;           // Playback state for toggle button
@@ -300,7 +332,10 @@ export function setAbcjsRendered(value) { abcjsRendered = value; }
 export function setCurrentAbcContent(value) { currentAbcContent = value; }
 export function setAbcTempoBpm(value) { abcTempoBpm = value; }
 export function setAbcTranspose(value) { abcTranspose = value; }
-export function setAbcScale(value) { abcScale = value; }
+export function setAbcScale(value) {
+    abcScale = value;
+    try { localStorage.setItem(ABC_SCALE_KEY, String(value)); } catch { /* private mode */ }
+}
 export function setAbcSynth(value) { abcSynth = value; }
 export function setAbcTimingCallbacks(value) { abcTimingCallbacks = value; }
 export function setAbcIsPlaying(value) { abcIsPlaying = value; }
@@ -553,6 +588,11 @@ const stateGetters = {
     showSectionLabels: () => showSectionLabels,
     showChordProSource: () => showChordProSource,
     fontSizeLevel: () => fontSizeLevel,
+    chartCells: () => chartCells,
+    chartBars: () => chartBars,
+    chartOrder: () => chartOrder,
+    chartBeside: () => chartBeside,
+    autoHideControls: () => autoHideControls,
 
     // Tablature
     activePartTab: () => activePartTab,
@@ -623,6 +663,11 @@ const stateSetters = {
     showSectionLabels: setShowSectionLabels,
     showChordProSource: setShowChordProSource,
     fontSizeLevel: setFontSizeLevel,
+    chartCells: setChartCells,
+    chartBars: setChartBars,
+    chartOrder: setChartOrder,
+    chartBeside: setChartBeside,
+    autoHideControls: setAutoHideControls,
 
     // Tablature
     activePartTab: setActivePartTab,

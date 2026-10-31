@@ -168,6 +168,18 @@ export function compareSections(chart, alignment, opts = {}) {
 // ---------------------------------------------------------------------------
 
 /**
+ * A copy of the section whose cells run on across its lines and wrap into
+ * rows of `perRow` (Display ▸ Chart ▸ Cells per row). The last row keeps
+ * whatever is left. Feed the result to regroupBars / carriedChords.
+ */
+export function wrapCells(section, perRow) {
+    const cells = section.lines.flat();
+    const lines = [];
+    for (let i = 0; i < cells.length; i += perRow) lines.push(cells.slice(i, i + perRow));
+    return { ...section, lines };
+}
+
+/**
  * Regroup a chart section's cells into bars of 1 or 2 cells. Pairing restarts
  * at each chart line; an odd cell at the end of a line is a half bar.
  * -> lines of bars, a bar being {cells, half}.

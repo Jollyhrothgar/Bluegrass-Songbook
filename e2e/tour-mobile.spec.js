@@ -1,11 +1,11 @@
 // The feature tour on a phone (mobile project, 390x844). A Google visitor on
-// a phone lands on a song page, whose band is cut to back · logo · Lists · ⋯:
-// the Tour button has to fit there, and the steps whose control lives
-// elsewhere on a phone have to find it (tab Edit: the ⚙ sheet). The editor
+// a phone lands on a song page, whose thin band is back · logo · search ·
+// Edit · ⋯: ⋯ glows there (no room, and no need, for a Tour button), the tour
+// starts from ⋯ ▸ Go to, and the steps have to find their controls. The editor
 // demo has to work with the editor's DOCKED parts — the section bar and the
 // chord picker sit at the bottom of the screen — and never raise a keyboard.
 import { test, expect } from './fixtures.js';
-import { songReady, here, ringAround, cardClear, next, leadText } from './helpers/tour.js';
+import { songReady, here, ringAround, cardClear, next, leadText, startTourFromMenu } from './helpers/tour.js';
 
 /** Once the card has settled, its bottom is above the top of `selector`. */
 async function cardAbove(page, selector) {
@@ -17,17 +17,18 @@ async function cardAbove(page, selector) {
     expect(gap).toBeGreaterThanOrEqual(0);
 }
 
-test('phone: the button fits a song page band and the tour finds every control', async ({ page }) => {
+test('phone: ⋯ glows on the thin band and the tour finds every control', async ({ page }) => {
     test.setTimeout(120000);
     await page.goto('/songs/old-home-place/');
     await songReady(page);
 
-    const btn = page.locator('#topbar-tour');
-    await expect(btn).toBeVisible();
+    // First visit: no Tour button on the thin band, ⋯ glows instead
+    await expect(page.locator('#topbar-tour')).toBeHidden();
+    await expect(page.locator('#topbar-overflow-btn')).toHaveClass(/tour-invite/);
     // Nothing in the band overlaps or spills
     const band = await page.evaluate(() => {
         const bar = document.getElementById('app-topbar');
-        const boxes = [...bar.querySelectorAll('.topbar-back, .topbar-brand, .topbar-action-btn, .topbar-tour-btn, #topbar-overflow-btn')]
+        const boxes = [...bar.querySelectorAll('.topbar-back, .topbar-brand, #topbar-search, .topbar-action-btn, #topbar-overflow-btn')]
             .map(el => el.getBoundingClientRect()).filter(r => r.width > 0)
             .sort((a, b) => a.left - b.left);
         const overlap = boxes.some((r, i) => i > 0 && r.left < boxes[i - 1].right - 1);
@@ -36,7 +37,8 @@ test('phone: the button fits a song page band and the tour finds every control',
     expect(band.overlap).toBe(false);
     expect(band.spill).toBeLessThanOrEqual(0);
 
-    await btn.click();
+    // The tour is in ⋯ ▸ Go to, in the sheet
+    await startTourFromMenu(page);
     // Search first: the box, then a line of the words typed in finds the song
     await ringAround(page, '#search-input');
     await cardClear(page, '#search-input');
@@ -51,11 +53,11 @@ test('phone: the button fits a song page band and the tour finds every control',
     await next(page);
     await expect.poll(() => here(page)).toBe('/songs/old-home-place/');
     await songReady(page);
-    await ringAround(page, '#key-pill');
-    await cardClear(page, '#key-pill');
+    await ringAround(page, '#dock-key-btn');
+    await cardClear(page, '#dock-key-btn');
     await next(page);
-    await ringAround(page, '#list-picker-btn');
-    await cardClear(page, '#list-picker-btn');
+    await ringAround(page, '#topbar-overflow-btn');
+    await cardClear(page, '#topbar-overflow-btn');
     await next(page);
     await ringAround(page, '#edit-song-btn');
     expect(await here(page)).toBe('/songs/old-home-place/');
@@ -83,10 +85,9 @@ test('phone: the button fits a song page band and the tour finds every control',
     await cardClear(page, '.tab-play-btn');
     await expect(page.locator('#editor-leave-modal')).toHaveCount(0);
 
-    // Edit has moved into the ⚙ sheet on a phone
+    // Edit is the top band's, on a phone as anywhere
     await next(page);
-    await ringAround(page, '.tab-more-btn');
-    await expect(page.locator('.tour-body')).toContainText('On a phone, Edit is under ⚙.');
+    await ringAround(page, '#edit-song-btn');
 
     // Your own .tef: nothing to drag on a phone, so the copy names ⋯ ▸ Tab editor
     await next(page);
@@ -98,8 +99,8 @@ test('phone: the button fits a song page band and the tour finds every control',
     await expect.poll(() => here(page)).toBe('/songs/old-home-place/');
     await expect(page.locator('.tour-card')).toHaveCount(0);
 
-    // From now on it is the FIRST thing in ⋯, not under the song's five items
+    // From now on ⋯ stops glowing, and the tour stays in ⋯ ▸ Go to
+    await expect(page.locator('#topbar-overflow-btn')).not.toHaveClass(/tour-invite/);
     await page.click('#topbar-overflow-btn');
-    await expect(page.locator('#topbar-overflow-menu .pill-popover-item').first())
-        .toHaveText('✨ Take the tour');
+    await expect(page.locator('#overflow-tour')).toBeVisible();
 });

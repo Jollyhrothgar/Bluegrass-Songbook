@@ -16,16 +16,18 @@ import {
     originalDetectedMode, setOriginalDetectedMode,
     historyInitialized,
     // ABC notation state
-    showAbcNotation, setShowAbcNotation,
+    showAbcNotation,
     abcjsRendered, setAbcjsRendered,
     currentAbcContent, setCurrentAbcContent,
     abcTempoBpm, setAbcTempoBpm,
     abcTranspose,
-    abcScale, setAbcScale,
+    abcScale, setAbcScale, ABC_SCALE_MIN, ABC_SCALE_MAX,
     abcSynth, setAbcSynth,
     abcTimingCallbacks, setAbcTimingCallbacks,
     abcIsPlaying, setAbcIsPlaying,
     abcPlaybackSession, incrementAbcPlaybackSession,
+    // The chord chart's layout (Display ▸ Chart) and where it sits
+    chartCells, chartBars, chartOrder, chartBeside,
     // Navigation state
     listContext, setListContext,
     allSongs
@@ -40,6 +42,7 @@ import { parseChordPro, renderSectionsHtml } from './renderers/chordpro.js';
 import { getSongMetadata, updateSongMetadata } from './lists.js';
 import { endSongView } from './analytics.js';
 import { setBottomBand } from './shell.js';
+import { sizeControl, readingDock } from './song-dock.js';
 import { openWork } from './work-view.js';
 
 // DOM element references (set by init)
@@ -66,6 +69,14 @@ export const CHART_WIDE_MQ = `(min-width: ${CHART_WIDE_WIDTH}px)`;
 export function chartIsWide() {
     return typeof window !== 'undefined' && !!window.matchMedia?.(CHART_WIDE_MQ).matches;
 }
+
+// The dock (G19b). work-view.js knows the song's parts and versions, so it
+// supplies the controls that need them, and this module asks for the dock
+// each time it renders a part:
+//   reading({hybrid})  the lyric sheet's and the chart's dock, in full
+//   view({hybrid})     just the View control (the ABC dock's last piece)
+let dockProvider = null;
+export function setDockProvider(provider) { dockProvider = provider; }
 
 // ChordPro parsing/section rendering lives in the shared renderer module.
 // Re-exported so existing importers (tests, work-view) keep working.
@@ -376,6 +387,11 @@ export function initKeyState(song, chordpro, isInitialRender = false) {
     }
 }
 
+/** Display ▸ Chart's choices, as the chart view takes them. */
+function chartLayout() {
+    return { cells: chartCells, bars: chartBars, order: chartOrder };
+}
+
 /** The display options every lyric-chart draw uses (renderSectionsHtml's `opts`). */
 function lyricRenderOpts() {
     return {
@@ -443,14 +459,6 @@ export function renderLeadSheetContent(container, song, chordpro, isInitialRende
 
     const showAbcView = hasAbc && (!hasChords || showAbcNotation);
 
-    // View toggle only for hybrid songs (both ABC and chords)
-    const viewToggleHtml = (hasAbc && hasChords) ? `
-        <div class="view-toggle">
-            <button id="view-chords-btn" class="toggle-btn ${!showAbcNotation ? 'active' : ''}">Chords</button>
-            <button id="view-abc-btn" class="toggle-btn ${showAbcNotation ? 'active' : ''}">Notation</button>
-        </div>
-    ` : '';
-
     const abcViewHtml = hasAbc ? `
         <div id="abc-view" class="abc-view ${showAbcView ? '' : 'hidden'}">
             <div id="abc-notation" class="abc-notation"></div>
@@ -507,7 +515,6 @@ export function renderLeadSheetContent(container, song, chordpro, isInitialRende
     }
 
     container.innerHTML = `
-        ${viewToggleHtml}
         ${abcViewHtml}
         <div id="chord-view" class="${chordViewClass}">
             ${showChordProSource ? `
@@ -527,36 +534,30 @@ export function renderLeadSheetContent(container, song, chordpro, isInitialRende
             ${!hasChords && hasAbc ? '<div class="instrumental-notice"><em>Instrumental tune - see notation above</em></div>' : ''}
         </div>
         ${sourceHtml}
+        <p class="song-edit-nudge"><b>See something wrong? Use <span aria-hidden="true">✏️</span> Edit at the top.</b><br>Every fix makes the book better.</p>
     `;
 
-    // Bottom band: ABC playback controls when the notation view is up
+    // Bottom band: the notation's dock when the notation is up, else the
+    // reading dock (Key, Size, View, Display)
+    const dockCtx = { hybrid: hasAbc && hasChords };
     if (showAbcView) {
-        setBottomBand(buildAbcBandControls());
+        setBottomBand(buildAbcBandControls(dockProvider?.view({ ...dockCtx, abcShown: true })));
         setTimeout(() => {
             renderAbcNotation(abcContent, 'abc-notation').then(setupAbcPlayback);
         }, 0);
     } else {
         stopAbcPlayback();
-        setBottomBand(null);
+        setBottomBand(dockProvider?.reading({ ...dockCtx, abcShown: false }) ?? null);
     }
-
-    // View toggle handlers (hybrid songs)
-    container.querySelector('#view-chords-btn')?.addEventListener('click', () => {
-        setShowAbcNotation(false);
-        renderLeadSheetContent(container, song, chordpro);
-    });
-    container.querySelector('#view-abc-btn')?.addEventListener('click', () => {
-        setShowAbcNotation(true);
-        renderLeadSheetContent(container, song, chordpro);
-    });
 
     // Mark wrapped chord-lyrics lines for visual indicator
     markWrappedLines();
 
-    // The chord chart (G18b): notes under lyric lines and the second column
-    if (song?.chord_chart && hasChords && !showAbcView) {
+    // The chord chart (G18b): the second column, when the reader chose
+    // Lyrics + Chart and there is room for it
+    if (song?.chord_chart && hasChords && !showAbcView && chartBeside && chartIsWide()) {
         drawChordChart(container, song,
-            { sections: chordSections, opts: lyricOpts, fontScale: FONT_SIZES[fontSizeLevel] },
+            { sections: chordSections, opts: lyricOpts, fontScale: FONT_SIZES[fontSizeLevel], layout: chartLayout() },
             (view, ctx) => {
                 view.mountLeadSheetChart(container, ctx);
                 markWrappedLines();   // the lyrics now have a column's width
@@ -565,9 +566,9 @@ export function renderLeadSheetContent(container, song, chordpro, isInitialRende
 }
 
 /**
- * The Chart part tab (narrow screens): the chord chart alone, or with the
- * lyrics interleaved in practice mode. Stamps renderedKey like the lead sheet
- * so work-view's key subscriber can tell a real transpose from an echo.
+ * The Chart part (View ▸ Chart): the chord chart alone. Stamps renderedKey
+ * like the lead sheet so work-view's key subscriber can tell a real transpose
+ * from an echo.
  */
 export function renderChartTabContent(container, song, chordpro, isInitialRender = false) {
     if (!container) return;
@@ -575,67 +576,53 @@ export function renderChartTabContent(container, song, chordpro, isInitialRender
     initKeyState(song, chordpro, isInitialRender);
     container.dataset.renderedKey = String(currentDetectedKey ?? '');
     stopAbcPlayback();
-    setBottomBand(null);
+    setBottomBand(dockProvider?.reading({ hybrid: false, abcShown: false }) ?? null);
     container.innerHTML = '<div class="part-loading">Loading chart\u2026</div>';
     drawChordChart(container, song,
-        { sections: sections.filter(s => s.type !== 'abc'), opts: lyricRenderOpts(), fontScale: FONT_SIZES[fontSizeLevel] },
+        { sections: sections.filter(s => s.type !== 'abc'), opts: lyricRenderOpts(), fontScale: FONT_SIZES[fontSizeLevel], layout: chartLayout() },
         (view, ctx) => view.renderChartTab(container, ctx),
         () => { container.innerHTML = '<div class="part-error"><p>Couldn\'t load this chart.</p></div>'; });
 }
 
 /**
- * Bottom-band controls for ABC notation parts: size, tempo, play.
- * setupAbcPlayback() finds #abc-play-btn by id once the band is mounted.
+ * The ABC dock: ▶ · tempo · Size · View. There is no Key and no Display, because
+ * neither applies to notation. setupAbcPlayback() finds #abc-play-btn by id
+ * once the band is mounted.
  */
-function buildAbcBandControls() {
-    const el = document.createElement('div');
-    el.className = 'abc-band-controls tab-controls';
-    el.innerHTML = `
-        <div class="qc-group">
-            <button id="abc-size-decrease" class="qc-btn" title="Decrease size">−</button>
-            <span class="qc-label">Aa</span>
-            <button id="abc-size-increase" class="qc-btn" title="Increase size">+</button>
-        </div>
-        <div class="qc-group">
-            <button id="abc-speed-decrease" class="qc-btn" title="Decrease tempo">−</button>
-            <span class="qc-label" id="abc-tempo-label">${abcTempoBpm}</span>
-            <button id="abc-speed-increase" class="qc-btn" title="Increase tempo">+</button>
-        </div>
-        <button id="abc-play-btn" class="qc-toggle-btn" title="Play/Pause">▶ Play</button>
-    `;
+function buildAbcBandControls(viewEl) {
+    const tempo = document.createElement('span');
+    tempo.className = 'dock-tempo';
+    tempo.setAttribute('role', 'group');
+    tempo.setAttribute('aria-label', 'Tempo');
+    tempo.innerHTML = `
+        <span class="dock-tempo-label">Tempo</span>
+        <button type="button" id="abc-speed-decrease" class="dock-size-btn" aria-label="Slower" title="Decrease tempo">−</button>
+        <span id="abc-tempo-label" class="dock-tempo-n">${abcTempoBpm}</span>
+        <button type="button" id="abc-speed-increase" class="dock-size-btn" aria-label="Faster" title="Increase tempo">+</button>`;
+    const play = document.createElement('button');
+    play.type = 'button';
+    play.id = 'abc-play-btn';
+    play.className = 'dock-play';
+    play.title = 'Play/Pause';
+    play.setAttribute('aria-label', 'Play');
+    play.textContent = '▶';
 
-    // Size controls re-render the notation at the new scale
-    const sizeDecrease = el.querySelector('#abc-size-decrease');
-    const sizeIncrease = el.querySelector('#abc-size-increase');
-    const rerenderAbc = () => {
-        if (currentAbcContent) {
-            renderAbcNotation(currentAbcContent, 'abc-notation').then(setupAbcPlayback);
-        }
-    };
-    const updateSizeButtons = () => {
-        sizeDecrease.disabled = abcScale <= 0.7;
-        sizeIncrease.disabled = abcScale >= 1.5;
-    };
-    sizeDecrease.addEventListener('click', () => {
-        if (abcScale > 0.7) {
-            setAbcScale(Math.round((abcScale - 0.1) * 10) / 10);
-            updateSizeButtons();
-            rerenderAbc();
-        }
+    // Size re-renders the notation at the new scale, and is remembered on its own
+    const size = sizeControl({
+        id: 'abc-size',
+        canStep: (dir) => (dir < 0 ? abcScale > ABC_SCALE_MIN + 0.01 : abcScale < ABC_SCALE_MAX - 0.01),
+        step: (dir) => {
+            setAbcScale(Math.round((abcScale + dir * 0.1) * 10) / 10);
+            if (currentAbcContent) {
+                renderAbcNotation(currentAbcContent, 'abc-notation').then(setupAbcPlayback);
+            }
+        },
     });
-    sizeIncrease.addEventListener('click', () => {
-        if (abcScale < 1.5) {
-            setAbcScale(Math.round((abcScale + 0.1) * 10) / 10);
-            updateSizeButtons();
-            rerenderAbc();
-        }
-    });
-    updateSizeButtons();
 
-    // Tempo controls only affect the next playback start
-    const speedDecrease = el.querySelector('#abc-speed-decrease');
-    const speedIncrease = el.querySelector('#abc-speed-increase');
-    const tempoLabel = el.querySelector('#abc-tempo-label');
+    // Tempo only affects the next playback start
+    const speedDecrease = tempo.querySelector('#abc-speed-decrease');
+    const speedIncrease = tempo.querySelector('#abc-speed-increase');
+    const tempoLabel = tempo.querySelector('#abc-tempo-label');
     const applyTempo = (bpm) => {
         setAbcTempoBpm(Math.max(60, Math.min(240, bpm)));
         tempoLabel.textContent = abcTempoBpm;
@@ -646,7 +633,9 @@ function buildAbcBandControls() {
     speedIncrease.addEventListener('click', () => applyTempo(abcTempoBpm + 10));
     applyTempo(abcTempoBpm);
 
-    return el;
+    const dock = readingDock(play, tempo, size, viewEl);
+    dock.classList.add('abc-dock');
+    return dock;
 }
 
 /**

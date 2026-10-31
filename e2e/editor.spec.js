@@ -374,12 +374,12 @@ test.describe('Editor Navigation', () => {
         await gotoSearch(page);
         await openAddSongEditor(page);
 
-        await page.locator('#editor-back-btn').click();
+        await page.locator('#topbar-back').click();
 
         await expect(page.locator('.search-container')).toBeVisible();
     });
 
-    test('opening editor from song returns to song after back', async ({ page }) => {
+    test('opening editor from song returns to that song after ←', async ({ page }) => {
         await page.goto('/#work/your-cheating-heart');
         await expect(page.locator('#song-view')).toBeVisible({ timeout: 15000 });
 
@@ -389,12 +389,10 @@ test.describe('Editor Navigation', () => {
 
         await expect(page.locator('#editor-panel')).toBeVisible();
 
-        await page.locator('#editor-back-btn').click();
+        await page.locator('#topbar-back').click();
 
-        // Should return to a valid non-editor view (song or search)
-        const songView = page.locator('#song-view:not(.hidden)');
-        const searchContainer = page.locator('.search-container');
-        await expect(songView.or(searchContainer)).toBeVisible({ timeout: 3000 });
+        // ← goes back to the song it was opened from, not to search
+        await expect(page.locator('#song-view:not(.hidden)')).toBeVisible({ timeout: 3000 });
         await expect(page.locator('#editor-panel')).toBeHidden();
     });
 });

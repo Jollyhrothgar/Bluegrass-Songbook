@@ -5,8 +5,7 @@
 // controls for one document, and a page whose bottom half changed shape
 // the moment you pressed ✏️ Edit. The band is now the same band: the
 // controls it already has (tempo, ▶/⏹, metronome) are re-bound to
-// the LIVE editor document, the session's buttons take the slot the
-// ✏️ Edit button was in, and the controls that cannot mean anything
+// the LIVE editor document, the session's buttons sit after Stop, and the controls that cannot mean anything
 // mid-edit are DISABLED with a reason rather than removed — a control
 // that vanishes reads as a bug; a control that says why it is off reads
 // as an answer.
@@ -22,6 +21,7 @@ export const DISABLED_REASONS = {
     repeats: 'The editor always shows written measures, repeat signs and all.',
     feel: 'Feel is a reading choice; while editing, the tab plays as written.',
     tracks: 'While editing, playback follows the document — every track sounds.',
+    view: 'Finish the edit (✓ Done) to switch parts.',
 };
 
 /** Disable a control and say why (on the control AND its group wrapper). */
@@ -46,27 +46,23 @@ function disableGroup(root, selector, reason) {
  * @param {HTMLElement} controls - the element createTablatureControls built
  * @param {Object} editor - an OTFEditor (or anything with its surface)
  * @param {Object} [options]
- * @param {HTMLElement} [options.actions] - element to drop where ✏️ Edit was
+ * @param {HTMLElement} [options.actions] - element to drop after Stop
  *   (the session's Submit and Done group)
  * @returns {{destroy: Function, refresh: Function, actionSlot: HTMLElement}}
  */
 export function bindBandToEditor(controls, editor, { actions = null } = {}) {
-    // ── The session's buttons replace ✏️ Edit ─────────────────────────
+    // ── The session's buttons join the band ───────────────────────────
     //
-    // …at BAND level, even on a phone. `tab-controls-sheet.js` re-parents
-    // ✏️ Edit into the ⚙ settings sheet below 640px, and Submit / Cancel /
-    // Done buried behind a disclosure is not a thing anyone would find.
+    // …at BAND level, even on a phone, right after Stop (which stays on the
+    // phone band; `tab-controls-sheet.js` moves the rest into the ⚙ sheet
+    // below 640px, and Submit / Cancel / Done buried behind a disclosure is
+    // not a thing anyone would find). Edit itself is the top band's, and is
+    // hidden while the editor is open.
     const slot = document.createElement('span');
     slot.className = 'tab-edit-actions-slot';
-    const editBtn = controls.querySelector('.tab-edit-btn');
-    const moreBtn = controls.querySelector('.tab-more-btn');
-    if (editBtn && !editBtn.closest('.tab-settings-sheet')) {
-        editBtn.replaceWith(slot);
-    } else {
-        editBtn?.remove();
-        if (moreBtn) controls.insertBefore(slot, moreBtn);
-        else controls.appendChild(slot);
-    }
+    const afterStop = controls.querySelector('.tab-stop-btn');
+    if (afterStop && !afterStop.closest('.tab-settings-sheet')) afterStop.after(slot);
+    else controls.appendChild(slot);
     if (actions) slot.appendChild(actions);
 
     // ── Size: gone while editing (G17) ────────────────────────────────
@@ -143,6 +139,7 @@ export function bindBandToEditor(controls, editor, { actions = null } = {}) {
     disableGroup(controls, '.tab-repeat-group', DISABLED_REASONS.repeats);
     disableGroup(controls, '.tab-feel-group', DISABLED_REASONS.feel);
     disableGroup(controls, '.tab-track-mixer', DISABLED_REASONS.tracks);
+    disableWithReason(controls.querySelector('.tab-view-btn'), DISABLED_REASONS.view);
 
     // ── Follow the live document ──────────────────────────────────────
     const facade = editor.state?.facade;
