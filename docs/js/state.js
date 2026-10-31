@@ -243,6 +243,8 @@ export function loadViewPrefs() {
         if (typeof prefs.autoHideControls === 'boolean') autoHideControls = prefs.autoHideControls;
         const abc = parseFloat(localStorage.getItem(ABC_SCALE_KEY));
         if (abc >= ABC_SCALE_MIN && abc <= ABC_SCALE_MAX) abcScale = abc;
+        const tab = parseFloat(localStorage.getItem(TAB_SCALE_KEY));
+        if (tab >= TAB_SCALE_MIN && tab <= TAB_SCALE_MAX) tabScale = tab;
     } catch (e) {
         console.error('Failed to load view preferences:', e);
     }
@@ -322,6 +324,10 @@ export let abcScale = 1.0;                 // Size scale (0.7 - 1.5), remembered
 export const ABC_SCALE_KEY = 'bgb-abc-scale';
 export const ABC_SCALE_MIN = 0.7;
 export const ABC_SCALE_MAX = 1.5;
+export let tabScale = 1.0;                 // Size scale of a tab's staff (0.6 - 1.6), its own key (G19c)
+export const TAB_SCALE_KEY = 'bgb-tab-scale';
+export const TAB_SCALE_MIN = 0.6;
+export const TAB_SCALE_MAX = 1.6;
 export let abcSynth = null;                // Persistent synth instance
 export let abcTimingCallbacks = null;      // Persistent timing callbacks
 export let abcIsPlaying = false;           // Playback state for toggle button
@@ -335,6 +341,10 @@ export function setAbcTranspose(value) { abcTranspose = value; }
 export function setAbcScale(value) {
     abcScale = value;
     try { localStorage.setItem(ABC_SCALE_KEY, String(value)); } catch { /* private mode */ }
+}
+export function setTabScale(value) {
+    tabScale = value;
+    try { localStorage.setItem(TAB_SCALE_KEY, String(value)); } catch { /* private mode */ }
 }
 export function setAbcSynth(value) { abcSynth = value; }
 export function setAbcTimingCallbacks(value) { abcTimingCallbacks = value; }
@@ -606,6 +616,7 @@ const stateGetters = {
     abcTempoBpm: () => abcTempoBpm,
     abcTranspose: () => abcTranspose,
     abcScale: () => abcScale,
+    tabScale: () => tabScale,
     abcSynth: () => abcSynth,
     abcTimingCallbacks: () => abcTimingCallbacks,
     abcIsPlaying: () => abcIsPlaying,
@@ -681,6 +692,7 @@ const stateSetters = {
     abcTempoBpm: setAbcTempoBpm,
     abcTranspose: setAbcTranspose,
     abcScale: setAbcScale,
+    tabScale: setTabScale,
     abcSynth: setAbcSynth,
     abcTimingCallbacks: setAbcTimingCallbacks,
     abcIsPlaying: setAbcIsPlaying,

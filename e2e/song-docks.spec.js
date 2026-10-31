@@ -6,7 +6,7 @@
 // tests below constrain the viewport rather than naming a device.
 import { test, expect } from './fixtures.js';
 import { mockSupabase } from './helpers/supabase-mock.js';
-import { openMenu, serveWithoutTabs } from './helpers.js';
+import { openMenu, openDock, closeSheet, serveWithoutTabs } from './helpers.js';
 import { pressTabEdit } from './helpers/tab-edit.js';
 import { songReady } from './helpers/tour.js';
 
@@ -347,23 +347,25 @@ test.describe('the one Edit', () => {
         await expect(page.locator('#edit-song-btn')).toBeVisible();
     });
 
-    test('while the tab editor is open View is off (with a reason), and Done brings it back', async ({ page }) => {
-        // arkansas-traveler-1: a lead sheet plus a banjo tab, so the tab band has a View ▾
+    test('while the tab editor is open the band is G17\'s (no View, no Display), and Done brings the dock back', async ({ page }) => {
+        // arkansas-traveler-1: a lead sheet plus a banjo tab, so the tab dock has a View ▾
         await page.goto('/#work/arkansas-traveler-1/banjo-tab');
         await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
-        const viewBtn = page.locator('#app-bottomband .tab-view-btn');
-        await expect(viewBtn).toBeEnabled();
+        await expect(page.locator('#app-bottomband #dock-view-btn')).toBeEnabled();
 
         await pressTabEdit(page, { waitForEditor: true });
         await expect(page.locator('body')).toHaveClass(/tab-editing/);
-        await expect(viewBtn).toBeDisabled();
-        await expect(viewBtn).toHaveAttribute('title', /Done/);
+        await expect(page.locator('#app-bottomband #dock-view-btn, #app-bottomband #dock-display-btn')).toHaveCount(0);
+        for (const sel of ['.tab-play-btn', '.tab-stop-btn', '.tab-tempo-display', '.tab-edit-submit', '.tab-edit-done']) {
+            await expect(page.locator(`#app-bottomband ${sel}`).first(), sel).toBeVisible();
+        }
         // the take header (status lines live there) and the editor's own chrome stay
         await expect(page.locator('#arrangement-host')).toBeAttached();
 
         await page.locator('#app-bottomband .tab-edit-done').click();
         await expect(page.locator('body')).not.toHaveClass(/tab-editing/);
-        await expect(page.locator('#app-bottomband .tab-view-btn')).toBeEnabled();
+        await expect(page.locator('#app-bottomband #dock-view-btn')).toBeEnabled();
+        await expect(page.locator('#app-bottomband #dock-display-btn')).toBeVisible();
     });
 
     test('a new take (#new-tab) has Edit stepped aside, and no reading dock', async ({ page }) => {
@@ -388,13 +390,13 @@ test.describe('the one Edit', () => {
 test.describe('on a phone the tab page has one Edit, in the top band', () => {
     test.use({ viewport: { width: 390, height: 844 } });
 
-    test('the ⚙ sheet no longer has a Tab row', async ({ page }) => {
+    test('Display has no Edit row; Edit is the top band\'s', async ({ page }) => {
         await page.goto(TAB);
         await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
-        await page.locator('#app-bottomband .tab-more-btn').click();
-        const labels = await page.locator('#app-bottomband .tab-sheet-row:visible .tab-sheet-label').allTextContents();
-        expect(labels).not.toContain('Tab');
-        await page.keyboard.press('Escape');
+        const sheet = await openDock(page, 'display');
+        await expect(sheet.locator('.tab-edit-btn')).toHaveCount(0);
+        await expect(sheet.getByText(/^Edit$/)).toHaveCount(0);
+        await closeSheet(page);
         await pressTabEdit(page, { waitForEditor: true });
     });
 });
@@ -532,13 +534,283 @@ for (const width of [360, 390]) {
             await dockFits(page, '.reading-dock');
         });
 
-        test('the tab band keeps all its controls on the strip, View ▾ last', async ({ page }) => {
+        test('the tab dock fits on one row, and so does it while playing (Stop joins it)', async ({ page }) => {
             await page.goto('/#work/lonesome-road-blues-1/banjo');
             await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
+            await stubPlay(page);
             await expect(page.locator('#app-bottomband .tab-view-btn')).toBeVisible();
+            await expect(page.locator('#app-bottomband #dock-display-btn')).toBeVisible();
             await dockFits(page, '.tab-controls');
-            const sw = await page.locator('.tab-controls').evaluate(el => el.scrollWidth <= el.clientWidth + 1);
-            expect(sw).toBe(true);
+            await expectOneRow(page);
+
+            await page.locator('.tab-play-btn').click();
+            await expect(page.locator('.tab-stop-btn')).toBeVisible();
+            await dockFits(page, '.tab-controls');
+            await expectOneRow(page);
         });
     });
 }
+
+// ── G19c: the tab dock ────────────────────────────────────────────────────
+// ▶ · Tempo · View ▾ · Display, the same on every width. Size, Play in,
+// Layout, Feel, Practice, Tracks and Auto-hide are in the Display sheet;
+// the tabs with their takes, and the tracks, are in View. Playing is stubbed
+// (what Play was asked to do is recorded in window.__played) so the tests
+// assert the controls reach the player without needing soundfonts.
+
+/** Replace TabPlayer.play with a recorder that starts "playing"; the real stop() still runs. */
+async function stubPlay(page) {
+    await page.evaluate(async () => {
+        const { TabPlayer } = await import('/js/renderers/tab-player.js');
+        window.__played = [];
+        TabPlayer.prototype.play = async function (otf, opts) {
+            window.__played.push(opts);
+            this.isPlaying = true;
+        };
+    });
+}
+const lastPlay = (page) => page.evaluate(() => window.__played.at(-1));
+
+const expectOneRow = async (page) => {
+    const centres = await page.locator('.tab-controls').evaluate(el => [...el.children]
+        .filter(k => k.getBoundingClientRect().width > 0 && !k.classList.contains('tab-position'))
+        .map(k => { const r = k.getBoundingClientRect(); return Math.round(r.top + r.height / 2); }));
+    expect(Math.max(...centres) - Math.min(...centres)).toBeLessThanOrEqual(1);
+};
+
+const gotoTab = async (page, hash) => {
+    await page.goto(hash);
+    await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
+    await stubPlay(page);
+};
+
+for (const width of [360, 390, 1440]) {
+    test.describe(`the tab dock at ${width}px`, () => {
+        test.use({ viewport: { width, height: 800 } });
+
+        test('is ▶ · Tempo · View · Display on one row, and Stop is not there until you play', async ({ page }) => {
+            await gotoTab(page, '/#work/foggy-mountain-breakdown/ensemble');
+            const band = page.locator('#app-bottomband');
+            for (const sel of ['.tab-play-btn', '.tab-tempo-down', '.tab-tempo-display', '.tab-tempo-up', '#dock-view-btn', '#dock-display-btn']) {
+                await expect(band.locator(sel), sel).toBeVisible();
+            }
+            await expect(band.locator('.tab-stop-btn')).toBeHidden();
+            await expect(band.locator('.tab-more-btn')).toHaveCount(0);
+            await dockFits(page, '.tab-controls');
+            await expectOneRow(page);
+
+            await page.locator('.tab-play-btn').click();
+            await expect(page.locator('.tab-play-btn')).toHaveText('⏸');
+            await expect(band.locator('.tab-stop-btn')).toBeVisible();
+            await dockFits(page, '.tab-controls');
+            await expectOneRow(page);
+            await page.locator('.tab-stop-btn').click();
+            await expect(band.locator('.tab-stop-btn')).toBeHidden();
+            await expect(page.locator('.tab-play-btn')).toHaveText('▶');
+        });
+    });
+}
+
+test.describe('the tab page above the music', () => {
+    test('one credit line replaces the takes bar and the track tabs', async ({ page }) => {
+        await gotoTab(page, '/#work/foggy-mountain-breakdown/banjo-tab');
+        await expect(page.locator('.arr-credit')).toContainText(/Banjo tab by .+/);
+        await expect(page.locator('.arr-credit .arr-pin')).toBeVisible();   // the editor's pick
+        for (const sel of ['.arr-bar', '#arr-list', '.arr-item', '.track-view-tabs', '.track-view-tab', '#song-pill-row', '#part-tabs']) {
+            await expect(page.locator(sel), sel).toHaveCount(0);
+        }
+        // the title, the writer line and the practice line stay; so does the attribution after the tab
+        await expect(page.locator('.song-title')).toBeVisible();
+        await expect(page.locator('#song-details-btn')).toBeVisible();
+        await expect(page.locator('.tab-attribution').first()).toBeAttached();
+    });
+});
+
+test.describe('Display on a tab', () => {
+    test('holds Size, Play in, Feel, Practice, Tracks and Auto-hide', async ({ page }) => {
+        await gotoTab(page, '/#work/foggy-mountain-breakdown/ensemble');
+        const sheet = await openDock(page, 'display');
+        const labels = (await sheet.locator('.dock-group-label').allTextContents()).map(t => t.replace(/\s+/g, ' ').trim().split(' ')[0]);
+        expect(labels).toEqual(['Size', 'Play', 'Feel', 'Practice', 'Tracks']);
+        await expect(sheet.locator('#pill-autohide')).toBeVisible();
+        await expect(sheet.locator('.tab-track-mixer .track-checkbox')).not.toHaveCount(0);
+    });
+
+    test('Layout (Unrolled / Repeats) is there when the tab has repeats, and redraws without closing the sheet', async ({ page }) => {
+        await gotoTab(page, '/#work/arkansas-traveler-1/banjo-tab');
+        let sheet = await openDock(page, 'display');
+        await expect(sheet.locator('.dock-group-label', { hasText: 'Layout' })).toBeVisible();
+        await expect(sheet.locator('.tab-repeat-group .pill-mode-btn.active')).toHaveText('Unrolled');
+        await sheet.locator('.tab-repeat-group [data-val="repeats"]').click();
+        sheet = page.locator('#dock-display-sheet');
+        await expect(sheet).toBeVisible();
+        await expect(sheet.locator('.tab-repeat-group .pill-mode-btn.active')).toHaveText('Repeats');
+        await closeSheet(page);
+        await stubPlay(page);
+        // the choice is live: the new band's controls are the ones the sheet moved
+        await page.locator('.tab-play-btn').click();
+        await expect(page.locator('.tab-play-btn')).toHaveText('⏸');
+    });
+
+    test('Tempo changes the tempo Play is asked for', async ({ page }) => {
+        await gotoTab(page, '/#work/foggy-mountain-breakdown/banjo-tab');
+        const shown = parseInt(await page.locator('.tab-tempo-display').textContent(), 10);
+        await page.locator('.tab-tempo-up').click();
+        await page.locator('.tab-tempo-up').click();
+        await expect(page.locator('.tab-tempo-display')).toHaveText(String(shown + 10));
+        await page.locator('.tab-play-btn').click();
+        expect((await lastPlay(page)).tempo).toBe(shown + 10);
+    });
+
+    test('Play in sets the capo Play is asked for, and the frets stay put', async ({ page }) => {
+        await gotoTab(page, '/#work/foggy-mountain-breakdown/banjo-tab');
+        const before = await page.locator('.note-text').first().textContent();
+        const sheet = await openDock(page, 'display');
+        await sheet.locator('#tab-play-in .pill-key-btn', { hasText: /^A$/ }).click();   // the tab is in G: capo 2
+        await closeSheet(page);
+        await page.locator('.tab-play-btn').click();
+        expect((await lastPlay(page)).transpose).toBe(2);
+        expect(await page.locator('.note-text').first().textContent()).toBe(before);
+    });
+
+    test('Practice: Loop reaches Play, and a mixer track unmuted is sounded', async ({ page }) => {
+        await gotoTab(page, '/#work/foggy-mountain-breakdown/ensemble');
+        let sheet = await openDock(page, 'display');
+        await sheet.locator('.tab-loop-toggle').click();
+        const boxes = sheet.locator('.tab-track-mixer .track-checkbox');
+        const ids = await boxes.evaluateAll(els => els.map(e => e.dataset.trackId));
+        expect(ids.length).toBeGreaterThan(1);
+        const lead = await boxes.evaluateAll(els => els.filter(e => e.checked).map(e => e.dataset.trackId));
+        expect(lead).toHaveLength(1);                        // the lead track sounds by default
+        const other = ids.find(id => !lead.includes(id));
+        await sheet.locator(`.track-toggle:has([data-track-id="${other}"])`).click();   // chips: label click toggles
+        await closeSheet(page);
+
+        await page.locator('.tab-play-btn').click();
+        const played = await lastPlay(page);
+        expect(played.loop).toBe(true);
+        expect([...played.trackIds].sort()).toEqual([lead[0], other].sort());
+    });
+
+    test('Size steps the staff, is remembered in its own key, and leaves the text and notation sizes alone', async ({ page }) => {
+        await gotoTab(page, '/#work/foggy-mountain-breakdown/banjo-tab');
+        const sheet = await openDock(page, 'display');
+        await sheet.locator('#tab-size [data-size="1"]').click();
+        await expect.poll(() => page.evaluate(() => localStorage.getItem('bgb-tab-scale'))).toBe('1.1');
+        await expect(page.locator('.tablature-container').first()).toHaveCSS('--tab-scale', '1.1');
+        expect(await page.evaluate(() => localStorage.getItem('bgb-abc-scale'))).toBeNull();
+        expect(await page.evaluate(() => JSON.parse(localStorage.getItem('songbook-view-prefs') || '{}').fontSizeLevel ?? 0)).toBe(0);
+        await page.reload();
+        await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
+        await expect(page.locator('.tablature-container').first()).toHaveCSS('--tab-scale', '1.1');
+        const again = await openDock(page, 'display');
+        await again.locator('#tab-size [data-size="-1"]').click();
+        await expect.poll(() => page.evaluate(() => localStorage.getItem('bgb-tab-scale'))).toBe('1');
+    });
+});
+
+test.describe('View on a tab', () => {
+    test('lists the tabs with their take counts and the tracks, and the part tabs are gone', async ({ page }) => {
+        await gotoTab(page, '/#work/foggy-mountain-breakdown/ensemble');
+        const sheet = await openDock(page, 'view');
+        await expect(sheet.locator('.dock-sheet-heading')).toHaveText(['Tabs', 'Tracks']);
+        const banjo = sheet.locator('[data-part="banjo-tab"]');
+        await expect(banjo).toContainText('Banjo');
+        await expect(banjo.locator('.dock-count')).toHaveText(/^\d+$/);
+        await expect(banjo.locator('.dock-chev')).toBeVisible();
+        await expect(sheet.locator('[data-part].on')).toContainText('Ensemble');
+        await expect(sheet.locator('[data-track]')).not.toHaveCount(0);
+        await expect(sheet.locator('[data-track="all"]')).toBeVisible();
+    });
+
+    test('a part with several takes drills into them, the pick starred and the one showing ticked', async ({ page }) => {
+        await gotoTab(page, '/#work/foggy-mountain-breakdown/banjo-tab');
+        const who = (await page.locator('.arr-credit .arr-who').textContent()).trim();
+        const sheet = await openDock(page, 'view');
+        await sheet.locator('[data-part="banjo-tab"]').click();
+        await expect(sheet.locator('.notes-sheet-title')).toContainText(/Banjo tabs\s+\d+ takes/);
+        const takes = sheet.locator('.dock-take');
+        expect(await takes.count()).toBeGreaterThan(1);
+        await expect(takes.first().locator('.dock-pin')).toHaveText('★');
+        await expect(takes.first()).toHaveClass(/on/);
+        await expect(takes.first().locator('.dock-take-who')).toHaveText(who);
+
+        // back, then in again, then pick another take: the page shows it
+        await sheet.locator('.dock-back').click();
+        await expect(sheet.locator('.notes-sheet-title')).toHaveText('View');
+        await sheet.locator('[data-part="banjo-tab"]').click();
+        const second = takes.nth(1);
+        const secondWho = (await second.locator('.dock-take-who').textContent()).trim();
+        await second.click();
+        await expect(page.locator('#song-view-sheet')).toHaveCount(0);
+        await expect(page.locator('.arr-credit .arr-who')).toHaveText(secondWho);
+        await expect(page.locator('.arr-credit .arr-pin')).toHaveCount(0);    // not the editor's pick
+        await page.locator('.tablature-container').first().waitFor();
+        // the sheet now ticks the take on screen
+        const again = await openDock(page, 'view');
+        await again.locator('[data-part="banjo-tab"]').click();
+        await expect(again.locator('.dock-take.on .dock-take-who')).toHaveText(secondWho);
+    });
+
+    test('another instrument\'s take opens that part on it', async ({ page }) => {
+        await gotoTab(page, '/#work/foggy-mountain-breakdown/ensemble');
+        const sheet = await openDock(page, 'view');
+        await sheet.locator('[data-part="banjo-tab"]').click();
+        await sheet.locator('.dock-take').nth(1).click();
+        await expect(page).toHaveURL(/banjo-tab/);
+        await expect(page.locator('.arr-credit')).toContainText('Banjo tab by');
+    });
+
+    test('Tracks switch which staff shows, and All shows them all', async ({ page }) => {
+        await gotoTab(page, '/#work/foggy-mountain-breakdown/ensemble');
+        const sections = page.locator('.tablature-track-section');
+        const visible = () => sections.evaluateAll(els => els.filter(e => e.style.display !== 'none').map(e => e.dataset.trackId));
+        expect(await visible()).toHaveLength(1);
+        const sheet = await openDock(page, 'view');
+        const other = await sheet.locator('[data-track]:not(.on):not([data-track="all"])').first().getAttribute('data-track');
+        await sheet.locator(`[data-track="${other}"]`).click();
+        expect(await visible()).toEqual([other]);
+
+        const again = await openDock(page, 'view');
+        await expect(again.locator(`[data-track="${other}"]`)).toHaveClass(/on/);
+        await again.locator('[data-track="all"]').click();
+        expect((await visible()).length).toBeGreaterThan(1);
+    });
+});
+
+test.describe('auto-hide on a tab', () => {
+    test.use({ viewport: { width: 700, height: 480 } });
+
+    const scrollBy = async (page, dy) => {
+        for (let i = 0; i < 6; i++) {
+            await page.mouse.wheel(0, dy);
+            await page.waitForTimeout(50);
+        }
+    };
+
+    test('hides both bands on scroll down when Auto-hide is on, not while the tab plays', async ({ page }) => {
+        await gotoTab(page, '/#work/foggy-mountain-breakdown/banjo-tab');
+        const sheet = await openDock(page, 'display');
+        await sheet.locator('#pill-autohide').check();
+        await closeSheet(page);
+
+        await page.locator('.tab-play-btn').click();          // playing: its auto-scroll must not take the bands away
+        await expect(page.locator('.tab-stop-btn')).toBeVisible();
+        await scrollBy(page, 120);
+        await expect(page.locator('body')).not.toHaveClass(/chrome-hidden/);
+        await expect(page.locator('#app-bottomband')).toBeInViewport();
+
+        await page.locator('.tab-stop-btn').click();          // stopped: scrolling hides them
+        await scrollBy(page, 120);
+        await expect(page.locator('body')).toHaveClass(/chrome-hidden/);
+        expect((await page.locator('#app-bottomband').boundingBox()).y).toBeGreaterThanOrEqual(480 - 6);
+        await scrollBy(page, -120);
+        await expect(page.locator('body')).not.toHaveClass(/chrome-hidden/);
+    });
+
+    test('with Auto-hide off the bands stay where they are', async ({ page }) => {
+        await gotoTab(page, '/#work/foggy-mountain-breakdown/banjo-tab');
+        await scrollBy(page, 120);
+        await expect(page.locator('body')).not.toHaveClass(/chrome-hidden/);
+    });
+});

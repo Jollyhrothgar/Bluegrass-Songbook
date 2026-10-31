@@ -34,8 +34,8 @@ timing = null)`. There is no `setTrackVisibility`. Multi-track works build a
 renderer per track, and `work-view.js` shows/hides the containers (the "View
 track" selector) and mutes via the player. Sight and sound are separate:
 
-- View-track tabs choose which staff you see; they do not touch audio.
-- Mixer checkboxes (`.track-checkbox`) call `player.setTrackEnabled(trackId,
+- View ▸ Tracks chooses which staff you see; it does not touch audio.
+- Mixer checkboxes (`.track-checkbox`, in the Display sheet) call `player.setTrackEnabled(trackId,
   enabled)` live, mid-playback. Muting does not hide the staff.
 - Solo (`.track-solo`, on the renderer's track-info row) is audio-only.
 - Percussion is excluded from mixer and playback (`pitchedTracks`).
@@ -189,7 +189,7 @@ Unicode has a banjo, a guitar and a violin and nothing for mandolin, upright
 bass or dobro, so those rendered as a generic guitar. The mixer also picked the
 icon from `track.instrument` while the label came from `track.id`, so a track
 with id `guitar` and instrument `5-string-banjo` showed a banjo beside the word
-"guitar". The tab page uses text labels ("View track", a speaker glyph for the
+"guitar". The tab page uses text labels ("Tracks", a speaker glyph for the
 Sound row). Don't reintroduce per-instrument emoji.
 
 ## Common issues

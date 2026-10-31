@@ -345,13 +345,31 @@ export const STATES = [
     {
         id: 'tab-settings-sheet',
         group: 'Tab page',
-        title: 'Tab settings sheet (phone); the full band (desktop)',
+        title: 'Tab Display sheet (Size, Play in, Layout, Feel, Practice, Tracks, Auto-hide)',
+        url: '/#work/foggy-mountain-breakdown/ensemble',
+        ready: tabReady,
+        setup: openDock('display'),
+        workshop: ['F7', 'F4'],
+    },
+    {
+        id: 'tab-view-sheet',
+        group: 'Tab page',
+        title: 'Tab View sheet (Tabs with their take counts, Tracks)',
+        url: '/#work/foggy-mountain-breakdown/ensemble',
+        ready: tabReady,
+        setup: openDock('view'),
+        workshop: ['F7', 'F4'],
+    },
+    {
+        id: 'tab-takes',
+        group: 'Tab page',
+        title: 'Tab View sheet drilled into one instrument\'s takes (the editor\'s pick starred)',
         url: '/#work/foggy-mountain-breakdown/banjo-tab',
         ready: tabReady,
-        setup: async (page, { phone }) => {
-            if (!phone) return;
-            await page.locator('#app-bottomband .tab-more-btn').click();
-            await page.locator('#app-bottomband .tab-settings-sheet').waitFor();
+        setup: async (page) => {
+            await openDock('view')(page);
+            await page.locator('#song-view-sheet [data-part="banjo-tab"]').click();
+            await page.locator('#song-view-sheet .dock-take').first().waitFor();
         },
         workshop: ['F7', 'F4'],
     },
@@ -448,11 +466,30 @@ export const STATES = [
     {
         id: 'list-song',
         group: 'Lists',
-        title: 'Song opened from a list (notes are not shown)',
+        title: 'Song opened from a list (← names the list; ‹ 2 of 5 › leads the dock; notes are not shown)',
         url: `/#list/${JAM_LIST_ID}/old-home-place`,
         seed: WITH_LISTS,
         ready: '#song-view .song-body',
         workshop: ['F8', 'D3', 'D4', 'D6'],
+    },
+    {
+        id: 'list-tab',
+        group: 'Lists',
+        title: 'Tab opened from a list (← names the list; dock: ‹ 2 of 5 › · ▶ · ♩ tempo chip · View · Display)',
+        url: `/#list/${JAM_LIST_ID}/foggy-mountain-breakdown`,
+        seed: WITH_LISTS,
+        ready: '#dock-tempo-chip',
+        workshop: ['G19'],
+    },
+    {
+        id: 'list-tab-tempo',
+        group: 'Lists',
+        title: 'Tab opened from a list, tempo chip tapped (the − n + stepper sheet)',
+        url: `/#list/${JAM_LIST_ID}/foggy-mountain-breakdown`,
+        seed: WITH_LISTS,
+        ready: '#dock-tempo-chip',
+        setup: async (page) => { await page.locator('#dock-tempo-chip').click(); await page.locator('#dock-tempo-sheet').waitFor(); },
+        workshop: ['G19'],
     },
     {
         id: 'favorites',

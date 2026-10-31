@@ -75,10 +75,8 @@
     /* Legacy - keeping for existing usage */
     --btn-label-size: var(--font-sm);
 
-    /* Chrome heights. --bottomband-h is overwritten by shell.js with the
-       band's measured height; --listbar-h is the list nav bar the band
-       stacks on top of. */
-    --listbar-h: 60px;
+    /* Chrome heights: shell.js publishes --bottomband-h and --topbar-h, the
+       bands' measured heights, on <html>. */
 }
 
 [data-theme="dark"] {
@@ -6895,102 +6893,6 @@ a.my-submission-row:hover {
     font-style: italic;
 }
 
-/* Bottom navigation bar */
-.song-nav-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    background: var(--bg-secondary);
-    border-top: 1px solid var(--border);
-    display: flex;
-    align-items: center;
-    padding: 0 1rem;
-    z-index: 1001;
-    gap: 0.75rem;
-}
-
-.song-nav-bar.hidden {
-    display: none;
-}
-
-.nav-info {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-right: auto;
-    padding-left: 0.5rem;
-}
-
-#nav-position {
-    font-size: 0.9rem;
-    color: var(--text);
-    font-weight: 500;
-}
-
-.nav-list-name {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    max-width: 200px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.nav-list-name::before {
-    content: '·';
-    margin-right: 0.5rem;
-}
-
-.nav-btn {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    padding: 0.5rem 1rem;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    color: var(--text);
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-.nav-btn:hover:not(:disabled) {
-    background: var(--accent);
-    color: var(--on-accent);
-    border-color: var(--accent);
-}
-
-.nav-btn:disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
-}
-
-.nav-arrow {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-
-/* Mobile adjustments for nav bar */
-@media (max-width: 600px) {
-    .nav-btn {
-        padding: 0.5rem 0.75rem;
-    }
-
-
-    .nav-arrow {
-        font-size: 1.25rem;
-    }
-
-    .nav-list-name {
-        display: none;
-    }
-
-}
-
 /* ============================================
    LANDING PAGE
    ============================================ */
@@ -7577,11 +7479,9 @@ body.dungeon-mode #search-stats {
     #results,
     .song-tags-section,
     .song-meta,
-    .song-nav-bar,
     .app-bottomband,
     .arr-host,
     .tab-controls,
-    #exit-fullscreen-btn,
     .header-badge {
         display: none !important;
     }
@@ -8044,131 +7944,30 @@ body.dungeon-mode #search-stats {
 
 
 /* ============================================
-   ARRANGEMENT BAR (tier 2: whose take of this instrument you're reading)
-   Instrument pill → arrangement bar → track mixer.
+   TAKE HEADER: the credit line under a tab's title ("Banjo tab by schlange ·
+   Banjo Hangout ★") and the status notices under it. Which take you read is
+   View ▸ Tabs (the takes drill-in), not anything on the page.
    ============================================ */
 
 .arr-host {
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
 }
 
-.arr-bar {
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
-    width: 100%;
-    text-align: left;
-    font: inherit;
-    padding: 0.45rem 0.7rem;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    background: var(--bg-secondary);
-    color: var(--text);
-    cursor: pointer;
+.arr-credit {
+    font-size: var(--font-sm);
+    color: var(--text-secondary);
+    margin-top: 2px;
 }
 
-.arr-bar:hover {
-    border-color: var(--accent);
-}
-
-/* One arrangement: a quiet byline, nothing to open. */
-.arr-bar.is-single {
-    background: transparent;
-    border-style: dashed;
-    cursor: default;
-}
-
-.arr-bar.is-single:hover {
-    border-color: var(--border);
-}
-
-.arr-who {
+.arr-credit .arr-who {
     font-weight: 600;
-}
-
-.arr-meta {
-    color: var(--text-secondary);
-    font-size: var(--font-sm);
-}
-
-/* The curation pin — the default everyone lands on. */
-.arr-pin {
-    color: var(--success);
-    font-size: var(--font-sm);
-}
-
-.arr-count {
-    margin-left: auto;
-    color: var(--accent);
-    font-size: var(--font-sm);
-    white-space: nowrap;
-}
-
-.arr-list {
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    margin-top: 0.35rem;
-    overflow: hidden;
-}
-
-.arr-item {
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
-    width: 100%;
-    text-align: left;
-    font: inherit;
-    padding: 0.45rem 0.7rem;
-    border: 0;
-    border-bottom: 1px solid var(--border);
-    background: var(--bg);
     color: var(--text);
-    cursor: pointer;
 }
 
-.arr-item:last-child {
-    border-bottom: 0;
-}
-
-.arr-item:hover {
-    background: var(--bg-secondary);
-}
-
-.arr-item.is-selected {
-    background: color-mix(in srgb, var(--accent) 12%, transparent);
-}
-
-.arr-item .arr-pin {
-    min-width: 0.8em;
-}
-
-.arr-item .arr-src {
-    margin-left: auto;
-    color: var(--text-secondary);
-    font-size: var(--font-xs);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    white-space: nowrap;
-}
-
-.arr-bar:focus-visible,
-.arr-item:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: -2px;
-}
-
-@media (max-width: 600px) {
-    /* Metadata is the first thing to go when the row can't hold it all —
-       author, count and source stay. */
-    .arr-bar .arr-meta {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
-    .arr-item .arr-meta {
-        display: none;
-    }
+/* The curation pin: the editor's pick, the take everyone lands on. */
+.arr-pin {
+    color: var(--warning, #d97706);
+    font-size: var(--font-sm);
 }
 
 /* Tablature view in song view */
@@ -8192,7 +7991,7 @@ body.dungeon-mode #search-stats {
     flex-wrap: wrap;
 }
 
-.tab-controls button {
+.tab-controls:not(.tab-dock) button {
     padding: 0.5rem 1rem;
     border: 1px solid var(--border);
     background: var(--bg);
@@ -8205,24 +8004,24 @@ body.dungeon-mode #search-stats {
     gap: 0.25rem;
 }
 
-.tab-controls button:hover:not(:disabled) {
+.tab-controls:not(.tab-dock) button:hover:not(:disabled) {
     background: var(--accent);
     color: var(--on-accent);
     border-color: var(--accent);
 }
 
-.tab-controls button:disabled {
+.tab-controls:not(.tab-dock) button:disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
 
-.tab-controls button.playing {
+.tab-controls:not(.tab-dock) button.playing {
     background: var(--accent);
     color: var(--on-accent);
     border-color: var(--accent);
 }
 
-.tab-controls .tab-position {
+.tab-controls:not(.tab-dock) .tab-position {
     font-size: 0.75rem;
     color: var(--text-secondary);
     min-width: 80px;
@@ -8386,49 +8185,6 @@ body.dungeon-mode #search-stats {
     gap: 1.5rem;
 }
 
-
-/* Track VIEW tabs: which staff you see (audio = mixer checkboxes/Solo) */
-.track-view-tabs {
-    display: flex;
-    /* Wraps, because this bar is as wide as the arrangement has tracks and
-     * the viewport is as narrow as the reader's zoom makes it. Unwrapped,
-     * a 4-track tune pushed the whole PAGE wider than the viewport at 400%
-     * zoom — the staff itself reflowed correctly and the tab strip was
-     * what ran off the right edge. */
-    flex-wrap: wrap;
-    gap: 0.25rem;
-    margin: 0.5rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 19;
-    background: var(--bg);
-    padding: 0.25rem 0;
-}
-
-.track-view-label {
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-    font-weight: 500;
-    align-self: center;
-    margin-right: 0.15rem;
-    flex: 0 0 auto;
-}
-
-.track-view-tab {
-    padding: 0.3rem 0.9rem;
-    border: 1px solid var(--border);
-    border-radius: 6px 6px 0 0;
-    background: var(--bg-secondary);
-    color: var(--text-secondary);
-    cursor: pointer;
-    font-size: var(--font-sm);
-}
-
-.track-view-tab.active {
-    background: var(--accent);
-    color: var(--on-accent);
-    border-color: var(--accent);
-}
 
 .track-solo {
     margin-left: auto;
@@ -9848,6 +9604,11 @@ body.has-bottomband .container {
     color: var(--text-secondary);
 }
 
+/* a list's name is long ("Friday Jam, Oct 3"): leave room for Edit and ⋯ at 360px */
+@media (max-width: 370px) {
+    .topbar-back-label { max-width: 31vw; }
+}
+
 .topbar-dock .topbar-icon-btn {
     min-width: 34px;
     height: 34px;
@@ -9869,7 +9630,11 @@ body.has-bottomband .container {
     color: var(--accent);
     font-weight: 600;
     font-size: var(--font-base);
-    padding: 0.25rem 0.75rem;
+    padding: 0 0.75rem;
+    /* one line, a fixed height: the ✏️ emoji's line box made it 34px, a
+       pixel past what the band's wrap check allows (topbar-density.spec.js) */
+    height: 32px;
+    line-height: 1;
 }
 
 .topbar-edit-btn:hover { background: color-mix(in srgb, var(--accent) 10%, transparent); }
@@ -10392,20 +10157,215 @@ body.chrome-hidden .app-bottomband:has(#dock-display-btn) {
 
 .dock-play:disabled { opacity: 0.6; }
 
+/* ============================================
+   THE SET-LIST PILL (G19c; docs/js/list-pill.js)
+   ‹ 2 of 9 › at the left of the bottom dock when the song was opened from a
+   list. ‹ and › step; the middle goes back to the list.
+   ============================================ */
+
+.list-pill {
+    display: inline-flex;
+    align-items: stretch;
+    flex: none;
+    box-sizing: border-box;
+    height: 34px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--bg-secondary);
+    font-size: var(--font-sm);
+}
+
+.list-pill-btn {
+    border: none;
+    background: none;
+    color: var(--text-secondary);
+    font: inherit;
+    line-height: 1;
+    padding: 0 0.55rem;
+    cursor: pointer;
+}
+
+.list-pill-btn.list-prev,
+.list-pill-btn.list-next { font-size: 1.25rem; }
+.list-pill-btn.list-pos { padding: 0 0.15rem; color: var(--text); white-space: nowrap; }
+.list-pill-btn:hover:not(:disabled) { background: var(--bg-tertiary); }
+.list-pill-btn:disabled { opacity: 0.35; cursor: default; }
+
+/* the tempo chip a tab in a list gets, and the sheet it opens */
+.dock-note { color: var(--text-secondary); }
+.dock-tempo-chip-n { font-variant-numeric: tabular-nums; }
+.tab-tempo-sheet { text-align: center; }
+.tab-tempo-sheet .dock-tempo { height: 48px; margin: var(--space-md) auto; padding: 0 0.4rem; font-size: var(--font-lg, 1.2rem); }
+.tab-tempo-sheet .dock-tempo-label { display: none; }
+.tab-tempo-sheet .dock-tempo-n { min-width: 3.2ch; font-weight: 600; }
+.tab-tempo-sheet .dock-size-btn { width: 40px; height: 40px; font-size: 1.4rem; }
+
+/* ============================================
+   THE TAB DOCK (G19c; docs/js/tab-dock.js)
+   ▶ [⏹] Tempo − n + · View ▾ · Display, in `.tab-controls.tab-dock`, the same
+   on every width. The tab EDITOR's band is `.tab-controls` without
+   `.tab-dock` and keeps the rules further down.
+   ============================================ */
+
+.app-bottomband .tab-controls.tab-dock {
+    flex: 1;
+    min-width: 0;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 0.4rem;
+    overflow: visible;
+}
+
+.tab-dock > * { flex: none; }
+
+.tab-dock .dock-play {
+    width: auto;
+    min-width: 38px;
+    padding: 0 0.8rem;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.tab-dock .dock-stop {
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background: var(--bg-secondary);
+    color: var(--text);
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+/* Stop appears once playback has started, and goes when it ends */
+.tab-dock .dock-stop:disabled { display: none; }
+
+/* The position readout rides the dock's top edge (empty when stopped) */
+.tab-dock .tab-position {
+    position: absolute;
+    right: 0.75rem;
+    bottom: calc(100% - 9px);
+    padding: 1px 8px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--bg);
+    color: var(--text-secondary);
+    font-size: 0.7rem;
+    line-height: 1.3;
+    font-variant-numeric: tabular-nums;
+    pointer-events: none;
+}
+
+.tab-dock .tab-position:empty { display: none; }
+
+/* ---- The tab Display sheet: the band's controls, moved in ---- */
+.tab-display .dock-group-label { margin-top: var(--space-md); padding-top: var(--space-md); border-top: 1px solid var(--border); }
+.tab-display .dock-group-label:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+.tab-display .dock-group-chart { margin-top: var(--space-md); padding-top: var(--space-md); border-top: 1px solid var(--border); }
+.dock-opt-row.dock-opt-end { justify-content: flex-end; }
+
+.dock-sheet .tab-play-in { padding-top: 0; }
+
+.dock-sheet .tab-capo-indicator {
+    display: block;
+    margin-top: var(--space-sm);
+    color: var(--text-secondary);
+    font-size: var(--font-sm);
+    font-weight: 400;
+}
+
+.dock-sheet .tab-capo-indicator:empty { display: none; }
+
+.dock-sheet .tab-practice > label,
+.dock-sheet .tab-practice > label:hover,
+.dock-sheet .tab-practice > label:has(input:checked) {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.45rem 0.1rem;
+    border: none;
+    background: none;
+    border-radius: 0;
+    font-size: var(--font-base);
+    color: var(--text);
+}
+
+.dock-sheet .tab-practice input[type="checkbox"] {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    accent-color: var(--accent);
+}
+
+.dock-sheet .tab-practice span { opacity: 1; font-size: inherit; }
+
+.dock-sheet .tab-track-mixer {
+    margin: 0;
+    padding: 0;
+    border: none;
+    gap: 0.4rem;
+}
+
+.dock-sheet .tab-track-mixer .mixer-label { display: none; }
+
+.dock-sheet .track-toggle {
+    padding: 0.35rem 0.9rem;
+    border-radius: 999px;
+    font-size: var(--font-sm);
+}
+
+.dock-sheet .track-name { max-width: none; }
+
+/* a take in View's drill-in, and the way back */
+.dock-count {
+    margin-left: 0.4rem;
+    padding: 0 0.45rem;
+    border-radius: 999px;
+    background: var(--bg-tertiary);
+    color: var(--text-secondary);
+    font-size: var(--font-xs);
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.dock-row .dock-row-label { flex: 1; }
+.dock-chev { color: var(--text-secondary); font-size: 1.2rem; }
+
+.dock-back {
+    border: none;
+    background: none;
+    color: var(--text);
+    font: inherit;
+    font-size: 1.4rem;
+    line-height: 1;
+    padding: 0 0.3rem 0 0;
+    cursor: pointer;
+}
+
+.dock-row.dock-take { justify-content: flex-start; gap: 0.5rem; }
+.dock-pin { width: 1.1em; color: var(--warning, #d97706); text-align: center; flex: none; }
+.dock-take-text { flex: 1; min-width: 0; }
+.dock-take-who { font-weight: 600; }
+.dock-take-src { margin-left: 0.4rem; color: var(--text-secondary); font-size: var(--font-sm); }
+
 /* wide screens: the dock lines up with the song's left edge, as the mock draws it */
 @media (min-width: 800px) {
     .app-bottomband:has(.reading-dock) {
         padding-left: calc((100% - min(100% - 4rem, 1800px)) / 2 + 1.25rem);   /* the song's own left edge */
         padding-right: 1.25rem;
     }
-    .reading-dock { justify-content: flex-start; }
+    .reading-dock,
+    .app-bottomband .tab-controls.tab-dock { justify-content: flex-start; }
 }
-
-/* the tab band's View ▾ ends its row (work-view.js createTablatureControls) */
-.app-bottomband .tab-controls .tab-view-btn { flex: none; }
 
 @media (max-width: 420px) {
     .reading-dock { gap: 0.25rem; }
+    .list-pill-btn { padding: 0 0.45rem; }
+    /* a set list's pill takes a share of the row: ABC drops the word Tempo, and the band's margins give */
+    .abc-dock:has(.list-pill) .dock-tempo-label { display: none; }
+    .app-bottomband:has(.list-pill) { padding-left: 0.4rem; padding-right: 0.4rem; }
     .dock-btn { padding: 0 0.55rem; }
     .dock-size { padding-left: 0.45rem; }
     .dock-size-btn { width: 26px; }
@@ -10413,7 +10373,15 @@ body.chrome-hidden .app-bottomband:has(#dock-display-btn) {
 }
 
 @media (max-width: 370px) {
-    .abc-dock .dock-tempo-label { display: none; }
+    /* a set list's pill takes a share of the row: give a little everywhere */
+    .reading-dock:has(.list-pill) .dock-btn { padding: 0 0.45rem; }
+    .reading-dock:has(.list-pill) .dock-size { padding-left: 0.4rem; }
+    .reading-dock:has(.list-pill) .dock-size-btn { width: 24px; }
+    .list-pill-btn { padding: 0 0.35rem; }
+    .list-pill-btn.list-pos { padding: 0 0.1rem; }
+    .abc-dock:has(.list-pill) .dock-size-aa { display: none; }
+    .abc-dock .dock-tempo-label,
+    .tab-dock .dock-tempo-label { display: none; }
 }
 
 /* ---- The sheets behind the dock: View, Key, Display (shell.js openSheet) ---- */
@@ -10486,15 +10454,6 @@ body.chrome-hidden .app-bottomband:has(#dock-display-btn) {
 .dock-sheet .pill-key-btn { padding: 0.65rem 0; font-size: var(--font-base); }
 .dock-sheet .pill-nashville-btn { width: auto; }
 .pill-hint { margin-left: var(--space-sm); color: var(--text-secondary); font-size: var(--font-xs); }
-
-/* When the list nav bar and the bottom band are both present, stack them */
-body.has-list-context .app-bottomband {
-    bottom: var(--listbar-h);
-}
-
-body.has-list-context.has-bottomband .container {
-    padding-bottom: calc(var(--bottomband-h, 52px) + var(--listbar-h) + 20px);
-}
 
 /* ============================================
    PHONE-WIDTH: reclaim horizontal space
@@ -10604,12 +10563,12 @@ body.has-list-context.has-bottomband .container {
        (Play · Stop · tempo · loop · ⚙) and tab-controls-sheet.js re-parents
        the rest into the settings sheet below. */
     /* Asymmetric padding: the top gap is where the position readout rides */
-    .app-bottomband:has(.tab-controls) {
+    .app-bottomband:has(.tab-controls:not(.tab-dock)) {
         padding: 0.7rem 0.35rem 0.4rem;
         min-height: 60px;
     }
 
-    .app-bottomband .tab-controls {
+    .app-bottomband .tab-controls:not(.tab-dock) {
         flex-wrap: nowrap;
         justify-content: center;
         gap: 0.4rem;
@@ -10621,44 +10580,44 @@ body.has-list-context.has-bottomband .container {
         scrollbar-width: thin;
     }
 
-    .app-bottomband .tab-controls > * {
+    .app-bottomband .tab-controls:not(.tab-dock) > * {
         flex: 0 0 auto;
         order: 2;
     }
 
-    .app-bottomband .tab-controls .tab-play-btn { order: 0; }
-    .app-bottomband .tab-controls .tab-stop-btn { order: 1; }
-    .app-bottomband .tab-controls .tab-tempo-group { order: 2; }
-    .app-bottomband .tab-controls .tab-loop-toggle { order: 3; }
-    .app-bottomband .tab-controls .tab-more-btn { order: 4; }
+    .app-bottomband .tab-controls:not(.tab-dock) .tab-play-btn { order: 0; }
+    .app-bottomband .tab-controls:not(.tab-dock) .tab-stop-btn { order: 1; }
+    .app-bottomband .tab-controls:not(.tab-dock) .tab-tempo-group { order: 2; }
+    .app-bottomband .tab-controls:not(.tab-dock) .tab-loop-toggle { order: 3; }
+    .app-bottomband .tab-controls:not(.tab-dock) .tab-more-btn { order: 4; }
 
     /* 44px touch targets (the desktop 32px row was 28-33px on a phone) */
-    .app-bottomband .tab-controls .qc-toggle-btn {
+    .app-bottomband .tab-controls:not(.tab-dock) .qc-toggle-btn {
         height: 44px;
         padding: 0 0.6rem;
         font-size: 0.9rem;
         border-radius: var(--radius-md);
     }
 
-    .app-bottomband .tab-controls .qc-btn {
+    .app-bottomband .tab-controls:not(.tab-dock) .qc-btn {
         width: 40px;
         height: 44px;
         font-size: 1.2rem;
     }
 
-    .app-bottomband .tab-controls .qc-label {
+    .app-bottomband .tab-controls:not(.tab-dock) .qc-label {
         height: 44px;
         min-width: 26px;
         padding: 0 0.2rem;
     }
 
-    .app-bottomband .tab-controls .tab-loop-toggle {
+    .app-bottomband .tab-controls:not(.tab-dock) .tab-loop-toggle {
         height: 44px;
         padding: 0 0.55rem;
         border-radius: var(--radius-md);
     }
 
-    .app-bottomband .tab-controls .tab-more-btn {
+    .app-bottomband .tab-controls:not(.tab-dock) .tab-more-btn {
         width: 44px;
         padding: 0;
         justify-content: center;
@@ -10667,7 +10626,7 @@ body.has-list-context.has-bottomband .container {
 
     /* The clock has no room in a five-control row, so it rides the band's
        top edge instead (empty whenever playback is stopped). */
-    .app-bottomband .tab-controls .tab-position {
+    .app-bottomband .tab-controls:not(.tab-dock) .tab-position {
         position: absolute;
         top: 1px;
         left: 0;
@@ -10681,7 +10640,7 @@ body.has-list-context.has-bottomband .container {
 
     /* The strip's overflow-x would clip the key pill's drop-up, so it
        becomes a sheet pinned above the band instead. */
-    .app-bottomband .tab-controls .pill-popover,
+    .app-bottomband .tab-controls:not(.tab-dock) .pill-popover,
     .tab-settings-sheet {
         position: fixed;
         top: auto;
@@ -10690,12 +10649,6 @@ body.has-list-context.has-bottomband .container {
         right: 0.5rem;
         width: auto;
         max-width: none;
-    }
-
-    /* …and the band itself sits on top of the list nav bar when showing */
-    body.has-list-context .app-bottomband .tab-controls .pill-popover,
-    body.has-list-context .tab-settings-sheet {
-        bottom: calc(var(--bottomband-h, 60px) + var(--listbar-h) + 8px);
     }
 }
 
@@ -10812,7 +10765,7 @@ body.has-list-context.has-bottomband .container {
     }
 
     @container tabband (max-width: 640px) {
-        .app-bottomband .tab-controls {
+        .app-bottomband .tab-controls:not(.tab-dock) {
             flex-wrap: nowrap;
             justify-content: safe center;   /* a strip that overflows scrolls from its first control */
             gap: 0.25rem;
@@ -10822,53 +10775,45 @@ body.has-list-context.has-bottomband .container {
             scrollbar-width: thin;
         }
 
-        .app-bottomband .tab-controls > * {
+        .app-bottomband .tab-controls:not(.tab-dock) > * {
             flex: 0 0 auto;
             order: 2;
         }
 
-        .app-bottomband .tab-controls .tab-play-btn { order: 0; }
-        .app-bottomband .tab-controls .tab-stop-btn { order: 1; }
-        .app-bottomband .tab-controls .tab-tempo-group { order: 2; }
-        .app-bottomband .tab-controls .tab-loop-toggle { order: 3; }
-        .app-bottomband .tab-controls .tab-more-btn { order: 4; }
-        .app-bottomband .tab-controls .tab-view-btn { order: 5; }
+        .app-bottomband .tab-controls:not(.tab-dock) .tab-play-btn { order: 0; }
+        .app-bottomband .tab-controls:not(.tab-dock) .tab-stop-btn { order: 1; }
+        .app-bottomband .tab-controls:not(.tab-dock) .tab-tempo-group { order: 2; }
+        .app-bottomband .tab-controls:not(.tab-dock) .tab-loop-toggle { order: 3; }
+        .app-bottomband .tab-controls:not(.tab-dock) .tab-more-btn { order: 4; }
 
         /* 44px touch targets — a band this narrow is being touched. */
-        .app-bottomband .tab-controls .qc-toggle-btn {
+        .app-bottomband .tab-controls:not(.tab-dock) .qc-toggle-btn {
             height: 44px;
             padding: 0 0.4rem;
             font-size: 0.9rem;
             border-radius: var(--radius-md);
         }
 
-        /* View ▾ (G19b) is the sixth control of the strip: as tall as the rest, but narrow */
-        .app-bottomband .tab-controls .tab-view-btn {
-            height: 44px;
-            padding: 0 0.4rem;
-            border-radius: var(--radius-md);
-            font-size: 0.85rem;
-        }
 
-        .app-bottomband .tab-controls .qc-btn {
+        .app-bottomband .tab-controls:not(.tab-dock) .qc-btn {
             width: 36px;
             height: 44px;
             font-size: 1.2rem;
         }
 
-        .app-bottomband .tab-controls .qc-label {
+        .app-bottomband .tab-controls:not(.tab-dock) .qc-label {
             height: 44px;
             min-width: 26px;
             padding: 0 0.1rem;
         }
 
-        .app-bottomband .tab-controls .tab-loop-toggle {
+        .app-bottomband .tab-controls:not(.tab-dock) .tab-loop-toggle {
             height: 44px;
             padding: 0 0.45rem;
             border-radius: var(--radius-md);
         }
 
-        .app-bottomband .tab-controls .tab-more-btn {
+        .app-bottomband .tab-controls:not(.tab-dock) .tab-more-btn {
             width: 44px;
             padding: 0;
             justify-content: center;
@@ -10876,7 +10821,7 @@ body.has-list-context.has-bottomband .container {
         }
 
         /* No room for the clock in a five-control row; it rides the top edge. */
-        .app-bottomband .tab-controls .tab-position {
+        .app-bottomband .tab-controls:not(.tab-dock) .tab-position {
             position: absolute;
             top: 1px;
             left: 0;
@@ -10898,8 +10843,8 @@ body.has-list-context.has-bottomband .container {
            so a percentage resolves against the viewport and the sheet flies
            off the top of the screen. `--bottomband-h` (published by
            shell.js) is the band's real height and the honest answer. */
-        .app-bottomband .tab-controls .pill-popover,
-        .app-bottomband .tab-controls .tab-settings-sheet {
+        .app-bottomband .tab-controls:not(.tab-dock) .pill-popover,
+        .app-bottomband .tab-controls:not(.tab-dock) .tab-settings-sheet {
             position: fixed;
             top: auto;
             bottom: calc(var(--bottomband-h, 60px) + 8px);
@@ -10908,39 +10853,32 @@ body.has-list-context.has-bottomband .container {
             width: auto;
             max-width: none;
         }
-
-        body.has-list-context .app-bottomband .tab-controls .pill-popover,
-        body.has-list-context .app-bottomband .tab-controls .tab-settings-sheet {
-            bottom: calc(var(--bottomband-h, 60px) + var(--listbar-h) + 8px);
-        }
     }
 }
 
 /* Narrow phones (360px and down): the same five controls, tighter. Keeps
    the 44px height — only the gaps and side padding give. */
 @media (max-width: 374px) {
-    .app-bottomband .tab-controls {
+    .app-bottomband .tab-controls:not(.tab-dock) {
         gap: 0.2rem;
     }
 
-    .app-bottomband .tab-controls .qc-btn {
+    .app-bottomband .tab-controls:not(.tab-dock) .qc-btn {
         width: 34px;
     }
 
-    .app-bottomband .tab-controls .qc-toggle-btn {
+    .app-bottomband .tab-controls:not(.tab-dock) .qc-toggle-btn {
         padding: 0 0.35rem;
     }
 
-    .app-bottomband .tab-controls .tab-loop-toggle {
+    .app-bottomband .tab-controls:not(.tab-dock) .tab-loop-toggle {
         padding: 0 0.4rem;
     }
 
-    .app-bottomband .tab-controls .tab-more-btn {
+    .app-bottomband .tab-controls:not(.tab-dock) .tab-more-btn {
         width: 36px;
     }
 
-    .app-bottomband .tab-controls .tab-view-btn { padding: 0 0.35rem; }
-    .app-bottomband .tab-controls .tab-view-btn .dock-caret { display: none; }
 }
 
 /* While EDITING on a narrow band (G17): the session's two buttons (Submit,

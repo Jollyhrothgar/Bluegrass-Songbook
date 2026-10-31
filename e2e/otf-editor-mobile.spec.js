@@ -26,7 +26,15 @@ async function openTab(page) {
     await expect(band(page).locator('.tab-play-btn')).toBeVisible();
 }
 
-/** Open the ⚙ sheet and return it. */
+/** Open the tab dock's Display sheet and return it. */
+async function openDisplay(page) {
+    await band(page).locator('#dock-display-btn').click();
+    const sheet = page.locator('#dock-display-sheet');
+    await expect(sheet).toBeVisible();
+    return sheet;
+}
+
+/** Open the EDITING band's ⚙ sheet (the reading band has Display instead). */
 async function openSheet(page) {
     const more = band(page).locator('.tab-more-btn');
     await expect(more).toBeVisible();
@@ -42,42 +50,50 @@ async function enterEditMode(page) {
 }
 
 test.describe('phone: the read band', () => {
-    test('collapses to ⚙, and the sheet holds what the band gave up', async ({ page }) => {
+    test('is the tab dock: Play, Tempo, Display, with Stop only once playing', async ({ page }) => {
         await openTab(page);
 
-        // Performance controls stay on the band…
         await expect(band(page).locator('.tab-play-btn')).toBeVisible();
-        await expect(band(page).locator('.tab-stop-btn')).toBeVisible();
         await expect(band(page).locator('.tab-tempo-display')).toBeVisible();
+        await expect(band(page).locator('#dock-display-btn')).toBeVisible();
+        await expect(band(page).locator('.tab-stop-btn')).toBeHidden();
+        // the old ⚙ strip is gone from the reading band
+        await expect(band(page).locator('.tab-more-btn')).toHaveCount(0);
+        await expect(band(page).locator('.tab-controls')).not.toHaveClass(/is-narrow-band/);
 
-        // …everything else moved behind ⚙, and the band says so in the DOM
-        // (tab-controls-sheet.js publishes the decision it made).
-        await expect(band(page).locator('.tab-controls'))
-            .toHaveClass(/is-narrow-band/);
-        await expect(band(page).locator('.tab-settings-sheet')).toBeHidden();
-
-        const sheet = await openSheet(page);
-        await expect(sheet.locator('.tab-size-group')).toBeVisible();
-        const labels = await sheet.locator('.tab-sheet-row:visible .tab-sheet-label')
-            .allTextContents();
-        // Edit left the sheet: it is the top band's now
-        expect(labels).not.toContain('Tab');
+        // Display holds what the band gave up
+        const sheet = await openDisplay(page);
+        await expect(sheet.locator('#tab-size')).toBeVisible();
+        await expect(sheet.locator('#tab-play-in')).toBeVisible();
+        await expect(sheet.locator('.tab-metronome-toggle')).toBeVisible();
+        // Edit is the top band's: not a row in the sheet
         await expect(sheet.locator('.tab-edit-btn')).toHaveCount(0);
     });
 
     test('the sheet closes on Escape and on an outside tap', async ({ page }) => {
         await openTab(page);
-        await openSheet(page);
+        await openDisplay(page);
         await page.keyboard.press('Escape');
-        await expect(band(page).locator('.tab-settings-sheet')).toBeHidden();
+        await expect(page.locator('#dock-display-sheet')).toHaveCount(0);
 
-        await openSheet(page);
-        await page.locator('.song-title').click();
-        await expect(band(page).locator('.tab-settings-sheet')).toBeHidden();
+        await openDisplay(page);
+        await page.locator('.notes-sheet-backdrop:not(.hidden)').click({ position: { x: 20, y: 20 } });
+        await expect(page.locator('#dock-display-sheet')).toHaveCount(0);
     });
 });
 
 test.describe('phone: the edit session', () => {
+    test('the editing band keeps its ⚙ sheet, and has no View or Display', async ({ page }) => {
+        await openTab(page);
+        await enterEditMode(page);
+        await expect(band(page).locator('.tab-controls')).toHaveClass(/is-narrow-band/);
+        await expect(band(page).locator('#dock-view-btn, #dock-display-btn')).toHaveCount(0);
+        const sheet = await openSheet(page);
+        await expect(sheet.locator('.tab-size-group')).toHaveCount(0);   // the editor has its own zoom
+        await page.keyboard.press('Escape');
+        await expect(band(page).locator('.tab-settings-sheet')).toBeHidden();
+    });
+
     test('Edit opens the editor and its buttons stay ON the band', async ({ page }) => {
         await openTab(page);
         await enterEditMode(page);

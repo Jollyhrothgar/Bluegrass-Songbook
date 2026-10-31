@@ -26,10 +26,12 @@ this harness, and gets fixed rather than noted. Three corollaries:
    `list-management.spec.js` drive them with `page.on('dialog')`). That is
    backlog, not a pattern to copy.
 2. **The backend is mocked, never live.** See below.
-3. **Layouts are widths, not devices.** The tab band (`.app-bottomband`, the bottom band; CSS `container: tabband / inline-size`) collapses on its own width
+3. **Layouts are widths, not devices.** The tab EDITING band (`.app-bottomband`, the bottom band; CSS `container: tabband / inline-size`) collapses on its own width
    (`tab-controls-sheet.js` observes the element; CSS uses
    `@container tabband (max-width: 640px)`), so a test reaches the collapsed
-   layout by constraining the container, not only the viewport.
+   layout by constraining the container, not only the viewport. The tab's
+   reading dock has one layout at every width (`work-view.spec.js` pins a
+   480px band to show it).
 
 ## Running
 
@@ -134,34 +136,19 @@ load). Details:
 ### Selectors and fixture works
 
 Shell ids come from `docs/js/shell.js` and `work-view.js`: `#app-topbar`,
-`.topbar-nav-link[data-nav=…]` (full band only), and on a song page the thin
-dock (G19): `#topbar-back`, `#topbar-search`, `#edit-song-btn` (the one Edit),
-`#topbar-overflow-btn`. Everything else song-specific is in ⋯: use
-`openMenu(page, expand?)` from `helpers.js` (rows `#list-picker-btn`,
-`#export-menu-btn` and `#report-menu-btn`, which expand in place to hold
-`[data-action=…]` / `#flag-btn` / `#report-bug-btn` / `#copyright-btn`;
-`#overflow-tour`, `#menu-go-*`, `#menu-account` / `#menu-sign-in`). The writer
-line `#song-details-btn` opens `#song-details-sheet` (`#edit-meta-btn` is its
-Edit details). The song page's controls are the reading dock in
-`#app-bottomband` (G19b): `#dock-key-btn` (opens `#dock-key-sheet`),
-`#dock-size` (`[data-size="1"]` / `"-1"`), View as `#dock-view` (segments
-`[data-view=lyrics|both|chart]`) or, when the song has versions, tabs or a
-hybrid part, `#dock-view-btn` (opens `#song-view-sheet`: `.dock-row[data-view]`,
-`.dock-row[data-part]`, the versions as `.arrangement-item`) and
-`#dock-display-btn` (opens `#dock-display-sheet`: `#pill-compact`,
-`#pill-autohide`, `#pill-chord-mode`, and for a chart `#pill-chart-cells`,
-`#pill-chart-bars`, `#pill-chart-order`, whose buttons carry `data-value`). The
-pill row and part tabs are gone. ABC notation has `#abc-play-btn`,
-`#abc-tempo-label`, `#abc-size`; a tab part's band ends in `.tab-view-btn`.
+`.topbar-nav-link[data-nav=…]` (full band only). The song page's selectors (the
+thin dock, ⋯ via `openMenu`, Details, the reading dock via `openDock`, the tab
+dock and its sheets, set lists via `set-list-dock.spec.js`'s seeding) are in
+`docs/js/DOCKS.md` § Selectors; read it before writing a song-page spec.
+
 In the lead-sheet editor the band is `#editor-band`: `#editor-mode-*`,
 `#editor-undo/redo`, `#editor-key-select` and the Display pill, whose options
 exist only once it is open, so use `openDisplay(page)` from
-`helpers/lead-editor.js`; `#flag-modal` (feedback), `#song-nav-bar` (list
-context). `.pill-btn` opens a `.pill-popover`; one is open at a time, and the
+`helpers/lead-editor.js`; `#flag-modal` (feedback). `.pill-btn` opens a `.pill-popover`; one is open at a time, and the
 dock sheets are modal (close with `closeSheet`). Both bands auto-hide while
 scrolling a song only when Display ▸ Auto-hide controls is on
 (`body.chrome-hidden`; off by default), and only on a page with
-`#dock-display-btn` (never a tab or ABC page). To enter the tab editor press Edit with
+`#dock-display-btn` (never ABC; a tab not while it plays). To enter the tab editor press Edit with
 `pressTabEdit(page)` (`helpers/tab-edit.js`); the band has no Edit of its own.
 
 Tab-editor selectors: `.editor-renderer .stave-row`, `.editor-canvas-container`,

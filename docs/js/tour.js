@@ -146,7 +146,7 @@ export const TOUR_STEPS = [
         page: 'tab',
         targets: ['.tab-play-btn'],
         title: 'Play the tab',
-        body: 'Tabs play back. Slow the tempo down, loop it, or change the key.',
+        body: 'Tabs play back. Slow the tempo down; Display has loop, metronome, count-in and the key to play in.',
     },
     {
         id: 'tab-edit',
