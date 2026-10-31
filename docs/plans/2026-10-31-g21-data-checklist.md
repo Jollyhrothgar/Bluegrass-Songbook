@@ -143,3 +143,11 @@ into it.
     marks, chords, diagrams, metadata and reading list are all identical.
   - The diff is 1,052 files, +46,820 / −54,057.
   - Waiting for Mike's yes before the real run.
+- 2026-10-31 · Mike: "Run it". The re-import was committed (9a8ed53f7), with
+  the same counts as the trial; the protected files are untouched. Then:
+  - the editor passes `track.id` (#354 has the same line);
+  - the banjo C Tuning preset is gCGBD;
+  - the fix-it G21 row has its "data:" clause.
+
+  Batch: npm 5440 ✓, pytest 1681 ✓ 1 skip, full e2e 777/777. **PR #355**,
+  waiting for Mike to look at FMB (dev server on port 8095).
