@@ -28,3 +28,14 @@ parts:
     source: manual
     author: Mike Beaumier
     imported_at: '2026-10-29'
+- type: tablature
+  format: otf
+  file: banjo.otf.json
+  instrument: banjo
+  provenance:
+    source: user-submission
+    source_id: pending:tab:old-home-place:m6zm6un3:4d6d939f391d
+    submitted_by: 4bcc2445-5661-4569-b55d-c29e0c101215
+    submitted_at: '2026-10-31'
+    author: Ricky Mier
+    author_url: https://www.banjohangout.org/tab/browse.asp?m=detail&v=16269

@@ -97,6 +97,30 @@ test.describe('WorkView - Tablature', () => {
     });
 });
 
+test.describe('WorkView - a 2/2 tab', () => {
+    // A service worker's fetches skip page routes, and this route must hold
+    test.use({ serviceWorkers: 'block' });
+
+    test('counts its BPM in half notes', async ({ page }) => {
+        // A frozen 2/2 document stands in for the song's tab: the file's tempo
+        // is quarter-note BPM, the band's number is the half-note pulse.
+        await page.route('**/data/tabs/foggy-mountain-breakdown-mandolin*', route => route.fulfill({
+            json: {
+                otf_version: '1.2',
+                metadata: { title: 'Cut time', time_signature: '2/2', tempo: 200 },
+                timing: { ticks_per_beat: 480 },
+                tracks: [{ id: 'banjo', instrument: '5-string-banjo', tuning: ['D4', 'B3', 'G3', 'D3', 'G4'] }],
+                notation: { banjo: [{ measure: 1, events: [{ tick: 0, notes: [{ s: 1, f: 0, dur: 240 }] }] }] },
+            },
+        }));
+        await page.goto('/#work/foggy-mountain-breakdown/mandolin');
+        await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
+
+        await expect(page.locator('.tab-tempo-display')).toHaveText('100');
+        await expect(page.locator('.tab-feel-group')).toHaveCount(0);
+    });
+});
+
 test.describe('WorkView - View sheet (parts)', () => {
     // lonesome-road-blues-1 has a chordful lead sheet and a banjo tab
     // → View ▾ lists both (many multi-part works have ABC-only lead sheets,

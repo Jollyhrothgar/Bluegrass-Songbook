@@ -6,7 +6,7 @@
 // tests below constrain the viewport rather than naming a device.
 import { test, expect } from './fixtures.js';
 import { mockSupabase } from './helpers/supabase-mock.js';
-import { openMenu, openDock, closeSheet } from './helpers.js';
+import { openMenu, openDock, closeSheet, serveWithoutTabs } from './helpers.js';
 import { pressTabEdit } from './helpers/tab-edit.js';
 import { songReady } from './helpers/tour.js';
 
@@ -426,6 +426,8 @@ const dockFits = async (page, selector) => {
 };
 
 test.describe('the reading dock', () => {
+    test.use({ serviceWorkers: 'block' });
+
     test('the pill row and the part tabs are gone from the page', async ({ page }) => {
         await page.goto(LEAD);
         await songReady(page);
@@ -435,6 +437,7 @@ test.describe('the reading dock', () => {
     });
 
     test('wide: Key · Size · View · Display in the bottom band, at its left edge', async ({ page }) => {
+        await serveWithoutTabs(page, 'old-home-place');
         await page.goto(LEAD);
         await songReady(page);
         const band = page.locator('#app-bottomband');
@@ -497,9 +500,10 @@ test.describe('the reading dock', () => {
 
 for (const width of [360, 390]) {
     test.describe(`the reading dock at ${width}px`, () => {
-        test.use({ viewport: { width, height: 800 } });
+        test.use({ viewport: { width, height: 800 }, serviceWorkers: 'block' });
 
         test('Key · Size · Lyrics | Chart · Display fit on one row', async ({ page }) => {
+            await serveWithoutTabs(page, 'old-home-place');
             await page.goto(LEAD);
             await songReady(page);
             await expect(page.locator('#dock-view')).toBeVisible();
@@ -509,6 +513,7 @@ for (const width of [360, 390]) {
         });
 
         test('the chart view keeps the same dock', async ({ page }) => {
+            await serveWithoutTabs(page, 'old-home-place');
             await page.goto(`${LEAD}`);
             await songReady(page);
             await page.locator('#dock-view [data-view="chart"]').click();

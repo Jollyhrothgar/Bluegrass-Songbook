@@ -6,7 +6,10 @@
 // The chart has no controls of its own: View is Lyrics | Chart (Lyrics | Lyrics
 // + Chart | Chart on a wide screen) and the chart's choices are in Display ▸ Chart.
 import { test, expect } from './fixtures.js';
-import { openDock, closeSheet } from './helpers.js';
+import { openDock, closeSheet, serveWithoutTabs } from './helpers.js';
+
+test.use({ serviceWorkers: 'block' });
+test.beforeEach(async ({ page }) => { await serveWithoutTabs(page, 'old-home-place'); });
 
 const open = async (page, { column = true } = {}) => {
     await page.goto('/#work/old-home-place');

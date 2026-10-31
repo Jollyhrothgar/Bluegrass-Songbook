@@ -41,6 +41,28 @@ test.describe('Include the dungeon', () => {
         await expect(box(page)).not.toBeChecked();
     });
 
+    test('the home page offers it too, and it is the same choice', async ({ page }) => {
+        const homeBox = page.locator('#landing-include-dungeon');
+        await page.goto('/');
+        await expect(homeBox).toBeVisible();
+        await expect(homeBox).not.toBeChecked();
+
+        // Ticked on the home page, it applies to a search started there
+        await homeBox.check();
+        await page.fill('#landing-search-input', ARCHIVED);
+        await page.press('#landing-search-input', 'Enter');
+        const row = archivedResult(page).first();
+        await expect(row).toBeVisible({ timeout: 20000 });
+        await expect(row.locator('.dungeon-badge')).toBeVisible();
+        await expect(box(page)).toBeChecked();
+
+        // Unticked on the search bar, the home page's box follows
+        await box(page).uncheck();
+        await expect(homeBox).not.toBeChecked();
+        await page.goto('/');
+        await expect(homeBox).not.toBeChecked();
+    });
+
     test('is not offered inside the dungeon itself', async ({ page }) => {
         await page.goto('/#dungeon');
         await expect(page.locator('body')).toHaveClass(/dungeon-mode/);

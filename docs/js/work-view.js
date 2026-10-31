@@ -71,7 +71,7 @@ import { registerReturnSource } from './auth-return.js';
 import {
     TimelineTiming, identityTimeline, readingListTimeline,
     expandNotation, makePlaybackToVisualMapper,
-    maxMeasureIn, measureTimingFromOtf,
+    maxMeasureIn, measureTimingFromOtf, quartersPerBeat,
     analyzeReadingList, prepareCompactNotation, densifyNotation,
     attachOtfDecorations,
     attachChordDiagrams,
@@ -3420,6 +3420,10 @@ function landSubmittedTake(result, part, container) {
     window.refreshPendingSongs?.();
 }
 
+function bandQuartersPerBeat(otf) {
+    return quartersPerBeat(otf.metadata?.time_signature, twoFeelMode ? 'two' : null);
+}
+
 /**
  * Create tablature controls: the band the tab page mounts in the bottom band.
  *
@@ -3437,10 +3441,10 @@ function createTablatureControls(otf, part, { editing = false } = {}) {
     const quarterBpm = (tempoOverride && tempoOverride.workId === currentWork?.id)
         ? tempoOverride.quarterBpm
         : (otf.metadata?.tempo || 100);
-    // Displayed BPM is per BEAT of the current feel: in two feel (cut
-    // time) the beat is a half note, so the same absolute speed shows
-    // as half the number (240 quarters == 120 in cut time).
-    const defaultTempo = Math.round(quarterBpm / (twoFeelMode ? 2 : 1));
+    // Displayed BPM is per BEAT: in a written 2/2 or two feel (cut time)
+    // the beat is a half note, so the same absolute speed shows as half
+    // the number (240 quarters == 120 in cut time).
+    const defaultTempo = Math.round(quarterBpm / bandQuartersPerBeat(otf));
     const originalKey = currentWork.key || 'G';
 
     // Percussion is dropped up front: it has no tuning to sound (otf-tracks.js)
@@ -3733,7 +3737,7 @@ function setupTablaturePlayer(otf, controls, renderer) {
         // convert the display while keeping the actual speed.
         tempoOverride = {
             workId: currentWork?.id,
-            quarterBpm: currentTempo * (twoFeelMode ? 2 : 1),
+            quarterBpm: currentTempo * bandQuartersPerBeat(otf),
         };
         updateTempoButtons();
     };
@@ -3801,8 +3805,8 @@ function setupTablaturePlayer(otf, controls, renderer) {
         try {
             await player.play(otf, {
                 // Player tempo is quarter-note bpm; the displayed number is
-                // per-beat of the feel, so two feel plays twice as fast.
-                tempo: currentTempo * (twoFeelMode ? 2 : 1),
+                // per-beat, so a half-note pulse plays twice as fast.
+                tempo: currentTempo * bandQuartersPerBeat(otf),
                 transpose: currentCapo,
                 trackIds: getEnabledTrackIds(),
                 feel: twoFeelMode ? 'two' : null,
