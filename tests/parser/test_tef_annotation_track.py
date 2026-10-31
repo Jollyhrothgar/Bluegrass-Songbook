@@ -44,8 +44,10 @@ def owner(instruments, row):
 def test_each_text_gets_the_track_its_string_row_is_on(path):
     tef, otf = convert(path)
     ids = [t["id"] for t in otf["tracks"]]
-    assert len(otf["annotations"]) == len(tef.text_events) > 0
-    for text, a in zip(tef.text_events, otf["annotations"]):
+    # FMB's typed m/i letters become fingering (G21b); every text left keeps its order
+    kept = [t for t in tef.text_events if t.text.strip().lower() not in ("m", "i")]
+    assert len(otf["annotations"]) == len(kept) > 0
+    for text, a in zip(kept, otf["annotations"]):
         assert a["text"] == text.text
         assert a["track"] == ids[owner(tef.instruments, text.string_row)]
     assert otf_schema.check(otf) == ([], [])
@@ -55,13 +57,14 @@ def test_foggy_mountain_breakdown_v2_four_tracks():
     tef, otf = convert(FMB)
     assert tef.header.is_v2
     assert [t["id"] for t in otf["tracks"]] == ["banjo", "guitar", "guitar-2", "bass"]
+    # 977 texts in the file; the banjo's 426 m/i letters became fingering (G21b)
     assert Counter(a["track"] for a in otf["annotations"]) == {
-        "banjo": 545, "guitar": 208, "guitar-2": 113, "bass": 111}
-    # Measure 2, tick 0: six texts, four tracks (the pile-up G21 is about).
+        "banjo": 119, "guitar": 208, "guitar-2": 113, "bass": 111}
+    # Measure 2, tick 0: five texts, four tracks (the pile-up G21 is about).
     at_start = {(a["text"], a["track"]) for a in otf["annotations"]
                 if a["measure"] == 2 and a["tick"] == 0}
     assert at_start == {
-        ("G", "banjo"), ("m", "banjo"), ("G: Lead Guitar...", "guitar"),
+        ("G", "banjo"), ("G: Lead Guitar...", "guitar"),
         ("Blank for now...", "guitar"), ("G: Rhythm Guitar...", "guitar-2"),
         ("G: Bass...", "bass")}
 
@@ -84,9 +87,9 @@ def test_a_row_past_every_track_leaves_the_text_trackless():
     assert otf_schema.check(otf) == ([], [])
 
 
-def test_the_key_order_is_text_then_track():
+def test_the_key_order_is_text_then_track_then_kind():
     _, otf = convert(CUMBERLAND)
-    assert list(otf["annotations"][0]) == ["measure", "tick", "text", "track"]
+    assert list(otf["annotations"][0]) == ["measure", "tick", "text", "track", "kind"]
     assert otf["otf_version"] == "1.3"
 
 
@@ -118,21 +121,31 @@ def test_both_generations_agree_on_brilliancy():
     assert place(BRILLIANCY_V2) == place(BRILLIANCY_V3)
 
 
-def test_foggy_mountain_breakdown_fingering_letters_are_below():
-    _, otf = convert(FMB)
-    below = [a for a in otf["annotations"] if a.get("place") == "below"]
-    assert len(below) == 426
-    assert {a["text"] for a in below} == {"m", "i"}
-    assert {a["track"] for a in below} == {"banjo"}
+def fingers(otf):
+    return sum("finger" in n for ms in otf["notation"].values() for m in ms
+               for e in m["events"] for n in e["notes"])
+
+
+def test_foggy_mountain_breakdown_fingering_letters_are_below_and_become_fingering():
+    tef, otf = convert(FMB)
+    letters = [t for t in tef.text_events if t.placement == 1]
+    assert len(letters) == 426
+    assert {t.text for t in letters} == {"m", "i"}
+    # G21b: no text is left below; each letter is the finger of its banjo note
+    assert not [a for a in otf["annotations"] if a.get("place") == "below"]
+    assert fingers(otf) == 426
 
 
 @pytest.mark.parametrize("path, below, total", [(TEMPERANCE, 16, 64), (TEMPERANCE_2, 114, 159)],
                          ids=["21627", "28162"])
 def test_temperance_reel_v3_texts_below(path, below, total):
-    """V3 byte 11, counted in two V3 corpus files."""
-    _, otf = convert(path)
-    assert len(otf["annotations"]) == total
-    assert sum(a.get("place") == "below" for a in otf["annotations"]) == below
+    """V3 byte 11, counted in two V3 corpus files; every one is a typed fingering letter (G21b)."""
+    tef, otf = convert(path)
+    assert len(tef.text_events) == total
+    assert sum(t.placement == 1 for t in tef.text_events) == below
+    assert len(otf["annotations"]) == total - below
+    assert not [a for a in otf["annotations"] if a.get("place") == "below"]
+    assert fingers(otf) == below
 
 
 def test_placement_two_and_three_are_not_kept():
@@ -142,4 +155,4 @@ def test_placement_two_and_three_are_not_kept():
         assert "place" not in tef_to_otf(tef).to_dict()["annotations"][0]
     tef.text_events[0].placement = 1
     assert tef_to_otf(tef).to_dict()["annotations"][0]["place"] == "below"
-    assert list(tef_to_otf(tef).to_dict()["annotations"][0]) == ["measure", "tick", "text", "track", "place"]
+    assert list(tef_to_otf(tef).to_dict()["annotations"][0]) == ["measure", "tick", "text", "track", "kind", "place"]

@@ -156,7 +156,7 @@ describe('.tef writer: feature fixtures (write -> parse -> equal)', () => {
         const otf = doc({
             metadata: { title: 'Marked up', time_signature: '4/4', tempo: 77, tab_by: { name: 'Jess Picker', url: 'https://example.com/jess' } },
             notation: { banjo },
-            annotations: [{ measure: 1, tick: 0, text: 'G', track: 'banjo' }, { measure: 1, tick: 0, text: 'Intro', track: 'banjo' },
+            annotations: [{ measure: 1, tick: 0, text: 'G', track: 'banjo', kind: 'chord' }, { measure: 1, tick: 0, text: 'Intro', track: 'banjo' },
                 { measure: 2, tick: 960, text: 'Keep this loose', track: 'banjo' }, { measure: 4, tick: 1440, text: 'Slide to the D', track: 'banjo' }],
             reading_list: [{ from_measure: 1, to_measure: 2, name: 'Part A' }, { from_measure: 3, to_measure: 4 },
                 { from_measure: 1, to_measure: 4, name: 'Whole tune, played once' }],
@@ -649,17 +649,19 @@ describe('.tef writer: what a TablEdit export of the written file showed', () =>
                 { measure: 2, tick: 0, text: 'banjo text', track: 'banjo' },
                 { measure: 2, tick: 0, text: 'guitar text', track: 'guitar' },
                 { measure: 2, tick: 0, text: 'bass text', track: 'bass' },
-                { measure: 2, tick: 480, text: 'chord', track: 'guitar', kind: 'chord' },
+                { measure: 2, tick: 480, text: 'Em', track: 'guitar', kind: 'chord' },
             ]);
             const { bytes, notices, back } = roundTrip(otf);
             expect(rowOf(bytes, 'banjo text')).toBe(0);
             expect(rowOf(bytes, 'guitar text')).toBe(5);
             expect(rowOf(bytes, 'bass text')).toBe(11);
-            expect(rowOf(bytes, 'chord')).toBe(5);
+            expect(rowOf(bytes, 'Em')).toBe(5);
             expect(back.annotations.map(a => [a.text, a.track]).sort()).toEqual([
-                ['banjo text', 'banjo'], ['bass text', 'bass'], ['chord', 'guitar'], ['guitar text', 'guitar']]);
-            // kind is not stored in a .tef: the chord reads back as plain text
-            expect(back.annotations.every(a => !('kind' in a))).toBe(true);
+                ['Em', 'guitar'], ['banjo text', 'banjo'], ['bass text', 'bass'], ['guitar text', 'guitar']]);
+            // kind is not stored in a .tef: the chord is written as plain text, and the importer
+            // derives kind again from the text (G21d)
+            expect(back.annotations.map(a => [a.text, a.kind]).sort()).toEqual([
+                ['Em', 'chord'], ['banjo text', undefined], ['bass text', undefined], ['guitar text', undefined]]);
             expect(noticeLine(notices)).toBe('');
         });
 
@@ -691,7 +693,9 @@ describe('.tef writer: what a TablEdit export of the written file showed', () =>
         });
 
         it('an unedited original keeps its placement byte; moving a text to the other side changes only that byte', () => {
-            const source = corpus('banjo-hangout/downloads/21627_tef_temperance_reel.tef');     // V3: 16 below, 48 above
+            // TablEdit's own V3 conversion of Brilliancy: three "Part" labels below, the rest above.
+            // (Temperance Reel's below texts are all typed fingering letters, which become finger, G21b.)
+            const source = new Uint8Array(fs.readFileSync(path.join(repo, 'tests/parser/fixtures/brilliancy_11655_tabledit_v3.tef')));
             const a = parseTef(source, 'x');
             const placements = (b) => cellsOf(b, 0x39).map(c => `${c.pos}:${c.row}:${c.rec[9]}:${c.rec[11]}`).sort();
             expect(placements(writeTef(a, { source, template }).bytes)).toEqual(placements(source));
@@ -702,7 +706,8 @@ describe('.tef writer: what a TablEdit export of the written file showed', () =>
             const diff = placements(bytes).filter(x => !placements(source).includes(x));
             expect(diff).toHaveLength(1);
             expect(diff[0].endsWith(':0')).toBe(true);
-            expect(parseTef(bytes, 'x').annotations.filter(t => t.place === 'below')).toHaveLength(15);
+            expect(parseTef(source, 'x').annotations.filter(t => t.place === 'below')).toHaveLength(3);
+            expect(parseTef(bytes, 'x').annotations.filter(t => t.place === 'below')).toHaveLength(2);
         });
 
         it('an unedited original keeps the exact row it had, track and all', () => {

@@ -23,14 +23,15 @@ describe('annotation track from the string row', () => {
     it('Foggy Mountain Breakdown (V2, four tracks)', () => {
         const otf = parseTef(bytesOf(FMB), '1481.tef');
         expect(otf.tracks.map(t => t.id)).toEqual(['banjo', 'guitar', 'guitar-2', 'bass']);
-        expect(otf.annotations).toHaveLength(977);
+        // 977 texts in the file; the banjo's 426 m/i letters became fingering (G21b)
+        expect(otf.annotations).toHaveLength(551);
         expect(count(otf.annotations.map(a => a.track))).toEqual({
-            banjo: 545, guitar: 208, 'guitar-2': 113, bass: 111 });
+            banjo: 119, guitar: 208, 'guitar-2': 113, bass: 111 });
         const atStart = otf.annotations.filter(a => a.measure === 2 && a.tick === 0)
             .map(a => [a.text, a.track]).sort();
         expect(atStart).toEqual([
             ['Blank for now...', 'guitar'], ['G', 'banjo'], ['G: Bass...', 'bass'],
-            ['G: Lead Guitar...', 'guitar'], ['G: Rhythm Guitar...', 'guitar-2'], ['m', 'banjo'],
+            ['G: Lead Guitar...', 'guitar'], ['G: Rhythm Guitar...', 'guitar-2'],
         ]);
         expect(validateOTF(otf).errors).toEqual([]);
         expect(otf.otf_version).toBe('1.3');
@@ -71,18 +72,29 @@ describe('annotation place from the placement value', () => {
         expect(placed(BRILLIANCY_V3)).toEqual(v2);
     });
 
-    it('Foggy Mountain Breakdown: the 426 m and i letters are below, on the banjo', () => {
-        const below = parseTef(bytesOf(FMB), 'x.tef').annotations.filter(a => a.place === 'below');
-        expect(below).toHaveLength(426);
-        expect(new Set(below.map(a => a.text))).toEqual(new Set(['m', 'i']));
-        expect(new Set(below.map(a => a.track))).toEqual(new Set(['banjo']));
+    // G21b: every below text in these three files is a typed fingering letter, so none is
+    // left as an annotation; each became the finger of the note it sat on.
+    const fingers = (otf) => Object.values(otf.notation).flat().flatMap(m => m.events.flatMap(e => e.notes))
+        .filter(n => n.finger).length;
+    const belowInFile = (file) => parseTefBytes(bytesOf(file), 'x').text_events.filter(t => t.placement === 1);
+
+    it('Foggy Mountain Breakdown: the 426 m and i letters are below, on the banjo, and become fingering', () => {
+        const letters = belowInFile(FMB);
+        expect(letters).toHaveLength(426);
+        expect(new Set(letters.map(t => t.text))).toEqual(new Set(['m', 'i']));
+        const otf = parseTef(bytesOf(FMB), 'x.tef');
+        expect(otf.annotations.filter(a => a.place === 'below')).toHaveLength(0);
+        expect(fingers(otf)).toBe(426);
     });
 
     it.each([['21627_tef_temperance_reel.tef', 16, 64], ['28162_tef_temperance_reel.tef', 114, 159]])(
-        'Temperance Reel %s (V3): %i of %i texts are below', (name, below, total) => {
-            const otf = parseTef(bytesOf(`sources/banjo-hangout/downloads/${name}`), name);
-            expect(otf.annotations).toHaveLength(total);
-            expect(otf.annotations.filter(a => a.place === 'below')).toHaveLength(below);
+        'Temperance Reel %s (V3): %i of %i texts are below, all fingering letters', (name, below, total) => {
+            const file = `sources/banjo-hangout/downloads/${name}`;
+            const otf = parseTef(bytesOf(file), name);
+            expect(belowInFile(file)).toHaveLength(below);
+            expect(otf.annotations).toHaveLength(total - below);
+            expect(otf.annotations.filter(a => a.place === 'below')).toHaveLength(0);
+            expect(fingers(otf)).toBe(below);
         });
 
     it('placements 0, 2 and 3 leave place absent; 1 sets it', () => {
@@ -93,6 +105,6 @@ describe('annotation place from the placement value', () => {
         };
         for (const value of [0, 2, 3]) expect('place' in edited(value)).toBe(false);
         expect(edited(1).place).toBe('below');
-        expect(Object.keys(edited(1))).toEqual(['measure', 'tick', 'text', 'track', 'place']);
+        expect(Object.keys(edited(1))).toEqual(['measure', 'tick', 'text', 'track', 'kind', 'place']);
     });
 });

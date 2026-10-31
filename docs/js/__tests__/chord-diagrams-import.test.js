@@ -54,7 +54,7 @@ describe('chord diagrams: V3 import', () => {
     });
 
     it('keeps the text annotation and emits a valid document', () => {
-        expect(otf.annotations).toEqual([{ measure: 1, tick: 240, text: 'G', track: 'banjo' }]);
+        expect(otf.annotations).toEqual([{ measure: 1, tick: 240, text: 'G', track: 'banjo', kind: 'chord' }]);
         expect(otf.x_source).toEqual({ skipped: DECOYS });
         expect(validateOTF(otf).errors).toEqual([]);
     });
