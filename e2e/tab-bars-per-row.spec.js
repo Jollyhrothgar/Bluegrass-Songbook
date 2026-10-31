@@ -8,7 +8,6 @@ import { openDock, closeSheet } from './helpers.js';
 import { pressTabEdit } from './helpers/tab-edit.js';
 
 const TAB = '/#work/foggy-mountain-breakdown/banjo-tab';
-const DENSE_TAB = '/#work/brown-county-breakdown/banjo-tab';   // 32nds, the densest banjo tab in works/
 const KEY = 'bgb-tab-bars';
 
 const gotoTab = async (page, url = TAB) => {
@@ -226,18 +225,6 @@ test.describe('bars per row on a tab', () => {
         expect((await shown(third)).isAuto).toBe(true);
     });
 
-    // Mike: "if there's a ton of 64th notes … the auto should make the bars a bit
-    // wider because otherwise the notes will be horridly cramped."
-    test('Auto gives a dense tab fewer bars per row than a sparse one at the same width', async ({ page }) => {
-        await page.setViewportSize({ width: 1440, height: 900 });
-        await gotoTab(page);
-        const sparse = (await shown(page)).count;
-        await gotoTab(page, DENSE_TAB);
-        const dense = await shown(page);
-        expect(dense.isAuto).toBe(true);
-        expect(dense.count).toBeLessThan(sparse);
-    });
-
     test('pressing Edit after + keeps the reader\'s bars per row', async ({ page }) => {
         await page.setViewportSize({ width: 1440, height: 900 });
         await gotoTab(page);
@@ -249,5 +236,34 @@ test.describe('bars per row on a tab', () => {
         const pinned = await page.evaluate(() =>
             document.querySelector('.otf-editor').__otfEditor.renderer._computedMeasuresPerRow);
         expect(pinned).toBe(count);
+    });
+});
+
+// Mike: "if there's a ton of 64th notes … the auto should make the bars a bit
+// wider because otherwise the notes will be horridly cramped." No tab in works/
+// is that dense once Auto reads a bar's typical spacing (quick hammer-on pairs
+// don't count), so this serves the same banjo tab rewritten as runs of 32nds.
+test.describe('Auto reads the music', () => {
+    test.use({ serviceWorkers: 'block', viewport: { width: 1440, height: 900 } });
+
+    test('a dense tab gets fewer bars per row than the same tab as written', async ({ page }) => {
+        await gotoTab(page);
+        const sparse = await shown(page);
+        expect(sparse.isAuto).toBe(true);
+        await page.route('**/*.otf.json*', async route => {
+            const response = await route.fetch();
+            const otf = await response.json();
+            for (const measures of Object.values(otf.notation || {})) {
+                for (const m of measures) {
+                    m.events = Array.from({ length: 32 }, (_, k) => ({ tick: k * 60, notes: [{ s: 1 + (k % 5), f: k % 4 }] }));
+                }
+            }
+            await route.fulfill({ response, json: otf });
+        });
+        await page.reload();
+        await page.locator('.tablature-container .stave-row').first().waitFor({ timeout: 20000 });
+        const dense = await shown(page);
+        expect(dense.isAuto).toBe(true);
+        expect(dense.count).toBeLessThan(sparse.count);
     });
 });

@@ -137,7 +137,7 @@ describe('TabRenderer width budget', () => {
                 const sparse = draw(1300).r.rowFit().auto;
                 const busy = draw(1300, 'auto', { notation: dense }).r.rowFit().auto;
                 expect(busy).toBeLessThan(sparse);
-                expect(busy).toBe(1);   // 32nds need ~670px a bar, 1220 holds one
+                expect(busy).toBe(3);   // 32nds need 32 x 11 + 30 = 382px a bar; 1220 holds three
             });
 
             it('Auto follows Size: a bigger staff leaves fewer bars per row', () => {

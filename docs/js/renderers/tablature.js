@@ -327,7 +327,10 @@ export class TabRenderer {
                                       // hardMinMeasureWidth shows fewer (see rowFit()).
             hardMinMeasureWidth: 90,  // A chosen count squeezes bars down to here, never
                                       // past it, so a row cannot run off the side
-            noteSlotWidth: 20,        // Auto: readable width of one note slot, in layout px
+            noteSlotWidth: 11,        // Auto: readable width of one note slot, in layout px.
+                                      // ~ what a 16th-note tab got before Auto read the
+                                      // music (180px / 16), so typical tabs keep their
+                                      // bars per row and only denser ones widen.
                                       // (a fret chip is up to ~14 wide, plus a ~6 gap)
             autoPercentile: 0.9,      // Auto sizes to this share of the bars, so one freak
                                       // bar does not shrink the whole tab
@@ -581,7 +584,8 @@ export class TabRenderer {
      *
      * Per bar: its length over the smallest gap between two note onsets is
      * how many note slots the bar must hold, and each slot gets
-     * `noteSlotWidth` (plus the 30px of margin a bar spends on its barlines).
+     * `noteSlotWidth` (plus the 30px of margin a bar spends on its barlines),
+     * from the bar's typical (median) gap between onsets, grace notes left out.
      * A bar with fewer than two onsets, or none, needs only the floor
      * (`targetMeasureWidth`, what Auto aimed for before it read the music).
      * The tab's need is the `autoPercentile` bar by width, so a single bar of
@@ -597,12 +601,19 @@ export class TabRenderer {
         if (!notation || notation.length === 0) return floor;
         const needs = notation.map(m => {
             const ticks = ticksOf(m);
+            // grace notes are drawn small, off the beat grid: they don't count
             const onsets = [...new Set((m.events || [])
-                .filter(e => e.notes && e.notes.length)
+                .filter(e => e.notes && e.notes.some(n => !n.grace))
                 .map(e => e.tick))].sort((a, b) => a - b);
-            let gap = Infinity;
-            for (let i = 1; i < onsets.length; i++) gap = Math.min(gap, onsets[i] - onsets[i - 1]);
-            if (!ticks || !isFinite(gap) || gap <= 0) return floor;
+            const gaps = [];
+            for (let i = 1; i < onsets.length; i++) {
+                if (onsets[i] > onsets[i - 1]) gaps.push(onsets[i] - onsets[i - 1]);
+            }
+            if (!ticks || !gaps.length) return floor;
+            // the bar's TYPICAL spacing (lower median), so one quick hammer-on
+            // pair doesn't make a whole bar look like a run of 32nds
+            gaps.sort((a, b) => a - b);
+            const gap = gaps[Math.floor((gaps.length - 1) / 2)];
             return Math.max(floor, (ticks / gap) * opt.noteSlotWidth + 30);
         }).sort((a, b) => a - b);
         const rank = Math.ceil(opt.autoPercentile * needs.length) - 1;

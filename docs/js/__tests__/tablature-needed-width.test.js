@@ -1,7 +1,9 @@
 // G22: what Auto reads from the music. TabRenderer.neededMeasureWidth is pure:
-// a bar's needed width is (bar length / smallest gap between note onsets) x a
-// readable width per note slot (+ 30px of barline margin), never below
-// targetMeasureWidth; the tab needs the 90th percentile bar.
+// a bar's needed width is (bar length / its TYPICAL gap between note onsets, the
+// median) x a readable width per note slot (+ 30px of barline margin), never
+// below targetMeasureWidth; grace notes don't count; the tab needs the 90th
+// percentile bar. (The smallest gap made one quick hammer-on pair widen a whole
+// bar: 120 of 494 tabs fell to 3 bars per row, 8 to one.)
 import { describe, it, expect } from 'vitest';
 
 import { TabRenderer } from '../renderers/tablature.js';
@@ -34,10 +36,25 @@ describe('TabRenderer.neededMeasureWidth', () => {
         expect(fast).toBeGreaterThan(roll * 5);
     });
 
-    it('the smallest gap sets the bar, not the average', () => {
-        // quarters, except two onsets a 16th apart
+    it('one quick pair does not widen a bar: its typical spacing sets it', () => {
+        // quarters, except two onsets a 16th apart (a hammer-on): gaps 480 480 120 360
         const ticks = [0, 480, 960, 1080, 1440];
-        expect(needed([bar(1, ticks)])).toBe(Math.max(180, (TICKS / 120) * 20 + 30));
+        expect(needed([bar(1, ticks)])).toBe(180);
+        // an eighth roll with one 32nd pair is still an eighth roll
+        const roll = [...every(240), 1500].sort((a, b) => a - b);
+        expect(needed([bar(1, roll)])).toBe(8 * 20 + 30);
+    });
+
+    it('a run of fast notes does widen it', () => {
+        // half the bar in 16ths: the median gap is a 16th
+        const ticks = [0, 120, 240, 360, 480, 600, 720, 840, 960, 1440];
+        expect(needed([bar(1, ticks)])).toBe(16 * 20 + 30);
+    });
+
+    it('grace notes are not counted', () => {
+        const b = bar(1, every(240));
+        b.events.push({ tick: 450, notes: [{ s: 2, f: 3, grace: true }] });
+        expect(needed([b])).toBe(8 * 20 + 30);
     });
 
     it('a chord is one onset, and a single onset has no gap', () => {
