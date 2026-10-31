@@ -2637,7 +2637,7 @@ async function renderTablaturePart(part, container) {
             // Free-text annotations + reading-list section labels
             // (display copy; attach after densify — annotations may
             // target silent measures).
-            notation = attachOtfDecorations(notation, otf);
+            notation = attachOtfDecorations(notation, otf, track.id);
             notation = attachChordDiagrams(notation, otf, track.id);
             if (showRepeatsCompact && otf.reading_list && otf.reading_list.length > 0) {
                 notation = prepareCompactNotation(notation, otf.reading_list);

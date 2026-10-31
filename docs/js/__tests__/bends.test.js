@@ -39,10 +39,56 @@ describe('bend drawing', () => {
         expect(label(bend(3, 6))).toBe('1½');
         expect(label(bend(3, 7))).toBe('2');
     });
-    it('draws the arrow on the target and a band mark on the bent note', () => {
+    it('draws ONE mark per bend: the arrow on the target, nothing in the band', () => {
         const c = bend(3, 4);
         expect(c.querySelectorAll('.bend-arrow')).toHaveLength(1);
-        expect(c.querySelectorAll('.fx-bend').length).toBeGreaterThan(0);
+        expect(c.querySelectorAll('.fx-bend')).toHaveLength(0);
+        expect(c.querySelectorAll('.fx-bend-release')).toHaveLength(0);
+    });
+    it('reserves no effects lane for a bend that has its target', () => {
+        const plain = render([{ tick: 0, notes: [{ s: 3, f: 3 }] }]);
+        const paired = bend(3, 4);
+        const topMargin = (c) => Math.min(...[...c.querySelectorAll('.stave-row svg > line')]
+            .filter(l => l.getAttribute('y1') === l.getAttribute('y2')).map(l => Number(l.getAttribute('y1'))));
+        expect(topMargin(paired)).toBe(topMargin(plain));
+    });
+    it('a bend-release with its target is also one mark', () => {
+        const c = render([
+            { tick: 0, notes: [{ s: 3, f: 5, fx: ['bend-release'] }] },
+            { tick: 480, notes: [{ s: 3, f: 7, tech: 'b' }] },
+        ]);
+        expect(c.querySelectorAll('.bend-arrow')).toHaveLength(1);
+        expect(c.querySelectorAll('.fx-bend-release')).toHaveLength(0);
+    });
+    it('a bend with no target keeps its band mark', () => {
+        const c = render([{ tick: 0, notes: [{ s: 3, f: 3, fx: ['bend'] }] }]);
+        expect(c.querySelectorAll('.bend-arrow')).toHaveLength(0);
+        expect(c.querySelectorAll('.fx-bend')).toHaveLength(1);
+    });
+    it('a bend whose target is on another string keeps its band mark', () => {
+        const c = render([
+            { tick: 0, notes: [{ s: 3, f: 3, fx: ['bend'] }] },
+            { tick: 480, notes: [{ s: 4, f: 4, tech: 'b' }] },
+        ]);
+        expect(c.querySelectorAll('.fx-bend')).toHaveLength(1);
+    });
+    it('a target far from its source (a half note on) still takes the one mark', () => {
+        const c = render([
+            { tick: 0, notes: [{ s: 3, f: 3, fx: ['bend'] }] },
+            { tick: 1440, notes: [{ s: 3, f: 4, tech: 'b' }] },
+        ]);
+        expect(c.querySelectorAll('.bend-arrow')).toHaveLength(1);
+        expect(c.querySelectorAll('.fx-bend')).toHaveLength(0);
+    });
+    it('a source whose target starts the next row keeps its band mark (no arrow can reach it)', () => {
+        const container = document.createElement('div');
+        document.body.appendChild(container);
+        const measures = Array.from({ length: 12 }, (_, i) => ({ measure: i + 1, events: [] }));
+        const r = new TabRenderer(container, { measuresPerRow: 4 });
+        measures[3].events = [{ tick: 1680, notes: [{ s: 3, f: 3, fx: ['bend'] }] }];
+        measures[4].events = [{ tick: 0, notes: [{ s: 3, f: 4, tech: 'b' }] }];
+        r.render(TRACK, measures, 480, '4/4');
+        expect(container.querySelectorAll('.fx-bend')).toHaveLength(1);
     });
 });
 
