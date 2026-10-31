@@ -24,10 +24,10 @@ Mike, 2026-10-31:
 | ID | Piece | Depends on | Model / effort | Worktree | Status | Checked |
 |----|-------|-----------|----------------|----------|--------|---------|
 | G21a | OTF 1.3 (`track`, `kind`, `place`); importers fill `track`; writer; editor; re-import guard `COMPARED = TAKEN` | — | Sonnet / high | `g21a-annotation-track` | dispatched 2026-10-31 | |
-| G21d1 | `parseTabChord` / `parse_tab_chord` with a shared fixture; corpus report | — | Sonnet / medium | `g21d-tab-chord-parser` | dispatched 2026-10-31 | |
+| G21d1 | `parseTabChord` / `parse_tab_chord` with a shared fixture; corpus report | — | Sonnet / medium | `g21d-tab-chord-parser` | done, merged into the batch (bdd0be965) | read `tab-chord.js`; parser + chord-token tests 98 ✓ / pytest 144 ✓; corpus report read: 32,249 of 45,802 texts parse (85 distinct), fingering letters, part labels and banners stay text; `(A [G])` (124) stays text, a follow-up |
 | G21b + G21d2 | Importers: typed t/i/m/r/p → `note.finger`; parsed chords → `kind: "chord"`; validators check chord texts; writer keeps `finger` | G21a, G21d1 | — | — | todo | |
 | re-import | `reimport_tef_tabs.py` dry run → counts to Mike → real run | all of the above | me | — | todo | |
-| `place` ground truth | TablEdit 3.06 prints 5 files to PDF on mike-air; compare against the string rows | — | mike-air agent f0c557a | `mike-air:~/g21-place/` | dispatched 2026-10-31 | |
+| `place` ground truth | TablEdit 3.06 prints 5 + 3 files to PDF on mike-air; compare against the string rows | — | mike-air agent f0c557a | `mike-air:~/g21-place/` | 5 PDFs read; 3 more V2 files printing | V3 (24588, 24908, 28388, 28676): every text above, byte 7 a small nudge. V2 (1481): text drawn at its row; top row above, middle on the string line, bottom row below |
 | G21e | Chord picker in the tab editor (`lead-editor/chord-menu-model.js`, `chord-menu.js` with optional callbacks) | G21d2 | — | — | todo | |
 
 The batch branch is `feature/g21-data`, worktree `g21-data`. The pieces merge
@@ -50,3 +50,20 @@ into it.
     within the track for every text.
   - Sent to mike-air agent f0c557a: print each to PDF into
     `~/g21-place/pdf/`, close without saving, quit.
+- 2026-10-31 · G21d1 back (bdd0be965).
+  - Parts are `{chord, optional, shape, ext}` or null: "em" → Em; "(em)" →
+    optional; "A (G)" → shape G; "A(7)" → ext 7.
+  - Built on `isValidChord`. A lowercase root counts only as a minor; a bare
+    "o" quality (Go, Do) and A1–B2 (part labels) are refused.
+  - Shape sent to the G19 session.
+- 2026-10-31 · TablEdit PDFs, first 5 (mike-air; TablEdit quit, inputs
+  unchanged).
+  - **V3:** all texts are drawn above the staff whatever their row: 24908's
+    row-5 chord names, 28388's row-4 names, 24588's row-5 "G". Byte 7 = 10
+    (28676) nudges the text by a few points.
+  - **V2, FMB 1481:** text sits at its string row. Chord names on row 1 are
+    above, the guitar's "etc." on row 4 is on that string line, and the
+    banjo's m/i on row 5 are below the staff.
+  - Asked for 3 more V2 files (15127, with lyrics on the middle and bottom
+    rows; 967, with 92 bottom-row texts; 2992, with 6 tracks) before writing
+    the importer rule.
