@@ -174,7 +174,7 @@
                 <option value="data/tabs/soldier-s-joy-banjo-11519.otf.json">Soldiers Joy (Banjo)</option>
                 <option value="data/tabs/foggy-mountain-breakdown-mandolin-p0.otf.json">Foggy Mountain Breakdown (Mandolin)</option>
             </select>
-            <button onclick="downloadTab()" class="primary">Download OTF</button>
+            <button onclick="saveTab()" class="primary">Save as…</button>
         </div>
 
         <div class="recorder-controls">
@@ -234,10 +234,6 @@
                         updateRecorderStatus();
                     }
                 },
-                onSave: (otf) => {
-                    console.log('Saving document:', otf.metadata?.title);
-                    downloadTab();
-                },
             });
 
             // Make editor accessible globally for demo
@@ -273,11 +269,9 @@
             }
         };
 
-        // Download
-        window.downloadTab = function() {
-            if (editor) {
-                editor.download();
-            }
+        // Save as… (the same panel as Ctrl+S)
+        window.saveTab = function() {
+            editor?.openSaveAs();
         };
 
         // === Recording controls ===

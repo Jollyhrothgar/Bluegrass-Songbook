@@ -4,7 +4,10 @@
     "title": "Road To Columbus (Guitar Piece)",
     "time_signature": "4/4",
     "tempo": 200,
-    "composer": "Bluegrass     Arr. S.Kaufman"
+    "composer": "Bluegrass     Arr. S.Kaufman",
+    "tab_by": {
+      "name": "L.Bradshaw"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

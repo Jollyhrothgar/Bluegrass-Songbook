@@ -4,7 +4,11 @@
     "title": "Temperance Reel",
     "time_signature": "4/4",
     "tempo": 120,
-    "key": "G"
+    "key": "G",
+    "composer": "Traditional, Key of G, Standard Tuning",
+    "tab_by": {
+      "name": "John R Young"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

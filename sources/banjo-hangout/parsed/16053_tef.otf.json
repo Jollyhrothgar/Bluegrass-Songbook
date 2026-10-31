@@ -5,7 +5,10 @@
     "time_signature": "2/2",
     "tempo": 240,
     "key": "A",
-    "composer": "Traditional\r\nArranged by Jan-Olov Sundqvist"
+    "composer": "Traditional\r\nArranged by Jan-Olov Sundqvist",
+    "tab_by": {
+      "name": "Jan-Olov Sundkvist"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

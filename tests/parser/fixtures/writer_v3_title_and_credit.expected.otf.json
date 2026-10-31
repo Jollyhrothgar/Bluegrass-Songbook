@@ -1,0 +1,40 @@
+{
+  "otf_version": "1.2",
+  "metadata": {
+    "title": "The Parting Glass",
+    "time_signature": "4/4",
+    "tempo": 96,
+    "tab_by": {
+      "name": "Jess Picker",
+      "url": "https://example.com/jess"
+    }
+  },
+  "timing": {
+    "ticks_per_beat": 480
+  },
+  "tracks": [
+    {
+      "id": "banjo",
+      "instrument": "5-string-banjo",
+      "tuning": ["D4", "B3", "G3", "D3", "G4"],
+      "capo": 0,
+      "role": "lead",
+      "dyn": "f"
+    }
+  ],
+  "notation": {
+    "banjo": [
+      {
+        "measure": 1,
+        "events": [
+          {"tick": 0, "notes": [{"s": 5, "f": 0, "dur": 480}]},
+          {"tick": 480, "notes": [{"s": 2, "f": 1, "dur": 480}]},
+          {"tick": 960, "notes": [{"s": 1, "f": 0, "dur": 960}]}
+        ]
+      }
+    ]
+  },
+  "annotations": [
+    {"measure": 1, "tick": 0, "text": "G"}
+  ]
+}

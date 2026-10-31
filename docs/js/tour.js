@@ -162,13 +162,15 @@ export const TOUR_STEPS = [
     {
         id: 'tef',
         page: 'tab',
-        // Checked against G15c: a .tef dropped on any page opens in the editor
-        // signed out (pwa.js enableFileDrop), and so does a phone's way in,
-        // ⋯ ▸ Tab editor ▸ Open a tab file…; sign-in is only asked at Submit.
+        // Checked against G15c and G15f: a .tef dropped on any page opens in the
+        // editor signed out (pwa.js enableFileDrop), and so does a phone's way
+        // in, ⋯ ▸ Tab editor ▸ Open a tab file…. File ▸ Save as… (bindings.js
+        // edit.save) downloads a .tef with no account; sign-in is only asked
+        // at Submit.
         dropZone: true,
         targets: [],
         title: 'Open your own TablEdit files',
-        body: 'Drag a .tef file onto any page and it opens in the tab editor, right in your browser. Fix it up, then sign in and submit it to add it to the book. On a phone: open the ⋯ menu, choose Tab editor, then tap Open a tab file…',
+        body: 'Drag a .tef file onto any page and it opens in the tab editor, right in your browser. Fix it up, then File ▸ Save as… saves it back as .tef. No account needed; sign in only to add it to the book. On a phone: open the ⋯ menu, choose Tab editor, then tap Open a tab file…',
     },
 ];
 

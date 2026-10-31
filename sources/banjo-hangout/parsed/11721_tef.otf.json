@@ -4,7 +4,11 @@
     "title": "The Tennessee Waltz",
     "time_signature": "3/4",
     "tempo": 90,
-    "key": "G"
+    "key": "G",
+    "composer": "Trad, Arr. Martin Blake",
+    "tab_by": {
+      "name": "Martin Blake"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

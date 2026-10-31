@@ -4,7 +4,8 @@
     "title": "Cripple Creek - F&S whole & complete",
     "time_signature": "2/4",
     "tempo": 132,
-    "key": "G"
+    "key": "G",
+    "composer": "Flatt and Scruggs"
   },
   "timing": {
     "ticks_per_beat": 480

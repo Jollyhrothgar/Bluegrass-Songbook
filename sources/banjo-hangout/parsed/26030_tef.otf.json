@@ -4,7 +4,10 @@
     "title": "Lonesome Moonlight Waltz",
     "time_signature": "3/4",
     "tempo": 120,
-    "key": "Dm"
+    "key": "Dm",
+    "tab_by": {
+      "name": "Bill Huntley"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

@@ -4,7 +4,8 @@
     "title": "Arkansas Traveler",
     "time_signature": "2/4",
     "tempo": 120,
-    "key": "C"
+    "key": "C",
+    "composer": "Traditional"
   },
   "timing": {
     "ticks_per_beat": 480

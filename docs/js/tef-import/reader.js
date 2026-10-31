@@ -64,7 +64,7 @@ const GM_PROGRAM_NAMES = {
     36: 'Bass', 37: 'Bass', 38: 'Bass', 39: 'Bass',
 };
 
-function programToName(program, numStrings) {
+export function programToName(program, numStrings) {
     if (GM_PROGRAM_NAMES[program]) return GM_PROGRAM_NAMES[program];
     // reader.py falls back to a strings-count label; for the corpus this is
     // only reached for named tracks (name wins), so the exact label is inert.
@@ -546,6 +546,7 @@ export function parseV2(data, name) {
         path_stem: name,
         header,
         title: header.v2_title,
+        tab_by: tabByFromComments(header.v2_comments),
         instruments,
         note_events: noteEvents,
         text_events: textEvents,
@@ -619,6 +620,74 @@ export function findStrings(data) {
         i += 1;
     }
     return strings;
+}
+
+/** A u16-length-prefixed string at the header pointer `slot` (latin-1, up to
+ *  the first NUL), or null when the pointer or length is unusable. */
+export function headerString(data, slot) {
+    if (data.length < slot + 4) return null;
+    const p = u32(data, slot);
+    if (p < V3_HEADER_SIZE || p + 2 > data.length) return null;
+    const len = u16(data, p);
+    if (p + 2 + len > data.length) return null;
+    let s = '';
+    for (let j = p + 2; j < p + 2 + len && data[j] !== 0; j++) s += String.fromCharCode(data[j]);
+    return s;
+}
+
+/** The V3 title as TablEdit stores it (header pointer 64), or null when it
+ *  holds control characters (a multi-line title): the caller then falls back
+ *  to the first-printable-string heuristic. */
+export function titleFromHeader(data) {
+    const s = headerString(data, 0x40);
+    if (s === null || /[\x00-\x1f\x7f]/.test(s)) return null;
+    return s.trim();
+}
+
+const TAB_BY_LINE = /^Tab by: (.+?)(?: <(https?:\/\/[^\s<>]+)>)?$/;
+
+// TablEdit's own default comment, "TablEdited by NAME", and the co-credit forms
+// that name the same person. Anchored on the whole line: any other prefix or
+// suffix ("for clawhammer banjo by", "Banjo Tuning: ...") is not a credit.
+const TABLEDITED_LINES = [
+    /^(?:arranged|transcribed|modified)[ \t]+(?:and|&)[ \t]+tabledited[ \t]+by:?[ \t]+(.+)$/i,
+    /^tabledited[ \t]+(?:and|&)[ \t]+(?:arr\.?|arranged)[ \t]+by:?[ \t]+(.+)$/i,
+    /^tabledited[ \t]+by:?[ \t]+(.+)$/i,
+];
+// A clean person or handle name: words of letters, digits, . ' - (each word has a letter).
+const CLEAN_WORD = /^[\p{L}\p{Nd}.'-]+$/u;
+
+function tabeditedName(line) {
+    for (const re of TABLEDITED_LINES) {
+        const m = re.exec(line);
+        if (!m) continue;
+        const name = m[1].replace(/[ \t]+/g, ' ').trim();
+        const words = name.split(' ');
+        const clean = name.length <= 60 && words.length <= 6
+            && words.every(w => CLEAN_WORD.test(w) && /\p{L}/u.test(w));
+        return clean ? name : null;
+    }
+    return null;
+}
+
+/** The credit in the comments, as metadata.tab_by, or null. The "Tab by: NAME
+ *  <URL>" line the .tef writer makes (G15f) wins; else TablEdit's "TablEdited
+ *  by NAME" line when NAME is a clean name. The last such line wins. */
+export function tabByFromComments(text) {
+    let found = null, tabEdited = null;
+    for (const raw of String(text || '').split(/\r?\n/)) {
+        const line = raw.trim();
+        const m = TAB_BY_LINE.exec(line);
+        if (!m) {
+            const n = tabeditedName(line);
+            if (n) tabEdited = { name: n };
+            continue;
+        }
+        const name = m[1].trim();
+        if (!name || name.length > 100 || (m[2] && m[2].length > 500)) continue;
+        found = m[2] ? { name, url: m[2] } : { name };
+    }
+    return found ?? tabEdited;
 }
 
 export function parseMeasureTableV3(data) {
@@ -887,18 +956,23 @@ export function parseV3(data, name) {
     }
     const header = readV3Header(data);
     const strings = findStrings(data);
-    // Title = the FIRST substantial string (offset ~0x100), not the longest —
+    // Title: header pointer 64, which is where TablEdit keeps it. A title with
+    // control characters (a multi-line one) and files with no usable pointer
+    // fall back to the FIRST substantial string below 0x200, not the longest —
     // see reader.py. Skips verbose credits and decorative "____INTRO____" separators.
-    let title = '';
-    for (const s of strings) {
-        if (s.offset >= 0x200) continue;
-        const v = s.value.trim();
-        if (v.length < 3 || v.includes('Part') || v[0] === '(' || v[0] === '-') continue;
-        const nonspace = [...v].filter(c => !/\s/.test(c)).length;
-        const alnum = [...v].filter(c => /[a-zA-Z0-9]/.test(c)).length;
-        if (nonspace && alnum / nonspace < 0.5) continue;   // skip decorative separators
-        title = v;
-        break;
+    let title = titleFromHeader(data);
+    if (title === null) {
+        title = '';
+        for (const s of strings) {
+            if (s.offset >= 0x200) continue;
+            const v = s.value.trim();
+            if (v.length < 3 || v.includes('Part') || v[0] === '(' || v[0] === '-') continue;
+            const nonspace = [...v].filter(c => !/\s/.test(c)).length;
+            const alnum = [...v].filter(c => /[a-zA-Z0-9]/.test(c)).length;
+            if (nonspace && alnum / nonspace < 0.5) continue;   // skip decorative separators
+            title = v;
+            break;
+        }
     }
     const instruments = parseTrackRecordsV3(data);   // name-pattern fallback not ported
     const { events, textRefs, markRefs, chordRefs, tsChanges, globalTs, slotStarts, slotCounts } = parseNoteEventsV3(data, instruments);
@@ -924,6 +998,8 @@ export function parseV3(data, name) {
         path_stem: name,
         header,
         title,
+        tab_by: tabByFromComments(headerString(data, 0x48)),
+        composer: headerString(data, 0x44) || '',
         instruments,
         note_events: events,
         text_events: textEvents,

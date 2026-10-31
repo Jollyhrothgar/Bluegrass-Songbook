@@ -227,13 +227,13 @@ describe('EditorMenuBar — the tree', () => {
         expect(bar.popup.hidden).toBe(true);
     });
 
-    it('File offers Download OTF with Ctrl+S by default', () => {
+    it('File offers Save as… with Ctrl+S by default', () => {
         const run = vi.fn();
         bar = mountMenu({
-            fileActions: [{ label: '⬇ Download OTF', action: 'edit.save', run }],
+            fileActions: [{ label: '💾 Save as…', action: 'edit.save', run }],
         });
         bar.open('file');
-        const item = findItem(bar, '⬇ Download OTF');
+        const item = findItem(bar, '💾 Save as…');
         expect(keyOf(item)).toBe('Ctrl+s');
         item.click();
         expect(run).toHaveBeenCalled();
@@ -243,14 +243,14 @@ describe('EditorMenuBar — the tree', () => {
         bar = mountMenu({
             fileActions: [
                 { label: '🚀 Submit correction', run: () => {} },
-                { label: '⬇ Download OTF', action: 'edit.save', run: () => {} },
+                { label: '💾 Save as…', action: 'edit.save', run: () => {} },
                 { label: 'Cancel', run: () => {} },
                 { label: '✓ Done', run: () => {}, disabled: true },
             ],
         });
         bar.open('file');
         expect(itemsOf(bar).map(labelOf)).toEqual(
-            ['🚀 Submit correction', '⬇ Download OTF', 'Cancel', '✓ Done']);
+            ['🚀 Submit correction', '💾 Save as…', 'Cancel', '✓ Done']);
         expect(findItem(bar, '✓ Done').disabled).toBe(true);
     });
 
@@ -258,7 +258,7 @@ describe('EditorMenuBar — the tree', () => {
         bar = mountMenu({
             fileActions: [
                 { label: '📂 Open…', run: () => {} },
-                { label: '⬇ Download OTF', run: () => {} },
+                { label: '💾 Save as…', run: () => {} },
                 { separator: true },
                 { label: 'Cancel', run: () => {} },
             ],
@@ -266,7 +266,7 @@ describe('EditorMenuBar — the tree', () => {
         bar.open('file');
         const kinds = [...bar.popup.children].map(el =>
             el.classList.contains('menu-separator') ? '—' : labelOf(el));
-        expect(kinds).toEqual(['📂 Open…', '⬇ Download OTF', '—', 'Cancel']);
+        expect(kinds).toEqual(['📂 Open…', '💾 Save as…', '—', 'Cancel']);
     });
 
     it('Tempo… is listed once across all the menus (Play), not also in Score', () => {

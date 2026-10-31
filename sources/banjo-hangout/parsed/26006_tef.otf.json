@@ -5,6 +5,7 @@
     "time_signature": "4/4",
     "tempo": 256,
     "key": "G",
+    "composer": "Ralph Stanley",
     "time_signature_changes": [
       {"measure": 21, "time_signature": "2/4"},
       {"measure": 30, "time_signature": "2/4"},

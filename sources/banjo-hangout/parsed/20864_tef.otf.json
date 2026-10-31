@@ -4,7 +4,10 @@
     "title": "Cedar Hill",
     "time_signature": "4/4",
     "tempo": 275,
-    "key": "G"
+    "key": "G",
+    "tab_by": {
+      "name": "Dennis Keigley"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

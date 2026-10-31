@@ -4,7 +4,8 @@
     "title": "St, Anne's Reel",
     "time_signature": "4/4",
     "tempo": 220,
-    "key": "D"
+    "key": "D",
+    "composer": "Traditional\r\nArranged By Chad Darou"
   },
   "timing": {
     "ticks_per_beat": 480

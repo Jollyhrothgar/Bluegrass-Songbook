@@ -4,7 +4,10 @@
     "title": "Cattle In The Cane",
     "time_signature": "4/4",
     "tempo": 256,
-    "composer": "Scott Vestal arranged by Lee Marcus"
+    "composer": "Scott Vestal arranged by Lee Marcus",
+    "tab_by": {
+      "name": "Lee Marcus"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

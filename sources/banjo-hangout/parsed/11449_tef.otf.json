@@ -5,6 +5,9 @@
     "time_signature": "4/4",
     "tempo": 260,
     "composer": "Bill Monroe   Bluegrass    Arr. S.Kaufman",
+    "tab_by": {
+      "name": "L.Bradshaw"
+    },
     "time_signature_changes": [
       {"measure": 17, "time_signature": "2/4"},
       {"measure": 36, "time_signature": "2/4"},

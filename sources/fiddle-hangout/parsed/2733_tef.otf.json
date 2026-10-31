@@ -4,7 +4,10 @@
     "title": "Gold Rush",
     "time_signature": "4/4",
     "tempo": 200,
-    "key": "A"
+    "key": "A",
+    "tab_by": {
+      "name": "John G. Nitkowski"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

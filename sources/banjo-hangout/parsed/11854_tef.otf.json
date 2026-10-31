@@ -3,7 +3,10 @@
   "metadata": {
     "title": "Chinquapin Hunting",
     "time_signature": "4/4",
-    "tempo": 184
+    "tempo": 184,
+    "tab_by": {
+      "name": "Martin Blake"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

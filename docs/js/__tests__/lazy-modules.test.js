@@ -171,6 +171,17 @@ describe('service worker precache covers the lazily loaded modules', () => {
         expect(PRECACHE_URLS.filter(u => bootUrls.has(u))).toEqual([]);
     });
 
+    it('precaches the .tef template, so Save as .tef works offline (G15f)', () => {
+        expect(PRECACHE_URLS).toContain('./js/tef-export/template.tef');
+    });
+
+    it('the .tef writer is fetched only when Save as writes a .tef', () => {
+        expect(boot.has(resolve(jsDir, 'tef-export/index.js'))).toBe(false);
+        const saveAs = resolve(jsDir, 'otf-editor/save-as.js');
+        expect(imports(saveAs).dynamic).toContain(resolve(jsDir, 'tef-export/index.js'));
+        expect(closure(saveAs).has(resolve(jsDir, 'tef-export/index.js'))).toBe(false);
+    });
+
     it('every precached path exists', () => {
         for (const url of PRECACHE_URLS) {
             expect(existsSync(resolve(docsDir, url)) || url === './', url).toBe(true);

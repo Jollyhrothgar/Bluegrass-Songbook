@@ -4,7 +4,10 @@
     "title": "Swing 51",
     "time_signature": "4/4",
     "tempo": 185,
-    "composer": "By Tony Rice - David Grisman and Darol Anger solos"
+    "composer": "By Tony Rice - David Grisman and Darol Anger solos",
+    "tab_by": {
+      "name": "Kim Davis"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

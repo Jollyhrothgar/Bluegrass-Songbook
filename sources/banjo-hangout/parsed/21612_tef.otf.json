@@ -3,7 +3,10 @@
   "metadata": {
     "title": "Wild Horse",
     "time_signature": "4/4",
-    "tempo": 150
+    "tempo": 150,
+    "tab_by": {
+      "name": "David Payne"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

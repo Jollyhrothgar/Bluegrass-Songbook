@@ -1,11 +1,11 @@
-// Files in and files out: `⬇ Download` / Ctrl+S, and the two ways a `.tef`
+// Files in and files out: File ▸ Save as… / Ctrl+S, and the two ways a `.tef`
 // gets into the editor (the band's 📂 button, and dropping one on the app).
 //
 // These are the paths a QA pass could not reach: a download is a browser
 // event rather than a DOM change, and a file picker is a native dialog until
 // a test drives the chooser. Both are drivable — they just needed a spec.
 import { test, expect } from './fixtures.js';
-import { clickFileItem } from './helpers/front-door.js';
+import { clickFileItem, saveAs, saveAsPanel } from './helpers/front-door.js';
 import { tefFixture } from './helpers/tef-fixture.js';
 
 const TAB_WORK = '/#work/foggy-mountain-breakdown/mandolin';
@@ -33,16 +33,13 @@ async function downloadedJson(download) {
     return JSON.parse(readFileSync(path, 'utf-8'));
 }
 
-test.describe('downloading the edited document', () => {
-    test('⬇ Download writes the session filename, with the note in it',
+test.describe('saving the edited document (Save as…)', () => {
+    test('Save as .otf.json writes the session filename, with the note in it',
         async ({ page }) => {
             await editPublishedTake(page);
             await typeANote(page, '9');
 
-            const [download] = await Promise.all([
-                page.waitForEvent('download'),
-                clickFileItem(page, 'Download OTF'),
-            ]);
+            const download = await saveAs(page, { format: 'otf' });
 
             // The session names the file after the take it is correcting.
             const name = download.suggestedFilename();
@@ -59,19 +56,34 @@ test.describe('downloading the edited document', () => {
             expect(frets).toContain(9);
         });
 
-    test('Ctrl+S downloads from the standalone editor', async ({ page }) => {
-        // On the song page Ctrl+S APPLIES to the view (work-edit.js wires
-        // onSave to onApply) — the demo harness is where the key downloads,
-        // and it is the same `edit.save` binding either way.
+    test('Ctrl+S opens Save as… on the song page too, and nothing is applied behind it', async ({ page }) => {
+        await editPublishedTake(page);
+        await typeANote(page, '9');
+        await page.keyboard.press('Control+s');
+        await expect(saveAsPanel(page)).toBeVisible();
+        // a new take starts at .tef; a correction of a published take does too (no source file)
+        await expect(saveAsPanel(page).locator('input[value="tef"]')).toBeChecked();
+        await expect(saveAsPanel(page).locator('.save-as-name')).toHaveValue(/-edited\.tef$/);
+        await page.keyboard.press('Escape');
+        await expect(saveAsPanel(page)).toBeHidden();
+        // still editing
+        await expect(page.locator('.editor-renderer .stave-row').first()).toBeVisible();
+    });
+
+    test('Ctrl+S saves from the standalone editor', async ({ page }) => {
         await page.goto('/editor-demo.html');
         await page.locator('.editor-renderer .stave-row').first().waitFor();
         await page.locator('.editor-canvas-container').click({ position: { x: 100, y: 60 } });
         await page.keyboard.press('4');
         await expect(page.locator('.note-text').first()).toHaveText('4');
 
+        await page.keyboard.press('Control+s');
+        const panel = saveAsPanel(page);
+        await expect(panel).toBeVisible();
+        await panel.locator('input[value="otf"]').check();
         const [download] = await Promise.all([
             page.waitForEvent('download'),
-            page.keyboard.press('Control+s'),
+            panel.locator('.save-btn').click(),
         ]);
         expect(download.suggestedFilename()).toMatch(/\.otf\.json$/);
 

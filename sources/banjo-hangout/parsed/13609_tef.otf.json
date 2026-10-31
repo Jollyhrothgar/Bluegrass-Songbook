@@ -5,6 +5,9 @@
     "time_signature": "2/2",
     "tempo": 230,
     "key": "F",
+    "tab_by": {
+      "name": "Brennen P Ernst"
+    },
     "time_signature_changes": [
       {"measure": 1, "time_signature": "3/4"}
     ]

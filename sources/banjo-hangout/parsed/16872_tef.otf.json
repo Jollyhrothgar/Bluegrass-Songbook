@@ -5,7 +5,10 @@
     "time_signature": "3/4",
     "tempo": 112,
     "key": "D",
-    "composer": "Jay Ungar"
+    "composer": "Jay Ungar",
+    "tab_by": {
+      "name": "Derek N Scarr"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

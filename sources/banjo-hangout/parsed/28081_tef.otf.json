@@ -5,6 +5,7 @@
     "time_signature": "2/4",
     "tempo": 160,
     "key": "G",
+    "composer": "Earl Scruggs",
     "time_signature_changes": [
       {"measure": 17, "time_signature": "4/4"},
       {"measure": 18, "time_signature": "4/4"},

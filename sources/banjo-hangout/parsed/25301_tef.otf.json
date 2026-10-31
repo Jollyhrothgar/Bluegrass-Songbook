@@ -5,6 +5,10 @@
     "time_signature": "4/4",
     "tempo": 264,
     "key": "G",
+    "composer": "    From Earl Scruggs",
+    "tab_by": {
+      "name": "Jan-Olov Sundqvist"
+    },
     "time_signature_changes": [
       {"measure": 103, "time_signature": "2/4"}
     ]

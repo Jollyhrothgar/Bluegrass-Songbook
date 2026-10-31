@@ -5,6 +5,9 @@
     "time_signature": "4/4",
     "tempo": 214,
     "composer": "trad Celtic/Bluegrass",
+    "tab_by": {
+      "name": "Martin Blake"
+    },
     "time_signature_changes": [
       {"measure": 1, "time_signature": "1/4"},
       {"measure": 19, "time_signature": "3/4"}

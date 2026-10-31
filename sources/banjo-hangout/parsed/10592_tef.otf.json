@@ -4,7 +4,10 @@
     "title": "Fire On The Mountain",
     "time_signature": "4/4",
     "tempo": 318,
-    "composer": "Scott Vestal arranged by Lee Marcus"
+    "composer": "Scott Vestal arranged by Lee Marcus",
+    "tab_by": {
+      "name": "Lee Marcus"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

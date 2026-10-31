@@ -1,0 +1,7 @@
+# Corpus .tef files whose OTF changes in a parse -> write -> parse round trip.
+# Ratchet (tef-export-corpus.test.js): a listed file must still differ at the
+# JSON pointer given; every other file must be equal.
+# Format: <path> <first differing JSON pointer> <reason>
+sources/banjo-hangout/downloads/10800_tef_metric_lips.tef /metadata/time_signature V2 header says 9/8 but most measures are 6/8; a V3 file has no header signature, so the reader takes the most common one as metadata.time_signature (same meter, different split between metadata and time_signature_changes)
+sources/banjo-hangout/downloads/15259_tef_clinch_mountain_backstep__1971_.tef /metadata/time_signature V2 header says 5/4 but nearly every measure is 4/4: same split as 10800 (meter identical, global vs per-measure)
+sources/banjo-hangout/downloads/11056_tef_red_apple_rag.tef /notation/banjo/8/events/5/tick m9 holds a note on fret 25 (V2 fret code 0x1a); a V3 note type holds frets 0-24, so the writer drops it and counts it in notices.notes_dropped

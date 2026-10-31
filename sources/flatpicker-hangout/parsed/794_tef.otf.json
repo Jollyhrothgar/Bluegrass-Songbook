@@ -4,7 +4,10 @@
     "title": "Cumberland Gap",
     "time_signature": "2/2",
     "tempo": 250,
-    "key": "D"
+    "key": "D",
+    "tab_by": {
+      "name": "Brennen P Ernst"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

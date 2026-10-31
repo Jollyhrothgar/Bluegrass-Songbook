@@ -3,7 +3,10 @@
   "metadata": {
     "title": "Turkey in the Straw",
     "time_signature": "4/4",
-    "tempo": 120
+    "tempo": 120,
+    "tab_by": {
+      "name": "OvrTheTop"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

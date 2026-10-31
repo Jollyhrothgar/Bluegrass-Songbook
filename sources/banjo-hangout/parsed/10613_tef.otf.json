@@ -3,7 +3,10 @@
   "metadata": {
     "title": "Gold Rush",
     "time_signature": "4/4",
-    "tempo": 120
+    "tempo": 120,
+    "tab_by": {
+      "name": "James N Leonard"
+    }
   },
   "timing": {
     "ticks_per_beat": 480

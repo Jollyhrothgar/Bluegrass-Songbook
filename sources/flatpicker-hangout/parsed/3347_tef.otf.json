@@ -4,7 +4,10 @@
     "title": "Beaumont Rag",
     "time_signature": "4/4",
     "tempo": 249,
-    "key": "D"
+    "key": "D",
+    "tab_by": {
+      "name": "Keith Brooks"
+    }
   },
   "timing": {
     "ticks_per_beat": 480
