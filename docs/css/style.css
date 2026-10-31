@@ -7683,8 +7683,8 @@ body.dungeon-mode #search-stats {
 }
 
 /* Track switcher (G23; docs/js/track-switcher.js): the name above a staff as a
-   button with a short list under it. The tab editor injects the same rules
-   from otf-editor/editor.js. */
+   button with a short list under it, on the read view (every width) and in
+   the tab editor (phones). One copy, here. */
 .track-info.has-track-switcher { position: relative; }
 .track-switcher-button, .track-switcher-item {
     min-height: 44px;

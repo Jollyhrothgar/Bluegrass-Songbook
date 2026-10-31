@@ -16,7 +16,7 @@ import {
 import { KeyboardHandler } from './keyboard.js';
 import { EditorToolbar, PHONE_MAX_WIDTH } from './toolbar.js';
 import { EditorMenuBar } from './menu-bar.js';
-import { TrackSwitcher } from '../track-switcher.js';
+import { TrackSwitcher, friendlyTrackName } from '../track-switcher.js';
 import {
     NoteEntryPopover, AnnotationPopover, TrackNamePopover, ValuePromptPopover, SaveAsPopover,
     GracePopover,
@@ -400,7 +400,8 @@ export class OTFEditor {
         };
 
         this.trackSwitcher = new TrackSwitcher({
-            getTracks: () => this.state.getTracks(),
+            // the same names the read view shows ("Guitar 2", not "guitar-2")
+            getTracks: () => this.state.getTracks().map(t => ({ id: t.id, label: friendlyTrackName(t) })),
             getActive: () => this.state.trackId,
             choose: (id) => { this.state.setTrack(id); this.editorRoot?.focus(); },
             enabled: () => !!window.matchMedia?.(`(max-width: ${PHONE_MAX_WIDTH}px)`).matches,
@@ -551,46 +552,7 @@ export class OTFEditor {
                 border-top: 1px solid var(--border, #ddd);
             }
 
-            /* Phone track switcher (track-switcher.js): the name above the
-               tab as a button, with a short list under it */
-            .track-info.has-track-switcher { position: relative; }
-            .track-switcher-button, .track-switcher-item {
-                min-height: 44px;
-                padding: 0 12px;
-                border: 1px solid var(--border, #ccc);
-                border-radius: 8px;
-                background: var(--bg, #fff);
-                color: var(--text, #222);
-                font: inherit;
-                font-weight: 600;
-                cursor: pointer;
-            }
-            .track-switcher-name { text-transform: capitalize; }
-            .track-switcher-list {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                z-index: 20;
-                display: flex;
-                flex-direction: column;
-                min-width: 200px;
-                max-height: 60vh;
-                overflow-y: auto;
-                background: var(--bg, #fff);
-                border: 1px solid var(--border, #ccc);
-                border-radius: 8px;
-                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
-            }
-            .track-switcher-item {
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                border: 0;
-                border-radius: 0;
-                font-weight: 400;
-                text-align: left;
-            }
-            .track-switcher-check { width: 1.2em; }
+            /* The phone track switcher's rules live in style.css (docs/js/track-switcher.js, G23) */
 
             @media (max-width: ${PHONE_MAX_WIDTH}px) {
                 .otf-editor-fill .editor-canvas-container { padding: 8px; }
