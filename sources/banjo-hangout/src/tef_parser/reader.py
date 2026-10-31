@@ -264,6 +264,10 @@ class TEFTextEvent:
     position: int        # 16th-slot grid position (measure-table aware)
     string_row: int      # 0-based string row the text is anchored to
     text: str            # Resolved string from the text table
+    # TablEdit's placement value: V3 text record byte 11, V2 text record byte 4
+    # bits 5-6. 0 above, 1 below the staff, 2 above (prints like 0), 3 on the
+    # staff near its string. OTF keeps only 1 (place "below").
+    placement: int = 0
 
 
 @dataclass
@@ -1156,7 +1160,7 @@ class TEFReader:
         # Free-text components (type 0x39) collected during this same pass;
         # byte 5 is a 0-based index into the text table. Resolved to
         # TEFTextEvents by _parse_v3.
-        self._v3_text_refs: list[tuple[int, int, int]] = []  # (position, string_row, index)
+        self._v3_text_refs: list[tuple[int, int, int, int]] = []  # (position, string_row, index, placement)
         # Chord-diagram anchors (full type byte 0x35 -- 0x75 is a scale
         # diagram, 0xf5 a special character): cell bytes 1-2 chord index,
         # byte 3 signed dy, byte 4 signed dx (record bytes 5-6, 7, 8).
@@ -1188,6 +1192,7 @@ class TEFReader:
                         location // VALUE_PER_POSITION,
                         (location % VALUE_PER_POSITION) // VALUE_PER_STRING,
                         record[5],
+                        record[11],
                     ))
                 elif component_type == 0x35:
                     self._v3_chord_anchors.append(TEFChordAnchor(
@@ -1381,7 +1386,7 @@ class TEFReader:
         # Text components (fret byte 0x1d -> TablEdit type 0x39 in the V2
         # upgrade FUN_1000459c4): byte 3 indexes the text table that follows
         # the reading list. Resolved by _parse_v2.
-        self._v2_text_refs: list[tuple[int, int, int]] = []  # (position, string_row, index)
+        self._v2_text_refs: list[tuple[int, int, int, int]] = []  # (position, string_row, index, placement)
         # Chord-diagram anchors (fret byte 0x1c/0x5c/0x9c = TablEdit type
         # 0x35 after the V2 upgrade): byte 3 is the chord index.
         self._v2_chord_anchors: list[TEFChordAnchor] = []
@@ -1483,7 +1488,8 @@ class TEFReader:
             if fret_byte == 0x1d:
                 self._v2_text_refs.append((
                     (measure * ts_size + position_in_measure) * pos_scale,
-                    cumulative_string, rec[3]))
+                    cumulative_string, rec[3],
+                    (rec[4] >> 5) & 3 if stride > 4 else 0))
                 offset += stride
                 continue
 
@@ -2105,8 +2111,8 @@ class TEFReader:
         # notes sat exactly first_note_position too late).
         text_table = self.parse_text_table_v2(header)
         text_events = [
-            TEFTextEvent(position=pos, string_row=row, text=text_table[idx])
-            for pos, row, idx in getattr(self, "_v2_text_refs", [])
+            TEFTextEvent(position=pos, string_row=row, text=text_table[idx], placement=placement)
+            for pos, row, idx, placement in getattr(self, "_v2_text_refs", [])
             if idx < len(text_table) and text_table[idx]]
         v2_chord_anchors = list(getattr(self, "_v2_chord_anchors", []))
 
@@ -2242,12 +2248,13 @@ class TEFReader:
         # are dropped.
         text_table = self.parse_text_table_v3()
         text_events = []
-        for position, string_row, idx in getattr(self, "_v3_text_refs", []):
+        for position, string_row, idx, placement in getattr(self, "_v3_text_refs", []):
             if 0 <= idx < len(text_table) and text_table[idx]:
                 text_events.append(TEFTextEvent(
                     position=position,
                     string_row=string_row,
                     text=text_table[idx],
+                    placement=placement,
                 ))
 
         v3_anchors = list(getattr(self, "_v3_chord_anchors", []))

@@ -342,7 +342,8 @@ export function parseNoteEventsV2(data, h, instruments) {
 
         if (fretByte === 0x1d) {
             textRefs.push({ position: (measure * tsSize + positionInMeasure) * posScale,
-                            stringRow: cumulativeString, index: rec[3] });
+                            stringRow: cumulativeString, index: rec[3],
+                            placement: stride > 4 ? (rec[4] >> 5) & 3 : 0 });     // bits 5-6 of byte 4
             offset += stride;
             continue;
         }
@@ -503,7 +504,7 @@ export function parseV2(data, name) {
     const textTable = parseTextTableV2(data, header);
     const textEvents = textRefs
         .filter(r => r.index < textTable.length && textTable[r.index])
-        .map(r => ({ position: r.position, string_row: r.stringRow, text: textTable[r.index] }));
+        .map(r => ({ position: r.position, string_row: r.stringRow, text: textTable[r.index], placement: r.placement }));
 
     // effect2 == 0x07 chord-overlay filter — but keep notes whose fret byte
     // has bit 7 set: there effect2 is a note attribute and 0x07 is staccato
@@ -814,7 +815,7 @@ const V3_FIRST_SPECIAL_TYPE = 0x33;
 
 export function parseNoteEventsV3(data, instruments) {
     const events = [];
-    const textRefs = [];   // 0x39 components: {position, stringRow, index}
+    const textRefs = [];   // 0x39 components: {position, stringRow, index, placement}
     // Reading-guide marks (type 0xb7, G15d4): {position, flags}; only cell
     // byte 2 (file byte 6) is read. Resolved to measures by parseV3.
     const markRefs = [];
@@ -885,6 +886,7 @@ export function parseNoteEventsV3(data, instruments) {
                     position: fdiv(location, VALUE_PER_POSITION),
                     stringRow: fdiv(location % VALUE_PER_POSITION, VALUE_PER_STRING),
                     index: record[5],
+                    placement: record[11],     // 0 above, 1 below, 2 above, 3 on the staff
                 });
             } else if (componentType === 0x35) {
                 chordRefs.push({
@@ -990,6 +992,7 @@ export function parseV3(data, name) {
                 position: ref.position,
                 string_row: ref.stringRow,
                 text: textTable[ref.index],
+                placement: ref.placement,
             });
         }
     }

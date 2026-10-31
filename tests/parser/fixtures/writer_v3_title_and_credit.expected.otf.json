@@ -35,6 +35,6 @@
     ]
   },
   "annotations": [
-    {"measure": 1, "tick": 0, "text": "G"}
+    {"measure": 1, "tick": 0, "text": "G", "track": "banjo"}
   ]
 }

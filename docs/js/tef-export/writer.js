@@ -37,6 +37,7 @@ const TRACK_RECORD = 68;
 const MAX_TRACKS = 15, MAX_STRINGS = 12, MAX_MEASURES = 2048;
 const CHORD_RECORD = 36, CHORD_STRINGS = 14, CHORD_NAME_AT = 14, CHORD_NAME_MAX = 16;
 const READING_ENTRY = 32, READING_NAME_MAX = 27, READING_MAX = 100;
+const TEXT_BELOW = 1;            // text record byte 11: 0 above, 1 below the staff, 2 above, 3 on the staff
 const TEXT_MAX = 998, TEXT_INDEX_MAX = 256, TITLE_MAX = 255;
 const SIGNATURE_DENOMINATORS = [1, 2, 4, 8, 16];
 const TAB_BY_LINE = /^Tab by: /;
@@ -330,7 +331,7 @@ function sourcePlacements(base, totalRows) {
 }
 
 // --- the small tables -----------------------------------------------------------
-function textTable(otf, plan, totalRows, occupied, notices, source) {
+function textTable(otf, tracks, plan, totalRows, occupied, notices, source) {
     const entries = [];
     const items = (otf.annotations || []).filter(a => a.text);
     const share = items.length > TEXT_INDEX_MAX;     // an index is one byte
@@ -339,6 +340,9 @@ function textTable(otf, plan, totalRows, occupied, notices, source) {
     const later = [];
     for (const a of items) {
         if (a.measure < 1 || a.measure > plan.starts.length) { notices.annotations_not_written += 1; continue; }
+        // A text with a track belongs on that track's rows (a .tef counts rows across all tracks).
+        const track = a.track === undefined ? undefined : tracks.find(t => t.id === a.track);
+        const rows = track ? range(track.rowBase, track.rowBase + track.strings) : range(0, totalRows);
         let i = share ? index.get(a.text) : undefined;
         if (i === undefined) {
             if (entries.length >= TEXT_INDEX_MAX) { notices.annotations_not_written += 1; continue; }
@@ -350,22 +354,27 @@ function textTable(otf, plan, totalRows, occupied, notices, source) {
         const last = plan.starts[mi] + plan.slots[mi] - 1;
         const pos = Math.min(plan.starts[mi] + Math.round(a.tick / UNIT_TICKS), last);
         // The original's cell for this very text at this very place, if it is still free.
-        const own = (source.text.get(pos) || []).find(c => c.text === a.text && !c.taken && !occupied.has(pos * totalRows + c.row));
+        const own = (source.text.get(pos) || []).find(c => c.text === a.text && !c.taken
+            && rows.includes(c.row) && !occupied.has(pos * totalRows + c.row));
         if (own) {
             own.taken = true;
             const key = pos * totalRows + own.row;
             occupied.add(key);
             const rec = new Uint8Array(own.rec);
             rec[5] = i;
+            // The original's placement stays unless the text was moved to the other side
+            // (TablEdit's 2 and 3 draw above and keep their value).
+            if ((rec[11] === TEXT_BELOW) !== (a.place === 'below')) rec[11] = a.place === 'below' ? TEXT_BELOW : 0;
             cells.set(key, rec);
-        } else later.push({ i, pos, last });
+        } else later.push({ i, pos, last, rows, below: a.place === 'below' });
     }
-    for (const { i, pos, last } of later) {
-        const key = freeCell(occupied, totalRows, pos, last, range(0, totalRows));
+    for (const { i, pos, last, rows, below } of later) {
+        const key = freeCell(occupied, totalRows, pos, last, rows);
         if (key === null) { notices.annotations_not_written += 1; continue; }
         const rec = component(key, 0x39);
         rec[5] = i;
-        rec[9] = 3;
+        rec[9] = 3;                           // style, what TablEdit writes
+        rec[11] = below ? TEXT_BELOW : 0;     // placement
         cells.set(key, rec);
     }
     return { table: entries.length ? concat([pack16(entries.length), ...entries]) : null, cells };
@@ -521,7 +530,7 @@ export function writeTef(otf, { source, template } = {}) {
         mine.forEach((c, j) => { occupied.add(keys[j]); cells.set(keys[j], new Uint8Array(c.rec)); });
         placed.add(mark);
     }
-    const text = textTable(otf, plan, totalRows, occupied, notices, placements);
+    const text = textTable(otf, tracks, plan, totalRows, occupied, notices, placements);
     for (const [key, rec] of text.cells) cells.set(key, rec);
 
     // Repeat signs, where TablEdit itself puts them (V3 corpus, 34 files): a repeat
