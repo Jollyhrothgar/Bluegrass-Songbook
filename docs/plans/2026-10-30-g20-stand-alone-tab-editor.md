@@ -129,3 +129,17 @@ Whichever PR merges second merges main in and reruns the full e2e.
     "What was missing" section above. I checked the toolbar rule, the missing
     hooks and setters, and the title path in the code.
   - Mike's answers: track name ▾; scope = Tab setup; shell in the UI phase.
+- 2026-10-30 · Dispatched G20a (general-purpose, Sonnet medium, e2e on 8311)
+  and G20b (general-purpose, Sonnet high, e2e on 8312). Both are off
+  16e5d8567, in their own worktrees, with no push.
+  - The briefs keep `renderers/` to an `export` (G20b's tuning names), and
+    keep the read view's output byte-identical (G20a).
+  - G19's session (mean-insect) agreed to both `work-view.js` touch points:
+    the `#new-tab-title` handler, and the front door passing `timeSignature`
+    to `openNewTabPage`. Its c1 rewrites the section right after
+    `renderTitleHeader`, so expect a small textual merge there.
+  - It is drafting G21 (renderer lanes: roll fingering, left-hand fingers,
+    chord names, text). Its recommendation to Mike:
+    - G21b, the OTF chord-annotation type and the importer, to G19's session;
+    - G21c, the chord-picker entry in the editor, to this orchestrator after
+      G20.
