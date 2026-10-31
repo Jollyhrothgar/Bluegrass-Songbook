@@ -35,7 +35,7 @@ SCHEMA_VALIDATOR = Draft202012Validator(SCHEMA)
 
 CROSS_RULES = {'string_count', 'notation_keys', 'track_ids', 'measure_order',
                'tick_order', 'tick_range', 'duplicate_string', 'chord_index', 'chord_track',
-               'chord_tick', 'chord_fingers', 'mark_order', 'mark_raw', 'annotation_track'}
+               'chord_tick', 'chord_fingers', 'mark_order', 'mark_raw', 'annotation_track', 'annotation_chord'}
 
 
 def load(path):

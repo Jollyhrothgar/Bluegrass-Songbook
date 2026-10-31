@@ -49,7 +49,7 @@ describe('conformance fixtures', () => {
     it('has a fixture for every cross-field rule', () => {
         const rules = ['string_count', 'notation_keys', 'track_ids', 'measure_order', 'tick_order',
             'tick_range', 'duplicate_string', 'chord_index', 'chord_track', 'chord_tick',
-            'chord_fingers', 'mark_order', 'mark_raw', 'annotation_track'];
+            'chord_fingers', 'mark_order', 'mark_raw', 'annotation_track', 'annotation_chord'];
         for (const rule of rules) {
             expect(invalid.some(f => f.name.startsWith('cross--') && ruleOf(f.name)[1] === rule), rule).toBe(true);
         }

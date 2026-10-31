@@ -157,17 +157,31 @@ way a note does:
 | Field | Values | Meaning |
 |---|---|---|
 | `track` | a track `id` | the staff the text belongs to; the same kind of id as `chord_diagrams[].track` (rule `annotation_track`). Absent: a text from before 1.3, or from a file that says nothing about tracks; the renderer draws it on the first pitched track only |
-| `kind` | `text`, `chord` | `chord` means `text` is a chord name as written. Absent = `text`. (The check that a `chord` text parses comes with the chord parser, G21d) |
+| `kind` | `text`, `chord` | `chord` means `text` is a chord name as written, one the shared parser accepts (`parseTabChord` / `parse_tab_chord`); rule `annotation_chord`. Absent = `text` |
 | `place` | `above`, `below` | which side of the staff the text sits on. Absent = `above` |
 
 A `.tef` records which track's string row each text sits on and a placement
 value (V3 text record byte 11; V2 byte 4 bits 5-6: 0 above, 1 below the staff, 2
 above, 3 on the staff near its string). Both TEF importers fill `track` from the
 row (the same mapping chord diagrams use) and set `place: "below"` for placement
-1; 0, 2 and 3 draw above, so `place` is absent. They do not set `kind` yet. The
-`.tef` writer puts a text with a `track` on that track's first free string row
+1; 0, 2 and 3 draw above, so `place` is absent. Once the notation is final, both
+importers then give each text its role:
+
+- **Typed fingering (G21b).** A text that is exactly one of t, i, m, r, p (any
+  case, trimmed), has a `track`, and sits at a measure and tick where that
+  track has a note becomes that note's `finger` (upper case) and is removed from
+  `annotations`. With several notes at the tick it goes on the note on the
+  text's own string row; with none on the row it stays text. A note that
+  already has a `finger` keeps it and the letter stays text. A letter with no
+  matching note stays text, keeping its `track` and `place`. Nothing is dropped.
+- **Chords (G21d).** Every text left that the chord parser accepts gets
+  `kind: "chord"`. Other text has no `kind`.
+
+The `.tef` writer puts a text with a `track` on that track's first free string row
 (an unedited original keeps its row and bytes), writes placement 1 for `below`,
-and does not write `kind` (a `.tef` has only text cells). The editor stamps the
+and writes a `chord` as plain text (a `.tef` has only text cells; the importer
+derives `kind` again from the text). A converted letter is written as TablEdit's
+pick-hand fingering on the note, not as text. The editor stamps the
 current track on every text it adds, renames a track's texts with the track and
 deletes them with it, as for `chord_diagrams`, and has an Above / Below choice.
 
@@ -222,6 +236,7 @@ Messages carry the rule id in brackets.
 | `mark_order` | (1.2) `measure_marks` measures are strictly ascending |
 | `mark_raw` | (1.2) a mark's decoded fields equal `decodeMarkRaw(raw)` |
 | `annotation_track` | (1.3) `annotations[].track` names a track |
+| `annotation_chord` | (1.3) an annotation with `kind: "chord"` has a `text` the shared chord parser accepts |
 
 One rule is a **warning**, not an error: `reading_list_overrun` (a
 `reading_list` range that runs past the last written measure, #263).

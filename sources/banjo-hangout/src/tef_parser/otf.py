@@ -124,6 +124,7 @@ OTF_VERSION = _otf_format().OTF_VERSION
 DYN_LEVELS = _otf_format().DYN_LEVELS
 decode_mark_raw = _otf_format().decode_mark_raw
 ensure_version_at_least = _otf_format().ensure_version_at_least
+from tab_chord import parse_tab_chord  # noqa: E402  (_otf_format() put scripts/lib on sys.path)
 
 
 @dataclass
@@ -209,6 +210,7 @@ class OTFAnnotation:
     tick: int        # Tick offset within the measure
     text: str
     track: str | None = None   # id of the track whose string row the text sits on (1.3)
+    kind: str | None = None    # "chord" when text parses as a chord (G21d); None is plain text (1.3)
     place: str | None = None   # "below" (TablEdit placement 1); None draws above (1.3)
 
 
@@ -308,6 +310,7 @@ class OTFDocument:
             result["annotations"] = [
                 {"measure": a.measure, "tick": a.tick, "text": a.text,
                  **({"track": a.track} if a.track else {}),
+                 **({"kind": a.kind} if a.kind else {}),
                  **({"place": a.place} if a.place else {})}
                 for a in self.annotations
             ]
@@ -1124,6 +1127,46 @@ def chord_diagrams_to_otf(tef: TEFFile, doc: "OTFDocument",
         doc.skipped["chord_diagrams"] = dropped
 
 
+# G21b: a text that is exactly one right-hand finger letter, on a note.
+_TYPED_FINGERS = {"t": "T", "i": "I", "m": "M", "r": "R", "p": "P"}
+
+
+def assign_text_roles(doc: OTFDocument, rows: list[int | None]) -> None:
+    """Give each annotation its role once the notation is final (G21b, G21d).
+
+    `rows[i]` is the 1-based string, counted on the text's own track, of
+    `doc.annotations[i]` (None when it sits on no track).
+
+    G21b: a text that is one of t i m r p (any case) and has a track becomes
+    the `finger` of that track's note at the same measure and tick, and leaves
+    the annotations. With several notes at the tick it takes the note on the
+    text's string row. It stays text when no note matches, when the tick holds
+    several notes and none is on the row, or when the note already has a
+    finger. Nothing is dropped.
+
+    G21d: every text left that parse_tab_chord accepts gets kind "chord".
+    """
+    at: dict[tuple[str, int, int], list[OTFNote]] = {}
+    for track_id, measures in doc.notation.items():
+        for m in measures:
+            for e in m.events:
+                at.setdefault((track_id, m.measure, e.tick), []).extend(e.notes)
+
+    kept = []
+    for a, row in zip(doc.annotations, rows):
+        finger = _TYPED_FINGERS.get(a.text.strip().lower()) if a.track else None
+        notes = at.get((a.track, a.measure, a.tick), []) if finger else []
+        if len(notes) > 1:
+            notes = [n for n in notes if n.s == row]
+        if len(notes) == 1 and not notes[0].finger:
+            notes[0].finger = finger
+            continue
+        if parse_tab_chord(a.text):
+            a.kind = "chord"
+        kept.append(a)
+    doc.annotations = kept
+
+
 def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
     """Convert a parsed TEF file to OTF format.
 
@@ -1470,6 +1513,7 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
     # (the mapping chord diagrams use); a row past every track stays
     # track-less (the renderer puts it on the first pitched track).
     string_counts = [i.num_strings for i in tef.instruments]
+    text_rows: list[int | None] = []
     for te in tef.text_events:
         if tef.header.is_v2:
             index, offset = divmod(te.position, units_per_measure)
@@ -1486,6 +1530,8 @@ def tef_to_otf(tef: TEFFile, tuning_override: str | None = None) -> OTFDocument:
             track=doc.tracks[track_index].id if has_track else None,
             place=TEXT_PLACE.get(te.placement),
         ))
+        text_rows.append(te.string_row - sum(string_counts[:track_index]) + 1 if has_track else None)
+    assign_text_roles(doc, text_rows)
 
     chord_diagrams_to_otf(tef, doc, units_per_measure, V3_TICKS_PER_UNIT)
 
