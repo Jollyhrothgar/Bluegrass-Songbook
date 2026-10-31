@@ -100,28 +100,25 @@ test.describe('Auto-hiding chrome (song page)', () => {
         await expect(page.locator('body')).toHaveClass(/chrome-hidden/);
     });
 
-    // Mike, 2026-10-30: turned on from a lyric page, the bands hid on a tab
-    // page that has no Display, so nothing there could turn it off. Bands hide
-    // only where the switch is (#dock-display-btn): not on a tab or notation.
-    for (const [what, url, ready] of [
-        ['a tab', '/#work/foggy-mountain-breakdown/banjo-tab', '.tab-play-btn'],
-        ['ABC notation', '/#work/arkansas-traveler-1', '#abc-play-btn'],
-    ]) {
-        test(`on ${what}, with no Display to turn it off, the bands never hide`, async ({ page }) => {
-            const sheet = await openDock(page, 'display');
-            await sheet.locator('#pill-autohide').check();
-            await page.keyboard.press('Escape');
+    // Mike, 2026-10-30: turned on from a lyric page, the bands hid on a page
+    // with no Display, so nothing there could turn it off. Bands hide only
+    // where the switch is (#dock-display-btn): not on ABC notation. A tab has
+    // a Display since G19c (song-docks.spec.js covers it, and that a playing
+    // tab never hides its bands).
+    test('on ABC notation, with no Display to turn it off, the bands never hide', async ({ page }) => {
+        const sheet = await openDock(page, 'display');
+        await sheet.locator('#pill-autohide').check();
+        await page.keyboard.press('Escape');
 
-            await page.goto(url);
-            await expect(page.locator(ready).first()).toBeVisible({ timeout: 20000 });
-            await expect(page.locator('#dock-display-btn')).toHaveCount(0);
-            await scrollDown(page);
-            const top = await page.locator('#app-topbar').boundingBox();
-            expect(top.y).toBeGreaterThanOrEqual(0);
-            const band = await page.locator('#app-bottomband').boundingBox();
-            expect(band.y + band.height).toBeLessThanOrEqual(480 + 1);
-        });
-    }
+        await page.goto('/#work/arkansas-traveler-1');
+        await expect(page.locator('#abc-play-btn').first()).toBeVisible({ timeout: 20000 });
+        await expect(page.locator('#dock-display-btn')).toHaveCount(0);
+        await scrollDown(page);
+        const top = await page.locator('#app-topbar').boundingBox();
+        expect(top.y).toBeGreaterThanOrEqual(0);
+        const band = await page.locator('#app-bottomband').boundingBox();
+        expect(band.y + band.height).toBeLessThanOrEqual(480 + 1);
+    });
 
     test('song content stays visible while chrome is hidden', async ({ page }) => {
         const sheet = await openDock(page, 'display');

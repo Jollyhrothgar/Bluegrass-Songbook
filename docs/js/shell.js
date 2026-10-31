@@ -572,8 +572,20 @@ export function setChromeAutoHide(on) {
     if (!on) document.body.classList.remove('chrome-hidden');
 }
 
+/**
+ * Keep both bands up whatever the reader has chosen, while the page needs
+ * them (a tab playing scrolls itself, and must not hide its own Stop). Lifting
+ * the hold leaves the bands as they are; the next scroll decides.
+ */
+let chromeHeld = false;
+export function holdChrome(on) {
+    chromeHeld = !!on;
+    if (chromeHeld) document.body.classList.remove('chrome-hidden');
+    lastScrollY = window.scrollY;
+}
+
 function handleChromeScroll() {
-    if (!autoHideEnabled || scrollTickPending) return;
+    if (!autoHideEnabled || chromeHeld || scrollTickPending) return;
     scrollTickPending = true;
     requestAnimationFrame(() => {
         scrollTickPending = false;
@@ -665,12 +677,12 @@ function closePopover() {
  * wide screen, over a scrim. It reuses the notes sheet's look (`.notes-sheet*`
  * in style.css), so there is one bottom-sheet design. Esc, the × and a tap
  * on the scrim close it, and focus returns to what opened it.
- *   openSheet({ id, title, opener, build(contentEl, api) }) -> { close, el }
+ *   openSheet({ id, title, opener, build(contentEl, api), onClose }) -> { close, el }
  * Only one is open at a time.
  */
 let openSheetApi = null;
 
-export function openSheet({ id, title, opener = null, build }) {
+export function openSheet({ id, title, opener = null, build, onClose = null }) {
     openSheetApi?.close();
 
     const backdrop = document.createElement('div');
@@ -700,6 +712,7 @@ export function openSheet({ id, title, opener = null, build }) {
             document.removeEventListener('keydown', onKey, true);
             backdrop.remove();
             sheet.remove();
+            onClose?.();
             if (opener) {
                 opener.setAttribute('aria-expanded', 'false');
                 if (opener.isConnected) opener.focus();

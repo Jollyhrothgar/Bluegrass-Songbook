@@ -42,7 +42,7 @@ import { parseChordPro, renderSectionsHtml } from './renderers/chordpro.js';
 import { getSongMetadata, updateSongMetadata } from './lists.js';
 import { endSongView } from './analytics.js';
 import { setBottomBand } from './shell.js';
-import { sizeControl, readingDock } from './song-dock.js';
+import { sizeControl, tempoControl, readingDock } from './song-dock.js';
 import { openWork } from './work-view.js';
 
 // DOM element references (set by init)
@@ -590,15 +590,12 @@ export function renderChartTabContent(container, song, chordpro, isInitialRender
  * once the band is mounted.
  */
 function buildAbcBandControls(viewEl) {
-    const tempo = document.createElement('span');
-    tempo.className = 'dock-tempo';
-    tempo.setAttribute('role', 'group');
-    tempo.setAttribute('aria-label', 'Tempo');
-    tempo.innerHTML = `
-        <span class="dock-tempo-label">Tempo</span>
-        <button type="button" id="abc-speed-decrease" class="dock-size-btn" aria-label="Slower" title="Decrease tempo">−</button>
-        <span id="abc-tempo-label" class="dock-tempo-n">${abcTempoBpm}</span>
-        <button type="button" id="abc-speed-increase" class="dock-size-btn" aria-label="Faster" title="Increase tempo">+</button>`;
+    const tempo = tempoControl({
+        n: abcTempoBpm,
+        display: { id: 'abc-tempo-label' },
+        down: { id: 'abc-speed-decrease' },
+        up: { id: 'abc-speed-increase' },
+    });
     const play = document.createElement('button');
     play.type = 'button';
     play.id = 'abc-play-btn';

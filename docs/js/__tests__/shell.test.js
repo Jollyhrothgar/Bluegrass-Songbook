@@ -387,3 +387,44 @@ describe('openSheet', () => {
         expect(document.getElementById('c-sheet')).toBeNull();
     });
 });
+
+// Auto-hide (Display ▸ Auto-hide controls) hides both bands while scrolling down,
+// except while the page holds them up: a tab that is playing scrolls itself (G19c).
+describe('chrome auto-hide', () => {
+    const scrollTo = async (y) => {
+        Object.defineProperty(window, 'scrollY', { value: y, configurable: true });
+        window.dispatchEvent(new Event('scroll'));
+        await new Promise(r => requestAnimationFrame(() => r()));
+    };
+
+    it('hides on scroll down when on, comes back on scroll up, and does not hide while held', async () => {
+        vi.resetModules();
+        document.body.innerHTML = '';
+        Object.defineProperty(window, 'scrollY', { value: 0, configurable: true });
+        const { initShell, setChromeAutoHide, holdChrome } = await import('../shell.js');
+        initShell({ nav: [] });
+        const hidden = () => document.body.classList.contains('chrome-hidden');
+
+        await scrollTo(300);
+        expect(hidden()).toBe(false);                 // off by default
+        setChromeAutoHide(true);
+        await scrollTo(400);
+        expect(hidden()).toBe(true);
+        await scrollTo(300);
+        expect(hidden()).toBe(false);                 // scroll up brings it back
+
+        holdChrome(true);                             // a tab starts playing
+        await scrollTo(600);
+        expect(hidden()).toBe(false);
+        await scrollTo(900);
+        expect(hidden()).toBe(false);
+
+        holdChrome(false);                            // playback ends: scrolling hides again
+        await scrollTo(1000);
+        await scrollTo(1100);
+        expect(hidden()).toBe(true);
+
+        holdChrome(true);                             // a hold lifts a hidden band too
+        expect(hidden()).toBe(false);
+    });
+});

@@ -70,7 +70,7 @@ describe('boot graph (static imports from main.js)', () => {
         'otf-editor/cursor.js', 'otf-editor/actions.js', 'otf-editor/work-edit.js',
         'renderers/tablature.js', 'renderers/tab-player.js', 'renderers/tab-ascii.js',
         'renderers/index.js', 'audio-unlock.js',
-        'tab-edit-band.js', 'tab-controls-sheet.js', 'tab-playback-interactions.js',
+        'tab-edit-band.js', 'tab-controls-sheet.js', 'tab-playback-interactions.js', 'tab-dock.js',
         // whole-page views and one-shot actions
         'review-queue.js', 'bounty-view.js', 'my-submissions.js', 'high-scores.js',
         'drafts-view.js', 'tab-editor-home.js', 'list-export.js', 'zip.js', 'title-match.js',

@@ -345,13 +345,31 @@ export const STATES = [
     {
         id: 'tab-settings-sheet',
         group: 'Tab page',
-        title: 'Tab settings sheet (phone); the full band (desktop)',
+        title: 'Tab Display sheet (Size, Play in, Layout, Feel, Practice, Tracks, Auto-hide)',
+        url: '/#work/foggy-mountain-breakdown/ensemble',
+        ready: tabReady,
+        setup: openDock('display'),
+        workshop: ['F7', 'F4'],
+    },
+    {
+        id: 'tab-view-sheet',
+        group: 'Tab page',
+        title: 'Tab View sheet (Tabs with their take counts, Tracks)',
+        url: '/#work/foggy-mountain-breakdown/ensemble',
+        ready: tabReady,
+        setup: openDock('view'),
+        workshop: ['F7', 'F4'],
+    },
+    {
+        id: 'tab-takes',
+        group: 'Tab page',
+        title: 'Tab View sheet drilled into one instrument\'s takes (the editor\'s pick starred)',
         url: '/#work/foggy-mountain-breakdown/banjo-tab',
         ready: tabReady,
-        setup: async (page, { phone }) => {
-            if (!phone) return;
-            await page.locator('#app-bottomband .tab-more-btn').click();
-            await page.locator('#app-bottomband .tab-settings-sheet').waitFor();
+        setup: async (page) => {
+            await openDock('view')(page);
+            await page.locator('#song-view-sheet [data-part="banjo-tab"]').click();
+            await page.locator('#song-view-sheet .dock-take').first().waitFor();
         },
         workshop: ['F7', 'F4'],
     },

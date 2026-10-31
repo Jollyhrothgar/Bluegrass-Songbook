@@ -26,10 +26,12 @@ this harness, and gets fixed rather than noted. Three corollaries:
    `list-management.spec.js` drive them with `page.on('dialog')`). That is
    backlog, not a pattern to copy.
 2. **The backend is mocked, never live.** See below.
-3. **Layouts are widths, not devices.** The tab band (`.app-bottomband`, the bottom band; CSS `container: tabband / inline-size`) collapses on its own width
+3. **Layouts are widths, not devices.** The tab EDITING band (`.app-bottomband`, the bottom band; CSS `container: tabband / inline-size`) collapses on its own width
    (`tab-controls-sheet.js` observes the element; CSS uses
    `@container tabband (max-width: 640px)`), so a test reaches the collapsed
-   layout by constraining the container, not only the viewport.
+   layout by constraining the container, not only the viewport. The tab's
+   reading dock has one layout at every width (`work-view.spec.js` pins a
+   480px band to show it).
 
 ## Running
 
@@ -152,7 +154,28 @@ hybrid part, `#dock-view-btn` (opens `#song-view-sheet`: `.dock-row[data-view]`,
 `#pill-autohide`, `#pill-chord-mode`, and for a chart `#pill-chart-cells`,
 `#pill-chart-bars`, `#pill-chart-order`, whose buttons carry `data-value`). The
 pill row and part tabs are gone. ABC notation has `#abc-play-btn`,
-`#abc-tempo-label`, `#abc-size`; a tab part's band ends in `.tab-view-btn`.
+`#abc-tempo-label`, `#abc-size`.
+
+A tab part's band is the tab dock (G19c): `.tab-play-btn` (▶ / ⏸ / ▶ Loop),
+`.tab-stop-btn` (hidden until playing), `.tab-tempo-down` / `-display` / `-up`,
+`.tab-view-btn` (also `#dock-view-btn`, opening `#song-view-sheet`) and
+`#dock-display-btn` (opening `#dock-display-sheet`, the same id as on the lyric
+sheet: `openDock(page, 'display')`). In the tab's Display sheet: `#tab-size`
+(`[data-size]`), `#tab-play-in` (`.pill-key-btn`, with `.tab-capo-indicator`
+under it), `.tab-repeat-group`, `.tab-feel-group`, `.tab-loop-toggle`,
+`.tab-metronome-toggle`, `.tab-countin-toggle`, `.tab-track-mixer`
+(`.track-toggle`, `.track-checkbox`), `#pill-autohide`. Those controls sit in
+`.tab-display-store` while the sheet is closed, so open it before touching
+them. In the tab's View sheet: `[data-part]` rows (`.dock-count`, `.dock-chev`
+when a part has several takes; clicking drills into `.dock-take` rows with
+`.dock-pin` ★, `.on`, `.dock-take-who`, and `.dock-back` in the title) and
+`[data-track]` rows (`all` included). Above the music: `.arr-credit`,
+`.arr-status`, `.arr-skipped`; the takes bar (`.arr-bar`, `#arr-list`) and
+`.track-view-tabs` are gone. To assert what Play was asked for, stub
+`TabPlayer.prototype.play` as `song-docks.spec.js` does (`stubPlay`). The tab
+EDITING band is the old one: `.tab-edit-submit`, `.tab-edit-done`, `.tab-more-btn`
+and `.tab-settings-sheet` below 640px, and no View or Display.
+
 In the lead-sheet editor the band is `#editor-band`: `#editor-mode-*`,
 `#editor-undo/redo`, `#editor-key-select` and the Display pill, whose options
 exist only once it is open, so use `openDisplay(page)` from
@@ -161,7 +184,7 @@ context). `.pill-btn` opens a `.pill-popover`; one is open at a time, and the
 dock sheets are modal (close with `closeSheet`). Both bands auto-hide while
 scrolling a song only when Display ▸ Auto-hide controls is on
 (`body.chrome-hidden`; off by default), and only on a page with
-`#dock-display-btn` (never a tab or ABC page). To enter the tab editor press Edit with
+`#dock-display-btn` (never ABC; a tab not while it plays). To enter the tab editor press Edit with
 `pressTabEdit(page)` (`helpers/tab-edit.js`); the band has no Edit of its own.
 
 Tab-editor selectors: `.editor-renderer .stave-row`, `.editor-canvas-container`,

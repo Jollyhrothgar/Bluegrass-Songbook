@@ -50,8 +50,9 @@ are for data smoke tests only (`.claude/rules/tests.md`).
   the dock below). `setChromeAutoHide(true)` hides BOTH bands while scrolling
   down (`body.chrome-hidden`; CSS slides `#app-topbar` and the song page's
   bottom band, not the lyrics editor's, and only when the page's dock has
-  `#dock-display-btn`, the switch that turns it off: a tab or ABC page never
-  hides). The shell owns no state, so
+  `#dock-display-btn`, the switch that turns it off: an ABC page never hides;
+  a tab hides unless it is playing, `holdChrome(true)`). The shell owns no
+  state, so
   work-view.js and main.js pass the reader's choice (`autoHideControls`,
   Display ▸ Auto-hide controls, OFF by default); there is no focus mode.
   `--topbar-h` is published next to `--bottomband-h`; the chart column sticks
@@ -86,21 +87,45 @@ are for data smoke tests only (`.claude/rules/tests.md`).
   song has: `none`; `segmented` (lyrics + chart, plus Lyrics + Chart when
   `chartIsWide()`); or `sheet` (View ▾) once there are versions, tabs or a
   hybrid ABC + chords part. The sheet lists the choices, Versions
-  (`renderArrangementList`, with votes and badges) and Tabs. A tab part gets a
-  `.tab-view-btn` at the end of its band (kept out of the ⚙ collapse,
-  disabled while the tab editor is open). Chart choices are view prefs in
+  (`renderArrangementList`, with votes and badges) and Tabs. A tab part's dock is the tab dock below. Chart choices are view prefs in
   state.js (`chartCells`, `chartBars`, `chartOrder`, `chartBeside`,
   `autoHideControls`), redrawn by the same subscriber as the other display
   prefs; the chart's text is em-sized and scales with Size. Size is
   remembered per kind: text in `songbook-view-prefs`, notation in
-  `bgb-abc-scale` (tab Size joins in G19c). There is no pill row, part tabs,
-  hybrid toggle or Practice mode.
+  `bgb-abc-scale`, a tab's staff in `bgb-tab-scale` (state.js `tabScale`).
+  There is no pill row, part tabs, hybrid toggle or Practice mode.
+- **The tab dock (G19c, `tab-dock.js`).** A tab part's band is `▶ [⏹] Tempo −
+  n + · View ▾ · Display` on every width: `.tab-controls.tab-dock` in
+  `#app-bottomband` (work-view.js `createTablatureControls` / `buildTabDock`;
+  `tempoControl` is shared with the ABC dock). Stop shows only once playback
+  has started (CSS hides a disabled `.tab-stop-btn` in the dock); the position
+  readout rides the dock's top edge; ▶ reads ⏸ while playing and "▶ Loop"
+  when a dragged phrase is armed. `#dock-display-btn` opens the Display sheet
+  (`fillDisplaySheet`): Size (`#tab-size`, remembered), Play in (`#tab-play-in`,
+  the twelve keys: a capo for playback, the frets never move), Layout, Feel,
+  Practice (Loop, Metronome, Count-in), Tracks (the mixer), Auto-hide. Those
+  controls are built with the band, parked in a hidden `.tab-display-store`,
+  MOVED into the sheet while it is open and back when it closes (`openSheet`'s
+  `onClose`), so setupTablaturePlayer wires each once; hold a node
+  (`const mixer = controls.querySelector(...)`), never re-query from the band
+  at play time. Layout and Feel redraw the tab and rebuild the band, so the
+  sheet is reopened on the new one (`redraw` in renderTablaturePart). View's
+  sheet lists Lyrics/Chart (if any), Tabs with their take counts (a part with
+  several takes drills in: ★ the editor's pick, ✓ the take showing; picking
+  one is `pickTake`) and Tracks (a multi-track tab; `pickTrack`). Above the
+  music is one credit line (`renderTakeHeader`, `.arr-credit`) and the
+  `.arr-status` notices; the takes bar and "View track" tabs are gone. The tab
+  EDITOR keeps G17's band: `createTablatureControls(otf, part, {editing:
+  true})` builds the old one-row band (⚙ sheet below 640px via
+  `tab-controls-sheet.js`, no View or Display) for `bindBandToEditor`. CSS
+  scopes the old band rules with `.tab-controls:not(.tab-dock)`.
 - The bottom band's height varies (it wraps on narrow windows and the tab band
   collapses on phones), so `shell.js` publishes its measured height as `--bottomband-h` on `<html>`. Anything stacked on the
   band (drop-ups, the tab settings sheet, `.container` padding) offsets from that
   variable, never a literal, and never from `100%` (Chromium does not make
   `container-type` the containing block for `position: fixed` drop-ups).
-- `tab-controls-sheet.js` collapses the tab band below a band width of 640 px by
+- `tab-controls-sheet.js` collapses the tab EDITING band (only; the reading dock
+  has one layout) below a band width of 640 px by
   MOVING (not rebuilding) controls into a gear sheet, so listeners from
   `setupTablaturePlayer` survive. The width is the band's, not the window's
   (ResizeObserver sets `.is-narrow-band`; CSS uses `@container tabband`); the
