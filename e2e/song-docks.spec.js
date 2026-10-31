@@ -627,11 +627,11 @@ test.describe('the tab page above the music', () => {
 });
 
 test.describe('Display on a tab', () => {
-    test('holds Size, Play in, Feel, Practice, Tracks and Auto-hide', async ({ page }) => {
+    test('holds Size, Bars per row, Play in, Feel, Practice, Tracks and Auto-hide', async ({ page }) => {
         await gotoTab(page, '/#work/foggy-mountain-breakdown/ensemble');
         const sheet = await openDock(page, 'display');
         const labels = (await sheet.locator('.dock-group-label').allTextContents()).map(t => t.replace(/\s+/g, ' ').trim().split(' ')[0]);
-        expect(labels).toEqual(['Size', 'Play', 'Feel', 'Practice', 'Tracks']);
+        expect(labels).toEqual(['Size', 'Bars', 'Play', 'Feel', 'Practice', 'Tracks']);
         await expect(sheet.locator('#pill-autohide')).toBeVisible();
         await expect(sheet.locator('.tab-track-mixer .track-checkbox')).not.toHaveCount(0);
     });

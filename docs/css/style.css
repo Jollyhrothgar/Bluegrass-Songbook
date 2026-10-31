@@ -10128,6 +10128,39 @@ body.chrome-hidden .app-bottomband:has(#dock-display-btn) {
 .dock-size-btn:hover:not(:disabled) { background: var(--bg-tertiary); }
 .dock-size-btn:disabled { opacity: 0.35; cursor: default; }
 
+/* Bars per row: [Auto] − 4 +, in the tab Display sheet */
+.dock-bars {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.15rem;
+    box-sizing: border-box;
+    height: 34px;
+    padding: 0 0.25rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--bg-secondary);
+    font-size: var(--font-sm);
+}
+.dock-bars-auto {
+    padding: 0.3rem 0.65rem;
+    border: none;
+    border-radius: 999px;
+    background: none;
+    color: var(--text);
+    font: inherit;
+    cursor: pointer;
+}
+.dock-bars-auto:hover { background: var(--bg-tertiary); }
+.dock-bars-auto[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); font-weight: 600; }
+.dock-bars-count {
+    /* one width for "4" and "8 · 5 fit", so − and + never move under a
+       finger (a growing label once put "−" where the reset is) */
+    width: 9.5ch;
+    text-align: center;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+}
+
 .dock-seg { display: inline-flex; overflow: hidden; padding: 0; }
 
 .dock-seg-btn {

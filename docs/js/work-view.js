@@ -16,6 +16,7 @@ import {
     currentDetectedKey, setCurrentDetectedKey,
     fontSizeLevel, setFontSizeLevel,
     tabScale, setTabScale, TAB_SCALE_MIN, TAB_SCALE_MAX,
+    tabBars, setTabBars,
     chartBeside, setChartBeside, autoHideControls,
     showAbcNotation, setShowAbcNotation,
     setOriginalDetectedKey,
@@ -2662,6 +2663,7 @@ async function renderTablaturePart(part, container) {
 
             const renderer = new tabRenderKit.TabRenderer(tabContainer);
             renderer.setScale(tabScale);   // before the first draw, so it does not lay out twice
+            renderer.options.barsPerRow = tabBars;
             renderer.render(track, notation, ticksPerBeat, timeSignature, timings.visual);
             trackRenderers[track.id] = renderer;
             viewIds.push(track.id);
@@ -2914,6 +2916,7 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
 
     // The rendered-view renderers are about to be detached — drop their
     // observers now; renderTablaturePart rebuilds them on exit.
+    const readerBars = Object.values(trackRenderers).map(r => r.rowFit?.()?.count).find(Boolean) || null;
     destroyTrackRenderers();
     if (activeEditSession) { activeEditSession.destroy(); activeEditSession = null; }
     if (activeEditBand) { activeEditBand.destroy(); activeEditBand = null; }
@@ -3004,7 +3007,9 @@ async function mountTabEditor(otf, part, container, { kind = 'edit' } = {}) {
         protectedTrackId: isNewTake ? null : resolveEditTrackId(otf, instrument),
         filename: `${editFilename(part)}${isNewTake ? '' : '-edited'}`,
         source: draftMeta.source,
-        editorFactory: (opts) => new OTFEditor(opts),
+        // The reader's row shape rides in as the editor's own option, so
+        // pressing Edit does not reflow the page (the editor pins it once).
+        editorFactory: (opts) => new OTFEditor({ ...opts, ...(readerBars ? { measuresPerRow: readerBars } : {}) }),
         barHost,
         submitLabel: isNewTake ? '🚀 Submit tab' : '🚀 Submit correction',
         showDone: !isNewTake,
@@ -3729,6 +3734,25 @@ function setupTablaturePlayer(otf, controls, renderer) {
             setTabScale(stepScale(dir));
             for (const r of Object.values(trackRenderers)) r.setScale?.(tabScale);
         },
+    };
+
+    // Bars per row (G22): 'auto' (the renderer reads the music and re-fits on
+    // resize) or an exact count. Kept per window (sessionStorage) with the
+    // latest choice seeding a new one (state.js). Every renderer follows; the
+    // first one that has a layout is the one the label and the limits speak for.
+    const barsFit = () => Object.values(trackRenderers).map(r => r.rowFit?.()).find(Boolean) || null;
+    const setBars = (mode) => {
+        setTabBars(mode);
+        for (const r of Object.values(trackRenderers)) r.setBarsPerRow?.(tabBars);
+    };
+    controls._tabDisplay.bars = {
+        fit: barsFit,
+        // from Auto, − and + step from the count Auto chose now
+        step: (dir) => {
+            const fit = barsFit();
+            setBars((fit?.chosen ?? fit?.count ?? 4) + dir);
+        },
+        auto: () => setBars('auto'),
     };
 
     metronomeCheckbox?.addEventListener('change', () => {

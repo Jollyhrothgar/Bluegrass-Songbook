@@ -77,7 +77,7 @@ selectors.
   has started (CSS hides a disabled `.tab-stop-btn` in the dock); the position
   readout rides the dock's top edge; ▶ reads ⏸ while playing and "▶ Loop"
   when a dragged phrase is armed. `#dock-display-btn` opens the Display sheet
-  (`fillDisplaySheet`): Size (`#tab-size`, remembered), Play in (`#tab-play-in`,
+  (`fillDisplaySheet`): Size (`#tab-size`, remembered), Bars per row (G22: a pill like Size, `#tab-bars`: the **Auto** toggle `#tab-bars-auto` (`aria-pressed` while in Auto), `[data-bars=-1|1]` and the fixed-width number `#tab-bars-count`, which reads "4" or, when the chosen count cannot fit at `hardMinMeasureWidth`, "4 · 3 fit"; − and + leave Auto from the count Auto had; disabled at 1 and at the most that fit. The choice is `'auto'` or an exact 1-8, `state.js` `tabBars`: this window's in `sessionStorage`, the latest also in `localStorage` (`bgb-tab-bars`) to seed a new window. The renderer's `barsPerRow` option and `rowFit()` `{chosen, auto, count, most}`; Auto = `TabRenderer.neededMeasureWidth` (a bar's length over its smallest onset gap times `noteSlotWidth`, 90th percentile across bars) and re-fits on resize; an exact count never changes with the window. `mountTabEditor` hands the reader's count to the editor as its `measuresPerRow` option so Edit does not reflow), Play in (`#tab-play-in`,
   the twelve keys: a capo for playback, the frets never move), Layout, Feel,
   Practice (Loop, Metronome, Count-in), Tracks (the mixer), Auto-hide. Those
   controls are built with the band, parked in a hidden `.tab-display-store`,

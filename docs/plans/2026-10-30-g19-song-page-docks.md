@@ -421,7 +421,7 @@ Mike approved the frames on 2026-10-30 ("it looks really good"):
 | Spec + mock frames | done, commits on `feature/g19-song-page-docks` |
 | G19a top dock + Details | done — #344 (2026-10-30) |
 | G19b reading dock | done — #344 (2026-10-30), Mike: "It’s amazing" |
-| G19c tabs + lists | building on `feature/g19c-tab-dock`; one PR, one review. c1 the tab dock and c2 set lists: done (2026-10-30); waiting for Mike's look |
+| G19c tabs + lists | done — #349 (2026-10-31), Mike: "Merge." |
 | G19d tidy | not started |
 | G19e editor Submit in the top dock | only on Mike's yes |
 

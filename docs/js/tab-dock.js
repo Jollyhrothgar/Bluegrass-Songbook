@@ -41,6 +41,52 @@ function group(label, hint = '') {
     return el;
 }
 
+/** The number between − and +: the count in use, and what fits if that is fewer than chosen. */
+export function barsLabel({ chosen, count, most }) {
+    if (chosen === null || chosen === undefined) return String(count);
+    return chosen > most ? `${chosen} · ${most} fit` : String(chosen);
+}
+
+/** The count − and + step from: the chosen one, or the one Auto picked. */
+function barsBase(fit) { return fit.chosen ?? fit.count; }
+
+/**
+ * "[Auto] − 4 +": bars per row, a pill like Size. Auto is a toggle (pressed
+ * while the renderer reads the music); − and + leave it for an exact count,
+ * stepping from the count Auto had. `bars.fit()` says where the renderer
+ * stands ({chosen, auto, count, most} or null), `bars.step(dir)` moves it and
+ * `bars.auto()` goes back to Auto. The number has a fixed width so the
+ * buttons never move under a finger.
+ */
+function barsControl(bars) {
+    const el = document.createElement('span');
+    el.className = 'dock-bars';
+    el.id = 'tab-bars';
+    el.setAttribute('role', 'group');
+    el.setAttribute('aria-label', 'Bars per row');
+    el.innerHTML = `<button type="button" class="dock-bars-auto" id="tab-bars-auto" aria-pressed="true" title="Fit the bars to the window and the music">Auto</button>`
+        + `<button type="button" class="dock-size-btn" data-bars="-1" aria-label="Fewer bars" title="Fewer bars per row">−</button>`
+        + `<span class="dock-bars-count" id="tab-bars-count" aria-live="polite"></span>`
+        + `<button type="button" class="dock-size-btn" data-bars="1" aria-label="More bars" title="More bars per row">+</button>`;
+    const autoBtn = el.querySelector('#tab-bars-auto');
+    const count = el.querySelector('#tab-bars-count');
+    const buttons = [...el.querySelectorAll('[data-bars]')];
+    const sync = () => {
+        const fit = bars.fit();
+        const isAuto = !fit || fit.chosen === null;
+        autoBtn.setAttribute('aria-pressed', String(isAuto));
+        count.textContent = fit ? barsLabel(fit) : '';
+        buttons.forEach(b => {
+            const dir = Number(b.dataset.bars);
+            b.disabled = !fit || (dir < 0 ? barsBase(fit) <= 1 : barsBase(fit) + 1 > fit.most);
+        });
+    };
+    buttons.forEach(b => b.addEventListener('click', () => { bars.step(Number(b.dataset.bars)); sync(); }));
+    autoBtn.addEventListener('click', () => { bars.auto(); sync(); });
+    sync();
+    return el;
+}
+
 /**
  * Fill the Display sheet from the band's controls. `moved` collects every
  * node taken out of the store, so closing the sheet can return them.
@@ -68,6 +114,17 @@ export function fillDisplaySheet(content, controls) {
         row.className = 'dock-opt-row';
         row.innerHTML = '<span class="dock-opt-label">Staff size</span>';
         row.appendChild(sizeControl({ id: 'tab-size', canStep: size.canStep, step: size.step }));
+        content.appendChild(row);
+    }
+
+    // Bars per row: [Auto] − 4 + (work-view.js owns the choice)
+    const bars = controls._tabDisplay?.bars;
+    if (bars) {
+        content.appendChild(group('Bars per row'));
+        const row = document.createElement('div');
+        row.className = 'dock-opt-row';
+        row.innerHTML = '<span class="dock-opt-label">Bars</span>';
+        row.appendChild(barsControl(bars));
         content.appendChild(row);
     }
 

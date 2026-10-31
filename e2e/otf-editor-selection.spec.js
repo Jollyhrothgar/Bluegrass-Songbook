@@ -18,6 +18,10 @@ const WORK = '/#work/red-haired-boy/banjo';
 const band = (page) => page.locator('#app-bottomband');
 
 async function openBanjoEditor(page) {
+    // The block spans measures 2-4 and must sit on one row. Auto now gives this
+    // tab's sixteenths more room per bar (3 to a row at 1440), so ask for 6 the
+    // way a reader would (G22): the editor pins the reader's count.
+    await page.addInitScript(() => localStorage.setItem('bgb-tab-bars', '6'));
     await page.goto(WORK);
     await page.locator('.tablature-container').first().waitFor({ timeout: 20000 });
     await pressTabEdit(page);
