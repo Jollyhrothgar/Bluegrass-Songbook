@@ -3447,14 +3447,17 @@ function init() {
         resultsDiv
     });
 
-    const includeDungeonBox = document.getElementById('include-dungeon');
-    if (includeDungeonBox) {
-        includeDungeonBox.checked = includeDungeon;
-        includeDungeonBox.addEventListener('change', () => {
-            setIncludeDungeon(includeDungeonBox.checked);
+    // Two boxes, one choice: the search bar's and the home page's
+    const includeDungeonBoxes = ['include-dungeon', 'landing-include-dungeon']
+        .map(id => document.getElementById(id)).filter(Boolean);
+    includeDungeonBoxes.forEach(box => {
+        box.checked = includeDungeon;
+        box.addEventListener('change', () => {
+            setIncludeDungeon(box.checked);
+            includeDungeonBoxes.forEach(other => { other.checked = box.checked; });
             applySearchScope();
         });
-    }
+    });
 
     // Update URL when user types in search (debounced, uses replaceState to avoid history spam).
     // Skipped if the reader has navigated since typing: a result clicked

@@ -177,7 +177,9 @@ document is `.otf-editor.__otfEditor.state.facade`, and
 
 Fixture works (confirm with `ls works/<id>` after a build):
 
-- `old-home-place`: plain lead sheet. The index prune hides non-bluegrass rows
+- `old-home-place`: lead sheet, the only chord chart, and a banjo tab (so View ▾).
+  A spec of `#dock-view` (Lyrics | Chart) takes the tab away with
+  `serveWithoutTabs` (`helpers.js`). The index prune hides non-bluegrass rows
   such as `your-cheating-heart` from search.
 - `wagon-wheel`: 2-version group (View ▾ ▸ Versions).
 - `arkansas-traveler-1`: ABC notation (the ABC dock); `lonesome-road-blues-1`: a chordful lead sheet plus a banjo tab (View ▾ ▸ Tabs).

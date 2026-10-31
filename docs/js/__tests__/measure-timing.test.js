@@ -25,6 +25,7 @@ import {
     buildMetronomeSchedule,
     analyzeReadingList,
     prepareCompactNotation,
+    quartersPerBeat,
 } from '../renderers/measure-timing.js';
 
 describe('parseTimeSignature', () => {
@@ -496,5 +497,23 @@ describe('analyzeReadingList — overlapping D.S.-style lists (27493)', () => {
         // interior ending bars carry `ending` but NOT `endingStart`
         expect(compact[28].ending).toBe(1);          // m29
         expect(compact[28].endingStart).toBeUndefined();
+    });
+});
+
+describe('quartersPerBeat (what the tab band\'s BPM counts)', () => {
+    it('a quarter- or eighth-note signature counts quarters', () => {
+        for (const ts of ['4/4', '3/4', '2/4', '6/8']) {
+            expect(quartersPerBeat(ts)).toBe(1);
+        }
+    });
+
+    it('a half-note signature counts halves', () => {
+        expect(quartersPerBeat('2/2')).toBe(2);
+        expect(quartersPerBeat('3/2')).toBe(2);
+    });
+
+    it('two feel counts halves, without doubling a written 2/2', () => {
+        expect(quartersPerBeat('4/4', 'two')).toBe(2);
+        expect(quartersPerBeat('2/2', 'two')).toBe(2);
     });
 });

@@ -7003,8 +7003,18 @@ a.my-submission-row:hover {
     margin-bottom: 1.5rem;
 }
 
+/* The search box and its scope: side by side, or stacked when they won't fit */
+.landing-search-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem 1rem;
+}
+
 #landing-search-input {
-    width: 100%;
+    flex: 1 1 22rem;
+    min-width: 0;
     padding: 1rem 1.25rem;
     font-size: 1.1rem;
     border: 2px solid var(--border);
