@@ -43,19 +43,13 @@ import { getSongMetadata, updateSongMetadata } from './lists.js';
 import { endSongView } from './analytics.js';
 import { setBottomBand } from './shell.js';
 import { sizeControl, tempoControl, readingDock } from './song-dock.js';
+import { listPillModel, buildListPill } from './list-pill.js';
 import { openWork } from './work-view.js';
 
 // DOM element references (set by init)
 let songViewEl = null;
 let songContentEl = null;
 let resultsDivEl = null;
-
-// Navigation bar elements
-let navBarEl = null;
-let navPrevBtnEl = null;
-let navNextBtnEl = null;
-let navPositionEl = null;
-let navListNameEl = null;
 
 // Callback references (set by init)
 let pushHistoryStateFn = null;
@@ -630,7 +624,7 @@ function buildAbcBandControls(viewEl) {
     speedIncrease.addEventListener('click', () => applyTempo(abcTempoBpm + 10));
     applyTempo(abcTempoBpm);
 
-    const dock = readingDock(play, tempo, size, viewEl);
+    const dock = readingDock(listPillEl(), play, tempo, size, viewEl);
     dock.classList.add('abc-dock');
     return dock;
 }
@@ -655,74 +649,6 @@ export async function openSongFromHistory(songId) {
 }
 
 /**
- * Update navigation bar based on list context
- */
-export function updateNavBar() {
-    if (!navBarEl) return;
-
-    // Update exit button label based on context
-    const exitBtn = document.getElementById('exit-fullscreen-btn');
-    if (exitBtn) {
-        const labelSpan = exitBtn.querySelector('.nav-label');
-        const arrowSpan = exitBtn.querySelector('.nav-arrow');
-        if (listContext && listContext.listId) {
-            // In list context: show "List" to return to list view
-            if (labelSpan) labelSpan.textContent = 'List';
-            if (arrowSpan) arrowSpan.textContent = '☰';
-            exitBtn.title = 'Back to list';
-        } else {
-            // No list context: show "Exit" to exit fullscreen
-            if (labelSpan) labelSpan.textContent = 'Exit';
-            if (arrowSpan) arrowSpan.textContent = '✕';
-            exitBtn.title = 'Exit focus mode (Esc)';
-        }
-    }
-
-    // Show nav bar if we have a list context (regardless of fullscreen)
-    // But in fullscreen mode, it's always shown via CSS
-    if (listContext && listContext.songIds && listContext.songIds.length > 0) {
-        const idx = listContext.currentIndex;
-        const total = listContext.songIds.length;
-
-        // Update position text
-        if (navPositionEl) {
-            navPositionEl.textContent = `${idx + 1} of ${total}`;
-        }
-
-        // Update list name
-        if (navListNameEl) {
-            navListNameEl.textContent = listContext.listName || '';
-        }
-
-        // Update button states
-        if (navPrevBtnEl) {
-            navPrevBtnEl.disabled = idx <= 0;
-        }
-        if (navNextBtnEl) {
-            navNextBtnEl.disabled = idx >= total - 1;
-        }
-
-        // List context: the nav bar is the prev/next surface
-        navBarEl.classList.remove('hidden');
-        navBarEl.classList.add('has-list-context');
-
-        // The next song is the likeliest next tap: have its chart in memory
-        // by the time the reader gets there.
-        prefetchNextInList(listContext);
-    } else {
-        // No list context: no nav bar
-        navBarEl.classList.remove('has-list-context');
-        navBarEl.classList.add('hidden');
-        // Clear the content so it doesn't show stale data
-        if (navPositionEl) navPositionEl.textContent = '';
-        if (navListNameEl) navListNameEl.textContent = '';
-    }
-
-    // Keep the body-level list-context flag in sync
-    updateListContextClass();
-}
-
-/**
  * Warm the ChordPro of the song after the current one in a list. A
  * part-qualified item ("work/banjo") may open a tab instead of the lead
  * sheet, so it is left alone. Exported for tests.
@@ -736,15 +662,6 @@ export function prefetchNextInList(context) {
 }
 
 /**
- * Keep body.has-list-context in sync with the list context, so CSS can
- * stack the list nav bar and the bottom band.
- */
-export function updateListContextClass() {
-    const inList = !!(listContext && listContext.songIds && listContext.songIds.length > 0);
-    document.body.classList.toggle('has-list-context', inList);
-}
-
-/**
  * Pluggable navigation router for list item navigation.
  * Set by main.js to smart-route between openSong/openWork based on item type.
  */
@@ -752,17 +669,20 @@ let listItemRouter = null;
 export function setListItemRouter(fn) { listItemRouter = fn; }
 
 /**
- * Navigate to previous song in list
+ * Step to the song before or after this one in the list. `stepped` counts the
+ * steps taken since the list was opened, so goToList knows how far back the
+ * list's own history entry is.
  */
-export function navigatePrev() {
-    if (!listContext || listContext.currentIndex <= 0) return;
-
-    const newIndex = listContext.currentIndex - 1;
+function stepInList(dir) {
+    if (!listContext) return;
+    const newIndex = listContext.currentIndex + dir;
+    if (newIndex < 0 || newIndex >= listContext.songIds.length) return;
     const itemRef = listContext.songIds[newIndex];
 
     setListContext({
         ...listContext,
-        currentIndex: newIndex
+        currentIndex: newIndex,
+        stepped: (listContext.stepped || 0) + 1,
     });
 
     if (listItemRouter) {
@@ -772,25 +692,33 @@ export function navigatePrev() {
     }
 }
 
+/** Navigate to the previous song in the list (‹, ←). */
+export function navigatePrev() { stepInList(-1); }
+
+/** Navigate to the next song in the list (›, →). */
+export function navigateNext() { stepInList(1); }
+
 /**
- * Navigate to next song in list
+ * Back to the list this song was opened from (← in the top dock, the middle of
+ * the pill). Straight after opening a song, the list is one step back in
+ * history; after stepping with ‹ › it is further back, so go to its address.
  */
-export function navigateNext() {
-    if (!listContext || listContext.currentIndex >= listContext.songIds.length - 1) return;
+export function goToList() {
+    if (!listContext?.listId || !listContext.stepped) return goBack();
+    endSongView();
+    window.location.hash = `#list/${listContext.listId}`;
+}
 
-    const newIndex = listContext.currentIndex + 1;
-    const itemRef = listContext.songIds[newIndex];
+/** The ‹ 2 of 9 › pill for the current list context, or null outside a list. */
+export function listPillEl() {
+    const model = listPillModel(listContext);
+    return model ? buildListPill(model, { onPrev: navigatePrev, onNext: navigateNext, onList: goToList }) : null;
+}
 
-    setListContext({
-        ...listContext,
-        currentIndex: newIndex
-    });
-
-    if (listItemRouter) {
-        listItemRouter(itemRef);
-    } else {
-        openSong(itemRef);
-    }
+/** A dock holding only the pill, for a view with no controls of its own (null outside a list). */
+export function listPillDock() {
+    const pill = listPillEl();
+    return pill ? readingDock(pill) : null;
 }
 
 /**
@@ -826,13 +754,7 @@ export function initSongView(options) {
         songContent,
         resultsDiv,
         pushHistoryState,
-        showView,
-        // Navigation elements
-        navBar,
-        navPrevBtn,
-        navNextBtn,
-        navPosition,
-        navListName
+        showView
     } = options;
 
     songViewEl = songView;
@@ -840,21 +762,6 @@ export function initSongView(options) {
     resultsDivEl = resultsDiv;
     pushHistoryStateFn = pushHistoryState;
     showViewFn = showView;
-
-    // Navigation elements
-    navBarEl = navBar;
-    navPrevBtnEl = navPrevBtn;
-    navNextBtnEl = navNextBtn;
-    navPositionEl = navPosition;
-    navListNameEl = navListName;
-
-    // Setup navigation buttons
-    if (navPrevBtnEl) {
-        navPrevBtnEl.addEventListener('click', navigatePrev);
-    }
-    if (navNextBtnEl) {
-        navNextBtnEl.addEventListener('click', navigateNext);
-    }
 
     // NOTE: display-preference re-rendering is subscribed in work-view.js
     // (configureWorkPage) — the unified song page owns the render loop.

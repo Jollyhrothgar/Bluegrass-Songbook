@@ -99,8 +99,9 @@ describe('boot graph (static imports from main.js)', () => {
     it('stays small: no more boot modules than today plus a little headroom', () => {
         // 33 when this landed (was 65). Raising this number is a decision to
         // make a cold load slower — say why in the commit. 37: song-dock.js
-        // (5 KB), the reading dock every song page draws (G19b).
-        expect(boot.size).toBeLessThanOrEqual(37);
+        // (5 KB), the reading dock every song page draws (G19b). 38: list-pill.js
+        // (3 KB), the ‹ 2 of 9 › pill and the ←/→ key rule (G19c).
+        expect(boot.size).toBeLessThanOrEqual(38);
     });
 });
 

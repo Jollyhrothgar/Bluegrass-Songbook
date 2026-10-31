@@ -119,6 +119,25 @@ are for data smoke tests only (`.claude/rules/tests.md`).
   true})` builds the old one-row band (⚙ sheet below 640px via
   `tab-controls-sheet.js`, no View or Display) for `bindBandToEditor`. CSS
   scopes the old band rules with `.tab-controls:not(.tab-dock)`.
+- **Set lists (G19c, `list-pill.js`).** A song opened from a list
+  (`state.js` `listContext`, set by `openSongInList` and the favorites
+  equivalent) gets two things and nothing else: `← <list name>` in the top
+  dock (work-view.js `updateWorkTopBar`, `back: {label}`; it goes to the list,
+  `song-view.js` `goToList`) and `‹ 2 of 9 ›` as the first control of the
+  bottom dock. `listPillModel(ctx)` (pure) says whether and what; the pill is
+  added by the reading dock, the ABC dock and the tab dock; a view with no
+  dock (placeholder, PDF part, a song loading) gets `listPillDock()`, a dock
+  holding only the pill. `‹ ›` are `navigatePrev` / `navigateNext`; the middle
+  is `goToList`: `history.back()` while the list's own entry is just behind,
+  or the list's address once the reader has stepped (`listContext.stepped`).
+  On a tab the Tempo stepper becomes a "♩ 120" chip (`buildTempoChip` in
+  tab-dock.js) that opens a − n + sheet; the stepper is the same node the
+  player wired, parked in `.tab-display-store` and moved into the sheet. On a
+  phone (under 560px) a list's lyric dock shows View ▾ in place of Lyrics |
+  Chart. ←/→ step through the list; `isStepKey` ignores them in a field, an
+  editor, an open sheet, with a modifier, or while `body.tab-editing`. Song
+  notes stay in ⋯ ▸ This song. The old second bar `#song-nav-bar`,
+  `--listbar-h` and `body.has-list-context` are gone.
 - The bottom band's height varies (it wraps on narrow windows and the tab band
   collapses on phones), so `shell.js` publishes its measured height as `--bottomband-h` on `<html>`. Anything stacked on the
   band (drop-ups, the tab settings sheet, `.container` padding) offsets from that

@@ -29,10 +29,10 @@ import {
 } from './state.js';
 
 import { deleteAffordance } from './delete-affordance.js';
+import { listPillModel } from './list-pill.js';
 
 import {
-    goBack,
-    updateListContextClass, updateNavBar,
+    goBack, goToList, listPillEl, listPillDock, prefetchNextInList,
     stopAbcPlayback,
     renderLeadSheetContent, renderChartTabContent,
     chartIsWide, CHART_WIDE_MQ,
@@ -635,9 +635,6 @@ export async function openWork(workId, options = {}) {
             listHeader.classList.add('hidden');
         }
         clearListView();
-
-        const navBar = document.getElementById('song-nav-bar');
-        if (navBar) navBar.classList.add('hidden');
     }
 
     setCurrentChordpro(null);
@@ -718,12 +715,6 @@ export async function openWork(workId, options = {}) {
         setListContext(null);
     }
 
-    // List context flag for CSS (band offsets above the list nav bar);
-    // chrome auto-hide handles immersion — no mode to enter.
-    if (fromList && listContext) {
-        document.body.classList.add('has-list-context');
-    }
-
     // Analytics
     trackSongView(workId, fromDeepLink ? 'deep_link' : 'search', song.group_id);
     if (typeof gtag === 'function') {
@@ -742,10 +733,9 @@ export async function openWork(workId, options = {}) {
     // be published on; this only adds the take.
     if (addTab) startAddTabMode(addTab);
 
-    updateNavBar();
-    if (fromList) {
-        updateListContextClass();
-    }
+    // The next song is the likeliest next tap: have its chart in memory by
+    // the time the reader gets there.
+    prefetchNextInList(listContext);
 
     // History: list-context pages keep #list/... URLs; everything else gets
     // the canonical #work/... form (old #song links land here too).
@@ -805,6 +795,7 @@ export function renderWorkView() {
         }
     } else {
         content.appendChild(buildPlaceholderCta(false));
+        setBottomBand(listPillDock());   // nothing to control, but a list still steps
     }
 
     // Bounty section: the "help complete this song" surface. Shown for
@@ -824,11 +815,13 @@ export function renderWorkView() {
  * Render the active part into the content area.
  */
 function renderActivePart(content, isInitial = false) {
+    // Until the part draws its own dock (or for one that has none: a PDF, a
+    // song still loading), a set list still steps
+    setBottomBand(listPillDock());
     if (activePart.type === 'tablature') {
         renderTablaturePart(activePart, content);
     } else if (activePart.type === 'document') {
         renderDocumentPart(activePart, content);
-        setBottomBand(null);
     } else {
         // lead-sheet (chordpro, possibly with embedded ABC notation), or the
         // chord chart tab, which needs the same ChordPro for its key and lyrics
@@ -854,7 +847,7 @@ function fetchAndRenderLeadSheet(container, isInitial = false) {
     const arrangement = activeLeadSheetArrangement();
 
     container.innerHTML = '<div class="part-loading">Loading song…</div>';
-    setBottomBand(null);
+    setBottomBand(listPillDock());
 
     getArrangementContent(work, arrangement).then(text => {
         // Bail if the reader has navigated on (or switched arrangements)
@@ -1280,6 +1273,9 @@ function openViewSheet(opener) {
     });
 }
 
+// Below this width a set list's pill leaves no room for Lyrics | Chart in the dock
+const LIST_NARROW_MQ = '(max-width: 560px)';
+
 /** Key · Size · View · Display, for the lyric sheet and the chart. */
 function buildReadingDock(ctx) {
     if (currentWork.provisional) return null;
@@ -1288,12 +1284,15 @@ function buildReadingDock(ctx) {
         canStep: (dir) => fontSizeLevel + dir >= -5 && fontSizeLevel + dir <= 6,
         step: (dir) => setFontSizeLevel(fontSizeLevel + dir),
     });
-    const view = viewControl(currentViewModel(ctx), { onPick: pickView, onOpen: openViewSheet });
+    // The pill and the segments do not both fit on a phone: in a list, View is the sheet
+    const model = currentViewModel(ctx);
+    const crowded = model.kind === 'segmented' && listPillModel(listContext) && window.matchMedia?.(LIST_NARROW_MQ).matches;
+    const view = viewControl(crowded ? { ...model, kind: 'sheet' } : model, { onPick: pickView, onOpen: openViewSheet });
     const display = buildDisplayButton(() => ({
         hasChart: !!song.chord_chart && !songHasAbc(song),
         wide: chartIsWide(),
     }));
-    return readingDock(buildKeyButton(song), size, view, display);
+    return readingDock(listPillEl(), buildKeyButton(song), size, view, display);
 }
 
 const dockProvider = {
@@ -1854,8 +1853,10 @@ export function updateWorkTopBar() {
         });
     }
 
+    // Opened from a set list: ← names the list and goes back to it
+    const inList = listPillModel(listContext);
     setTopBar({
-        back: { onClick: goBack },
+        back: inList ? { onClick: goToList, label: inList.listName || 'List' } : { onClick: goBack },
         // No title here: the page h1 is directly below the band and a
         // duplicate reads as clutter (owner feedback).
         title: null,
@@ -3628,6 +3629,15 @@ function buildTabDock(controls, { defaultTempo, trackMixerHtml, repeatToggleHtml
     });
     tempo.classList.add('tab-tempo-group');
     controls.querySelector('[data-slot="tempo"]').replaceWith(tempo);
+
+    // Opened from a set list: the pill leads the dock, and Tempo is a chip
+    // that opens its stepper, so everything still fits at 360px
+    const pill = listPillEl();
+    let tempoSlot = tempo;
+    if (pill) {
+        controls.prepend(pill);
+        tempoSlot = tabRenderKit.tabDock.buildTempoChip(controls);
+    }
     controls._tabDisplay = { size: null };   // setupTablaturePlayer fills in Size
 
     // View ▾ always shows the tab's own choices; renderTablaturePart hides it
@@ -3635,7 +3645,7 @@ function buildTabDock(controls, { defaultTempo, trackMixerHtml, repeatToggleHtml
     const viewBtn = viewControl({ ...currentViewModel(), kind: 'sheet' }, { onPick: pickView, onOpen: openViewSheet });
     viewBtn.classList.add('tab-view-btn');
     const display = tabRenderKit.tabDock.buildDisplayControl(controls);
-    tempo.after(viewBtn, display);
+    tempoSlot.after(viewBtn, display);
 }
 
 /**

@@ -75,10 +75,8 @@
     /* Legacy - keeping for existing usage */
     --btn-label-size: var(--font-sm);
 
-    /* Chrome heights. --bottomband-h is overwritten by shell.js with the
-       band's measured height; --listbar-h is the list nav bar the band
-       stacks on top of. */
-    --listbar-h: 60px;
+    /* Chrome heights: shell.js publishes --bottomband-h and --topbar-h, the
+       bands' measured heights, on <html>. */
 }
 
 [data-theme="dark"] {
@@ -6895,102 +6893,6 @@ a.my-submission-row:hover {
     font-style: italic;
 }
 
-/* Bottom navigation bar */
-.song-nav-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    background: var(--bg-secondary);
-    border-top: 1px solid var(--border);
-    display: flex;
-    align-items: center;
-    padding: 0 1rem;
-    z-index: 1001;
-    gap: 0.75rem;
-}
-
-.song-nav-bar.hidden {
-    display: none;
-}
-
-.nav-info {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-right: auto;
-    padding-left: 0.5rem;
-}
-
-#nav-position {
-    font-size: 0.9rem;
-    color: var(--text);
-    font-weight: 500;
-}
-
-.nav-list-name {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    max-width: 200px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.nav-list-name::before {
-    content: '·';
-    margin-right: 0.5rem;
-}
-
-.nav-btn {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    padding: 0.5rem 1rem;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    color: var(--text);
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-.nav-btn:hover:not(:disabled) {
-    background: var(--accent);
-    color: var(--on-accent);
-    border-color: var(--accent);
-}
-
-.nav-btn:disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
-}
-
-.nav-arrow {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-
-/* Mobile adjustments for nav bar */
-@media (max-width: 600px) {
-    .nav-btn {
-        padding: 0.5rem 0.75rem;
-    }
-
-
-    .nav-arrow {
-        font-size: 1.25rem;
-    }
-
-    .nav-list-name {
-        display: none;
-    }
-
-}
-
 /* ============================================
    LANDING PAGE
    ============================================ */
@@ -7567,11 +7469,9 @@ body.dungeon-mode #search-stats {
     #results,
     .song-tags-section,
     .song-meta,
-    .song-nav-bar,
     .app-bottomband,
     .arr-host,
     .tab-controls,
-    #exit-fullscreen-btn,
     .header-badge {
         display: none !important;
     }
@@ -9694,6 +9594,11 @@ body.has-bottomband .container {
     color: var(--text-secondary);
 }
 
+/* a list's name is long ("Friday Jam, Oct 3"): leave room for Edit and ⋯ at 360px */
+@media (max-width: 370px) {
+    .topbar-back-label { max-width: 31vw; }
+}
+
 .topbar-dock .topbar-icon-btn {
     min-width: 34px;
     height: 34px;
@@ -10239,6 +10144,50 @@ body.chrome-hidden .app-bottomband:has(#dock-display-btn) {
 .dock-play:disabled { opacity: 0.6; }
 
 /* ============================================
+   THE SET-LIST PILL (G19c; docs/js/list-pill.js)
+   ‹ 2 of 9 › at the left of the bottom dock when the song was opened from a
+   list. ‹ and › step; the middle goes back to the list.
+   ============================================ */
+
+.list-pill {
+    display: inline-flex;
+    align-items: stretch;
+    flex: none;
+    box-sizing: border-box;
+    height: 34px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--bg-secondary);
+    font-size: var(--font-sm);
+}
+
+.list-pill-btn {
+    border: none;
+    background: none;
+    color: var(--text-secondary);
+    font: inherit;
+    line-height: 1;
+    padding: 0 0.55rem;
+    cursor: pointer;
+}
+
+.list-pill-btn.list-prev,
+.list-pill-btn.list-next { font-size: 1.25rem; }
+.list-pill-btn.list-pos { padding: 0 0.15rem; color: var(--text); white-space: nowrap; }
+.list-pill-btn:hover:not(:disabled) { background: var(--bg-tertiary); }
+.list-pill-btn:disabled { opacity: 0.35; cursor: default; }
+
+/* the tempo chip a tab in a list gets, and the sheet it opens */
+.dock-note { color: var(--text-secondary); }
+.dock-tempo-chip-n { font-variant-numeric: tabular-nums; }
+.tab-tempo-sheet { text-align: center; }
+.tab-tempo-sheet .dock-tempo { height: 48px; margin: var(--space-md) auto; padding: 0 0.4rem; font-size: var(--font-lg, 1.2rem); }
+.tab-tempo-sheet .dock-tempo-label { display: none; }
+.tab-tempo-sheet .dock-tempo-n { min-width: 3.2ch; font-weight: 600; }
+.tab-tempo-sheet .dock-size-btn { width: 40px; height: 40px; font-size: 1.4rem; }
+
+/* ============================================
    THE TAB DOCK (G19c; docs/js/tab-dock.js)
    ▶ [⏹] Tempo − n + · View ▾ · Display, in `.tab-controls.tab-dock`, the same
    on every width. The tab EDITOR's band is `.tab-controls` without
@@ -10399,6 +10348,10 @@ body.chrome-hidden .app-bottomband:has(#dock-display-btn) {
 
 @media (max-width: 420px) {
     .reading-dock { gap: 0.25rem; }
+    .list-pill-btn { padding: 0 0.45rem; }
+    /* a set list's pill takes a share of the row: ABC drops the word Tempo, and the band's margins give */
+    .abc-dock:has(.list-pill) .dock-tempo-label { display: none; }
+    .app-bottomband:has(.list-pill) { padding-left: 0.4rem; padding-right: 0.4rem; }
     .dock-btn { padding: 0 0.55rem; }
     .dock-size { padding-left: 0.45rem; }
     .dock-size-btn { width: 26px; }
@@ -10406,6 +10359,13 @@ body.chrome-hidden .app-bottomband:has(#dock-display-btn) {
 }
 
 @media (max-width: 370px) {
+    /* a set list's pill takes a share of the row: give a little everywhere */
+    .reading-dock:has(.list-pill) .dock-btn { padding: 0 0.45rem; }
+    .reading-dock:has(.list-pill) .dock-size { padding-left: 0.4rem; }
+    .reading-dock:has(.list-pill) .dock-size-btn { width: 24px; }
+    .list-pill-btn { padding: 0 0.35rem; }
+    .list-pill-btn.list-pos { padding: 0 0.1rem; }
+    .abc-dock:has(.list-pill) .dock-size-aa { display: none; }
     .abc-dock .dock-tempo-label,
     .tab-dock .dock-tempo-label { display: none; }
 }
@@ -10480,15 +10440,6 @@ body.chrome-hidden .app-bottomband:has(#dock-display-btn) {
 .dock-sheet .pill-key-btn { padding: 0.65rem 0; font-size: var(--font-base); }
 .dock-sheet .pill-nashville-btn { width: auto; }
 .pill-hint { margin-left: var(--space-sm); color: var(--text-secondary); font-size: var(--font-xs); }
-
-/* When the list nav bar and the bottom band are both present, stack them */
-body.has-list-context .app-bottomband {
-    bottom: var(--listbar-h);
-}
-
-body.has-list-context.has-bottomband .container {
-    padding-bottom: calc(var(--bottomband-h, 52px) + var(--listbar-h) + 20px);
-}
 
 /* ============================================
    PHONE-WIDTH: reclaim horizontal space
@@ -10684,12 +10635,6 @@ body.has-list-context.has-bottomband .container {
         right: 0.5rem;
         width: auto;
         max-width: none;
-    }
-
-    /* …and the band itself sits on top of the list nav bar when showing */
-    body.has-list-context .app-bottomband .tab-controls:not(.tab-dock) .pill-popover,
-    body.has-list-context .tab-settings-sheet {
-        bottom: calc(var(--bottomband-h, 60px) + var(--listbar-h) + 8px);
     }
 }
 
@@ -10893,11 +10838,6 @@ body.has-list-context.has-bottomband .container {
             right: 0.5rem;
             width: auto;
             max-width: none;
-        }
-
-        body.has-list-context .app-bottomband .tab-controls:not(.tab-dock) .pill-popover,
-        body.has-list-context .app-bottomband .tab-controls:not(.tab-dock) .tab-settings-sheet {
-            bottom: calc(var(--bottomband-h, 60px) + var(--listbar-h) + 8px);
         }
     }
 }

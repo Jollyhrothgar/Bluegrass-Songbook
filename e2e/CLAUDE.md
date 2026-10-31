@@ -156,6 +156,22 @@ hybrid part, `#dock-view-btn` (opens `#song-view-sheet`: `.dock-row[data-view]`,
 pill row and part tabs are gone. ABC notation has `#abc-play-btn`,
 `#abc-tempo-label`, `#abc-size`.
 
+A song opened from a set list (`#list/<id>/<ref>`; seed `songbook-lists` with
+`addInitScript`, as `set-list-dock.spec.js` does) has `#topbar-back` labelled
+with the list name (`.topbar-back-label`) and `#list-pill` leading the bottom
+dock: `.list-prev`, `.list-pos` ("2 of 9", goes back to the list) and
+`.list-next`, disabled at the ends. A view with no dock (a placeholder, a PDF
+part, loading) gets a dock holding only the pill. A tab in a list shows
+`#dock-tempo-chip` (♩ n) instead of the Tempo stepper; it opens
+`#dock-tempo-sheet`, and the stepper (`.tab-tempo-up` / `-down` /
+`-display`) is in the sheet while it is open and in `.tab-display-store`
+otherwise. Below 560px a list's lyric dock shows View ▾ rather than Lyrics |
+Chart. There is no `#song-nav-bar` and no `body.has-list-context`. A
+dock that "fits" must be checked button by button: a segmented control
+clips what overflows without widening the row. ←/→ step the list unless
+focus is in an input, textarea, select, contenteditable, CodeMirror, the tab
+editor or an open sheet.
+
 A tab part's band is the tab dock (G19c): `.tab-play-btn` (▶ / ⏸ / ▶ Loop),
 `.tab-stop-btn` (hidden until playing), `.tab-tempo-down` / `-display` / `-up`,
 `.tab-view-btn` (also `#dock-view-btn`, opening `#song-view-sheet`) and
@@ -179,8 +195,7 @@ and `.tab-settings-sheet` below 640px, and no View or Display.
 In the lead-sheet editor the band is `#editor-band`: `#editor-mode-*`,
 `#editor-undo/redo`, `#editor-key-select` and the Display pill, whose options
 exist only once it is open, so use `openDisplay(page)` from
-`helpers/lead-editor.js`; `#flag-modal` (feedback), `#song-nav-bar` (list
-context). `.pill-btn` opens a `.pill-popover`; one is open at a time, and the
+`helpers/lead-editor.js`; `#flag-modal` (feedback). `.pill-btn` opens a `.pill-popover`; one is open at a time, and the
 dock sheets are modal (close with `closeSheet`). Both bands auto-hide while
 scrolling a song only when Display ▸ Auto-hide controls is on
 (`body.chrome-hidden`; off by default), and only on a page with

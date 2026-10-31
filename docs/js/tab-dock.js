@@ -2,7 +2,9 @@
 //
 //   ▶ [⏹]  Tempo − 120 +  ·  View ▾  ·  Display
 //
-// The same dock on every width. Everything else a tab player has (Size, Play
+// In a set list the dock also holds the list pill (‹ 2 of 9 ›) and Tempo
+// shrinks to a "♩ 120" chip that opens a stepper sheet, so it still fits at
+// 360px. The same dock on every width. Everything else a tab player has (Size, Play
 // in, Layout, Feel, Practice, Tracks, Auto-hide) is in the Display sheet.
 // Those controls are built once with the band and MOVED into the sheet while
 // it is open and back into the band's hidden store when it closes, never
@@ -147,4 +149,47 @@ export function buildDisplayControl(controls) {
         });
     });
     return btn;
+}
+
+/**
+ * The tempo chip, for a tab opened from a set list: "♩ 120", opening a
+ * − 120 + sheet. The stepper is the dock's own `.tab-tempo-group` (the player
+ * wired its listeners and holds its nodes), so it waits in the hidden store,
+ * moves into the sheet while that is open and goes back on close. The chip's
+ * number follows the stepper's, whoever changes it.
+ *
+ * @param {HTMLElement} controls  the `.tab-controls` band, its tempo stepper built
+ * @returns {HTMLButtonElement} the chip, now where the stepper was
+ */
+export function buildTempoChip(controls) {
+    const store = controls.querySelector('.tab-display-store');
+    const stepper = controls.querySelector('.tab-tempo-group');
+    const display = stepper.querySelector('.tab-tempo-display');
+
+    const chip = dockButton({ id: 'dock-tempo-chip', label: '', title: 'Tempo' });
+    chip.classList.add('dock-tempo-chip');
+    chip.innerHTML = '<span class="dock-note" aria-hidden="true">♩</span> <span class="dock-tempo-chip-n"></span>';
+    const n = chip.querySelector('.dock-tempo-chip-n');
+    const sync = () => {
+        n.textContent = display.textContent;
+        chip.setAttribute('aria-label', `Tempo ${display.textContent}, change`);
+    };
+    sync();
+    stepper.replaceWith(chip);
+    store.appendChild(stepper);
+    new MutationObserver(sync).observe(display, { childList: true, characterData: true, subtree: true });
+
+    chip.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openSheet({
+            id: 'dock-tempo-sheet', title: 'Tempo', opener: chip,
+            build: (el) => {
+                el.classList.add('tab-tempo-sheet');
+                el.append(stepper);
+                el.insertAdjacentHTML('beforeend', '<div class="dock-opt-hint">beats per minute</div>');
+            },
+            onClose: () => store.appendChild(stepper),
+        });
+    });
+    return chip;
 }

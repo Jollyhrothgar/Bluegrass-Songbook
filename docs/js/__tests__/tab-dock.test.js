@@ -2,7 +2,7 @@
 // The tab dock's Display sheet (G19c): it holds the band's controls while it is
 // open, and gives every one back, listeners alive, when it closes.
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { playInNote, fillDisplaySheet, PLAY, PAUSE, PLAY_LOOP } from '../tab-dock.js';
+import { playInNote, fillDisplaySheet, buildTempoChip, PLAY, PAUSE, PLAY_LOOP } from '../tab-dock.js';
 
 function band() {
     const controls = document.createElement('div');
@@ -102,5 +102,52 @@ describe('the Display sheet', () => {
         fillDisplaySheet(content, controls);
         const labels = [...content.querySelectorAll('.dock-group-label')].map(l => l.firstChild.textContent.trim());
         expect(labels).toEqual(['Size', 'Play in', 'Practice']);
+    });
+});
+
+describe('the tempo chip (a tab in a set list)', () => {
+    function listBand() {
+        const controls = document.createElement('div');
+        controls.className = 'tab-controls tab-dock';
+        controls.innerHTML = `
+            <span class="dock-tempo tab-tempo-group"><button class="tab-tempo-down">−</button><span class="tab-tempo-display">120</span><button class="tab-tempo-up">+</button></span>
+            <div class="tab-display-store" hidden></div>`;
+        document.body.appendChild(controls);
+        return controls;
+    }
+    beforeEach(() => { document.body.innerHTML = ''; });
+
+    it('takes the stepper\'s place in the dock and shows ♩ and its number', () => {
+        const controls = listBand();
+        const chip = buildTempoChip(controls);
+        expect(controls.firstElementChild).toBe(chip);
+        expect(chip.textContent.replace(/\s+/g, ' ').trim()).toBe('♩ 120');
+        // the stepper is still in the band, for the player to find
+        expect(controls.querySelector('.tab-display-store .tab-tempo-group')).toBeTruthy();
+        expect(controls.querySelector('.tab-tempo-display').textContent).toBe('120');
+    });
+
+    it('opens a sheet holding the stepper, and puts it back on close', () => {
+        const controls = listBand();
+        const chip = buildTempoChip(controls);
+        const onUp = vi.fn();
+        controls.querySelector('.tab-tempo-up').addEventListener('click', onUp);
+        chip.click();
+        const sheet = document.querySelector('#dock-tempo-sheet');
+        expect(sheet.querySelector('.tab-tempo-group')).toBeTruthy();
+        sheet.querySelector('.tab-tempo-up').click();
+        expect(onUp).toHaveBeenCalledOnce();   // the player's listener rides along
+        document.querySelector('.notes-sheet-close').click();
+        expect(document.querySelector('#dock-tempo-sheet')).toBeNull();
+        expect(controls.querySelector('.tab-display-store .tab-tempo-group')).toBeTruthy();
+    });
+
+    it('follows the number the player writes', async () => {
+        const controls = listBand();
+        const chip = buildTempoChip(controls);
+        controls.querySelector('.tab-tempo-display').textContent = '135';
+        await Promise.resolve();   // MutationObserver callbacks are microtasks
+        expect(chip.textContent).toContain('135');
+        expect(chip.getAttribute('aria-label')).toBe('Tempo 135, change');
     });
 });
