@@ -105,7 +105,7 @@ remains the backlog's source of truth.
 | ID | Piece | Model / effort | Worktree | Status | Checked |
 |----|-------|----------------|----------|--------|---------|
 | G20a | Phone track switcher | Sonnet / medium | `g20a-phone-tracks` | review, merged into the batch 2026-10-30 | diff read; my fix: `--bg-card` (undefined) → `--bg`, checked in dark mode; unit 7 ✓, switcher + tracks e2e 7 ✓ (port 8321); agent: npm 5181 ✓, 42 e2e ✓ |
-| G20b | Tab setup + title sync + front door meter | Sonnet / high | `g20b-tab-setup` | dispatched 2026-10-30 | |
+| G20b | Tab setup + title sync + front door meter | Sonnet / high | `g20b-tab-setup` | review, merged into the batch 2026-10-30 | diff read (facade setters + rollback, panel, work-view handler, front door `ts` → `create-tab-entry.js` parser, renderer = `export` only); screenshots desktop + phone + refusal; corpus check found 20 works tabs with tempo > 280 → sent back: Apply sends only changed fields (bc08f4b55); batch npm 5275 ✓, pytest 1570 ✓ 1 skip |
 
 The batch branch is `feature/g20-stand-alone-editor`. Both pieces merge into
 it, and one PR follows. G19 (the song page docks) is building on
@@ -143,3 +143,23 @@ Whichever PR merges second merges main in and reruns the full e2e.
     - G21b, the OTF chord-annotation type and the importer, to G19's session;
     - G21c, the chord-picker entry in the editor, to this orchestrator after
       G20.
+- 2026-10-30 · G20a back (6c0ade1a1, 798e16fa4).
+  - The switcher decorates the renderer's `.track-info` after each editor
+    render, so `renderers/` is untouched.
+  - My fix (27b36969b): `--bg-card` is undefined in `style.css`, which would
+    have drawn white on white in dark mode. Now `--bg`, checked in dark mode.
+- 2026-10-30 · G20b back (2657add4f..583ca168f). I checked it against the
+  corpus: 20 `works/` tabs have a tempo of 288–500, and the panel sent and
+  checked every field, so a capo change on those files was refused. Sent
+  back; fixed in bc08f4b55 (only changed fields are sent).
+  - Agent's judgment calls, accepted:
+    - a note fits a new time signature only if it starts and ends in the bar;
+    - preset pitches are the real tunings;
+    - picking an instrument loads its standard tuning;
+    - tempo 40–280 and capo 0–12 for typed values;
+    - the title box writes on change.
+  - Follow-ups (fix-it row G20):
+    - a new tab's Save as file name is the instrument;
+    - the renderer's tuning-name table; told the G19 session.
+- 2026-10-30 · Batch: `npm test` 5275 ✓, `uv run pytest` 1570 ✓ 1 skip.
+  `docs/js/CLAUDE.md` is 245 lines on main (G19b); told the G19 session.
