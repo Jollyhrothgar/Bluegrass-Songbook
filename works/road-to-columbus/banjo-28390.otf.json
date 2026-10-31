@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Road to Columbus - Noam Pikelny",
     "time_signature": "4/4",
@@ -394,13 +394,13 @@
     ]
   },
   "annotations": [
-    {"measure": 4, "tick": 0, "text": "A1"},
-    {"measure": 8, "tick": 0, "text": "A2"},
-    {"measure": 12, "tick": 0, "text": "B1"},
-    {"measure": 13, "tick": 480, "text": "VARIATION 1"},
-    {"measure": 16, "tick": 0, "text": "B2"},
-    {"measure": 17, "tick": 480, "text": "VARIATON 2"},
-    {"measure": 22, "tick": 1680, "text": "Alternate fingering for meas. 15"}
+    {"measure": 4, "tick": 0, "text": "A1", "track": "banjo"},
+    {"measure": 8, "tick": 0, "text": "A2", "track": "banjo"},
+    {"measure": 12, "tick": 0, "text": "B1", "track": "banjo"},
+    {"measure": 13, "tick": 480, "text": "VARIATION 1", "track": "banjo"},
+    {"measure": 16, "tick": 0, "text": "B2", "track": "banjo"},
+    {"measure": 17, "tick": 480, "text": "VARIATON 2", "track": "banjo"},
+    {"measure": 22, "tick": 1680, "text": "Alternate fingering for meas. 15", "track": "banjo"}
   ],
   "x_source": {
     "type": "banjo-hangout",

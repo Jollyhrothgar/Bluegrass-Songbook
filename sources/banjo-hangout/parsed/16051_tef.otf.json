@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Cluck Old Hen (thumb lead)",
     "time_signature": "2/2",
@@ -217,14 +217,14 @@
     ]
   },
   "annotations": [
-    {"measure": 2, "tick": 0, "text": "A part"},
-    {"measure": 2, "tick": 480, "text": ">"},
-    {"measure": 3, "tick": 480, "text": ">"},
-    {"measure": 4, "tick": 480, "text": ">"},
-    {"measure": 6, "tick": 480, "text": ">"},
-    {"measure": 7, "tick": 480, "text": ">"},
-    {"measure": 8, "tick": 480, "text": ">"},
-    {"measure": 10, "tick": 0, "text": "B part"}
+    {"measure": 2, "tick": 0, "text": "A part", "track": "banjo"},
+    {"measure": 2, "tick": 480, "text": ">", "track": "banjo"},
+    {"measure": 3, "tick": 480, "text": ">", "track": "banjo"},
+    {"measure": 4, "tick": 480, "text": ">", "track": "banjo"},
+    {"measure": 6, "tick": 480, "text": ">", "track": "banjo"},
+    {"measure": 7, "tick": 480, "text": ">", "track": "banjo"},
+    {"measure": 8, "tick": 480, "text": ">", "track": "banjo"},
+    {"measure": 10, "tick": 0, "text": "B part", "track": "banjo"}
   ],
   "x_source": {
     "type": "banjo-hangout",

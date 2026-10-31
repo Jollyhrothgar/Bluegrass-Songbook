@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Blackberry Blossom",
     "time_signature": "4/4",
@@ -4027,11 +4027,11 @@
     ]
   },
   "annotations": [
-    {"measure": 4, "tick": 0, "text": "Break 1 (Greg) "},
-    {"measure": 36, "tick": 0, "text": "Break 2 (Greg) "},
-    {"measure": 68, "tick": 0, "text": "Break 3 (Hans)"},
-    {"measure": 100, "tick": 0, "text": "Break 4 (Hans)"},
-    {"measure": 132, "tick": 0, "text": "Ending (Hans & Greg)"}
+    {"measure": 4, "tick": 0, "text": "Break 1 (Greg) ", "track": "banjo"},
+    {"measure": 36, "tick": 0, "text": "Break 2 (Greg) ", "track": "banjo"},
+    {"measure": 68, "tick": 0, "text": "Break 3 (Hans)", "track": "banjo"},
+    {"measure": 100, "tick": 0, "text": "Break 4 (Hans)", "track": "banjo"},
+    {"measure": 132, "tick": 0, "text": "Ending (Hans & Greg)", "track": "banjo"}
   ],
   "x_source": {
     "type": "banjo-hangout",

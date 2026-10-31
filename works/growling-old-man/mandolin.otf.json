@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Growling Old Man",
     "time_signature": "4/4",
@@ -619,10 +619,10 @@
     ]
   },
   "annotations": [
-    {"measure": 41, "tick": 0, "text": "OUTRO"},
-    {"measure": 45, "tick": 0, "text": "INTRO Lick 1"},
-    {"measure": 46, "tick": 0, "text": "Lick 2"},
-    {"measure": 47, "tick": 0, "text": "Lick 3"}
+    {"measure": 41, "tick": 0, "text": "OUTRO", "track": "mandolin"},
+    {"measure": 45, "tick": 0, "text": "INTRO Lick 1", "track": "mandolin"},
+    {"measure": 46, "tick": 0, "text": "Lick 2", "track": "mandolin"},
+    {"measure": 47, "tick": 0, "text": "Lick 3", "track": "mandolin"}
   ],
   "x_source": {
     "type": "mandolin-hangout",

@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Jerusalem Ridge",
     "time_signature": "2/4",
@@ -478,10 +478,10 @@
     ]
   },
   "annotations": [
-    {"measure": 1, "tick": 240, "text": "PART 1"},
-    {"measure": 9, "tick": 240, "text": "PART 2"},
-    {"measure": 19, "tick": 120, "text": "PART 3"},
-    {"measure": 27, "tick": 210, "text": "PART 4"}
+    {"measure": 1, "tick": 240, "text": "PART 1", "track": "banjo"},
+    {"measure": 9, "tick": 240, "text": "PART 2", "track": "banjo"},
+    {"measure": 19, "tick": 120, "text": "PART 3", "track": "banjo"},
+    {"measure": 27, "tick": 210, "text": "PART 4", "track": "banjo"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 8},

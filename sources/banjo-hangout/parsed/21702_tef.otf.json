@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Southern Flavor",
     "time_signature": "4/4",
@@ -804,10 +804,10 @@
     ]
   },
   "annotations": [
-    {"measure": 2, "tick": 0, "text": "1st break - A part"},
-    {"measure": 19, "tick": 0, "text": "B part"},
-    {"measure": 35, "tick": 0, "text": "2nd break - A part"},
-    {"measure": 52, "tick": 0, "text": "B part"}
+    {"measure": 2, "tick": 0, "text": "1st break - A part", "track": "banjo"},
+    {"measure": 19, "tick": 0, "text": "B part", "track": "banjo"},
+    {"measure": 35, "tick": 0, "text": "2nd break - A part", "track": "banjo"},
+    {"measure": 52, "tick": 0, "text": "B part", "track": "banjo"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 17},

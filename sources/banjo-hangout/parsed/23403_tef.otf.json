@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Bluegrass Breakdown",
     "time_signature": "2/4",
@@ -413,8 +413,8 @@
     ]
   },
   "annotations": [
-    {"measure": 1, "tick": 120, "text": "Part 1"},
-    {"measure": 17, "tick": 120, "text": "Part 2"}
+    {"measure": 1, "tick": 120, "text": "Part 1", "track": "banjo"},
+    {"measure": 17, "tick": 120, "text": "Part 2", "track": "banjo"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 16},

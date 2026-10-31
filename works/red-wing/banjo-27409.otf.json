@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Red Wing",
     "time_signature": "2/4",
@@ -421,8 +421,8 @@
     ]
   },
   "annotations": [
-    {"measure": 3, "tick": 120, "text": "Verse"},
-    {"measure": 19, "tick": 120, "text": "Chorus"}
+    {"measure": 3, "tick": 120, "text": "Verse", "track": "banjo"},
+    {"measure": 19, "tick": 120, "text": "Chorus", "track": "banjo"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 34},

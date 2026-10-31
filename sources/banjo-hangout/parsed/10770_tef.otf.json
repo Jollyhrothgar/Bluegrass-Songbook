@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Leather Britches",
     "time_signature": "2/4",
@@ -1277,8 +1277,8 @@
     ]
   },
   "annotations": [
-    {"measure": 26, "tick": 0, "text": "Var. Part A"},
-    {"measure": 35, "tick": 0, "text": "Var. Part B"}
+    {"measure": 26, "tick": 0, "text": "Var. Part A", "track": "banjo"},
+    {"measure": 35, "tick": 0, "text": "Var. Part B", "track": "banjo"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 24},

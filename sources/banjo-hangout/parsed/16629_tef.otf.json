@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Over the Waterfall",
     "time_signature": "4/4",
@@ -126,7 +126,7 @@
           {"tick": 480, "notes": [{"s": 1, "f": 7, "dur": 240}, {"s": 2, "f": 5, "dur": 240}, {"s": 3, "f": 5, "dur": 240}, {"s": 4, "f": 5, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 4, "f": 5, "dur": 480}]},
-          {"tick": 1440, "notes": [{"s": 4, "f": 4, "dur": 240}]},
+          {"tick": 1440, "notes": [{"s": 4, "f": 4, "dur": 240, "finger": "M"}]},
           {"tick": 1680, "notes": [{"s": 4, "f": 5, "dur": 240, "tech": "p"}]}
         ]
       },
@@ -144,13 +144,13 @@
       {
         "measure": 12,
         "events": [
-          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 240}]},
+          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 240, "finger": "M"}]},
           {"tick": 240, "notes": [{"s": 3, "f": 2, "dur": 240, "tech": "p"}]},
-          {"tick": 480, "notes": [{"s": 3, "f": 0, "dur": 240}]},
+          {"tick": 480, "notes": [{"s": 3, "f": 0, "dur": 240, "finger": "M"}]},
           {"tick": 720, "notes": [{"s": 4, "f": 5, "dur": 240}]},
-          {"tick": 960, "notes": [{"s": 4, "f": 4, "dur": 240}]},
+          {"tick": 960, "notes": [{"s": 4, "f": 4, "dur": 240, "finger": "M"}]},
           {"tick": 1200, "notes": [{"s": 4, "f": 0, "dur": 240, "tech": "p"}]},
-          {"tick": 1440, "notes": [{"s": 4, "f": 4, "dur": 240}]},
+          {"tick": 1440, "notes": [{"s": 4, "f": 4, "dur": 240, "finger": "M"}]},
           {"tick": 1680, "notes": [{"s": 4, "f": 5, "dur": 240, "tech": "p"}]}
         ]
       },
@@ -160,7 +160,7 @@
           {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240}, {"s": 2, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
-          {"tick": 960, "notes": [{"s": 3, "f": 4, "dur": 240}]},
+          {"tick": 960, "notes": [{"s": 3, "f": 4, "dur": 240, "finger": "M"}]},
           {"tick": 1200, "notes": [{"s": 2, "f": 0, "dur": 240}]},
           {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 240}, {"s": 2, "f": 2, "dur": 240}, {"s": 3, "f": 4, "dur": 240}]},
           {"tick": 1680, "notes": [{"s": 5, "f": 0, "dur": 240}]}
@@ -173,7 +173,7 @@
           {"tick": 480, "notes": [{"s": 1, "f": 2, "dur": 240}, {"s": 2, "f": 0, "dur": 240}, {"s": 3, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 1, "f": 2, "dur": 480}]},
-          {"tick": 1440, "notes": [{"s": 2, "f": 0, "dur": 240}]},
+          {"tick": 1440, "notes": [{"s": 2, "f": 0, "dur": 240, "finger": "M"}]},
           {"tick": 1680, "notes": [{"s": 3, "f": 2, "dur": 240}]}
         ]
       },
@@ -191,13 +191,13 @@
       {
         "measure": 16,
         "events": [
-          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 240}]},
+          {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 240, "finger": "M"}]},
           {"tick": 240, "notes": [{"s": 3, "f": 2, "dur": 240, "tech": "p"}]},
-          {"tick": 480, "notes": [{"s": 3, "f": 0, "dur": 240}]},
+          {"tick": 480, "notes": [{"s": 3, "f": 0, "dur": 240, "finger": "M"}]},
           {"tick": 720, "notes": [{"s": 4, "f": 0, "dur": 240}]},
-          {"tick": 960, "notes": [{"s": 4, "f": 4, "dur": 240}]},
+          {"tick": 960, "notes": [{"s": 4, "f": 4, "dur": 240, "finger": "M"}]},
           {"tick": 1200, "notes": [{"s": 4, "f": 0, "dur": 240, "tech": "p"}]},
-          {"tick": 1440, "notes": [{"s": 4, "f": 4, "dur": 240}]},
+          {"tick": 1440, "notes": [{"s": 4, "f": 4, "dur": 240, "finger": "M"}]},
           {"tick": 1680, "notes": [{"s": 4, "f": 5, "dur": 240, "tech": "/"}]}
         ]
       },
@@ -207,7 +207,7 @@
           {"tick": 0, "notes": [{"s": 3, "f": 0, "dur": 480}]},
           {"tick": 480, "notes": [{"s": 1, "f": 0, "dur": 240}, {"s": 2, "f": 0, "dur": 240}, {"s": 3, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
-          {"tick": 960, "notes": [{"s": 4, "f": 5, "dur": 240}]},
+          {"tick": 960, "notes": [{"s": 4, "f": 5, "dur": 240, "finger": "M"}]},
           {"tick": 1200, "notes": [{"s": 4, "f": 4, "dur": 240, "tech": "/"}]},
           {"tick": 1440, "notes": [{"s": 1, "f": 0, "dur": 240}, {"s": 2, "f": 2, "dur": 240}, {"s": 3, "f": 0, "dur": 240}, {"s": 4, "f": 2, "dur": 240}]},
           {"tick": 1680, "notes": [{"s": 5, "f": 0, "dur": 240}]}
@@ -220,7 +220,7 @@
           {"tick": 480, "notes": [{"s": 1, "f": 2, "dur": 240}, {"s": 2, "f": 0, "dur": 240}]},
           {"tick": 720, "notes": [{"s": 5, "f": 0, "dur": 240}]},
           {"tick": 960, "notes": [{"s": 4, "f": 0, "dur": 480}]},
-          {"tick": 1440, "notes": [{"s": 4, "f": 4, "dur": 240}]},
+          {"tick": 1440, "notes": [{"s": 4, "f": 4, "dur": 240, "finger": "M"}]},
           {"tick": 1680, "notes": [{"s": 4, "f": 5, "dur": 240, "tech": "p"}]}
         ]
       },
@@ -236,30 +236,17 @@
     ]
   },
   "annotations": [
-    {"measure": 2, "tick": 0, "text": "D"},
-    {"measure": 8, "tick": 0, "text": "C"},
-    {"measure": 10, "tick": 1440, "text": "M"},
-    {"measure": 11, "tick": 0, "text": "D"},
-    {"measure": 11, "tick": 960, "text": "G"},
-    {"measure": 12, "tick": 0, "text": "D"},
-    {"measure": 12, "tick": 0, "text": "M"},
-    {"measure": 12, "tick": 480, "text": "M"},
-    {"measure": 12, "tick": 960, "text": "M"},
-    {"measure": 12, "tick": 1440, "text": "M"},
-    {"measure": 13, "tick": 960, "text": "A"},
-    {"measure": 13, "tick": 960, "text": "M"},
-    {"measure": 13, "tick": 1200, "text": "Po"},
-    {"measure": 14, "tick": 0, "text": "D"},
-    {"measure": 14, "tick": 1440, "text": "M"},
-    {"measure": 15, "tick": 960, "text": "G"},
-    {"measure": 16, "tick": 0, "text": "D"},
-    {"measure": 16, "tick": 0, "text": "M"},
-    {"measure": 16, "tick": 480, "text": "M"},
-    {"measure": 16, "tick": 960, "text": "M"},
-    {"measure": 16, "tick": 1440, "text": "M"},
-    {"measure": 17, "tick": 960, "text": "A"},
-    {"measure": 17, "tick": 960, "text": "M"},
-    {"measure": 18, "tick": 1440, "text": "M"}
+    {"measure": 2, "tick": 0, "text": "D", "track": "banjo", "kind": "chord"},
+    {"measure": 8, "tick": 0, "text": "C", "track": "banjo", "kind": "chord"},
+    {"measure": 11, "tick": 0, "text": "D", "track": "banjo", "kind": "chord"},
+    {"measure": 11, "tick": 960, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 12, "tick": 0, "text": "D", "track": "banjo", "kind": "chord"},
+    {"measure": 13, "tick": 960, "text": "A", "track": "banjo", "kind": "chord"},
+    {"measure": 13, "tick": 1200, "text": "Po", "track": "banjo", "place": "below"},
+    {"measure": 14, "tick": 0, "text": "D", "track": "banjo", "kind": "chord"},
+    {"measure": 15, "tick": 960, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 16, "tick": 0, "text": "D", "track": "banjo", "kind": "chord"},
+    {"measure": 17, "tick": 960, "text": "A", "track": "banjo", "kind": "chord"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 9},

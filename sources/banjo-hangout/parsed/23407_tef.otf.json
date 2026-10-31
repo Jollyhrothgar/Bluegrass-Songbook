@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Cripple Creek",
     "time_signature": "2/4",
@@ -424,11 +424,11 @@
     ]
   },
   "annotations": [
-    {"measure": 1, "tick": 60, "text": "Chorus"},
-    {"measure": 9, "tick": 120, "text": "Verse"},
-    {"measure": 17, "tick": 120, "text": "Chorus"},
-    {"measure": 17, "tick": 240, "text": "(Variation)"},
-    {"measure": 25, "tick": 120, "text": "Verse"}
+    {"measure": 1, "tick": 60, "text": "Chorus", "track": "banjo"},
+    {"measure": 9, "tick": 120, "text": "Verse", "track": "banjo"},
+    {"measure": 17, "tick": 120, "text": "Chorus", "track": "banjo"},
+    {"measure": 17, "tick": 240, "text": "(Variation)", "track": "banjo"},
+    {"measure": 25, "tick": 120, "text": "Verse", "track": "banjo"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 16},

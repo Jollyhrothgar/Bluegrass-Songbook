@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Foggy Mountain Breakdown (whole & complete)",
     "time_signature": "4/4",
@@ -9497,11 +9497,11 @@
     ]
   },
   "annotations": [
-    {"measure": 2, "tick": 0, "text": "banjo"},
-    {"measure": 50, "tick": 0, "text": "fiddle"},
-    {"measure": 82, "tick": 0, "text": "banjo"},
-    {"measure": 130, "tick": 0, "text": "fiddle"},
-    {"measure": 162, "tick": 0, "text": "banjo"}
+    {"measure": 2, "tick": 0, "text": "banjo", "track": "banjo"},
+    {"measure": 50, "tick": 0, "text": "fiddle", "track": "banjo"},
+    {"measure": 82, "tick": 0, "text": "banjo", "track": "banjo"},
+    {"measure": 130, "tick": 0, "text": "fiddle", "track": "banjo"},
+    {"measure": 162, "tick": 0, "text": "banjo", "track": "banjo"}
   ],
   "measure_marks": [
     {"measure": 2, "raw": 7},

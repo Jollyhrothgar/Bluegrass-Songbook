@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Sally Johnson",
     "time_signature": "4/4",
@@ -406,18 +406,18 @@
     ]
   },
   "annotations": [
-    {"measure": 2, "tick": 0, "text": "G"},
-    {"measure": 5, "tick": 960, "text": "Em"},
-    {"measure": 6, "tick": 0, "text": "G"},
-    {"measure": 9, "tick": 240, "text": "D"},
-    {"measure": 9, "tick": 960, "text": "G"},
-    {"measure": 10, "tick": 240, "text": "D"},
-    {"measure": 10, "tick": 960, "text": "G"},
-    {"measure": 11, "tick": 0, "text": "G"},
-    {"measure": 14, "tick": 960, "text": "Em"},
-    {"measure": 15, "tick": 0, "text": "G"},
-    {"measure": 18, "tick": 0, "text": "D"},
-    {"measure": 18, "tick": 960, "text": "G"}
+    {"measure": 2, "tick": 0, "text": "G", "track": "mandolin", "kind": "chord"},
+    {"measure": 5, "tick": 960, "text": "Em", "track": "mandolin", "kind": "chord"},
+    {"measure": 6, "tick": 0, "text": "G", "track": "mandolin", "kind": "chord"},
+    {"measure": 9, "tick": 240, "text": "D", "track": "mandolin", "kind": "chord"},
+    {"measure": 9, "tick": 960, "text": "G", "track": "mandolin", "kind": "chord"},
+    {"measure": 10, "tick": 240, "text": "D", "track": "mandolin", "kind": "chord"},
+    {"measure": 10, "tick": 960, "text": "G", "track": "mandolin", "kind": "chord"},
+    {"measure": 11, "tick": 0, "text": "G", "track": "mandolin", "kind": "chord"},
+    {"measure": 14, "tick": 960, "text": "Em", "track": "mandolin", "kind": "chord"},
+    {"measure": 15, "tick": 0, "text": "G", "track": "mandolin", "kind": "chord"},
+    {"measure": 18, "tick": 0, "text": "D", "track": "mandolin", "kind": "chord"},
+    {"measure": 18, "tick": 960, "text": "G", "track": "mandolin", "kind": "chord"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 9},

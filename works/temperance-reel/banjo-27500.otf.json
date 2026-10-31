@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Temperance Reel (gEADE)",
     "time_signature": "2/2",
@@ -255,14 +255,14 @@
     ]
   },
   "annotations": [
-    {"measure": 2, "tick": 1200, "text": "-Po"},
-    {"measure": 4, "tick": 1680, "text": "-Po"},
-    {"measure": 6, "tick": 1200, "text": "-Po"},
-    {"measure": 8, "tick": 1680, "text": "-Po"},
-    {"measure": 11, "tick": 720, "text": "-Po"},
-    {"measure": 13, "tick": 720, "text": "-Po"},
-    {"measure": 15, "tick": 720, "text": "-Po"},
-    {"measure": 17, "tick": 1680, "text": "-Po"}
+    {"measure": 2, "tick": 1200, "text": "-Po", "track": "banjo"},
+    {"measure": 4, "tick": 1680, "text": "-Po", "track": "banjo"},
+    {"measure": 6, "tick": 1200, "text": "-Po", "track": "banjo"},
+    {"measure": 8, "tick": 1680, "text": "-Po", "track": "banjo"},
+    {"measure": 11, "tick": 720, "text": "-Po", "track": "banjo"},
+    {"measure": 13, "tick": 720, "text": "-Po", "track": "banjo"},
+    {"measure": 15, "tick": 720, "text": "-Po", "track": "banjo"},
+    {"measure": 17, "tick": 1680, "text": "-Po", "track": "banjo"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 9},

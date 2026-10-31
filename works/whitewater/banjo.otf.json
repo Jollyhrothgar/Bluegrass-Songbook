@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Whitewater",
     "time_signature": "4/4",
@@ -2613,12 +2613,12 @@
     ]
   },
   "annotations": [
-    {"measure": 2, "tick": 0, "text": "Part A"},
-    {"measure": 18, "tick": 0, "text": "Part B"},
-    {"measure": 34, "tick": 0, "text": "Part A (2nd break)"},
-    {"measure": 50, "tick": 0, "text": "Part B (2nd break)"},
-    {"measure": 66, "tick": 0, "text": "Part A (3rd break)"},
-    {"measure": 82, "tick": 0, "text": "Part B (3rd break)"}
+    {"measure": 2, "tick": 0, "text": "Part A", "track": "banjo"},
+    {"measure": 18, "tick": 0, "text": "Part B", "track": "banjo"},
+    {"measure": 34, "tick": 0, "text": "Part A (2nd break)", "track": "banjo"},
+    {"measure": 50, "tick": 0, "text": "Part B (2nd break)", "track": "banjo"},
+    {"measure": 66, "tick": 0, "text": "Part A (3rd break)", "track": "banjo"},
+    {"measure": 82, "tick": 0, "text": "Part B (3rd break)", "track": "banjo"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 97},

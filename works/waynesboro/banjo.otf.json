@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Waynesboro",
     "time_signature": "4/4",
@@ -210,20 +210,20 @@
     ]
   },
   "annotations": [
-    {"measure": 1, "tick": 0, "text": "G"},
-    {"measure": 3, "tick": 0, "text": "Am"},
-    {"measure": 4, "tick": 960, "text": "D"},
-    {"measure": 5, "tick": 0, "text": "G"},
-    {"measure": 7, "tick": 0, "text": "Am"},
-    {"measure": 8, "tick": 0, "text": "D"},
-    {"measure": 8, "tick": 960, "text": "G"},
-    {"measure": 9, "tick": 120, "text": "G"},
-    {"measure": 11, "tick": 0, "text": "Am"},
-    {"measure": 12, "tick": 960, "text": "D"},
-    {"measure": 13, "tick": 120, "text": "G"},
-    {"measure": 15, "tick": 0, "text": "Am"},
-    {"measure": 16, "tick": 0, "text": "D"},
-    {"measure": 16, "tick": 960, "text": "G"}
+    {"measure": 1, "tick": 0, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 3, "tick": 0, "text": "Am", "track": "banjo", "kind": "chord"},
+    {"measure": 4, "tick": 960, "text": "D", "track": "banjo", "kind": "chord"},
+    {"measure": 5, "tick": 0, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 7, "tick": 0, "text": "Am", "track": "banjo", "kind": "chord"},
+    {"measure": 8, "tick": 0, "text": "D", "track": "banjo", "kind": "chord"},
+    {"measure": 8, "tick": 960, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 9, "tick": 120, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 11, "tick": 0, "text": "Am", "track": "banjo", "kind": "chord"},
+    {"measure": 12, "tick": 960, "text": "D", "track": "banjo", "kind": "chord"},
+    {"measure": 13, "tick": 120, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 15, "tick": 0, "text": "Am", "track": "banjo", "kind": "chord"},
+    {"measure": 16, "tick": 0, "text": "D", "track": "banjo", "kind": "chord"},
+    {"measure": 16, "tick": 960, "text": "G", "track": "banjo", "kind": "chord"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 8},

@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Turkey in the Straw",
     "time_signature": "4/4",
@@ -429,9 +429,9 @@
     ]
   },
   "annotations": [
-    {"measure": 2, "tick": 0, "text": "Part A"},
-    {"measure": 18, "tick": 0, "text": "Part B"},
-    {"measure": 34, "tick": 0, "text": "Ending"}
+    {"measure": 2, "tick": 0, "text": "Part A", "track": "banjo"},
+    {"measure": 18, "tick": 0, "text": "Part B", "track": "banjo"},
+    {"measure": 34, "tick": 0, "text": "Ending", "track": "banjo"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 33},

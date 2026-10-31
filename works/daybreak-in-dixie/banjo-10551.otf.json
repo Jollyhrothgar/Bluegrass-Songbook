@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Daybreak In Dixie",
     "time_signature": "4/4",
@@ -330,21 +330,21 @@
     ]
   },
   "annotations": [
-    {"measure": 1, "tick": 0, "text": "G"},
-    {"measure": 2, "tick": 1440, "text": "F"},
-    {"measure": 3, "tick": 1440, "text": "C"},
-    {"measure": 5, "tick": 1440, "text": "D"},
-    {"measure": 7, "tick": 1440, "text": "G"},
-    {"measure": 9, "tick": 1440, "text": "D"},
-    {"measure": 11, "tick": 1440, "text": "G"},
-    {"measure": 13, "tick": 1440, "text": "D"},
-    {"measure": 15, "tick": 1440, "text": "G"},
-    {"measure": 17, "tick": 1440, "text": "D"},
-    {"measure": 19, "tick": 1440, "text": "G"},
-    {"measure": 21, "tick": 1440, "text": "C"},
-    {"measure": 22, "tick": 1440, "text": "D"},
-    {"measure": 23, "tick": 1440, "text": "G"},
-    {"measure": 25, "tick": 0, "text": "Ending Lick"}
+    {"measure": 1, "tick": 0, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 2, "tick": 1440, "text": "F", "track": "banjo", "kind": "chord"},
+    {"measure": 3, "tick": 1440, "text": "C", "track": "banjo", "kind": "chord"},
+    {"measure": 5, "tick": 1440, "text": "D", "track": "banjo", "kind": "chord"},
+    {"measure": 7, "tick": 1440, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 9, "tick": 1440, "text": "D", "track": "banjo", "kind": "chord"},
+    {"measure": 11, "tick": 1440, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 13, "tick": 1440, "text": "D", "track": "banjo", "kind": "chord"},
+    {"measure": 15, "tick": 1440, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 17, "tick": 1440, "text": "D", "track": "banjo", "kind": "chord"},
+    {"measure": 19, "tick": 1440, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 21, "tick": 1440, "text": "C", "track": "banjo", "kind": "chord"},
+    {"measure": 22, "tick": 1440, "text": "D", "track": "banjo", "kind": "chord"},
+    {"measure": 23, "tick": 1440, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 25, "tick": 0, "text": "Ending Lick", "track": "banjo"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 8},
