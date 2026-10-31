@@ -99,25 +99,36 @@ describe('tuning presets', () => {
 });
 
 describe('readSetup', () => {
-    const values = {
-        title: 'T', composer: '', key: 'G', timeSignature: '3/4', tempo: '100',
-        instrument: 'mandolin', capo: '2', pitches: ['E5', 'A4', 'D4', 'G3'],
+    const opening = {
+        title: 'T', composer: '', key: 'G', timeSignature: '4/4', tempo: '100',
+        instrument: 'mandolin', capo: '0', pitches: ['E5', 'A4', 'D4', 'G3'],
     };
-    it('turns the form into a setup', () => {
-        expect(readSetup(values).setup).toEqual({
-            title: 'T', composer: '', key: 'G', timeSignature: '3/4', tempo: 100,
-            track: { instrument: 'mandolin', tuning: ['E5', 'A4', 'D4', 'G3'], capo: 2 },
-        });
+    it('sends only what differs from what the panel opened with', () => {
+        expect(readSetup(opening, opening).setup).toEqual({});
+        expect(readSetup({ ...opening, timeSignature: '3/4', capo: '2' }, opening).setup)
+            .toEqual({ timeSignature: '3/4', track: { capo: 2 } });
+        expect(readSetup({ ...opening, pitches: ['E5', 'A4', 'D4', 'A3'] }, opening).setup)
+            .toEqual({ track: { tuning: ['E5', 'A4', 'D4', 'A3'] } });
+        expect(readSetup({ ...opening, title: 'U', key: '' }, opening).setup).toEqual({ title: 'U', key: '' });
     });
-    it('says what is wrong with the tempo, the capo and a pitch', () => {
-        expect(readSetup({ ...values, tempo: '20' }).error).toBe('The tempo is a whole number from 40 to 280.');
-        expect(readSetup({ ...values, tempo: '' }).error).toMatch(/tempo/);
-        expect(readSetup({ ...values, capo: '13' }).error).toBe('The capo is a whole number from 0 to 12.');
-        expect(readSetup({ ...values, capo: '1.5' }).error).toMatch(/capo/);
-        expect(readSetup({ ...values, pitches: ['E5', 'A4', 'X', 'G3'] }).error).toMatch(/^String 3/);
+    it('does not check a field that was not touched (a tempo of 300, a capo of 14, a flat)', () => {
+        const odd = { ...opening, tempo: '300', capo: '14', pitches: ['E5', 'Bb4', 'D4', 'G3'] };
+        expect(readSetup({ ...odd, title: 'Renamed' }, odd).setup).toEqual({ title: 'Renamed' });
+        expect(readSetup({ ...odd, timeSignature: '3/4' }, odd).setup).toEqual({ timeSignature: '3/4' });
+        const none = { ...opening, tempo: '' };
+        expect(readSetup({ ...none, capo: '1' }, none).setup).toEqual({ track: { capo: 1 } });
+    });
+    it('still holds what the person types to the limits', () => {
+        expect(readSetup({ ...opening, tempo: '20' }, opening).error).toBe('The tempo is a whole number from 40 to 280.');
+        expect(readSetup({ ...opening, tempo: '300' }, opening).error).toMatch(/tempo/);
+        expect(readSetup({ ...opening, tempo: '' }, opening).error).toMatch(/tempo/);
+        expect(readSetup({ ...opening, capo: '13' }, opening).error).toBe('The capo is a whole number from 0 to 12.');
+        expect(readSetup({ ...opening, capo: '1.5' }, opening).error).toMatch(/capo/);
+        expect(readSetup({ ...opening, pitches: ['E5', 'A4', 'X', 'G3'] }, opening).error).toMatch(/^String 3/);
     });
     it('leaves the track out for a drum track', () => {
-        expect(readSetup({ ...values, capo: '', pitches: [] }, { percussion: true }).setup.track).toBeUndefined();
+        const drums = { ...opening, instrument: undefined, capo: undefined, pitches: [] };
+        expect(readSetup({ ...drums, tempo: '90' }, drums, { percussion: true }).setup).toEqual({ tempo: 90 });
     });
 });
 
@@ -197,8 +208,8 @@ describe('TabSetupPopover', () => {
         expect(pitches()).toEqual(['D4', 'C4', 'G3', 'C3', 'G4']);
         $('.apply-btn').click();
         expect(session.apply).toHaveBeenCalledWith({
-            title: 'Cripple Creek (slow)', composer: 'Trad.', key: 'A', timeSignature: '3/4', tempo: 110,
-            track: { instrument: '5-string-banjo', tuning: ['D4', 'C4', 'G3', 'C3', 'G4'], capo: 2 },
+            title: 'Cripple Creek (slow)', timeSignature: '3/4',
+            track: { tuning: ['D4', 'C4', 'G3', 'C3', 'G4'], capo: 2 },
         });
         expect(panel.opened).toBe(false);
         expect(onClose).toHaveBeenCalledTimes(1);
@@ -208,6 +219,7 @@ describe('TabSetupPopover', () => {
         const sentence = 'This tuning has 4 strings, but 2 notes are on string 5; the first is in measure 2. Move or delete them first.';
         session.apply = vi.fn(() => ({ error: sentence }));
         panel.open(session);
+        type($('.tab-setup-capo'), '1');
         $('.apply-btn').click();
         expect($('.tab-setup-error').textContent).toBe(sentence);
         expect(panel.opened).toBe(true);
@@ -237,7 +249,7 @@ describe('TabSetupPopover', () => {
         panel.open(session);
         type(panel.element.querySelectorAll('.tab-setup-pitch')[1], 'bb3');
         $('.apply-btn').click();
-        expect(session.apply.mock.calls[0][0].track.tuning[1]).toBe('A#3');
+        expect(session.apply.mock.calls[0][0].track).toEqual({ tuning: ['D4', 'A#3', 'G3', 'D3', 'G4'] });
     });
 
     it('choosing another instrument brings its standard tuning; choosing the old one back restores the tuning', () => {
@@ -262,8 +274,9 @@ describe('TabSetupPopover', () => {
         panel.open(fiddle);
         expect($('.tab-setup-instrument').value).toBe('fiddle');
         expect($('.tab-setup-tuning').value).toBe('custom');
+        pick($('.tab-setup-instrument'), 'mandolin');
         $('.apply-btn').click();
-        expect(fiddle.apply.mock.calls[0][0].track.instrument).toBe('fiddle');
+        expect(fiddle.apply.mock.calls[0][0].track).toMatchObject({ instrument: 'mandolin' });
     });
 
     it('a drum track has no instrument, tuning or capo to set', () => {
@@ -271,15 +284,17 @@ describe('TabSetupPopover', () => {
         panel.open(drums);
         expect($('.tab-setup-tuning')).toBeNull();
         expect($('.tab-setup-track').textContent).toContain('A drum track has no instrument, tuning or capo.');
+        type($('.tab-setup-tempo'), '90');
         $('.apply-btn').click();
         expect(drums.apply).toHaveBeenCalledTimes(1);
-        expect(drums.apply.mock.calls[0][0].track).toBeUndefined();
+        expect(drums.apply.mock.calls[0][0]).toEqual({ tempo: 90 });
     });
 
     it('Enter applies, Escape closes, and the keys do not reach the editor', () => {
         panel.open(session);
         const outer = vi.fn();
         container.addEventListener('keydown', outer);
+        type($('.tab-setup-title'), 'Changed');
         $('.tab-setup-title').dispatchEvent(keyEvent('Enter'));
         expect(session.apply).toHaveBeenCalled();
         panel.open(session);
@@ -287,6 +302,28 @@ describe('TabSetupPopover', () => {
         panel.element.dispatchEvent(keyEvent('Escape'));
         expect(panel.opened).toBe(false);
         expect(outer).not.toHaveBeenCalled();
+    });
+
+    it('an Apply with nothing changed closes and applies nothing', () => {
+        panel.open(session);
+        $('.apply-btn').click();
+        expect(session.apply).not.toHaveBeenCalled();
+        expect(panel.opened).toBe(false);
+    });
+
+    it('a file the form would refuse (tempo 300, capo 14) still takes a change to something else', () => {
+        const odd = banjoSession({
+            meta: { ...session.meta, tempo: 300 },
+            track: { ...session.track, capo: 14 },
+        });
+        panel.open(odd);
+        type($('.tab-setup-title'), 'Renamed');
+        $('.apply-btn').click();
+        expect(odd.apply).toHaveBeenCalledWith({ title: 'Renamed' });
+        panel.open(odd);
+        type($('.tab-setup-tempo'), '400');            // a value the person types is held to the limit
+        $('.apply-btn').click();
+        expect($('.tab-setup-error').textContent).toMatch(/tempo/);
     });
 
     it('Cancel closes without applying', () => {

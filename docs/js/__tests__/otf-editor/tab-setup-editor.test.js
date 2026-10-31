@@ -142,6 +142,27 @@ describe('Score ▸ Tab setup…', () => {
         expect(editor.statusBar.querySelector('.tempo-input').value).toBe('96');
     });
 
+    it('a file whose tempo is over the limit takes a capo change, keeps its tempo, and an untouched Apply adds no history', () => {
+        const d = otfWithNotes();
+        d.metadata.tempo = 300;
+        editor.destroy();
+        container.innerHTML = '';
+        editor = new OTFEditor({ container, otf: d });
+        editor.openTabSetup();
+        $('.apply-btn').click();                              // nothing edited
+        expect(panel().opened).toBe(false);
+        expect(editor.state.facade.canUndo()).toBe(false);
+
+        editor.openTabSetup();
+        type('.tab-setup-capo', '2');
+        $('.apply-btn').click();
+        expect(panel().opened).toBe(false);
+        expect(editor.state.otf.tracks[0].capo).toBe(2);
+        expect(editor.state.otf.metadata.tempo).toBe(300);
+        editor.state.facade.undo();
+        expect(editor.state.facade.canUndo()).toBe(false);    // one step
+    });
+
     it('a new string count keeps the cursor on the stave', () => {
         const d = otfWithNotes();
         d.notation.banjo = [{ measure: 1, events: [] }];

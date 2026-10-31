@@ -124,26 +124,43 @@ export function parseTuning(texts) {
 }
 
 /**
- * The form's values → a `setup` for `applyTabSetup`, or `{error}`.
+ * The form's values → a `setup` for `applyTabSetup`, or `{error}`. Only what
+ * differs from `opening` (the values the panel opened with) is sent and checked:
+ * a file may hold what the form would refuse (a tempo of 300, a capo of 14, a
+ * flat for a sharp), and changing the capo must not trip over the tempo.
+ * `{setup: {}}` means nothing changed.
  * @param {Object} v - raw strings from the form
+ * @param {Object} opening - `v` as it was when the panel opened
  */
-export function readSetup(v, { percussion = false } = {}) {
-    const tempo = String(v.tempo ?? '').trim();
-    if (!/^\d+$/.test(tempo) || Number(tempo) < TEMPO_MIN || Number(tempo) > TEMPO_MAX) {
-        return { error: `The tempo is a whole number from ${TEMPO_MIN} to ${TEMPO_MAX}.` };
+export function readSetup(v, opening, { percussion = false } = {}) {
+    const setup = {};
+    for (const field of ['title', 'composer', 'key', 'timeSignature']) {
+        if (v[field] !== opening[field]) setup[field] = v[field];
     }
-    const setup = {
-        title: v.title, composer: v.composer, key: v.key,
-        timeSignature: v.timeSignature, tempo: Number(tempo),
-    };
+    if (String(v.tempo ?? '').trim() !== String(opening.tempo ?? '').trim()) {
+        const tempo = String(v.tempo ?? '').trim();
+        if (!/^\d+$/.test(tempo) || Number(tempo) < TEMPO_MIN || Number(tempo) > TEMPO_MAX) {
+            return { error: `The tempo is a whole number from ${TEMPO_MIN} to ${TEMPO_MAX}.` };
+        }
+        setup.tempo = Number(tempo);
+    }
     if (percussion) return { setup };
-    const capo = String(v.capo ?? '').trim();
-    if (!/^\d+$/.test(capo) || Number(capo) > CAPO_MAX) {
-        return { error: `The capo is a whole number from 0 to ${CAPO_MAX}.` };
+    const track = {};
+    if (v.instrument !== opening.instrument) track.instrument = v.instrument;
+    if (String(v.capo ?? '').trim() !== String(opening.capo ?? '').trim()) {
+        const capo = String(v.capo ?? '').trim();
+        if (!/^\d+$/.test(capo) || Number(capo) > CAPO_MAX) {
+            return { error: `The capo is a whole number from 0 to ${CAPO_MAX}.` };
+        }
+        track.capo = Number(capo);
     }
-    const tuning = parseTuning(v.pitches);
-    if (tuning.error) return { error: tuning.error };
-    setup.track = { instrument: v.instrument, tuning: tuning.pitches, capo: Number(capo) };
+    const pitches = v.pitches.map(p => p.trim());
+    if (pitches.length !== opening.pitches.length || pitches.some((p, i) => p !== opening.pitches[i].trim())) {
+        const tuning = parseTuning(pitches);
+        if (tuning.error) return { error: tuning.error };
+        track.tuning = tuning.pitches;
+    }
+    if (Object.keys(track).length) setup.track = track;
     return { setup };
 }
 
@@ -292,6 +309,7 @@ export class TabSetupPopover {
         this.element.addEventListener('keydown', (e) => this._onKeyDown(e));
         this.element.addEventListener('input', () => { this.errorEl.textContent = ''; });
         if (!track.percussion) this._wireTrack(track);
+        this._opening = this._values();     // what Apply compares against
 
         this.overlay.style.display = 'flex';
         this.isOpen = true;
@@ -376,12 +394,13 @@ export class TabSetupPopover {
     }
 
     _apply() {
-        const { setup, error } = readSetup(this._values(), { percussion: this.session.track.percussion });
+        const { setup, error } = readSetup(this._values(), this._opening, { percussion: this.session.track.percussion });
         const say = (text) => {
             this.errorEl.textContent = text;
             this.errorEl.scrollIntoView?.({ block: 'nearest' });   // a phone's sheet scrolls; the sentence is at its foot
         };
         if (error) { say(error); return; }
+        if (!Object.keys(setup).length) { this.close(); return; }   // nothing changed: no apply, no undo step
         const result = this.session.apply(setup);
         if (result?.error) { say(result.error); return; }
         this.close();
