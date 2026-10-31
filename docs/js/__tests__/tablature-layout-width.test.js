@@ -112,67 +112,104 @@ describe('TabRenderer width budget', () => {
             narrow.remove();
         });
 
-        describe('bars per row as an offset from auto (G22)', () => {
-            const draw = (width, offset) => {
+        describe('bars per row: Auto or an exact count (G22)', () => {
+            const draw = (width, barsPerRow = 'auto', { scale = 1, notation = NOTATION } = {}) => {
                 const el = document.createElement('div');
                 document.body.appendChild(el);
                 setWidth(el, width);
                 const r = new TabRenderer(el);
-                r.options.measuresPerRowOffset = offset;
-                r.render(TRACK, NOTATION);
+                r.options.barsPerRow = barsPerRow;
+                if (scale !== 1) r._scale = scale;
+                r.render(TRACK, notation);
                 return { r, el };
             };
 
-            it('no offset is the automatic count', () => {
-                const { r } = draw(1300, 0);
-                expect(r.rowFit()).toMatchObject({ auto: 6, count: 6, offset: 0 });
+            it('Auto is the default and reads the count from the music', () => {
+                // NOTATION is one note per bar: sparse, so the floor (180) rules: 1220 / 180 = 6
+                expect(draw(1300).r.rowFit()).toMatchObject({ chosen: null, auto: 6, count: 6, most: 8 });
             });
 
-            it('adds to and takes from the automatic count', () => {
-                expect(draw(1300, 1).r.rowFit()).toMatchObject({ auto: 6, count: 7, offset: 1 });
-                expect(draw(1300, -2).r.rowFit()).toMatchObject({ count: 4, offset: -2 });
+            it('Auto gives fewer bars to denser music at the same width', () => {
+                const dense = Array.from({ length: 16 }, (_, i) => ({
+                    measure: i + 1,
+                    events: Array.from({ length: 32 }, (_, k) => ({ tick: k * 60, notes: [{ s: 1, f: k % 5 }] })),
+                }));
+                const sparse = draw(1300).r.rowFit().auto;
+                const busy = draw(1300, 'auto', { notation: dense }).r.rowFit().auto;
+                expect(busy).toBeLessThan(sparse);
+                expect(busy).toBe(3);   // 32nds need 32 x 11 + 30 = 382px a bar; 1220 holds three
             });
 
-            it('stays within 1 to 8, and reports the ends as lo and hi', () => {
-                const fit = draw(1300, 5).r.rowFit();
-                expect(fit.count).toBe(8);
-                expect(fit.offset).toBe(2);
-                expect(fit.hi).toBe(2);
-                const low = draw(1300, -9).r.rowFit();
-                expect(low.count).toBe(1);
-                expect(low.lo).toBe(-5);
+            it('Auto follows Size: a bigger staff leaves fewer bars per row', () => {
+                expect(draw(1300, 'auto', { scale: 1.6 }).r.rowFit().auto)
+                    .toBeLessThan(draw(1300).r.rowFit().auto);
             });
 
-            it('never packs bars narrower than the hard floor, so a row cannot overflow', () => {
-                // 420 wide: 340 usable, auto 1; a 4th bar would be 85px < 90px
-                const { r, el } = draw(420, 5);
-                expect(r.rowFit().count).toBe(3);
-                expect(r.rowFit().hi).toBe(2);
-                expect(r._computedMeasureWidth).toBeGreaterThanOrEqual(r.options.hardMinMeasureWidth);
-                for (const w of svgWidths(el)) expect(w).toBeLessThanOrEqual(420);
-            });
-
-            it('squeezes bars to fit instead of holding them at the usual minimum', () => {
-                const { r } = draw(420, 2);
-                expect(r.rowFit().count).toBe(3);
-                expect(r._computedMeasureWidth).toBeLessThan(r.options.minMeasureWidth);
-            });
-
-            it('keeps the offset when the container resizes', () => {
-                const { r, el } = draw(1300, 1);
-                expect(r.rowFit().count).toBe(7);
-                setWidth(el, 700);   // usable 620: auto 3
+            it('Auto re-fits when the container resizes', () => {
+                const { r, el } = draw(1300);
+                setWidth(el, 700);   // usable 620 -> 3
                 r._onContainerResize();
                 vi.advanceTimersByTime(150);
-                expect(r.rowFit()).toMatchObject({ auto: 3, count: 4, offset: 1 });
+                expect(r.rowFit()).toMatchObject({ chosen: null, auto: 3, count: 3 });
             });
 
-            it('setMeasuresPerRowOffset re-lays out', () => {
-                const { r, el } = draw(1300, 0);
+            it('an exact count holds at any width that has room', () => {
+                for (const width of [700, 1000, 1300, 1800]) {
+                    const { r } = draw(width, 2);
+                    expect(r.rowFit()).toMatchObject({ chosen: 2, count: 2 });
+                    expect(r._computedMeasuresPerRow).toBe(2);
+                }
+            });
+
+            it('an exact count survives a resize: set 2, widen, still 2', () => {
+                const { r, el } = draw(700, 2);
+                setWidth(el, 1800);
+                r._onContainerResize();
+                vi.advanceTimersByTime(150);
+                expect(r.rowFit().count).toBe(2);
+            });
+
+            it('an exact count stretches to fill the row (no maxMeasureWidth cap)', () => {
+                const { r, el } = draw(1300, 2);
+                expect(r._computedMeasureWidth).toBeCloseTo((1300 - r.options.leftMargin - 30) / 2, 5);
+                expect(r._computedMeasureWidth).toBeGreaterThan(r.options.maxMeasureWidth);
+                // the row's svg spans the usable width
+                const w = svgWidths(el)[0];
+                expect(w).toBeGreaterThan(1300 - r.options.leftMargin - 30);
+            });
+
+            it('Auto rows fill the width too', () => {
+                const { r } = draw(1300);
+                expect(r._computedMeasureWidth * r._computedMeasuresPerRow)
+                    .toBeCloseTo(1300 - r.options.leftMargin - 30, 5);
+            });
+
+            it('clamps an exact count to 1-8', () => {
+                expect(draw(1800, 99).r.rowFit()).toMatchObject({ chosen: 8, count: 8 });
+                expect(draw(1800, 0).r.rowFit()).toMatchObject({ chosen: 1, count: 1 });
+            });
+
+            it('shows the most that fit at the hard floor, and the chosen count returns with room', () => {
+                // 420 wide: 340 usable; a 4th bar would be 85px < 90px
+                const { r, el } = draw(420, 5);
+                expect(r.rowFit()).toMatchObject({ chosen: 5, count: 3, most: 3 });
+                expect(r._computedMeasureWidth).toBeGreaterThanOrEqual(r.options.hardMinMeasureWidth);
+                for (const w of svgWidths(el)) expect(w).toBeLessThanOrEqual(420);
+                setWidth(el, 1300);
+                r._onContainerResize();
+                vi.advanceTimersByTime(150);
+                expect(r.rowFit()).toMatchObject({ chosen: 5, count: 5 });
+            });
+
+            it('setBarsPerRow re-lays out and accepts auto', () => {
+                const { r, el } = draw(1300);
                 const before = rows(el);
-                r.setMeasuresPerRowOffset(-3);
-                expect(r.rowFit().count).toBe(3);
+                r.setBarsPerRow(3);
+                expect(r.rowFit()).toMatchObject({ chosen: 3, count: 3 });
                 expect(rows(el)).toBeGreaterThan(before);
+                r.setBarsPerRow('auto');
+                expect(r.rowFit()).toMatchObject({ chosen: null, count: 6 });
+                expect(rows(el)).toBe(before);
             });
 
             it('has no fit to report while measuresPerRow is pinned', () => {
@@ -186,7 +223,7 @@ describe('TabRenderer width budget', () => {
 
             it('a pinned count (the tab editor) never squeezes below minMeasureWidth', () => {
                 // the editor's layout (A20/A21) keeps triplets and 32nds readable and
-                // scrolls a row that doesn't fit; only the reader's offset squeezes
+                // scrolls a row that doesn't fit; only the reader's count squeezes
                 const el = document.createElement('div');
                 document.body.appendChild(el);
                 setWidth(el, 420);

@@ -14,7 +14,7 @@ import {
     historyInitialized, setHistoryInitialized,
     bootRouteClaimed, setBootRouteClaimed, canRouteBootUrl,
     loadViewPrefs, chartCells, setChartCells, chartBars, setChartBars, chartOrder, setChartOrder,
-    chartBeside, setChartBeside, autoHideControls, setAutoHideControls, abcScale, setAbcScale, tabScale, setTabScale, TAB_SCALE_KEY, tabBarsOffset, setTabBarsOffset, TAB_BARS_OFFSET_KEY,
+    chartBeside, setChartBeside, autoHideControls, setAutoHideControls, abcScale, setAbcScale, tabScale, setTabScale, TAB_SCALE_KEY, tabBars, setTabBars, TAB_BARS_KEY,
     ABC_SCALE_KEY
 } from '../state.js';
 
@@ -412,19 +412,52 @@ describe('the song page\'s remembered choices (G19b)', () => {
         expect(tabScale).toBe(0.8);   // out of range: kept as it was
     });
 
-    it('remembers the tab bars-per-row choice as an offset, in its own key (G22)', () => {
-        expect(tabBarsOffset).toBe(0);
-        setTabBarsOffset(2);
-        expect(localStorage.getItem(TAB_BARS_OFFSET_KEY)).toBe('2');
-        setTabBarsOffset(-1);
-        localStorage.setItem(TAB_BARS_OFFSET_KEY, '3');
-        loadViewPrefs();
-        expect(tabBarsOffset).toBe(3);
-        localStorage.setItem(TAB_BARS_OFFSET_KEY, '40');
-        loadViewPrefs();
-        expect(tabBarsOffset).toBe(3);   // out of range: kept as it was
-        setTabBarsOffset(99);
-        expect(tabBarsOffset).toBe(7);
-        setTabBarsOffset(0);
+    describe('bars per row on a tab (G22)', () => {
+        beforeEach(() => { sessionStorage.clear(); localStorage.removeItem(TAB_BARS_KEY); setTabBars('auto'); });
+        afterEach(() => { sessionStorage.clear(); localStorage.removeItem(TAB_BARS_KEY); setTabBars('auto'); });
+
+        it('is Auto until chosen, and keeps the latest choice in both stores', () => {
+            sessionStorage.clear(); localStorage.removeItem(TAB_BARS_KEY);
+            expect(tabBars).toBe('auto');
+            setTabBars(3);
+            expect(tabBars).toBe(3);
+            expect(sessionStorage.getItem(TAB_BARS_KEY)).toBe('3');
+            expect(localStorage.getItem(TAB_BARS_KEY)).toBe('3');
+            setTabBars('auto');
+            expect(sessionStorage.getItem(TAB_BARS_KEY)).toBe('auto');
+            expect(localStorage.getItem(TAB_BARS_KEY)).toBe('auto');
+            setTabBars(99);
+            expect(tabBars).toBe(8);
+            setTabBars(-4);
+            expect(tabBars).toBe(1);
+        });
+
+        it('a window keeps its own choice over the latest anywhere', () => {
+            sessionStorage.setItem(TAB_BARS_KEY, '2');
+            localStorage.setItem(TAB_BARS_KEY, '6');
+            loadViewPrefs();
+            expect(tabBars).toBe(2);
+        });
+
+        it('a new window (empty sessionStorage) starts from the latest choice and keeps it', () => {
+            sessionStorage.clear();
+            localStorage.setItem(TAB_BARS_KEY, '6');
+            loadViewPrefs();
+            expect(tabBars).toBe(6);
+            expect(sessionStorage.getItem(TAB_BARS_KEY)).toBe('6');
+            localStorage.setItem(TAB_BARS_KEY, 'auto');   // another window changes it
+            loadViewPrefs();
+            expect(tabBars).toBe(6);                       // this one does not drift
+        });
+
+        it('ignores a bad value and the first build\'s offset key', () => {
+            sessionStorage.clear();
+            localStorage.setItem('bgb-tab-bars-offset', '3');
+            localStorage.setItem(TAB_BARS_KEY, '40');
+            loadViewPrefs();
+            expect(tabBars).toBe('auto');
+            setTabBars(2);
+            expect(localStorage.getItem('bgb-tab-bars-offset')).toBeNull();
+        });
     });
 });

@@ -35,7 +35,9 @@ const FMB = JSON.parse(fs.readFileSync(path.join(
 
 const TECH = new Set(['h', 'p', '/']);
 
-function renderTrack(track, notation, ticksPerBeat, options = {}) {
+// Four bars to a row, pinned: expectedSlurs() below counts the pairs a row
+// boundary strands for exactly that shape, and Auto now reads the music (G22).
+function renderTrack(track, notation, ticksPerBeat, options = { measuresPerRow: 4 }) {
     const container = document.createElement('div');
     document.body.appendChild(container);
     new TabRenderer(container, options)

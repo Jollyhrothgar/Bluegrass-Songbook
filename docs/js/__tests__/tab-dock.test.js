@@ -153,42 +153,70 @@ describe('the tempo chip (a tab in a set list)', () => {
 });
 
 describe('Bars per row row (G22)', () => {
-    const mount = (fit) => {
+    // a stand-in for work-view's controller: the fit the renderer would report
+    const mount = (start) => {
         const controls = band();
-        const state = { fit };
+        const state = { fit: start };
+        const move = (chosen) => {
+            const count = chosen === null ? state.fit.auto : Math.min(chosen, state.fit.most);
+            state.fit = { ...state.fit, chosen, count };
+        };
         controls._tabDisplay.bars = {
             fit: () => state.fit,
-            step: vi.fn((dir) => { state.fit = { ...state.fit, offset: state.fit.offset + dir, count: state.fit.count + dir }; }),
-            reset: vi.fn(() => { state.fit = { ...state.fit, offset: 0, count: state.fit.auto }; }),
+            step: vi.fn((dir) => move((state.fit.chosen ?? state.fit.count) + dir)),
+            auto: vi.fn(() => move(null)),
         };
         const content = document.createElement('div');
         document.body.appendChild(content);
         fillDisplaySheet(content, controls);
-        return { content, controls };
+        return { content, controls, state };
     };
+    const count = (c) => c.querySelector('.dock-bars-count').textContent;
+    const auto = (c) => c.querySelector('.dock-bars-auto');
 
-    it('words the label', () => {
-        expect(barsLabel({ auto: 4, count: 4, offset: 0 })).toBe('Auto (4)');
-        expect(barsLabel({ auto: 4, count: 5, offset: 1 })).toBe('5 (auto +1)');
-        expect(barsLabel({ auto: 4, count: 2, offset: -2 })).toBe('2 (auto −2)');
+    it('words the number', () => {
+        expect(barsLabel({ chosen: null, auto: 4, count: 4, most: 8 })).toBe('4');
+        expect(barsLabel({ chosen: 2, auto: 4, count: 2, most: 8 })).toBe('2');
+        expect(barsLabel({ chosen: 4, auto: 2, count: 3, most: 3 })).toBe('4 · 3 fit');
+        expect(barsLabel({ chosen: 3, auto: 2, count: 3, most: 3 })).toBe('3');
     });
 
-    it('steps, shows the count and resets with Auto', () => {
-        const { content } = mount({ auto: 4, count: 4, offset: 0, lo: -3, hi: 2 });
-        const label = content.querySelector('#tab-bars-auto');
-        expect(label.textContent).toBe('Auto (4)');
-        expect(label.disabled).toBe(true);
-        content.querySelector('[data-bars="1"]').click();
-        expect(label.textContent).toBe('5 (auto +1)');
-        content.querySelector('[data-bars="1"]').click();
-        expect(content.querySelector('[data-bars="1"]').disabled).toBe(true);   // at the top
-        label.click();
-        expect(label.textContent).toBe('Auto (4)');
+    it('starts in Auto, pressed, showing the count Auto chose', () => {
+        const { content } = mount({ chosen: null, auto: 4, count: 4, most: 8 });
+        expect(auto(content).getAttribute('aria-pressed')).toBe('true');
+        expect(count(content)).toBe('4');
     });
 
-    it('disables the low end', () => {
-        const { content } = mount({ auto: 1, count: 1, offset: 0, lo: 0, hi: 2 });
-        expect(content.querySelector('[data-bars="-1"]').disabled).toBe(true);
-        expect(content.querySelector('[data-bars="1"]').disabled).toBe(false);
+    it('+ and - leave Auto from its count; Auto goes back', () => {
+        const { content, controls } = mount({ chosen: null, auto: 4, count: 4, most: 8 });
+        content.querySelector('[data-bars="1"]').click();
+        expect(controls._tabDisplay.bars.step).toHaveBeenCalledWith(1);
+        expect(count(content)).toBe('5');
+        expect(auto(content).getAttribute('aria-pressed')).toBe('false');
+        content.querySelector('[data-bars="-1"]').click();
+        content.querySelector('[data-bars="-1"]').click();
+        expect(count(content)).toBe('3');
+        auto(content).click();
+        expect(count(content)).toBe('4');
+        expect(auto(content).getAttribute('aria-pressed')).toBe('true');
+    });
+
+    it('disables - at 1 and + at the most that fit', () => {
+        const { content } = mount({ chosen: null, auto: 1, count: 1, most: 3 });
+        const minus = content.querySelector('[data-bars="-1"]');
+        const plus = content.querySelector('[data-bars="1"]');
+        expect(minus.disabled).toBe(true);
+        expect(plus.disabled).toBe(false);
+        plus.click(); plus.click();
+        expect(count(content)).toBe('3');
+        expect(plus.disabled).toBe(true);
+        expect(minus.disabled).toBe(false);
+    });
+
+    it('says how many fit when the chosen count does not', () => {
+        const { content } = mount({ chosen: 5, auto: 2, count: 3, most: 3 });
+        expect(count(content)).toBe('5 · 3 fit');
+        expect(content.querySelector('[data-bars="1"]').disabled).toBe(true);
+        expect(content.querySelector('[data-bars="-1"]').disabled).toBe(false);
     });
 });

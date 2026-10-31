@@ -354,7 +354,7 @@ export const STATES = [
     {
         id: 'tab-bars-per-row',
         group: 'Tab page',
-        title: 'Tab Display sheet with Bars per row at auto +1 (G22)',
+        title: 'Tab Display sheet with Bars per row stepped off Auto to an exact count (G22)',
         url: '/#work/foggy-mountain-breakdown/banjo-tab',
         ready: tabReady,
         setup: async (page) => {
