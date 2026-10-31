@@ -116,6 +116,45 @@ key bindings.
   has three tracks claiming `lead`), and `tablature_parts[].tracks` in the index
   is a count. Neither op touches them.
 
+## Tab setup: what the tab is
+
+Score > Tab setup… (G20b, `tab-setup.js`) is the one editor for title, composer,
+key, time signature, tempo, and a track's instrument, tuning and capo. The rules
+are the facade's, so a test or another UI gets them too.
+
+- Setters: `setTitle`, `setComposer`, `setKey`, `setTimeSignature`,
+  `setTrackInstrument`, `setTrackTuning`, `setTrackCapo` (track last, default the
+  current one), and `applyTabSetup(setup, trackId)`, which applies every field
+  given as ONE undo step (`state.applyTabSetup`; `setTempo` is the older one).
+  A value outside its alphabet throws `RangeError`: a capo is 0..12 (what a
+  `.tef` holds), a tuning is 1..12 pitch names like `F#3` (sharps, never flats),
+  an instrument is `[a-z0-9-]` up to 40 characters.
+- A refusal throws an `Error` whose message is a sentence for the panel, and
+  leaves the document and history alone. `tuningBlocker(pitches, trackId)` and
+  `timeSignatureBlocker(sig)` return that sentence (or `''`) so a panel can ask first.
+  - A tuning with fewer strings is refused while notes are on the strings it would
+    lose (count and first measure). More strings, or the same number, always go.
+  - A time signature is refused while a note starts at or after the new bar's end,
+    or runs past it (`dur`), in a measure the default governs. Measures with their
+    own `time_signature_changes` entry are not judged and keep it.
+- A tuning change never touches `notation`: every note keeps its string and fret
+  (`capo` is ignored by `pitch.js` for the same reason).
+- The panel's presets are `TUNING_PRESETS` in `tab-setup.js`, names from the
+  renderer's tables (`BANJO_TUNINGS`...). Those tables key a tuning by note
+  letters, and for banjo Open D, C Tuning and Open A and mandolin DADA the letters
+  are not what players mean, so the presets hold the real tunings and the stave
+  header prints notes for them rather than the name.
+- Through `.tef` (`tab-setup-roundtrip.test.js`): title, composer, time signature
+  (4/4 3/4 2/4 2/2 6/8), tempo, capo, tuning and string count all come back. The
+  key does not (a notice). A track's instrument comes back only if its id still
+  names it (the writer names a track from its id and the importer reads the
+  instrument from the name): changing banjo to tenor-banjo and keeping the id
+  "banjo" saves with a "track name or role TablEdit cannot keep" notice.
+- The title box above a new tab is `metadata.title`: the box writes it through
+  `OTFEditor.setTitle` on blur or Enter, and the editor dispatches
+  `otf-editor:title` (bubbling from its root) when the document's title changes
+  under it (Tab setup, undo, an import) so `work-view.js` can update the box.
+
 ## Automatic duration
 
 `state.currentDuration === null` is TablEdit's automatic duration. The facade

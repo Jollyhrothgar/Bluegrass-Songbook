@@ -162,7 +162,7 @@ const CSS = `
     .otf-tab-setup-popover input:focus, .otf-tab-setup-popover select:focus {
         outline: none; border-color: var(--accent, #007bff);
     }
-    .otf-tab-setup-popover .tab-setup-strings { display: flex; flex-wrap: wrap; gap: 8px; }
+    .otf-tab-setup-popover .tab-setup-strings { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
     .otf-tab-setup-popover .tab-setup-string { width: 64px; display: flex; flex-direction: column; gap: 3px; }
     .otf-tab-setup-popover .tab-setup-string span { font-size: 11px; color: var(--text-muted, #666); }
     .otf-tab-setup-popover .tab-setup-string input { text-align: center; padding: 8px 4px; }
@@ -372,9 +372,13 @@ export class TabSetupPopover {
 
     _apply() {
         const { setup, error } = readSetup(this._values(), { percussion: this.session.track.percussion });
-        if (error) { this.errorEl.textContent = error; return; }
+        const say = (text) => {
+            this.errorEl.textContent = text;
+            this.errorEl.scrollIntoView?.({ block: 'nearest' });   // a phone's sheet scrolls; the sentence is at its foot
+        };
+        if (error) { say(error); return; }
         const result = this.session.apply(setup);
-        if (result?.error) { this.errorEl.textContent = result.error; return; }
+        if (result?.error) { say(result.error); return; }
         this.close();
     }
 
