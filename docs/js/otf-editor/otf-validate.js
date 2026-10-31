@@ -12,10 +12,12 @@
 // their id in brackets, the same ids as the Python module:
 //   string_count notation_keys track_ids measure_order tick_order tick_range
 //   duplicate_string chord_index chord_track chord_tick chord_fingers mark_order
-//   mark_raw annotation_track
+//   mark_raw annotation_track annotation_chord
 // plus the warning-only reading_list_overrun (#263).
 //
 // Cross-field rules run only on a document whose shape is sound.
+
+import { parseTabChord } from '../tab-chord.js';
 
 /**
  * The version every writer stamps (1.1 added metadata.tab_by; 1.2 added
@@ -383,6 +385,9 @@ function annotationRules(otf, ids, errors) {
     (otf.annotations || []).forEach((a, i) => {
         if ('track' in a && !ids.includes(a.track)) {
             errors.push(`[annotation_track] annotations/${i}: no track ${JSON.stringify(a.track)}`);
+        }
+        if (a.kind === 'chord' && !parseTabChord(a.text)) {
+            errors.push(`[annotation_chord] annotations/${i}: ${JSON.stringify(a.text)} is not a chord`);
         }
     });
 }

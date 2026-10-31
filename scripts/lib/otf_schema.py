@@ -27,6 +27,8 @@ fixtures can name the rule they break):
 ``mark_raw``           a mark's decoded fields agree with its ``raw`` byte
                        (``decode_mark_raw``)
 ``annotation_track``   ``annotations[].track`` names a track
+``annotation_chord``   ``annotations[].kind: "chord"`` has a text the shared chord
+                       parser accepts (``tab_chord.parse_tab_chord``)
 
 Warning only (#263): ``reading_list_overrun``.
 
@@ -39,6 +41,8 @@ from functools import lru_cache
 from pathlib import Path
 
 from jsonschema import Draft202012Validator
+
+from tab_chord import parse_tab_chord
 
 # Re-exported so a caller that already has this module gets the shared helpers.
 from otf_format import (  # noqa: F401
@@ -109,6 +113,8 @@ def _annotation_rules(otf: dict, ids: list, errors: list) -> None:
     for i, a in enumerate(otf.get('annotations', [])):
         if 'track' in a and a['track'] not in ids:
             errors.append(f'[annotation_track] annotations/{i}: no track {a["track"]!r}')
+        if a.get('kind') == 'chord' and not parse_tab_chord(a['text']):
+            errors.append(f'[annotation_chord] annotations/{i}: {a["text"]!r} is not a chord')
 
 
 def _mark_rules(otf: dict, errors: list) -> None:
