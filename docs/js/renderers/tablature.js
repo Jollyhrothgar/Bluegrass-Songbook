@@ -317,11 +317,20 @@ export class TabRenderer {
                                       // pickup sits in the right half of its slot
                                       // and its beats land under the beats below.
                                       // false = the old proportional width.
-            measuresPerRow: 'auto',   // 'auto' or number (1-8)
-            measuresPerRowOffset: 0,  // bars more (+) or fewer (-) than 'auto' picks, re-fitted
-                                      // on every layout (the reader's "Bars per row", G22)
+            measuresPerRow: 'auto',   // 'auto' or number (1-8). A NUMBER here is a PINNED row
+                                      // shape (the tab editor): bars keep minMeasureWidth and
+                                      // a row that does not fit scrolls.
+            barsPerRow: 'auto',       // The READER's choice (G22): 'auto' reads the music
+                                      // (neededMeasureWidth) and re-fits on every layout; a
+                                      // number 1-8 is exact at any width. Bars stretch to fill
+                                      // the row; only a count that cannot fit at
+                                      // hardMinMeasureWidth shows fewer (see rowFit()).
             hardMinMeasureWidth: 90,  // A chosen count squeezes bars down to here, never
                                       // past it, so a row cannot run off the side
+            noteSlotWidth: 20,        // Auto: readable width of one note slot, in layout px
+                                      // (a fret chip is up to ~14 wide, plus a ~6 gap)
+            autoPercentile: 0.9,      // Auto sizes to this share of the bars, so one freak
+                                      // bar does not shrink the whole tab
             leftMargin: 50,
             topMargin: 40,
             stemAreaHeight: 28,
@@ -516,7 +525,7 @@ export class TabRenderer {
             this._computedMeasuresPerRow = Math.max(1, Math.min(8, opt.measuresPerRow));
             // A pinned count (the tab editor) keeps minMeasureWidth: its layout
             // (A20/A21) never squeezes triplets and 32nds; a row that does not fit
-            // scrolls. Only the reader's auto + offset squeezes to hardMinMeasureWidth.
+            // scrolls. Only the reader's bars-per-row squeezes to hardMinMeasureWidth.
             this._computedMeasureWidth = Math.max(
                 opt.minMeasureWidth,
                 Math.min(opt.maxMeasureWidth, availableWidth / this._computedMeasuresPerRow)
@@ -525,62 +534,92 @@ export class TabRenderer {
             return;
         }
 
-        const fit = TabRenderer._autoRowFit(availableWidth, opt);
-        const auto = fit.measuresPerRow;
-        const most = Math.max(1, Math.min(8, Math.floor(availableWidth / opt.hardMinMeasureWidth)));
-        const count = Math.max(1, Math.min(most, auto + (opt.measuresPerRowOffset || 0)));
-        this._rowFit = { auto, count, offset: count - auto, lo: 1 - auto, hi: Math.max(0, most - auto) };
+        const auto = this._autoCount(availableWidth);
+        const most = TabRenderer._mostThatFit(availableWidth, opt);
+        const chosen = opt.barsPerRow === 'auto' ? null
+            : Math.max(1, Math.min(8, Math.round(Number(opt.barsPerRow)) || 1));
+        const count = chosen === null ? auto : Math.min(chosen, most);
+        this._rowFit = { chosen, auto, count, most };
         this._computedMeasuresPerRow = count;
-        // The reader's rows fill the width: fewer bars than fit stretch rather
-        // than stopping at maxMeasureWidth (Mike, 2026-10-31). The pinned path
-        // above (the tab editor) keeps its caps.
+        // The reader's rows fill the width, in both modes: fewer bars than fit
+        // stretch rather than stopping at maxMeasureWidth (Mike, 2026-10-31).
+        // The pinned path above (the tab editor) keeps its caps.
         this._computedMeasureWidth = Math.max(opt.hardMinMeasureWidth, availableWidth / count);
         this._applyMeasureWidthFloor(availableWidth);
     }
 
     /**
-     * The reader's bars-per-row choice, as laid out last: the automatic
-     * count, the count in use, the offset actually in effect (the asked-for
-     * one, clamped) and the offsets that can still be reached (`lo`..`hi`).
-     * Null before the first layout, or when `measuresPerRow` is pinned.
+     * The reader's bars-per-row choice, as laid out last: `chosen` (the exact
+     * count asked for, or null in Auto), `auto` (what Auto picks here), `count`
+     * (bars on a row now: Auto's, or the chosen count cut to `most`) and `most`
+     * (the most bars that fit at `hardMinMeasureWidth`, 1-8). Null before the
+     * first layout, or when `measuresPerRow` is pinned.
      */
     rowFit() { return this._rowFit || null; }
 
     /**
-     * Set the reader's offset from the automatic count and re-lay out.
-     * @param {number} offset - bars more (+) or fewer (-) than auto
+     * Set the reader's bars per row and re-lay out.
+     * @param {'auto'|number} mode - 'auto', or an exact count 1-8
      */
-    setMeasuresPerRowOffset(offset) {
-        const next = Math.round(Number(offset)) || 0;
-        if (next === this.options.measuresPerRowOffset) return;
-        this.options.measuresPerRowOffset = next;
+    setBarsPerRow(mode) {
+        const next = mode === 'auto' ? 'auto'
+            : Math.max(1, Math.min(8, Math.round(Number(mode)) || 1));
+        if (next === this.options.barsPerRow) return;
+        this.options.barsPerRow = next;
         if (this._track && this._notation) this._renderInternal();
     }
 
+    /** The most bars of `hardMinMeasureWidth` a row of this width holds (1-8). */
+    static _mostThatFit(availableWidth, opt) {
+        return Math.max(1, Math.min(8, Math.floor(availableWidth / opt.hardMinMeasureWidth)));
+    }
+
     /**
-     * The auto layout: how many measures fit at the target width, and how
-     * wide each then is. Pure — it reads no instance state — so a caller
-     * can ask what the READ view would do without disturbing a renderer.
+     * The width a bar's notes need to be readable, in layout px (the Size
+     * scale divides the row's budget instead, so it is not a parameter).
+     * Pure: it reads no instance state.
+     *
+     * Per bar: its length over the smallest gap between two note onsets is
+     * how many note slots the bar must hold, and each slot gets
+     * `noteSlotWidth` (plus the 30px of margin a bar spends on its barlines).
+     * A bar with fewer than two onsets, or none, needs only the floor
+     * (`targetMeasureWidth`, what Auto aimed for before it read the music).
+     * The tab's need is the `autoPercentile` bar by width, so a single bar of
+     * 64ths does not squeeze the rest.
+     *
+     * @param {Array} notation - measures [{measure, events: [{tick, notes}]}]
+     * @param {Object} opt - renderer options
+     * @param {(m: Object) => number} [ticksOf] - a bar's length in ticks
+     * @returns {number}
      */
-    static _autoRowFit(availableWidth, opt) {
-        let measuresPerRow = Math.floor(availableWidth / opt.targetMeasureWidth);
-        measuresPerRow = Math.max(1, Math.min(8, measuresPerRow));
+    static neededMeasureWidth(notation, opt, ticksOf = () => 1920) {
+        const floor = opt.targetMeasureWidth;
+        if (!notation || notation.length === 0) return floor;
+        const needs = notation.map(m => {
+            const ticks = ticksOf(m);
+            const onsets = [...new Set((m.events || [])
+                .filter(e => e.notes && e.notes.length)
+                .map(e => e.tick))].sort((a, b) => a - b);
+            let gap = Infinity;
+            for (let i = 1; i < onsets.length; i++) gap = Math.min(gap, onsets[i] - onsets[i - 1]);
+            if (!ticks || !isFinite(gap) || gap <= 0) return floor;
+            return Math.max(floor, (ticks / gap) * opt.noteSlotWidth + 30);
+        }).sort((a, b) => a - b);
+        const rank = Math.ceil(opt.autoPercentile * needs.length) - 1;
+        return needs[Math.max(0, Math.min(needs.length - 1, rank))];
+    }
 
-        let measureWidth = availableWidth / measuresPerRow;
-
-        // Clamp to min/max
-        if (measureWidth < opt.minMeasureWidth && measuresPerRow > 1) {
-            measuresPerRow--;
-            measureWidth = availableWidth / measuresPerRow;
-        }
-        measureWidth = Math.max(opt.minMeasureWidth, Math.min(opt.maxMeasureWidth, measureWidth));
-        return { measuresPerRow, measureWidth };
+    /** Auto's bar count for a row of this width: as many needed bars as fit, 1-8. */
+    _autoCount(availableWidth) {
+        const needed = TabRenderer.neededMeasureWidth(
+            this._notation, this.options, (m) => this.timing?.ticksAt(m.measure) || this._defaultTicks());
+        return Math.max(1, Math.min(8, Math.floor(availableWidth / needed)));
     }
 
     /**
      * The measures-per-row the READ view would choose for this container
-     * width — i.e. what 'auto' resolves to, ignoring `measureWidthFloor`
-     * and any pinned `measuresPerRow`.
+     * width, i.e. what Auto resolves to, ignoring `measureWidthFloor` and
+     * any pinned `measuresPerRow`.
      *
      * The editor pins this number once (plan tab-editor-input-parity §7:
      * "horizontal shifting / column mutation makes it non-deterministic
@@ -594,8 +633,7 @@ export class TabRenderer {
     autoMeasuresPerRow(layoutWidth) {
         const containerWidth = layoutWidth ?? this._availableWidth();
         if (!containerWidth) return null;
-        const availableWidth = containerWidth - this.options.leftMargin - 30;
-        return TabRenderer._autoRowFit(availableWidth, this.options).measuresPerRow;
+        return this._autoCount(containerWidth - this.options.leftMargin - 30);
     }
 
     /**

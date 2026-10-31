@@ -44,13 +44,20 @@ horridly cramped."
 
 ## How
 
-- **The renderer** already takes `measuresPerRow: 'auto' | n` (1–8) and
-  works out the auto count in `TabRenderer._autoRowFit`.
-  - Add the reader's offset on top of auto, so it re-fits on resize. That
-    can be a `measuresPerRowOffset` option, or the song page resolving auto
-    + offset to a number on each layout. Pick the simpler.
-  - A count above what fits uses `availableWidth / n` down to a hard floor,
-    instead of being clamped up to `minMeasureWidth` and overflowing.
+- **The renderer** has two row options. `measuresPerRow: 'auto' | n` is the
+  PINNED shape (the tab editor): bars keep `minMeasureWidth` and a row that
+  does not fit scrolls. `barsPerRow: 'auto' | n` is the reader's: Auto from the
+  music, or an exact count; bars stretch to fill the row, squeezing to
+  `hardMinMeasureWidth` (90) at most, and a count that cannot fit shows the most
+  that do (`rowFit()` says `{chosen, auto, count, most}`; the label reads
+  "4 · 3 fit").
+- **Built values (2026-10-31).** A note slot is `noteSlotWidth` = 20 layout px
+  (a fret chip is up to ~14 wide, plus a ~6 gap), plus the 30px a bar spends on
+  barlines: an eighth-note roll needs 190, sixteenths 350, 32nds 670, 64ths 1310.
+  The floor is `targetMeasureWidth` (180), not `minMeasureWidth` (138), so a
+  sparse tab lays out as it always did. Size needs no term of its own: the
+  renderer already lays out in container / scale, so a bigger staff leaves
+  fewer bars by shrinking the room.
 - **Auto's needed width** is computed in the renderer from the notation it already has. Keep it pure and unit-tested, e.g. `TabRenderer.neededMeasureWidth(notation, opt)`.
 - **The editor stays put.** Pressing Edit must not reflow the page. The
   editor pins its row shape once (`otf-editor/editor.js`
@@ -65,8 +72,8 @@ horridly cramped."
 
 ## Tests
 
-- **Unit:** the fit with an offset (clamping, the hard floor, the disabled
-  ends); the offset is remembered.
+- **Unit:** `neededMeasureWidth`, the Auto count, an exact count at any width,
+  the "fit" clamp and its label, fill-the-row, the per-window memory.
 - **E2E:**
   - + and − change the number of bars in the first row, and the count shows
     in the label;
