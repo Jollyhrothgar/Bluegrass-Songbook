@@ -100,7 +100,7 @@ into it.
   - `3` on the staff (FMB's 88 "etc." and 6 others).
   - Byte 9 is style (3).
   - So V2 byte 4 bits 5–6 carry the same value. `2` prints above
-    (Westphalia's 29 texts are at 2). V3 21627 has 207 texts at 1.
+    (Westphalia's 29 texts are at 2). V3 files have them too (21627: 16; 28162: 114). My "207 in 21627" was the corpus-wide count for that byte pattern; the G21a agent caught it.
   - Rule sent to the G21a agent: the importers set `"below"` iff the value
     is 1; the writer keeps the original byte, else writes 1 or 0; `place`
     round-trips.

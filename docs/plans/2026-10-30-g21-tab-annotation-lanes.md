@@ -321,7 +321,7 @@ writer and the parser paths. Any change is agreed by both sessions first.
     The values:
     - `0`: above.
     - `1`: below the staff. FMB's 426 m/i letters; Brilliancy's 3
-      "Part A:"; V3 `21627_tef_temperance_reel.tef`, 207 texts.
+      "Part A:"; V3 files too (`21627_tef_temperance_reel.tef` 16, `28162` 114). The importers find 4,521 below across the 610 corpus files.
     - `2`: printed above, like 0.
     - `3`: on the staff near its string. FMB's 88 "etc.".
 
