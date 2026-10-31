@@ -160,13 +160,16 @@ way a note does:
 | `kind` | `text`, `chord` | `chord` means `text` is a chord name as written. Absent = `text`. (The check that a `chord` text parses comes with the chord parser, G21d) |
 | `place` | `above`, `below` | which side of the staff the text sits on. Absent = `above` |
 
-A `.tef` records which track's string row each text sits on, so both TEF importers
-fill `track` from it (the same mapping chord diagrams use). They do not set
-`kind` or `place` yet: how TablEdit decides above or below is not known. The
-`.tef` writer puts a text with a `track` back on that track's rows; `kind` is not
-written (a `.tef` has only text cells), and a `below` text comes back above (the
-writer says so in its notices). The editor renames a track's annotations with the
-track and deletes them with it, as for `chord_diagrams`.
+A `.tef` records which track's string row each text sits on and a placement
+value (V3 text record byte 11; V2 byte 4 bits 5-6: 0 above, 1 below the staff, 2
+above, 3 on the staff near its string). Both TEF importers fill `track` from the
+row (the same mapping chord diagrams use) and set `place: "below"` for placement
+1; 0, 2 and 3 draw above, so `place` is absent. They do not set `kind` yet. The
+`.tef` writer puts a text with a `track` on that track's first free string row
+(an unedited original keeps its row and bytes), writes placement 1 for `below`,
+and does not write `kind` (a `.tef` has only text cells). The editor stamps the
+current track on every text it adds, renames a track's texts with the track and
+deletes them with it, as for `chord_diagrams`, and has an Above / Below choice.
 
 ```jsonc
 {"measure": 2, "tick": 0, "text": "G", "track": "banjo", "kind": "chord"}
