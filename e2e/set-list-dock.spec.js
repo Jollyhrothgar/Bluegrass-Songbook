@@ -3,7 +3,7 @@
 // the keyboard step through the list, except while typing. A tab in a list
 // swaps its Tempo stepper for a ♩ chip so the dock still fits at 360px.
 import { test, expect } from './fixtures.js';
-import { openMenu } from './helpers.js';
+import { openMenu, serveWithoutTabs } from './helpers.js';
 import { pressTabEdit } from './helpers/tab-edit.js';
 import { songReady } from './helpers/tour.js';
 
@@ -236,6 +236,9 @@ for (const width of [360, 390]) {
         test.use({ viewport: { width, height: 800 } });
 
         test('pill · Key · Size · View ▾ · Display fit on one row (View is the sheet, not Lyrics | Chart)', async ({ page }) => {
+            // Old Home Place gained a banjo tab (#350), which would make View ▾ on its own;
+            // without it, this checks the narrow-list rule itself
+            await serveWithoutTabs(page, 'old-home-place');
             await open(page, 'old-home-place');
             await songReady(page);
             await expect(page.locator('#dock-view-btn')).toBeVisible();
@@ -258,6 +261,7 @@ test.describe('the lyric dock in a list on a wide screen', () => {
     test.use({ viewport: { width: 1440, height: 900 } });
 
     test('keeps the Lyrics | Chart segments beside the pill', async ({ page }) => {
+        await serveWithoutTabs(page, 'old-home-place');   // lyrics + chart only (#350 added a tab)
         await open(page, 'old-home-place');
         await songReady(page);
         await expect(page.locator('#dock-view')).toBeVisible();
