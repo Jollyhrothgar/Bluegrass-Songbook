@@ -9620,7 +9620,11 @@ body.has-bottomband .container {
     color: var(--accent);
     font-weight: 600;
     font-size: var(--font-base);
-    padding: 0.25rem 0.75rem;
+    padding: 0 0.75rem;
+    /* one line, a fixed height: the ✏️ emoji's line box made it 34px, a
+       pixel past what the band's wrap check allows (topbar-density.spec.js) */
+    height: 32px;
+    line-height: 1;
 }
 
 .topbar-edit-btn:hover { background: color-mix(in srgb, var(--accent) 10%, transparent); }
