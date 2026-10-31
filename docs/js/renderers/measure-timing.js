@@ -47,6 +47,15 @@ export function measureTicksFor(ts, ticksPerBeat = 480) {
 const TWO_FEEL_MAP = { '4/4': '2/2', '2/4': '1/2' };
 
 /**
+ * Quarter notes in one beat of the tab band's BPM: 2 when the pulse is a half
+ * note (a written x/2 signature, or two feel), otherwise 1. The document and
+ * the player stay in quarter-note BPM.
+ */
+export function quartersPerBeat(timeSignature, feel = null) {
+    return feel === 'two' || parseTimeSignature(timeSignature).den === 2 ? 2 : 1;
+}
+
+/**
  * Per-written-measure time signatures: global signature + overrides.
  */
 export class MeasureTiming {
