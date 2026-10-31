@@ -16,6 +16,7 @@ import {
 import { KeyboardHandler } from './keyboard.js';
 import { EditorToolbar, PHONE_MAX_WIDTH } from './toolbar.js';
 import { EditorMenuBar } from './menu-bar.js';
+import { TrackSwitcher } from './track-switcher.js';
 import {
     NoteEntryPopover, AnnotationPopover, TrackNamePopover, ValuePromptPopover, SaveAsPopover,
     GracePopover,
@@ -24,6 +25,7 @@ import {
 import { sanitizeTrackId, FX_ORDER, isGrace } from './facade.js';
 import { cleanupOTF, validateOTF } from './actions.js';
 import { createSaveAs } from './save-as.js';
+import { TabSetupPopover } from './tab-setup.js';
 import { ContextMenu } from './context-menu.js';
 import {
     describe as describeBindings, getPreset, setPreset,
@@ -221,6 +223,7 @@ export class OTFEditor {
                 moveTrackLater: () => this.moveCurrentTrack(1),
                 addTrack: () => this.addTrackPrompt(),
                 deleteTrack: () => this.deleteTrackPrompt(),
+                tabSetup: () => this.openTabSetup(),
                 measuresPerRow: () => [2, 3, 4, 5, 6].map(n => ({
                     label: String(n),
                     checked: this._baseMeasuresPerRow === n,
@@ -261,6 +264,11 @@ export class OTFEditor {
         });
         // File ▸ Save as… (and Ctrl+S): format, name, and what the file loses.
         this.saveAsPopover = new SaveAsPopover({
+            onClose: () => this.editorRoot?.focus(),
+        });
+        // Score ▸ Tab setup…: title, composer, key, time signature, tempo, and the
+        // current track's instrument, tuning and capo.
+        this.tabSetupPopover = new TabSetupPopover({
             onClose: () => this.editorRoot?.focus(),
         });
         // TablEdit's Alt+G Grace Note dialog: a fret and a connection for
@@ -384,9 +392,18 @@ export class OTFEditor {
         // leave the grid/cursor overlays drawn from stale geometry
         this.renderer.onAfterRender = () => {
             if (!this.cursor) return; // during destroy
+            // Phone: the track name above the tab becomes the switcher
+            // (before the cursor measures where the first row starts)
+            this.trackSwitcher?.decorate(this.rendererContainer.querySelector('.track-info'));
             this.cursor.update();
             this.cursor.renderGrid();
         };
+
+        this.trackSwitcher = new TrackSwitcher({
+            state: this.state,
+            isPhone: () => !!window.matchMedia?.(`(max-width: ${PHONE_MAX_WIDTH}px)`).matches,
+            onChoose: () => this.editorRoot?.focus(),
+        });
 
         // Initialize cursor overlay
         this.cursor.init(this.canvasContainer);
@@ -398,6 +415,7 @@ export class OTFEditor {
         this.trackPopover.init(this.container);
         this.valuePopover.init(this.container);
         this.saveAsPopover.init(this.container);
+        this.tabSetupPopover.init(this.container);
         this.gracePopover.init(this.container);
 
         // Attach keyboard handler
@@ -531,6 +549,47 @@ export class OTFEditor {
                 border-bottom: 0;
                 border-top: 1px solid var(--border, #ddd);
             }
+
+            /* Phone track switcher (track-switcher.js): the name above the
+               tab as a button, with a short list under it */
+            .track-info.has-track-switcher { position: relative; }
+            .track-switcher-button, .track-switcher-item {
+                min-height: 44px;
+                padding: 0 12px;
+                border: 1px solid var(--border, #ccc);
+                border-radius: 8px;
+                background: var(--bg, #fff);
+                color: var(--text, #222);
+                font: inherit;
+                font-weight: 600;
+                cursor: pointer;
+            }
+            .track-switcher-name { text-transform: capitalize; }
+            .track-switcher-list {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                z-index: 20;
+                display: flex;
+                flex-direction: column;
+                min-width: 200px;
+                max-height: 60vh;
+                overflow-y: auto;
+                background: var(--bg, #fff);
+                border: 1px solid var(--border, #ccc);
+                border-radius: 8px;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+            }
+            .track-switcher-item {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                border: 0;
+                border-radius: 0;
+                font-weight: 400;
+                text-align: left;
+            }
+            .track-switcher-check { width: 1.2em; }
 
             @media (max-width: ${PHONE_MAX_WIDTH}px) {
                 .otf-editor-fill .editor-canvas-container { padding: 8px; }
@@ -780,11 +839,32 @@ export class OTFEditor {
     }
 
     /**
+     * The page above the editor shows the title too (the new-tab title box). Say
+     * when the document's title changes under it (Tab setup, undo, a file
+     * imported) so the box follows; typing in the box goes the other way,
+     * through `setTitle`.
+     */
+    _announceTitle() {
+        const title = this.state.otf?.metadata?.title ?? '';
+        if (title === this._announcedTitle) return;
+        this._announcedTitle = title;
+        this.editorRoot?.dispatchEvent(new CustomEvent('otf-editor:title', { bubbles: true, detail: { title } }));
+    }
+
+    /** The title box above a new tab wrote this: the file's title is the box's. Undoable. */
+    setTitle(text) {
+        this._announcedTitle = String(text ?? '').trim();   // it came from the box: do not echo it back
+        return this.state.facade.setTitle(text);
+    }
+
+    /**
      * Set up event listeners
      */
     _setupEventListeners() {
+        this._announcedTitle = this.state.otf?.metadata?.title ?? '';
         // State change events
         this.state.on('change', () => {
+            this._announceTitle();
             this._render();
             // The status bar reads from the document too (placed text at
             // the cursor), so undo/redo must refresh it as well
@@ -1437,6 +1517,47 @@ export class OTFEditor {
             source: this.options.source,
             filename: this.options.filename,
         }));
+    }
+
+    /** Score ▸ Tab setup…: the panel, on the document and the current track as they are now. */
+    openTabSetup() {
+        if (!this.tabSetupPopover?.overlay) return false;
+        const otf = this.state.otf;
+        const meta = otf.metadata || {};
+        const track = this.state.facade.getTrack(this.state.trackId);
+        if (!track) return false;
+        const trackId = track.id;
+        this.tabSetupPopover.open({
+            meta: {
+                title: meta.title || '',
+                composer: meta.composer || '',
+                key: meta.key || '',
+                timeSignature: meta.time_signature || '4/4',
+                tempo: meta.tempo || 120,
+                changes: (meta.time_signature_changes || []).map(c => c.measure).sort((a, b) => a - b),
+            },
+            track: {
+                id: trackId,
+                instrument: track.instrument || '',
+                tuning: track.tuning || [],
+                capo: track.capo || 0,
+                percussion: !!track.percussion,
+                noteCount: this.state.facade.noteCountIn(trackId),
+            },
+            apply: (setup) => this._applyTabSetup(setup, trackId),
+        });
+        return true;
+    }
+
+    /** Apply from the panel: one undo step, or a sentence and no change. */
+    _applyTabSetup(setup, trackId) {
+        try {
+            this.state.applyTabSetup(setup, trackId);
+        } catch (err) {
+            return { error: err.message };
+        }
+        this.recorder?.record('tabSetup', { setup, trackId });
+        return {};
     }
 
     /** The file the document now comes from (a .tef imported into this session). */
@@ -2579,6 +2700,8 @@ export class OTFEditor {
 
         // Clean up components
         this.keyboard.detach();
+        this.trackSwitcher?.destroy();
+        this.trackSwitcher = null;
         this.cursor.destroy();
         this.toolbar.destroy();
         this.menuBar?.destroy();
@@ -2588,6 +2711,7 @@ export class OTFEditor {
         this.trackPopover?.destroy();
         this.valuePopover?.destroy();
         this.saveAsPopover?.destroy();
+        this.tabSetupPopover?.destroy();
         this.gracePopover?.destroy();
         this.renderer?.destroy();
 
@@ -2607,6 +2731,7 @@ export class OTFEditor {
         this.trackPopover = null;
         this.valuePopover = null;
         this.saveAsPopover = null;
+        this.tabSetupPopover = null;
         this.gracePopover = null;
         this.renderer = null;
         this.player = null;

@@ -203,7 +203,7 @@ export function fxLanesFor(notation) {
 
 // Common banjo tunings: pattern (strings 1-5, note letters) → name
 // Patterns use just the note letter, ignoring octave
-const BANJO_TUNINGS = {
+export const BANJO_TUNINGS = {
     'D-B-G-D-G': 'Open G',
     'D-C-G-C-G': 'Double C',
     'D-C-G-D-G': 'G Modal',
@@ -214,14 +214,14 @@ const BANJO_TUNINGS = {
 };
 
 // Mandolin tunings
-const MANDOLIN_TUNINGS = {
+export const MANDOLIN_TUNINGS = {
     'E-A-D-G': 'Standard',
     'E-A-D-A': 'DADA',
     'D-A-D-G': 'Cross-key',
 };
 
 // Guitar tunings
-const GUITAR_TUNINGS = {
+export const GUITAR_TUNINGS = {
     'E-B-G-D-A-E': 'Standard',
     'D-B-G-D-A-D': 'Drop D',
     'D-A-G-D-A-D': 'Open D',
@@ -235,7 +235,7 @@ const GUITAR_TUNINGS = {
  * @param {number} capo - Capo position (to calculate base tuning)
  * @returns {{name: string|null, display: string}} - Tuning name and display string
  */
-function detectTuningName(tuning, instrument, capo = 0) {
+export function detectTuningName(tuning, instrument, capo = 0) {
     if (!tuning || tuning.length === 0) {
         return { name: null, display: 'Unknown tuning' };
     }

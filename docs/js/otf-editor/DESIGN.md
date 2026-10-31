@@ -35,6 +35,16 @@ one track at a time as strings and frets.
   leaves out before you press Save. The File menu of a song-page session is
   Open, Import .tef (new takes only), Save as, Submit, Cancel, Done; Submit sends a tab correction or a new tab through `submit-tab.js` (a
   `pending_songs` row, then `auto-commit-song`, which commits it to `works/`).
+- **Tab setup.** Score > Tab setup… is one panel (a bottom sheet on a phone) for
+  what the tab is rather than what is written on it: title, composer, key, time
+  signature and tempo for the whole tab; instrument, tuning and capo for the
+  current track. Tuning is a preset for the instrument or Custom, one pitch box
+  per string. Apply is one undo step. Every note keeps its string and fret when
+  the tuning changes, so the sound follows the tuning; the panel says so when the
+  track has notes. A change the notes forbid, a tuning with fewer strings than
+  some notes use or a time signature some notes do not fit, is a sentence in the
+  panel (the count and the first measure) and changes nothing. Time-signature
+  changes at a measure stay as they are and are not editable yet.
 - **Menu bar** (File, Edit, Note, Play, Score, View, Help) with every shortcut
   printed beside its item. Help > About opens this document.
 - **One command surface per device.** The menus are the single list of
@@ -192,6 +202,20 @@ track still exists (undoing a rename is exactly when it does not) and falls back
 to the track now at the same index; otherwise the next `getNotation()` would
 mint an empty measure list under the dead name. The toolbar re-reads the track
 row on every `change`, so undoing a rename relabels the button.
+
+**Phone track switcher (G20a, `track-switcher.js`).** G17 hides the toolbar's
+Track row at `PHONE_MAX_WIDTH`, so on a phone with two or more tracks the track
+name above the tab is a button, "mandolin ▾ 1 of 4" (`aria-haspopup`,
+`aria-expanded`, 44px tall). It opens a short list of the tracks with a check on
+the current one; choosing one calls `state.setTrack` and puts focus back on the
+editor. Escape or a tap outside closes it. One track, or a wide screen: the
+header is untouched. The header is drawn by `renderers/tablature.js`
+(`renderTrackInfo`), shared with the read view, so the editor does not change
+the renderer: `editor.js` calls `TrackSwitcher.decorate` on the fresh
+`.track-info` from `renderer.onAfterRender`, before the cursor measures the
+first row. Every redraw (rename, reorder, add, delete, undo, resize across the
+breakpoint) relabels it, and the list is read from the document each time it
+opens. The module is in `lazy-modules.js`.
 
 ### Placed text (`annotations`)
 

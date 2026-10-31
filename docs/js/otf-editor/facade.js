@@ -19,11 +19,19 @@ import {
     maxMeasureIn,
     measureTimingFromOtf,
 } from '../renderers/measure-timing.js';
-import { notePitch, fretForPitch } from './pitch.js';
+import { notePitch, fretForPitch, pitchToMidi } from './pitch.js';
 import { TAB_BY_NAME_MAX, TAB_BY_URL_MAX, DYN_LEVELS, ensureVersionAtLeast } from './otf-validate.js';
 import { isPercussionTrack, pitchedTracks } from '../renderers/otf-tracks.js';
 
 const clone = (x) => JSON.parse(JSON.stringify(x));
+
+// Tab setup limits: a title or composer, a key, an instrument name, the capo (a .tef
+// holds 0 to 12, tef-import/reader.js) and the strings a track can have (writer.js).
+const TITLE_MAX = 200;
+const KEY_MAX = 20;
+const CAPO_MAX = 12;
+const MAX_STRINGS = 12;
+const INSTRUMENT_RE = /^[a-z0-9][a-z0-9-]{0,39}$/;
 
 /**
  * The technique vocabulary the corpus and the renderer actually share:
@@ -1654,6 +1662,232 @@ export class EditingFacade {
     getTabBy() {
         const t = this.otf.metadata?.tab_by;
         return t && t.name ? { ...t } : null;
+    }
+
+    // ------------------------------------------------------------------
+    // Tab setup (G20b): title, composer, key, time signature, and a track's
+    // instrument, tuning and capo. Each setter is one undo step; applyTabSetup
+    // is all of them as one. A value outside its alphabet throws RangeError (as
+    // every value setter does); a change the NOTES forbid throws an Error whose
+    // message is a sentence for the panel to show. `tuningBlocker` and
+    // `timeSignatureBlocker` return that sentence ('' = allowed) so a panel can
+    // ask first. A refusal changes nothing and leaves no history.
+    //
+    // A tuning change keeps every note's string and fret: the tab as written
+    // stays, the sound follows the new tuning.
+    // ------------------------------------------------------------------
+
+    _setMetaText(field, text, max, { blankDeletes }) {
+        const value = String(text ?? '').trim();
+        if (value.length > max) throw new RangeError(`The ${field} can be up to ${max} characters.`);
+        if (!this.otf.metadata) this.otf.metadata = {};
+        const meta = this.otf.metadata;
+        if ((meta[field] ?? '') === value) return false;
+        if (!value && blankDeletes) delete meta[field];
+        else meta[field] = value;
+        return true;
+    }
+
+    /** Set the tab's title (`metadata.title`). Undoable. */
+    setTitle(text) {
+        return this._mutate('Set title', () => this._setMetaText('title', text, TITLE_MAX, { blankDeletes: false }));
+    }
+
+    /** Set (or clear) the composer. Undoable. */
+    setComposer(text) {
+        return this._mutate('Set composer', () => this._setMetaText('composer', text, TITLE_MAX, { blankDeletes: true }));
+    }
+
+    /** Set (or clear) the key, free text such as "G" or "Am". Undoable. */
+    setKey(text) {
+        return this._mutate('Set key', () => this._setMetaText('key', text, KEY_MAX, { blankDeletes: true }));
+    }
+
+    /**
+     * Why the whole tab cannot take this time signature, or ''. Every measure
+     * the default governs must still hold its music: a note has to start in the
+     * bar and end by its barline. A measure with its own override is not
+     * judged, since nothing changes there.
+     */
+    timeSignatureBlocker(signature) {
+        const sig = String(signature ?? '').trim();
+        const match = /^([1-9][0-9]*)\/([1-9][0-9]*)$/.exec(sig);
+        if (!match) return 'A time signature looks like 4/4.';
+        const overridden = new Set((this.otf.metadata?.time_signature_changes || []).map(c => c.measure));
+        const length = Math.round(this.otf.timing.ticks_per_beat * 4 * Number(match[1]) / Number(match[2]));
+        const bad = new Set();
+        for (const measures of Object.values(this.otf.notation || {})) {
+            for (const m of measures) {
+                if (overridden.has(m.measure)) continue;
+                for (const e of m.events || []) {
+                    const end = e.tick + Math.max(0, ...(e.notes || []).map(n => Number(n.dur) || 0));
+                    if (e.tick >= length || end > length) bad.add(m.measure);
+                }
+            }
+        }
+        for (const d of this.otf.chord_diagrams || []) {
+            if (!overridden.has(d.measure) && d.tick >= length) bad.add(d.measure);
+        }
+        if (!bad.size) return '';
+        const first = Math.min(...bad);
+        return `${bad.size} ${bad.size === 1 ? 'measure has' : 'measures have'} notes that do not fit ${sig}; `
+            + `the first is measure ${first}.`;
+    }
+
+    _setTimeSignature(signature) {
+        const sig = String(signature ?? '').trim();
+        if (!/^[1-9][0-9]*\/[1-9][0-9]*$/.test(sig)) {
+            throw new RangeError(`Time signature "${sig}" does not look like 4/4`);
+        }
+        if (this.otf.metadata?.time_signature === sig) return false;
+        const blocker = this.timeSignatureBlocker(sig);
+        if (blocker) throw new Error(blocker);
+        this.otf.metadata.time_signature = sig;
+        this._invalidateTiming();
+        return true;
+    }
+
+    /**
+     * Set the default time signature of the whole tab. Changes that start at a
+     * measure (`time_signature_changes`) stay as they are.
+     * @throws {RangeError} not "n/d"
+     * @throws {Error} some notes would not fit (the message says where)
+     */
+    setTimeSignature(signature) {
+        return this._mutate('Set time signature', () => this._setTimeSignature(signature));
+    }
+
+    _tuneableTrack(trackId) {
+        const track = this.getTrack(trackId);
+        if (!track) throw new Error(`Unknown track: ${trackId}`);
+        return track;
+    }
+
+    _checkTuning(pitches) {
+        if (!Array.isArray(pitches) || pitches.length < 1 || pitches.length > MAX_STRINGS) {
+            throw new RangeError(`A tuning has 1 to ${MAX_STRINGS} strings`);
+        }
+        pitches.forEach((p, i) => {
+            if (pitchToMidi(p) === null) throw new RangeError(`String ${i + 1}: "${p}" is not a note like G3`);
+        });
+    }
+
+    /**
+     * Why this tuning cannot go on the track, or ''. A tuning with fewer strings
+     * is refused while notes are on the strings it would lose.
+     */
+    tuningBlocker(pitches, trackId = this.trackId) {
+        const track = this._tuneableTrack(trackId);
+        if (isPercussionTrack(track)) return 'A drum track has no tuning.';
+        const count = Array.isArray(pitches) ? pitches.length : 0;
+        let notes = 0, lowest = Infinity, highest = 0, firstMeasure = Infinity;
+        for (const m of this.getNotation(trackId)) {
+            for (const e of m.events || []) {
+                for (const n of e.notes || []) {
+                    if (n.s <= count) continue;
+                    notes++;
+                    lowest = Math.min(lowest, n.s);
+                    highest = Math.max(highest, n.s);
+                    firstMeasure = Math.min(firstMeasure, m.measure);
+                }
+            }
+        }
+        if (!notes) return '';
+        const where = lowest === highest ? `string ${lowest}` : `strings ${lowest} to ${highest}`;
+        return `This tuning has ${count} ${count === 1 ? 'string' : 'strings'}, but ${notes} `
+            + `${notes === 1 ? 'note is' : 'notes are'} on ${where}; the first is in measure ${firstMeasure}. `
+            + `Move or delete ${notes === 1 ? 'it' : 'them'} first.`;
+    }
+
+    _setTuning(pitches, trackId) {
+        const track = this._tuneableTrack(trackId);
+        this._checkTuning(pitches);
+        const blocker = this.tuningBlocker(pitches, trackId);
+        if (blocker) throw new Error(blocker);
+        if (track.tuning.length === pitches.length && track.tuning.every((p, i) => p === pitches[i])) return false;
+        track.tuning = pitches.slice();
+        return true;
+    }
+
+    /**
+     * Retune a track, string 1 first. Every note keeps its string and fret.
+     * @throws {RangeError} a pitch that is not a note name, or 0 or over 12 strings
+     * @throws {Error} a drum track, or a string some notes are on would go
+     */
+    setTrackTuning(pitches, trackId = this.trackId) {
+        return this._mutate('Set tuning', () => this._setTuning(pitches, trackId));
+    }
+
+    _setInstrument(instrument, trackId) {
+        const track = this._tuneableTrack(trackId);
+        const name = String(instrument ?? '').trim();
+        if (!INSTRUMENT_RE.test(name)) {
+            throw new RangeError('An instrument is lower-case letters, digits and hyphens, up to 40 characters');
+        }
+        if (track.instrument === name) return false;
+        track.instrument = name;
+        return true;
+    }
+
+    /** Set a track's instrument name (`5-string-banjo`). Strings and notes are untouched. Undoable. */
+    setTrackInstrument(instrument, trackId = this.trackId) {
+        return this._mutate('Set instrument', () => this._setInstrument(instrument, trackId));
+    }
+
+    _setCapo(capo, trackId) {
+        const track = this._tuneableTrack(trackId);
+        const n = typeof capo === 'string' && capo.trim() !== '' ? Number(capo) : capo;
+        if (!Number.isInteger(n) || n < 0 || n > CAPO_MAX) {
+            throw new RangeError(`The capo is a whole number from 0 to ${CAPO_MAX}`);
+        }
+        if ((track.capo ?? 0) === n) return false;
+        track.capo = n;
+        return true;
+    }
+
+    /** Set a track's capo fret, 0 to 12. Frets stay relative to the nut. Undoable. */
+    setTrackCapo(capo, trackId = this.trackId) {
+        return this._mutate('Set capo', () => this._setCapo(capo, trackId));
+    }
+
+    /**
+     * Score ▸ Tab setup… Apply: the fields given, as ONE undo step. Anything
+     * left out is untouched. A value that is refused throws and nothing at all
+     * changes, the fields before it included.
+     *
+     * @param {Object} setup
+     * @param {string} [setup.title]
+     * @param {string} [setup.composer]
+     * @param {string} [setup.key]
+     * @param {string} [setup.timeSignature]
+     * @param {number} [setup.tempo]
+     * @param {{instrument?: string, tuning?: string[], capo?: number}} [setup.track]
+     * @param {string} [trackId] - the track `setup.track` is for (the current one)
+     * @returns {boolean} false when nothing changed
+     */
+    applyTabSetup(setup = {}, trackId = this.trackId) {
+        return this._mutate('Tab setup', () => {
+            let changed = false;
+            const run = (r) => { changed = r || changed; };
+            if (setup.title !== undefined) run(this._setMetaText('title', setup.title, TITLE_MAX, { blankDeletes: false }));
+            if (setup.composer !== undefined) run(this._setMetaText('composer', setup.composer, TITLE_MAX, { blankDeletes: true }));
+            if (setup.key !== undefined) run(this._setMetaText('key', setup.key, KEY_MAX, { blankDeletes: true }));
+            if (setup.timeSignature !== undefined) run(this._setTimeSignature(setup.timeSignature));
+            if (setup.tempo !== undefined) {
+                const v = Number(setup.tempo);
+                if (Number.isFinite(v) && v >= 1 && this.otf.metadata.tempo !== v) {
+                    this.otf.metadata.tempo = v;
+                    changed = true;
+                }
+            }
+            const t = setup.track;
+            if (t) {
+                if (t.instrument !== undefined) run(this._setInstrument(t.instrument, trackId));
+                if (t.tuning !== undefined) run(this._setTuning(t.tuning, trackId));
+                if (t.capo !== undefined) run(this._setCapo(t.capo, trackId));
+            }
+            return changed;
+        });
     }
 
     // ------------------------------------------------------------------

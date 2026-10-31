@@ -983,6 +983,18 @@ function renderTitleHeader() {
         titleInput.addEventListener('input', () => {
             currentWork.title = titleInput.value.trim();
         });
+        // The file's title is this box's: Save as and the .tef writer read
+        // metadata.title. Written once the title is settled (blur or Enter), so
+        // typing is not a hundred undo steps; Tab setup's title comes back here.
+        titleInput.addEventListener('change', () => {
+            if (activeEditSession?.editor) activeEditSession.editor.setTitle(currentWork.title);
+            else if (tabAuthoring?.otf?.metadata) tabAuthoring.otf.metadata.title = currentWork.title;   // editor still loading
+        });
+        const followTitle = (e) => {
+            if (!header.isConnected) { document.removeEventListener('otf-editor:title', followTitle); return; }
+            titleInput.value = currentWork.title = e.detail.title;
+        };
+        document.addEventListener('otf-editor:title', followTitle);
         artistInput.addEventListener('input', () => {
             currentWork.artist = artistInput.value.trim();
         });
