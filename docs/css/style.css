@@ -10142,7 +10142,11 @@ body.chrome-hidden .app-bottomband:has(#dock-display-btn) {
     font-size: var(--font-sm);
 }
 .dock-bars-label {
-    min-width: 7.5ch;
+    /* one width for "Auto (4)" and "8 (auto +7)", so − and + never move
+       under a finger (a growing label once put "−" where the reset is) */
+    width: 11.5ch;
+    text-align: center;
+    white-space: nowrap;
     padding: 0.3rem 0.5rem;
     border: none;
     border-radius: 999px;

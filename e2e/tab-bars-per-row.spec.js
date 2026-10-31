@@ -48,6 +48,37 @@ test.describe('bars per row on a tab', () => {
         expect(await page.evaluate((k) => localStorage.getItem(k), KEY)).toBe('0');
     });
 
+    // Mike, 2026-10-31: "-" toggled between Auto and -1. The label grew from
+    // "Auto (3)" to "2 (auto −1)", pushed "-" ~19px left, and the next tap
+    // landed on the label, which resets. The buttons must not move.
+    test('the buttons stay put as the label changes, so - keeps stepping down', async ({ page }) => {
+        await page.setViewportSize({ width: 1440, height: 900 });
+        await gotoTab(page);
+        const sheet = await openDock(page, 'display');
+        const minus = sheet.locator('#tab-bars [data-bars="-1"]');
+        const before = await minus.boundingBox();
+        const auto = await readLabel(sheet);
+        for (let i = 1; i <= 2; i++) {
+            // tap where "-" was at the start, as a finger would
+            await page.mouse.click(before.x + before.width / 2, before.y + before.height / 2);
+            await expect(sheet.locator('#tab-bars-auto')).toHaveText(`${auto.count - i} (auto −${i})`);
+            expect(await minus.boundingBox()).toEqual(before);
+        }
+    });
+
+    // Mike, 2026-10-31: "the bars should expand to fill the width of the page,
+    // rather than just stopping" (fewer bars than auto stopped at the 288px cap).
+    test('fewer bars than fit still fill the row', async ({ page }) => {
+        await page.setViewportSize({ width: 1440, height: 900 });
+        await gotoTab(page);
+        const sheet = await openDock(page, 'display');
+        const fullRow = await page.evaluate(() => document.querySelector('.tablature-container .stave-row svg').getBoundingClientRect().width);
+        for (let i = 0; i < 3; i++) await sheet.locator('#tab-bars [data-bars="-1"]').click();
+        await closeSheet(page);
+        const row = await page.evaluate(() => document.querySelector('.tablature-container .stave-row svg').getBoundingClientRect().width);
+        expect(row).toBeGreaterThanOrEqual(fullRow - 2);
+    });
+
     test('is remembered across a reload', async ({ page }) => {
         await gotoTab(page);
         let sheet = await openDock(page, 'display');

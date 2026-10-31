@@ -531,8 +531,10 @@ export class TabRenderer {
         const count = Math.max(1, Math.min(most, auto + (opt.measuresPerRowOffset || 0)));
         this._rowFit = { auto, count, offset: count - auto, lo: 1 - auto, hi: Math.max(0, most - auto) };
         this._computedMeasuresPerRow = count;
-        this._computedMeasureWidth = count === auto ? fit.measureWidth
-            : Math.max(opt.hardMinMeasureWidth, Math.min(opt.maxMeasureWidth, availableWidth / count));
+        // The reader's rows fill the width: fewer bars than fit stretch rather
+        // than stopping at maxMeasureWidth (Mike, 2026-10-31). The pinned path
+        // above (the tab editor) keeps its caps.
+        this._computedMeasureWidth = Math.max(opt.hardMinMeasureWidth, availableWidth / count);
         this._applyMeasureWidthFloor(availableWidth);
     }
 
