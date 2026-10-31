@@ -53,7 +53,9 @@ problems in the data (Mike, 2026-10-28; `.claude/rules/tests.md`).
   band's capo key and the list export use it; the song page's controls are
   the dock below). `setChromeAutoHide(true)` hides BOTH bands while scrolling
   down (`body.chrome-hidden`; CSS slides `#app-topbar` and the song page's
-  bottom band, not the lyrics editor's). The shell owns no state, so
+  bottom band, not the lyrics editor's, and only when the page's dock has
+  `#dock-display-btn`, the switch that turns it off: a tab or ABC page never
+  hides). The shell owns no state, so
   work-view.js and main.js pass the reader's choice (`autoHideControls`,
   Display ▸ Auto-hide controls, OFF by default); there is no focus mode.
   `--topbar-h` is published next to `--bottomband-h`; the chart column sticks

@@ -160,7 +160,8 @@ exist only once it is open, so use `openDisplay(page)` from
 context). `.pill-btn` opens a `.pill-popover`; one is open at a time, and the
 dock sheets are modal (close with `closeSheet`). Both bands auto-hide while
 scrolling a song only when Display ▸ Auto-hide controls is on
-(`body.chrome-hidden`; off by default). To enter the tab editor press Edit with
+(`body.chrome-hidden`; off by default), and only on a page with
+`#dock-display-btn` (never a tab or ABC page). To enter the tab editor press Edit with
 `pressTabEdit(page)` (`helpers/tab-edit.js`); the band has no Edit of its own.
 
 Tab-editor selectors: `.editor-renderer .stave-row`, `.editor-canvas-container`,

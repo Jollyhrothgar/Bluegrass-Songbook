@@ -10263,20 +10263,23 @@ body.has-bottomband .container {
 
 /* Auto-hidden chrome (Display ▸ Auto-hide controls, off by default): both
    bands slide off to a 4px peek strip. Scroll-up, hovering the top band, or
-   tapping a strip brings them back (see shell.js). */
-body.chrome-hidden .app-topbar {
+   tapping a strip brings them back (see shell.js).
+   Only on a page whose dock has Display (#dock-display-btn), the one place
+   the reader can turn it off again: a tab or ABC notation page has none, so
+   its bands stay put whatever the setting (Mike, 2026-10-30). The lyrics
+   editor's toolbar never hides. */
+body.chrome-hidden:has(#dock-display-btn) .app-topbar {
     transform: translateY(calc(-100% + 4px));
 }
 
-body.chrome-hidden .app-topbar:hover,
-body.chrome-hidden .app-topbar:focus-within {
+body.chrome-hidden:has(#dock-display-btn) .app-topbar:hover,
+body.chrome-hidden:has(#dock-display-btn) .app-topbar:focus-within {
     transform: none;
 }
 
 .app-bottomband { transition: transform 0.2s ease; }
 
-/* the song page's bands (the dock, the tab player); the lyrics editor's toolbar never hides */
-body.chrome-hidden .app-bottomband:has(.reading-dock, .tab-controls) {
+body.chrome-hidden .app-bottomband:has(#dock-display-btn) {
     transform: translateY(calc(100% - 4px));
 }
 
