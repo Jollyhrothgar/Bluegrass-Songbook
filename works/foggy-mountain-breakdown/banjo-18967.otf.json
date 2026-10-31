@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Foggy Mountain Breakdown (Variations for Contest)",
     "time_signature": "4/4",
@@ -1440,7 +1440,7 @@
     ]
   },
   "annotations": [
-    {"measure": 114, "tick": 0, "text": "N.C."}
+    {"measure": 114, "tick": 0, "text": "N.C.", "track": "banjo"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 117}

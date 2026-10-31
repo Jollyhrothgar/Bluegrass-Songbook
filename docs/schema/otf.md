@@ -23,6 +23,7 @@ Two validators enforce it, and a shared set of fixture files
 | `1.0` | 2026-10-28 (G15a) | the first schema |
 | `1.1` | 2026-10-29 (G15c) | optional `metadata.tab_by` (who wrote the tab), the first minor bump |
 | `1.2` | 2026-10-29 (G15d) | optional dynamics (`tracks[].dyn`, `note.dyn`), the `bend` effect, `measure_marks` (repeat signs), `chords` and `chord_diagrams` |
+| `1.3` | 2026-10-31 (G21a) | optional `annotations[].track`, `kind` and `place`: which track a text belongs to, whether it is a chord, above or below the staff |
 
 
 - Adding an **optional** field bumps the minor version.
@@ -30,10 +31,10 @@ Two validators enforce it, and a shared set of fixture files
   field) bumps the major version.
 - Files of any earlier `1.x` stay valid under the current schema.
 - **Writers stamp the current version; readers accept any `1.x`** and reject
-  any other major (`validateOTF` accepts `"1.2"` and rejects `"2.0"`).
+  any other major (`validateOTF` accepts `"1.3"` and rejects `"2.0"`).
 - A writer that sets a field newer than the document's version raises the
-  version with `ensureVersionAtLeast(doc, '1.2')` (JS, in `otf-validate.js`) or
-  `ensure_version_at_least(doc, '1.2')` (Python, `otf_format.py`). It only ever
+  version with `ensureVersionAtLeast(doc, '1.3')` (JS, in `otf-validate.js`) or
+  `ensure_version_at_least(doc, '1.3')` (Python, `otf_format.py`). It only ever
   raises; a file that doesn't use the field keeps its version.
 
 ## Key order
@@ -41,7 +42,8 @@ Two validators enforce it, and a shared set of fixture files
 The order of properties in the schema is the canonical key order used when a
 document is written out (G15b). Top level: `otf_version, metadata, timing,
 tracks, notation`, then `annotations, reading_list, measure_marks, chords,
-chord_diagrams, x_source`. Track: `id instrument tuning capo role dyn percussion
+chord_diagrams, x_source`. Annotation: `measure tick text track kind place`
+(the 1.3 fields come last, so a file without them is byte-for-byte what it was). Track: `id instrument tuning capo role dyn percussion
 lines`. Note: `s f dur tie tech fx grace finger lh dyn`.
 
 Every object is closed (unknown keys are errors) except `x_source`, which is
@@ -59,7 +61,7 @@ free-form provenance. Keys starting with `_` are runtime view caches
 | `timing.ticks_per_beat` | ticks in a quarter note; 480 in every file so far |
 | `tracks` | the instruments, see below |
 | `notation` | `{trackId: [measure, ...]}`: every key names a track; a track may have no key (an empty track) |
-| `annotations` | `[{measure, tick, text}]` placed text: section banners, chord names, remarks |
+| `annotations` | `[{measure, tick, text, track?, kind?, place?}]` placed text: section banners, chord names, remarks; see below |
 | `reading_list` | `[{from_measure, to_measure, name?}]` playback order, with repeats unrolled |
 | `measure_marks` | (1.2) `[{measure, repeat_start?, repeat_end?, ending?, jump?, end_bar?, raw}]` repeat signs, see below |
 | `chords` | (1.2) `[{name, frets?, fingers?, first_fret?}]` the chord-diagram table, see below |
@@ -149,6 +151,45 @@ id, `tick` lies inside the measure, `dx` / `dy` (signed bytes, optional) nudge i
 "chord_diagrams": [{"measure": 1, "tick": 0, "track": "guitar", "chord": 0}]
 ```
 
+**`annotations`** (1.3 adds three optional fields). A text belongs to a track, the
+way a note does:
+
+| Field | Values | Meaning |
+|---|---|---|
+| `track` | a track `id` | the staff the text belongs to; the same kind of id as `chord_diagrams[].track` (rule `annotation_track`). Absent: a text from before 1.3, or from a file that says nothing about tracks; the renderer draws it on the first pitched track only |
+| `kind` | `text`, `chord` | `chord` means `text` is a chord name as written, one the shared parser accepts (`parseTabChord` / `parse_tab_chord`); rule `annotation_chord`. Absent = `text` |
+| `place` | `above`, `below` | which side of the staff the text sits on. Absent = `above` |
+
+A `.tef` records which track's string row each text sits on and a placement
+value (V3 text record byte 11; V2 byte 4 bits 5-6: 0 above, 1 below the staff, 2
+above, 3 on the staff near its string). Both TEF importers fill `track` from the
+row (the same mapping chord diagrams use) and set `place: "below"` for placement
+1; 0, 2 and 3 draw above, so `place` is absent. Once the notation is final, both
+importers then give each text its role:
+
+- **Typed fingering (G21b).** A text that is exactly one of t, i, m, r, p (any
+  case, trimmed), has a `track`, and sits at a measure and tick where that
+  track has a note becomes that note's `finger` (upper case) and is removed from
+  `annotations`. With several notes at the tick it goes on the note on the
+  text's own string row; with none on the row it stays text. A note that
+  already has a `finger` keeps it and the letter stays text. A letter with no
+  matching note stays text, keeping its `track` and `place`. Nothing is dropped.
+- **Chords (G21d).** Every text left that the chord parser accepts gets
+  `kind: "chord"`. Other text has no `kind`.
+
+The `.tef` writer puts a text with a `track` on that track's first free string row
+(an unedited original keeps its row and bytes), writes placement 1 for `below`,
+and writes a `chord` as plain text (a `.tef` has only text cells; the importer
+derives `kind` again from the text). A converted letter is written as TablEdit's
+pick-hand fingering on the note, not as text. The editor stamps the
+current track on every text it adds, renames a track's texts with the track and
+deletes them with it, as for `chord_diagrams`, and has an Above / Below choice.
+
+```jsonc
+{"measure": 2, "tick": 0, "text": "G", "track": "banjo", "kind": "chord"}
+{"measure": 2, "tick": 480, "text": "etc.", "track": "guitar", "place": "below"}
+```
+
 **Measure**: `{measure, events}`; **event**: `{tick, notes}` where `tick` is the
 offset from the start of the measure. Measures need not start at 1 and may be
 partial (a pickup measure just has its events late in the bar).
@@ -194,6 +235,8 @@ Messages carry the rule id in brackets.
 | `chord_fingers` | (1.2) `fingers` needs `frets` and has the same length |
 | `mark_order` | (1.2) `measure_marks` measures are strictly ascending |
 | `mark_raw` | (1.2) a mark's decoded fields equal `decodeMarkRaw(raw)` |
+| `annotation_track` | (1.3) `annotations[].track` names a track |
+| `annotation_chord` | (1.3) an annotation with `kind: "chord"` has a `text` the shared chord parser accepts |
 
 One rule is a **warning**, not an error: `reading_list_overrun` (a
 `reading_list` range that runs past the last written measure, #263).
@@ -204,7 +247,7 @@ Python returns warnings from `otf_schema.check`; JS returns them as
 
 ```json
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Old Joe Clark", "time_signature": "4/4", "tempo": 120, "key": "A",
     "tab_by": {"name": "Jane Picker", "url": "https://www.banjohangout.org/my/janepicker"}
@@ -236,7 +279,7 @@ Python returns warnings from `otf_schema.check`; JS returns them as
       }
     ]
   },
-  "annotations": [{"measure": 1, "tick": 0, "text": "A part"}],
+  "annotations": [{"measure": 1, "tick": 0, "text": "A part", "track": "banjo"}],
   "reading_list": [{"from_measure": 1, "to_measure": 2, "name": "A part"}]
 }
 ```

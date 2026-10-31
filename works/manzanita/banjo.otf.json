@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Manzanita",
     "time_signature": "2/4",
@@ -435,10 +435,10 @@
     ]
   },
   "annotations": [
-    {"measure": 1, "tick": 0, "text": "PART A -- LEAD"},
-    {"measure": 1, "tick": 0, "text": "PART A -- BACKUP"},
-    {"measure": 16, "tick": 0, "text": "PART B -- LEAD"},
-    {"measure": 16, "tick": 0, "text": "PART B -- BACKUP"}
+    {"measure": 1, "tick": 0, "text": "PART A -- LEAD", "track": "banjo"},
+    {"measure": 1, "tick": 0, "text": "PART A -- BACKUP", "track": "banjo-2"},
+    {"measure": 16, "tick": 0, "text": "PART B -- LEAD", "track": "banjo"},
+    {"measure": 16, "tick": 0, "text": "PART B -- BACKUP", "track": "banjo-2"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 15},

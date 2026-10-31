@@ -12,16 +12,22 @@
 // their id in brackets, the same ids as the Python module:
 //   string_count notation_keys track_ids measure_order tick_order tick_range
 //   duplicate_string chord_index chord_track chord_tick chord_fingers mark_order
-//   mark_raw
+//   mark_raw annotation_track annotation_chord
 // plus the warning-only reading_list_overrun (#263).
 //
 // Cross-field rules run only on a document whose shape is sound.
 
+import { parseTabChord } from '../tab-chord.js';
+
 /**
  * The version every writer stamps (1.1 added metadata.tab_by; 1.2 added
- * dynamics, the bend effect, measure_marks, chords and chord_diagrams).
+ * dynamics, the bend effect, measure_marks, chords and chord_diagrams; 1.3
+ * added annotations[].track, kind and place).
  */
-export const OTF_VERSION = '1.2';
+export const OTF_VERSION = '1.3';
+
+export const OTF_ANNOTATION_KINDS = ['text', 'chord'];
+export const OTF_ANNOTATION_PLACES = ['above', 'below'];
 
 /** Dynamic levels, loudest first (TablEdit codes 0-6); the schema's enum. */
 export const DYN_LEVELS = ['fff', 'ff', 'f', 'mf', 'mp', 'p', 'pp'];
@@ -303,10 +309,19 @@ function shapeErrors(otf) {
         else otf.annotations.forEach((a, i) => {
             const p = `annotations/${i}`;
             if (!isObj(a)) { errors.push(`[schema] ${p}: not an object`); return; }
-            closed(a, ['measure', 'tick', 'text'], p, errors);
+            closed(a, ['measure', 'tick', 'text', 'track', 'kind', 'place'], p, errors);
             if (!isInt(a.measure, 1)) errors.push(`[schema] ${p}/measure: must be an integer >= 1`);
             if (!isInt(a.tick, 0)) errors.push(`[schema] ${p}/tick: must be an integer >= 0`);
             if (typeof a.text !== 'string') errors.push(`[schema] ${p}/text: must be a string`);
+            if ('track' in a && (typeof a.track !== 'string' || !a.track)) {
+                errors.push(`[schema] ${p}/track: must be a non-empty string`);
+            }
+            if ('kind' in a && !OTF_ANNOTATION_KINDS.includes(a.kind)) {
+                errors.push(`[schema] ${p}/kind: must be one of ${OTF_ANNOTATION_KINDS.join(', ')}`);
+            }
+            if ('place' in a && !OTF_ANNOTATION_PLACES.includes(a.place)) {
+                errors.push(`[schema] ${p}/place: must be one of ${OTF_ANNOTATION_PLACES.join(', ')}`);
+            }
         });
     }
 
@@ -362,6 +377,17 @@ function chordRules(otf, ids, errors) {
         if (d.tick >= length) {
             errors.push(`[chord_tick] chord_diagrams/${i} m${d.measure}: tick ${d.tick} `
                 + `is outside the ${length}-tick measure`);
+        }
+    });
+}
+
+function annotationRules(otf, ids, errors) {
+    (otf.annotations || []).forEach((a, i) => {
+        if ('track' in a && !ids.includes(a.track)) {
+            errors.push(`[annotation_track] annotations/${i}: no track ${JSON.stringify(a.track)}`);
+        }
+        if (a.kind === 'chord' && !parseTabChord(a.text)) {
+            errors.push(`[annotation_chord] annotations/${i}: ${JSON.stringify(a.text)} is not a chord`);
         }
     });
 }
@@ -437,6 +463,7 @@ function crossField(otf) {
     }
 
     chordRules(otf, ids, errors);
+    annotationRules(otf, ids, errors);
     markRules(otf, errors);
 
     for (const r of otf.reading_list || []) {

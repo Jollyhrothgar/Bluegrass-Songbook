@@ -15,7 +15,7 @@ export function canonical(otf) {
     const c = JSON.parse(JSON.stringify(otf));
     delete c.x_source;
     c.metadata.title = c.metadata.title.replace(/[\x00-\x1f\x7f]+/g, ' ').trim();
-    if (c.annotations) c.annotations.sort((a, b) => a.measure - b.measure || a.tick - b.tick || byText(a.text, b.text));
+    if (c.annotations) c.annotations.sort((a, b) => a.measure - b.measure || a.tick - b.tick || byText(a.text, b.text) || byText(a.track ?? '', b.track ?? ''));
     if (c.chord_diagrams) c.chord_diagrams.sort((a, b) => a.measure - b.measure || a.tick - b.tick || a.chord - b.chord);
     for (const ms of Object.values(c.notation)) for (const m of ms) for (const e of m.events) e.notes.sort((a, b) => a.s - b.s);
     return c;

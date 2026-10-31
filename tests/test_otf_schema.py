@@ -35,7 +35,7 @@ SCHEMA_VALIDATOR = Draft202012Validator(SCHEMA)
 
 CROSS_RULES = {'string_count', 'notation_keys', 'track_ids', 'measure_order',
                'tick_order', 'tick_range', 'duplicate_string', 'chord_index', 'chord_track',
-               'chord_tick', 'chord_fingers', 'mark_order', 'mark_raw'}
+               'chord_tick', 'chord_fingers', 'mark_order', 'mark_raw', 'annotation_track', 'annotation_chord'}
 
 
 def load(path):
@@ -77,6 +77,8 @@ def test_the_canonical_key_order():
         's', 'f', 'dur', 'tie', 'tech', 'fx', 'grace', 'finger', 'lh', 'dyn']
     assert list(SCHEMA['properties']['tracks']['items']['properties']) == [
         'id', 'instrument', 'tuning', 'capo', 'role', 'dyn', 'percussion', 'lines']
+    assert list(SCHEMA['properties']['annotations']['items']['properties']) == [
+        'measure', 'tick', 'text', 'track', 'kind', 'place']
     assert list(SCHEMA['properties']['measure_marks']['items']['properties']) == [
         'measure', 'repeat_start', 'repeat_end', 'ending', 'jump', 'end_bar', 'raw']
     assert list(SCHEMA['properties']['chords']['items']['properties']) == [
@@ -176,6 +178,13 @@ def test_bend_sits_just_before_bend_release():
     assert fx[fx.index('bend-release') - 1] == 'bend'
 
 
+def test_annotation_enums_equal_the_schema():
+    props = SCHEMA['properties']['annotations']['items']['properties']
+    assert props['kind']['enum'] == ['text', 'chord']
+    assert props['place']['enum'] == ['above', 'below']
+    assert 'track' not in SCHEMA['properties']['annotations']['items']['required']
+
+
 def test_marks_enums_equal_the_schema():
     props = SCHEMA['properties']['measure_marks']['items']['properties']
     assert props['jump']['enum'] == ['da-signo', 'signo', 'al-coda', 'coda']
@@ -211,6 +220,7 @@ def test_ensure_version_at_least():
     assert ensure(doc, '1.1') is True and doc['otf_version'] == '1.1'
     assert ensure(doc, '1.1') is False and ensure(doc, '1.0') is False
     assert ensure(doc, '1.2') is True and doc['otf_version'] == '1.2'
+    assert ensure(doc, '1.3') is True and doc['otf_version'] == '1.3'
     assert ensure({'otf_version': '1.10'}, '1.2') is False        # numeric, not text
     odd = {'otf_version': '2.0'}
     assert ensure(odd, '1.2') is False and odd['otf_version'] == '2.0'
@@ -219,8 +229,8 @@ def test_ensure_version_at_least():
 
 def test_writers_stamp_the_current_version():
     from tef_parser.otf import OTFDocument
-    assert otf_schema.OTF_VERSION == '1.2'
-    assert OTFDocument().to_dict()['otf_version'] == '1.2'
+    assert otf_schema.OTF_VERSION == '1.3'
+    assert OTFDocument().to_dict()['otf_version'] == '1.3'
 
 
 # ------------------------------------------------------------------ corpus

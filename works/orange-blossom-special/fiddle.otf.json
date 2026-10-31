@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Orange Blossom Special",
     "time_signature": "4/4",
@@ -493,8 +493,8 @@
     ]
   },
   "annotations": [
-    {"measure": 28, "tick": 0, "text": "X"},
-    {"measure": 40, "tick": 0, "text": "X"}
+    {"measure": 28, "tick": 0, "text": "X", "track": "fiddle"},
+    {"measure": 40, "tick": 0, "text": "X", "track": "fiddle"}
   ],
   "measure_marks": [
     {"measure": 40, "raw": 7}

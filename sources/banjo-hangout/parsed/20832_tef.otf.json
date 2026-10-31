@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Shuckin' the Corn - Low Break",
     "time_signature": "4/4",
@@ -1143,19 +1143,19 @@
     ]
   },
   "annotations": [
-    {"measure": 2, "tick": 0, "text": "G"},
-    {"measure": 6, "tick": 0, "text": "C7"},
-    {"measure": 9, "tick": 0, "text": "G"},
-    {"measure": 10, "tick": 0, "text": "D"},
-    {"measure": 12, "tick": 0, "text": "G"},
-    {"measure": 19, "tick": 0, "text": "C7"},
-    {"measure": 21, "tick": 0, "text": "G"},
-    {"measure": 23, "tick": 0, "text": "D"},
-    {"measure": 25, "tick": 0, "text": "G"},
-    {"measure": 31, "tick": 0, "text": "C7"},
-    {"measure": 33, "tick": 0, "text": "G"},
-    {"measure": 35, "tick": 0, "text": "D"},
-    {"measure": 37, "tick": 0, "text": "G"}
+    {"measure": 2, "tick": 0, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 6, "tick": 0, "text": "C7", "track": "banjo", "kind": "chord"},
+    {"measure": 9, "tick": 0, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 10, "tick": 0, "text": "D", "track": "banjo", "kind": "chord"},
+    {"measure": 12, "tick": 0, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 19, "tick": 0, "text": "C7", "track": "banjo", "kind": "chord"},
+    {"measure": 21, "tick": 0, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 23, "tick": 0, "text": "D", "track": "banjo", "kind": "chord"},
+    {"measure": 25, "tick": 0, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 31, "tick": 0, "text": "C7", "track": "banjo", "kind": "chord"},
+    {"measure": 33, "tick": 0, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 35, "tick": 0, "text": "D", "track": "banjo", "kind": "chord"},
+    {"measure": 37, "tick": 0, "text": "G", "track": "banjo", "kind": "chord"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 13},

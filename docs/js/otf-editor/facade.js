@@ -25,6 +25,18 @@ import { isPercussionTrack, pitchedTracks } from '../renderers/otf-tracks.js';
 
 const clone = (x) => JSON.parse(JSON.stringify(x));
 
+/**
+ * An annotation in the schema's key order, leaving out what is only the
+ * default: no `kind` for text, no `place` for above, no `track` when unset.
+ */
+function annotationRecord({ measure, tick, text, track, kind, place }) {
+    const out = { measure, tick, text };
+    if (track !== undefined) out.track = track;
+    if (kind === 'chord') out.kind = kind;
+    if (place === 'below') out.place = place;
+    return out;
+}
+
 // Tab setup limits: a title or composer, a key, an instrument name, the capo (a .tef
 // holds 0 to 12, tef-import/reader.js) and the strings a track can have (writer.js).
 const TITLE_MAX = 200;
@@ -436,6 +448,9 @@ export class EditingFacade {
             for (const d of this.otf.chord_diagrams || []) {
                 if (d.track === oldId) d.track = clean;
             }
+            for (const a of this.otf.annotations || []) {
+                if (a.track === oldId) a.track = clean;
+            }
             return true;
         });
         if (result !== false && this.protectedTrackId === oldId) this.protectedTrackId = clean;
@@ -500,7 +515,7 @@ export class EditingFacade {
 
     /**
      * Delete a track: its entry in `tracks[]`, its `notation` key AND its
-     * chord diagrams, as one undo step (undo restores them all, in place,
+     * chord diagrams and placed texts, as one undo step (undo restores them all, in place,
      * from the snapshot). When it was the track being edited, the first
      * remaining pitched track takes over.
      *
@@ -519,6 +534,12 @@ export class EditingFacade {
                 const kept = this.otf.chord_diagrams.filter(d => d.track !== trackId);
                 if (kept.length) this.otf.chord_diagrams = kept;
                 else delete this.otf.chord_diagrams;
+            }
+            // so do its placed texts (a track-less text belongs to no track and stays)
+            if (Array.isArray(this.otf.annotations)) {
+                const kept = this.otf.annotations.filter(a => a.track !== trackId);
+                if (kept.length) this.otf.annotations = kept;
+                else delete this.otf.annotations;
             }
             return true;
         });
@@ -2170,11 +2191,13 @@ export class EditingFacade {
     // ------------------------------------------------------------------
     // Placed free-text annotations
     //
-    // `otf.annotations` is a TOP-LEVEL array of {measure, tick, text}
-    // anchored to a spot in the score, not to a track or a note: section
+    // `otf.annotations` is a TOP-LEVEL array of {measure, tick, text, track?,
+    // kind?, place?} anchored to a spot in the score, not to a note: section
     // banners ("PART A"), playing notes ("Long Choke") and chord names
     // ("Bb6+9") all live here, and the renderer x-positions each one by
-    // its tick within its written measure.
+    // its tick within its written measure. Since OTF 1.3 a text belongs to
+    // a track (`track`, set for every text the editor adds; absent on a text
+    // from an older file) and sits above its staff unless `place` is "below".
     //
     // Two annotations may legitimately share one (measure, tick) —
     // Welcome to New York m14 carries both "PART B" and "F" at tick 0 —
@@ -2192,15 +2215,18 @@ export class EditingFacade {
      * Index of the annotation at (or nearest to) a position, searching
      * WITHIN the given measure only.
      * @param {Object} pos - {measure, tick}
-     * @param {Object} [opts] - {maxTicks} how far from `tick` still counts
+     * @param {Object} [opts] - {maxTicks} how far from `tick` still counts;
+     *   {trackId} only that track's texts and track-less ones qualify
+     *   (never another track's)
      * @returns {number} index, or -1 when nothing qualifies
      */
-    findAnnotationIndex({ measure, tick = 0 }, { maxTicks = null } = {}) {
+    findAnnotationIndex({ measure, tick = 0 }, { maxTicks = null, trackId = null } = {}) {
         const anns = this.annotations();
         let best = -1;
         let bestDist = Infinity;
         for (let i = 0; i < anns.length; i++) {
             if (anns[i].measure !== measure) continue;
+            if (trackId && anns[i].track && anns[i].track !== trackId) continue;
             const dist = Math.abs((anns[i].tick || 0) - tick);
             if (dist < bestDist) { bestDist = dist; best = i; }
         }
@@ -2214,27 +2240,66 @@ export class EditingFacade {
      * The entry is spliced in at its score-order position — before the
      * first entry that sorts after it — which never reorders what is
      * already there.
+     * `track` (a track id) says whose text it is; `place` is "below" or
+     * omitted/"above"; `kind` is "chord" or omitted/"text". Whatever is set
+     * lifts the document to OTF 1.3.
      * @returns {boolean} false when nothing was added
      */
-    addAnnotation({ measure, tick = 0, text }) {
+    addAnnotation({ measure, tick = 0, text, track, kind, place }) {
         const clean = String(text ?? '').trim();
         if (!clean) return false;
         if (!Number.isInteger(measure) || measure < 1) return false;
         if (!Number.isInteger(tick) || tick < 0) return false;
+        if (track !== undefined && !this.getTrack(track)) throw new Error(`Unknown track: ${track}`);
         return this._mutate('Add text', () => {
-            if (!Array.isArray(this.otf.annotations)) this.otf.annotations = [];
-            const anns = this.otf.annotations;
-            let at = anns.length;
-            for (let i = 0; i < anns.length; i++) {
-                const a = anns[i];
-                if (a.measure > measure
-                    || (a.measure === measure && (a.tick || 0) > tick)) {
-                    at = i;
-                    break;
-                }
-            }
-            anns.splice(at, 0, { measure, tick, text: clean });
+            this._spliceAnnotation({ measure, tick, text: clean, track, kind, place });
             return true;
+        });
+    }
+
+    /** Insert an annotation in score order without touching the others' order; lifts the version to 1.3 when it needs it. */
+    _spliceAnnotation(fields) {
+        if (!Array.isArray(this.otf.annotations)) this.otf.annotations = [];
+        const anns = this.otf.annotations;
+        let at = anns.length;
+        for (let i = 0; i < anns.length; i++) {
+            const a = anns[i];
+            if (a.measure > fields.measure
+                || (a.measure === fields.measure && (a.tick || 0) > fields.tick)) {
+                at = i;
+                break;
+            }
+        }
+        anns.splice(at, 0, annotationRecord(fields));
+        if (fields.track !== undefined || fields.kind === 'chord' || fields.place === 'below') {
+            ensureVersionAtLeast(this.otf, '1.3');
+        }
+    }
+
+    /**
+     * Retext an annotation and/or move it above or below its staff, as one
+     * undo step. Empty text deletes it (as `setAnnotationText` does).
+     * `place` "above" is stored as no `place`. Leave a field out to keep it.
+     * @returns {boolean} false when nothing changed
+     */
+    editAnnotation(index, { text, place } = {}) {
+        const anns = this.annotations();
+        if (!(index >= 0 && index < anns.length)) return false;
+        const clean = text === undefined ? anns[index].text : String(text ?? '').trim();
+        if (!clean) return this.deleteAnnotation(index);
+        return this._mutate('Edit text', () => {
+            const a = this.otf.annotations[index];
+            let changed = false;
+            if (a.text !== clean) { a.text = clean; changed = true; }
+            if (place !== undefined && (a.place === 'below') !== (place === 'below')) {
+                if (place === 'below') {
+                    a.place = 'below';
+                    ensureVersionAtLeast(this.otf, '1.3');
+                } else delete a.place;
+                this.otf.annotations[index] = annotationRecord(a);       // keep the schema's key order
+                changed = true;
+            }
+            return changed;
         });
     }
 
@@ -2376,7 +2441,7 @@ export class EditingFacade {
      */
     paste(atAbs, payload = this.clipboard, { trackId = this.trackId,
         autoDuration = false, pins = null, autoEntered = null } = {}) {
-        if (!payload || !payload.data || payload.data.length === 0) return false;
+        if (!payload || !payload.data || (payload.data.length === 0 && !payload.annotations?.length)) return false;
         const count = this.stringCount(trackId);
         return this._mutate('Paste', () => {
             let pasted = false;
@@ -2401,6 +2466,13 @@ export class EditingFacade {
                 for (const measure of touched) {
                     this._recomputeAuto(measure, trackId, { pins, only: autoEntered });
                 }
+            }
+            // Texts a payload carries (none today: a selection holds notes only) land on the
+            // target track, however far they were copied.
+            for (const item of payload.annotations || []) {
+                const { measure, tick } = this.locate(atAbs + item.relativeTick);
+                this._spliceAnnotation({ measure, tick, text: item.text, track: trackId, kind: item.kind, place: item.place });
+                pasted = true;
             }
             return pasted;
         });

@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Big Mon",
     "time_signature": "4/4",
@@ -236,23 +236,23 @@
     ]
   },
   "annotations": [
-    {"measure": 1, "tick": 0, "text": "A"},
-    {"measure": 2, "tick": 0, "text": "G"},
-    {"measure": 3, "tick": 0, "text": "A"},
-    {"measure": 4, "tick": 0, "text": "E"},
-    {"measure": 4, "tick": 960, "text": "A"},
-    {"measure": 5, "tick": 0, "text": "A"},
-    {"measure": 6, "tick": 0, "text": "G"},
-    {"measure": 7, "tick": 0, "text": "A"},
-    {"measure": 8, "tick": 0, "text": "E"},
-    {"measure": 8, "tick": 960, "text": "A"},
-    {"measure": 9, "tick": 0, "text": "A"},
-    {"measure": 10, "tick": 0, "text": "A"},
-    {"measure": 12, "tick": 0, "text": "A"},
-    {"measure": 12, "tick": 960, "text": "E"},
-    {"measure": 13, "tick": 0, "text": "A"},
-    {"measure": 16, "tick": 0, "text": "E"},
-    {"measure": 16, "tick": 960, "text": "A"}
+    {"measure": 1, "tick": 0, "text": "A", "track": "banjo", "kind": "chord"},
+    {"measure": 2, "tick": 0, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 3, "tick": 0, "text": "A", "track": "banjo", "kind": "chord"},
+    {"measure": 4, "tick": 0, "text": "E", "track": "banjo", "kind": "chord"},
+    {"measure": 4, "tick": 960, "text": "A", "track": "banjo", "kind": "chord"},
+    {"measure": 5, "tick": 0, "text": "A", "track": "banjo", "kind": "chord"},
+    {"measure": 6, "tick": 0, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 7, "tick": 0, "text": "A", "track": "banjo", "kind": "chord"},
+    {"measure": 8, "tick": 0, "text": "E", "track": "banjo", "kind": "chord"},
+    {"measure": 8, "tick": 960, "text": "A", "track": "banjo", "kind": "chord"},
+    {"measure": 9, "tick": 0, "text": "A", "track": "banjo", "kind": "chord"},
+    {"measure": 10, "tick": 0, "text": "A", "track": "banjo", "kind": "chord"},
+    {"measure": 12, "tick": 0, "text": "A", "track": "banjo", "kind": "chord"},
+    {"measure": 12, "tick": 960, "text": "E", "track": "banjo", "kind": "chord"},
+    {"measure": 13, "tick": 0, "text": "A", "track": "banjo", "kind": "chord"},
+    {"measure": 16, "tick": 0, "text": "E", "track": "banjo", "kind": "chord"},
+    {"measure": 16, "tick": 960, "text": "A", "track": "banjo", "kind": "chord"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 8},

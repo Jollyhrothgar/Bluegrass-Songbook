@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Big Mon",
     "time_signature": "4/4",
@@ -228,7 +228,7 @@
     ]
   },
   "annotations": [
-    {"measure": 1, "tick": 0, "text": "Capo 2nd Fret"}
+    {"measure": 1, "tick": 0, "text": "Capo 2nd Fret", "track": "guitar"}
   ],
   "x_source": {
     "type": "flatpicker-hangout",

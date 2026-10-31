@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Back Up and Push",
     "time_signature": "4/4",
@@ -245,20 +245,20 @@
     ]
   },
   "annotations": [
-    {"measure": 1, "tick": 0, "text": "(Intro)"},
-    {"measure": 2, "tick": 0, "text": "F"},
-    {"measure": 3, "tick": 0, "text": "C"},
-    {"measure": 4, "tick": 0, "text": "G"},
-    {"measure": 5, "tick": 0, "text": "C"},
-    {"measure": 6, "tick": 0, "text": "G"},
-    {"measure": 7, "tick": 0, "text": "C"},
-    {"measure": 8, "tick": 0, "text": "B PART"},
-    {"measure": 8, "tick": 0, "text": "F"},
-    {"measure": 9, "tick": 0, "text": "C"},
-    {"measure": 10, "tick": 0, "text": "G"},
-    {"measure": 11, "tick": 0, "text": "C"},
-    {"measure": 12, "tick": 0, "text": "Back to beginning . . ."},
-    {"measure": 12, "tick": 0, "text": "C"}
+    {"measure": 1, "tick": 0, "text": "(Intro)", "track": "banjo"},
+    {"measure": 2, "tick": 0, "text": "F", "track": "banjo", "kind": "chord"},
+    {"measure": 3, "tick": 0, "text": "C", "track": "banjo", "kind": "chord"},
+    {"measure": 4, "tick": 0, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 5, "tick": 0, "text": "C", "track": "banjo", "kind": "chord"},
+    {"measure": 6, "tick": 0, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 7, "tick": 0, "text": "C", "track": "banjo", "kind": "chord"},
+    {"measure": 8, "tick": 0, "text": "B PART", "track": "banjo"},
+    {"measure": 8, "tick": 0, "text": "F", "track": "banjo", "kind": "chord"},
+    {"measure": 9, "tick": 0, "text": "C", "track": "banjo", "kind": "chord"},
+    {"measure": 10, "tick": 0, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 11, "tick": 0, "text": "C", "track": "banjo", "kind": "chord"},
+    {"measure": 12, "tick": 0, "text": "Back to beginning . . .", "track": "banjo"},
+    {"measure": 12, "tick": 0, "text": "C", "track": "banjo", "kind": "chord"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 5},

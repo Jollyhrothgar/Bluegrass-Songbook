@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Angeline The Baker",
     "time_signature": "4/4",
@@ -327,8 +327,8 @@
     ]
   },
   "annotations": [
-    {"measure": 1, "tick": 0, "text": "Intro"},
-    {"measure": 20, "tick": 1560, "text": "B part"}
+    {"measure": 1, "tick": 0, "text": "Intro", "track": "banjo"},
+    {"measure": 20, "tick": 1560, "text": "B part", "track": "banjo"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 28},

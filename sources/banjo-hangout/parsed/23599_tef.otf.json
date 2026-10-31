@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Big Mon",
     "time_signature": "2/4",
@@ -449,10 +449,10 @@
     ]
   },
   "annotations": [
-    {"measure": 1, "tick": 60, "text": "VERSE"},
-    {"measure": 9, "tick": 60, "text": "CHORUS"},
-    {"measure": 17, "tick": 60, "text": "VERSE"},
-    {"measure": 25, "tick": 60, "text": "CHORUS"}
+    {"measure": 1, "tick": 60, "text": "VERSE", "track": "banjo"},
+    {"measure": 9, "tick": 60, "text": "CHORUS", "track": "banjo"},
+    {"measure": 17, "tick": 60, "text": "VERSE", "track": "banjo"},
+    {"measure": 25, "tick": 60, "text": "CHORUS", "track": "banjo"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 8},

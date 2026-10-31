@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Beaumont Rag",
     "time_signature": "4/4",
@@ -3461,10 +3461,10 @@
     ]
   },
   "annotations": [
-    {"measure": 2, "tick": 0, "text": "First Break"},
-    {"measure": 33, "tick": 0, "text": "Second Break"},
-    {"measure": 66, "tick": 0, "text": "Third Break"},
-    {"measure": 98, "tick": 0, "text": "Fourth Break"}
+    {"measure": 2, "tick": 0, "text": "First Break", "track": "bryan-sutton"},
+    {"measure": 33, "tick": 0, "text": "Second Break", "track": "bryan-sutton"},
+    {"measure": 66, "tick": 0, "text": "Third Break", "track": "bryan-sutton"},
+    {"measure": 98, "tick": 0, "text": "Fourth Break", "track": "bryan-sutton"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 33},

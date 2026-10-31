@@ -16,7 +16,7 @@ import path from 'node:path';
 import { validateOTF as validateViaActions, createEmptyOTF } from '../../otf-editor/actions.js';
 import {
     validateOTF, OTF_VERSION, TAB_BY_NAME_MAX, TAB_BY_URL_MAX, OTF_TECHS, OTF_FX, OTF_GRACE_KINDS, OTF_FINGERS, OTF_LH, OTF_ROLES,
-    DYN_LEVELS, OTF_JUMPS, decodeMarkRaw, ensureVersionAtLeast,
+    DYN_LEVELS, OTF_JUMPS, decodeMarkRaw, ensureVersionAtLeast, OTF_ANNOTATION_KINDS, OTF_ANNOTATION_PLACES,
 } from '../../otf-editor/otf-validate.js';
 import {
     FX_ORDER as FACADE_FX, GRACE_KINDS as FACADE_GRACE, PLUCK_FINGERS, LH_DIGITS, TECHS,
@@ -49,7 +49,7 @@ describe('conformance fixtures', () => {
     it('has a fixture for every cross-field rule', () => {
         const rules = ['string_count', 'notation_keys', 'track_ids', 'measure_order', 'tick_order',
             'tick_range', 'duplicate_string', 'chord_index', 'chord_track', 'chord_tick',
-            'chord_fingers', 'mark_order', 'mark_raw'];
+            'chord_fingers', 'mark_order', 'mark_raw', 'annotation_track', 'annotation_chord'];
         for (const rule of rules) {
             expect(invalid.some(f => f.name.startsWith('cross--') && ruleOf(f.name)[1] === rule), rule).toBe(true);
         }
@@ -86,12 +86,12 @@ describe('conformance fixtures', () => {
 });
 
 describe('version rule', () => {
-    it('accepts 1.1 and 1.2 and rejects 2.0', () => {
+    it('accepts 1.1 to 1.3 and rejects 2.0', () => {
         const doc = createEmptyOTF();
-        doc.otf_version = '1.1';
-        expect(validateOTF(doc).valid).toBe(true);
-        doc.otf_version = '1.2';
-        expect(validateOTF(doc).valid).toBe(true);
+        for (const v of ['1.1', '1.2', '1.3']) {
+            doc.otf_version = v;
+            expect(validateOTF(doc).valid).toBe(true);
+        }
         doc.otf_version = '2.0';
         const r = validateOTF(doc);
         expect(r.valid).toBe(false);
@@ -149,6 +149,12 @@ describe('enum fences: every copy equals the schema', () => {
         expect(OTF_LH).toEqual(digits);
         expect(LH_DIGITS).toEqual(digits);
     });
+    it('annotation kind and place (1.3)', () => {
+        const props = SCHEMA.properties.annotations.items.properties;
+        expect(OTF_ANNOTATION_KINDS).toEqual(props.kind.enum);
+        expect(OTF_ANNOTATION_PLACES).toEqual(props.place.enum);
+        expect(SCHEMA.properties.annotations.items.required).not.toContain('track');
+    });
     it('roles', () => {
         expect(OTF_ROLES).toEqual(SCHEMA.properties.tracks.items.properties.role.enum);
     });
@@ -194,7 +200,7 @@ describe('metadata.tab_by (schema 1.1)', () => {
     });
 
     it('every writer stamps the current version', () => {
-        expect(OTF_VERSION).toBe('1.2');
+        expect(OTF_VERSION).toBe('1.3');
         expect(createEmptyOTF().otf_version).toBe(OTF_VERSION);
     });
 });
@@ -236,6 +242,8 @@ describe('schema 1.2 (dynamics, bend, marks, chords)', () => {
         expect(ensureVersionAtLeast(doc, '1.0')).toBe(false);
         expect(ensureVersionAtLeast(doc, '1.2')).toBe(true);
         expect(doc.otf_version).toBe('1.2');
+        expect(ensureVersionAtLeast(doc, '1.3')).toBe(true);
+        expect(doc.otf_version).toBe('1.3');
         expect(ensureVersionAtLeast({ otf_version: '1.10' }, '1.2')).toBe(false);
         const odd = { otf_version: '2.0' };
         expect(ensureVersionAtLeast(odd, '1.2')).toBe(false);

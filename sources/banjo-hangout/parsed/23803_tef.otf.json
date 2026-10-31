@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Clinch Mountain Backstep",
     "time_signature": "4/4",
@@ -404,10 +404,10 @@
     ]
   },
   "annotations": [
-    {"measure": 2, "tick": 0, "text": "A Part"},
-    {"measure": 11, "tick": 0, "text": "B Part"},
-    {"measure": 20, "tick": 0, "text": "B Part (second time)"},
-    {"measure": 28, "tick": 1320, "text": "Tag"}
+    {"measure": 2, "tick": 0, "text": "A Part", "track": "banjo"},
+    {"measure": 11, "tick": 0, "text": "B Part", "track": "banjo"},
+    {"measure": 20, "tick": 0, "text": "B Part (second time)", "track": "banjo"},
+    {"measure": 28, "tick": 1320, "text": "Tag", "track": "banjo"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 9},

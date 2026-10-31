@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Cumberland Gap",
     "time_signature": "4/4",
@@ -505,12 +505,12 @@
     ]
   },
   "annotations": [
-    {"measure": 2, "tick": 0, "text": "G"},
-    {"measure": 5, "tick": 0, "text": "G"},
-    {"measure": 9, "tick": 0, "text": "G"},
-    {"measure": 10, "tick": 0, "text": "G"},
-    {"measure": 13, "tick": 0, "text": "G"},
-    {"measure": 17, "tick": 0, "text": "G"}
+    {"measure": 2, "tick": 0, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 5, "tick": 0, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 9, "tick": 0, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 10, "tick": 0, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 13, "tick": 0, "text": "G", "track": "banjo", "kind": "chord"},
+    {"measure": 17, "tick": 0, "text": "G", "track": "banjo", "kind": "chord"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 17},

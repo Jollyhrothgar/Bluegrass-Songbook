@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Elzic's Farewell",
     "time_signature": "4/4",
@@ -583,17 +583,17 @@
     ]
   },
   "annotations": [
-    {"measure": 1, "tick": 0, "text": "Am"},
-    {"measure": 4, "tick": 0, "text": "Em"},
-    {"measure": 4, "tick": 960, "text": "Am"},
-    {"measure": 5, "tick": 0, "text": "Am"},
-    {"measure": 8, "tick": 0, "text": "Em"},
-    {"measure": 9, "tick": 0, "text": "Am"},
-    {"measure": 12, "tick": 0, "text": "Em"},
-    {"measure": 12, "tick": 960, "text": "Am"},
-    {"measure": 13, "tick": 0, "text": "Am"},
-    {"measure": 14, "tick": 0, "text": "Dm"},
-    {"measure": 16, "tick": 960, "text": "Am"}
+    {"measure": 1, "tick": 0, "text": "Am", "track": "banjo", "kind": "chord"},
+    {"measure": 4, "tick": 0, "text": "Em", "track": "banjo", "kind": "chord"},
+    {"measure": 4, "tick": 960, "text": "Am", "track": "banjo", "kind": "chord"},
+    {"measure": 5, "tick": 0, "text": "Am", "track": "banjo", "kind": "chord"},
+    {"measure": 8, "tick": 0, "text": "Em", "track": "banjo", "kind": "chord"},
+    {"measure": 9, "tick": 0, "text": "Am", "track": "banjo", "kind": "chord"},
+    {"measure": 12, "tick": 0, "text": "Em", "track": "banjo", "kind": "chord"},
+    {"measure": 12, "tick": 960, "text": "Am", "track": "banjo", "kind": "chord"},
+    {"measure": 13, "tick": 0, "text": "Am", "track": "banjo", "kind": "chord"},
+    {"measure": 14, "tick": 0, "text": "Dm", "track": "banjo", "kind": "chord"},
+    {"measure": 16, "tick": 960, "text": "Am", "track": "banjo", "kind": "chord"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 4},

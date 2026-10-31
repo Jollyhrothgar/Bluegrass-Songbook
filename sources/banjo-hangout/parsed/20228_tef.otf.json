@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Red Haired Boy",
     "time_signature": "4/4",
@@ -5161,9 +5161,9 @@
     ]
   },
   "annotations": [
-    {"measure": 1, "tick": 0, "text": "Lead Guitar"},
-    {"measure": 33, "tick": 0, "text": "Banjo Break"},
-    {"measure": 65, "tick": 0, "text": "Mandolin Break"}
+    {"measure": 1, "tick": 0, "text": "Lead Guitar", "track": "banjo"},
+    {"measure": 33, "tick": 0, "text": "Banjo Break", "track": "banjo"},
+    {"measure": 65, "tick": 0, "text": "Mandolin Break", "track": "banjo"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 130}

@@ -150,6 +150,12 @@ are the facade's, so a test or another UI gets them too.
   names it (the writer names a track from its id and the importer reads the
   instrument from the name): changing banjo to tenor-banjo and keeping the id
   "banjo" saves with a "track name or role TablEdit cannot keep" notice.
+- Placed text (OTF 1.3): each `annotations[]` item names its `track` and may say
+  `place: "below"`. The editor stamps the current track on a text it adds;
+  `renameTrack` renames, `deleteTrack` deletes that track's texts;
+  `findAnnotationIndex({trackId})` skips another track's text (a track-less one
+  answers on any track); `editAnnotation(index, {text, place})` is one undo
+  step. See DESIGN.md "Placed text".
 - The title box above a new tab is `metadata.title`: the box writes it through
   `OTFEditor.setTitle` on blur or Enter, and the editor dispatches
   `otf-editor:title` (bubbling from its root) when the document's title changes

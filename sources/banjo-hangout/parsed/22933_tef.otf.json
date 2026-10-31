@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Soldiers Joy",
     "time_signature": "4/4",
@@ -213,8 +213,8 @@
     ]
   },
   "annotations": [
-    {"measure": 8, "tick": 1560, "text": "5 into B"},
-    {"measure": 16, "tick": 1560, "text": "2 into A"}
+    {"measure": 8, "tick": 1560, "text": "5 into B", "track": "banjo"},
+    {"measure": 16, "tick": 1560, "text": "2 into A", "track": "banjo"}
   ],
   "measure_marks": [
     {"measure": 1, "repeat_start": true, "raw": 64},

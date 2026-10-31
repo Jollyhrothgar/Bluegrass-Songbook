@@ -237,7 +237,7 @@ export class OTFEditor {
         // Placed free text ("PART A", "Long Choke", chord names) — a
         // sibling prompt of the note popover, anchored to the cursor
         this.annotationPopover = new AnnotationPopover({
-            onCommit: (text) => this._commitAnnotation(text),
+            onCommit: (text, place) => this._commitAnnotation(text, place),
             onDelete: () => this.deleteAnnotationAtCursor(),
             onCancel: () => this.editorRoot?.focus(),
         });
@@ -1379,18 +1379,20 @@ export class OTFEditor {
             measure: cursor.measure,
             tick: cursor.tick,
             existing: found?.annotation.text || '',
+            place: found?.annotation.place,
             beatLabel: beat + (sub > 0 ? '.' + sub : ''),
         });
     }
 
     /** Commit the prompt's text. Empty deletes — never a blank label. */
-    _commitAnnotation(text) {
+    _commitAnnotation(text, place = 'above') {
         this.recorder?.record('setAnnotation', {
             measure: this.state.cursor.measure,
             tick: this.state.cursor.tick,
             text,
+            place,
         });
-        this.state.setAnnotationAtCursor(text);
+        this.state.setAnnotationAtCursor(text, place);
         this.editorRoot?.focus();
     }
 
@@ -1833,7 +1835,7 @@ export class OTFEditor {
         // Free-text annotations + reading-list section labels (display
         // copy; annotations may target the silent measures, so attach
         // after densify).
-        notation = attachOtfDecorations(notation, this.state.otf);
+        notation = attachOtfDecorations(notation, this.state.otf, track.id);   // G21: this track's texts only
         notation = attachChordDiagrams(notation, this.state.otf, track.id);
 
         // Repeat signs / ending brackets derive from the reading list;

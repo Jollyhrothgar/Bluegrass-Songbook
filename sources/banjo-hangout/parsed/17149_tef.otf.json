@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Turkey In The Straw",
     "time_signature": "4/4",
@@ -633,15 +633,15 @@
     ]
   },
   "annotations": [
-    {"measure": 2, "tick": 0, "text": "C"},
-    {"measure": 5, "tick": 0, "text": "G7"},
-    {"measure": 6, "tick": 0, "text": "C"},
-    {"measure": 9, "tick": 480, "text": "G7"},
-    {"measure": 10, "tick": 0, "text": "C"},
-    {"measure": 12, "tick": 0, "text": "F"},
-    {"measure": 14, "tick": 0, "text": "C"},
-    {"measure": 17, "tick": 0, "text": "G7"},
-    {"measure": 17, "tick": 960, "text": "C"}
+    {"measure": 2, "tick": 0, "text": "C", "track": "banjo", "kind": "chord"},
+    {"measure": 5, "tick": 0, "text": "G7", "track": "banjo", "kind": "chord"},
+    {"measure": 6, "tick": 0, "text": "C", "track": "banjo", "kind": "chord"},
+    {"measure": 9, "tick": 480, "text": "G7", "track": "banjo", "kind": "chord"},
+    {"measure": 10, "tick": 0, "text": "C", "track": "banjo", "kind": "chord"},
+    {"measure": 12, "tick": 0, "text": "F", "track": "banjo", "kind": "chord"},
+    {"measure": 14, "tick": 0, "text": "C", "track": "banjo", "kind": "chord"},
+    {"measure": 17, "tick": 0, "text": "G7", "track": "banjo", "kind": "chord"},
+    {"measure": 17, "tick": 960, "text": "C", "track": "banjo", "kind": "chord"}
   ],
   "x_source": {
     "type": "banjo-hangout",

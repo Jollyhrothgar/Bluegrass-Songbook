@@ -65,7 +65,7 @@ def test_refresh_takes_new_fields_keeps_metadata_and_drops_skipped():
     assert out['metadata'] == existing['metadata']
     assert out['notation']['banjo'][0]['events'][0]['notes'][0]['dyn'] == 'f'
     assert out['measure_marks'][0]['repeat_start'] is True
-    assert out['otf_version'] == '1.2'
+    assert out['otf_version'] == r.OTF_VERSION == '1.3'
     assert 'skipped' not in out['x_source']
     assert out['x_source']['author'] == 'a'
     assert out['timing'] == existing['timing']
@@ -89,7 +89,7 @@ def test_regenerated_parsed_keeps_skipped_title_and_x_source():
     assert out['x_source']['author'] == 'a'
     assert out['x_source']['source_id'] == '1'
     assert out['metadata']['title'] == 'Hand Title'
-    assert out['otf_version'] == '1.2'
+    assert out['otf_version'] == r.OTF_VERSION == '1.3'
 
 
 def test_tef_lookup_by_tab_id(tmp_path):
@@ -99,3 +99,52 @@ def test_tef_lookup_by_tab_id(tmp_path):
     assert r.tef_for_tab_id(tmp_path, '10277').name == '10277.tef'
     assert r.tef_for_tab_id(tmp_path, '10300').name == '10300_tef_cluck.tef'
     assert r.tef_for_tab_id(tmp_path, '103') is None
+
+
+# ------------------------------------------------- the guard covers what it replaces (G21a)
+
+def test_every_field_a_refresh_replaces_is_compared_first():
+    assert r.COMPARED == r.TAKEN
+    assert {'measure_marks', 'chords', 'chord_diagrams'} <= set(r.COMPARED)
+
+
+def diagrams_doc(**over):
+    base = doc(chords=[{'name': 'Em', 'frets': [2, 0, 0, 2], 'first_fret': 1}],
+               chord_diagrams=[{'measure': 1, 'tick': 0, 'track': 'banjo', 'chord': 0}])
+    base.update(over)
+    return base
+
+
+def test_a_hand_corrected_chord_diagram_survives():
+    """The importer's own Em is the open shape; the file was edited to the 9th fret."""
+    importer_made = diagrams_doc()
+    edited = copy.deepcopy(importer_made)
+    edited['chords'][0].update(frets=[11, 9, 9, 11], first_fret=9)
+    new = newer(importer_made)
+    new['chords'], new['chord_diagrams'] = importer_made['chords'], importer_made['chord_diagrams']
+    assert r.decide_part({}, edited, importer_made, new) == ('mismatch', 'chords')
+    # moved anchor: same story for chord_diagrams
+    moved = copy.deepcopy(importer_made)
+    moved['chord_diagrams'][0]['dy'] = -4
+    assert r.decide_part({}, moved, importer_made, new) == ('mismatch', 'chord_diagrams')
+    # and the untouched file is still refreshed
+    assert r.decide_part({}, importer_made, importer_made, new) == ('refresh', None)
+
+
+def test_a_hand_edited_repeat_sign_survives_too():
+    importer_made = doc(measure_marks=[{'measure': 1, 'repeat_start': True, 'raw': 64}])
+    edited = copy.deepcopy(importer_made)
+    edited['measure_marks'] = [{'measure': 2, 'repeat_start': True, 'raw': 64}]
+    assert r.decide_part({}, edited, importer_made, newer(importer_made)) == ('mismatch', 'measure_marks')
+
+
+def test_absent_and_empty_chord_fields_are_equal():
+    assert r.decide_part({}, doc(), doc(chords=[], chord_diagrams=[], measure_marks=[]),
+                         newer(doc())) == ('refresh', None)
+
+
+def test_baseline_option_defaults_to_the_importer_before_g15d():
+    parser = r.build_parser()
+    assert parser.parse_args([]).baseline == r.PREVIOUS_REV == 'e33562593'
+    assert parser.parse_args(['--baseline', 'abc1234']).baseline == 'abc1234'
+    assert parser.parse_args(['--previous-rev', 'abc1234']).baseline == 'abc1234'    # the old spelling

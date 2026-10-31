@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Lonesome Fiddle Blues",
     "time_signature": "4/4",
@@ -327,8 +327,8 @@
     ]
   },
   "annotations": [
-    {"measure": 2, "tick": 0, "text": "Intro"},
-    {"measure": 4, "tick": 0, "text": "1st break"}
+    {"measure": 2, "tick": 0, "text": "Intro", "track": "dobro"},
+    {"measure": 4, "tick": 0, "text": "1st break", "track": "dobro"}
   ],
   "reading_list": [
     {"from_measure": 1, "to_measure": 11},

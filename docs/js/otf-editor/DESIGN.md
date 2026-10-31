@@ -225,11 +225,15 @@ free text placed at a spot in the score:
 
 ```json
 "annotations": [
-  {"measure": 1, "tick": 0,   "text": "Press F-12 to play whole tune from beginning."},
-  {"measure": 4, "tick": 960, "text": "PART A"},
-  {"measure": 7, "tick": 0,   "text": "Bb6+9"}
+  {"measure": 1, "tick": 0,   "text": "Press F-12 to play whole tune from beginning.", "track": "banjo"},
+  {"measure": 4, "tick": 960, "text": "PART A", "track": "banjo"},
+  {"measure": 7, "tick": 0,   "text": "m", "track": "banjo", "place": "below"}
 ]
 ```
+
+OTF 1.3 gives a text a `track` (whose staff it belongs to), an optional `kind`
+(`"chord"`, not set by the editor yet) and an optional `place` (`"below"`; absent
+means above).
 
 Section banners, playing notes and chord names all live in this one array. TEF
 import produces them, `renderers/tablature.js` draws them above the staff
@@ -238,7 +242,18 @@ the document on submission.
 
 Placed text is edited in NORMAL mode, from a key binding, the toolbar's Text
 section, or by clicking the text. Facade operations: `addAnnotation`,
-`setAnnotationText`, `deleteAnnotation`, `findAnnotationIndex`.
+`setAnnotationText`, `editAnnotation` (text and side in one step),
+`deleteAnnotation`, `findAnnotationIndex`.
+
+- A text the editor adds carries the current track. The text popover has an
+  Above / Below choice: Below stores `place: "below"`, Above stores nothing.
+- Editing at the cursor finds the current track's text or a track-less one (an
+  older file's), never another track's.
+- Renaming a track renames its texts' `track`; deleting a track deletes its texts
+  (as for `chord_diagrams`). A pasted payload that carries texts gives them the
+  target track (a selection carries notes only today, so this is inert).
+- Setting any of the three fields lifts the document to 1.3
+  (`ensureVersionAtLeast`); a file that never gets one keeps its version.
 
 - Text is trimmed, and an empty text deletes: a blank label can never be clicked
   or found again, so none is stored.

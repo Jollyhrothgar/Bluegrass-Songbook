@@ -8,6 +8,7 @@ import {
 } from './reader.js';
 import { OTF_VERSION, DYN_LEVELS, decodeMarkRaw } from '../otf-editor/otf-validate.js';
 import { SKIPPED_KEYS } from './skipped.js';
+import { parseTabChord } from '../tab-chord.js';
 
 const fdiv = (a, b) => Math.floor(a / b);
 
@@ -386,6 +387,9 @@ export function normalizeSlideTiming(doc) {
     }
 }
 
+/** TablEdit's text placement value for "below the staff" (V3 text record byte 11, V2 byte 4 bits 5-6). */
+const TEXT_PLACE_BELOW = 1;
+
 // --- chord diagrams (G15d3) ---------------------------------------------------
 /** Index of the track whose strings contain the cumulative string row (null = none). */
 function diagramTrackIndex(stringCounts, row) {
@@ -657,15 +661,32 @@ export function tefToOtf(tef) {
     }
 
     // Placed free-text annotations (V3 0x39 components: "Long Choke",
-    // chord letters, section banners). Positions share the note grid.
+    // chord letters, section banners). Positions share the note grid. The
+    // string row counts strings across all tracks, so it names the track the
+    // text belongs to (the mapping chord diagrams use, schema 1.3); a row past
+    // every track stays track-less.
+    const textStringCounts = tef.instruments.map(i => i.num_strings);
+    const textRows = [];
     const annotations = (tef.text_events || []).map(te => {
+        let measure, tick;
         if (isV2) {
             const index = fdiv(te.position, unitsPerMeasure);
             const offset = te.position % unitsPerMeasure;
-            return { measure: index + 1, tick: fdiv((offset & ~3) * 15, 2), text: te.text };
+            measure = index + 1;
+            tick = fdiv((offset & ~3) * 15, 2);
+        } else {
+            const [index, offset] = v3Locate(tef, te.position);
+            measure = index + 1;
+            tick = offset * V3_TICKS_PER_UNIT;
         }
-        const [index, offset] = v3Locate(tef, te.position);
-        return { measure: index + 1, tick: offset * V3_TICKS_PER_UNIT, text: te.text };
+        const trackIndex = diagramTrackIndex(textStringCounts, te.string_row);
+        const annotation = { measure, tick, text: te.text };
+        if (trackIndex !== null && trackIndex < tracks.length) annotation.track = tracks[trackIndex].id;
+        // TablEdit's placement value: 1 is below the staff; 0, 2 and 3 all draw above, so place stays absent.
+        if (te.placement === TEXT_PLACE_BELOW) annotation.place = 'below';
+        const hasTrack = annotation.track !== undefined;
+        textRows.push(hasTrack ? te.string_row - textStringCounts.slice(0, trackIndex).reduce((a, b) => a + b, 0) + 1 : null);
+        return annotation;
     });
 
     // Repeat signs (schema 1.2): one entry per marked measure, ascending; the
@@ -703,7 +724,45 @@ export function tefToOtf(tef) {
 
     normalizeSlideTiming(doc);
     assignDynamics(doc);
+    assignTextRoles(doc, textRows);
     return doc;
+}
+
+// G21b: a text that is exactly one right-hand finger letter, on a note.
+const TYPED_FINGERS = { t: 'T', i: 'I', m: 'M', r: 'R', p: 'P' };
+
+/** Give each annotation its role once the notation is final (G21b, G21d).
+ *  Port of assign_text_roles() (see otf.py for the rules). `rows[i]` is the
+ *  1-based string, on the text's own track, of doc.annotations[i], or null.
+ *  A matched letter becomes a note's `finger` and leaves doc.annotations; every
+ *  other text that parseTabChord accepts gets kind 'chord'. Key order is
+ *  measure tick text track kind place, as the schema lists them. */
+export function assignTextRoles(doc, rows) {
+    const at = new Map();
+    for (const [trackId, measures] of Object.entries(doc.notation)) {
+        for (const m of measures) {
+            for (const e of m.events) {
+                const key = `${trackId}\t${m.measure}\t${e.tick}`;
+                at.set(key, [...(at.get(key) || []), ...e.notes]);
+            }
+        }
+    }
+    const kept = [];
+    doc.annotations.forEach((a, i) => {
+        const finger = a.track ? TYPED_FINGERS[a.text.trim().toLowerCase()] : undefined;
+        let notes = finger ? at.get(`${a.track}\t${a.measure}\t${a.tick}`) || [] : [];
+        if (notes.length > 1) notes = notes.filter(n => n.s === rows[i]);
+        if (notes.length === 1 && !notes[0].finger) {
+            notes[0].finger = finger;
+            return;
+        }
+        const out = { measure: a.measure, tick: a.tick, text: a.text };
+        if (a.track) out.track = a.track;
+        if (parseTabChord(a.text)) out.kind = 'chord';
+        if (a.place) out.place = a.place;
+        kept.push(out);
+    });
+    doc.annotations = kept;
 }
 
 /** Fold a slide source that the triplet retime stacked on its target.

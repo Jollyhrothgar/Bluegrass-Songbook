@@ -1,5 +1,5 @@
 {
-  "otf_version": "1.2",
+  "otf_version": "1.3",
   "metadata": {
     "title": "Dear Old Dixie (Travis picking)",
     "time_signature": "4/4",
@@ -287,21 +287,21 @@
     ]
   },
   "annotations": [
-    {"measure": 2, "tick": 0, "text": "G"},
-    {"measure": 4, "tick": 0, "text": "C"},
-    {"measure": 5, "tick": 0, "text": "G"},
-    {"measure": 8, "tick": 0, "text": "A"},
-    {"measure": 9, "tick": 0, "text": "D"},
-    {"measure": 10, "tick": 0, "text": "G"},
-    {"measure": 12, "tick": 0, "text": "C"},
-    {"measure": 13, "tick": 0, "text": "B"},
-    {"measure": 14, "tick": 0, "text": "C"},
-    {"measure": 15, "tick": 960, "text": "E7"},
-    {"measure": 15, "tick": 0, "text": "G"},
-    {"measure": 15, "tick": 480, "text": "B7"},
-    {"measure": 16, "tick": 960, "text": "D"},
-    {"measure": 16, "tick": 0, "text": "A"},
-    {"measure": 17, "tick": 0, "text": "G"}
+    {"measure": 2, "tick": 0, "text": "G", "track": "tenor-banjo", "kind": "chord"},
+    {"measure": 4, "tick": 0, "text": "C", "track": "tenor-banjo", "kind": "chord"},
+    {"measure": 5, "tick": 0, "text": "G", "track": "tenor-banjo", "kind": "chord"},
+    {"measure": 8, "tick": 0, "text": "A", "track": "tenor-banjo", "kind": "chord"},
+    {"measure": 9, "tick": 0, "text": "D", "track": "tenor-banjo", "kind": "chord"},
+    {"measure": 10, "tick": 0, "text": "G", "track": "tenor-banjo", "kind": "chord"},
+    {"measure": 12, "tick": 0, "text": "C", "track": "tenor-banjo", "kind": "chord"},
+    {"measure": 13, "tick": 0, "text": "B", "track": "tenor-banjo", "kind": "chord"},
+    {"measure": 14, "tick": 0, "text": "C", "track": "tenor-banjo", "kind": "chord"},
+    {"measure": 15, "tick": 960, "text": "E7", "track": "tenor-banjo", "kind": "chord"},
+    {"measure": 15, "tick": 0, "text": "G", "track": "tenor-banjo", "kind": "chord"},
+    {"measure": 15, "tick": 480, "text": "B7", "track": "tenor-banjo", "kind": "chord"},
+    {"measure": 16, "tick": 960, "text": "D", "track": "tenor-banjo", "kind": "chord"},
+    {"measure": 16, "tick": 0, "text": "A", "track": "tenor-banjo", "kind": "chord"},
+    {"measure": 17, "tick": 0, "text": "G", "track": "tenor-banjo", "kind": "chord"}
   ],
   "x_source": {
     "type": "banjo-hangout",
