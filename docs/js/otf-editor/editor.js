@@ -1833,7 +1833,7 @@ export class OTFEditor {
         // Free-text annotations + reading-list section labels (display
         // copy; annotations may target the silent measures, so attach
         // after densify).
-        notation = attachOtfDecorations(notation, this.state.otf);
+        notation = attachOtfDecorations(notation, this.state.otf, track.id);   // G21: this track's texts only
         notation = attachChordDiagrams(notation, this.state.otf, track.id);
 
         // Repeat signs / ending brackets derive from the reading list;
