@@ -550,7 +550,7 @@ export class OTFEditor {
                 padding: 0 12px;
                 border: 1px solid var(--border, #ccc);
                 border-radius: 8px;
-                background: var(--bg-card, #fff);
+                background: var(--bg, #fff);
                 color: var(--text, #222);
                 font: inherit;
                 font-weight: 600;
@@ -567,7 +567,7 @@ export class OTFEditor {
                 min-width: 200px;
                 max-height: 60vh;
                 overflow-y: auto;
-                background: var(--bg-card, #fff);
+                background: var(--bg, #fff);
                 border: 1px solid var(--border, #ccc);
                 border-radius: 8px;
                 box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
